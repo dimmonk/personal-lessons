@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Identifying Psychological Patterns — Course</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@400;500;600;700&family=Spectral:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --board:#d5d9d1; --sheet:#f3f2ed; --sheet-2:#e9e8e1;
+  --ink:#14181d; --ink-soft:#4c545a; --rule:#aab0a6; --rule-fine:#c6cabf;
+  --brass:#7a6636; --herb:#3a5c46; --iron:#8c3a2e;
+  --shadow:0 1px 0 rgba(20,24,29,.10), 0 10px 24px -18px rgba(20,24,29,.55);
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  background:var(--board);
+  background-image:linear-gradient(rgba(20,24,29,.025) 1px,transparent 1px);
+  background-size:100% 3px;
+  color:var(--ink); font-family:'Spectral',Georgia,serif; font-size:17px; line-height:1.55;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:780px;margin:0 auto;padding:22px 16px 90px}
+
+.mast{border-bottom:2px solid var(--ink);padding-bottom:12px;margin-bottom:14px}
+.mast .eyebrow{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--brass);margin:0 0 6px}
+.mast h1{font-family:'Zilla Slab',serif;font-weight:700;font-size:clamp(25px,5.8vw,37px);
+  line-height:1.02;margin:0;letter-spacing:-.015em}
+.mast p{margin:8px 0 0;font-size:14.5px;color:var(--ink-soft);max-width:52ch}
+
+.tabs{display:flex;flex-wrap:wrap;gap:3px;margin:14px 0 0}
+.tab{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.07em;text-transform:uppercase;
+  padding:8px 11px 7px;border:1px solid var(--rule);border-bottom:none;background:var(--sheet-2);
+  color:var(--ink-soft);cursor:pointer;border-radius:3px 3px 0 0;position:relative;top:1px}
+.tab:hover{background:var(--sheet);color:var(--ink)}
+.tab[aria-selected="true"]{background:var(--sheet);color:var(--ink);font-weight:600;
+  border-color:var(--ink);border-bottom:1px solid var(--sheet)}
+
+.sheet{background:var(--sheet);border:1px solid var(--ink);box-shadow:var(--shadow);
+  padding:20px 18px 22px;border-radius:0 3px 3px 3px}
+
+.ladder{display:flex;gap:0;margin:0 0 20px;border:1px solid var(--rule-fine);border-radius:2px;overflow:hidden}
+.rung{flex:1;padding:7px 4px 6px;text-align:center;background:var(--sheet-2);
+  border-right:1px solid var(--rule-fine);font-family:'IBM Plex Mono',monospace;font-size:9.5px;
+  letter-spacing:.06em;text-transform:uppercase;color:var(--ink-soft);cursor:pointer;line-height:1.3}
+.rung:last-child{border-right:none}
+.rung b{display:block;font-size:12px;color:var(--ink);font-weight:600}
+.rung:hover{background:var(--sheet)}
+.rung.now{background:var(--ink);color:var(--sheet)}
+.rung.now b{color:var(--sheet)}
+.rung.done b::after{content:' \2713';color:var(--herb)}
+.rung.now.done b::after{color:#9fd0b0}
+
+.crumb{display:flex;justify-content:space-between;align-items:baseline;gap:12px;
+  border-bottom:1px solid var(--rule-fine);padding-bottom:8px;margin-bottom:16px}
+.crumb .where{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--brass);font-weight:600}
+.crumb .of{font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:var(--ink-soft);letter-spacing:.05em}
+
+.lesson h2{font-family:'Zilla Slab',serif;font-size:clamp(21px,4.6vw,27px);margin:0 0 12px;letter-spacing:-.01em;line-height:1.12}
+.lesson h3{font-family:'Zilla Slab',serif;font-size:17px;margin:18px 0 6px}
+.lesson p{margin:0 0 12px}
+.lesson ul{margin:0 0 12px;padding-left:19px}
+.lesson li{margin-bottom:6px}
+.lesson .lead{font-size:18px;color:var(--ink)}
+.tell{font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:var(--brass);display:block;margin-top:5px}
+.warn{border:1px solid rgba(140,58,46,.35);background:rgba(140,58,46,.07);border-radius:3px;padding:12px 14px;margin:14px 0}
+.warn strong{color:var(--iron)}
+.note{border:1px solid rgba(122,102,54,.3);background:rgba(122,102,54,.08);border-radius:3px;padding:12px 14px;margin:14px 0}
+table.k{width:100%;border-collapse:collapse;margin:12px 0;font-size:15px}
+table.k th,table.k td{border:1px solid var(--rule-fine);padding:8px 9px;text-align:left;vertical-align:top}
+table.k th{background:var(--sheet-2);font-family:'IBM Plex Mono',monospace;font-size:10px;
+  letter-spacing:.1em;text-transform:uppercase;font-weight:600;white-space:nowrap}
+
+.dots{display:flex;gap:5px;margin:18px 0 0}
+.dot{width:22px;height:3px;background:var(--rule);border-radius:2px}
+.dot.on{background:var(--ink)}
+
+.spec-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;
+  border-bottom:1px solid var(--rule-fine);padding-bottom:8px;margin-bottom:16px}
+.spec-no{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--brass);font-weight:600}
+.spec-set{font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:var(--ink-soft);letter-spacing:.05em}
+
+blockquote.passage{margin:0 0 20px;padding:14px 16px;background:var(--sheet-2);border-radius:3px;
+  font-size:18px;line-height:1.6;font-style:italic}
+blockquote.passage.plain{font-style:normal;font-size:17px}
+.step{margin:0 0 18px}
+.step.locked{opacity:.55;pointer-events:none}
+.step-label{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--brass);display:flex;align-items:center;gap:7px;margin-bottom:8px;flex-wrap:wrap}
+.step-label .code{background:var(--ink);color:var(--sheet);padding:2px 5px;border-radius:2px;font-weight:600;letter-spacing:.06em}
+.step-label .num{width:19px;height:19px;flex:0 0 19px;border-radius:50%;background:var(--brass);color:var(--sheet);
+  display:inline-flex;align-items:center;justify-content:center;font-weight:600;font-size:10.5px;letter-spacing:0}
+.step.locked .step-label .num{background:var(--rule)}
+.lockmsg{margin-left:auto;font-style:normal;color:var(--ink-soft);letter-spacing:.06em;border:1px dashed var(--rule);
+  padding:2px 7px;border-radius:2px;text-transform:none;font-size:10px}
+.opts{display:flex;flex-wrap:wrap;gap:6px}
+.opt{font-family:'Zilla Slab',serif;font-size:14.5px;font-weight:500;padding:8px 12px;
+  background:var(--sheet-2);border:1px solid var(--rule);color:var(--ink);cursor:pointer;
+  border-radius:2px;text-align:left;line-height:1.25}
+.opt:hover{border-color:var(--ink);background:#fff}
+.opt[aria-pressed="true"]{background:var(--ink);color:var(--sheet);border-color:var(--ink)}
+.opt small{display:block;font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.05em;
+  opacity:.62;font-weight:400;margin-top:2px;text-transform:uppercase}
+
+.intro{border:1px solid var(--ink);background:var(--sheet-2);padding:15px 15px 13px;margin:0 0 18px;border-radius:2px}
+.intro h2{font-family:'Zilla Slab',serif;font-size:17px;margin:0 0 9px}
+.intro ol{margin:0 0 10px;padding-left:19px;font-size:15px}
+.intro ol li{margin-bottom:5px}
+.intro p{margin:0 0 10px;font-size:14.5px;color:var(--ink-soft)}
+.linkbtn{background:none;border:none;padding:0;cursor:pointer;color:var(--brass);
+  font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;
+  text-decoration:underline;text-underline-offset:3px}
+.linkbtn:hover{color:var(--ink)}
+
+.rail{border:1px solid var(--rule);background:var(--sheet-2);padding:12px 13px;margin:0 0 18px;
+  border-radius:2px;cursor:default;user-select:none}
+.rail-head{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--ink-soft);margin-bottom:9px;display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap}
+.rail-count{color:var(--brass);font-weight:600}
+.cands{display:flex;flex-wrap:wrap;gap:5px 9px;margin:0;padding:0;list-style:none}
+.cand{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--ink);transition:color .28s ease,opacity .28s ease}
+.cand.out{color:var(--ink-soft);opacity:.4;text-decoration:line-through;text-decoration-thickness:1px}
+
+.verdict{border-top:2px solid var(--ink);margin-top:20px;padding-top:16px}
+.verdict h3{font-family:'Zilla Slab',serif;font-size:21px;margin:0 0 2px;letter-spacing:-.01em}
+.marks{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 14px}
+.mark{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;
+  padding:4px 8px;border-radius:2px;border:1px solid}
+.mark.ok{color:var(--herb);border-color:var(--herb);background:rgba(58,92,70,.07)}
+.mark.no{color:var(--iron);border-color:var(--iron);background:rgba(140,58,46,.07)}
+.vblock{margin:0 0 12px}
+.vlab{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--brass);margin-bottom:3px}
+.vblock p{margin:0;font-size:16px;line-height:1.55}
+
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:18px}
+.btn{font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:.09em;text-transform:uppercase;
+  font-weight:600;padding:11px 16px;border:1px solid var(--ink);background:var(--ink);color:var(--sheet);
+  cursor:pointer;border-radius:2px}
+.btn:hover{background:#000}
+.btn[disabled]{opacity:.3;cursor:not-allowed}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn.ghost:hover{background:var(--sheet-2)}
+
+.score{display:flex;gap:14px;flex-wrap:wrap;font-family:'IBM Plex Mono',monospace;font-size:10.5px;
+  letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);
+  border-top:1px solid var(--rule-fine);margin-top:18px;padding-top:11px}
+.score b{color:var(--ink);font-weight:600}
+.hint{font-size:14px;color:var(--ink-soft);margin:10px 0 0}
+.done{text-align:center;padding:22px 6px}
+.done h2{font-family:'Zilla Slab',serif;font-size:24px;margin:0 0 8px}
+.done p{color:var(--ink-soft);max-width:46ch;margin:0 auto 8px;font-size:15.5px}
+
+details.fg{border-bottom:1px solid var(--rule-fine)}
+details.fg:last-of-type{border-bottom:none}
+details.fg summary{cursor:pointer;padding:13px 2px;font-family:'Zilla Slab',serif;font-weight:600;
+  font-size:17px;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:10px}
+details.fg summary::-webkit-details-marker{display:none}
+details.fg summary::after{content:'+';font-family:'IBM Plex Mono',monospace;color:var(--brass);font-size:16px}
+details.fg[open] summary::after{content:'\2212'}
+.fg-body{padding:0 2px 16px;font-size:15.5px}
+.fg-body p{margin:0 0 10px}
+.fg-body ul{margin:0 0 10px;padding-left:18px}
+.fg-body li{margin-bottom:5px}
+.fg-body h4{font-family:'Zilla Slab',serif;font-size:15.5px;margin:16px 0 5px}
+
+:focus-visible{outline:2px solid var(--brass);outline-offset:2px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+@media (max-width:520px){
+  .wrap{padding:16px 12px 80px}
+  .sheet{padding:16px 13px 18px}
+  blockquote.passage{font-size:16.5px;padding-left:13px}
+  .opt{font-size:14px;padding:8px 10px}
+  .rung{font-size:8.5px;padding:6px 2px}
+  .rung b{font-size:11px}
+  table.k{font-size:13.5px}
+  table.k th,table.k td{padding:6px 7px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="mast">
+    <p class="eyebrow">Read the lesson · then run the drill</p>
+    <h1>Identifying Psychological Patterns</h1>
+  </header>
+
+  <div class="tabs" role="tablist">
+    <button class="tab" role="tab" data-tab="course" aria-selected="true">Course</button>
+    <button class="tab" role="tab" data-tab="guide" aria-selected="false">Reference</button>
+  </div>
+
+  <main class="sheet" id="stage"></main>
+</div>
+
+<script>
+/* ===================== SHARED DATA ===================== */
+
+const DOMAINS = [
+  { id:'reasoning', n:'A mind justifying itself',  sub:'reasoning in the moment',
+    outcomes:['dissonance','confbias','motivated','sunkcost','revision'] },
+  { id:'tactic',    n:'A move in an interaction',  sub:'a specific tactic',
+    outcomes:['gaslight','darvo','lovebomb','projection','notactic'] },
+  { id:'pattern',   n:'A stable way someone is',   sub:'an enduring pattern',
+    outcomes:['narc_grand','narc_vuln','bpd','hpd','aspd','traits'] }
+];
+
+const OUTCOMES = [
+  {id:'dissonance', n:'Cognitive dissonance reduction', domain:'reasoning'},
+  {id:'confbias',   n:'Confirmation bias',               domain:'reasoning'},
+  {id:'motivated',  n:'Motivated reasoning',              domain:'reasoning'},
+  {id:'sunkcost',   n:'Sunk cost / escalation of commitment', domain:'reasoning'},
+  {id:'revision',   n:'Genuine belief revision (not a bias)', domain:'reasoning'},
+
+  {id:'gaslight',   n:'Gaslighting',                      domain:'tactic'},
+  {id:'darvo',      n:'DARVO',                            domain:'tactic'},
+  {id:'lovebomb',   n:'Love-bombing → devaluation',   domain:'tactic'},
+  {id:'projection', n:'Projection',                        domain:'tactic'},
+  {id:'notactic',   n:'Not a tactic',                      domain:'tactic'},
+
+  {id:'narc_grand', n:'Grandiose narcissistic pattern',   domain:'pattern'},
+  {id:'narc_vuln',  n:'Vulnerable narcissistic pattern',  domain:'pattern'},
+  {id:'bpd',        n:'Borderline pattern',                domain:'pattern'},
+  {id:'hpd',        n:'Histrionic pattern',                domain:'pattern'},
+  {id:'aspd',       n:'Antisocial pattern / psychopathy',  domain:'pattern'},
+  {id:'traits',     n:'Traits only — not a disorder',  domain:'pattern'}
+];
+
+function outcomeName(id){ return OUTCOMES.find(o=>o.id===id).n; }
+
+const SUBQ = {
+  reasoning: [
+    { code:'R1', label:'Timing of the conclusion', options:[
+        {id:'before',   n:'Conclusion fixed before the reasoning began',            keeps:['motivated']},
+        {id:'after',    n:'Belief or action came first; discomfort followed',       keeps:['dissonance','confbias','sunkcost']},
+        {id:'evidence', n:'Reasoning is honestly responding to new evidence',       keeps:['revision']}
+    ]},
+    { code:'R2', label:'What gives, to relieve it', options:[
+        {id:'addstory', n:'A justification is added; belief and behavior stay the same', keeps:['dissonance']},
+        {id:'scrutiny', n:'New evidence gets scrutinized harder than confirming evidence', keeps:['confbias']},
+        {id:'backward', n:'Further commitment is justified by what’s already been spent', keeps:['sunkcost']},
+        {id:'updates',  n:'The belief itself updates, without defensiveness',       keeps:['revision']},
+        {id:'fixed',    n:'The conclusion was never really in doubt',               keeps:['motivated']}
+    ]}
+  ],
+  tactic: [
+    { code:'T1', label:'What the move is doing', options:[
+        {id:'denyreality',      n:'Denying the other person’s memory or perception, repeatedly', keeps:['gaslight']},
+        {id:'denyattackreverse',n:'Deny the act, attack the accuser, reverse victim and offender',    keeps:['darvo']},
+        {id:'idealizewithdraw', n:'Fast idealization now, conditional withdrawal later',              keeps:['lovebomb']},
+        {id:'ownfeeling',       n:'Placing an unacceptable feeling of their own onto the other person', keeps:['projection']},
+        {id:'singlemoment',     n:'A single defensive reaction, no larger sequence',                  keeps:['notactic']}
+    ]},
+    { code:'T2', label:'How much evidence do you have', options:[
+        {id:'pattern',     n:'Repeats, escalates, or has a clear before/after arc', keeps:['gaslight','darvo','lovebomb','projection']},
+        {id:'oneinstance', n:'One instance only',                                   keeps:['notactic']}
+    ]}
+  ],
+  pattern: [
+    { code:'P1', label:'Core fear or need being protected', options:[
+        {id:'shame_out',   n:'Shame or inadequacy, defended by outward grandiosity',            keeps:['narc_grand']},
+        {id:'shame_in',    n:'Same shame, presenting as fragility or quiet resentment',         keeps:['narc_vuln']},
+        {id:'abandonment', n:'Terror of abandonment',                                            keeps:['bpd']},
+        {id:'attention',   n:'Need to be noticed — the center of attention',                keeps:['hpd']},
+        {id:'norule',      n:'No particular fear — rules and others’ claims don’t weigh much', keeps:['aspd']},
+        {id:'normal',      n:'None of these dominate — normal-range behavior under stress', keeps:['traits']}
+    ]},
+    { code:'P2', label:'Response when challenged or criticized', options:[
+        {id:'rage',          n:'Rage or contempt toward the critic',                keeps:['narc_grand']},
+        {id:'withdraw',      n:'Hurt withdrawal, covert resentment, self-pity',      keeps:['narc_vuln']},
+        {id:'panic',         n:'Panic, frantic repair attempts, or sudden devaluation', keeps:['bpd']},
+        {id:'dramatic',      n:'Escalated dramatics aimed at an audience',           keeps:['hpd']},
+        {id:'flat',          n:'Flat, strategic, unbothered — no emotional escalation', keeps:['aspd']},
+        {id:'proportionate', n:'A normal, proportionate reaction',                   keeps:['traits']}
+    ]}
+  ]
+};
+
+const U1_OPTS = ['A mind justifying itself','A move in an interaction','A stable way someone is','None of these — a proportionate reaction'];
+const U1_DRILL = [
+  {q:'"I know I said I’d never date someone who does that again, but he’s different" — said while listing three of the exact behaviors she swore off.',
+   a:'A mind justifying itself', w:'Reasoning family. The contradiction is between her stated rule and her current choice — watch for this to resurface as dissonance reduction in Lesson 2.'},
+  {q:'A coworker denies ever agreeing to the deadline, then says you’re the one who’s always disorganized — in the same conversation where the email trail says otherwise.',
+   a:'A move in an interaction', w:'Tactics family: deny + attack. Watch for the reversal that would confirm DARVO in Lesson 5.'},
+  {q:'Ten years, every job, every friendship: he is the misunderstood genius, and everyone else eventually turns out to be an idiot or an enemy.',
+   a:'A stable way someone is', w:'Pattern family: consistent across a decade and multiple contexts.'},
+  {q:'"I’ve put four years into this degree, I can’t switch majors now" — said about a major she dislikes every class of.',
+   a:'A mind justifying itself', w:'Reasoning family, specifically sunk cost.'},
+  {q:'She’s withdrawn and short-tempered this week. She just found out her father is sick.',
+   a:'None of these — a proportionate reaction', w:'A proportionate reaction to a real external stressor. Not everything needs this course’s vocabulary — that’s the point of D2.'}
+];
+
+const U2_OPTS = ['Dissonance reduction','Confirmation bias','Motivated reasoning','Sunk cost / escalation','Genuine belief revision'];
+const U2_DRILL = [
+  {q:'"I already told everyone I was vegan, so I’m not going to make a big deal out of the fact that the sauce probably has fish stock in it."',
+   a:'Dissonance reduction', w:'Behavior conflicts with stated identity; resolved by minimizing rather than changing behavior or belief.'},
+  {q:'He reads three studies supporting his diet closely and enthusiastically, and dismisses the one contradicting study as "funded by industry" — without checking who funded the other three.',
+   a:'Confirmation bias', w:'Textbook asymmetric scrutiny: confirming evidence sails through, disconfirming evidence gets a standard never applied evenly.'},
+  {q:'She decided to promote her friend before the interviews even happened, and spent the interviews taking notes that supported that outcome.',
+   a:'Motivated reasoning', w:'The conclusion preceded the evidence-gathering.'},
+  {q:'"We’ve spent two years and forty thousand dollars on this renovation, we can’t stop now" — said after they can no longer afford to finish it properly.',
+   a:'Sunk cost / escalation', w:'The stated reason points backward at money already spent, not forward at what remains worth doing.'},
+  {q:'"I used to think the policy would work. Turnout data from the three cities that tried it changed my mind, even though I really wanted it to work."',
+   a:'Genuine belief revision', w:'Updated by external data, stated as such, no defensive move present.'},
+  {q:'A manager who prides himself on being data-driven quietly stops checking the metric that turned negative last quarter, while still citing the ones that are positive.',
+   a:'Confirmation bias', w:'Selectively stops tracking the metric that contradicts the "data-driven" self-image while continuing to cite the ones that flatter it.'}
+];
+
+const U3_OPTS = ['Healthy confidence/self-esteem','Narcissistic traits (non-clinical)','Grandiose narcissistic pattern','Vulnerable narcissistic pattern','Insufficient evidence','Not narcissism at all'];
+const U3_DRILL = [
+  {q:'She’s proud of the promotion, thanks the people who helped her get it, and is visibly happy for a colleague who got promoted the same week.',
+   a:'Healthy confidence/self-esteem', w:'Pride without diminishing others; genuine happiness at someone else’s success.'},
+  {q:'He redirects every conversation back to his own achievements within about ninety seconds, regardless of topic, and has for as long as anyone’s known him.',
+   a:'Narcissistic traits (non-clinical)', w:'Pervasive and cross-context (D2 satisfied), but the evidence covers only one criterion — admiration-seeking. Empathy, entitlement, and reaction-to-threat aren’t shown yet.'},
+  {q:'Passed over for a role he wanted, he tells people privately that the company "isn’t ready for someone like him," and that the person who got it will fail within a year.',
+   a:'Grandiose narcissistic pattern', w:'Narcissistic injury: preserving grandiosity by devaluing both the decision and the person who benefited.'},
+  {q:'A new employee snaps at a reasonable correction in her first stressful week on the job, then apologizes the next day.',
+   a:'Insufficient evidence', w:'First week, high stress, self-corrected with an apology — D2 fails on both counts: not pervasive, not unprovoked.'},
+  {q:'He never raises his voice and never asks for anything — and has spent fifteen years quietly certain nobody has ever appreciated what he’s actually capable of, growing colder toward anyone who seems to be doing better than him.',
+   a:'Vulnerable narcissistic pattern', w:'No overt grandiosity, but the same structure — unrecognized specialness — turned inward, over fifteen years.'},
+  {q:'"That’s such a narcissistic thing to say" — about a friend who mentioned being proud of finishing a marathon.',
+   a:'Not narcissism at all', w:'Pride in a personal accomplishment is not narcissism. The faulty-claim case.'}
+];
+
+const U4_OPTS = ['Narcissistic','Borderline','Histrionic','Antisocial/psychopathic','Not a disorder — a hard moment'];
+const U4_DRILL = [
+  {q:'Ghosted after two dates, someone spirals into "I always ruin everything, please just tell me what I did," texts eleven times in an hour, then sends one furious message calling the other person evil.',
+   a:'Borderline', w:'Abandonment terror, rapid escalation, and the swing from self-blame to fury inside one episode is the classic shape.'},
+  {q:'A salesman lies fluidly and without visible discomfort about a product’s safety record, has done so at every job he’s held, and shrugs when confronted: "that’s just business."',
+   a:'Antisocial/psychopathic', w:'Fluent, comfortable deceit, repeated across jobs, zero discomfort, explicit instrumental justification.'},
+  {q:'Interrupts every meeting to redirect focus to a personal story, dresses more dramatically than the context calls for, is delighted by any attention and wounded by none.',
+   a:'Histrionic', w:'Attention-seeking, theatrical presentation, delight at any attention rather than admiration for superiority specifically.'},
+  {q:'A partner is warm and attentive as long as they’re the one being praised, and goes cold and dismissive for days after their partner gets praised for something instead.',
+   a:'Narcissistic', w:'Warmth is conditional on being the one admired; coldness is triggered by someone else’s success. The "mirror, not audience" tell.'},
+  {q:'Someone snapped at a friend after a genuinely awful week at work, apologized the next morning — and it hasn’t happened before or since.',
+   a:'Not a disorder — a hard moment', w:'A single instance, an identifiable stressor, an apology, no recurrence. D2 fails cleanly.'}
+];
+
+const U5_OPTS = ['Gaslighting','DARVO','Love-bombing / devaluation','Projection','Not a tactic'];
+const U5_DRILL = [
+  {q:'Confronted with a text message proving he said it, he says "you’re twisting my words like you always do" — and by the end of the call, she’s the one apologizing.',
+   a:'DARVO', w:'Deny ("twisting my words"), attack (implies she always does this), reverse (she ends up apologizing) — all three, in sequence.'},
+  {q:'Three days into dating, he’s talking about their future together and says she’s "not like anyone else" he’s met. Two months later, once she’s turned down plans with friends for him twice, the compliments have turned into comments about how she "used to be more fun."',
+   a:'Love-bombing / devaluation', w:'Speed and intensity of idealization relative to actual knowledge, followed by conditional withdrawal once dependency was established.'},
+  {q:'A roommate forgets to pay their share of rent twice, gets called out, and says "I don’t know why you’re being so aggressive about this."',
+   a:'Not a tactic', w:'A single instance of a reasonable person being annoyed at being reasonably confronted; no denial of the fact, no reversal, no repeated pattern.'},
+  {q:'For the third year running, whenever an old disagreement gets brought up, he insists it never happened at all — not "I don’t remember it that way," but that it definitely never occurred — until she now checks her phone to confirm her own memories before raising anything.',
+   a:'Gaslighting', w:'Repeated, escalated to flat factual denial rather than a memory disagreement, with the definitional functional effect: she no longer trusts her own memory.'},
+  {q:'Someone who is chronically jealous accuses their partner, unprompted and without evidence, of flirting with a coworker.',
+   a:'Projection', w:'The accusation, made without evidence by the jealous party, reads more as their own feeling than as a report about the partner.'},
+  {q:'Caught lying about an expense, someone immediately brings up an unrelated mistake their accuser made months ago, and the conversation ends up being about that instead.',
+   a:'DARVO', w:'Deny is implicit (changing the subject rather than addressing it) and attack is present. A DARVO-adjacent move — the honest call is "attack and deflect," missing an explicit reversal.'},
+  {q:'A friend cancels plans once, apologizes, and reschedules.',
+   a:'Not a tactic', w:'A single cancellation with an apology and a reschedule is just normal life.'}
+];
+
+const ERR_DRILL = [
+  {q:'"He disagreed with my version of events, that’s such gaslighting."',
+   w:'Disagreement about a single fact is not gaslighting; gaslighting requires a pattern that functions to make someone doubt their own judgment generally, not one contested memory.'},
+  {q:'"She’s a total narcissist, she posted a selfie."',
+   w:'Category error — posting a selfie is not diagnostic of anything. No pervasiveness, no lack-of-empathy evidence, nothing beyond a normal act read as pathology.'},
+  {q:'"That’s literally DARVO" — about someone who calmly explained their side after being wrongly accused.',
+   w:'DARVO specifically requires denying the act and reversing victim and offender. Calmly explaining your side after being wrongly accused is just defending yourself accurately.'},
+  {q:'"Everyone has narcissistic traits, so the word doesn’t mean anything."',
+   w:'True that many people show narcissistic traits sometimes — that’s exactly why the word needs the pervasive/impairing distinction, not a reason to discard it.'},
+  {q:'"My coworker is a sociopath" — based on one blunt email.',
+   w:'One blunt email is a single data point. "Sociopath" isn’t even a clinical term, and its real-world analogue needs a pervasive disregard for others’ rights, not one terse message.'},
+  {q:'"He love-bombed me" — about a partner who was consistently affectionate for two years before a difficult breakup.',
+   w:'Sustained, consistent affection for two years is not love-bombing — love-bombing is disproportionate to actual relationship depth. Two years of consistency is evidence of genuine investment.'}
+];
+
+const SPECIMENS = [
+  {q:'"I know I promised myself I’d leave if it happened again, but this time really is different — he explained why it wasn’t his fault."',
+   domain:'reasoning', sub:{R1:['after'],R2:['addstory']}, outcome:'dissonance',
+   why:'D1: a mind justifying itself. D3: the contradiction between her prior resolution and her current inaction is resolved by exempting this instance, not by changing behavior.',
+   fals:'If "this time is different" is true by some independent, checkable criterion — not just his explanation — this stops being dissonance reduction and becomes an accurate update.'},
+  {q:'He’d already decided to invest before he asked anyone’s opinion. Every "due diligence" conversation after that was really just him listening for agreement, and getting irritated at anyone who raised a concern.',
+   domain:'reasoning', sub:{R1:['before'],R2:['fixed']}, outcome:'motivated',
+   why:'The decision-before-reasoning timing is explicit in the text itself — unusually clean.',
+   fals:'If he’d genuinely have walked away given strong enough disconfirming evidence, and can name what that evidence would have been, this is closer to ordinary — if biased — diligence.'},
+  {q:'The report cites six analysts who back her thesis and dismisses the two who don’t as "not understanding the sector" — a phrase she doesn’t apply to any of the six, several of whom have less sector experience than the two she dismissed.',
+   domain:'reasoning', sub:{R1:['after'],R2:['scrutiny']}, outcome:'confbias',
+   why:'Unequal scrutiny, applied by a stated criterion that, checked, doesn’t actually track who got dismissed.',
+   fals:'If the two dismissed analysts had some other real, specific, checkable methodological flaw, the dismissal could be earned rather than biased.'},
+  {q:'Three years into a PhD she no longer wants, she tells her advisor she’ll finish anyway: "I can’t have wasted three years for nothing."',
+   domain:'reasoning', sub:{R1:['after'],R2:['backward']}, outcome:'sunkcost',
+   why:'The stated reason points backward at time already spent, not forward at whether two more years is worth it.',
+   fals:'If finishing genuinely unlocks something forward-looking she independently wants — not just avoiding the feeling of waste — continuing could be a reasoned choice.'},
+  {q:'For years he assumed the new manufacturing process was more expensive. When the plant finally ran the actual numbers, it was cheaper — he was the first to say so in the meeting, and asked for the analysis to be circulated.',
+   domain:'reasoning', sub:{R1:['evidence'],R2:['updates']}, outcome:'revision',
+   why:'Evidence arrived, belief updated, no defensive move, no resistance.',
+   fals:'If he’d been quietly blocking that analysis from being run for years beforehand, this would look more like reluctant capitulation than genuine openness.'},
+  {q:'Every time she brings up something he said, he tells her it never happened — not "I don’t remember it that way," but that she’s making it up. It’s happened often enough that she now records important conversations, just for herself.',
+   domain:'tactic', sub:{T1:['denyreality'],T2:['pattern']}, outcome:'gaslight',
+   why:'Repeated, escalated to flat factual denial rather than a memory disagreement, and the functional effect — she no longer trusts her memory enough to skip recording — is the definitional tell.',
+   fals:'A documented memory condition, or this having happened exactly once, would substantially weaken the "pattern" claim.'},
+  {q:'Caught having lied on his expense report, he told HR the real problem was that his manager had been targeting him for months — and somehow the meeting ended with HR asking the manager to explain themselves.',
+   domain:'tactic', sub:{T1:['denyattackreverse'],T2:['pattern']}, outcome:'darvo',
+   why:'Deny is implicit in the reframe, attack is present (accusing the manager of targeting him), and the reversal — HR investigating the manager — completes the sequence.',
+   fals:'If the manager actually had a documented history of unfair treatment before this incident, the "attack" would be a legitimate grievance rather than a reversal tactic.'},
+  {q:'The first month, he called her his soulmate, learned her whole family’s names, and said no one had ever understood him the way she did. By the third month, once she’d stopped seeing her college friends most weekends to be with him, the compliments had turned into comments about how she "used to be more fun."',
+   domain:'tactic', sub:{T1:['idealizewithdraw'],T2:['pattern']}, outcome:'lovebomb',
+   why:'Speed and intensity of idealization relative to actual time known, followed by conditional withdrawal once dependency — reduced outside friendships — was in place.',
+   fals:'If the reduced friend time was mutual and voluntary, and the "used to be more fun" comment was an isolated remark rather than the start of a pattern, this reads as an ordinary rocky patch instead.'},
+  {q:'He’s never once, in twenty years, said "I was wrong." When a project he championed fails, it’s always because the team executed poorly. When it succeeds, he tells the story of his original vision to anyone who’ll listen, unprompted.',
+   domain:'pattern', sub:{P1:['shame_out'],P2:['rage']}, outcome:'narc_grand',
+   why:'Pervasive (twenty years), cross-context, entitlement to credit without accountability for failure, admiration-seeking.',
+   fals:'Real, private accountability that simply never surfaces publicly would point toward image management rather than a genuine empathy/entitlement deficit.'},
+  {q:'She never asks for anything and never complains out loud. But she’s kept a mental ledger for a decade of every time she trained someone who then got promoted over her, and she’s quietly stopped speaking to three of them, one by one, without ever telling them why.',
+   domain:'pattern', sub:{P1:['shame_in'],P2:['withdraw']}, outcome:'narc_vuln',
+   why:'No overt grandiosity or demand, but a decade-long, cross-relationship pattern organized around unrecognized specialness, expressed as silent withdrawal.',
+   fals:'If she has, in fact, raised these concerns directly and been repeatedly and genuinely dismissed by a dysfunctional workplace, this could be a proportionate response to real unfairness instead.'},
+  {q:'Any time he seems even slightly less available, she calls him nonstop until he answers, alternates between "I’m sorry, I’m the worst" and "you clearly don’t care about me" within the same conversation, and has done this with every partner she’s had since her teens.',
+   domain:'pattern', sub:{P1:['abandonment'],P2:['panic']}, outcome:'bpd',
+   why:'Abandonment-driven, splitting — "worst" and "don’t care about me" in the same breath — pervasive across relationships and time.',
+   fals:'If this intensity were new and followed one specific, recent, identifiable trauma rather than "every partner since her teens," it might be a situational reaction instead of a stable pattern.'},
+  {q:'He’s warm, funny, and the first to offer help — right up until a favor isn’t returned fast enough, at which point he’ll casually mention, to mutual friends, something private and embarrassing you told him in confidence months earlier. He doesn’t seem angry when he does it. He seems entertained.',
+   domain:'pattern', sub:{P1:['norule'],P2:['flat']}, outcome:'aspd',
+   why:'Instrumental warmth, a breach of confidence used as casual leverage, and — the key tell — no emotional charge behind the betrayal, which argues against an ordinary grudge or a narcissistic-injury reaction.',
+   fals:'Real, consistent remorse afterward, and a one-time lapse rather than a repeated move, would drop this out of "pattern" territory.'},
+  {q:'She cried at her coworker’s small mistake in a meeting once. Someone on the team called her "obviously borderline" in the group chat afterward.',
+   domain:'pattern', sub:{P1:['normal'],P2:['proportionate']}, outcome:'traits',
+   why:'One emotional reaction in one meeting establishes nothing — not pervasiveness, not the defining feature of borderline (abandonment-driven instability across relationships), nothing. The correct move is to refuse the label.',
+   fals:'None needed — the point of this item is that no classification should have been made in the first place.'},
+  {q:'He explains, calmly and specifically, why the criticism of his proposal is factually wrong, citing the actual numbers. Two people on the thread reply that he’s "being defensive" and "can’t take feedback."',
+   domain:'pattern', sub:{P1:['normal'],P2:['proportionate']}, outcome:'traits',
+   why:'Calm, specific, evidence-based disagreement is being mislabeled as a "defensiveness pattern" by people who dislike being contradicted. This is the horseshoe error: mistaking the discomfort of being disagreed with for evidence of a disorder in the other person.',
+   fals:'None needed — again, the lesson is to withhold the label, not find one.'}
+];
+
+/* ===================== SHARED UI HELPERS ===================== */
+
+const esc = s => String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const stage = () => document.getElementById('stage');
+
+function storageSave(key, obj){
+  try{ localStorage.setItem(key, JSON.stringify(obj)); }catch(e){}
+}
+function storageLoad(key, fallback){
+  try{
+    const raw = localStorage.getItem(key);
+    if(raw) return Object.assign(fallback, JSON.parse(raw));
+  }catch(e){}
+  return fallback;
+}
+function introSeen(storageKey){
+  try{ return localStorage.getItem(storageKey+':intro')==='done'; }catch(e){ return false; }
+}
+
+function pickAnswerOf(it, cfg){ return cfg.answer ? cfg.answer(it) : it.a; }
+
+function mountPickDrill(hostEl, cfg, state, onAllDone){
+  if(state.i >= cfg.items.length) return onAllDone();
+  const it = cfg.items[state.i], st = state.stats;
+
+  hostEl.innerHTML = `
+    <div class="spec-head">
+      <span class="spec-no">Item ${String(state.i+1).padStart(2,'0')} / ${cfg.items.length}</span>
+      <span class="spec-set">${esc(cfg.title)}</span>
+    </div>
+    <blockquote class="passage ${cfg.plain?'plain':''}">${esc(it.q)}</blockquote>
+    <div class="step ${state.picked!==null?'locked':''}">
+      <div class="step-label"><span class="code">?</span> ${esc(cfg.prompt)}</div>
+      <div class="opts" id="pickOpts">
+        ${cfg.opts.map(o=>`<button class="opt" data-v="${esc(o)}" aria-pressed="${state.picked===o}">${esc(o)}</button>`).join('')}
+      </div>
+    </div>
+    ${state.picked!==null ? `
+      <div class="verdict">
+        <div class="marks"><span class="mark ${state.picked===pickAnswerOf(it,cfg)?'ok':'no'}">${state.picked===pickAnswerOf(it,cfg)?'Correct':'Missed — '+esc(pickAnswerOf(it,cfg))}</span></div>
+        <div class="vblock"><div class="vlab">Why</div><p>${esc(it.w)}</p></div>
+        <div class="row"><button class="btn" id="pickNext">${state.i===cfg.items.length-1?'Finish':'Next item'}</button></div>
+      </div>` : ''}
+    <div class="score"><span>Answered <b>${st.n}</b></span><span>Correct <b>${st.ok}</b></span></div>`;
+
+  hostEl.querySelectorAll('#pickOpts .opt').forEach(b=>b.onclick=()=>{
+    state.picked = b.dataset.v;
+    st.n++; if(state.picked===pickAnswerOf(it,cfg)) st.ok++;
+    if(cfg.storageKey) storageSave(cfg.storageKey, state.stats);
+    mountPickDrill(hostEl, cfg, state, onAllDone);
+  });
+  const nx = hostEl.querySelector('#pickNext');
+  if(nx) nx.onclick=()=>{ state.i++; state.picked=null; mountPickDrill(hostEl, cfg, state, onAllDone); };
+}
+
+function mountErrDrill(hostEl, items, state, storageKey, onAllDone){
+  if(state.i >= items.length) return onAllDone();
+  const it = items[state.i];
+
+  hostEl.innerHTML = `
+    <div class="spec-head">
+      <span class="spec-no">Claim ${String(state.i+1).padStart(2,'0')} / ${items.length}</span>
+      <span class="spec-set">Faulty claims</span>
+    </div>
+    <blockquote class="passage">${esc(it.q)}</blockquote>
+    <p class="hint" style="margin-bottom:14px">State the fault out loud or in writing before revealing. Name which diagnostic question the claim fails to engage.</p>
+    ${state.picked ? `<div class="verdict"><div class="vblock"><div class="vlab">The fault</div><p>${esc(it.w)}</p></div>
+      <div class="row"><button class="btn" id="errNext">${state.i===items.length-1?'Finish':'Next claim'}</button></div></div>`
+    : `<div class="row"><button class="btn" id="errShow">Show the fault</button></div>`}`;
+
+  const sh = hostEl.querySelector('#errShow');
+  if(sh) sh.onclick=()=>{ state.picked='x'; state.stats.seen++; storageSave(storageKey, state.stats); mountErrDrill(hostEl, items, state, storageKey, onAllDone); };
+  const nx = hostEl.querySelector('#errNext');
+  if(nx) nx.onclick=()=>{ state.i++; state.picked=null; mountErrDrill(hostEl, items, state, storageKey, onAllDone); };
+}
+
+function detCandidates(state){
+  let live = OUTCOMES.map(o=>o.id);
+  if(!state.domain) return live;
+  const d = DOMAINS.find(x=>x.id===state.domain);
+  live = live.filter(id=>d.outcomes.includes(id));
+  SUBQ[state.domain].forEach(q=>{
+    const ans = state.sub[q.code];
+    if(!ans) return;
+    const opt = q.options.find(o=>o.id===ans);
+    if(opt) live = live.filter(id=>opt.keeps.includes(id));
+  });
+  return live;
+}
+
+function detReady(state){
+  if(!state.domain) return false;
+  return SUBQ[state.domain].every(q=>state.sub[q.code]);
+}
+
+function detStepsHTML(state){
+  let html = `<div class="step ${state.revealed?'locked':''}">
+    <div class="step-label"><span class="num">1</span><span class="code">D1</span> What kind of thing is this?</div>
+    <div class="opts" id="domainOpts">${DOMAINS.map(d=>
+      `<button class="opt" data-d="${d.id}" aria-pressed="${state.domain===d.id}">${esc(d.n)}<small>${esc(d.sub)}</small></button>`).join('')}</div>
+  </div>`;
+
+  if(state.domain){
+    const qs = SUBQ[state.domain];
+    qs.forEach((q,idx)=>{
+      const unlocked = idx===0 ? true : !!state.sub[qs[idx-1].code];
+      html += `<div class="step ${unlocked?'':'locked'} ${state.revealed?'locked':''}">
+        <div class="step-label"><span class="num">${idx+2}</span><span class="code">${q.code}</span> ${esc(q.label)}${unlocked?'':'<span class="lockmsg">Answer the previous step to unlock</span>'}</div>
+        <div class="opts" data-subq="${q.code}">${q.options.map(o=>
+          `<button class="opt" data-v="${o.id}" aria-pressed="${state.sub[q.code]===o.id}">${esc(o.n)}</button>`).join('')}</div>
+      </div>`;
+    });
+    const ready = detReady(state);
+    html += `<div class="step ${ready?'':'locked'} ${state.revealed?'locked':''}">
+      <div class="step-label"><span class="num">${qs.length+2}</span><span class="code">ID</span> Name it${ready?'':'<span class="lockmsg">Answer the previous step to unlock</span>'}</div>
+      <div class="opts" id="outcomeOpts">${OUTCOMES.filter(o=>o.domain===state.domain).map(o=>
+        `<button class="opt" data-o="${o.id}" aria-pressed="${state.outcome===o.id}">${esc(o.n)}</button>`).join('')}</div>
+    </div>`;
+  }
+  return html;
+}
+
+function detVerdictHTML(sp, state){
+  const okD = state.domain === sp.domain;
+  const subOk = okD && SUBQ[sp.domain].every(q=>{
+    const want = sp.sub[q.code];
+    return want && want.includes(state.sub[q.code]);
+  });
+  const okO = state.outcome === sp.outcome;
+  const name = outcomeName(sp.outcome);
+
+  const wantLine = () => {
+    if(okD && subOk) return '';
+    if(!okD) return ' → ' + esc(DOMAINS.find(d=>d.id===sp.domain).n);
+    const bad = SUBQ[sp.domain].find(q=> !(sp.sub[q.code]||[]).includes(state.sub[q.code]));
+    if(!bad) return '';
+    const opts = bad.options.filter(o=>(sp.sub[bad.code]||[]).includes(o.id)).map(o=>o.n);
+    return ' → ' + esc(opts.join(' or '));
+  };
+
+  return `<div class="verdict">
+    <h3>${esc(name)}</h3>
+    <div class="marks">
+      <span class="mark ${okO?'ok':'no'}">Name ${okO?'correct':'missed'}</span>
+      <span class="mark ${okD&&subOk?'ok':'no'}">Route ${okD&&subOk?'correct':'missed'+wantLine()}</span>
+    </div>
+    ${(okO && !(okD&&subOk)) ? `<div class="warn"><strong>Right name, wrong route.</strong> Scored as a miss. A label you can’t derive from the diagnostic questions won’t survive an unfamiliar situation.</div>` : ''}
+    <div class="vblock"><div class="vlab">Why</div><p>${esc(sp.why)}</p></div>
+    <div class="vblock"><div class="vlab">What would falsify this reading</div><p>${esc(sp.fals)}</p></div>
+    <div class="row"><button class="btn" id="detNext">Next specimen</button></div>
+  </div>`;
+}
+
+function mountDetermination(hostEl, state, storageKey, onAllDone){
+  if(state.i >= SPECIMENS.length) return onAllDone();
+  const sp = SPECIMENS[state.i];
+  const live = detCandidates(state);
+  const st = state.stats;
+
+  hostEl.innerHTML = `
+    ${state.intro ? `<div class="intro">
+      <h2>How this works</h2>
+      <p>You are running each scenario through the diagnostic key, the way the political-ideology course runs a passage through Q1/Q2. Answer the domain first, then the two questions specific to it, and only then name it.</p>
+      <ol>
+        <li>Read the scenario.</li>
+        <li><b>Step 1</b> — is this a moment of reasoning, a move in an interaction, or a stable pattern? The later steps unlock in order, and change depending on this answer.</li>
+        <li><b>Steps 2–3</b> — the two questions specific to that domain.</li>
+        <li><b>Step 4</b> — now name it, and record your determination.</li>
+      </ol>
+      <p>The strip between the scenario and step 1 is a readout, not a control. It crosses off outcomes your answers have ruled out. Nothing there is tappable.</p>
+      <p>Your name and your route are scored separately. Right name from the wrong steps counts as a miss.</p>
+      <div class="row" style="margin-top:4px"><button class="btn" id="introGo">Start</button></div>
+    </div>` : ''}
+    <div class="spec-head">
+      <span class="spec-no">Specimen ${String(state.i+1).padStart(2,'0')} / ${SPECIMENS.length}</span>
+      ${state.intro ? '<span class="spec-set">Full determination</span>' : '<button class="linkbtn" id="introOpen">How this works</button>'}
+    </div>
+    <blockquote class="passage">${esc(sp.q)}</blockquote>
+
+    <div class="rail">
+      <div class="rail-head"><span>Readout · updates automatically · nothing to tap</span><span class="rail-count">${live.length} of ${OUTCOMES.length} left</span></div>
+      <ul class="cands">${OUTCOMES.map(o=>`<li class="cand ${live.includes(o.id)?'':'out'}">${esc(o.n)}</li>`).join('')}</ul>
+    </div>
+
+    ${detStepsHTML(state)}
+
+    ${state.revealed ? detVerdictHTML(sp, state) : `
+      <div class="row">
+        <button class="btn" id="detRecord" ${state.outcome?'':'disabled'}>Record determination</button>
+        <button class="btn ghost" id="detSkip">Skip</button>
+      </div>
+      <p class="hint">Domain, then the two follow-up questions, before naming it. Right name by the wrong route counts as a miss.</p>`}
+
+    <div class="score">
+      <span>Determined <b>${st.n}</b></span>
+      <span>Name correct <b>${st.label}</b></span>
+      <span>Route correct <b>${st.frame}</b></span>
+    </div>`;
+
+  hostEl.querySelectorAll('#domainOpts .opt').forEach(b=>b.onclick=()=>{
+    state.domain = b.dataset.d; state.sub = {}; state.outcome = null;
+    mountDetermination(hostEl, state, storageKey, onAllDone);
+  });
+  hostEl.querySelectorAll('[data-subq] .opt').forEach(b=>b.onclick=(e)=>{
+    const code = e.currentTarget.parentElement.dataset.subq;
+    state.sub[code] = b.dataset.v; state.outcome = null;
+    mountDetermination(hostEl, state, storageKey, onAllDone);
+  });
+  const outcomeOpts = hostEl.querySelector('#outcomeOpts');
+  if(outcomeOpts) outcomeOpts.querySelectorAll('.opt').forEach(b=>b.onclick=()=>{
+    state.outcome = b.dataset.o;
+    mountDetermination(hostEl, state, storageKey, onAllDone);
+  });
+
+  const ig = hostEl.querySelector('#introGo');
+  if(ig) ig.onclick = ()=>{
+    state.intro=false;
+    try{ localStorage.setItem(storageKey+':intro','done'); }catch(e){}
+    mountDetermination(hostEl, state, storageKey, onAllDone);
+  };
+  const io = hostEl.querySelector('#introOpen');
+  if(io) io.onclick = ()=>{ state.intro=true; mountDetermination(hostEl, state, storageKey, onAllDone); };
+
+  const rv = hostEl.querySelector('#detRecord');
+  if(rv) rv.onclick = ()=>{
+    const okD = state.domain === sp.domain;
+    const subOk = okD && SUBQ[sp.domain].every(q=>(sp.sub[q.code]||[]).includes(state.sub[q.code]));
+    const okO = state.outcome === sp.outcome;
+    st.n++; if(okO) st.label++; if(okD && subOk) st.frame++;
+    state.revealed = true; storageSave(storageKey, st);
+    mountDetermination(hostEl, state, storageKey, onAllDone);
+  };
+  const sk = hostEl.querySelector('#detSkip');
+  if(sk) sk.onclick = ()=>{ nextSpecimen(state); mountDetermination(hostEl, state, storageKey, onAllDone); };
+  const nxBtn = hostEl.querySelector('#detNext');
+  if(nxBtn) nxBtn.onclick = ()=>{ nextSpecimen(state); mountDetermination(hostEl, state, storageKey, onAllDone); };
+}
+
+function nextSpecimen(state){ state.i++; state.domain=null; state.sub={}; state.outcome=null; state.revealed=false; }
+
+/* ===================== COURSE CONTENT ===================== */
+
+const COURSE = [
+{ tag:'One', title:'The diagnostic mindset',
+  cards:[
+  {h:'Classify by pattern, never by a single moment',
+   b:`<p class="lead">Most misreads in this territory happen because someone skips straight to a label. A tense exchange becomes "he's gaslighting me." One boastful moment becomes "total narcissist."</p>
+      <p>What actually discriminates isn't how uncomfortable the moment felt. It's a small set of questions about kind, pervasiveness, and function. This course teaches five of them, then drills them.</p>
+      <div class="note">Throughout, a right label reached by the wrong route counts as a miss. If you can't say <i>which question</i> decided it, you've recognised a vibe, not identified a pattern.</div>`},
+  {h:'The five diagnostic questions',
+   b:`<table class="k">
+      <tr><th>D1</th><td><b>What kind of thing is this?</b><br>a moment of reasoning / a move in an interaction / a stable way someone is<span class="tell">The fastest discriminator — decides which key you even need.</span></td></tr>
+      <tr><th>D2</th><td><b>Pervasive and stable, or situational and reactive?</b><span class="tell">Separates a trait or disorder from an ordinary bad day.</span></td></tr>
+      <tr><th>D3</th><td><b>What need, fear, or contradiction does it resolve?</b><br>reveals the function, not just the behaviour</td></tr>
+      <tr><th>D4</th><td><b>What's the nearest look-alike — and what separates them?</b></td></tr>
+      <tr><th>D5</th><td><b>What would falsify this read?</b><br>keeps the label falsifiable instead of sticky</td></tr>
+      </table>
+      <p>D1 and D2 do most of the work. The other three usually confirm rather than decide.</p>`},
+  {h:'D1 routes you to a key',
+   b:`<p>Answer D1 and you've already picked which part of this course applies:</p>
+      <ul>
+        <li><b>A mind justifying itself</b> → the reasoning / self-justification family (Lesson 2)</li>
+        <li><b>A move in an interaction</b> → the tactics family (Lesson 5)</li>
+        <li><b>A stable way someone consistently is</b> → the personality-pattern family (Lessons 3–4)</li>
+      </ul>
+      <p>These are genuinely different kinds of things. A single confusing moment with someone is not evidence of a personality disorder, and a personality disorder is not just "someone who did a manipulative thing once." Conflating the three is the single most common error in casual psychological talk.</p>`},
+  {h:'The trap: pathologizing a moment',
+   b:`<p>Everyone rationalizes sometimes. Everyone gets defensive sometimes. Everyone wants to be noticed sometimes.</p>
+      <div class="warn"><strong>D2 exists specifically to stop you from taking one data point and naming a disorder.</strong> A pattern needs to be pervasive — across time, across relationships, across contexts — before "disorder" language is earned. One bad night is a moment. The same shape for five years, in every relationship, is a pattern.</div>
+      <p>Run D2 before you reach for any label in Lessons 3–5.</p>`}
+  ],
+  drill:{kind:'pick', statsKey:'u1', items:U1_DRILL, opts:U1_OPTS,
+         prompt:'What kind of thing is this (D1)?', title:'Pattern or moment'} },
+
+{ tag:'Two', title:'Cognitive dissonance & self-justification',
+  cards:[
+  {h:'The mechanism, not just "hypocrisy"',
+   b:`<p class="lead">Cognitive dissonance (Festinger): the discomfort of holding two contradictory cognitions, and the drive to resolve it. The resolution does not require honestly changing your mind — there are four moves, and only one of them is that.</p>
+      <ol>
+        <li><b>Change the belief</b> to match the behaviour — genuine, if it happens.</li>
+        <li><b>Change the behaviour</b> to match the belief — also genuine, if it happens.</li>
+        <li><b>Add a justifying cognition</b> without changing either — a permission slip written after the fact.</li>
+        <li><b>Discredit the source</b> of the contradicting information — the easiest move, and the most damaging.</li>
+      </ol>
+      <span class="tell">Tell: dissonance reduction shows up after the behaviour, as a repair job. The decision came first; the story came second.</span>`},
+  {h:'Confirmation bias',
+   b:`<p>Not "believing what you want" in general — specifically <b>asymmetric scrutiny</b>: confirming evidence gets accepted lightly; disconfirming evidence gets picked apart or waved off as an exception.</p>
+      <span class="tell">Tell: ask how much scrutiny each type of evidence received. If confirming evidence sailed through and disconfirming evidence got cross-examined, that's the signature.</span>`},
+  {h:'Motivated reasoning',
+   b:`<p>The conclusion is fixed <b>before</b> the reasoning starts; the reasoning is reverse-engineered to arrive somewhere it was already going. This is the easiest thing in the family to confuse with dissonance reduction.</p>
+      <span class="tell">Tell: dissonance reduction responds to discomfort that arrives after a behaviour. Motivated reasoning starts with the destination already chosen — sometimes before any specific behaviour has even happened.</span>`},
+  {h:'Sunk cost / escalation of commitment',
+   b:`<p>Justifying further investment — money, time, a relationship — by appeal to what's already been spent, rather than by what the future investment is actually worth. Often <i>powered by</i> dissonance: admitting the first four years were wasted is exactly the discomfort avoided by spending a fifth.</p>
+      <span class="tell">Tell: the stated reason points backward ("I've already put in so much"), not forward ("this is still worth it").</span>`},
+  {h:'Changing your mind is not a bias',
+   b:`<p>If someone updates a belief because the evidence genuinely warranted it — and can say what would have moved them the other way too — that's reasoning working correctly, not a distortion.</p>
+      <div class="note">The tell is direction: did the evidence lead to the conclusion, or did the conclusion lead the search for evidence? Treating all belief change as suspect is itself a mistake — the mirror image of never updating at all.</div>`}
+  ],
+  drill:{kind:'pick', statsKey:'u2', items:U2_DRILL, opts:U2_OPTS,
+         prompt:'Which distortion — if any?', title:'Which distortion'} },
+
+{ tag:'Three', title:'The narcissism spectrum',
+  cards:[
+  {h:'Not one dial',
+   b:`<p class="lead">Confidence, self-esteem, and narcissism get used interchangeably. They are three different things.</p>
+      <ul>
+        <li><b>Confidence</b> — situational belief in your ability to do a specific thing.</li>
+        <li><b>Self-esteem</b> — a general, stable sense of your own worth. Compatible with genuine warmth and real empathy.</li>
+        <li><b>Narcissism</b> — a self-concept organised around being exceptional, requiring external admiration, structurally low in empathy for anyone whose function isn't to supply that admiration.</li>
+      </ul>
+      <div class="note">The discriminator is not confidence level. It's what happens to the person's regard for <i>other people</i> once the confidence gets tested.</div>`},
+  {h:'Grandiose narcissism',
+   b:`<p>The stereotype, and the easier one to spot: overt, entitled, dominance-seeking, requires admiration, name-drops achievements unprompted, reacts to criticism with contempt or rage (<b>narcissistic injury</b>), treats relationships instrumentally.</p>
+      <span class="tell">Tell: the mask cracks outward, as aggression toward whoever threatened it.</span>`},
+  {h:'Vulnerable narcissism',
+   b:`<p>The one people miss constantly, because it doesn't look like the stereotype at all: covert, hypersensitive to any perceived slight, chronically feels under-appreciated and wronged, avoids risk rather than seeking dominance — but still fundamentally organised around the self, still low in empathy for others' independent reality.</p>
+      <span class="tell">Tell: the mask cracks inward, as withdrawal, self-pity, and quiet resentment — the same structure as the grandiose form, turned in on itself.</span>`},
+  {h:'The actual clinical criteria, stated plainly',
+   b:`<p>A pervasive pattern, present by early adulthood and across contexts, of: grandiosity, need for excessive admiration, and lack of empathy — typically alongside several of: entitlement, exploitation, envy, arrogance, fantasies of unlimited success, belief in being special.</p>
+      <div class="warn"><strong>The two words that matter most: pervasive and impairing.</strong> Most people show two or three of these sometimes. That is not the disorder. The disorder requires the pattern to be the person's stable operating mode, not their behaviour under stress, threat, or grief.</div>`}
+  ],
+  drill:{kind:'pick', statsKey:'u3', items:U3_DRILL, opts:U3_OPTS,
+         prompt:'Where does this fall on the spectrum?', title:'Where on the spectrum'} },
+
+{ tag:'Four', title:'Look-alikes and false friends',
+  cards:[
+  {h:'Narcissistic vs. borderline pattern',
+   b:`<table class="k">
+      <tr><th></th><th>Narcissistic</th><th>Borderline</th></tr>
+      <tr><td>Core fear</td><td>Being ordinary / unadmired</td><td>Being abandoned</td></tr>
+      <tr><td>Self-image</td><td>Fixed grandiosity (or its vulnerable mirror)</td><td>Unstable — swings, often within one relationship</td></tr>
+      <tr><td>View of others</td><td>Instrumental — a supply of admiration</td><td>Idealized, then devalued, then sometimes re-idealized</td></tr>
+      <tr><td>Reaction to conflict</td><td>Contempt, dismissal, cutting off</td><td>Panic, frantic repair, or sudden devaluation</td></tr>
+      </table>
+      <span class="tell">Tell: "don't leave me" pulls toward borderline. "How dare you not admire me" pulls toward narcissistic.</span>`},
+  {h:'Narcissistic vs. histrionic pattern',
+   b:`<p>Histrionic is about being <i>noticed</i>, not necessarily admired for superiority. More emotionally expressive and theatrical in the moment; less overt entitlement; often genuinely warm and suggestible, where narcissism resists influence that doesn't flatter it.</p>
+      <span class="tell">Tell: histrionic wants an audience. Narcissistic wants a mirror. Watch what happens when attention shifts to someone else — histrionic escalates for attention; narcissistic devalues whoever now has it.</span>`},
+  {h:'Narcissistic vs. antisocial pattern / psychopathy',
+   b:`<p>Antisocial centers on disregard for rules and others' rights — impulsivity, routine deceit, no remorse for concrete harm. It doesn't require grandiosity at all. Psychopathy adds a more totalizing absence of empathy — not the <i>selective</i> withholding narcissism shows, but a flatter, more instrumental view of people generally.</p>
+      <span class="tell">Tell: a narcissist wants you to see them as superior. An antisocial/psychopathic pattern usually doesn't care what you think — only what you can be used for.</span>`},
+  {h:'Unpleasantness is not a diagnosis',
+   b:`<div class="warn"><strong>A genuinely selfish, unkind, or difficult person is not automatically narcissistic</strong> — and someone shy, avoidant, or prone to occasional self-pity is not automatically anything either. Diagnose the <i>structure</i> (self-other model, what's feared, what happens under threat) — never the severity of how much you dislike them.</div>
+      <p>This is the psychological equivalent of the political-ideology horseshoe error: judging by how uncomfortable the behaviour makes you, instead of by its actual content.</p>`},
+  {h:'Words that are not diagnoses',
+   b:`<p>"Toxic," "narc," "sociopath" (not a clinical term), "gaslighting" applied to any disagreement, "main character energy." These are increasingly used as pure insults.</p>
+      <div class="note">Analytic use and insult use are different activities — the same warning the ideology course gives about "fascist" and "socialist."</div>`}
+  ],
+  drill:{kind:'pick', statsKey:'u4', items:U4_DRILL, opts:U4_OPTS,
+         prompt:'Which pattern, if any, fits best?', title:'Which pattern'} },
+
+{ tag:'Five', title:'Manipulation tactics & defense mechanisms',
+  cards:[
+  {h:'Defense mechanisms, briefly',
+   b:`<p>Everyone uses defense mechanisms; the question is which ones, how rigidly, and how much reality-distortion they require.</p>
+      <ul>
+        <li><b>Denial</b> — refusing to register a fact at all.</li>
+        <li><b>Projection</b> — attributing your own unacceptable feeling to someone else.</li>
+        <li><b>Rationalization</b> — a plausible but false reason, built after the fact (dissonance reduction's usual delivery mechanism).</li>
+        <li><b>Displacement</b> — redirecting an emotion toward a safer target.</li>
+        <li><b>Intellectualization</b> — draining the emotion out of something by discussing it purely abstractly.</li>
+      </ul>
+      <p>None of these, alone, is pathological. Everyone does all five sometimes. The question is always D2: occasional, or the person's only mode?</p>`},
+  {h:'Gaslighting',
+   b:`<p>Specifically: a <i>pattern</i>, over time, of denying another person's memory, perception, or feelings in order to make them distrust their own judgment — not a single instance of being wrong, and not ordinary disagreement.</p>
+      <span class="tell">Tell: repetition + escalation + the functional effect that the other person starts pre-emptively doubting themselves. A single "that's not what happened" is not gaslighting. Years of it, until you stop trusting your own memory, is.</span>`},
+  {h:'DARVO',
+   b:`<p><b>D</b>eny, <b>A</b>ttack, <b>R</b>everse <b>V</b>ictim and <b>O</b>ffender — deny the act happened, attack the accuser's credibility, reframe the accuser as the real aggressor. Named and studied by psychologist Jennifer Freyd.</p>
+      <span class="tell">Tell: it's the sequence, not just defensiveness. All three parts, in that order, in one exchange, is the signature.</span>`},
+  {h:'Love-bombing → devaluation',
+   b:`<p>Rapid, intense idealization and attention early on — disproportionate to how long or how well the person is actually known — that creates dependency, followed by withdrawal or criticism once the attachment is secured.</p>
+      <span class="tell">Tell: speed and intensity relative to actual depth of knowledge, and its conditionality. Genuine early enthusiasm is common and not a red flag by itself; the tell is that it functions as an investment called in later.</span>`},
+  {h:'The trap: everything becomes manipulation',
+   b:`<p>Most defensiveness in an argument is not a tactic. Most disagreement is not gaslighting. Most early-relationship excitement is not love-bombing.</p>
+      <div class="warn"><strong>The discriminator is pattern + function, not a single uncomfortable moment.</strong> Calling every instance of someone being wrong about a shared memory "gaslighting" empties the word of the thing it was built to name.</div>`}
+  ],
+  drill:{kind:'pick', statsKey:'u5', items:U5_DRILL, opts:U5_OPTS,
+         prompt:'Name the tactic, or say it’s not one', title:'Name the tactic'} },
+
+{ tag:'Six', title:'Mixed identification drill',
+  cards:[
+  {h:'Running the whole key',
+   b:`<p class="lead">Everything so far has drilled one family at a time. Now you run the full sequence on unlabelled scenarios.</p>
+      <p>For each specimen: answer D1 (the domain), then the two questions specific to that domain, then name it. A readout between the scenario and the questions crosses off outcomes your answers have eliminated.</p>
+      <h3>How this is scored</h3>
+      <p>Your <b>name</b> and your <b>route</b> are counted separately. Getting the right pattern from the wrong domain or wrong sub-answers is flagged and counts as a miss, because a label you cannot derive from the questions will not survive an unfamiliar situation.</p>
+      <div class="note">Two of the fourteen are traps for over-diagnosis: the honest answer is that there isn't enough here to name a pattern at all. Withholding is a skill, not a failure — probably the more important skill in this entire course.</div>`}
+  ],
+  drill:{kind:'det'} }
+];
+
+/* ===================== STATE ===================== */
+
+const S = {
+  tab:'course', u:0, card:0, phase:'read',
+  done:[false,false,false,false,false,false],
+  stats:{ u1:{n:0,ok:0}, u2:{n:0,ok:0}, u3:{n:0,ok:0}, u4:{n:0,ok:0}, u5:{n:0,ok:0}, det:{n:0,label:0,frame:0} }
+};
+let drillState = null;
+
+function saveProgress(){ storageSave('psych-course:progress', {u:S.u, done:S.done}); }
+function loadAll(){
+  storageLoad('psych-course:progress', S);
+  for(const k of ['u1','u2','u3','u4','u5']) storageLoad('psych-course:stats:'+k, S.stats[k]);
+  storageLoad('psych-course:stats:det', S.stats.det);
+}
+
+/* ===================== SHELL ===================== */
+
+function ladder(){
+  return `<div class="ladder">${COURSE.map((u,i)=>
+    `<div class="rung ${i===S.u?'now':''} ${S.done[i]?'done':''}" data-u="${i}"><b>${u.tag}</b>${esc(u.title)}</div>`
+  ).join('')}</div>`;
+}
+function wireLadder(){
+  stage().querySelectorAll('.rung').forEach(r=>r.onclick=()=>{
+    S.u=+r.dataset.u; S.card=0; S.phase='read'; render();
+  });
+}
+
+function render(){
+  if(S.tab==='guide') return renderGuide();
+  if(S.phase==='read') return renderCard();
+  if(S.phase==='unitdone') return renderUnitDone();
+  return renderDrillPhase();
+}
+
+/* ===================== LESSON CARDS ===================== */
+
+function renderCard(){
+  const u = COURSE[S.u], c = u.cards[S.card];
+  stage().innerHTML = ladder() + `
+    <div class="crumb">
+      <span class="where">Unit ${u.tag} · Lesson</span>
+      <span class="of">Card ${S.card+1} of ${u.cards.length}</span>
+    </div>
+    <div class="lesson"><h2>${esc(c.h)}</h2>${c.b}</div>
+    <div class="dots">${u.cards.map((_,i)=>`<span class="dot ${i<=S.card?'on':''}"></span>`).join('')}</div>
+    <div class="row">
+      ${S.card>0?'<button class="btn ghost" id="back">Back</button>':''}
+      <button class="btn" id="fwd">${S.card < u.cards.length-1 ? 'Next' : 'Start the drill'}</button>
+    </div>`;
+  wireLadder();
+  const b=document.getElementById('back'); if(b) b.onclick=()=>{S.card--;render();};
+  document.getElementById('fwd').onclick=()=>{
+    if(S.card < u.cards.length-1){ S.card++; }
+    else { S.phase='drill'; resetDrillState(u); }
+    render();
+  };
+}
+
+function resetDrillState(u){
+  if(u.drill.kind==='det'){
+    drillState = {i:0, domain:null, sub:{}, outcome:null, revealed:false, intro:!introSeen('psych-course:stats:det'), stats:S.stats.det};
+  } else {
+    drillState = {i:0, picked:null, stats:S.stats[u.drill.statsKey]};
+  }
+}
+
+/* ===================== DRILL PHASE ===================== */
+
+function renderDrillPhase(){
+  const u = COURSE[S.u];
+  stage().innerHTML = ladder() + `
+    <div class="crumb">
+      <span class="where">Unit ${u.tag} · Drill</span>
+      <span class="of">${esc(u.drill.kind==='det' ? 'Full determination' : u.drill.title)}</span>
+    </div>
+    <div id="drillHost"></div>`;
+  wireLadder();
+  const host = document.getElementById('drillHost');
+  if(u.drill.kind==='det'){
+    mountDetermination(host, drillState, 'psych-course:stats:det', finishUnit);
+  } else {
+    const cfg = { items:u.drill.items, opts:u.drill.opts, title:u.drill.title, prompt:u.drill.prompt, storageKey:'psych-course:stats:'+u.drill.statsKey };
+    mountPickDrill(host, cfg, drillState, finishUnit);
+  }
+}
+
+function finishUnit(){ S.done[S.u]=true; S.phase='unitdone'; saveProgress(); render(); }
+
+/* ===================== UNIT COMPLETE ===================== */
+
+function renderUnitDone(){
+  const u=COURSE[S.u], last = S.u===COURSE.length-1;
+  const st=S.stats[u.drill.kind==='det' ? 'det' : u.drill.statsKey];
+  const line = u.drill.kind==='det'
+    ? `Names correct <b>${st.label}</b> · routes correct <b>${st.frame}</b> · of <b>${st.n}</b>.`
+    : `<b>${st.ok}</b> correct of <b>${st.n}</b> answered.`;
+  stage().innerHTML = ladder() + `<div class="done">
+    <h2>Unit ${u.tag} complete</h2>
+    <p>${line}</p>
+    <div class="row" style="justify-content:center">
+      <button class="btn ghost" id="redo">Redo the drill</button>
+      <button class="btn ghost" id="reread">Reread the lesson</button>
+      ${last?'':'<button class="btn" id="on">Continue to Unit '+COURSE[S.u+1].tag+'</button>'}
+    </div>
+    ${last?'<p style="margin-top:18px">You have run every unit. The Reference tab keeps all of it, plus the caveats about where this course stops.</p>':''}
+  </div>`;
+  wireLadder();
+  document.getElementById('redo').onclick=()=>{S.phase='drill';resetDrillState(u);render();};
+  document.getElementById('reread').onclick=()=>{S.phase='read';S.card=0;render();};
+  const on=document.getElementById('on');
+  if(on) on.onclick=()=>{S.u++;S.card=0;S.phase='read';saveProgress();render();};
+}
+
+/* ===================== REFERENCE ===================== */
+
+function renderGuide(){
+  stage().innerHTML = `
+    <div class="crumb"><span class="where">Reference</span><span class="of">Everything taught, condensed</span></div>
+    ${COURSE.map(u=>`<details class="fg"><summary>Unit ${u.tag} — ${esc(u.title)}</summary>
+      <div class="fg-body lesson">${u.cards.map(c=>`<h3>${esc(c.h)}</h3>${c.b}`).join('')}</div></details>`).join('')}
+    <details class="fg"><summary>Honest caveats</summary><div class="fg-body">
+      <ul>
+        <li><b>This is not a diagnostic tool.</b> Real diagnosis needs a licensed clinician, a structured interview, and ruling out other explanations. Nothing here substitutes for that.</li>
+        <li><b>Pervasiveness, early onset, and impairment are required</b> for any disorder label. A handful of matching traits is not a disorder — most people show these traits occasionally without meeting criteria for anything.</li>
+        <li><b>The categories are contested even among clinicians.</b> The DSM-5's own alternative model treats personality pathology as dimensional, not categorical. Comorbidity is common and trained clinicians disagree on borderline cases.</li>
+        <li><b>These words are also weapons.</b> "Narcissist," "gaslighting," "toxic," and "sociopath" are used constantly to condemn rather than describe. Analytic and rhetorical use are different activities.</li>
+        <li><b>Diagnosing at a distance is unreliable.</b> Confidence should scale down with distance from the person, not up.</li>
+        <li><b>Watch your own motivated reasoning while using this course</b> — especially about people you already have strong feelings about.</li>
+        <li><b>None of this replaces professional help</b> — for yourself or for a relationship that matches Lesson 5's tactics.</li>
+      </ul>
+    </div></details>`;
+}
+
+/* ===================== ROUTER ===================== */
+
+document.querySelectorAll('.tab').forEach(t=>{
+  t.onclick=()=>{
+    document.querySelectorAll('.tab').forEach(x=>x.setAttribute('aria-selected','false'));
+    t.setAttribute('aria-selected','true');
+    S.tab=t.dataset.tab; render();
+  };
+});
+
+loadAll();
+render();
+</script>
+</body>
+</html>
