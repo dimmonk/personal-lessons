@@ -1,7 +1,7 @@
 {
   "name": "fieldcraft",
   "private": true,
-  "description": "Fieldcraft — practical diagnostic courses. Static site in public/, no build step.",
+  "description": "Fieldcraft — pragmatic knowledge. Static site in public/, no build step.",
   "scripts": {
     "icons": "node scripts/render-icons.mjs",
     "test:data": "node tests/validate-data.mjs",

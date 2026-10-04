@@ -174,9 +174,9 @@ async function testCourseWalk() {
 // 6. Name, manifest, service worker, installability and offline load.
 async function testPwa() {
   const { context, page } = await freshPage();
-  check(await page.title() === 'Fieldcraft', `title is "${await page.title()}"`);
+  check(await page.title() === 'Fieldcraft · Pragmatic knowledge', `title is "${await page.title()}"`);
   const brand = (await page.locator('#screen .topbar .m').first().textContent()).trim();
-  check(brand === 'Fieldcraft', `library brand is "${brand}"`);
+  check(brand === 'Fieldcraft · Pragmatic knowledge', `library brand is "${brand}"`);
 
   await page.evaluate(() => navigator.serviceWorker.ready);
   await page.reload();
