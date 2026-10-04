@@ -1,0 +1,17 @@
+{
+  "name": "Fieldcraft",
+  "short_name": "Fieldcraft",
+  "description": "Practical diagnostic courses: read the specimen, run the key, name it.",
+  "id": ".",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#14120F",
+  "theme_color": "#14120F",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

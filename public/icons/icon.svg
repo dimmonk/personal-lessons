@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Dichotomous key: each couplet splits in two; the amber route is the determination. -->
+  <rect width="512" height="512" fill="#14120F"/>
+  <g id="mark">
+    <g fill="none" stroke-width="22" stroke-linejoin="miter" stroke-linecap="butt">
+      <path stroke="#A89E8D" d="M196 256V160H282"/>
+      <path stroke="#A89E8D" d="M382 112H282V208H382"/>
+      <path stroke="#A89E8D" d="M282 352V400H382"/>
+      <path stroke="#DFA83E" d="M128 256H196V352H282V304H382"/>
+    </g>
+    <circle cx="118" cy="256" r="24" fill="#DFA83E"/>
+    <g fill="#14120F" stroke="#A89E8D" stroke-width="12">
+      <circle cx="396" cy="112" r="17"/><circle cx="396" cy="208" r="17"/><circle cx="396" cy="400" r="17"/>
+    </g>
+    <circle cx="396" cy="304" r="25" fill="#DFA83E"/>
+  </g>
+</svg>

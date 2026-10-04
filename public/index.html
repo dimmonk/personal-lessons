@@ -4,10 +4,18 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#14120F">
-<title>Personal Lessons</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Literata:opsz,wght@7..72,400;7..72,500&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<title>Fieldcraft</title>
+<meta name="description" content="Practical diagnostic courses: read the specimen, run the key, name it.">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Fieldcraft">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icons/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="icons/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="preload" href="fonts/literata-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="fonts/fonts.css">
 <style>
 :root{
   --bg:#14120F; --footer:#17140F; --raised:#1A1712; --field:#1D1A15;
@@ -42,11 +50,16 @@ mark{background:var(--accent);color:var(--bg)}
 .tabbar span{font-family:var(--mono);font-size:9px;letter-spacing:.1em;text-transform:uppercase}
 
 @media(min-width:1000px){
+  .app{max-width:1280px;margin:0 auto}
   .rail{display:flex;flex-direction:column;flex:0 0 244px;width:244px;border-right:1px solid var(--divider);
     background:var(--footer);position:sticky;top:0;height:100vh;overflow-y:auto}
   .tabbar{display:none}
-  .pane{margin:0;max-width:560px;padding:0 40px 56px}
-  .pane.read{max-width:720px}
+  .pane{max-width:680px;padding:0 40px 56px}
+  .pane.read{max-width:760px}
+}
+@media(min-width:1282px){
+  .app{border-right:1px solid var(--divider)}
+  .rail{border-left:1px solid var(--divider)}
 }
 
 /* ---------- rail ---------- */
@@ -128,7 +141,7 @@ mark{background:var(--accent);color:var(--bg)}
 .row .s{font-family:var(--mono);font-size:9.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--label)}
 .row .end{display:flex;flex-direction:column;align-items:flex-end;gap:7px;flex:0 0 auto}
 .row.done .t{color:var(--dim)}
-.row.now{background:var(--raised);padding-left:12px;padding-right:12px;margin:0 -12px}
+.row.now{background:var(--raised);padding-left:12px;padding-right:12px;margin:0 -12px;width:calc(100% + 24px)}
 
 .sigil{display:flex;align-items:center;justify-content:center;flex:0 0 34px;width:34px;height:34px;
   border:1px solid var(--accent);font-family:var(--mono);font-size:11px;font-weight:500;color:var(--accent)}
@@ -152,6 +165,7 @@ mark{background:var(--accent);color:var(--bg)}
 .stat span{font-family:var(--mono);font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--label)}
 
 .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+@media(min-width:1000px){.grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
 .tile{display:flex;flex-direction:column;justify-content:space-between;gap:14px;width:100%;
   min-height:84px;padding:12px;border:1px solid var(--rule)}
 .tile:hover{border-color:var(--border)}
@@ -371,7 +385,9 @@ const D_UNIT = [
   {q:'A people that has forgotten its blood and soil has already begun to die.',a:'Race / blood',w:'Hierarchical valence — the Nazi variant of fascism.'},
   {q:'The nation, humiliated and betrayed, will be reborn through discipline and will.',a:'Nation',w:'Fascism. The rebirth language is decisive.'},
   {q:'Each person is the best judge of their own interest, and the state exists to protect that judgment.',a:'Individual',w:'Classical liberalism.'},
-  {q:'The workers of the world have no country.',a:'Class',w:'Class placed explicitly above nation — Marxist internationalism.'}
+  {q:'The workers of the world have no country.',a:'Class',w:'Class placed explicitly above nation — Marxist internationalism.'},
+  {q:'Kings rule by the grace of God, and the Church teaches what no parliament can vote away.',a:'Tradition & faith',w:'Throne and altar. Divine-traditional order, not the nation, is the unit — reactionary conservatism.'},
+  {q:'The ordinary decent majority has been betrayed by a small elite that despises them.',a:'People vs elite',w:'Pure people against a corrupt few. Populism — a thin ideology that still needs a host to tell you which family.'}
 ];
 const D_UNIT_OPTS = ['Class','Nation','Race / blood','Individual','Tradition & faith','People vs elite'];
 
@@ -3633,7 +3649,7 @@ function renderTabbar(){
 function renderRail(){
   const rail = document.getElementById('rail');
   rail.innerHTML = `
-    <div class="rhead"><span class="m">Personal Lessons</span></div>
+    <div class="rhead"><span class="m">Fieldcraft</span></div>
     <div class="rsearch">
       <button class="searchfield" data-v="search">${icon('search',14)}<span style="flex-grow:1">Search</span></button>
     </div>
@@ -3648,6 +3664,7 @@ function renderRail(){
         <span class="nm">${esc(s.name)}</span>${tail}</button>`;
     }).join('')}</div>
     <div class="rfoot">
+      <button data-v="library" class="${APP.view==='library'?'on':''}">${icon('library',16)}<span style="flex-grow:1">Library</span></button>
       <button data-v="mixed" class="${APP.view==='mixed'?'on':''}">${icon('target',16)}<span style="flex-grow:1">Mixed drill</span></button>
       <button data-v="progress" class="${APP.view==='progress'?'on':''}">${icon('bars',16)}<span style="flex-grow:1">Progress</span></button>
     </div>`;
@@ -3691,7 +3708,7 @@ function renderLibrary(){
   const list = sortedSubjects();
 
   screenEl().innerHTML = `<div class="pane">
-    <div class="topbar"><span class="m">Personal Lessons</span></div>
+    <div class="topbar"><span class="m">Fieldcraft</span></div>
     <div class="mast">
       <h1>${cap(numWord(SUBJECTS.length))} ${SUBJECTS.length === 1 ? 'key' : 'keys'}.</h1>
       <p>Learn the questions that decide a call, then drill them on cases that arrive unlabelled.</p>
@@ -4505,6 +4522,10 @@ document.addEventListener('keydown', e => {
 });
 
 render();
+
+if('serviceWorker' in navigator){
+  navigator.serviceWorker.register('sw.js').catch(err => console.error('Service worker registration failed', err));
+}
 </script>
 </body>
 </html>

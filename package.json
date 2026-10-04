@@ -1,0 +1,15 @@
+{
+  "name": "fieldcraft",
+  "private": true,
+  "description": "Fieldcraft — practical diagnostic courses. Static site in public/, no build step.",
+  "scripts": {
+    "icons": "node scripts/render-icons.mjs",
+    "test:data": "node tests/validate-data.mjs",
+    "test:e2e": "node tests/e2e.mjs",
+    "test": "npm run test:data && npm run test:e2e",
+    "deploy": "npm test && firebase deploy --only hosting"
+  },
+  "devDependencies": {
+    "playwright": "1.59.1"
+  }
+}
