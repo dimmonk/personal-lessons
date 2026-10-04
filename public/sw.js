@@ -2,7 +2,7 @@
 // Navigation is network-first so a new deploy shows up on the next load;
 // the cached copy is only the offline fallback. Static assets are served
 // from cache and refreshed in the background.
-const CACHE = 'fieldcraft-v1';
+const CACHE = 'fieldcraft-v2';
 const SHELL = [
   './',
   'manifest.json',
