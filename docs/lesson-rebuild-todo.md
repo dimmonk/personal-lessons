@@ -1,45 +1,28 @@
----
-title: Lesson rebuild — make every unit teach, then apply
-artifact: https://claude.ai/artifact/GwniHhX1ntEJah2MQ5kFjv
----
+# Lesson rebuild: every subject in the interactive format
 
-# Lesson rebuild
+Started and finished 2026-10-05, in one session. Keys on Opus, units on Sonnet (one agent per unit), engine and validator gaps fixed at the root as real data hit them (`docs/lesson-standard.md` section 17). The state and how to continue: `docs/HANDOFF.md`.
 
-The lessons name things without teaching them, and the lesson, the questionnaire and the drills use different words for the same idea. Every unit gets rebuilt so a reader understands the idea, sees it applied, then practises it in the same words.
+## Subjects
+- [x] Psychology: 4 units (gate, reasoning, between two people, lasting ways), 16 specimens
+- [x] Statistical Claims: 6 units, 23 specimens
+- [x] Scams: 6 units (one a fact unit), 27 specimens
+- [x] Wealth Preservation: 5 units, 27 specimens
+- [x] US Civics: 10 units (five fact units), 20 specimens
+- [x] Political Ideologies: 5 units, 30 specimens
+- [x] Basic Math: 6 units (five procedure units), 35 specimens
+- [x] Old card-format data deleted from every subject
 
-## Research, audit and standard
+## Engine, validator, tools, tests
+- [x] Gate, fact and procedure units on real data; chains (`continues`); cross-branch look-alike pairs; `act` and V59; names and terms of assumed units; earlier problem types in later drills and Mixed; unmet names shown by plain words; an empty Mixed drill explains itself
+- [x] Learner-view tool for every unit kind (`tools/learner-view/`); all 42 units rendered in `docs/learner-view/`
+- [x] Browser tests read their expectations from the data
+- [x] npm test green: data, about 1.6 million lesson checks, 86 negative controls, about 57,000 browser checks
 
-- [x] Learning-science source of truth: 29 principles from about 270 sources, every reference checked online, 41 review points applied (docs/learning-science.md)
-- [x] Fable pass over the research document: 30 principles, 11 conflicts between rules fixed
-- [x] Comprehension audit of all 7 subjects: 150 of 363 practice items cannot be answered from the lessons (docs/comprehension-audit/)
-- [ ] **(now)** Lesson standard designed from the research, on Fable (judged; critics found 82 problems; revision running): three independent designs, judged into one, every rule traced to a research principle, with Psychology Unit Two fully rewritten as the exemplar
-- [ ] Review the standard and the exemplar against the research and the audit findings
-
-## Build the engine
-
-- [ ] Structured lesson cards replace free-text cards (plain explanation, worked example, in-card check, recap)
-- [ ] One vocabulary per subject: lesson, questionnaire, drills and verdict all read from the key
-- [x] App split out of the 4,500-line index.html into stylesheet, engine and per-subject files; tests pass, live 0b0ba22
-- [ ] Validator fails the build when a lesson, drill or key drifts from the standard
-- [ ] Revision number on every lesson: each unit carries its own revision, starting at 1 for this rebuild, shown in the app; the test fails if a lesson's content changes without its revision going up
-- [ ] Psychology Unit Two rebuilt as the exemplar and live to try
-
-## Rewrite the subjects
-
-- [ ] Psychology (6 units)
-- [ ] Political Ideologies (5 units)
-- [ ] Basic Math (7 units)
-- [ ] Statistical Claims (7 units)
-- [ ] Scams & Social Engineering (7 units)
-- [ ] Wealth Preservation (7 units)
-- [ ] US Civics & History (7 units)
-
-## Verify and ship
-
-- [ ] Learner simulation re-run on the rewritten units: every practice item answerable from its lessons
-- [ ] Data checks and browser checks pass
-- [ ] Commit, deploy to fieldcraft.web.app, push
+## Finish
+- [x] Lock written for 42 units; HANDOFF.md rewritten
+- [ ] Commit, deploy, push
 
 ## Needs your decision
-
-- [ ] Try the rebuilt Psychology Unit Two when it is live and say whether this is what a proper lesson should be. My pick: roll the same format out to all 7 subjects unless you object.
+- Currency: Scams and Wealth Preservation use pounds (as the old lessons did), Statistical Claims uses dollars, and Civics is US. My pick: dollars everywhere if you are in the US.
+- The old card-format screens are no longer used by any subject. Delete them (and `docs/lesson-pattern.md`)? My pick: yes, now that nothing uses them.
+- Cold read: read any unit as a beginner and say what is unclear (start with Psychology Unit One).
