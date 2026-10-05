@@ -1,0 +1,131 @@
+// Basic Math, Unit Three: the drill's problems. Every problem is a case with a route, marked words and a reason for the key's first question and for the unit's own question, and carries its whole working and the slip behind every wrong choice.
+// The working, the wrong choices and the slip behind each were computed from the problem's own numbers when the file was written: check a number you change against its working.
+
+FC.cases('math', 'u3', [
+  {
+    id: 'm3-dr-quad-2',
+    use: 'drill',
+    tier: 'misleading',
+    setting: 'leisure',
+    topic: 'the area rule for a pool',
+    kind: 'problem',
+    outcome: 'quad',
+    text: 'The area of a rectangular pool, in square metres, is worked out by the rule: width × (width + 5). A pool’s area is 36 m². What is its width?',
+    route: { M1: ['unknown'], A1: ['itself'] },
+    cues: {
+      M1: ['width × (width + 5)', 'What is its width?'],
+      A1: ['width × (width + 5)', 'A pool’s area is 36 m²']
+    },
+    reason: {
+      M1: 'The problem asks {cue:M1}, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no {t:righttriangle} or copy at another size, so the key’s first answer is {a:M1.unknown}.',
+      A1: 'The words {cue:A1} give a rule and the result it came to, 36 m², which looks like {a:A1.formula}. But in the rule the missing width appears twice, once on its own and once inside the bracket, so it is multiplied by itself, and the key’s answer is {a:A1.itself}.'
+    },
+    not: {
+      outcome: 'rearr',
+      why: 'The missing number is multiplied by itself, so it cannot be undone one thing at a time. {o:rearr} would be the name if it appeared only once in the calculation.'
+    },
+    also: ['formula'],
+    steps: [
+      {
+        does: 'Write it as x² + b × x = c, with x² on its own',
+        working: 'x × (x + 5) = 36. Multiply out: x × x is x², and x × 5 is 5 × x, so x² + 5 × x = 36'
+      },
+      {
+        does: 'Add the square of half the number in front of x to both sides',
+        working: 'Half of 5 is 2.5, and 2.5 × 2.5 = 6.25. x² + 5 × x + 6.25 = 36 + 6.25 = 42.25'
+      },
+      {
+        does: 'Write the left side as one number {t:squared}',
+        working: 'x² + 5 × x + 6.25 = (x + 2.5) × (x + 2.5), so (x + 2.5)² = 42.25'
+      },
+      {
+        does: 'Take the {t:sqroot} of both sides, keeping both answers',
+        working: 'The {t:sqroot} of 42.25 is 6.5, and −6.5 × −6.5 is also 42.25, so x + 2.5 = 6.5 or x + 2.5 = −6.5'
+      },
+      {
+        does: 'Take away half the number in front of x from each',
+        working: 'x = 6.5 − 2.5 = 4, or x = −6.5 − 2.5 = −9'
+      },
+      {
+        does: 'Throw out any answer the story rules out, and check the one left',
+        working: '−9 cannot be right, because a pool cannot have a width below zero, so x = 4. Check: 4 × (4 + 5) = 4 × 9 = 36'
+      }
+    ],
+    answer: {
+      right: 'r',
+      choices: [
+        { id: 'r', text: '4 m' },
+        {
+          id: 's1',
+          text: '6.5 m',
+          slip: 'you stop after the {t:sqroot} and give 6.5, though it is x + 2.5 that is 6.5, so 2.5 still has to come off.'
+        },
+        {
+          id: 's2',
+          text: '−9 m',
+          slip: 'you keep the answer below zero, −9, though the story rules it out.'
+        }
+      ]
+    },
+    why: 'Adding the square of half the number in front of x to both sides turns the left side into one number {t:squared}, (x + half of it)², and a number that has been multiplied by itself can be undone with a {t:sqroot}. A {t:sqroot} has two answers, one above zero and one below it, and the story decides which can stay.'
+  },
+
+  {
+    id: 'm3-dr-quad-3',
+    use: 'drill',
+    tier: 'misleading',
+    setting: 'leisure',
+    topic: 'a puzzle with no answer',
+    kind: 'problem',
+    outcome: 'quad',
+    text: 'A magazine puzzle asks for a number that, multiplied by itself and then added to 4 times itself, gives −13. What is the number?',
+    route: { M1: ['unknown'], A1: ['itself'] },
+    cues: {
+      M1: ['multiplied by itself and then added to 4 times itself, gives −13', 'What is the number?'],
+      A1: ['multiplied by itself and then added to 4 times itself, gives −13']
+    },
+    reason: {
+      M1: 'The problem asks {cue:M1}, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no {t:righttriangle} or copy at another size, so the key’s first answer is {a:M1.unknown}.',
+      A1: 'The words {cue:A1} give a result, −13, and the missing number is multiplied by itself as well as used on its own. That is {a:A1.itself}. Whether any number fits is settled by the working, and a result below zero is one way for no number to fit.'
+    },
+    not: {
+      outcome: 'rearr',
+      why: 'The missing number is multiplied by itself, so it cannot be undone one thing at a time. {o:rearr} would be the name if it appeared only once in the calculation.'
+    },
+    steps: [
+      {
+        does: 'Write it as x² + b × x = c, with x² on its own',
+        working: 'x × x + 4 × x = −13, which is x² + 4 × x = −13 already'
+      },
+      {
+        does: 'Add the square of half the number in front of x to both sides',
+        working: 'Half of 4 is 2, and 2 × 2 = 4. x² + 4 × x + 4 = −13 + 4 = −9'
+      },
+      {
+        does: 'Write the left side as one number {t:squared}',
+        working: 'x² + 4 × x + 4 = (x + 2)², so (x + 2)² = −9'
+      },
+      {
+        does: 'Take the {t:sqroot} of both sides, keeping both answers',
+        working: 'A number multiplied by itself is never below zero: 3 × 3 = 9 and −3 × −3 = 9. No number multiplied by itself gives −9, so there is no answer'
+      }
+    ],
+    answer: {
+      right: 'r',
+      choices: [
+        { id: 'r', text: 'There is no such number' },
+        {
+          id: 's1',
+          text: 'x = 1',
+          slip: 'you drop the minus sign from −9 and take its {t:sqroot}, 3, which gives x + 2 = 3.'
+        },
+        {
+          id: 's2',
+          text: 'x = −5',
+          slip: 'you read the {t:sqroot} of −9 as −3, though −3 × −3 is 9, not −9.'
+        }
+      ]
+    },
+    why: 'Adding the square of half the number in front of x to both sides turns the left side into one number {t:squared}. A number multiplied by itself is never below zero, so when the right side comes out below zero no number fits, and the problem has no answer.'
+  }
+]);

@@ -1,0 +1,24 @@
+// Statistical Claims, Unit Four: cases shown inside cards, third part (the check on the key's question and the two worked claims).
+
+FC.cases('stats', 'u4', [
+
+  /* ---------- The check on the key's question ---------- */
+  { id: 'meas-step-counter', use: 'check', tier: 'clean', setting: 'home', topic: 'a phone app that began counting stroller pushes', name: 'The step counter',
+    text: "A phone app tells Rina: 'Your average steps per day rose from 6,200 to 7,400 this month.' In the second week an update changed how the app counts: it now counts the arm movements of pushing a stroller as steps, which it ignored before. Rina walked her usual routes with the stroller every day, as in earlier months.",
+    outcome: 'defshift', route: { S1: ['measure'], M1: ['newrule'] },
+    cues: { M1: "an update changed how the app counts: it now counts the arm movements of pushing a stroller as steps, which it ignored before" },
+    reason: { M1: 'Nothing about Rina changed, and nobody is paid on the figure. What changed is the counting: {cue:M1}. The 1,200 more steps a day come from movements the app now counts and used to ignore.' } },
+
+  /* ---------- The two whole claims, watched ---------- */
+  { id: 'meas-inspections', use: 'teach', tier: 'clean', setting: 'community', topic: 'a health department and six more inspectors', name: 'The restaurant inspections',
+    text: "A city health department announces: 'Violations found at restaurants tripled this year, from 840 to 2,520. Restaurants are getting dirtier.' In both years the restaurants inspected are drawn by lottery from the city's list. This year the department hired six more inspectors, and the number of inspections went from 400 a year to 1,200. The inspectors use the same checklist, and a violation is counted by the same standard as before. That is 2.1 violations found per inspection last year and 2.1 this year.",
+    outcome: 'detection', route: { S1: ['measure'], M1: ['looked'] },
+    cues: { S1: "This year the department hired six more inspectors, and the number of inspections went from 400 a year to 1,200",
+            M1: "This year the department hired six more inspectors, and the number of inspections went from 400 a year to 1,200" } },
+
+  { id: 'meas-calls', use: 'teach', tier: 'misleading', setting: 'work', topic: 'a call center that installed new phones', name: 'The call center’s new phones',
+    text: "A call center installed a new phone system in January, and its report says: 'Average call time fell from 8 minutes to 5 minutes after the new phone system went in. The new system works.' Agents are ranked each month by average call time, and the ten lowest get a $150 bonus. The system times every call to the second, as the old one did. Agents have found that when a call reaches 5 minutes they can hang up, and the customer must call again; a hung-up call is counted like any other. The share of customers whose problem was solved on the first call was 70 of every 100 before and 52 of every 100 after.",
+    outcome: 'proxy', route: { S1: ['measure'], M1: ['pushed'] },
+    cues: { S1: "Agents are ranked each month by average call time, and the ten lowest get a $150 bonus",
+            M1: "Agents are ranked each month by average call time, and the ten lowest get a $150 bonus. The system times every call to the second, as the old one did. Agents have found that when a call reaches 5 minutes they can hang up" } }
+]);

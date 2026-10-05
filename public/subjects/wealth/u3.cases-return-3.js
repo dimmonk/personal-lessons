@@ -1,0 +1,88 @@
+// Wealth Preservation, Unit Three: fresh cases held back for later days, part three: a claim bigger than the insurance, and
+// several properties or businesses in one name. Field guide: see u3.cases-return-1.js.
+
+FC.cases('wealth', 'u3', [
+
+  /* ---------- Insure the big loss ---------- */
+  { id: 'w3-x-ins-1', use: 'return', tier: 'clean', setting: 'family', topic: 'a hot tub and teenage parties',
+    text: "Hamid, 50, owns a house worth £620,000 and has £180,000 in savings. His teenage daughters hold big parties in the garden, where there is a hot tub. His insurance pays up to £250,000 if a guest is hurt, and a lawyer says a serious accident in the hot tub could lead to a demand for £2,000,000.",
+    outcome: 'insure', route: { D1: ['shock'], S1: ['bigclaim'] },
+    cues: { D1: 'a serious accident in the hot tub could lead to a demand for £2,000,000',
+            S1: ['His insurance pays up to £250,000 if a guest is hurt', 'a serious accident in the hot tub could lead to a demand for £2,000,000'] },
+    reason: { D1: 'A demand could reach everything he owns: {cue:D1}. £2,000,000 is more than twice the £800,000 he has in all.',
+              S1: 'The garden could bring {t:claim}, and the insurance has a limit: {cue:S1}. £2,000,000 less £250,000 leaves £1,750,000 uncovered.' },
+    not: { outcome: 'safe', why: 'Insurance is in the case, which can make it look looked after. But £250,000 is far below the £2,000,000 a lawyer says could come.' },
+    wouldChange: 'If the insurance paid up to £3,000,000, it would be {a:S1.madesafe}.' },
+
+  { id: 'w3-x-ins-2', use: 'return', tier: 'varied', setting: 'work', topic: 'a minibus lent to a football club',
+    text: "Gus, 53, owns a house worth £500,000 and has £100,000 in savings. He lends a minibus to the local football club every weekend. The minibus policy pays up to £1,000,000 if passengers are hurt, and a lawyer says a crash that injured several players could lead to a demand for £6,000,000.",
+    outcome: 'insure', route: { D1: ['shock'], S1: ['bigclaim'] },
+    cues: { D1: 'a crash that injured several players could lead to a demand for £6,000,000',
+            S1: ['The minibus policy pays up to £1,000,000 if passengers are hurt', 'a crash that injured several players could lead to a demand for £6,000,000'] },
+    reason: { D1: 'A demand could reach everything he owns: {cue:D1}. £6,000,000 is ten times the £600,000 he has in all.',
+              S1: 'The minibus could bring {t:claim}, and the policy has a limit: {cue:S1}. £6,000,000 less £1,000,000 leaves £5,000,000 uncovered.' },
+    not: { outcome: 'safe', why: 'A £1,000,000 policy sounds large, which is why it can look looked after. But the lawyer’s figure is six times as much.' },
+    wouldChange: 'If the policy paid up to £8,000,000, it would be {a:S1.madesafe}.' },
+
+  { id: 'w3-x-ins-3', use: 'return', tier: 'varied', setting: 'retirement', topic: 'a garden opened to the public',
+    text: "Rosamund, 71, owns a house worth £900,000 with a large garden, which she opens to the public twice a year. She also has £100,000 in savings. Her insurance pays up to £500,000 if a visitor is hurt, and a lawyer says a bad fall in a garden like hers could lead to a demand for £1,800,000.",
+    outcome: 'insure', route: { D1: ['shock'], S1: ['bigclaim'] },
+    cues: { D1: 'a bad fall in a garden like hers could lead to a demand for £1,800,000',
+            S1: ['Her insurance pays up to £500,000 if a visitor is hurt', 'a bad fall in a garden like hers could lead to a demand for £1,800,000'] },
+    reason: { D1: 'A demand could reach everything she owns: {cue:D1}. £1,800,000 is more than the £1,000,000 she has in all.',
+              S1: 'The open days could bring {t:claim}, and the insurance has a limit: {cue:S1}. £1,800,000 less £500,000 leaves £1,300,000 uncovered.' },
+    not: { outcome: 'safe', why: 'Her cover is in the case, which can look looked after. But it is under a third of the figure a lawyer gives.' },
+    wouldChange: 'If her insurance paid up to £3,000,000, it would be {a:S1.madesafe}.' },
+
+  { id: 'w3-x-ins-4', use: 'return', tier: 'misleading', setting: 'property', topic: 'six flats in one name and a wiring fire', echo: 'w3-h-ent-1',
+    also: ['onename'],
+    text: "Faisal, 55, owns six flats and the house he lives in, all in his own name, worth £2,000,000 together. A lawyer says a fire caused by faulty wiring in the oldest block could lead to demands for £3,000,000 from the tenants who were hurt. His landlord insurance pays up to £600,000 for all such claims.",
+    outcome: 'insure', route: { D1: ['shock'], S1: ['bigclaim'] },
+    cues: { D1: 'a fire caused by faulty wiring in the oldest block could lead to demands for £3,000,000 from the tenants who were hurt',
+            S1: ['a fire caused by faulty wiring in the oldest block could lead to demands for £3,000,000 from the tenants who were hurt', 'His landlord insurance pays up to £600,000 for all such claims'] },
+    reason: { D1: 'A demand could reach everything he owns: {cue:D1}. £3,000,000 is more than the £2,000,000 he has in all.',
+              S1: 'One event could bring {t:claim} far bigger than the insurance: {cue:S1}. £3,000,000 less £600,000 leaves £2,400,000 uncovered. The properties in one name are in the case too, and when a case shows both, the key chooses the claim.' },
+    not: { outcome: 'entity', why: 'Six flats and a home in one name is what the answer for properties in one name looks like, and it is true here. But the case also shows {t:claim} far bigger than the insurance, and that comes first.' },
+    wouldChange: 'If the insurance paid up to £4,000,000 and each block were in a company of its own, it would be {a:S1.madesafe}.' },
+
+  /* ---------- Separate companies for each property or business ---------- */
+  { id: 'w3-x-ent-1', use: 'return', tier: 'clean', setting: 'property', topic: 'eight flats in three towns, all in one name',
+    text: "Zoltan, 60, owns eight flats in three towns, and the house he lives in, all in his own name. The flats are worth £150,000 each and the house £400,000. Any tenant who is badly hurt could bring a claim against him.",
+    outcome: 'entity', route: { D1: ['shock'], S1: ['onename'] },
+    cues: { D1: 'all in his own name',
+            S1: ['all in his own name', 'Any tenant who is badly hurt could bring a claim against him'] },
+    reason: { D1: 'A demand could reach everything he owns: {cue:D1}. Together that is £1,600,000.',
+              S1: 'Several properties could each bring {t:claim}, and they are all in one name: {cue:S1}. A demand on one £150,000 flat could reach the other seven and his home.' },
+    not: { outcome: 'insure', why: 'The case says nothing about what any insurance pays or how big {t:claim} could be. It shows only how everything is held.' },
+    wouldChange: 'If each flat were in a company of its own, it would be {a:S1.madesafe}.' },
+
+  { id: 'w3-x-ent-2', use: 'return', tier: 'varied', setting: 'family', topic: 'a caravan park, a boatyard and a pub in one name',
+    text: "Brigid, 66, owns a seaside caravan park, a boatyard and a pub, each let to people who run them, all in her own name, and her own house too. The park is worth £400,000, the boatyard £250,000, the pub £300,000 and the house £350,000. Visitors could be hurt at any of them and bring a claim.",
+    outcome: 'entity', route: { D1: ['shock'], S1: ['onename'] },
+    cues: { D1: 'all in her own name',
+            S1: ['all in her own name', 'Visitors could be hurt at any of them and bring a claim'] },
+    reason: { D1: 'A demand could reach everything she owns: {cue:D1}. Together that is £1,300,000.',
+              S1: 'Several properties could each bring {t:claim}, and they are all in her own name: {cue:S1}. A demand on the boatyard, worth £250,000, could reach the park, the pub and her house.' },
+    not: { outcome: 'safe', why: 'The properties are let to people who run them, and that can look like something already looked after. But the case does not say they are held apart, and all are in her own name.' },
+    wouldChange: 'If the park, the boatyard and the pub were each in a company of its own, it would be {a:S1.madesafe}.' },
+
+  { id: 'w3-x-ent-3', use: 'return', tier: 'varied', setting: 'retirement', topic: 'shops, a warehouse and a car park, each in his name',
+    text: "Otto, 69, owns four shops, a warehouse and a car park, let to many tenants, each in his own name, as is the house he lives in. Together they are worth £2,100,000. A customer, a driver or a worker could be hurt at any of them and bring a claim.",
+    outcome: 'entity', route: { D1: ['shock'], S1: ['onename'] },
+    cues: { D1: 'each in his own name, as is the house he lives in',
+            S1: ['each in his own name, as is the house he lives in', 'could be hurt at any of them and bring a claim'] },
+    reason: { D1: 'A demand could reach everything he owns: {cue:D1}. Together that is £2,100,000.',
+              S1: 'Several properties could each bring {t:claim}, and they are all in his own name: {cue:S1}. One accident at the car park could reach the shops, the warehouse and his house.' },
+    not: { outcome: 'insure', why: 'The case gives no insurance limit and no figure for {t:claim}, so there is no gap between them to point to. It shows only how everything is held.' },
+    wouldChange: 'If a lawyer said one accident could lead to a demand of £6,000,000 against insurance of £500,000, it would be {a:S1.bigclaim}.' },
+
+  { id: 'w3-x-ent-4', use: 'return', tier: 'misleading', setting: 'work', topic: 'a company for the practice and none for the flats', echo: 'w3-h-la-ie-a',
+    text: "Khalid, 50, an accountant, owns two flats that he rents out and the house he lives in, worth £900,000 in all. He set up a company last year, but it is for his accountancy practice. The flats and the house are all in his own name, and a tenant who is hurt in either flat could bring a claim.",
+    outcome: 'entity', route: { D1: ['shock'], S1: ['onename'] },
+    cues: { D1: 'The flats and the house are all in his own name',
+            S1: ['The flats and the house are all in his own name', 'a tenant who is hurt in either flat could bring a claim'] },
+    reason: { D1: 'A demand could reach everything he owns: {cue:D1}. Together that is £900,000.',
+              S1: 'The properties are all in one name: {cue:S1}. His company holds only the practice, so {t:claim} on a flat could reach the other flat and his house.' },
+    not: { outcome: 'safe', why: 'A company exists, which can look like properties held apart. But it holds his accountancy practice, not the flats, which are in his own name.' },
+    wouldChange: 'If each flat were in a company of its own, it would be {a:S1.madesafe}.' }
+]);

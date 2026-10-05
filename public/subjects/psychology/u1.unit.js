@@ -1,0 +1,141 @@
+// Psychology, Unit One: the unit record. This is the subject's GATE UNIT (lesson standard A15).
+// It teaches the key's first question, "What kind of thing is this?", and the four families that question sorts
+// cases into. In a gate unit the families are the gate's answers: a family's name is its answer text, cards carry
+// `family` where a branch unit's cards carry `outcome`, and cases carry route: { D1: [option] } and no outcome.
+// Cards live in u1.cards-*.js, cases in u1.cases-*.js.
+// Text fields never retype key wording. They use tokens, filled in from key.js:
+// {q:D1} {a:D1.option} {when:D1.option} {plain:option} {needs:option} {test:ledgerId} {cue:D1}.
+
+FC.unit('psychology', 'u1', {
+  kind: 'C',              // C classification, F facts, P procedure
+  rev: 1,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
+  standard: 1,            // lesson-standard version this unit was built to
+  status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author). The app labels a draft as a draft.
+  tag: 'One',
+  title: { text: 'Four kinds of thing' },   // a gate unit is titled in plain words; the answers are taught inside it
+  subtitle: 'The key’s first question, and the four kinds of thing it sorts every case into',
+  teaches: { steps: ['D1'], outcomes: [], terms: [], families: ['reasoning', 'tactic', 'pattern', 'none'] },
+  assumes: [],            // the first unit of the subject
+
+  // THE LOOK-ALIKE LEDGER. In a gate unit it pairs families. All six pairs of the four are here, because a
+  // learner confuses every one of them. Each entry is written once and used six ways: the look-alike card
+  // ("how to tell them apart"), its side-by-side table, the list on the question card, the feedback when one is
+  // picked for the other, the grouping of drill items, and what returns together later.
+  // test is a question to put to a case, with no names in it.
+  ledger: [
+    { id: 'reasoning~tactic', pair: ['reasoning', 'tactic'], step: 'D1',
+      shared: 'In both, a person may be explaining or defending themselves, and someone else may be there to hear it.',
+      rule: 'In {a:D1.reasoning} the reasons are about the speaker’s own view, choice or act, and anyone else is only listening. In {a:D1.tactic} what is said or done is about the other person, or about what has happened between the two, and it is said or done to them.',
+      test: 'Who are the words about, and who are they said to? Are they about the speaker’s own view or choice, with anyone else only listening? Or are they said to another person, about that person or about what has happened between the two?' },
+    { id: 'tactic~pattern', pair: ['tactic', 'pattern'], step: 'D1',
+      shared: 'In both, one person may be treating another badly, and the very same behaviour can appear in each.',
+      rule: '{a:D1.tactic} stays between two people: it shows what one of them says or does to the other. {a:D1.pattern} follows one person across years, places and relationships.',
+      test: 'Does the case stay between two people, and show what one of them says or does to the other? Or does it show this: {needs:pattern}?' },
+    { id: 'pattern~none', pair: ['pattern', 'none'], step: 'D1',
+      shared: 'The behaviour itself can be exactly the same in both. What differs is how much of the person’s life the case shows.',
+      rule: '{a:D1.none} shows one occasion or one short stretch. {a:D1.pattern} shows the same thing across years, places and relationships.',
+      test: 'How much of the person’s life does the case show? One occasion or one short stretch? Or this: {needs:pattern}?' },
+    { id: 'tactic~none', pair: ['tactic', 'none'], step: 'D1',
+      shared: 'In both, someone can be hard to be around, and other people can be hurt by it.',
+      rule: 'In {a:D1.none} nothing is said or done to anyone about them: other people are near it, and are not what it is about. In {a:D1.tactic} something is said or done to one particular person, about that person or about what has happened between the two.',
+      test: 'Is anything said or done to one particular person, about that person or about what has happened between the two? Or is this only how someone was for a short while, with everyone or with no one?' },
+    { id: 'reasoning~none', pair: ['reasoning', 'none'], step: 'D1',
+      shared: 'Both are about one person on one occasion, and both can follow something that happened to them.',
+      rule: 'In {a:D1.reasoning} the person gives reasons for a view, a choice or something they did. In {a:D1.none} no reasons are given: the case shows only how the person felt and acted.',
+      test: 'Does the person give reasons for a view, a choice or something they did? Or does the case show only how they felt and acted?' },
+    { id: 'reasoning~pattern', pair: ['reasoning', 'pattern'], step: 'D1',
+      shared: 'Both can show a person defending themselves, and the reasons can sound the same.',
+      rule: '{a:D1.reasoning} shows one piece of thinking: this view, this choice, this occasion. {a:D1.pattern} shows the same behaviour across years, places and relationships.',
+      test: 'Is the case one piece of thinking, about one view or one choice? Or does it show this: {needs:pattern}?' }
+  ],
+
+  // Parts are stopping points: each ends on a screen that says where the next one starts.
+  // The first four parts follow the four answers of the key's first question, in the key's order (A13).
+  // The part with drill: true is the last; its close cards come after the drill.
+  parts: [
+    { id: 'p1', title: 'The first kind: a person and their reasons',
+      cards: ['orient-kind', 'meet-reasoning', 'again-reasoning', 'lens-kind', 'portrait-reasoning', 'check-reasoning'] },
+    { id: 'p2', title: 'The second kind: two people',
+      cards: ['meet-tactic', 'again-tactic', 'portrait-tactic', 'check-tactic', 'look-reasoning-tactic', 'exc-blame'] },
+    { id: 'p3', title: 'The third kind: a person across years',
+      cards: ['meet-pattern', 'again-pattern', 'portrait-pattern', 'check-pattern', 'look-tactic-pattern', 'exc-years'] },
+    { id: 'p4', title: 'The fourth kind: a moment, and nothing to name',
+      cards: ['meet-none', 'again-none', 'portrait-none', 'check-none', 'refute-clinical',
+              'look-pattern-none', 'exc-evening', 'refute-once'] },
+    { id: 'p5', title: 'The pairs still to compare, and the key’s first question',
+      cards: ['look-tactic-none', 'look-reasoning-none', 'look-reasoning-pattern', 'q-kind', 'check-kind'] },
+    { id: 'p6', title: 'Two whole cases, then the drill',
+      cards: ['worked-dent', 'worked-rehearsal'], drill: true, close: ['recap-kind', 'transfer-kind'] }
+  ],
+
+  // The drill of a gate unit has three stages (A15): piece, route, claim. There is no name stage and no finish
+  // stage, because the route is one question long and its answer is the name.
+  // Items are authored in groups: a group is cases that share ledger entries and one tier. The app shuffles the groups
+  // inside a tier band (clean, then varied, then misleading) and shuffles inside each group. Every case is new.
+  // The drill and return cases of this unit are also the bank that later units draw their { earlier: 'u1' } items from.
+  drill: {
+    key: 'u1',            // the old quick-drill totals for this unit were stored under pl:psychology:stats:u1 (frozen; see E8)
+    add: 'Some of these cases show nothing wrong at all, and some show an ordinary bad day. That is on purpose. Saying that there is nothing to name is one of the four answers, and you will need it as often as the other three.',
+    rungs: [
+      { ask: 'piece',
+        items: [[{ case: 'g-degree', step: 'D1' }, { case: 'g-memory', step: 'D1' }],
+                [{ case: 'g-genius', step: 'D1' }, { case: 'g-exam', step: 'D1' }],
+                [{ case: 'g-feedback', step: 'D1' }, { case: 'g-newborn', step: 'D1' }],
+                [{ case: 'g-broadband', step: 'D1' }, { case: 'g-neighbour', step: 'D1' }],
+                [{ tell: 'reasoning~tactic' }, { tell: 'pattern~none' }, { tell: 'tactic~pattern' }, { tell: 'tactic~none' }],
+                ['g-rev-reasoning', 'g-rev-tactic', 'g-rev-pattern', 'g-rev-none']] },
+      { ask: 'route',
+        items: [['g-allotment', 'g-inheritance', 'g-scan'],
+                ['g-landlord', 'g-flight'],
+                ['g-crossing', 'g-silence', 'g-divorce', 'g-bains'],
+                ['g-wedding', 'g-shifts', 'g-waitress', 'g-handover', 'g-savings']] },
+      { ask: 'claim', demo: 'g-claim-demo',
+        items: [['g-claim-once'], ['g-claim-clinical'], ['g-claim-row'], ['g-claim-van']] }
+    ],
+    // Fresh cases for later days: three for each kind, one for each of its scheduled returns (E9).
+    // A due kind returns as a case the learner has not seen, beside a case of the kind they most often take it for.
+    returns: ['g-ret-roof', 'g-ret-chess', 'g-ret-transfer',
+              'g-ret-holiday', 'g-ret-praise', 'g-ret-inbox',
+              'g-ret-coach', 'g-ret-aunt', 'g-ret-tenant',
+              'g-ret-puppy', 'g-ret-results', 'g-ret-party']
+  },
+
+  // Build notes: not shown to the learner, and left out of the fingerprint. The validator reads them.
+  build: {
+    // What changed at each revision (R1). One entry for every revision from 1 to rev.
+    history: [
+      { rev: 1, date: '2026-10-04', change: 'First version under lesson standard 1: the gate unit. Not yet deployed, so later edits before the first deploy stay revision 1. Reviewed on 2026-10-05 as a beginner would read it and against the finished key: plainer wording, the diagnosis line added, no everyday label that is also a branch name, and the first worked case now follows the order the question card teaches.' }
+    ],
+    // What the K2 rewrite changed in the gate, and why. "was" is the wording Unit Two's exemplar carried
+    // (itself a partial rewrite of the old app's wording, which is quoted where it matters).
+    keyChanges: [
+      { step: 'D1', was: 'three answers; a one-occasion case with nothing wrong had to be routed through "A lasting way someone is" (old specimens 13 and 14), and the old drill offered a fourth option, "None of these: a proportionate reaction", that the key did not have',
+        now: 'four answers; the fourth is "A passing moment", with no branch and no further question',
+        why: 'K2.9 and audit 1.7: wherever a learner meets a case with nothing to name, some answer must fit it. The answer is worded as what the case shows (one occasion or one short stretch, and nothing else), in the same form as the other three (K2.4, K2.5). "Passing" is set against "lasting" in the third answer, so the difference between the two is in the answers themselves. "Proportionate" was never taught and is now on the avoid list; a single occasion gets this answer whether or not its size can be judged.' },
+      { step: 'D1', was: 'second answer "A move between people" (old app: "A move in an interaction", second line "a specific tactic"); when: "the case shows something one person does to another in their dealings with each other"',
+        now: 'second answer "Something one person does to another"; when: "the case shows one person saying or doing something to another person, and it is about that person or about what has happened between the two of them"',
+        why: 'K2.6: "move" is a figure of speech, and it was already on the avoid list for authored text, so the family could not have been taught in its own name. The new answer is the wording the gate’s own purpose line and Unit Two’s feedback already used. The "about" clause in "when" is what separates this answer from the first (audit 1.8: the old drill’s denying coworker could be read either way). Unit Two prints this answer on its first card and in its earlier-unit drill items; it uses no token for it in authored text, so every token still resolves.' },
+      { step: 'D1', was: 'purpose and why named three things',
+        now: 'purpose names four; why says what each is judged on, and that a passing moment has no further questions',
+        why: 'K2.7: purpose says what the question sorts, in terms of its answers. Unit Two prints both lines in its worked cases, so its learner sees the new wording there.' },
+      { step: 'D1', was: 'no tie-break between gate answers',
+        now: 'yieldsTo as data: the first answer gives way to the second when the case also shows something said or done to another person about them; the first and the second give way to the third when the case also shows the same behaviour across years, places and relationships',
+        why: 'K2.8: real cases show two of these at once (a reason for your own act that blames the listener; one evening of something the case then shows across years). Each tie-break is taught on a named case (exc-blame, exc-years, worked-rehearsal) and each such case is marked "also". The fourth answer needs none: its "when" requires that the case show none of the other three.' },
+      { step: 'D1', was: 'gate options had n, when and keeps',
+        now: 'each also has plain and needs',
+        why: 'A15, S1: the gate’s answers are this unit’s families, taught as an outcome is. The first answer’s n and when are unchanged, and so is the third’s.' }
+    ],
+    wrongIdeas: [
+      { card: 'refute-once', about: 'pattern',
+        source: { kind: 'published', verified: false,
+          ref: 'Gilbert & Malone (1995), The correspondence bias, Psychological Bulletin 117(1): people read lasting character into a single act even when the situation explains it. To be read and confirmed online before release, or replaced by what cold readers actually get wrong.' } },
+      { card: 'refute-clinical', about: 'none',
+        source: { kind: 'published', verified: false,
+          ref: 'Haslam (2016), Concept creep: psychology’s expanding concepts of harm and pathology, Psychological Inquiry 27(1): clinical words stretched to cover ordinary experience. It describes the stretching of the concepts; evidence that learners of this subject do it to a hard week still has to come from cold readers.' } }
+    ],
+    signoff: {
+      coverage: null,     // { date, by } once tests/validate-data.mjs passes on this unit in the app
+      coldRead: null      // { rev, date, reader: 'novice' | 'near-novice', restated: true, drillAttempted: true, notes }
+    }
+  }
+});

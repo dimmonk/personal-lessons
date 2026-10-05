@@ -1,0 +1,76 @@
+// Political Ideologies, Unit Two: drill cases, fourth stage (route), misleading cases. Each is built so that its story brings back a
+// named case of a different name (echo), and each says what would make it a different name (wouldChange).
+// All texts are invented.
+
+FC.cases('ideology', 'u2', [
+
+  { id: 'c-r-sd2', use: 'drill', tier: 'misleading', setting: 'work', topic: 'crane operators, a fierce rally and a modest plan',
+    text: "From a rally speech by the Corran dock-crane operators: 'The dock company's owners have been bleeding us for years, and the day is coming when the workers win. The company can keep its docks, but it will pay: a floor under crane operators' pay written into law, and a tax on its profits to pay for pensions for every dock worker. We will make our case to the voters and abide by the vote.'",
+    outcome: 'socdem', route: { D1: ['class'], C1: ['keep'], C2: ['vote'] }, echo: 'c-ml-mill',
+    cues: { D1: "The dock company's owners have been bleeding us for years, and the day is coming when the workers win", C1: "The company can keep its docks, but it will pay: a floor under crane operators' pay written into law, and a tax on its profits to pay for pensions for every dock worker", C2: 'We will make our case to the voters and abide by the vote' },
+    reason: { D1: 'The text sets the operators against the company that owns the docks, and speaks for the workers: {cue:D1}.',
+              C1: 'The company keeps its docks, and a law and a tax are asked for: {cue:C1}. The fierce words about the day the workers win do not change who owns the docks.',
+              C2: 'The operators will abide by the vote: {cue:C2}. The change is to come through an election they can lose.' },
+    not: { outcome: 'demsoc', why: 'The fierce words about the day the workers win could suggest a handover, but the company keeps its docks. A text that asked for them to pass to the government would be {o:demsoc}.' },
+    wouldChange: 'If the speech had said that the docks should pass to the government, it would be {o:demsoc}. If it had said that the workers would take the docks and hold them with no election, it would be {o:ml}.' },
+
+  { id: 'c-r-dm2', use: 'drill', tier: 'misleading', setting: 'money', topic: 'postal clerks, a fairer tax and a handover',
+    text: "From a pamphlet by the Hartwell postal clerks: 'The company that owns the post offices keeps the profit from the stamps, and the clerks keep the queues, and we stand with the clerks. A fairer tax on the company would help, and so would a pension for every clerk. But what we ask is bigger: the post offices should be taken from the company and run by the government for everyone. We will ask the voters for it.'",
+    outcome: 'demsoc', route: { D1: ['class'], C1: ['public'], C2: ['vote'] }, also: ['keep'], echo: 'c-sd-warehouse',
+    cues: { D1: 'The company that owns the post offices keeps the profit from the stamps, and the clerks keep the queues, and we stand with the clerks', C1: 'the post offices should be taken from the company and run by the government for everyone', C2: 'We will ask the voters for it' },
+    reason: { D1: 'The text sets the clerks against the company that owns the post offices, and stands with the clerks: {cue:D1}.',
+              C1: 'The post offices are to be taken from the company and run by the government: {cue:C1}. The text also asks for a tax and a pension, and when a text shows both, the handover decides.',
+              C2: 'The clerks will ask the voters: {cue:C2}.' },
+    not: { outcome: 'socdem', why: 'The tax and the pension are what you would point to for {o:socdem}. But the text goes on to ask for the post offices to be taken from the company, and when a text shows both, the handover decides.' },
+    wouldChange: 'If the pamphlet had stopped after the tax and the pension, and left the company its post offices, it would be {o:socdem}.' },
+
+  { id: 'c-r-co2', use: 'drill', tier: 'misleading', setting: 'town', topic: 'a mill gate speech full of reckoning and no plan',
+    text: "From a speech at the Tarn Mill gate: 'The owners have bled this mill for fifty years, and the day of reckoning is coming. The workers will not forget, and the owners will not be forgiven. We are the workers and they are the owners, and there is no peace between us. Stand with us at the gate tomorrow.'",
+    outcome: 'classonly', route: { D1: ['class'], C1: ['none'], C2: ['none'] }, echo: 'c-ml-docks',
+    cues: { D1: 'We are the workers and they are the owners, and there is no peace between us', C1: 'Stand with us at the gate tomorrow', C2: 'at the gate tomorrow' },
+    reason: { D1: 'The text sets the workers against the owners, and speaks for the workers: {cue:D1}.',
+              C1: 'Where a plan for the mill would be, the text ends with an invitation: {cue:C1}. The reckoning it promises is not a plan for who should own the mill.',
+              C2: 'The text says nothing about who will take power, or how. The words it ends on are about the gate: {cue:C2}.' },
+    not: { outcome: 'ml', why: 'The speech is fierce, and promises a day of reckoning. But nothing in it says a party or the workers will take power and keep it, and the question about the government goes by what is said.' },
+    wouldChange: 'If the speech had said that the workers would take power and rule alone, with no rival allowed, it would be {o:ml}. If it had asked for the mill to pass to the government, it would be {o:demsoc}.' },
+
+  { id: 'c-r-ml2', use: 'drill', tier: 'misleading', setting: 'work', topic: 'a calm memo from a committee not to be voted out',
+    text: "From a quiet, reasoned memo of the Linden Works committee: 'We think the owners and the workers of the Linden Works have different interests, and we stand with the workers. We would rather not use force, but we say plainly that when the works pass to the workers, our committee will remain in charge of the town and will not be put to the vote. The works will belong to the workers who run them.'",
+    outcome: 'ml', route: { D1: ['class'], C1: ['workers'], C2: ['seize'] }, echo: 'c-dm-ferry',
+    cues: { D1: 'the owners and the workers of the Linden Works have different interests, and we stand with the workers', C1: 'The works will belong to the workers who run them', C2: 'our committee will remain in charge of the town and will not be put to the vote' },
+    reason: { D1: 'The text sets the owners against the workers, and stands with the workers: {cue:D1}.',
+              C1: 'The works are to belong to the workers who run them: {cue:C1}.',
+              C2: 'The committee will keep power, with no vote: {cue:C2}. The calm tone and the wish to avoid force do not change that.' },
+    not: { outcome: 'demsoc', why: 'The memo is calm and gives the works to the workers, which {o:demsoc} also asks for. But the committee will not be put to the vote, and {o:demsoc} leaves power with the voters.' },
+    wouldChange: 'If the memo had said that the committee would stand at the next election and accept the result, it would be {o:demsoc}.' },
+
+  { id: 'c-r-an2', use: 'drill', tier: 'misleading', setting: 'work', topic: 'a print co-op selling its output and wanting no rulers',
+    text: "From a flyer of the Elder Street print co-op: 'The print firm's old owner took the profit, and the government sent the bailiffs when we asked for our pay, and we are with the printers. The firm should belong to the people who print in it. We will sell our work to anyone who wants it, but we want no government over us, ever, and we will run the firm and the street together, in meetings.'",
+    outcome: 'anarch', route: { D1: ['class'], C1: ['workers'], C2: ['gone'] }, echo: 'c-mk-furniture',
+    cues: { D1: "The print firm's old owner took the profit, and the government sent the bailiffs when we asked for our pay, and we are with the printers", C1: 'The firm should belong to the people who print in it', C2: 'we want no government over us, ever, and we will run the firm and the street together, in meetings' },
+    reason: { D1: 'The text sets the printers against the firm’s old owner, and stands with the printers: {cue:D1}.',
+              C1: 'The firm is to belong to the people who print in it: {cue:C1}. Selling its work is not the same as competing for customers, setting prices and risking failure, and the text says none of those.',
+              C2: 'The text wants no government: {cue:C2}.' },
+    not: { outcome: 'mktsoc', why: 'The firm will sell its work, which can sound like a market. But the text says nothing about competing, setting prices or failing, and it wants no government.' },
+    wouldChange: 'If the flyer had said nothing about getting rid of the government, and had said the firm should compete with other firms, set its own prices and close if it failed, it would be {o:mktsoc}.' },
+
+  { id: 'c-r-mx2', use: 'drill', tier: 'misleading', setting: 'schooling', topic: 'a pamphlet dismissing a minimum wage and setting out the gap',
+    text: "From a pamphlet at the Tenby Mill: 'People say a minimum wage and a tax would fix the mill. We say look first at how it works. A spinner is paid £48 for a day and makes yarn worth £82 once costs are covered, and the £34 goes to the owners. Every owner has to keep a gap like it, because that is how the arrangement works, and no law on pay changes that. We write for the spinners.'",
+    outcome: 'marx', route: { D1: ['class'], C1: ['explain'], C2: ['none'] }, echo: 'c-sd-warehouse',
+    cues: { D1: ['the £34 goes to the owners', 'We write for the spinners'], C1: 'Every owner has to keep a gap like it, because that is how the arrangement works, and no law on pay changes that', C2: 'We write for the spinners' },
+    reason: { D1: 'The text sets the spinners against the owners who keep the gap, and is written for the spinners: {cue:D1}.',
+              C1: 'The text explains how owners gain, as the way the arrangement works: {cue:C1}. The minimum wage and the tax are mentioned only as what other people say, and the text does not ask for them.',
+              C2: 'The text says nothing about power or the government. It says who it is written for: {cue:C2}.' },
+    not: { outcome: 'socdem', why: 'The words minimum wage and tax are in the text, but as what other people say. The text itself asks for neither, and explains instead.' },
+    wouldChange: 'If the pamphlet had gone on to ask for a law on pay and a tax on the owners’ profits, it would be {o:socdem}.' },
+
+  { id: 'c-r-mk2', use: 'drill', tier: 'misleading', setting: 'town', topic: 'a bus co-operative run for the town and still competing',
+    text: "From a charter of the Glenmore bus co-operative: 'The company that owned the buses ran them for its shareholders, and the drivers and fitters stand together against it. The buses should belong to everyone who works on them, and the co-operative should run for the town's good. It will still compete with the other bus firms for routes, set its own fares and fold if it cannot cover its costs.'",
+    outcome: 'mktsoc', route: { D1: ['class'], C1: ['market'], C2: ['none'] }, also: ['workers'], echo: 'c-dm-signal',
+    cues: { D1: 'The company that owned the buses ran them for its shareholders, and the drivers and fitters stand together against it', C1: ['The buses should belong to everyone who works on them', 'It will still compete with the other bus firms for routes, set its own fares and fold if it cannot cover its costs'], C2: 'fold if it cannot cover its costs' },
+    reason: { D1: 'The text sets the shareholders against the drivers and fitters, and stands with the workers: {cue:D1}.',
+              C1: 'The buses are to belong to the people who work on them, and the co-operative will still compete and risk folding: {cue:C1}. Both halves are in the text, and the competing is what makes it the more exact answer.',
+              C2: 'The text says nothing about power or the government. Its last words are about the co-operative folding: {cue:C2}.' },
+    not: { outcome: 'demsoc', why: 'The words about running for the town’s good sound like public ownership, and the buses are handed to the workers, as {o:demsoc} might ask. But the co-operative will still compete, set its fares and risk folding, and the more exact answer decides.' },
+    wouldChange: 'If the charter had said nothing about competing, setting fares or folding, and nothing about power, the name would be {o:demsoc}.' }
+]);

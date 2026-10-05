@@ -1,0 +1,98 @@
+// Wealth Preservation, Unit Two: drill cases for the first part of stage four (the whole route alone, clean and varied cases).
+// None of these appears in a card. A case here carries marked words and a reason for the first question as well as for this unit's own,
+// because it is asked from the top.
+
+FC.cases('wealth', 'u2', [
+
+  /* ---------- Stage four, clean cases: a charge for picking, and a charge for work ---------- */
+  { id: 'e-r-fee-1', use: 'drill', tier: 'clean', setting: 'retirement', topic: 'a fund and an adviser charging for an old selection',
+    text: "Marlon, 69, has £210,000 in a fund his adviser chose for him. The fund takes 1.3% a year, and the adviser takes a further 0.9% a year, 'for the original selection'. Marlon has not seen the adviser for three years.",
+    outcome: 'feecore', route: { D1: ['erosion'], E1: ['picking'] },
+    cues: { D1: 'The fund takes 1.3% a year, and the adviser takes a further 0.9% a year',
+            E1: "the adviser takes a further 0.9% a year, 'for the original selection'. Marlon has not seen the adviser for three years" },
+    reason: { D1: 'Two charges come out of {t:pot} every year: {cue:D1}. The case has no one thing that is most of his money, no bill in a fall, and no death or will in it.',
+              E1: 'The adviser is paid every year for a choice made long ago, and nothing else is done for the money: {cue:E1}. 2.2% of £210,000 is £4,620 a year, against £210 for {t:fund} that follows a published list.' },
+    not: { outcome: 'nocut', why: 'No work that would otherwise get done is shown. The charges are shares of the money, and the adviser has not done anything for three years.' } },
+
+  { id: 'e-r-nocut-1', use: 'drill', tier: 'clean', setting: 'family', topic: 'a planner’s flat price for a spring tax return and a talk before every big decision',
+    text: "Nuala, 54, pays a planner £2,400 a year, flat, and the price has not changed since her pot was half its size. For it the planner prepares her return each spring, keeps her pension forms current and talks her through every big spending decision. Nuala says she would not do any of it herself.",
+    outcome: 'nocut', route: { D1: ['erosion'], E1: ['nomore'] },
+    cues: { D1: 'pays a planner £2,400 a year, flat',
+            E1: 'the price has not changed since her pot was half its size. For it the planner prepares her return each spring, keeps her pension forms current and talks her through every big spending decision. Nuala says she would not do any of it herself' },
+    reason: { D1: 'The case is about something taken out of {t:pot} every year: {cue:D1}. It has no fall in prices, no one thing that is most of her money, and no handover.',
+              E1: 'The charge is a flat price that has not grown with {t:pot}, for named work that would not otherwise get done: {cue:E1}.' },
+    not: { outcome: 'feecore', why: 'The charge does not pay for choosing investments. It pays for a return, forms and advice, at a price that does not move with {t:pot}.' } },
+
+  { id: 'e-r-loc-1', use: 'drill', tier: 'clean', setting: 'work', topic: 'a monthly-income fund in the ordinary account',
+    text: "Ewan, 45, has a pension and an ordinary investment account, £60,000 in each. The ordinary account holds an income fund that pays out £3,300 a year, on which he pays 25% tax, £825, every year. The pension holds a fund of shares that pays out almost nothing, and both funds charge very little.",
+    outcome: 'location', route: { D1: ['erosion'], E1: ['incometax'] },
+    cues: { D1: 'on which he pays 25% tax, £825, every year',
+            E1: 'The ordinary account holds an income fund that pays out £3,300 a year, on which he pays 25% tax, £825, every year. The pension holds a fund of shares that pays out almost nothing' },
+    reason: { D1: 'The case is about tax that comes out of the money every year: {cue:D1}. The funds charge very little, and nothing in it is a bill, {t:claim} or a handover.',
+              E1: 'The investment that pays out the most sits in the taxed account, and the one that pays out almost nothing sits in the pension: {cue:E1}. Swapping them would take the £825 a year down to almost nothing.' },
+    not: { outcome: 'nocut', why: 'The charges are low, which can make it look as if nothing needs cutting. But the tax is the problem, and it comes from the wrong fund being in the taxed account.' } },
+
+  { id: 'e-r-nocut-2', use: 'drill', tier: 'clean', setting: 'retirement', topic: 'bonds in the pension and growth shares outside it',
+    text: "Haruto, 66, has £120,000 in a pension and £80,000 in an ordinary investment account. His pension holds a fund of company bonds paying £6,000 a year, untaxed. His ordinary account holds a fund of shares in firms that reinvest their profits, so it pays out only £300 a year, on which he pays £75 tax.",
+    outcome: 'nocut', route: { D1: ['erosion'], E1: ['nomore'] },
+    cues: { D1: 'on which he pays £75 tax',
+            E1: 'His pension holds a fund of company bonds paying £6,000 a year, untaxed. His ordinary account holds a fund of shares in firms that reinvest their profits, so it pays out only £300 a year' },
+    reason: { D1: 'The case is about tax taken from the money every year: {cue:D1}. It is a small sum, and nothing else in the case could lose his money.',
+              E1: 'The investment that pays out the most is in the pension, and the one that pays out little is in the taxed account: {cue:E1}. £75 a year is already about as low as it can be.' },
+    not: { outcome: 'location', why: 'There is tax every year, but it is on the investment that pays little. For this name, the bond fund would be the one sitting in the ordinary account.' } },
+
+  { id: 'e-r-def-1', use: 'drill', tier: 'clean', setting: 'home', topic: 'a neighbour’s remark about a fund house',
+    text: "Sofia, 56, holds a fund she bought for £80,000 that is now worth £100,000. A neighbour says the fund house has 'lost its touch', and Sofia plans to sell it and buy a different fund of the same kind. She needs no cash, and no bill is due. Selling would bring tax of 20% on the £20,000 gain, £4,000.",
+    outcome: 'defer', route: { D1: ['erosion'], E1: ['needlesssale'] },
+    cues: { D1: 'Selling would bring tax of 20% on the £20,000 gain, £4,000',
+            E1: 'plans to sell it and buy a different fund of the same kind. She needs no cash, and no bill is due. Selling would bring tax of 20% on the £20,000 gain, £4,000' },
+    reason: { D1: 'The case is about a tax bill that would come out of {t:pot}: {cue:D1}. It has no claim, no handover and no bill falling due.',
+              E1: 'A sale is planned that would bring tax on {t:gain}, and nothing needs it: {cue:E1}. A remark from a neighbour is not a need, and the new fund would be much the same as the old one.' },
+    not: { outcome: 'harvest', why: 'There is no loss in the case. Nothing she holds is worth less than it cost, so nothing could be set against the gain.' } },
+
+  { id: 'e-r-har-1', use: 'drill', tier: 'clean', setting: 'business', topic: 'a café owner’s June sale and a fund below cost',
+    text: "Dmitri, 57, a café owner, sold shares in June for £10,000 more than he paid, so he will owe tax of £2,000. In the same account a fund he has not sold cost £12,000 and is worth £7,000.",
+    outcome: 'harvest', route: { D1: ['erosion'], E1: ['gainloss'] },
+    cues: { D1: 'he will owe tax of £2,000',
+            E1: 'so he will owe tax of £2,000. In the same account a fund he has not sold cost £12,000 and is worth £7,000' },
+    reason: { D1: 'The case is about tax that will come out of the money this year: {cue:D1}. It has no one thing that is most of what he owns, and no handover.',
+              E1: 'The case shows {t:gain} made this year that will be taxed, and {t:fund} he has not sold is worth less than he paid: {cue:E1}. Selling it would set a £5,000 loss against the £10,000 gain and halve the tax.' },
+    not: { outcome: 'defer', why: 'The sale was made in June. There is no unneeded sale to hold off. What the case shows is a loss waiting beside the gain.' } },
+
+  /* ---------- Stage four, varied cases ---------- */
+  { id: 'e-r-burn-1', use: 'drill', tier: 'varied', setting: 'home', topic: 'two weddings and a kitchen out of a retirement pot',
+    text: "Pat and Jo retired at 60 with £1,200,000 and set their spending at £48,000 a year, which was 4%. Over twelve years they have paid for two weddings and a new kitchen out of the pot, which is now £850,000. They still take £48,000 a year, which is now about 5.6% of it.",
+    outcome: 'burnrate', route: { D1: ['erosion'], E1: ['fixedsum'] },
+    cues: { D1: 'They still take £48,000 a year',
+            E1: 'set their spending at £48,000 a year, which was 4%. Over twelve years they have paid for two weddings and a new kitchen out of the pot, which is now £850,000. They still take £48,000 a year, which is now about 5.6% of it' },
+    reason: { D1: 'The case is about a sum that comes out of {t:pot} every year to live on: {cue:D1}. Nothing in it is a fall in prices, {t:claim} or a handover.',
+              E1: 'The sum was fixed when {t:pot} was £350,000 bigger and has not been reset: {cue:E1}. It is now a bigger share of a smaller pot.' },
+    not: { outcome: 'nocut', why: 'Spending is only sound when it is reset each year as a percentage of {t:pot}. Pat and Jo kept the same number of pounds.' } },
+
+  { id: 'e-r-nocut-3', use: 'drill', tier: 'varied', setting: 'family', topic: 'a percentage taken on the first of January in good times',
+    text: "Berta, 61, takes 4% of her pot on the first of January each year. A year ago the pot was £700,000 and she took £28,000. Now it is £770,000 after good returns, so she takes £30,800 and pays for her granddaughter's course.",
+    outcome: 'nocut', route: { D1: ['erosion'], E1: ['nomore'] },
+    cues: { D1: 'takes 4% of her pot on the first of January each year',
+            E1: 'takes 4% of her pot on the first of January each year. A year ago the pot was £700,000 and she took £28,000. Now it is £770,000 after good returns, so she takes £30,800' },
+    reason: { D1: 'The case is about a sum taken out of {t:pot} every year to spend: {cue:D1}. Nothing in it is a bill due on a date or one thing that is most of her money.',
+              E1: 'The sum is worked out again each January from what {t:pot} is worth then: {cue:E1}. It is always the same share, so it can never be too large for {t:pot}.' },
+    not: { outcome: 'burnrate', why: 'There is a sum taken every year, but it is a percentage of {t:pot}, not a fixed number of pounds. It rose with {t:pot} as it would have fallen with it.' } },
+
+  { id: 'e-r-loc-2', use: 'drill', tier: 'varied', setting: 'business', topic: 'a steady-income fund outside the pension of a shopkeeper',
+    text: "Sana, 55, owns a small shop and has £70,000 in an ordinary investment account and £70,000 in a pension. The ordinary account holds a fund that pays out a steady income from rented homes and loans, £4,200 a year, and she pays 25% tax on it, £1,050, every year. Her pension holds a fund of shares in technology firms that pays out almost nothing. She has never looked at which fund sits in which account.",
+    outcome: 'location', route: { D1: ['erosion'], E1: ['incometax'] },
+    cues: { D1: 'she pays 25% tax on it, £1,050, every year',
+            E1: 'The ordinary account holds a fund that pays out a steady income from rented homes and loans, £4,200 a year, and she pays 25% tax on it, £1,050, every year. Her pension holds a fund of shares in technology firms that pays out almost nothing' },
+    reason: { D1: 'The case is about tax that comes out of the money every year: {cue:D1}. It has no claim, no fall in prices and no handover.',
+              E1: 'The fund that pays out the most sits in the taxed account, and the one that pays out almost nothing sits in the pension: {cue:E1}. Nothing is being sold; the tax comes on what the fund pays out.' },
+    not: { outcome: 'defer', why: 'No sale is planned. The tax comes every year on the income the fund pays out, so there is nothing to hold off.' } },
+
+  { id: 'e-r-def-2', use: 'drill', tier: 'varied', setting: 'property', topic: 'a plot of land and a buyer’s remark',
+    text: "Raúl, 66, has £400,000 of savings and owns a small plot of land he bought for £30,000, now worth £90,000. The buyer of a neighbouring plot says prices 'could fall back', so Raúl plans to sell it and put the money in a fund. He needs no cash. Selling would bring tax of 20% on the £60,000 gain, £12,000.",
+    outcome: 'defer', route: { D1: ['erosion'], E1: ['needlesssale'] },
+    cues: { D1: 'Selling would bring tax of 20% on the £60,000 gain, £12,000',
+            E1: 'so Raúl plans to sell it and put the money in a fund. He needs no cash. Selling would bring tax of 20% on the £60,000 gain, £12,000' },
+    reason: { D1: 'The case is about a tax bill that would come out of {t:pot}: {cue:D1}. The land is a small part of what he owns, so no one thing is most of it.',
+              E1: 'A sale is planned that would bring tax on {t:gain}, and nothing needs it: {cue:E1}. A remark that prices could fall back is not a need for cash.' },
+    not: { outcome: 'location', why: 'The tax here is on a sale that is planned, not on income paid out every year. If Raúl does not sell, nothing is taxed.' } }
+]);

@@ -1,0 +1,87 @@
+// Scams, Unit Three: fresh cases held back for later days, part two: the one-time code scam and the app permission scam. Four for
+// each name. Field guide: see u3.cases-return-1.js.
+
+FC.cases('scams', 'u3', [
+
+  /* ---------- One-time code scam ---------- */
+  { id: 'ret-cs-broadband', use: 'return', tier: 'clean', setting: 'home', topic: 'a broadband call about a fault on the line',
+    text: "A woman rings Dee and says she is from the broadband company: 'We are fixing a fault on your line. A code has been sent to your phone to confirm that it is you. Please say the number.' A text with a code arrives.",
+    outcome: 'codescam', route: { D1: ['access'], A1: ['code'], A2: ['notfit'] },
+    cues: { D1: 'Please say the number', A1: ['A text with a code arrives', 'Please say the number'], A2: 'A woman rings Dee and says she is from the broadband company' },
+    reason: { D1: 'The caller asks Dee to say a number aloud: {cue:D1}. Nothing is to be installed, no money is asked for and no facts about her, so it is a request about a way into an account.',
+              A1: 'A code has just come to Dee\'s phone, and she is asked to say it: {cue:A1}.',
+              A2: 'Dee did not start this: a call came to her: {cue:A2}. A code is for typing into a sign-in that you started, and nobody else needs to hear it.' },
+    not: { outcome: 'realsignin', why: 'The code is real, and it may come from the broadband company\'s own system. But a real code is typed in by the person it was sent to, and here a caller who rang her wants it said aloud.' },
+    wouldChange: 'If Dee had signed in to her broadband account herself and typed the code that came into that same page, nobody else would have heard it, and the case would be {o:realsignin}.' },
+
+  { id: 'ret-cs-club', use: 'return', tier: 'varied', setting: 'leisure', topic: 'a club treasurer who wants a number',
+    text: "The treasurer of Ola's sports club messages in the club chat: 'The club bank needs a code from a member to approve the new account. A text has just gone to you. Please send me the numbers.' A text with a code arrives.",
+    outcome: 'codescam', route: { D1: ['access'], A1: ['code'], A2: ['notfit'] },
+    cues: { D1: 'Please send me the numbers', A1: ['A text with a code arrives', 'Please send me the numbers'], A2: "The treasurer of Ola's sports club messages in the club chat" },
+    reason: { D1: 'The message asks Ola to send on some numbers: {cue:D1}. Nothing is to be installed, no money is asked for and no facts about her, so it is a request about a way into an account.',
+              A1: 'A code has just come to Ola\'s phone, and she is asked to send it on: {cue:A1}.',
+              A2: 'Ola did not start this: a message came to her in a chat: {cue:A2}. The name is someone she knows, but a chat account can be taken over, and a code is for typing into a sign-in that she started.' },
+    not: { outcome: 'realsignin', why: 'The code really did come from a real service, and the message seems to come from a person she knows. But a real code goes only into the page or app that she opened, never to someone else.' },
+    wouldChange: 'If Ola had been opening the club bank\'s own app herself and had typed the code that it sent her into that app, the case would be {o:realsignin}.' },
+
+  { id: 'ret-cs-insurer', use: 'return', tier: 'varied', setting: 'health', topic: 'an insurer call about a claim to pay out',
+    text: "A man rings Jun and says he is from her health insurer: 'To pay out your claim we need to confirm that it is you. A code is on its way. Please read it out.' A text with a code arrives.",
+    outcome: 'codescam', route: { D1: ['access'], A1: ['code'], A2: ['notfit'] },
+    cues: { D1: 'Please read it out', A1: ['A text with a code arrives', 'Please read it out'], A2: 'A man rings Jun and says he is from her health insurer' },
+    reason: { D1: 'The caller asks Jun to read out a code: {cue:D1}. Nothing is to be installed, no money is asked for and no facts about her, so it is a request about a way into an account.',
+              A1: 'A code has just come to Jun\'s phone, and she is asked to read it out: {cue:A1}.',
+              A2: 'Jun did not start this: a call came to her: {cue:A2}. Being paid money is a good bait, but a code is for typing into a sign-in that she started.' },
+    not: { outcome: 'realsignin', why: 'The code is real, and it may come from a real service. But a real code is typed in by the person it was sent to. A caller who rang her has no need to hear it.' },
+    wouldChange: 'If Jun had been making a claim in the insurer\'s own app and had typed the code it sent her into that app, the case would be {o:realsignin}.' },
+
+  { id: 'ret-cs-friend', use: 'return', tier: 'misleading', setting: 'relationships', topic: 'a friend who asks for the number on his phone', echo: 'ac-checkout',
+    text: "Ravi signs in to his email himself, on a page he reaches from a bookmark. The page says that a code has been sent to his phone. Before he can type it, a text arrives from a friend: 'I need a code, I will explain later. Please send me the one on your phone.'",
+    outcome: 'codescam', route: { D1: ['access'], A1: ['code'], A2: ['notfit'] },
+    cues: { D1: 'Please send me the one on your phone', A1: ['The page says that a code has been sent to his phone', 'Please send me the one on your phone'], A2: 'a text arrives from a friend' },
+    reason: { D1: 'The friend asks Ravi to send on a code: {cue:D1}. Nothing is to be installed, no money is asked for and no facts about him, so it is a request about a way into an account.',
+              A1: 'A code is on its way to his phone, and he is asked to send it on: {cue:A1}.',
+              A2: 'Ravi did start a sign-in, and the code is for the page he opened. But what the case asks is that he send it to someone who contacted him: {cue:A2}. That is not part of what he started, and a friend\'s account can be taken over.' },
+    not: { outcome: 'realsignin', why: 'The sign-in really is Ravi\'s, he started it from a bookmark, and the code really is for it. But the request in the case is a text that asks him to send the code on, and a real code goes only into the page he opened.' },
+    wouldChange: 'If no text had arrived and Ravi had simply typed the code into the page that he opened, the case would be {o:realsignin}.' },
+
+  /* ---------- App permission scam ---------- */
+  { id: 'ret-ap-poll', use: 'return', tier: 'clean', setting: 'work', topic: 'a lunch poll which wants the whole mailbox',
+    text: "A colleague forwards a poll to the team: 'Vote for the team lunch.' It tells Imogen to log in with her email account, and her provider's permission screen asks whether the poll may read, send and delete all her email. It has two buttons, Allow and Cancel.",
+    outcome: 'appscam', route: { D1: ['access'], A1: ['allow'], A2: ['notfit'] },
+    cues: { D1: 'It has two buttons, Allow and Cancel', A1: 'asks whether the poll may read, send and delete all her email', A2: 'A colleague forwards a poll to the team' },
+    reason: { D1: 'The {t:permission} asks Imogen to press Allow: {cue:D1}. Nothing is to be installed, no money is asked for and no facts about her, so it is a request about a way into an account.',
+              A1: 'The {t:permission} asks her to press Allow for an app and lists what it may do: {cue:A1}. No password is typed and no code is read out.',
+              A2: 'The poll came to Imogen in a forwarded message: {cue:A2}. She did not go looking for it, and a vote needs nothing from her mailbox.' },
+    not: { outcome: 'realsignin', why: 'The {t:permission} is real and comes from her own provider, as it would for a real Allow. But she did not start it, and it asks for far more than a lunch vote needs.' },
+    wouldChange: 'If Imogen had gone to the poll site herself and the {t:permission} had asked only for her name, it would fit what she set out to do, and the case would be {o:realsignin}.' },
+
+  { id: 'ret-ap-budget', use: 'return', tier: 'varied', setting: 'money', topic: 'a budgeting app advertised in a newsletter',
+    text: "A newsletter advertises a budgeting app that will 'find your receipts in your email'. Sid taps the advert. His provider's permission screen says that the app would like to read, send and delete all his email. It has two buttons, Allow and Cancel.",
+    outcome: 'appscam', route: { D1: ['access'], A1: ['allow'], A2: ['notfit'] },
+    cues: { D1: 'It has two buttons, Allow and Cancel', A1: 'the app would like to read, send and delete all his email', A2: "A newsletter advertises a budgeting app" },
+    reason: { D1: 'The {t:permission} asks Sid to press Allow: {cue:D1}. Nothing is to be installed, no money is asked for and no facts about him, so it is a request about a way into an account.',
+              A1: 'The {t:permission} asks him to press Allow for an app and lists what it may do: {cue:A1}. No password is typed and no code is read out.',
+              A2: 'The app came to Sid in an advert: {cue:A2}. He did not go looking for it. Finding receipts may need to read mail, but sending and deleting it is far more than that.' },
+    not: { outcome: 'realsignin', why: 'The {t:permission} is real and it is his own provider\'s. But he did not start it, and the list goes well beyond finding receipts: it includes sending and deleting his email.' },
+    wouldChange: 'If Sid had gone looking for a budgeting app himself, and the {t:permission} had asked only to read receipts, it would fit what he set out to do, and the case would be {o:realsignin}.' },
+
+  { id: 'ret-ap-game', use: 'return', tier: 'varied', setting: 'leisure', topic: 'a free puzzle game which saves progress to the mailbox',
+    text: "Toby finds a free puzzle game himself in his phone's app store and opens it. The game asks him to sign in with his email account to 'save his progress'. His provider's permission screen says that the game would like to read, send and delete all his email, and see his contacts. It has two buttons, Allow and Cancel.",
+    outcome: 'appscam', route: { D1: ['access'], A1: ['allow'], A2: ['notfit'] },
+    cues: { D1: 'It has two buttons, Allow and Cancel', A1: 'the game would like to read, send and delete all his email, and see his contacts', A2: 'the game would like to read, send and delete all his email, and see his contacts' },
+    reason: { D1: 'The {t:permission} asks Toby to press Allow: {cue:D1}. Nothing is to be installed, no money is asked for and no facts about him, so it is a request about a way into an account.',
+              A1: 'The {t:permission} asks him to press Allow for an app and lists what it may do: {cue:A1}. No password is typed and no code is read out.',
+              A2: 'Toby did go looking for the game himself, but the {t:permission} asks for far more than saving a score needs: {cue:A2}. A game has no use for his mail or his contacts, so the answer is no.' },
+    not: { outcome: 'realsignin', why: 'He found the game himself, as with a real Allow, and the {t:permission} is his provider\'s own. What makes it a scam is what it asks for: a puzzle game has no need of his email or his contacts.' },
+    wouldChange: 'If the {t:permission} had asked only for his name, to show a score table, it would ask only what the game needs, and the case would be {o:realsignin}.' },
+
+  { id: 'ret-ap-album', use: 'return', tier: 'misleading', setting: 'relationships', topic: 'an album shared by a friend', echo: 'ac-planner-own',
+    text: "Hal's friend Wren messages him: 'I put our holiday photos in an album. Open it here.' The link opens his email provider's permission screen: 'Album View would like to read, send and delete all your email.' It has two buttons, Allow and Cancel. Wren's messages are usually real.",
+    outcome: 'appscam', route: { D1: ['access'], A1: ['allow'], A2: ['notfit'] },
+    cues: { D1: 'It has two buttons, Allow and Cancel', A1: 'Album View would like to read, send and delete all your email', A2: "Hal's friend Wren messages him" },
+    reason: { D1: 'The {t:permission} asks Hal to press Allow: {cue:D1}. Nothing is to be installed, no money is asked for and no facts about him, so it is a request about a way into an account.',
+              A1: 'The {t:permission} asks him to press Allow for an app and lists what it may do: {cue:A1}. No password is typed and no code is read out.',
+              A2: 'The link came to Hal in a message: {cue:A2}. He did not go looking for an album, and a friend\'s account can be taken over and used to send exactly this. An album needs to be opened, not to read and delete his email.' },
+    not: { outcome: 'realsignin', why: 'The message is from a friend he knows, and the {t:permission} is his own provider\'s, so it feels ordinary. But he did not start it, and the list asks for far more than looking at an album needs.' },
+    wouldChange: 'If Hal had been looking for a photo-sharing app himself, and the {t:permission} had asked only to see his photos, the case would be {o:realsignin}.' }
+]);

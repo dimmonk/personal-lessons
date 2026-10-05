@@ -1,6 +1,6 @@
-// Psychology: specimens for the full determination. Only the five that belong to Unit Two's branch are here.
-// The scenario text is the app's existing text (dashes replaced by full stops or commas). What changes: the route
-// uses the rewritten key, every question has its own marked words and its own reason (so a wrong route can be
+// Psychology: specimens for the full determination, for every branch of the key.
+// Where an old specimen's scenario was sound its text is kept (dashes replaced by full stops or commas), with details added
+// so the case shows what the rewritten key's answer needs. What changes: the route uses the rewritten key, every question has its own marked words and its own reason (so a wrong route can be
 // explained question by question, starting with the first), and the old "What would falsify this reading" text is
 // kept under a plain label: "What would make it a different name".
 // A specimen is offered only when the unit that teaches its outcome is done (specimen.outcome -> key outcome.unit).
@@ -26,6 +26,46 @@ FC.specimens('psychology', [
     not: { outcome: 'confbias', why: '{o:confbias} would have him asking how the numbers were run because they went against him. He asked for them to be sent round.' },
     wouldChange: 'If he had spent those years keeping the numbers from being run, this would be giving in, not going where the facts point.' },
 
+  { id: 'sp-recordings', tier: 'clean', setting: 'home', topic: 'a husband who denies what he said',
+    text: "For most of a year, whenever Priya brings up something her husband said, he tells her it never happened and that she is making it up. Twice she has shown him the message where he said it, and he told her she must have misread it. She now records important conversations on her phone, because she no longer trusts her own memory.",
+    outcome: 'gaslight', route: { D1: ['tactic'], T1: ['denymemory'] },
+    cues: { D1: 'he tells her it never happened and that she is making it up',
+            T1: ['Twice she has shown him the message where he said it', 'she no longer trusts her own memory'] },
+    reason: { D1: 'One person is saying something to another, about what has happened between the two of them: {cue:D1}.',
+              T1: 'The case shows the words really were said: {cue:T1}. He has denied them for most of a year, and under that denial her trust in her own memory has given way.' },
+    not: { outcome: 'ordexchange', why: '{o:ordexchange} would be one honest disagreement about who said what. Here the case shows the words were said, because she has the messages, and the denial has gone on for most of a year until she doubts her own memory.' },
+    wouldChange: 'If he had misremembered once, and accepted the message when she showed it to him, this would be {o:ordexchange}.' },
+
+  { id: 'sp-soulmate', tier: 'clean', setting: 'home', topic: 'a boyfriend who stops the flowers',
+    text: "In their first month together he called her his soulmate, sent flowers to her office every week and booked a holiday for the two of them in the spring. In the third month she told him she would keep her Saturday football with her friends. From then on the flowers stopped, and he began telling her she “used to be more fun.”",
+    outcome: 'lovebomb', route: { D1: ['tactic'], T1: ['floodpull'] },
+    cues: { D1: 'he began telling her she “used to be more fun.”',
+            T1: ['called her his soulmate, sent flowers to her office every week', 'From then on the flowers stopped'] },
+    reason: { D1: 'One person is saying something to another, about her: {cue:D1}.',
+              T1: 'Early on there is far more than one month together would explain: he {cue:T1}. Then it is pulled back, right after she sets a limit by keeping her Saturdays, and praise turns into criticism.' },
+    not: { outcome: 'ordexchange', why: 'Plenty of people are delighted in a new relationship, and that is {o:ordexchange}. What this case adds is the pulling back, which begins the moment she keeps something for herself, and the criticism that replaces the praise.' },
+    wouldChange: 'If the flowers had slowed only as the months went by, with no change after she kept her Saturdays and no criticism, this would be {o:ordexchange}.' },
+
+  { id: 'sp-vision', tier: 'clean', setting: 'work', topic: 'a manager who is never wrong',
+    text: "In twenty years and four companies, Graham has never once said “I was wrong.” When a project he led fails, the team let him down; when it succeeds, he tells the story of his original vision to anyone who will listen. At home he expects his wife to drop her plans for his. When a junior colleague was praised in a meeting last year, he called her work “adequate, for someone at her level” and had her moved off his team. Two of his teams have asked to be split up rather than keep working for him.",
+    outcome: 'narcgrand', route: { D1: ['pattern'], P1: ['above'] },
+    cues: { D1: ['In twenty years and four companies', 'At home he expects his wife to drop her plans for his'],
+            P1: ['he called her work “adequate, for someone at her level” and had her moved off his team', 'Two of his teams have asked to be split up rather than keep working for him'] },
+    reason: { D1: 'Years, places and relationships are all in the case: {cue:D1}.',
+              P1: 'He acts as if he is above others, and when someone else is treated as special he answers with scorn: {cue:P1}. That keeps costing the people around him.' },
+    not: { outcome: 'narcvuln', why: 'Both kinds of narcissism need to be treated as special. His answer when he is not is aimed outward, as scorn and punishment. He does not go quiet and nurse a grievance.' },
+    wouldChange: 'If his teams did well with him, he showed interest in what others felt, and his pride cost nobody anything, this would be {o:ordpersonality}.' },
+
+  { id: 'sp-calls', tier: 'clean', setting: 'home', topic: 'calls that never stop',
+    text: "Since her teens, with every partner and with her closest friends, Jade has done the same thing: when someone seems even slightly less available, she calls them over and over until they answer. In one call she will say “I’m sorry, I’m the worst” and then “you clearly never cared about me.” She has quit two jobs within days of a manager she admired moving to another office. Each of her relationships has ended the same way.",
+    outcome: 'borderline', route: { D1: ['pattern'], P1: ['clings'] },
+    cues: { D1: ['Since her teens, with every partner and with her closest friends', 'She has quit two jobs'],
+            P1: ['she calls them over and over until they answer', '“I’m sorry, I’m the worst” and then “you clearly never cared about me.”', 'Each of her relationships has ended the same way'] },
+    reason: { D1: 'Years, places and relationships are all in the case: {cue:D1}.',
+              P1: 'She makes desperate efforts to keep people close, and swings from adoring to attacking when they seem to pull away: {cue:P1}. It has cost her every relationship and two jobs.' },
+    not: { outcome: 'histrionic', why: 'Her calls are not made to an audience and are not about being the centre of a room. They are about keeping one person from leaving, and they swing to attack when that person seems to be going.' },
+    wouldChange: 'If this had begun after one recent loss, instead of with everyone since her teens, it would not be a lasting way she is, and the key’s first question would get a different answer.' },
+
   { id: 'sp-analysts', tier: 'varied', setting: 'work', topic: 'analysts in a report',
     text: "The report cites six analysts who back her thesis and dismisses the two who don't as \"not understanding the sector\", a phrase she doesn't apply to any of the six, several of whom have less sector experience than the two she dismissed.",
     outcome: 'confbias', route: { D1: ['reasoning'], R1: ['scrutiny'] },
@@ -44,6 +84,46 @@ FC.specimens('psychology', [
     not: { outcome: 'confbias', why: 'He is harder on concern than on agreement, which would fit {o:confbias}. But he set out on a search, and the answer was chosen before it began. When a case shows both, that decides it.' },
     wouldChange: 'If he could say what he would have needed to hear to walk away, and would have walked away on hearing it, the asking would have been a real search, and this would be {o:fair}.' },
 
+  { id: 'sp-hr', tier: 'varied', setting: 'work', topic: 'an expense claim',
+    text: "Shown the receipts proving he had claimed a family holiday as a business trip, Dev told HR he had never claimed anything he shouldn’t have, said his manager had been out to get him for months and was now making things up, and asked how HR could let a loyal employee be treated like this.",
+    outcome: 'darvo', route: { D1: ['tactic'], T1: ['reverse'] },
+    cues: { D1: 'said his manager had been out to get him for months',
+            T1: ['Shown the receipts proving he had claimed a family holiday as a business trip', 'he had never claimed anything he shouldn’t have', 'was now making things up', 'how HR could let a loyal employee be treated like this'] },
+    reason: { D1: 'One person is saying something to others about another person and about what has happened between them: he {cue:D1}.',
+              T1: 'The case shows he did it: {cue:T1}. In one answer he does all three things this answer needs. He denies it, he attacks the manager who raised it, and he presents himself as the one wronged.' },
+    not: { outcome: 'projection', why: 'He does accuse his manager of making things up while he is the one not telling the truth, which could look like {o:projection}. But his accusation comes as the answer to being caught out, together with a denial and with himself as the one wronged. When a case shows both, the key gives {o:darvo}.' },
+    wouldChange: 'If the receipts were wrong and he had not claimed the holiday, an angry denial would be {o:ordexchange}: an innocent person can deny something angrily.' },
+
+  { id: 'sp-colin', tier: 'varied', setting: 'home', topic: 'a brother and their mother',
+    text: "For months Colin has told his sister that she “only visits Mum when she wants something”. He says it at family dinners and in the family chat. Colin has not visited their mother in four months, and in that time has twice asked her for money. His sister drives over every Sunday.",
+    outcome: 'projection', route: { D1: ['tactic'], T1: ['ownfault'] },
+    cues: { D1: 'Colin has told his sister that she “only visits Mum when she wants something”',
+            T1: ['Colin has not visited their mother in four months, and in that time has twice asked her for money', 'His sister drives over every Sunday'] },
+    reason: { D1: 'One person is saying something to another, about her: {cue:D1}.',
+              T1: 'The case shows the accuser doing exactly what he accuses her of: {cue:T1}. Nothing in it shows her doing it.' },
+    not: { outcome: 'ordexchange', why: 'An honest accusation, even a harsh one, is {o:ordexchange} when the case shows the other person doing it. Here the case shows the opposite: she visits every week, and he is the one who comes only for money.' },
+    wouldChange: 'If his sister really did visit only to ask for money, and Colin did not, this would be a fair complaint, and the name would be {o:ordexchange}.' },
+
+  { id: 'sp-ledger', tier: 'varied', setting: 'work', topic: 'a trainer passed over',
+    text: "Over a decade and three workplaces, Maureen has kept a mental ledger of every time someone she trained was promoted over her. She tells her sister she is “the only one who actually does the work, and nobody ever notices.” She never complains to her managers. Instead, when a colleague is praised, she goes quiet for weeks and stops speaking to them, without ever saying why. She has lost three close friendships this way, and her sister has stopped asking about her job.",
+    outcome: 'narcvuln', route: { D1: ['pattern'], P1: ['overlooked'] },
+    cues: { D1: 'Over a decade and three workplaces',
+            P1: ['“the only one who actually does the work, and nobody ever notices.”', 'she goes quiet for weeks and stops speaking to them', 'She has lost three close friendships this way'] },
+    reason: { D1: 'Years, places and relationships are all in the case: {cue:D1}, and with her sister and her friends.',
+              P1: 'She tells people she is not noticed or rewarded as she should be, and when someone else is praised she pulls away in silence: {cue:P1}. That keeps costing her and the people around her.' },
+    not: { outcome: 'narcgrand', why: 'She needs to be treated as special just as a grandiose narcissist does, but she never puts anyone down or demands anything out loud. Her answer is inward: silence, withdrawal and a private ledger.' },
+    wouldChange: 'If the workplaces really had passed her over unfairly, and she had raised it with them and moved on without losing friends, this would be {o:ordpersonality}.' },
+
+  { id: 'sp-rosalind', tier: 'varied', setting: 'leisure', topic: 'the first on the dance floor',
+    text: "In three different jobs, Rosalind has been the first on the dance floor and the last to leave every party. When a colleague holds the room with news of her own, Rosalind remembers something terrible that has just happened to her, goes pale, says she can’t talk about it, and then talks about it for twenty minutes until the whole table has turned to her. Friends say they no longer share good news when she is there, and two teams have asked not to sit with her. She is also generous, and drops everything to help a friend.",
+    outcome: 'histrionic', route: { D1: ['pattern'], P1: ['centre'] },
+    cues: { D1: 'In three different jobs',
+            P1: ['until the whole table has turned to her', 'Friends say they no longer share good news when she is there'] },
+    reason: { D1: 'Years, places and relationships are all in the case: {cue:D1}, and with her friends.',
+              P1: 'When attention moves to someone else she makes a bigger display, {cue:P1}. That keeps costing her friendships and her place at work.' },
+    not: { outcome: 'narcgrand', why: 'She does not put the colleague down or act as if she is better than her. She turns up her own display until the attention comes back to her.' },
+    wouldChange: 'If she let the floor go when a colleague had news, and her liveliness cost nobody anything, this would be {o:ordpersonality}.' },
+
   { id: 'sp-different', tier: 'misleading', setting: 'home', topic: 'a promise to leave',
     text: "\"I know I promised myself I'd leave if it happened again, but this time really is different. He explained why it wasn't his fault.\"",
     outcome: 'dissonance', route: { D1: ['reasoning'], R1: ['addstory'] },
@@ -51,5 +131,35 @@ FC.specimens('psychology', [
     reason: { D1: 'The case is one person’s account of a choice of her own. She made herself a promise, {cue:D1}, and she is explaining why she is not keeping it.',
               R1: 'She did something that does not fit her promise: she stayed. {cue:R1} is the reason she gives afterwards for why staying is fine. His explanation is in the case, but she has not tested it; she is using it.' },
     not: { outcome: 'fair', why: 'Her plan changed, but no checked fact came between the promise and the staying. An explanation from the person she promised to leave is not something she tested.' },
-    wouldChange: 'If "this time is different" could be checked by something other than his word, and she had checked it, this would be {o:fair}.' }
+    wouldChange: 'If "this time is different" could be checked by something other than his word, and she had checked it, this would be {o:fair}.' },
+
+  { id: 'sp-slide', tier: 'misleading', setting: 'work', topic: 'a wrong figure on a slide',
+    text: "A teammate is told in a meeting that a figure on his slide is wrong. “That’s what the system gave me,” he snaps. After the meeting he checks, finds the mistake was his, and sends round a corrected slide with a thank-you to the colleague who spotted it.",
+    outcome: 'ordexchange', route: { D1: ['tactic'], T1: ['plain'] },
+    cues: { D1: '“That’s what the system gave me,” he snaps',
+            T1: 'sends round a corrected slide with a thank-you to the colleague who spotted it' },
+    reason: { D1: 'One person is answering another about what has happened between them: {cue:D1}.',
+              T1: 'He defends himself once, and then he {cue:T1}. Nothing is denied again and again, nobody is attacked, and he does not play the one wronged.' },
+    not: { outcome: 'darvo', why: 'Snapping back can look like the first step of {o:darvo}. But he does not keep denying the mistake, he attacks no one, and he does not present himself as the one wronged: he fixes it and thanks the person who raised it.' },
+    wouldChange: 'If he had told the meeting the colleague was trying to make him look bad, and that he was the one being picked on, this would be {o:darvo}.' },
+
+  { id: 'sp-favours', tier: 'misleading', setting: 'money', topic: 'a charming borrower',
+    text: "Everyone who meets Marcus finds him warm and funny. Over fifteen years he has borrowed money from friends in three cities and never paid it back, sold a car he knew had a cracked engine block to a colleague, and used things friends told him in confidence to get favours. When one friend confronted him, he laughed and said she should have read the small print. He moves on to new friends when the old ones stop answering.",
+    outcome: 'antisocial', route: { D1: ['pattern'], P1: ['uses'] },
+    cues: { D1: 'Over fifteen years he has borrowed money from friends in three cities',
+            P1: ['sold a car he knew had a cracked engine block to a colleague', 'he laughed and said she should have read the small print'] },
+    reason: { D1: 'Years, places and relationships are all in the case: {cue:D1}.',
+              P1: 'Rule after rule broken for his own gain, and laughter when he is confronted: {cue:P1}. No regret is shown for the harm.' },
+    not: { outcome: 'narcgrand', why: 'He does not demand to be treated as special, and he does not turn angry or scornful when he is not. He takes what he can from people and shows no regret. The warmth is the first thing anyone notices, and it decides nothing.' },
+    wouldChange: 'If he had borrowed once in a hard year, paid it back and apologised, there would be no lasting way of using people here, and this would not be {o:antisocial}.' },
+
+  { id: 'sp-blunt', tier: 'misleading', setting: 'community', topic: 'a blunt allotment holder',
+    text: "For as long as anyone at the allotment society can remember, Bernard has been blunt. He tells people their beans are planted too close and their fences are crooked, at the society, at his church and to his grandchildren. A newer member called him “a total narcissist” after he criticised her shed. Bernard also gives away half his crop, turns up to every working day, and listened for an hour when the same member’s husband was ill. He has been the society’s treasurer for twelve years, re-elected every time.",
+    outcome: 'ordpersonality', route: { D1: ['pattern'], P1: ['steady'] },
+    cues: { D1: 'at the society, at his church and to his grandchildren',
+            P1: ['listened for an hour when the same member’s husband was ill', 'He has been the society’s treasurer for twelve years, re-elected every time'] },
+    reason: { D1: 'Years, places and relationships are all in the case: for as long as anyone can remember, {cue:D1}.',
+              P1: 'He has the same blunt way of being everywhere, and nothing in the case shows it costing anyone: he {cue:P1}.' },
+    not: { outcome: 'narcgrand', why: 'Being blunt is not acting above others. He shows interest in what others feel, and nobody is driven away. The label someone gave him is in the case, and it decides nothing.' },
+    wouldChange: 'If his bluntness came with scorn, little interest in others, and people leaving the society because of him, this would be {o:narcgrand}.' }
 ]);

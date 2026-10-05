@@ -1,16 +1,245 @@
 {
   "standard": 1,
   "subjects": {
+    "civics": {
+      "rev": 1,
+      "fp": "sha256:8d1dd0c445fbf7de2d829f48b9caef9d590f7aa1e757512fb6d5be6f57af11e2"
+    },
+    "ideology": {
+      "rev": 1,
+      "fp": "sha256:d0bef02893b871bd2c400a413ab41d5f3e9fd84a6637d0e328e2a712761961d6"
+    },
+    "math": {
+      "rev": 1,
+      "fp": "sha256:77e46477e3905815b70744de2de31a7bf88d2d00a6b437ad2fca7f76623e2353"
+    },
     "psychology": {
-      "rev": 2,
-      "fp": "sha256:ce9df40582d397e9f3b0cd088bfc7ab4de0cbaaedf77b8823f601293e259a1cf"
+      "rev": 3,
+      "fp": "sha256:fcc1739515a5a80104ca5d65e8a7cbe9fb589c9c960f2a51dee0a3b9ec2627f3"
+    },
+    "scams": {
+      "rev": 1,
+      "fp": "sha256:75233b071585286cafb78e0c762c8307c27d6f3106b4ed0fdad1daa89e6aaf66"
+    },
+    "stats": {
+      "rev": 1,
+      "fp": "sha256:308880b87b877b13b5287cdc1a7ca5e19d2ffddbef951c667ebcb55b5eadb574"
+    },
+    "wealth": {
+      "rev": 1,
+      "fp": "sha256:bc5d0aa79b7ab7e8b3b77563f2dca540309f5947fe959ce37f66cb9c2ae7f5dc"
     }
   },
   "units": {
-    "psychology/u2": {
+    "civics/u1": {
       "rev": 1,
       "standard": 1,
-      "fp": "sha256:bc1c0e9633f5cd11cb707d5f3a526819f39f9333051af80deeba9143a16657c3"
+      "fp": "sha256:1fb815f0d17b7fd697742810fa5a181cffeae52c0ce42f28b03a25643b807289"
+    },
+    "civics/u10": {
+      "rev": 1,
+      "standard": 1,
+      "fp": "sha256:90a1fe11ea2e5f50a3b5d8f7b651b27e704c052f641229fe7d07939da0085147"
+    },
+    "civics/u2": {
+      "rev": 1,
+      "standard": 1,
+      "fp": "sha256:af3d18ca0ae8feec725bf6721eecfc8f6e64adc22b6a02ebd09571226643c4f3"
+    },
+    "civics/u3": {
+      "rev": 1,
+      "standard": 1,
+      "fp": "sha256:965e7f16b234ff848b7e6ddeb7ec9004398ef3f2108e8b6bd8caf6e48438aaed"
+    },
+    "civics/u4": {
+      "rev": 1,
+      "standard": 1,
+      "fp": "sha256:9bee64b6a9a61f7bfdf0d2e4213bdd036d46924b7e45285b96d14246c763d1f3"
+    },
+    "civics/u5": {
+      "rev": 1,
+      "standard": 1,
+      "fp": "sha256:a91e8e97e765255fed440645235caf99445f268216ea239919f65aebb079e19e"
+    },
+    "civics/u6": {
+      "rev": 1,
+      "standard": 1,
+      "fp": "sha256:3931bebd0b9cda1b04c0cdcfb8bf339b2552346890b2ecd966abc2d44a09f90d"
+    },
+    "civics/u7": {
+      "rev": 1,
+      "standard": 1,
+      "fp": "sha256:172180bbf461b8570a2965ff00d93db74a8b1de6bd558d995633ad4e83890ac1"
+    },
+    "civics/u8": {
+      "rev": 1,
+      "standard": 1,
+      "fp": "sha256:04846d8ed3528b80e8466e156f211b64e551bcc8c8715a6e0cb4b33708212c24"
+    },
+    "civics/u9": {
+      "rev": 1,
+      "standard": 1,
+      "fp": "sha256:77fbde1945b5c32ba4f9f6244a058cd1e341190eb13304d7f8a4b151d50d9860"
+    },
+    "ideology/u1": {
+      "rev": 1,
+      "standard": 1,
+      "fp": "sha256:d5d85456e201165f6590aeb0c92a5883fcf5bdd02c26a22533788bf990b7bb73"
+    },
+    "ideology/u2": {
+      "rev": 1,
+      "standard": 1,
+      "fp": "sha256:9d88673561c7ede70ed3a58f021c39407b653a0e971b16ffa360ccd7133cc60c"
+    },
+    "ideology/u3": {
+      "rev": 1,
+      "standard": 1,
+      "fp": "sha256:bcf2c3752acc9b6ec6eead94960a724c4d9e56fa17133f103fea1651ce077a8c"
+    },
+    "ideology/u4": {
+      "rev": 1,
+      "standard": 1,
+      "fp": "sha256:2f265acc45ca888408210094c1021ef174871ed02721bdbca85c36842cda64ae"
+    },
+    "ideology/u5": {
+      "rev": 1,
+      "standard": 1,
+      "fp": "sha256:9ce9619235ca2c2210030fa4b511960c0cb85f4d6cf4e1c3e3e8eb431cda935d"
+    },
+    "math/u1": {
+      "rev": 1,
+      "standard": 1,
+      "fp": "sha256:c6b1a2d51b43fd200c9ac951a98c760803ea511f165224d7b20657bb1e7affa1"
+    },
+    "math/u2": {
+      "rev": 1,
+      "standard": 1,
+      "fp": "sha256:49a844a0e53e9c209a0d97ec384b0ea8883bcc49429cf3abe627257bae88d948"
+    },
+    "math/u3": {
+      "rev": 1,
+      "standard": 1,
+      "fp": "sha256:3feede8001fcd9a563a4ae15025125079e275c8b2b342e9b4abf9af5d0fa4500"
+    },
+    "math/u4": {
+      "rev": 1,
+      "standard": 1,
+      "fp": "sha256:be3f6bc993a7fdd94f07e0c363b6692255d982b6992b92fdd869597e7c0cc950"
+    },
+    "math/u5": {
+      "rev": 1,
+      "standard": 1,
+      "fp": "sha256:5827b043bf935319b9fd33a25f68ec5b78743357d6da7acf6e6e675fff012281"
+    },
+    "math/u6": {
+      "rev": 1,
+      "standard": 1,
+      "fp": "sha256:c83d76f00b81779ddab124364f31e8efe5cf7bd7c4502ee3c005d99d7f5e92cc"
+    },
+    "psychology/u1": {
+      "rev": 1,
+      "standard": 1,
+      "fp": "sha256:170c5b4458845112b3223f2a79578e87f03ef974182a9352caf795443787444f"
+    },
+    "psychology/u2": {
+      "rev": 2,
+      "standard": 1,
+      "fp": "sha256:a31b895b6b408bae2079610156607155b204d7143a96b066f3db19b5032d2e05"
+    },
+    "psychology/u3": {
+      "rev": 1,
+      "standard": 1,
+      "fp": "sha256:241dc13f0e1d2cee879e174cd9a857c93830ecede72a011ffb58be9ae0e84016"
+    },
+    "psychology/u4": {
+      "rev": 1,
+      "standard": 1,
+      "fp": "sha256:6de6592793d371d2e595b42aa1d94dd16ca2169ce102a2e3d9aff9bc60bbacf2"
+    },
+    "scams/u1": {
+      "rev": 1,
+      "standard": 1,
+      "fp": "sha256:5d61ddd70af8a4c1280821b63a8f6d015c870cd659a32b200afe128091a6eed1"
+    },
+    "scams/u2": {
+      "rev": 1,
+      "standard": 1,
+      "fp": "sha256:8ab785b60b38293e69346b13e0f4de51866a11a14882401fcc8923a647e40818"
+    },
+    "scams/u3": {
+      "rev": 1,
+      "standard": 1,
+      "fp": "sha256:faa366f57b450635939cd2d1d1269fdc45080fb239825b4ebf6dcd190339d792"
+    },
+    "scams/u4": {
+      "rev": 1,
+      "standard": 1,
+      "fp": "sha256:46ef0c6f8509fd9232ee8942bc5ac85944a4c78e276287719bbe23766686442a"
+    },
+    "scams/u5": {
+      "rev": 1,
+      "standard": 1,
+      "fp": "sha256:42977e4e8a3fd54c4cdd1d667fe34e0e873b38afb502815a71def93966196e7a"
+    },
+    "scams/u6": {
+      "rev": 1,
+      "standard": 1,
+      "fp": "sha256:1e2a34d0fdb18cbf857af765ed19a4616bd5d8b2152d46cfa6a8eae4ec7d4b2b"
+    },
+    "stats/u1": {
+      "rev": 1,
+      "standard": 1,
+      "fp": "sha256:7ce266c8720d8f43c4212ecaaf7ca603f562c9e8419e739d46d71a1645910ca5"
+    },
+    "stats/u2": {
+      "rev": 1,
+      "standard": 1,
+      "fp": "sha256:58c2e9b2b07b5333450f53a09da564af0be5224c8a770f15f02239db9160d19e"
+    },
+    "stats/u3": {
+      "rev": 1,
+      "standard": 1,
+      "fp": "sha256:5092b72e2381038a1333fd9bcef2441f94ed2bbad11d557c035a8a59e5c56bd6"
+    },
+    "stats/u4": {
+      "rev": 1,
+      "standard": 1,
+      "fp": "sha256:be5c89c0fc511378ed1bd38d4585c8c87ef9b179bb91f8159bbc04dd6cfcc6b9"
+    },
+    "stats/u5": {
+      "rev": 1,
+      "standard": 1,
+      "fp": "sha256:c74895236a9342d9fe95f25cde21718022cd86e58e71a60826490e0f7d876a28"
+    },
+    "stats/u6": {
+      "rev": 1,
+      "standard": 1,
+      "fp": "sha256:7c2a45a67a012a36fd465d6ee39115d1f5724c6ea5fe0c6a25e7ff2585aba499"
+    },
+    "wealth/u1": {
+      "rev": 1,
+      "standard": 1,
+      "fp": "sha256:4989b90b062548da87ebdc221b497165b024d92246c2c44344da137ea32689c4"
+    },
+    "wealth/u2": {
+      "rev": 1,
+      "standard": 1,
+      "fp": "sha256:1bba277a3895d4f0eb234f3c8b6fe4ac35259f030072d4a6b841f3c00b85d900"
+    },
+    "wealth/u3": {
+      "rev": 1,
+      "standard": 1,
+      "fp": "sha256:2c092e2f64512750f5049232e347318f9fdbe3fd90bfa45bfbb3e4654b3f72cf"
+    },
+    "wealth/u4": {
+      "rev": 1,
+      "standard": 1,
+      "fp": "sha256:40c54f719553a4ea8a3b189d33ce39a06401895d16e1641cf29f597cc3423de4"
+    },
+    "wealth/u5": {
+      "rev": 1,
+      "standard": 1,
+      "fp": "sha256:2b13a4fa24998e717bd8a329804d21994888db9afc7f495f18a12a180a4f734a"
     }
   }
 }

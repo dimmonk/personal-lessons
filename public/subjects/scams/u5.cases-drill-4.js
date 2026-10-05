@@ -1,0 +1,66 @@
+// Scams, Unit Five: drill cases for the fourth stage (the whole route, no help), part one: the clean groups. Every question is asked,
+// starting with the first question of the key, so every case carries marked words and a reason for that question too. echo names a
+// teaching case whose story a case resembles while its name differs. Field guide: see u5.cases-drill-1.js.
+
+FC.cases('scams', 'u5', [  /* ---------- Stage four: the whole route, no help. First group, clean ---------- */
+  { id: 'u5-r-pharmacy', use: 'drill', tier: 'clean', setting: 'health', topic: 'delivery of prescriptions',
+    text: "Moira has been a customer of her local pharmacy for years. She asks it to start delivering her prescriptions, and the pharmacist says: 'I need your address and a phone number for the driver, and I will write them on your record.'",
+    outcome: 'realdetails', route: { D1: ['details'], F1: ['identify'], F2: ['fits'] },
+    cues: { D1: 'I need your address and a phone number for the driver', F1: 'your address and a phone number for the driver', F2: ['She asks it to start delivering her prescriptions', 'a phone number for the driver'] },
+    reason: { D1: 'The pharmacist asks Moira to tell the pharmacy facts about herself: {cue:D1}. Nothing is asked to be installed, signed in to or paid.',
+              F1: 'An address and a phone number are facts that identify her: {cue:F1}. Nothing is asked about her life.',
+              F2: 'Moira began it by asking for the delivery, at a pharmacy she has used for years, and what is asked is what a delivery needs: {cue:F2}.' },
+    not: { outcome: 'identitytheft', why: 'An address is among the facts a copy asks for, but Moira is the one who asked for the delivery, and an address is what a delivery needs.' },
+    wouldChange: 'If a text from the pharmacy had asked her to confirm her date of birth and her card number to keep her delivery, it would have come to her and asked for more, and it would be {o:identitytheft}.' },
+
+  { id: 'u5-r-frozen', use: 'drill', tier: 'clean', setting: 'money', topic: 'a card said to be frozen',
+    text: "A text reaches Joss: 'Your bank card has been frozen. To unfreeze it, reply with the full card number, the expiry date and the three-digit code on the back.' Joss has not had any trouble with his card.",
+    outcome: 'identitytheft', route: { D1: ['details'], F1: ['identify'], F2: ['notfit'] },
+    cues: { D1: 'reply with the full card number, the expiry date and the three-digit code on the back', F1: 'the full card number, the expiry date and the three-digit code on the back', F2: ['A text reaches Joss', 'Joss has not had any trouble with his card'] },
+    reason: { D1: 'The text asks Joss to tell the sender facts about himself, and names no amount to pay: {cue:D1}.',
+              F1: 'A full card number with its expiry date and security code is a set of facts that identify his card: {cue:F1}.',
+              F2: 'The text came to Joss, and he began nothing: {cue:F2}. Nothing in his own banking app says the card is frozen.' },
+    not: { outcome: 'realdetails', why: 'A real bank might tell you that a card is frozen, but a real bank does not ask you to type the whole card and its code into a reply. This came to Joss, and he began nothing.' },
+    wouldChange: 'If the text had only said that the card had been frozen and that he could open his bank’s app to see why, it would have asked for nothing.' },
+
+  { id: 'u5-r-wine', use: 'drill', tier: 'clean', setting: 'leisure', topic: 'a stranger replying to a post on wine',
+    text: "Una posts a photo of a wine she enjoyed. A man she does not know replies: 'Great choice! What do you do when you are not drinking wine? Do you live in the city?' Over the next days he messages her most evenings and asks about her job and whether she lives alone. He has not asked her for anything.",
+    outcome: 'friendlychat', route: { D1: ['details'], F1: ['life'], F2: ['notfit'] },
+    cues: { D1: 'asks about her job and whether she lives alone', F1: ['A man she does not know replies', 'asks about her job and whether she lives alone'], F2: 'A man she does not know replies' },
+    reason: { D1: 'The man asks Una to tell him about herself: {cue:D1}. He asks for nothing to install, no way into an account and no money.',
+              F1: 'A stranger who reached her out of nowhere asks about her job and her home life: {cue:F1}. No paper or number has been asked for.',
+              F2: 'Una began nothing with him. A man she does not know replied to her post and then wrote to her: {cue:F2}.' },
+    not: { outcome: 'identitytheft', why: 'He asks for no paper and no number. What he wants to know about is her life.' },
+    wouldChange: 'If he had asked for a photo of her passport to send her a gift, it would be {o:identitytheft}.' },
+
+  /* ---------- Second group, clean ---------- */
+  { id: 'u5-r-licence', use: 'drill', tier: 'clean', setting: 'government', topic: 'renewing a driving licence on the official site',
+    text: "Femke needs to renew her driving licence. She types the web address of the government licensing service into her browser herself. The page asks for her name, her date of birth and her address, so that it can find her record.",
+    outcome: 'realdetails', route: { D1: ['details'], F1: ['identify'], F2: ['fits'] },
+    cues: { D1: 'The page asks for her name, her date of birth and her address', F1: 'her name, her date of birth and her address', F2: ['She types the web address of the government licensing service into her browser herself', 'so that it can find her record'] },
+    reason: { D1: 'The page asks Femke to tell the service facts about herself: {cue:D1}.',
+              F1: 'A name, a date of birth and an address are facts that identify her: {cue:F1}.',
+              F2: 'Femke began it, through an address she typed herself, and what the page asks is what finding her record needs: {cue:F2}.' },
+    not: { outcome: 'identitytheft', why: 'A date of birth and an address are what a copy asks for too. Here Femke began it, through an address she typed, and the page says what it needs them for.' },
+    wouldChange: 'If an email had told her that her licence was about to expire and asked her to reply with a photo of it, it would have come to her, and it would be {o:identitytheft}.' },
+
+  { id: 'u5-r-bursary', use: 'drill', tier: 'clean', setting: 'money', topic: 'a bursary nobody applied for',
+    text: "An email reaches Bao: 'The Student Funding Office has reserved a bursary for you. To pay it, reply with your date of birth, your home address and a photo of your passport.' Bao left university two years ago and has not applied for any funding.",
+    outcome: 'identitytheft', route: { D1: ['details'], F1: ['identify'], F2: ['notfit'] },
+    cues: { D1: 'reply with your date of birth, your home address and a photo of your passport', F1: 'your date of birth, your home address and a photo of your passport', F2: ['An email reaches Bao', 'has not applied for any funding'] },
+    reason: { D1: 'The email asks Bao to tell the sender facts about himself: {cue:D1}. It names no amount for him to pay.',
+              F1: 'A date of birth, an address and a passport photo are facts that identify him: {cue:F1}.',
+              F2: 'The email came to Bao, and he began nothing: {cue:F2}.' },
+    not: { outcome: 'realdetails', why: 'A funding office does take such facts, from people who have applied. Bao has not.' },
+    wouldChange: 'If Bao had applied for a bursary on the university’s own site and had then been asked to upload his passport there, it would fit, and it would be {o:realdetails}.' },
+
+  { id: 'u5-r-chess', use: 'drill', tier: 'clean', setting: 'leisure', topic: 'a chess opponent who becomes a friend',
+    text: "Callum plays chess on a website. An opponent he has never met sends him a message after a game: 'Good game! Are you free to play again? What do you do? Do you work near the city?' Over the next two weeks the opponent messages him daily and asks where he works and whether his family lives nearby. No other request has been made.",
+    outcome: 'friendlychat', route: { D1: ['details'], F1: ['life'], F2: ['notfit'] },
+    cues: { D1: 'asks where he works and whether his family lives nearby', F1: ['An opponent he has never met sends him a message', 'asks where he works and whether his family lives nearby'], F2: 'An opponent he has never met sends him a message' },
+    reason: { D1: 'The opponent asks Callum to tell him about himself: {cue:D1}.',
+              F1: 'Someone Callum knows only through the site, who wrote to him out of nowhere, asks about his work and his family: {cue:F1}.',
+              F2: 'Callum began nothing with him. A message from an opponent he has never met arrived first: {cue:F2}.' },
+    not: { outcome: 'realdetails', why: 'The website is real and Callum chose to use it, but the questions about his work and family come from a private message that someone else began, and nothing he began needs the answers.' },
+    wouldChange: 'If he had met the opponent in person at a chess club, he would know him in another way, and the key would not apply.' }
+]);

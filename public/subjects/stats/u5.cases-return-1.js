@@ -1,0 +1,72 @@
+// Statistical Claims, Unit Five: fresh cases kept back for later days (first file: A percentage without the numbers, and Base rate fallacy).
+// Four for each name: one for each scheduled return (an action subject has a fourth, at about twelve weeks). A name that is due comes back as a
+// case the learner has not seen, run as a whole route, so every case carries marked words and a reason for both questions.
+
+FC.cases('stats', 'u5', [
+
+  /* ---------- A percentage without the numbers ---------- */
+  { id: 'ret-rel-1', use: 'return', tier: 'varied', setting: 'money', topic: 'hybrid cars and repairs',
+    text: "A car dealer's banner says: 'Owners of our hybrid are 35% less likely to need a repair.' The banner gives no counts.",
+    outcome: 'relrisk', route: { S1: ['compare'], C1: ['numbers'] },
+    cues: { S1: 'are 35% less likely to need a repair', C1: 'The banner gives no counts' },
+    reason: { S1: 'The banner gives its figure as a share of an earlier chance and sets nothing beside it: {cue:S1}.',
+              C1: 'The banner says {cue:C1}. 35% less likely is 20 repairs in 100 cars falling to 13, or 2 in 100 falling to 1.3, and the banner does not let you tell which.' },
+    not: { outcome: 'comp_ok', why: 'A comparison that holds gives the numbers behind it. This banner gives only the percentage.' } },
+
+  { id: 'ret-rel-2', use: 'return', tier: 'varied', setting: 'learning', topic: 'a college mailer and job offers',
+    text: "A college mailer says: 'Graduates of our program are 60% more likely to get a job offer.' The mailer gives no counts.",
+    outcome: 'relrisk', route: { S1: ['compare'], C1: ['numbers'] },
+    cues: { S1: 'are 60% more likely to get a job offer', C1: 'The mailer gives no counts' },
+    reason: { S1: 'The mailer gives a share of an earlier chance and nothing beside it: {cue:S1}.',
+              C1: 'The mailer says {cue:C1}. 60% more likely is 50 in 100 getting an offer rising to 80, or 5 in 100 rising to 8. The mailer does not let you tell which.' },
+    not: { outcome: 'baserate', why: 'The figure is a change in a chance, given as a percentage. No test is read.' } },
+
+  { id: 'ret-rel-3', use: 'return', tier: 'varied', setting: 'health', topic: 'late eating and heartburn',
+    text: "A news site says: 'Eating late doubles your risk of heartburn.' The article does not say how many people had heartburn in either group.",
+    outcome: 'relrisk', route: { S1: ['compare'], C1: ['numbers'] },
+    cues: { S1: 'Eating late doubles your risk of heartburn', C1: 'does not say how many people had heartburn in either group' },
+    reason: { S1: 'The site gives a risk as a multiple of another risk and sets nothing beside it: {cue:S1}.',
+              C1: 'The article {cue:C1}. Doubled is 10 in 100 rising to 20, or 1 in 100 rising to 2. The first is a large change in people and the second is not, and the words are the same.' },
+    not: { outcome: 'simpson', why: 'Two groups are compared, but no totals are given at all, so there is no mix to split. What is missing is the counts.' } },
+
+  { id: 'ret-rel-4', use: 'return', tier: 'varied', setting: 'community', topic: 'a crossing signal and crashes',
+    text: "A town flyer says: 'Serious crashes at the Oak Street crossing are down 50% since the signal went in.' The flyer does not say how many there were before or after.",
+    outcome: 'relrisk', route: { S1: ['compare'], C1: ['numbers'] },
+    cues: { S1: 'Serious crashes at the Oak Street crossing are down 50%', C1: 'does not say how many there were before or after' },
+    reason: { S1: 'The flyer gives a change as a share of an earlier level: {cue:S1}.',
+              C1: 'The flyer {cue:C1}. Down 50% is 8 crashes a year falling to 4, or 2 falling to 1. With so few, it may also be luck, but the first thing missing is the counts.' },
+    not: { outcome: 'comp_ok', why: 'A comparison that holds gives its numbers. This flyer gives a percentage and nothing else.' } },
+
+  /* ---------- Base rate fallacy ---------- */
+  { id: 'ret-base-1', use: 'return', tier: 'varied', setting: 'leisure', topic: 'a counterfeit pass scanner',
+    text: "A park's pass scanner is right 99 times in 100. The attendant says: 'It flagged your pass, so it is fake.' About 1 pass in 1,000 is fake.",
+    outcome: 'baserate', route: { S1: ['compare'], C1: ['common'] },
+    cues: { S1: "A park's pass scanner is right 99 times in 100", C1: 'It flagged your pass, so it is fake' },
+    reason: { S1: 'The figure is how often a scanner is right: {cue:S1}.',
+              C1: 'The attendant reads {cue:C1}. Count out 100,000 passes. 100 are fake and the scanner flags 99 of them. Of the 99,900 that are real, it flags 1 in every 100: 999. That is 99 + 999 = 1,098 flags, and 99 are right: about 1 in 11.' },
+    not: { outcome: 'relrisk', why: 'No change is given as a percentage. The figure is how often a scanner is right.' } },
+
+  { id: 'ret-base-2', use: 'return', tier: 'varied', setting: 'health', topic: 'a hospital sepsis alert',
+    text: "A hospital's sepsis alert is right 90 times in 100. A nurse says: 'The alert fired, so she has sepsis.' About 1 patient in 50 has sepsis.",
+    outcome: 'baserate', route: { S1: ['compare'], C1: ['common'] },
+    cues: { S1: "A hospital's sepsis alert is right 90 times in 100", C1: 'The alert fired, so she has sepsis' },
+    reason: { S1: 'The figure is how often an alert is right: {cue:S1}.',
+              C1: 'The nurse reads {cue:C1}. Count out 10,000 patients. 200 have sepsis and the alert fires for 180 of them. Of the 9,800 who do not, it fires for 1 in every 10: 980. That is 180 + 980 = 1,160 alerts, and 180 are right: about 1 in 6.' },
+    not: { outcome: 'simpson', why: 'No two totals are set side by side. The figure is how often an alert is right, read as the chance that one alert is right.' } },
+
+  { id: 'ret-base-3', use: 'return', tier: 'varied', setting: 'home', topic: 'a baby monitor app',
+    text: "A baby monitor's app is right 95 times in 100 at hearing crying. The app's ad says: 'It alerted, so your baby is crying.' A baby cries in about 1 minute in 50.",
+    outcome: 'baserate', route: { S1: ['compare'], C1: ['common'] },
+    cues: { S1: "A baby monitor's app is right 95 times in 100 at hearing crying", C1: 'It alerted, so your baby is crying' },
+    reason: { S1: 'The figure is how often the app is right: {cue:S1}.',
+              C1: 'The ad reads {cue:C1}. Count out 10,000 minutes. In 200 the baby cries and the app alerts for 190 of them. In the other 9,800 it alerts for 5 in every 100: 490. That is 190 + 490 = 680 alerts, and 190 are right: about 28 in 100.' },
+    not: { outcome: 'relrisk', why: 'The figure is not a change in a chance. It is how often an app is right.' } },
+
+  { id: 'ret-base-4', use: 'return', tier: 'varied', setting: 'work', topic: 'money-laundering software',
+    text: "A bank's monitoring software is right 98 times in 100. An analyst says: 'It flagged the account, so the account is laundering money.' About 1 account in 2,000 is.",
+    outcome: 'baserate', route: { S1: ['compare'], C1: ['common'] },
+    cues: { S1: "A bank's monitoring software is right 98 times in 100", C1: 'It flagged the account, so the account is laundering money' },
+    reason: { S1: 'The figure is how often the software is right: {cue:S1}.',
+              C1: 'The analyst reads {cue:C1}. Count out 100,000 accounts. 50 are laundering and the software flags 49 of them. Of the 99,950 that are not, it flags 2 in every 100: 1,999. That is 49 + 1,999 = 2,048 flags, and 49 are right: about 1 in 40.' },
+    not: { outcome: 'comp_ok', why: 'A claim that holds gives the counts and reads a yes with them. This one reads a yes straight off the accuracy.' } }
+]);
