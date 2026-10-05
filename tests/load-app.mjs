@@ -1,20 +1,29 @@
-// Loads the subject data and det* helpers out of public/index.html for headless checks:
-// extracts the inline <script>, truncates before the INIT marker (so nothing renders),
-// and evaluates it in an isolated context.
+// Loads the subject data and key helpers for headless checks: reads the <script src> list out of
+// public/index.html and evaluates the same files in the same order in one isolated context.
+// The boot file is left out because it renders and needs a browser.
 import { readFile } from 'node:fs/promises';
 import vm from 'node:vm';
 
-const INIT_MARKER = '/* ===================== INIT ===================== */';
+const PUBLIC = new URL('../public/', import.meta.url);
+const BOOT_SCRIPT = 'app/init.js';
 const EXPORTS = ['SUBJECTS', 'detActiveSteps', 'detCandidates', 'detReady', 'nameOptions', 'correctSteps', 'answerOf'];
 
+// Every script the page loads, in load order. The page must not carry inline scripts.
+export async function scriptList() {
+  const html = await readFile(new URL('index.html', PUBLIC), 'utf8');
+  const tags = [...html.matchAll(/<script\b([^>]*)>/g)].map(m => m[1]);
+  const srcs = tags.map(attrs => (attrs.match(/\bsrc="([^"]+)"/) || [])[1]);
+  if (srcs.some(src => !src)) throw new Error('public/index.html has an inline <script>; scripts must be files');
+  if (!srcs.includes(BOOT_SCRIPT)) throw new Error(`public/index.html does not load ${BOOT_SCRIPT}`);
+  return srcs;
+}
+
 export async function loadApp() {
-  const html = await readFile(new URL('../public/index.html', import.meta.url), 'utf8');
-  const scripts = [...html.matchAll(/<script>([\s\S]*?)<\/script>/g)].map(m => m[1]);
-  if (scripts.length !== 1) throw new Error(`Expected exactly one inline <script>, found ${scripts.length}`);
-  const cut = scripts[0].indexOf(INIT_MARKER);
-  if (cut < 0) throw new Error('INIT marker not found in the inline script');
-  const source = scripts[0].slice(0, cut) + `\nglobalThis.__app = { ${EXPORTS.join(', ')} };`;
+  const files = (await scriptList()).filter(src => src !== BOOT_SCRIPT);
+  const parts = await Promise.all(files.map(async src =>
+    `/* ${src} */\n` + await readFile(new URL(src, PUBLIC), 'utf8')));
+  const source = parts.join('\n') + `\nglobalThis.__app = { ${EXPORTS.join(', ')} };`;
   const context = vm.createContext({ console });
-  vm.runInContext(source, context, { filename: 'public/index.html <script>' });
+  vm.runInContext(source, context, { filename: 'public (scripts in load order)' });
   return context.__app;
 }

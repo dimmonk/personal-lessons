@@ -1,11 +1,18 @@
 // Fieldcraft service worker.
-// Navigation is network-first so a new deploy shows up on the next load;
-// the cached copy is only the offline fallback. Static assets are served
-// from cache and refreshed in the background.
-const CACHE = 'fieldcraft-v2';
+// The page, its scripts and its stylesheet are network-first, so a new deploy shows up
+// whole on the next load; the cached copy is only the offline fallback. Fonts and icons
+// are served from cache and refreshed in the background.
+const CACHE = 'fieldcraft-v3';
 const SHELL = [
   './',
   'manifest.json',
+  'app.css',
+  'app/helpers.js',
+  'subjects/ideology/standard0.js', 'subjects/psychology/standard0.js', 'subjects/math/standard0.js',
+  'subjects/stats/standard0.js', 'subjects/scams/standard0.js', 'subjects/wealth/standard0.js',
+  'subjects/civics/standard0.js',
+  'app/state.js', 'app/shell.js', 'app/library.js', 'app/subject.js', 'app/lesson.js', 'app/drills.js',
+  'app/reference.js', 'app/mixed.js', 'app/progress.js', 'app/search.js', 'app/init.js',
   'fonts/fonts.css',
   'fonts/bricolage-grotesque-latin.woff2', 'fonts/literata-latin.woff2', 'fonts/jetbrains-mono-latin.woff2',
   'icons/favicon.svg', 'icons/favicon-32.png', 'icons/apple-touch-icon.png',
@@ -24,14 +31,15 @@ self.addEventListener('activate', event => {
   );
 });
 
-async function networkFirst(request) {
+// cacheKey: the page is always stored under './' whatever URL it was opened at.
+async function networkFirst(request, cacheKey) {
   const cache = await caches.open(CACHE);
   try {
     const response = await fetch(request, { cache: 'no-cache' });
-    if (response.ok) await cache.put('./', response.clone());
+    if (response.ok) await cache.put(cacheKey, response.clone());
     return response;
   } catch (err) {
-    const cached = await cache.match('./');
+    const cached = await cache.match(cacheKey);
     if (cached) return cached;
     throw err;
   }
@@ -49,12 +57,19 @@ async function staleWhileRevalidate(event) {
   return refresh;
 }
 
+const isAppCode = url => /\.(js|css)$/.test(url.pathname) && !url.pathname.includes('/fonts/');
+
 self.addEventListener('fetch', event => {
   const { request } = event;
   if (request.method !== 'GET') return;
-  if (new URL(request.url).origin !== self.location.origin) return;
+  const url = new URL(request.url);
+  if (url.origin !== self.location.origin) return;
   if (request.mode === 'navigate') {
-    event.respondWith(networkFirst(request));
+    event.respondWith(networkFirst(request, './'));
+    return;
+  }
+  if (isAppCode(url)) {
+    event.respondWith(networkFirst(request, request));
     return;
   }
   event.respondWith(staleWhileRevalidate(event));

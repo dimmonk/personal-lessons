@@ -1,6 +1,7 @@
 // Structural checks on every subject's key, specimens, drills and course.
 // Run: npm run test:data
-import { loadApp } from './load-app.mjs';
+import { readFile } from 'node:fs/promises';
+import { loadApp, scriptList } from './load-app.mjs';
 
 // Political Ideologies narrows to a family by design, so it is exempt from "isolates exactly one".
 const FAMILY_KEYS = new Set(['ideology']);
@@ -115,6 +116,17 @@ check(new Set(SUBJECTS.map(s => s.id)).size === SUBJECTS.length, 'duplicate subj
 for (const s of SUBJECTS) {
   checkKeys(s); checkGate(s); checkIsolation(s); checkSpecimens(s); checkQuickDrills(s); checkCourse(s);
 }
+
+// The service worker must precache everything the page loads, or the app breaks offline.
+async function checkOfflineShell() {
+  const sw = await readFile(new URL('../public/sw.js', import.meta.url), 'utf8');
+  const shell = new Set([...(sw.match(/const SHELL = \[([\s\S]*?)\];/) || ['', ''])[1].matchAll(/'([^']+)'/g)].map(m => m[1]));
+  check(shell.size > 0, 'sw.js: SHELL list not found');
+  const html = await readFile(new URL('../public/index.html', import.meta.url), 'utf8');
+  const styles = [...html.matchAll(/<link rel="stylesheet" href="([^"]+)"/g)].map(m => m[1]);
+  for (const path of [...await scriptList(), ...styles]) check(shell.has(path), `sw.js: SHELL is missing ${path}`);
+}
+await checkOfflineShell();
 
 if (failures.length) {
   console.error(`✗ ${failures.length} of ${checks} data checks failed:`);
