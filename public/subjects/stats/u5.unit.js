@@ -6,7 +6,7 @@
 
 FC.unit('stats', 'u5', {
   kind: 'C',
-  rev: 1,
+  rev: 2,
   standard: 1,
   status: 'draft',
   tag: 'Five',
@@ -44,7 +44,7 @@ FC.unit('stats', 'u5', {
       test: 'Does each total hold the same mix of easy and hard ones, or does one hold far more of the hard ones than the other?' },
     { id: 'relrisk~smalln', pair: ['relrisk', 'smalln'], step: 'S1',
       shared: 'Both can come with a headline percentage that sounds enormous: up 300%, up 200%.',
-      rule: 'In {o:smalln} the case shows how few are behind the percentage, and the key gives that part first. In {o:relrisk} the counts are left out, and nothing in the case shows that they are tiny.',
+      rule: 'In {o:smalln} the case shows how few are behind the percentage, and that part comes first. In {o:relrisk} the counts are left out, and nothing in the case shows that they are tiny.',
       test: 'Can you find the two counts behind the percentage? If you can, are they so small that one more or one fewer would change the percentage a long way?' }
   ],
 
@@ -58,7 +58,7 @@ FC.unit('stats', 'u5', {
     { id: 'p3', title: 'Totals that hide a mix',
       cards: ['meet-simpson', 'again-simpson', 'portrait-simpson', 'check-simpson',
               'look-baserate-simpson', 'look-relrisk-simpson', 'look-simpson-compok'] },
-    { id: 'p4', title: 'The key’s question, two whole claims, and the drill',
+    { id: 'p4', title: 'The question, two whole claims, and the drill',
       cards: ['q-compare', 'check-compare', 'worked-savings', 'worked-county'],
       drill: true, close: ['recap-compare', 'transfer-compare', 'plan-compare'] }
   ],
@@ -100,7 +100,8 @@ FC.unit('stats', 'u5', {
 
   build: {
     history: [
-      { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the branch unit for what a figure is set beside (a percentage with no counts, a test’s accuracy read as the chance its yes is right, totals that hide a mix). Not yet deployed, so later edits before the first deploy stay revision 1. Replaces old Unit Four except No comparison group and A fair comparison, drill V4 and old error-drill item 3.' }
+      { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the branch unit for what a figure is set beside (a percentage with no counts, a test’s accuracy read as the chance its yes is right, totals that hide a mix). Not yet deployed, so later edits before the first deploy stay revision 1. Replaces old Unit Four except No comparison group and A fair comparison, drill V4 and old error-drill item 3.' },
+      { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' }
     ],
     wrongIdeas: [
       { card: 'refute-percent', about: 'relrisk',

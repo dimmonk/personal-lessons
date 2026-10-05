@@ -47,7 +47,7 @@ FC.cards('stats', 'u2', [
     ask: '"Was the figure counted the same way every time, and could anyone have pushed it, or looked harder later than earlier?"',
     act: [
       '1. Find how the figure was counted each time: the same form, tool or definition. If it is not said, you do not yet have an answer.',
-      '2. Find whether anyone is paid, ranked or judged on it, and whether more effort went into finding things later. If either, stop: the key’s first question would not have given this answer.',
+      '2. Find whether anyone is paid, ranked or judged on it, and whether more effort went into finding things later. If either, stop: the first question would not have given this answer.',
       '3. If neither, repeat only that it rose or fell, and by how much, from this figure to that one. Leave out "because".'
     ] },
 
@@ -62,8 +62,8 @@ FC.cards('stats', 'u2', [
     instruction: 'Both cases are about the same clinic and the same kind of figure, an average wait. Compare one thing: does the claim give the figure once, or does it follow the figure through time?',
     prompt: { kind: 'which', option: 'H1.change', answer: 'h-wait-change' },
     difference: [
-      'In Case A the clinic drew 400 of last year’s 12,000 visits by lottery and timed each one. The claim gives one figure, 24 minutes, for one year. It says nothing about earlier years or later ones. The key’s answer is {a:H1.group}, and the case is {o:samp_ok}.',
-      'In Case B the clinic timed every visit in two years, the same way, and nobody’s pay depends on the number. The claim gives the figure twice, 31 minutes and 24 minutes, and says it fell. The fall is 31 − 24 = 7 minutes, which is 7 ÷ 31 = 0.23, about 23 in 100. The key’s answer is {a:H1.change}, and the case is {o:meas_ok}.',
+      'In Case A the clinic drew 400 of last year’s 12,000 visits by lottery and timed each one. The claim gives one figure, 24 minutes, for one year. It says nothing about earlier years or later ones. The answer is {a:H1.group}, and the case is {o:samp_ok}.',
+      'In Case B the clinic timed every visit in two years, the same way, and nobody’s pay depends on the number. The claim gives the figure twice, 31 minutes and 24 minutes, and says it fell. The fall is 31 − 24 = 7 minutes, which is 7 ÷ 31 = 0.23, about 23 in 100. The answer is {a:H1.change}, and the case is {o:meas_ok}.',
       'The figure of 24 minutes is the same in both. What separates them is whether the claim gives it once or follows it through time. Notice also what a claim of the first kind cannot say: from Case A alone, you cannot say that waits fell, because Case A gives no earlier figure to fall from.'
     ] }
 ]);

@@ -17,7 +17,7 @@ FC.cases('math', 'u3', [
       A1: ['uses 18 litres of cleaner for every 30 rooms', 'for 45 rooms']
     },
     reason: {
-      M1: 'The problem asks {cue:M1}, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no {t:righttriangle} or copy at another size, so the key’s first answer is {a:M1.unknown}.',
+      M1: 'The problem asks {cue:M1}, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no {t:righttriangle} or copy at another size, so the answer to the first question is {a:M1.unknown}.',
       A1: 'The words {cue:A1} give so much for so many of one thing, and a new amount of one of them, with nothing added on top and no calculation whose result has to be undone. That is {a:A1.rate}.'
     },
     not: {
@@ -73,7 +73,7 @@ FC.cases('math', 'u3', [
       A1: ['packs 9 bottles of water for every 15 walkers', 'It has 27 bottles']
     },
     reason: {
-      M1: 'The problem asks {cue:M1}, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no {t:righttriangle} or copy at another size, so the key’s first answer is {a:M1.unknown}.',
+      M1: 'The problem asks {cue:M1}, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no {t:righttriangle} or copy at another size, so the answer to the first question is {a:M1.unknown}.',
       A1: 'The words {cue:A1} give so much for so many of one thing, and a new amount of one of them, with nothing added on top and no calculation whose result has to be undone. That is {a:A1.rate}.'
     },
     not: {
@@ -129,8 +129,8 @@ FC.cases('math', 'u3', [
       A1: ['uses 18 eggs for every 12 pupils', 'Today 30 pupils are in for lunch']
     },
     reason: {
-      M1: 'The problem asks {cue:M1}, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no {t:righttriangle} or copy at another size, so the key’s first answer is {a:M1.unknown}.',
-      A1: 'The words {cue:A1} give so much for so many, 18 eggs for every 12 pupils, and a new amount of pupils. The 3 cooks and the word “today” are numbers and words that no step uses, and nothing is added on top, so the key’s answer is {a:A1.rate}.'
+      M1: 'The problem asks {cue:M1}, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no {t:righttriangle} or copy at another size, so the answer to the first question is {a:M1.unknown}.',
+      A1: 'The words {cue:A1} give so much for so many, 18 eggs for every 12 pupils, and a new amount of pupils. The 3 cooks and the word “today” are numbers and words that no step uses, and nothing is added on top, so the answer is {a:A1.rate}.'
     },
     not: {
       outcome: 'rearr',
@@ -189,7 +189,7 @@ FC.cases('math', 'u3', [
       A1: ['sold 18 raffle books, some small at €2 each and some large at €5 each', 'took €60']
     },
     reason: {
-      M1: 'The problem asks {cue:M1}, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no {t:righttriangle} or copy at another size, so the key’s first answer is {a:M1.unknown}.',
+      M1: 'The problem asks {cue:M1}, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no {t:righttriangle} or copy at another size, so the answer to the first question is {a:M1.unknown}.',
       A1: 'In {cue:A1}, two numbers are missing, and two facts are stated about the pair: how many there are in all, and what they come to in all. That is {a:A1.totals}.'
     },
     not: {
@@ -257,7 +257,7 @@ FC.cases('math', 'u3', [
       A1: ['carried 22 pots, some weighing 8 kg and some weighing 12 kg', 'the load came to 224 kg']
     },
     reason: {
-      M1: 'The problem asks {cue:M1}, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no {t:righttriangle} or copy at another size, so the key’s first answer is {a:M1.unknown}.',
+      M1: 'The problem asks {cue:M1}, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no {t:righttriangle} or copy at another size, so the answer to the first question is {a:M1.unknown}.',
       A1: 'In {cue:A1}, two numbers are missing, and two facts are stated about the pair: how many there are in all, and what they come to in all. That is {a:A1.totals}.'
     },
     not: {

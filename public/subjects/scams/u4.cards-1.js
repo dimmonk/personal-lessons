@@ -14,12 +14,12 @@ FC.cards('scams', 'u4', [
     ],
     everyday: [
       'You already meet these. A text says that a parcel is waiting and a small fee must be paid. Your builder emails an invoice. Someone you have only ever met online is in trouble. A caller says that you owe tax and that someone will come to your door. A buyer for your old bike pays you too much. Every one of them asks for money, and every one of them can be real or can be a copy.',
-      'In the first unit you learned to ask what a message asks you to do. This unit starts from one of its answers: {a:D1.money}. It is the answer where most is at stake, because money sent by bank transfer, in cash, in gift cards or in crypto is usually very hard to get back. That is why this part of the key has two questions and not one: what the request says the money is for, and what it asks you to do with the money.',
-      'There are nine names to learn here, and one of them is not a scam. The real request to pay has a name of its own because real requests come with the same reasons as the copies: a bill, a fine, a deal. If the key had no place for them, you would have to treat every bill as a scam, and a person who suspects everything soon stops checking anything.'
+      'In the first unit you learned to ask what a message asks you to do. This unit starts from one of its answers: {a:D1.money}. It is the answer where most is at stake, because money sent by bank transfer, in cash, in gift cards or in crypto is usually very hard to get back. That is why there are two questions here and not one: what the request says the money is for, and what it asks you to do with the money.',
+      'There are nine names to learn here, and one of them is not a scam. The real request to pay has a name of its own because real requests come with the same reasons as the copies: a bill, a fine, a deal. If the questions had no place for them, you would have to treat every bill as a scam, and a person who suspects everything soon stops checking anything.'
     ],
     add: [
       'Two things hold all the way through. The first is that what makes a request real is not how it looks. It is whether it holds up when you contact the person or the company yourself, through {t:already}. That is what {t:check} means. The second is that every question in this unit can be answered at the moment the request arrives, from the request itself, before any money leaves your account.',
-      'Many scams show more of themselves afterwards: a withdrawal that is refused, a buyer’s payment that vanishes, a second request for more. That is how many people notice, and by then the money has gone. The key leaves all of that out and asks only about what you can see on the day. Each name is told in the order in which it really happens, with what you can see when the request arrives marked apart from what only shows later.'
+      'Many scams show more of themselves afterwards: a withdrawal that is refused, a buyer’s payment that vanishes, a second request for more. That is how many people notice, and by then the money has gone. The questions leave all of that out and ask only about what you can see on the day. Each name is told in the order in which it really happens, with what you can see when the request arrives marked apart from what only shows later.'
     ],
     map: { branch: 'money' } },
 
@@ -57,9 +57,9 @@ FC.cards('scams', 'u4', [
     body: [
       'Every case in this unit has two layers. The top layer is the story: love, a bill, a parcel, a tax office, a sale. Underneath is what the request says the money is for, and what it asks you to do with the money.',
       'The nine names belong to the layer underneath. Any story can carry any name, and a real request and its copy can use the same story: a builder’s invoice, a parcel fee, a letter from the tax office. A friendly message can be a scam and a frightening one can be real.',
-      'From here on the cases change their stories on purpose, and some of them are real requests. Whether a request is real is not something you read off its story. You find it out by contacting the person or the company yourself, and this unit teaches you when and how. What the key adds is a name for each kind of request, so that you know what to look for and what to do.'
+      'From here on the cases change their stories on purpose, and some of them are real requests. Whether a request is real is not something you read off its story. You find it out by contacting the person or the company yourself, and this unit teaches you when and how. What the questions add is a name for each kind of request, so that you know what to look for and what to do.'
     ],
-    fixed: ['what the request says the money is for, and what it asks you to do with the money, which are what the key asks: {q:M1} and {q:M2}'],
+    fixed: ['what the request says the money is for, and what it asks you to do with the money, which are the questions: {q:M1} and {q:M2}'],
     varies: ['the story and the sender', 'how friendly or frightening it sounds', 'the amount', 'how well it is written', 'whether it is real or a copy'] },
 
   { id: 'portrait-romance', kind: 'portrait', outcome: 'romance',
@@ -70,11 +70,11 @@ FC.cards('scams', 'u4', [
       'A small favour sometimes comes first: a phone top-up, a parcel to forward. Each yes makes the next request easier to say yes to.',
       'Then comes the emergency: a hospital bill, a fine, a ticket home, a blocked card, a customs charge. It is always far away, always urgent, and always something only you can fix, because the person says they cannot reach anyone else.',
       'The money is to go by a way that is hard to undo, and often you are asked to keep it private, because your family would “not understand”.',
-      'Which of this can you see when the request arrives? The months of messages, the person you have never met and the emergency are all in front of you on the day. The next emergency, which follows as soon as you have paid, only shows afterwards. The key does not use it, because by then the money has gone.'
+      'Which of this can you see when the request arrives? The months of messages, the person you have never met and the emergency are all in front of you on the day. The next emergency, which follows as soon as you have paid, only shows afterwards. The questions do not use it, because by then the money has gone.'
     ],
     not: [
       'A long friendship that began online is not this name, and neither is a couple who met on a site and have since met in person. This name needs a request for money, for trouble that someone you have never met says is theirs.',
-      'A friend or partner whom you know in person, or through people you both know, is outside the key. You can ask the people around them, which is the thing you cannot do for a voice in messages.'
+      'A friend or partner whom you know in person, or through people you both know, is outside these questions. You can ask the people around them, which is the thing you cannot do for a voice in messages.'
     ],
     wild: ['"I would not ask if I had anyone else."', '"The hospital will not treat her until it is paid."', '"My card is blocked and I am stuck at the airport."', '"Please do not tell your family. They would not understand."'],
     self: 'You may meet it on a dating site, but also on social media, in a game’s chat or in a forum for a hobby. It can find people at a vulnerable time, such as after a bereavement or a divorce, when a daily message matters a great deal.',

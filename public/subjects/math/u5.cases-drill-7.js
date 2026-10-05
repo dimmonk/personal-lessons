@@ -21,8 +21,8 @@ FC.cases('math', 'u5', [
       ]
     },
     reason: {
-      M1: 'The words {cue:M1} ask how likely it is that something happens, a chance and not a count. Nothing in it follows an amount as time passes, hides a number that a calculation must fit, or splits whole numbers into groups, and there is no shape to measure. What it asks for is a count of the results, or the chance of something, so the key’s first answer is {a:M1.chance}.',
-      C1: 'The words {cue:C1} give the chance of red on each of 3 separate spins still to come and ask how likely it is that red comes up at least once; the 8 spins that are over do not change it, so the key’s answer is {a:C1.atleast}.'
+      M1: 'The words {cue:M1} ask how likely it is that something happens, a chance and not a count. Nothing in it follows an amount as time passes, hides a number that a calculation must fit, or splits whole numbers into groups, and there is no shape to measure. What it asks for is a count of the results, or the chance of something, so the answer to the first question is {a:M1.chance}.',
+      C1: 'The words {cue:C1} give the chance of red on each of 3 separate spins still to come and ask how likely it is that red comes up at least once; the 8 spins that are over do not change it, so the answer is {a:C1.atleast}.'
     },
     not: {
       outcome: 'multprin',
@@ -78,8 +78,8 @@ FC.cases('math', 'u5', [
       ]
     },
     reason: {
-      M1: 'The words {cue:M1} ask how likely it is that something happens, a chance and not a count. The problem does not change as time passes, has no hidden number for a calculation to fit, does not share whole numbers out in groups and has no shape. It is about the number of ways that something can come out, or its chance, so the key’s first answer is {a:M1.chance}.',
-      C1: 'The words {cue:C1} give the chance that each of 3 separate sensors picks up a fire and ask how likely it is that at least one does, so the key’s answer is {a:C1.atleast}.'
+      M1: 'The words {cue:M1} ask how likely it is that something happens, a chance and not a count. The problem does not change as time passes, has no hidden number for a calculation to fit, does not share whole numbers out in groups and has no shape. It is about the number of ways that something can come out, or its chance, so the answer to the first question is {a:M1.chance}.',
+      C1: 'The words {cue:C1} give the chance that each of 3 separate sensors picks up a fire and ask how likely it is that at least one does, so the answer is {a:C1.atleast}.'
     },
     not: {
       outcome: 'baserate',
@@ -135,8 +135,8 @@ FC.cases('math', 'u5', [
       ]
     },
     reason: {
-      M1: 'The words {cue:M1} ask how likely it is that a result is right, a chance and not a count. Nothing here is followed through time, no number is hidden for a calculation to fit, no whole number is split into groups, and no shape is measured. The problem asks for the number of different results, or for a chance, which is the key’s first answer {a:M1.chance}.',
-      C1: 'The words {cue:C1} give a test that has shown a result, how common the thing is, and how often the test is right and wrong, and ask how likely it is that the result is right, so the key’s answer is {a:C1.test}.'
+      M1: 'The words {cue:M1} ask how likely it is that a result is right, a chance and not a count. Nothing here is followed through time, no number is hidden for a calculation to fit, no whole number is split into groups, and no shape is measured. The problem asks for the number of different results, or for a chance, which is the answer to the first question {a:M1.chance}.',
+      C1: 'The words {cue:C1} give a test that has shown a result, how common the thing is, and how often the test is right and wrong, and ask how likely it is that the result is right, so the answer is {a:C1.test}.'
     },
     not: {
       outcome: 'complement',
@@ -195,8 +195,8 @@ FC.cases('math', 'u5', [
       ]
     },
     reason: {
-      M1: 'The words {cue:M1} ask how likely it is that a result is right, a chance and not a count. Nothing in it follows an amount as time passes, hides a number that a calculation must fit, or splits whole numbers into groups, and there is no shape to measure. What it asks for is a count of the results, or the chance of something, so the key’s first answer is {a:M1.chance}.',
-      C1: 'The words {cue:C1} give a scan that has flagged a file, how common harmful files are, and how often the scan is right and wrong, and ask how likely it is that the flag is right, so the key’s answer is {a:C1.test}.'
+      M1: 'The words {cue:M1} ask how likely it is that a result is right, a chance and not a count. Nothing in it follows an amount as time passes, hides a number that a calculation must fit, or splits whole numbers into groups, and there is no shape to measure. What it asks for is a count of the results, or the chance of something, so the answer to the first question is {a:M1.chance}.',
+      C1: 'The words {cue:C1} give a scan that has flagged a file, how common harmful files are, and how often the scan is right and wrong, and ask how likely it is that the flag is right, so the answer is {a:C1.test}.'
     },
     not: {
       outcome: 'complement',

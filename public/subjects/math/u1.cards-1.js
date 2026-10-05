@@ -17,8 +17,8 @@ FC.cards('math', 'u1', [
       'All five have numbers, and all five ask you to work out a number. But they ask for different things, and each one is worked out with different steps. If you use the steps for the wrong kind of problem, you still get a number, and nothing in that number tells you that it is wrong. So before any sum there is an earlier question: what does this problem ask me to work out? This unit teaches that question.'
     ],
     add: [
-      'Three words are used all the way through, so here they are once. A problem is a short account of a situation with numbers in it: the sort of thing a friend tells you, or you read on a bill. (The app’s own labels call a problem a case, as in Case A and Case B.) The key is a short list of questions that you put to a problem, always in the same order. Each answer narrows down what the problem can be. A procedure is the set of steps that solves one kind of problem.',
-      'This unit teaches the first question of the key and nothing after it. That question sorts a problem into one of five kinds, and in this unit the kind is the name. Each kind is wide. Inside it there are finer names, each with its own procedure, and those are taught later, one kind at a time. Nothing in this unit asks you to solve a problem, and no answer here is ever marked on a number that you work out. You only say what the problem asks. Everything else in the course starts from the answer to this first question.'
+      'Two words are used all the way through, so here they are once. A problem is a short account of a situation with numbers in it: the sort of thing a friend tells you, or you read on a bill. (The app’s own labels call a problem a case, as in Case A and Case B.) A procedure is the set of steps that solves one kind of problem. Alongside them, every problem is put a short list of questions, always in the same order, and each answer narrows down what the problem can be.',
+      'This unit teaches the first question and nothing after it. That question sorts a problem into one of five kinds, and in this unit the kind is the name. Each kind is wide. Inside it there are finer names, each with its own procedure, and those are taught later, one kind at a time. Nothing in this unit asks you to solve a problem, and no answer here is ever marked on a number that you work out. You only say what the problem asks. Everything else in the course starts from the answer to this first question.'
     ],
     map: { branch: 'gate' } },
 
@@ -39,7 +39,7 @@ FC.cards('math', 'u1', [
       'Notice what the kind does not depend on. It does not depend on the story: chairs could be tiles, coins or days. It does not depend on how big the number is. And it does not depend on whether the sum looks easy or hard. You decide the kind from what the problem asks, and not from the numbers.'
     ],
     feature: { step: 'M1', option: 'whole' },
-    name: 'The key’s answer, and so the name of this kind of problem, is {a:M1.whole}. “Whole numbers” are the counting numbers, such as 1, 2 and 72: no halves and no decimals. The word to hold on to is “split”. Wherever a problem asks how a count breaks into equal groups, what is left when it will not break evenly, or when repeating things next meet, it is this kind.' },
+    name: 'The answer, and so the name of this kind of problem, is {a:M1.whole}. “Whole numbers” are the counting numbers, such as 1, 2 and 72: no halves and no decimals. The word to hold on to is “split”. Wherever a problem asks how a count breaks into equal groups, what is left when it will not break evenly, or when repeating things next meet, it is this kind.' },
 
   { id: 'again-whole', kind: 'again', family: 'whole',
     link: 'The chairs gave you what to point to: {needs:whole}. Here is a second problem with a completely different story, and this time the question is about two things that repeat.',
@@ -48,7 +48,7 @@ FC.cards('math', 'u1', [
     prompt: { kind: 'phrase', answer: 'until they next flash together' },
     shared: [
       'Both problems are made of whole numbers and a question about how those numbers fit together. The caretaker splits 72 chairs into equal rows. The two lights each repeat on their own, one every 15 seconds and one every 20 seconds, and the question is when the two repeats next land on the same second. In both, nothing grows, nothing is measured on a shape, and nothing is a chance.',
-      'The two stories share nothing else. One is about splitting and the other about repeating, and the key does not separate them at this question: both are the first kind. That is what {a:M1.whole} names, and it is why one name covers questions that look so different.'
+      'The two stories share nothing else. One is about splitting and the other about repeating, and the first question does not separate them: both are the first kind. That is what {a:M1.whole} names, and it is why one name covers questions that look so different.'
     ] },
 
   { id: 'lens-kind', kind: 'lens',
@@ -60,7 +60,7 @@ FC.cards('math', 'u1', [
       'From here on the problems change their stories on purpose. Sometimes two problems will have the same people, the same place and even the same numbers, and differ only in what they ask. When that happens, the shared story is there to show you that it decides nothing.',
       'Two more things change on purpose: the words of the question, and how many numbers there are. “How many”, “how long” and “how much” turn up in all five kinds. The words do not decide it. What decides it is what you are being asked to work out.'
     ],
-    fixed: ['what the problem asks you to work out, which is what the key asks about: {q:M1}'],
+    fixed: ['what the problem asks you to work out, which is what the first question asks about: {q:M1}'],
     varies: ['the topic', 'the people', 'the size of the numbers', 'the words of the question (“how many”, “how long”, “how much”)', 'how many numbers the problem gives'] },
 
   { id: 'portrait-whole', kind: 'portrait', family: 'whole',

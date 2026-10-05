@@ -98,7 +98,7 @@ FC.cases('scams', 'u5', [
     segments: [
       { text: "Gabriela's phone rings" },
       { text: "A man says that he is from Halbrook Bank's fraud team, and he uses her name", note: 'This is what the caller says about himself. He may be telling the truth or not, and nothing in the call shows which. It is not the words that settle the question.' },
-      { text: 'We have seen a strange payment on your account. First I must be sure that I am speaking to you', note: 'This is the reason he gives. The key does not take a reason on trust, and the reason being a good one is why the case looks real.' },
+      { text: 'We have seen a strange payment on your account. First I must be sure that I am speaking to you', note: 'This is the reason he gives. The questions do not take a reason on trust, and the reason being a good one is why the case looks real.' },
       { text: 'Please confirm your date of birth and your home address', note: 'That is the request. The same words come from a real bank and from a copy, so they cannot be what settles it.' }
     ] }
 ]);

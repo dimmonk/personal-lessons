@@ -55,7 +55,7 @@ FC.cases('civics', 'u1', [
   { id: 'g-claim-signed', use: 'claim',
     text: '"The President signed the new school-meals law last week, so it is the President’s decision."',
     ask: { type: 'option', step: 'D1', answer: 'congress' },
-    fault: 'The claim counts the signature as the decision. A signature on a law that the House and the Senate have already passed does not change what the law says: the votes had settled that. The key does not count a signature as a decision of its own.',
+    fault: 'The claim counts the signature as the decision. A signature on a law that the House and the Senate have already passed does not change what the law says: the votes had settled that. So a signature is not a decision of its own.',
     corrected: 'The House and the Senate passed the school-meals law, and the President signed it. The last decision is the lawmakers’ vote, so the answer is {a:D1.congress}. The President would be the answer only if the case ended with a refusal to sign.' },
 
   { id: 'g-claim-first', use: 'claim',

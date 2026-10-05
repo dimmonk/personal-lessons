@@ -11,7 +11,7 @@ FC.cases('scams', 'u5', [
               F1: 'Someone Karl knows only through messages asks about his home and when it is empty: {cue:F1}. No paper or number is asked for.',
               F2: 'Karl began nothing with her. A stranger wrote to him first: {cue:F2}. That the app is local does not make her someone he knows.' },
     not: { outcome: 'realdetails', why: 'Her questions sound like small talk between neighbours. But he has never met her, and nothing he began needs the answers.' },
-    wouldChange: 'If Karl had met her at a street meeting and had her number from a neighbour, he would know her in another way, and the key would not apply.' },
+    wouldChange: 'If Karl had met her at a street meeting and had her number from a neighbour, he would know her in another way, and these questions would not apply.' },
 
   { id: 'u5-x-backpain', use: 'return', tier: 'varied', setting: 'health', topic: 'a stranger in an online group for back pain',
     text: "Roz has joined an online group for people with back pain. A member she has never met sends her a private message: 'I have the same problem. Do you work? Do you live alone?' Over the next fortnight he asks about her job, her home and how much help she has. He has not asked her for anything.",

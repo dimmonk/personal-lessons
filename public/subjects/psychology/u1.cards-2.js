@@ -18,10 +18,10 @@ FC.cards('psychology', 'u1', [
     explain: [
       'This case is not made of one person’s reasons. Carla is not weighing a choice, and she is not explaining to anyone what she thinks. What she says is pointed at Ben: first at what the two of them agreed, then at what he is like. And the case shows what that does to him. He arrived with a fair question and he leaves doubting his own calendar.',
       'That is what this second kind is made of. There are two people. One of them says or does something to the other. And what is said or done is about that other person, or about something that has passed between the two. To look at a case like this you have to keep both people in view. Try the test from the first kind: take Ben out. There is nothing left to look at.',
-      'As with the first kind, the kind is not a verdict. Most of what people say and do to each other is fair: a friend who cancels and apologises, a colleague who says "I remember it differently", a manager who gives praise. All of those are this kind too. Whether what Carla said was a fair defence or something worse is a separate question. The key asks it later, and this unit does not teach it. Here you are only saying what there is to look at: what she said to him, and where it left him.'
+      'As with the first kind, the kind is not a verdict. Most of what people say and do to each other is fair: a friend who cancels and apologises, a colleague who says "I remember it differently", a manager who gives praise. All of those are this kind too. Whether what Carla said was a fair defence or something worse is a separate question. A later question asks it, and this unit does not teach it. Here you are only saying what there is to look at: what she said to him, and where it left him.'
     ],
     feature: { step: 'D1', option: 'tactic' },
-    name: 'The key’s answer, and so the name of the kind, is {a:D1.tactic}. "Another" means another person: the one it is said or done to. This unit calls that person the other person. "Does" covers saying as well as doing, because words said to someone are something done to them.' },
+    name: 'The answer, and so the name of the kind, is {a:D1.tactic}. "Another" means another person: the one it is said or done to. This unit calls that person the other person. "Does" covers saying as well as doing, because words said to someone are something done to them.' },
 
   { id: 'again-tactic', kind: 'again', family: 'tactic',
     link: 'The deadline gave you what to point to: {needs:tactic}. Here it is again, a long way from any office, and this time what is said sounds like love, not like an attack.',
@@ -62,8 +62,8 @@ FC.cards('psychology', 'u1', [
     instruction: 'Both cases are about Dev and the birthday he forgot. Compare one thing: who his words are about, and who they are said to.',
     prompt: { kind: 'which', option: 'D1.tactic', answer: 'g-birthday-wife' },
     difference: [
-      'In Case A Dev is explaining something he did, and the explanation is about Dev: his month at work. His brother is only listening. Take the brother away and the case is unchanged: a man giving a reason for his own mistake. The key’s answer is {a:D1.reasoning}.',
-      'In Case B the same man, about the same forgotten birthday, says something to his wife about his wife: that she is too sensitive, and what she "always" does. The case shows where it leaves her: apologising for having been hurt. Take her away and nothing is left. The key’s answer is {a:D1.tactic}.',
+      'In Case A Dev is explaining something he did, and the explanation is about Dev: his month at work. His brother is only listening. Take the brother away and the case is unchanged: a man giving a reason for his own mistake. The answer is {a:D1.reasoning}.',
+      'In Case B the same man, about the same forgotten birthday, says something to his wife about his wife: that she is too sensitive, and what she "always" does. The case shows where it leaves her: apologising for having been hurt. Take her away and nothing is left. The answer is {a:D1.tactic}.',
       'So the same person, about the same forgotten birthday, can give you two different kinds of case. What separates them is not how bad it sounds. It is who the words are about and who they are said to.'
     ] },
 
@@ -71,15 +71,15 @@ FC.cards('psychology', 'u1', [
     h: 'A reason that is about the other person',
     link: 'The last card kept the two kinds tidy: in Case A Dev’s words were about himself, and in Case B they were about his wife. Real cases are often less tidy. A person can give a reason for something they did, and make that reason out of the person they are talking to.',
     case: 'g-shouting',
-    setup: 'Marta gives a reason for something she did: she shouted, and here is why. A reason for something the person did is what you point to for {a:D1.reasoning}. Yet the key’s answer for this case is {a:D1.tactic}.',
+    setup: 'Marta gives a reason for something she did: she shouted, and here is why. A reason for something the person did is what you point to for {a:D1.reasoning}. Yet the answer for this case is {a:D1.tactic}.',
     prompt: { kind: 'phrase', answer: 'because you never listen' },
     because: [
       'Marta’s reason is not about Marta. It is about Kofi, and she says it to him. A reason for your own act that is made out of the other person, and handed to them, does two jobs at once. It explains you, and it tells them what they are like.',
       'The case shows the second job being done. Kofi does not spend the evening thinking about the shouting. He spends it asking whether he ever listens. The question on the table has changed from what Marta did to what Kofi is like.',
-      'So this case shows both kinds at once: a person’s reason for her own act, and something said to another person about him. When a case shows both, the key has to choose one answer, and it chooses the second kind.'
+      'So this case shows both kinds at once: a person’s reason for her own act, and something said to another person about him. When a case shows both, the answer has to be one, and it is the second kind.'
     ],
     take: [
-      'It is worth knowing that this is the key’s decision. In life, explaining yourself and blaming someone else run into each other all the time, and nobody can draw a sharp line between them. The key gives each case one answer, so that two people using it reach the same one and can each say why.',
-      'It chooses this way round for a reason. The key’s later question about {a:D1.tactic} looks at what was said or done to the other person, and that is what Kofi would want someone to look at. If the case were given the answer {a:D1.reasoning}, Kofi would be left out of what the key looks at.'
+      'It is worth knowing that this is decided in advance. In life, explaining yourself and blaming someone else run into each other all the time, and nobody can draw a sharp line between them. Each case gets one answer, so that two people using these questions reach the same one and can each say why.',
+      'It chooses this way round for a reason. The later question about {a:D1.tactic} looks at what was said or done to the other person, and that is what Kofi would want someone to look at. If the case were given the answer {a:D1.reasoning}, Kofi would be left out of what the questions look at.'
     ] }
 ]);

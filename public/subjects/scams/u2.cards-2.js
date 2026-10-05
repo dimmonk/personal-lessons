@@ -16,7 +16,7 @@ FC.cards('scams', 'u2', [
     explain: [
       'What you are shown is a file that came in a message, and a reason to open it that the sender made up. That is all a request of this name is made of: a file or a link in an email, a text or a chat, and a story about why you should open or run it.',
       'The story is chosen to suit whoever gets it. It can be an unpaid invoice, a wage slip, a parcel note, a job test, a photo, a voicemail, or a message that something on your device needs updating. The story makes no difference to the answer. What decides it is that the file or the link came to you, and that nobody is with you.',
-      'The harm comes from what the file does once it runs. It can copy passwords as you type them, watch your computer, lock your files, or give someone else control of the device. And success looks like nothing happening: a blank window flickers and closes, or an ordinary-looking document opens. So you cannot count on noticing that something is wrong afterwards, and that is why the key asks about the one thing you can see at the start.',
+      'The harm comes from what the file does once it runs. It can copy passwords as you type them, watch your computer, lock your files, or give someone else control of the device. And success looks like nothing happening: a blank window flickers and closes, or an ordinary-looking document opens. So you cannot count on noticing that something is wrong afterwards, and that is why the question is about the one thing you can see at the start.',
       'Set Sam beside Priya. When Sam opens the file, his computer will show the same box that Priya saw, asking whether to allow changes, and it will tell him no more than it told her. What differs is where each came from: Priya went to the maker, and the file came to Sam.'
     ],
     feature: { step: 'I1', option: 'file' },
@@ -66,8 +66,8 @@ FC.cards('scams', 'u2', [
     instruction: 'Both cases are about Lena and the same photo editor, and both end in the same box. Compare one thing: how the installer reached her.',
     prompt: { kind: 'which', option: 'I1.file', answer: 'dv-lk-photo-mail' },
     difference: [
-      'In Case A Lena decided that she wanted the newest version, and she typed the maker’s address herself. The installer was hers to fetch, nobody had contacted her, and the box is only what every installation shows. The key’s answer is {a:I1.own}, and the case is {o:realinstall}.',
-      'In Case B nobody has asked her for anything until an email arrives from an address she does not know, saying that her licence needs updating, with an installer attached. The installer came to her. The key’s answer is {a:I1.file}, and the case is {o:malware}.',
+      'In Case A Lena decided that she wanted the newest version, and she typed the maker’s address herself. The installer was hers to fetch, nobody had contacted her, and the box is only what every installation shows. The answer is {a:I1.own}, and the case is {o:realinstall}.',
+      'In Case B nobody has asked her for anything until an email arrives from an address she does not know, saying that her licence needs updating, with an installer attached. The installer came to her. The answer is {a:I1.file}, and the case is {o:malware}.',
       'The two cases are about the same program, from the same company, and they end in the same box. The only difference is who started it and where the installer came from, and Lena can see that difference at the moment she is asked, before she presses anything.'
     ] }
 ]);

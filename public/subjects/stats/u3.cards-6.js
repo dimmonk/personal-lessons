@@ -6,7 +6,7 @@ FC.cards('stats', 'u3', [
 
   { id: 'recap', kind: 'recap',
     h: 'What to carry away',
-    link: 'You have now run the key on your own. This card puts the unit in one place, in the key’s words.',
+    link: 'You have now run the questions on your own. This card puts the unit in one place, in the words used all the way through.',
     carry: [
       'Before any name, find out how the people or things got into the figure, and point to the words that show it. If you cannot point, you do not have an answer yet.',
       'A figure can be added up correctly, and be exact for the people in it, and still say little about the group the claim speaks for. The sum is not the claim.',

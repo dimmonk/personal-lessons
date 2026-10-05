@@ -17,13 +17,13 @@ FC.cards('wealth', 'u1', [
     explain: [
       'Set this case against the four answers you have met. Nothing comes out of Aisha’s money every year that the case mentions. No one thing is most of it, and no claim or loan is in the story. She does not need the pension for thirty years, so a fall in prices does not catch her out: she has years in which prices can come back. And the case is not about a death, an illness or a gift.',
       'What is left is money being kept, with nothing that could lose it. That is a fifth kind of case, and a very ordinary one: a person saving steadily, with nothing in the account that raises a problem.',
-      'A key with no place for it would force every case into one of the four. A reader of that key would find a problem in every account of money, and would recommend a cure for it. Cures cost money and effort, and a cure for a problem the case does not have costs both for nothing. So the key has an answer for this case, so that "there is nothing here to name" is something you can say, and say with a reason.',
+      'Questions with no place for it would force every case into one of the four. A reader of those questions would find a problem in every account of money, and would recommend a cure for it. Cures cost money and effort, and a cure for a problem the case does not have costs both for nothing. So there is an answer for this case, so that "there is nothing here to name" is something you can say, and say with a reason.',
       'The answer does not promise that nothing could ever go wrong. It says that this case raises none of the four. The test is the words in the case: can you point to words that raise one of the four? If you can, give that answer. If you cannot, do not invent one.'
     ],
     feature: { step: 'D1', option: 'none' },
     name: [
-      'The key’s answer, and the name of this kind of case, is {a:D1.none}. It is not a statement that the money is safe for ever. It says that this case raises nothing that could lose it.',
-      'After this answer the key asks nothing more and gives no finer name. That is a result in its own right: you looked, and there was nothing to name. In this subject, that result means leaving the money alone.'
+      'The answer, and the name of this kind of case, is {a:D1.none}. It is not a statement that the money is safe for ever. It says that this case raises nothing that could lose it.',
+      'After this answer nothing more is asked and there is no finer name. That is a result in its own right: you looked, and there was nothing to name. In this subject, that result means leaving the money alone.'
     ] },
 
   { id: 'again-none', kind: 'again', family: 'none',
@@ -66,9 +66,9 @@ FC.cards('wealth', 'u1', [
     idea: '"To keep your money safe you need offshore structures and a private bank. That is what the wealthy do."',
     verdict: 'This is wrong.',
     right: [
-      'The key puts its question first, and the question is not "which structure?". It is {q:D1} There are five answers. Four of them lead on to a further question, and from there to a cure for that particular way of losing money. The fifth, {a:D1.none}, leads to no cure at all.',
+      'The question to ask first is not "which structure?". It is {q:D1} There are five answers. Four of them lead on to a further question, and from there to a cure for that particular way of losing money. The fifth, {a:D1.none}, leads to no cure at all.',
       'A structure of that kind is a cure, and a cure is chosen after you know what it is for. Without an answer to the first question, someone who says "you need this" is offering a cure before a diagnosis. A structure that costs money to set up and money every year to run is also a charge, which is exactly the kind of thing the first answer asks about.',
-      'So the way to meet an idea like this is to ask what could be lost that the structure would answer, and to ask for it in numbers: how large, how likely, and what the structure costs each year. If no answer can be found in the words of your own case, then in the key’s words the case is {a:D1.none}, and what you can point to is this: {needs:none}.'
+      'So the way to meet an idea like this is to ask what could be lost that the structure would answer, and to ask for it in numbers: how large, how likely, and what the structure costs each year. If no answer can be found in the words of your own case, then the case is {a:D1.none}, and what you can point to is this: {needs:none}.'
     ],
     testedBy: ['c-offshore'] },
 
@@ -79,8 +79,8 @@ FC.cards('wealth', 'u1', [
     instruction: 'Both cases are about Ines, who is 38, in a year when prices have fallen by a fifth. Compare one thing: when is the money needed, and is anything waiting for it?',
     prompt: { kind: 'which', option: 'D1.none', answer: 'w-la-quiet' },
     difference: [
-      'In Case A prices have fallen by 20%, and Ines has noticed. But she will not need the £30,000 for twenty-five years, and she is selling nothing. A fall only does harm if something has to be sold or paid on the day, and nothing does. There are twenty-five years for prices to come back. The key’s answer is {a:D1.none}.',
-      'In Case B prices have fallen by the same fifth, but Ines needs £30,000 on 1 June, four months from now, and the money is in funds that hold shares. After the fall her £30,000 is £24,000, which is £6,000 short of the deposit, and four months is not long for prices to recover. The key’s answer is {a:D1.timing}.',
+      'In Case A prices have fallen by 20%, and Ines has noticed. But she will not need the £30,000 for twenty-five years, and she is selling nothing. A fall only does harm if something has to be sold or paid on the day, and nothing does. There are twenty-five years for prices to come back. The answer is {a:D1.none}.',
+      'In Case B prices have fallen by the same fifth, but Ines needs £30,000 on 1 June, four months from now, and the money is in funds that hold shares. After the fall her £30,000 is £24,000, which is £6,000 short of the deposit, and four months is not long for prices to recover. The answer is {a:D1.timing}.',
       'The fall is the same in both cases, and so is the person. What separates them is whether money is needed soon, and so whether the fall catches anything. A fall that catches nothing raises nothing.'
     ] },
 
@@ -90,9 +90,9 @@ FC.cards('wealth', 'u1', [
     instruction: 'Both cases are about Mei, who is 45 and pays into a pension. Compare one thing: does the case say anything about something that comes out of the money?',
     prompt: { kind: 'which', option: 'D1.erosion', answer: 'w-la-statement' },
     difference: [
-      'In Case A the case says nothing about a charge, a tax bill or a sum taken out. It tells you only that Mei has a pension, that she will not touch it until she is 67, and that she files her statement unread. The statement may well contain a charge, but the case does not tell you so, and there are no words to point to. The key’s answer is {a:D1.none}.',
-      'In Case B the same woman reads the same statement and finds that the fund takes 1.6% of her money every year. Now there are words to point to, and they are about something that comes out every year. The key’s answer is {a:D1.erosion}.',
-      'Nothing about Mei or her pension is different. What is different is what the case says. The key answers for the case in front of it, and it does not invent what an unread statement might hold.'
+      'In Case A the case says nothing about a charge, a tax bill or a sum taken out. It tells you only that Mei has a pension, that she will not touch it until she is 67, and that she files her statement unread. The statement may well contain a charge, but the case does not tell you so, and there are no words to point to. The answer is {a:D1.none}.',
+      'In Case B the same woman reads the same statement and finds that the fund takes 1.6% of her money every year. Now there are words to point to, and they are about something that comes out every year. The answer is {a:D1.erosion}.',
+      'Nothing about Mei or her pension is different. What is different is what the case says. The answer is for the case in front of you, and it does not invent what an unread statement might hold.'
     ] },
 
   { id: 'look-none-handover', kind: 'lookalike', ledger: 'none~handover',
@@ -101,8 +101,8 @@ FC.cards('wealth', 'u1', [
     instruction: 'Both cases are about Priya, who is 40. Compare one thing: does the case say anything about what happens to her money if she dies, or if she cannot act?',
     prompt: { kind: 'which', option: 'D1.handover', answer: 'w-la-inorder' },
     difference: [
-      'In Case A everything is in order: the wills and the forms are up to date, and everything they own is far below the tax-free limit. There is nothing wrong with it. But the case is about who gets the money when Priya dies, and that is what the key’s question asks about, so the key’s answer is {a:D1.handover}. A case in which a handover has been dealt with is still a case about the handover.',
-      'In Case B nothing is said about a death, a will, a form or an illness. The case shows money being put away for decades and nothing else. The key’s answer is {a:D1.none}.',
+      'In Case A everything is in order: the wills and the forms are up to date, and everything they own is far below the tax-free limit. There is nothing wrong with it. But the case is about who gets the money when Priya dies, and that is what the question asks about, so the answer is {a:D1.handover}. A case in which a handover has been dealt with is still a case about the handover.',
+      'In Case B nothing is said about a death, a will, a form or an illness. The case shows money being put away for decades and nothing else. The answer is {a:D1.none}.',
       'This is the place where a sound case is most easily mistaken for the fifth answer. Being in good order does not move a case to {a:D1.none}. That answer is for a case that raises none of the four. A case that raises one, and shows it already looked after, keeps the answer for the one it raises.'
     ] },
 
@@ -112,8 +112,8 @@ FC.cards('wealth', 'u1', [
     instruction: 'Both cases are about Owen, who is 50 and has £500,000. Compare one thing: is one company, property, business, claim or loan most of what the case shows, or is the money spread, with nothing that could reach everything?',
     prompt: { kind: 'which', option: 'D1.shock', answer: 'w-la-flat' },
     difference: [
-      'In Case A the money is in three places, none of them more than 45%: savings, a pension held in funds spread over thousands of companies, and the flat he lives in. No loan or claim is in the case. If any one of them fell, the other two would still be there. The key’s answer is {a:D1.none}.',
-      'In Case B £400,000 of his £500,000 is one flat. If that flat lost a quarter of its value, he would lose £100,000 on the flat alone, a fifth of everything he has, and nothing else he owns could take its place. The key’s answer is {a:D1.shock}.',
+      'In Case A the money is in three places, none of them more than 45%: savings, a pension held in funds spread over thousands of companies, and the flat he lives in. No loan or claim is in the case. If any one of them fell, the other two would still be there. The answer is {a:D1.none}.',
+      'In Case B £400,000 of his £500,000 is one flat. If that flat lost a quarter of its value, he would lose £100,000 on the flat alone, a fifth of everything he has, and nothing else he owns could take its place. The answer is {a:D1.shock}.',
       'Both cases are about a man with property and about £500,000. What separates them is whether one thing is most of it. Spread out, the money is a case with nothing to name. Concentrated in one place, it is not.'
     ] }
 ]);

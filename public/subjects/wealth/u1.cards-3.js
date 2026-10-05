@@ -32,7 +32,7 @@ FC.cards('wealth', 'u1', [
     ],
     feature: { step: 'D1', option: 'shock' },
     name: [
-      'The key’s answer, and the name of this kind of case, is {a:D1.shock}. "Depends on" means that if that one thing fails, the money fails with it.',
+      'The answer, and the name of this kind of case, is {a:D1.shock}. "Depends on" means that if that one thing fails, the money fails with it.',
       'The name does not say that the thing will fail. It says that if it did, most of the money would go with it, and the case is about that.'
     ] },
 
@@ -76,8 +76,8 @@ FC.cards('wealth', 'u1', [
     instruction: 'Both cases are about Lars, who has £500,000. Compare one thing: does one thing do the damage, whatever the rest of the market does, or is it a fall across the whole market, on a day when money is needed?',
     prompt: { kind: 'which', option: 'D1.shock', answer: 'w-la-one' },
     difference: [
-      'In Case A most of Lars’s money, £350,000, is in one company, and one event hit that company: a rival won its biggest contract. Every other price stayed where it was, and Lars still lost 40% of £350,000, which is £140,000. The key’s answer is {a:D1.shock}.',
-      'In Case B nothing is concentrated: his money is in funds that hold thousands of companies, and no single one could hurt him much. What hurts is that the whole market has fallen by 25% and he must pay £120,000 on 1 March. The £120,000 he would pay it from is now worth £90,000, a gap of £30,000. The key’s answer is {a:D1.timing}.',
+      'In Case A most of Lars’s money, £350,000, is in one company, and one event hit that company: a rival won its biggest contract. Every other price stayed where it was, and Lars still lost 40% of £350,000, which is £140,000. The answer is {a:D1.shock}.',
+      'In Case B nothing is concentrated: his money is in funds that hold thousands of companies, and no single one could hurt him much. What hurts is that the whole market has fallen by 25% and he must pay £120,000 on 1 March. The £120,000 he would pay it from is now worth £90,000, a gap of £30,000. The answer is {a:D1.timing}.',
       'The same man with the same £500,000 loses a large amount in both. In Case A it is through one company, whatever the market does. In Case B it is through the whole market, on a day the money is needed.'
     ] },
 
@@ -86,15 +86,15 @@ FC.cards('wealth', 'u1', [
     h: 'Bills paid in a fall, from one company',
     link: 'The last card showed the two answers apart. In real cases they sometimes arrive together: money needed every month, from something whose price has fallen, and nearly all of it in one place.',
     case: 'w-exc-retired',
-    setup: 'Marguerite pays her living costs by selling investments, with no cash set aside, in a year when their price has fallen. That is what a case about {a:D1.timing} looks like. Yet the key’s answer for this case is {a:D1.shock}.',
+    setup: 'Marguerite pays her living costs by selling investments, with no cash set aside, in a year when their price has fallen. That is what a case about {a:D1.timing} looks like. Yet the answer for this case is {a:D1.shock}.',
     prompt: { kind: 'phrase', answer: 'Of her £600,000, £510,000 is still shares in that company' },
     because: [
       'Count what the case shows. £510,000 out of £600,000 is 85%, all in one company. The fall is that company’s: 45% off £510,000 is £229,500, which is 38% of everything she has. Her bills are real, and she is selling at a bad price. But the harm is not only what the monthly sales cost. It is that nearly all she has rests on one company.',
       'Suppose she had cash set aside for three years of bills. It would stop the sales at a low price. It would do nothing about the £229,500, nothing about the next fall, and nothing if the company failed. A cure for the fall would leave nearly all of the harm where it was.',
-      'So the case shows both: money needed every month, and nearly everything in one company. When a case shows both, the key chooses one answer, and it chooses the second.'
+      'So the case shows both: money needed every month, and nearly everything in one company. When a case shows both, the answer is the second.'
     ],
     take: [
-      'The key chooses this way round because of what each cure can reach. Cash set aside helps on the days money is needed. It does not help money that one company can wipe out. The question to put to a case that shows both is the one from the last card: would one thing do the damage even if every other price stayed where it is?',
+      'The answer goes this way round because of what each cure can reach. Cash set aside helps on the days money is needed. It does not help money that one company can wipe out. The question to put to a case that shows both is the one from the last card: would one thing do the damage even if every other price stayed where it is?',
       'If Marguerite’s money were spread across hundreds of companies and she were selling the same £2,000 a month in the same fall, the answer would be {a:D1.timing}.'
     ] }
 ]);

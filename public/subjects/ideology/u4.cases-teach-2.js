@@ -17,7 +17,7 @@ FC.cases('ideology', 'u4', [
     cues: { D1: 'These old ways should guide how the school is run',
             T1: ['That was a wrong, and it should never have been done', 'undo the Act, give the school back to the church, and let the vicar choose the head teacher again'] } },
 
-  /* ---------- The check on the key's question: all its answers are offered ---------- */
+  /* ---------- The check on the question: all its answers are offered ---------- */
   { id: 'i4-check-ways', use: 'check', tier: 'clean', setting: 'health', topic: 'matrons swept off the wards',
     text: "From a nurses' association letter: 'Until the Health Reform, every ward was led by a matron, whose word was final, and every nurse knew her rank by the colour of her belt. The Reform swept the matrons away and called it progress. That was a wrong done to the sick. This old order of the wards should guide how the hospital is run, so put the matrons back on every ward, with their belts and their authority, as it was.'",
     outcome: 'react', route: { D1: ['tradition'], T1: ['restore'] },

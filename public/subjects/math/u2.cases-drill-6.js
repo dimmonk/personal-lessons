@@ -19,7 +19,7 @@ FC.cases('math', 'u2', [
       W1: ['line them up in equal rows, with more than one row and more than one pot in each row']
     },
     reason: {
-      M1: 'The problem asks {cue:M1}, a question about whether one whole number can be shared out in equal groups. Nothing in it changes as time passes, no hidden number has to be found from a calculation, and there is no shape or choice, so the key’s first answer is {a:M1.whole}.',
+      M1: 'The problem asks {cue:M1}, a question about whether one whole number can be shared out in equal groups. Nothing in it changes as time passes, no hidden number has to be found from a calculation, and there is no shape or choice, so the answer to the first question is {a:M1.whole}.',
       W1: 'The words {cue:W1} give one number and ask only whether anything other than 1 and itself shares it out exactly. That is a yes or a no about one number, which is {a:W1.split}.'
     },
     not: {
@@ -72,7 +72,7 @@ FC.cases('math', 'u2', [
       W1: ['share them out in equal piles, with more than one pile and more than one book in each pile']
     },
     reason: {
-      M1: 'The problem asks {cue:M1}, a question about whether one whole number can be shared out in equal groups. Nothing in it changes as time passes, no hidden number has to be found from a calculation, and there is no shape or choice, so the key’s first answer is {a:M1.whole}.',
+      M1: 'The problem asks {cue:M1}, a question about whether one whole number can be shared out in equal groups. Nothing in it changes as time passes, no hidden number has to be found from a calculation, and there is no shape or choice, so the answer to the first question is {a:M1.whole}.',
       W1: 'The words {cue:W1} give one number and ask only whether anything other than 1 and itself shares it out exactly. That is a yes or a no about one number, which is {a:W1.split}.'
     },
     not: {
@@ -122,7 +122,7 @@ FC.cases('math', 'u2', [
     route: { M1: ['whole'], W1: ['parts'] },
     cues: { M1: ['every way to set them out in equal rows'], W1: ['every way to set them out in equal rows'] },
     reason: {
-      M1: 'The problem asks {cue:M1}, a question about what one whole number is made of or how it can be shared out. It follows no amount through time, hides no number to be found from a calculation, and has no shape or choice, so the key’s first answer is {a:M1.whole}.',
+      M1: 'The problem asks {cue:M1}, a question about what one whole number is made of or how it can be shared out. It follows no amount through time, hides no number to be found from a calculation, and has no shape or choice, so the answer to the first question is {a:M1.whole}.',
       W1: 'The words {cue:W1} give one number and ask what it is made of, or every way it can be shared out. That is more than a yes or a no about one number, which is {a:W1.parts}.'
     },
     not: {
@@ -170,7 +170,7 @@ FC.cases('math', 'u2', [
       W1: ['cut both into pieces of equal length with no wood wasted']
     },
     reason: {
-      M1: 'The problem asks {cue:M1}, a question about pieces of one size that two whole numbers can both be split into. Nothing grows, no hidden number has to be found from a calculation, and there is no shape or chance, so the key’s first answer is {a:M1.whole}.',
+      M1: 'The problem asks {cue:M1}, a question about pieces of one size that two whole numbers can both be split into. Nothing grows, no hidden number has to be found from a calculation, and there is no shape or chance, so the answer to the first question is {a:M1.whole}.',
       W1: 'The words {cue:W1} give two numbers and ask for the biggest piece that both can be cut into with nothing left over, which is {a:W1.piece}.'
     },
     not: {
@@ -219,7 +219,7 @@ FC.cases('math', 'u2', [
       W1: ['one every 8 seconds and the other every 12 seconds']
     },
     reason: {
-      M1: 'The problem asks {cue:M1}, a question about two repeats and when they coincide. The numbers are whole counts that repeat, and no amount is followed as it grows, so the key’s first answer is {a:M1.whole}.',
+      M1: 'The problem asks {cue:M1}, a question about two repeats and when they coincide. The numbers are whole counts that repeat, and no amount is followed as it grows, so the answer to the first question is {a:M1.whole}.',
       W1: 'The words {cue:W1} give two repeating schedules and ask for the first time they coincide, which is {a:W1.together}.'
     },
     not: {

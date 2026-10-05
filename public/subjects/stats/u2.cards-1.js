@@ -48,7 +48,7 @@ FC.cards('stats', 'u2', [
 
   /* ---------- A claim that holds: a figure for one group ---------- */
   { id: 'meet-sampok', kind: 'meet', outcome: 'samp_ok',     // heading is the outcome's plain words, from the key
-    link: 'Unit One ended with the fifth answer to the key’s first question, {a:S1.holds}. This unit teaches what that answer looks like. The plainest kind comes first: someone gives one figure about one group, and has drawn the people and heard from them carefully.',
+    link: 'Unit One ended with the fifth answer to the first question, {a:S1.holds}. This unit teaches what that answer looks like. The plainest kind comes first: someone gives one figure about one group, and has drawn the people and heard from them carefully.',
     case: 'h-library', mark: 'H1',
     strip: [
       'There is a figure about a group: 41 in 100 of a library’s 90,000 card holders borrowed a book last month.',
@@ -84,6 +84,6 @@ FC.cards('stats', 'u2', [
       'From here on, the cases change their stories on purpose. Sometimes two cases will share the same people and the same figure and differ only in what the claim says. When that happens, the shared story is there to show you that it decides nothing.',
       'Two more things change on purpose: how large or surprising the figure is, and whether you would like the claim to be true. A big drop and a tiny one can both hold. A claim you agree with is put to the same question as one you do not.'
     ],
-    fixed: ['what the claim says the figures show, which is what the key asks about: {q:H1}'],
+    fixed: ['what the claim says the figures show, which is what this question asks about: {q:H1}'],
     varies: ['the topic', 'the people', 'how large or surprising the figure is', 'whether you would like it to be true', 'whether the story hints at more than the claim says'] }
 ]);

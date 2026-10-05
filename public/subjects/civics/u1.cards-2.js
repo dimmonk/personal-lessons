@@ -35,7 +35,7 @@ FC.cards('civics', 'u1', [
       'The word federal does a job here. It says which government the {t:agency} belongs to: the one for the whole country. A state has offices too, such as a state’s health department, and a decision by one of them belongs to a different kind. A federal office and a state office can do exactly the same kind of work, so the test is whose office it is.'
     ],
     feature: { step: 'D1', option: 'president' },
-    name: 'The key’s answer, and so the name of the kind, is {a:D1.president}. The word “or” matters: the kind holds two sorts of decision-maker, the President and an office of the government of the whole country, and either one gives the answer. “Federal” belongs to the office: a state’s own office is not in this kind.' },
+    name: 'The answer, and so the name of the kind, is {a:D1.president}. The word “or” matters: the kind holds two sorts of decision-maker, the President and an office of the government of the whole country, and either one gives the answer. “Federal” belongs to the office: a state’s own office is not in this kind.' },
 
   { id: 'again-president', kind: 'again', family: 'president',
     link: 'The seat-belt case gave you what to point to: {needs:president}. Here is a second case, and this time the decision-maker is the President, not an office.',
@@ -62,7 +62,7 @@ FC.cards('civics', 'u1', [
     ],
     wild: ['"The office has published its rules."', '"The President ordered..."', '"Inspectors found..."', '"The order tells every office to..."', '"She refused to sign it."'],
     self: 'In your own life you meet this kind whenever a form, a notice or an inspection comes from a federal office, and whenever the news reports something the President has ordered.',
-    ask: '"Who made this decision: the President, or an office? And is the office one of the whole country, or of a state, a city or a county?" If it is the President, or a federal office, the key’s answer is {a:D1.president}.' },
+    ask: '"Who made this decision: the President, or an office? And is the office one of the whole country, or of a state, a city or a county?" If it is the President, or a federal office, the answer is {a:D1.president}.' },
 
   { id: 'check-president', kind: 'check', after: 'president',
     case: 'k-ferry',
@@ -76,8 +76,8 @@ FC.cards('civics', 'u1', [
     instruction: 'Both cases are about the same food-label law. Compare one thing: whose decision does each story end on?',
     prompt: { kind: 'which', option: 'D1.president', answer: 'l-label-rules' },
     difference: [
-      'In Case A the story is about the bill itself: the Senate votes to pass it, as the House had done. Nobody else is deciding anything. The key’s answer is {a:D1.congress}.',
-      'In Case B the law has been passed, and the story is about what comes after: an office publishes the rules that tell food makers how to follow it. The law is still in the story, but as how the matter got there. The last decision is the office’s. The key’s answer is {a:D1.president}.',
+      'In Case A the story is about the bill itself: the Senate votes to pass it, as the House had done. Nobody else is deciding anything. The answer is {a:D1.congress}.',
+      'In Case B the law has been passed, and the story is about what comes after: an office publishes the rules that tell food makers how to follow it. The law is still in the story, but as how the matter got there. The last decision is the office’s. The answer is {a:D1.president}.',
       'The same law gives you both. That is a common shape in news: lawmakers vote, and then an office puts the vote into practice. The two stories can sound alike, because both are about the law. What separates them is whose decision the story ends on.'
     ] },
 
@@ -85,7 +85,7 @@ FC.cards('civics', 'u1', [
     h: 'A law that the President signs',
     link: 'The last card showed a law moving from lawmakers to an office. A law can also move from lawmakers to the President’s desk, and the case can then end with a signature. That looks like the President deciding.',
     case: 'x-signing',
-    setup: 'The last thing in this case is the President’s own act: signing the bill. A decision by the President is what you point to for {a:D1.president}. Yet the key’s answer for this case is {a:D1.congress}.',
+    setup: 'The last thing in this case is the President’s own act: signing the bill. A decision by the President is what you point to for {a:D1.president}. Yet the answer for this case is {a:D1.congress}.',
     prompt: { kind: 'phrase', answer: 'the House and the Senate both passed a bill' },
     because: [
       'A bill becomes a law when the House and the Senate have passed it and the President has signed it. But the signature does not choose what the law says. By the time the President signs, every word was settled by the votes. The President can sign the bill or refuse to sign it, and does not write it.',
@@ -93,8 +93,8 @@ FC.cards('civics', 'u1', [
       'Compare a refusal. If the President refused to sign, that would be a decision of the President’s own: it would send the bill back, and the bill would not become a law unless the lawmakers voted for it again. So a refusal is in the second kind, and a signature is not.'
     ],
     take: [
-      'This is the key’s decision. In real life you will hear it said both ways: “Congress passed the park law” and “the President made the valley a park”. The key gives each case one answer, so that two people using it reach the same one and can each say why.',
-      'It chooses the lawmakers because the signature never changes the bill. If the answer were the President in every case that ends with a signature, the vote, which is where the choice was made, would drop out of what the key looks at.'
+      'This is the answer the questions give. In real life you will hear it said both ways: “Congress passed the park law” and “the President made the valley a park”. Each case gets one answer, so that two people using the questions reach the same one and can each say why.',
+      'It chooses the lawmakers because the signature never changes the bill. If the answer were the President in every case that ends with a signature, the vote, which is where the choice was made, would drop out of what the question looks at.'
     ] },
 
   /* ---------- A wrong idea: the signature is the decision ---------- */
@@ -113,7 +113,7 @@ FC.cards('civics', 'u1', [
     h: 'An agreement with another country, then the Senate',
     link: 'The President can also sign an agreement with another country. That is one of the President’s dealings with another country, and it is in the second kind. But a case about such an agreement can end somewhere else.',
     case: 'x-treaty',
-    setup: 'The case opens with the President signing an agreement with another country, and dealing with another country is one of the things the President decides. Yet the key’s answer for this case is {a:D1.congress}.',
+    setup: 'The case opens with the President signing an agreement with another country, and dealing with another country is one of the things the President decides. Yet the answer for this case is {a:D1.congress}.',
     prompt: { kind: 'phrase', answer: 'The Senate will vote on it next month' },
     because: [
       'Read to the end of the case. The agreement is signed, but it does not take effect until the Senate votes to approve it, and the last sentence says that vote is next month. The case ends by asking the Senate for a decision.',

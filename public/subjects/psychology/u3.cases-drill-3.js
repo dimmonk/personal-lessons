@@ -67,7 +67,7 @@ FC.cases('psychology', 'u3', [
     cues: { D1: "is asked by the secretary, Lev, why the hall's insurance lapsed in March",
             T1: ["The committee's emails show that Sandy was told to renew it and never did", "'I renewed it,' Sandy says. 'You're the one who never reads the post. You let the gas safety certificate lapse last year and nobody said a word. I do everything round here and I'm the one who gets cross-examined.'"] },
     reason: { D1: 'One person is raising something with another that has happened between them: {cue:D1}.',
-              T1: 'The emails show Sandy did it, and Lev raises it. Sandy denies it, attacks Lev, and plays the one wronged: {cue:T1} The attack also fits the accuser, since Sandy is the one who let things lapse. When a case shows both, the key gives {a:T1.reverse}.' },
+              T1: 'The emails show Sandy did it, and Lev raises it. Sandy denies it, attacks Lev, and plays the one wronged: {cue:T1} The attack also fits the accuser, since Sandy is the one who let things lapse. When a case shows both, the answer is {a:T1.reverse}.' },
     not: { outcome: 'projection', why: 'Sandy does accuse Lev of what Sandy did. But Lev raised the lapse with Sandy first, so Sandy is answering something, with a denial and by playing the one wronged. That is what puts the case with the other name.' } },
 
   { id: 'r-proj-m', use: 'drill', tier: 'misleading', setting: 'work', topic: 'a gentle complaint about check-ins', echo: 'dishes',
@@ -85,7 +85,7 @@ FC.cases('psychology', 'u3', [
     cues: { D1: "Ben took her off the volunteers' group chat, stopped speaking to her on shifts, and told another volunteer she 'only does what suits her'",
             T1: ["had given her a set of keys, called her 'my right hand', and asked her opinion on everything", "Ben took her off the volunteers' group chat, stopped speaking to her on shifts, and told another volunteer she 'only does what suits her'"] },
     reason: { D1: 'One person is doing something to another that is about the other person: {cue:D1}.',
-              T1: 'This is not a romance, and the key does not need one. Within three weeks came far more trust and attention than three weeks would explain: {cue:T1}. It was pulled back, with criticism, when Zadie set a limit.' },
+              T1: 'This is not a romance, and the answer does not need one. Within three weeks came far more trust and attention than three weeks would explain: {cue:T1}. It was pulled back, with criticism, when Zadie set a limit.' },
     not: { outcome: 'ordexchange', why: 'A warm coordinator who stayed warm when Zadie said Saturdays only would be {o:ordexchange}. Here the attention stops and turns critical.' } },
 
   { id: 'r-ord-m1', use: 'drill', tier: 'misleading', setting: 'work', topic: 'a wrong pallet owned up to', echo: 'd-till',

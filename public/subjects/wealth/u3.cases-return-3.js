@@ -41,7 +41,7 @@ FC.cases('wealth', 'u3', [
     cues: { D1: 'a fire caused by faulty wiring in the oldest block could lead to demands for £3,000,000 from the tenants who were hurt',
             S1: ['a fire caused by faulty wiring in the oldest block could lead to demands for £3,000,000 from the tenants who were hurt', 'His landlord insurance pays up to £600,000 for all such claims'] },
     reason: { D1: 'A demand could reach everything he owns: {cue:D1}. £3,000,000 is more than the £2,000,000 he has in all.',
-              S1: 'One event could bring {t:claim} far bigger than the insurance: {cue:S1}. £3,000,000 less £600,000 leaves £2,400,000 uncovered. The properties in one name are in the case too, and when a case shows both, the key chooses the claim.' },
+              S1: 'One event could bring {t:claim} far bigger than the insurance: {cue:S1}. £3,000,000 less £600,000 leaves £2,400,000 uncovered. The properties in one name are in the case too, and when a case shows both, the answer is the claim.' },
     not: { outcome: 'entity', why: 'Six flats and a home in one name is what the answer for properties in one name looks like, and it is true here. But the case also shows {t:claim} far bigger than the insurance, and that comes first.' },
     wouldChange: 'If the insurance paid up to £4,000,000 and each block were in a company of its own, it would be {a:S1.madesafe}.' },
 

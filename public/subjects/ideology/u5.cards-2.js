@@ -16,7 +16,7 @@ FC.cards('ideology', 'u5', [
     ],
     explain: [
       'Set this beside the street-music petition. Both put each person’s rights first, and both ask the government to protect them. If the text stopped there, you could not tell them apart. This one does not stop. It goes on to say that a freedom is worth less to someone who begins with nothing, and it asks the government to provide a start.',
-      'The idea behind a text like this is that rights are only as good as a person’s chance to use them. A child who cannot read cannot use the right to speak. So the government’s job grows: it protects the rights, and it also pays for the schooling, the doctor and the help that let people use them. Whether the government should do that, and how much, is argued over, and the key does not settle it.',
+      'The idea behind a text like this is that rights are only as good as a person’s chance to use them. A child who cannot read cannot use the right to speak. So the government’s job grows: it protects the rights, and it also pays for the schooling, the doctor and the help that let people use them. Whether the government should do that, and how much, is argued over, and this course does not settle it.',
       'Notice who pays. The text says "we will all pay for it together". The government gives to everyone, and everyone pays in through taxes. That is part of what the text asks for.',
       'And notice what the text does not do. It does not say that any rule holds a group back. It speaks of "a child", of "anyone", of "everyone". It names no group and blames no rule. Another text could name a group, and say that the rules themselves are what leave it behind. That text would be asking something else.'
     ],
@@ -61,8 +61,8 @@ FC.cards('ideology', 'u5', [
     verdict: 'This is wrong.',
     right: [
       'The word is used for different things in different places. In some countries a person called liberal is someone who wants a fair start paid for by all, which this unit names {o:modlib}. In others the word is used for someone who wants a small government and free trade, which this unit names {o:clib}. The same word, in a different place, points to a different text.',
-      'And "left-wing" and "right-wing" are not words of the key. Different people use them for different things, and a text can be called either by different people. The key does not use them.',
-      'So go by what the text asks for. The key’s question is {q:R1} A text that asks the government to protect rights and stay out is {o:clib}, whatever anyone calls it. A text that asks the government to protect rights and also to provide a start for everyone is {o:modlib}, whatever anyone calls it. The word "liberal" in the names tells you only that each person’s freedom comes first, which is true of both.'
+      'And "left-wing" and "right-wing" are not words used in these questions. Different people use them for different things, and a text can be called either by different people. They are not used here.',
+      'So go by what the text asks for. The question is {q:R1} A text that asks the government to protect rights and stay out is {o:clib}, whatever anyone calls it. A text that asks the government to protect rights and also to provide a start for everyone is {o:modlib}, whatever anyone calls it. The word "liberal" in the names tells you only that each person’s freedom comes first, which is true of both.'
     ],
     testedBy: ['i5-claim-liberal'] },
 
@@ -72,8 +72,8 @@ FC.cards('ideology', 'u5', [
     instruction: 'Both cases are about the same new clinic in Marrow, and in both the speaker says each person is free to choose their own doctor. Compare one thing: what the speaker wants the government to do about the clinic.',
     prompt: { kind: 'which', option: 'R1.start', answer: 'i5-lk-cm-modlib' },
     difference: [
-      'In Case A the speaker wants the government to keep the courts open and see that contracts are kept, and otherwise to leave the clinic to those who run it. The key’s answer is {a:R1.leave}, and the case is {o:clib}.',
-      'In Case B the speaker wants the government to pay for a clinic in every district, with everyone paying through their taxes. A clinic is to be given. The key’s answer is {a:R1.start}, and the case is {o:modlib}.',
-      'The freedom to choose a doctor is the same in both. What differs is what is asked of the government once the freedom is protected: nothing more, or something given. That is the question the key asks.'
+      'In Case A the speaker wants the government to keep the courts open and see that contracts are kept, and otherwise to leave the clinic to those who run it. The answer is {a:R1.leave}, and the case is {o:clib}.',
+      'In Case B the speaker wants the government to pay for a clinic in every district, with everyone paying through their taxes. A clinic is to be given. The answer is {a:R1.start}, and the case is {o:modlib}.',
+      'The freedom to choose a doctor is the same in both. What differs is what is asked of the government once the freedom is protected: nothing more, or something given. That is the question being asked.'
     ] }
 ]);

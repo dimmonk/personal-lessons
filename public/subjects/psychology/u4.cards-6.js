@@ -6,11 +6,11 @@ FC.cards('psychology', 'u4', [
 
   { id: 'q-pat', kind: 'question', step: 'P1',
     h: 'The question you have been answering all along',
-    link: 'Since Dennis you have seen the key’s question at the foot of each new name, with one answer under it. This card puts the question and its six answers in one place, as the key shows them, and says why the key asks it.',
+    link: 'Since Dennis you have seen the question at the foot of each new name, with one answer under it. This card puts the question and its six answers in one place, and says why it is asked.',
     decides: 'So two people can both be loud, or both be quiet, or both be furious when they are crossed, and still get different names. One person can be {o:narcgrand} and another {o:ordpersonality}, with the same boast. Nothing about how loud, how likeable or how much you dislike them tells them apart. Only what the person does, again and again, and what it keeps costing, tells them apart.',
     how: [
       'Find the sentences that show what the person does again and again: how they act with others, what they do when something goes against them, what they do when someone seems about to leave. Then ask which of the six answers those sentences give. You should be able to put your finger on the words.',
-      'Before you give any of the first five answers, point to the cost. If you cannot point to a repeated cost, the answer is the sixth. And before you give any of the six, make sure the case shows years, more than one place and more than one relationship. If it shows a week, or one other person, the key’s first question has already sent you somewhere else.',
+      'Before you give any of the first five answers, point to the cost. If you cannot point to a repeated cost, the answer is the sixth. And before you give any of the six, make sure the case shows years, more than one place and more than one relationship. If it shows a week, or one other person, the first question has already sent you somewhere else.',
       'Read what is missing as well as what is there. For {o:narcvuln}, nothing is shouted: the evidence is a count of what is owed, and a silence. For {o:antisocial}, part of the evidence is a missing feeling: no regret.'
     ],
     whenBoth: 'Sometimes two answers both seem to fit. Each pair below has been set side by side earlier in this unit, and each has one question that separates it. One of them, {o:narcgrand} and {o:antisocial}, also has a tie-break for the case that shows both.' },
@@ -21,7 +21,7 @@ FC.cards('psychology', 'u4', [
 
   { id: 'worked-rafe', kind: 'worked',
     h: 'A whole case, from the first question to the name',
-    link: 'You have the six names and the key’s question about them. Before you run a case yourself, watch two being run from the top, in the order the key asks. You are not asked anything until the end of each.',
+    link: 'You have the six names and the question about them. Before you run a case yourself, watch two being run from the top, in the order the questions are asked. You are not asked anything until the end of each.',
     case: 'pa-rafe',
     steps: [
       { step: 'D1',
@@ -43,14 +43,14 @@ FC.cards('psychology', 'u4', [
         answer: 'b' },
       reason: [
         'For {o:narcgrand} you must be able to point to this: {needs:narcgrand}. Rafe says he is the best, but that is all that is there. He does not turn scornful when someone fails to treat him as special. What he does is lie to people and use them, and shrug.',
-        'It is the question from the two landlords. {test:narcgrand~antisocial} Here the case shows the rules broken and the lack of regret, so the key’s answer is {a:P1.uses}.'
+        'It is the question from the two landlords. {test:narcgrand~antisocial} Here the case shows the rules broken and the lack of regret, so the answer is {a:P1.uses}.'
       ]
     },
     impression: {
       resembles: 'pa-callum',
       text: [
-        'The key has given its answer. Now take a second look of a different kind: does this case look like one you know? It should bring back the garage owner: cars and customers there, placements and candidates here, and the same shrug when someone is hurt.',
-        'Here the key and the likeness agree, so the answer stands. The key’s question comes first, because it makes you point at words in the case. The likeness is only a second look. When the two disagree, do not pick the one you prefer. Go back to the key’s question and find the words in the case that answer it. The second whole case shows how.'
+        'You have the answer. Now take a second look of a different kind: does this case look like one you know? It should bring back the garage owner: cars and customers there, placements and candidates here, and the same shrug when someone is hurt.',
+        'Here the answer and the likeness agree, so the answer stands. The question comes first, because it makes you point at words in the case. The likeness is only a second look. When the two disagree, do not pick the one you prefer. Go back to the question and find the words in the case that answer it. The second whole case shows how.'
       ]
     } },
 
@@ -78,26 +78,26 @@ FC.cards('psychology', 'u4', [
         answer: 'b' },
       reason: [
         'For {o:histrionic} you must be able to point to this: {needs:histrionic}. Bruno is at the centre of attention, but the other two things are missing. His displays do not get bigger when attention goes to someone else: he applauds. And nothing is being lost to it, so there is no cost to point to.',
-        'It is the question from Sofia and Tito. {test:histrionic~ordpersonality} Here it has cost very little, so the key’s answer is {a:P1.steady}.'
+        'It is the question from Sofia and Tito. {test:histrionic~ordpersonality} Here it has cost very little, so the answer is {a:P1.steady}.'
       ]
     },
     impression: {
       resembles: 'pa-tito', first: 'pa-marguerite',
       text: [
-        'Now the second look: does this case look like one you know? A man who tells every story with his whole body and hugs everyone at a party may bring back Marguerite first, and Marguerite’s case was {o:histrionic}. So here the likeness and the key seem to disagree.',
-        'When that happens, go back to the key’s question and find the words in the case that answer it. They are {cue:P1}. Marguerite’s case has nothing like them: when the room applauded someone else she told the story of her terrible week until the room turned back to her, and her sister stopped inviting her to small gatherings. The case this one really looks like is the fete host: dramatic in everything, and thanked for it every year. So the key’s answer stands.'
+        'Now the second look: does this case look like one you know? A man who tells every story with his whole body and hugs everyone at a party may bring back Marguerite first, and Marguerite’s case was {o:histrionic}. So here the likeness and the answer seem to disagree.',
+        'When that happens, go back to the question and find the words in the case that answer it. They are {cue:P1}. Marguerite’s case has nothing like them: when the room applauded someone else she told the story of her terrible week until the room turned back to her, and her sister stopped inviting her to small gatherings. The case this one really looks like is the fete host: dramatic in everything, and thanked for it every year. So the answer stands.'
       ]
     } },
 
   { id: 'recap-pat', kind: 'recap',
     h: 'What to carry away',
-    link: 'You have now run the key on your own. This card puts the unit in one place, in the key’s words.',
+    link: 'You have now gone from the first question to the name on your own. This card puts the unit in one place.',
     carry: [
-      'Before any name, count: years, more than one place, more than one relationship. If a case shows a week, or one other person, the key’s first question sends you somewhere else.',
+      'Before any name, count: years, more than one place, more than one relationship. If a case shows a week, or one other person, the first question sends you somewhere else.',
       'Then ask what the person does, again and again, and point to the words. Before any of the first five names, point to the cost. If you cannot, the answer is {o:ordpersonality}, and it is the right answer for most of the people anyone describes.',
       'The two narcissisms are one family. Both come from a sense of worth that depends on being treated as special. Defended outward, it is anger and scorn. Defended inward, it is hurt and resentment. A loud person and a quiet one can belong to the same family.',
-      'When a case shows both the scorn of {o:narcgrand} and everything that {o:antisocial} needs, the key’s answer is {a:P1.uses}.',
-      'Five of the six names are for a {t:pd}, as the key uses the word. The sixth is the answer when there is no repeated cost. These names describe what a case shows. They are not a diagnosis of a person, and only a professional can diagnose, after a long assessment. "She said something cruel and then cried" is a sentence about a moment, and it is not a case.'
+      'When a case shows both the scorn of {o:narcgrand} and everything that {o:antisocial} needs, the answer is {a:P1.uses}.',
+      'Five of the six names are for a {t:pd}, as the word is used here. The sixth is the answer when there is no repeated cost. These names describe what a case shows. They are not a diagnosis of a person, and only a professional can diagnose, after a long assessment. "She said something cruel and then cried" is a sentence about a moment, and it is not a case.'
     ] },
 
   { id: 'transfer-pat', kind: 'transfer',

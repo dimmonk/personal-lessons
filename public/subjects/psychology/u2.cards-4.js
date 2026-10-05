@@ -18,7 +18,7 @@ FC.cards('psychology', 'u2', [
       'In Ben’s case the facts pointed away from his view, so it changed. That is the easiest form to see. But the name is not for the change. It is for the fair test, and a fair test can also leave a view where it was.'
     ],
     feature: { step: 'R1', option: 'follows' },
-    name: 'The name for this is {o:fair}. It is the one name in this unit that is not a fault. The key includes it so that you can say "nothing is wrong here" as exactly as you can say what is wrong elsewhere.' },
+    name: 'The name for this is {o:fair}. It is the one name in this unit that is not a fault. It is there so that you can say "nothing is wrong here" as exactly as you can say what is wrong elsewhere.' },
 
   { id: 'again-fair', kind: 'again', outcome: 'fair',
     link: 'Ben’s case gave you what to point to: {needs:fair}. Ben’s view changed. Here is a second case where the view stays, and the reasoning is the same.',
@@ -58,8 +58,8 @@ FC.cards('psychology', 'u2', [
     instruction: 'The two cases are word for word the same until the figures arrive. Compare one thing: the test Luis sets the figures, and whether he ever set that test for evidence on his own side.',
     prompt: { kind: 'which', option: 'R1.scrutiny', answer: 'hire-uneven' },
     difference: [
-      'In Case A Luis does test the figures: he checks how they were counted. That is a fair test, the kind he would want for any figures, and when they pass, his view goes where they point. The key’s answer is {a:R1.follows}, and the case is {o:fair}.',
-      'In Case B he sets a test too: one quarter is not enough. But two weeks earlier one missed deadline was enough. How much evidence counts changes with the side the evidence is on. The key’s answer is {a:R1.scrutiny}, and the case is {o:confbias}.',
+      'In Case A Luis does test the figures: he checks how they were counted. That is a fair test, the kind he would want for any figures, and when they pass, his view goes where they point. The answer is {a:R1.follows}, and the case is {o:fair}.',
+      'In Case B he sets a test too: one quarter is not enough. But two weeks earlier one missed deadline was enough. How much evidence counts changes with the side the evidence is on. The answer is {a:R1.scrutiny}, and the case is {o:confbias}.',
       'So the difference is not whether the person questions evidence they do not like. Luis questions it in both cases. It is whether the same questions were put to the evidence on his own side.'
     ] },
 
@@ -69,8 +69,8 @@ FC.cards('psychology', 'u2', [
     instruction: 'Both cases are about Mei and her market stall, and in both she pays for another year. Compare one thing: the reason she gives for carrying on.',
     prompt: { kind: 'which', option: 'R1.backward', answer: 'stall-spent' },
     difference: [
-      'In Case A the reason Mei gives is the year and the savings already spent. She says nothing about what next year would bring, and the case tells you the stall has lost money every month. The key’s answer is {a:R1.backward}, and the case is {o:sunkcost}.',
-      'In Case B Mei looks at next year: what it costs, and what the last ten weeks say it will bring. Those are facts about the matter, and her plan goes where they point. The year already spent does not appear in her reason at all. The key’s answer is {a:R1.follows}, and the case is {o:fair}.',
+      'In Case A the reason Mei gives is the year and the savings already spent. She says nothing about what next year would bring, and the case tells you the stall has lost money every month. The answer is {a:R1.backward}, and the case is {o:sunkcost}.',
+      'In Case B Mei looks at next year: what it costs, and what the last ten weeks say it will bring. Those are facts about the matter, and her plan goes where they point. The year already spent does not appear in her reason at all. The answer is {a:R1.follows}, and the case is {o:fair}.',
       'The choice is the same in both cases. Only the reason differs. That is why you can never name a case from what the person decided.'
     ] },
 
@@ -89,8 +89,8 @@ FC.cards('psychology', 'u2', [
   /* ---------- The key's question ---------- */
   { id: 'q-does', kind: 'question', step: 'R1',
     h: 'The question you have been answering all along',
-    link: 'Since the fish-stock sauce you have seen the key’s question at the foot of each new name, with one answer under it. This card puts the question and its five answers in one place, as the key shows them, and says why the key asks it.',
-    decides: 'So two people can reach the same conclusion on the same matter and get different names. For one of them the key’s answer is {a:R1.fixed}; for the other it is {a:R1.follows}. Nothing about the topic, the person or the conclusion tells them apart. Only what the reasoning did tells them apart.',
+    link: 'Since the fish-stock sauce you have seen the question at the foot of each new name, with one answer under it. This card puts the question and its five answers in one place, and says why it is asked.',
+    decides: 'So two people can reach the same conclusion on the same matter and get different names. For one of them the answer is {a:R1.fixed}; for the other it is {a:R1.follows}. Nothing about the topic, the person or the conclusion tells them apart. Only what the reasoning did tells them apart.',
     how: [
       'Find the sentence in which the person gives their reason, or the sentence that shows what they did with the evidence. Then ask which of the five answers describes that sentence. You should be able to put your finger on the words: the reason given afterwards, what is already spent, the question put to one side only, the answer chosen before the search, or the same test for both sides.',
       'A quick first step is to see what the reasoning is about. If the person is explaining something they did or spent, the answer is usually one of the first two, or the last. If they are dealing with evidence about what is true or which to choose, it is usually the third, the fourth, or the last. This narrows the choice. It does not make it: the words in the case do.',

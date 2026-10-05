@@ -8,7 +8,7 @@
 
 FC.unit('wealth', 'u3', {
   kind: 'C',              // C classification, F facts, P procedure
-  rev: 1,
+  rev: 2,
   standard: 1,
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author)
   tag: 'Three',
@@ -41,7 +41,7 @@ FC.unit('wealth', 'u3', {
       test: 'Put the biggest demand that the case says could come next to what the insurance pays. Which is bigger, and by how much?' },
     { id: 'insure~entity', pair: ['insure', 'entity'], step: 'S1',
       shared: 'In both, {t:claim} is in the case, and what a demand could reach is most of what the person owns.',
-      rule: 'In {o:insure} the case shows {t:claim} that could be far bigger than the insurance. In {o:entity} the case shows several properties or businesses in one name, so a demand on any one could reach the rest. When a case shows both, the key chooses {o:insure}.',
+      rule: 'In {o:insure} the case shows {t:claim} that could be far bigger than the insurance. In {o:entity} the case shows several properties or businesses in one name, so a demand on any one could reach the rest. When a case shows both, the answer is {o:insure}.',
       test: 'Does the case show a demand bigger than the insurance, or only how the properties are held?' },
     { id: 'entity~safe', pair: ['entity', 'safe'], step: 'S1', taughtIn: 'w3-portrait-entity',
       shared: 'In both, several properties or businesses are in the case, and each could bring {t:claim}.',
@@ -53,7 +53,7 @@ FC.unit('wealth', 'u3', {
       test: 'How large is the loan against what it is secured on, and what is the lender allowed to do?' },
     { id: 'deleverage~supports', pair: ['deleverage', 'supports'], step: 'S1',
       shared: 'In both, a loan could be used against the borrower, and what it is secured on is most of what they have.',
-      rule: 'In {o:supports} the person runs the business, and a loan against its shares is one of the gaps. In {o:deleverage} the loan is against something the person does not run. When a case shows both, the key chooses {o:supports}.',
+      rule: 'In {o:supports} the person runs the business, and a loan against its shares is one of the gaps. In {o:deleverage} the loan is against something the person does not run. When a case shows both, the answer is {o:supports}.',
       test: 'Is what the loan is secured on a business that the person runs?' }
   ],
 
@@ -72,7 +72,7 @@ FC.unit('wealth', 'u3', {
       cards: ['w3-meet-insure', 'w3-again-insure', 'w3-portrait-insure', 'w3-check-insure', 'w3-look-insure-safe',
               'w3-term-company', 'w3-meet-entity', 'w3-again-entity', 'w3-portrait-entity', 'w3-check-entity',
               'w3-look-insure-entity', 'w3-exc-insure'] },
-    { id: 'u3p4', title: 'A loan, the key’s question, two whole cases, then the drill',
+    { id: 'u3p4', title: 'A loan, the question, two whole cases, then the drill',
       cards: ['w3-meet-deleverage', 'w3-again-deleverage', 'w3-portrait-deleverage', 'w3-check-deleverage',
               'w3-look-deleverage-safe', 'w3-exc-supports', 'w3-refute-house', 'w3-q-shock', 'w3-check-shock',
               'w3-worked-solar', 'w3-worked-brewery'],
@@ -121,7 +121,8 @@ FC.unit('wealth', 'u3', {
   // Build notes: not shown to the learner, and left out of the fingerprint. The validator reads them.
   build: {
     history: [
-      { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the branch of the key for one thing most of the money depends on. Not yet deployed, so later edits before the first deploy stay revision 1.' }
+      { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the branch of the key for one thing most of the money depends on. Not yet deployed, so later edits before the first deploy stay revision 1.' },
+      { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' }
     ],
     // What the K2 rewrite changed in the key for this branch, and why (docs/rebuild/wealth-plan.md, section (a)).
     keyChanges: [
@@ -144,7 +145,7 @@ FC.unit('wealth', 'u3', {
     wrongIdeas: [
       { card: 'w3-refute-ignorance', about: 'diversify',
         source: { kind: 'app-data', verified: false,
-          ref: 'The old app’s own list of claims (WEALTH_ERR item 3): "Diversification is protection against ignorance". The card keeps what is true of it (knowledge helps a person who is building money and could earn it again) and marks as wrong what does not follow (it is no protection against what comes from outside what you know). Verified by the key’s question, not by a published source. To be replaced or confirmed by what cold readers actually say.' } },
+          ref: 'The old app’s own list of claims (WEALTH_ERR item 3): "Diversification is protection against ignorance". The card keeps what is true of it (knowledge helps a person who is building money and could earn it again) and marks as wrong what does not follow (it is no protection against what comes from outside what you know). Verified by the question, not by a published source. To be replaced or confirmed by what cold readers actually say.' } },
       { card: 'w3-refute-house', about: 'deleverage',
         source: { kind: 'app-data', verified: false,
           ref: 'The old app’s own list of claims (WEALTH_ERR item 6): "My house is my best investment". The card’s worked numbers are invented examples. Verified by arithmetic, not by a published source. To be confirmed by what cold readers actually say.' } }

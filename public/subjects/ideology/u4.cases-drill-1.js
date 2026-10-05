@@ -5,7 +5,7 @@
 
 FC.cases('ideology', 'u4', [
 
-  /* ---------- Stage one: the key's answers are shown, the learner gives the name ---------- */
+  /* ---------- Stage one: the answers are shown, the learner gives the name ---------- */
   { id: 'i4-n-bells', use: 'drill', tier: 'clean', setting: 'faith', topic: 'bell-ringers’ practice night',
     text: "From a bell-ringers' newsletter in Hollin: 'The ringers of St Wyn's have rung the changes every Thursday night since before anyone's grandparents were born, and the old ringing should guide how the church plans its services. Keep Thursday night. If the tower must be repaired, let it be done one bell at a time, with the ringers asked what they think.'",
     outcome: 'conserv', route: { D1: ['tradition'], T1: ['keep'] },

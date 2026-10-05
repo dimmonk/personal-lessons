@@ -8,7 +8,7 @@ FC.cards('math', 'u4', [
   /* ---------- The first of the key’s two questions ---------- */
   { id: 'q-g1', kind: 'question', step: 'G1',
     h: 'The first question: how the amount changes each time',
-    link: 'At the foot of each kind’s first card you saw one of the key’s two questions with one answer under it. This card puts the first question and its three answers in one place, as the key shows them, and says why the key asks it before any working.',
+    link: 'At the foot of each kind’s first card you saw one of the two questions with one answer under it. This card puts the first question and its three answers in one place and says why it is asked before any working.',
     decides: [
       'Here is how far apart the two come. Put €1,000 at 5% a year beside €1,000 plus €50 a year: after one year both are €1,050. After thirty years the first is about €4,322 and the second is €2,500. The wrong procedure gives a neat number all the same, and nothing in the number says that it is wrong, so only the words of the problem can settle which one it is. That is why this question is put first, before any working.',
       'The question has three answers, and they lead to different names. The same number each time leads to {o:lin}. Multiplying leads to {o:expg} or {o:logsolve}, so this question alone does not finish the job, and the second question has to separate those two. A single change leads to {o:oneoff}.'
@@ -27,7 +27,7 @@ FC.cards('math', 'u4', [
   /* ---------- The second of the key’s two questions ---------- */
   { id: 'q-g2', kind: 'question', step: 'G2',
     h: 'The second question: the amount at a given time, or the time to a target',
-    link: 'The first question left one of its answers with two names. This card puts the second question and its two answers in one place, as the key shows them, and says why it comes after the first.',
+    link: 'The first question left one of its answers with two names. This card puts the second question and its two answers in one place and says why it comes after the first.',
     decides: [
       'Take the town of 8,000 people that grows by 3% a year. Asked for the amount after 10 years, you multiply 8,000 by 1.03 ten times and get about 10,751 people. Asked how long until it has 12,000, there is no number of times to multiply by: the number of times is what you must find, which needs a log, and it comes to about 13.7 years. The procedure for one does not work for the other.',
       'For the other two kinds the question changes nothing about the procedure. {o:lin} is worked forwards or backwards by the same steps, and {o:oneoff} gives the amount after the change, or never, by the same steps. That is why both answers to this question lead to {o:lin} and to {o:oneoff}. Only for the multiplying kinds does this question decide the procedure.'
@@ -46,9 +46,9 @@ FC.cards('math', 'u4', [
   /* ---------- After the drill ---------- */
   { id: 'recap-growth', kind: 'recap',
     h: 'What to carry away',
-    link: 'You have now worked problems of all four kinds on your own. This card puts the unit in one place, in the key’s words.',
+    link: 'You have now worked problems of all four kinds on your own. This card puts the unit in one place.',
     carry: [
-      'Before any working, put two questions to the problem and point to the words that answer each. The key asks: {q:G1} And then: {q:G2}',
+      'Before any working, put two questions to the problem and point to the words that answer each. The questions are: {q:G1} And then: {q:G2}',
       'A change of the same size every time, up or down, is {o:lin}. Find the start and the change each time. Going forwards, work out the change in all, which is the change each time multiplied by how many times, and add it to the start, or take it away if the amount goes down. Going backwards, take the start from the target to find the change needed in all, and divide it by the change each time to find how many times.',
       'A share of the amount each time, or a doubling or a halving, is a multiplying kind. Find the {t:multiplier}: 100% plus the percentage if the amount goes up, 100% minus it if the amount goes down, written as a decimal, or 2 for a doubling and 0.5 for a halving.',
       'If the problem gives a time and asks for the amount, it is {o:expg}. Multiply the start by the {t:multiplier} once for each time the amount changes, each time on the result of the last, and round only at the end. Adding the first change again each time gives an answer that is too low when the amount grows.',

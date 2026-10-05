@@ -9,9 +9,9 @@ FC.cases('wealth', 'u4', [
     outcome: 'defer', route: { D1: ['erosion'], E1: ['needlesssale'] }, also: ['timing'],
     cues: { D1: 'the sale would bring a tax bill of about £3,000 on the gain',
             E1: ['the sale would bring a tax bill of about £3,000 on the gain', 'She has just received £60,000 from a maturing savings bond'] },
-    reason: { D1: 'The case shows a tax bill from a planned sale: {cue:D1}. A mix that has moved is in the case as well, and when putting it back means a sale that would bring a tax bill that new money could avoid, the key’s answer is the tax.',
+    reason: { D1: 'The case shows a tax bill from a planned sale: {cue:D1}. A mix that has moved is in the case as well, and when putting it back means a sale that would bring a tax bill that new money could avoid, the answer is the tax.',
               E1: 'The sale is not needed: {cue:E1}. £60,000 put into bonds would make the total £560,000, with shares at £340,000, which is 60.7%, so the plan is restored without a sale.' },
-    not: { outcome: 'rebalance', why: 'Her mix is 8 points above her plan, which is what {o:rebalance} looks like. But the sale would bring a tax bill that her new money could avoid, and the key puts that first.' },
+    not: { outcome: 'rebalance', why: 'Her mix is 8 points above her plan, which is what {o:rebalance} looks like. But the sale would bring a tax bill that her new money could avoid, and that comes first.' },
     wouldChange: 'If the shares were in {t:sheltered}, so that the sale brought no tax, or if she had no new money to use, the sale would be the fix, and the case would be {a:T1.drifted}.' },
 
   { id: 'r-rb2', use: 'drill', tier: 'misleading', setting: 'retirement', topic: 'a mix far below its plan and an adviser who says wait', echo: 'tm-la-split-near',
@@ -20,7 +20,7 @@ FC.cases('wealth', 'u4', [
     cues: { D1: 'chose 50% in shares and 50% in bonds', T1: 'are now £130,000 of his £360,000, 36%' },
     reason: { D1: 'The case is about how the money is split against a plan: {cue:D1}. Nothing in it comes out every year, rests on one thing, or is about a death or a gift.',
               T1: 'Walter chose 50% in shares, and the case says shares {cue:T1}. That is 14 points below his plan, with no bill and no living costs in the case, so {t:mix} is all that a fall would find.' },
-    not: { outcome: 'covered', why: 'The adviser’s advice to do nothing is not what the key reads. The key reads {t:mix}, and 14 points below the plan is well outside any limit of a few points.' },
+    not: { outcome: 'covered', why: 'The adviser’s advice to do nothing is not what decides the answer. What decides it is {t:mix}, and 14 points below the plan is well outside any limit of a few points.' },
     wouldChange: 'If the plan had allowed 15 points either way, {t:mix} would be inside its limit, and the case would be {a:T1.ready}.' },
 
   { id: 'r-ld3', use: 'drill', tier: 'misleading', setting: 'business', topic: 'a drifted mix and an insurance premium', echo: 'tm-meet-mix',
@@ -29,8 +29,8 @@ FC.cases('wealth', 'u4', [
     cues: { D1: "Her firm's insurance premium of £30,000 falls due on 1 February, four months from now",
             T1: ['premium of £30,000 falls due on 1 February, four months from now', 'she has been keeping the money for it in the shares'] },
     reason: { D1: 'The case is about what a fall would do to money that has a job on a date: {cue:D1}. Nothing in it comes out every year, rests on one thing, or is about a death or a gift.',
-              T1: 'The premium is a known size on a known date, and its money sits in shares: {cue:T1}. Her mix has moved too, and when a case shows both, the key’s answer is the bill.' },
-    not: { outcome: 'rebalance', why: 'Her mix is 9 points above her plan, which is what {o:rebalance} looks like. But a bill of £30,000 falls due on a known date with its money in shares, and the key puts money needed soon first.' },
+              T1: 'The premium is a known size on a known date, and its money sits in shares: {cue:T1}. Her mix has moved too, and when a case shows both, the answer is the bill.' },
+    not: { outcome: 'rebalance', why: 'Her mix is 9 points above her plan, which is what {o:rebalance} looks like. But a bill of £30,000 falls due on a known date with its money in shares, and money needed soon comes first.' },
     wouldChange: 'If the premium’s money were in a savings account and the only thing in the case were {t:mix}, the case would be {a:T1.drifted}.' },
 
   { id: 'r-cv4', use: 'drill', tier: 'misleading', setting: 'property', topic: 'completion money in a bond, with scary headlines', echo: 'tm-meet-bill',

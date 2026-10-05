@@ -6,7 +6,7 @@
 
 FC.unit('scams', 'u4', {
   kind: 'C',              // C classification, F facts, P procedure
-  rev: 1,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
+  rev: 2,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
   standard: 1,            // lesson-standard version this unit was built to
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author)
   tag: 'Four',
@@ -99,7 +99,7 @@ FC.unit('scams', 'u4', {
       cards: ['meet-fakeofficial', 'again-fakeofficial', 'portrait-fakeofficial', 'check-fakeofficial', 'look-fakeofficial-realpayment', 'look-fakeofficial-codescam',
               'exc-official-prize', 'exc-rush-link', 'refute-bank',
               'meet-overpayment', 'again-overpayment', 'portrait-overpayment', 'check-overpayment', 'look-overpayment-realpayment', 'look-overpayment-refundscam'] },
-    { id: 'p5', title: 'The key’s two questions about money, three whole cases, then the drill',
+    { id: 'p5', title: 'The two questions about money, three whole cases, then the drill',
       cards: ['q-m1', 'check-m1', 'q-m2', 'check-m2', 'worked-invoice', 'worked-cottage', 'worked-sofa'],
       drill: true, close: ['recap', 'transfer', 'plan'] }
   ],
@@ -108,7 +108,7 @@ FC.unit('scams', 'u4', {
   // cases holds a real payment request, because an action subject never teaches that every request has a fault (V37).
   drill: {
     key: 'u4',            // the old quick-drill totals for this unit were stored under pl:scams:stats:u2 (frozen; see E8)
-    add: 'Some of these requests are real, and some are copies made to take money. That is on purpose. Nothing in the key’s questions says that a request is a scam. They ask what it says the money is for and what it asks you to do with it, and a real request gets a name of its own, so you will need that name as often as the others. When the name is a scam, it also tells you what to do next.',
+    add: 'Some of these requests are real, and some are copies made to take money. That is on purpose. Nothing in the questions says that a request is a scam. They ask what it says the money is for and what it asks you to do with it, and a real request gets a name of its own, so you will need that name as often as the others. When the name is a scam, it also tells you what to do next.',
     rungs: [
       { ask: 'name',
         items: [['d-n-romance', 'd-n-pig'], ['d-n-advance', 'd-n-recovery'], ['d-n-real1', 'd-n-invoice'], ['d-n-link', 'd-n-official', 'd-n-over'], ['d-n-real2', 'd-n-link2']] },
@@ -150,7 +150,8 @@ FC.unit('scams', 'u4', {
   // Build notes: not shown to the learner, and left out of the fingerprint. The validator reads them.
   build: {
     history: [
-      { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the money branch, written to the rewritten key (docs/rebuild/scams-plan.md). Not yet deployed, so later edits before the first deploy stay revision 1. Nine names taught in one unit, in five parts, with the real request met first; thirteen look-alike pairs; the key’s tie-breaks taught as named exceptions; two question cards and three whole cases.' }
+      { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the money branch, written to the rewritten key (docs/rebuild/scams-plan.md). Not yet deployed, so later edits before the first deploy stay revision 1. Nine names taught in one unit, in five parts, with the real request met first; thirteen look-alike pairs; the tie-breaks taught as named exceptions; two question cards and three whole cases.' },
+      { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' }
     ],
     // What the K2 rewrite changed in this branch, and why (from docs/rebuild/scams-plan.md, section a).
     keyChanges: [

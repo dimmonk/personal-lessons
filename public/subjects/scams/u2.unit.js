@@ -7,7 +7,7 @@
 
 FC.unit('scams', 'u2', {
   kind: 'C',              // C classification, F facts, P procedure
-  rev: 1,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
+  rev: 2,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
   standard: 1,            // lesson-standard version this unit was built to
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author). The app labels a draft as a draft.
   tag: 'Two',
@@ -61,7 +61,7 @@ FC.unit('scams', 'u2', {
               'refute-closing', 'exc-searched', 'exc-helpdesk',
               'meet-refundscam', 'again-refundscam', 'portrait-refundscam', 'check-refundscam',
               'look-techsupport-refundscam', 'exc-both-ways'] },
-    { id: 'p3', title: 'The key’s question, two whole cases, then the drill',
+    { id: 'p3', title: 'The question, two whole cases, then the drill',
       cards: ['q-how', 'check-how', 'worked-wage', 'worked-form'], drill: true, close: ['recap', 'transfer', 'plan'] }
   ],
 
@@ -112,7 +112,8 @@ FC.unit('scams', 'u2', {
   build: {
     // What changed at each revision (R1). One entry for every revision from 1 to rev.
     history: [
-      { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the device branch of the rewritten key (docs/rebuild/scams-plan.md). Not yet deployed, so later edits before the first deploy stay revision 1. Four names (the real installation taught first, then the three scams told as they unfold, each with what to do on the spot), one term (search advert), six look-alike pairs, two named exceptions, and a drill that mixes a real installation into every stage.' }
+      { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the device branch of the rewritten key (docs/rebuild/scams-plan.md). Not yet deployed, so later edits before the first deploy stay revision 1. Four names (the real installation taught first, then the three scams told as they unfold, each with what to do on the spot), one term (search advert), six look-alike pairs, two named exceptions, and a drill that mixes a real installation into every stage.' },
+      { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' }
     ],
     // What the K2 rewrite changed in this branch, and why (from docs/rebuild/scams-plan.md, section a).
     keyChanges: [

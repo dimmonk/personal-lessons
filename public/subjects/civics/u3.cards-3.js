@@ -17,7 +17,7 @@ FC.cards('civics', 'u3', [
     explain: [
       'Everyone in this case wants the barrier built, and nobody can build it. The President announced it, the engineers have their plans, and the town floods every spring. What stops it is a bill: the one that decides what the government may spend this year has no money for the barrier.',
       'The government can spend only what Congress has voted. That is the rule, and it is why this case is about Congress. The engineers cannot build without money, and the President cannot hand it out. Only Congress can decide that the money is there. So Congress did not need to pass a law against the barrier. Leaving the money out was enough.',
-      'It works in the other direction too. Congress can vote the money, which lets an office start, and it can cut an amount that was voted before. Voting it, cutting it and leaving it out are three ways of deciding the same thing. The key spells out the answer: it is the answer when {when:C1.money}.'
+      'It works in the other direction too. Congress can vote the money, which lets an office start, and it can cut an amount that was voted before. Voting it, cutting it and leaving it out are three ways of deciding the same thing. This is the answer when {when:C1.money}.'
     ],
     feature: { step: 'C1', option: 'money' },
     name: 'The name for this is {o:purse}. A purse is where a person keeps their money, and the name says that Congress holds the government’s: whoever holds the purse decides what can be bought. The likeness stops there. Congress does not spend the money itself. The President and the offices that carry out the laws do that, once Congress has voted it.' },
@@ -44,7 +44,7 @@ FC.cards('civics', 'u3', [
     not: 'Raising money is not this name. Congress raises money by passing a law on a matter on the Constitution’s list, a tax for example, and that is {o:enumerated}. This name is for the other side, deciding whether the government may spend the money.',
     wild: ['“The budget passed.”', '“Congress cut the funding.”', '“The spending bill has no money for it.”', '“Congress voted the money for it.”', '“A shutdown…”'],
     self: 'In your own life you meet this when a programme you rely on is funded or cut, when a park or a service closes in a budget fight, and in the stories about a shutdown, which is what happens when the money has not been voted.',
-    ask: '“Who decides whether the money is there, and did they vote it, cut it or leave it out?” If the case turns on Congress deciding whether the government may spend money on something, the key’s answer is {a:C1.money}.' },
+    ask: '“Who decides whether the money is there, and did they vote it, cut it or leave it out?” If the case turns on Congress deciding whether the government may spend money on something, the answer is {a:C1.money}.' },
 
   { id: 'check-purse', kind: 'check', after: 'purse',
     case: 'k-rangers',
@@ -58,8 +58,8 @@ FC.cards('civics', 'u3', [
     instruction: 'Both cases are about the same rural clinics. Compare one thing: in one the law raises money, and in the other Congress decides whether the government may spend it.',
     prompt: { kind: 'which', option: 'C1.money', answer: 'l-clinic-money' },
     difference: [
-      'In Case A the bill is a tax on bottled water. A tax is a law on a matter on the list, and it takes no right away. It says where money comes from. It does not say what the government may spend it on. The key’s answer is {a:C1.listed}, and the case is {o:enumerated}.',
-      'In Case B the bill gives $90 million for grants. That is Congress deciding that the government may spend money on something: it is voting the money. The key’s answer is {a:C1.money}, and the case is {o:purse}.',
+      'In Case A the bill is a tax on bottled water. A tax is a law on a matter on the list, and it takes no right away. It says where money comes from. It does not say what the government may spend it on. The answer is {a:C1.listed}, and the case is {o:enumerated}.',
+      'In Case B the bill gives $90 million for grants. That is Congress deciding that the government may spend money on something: it is voting the money. The answer is {a:C1.money}, and the case is {o:purse}.',
       'The two come as a pair in real life. A tax raises money, and a decision to spend lets some of it out again. Which one a story is about depends on its words. “A tax on…” is the first. “Gives”, “funds”, “cuts” and “leaves out” the money are the second.'
     ] },
 
@@ -68,11 +68,11 @@ FC.cards('civics', 'u3', [
     h: 'A spending bill that is also a law on a listed matter',
     link: 'The last card separated the pair with two tidy bills. Real bills are not always so tidy. A bill that spends money is itself a law, and the money can be for something on the Constitution’s list. This card shows one.',
     case: 'x-mailfunds',
-    setup: 'This bill is a law, and it is about the post office, and the mail is one of the matters on the Constitution’s list. A law on a listed matter is what you point to for {o:enumerated}. Yet the key’s answer for this case is {a:C1.money}.',
+    setup: 'This bill is a law, and it is about the post office, and the mail is one of the matters on the Constitution’s list. A law on a listed matter is what you point to for {o:enumerated}. Yet the answer for this case is {a:C1.money}.',
     prompt: { kind: 'phrase', answer: '$400 million to buy new mail trucks' },
     because: [
-      'Read what the bill does. It gives the postal service $400 million to buy trucks. Whether the government may spend $400 million is a decision only Congress can make, and the key’s answer about money is for exactly that decision.',
+      'Read what the bill does. It gives the postal service $400 million to buy trucks. Whether the government may spend $400 million is a decision only Congress can make, and the answer about money is for exactly that decision.',
       'The mail explains why the bill is Congress’s business: the Constitution lists the matter. The money explains what Congress is deciding. A bill that spends is a law, so it can always be read both ways. If the bill had only set the price of a stamp, with no money to spend, nothing would be left but the first reading, and the answer would be {a:C1.listed}.'
     ],
-    take: 'The key decides it this way on purpose, and it is worth knowing that this is the key’s decision. In real life people say it both ways: it is a law about the mail, and it is a vote of money. The key gives each case one name, so that two people using it reach the same one and can each say why. It picks the money because the money is the one thing only Congress can give: without the vote, the trucks are not bought, whoever else is willing.' }
+    take: 'When a case shows both, the answer is the money, and this is on purpose. In real life people say it both ways: it is a law about the mail, and it is a vote of money. Each case gets one name, so that two people using the questions reach the same one and can each say why. It picks the money because the money is the one thing only Congress can give: without the vote, the trucks are not bought, whoever else is willing.' }
 ]);

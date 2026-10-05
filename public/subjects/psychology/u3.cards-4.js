@@ -17,7 +17,7 @@ FC.cards('psychology', 'u3', [
       'Attention is a good thing. People who are keen on each other give praise, gifts and time, and a quick friendship is not a fault. So the first half, on its own, says nothing is wrong.',
       'What matters is the size and the speed, set against how long the two have known each other, and then what happens to the attention. Callum’s is far more than a few dates could explain, and it comes with a hidden condition: it lasts while Priya does what he wants. When she asks for a weekend alone, it goes, and it comes back as criticism.',
       'That is why both halves are needed. The flood on its own is a keen friend. The pulling back on its own is a relationship that has cooled. Together, a person has first been made to feel very special and then made to feel they have lost it for saying no, and the natural response is to work to get it back.',
-      'The key does not ask whether Callum planned it. It asks what is done to the other person, as the case shows it, and here the case shows both halves.'
+      'The question is not whether Callum planned it. It is what is done to the other person, as the case shows it, and here the case shows both halves.'
     ],
     feature: { step: 'T1', option: 'floodpull' },
     name: 'The name for this is {o:lovebomb}. A "bomb" is a great deal arriving all at once, and here it is praise and attention. The name is for a case with both halves: the flood early on and the pulling back later. It does not need a romance. It can be a friend, a mentor or a boss.' },
@@ -63,11 +63,11 @@ FC.cards('psychology', 'u3', [
     ],
     explain: [
       'Most of what people say to each other is not one of the four. People complain, disagree, defend themselves, forget things, get annoyed, say sharp words, apologise, and say kind ones. Priya is cross, and she says so. Sam answers. That is all there is.',
-      'It is tempting, once you have learned four names for things people do to each other, to look for one of them in everything. That is a mistake the key is built to stop. The fifth answer is there so that you can say, as exactly as you can say what is going on elsewhere, that none of the four is.',
-      'Notice what "ordinary" does not mean. It does not mean polite, fair or kind. A person can be rude, unfair and wrong, and it is still {o:ordexchange} in the key’s sense, because none of the four is in the case. And it does not mean nobody was hurt. The key does not ask how upset anyone was. It asks what was done to the other person, and here the answer is: what it looks like, and nothing more.'
+      'It is tempting, once you have learned four names for things people do to each other, to look for one of them in everything. That is a mistake the questions are built to stop. The fifth answer is there so that you can say, as exactly as you can say what is going on elsewhere, that none of the four is.',
+      'Notice what "ordinary" does not mean. It does not mean polite, fair or kind. A person can be rude, unfair and wrong, and it is still {o:ordexchange} in this sense, because none of the four is in the case. And it does not mean nobody was hurt. How upset anyone was is not what is asked. The question is what was done to the other person, and here the answer is: what it looks like, and nothing more.'
     ],
     feature: { step: 'T1', option: 'plain' },
-    name: 'The name for this is {o:ordexchange}. An "exchange" is something said or done between two people, and "ordinary" says that none of the four is in it. It is the key’s name for a case where none of the four things is happening, and it is used as exactly as the other four.' },
+    name: 'The name for this is {o:ordexchange}. An "exchange" is something said or done between two people, and "ordinary" says that none of the four is in it. It is the name for a case where none of the four things is happening, and it is used as exactly as the other four.' },
 
   { id: 'again-ordexchange', kind: 'again', outcome: 'ordexchange',
     link: 'The bins gave you what to point to: {needs:ordexchange}. Here is a second case with a completely different story.',
@@ -104,7 +104,7 @@ FC.cards('psychology', 'u3', [
     idea: '"Now I know the four, I can see them everywhere. If someone upsets me, it is probably one of them."',
     verdict: 'This is wrong.',
     right: [
-      'Being upset tells you that something happened to you. It does not tell you which of the five it was. The key’s question never mentions how upset anyone was, whether it was meant, or what kind of person did it. It asks only what is done to the other person, as the case shows it.',
+      'Being upset tells you that something happened to you. It does not tell you which of the five it was. The question never mentions how upset anyone was, whether it was meant, or what kind of person did it. It asks only what is done to the other person, as the case shows it.',
       'Most of what upsets us is {o:ordexchange}: a sharp word, an unfair complaint, a refusal, a person being defensive. Treating it as one of the four has a cost. It turns an argument that could be talked about into an accusation that cannot be, and it makes the cases where one of the four is really there harder to hear.',
       'Before you use any of the four names, point to what that name needs. If you cannot point to it in the words of the case, the answer is {a:T1.plain}.'
     ],

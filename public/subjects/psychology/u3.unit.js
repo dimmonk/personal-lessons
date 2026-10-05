@@ -4,7 +4,7 @@
 
 FC.unit('psychology', 'u3', {
   kind: 'C',              // C classification, F facts, P procedure
-  rev: 1,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
+  rev: 2,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
   standard: 1,            // lesson-standard version this unit was built to
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author). The app labels a draft as a draft.
   tag: 'Three',
@@ -59,7 +59,7 @@ FC.unit('psychology', 'u3', {
     { id: 'p3', title: 'The ordinary exchange, and the four names it is mistaken for',
       cards: ['meet-ordexchange', 'again-ordexchange', 'portrait-ordexchange', 'check-ordexchange', 'refute-everywhere',
               'look-gaslight-ord', 'look-darvo-ord', 'exc-wrongly', 'look-lovebomb-ord', 'look-projection-ord', 'exc-both-late'] },
-    { id: 'p4', title: 'The key’s question',
+    { id: 'p4', title: 'The question',
       cards: ['refute-person', 'q-does', 'check-does'] },
     { id: 'p5', title: 'Two whole cases, then the drill',
       cards: ['worked-hike', 'worked-booking'], drill: true, close: ['recap', 'transfer'] }
@@ -106,7 +106,8 @@ FC.unit('psychology', 'u3', {
   build: {
     // What changed at each revision (R1). One entry for every revision from 1 to rev.
     history: [
-      { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1. Not yet deployed, so later edits before the first deploy stay revision 1.' }
+      { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1. Not yet deployed, so later edits before the first deploy stay revision 1.' },
+      { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' }
     ],
     wrongIdeas: [
       { card: 'refute-doubt', about: 'gaslight',

@@ -21,7 +21,7 @@ FC.cards('wealth', 'u1', [
     ],
     feature: { step: 'D1', option: 'handover' },
     name: [
-      'The key’s answer, and the name of this kind of case, is {a:D1.handover}. "Other people" means the people who receive the money or act for its owner, and it includes the tax office when it takes its share.',
+      'The answer, and the name of this kind of case, is {a:D1.handover}. "Other people" means the people who receive the money or act for its owner, and it includes the tax office when it takes its share.',
       'The name does not say that something will go wrong. It says that the case is about the moment when the money changes hands, or someone else has to act for its owner.'
     ] },
 
@@ -65,8 +65,8 @@ FC.cards('wealth', 'u1', [
     instruction: 'Both cases are about Joan, who is 79 and has £1,000,000. Compare one thing: does something come out of the money every year while she is alive, or does the loss arise once, when she dies?',
     prompt: { kind: 'which', option: 'D1.handover', answer: 'w-la-estate' },
     difference: [
-      'In Case A nothing comes out of Joan’s money while she is alive. The loss comes once, when she dies: the country takes 40% of the £500,000 above its limit, which is £200,000, before her children receive anything. The key’s answer is {a:D1.handover}.',
-      'In Case B nothing is said about her death. Every year the firm that runs her fund takes 1.4% of the £1,000,000, which is £14,000, and next year it takes it again. The key’s answer is {a:D1.erosion}.',
+      'In Case A nothing comes out of Joan’s money while she is alive. The loss comes once, when she dies: the country takes 40% of the £500,000 above its limit, which is £200,000, before her children receive anything. The answer is {a:D1.handover}.',
+      'In Case B nothing is said about her death. Every year the firm that runs her fund takes 1.4% of the £1,000,000, which is £14,000, and next year it takes it again. The answer is {a:D1.erosion}.',
       'Both cases are about money leaving for someone other than Joan. What separates them is when. £14,000 leaves every year she is alive (Case B). £200,000 leaves once, from what her children would have received, at her death (Case A).'
     ] },
 ]);

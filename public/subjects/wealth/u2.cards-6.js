@@ -62,8 +62,8 @@ FC.cards('wealth', 'u2', [
     instruction: 'Both cases are about Noel and {t:fund}. Compare one thing: whether a sale has already made {t:gain} that will be taxed this year.',
     prompt: { kind: 'which', option: 'E1.gainloss', answer: 'e-l-har-b' },
     difference: [
-      'In Case A Noel has sold nothing this year. A friend says his fund has run too far, and a sale is only a thought. It would bring £1,200 of tax, and nothing needs it. Holding off removes the tax. The key’s answer is {a:E1.needlesssale}, and the case is {o:defer}.',
-      'In Case B the sale has been made: £6,000 more than he paid, so £1,200 of tax. And another fund in the same account is £4,500 below what he paid. Selling that one sets the loss against the gain: the taxed gain falls to £1,500 and the tax to £300, a saving of £900. The key’s answer is {a:E1.gainloss}, and the case is {o:harvest}.',
+      'In Case A Noel has sold nothing this year. A friend says his fund has run too far, and a sale is only a thought. It would bring £1,200 of tax, and nothing needs it. Holding off removes the tax. The answer is {a:E1.needlesssale}, and the case is {o:defer}.',
+      'In Case B the sale has been made: £6,000 more than he paid, so £1,200 of tax. And another fund in the same account is £4,500 below what he paid. Selling that one sets the loss against the gain: the taxed gain falls to £1,500 and the tax to £300, a saving of £900. The answer is {a:E1.gainloss}, and the case is {o:harvest}.',
       'Both involve £1,200 and {t:fund} Noel could sell. In one, not selling is the answer. In the other, selling the second fund is. The words that decide are in the case: nothing sold yet and no need, or something sold already with a loss beside it.'
     ] }
 ]);

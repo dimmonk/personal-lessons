@@ -21,7 +21,7 @@ FC.cards('ideology', 'u1', [
       'Notice what the answer does not depend on. It does not depend on whether you think the people deserve the loyalty. It does not depend on how the text treats anyone outside the people, or anyone inside it who disagrees. Those are different questions, and this unit does not ask them.'
     ],
     feature: { step: 'D1', option: 'nation' },
-    name: 'In this unit the key’s answer is also the name of the kind of text: {a:D1.nation}. "The nation" means a people that shares a country. "Its ordinary people" means the ordinary members of that people, set against a few at the top. In both shapes it is a people that is put first.' },
+    name: 'In this unit the answer is also the name of the kind of text: {a:D1.nation}. "The nation" means a people that shares a country. "Its ordinary people" means the ordinary members of that people, set against a few at the top. In both shapes it is a people that is put first.' },
 
   { id: 'again-nation', kind: 'again', family: 'nation',
     link: 'The bridge speech gave you what to point to from one case: {needs:nation}. Here is a second case in the other shape: a newspaper column, in which a people is set against a few at the top.',
@@ -62,8 +62,8 @@ FC.cards('ideology', 'u1', [
     instruction: 'Both cases are about the closing of the Harrow cannery. Compare one thing: who is "us", and who is "them"?',
     prompt: { kind: 'which', option: 'D1.nation', answer: 'i-can-nation' },
     difference: [
-      'In Case A the cannery closes and the text sorts the people involved into two groups: the owners, who move the work and keep the profit, and the people who stood at the line for thirty years. It stands with the second group. Nobody is spoken for as a country. The key’s answer is {a:D1.class}.',
-      'In Case B the same cannery closes and the text speaks for one people, marked out by its country: "We are one people", "the whole nation is smaller". There are no owners and no workers in it, and its first duty, it says, is to the nation. The key’s answer is {a:D1.nation}.',
+      'In Case A the cannery closes and the text sorts the people involved into two groups: the owners, who move the work and keep the profit, and the people who stood at the line for thirty years. It stands with the second group. Nobody is spoken for as a country. The answer is {a:D1.class}.',
+      'In Case B the same cannery closes and the text speaks for one people, marked out by its country: "We are one people", "the whole nation is smaller". There are no owners and no workers in it, and its first duty, it says, is to the nation. The answer is {a:D1.nation}.',
       'The cannery is the same, and so is the anger. What differs is the line the text draws. In Case A it runs between those who work and those who own. In Case B it runs around the country.'
     ] },
 
@@ -72,20 +72,20 @@ FC.cards('ideology', 'u1', [
     h: 'A text that speaks of the country and still takes the workers’ side',
     link: 'The last card kept the two answers on separate stories. A real text can show both at once. Here the text speaks of the whole country, and also sets working people against owners.',
     case: 'i-x-ourcountry',
-    setup: 'The text speaks of the country, and of what the country owes the people who built it. Speaking for a country and its people is what you point to for {a:D1.nation}. Yet the key’s answer for this case is {a:D1.class}.',
+    setup: 'The text speaks of the country, and of what the country owes the people who built it. Speaking for a country and its people is what you point to for {a:D1.nation}. Yet the answer for this case is {a:D1.class}.',
     prompt: { kind: 'phrase', answer: "We are the country's workers, and we stand against the owners" },
     because: [
       'The text does speak of the country. It says the country was built by working people and should remember them. If that were all it said, it would be {a:D1.nation}. But the text goes on to name the owners, say what they did, and say "we stand against the owners". That is working people set against owners, with the text on the workers’ side.',
-      'So the case shows both answers at once. When it does, the key has to choose, and it chooses the first. A text that speaks of the country and also sets working people against owners is about the split, and the country is where the split is described.',
-      'It chooses this way round for a reason. If the case were given {a:D1.nation}, the owners and the workers would drop out of what the key looks at, and they are what the text is about.'
+      'So the case shows both answers at once. When it does, the first answer wins. A text that speaks of the country and also sets working people against owners is about the split, and the country is where the split is described.',
+      'The answer goes this way round for a reason. If the case were given {a:D1.nation}, the owners and the workers would drop out of the reading, and they are what the text is about.'
     ],
-    take: 'It is worth knowing that this is the key’s decision. In life, a speaker can mean both, and nobody can draw a sharp line between "for the country" and "for the people who work in it". The key gives each text one answer, so that two people using it reach the same one and can each say why.' },
+    take: 'It is worth knowing that this is a decision. In life, a speaker can mean both, and nobody can draw a sharp line between "for the country" and "for the people who work in it". Each text gets one answer, so that two people using the same questions reach the same one and can each say why.' },
 
   { id: 'exc-deny', kind: 'exception', ledger: 'class~nation', looksLike: 'class', is: 'nation',
     h: 'Workers and owners named only to be denied',
     link: 'The last card showed a text that speaks of the country and still takes the workers’ side. Here is the mix turned round: a text that names workers and owners and still puts the nation first.',
     case: 'i-x-deny',
-    setup: 'The text names the drivers and the dock owners. Sorting people into those who work and those who own is what you point to for {a:D1.class}. Yet the key’s answer for this case is {a:D1.nation}.',
+    setup: 'The text names the drivers and the dock owners. Sorting people into those who work and those who own is what you point to for {a:D1.class}. Yet the answer for this case is {a:D1.nation}.',
     prompt: { kind: 'phrase', answer: 'There is only one side, the nation, and it is ours' },
     because: [
       'The speaker names the two groups in order to say they are not on opposite sides. "They are not" is the point of the sentence. The text does not stand with the drivers against the dock owners, or with the dock owners against the drivers. It stands with the nation, which it calls the one side.',
@@ -93,7 +93,7 @@ FC.cards('ideology', 'u1', [
       'The last sentence confirms it. Anyone who splits people by wages and ownership is said to be working against the whole country. A text that calls the split an attack on the nation has put the nation first.'
     ],
     take: [
-      'The key’s decision printed above is for a text that shows both answers. This text does not show the first one. It names the two groups to refuse the split, so what it shows is only the second.',
+      'The decision printed above is for a text that shows both answers. This text does not show the first one. It names the two groups to refuse the split, so what it shows is only the second.',
       'This does not make every text that mentions a boss and a worker the second answer. The question is always who or what the text puts first. If it names the two groups and stands with the workers, it is {a:D1.class}.'
     ] }
 ]);

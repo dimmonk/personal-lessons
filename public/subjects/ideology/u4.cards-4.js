@@ -7,7 +7,7 @@ FC.cards('ideology', 'u4', [
   /* ---------- Two whole cases, watched ---------- */
   { id: 'worked-burial', kind: 'worked',
     h: 'A whole case, from the first question to the name',
-    link: 'You have the two names and the question that chooses between them. Before the drill, watch two cases being run from the top, in the order the key asks. You are not asked anything until the end of each.',
+    link: 'You have the two names and the question that chooses between them. Before the drill, watch two cases being run from the top, in the order the questions come. You are not asked anything until the end of each.',
     case: 'i4-w-conserv',
     steps: [
       { step: 'D1',
@@ -38,8 +38,8 @@ FC.cards('ideology', 'u4', [
     impression: {
       resembles: 'i4-meet-conserv',
       text: [
-        'The key has given its answer. Now take a second look of a different kind: does this case look like one you know? It should bring back the boundary walk. There too a text held up something handed down, and asked for it to be kept, with change slow and the people it touched asked first.',
-        'Here the key and the likeness agree, so the answer stands. The key’s question comes first, because it makes you point at words in the text. The likeness is only a second look. When the two disagree, do not pick the one you prefer. Go back to the key’s question and find the words in the text that answer it. The second whole case shows how.'
+        'The questions have given their answer. Now take a second look of a different kind: does this case look like one you know? It should bring back the boundary walk. There too a text held up something handed down, and asked for it to be kept, with change slow and the people it touched asked first.',
+        'Here the answer and the likeness agree, so it stands. The question comes first, because it makes you point at words in the text. The likeness is only a second look. When the two disagree, do not pick the one you prefer. Go back to the question and find the words in the text that answer it. The second whole case shows how.'
       ]
     } },
 
@@ -79,23 +79,23 @@ FC.cards('ideology', 'u4', [
     impression: {
       resembles: 'i4-meet-react', first: 'i4-meet-conserv',
       text: [
-        'Now the second look: does this case look like one you know? A text that speaks gently of waiting and of doing things slowly may bring back the boundary walk first, and the boundary walk was {o:conserv}. So here the likeness and the key seem to disagree.',
-        'When that happens, go back to the key’s question and find the words in the text that answer it. They are {cue:T1}. The boundary walk has nothing like them: the walk was still being walked, and nothing was asked back. The Church courts of Aldmere do: an order that had gone, called a wrong, and asked for back. So the case this one really looks like is the Church courts, and the key’s answer stands.'
+        'Now the second look: does this case look like one you know? A text that speaks gently of waiting and of doing things slowly may bring back the boundary walk first, and the boundary walk was {o:conserv}. So here the likeness and the answer seem to disagree.',
+        'When that happens, go back to the question and find the words in the text that answer it. They are {cue:T1}. The boundary walk has nothing like them: the walk was still being walked, and nothing was asked back. The Church courts of Aldmere do: an order that had gone, called a wrong, and asked for back. So the case this one really looks like is the Church courts, and the answer stands.'
       ]
     } },
 
   /* ---------- After the drill ---------- */
   { id: 'recap-ways', kind: 'recap',
     h: 'What to carry away',
-    link: 'You have now run the key on your own. This card puts the unit in one place, in the key’s words.',
+    link: 'You have now run the questions on your own. This card puts the unit in one place.',
     carry: [
       'Before you choose between the two names, check the first answer: the text must hold up old ways as what should guide, which is {a:D1.tradition}. Then ask {q:T1}',
       'Point to what the text wants done with the old ways. If it asks for what is there to be kept and for any change to be slow, and asks for nothing to come back, the name is {o:conserv}. If it says an old order has gone, that its going was a wrong, and asks for it back, the name is {o:react}.',
       'How a text sounds decides nothing. A calm text can ask for an order to be brought back, and a sharp text can ask only for a custom to be kept.',
       'Sadness is not a request. A text that mourns what has gone and asks only that what is left be kept is {o:conserv}.',
-      'Both names describe what a text asks for. "Reactionary" is often thrown as an insult and "conservative" as praise or blame, but the key uses {o:react} and {o:conserv} only for what a text says. They are not a verdict on whether the text is right, and not a verdict on the person who wrote it.',
+      'Both names describe what a text asks for. "Reactionary" is often thrown as an insult and "conservative" as praise or blame, but here {o:react} and {o:conserv} are used only for what a text says. They are not a verdict on whether the text is right, and not a verdict on the person who wrote it.',
       'Two decisions to remember. A text that speaks for one people and also holds up an old order gets the old-ways answer, even when it asks for parliament to be closed. A text that holds up old customs and also sets working people against owners gets the working-people answer. Unit One’s question decides first, and this unit’s question comes after it.',
-      'Your route is two answers, and a right name reached by a wrong first answer counts as a miss.'
+      'Your answers on the way are two, and a right name reached by a wrong first answer counts as a miss.'
     ] },
 
   { id: 'transfer-ways', kind: 'transfer',

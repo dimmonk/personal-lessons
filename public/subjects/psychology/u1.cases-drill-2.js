@@ -104,7 +104,7 @@ FC.cases('psychology', 'u1', [
     route: { D1: ['pattern'] },
     cues: { D1: ['His daughter says he has spoken to waiters, shop staff and nurses like that since she was a child', 'both his former wives say the same of how he spoke to them at home'] },
     reason: { D1: 'The case opens on one evening, and then goes on to a long view of one man: {cue:D1}. Decades, restaurants, shops, hospitals and two homes, with the same thing in each.' },
-    not: { outcome: 'tactic', why: 'What Victor said to the waitress is something done to another person, and on its own that would be the answer. The case goes on to show the same thing through decades, in many places and with many people. When a case shows both, the key gives the larger answer.' },
+    not: { outcome: 'tactic', why: 'What Victor said to the waitress is something done to another person, and on its own that would be the answer. The case goes on to show the same thing through decades, in many places and with many people. When a case shows both, the answer is the larger one.' },
     wouldChange: 'If the case ended after its first sentence, it would be {a:D1.tactic}: one evening, and something said to one person about her.' },
 
   { id: 'g-handover', use: 'drill', tier: 'misleading', setting: 'home', topic: 'late for a handover', echo: 'g-birthday-brother',
@@ -113,7 +113,7 @@ FC.cases('psychology', 'u1', [
     route: { D1: ['tactic'] },
     cues: { D1: ["I wouldn't be late if you didn't make every handover a battle", "You stress me so much I can't think straight"] },
     reason: { D1: 'Simone gives a reason for being late, and the reason is about the boy’s father and is said to him: {cue:D1}. The case shows where it leaves him: apologising, and offering to do the driving.' },
-    not: { outcome: 'reasoning', why: 'She is giving a reason for something she did, and on its own that would be {a:D1.reasoning}. But the reason is made out of the other person and said to him. When a case shows both, the key’s answer is {a:D1.tactic}.' },
+    not: { outcome: 'reasoning', why: 'She is giving a reason for something she did, and on its own that would be {a:D1.reasoning}. But the reason is made out of the other person and said to him. When a case shows both, the answer is {a:D1.tactic}.' },
     wouldChange: 'If Simone had said to a friend afterwards, "The traffic was terrible, anyone would have been late", the reason would be about her own lateness and nobody would be on the receiving end. That would be {a:D1.reasoning}.' },
 
   { id: 'g-savings', use: 'drill', tier: 'misleading', setting: 'money', topic: 'a thirty-year-old savings account', echo: 'g-moira',

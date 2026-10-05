@@ -20,7 +20,7 @@ FC.cases('math', 'u6', [
       S2: 'How tall is the tooth in the enlargement?'
     },
     reason: {
-      M1: 'The problem asks {cue:M1}, a length on one of two things of exactly the same shape. Nothing in it follows an amount through time, hides a number that a {t:formula} must fit, or counts ways, so the key’s first answer is {a:M1.shape}.',
+      M1: 'The problem asks {cue:M1}, a length on one of two things of exactly the same shape. Nothing in it follows an amount through time, hides a number that a {t:formula} must fit, or counts ways, so the answer to the first question is {a:M1.shape}.',
       S1: 'The words {cue:S1} give two things of exactly the same shape at different sizes, with a length measured on both. That is {a:S1.matching}.',
       S2: 'The words {cue:S2} ask how long a part is, which is {a:S2.length}.'
     },
@@ -75,7 +75,7 @@ FC.cases('math', 'u6', [
       S2: 'How many times more floor does the second tile cover?'
     },
     reason: {
-      M1: 'The problem asks {cue:M1}, a question about how much one of two things of exactly the same shape has, and not a count of ways, an amount through time or a number that a {t:formula} must fit, so the key’s first answer is {a:M1.shape}.',
+      M1: 'The problem asks {cue:M1}, a question about how much one of two things of exactly the same shape has, and not a count of ways, an amount through time or a number that a {t:formula} must fit, so the answer to the first question is {a:M1.shape}.',
       S1: 'The words {cue:S1} give two things of exactly the same shape at different sizes, which is {a:S1.matching}.',
       S2: 'The words {cue:S2} ask how much area or volume something has, which is {a:S2.room}.'
     },
@@ -134,7 +134,7 @@ FC.cases('math', 'u6', [
       S2: 'How much does the big box hold?'
     },
     reason: {
-      M1: 'The problem asks {cue:M1}, a question about how much one of two things of exactly the same shape has, and not a count of ways, an amount through time or a number that a {t:formula} must fit, so the key’s first answer is {a:M1.shape}.',
+      M1: 'The problem asks {cue:M1}, a question about how much one of two things of exactly the same shape has, and not a count of ways, an amount through time or a number that a {t:formula} must fit, so the answer to the first question is {a:M1.shape}.',
       S1: 'The words {cue:S1} give two things of exactly the same shape at different sizes, which is {a:S1.matching}.',
       S2: 'The words {cue:S2} ask how much area or volume something has, which is {a:S2.room}.'
     },
@@ -196,7 +196,7 @@ FC.cases('math', 'u6', [
       S2: 'How much paint does the hull of the bigger boat need?'
     },
     reason: {
-      M1: 'The problem asks {cue:M1}, a question about how much one of two things of exactly the same shape has, and not a count of ways, an amount through time or a number that a {t:formula} must fit, so the key’s first answer is {a:M1.shape}.',
+      M1: 'The problem asks {cue:M1}, a question about how much one of two things of exactly the same shape has, and not a count of ways, an amount through time or a number that a {t:formula} must fit, so the answer to the first question is {a:M1.shape}.',
       S1: 'The words {cue:S1} give two things of exactly the same shape at different sizes, which is {a:S1.matching}.',
       S2: 'The words {cue:S2} ask how much area or volume something has, which is {a:S2.room}.'
     },

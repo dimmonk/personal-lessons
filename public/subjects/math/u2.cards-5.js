@@ -8,10 +8,10 @@ FC.cards('math', 'u2', [
   /* ---------- The key's one question ---------- */
   { id: 'q-w1', kind: 'question', step: 'W1',
     h: 'The one question that tells the six kinds apart',
-    link: 'At the foot of each kind’s first card you saw the key’s question with one answer under it. This card puts the question and its six answers in one place, as the key shows them, and says why the key asks it before any working.',
+    link: 'At the foot of each kind’s first card you saw the question with one answer under it. This card puts the question and its six answers in one place and says why it is asked before any working.',
     decides: [
       'A wrong procedure gives a number just as neat as the right one, and nothing in the number says that it is wrong. So the number cannot tell you which procedure to use, or whether you used the right one. Only the question can, and only the words of the problem can answer the question.',
-      'That is why this question comes before any working, and why every problem in this unit starts with it. In this unit it is the only question after the key’s first one, so its answer leads straight to a name, and the name leads to the procedure. Your route is the answer to the first question and then this one.'
+      'That is why this question comes before any working, and why every problem in this unit starts with it. In this unit it is the only question after the first one, so its answer leads straight to a name, and the name leads to the procedure. Your answers on the way are your answer to the first question and then your answer to this one.'
     ],
     how: [
       'Read the last sentence of the problem first, because the question is usually there. Find the words that say what is wanted about the number or numbers, and mark them.',
@@ -27,9 +27,9 @@ FC.cards('math', 'u2', [
   /* ---------- After the drill ---------- */
   { id: 'recap-whole', kind: 'recap',
     h: 'What to carry away',
-    link: 'You have now worked problems of all six kinds on your own. This card puts the unit in one place, in the key’s words.',
+    link: 'You have now worked problems of all six kinds on your own. This card puts the unit in one place.',
     carry: [
-      'Before any working, ask what the problem wants to know about its numbers, and point to the words that say it. If you cannot point to them, you do not have an answer yet. The key asks: {q:W1}',
+      'Before any working, ask what the problem wants to know about its numbers, and point to the words that say it. If you cannot point to them, you do not have an answer yet. The question is: {q:W1}',
       'One number leads to {o:prime}, a yes or a no, or to {o:factor}, a list. Two numbers lead to {o:hcf}, the biggest piece that fits both, or to {o:lcm}, the first time two repeats meet. A count with one group size or one loop leads to {o:modrem}. A root or pi, with the question whether it can be written exactly, leads to {o:irrat}.',
       'The numbers do not tell you the kind. 12 and 18 can ask for the biggest equal piece, 6, or for the first time two repeats meet, 36.',
       'Two numbers have a check on the answer. The biggest equal piece is never more than the smaller number, and the first time two repeats meet is never less than the bigger one.',

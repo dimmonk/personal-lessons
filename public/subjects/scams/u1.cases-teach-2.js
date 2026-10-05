@@ -65,7 +65,7 @@ FC.cases('scams', 'u1', [
       { text: "Can you send £300 to my sister's account today" },
       { text: 'I will explain later', note: 'That is a promise to explain. It is not what the text asks her to do.' }
     ],
-    reason: { D1: 'The text asks Gabi to send money: {cue:D1}. The story about the phone is the reason it gives, and the promise to explain comes after the request. The words that answer the key’s question are the ones that say what she is to send and where.' } },
+    reason: { D1: 'The text asks Gabi to send money: {cue:D1}. The story about the phone is the reason it gives, and the promise to explain comes after the request. The words that answer the question are the ones that say what she is to send and where.' } },
 
   /* ---------- the look-alike pair: the same gas bill, a notice and a demand ---------- */
   { id: 'g-gas-debit', use: 'teach', tier: 'clean', setting: 'money', topic: 'a direct debit notice from the gas company',
@@ -88,7 +88,7 @@ FC.cases('scams', 'u1', [
       { text: 'A woman rings Harold and says she is from his broadband company', note: 'That says who the caller claims to be. It does not say what she asks.' },
       { text: 'We owe you a refund of £48 for the outage', note: 'That is the reason she gives, and a refund sounds like money. But it is something she says she will give him, not something she asks him to do.' },
       { text: 'Press the Share button in this meeting app so that I can see your screen' },
-      { text: 'Then you will need to send back the extra I put in by mistake', note: 'This does ask for money, and it is why the case looks like a request to pay. But it comes second, and the key takes the earlier answer in its list when a message asks for two things.' }
+      { text: 'Then you will need to send back the extra I put in by mistake', note: 'This does ask for money, and it is why the case looks like a request to pay. But it comes second, and when a message asks for two things, the answer is the earlier one in the list.' }
     ] },
 
   { id: 'g-fine-signin', use: 'teach', tier: 'misleading', setting: 'government', topic: 'a parking fine paid after signing in', name: 'The parking fine',
@@ -99,7 +99,7 @@ FC.cases('scams', 'u1', [
     segments: [
       { text: 'Northway Council: your parking fine of £35 is overdue and will double on Friday', note: 'That is the reason the text gives, and it is about money. But it is the story. What the text asks Lorna to do comes next.' },
       { text: 'Sign in to your council account with your username and password at northway-fines.com' },
-      { text: 'to pay it', note: 'This says what the sign-in is for, and it is why the case looks like a request to pay. But the thing she is told to do first is to sign in, and the key takes the earlier answer when a message asks for two things.' }
+      { text: 'to pay it', note: 'This says what the sign-in is for, and it is why the case looks like a request to pay. But the thing she is told to do first is to sign in, and when a message asks for two things, the answer is the earlier one.' }
     ] },
 
   /* ---------- the look-alike pair: the same SIM, a fee and a list of facts ---------- */

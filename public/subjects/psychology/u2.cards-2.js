@@ -65,7 +65,7 @@ FC.cards('psychology', 'u2', [
     instruction: 'Both cases are about Rosa and the price of a concert ticket. Compare one thing: the reason she gives. In one case it says that something she did is fine. In the other it gives money already spent as the reason for her next step.',
     prompt: { kind: 'which', option: 'R1.backward', answer: 'ticket-fever' },
     difference: [
-      'In Case A the £80 is spent, and there is a next step to decide: go out with a fever, or stay in. The reason Rosa gives for going is the £80. The key’s answer is {a:R1.backward}, and the case is {o:sunkcost}.',
-      'In Case B Rosa has done something she said she would never do: she paid a reseller. The reason she gives ("a once-in-a-lifetime show") is not a reason for any next step. It says the purchase is fine. The key’s answer is {a:R1.addstory}, and the case is {o:dissonance}.'
+      'In Case A the £80 is spent, and there is a next step to decide: go out with a fever, or stay in. The reason Rosa gives for going is the £80. The answer is {a:R1.backward}, and the case is {o:sunkcost}.',
+      'In Case B Rosa has done something she said she would never do: she paid a reseller. The reason she gives ("a once-in-a-lifetime show") is not a reason for any next step. It says the purchase is fine. The answer is {a:R1.addstory}, and the case is {o:dissonance}.'
     ] }
 ]);

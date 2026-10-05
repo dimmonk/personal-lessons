@@ -6,12 +6,12 @@
 
 FC.unit('ideology', 'u1', {
   kind: 'C',              // C classification, F facts, P procedure
-  rev: 1,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
+  rev: 2,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
   standard: 1,            // lesson-standard version this unit was built to
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author). The app labels a draft as a draft.
   tag: 'One',
   title: { text: 'Whose side a text is on' },   // a gate unit is titled in plain words; the answers are taught inside it
-  subtitle: 'The key’s first question, and the five answers it sorts every text into',
+  subtitle: 'The first question, and the five answers it sorts every text into',
   teaches: { steps: ['D1'], outcomes: [], terms: ['ideology'], families: ['class', 'nation', 'tradition', 'rights', 'none'] },
   assumes: [],            // the first unit of the subject
 
@@ -77,7 +77,7 @@ FC.unit('ideology', 'u1', {
       cards: ['meet-none', 'again-none', 'portrait-none', 'check-none', 'refute-insult'] },
     { id: 'p6', title: 'The fifth answer beside the other four',
       cards: ['look-class-none', 'look-nation-none', 'look-tradition-none', 'look-rights-none', 'exc-ruler'] },
-    { id: 'p7', title: 'The key’s question, two whole cases, then the drill',
+    { id: 'p7', title: 'The question, two whole cases, then the drill',
       cards: ['q-sides', 'check-sides', 'worked-homes', 'worked-wage'], drill: true, close: ['recap-sides', 'transfer-sides'] }
   ],
 
@@ -119,7 +119,8 @@ FC.unit('ideology', 'u1', {
   build: {
     // What changed at each revision (R1). One entry for every revision from 1 to rev.
     history: [
-      { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the gate unit of Political Ideologies. Five answers taught as five families, the fifth ("no side named") with its own cases and an exception for a ruler’s orders. Not yet deployed, so later edits before the first deploy stay revision 1.' }
+      { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the gate unit of Political Ideologies. Five answers taught as five families, the fifth ("no side named") with its own cases and an exception for a ruler’s orders. Not yet deployed, so later edits before the first deploy stay revision 1.' },
+      { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' }
     ],
     // What the K2 rewrite changed in the key's first question and the structure around it, and why. This unit carries the lines
     // of the whole key and of the gate; the units that teach the other questions carry theirs. (docs/rebuild/ideology-plan.md, part a)

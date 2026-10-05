@@ -6,7 +6,7 @@
 
 FC.cases('ideology', 'u3', [
 
-  /* ---------- Stage one: the key's answers are shown, the learner gives the name ---------- */
+  /* ---------- Stage one: the answers are shown, the learner gives the name ---------- */
   { id: 'n-nm-nat', use: 'drill', tier: 'clean', setting: 'housing', topic: 'a national housing plan',
     text: "Housing minister Aldous, announcing a plan to build homes in every region of Brevia: 'Whether you live on the coast or in the hills, whatever you do for a living, this plan is for all of us. Brevia is one people, and it looks after its own. The plan goes to parliament for a vote, and the opposition may change every line of it.'",
     outcome: 'nationalism', route: { D1: ['nation'], N1: ['whole'], N2: ['keep'] },

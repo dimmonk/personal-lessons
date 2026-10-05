@@ -63,6 +63,6 @@ FC.cases('ideology', 'u5', [
     cues: { D1: 'Nobody is to be placed above anybody',
             R1: ['A rule that treats every applicant alike has left women out of the scheme', 'Change the entry rule until women join as often as men'] },
     reason: { D1: 'The text wants fair treatment for women and wants no one placed above another: {cue:D1}.',
-              R1: 'The text praises a paid scheme, and then says a rule that treats every applicant alike has left women out of it: {cue:R1}. When a text shows both a fair start for everyone and a rule that leaves a group behind, the key’s answer is {a:R1.rules}.' },
-    not: { outcome: 'modlib', why: 'The text does praise a scheme that is paid for by all, which is what {o:modlib} asks for. But it goes on to say that a rule that treats every applicant alike has left women out, and asks for that rule to change. When a text shows both, the key chooses {o:idegal}.' } }
+              R1: 'The text praises a paid scheme, and then says a rule that treats every applicant alike has left women out of it: {cue:R1}. When a text shows both a fair start for everyone and a rule that leaves a group behind, the answer is {a:R1.rules}.' },
+    not: { outcome: 'modlib', why: 'The text does praise a scheme that is paid for by all, which is what {o:modlib} asks for. But it goes on to say that a rule that treats every applicant alike has left women out, and asks for that rule to change. When a text shows both, the answer is {o:idegal}.' } }
 ]);

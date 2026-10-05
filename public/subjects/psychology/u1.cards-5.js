@@ -13,8 +13,8 @@ FC.cards('psychology', 'u1', [
     instruction: 'Both cases are about Cora in the week the buyer withdrew his offer for her flat. Compare one thing: is anything said or done to one particular person, about that person?',
     prompt: { kind: 'which', option: 'D1.tactic', answer: 'g-sale-finn' },
     difference: [
-      'In Case A Cora is hard to be around, and the whole office feels it. But nothing is said or done to any one of them about them. One-word answers and headphones are how she is with everyone this week. The key’s answer is {a:D1.none}.',
-      'In Case B it is the same week and the same bad news. This time something is said to one particular person, about him: the mistake was his, and perhaps he is not up to the job. The case shows where it leaves Finn: staying late every night. The key’s answer is {a:D1.tactic}.',
+      'In Case A Cora is hard to be around, and the whole office feels it. But nothing is said or done to any one of them about them. One-word answers and headphones are how she is with everyone this week. The answer is {a:D1.none}.',
+      'In Case B it is the same week and the same bad news. This time something is said to one particular person, about him: the mistake was his, and perhaps he is not up to the job. The case shows where it leaves Finn: staying late every night. The answer is {a:D1.tactic}.',
       'The hard week is real in both cases, and in Case B you can keep it in mind. It does not change the answer. A bad week explains a mood. It does not turn what was said to Finn into a mood. Once something is said or done to one person about them, there are two people to keep in view.'
     ] },
 
@@ -24,8 +24,8 @@ FC.cards('psychology', 'u1', [
     instruction: 'Both cases are about Ruth in the week she lost her job. Compare one thing: does she give reasons for a view or a choice, or does the case only show how she felt and acted?',
     prompt: { kind: 'which', option: 'D1.reasoning', answer: 'g-redundancy-choice' },
     difference: [
-      'In Case A you are shown how the news has hit Ruth: no sleep, no appetite, a cancelled weekend. She has not made a choice that she then defends, and she gives no reasons for anything. Cancelling the weekend is part of how the week went. The key’s answer is {a:D1.none}.',
-      'In Case B the same news is followed by a choice, and by a reason for it. Ruth has decided not to apply for the two posts, and she says why: they would only get rid of her again. Now there is a piece of reasoning to look at, and you could go on to ask whether it is sound. The key’s answer is {a:D1.reasoning}.',
+      'In Case A you are shown how the news has hit Ruth: no sleep, no appetite, a cancelled weekend. She has not made a choice that she then defends, and she gives no reasons for anything. Cancelling the weekend is part of how the week went. The answer is {a:D1.none}.',
+      'In Case B the same news is followed by a choice, and by a reason for it. Ruth has decided not to apply for the two posts, and she says why: they would only get rid of her again. Now there is a piece of reasoning to look at, and you could go on to ask whether it is sound. The answer is {a:D1.reasoning}.',
       'Feeling bad is not reasoning, even when it leads a person to do things. It becomes reasoning at the point where the person says why: where a view or a choice is put forward, and something is offered in support of it.'
     ] },
 
@@ -35,19 +35,19 @@ FC.cards('psychology', 'u1', [
     instruction: 'Both cases are about Greta putting money into something on a feeling. Compare one thing: is the case one piece of thinking about one choice, or does it follow her through years, places and relationships?',
     prompt: { kind: 'which', option: 'D1.pattern', answer: 'g-eleven' },
     difference: [
-      'In Case A there is one choice, the café, and Greta’s reasons for it: a feeling, the location, how hard her friend works. Her brother only listens. You could go on to ask how good those reasons are. The key’s answer is {a:D1.reasoning}.',
-      'In Case B no single choice is being weighed. The case counts eleven of them, across twenty-five years and three cities, seen by three people who each know a different part of her life. The key’s answer is {a:D1.pattern}.',
-      'Case A may well be the twelfth venture. From Case A alone you cannot know that, and the key answers for the case in front of you. If one case shows both, a piece of reasoning and the years behind it, the key chooses as it did with Mia and the phone: the answer is {a:D1.pattern}.'
+      'In Case A there is one choice, the café, and Greta’s reasons for it: a feeling, the location, how hard her friend works. Her brother only listens. You could go on to ask how good those reasons are. The answer is {a:D1.reasoning}.',
+      'In Case B no single choice is being weighed. The case counts eleven of them, across twenty-five years and three cities, seen by three people who each know a different part of her life. The answer is {a:D1.pattern}.',
+      'Case A may well be the twelfth venture. From Case A alone you cannot know that, and the answer is for the case in front of you. If one case shows both, a piece of reasoning and the years behind it, the answer is the same as with Mia and the phone: {a:D1.pattern}.'
     ] },
 
   /* ---------- The key's first question, as a question ---------- */
   { id: 'q-kind', kind: 'question', step: 'D1',
     h: 'The question you have been answering all along',
-    link: 'Since the job offer you have seen the key’s question at the foot of each new kind, with one answer under it. This card puts the question and its four answers in one place, as the key shows them, and says why the key asks it before anything else.',
+    link: 'Since the job offer you have seen the question at the foot of each new kind, with one answer under it. This card puts the question and its four answers in one place, and says why it is asked before anything else.',
     decides: [
       'A case can only be judged on what it is made of. If you take one evening for a person’s whole character, you go looking for years that the case does not have. If you take something said to another person for the speaker’s private reasoning, the person it was said to drops out of view. Getting the kind wrong means asking the wrong questions next, however carefully you ask them.',
       'That is why this question comes first, before any finer name, and why every case in this subject starts with it.',
-      'In this unit it is the only question, so its answer is the name. In the rest of the subject, each of the first three answers is followed by one more question, and that question leads to a finer name. The fourth answer is followed by nothing. The answers you give on the way to a name are called your route: this first answer, and then the answer to the next question. Once a route has two answers, two things are marked separately: the name you give a case, and your route to it. A right name reached by a wrong answer to this first question counts as a miss, which is why the first question gets a whole unit of practice.'
+      'In this unit it is the only question, so its answer is the name. In the rest of the subject, each of the first three answers is followed by one more question, and that question leads to a finer name. The fourth answer is followed by nothing. Your answers on the way to a name are this first answer and then the answer to the next question. Once there are two answers, two things are marked separately: the name you give a case, and your answers on the way to it. A right name reached by a wrong answer to this first question counts as a miss, which is why the first question gets a whole unit of practice.'
     ],
     how: [
       'Read the whole case before you answer, the last sentence included. The last sentence is often where the years are, or where you learn how long the speaker has known the person. Then go through the four kinds in this order, and stop at the first one the case shows.',
@@ -57,7 +57,7 @@ FC.cards('psychology', 'u1', [
       'If the case shows none of the three, what is left is {a:D1.none}: {needs:none}.',
       'Whichever answer you give, put your finger on the words that show it: the years and the places, what was said and to whom, the reasons, or the words that tie the case to one occasion. If you cannot point, you do not have an answer yet.'
     ],
-    whenBoth: 'Some cases show two of the four at once. You have met two. In the shouting, Marta’s reason for her own act was made out of Kofi. In Mia and the phone, one evening turned out to have years behind it. The key gives every case one answer, and the order above is how it chooses. Each pair below has been set side by side earlier in this unit, and each has one question that separates it.' },
+    whenBoth: 'Some cases show two of the four at once. You have met two. In the shouting, Marta’s reason for her own act was made out of Kofi. In Mia and the phone, one evening turned out to have years behind it. Every case gets one answer, and the order above is how it is chosen. Each pair below has been set side by side earlier in this unit, and each has one question that separates it.' },
 
   { id: 'check-kind', kind: 'check', after: 'D1',
     case: 'g-restaurant',
@@ -66,7 +66,7 @@ FC.cards('psychology', 'u1', [
   /* ---------- Two whole cases, watched ---------- */
   { id: 'worked-dent', kind: 'worked',
     h: 'A whole case, from the question to the answer',
-    link: 'You have the four kinds and the key’s question about them. Before the drill, watch two cases being run from the top. You are not asked anything until the end of each.',
+    link: 'You have the four kinds and the question about them. Before the drill, watch two cases being run from the top. You are not asked anything until the end of each.',
     case: 'g-dent',
     steps: [
       { step: 'D1',
@@ -90,14 +90,14 @@ FC.cards('psychology', 'u1', [
         answer: 'b' },
       reason: [
         'For {a:D1.reasoning} you must be able to point to this: {needs:reasoning}. Reece does defend himself, and that is why the case can look like it. But look at who his words are about and who they are said to. He says the dent had been there for months: that is said to Imani, about what happened between the two of them. He says she never notices anything about her own car, and that it was typical of her to accuse him: that is said to Imani, about Imani. Nobody in this case is only listening.',
-        'It is the question from Dev and the forgotten birthday. {test:reasoning~tactic} Here they are said to another person, about her, so the key’s answer is {a:D1.tactic}.'
+        'It is the question from Dev and the forgotten birthday. {test:reasoning~tactic} Here they are said to another person, about her, so the answer is {a:D1.tactic}.'
       ]
     },
     impression: {
       resembles: 'g-deadline',
       text: [
-        'The key has given its answer. Now take a second look of a different kind: does this case look like one you know? It should bring back the deadline. There too, someone was asked a fair question, said that it had not happened that way, turned to what the asker was like, and sent them away to check themselves.',
-        'Here the key and the likeness agree, so the answer stands. The key’s question comes first, because it makes you point at words in the case. The likeness is only a second look. When the two disagree, do not pick the one you prefer. Go back to the key’s question and find the words in the case that answer it. The second whole case shows how.'
+        'You have the answer. Now take a second look of a different kind: does this case look like one you know? It should bring back the deadline. There too, someone was asked a fair question, said that it had not happened that way, turned to what the asker was like, and sent them away to check themselves.',
+        'Here the answer and the likeness agree, so the answer stands. The question comes first, because it makes you point at words in the case. The likeness is only a second look. When the two disagree, do not pick the one you prefer. Go back to the question and find the words in the case that answer it. The second whole case shows how.'
       ]
     } },
 
@@ -125,31 +125,31 @@ FC.cards('psychology', 'u1', [
         ],
         answer: 'b' },
       reason: [
-        'A person giving reasons for something she did is what you point to for {a:D1.reasoning}, and the first half of this case shows it. The second half shows the same thing across twenty years, at family occasions and at three jobs. When a case shows both, the key’s answer is {a:D1.pattern}.',
-        'This is the choice the key made with Mia and the phone. There, one evening of something done to another person turned out to have years behind it. Here, one excuse does. The larger claim is the one the case supports, so it is the one the key gives.',
+        'A person giving reasons for something she did is what you point to for {a:D1.reasoning}, and the first half of this case shows it. The second half shows the same thing across twenty years, at family occasions and at three jobs. When a case shows both, the answer is {a:D1.pattern}.',
+        'This is the choice made with Mia and the phone. There, one evening of something done to another person turned out to have years behind it. Here, one excuse does. The larger claim is the one the case supports, so it is the answer.',
         'Petra’s reasons on the day may even be true. The traffic may have been impossible. The answer does not depend on that. It depends on how much of her life the case shows.'
       ]
     },
     impression: {
       resembles: 'g-moira', first: 'g-birthday-brother',
       text: [
-        'Now the second look: does this case look like one you know? A missed family occasion and a ready reason may bring back Dev and the forgotten birthday first, and Dev’s case, as he told it to his brother, was {a:D1.reasoning}. So here the likeness and the key seem to disagree.',
-        'When that happens, go back to the key’s question and find the words in the case that answer it. They are {cue:D1}. Dev’s case has nothing like them: it was one birthday and one evening. Moira’s case does: twenty years, more than one place, and each time somebody else to blame. So the case this one really looks like is Moira’s, and the key’s answer stands.'
+        'Now the second look: does this case look like one you know? A missed family occasion and a ready reason may bring back Dev and the forgotten birthday first, and Dev’s case, as he told it to his brother, was {a:D1.reasoning}. So here the likeness and the answer seem to disagree.',
+        'When that happens, go back to the question and find the words in the case that answer it. They are {cue:D1}. Dev’s case has nothing like them: it was one birthday and one evening. Moira’s case does: twenty years, more than one place, and each time somebody else to blame. So the case this one really looks like is Moira’s, and the answer stands.'
       ]
     } },
 
   /* ---------- After the drill ---------- */
   { id: 'recap-kind', kind: 'recap',
     h: 'What to carry away',
-    link: 'You have now answered the key’s first question on your own. This card puts the unit in one place, in the key’s words.',
+    link: 'You have now answered the first question on your own. This card puts the unit in one place.',
     carry: [
       'Before any name, ask what the case is made of, and point to the words that show it. If you cannot point, you do not have an answer yet.',
-      'The kind is not a verdict. Each of the first three can be fair or unfair, harmless or harmful. Sorting that out is what the key’s later questions are for.',
+      'The kind is not a verdict. Each of the first three can be fair or unfair, harmless or harmful. Sorting that out is what the later questions are for.',
       'One evening is never {a:D1.pattern}, however bad the evening was and whoever says "always". Count the occasions, the places and the people.',
       'A hard week after something real is {a:D1.none}. It does not need a bigger word, and giving it one is a mistake about the person.',
       'None of the four kinds is a diagnosis. Each says only what a case shows, and a diagnosis is something only a trained professional can give, after a long assessment.',
-      'When a case shows two kinds, the key chooses: years, places and relationships first; then anything said or done to another person about them; then one person’s reasons.',
-      'Every case in this subject starts with this question. Your answer to it is the first part of your route to a name.'
+      'When a case shows two kinds, the answer is chosen in this order: years, places and relationships first; then anything said or done to another person about them; then one person’s reasons.',
+      'Every case in this subject starts with this question. Your answer to it is the first of your answers on the way to a name.'
     ] },
 
   { id: 'transfer-kind', kind: 'transfer',

@@ -29,7 +29,7 @@ FC.cards('wealth', 'u2', [
       'Here are the two paths in numbers. Sell: the £30,000 becomes £28,800 to invest after £1,200 of tax. Do not sell: £30,000 stays invested, and the £1,200 she did not pay keeps growing with the rest. At 4% a year for twenty years, £1,200 grows to about £2,629, by {t:compounding}. That is the difference between the two paths for this one decision.',
       'Notice what is not claimed. Not selling does not make the £6,000 free of tax for ever. If Imogen sells one day, the gain, which may be larger by then, will be taxed. In some countries the tax on {t:gain} is wiped out when the owner dies; that differs from place to place. What she gains is time: the tax is paid later, and the money she did not pay out has been working in the meantime.',
       'The line printed below gives two ways a sale can be unneeded, and Imogen’s case is the first: there is no reason to sell. The second is that the sale has a job, but new money could do the same job. Here is an example. A person chose a mix of 60% shares and 40% bonds, and after a good year shares have risen to 62%. An adviser says to sell some shares and buy bonds, to put it back. If the person is about to pay in new money, putting all of it into bonds does the same thing with no sale, and so no tax. The sale was only one way to do the job.',
-      'This is why the key’s answer is not about the sale itself. It is about a tax bill on a sale that does not have to happen.'
+      'This is why the answer is not about the sale itself. It is about a tax bill on a sale that does not have to happen.'
     ],
     feature: { step: 'E1', option: 'needlesssale' },
     name: 'The name for this is {o:defer}. It says what to do: hold off the sale, so that the tax is put off. "Delay" is exact: the tax is put off, not cancelled.' },
@@ -50,7 +50,7 @@ FC.cards('wealth', 'u2', [
       'The reason given for selling is a remark, not a need: "lock in the profit", "it has had a good run", "it looks expensive", "let us tidy up". None of these is a bill or a use for the money.',
       'The tax bill is known before the sale. It is the gain times the rate: £6,000 at 20% is £1,200. A person can put that number next to the reason and see which is larger.',
       'The gain is on paper, so the person feels rich and feels the pull to bank it. Selling makes it feel safe. What it does is make it taxable.',
-      'It also shows up as a sale to put {t:mix} back. Say a person chose 60% shares and 40% bonds. After a good year the shares are worth £264,000 and the bonds £160,000, so shares are 62% of £424,000. An adviser says to sell some shares and buy bonds. That sale brings tax on the gain in the shares sold. But new money paid in can do the same job: £20,000 put wholly into bonds makes them £180,000 of £444,000, and shares are then 59.5%, with no sale and no tax. For such a case the key’s answer to the first question is {a:D1.erosion}, and not {a:D1.timing}, because the tax could be avoided.',
+      'It also shows up as a sale to put {t:mix} back. Say a person chose 60% shares and 40% bonds. After a good year the shares are worth £264,000 and the bonds £160,000, so shares are 62% of £424,000. An adviser says to sell some shares and buy bonds. That sale brings tax on the gain in the shares sold. But new money paid in can do the same job: £20,000 put wholly into bonds makes them £180,000 of £444,000, and shares are then 59.5%, with no sale and no tax. For such a case the answer to the first question is {a:D1.erosion}, and not {a:D1.timing}, because the tax could be avoided.',
       'The delay is not an escape. The tax is still due when something is sold, and the gain may be larger by then. What is gained is time, and growth on the money not paid.'
     ],
     not: 'It is not a case where the sale is needed. If the money is wanted for a bill or for living costs, selling has a job, and the tax is the price of doing it; this name does not apply, though a tax bill is in the case.',
@@ -75,8 +75,8 @@ FC.cards('wealth', 'u2', [
     instruction: 'Both cases are about Imani and her ordinary account. Compare one thing: whether the tax arrives without a sale, or only if one is made.',
     prompt: { kind: 'which', option: 'E1.needlesssale', answer: 'e-l-loc-b' },
     difference: [
-      'In Case A the tax is £500 a year on the interest of {t:bond} fund, and Imani sells nothing. It comes every year for as long as the fund stays where it is. The key’s answer is {a:E1.incometax}, and the case is {o:location}.',
-      'In Case B nothing is taxed yet. The tax of £1,200 would come only if she sold the fund of shares, and nothing needs her to. If she does not sell, there is nothing to pay. The key’s answer is {a:E1.needlesssale}, and the case is {o:defer}.',
+      'In Case A the tax is £500 a year on the interest of {t:bond} fund, and Imani sells nothing. It comes every year for as long as the fund stays where it is. The answer is {a:E1.incometax}, and the case is {o:location}.',
+      'In Case B nothing is taxed yet. The tax of £1,200 would come only if she sold the fund of shares, and nothing needs her to. If she does not sell, there is nothing to pay. The answer is {a:E1.needlesssale}, and the case is {o:defer}.',
       'Both are tax in an ordinary account, and both could be smaller. But one comes every year whatever Imani does, and the other comes only if she acts. The fix for the first is to move {t:fund} to another account. The fix for the second is to leave the fund where it is.'
     ] }
 ]);

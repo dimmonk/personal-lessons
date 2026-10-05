@@ -21,9 +21,9 @@ FC.cases('math', 'u4', [
       G2: ['How many tins will it hold after 8 weeks?']
     },
     reason: {
-      M1: 'The words {cue:M1} follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a {t:formula}, and there is no shape or chance, so the key’s first answer is {a:M1.growth}.',
-      G1: 'The words {cue:G1} show the amount going up by the same number every week, whatever it has reached so far, so the key’s answer is {a:G1.adds}.',
-      G2: 'The words {cue:G2} give a time and ask for the amount at the end of it, so the key’s answer is {a:G2.willbe}. For this kind either answer to this question leads to the same procedure, run forwards for the amount and backwards for the time.'
+      M1: 'The words {cue:M1} follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a {t:formula}, and there is no shape or chance, so the answer to the first question is {a:M1.growth}.',
+      G1: 'The words {cue:G1} show the amount going up by the same number every week, whatever it has reached so far, so the answer is {a:G1.adds}.',
+      G2: 'The words {cue:G2} give a time and ask for the amount at the end of it, so the answer is {a:G2.willbe}. For this kind either answer to this question leads to the same procedure, run forwards for the amount and backwards for the time.'
     },
     not: {
       outcome: 'expg',
@@ -72,9 +72,9 @@ FC.cases('math', 'u4', [
       G2: ['After how many days will 30 litres be left?']
     },
     reason: {
-      M1: 'The words {cue:M1} follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a {t:formula}, and there is no shape or chance, so the key’s first answer is {a:M1.growth}.',
-      G1: 'The words {cue:G1} show the amount going down by the same number every day, whatever it has reached so far, so the key’s answer is {a:G1.adds}.',
-      G2: 'The words {cue:G2} give a target for the amount and ask how long until it gets there, so the key’s answer is {a:G2.howlong}. For this kind either answer to this question leads to the same procedure, run forwards for the amount and backwards for the time.'
+      M1: 'The words {cue:M1} follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a {t:formula}, and there is no shape or chance, so the answer to the first question is {a:M1.growth}.',
+      G1: 'The words {cue:G1} show the amount going down by the same number every day, whatever it has reached so far, so the answer is {a:G1.adds}.',
+      G2: 'The words {cue:G2} give a target for the amount and ask how long until it gets there, so the answer is {a:G2.howlong}. For this kind either answer to this question leads to the same procedure, run forwards for the amount and backwards for the time.'
     },
     not: {
       outcome: 'logsolve',
@@ -129,9 +129,9 @@ FC.cases('math', 'u4', [
       G2: ['How much will she owe after 12 months?']
     },
     reason: {
-      M1: 'The words {cue:M1} follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a {t:formula}, and there is no shape or chance, so the key’s first answer is {a:M1.growth}.',
-      G1: 'The words {cue:G1} show the amount going down by the same number every month, whatever it has reached so far, so the key’s answer is {a:G1.adds}.',
-      G2: 'The words {cue:G2} give a time and ask for the amount at the end of it, so the key’s answer is {a:G2.willbe}. For this kind either answer to this question leads to the same procedure, run forwards for the amount and backwards for the time.'
+      M1: 'The words {cue:M1} follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a {t:formula}, and there is no shape or chance, so the answer to the first question is {a:M1.growth}.',
+      G1: 'The words {cue:G1} show the amount going down by the same number every month, whatever it has reached so far, so the answer is {a:G1.adds}.',
+      G2: 'The words {cue:G2} give a time and ask for the amount at the end of it, so the answer is {a:G2.willbe}. For this kind either answer to this question leads to the same procedure, run forwards for the amount and backwards for the time.'
     },
     not: {
       outcome: 'expg',
@@ -180,9 +180,9 @@ FC.cases('math', 'u4', [
       G2: ['How many passengers will it carry in a week, after 3 more weeks?']
     },
     reason: {
-      M1: 'The words {cue:M1} follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a {t:formula}, and there is no shape or chance, so the key’s first answer is {a:M1.growth}.',
-      G1: 'The words {cue:G1} show the amount being multiplied by the same number every week, as a percentage, a doubling or a halving is, so the key’s answer is {a:G1.multiplies}.',
-      G2: 'The words {cue:G2} give a time and ask for the amount at the end of it, so the key’s answer is {a:G2.willbe}.'
+      M1: 'The words {cue:M1} follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a {t:formula}, and there is no shape or chance, so the answer to the first question is {a:M1.growth}.',
+      G1: 'The words {cue:G1} show the amount being multiplied by the same number every week, as a percentage, a doubling or a halving is, so the answer is {a:G1.multiplies}.',
+      G2: 'The words {cue:G2} give a time and ask for the amount at the end of it, so the answer is {a:G2.willbe}.'
     },
     not: {
       outcome: 'oneoff',
@@ -237,9 +237,9 @@ FC.cases('math', 'u4', [
       G2: ['How much will be left after 5 days?']
     },
     reason: {
-      M1: 'The words {cue:M1} follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a {t:formula}, and there is no shape or chance, so the key’s first answer is {a:M1.growth}.',
-      G1: 'The words {cue:G1} show the amount being multiplied by the same number every day, as a percentage, a doubling or a halving is, so the key’s answer is {a:G1.multiplies}.',
-      G2: 'The words {cue:G2} give a time and ask for the amount at the end of it, so the key’s answer is {a:G2.willbe}.'
+      M1: 'The words {cue:M1} follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a {t:formula}, and there is no shape or chance, so the answer to the first question is {a:M1.growth}.',
+      G1: 'The words {cue:G1} show the amount being multiplied by the same number every day, as a percentage, a doubling or a halving is, so the answer is {a:G1.multiplies}.',
+      G2: 'The words {cue:G2} give a time and ask for the amount at the end of it, so the answer is {a:G2.willbe}.'
     },
     not: {
       outcome: 'logsolve',

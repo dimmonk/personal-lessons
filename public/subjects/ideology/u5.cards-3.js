@@ -32,8 +32,8 @@ FC.cards('ideology', 'u5', [
       'What this text is made of is a complaint about a rule, and the complaint is not about unkindness. Nobody wrote the test to keep the villages out. This rule treats every child alike. The text says that this is the trouble: a rule that is the same for everyone can still lead to results that are not the same across groups, when the groups do not stand in the same place to begin with. A bus that does not reach the test is not written in any rule, and it decides who passes.',
       'So the text asks for something that neither of the first two names asks for. The first would say the test is fair because it is the same for all. The second would pay for a bus or a tutor for any child who needs one, and would not say that the test itself is at fault. This text says the test is at fault, and wants the rules changed: not the same rules for everyone, but whatever rules give fair results across groups.',
       'That is where the word you have just met comes in. A text of this kind is asking for {t:equity}: treating groups differently where that is needed, so that results come out fair. It need not use the word.',
-      'Notice the last sentence of the letter. It says that nobody is to be placed above anybody. That matters for the name: the text wants results fair across groups, and it ranks no group higher than another. A text that placed one people above the others would be answering the key’s first question differently.',
-      'People argue, often sharply, about whether rules should be changed in this way, and the key takes no side. It asks what the text says: whether it names rules that leave a group behind, and wants them changed.'
+      'Notice the last sentence of the letter. It says that nobody is to be placed above anybody. That matters for the name: the text wants results fair across groups, and it ranks no group higher than another. A text that placed one people above the others would be answering the first question differently.',
+      'People argue, often sharply, about whether rules should be changed in this way, and no side is taken here. The question is what the text says: whether it names rules that leave a group behind, and wants them changed.'
     ],
     feature: { step: 'R1', option: 'rules' },
     name: 'The name for this is {o:idegal}. "Group" because the text is about groups of people: here, the people of some villages. "Equality" because what the text asks for is results that are equal across groups, with no group placed above another.' },
@@ -56,7 +56,7 @@ FC.cards('ideology', 'u5', [
       'It says a rule leaves the group behind without anyone intending it. "Nobody wrote it to keep us out" is a common line. The complaint is about what a rule does, not about who wrote it.',
       'It asks for the rules or habits to be changed, and not only for the group to be given help. The target is what the rules say.',
       'It may use the word {t:equity}, but it need not.',
-      'It does not place one group above another. A text that placed one group above others would answer the key’s first question differently.'
+      'It does not place one group above another. A text that placed one group above others would answer the first question differently.'
     ],
     not: [
       'Naming a group is not enough. A text can name a group and ask for nothing more than the same help for everyone: that is not this name. What you point to is a rule that treats everyone alike, said to leave the group behind, and the request for it to change.',

@@ -62,8 +62,8 @@ FC.cards('math', 'u3', [
     instruction: 'Both problems are at the same bakery and have a loaf and a price in them. Compare one thing: is there a calculation with a result it came to, or only a rate and a new amount?',
     prompt: { kind: 'which', option: 'A1.rate', answer: 'm3-la-loaf-prop' },
     difference: [
-      'In Case A Jon buys three loaves and a pastry, and pays €11 in all. The loaves and the pastry are put together in one calculation, and the question is what one loaf cost. There is a result to undo, and the key’s answer is {a:A1.formula}.',
-      'In Case B the bakery sells four loaves for €12, and the question is what ten loaves cost. There is a rate and a new amount, and nothing else, and the key’s answer is {a:A1.rate}.',
+      'In Case A Jon buys three loaves and a pastry, and pays €11 in all. The loaves and the pastry are put together in one calculation, and the question is what one loaf cost. There is a result to undo, and the answer is {a:A1.formula}.',
+      'In Case B the bakery sells four loaves for €12, and the question is what ten loaves cost. There is a rate and a new amount, and nothing else, and the answer is {a:A1.rate}.',
       'Both have a loaf, a price and a few small numbers, and the working for one can look like the working for the other. What differs is what is given: a calculation and its result, or a rate and a new amount.'
     ] },
 
@@ -72,15 +72,15 @@ FC.cards('math', 'u3', [
     h: 'A price for each unit, with a charge on top',
     link: 'The last card kept the two kinds apart with a loaf in each. Real problems are less tidy. Here is a bill with a price for each unit in it, which is exactly what a rate looks like.',
     case: 'm3-exc-bill',
-    setup: 'The bill gives 25 cents for each unit of electricity, which is so much for so many, and it asks for a number of units. That is what you point to for {a:A1.rate}. Yet the key’s answer for this case is {a:A1.formula}.',
+    setup: 'The bill gives 25 cents for each unit of electricity, which is so much for so many, and it asks for a number of units. That is what you point to for {a:A1.rate}. Yet the answer for this case is {a:A1.formula}.',
     prompt: { kind: 'phrase', answer: 'a standing charge of €8' },
     because: [
       'Look at what else the bill contains. There is a standing charge of €8 that does not depend on the number of units: it is paid whether 1 unit or 1,000 units are used. So the bill is not 25 cents multiplied by the units. It is 8 plus 0.25 times the units, a calculation with two parts.',
       'And look at what the problem gives. There is no new amount to scale a rate to. There is a result, the bill of €38, and the question is what number of units went into the calculation to produce it. That is working backwards from a result.',
-      'So the problem shows both: a price for each thing, which looks like a rate, and a fixed amount added on top, which makes it a calculation. When it shows both, the key’s answer is {a:A1.formula}.'
+      'So the problem shows both: a price for each thing, which looks like a rate, and a fixed amount added on top, which makes it a calculation. When it shows both, the answer is {a:A1.formula}.'
     ],
     take: [
-      'This is the key’s own decision, and the line it draws is a fine one. A fixed amount on top of a rate, such as a call-out fee or a standing charge, makes a calculation. Without the €8, the same bill would be a rate, 25 cents for each unit, and the question would need a number of units to scale it to.',
-      'If the problem had said only that 25 cents is charged for each unit, and asked for the cost of 120 units, there would be a rate and a new amount, and nothing else, and the key’s answer would be {a:A1.rate}.'
+      'This is a decision made for the questions, and the line it draws is a fine one. A fixed amount on top of a rate, such as a call-out fee or a standing charge, makes a calculation. Without the €8, the same bill would be a rate, 25 cents for each unit, and the question would need a number of units to scale it to.',
+      'If the problem had said only that 25 cents is charged for each unit, and asked for the cost of 120 units, there would be a rate and a new amount, and nothing else, and the answer would be {a:A1.rate}.'
     ] }
 ]);

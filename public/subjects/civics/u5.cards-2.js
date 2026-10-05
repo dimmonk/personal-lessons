@@ -5,7 +5,7 @@ FC.cards('civics', 'u5', [
   /* ---------- A word the second name leans on ---------- */
   { id: 'term-precedent', kind: 'term', term: 'precedent',
     h: 'What a judge does with an earlier ruling',
-    link: 'The next of the four names is about a judge reading a law, and the judge in it uses one more word. It is not part of the key’s questions, so here it comes first, with a case.',
+    link: 'The next of the four names is about a judge reading a law, and the judge in it uses one more word. It is not part of the questions, so here it comes first, with a case.',
     case: 'foodtruck',
     plain: [
       'The first judge had to decide whether the word "shop" covers a food truck. The town’s licensing law did not say, so the judge decided. That ruling is now an earlier ruling on the word.',
@@ -67,8 +67,8 @@ FC.cards('civics', 'u5', [
     instruction: 'Both cases are about the same park rule, and in both a person was fined. Compare one thing: what the person asks the judge about the rule. In one case it is whether the rule is allowed at all. In the other it is whether the rule covers what the person did.',
     prompt: { kind: 'which', option: 'J1.check', answer: 'ls-amp-speech' },
     difference: [
-      'In Case A, Dee used a loudspeaker at a rally and was fined. She tells the judge that the rule takes away her right to speak. She is saying that the rule clashes with the Constitution. The key’s answer is {a:J1.check}, and the case is {o:review}.',
-      'In Case B, Eli played a violin through a small amplifier and was fined. He does not say the rule is wrong. He asks the judge whether a violin through a small amplifier is the kind of sound the rule is about. He is asking what its words cover. The key’s answer is {a:J1.words}, and the case is {o:interpret}.',
+      'In Case A, Dee used a loudspeaker at a rally and was fined. She tells the judge that the rule takes away her right to speak. She is saying that the rule clashes with the Constitution. The answer is {a:J1.check}, and the case is {o:review}.',
+      'In Case B, Eli played a violin through a small amplifier and was fined. He does not say the rule is wrong. He asks the judge whether a violin through a small amplifier is the kind of sound the rule is about. He is asking what its words cover. The answer is {a:J1.words}, and the case is {o:interpret}.',
       'The rule is the same and so is the fine. What differs is what the person asks the judge about it: whether it is allowed at all, or how far its words reach.'
     ] }
 ]);

@@ -46,7 +46,7 @@ FC.cases('math', 'u2', [
       { text: 'wants to split them into equal groups, with more than one group and more than one visitor in each group.' },
       { text: 'Is that possible?', note: 'That is the question, a yes or a no. The words that say what has to be true of the groups come before it.' }
     ],
-    reason: { W1: 'The words {cue:W1} give one number, 73, and ask only whether any packing of that kind exists. That is a yes or a no about one number, and nothing else is asked, so the key’s answer is {a:W1.split}.' } },
+    reason: { W1: 'The words {cue:W1} give one number, 73, and ask only whether any packing of that kind exists. That is a yes or a no about one number, and nothing else is asked, so the answer is {a:W1.split}.' } },
 
   /* ---------- The second kind: breaking one number into primes ---------- */
   { id: 'wd-puzzle', use: 'teach', tier: 'clean', setting: 'home', topic: 'a puzzle on a cereal box', name: 'The cereal-box puzzle', outcome: 'factor',
@@ -72,5 +72,5 @@ FC.cases('math', 'u2', [
       { text: 'A museum label reads 45', note: 'That gives the one number. You are asked for the words that say what is to be found about it.' },
       { text: 'The curator asks visitors which prime numbers multiply together to give 45' }
     ],
-    reason: { W1: 'The words {cue:W1} give one number, 45, and ask for the prime numbers it is made of. That is more than a yes or a no about whether it splits, and it concerns one number, so the key’s answer is {a:W1.parts}.' } }
+    reason: { W1: 'The words {cue:W1} give one number, 45, and ask for the prime numbers it is made of. That is more than a yes or a no about whether it splits, and it concerns one number, so the answer is {a:W1.parts}.' } }
 ]);

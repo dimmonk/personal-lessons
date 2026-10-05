@@ -20,7 +20,7 @@ FC.cases('stats', 'u6', [
     cues: { S1: 'The reading coach works', K1: 'picks the 12 students with the lowest reading scores in the fall' },
     reason: { S1: 'The numbers are given, and the principal says {cue:S1}. That is a claim of cause.',
               K1: 'The 12 were picked for having the lowest scores: the school {cue:K1}. A score is how well a student reads plus how the day went, so the lowest 12 are partly the unlucky 12, and their scores drift back toward usual by spring with no coach at all.' },
-    not: { outcome: 'nocontrol', why: 'No group went without the coach, and the case shows that too. But the 12 were picked at their worst, and when a case shows both, the key’s answer is {a:K1.extreme}.' },
+    not: { outcome: 'nocontrol', why: 'No group went without the coach, and the case shows that too. But the 12 were picked at their worst, and when a case shows both, the answer is {a:K1.extreme}.' },
     wouldChange: 'If the school had also picked the 24 lowest and given the coach to 12 of them by lottery, the 12 without the coach would show how much of the 14 points comes back anyway.' },
 
   { id: 'k-f-stretch', use: 'drill', tier: 'clean', setting: 'work', topic: 'a stretch break decided by a lottery',
@@ -28,8 +28,8 @@ FC.cases('stats', 'u6', [
     outcome: 'cause_ok', route: { S1: ['holds'], H1: ['causes'] },
     cues: { S1: 'It drew 25 of its 50 agents by lottery to take the break each hour', H1: 'Stretch breaks cut errors' , K1: 'It drew 25 of its 50 agents by lottery to take the break each hour'},
     reason: { S1: 'Take the parts in order. All 50 agents are counted in the same way, and the numbers are given. A second group went without, and {cue:S1}. Nothing is wrong in any part.',
-              H1: 'The center says {cue:H1}, and the key’s answer to what the figures show is {a:H1.causes}, from groups formed by a draw.',
-              K1: 'The key asks {q:K1} Here {cue:K1}, so nothing else is likelier to be in one group than the other, and none of the four answers fits. This claim is one in which nothing is wrong, and its answer comes from the first question, {a:S1.holds}.' },
+              H1: 'The center says {cue:H1}, and the answer to what the figures show is {a:H1.causes}, from groups formed by a draw.',
+              K1: 'The question is {q:K1} Here {cue:K1}, so nothing else is likelier to be in one group than the other, and none of the four answers fits. This claim is one in which nothing is wrong, and its answer comes from the first question, {a:S1.holds}.' },
     not: { outcome: 'confound', why: 'The agents did not choose whether to take the break. A lottery did, so nothing else is likelier to be in one group than the other.' },
     wouldChange: 'If agents had chosen for themselves whether to take the break, and the keener ones had chosen it, the answer would be {a:S1.cause}, with something else that differs between the groups.' },
 
@@ -67,7 +67,7 @@ FC.cases('stats', 'u6', [
     cues: { S1: 'The new analysts turned the funds around', K1: 'picks its 10 stock funds with the worst returns last year' },
     reason: { S1: 'The returns are given, and the company says {cue:S1}. That is a claim of cause.',
               K1: 'The 10 funds were picked for their worst returns: the company {cue:K1}. A year’s return is how a fund is run plus how the year went, and the worst ten of the year are partly the unluckiest ten. Their returns drift back toward usual with no new analysts.' },
-    not: { outcome: 'nocontrol', why: 'No fund kept its old analyst for comparison, and the case shows that too. But the ten were picked at their worst, and when a case shows both, the key’s answer is {a:K1.extreme}.' },
+    not: { outcome: 'nocontrol', why: 'No fund kept its old analyst for comparison, and the case shows that too. But the ten were picked at their worst, and when a case shows both, the answer is {a:K1.extreme}.' },
     wouldChange: 'If the company had hired new analysts for 5 of the 10 worst funds, picked by lottery, and left the other 5 alone, the 5 left alone would show how much comes back anyway.' },
 
   { id: 'k-r-walk', use: 'drill', tier: 'clean', setting: 'learning', topic: 'a morning walk before first class, decided by a draw',
@@ -75,7 +75,7 @@ FC.cases('stats', 'u6', [
     outcome: 'cause_ok', route: { S1: ['holds'], H1: ['causes'] },
     cues: { S1: 'It drew 30 of 60 students by lottery to walk before first class', H1: 'The morning walk improves attention' },
     reason: { S1: 'Take the parts in order. All 60 students are counted in the same way, and the numbers are given. A second group went without, and {cue:S1}. Nothing is wrong in any part.',
-              H1: 'The school says {cue:H1}, and the key’s answer to what the figures show is {a:H1.causes}, from groups formed by a draw.' },
+              H1: 'The school says {cue:H1}, and the answer to what the figures show is {a:H1.causes}, from groups formed by a draw.' },
     not: { outcome: 'nocontrol', why: 'There is a second group of 30 students who did not walk, counted in the same way. {o:nocontrol} needs the lack of exactly that.' },
     wouldChange: 'If the school had counted off-task minutes only for the 30 who walked, before and after, the answer would be {a:S1.cause}, with nothing to set beside the walkers.' },
 
@@ -102,7 +102,7 @@ FC.cases('stats', 'u6', [
     outcome: 'cause_ok', route: { S1: ['holds'], H1: ['causes'] },
     cues: { S1: 'drew 200 names by lottery', H1: 'Free bus passes help people find work' },
     reason: { S1: 'Take the parts in order. All 400 job seekers are checked in the same way, and the numbers are given. A second group went without, and the city {cue:S1}. Nothing is wrong in any part.',
-              H1: 'The city says {cue:H1}, and the key’s answer to what the figures show is {a:H1.causes}, from groups formed by a draw.' },
+              H1: 'The city says {cue:H1}, and the answer to what the figures show is {a:H1.causes}, from groups formed by a draw.' },
     not: { outcome: 'confound', why: 'The job seekers did not choose whether to get a pass. A lottery did, so nothing else is likelier to be in one group than the other.' },
     wouldChange: 'If the passes had gone to the applicants who asked first, the answer would be {a:S1.cause}, with something else that could differ between the groups.' }
 ]);

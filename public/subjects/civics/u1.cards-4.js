@@ -21,7 +21,7 @@ FC.cards('civics', 'u1', [
       'One more thing, because it is easy to get wrong: a judge in a state’s court is not in this kind. A judge is a judge, whichever court the judge sits in, and the kind for a judge is the one you have just met.'
     ],
     feature: { step: 'D1', option: 'states' },
-    name: 'The key’s answer, and so the name of the kind, is {a:D1.states}. “Government” here means the people and offices who make the decisions for a place. A state’s government is its lawmakers, its governor and its offices. A city, a town or a county has a council or a board, and often a mayor.' },
+    name: 'The answer, and so the name of the kind, is {a:D1.states}. “Government” here means the people and offices who make the decisions for a place. A state’s government is its lawmakers, its governor and its offices. A city, a town or a county has a council or a board, and often a mayor.' },
 
   { id: 'again-states', kind: 'again', family: 'states',
     link: 'The market square gave you what to point to: {needs:states}. Here is a second case, and this time the government is a whole state, not a city.',
@@ -48,7 +48,7 @@ FC.cards('civics', 'u1', [
     ],
     wild: ['"The city council voted..."', '"The state legislature passed..."', '"A county ordinance..."', '"The governor ordered..."', '"You need a permit from the town."'],
     self: 'In your own life this is the kind that makes most of the rules you meet day to day: what you need to drive, to rent a home, to start a business, where you may park, when the pool is open. Its rules also change when you move.',
-    ask: '"Whose government made this decision: one state’s, or one city’s, town’s or county’s?" If it is, the key’s answer is {a:D1.states}.' },
+    ask: '"Whose government made this decision: one state’s, or one city’s, town’s or county’s?" If it is, the answer is {a:D1.states}.' },
 
   { id: 'check-states', kind: 'check', after: 'states',
     case: 'k-pool',
@@ -63,8 +63,8 @@ FC.cards('civics', 'u1', [
     instruction: 'Both cases are about parking on Elm Street. Compare one thing: whose decision does each story end on?',
     prompt: { kind: 'which', option: 'D1.states', answer: 'l-parking-council' },
     difference: [
-      'In Case A a driver has a ticket and asks a judge to cancel it, and the judge does. The ticket is in the story as how the matter reached the judge. The story ends on the judge’s decision. The key’s answer is {a:D1.courts}.',
-      'In Case B nobody is in court. The city council votes to double the fine for stopping on Elm Street. The council is a city’s own government, deciding what the rule will be. The key’s answer is {a:D1.states}.',
+      'In Case A a driver has a ticket and asks a judge to cancel it, and the judge does. The ticket is in the story as how the matter reached the judge. The story ends on the judge’s decision. The answer is {a:D1.courts}.',
+      'In Case B nobody is in court. The city council votes to double the fine for stopping on Elm Street. The council is a city’s own government, deciding what the rule will be. The answer is {a:D1.states}.',
       'A parking fine belongs to the city in both stories, so you cannot tell the cases apart by their subject. What separates them is whether the story ends with a council making a rule or with a judge deciding about a ticket.'
     ] },
 
@@ -72,14 +72,14 @@ FC.cards('civics', 'u1', [
     h: 'A judge in a state’s own court',
     link: 'The last card kept the two kinds tidy: a council on one side and a judge on the other. A state has judges of its own, and a state’s judge can rule on a county’s rule. That makes the story sound as if it all belongs to the state.',
     case: 'x-statejudge',
-    setup: 'The case is full of a county and a state: a county’s rule, a county’s order, and a judge in the state’s own court. A decision by the government of a state or a county is what you point to for {a:D1.states}. Yet the key’s answer for this case is {a:D1.courts}.',
+    setup: 'The case is full of a county and a state: a county’s rule, a county’s order, and a judge in the state’s own court. A decision by the government of a state or a county is what you point to for {a:D1.states}. Yet the answer for this case is {a:D1.courts}.',
     prompt: { kind: 'phrase', answer: 'a judge in the state’s court heard both sides and ruled' },
     because: [
       'Read who makes the last decision. The county made a rule and told Mrs Lund to give a dog away, and those came first. The last decision is the judge’s: the judge heard both sides and ruled that she must do it.',
       'A judge in a state’s court is still a judge. The state’s own government is its lawmakers, its governor and its offices, and the judge is not one of them. The state did not decide this case. A judge did.',
-      'So the key looks at what the decision-maker is, not at which court the judge sits in. Any judge, whether the court belongs to the whole country or to a state, is in the third kind.'
+      'So the question is about what the decision-maker is, not which court the judge sits in. Any judge, whether the court belongs to the whole country or to a state, is in the third kind.'
     ],
-    take: 'This holds the other way round too: a judge of the whole country’s courts and a judge of a state’s courts are both in the kind for a judge. The key does not ask which court. It asks who decides.' },
+    take: 'This holds the other way round too: a judge of the whole country’s courts and a judge of a state’s courts are both in the kind for a judge. The question is not which court. It is who decides.' },
 
   /* ---------- The fifth and sixth look-alike pairs ---------- */
   { id: 'look-president-states', kind: 'lookalike', ledger: 'president~states',
@@ -89,8 +89,8 @@ FC.cards('civics', 'u1', [
     instruction: 'Both cases are about an inspector who finds dirty floors and orders a place shut. Compare one thing: whose office does the inspector work for?',
     prompt: { kind: 'which', option: 'D1.states', answer: 'l-inspect-state' },
     difference: [
-      'In Case A the inspector works for a federal office, one that belongs to the government of the whole country. The decision is that office’s. The key’s answer is {a:D1.president}.',
-      'In Case B the inspector works for a state’s own health department. The decision is that state’s. The key’s answer is {a:D1.states}.',
+      'In Case A the inspector works for a federal office, one that belongs to the government of the whole country. The decision is that office’s. The answer is {a:D1.president}.',
+      'In Case B the inspector works for a state’s own health department. The decision is that state’s. The answer is {a:D1.states}.',
       'What the inspector does is the same in both cases, word for word. So you cannot tell these two kinds apart by what is done. You can only tell by whose office does it.'
     ] },
 
@@ -101,8 +101,8 @@ FC.cards('civics', 'u1', [
     instruction: 'Both cases are about cutting the tax on income for families who earn under $40,000 a year. Compare one thing: do the lawmakers make rules for the whole country, or for one state?',
     prompt: { kind: 'which', option: 'D1.states', answer: 'l-tax-state' },
     difference: [
-      'In Case A the House of Representatives votes, and the bill goes to the Senate. These lawmakers make laws for the whole country, so the tax is the national tax on income. The key’s answer is {a:D1.congress}.',
-      'In Case B the legislature of the state of Orland votes, and the cut is to the state’s own tax. These lawmakers belong to one state. The key’s answer is {a:D1.states}.',
+      'In Case A the House of Representatives votes, and the bill goes to the Senate. These lawmakers make laws for the whole country, so the tax is the national tax on income. The answer is {a:D1.congress}.',
+      'In Case B the legislature of the state of Orland votes, and the cut is to the state’s own tax. These lawmakers belong to one state. The answer is {a:D1.states}.',
       'Both the whole country and a state can tax income, so the subject is the same in both. What separates the cases is which lawmakers voted, and whose tax it is.'
     ] },
 

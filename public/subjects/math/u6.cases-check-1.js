@@ -194,13 +194,13 @@ FC.cases('math', 'u6', [
         working: 'The angle is 40°. The longest side, opposite the square corner, is the string, 50 m. The side opposite the angle is the height of the kite. The side next to the angle, the one that is not the longest, is the ground under the kite'
       },
       {
-        does: 'Choose the calculator key that joins the side you know to the side you want',
-        working: 'You know the longest side (50 m) and want the side opposite the angle. The sin key joins those two: sin = opposite ÷ longest'
+        does: 'Choose the calculator button that joins the side you know to the side you want',
+        working: 'You know the longest side (50 m) and want the side opposite the angle. The sin button joins those two: sin = opposite ÷ longest'
       },
-      { does: 'Write the key’s comparison with the numbers in', working: 'sin 40° = height ÷ 50' },
+      { does: 'Write the button’s comparison with the numbers in', working: 'sin 40° = height ÷ 50' },
       { does: 'Get the side you want on its own', working: 'height = 50 × sin 40°' },
       {
-        does: 'Read the key’s value off the calculator, set to degrees, and finish the sum',
+        does: 'Read the button’s value off the calculator, set to degrees, and finish the sum',
         working: 'sin 40° = 0.6428; 50 × 0.6428 = 32.14, so about 32.1 m'
       }
     ],
@@ -210,17 +210,17 @@ FC.cases('math', 'u6', [
         {
           id: 's1',
           text: '38.3 m',
-          slip: 'you use the cos key, which compares the side next to the angle with the longest side, though the two sides in this problem are the longest side and the side opposite the angle.'
+          slip: 'you use the cos button, which compares the side next to the angle with the longest side, though the two sides in this problem are the longest side and the side opposite the angle.'
         },
         {
           id: 's2',
           text: '77.8 m',
-          slip: 'you divide by the key’s value, though the side you want is the one on top of the key’s comparison and the side you know is the one under it, so you should multiply.'
+          slip: 'you divide by the button’s value, though the side you want is the one on top of the button’s comparison and the side you know is the one under it, so you should multiply.'
         }
       ],
       right: 'r'
     },
-    why: 'In a {t:righttriangle} the angle settles how long each side is compared with the others, whatever the size of the triangle, and each calculator key gives one of those comparisons for the angle you type in. Choosing the key whose two sides are the one you know and the one you want, and then multiplying or dividing by its value, turns that comparison into the missing length.'
+    why: 'In a {t:righttriangle} the angle settles how long each side is compared with the others, whatever the size of the triangle, and each calculator button gives one of those comparisons for the angle you type in. Choosing the button whose two sides are the one you know and the one you want, and then multiplying or dividing by its value, turns that comparison into the missing length.'
   },
 
   {
@@ -239,13 +239,13 @@ FC.cases('math', 'u6', [
         working: 'The angle is 70°. The longest side, opposite the square corner, is the ladder, 6 m. The side opposite the angle is the height the ladder reaches up the wall. The side next to the angle, the one that is not the longest, is the distance from the foot of the ladder to the wall'
       },
       {
-        does: 'Choose the calculator key that joins the side you know to the side you want',
-        working: 'You know the longest side (6 m) and want the side next to the angle. The cos key joins those two: cos = next to ÷ longest'
+        does: 'Choose the calculator button that joins the side you know to the side you want',
+        working: 'You know the longest side (6 m) and want the side next to the angle. The cos button joins those two: cos = next to ÷ longest'
       },
-      { does: 'Write the key’s comparison with the numbers in', working: 'cos 70° = distance ÷ 6' },
+      { does: 'Write the button’s comparison with the numbers in', working: 'cos 70° = distance ÷ 6' },
       { does: 'Get the side you want on its own', working: 'distance = 6 × cos 70°' },
       {
-        does: 'Read the key’s value off the calculator, set to degrees, and finish the sum',
+        does: 'Read the button’s value off the calculator, set to degrees, and finish the sum',
         working: 'cos 70° = 0.342; 6 × 0.342 = 2.052, so about 2.1 m'
       }
     ],
@@ -255,17 +255,17 @@ FC.cases('math', 'u6', [
         {
           id: 's1',
           text: '5.6 m',
-          slip: 'you use the sin key, which compares the side opposite the angle with the longest side, though the two sides in this problem are the longest side and the side next to the angle.'
+          slip: 'you use the sin button, which compares the side opposite the angle with the longest side, though the two sides in this problem are the longest side and the side next to the angle.'
         },
         {
           id: 's2',
           text: '3.8 m',
-          slip: 'your calculator is set to radians and not to degrees, so the cos key reads 70 as 70 radians and gives 0.6333.'
+          slip: 'your calculator is set to radians and not to degrees, so the cos button reads 70 as 70 radians and gives 0.6333.'
         }
       ],
       right: 'r'
     },
-    why: 'In a {t:righttriangle} the angle settles how long each side is compared with the others, whatever the size of the triangle, and each calculator key gives one of those comparisons for the angle you type in. Choosing the key whose two sides are the one you know and the one you want, and then multiplying or dividing by its value, turns that comparison into the missing length.'
+    why: 'In a {t:righttriangle} the angle settles how long each side is compared with the others, whatever the size of the triangle, and each calculator button gives one of those comparisons for the angle you type in. Choosing the button whose two sides are the one you know and the one you want, and then multiplying or dividing by its value, turns that comparison into the missing length.'
   },
 
   {

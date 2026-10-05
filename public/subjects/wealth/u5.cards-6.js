@@ -8,10 +8,10 @@ FC.cards('wealth', 'u5', [
   /* ---------- The key's question, as a question ---------- */
   { id: 'q-handover', kind: 'question', step: 'H1',
     h: 'The question you have been answering all along',
-    link: 'Since Edith’s will you have seen the key’s question at the foot of each new name, with one answer under it. This card puts the question and its five answers in one place, as the key shows them, and says why the key asks it.',
+    link: 'Since Edith’s will you have seen the question at the foot of each new name, with one answer under it. This card puts the question and its five answers in one place, and says why it is asked.',
     decides: [
       'The name comes from what the case shows could go wrong, and not from the size of the money, the age of the owner, or what somebody is selling. Rosalind’s two cases had the same flat, the same savings and the same divorce, and got different names, because of one sentence about one paper.',
-      'Something bought for a problem the case does not show, such as a family trust for a family with nothing to answer, costs money every year and answers nothing. And notice what the key does not ask. It does not ask what has been done. A case about a handover is read for what it shows: a paper, a sum, a rise, a person. The cure is the name, and the name is chosen only once the question has been answered.'
+      'Something bought for a problem the case does not show, such as a family trust for a family with nothing to answer, costs money every year and answers nothing. And notice what is not asked. It does not ask what has been done. A case about a handover is read for what it shows: a paper, a sum, a rise, a person. The cure is the name, and the name is chosen only once the question has been answered.'
     ],
     how: [
       'Read the whole case, the last sentence included, and look in it for each of the four things that can go wrong, one at a time. For each, ask whether you can put your finger on the words.',
@@ -23,7 +23,7 @@ FC.cards('wealth', 'u5', [
       'Whichever answer you give, put your finger on the words: the paper and what is wrong with it, the estate and the line, the thing and the rise, or the person and what shows the risk.',
       'Do the sums where there are sums. The line is the same in every case here, so a quick subtraction tells you whether the estate is above it. A case can hide the sum in two figures, a house and a sum of savings, that have to be added first.'
     ],
-    whenBoth: 'Some cases show two of the answers at once, and the key chooses for you. You have met the key’s two rules for this. Where a case shows a paper that is missing or out of date and anything else, the key’s answer is {a:H1.papers}: it is the cheapest thing, and everything else rests on it. Where a case shows the estate above the line with money to spare and also something about to rise sharply, the key’s answer is {a:H1.growth}, because the rise is the larger problem and has a deadline. Each pair below has been set side by side earlier in this unit, and each has one question that separates it.' },
+    whenBoth: 'Some cases show two of the answers at once, and a rule says which answer wins. You have met the two rules for this. Where a case shows a paper that is missing or out of date and anything else, the answer is {a:H1.papers}: it is the cheapest thing, and everything else rests on it. Where a case shows the estate above the line with money to spare and also something about to rise sharply, the answer is {a:H1.growth}, because the rise is the larger problem and has a deadline. Each pair below has been set side by side earlier in this unit, and each has one question that separates it.' },
 
   { id: 'check-handover-question', kind: 'check', after: 'H1',
     case: 'c-step',
@@ -32,11 +32,11 @@ FC.cards('wealth', 'u5', [
   /* ---------- Two whole cases, watched ---------- */
   { id: 'worked-spare', kind: 'worked',
     h: 'A whole case, from the first question to the name',
-    link: 'You have the five names and the key’s question about them. Before you run a case yourself, watch two being run from the top, in the order the key asks. You are not asked anything until the end of each.',
+    link: 'You have the five names and the question about them. Before you run a case yourself, watch two being run from the top, in the order the questions are asked. You are not asked anything until the end of each.',
     case: 'w5-wk-1',
     steps: [
       { step: 'D1',
-        reason: 'The key’s first question comes first, as it does for every case. What the case says is on Fabian’s mind: {cue:D1}. That is the moment money passes to other people. Nothing here comes out of his money every year, no one thing is most of it, and no bill falls due on a date, so the answer is {a:D1.handover}.' },
+        reason: 'The first question comes first, as it does for every case. What the case says is on Fabian’s mind: {cue:D1}. That is the moment money passes to other people. Nothing here comes out of his money every year, no one thing is most of it, and no bill falls due on a date, so the answer is {a:D1.handover}.' },
       { step: 'H1',
         reason: 'Now put the four things to the case one at a time. The papers: his will, forms and power of attorney were renewed last year, so none is missing. The people: his two children get on well. A rise: nothing he owns is expected to change much in value. What the case does show is this: {cue:H1}. £1,350,000 less £500,000 is £850,000, and 40% of that is £340,000, which would be taken at his death. His income is £10,000 a year more than he spends. That is the estate above the line, with money to spare, and nothing about to grow.' }
     ],
@@ -54,14 +54,14 @@ FC.cards('wealth', 'u5', [
         answer: 'b' },
       reason: [
         'For {o:simple} you must be able to point to this: {needs:simple}. Fabian’s papers are current and the children get on well, but his estate is far above the limit, so something in the case could go wrong at the handover: £340,000 of tax.',
-        'It is the question from Ellis. {test:gifting~simple} Here the estate is above the line and there is money to spare, so the key’s answer is {a:H1.bigestate}.'
+        'It is the question from Ellis. {test:gifting~simple} Here the estate is above the line and there is money to spare, so the answer is {a:H1.bigestate}.'
       ]
     },
     impression: {
       resembles: 'm-harold',
       text: [
-        'The key has given its answer. Now take a second look of a different kind: does this case look like one you know? It should bring back Harold: a widower, the estate above the line, a pension that pays more than he spends, and nothing about to rise.',
-        'Here the key and the likeness agree, so the answer stands. The key’s question comes first, because it makes you point at words in the case. The likeness is only a second look. When the two disagree, do not pick the one you prefer. Go back to the key’s question and find the words in the case that answer it. The second whole case shows how.'
+        'You have the answer. Now take a second look of a different kind: does this case look like one you know? It should bring back Harold: a widower, the estate above the line, a pension that pays more than he spends, and nothing about to rise.',
+        'Here the answer and the likeness agree, so it stands. The question comes first, because it makes you point at words in the case. The likeness is only a second look. When the two disagree, do not pick the one you prefer. Go back to the question and find the words in the case that answer it. The second whole case shows how.'
       ]
     } },
 
@@ -89,21 +89,21 @@ FC.cards('wealth', 'u5', [
         answer: 'b' },
       reason: [
         'For {o:trust} you must be able to point to this: {needs:trust}. Nothing Zainab holds is expected to rise sharply, and her estate is below the line, so a family trust would cost money every year to answer a tax problem she does not have.',
-        'It is the question from Florin. {test:basicdocs~trust} Here two papers name a man who has died, so the key’s answer is {a:H1.papers}.'
+        'It is the question from Florin. {test:basicdocs~trust} Here two papers name a man who has died, so the answer is {a:H1.papers}.'
       ]
     },
     impression: {
       resembles: 'm-edith', first: 'm-anselm',
       text: [
-        'Now the second look: does this case look like one you know? A friend’s advice about a family trust, and a couple of papers, may bring back Anselm and Marit first, and Anselm and Marit’s case was {o:simple}. So here the likeness and the key seem to disagree.',
-        'When that happens, go back to the key’s question and find the words in the case that answer it. They are {cue:H1}. Anselm and Marit’s case had the opposite: every paper renewed the spring before. Zainab’s case really looks like Edith’s: a will that names a husband who has died. So the key’s answer stands.'
+        'Now the second look: does this case look like one you know? A friend’s advice about a family trust, and a couple of papers, may bring back Anselm and Marit first, and Anselm and Marit’s case was {o:simple}. So here the likeness and the answer seem to disagree.',
+        'When that happens, go back to the question and find the words in the case that answer it. They are {cue:H1}. Anselm and Marit’s case had the opposite: every paper renewed the spring before. Zainab’s case really looks like Edith’s: a will that names a husband who has died. So the answer stands.'
       ]
     } },
 
   /* ---------- After the drill ---------- */
   { id: 'recap-handover', kind: 'recap',
     h: 'What to carry away',
-    link: 'You have now run the key on your own. This card puts the unit in one place, in the key’s words.',
+    link: 'You have now run the questions on your own. This card puts the unit in one place.',
     carry: [
       'Before any cure, ask what is at risk at the handover, and point to the words in the case that show it. If you cannot point, you do not have an answer yet.',
       'The papers come first. A will, {t:benform} and {t:poa} that are missing, or no longer match the person’s life, are the answer whatever else the case holds, because they are the cheapest thing to put right and everything else rests on them.',

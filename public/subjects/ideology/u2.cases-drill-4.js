@@ -89,7 +89,7 @@ FC.cases('ideology', 'u2', [
       { text: 'It says the government is to be got rid of, with people running things in meetings.', voice: 'anarch' },
       { text: 'It explains in a sum how any owner keeps a gap, and asks for nothing.', voice: 'marx' }
     ],
-    why: 'That detail is a party taking power and keeping it, with no rival: the answer to the key’s question about the government.' },
+    why: 'That detail is a party taking power and keeping it, with no rival: the answer to the question about the government.' },
 
   { id: 'c-rev-anarch', use: 'drill', kind: 'reverse', outcome: 'anarch', expect: 'find',
     options: [
@@ -98,7 +98,7 @@ FC.cases('ideology', 'u2', [
       { text: 'It says the workers’ party must take power and hold it.', voice: 'ml' },
       { text: 'It says the owners keep the firm and a tax pays for pensions.', voice: 'socdem' }
     ],
-    why: 'That detail is the government to be got rid of, now: the answer to the key’s question about the government.' },
+    why: 'That detail is the government to be got rid of, now: the answer to the question about the government.' },
 
   { id: 'c-rev-mktsoc', use: 'drill', kind: 'reverse', outcome: 'mktsoc', expect: 'find',
     options: [
@@ -107,7 +107,7 @@ FC.cases('ideology', 'u2', [
       { text: 'It only explains how owners gain from the work.', voice: 'marx' },
       { text: 'It says the biggest businesses should pass to the government, to be run for everyone.', voice: 'demsoc' }
     ],
-    why: 'That detail is each business owned by its workers and still competing: the answer to the key’s question about the businesses.' },
+    why: 'That detail is each business owned by its workers and still competing: the answer to the question about the businesses.' },
 
   { id: 'c-rev-marx', use: 'drill', kind: 'reverse', outcome: 'marx', expect: 'hear',
     options: [

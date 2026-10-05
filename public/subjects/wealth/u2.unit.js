@@ -8,7 +8,7 @@
 
 FC.unit('wealth', 'u2', {
   kind: 'C',              // C classification, F facts, P procedure
-  rev: 1,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
+  rev: 2,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
   standard: 1,            // lesson-standard version this unit was built to
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author). The app labels a draft as a draft.
   tag: 'Two',
@@ -57,7 +57,7 @@ FC.unit('wealth', 'u2', {
       cards: ['meet-location', 'again-location', 'portrait-location', 'check-location', 'look-location-nocut', 'term-gain',
               'meet-defer', 'again-defer', 'portrait-defer', 'check-defer', 'look-location-defer',
               'meet-harvest', 'again-harvest', 'portrait-harvest', 'check-harvest', 'look-defer-harvest'] },
-    { id: 'p3', title: 'A sum spent, and the key’s question',
+    { id: 'p3', title: 'A sum spent, and the question',
       cards: ['meet-burnrate', 'again-burnrate', 'portrait-burnrate', 'check-burnrate', 'look-burnrate-nocut', 'q-erosion', 'check-erosion'] },
     { id: 'p4', title: 'Two whole cases, then the drill',
       cards: ['worked-accounts', 'worked-planner'], drill: true, close: ['recap', 'transfer', 'plan'] }
@@ -105,7 +105,8 @@ FC.unit('wealth', 'u2', {
   // Build notes: not shown to the learner, and left out of the fingerprint. The validator reads them.
   build: {
     history: [
-      { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the first branch unit of Wealth Preservation, for the gate answer "Something taken out of it every year". Not yet deployed, so later edits before the first deploy stay revision 1.' }
+      { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the first branch unit of Wealth Preservation, for the gate answer "Something taken out of it every year". Not yet deployed, so later edits before the first deploy stay revision 1.' },
+      { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' }
     ],
     // What the K2 rewrite changed in this branch of the key, and why (docs/rebuild/wealth-plan.md, section (a)).
     keyChanges: [

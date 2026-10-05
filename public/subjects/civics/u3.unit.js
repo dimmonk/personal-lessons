@@ -7,7 +7,7 @@
 
 FC.unit('civics', 'u3', {
   kind: 'C',              // C classification, F facts, P procedure
-  rev: 1,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
+  rev: 2,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
   standard: 1,            // lesson-standard version this unit was built to
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author). The app labels a draft as a draft.
   tag: 'Three',
@@ -29,7 +29,7 @@ FC.unit('civics', 'u3', {
       test: 'Is the matter the law is about on the Constitution’s list for Congress? And does the law take away anyone’s right to speak, to worship, to publish or to gather peacefully?' },
     { id: 'enumerated~purse', pair: ['enumerated', 'purse'], step: 'C1',
       shared: 'Both are about money, and both can be a bill that passes both chambers. A tax raises money by law, and a spending bill is a law too.',
-      rule: 'In {o:enumerated} Congress passes a law on a listed matter, a tax for example. In {o:purse} Congress decides whether the government may spend money on something. When one bill does both, the key’s answer is {a:C1.money}.',
+      rule: 'In {o:enumerated} Congress passes a law on a listed matter, a tax for example. In {o:purse} Congress decides whether the government may spend money on something. When one bill does both, the answer is {a:C1.money}.',
       test: 'Is Congress raising money, or setting some other rule? Or is it deciding whether the government may spend money on something: voting it, cutting it or leaving it out?' },
     { id: 'confirm~impeach', pair: ['confirm', 'impeach'], step: 'C1',
       shared: 'Both are votes in the Senate about a person who works for the government of the whole country, and the same judge or department head can be in both.',
@@ -49,7 +49,7 @@ FC.unit('civics', 'u3', {
               'look-enumerated-purse', 'exc-spendbill'] },
     { id: 'p3', title: 'A vote on a person or an agreement',
       cards: ['term-treaty', 'meet-confirm', 'again-confirm', 'portrait-confirm', 'check-confirm'] },
-    { id: 'p4', title: 'A charge against an official, and the key’s question',
+    { id: 'p4', title: 'A charge against an official, and the question',
       cards: ['meet-impeach', 'again-impeach', 'portrait-impeach', 'check-impeach',
               'look-confirm-impeach', 'refute-charged', 'q-congress', 'check-congress'] },
     { id: 'p5', title: 'Two whole cases, then the drill',
@@ -97,7 +97,8 @@ FC.unit('civics', 'u3', {
   build: {
     // What changed at each revision (R1). One entry for every revision from 1 to rev.
     history: [
-      { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the Congress branch of Civics. It replaces the Congress part of old Unit Three (two questions, five names, the side-by-side table and the budget-fight worked case) and old specimens 1, 5, 9, 13 and 17. Not yet deployed, so later edits before the first deploy stay revision 1.' }
+      { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the Congress branch of Civics. It replaces the Congress part of old Unit Three (two questions, five names, the side-by-side table and the budget-fight worked case) and old specimens 1, 5, 9, 13 and 17. Not yet deployed, so later edits before the first deploy stay revision 1.' },
+      { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' }
     ],
     // What the K2 rewrite changed in the key for this branch, and why (docs/rebuild/civics-plan.md, section a).
     // "was" is the wording of the old course.

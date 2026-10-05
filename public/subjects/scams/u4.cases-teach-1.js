@@ -65,7 +65,7 @@ FC.cases('scams', 'u4', [
       { text: 'Dev matched with a woman called Amelia on a dating app', note: 'This is how Dev knows her. It does not say where the money is to go.' },
       { text: 'Move your savings into it this week' },
       { text: 'and I will guide you through every step', note: 'This is her offer of help. It is not where she asks him to put the money.' },
-      { text: 'They have never met', note: 'This is something to point to for the first part of the key, but it is not the request.' }
+      { text: 'They have never met', note: 'This is something to point to for the first question, but it is not the request.' }
     ] },
 
   /* ---------- Pig-butchering scam against Romance scam: the same man, two requests ---------- */

@@ -7,18 +7,18 @@ FC.cards('wealth', 'u2', [
   /* ---------- The key's question ---------- */
   { id: 'q-erosion', kind: 'question', step: 'E1',
     h: 'The question you have been answering all along',
-    link: 'Since Mara’s two charges you have seen the key’s question at the foot of each new name, with one answer under it. This card puts the question and its six answers in one place, as the key shows them, and says why the key asks it.',
+    link: 'Since Mara’s two charges you have seen the question at the foot of each new name, with one answer under it. This card puts the question and its six answers in one place, and says why it is asked.',
     decides: [
-      'Two people with the same pot and the same yearly loss of £3,000 can need opposite things. One pays £3,000 to someone who chose investments and did nothing else. The other pays £3,000 for a tax return, a check of a will and a plan. The size is the same and the people are the same. The key’s answer for the first is {a:E1.picking} and for the second {a:E1.nomore}. Only what the money is for tells them apart.',
-      'That is why the key asks what is taking the money out, and not how large the sum is, who is paid, or whether it sounds fair. Applied to a case that shows {a:E1.nomore}, any of the fixes costs money and fixes nothing.'
+      'Two people with the same pot and the same yearly loss of £3,000 can need opposite things. One pays £3,000 to someone who chose investments and did nothing else. The other pays £3,000 for a tax return, a check of a will and a plan. The size is the same and the people are the same. The answer for the first is {a:E1.picking} and for the second {a:E1.nomore}. Only what the money is for tells them apart.',
+      'That is why the question is what is taking the money out, and not how large the sum is, who is paid, or whether it sounds fair. Applied to a case that shows {a:E1.nomore}, any of the fixes costs money and fixes nothing.'
     ],
     how: [
-      'Read the whole case. Then look for the words that show what comes out, and ask the key’s question of them. You should be able to put your finger on the words: a charge and what it pays for, a tax bill and what it is on, or a sum and what it was set against. If you cannot, you do not yet have an answer.',
+      'Read the whole case. Then look for the words that show what comes out, and ask the question of them. You should be able to put your finger on the words: a charge and what it pays for, a tax bill and what it is on, or a sum and what it was set against. If you cannot, you do not yet have an answer.',
       'A quick first step is to see where the money goes. If it goes to a firm or an adviser, the answer is {a:E1.picking} or {a:E1.nomore}. If it goes to the tax office, it is one of the three about tax. If it is the person’s own spending, it is {a:E1.fixedsum} or, again, {a:E1.nomore}. That narrows the choice. It does not make it: the words in the case do.',
       'A sound case, the sixth answer, is not a case with nothing coming out. Something comes out, and the case shows it is worth it or already as low as it can be. If you can point to the words that show that, the answer is {a:E1.nomore}. If you cannot, and you cannot point to words for any of the other five either, do not invent a problem.',
-      'The key’s first question, {q:D1}, has already put the case in this branch: it has told you that something comes out of {t:pot} every year. The question on this card is only which of the six it is.'
+      'The first question, {q:D1}, has already narrowed the case down: it has told you that something comes out of {t:pot} every year. The question on this card is only which of the six it is.'
     ],
-    whenBoth: 'Sometimes two answers seem to fit, and sometimes the case also shows an answer to the first question that is not this one. Each pair below has been set side by side earlier in this unit, and each has one question that separates it. There is one more thing from the first question. When a case shows {a:D1.timing} and also a sale to put {t:mix} back where the sale itself would bring a tax bill that new money could do without, the key’s answer to the first question is {a:D1.erosion}, and the answer to this one is {a:E1.needlesssale}. A sum fixed in pounds and left unchanged while a fall in prices shrinks {t:pot} is treated the same way, and the answer here is {a:E1.fixedsum}.' },
+    whenBoth: 'Sometimes two answers seem to fit, and sometimes the case also shows an answer to the first question that is not this one. Each pair below has been set side by side earlier in this unit, and each has one question that separates it. There is one more thing from the first question. When a case shows {a:D1.timing} and also a sale to put {t:mix} back where the sale itself would bring a tax bill that new money could do without, the answer to the first question is {a:D1.erosion}, and the answer to this one is {a:E1.needlesssale}. A sum fixed in pounds and left unchanged while a fall in prices shrinks {t:pot} is treated the same way, and the answer here is {a:E1.fixedsum}.' },
 
   { id: 'check-erosion', kind: 'check', after: 'E1',
     case: 'e-c-step',
@@ -27,7 +27,7 @@ FC.cards('wealth', 'u2', [
   /* ---------- Two whole cases ---------- */
   { id: 'worked-accounts', kind: 'worked',
     h: 'A whole case, from the first question to the name',
-    link: 'You have the six names and the key’s question about them. Before you run a case yourself, watch two being run from the top, in the order the key asks. You are not asked anything until the end of each.',
+    link: 'You have the six names and the question about them. Before you run a case yourself, watch two being run from the top, in the order the questions are asked. You are not asked anything until the end of each.',
     case: 'e-w-marit',
     steps: [
       { step: 'D1',
@@ -49,14 +49,14 @@ FC.cards('wealth', 'u2', [
         answer: 'b' },
       reason: [
         'For {o:nocut} you must be able to point to this: {needs:nocut}. Marit’s case has small charges, but the income investment is not in the sheltered account: the largest payout sits in the taxed one. Nothing about it is already as low as it can be.',
-        'It is the question from Ravi and Sunil. {test:location~nocut} Here the investment that pays out the most is in the taxed account, so the key’s answer is {a:E1.incometax}.'
+        'It is the question from Ravi and Sunil. {test:location~nocut} Here the investment that pays out the most is in the taxed account, so the answer is {a:E1.incometax}.'
       ]
     },
     impression: {
       resembles: 'e-m-loc',
       text: [
-        'The key has given its answer. Now take a second look of a different kind: does this case look like one you know? It should bring back Ana: a pension, an ordinary account, and {t:fund} that pays out income that is taxed every year.',
-        'Here the key and the likeness agree, so the answer stands. The key’s question comes first, because it makes you point at words in the case. The likeness is only a second look. When the two disagree, do not pick the one you prefer. Go back to the key’s question and find the words in the case that answer it. The second whole case shows how.'
+        'You have the answer. Now take a second look of a different kind: does this case look like one you know? It should bring back Ana: a pension, an ordinary account, and {t:fund} that pays out income that is taxed every year.',
+        'Here the answer and the likeness agree, so it stands. The question comes first, because it makes you point at words in the case. The likeness is only a second look. When the two disagree, do not pick the one you prefer. Go back to the question and find the words in the case that answer it. The second whole case shows how.'
       ]
     } },
 
@@ -68,7 +68,7 @@ FC.cards('wealth', 'u2', [
       { step: 'D1',
         reason: 'What the case gives you is a sum that comes out of {t:pot} every year: {cue:D1}. It is the loudest thing in the case, but at this question it only tells you where to look. Nothing in it is one thing that is most of Rui’s money, a bill in a fall, or a handover.' },
       { step: 'E1',
-        reason: 'The friend’s remark is about size: 1.2% of £700,000. The words that answer the key’s question are about what the charge is for: {cue:E1}. It is a flat sum, not a percentage of {t:pot}, and it pays for returns, a spending plan and the papers of a late mother that Rui says he could not sort alone. No commission is taken, and nobody is paid for choosing: the money is in index funds.' }
+        reason: 'The friend’s remark is about size: 1.2% of £700,000. The words that answer the question are about what the charge is for: {cue:E1}. It is a flat sum, not a percentage of {t:pot}, and it pays for returns, a spending plan and the papers of a late mother that Rui says he could not sort alone. No commission is taken, and nobody is paid for choosing: the money is in index funds.' }
     ],
     hold: {
       neighbour: 'feecore',
@@ -84,29 +84,29 @@ FC.cards('wealth', 'u2', [
         answer: 'b' },
       reason: [
         'For {o:feecore} you must be able to point to this: {needs:feecore}. Rui’s charge is large, but it is not a percentage of {t:pot} for choosing investments and nothing else. It pays for named work that would not otherwise get done, at a price that is flat.',
-        'It is the question from Gwen and Ann. {test:feecore~nocut} Here the £8,400 pays for returns, a plan and papers, and the price stays the same whatever {t:pot} does, so the key’s answer is {a:E1.nomore}.'
+        'It is the question from Gwen and Ann. {test:feecore~nocut} Here the £8,400 pays for returns, a plan and papers, and the price stays the same whatever {t:pot} does, so the answer is {a:E1.nomore}.'
       ]
     },
     impression: {
       resembles: 'e-m-nocut', first: 'e-m-fee',
       text: [
-        'Now the second look: does this case look like one you know? A charge of 1.2% that a friend calls robbery may bring back Mara first, and Mara’s case was {o:feecore}. So here the likeness and the key seem to disagree.',
-        'When that happens, go back to the key’s question and find the words in the case that answer it. They are {cue:E1}. Mara’s case had nothing like them: her adviser had done nothing else since the fund was chosen. Rui’s case has the opposite. The case this one really looks like is Kamal’s, a flat price for named work, and the key’s answer stands.'
+        'Now the second look: does this case look like one you know? A charge of 1.2% that a friend calls robbery may bring back Mara first, and Mara’s case was {o:feecore}. So here the likeness and the answer seem to disagree.',
+        'When that happens, go back to the question and find the words in the case that answer it. They are {cue:E1}. Mara’s case had nothing like them: her adviser had done nothing else since the fund was chosen. Rui’s case has the opposite. The case this one really looks like is Kamal’s, a flat price for named work, and the answer stands.'
       ]
     } },
 
   /* ---------- The close, after the drill ---------- */
   { id: 'recap', kind: 'recap',
     h: 'What to carry away',
-    link: 'You have now run the key on your own. This card puts the unit in one place, in the key’s words.',
+    link: 'You have now run the questions on your own. This card puts the unit in one place.',
     carry: [
       'Say what is taking money out of {t:pot}, and point to the words in the case that show it. If you cannot point, you do not have an answer yet.',
       'Ask what a charge pays for. A charge for choosing investments, and nothing else, is a problem. A charge for named work that would not otherwise get done, at a price that does not grow with {t:pot}, is not. Size alone settles neither.',
       'Tax comes in three shapes: on income every year, with nothing sold; on {t:gain}, only if a sale is made; and on {t:gain} already made this year, with a loss waiting beside it. Each has its own fix. Do not sell because tax is in the case. Sell only when a loss is there to use, or when the sale has a job to do.',
       'A fixed number of pounds taken from a pot that has shrunk is a bigger share than it was. The fix is a percentage of what {t:pot} is worth now, worked out again each year.',
       '{a:E1.nomore} is a real answer and a common one. Something does come out, and the case shows it is worth it or already as low as it can be. If you cannot point to words that show a problem, do not invent one, and do not buy a cure for a problem the case does not have.',
-      'Two cases belong here and can look like {a:D1.timing}: a sale to put {t:mix} back that new money could make unnecessary, and a fixed sum of pounds that a fall in prices has made too big for {t:pot}. In both the key’s answer to the first question is {a:D1.erosion}.',
-      'Your route is two answers long: the first question, then this one. A right name reached by a wrong first answer counts as a miss.'
+      'Two cases belong here and can look like {a:D1.timing}: a sale to put {t:mix} back that new money could make unnecessary, and a fixed sum of pounds that a fall in prices has made too big for {t:pot}. In both the answer to the first question is {a:D1.erosion}.',
+      'You give two answers on the way: the first question, then this one. A right name reached by a wrong first answer counts as a miss.'
     ] },
 
   { id: 'transfer', kind: 'transfer',

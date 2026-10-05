@@ -12,7 +12,7 @@ FC.cases('civics', 'u1', [
     cues: { D1: 'the Senate voted for a bill that gives the postal service $300 million to keep rural routes open' },
     reason: { D1: 'The last decision is a vote in the Senate: {cue:D1}. The postal service will use the money, but the case ends at the vote that gave it.' },
     not: { outcome: 'president', why: 'The money goes to the postal service, an office of the government of the whole country, and offices can sound like the answer. But the case ends with the vote, and the office decides nothing in it.' },
-    wouldChange: 'If the case ended with the postal service deciding which routes to close, the answer would be {a:D1.president}.' },
+    wouldChange: 'If the case ended with the postal service deciding which rural deliveries to close, the answer would be {a:D1.president}.' },
 
   { id: 'g-ret-coins', use: 'return', tier: 'varied', setting: 'leisure', topic: 'the one-cent coin',
     text: "Coin shops say almost nobody uses the one-cent coin any more. On Wednesday the House voted to stop making it, and the Senate will vote next week.",

@@ -94,40 +94,40 @@ FC.cases('scams', 'u4', [
     text: '"The letter had a registration number, a licence number and a signed certificate, so the firm was real, and paying the £400 was safe."',
     ask: { type: 'option', step: 'M2', answer: 'fee' },
     fault: 'The claim treats paperwork as proof. A registration number, a licence number and a certificate cost nothing to copy: a real firm’s number can be pasted into any letter. They say nothing about what the letter asks her to do with her money, and what it asks is that she pay £400 before any money reaches her.',
-    corrected: 'The paperwork tells me nothing. The letter asks me to pay a fee before the money reaches me, and the answer to the key’s question is {a:M2.fee}. A real firm would not mind if I looked it up myself, in the regulator’s own register, and used {t:check} before I paid anything.' },
+    corrected: 'The paperwork tells me nothing. The letter asks me to pay a fee before the money reaches me, and the answer to the question is {a:M2.fee}. A real firm would not mind if I looked it up myself, in the regulator’s own register, and used {t:check} before I paid anything.' },
 
   { id: 'm-claim-bank', use: 'claim',
-    context: 'A caller who says that he is from a bank’s fraud team tells a man to move £6,000 to a safe account and not to tell the branch. The man’s banking app shows a warning, and he presses continue.',
+    context: 'A caller who says that he is from a bank’s fraud team tells a man to move £6,000 to a safe account and not to tell his bank’s local office. The man’s banking app shows a warning, and he presses continue.',
     text: '"If it were a scam, my bank would have stopped the payment. It let it through, so it must have been all right."',
     ask: { type: 'option', step: 'M2', answer: 'rush' },
     fault: 'The claim treats the bank’s not stopping the payment as proof that the request was real. A bank’s checks cannot tell a payment that you send yourself from your own wish, and a warning that you press past does not stop anything. That the payment went through says nothing about what the caller asked.',
-    corrected: 'The caller told me to pay at once, in a way that cannot be undone, and to tell nobody at the branch. The answer to the key’s question is {a:M2.rush}. The warning was my bank doing what it can, and I should have read it as a stop sign and phoned my bank on the number on my card.' },
+    corrected: 'The caller told me to pay at once, in a way that cannot be undone, and to tell nobody at my bank’s local office. The answer to the question is {a:M2.rush}. The warning was my bank doing what it can, and I should have read it as a stop sign and phoned my bank on the number on my card.' },
 
   { id: 'm-claim-withdrawn', use: 'claim',
     context: 'A woman met a man online who showed her a trading app. She put in £300, watched it grow, and took out £100 without any trouble. He now asks her to put in £5,000.',
     text: '"I took £100 out myself and it paid, so the app must be real. Putting in £5,000 is safe."',
     ask: { type: 'option', step: 'M2', answer: 'site' },
     fault: 'The claim treats a payout as proof that the app is real. A small payment out costs the scammer very little, and it is the best proof that they could give. It says nothing about the request, which is to put £5,000 into an app that a man she has never met showed her.',
-    corrected: 'The payout tells me nothing, because it is how this kind of scam is run. What he asks is that I put money into an app that he showed me. The answer to the key’s question is {a:M2.site}, and I should not do it, however well it seems to be working.' },
+    corrected: 'The payout tells me nothing, because it is how this kind of scam is run. What he asks is that I put money into an app that he showed me. The answer to the question is {a:M2.site}, and I should not do it, however well it seems to be working.' },
 
   { id: 'm-claim-supplier', use: 'claim',
     context: 'A woman who pays her stationery supplier every month gets an email in the usual thread. It says that the supplier has changed its bank, and gives a new account.',
     text: '"It came from the supplier’s own address and in the same thread as all the others, so it was safe to pay into the new account."',
     ask: { type: 'option', step: 'M2', answer: 'newdetails' },
     fault: 'The claim treats the address and the thread as proof. A scammer who has got into a mailbox, or set up a look-alike address, sends from the same thread. The address says nothing about the one thing that has changed, the account.',
-    corrected: 'The email says that the supplier has changed its bank and asks me to pay into new details. The answer to the key’s question is {a:M2.newdetails}. Before I pay I should ring the supplier on a number that I already had, and use nothing that is in the email.' },
+    corrected: 'The email says that the supplier has changed its bank and asks me to pay into new details. The answer to the question is {a:M2.newdetails}. Before I pay I should ring the supplier on a number that I already had, and use nothing that is in the email.' },
 
   { id: 'm-claim-allbills', use: 'claim',
     context: 'A man gets a letter from his council about a parking charge. His own council tax bill gives the address of the council’s website, and when he types it in, the same charge is there.',
     text: '"Anything that asks me for money is a scam. I ignored the council’s letter."',
     ask: { type: 'option', step: 'M2', answer: 'agreed' },
     fault: 'The claim treats every request for money as a scam. This one came from the council that he deals with, for a charge that he can find for himself on a website whose address he already had. Ignoring a real charge costs him the reduction for paying early, and may cost him more.',
-    corrected: 'The charge is the one that I owe, and I found it myself on the council’s website, through an address that I already had. The answer to the key’s question is {a:M2.agreed}. A real request like this one is paid, in the normal way.' },
+    corrected: 'The charge is the one that I owe, and I found it myself on the council’s website, through an address that I already had. The answer to the question is {a:M2.agreed}. A real request like this one is paid, in the normal way.' },
 
   { id: 'm-claim-nohurry', use: 'claim',
     context: 'A woman gets a text from a number she does not know, saying that her parcel needs a £1.99 fee, to be paid on a link. It gives no deadline and does not threaten her.',
     text: '"A scam always hurries you. This text gave me no deadline, so it was not a scam."',
     ask: { type: 'option', step: 'M2', answer: 'link' },
     fault: 'The claim treats hurry as what makes a scam. Hurry turns up in many scams, and many others, like this one, have none. What counts is what the text asks: to pay a small charge on a page that you reach through a link in the message.',
-    corrected: 'The text did not hurry me, and that tells me nothing. It asked me to pay on a link in the message, and the answer to the key’s question is {a:M2.link}. I would not tap it, and I would look for the charge in the courier’s own app.' }
+    corrected: 'The text did not hurry me, and that tells me nothing. It asked me to pay on a link in the message, and the answer to the question is {a:M2.link}. I would not tap it, and I would look for the charge in the courier’s own app.' }
 ]);

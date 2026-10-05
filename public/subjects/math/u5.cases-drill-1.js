@@ -19,8 +19,8 @@ FC.cases('math', 'u5', [
       C1: ['wears one of each every school day']
     },
     reason: {
-      M1: 'The words {cue:M1} ask how many different outfits there are, a count of ways something can turn out. Nothing in it follows an amount as time passes, hides a number that a calculation must fit, or splits whole numbers into groups, and there is no shape to measure. What it asks for is a count of the results, or the chance of something, so the key’s first answer is {a:M1.chance}.',
-      C1: 'The words {cue:C1} give three separate choices, a shirt, trousers and a jumper, each from a list of its own, and ask how many different outfits there are, so the key’s answer is {a:C1.lists}.'
+      M1: 'The words {cue:M1} ask how many different outfits there are, a count of ways something can turn out. Nothing in it follows an amount as time passes, hides a number that a calculation must fit, or splits whole numbers into groups, and there is no shape to measure. What it asks for is a count of the results, or the chance of something, so the answer to the first question is {a:M1.chance}.',
+      C1: 'The words {cue:C1} give three separate choices, a shirt, trousers and a jumper, each from a list of its own, and ask how many different outfits there are, so the answer is {a:C1.lists}.'
     },
     not: {
       outcome: 'perm',
@@ -68,8 +68,8 @@ FC.cases('math', 'u5', [
       C1: ['picks one colour and one pattern']
     },
     reason: {
-      M1: 'The words {cue:M1} ask how many different tile designs there are, a count of ways something can turn out. The problem does not change as time passes, has no hidden number for a calculation to fit, does not share whole numbers out in groups and has no shape. It is about the number of ways that something can come out, or its chance, so the key’s first answer is {a:M1.chance}.',
-      C1: 'The words {cue:C1} give two separate choices, a colour and a pattern, each from a list of its own, and ask how many different designs there are, so the key’s answer is {a:C1.lists}.'
+      M1: 'The words {cue:M1} ask how many different tile designs there are, a count of ways something can turn out. The problem does not change as time passes, has no hidden number for a calculation to fit, does not share whole numbers out in groups and has no shape. It is about the number of ways that something can come out, or its chance, so the answer to the first question is {a:M1.chance}.',
+      C1: 'The words {cue:C1} give two separate choices, a colour and a pattern, each from a list of its own, and ask how many different designs there are, so the answer is {a:C1.lists}.'
     },
     not: {
       outcome: 'perm',
@@ -114,8 +114,8 @@ FC.cases('math', 'u5', [
       C1: ['every pizza has exactly one of each']
     },
     reason: {
-      M1: 'The words {cue:M1} ask how many different pizzas there are, a count of ways something can turn out. Nothing here is followed through time, no number is hidden for a calculation to fit, no whole number is split into groups, and no shape is measured. The problem asks for the number of different results, or for a chance, which is the key’s first answer {a:M1.chance}.',
-      C1: 'The words {cue:C1} give three separate choices, a size, a crust and a topping, each from a list of its own, and ask how many different pizzas there are, so the key’s answer is {a:C1.lists}.'
+      M1: 'The words {cue:M1} ask how many different pizzas there are, a count of ways something can turn out. Nothing here is followed through time, no number is hidden for a calculation to fit, no whole number is split into groups, and no shape is measured. The problem asks for the number of different results, or for a chance, which is the answer to the first question {a:M1.chance}.',
+      C1: 'The words {cue:C1} give three separate choices, a size, a crust and a topping, each from a list of its own, and ask how many different pizzas there are, so the answer is {a:C1.lists}.'
     },
     not: {
       outcome: 'perm',
@@ -163,8 +163,8 @@ FC.cases('math', 'u5', [
       C1: ['picking one of 5 races, one of 4 classes and one of 6 starting items']
     },
     reason: {
-      M1: 'The words {cue:M1} ask how many different characters can be built, a count of ways something can turn out. Nothing in it follows an amount as time passes, hides a number that a calculation must fit, or splits whole numbers into groups, and there is no shape to measure. What it asks for is a count of the results, or the chance of something, so the key’s first answer is {a:M1.chance}.',
-      C1: 'The words {cue:C1} give three separate choices, a race, a class and an item, each from a list of its own, and ask how many different characters there are, so the key’s answer is {a:C1.lists}.'
+      M1: 'The words {cue:M1} ask how many different characters can be built, a count of ways something can turn out. Nothing in it follows an amount as time passes, hides a number that a calculation must fit, or splits whole numbers into groups, and there is no shape to measure. What it asks for is a count of the results, or the chance of something, so the answer to the first question is {a:M1.chance}.',
+      C1: 'The words {cue:C1} give three separate choices, a race, a class and an item, each from a list of its own, and ask how many different characters there are, so the answer is {a:C1.lists}.'
     },
     not: {
       outcome: 'perm',
@@ -208,17 +208,17 @@ FC.cases('math', 'u5', [
     topic: 'roads from one town to another',
     kind: 'problem',
     outcome: 'multprin',
-    text: 'A driver can go from town A to town B by 4 different roads, and from town B to town C by 3 different roads. How many different routes are there from A to C, going through B?',
+    text: 'A driver can go from town A to town B by 4 different roads, and from town B to town C by 3 different roads. How many different ways are there to drive from A to C, going through B?',
     route: { M1: ['chance'], C1: ['lists'] },
     cues: {
-      M1: ['How many different routes are there from A to C, going through B?'],
+      M1: ['How many different ways are there to drive from A to C, going through B?'],
       C1: [
         'from town A to town B by 4 different roads, and from town B to town C by 3 different roads'
       ]
     },
     reason: {
-      M1: 'The words {cue:M1} ask how many different routes there are, a count of ways something can turn out. The problem does not change as time passes, has no hidden number for a calculation to fit, does not share whole numbers out in groups and has no shape. It is about the number of ways that something can come out, or its chance, so the key’s first answer is {a:M1.chance}.',
-      C1: 'The words {cue:C1} give two separate choices, a road for the first leg and a road for the second, each from a list of its own, and ask how many different routes there are, so the key’s answer is {a:C1.lists}.'
+      M1: 'The words {cue:M1} ask how many different ways there are to go, a count of ways something can turn out. The problem does not change as time passes, has no hidden number for a calculation to fit, does not share whole numbers out in groups and has no shape. It is about the number of ways that something can come out, or its chance, so the answer to the first question is {a:M1.chance}.',
+      C1: 'The words {cue:C1} give two separate choices, a road for the first leg and a road for the second, each from a list of its own, and ask how many different ways there are to go, so the answer is {a:C1.lists}.'
     },
     not: {
       outcome: 'perm',
@@ -227,20 +227,20 @@ FC.cases('math', 'u5', [
     steps: [
       { does: 'Name each choice that has to be made', working: 'first leg; second leg' },
       { does: 'Count the full list for each choice', working: 'first leg: 4; second leg: 3' },
-      { does: 'Multiply the counts', working: '4 × 3 = 12. That is 12 routes' }
+      { does: 'Multiply the counts', working: '4 × 3 = 12. That is 12 ways to go' }
     ],
     answer: {
       right: 'r',
       choices: [
-        { id: 'r', text: '12 routes' },
+        { id: 'r', text: '12 ways' },
         {
           id: 's1',
-          text: '7 routes',
+          text: '7 ways',
           slip: 'you add the sizes of the lists, which counts each single item once and never a whole result made of one from each list.'
         },
         {
           id: 's2',
-          text: '4 routes',
+          text: '4 ways',
           slip: 'you leave the last choice out of the product, so every result is missing one part.'
         }
       ]

@@ -8,12 +8,12 @@
 
 FC.unit('civics', 'u1', {
   kind: 'C',              // C classification, F facts, P procedure
-  rev: 1,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
+  rev: 2,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
   standard: 1,            // lesson-standard version this unit was built to
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author). The app labels a draft as a draft.
   tag: 'One',
   title: { text: 'Who makes the last decision' },   // a gate unit is titled in plain words; the answers are taught inside it
-  subtitle: 'The key’s first question, and the four kinds of decision-maker it sorts every case into',
+  subtitle: 'The first question, and the four kinds of decision-maker it sorts every case into',
   teaches: { steps: ['D1'], outcomes: [], terms: ['agency'], families: ['congress', 'president', 'courts', 'states'] },
   assumes: [],            // the first unit of the subject
 
@@ -64,7 +64,7 @@ FC.unit('civics', 'u1', {
     { id: 'p4', title: 'The fourth kind: a state, a city or a county',
       cards: ['meet-states', 'again-states', 'portrait-states', 'check-states', 'look-courts-states', 'exc-statejudge',
               'look-president-states', 'look-congress-states', 'refute-first'] },
-    { id: 'p5', title: 'The key’s first question',
+    { id: 'p5', title: 'The first question',
       cards: ['q-kind', 'check-kind'] },
     { id: 'p6', title: 'Two whole cases, then the drill',
       cards: ['worked-doll', 'worked-bags'], drill: true, close: ['recap-kind', 'transfer-kind'] }
@@ -110,7 +110,8 @@ FC.unit('civics', 'u1', {
   build: {
     // What changed at each revision (R1). One entry for every revision from 1 to rev.
     history: [
-      { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the gate unit of Civics. It replaces old Unit One cards one to eight and the Who decides drill. Not yet deployed, so later edits before the first deploy stay revision 1.' }
+      { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the gate unit of Civics. It replaces old Unit One cards one to eight and the Who decides drill. Not yet deployed, so later edits before the first deploy stay revision 1.' },
+      { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' }
     ],
     // What the K2 rewrite changed in the gate, and why (docs/rebuild/civics-plan.md, section a). "was" is the wording of the old course.
     keyChanges: [

@@ -19,8 +19,8 @@ FC.cases('math', 'u5', [
       C1: ['Four friends join a queue at a ticket window, one behind another']
     },
     reason: {
-      M1: 'The words {cue:M1} ask in how many different orders the friends can stand, a count of ways something can turn out. Nothing in it follows an amount as time passes, hides a number that a calculation must fit, or splits whole numbers into groups, and there is no shape to measure. What it asks for is a count of the results, or the chance of something, so the key’s first answer is {a:M1.chance}.',
-      C1: 'The words {cue:C1} show one group of 4 friends placed one behind another, so that each place uses a friend up, and ask how many different orders there are, so the key’s answer is {a:C1.order}.'
+      M1: 'The words {cue:M1} ask in how many different orders the friends can stand, a count of ways something can turn out. Nothing in it follows an amount as time passes, hides a number that a calculation must fit, or splits whole numbers into groups, and there is no shape to measure. What it asks for is a count of the results, or the chance of something, so the answer to the first question is {a:M1.chance}.',
+      C1: 'The words {cue:C1} show one group of 4 friends placed one behind another, so that each place uses a friend up, and ask how many different orders there are, so the answer is {a:C1.order}.'
     },
     not: {
       outcome: 'comb',
@@ -71,8 +71,8 @@ FC.cases('math', 'u5', [
       C1: ['Nobody on the training day has a different role from the others']
     },
     reason: {
-      M1: 'The words {cue:M1} ask how many different groups can be picked, a count of ways something can turn out. Nothing in it follows an amount as time passes, hides a number that a calculation must fit, or splits whole numbers into groups, and there is no shape to measure. What it asks for is a count of the results, or the chance of something, so the key’s first answer is {a:M1.chance}.',
-      C1: 'The words {cue:C1} show 3 nurses taken from 6 with no different roles, so that the same 3 nurses in any order are one group, so the key’s answer is {a:C1.group}.'
+      M1: 'The words {cue:M1} ask how many different groups can be picked, a count of ways something can turn out. Nothing in it follows an amount as time passes, hides a number that a calculation must fit, or splits whole numbers into groups, and there is no shape to measure. What it asks for is a count of the results, or the chance of something, so the answer to the first question is {a:M1.chance}.',
+      C1: 'The words {cue:C1} show 3 nurses taken from 6 with no different roles, so that the same 3 nurses in any order are one group, so the answer is {a:C1.group}.'
     },
     not: {
       outcome: 'perm',
@@ -121,8 +121,8 @@ FC.cases('math', 'u5', [
       C1: ['It makes no difference in which order the four are picked']
     },
     reason: {
-      M1: 'The words {cue:M1} ask how many different groups can be taken, a count of ways something can turn out. The problem does not change as time passes, has no hidden number for a calculation to fit, does not share whole numbers out in groups and has no shape. It is about the number of ways that something can come out, or its chance, so the key’s first answer is {a:M1.chance}.',
-      C1: 'The words {cue:C1} show 4 pupils taken from 10 with no difference made by the order, so that the same 4 pupils in any order are one group, so the key’s answer is {a:C1.group}.'
+      M1: 'The words {cue:M1} ask how many different groups can be taken, a count of ways something can turn out. The problem does not change as time passes, has no hidden number for a calculation to fit, does not share whole numbers out in groups and has no shape. It is about the number of ways that something can come out, or its chance, so the answer to the first question is {a:M1.chance}.',
+      C1: 'The words {cue:C1} show 4 pupils taken from 10 with no difference made by the order, so that the same 4 pupils in any order are one group, so the answer is {a:C1.group}.'
     },
     not: {
       outcome: 'perm',
@@ -174,8 +174,8 @@ FC.cases('math', 'u5', [
       C1: ['The gift is the same whichever jar goes in first']
     },
     reason: {
-      M1: 'The words {cue:M1} ask how many different gifts can be packed, a count of ways something can turn out. Nothing here is followed through time, no number is hidden for a calculation to fit, no whole number is split into groups, and no shape is measured. The problem asks for the number of different results, or for a chance, which is the key’s first answer {a:M1.chance}.',
-      C1: 'The words {cue:C1} show 3 different jars taken from 10, where the gift is the same whichever goes in first, so that the same 3 jars in any order are one gift, so the key’s answer is {a:C1.group}.'
+      M1: 'The words {cue:M1} ask how many different gifts can be packed, a count of ways something can turn out. Nothing here is followed through time, no number is hidden for a calculation to fit, no whole number is split into groups, and no shape is measured. The problem asks for the number of different results, or for a chance, which is the answer to the first question {a:M1.chance}.',
+      C1: 'The words {cue:C1} show 3 different jars taken from 10, where the gift is the same whichever goes in first, so that the same 3 jars in any order are one gift, so the answer is {a:C1.group}.'
     },
     not: {
       outcome: 'perm',
@@ -226,8 +226,8 @@ FC.cases('math', 'u5', [
       ]
     },
     reason: {
-      M1: 'The words {cue:M1} ask how likely it is that something happens, a chance and not a count. Nothing here is followed through time, no number is hidden for a calculation to fit, no whole number is split into groups, and no shape is measured. The problem asks for the number of different results, or for a chance, which is the key’s first answer {a:M1.chance}.',
-      C1: 'The words {cue:C1} give the chance for each of 4 separate days and ask how likely it is that the ferry is cancelled at least once, so the key’s answer is {a:C1.atleast}.'
+      M1: 'The words {cue:M1} ask how likely it is that something happens, a chance and not a count. Nothing here is followed through time, no number is hidden for a calculation to fit, no whole number is split into groups, and no shape is measured. The problem asks for the number of different results, or for a chance, which is the answer to the first question {a:M1.chance}.',
+      C1: 'The words {cue:C1} give the chance for each of 4 separate days and ask how likely it is that the ferry is cancelled at least once, so the answer is {a:C1.atleast}.'
     },
     not: {
       outcome: 'multprin',

@@ -6,22 +6,22 @@
 
 FC.cards('math', 'u1', [
 
-  /* ---------- The key's first question, as a question ---------- */
+  /* ---------- The first question, as a question ---------- */
   { id: 'q-kind', kind: 'question', step: 'M1',
     h: 'The question you have been answering all along',
-    link: 'Since the chairs you have seen the key’s question at the foot of each new kind, with one answer under it. This card puts the question and its five answers in one place, as the key shows them, and says why the key asks it before anything else.',
+    link: 'Since the chairs you have seen the question at the foot of each new kind, with one answer under it. This card puts the question and its five answers in one place and says why it is asked before anything else.',
     decides: [
       'A problem can only be solved with the steps made for its kind. If you take a hike for a hidden number, you go looking for a calculation that is not there. If you take an amount followed through time for a hidden number, you can find a number that fits a calculation and is wrong for the story. Getting the kind wrong still gives you a number, and nothing in that number says that it is wrong.',
       'That is why this question comes first, before any finer name, and why every problem in this course starts with it.',
-      'In this unit it is the only question, so its answer is the name. In the rest of the course, each of the five answers is followed by one or two more questions, and they lead to a finer name with its own procedure. The answers you give on the way to a name are called your route: this first answer, and then the answers to the questions after it. Two things are marked separately: the name you give a problem, and your route to it. A right name reached by a wrong first answer counts as a miss, which is why the first question gets a whole unit of practice.'
+      'In this unit it is the only question, so its answer is the name. In the rest of the course, each of the five answers is followed by one or two more questions, and they lead to a finer name with its own procedure. The answers you give on the way to a name are this first answer, and then the answers to the questions after it. Two things are marked separately: the name you give a problem, and your answers on the way to it. A right name reached by a wrong first answer counts as a miss, which is why the first question gets a whole unit of practice.'
     ],
     how: [
       'Read the whole problem, the last sentence included. The last sentence is usually where the question is, and the sentences before it are usually the story. Find the question and mark the words that say what is to be worked out.',
       'Then ask what that is. Is it about {plain:whole}? Is it {plain:unknown}? Is it {plain:growth}? Is it {plain:chance}? Is it about {plain:shape}? One of the five will fit the words you marked.',
       'Put your finger on the words that show it. If you cannot point to them, you do not have an answer yet.',
-      'Most problems fit one kind and no other. Some show two at once, and the key has a decision for each pair. Take the loop first: if the question ends on a day of the week or an hour on a clock, the answer is {a:M1.whole}. Then ask about time: if one amount is followed as hours, days, months or years pass, the answer is {a:M1.growth}, even when a hidden number and a calculation are there too. Then ask about shape: if there is a {t:righttriangle}, or a pair of copies of one shape, the answer is {a:M1.shape}, even when a rate is there too. If none of those is in the problem, a hidden number with a calculation, a rate or totals is {a:M1.unknown}, and a question about the results of a choice or about how likely something is {a:M1.chance}.'
+      'Most problems fit one kind and no other. Some show two at once, and there is a decision for each pair. Take the loop first: if the question ends on a day of the week or an hour on a clock, the answer is {a:M1.whole}. Then ask about time: if one amount is followed as hours, days, months or years pass, the answer is {a:M1.growth}, even when a hidden number and a calculation are there too. Then ask about shape: if there is a {t:righttriangle}, or a pair of copies of one shape, the answer is {a:M1.shape}, even when a rate is there too. If none of those is in the problem, a hidden number with a calculation, a rate or totals is {a:M1.unknown}, and a question about the results of a choice or about how likely something is {a:M1.chance}.'
     ],
-    whenBoth: 'Some problems show two of the five at once. You have met three. A price for each hour has the shape of a hidden number and is an amount over time. A model with a scale has the shape of a rate and is a shape. A box of tablets taken one a day is an amount over time and asks for a day of the week. The key gives every problem one answer, and it chooses the same way each time. Counting ways and chance have no decision of their own: they are not given up to another kind, and no other kind is given up to them. Each pair below has been set side by side earlier in this unit, and each has a question that tells it apart.' },
+    whenBoth: 'Some problems show two of the five at once. You have met three. A price for each hour has the shape of a hidden number and is an amount over time. A model with a scale has the shape of a rate and is a shape. A box of tablets taken one a day is an amount over time and asks for a day of the week. Every problem gets one answer, and the choice is made the same way each time. Counting ways and chance have no decision of their own: they are not given up to another kind, and no other kind is given up to them. Each pair below has been set side by side earlier in this unit, and each has a question that tells it apart.' },
 
   { id: 'check-kind', kind: 'check', after: 'M1',
     case: 'gt-loan',
@@ -36,14 +36,14 @@ FC.cards('math', 'u1', [
     right: [
       'The same numbers turn up in problems of every kind. Take 4 and 6. Two chores that recur, one every 4 days and one every 6 days, with the question when both fall on the same day, is {a:M1.whole}. A recipe that uses 4 kg of rice for 6 people, with the question how much for 15 people, is {a:M1.unknown}. A shrub 4 cm tall that grows 6 cm each year, with the question how tall after 10 years, is {a:M1.growth}. Four starters and 6 main courses, with the question how many different meals, is {a:M1.chance}. A {t:righttriangle} with sides of 4 m and 6 m, with the question how long the third side is, is {a:M1.shape}.',
       'Five problems, the same two numbers, five different kinds, and five different sets of steps. The numbers could not have told you which. And the other way round: problems of one kind have all sorts of numbers in them, so nothing about a number tells you the kind.',
-      'The only thing that does is what the problem asks you to work out, and the key asks it in these words: {q:M1}'
+      'The only thing that does is what the problem asks you to work out, and the first question asks it in these words: {q:M1}'
     ],
     testedBy: ['gt-claim-numbers'] },
 
   /* ---------- Two whole problems, watched ---------- */
   { id: 'worked-trio', kind: 'worked',
     h: 'A whole problem, from the question to the answer',
-    link: 'You have the five kinds and the key’s question about them. Before the drill, watch two problems being run from the top. You are not asked anything until the end of each.',
+    link: 'You have the five kinds and the first question about them. Before the drill, watch two problems being run from the top. You are not asked anything until the end of each.',
     case: 'gt-trio',
     steps: [
       { step: 'M1',
@@ -66,14 +66,14 @@ FC.cards('math', 'u1', [
         answer: 'b' },
       reason: [
         'For {a:M1.whole} you must be able to point to this: {needs:whole}. The problem does have whole counts in it, and that is why it can look like that kind. But the question is not about how 9 splits into equal groups, or what is left over, or when two repeats meet. Nothing is split and nothing repeats.',
-        'It is the question from the photo: Case A was about how a number splits into rows, and Case B about the different orders a choice can come in. {test:whole~chance} Here the question counts the different groups of 3 that can be picked, so the key’s answer is {a:M1.chance}.'
+        'It is the question from the photo: Case A was about how a number splits into rows, and Case B about the different orders a choice can come in. {test:whole~chance} Here the question counts the different groups of 3 that can be picked, so the answer is {a:M1.chance}.'
       ]
     },
     impression: {
       resembles: 'gt-outfits',
       text: [
-        'The key has given its answer. Now take a second look of a different kind: does this problem look like one you know? It should bring back the packing. There too, the question asked how many different results a choice could give, and the numbers only said how many things there were to choose from.',
-        'Here the key and the likeness agree, so the answer stands. The key’s question comes first, because it makes you point at words in the problem. The likeness is only a second look. When the two disagree, do not pick the one you prefer. Go back to the key’s question and find the words that answer it. The second whole problem shows how.'
+        'The question has given its answer. Now take a second look of a different kind: does this problem look like one you know? It should bring back the packing. There too, the question asked how many different results a choice could give, and the numbers only said how many things there were to choose from.',
+        'Here the question and the likeness agree, so the answer stands. The question comes first, because it makes you point at words in the problem. The likeness is only a second look. When the two disagree, do not pick the one you prefer. Go back to the question and find the words that answer it. The second whole problem shows how.'
       ]
     } },
 
@@ -101,22 +101,22 @@ FC.cards('math', 'u1', [
         ],
         answer: 'b' },
       reason: [
-        'For {a:M1.unknown} you must be able to point to this: {needs:unknown}. The problem does give a rate, and it does leave out a number. But the shape is there, and when a problem shows both, the key gives the shape the win.',
-        'It is the same decision as the model locomotive. There a rate came with two things of the same shape, and here a price comes with a {t:righttriangle}. {test:unknown~shape} The question asks for a length on a triangle with a square corner, so the key’s answer is {a:M1.shape}.'
+        'For {a:M1.unknown} you must be able to point to this: {needs:unknown}. The problem does give a rate, and it does leave out a number. But the shape is there, and when a problem shows both, the answer is the shape.',
+        'It is the same decision as the model locomotive. There a rate came with two things of the same shape, and here a price comes with a {t:righttriangle}. {test:unknown~shape} The question asks for a length on a triangle with a square corner, so the answer is {a:M1.shape}.'
       ]
     },
     impression: {
       resembles: 'gt-hike', first: 'gt-van',
       text: [
-        'Now the second look: does this problem look like one you know? A price for each metre and a question about how much may bring back the van hire first, and the van hire was {a:M1.unknown}. So here the likeness and the key seem to disagree.',
-        'When that happens, go back to the key’s question and find the words in the problem that answer it. They are {cue:M1}. The van hire had nothing like them: it had a fixed fee, a price for each kilometre and a bill, and no shape at all. The hike does: two legs that meet at a square corner, and a question about the third side. So the problem this one really looks like is the hike, and the key’s answer stands.'
+        'Now the second look: does this problem look like one you know? A price for each metre and a question about how much may bring back the van hire first, and the van hire was {a:M1.unknown}. So here the likeness and the answer seem to disagree.',
+        'When that happens, go back to the question and find the words in the problem that answer it. They are {cue:M1}. The van hire had nothing like them: it had a fixed fee, a price for each kilometre and a bill, and no shape at all. The hike does: two legs that meet at a square corner, and a question about the third side. So the problem this one really looks like is the hike, and the answer stands.'
       ]
     } },
 
   /* ---------- After the drill ---------- */
   { id: 'recap-kind', kind: 'recap',
     h: 'What to carry away',
-    link: 'You have now answered the key’s first question on your own. This card puts the unit in one place, in the key’s words.',
+    link: 'You have now answered the first question on your own. This card puts the unit in one place.',
     carry: [
       'Before any sum, ask what the problem asks you to work out, and point to the words that show it. If you cannot point, you do not have an answer yet.',
       'The kind is not the topic and not the numbers. Money, building and cooking turn up in all five, and the same two numbers can turn up in more than one.',
@@ -125,7 +125,7 @@ FC.cards('math', 'u1', [
       'A model, a map or a shadow is {a:M1.shape}, even though it comes with a rate.',
       'A count of days or hours that has to end on a day of the week or a time on a clock is {a:M1.whole}, even though it runs over time.',
       'Nothing here solved anything. Each of the five kinds has finer names inside it, and a procedure for each, and they start from your answer to this first question.',
-      'Every problem in this course starts with this question. Your answer to it is the first part of your route to a name.'
+      'Every problem in this course starts with this question. Your answer to it is the first part of your answers on the way to a name.'
     ] },
 
   { id: 'transfer-kind', kind: 'transfer',

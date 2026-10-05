@@ -50,10 +50,10 @@ FC.cases('psychology', 'u3', [
     ] },
 
   { id: 'd-check', use: 'check', tier: 'clean', setting: 'community', topic: 'an unlocked allotment shed',
-    text: "At the allotment committee, Hugh is told that the tool shed was left unlocked on Saturday and two spades went missing. The key log shows he signed the key out at four and never signed it back in. 'I did lock it,' Hugh says. 'And it's rich coming from you, Pam, when you've never paid your plot fee on time. After all the hours I've given this site, I'm the one being treated like a criminal.'",
+    text: "At the allotment committee, Hugh is told that the tool shed was left unlocked on Saturday and two spades went missing. The sign-out sheet shows he signed the key out at four and never signed it back in. 'I did lock it,' Hugh says. 'And it's rich coming from you, Pam, when you've never paid your plot fee on time. After all the hours I've given this site, I'm the one being treated like a criminal.'",
     outcome: 'darvo', route: { D1: ['tactic'], T1: ['reverse'] },
     cues: { T1: "'I did lock it,' Hugh says. 'And it's rich coming from you, Pam, when you've never paid your plot fee on time. After all the hours I've given this site, I'm the one being treated like a criminal.'" },
-    reason: { T1: 'The key log shows Hugh did it, and Pam raises it. In answer he does all three in one go: he denies it ("I did lock it"), attacks the person who raised it ("rich coming from you, Pam"), and plays the one wronged ("the one being treated like a criminal"). {cue:T1}' },
+    reason: { T1: 'The sign-out sheet shows Hugh did it, and Pam raises it. In answer he does all three in one go: he denies it ("I did lock it"), attacks the person who raised it ("rich coming from you, Pam"), and plays the one wronged ("the one being treated like a criminal"). {cue:T1}' },
     not: { outcome: 'gaslight', why: 'Nothing in the case shows the denial coming back over weeks or months, or Pam doubting her own memory. It is one exchange.' } },
 
   /* ---------- The look-alike pair: the same dent, two names ---------- */

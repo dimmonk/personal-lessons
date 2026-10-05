@@ -48,7 +48,7 @@ FC.cases('stats', 'u6', [
     cues: { S1: 'The course lifted our weakest teams', K1: 'picks the 6 sales teams with the weakest quarter' },
     reason: { S1: 'The sales figures are given, and the company says {cue:S1}. That is a claim of cause.',
               K1: 'The six teams were picked for their weakest quarter: the company {cue:K1}. A quarter’s sales mix how good a team is with how the quarter went, so the weakest six are partly the unluckiest six, and their sales drift back toward usual with no course.' },
-    not: { outcome: 'nocontrol', why: 'No team went without the course, and the case shows that too. But the six were picked at their worst, and when a case shows both, the key’s answer is {a:K1.extreme}.' },
+    not: { outcome: 'nocontrol', why: 'No team went without the course, and the case shows that too. But the six were picked at their worst, and when a case shows both, the answer is {a:K1.extreme}.' },
     wouldChange: 'If the company had sent only 3 of the 6 weakest teams, drawn by lottery, the 3 left at home would show how much comes back anyway.' },
 
   { id: 'k-ret-cholesterol', use: 'return', tier: 'varied', setting: 'health', topic: 'diet coaching for the highest cholesterol readings', also: ['anyway'],
@@ -57,7 +57,7 @@ FC.cases('stats', 'u6', [
     cues: { S1: 'Our diet coaching lowers cholesterol', K1: 'picks the 100 members with the highest cholesterol readings in January' },
     reason: { S1: 'The readings are given, and the plan says {cue:S1}. That is a claim of cause.',
               K1: 'The 100 were picked for having the highest readings on one test: the plan {cue:K1}. A reading is a person’s usual level plus how that day went, so the highest 100 include many with a high day, and their readings drift back toward usual with no coaching.' },
-    not: { outcome: 'nocontrol', why: 'No member went without the coaching, and the case shows that too. But the 100 were picked at their highest, and when a case shows both, the key’s answer is {a:K1.extreme}.' },
+    not: { outcome: 'nocontrol', why: 'No member went without the coaching, and the case shows that too. But the 100 were picked at their highest, and when a case shows both, the answer is {a:K1.extreme}.' },
     wouldChange: 'If the plan had coached 50 of the 100 highest readers, drawn by lottery, and left 50 alone, the 50 left alone would show how much comes back anyway.' },
 
   { id: 'k-ret-batters', use: 'return', tier: 'clean', setting: 'leisure', topic: 'a hitting coach for the worst April batters', also: ['anyway'],
@@ -66,7 +66,7 @@ FC.cases('stats', 'u6', [
     cues: { S1: 'The hitting coach fixed them', K1: 'picks the three players with the worst batting averages in April' },
     reason: { S1: 'The averages are given, and the manager says {cue:S1}. That is a claim of cause.',
               K1: 'The three were picked for the worst averages in one month: the manager {cue:K1}. A month’s average is a player’s usual skill plus luck, so the worst three of April are partly the unluckiest three, and their averages drift back toward usual with no coach.' },
-    not: { outcome: 'nocontrol', why: 'No player went without the coach, and the case shows that too. But the three were picked at their worst, and when a case shows both, the key’s answer is {a:K1.extreme}.' },
+    not: { outcome: 'nocontrol', why: 'No player went without the coach, and the case shows that too. But the three were picked at their worst, and when a case shows both, the answer is {a:K1.extreme}.' },
     wouldChange: 'If three other players with equally poor Aprils had been left alone, and their averages rose less, the difference would be what the coach did.' },
 
   { id: 'k-ret-zoo', use: 'return', tier: 'varied', setting: 'community', topic: 'free guides at the least visited exhibits', also: ['anyway'],
@@ -75,6 +75,6 @@ FC.cases('stats', 'u6', [
     cues: { S1: 'The free guides draw visitors', K1: 'picks the three exhibits with the fewest visitors last month' },
     reason: { S1: 'The visitor counts are given, and the zoo says {cue:S1}. That is a claim of cause.',
               K1: 'The three exhibits were picked for having the fewest visitors: the zoo {cue:K1}. A month’s visitors are how popular an exhibit is plus the weather and the school trips that happened to come, so the lowest three are partly the unluckiest three, and their counts drift back toward usual with no guide.' },
-    not: { outcome: 'nocontrol', why: 'No exhibit went without a guide, and the case shows that too. But the three were picked at their lowest, and when a case shows both, the key’s answer is {a:K1.extreme}.' },
+    not: { outcome: 'nocontrol', why: 'No exhibit went without a guide, and the case shows that too. But the three were picked at their lowest, and when a case shows both, the answer is {a:K1.extreme}.' },
     wouldChange: 'If the zoo had added guides at only two of the five least visited exhibits, drawn by lottery, the other three would show how much of the rise comes back anyway.' }
 ]);

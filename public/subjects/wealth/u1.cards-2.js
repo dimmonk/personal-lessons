@@ -7,7 +7,7 @@ FC.cards('wealth', 'u1', [
   /* ---------- Two words the second family leans on ---------- */
   { id: 'term-bond', kind: 'term', term: 'bond',
     h: 'A loan with a fixed payout',
-    link: 'The next family is about falling prices, and prices fall for some things and not for others. One more word, for something whose price can wobble but whose payout does not.',
+    link: 'The next kind of case is about falling prices, and prices fall for some things and not for others. One more word, for something whose price can wobble but whose payout does not.',
     case: 'w-t-bond',
     plain: [
       'Omar has not bought a slice of anything. He has lent money, and the loan comes with a promise: £30 a year, and £1,000 back on a set date. If he keeps the loan to that date, he gets exactly that, whatever anyone was paying for it in between.',
@@ -17,7 +17,7 @@ FC.cards('wealth', 'u1', [
 
   { id: 'term-mix', kind: 'term', term: 'mix',
     h: 'The split between shares, loans and cash',
-    link: 'One last word before the second family: the way a person has divided their money between the things it can be held in.',
+    link: 'One last word before the second kind of case: the way a person has divided their money between the things it can be held in.',
     case: 'w-t-mix',
     plain: [
       'Hana made a plan: half in shares and half in bonds. Shares tend to rise and fall more than bonds, so the split decides how rough a ride the money gets. She chose a half-and-half ride.',
@@ -44,7 +44,7 @@ FC.cards('wealth', 'u1', [
     ],
     feature: { step: 'D1', option: 'timing' },
     name: [
-      'The key’s answer, and the name of this kind of case, is {a:D1.timing}. "Not ready" means that nothing has been arranged to ride a fall out: no cash to spend from, no money held as {t:bond} that repays on the day, and {t:mix} not kept within its plan.',
+      'The answer, and the name of this kind of case, is {a:D1.timing}. "Not ready" means that nothing has been arranged to ride a fall out: no cash to spend from, no money held as {t:bond} that repays on the day, and {t:mix} not kept within its plan.',
       'The name does not say that prices will fall. Nobody knows that. It says what would happen if they did, and the case is about that.'
     ] },
 
@@ -89,8 +89,8 @@ FC.cards('wealth', 'u1', [
     instruction: 'Both cases are about Greta and Sam, who are retired and have £300,000. Compare one thing: is the case about how much leaves each year, whatever prices do, or about the days on which money has to be raised, because prices have fallen?',
     prompt: { kind: 'which', option: 'D1.timing', answer: 'w-la-fall' },
     difference: [
-      'In Case A their adviser’s firm takes 1.1% of the £300,000 every December, £3,300, however the funds did that year. The same sum is taken in a good year and in a bad one, and the case does not say anything is sold on a bad day. The key’s answer is {a:D1.erosion}.',
-      'In Case B nothing is taken by an adviser. Greta and Sam pay their bills by selling about £1,500 of their funds each month, with nothing set aside in cash, and this year prices are down 25%. Each sale takes place at a lower price than it would have, and what is sold is not there when prices come back. The key’s answer is {a:D1.timing}.',
+      'In Case A their adviser’s firm takes 1.1% of the £300,000 every December, £3,300, however the funds did that year. The same sum is taken in a good year and in a bad one, and the case does not say anything is sold on a bad day. The answer is {a:D1.erosion}.',
+      'In Case B nothing is taken by an adviser. Greta and Sam pay their bills by selling about £1,500 of their funds each month, with nothing set aside in cash, and this year prices are down 25%. Each sale takes place at a lower price than it would have, and what is sold is not there when prices come back. The answer is {a:D1.timing}.',
       'Money leaves the same couple in both cases. What separates the two is whether the case is about the amount that goes out every year, whatever the market does (Case A), or about when money has to be raised, in a market that has fallen (Case B).'
     ] },
 
@@ -99,16 +99,16 @@ FC.cards('wealth', 'u1', [
     h: 'A fall in prices, and a sum that never changed',
     link: 'The last card kept the two answers tidy. Real cases are often less tidy, and a fall in prices and a sum taken out every year can sit in the same case.',
     case: 'w-exc-fixedsum',
-    setup: 'Prices have fallen, and Carl and Una are paying their bills by selling investments, which is what a case about {a:D1.timing} usually looks like. Yet the key’s answer for this case is {a:D1.erosion}.',
+    setup: 'Prices have fallen, and Carl and Una are paying their bills by selling investments, which is what a case about {a:D1.timing} usually looks like. Yet the answer for this case is {a:D1.erosion}.',
     prompt: { kind: 'phrase', answer: 'They still take out £48,000 a year, which is now 10% of what is left' },
     because: [
       'Look at what the case says about the sum. It was set at £48,000 when the money was £800,000, which is 6%. It has not been changed, though the money is now £480,000. £48,000 is now 10% of it. Every year the same sum comes out, and every year it is a bigger share of a smaller amount.',
       'The fall in prices explains why the money shrank. But the case is not asking what the fall did. It shows a sum that stays fixed while the money it comes from shrinks. Taking £48,000 a year out of £480,000 would be hard even if prices never fell again. If they came back, the same sum would look smaller, but it would still be the sum that was set for money that no longer exists.',
-      'So the case shows two things at once: a fall that has caught the money that pays for their living, and a sum that stays the same every year while the money it comes from shrinks. When a case shows both, the key has to choose one answer, and it chooses the second.'
+      'So the case shows two things at once: a fall that has caught the money that pays for their living, and a sum that stays the same every year while the money it comes from shrinks. When a case shows both, the answer is the second.'
     ],
     take: [
-      'The key’s order is its decision, and in real life the two run into each other: a fall makes a fixed sum worse, and a fixed sum makes a fall worse. The key gives each case one answer, so that two people using it reach the same one and can each say why.',
-      'The key’s sentence above has a second half, about a planned sale to put a split back where the tax on the sale is the problem. That is a second place where the key gives {a:D1.erosion} instead of {a:D1.timing}. It is not in the case here, and you can leave it until a case shows it.',
+      'Which answer wins is a decision, and in real life the two run into each other: a fall makes a fixed sum worse, and a fixed sum makes a fall worse. Each case gets one answer, so that two people using the same questions reach the same one and can each say why.',
+      'The sentence above has a second half, about a planned sale to put a split back where the tax on the sale is the problem. That is a second place where the answer is {a:D1.erosion} instead of {a:D1.timing}. It is not in the case here, and you can leave it until a case shows it.',
       'The test that settles it is the one from the last card: is the problem how much comes out, or that it had to come out on a bad day? Here it is how much. If the case showed only bills paid in a fall, with a sum that had always been a fair share of the money, the answer would be {a:D1.timing}.'
     ] }
 ]);

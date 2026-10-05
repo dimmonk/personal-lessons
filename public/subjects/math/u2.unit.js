@@ -10,7 +10,7 @@
 
 FC.unit('math', 'u2', {
   kind: 'P',
-  rev: 1,
+  rev: 2,
   standard: 1,
   status: 'draft',        // 'live' only after the cold read in build.signoff
   tag: 'Two',
@@ -97,7 +97,8 @@ FC.unit('math', 'u2', {
   // Build notes: not shown to the learner, and left out of the fingerprint. The validator reads them.
   build: {
     history: [
-      { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the first procedure unit of Basic Math, replacing the old Unit Two (four cards and the whole-numbers drill), specimens 1 to 3 and two faulty claims. Not yet deployed, so later edits before the first deploy stay revision 1. Six kinds of problem about whole numbers, each taught with a problem of the kind, two worked examples with every step computed, and problems the learner finishes; the drill has a last-step stage, a whole-problem stage and a route stage.' }
+      { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the first procedure unit of Basic Math, replacing the old Unit Two (four cards and the whole-numbers drill), specimens 1 to 3 and two faulty claims. Not yet deployed, so later edits before the first deploy stay revision 1. Six kinds of problem about whole numbers, each taught with a problem of the kind, two worked examples with every step computed, and problems the learner finishes; the drill has a last-step stage, a whole-problem stage and a route stage.' },
+      { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' }
     ],
     // What the K2 rewrite changed in this unit's part of the key, and why (from docs/rebuild/math-plan.md, section (a)).
     keyChanges: [

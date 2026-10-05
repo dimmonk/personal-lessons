@@ -11,7 +11,7 @@
 
 FC.unit('math', 'u3', {
   kind: 'P',
-  rev: 1,
+  rev: 2,
   standard: 1,
   status: 'draft',        // 'live' only after the cold read in build.signoff
   tag: 'Three',
@@ -87,7 +87,8 @@ FC.unit('math', 'u3', {
   // Build notes: not shown to the learner, and left out of the fingerprint. The validator reads them.
   build: {
     history: [
-      { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the missing-number branch of Basic Math, replacing the old Unit Three (first half) and its drill. Four kinds of problem, each taught with a problem of the kind, two worked examples with every step computed, and problems the learner finishes; two exceptions (an electricity bill that looks like a rate and is a formula, a break-even profit that looks like a formula and is a squared missing number); the drill has a last-step stage, a whole-problem stage and a route stage. Not yet deployed, so later edits before the first deploy stay revision 1.' }
+      { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the missing-number branch of Basic Math, replacing the old Unit Three (first half) and its drill. Four kinds of problem, each taught with a problem of the kind, two worked examples with every step computed, and problems the learner finishes; two exceptions (an electricity bill that looks like a rate and is a formula, a break-even profit that looks like a formula and is a squared missing number); the drill has a last-step stage, a whole-problem stage and a route stage. Not yet deployed, so later edits before the first deploy stay revision 1.' },
+      { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' }
     ],
     // What the K2 rewrite changed in this unit's part of the key, and why (from docs/rebuild/math-plan.md, section (a)).
     keyChanges: [

@@ -14,13 +14,13 @@ FC.cards('scams', 'u1', [
     ],
     explain: [
       'What you are shown is a request for facts about a person: here, a name, a date of birth and an address typed into a form. That is all a message of this kind is made of: one person, and a request to tell something about themselves.',
-      'The facts can be of two sorts, and the key counts both as one kind. They can be papers and numbers that prove who you are: a passport, an ID or a card number, your date of birth, your address. Or they can be facts about your life, asked for in a friendly chat: your work, your home, your family, your plans. The second sort is a request too, even though it is asked kindly and nothing seems to hang on it.',
-      'It is a kind of its own because facts about you are used later. The papers can be used to pretend to be you, and the chat can be used to find out what to ask for next. The key puts this kind last in its list: where a message asks for facts and also for something earlier in the list, it takes the earlier one.',
+      'The facts can be of two sorts, and both count as one kind. They can be papers and numbers that prove who you are: a passport, an ID or a card number, your date of birth, your address. Or they can be facts about your life, asked for in a friendly chat: your work, your home, your family, your plans. The second sort is a request too, even though it is asked kindly and nothing seems to hang on it.',
+      'It is a kind of its own because facts about you are used later. The papers can be used to pretend to be you, and the chat can be used to find out what to ask for next. This kind comes last in the list: where a message asks for facts and also for something earlier in the list, it takes the earlier one.',
       'Tomas’s form is real. A real company needs some facts about you for something you started, and a copy asks for the same facts. The first question does not say which this is. It says only what is being asked.'
     ],
     feature: { step: 'D1', option: 'details' },
     name: [
-      'The key’s answer, and the name of this kind, is {a:D1.details}. After this answer the key asks two further questions that give a finer name: the name of a kind of scam, or of the real request that the scams copy.'
+      'The answer, and the name of this kind, is {a:D1.details}. After this answer there are two further questions that give a finer name: the name of a kind of scam, or of the real request that the scams copy.'
     ] },
 
   { id: 'again-details', kind: 'again', family: 'details',
@@ -30,7 +30,7 @@ FC.cards('scams', 'u1', [
     prompt: { kind: 'phrase', answer: 'What do you do for work? Do you live near London?' },
     shared: [
       'Both messages ask the person to tell something about themselves. The form asks for a name, a date of birth and an address. The text asks about work and where Sam lives. One is formal and one is friendly, and the facts it asks for are of a different sort.',
-      'The friendly text may look as if it asks for nothing, because it asks no money and no password. But questions about your work and your home are requests for facts about you, and the key counts them. That is what {a:D1.details} names.'
+      'The friendly text may look as if it asks for nothing, because it asks no money and no password. But questions about your work and your home are requests for facts about you, and they count. That is what {a:D1.details} names.'
     ] },
 
   { id: 'portrait-details', kind: 'portrait', family: 'details',
@@ -43,12 +43,12 @@ FC.cards('scams', 'u1', [
       'The facts are not used up when you give them. They can be used again, by someone else, to pretend to be you.'
     ],
     not: [
-      'It is not a request to pay. A message that asks for your card number and says "nothing will be charged" asks for a fact about you, and the key puts it here. A message that asks you to pay a fee asks for money.',
+      'It is not a request to pay. A message that asks for your card number and says "nothing will be charged" asks for a fact about you, and it belongs here. A message that asks you to pay a fee asks for money.',
       'A friendly message that asks nothing at all, such as a delivery update, is not a request for facts. It is {a:D1.nothing}. The difference is whether you are asked a question about yourself.'
     ],
     wild: ['"Please confirm your date of birth and address."', '"Send a photo of your passport."', '"Sorry, wrong number! What do you do for work?"', '"Where do you live these days?"', '"Please complete this form with your details."'],
     self: 'Forms, job applications, a call from your bank, and a stranger who texts you by mistake and starts a chat: all of them ask about you. Most of the questions you answer in a day are ordinary, and a few are the start of something else.',
-    ask: '"Am I being asked to tell them something about myself?" If I am, the key’s answer is the one for facts about me, unless the message also asks for something earlier in the key’s list.' },
+    ask: '"Am I being asked to tell them something about myself?" If I am, the answer is the one for facts about me, unless the message also asks for something earlier in the list.' },
 
   { id: 'check-details', kind: 'check', after: 'details',
     case: 'g-recruiter',
@@ -61,9 +61,9 @@ FC.cards('scams', 'u1', [
     instruction: 'Both cases are about Joel’s mobile phone SIM, which will be switched off tomorrow. Compare one thing: is he asked to pay, or to confirm facts about himself?',
     prompt: { kind: 'which', option: 'D1.money', answer: 'g-sim-fee' },
     difference: [
-      'In Case A the text tells Joel to pay a fee of £1.99 at an address to keep his number. He is asked to send money. The key’s answer is {a:D1.money}.',
-      'In Case B the text tells him to confirm his full name, his date of birth and his card number at the same address, and says that nothing will be charged. He is asked to tell them about himself: facts that identify him, including a card number. He is not asked to pay. The key’s answer is {a:D1.details}.',
-      'A card number can be used to take money, so Case B may end up costing him money all the same. But the first question asks what he is asked to do right now. In Case B that is to tell them about himself, and it is that request which the key answers.'
+      'In Case A the text tells Joel to pay a fee of £1.99 at an address to keep his number. He is asked to send money. The answer is {a:D1.money}.',
+      'In Case B the text tells him to confirm his full name, his date of birth and his card number at the same address, and says that nothing will be charged. He is asked to tell them about himself: facts that identify him, including a card number. He is not asked to pay. The answer is {a:D1.details}.',
+      'A card number can be used to take money, so Case B may end up costing him money all the same. But the first question asks what he is asked to do right now. In Case B that is to tell them about himself, and it is that request which the question is about.'
     ] },
 
   { id: 'refute-careful', kind: 'refute', about: 'D1',

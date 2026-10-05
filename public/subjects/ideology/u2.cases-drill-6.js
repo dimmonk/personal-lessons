@@ -30,7 +30,7 @@ FC.cases('ideology', 'u2', [
     cues: { D1: 'We are the workers and they are the owners, and there is no peace between us', C1: 'Stand with us at the gate tomorrow', C2: 'at the gate tomorrow' },
     reason: { D1: 'The text sets the workers against the owners, and speaks for the workers: {cue:D1}.',
               C1: 'Where a plan for the mill would be, the text ends with an invitation: {cue:C1}. The reckoning it promises is not a plan for who should own the mill.',
-              C2: 'The text says nothing about who will take power, or how. The words it ends on are about the gate: {cue:C2}.' },
+              C2: 'The text says nothing about who will take power, or how. The words it ends on are about where to meet: {cue:C2}.' },
     not: { outcome: 'ml', why: 'The speech is fierce, and promises a day of reckoning. But nothing in it says a party or the workers will take power and keep it, and the question about the government goes by what is said.' },
     wouldChange: 'If the speech had said that the workers would take power and rule alone, with no rival allowed, it would be {o:ml}. If it had asked for the mill to pass to the government, it would be {o:demsoc}.' },
 

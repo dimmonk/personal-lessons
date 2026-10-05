@@ -37,7 +37,7 @@ FC.cases('wealth', 'u4', [
       { text: 'Dimitri, 61, sold his café for £420,000 and put all of it into one fund of shares', note: 'That is where the money is held. It does not yet say how the living costs are paid.' },
       { text: 'He has no pay now', note: 'That is why he needs the money. It does not say how the money for the bills is raised.' },
       { text: 'Each month he sells £1,500 of the fund to pay his bills' },
-      { text: 'he has no savings account to turn to', note: 'That matters, and the key’s question uses it. This prompt asks only where the money for the bills comes from.' },
+      { text: 'he has no savings account to turn to', note: 'That matters, and the question uses it. This prompt asks only where the money for the bills comes from.' },
       { text: 'Prices have dropped by 20% this quarter', note: 'That is the fall. It tells you what is catching the money, and not where the bills are paid from.' }
     ],
     reason: { T1: 'Dimitri pays his bills by selling units of {t:fund} whose price can fall, and he has nothing set aside to spend from instead: {cue:T1}. With prices down 20%, each £1,500 takes a bigger slice of the fund than it would have, and that slice is not there when prices come back.' } },

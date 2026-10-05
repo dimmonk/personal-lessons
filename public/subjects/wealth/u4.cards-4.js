@@ -37,8 +37,8 @@ FC.cards('wealth', 'u4', [
     instruction: 'Both cases are about Mira, who must pay £18,000 to a care home on 1 May, in a year when prices have fallen by a fifth. Compare one thing: what the money for the bill is held in.',
     prompt: { kind: 'which', option: 'T1.datedbill', answer: 'tm-la-care-fund' },
     difference: [
-      'In Case A the £18,000 is in shares. After a fall of 20% it is £14,400, which is £3,600 short, and the care home’s date is 1 May whatever prices do. The key’s answer is {a:T1.datedbill}, and the case is {o:ladder}.',
-      'In Case B the £18,000 is in {t:bond} from a government that repays £18,000 on 30 April. The bond’s price moved a little during the year, and that does not matter, because Mira will hold it to the day it repays the full £18,000. The key’s answer is {a:T1.ready}, and the case is {o:covered}.',
+      'In Case A the £18,000 is in shares. After a fall of 20% it is £14,400, which is £3,600 short, and the care home’s date is 1 May whatever prices do. The answer is {a:T1.datedbill}, and the case is {o:ladder}.',
+      'In Case B the £18,000 is in {t:bond} from a government that repays £18,000 on 30 April. The bond’s price moved a little during the year, and that does not matter, because Mira will hold it to the day it repays the full £18,000. The answer is {a:T1.ready}, and the case is {o:covered}.',
       'The bill, the date and the fall are the same in both. What separates them is whether the money for the bill is held in something whose worth on the day can change. In Case B the cure is already in place, and nothing needs doing.'
     ] },
 
@@ -48,8 +48,8 @@ FC.cards('wealth', 'u4', [
     instruction: 'Both cases are about Femi’s rent. Compare one thing: is the money needed for costs that keep coming, month after month, or for one bill of a known size on a known day?',
     prompt: { kind: 'which', option: 'T1.livingcosts', answer: 'tm-la-rent-month' },
     difference: [
-      'In Case A Femi has no pay and lives on his £250,000. He pays £1,000 of rent every month by selling £1,000 of the fund, and he has no cash put by. The need is living costs, and it has no end date. The key’s answer is {a:T1.livingcosts}, and the case is {o:cashbuffer}.',
-      'In Case B Femi works, and his pay covers his bills. The only thing for the money to do is a single payment of £12,000, a year’s rent paid in advance on 1 March, and that money is in shares. The need is one bill of a known size on a known date, and nothing is needed from the money after it. The key’s answer is {a:T1.datedbill}, and the case is {o:ladder}.',
+      'In Case A Femi has no pay and lives on his £250,000. He pays £1,000 of rent every month by selling £1,000 of the fund, and he has no cash put by. The need is living costs, and it has no end date. The answer is {a:T1.livingcosts}, and the case is {o:cashbuffer}.',
+      'In Case B Femi works, and his pay covers his bills. The only thing for the money to do is a single payment of £12,000, a year’s rent paid in advance on 1 March, and that money is in shares. The need is one bill of a known size on a known date, and nothing is needed from the money after it. The answer is {a:T1.datedbill}, and the case is {o:ladder}.',
       'The man, the rent and the fall are the same. What differs is whether the money has to pay costs that keep coming, which a store of cash answers, or one bill on one day, which one bond answers.'
     ] },
 
@@ -66,7 +66,7 @@ FC.cards('wealth', 'u4', [
     explain: [
       'What you are shown is not a bill or living costs, and nothing has gone wrong yet. Nobody decided to take more risk. His mix moved while Marek was not looking: shares grew faster than bonds, and a bigger slice of what he owns became shares.',
       'Here is what that does. Suppose shares fall 30%. On his plan, 60% of £800,000 is £480,000 in shares, and a fall of 30% takes £144,000, which is 18% of everything he has. As {t:mix} is now, with £624,000 in shares, the same fall takes £187,200, which is 23.4% of everything. That is £43,200 more than the plan chose to risk, for a fall that is exactly the same.',
-      'The key’s question is about money that a fall would harm, and this is money that a fall would harm more than its owner agreed to. The harm is not a forced sale. It is a bigger bite than he chose, taken at a time he did not choose.',
+      'The question is about money that a fall would harm, and this is money that a fall would harm more than its owner agreed to. The harm is not a forced sale. It is a bigger bite than he chose, taken at a time he did not choose.',
       'The alternative is a written rule, made while things are calm. For example: "Each January, if shares are more than 5 points away from 60%, sell or buy so that they are back at 60%." For Marek that means selling £144,000 of shares and buying £144,000 of bonds, which leaves £480,000 in shares and £320,000 in bonds, the 60% and 40% he chose.',
       'The rule is written down because the moment to act feels wrong. When shares have been rising, selling some of them feels like giving up something that is working. When they have fallen, buying more feels like adding to a loss. A rule written beforehand and followed on its date takes the choice out of the moment when feelings are strongest. The 5 points and the January date are examples: each plan sets its own.',
       'One thing is worth looking at before any sale: where the shares are held. In {t:sheltered} a sale like this raises no tax. In a taxable account, selling shares that have risen can bring a tax bill on what they have gained, and that is a cost to weigh against the benefit.'

@@ -6,13 +6,13 @@ FC.cards('scams', 'u4', [
 
   { id: 'worked-invoice', kind: 'worked',
     h: 'A whole case, from the first question to the name',
-    link: 'You have the nine names and the key’s two questions about money. Before the drill, watch three cases being run from the top, in the order that the key asks. You are not asked anything until the end of each.',
+    link: 'You have the nine names and the two questions about money. Before the drill, watch three cases being run from the top, in the order that the questions are asked. You are not asked anything until the end of each.',
     case: 'm-w-invoice',
     steps: [
       { step: 'D1',
-        reason: 'The email asks Noor to pay: {cue:D1}. It asks for no program, no file, no sign-in and no facts about her, so nothing earlier in the key’s list applies. The key’s answer is {a:D1.money}.' },
+        reason: 'The email asks Noor to pay: {cue:D1}. It asks for no program, no file, no sign-in and no facts about her, so nothing earlier in the list applies. The answer is {a:D1.money}.' },
       { step: 'M1',
-        reason: 'The request is about something that she already pays for: {cue:M1}. That is a bill from someone she already pays, so the key’s answer is {a:M1.bill}. This is the answer that three names share, which is why a second question is needed.' },
+        reason: 'The request is about something that she already pays for: {cue:M1}. That is a bill from someone she already pays, so the answer is {a:M1.bill}. This is the answer that three names share, which is why a second question is needed.' },
       { step: 'M2',
         reason: 'Now ask what the email asks her to do with the money: {cue:M2}. The account is not the one that she has always paid. That is {a:M2.newdetails}, and one name is left: {o:invoicefraud}. Nothing in it is hurried or threatening, and that is why it is easy to miss.' }
     ],
@@ -30,28 +30,28 @@ FC.cards('scams', 'u4', [
         answer: 'b' },
       reason: [
         'For {o:realpayment} you must be able to point to this: {needs:realpayment}. The details are the part of that which the email does not satisfy: they are new, and they came in a message. Everything else about the case would fit a real request, and that is exactly why the copy works.',
-        'It is the question from Tessa’s two invoices. {test:invoicefraud~realpayment} Here the account has changed, so the key’s answer is {a:M2.newdetails}. Whether the change is real is not something that the email can tell her. She finds that out by ringing the supplier on a number from the contract.'
+        'It is the question from Tessa’s two invoices. {test:invoicefraud~realpayment} Here the account has changed, so the answer is {a:M2.newdetails}. Whether the change is real is not something that the email can tell her. She finds that out by ringing the supplier on a number from the contract.'
       ]
     },
     impression: {
       resembles: 'm-inv-builder',
       text: [
-        'The key has given its answer. Now take a second look of a different kind: does this case look like one you know? It should bring back the landscaper’s email: the usual thread, the usual signature, and one line about a new bank.',
-        'Here the key and the likeness agree, so the answer stands. The key’s questions come first, because they make you point at words in the case. The likeness is only a second look. When the two disagree, do not pick the one you prefer. Go back to the key’s questions and find the words in the case that answer them. The third whole case shows how.'
+        'You have your answer. Now take a second look of a different kind: does this case look like one you know? It should bring back the landscaper’s email: the usual thread, the usual signature, and one line about a new bank.',
+        'Here the questions and the likeness agree, so the answer stands. The questions come first, because they make you point at words in the case. The likeness is only a second look. When the two disagree, do not pick the one you prefer. Go back to the questions and find the words in the case that answer them. The third whole case shows how.'
       ]
     } },
 
   { id: 'worked-cottage', kind: 'worked',
     h: 'A second whole case, where the request is real',
-    link: 'The compost supplier was a copy. Not every case is. In this one the request is real, and the key’s questions are asked in exactly the same way.',
+    link: 'The compost supplier was a copy. Not every case is. In this one the request is real, and the questions are asked in exactly the same way.',
     case: 'm-w-cottage',
     steps: [
       { step: 'D1',
-        reason: 'The email asks Ruth to pay a deposit: {cue:D1}. Nothing earlier in the key’s list is asked of her, so the key’s answer is {a:D1.money}.' },
+        reason: 'The email asks Ruth to pay a deposit: {cue:D1}. Nothing earlier in the list is asked of her, so the answer is {a:D1.money}.' },
       { step: 'M1',
-        reason: 'The deposit is part of a booking that she made herself: {cue:M1}. That is a deal that she is in, so the key’s answer is {a:M1.deal}.' },
+        reason: 'The deposit is part of a booking that she made herself: {cue:M1}. That is a deal that she is in, so the answer is {a:M1.deal}.' },
       { step: 'M2',
-        reason: 'She has checked what she can without anyone’s help. The deposit is to go to the account named on her booking confirmation, which she already had, and the figures are the ones on the website that she found herself: {cue:M2}. The email also invites her to ring the owner. Nobody hurries her and nobody asks her to keep it quiet. So the key’s answer is {a:M2.agreed}.' }
+        reason: 'She has checked what she can without anyone’s help. The deposit is to go to the account named on her booking confirmation, which she already had, and the figures are the ones on the website that she found herself: {cue:M2}. The email also invites her to ring the owner. Nobody hurries her and nobody asks her to keep it quiet. So the answer is {a:M2.agreed}.' }
     ],
     hold: {
       neighbour: 'invoicefraud',
@@ -67,14 +67,14 @@ FC.cards('scams', 'u4', [
         answer: 'b' },
       reason: [
         'For {o:invoicefraud} you must be able to point to this: {needs:invoicefraud}. There are no new details here. The account is the one that she was given when she booked, so the one thing that the copy is made of is missing.',
-        'It is the question from Tessa’s two invoices. {test:invoicefraud~realpayment} Here nothing has changed, so the key’s answer is {a:M2.agreed}, and the case is {o:realpayment}. A real request is as much an answer of the key as a scam is, and saying so is the key doing its job.'
+        'It is the question from Tessa’s two invoices. {test:invoicefraud~realpayment} Here nothing has changed, so the answer is {a:M2.agreed}, and the case is {o:realpayment}. A real request is as much an answer as a scam is, and saying so is what the questions are for.'
       ]
     },
     impression: {
       resembles: 'm-real-rent',
       text: [
         'Now take a second look: does this case look like one you know? It should bring back Hana’s rent reminder: a payment that is due, an account that she was given at the start, and a number to ring.',
-        'Here the key and the likeness agree, so the answer stands. Notice that the likeness points to the real thing as readily as to a copy. That is the reason the key’s questions come first.'
+        'Here the questions and the likeness agree, so the answer stands. Notice that the likeness points to the real thing as readily as to a copy. That is the reason the questions come first.'
       ]
     } },
 
@@ -84,11 +84,11 @@ FC.cards('scams', 'u4', [
     case: 'm-w-sofa',
     steps: [
       { step: 'D1',
-        reason: 'The buyer asks Imogen to send money: {cue:D1}. Nothing earlier in the key’s list is asked of her, so the key’s answer is {a:D1.money}.' },
+        reason: 'The buyer asks Imogen to send money: {cue:D1}. Nothing earlier in the list is asked of her, so the answer is {a:D1.money}.' },
       { step: 'M1',
-        reason: 'The money is part of a sale that she is making: {cue:M1}. That is a deal she is in, so the key’s answer is {a:M1.deal}. There is no official, no prize, no loss and no stranger who showed her a site. The person behind the request is a buyer.' },
+        reason: 'The money is part of a sale that she is making: {cue:M1}. That is a deal she is in, so the answer is {a:M1.deal}. There is no official, no prize, no loss and no stranger who showed her a site. The person behind the request is a buyer.' },
       { step: 'M2',
-        reason: 'This is the question that matters. The buyer has paid twice the price and asks her to send the extra to someone else’s account: {cue:M2}. That is the answer {a:M2.sendback}. The text also says today, by transfer, and do not tell your bank. Those words are a hurry, a payment that cannot be undone, and a secret, which is what the answer {a:M2.rush} sounds like. When a request shows both, the key gives the more specific answer, and the more specific one is the payment to send back.' }
+        reason: 'This is the question that matters. The buyer has paid twice the price and asks her to send the extra to someone else’s account: {cue:M2}. That is the answer {a:M2.sendback}. The text also says today, by transfer, and do not tell your bank. Those words are a hurry, a payment that cannot be undone, and a secret, which is what the answer {a:M2.rush} sounds like. When a request shows both, the answer is the more specific one, and the more specific one is the payment to send back.' }
     ],
     hold: {
       neighbour: 'fakeofficial',
@@ -104,27 +104,27 @@ FC.cards('scams', 'u4', [
         answer: 'b' },
       reason: [
         'For {o:fakeofficial} you must be able to point to this: {needs:fakeofficial}. There is no official here, and no fine, debt or danger. The sender is a buyer, and the money is part of a sale. A hurry and a secret are there, but they are only part of what that name needs.',
-        'The question that separates the two is the one from the first question card. {test:fakeofficial~overpayment} Here the money is part of a deal that Imogen is in, and the buyer asks her to send some back. So the key’s answer is {a:M2.sendback}, and the name is {o:overpayment}.'
+        'The question that separates the two is the one from the first question card. {test:fakeofficial~overpayment} Here the money is part of a deal that Imogen is in, and the buyer asks her to send some back. So the answer is {a:M2.sendback}, and the name is {o:overpayment}.'
       ]
     },
     impression: {
       resembles: 'm-over-bike', first: 'm-off-tax',
       text: [
-        'Now the second look: does this case look like one you know? A buyer who hurries you, tells you to keep a payment from your bank and wants a transfer today may bring back the tax caller first, and that case was {o:fakeofficial}. So here the likeness and the key seem to disagree.',
-        'When that happens, go back to the key’s questions and find the words in the case that answer them. They are {cue:M2}. The tax caller has nothing like them: there was no deal and no payment from the other side. The bike with a typing slip does: someone had paid twice the price, and asked for the difference to be sent on. So the case this one really looks like is Rafa’s bike, and the key’s answer stands.'
+        'Now the second look: does this case look like one you know? A buyer who hurries you, tells you to keep a payment from your bank and wants a transfer today may bring back the tax caller first, and that case was {o:fakeofficial}. So here the likeness and the questions seem to disagree.',
+        'When that happens, go back to the questions and find the words in the case that answer them. They are {cue:M2}. The tax caller has nothing like them: there was no deal and no payment from the other side. The bike with a typing slip does: someone had paid twice the price, and asked for the difference to be sent on. So the case this one really looks like is Rafa’s bike, and the answer stands.'
       ]
     } },
 
   /* ---------- after the drill ---------- */
   { id: 'recap', kind: 'recap',
     h: 'What to carry away',
-    link: 'You have now run the key on your own. This card puts the unit in one place, in the key’s words.',
+    link: 'You have now run the questions on your own. This card puts the unit in one place.',
     carry: [
       'Before any name, put your finger on the words that show what the request says the money is for, and then on the words that show what it asks you to do with the money. If you cannot point to them, you do not yet have an answer.',
       'A real request and its copy can use the same story, the same bill and the same words. What separates them is not how they look. It is what the request asks you to do with the money, and whether it holds up when you contact them yourself, through {t:already}. That is what {t:check} means, and it works on every name in this unit.',
-      'Hurry, secrecy and a payment that cannot be undone turn up in most of the scams. They are a reason to stop, and they do not decide the name: the key gives the more specific answer whenever there is one.',
-      'Everything that the key asks can be seen when the request arrives. What happens after you pay (a refused withdrawal, a buyer’s payment that disappears, a second fee) is how many people notice, and by then the money has gone.',
-      'When a request is a real one, the right thing to do is to pay it in the normal way. {o:realpayment} is a name in the key because treating every bill as a scam is a mistake of its own.',
+      'Hurry, secrecy and a payment that cannot be undone turn up in most of the scams. They are a reason to stop, and they do not decide the name: the name comes from the more specific answer whenever there is one.',
+      'Everything that the questions ask can be seen when the request arrives. What happens after you pay (a refused withdrawal, a buyer’s payment that disappears, a second fee) is how many people notice, and by then the money has gone.',
+      'When a request is a real one, the right thing to do is to pay it in the normal way. {o:realpayment} is a name here because treating every bill as a scam is a mistake of its own.',
       'What to do on the spot is the same in nearly every name: do not pay yet, and contact them yourself.'
     ] },
 

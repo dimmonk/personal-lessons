@@ -55,7 +55,7 @@ FC.cases('civics', 'u6', [
               S1: 'The rule is the town’s: {cue:S1}. A town is not a state, and its power is the state’s handed down.',
               S2: 'The matter is {cue:S2} for a town car park, a local matter. No federal law is named and no right is touched.' },
     not: { outcome: 'police', why: 'The state’s legislature is not named. A town council decided, so the rule is a town’s, not the state’s own.' },
-    wouldChange: 'If the state’s legislature had set the fee for every town car park in the state, the key’s answer to the first question would be {a:S1.own} and the name would be {o:police}.' },
+    wouldChange: 'If the state’s legislature had set the fee for every town car park in the state, the answer to the first question would be {a:S1.own} and the name would be {o:police}.' },
 
   { id: 'u6-f-schoolbus', use: 'drill', tier: 'varied', setting: 'learning', topic: 'stopping for a school bus',
     text: "Congress taxes the gasoline sold in every state. After a child was hurt near a school bus, the Calder legislature passed a law that every car must stop when a school bus has its stop sign out.",

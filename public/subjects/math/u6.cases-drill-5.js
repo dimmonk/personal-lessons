@@ -20,7 +20,7 @@ FC.cases('math', 'u6', [
       S2: 'How long is the rafter?'
     },
     reason: {
-      M1: 'The problem asks {cue:M1}, a length in a {t:righttriangle} that is worked out from an angle. Nothing in it follows an amount through time, hides a number that a {t:formula} must fit, or counts ways, so the key’s first answer is {a:M1.shape}.',
+      M1: 'The problem asks {cue:M1}, a length in a {t:righttriangle} that is worked out from an angle. Nothing in it follows an amount through time, hides a number that a {t:formula} must fit, or counts ways, so the answer to the first question is {a:M1.shape}.',
       S1: 'The words {cue:S1} give the length of one side of a {t:righttriangle} and one angle in degrees besides the square corner. That is {a:S1.sideangle}.',
       S2: 'The words {cue:S2} ask how long a side is, which is {a:S2.length}.'
     },
@@ -34,13 +34,13 @@ FC.cases('math', 'u6', [
         working: 'The angle is 33°. The longest side, opposite the square corner, is the rafter. The side opposite the angle is the height of the ridge. The side next to the angle, the one that is not the longest, is the 4.2 m along level ground'
       },
       {
-        does: 'Choose the calculator key that joins the side you know to the side you want',
-        working: 'You know the side next to the angle (4.2 m) and want the longest side. The cos key joins those two: cos = next to ÷ longest'
+        does: 'Choose the calculator button that joins the side you know to the side you want',
+        working: 'You know the side next to the angle (4.2 m) and want the longest side. The cos button joins those two: cos = next to ÷ longest'
       },
-      { does: 'Write the key’s comparison with the numbers in', working: 'cos 33° = 4.2 ÷ rafter' },
+      { does: 'Write the button’s comparison with the numbers in', working: 'cos 33° = 4.2 ÷ rafter' },
       { does: 'Get the side you want on its own', working: 'rafter = 4.2 ÷ cos 33°' },
       {
-        does: 'Read the key’s value off the calculator, set to degrees, and finish the sum',
+        does: 'Read the button’s value off the calculator, set to degrees, and finish the sum',
         working: 'cos 33° = 0.8387; 4.2 ÷ 0.8387 = 5.0078, so about 5.0 m'
       }
     ],
@@ -50,7 +50,7 @@ FC.cases('math', 'u6', [
         {
           id: 's1',
           text: '6.5 m',
-          slip: 'you use the tan key, which compares the side opposite the angle with the side next to it, though the two sides in this problem are the side next to the angle and the longest side.'
+          slip: 'you use the tan button, which compares the side opposite the angle with the side next to it, though the two sides in this problem are the side next to the angle and the longest side.'
         },
         {
           id: 's2',
@@ -60,7 +60,7 @@ FC.cases('math', 'u6', [
       ],
       right: 'r'
     },
-    why: 'In a {t:righttriangle} the angle settles how long each side is compared with the others, whatever the size of the triangle, and each calculator key gives one of those comparisons for the angle you type in. Choosing the key whose two sides are the one you know and the one you want, and then multiplying or dividing by its value, turns that comparison into the missing length.',
+    why: 'In a {t:righttriangle} the angle settles how long each side is compared with the others, whatever the size of the triangle, and each calculator button gives one of those comparisons for the angle you type in. Choosing the button whose two sides are the one you know and the one you want, and then multiplying or dividing by its value, turns that comparison into the missing length.',
     wouldChange: 'If the problem gave the lengths of two sides and no angle besides the square corner, it would be {o:pyth}.'
   },
 
@@ -80,7 +80,7 @@ FC.cases('math', 'u6', [
       S2: 'How far north of her starting point is she?'
     },
     reason: {
-      M1: 'The problem asks {cue:M1}, a length in a {t:righttriangle} that is worked out from an angle. Nothing in it follows an amount through time, hides a number that a {t:formula} must fit, or counts ways, so the key’s first answer is {a:M1.shape}.',
+      M1: 'The problem asks {cue:M1}, a length in a {t:righttriangle} that is worked out from an angle. Nothing in it follows an amount through time, hides a number that a {t:formula} must fit, or counts ways, so the answer to the first question is {a:M1.shape}.',
       S1: 'The words {cue:S1} give the length of one side of a {t:righttriangle} and one angle in degrees besides the square corner. That is {a:S1.sideangle}.',
       S2: 'The words {cue:S2} ask how long a side is, which is {a:S2.length}.'
     },
@@ -95,13 +95,13 @@ FC.cases('math', 'u6', [
         working: 'The angle is 25°. The longest side, opposite the square corner, is the track, 4 km. The side opposite the angle is the distance north. The side next to the angle, the one that is not the longest, is the distance east'
       },
       {
-        does: 'Choose the calculator key that joins the side you know to the side you want',
-        working: 'You know the longest side (4 km) and want the side opposite the angle. The sin key joins those two: sin = opposite ÷ longest'
+        does: 'Choose the calculator button that joins the side you know to the side you want',
+        working: 'You know the longest side (4 km) and want the side opposite the angle. The sin button joins those two: sin = opposite ÷ longest'
       },
-      { does: 'Write the key’s comparison with the numbers in', working: 'sin 25° = distance ÷ 4' },
+      { does: 'Write the button’s comparison with the numbers in', working: 'sin 25° = distance ÷ 4' },
       { does: 'Get the side you want on its own', working: 'distance = 4 × sin 25°' },
       {
-        does: 'Read the key’s value off the calculator, set to degrees, and finish the sum',
+        does: 'Read the button’s value off the calculator, set to degrees, and finish the sum',
         working: 'sin 25° = 0.4226; 4 × 0.4226 = 1.6904, so about 1.7 km'
       }
     ],
@@ -111,17 +111,17 @@ FC.cases('math', 'u6', [
         {
           id: 's1',
           text: '3.6 km',
-          slip: 'you use the cos key, which compares the side next to the angle with the longest side, though the two sides in this problem are the longest side and the side opposite the angle.'
+          slip: 'you use the cos button, which compares the side next to the angle with the longest side, though the two sides in this problem are the longest side and the side opposite the angle.'
         },
         {
           id: 's2',
           text: '9.5 km',
-          slip: 'you divide by the key’s value, though the side you want is the one on top of the key’s comparison and the side you know is the one under it, so you should multiply.'
+          slip: 'you divide by the button’s value, though the side you want is the one on top of the button’s comparison and the side you know is the one under it, so you should multiply.'
         }
       ],
       right: 'r'
     },
-    why: 'In a {t:righttriangle} the angle settles how long each side is compared with the others, whatever the size of the triangle, and each calculator key gives one of those comparisons for the angle you type in. Choosing the key whose two sides are the one you know and the one you want, and then multiplying or dividing by its value, turns that comparison into the missing length.',
+    why: 'In a {t:righttriangle} the angle settles how long each side is compared with the others, whatever the size of the triangle, and each calculator button gives one of those comparisons for the angle you type in. Choosing the button whose two sides are the one you know and the one you want, and then multiplying or dividing by its value, turns that comparison into the missing length.',
     wouldChange: 'If the problem gave how far she walked east and how far north, and asked how far she is from her start in a straight line, it would be {o:pyth}.'
   },
 
@@ -141,7 +141,7 @@ FC.cases('math', 'u6', [
       S2: 'How high is the big flag?'
     },
     reason: {
-      M1: 'The problem asks {cue:M1}, a length on one of two things of exactly the same shape. Nothing in it follows an amount through time, hides a number that a {t:formula} must fit, or counts ways, so the key’s first answer is {a:M1.shape}.',
+      M1: 'The problem asks {cue:M1}, a length on one of two things of exactly the same shape. Nothing in it follows an amount through time, hides a number that a {t:formula} must fit, or counts ways, so the answer to the first question is {a:M1.shape}.',
       S1: 'The words {cue:S1} give two things of exactly the same shape at different sizes, with a length measured on both. That is {a:S1.matching}.',
       S2: 'The words {cue:S2} ask how long a part is, which is {a:S2.length}.'
     },
@@ -196,7 +196,7 @@ FC.cases('math', 'u6', [
       S2: 'How long is the real bridge, in metres?'
     },
     reason: {
-      M1: 'The problem asks {cue:M1}, a length on one of two things of exactly the same shape. Nothing in it follows an amount through time, hides a number that a {t:formula} must fit, or counts ways, so the key’s first answer is {a:M1.shape}.',
+      M1: 'The problem asks {cue:M1}, a length on one of two things of exactly the same shape. Nothing in it follows an amount through time, hides a number that a {t:formula} must fit, or counts ways, so the answer to the first question is {a:M1.shape}.',
       S1: 'The words {cue:S1} give two things of exactly the same shape at different sizes, with a length measured on both. That is {a:S1.matching}.',
       S2: 'The words {cue:S2} ask how long a part is, which is {a:S2.length}.'
     },

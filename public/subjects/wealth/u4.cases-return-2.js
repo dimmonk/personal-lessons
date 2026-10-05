@@ -57,7 +57,7 @@ FC.cases('wealth', 'u4', [
     reason: { D1: 'The case is about how the money is split against a plan: {cue:D1}. Nothing in it comes out every year, rests on one thing, or is about a death or a gift.',
               T1: 'Bruno chose 40% in shares, and the case says {cue:T1}. That is 14 points below his plan, so a fall would take less than he chose, and a recovery would lift him less. Nothing is being sold to pay for anything.' },
     not: { outcome: 'cashbuffer', why: 'Bruno does not live on the money yet, and the case shows no sales to pay bills. It shows only a mix that has moved.' },
-    wouldChange: 'If he were already selling units of the shares every month to pay his bills, with no cash set aside, the key’s answer would be {a:T1.livingcosts}.' },
+    wouldChange: 'If he were already selling units of the shares every month to pay his bills, with no cash set aside, the answer would be {a:T1.livingcosts}.' },
 
   { id: 'ret-mix-3', use: 'return', tier: 'varied', setting: 'work', topic: 'a young saver’s pension nearly all in shares',
     text: "Fatou, 35, chose 85% shares and 15% bonds for her pension. After years of rises, shares are £291,000 of £300,000, 97%. She will not need it for thirty years.",
@@ -65,7 +65,7 @@ FC.cases('wealth', 'u4', [
     cues: { D1: 'chose 85% shares and 15% bonds for her pension', T1: 'shares are £291,000 of £300,000, 97%' },
     reason: { D1: 'The case is about how the money is split against a plan: {cue:D1}. Nothing in it comes out every year, rests on one thing, or is about a death or a gift.',
               T1: 'Fatou chose 85% in shares, and the case says {cue:T1}. That is 12 points above her plan, with no bill and no living costs in the case, so {t:mix} is all that a fall would find.' },
-    not: { outcome: 'covered', why: 'It does not matter that she will not need the money for thirty years. The case shows a mix far from the plan she chose, and the key asks about that.' },
+    not: { outcome: 'covered', why: 'It does not matter that she will not need the money for thirty years. The case shows a mix far from the plan she chose, and the question is about that.' },
     wouldChange: 'If her plan had been 95% in shares and she allowed 5 points either way, 97% would be inside her limit, and the case would be {a:T1.ready}.' },
 
   { id: 'ret-mix-4', use: 'return', tier: 'varied', setting: 'business', topic: 'personal savings of a firm owner after a sharp drop',
@@ -75,5 +75,5 @@ FC.cases('wealth', 'u4', [
     reason: { D1: 'The case is about how the money is split against a plan: {cue:D1}. Nothing in it comes out every year, rests on one thing, or is about a death or a gift.',
               T1: 'Karim chose 50% in shares, and the case says {cue:T1}. That is 25 points below his plan, with nothing being sold to pay for anything.' },
     not: { outcome: 'ladder', why: 'There is no bill on a date in the case. It shows only a mix that has moved, a long way below the one he chose.' },
-    wouldChange: 'If a bill of £40,000 were due in four months with its money in the shares, the key’s answer would be {a:T1.datedbill}.' }
+    wouldChange: 'If a bill of £40,000 were due in four months with its money in the shares, the answer would be {a:T1.datedbill}.' }
 ]);

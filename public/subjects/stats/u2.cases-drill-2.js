@@ -27,9 +27,9 @@ FC.cases('stats', 'u2', [
     text: "A credit union compares two branches. Both serve the same kinds of members, both log every transaction in the same system, and both were counted for the whole of last year. Branch X had 1,800 complaints among 90,000 transactions, and Branch Y had 3,300 among 110,000. The credit union says: 'Branch Y gets more complaints: 3 in 100 transactions against 2 in 100.'",
     outcome: 'comp_ok', route: { S1: ['holds'], H1: ['difference'] },
     cues: { S1: ['Both serve the same kinds of members, both log every transaction in the same system'], H1: 'Branch Y gets more complaints: 3 in 100 transactions against 2 in 100' },
-    reason: { S1: 'Each part holds. The two branches are alike and counted alike: {cue:S1}, and the numbers are given.',
-              H1: 'The claim is {cue:H1}. It sets two branches of one kind side by side, with the numbers behind each: 1,800 ÷ 90,000 = 0.02 and 3,300 ÷ 110,000 = 0.03. It says which gets more and stops.' },
-    not: { outcome: 'cause_ok', why: 'The claim does not say what makes Branch Y’s number higher, and nothing in the case forms the branches into groups by lottery.' } },
+    reason: { S1: 'Each part holds. The two are alike and counted alike: {cue:S1}, and the numbers are given.',
+              H1: 'The claim is {cue:H1}. It sets two of one kind side by side, with the numbers behind each: 1,800 ÷ 90,000 = 0.02 and 3,300 ÷ 110,000 = 0.03. It says which gets more and stops.' },
+    not: { outcome: 'cause_ok', why: 'The claim does not say what makes Y’s number higher, and nothing in the case forms the two into groups by lottery.' } },
 
   { id: 'r-cause1', use: 'drill', tier: 'clean', setting: 'community', topic: 'countdown timers at crossings',
     text: "A city has 600 intersections with the same kind of signal. A computer drew 300 of them by lottery to get new countdown timers for walkers, and the other 300 kept the old signals. Over a year the city counted every pedestrian injury at every intersection the same way: 36 injuries at the timer intersections and 60 at the others. The city says: 'The countdown timers cut pedestrian injuries: 12 for every 100 intersections against 20.'",

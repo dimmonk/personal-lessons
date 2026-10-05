@@ -58,7 +58,7 @@ FC.cases('scams', 'u2', [
     text: "A patient portal page that Mr Adeyemi has open on his laptop is covered by a red box: 'Virus detected! Your data is being stolen. Call Support now on 0800 555 0155.' A loud alarm plays, and the box will not close.",
     outcome: 'techsupport', route: { D1: ['device'], I1: ['support'] },
     cues: { D1: 'Call Support now on 0800 555 0155', I1: ['Your data is being stolen', 'Call Support now on 0800 555 0155'] },
-    reason: { D1: 'The warning says that his device has a problem and gives him someone to ring to deal with it: {cue:D1}. The key counts that as a request about the device.',
+    reason: { D1: 'The warning says that his device has a problem and gives him someone to ring to deal with it: {cue:D1}. That counts as a request about the device.',
               I1: 'A warning announces a problem that a web page cannot know about, and offers someone to ring: {cue:I1}. Nothing was sent to him, and nothing is offered about money.' },
     not: { outcome: 'malware', why: 'There is no file or link to open. The page gives him a number to ring.' },
     wouldChange: 'If the red box had come in an email, with a file to open and no number to ring, it would be {a:I1.file}.' },

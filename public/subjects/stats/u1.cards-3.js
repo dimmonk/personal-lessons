@@ -21,8 +21,8 @@ FC.cards('stats', 'u1', [
     ],
     feature: { step: 'S1', option: 'compare' },
     name: [
-      'The key’s answer, and so the name of the family, is {a:S1.compare}. "Compared with" does not mean the claim sets two things side by side. It means that a figure has to be set beside something before it means anything, and the claim leaves that out.',
-      'The key gives this answer when {when:S1.compare}.'
+      'The answer, and so the name of the kind, is {a:S1.compare}. "Compared with" does not mean the claim sets two things side by side. It means that a figure has to be set beside something before it means anything, and the claim leaves that out.',
+      'Give this answer when {when:S1.compare}.'
     ] },
 
   { id: 'again-compare', kind: 'again', family: 'compare',
@@ -65,8 +65,8 @@ FC.cards('stats', 'u1', [
     instruction: 'Both cases say that bike thefts in the town of Brandon fell. Compare one thing: has something about what is counted changed, or is a percentage given with no numbers behind it?',
     prompt: { kind: 'which', option: 'S1.compare', answer: 'gate-thefts-percent' },
     difference: [
-      'In Case A the figures are given in full, 400 and then 250. Nothing is hidden. But in January the police changed what gets recorded as a theft: now only one with a receipt. A fall from 400 to 250 can happen with exactly as many bikes stolen. The trouble is what the figure counts. The key’s answer is {a:S1.measure}.',
-      'In Case B the police count every theft the same way in both years, so what is counted has not changed. The trouble is that the claim gives only "down 37%", with no word on how many were stolen before or after. The trouble is what the figure is set beside. The key’s answer is {a:S1.compare}.',
+      'In Case A the figures are given in full, 400 and then 250. Nothing is hidden. But in January the police changed what gets recorded as a theft: now only one with a receipt. A fall from 400 to 250 can happen with exactly as many bikes stolen. The trouble is what the figure counts. The answer is {a:S1.measure}.',
+      'In Case B the police count every theft the same way in both years, so what is counted has not changed. The trouble is that the claim gives only "down 37%", with no word on how many were stolen before or after. The trouble is what the figure is set beside. The answer is {a:S1.compare}.',
       'Both claims say that thefts fell, and neither lies. What separates them is where the trouble is. In Case A the numbers are all there and the counting changed. In Case B the counting is the same and the numbers are missing.'
     ] }
 ]);

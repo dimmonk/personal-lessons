@@ -10,7 +10,7 @@ FC.cards('civics', 'u10', [
   { id: 'orient-since', kind: 'orient',
     h: 'Facts to hold: the history since 1877, and the symbols of the country',
     canDo: [
-      'This unit is different from the units that teach the key’s questions. Those teach you to put a question to a case. This one is a set of facts to hold: what happened from the years of factories and great arrivals to September 11, 2001; the years in which the right to vote was widened; and the plain facts about the flag, the days and the names that stand for the country. By the end you can say each fact without looking it up, which is what the history part of the citizenship interview asks of you.',
+      'This unit is different from the units that sort cases. Those teach you to put a question to a case. This one is a set of facts to hold: what happened from the years of factories and great arrivals to September 11, 2001; the years in which the right to vote was widened; and the plain facts about the flag, the days and the names that stand for the country. By the end you can say each fact without looking it up, which is what the history part of the citizenship interview asks of you.',
       'Some of these facts also explain what you read in the news. Why the rules on who may come in come from Congress and are run by a federal {t:agency}, why a tax on what people earn exists, and why arguments about voting go back so far: each of those has its answer in the history here.'
     ],
     everyday: [
@@ -20,7 +20,7 @@ FC.cards('civics', 'u10', [
     add: [
       'The unit starts where the history before it stopped, in 1877, when Reconstruction ended. It has almost nothing about the years from 1877 to 1900. The citizenship test asks little about them, and this course holds only the few facts of those years that the first group gives. The unit skips them, and does not fill them with facts that have not been checked.',
       'Each group starts from one question that a period of history answered, or from one thing a newcomer is expected to know. It opens with a short story of someone who needs the idea, then explains the idea in plain words, then gives the facts for that group in a table. After the table, each fact is asked once, from memory. In one table the answers all have one form (all years, or all names, or all things done), so you cannot guess an answer from its shape and must know it.',
-      'Where the unit says what the key calls something, it prints the key’s own name. In this course, “the vote” and “the right to vote” are the words for one thing, throughout.'
+      'Where the unit gives a name you have already met, it prints that name as it was taught. In this course, “the vote” and “the right to vote” are the words for one thing, throughout.'
     ] },
 
   /* ---------- group one: the great arrivals, in years ---------- */
@@ -75,7 +75,7 @@ FC.cards('civics', 'u10', [
     plain: [
       'The resident in the story is right, and the years of the great arrivals are when that became the settled answer. In the 1870s the Supreme Court struck down a California law that put its own conditions on people arriving there, and said that the power belonged to the federal government. “Federal” means the government of the whole country, as against one state. So a state could not set its own conditions on arrivals.',
       'The same answer shows in the other two landmarks. Congress passed the Chinese Exclusion Act in 1882, which is a law for the whole country. And Ellis Island, where arrivals were examined, was the federal immigration station: it belonged to the government of the whole country, and not to a state.',
-      'That is why, today, the rules on who may come in come from Congress and are run by a federal {t:agency}. It also fits the key: a state’s own scheme for who may stay in the country would be pushed aside, which the key calls {o:preempted}. The four facts below are who did what.'
+      'That is why, today, the rules on who may come in come from Congress and are run by a federal {t:agency}. It also fits a name from the earlier units: a state’s own scheme for who may stay in the country would be pushed aside, which is called {o:preempted}. The four facts below are who did what.'
     ] },
 
   { id: 'facts-door', kind: 'facts',

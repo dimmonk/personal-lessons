@@ -41,8 +41,8 @@ FC.cases('stats', 'u6', [
     segments: [
       { text: 'A teacher gives her ten students a quiz.', note: 'That is how the scores came about. The question is which students ended up in the group that was given something.' },
       { text: 'The three lowest scorers, who average 46, get a week of extra tutoring.' },
-      { text: 'On an equally hard quiz the next week, the three tutored students average 55.', note: 'That is the later figure. It is the change the claim is about, and what settles the key’s answer is how the group was picked, not the change.' },
-      { text: "'The tutoring worked,' she says. 'They gained 9 points.'", note: 'That is the claim of cause. What settles the key’s answer is how the group was picked.' }
+      { text: 'On an equally hard quiz the next week, the three tutored students average 55.', note: 'That is the later figure. It is the change the claim is about, and what settles the answer is how the group was picked, not the change.' },
+      { text: "'The tutoring worked,' she says. 'They gained 9 points.'", note: 'That is the claim of cause. What settles the answer is how the group was picked.' }
     ] },
 
   { id: 'k-roadsigns', use: 'teach', tier: 'clean', setting: 'community', topic: 'warning signs at the worst intersections', name: 'The warning signs', also: ['anyway'],
@@ -53,14 +53,14 @@ FC.cases('stats', 'u6', [
       { text: 'A city’s road department picks the five intersections that had the most crashes last year' },
       { text: 'and puts up new warning signs at them.', note: 'That is what was done. The question is why these five intersections were chosen.' },
       { text: 'Last year those five had 50 crashes in all. This year they have 30.', note: 'Those are the figures, and the fall from 50 to 30 is real. What the figures cannot say is why it fell.' },
-      { text: "'The signs cut crashes by 40%,' the department says.", note: 'That is the claim of cause. What settles the key’s answer is how the intersections were picked.' }
+      { text: "'The signs cut crashes by 40%,' the department says.", note: 'That is the claim of cause. What settles the answer is how the intersections were picked.' }
     ] },
 
   { id: 'k-heartrate', use: 'check', tier: 'clean', setting: 'health', topic: 'a breathing app for the fastest resting heart rates', name: 'The breathing app', also: ['anyway'],
     text: "A fitness company picks the 20 members with the highest resting heart rates in January and gives them a breathing app. In February their resting heart rates average 6 beats a minute lower than in January. 'Our breathing app lowers heart rates,' the company says.",
     outcome: 'regression', route: { S1: ['cause'], K1: ['extreme'] },
     cues: { S1: 'Our breathing app lowers heart rates', K1: 'picks the 20 members with the highest resting heart rates in January' },
-    reason: { K1: 'The group was picked for having the highest rates in the company: {cue:K1}. A group picked for being at an extreme is likely to be nearer its usual level the next time it is measured, with no app at all. The case also shows no group that went without, so {a:K1.anyway} fits too, but when a case shows both, the key’s answer is {a:K1.extreme}.' } },
+    reason: { K1: 'The group was picked for having the highest rates in the company: {cue:K1}. A group picked for being at an extreme is likely to be nearer its usual level the next time it is measured, with no app at all. The case also shows no group that went without, so {a:K1.anyway} fits too, but when a case shows both, the answer is {a:K1.extreme}.' } },
 
   /* ---------- The cases of the pair "No comparison group" and "Regression to the mean": the same program, picked two ways ---------- */
   { id: 'k-coach-all', use: 'teach', tier: 'clean', setting: 'work', topic: 'coaching for every call-center agent', name: 'Coaching for everyone',

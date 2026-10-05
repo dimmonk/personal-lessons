@@ -35,7 +35,7 @@ FC.cards('civics', 'u6', [
     prompt: { kind: 'which', option: 'S2.right', answer: 'u6-stall-paper' },
     difference: [
       'In Case A the rule is about who may run a food stall. Selling food is a business, and a state may license businesses. Nothing about speech, worship, publishing or gathering is touched, and the case names no federal law, so the case is {o:police}.',
-      'In Case B the rule lets the governor’s office approve what a newspaper says before it may be handed out. That takes away the right to publish. The key’s answer is {a:S2.right}, and the case is {o:protected}.',
+      'In Case B the rule lets the governor’s office approve what a newspaper says before it may be handed out. That takes away the right to publish. The answer is {a:S2.right}, and the case is {o:protected}.',
       'Both rules are about who may use the same sidewalk, so you cannot tell them apart by the place. The difference is whether the rule takes away a right.'
     ] },
 
@@ -43,7 +43,7 @@ FC.cards('civics', 'u6', [
     h: 'A city’s own sidewalk, and a right that stops it',
     link: 'A few cards ago you read that a city controls its own streets and what is done on them. Here is a case that sounds exactly like that.',
     case: 'u6-councilmag',
-    setup: 'This looks like {o:localgov}: a city council decides who may set up on its own sidewalks, and newsstands stand on them. A city’s power over its sidewalks is real. Yet the key’s answer for this case is {a:S2.right}, and the case is {o:protected}.',
+    setup: 'This looks like {o:localgov}: a city council decides who may set up on its own sidewalks, and newsstands stand on them. A city’s power over its sidewalks is real. Yet the answer for this case is {a:S2.right}, and the case is {o:protected}.',
     prompt: { kind: 'phrase', answer: 'newsstands may not sell the magazine that makes fun of the mayor' },
     because: [
       'The council is using a real power. If it had said that newsstands must stand six feet from the corner, a rule about where, the case would be {o:localgov}. But the rule it made is about what may be sold: it bans a magazine because the magazine makes fun of the mayor. That takes away the right to publish.',
@@ -58,39 +58,39 @@ FC.cards('civics', 'u6', [
     instruction: 'Both cases are about a ban on any group holding a political rally in a public park. Compare one thing: who made the rule.',
     prompt: { kind: 'which', option: 'D1.states', answer: 'u6-rally-city' },
     difference: [
-      'In Case A both chambers of Congress passed a law. The key’s first answer is {a:D1.congress}, so the questions of this unit are not the ones to ask. The case belongs to the branch for Congress, and its name is the one for {plain:beyondcong}. The right to gather peacefully is what stops this law too.',
-      'In Case B a city council made the rule. The key’s first answer is {a:D1.states}, and the right stops the rule. The key’s answer to the second question is {a:S2.right}, and the case is {o:protected}.',
-      'The ban and the right are the same in both cases, so you cannot tell the two names apart by what the rule says or by which right is involved. You can only tell by who made the rule, which is the key’s first question.'
+      'In Case A both chambers of Congress passed a law. The first answer is {a:D1.congress}, so the questions of this unit are not the ones to ask. The case belongs to the questions for Congress, and its name is the one for {plain:beyondcong}. The right to gather peacefully is what stops this law too.',
+      'In Case B a city council made the rule. The first answer is {a:D1.states}, and the right stops the rule. The answer to the second question is {a:S2.right}, and the case is {o:protected}.',
+      'The ban and the right are the same in both cases, so you cannot tell the two names apart by what the rule says or by which right is involved. You can only tell by who made the rule, which is the first question.'
     ] },
 
   { id: 'look-protected-trialrights', kind: 'lookalike', ledger: 'protected~trialrights',
     h: 'A right against the police, and a right against a council',
-    link: 'Both of these names say that a right in the Constitution protects a person against a government. They are told apart in the same way: by the key’s first question.',
+    link: 'Both of these names say that a right in the Constitution protects a person against a government. They are told apart in the same way: by the first question.',
     cases: ['u6-silence-lawyer', 'u6-council-criticism'],
     instruction: 'In both cases a person has a right that a government has to respect. Compare one thing: what the story ends on. Does it end with a judge being asked, or with a rule made by a state, a city or a county?',
     prompt: { kind: 'which', option: 'D1.states', answer: 'u6-council-criticism' },
     difference: [
-      'In Case A the story ends with a lawyer asking a judge to keep out what a man said in questioning. A judge is being asked, so the key’s first answer is {a:D1.courts}. The right is one of the steps the Constitution promises an accused person, and the name is the one for {plain:trialrights}.',
-      'In Case B the story ends with a council’s rule. Nobody has asked a judge anything. The key’s first answer is {a:D1.states}, the right at stake is the right to speak, and the case is {o:protected}.',
+      'In Case A the story ends with a lawyer asking a judge to keep out what a man said in questioning. A judge is being asked, so the first answer is {a:D1.courts}. The right is one of the steps the Constitution promises an accused person, and the name is the one for {plain:trialrights}.',
+      'In Case B the story ends with a council’s rule. Nobody has asked a judge anything. The first answer is {a:D1.states}, the right at stake is the right to speak, and the case is {o:protected}.',
       'A right is in both cases, and in both it is a right against government. What separates them is whose decision the story ends on.'
     ] },
 
   { id: 'look-police-beyondcong', kind: 'lookalike', ledger: 'police~beyondcong',
     h: 'The same barbers’ hours, set by a state and by Congress',
-    link: 'One more pair crosses into another branch. It is about a matter that belongs to the states, set by a state in one case and by Congress in the other.',
+    link: 'One more pair crosses over to the questions for another kind of case. It is about a matter that belongs to the states, set by a state in one case and by Congress in the other.',
     cases: ['u6-barber-congress', 'u6-barber-state'],
     instruction: 'Both cases are about the hours barbers may cut hair: from eight in the morning to six in the evening. Compare one thing: who made the rule.',
     prompt: { kind: 'which', option: 'D1.states', answer: 'u6-barber-state' },
     difference: [
-      'In Case A Congress passed a law. The key’s first answer is {a:D1.congress}. The hours barbers work are not among the powers the Constitution lists for Congress, so the matter is kept by the states, and the case has the name for {plain:beyondcong}.',
-      'In Case B the legislature of one state passed a law. The key’s first answer is {a:D1.states}. The matter is the state’s to decide, nothing else covers it, and the case is {o:police}.',
+      'In Case A Congress passed a law. The first answer is {a:D1.congress}. The hours barbers work are not among the powers the Constitution lists for Congress, so the matter is kept by the states, and the case has the name for {plain:beyondcong}.',
+      'In Case B the legislature of one state passed a law. The first answer is {a:D1.states}. The matter is the state’s to decide, nothing else covers it, and the case is {o:police}.',
       'The matter is the same in both cases, and it is a matter for the states. A state may make the rule. Congress may not. So the same words get different names depending on who made the rule.'
     ] },
 
   /* ---------- The second question ---------- */
   { id: 'q-else', kind: 'question', step: 'S2',
     h: 'The second question, and what else covers the matter',
-    link: 'At the end of each of the last cards you saw this question with one answer. This card puts the question and its four answers in one place, as the key shows them, and says why the key asks it.',
+    link: 'At the end of each of the last cards you saw this question with one answer. This card puts the question and its four answers in one place, and says why it is asked.',
     decides: [
       'This question gives most of the names. Whoever made the rule, a state, a city, a town or a county, the name depends on what else covers the same matter: nothing at all; a federal law that makes itself the only rule; a federal law with space for the states; or a right. So the same rule can get any of four names on four different sets of facts, and each of the four can come from either kind of maker.',
       'Five pairs of names have no card of their own, and this question alone separates all of them: {o:police} and {o:concurrent}, {o:localgov} and {o:preempted}, {o:localgov} and {o:concurrent}, {o:preempted} and {o:protected}, and {o:concurrent} and {o:protected}. The list printed below puts each pair side by side with the question that tells them apart. With {o:police} or {o:localgov}, the difference is whether anything else covers the matter at all. Between {o:preempted} and {o:protected} the rule is stopped in both, by a federal law in one and by a right in the other. Between {o:concurrent} and {o:protected} the rule stands in one and does not in the other.'

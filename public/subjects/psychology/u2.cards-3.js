@@ -101,8 +101,8 @@ FC.cards('psychology', 'u2', [
     instruction: 'Both cases are about Sam and builders, and in both he is harder on what goes against him. Compare one thing: is Sam running a search to settle a choice, and if he is, was the answer chosen before it began?',
     prompt: { kind: 'which', option: 'R1.fixed', answer: 'builder-friday' },
     difference: [
-      'In Case A Sam sets out to settle a choice: which firm to hire. He "gets quotes", which is a search. And you can see the order: he chose his cousin’s firm on Friday, and the search came on Saturday. It was never going to change anything: one question each, and a fault noted in each rival. The key’s answer is {a:R1.fixed}, and the case is {o:motivated}.',
-      'In Case B Sam is not choosing anything and has not set out to find anything. He has held a view for years, and events come along. The same event, finishing a month late, counts as normal for a small builder and as proof against a big one. The key’s answer is {a:R1.scrutiny}, and the case is {o:confbias}.'
+      'In Case A Sam sets out to settle a choice: which firm to hire. He "gets quotes", which is a search. And you can see the order: he chose his cousin’s firm on Friday, and the search came on Saturday. It was never going to change anything: one question each, and a fault noted in each rival. The answer is {a:R1.fixed}, and the case is {o:motivated}.',
+      'In Case B Sam is not choosing anything and has not set out to find anything. He has held a view for years, and events come along. The same event, finishing a month late, counts as normal for a small builder and as proof against a big one. The answer is {a:R1.scrutiny}, and the case is {o:confbias}.'
     ] },
 
   { id: 'exc-both', kind: 'exception', looksLike: 'confbias', is: 'motivated', ledger: 'confbias~motivated',
@@ -112,7 +112,7 @@ FC.cards('psychology', 'u2', [
     setup: 'Look again at what Carol did in the interviews: good points written down for Jas, weak points for everyone else. That is a harder test for one side, which is what you point to for {o:confbias}. Yet this case is {o:motivated}.',
     prompt: { kind: 'phrase', answer: 'Before the interviews she has already decided it will be her friend Jas' },
     because: 'The case shows something that happened before any evidence was handled: the answer was chosen before the interviews. Once the answer comes first, being harder on one side is simply how the support gets collected. It is part of the same thing, not a second thing.',
-    take: 'The key decides it this way on purpose, and it is worth knowing that this is the key’s decision. In life the two overlap, and people who study them do not all draw the line in the same place. The key gives each case one name, by the earliest thing you can point to, so that two people using it reach the same answer and can each say why.' },
+    take: 'The answer is chosen this way on purpose, and it is worth knowing that the choice is made in advance, for every case alike. In life the two overlap, and people who study them do not all draw the line in the same place. Each case gets one name, by the earliest thing you can point to, so that two people using these questions reach the same answer and can each say why.' },
 
   /* ---------- Same person, both kinds of reasoning ---------- */
   { id: 'look-dissonance-confbias', kind: 'lookalike', ledger: 'dissonance~confbias',
@@ -122,8 +122,8 @@ FC.cards('psychology', 'u2', [
     instruction: 'Same man, same habit, and both times he is defending it. Compare one thing: what his reasoning is about. In one case it is about his own smoking. In the other it is about evidence on smoking.',
     prompt: { kind: 'which', option: 'R1.scrutiny', answer: 'vic-study' },
     difference: [
-      'In Case A nobody has put any evidence in front of Vic. He is explaining something he does, and he gives a reason why it is fine after all: the stress. The key’s answer is {a:R1.addstory}, and the case is {o:dissonance}.',
-      'In Case B there is evidence in the case, a study against smoking and a story for it, and Vic is judging both. The study is asked who paid for it. The story about one grandfather is asked nothing. The key’s answer is {a:R1.scrutiny}, and the case is {o:confbias}.',
-      'So the same person, defending the same habit, can do two different things in one week. The key does not name the person. It names what the reasoning in front of you does. Seeing what the reasoning is about, something the person did or evidence about what is true, is a quick first step: it tells you which answers are worth considering.'
+      'In Case A nobody has put any evidence in front of Vic. He is explaining something he does, and he gives a reason why it is fine after all: the stress. The answer is {a:R1.addstory}, and the case is {o:dissonance}.',
+      'In Case B there is evidence in the case, a study against smoking and a story for it, and Vic is judging both. The study is asked who paid for it. The story about one grandfather is asked nothing. The answer is {a:R1.scrutiny}, and the case is {o:confbias}.',
+      'So the same person, defending the same habit, can do two different things in one week. Nothing names the person. The name goes to what the reasoning in front of you does. Seeing what the reasoning is about, something the person did or evidence about what is true, is a quick first step: it tells you which answers are worth considering.'
     ] }
 ]);

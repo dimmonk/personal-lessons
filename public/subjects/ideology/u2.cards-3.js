@@ -15,13 +15,13 @@ FC.cards('ideology', 'u2', [
     ],
     explain: [
       'Think back to the bakery. In the last names Dana kept her bakery, and the text either taxed her or did not mention her. Here the text says Dana should not keep the ferries. "Belong to the public" means that everyone is the owner, through the government, and the aim is that the ferries are run for the people who use them and not for a shareholder’s profit.',
-      'People who argue for this say that some businesses are too important to leave to owners who run them for profit: transport, water, power, the banks. People who disagree say that governments run businesses badly, or that the owners have a right to what they built. That argument is old and it is not settled. The key does not take a side: it goes by what the text asks for.',
-      'Some texts ask only for the biggest businesses to pass to the government, such as the railways or the banks, and leave the small ones alone. That is enough for this answer. The key does not ask how many.',
+      'People who argue for this say that some businesses are too important to leave to owners who run them for profit: transport, water, power, the banks. People who disagree say that governments run businesses badly, or that the owners have a right to what they built. That argument is old and it is not settled. No side is taken here: the answer goes by what the text asks for.',
+      'Some texts ask only for the biggest businesses to pass to the government, such as the railways or the banks, and leave the small ones alone. That is enough for this answer. How many does not matter.',
       'This text also says how the change is to come: by the voters. That is a second thing, separate from the first. This card is about the first: who should own the businesses.',
       'The line below also rules two things out: a party seizing power, and getting rid of the government. A text that asked for either would be asking for more than a handover, and it would get another name.'
     ],
     feature: { step: 'C1', option: 'public' },
-    name: 'The name for this is {o:demsoc}. "Socialism" is a word with a long history and many meanings, and the key does not rest on any of them. What the key looks for is what you just saw: the businesses passing to the government. "Democratic" says that no party takes power by force or rules alone, and that the change comes through votes, or that no word is said about how.' },
+    name: 'The name for this is {o:demsoc}. "Socialism" is a word with a long history and many meanings, and this course does not rest on any of them. What it looks for is what you just saw: the businesses passing to the government. "Democratic" says that no party takes power by force or rules alone, and that the change comes through votes, or that no word is said about how.' },
 
   { id: 'again-demsoc', kind: 'again', outcome: 'demsoc',
     link: 'The ferry leaflet gave you what to point to from one case: {needs:demsoc}. Here is a second case with a different story. This time the business is a railway, and it is a motion at a union meeting.',
@@ -30,7 +30,7 @@ FC.cards('ideology', 'u2', [
     prompt: { kind: 'phrase', answer: 'The railway should pass into public ownership' },
     shared: [
       'Both texts say that the business should pass out of its owners’ hands. The ferry leaflet says the ferries should belong to the public, run by the government for everyone. The signal workers say the railway should pass into public ownership, run for everyone and not for its shareholders.',
-      'There is one difference between them, and it is the key’s decision. The ferry leaflet says how the change will come: by asking the voters. The signal workers do not say how at all. The key files both under this name. A text that asks for the handover, and says nothing about taking power by force, or ruling alone, or getting rid of the government, is {o:demsoc}, whether or not it mentions elections. The field itself does not draw the line in one place: some would not name the second text until they knew more. The key draws it here, so that two people using it reach the same name and can each say why. It does not claim to know what the signal workers would do.',
+      'There is one difference between them, and it is a decision made here. The ferry leaflet says how the change will come: by asking the voters. The signal workers do not say how at all. Both are filed under this name. A text that asks for the handover, and says nothing about taking power by force, or ruling alone, or getting rid of the government, is {o:demsoc}, whether or not it mentions elections. The field itself does not draw the line in one place: some would not name the second text until they knew more. The line is drawn here, so that two people using the same questions reach the same name and can each say why. It does not claim to know what the signal workers would do.',
       'The two stories share nothing else. So this holds wherever a text asks for the businesses, or the biggest of them, to pass to the government. That is what {o:demsoc} names.'
     ] },
 
@@ -58,8 +58,8 @@ FC.cards('ideology', 'u2', [
     instruction: 'Both cases are about the Redmoor private hospitals, and both stand with the nurses. Compare one thing: after the government has acted, who owns the hospitals?',
     prompt: { kind: 'which', option: 'C1.public', answer: 'c-lk-sddm-dm' },
     difference: [
-      'In Case A the hospitals can stay with their owners, so long as the government taxes their profits to pay for nurses’ pensions and training places. The owners still own them afterwards. The key’s answer is {a:C1.keep}, and the case is {o:socdem}.',
-      'In Case B the hospitals are to be taken from the company and run by the government for everyone. After the government acts, the owners no longer own them. The key’s answer is {a:C1.public}, and the case is {o:demsoc}.',
+      'In Case A the hospitals can stay with their owners, so long as the government taxes their profits to pay for nurses’ pensions and training places. The owners still own them afterwards. The answer is {a:C1.keep}, and the case is {o:socdem}.',
+      'In Case B the hospitals are to be taken from the company and run by the government for everyone. After the government acts, the owners no longer own them. The answer is {a:C1.public}, and the case is {o:demsoc}.',
       'The nurses, the profit and the night shifts are the same in both. What differs is who owns the hospitals at the end. A tax changes what the owners keep. A handover changes who the owner is.'
     ] },
 
@@ -70,8 +70,8 @@ FC.cards('ideology', 'u2', [
     setup: 'This text asks for a tax on the owners of everything else, with the money spent on sick pay, pensions and schools. That is what you point to for {o:socdem}. Yet this case is {o:demsoc}.',
     prompt: { kind: 'phrase', answer: 'the railways and the bus firms should be taken from their owners and run by the government for everyone' },
     because: [
-      'The text asks for tax and services, and it also asks for two kinds of business to be taken from their owners. The second is what the key’s question about the businesses turns on. When a text shows both, the key’s answer is {a:C1.public}, and the name is {o:demsoc}.',
+      'The text asks for tax and services, and it also asks for two kinds of business to be taken from their owners. The second is what the question about the businesses turns on. When a text shows both, the answer is {a:C1.public}, and the name is {o:demsoc}.',
       'The reason is the one the whole question is built on. A tax leaves the owner in place, and a handover does not. A text with even one handover in it has said something about who should own the businesses, and that says more than "the owners keep them".'
     ],
-    take: 'The key decides it this way on purpose. In life, texts mix the two, and people who study them do not all give a mixed text the same name. The key gives each text one name, by the most exact thing it says about who should own the businesses, so that two people using it reach the same name and can each say why.' }
+    take: 'It is decided this way on purpose. In life, texts mix the two, and people who study them do not all give a mixed text the same name. Each text gets one name, by the most exact thing it says about who should own the businesses, so that two people using the same questions reach the same name and can each say why.' }
 ]);

@@ -25,7 +25,7 @@ FC.cases('stats', 'u1', [
     text: "A restaurant chain counted every order at all 60 of its branches with the same till software for two years. Delivery orders were 18,000 a week in the first year and 24,000 a week in the second. The chain says: 'Delivery orders went up by a third in a year.'",
     route: { S1: ['holds'] },
     cues: { S1: 'counted every order at all 60 of its branches with the same till software for two years' },
-    reason: { S1: 'Each part holds. Every order at every branch is counted by the same software for both years: {cue:S1}. The percentage comes with the two numbers behind it, and the claim says only that orders rose.' },
+    reason: { S1: 'Each part holds. Every order at every restaurant is counted by the same software for both years: {cue:S1}. The percentage comes with the two numbers behind it, and the claim says only that orders rose.' },
     not: { outcome: 'compare', why: 'A percentage can hide the numbers behind it, but here 18,000 and 24,000 are both given, so nothing needed to read "a third" is left out.' },
     wouldChange: 'If the chain had said only "up by a third" and given neither number, it would be {a:S1.compare}.' },
 

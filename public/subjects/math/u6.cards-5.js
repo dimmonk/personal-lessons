@@ -8,7 +8,7 @@ FC.cards('math', 'u6', [
   /* ---------- The key’s second question ---------- */
   { id: 'q-s2', kind: 'question', step: 'S2',
     h: 'How long, or how much area or volume: the second of this unit’s two questions',
-    link: 'The first question left two kinds together, because both start from a thing and its exact copy at another size. This card puts the second question and its two answers in one place, as the key shows them, and says why it comes second.',
+    link: 'The first question left two kinds together, because both start from a thing and its exact copy at another size. This card puts the second question and its two answers in one place and says why it comes second.',
     decides: [
       'Two things of exactly the same shape differ in one number only: how many times longer one is than the other. But what that number does depends on what is asked. A length grows by that number. An area grows by the number multiplied by itself. A volume grows by it multiplied by itself twice over. So which of the three the problem asks about decides the procedure, and a problem that asks about the wrong one gets the wrong multiplication.',
       'The question separates two kinds that nothing else in the problem separates: the same two mats, tanks or posters can be given in a problem of either kind, and only what is asked tells them apart. For the other kinds in this unit the answer is always the same, how long a part is, so this question never changes where they go.'
@@ -27,13 +27,13 @@ FC.cards('math', 'u6', [
   /* ---------- After the drill ---------- */
   { id: 'recap-shape', kind: 'recap',
     h: 'What to carry away',
-    link: 'You have now worked problems of all four kinds on your own. This card puts the unit in one place, in the key’s words.',
+    link: 'You have now worked problems of all four kinds on your own. This card puts the unit in one place.',
     carry: [
-      'Before any working, ask what the problem gives you and what it asks about, and point to the words that say it. If you cannot point to them, you do not have an answer yet. The key asks two questions in this unit: {q:S1} {q:S2}',
+      'Before any working, ask what the problem gives you and what it asks about, and point to the words that say it. If you cannot point to them, you do not have an answer yet. Two questions are asked in this unit: {q:S1} {q:S2}',
       'Two sides of a triangle with a square corner lead to {o:pyth}. One side and one angle in degrees lead to {o:trig}. Two things of exactly the same shape lead to {o:similar} when a length is asked, and to {o:sqcube} when an area or a volume is asked.',
       'The story does not tell you the kind. A ramp can be given with two sides, or with one side and an angle, and the answers are found in different ways. The same two posters can ask how high the bigger one is, which is a length, or how much ink it needs, which is an area.',
       'For {o:pyth}: find which side is the longest, multiply each side you are given by itself, add the two results if you want the longest side, or take away if you are given it, and find the number that multiplies by itself to give what is left. The square on the longest side is the sum of the squares on the other two.',
-      'For {o:trig}: name the three sides from the angle, choose the key that joins the side you know to the side you want, write its comparison with the numbers in, get the side you want on its own, and read the key off a calculator set to degrees. A side on top of the comparison is found by multiplying, and a side underneath by dividing.',
+      'For {o:trig}: name the three sides from the angle, choose the button that joins the side you know to the side you want, write its comparison with the numbers in, get the side you want on its own, and read the button’s value off a calculator set to degrees. A side on top of the comparison is found by multiplying, and a side underneath by dividing.',
       'For {o:similar}: find a part that is measured on both things, find how many times longer the bigger one is, and multiply the length you have by that number if it is on the smaller thing, or divide by it if it is on the bigger thing.',
       'For {o:sqcube}: find how many times longer the bigger one is, decide whether the problem asks about an area or about a volume, and multiply that number by itself, with two of them for an area and three of them for a volume. Then multiply a known amount by the result, if the problem gives one.',
       'When the problem shows a triangle with a square corner and also a second thing of the same shape, such as a shadow, the length wanted decides: a side of that very triangle is {o:pyth}, and a length on the second thing is {o:similar}.'

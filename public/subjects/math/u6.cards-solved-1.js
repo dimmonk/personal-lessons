@@ -26,7 +26,7 @@ FC.cards('math', 'u6', [
       {
         does: 'Find the number that multiplies by itself to give the result',
         working: '50 × 50 = 2,500, so the longest side is 50 m',
-        why: 'The total, 2,500, is the number of square metres in the square on the path, so the path is the side of that square: the number that multiplies by itself to give 2,500. That number is the {t:sqroot} of 2,500, and the √ key on a calculator finds it. Here 50 × 50 = 2,500 exactly, so the path is 50 m long. As a check, walking along two edges of the yard would be 30 + 40 = 70 m, and a straight line across is shorter than that, so 50 m is a sensible answer.'
+        why: 'The total, 2,500, is the number of square metres in the square on the path, so the path is the side of that square: the number that multiplies by itself to give 2,500. That number is the {t:sqroot} of 2,500, and the √ button on a calculator finds it. Here 50 × 50 = 2,500 exactly, so the path is 50 m long. As a check, walking along two edges of the yard would be 30 + 40 = 70 m, and a straight line across is shorter than that, so 50 m is a sensible answer.'
       }
     ],
     result: 'The path is 50 m long. Going round two edges of the yard would be 70 m, so the path across saves 20 m.',
@@ -131,23 +131,23 @@ FC.cards('math', 'u6', [
         why: 'Everything in this procedure is measured from the angle, so the sides are named first. The longest side is always opposite the square corner. The side opposite the angle is the one that does not touch the angle. The side next to the angle is the one that touches it and is not the longest. They have to be named from the angle you were given: from the other end of the slope, the same side would be called by a different name.'
       },
       {
-        does: 'Choose the calculator key that joins the side you know to the side you want',
-        working: 'You know the side next to the angle (30 m) and want the side opposite the angle. The tan key joins those two: tan = opposite ÷ next to'
+        does: 'Choose the calculator button that joins the side you know to the side you want',
+        working: 'You know the side next to the angle (30 m) and want the side opposite the angle. The tan button joins those two: tan = opposite ÷ next to'
       },
       {
-        does: 'Write the key’s comparison with the numbers in',
+        does: 'Write the button’s comparison with the numbers in',
         working: 'tan 35° = height ÷ 30',
-        why: 'The key’s comparison is a fraction made of two sides: for the tan key, the side opposite the angle on top and the side next to it underneath. Writing it with the numbers in shows where the missing side sits. Here the height, the side you want, is on top, and the 30 m, the side you know, is underneath.'
+        why: 'The button’s comparison is a fraction made of two sides: for the tan button, the side opposite the angle on top and the side next to it underneath. Writing it with the numbers in shows where the missing side sits. Here the height, the side you want, is on top, and the 30 m, the side you know, is underneath.'
       },
       {
         does: 'Get the side you want on its own',
         working: 'height = 30 × tan 35°',
-        why: 'The comparison says that the height divided by 30 gives the key’s value for 35°. So the height is 30 times the key’s value: multiplying both sides of the comparison by 30 leaves the height alone. When the side you want is on top of the comparison, you multiply the side you know by the key’s value. When it is underneath, you divide.'
+        why: 'The comparison says that the height divided by 30 gives the button’s value for 35°. So the height is 30 times the button’s value: multiplying both sides of the comparison by 30 leaves the height alone. When the side you want is on top of the comparison, you multiply the side you know by the button’s value. When it is underneath, you divide.'
       },
       {
-        does: 'Read the key’s value off the calculator, set to degrees, and finish the sum',
+        does: 'Read the button’s value off the calculator, set to degrees, and finish the sum',
         working: 'tan 35° = 0.7002; 30 × 0.7002 = 21.006, so about 21.0 m',
-        why: 'The calculator has to be set to degrees, because the angle is in degrees. Set to radians, another way of measuring angles, it gives a different number for the same 35. The tan key gives 0.7002 to four decimal places, and 30 × 0.7002 = 21.006, which is 21.0 m to one decimal place. As a check, 35° is less than 45°, where the opposite and next-to sides would be equal, so the height should be less than the 30 m along the ground, and it is.'
+        why: 'The calculator has to be set to degrees, because the angle is in degrees. Set to radians, another way of measuring angles, it gives a different number for the same 35. The tan button gives 0.7002 to four decimal places, and 30 × 0.7002 = 21.006, which is 21.0 m to one decimal place. As a check, 35° is less than 45°, where the opposite and next-to sides would be equal, so the height should be less than the 30 m along the ground, and it is.'
       }
     ],
     result: 'The tower is about 21.0 m tall.',
@@ -158,24 +158,24 @@ FC.cards('math', 'u6', [
         choices: [
           {
             id: 'x',
-            text: 'Each key gives one fixed comparison between two sides for a given angle, and the third side plays no part in it, so the key to use is the one whose two sides are the side you know and the side you want.'
+            text: 'Each button (sin, cos or tan) gives one fixed comparison between two sides for a given angle, and the third side plays no part in it, so the button to use is the one whose two sides are the side you know and the side you want.'
           },
           {
             id: 'y',
             text: 'The tower is 30 m from the surveyor.',
-            note: 'That is true, but it does not say how to choose between the three keys.'
+            note: 'That is true, but it does not say how to choose between the three buttons.'
           },
           {
             id: 'z',
             text: 'The angle is 35°.',
-            note: 'That is true, and every key needs it, but it does not say which key to use.'
+            note: 'That is true, and every button needs it, but it does not say which button to use.'
           }
         ],
         answer: 'x'
       },
       reason: [
-        'Once the angle of a {t:righttriangle} is fixed, its shape is fixed, and so is how long each side is compared with each other side, whatever the size of the triangle. For 35°, the side opposite the angle is always 0.7002 times as long as the side next to it. A tower ten times as big, seen at 35°, gives the same 0.7002. The tan key stores this comparison: type 35 and it gives 0.7002.',
-        'There are three comparisons, and so three keys. The sin key gives the side opposite the angle divided by the longest side. The cos key gives the side next to the angle divided by the longest side. The tan key gives the side opposite the angle divided by the side next to it. Each key joins two of the three sides. In this problem the side you know is next to the angle and the side you want is opposite it, and the longest side is not in the problem at all, so the key that joins those two is tan.'
+        'Once the angle of a {t:righttriangle} is fixed, its shape is fixed, and so is how long each side is compared with each other side, whatever the size of the triangle. For 35°, the side opposite the angle is always 0.7002 times as long as the side next to it. A tower ten times as big, seen at 35°, gives the same 0.7002. The tan button stores this comparison: type 35 and it gives 0.7002.',
+        'There are three comparisons, and so three buttons. The sin button gives the side opposite the angle divided by the longest side. The cos button gives the side next to the angle divided by the longest side. The tan button gives the side opposite the angle divided by the side next to it. Each button joins two of the three sides. In this problem the side you know is next to the angle and the side you want is opposite it, and the longest side is not in the problem at all, so the button that joins those two is tan.'
       ]
     }
   }

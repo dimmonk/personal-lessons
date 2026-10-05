@@ -97,9 +97,9 @@ FC.cases('math', 'u4', [
       }
     ],
     reason: {
-      M1: 'The words {cue:M1} follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a {t:formula}, and there is no shape or chance, so the key’s first answer is {a:M1.growth}.',
-      G1: 'The words {cue:G1} show the distance going down by the same number every hour, whatever it has reached so far, so the key’s answer is {a:G1.adds}.',
-      G2: 'The words {cue:G2} give a time and ask for the amount at the end of it, so the key’s answer is {a:G2.willbe}.'
+      M1: 'The words {cue:M1} follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a {t:formula}, and there is no shape or chance, so the answer to the first question is {a:M1.growth}.',
+      G1: 'The words {cue:G1} show the distance going down by the same number every hour, whatever it has reached so far, so the answer is {a:G1.adds}.',
+      G2: 'The words {cue:G2} give a time and ask for the amount at the end of it, so the answer is {a:G2.willbe}.'
     }
   },
 
@@ -174,9 +174,9 @@ FC.cases('math', 'u4', [
       }
     ],
     reason: {
-      M1: 'The words {cue:M1} follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a {t:formula}, and there is no shape or chance, so the key’s first answer is {a:M1.growth}.',
-      G1: 'The words {cue:G1} show the amount being multiplied by the same number every hour, here a halving, so the key’s answer is {a:G1.multiplies}.',
-      G2: 'The words {cue:G2} give a time and ask for the amount at the end of it, so the key’s answer is {a:G2.willbe}.'
+      M1: 'The words {cue:M1} follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a {t:formula}, and there is no shape or chance, so the answer to the first question is {a:M1.growth}.',
+      G1: 'The words {cue:G1} show the amount being multiplied by the same number every hour, here a halving, so the answer is {a:G1.multiplies}.',
+      G2: 'The words {cue:G2} give a time and ask for the amount at the end of it, so the answer is {a:G2.willbe}.'
     }
   },
 
@@ -246,9 +246,9 @@ FC.cases('math', 'u4', [
       { text: 'After how many months will it sell 400 coffees a day?' }
     ],
     reason: {
-      M1: 'The words {cue:M1} follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a {t:formula}, and there is no shape or chance, so the key’s first answer is {a:M1.growth}.',
-      G1: 'The words {cue:G1} show the amount being multiplied by the same number every month, so the key’s answer is {a:G1.multiplies}.',
-      G2: 'The words {cue:G2} give a target for the amount and ask how long until it gets there, so the key’s answer is {a:G2.howlong}.'
+      M1: 'The words {cue:M1} follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a {t:formula}, and there is no shape or chance, so the answer to the first question is {a:M1.growth}.',
+      G1: 'The words {cue:G1} show the amount being multiplied by the same number every month, so the answer is {a:G1.multiplies}.',
+      G2: 'The words {cue:G2} give a target for the amount and ask how long until it gets there, so the answer is {a:G2.howlong}.'
     }
   },
 
@@ -328,9 +328,9 @@ FC.cases('math', 'u4', [
       }
     ],
     reason: {
-      M1: 'The words {cue:M1} follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a {t:formula}, and there is no shape or chance, so the key’s first answer is {a:M1.growth}.',
-      G1: 'The words {cue:G1} show the amount changing one time and staying where it reached, so no change repeats and the key’s answer is {a:G1.once}.',
-      G2: 'The words {cue:G2} give a time and ask for the amount at the end of it, so the key’s answer is {a:G2.willbe}.'
+      M1: 'The words {cue:M1} follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a {t:formula}, and there is no shape or chance, so the answer to the first question is {a:M1.growth}.',
+      G1: 'The words {cue:G1} show the amount changing one time and staying where it reached, so no change repeats and the answer is {a:G1.once}.',
+      G2: 'The words {cue:G2} give a time and ask for the amount at the end of it, so the answer is {a:G2.willbe}.'
     }
   }
 ]);

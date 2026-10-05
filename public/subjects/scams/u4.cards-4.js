@@ -18,8 +18,8 @@ FC.cards('scams', 'u4', [
       'This is what the real thing looks like, and the first thing to notice is that it is a request for money. A real request is not made suspicious by being a request. People ask for rent, invoices, deposits and fines all the time, and nearly all of those requests are what they say.',
       'What makes this one real is not any one word in it, because a copy can use the same words. It is five things together. Hana started the arrangement herself. The amount is the one she agreed. The account is the one she was given at the start. Nobody is hurrying her or telling her to keep it quiet. And if she wanted to be sure, she could contact the agency herself, on the number printed on her agreement, and they would confirm it.',
       'The last of the five matters most, and it has a name: {t:check}. It means stopping before you pay and contacting them yourself, through {t:already}. It works because it does not depend on your being able to tell a real message from a copy. A copy can look exactly like this one. It cannot answer a call that you make to the number in your own agreement.',
-      'The key needs a name for the real request, for the reason that a key with no place for the real thing is one you stop using. Each of the four copies in this part has a real twin that looks the same, and when you meet the copy you will be shown the twin beside it.',
-      'One more thing about the key. It has two questions about money, and the second is the one at the foot of this card: what the request asks you to do with the money. The first question, what the request says the money is for, cannot separate a real request from its copies, because they give the same reasons: a bill, a fine, a deal. Hana’s rent is a bill. A copy can be a bill too, so it is the second question that separates them.'
+      'The questions need a name for the real request, because questions with no place for the real thing are ones you stop using. Each of the four copies in this part has a real twin that looks the same, and when you meet the copy you will be shown the twin beside it.',
+      'One more thing about the questions. It has two questions about money, and the second is the one at the foot of this card: what the request asks you to do with the money. The first question, what the request says the money is for, cannot separate a real request from its copies, because they give the same reasons: a bill, a fine, a deal. Hana’s rent is a bill. A copy can be a bill too, so it is the second question that separates them.'
     ],
     feature: { step: 'M2', option: 'agreed' },
     name: 'The name for this is {o:realpayment}. Nothing is wrong with it. You pay it in the normal way, and the name is there so that you can say so as exactly as you can say what is wrong in the others.' },
@@ -49,13 +49,13 @@ FC.cards('scams', 'u4', [
       'A request that fits all of this and then changes is not this name any longer. If the details move late, if someone starts to hurry you, or if someone discourages you from checking, start again from the first question.'
     ],
     wild: ['"Rent is due on the 1st, to the account on your agreement."', '"Invoice attached, as quoted. Ring me if anything looks wrong."', '"Your deposit is protected in a scheme that you can look up."', '"There is no rush: it is due at the end of the month."'],
-    self: 'Most of the requests for money that reach you are this name: rent, council tax, bills, school fees, a builder, a solicitor, a holiday booking. It is the one you meet most, and the one that is easiest to forget that the key has a name for.',
+    self: 'Most of the requests for money that reach you are this name: rent, council tax, bills, school fees, a builder, a solicitor, a holiday booking. It is the one you meet most, and the easiest one to forget that there is a name for.',
     ask: '"Did I start this, is the amount what I agreed or owe, and are the details the ones I was given at the start?"',
     act: [
       'Pay it in the normal way, and keep the confirmation.',
       'For a large payment, or the first payment to someone new, do {t:check} once. A real request passes it, so it costs you a few minutes.',
       'Where you can, pay in a way that protects you, such as by card or through a marketplace’s own payment button. Those can sometimes be disputed afterwards, and a bank transfer that you send yourself usually cannot.',
-      'If the details change, if someone starts to hurry you, or if you are told not to check, stop. The request has become something else, and you need to ask the key’s questions again.'
+      'If the details change, if someone starts to hurry you, or if you are told not to check, stop. The request has become something else, and you need to ask the questions again.'
     ] },
 
   { id: 'check-realpayment', kind: 'check', after: 'realpayment',
@@ -76,7 +76,7 @@ FC.cards('scams', 'u4', [
       'Everything in this email is what Joe expects, except one line. The invoice is real, because the work is real and the amount is right. What has changed is where the money is to go.',
       'How can a scammer send it? In one of two ways. They have got into the landscaper’s mailbox, or into Joe’s, and can read every message and send one from inside the same thread. Or they have registered an address that differs from the real one by a single letter. Either way they wait, sometimes for weeks, until a large invoice is about to be paid. Then they send the one line that changes the account.',
       'It works because it is calm. There is no hurry, no threat and nothing odd in the tone. The only thing that is different is the thing a thief needs: the account. That is why a change of bank details is a reason to stop, whoever is telling you.',
-      'Notice that the reason this email gives for the money, a bill that Joe already pays, is exactly the reason that a real invoice from Maeve would give. So the key’s question about what the money is for cannot tell the two apart. What tells them apart is what the request asks Joe to do with the money: here, to pay into new details that a message has just announced.',
+      'Notice that the reason this email gives for the money, a bill that Joe already pays, is exactly the reason that a real invoice from Maeve would give. So the question about what the money is for cannot tell the two apart. What tells them apart is what the request asks Joe to do with the money: here, to pay into new details that a message has just announced.',
       'You can see this on the day. The bill is a real one, and a message arrives telling you to pay into new details. What you cannot see from the message is whether the change is real, and that is what contacting them yourself is for.'
     ],
     feature: { step: 'M1', option: 'bill' },
@@ -103,7 +103,7 @@ FC.cards('scams', 'u4', [
       'Which of this can you see on the day? The bill, the arrangement and the message that announces new details are all in front of you. Whether the change is real is the one thing that you cannot see from the message, and it is what you find out by contacting them yourself.'
     ],
     not: [
-      'A change of bank details is not always a fraud, because businesses do change banks. The message cannot tell you which this is. That is why the key gives every message that announces new details this name: the name says what to do next, and does not claim to know the answer.',
+      'A change of bank details is not always a fraud, because businesses do change banks. The message cannot tell you which this is. That is why every message that announces new details gets this name: the name says what to do next, and does not claim to know the answer.',
       'A bill with the same details as the last one is not this name. And if you ring the person on a number you already had and they confirm the change, you have found out something that the message could not tell you.'
     ],
     wild: ['"Please note that we have changed bank."', '"Please disregard our previous account details."', '"Our auditor has asked us to move banks."', '"From now on please pay into the account below."'],
@@ -127,7 +127,7 @@ FC.cards('scams', 'u4', [
     instruction: 'Both cases are about the same invoice from Tessa’s builder. Compare one thing: the account that she is asked to pay into.',
     prompt: { kind: 'which', option: 'M2.agreed', answer: 'm-tessa-same' },
     difference: [
-      'In Case A the invoice asks Tessa to pay into the account that she has paid into four times, and she can see it in her own banking app. The key’s answer is {a:M2.agreed}, and the case is {o:realpayment}.',
+      'In Case A the invoice asks Tessa to pay into the account that she has paid into four times, and she can see it in her own banking app. The answer is {a:M2.agreed}, and the case is {o:realpayment}.',
       'In Case B the same invoice, in the same thread, says that the builder has changed bank and gives a new account. A message that announces new details to pay into is what {o:invoicefraud} is made of.',
       'The builder, the amount, the logo and the email thread are the same. Only the account is different. You could not tell these two apart by how they look, and that is why the question about the account is the one that matters.'
     ] }

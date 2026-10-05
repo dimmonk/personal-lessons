@@ -21,15 +21,15 @@ FC.cards('wealth', 'u1', [
       'All four lose money, and each loses it in a different way: a little every year, all at once through one thing, in a fall in prices, and at the handover. People often reach for a cure before they know which of these they are looking at. A fifth case is as common as any of them: money that is simply sitting there, with nothing in the account that could lose it. This unit teaches you to tell the five apart, before you think about any cure.'
     ],
     add: [
-      'Two words are used all the way through, so here they are once. A case is a short account of someone’s money: a few sentences, the sort of thing a friend tells you or you read in a letter. The key is a short list of questions that you put to a case, always in the same order. Each answer narrows down what the case can be, until one name is left.',
-      'This unit teaches the first question of the key and nothing after it. In this unit the answer to that question is also the name: it says what kind of case you are looking at. Four of the five answers lead on to a further question, which gives a finer name and says what to do. The fifth, {a:D1.none}, does not: the key has nothing more to ask, and that is a result in its own right. In this subject, leaving money alone is as much an answer as changing something.'
+      'One word is used all the way through, so here it is once. A case is a short account of someone’s money: a few sentences, the sort of thing a friend tells you or you read in a letter. You put a short list of questions to a case, always in the same order. Each answer narrows down what the case can be, until one name is left.',
+      'This unit teaches the first question and nothing after it. In this unit the answer to that question is also the name: it says what kind of case you are looking at. Four of the five answers lead on to a further question, which gives a finer name and says what to do. The fifth, {a:D1.none}, does not: there is nothing more to ask, and that is a result in its own right. In this subject, leaving money alone is as much an answer as changing something.'
     ],
     map: { branch: 'gate' } },              // a gate unit's preview map is the gate itself, drawn from the key
 
   /* ---------- Three words the cases lean on ---------- */
   { id: 'term-pot', kind: 'term', term: 'pot',
     h: 'All the money someone has built up',
-    link: 'The key’s question is about money that someone has built up and wants to keep. Before the question, one word, so that every case means the same thing by it.',
+    link: 'The question is about money that someone has built up and wants to keep. Before the question, one word, so that every case means the same thing by it.',
     case: 'w-t-pot',
     plain: [
       'Add up what Nadia owns: £40,000 in savings, £150,000 in her pension, a flat worth £220,000 with nothing owed on it, and her share of the bakery, £60,000. The total is £470,000. That is what she has built up and wants to keep, and it is what this subject is about: what could lose it.',
@@ -59,7 +59,7 @@ FC.cards('wealth', 'u1', [
 
   /* ---------- The first family: something taken out of it every year ---------- */
   { id: 'meet-erosion', kind: 'meet', family: 'erosion',     // heading is the family's plain words, from the key
-    link: 'The key’s first question has five answers. Start with the one that is easiest to miss, because nothing dramatic ever happens in it.',
+    link: 'The first question has five answers. Start with the one that is easiest to miss, because nothing dramatic ever happens in it.',
     case: 'w-fee', mark: 'D1',
     strip: [
       'There is one person, Colin, and one sum: £200,000 in a pension fund.',
@@ -75,7 +75,7 @@ FC.cards('wealth', 'u1', [
     ],
     feature: { step: 'D1', option: 'erosion' },
     name: [
-      'The key’s answer, and the name of this kind of case, is {a:D1.erosion}. "Taken out" means the money leaves, and is no longer there to grow.',
+      'The answer, and the name of this kind of case, is {a:D1.erosion}. "Taken out" means the money leaves, and is no longer there to grow.',
       'The name says nothing about how large the sum is, or whether it is fair. It says only that the case is about something that comes out every year.'
     ] },
 
@@ -98,7 +98,7 @@ FC.cards('wealth', 'u1', [
       'From here on, the cases change their stories on purpose. Sometimes two cases will share the same person and the same money and differ only underneath. When that happens, the shared story is there to show you that it decides nothing.',
       'Two more things change on purpose. One is size: a few hundred pounds and a few million can be the same kind of case. The other is whether anything is wrong at all. In some cases the thing that could lose the money is looked after, or does not matter, and in some the case raises nothing at all. Seeing that is part of the skill, and the fifth answer is for it.'
     ],
-    fixed: ['what the money could be lost through, which is what the key asks about: {q:D1}'],
+    fixed: ['what the money could be lost through, which is what the question is about: {q:D1}'],
     varies: ['the kind of money', 'the people', 'the size of the sums', 'how worried you would be', 'whether anything is wrong at all'] },
 
   { id: 'portrait-erosion', kind: 'portrait', family: 'erosion',

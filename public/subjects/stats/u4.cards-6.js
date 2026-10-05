@@ -6,13 +6,13 @@ FC.cards('stats', 'u4', [
 
   { id: 'recap', kind: 'recap',
     h: 'What to carry away',
-    link: 'You have now run the key’s question on your own. This card puts the unit in one place, in the key’s words.',
+    link: 'You have now run the question on your own. This card puts the unit in one place, in the words used all the way through.',
     carry: [
-      'Before any name, put the key’s question to the claim and point to the words that show your answer: {q:M1} If you cannot point, you do not have an answer yet.',
+      'Before any name, put the question to the claim and point to the words that show your answer: {q:M1} If you cannot point, you do not have an answer yet.',
       'A figure is not the real thing it stands for. It is a count made by someone, in some way, with some amount of effort. Each of the three names is one way the making of the figure can move it while the real thing stays put.',
       'The arithmetic usually settles which one: a second count made by someone who gains nothing, the same people counted both ways, or the share found among those looked at.',
       'A target alone, a new tool alone, or a rise alone is not a name. Look for the way the figure could move without the real thing: a way for the people judged on it to raise it, a change in what counts or what measures, or more effort put into finding.',
-      'When you have put each of the three to a claim and none applies, the figure moved because the real thing did. That is an answer too, and the key gives it: {a:S1.holds}.',
+      'When you have put each of the three to a claim and none applies, the figure moved because the real thing did. That is an answer too: {a:S1.holds}.',
       'Naming one of these does not make a claim false. It says what the figure cannot show, and what you would need to see.'
     ] },
 

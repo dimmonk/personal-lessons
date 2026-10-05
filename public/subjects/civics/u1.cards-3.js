@@ -20,7 +20,7 @@ FC.cards('civics', 'u1', [
       'Notice what else it does not depend on. It does not depend on how important the quarrel is: a broken heater and a famous trial are the same kind. And it does not depend on whether you think the judge decided rightly. The decision is the judge’s either way.'
     ],
     feature: { step: 'D1', option: 'courts' },
-    name: 'The key’s answer, and so the name of the kind, is {a:D1.courts}. “Any court” means any judge: the highest court in the country, a court of a state, a court of a county. They are one kind here. “A judge” means someone whose job is to decide a case that is brought to them.' },
+    name: 'The answer, and so the name of the kind, is {a:D1.courts}. “Any court” means any judge: the highest court in the country, a court of a state, a court of a county. They are one kind here. “A judge” means someone whose job is to decide a case that is brought to them.' },
 
   { id: 'again-courts', kind: 'again', family: 'courts',
     link: 'The broken heater gave you what to point to: {needs:courts}. Here is a second case where nobody has decided yet.',
@@ -47,7 +47,7 @@ FC.cards('civics', 'u1', [
     ],
     wild: ['"The judge ruled."', '"The court struck it down."', '"They are appealing."', '"The case was dismissed."', '"He asked a judge to decide."'],
     self: 'In your own life you meet this kind in a dispute with a landlord, a neighbour or a firm, and in any news about a trial or a ruling.',
-    ask: '"Has a judge decided this, or has someone asked a judge to?" If so, in any court, the key’s answer is {a:D1.courts}.' },
+    ask: '"Has a judge decided this, or has someone asked a judge to?" If so, in any court, the answer is {a:D1.courts}.' },
 
   { id: 'check-courts', kind: 'check', after: 'courts',
     case: 'k-lease',
@@ -61,21 +61,21 @@ FC.cards('civics', 'u1', [
     instruction: 'Both cases are about the same drone law. Compare one thing: whose decision does each story end on?',
     prompt: { kind: 'which', option: 'D1.courts', answer: 'l-drone-judge' },
     difference: [
-      'In Case A the law does not exist yet. The House has voted for the bill, and the story ends by sending it to the Senate. Lawmakers are voting, and no judge is anywhere. The key’s answer is {a:D1.congress}.',
-      'In Case B the law is a year old and a man has been fined under it. The story ends with Ellis asking a judge whether the law covers a drone as small as his. The votes that made the law are far behind, and the case is about what a judge will decide. The key’s answer is {a:D1.courts}.',
+      'In Case A the law does not exist yet. The House has voted for the bill, and the story ends by sending it to the Senate. Lawmakers are voting, and no judge is anywhere. The answer is {a:D1.congress}.',
+      'In Case B the law is a year old and a man has been fined under it. The story ends with Ellis asking a judge whether the law covers a drone as small as his. The votes that made the law are far behind, and the case is about what a judge will decide. The answer is {a:D1.courts}.',
       'The law is the same, and the two cases come at different times in its life. Before it is passed, lawmakers decide. After someone has been fined, a judge is asked. What separates the cases is whose decision each one ends on.'
     ] },
 
   { id: 'exc-trial', kind: 'exception', ledger: 'congress~courts', looksLike: 'courts', is: 'congress',
     h: 'A trial that is held in the Senate',
-    link: 'The last card kept the two kinds tidy. A real story can use the words of a courtroom and still be a vote by lawmakers. Here is one, and the key answers it the same way every time.',
+    link: 'The last card kept the two kinds tidy. A real story can use the words of a courtroom and still be a vote by lawmakers. Here is one, and the questions answer it the same way every time.',
     case: 'x-trial',
-    setup: 'This case has a trial, a charge and a man who may be found guilty. Those are words from a courtroom, and a judge’s decision is what you point to for {a:D1.courts}. Yet the key’s answer for this case is {a:D1.congress}.',
+    setup: 'This case has a trial, a charge and a man who may be found guilty. Those are words from a courtroom, and a judge’s decision is what you point to for {a:D1.courts}. Yet the answer for this case is {a:D1.congress}.',
     prompt: { kind: 'phrase', answer: 'the senators will vote on whether he is guilty' },
     because: [
       'Look at who decides. The House votes to charge him, and the Senate holds the trial, and at the end of it senators vote. The people who decide the case are lawmakers. No judge decides anything in it.',
       'A trial of this kind is how Congress can remove an official who has committed serious misconduct. It uses the words of a courtroom, because it is a trial, but it is held by the Senate and settled by the senators’ vote.',
-      'So the case shows a courtroom’s words and lawmakers’ votes, and the key looks at who decides.'
+      'So the case shows a courtroom’s words and lawmakers’ votes, and the question is who decides.'
     ],
     take: 'This is easy to get wrong, because we are used to “trial” meaning a judge. When the word turns up, ask who casts the votes or gives the ruling. If it is senators, the case is {a:D1.congress}.' },
 
@@ -87,8 +87,8 @@ FC.cards('civics', 'u1', [
     instruction: 'Both cases are about Mr Okoro’s application. Compare one thing: whose decision does each story end on?',
     prompt: { kind: 'which', option: 'D1.courts', answer: 'l-form-judge' },
     difference: [
-      'In Case A the story ends with a letter from the immigration service: it refuses Mr Okoro’s application and says why. An office has decided. Nobody has gone to a judge yet. The key’s answer is {a:D1.president}.',
-      'In Case B the office’s refusal is in the story too, but as how the matter reached the judge. The story ends with Mr Okoro asking a judge whether the form was really missing. The key’s answer is {a:D1.courts}.',
+      'In Case A the story ends with a letter from the immigration service: it refuses Mr Okoro’s application and says why. An office has decided. Nobody has gone to a judge yet. The answer is {a:D1.president}.',
+      'In Case B the office’s refusal is in the story too, but as how the matter reached the judge. The story ends with Mr Okoro asking a judge whether the form was really missing. The answer is {a:D1.courts}.',
       'The refusal is in both cases. In Case A it is the last decision, and in Case B it is how the case got there. What separates the two is what the story ends on.'
     ] },
 
@@ -96,7 +96,7 @@ FC.cards('civics', 'u1', [
     h: 'An office’s rule, taken to a judge',
     link: 'The last card showed an office’s decision and then a judge. Sometimes the first half of a story is so full of an office that the second half is easy to miss.',
     case: 'x-loanrule',
-    setup: 'The case opens with an office publishing a rule, and publishing a rule is what you point to for {a:D1.president}. It then says the office “has gone too far”. Yet the key’s answer for this case is {a:D1.courts}.',
+    setup: 'The case opens with an office publishing a rule, and publishing a rule is what you point to for {a:D1.president}. It then says the office “has gone too far”. Yet the answer for this case is {a:D1.courts}.',
     prompt: { kind: 'phrase', answer: 'asked a judge to block the rule' },
     because: [
       'Read to the end. The office published its rule in June, and that was a decision, but it is an old one. The case ends on Monday, when the lenders’ group asked a judge to block the rule.',

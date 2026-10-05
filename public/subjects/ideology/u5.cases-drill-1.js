@@ -62,7 +62,7 @@ FC.cases('ideology', 'u5', [
               R1: 'A rule that treats every person alike is said to shut a group out, and the text asks for it to change: {cue:R1}.' },
     not: { outcome: 'clib', why: 'The text speaks of one form for every person, as {o:clib} might. But {o:clib} says the same rules for everyone are enough. This text says they have shut a group out.' } },
 
-  /* ---------- Stage two: the key's question alone, on a new case (first half) ---------- */
+  /* ---------- Stage two: the question alone, on a new case (first half) ---------- */
   { id: 'i5-p-clib', use: 'drill', tier: 'clean', setting: 'borders', topic: 'selling across a river as well as at home',
     text: "At a trade meeting in Tarn Harbour, a trader said: 'Every one of us is free to sell across the river as well as at home. The government's work is to keep the bridge safe and the courts open. It should not decide what may be sold, or to whom.'",
     outcome: 'clib', route: { D1: ['rights'], R1: ['leave'] },

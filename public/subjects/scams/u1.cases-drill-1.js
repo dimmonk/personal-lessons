@@ -44,7 +44,7 @@ FC.cases('scams', 'u1', [
     text: "The secretary of Hugo's cycling club emails the members: 'Tickets for the away trip are £18 each. Please pay the treasurer by bank transfer by the 12th.'",
     route: { D1: ['money'] },
     cues: { D1: 'Please pay the treasurer by bank transfer by the 12th' },
-    reason: { D1: 'The email asks each member to pay: {cue:D1}. A transfer is one of the ways the key counts as paying.' },
+    reason: { D1: 'The email asks each member to pay: {cue:D1}. A transfer is one of the ways of paying.' },
     not: { outcome: 'nothing', why: 'The price of the tickets is news, but the email goes on to ask every member to pay by a date, so it is not a message that only tells you something.' } },
 
   { id: 'g-p-passport', use: 'drill', tier: 'clean', setting: 'government', topic: 'a passport renewal form',

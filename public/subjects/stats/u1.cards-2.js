@@ -15,15 +15,15 @@ FC.cards('stats', 'u1', [
       'The hours before a nurse sees a patient have dropped out of the figure. It could fall to four with every patient waiting exactly as long as before.'
     ],
     explain: [
-      'Take the parts in order, as the key does. First: who is in the figure? Every patient who came to the emergency rooms, this year and last. Nobody is left out, and there are plenty of them. That part holds, so you can go on to the next one.',
+      'Take the parts in order. First: who is in the figure? Every patient who came to the emergency rooms, this year and last. Nobody is left out, and there are plenty of them. That part holds, so you can go on to the next one.',
       'The next part is what the figure counts. The claim is about how long patients wait for help. The figure is hours on a clock. If the clock measures the same thing in both years, a fall in hours is a fall in waiting. But the clock was changed. It now starts later, so the figure can fall from six to four without a single patient being seen any sooner.',
       'This is a different trouble from the last one. The people were fine. It is the number itself that has changed what it means. The same trouble comes in other forms: a new form that counts more or fewer things as one kind, a new tool that reads higher or lower than the old one, or people who work on the figure itself because they are paid or judged on it. What they have in common is that the figure can shift while the real thing it is read as showing stays put.',
       'That is also how to recognize it. Ask what else, other than the real thing itself, can shift the figure. If something can, and the case shows it, this is the answer.'
     ],
     feature: { step: 'S1', option: 'measure' },
     name: [
-      'The key’s answer, and so the name of the family, is {a:S1.measure}. "Counts" does not only mean counting heads. It covers whatever the figure is a measure of: hours, dollars, scores, a number of reports.',
-      'The key gives this answer when {when:S1.measure}.'
+      'The answer, and so the name of the kind, is {a:S1.measure}. "Counts" does not only mean counting heads. It covers whatever the figure is a measure of: hours, dollars, scores, a number of reports.',
+      'Give this answer when {when:S1.measure}.'
     ] },
 
   { id: 'again-measure', kind: 'again', family: 'measure',
@@ -65,8 +65,8 @@ FC.cards('stats', 'u1', [
     instruction: 'Both cases are about the same school and the same rise in reading scores. Compare one thing: is the trouble in who is in the figure, or in what the figure counts?',
     prompt: { kind: 'which', option: 'S1.measure', answer: 'gate-reading-easier' },
     difference: [
-      'In Case A the test is the same, but this year’s figure comes from 11 pupils who volunteered to stay after class, out of 340. Pupils who volunteer for an extra test are not a fair picture of the school, and last year’s figure was for everyone. The trouble is who is in the figure. The key’s answer is {a:S1.counted}.',
-      'In Case B every pupil took the test in both years, so nobody is missing. What changed is the test: this year’s is shorter, with easier passages. Scores can rise from 61 to 70 with every pupil reading exactly as well as before. The trouble is what the figure counts. The key’s answer is {a:S1.measure}.',
+      'In Case A the test is the same, but this year’s figure comes from 11 pupils who volunteered to stay after class, out of 340. Pupils who volunteer for an extra test are not a fair picture of the school, and last year’s figure was for everyone. The trouble is who is in the figure. The answer is {a:S1.counted}.',
+      'In Case B every pupil took the test in both years, so nobody is missing. What changed is the test: this year’s is shorter, with easier passages. Scores can rise from 61 to 70 with every pupil reading exactly as well as before. The trouble is what the figure counts. The answer is {a:S1.measure}.',
       'The school, the claim and the numbers are the same in both. You cannot tell these two apart from the figure. You can only tell them apart by asking where the trouble sits: in who is in the figure, or in what it counts.'
     ] }
 ]);

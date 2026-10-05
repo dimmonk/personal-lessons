@@ -20,15 +20,15 @@ FC.cases('stats', 'u6', [
     cues: { S1: 'The course cut falls by a quarter', K1: 'picks the three wards with the highest numbers of patient falls last quarter' },
     reason: { S1: 'The numbers are given, and the hospital says {cue:S1}. That is a claim of cause.',
               K1: 'The wards were picked because they had the most falls, and the hospital {cue:K1}. A count of falls mixes how risky a ward is with luck, and the worst quarter’s luck does not come back. Some of the fall from 40 to 30 would be expected with no course at all.' },
-    not: { outcome: 'nocontrol', why: 'It is true that no ward went without the course, and the case shows that too. But the three wards were picked because they were at their worst, and when a case shows both, the key’s answer is {a:K1.extreme}.' } },
+    not: { outcome: 'nocontrol', why: 'It is true that no ward went without the course, and the case shows that too. But the three wards were picked because they were at their worst, and when a case shows both, the answer is {a:K1.extreme}.' } },
 
   { id: 'k-n-fair1', use: 'drill', tier: 'clean', setting: 'home', topic: 'a tomato fertilizer tried on drawn plots',
     text: "A seed company planted 80 tomato plots in one field and drew 40 plots from a hat to get its new fertilizer, with nothing added to the other 40. At harvest it weighed every plot in the same way: 31 pounds on average for the fertilized plots and 25 for the others. 'Our fertilizer raises the harvest,' the company says.",
     outcome: 'cause_ok', route: { S1: ['holds'], H1: ['causes'] },
     cues: { S1: 'drew 40 plots from a hat to get its new fertilizer', H1: 'Our fertilizer raises the harvest' , K1: 'drew 40 plots from a hat to get its new fertilizer'},
     reason: { S1: 'Take the parts in order. Every plot is counted and weighed in the same way, and the numbers are given. A second group went without, and a draw decided who was in which: the company {cue:S1}. Nothing is wrong in any part.',
-              H1: 'The company says {cue:H1}, and the key’s answer to what the figures show is {a:H1.causes}, from groups formed by a draw.',
-              K1: 'The key asks {q:K1} Here {cue:K1}, so nothing else is likelier to be in one group than the other, and none of the four answers fits. This claim is one in which nothing is wrong, and its answer comes from the first question, {a:S1.holds}.' },
+              H1: 'The company says {cue:H1}, and the answer to what the figures show is {a:H1.causes}, from groups formed by a draw.',
+              K1: 'The question is {q:K1} Here {cue:K1}, so nothing else is likelier to be in one group than the other, and none of the four answers fits. This claim is one in which nothing is wrong, and its answer comes from the first question, {a:S1.holds}.' },
     not: { outcome: 'nocontrol', why: 'There is a second group here, 40 plots with nothing added, counted in the same way. {o:nocontrol} needs the lack of exactly that.' } },
 
   { id: 'k-n-mentor', use: 'drill', tier: 'clean', setting: 'work', topic: 'a voluntary mentoring program and promotions',
@@ -52,8 +52,8 @@ FC.cases('stats', 'u6', [
     outcome: 'cause_ok', route: { S1: ['holds'], H1: ['causes'] },
     cues: { S1: 'chosen by lottery', H1: 'The reminder raises savings' , K1: 'chosen by lottery'},
     reason: { S1: 'Take the parts in order. All 4,000 account holders are counted in the same way, and the numbers are given. A second group went without, and the first group was {cue:S1}. Nothing is wrong in any part.',
-              H1: 'The bank says {cue:H1}, and the key’s answer to what the figures show is {a:H1.causes}, from groups formed by a draw.',
-              K1: 'The key asks {q:K1} Here {cue:K1}, so nothing else is likelier to be in one group than the other, and none of the four answers fits. This claim is one in which nothing is wrong, and its answer comes from the first question, {a:S1.holds}.' },
+              H1: 'The bank says {cue:H1}, and the answer to what the figures show is {a:H1.causes}, from groups formed by a draw.',
+              K1: 'The question is {q:K1} Here {cue:K1}, so nothing else is likelier to be in one group than the other, and none of the four answers fits. This claim is one in which nothing is wrong, and its answer comes from the first question, {a:S1.holds}.' },
     not: { outcome: 'confound', why: 'The customers did not choose whether to get the text. A lottery did, so nothing else is likelier to be in one group than the other, and {o:confound} has nothing to point to.' } },
 
   /* ---------- Stage two: the key's question alone, on a new case ---------- */
@@ -71,7 +71,7 @@ FC.cases('stats', 'u6', [
     cues: { S1: 'New managers fix stores', K1: 'picks its five stores with the lowest customer ratings in March' },
     reason: { S1: 'The ratings are given, and the head office says {cue:S1}. That is a claim of cause.',
               K1: 'The five stores were picked because they had the lowest ratings: the chain {cue:K1}. A store’s rating mixes how well it is run with how a few months went, so the lowest five are partly the unlucky five, and their ratings drift back toward usual with no new manager.' },
-    not: { outcome: 'nocontrol', why: 'No store kept its manager for comparison, and the case shows that too. But the five were picked at their worst, and when a case shows both, the key’s answer is {a:K1.extreme}.' } },
+    not: { outcome: 'nocontrol', why: 'No store kept its manager for comparison, and the case shows that too. But the five were picked at their worst, and when a case shows both, the answer is {a:K1.extreme}.' } },
 
   { id: 'k-p-gardens', use: 'drill', tier: 'clean', setting: 'community', topic: 'community gardens and reported thefts',
     text: "A city council member says: 'Neighborhoods with a community garden had 18 reported thefts per 1,000 homes last year, against 26 in neighborhoods without one. Gardens cut crime.' Residents chose to start the gardens, and nearly all of them are in neighborhoods where the median income is above $80,000.",
@@ -94,6 +94,6 @@ FC.cases('stats', 'u6', [
     outcome: 'cause_ok', route: { S1: ['holds'], H1: ['causes'] },
     cues: { S1: 'a spreadsheet’s lottery picked 150 to get the call', H1: 'The follow-up call cuts return visits' },
     reason: { S1: 'All 300 patients are counted in the same way and the numbers are given. A second group went without, and {cue:S1}, so nothing else is likelier to be in one group than the other. Nothing is wrong in any part.',
-              H1: 'The clinic says {cue:H1}, and the key’s answer to what the figures show is {a:H1.causes}, from groups formed by a draw.' },
+              H1: 'The clinic says {cue:H1}, and the answer to what the figures show is {a:H1.causes}, from groups formed by a draw.' },
     not: { outcome: 'nocontrol', why: 'There is a second group of 150 patients who got no call and were counted in the same way. {o:nocontrol} needs the lack of exactly that.' } }
 ]);

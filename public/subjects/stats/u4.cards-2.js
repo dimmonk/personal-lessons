@@ -15,8 +15,8 @@ FC.cards('stats', 'u4', [
     instruction: 'Both claims are about the same bus company, and both give the same figure: trips on time rose from 78 of every 100 to 90 of every 100. Compare one thing: who makes the figure, and whether they gain if it is high.',
     prompt: { kind: 'which', option: 'S1.holds', answer: 'meas-bus-gps' },
     difference: [
-      'In Case A the drivers are paid when 90 of every 100 trips are logged on time, and each driver logs the trip with a press of a panel. The figure can rise from 78 to 90 because of what the drivers press, with no bus running any earlier. The key’s first answer is {a:S1.measure}, and its second is {a:M1.pushed}: the case is {o:proxy}.',
-      'In Case B nobody is paid on the figure, and a computer logs each trip from the bus’s satellite position, against a timetable that did not change. Nothing but the buses running earlier could move the figure from 78 to 90. Every part holds, so the key’s first answer is {a:S1.holds}, and the kind of claim it makes is {a:H1.change}: one figure at two times, said to have risen, and nothing more. The claim is a sound one: {plain:meas_ok}.',
+      'In Case A the drivers are paid when 90 of every 100 trips are logged on time, and each driver logs the trip with a press of a panel. The figure can rise from 78 to 90 because of what the drivers press, with no bus running any earlier. The first answer is {a:S1.measure}, and its second is {a:M1.pushed}: the case is {o:proxy}.',
+      'In Case B nobody is paid on the figure, and a computer logs each trip from the bus’s satellite position, against a timetable that did not change. Nothing but the buses running earlier could move the figure from 78 to 90. Every part holds, so the first answer is {a:S1.holds}, and the kind of claim it makes is {a:H1.change}: one figure at two times, said to have risen, and nothing more. The claim is a sound one: {plain:meas_ok}.',
       'So the same rise, in the same company, in the same words, is two different things. Nothing in the headline tells them apart. The people who make the figure, and whether they gain from it, do.'
     ] },
 
@@ -29,7 +29,7 @@ FC.cards('stats', 'u4', [
     prompt: { kind: 'phrase', answer: 'The test is run by an outside laboratory, which loads every finished chair with 120 kg and is paid the same whatever the result' },
     because: [
       'Ask the question the name needs: is there a way for the workers to raise the figure without making stronger chairs? Here the test is run by an outside laboratory that loads every finished chair with 120 kg and is paid the same whatever the result. The workers do not run the test, choose which chairs are tested or write down the result. The only way to get more chairs through is to make chairs that bear 120 kg.',
-      'So the figure moved from 700 to 900 in every 1,000 because the chairs got stronger: 200 more in every 1,000 bear the load. A bonus tells you that someone gains from the figure. It does not tell you that they can raise it another way. For {o:proxy} you must be able to point to this: {needs:proxy}. The bonus is there, and so is the rise, but the way is missing. The key’s first answer for this claim is {a:S1.holds}.'
+      'So the figure moved from 700 to 900 in every 1,000 because the chairs got stronger: 200 more in every 1,000 bear the load. A bonus tells you that someone gains from the figure. It does not tell you that they can raise it another way. For {o:proxy} you must be able to point to this: {needs:proxy}. The bonus is there, and so is the rise, but the way is missing. The first answer for this claim is {a:S1.holds}.'
     ],
     take: 'So a target and a rise are never enough to name a claim {o:proxy}. Look for the way. And when you cannot find one, do not suspect everything: a claim that holds is a real answer, and this is what it can look like.' },
 

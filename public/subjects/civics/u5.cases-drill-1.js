@@ -5,7 +5,7 @@
 
 FC.cases('civics', 'u5', [
 
-  /* ---------- Stage one: the key's answers are shown, the learner gives the name ---------- */
+  /* ---------- Stage one: the answers are shown, the learner gives the name ---------- */
   { id: 'name-review-1', use: 'drill', tier: 'clean', setting: 'leisure', topic: 'a Sunday service in a county park',
     text: 'A county law bans any group from holding an outdoor service on public land. Pastor Reyes was fined $150 for leading a Sunday service in a county park. He asked a judge to cancel the fine, telling the judge that the law takes away the right to worship.',
     outcome: 'review', route: { D1: ['courts'], J1: ['check'] },
@@ -48,7 +48,7 @@ FC.cases('civics', 'u5', [
     reason: { J1: 'Omari was fined, and he says the law clashes with a right the Constitution protects: {cue:J1}. That is a claim about whether the law is allowed.' },
     not: { outcome: 'notlegal', why: 'He does not only say a different rule would be better. He points to a right that the law is said to break.' } },
 
-  /* ---------- Stage two: the key's question alone, on a new case ---------- */
+  /* ---------- Stage two: the question alone, on a new case ---------- */
   { id: 'pc-review-1', use: 'drill', tier: 'clean', setting: 'learning', topic: 'a flyer on a college campus',
     text: 'A state law bans anyone from handing out printed papers on a college campus. Mina was fined $40 for giving out a flyer about a student election. She asked a judge to cancel the fine, saying the law takes away the right to speak.',
     outcome: 'review', route: { D1: ['courts'], J1: ['check'] },
@@ -77,7 +77,7 @@ FC.cases('civics', 'u5', [
     reason: { J1: 'Arman is accused of a crime, and his lawyer asks whether a step the Constitution promises was followed: {cue:J1}.' },
     not: { outcome: 'interpret', why: 'The judge is not asked what the words of a law cover. The question is whether a promised step was kept.' } },
 
-  /* ---------- Stage three: the first answer is shown; the learner answers the key's question and gives the name ---------- */
+  /* ---------- Stage three: the first answer is shown; the learner answers the question and gives the name ---------- */
   { id: 'fin-review-1', use: 'drill', tier: 'clean', setting: 'home', topic: 'a banner on a house',
     text: 'A city law bans hanging any flag from a house except the national flag. Lou hung a banner for his football team and was fined $60. He asked a judge to cancel the fine, saying that the law takes away his right to speak.',
     outcome: 'review', route: { D1: ['courts'], J1: ['check'] },

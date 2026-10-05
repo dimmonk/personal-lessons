@@ -6,12 +6,12 @@
 
 FC.unit('stats', 'u1', {
   kind: 'C',              // C classification, F facts, P procedure
-  rev: 1,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
+  rev: 2,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
   standard: 1,            // lesson-standard version this unit was built to
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author). The app labels a draft as a draft.
   tag: 'One',
   title: { text: 'Four parts of a claim, and a claim that holds' },
-  subtitle: 'The key’s first question, and the five answers it sorts every claim into',
+  subtitle: 'The first question, and the five answers it sorts every claim into',
   teaches: { steps: ['S1'], outcomes: [], terms: [], families: ['counted', 'measure', 'compare', 'cause', 'holds'] },
   assumes: [],            // the first unit of the subject
 
@@ -75,7 +75,7 @@ FC.unit('stats', 'u1', {
     { id: 'p5', title: 'The fifth answer: a claim in which every part holds',
       cards: ['meet-holds', 'again-holds', 'portrait-holds', 'check-holds', 'refute-source',
               'look-counted-holds', 'look-measure-holds', 'look-compare-holds', 'look-cause-holds'] },
-    { id: 'p6', title: 'When two parts go wrong, the key’s question, and two whole claims',
+    { id: 'p6', title: 'When two parts go wrong, the question, and two whole claims',
       cards: ['exc-finishers', 'exc-bonus', 'exc-advert', 'refute-false', 'q-gate', 'check-gate', 'worked-walkers', 'worked-spanish'],
       drill: true, close: ['recap-gate', 'transfer-gate', 'plan-gate'] }
   ],
@@ -116,7 +116,8 @@ FC.unit('stats', 'u1', {
   build: {
     // What changed at each revision (R1). One entry for every revision from 1 to rev.
     history: [
-      { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the gate unit of Statistical Claims. Not yet deployed, so later edits before the first deploy stay revision 1. Replaces old Unit One (cards "A claim has four parts" to "Worked example: running the parts in order", drill V1).' }
+      { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the gate unit of Statistical Claims. Not yet deployed, so later edits before the first deploy stay revision 1. Replaces old Unit One (cards "A claim has four parts" to "Worked example: running the parts in order", drill V1).' },
+      { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' }
     ],
     // What the K2 rewrite changed in the gate, and why (docs/rebuild/stats-plan.md, section (a), "The gate").
     keyChanges: [

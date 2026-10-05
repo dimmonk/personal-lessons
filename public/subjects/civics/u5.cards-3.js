@@ -56,8 +56,8 @@ FC.cards('civics', 'u5', [
     instruction: 'Both cases are about gatherings on the same village green. Compare one thing: what is asked of the judge. In one case it is whether a rule is allowed. In the other it is to choose something that would be better.',
     prompt: { kind: 'which', option: 'J1.check', answer: 'ls-permit-fine' },
     difference: [
-      'In Case A, Rosa was fined under the town’s permit rule, and she tells the judge that it takes away the right to gather peacefully. Someone has been harmed, and there is a place in the Constitution to check the rule against. The key’s answer is {a:J1.check}, and the case is {o:review}.',
-      'In Case B, nobody has been fined and nobody says a right is taken away. The group thinks a stage would be better for the town, and asks the judge to order one built. No law requires one. The key’s answer is {a:J1.policy}, and the case is {o:notlegal}.',
+      'In Case A, Rosa was fined under the town’s permit rule, and she tells the judge that it takes away the right to gather peacefully. Someone has been harmed, and there is a place in the Constitution to check the rule against. The answer is {a:J1.check}, and the case is {o:review}.',
+      'In Case B, nobody has been fined and nobody says a right is taken away. The group thinks a stage would be better for the town, and asks the judge to order one built. No law requires one. The answer is {a:J1.policy}, and the case is {o:notlegal}.',
       'The place is the same, and so is the wish for something to be different. In the first case there is something in the Constitution for the judge to check against. In the second there is nothing for the judge to apply.'
     ] },
 
@@ -67,8 +67,8 @@ FC.cards('civics', 'u5', [
     instruction: 'Both cases are about dogs in the same park. Compare one thing: is there a law whose words the judge can read to answer the question, or is the judge asked to choose?',
     prompt: { kind: 'which', option: 'J1.words', answer: 'ls-dog-leash' },
     difference: [
-      'In Case A there is a law, "on a leash", and Tamsin says her thirty-foot cord is a leash. The judge can answer from the words of the law, the rest of it, what it was for and earlier rulings ({t:precedent}). The key’s answer is {a:J1.words}, and the case is {o:interpret}.',
-      'In Case B there is no law to read. The owners want a fenced area for dogs, and their reason is that the dogs would be happier. Nothing tells the judge to order one. The key’s answer is {a:J1.policy}, and the case is {o:notlegal}.',
+      'In Case A there is a law, "on a leash", and Tamsin says her thirty-foot cord is a leash. The judge can answer from the words of the law, the rest of it, what it was for and earlier rulings ({t:precedent}). The answer is {a:J1.words}, and the case is {o:interpret}.',
+      'In Case B there is no law to read. The owners want a fenced area for dogs, and their reason is that the dogs would be happier. Nothing tells the judge to order one. The answer is {a:J1.policy}, and the case is {o:notlegal}.',
       'Both are about dogs, and in both the person wants something from the judge. The difference is whether there is a law the judge can read to answer, or only a view about what would be better.'
     ] },
 
@@ -76,7 +76,7 @@ FC.cards('civics', 'u5', [
     h: 'A request that sounds like a plea for a better policy, and is not',
     link: 'The last cards kept the pair tidy. A real request can sound like a plea for a better policy and still contain something a judge can check against the Constitution, and then the case is the first name of this unit.',
     case: 'x-hall',
-    setup: 'The Mehta family ask the judge to change a town rule, and they say the rule is unfair. That is how people ask for a better policy, and it is what you point to for {a:J1.policy}. Yet the key’s answer for this case is {a:J1.check}.',
+    setup: 'The Mehta family ask the judge to change a town rule, and they say the rule is unfair. That is how people ask for a better policy, and it is what you point to for {a:J1.policy}. Yet the answer for this case is {a:J1.check}.',
     prompt: { kind: 'phrase', answer: 'the Constitution does not allow a town to favour one religion' },
     because: [
       'Look at what has happened to the family, and at what they say. They were turned away from the hall, so they have been harmed. And they do not say only that the rule is unfair: they say the Constitution does not allow it. That gives the judge something to check the rule against.',

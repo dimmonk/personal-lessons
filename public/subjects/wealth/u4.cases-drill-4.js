@@ -47,9 +47,9 @@ FC.cases('wealth', 'u4', [
     outcome: 'burnrate', route: { D1: ['erosion'], E1: ['fixedsum'] }, also: ['timing'],
     cues: { D1: 'has taken exactly that every year since',
             E1: ['He set himself £32,000 a year', 'the funds are now worth £450,000'] },
-    reason: { D1: 'The case shows a sum taken out every year: {cue:D1}. A fall in prices is in the case as well, and when a case shows both, the key’s answer is the sum.',
+    reason: { D1: 'The case shows a sum taken out every year: {cue:D1}. A fall in prices is in the case as well, and when a case shows both, the answer is the sum.',
               E1: 'The sum was fixed when the money was worth more, and it has not moved while the money shrank: {cue:E1}. £32,000 was 4.4% of £720,000 and is now 7.1% of £450,000.' },
-    not: { outcome: 'cashbuffer', why: 'Yusuf pays his bills by selling falling funds with no cash set aside, which is how {o:cashbuffer} of this unit looks. But the sum has stayed the same for seven years while the funds shrank, and the key asks about that first.' },
+    not: { outcome: 'cashbuffer', why: 'Yusuf pays his bills by selling falling funds with no cash set aside, which is how {o:cashbuffer} of this unit looks. But the sum has stayed the same for seven years while the funds shrank, and the question about that comes first.' },
     wouldChange: 'If Yusuf had reset the sum each year to 4.4% of what the funds were worth, the sum would no longer be the trouble, and the case would be {a:T1.livingcosts}.' },
 
   { id: 'r-cb3', use: 'drill', tier: 'misleading', setting: 'home', topic: 'a drifted mix with monthly sales to live on', echo: 'tm-meet-mix',
@@ -57,7 +57,7 @@ FC.cases('wealth', 'u4', [
     outcome: 'cashbuffer', route: { D1: ['timing'], T1: ['livingcosts'] }, also: ['drifted'],
     cues: { D1: 'She needs £1,700 a month', T1: 'she pays it by selling units of the shares each month. She has no cash set aside' },
     reason: { D1: 'The case is about what a fall would do to money that is spent every month: {cue:D1}. Nothing in it comes out as a charge, rests on one thing, or is about a death or a gift.',
-              T1: 'Sakura’s mix has moved, but her bills are paid by selling shares every month with nothing set aside: {cue:T1}. When a case shows both, the key’s answer is the living costs.' },
-    not: { outcome: 'rebalance', why: 'Her mix is 9 points above her plan, which is what {o:rebalance} looks like. But shares are being sold every month to pay her bills, and the key puts money needed soon first.' },
+              T1: 'Sakura’s mix has moved, but her bills are paid by selling shares every month with nothing set aside: {cue:T1}. When a case shows both, the answer is the living costs.' },
+    not: { outcome: 'rebalance', why: 'Her mix is 9 points above her plan, which is what {o:rebalance} looks like. But shares are being sold every month to pay her bills, and money needed soon comes first.' },
     wouldChange: 'If her bills were paid from a savings account and no shares were being sold, {t:mix} alone would be the case, and it would be {a:T1.drifted}.' }
 ]);

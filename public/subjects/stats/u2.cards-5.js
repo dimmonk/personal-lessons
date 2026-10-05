@@ -76,8 +76,8 @@ FC.cards('stats', 'u2', [
     instruction: 'Both cases are about the same school, the same lottery and the same test results. Compare one thing: does the claim stop at which group is ahead, or does it say what made the gap?',
     prompt: { kind: 'which', option: 'H1.causes', answer: 'h-reading-cause' },
     difference: [
-      'In Case A the school’s claim gives the two averages, 74 and 62, and says which group is ahead: 74 − 62 = 12 points. It stops there. It says nothing about why. The key’s answer is {a:H1.difference}, and the case is {o:comp_ok}.',
-      'In Case B the school ran the same lottery, set the same test and found the same 12 points, and its claim says the reading program raised the scores. It may say that, and the case shows why: names were drawn from a hat, so the pupils in the program and the pupils out of it were alike before the program began. The key’s answer is {a:H1.causes}, and the case is {o:cause_ok}.',
+      'In Case A the school’s claim gives the two averages, 74 and 62, and says which group is ahead: 74 − 62 = 12 points. It stops there. It says nothing about why. The answer is {a:H1.difference}, and the case is {o:comp_ok}.',
+      'In Case B the school ran the same lottery, set the same test and found the same 12 points, and its claim says the reading program raised the scores. It may say that, and the case shows why: names were drawn from a hat, so the pupils in the program and the pupils out of it were alike before the program began. The answer is {a:H1.causes}, and the case is {o:cause_ok}.',
       'Everything is the same in both cases except the last sentence. A claim of the first kind never says what made the gap, however the groups were formed. A claim of the second kind may say it only because of the lottery. The lottery is in both cases. Which name applies depends on what the claim says.'
     ] },
 
@@ -91,7 +91,7 @@ FC.cards('stats', 'u2', [
       'Ask what the claim says, not what the story suggests. The claim stops at which town is lower: 410 kilograms against 470, a gap of 60. It does not say that the pickup did it.',
       'For {o:cause_ok} you must be able to point to this: {needs:cause_ok}. Nothing in the case says anyone formed the two towns by lottery, and no one could. The towns differ in many ways besides the pickup. The claim wisely does not say more than the figures can carry, and what they carry is {o:comp_ok}.'
     ],
-    take: 'The story is where the cause comes from, and your own mind supplies it. That is the thing to guard against: go by what the claim says. If the report had said "the pickup cut garbage by 60 kilograms", it would be a claim of cause with no lottery behind it, and the key’s first question would not give {a:S1.holds} for it.' },
+    take: 'The story is where the cause comes from, and your own mind supplies it. That is the thing to guard against: go by what the claim says. If the report had said "the pickup cut garbage by 60 kilograms", it would be a claim of cause with no lottery behind it, and the first question would not give {a:S1.holds} for it.' },
 
   { id: 'refute-comparison', kind: 'refute', about: 'comp_ok',
     h: 'A wrong idea: "{o:comp_ok} shows why"',

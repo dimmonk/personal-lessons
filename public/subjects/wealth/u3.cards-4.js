@@ -4,7 +4,7 @@
 FC.cards('wealth', 'u3', [
 
   { id: 'w3-meet-safe', kind: 'meet', outcome: 'safe',
-    link: 'In every case so far something was missing, or in the way. The key’s next answer is for the opposite: a business the person runs, most of what they have, and nothing missing round it.',
+    link: 'In every case so far something was missing, or in the way. The next answer is for the opposite: a business the person runs, most of what they have, and nothing missing round it.',
     case: 'w3-h-saf-1', mark: 'S1',
     strip: [
       'There is one person, Hugo, with £1,150,000: £800,000 in a timber yard he runs, £250,000 in funds, and £100,000 in savings.',
@@ -15,14 +15,14 @@ FC.cards('wealth', 'u3', [
     ],
     explain: [
       'Compare Hugo with Femi and Naomi. The first question finds the same thing in all three: one business that the person runs, most of what they own. What is different is what stands round it. Hugo has {t:threesupports}, all three, in numbers: £100,000 ÷ £33,000 is just over three years; his other money is in funds that hold thousands of companies; and no lender has his shares.',
-      'So nothing needs doing about the yard. This is a real answer, and the key gives it a name so that it can be said as plainly as the others. A person can say: “Yes, most of what I have is in one business, and it is looked after.”',
+      'So nothing needs doing about the yard. This is a real answer, and it has a name so that it can be said as plainly as the others. A person can say: “Yes, most of what I have is in one business, and it is looked after.”',
       'There is a reason to say it firmly. Every fix has a price. If an adviser told Hugo to sell half the yard, he would pay tax and fees on the sale, he would give up part of a business he runs and likes, and he would be paying to guard against a bad year that his three years of savings, his spread of funds and his clean ownership already guard against. The money would be spent on a problem the case does not show.',
       'The answer is not “never look again”. It is true of the case as written. If a loan is taken against the shares, or the savings are spent, one of the three goes, and the answer changes with it.',
       'This answer covers more than a business with three supports. It is the name for any case in which the one thing that most of the money depends on, or that could bring {t:claim} or force a sale, is already made safe. There are other kinds of case that belong to it, and each is taught beside the problem it answers.'
     ],
     feature: { step: 'S1', option: 'madesafe' },
     name: [
-      'The key’s answer is {a:S1.madesafe}, and the name is {o:safe}. It is the one name in this unit that says nothing needs doing.',
+      'The answer is {a:S1.madesafe}, and the name is {o:safe}. It is the one name in this unit that says nothing needs doing.',
       'It does not say that nothing could go wrong. Something could: the yard could still have a bad year. The name says that the case shows the one thing already made safe, so that a bad year would not force anything.'
     ] },
 
@@ -70,8 +70,8 @@ FC.cards('wealth', 'u3', [
     instruction: 'Both cases are about Alma and her bakery, £500,000 of the £800,000 she owns, with £150,000 in funds and £150,000 in savings. Compare one thing: whether a bank holds her shares in the bakery as security.',
     prompt: { kind: 'which', option: 'S1.ownrun', answer: 'w3-h-la-ss-b' },
     difference: [
-      'In Case A she has all three of {t:threesupports}: the rest is spread over funds, £150,000 of savings covers more than three years of the £40,000 she spends, and no bank holds her shares as security. The key’s answer is {a:S1.madesafe}, and the name is {o:safe}. Nothing needs doing.',
-      'In Case B one sentence is different: last year she borrowed £120,000 for new ovens, and the bank holds her shares in the bakery as security. The bank can now take the shares if she cannot keep up the payments, so a lender could decide the future of the bakery. The key’s answer is {a:S1.ownrun}, and the name is {o:supports}: one of the three has gone, and the first thing to do is to deal with the loan.',
+      'In Case A she has all three of {t:threesupports}: the rest is spread over funds, £150,000 of savings covers more than three years of the £40,000 she spends, and no bank holds her shares as security. The answer is {a:S1.madesafe}, and the name is {o:safe}. Nothing needs doing.',
+      'In Case B one sentence is different: last year she borrowed £120,000 for new ovens, and the bank holds her shares in the bakery as security. The bank can now take the shares if she cannot keep up the payments, so a lender could decide the future of the bakery. The answer is {a:S1.ownrun}, and the name is {o:supports}: one of the three has gone, and the first thing to do is to deal with the loan.',
       'One sentence changed the answer. That is the point of the pair: the story is the same bakery, and the answer follows the three things, not the story.'
     ] }
 ]);

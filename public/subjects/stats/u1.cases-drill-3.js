@@ -11,7 +11,7 @@ FC.cases('stats', 'u1', [
     route: { S1: ['counted'] },
     cues: { S1: 'has quietly stopped showing the 28 that lost money' },
     reason: { S1: 'The newsletter says its method makes money, and the case shows another way to explain the result: markets rose. But the first part goes wrong before that. The figure is worked out from the 12 portfolios still shown, and {cue:S1}. The ones that lost are not in it.' },
-    not: { outcome: 'cause', why: 'The claim that the method makes money does have another way to explain it, the rising markets. But when a case shows two answers, the key gives the earlier part, and who is in the figure comes before what the claim says caused what.' },
+    not: { outcome: 'cause', why: 'The claim that the method makes money does have another way to explain it, the rising markets. But when a case shows two answers, the answer is the earlier part, and who is in the figure comes before what the claim says caused what.' },
     wouldChange: 'If the newsletter had shown all 40 portfolios and the average was still up 90%, the first part would hold, and the answer would be {a:S1.cause}: the rising markets would still be another way to explain it.' },
 
   { id: 'gate-r-scores', use: 'drill', tier: 'misleading', setting: 'learning', topic: 'a bonus for rising test scores', echo: 'gate-music',
@@ -20,7 +20,7 @@ FC.cases('stats', 'u1', [
     route: { S1: ['measure'] },
     cues: { S1: "Teachers now spend most of the term drilling last year's test questions" },
     reason: { S1: 'The district says the bonus raised learning. But the first part to go wrong comes earlier: what the figure counts. The figure is a test score, teachers are paid on it, and {cue:S1}. Scores can rise by 15 points with no more learning.' },
-    not: { outcome: 'cause', why: 'The claim of cause is there, but a claim that the bonus raised learning cannot be sound if the figure it rests on could have risen without the learning. When a case shows two answers, the key gives the earlier part.' },
+    not: { outcome: 'cause', why: 'The claim of cause is there, but a claim that the bonus raised learning cannot be sound if the figure it rests on could have risen without the learning. When a case shows two answers, the answer is the earlier part.' },
     wouldChange: 'If the bonus were paid on a test that nobody could prepare for in that way, and the figure still rose, the first two parts would hold, and the claim would go on to the question of cause.' },
 
   { id: 'gate-r-deal', use: 'drill', tier: 'misleading', setting: 'home', topic: 'a smart thermostat and percentage savings', echo: 'gate-vitamin',
@@ -29,7 +29,7 @@ FC.cases('stats', 'u1', [
     route: { S1: ['compare'] },
     cues: { S1: 'It does not say what the bills were, or what the thermostat costs' },
     reason: { S1: 'The company says the thermostat pays for itself, and the case shows another way the bills could have fallen: the insulation. But the first part to go wrong is earlier: {cue:S1}. A 35% cut of a $60 bill is $21, and of a $300 bill it is $105.' },
-    not: { outcome: 'cause', why: 'The claim of cause is there, with another way to explain the fall. But the percentage has no numbers behind it, so you cannot yet say how big the fall is. When a case shows two answers, the key gives the earlier part.' },
+    not: { outcome: 'cause', why: 'The claim of cause is there, with another way to explain the fall. But the percentage has no numbers behind it, so you cannot yet say how big the fall is. When a case shows two answers, the answer is the earlier part.' },
     wouldChange: 'If the company had given the bills before and after for every customer, and the cost of the thermostat, the third part would hold, and the question would move on to cause.' },
 
   { id: 'gate-r-crash', use: 'drill', tier: 'misleading', setting: 'money', topic: 'an insurer’s test of a lane alert', echo: 'gate-depots',

@@ -63,8 +63,8 @@ FC.cards('math', 'u2', [
     instruction: 'Both problems are about the same baker and the same 48 rolls. Compare one thing: does the problem give one number, or two?',
     prompt: { kind: 'which', option: 'W1.piece', answer: 'la-rolls-hcf' },
     difference: [
-      'Case A gives only the 48 rolls and asks for every size of equal pack they can be made into. One number is taken apart, and the key’s answer is {a:W1.parts}.',
-      'Case B gives 48 rolls and 60 buns, and asks for the largest pack size that works for both. Two numbers are given, and the question is the biggest piece that fits both. The key’s answer is {a:W1.piece}.',
+      'Case A gives only the 48 rolls and asks for every size of equal pack they can be made into. One number is taken apart, and the answer is {a:W1.parts}.',
+      'Case B gives 48 rolls and 60 buns, and asks for the largest pack size that works for both. Two numbers are given, and the question is the biggest piece that fits both. The answer is {a:W1.piece}.',
       'Both are about equal packs, and both use the primes of the numbers. What differs is how many numbers there are, and what is asked of them: every size for one number, or the biggest size that works for two.'
     ] },
 
@@ -127,8 +127,8 @@ FC.cards('math', 'u2', [
     instruction: 'Both problems are about Ruth, and both use the numbers 16 and 24. Compare one thing: is the problem cutting two lengths into equal pieces, or are two things repeating?',
     prompt: { kind: 'which', option: 'W1.together', answer: 'la-ribbon-lcm' },
     difference: [
-      'In Case A the two numbers are lengths of ribbon, to be cut into pieces of one length with none left over, and the question asks for the greatest such length. The key’s answer is {a:W1.piece}, and the answer is 8 m.',
-      'In Case B the same two numbers are how often two alarms sound, and the question is when they next sound together. The key’s answer is {a:W1.together}, and the answer is 48 minutes.',
+      'In Case A the two numbers are lengths of ribbon, to be cut into pieces of one length with none left over, and the question asks for the greatest such length. The answer is {a:W1.piece}, and the answer is 8 m.',
+      'In Case B the same two numbers are how often two alarms sound, and the question is when they next sound together. The answer is {a:W1.together}, and the answer is 48 minutes.',
       'The two answers show the difference. A piece that fits into both ribbons cannot be longer than the shorter ribbon, 16 m, and the answer, 8, is below that. The time when both alarms sound together cannot come before the slower alarm has sounded once, at 24 minutes, and the answer, 48, is above that. The same two numbers are used in opposite ways, and what the problem asks decides which.'
     ] }
 ]);

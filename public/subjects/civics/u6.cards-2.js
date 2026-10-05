@@ -21,7 +21,7 @@ FC.cards('civics', 'u6', [
       'So the matter, and everything else in the case, looks just like the last name: nothing from the federal side covers the fences, and no right is taken away. The only difference is who made the rule. A state made the last one itself. A town made this one, using what its state gave it. That difference is what gives this case its own name.'
     ],
     feature: { step: 'S1', option: 'local' },
-    name: 'The key’s answer to this question is the one printed above, and with nothing else covering the matter, the name for the whole case is {o:localgov}. “Handed down” means passed from the state to a place below it. The two names are as alike as two names can be, and the only difference is who made the rule.' },
+    name: 'The answer to this question is the one printed above, and with nothing else covering the matter, the name for the whole case is {o:localgov}. “Handed down” means passed from the state to a place below it. The two names are as alike as two names can be, and the only difference is who made the rule.' },
 
   { id: 'again-localgov', kind: 'again', outcome: 'localgov',
     link: 'The fence rule gave you what to point to: {needs:localgov}. Here is a second case, and this time the government is a county, not a town.',
@@ -61,8 +61,8 @@ FC.cards('civics', 'u6', [
     instruction: 'Both cases are about loud music at night, and in both the rule says the same thing: no loud music in a home between eleven at night and seven in the morning. Compare one thing: who made the rule.',
     prompt: { kind: 'which', option: 'S1.local', answer: 'u6-quiet-town' },
     difference: [
-      'In Case A the lawmakers of the state of Ostrow passed a law for the whole state. The key’s answer is {a:S1.own}, and with nothing else covering the matter, the case is {o:police}.',
-      'In Case B the council of the town of Orsley voted, using the power its state gives to towns, and the rule covers only Orsley. The key’s answer is {a:S1.local}, and the case is {o:localgov}.',
+      'In Case A the lawmakers of the state of Ostrow passed a law for the whole state. The answer is {a:S1.own}, and with nothing else covering the matter, the case is {o:police}.',
+      'In Case B the council of the town of Orsley voted, using the power its state gives to towns, and the rule covers only Orsley. The answer is {a:S1.local}, and the case is {o:localgov}.',
       'The words of the rule are the same in both cases, so you cannot tell the cases apart by what the rule says, or by the subject. You can only tell by who made it.'
     ] },
 
@@ -78,13 +78,13 @@ FC.cards('civics', 'u6', [
     ],
     testedBy: ['u6-claim-cities'] },
 
-  /* ---------- The key's first question of this unit ---------- */
+  /* ---------- The first question of this unit ---------- */
   { id: 'q-who', kind: 'question', step: 'S1',
     h: 'The first question, and what it does and does not decide',
-    link: 'Under the name at the end of each of the last cards you have seen a question and one of its answers. This card puts that question and both its answers in one place, as the key shows them, and says why the key asks it.',
+    link: 'Under the name at the end of each of the last cards you have seen a question and one of its answers. This card puts that question and both its answers in one place, and says why it is asked.',
     decides: [
       'The answer to this question does not always give the name. Whichever answer a case gets, the name can still depend on a second question, and every case in this unit is asked both. What this question does is say whether the rule is a state’s own, or a city’s, a town’s or a county’s. That is worth asking because a city, a town and a county have no power of their own: they use only what their state handed down, and the state can take it back.',
-      'So two rules with the same words and the same subject can get different names. For one the key’s answer is {a:S1.own}; for the other it is {a:S1.local}. Nothing about the subject, the words of the rule, or the people it affects tells them apart. Only who made the rule does.'
+      'So two rules with the same words and the same subject can get different names. For one the answer is {a:S1.own}; for the other it is {a:S1.local}. Nothing about the subject, the words of the rule, or the people it affects tells them apart. Only who made the rule does.'
     ],
     how: [
       'Find the words in the case that name who made the rule. A state’s rule comes from its legislature, its governor or one of its own offices. A rule from a city, a town or a county comes from a council, a board or a mayor. Then ask which of the two it is.',

@@ -57,7 +57,7 @@ FC.cases('stats', 'u1', [
     text: "The county library counted every visitor at its 12 branches with door counters of the same type, every month for two years. There were 495,000 visits in the first year and 540,000 in the second. The library says: 'Visits to our libraries rose by 9% in a year.'",
     route: { S1: ['holds'] },
     cues: { S1: 'counted every visitor at its 12 branches with door counters of the same type, every month for two years' },
-    reason: { S1: 'Each part holds. Every visit at every branch is counted, by the same kind of counter, for the whole two years: {cue:S1}. The percentage comes with the two numbers behind it, and the claim says only that visits rose.' },
+    reason: { S1: 'Each part holds. Every visit at every library is counted, by the same kind of counter, for the whole two years: {cue:S1}. The percentage comes with the two numbers behind it, and the claim says only that visits rose.' },
     not: { outcome: 'compare', why: 'A percentage can hide the numbers behind it, but here the two numbers are given, 495,000 and 540,000, so nothing needed to read the figure is left out.' },
     wouldChange: 'If the library had said only that visits were "up 9%" and given no numbers, it would be {a:S1.compare}.' },
 

@@ -19,7 +19,7 @@ FC.cases('math', 'u2', [
       W1: ['make packs that each hold only pens or only pencils, with the same number in every pack and none left over']
     },
     reason: {
-      M1: 'The problem asks {cue:M1}, a question about pieces of one size that two whole numbers can both be split into. Nothing grows, no hidden number has to be found from a calculation, and there is no shape or chance, so the key’s first answer is {a:M1.whole}.',
+      M1: 'The problem asks {cue:M1}, a question about pieces of one size that two whole numbers can both be split into. Nothing grows, no hidden number has to be found from a calculation, and there is no shape or chance, so the answer to the first question is {a:M1.whole}.',
       W1: 'The words {cue:W1} give two numbers and ask for the biggest piece that both can be cut into with nothing left over, which is {a:W1.piece}.'
     },
     not: {
@@ -65,7 +65,7 @@ FC.cases('math', 'u2', [
     route: { M1: ['whole'], W1: ['cycle'] },
     cues: { M1: ['What colour is the 50th bead?'], W1: ['What colour is the 50th bead?'] },
     reason: {
-      M1: 'The problem asks {cue:M1}, a question about the part that is not in a whole group, or the place a count reaches on a loop. The numbers are whole counts, and no amount is followed through time, so the key’s first answer is {a:M1.whole}.',
+      M1: 'The problem asks {cue:M1}, a question about the part that is not in a whole group, or the place a count reaches on a loop. The numbers are whole counts, and no amount is followed through time, so the answer to the first question is {a:M1.whole}.',
       W1: 'The words {cue:W1} give a count and one group size, or one loop, and ask for the part not in a whole group or for the place the count reaches, which is {a:W1.cycle}.'
     },
     not: {
@@ -110,7 +110,7 @@ FC.cases('math', 'u2', [
       W1: ['waters one plant every 9 days and another every 12 days']
     },
     reason: {
-      M1: 'The problem asks {cue:M1}, a question about two repeats and when they coincide. The numbers are whole counts that repeat, and no amount is followed as it grows, so the key’s first answer is {a:M1.whole}.',
+      M1: 'The problem asks {cue:M1}, a question about two repeats and when they coincide. The numbers are whole counts that repeat, and no amount is followed as it grows, so the answer to the first question is {a:M1.whole}.',
       W1: 'The words {cue:W1} give two repeating schedules and ask for the first time they coincide, which is {a:W1.together}.'
     },
     not: {
@@ -159,7 +159,7 @@ FC.cases('math', 'u2', [
       W1: ['sell them in blocks of the same size, with more than one block and more than one ticket in each block']
     },
     reason: {
-      M1: 'The problem asks {cue:M1}, a question about whether one whole number can be shared out in equal groups. Nothing in it changes as time passes, no hidden number has to be found from a calculation, and there is no shape or choice, so the key’s first answer is {a:M1.whole}.',
+      M1: 'The problem asks {cue:M1}, a question about whether one whole number can be shared out in equal groups. Nothing in it changes as time passes, no hidden number has to be found from a calculation, and there is no shape or choice, so the answer to the first question is {a:M1.whole}.',
       W1: 'The words {cue:W1} give one number and ask only whether anything other than 1 and itself shares it out exactly. That is a yes or a no about one number, which is {a:W1.split}.'
     },
     not: {
@@ -209,7 +209,7 @@ FC.cases('math', 'u2', [
     route: { M1: ['whole'], W1: ['exact'] },
     cues: { M1: ['Is 3.14 exactly equal to pi?'], W1: ['Is 3.14 exactly equal to pi?'] },
     reason: {
-      M1: 'The problem asks {cue:M1}, a question about whether one number can be written exactly. It is about the value of a number, with no amount followed through time and no hidden number for a calculation to fit, so the key’s first answer is {a:M1.whole}.',
+      M1: 'The problem asks {cue:M1}, a question about whether one number can be written exactly. It is about the value of a number, with no amount followed through time and no hidden number for a calculation to fit, so the answer to the first question is {a:M1.whole}.',
       W1: 'The words {cue:W1} ask whether one number can be written exactly, which is {a:W1.exact}.'
     },
     not: {
@@ -265,7 +265,7 @@ FC.cases('math', 'u2', [
       W1: ['Can the side be written exactly, as a fraction or a decimal that ends?']
     },
     reason: {
-      M1: 'The problem asks {cue:M1}, a question about whether one number can be written exactly. It is about the value of a number, with no amount followed through time and no hidden number for a calculation to fit, so the key’s first answer is {a:M1.whole}.',
+      M1: 'The problem asks {cue:M1}, a question about whether one number can be written exactly. It is about the value of a number, with no amount followed through time and no hidden number for a calculation to fit, so the answer to the first question is {a:M1.whole}.',
       W1: 'The words {cue:W1} ask whether one number can be written exactly, which is {a:W1.exact}.'
     },
     not: {

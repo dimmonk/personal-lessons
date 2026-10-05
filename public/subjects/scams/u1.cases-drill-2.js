@@ -35,7 +35,7 @@ FC.cases('scams', 'u1', [
     text: "Joy's daughter's school sends a message through its app: 'The museum trip is £14. Please pay through the school payment app by Friday.'",
     route: { D1: ['money'] },
     cues: { D1: 'Please pay through the school payment app by Friday' },
-    reason: { D1: 'The message asks parents to pay: {cue:D1}. A payment through an app is one of the ways the key counts as paying.' },
+    reason: { D1: 'The message asks parents to pay: {cue:D1}. A payment through an app is one of the ways of paying.' },
     not: { outcome: 'nothing', why: 'It begins as news about a trip, but it ends by asking parents to pay, so it is more than a notice.' },
     wouldChange: 'If it had only said that the trip was on Tuesday and that the fee had been taken from the school fund, it would ask for nothing, and it would be {a:D1.nothing}.' },
 
@@ -75,7 +75,7 @@ FC.cases('scams', 'u1', [
     text: "A caller tells Walter that he is from the tax office. 'You owe £1,800 and the police will come today,' he says. 'Pay it now with gift cards from a shop, and do not tell the staff why.'",
     route: { D1: ['money'] },
     cues: { D1: 'Pay it now with gift cards from a shop, and do not tell the staff why' },
-    reason: { D1: 'The caller orders Walter to pay: {cue:D1}. Gift cards are one of the ways the key counts as paying.' },
+    reason: { D1: 'The caller orders Walter to pay: {cue:D1}. Gift cards are one of the ways of paying.' },
     not: { outcome: 'details', why: 'The caller gives a reason and a threat, but he does not ask Walter to tell him anything about himself.' },
     wouldChange: 'If the caller had asked only for Walter’s date of birth and address, "to find his file", it would be {a:D1.details}.' },
 
@@ -100,7 +100,7 @@ FC.cases('scams', 'u1', [
     text: "A buyer for Fern's sofa messages her: 'I paid £450 by mistake. The price was £350. Please send the £100 back to me today.'",
     route: { D1: ['money'] },
     cues: { D1: 'Please send the £100 back to me today' },
-    reason: { D1: 'The buyer asks Fern to send money: {cue:D1}. That a payment has been made is news, and the request that follows it is what the key’s question looks at.' },
+    reason: { D1: 'The buyer asks Fern to send money: {cue:D1}. That a payment has been made is news, and the request that follows it is what the question looks at.' },
     not: { outcome: 'nothing', why: 'It starts with news, that a payment has arrived, but it goes on to ask Fern to send money, so it is more than a notice.' },
     wouldChange: 'If he had only said that he had paid the £350 and would collect the sofa on Saturday, it would ask for nothing, and it would be {a:D1.nothing}.' },
 

@@ -77,8 +77,8 @@ FC.cards('math', 'u3', [
     instruction: 'Both problems are about a rug with an area of 28 m². Compare one thing: does the missing number appear once in the calculation, or twice?',
     prompt: { kind: 'which', option: 'A1.itself', answer: 'm3-la-rug-quad' },
     difference: [
-      'In Case A the rug is 4 m wide and has an area of 28 m², and the question is how long it is. The missing length is used once, in width times length, so the calculation can be undone by dividing 28 by 4. The key’s answer is {a:A1.formula}.',
-      'In Case B the rug is 3 m longer than it is wide and has an area of 28 m², and the question is how wide it is. The missing width is used twice, once as the width and once inside the length, so it is multiplied by itself, and the key’s answer is {a:A1.itself}.',
+      'In Case A the rug is 4 m wide and has an area of 28 m², and the question is how long it is. The missing length is used once, in width times length, so the calculation can be undone by dividing 28 by 4. The answer is {a:A1.formula}.',
+      'In Case B the rug is 3 m longer than it is wide and has an area of 28 m², and the question is how wide it is. The missing width is used twice, once as the width and once inside the length, so it is multiplied by itself, and the answer is {a:A1.itself}.',
       'Both are the same rug with the same area, and both come out at 4 and 7: Case A’s length is 7, and Case B’s width is 4 with a length of 7. What differs is whether the missing number appears once or twice.'
     ] },
 
@@ -87,15 +87,15 @@ FC.cards('math', 'u3', [
     h: 'A profit rule that gives a result of zero',
     link: 'The last card showed the two kinds apart with a rug in each. Real problems are less tidy. Here is a rule for a profit, with a result and one missing number, which is what a calculation to undo looks like.',
     case: 'm3-exc-breakeven',
-    setup: 'The problem gives a {t:formula}, the stall owner’s profit rule, and the result it must come to, a profit of zero, and it leaves out a number that the rule used, the number of crates. That is what you point to for {a:A1.formula}. Yet the key’s answer for this case is {a:A1.itself}.',
+    setup: 'The problem gives a {t:formula}, the stall owner’s profit rule, and the result it must come to, a profit of zero, and it leaves out a number that the rule used, the number of crates. That is what you point to for {a:A1.formula}. Yet the answer for this case is {a:A1.itself}.',
     prompt: { kind: 'phrase', answer: '12 × n − n × n − 20' },
     because: [
       'Look at where the missing number appears in the rule: 12 × n − n × n − 20. It appears twice: once in 12 × n, and once multiplied by itself, n × n. If it appeared once, each thing done to it could be undone in turn. Here you cannot take away the 20, divide by something and be left with n, because one n is hidden inside n × n and the other is not.',
       'The two answers show it too. Two numbers of crates give a profit of zero: 2 crates (12 × 2 − 2 × 2 − 20 = 24 − 4 − 20 = 0) and 10 crates (12 × 10 − 10 × 10 − 20 = 120 − 100 − 20 = 0). Between them, from 3 to 9 crates, the profit is above zero, and past 10 crates it is below zero again. A calculation in which the missing number is used once never gives two answers.',
-      'So the problem shows both: a rule with a result, and a missing number multiplied by itself. When it shows both, the key’s answer is {a:A1.itself}.'
+      'So the problem shows both: a rule with a result, and a missing number multiplied by itself. When it shows both, the answer is {a:A1.itself}.'
     ],
     take: [
-      'This is the key’s decision, written as a tie-break: a missing number multiplied by itself needs its own procedure, so it wins over the rule whose result it is part of. Both answers, 2 and 10 crates, are real break-even points here, and no story rules either out. Recognising the kind is the point of this card; the working that finds 2 and 10 follows the steps of the procedure, with the minus sign in front of the number in front of n.',
-      'If the rule had been 12 × n − 20, with no n × n, the missing number would appear once, and the key’s answer would be {a:A1.formula}.'
+      'This is a decision made for the questions, written as a tie-break: a missing number multiplied by itself needs its own procedure, so it wins over the rule whose result it is part of. Both answers, 2 and 10 crates, are real break-even points here, and no story rules either out. Recognising the kind is the point of this card; the working that finds 2 and 10 follows the steps of the procedure, with the minus sign in front of the number in front of n.',
+      'If the rule had been 12 × n − 20, with no n × n, the missing number would appear once, and the answer would be {a:A1.formula}.'
     ] }
 ]);

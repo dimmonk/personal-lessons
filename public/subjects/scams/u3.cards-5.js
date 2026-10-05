@@ -8,7 +8,7 @@ FC.cards('scams', 'u3', [
   /* ---------- The first question ---------- */
   { id: 'q-A1', kind: 'question', step: 'A1',
     h: 'The first question: {q:A1}',
-    link: 'You have now met all four names, and each of the three scams has shown you the question about what you type or press, with the one answer that fits it. This card puts the question and its three answers in one place, as the key shows them, and says why the key asks it.',
+    link: 'You have now met all four names, and each of the three scams has shown you the question about what you type or press, with the one answer that fits it. This card puts the question and its three answers in one place, and says why it is asked.',
     decides: [
       'The three scams are told apart by what they ask you to type or press. A page that wants a password is {o:phishing}. A person who wants you to pass on a code is {o:codescam}. A {t:permission} that wants you to press Allow for an app is {o:appscam}. {o:realsignin} can come in any of the three forms, so this question does not name it: all three answers keep it.',
       'The habit that guards against each one is different too: for a password, never typing it into a page that a message brought you to; for a code, never reading it out; for an Allow, reading the list on the {t:permission}, and removing apps afterwards. That is why the three scams get three different names.',
@@ -17,8 +17,8 @@ FC.cards('scams', 'u3', [
     how: [
       'Read the request, the last sentence included, and ask what you are being asked to put in or to press. Look for the thing itself: a field for a password, a number that has just come to your phone and a person who wants it, or two buttons marked Allow and Cancel with a list of what an app may do.',
       'If you can put your finger on the words, you have an answer. If you cannot, you do not have one yet.',
-      'You can answer this question at the moment the request is made, because you are looking at it. What you cannot answer at that moment is who is really behind it, and whether the company named is the company that sent it. The key never asks that, because a copy can be made to look exactly right.',
-      'Sometimes a case asks for two things. When a page asks for a password and then for a code, the key takes the password, as the held order showed.'
+      'You can answer this question at the moment the request is made, because you are looking at it. What you cannot answer at that moment is who is really behind it, and whether the company named is the company that sent it. The questions never ask that, because a copy can be made to look exactly right.',
+      'Sometimes a case asks for two things. When a page asks for a password and then for a code, the answer is the one for the password, as the held order showed.'
     ],
     whenBoth: 'Sometimes two answers both seem to fit. Each pair below is set side by side in this unit, and each has one question that separates it.' },
 
@@ -50,7 +50,7 @@ FC.cards('scams', 'u3', [
   /* ---------- two whole cases, watched ---------- */
   { id: 'worked-code', kind: 'worked',
     h: 'A whole case, from the first question to the name',
-    link: 'You have the four names and the key\'s two questions about them. Before you run a case yourself, watch two being run from the top, in the order the key asks. You are not asked anything until the end of each.',
+    link: 'You have the four names and the two questions about them. Before you run a case yourself, watch two being run from the top, in the order the questions are asked. You are not asked anything until the end of each.',
     case: 'ac-wk-code',
     steps: [
       { step: 'D1',
@@ -74,14 +74,14 @@ FC.cards('scams', 'u3', [
         answer: 'b' },
       reason: [
         'For {o:realsignin} you must be able to point to this: {needs:realsignin}. Callum did not start anything: the call came to him, and the code was asked for by the caller. The code itself is real, which is exactly why this scam works.',
-        'It is the question from Hana\'s two cases. {test:codescam~realsignin} Here a caller asks for it, so the key\'s answer is {a:A2.notfit}.'
+        'It is the question from Hana\'s two cases. {test:codescam~realsignin} Here a caller asks for it, so the answer is {a:A2.notfit}.'
       ]
     },
     impression: {
       resembles: 'ac-phoneorder',
       text: [
-        'The key has given its answer. Now take a second look of a different kind: does this case look like one you know? It should bring back the phone-order call: someone rings, says there is a problem on the account, and a real code arrives while they are talking.',
-        'Here the key and the likeness agree, so the answer stands. The key\'s questions come first, because they make you point at words in the case. The likeness is only a second look. When the two disagree, do not pick the one you prefer. Go back to the key\'s questions and find the words in the case that answer them. The second whole case shows how.'
+        'You have your answer. Now take a second look of a different kind: does this case look like one you know? It should bring back the phone-order call: someone rings, says there is a problem on the account, and a real code arrives while they are talking.',
+        'Here the questions and the likeness agree, so the answer stands. The questions come first, because they make you point at words in the case. The likeness is only a second look. When the two disagree, do not pick the one you prefer. Go back to the questions and find the words in the case that answer them. The second whole case shows how.'
       ]
     } },
 
@@ -114,14 +114,14 @@ FC.cards('scams', 'u3', [
         answer: 'c' },
       reason: [
         'For {o:realsignin} you must be able to point to this: {needs:realsignin}. The last part of it, nothing asked beyond what you set out to do, fails here. Fern set out to check a CV, and the {t:permission} asks for her whole mailbox.',
-        'It is the question from Omar\'s two cases. {test:appscam~realsignin} Here the {t:permission} asks for far more than the job, so the key\'s answer is {a:A2.notfit}.'
+        'It is the question from Omar\'s two cases. {test:appscam~realsignin} Here the {t:permission} asks for far more than the job, so the answer is {a:A2.notfit}.'
       ]
     },
     impression: {
       resembles: 'ac-shareddoc', first: 'ac-planner-own',
       text: [
-        'Now the second look: does this case look like one you know? A person who went looking for an app herself, to do a job of her own, may bring back Omar and his meeting planner first, and that case was {o:realsignin}. So here the likeness and the key seem to disagree.',
-        'When that happens, go back to the key\'s questions and find the words in the case that answer them. They are {cue:A2}. Omar\'s {t:permission} asked to see his calendar and nothing else. Fern\'s asks for all her email. So the case this one really looks like is Rafa\'s shared document, where the {t:permission} asked for far more than a document needs, and the key\'s answer stands.'
+        'Now the second look: does this case look like one you know? A person who went looking for an app herself, to do a job of her own, may bring back Omar and his meeting planner first, and that case was {o:realsignin}. So here the likeness and the questions seem to disagree.',
+        'When that happens, go back to the questions and find the words in the case that answer them. They are {cue:A2}. Omar\'s {t:permission} asked to see his calendar and nothing else. Fern\'s asks for all her email. So the case this one really looks like is Rafa\'s shared document, where the {t:permission} asked for far more than a document needs, and the answer stands.'
       ]
     } }
 ]);

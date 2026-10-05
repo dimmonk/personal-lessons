@@ -9,7 +9,7 @@
 
 FC.unit('civics', 'u9', {
   kind: 'F',              // C classification, F facts, P procedure
-  rev: 1,
+  rev: 2,
   standard: 1,
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author)
   tag: 'Nine',
@@ -127,7 +127,8 @@ FC.unit('civics', 'u9', {
   // Build notes: not shown to the learner, and left out of the fingerprint. The validator reads them.
   build: {
     history: [
-      { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1, replacing the first three eras of old Unit Five (colonies and the founding, growth and the slavery question, the Civil War and Reconstruction), their worked example and the matching items of the old drill, with the old claims about states’ rights and birthright citizenship held as the right fact. Fifteen groups of facts under the idea each serves, sixty-two facts, twelve look-alike pairs. Each facts card holds answers of one kind (years, names, countries, numbers, reasons, short clauses) so that a choice cannot be guessed from its shape; the old question "Which era?" is gone, because a facts card cannot hold five rows with one answer. Every fact comes from the old material of standard0.js and nothing is added to it; the unit skips what that material does not state: the terms of the compromise of 1850, any battle or general, the causes of the war beyond what the seceding states wrote, and anything after 1877. Not yet deployed.' }
+      { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1, replacing the first three eras of old Unit Five (colonies and the founding, growth and the slavery question, the Civil War and Reconstruction), their worked example and the matching items of the old drill, with the old claims about states’ rights and birthright citizenship held as the right fact. Fifteen groups of facts under the idea each serves, sixty-two facts, twelve look-alike pairs. Each facts card holds answers of one kind (years, names, countries, numbers, reasons, short clauses) so that a choice cannot be guessed from its shape; the old question "Which era?" is gone, because a facts card cannot hold five rows with one answer. Every fact comes from the old material of standard0.js and nothing is added to it; the unit skips what that material does not state: the terms of the compromise of 1850, any battle or general, the causes of the war beyond what the seceding states wrote, and anything after 1877. Not yet deployed.' },
+      { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' }
     ],
     keyChanges: [],
     wrongIdeas: [],       // old claims 11 (states’ rights) and 16 (birthright citizenship always the rule) are rows, not refute cards: a fact unit has none (A12, P29)

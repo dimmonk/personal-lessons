@@ -12,7 +12,7 @@ FC.cards('civics', 'u5', [
     canDo: 'After this unit you can read a short news item or an everyday story that ends with a judge deciding, or with someone asking a judge to decide, and say which of four things the judge is asked to do. You will be able to point to the words that show it, and to say why it is not one of the other three.',
     everyday: [
       "You have heard stories like these. 'A judge has said the town cannot enforce its new rule.' 'The judge said the law does not cover scooters.' 'A judge turned down the request to lower the bus fare.' 'The judge ruled that the police should have asked permission before they searched the car.' In every one of them a judge is deciding something. It is not the same something each time.",
-      'Unit One taught the key’s first question, and its answer for every story like these: {a:D1.courts}. That answer is only a start. A judge may be asked about a law, about a price, about a person on trial or about a single word, and each of those needs its own name. This unit teaches the next question, which asks what the judge is asked to do. It has four answers, and each leads to one name. The question is the same for a judge in a court of the whole country and for a judge in a court of one state.'
+      'Unit One taught the first question, and its answer for every story like these: {a:D1.courts}. That answer is only a start. A judge may be asked about a law, about a price, about a person on trial or about a single word, and each of those needs its own name. This unit teaches the next question, which asks what the judge is asked to do. It has four answers, and each leads to one name. The question is the same for a judge in a court of the whole country and for a judge in a court of one state.'
     ],
     map: { branch: 'courts' } },         // the preview map is drawn from the key, with plain words beside each label
 
@@ -54,7 +54,7 @@ FC.cards('civics', 'u5', [
       'Two more things change on purpose. Some cases sound as if they are about the Constitution, with words like "rights" and "freedom", and the judge is still not asked about it. And some cases have a person accused of a crime, and the judge is still not asked about how that person was treated. What counts is the request put to the judge.',
       'Whether you agree with what the judge is asked to do, or with what the judge decides, is not part of the question either.'
     ],
-    fixed: ['what the judge is asked to do, which is what the key asks about: {q:J1}'],
+    fixed: ['what the judge is asked to do, which is what the question asks about: {q:J1}'],
     varies: ['the topic', 'the people', 'how serious it sounds', 'whether the Constitution is mentioned', 'whether anyone is accused of a crime'] },
 
   { id: 'portrait-review', kind: 'portrait', outcome: 'review',

@@ -5,7 +5,7 @@
 
 FC.unit('civics', 'u6', {
   kind: 'C',              // C classification, F facts, P procedure
-  rev: 1,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
+  rev: 2,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
   standard: 1,            // lesson-standard version this unit was built to
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author). The app labels a draft as a draft.
   tag: 'Six',
@@ -60,15 +60,15 @@ FC.unit('civics', 'u6', {
       test: 'Does the rule stand beside the federal side, or does it take something away that the federal side protects?' },
     { id: 'protected~beyondcong', pair: ['protected', 'beyondcong'], step: 'D1',
       shared: 'In both a right the Constitution protects stops a rule, and the same right can be involved in both.',
-      rule: 'In {o:beyondcong} the rule is a law of Congress, and the key’s first answer is {a:D1.congress}. In {o:protected} the rule is a state’s, a city’s or a county’s, and the key’s first answer is {a:D1.states}.',
+      rule: 'In {o:beyondcong} the rule is a law of Congress, and the first answer is {a:D1.congress}. In {o:protected} the rule is a state’s, a city’s or a county’s, and the first answer is {a:D1.states}.',
       test: 'Who made the rule: Congress, or a state, a city or a county?' },
     { id: 'protected~trialrights', pair: ['protected', 'trialrights'], step: 'D1',
       shared: 'Both are about a right in the Constitution that protects a person against a government.',
-      rule: 'In {o:trialrights} the story ends with a judge asked whether the steps promised to an accused person were followed, and the key’s first answer is {a:D1.courts}. In {o:protected} it ends with a council or a legislature making a rule that cuts into a right, and the key’s first answer is {a:D1.states}.',
+      rule: 'In {o:trialrights} the story ends with a judge asked whether the steps promised to an accused person were followed, and the first answer is {a:D1.courts}. In {o:protected} it ends with a council or a legislature making a rule that cuts into a right, and the first answer is {a:D1.states}.',
       test: 'Does the story end with a judge being asked about how an accused person was treated, or with a rule made by a state, a city or a county?' },
     { id: 'police~beyondcong', pair: ['police', 'beyondcong'], step: 'D1',
       shared: 'Both are about a matter that the Constitution does not give to Congress, and that is kept by the states.',
-      rule: 'In {o:police} a state made the rule, which a state may do, and the key’s first answer is {a:D1.states}. In {o:beyondcong} Congress made it, which Congress may not do, and the key’s first answer is {a:D1.congress}.',
+      rule: 'In {o:police} a state made the rule, which a state may do, and the first answer is {a:D1.states}. In {o:beyondcong} Congress made it, which Congress may not do, and the first answer is {a:D1.congress}.',
       test: 'Who made the rule: a state, or Congress?' }
   ],
 
@@ -133,7 +133,8 @@ FC.unit('civics', 'u6', {
   build: {
     // What changed at each revision (R1). One entry for every revision from 1 to rev.
     history: [
-      { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the state, city or county branch of Civics, with two questions. It replaces old Unit One cards nine to sixteen, the "three names that look alike" card of old Unit Four, the crib-law worked case and the news item of old Unit Seven, and old specimens 2, 6, 10, 15 and 19. Not yet deployed, so later edits before the first deploy stay revision 1.' }
+      { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the state, city or county branch of Civics, with two questions. It replaces old Unit One cards nine to sixteen, the "three names that look alike" card of old Unit Four, the crib-law worked case and the news item of old Unit Seven, and old specimens 2, 6, 10, 15 and 19. Not yet deployed, so later edits before the first deploy stay revision 1.' },
+      { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' }
     ],
     // What the K2 rewrite changed in the key for this branch, and why (docs/rebuild/civics-plan.md, section a). "was" is the wording of the old course.
     keyChanges: [

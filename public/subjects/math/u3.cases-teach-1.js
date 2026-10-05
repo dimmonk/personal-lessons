@@ -222,7 +222,7 @@ FC.cases('math', 'u3', [
       }
     ],
     reason: {
-      A1: 'The words {cue:A1} give so much for so many, 2 cartridges for every 1,200 pages, and a new amount of pages, 3,000. Nothing is added on top and no calculation has a result to undo, so the key’s answer is {a:A1.rate}.'
+      A1: 'The words {cue:A1} give so much for so many, 2 cartridges for every 1,200 pages, and a new amount of pages, 3,000. Nothing is added on top and no calculation has a result to undo, so the answer is {a:A1.rate}.'
     }
   },
 
@@ -243,7 +243,7 @@ FC.cases('math', 'u3', [
       A1: ['needs 2 litres of dye for every 5 metres of cloth', 'for 30 metres of cloth']
     },
     reason: {
-      A1: 'The words {cue:A1} give so much for so many, 2 litres of dye for every 5 metres of cloth, and a new amount of cloth, 30 metres. Nothing is added on top and no calculation has a result to undo, so the key’s answer is {a:A1.rate}.'
+      A1: 'The words {cue:A1} give so much for so many, 2 litres of dye for every 5 metres of cloth, and a new amount of cloth, 30 metres. Nothing is added on top and no calculation has a result to undo, so the answer is {a:A1.rate}.'
     }
   },
 

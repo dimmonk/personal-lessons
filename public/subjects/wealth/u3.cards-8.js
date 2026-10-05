@@ -7,7 +7,7 @@ FC.cards('wealth', 'u3', [
   /* ---------- The key's question, as a question ---------- */
   { id: 'w3-q-shock', kind: 'question', step: 'S1',
     h: 'The question you have been answering all along',
-    link: 'Since the first case you have seen the key’s question at the foot of each new answer, with one answer under it. This card puts the question and its seven answers in one place, as the key shows them, and says why the key asks it.',
+    link: 'Since the first case you have seen the question at the foot of each new answer, with one answer under it. This card puts the question and its seven answers in one place, and says why it is asked.',
     decides: [
       'There are seven answers because the first answer, {a:D1.shock}, is true of very different cases, and what to do about them is different. Selling suits the person who is free to sell and does not run the company, and it does nothing for the person who cannot sell. More insurance suits a gap between {t:claim} and the cover, and does nothing for a loan. Companies suit properties in one name, and do nothing for a loan against shares. Getting the answer wrong means buying a cure for a problem the case does not have.',
       'The question looks at what the case shows about the one thing, in three parts: what it is (shares, a property, a business, {t:claim}, a loan), what the person can do about it (sell it, run it, insure it), and what stands round it already. The seventh answer is the part that says it is already safe, and it is as much an answer as the others.',
@@ -18,7 +18,7 @@ FC.cards('wealth', 'u3', [
       'Two steps help. First, ask whether the person runs it. If they run a business, the answers are the two about a business: one with a support missing, or the one that says it is safe. If they do not, ask whether they are free to sell. Second, for {t:claim} or a loan, ask whether the case shows a gap ({t:claim} bigger than the cover, a loan the lender could use) or shows the gap already closed.',
       'If you cannot point to the words, you do not have an answer yet.'
     ],
-    whenBoth: 'Two pairs of answers can both seem to fit one case, and the key has a rule for each. A demand bigger than the insurance wins over properties in one name. A business the person runs with a support missing wins over a loan the lender could use, because a loan against a business’s shares is one of {t:threesupports}. Each pair has been put side by side earlier in this unit.' },
+    whenBoth: 'Two pairs of answers can both seem to fit one case, and there is a rule for each. A demand bigger than the insurance wins over properties in one name. A business the person runs with a support missing wins over a loan the lender could use, because a loan against a business’s shares is one of {t:threesupports}. Each pair has been put side by side earlier in this unit.' },
 
   { id: 'w3-check-shock', kind: 'check', after: 'S1',
     case: 'w3-h-q-chk',
@@ -27,7 +27,7 @@ FC.cards('wealth', 'u3', [
   /* ---------- Two whole cases, watched ---------- */
   { id: 'w3-worked-solar', kind: 'worked',
     h: 'A whole case, from the first question to the name',
-    link: 'You have the seven answers and the key’s question about them. Before you run a case yourself, watch two being run from the top, in the order the key asks. You are not asked anything until the end of each.',
+    link: 'You have the seven answers and the question about them. Before you run a case yourself, watch two being run from the top, in the order the questions are asked. You are not asked anything until the end of each.',
     case: 'w3-h-wk-1',
     steps: [
       { step: 'D1',
@@ -55,14 +55,14 @@ FC.cards('wealth', 'u3', [
         answer: 'b' },
       reason: [
         'For {a:S1.blocked} you must be able to point to this: {needs:hedge}. Elena’s case has shares paid as part of wages, but it says that nothing in the rules stops her selling them. A rule is the whole of that answer, and here it is missing.',
-        'It is the question from Ruth. {test:diversify~hedge} Here nothing stops her, so the key’s answer is {a:S1.freeheld}, and the name is {o:diversify}.'
+        'It is the question from Ruth. {test:diversify~hedge} Here nothing stops her, so the answer is {a:S1.freeheld}, and the name is {o:diversify}.'
       ]
     },
     impression: {
       resembles: 'w3-h-div-1',
       text: [
-        'The key has given its answer. Now take a second look of a different kind: does this case look like one you know? It should bring back Meena and the bus shares: one company that is most of what the person has, nothing in the way of selling, and no part in running it.',
-        'Here the key and the likeness agree, so the answer stands. The key’s questions come first, because they make you point at words in the case. The likeness is only a second look. When the two disagree, do not pick the one you prefer. Go back to the key’s question and find the words in the case that answer it. The second whole case shows how.'
+        'You have the answer. Now take a second look of a different kind: does this case look like one you know? It should bring back Meena and the bus shares: one company that is most of what the person has, nothing in the way of selling, and no part in running it.',
+        'Here the answer and the likeness agree, so it stands. The questions come first, because they make you point at words in the case. The likeness is only a second look. When the two disagree, do not pick the one you prefer. Go back to the question and find the words in the case that answer it. The second whole case shows how.'
       ]
     } },
 
@@ -79,7 +79,7 @@ FC.cards('wealth', 'u3', [
       { step: 'S1',
         reason: [
           'Now ask what stands round the business. Greta has {cue:S1}. The funds are £420,000 spread across thousands of companies, the savings are £180,000 against £30,000 a year, which is six years, and no bank holds her shares as security. All of {t:threesupports} are in place.',
-          'Nothing is missing, so nothing needs doing. The key’s answer is {a:S1.madesafe}.'
+          'Nothing is missing, so nothing needs doing. The answer is {a:S1.madesafe}.'
         ] }
     ],
     hold: {
@@ -96,21 +96,21 @@ FC.cards('wealth', 'u3', [
         answer: 'c' },
       reason: [
         'For {a:S1.ownrun} you must be able to point to this: {needs:supports}. Greta runs the brewery and it is most of what she owns, and that is as far as the likeness goes. Not one of {t:threesupports} is missing: she has six years of spending, funds that hold thousands of companies, and no loan on her shares.',
-        'It is the question from Alma. {test:supports~safe} Here nothing has gone from the three, so the key’s answer is {a:S1.madesafe}, and the name is {o:safe}. Selling half the brewery would cost tax and fees and part of her work, and it would not make any of the three stronger.'
+        'It is the question from Alma. {test:supports~safe} Here nothing has gone from the three, so the answer is {a:S1.madesafe}, and the name is {o:safe}. Selling half the brewery would cost tax and fees and part of her work, and it would not make any of the three stronger.'
       ]
     },
     impression: {
       resembles: 'w3-h-saf-1', first: 'w3-h-sup-1',
       text: [
-        'Now the second look: does this case look like one you know? A business owner with most of what she has in the business, and a friend who says it is dangerous, may bring back Femi first, and Femi’s case was {a:S1.ownrun}. So here the likeness and the key seem to disagree.',
-        'When that happens, go back to the key’s question and find the words in the case that answer it. They are {cue:S1}. Femi’s case had nothing like them: his savings covered five months, nothing was spread, and a bank held his shares. Greta’s case has the opposite. The case this one really looks like is Hugo’s, and the key’s answer stands.'
+        'Now the second look: does this case look like one you know? A business owner with most of what she has in the business, and a friend who says it is dangerous, may bring back Femi first, and Femi’s case was {a:S1.ownrun}. So here the likeness and the answer seem to disagree.',
+        'When that happens, go back to the question and find the words in the case that answer it. They are {cue:S1}. Femi’s case had nothing like them: his savings covered five months, nothing was spread, and a bank held his shares. Greta’s case has the opposite. The case this one really looks like is Hugo’s, and the answer stands.'
       ]
     } },
 
   /* ---------- After the drill ---------- */
   { id: 'w3-recap', kind: 'recap',
     h: 'What to carry away',
-    link: 'You have now run the key on your own. This card puts the unit in one place, in the key’s words.',
+    link: 'You have now run the questions on your own. This card puts the unit in one place.',
     carry: [
       'Before you reach for a fix, say what the one thing is and what the person can do about it, and point to the words in the case that show it. If you cannot point, you do not have an answer yet.',
       'The first answer, {a:D1.shock}, says where to look. It does not say that anything needs doing. Of the seven answers to this unit’s question, one says that nothing does.',
@@ -119,7 +119,7 @@ FC.cards('wealth', 'u3', [
       'A demand is about two numbers: what it could be, and what the insurance pays. {o:insure} is for a gap between them. The same insurance well above the claim is {o:safe}.',
       'Several properties in one name are about reach. {o:entity} is for the reach of {t:claim}. Companies cost money, and are worth it only where the saving is larger.',
       'A loan is about what the lender may do: ask for the money back or for more, change the rate, or lend against nearly all of the value. A small loan, at a fixed rate, that cannot be demanded back while it is paid is {o:safe}.',
-      'Two of these can both show in one case, and the key chooses. A demand bigger than the insurance wins over properties in one name. A business the person runs wins over a loan against its shares.',
+      'Two of these can both show in one case, and one of them wins. A demand bigger than the insurance wins over properties in one name. A business the person runs wins over a loan against its shares.',
       'Saying that it is already safe is as much an answer as the rest, and it saves the cost of a fix for a problem the case does not have.'
     ] },
 

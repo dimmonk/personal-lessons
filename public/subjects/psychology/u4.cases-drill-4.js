@@ -96,6 +96,6 @@ FC.cases('psychology', 'u4', [
   { id: 'pa-claim-sociopath', use: 'claim',
     text: '"He told his boss he was ill when he was not. He is a total sociopath."',
     ask: { type: 'missing', name: 'antisocial' },
-    fault: 'The claim points at one lie. One lie, even a bad one, is not rules broken and people used for years, in more than one place, with no regret. It shows nothing about regret at all. And the everyday word in the claim is not a name the key uses for a person. A lasting way of being that keeps costing is what the word {t:pd} stands for, and one lie is not that.',
+    fault: 'The claim points at one lie. One lie, even a bad one, is not rules broken and people used for years, in more than one place, with no regret. It shows nothing about regret at all. And the everyday word in the claim is not a name used here for a person. A lasting way of being that keeps costing is what the word {t:pd} stands for, and one lie is not that.',
     corrected: 'He told his boss he was ill when he was not. That is one lie, and a lie is not a pattern. It would be {o:antisocial} only if the case showed rules broken and people used for years, no regret, and people hurt.' }
 ]);

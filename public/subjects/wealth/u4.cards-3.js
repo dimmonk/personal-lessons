@@ -16,7 +16,7 @@ FC.cards('wealth', 'u4', [
     ],
     not: [
       'This is not the name for money that is simply sitting in cash. Cash that nothing is waiting for is not what this name needs. The case must show living costs, a bill or a plan that a fall could catch, and the money for it already out of reach.',
-      'It is also not a promise that nothing can go wrong. If the cash is smaller than the bills, or the bond repays after the bill is due, the case shows a gap, and the answer is a different one. The name is about the case in front of you, as the key reads it.'
+      'It is also not a promise that nothing can go wrong. If the cash is smaller than the bills, or the bond repays after the bill is due, the case shows a gap, and the answer is a different one. The name is about the case in front of you, and what it shows.'
     ],
     wild: ['"We haven’t sold anything since the crash."', '"The school fees are sitting in the bank."', '"It’s inside the range I set, so I’m leaving it."', '"I’ve got two years of bills in the savings account."', '"The bond pays out in March, and the bill is due in April."'],
     self: 'In your own life it is the sentence that ends a worry: "that money is already in the bank", or "the bond pays out before the bill is due". Say where the money is held and what could happen to its price before the day.',
@@ -38,26 +38,26 @@ FC.cards('wealth', 'u4', [
     instruction: 'Both cases are about Colm and Fay, who have £500,000 and the same living costs, in the same year of falling prices. Compare one thing: where each month’s bills are paid from.',
     prompt: { kind: 'which', option: 'T1.livingcosts', answer: 'tm-la-couple-sell' },
     difference: [
-      'In Case A every month’s bills are paid by selling about £1,700 of the funds. With prices down 20%, each sale takes a bigger slice of the funds than it would have, and nothing is set aside to spend from instead. The key’s answer is {a:T1.livingcosts}, and the case is {o:cashbuffer}.',
-      'In Case B the bills are paid from a savings account of £62,000, a little over three years of £20,400, and none of the funds has been sold. The fall changed what the funds are worth, and changed nothing about what was sold. The key’s answer is {a:T1.ready}, and the case is {o:covered}.',
+      'In Case A every month’s bills are paid by selling about £1,700 of the funds. With prices down 20%, each sale takes a bigger slice of the funds than it would have, and nothing is set aside to spend from instead. The answer is {a:T1.livingcosts}, and the case is {o:cashbuffer}.',
+      'In Case B the bills are paid from a savings account of £62,000, a little over three years of £20,400, and none of the funds has been sold. The fall changed what the funds are worth, and changed nothing about what was sold. The answer is {a:T1.ready}, and the case is {o:covered}.',
       'The couple, the money and the fall are the same in both cases. What separates them is where the bills are paid from. That is why you can never name a case from the fall alone.'
     ] },
 
   /* ---------- The first exception: a fall, a fixed sum and a shrunken pot ---------- */
   { id: 'exc-fixedsum', kind: 'exception', ledger: 'burnrate~cashbuffer', looksLike: 'cashbuffer', is: 'burnrate',
     h: 'A fall, a fixed sum and a shrunken pot',
-    link: 'The first question of the key put a fall and a sum that never changed side by side once before, and gave the answer {a:D1.erosion}. With the first name of this unit in front of you, here is a second such case, so that you can see exactly what separates the two.',
+    link: 'The first question put a fall and a sum that never changed side by side once before, and gave the answer {a:D1.erosion}. With the first name of this unit in front of you, here is a second such case, so that you can see exactly what separates the two.',
     case: 'tm-exc-fixedsum',
-    setup: 'Dolores pays her bills by selling units of her funds every month, with no cash set aside, and prices have fallen. That is what {o:cashbuffer} looks like. Yet the key’s answer for this case is {a:D1.erosion}, and the next question gives {a:E1.fixedsum}.',
+    setup: 'Dolores pays her bills by selling units of her funds every month, with no cash set aside, and prices have fallen. That is what {o:cashbuffer} looks like. Yet the answer for this case is {a:D1.erosion}, and the next question gives {a:E1.fixedsum}.',
     prompt: { kind: 'phrase', answer: 'she has taken exactly that every year since' },
     because: [
       'Look at what the case says about the sum. £36,000 was 4% of £900,000. It has not changed, though the funds are now worth £540,000, and £36,000 is now about 6.7% of them. Every year the same sum comes out, and every year it is a bigger share of a smaller amount.',
       'Compare Alan. His £24,000 was 4% of £600,000 and was a fair share of what he had. His trouble was that each month’s bills had to be raised from falling funds. Dolores’s trouble is the size of the sum, and the fall only explains why the funds shrank.',
       'Suppose Dolores put £108,000 of her funds into cash, which is three years of £36,000. She would pay from the cash and sell nothing for three years. But the cash would be gone at the end of them, and the same £36,000 would still be a bigger share of a smaller amount than she chose. The cash would only move the problem three years later. What has to change is the sum: it has to be set each year as a percentage of what is left, and not as a figure fixed years ago.',
-      'So the case shows two things at once: bills raised from falling funds, and a fixed sum from funds that have shrunk. When a case shows both, the key has to choose one answer, and it chooses the second.'
+      'So the case shows two things at once: bills raised from falling funds, and a fixed sum from funds that have shrunk. When a case shows both, the answer is the second.'
     ],
     take: [
-      'The key’s order is its decision, and in life the two run into each other: a fall makes a fixed sum worse, and a fixed sum makes a fall worse. The key gives each case one answer, so that two people using it reach the same one and can each say why.',
+      'Which answer wins is a decision, and in life the two run into each other: a fall makes a fixed sum worse, and a fixed sum makes a fall worse. Each case gets one answer, so that two people using the same questions reach the same one and can each say why.',
       'The test above settles it: is the sum a fair share of what is left, or has it stayed the same while what is left shrank? Here it has stayed the same. If the sum had always been a fair share of the funds, with nothing else wrong, the answer would be {a:T1.livingcosts}.'
     ] },
 

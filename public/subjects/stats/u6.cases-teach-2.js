@@ -15,8 +15,8 @@ FC.cases('stats', 'u6', [
     outcome: 'confound', route: { S1: ['cause'], K1: ['behind'] },
     cues: { S1: 'so the app raises grades', K1: '150 of the 200 app users have a parent who checks their homework every night' },
     segments: [
-      { text: "A tutoring company says: 'Students who use our homework app get higher grades, so the app raises grades.'", note: 'That is the claim of cause. What settles the key’s answer is something else about the two groups.' },
-      { text: 'Of 600 students at one school, the 200 who chose to use the app average 86, and the 400 who did not average 78.', note: 'Those are the two groups and their grades. The difference between them is real. The key asks what else differs between the groups.' },
+      { text: "A tutoring company says: 'Students who use our homework app get higher grades, so the app raises grades.'", note: 'That is the claim of cause. What settles the answer is something else about the two groups.' },
+      { text: 'Of 600 students at one school, the 200 who chose to use the app average 86, and the 400 who did not average 78.', note: 'Those are the two groups and their grades. The difference between them is real. The question is what else differs between the groups.' },
       { text: 'The school’s survey shows that 150 of the 200 app users have a parent who checks their homework every night, against 80 of the 400 others.' }
     ] },
 
@@ -47,7 +47,7 @@ FC.cases('stats', 'u6', [
     outcome: 'reverse', route: { S1: ['cause'], K1: ['backward'] },
     cues: { S1: 'Praise raises sales', K1: 'most of their praise was given in the week after the team beat its sales target' },
     segments: [
-      { text: "A company report says: 'Teams whose managers praise them often sell more. Praise raises sales.'", note: 'That is the claim of cause. The key’s question for this part is about what else could explain the figures, and the words that answer it are not in the claim.' },
+      { text: "A company report says: 'Teams whose managers praise them often sell more. Praise raises sales.'", note: 'That is the claim of cause. The question for this part is about what else could explain the figures, and the words that answer it are not in the claim.' },
       { text: 'The report covers one year for 30 teams. The 15 teams with the most praise averaged 112% of their sales target, and the other 15 averaged 94%.', note: 'Those are the figures. The teams with more praise do sell more. The figures do not say which came first.' },
       { text: 'The managers’ own notes show that most of their praise was given in the week after the team beat its sales target.' }
     ] },

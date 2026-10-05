@@ -70,8 +70,8 @@ FC.cards('scams', 'u3', [
     instruction: 'Both cases are about Dev, his email provider and a mailbox that is almost full, and in both a page asks for his email address and password. Compare one thing: how Dev came to the sign-in.',
     prompt: { kind: 'which', option: 'A2.fits', answer: 'ac-mail-own' },
     difference: [
-      'In Case A Dev opens the mail app himself, an app he has used for years, and it shows him a banner about his mailbox. The sign-in comes from what he did next: it came from an app he already had. The key\'s answer is {a:A2.fits}, and the case is {o:realsignin}.',
-      'In Case B a text arrives from a number he does not know, with a link to a page that has his provider\'s logo. He did not start it: it started with the message. The key\'s answer is the other one for the same question, and the case is {o:phishing}.',
+      'In Case A Dev opens the mail app himself, an app he has used for years, and it shows him a banner about his mailbox. The sign-in comes from what he did next: it came from an app he already had. The answer is {a:A2.fits}, and the case is {o:realsignin}.',
+      'In Case B a text arrives from a number he does not know, with a link to a page that has his provider\'s logo. He did not start it: it started with the message. The answer is the other one for the same question, and the case is {o:phishing}.',
       'The same words, a full mailbox and a page that wants the password, can be either. What differs is where each one began.'
     ] },
 
@@ -85,7 +85,7 @@ FC.cards('scams', 'u3', [
       'Ask what led to the email. Kofi did: a minute earlier, on the shop\'s own website, he tapped "Forgot password". The email is the shop\'s answer to that. If he had not asked, the same email would be a copy, because nothing would explain why it arrived.',
       'This is why a link in a message cannot be what you look at. The question is whether the message answers something you did. A link that arrives after you asked for it is real, and a link that arrives on its own is not.'
     ],
-    take: 'The key decides this by one thing: whether you started it. A link in a message is not an answer to the question either way. If you are ever unsure whether you started something, treat it as not started, and begin again from your own app.' },
+    take: 'One thing decides this: whether you started it. A link in a message is not an answer to the question either way. If you are ever unsure whether you started something, treat it as not started, and begin again from your own app.' },
 
   /* ---------- A wrong idea about how to tell a copy ---------- */
   { id: 'refute-padlock', kind: 'refute', about: 'phishing',

@@ -56,8 +56,8 @@ FC.cards('psychology', 'u3', [
     instruction: 'Both cases are about Ravi, his wife Lena and a dent in the car. Compare one thing: is this one exchange, in which Lena is asked about it and answers with a denial, an attack and playing the one wronged? Or is it the same denial coming back over months, until Ravi starts to doubt his memory?',
     prompt: { kind: 'which', option: 'T1.reverse', answer: 'dent-once' },
     difference: [
-      'In Case A the denial is not given once. In the weeks after March, and for months, Lena says the dent was there already, that it was never her, and that Ravi invents things. By July Ravi has stopped raising it and has asked a neighbour whether he is going mad. The key’s answer is {a:T1.denymemory}, and the case is {o:gaslight}.',
-      'In Case B it is one dinner. Ravi raises it, and in answer Lena denies it, goes for his lateness with the children, and says she is the one being accused after being up since five. That is all three parts in one exchange, and nothing is repeated for months. The key’s answer is {a:T1.reverse}, and the case is {o:darvo}.',
+      'In Case A the denial is not given once. In the weeks after March, and for months, Lena says the dent was there already, that it was never her, and that Ravi invents things. By July Ravi has stopped raising it and has asked a neighbour whether he is going mad. The answer is {a:T1.denymemory}, and the case is {o:gaslight}.',
+      'In Case B it is one dinner. Ravi raises it, and in answer Lena denies it, goes for his lateness with the children, and says she is the one being accused after being up since five. That is all three parts in one exchange, and nothing is repeated for months. The answer is {a:T1.reverse}, and the case is {o:darvo}.',
       'The two cases share the same dent, the same two people and a denial. What differs is whether it is one exchange with three parts, or one denial that keeps coming back until the other person doubts themselves.'
     ] },
 
@@ -72,5 +72,5 @@ FC.cards('psychology', 'u3', [
       'Ask how often. Kit does not do this once. He does it every month, about something the signed sheet shows really happened, and Hana has started to doubt her own memory: she photographs every document, and she has asked her accountant, "Am I making this up?" That is what you point to for {o:gaslight}.',
       'When the denial of what happened comes back over weeks or months until the other person doubts their memory, the three parts of {o:darvo} are just how it is said each time. They do not make a second thing.'
     ],
-    take: 'The key decides it this way on purpose, and it is worth knowing that this is the key’s decision. In life the two overlap, and people who study them do not all draw the line in the same place. The key gives each case one name, and where a case shows both it takes the one that lasts longer, so that two people using it reach the same answer and can each say why.' }
+    take: 'The answer is chosen this way on purpose, and it is worth knowing that the choice is made in advance, for every case alike. In life the two overlap, and people who study them do not all draw the line in the same place. Each case gets one name, and where a case shows both it takes the one that lasts longer, so that two people using these questions reach the same answer and can each say why.' }
 ]);

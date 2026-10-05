@@ -8,7 +8,7 @@
 
 FC.unit('wealth', 'u5', {
   kind: 'C',              // C classification, F facts, P procedure
-  rev: 1,
+  rev: 2,
   standard: 1,
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author)
   tag: 'Five',
@@ -43,15 +43,15 @@ FC.unit('wealth', 'u5', {
       test: 'Is the case about a tax bill that a rise in value would make larger? Or is it about what a person will do with the money, or about people who cannot agree?' },
     { id: 'basicdocs~governance', pair: ['basicdocs', 'governance'], step: 'H1',
       shared: 'Both are about family, and in both the person who is about to receive the money may be the one at risk.',
-      rule: 'In {o:basicdocs} a paper is missing or out of date. In {o:governance} the papers are not what is in question: it is a person who will receive the money or a control that will pass to people who cannot agree. Where a case shows both, the key’s answer is {a:H1.papers}.',
+      rule: 'In {o:basicdocs} a paper is missing or out of date. In {o:governance} the papers are not what is in question: it is a person who will receive the money or a control that will pass to people who cannot agree. Where a case shows both, the answer is {a:H1.papers}.',
       test: 'Set aside what the people are like and look at the three papers: is one of them missing or no longer true? If it is, that comes first. If every paper is current, then look at the people.' },
     { id: 'basicdocs~gifting', pair: ['basicdocs', 'gifting'], step: 'H1',
       shared: 'Both can be a case of a large estate, and both are put right before anything bigger is tried.',
-      rule: 'In {o:gifting} what the owner will leave is above the tax-free limit, they have more than they will need, and the papers are not in question. In {o:basicdocs} a paper is missing or out of date, however large the estate is. Where a case shows both, the key’s answer is {a:H1.papers}.',
+      rule: 'In {o:gifting} what the owner will leave is above the tax-free limit, they have more than they will need, and the papers are not in question. In {o:basicdocs} a paper is missing or out of date, however large the estate is. Where a case shows both, the answer is {a:H1.papers}.',
       test: 'Before you add up what the owner will leave: is one of the three papers missing or no longer true? If it is, that is the answer, however large the sum. If not, add it up.' },
     { id: 'basicdocs~trust', pair: ['basicdocs', 'trust'], step: 'H1',
       shared: 'Both involve something that could change who ends up with a great deal of money, and both can be about someone’s business or land.',
-      rule: 'In {o:trust} something the owner holds is expected to rise sharply and the tax on the rise is the problem. In {o:basicdocs} a paper is missing or out of date. Where a case shows both, the key’s answer is {a:H1.papers}.',
+      rule: 'In {o:trust} something the owner holds is expected to rise sharply and the tax on the rise is the problem. In {o:basicdocs} a paper is missing or out of date. Where a case shows both, the answer is {a:H1.papers}.',
       test: 'Before you look at what is expected to rise: is one of the three papers missing or no longer true? If it is, that comes first, however large the rise.' }
   ],
 
@@ -64,7 +64,7 @@ FC.unit('wealth', 'u5', {
     { id: 'p2', title: 'Tax on what is left',
       cards: ['term-estate', 'meet-gifting', 'again-gifting', 'portrait-gifting', 'check-gifting', 'look-gifting-simple',
               'term-trustword', 'meet-trust', 'again-trust', 'portrait-trust', 'check-trust', 'exc-vineyard'] },
-    { id: 'p3', title: 'The people, and the key’s question',
+    { id: 'p3', title: 'The people, and the question',
       cards: ['meet-governance', 'again-governance', 'portrait-governance', 'check-governance', 'look-trust-governance',
               'exc-papers-people', 'exc-papers-tax', 'exc-papers-rise', 'q-handover', 'check-handover-question'] },
     { id: 'p4', title: 'Two whole cases, then the drill',
@@ -114,7 +114,8 @@ FC.unit('wealth', 'u5', {
   // Build notes: not shown to the learner, and left out of the fingerprint. The validator reads them.
   build: {
     history: [
-      { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the handover branch of Wealth Preservation. Not yet deployed, so later edits before the first deploy stay revision 1.' }
+      { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the handover branch of Wealth Preservation. Not yet deployed, so later edits before the first deploy stay revision 1.' },
+      { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' }
     ],
     // What the K2 rewrite changed in this branch, and why (docs/rebuild/wealth-plan.md, section (a), Unit Five).
     keyChanges: [

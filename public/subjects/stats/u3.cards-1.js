@@ -56,7 +56,7 @@ FC.cards('stats', 'u3', [
       'From here on, the cases change their stories on purpose. Sometimes two cases share the same story and the same figure, and differ only underneath. When that happens, the shared story is there to show you that it decides nothing.',
       'Two more things change on purpose: how large the figure sounds, and how big the count behind it is. A big count can be a poor picture and a small one can be a fair one. And a claim you agree with goes through the same question as one you do not.'
     ],
-    fixed: ['how the people or things got into the figure, which is what the key asks about: {q:A1}'],
+    fixed: ['how the people or things got into the figure, which is what this question asks about: {q:A1}'],
     varies: ['the topic', 'the people', 'how big the figure sounds', 'how many are in it', 'whether you would like the claim to be true', 'whether anything is wrong at all'] },
 
   { id: 'portrait-survivor', kind: 'portrait', outcome: 'survivor',
@@ -95,8 +95,8 @@ FC.cards('stats', 'u3', [
     instruction: 'Both cases are about the same seed company, the same trial garden and the same 420 kilograms of tomatoes. Compare one thing: how many of the seeds planted are in the figure, and what is said about the ones that died.',
     prompt: { kind: 'which', option: 'S1.holds', answer: 'cn-seeds-all' },
     difference: [
-      'In Case A the 14 kilograms is the average of the 30 plants that were alive in September. The 20 that died early are not in it. 30 plants at 14 kilograms each is 420 kilograms. Spread over all 50 seeds, 420 kilograms is 8.4 kilograms each, not 14. The figure is right for the plants that lived, and the claim speaks for plants in general. The key’s answer to the first question is {a:S1.counted}, and the question after it, {q:A1}, gets the answer {a:A1.lasted}.',
-      'In Case B the company counts every seed it planted, the 30 that lived and the 20 that died, and reports the same 420 kilograms as 8.4 kilograms for every seed planted. Nothing is left out, and the claim stays with the 50 seeds of the trial. The key’s answer to the first question is {a:S1.holds}, and the question after it, {q:H1}, gets the answer {a:H1.group}.',
+      'In Case A the 14 kilograms is the average of the 30 plants that were alive in September. The 20 that died early are not in it. 30 plants at 14 kilograms each is 420 kilograms. Spread over all 50 seeds, 420 kilograms is 8.4 kilograms each, not 14. The figure is right for the plants that lived, and the claim speaks for plants in general. The answer to the first question is {a:S1.counted}, and the question after it, {q:A1}, gets the answer {a:A1.lasted}.',
+      'In Case B the company counts every seed it planted, the 30 that lived and the 20 that died, and reports the same 420 kilograms as 8.4 kilograms for every seed planted. Nothing is left out, and the claim stays with the 50 seeds of the trial. The answer to the first question is {a:S1.holds}, and the question after it, {q:H1}, gets the answer {a:H1.group}.',
       'The harvest is the same in both. What separates the two cases is who is in the average. 14 and 8.4 describe the same garden, and only one of them is about all the seeds that were planted.'
     ] }
 ]);

@@ -60,5 +60,5 @@ FC.cases('math', 'u2', [
     text: 'A music box plays the same tune of 8 notes again and again without a pause. Which note of the tune is the 100th note it plays?',
     route: { M1: ['whole'], W1: ['cycle'] },
     cues: { M1: ['Which note of the tune is the 100th note it plays?'], W1: ['plays the same tune of 8 notes again and again', 'Which note of the tune is the 100th note it plays?'] },
-    reason: { W1: 'The words {cue:W1} give one loop, a tune of 8 notes that goes round and round, and a count, 100, and ask where the count ends. That is the key’s answer {a:W1.cycle}, and no second thing repeats.' } }
+    reason: { W1: 'The words {cue:W1} give one loop, a tune of 8 notes that goes round and round, and a count, 100, and ask where the count ends. That is the answer {a:W1.cycle}, and no second thing repeats.' } }
 ]);

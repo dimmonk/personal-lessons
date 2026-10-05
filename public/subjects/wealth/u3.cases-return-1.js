@@ -42,7 +42,7 @@ FC.cases('wealth', 'u3', [
     outcome: 'diversify', route: { D1: ['shock'], S1: ['freeheld'] },
     cues: { D1: '£480,000 of his £560,000 is shares in the engineering company where he worked as an engineer',
             S1: ['where he worked as an engineer', 'he can sell them at any time'] },
-    reason: { D1: 'One company’s shares are most of what he has: {cue:D1}. £480,000 out of £560,000 is 86%. Selling shares each month in a fall looks like a case about a fall in prices, and the case does show both. When a case shows both, the key chooses {a:D1.shock}.',
+    reason: { D1: 'One company’s shares are most of what he has: {cue:D1}. £480,000 out of £560,000 is 86%. Selling shares each month in a fall looks like a case about a fall in prices, and the case does show both. When a case shows both, the answer is {a:D1.shock}.',
               S1: 'He worked there as an employee and can sell at any time: {cue:S1}. He did not run it, and nothing stops a sale.' },
     not: { outcome: 'supports', why: 'He worked at the company, which can bring to mind a business he runs. He was an engineer there, not its owner or its head.' },
     wouldChange: 'If the shares were locked for two years, it would be {a:S1.blocked}.' },

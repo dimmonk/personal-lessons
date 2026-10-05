@@ -21,8 +21,8 @@ FC.cases('math', 'u5', [
       ]
     },
     reason: {
-      M1: 'The words {cue:M1} ask how likely it is that a result is right, a chance and not a count. Nothing in it follows an amount as time passes, hides a number that a calculation must fit, or splits whole numbers into groups, and there is no shape to measure. What it asks for is a count of the results, or the chance of something, so the key’s first answer is {a:M1.chance}.',
-      C1: 'The words {cue:C1} give a scanner that has alarmed, how rare banned items are, and how often the scanner is right and wrong, and ask how likely it is that the alarm is right, so the key’s answer is {a:C1.test}.'
+      M1: 'The words {cue:M1} ask how likely it is that a result is right, a chance and not a count. Nothing in it follows an amount as time passes, hides a number that a calculation must fit, or splits whole numbers into groups, and there is no shape to measure. What it asks for is a count of the results, or the chance of something, so the answer to the first question is {a:M1.chance}.',
+      C1: 'The words {cue:C1} give a scanner that has alarmed, how rare banned items are, and how often the scanner is right and wrong, and ask how likely it is that the alarm is right, so the answer is {a:C1.test}.'
     },
     not: {
       outcome: 'complement',

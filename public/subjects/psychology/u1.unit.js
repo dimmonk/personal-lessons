@@ -8,12 +8,12 @@
 
 FC.unit('psychology', 'u1', {
   kind: 'C',              // C classification, F facts, P procedure
-  rev: 1,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
+  rev: 2,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
   standard: 1,            // lesson-standard version this unit was built to
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author). The app labels a draft as a draft.
   tag: 'One',
   title: { text: 'Four kinds of thing' },   // a gate unit is titled in plain words; the answers are taught inside it
-  subtitle: 'The key’s first question, and the four kinds of thing it sorts every case into',
+  subtitle: 'The first question, and the four kinds of thing it sorts every case into',
   teaches: { steps: ['D1'], outcomes: [], terms: [], families: ['reasoning', 'tactic', 'pattern', 'none'] },
   assumes: [],            // the first unit of the subject
 
@@ -62,7 +62,7 @@ FC.unit('psychology', 'u1', {
     { id: 'p4', title: 'The fourth kind: a moment, and nothing to name',
       cards: ['meet-none', 'again-none', 'portrait-none', 'check-none', 'refute-clinical',
               'look-pattern-none', 'exc-evening', 'refute-once'] },
-    { id: 'p5', title: 'The pairs still to compare, and the key’s first question',
+    { id: 'p5', title: 'The pairs still to compare, and the first question',
       cards: ['look-tactic-none', 'look-reasoning-none', 'look-reasoning-pattern', 'q-kind', 'check-kind'] },
     { id: 'p6', title: 'Two whole cases, then the drill',
       cards: ['worked-dent', 'worked-rehearsal'], drill: true, close: ['recap-kind', 'transfer-kind'] }
@@ -104,7 +104,8 @@ FC.unit('psychology', 'u1', {
   build: {
     // What changed at each revision (R1). One entry for every revision from 1 to rev.
     history: [
-      { rev: 1, date: '2026-10-04', change: 'First version under lesson standard 1: the gate unit. Not yet deployed, so later edits before the first deploy stay revision 1. Reviewed on 2026-10-05 as a beginner would read it and against the finished key: plainer wording, the diagnosis line added, no everyday label that is also a branch name, and the first worked case now follows the order the question card teaches.' }
+      { rev: 1, date: '2026-10-04', change: 'First version under lesson standard 1: the gate unit. Not yet deployed, so later edits before the first deploy stay revision 1. Reviewed on 2026-10-05 as a beginner would read it and against the finished key: plainer wording, the diagnosis line added, no everyday label that is also a branch name, and the first worked case now follows the order the question card teaches.' },
+      { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' }
     ],
     // What the K2 rewrite changed in the gate, and why. "was" is the wording Unit Two's exemplar carried
     // (itself a partial rewrite of the old app's wording, which is quoted where it matters).

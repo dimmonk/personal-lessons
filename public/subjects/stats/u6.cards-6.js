@@ -5,16 +5,16 @@ FC.cards('stats', 'u6', [
 
   { id: 'recap', kind: 'recap',
     h: 'What to carry away',
-    link: 'You have now run the key’s last question on your own. This card puts the unit in one place, in the key’s words.',
+    link: 'You have now run the last question on your own. This card puts the unit in one place, in the words used all the way through.',
     carry: [
-      'When a claim gives one thing as the reason for another, put the key’s question to it and point to the words that show your answer. If you cannot point, you do not have an answer yet.',
+      'When a claim gives one thing as the reason for another, put the question to it and point to the words that show your answer. If you cannot point, you do not have an answer yet.',
       'A result for the people who got a thing, or for one place before and after, is not yet a result for the thing. It needs a group that went without, counted in the same way, to show what happens anyway.',
       'A group chosen for how badly, or how well, it had done tends to move back toward its usual level with nothing done. In a class where nobody was tutored, the three lowest scorers still went from an average of 46 to 55.',
       'Two groups that put themselves where they are differ in more than the thing. Compare people who are alike in the other thing and the difference can shrink a long way: 38 pounds became 2.',
       'Two things going together can come in either order. Ask which came first, and how anyone knows.',
-      'When a case shows two answers, a group picked at its worst and nothing to set beside it, the key gives {a:K1.extreme}, the more exact one.',
+      'When a case shows two answers, a group picked at its worst and nothing to set beside it, the answer is {a:K1.extreme}, the more exact one.',
       'Finding another explanation does not make a claim false, and it does not mean the figures prove nothing. It says what else could explain them, and what would settle it.',
-      'The test that closes all four is groups formed by a draw, one given the thing, both counted in the same way. When you see that, the key’s first question gets the answer {a:S1.holds}.'
+      'The test that closes all four is groups formed by a draw, one given the thing, both counted in the same way. When you see that, the first question gets the answer {a:S1.holds}.'
     ] },
 
   { id: 'transfer', kind: 'transfer',

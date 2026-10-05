@@ -15,7 +15,7 @@ FC.cards('civics', 'u4', [
       'A bill that both the House and the Senate have passed goes to the President. If the President signs it, it becomes a law. But the President does not have to sign. The President may refuse, and send the bill back to Congress with a letter of objections. That is the whole of this name.',
       'Refusing does not end the bill for ever. Congress can pass it anyway, if two-thirds of the House and two-thirds of the Senate vote for it again. That is a high bar. The vote to pass it again would be a new decision by lawmakers, and a different case.',
       'The President can also do nothing. If the President neither signs the bill nor sends it back within ten days, Sundays not counted, while Congress is in session, the bill becomes a law without a signature. So doing nothing and refusing are different acts, with different results.',
-      'Notice the signature again. A signature on a bill that Congress passed changes nothing about what the law says, which is why a signed law stays with the lawmakers in the key’s first question. A refusal is different. It is a decision of the President’s own, and it stops the bill from becoming a law unless Congress votes again.'
+      'Notice the signature again. A signature on a bill that Congress passed changes nothing about what the law says, which is why a signed law stays with the lawmakers in the first question. A refusal is different. It is a decision of the President’s own, and it stops the bill from becoming a law unless Congress votes again.'
     ],
     feature: { step: 'E1', option: 'sendback' },
     name: 'The name for this is {o:veto}: the President’s refusal to sign a bill, and the return of the bill to Congress.' },

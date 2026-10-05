@@ -64,8 +64,8 @@ FC.cards('math', 'u5', [
     instruction: 'Both problems are about the same club of 6 members and the same three jobs. Compare one thing: can the same member hold more than one job?',
     prompt: { kind: 'which', option: 'C1.order', answer: 'm5-la-roles-pe' },
     difference: [
-      'In Case A the same member may hold more than one job. So the list for each job is all 6 members, whatever was decided for the other jobs. There are three separate choices, each from a full list of its own: the key’s answer is {a:C1.lists}, and the count is 6 × 6 × 6 = 216.',
-      'In Case B no member may hold more than one job. A member given the first job is out for the other two, so the second job is picked from 5 members and the third from 4. That is one group, with each pick using someone up: the key’s answer is {a:C1.order}, and the count is 6 × 5 × 4 = 120.',
+      'In Case A the same member may hold more than one job. So the list for each job is all 6 members, whatever was decided for the other jobs. There are three separate choices, each from a full list of its own: the answer is {a:C1.lists}, and the count is 6 × 6 × 6 = 216.',
+      'In Case B no member may hold more than one job. A member given the first job is out for the other two, so the second job is picked from 5 members and the third from 4. That is one group, with each pick using someone up: the answer is {a:C1.order}, and the count is 6 × 5 × 4 = 120.',
       'Both multiply one count for each job, and both count the order of the jobs. What differs is whether a pick uses someone up. If the lists stay full, the counts stay the same. If each pick takes someone out, the counts fall by one each time. The numbers show it too: 216 is more than 120, because with repeats allowed there are more ways to fill the jobs.'
     ] }
 ]);

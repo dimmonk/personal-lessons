@@ -9,7 +9,7 @@ FC.cases('scams', 'u1', [
     text: "The treasurer of Ines's choir emails the members: 'Subscriptions for the spring term are £30. Please pay by bank transfer to the choir account by 15 January.'",
     route: { D1: ['money'] },
     cues: { D1: 'Please pay by bank transfer to the choir account by 15 January' },
-    reason: { D1: 'The email asks each member to pay: {cue:D1}. A bank transfer is one of the ways the key counts as paying.' },
+    reason: { D1: 'The email asks each member to pay: {cue:D1}. A bank transfer is one of the ways of paying.' },
     not: { outcome: 'nothing', why: 'The size of the subscription is news, but the email goes on to ask each member to pay by a date, so it is more than a notice.' },
     wouldChange: 'If the email had only said that the spring subscriptions had been collected, it would ask for nothing, and it would be {a:D1.nothing}.' },
 
@@ -25,7 +25,7 @@ FC.cases('scams', 'u1', [
     text: "The vet's receptionist tells Gary on the phone: 'The operation came to £420. Please pay by card at the desk when you collect her.'",
     route: { D1: ['money'] },
     cues: { D1: 'Please pay by card at the desk when you collect her' },
-    reason: { D1: 'The receptionist tells Gary how to pay the £420: {cue:D1}. A card payment is one of the ways the key counts as paying.' },
+    reason: { D1: 'The receptionist tells Gary how to pay the £420: {cue:D1}. A card payment is one of the ways of paying.' },
     not: { outcome: 'nothing', why: 'Most of the call is a report of what happened, but it ends by telling him to pay, so it is more than news.' },
     wouldChange: 'If she had only said that the operation went well and that the dog could be collected at five, it would ask for nothing, and it would be {a:D1.nothing}.' },
 
@@ -34,7 +34,7 @@ FC.cases('scams', 'u1', [
     route: { D1: ['money'] },
     cues: { D1: 'Please send it to this account today' },
     reason: { D1: 'The woman asks Zane to send money to an account: {cue:D1}. The hospital bill is the reason she gives.' },
-    not: { outcome: 'details', why: 'For months she has asked about his life, which is the kind that asks for facts about you. Today she asks for money, and the key answers for what is asked right now.' },
+    not: { outcome: 'details', why: 'For months she has asked about his life, which is the kind that asks for facts about you. Today she asks for money, and the answer is for what is asked right now.' },
     wouldChange: 'If she had only asked what he did at the weekends, it would be {a:D1.details}.' },
 
   /* ---------- facts about you ---------- */
@@ -58,7 +58,7 @@ FC.cases('scams', 'u1', [
     text: "A man who messaged Priya after seeing her photo keeps asking: 'What does your family do? Do you live alone? What time do you usually get home?'",
     route: { D1: ['details'] },
     cues: { D1: 'What does your family do? Do you live alone? What time do you usually get home?' },
-    reason: { D1: 'The man asks Priya to tell him about her family, her home and her day: {cue:D1}. They are questions about her life, and they are what the key counts as a request for facts about you.' },
+    reason: { D1: 'The man asks Priya to tell him about her family, her home and her day: {cue:D1}. They are questions about her life, and they count as a request for facts about you.' },
     not: { outcome: 'nothing', why: 'The messages are friendly and ask for no money and no password, so they can look like news. But they are questions about her.' },
     wouldChange: 'If he had only said that he liked her photo and hoped that she was well, he would ask nothing, and it would be {a:D1.nothing}.' },
 

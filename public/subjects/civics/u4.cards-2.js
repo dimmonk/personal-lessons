@@ -69,8 +69,8 @@ FC.cards('civics', 'u4', [
     instruction: 'Both cases are about the same federal food office and the salt in packaged snacks. Compare one thing: is there a law Congress passed behind what the office does, and does the office stay inside it?',
     prompt: { kind: 'which', option: 'E1.newduty', answer: 'e-salt-limit' },
     difference: [
-      'In Case A a law exists: Congress passed one that says every snack must show how much salt it holds. The office decides the details of the label: how large the line must be, and from what date. It adds no new demand, and only fills in how the law is followed. The key’s answer is {a:E1.carryout}, and the case is {o:execute}.',
-      'In Case B no law exists: the case says Congress has passed none on how much salt a snack may hold. The office sets a limit and a fine, which are demands on every firm that sells snacks, with nothing behind them. The key’s answer is {a:E1.newduty}, and the case is {o:beyondpres}.',
+      'In Case A a law exists: Congress passed one that says every snack must show how much salt it holds. The office decides the details of the label: how large the line must be, and from what date. It adds no new demand, and only fills in how the law is followed. The answer is {a:E1.carryout}, and the case is {o:execute}.',
+      'In Case B no law exists: the case says Congress has passed none on how much salt a snack may hold. The office sets a limit and a fine, which are demands on every firm that sells snacks, with nothing behind them. The answer is {a:E1.newduty}, and the case is {o:beyondpres}.',
       'The office is the same, the product is the same, and both rules are about salt. Only the law differs, which is why the story can never be what decides.'
     ] },
 

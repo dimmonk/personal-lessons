@@ -16,7 +16,7 @@ FC.cards('scams', 'u3', [
     everyday: [
       'You already do this many times a week. You sign in to your email. A code arrives when you pay for something online. An app asks whether it may see your photos. Each of these is a request for a way into something of yours, and each is normal.',
       'A scam does not need to break into anything. It needs you to hand over the way in yourself, and it makes the request look just like the ones you already do. The page can be a copy, the code can be a real one, and the {t:permission} can come from your own email provider. So the request to sign in tells you nothing by itself about whether you are safe. What tells you is two things: what you are being asked to type or press, and whether you started it.',
-      'This unit teaches those two questions. You can answer both at the moment the request appears, from the page, the call or the {t:permission} in front of you and from your own memory of what you were doing. You do not need to know who is behind it. You cannot know that at that moment, and that is why the key never asks.'
+      'This unit teaches those two questions. You can answer both at the moment the request appears, from the page, the call or the {t:permission} in front of you and from your own memory of what you were doing. You do not need to know who is behind it. You cannot know that at that moment, and that is why the questions never ask.'
     ],
     add: [
       'Three ideas from Unit One are used all the way through, and are restated here in a line each so that you do not have to look back. {t:already} means {means:already}. {t:check} means {means:check}. A {t:code} is {means:code}. A {t:permission} is {means:permission}.',
@@ -38,7 +38,7 @@ FC.cards('scams', 'u3', [
       'What you are shown is a sign-in that the person started. Marta wanted something, so she opened an app that was already on her phone, was asked to show that it was her, and did. Nothing in it is strange and nothing in it is hidden. If she had not signed in, she could not have got what she came for.',
       'Two things make it what it is, and both are things Marta did, not things she was shown. The first is that she started it: nothing was sent to her and nothing led her there. She used {t:already}, an app that was on her phone before anything arrived. The second is that the app asks only what a sign-in needs, an email address and a password, and nothing beyond that.',
       'Notice what is not on that list. How the page looks is not on it, and neither is whose name or logo is at the top. A copy of a sign-in page can look exactly the same, and so can a copy of a code or of a {t:permission} with an Allow button. The one thing a copy cannot have is that you started it.',
-      'It is a kind of its own because anyone who treats every request to sign in as suspect either stops using the safe ones or stops paying attention to any of them. The key gives the real one a name so that "nothing is wrong here" can be said as exactly as "this is a copy". It comes in the same three forms as the scams: a password typed into a site or an app you opened, a {t:code} you asked for and typed into the same site, and an Allow, on a {t:permission}, for an app you went looking for.'
+      'It is a kind of its own because anyone who treats every request to sign in as suspect either stops using the safe ones or stops paying attention to any of them. The real one has a name so that "nothing is wrong here" can be said as exactly as "this is a copy". It comes in the same three forms as the scams: a password typed into a site or an app you opened, a {t:code} you asked for and typed into the same site, and an Allow, on a {t:permission}, for an app you went looking for.'
     ],
     feature: { step: 'A2', option: 'fits' },
     name: [
@@ -63,7 +63,7 @@ FC.cards('scams', 'u3', [
       'The four names belong to the layer underneath. Each of them can turn up in any story: a bank can be the real thing or the name on a copy, and so can a streaming service. A calm story can hide a copy and an alarming one can be real.',
       'From here on, the cases change their stories on purpose. Two more things change as well, and neither decides anything: how well the message is written, and how the page looks. A copy can be exact in every detail. What it cannot change is whether you started it.'
     ],
-    fixed: ['what the request asks you to type or press, and whether you started it, which is what the key asks: {q:A1} and {q:A2}'],
+    fixed: ['what the request asks you to type or press, and whether you started it, which are the questions: {q:A1} and {q:A2}'],
     varies: ['the company or service named', 'how alarming it sounds', 'how well it is written', 'how the page looks', 'whether it comes as a text, an email or a call'] },
 
   { id: 'portrait-realsignin', kind: 'portrait', outcome: 'realsignin',

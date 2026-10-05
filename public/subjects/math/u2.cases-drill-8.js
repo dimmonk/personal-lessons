@@ -16,7 +16,7 @@ FC.cases('math', 'u2', [
     route: { M1: ['whole'], W1: ['cycle'] },
     cues: { M1: ['What colour is the 83rd tile?'], W1: ['What colour is the 83rd tile?'] },
     reason: {
-      M1: 'The problem asks {cue:M1}, a question about the part that is not in a whole group, or the place a count reaches on a loop. The numbers are whole counts, and no amount is followed through time, so the key’s first answer is {a:M1.whole}.',
+      M1: 'The problem asks {cue:M1}, a question about the part that is not in a whole group, or the place a count reaches on a loop. The numbers are whole counts, and no amount is followed through time, so the answer to the first question is {a:M1.whole}.',
       W1: 'The words {cue:W1} give a count and one group size, or one loop, and ask for the part not in a whole group or for the place the count reaches, which is {a:W1.cycle}.'
     },
     not: {
@@ -65,7 +65,7 @@ FC.cases('math', 'u2', [
       W1: ['does the laundry every 5 days and cleans the windows every 7 days']
     },
     reason: {
-      M1: 'The problem asks {cue:M1}, a question about two repeats and when they coincide. The numbers are whole counts that repeat, and no amount is followed as it grows, so the key’s first answer is {a:M1.whole}.',
+      M1: 'The problem asks {cue:M1}, a question about two repeats and when they coincide. The numbers are whole counts that repeat, and no amount is followed as it grows, so the answer to the first question is {a:M1.whole}.',
       W1: 'The words {cue:W1} give two repeating schedules and ask for the first time they coincide, which is {a:W1.together}.'
     },
     not: {
@@ -110,7 +110,7 @@ FC.cases('math', 'u2', [
       W1: ['the prime numbers that multiply together to give 105']
     },
     reason: {
-      M1: 'The problem asks {cue:M1}, a question about what one whole number is made of or how it can be shared out. It follows no amount through time, hides no number to be found from a calculation, and has no shape or choice, so the key’s first answer is {a:M1.whole}.',
+      M1: 'The problem asks {cue:M1}, a question about what one whole number is made of or how it can be shared out. It follows no amount through time, hides no number to be found from a calculation, and has no shape or choice, so the answer to the first question is {a:M1.whole}.',
       W1: 'The words {cue:W1} give one number and ask what it is made of, or every way it can be shared out. That is more than a yes or a no about one number, which is {a:W1.parts}.'
     },
     not: {
@@ -155,7 +155,7 @@ FC.cases('math', 'u2', [
       W1: ['split their members into teams of the same size, with nobody left out and every team drawn from one club']
     },
     reason: {
-      M1: 'The problem asks {cue:M1}, a question about pieces of one size that two whole numbers can both be split into. Nothing grows, no hidden number has to be found from a calculation, and there is no shape or chance, so the key’s first answer is {a:M1.whole}.',
+      M1: 'The problem asks {cue:M1}, a question about pieces of one size that two whole numbers can both be split into. Nothing grows, no hidden number has to be found from a calculation, and there is no shape or chance, so the answer to the first question is {a:M1.whole}.',
       W1: 'The words {cue:W1} give two numbers and ask for the biggest piece that both can be cut into with nothing left over, which is {a:W1.piece}.'
     },
     not: {
@@ -205,7 +205,7 @@ FC.cases('math', 'u2', [
       W1: ['Can he lay the tiles in equal rows, with more than one row and more than one tile in each row?']
     },
     reason: {
-      M1: 'The problem asks {cue:M1}, a question about whether one whole number can be shared out in equal groups. Nothing in it changes as time passes, no hidden number has to be found from a calculation, and there is no shape or choice, so the key’s first answer is {a:M1.whole}.',
+      M1: 'The problem asks {cue:M1}, a question about whether one whole number can be shared out in equal groups. Nothing in it changes as time passes, no hidden number has to be found from a calculation, and there is no shape or choice, so the answer to the first question is {a:M1.whole}.',
       W1: 'The words {cue:W1} give one number and ask only whether anything other than 1 and itself shares it out exactly. That is a yes or a no about one number, which is {a:W1.split}.'
     },
     not: {

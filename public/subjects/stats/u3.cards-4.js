@@ -67,8 +67,8 @@ FC.cards('stats', 'u3', [
     instruction: 'Both cases are about a cafeteria and a figure from 12 people, 9 of whom liked the food. Compare one thing: out of how many were the 12 counted?',
     prompt: { kind: 'which', option: 'A1.handful', answer: 'cn-cafe-twelve' },
     difference: [
-      'In Case A the company emailed all 800 of its staff by name. 12 replied, and nothing was done to hear from the other 788. The 12 are 12 of 800, which is 1.5 in every 100 of the list, and most of the group is missing. The key’s answer to the question after the first, {q:A1}, is {a:A1.replied}, and the case is {o:nonresp}.',
-      'In Case B the café had been open one day, and only 12 people had eaten there. All 12 were asked and all 12 answered. Nobody is missing: everyone who had eaten there is in the figure. There are only a handful, and one or two more or fewer would move it a long way: 7 of 12 is 58 in every 100, and 11 of 12 is 92. The key’s answer is {a:A1.handful}, and the case is {o:smalln}.',
+      'In Case A the company emailed all 800 of its staff by name. 12 replied, and nothing was done to hear from the other 788. The 12 are 12 of 800, which is 1.5 in every 100 of the list, and most of the group is missing. The answer to the question after the first, {q:A1}, is {a:A1.replied}, and the case is {o:nonresp}.',
+      'In Case B the café had been open one day, and only 12 people had eaten there. All 12 were asked and all 12 answered. Nobody is missing: everyone who had eaten there is in the figure. There are only a handful, and one or two more or fewer would move it a long way: 7 of 12 is 58 in every 100, and 11 of 12 is 92. The answer is {a:A1.handful}, and the case is {o:smalln}.',
       'Both figures rest on 12 people, and both claims speak for more than 12. In Case A the 12 are a few out of a long list. In Case B the 12 are everyone there is.'
     ] },
 
@@ -78,8 +78,8 @@ FC.cards('stats', 'u3', [
     instruction: 'Both cases are about the same player, Dana, and her penalty kicks. Compare one thing: how many kicks are in the figure, and what one or two more or fewer would do to it.',
     prompt: { kind: 'which', option: 'S1.counted', answer: 'cn-penalties-four' },
     difference: [
-      'In Case A Dana has taken 4 penalties and scored all 4, and the coach says she never misses. Nobody is left out: every penalty she has taken is counted. But one miss would turn 4 out of 4 into 3 out of 4, which is 75 in every 100, and the coach reads a perfect figure from 4 kicks as meaning something about her. The key’s answer to the first question is {a:S1.counted}, and the question after it, {q:A1}, gets the answer {a:A1.handful}.',
-      'In Case B Dana has taken 80 penalties over six seasons and scored 68, which is 85 in every 100. One miss more or fewer moves it by about one point: 67 of 80 is 83.75 and 69 of 80 is 86.25. The coach says she scores 85 in every 100, and stops there. The key’s answer to the first question is {a:S1.holds}, and the question after it, {q:H1}, gets the answer {a:H1.group}.',
+      'In Case A Dana has taken 4 penalties and scored all 4, and the coach says she never misses. Nobody is left out: every penalty she has taken is counted. But one miss would turn 4 out of 4 into 3 out of 4, which is 75 in every 100, and the coach reads a perfect figure from 4 kicks as meaning something about her. The answer to the first question is {a:S1.counted}, and the question after it, {q:A1}, gets the answer {a:A1.handful}.',
+      'In Case B Dana has taken 80 penalties over six seasons and scored 68, which is 85 in every 100. One miss more or fewer moves it by about one point: 67 of 80 is 83.75 and 69 of 80 is 86.25. The coach says she scores 85 in every 100, and stops there. The answer to the first question is {a:S1.holds}, and the question after it, {q:H1}, gets the answer {a:H1.group}.',
       'Both are about the same player and both are accurate counts. What separates them is how many kicks are in the figure, and so how far luck could move it.'
     ] }
 ]);

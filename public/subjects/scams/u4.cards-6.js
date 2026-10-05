@@ -68,42 +68,42 @@ FC.cards('scams', 'u4', [
     prompt: { kind: 'which', option: 'M2.agreed', answer: 'm-sam-letter' },
     difference: [
       'In Case A a man rings out of the blue and demands payment today, by transfer to an account that he gives, and tells Sam not to tell his employer. He gives Sam nothing that he could look up. The case is {o:fakeofficial}.',
-      'In Case B a letter gives Sam 30 days and a way to appeal, and says not to trust a link or a number in any message. Sam types in the address that he knows from his own tax account, and finds the same amount and the same reference. The key’s answer is {a:M2.agreed}, and the case is {o:realpayment}.',
+      'In Case B a letter gives Sam 30 days and a way to appeal, and says not to trust a link or a number in any message. Sam types in the address that he knows from his own tax account, and finds the same amount and the same reference. The answer is {a:M2.agreed}, and the case is {o:realpayment}.',
       'The tax office, the sum and the man are the same. What differs is whether he is hurried and kept quiet, or given time and something that he can check for himself.'
     ] },
 
   { id: 'look-fakeofficial-codescam', kind: 'lookalike', ledger: 'fakeofficial~codescam',
-    link: 'Both of the last two names can arrive as a call from your bank, and one of them you met in an earlier unit, in the part of the key about signing in. Here they are side by side, with the same caller and the same story.',
+    link: 'Both of the last two names can arrive as a call from your bank, and one of them you met in an earlier unit, in the part about signing in. Here they are side by side, with the same caller and the same story.',
     cases: ['m-elena-safe', 'm-elena-code'],
     instruction: 'Both cases are about Elena and a caller who says that he is from her bank’s fraud team, and in both he says that her account is in danger. Compare one thing: what the caller asks her to do.',
     prompt: { kind: 'which', option: 'D1.access', answer: 'm-elena-code' },
     difference: [
-      'In Case A the caller asks Elena to move her savings to an account that he gives her, and to tell no one. That is a request to send money, and the key’s answer to the first question is {a:D1.money}. The case is {o:fakeofficial}.',
-      'In Case B the caller asks Elena to read out a code that has just been texted to her. That is a request for a way into her account, and the key’s answer to the first question is {a:D1.access}. The case is {o:codescam}.',
-      'The bank, the call and the danger are the same. The two cases are told apart by the very first question of the key, before the questions of this unit are reached: money, or a way into an account.'
+      'In Case A the caller asks Elena to move her savings to an account that he gives her, and to tell no one. That is a request to send money, and the answer to the first question is {a:D1.money}. The case is {o:fakeofficial}.',
+      'In Case B the caller asks Elena to read out a code that has just been texted to her. That is a request for a way into her account, and the answer to the first question is {a:D1.access}. The case is {o:codescam}.',
+      'The bank, the call and the danger are the same. The two cases are told apart by the very first question, before the questions of this unit are reached: money, or a way into an account.'
     ] },
 
   { id: 'exc-official-prize', kind: 'exception', ledger: 'advancefee~fakeofficial', looksLike: 'fakeofficial', is: 'advancefee',
     h: 'A refund from the tax office that needs a fee',
     link: 'The caller in the last cards threatened. Here is a message that sounds official, and does not threaten at all.',
     case: 'm-exc-taxrefund',
-    setup: 'The message comes from the tax office, and a message from an official about tax is what {a:M1.official} sounds like. Yet the key’s answer for this case is {a:M1.prize}.',
+    setup: 'The message comes from the tax office, and a message from an official about tax is what {a:M1.official} sounds like. Yet the answer for this case is {a:M1.prize}.',
     prompt: { kind: 'phrase', answer: 'owes you a refund of £740' },
     because: [
       'Read what the message says. It does not threaten anyone, and it does not say that you owe the tax office anything. It says that the tax office owes you £740, and that you must pay a fee to release it. That is money that is waiting for you, and a fee that comes first.',
-      'So the case shows both things: an official as the sender, and money that is waiting for you. The key gives such a case the answer about the waiting money. Writing in the name of the tax office is how the scammer makes the prize look real. It is not what the message asks you to do.'
+      'So the case shows both things: an official as the sender, and money that is waiting for you. Such a case gets the answer about the waiting money. Writing in the name of the tax office is how the scammer makes the prize look real. It is not what the message asks you to do.'
     ],
-    take: 'The key decides it this way on purpose, so that two people reach the same name. Whatever the sender calls themselves, put your finger on what the money is for.' },
+    take: 'It is decided this way on purpose, so that two people reach the same name. Whatever the sender calls themselves, put your finger on what the money is for.' },
 
   { id: 'exc-rush-link', kind: 'exception', ledger: 'fakeofficial~fakelink', looksLike: 'fakeofficial', is: 'fakelink',
     h: 'A threat, a hurry and a secret, paid on a link',
     link: 'The tax caller was hurried, threatening and secretive, and wanted gift cards. Here is a text that is all three, and asks for something else.',
     case: 'm-exc-penalty',
-    setup: 'The text has an official, a threat, a deadline of two hours and an order to tell no one, and all of that is what {o:fakeofficial} sounds like. Yet the key’s answer for this case is {a:M2.link}, and the name is {o:fakelink}.',
+    setup: 'The text has an official, a threat, a deadline of two hours and an order to tell no one, and all of that is what {o:fakeofficial} sounds like. Yet the answer for this case is {a:M2.link}, and the name is {o:fakelink}.',
     prompt: { kind: 'phrase', answer: 'Pay at penalty-office.example' },
     because: [
       'Look at how the text asks you to pay. It does not ask for gift cards, or for a transfer to an account that someone gives you over the phone. It asks you to pay on a page that you reach through a link in the message. That is what the name {o:fakelink} is built on.',
-      'Hurry, threat and secrecy turn up in many scams, and they are there to stop you thinking. Because they turn up so often, they cannot be what decides the name. The key gives the answer about the link, and keeps {o:fakeofficial} for a case in which nothing more specific shows: no link, no fee, no deal, and a caller who wants payment at once, in a way that cannot be undone, and in secret.'
+      'Hurry, threat and secrecy turn up in many scams, and they are there to stop you thinking. Because they turn up so often, they cannot be what decides the name. The answer is the one about the link, and {o:fakeofficial} is kept for a case in which nothing more specific shows: no link, no fee, no deal, and a caller who wants payment at once, in a way that cannot be undone, and in secret.'
     ],
     take: 'This tie-break applies to more than one pair. Hurry, secrecy and payment that cannot be undone give way to a more specific answer whenever one is there. Look for the more specific answer first.' },
 
@@ -115,7 +115,7 @@ FC.cards('scams', 'u4', [
     right: [
       'A bank’s fraud checks are built to catch someone else using your account. When you send a payment yourself, by typing in a transfer or pressing approve in your app, the checks see you, and you have told them that you want the payment made. They may show a warning, and some banks hold a payment or ask you questions. But none of them can promise to stop a payment that you press send on yourself, and the scammers know it. That is why a caller tells you to ignore the warning, and not to tell the bank.',
       'A payment that you sent yourself is also hard to get back, whether it went by transfer, in cash, in gift cards or in crypto. Ringing your bank at once can sometimes recall a transfer in the first hours, which is why speed matters.',
-      'So the bank is the second line of defence, and you are the first. What can stop the loss is what you ask before you press send, and it is the key’s own two questions about money. The first is {q:M1} The second is {q:M2} A warning from your bank is a stop sign, and it is worth reading as one.'
+      'So the bank is the second line of defence, and you are the first. What can stop the loss is what you ask before you press send, and it is these two questions about money. The first is {q:M1} The second is {q:M2} A warning from your bank is a stop sign, and it is worth reading as one.'
     ],
     testedBy: ['m-claim-bank'] }
 ]);

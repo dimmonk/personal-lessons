@@ -19,8 +19,8 @@ FC.cases('math', 'u5', [
       C1: ['no digit can be used twice', 'is a different code from']
     },
     reason: {
-      M1: 'The words {cue:M1} ask how many different codes are possible, a count of ways something can turn out. Nothing in it follows an amount as time passes, hides a number that a calculation must fit, or splits whole numbers into groups, and there is no shape to measure. What it asks for is a count of the results, or the chance of something, so the key’s first answer is {a:M1.chance}.',
-      C1: 'The words {cue:C1} show 3 digits taken from the 10, with no digit used twice, so each dial has one fewer to choose from, and a different order giving a different code, so the key’s answer is {a:C1.order}.'
+      M1: 'The words {cue:M1} ask how many different codes are possible, a count of ways something can turn out. Nothing in it follows an amount as time passes, hides a number that a calculation must fit, or splits whole numbers into groups, and there is no shape to measure. What it asks for is a count of the results, or the chance of something, so the answer to the first question is {a:M1.chance}.',
+      C1: 'The words {cue:C1} show 3 digits taken from the 10, with no digit used twice, so each dial has one fewer to choose from, and a different order giving a different code, so the answer is {a:C1.order}.'
     },
     not: {
       outcome: 'multprin',
@@ -71,8 +71,8 @@ FC.cases('math', 'u5', [
       C1: ['All three receive the same bandage, so the order does not matter']
     },
     reason: {
-      M1: 'The words {cue:M1} ask how many different groups the clinic can pick, a count of ways something can turn out. The problem does not change as time passes, has no hidden number for a calculation to fit, does not share whole numbers out in groups and has no shape. It is about the number of ways that something can come out, or its chance, so the key’s first answer is {a:M1.chance}.',
-      C1: 'The words {cue:C1} show a group of 3 picked from 8, with all three treated alike, so that the same three in a different order are the same group, so the key’s answer is {a:C1.group}.'
+      M1: 'The words {cue:M1} ask how many different groups the clinic can pick, a count of ways something can turn out. The problem does not change as time passes, has no hidden number for a calculation to fit, does not share whole numbers out in groups and has no shape. It is about the number of ways that something can come out, or its chance, so the answer to the first question is {a:M1.chance}.',
+      C1: 'The words {cue:C1} show a group of 3 picked from 8, with all three treated alike, so that the same three in a different order are the same group, so the answer is {a:C1.group}.'
     },
     not: {
       outcome: 'perm',
@@ -121,8 +121,8 @@ FC.cases('math', 'u5', [
       C1: ['books any 4 of them to go on during the week, in whatever order the guest likes']
     },
     reason: {
-      M1: 'The words {cue:M1} ask how many different sets of trips can be booked, a count of ways something can turn out. Nothing here is followed through time, no number is hidden for a calculation to fit, no whole number is split into groups, and no shape is measured. The problem asks for the number of different results, or for a chance, which is the key’s first answer {a:M1.chance}.',
-      C1: 'The words {cue:C1} show 4 trips taken from 6 with the order left free, so that the same 4 trips in a different order are the same set, so the key’s answer is {a:C1.group}.'
+      M1: 'The words {cue:M1} ask how many different sets of trips can be booked, a count of ways something can turn out. Nothing here is followed through time, no number is hidden for a calculation to fit, no whole number is split into groups, and no shape is measured. The problem asks for the number of different results, or for a chance, which is the answer to the first question {a:M1.chance}.',
+      C1: 'The words {cue:C1} show 4 trips taken from 6 with the order left free, so that the same 4 trips in a different order are the same set, so the answer is {a:C1.group}.'
     },
     not: {
       outcome: 'perm',
@@ -174,8 +174,8 @@ FC.cases('math', 'u5', [
       C1: ['It makes no difference which share is picked first']
     },
     reason: {
-      M1: 'The words {cue:M1} ask how many different sets of shares there are, a count of ways something can turn out. Nothing in it follows an amount as time passes, hides a number that a calculation must fit, or splits whole numbers into groups, and there is no shape to measure. What it asks for is a count of the results, or the chance of something, so the key’s first answer is {a:M1.chance}.',
-      C1: 'The words {cue:C1} show 3 shares taken from 9 with no difference made by the order, so that the same 3 shares in any order are one set, so the key’s answer is {a:C1.group}.'
+      M1: 'The words {cue:M1} ask how many different sets of shares there are, a count of ways something can turn out. Nothing in it follows an amount as time passes, hides a number that a calculation must fit, or splits whole numbers into groups, and there is no shape to measure. What it asks for is a count of the results, or the chance of something, so the answer to the first question is {a:M1.chance}.',
+      C1: 'The words {cue:C1} show 3 shares taken from 9 with no difference made by the order, so that the same 3 shares in any order are one set, so the answer is {a:C1.group}.'
     },
     not: {
       outcome: 'perm',
@@ -227,8 +227,8 @@ FC.cases('math', 'u5', [
       C1: ['room in her bag for 5 of them. The order they go into the bag does not matter']
     },
     reason: {
-      M1: 'The words {cue:M1} ask how many different sets of books can be packed, a count of ways something can turn out. The problem does not change as time passes, has no hidden number for a calculation to fit, does not share whole numbers out in groups and has no shape. It is about the number of ways that something can come out, or its chance, so the key’s first answer is {a:M1.chance}.',
-      C1: 'The words {cue:C1} show 5 books taken from 7 with no difference made by the order they go in, so that the same 5 books in any order are one set, so the key’s answer is {a:C1.group}.'
+      M1: 'The words {cue:M1} ask how many different sets of books can be packed, a count of ways something can turn out. The problem does not change as time passes, has no hidden number for a calculation to fit, does not share whole numbers out in groups and has no shape. It is about the number of ways that something can come out, or its chance, so the answer to the first question is {a:M1.chance}.',
+      C1: 'The words {cue:C1} show 5 books taken from 7 with no difference made by the order they go in, so that the same 5 books in any order are one set, so the answer is {a:C1.group}.'
     },
     not: {
       outcome: 'perm',

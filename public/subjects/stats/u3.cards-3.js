@@ -68,8 +68,8 @@ FC.cards('stats', 'u3', [
     instruction: 'Both cases are about the same school, the same question and the same figure: 240 answers, 204 of them yes. Compare one thing: was everyone on a known list asked by name, or could anyone who saw the call answer?',
     prompt: { kind: 'which', option: 'A1.replied', answer: 'cn-homework-mailed' },
     difference: [
-      'In Case A the school emailed each of its 1,200 families by name. 240 replied, and the school did nothing to hear from the other 960. Everyone was asked, and most did not answer. The key’s answer to the question after the first, {q:A1}, is {a:A1.replied}, and the case is {o:nonresp}.',
-      'In Case B the school put a link in its newsletter and on its website. Nobody was asked by name, and anyone who saw the link could answer. 240 did. The key’s answer is {a:A1.chose}, and the case is {o:selfselect}.',
+      'In Case A the school emailed each of its 1,200 families by name. 240 replied, and the school did nothing to hear from the other 960. Everyone was asked, and most did not answer. The answer to the question after the first, {q:A1}, is {a:A1.replied}, and the case is {o:nonresp}.',
+      'In Case B the school put a link in its newsletter and on its website. Nobody was asked by name, and anyone who saw the link could answer. 240 did. The answer is {a:A1.chose}, and the case is {o:selfselect}.',
       'The figure is the same, and the problem is the same sort of problem, one-sided answers. What differs is whether anyone was asked. In Case A the silent 960 were asked and did not answer, so you can name them, and you could ring them. In Case B nobody was asked, so there is no list of the silent ones.'
     ] },
 
@@ -79,8 +79,8 @@ FC.cards('stats', 'u3', [
     instruction: 'Both cases are about the same swimming pool, the same list of 1,500 households and the same share, 72 in every 100, saying yes. Compare one thing: how many of the list answered, and what was done about the ones who did not.',
     prompt: { kind: 'which', option: 'S1.holds', answer: 'cn-pool-followed' },
     difference: [
-      'In Case A the pool mailed the questionnaire and 150 of the 1,500 replied, which is 10 in every 100. It did nothing to reach the other 1,350. The 108 who said yes are 72 in every 100 of the 150, but they are 7 in every 100 of the list. The key’s answer to the first question is {a:S1.counted}, and the question after it, {q:A1}, gets the answer {a:A1.replied}.',
-      'In Case B the pool asked the same list, then rang every household that had not replied, and in the end 1,350 of the 1,500 gave an answer, which is 90 in every 100. 972 said yes, which is 72 in every 100 of the 1,350. Nine in ten of the list are in the figure, and the claim speaks only for the list. The key’s answer to the first question is {a:S1.holds}, and the question after it, {q:H1}, gets the answer {a:H1.group}.',
+      'In Case A the pool mailed the questionnaire and 150 of the 1,500 replied, which is 10 in every 100. It did nothing to reach the other 1,350. The 108 who said yes are 72 in every 100 of the 150, but they are 7 in every 100 of the list. The answer to the first question is {a:S1.counted}, and the question after it, {q:A1}, gets the answer {a:A1.replied}.',
+      'In Case B the pool asked the same list, then rang every household that had not replied, and in the end 1,350 of the 1,500 gave an answer, which is 90 in every 100. 972 said yes, which is 72 in every 100 of the 1,350. Nine in ten of the list are in the figure, and the claim speaks only for the list. The answer to the first question is {a:S1.holds}, and the question after it, {q:H1}, gets the answer {a:H1.group}.',
       'The share is the same in both, 72 in every 100. What separates them is how much of the list is in it. A figure from 150 of 1,500 and a figure from 1,350 of 1,500 can look exactly alike in a notice on a wall.'
     ] },
 

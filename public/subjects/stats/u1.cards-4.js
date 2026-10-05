@@ -20,8 +20,8 @@ FC.cards('stats', 'u1', [
     ],
     feature: { step: 'S1', option: 'cause' },
     name: [
-      'The key’s answer, and so the name of the family, is {a:S1.cause}. Words that carry the step are "raise", "protect", "works", "led to", "because" and "so". They are the speaker’s, and the figures do not contain them.',
-      'The key gives this answer when {when:S1.cause}. It does not say the claim is false. Music lessons may help. It says that the figures cannot show it, because something else could produce them.'
+      'The answer, and so the name of the kind, is {a:S1.cause}. Words that carry the step are "raise", "protect", "works", "led to", "because" and "so". They are the speaker’s, and the figures do not contain them.',
+      'Give this answer when {when:S1.cause}. It does not say the claim is false. Music lessons may help. It says that the figures cannot show it, because something else could produce them.'
     ] },
 
   { id: 'again-cause', kind: 'again', family: 'cause',
@@ -45,7 +45,7 @@ FC.cards('stats', 'u1', [
       'What decides the answer is the gap between the figures and the claim. The figures themselves may be good ones.'
     ],
     not: [
-      'It is not the same as saying the claim is wrong. Music lessons may help with math. The key says only that these figures do not show it, because something else could produce them.',
+      'It is not the same as saying the claim is wrong. Music lessons may help with math. All it says is that these figures do not show it, because something else could produce them.',
       'And it is not a trouble with the figures themselves. Here the figures hold, and the step from them to a cause is the trouble.'
     ],
     wild: ['"Kids who eat breakfast do better at school."', '"Since the new boss arrived, sales are up."', '"People who drink coffee live longer."', '"Everyone who did the program improved."', '"It works. Look at the results."'],
@@ -63,8 +63,8 @@ FC.cards('stats', 'u1', [
     instruction: 'Both cases are about the same mentoring program. Compare one thing: are the numbers behind the figure missing, or are they all given and the claim goes on to say what caused the difference?',
     prompt: { kind: 'which', option: 'S1.cause', answer: 'gate-mentor-groups' },
     difference: [
-      'In Case A the figure is "50% more likely to graduate", with no word on how many graduate with the program or without it. Nothing has yet been said about a cause. The trouble is what the figure is set beside. The key’s answer is {a:S1.compare}.',
-      'In Case B the numbers are all there: 90 of 100 and 60 of 100. Nothing is hidden. The trouble is the step the leaflet takes: it says the mentoring made the difference, and the case shows another way to explain the same result, which is that pupils who ask to join are the ones already doing well. The key’s answer is {a:S1.cause}.',
+      'In Case A the figure is "50% more likely to graduate", with no word on how many graduate with the program or without it. Nothing has yet been said about a cause. The trouble is what the figure is set beside. The answer is {a:S1.compare}.',
+      'In Case B the numbers are all there: 90 of 100 and 60 of 100. Nothing is hidden. The trouble is the step the leaflet takes: it says the mentoring made the difference, and the case shows another way to explain the same result, which is that pupils who ask to join are the ones already doing well. The answer is {a:S1.cause}.',
       'The program and the claim are the same in both. In Case A the figure needs its numbers. In Case B the figure has its numbers and the claim goes past them.'
     ] },
 
@@ -74,8 +74,8 @@ FC.cards('stats', 'u1', [
     instruction: 'Both cases are about the same career-coaching firm and the same raise. Compare one thing: is the trouble in who the figure was worked out from, or in what the claim says caused the raise?',
     prompt: { kind: 'which', option: 'S1.counted', answer: 'gate-course-survey' },
     difference: [
-      'In Case A the figure is the average raise of the 60 clients who answered a follow-up survey, out of 400. Clients whose raises were good are more likely to answer than those whose were not, so the 60 are not a fair picture of the 400. The trouble is who is in the figure. The key’s answer is {a:S1.counted}.',
-      'In Case B all 400 clients answered, so nobody is missing, and the firm gives the raise for 400 other workers of the same age and job to set beside it. The trouble is the step: the brochure says the coaching earned the clients the extra $10,000, and the case shows another way to explain the result, which is that the clients had already decided to change jobs. The key’s answer is {a:S1.cause}.',
+      'In Case A the figure is the average raise of the 60 clients who answered a follow-up survey, out of 400. Clients whose raises were good are more likely to answer than those whose were not, so the 60 are not a fair picture of the 400. The trouble is who is in the figure. The answer is {a:S1.counted}.',
+      'In Case B all 400 clients answered, so nobody is missing, and the firm gives the raise for 400 other workers of the same age and job to set beside it. The trouble is the step: the brochure says the coaching earned the clients the extra $10,000, and the case shows another way to explain the result, which is that the clients had already decided to change jobs. The answer is {a:S1.cause}.',
       'Both brochures say that coaching pays. In Case A the figure comes from the wrong people. In Case B the figure is fair and the claim goes past it.'
     ] }
 ]);

@@ -12,10 +12,10 @@ FC.cases('stats', 'u1', [
     route: { S1: ['counted'] },
     cues: { S1: ['the average for the 140 members who finished all 12 weeks', 'Another 360 members started the program and dropped out before the end'] },
     segments: [
-      { text: "A gym's ad says: 'Our 12-week program makes you lose weight: members lose an average of 15 pounds.'", note: 'That is the claim, and it is why the case looks like one about what caused what. What settles the key’s answer is who the 15 pounds was worked out from, which comes next.' },
+      { text: "A gym's ad says: 'Our 12-week program makes you lose weight: members lose an average of 15 pounds.'", note: 'That is the claim, and it is why the case looks like one about what caused what. What settles the answer is who the 15 pounds was worked out from, which comes next.' },
       { text: 'The 15 pounds is the average for the 140 members who finished all 12 weeks.' },
       { text: 'Another 360 members started the program and dropped out before the end.', note: 'That tells you how many are missing, and it matters. But the words that settle what the figure was worked out from are in the sentence before: it is the finishers.' },
-      { text: 'Gym staff say that members who are not losing weight tend to give up early.', note: 'That is another way to explain the result, and it is why the case also shows a claim of cause. It is not what settles the key’s answer.' }
+      { text: 'Gym staff say that members who are not losing weight tend to give up early.', note: 'That is another way to explain the result, and it is why the case also shows a claim of cause. It is not what settles the answer.' }
     ] },
 
   { id: 'gate-bonus', use: 'teach', tier: 'misleading', setting: 'work', topic: 'a bonus for short calls', name: 'The bonus',
@@ -25,7 +25,7 @@ FC.cases('stats', 'u1', [
     cues: { S1: 'a bonus for every call closed in under four minutes' },
     segments: [
       { text: 'Since a call center began paying agents a bonus for every call closed in under four minutes, the number of calls handled per hour has risen from 11 to 16.' },
-      { text: "The manager says: 'The bonus has improved our service.'", note: 'That is the claim, and it is why the case looks like one about what caused what. What settles the key’s answer is what the figure counts, and that is in the first sentence.' },
+      { text: "The manager says: 'The bonus has improved our service.'", note: 'That is the claim, and it is why the case looks like one about what caused what. What settles the answer is what the figure counts, and that is in the first sentence.' },
       { text: 'Callers say they are cut off more often.', note: 'That confirms the answer, but the words that settle it come earlier: what the agents are paid for.' }
     ] },
 
@@ -36,9 +36,9 @@ FC.cases('stats', 'u1', [
     cues: { S1: 'She does not say what the sales were before' },
     segments: [
       { text: "A shop owner says: 'Since our radio ad ran, our sales are up 300%.", note: 'That is the figure, and it is a percentage. But a percentage is a trouble only when what it is a percentage of is left out, and the case says so in another sentence.' },
-      { text: "The ad worked!'", note: 'That is the claim that one thing caused another, and it is why the case looks like one about what caused what. What settles the key’s answer comes before it.' },
+      { text: "The ad worked!'", note: 'That is the claim that one thing caused another, and it is why the case looks like one about what caused what. What settles the answer comes before it.' },
       { text: 'She does not say what the sales were before.' },
-      { text: 'A street fair began on the same weekend the ad first ran.', note: 'That is another way for the sales to have risen, which is why the case also shows a claim of cause. It is not what settles the key’s answer.' }
+      { text: 'A street fair began on the same weekend the ad first ran.', note: 'That is another way for the sales to have risen, which is why the case also shows a claim of cause. It is not what settles the answer.' }
     ] },
 
   /* ---------- The check after the question card ---------- */
@@ -46,7 +46,7 @@ FC.cases('stats', 'u1', [
     text: "A city transit agency counts boardings on 40 bus routes with the same card readers every March. The counts were 1.1 million, 1.2 million, 1.2 million, 1.3 million and 1.4 million over five years. Every boarding on the 40 routes is counted, and the fare and the readers have not changed. The agency says: 'Bus use on these routes has grown over the past five years.'",
     route: { S1: ['holds'] },
     cues: { S1: 'Every boarding on the 40 routes is counted, and the fare and the readers have not changed' },
-    reason: { S1: 'Take the parts in order. Every boarding on the 40 routes is counted, so nobody is left out. The same readers count it each year, and nothing about the fare has changed: {cue:S1}. The five counts are set side by side with the numbers given, and the claim says only that use has grown. It does not say why.' },
+    reason: { S1: 'Take the parts in order. Every boarding on all 40 bus lines is counted, so nobody is left out. The same readers count it each year, and nothing about the fare has changed: {cue:S1}. The five counts are set side by side with the numbers given, and the claim says only that use has grown. It does not say why.' },
     not: { outcome: 'measure', why: 'A rise in a count can come from a change in how the count is made, but here the same readers count every boarding in all five years and the fare did not change. Nothing could move the figure without the real thing moving.' },
     miss: { measure: 'A new tool or a new rule could raise a count on its own, and you were right to look for one. But the case says the same readers counted in all five years and the fare did not change, so that way for the figure to move is ruled out.',
             cause: 'The claim says that bus use has grown. It does not say what made it grow, so there is no claim that one thing caused another.' } },

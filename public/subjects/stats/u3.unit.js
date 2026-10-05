@@ -10,7 +10,7 @@
 
 FC.unit('stats', 'u3', {
   kind: 'C',              // C classification, F facts, P procedure
-  rev: 1,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
+  rev: 2,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
   standard: 1,            // lesson-standard version this unit was built to
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author). The app labels a draft as a draft.
   tag: 'Three',
@@ -67,7 +67,7 @@ FC.unit('stats', 'u3', {
     { id: 'p2', title: 'Figures from the few who replied, and from only a handful',
       cards: ['meet-nonresp', 'again-nonresp', 'portrait-nonresp', 'check-nonresp', 'look-selfselect-nonresp', 'look-nonresp-samp', 'refute-bigger',
               'meet-smalln', 'again-smalln', 'portrait-smalln', 'check-smalln', 'look-nonresp-smalln', 'look-smalln-samp'] },
-    { id: 'p3', title: 'The key’s question, two whole claims, then the drill',
+    { id: 'p3', title: 'The question, two whole claims, then the drill',
       cards: ['q-how', 'check-how', 'worked-poll', 'worked-yoga'], drill: true, close: ['recap', 'transfer', 'plan'] }
   ],
 
@@ -111,7 +111,8 @@ FC.unit('stats', 'u3', {
   build: {
     // What changed at each revision (R1). One entry for every revision from 1 to rev.
     history: [
-      { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the branch unit for the gate answer “Who was counted”. Not yet deployed, so later edits before the first deploy stay revision 1. Replaces old Unit Two (cards and drill V2) and old error-drill items 6, 7 and 9; every case is new.' }
+      { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the branch unit for the gate answer “Who was counted”. Not yet deployed, so later edits before the first deploy stay revision 1. Replaces old Unit Two (cards and drill V2) and old error-drill items 6, 7 and 9; every case is new.' },
+      { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' }
     ],
     // What the K2 rewrite changed in this branch, and why (docs/rebuild/stats-plan.md, "Who was counted").
     keyChanges: [

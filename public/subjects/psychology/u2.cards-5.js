@@ -6,7 +6,7 @@ FC.cards('psychology', 'u2', [
 
   { id: 'worked-longrun', kind: 'worked',
     h: 'A whole case, from the first question to the name',
-    link: 'You have the five names and the key’s question about them. Before you run a case yourself, watch two being run from the top, in the order the key asks. You are not asked anything until the end of each.',
+    link: 'You have the five names and the question about them. Before you run a case yourself, watch two being run from the top, in the order the questions are asked. You are not asked anything until the end of each.',
     case: 'longrun',
     steps: [
       { step: 'D1',
@@ -28,14 +28,14 @@ FC.cards('psychology', 'u2', [
         answer: 'b' },
       reason: [
         'For {o:sunkcost} you must be able to point to this: {needs:sunkcost}. Noor is not deciding any next step. The run is already missed. Her eight months appear inside the excuse, to make one Sunday look small. They are not something she refuses to waste.',
-        'It is the question from Rosa’s two concert tickets. {test:dissonance~sunkcost} Here the reason says that something she did is fine, so the key’s answer is {a:R1.addstory}.'
+        'It is the question from Rosa’s two concert tickets. {test:dissonance~sunkcost} Here the reason says that something she did is fine, so the answer is {a:R1.addstory}.'
       ]
     },
     impression: {
       resembles: 'sauce',
       text: [
-        'The key has given its answer. Now take a second look of a different kind: does this case look like one you know? It should bring back the fish-stock sauce: something done that does not fit what the person says about herself, and a reason afterwards for why it hardly counts.',
-        'Here the key and the likeness agree, so the answer stands. The key’s question comes first, because it makes you point at words in the case. The likeness is only a second look. When the two disagree, do not pick the one you prefer. Go back to the key’s question and find the words in the case that answer it. The second whole case shows how.'
+        'You have the answer. Now take a second look of a different kind: does this case look like one you know? It should bring back the fish-stock sauce: something done that does not fit what the person says about herself, and a reason afterwards for why it hardly counts.',
+        'Here the answer and the likeness agree, so the answer stands. The question comes first, because it makes you point at words in the case. The likeness is only a second look. When the two disagree, do not pick the one you prefer. Go back to the question and find the words in the case that answer it. The second whole case shows how.'
       ]
     } },
 
@@ -62,21 +62,21 @@ FC.cards('psychology', 'u2', [
         ],
         answer: 'c' },
       reason: [
-        'Writing down the compliments and not the complaints is a harder test for one side, and on its own that would point to {o:confbias}. But the case shows something earlier: Grace set out on a search, and the answer was chosen a month before it began. When a case shows both, the key’s answer is {a:R1.fixed}.',
+        'Writing down the compliments and not the complaints is a harder test for one side, and on its own that would point to {o:confbias}. But the case shows something earlier: Grace set out on a search, and the answer was chosen a month before it began. When a case shows both, the answer is {a:R1.fixed}.',
         '{o:confbias} is for cases with no search that the person set out on: only a view already held, and a harder test for the evidence against it as it turns up.'
       ]
     },
     impression: {
       resembles: 'interviews', first: 'oneway',
       text: [
-        'Now the second look: does this case look like one you know? Notes that leave out every complaint may bring back Greg and the one-way system first, and Greg’s case was {o:confbias}. So here the likeness and the key seem to disagree.',
-        'When that happens, go back to the key’s question and find the words in the case that answer it. They are {cue:R1}. Greg’s case has nothing like them: he never set out to settle anything. Carol’s interviews do: she chose first, then ran a search and wrote down what fitted. So the case this one really looks like is Carol’s, and the key’s answer stands.'
+        'Now the second look: does this case look like one you know? Notes that leave out every complaint may bring back Greg and the one-way system first, and Greg’s case was {o:confbias}. So here the likeness and the answer seem to disagree.',
+        'When that happens, go back to the question and find the words in the case that answer it. They are {cue:R1}. Greg’s case has nothing like them: he never set out to settle anything. Carol’s interviews do: she chose first, then ran a search and wrote down what fitted. So the case this one really looks like is Carol’s, and the answer stands.'
       ]
     } },
 
   { id: 'recap', kind: 'recap',
     h: 'What to carry away',
-    link: 'You have now run the key on your own. This card puts the unit in one place, in the key’s words.',
+    link: 'You have now gone from the first question to the name on your own. This card puts the unit in one place.',
     carry: [
       'Say what the reasoning does, and point to the words in the case that show it. If you cannot point, you do not have an answer yet.',
       'The story never decides. Nor does the person, and nor does where they ended up: a view can change without {o:fair}, and a view can be kept with it.',

@@ -24,7 +24,7 @@ FC.cases('scams', 'u5', [
               F1: 'A date of birth and a postcode are facts that identify him: {cue:F1}.',
               F2: 'The letter was the hospital’s own, and Pavel is the one who rings its number to book in: {cue:F2}. The clerk asks only for what finding his booking needs.' },
     not: { outcome: 'friendlychat', why: 'The clerk is friendly, but asks about nothing in Pavel’s life. A date of birth and a postcode are what booking him in needs.' },
-    wouldChange: 'If the call had come to Pavel from someone who said that he was from the hospital, the key’s answer would be the one for something that does not fit.' },
+    wouldChange: 'If the call had come to Pavel from someone who said that he was from the hospital, the answer would be the one for something that does not fit.' },
 
   { id: 'u5-x-finance', use: 'return', tier: 'varied', setting: 'shopping', topic: 'finance for a car at the dealership',
     text: "Gwen has chosen a car at a dealership she visited, and she asks the dealer about finance. In the finance office the adviser asks for her passport, her last three payslips and her address, 'so that the lender can decide'.",

@@ -68,12 +68,12 @@ FC.cases('stats', 'u2', [
   { id: 'claim-fall', use: 'claim',
     text: '"Burglaries on our road fell from 210 to 150, counted the same way both years, so the new streetlights worked."',
     ask: { type: 'option', step: 'H1', answer: 'change' },
-    fault: 'The first half is a sound claim of the kind the key calls {a:H1.change}: one figure, followed through two years, counted the same way, and it fell, by 210 − 150 = 60. That is all it has earned. "So the streetlights worked" is a second claim, about what made it fall, and a fall in one figure does not say why. Nothing in the claim shows another road without the lights, or a lottery.',
+    fault: 'The first half is a sound claim of the kind called {a:H1.change}: one figure, followed through two years, counted the same way, and it fell, by 210 − 150 = 60. That is all it has earned. "So the streetlights worked" is a second claim, about what made it fall, and a fall in one figure does not say why. Nothing in the claim shows another road without the lights, or a lottery.',
     corrected: 'Burglaries on our road fell from 210 to 150, counted the same way both years. The new streetlights went up in the same period, and the figures do not show whether they are the reason.' },
 
   { id: 'claim-exact', use: 'claim',
     text: '"We drew 1,000 adults by lottery and 31 in 100 of them smoke. So exactly 31% of the county’s adults smoke."',
     ask: { type: 'option', step: 'H1', answer: 'group' },
-    fault: 'The first sentence is a sound claim of the kind the key calls {a:H1.group}: a {t:sample} drawn {t:atrandom}, and one figure for one group. What it has earned is "about 31%". "Exactly" claims more. A figure from a {t:sample} is off from the figure for the whole group by luck, and the {t:margin} for 1,000 people is about 1 ÷ √1,000 = 0.03, which is 3 points.',
+    fault: 'The first sentence is a sound claim of the kind called {a:H1.group}: a {t:sample} drawn {t:atrandom}, and one figure for one group. What it has earned is "about 31%". "Exactly" claims more. A figure from a {t:sample} is off from the figure for the whole group by luck, and the {t:margin} for 1,000 people is about 1 ÷ √1,000 = 0.03, which is 3 points.',
     corrected: 'We drew 1,000 adults by lottery and 31 in 100 of them smoke. So about 31% of the county’s adults smoke, give or take 3 points.' }
 ]);

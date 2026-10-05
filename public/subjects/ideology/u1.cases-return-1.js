@@ -62,7 +62,7 @@ FC.cases('ideology', 'u1', [
     cues: { D1: ['It was given to us and we will give it on', 'What was handed down is what a village should be guided by'] },
     reason: { D1: 'The text holds up what was handed down as what should guide: {cue:D1}.' },
     not: { outcome: 'none', why: 'A text about a yearly walk could be a plain notice of the day and time. This one says that what was handed down should guide.' },
-    wouldChange: 'If the notice only said that this year’s walk starts at the church gate at nine, with no word on what should guide anything, it would be {a:D1.none}.' },
+    wouldChange: 'If the notice only said that this year’s walk starts at the church at nine, with no word on what should guide anything, it would be {a:D1.none}.' },
 
   { id: 'i-ret-trad-carols', use: 'return', tier: 'varied', setting: 'schooling', topic: 'a school nativity the governors want to cut',
     text: "The school nativity and the carol service were handed down by every class before this one, and the governors want to cut them. Tell them that what we inherited should come before what is convenient.",
@@ -78,6 +78,6 @@ FC.cases('ideology', 'u1', [
     route: { D1: ['tradition'] },
     cues: { D1: ['freedom is a plant that grows in old soil: church, home and the customs of our parents. Guide the country by them'] },
     reason: { D1: 'The text asks that the country be guided by what the parents taught: {cue:D1}.' },
-    not: { outcome: 'rights', why: 'Freedom to run a shop is in the text, and on its own it would be the fourth answer. But the text goes on to say that old ways should guide the country. When a case shows both, the key’s answer is {a:D1.tradition}.' },
+    not: { outcome: 'rights', why: 'Freedom to run a shop is in the text, and on its own it would be the fourth answer. But the text goes on to say that old ways should guide the country. When a case shows both, the answer is {a:D1.tradition}.' },
     wouldChange: 'If the text had stopped after its first sentence, it would be {a:D1.rights}.' }
 ]);

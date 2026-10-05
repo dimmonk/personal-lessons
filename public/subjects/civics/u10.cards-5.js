@@ -11,7 +11,7 @@ FC.cards('civics', 'u10', [
     plain: [
       'Ilse’s trouble is that she knows the dates but not the people. A widening of the vote did not happen by itself, and each one had people behind it.',
       'At the start, the people who could mostly vote were white men who owned property. The campaign for women’s right to vote began in 1848 and was led by Susan B. Anthony, Elizabeth Cady Stanton and others, most of whom did not live to see it succeed in 1920. In 1965 it was Congress that passed the Voting Rights Act, and after it federal examiners began registering Black voters across the South.',
-      'The last two are worth setting side by side. The lawmakers wrote the law, and the examiners, who are federal officials, did the work of registering voters. In the key’s words, putting a law into practice is {o:execute}, and here it is applied to a right. The four facts below are the starting point, the campaigners, the lawmakers and the examiners.'
+      'The last two are worth setting side by side. The lawmakers wrote the law, and the examiners, who are federal officials, did the work of registering voters. Putting a law into practice is {o:execute}, and here it is applied to a right. The four facts below are the starting point, the campaigners, the lawmakers and the examiners.'
     ] },
 
   { id: 'facts-who', kind: 'facts',

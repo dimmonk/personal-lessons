@@ -28,7 +28,7 @@ FC.cards('math', 'u2', [
     ],
     explain: [
       'What you are shown is one whole number and a question about what it is built from. The building blocks are the {t:prime}s, and every whole number above 1 that is not itself a {t:prime} is built from them. 60 is built from 2, 2, 3 and 5, because 2 × 2 × 3 × 5 = 60. There is only one list that works, whichever order you find the numbers in.',
-      'The key’s wording for this kind has two halves. One is “the prime numbers that make it”, as in the puzzle. The other is “every way it splits”: how many ways 28 tables can be set out in equal rows, or which sizes of equal team 24 players allow. They are one kind because the second is built from the first. Every way of sharing a number out evenly uses some of its primes multiplied together, so once you know the primes you can list every way.',
+      'The wording for this kind has two halves. One is “the prime numbers that make it”, as in the puzzle. The other is “every way it splits”: how many ways 28 tables can be set out in equal rows, or which sizes of equal team 24 players allow. They are one kind because the second is built from the first. Every way of sharing a number out evenly uses some of its primes multiplied together, so once you know the primes you can list every way.',
       'What separates this kind from the first is the size of the answer. The first kind answers a yes or a no. This one answers with a list, or with a count made from a list.'
     ],
     feature: { step: 'W1', option: 'parts' },
@@ -75,8 +75,8 @@ FC.cards('math', 'u2', [
     instruction: 'Both problems are about the same scout leader and the same 57 scouts. Compare one thing: does the problem ask only whether the number splits, or does it ask what the number is made of?',
     prompt: { kind: 'which', option: 'W1.parts', answer: 'la-patrols-factor' },
     difference: [
-      'In Case A the leader asks whether the 57 scouts can be split into equal patrols, with more than one patrol and more than one scout in each. The answer is a yes or a no, and the key’s answer is {a:W1.split}.',
-      'In Case B the same leader asks which prime numbers multiply together to give 57. The answer is a list, and the key’s answer is {a:W1.parts}.',
+      'In Case A the leader asks whether the 57 scouts can be split into equal patrols, with more than one patrol and more than one scout in each. The answer is a yes or a no, and the answer is {a:W1.split}.',
+      'In Case B the same leader asks which prime numbers multiply together to give 57. The answer is a list, and the answer is {a:W1.parts}.',
       'Both are about the same 57, and the working for one contains what the other needs: testing 57 finds that 3 fits, and 57 = 3 × 19. That is why they are easy to mix up. What differs is only what is asked, a verdict or a list.'
     ] }
 ]);

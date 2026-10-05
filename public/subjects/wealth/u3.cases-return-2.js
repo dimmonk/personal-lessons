@@ -21,7 +21,7 @@ FC.cases('wealth', 'u3', [
             S1: ['She borrowed £200,000 to extend the clinic', 'the bank holds her shares in the company as security'] },
     reason: { D1: 'A business she runs is most of what she owns: {cue:D1}. £850,000 out of £1,100,000 is 77%.',
               S1: 'The reserve and the spread are in place, and one thing is not: {cue:S1}. A loan against the shares is one of the three, and the bank can take them.' },
-    not: { outcome: 'deleverage', why: 'A loan the lender could use is in the case, which can look like the answer for a loan. But it is against the shares of a business she runs, and the key gives the answer for the business.' },
+    not: { outcome: 'deleverage', why: 'A loan the lender could use is in the case, which can look like the answer for a loan. But it is against the shares of a business she runs, and the answer is the one for the business.' },
     wouldChange: 'If the loan were against the clinic’s equipment and not her shares, it would be {a:S1.madesafe}.' },
 
   { id: 'w3-x-sup-3', use: 'return', tier: 'varied', setting: 'property', topic: 'car-wash sites all in one city',

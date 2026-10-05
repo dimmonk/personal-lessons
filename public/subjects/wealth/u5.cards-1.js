@@ -76,7 +76,7 @@ FC.cards('wealth', 'u5', [
       'The five names belong to the layer underneath. The same story can carry any of them, and each name turns up in every kind of story. A case about a family business is no more likely to be one name than another, and a case about a will is not always about paper.',
       'From here on, the cases change their stories on purpose. Sometimes two cases will share a person and a house and differ only underneath. When that happens, the shared story is there to show you that it tells you nothing.'
     ],
-    fixed: ['what is at risk at the handover, which is what the key asks about: {q:H1}'],
+    fixed: ['what is at risk at the handover, which is what the question is about: {q:H1}'],
     varies: ['the kind of paper', 'the size of the estate', 'the age and health of the owner', 'the family', 'the country’s rules'] },
 
   { id: 'portrait-basicdocs', kind: 'portrait', outcome: 'basicdocs',

@@ -58,6 +58,6 @@ FC.cases('math', 'u1', [
     route: { M1: ['shape'] },
     cues: { M1: ['an exact copy of her 15 cm clay model, but 2.4 m tall', 'How long is the statue’s hand?'] },
     reason: { M1: 'The statue and the model are exactly the same shape at different sizes, and the question asks for a length on one of them: {cue:M1}.' },
-    not: { outcome: 'unknown', why: 'The sizes 15 cm and 2.4 m can look like a rate to scale, with a number left out. But the statue and the model are copies of each other, and the key gives a copy to the fifth kind.' },
+    not: { outcome: 'unknown', why: 'The sizes 15 cm and 2.4 m can look like a rate to scale, with a number left out. But the statue and the model are copies of each other, and a copy goes to the fifth kind.' },
     wouldChange: 'If the problem gave the cost of clay for each kilogram and asked what a 6 kg block costs, there would be a rate and no copy, and it would be {a:M1.unknown}.' }
 ]);

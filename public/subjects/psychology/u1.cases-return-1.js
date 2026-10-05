@@ -78,7 +78,7 @@ FC.cases('psychology', 'u1', [
     route: { D1: ['pattern'] },
     cues: { D1: 'In nine years, at this address and at the two before it, according to the landlords she rang, the rent has been late most months' },
     reason: { D1: 'The case opens on one late payment and one reason, and then gives a long view of one man: {cue:D1}. Nine years, three addresses and three landlords, with the same thing in each.' },
-    not: { outcome: 'reasoning', why: 'A reason for one late payment would be {a:D1.reasoning} if the case ended there. It goes on to show the same thing for nine years and at three addresses, and when a case shows both, the key gives the larger answer.' },
+    not: { outcome: 'reasoning', why: 'A reason for one late payment would be {a:D1.reasoning} if the case ended there. It goes on to show the same thing for nine years and at three addresses, and when a case shows both, the answer is the larger one.' },
     wouldChange: 'If the case showed only this month’s late rent and his reason for it, it would be {a:D1.reasoning}.' },
 
   /* ---------- A passing moment ---------- */

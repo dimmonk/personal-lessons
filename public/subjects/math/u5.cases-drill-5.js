@@ -19,8 +19,8 @@ FC.cases('math', 'u5', [
       C1: ['A hand is the same hand whatever order the cards are held in']
     },
     reason: {
-      M1: 'The words {cue:M1} ask how many different hands there are, a count of ways something can turn out. Nothing here is followed through time, no number is hidden for a calculation to fit, no whole number is split into groups, and no shape is measured. The problem asks for the number of different results, or for a chance, which is the key’s first answer {a:M1.chance}.',
-      C1: 'The words {cue:C1} show 4 cards taken from a pack of 12, where a hand is the same in any order, so that the same cards held in a different order are one hand, so the key’s answer is {a:C1.group}.'
+      M1: 'The words {cue:M1} ask how many different hands there are, a count of ways something can turn out. Nothing here is followed through time, no number is hidden for a calculation to fit, no whole number is split into groups, and no shape is measured. The problem asks for the number of different results, or for a chance, which is the answer to the first question {a:M1.chance}.',
+      C1: 'The words {cue:C1} show 4 cards taken from a pack of 12, where a hand is the same in any order, so that the same cards held in a different order are one hand, so the answer is {a:C1.group}.'
     },
     not: {
       outcome: 'perm',
@@ -72,8 +72,8 @@ FC.cases('math', 'u5', [
       C1: ['All three have an equal say and sit around one table']
     },
     reason: {
-      M1: 'The words {cue:M1} ask how many different panels can be picked, a count of ways something can turn out. Nothing in it follows an amount as time passes, hides a number that a calculation must fit, or splits whole numbers into groups, and there is no shape to measure. What it asks for is a count of the results, or the chance of something, so the key’s first answer is {a:M1.chance}.',
-      C1: 'The words {cue:C1} show 3 managers taken from 11 who have an equal say, so that no order or role separates one panel from another with the same three, so the key’s answer is {a:C1.group}.'
+      M1: 'The words {cue:M1} ask how many different panels can be picked, a count of ways something can turn out. Nothing in it follows an amount as time passes, hides a number that a calculation must fit, or splits whole numbers into groups, and there is no shape to measure. What it asks for is a count of the results, or the chance of something, so the answer to the first question is {a:M1.chance}.',
+      C1: 'The words {cue:C1} show 3 managers taken from 11 who have an equal say, so that no order or role separates one panel from another with the same three, so the answer is {a:C1.group}.'
     },
     not: {
       outcome: 'perm',
@@ -125,8 +125,8 @@ FC.cases('math', 'u5', [
       C1: ['Every winning ticket gets the same prize, a book token']
     },
     reason: {
-      M1: 'The words {cue:M1} ask how many different sets of winning tickets there can be, a count of ways something can turn out. The problem does not change as time passes, has no hidden number for a calculation to fit, does not share whole numbers out in groups and has no shape. It is about the number of ways that something can come out, or its chance, so the key’s first answer is {a:M1.chance}.',
-      C1: 'The words {cue:C1} show 3 tickets drawn from 12 that all win the same prize, so that the same 3 tickets drawn in a different order are one set, so the key’s answer is {a:C1.group}.'
+      M1: 'The words {cue:M1} ask how many different sets of winning tickets there can be, a count of ways something can turn out. The problem does not change as time passes, has no hidden number for a calculation to fit, does not share whole numbers out in groups and has no shape. It is about the number of ways that something can come out, or its chance, so the answer to the first question is {a:M1.chance}.',
+      C1: 'The words {cue:C1} show 3 tickets drawn from 12 that all win the same prize, so that the same 3 tickets drawn in a different order are one set, so the answer is {a:C1.group}.'
     },
     not: {
       outcome: 'perm',
@@ -180,8 +180,8 @@ FC.cases('math', 'u5', [
       ]
     },
     reason: {
-      M1: 'The words {cue:M1} ask how many different pizzas can be ordered, a count of ways something can turn out. Nothing here is followed through time, no number is hidden for a calculation to fit, no whole number is split into groups, and no shape is measured. The problem asks for the number of different results, or for a chance, which is the key’s first answer {a:M1.chance}.',
-      C1: 'The words {cue:C1} show 3 different toppings taken from one menu of 8, where the pizza is the same whichever went on first, so that the same 3 toppings in any order are one pizza, so the key’s answer is {a:C1.group}.'
+      M1: 'The words {cue:M1} ask how many different pizzas can be ordered, a count of ways something can turn out. Nothing here is followed through time, no number is hidden for a calculation to fit, no whole number is split into groups, and no shape is measured. The problem asks for the number of different results, or for a chance, which is the answer to the first question {a:M1.chance}.',
+      C1: 'The words {cue:C1} show 3 different toppings taken from one menu of 8, where the pizza is the same whichever went on first, so that the same 3 toppings in any order are one pizza, so the answer is {a:C1.group}.'
     },
     not: {
       outcome: 'multprin',
@@ -232,8 +232,8 @@ FC.cases('math', 'u5', [
       ]
     },
     reason: {
-      M1: 'The words {cue:M1} ask how likely it is that something happens, a chance and not a count. Nothing in it follows an amount as time passes, hides a number that a calculation must fit, or splits whole numbers into groups, and there is no shape to measure. What it asks for is a count of the results, or the chance of something, so the key’s first answer is {a:M1.chance}.',
-      C1: 'The words {cue:C1} give a chance for each of 2 separate generators and ask how likely it is that one or more of them fails, so the key’s answer is {a:C1.atleast}.'
+      M1: 'The words {cue:M1} ask how likely it is that something happens, a chance and not a count. Nothing in it follows an amount as time passes, hides a number that a calculation must fit, or splits whole numbers into groups, and there is no shape to measure. What it asks for is a count of the results, or the chance of something, so the answer to the first question is {a:M1.chance}.',
+      C1: 'The words {cue:C1} give a chance for each of 2 separate generators and ask how likely it is that one or more of them fails, so the answer is {a:C1.atleast}.'
     },
     not: {
       outcome: 'multprin',

@@ -11,7 +11,7 @@
 
 FC.unit('math', 'u6', {
   kind: 'P',
-  rev: 1,
+  rev: 2,
   standard: 1,
   status: 'draft',        // 'live' only after the cold read in build.signoff
   tag: 'Six',
@@ -26,7 +26,7 @@ FC.unit('math', 'u6', {
   ledger: [
     { id: 'pyth~trig', pair: ['pyth', 'trig'], step: 'S1',
       shared: 'Both find a side of a triangle with a square corner, and both can be about the very same ramp, wall or slope. The same length, such as 6.5 m, can be given in either.',
-      rule: '{o:pyth} gives the lengths of two sides and no angle besides the square corner, and finds the third side from the squares of the other two. {o:trig} gives one side and one angle in degrees, and finds another side with a key on a calculator.',
+      rule: '{o:pyth} gives the lengths of two sides and no angle besides the square corner, and finds the third side from the squares of the other two. {o:trig} gives one side and one angle in degrees, and finds another side with a button on a calculator.',
       test: 'Besides the one length that everyone can see, is a second length given, or an angle in degrees?' },
     { id: 'pyth~similar', pair: ['pyth', 'similar'], step: 'S1',
       shared: 'Both can be about a triangle with a square corner and two given lengths, and a shadow is both at once. Both find a length that nobody measures directly.',
@@ -91,7 +91,8 @@ FC.unit('math', 'u6', {
   // Build notes: not shown to the learner, and left out of the fingerprint. The validator reads them.
   build: {
     history: [
-      { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the fifth procedure unit of Basic Math, replacing the old Unit Three’s second half (the four shape cards), specimens 13 and 14 and two faulty claims. Not yet deployed, so later edits before the first deploy stay revision 1. Four kinds of problem about shapes, each taught with a problem of the kind, two worked examples with every step computed, and problems the learner finishes; the key’s two crossing questions each get a card; the shadow is taught as an exception; the drill has a last-step stage, a whole-problem stage and a route stage.' }
+      { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the fifth procedure unit of Basic Math, replacing the old Unit Three’s second half (the four shape cards), specimens 13 and 14 and two faulty claims. Not yet deployed, so later edits before the first deploy stay revision 1. Four kinds of problem about shapes, each taught with a problem of the kind, two worked examples with every step computed, and problems the learner finishes; the key’s two crossing questions each get a card; the shadow is taught as an exception; the drill has a last-step stage, a whole-problem stage and a route stage.' },
+      { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' }
     ],
     // What the K2 rewrite changed in this unit's part of the key, and why (from docs/rebuild/math-plan.md, section (a)).
     keyChanges: [

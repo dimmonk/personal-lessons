@@ -13,8 +13,8 @@ FC.cards('civics', 'u4', [
     instruction: 'Both cases are about rubbish dumped in national parks, and in both the President acts on Monday. Compare one thing: what the President acts on, a bill or a person?',
     prompt: { kind: 'which', option: 'E1.forgive', answer: 'e-dump-man' },
     difference: [
-      'In Case A the President acts on a bill that Congress has passed: a bill that cuts a fine. The President will not sign it, and sends it back. Nobody has been charged with anything. The key’s answer is {a:E1.sendback}, and the case is {o:veto}.',
-      'In Case B the President acts on a man who was fined for dumping rubbish by a federal court, and forgives the crime, so that the fine is cancelled. No bill is in the story. The key’s answer is {a:E1.forgive}, and the case is {o:pardon}.',
+      'In Case A the President acts on a bill that Congress has passed: a bill that cuts a fine. The President will not sign it, and sends it back. Nobody has been charged with anything. The answer is {a:E1.sendback}, and the case is {o:veto}.',
+      'In Case B the President acts on a man who was fined for dumping rubbish by a federal court, and forgives the crime, so that the fine is cancelled. No bill is in the story. The answer is {a:E1.forgive}, and the case is {o:pardon}.',
       'The park, the rubbish and the Monday are the same. What differs is what the President acts on.'
     ] },
 
@@ -24,18 +24,18 @@ FC.cards('civics', 'u4', [
     instruction: 'Both cases are about the same free carry-on bag. Compare one thing: is the President deciding whether the bill will become a law, or is an office already putting a law into practice?',
     prompt: { kind: 'which', option: 'E1.sendback', answer: 'e-bags-bill' },
     difference: [
-      'In Case A the bill has reached the President, who refuses to sign it and sends it back with objections. The bill is not yet a law in force, so there is nothing for an office to put into practice. The key’s answer is {a:E1.sendback}, and the case is {o:veto}.',
-      'In Case B the law was passed last year, and an office now publishes what size and weight a free bag must be allowed to have, and when airlines must follow the rule. The key’s answer is {a:E1.carryout}, and the case is {o:execute}.',
+      'In Case A the bill has reached the President, who refuses to sign it and sends it back with objections. The bill is not yet a law in force, so there is nothing for an office to put into practice. The answer is {a:E1.sendback}, and the case is {o:veto}.',
+      'In Case B the law was passed last year, and an office now publishes what size and weight a free bag must be allowed to have, and when airlines must follow the rule. The answer is {a:E1.carryout}, and the case is {o:execute}.',
       'It is one law at two moments. Before it takes effect, the President may refuse it. After it takes effect, an office puts it into daily practice.'
     ] },
 
-  /* ---------- The key's question ---------- */
+  /* ---------- The question ---------- */
   { id: 'q-pres', kind: 'question', step: 'E1',
     h: 'The question you have been answering all along',
-    link: 'Since the insulation credit you have seen the key’s question at the foot of each new name, with one answer under it. This card puts the question and its six answers in one place, as the key shows them, and says why the key asks it.',
+    link: 'Since the insulation credit you have seen the question at the foot of each new name, with one answer under it. This card puts the question and its six answers in one place, and says why it is asked.',
     decides: [
       'The President and the offices do very different things, and each is held back by different limits. An office putting a law into practice may go only as far as the law allows. The President, ordering the forces or dealing with another country, is using a power the President holds alone, and a law Congress passed need not be behind it. The President can refuse a bill that Congress passed or forgive a federal crime, and these two are the President’s alone. An order or a rule that demands something of people outside the government needs a law Congress passed behind it, and without one it is beyond what the President can do.',
-      'So the key asks what the President or the office does, and the answer decides which limit to look for. Mistaking one for another sends you to the wrong limit: looking for a law behind an order to the army, or taking an office’s rule for something the President does alone.'
+      'So the question is what the President or the office does, and the answer decides which limit to look for. Mistaking one for another sends you to the wrong limit: looking for a law behind an order to the army, or taking an office’s rule for something the President does alone.'
     ],
     how: [
       'Read the whole case. Then find the sentence in which the President or the office does something: an order, a rule, a meeting, a refusal, a signed paper. It is often the last sentence, or the one the case ends on. Everything before it is how the matter got there.',
@@ -52,13 +52,13 @@ FC.cards('civics', 'u4', [
   /* ---------- Two whole cases, watched ---------- */
   { id: 'worked-hospital', kind: 'worked',
     h: 'A whole case, from the first question to the name',
-    link: 'You have the six names and the key’s question about them. Before you run a case yourself, watch two being run from the top, in the order the key asks. You are not asked anything until the end of each.',
+    link: 'You have the six names and the question about them. Before you run a case yourself, watch two being run from the top, in the order they are asked. You are not asked anything until the end of each.',
     case: 'e-w-hospital',
     steps: [
       { step: 'D1',
         reason: 'Look for the last decision in the case. The case begins with a law Congress passed last year, and that was a decision, but an old one: it is how the matter got here. The last thing the case shows being decided is what the federal health office did on Monday: {cue:D1}. It is an office of the government of the whole country. It is not a vote by lawmakers, not a judge, and not a state or a city.' },
       { step: 'E1',
-        reason: 'Now ask what the office did. A law stands behind it, and the office fills in the rest: {cue:E1}. It decided the details the law leaves open: the list, the form and the date. It added no demand of its own: it did not tell hospitals to do anything the law does not already require. That is an office putting a law into daily practice and staying inside it, and the key’s answer is {a:E1.carryout}.' }
+        reason: 'Now ask what the office did. A law stands behind it, and the office fills in the rest: {cue:E1}. It decided the details the law leaves open: the list, the form and the date. It added no demand of its own: it did not tell hospitals to do anything the law does not already require. That is an office putting a law into daily practice and staying inside it, and the answer is {a:E1.carryout}.' }
     ],
     hold: {
       neighbour: 'beyondpres',
@@ -74,14 +74,14 @@ FC.cards('civics', 'u4', [
         answer: 'b' },
       reason: [
         'For {o:beyondpres} you must be able to point to this: {needs:beyondpres}. The case has a rule that demands something of hospitals, and that is half of it. The other half, no law Congress passed that allows it, is missing: the law is in the first sentence.',
-        'It is the question from the salt in snacks. {test:execute~beyondpres} Here a law exists and the office stays inside it, so the key’s answer is {a:E1.carryout}.'
+        'It is the question from the salt in snacks. {test:execute~beyondpres} Here a law exists and the office stays inside it, so the answer is {a:E1.carryout}.'
       ]
     },
     impression: {
       resembles: 'e-credit',
       text: [
-        'The key has given its answer. Now take a second look of a different kind: does this case look like one you know? It should bring back the insulation credit. There too, a law Congress passed came first, and a federal office worked out the form and the details of how people follow it.',
-        'Here the key and the likeness agree, so the answer stands. The key’s question comes first, because it makes you point at words in the case. The likeness is only a second look. When the two disagree, do not pick the one you prefer. Go back to the key’s question and find the words in the case that answer it. The second whole case shows how.'
+        'The questions have given their answer. Now take a second look of a different kind: does this case look like one you know? It should bring back the insulation credit. There too, a law Congress passed came first, and a federal office worked out the form and the details of how people follow it.',
+        'Here the questions and the likeness agree, so the answer stands. The question comes first, because it makes you point at words in the case. The likeness is only a second look. When the two disagree, do not pick the one you prefer. Go back to the question and find the words in the case that answer it. The second whole case shows how.'
       ]
     } },
 
@@ -93,7 +93,7 @@ FC.cards('civics', 'u4', [
       { step: 'D1',
         reason: 'The case opens with the President on a visit to another country, talking trade with its leader. If it ended there, you would be looking at the President meeting another country’s leader. It does not end there. Read on: {cue:D1}. The last decision is the President’s, and it is made in a harbour. It is not a vote by lawmakers, not a judge, and not a state or a city. The answer is {a:D1.president}.' },
       { step: 'E1',
-        reason: 'The trade talks were the opening. What the President does after them is give an order to part of the armed forces: {cue:E1}. The ships obey the President, and no law is named. Nothing is being negotiated or signed at that point: the talks were put off for the day. The key’s answer is {a:E1.military}.' }
+        reason: 'The trade talks were the opening. What the President does after them is give an order to part of the armed forces: {cue:E1}. The ships obey the President, and no law is named. Nothing is being negotiated or signed at that point: the talks were put off for the day. The answer is {a:E1.military}.' }
     ],
     hold: {
       neighbour: 'diplomacy',
@@ -109,21 +109,21 @@ FC.cards('civics', 'u4', [
         answer: 'b' },
       reason: [
         'For {o:diplomacy} you must be able to point to this: {needs:diplomacy}. The first sentence shows a visit and talks about trade. But the visit is where the President is, not what the President decides. The decision at the end is an order to the navy.',
-        'It is the question from the ships and the port of Istrene. {test:commander~diplomacy} Here the President tells the forces what to do, so the key’s answer is {a:E1.military}.'
+        'It is the question from the ships and the port of Istrene. {test:commander~diplomacy} Here the President tells the forces what to do, so the answer is {a:E1.military}.'
       ]
     },
     impression: {
       resembles: 'e-flood', first: 'e-coasttalks',
       text: [
-        'Now the second look: does this case look like one you know? A President visiting another country to talk about trade may bring back the coast talks first, and that case was {a:E1.abroad}. So here the likeness and the key seem to disagree.',
-        'When that happens, go back to the key’s question and find the words in the case that answer it. They are {cue:E1}. The coast talks have nothing like them: nobody was ordered anywhere. The flood relief does: the President gave an order to the army. So the case this one really looks like is the flood relief, and the key’s answer stands.'
+        'Now the second look: does this case look like one you know? A President visiting another country to talk about trade may bring back the coast talks first, and that case was {a:E1.abroad}. So here the likeness and the questions seem to disagree.',
+        'When that happens, go back to the question and find the words in the case that answer it. They are {cue:E1}. The coast talks have nothing like them: nobody was ordered anywhere. The flood relief does: the President gave an order to the army. So the case this one really looks like is the flood relief, and the answer stands.'
       ]
     } },
 
   /* ---------- After the drill ---------- */
   { id: 'recap-pres', kind: 'recap',
     h: 'What to carry away',
-    link: 'You have now run the key on your own. This card puts the unit in one place, in the key’s words.',
+    link: 'You have now run the questions on your own. This card puts the unit in one place.',
     carry: [
       'Say what the President or the office did, and point to the words that show it. If you cannot point, you do not have an answer yet.',
       'Look for the law when the case needs one. A rule or an order that demands something of people outside the government needs a law Congress passed behind it. With one, and staying inside it, the case is {o:execute}. Without one, it is {o:beyondpres}.',
@@ -131,7 +131,7 @@ FC.cards('civics', 'u4', [
       'An order from the President is not always {o:beyondpres}. An {t:order} that only tells the offices how to do their work is {o:execute}. Look at what it demands, and of whom.',
       'A visit by another country’s leader does not make a case {o:diplomacy}, and soldiers in a case do not make it {o:commander}. What the President does decides.',
       'Only Congress can declare war, and the President cannot forgive a crime against a state’s own law. When a case seems to say otherwise, check whose decision it ends on.',
-      'Every case in this unit begins with the key’s first question, and its answer is {a:D1.president}. A signed law is not the President’s decision, and a refusal to sign is.'
+      'Every case in this unit begins with the first question, and its answer is {a:D1.president}. A signed law is not the President’s decision, and a refusal to sign is.'
     ] },
 
   { id: 'transfer-pres', kind: 'transfer',

@@ -20,7 +20,7 @@ FC.cases('math', 'u6', [
       S2: 'How high is the top of the slide above the ground?'
     },
     reason: {
-      M1: 'The problem asks {cue:M1}, a length in a {t:righttriangle} that is worked out from an angle. Nothing in it follows an amount through time, hides a number that a {t:formula} must fit, or counts ways, so the key’s first answer is {a:M1.shape}.',
+      M1: 'The problem asks {cue:M1}, a length in a {t:righttriangle} that is worked out from an angle. Nothing in it follows an amount through time, hides a number that a {t:formula} must fit, or counts ways, so the answer to the first question is {a:M1.shape}.',
       S1: 'The words {cue:S1} give the length of one side of a {t:righttriangle} and one angle in degrees besides the square corner. That is {a:S1.sideangle}.',
       S2: 'The words {cue:S2} ask how long a side is, which is {a:S2.length}.'
     },
@@ -34,13 +34,13 @@ FC.cases('math', 'u6', [
         working: 'The angle is 38°. The longest side, opposite the square corner, is the slide, 4.5 m. The side opposite the angle is the height of the top of the slide. The side next to the angle, the one that is not the longest, is the distance along the ground'
       },
       {
-        does: 'Choose the calculator key that joins the side you know to the side you want',
-        working: 'You know the longest side (4.5 m) and want the side opposite the angle. The sin key joins those two: sin = opposite ÷ longest'
+        does: 'Choose the calculator button that joins the side you know to the side you want',
+        working: 'You know the longest side (4.5 m) and want the side opposite the angle. The sin button joins those two: sin = opposite ÷ longest'
       },
-      { does: 'Write the key’s comparison with the numbers in', working: 'sin 38° = height ÷ 4.5' },
+      { does: 'Write the button’s comparison with the numbers in', working: 'sin 38° = height ÷ 4.5' },
       { does: 'Get the side you want on its own', working: 'height = 4.5 × sin 38°' },
       {
-        does: 'Read the key’s value off the calculator, set to degrees, and finish the sum',
+        does: 'Read the button’s value off the calculator, set to degrees, and finish the sum',
         working: 'sin 38° = 0.6157; 4.5 × 0.6157 = 2.7707, so about 2.8 m'
       }
     ],
@@ -50,17 +50,17 @@ FC.cases('math', 'u6', [
         {
           id: 's1',
           text: '3.5 m',
-          slip: 'you use the cos key, which compares the side next to the angle with the longest side, though the two sides in this problem are the longest side and the side opposite the angle.'
+          slip: 'you use the cos button, which compares the side next to the angle with the longest side, though the two sides in this problem are the longest side and the side opposite the angle.'
         },
         {
           id: 's2',
           text: '1.3 m',
-          slip: 'your calculator is set to radians and not to degrees, so the sin key reads 38 as 38 radians and gives 0.2964.'
+          slip: 'your calculator is set to radians and not to degrees, so the sin button reads 38 as 38 radians and gives 0.2964.'
         }
       ],
       right: 'r'
     },
-    why: 'In a {t:righttriangle} the angle settles how long each side is compared with the others, whatever the size of the triangle, and each calculator key gives one of those comparisons for the angle you type in. Choosing the key whose two sides are the one you know and the one you want, and then multiplying or dividing by its value, turns that comparison into the missing length.',
+    why: 'In a {t:righttriangle} the angle settles how long each side is compared with the others, whatever the size of the triangle, and each calculator button gives one of those comparisons for the angle you type in. Choosing the button whose two sides are the one you know and the one you want, and then multiplying or dividing by its value, turns that comparison into the missing length.',
     wouldChange: 'If the problem gave the lengths of two sides and no angle besides the square corner, it would be {o:pyth}.'
   },
 
@@ -80,7 +80,7 @@ FC.cases('math', 'u6', [
       S2: 'How far does it run along the floor?'
     },
     reason: {
-      M1: 'The problem asks {cue:M1}, a length in a {t:righttriangle} that is worked out from an angle. Nothing in it follows an amount through time, hides a number that a {t:formula} must fit, or counts ways, so the key’s first answer is {a:M1.shape}.',
+      M1: 'The problem asks {cue:M1}, a length in a {t:righttriangle} that is worked out from an angle. Nothing in it follows an amount through time, hides a number that a {t:formula} must fit, or counts ways, so the answer to the first question is {a:M1.shape}.',
       S1: 'The words {cue:S1} give the length of one side of a {t:righttriangle} and one angle in degrees besides the square corner. That is {a:S1.sideangle}.',
       S2: 'The words {cue:S2} ask how long a side is, which is {a:S2.length}.'
     },
@@ -94,16 +94,16 @@ FC.cases('math', 'u6', [
         working: 'The angle is 35°. The longest side, opposite the square corner, is the line along the edges of the steps. The side opposite the angle is the rise of 2.8 m. The side next to the angle, the one that is not the longest, is the distance along the floor'
       },
       {
-        does: 'Choose the calculator key that joins the side you know to the side you want',
-        working: 'You know the side opposite the angle (2.8 m) and want the side next to the angle. The tan key joins those two: tan = opposite ÷ next to'
+        does: 'Choose the calculator button that joins the side you know to the side you want',
+        working: 'You know the side opposite the angle (2.8 m) and want the side next to the angle. The tan button joins those two: tan = opposite ÷ next to'
       },
       {
-        does: 'Write the key’s comparison with the numbers in',
+        does: 'Write the button’s comparison with the numbers in',
         working: 'tan 35° = 2.8 ÷ distance'
       },
       { does: 'Get the side you want on its own', working: 'distance = 2.8 ÷ tan 35°' },
       {
-        does: 'Read the key’s value off the calculator, set to degrees, and finish the sum',
+        does: 'Read the button’s value off the calculator, set to degrees, and finish the sum',
         working: 'tan 35° = 0.7002; 2.8 ÷ 0.7002 = 3.9989, so about 4.0 m'
       }
     ],
@@ -113,17 +113,17 @@ FC.cases('math', 'u6', [
         {
           id: 's1',
           text: '4.9 m',
-          slip: 'you use the sin key, which compares the side opposite the angle with the longest side, though the two sides in this problem are the side opposite the angle and the side next to the angle.'
+          slip: 'you use the sin button, which compares the side opposite the angle with the longest side, though the two sides in this problem are the side opposite the angle and the side next to the angle.'
         },
         {
           id: 's2',
           text: '2.0 m',
-          slip: 'you multiply by the key’s value, though the side you want is the one under the key’s comparison and the side you know is the one on top of it, so you should divide.'
+          slip: 'you multiply by the button’s value, though the side you want is the one under the button’s comparison and the side you know is the one on top of it, so you should divide.'
         }
       ],
       right: 'r'
     },
-    why: 'In a {t:righttriangle} the angle settles how long each side is compared with the others, whatever the size of the triangle, and each calculator key gives one of those comparisons for the angle you type in. Choosing the key whose two sides are the one you know and the one you want, and then multiplying or dividing by its value, turns that comparison into the missing length.',
+    why: 'In a {t:righttriangle} the angle settles how long each side is compared with the others, whatever the size of the triangle, and each calculator button gives one of those comparisons for the angle you type in. Choosing the button whose two sides are the one you know and the one you want, and then multiplying or dividing by its value, turns that comparison into the missing length.',
     wouldChange: 'If the problem gave the lengths of two sides and no angle besides the square corner, it would be {o:pyth}.'
   },
 
@@ -143,7 +143,7 @@ FC.cases('math', 'u6', [
       S2: 'How high is the small menu?'
     },
     reason: {
-      M1: 'The problem asks {cue:M1}, a length on one of two things of exactly the same shape. Nothing in it follows an amount through time, hides a number that a {t:formula} must fit, or counts ways, so the key’s first answer is {a:M1.shape}.',
+      M1: 'The problem asks {cue:M1}, a length on one of two things of exactly the same shape. Nothing in it follows an amount through time, hides a number that a {t:formula} must fit, or counts ways, so the answer to the first question is {a:M1.shape}.',
       S1: 'The words {cue:S1} give two things of exactly the same shape at different sizes, with a length measured on both. That is {a:S1.matching}.',
       S2: 'The words {cue:S2} ask how long a part is, which is {a:S2.length}.'
     },
@@ -198,7 +198,7 @@ FC.cases('math', 'u6', [
       S2: 'How long is the real lorry, in metres?'
     },
     reason: {
-      M1: 'The problem asks {cue:M1}, a length on one of two things of exactly the same shape. Nothing in it follows an amount through time, hides a number that a {t:formula} must fit, or counts ways, so the key’s first answer is {a:M1.shape}.',
+      M1: 'The problem asks {cue:M1}, a length on one of two things of exactly the same shape. Nothing in it follows an amount through time, hides a number that a {t:formula} must fit, or counts ways, so the answer to the first question is {a:M1.shape}.',
       S1: 'The words {cue:S1} give two things of exactly the same shape at different sizes, with a length measured on both. That is {a:S1.matching}.',
       S2: 'The words {cue:S2} ask how long a part is, which is {a:S2.length}.'
     },

@@ -63,8 +63,8 @@ FC.cards('wealth', 'u2', [
     instruction: 'Cora and her sister Dee started on the same £1,050,000 and the same 4%. Compare one thing: whether the sum is the same number of pounds as before, or worked out again.',
     prompt: { kind: 'which', option: 'E1.fixedsum', answer: 'e-l-burn-a' },
     difference: [
-      'In Case A Cora fixed £42,000 when {t:pot} was £1,050,000 and has never changed it. Her pot is now £840,000, so £42,000 is 5%. The key’s answer is {a:E1.fixedsum}, and the case is {o:burnrate}.',
-      'In Case B Dee works out 4% of what {t:pot} is worth every January. This year that is £33,600, and she cuts her holiday budget. The key’s answer is {a:E1.nomore}, and the case is {o:nocut}.',
+      'In Case A Cora fixed £42,000 when {t:pot} was £1,050,000 and has never changed it. Her pot is now £840,000, so £42,000 is 5%. The answer is {a:E1.fixedsum}, and the case is {o:burnrate}.',
+      'In Case B Dee works out 4% of what {t:pot} is worth every January. This year that is £33,600, and she cuts her holiday budget. The answer is {a:E1.nomore}, and the case is {o:nocut}.',
       'The sisters started with the same sum and the same share. Today Cora takes £8,400 more than Dee from the same pot. Cora is taking 5% and Dee still takes 4%. Over the years, {t:pot} of the one who reset has more left.'
     ] }
 ]);

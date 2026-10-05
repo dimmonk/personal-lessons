@@ -9,7 +9,7 @@ FC.cases('stats', 'u5', [
     text: "A leaflet says: 'Joining our book club cuts your risk of memory loss by 30%, so join today.' The leaflet gives no counts. People who join clubs also tend to see friends more and to exercise more, which the leaflet does not mention.",
     outcome: 'relrisk', route: { S1: ['compare'], C1: ['numbers'] },
     cues: { S1: 'cuts your risk of memory loss by 30%', C1: 'The leaflet gives no counts' },
-    reason: { S1: 'The claim also says that joining made the difference, and the case shows another way the result could come about. But the figure is given as a share of an earlier risk with nothing beside it: {cue:S1}. The key gives the earlier part, what the figure is set beside, before the claim of cause.',
+    reason: { S1: 'The claim also says that joining made the difference, and the case shows another way the result could come about. But the figure is given as a share of an earlier risk with nothing beside it: {cue:S1}. When a case shows both, the answer is the earlier part, what the figure is set beside, and not the claim of cause.',
               C1: 'The leaflet says {cue:C1}. A cut of 30% is 10 people in 100 with memory loss falling to 7, or 1 in 100 falling to 0.7, and the leaflet does not let you tell which.' },
     not: { outcome: 'comp_ok', why: 'A claim that holds gives the counts behind its figure, and one that claims a cause needs groups formed by chance. This leaflet gives only a percentage.' } },
 
@@ -66,7 +66,7 @@ FC.cases('stats', 'u5', [
     text: "A neighborhood group posts: 'Bike thefts on our street are up 400% this quarter!' The police log shows one bike stolen last quarter and five this quarter.",
     outcome: 'smalln', route: { S1: ['counted'], A1: ['handful'] },
     cues: { S1: 'one bike stolen last quarter and five this quarter', A1: 'one bike stolen last quarter and five this quarter' },
-    reason: { S1: 'The post gives a percentage with no counts, which can look like what the figure is set beside. But the log shows how few there are behind it: {cue:S1}. The key gives the people or things in the figure before what it is set beside.',
+    reason: { S1: 'The post gives a percentage with no counts, which can look like what the figure is set beside. But the log shows how few there are behind it: {cue:S1}. When a case shows both, the answer is the people or things in the figure, which come before what it is set beside.',
               A1: 'The figure rests on {cue:A1}. One bike more or fewer moves the percentage a long way: if next quarter two are stolen, the same group could post "down 60%". There are only a handful.' },
-    not: { outcome: 'relrisk', why: 'The post leaves out the counts, which is how {o:relrisk} looks. But the log shows the counts, and they are tiny. The key gives that part first.' } }
+    not: { outcome: 'relrisk', why: 'The post leaves out the counts, which is how {o:relrisk} looks. But the log shows the counts, and they are tiny. That part comes first.' } }
 ]);

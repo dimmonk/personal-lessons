@@ -12,19 +12,19 @@ FC.cards('scams', 'u2', [
     h: 'A request about your phone or your computer, and four things it can be',
     canDo: [
       'After this unit you can take a request to install something, to open a file, or to let someone watch your phone or computer, and say which of four things it is: three scams, and one that is real: software that you chose and fetched yourself. You will be able to point to the words in it that show which one, and to say what to do on the spot.',
-      'The request can come as a pop-up, a phone call, a text, an email or a download that you went and found yourself. Where it comes from does not change the answer to the key’s first question, which you already know: all of them are {a:D1.device}. This unit starts there, and teaches the one question that gives each of them its name.'
+      'The request can come as a pop-up, a phone call, a text, an email or a download that you went and found yourself. Where it comes from does not change the answer to the first question, which you already know: all of them are {a:D1.device}. This unit starts there, and teaches the one question that gives each of them its name.'
     ],
     everyday: [
       'You have probably met all four. A page fills your laptop with a siren and a phone number. An email from a firm you have never heard of, with a file attached. A caller who says that you are owed a refund and needs a minute to see your computer. And, on an ordinary day, a program that you decided to download from its maker’s website.',
       'On the surface they are alike. A box asks you to allow something, and a message or a helpful person wants you to go ahead. Three of the four are scams. One is perfectly fine, and a learner who treats it as a scam stops installing anything, including the updates that keep a device safe. So this unit teaches both halves: how to spot the three, and how to recognise the one that is real.',
       'It teaches you where to look. It is not at the box that appears, not at the name of the program, and not at what is installed. It is at how the request came to you, and that is something you know at the moment you are asked, before you press anything.'
     ],
-    add: 'This part of the key has one question, not two or three: how a request reached you is enough to give each of the four its name, and there is nothing else that you could still ask before it is too late. The cards say why. Where something comes up that you cannot know until afterwards, they say so, and they say what to do about it.',
+    add: 'This part has one question, not two or three: how a request reached you is enough to give each of the four its name, and there is nothing else that you could still ask before it is too late. The cards say why. Where something comes up that you cannot know until afterwards, they say so, and they say what to do about it.',
     map: { branch: 'device' } },
 
   /* ---------- Real installation ---------- */
   { id: 'meet-realinstall', kind: 'meet', outcome: 'realinstall',
-    link: 'You have the first question of the key, and its answer for everything in this unit. The first of the four names to look at is the one that is not a scam, because you need to recognise it before you learn what the three scams copy.',
+    link: 'You have the first question, and its answer for everything in this unit. The first of the four names to look at is the one that is not a scam, because you need to recognise it before you learn what the three scams copy.',
     case: 'dv-video-app', mark: 'I1',
     strip: [
       'There is one person, Priya, and one program that she wants: a video-calling program for her team.',
@@ -33,12 +33,12 @@ FC.cards('scams', 'u2', [
       'Nobody phoned her, messaged her or emailed her about it. Nobody is on a call with her.'
     ],
     explain: [
-      'What you are shown is software that a person chose and fetched. The key counts it as the real thing and gives it a name of its own, because the scams in this unit are copies of it. A scam that wants you to install something has to look like the ordinary business of getting software.',
+      'What you are shown is software that a person chose and fetched. It counts as the real thing and has a name of its own, because the scams in this unit are copies of it. A scam that wants you to install something has to look like the ordinary business of getting software.',
       'Two parts of the case carry the whole idea. The first is where Priya went: to the maker’s own website, by an address that she typed. That is {t:already}: an address that was hers before any message could reach her. The same would be true of a program that she found in the app store that came with her phone, or at an address that she had saved. The second is who started it. Priya did. Nobody had contacted her, so nobody had a reason to hurry her or to tell her what to click.',
       'Notice what is not part of the idea. The box that asks whether to allow changes is a normal part of installing a program, and it appears for every one, including the harmful ones, so it tells you nothing either way. Nor does it matter that the program is well known. What matters is how Priya came to be standing at the download button.'
     ],
     feature: { step: 'I1', option: 'own' },
-    name: 'The name for this is {o:realinstall}. The words mean what they say: the installation is real, because you chose the software and fetched it yourself. Nothing is wrong in a case of this name. It is in the key on purpose: without it, every installation would look like something to fear.' },
+    name: 'The name for this is {o:realinstall}. The words mean what they say: the installation is real, because you chose the software and fetched it yourself. Nothing is wrong in a case of this name. It has a name on purpose: without one, every installation would look like something to fear.' },
 
   { id: 'again-realinstall', kind: 'again', outcome: 'realinstall',
     link: 'The last card gave you what to point to, from one case: {needs:realinstall}. Here is a second case with a different story. This one is on a phone.',
@@ -55,10 +55,10 @@ FC.cards('scams', 'u2', [
     link: 'The last card asked you to ignore the story. That instruction holds for the whole unit, so here it is once in full.',
     body: [
       'Every case in this unit has two layers. The top layer is the story: a video-calling program, a running app, a parcel, a bank, a router. The layer underneath is how the request reached the person: through something they already had, or through a message, a call, a pop-up or a search.',
-      'The key asks about the layer underneath: {q:I1} The same program can be fetched by one person and sent to another, and the box on the computer is the same box either way. So the box, the name of the program and the name of the company tell you nothing.',
+      'The question is about the layer underneath: {q:I1} The same program can be fetched by one person and sent to another, and the box on the computer is the same box either way. So the box, the name of the program and the name of the company tell you nothing.',
       'Three more things change on purpose from here. Sometimes the story is alarming and the case is real. Sometimes the story is dull and the case is a scam. And sometimes two cases share the same person and the same program, and differ only in how the request arrived. When that happens, the shared story is there to show you that it tells you nothing.'
     ],
-    fixed: ['how the request reached the person, which is what the key asks: {q:I1}'],
+    fixed: ['how the request reached the person, which is the question: {q:I1}'],
     varies: ['the program or the problem', 'the company named', 'how alarming it sounds', 'the kind of device', 'whether the box on the computer looks official'] },
 
   { id: 'portrait-realinstall', kind: 'portrait', outcome: 'realinstall',

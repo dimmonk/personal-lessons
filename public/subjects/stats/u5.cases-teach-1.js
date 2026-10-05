@@ -39,15 +39,15 @@ FC.cases('stats', 'u5', [
     reason: { C1: 'The newsletter gives {cue:C1}: a share of how many arrivals were late before, with no word on how many that was or how many there are now. A fall of 60% is 5 late students falling to 2, or 500 falling to 200. The words do not let you tell which.' } },
 
   /* ---------- A percentage without the numbers, beside A fair comparison: same story, two answers ---------- */
-  { id: 'la1-bus-pct', use: 'teach', tier: 'varied', setting: 'community', topic: 'late buses, a percentage only', name: 'The Route 12 percentage',
-    text: "The city transit blog says: 'Riders on Route 12 are 50% more likely to arrive late than riders on Route 9.' The post gives no counts.",
+  { id: 'la1-bus-pct', use: 'teach', tier: 'varied', setting: 'community', topic: 'late buses, a percentage only', name: 'The Line 12 percentage',
+    text: "The city transit blog says: 'Riders on Line 12 are 50% more likely to arrive late than riders on Line 9.' The post gives no counts.",
     outcome: 'relrisk', route: { S1: ['compare'], C1: ['numbers'] },
-    cues: { C1: 'Riders on Route 12 are 50% more likely to arrive late than riders on Route 9' } },
+    cues: { C1: 'Riders on Line 12 are 50% more likely to arrive late than riders on Line 9' } },
 
-  { id: 'la1-bus-counts', use: 'teach', tier: 'varied', setting: 'community', topic: 'late buses, the counts given', name: 'The Route 12 counts',
-    text: "The city transit blog says: 'Riders on Route 12 are more likely to arrive late than riders on Route 9.' In March, 15 of 300 trips arrived late on Route 12 and 10 of 300 trips on Route 9. Both routes are weekday commuter routes of the same length, and every trip was timed the same way.",
+  { id: 'la1-bus-counts', use: 'teach', tier: 'varied', setting: 'community', topic: 'late buses, the counts given', name: 'The Line 12 counts',
+    text: "The city transit blog says: 'Riders on Line 12 are more likely to arrive late than riders on Line 9.' In March, 15 of 300 trips arrived late on Line 12 and 10 of 300 trips on Line 9. Both lines are weekday commuter lines of the same length, and every trip was timed the same way.",
     outcome: 'comp_ok', route: { S1: ['holds'], H1: ['difference'] },
-    cues: { H1: '15 of 300 trips arrived late on Route 12 and 10 of 300 trips on Route 9' } },
+    cues: { H1: '15 of 300 trips arrived late on Line 12 and 10 of 300 trips on Line 9' } },
 
   /* ---------- A percentage without the numbers, beside Base rate fallacy: the same scanner ---------- */
   { id: 'la2-scan-pct', use: 'teach', tier: 'varied', setting: 'health', topic: 'a scanner and missed diagnoses', name: 'The scanner percentage',

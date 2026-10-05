@@ -9,12 +9,12 @@
 
 FC.unit('math', 'u1', {
   kind: 'C',
-  rev: 1,
+  rev: 2,
   standard: 1,
   status: 'draft',        // 'live' only after the cold read in build.signoff
   tag: 'One',
   title: { text: 'What kind of problem is it?' },
-  subtitle: 'The key’s first question, and the five kinds of problem it sorts every problem into',
+  subtitle: 'The first question, and the five kinds of problem it sorts every problem into',
   teaches: { steps: ['M1'], outcomes: [], terms: ['righttriangle', 'formula'], families: ['whole', 'unknown', 'growth', 'chance', 'shape'] },
   assumes: [],            // the first unit of the subject
 
@@ -103,7 +103,8 @@ FC.unit('math', 'u1', {
   // Build notes: not shown to the learner, and left out of the fingerprint. The validator reads them.
   build: {
     history: [
-      { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the gate unit of Basic Math, replacing the old Unit One (nine cards and the sorting drill). Not yet deployed, so later edits before the first deploy stay revision 1. The five kinds are taught one at a time; the three tie-breaks of the first question are taught as exceptions; nothing is solved.' }
+      { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the gate unit of Basic Math, replacing the old Unit One (nine cards and the sorting drill). Not yet deployed, so later edits before the first deploy stay revision 1. The five kinds are taught one at a time; the three tie-breaks of the first question are taught as exceptions; nothing is solved.' },
+      { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' }
     ],
     // What the K2 rewrite changed in the gate, and why (from docs/rebuild/math-plan.md, section (a)).
     keyChanges: [

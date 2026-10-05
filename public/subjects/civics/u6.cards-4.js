@@ -11,8 +11,8 @@ FC.cards('civics', 'u6', [
     instruction: 'Both cases are about life jackets on boats, and in both the state asks for two for each person where the federal law asks for one. Compare one thing: what the federal law says about the states.',
     prompt: { kind: 'which', option: 'S2.floor', answer: 'u6-jackets-floor' },
     difference: [
-      'In Case A the federal law says that no state may require anything different. It is meant to be the only rule, so the state’s two life jackets give way. The key’s answer is {a:S2.onlyrule}, and the case is {o:preempted}.',
-      'In Case B the federal law says that it is a minimum, and that a state may require more. The state’s two life jackets stand beside it, and a boat with two for each person also meets the federal rule. The key’s answer is {a:S2.floor}, and the case is {o:concurrent}.',
+      'In Case A the federal law says that no state may require anything different. It is meant to be the only rule, so the state’s two life jackets give way. The answer is {a:S2.onlyrule}, and the case is {o:preempted}.',
+      'In Case B the federal law says that it is a minimum, and that a state may require more. The state’s two life jackets stand beside it, and a boat with two for each person also meets the federal rule. The answer is {a:S2.floor}, and the case is {o:concurrent}.',
       'The state’s rule is the same in both cases, word for word, so you cannot tell the cases apart from the state’s rule. You can only tell from what the federal law says about the states.'
     ] },
 
@@ -35,7 +35,7 @@ FC.cards('civics', 'u6', [
     prompt: { kind: 'which', option: 'S2.onlyrule', answer: 'u6-wait-citizen' },
     difference: [
       'In Case A the matter is marriage. It is not on the list of federal powers, and the case names no federal law about it. The state decides, and the case is {o:police}.',
-      'In Case B the matter is becoming a citizen, which is on the list of federal powers, and Congress has already written the rules, meant to be the only ones. The state’s extra three years gives way. The key’s answer is {a:S2.onlyrule}, and the case is {o:preempted}.',
+      'In Case B the matter is becoming a citizen, which is on the list of federal powers, and Congress has already written the rules, meant to be the only ones. The state’s extra three years gives way. The answer is {a:S2.onlyrule}, and the case is {o:preempted}.',
       'The state’s rule has the same shape in both cases: a wait before a legal step. So the shape tells you nothing. What differs is whether a federal law covers the same matter and is meant to be the only rule.'
     ] },
 
@@ -43,11 +43,11 @@ FC.cards('civics', 'u6', [
     h: 'A state’s safety rule that gives way',
     link: 'The last card put two state rules side by side: one on a matter nothing federal covers, and one on a matter a federal law covers. Here is a case that is hard because it sounds so much like the first.',
     case: 'u6-cribs',
-    setup: 'This looks like {o:police}: a state, caring about the safety of babies, makes a rule about goods sold in its own shops. A state’s concern for the health and safety of its people is exactly what its wide power is for. Yet the key’s answer for this case is {a:S2.onlyrule}, and the case is {o:preempted}.',
+    setup: 'This looks like {o:police}: a state, caring about the safety of babies, makes a rule about goods sold in its own shops. A state’s concern for the health and safety of its people is exactly what its wide power is for. Yet the answer for this case is {a:S2.onlyrule}, and the case is {o:preempted}.',
     prompt: { kind: 'phrase', answer: 'A federal law sets one safety standard for every crib sold in the country, and says that no state may set a different one' },
     because: [
       'Ask what else covers the matter. A federal law sets one safety standard for every crib sold in the country, and says that no state may set a different one. Selling cribs across the country is trade between the states, which is on the list of federal powers, and Congress has used the power and meant its standard to be the only one.',
-      'The state’s reason for acting was a good one, and the matter sounds like something a state would settle for itself. But the state’s reason is not what the key asks about. It asks whether a federal law covers the same matter and is meant to be the only rule, and here it does.'
+      'The state’s reason for acting was a good one, and the matter sounds like something a state would settle for itself. But the state’s reason is not what is asked. The question is whether a federal law covers the same matter and is meant to be the only rule, and here it does.'
     ],
     take: 'A rule can sound as though it belongs to the state and still give way. Always ask what else covers the matter before you settle on the state’s own.' },
 
@@ -80,7 +80,7 @@ FC.cards('civics', 'u6', [
       'So the question that matters here is not who made the rule. A state, a city and a county are all bound. The question is what else covers the matter, and for this case the answer is a right.'
     ],
     feature: { step: 'S2', option: 'right' },
-    name: 'The key’s answer to this question is the one printed above, and the name for the case is {o:protected}. It means that a right the Constitution protects binds the states too, so the rule cannot stand. Here a city made the rule, and the first question gets the answer {a:S1.local}. Had a state made it, the answer would be {a:S1.own}. For this name, as for the last two, it makes no difference.' },
+    name: 'The answer to this question is the one printed above, and the name for the case is {o:protected}. It means that a right the Constitution protects binds the states too, so the rule cannot stand. Here a city made the rule, and the first question gets the answer {a:S1.local}. Had a state made it, the answer would be {a:S1.own}. For this name, as for the last two, it makes no difference.' },
 
   { id: 'again-protected', kind: 'again', outcome: 'protected',
     link: 'The leaflets gave you what to point to: {needs:protected}. Here is a second case, with a different right and a different maker.',

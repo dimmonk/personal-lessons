@@ -50,7 +50,7 @@ FC.cases('stats', 'u3', [
     reason: { S1: 'The report speaks for all the charity’s supporters, but the figure comes from the 31,000 who voted: {cue:S1}. 31,000 is 8 in every 100 of the 400,000 on the list.',
               A1: 'The email list of 400,000 makes the case look like a known list that was asked. But nobody was asked by name: {cue:A1}. Anyone who saw the poll could vote, and the ones who did chose to.' },
     not: { outcome: 'nonresp', why: 'The charity has a known list of 400,000, which sounds like a list that was asked and did not reply. But the poll was never emailed to the list. Nobody was asked by name.' },
-    wouldChange: 'If the charity had emailed the poll to all 400,000 on its list, and 31,000 had replied with no follow-up, the answer to the question for this branch would be {a:A1.replied}.' },
+    wouldChange: 'If the charity had emailed the poll to all 400,000 on its list, and 31,000 had replied with no follow-up, the answer to this question would be {a:A1.replied}.' },
 
   /* ---------- Reverse items: the name is given, the learner says what to expect ---------- */
   { id: 'cd-rev-survivor', use: 'drill', kind: 'reverse', outcome: 'survivor', expect: 'find',

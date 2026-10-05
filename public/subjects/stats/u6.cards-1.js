@@ -19,7 +19,7 @@ FC.cards('stats', 'u6', [
 
   /* ---------- No comparison group ---------- */
   { id: 'meet-nocontrol', kind: 'meet', outcome: 'nocontrol',
-    link: 'The first three parts of a claim can all hold, and the claim can still go wrong at the fourth, when it gives one thing as the reason for another. The key’s question for that part is {q:K1}. Here is the first of its four answers, in a claim whose figures are all given and have nothing wrong with them.',
+    link: 'The first three parts of a claim can all hold, and the claim can still go wrong at the fourth, when it gives one thing as the reason for another. The question for that part is {q:K1}. Here is the first of its four answers, in a claim whose figures are all given and have nothing wrong with them.',
     case: 'k-sleepapp', mark: 'K1',
     strip: [
       'There is a claim that something worked: "Our new bedtime app works."',
@@ -55,11 +55,11 @@ FC.cards('stats', 'u6', [
     h: 'The story never decides the answer',
     link: 'The last card asked you to ignore the story. That holds for the whole unit, so here it is once in full.',
     body: [
-      'Every claim in this unit has two layers. The top layer is the story: a clinic, a café, a school, a road. The layer underneath is the key’s question for this part: {q:K1} The four answers belong to the layer underneath, and any of them can turn up in any story.',
+      'Every claim in this unit has two layers. The top layer is the story: a clinic, a café, a school, a road. The layer underneath is the question for this part: {q:K1} The four answers belong to the layer underneath, and any of them can turn up in any story.',
       'From here on the cases change their stories on purpose. Sometimes two cases will share a story and differ only underneath. When that happens, the shared story is there to show you that it tells you nothing.',
       'One thing stays the same in every case here. The first three parts of the claim already hold: the people or things counted are a fair picture, what is counted is the same throughout, and the numbers are given. The only thing in doubt is the step from "these go together" to "this made that happen".'
     ],
-    fixed: ['what the key asks about: {q:K1}'],
+    fixed: ['what this question asks about: {q:K1}'],
     varies: ['the topic', 'the people', 'how much is at stake', 'how sensible it sounds that the thing would work', 'how big the difference is'] },
 
   { id: 'portrait-nocontrol', kind: 'portrait', outcome: 'nocontrol',

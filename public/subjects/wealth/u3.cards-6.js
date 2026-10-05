@@ -1,5 +1,5 @@
 // Wealth Preservation, Unit Three, part three (second half): the word "a limited company", several properties or businesses in one
-// name, its look-alike pair with the claim bigger than the insurance, and the exception in which the key chooses the claim.
+// name, its look-alike pair with the claim bigger than the insurance, and the exception in which the answer is the claim.
 // Field guide: see u3.cards-1.js.
 
 FC.cards('wealth', 'u3', [
@@ -36,7 +36,7 @@ FC.cards('wealth', 'u3', [
     ],
     feature: { step: 'S1', option: 'onename' },
     name: [
-      'The key’s answer is {a:S1.onename}, and the name of what to do about it is {o:entity}. The name says what the fix is, and the “each” in it is the point: one company for each property or business, and not one company for all of them.',
+      'The answer is {a:S1.onename}, and the name of what to do about it is {o:entity}. The name says what the fix is, and the “each” in it is the point: one company for each property or business, and not one company for all of them.',
       'One company for all of them would put {t:claim} on one back in reach of the rest.'
     ] },
 
@@ -69,7 +69,7 @@ FC.cards('wealth', 'u3', [
     ask: '“If something went wrong in this one, what else could the claim reach?” If the answer is everything, because everything is in one name, you are probably looking at this answer.',
     act: [
       'First, list every property and business, with its value and the name it is held in, and mark your own home.',
-      'Second, check the insurance on each. Cover that is too small is the cheaper first fix, and when it is in the case the key’s answer is {a:S1.bigclaim}.',
+      'Second, check the insurance on each. Cover that is too small is the cheaper first fix, and when it is in the case the answer is {a:S1.bigclaim}.',
       'Third, ask a solicitor for a written quote for putting each into its own company: the one-off cost, the yearly cost, any tax and fees on moving it, and what each lender would require, such as a personal promise to repay.',
       'Fourth, set the yearly cost against what each company would keep out of reach, and go ahead only where the saving is clearly larger. Below some size it is not worth it.',
       'Fifth, keep each company’s money and affairs apart from your own: a company run as if it were the owner’s purse can lose its protection.'
@@ -85,21 +85,21 @@ FC.cards('wealth', 'u3', [
     instruction: 'Both cases are about Maureen, who rents out flats. Compare one thing: whether the case shows {t:claim} bigger than the insurance, or only how the properties are held.',
     prompt: { kind: 'which', option: 'S1.bigclaim', answer: 'w3-h-la-ie-a' },
     difference: [
-      'In Case A she has one flat. A lawyer says a tenant badly hurt on its stairs could win £1,200,000, and her insurance pays up to £250,000: a gap of £950,000. The key’s answer is {a:S1.bigclaim}, and the name is {o:insure}. With one flat there is nothing to separate it from.',
-      'In Case B she has five flats and her house, all in her own name, and the case says nothing about {t:claim} bigger than the insurance. A demand on one could reach the other four and her home. The key’s answer is {a:S1.onename}, and the name is {o:entity}.',
-      'The first case is about the size of one claim. The second is about the reach of any claim. A case can show both at once, and the key then decides between them.'
+      'In Case A she has one flat. A lawyer says a tenant badly hurt on its stairs could win £1,200,000, and her insurance pays up to £250,000: a gap of £950,000. The answer is {a:S1.bigclaim}, and the name is {o:insure}. With one flat there is nothing to separate it from.',
+      'In Case B she has five flats and her house, all in her own name, and the case says nothing about {t:claim} bigger than the insurance. A demand on one could reach the other four and her home. The answer is {a:S1.onename}, and the name is {o:entity}.',
+      'The first case is about the size of one claim. The second is about the reach of any claim. A case can show both at once, and when it does, the answer is the first.'
     ] },
 
   { id: 'w3-exc-insure', kind: 'exception', looksLike: 'entity', is: 'insure', ledger: 'insure~entity',
-    h: 'Several properties in one name, and the key’s answer is still the insurance',
-    link: 'A case with several properties in one name looks like {o:entity}. This card shows a case in which the properties are exactly that, and the key gives a different answer.',
+    h: 'Several properties in one name, and the answer is still the insurance',
+    link: 'A case with several properties in one name looks like {o:entity}. This card shows a case in which the properties are exactly that, and the answer is a different one.',
     case: 'w3-h-exc-ins',
-    setup: 'Kwame has five flats and his own home, all in his own name. That is what {o:entity} usually looks like, and it is true. Yet the key’s answer for this case is {a:S1.bigclaim}, and the name is {o:insure}.',
+    setup: 'Kwame has five flats and his own home, all in his own name. That is what {o:entity} usually looks like, and it is true. Yet the answer for this case is {a:S1.bigclaim}, and the name is {o:insure}.',
     prompt: { kind: 'phrase', answer: 'a tenant badly hurt in a fall there could win £2,000,000' },
     because: [
       'Look at what the case shows besides the properties. A lawyer says {t:claim} on the oldest flat could reach £2,000,000, and the landlord’s insurance pays up to £300,000. The gap is £1,700,000. Kwame owns £1,400,000 in all, so this one claim could take everything he has, whether the flats are in one name or not.',
       'Companies would cut the reach of {t:claim}, as they did for Bo. But they would not pay it, and the flat with the stairs would still be in the claim’s way. More cover would pay it. It is the cheaper first fix, because its cost is a premium and not a set of companies, and it deals with the size of the claim, which is what threatens most of what he has.',
-      'The key decides this, and it is a decision and not a fact of nature: real advisers differ about which to do first. The key gives the claim bigger than the insurance, because insurance pays the claim itself and costs less than setting up and running six companies.'
+      'This is a decision and not a fact of nature: real advisers differ about which to do first. The answer is the claim bigger than the insurance, because insurance pays the claim itself and costs less than setting up and running six companies.'
     ],
     take: 'The insurance comes first. When it is well above the biggest claim, what is left to say about the properties depends on the case as it then stands.' }
 ]);

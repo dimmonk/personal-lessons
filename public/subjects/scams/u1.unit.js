@@ -7,12 +7,12 @@
 
 FC.unit('scams', 'u1', {
   kind: 'C',              // C classification, F facts, P procedure
-  rev: 1,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
+  rev: 2,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
   standard: 1,            // lesson-standard version this unit was built to
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author)
   tag: 'One',
   title: { text: 'What it is asking you to do' },   // a gate unit is titled in plain words; the answers are taught inside it
-  subtitle: 'The key’s first question, and the five things a message, a call or an offer can ask of you',
+  subtitle: 'The first question, and the five things a message, a call or an offer can ask of you',
   teaches: { steps: ['D1'], outcomes: [], terms: ['already', 'check', 'code', 'permission', 'screenshare'],
              families: ['device', 'access', 'money', 'details', 'nothing'] },
   assumes: [],            // the first unit of the subject
@@ -66,7 +66,7 @@ FC.unit('scams', 'u1', {
     { id: 'p3', title: 'Money, and facts about you',
       cards: ['meet-money', 'again-money', 'portrait-money', 'check-money', 'look-money-nothing', 'exc-refund', 'exc-fine',
               'meet-details', 'again-details', 'portrait-details', 'check-details', 'look-money-details', 'refute-careful'] },
-    { id: 'p4', title: 'The key’s first question, two whole cases, then the drill',
+    { id: 'p4', title: 'The first question, two whole cases, then the drill',
       cards: ['q-gate', 'check-gate', 'worked-leaving', 'worked-statement'], drill: true, close: ['recap-gate', 'transfer-gate', 'plan-gate'] }
   ],
 
@@ -107,7 +107,8 @@ FC.unit('scams', 'u1', {
   // Build notes: not shown to the learner, and left out of the fingerprint. The validator reads them.
   build: {
     history: [
-      { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the gate unit, written to the rewritten key (docs/rebuild/scams-plan.md). Not yet deployed, so later edits before the first deploy stay revision 1. Five families, with the real notice that asks nothing taught first; five term cards; eight look-alike pairs; a baseline check of six cases.' }
+      { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the gate unit, written to the rewritten key (docs/rebuild/scams-plan.md). Not yet deployed, so later edits before the first deploy stay revision 1. Five families, with the real notice that asks nothing taught first; five term cards; eight look-alike pairs; a baseline check of six cases.' },
+      { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' }
     ],
     // What the K2 rewrite changed in the gate, and why (from docs/rebuild/scams-plan.md, section a).
     keyChanges: [

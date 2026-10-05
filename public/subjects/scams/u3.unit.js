@@ -8,7 +8,7 @@
 
 FC.unit('scams', 'u3', {
   kind: 'C',              // C classification, F facts, P procedure
-  rev: 1,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
+  rev: 2,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
   standard: 1,            // lesson-standard version this unit was built to
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author). The app labels a draft as a draft.
   tag: 'Three',
@@ -61,7 +61,7 @@ FC.unit('scams', 'u3', {
               'look-codescam-realsignin', 'exc-both', 'refute-thread'] },
     { id: 'p3', title: 'An Allow, for an app',
       cards: ['meet-appscam', 'again-appscam', 'portrait-appscam', 'check-appscam', 'look-appscam-realsignin'] },
-    { id: 'p4', title: 'The key’s two questions, two whole cases, then the drill',
+    { id: 'p4', title: 'The two questions, two whole cases, then the drill',
       cards: ['q-A1', 'check-A1', 'q-A2', 'check-A2', 'worked-code', 'worked-cv'], drill: true, close: ['recap', 'transfer', 'plan-access'] }
   ],
 
@@ -107,7 +107,8 @@ FC.unit('scams', 'u3', {
   build: {
     // What changed at each revision (R1). One entry for every revision from 1 to rev.
     history: [
-      { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the access branch of the rewritten key (docs/rebuild/scams-plan.md), taught as a branch unit with two questions. The real sign-in is met first and is in every case stage; three scams (a copied page that asks for a password, someone who asks for a code that has just come to your phone, an app that asks for far more than its job); six look-alike pairs; the key’s tie-break (a password then a code) taught on a named case; every portrait says what to do on the spot. Not yet deployed, so later edits before the first deploy stay revision 1.' }
+      { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the access branch of the rewritten key (docs/rebuild/scams-plan.md), taught as a branch unit with two questions. The real sign-in is met first and is in every case stage; three scams (a copied page that asks for a password, someone who asks for a code that has just come to your phone, an app that asks for far more than its job); six look-alike pairs; the tie-break (a password then a code) taught on a named case; every portrait says what to do on the spot. Not yet deployed, so later edits before the first deploy stay revision 1.' },
+      { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' }
     ],
     // What changed in the key for this branch, and why (K2). Old wording is the app's wording before the rebuild
     // (from docs/rebuild/scams-plan.md, section a).

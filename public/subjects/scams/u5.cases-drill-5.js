@@ -42,7 +42,7 @@ FC.cases('scams', 'u5', [  /* ---------- Third group, varied ---------- */
               F1: 'A policy number and a date of birth are facts that identify her: {cue:F1}.',
               F2: 'The first call came to her, and she gave it nothing. What she then did was to begin a call of her own, to a number she already had: {cue:F2}. That second call is hers, and the adviser asks only for what finding the account needs.' },
     not: { outcome: 'identitytheft', why: 'The story begins with a call that came to her, which is the kind that does not fit. But the call whose request she answered is the one she made herself.' },
-    wouldChange: 'If she had given her date of birth to the first caller, the one who rang her, the key’s answer would be the one for something that does not fit.' },
+    wouldChange: 'If she had given her date of birth to the first caller, the one who rang her, the answer would be the one for something that does not fit.' },
 
   { id: 'u5-r-ticket', use: 'drill', tier: 'misleading', setting: 'relationships', topic: 'a chat, then a passport photo for an invitation',
     echo: 'u5-wrongno',

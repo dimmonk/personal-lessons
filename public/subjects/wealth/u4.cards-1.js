@@ -20,7 +20,7 @@ FC.cards('wealth', 'u4', [
       'The fall was the same for all four. What differed was what each of them had waiting for the money. Three of them were caught, in three different ways, and the fourth was not caught at all. A fall in prices is not the thing to look for, because falls come to everyone. The thing to look for is what a fall would catch, and this unit teaches you to tell the four apart before you think about any cure.'
     ],
     add: [
-      'Every case in this unit has already been given the first answer of the key: {a:D1.timing}. What you learn here is the key’s next question, which asks what the fall would do. Each of the four answers has its own name, and its own thing to do about it. One of the four names says that nothing needs doing.',
+      'Every case in this unit has already been given the first answer: {a:D1.timing}. What you learn here is the next question, which asks what the fall would do. Each of the four answers has its own name, and its own thing to do about it. One of the four names says that nothing needs doing.',
       'Every number in this unit is an example, chosen to show how an idea works. None of them is a forecast, and nobody can say what prices will do next.'
     ],
     map: { branch: 'timing' } },
@@ -81,6 +81,6 @@ FC.cards('wealth', 'u4', [
       'From here on, the cases change their stories on purpose. Sometimes two cases will share a person and a fall in prices and differ only underneath. When that happens, the shared story is there to show you that it decides nothing.',
       'Two more things change on purpose. One is size: a few thousand pounds and a few million can be the same kind of case. The other is whether a fall would catch anything at all. In some cases what is needed soon is already out of the fall’s reach, and one of the four names is for exactly that. Seeing it is part of the skill.'
     ],
-    fixed: ['what a fall in prices would catch, which is what the key asks about: {q:T1}'],
+    fixed: ['what a fall in prices would catch, which is what the question is about: {q:T1}'],
     varies: ['the people', 'the story', 'the size of the sums', 'how far prices have fallen', 'whether a fall would catch anything at all'] }
 ]);

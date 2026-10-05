@@ -37,7 +37,7 @@ FC.cases('ideology', 'u1', [
     route: { D1: ['tradition'] },
     cues: { D1: ['A flag without that faith is a rag. Let the old prayers, not the newest fashions, guide what we do'] },
     reason: { D1: 'The text asks that the old prayers guide what is done: {cue:D1}.' },
-    not: { outcome: 'nation', why: '“Our country is one people” is in the text, and on its own it would be the second answer. But the text says that the faith is what made the people one, and asks that old prayers guide what is done. When a case shows both, the key’s answer is {a:D1.tradition}.' },
+    not: { outcome: 'nation', why: '“Our country is one people” is in the text, and on its own it would be the second answer. But the text says that the faith is what made the people one, and asks that old prayers guide what is done. When a case shows both, the answer is {a:D1.tradition}.' },
     wouldChange: 'If the text had said nothing of faith and asked only that the people come first, it would be {a:D1.nation}.' },
 
   { id: 'i-m-rights', use: 'drill', tier: 'misleading', setting: 'work', topic: 'workers and owners each owed something', echo: 'i-whouse',
@@ -62,7 +62,7 @@ FC.cases('ideology', 'u1', [
     route: { D1: ['class'] },
     cues: { D1: ["The mill's owners now rota us on Sundays and keep the extra profit", 'The people who work the shifts and the people who own the mill are on opposite sides, and this notice is on the side of the shifts'] },
     reason: { D1: 'The text names the mill’s owners and the people who work the shifts, and takes the side of the shifts: {cue:D1}.' },
-    not: { outcome: 'tradition', why: 'Old ways are in the text: the Sabbath and the chapel supper, held up as the guide. On its own that would be the third answer. But the text also sets the people who work against the owners, and when a case shows both, the key’s answer is {a:D1.class}.' },
+    not: { outcome: 'tradition', why: 'Old ways are in the text: the Sabbath and the chapel supper, held up as the guide. On its own that would be the third answer. But the text also sets the people who work against the owners, and when a case shows both, the answer is {a:D1.class}.' },
     wouldChange: 'If the notice had stopped after its first sentence, it would be {a:D1.tradition}.' },
 
   { id: 'i-m-nation2', use: 'drill', tier: 'misleading', setting: 'money', topic: 'a fair deal for all, and the people first', echo: 'i-rights-meet',
@@ -71,7 +71,7 @@ FC.cases('ideology', 'u1', [
     route: { D1: ['nation'] },
     cues: { D1: ['this country is one people, and the first call on its money is its own people'] },
     reason: { D1: 'The text puts one people first: {cue:D1}.' },
-    not: { outcome: 'rights', why: 'Something owed to everyone is in the text, and on its own it would be the fourth answer. But the text then says that its own people come first, and when a case shows both, the key’s answer is {a:D1.nation}.' },
+    not: { outcome: 'rights', why: 'Something owed to everyone is in the text, and on its own it would be the fourth answer. But the text then says that its own people come first, and when a case shows both, the answer is {a:D1.nation}.' },
     wouldChange: 'If the text had stopped after its first sentence, it would be {a:D1.rights}.' },
 
   /* ---------- Faulty claims: the first is worked for the learner; then commit first, the fault, the claim put right ---------- */
@@ -86,7 +86,7 @@ FC.cases('ideology', 'u1', [
     context: 'The plan paints a bus lane on Mill Road for £40,000 and starts in March.',
     ask: { type: 'option', step: 'D1', answer: 'none' },
     fault: 'The claim takes a name that was thrown as an insult and treats it as a description. The words the councillor threw tell you what he thinks of the plan. They do not tell you what the plan says. An {t:ideology} begins from someone or something put first, and the plan puts no one first.',
-    corrected: 'The councillor called the plan “communism on wheels”. The plan only says where a lane will be painted, what it will cost and when it starts. The key’s answer is {a:D1.none}. A name thrown at a plan is an insult until the plan itself says something that fits the name.' },
+    corrected: 'The councillor called the plan “communism on wheels”. The plan only says where a lane will be painted, what it will cost and when it starts. The answer is {a:D1.none}. A name thrown at a plan is an insult until the plan itself says something that fits the name.' },
 
   { id: 'i-claim-race', use: 'claim',
     text: '"A speech that says housing rules leave one race behind is no different from a pamphlet that ranks the races, because both talk about race."',
@@ -98,12 +98,12 @@ FC.cases('ideology', 'u1', [
   { id: 'i-claim-faith', use: 'claim',
     text: '"The newsletter calls the village one people and then asks the parish to be run by the Sunday bells, the harvest feast and the old prayers. It says one people, so it must be putting the nation first."',
     ask: { type: 'option', step: 'D1', answer: 'tradition' },
-    fault: 'The claim stops at the first words that sound like the second answer. The newsletter does call the village one people. But what it asks the parish to be run by is the bells, the feast and the old prayers, and when a text shows both, the key’s answer is {a:D1.tradition}.',
-    corrected: 'The newsletter calls the village one people, and asks for the parish to be run by the Sunday bells, the harvest feast and the old prayers. Those are ways handed down, held up as the guide, so the key’s answer is {a:D1.tradition}.' },
+    fault: 'The claim stops at the first words that sound like the second answer. The newsletter does call the village one people. But what it asks the parish to be run by is the bells, the feast and the old prayers, and when a text shows both, the answer is {a:D1.tradition}.',
+    corrected: 'The newsletter calls the village one people, and asks for the parish to be run by the Sunday bells, the harvest feast and the old prayers. Those are ways handed down, held up as the guide, so the answer is {a:D1.tradition}.' },
 
   { id: 'i-claim-owner', use: 'claim',
     text: '"The leaflet blames the mill owners for the closing and stands with the people who worked there, so it must be a communist leaflet."',
     ask: { type: 'option', step: 'D1', answer: 'class' },
     fault: 'The claim jumps from what the leaflet shows to a name. All the leaflet shows is workers on one side and owners on the other, with the leaflet standing with the workers. Texts that want very different things can begin like that, so the beginning cannot settle a name.',
-    corrected: 'The leaflet blames the mill owners for the closing and stands with the people who worked there. At this point the key’s answer is {a:D1.class}, and it is only the first answer. A name needs more of the text than this.' }
+    corrected: 'The leaflet blames the mill owners for the closing and stands with the people who worked there. At this point the answer is {a:D1.class}, and it is only the first answer. A name needs more of the text than this.' }
 ]);

@@ -6,7 +6,7 @@ FC.cards('ideology', 'u5', [
 
   { id: 'worked-clean', kind: 'worked',
     h: 'A whole case, from the first question to the name',
-    link: 'You have the three names, the key’s question about them, and the three places where the key’s first question overrules this branch. Before you run a case yourself, watch two being run from the top, in the order the key asks. You are not asked anything until the end of each.',
+    link: 'You have the three names, the question about them, and the three places where the first question overrules this one. Before you run a case yourself, watch two being run from the top, in the order the questions come. You are not asked anything until the end of each.',
     case: 'i5-worked-clean',
     steps: [
       { step: 'D1',
@@ -28,14 +28,14 @@ FC.cards('ideology', 'u5', [
         answer: 'b' },
       reason: [
         'For {o:modlib} you must be able to point to this: {needs:modlib}. The letter asks for nothing to be given. Courts and police are jobs the text keeps for the government, and it says in so many words that they are enough.',
-        'It is the question from the two cases about the clinic in Marrow. {test:clib~modlib} Here the text asks the government to protect rights and then stay out, so the key’s answer is {a:R1.leave}.'
+        'It is the question from the two cases about the clinic in Marrow. {test:clib~modlib} Here the text asks the government to protect rights and then stay out, so the answer is {a:R1.leave}.'
       ]
     },
     impression: {
       resembles: 'i5-clib-meet',
       text: [
-        'The key has given its answer. Now take a second look of a different kind: does this case look like one you know? It should bring back the street-music petition: a freedom, a short list of jobs for the government, and a request to leave the rest alone.',
-        'Here the key and the likeness agree, so the answer stands. The key’s question comes first, because it makes you point at words in the case. The likeness is only a second look. When the two disagree, do not pick the one you prefer. Go back to the key’s question and find the words in the case that answer it. The second whole case shows how.'
+        'The questions have given their answer. Now take a second look of a different kind: does this case look like one you know? It should bring back the street-music petition: a freedom, a short list of jobs for the government, and a request to leave the rest alone.',
+        'Here the answer and the likeness agree, so it stands. The question comes first, because it makes you point at words in the case. The likeness is only a second look. When the two disagree, do not pick the one you prefer. Go back to the question and find the words in the case that answer it. The second whole case shows how.'
       ]
     } },
 
@@ -63,25 +63,25 @@ FC.cards('ideology', 'u5', [
         answer: 'b' },
       reason: [
         'The story points to {o:idegal}. But for that name you must be able to point to this: {needs:idegal}. This speech names no group, says that no rule has left anyone behind, and asks for no rule to change. It asks the government to pay for help.',
-        'It is the question from the two cases about the housing list. {test:modlib~idegal} Here the text asks for the same help for any child who needs it, and blames no rule, so the key’s answer is {a:R1.start}.'
+        'It is the question from the two cases about the housing list. {test:modlib~idegal} Here the text asks for the same help for any child who needs it, and blames no rule, so the answer is {a:R1.start}.'
       ]
     },
     impression: {
       resembles: 'i5-modlib-meet', first: 'i5-idegal-meet',
       text: [
-        'Now the second look: does this case look like one you know? A test that is the same for every child may bring back the hill-villages letter first, and that letter was {o:idegal}. So here the likeness and the key seem to disagree.',
-        'When that happens, go back to the key’s question and find the words in the case that answer it. They are {cue:R1}. The hill-villages letter has nothing like them: it asks for the rules to change. The fair-start leaflet does: it asks the government to pay for a school, a doctor and help, with all of us paying together. So the case this one really looks like is the leaflet, and the key’s answer stands.'
+        'Now the second look: does this case look like one you know? A test that is the same for every child may bring back the hill-villages letter first, and that letter was {o:idegal}. So here the likeness and the answer seem to disagree.',
+        'When that happens, go back to the question and find the words in the case that answer it. They are {cue:R1}. The hill-villages letter has nothing like them: it asks for the rules to change. The fair-start leaflet does: it asks the government to pay for a school, a doctor and help, with all of us paying together. So the case this one really looks like is the leaflet, and the answer stands.'
       ]
     } },
 
   { id: 'recap', kind: 'recap',
     h: 'What to carry away',
-    link: 'You have now run the key on your own. This card puts the unit in one place, in the key’s words.',
+    link: 'You have now run the questions on your own. This card puts the unit in one place.',
     carry: [
       'Say what the text wants done for people, and point to the words in it that say so. If you cannot point, you do not have an answer yet.',
       'Rights are not what tells the three names apart: all three put what people are owed first. What tells them apart is what the text wants done about it: {a:R1.leave}, {a:R1.start} or {a:R1.rules}.',
       'The story never decides. A text about a school may want the government to stay out of it, to pay for it, or to change a rule about it. Go by what the text asks.',
-      'When a text asks for a fair start and also says that a rule which treats everyone alike has left a group behind, the key’s answer is {a:R1.rules}. When it also sets working people against owners, or holds up old ways as the guide, or puts one people first, the key’s first question decides it, and the name is not one of this unit’s.'
+      'When a text asks for a fair start and also says that a rule which treats everyone alike has left a group behind, the answer is {a:R1.rules}. When it also sets working people against owners, or holds up old ways as the guide, or puts one people first, the first question decides it, and the name is not one of this unit’s.'
     ] },
 
   { id: 'transfer', kind: 'transfer',

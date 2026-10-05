@@ -14,7 +14,7 @@ FC.cases('civics', 'u6', [
               S1: 'The rule was made by one state’s lawmakers: {cue:S1}. No city, town or county is named.',
               S2: 'The matter is {cue:S2}: a trade licence, which the states grant. The case names no federal law and the rule takes away no right.' },
     not: { outcome: 'localgov', why: 'No city, town or county is named. The state’s legislature made the rule.' },
-    wouldChange: 'If a city council had set up the licence for instructors in its own city, the key’s answer to the first question would be {a:S1.local} and the name would be {o:localgov}.' },
+    wouldChange: 'If a city council had set up the licence for instructors in its own city, the answer to the first question would be {a:S1.local} and the name would be {o:localgov}.' },
 
   { id: 'u6-r-leash', use: 'drill', tier: 'clean', setting: 'leisure', topic: 'dogs in a park',
     text: "Walkers in Mill Park complained about dogs running loose near the pond. The Kellmouth city council voted that dogs must be kept on a leash in Mill Park.",

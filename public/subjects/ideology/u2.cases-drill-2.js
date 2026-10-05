@@ -16,7 +16,7 @@ FC.cases('ideology', 'u2', [
     outcome: 'demsoc', route: { D1: ['class'], C1: ['public'], C2: ['none'] },
     cues: { C1: 'The pharmacies should pass to the county health service, run for the patients and not for the owners', C2: 'run for the patients and not for the owners' },
     reason: { C1: 'The pharmacies are to pass out of the chain’s hands to a public service: {cue:C1}.',
-              C2: 'The text says nothing about how power is won or held. It ends on who the pharmacies are run for: {cue:C2}. A handover with no word on how is the key’s case for the answer that nothing is said.' },
+              C2: 'The text says nothing about how power is won or held. It ends on who the pharmacies are run for: {cue:C2}. A handover with no word on how is a case of the answer that nothing is said.' },
     not: { outcome: 'socdem', why: 'The pharmacies leave the chain. A text that left the chain its pharmacies and taxed it would be {o:socdem}.' } },
 
   { id: 'c-n-an2', use: 'drill', tier: 'varied', setting: 'work', topic: 'quarrymen who want no rulers',

@@ -5,7 +5,7 @@ FC.cards('psychology', 'u4', [
 
   /* ---------- Antisocial personality ---------- */
   { id: 'meet-antisocial', kind: 'meet', outcome: 'antisocial',
-    link: 'The last name is the one people reach for fastest in everyday talk, and the key needs more of it than the everyday word does.',
+    link: 'The last name is the one people reach for fastest in everyday talk, and this name needs more of it than the everyday word does.',
     case: 'pa-callum', mark: 'P1',
     strip: [
       'There are years and more than one place: school, two garages, a family.',
@@ -44,7 +44,7 @@ FC.cards('psychology', 'u4', [
     ],
     not: [
       'One lie is not this name, and neither is breaking one rule. Someone who lies once, feels terrible and puts it right has done something wrong, and shown a conscience. The name needs the years, the many people, and the lack of regret.',
-      'It is also not a name for anyone who is selfish, rude or unkind. Those are common, and mostly ordinary. And the everyday words people use for anyone they find cold are not names the key uses for a person.'
+      'It is also not a name for anyone who is selfish, rude or unkind. Those are common, and mostly ordinary. And the everyday words people use for anyone they find cold are not names used here for a person.'
     ],
     wild: ['"Everybody does it."', '"Nobody got hurt."', '"They should have read the contract."', '"That’s business."', '"He’s a sociopath."'],
     self: 'You will meet this more often in the news and in stories than in the people you know. If you have been lied to and used by someone, the first thing is to protect yourself, and that is a matter for practical help, and for a professional if you are in danger. It is not a matter for a label.',
@@ -60,8 +60,8 @@ FC.cards('psychology', 'u4', [
     instruction: 'Compare one thing: what drives each man. Is it getting something for himself by lying to people, whatever the harm? Or is it being treated as special, with scorn when he is not?',
     prompt: { kind: 'which', option: 'P1.uses', answer: 'pa-vince' },
     difference: [
-      'In Case A Kurt tells his tenants that they are lucky to live under his roof, and calls one of them "an ungrateful nobody" for asking for a repair, which he did make in the end. He is scornful when he is not treated as special. No tenant’s money is kept. The key’s answer is {a:P1.above}, and the case is {o:narcgrand}.',
-      'In Case B Vince spends four tenants’ deposits, keeps a tenant’s rent and sends nobody to mend her boiler, and when she writes that her baby is ill, he says "Nobody forced you." Rules are broken, people are lied to and used, and there is no regret. The key’s answer is {a:P1.uses}, and the case is {o:antisocial}.',
+      'In Case A Kurt tells his tenants that they are lucky to live under his roof, and calls one of them "an ungrateful nobody" for asking for a repair, which he did make in the end. He is scornful when he is not treated as special. No tenant’s money is kept. The answer is {a:P1.above}, and the case is {o:narcgrand}.',
+      'In Case B Vince spends four tenants’ deposits, keeps a tenant’s rent and sends nobody to mend her boiler, and when she writes that her baby is ill, he says "Nobody forced you." Rules are broken, people are lied to and used, and there is no regret. The answer is {a:P1.uses}, and the case is {o:antisocial}.',
       'A man who thinks he is above others can be unpleasant to people without breaking rules to use them. The difference is what he does to them, and whether he shows regret for the harm.'
     ] },
 
@@ -75,16 +75,16 @@ FC.cards('psychology', 'u4', [
       'The case shows something beyond the scorn. For fifteen years, in four towns, Victor has taken deposits for roofs he never started and left a partner with his debts, and when a customer came to him in tears he said that it was not his problem. That is rules broken, people used, no regret, and people hurt.',
       'Once that is in the case, the scorn is not a second thing. A man who treats customers as nobodies and takes their money is doing one thing, and the scorn is part of how he treats them.'
     ],
-    take: 'The key decides it this way on purpose, and it is worth knowing that this is the key’s decision. In life the two overlap, and people who study them do not all draw the line in the same place. The key gives each case one name, by what it can point to, so that two people using it reach the same answer and can each say why.' },
+    take: 'The answer is chosen this way on purpose, and it is worth knowing that the choice is made in advance, for every case alike. In life the two overlap, and people who study them do not all draw the line in the same place. Each case gets one name, by what it can point to, so that two people using these questions reach the same answer and can each say why.' },
 
   { id: 'look-antisocial-ordpersonality', kind: 'lookalike', ledger: 'antisocial~ordpersonality',
-    link: 'Plenty of ordinary people bend a rule now and then, and the key does not call that this name. Here are two people who have each been bending rules for years.',
+    link: 'Plenty of ordinary people bend a rule now and then, and that does not earn this name. Here are two people who have each been bending rules for years.',
     cases: ['pa-joss', 'pa-lena'],
     instruction: 'Both have bent rules for years, in three cities. Compare one thing: what happens when someone is hurt or upset by it.',
     prompt: { kind: 'which', option: 'P1.uses', answer: 'pa-joss' },
     difference: [
-      'In Case A Joss has talked three friends into lending him money for a business that does not exist, and when one asks for her money back he says she was lucky to have been asked and blocks her. He has never repaid anyone. The key’s answer is {a:P1.uses}, and the case is {o:antisocial}.',
-      'In Case B Lena parks in loading bays and argues for discounts, and when a friend lends her money she pays it back the next week, and when a neighbour is upset she apologises and stops. Her friends still lend her things and she lends them back. The key’s answer is {a:P1.steady}, and the case is {o:ordpersonality}.',
+      'In Case A Joss has talked three friends into lending him money for a business that does not exist, and when one asks for her money back he says she was lucky to have been asked and blocks her. He has never repaid anyone. The answer is {a:P1.uses}, and the case is {o:antisocial}.',
+      'In Case B Lena parks in loading bays and argues for discounts, and when a friend lends her money she pays it back the next week, and when a neighbour is upset she apologises and stops. Her friends still lend her things and she lends them back. The answer is {a:P1.steady}, and the case is {o:ordpersonality}.',
       'Both bend rules, and both have done so for years. What differs is whether anyone is badly hurt, and what the person does when someone is: Lena puts it right, and Joss blames them.'
     ] },
 
@@ -95,7 +95,7 @@ FC.cards('psychology', 'u4', [
     verdict: 'This is wrong.',
     right: [
       'Being rude, selfish or hard to deal with is very common, and none of the five names is for it. Each needs years, more than one place, a particular thing done again and again, and a cost. A hard person with no repeated cost, who has the same way of being at school, at work and at home, shows {o:ordpersonality}.',
-      'The key has no name for "rude" or "difficult". It has one question: what does the person do again and again, and what has it cost? If you cannot point to those, the answer is {o:ordpersonality}, and it is a full and proper answer.',
+      'There is no name for "rude" or "difficult". There is one question: what does the person do again and again, and what has it cost? If you cannot point to those, the answer is {o:ordpersonality}, and it is a full and proper answer.',
       'The last point is for you and not for him. "There is something wrong with him" feels like an explanation, but it ends the question. A plain description of what he does, and what it costs you, can be answered.'
     ],
     testedBy: ['pa-claim-difficult'] }

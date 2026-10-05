@@ -9,7 +9,7 @@ FC.cards('stats', 'u5', [
     case: 'alarm-term',
     plain: [
       'Priya’s smoke alarm said "fire" and there was no fire. The alarm is not broken. It is a good alarm, and it is made so that it will never sleep through a real fire. The price of that is that it sometimes goes off when there is no fire at all: for toast, or for steam.',
-      'Almost every test or alarm works like this. A test for an illness, a scanner at a gate, a fraud alarm on a card payment: each is made to catch the real thing, and each also says yes now and then when the real thing is not there.'
+      'Almost every test or alarm works like this. A test for an illness, a scanner at an entrance, a fraud alarm on a card payment: each is made to catch the real thing, and each also says yes now and then when the real thing is not there.'
     ],
     after: 'A tester is not trying to be wrong. Every test that is not perfect says yes to some people who do not have the thing, and any figure about a test has to be read with that in mind.' },
 
@@ -52,7 +52,7 @@ FC.cards('stats', 'u5', [
   { id: 'portrait-baserate', kind: 'portrait', outcome: 'baserate',
     link: 'You now know what to point to. This card fills in the rest of the picture, so that you can spot {o:baserate} in real life, where nobody marks the words for you.',
     typical: [
-      'There is a test, an alarm or a scanner: something that says yes or no about each person or thing it is run on. A fraud alarm, a drug test, a scanner at a gate, a medical screening test.',
+      'There is a test, an alarm or a scanner: something that says yes or no about each person or thing it is run on. A fraud alarm, a drug test, a scanner at an entrance, a medical screening test.',
       'It comes with a figure for how often it is right: "99% accurate", "right 95 times in 100", "catches 98 in 100".',
       'A yes from it is then read as being right just as often as the test is. The words are about the person in front of you: "so you almost certainly have it", "so it is fraud", "so he is carrying something".',
       'The thing it looks for is rare among the people it is run on. That is what makes the reading wrong: when most of the people tested do not have the thing, even a small share of mistaken yeses is a large number of people.',
@@ -84,7 +84,7 @@ FC.cards('stats', 'u5', [
     because: [
       'Ask what the percentage is built on. The log gives it: one theft last month and four this month. The sum is right: the change is 3, and 3 divided by 1 is 3, which is 300%. The percentage is not wrong. But it rests on a handful: one theft, then four.',
       'With so few, one theft more or fewer moves the percentage a long way. If next month there are two thefts, the same owner could post "down 50%", and nothing about shoplifting would have changed. The figure is so small that luck alone can move it.',
-      'So the answer is {a:S1.counted}, and the name is {o:smalln}. The key asks about the people or things in the figure before it asks what the figure is set beside, because everything after rests on them. The claim does also leave out what the figure should be set beside, but that is not the first thing wrong.'
+      'So the answer is {a:S1.counted}, and the name is {o:smalln}. The questions ask about the people or things in the figure before they ask what the figure is set beside, because everything after rests on them. The claim does also leave out what the figure should be set beside, but that is not the first thing wrong.'
     ],
-    take: 'This order is the key’s decision, and it is worth knowing that it is. In real life the two overlap: a percentage with no counts is the very thing that hides how few there are. The key gives each case one name, by the earliest part you can point to, so that two people using it reach the same answer and can each say why. Here you can point to how few there are.' }
+    take: 'This order is a choice made to keep the answers clear, and it is worth knowing that it is. In real life the two overlap: a percentage with no counts is the very thing that hides how few there are. Each case gets one name, by the earliest part you can point to, so that two people using these questions reach the same answer and can each say why. Here you can point to how few there are.' }
 ]);

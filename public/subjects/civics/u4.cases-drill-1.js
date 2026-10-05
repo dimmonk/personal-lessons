@@ -5,7 +5,7 @@
 
 FC.cases('civics', 'u4', [
 
-  /* ---------- Stage one: the key's answers are shown, the learner gives the name (clean cases, then varied) ---------- */
+  /* ---------- Stage one: the answers are shown, the learner gives the name (clean cases, then varied) ---------- */
   { id: 'e-n-trees', use: 'drill', tier: 'clean', setting: 'community', topic: 'a grant for planting trees',
     text: "Congress passed a law that gives a grant to anyone who plants trees on bare land. On Friday the federal forestry office published the form an applicant fills in, and the photographs of the planted land that must come with it.",
     outcome: 'execute', route: { D1: ['president'], E1: ['carryout'] },
@@ -62,7 +62,7 @@ FC.cases('civics', 'u4', [
     reason: { E1: 'The law came first, and the office now says how it is followed: {cue:E1}. The seven years are the law’s own number, and the office adds no demand of its own.' },
     not: { outcome: 'veto', why: 'The law has already been passed and is in force, so nobody is deciding whether to sign it. An office is putting it into practice.' } },
 
-  /* ---------- Stage two: the key's question alone, on a new case ---------- */
+  /* ---------- Stage two: the question alone, on a new case ---------- */
   { id: 'e-p-lab', use: 'drill', tier: 'clean', setting: 'work', topic: 'licences for laboratories',
     text: "A law Congress passed says every laboratory that handles dangerous germs must be licensed. The federal health office published its licence form on Monday and said its inspectors would visit each laboratory within a year.",
     outcome: 'execute', route: { D1: ['president'], E1: ['carryout'] },

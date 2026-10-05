@@ -65,8 +65,8 @@ FC.cards('math', 'u5', [
     instruction: 'Both problems are about the same game, with the same 3 spinners. Compare one thing: does the problem ask how many different results there are, or how likely something is?',
     prompt: { kind: 'which', option: 'C1.atleast', answer: 'm5-la-spinners-cm' },
     difference: [
-      'In Case A the question is how likely it is that at least one spinner lands on a 6. That is a chance. The key’s answer is {a:C1.atleast}. The chance that none lands on a 6 is found by counting: there are 6 × 6 × 6 = 216 equally likely sets of three numbers, and 5 × 5 × 5 = 125 of them have no 6. So the chance of no 6 is 125 ÷ 216 = 0.579, and the chance of at least one 6 is 1 − 0.579 = 0.421, which is about 42%.',
-      'In Case B the question is how many different sets of three numbers the spinners can show. That is a count, and each spinner is a separate choice from a full list of 6: 6 × 6 × 6 = 216. The key’s answer is {a:C1.lists}.',
+      'In Case A the question is how likely it is that at least one spinner lands on a 6. That is a chance. The answer is {a:C1.atleast}. The chance that none lands on a 6 is found by counting: there are 6 × 6 × 6 = 216 equally likely sets of three numbers, and 5 × 5 × 5 = 125 of them have no 6. So the chance of no 6 is 125 ÷ 216 = 0.579, and the chance of at least one 6 is 1 − 0.579 = 0.421, which is about 42%.',
+      'In Case B the question is how many different sets of three numbers the spinners can show. That is a count, and each spinner is a separate choice from a full list of 6: 6 × 6 × 6 = 216. The answer is {a:C1.lists}.',
       'Both multiply one number for each spinner, and both are about separate spinners. What differs is what is asked: a count of results, or how likely something is. And they connect: the 216 of Case B is the total that the 125 of Case A is part of.'
     ] },
 

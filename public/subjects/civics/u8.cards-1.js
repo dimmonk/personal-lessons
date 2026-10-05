@@ -12,7 +12,7 @@ FC.cards('civics', 'u8', [
   { id: 'orient-rights', kind: 'orient',
     h: 'Facts to hold: what you have, what is asked of you, and what is not promised',
     canDo: [
-      'This unit is different from the units that teach the key. Those teach you to put a question to a case. This one is a set of facts to hold: the rights, duties and promises of living here, the oath, and how the citizenship test works. By the end you can say each fact without looking it up, which is what you need when the question is put to you, at an interview or at a kitchen table.',
+      'This unit is different from the units that sort cases. Those teach you to put a question to a case. This one is a set of facts to hold: the rights, duties and promises of living here, the oath, and how the citizenship test works. By the end you can say each fact without looking it up, which is what you need when the question is put to you, at an interview or at a kitchen table.',
       'The facts are worth holding because people guess wrong about them in both directions. The question ‘am I allowed?’ has a different answer for a citizen, for a permanent resident and for a visitor, and a person who does not know the facts tends to believe that they have fewer protections than they do, or more promises than anyone made them. A fact that you already hold costs you no time and no guess.'
     ],
     everyday: [
@@ -34,7 +34,7 @@ FC.cards('civics', 'u8', [
       'A right, in this unit, is the government held back from you: something that the Constitution says the government may not do to a person. The First Amendment holds the government back in five ways. It protects what you say, what you believe, what is printed, whether you gather peacefully, and whether you ask the government to put a wrong right. (An amendment is a change added to the Constitution, and the Bill of Rights is the first ten of them, added in 1791.)',
       'Who has these rights? Most of the Bill of Rights is written with words such as ‘no person’, ‘the people’ and ‘the accused’, and none of them says ‘citizen’. So these protections apply to everyone in the United States, whatever their immigration status. Hye-won, who is here on a student visa, has all five. The Bill of Rights is not a list that is only for citizens: speech, religion, the press, a lawyer when you are charged and protection from unreasonable searches belong to everyone here.',
       'The first ten amendments were first written to limit only the federal government, which is the government of the whole country. After the Civil War the Fourteenth Amendment, in 1868, was read to bring the same limits to the states, so today they hold your state and your city back as well.',
-      'You already have key names for this. When a case shows Congress passing a law that takes one of these rights away, the key’s name is {o:beyondcong}. When it shows a state or a city taking one away, the key’s name is {o:protected}. This group holds the five rights themselves, one fact each.'
+      'You already have names for this. When a case shows Congress passing a law that takes one of these rights away, the name is {o:beyondcong}. When it shows a state or a city taking one away, the name is {o:protected}. This group holds the five rights themselves, one fact each.'
     ] },
 
   { id: 'facts-speak', kind: 'facts',
@@ -49,7 +49,7 @@ FC.cards('civics', 'u8', [
       { id: 'sp-press', q: 'Which right stops a mayor from having a newsstand pull a magazine that he dislikes?', a: 'The right to a free press',
         relates: 'The ‘press’ here means newspapers and magazines. A city may not order a newsstand to stop selling a magazine because the mayor dislikes it: the right to a free press holds every government back, a city’s included, because the Fourteenth Amendment brought the limit to the states.' },
       { id: 'sp-assembly', q: 'Which right lets people gather peacefully, for example for a rally in a public park?', a: 'The right to assemble peacefully',
-        relates: 'It protects people who gather peacefully. A law from Congress that banned every group from holding a political rally in a public park would take it away, which is the kind of case that the key calls {o:beyondcong}.' },
+        relates: 'It protects people who gather peacefully. A law from Congress that banned every group from holding a political rally in a public park would take it away, which is the kind of case called {o:beyondcong}.' },
       { id: 'sp-petition', q: 'Which right lets you ask the government to put right a wrong?', a: 'The right to petition the government',
         relates: 'To petition is to ask the government to put right a wrong. Signing a petition asking the council to keep a library open is using it, and it is open to everyone here, as the other four rights are.' }
     ] },
@@ -81,7 +81,7 @@ FC.cards('civics', 'u8', [
       'Follow Kofi’s case in order. Police could search his flat only after a judge gave a warrant, which is a judge’s written permission. At the police station Kofi could say that he wanted a lawyer and would say nothing, and he did. The court appointed a lawyer because he could not pay for one. And his case was heard in public, by a jury, within a set time. Each step is the government held back, or held to a promise, for a person that it accuses of a crime.',
       'A criminal case is one in which a person is on trial for a crime. The steps come from the Fourth, Fifth and Sixth Amendments, and like the First they never say ‘citizen’. They are written for ‘the people’ and ‘the accused’. Kofi is here on a student visa, and he has the same right to a lawyer, and the same right to stay silent, as a citizen charged with the same crime would have.',
       'The Constitution asks for fair legal steps before the government takes a person’s liberty, and people call that due process. The four rights in this group are four of those steps. (The Eighth Amendment holds others, such as limits on bail and on cruel punishment. This unit does not hold them.)',
-      'When a judge is asked whether an accused person got these steps, the key’s name is {o:trialrights}. This group holds four of the steps themselves, one fact each.'
+      'When a judge is asked whether an accused person got these steps, the name is {o:trialrights}. This group holds four of the steps themselves, one fact each.'
     ] },
 
   { id: 'facts-accused', kind: 'facts',

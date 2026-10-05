@@ -65,8 +65,8 @@ FC.cards('stats', 'u3', [
     instruction: 'Both cases are about the same cycling club and the same figure, 120 miles a month, from 25 people. Compare one thing: how did the 25 get into the figure?',
     prompt: { kind: 'which', option: 'A1.chose', answer: 'cn-cycling-link' },
     difference: [
-      'In Case A the club posted a link on its public page, and 25 people filled it in. Nobody was asked by name. The 25 chose to take part, and the other 35 members never did. The key’s answer to the question after the first, {q:A1}, is {a:A1.chose}, and the case is {o:selfselect}.',
-      'In Case B the club had 60 members in 2018. 35 have since left, and the 120 miles is the average of the 25 who are still members. Everyone was there at the start, and the figure is worked out after the fact from the ones that lasted. The ones who left are missing because of what happened to them, and a member who stops riding is likelier to leave. The key’s answer is {a:A1.lasted}, and the case is {o:survivor}.',
+      'In Case A the club posted a link on its public page, and 25 people filled it in. Nobody was asked by name. The 25 chose to take part, and the other 35 members never did. The answer to the question after the first, {q:A1}, is {a:A1.chose}, and the case is {o:selfselect}.',
+      'In Case B the club had 60 members in 2018. 35 have since left, and the 120 miles is the average of the 25 who are still members. Everyone was there at the start, and the figure is worked out after the fact from the ones that lasted. The ones who left are missing because of what happened to them, and a member who stops riding is likelier to leave. The answer is {a:A1.lasted}, and the case is {o:survivor}.',
       'The figure is the same in both, and in both 25 of 60 are in it. What separates them is how the 25 got in: by choosing to answer, or by lasting to the end.'
     ] },
 
@@ -75,7 +75,7 @@ FC.cards('stats', 'u3', [
     h: 'Volunteers, split by lottery',
     link: 'You now know that a figure from people who chose to answer leans towards them. People can also volunteer for a study, and the claim from it can still hold. This card shows the case where it does.',
     case: 'cn-pillow',
-    setup: 'The sleep lab asked for volunteers through a newspaper ad, so the people in the study chose themselves, and people who chose to take part are what you point to for {a:A1.chose}. Yet the key’s answer to the first question for this case is {a:S1.holds}, and to the question after it, {q:H1}, the answer is {a:H1.causes}.',
+    setup: 'The sleep lab asked for volunteers through a newspaper ad, so the people in the study chose themselves, and people who chose to take part are what you point to for {a:A1.chose}. Yet the answer to the first question for this case is {a:S1.holds}, and to the question after it, {q:H1}, the answer is {a:H1.causes}.',
     prompt: { kind: 'phrase', answer: 'The lab drew names by lottery' },
     because: [
       'Ask what the claim is about. It is not about what volunteers think, or about how much sleep people in general get. It is about a difference between two groups: the 300 who got the new pillow and the 300 who kept their own. Who is in each group was not chosen by the volunteers. The lab drew names by lottery.',
@@ -83,7 +83,7 @@ FC.cards('stats', 'u3', [
       'Compare the magazine poll. There, the people who clicked were read as standing for all workers, and the ones who did not click were missing. Here, nobody is read as standing for anybody else: the two groups are compared with each other, and each shows what the other would have been like without the change.'
     ],
     take: [
-      'The line between these two names is the key’s decision, and it is worth knowing. A study of volunteers still shows the result only for people like the volunteers: the pillow may work differently for people who sleep well, and the lab’s own claim should stay with what it tested. In the key, a claim of cause is judged by how the groups were formed, and a figure about how many people think something is judged by who chose to answer. The two questions are put to different parts of a claim.',
+      'The line between these two names is a choice made to keep the answers clear, and it is worth knowing. A study of volunteers still shows the result only for people like the volunteers: the pillow may work differently for people who sleep well, and the lab’s own claim should stay with what it tested. Here, a claim of cause is judged by how the groups were formed, and a figure about how many people think something is judged by who chose to answer. The two questions are put to different parts of a claim.',
       'So volunteers are not a sign of this name by themselves. Look for the thing that makes the name: a figure read as true of people who never took part. A lottery between two groups of volunteers does not read it that way.'
     ] }
 ]);

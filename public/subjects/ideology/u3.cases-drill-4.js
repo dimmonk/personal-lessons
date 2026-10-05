@@ -70,7 +70,7 @@ FC.cases('ideology', 'u3', [
     text: '"Fascism is when the government does a lot."',
     context: 'A leader proposes that the government build railways, run the hospitals and decide what the factories make. He says the plan will go to parliament, and that voters can remove him at the next election.',
     ask: { type: 'option', step: 'N2', answer: 'keep' },
-    fault: 'How much a government does is not an answer to any question in the key. The leader wants a great deal done, and he leaves parliament and the voters their say.',
+    fault: 'How much a government does is not an answer to any of these questions. The leader wants a great deal done, and he leaves parliament and the voters their say.',
     corrected: 'The leader wants the government to do a great deal, and he says the plan goes to parliament and that voters can remove him. That is the answer {a:N2.keep}. What decides {o:fasc} is what a text would do about the vote and about its critics, and not how big a government it asks for.' },
 
   { id: 'n-claim-socialist', use: 'claim',
@@ -84,13 +84,13 @@ FC.cases('ideology', 'u3', [
     text: '"The pamphlet says the government should run the railways and the mines, so it must be socialist."',
     context: 'The pamphlet says the government should run the railways and the mines. It also says people are born into peoples, that the first blood is higher than the later peoples, and that the first blood should rule them.',
     ask: { type: 'option', step: 'N1', answer: 'blood' },
-    fault: 'The claim looks at what the pamphlet wants done with the railways and the mines and ignores whom it speaks for. The pamphlet ranks peoples by blood, and the key reads that first. The question about owning the businesses is not asked of a text that does not set working people against those who own them.',
-    corrected: 'The pamphlet ranks peoples by blood, with its own on top. That is the answer {a:N1.blood}, which leads to {o:nazi}. What it wants done with the railways and the mines is not a question the key puts to this text, and the word "socialist" in anyone\'s description changes nothing it reads.' },
+    fault: 'The claim looks at what the pamphlet wants done with the railways and the mines and ignores whom it speaks for. The pamphlet ranks peoples by blood, and that is read first. The question about owning the businesses is not asked of a text that does not set working people against those who own them.',
+    corrected: 'The pamphlet ranks peoples by blood, with its own on top. That is the answer {a:N1.blood}, which leads to {o:nazi}. What it wants done with the railways and the mines is not a question put to this text, and the word "socialist" in anyone\'s description changes nothing it reads.' },
 
   { id: 'n-claim-horseshoe', use: 'claim',
     text: '"A pamphlet that says the working class must take power and ban every rival party is just the same as the fascist pamphlet, because both ban rival parties."',
     context: 'The first pamphlet takes the side of the workers against the owners, and says the workers must take power, ban every rival party, and never give it up. The second speaks of one nation with one will, and says rival parties must be closed.',
     ask: { type: 'option', step: 'D1', answer: 'class' },
-    fault: 'The claim compares what the two pamphlets would do and skips what each one is for. They give different answers to the key\'s first question, and the questions that follow it depend on that answer. A shared method does not make two texts the same.',
-    corrected: 'The first pamphlet takes the side of the workers against the owners, and the key\'s first answer for it is {a:D1.class}. The second speaks for one nation, and its answer is {a:D1.nation}. Both ban rival parties, which is a method shared by many dictatorships. The names come from whom each text speaks for, and the two speak for different people.' }
+    fault: 'The claim compares what the two pamphlets would do and skips what each one is for. They give different answers to the first question, and the questions that follow it depend on that answer. A shared method does not make two texts the same.',
+    corrected: 'The first pamphlet takes the side of the workers against the owners, and the first answer for it is {a:D1.class}. The second speaks for one nation, and its answer is {a:D1.nation}. Both ban rival parties, which is a method shared by many dictatorships. The names come from whom each text speaks for, and the two speak for different people.' }
 ]);

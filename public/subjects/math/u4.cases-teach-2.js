@@ -246,9 +246,9 @@ FC.cases('math', 'u4', [
       G2: ['How many members will it have after 3 years?']
     },
     reason: {
-      M1: 'The words {cue:M1} follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a {t:formula}, and there is no shape or chance, so the key’s first answer is {a:M1.growth}.',
-      G1: 'The words {cue:G1} show the amount being multiplied by the same number every year, so the key’s answer is {a:G1.multiplies}.',
-      G2: 'The words {cue:G2} give a time and ask for the amount at the end of it, so the key’s answer is {a:G2.willbe}.'
+      M1: 'The words {cue:M1} follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a {t:formula}, and there is no shape or chance, so the answer to the first question is {a:M1.growth}.',
+      G1: 'The words {cue:G1} show the amount being multiplied by the same number every year, so the answer is {a:G1.multiplies}.',
+      G2: 'The words {cue:G2} give a time and ask for the amount at the end of it, so the answer is {a:G2.willbe}.'
     }
   },
 
@@ -267,9 +267,9 @@ FC.cases('math', 'u4', [
       G2: ['After how many years will it have 15,000 trees?']
     },
     reason: {
-      M1: 'The words {cue:M1} follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a {t:formula}, and there is no shape or chance, so the key’s first answer is {a:M1.growth}.',
-      G1: 'The words {cue:G1} show the amount being multiplied by the same number every year, so the key’s answer is {a:G1.multiplies}.',
-      G2: 'The words {cue:G2} give a target for the amount and ask how long until it gets there, so the key’s answer is {a:G2.howlong}.'
+      M1: 'The words {cue:M1} follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a {t:formula}, and there is no shape or chance, so the answer to the first question is {a:M1.growth}.',
+      G1: 'The words {cue:G1} show the amount being multiplied by the same number every year, so the answer is {a:G1.multiplies}.',
+      G2: 'The words {cue:G2} give a target for the amount and ask how long until it gets there, so the answer is {a:G2.howlong}.'
     }
   }
 ]);

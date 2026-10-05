@@ -20,13 +20,13 @@ FC.cases('math', 'u6', [
       S2: 'how long it is from one corner to the opposite corner'
     },
     reason: {
-      M1: 'The problem asks {cue:M1}, a length in a {t:righttriangle}. Nothing in it follows an amount through time, hides a number that a {t:formula} must fit, or counts ways, so the key’s first answer is {a:M1.shape}.',
+      M1: 'The problem asks {cue:M1}, a length in a {t:righttriangle}. Nothing in it follows an amount through time, hides a number that a {t:formula} must fit, or counts ways, so the answer to the first question is {a:M1.shape}.',
       S1: 'The words {cue:S1} give the lengths of two sides of a {t:righttriangle}, and no angle in degrees besides the square corner. That is {a:S1.twosides}.',
       S2: 'The words {cue:S2} ask how long a side is, which is {a:S2.length}.'
     },
     not: {
       outcome: 'trig',
-      why: 'No angle in degrees is given besides the square corner, so there is nothing for the calculator’s angle keys to work from. {o:trig} would be the name if the problem gave one side and an angle in degrees.'
+      why: 'No angle in degrees is given besides the square corner, so there is nothing for the calculator’s angle buttons to work from. {o:trig} would be the name if the problem gave one side and an angle in degrees.'
     },
     steps: [
       {
@@ -76,13 +76,13 @@ FC.cases('math', 'u6', [
       S2: 'How tall is the mast?'
     },
     reason: {
-      M1: 'The problem asks {cue:M1}, a length in a {t:righttriangle}. Nothing in it follows an amount through time, hides a number that a {t:formula} must fit, or counts ways, so the key’s first answer is {a:M1.shape}.',
+      M1: 'The problem asks {cue:M1}, a length in a {t:righttriangle}. Nothing in it follows an amount through time, hides a number that a {t:formula} must fit, or counts ways, so the answer to the first question is {a:M1.shape}.',
       S1: 'The words {cue:S1} give the lengths of two sides of a {t:righttriangle}, and no angle in degrees besides the square corner. That is {a:S1.twosides}.',
       S2: 'The words {cue:S2} ask how long a side is, which is {a:S2.length}.'
     },
     not: {
       outcome: 'trig',
-      why: 'No angle in degrees is given besides the square corner, so there is nothing for the calculator’s angle keys to work from. {o:trig} would be the name if the problem gave one side and an angle in degrees.'
+      why: 'No angle in degrees is given besides the square corner, so there is nothing for the calculator’s angle buttons to work from. {o:trig} would be the name if the problem gave one side and an angle in degrees.'
     },
     steps: [
       {
@@ -135,13 +135,13 @@ FC.cases('math', 'u6', [
       S2: 'How far does she run?'
     },
     reason: {
-      M1: 'The problem asks {cue:M1}, a length in a {t:righttriangle}. Nothing in it follows an amount through time, hides a number that a {t:formula} must fit, or counts ways, so the key’s first answer is {a:M1.shape}.',
+      M1: 'The problem asks {cue:M1}, a length in a {t:righttriangle}. Nothing in it follows an amount through time, hides a number that a {t:formula} must fit, or counts ways, so the answer to the first question is {a:M1.shape}.',
       S1: 'The words {cue:S1} give the lengths of two sides of a {t:righttriangle}, and no angle in degrees besides the square corner. That is {a:S1.twosides}.',
       S2: 'The words {cue:S2} ask how long a side is, which is {a:S2.length}.'
     },
     not: {
       outcome: 'trig',
-      why: 'No angle in degrees is given besides the square corner, so there is nothing for the calculator’s angle keys to work from. {o:trig} would be the name if the problem gave one side and an angle in degrees.'
+      why: 'No angle in degrees is given besides the square corner, so there is nothing for the calculator’s angle buttons to work from. {o:trig} would be the name if the problem gave one side and an angle in degrees.'
     },
     steps: [
       {
@@ -191,7 +191,7 @@ FC.cases('math', 'u6', [
       S2: 'How tall is the post?'
     },
     reason: {
-      M1: 'The problem asks {cue:M1}, a length in a {t:righttriangle} that is worked out from an angle. Nothing in it follows an amount through time, hides a number that a {t:formula} must fit, or counts ways, so the key’s first answer is {a:M1.shape}.',
+      M1: 'The problem asks {cue:M1}, a length in a {t:righttriangle} that is worked out from an angle. Nothing in it follows an amount through time, hides a number that a {t:formula} must fit, or counts ways, so the answer to the first question is {a:M1.shape}.',
       S1: 'The words {cue:S1} give the length of one side of a {t:righttriangle} and one angle in degrees besides the square corner. That is {a:S1.sideangle}.',
       S2: 'The words {cue:S2} ask how long a side is, which is {a:S2.length}.'
     },
@@ -205,13 +205,13 @@ FC.cases('math', 'u6', [
         working: 'The angle is 28°. The longest side, opposite the square corner, is the line of sight to the top of the post. The side opposite the angle is the height of the post. The side next to the angle, the one that is not the longest, is the 20 m along the ground'
       },
       {
-        does: 'Choose the calculator key that joins the side you know to the side you want',
-        working: 'You know the side next to the angle (20 m) and want the side opposite the angle. The tan key joins those two: tan = opposite ÷ next to'
+        does: 'Choose the calculator button that joins the side you know to the side you want',
+        working: 'You know the side next to the angle (20 m) and want the side opposite the angle. The tan button joins those two: tan = opposite ÷ next to'
       },
-      { does: 'Write the key’s comparison with the numbers in', working: 'tan 28° = height ÷ 20' },
+      { does: 'Write the button’s comparison with the numbers in', working: 'tan 28° = height ÷ 20' },
       { does: 'Get the side you want on its own', working: 'height = 20 × tan 28°' },
       {
-        does: 'Read the key’s value off the calculator, set to degrees, and finish the sum',
+        does: 'Read the button’s value off the calculator, set to degrees, and finish the sum',
         working: 'tan 28° = 0.5317; 20 × 0.5317 = 10.634, so about 10.6 m'
       }
     ],
@@ -221,17 +221,17 @@ FC.cases('math', 'u6', [
         {
           id: 's1',
           text: '9.4 m',
-          slip: 'you use the sin key, which compares the side opposite the angle with the longest side, though the two sides in this problem are the side next to the angle and the side opposite the angle.'
+          slip: 'you use the sin button, which compares the side opposite the angle with the longest side, though the two sides in this problem are the side next to the angle and the side opposite the angle.'
         },
         {
           id: 's2',
           text: '37.6 m',
-          slip: 'you divide by the key’s value, though the side you want is the one on top of the key’s comparison and the side you know is the one under it, so you should multiply.'
+          slip: 'you divide by the button’s value, though the side you want is the one on top of the button’s comparison and the side you know is the one under it, so you should multiply.'
         }
       ],
       right: 'r'
     },
-    why: 'In a {t:righttriangle} the angle settles how long each side is compared with the others, whatever the size of the triangle, and each calculator key gives one of those comparisons for the angle you type in. Choosing the key whose two sides are the one you know and the one you want, and then multiplying or dividing by its value, turns that comparison into the missing length.',
+    why: 'In a {t:righttriangle} the angle settles how long each side is compared with the others, whatever the size of the triangle, and each calculator button gives one of those comparisons for the angle you type in. Choosing the button whose two sides are the one you know and the one you want, and then multiplying or dividing by its value, turns that comparison into the missing length.',
     wouldChange: 'If the problem gave the lengths of two sides and no angle besides the square corner, it would be {o:pyth}.'
   }
 ]);

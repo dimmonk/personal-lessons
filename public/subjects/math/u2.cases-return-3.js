@@ -19,7 +19,7 @@ FC.cases('math', 'u2', [
       W1: ['taken every 15 hours and a second kind every 20 hours']
     },
     reason: {
-      M1: 'The problem asks {cue:M1}, a question about two repeats and when they coincide. The numbers are whole counts that repeat, and no amount is followed as it grows, so the key’s first answer is {a:M1.whole}.',
+      M1: 'The problem asks {cue:M1}, a question about two repeats and when they coincide. The numbers are whole counts that repeat, and no amount is followed as it grows, so the answer to the first question is {a:M1.whole}.',
       W1: 'The words {cue:W1} give two repeating schedules and ask for the first time they coincide, which is {a:W1.together}.'
     },
     not: {
@@ -68,7 +68,7 @@ FC.cases('math', 'u2', [
       W1: ['How many eggs are left over once every box is full?']
     },
     reason: {
-      M1: 'The problem asks {cue:M1}, a question about the part that is not in a whole group, or the place a count reaches on a loop. The numbers are whole counts, and no amount is followed through time, so the key’s first answer is {a:M1.whole}.',
+      M1: 'The problem asks {cue:M1}, a question about the part that is not in a whole group, or the place a count reaches on a loop. The numbers are whole counts, and no amount is followed through time, so the answer to the first question is {a:M1.whole}.',
       W1: 'The words {cue:W1} give a count and one group size, or one loop, and ask for the part not in a whole group or for the place the count reaches, which is {a:W1.cycle}.'
     },
     not: {
@@ -106,7 +106,7 @@ FC.cases('math', 'u2', [
     route: { M1: ['whole'], W1: ['cycle'] },
     cues: { M1: ['On which day of the week is it due?'], W1: ['On which day of the week is it due?'] },
     reason: {
-      M1: 'The problem asks {cue:M1}, a question about the part that is not in a whole group, or the place a count reaches on a loop. The numbers are whole counts, and no amount is followed through time, so the key’s first answer is {a:M1.whole}.',
+      M1: 'The problem asks {cue:M1}, a question about the part that is not in a whole group, or the place a count reaches on a loop. The numbers are whole counts, and no amount is followed through time, so the answer to the first question is {a:M1.whole}.',
       W1: 'The words {cue:W1} give a count and one group size, or one loop, and ask for the part not in a whole group or for the place the count reaches, which is {a:W1.cycle}.'
     },
     not: {
@@ -151,7 +151,7 @@ FC.cases('math', 'u2', [
     route: { M1: ['whole'], W1: ['cycle'] },
     cues: { M1: ['What colour is the 47th light?'], W1: ['What colour is the 47th light?'] },
     reason: {
-      M1: 'The problem asks {cue:M1}, a question about the part that is not in a whole group, or the place a count reaches on a loop. The numbers are whole counts, and no amount is followed through time, so the key’s first answer is {a:M1.whole}.',
+      M1: 'The problem asks {cue:M1}, a question about the part that is not in a whole group, or the place a count reaches on a loop. The numbers are whole counts, and no amount is followed through time, so the answer to the first question is {a:M1.whole}.',
       W1: 'The words {cue:W1} give a count and one group size, or one loop, and ask for the part not in a whole group or for the place the count reaches, which is {a:W1.cycle}.'
     },
     not: {
@@ -200,7 +200,7 @@ FC.cases('math', 'u2', [
       W1: ['Can the side be written exactly, as a fraction or a decimal that ends?']
     },
     reason: {
-      M1: 'The problem asks {cue:M1}, a question about whether one number can be written exactly. It is about the value of a number, with no amount followed through time and no hidden number for a calculation to fit, so the key’s first answer is {a:M1.whole}.',
+      M1: 'The problem asks {cue:M1}, a question about whether one number can be written exactly. It is about the value of a number, with no amount followed through time and no hidden number for a calculation to fit, so the answer to the first question is {a:M1.whole}.',
       W1: 'The words {cue:W1} ask whether one number can be written exactly, which is {a:W1.exact}.'
     },
     not: {
@@ -250,7 +250,7 @@ FC.cases('math', 'u2', [
       W1: ['Can the side be written exactly, as a fraction or a decimal that ends?']
     },
     reason: {
-      M1: 'The problem asks {cue:M1}, a question about whether one number can be written exactly. It is about the value of a number, with no amount followed through time and no hidden number for a calculation to fit, so the key’s first answer is {a:M1.whole}.',
+      M1: 'The problem asks {cue:M1}, a question about whether one number can be written exactly. It is about the value of a number, with no amount followed through time and no hidden number for a calculation to fit, so the answer to the first question is {a:M1.whole}.',
       W1: 'The words {cue:W1} ask whether one number can be written exactly, which is {a:W1.exact}.'
     },
     not: {

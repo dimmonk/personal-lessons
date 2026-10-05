@@ -66,7 +66,7 @@ FC.cases('civics', 'u3', [
   { id: 'claim-president', use: 'claim',
     text: '"The President makes the laws. Congress just talks about them."',
     ask: { type: 'option', step: 'D1', answer: 'congress' },
-    fault: 'The claim gives the President a decision that is Congress’s. A law is voted by the House and the Senate. The President signs it or refuses to sign it, and then the offices carry it out, but the vote is where the choice is made. When the last decision in the case is a vote in the House or the Senate, the key’s answer is {a:D1.congress}.',
+    fault: 'The claim gives the President a decision that is Congress’s. A law is voted by the House and the Senate. The President signs it or refuses to sign it, and then the offices carry it out, but the vote is where the choice is made. When the last decision in the case is a vote in the House or the Senate, the answer is {a:D1.congress}.',
     corrected: 'Congress makes the laws: the House and the Senate vote on a bill. The President signs it or refuses to, and the offices of the President carry it out.' },
 
   { id: 'claim-valid', use: 'claim',

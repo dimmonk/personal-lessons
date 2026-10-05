@@ -11,7 +11,7 @@ FC.cards('civics', 'u10', [
     plain: [
       'Ines’s card is one small piece of a very large change, and the change began with a crash. In 1929 the Great Depression began: banks failed, and about a quarter of workers lost their jobs. That is one worker in four.',
       'The President’s answer was a set of new programmes called the New Deal, and the President was Franklin D. Roosevelt. Social Security, the programme named on Ines’s card, is the example that this course holds. New programmes such as Social Security were run by new federal offices, and an office of that kind is called an {t:agency}.',
-      'The result was that the federal government took a far larger role in daily life. The key’s name for what these new offices did is {o:execute}: putting laws into practice, at a scale that the founders never saw. The four facts below are the trouble, the answer, the President and the example.'
+      'The result was that the federal government took a far larger role in daily life. The name for what these new offices did is {o:execute}: putting laws into practice, at a scale that the founders never saw. The four facts below are the trouble, the answer, the President and the example.'
     ] },
 
   { id: 'facts-hard', kind: 'facts',
@@ -85,7 +85,7 @@ FC.cards('civics', 'u10', [
     plain: [
       'Amir’s daughter has the three parts of the answer in her question already: a court, a law and people. They are the three landmarks of the civil rights movement, which ran from 1954 to 1965 and pushed to end segregation.',
       'Segregation means keeping people of different races apart, as when Black and white children were kept in separate public schools. The movement pushed to end that, and to end discrimination, which means treating people worse because of their race.',
-      'The court was the Supreme Court. In 1954 it ruled, in a case called Brown v. Board of Education, that separate public schools for Black and white children are unequal. In the key’s words, that is {o:review}: a court checking a law against the Constitution. The people included Martin Luther King Jr. and thousands of others, who led marches and boycotts. A boycott is a refusal, by a group, to use or buy something, in order to press for a change. The law was the Civil Rights Act of 1964, passed by Congress, which outlaws segregation and discrimination. And in March 1965 marchers set out from Selma, Alabama, toward the state capital to demand the right to vote. The Voting Rights Act, which Congress passed months later, belongs to the groups on the vote, a little further on.',
+      'The court was the Supreme Court. In 1954 it ruled, in a case called Brown v. Board of Education, that separate public schools for Black and white children are unequal. That is called {o:review}: a court checking a law against the Constitution. The people included Martin Luther King Jr. and thousands of others, who led marches and boycotts. A boycott is a refusal, by a group, to use or buy something, in order to press for a change. The law was the Civil Rights Act of 1964, passed by Congress, which outlaws segregation and discrimination. And in March 1965 marchers set out from Selma, Alabama, toward the state capital to demand the right to vote. The Voting Rights Act, which Congress passed months later, belongs to the groups on the vote, a little further on.',
       'The five facts below are the ruling, the leader, the law, the town and what the movement pushed to end.'
     ] },
 
@@ -95,7 +95,7 @@ FC.cards('civics', 'u10', [
     concept: 'con-civil',
     rows: [
       { id: 'cr-brown', q: 'Which 1954 ruling of the Supreme Court said that separate public schools for Black and white children are unequal?', a: 'Brown v. Board of Education',
-        relates: 'A court was asked about a law and checked it against the Constitution, which the key calls {o:review}. It is the court landmark of the movement, ten years before the law of 1964.' },
+        relates: 'A court was asked about a law and checked it against the Constitution, which is called {o:review}. It is the court landmark of the movement, ten years before the law of 1964.' },
       { id: 'cr-king', q: 'Which leader, together with thousands of others, led the marches and boycotts of the movement?', a: 'Martin Luther King Jr.',
         relates: 'The movement was the work of many people, and he is the leader that this course names. Marches and boycotts are two of the ways in which the movement pushed.' },
       { id: 'cr-act', q: 'Which 1964 law, passed by Congress, outlawed discrimination?', a: 'The Civil Rights Act of 1964',

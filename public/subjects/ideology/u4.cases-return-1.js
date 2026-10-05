@@ -27,7 +27,7 @@ FC.cases('ideology', 'u4', [
     outcome: 'conserv', route: { D1: ['tradition'], T1: ['keep'] },
     cues: { D1: 'That custom should guide how the burial board is run', T1: ['Keep it', 'let the board change the route in small steps and ask the bearers first'] },
     reason: { D1: 'The text holds up a custom handed down, the bell and the walk to the church, as what should guide: {cue:D1}.',
-              T1: 'The custom is still kept, and the text asks for it to stay and for the route to change in small steps: {cue:T1}.' },
+              T1: 'The custom is still kept, and the text asks for it to stay and for the path to change in small steps: {cue:T1}.' },
     not: { outcome: 'react', why: 'The custom has not been taken away, so nothing is asked back. The lane closing is a repair, not something torn down.' } },
 
   /* ---------- Bringing back what has gone ---------- */

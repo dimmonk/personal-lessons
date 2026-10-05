@@ -12,7 +12,7 @@ FC.cards('civics', 'u9', [
     h: 'Facts to hold, about how the country began, grew and divided over slavery',
     canDo: [
       'This unit is a set of facts to hold, not a skill to apply. By the end you can say, without looking anything up, why people came to the colonies and who else was there, how the colonists fell out with Britain, the years in which the country was founded, how it grew, how slavery divided it, what happened in the Civil War, and what the three amendments after the war did. The unit stops at 1877.',
-      'They are worth holding for three reasons. The citizenship interview asks about this history directly. The news keeps using it: when a story says that a right “applies to the states”, or that a person is “a citizen by birth”, the amendments that followed the Civil War are what it rests on. And some of the names in the key have a history of their own, which this unit gives.'
+      'They are worth holding for three reasons. The citizenship interview asks about this history directly. The news keeps using it: when a story says that a right “applies to the states”, or that a person is “a citizen by birth”, the amendments that followed the Civil War are what it rests on. And some of the names from the earlier units have a history of their own, which this unit gives.'
     ],
     everyday: [
       'Picture the interview itself. The officer asks: “Why did the colonists quarrel with Britain?” or “What did the Emancipation Proclamation do?” A person who has only met a list of dates has a date with nothing around it. A person who knows the story can find the answer, because each fact has something to hang on.',

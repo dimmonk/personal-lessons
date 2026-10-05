@@ -230,9 +230,9 @@ FC.key('wealth', {
     { word: 'contributions', sayInstead: 'new money paid in' },
     { word: 'underweight', sayInstead: 'less than the plan' },
     { word: 'benchmark', sayInstead: 'the list an index fund follows' },
-    { word: 'main danger', sayInstead: 'what could lose this money (the key’s first question)' },
+    { word: 'main danger', sayInstead: 'what could lose this money (the first question)' },
     { word: 'threat', sayInstead: 'what could lose the money' },
-    { word: 'diagnostic', sayInstead: 'the key’s question' },
+    { word: 'diagnostic', sayInstead: 'the question' },
     { word: 'falsify', sayInstead: 'what would make it a different name' }
   ],
 

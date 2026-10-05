@@ -12,31 +12,31 @@ FC.cards('ideology', 'u1', [
 
   { id: 'orient-sides', kind: 'orient',
     h: 'Before any name: whose side is the text on?',
-    canDo: 'After this unit you can read a short text, such as a few lines of a speech, a leaflet, a post, a notice or the start of an opinion piece, and say which of five answers it gets to the key’s first question. You will be able to point to the words that tell you, and to say why it is not one of the other four. The text can be about wages, a border, a church, an exam desk or a bus lane. It can be something a friend sends you or something you come across yourself.',
+    canDo: 'After this unit you can read a short text, such as a few lines of a speech, a leaflet, a post, a notice or the start of an opinion piece, and say which of five answers it gets to the first question. You will be able to point to the words that tell you, and to say why it is not one of the other four. The text can be about wages, a border, a church, an exam desk or a bus lane. It can be something a friend sends you or something you come across yourself.',
     everyday: [
       'You already do a rough version of this. Someone shares a post and a friend says, "That’s just socialist." A speech comes on the radio and an uncle says, "That’s fascist." A neighbour defends the church bells and someone mutters, "Typical reactionary." Each of those is a name reached in one jump, and a name thrown across a room is often not a description of anything.',
       'A name has to be earned from what a text says. Before it, there is an earlier question that a person can answer by pointing at words: who or what is this text for? Is it for working people against the people who own the businesses? For a nation, or its ordinary people? For the old ways of faith, home and custom? For what every person is owed? Or is it for nobody in particular, because it is a notice, a timetable or an order about who is in charge?',
       'If you skip that question you are wrong before you have chosen a word. You have read a notice about a bus lane as a political movement, or a text about a country as a text about wages. So before any label there is this one question. This unit teaches it.'
     ],
     add: [
-      'Two words are used all the way through, so here they are once. A case is a short text of the kind people really read or hear: a few lines from a speech, a leaflet, a post, a notice or an opinion piece. The key is a short list of questions that you put to a case, always in the same order. Each answer narrows down what the text can be, until a name is left.',
-      'This unit teaches the first question of the key and nothing after it. That question has five answers, and in this unit the answer is also the name you give. Four of the five answers lead on to further questions, taught in the units that follow, and those questions give a finer name, such as the ones you hear in the news. The fifth answer leads nowhere. When a text speaks for no side, the key has nothing more to ask, and that is a result in its own right.',
-      'Every text in this unit is invented. None is a quotation from a real person or party, and none says what any real person believes. Real people and parties say different things in different places, so the key reads one short text at a time and gives no verdict on whoever wrote it.'
+      'One word is used all the way through, so here it is once. A case is a short text of the kind people really read or hear: a few lines from a speech, a leaflet, a post, a notice or an opinion piece. You put the same questions to every case, always in the same order. Each answer narrows down what the text can be, until a name is left.',
+      'This unit teaches the first question and nothing after it. That question has five answers, and in this unit the answer is also the name you give. Four of the five answers lead on to further questions, taught in the units that follow, and those questions give a finer name, such as the ones you hear in the news. The fifth answer leads nowhere. When a text speaks for no side, there is nothing more to ask, and that is a result in its own right.',
+      'Every text in this unit is invented. None is a quotation from a real person or party, and none says what any real person believes. Real people and parties say different things in different places, so this course reads one short text at a time and gives no verdict on whoever wrote it.'
     ],
     map: { branch: 'gate' } },              // a gate unit's preview map is the gate itself, drawn from the key
 
   /* ---------- The word the whole key leans on ---------- */
   { id: 'term-ideology', kind: 'term', term: 'ideology',
     h: 'Answers about who a country is for',
-    link: 'Before the first of the five answers, there is one word that this unit and the whole key lean on. It is easier to see in a case first.',
+    link: 'Before the first of the five answers, there is one word that this whole subject leans on. It is easier to see in a case first.',
     case: 'i-term-bus',
     plain: [
       'Dolores and Emeka disagree, but look at what each of them has done. Each has said who the country is for: the people who keep it running, in her words, and what was handed down by the people before us, in his. And each has said what follows for how it should be run: the government should answer to those who do the work, or change should be slow. Two things have gone together: an answer to who it is for, and a view of how it should be run.',
       'That is more than one opinion about one matter, such as where to put a bus stop. It is a few beliefs that hang together, so that the first helps to explain the rest.'
     ],
     after: [
-      'Two things about the word. The first is that it is not an insult and not a compliment. Calling a set of beliefs an {t:ideology} says nothing about whether it is right. The second is that it is a word for the beliefs a text shows, and not for the person who wrote it. One short text shows a few lines of someone’s beliefs, and the key reads the lines in front of it.',
-      'This is why the key starts with the question it does. Each of the first four answers to it is a different place to start from, and the fifth is a text that starts from none of them.'
+      'Two things about the word. The first is that it is not an insult and not a compliment. Calling a set of beliefs an {t:ideology} says nothing about whether it is right. The second is that it is a word for the beliefs a text shows, and not for the person who wrote it. One short text shows a few lines of someone’s beliefs, and only the lines in front of you are read.',
+      'This is why the first question is the one it is. Each of the first four answers to it is a different place to start from, and the fifth is a text that starts from none of them.'
     ] },
 
   /* ---------- The first answer: working people, against those who own the businesses ---------- */
@@ -56,7 +56,7 @@ FC.cards('ideology', 'u1', [
       'Notice what the answer does not depend on. It does not depend on whether you agree. It does not depend on whether the owners are a large company or a single household. It does not even depend on the text asking for anything yet. It depends on the text sorting people into those two groups and standing with the first. What the text wants done about it is a different question, and this unit does not ask it.'
     ],
     feature: { step: 'D1', option: 'class' },
-    name: 'In this unit the key’s answer is also the name of the kind of text: {a:D1.class}. "Working people" means the people who work in the farms, factories, shops and banks for pay. "Those who own the businesses" means the people who own them and keep what they earn. The answer needs both groups, because one group alone is not a split.' },
+    name: 'In this unit the answer is also the name of the kind of text: {a:D1.class}. "Working people" means the people who work in the farms, factories, shops and banks for pay. "Those who own the businesses" means the people who own them and keep what they earn. The answer needs both groups, because one group alone is not a split.' },
 
   { id: 'again-class', kind: 'again', family: 'class',
     link: 'The depot leaflet gave you what to point to from one case: {needs:class}. Here is a second case with a different story. This time the work is care, not freight, and the words are spoken aloud at a meeting.',
@@ -77,7 +77,7 @@ FC.cards('ideology', 'u1', [
       'From here on, the cases change their stories on purpose. Sometimes two cases will share the same event and differ only underneath. When that happens, the shared event is there to show you that it decides nothing.',
       'Two other things change on purpose: how angry a text sounds, and whether you are likely to agree with it. An angry text and a calm one can get the same answer, and a text you dislike can get the same answer as one you like. The answer is not a verdict on anyone. It only says what the text puts first.'
     ],
-    fixed: ['who or what the text puts first, which is what the key asks about: {q:D1}'],
+    fixed: ['who or what the text puts first, which is what the first question asks about: {q:D1}'],
     varies: ['the topic', 'the people', 'how angry it sounds', 'whether you agree with it', 'whether it takes any side at all'] },
 
   { id: 'portrait-class', kind: 'portrait', family: 'class',

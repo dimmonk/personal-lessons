@@ -44,7 +44,7 @@ FC.cases('scams', 'u5', [
     context: 'A woman gets a call from a man who says he is from her bank. He uses her full name, her address and her date of birth, and asks her to confirm the three-digit code on the back of her card.',
     text: '"He knew my full name, my address and my date of birth. It had to be my bank."',
     ask: { type: 'option', step: 'F2', answer: 'notfit' },
-    fault: 'The claim treats what the caller knew as proof of who he was. A name, an address and a date of birth are on lists that are bought and sold, so they show only that he had a list. The key asks something else: whether she began it. The call came to her, and the code on the back of a card is more than any real caller needs.',
+    fault: 'The claim treats what the caller knew as proof of who he was. A name, an address and a date of birth are on lists that are bought and sold, so they show only that he had a list. The question is something else: whether she began it. The call came to her, and the code on the back of a card is more than any real caller needs.',
     corrected: 'He knew a lot about me, and that tells me nothing. The call came to me and I began nothing, so the answer is {a:F2.notfit}. To find out whether he is from my bank, I would use {t:check}: hang up and ring the number on my card.' },
 
   { id: 'u5-claim-nomoney', use: 'claim',

@@ -9,22 +9,22 @@ FC.cards('wealth', 'u1', [
   /* ---------- The key's first question, as a question ---------- */
   { id: 'q-gate', kind: 'question', step: 'D1',
     h: 'The question you have been answering all along',
-    link: 'Since the pension fund you have seen the key’s question at the foot of each new answer, with one answer under it. This card puts the question and its five answers in one place, as the key shows them, and says why the key asks it before anything else.',
+    link: 'Since the pension fund you have seen the question at the foot of each new answer, with one answer under it. This card puts the question and its five answers in one place, and says why it is asked before anything else.',
     decides: [
       'A case can only be answered on what it is made of. If you take a yearly charge for a fall in prices, you look for what to sell and when, and what you should have looked for is a sum that comes out whatever prices do. If you take a sound case for one of the four, you go looking for a problem the case does not have. Getting the answer wrong means asking the wrong questions next, however carefully you ask them.',
       'That is why this question comes first, before any finer name, and why every case in this subject starts with it. In this subject it also comes before any cure. A cure answers one particular way of losing money, and until you know which way you are looking at, you have nothing for the cure to answer.',
-      'In this unit it is the only question, so its answer is the name. In the rest of the subject, each of the first four answers is followed by one more question, which leads to a finer name and says what to do. The fifth answer is followed by nothing. The answers you give on the way to a name are called your route: this first answer, and then the answer to the next question. Once a route has two answers, two things are marked separately: the name you give a case, and your route to it. A right name reached by a wrong answer to this first question counts as a miss, which is why the first question gets a whole unit of practice.'
+      'In this unit it is the only question, so its answer is the name. In the rest of the subject, each of the first four answers is followed by one more question, which leads to a finer name and says what to do. The fifth answer is followed by nothing. The answers you give on the way to a name are kept: this first answer, and then the answer to the next question. Once there are two answers, two things are marked separately: the name you give a case, and your answers on the way to it. A right name reached by a wrong answer to this first question counts as a miss, which is why the first question gets a whole unit of practice.'
     ],
     how: [
-      'Read the whole case before you answer, the last sentence included. The last sentence is often where the day is, or where the one thing that matters is. Then look in the words for each of the four things the key asks about, one at a time, and ask whether you can point to the words that show it.',
+      'Read the whole case before you answer, the last sentence included. The last sentence is often where the day is, or where the one thing that matters is. Then look in the words for each of the four things the question asks about, one at a time, and ask whether you can point to the words that show it.',
       '{a:D1.erosion}: {needs:erosion}.',
       '{a:D1.timing}: {needs:timing}.',
       '{a:D1.shock}: {needs:shock}.',
       '{a:D1.handover}: {needs:handover}.',
-      'If you can point to the words for exactly one, that is the answer. If you can point to words for two, the key chooses for you, and its two rules are below. If you can point to none, the answer is {a:D1.none}: {needs:none}. Then you stop, and the case is finished.',
+      'If you can point to the words for exactly one, that is the answer. If you can point to words for two, a rule says which answer wins, and the two rules are below. If you can point to none, the answer is {a:D1.none}: {needs:none}. Then you stop, and the case is finished.',
       'Whichever answer you give, put your finger on the words that show it: the sum that comes out and how often, the day and what the money is held in, the one thing and how much of everything it is, the death or the paper, or the words that tie the case to money simply being kept. If you cannot point, you do not have an answer yet.'
     ],
-    whenBoth: 'Some cases show two of the five at once. You have met two. In Marguerite’s case, bills paid in a fall were made out of one company, and the key’s answer was {a:D1.shock}. In Carl and Una’s case, a fall had made a fixed yearly sum too big, and the key’s answer was {a:D1.erosion}. In both, {a:D1.timing} gave way. The key gives every case one answer, and that is how it chooses. The key has one more case of the second kind: a planned sale to put a split back, where the tax on the sale is the problem and new money paid in could do the same job. It is not in this unit’s cases, and it is enough for now to know that the key has it. Each pair below has been set side by side earlier in this unit, and each has one question that separates it.' },
+    whenBoth: 'Some cases show two of the five at once. You have met two. In Marguerite’s case, bills paid in a fall were made out of one company, and the answer was {a:D1.shock}. In Carl and Una’s case, a fall had made a fixed yearly sum too big, and the answer was {a:D1.erosion}. In both, {a:D1.timing} gave way. Every case gets one answer, and that is how it is chosen. There is one more case of the second kind: a planned sale to put a split back, where the tax on the sale is the problem and new money paid in could do the same job. It is not in this unit’s cases, and it is enough for now to know that it exists. Each pair below has been set side by side earlier in this unit, and each has one question that separates it.' },
 
   { id: 'check-gate', kind: 'check', after: 'D1',
     case: 'w-kind',
@@ -33,7 +33,7 @@ FC.cards('wealth', 'u1', [
   /* ---------- Two whole cases, watched ---------- */
   { id: 'worked-employer', kind: 'worked',
     h: 'A whole case, from the question to the answer',
-    link: 'You have the five answers and the key’s question about them. Before the drill, watch two cases being run from the top. You are not asked anything until the end of each.',
+    link: 'You have the five answers and the question about them. Before the drill, watch two cases being run from the top. You are not asked anything until the end of each.',
     case: 'w-wk-1',
     steps: [
       { step: 'D1',
@@ -57,14 +57,14 @@ FC.cards('wealth', 'u1', [
         answer: 'b' },
       reason: [
         'For {a:D1.timing} you must be able to point to this: {needs:timing}. Beth’s case has a fall, and her money is in shares, but nothing in it catches her out: she does not need the money for twenty years, no bill is due, and no plan has drifted. Her case is about what one company can do to the money, whatever the rest of the market is doing.',
-        'It is the question from Lars. {test:shock~timing} Here one thing could do the damage while every other price stayed where it is, so the key’s answer is {a:D1.shock}.'
+        'It is the question from Lars. {test:shock~timing} Here one thing could do the damage while every other price stayed where it is, so the answer is {a:D1.shock}.'
       ]
     },
     impression: {
       resembles: 'w-employer',
       text: [
-        'The key has given its answer. Now take a second look of a different kind: does this case look like one you know? It should bring back Karim. There too most of the money, 70%, was shares in the company where he worked.',
-        'Here the key and the likeness agree, so the answer stands. The key’s question comes first, because it makes you point at words in the case. The likeness is only a second look. When the two disagree, do not pick the one you prefer. Go back to the key’s question and find the words in the case that answer it. The second whole case shows how.'
+        'You have the answer. Now take a second look of a different kind: does this case look like one you know? It should bring back Karim. There too most of the money, 70%, was shares in the company where he worked.',
+        'Here the answer and the likeness agree, so it stands. The question comes first, because it makes you point at words in the case. The likeness is only a second look. When the two disagree, do not pick the one you prefer. Go back to the question and find the words in the case that answer it. The second whole case shows how.'
       ]
     } },
 
@@ -94,21 +94,21 @@ FC.cards('wealth', 'u1', [
         answer: 'b' },
       reason: [
         'For {a:D1.timing} you must be able to point to this: {needs:timing}. The fall is there, and so are the shares, but nothing is waiting for the money: no bills are paid from it, no bill falls due, and no plan has drifted. A fall that catches nothing raises nothing.',
-        'It is the question from Ines. {test:none~timing} Here nothing is needed from the pension for seven years, so the key’s answer is {a:D1.none}. Whether Ronan should sell is a different question, and the case gives him no reason to say yes.'
+        'It is the question from Ines. {test:none~timing} Here nothing is needed from the pension for seven years, so the answer is {a:D1.none}. Whether Ronan should sell is a different question, and the case gives him no reason to say yes.'
       ]
     },
     impression: {
       resembles: 'w-saver', first: 'w-couple-fall',
       text: [
-        'Now the second look: does this case look like one you know? A fall of 30% and a man worried about his money may bring back Pete and Jean first, and Pete and Jean’s case was {a:D1.timing}. So here the likeness and the key seem to disagree.',
-        'When that happens, go back to the key’s question and find the words in the case that answer it. They are {cue:D1}. Pete and Jean’s case had nothing like them: they sold shares every month to pay their bills, with nothing set aside. Ronan’s case has the opposite. The case this one really looks like is Aisha’s, who would not touch her pension for thirty years, and the key’s answer stands.'
+        'Now the second look: does this case look like one you know? A fall of 30% and a man worried about his money may bring back Pete and Jean first, and Pete and Jean’s case was {a:D1.timing}. So here the likeness and the answer seem to disagree.',
+        'When that happens, go back to the question and find the words in the case that answer it. They are {cue:D1}. Pete and Jean’s case had nothing like them: they sold shares every month to pay their bills, with nothing set aside. Ronan’s case has the opposite. The case this one really looks like is Aisha’s, who would not touch her pension for thirty years, and the answer stands.'
       ]
     } },
 
   /* ---------- After the drill ---------- */
   { id: 'recap-gate', kind: 'recap',
     h: 'What to carry away',
-    link: 'You have now answered the key’s first question on your own. This card puts the unit in one place, in the key’s words.',
+    link: 'You have now answered the first question on your own. This card puts the unit in one place.',
     carry: [
       'Before any cure, ask what could lose the money, and point to the words in the case that show it. If you cannot point, you do not have an answer yet.',
       'The answer tells you where to look. It does not say that something is wrong. A charge can pay for real work, and a loan can be a safe one. What to do about it, if anything, comes from the questions that follow.',
@@ -117,7 +117,7 @@ FC.cards('wealth', 'u1', [
       'A case in which the papers are all in order is still a case about {a:D1.handover}. {a:D1.none} is for a case that raises none of the four.',
       '{a:D1.none} is a real answer, and a common one. If you cannot point to words that raise one of the four, do not invent them, and do not buy a cure for a problem the case does not have.',
       'The question is about {t:pot}, everything someone has built up and wants to keep, and never about the pay that arrives each month.',
-      'Every case in this subject starts with this question. Your answer to it is the first part of your route to a name.'
+      'Every case in this subject starts with this question. Your answer to it is the first of your answers on the way to a name.'
     ] },
 
   { id: 'transfer-gate', kind: 'transfer',

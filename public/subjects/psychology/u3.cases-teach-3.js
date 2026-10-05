@@ -72,12 +72,12 @@ FC.cases('psychology', 'u3', [
 
   /* ---------- The exceptions: a reply that looks like turning the blame around, and a fair accusation from someone who does it too ---------- */
   { id: 'cupboard', use: 'teach', tier: 'misleading', setting: 'learning', topic: 'an unlocked art cupboard', name: 'The art cupboard',
-    text: "Tara's head teacher, Mr Boyd, tells her the art cupboard was left unlocked on Friday and paints went missing. The key log shows Tara locked it at noon, and that it was opened again at three by Neil, who has the other key. 'That isn't true, I locked it,' Tara says. 'You always blame me first. I'm the one who gets picked on round here.' Mr Boyd reads the log, says, 'Sorry, I should have checked first,' and goes to ask Neil.",
+    text: "Tara's head teacher, Mr Boyd, tells her the art cupboard was left unlocked on Friday and paints went missing. The cupboard log shows Tara locked it at noon, and that it was opened again at three by Neil, who has the other key. 'That isn't true, I locked it,' Tara says. 'You always blame me first. I'm the one who gets picked on round here.' Mr Boyd reads the log, says, 'Sorry, I should have checked first,' and goes to ask Neil.",
     outcome: 'ordexchange', route: { D1: ['tactic'], T1: ['plain'] },
-    cues: { T1: 'The key log shows Tara locked it at noon, and that it was opened again at three by Neil, who has the other key.' },
+    cues: { T1: 'The cupboard log shows Tara locked it at noon, and that it was opened again at three by Neil, who has the other key.' },
     segments: [
       { text: "Tara's head teacher, Mr Boyd, tells her the art cupboard was left unlocked on Friday and paints went missing.", note: 'That is what Mr Boyd raises. It does not show whether Tara did it.' },
-      { text: 'The key log shows Tara locked it at noon, and that it was opened again at three by Neil, who has the other key.' },
+      { text: 'The cupboard log shows Tara locked it at noon, and that it was opened again at three by Neil, who has the other key.' },
       { text: "'That isn't true, I locked it,' Tara says. 'You always blame me first. I'm the one who gets picked on round here.'", note: 'That sounds like a denial, an attack and playing the one wronged, and it is why the case looks like {o:darvo}. But {o:darvo} is only given when the case shows the person did what they are asked about, and that is the part you are asked for.' },
       { text: "Mr Boyd reads the log, says, 'Sorry, I should have checked first,' and goes to ask Neil.", note: 'That is how it ends. It confirms the log, but it is not the words that show Tara did not do it.' }
     ] },

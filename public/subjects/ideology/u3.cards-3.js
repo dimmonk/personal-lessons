@@ -61,7 +61,7 @@ FC.cards('ideology', 'u3', [
     ],
     explain: [
       'Put this beside the steelworks leaflet. Both set ordinary people against a few at the top. The leaflet went on to say what the country should have, a steelworks that belongs to the country. This text does not. Its whole message is that ordinary people should throw the few at the top out.',
-      'This is the thin case: a text that has the two groups and nothing else. It is very common. A slogan such as "they have had their turn, now throw them out" says whom it is angry at and no more. The key gives it a name of its own, so that it is not forced into a name that needs more.'
+      'This is the thin case: a text that has the two groups and nothing else. It is very common. A slogan such as "they have had their turn, now throw them out" says whom it is angry at and no more. It is given a name of its own, so that it is not forced into a name that needs more.'
     ],
     feature: { step: 'N1', option: 'eliteonly' },
     name: 'The name for this is {o:pop}. "Populism" means setting ordinary people against a few at the top. "With nothing attached" says that nothing else is joined to it: no borders, culture or industry to put first, and no ranking of peoples. When a text does attach one of those things, it has another name.' },

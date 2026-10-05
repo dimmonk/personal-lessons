@@ -22,7 +22,7 @@ FC.cards('wealth', 'u3', [
     ],
     feature: { step: 'S1', option: 'riskyloan' },
     name: [
-      'The key’s answer is {a:S1.riskyloan}, and the name of what to do about it is {o:deleverage}. The name is the fix: a loan that is modest in size, on terms that stay safe.',
+      'The answer is {a:S1.riskyloan}, and the name of what to do about it is {o:deleverage}. The name is the fix: a loan that is modest in size, on terms that stay safe.',
       'The name does not say that borrowing is wrong, or that the lender is acting badly. It says that the loan, as it stands, hands the lender a power that could force a sale.'
     ] },
 
@@ -34,7 +34,7 @@ FC.cards('wealth', 'u3', [
     shared: [
       'Ian’s loan and Sunil’s loan look different: a broker lending against shares, a bank lending against flats. In both, the loan is large against what it is secured on: 58% for Ian, and 80% for Sunil (£800,000 out of £1,000,000). And in both, the terms let something outside the borrower’s control make the loan harder: a limit that lets the broker act for Ian, and a rate that follows the bank’s for Sunil.',
       'Sunil’s numbers show it. At 3%, interest on £800,000 is £24,000 a year. At 7% it is £56,000, which is £32,000 more, out of rents of £70,000. The rents are the same. Only the rate moved. If it went higher, or the flats’ value fell below the loan, he could be forced to sell whatever the flats were earning.',
-      'That is what {a:S1.riskyloan} names, and the key’s own words for what to point to are these: {needs:deleverage}.'
+      'That is what {a:S1.riskyloan} names, and the words to point to are these: {needs:deleverage}.'
     ] },
 
   { id: 'w3-portrait-deleverage', kind: 'portrait', outcome: 'deleverage',
@@ -71,31 +71,31 @@ FC.cards('wealth', 'u3', [
     instruction: 'Both cases are about Jon, who owns a flat worth £480,000. Compare one thing: how large the loan is against the flat, and what the bank is allowed to do.',
     prompt: { kind: 'which', option: 'S1.riskyloan', answer: 'w3-h-la-ds2-a' },
     difference: [
-      'In Case A Jon owes £400,000 on a £480,000 flat, which is 83%. The rate follows the bank’s, and the bank can ask for more money to be put up if the flat’s value falls. A fall of 10% in the flat, to £432,000, would take the loan to 93% of its value. The key’s answer is {a:S1.riskyloan}, and the name is {o:deleverage}.',
-      'In Case B Jon owes £150,000 on the same flat, which is 31%. The rate is fixed for fifteen years, and the bank cannot demand the money back while he makes the payments. The flat could fall by half, to £240,000, and the loan would be 63% of its value, with the bank still unable to act. The key’s answer is {a:S1.madesafe}, and the name is {o:safe}.',
+      'In Case A Jon owes £400,000 on a £480,000 flat, which is 83%. The rate follows the bank’s, and the bank can ask for more money to be put up if the flat’s value falls. A fall of 10% in the flat, to £432,000, would take the loan to 93% of its value. The answer is {a:S1.riskyloan}, and the name is {o:deleverage}.',
+      'In Case B Jon owes £150,000 on the same flat, which is 31%. The rate is fixed for fifteen years, and the bank cannot demand the money back while he makes the payments. The flat could fall by half, to £240,000, and the loan would be 63% of its value, with the bank still unable to act. The answer is {a:S1.madesafe}, and the name is {o:safe}.',
       'The flat and the person are the same. The size of the loan and the bank’s rights are what differ, and they decide.'
     ] },
 
   { id: 'w3-exc-supports', kind: 'exception', looksLike: 'deleverage', is: 'supports', ledger: 'deleverage~supports',
-    h: 'A loan the lender could use, and the key’s answer is the business',
-    link: 'A loan whose lender can demand the money back looks like {o:deleverage}. This card shows a case in which that loan is there, and the key gives a different answer.',
+    h: 'A loan the lender could use, and the answer is the business',
+    link: 'A loan whose lender can demand the money back looks like {o:deleverage}. This card shows a case in which that loan is there, and the answer is a different one.',
     case: 'w3-h-exc-sup',
-    setup: 'Reza has a loan that his bank can demand back, and that gives the bank his shares if he cannot pay. That is exactly what {o:deleverage} points to. Yet the key’s answer for this case is {a:S1.ownrun}, and the name is {o:supports}.',
+    setup: 'Reza has a loan that his bank can demand back, and that gives the bank his shares if he cannot pay. That is exactly what {o:deleverage} points to. Yet the answer for this case is {a:S1.ownrun}, and the name is {o:supports}.',
     prompt: { kind: 'phrase', answer: 'runs a small chain of tyre shops' },
     because: [
       'Ask what else the case shows. Reza runs the business, and it is most of what he owns: £900,000 out of £1,100,000. A loan secured on the shares of a business the owner runs is one of the three things that make such a business safe, and it is the one that is missing here. So the loan is not a separate matter. It is part of the answer for the business.',
       'There is more missing. His savings of £15,000 cover about five months of the £36,000 he spends a year, which is a second gap. Putting {t:threesupports} in place means ending the loan against the shares and building the reserve, and ending the loan is what deals with the bank’s power.',
-      'Compare Ian, in the case of {o:deleverage}. His loan was against shares in a company that he did not run. Reza’s loan is part of a business that he runs, and when the loan is part of a business that the owner runs, the key gives the answer for the business.'
+      'Compare Ian, in the case of {o:deleverage}. His loan was against shares in a company that he did not run. Reza’s loan is part of a business that he runs, and when the loan is part of a business that the owner runs, the answer is the one for the business.'
     ],
-    take: 'When a case shows both a loan the lender could use and a business the person runs, the key’s answer is {a:S1.ownrun}: the loan is one of the three gaps.' },
+    take: 'When a case shows both a loan the lender could use and a business the person runs, the answer is {a:S1.ownrun}: the loan is one of the three gaps.' },
 
   { id: 'w3-refute-house', kind: 'refute', about: 'deleverage',
     h: 'A wrong idea: “my house is my best investment, so it cannot be a risk”',
     link: 'The picture of {o:deleverage} said that a loan is usually taken for a good reason and works well for years. That is why this idea feels true, and why it leads people into the gap.',
     idea: 'My house is my best investment. It has gone up every year since I bought it, so there is no risk in having most of what I own in it, even with the loan.',
-    verdict: 'This is wrong. What it says about the past may be true, and it answers a different question from the one the key asks.',
+    verdict: 'This is wrong. What it says about the past may be true, and it answers a different question from the one that matters here.',
     right: [
-      'How well a house has done tells you what happened. The key’s question is about what could happen to most of what a person has. A house that has risen for years can still be most of what someone owns, and a loan on it can still be one that a lender could use.',
+      'How well a house has done tells you what happened. The question is about what could happen to most of what a person has. A house that has risen for years can still be most of what someone owns, and a loan on it can still be one that a lender could use.',
       'Take a house worth £400,000 with a loan of £340,000 whose rate follows the bank’s. The loan is 85% of the value. If prices in the area fell by 15%, the house would be worth £340,000, exactly what is owed, and nothing would be left of what the owner put in. If the rate then jumped from 3% to 7%, the interest would go from £10,200 a year to £23,800.',
       'None of that needs the house to have been a bad buy. A good buy and a risky shape can both be true. So the useful thing to ask is not “has it been my best investment?” but “what could take most of it, and what could the lender do?” If the loan is modest, the rate fixed, and the lender unable to demand the money back while it is paid, nothing needs doing, and that too is an answer.'
     ],

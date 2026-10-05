@@ -51,7 +51,7 @@ FC.cases('ideology', 'u3', [
             N1: ['The ministers and the rating agencies abroad have been choosing our budget for years', 'our own industry should come first'],
             N2: 'Put us in parliament and we will do it' },
     reason: { D1: 'The speech puts one people first: {cue:D1}.',
-              N1: 'It also names a few at the top, the ministers and the agencies, and wants the country\'s own industry first: {cue:N1}. The opening words, "one people", are the answer {a:N1.whole}, but when a text also sets the people against a few at the top, the key\'s answer is {a:N1.elitenation}.',
+              N1: 'It also names a few at the top, the ministers and the agencies, and wants the country\'s own industry first: {cue:N1}. The opening words, "one people", are the answer {a:N1.whole}, but when a text also sets the people against a few at the top, the answer is {a:N1.elitenation}.',
               N2: 'The remedy is a seat in parliament: {cue:N2}. The vote stays.' },
     not: { outcome: 'nationalism', why: '{o:nationalism} would speak for everyone with nobody named as the other side. This speech names the ministers and the agencies as the ones who have taken the people\'s budget.' },
     wouldChange: 'If the speech dropped the ministers and the agencies and spoke only of the nation as one, the name would be {o:nationalism}.' },

@@ -69,8 +69,8 @@ FC.cards('stats', 'u6', [
     instruction: 'Both cases are about the same gym and the same personal-training program, and in both the members who signed up lost weight. Compare one thing: whether anyone who did not sign up is counted beside them.',
     prompt: { kind: 'which', option: 'K1.behind', answer: 'k-gym-two' },
     difference: [
-      'In Case A the gym counts only the 90 members who signed up. Nobody who went without is counted, so there is nothing beside them for anything to differ from, and nothing shows what the members would have lost anyway. The key’s answer is {a:K1.anyway}, and the case is {o:nocontrol}.',
-      'In Case B the gym counts the 410 members who did not sign up as well, and they lost 1 pound. Now two groups are set side by side, and the account shows something else that differs between them: 70 of the 90 are new members, against 60 of the 410, and new members lose weight fastest in their first year. The key’s answer is {a:K1.behind}, and the case is {o:confound}.',
+      'In Case A the gym counts only the 90 members who signed up. Nobody who went without is counted, so there is nothing beside them for anything to differ from, and nothing shows what the members would have lost anyway. The answer is {a:K1.anyway}, and the case is {o:nocontrol}.',
+      'In Case B the gym counts the 410 members who did not sign up as well, and they lost 1 pound. Now two groups are set side by side, and the account shows something else that differs between them: 70 of the 90 are new members, against 60 of the 410, and new members lose weight fastest in their first year. The answer is {a:K1.behind}, and the case is {o:confound}.',
       'The program and the claim are the same in both. Adding a group that went without is a step toward a fair picture. It is not yet one when people chose which group to be in.'
     ] },
 

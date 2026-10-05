@@ -29,7 +29,7 @@ FC.cases('civics', 'u3', [
     reason: { D1: 'The case ends by asking the Senate for a vote: {cue:D1}. The President’s promise only says what she would do after it.',
               C1: 'Congress is passing a law, and what it does is make a coin heavier: {cue:C1}. Money and coins are on the Constitution’s list, and no right is taken away.' },
     not: { outcome: 'purse', why: 'Coins cost money to make, which can sound like a decision about spending. But the bill is about the coin itself, a matter on the list, and it votes no money.' },
-    wouldChange: 'If the case ended with the President saying that she would sign any such bill, with no vote in the story, the key’s answer to the first question would be {a:D1.president}.' },
+    wouldChange: 'If the case ended with the President saying that she would sign any such bill, with no vote in the story, the answer to the first question would be {a:D1.president}.' },
 
   /* ---------- Beyond Congress's power ---------- */
   { id: 'ret-textbooks', use: 'return', tier: 'clean', setting: 'learning', topic: 'one history textbook for every school',
@@ -55,7 +55,7 @@ FC.cases('civics', 'u3', [
     reason: { D1: 'The last decision is a vote in the Senate, after the House: {cue:D1}. The city’s permits are only in the background.',
               C1: 'The law {cue:C1}. A peaceful rally is a way of gathering, and the Constitution protects the right to gather peacefully, so a law that takes it away is not one Congress may pass.' },
     not: { outcome: 'enumerated', why: 'The votes of both chambers are in order, as for any law. But a law that takes away a right is not one the Constitution lets Congress pass.' },
-    wouldChange: 'If a city council had set the same rule for its own square, the key’s answer to the first question would be {a:D1.states}.' },
+    wouldChange: 'If a city council had set the same rule for its own square, the answer to the first question would be {a:D1.states}.' },
 
   /* ---------- The power of the purse ---------- */
   { id: 'ret-trails', use: 'return', tier: 'clean', setting: 'leisure', topic: 'funds for national trails',
@@ -81,5 +81,5 @@ FC.cases('civics', 'u3', [
     reason: { D1: 'The last decision is the vote of both chambers: {cue:D1}. The President’s promise and the hired crews are how the matter got there.',
               C1: 'Congress decided about money, and left it out: the bill was passed {cue:C1}. The crews cannot be paid whatever the President promised.' },
     not: { outcome: 'enumerated', why: 'It is a bill passed by both chambers. But it is not a law on a listed matter such as a tax. What it settles is whether the government may spend.' },
-    wouldChange: 'If the case had ended with the road office deciding which bridge to repair first, with the money already voted, the key’s answer to the first question would be {a:D1.president}.' }
+    wouldChange: 'If the case had ended with the road office deciding which bridge to repair first, with the money already voted, the answer to the first question would be {a:D1.president}.' }
 ]);

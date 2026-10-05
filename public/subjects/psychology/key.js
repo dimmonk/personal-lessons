@@ -121,13 +121,13 @@ FC.key('psychology', {
     { id: 'cd', unit: 'u2', n: 'cognitive dissonance',
       means: 'the discomfort of doing one thing while believing another' },
     { id: 'pd', unit: 'u4', n: 'personality disorder',
-      means: 'a lasting way of being, across years, places and relationships, that keeps costing the person or the people around them. Only a professional diagnoses one, after long assessment; the key names what a case shows, not a person' }
+      means: 'a lasting way of being, across years, places and relationships, that keeps costing the person or the people around them. Only a professional diagnoses one, after long assessment; the questions name what a case shows, not a person' }
   ],
 
   // Words the old lessons used that a newcomer could not follow, or that this unit's own drafts used for two things.
   avoid: [
     { word: 'clash', sayInstead: 'does not fit' },
-    { word: 'move', sayInstead: 'what the reasoning does, or what one person says or does to another (the key no longer uses the word)' },
+    { word: 'move', sayInstead: 'what the reasoning does, or what one person says or does to another (this subject no longer uses the word)' },
     { word: 'deciding feature', sayInstead: 'what you must be able to point to' },
     { word: 'provisional', sayInstead: 'from one case so far' },
     { word: 'the rule', sayInstead: 'what you must be able to point to, or how to tell them apart' },
@@ -141,7 +141,7 @@ FC.key('psychology', {
     { word: 'situational', sayInstead: 'on one occasion or for one short stretch' },
     { word: 'pathologizing', sayInstead: 'treating one occasion as a lasting way someone is' },
     { word: 'proportionate', sayInstead: 'fits what happened' },
-    { word: 'diagnostic', sayInstead: 'the key’s question' },
+    { word: 'diagnostic', sayInstead: 'the question' },
     { word: 'interaction', sayInstead: 'what one person says or does to another' },
     { word: 'trait', sayInstead: 'a lasting way someone is' },
     { word: 'category', sayInstead: 'kind' }

@@ -15,7 +15,7 @@ FC.cards('civics', 'u9', [
       'The colonies were governed from Britain. Parliament, Britain’s body of lawmakers, taxed the colonists, and the colonists had elected nobody to it. They said that this was wrong, and their reason has a name: consent. Consent is the agreement of the people who are taxed. The colonists’ short form of the idea was “no taxation without representation”. Representation here means having someone you elected in the body that taxes you.',
       'So the quarrel with Britain was about consent, and the slogan says what was missing: representation. A tax laid by a body that had no one of theirs in it was a tax that they had not agreed to.',
       'In 1773, in Boston, colonists protested the tax on tea by throwing a ship’s whole cargo of tea into the harbour. This is the Boston Tea Party. The point of it was not the price of tea. It was that the tax had been laid by a body that would not listen to them.',
-      'The same idea, that money is taken and spent only by people whom the public can vote out, is the history behind the key’s name {o:purse}.',
+      'The same idea, that money is taken and spent only by people whom the public can vote out, is the history behind the name {o:purse}.',
       'The four facts below are the parts of the quarrel: who taxed, what the colonists said was missing, the short form of their complaint, and the protest.'
     ] },
 

@@ -19,8 +19,8 @@ FC.cases('math', 'u5', [
       C1: ['described as 99% accurate', 'The illness affects 1 person in 1,000']
     },
     reason: {
-      M1: 'The words {cue:M1} ask how likely it is that a result is right, a chance and not a count. Nothing here is followed through time, no number is hidden for a calculation to fit, no whole number is split into groups, and no shape is measured. The problem asks for the number of different results, or for a chance, which is the key’s first answer {a:M1.chance}.',
-      C1: 'The words {cue:C1} give a test that has come back positive, call it 99% accurate, and say the illness affects 1 person in 1,000, and ask how likely it is that the result is right, so the key’s answer is {a:C1.test}.'
+      M1: 'The words {cue:M1} ask how likely it is that a result is right, a chance and not a count. Nothing here is followed through time, no number is hidden for a calculation to fit, no whole number is split into groups, and no shape is measured. The problem asks for the number of different results, or for a chance, which is the answer to the first question {a:M1.chance}.',
+      C1: 'The words {cue:C1} give a test that has come back positive, call it 99% accurate, and say the illness affects 1 person in 1,000, and ask how likely it is that the result is right, so the answer is {a:C1.test}.'
     },
     not: {
       outcome: 'complement',
@@ -79,8 +79,8 @@ FC.cases('math', 'u5', [
       ]
     },
     reason: {
-      M1: 'The words {cue:M1} ask how likely it is that a result is right, a chance and not a count. Nothing in it follows an amount as time passes, hides a number that a calculation must fit, or splits whole numbers into groups, and there is no shape to measure. What it asks for is a count of the results, or the chance of something, so the key’s first answer is {a:M1.chance}.',
-      C1: 'The words {cue:C1} give a filter that has marked an email, how common junk is, and how often the filter is right and wrong, and ask how likely it is that the mark is right, so the key’s answer is {a:C1.test}.'
+      M1: 'The words {cue:M1} ask how likely it is that a result is right, a chance and not a count. Nothing in it follows an amount as time passes, hides a number that a calculation must fit, or splits whole numbers into groups, and there is no shape to measure. What it asks for is a count of the results, or the chance of something, so the answer to the first question is {a:M1.chance}.',
+      C1: 'The words {cue:C1} give a filter that has marked an email, how common junk is, and how often the filter is right and wrong, and ask how likely it is that the mark is right, so the answer is {a:C1.test}.'
     },
     not: {
       outcome: 'complement',

@@ -8,9 +8,9 @@ FC.cards('stats', 'u3', [
   /* ---------- The key's question, as a question ---------- */
   { id: 'q-how', kind: 'question', step: 'A1',
     h: 'The question you have been answering all along',
-    link: 'Since the Mill Street restaurants you have seen the key’s question at the foot of each new name, with one answer under it. This card puts the question and its four answers in one place, as the key shows them, and says why the key asks it.',
+    link: 'Since the Mill Street restaurants you have seen the question at the foot of each new name, with one answer under it. This card puts the question and its four answers in one place, as they are always asked, and says why it is asked.',
     decides: [
-      'The key’s first question, {q:S1}, sends a claim to this part of the key when the people or things in the figure are not a fair picture of the group the claim is about, or there are too few of them. That answer is not yet a name. This question gives the name, and it does so by one thing: how the people or things got into the figure.',
+      'The first question, {q:S1}, sends a claim to this question when the people or things in the figure are not a fair picture of the group the claim is about, or there are too few of them. That answer is not yet a name. This question gives the name, and it does so by one thing: how the people or things got into the figure.',
       'That is why it is the only question here. The four names are four different ways in, and each leaves out a different group: the ones that did not last, the ones who did not step forward, the ones who did not reply, or all that there would have been if there were more. Knowing which way tells you who the figure leaves out, which way it leans, and what you would need to see to put it right.'
     ],
     how: [
@@ -30,13 +30,13 @@ FC.cards('stats', 'u3', [
   /* ---------- Two whole claims, watched ---------- */
   { id: 'worked-poll', kind: 'worked',
     h: 'A whole claim, from the first question to the name',
-    link: 'You have the four names and the key’s question about them. Before you run a claim yourself, watch two being run from the top, in the order the key asks. You are not asked anything until the end of each.',
+    link: 'You have the four names and the question about them. Before you run a claim yourself, watch two being run from the top, in the order the questions are asked. You are not asked anything until the end of each.',
     case: 'cn-school-start',
     steps: [
       { step: 'S1',
-        reason: 'The key puts its parts to a claim in order, so begin with the people in the figure. The chair speaks for "parents", and the figure comes from a poll that anyone in a group of 2,000 members could vote in: {cue:S1}. 410 of the 2,000 voted, which is 20 in every 100, and the voters are only some of the parents. The people in the figure are not a fair picture of the parents the chair speaks for, so the claim fails at the very start, and nothing built on it needs checking. The key’s answer is {a:S1.counted}.' },
+        reason: 'The parts of a claim are checked in order, so begin with the people in the figure. The chair speaks for "parents", and the figure comes from a poll that anyone in a group of 2,000 members could vote in: {cue:S1}. 410 of the 2,000 voted, which is 20 in every 100, and the voters are only some of the parents. The people in the figure are not a fair picture of the parents the chair speaks for, so the claim fails at the very start, and nothing built on it needs checking. The answer is {a:S1.counted}.' },
       { step: 'A1',
-        reason: 'Now the question after it. Nobody was asked by name. The poll was posted for anyone in the group to see, and {cue:A1}. The ones who voted chose to, and the parents who feel most strongly about early mornings are the likeliest to. The key’s answer is {a:A1.chose}.' }
+        reason: 'Now the question after it. Nobody was asked by name. The poll was posted for anyone in the group to see, and {cue:A1}. The ones who voted chose to, and the parents who feel most strongly about early mornings are the likeliest to. The answer is {a:A1.chose}.' }
     ],
     hold: {
       neighbour: 'nonresp',
@@ -52,14 +52,14 @@ FC.cards('stats', 'u3', [
         answer: 'b' },
       reason: [
         'For {o:nonresp} you must be able to point to this: {needs:nonresp}. The case has a known group of 2,000, but nobody in it was asked. A poll was posted, and the ones who voted chose to. There is no list of people who were asked and did not reply.',
-        'It is the question from the homework survey. {test:selfselect~nonresp} Here nobody was asked by name, so the key’s answer is {a:A1.chose}.'
+        'It is the question from the homework survey. {test:selfselect~nonresp} Here nobody was asked by name, so the answer is {a:A1.chose}.'
       ]
     },
     impression: {
       resembles: 'cn-fourday',
       text: [
-        'The key has given its answer. Now take a second look of a different kind: does this case look like one you know? It should bring back the magazine poll: a poll that any reader could click, and a figure from the ones who did, read as what everyone thinks.',
-        'Here the key and the likeness agree, so the answer stands. The key’s question comes first, because it makes you point at words in the case. The likeness is only a second look. When the two disagree, do not pick the one you prefer. Go back to the key’s question and find the words in the case that answer it. The second whole case shows how.'
+        'You have an answer. Now take a second look of a different kind: does this case look like one you know? It should bring back the magazine poll: a poll that any reader could click, and a figure from the ones who did, read as what everyone thinks.',
+        'Here the likeness agrees with the answer, so the answer stands. The question comes first, because it makes you point at words in the case. The likeness is only a second look. When the two disagree, do not pick the one you prefer. Go back to the question and find the words in the case that answer it. The second whole case shows how.'
       ]
     } },
 
@@ -69,9 +69,9 @@ FC.cards('stats', 'u3', [
     case: 'cn-yoga',
     steps: [
       { step: 'S1',
-        reason: 'Begin with the people in the figure. The ad speaks for "people who try our studio", which is everyone who tries it, but the figure comes from the 90 who are members now: {cue:S1}. 300 people have tried the studio, and 210 of them are not in the figure. They left, and people leave a studio that is not helping them. The first part goes wrong, so the key’s answer is {a:S1.counted}.' },
+        reason: 'Begin with the people in the figure. The ad speaks for "people who try our studio", which is everyone who tries it, but the figure comes from the 90 who are members now: {cue:S1}. 300 people have tried the studio, and 210 of them are not in the figure. They left, and people leave a studio that is not helping them. The first part goes wrong, so the answer is {a:S1.counted}.' },
       { step: 'A1',
-        reason: 'Now the question after it. Nearly everyone who was asked answered: 88 of 90, which is 98 in every 100. So the replies are not the trouble. The trouble is who was on the list: {cue:A1}. The figure was worked out after the fact from the ones who were still there, and the ones who left are missing. The key’s answer is {a:A1.lasted}.' }
+        reason: 'Now the question after it. Nearly everyone who was asked answered: 88 of 90, which is 98 in every 100. So the replies are not the trouble. The trouble is who was on the list: {cue:A1}. The figure was worked out after the fact from the ones who were still there, and the ones who left are missing. The answer is {a:A1.lasted}.' }
     ],
     hold: {
       neighbour: 'nonresp',
@@ -87,14 +87,14 @@ FC.cards('stats', 'u3', [
         answer: 'b' },
       reason: [
         'For {o:nonresp} you must be able to point to this: {needs:nonresp}. Nothing here is a silence: 88 of 90 replied. For {o:survivor} you must be able to point to this: {needs:survivor}. The case has that. The figure is worked out from the members who are still there, and the 210 who left are not in it.',
-        '{test:survivor~nonresp} The list is only the ones who lasted, so the key’s answer is {a:A1.lasted}.'
+        '{test:survivor~nonresp} The list is only the ones who lasted, so the answer is {a:A1.lasted}.'
       ]
     },
     impression: {
       resembles: 'cn-restaurants', first: 'cn-library',
       text: [
-        'Now the second look: does this case look like one you know? A survey mailed to a list, with nearly everyone answering, may bring back the library survey first, and that case was {o:nonresp}. So here the likeness and the key seem to disagree.',
-        'When that happens, go back to the key’s question and find the words in the case that answer it. They are {cue:A1}. The library case has nothing like them: its list was everyone with a card, and nobody who had left was missing. This case leaves out 210 who left. So the case this one really looks like is the Mill Street restaurants, where the figure came from the ones that were still open, and the key’s answer stands.'
+        'Now the second look: does this case look like one you know? A survey mailed to a list, with nearly everyone answering, may bring back the library survey first, and that case was {o:nonresp}. So here the likeness and the answer seem to disagree.',
+        'When that happens, go back to the question and find the words in the case that answer it. They are {cue:A1}. The library case has nothing like them: its list was everyone with a card, and nobody who had left was missing. This case leaves out 210 who left. So the case this one really looks like is the Mill Street restaurants, where the figure came from the ones that were still open, and the answer stands.'
       ]
     } }
 ]);

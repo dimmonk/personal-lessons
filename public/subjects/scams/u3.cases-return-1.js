@@ -72,7 +72,7 @@ FC.cases('scams', 'u3', [
     text: "Dinah pays for her car insurance on the insurer's website, which she bookmarked. Her bank texts a code to approve the payment, and the payment page asks for it. She types it into that page.",
     outcome: 'realsignin', route: { D1: ['access'], A1: ['code'], A2: ['fits'] }, also: ['money'],
     cues: { D1: 'the payment page asks for it', A1: 'Her bank texts a code to approve the payment', A2: "on the insurer's website, which she bookmarked" },
-    reason: { D1: 'The page asks Dinah for a code: {cue:D1}. Nothing is to be installed and no facts about her are asked for. She is paying for her insurance, so the case also shows a payment, but the request that the page makes of her is for a code, and where a case shows both, the key takes the way into an account.',
+    reason: { D1: 'The page asks Dinah for a code: {cue:D1}. Nothing is to be installed and no facts about her are asked for. She is paying for her insurance, so the case also shows a payment, but the request that the page makes of her is for a code, and where a case shows both, the answer is the way into an account.',
               A1: 'A code has come to her phone and she is asked to type it in: {cue:A1}. No password and no Allow are asked for in this case.',
               A2: 'Dinah started this, from a bookmark that she saved: {cue:A2}. The code goes into the same page, and it is asked for only to approve the payment she is making.' },
     not: { outcome: 'codescam', why: 'The code is real in both, and it arrives on the phone in both. What differs is who asks for it: here it goes into the page that she opened, and nobody has contacted her.' },

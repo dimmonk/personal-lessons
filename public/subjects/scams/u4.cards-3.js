@@ -124,8 +124,8 @@ FC.cards('scams', 'u4', [
     instruction: 'Both cases are about Imran, £6,000 and a £150 release fee. Compare one thing: where the money comes from that is said to be waiting.',
     prompt: { kind: 'which', option: 'M1.lost', answer: 'm-imran-lost' },
     difference: [
-      'In Case A the £6,000 is compensation that Imran never claimed. It was never his, and nothing was ever taken from him. The key’s answer is {a:M1.prize}, and the case is {o:advancefee}.',
-      'In Case B the £6,000 is money that Imran really had and really lost, to a fake insurance broker. The email says that it has been recovered. The key’s answer is {a:M1.lost}, and the case is {o:recovery}.',
+      'In Case A the £6,000 is compensation that Imran never claimed. It was never his, and nothing was ever taken from him. The answer is {a:M1.prize}, and the case is {o:advancefee}.',
+      'In Case B the £6,000 is money that Imran really had and really lost, to a fake insurance broker. The email says that it has been recovered. The answer is {a:M1.lost}, and the case is {o:recovery}.',
       'The fee, the sum and the man are the same. What differs is where the waiting money comes from: money that was never his, or money that was taken from him.'
     ] },
 
@@ -133,23 +133,23 @@ FC.cards('scams', 'u4', [
     h: 'A refund that is held for you, and was lost',
     link: 'The pair you have just seen was tidy: one email about money that was never owed, one about money that was lost. Real messages are not always so tidy. Here is one that sounds like both.',
     case: 'm-exc-refundheld',
-    setup: 'The text says that a refund is being held for Frances, and money that is held for you is what {a:M1.prize} sounds like. Yet the key’s answer for this case is {a:M1.lost}.',
+    setup: 'The text says that a refund is being held for Frances, and money that is held for you is what {a:M1.prize} sounds like. Yet the answer for this case is {a:M1.lost}.',
     prompt: { kind: 'phrase', answer: 'paid £2,000 to an online shop that turned out not to exist' },
     because: [
       'Look at where the £2,000 comes from. Frances paid it to a shop that did not exist, and her bank could not get it back. The text offers her that same money. So the case shows both things: money that is waiting for her, and money that she lost.',
-      'The key gives such a case the answer about the loss. The reason is what the sender is doing. Someone who knows about your loss and offers to return it is going after you a second time, and what protects you is what protects you against {o:recovery}: no fee, and contact only through {t:already}.'
+      'Such a case gets the answer about the loss. The reason is what the sender is doing. Someone who knows about your loss and offers to return it is going after you a second time, and what protects you is what protects you against {o:recovery}: no fee, and contact only through {t:already}.'
     ],
-    take: 'The key decides it this way on purpose. In life the two overlap, and the line could be drawn in another place. The key picks one answer so that two people using it reach the same name, and each can say why.' },
+    take: 'It is decided this way on purpose. In life the two overlap, and the line could be drawn in another place. The questions pick one answer so that two people using them reach the same name, and each can say why.' },
 
   { id: 'exc-site-fee', kind: 'exception', ledger: 'pigbutcher~advancefee', looksLike: 'advancefee', is: 'pigbutcher',
     h: 'A tax to take your profit out',
     link: 'The names in this part have one thing in common: a fee that comes first. Here is a case with a fee that comes first and that is not the name you would expect.',
     case: 'm-exc-withdrawtax',
-    setup: 'The app makes Gareth pay a tax before he can take his money out, and a fee that must be paid before money reaches you is what {o:advancefee} usually sounds like. Yet the key’s answer for this case is {a:M2.site}, and the name is {o:pigbutcher}.',
+    setup: 'The app makes Gareth pay a tax before he can take his money out, and a fee that must be paid before money reaches you is what {o:advancefee} usually sounds like. Yet the answer for this case is {a:M2.site}, and the name is {o:pigbutcher}.',
     prompt: { kind: 'phrase', answer: 'A woman called Nina, whom he has chatted to for three months and never met, showed him the app' },
     because: [
       'Ask where Gareth’s money is. He has put £8,000 into a trading app that Nina, a woman he has never met, showed him. The tax is asked for by the app, to let him take his money out of it. So the case shows both things: a site that someone he knows only online showed him, and a fee that must be paid before money reaches him.',
-      'The key gives such a case the answer about the site. The fee is how the scam is run once the money is in, and it only exists because the site came first.'
+      'Such a case gets the answer about the site. The fee is how the scam is run once the money is in, and it only exists because the site came first.'
     ],
     take: 'The fee does not go away, and it is not forgotten. It does not decide the answer, because the site is the thing that all of it depends on.' }
 ]);

@@ -28,5 +28,5 @@ FC.cases('wealth', 'u5', [
     text: '"I’m 70, my house and savings are £300,000, and my will, forms and power of attorney were all renewed in March. My adviser says everyone needs a trust to be safe. A trust protects against everything."',
     ask: { type: 'option', step: 'H1', answer: 'inorder' },
     fault: 'The claim treats a family trust as protection against everything. It answers one thing, tax on a rise in something the owner holds, and nothing in what is described raises that. The estate is below the line, every paper is current, and nothing is said about the people. So there is nothing for a family trust to answer, and it would cost money to set up and every year to run.',
-    corrected: 'My house and savings are £300,000 and all three papers were renewed in March. Nothing in that raises a problem for a family trust to answer. I would ask what could go wrong in my case that it answers, in numbers. If the answer is nothing, the key’s answer is {a:H1.inorder}.' }
+    corrected: 'My house and savings are £300,000 and all three papers were renewed in March. Nothing in that raises a problem for a family trust to answer. I would ask what could go wrong in my case that it answers, in numbers. If the answer is nothing, the case is {a:H1.inorder}.' }
 ]);

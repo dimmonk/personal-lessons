@@ -16,7 +16,7 @@ FC.cards('civics', 'u9', [
       'Look at what the members of Congress argued about. It was not roads or taxes. Each time a new state was added, the country had to decide whether slavery would be allowed there. The founders had put the question off, and growth brought it back every time.',
       'Congress tried to settle it with compromises. In 1820 it admitted Missouri as a slave state and Maine as a free one. In 1850 it made a second compromise. Each deal bought time without settling the matter, which is why the room in the story knows that the question will come back.',
       'In 1857 the Supreme Court dealt with it in a different way, in the Dred Scott decision. The Court ruled that Black people could not be citizens, and that Congress had no power to ban slavery in the territories, which are lands that had not yet become states. The decision is now widely seen as one of the worst the Court ever made.',
-      'The second of those rulings is an example of the key’s name {o:beyondcong}: the Court said that a law of Congress went past what Congress may do. And the first did not stand. In 1868 the Fourteenth Amendment overturned it, by making everyone born here a citizen.',
+      'The second of those rulings is an example of the name {o:beyondcong}: the Court said that a law of Congress went past what Congress may do. And the first did not stand. In 1868 the Fourteenth Amendment overturned it, by making everyone born here a citizen.',
       'The five facts below are the question, what the compromises did, the two rulings of 1857, and what overturned the first ruling.'
     ] },
 
@@ -32,7 +32,7 @@ FC.cards('civics', 'u9', [
       { id: 'slv-citizen', q: 'What did the Supreme Court decide in 1857, in the Dred Scott decision, about Black people?', a: 'They could not be citizens',
         relates: 'This is the first of the two rulings of 1857. The decision is now widely seen as one of the worst the Court ever made.' },
       { id: 'slv-terr', q: 'What did the Supreme Court decide in 1857 about a ban on slavery in the territories?', a: 'Congress had no power to ban slavery there',
-        relates: 'This is the second of the two rulings of 1857. The Court said that a law of Congress went past what Congress may do, which is what the key’s name {o:beyondcong} describes.' },
+        relates: 'This is the second of the two rulings of 1857. The Court said that a law of Congress went past what Congress may do, which is what the name {o:beyondcong} describes.' },
       { id: 'slv-undone', q: 'What overturned the Court’s ruling on citizenship in 1868?', a: 'The Fourteenth Amendment made everyone born here a citizen',
         relates: 'The Fourteenth Amendment was added to overturn the citizenship part of the Dred Scott decision. Since 1868, everyone born here has been a citizen under the Constitution.' }
     ] },

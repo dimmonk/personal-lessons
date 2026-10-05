@@ -39,7 +39,7 @@ FC.cases('civics', 'u4', [
     outcome: 'beyondpres', route: { D1: ['president'], E1: ['newduty'] },
     cues: { E1: 'No law passed by Congress gives the President that power', D1: 'The President signed an executive order on Monday that says what hours the barbers in every state may open their shops' } },
 
-  /* ---------- The check on the key's question ---------- */
+  /* ---------- The check on the question ---------- */
   { id: 'e-rentcap', use: 'check', tier: 'varied', setting: 'home', topic: 'a limit on rent rises', name: 'The rent limit',
     text: "The federal housing agency has told every landlord in the country that rent may not rise by more than 3 percent a year, and that landlords who break the rule will be fined. Congress has not passed a law about rents.",
     outcome: 'beyondpres', route: { D1: ['president'], E1: ['newduty'] },

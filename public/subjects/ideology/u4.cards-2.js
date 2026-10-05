@@ -17,10 +17,10 @@ FC.cards('ideology', 'u4', [
       'The first thing to see is that the order is not there any more. In the boundary walk the walk was still being walked, and the text asked for it to stay. Here the courts are gone. The text is not asking for something to be kept. It is asking for something that was taken away to be given back.',
       'The second thing is what the text says about how it was lost. It does not say that the order faded or that times changed. It says it was abolished, and that this was a wrong. That is what turns the request into a demand to put something right, and not a wish.',
       'In Unit One this text gets the answer {a:D1.tradition}, because it holds up an old order of crown and church as what should guide. That answer is shared with the last name. What separates the two is this unit’s question, and the answer it gets here is {a:T1.restore}.',
-      'People who think like this hold that a country’s order was built up over centuries, that those who tore it down had no right, and that what came after is worse. They need not want everything of the past. They may ask for one old order, or for several, to be put back. People who disagree say that the old order was unfair to many people, or that going back is not possible, or that it was not lost wrongly at all. The key takes no side. It goes by what the text asks for.'
+      'People who think like this hold that a country’s order was built up over centuries, that those who tore it down had no right, and that what came after is worse. They need not want everything of the past. They may ask for one old order, or for several, to be put back. People who disagree say that the old order was unfair to many people, or that going back is not possible, or that it was not lost wrongly at all. No side is taken here. The answer goes by what the text asks for.'
     ],
     feature: { step: 'T1', option: 'restore' },
-    name: 'The name for this is {o:react}. "Reactionary" means reacting against a change that has already been made, by trying to undo it. In everyday arguments the word is often thrown as an insult, to mean "backward" or "old-fashioned". The key does not use it that way. It uses it as a plain description of what you can point to in a text: an order that has gone, said to have been wrongly torn down, and asked for back. The second word of the name is the name from the last card, because this kind of text, like that one, holds up old ways.' },
+    name: 'The name for this is {o:react}. "Reactionary" means reacting against a change that has already been made, by trying to undo it. In everyday arguments the word is often thrown as an insult, to mean "backward" or "old-fashioned". It is not used that way here. It is used as a plain description of what you can point to in a text: an order that has gone, said to have been wrongly torn down, and asked for back. The second word of the name is the name from the last card, because this kind of text, like that one, holds up old ways.' },
 
   { id: 'again-react', kind: 'again', outcome: 'react',
     link: 'The Church courts gave you what to point to from one case: {needs:react}. Here is a second case in a different setting: the cloth trade, and a speech in a guild hall.',
@@ -60,8 +60,8 @@ FC.cards('ideology', 'u4', [
     instruction: 'Both cases are about the same school, the church school at Marrow Lane, and both hold up its old ways. Compare one thing: does the text ask for what is there to stay, or for what has gone to come back?',
     prompt: { kind: 'which', option: 'T1.restore', answer: 'i4-lk-react-school' },
     difference: [
-      'In Case A the school is still a church school. The text says its Sunday hymns and the vicar’s choosing of the head teacher were handed down and should guide how the school is run, and it asks for them to be kept, and for any change to come slowly. Nothing has gone and nothing is asked back. The key’s answer is {a:T1.keep}, and the case is {o:conserv}.',
-      'In Case B the school was taken from the church by an act, and the church no longer chooses the head teacher. The text says that was a wrong, and asks for the act to be undone and the school given back. The key’s answer is {a:T1.restore}, and the case is {o:react}.',
+      'In Case A the school is still a church school. The text says its Sunday hymns and the vicar’s choosing of the head teacher were handed down and should guide how the school is run, and it asks for them to be kept, and for any change to come slowly. Nothing has gone and nothing is asked back. The answer is {a:T1.keep}, and the case is {o:conserv}.',
+      'In Case B the school was taken from the church by an act, and the church no longer chooses the head teacher. The text says that was a wrong, and asks for the act to be undone and the school given back. The answer is {a:T1.restore}, and the case is {o:react}.',
       'Both texts love the same school and hold up the same old ways. They differ in what stands today and in what the text asks for. Case A asks for what is there to stay. Case B asks for what has gone to return.'
     ] },
 
@@ -72,8 +72,8 @@ FC.cards('ideology', 'u4', [
     idea: '"If a text values faith and old customs, it wants to turn the clock back. That is what reactionary means."',
     verdict: 'This is wrong, in two ways.',
     right: [
-      'First, valuing old ways is not asking for them to be put back. Many texts that hold up faith and custom are about something that is still there. They ask for it to be kept, and they say nothing was torn down. For those texts the key’s answer to {q:T1} is {a:T1.keep}, and the name is {o:conserv}.',
-      'Second, "turning the clock back" is a figure of speech, and it can be stretched over almost anything. The key asks for words you can point to: an order that has gone, said to have been wrongly torn down, and a request for it to be put back. Without those words you do not have {o:react}.',
+      'First, valuing old ways is not asking for them to be put back. Many texts that hold up faith and custom are about something that is still there. They ask for it to be kept, and they say nothing was torn down. For those texts the answer to {q:T1} is {a:T1.keep}, and the name is {o:conserv}.',
+      'Second, "turning the clock back" is a figure of speech, and it can be stretched over almost anything. What counts is words you can point to: an order that has gone, said to have been wrongly torn down, and a request for it to be put back. Without those words you do not have {o:react}.',
       'So when a text holds up old ways, point to what it asks. Is anything asked back? If not, the name is {o:conserv}.'
     ],
     testedBy: ['i4-claim-values'] }

@@ -19,7 +19,7 @@ FC.cards('wealth', 'u3', [
 
   /* ---------- Second answer group: a business the person runs ---------- */
   { id: 'w3-meet-supports', kind: 'meet', outcome: 'supports',
-    link: 'The key’s next answer is the other side of that case. When one of the three things in Lucía’s case is missing, a business that is most of what someone has stops being a sound choice and becomes a risk.',
+    link: 'The next answer is the other side of that case. When one of the three things in Lucía’s case is missing, a business that is most of what someone has stops being a sound choice and becomes a risk.',
     case: 'w3-h-sup-1', mark: 'S1',
     strip: [
       'There is one person, Femi, with £560,000: £480,000 in a roofing firm he runs, and £80,000 that is a van worth £66,000 and £14,000 in savings.',
@@ -36,7 +36,7 @@ FC.cards('wealth', 'u3', [
     ],
     feature: { step: 'S1', option: 'ownrun' },
     name: [
-      'The key’s answer is {a:S1.ownrun}, and the name of what to do about it is {o:supports}. It says what the fix is: build what is missing, and what is to be built is {t:threesupports}.',
+      'The answer is {a:S1.ownrun}, and the name of what to do about it is {o:supports}. It says what the fix is: build what is missing, and what is to be built is {t:threesupports}.',
       'The name says nothing against running a business, or against having most of what you own in it.'
     ] },
 
@@ -85,8 +85,8 @@ FC.cards('wealth', 'u3', [
     instruction: 'Both cases are about Tariq, who founded a removals company worth £500,000, most of what he has. Compare one thing: whether he takes part in running it.',
     prompt: { kind: 'which', option: 'S1.ownrun', answer: 'w3-h-la-ds-b' },
     difference: [
-      'In Case A Tariq handed the day-to-day running to a new manager last year and takes no part in it, and nothing stops him selling. The key’s answer is {a:S1.freeheld}, and the name is {o:diversify}: a schedule of sales. Selling costs him no job.',
-      'In Case B the company and the sum are the same, but he still runs it every day. His other money is £40,000 and his household spends £35,000 a year, so only about fourteen months are covered. The key’s answer is {a:S1.ownrun}, and the name is {o:supports}. He cannot sell in steps without giving up his work, and the problem is not that he holds too much of it but that nothing stands round it.',
+      'In Case A Tariq handed the day-to-day running to a new manager last year and takes no part in it, and nothing stops him selling. The answer is {a:S1.freeheld}, and the name is {o:diversify}: a schedule of sales. Selling costs him no job.',
+      'In Case B the company and the sum are the same, but he still runs it every day. His other money is £40,000 and his household spends £35,000 a year, so only about fourteen months are covered. The answer is {a:S1.ownrun}, and the name is {o:supports}. He cannot sell in steps without giving up his work, and the problem is not that he holds too much of it but that nothing stands round it.',
       'So the question that separates them is not how much he owns or how well the company is doing. It is whether he runs it.'
     ] }
 ]);

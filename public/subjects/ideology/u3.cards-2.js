@@ -13,15 +13,15 @@ FC.cards('ideology', 'u3', [
       'Nobody is ranked by blood. The text is about one nation and one leader.'
     ],
     explain: [
-      'In the anniversary speech, the voters chose, and other parties could stand against the speaker. Here the speaker takes that away. He wants elections and rival parties done away with, and critics silenced, so that nobody speaks for the people but him. That is what the key\'s second question asks: {q:N2}',
-      'The key\'s line for this name has a bracket in it. The bracket is a second way of speaking for a people: there the country\'s ordinary people face a group at the top, which has the word {t:elite}, and the nation still comes first. This speaker uses the first way, the whole nation as one. What decides the name is the same in both: elections, other parties and critics pushed aside.',
-      'This is the heart of the name. A text that speaks for the whole nation, and says only that, is the plain case you have just met. A text that speaks for the whole nation and also removes everyone\'s way of saying no is another thing, and the key gives it another name.',
+      'In the anniversary speech, the voters chose, and other parties could stand against the speaker. Here the speaker takes that away. He wants elections and rival parties done away with, and critics silenced, so that nobody speaks for the people but him. That is what the second question asks: {q:N2}',
+      'The line for this name has a bracket in it. The bracket is a second way of speaking for a people: there the country\'s ordinary people face a group at the top, which has the word {t:elite}, and the nation still comes first. This speaker uses the first way, the whole nation as one. What decides the name is the same in both: elections, other parties and critics pushed aside.',
+      'This is the heart of the name. A text that speaks for the whole nation, and says only that, is the plain case you have just met. A text that speaks for the whole nation and also removes everyone\'s way of saying no is another thing, and it is given another name.',
       'Why would a speaker do this? If the nation is one people with one will, then someone who disagrees can be said to be against the people itself. The vote, rival parties and a free press then look like obstacles, and doing away with them follows from the first step.'
     ],
     feature: { step: 'N2', option: 'aside' },
     name: [
       'The name for this is {o:fasc}. It is borrowed from a real movement. Every text in this unit is invented, and none describes a real party or a real person.',
-      'Where the line for this name falls is argued over by the people who study it. Some keep the word for one place and one period, and some use it more widely. The key draws one line, the one you have just read: the nation spoken for as one, and elections and critics pushed aside so that one voice is left. It draws it there because that is what a short text can show.'
+      'Where the line for this name falls is argued over by the people who study it. Some keep the word for one place and one period, and some use it more widely. One line is drawn here, the one you have just read: the nation spoken for as one, and elections and critics pushed aside so that one voice is left. It is drawn there because that is what a short text can show.'
     ] },
 
   { id: 'again-fasc', kind: 'again', outcome: 'fasc',
@@ -63,7 +63,7 @@ FC.cards('ideology', 'u3', [
     prompt: { kind: 'which', option: 'N2.aside', answer: 'n-lk-hospital-fasc' },
     difference: [
       'In Case A the prime minister says that parliament will debate the health budget and that the opposition will have its say on every line. The text leaves the vote and the right to disagree in place. With the whole nation spoken for as one, the case is {o:nationalism}.',
-      'In Case B the Leader says that the budget is his alone to decide, that doctors and papers that question his hospitals will be closed, and that the opposition has no more place. The text takes away the vote and the right to disagree. The key\'s answer is {a:N2.aside}, and the case is {o:fasc}.',
+      'In Case B the Leader says that the budget is his alone to decide, that doctors and papers that question his hospitals will be closed, and that the opposition has no more place. The text takes away the vote and the right to disagree. The answer is {a:N2.aside}, and the case is {o:fasc}.',
       'The hospital is the same, and so are the first words. What differs is what each text does with everyone who might say no. Warmth and pride cannot tell you which of the two you are reading, and nor can the first half of the speech.'
     ] },
 

@@ -51,20 +51,20 @@ FC.cases('ideology', 'u5', [
     text: '"“Liberal” always means left-wing, so a text that wants a small government cannot be liberal at all."',
     context: 'The text says each person is free to speak, to own and to trade, and that the government should keep to its courts and its police.',
     ask: { type: 'missing', name: 'clib' },
-    fault: 'The claim goes by the word and not by the text. “Liberal” is used for different things in different places, and the key has a name for each. Neither use settles what a text wants done for people.',
+    fault: 'The claim goes by the word and not by the text. “Liberal” is used for different things in different places, and each has its own name here. Neither use settles what a text wants done for people.',
     corrected: 'The text says each person is free to speak, to own and to trade, and wants the government kept to its courts and its police. That is the name {o:clib}, and the word “liberal” in the name is there because freedom comes first, whatever people in one country use the plain word for.' },
 
   { id: 'i5-claim-ranking', use: 'claim',
     text: '"The letter wants the test changed for one district only, so it is asking to place that district above everyone else."',
     context: 'The letter says the entry test is the same for every child, and that no child from the district has passed in ten years. It asks for the test to be changed until results are as fair for the district as for everywhere else, and says that nobody is to be placed above anyone.',
     ask: { type: 'option', step: 'R1', answer: 'rules' },
-    fault: 'The claim reads a change for one group as placing it above the rest. The letter asks for results to come out as fair for the district as for everywhere else, and says in so many words that nobody is to be placed above anyone. Whether the change is wise is argued over, and the key does not settle it. What it settles is what the letter asks for.',
-    corrected: 'The letter says a test that treats every child alike has left one district behind, and asks for it to be changed until results are fair, with nobody placed above anybody. That is {a:R1.rules}, and the name is {o:idegal}. A text that put one people above others would answer the key’s first question differently.' },
+    fault: 'The claim reads a change for one group as placing it above the rest. The letter asks for results to come out as fair for the district as for everywhere else, and says in so many words that nobody is to be placed above anyone. Whether the change is wise is argued over, and this course does not settle it. What it settles is what the letter asks for.',
+    corrected: 'The letter says a test that treats every child alike has left one district behind, and asks for it to be changed until results are fair, with nobody placed above anybody. That is {a:R1.rules}, and the name is {o:idegal}. A text that put one people above others would answer the first question differently.' },
 
   { id: 'i5-claim-services', use: 'claim',
     text: '"The speech wants the government to run a health service and a school system, so it wants the government to run everything."',
     context: 'The speech says each person has the right to speak and to believe, and asks the government to pay for a clinic in every district and a school in every town, with everyone paying together.',
     ask: { type: 'option', step: 'R1', answer: 'start' },
-    fault: 'The claim jumps from two named services to everything. The speech asks the government for a clinic and a school, and says that rights come first. Whether asking for those two goes too far is argued over. What the key reads is what the speech asks for.',
+    fault: 'The claim jumps from two named services to everything. The speech asks the government for a clinic and a school, and says that rights come first. Whether asking for those two goes too far is argued over. What counts is what the speech asks for.',
     corrected: 'The speech protects rights and asks the government to pay for a clinic and a school, with all of us paying together. That is {a:R1.start}, and the name is {o:modlib}. It names two things to be given, and not everything.' }
 ]);

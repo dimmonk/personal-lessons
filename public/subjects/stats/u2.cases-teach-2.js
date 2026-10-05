@@ -5,10 +5,10 @@
 FC.cases('stats', 'u2', [
 
   /* ---------- Two things set side by side ---------- */
-  { id: 'h-buses', use: 'teach', tier: 'clean', setting: 'community', topic: 'two bus routes and late trips', name: 'The two bus routes',
-    text: "A city transit agency compared two bus routes. Both are 12 miles long, run on weekdays in the same hours, and serve neighborhoods of similar size. The agency checked every trip in March with the same GPS tracker. On Route 5, 12 of 200 trips arrived more than ten minutes late. On Route 9, 31 of 205 did. The agency says: 'Route 9 buses are late more often than Route 5 buses: 15 trips in 100 against 6.'",
+  { id: 'h-buses', use: 'teach', tier: 'clean', setting: 'community', topic: 'two bus lines and late trips', name: 'The two bus lines',
+    text: "A city transit agency compared two bus lines. Both are 12 miles long, run on weekdays in the same hours, and serve neighborhoods of similar size. The agency checked every trip in March with the same GPS tracker. On Line 5, 12 of 200 trips arrived more than ten minutes late. On Line 9, 31 of 205 did. The agency says: 'Line 9 buses are late more often than Line 5 buses: 15 trips in 100 against 6.'",
     outcome: 'comp_ok', route: { S1: ['holds'], H1: ['difference'] },
-    cues: { S1: ['Both are 12 miles long, run on weekdays in the same hours', 'checked every trip in March with the same GPS tracker'], H1: 'Route 9 buses are late more often than Route 5 buses: 15 trips in 100 against 6' } },
+    cues: { S1: ['Both are 12 miles long, run on weekdays in the same hours', 'checked every trip in March with the same GPS tracker'], H1: 'Line 9 buses are late more often than Line 5 buses: 15 trips in 100 against 6' } },
 
   { id: 'h-shifts', use: 'teach', tier: 'clean', setting: 'work', topic: 'day and night shifts on one line', name: 'The two shifts',
     text: "A factory makes the same brake part on one line, day and night, and inspects every part the same way at the end of the line. Last quarter the day shift made 3,000 parts and 42 failed inspection, and the night shift made 3,100 parts and 68 failed. The factory says: 'The night shift’s parts fail inspection more often: 22 in 1,000 against 14 in 1,000.'",

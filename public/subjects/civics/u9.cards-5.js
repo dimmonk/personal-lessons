@@ -88,7 +88,7 @@ FC.cards('civics', 'u9', [
       'Each neighbour on the porch is talking about a different amendment, and the three are steps in a row: freed, citizens, vote.',
       'The years from 1865 to 1877, when the country tried to rebuild and to settle what freedom meant, are called Reconstruction. Three amendments were added in them. The Thirteenth, in 1865, abolished slavery. The Fourteenth, in 1868, made everyone born here a citizen, and promised due process and equal protection. The Fifteenth, in 1870, said that the vote could not be denied because of race.',
       'Due process means that the government must follow fair steps before it punishes you or takes something from you. Equal protection means that the law protects people equally.',
-      'The Fourteenth is the one that matters most for the key. It put rights above every state. That is why a court can stop a state or a city from acting against a right, which is the key’s name {o:protected}. Its first part is also where birthright citizenship comes from. Since 1868, everyone born here has been a citizen under the Constitution.',
+      'The Fourteenth is the one that matters most for the cases in this course. It put rights above every state. That is why a court can stop a state or a city from acting against a right, which is the name {o:protected}. Its first part is also where birthright citizenship comes from. Since 1868, everyone born here has been a citizen under the Constitution.',
       'The order is the thing to hold: freed, citizens, vote. The three facts below are the three amendments, each asked by what it did.'
     ] },
 
@@ -100,7 +100,7 @@ FC.cards('civics', 'u9', [
       { id: 'am-13', q: 'Which amendment abolished slavery?', a: 'The Thirteenth',
         relates: 'It is the first of the three, from 1865, and it is the one about being freed.' },
       { id: 'am-14', q: 'Which amendment made everyone born here a citizen, and promised due process and equal protection?', a: 'The Fourteenth',
-        relates: 'It is the second of the three, from 1868, and it is the one about being a citizen. It is the amendment behind the key’s name {o:protected}, and it overturned the citizenship part of the Dred Scott decision.' },
+        relates: 'It is the second of the three, from 1868, and it is the one about being a citizen. It is the amendment behind the name {o:protected}, and it overturned the citizenship part of the Dred Scott decision.' },
       { id: 'am-15', q: 'Which amendment said that the vote cannot be denied because of race?', a: 'The Fifteenth',
         relates: 'It is the third of the three, from 1870, and it is the one about the vote.' }
     ] },

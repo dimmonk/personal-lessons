@@ -10,12 +10,12 @@
 
 FC.unit('wealth', 'u1', {
   kind: 'C',              // C classification, F facts, P procedure
-  rev: 1,
+  rev: 2,
   standard: 1,
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author)
   tag: 'One',
   title: { text: 'What could lose the money' },
-  subtitle: 'The key’s first question, and the five kinds of case it sorts every account of someone’s money into',
+  subtitle: 'The first question, and the five kinds of case it sorts every account of someone’s money into',
   teaches: { steps: ['D1'], outcomes: [], terms: ['pot', 'share', 'fund', 'bond', 'mix', 'claim'],
              families: ['erosion', 'timing', 'shock', 'handover', 'none'] },
   assumes: [],            // the first unit of the subject
@@ -68,7 +68,7 @@ FC.unit('wealth', 'u1', {
     { id: 'p3', title: 'A case with nothing to name',
       cards: ['meet-none', 'again-none', 'portrait-none', 'check-none', 'refute-offshore', 'look-none-timing', 'look-none-erosion',
               'look-none-handover', 'look-none-shock'] },
-    { id: 'p4', title: 'The key’s first question, two whole cases, then the drill',
+    { id: 'p4', title: 'The first question, two whole cases, then the drill',
       cards: ['q-gate', 'check-gate', 'worked-employer', 'worked-reunion'], drill: true,
       close: ['recap-gate', 'transfer-gate', 'plan-gate'] }
   ],
@@ -115,7 +115,8 @@ FC.unit('wealth', 'u1', {
   // Build notes: not shown to the learner, and left out of the fingerprint. The validator reads them.
   build: {
     history: [
-      { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the gate unit of Wealth Preservation. Not yet deployed, so later edits before the first deploy stay revision 1.' }
+      { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the gate unit of Wealth Preservation. Not yet deployed, so later edits before the first deploy stay revision 1.' },
+      { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' }
     ],
     // What the K2 rewrite changed in the gate, and why (docs/rebuild/wealth-plan.md, section (a)).
     keyChanges: [

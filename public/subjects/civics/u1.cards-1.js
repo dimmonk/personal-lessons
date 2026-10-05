@@ -20,8 +20,8 @@ FC.cards('civics', 'u1', [
       'Real stories also tend to name more than one of them: a law, the office that applies it, a judge asked to rule on it. If you take the one named first, you can be wrong before you have chosen anything. So before you ask what a rule is, or whether it is allowed, there is an earlier question: whose decision is the story about? This unit teaches that question.'
     ],
     add: [
-      'Three words are used all the way through, so here they are once. A case is a short account of a decision, or of a request for one: a few sentences, in the form of a news item or of something a friend tells you. The key is a short list of questions that you put to a case, always in the same order. Each answer narrows down what the case can be, until one name is left. And federal means belonging to the government of the whole country, as against the government of one state or city: a federal law applies in every state.',
-      'This unit teaches the first question of the key and nothing after it. That question sorts a case into one of four kinds, and in this unit the kind is the name. All four lead on to further questions, taught in later units, and those give finer names. Nothing in this unit asks for them. The question is worded with care, because most stories name several parts of government. It asks about the last decision in the story, or the one the story asks someone to make. What came before is how the matter got there.'
+      'Two words are used all the way through, so here they are once. A case is a short account of a decision, or of a request for one: a few sentences, in the form of a news item or of something a friend tells you. And federal means belonging to the government of the whole country, as against the government of one state or city: a federal law applies in every state.',
+      'Every case is put the same short list of questions, always in the same order, and each answer narrows down what the case can be, until one name is left. This unit teaches the first question and nothing after it. That question sorts a case into one of four kinds, and in this unit the kind is the name. All four lead on to further questions, taught in later units, and those give finer names. Nothing in this unit asks for them. The question is worded with care, because most stories name several parts of government. It asks about the last decision in the story, or the one the story asks someone to make. What came before is how the matter got there.'
     ],
     map: { branch: 'gate' } },              // a gate unit's preview map is the gate itself, drawn from the key
 
@@ -42,7 +42,7 @@ FC.cards('civics', 'u1', [
       'Notice two things the answer does not depend on. It does not depend on whether the vote has already happened: a case that ends by asking the Senate to vote has no decision yet, but the decision it asks for is the Senate’s. And it does not depend on whether you think the law is a good one. A good law and a bad one are voted on by the same people.'
     ],
     feature: { step: 'D1', option: 'congress' },
-    name: 'The key’s answer, and so the name of the kind, is {a:D1.congress}. “Lawmakers” are the people who vote on laws, and “Congress” is the name for the lawmakers of the whole country. The last words of the answer tell you where to look: a vote in one of those two places.' },
+    name: 'The answer, and so the name of the kind, is {a:D1.congress}. “Lawmakers” are the people who vote on laws, and “Congress” is the name for the lawmakers of the whole country. The last words of the answer tell you where to look: a vote in one of those two places.' },
 
   { id: 'again-congress', kind: 'again', family: 'congress',
     link: 'The bicycle-parts case gave you what to point to: {needs:congress}. Here is a second case with a different story, and this time the vote is about student loans.',
@@ -63,7 +63,7 @@ FC.cards('civics', 'u1', [
       'From here on, the cases change their stories on purpose. Sometimes two cases will share the same people and the same story and differ only in who decides last. When that happens, the shared story is there to show you that it decides nothing.',
       'One more thing changes on purpose: how many parts of government a case names. Many cases name two or three: a law, the office that applies it, a judge asked to rule on it. The question asks about the last decision, or the one the case asks for. What comes before it is how the matter reached it, and it can sound more important than it is. Whether you agree with the decision, or like the people who made it, is not part of the question either.'
     ],
-    fixed: ['who makes the last decision, which is what the key asks about: {q:D1}'],
+    fixed: ['who makes the last decision, which is what the question asks about: {q:D1}'],
     varies: ['the topic', 'the people', 'how important it sounds', 'whether you agree with the decision', 'how many parts of government the case names'] },
 
   { id: 'portrait-congress', kind: 'portrait', family: 'congress',
@@ -81,7 +81,7 @@ FC.cards('civics', 'u1', [
     ],
     wild: ['"The Senate voted to..."', '"The House passed it."', '"The bill now goes to the Senate."', '"Congress has approved the money."', '"Lawmakers are voting on it this week."'],
     self: 'In your own life you meet this kind in the news, whenever a vote has just happened or is about to: a bill about taxes, about a programme, about a person who is up for a job. Whenever someone says a vote is coming, ask whose vote it is.',
-    ask: '"Is the last thing in the story a vote by lawmakers, or a request that they vote?" If it is, and the lawmakers sit in the House or the Senate, the key’s answer is {a:D1.congress}.' },
+    ask: '"Is the last thing in the story a vote by lawmakers, or a request that they vote?" If it is, and the lawmakers sit in the House or the Senate, the answer is {a:D1.congress}.' },
 
   { id: 'check-congress', kind: 'check', after: 'congress',
     case: 'k-farmers',

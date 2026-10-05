@@ -8,7 +8,7 @@
 
 FC.unit('civics', 'u8', {
   kind: 'F',              // C classification, F facts, P procedure
-  rev: 1,
+  rev: 2,
   standard: 1,
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author)
   tag: 'Eight',
@@ -90,7 +90,8 @@ FC.unit('civics', 'u8', {
   // Build notes: not shown to the learner, and left out of the fingerprint. The validator reads them.
   build: {
     history: [
-      { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the second fact unit of Civics, replacing old Unit Four (rights, duties and the oath, except its look-alike card, which is a key matter taught in the branch units) and its drill n4. Eight groups of facts under the idea each serves, thirty-six facts, seven look-alike pairs. Rebuilt on one axis per card, so that no row has two right answers (audit U4-3: the old options mixed who with what kind of thing). Old claims 2 (the Bill of Rights protects only citizens), 8 (the Constitution guarantees a job and a home) and 14 (a non-citizen pays no income tax) are held as the right fact in rows and never named (a fact unit has no refute card, A12). Everything asserted comes from the old material of standard0.js. Two holes are skipped and said so on the cards: which of the accused’s rights apply in an immigration hearing, and the details of the test. One pair spans two facts cards (the jury trial and jury service). Not yet deployed.' }
+      { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the second fact unit of Civics, replacing old Unit Four (rights, duties and the oath, except its look-alike card, which is a key matter taught in the branch units) and its drill n4. Eight groups of facts under the idea each serves, thirty-six facts, seven look-alike pairs. Rebuilt on one axis per card, so that no row has two right answers (audit U4-3: the old options mixed who with what kind of thing). Old claims 2 (the Bill of Rights protects only citizens), 8 (the Constitution guarantees a job and a home) and 14 (a non-citizen pays no income tax) are held as the right fact in rows and never named (a fact unit has no refute card, A12). Everything asserted comes from the old material of standard0.js. Two holes are skipped and said so on the cards: which of the accused’s rights apply in an immigration hearing, and the details of the test. One pair spans two facts cards (the jury trial and jury service). Not yet deployed.' },
+      { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' }
     ],
     keyChanges: [],
     wrongIdeas: [],       // a fact unit holds none: claims 2, 8 and 14 become rows, claim 17 (the test is in the Constitution) is corrected on the test card in the right fact, and the key units carry the rest

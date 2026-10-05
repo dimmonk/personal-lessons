@@ -7,11 +7,11 @@ FC.cards('wealth', 'u2', [
     h: 'The story never decides the answer',
     link: 'The last card asked you to ignore the story. That instruction holds for the whole unit, so here it is once in full.',
     body: [
-      'Every case in this unit has two layers. The top layer is the story: a pension, a flat, a retirement, a shop. The layer underneath is what is taking money out of {t:pot} every year, and that is the only layer the key asks about.',
+      'Every case in this unit has two layers. The top layer is the story: a pension, a flat, a retirement, a shop. The layer underneath is what is taking money out of {t:pot} every year, and that is the only layer the question asks about.',
       'The six names belong to the layer underneath. A pension can carry any of them, and so can a rented flat. Size is part of the story too: a charge of £250 and a charge of £25,000 can be the same name, and a charge of £3,000 can be a problem in one case and fine in the next.',
       'Two more things change on purpose. One is who is paid: {t:fund}, an adviser, the tax office, or the person themselves. The other is whether anything is wrong at all. In some cases what comes out is worth it, or already as low as it can be, and one of the six names is for those. Seeing that is part of the skill, and not looking for a problem the case does not show is part of seeing it.'
     ],
-    fixed: ['what is taking money out of {t:pot} every year, which is what the key asks about: {q:E1}'],
+    fixed: ['what is taking money out of {t:pot} every year, which is what the question is about: {q:E1}'],
     varies: ['the kind of account', 'the people', 'the size of the sums', 'who is paid', 'whether anything is wrong at all'] },
 
   { id: 'portrait-feecore', kind: 'portrait', outcome: 'feecore',
@@ -59,7 +59,7 @@ FC.cards('wealth', 'u2', [
     case: 'e-t-shelter',
     plain: [
       'Leila holds the same fund in two places, and she pays different tax on it. In the pension, the law does not tax the £1,600 the fund pays out each year; it taxes what she takes out in old age. In the ordinary account, the £1,600 is taxed in full every year, and she pays 25% of it, £400. The fund, the amount and the income are the same. Only the place differs.',
-      'Which accounts are taxed less, and how, differs from country to country and changes often, so the cases in this unit use a general version: a pension is the sheltered account, and an ordinary investment account is not. The key’s own name for an ordinary investment account, taxed in full, is a taxable account, and the cases may use either. The tax rate of 25% on income is an example to show how the idea works.'
+      'Which accounts are taxed less, and how, differs from country to country and changes often, so the cases in this unit use a general version: a pension is the sheltered account, and an ordinary investment account is not. Another name for an ordinary investment account, taxed in full, is a taxable account, and the cases may use either. The tax rate of 25% on income is an example to show how the idea works.'
     ],
     after: [
       'So a person who has both kinds of account has a choice about which investment goes where. Over the years that choice decides how much tax is paid on the income. An investment that pays out little costs almost nothing to hold in an ordinary account, and one that pays out a lot costs the most there.',

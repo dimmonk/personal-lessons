@@ -46,7 +46,7 @@ FC.cases('math', 'u1', [
       { text: 'Three separate choices, each from its own list, and a question about how many different results there are.', voice: 'chance' },
       { text: 'Two floors of exactly the same shape.', voice: 'shape' }
     ],
-    why: 'That detail is a set of choices made from separate lists, and the question counts the different results. The key’s answer for a question like that, or for one that asks how likely a result is, is {a:M1.chance}.' },
+    why: 'That detail is a set of choices made from separate lists, and the question counts the different results. The answer for a question like that, or for one that asks how likely a result is, is {a:M1.chance}.' },
 
   { id: 'gt-rev-shape', use: 'drill', kind: 'reverse', outcome: 'shape', expect: 'hear',
     options: [
@@ -69,23 +69,23 @@ FC.cases('math', 'u1', [
     text: '"The school play sold 30 tickets for €210 in all: adult tickets at €8 and child tickets at €5. The problem asks how many of each. It says how many, so this is a counting problem."',
     ask: { type: 'option', step: 'M1', answer: 'unknown' },
     fault: 'The claim takes “how many” as a signal that something is being counted. But every kind asks it. This problem does not give the adult tickets or the child tickets. It gives a count and a total for the two together, 30 tickets and €210, and both have to come out right. Nothing is a choice.',
-    corrected: 'The school play sold 30 tickets for €210 in all, adult tickets at €8 and child tickets at €5, and the problem asks how many of each. Here “how many” asks for two numbers the problem does not tell you, and two facts fix them. The key’s answer is {a:M1.unknown}. It would be {a:M1.chance} only if the question counted the different results of a choice.' },
+    corrected: 'The school play sold 30 tickets for €210 in all, adult tickets at €8 and child tickets at €5, and the problem asks how many of each. Here “how many” asks for two numbers the problem does not tell you, and two facts fix them. The answer is {a:M1.unknown}. It would be {a:M1.chance} only if the question counted the different results of a choice.' },
 
   { id: 'gt-claim-numbers', use: 'claim',
     text: '"One bus leaves the station every 25 minutes and another every 40 minutes. They have just left together, and the problem asks when they next leave together. It has two numbers, so I divide 40 by 25."',
     ask: { type: 'option', step: 'M1', answer: 'whole' },
     fault: 'The claim chooses what to do from the numbers: two numbers, so divide. But what the problem asks is when the two buses next leave at the same moment, and dividing one number by the other does not answer that. Two numbers could be anything: a rate, the sides of a triangle, two lists to choose from.',
-    corrected: 'One bus leaves every 25 minutes and another every 40, and the problem asks when they next leave together. There are two things that repeat, and the question is when they meet. The key’s answer is {a:M1.whole}, and the numbers alone could not have said so.' },
+    corrected: 'One bus leaves every 25 minutes and another every 40, and the problem asks when they next leave together. There are two things that repeat, and the question is when they meet. The answer is {a:M1.whole}, and the numbers alone could not have said so.' },
 
   { id: 'gt-claim-hourly', use: 'claim',
     text: '"A locksmith charges a €30 call-out fee plus €25 for every hour. The bill came to €105, and the problem asks how many hours. There is a fee, a price and a bill, just like the van hire, so it is a missing number problem."',
     ask: { type: 'option', step: 'M1', answer: 'growth' },
-    fault: 'The claim matches this problem to the van hire because the two have the same parts: a fee, a price and a bill. But the van hire’s price went with every kilometre, and this price goes with every hour. A price for each hour makes the bill an amount that grows as time passes, and the key gives that case to the third kind.',
-    corrected: 'A locksmith charges a €30 call-out fee plus €25 for every hour, the bill came to €105, and the problem asks how many hours. The price goes with each hour, so the bill is an amount growing as time passes, and the question is how long until it reaches a target. The key’s answer is {a:M1.growth}.' },
+    fault: 'The claim matches this problem to the van hire because the two have the same parts: a fee, a price and a bill. But the van hire’s price went with every kilometre, and this price goes with every hour. A price for each hour makes the bill an amount that grows as time passes, and that case goes to the third kind.',
+    corrected: 'A locksmith charges a €30 call-out fee plus €25 for every hour, the bill came to €105, and the problem asks how many hours. The price goes with each hour, so the bill is an amount growing as time passes, and the question is how long until it reaches a target. The answer is {a:M1.growth}.' },
 
   { id: 'gt-claim-model', use: 'claim',
     text: '"A model of a sailing ship is built at a scale of 1 to 20, and its mast is 45 cm tall. The problem asks how tall the real mast is. A scale is a rate, so this is a missing number problem."',
     ask: { type: 'option', step: 'M1', answer: 'shape' },
-    fault: 'The claim is right that a scale is a rate. But the model and the real ship are exactly the same shape at different sizes, and when a problem shows both a rate and a copy, the key’s answer is the copy.',
-    corrected: 'A model of a sailing ship is built at a scale of 1 to 20, and its mast is 45 cm tall. The model and the real ship are exactly the same shape at different sizes, and the problem asks for a length on the real one. The key’s answer is {a:M1.shape}, and the rate is only how the two sizes compare.' }
+    fault: 'The claim is right that a scale is a rate. But the model and the real ship are exactly the same shape at different sizes, and when a problem shows both a rate and a copy, the answer is the copy.',
+    corrected: 'A model of a sailing ship is built at a scale of 1 to 20, and its mast is 45 cm tall. The model and the real ship are exactly the same shape at different sizes, and the problem asks for a length on the real one. The answer is {a:M1.shape}, and the rate is only how the two sizes compare.' }
 ]);

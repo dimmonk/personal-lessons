@@ -63,15 +63,15 @@ FC.cards('wealth', 'u5', [
     instruction: 'Both cases are about Stefan and the same woodland, and in both his papers are current. Compare one thing: whether the case is about a tax bill that a rise in value would make larger, or about what the people will do.',
     prompt: { kind: 'which', option: 'H1.people', answer: 'la-wood-feud' },
     difference: [
-      'In Case A a valuer says the woodland could be worth £2,500,000 if permission is given. Stefan’s estate is £650,000 now and would be £2,900,000 after the rise, so the tax would go from £60,000 to £960,000. That is £900,000 of new tax on the rise. The key’s answer is {a:H1.growth}, and the case is {o:trust}.',
-      'In Case B nobody expects the woodland to change in value, and the estate, £400,000, is below the line, so there is no tax. What the case shows is a son who will sell it the day his father dies and a daughter who says she will never let him. The key’s answer is {a:H1.people}, and the case is {o:governance}.',
+      'In Case A a valuer says the woodland could be worth £2,500,000 if permission is given. Stefan’s estate is £650,000 now and would be £2,900,000 after the rise, so the tax would go from £60,000 to £960,000. That is £900,000 of new tax on the rise. The answer is {a:H1.growth}, and the case is {o:trust}.',
+      'In Case B nobody expects the woodland to change in value, and the estate, £400,000, is below the line, so there is no tax. What the case shows is a son who will sell it the day his father dies and a daughter who says she will never let him. The answer is {a:H1.people}, and the case is {o:governance}.',
       'A trustee with a veto could be used in either case, so the tool does not tell them apart. The question to ask is what the case is about.'
     ] },
 
   /* ---------- The three exceptions in which the papers come first ---------- */
   { id: 'exc-papers-people', kind: 'exception', looksLike: 'governance', is: 'basicdocs', ledger: 'basicdocs~governance',
     h: 'A quarrel in the family, and a stale will',
-    link: 'The last cards separated the people from the tax. Now the papers. The key puts them first, even when a case is also about a person, and this case shows why.',
+    link: 'The last cards separated the people from the tax. Now the papers. They come first, even when a case is also about a person, and this case shows why.',
     case: 'exc-bruno-case',
     setup: 'Bruno’s two sons have not spoken since their mother’s funeral. That is what you point to for {o:governance}, and the risk is real. Yet this case is {o:basicdocs}.',
     prompt: { kind: 'phrase', answer: 'His will, written in 2006, leaves everything to his wife, Vera, who died last year, and names nobody else' },
@@ -79,11 +79,11 @@ FC.cards('wealth', 'u5', [
       'Look at the will. It names Vera, who has died, and nobody else. Until that is put right, there is no paper that says what happens to the money. And every rule you might put around the people (payments in stages, an outside person to decide, agreements) is written into the will. A will that names someone who has died cannot carry them.',
       'So the order is not a matter of which problem is bigger. The paper comes first because it is the cheapest to put right and because everything else rests on it. The people come second, and the rules for them go into the new will.'
     ],
-    take: 'The key decides it this way on purpose, and it is worth knowing that this is the key’s decision. A family adviser would probably start with the sons. The key gives each case one name, by the cheapest thing that everything else rests on, so that two people using it reach the same answer and can each say why.' },
+    take: 'This is settled one way on purpose, and it is worth knowing that it is a decision. A family adviser would probably start with the sons. Each case gets one name, by the cheapest thing that everything else rests on, so that two people using the same questions reach the same answer and can each say why.' },
 
   { id: 'exc-papers-tax', kind: 'exception', looksLike: 'gifting', is: 'basicdocs', ledger: 'basicdocs~gifting',
     h: 'A large estate, money to spare, and a stale form',
-    link: 'The same order holds for the first tax name. A large estate and money to spare would be {o:gifting}, but the key looks at the papers first.',
+    link: 'The same order holds for the first tax name. A large estate and money to spare would be {o:gifting}, but the papers come first.',
     case: 'exc-winifred-case',
     setup: 'Winifred’s estate is far above the line, and her pension pays her £25,000 a year more than she spends. That is what you point to for {o:gifting}. Yet this case is {o:basicdocs}.',
     prompt: { kind: 'phrase', answer: 'The form on her pension still names her husband, who died three years ago' },
@@ -91,11 +91,11 @@ FC.cards('wealth', 'u5', [
       'Look at the form. It names her husband, who has died. The pension company will pay according to its own form, so if Winifred died tomorrow it would be paying according to a paper that names a dead man, and what happens next is decided by the company’s rules, not by her.',
       'Her tax is real: £1,400,000 less £500,000 is £900,000, and 40% of that is £360,000. But gifts of £3,000 a year work over many years, and the form is a job for one afternoon. The cheap thing is done first, and the gifts can start the same week.'
     ],
-    take: 'This is the same decision as the last card, for the same reason: the papers are the cheapest thing and everything else rests on them. The key gives the case one name, and the name is the papers.' },
+    take: 'This is the same decision as the last card, for the same reason: the papers are the cheapest thing and everything else rests on them. The case gets one name, and the name is the papers.' },
 
   { id: 'exc-papers-rise', kind: 'exception', looksLike: 'trust', is: 'basicdocs', ledger: 'basicdocs~trust',
     h: 'A firm about to be worth ten times more, and a will from before a divorce',
-    link: 'The last of the three. A rise that is expected would be {o:trust}, but the key looks at the papers first here too.',
+    link: 'The last of the three. A rise that is expected would be {o:trust}, but the papers come first here too.',
     case: 'exc-florin-case',
     setup: 'Florin’s firm is expected to be worth ten times what it is today, and the tax on that rise would be very large. That is what you point to for {o:trust}. Yet this case is {o:basicdocs}.',
     prompt: { kind: 'phrase', answer: 'His will, written before his divorce nine years ago, leaves everything to his former wife' },
@@ -103,5 +103,5 @@ FC.cards('wealth', 'u5', [
       'Look at the will. It leaves everything to his former wife, and it was written before the divorce. Everything includes the firm. If Florin died next month, before any move was made, the firm would go to her.',
       'Moving the firm out of the estate would itself need a lawyer, written terms and a trustee, and all of it rests on his papers saying what he wants. A move made on top of a will that names the wrong person solves the tax and leaves the firm with the wrong owner.'
     ],
-    take: 'This is the third time the key has decided the same way, and for the same reason: the papers are cheapest, and everything else rests on them. The rise still needs dealing with, and it comes next.' }
+    take: 'This is the third time the same choice has been made, and for the same reason: the papers are cheapest, and everything else rests on them. The rise still needs dealing with, and it comes next.' }
 ]);

@@ -40,7 +40,7 @@ FC.cases('stats', 'u4', [
             H1: "July entries rose from 3,100 to 3,800" },
     reason: { S1: 'Every part holds: {cue:S1}. One counter counted the same way, nobody gains from a higher count, and the price did not change, so nothing besides the visits could move it.',
               H1: 'The claim gives one figure at two times and says it rose: {cue:H1}. It sets the figure beside nothing else and says nothing about why.' },
-    not: { outcome: 'detection', why: 'Nobody put more effort into counting entries. The same gate and counter counted both Julys.' } },
+    not: { outcome: 'detection', why: 'Nobody put more effort into counting entries. The same entrance and counter counted both Julys.' } },
 
   /* ---------- Stage two, this unit's question alone ---------- */
   { id: 'm4-pm-sales', use: 'drill', tier: 'clean', setting: 'work', topic: 'a shoe chain bonus on sales rung up',

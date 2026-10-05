@@ -4,7 +4,7 @@
 FC.cards('wealth', 'u3', [
 
   { id: 'w3-meet-insure', kind: 'meet', outcome: 'insure',
-    link: 'The next answers are about harm that one person could be ordered to pay for, the other thing the key’s first answer covers besides holdings. It starts with the simplest case: someone with insurance, and a demand that could be bigger.',
+    link: 'The next answers are about harm that one person could be ordered to pay for, the other thing the first answer covers besides holdings. It starts with the simplest case: someone with insurance, and a demand that could be bigger.',
     case: 'w3-h-ins-1', mark: 'S1',
     strip: [
       'There is one person, Hari, with a house worth £700,000 and £250,000 in savings and a pension: £950,000 in all.',
@@ -21,7 +21,7 @@ FC.cards('wealth', 'u3', [
     ],
     feature: { step: 'S1', option: 'bigclaim' },
     name: [
-      'The key’s answer is {a:S1.bigclaim}, and the name of what to do about it is {o:insure}. In the name, “the big loss” is the part of {t:claim} that the insurance you hold would leave unpaid, and “insure” is what to do about it.',
+      'The answer is {a:S1.bigclaim}, and the name of what to do about it is {o:insure}. In the name, “the big loss” is the part of {t:claim} that the insurance you hold would leave unpaid, and “insure” is what to do about it.',
       'The name does not say that {t:claim} will come. It says that if one did, there would be a gap.'
     ] },
 
@@ -69,8 +69,8 @@ FC.cards('wealth', 'u3', [
     instruction: 'Both cases are about Dana, who owns a house worth £650,000 and a large dog that visitors often meet, and both mention a lawyer’s view that a serious bite could lead to a demand for £1,500,000. Compare one thing: how the insurance limit compares with that figure.',
     prompt: { kind: 'which', option: 'S1.bigclaim', answer: 'w3-h-la-is-a' },
     difference: [
-      'In Case A the insurance pays up to £250,000 and a demand could be £1,500,000: a gap of £1,250,000, which is nearly twice the value of Dana’s house. The key’s answer is {a:S1.bigclaim}, and the name is {o:insure}.',
-      'In Case B the demand could still be £1,500,000, but the insurance pays up to £2,500,000, which is £1,000,000 more than the demand. Nothing could be left unpaid, so no claim could reach the house. The key’s answer is {a:S1.madesafe}, and the name is {o:safe}: the thing that could bring {t:claim} is already made safe, and there is nothing to buy.',
+      'In Case A the insurance pays up to £250,000 and a demand could be £1,500,000: a gap of £1,250,000, which is nearly twice the value of Dana’s house. The answer is {a:S1.bigclaim}, and the name is {o:insure}.',
+      'In Case B the demand could still be £1,500,000, but the insurance pays up to £2,500,000, which is £1,000,000 more than the demand. Nothing could be left unpaid, so no claim could reach the house. The answer is {a:S1.madesafe}, and the name is {o:safe}: the thing that could bring {t:claim} is already made safe, and there is nothing to buy.',
       'The dog, the house, the lawyer and the possible demand are the same in both. Only the insurance limit changes, and it is the comparison that decides, not the presence of a risk.'
     ] }
 ]);

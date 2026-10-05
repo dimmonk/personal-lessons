@@ -19,7 +19,7 @@ FC.cards('scams', 'u1', [
     link: 'The second word is about a different way into an account, one that does not use a password at all.',
     case: 'g-t-permission',
     plain: [
-      'Leo wanted an app to pick out his flight bookings from his email. The app could have asked for his email password, and he would have had to give it away. Instead the app sent him to his email provider, and the provider showed Leo a box: this app would like to read your mail and your calendar, Allow or Cancel. When Leo pressed Allow, the provider gave the app a limited key to his account. Leo never typed his password into the app.',
+      'Leo wanted an app to pick out his flight bookings from his email. The app could have asked for his email password, and he would have had to give it away. Instead the app sent him to his email provider, and the provider showed Leo a box: this app would like to read your mail and your calendar, Allow or Cancel. When Leo pressed Allow, the provider gave the app limited access to his account. Leo never typed his password into the app.',
       'This is how most apps connect to accounts, and it is useful. But it means that pressing Allow gives an app a way into your account that stays open until you take it away, whether or not you ever sign in again. The box is a decision about what the app may do inside your account.'
     ] },
 
@@ -36,13 +36,13 @@ FC.cards('scams', 'u1', [
     ],
     explain: [
       'What you are shown is a request for a way into an account: here, a username and a password typed into a sign-in page. That is all a message of this kind is made of: one account of yours, and a request to type or press something that opens it.',
-      'There are three ways a message can ask for that, and the key counts all three as one kind. You can be asked to sign in: a page wants a password, and you type it in. You can be asked for a {t:code}, by typing it in, reading it out or sending it on. Or you can be asked to press Allow on a {t:permission}, so that an app can use your account. Each of the three opens the account in a different way, and for now they are one kind, because in all three the request is for a way into an account.',
+      'There are three ways a message can ask for that, and all three count as one kind. You can be asked to sign in: a page wants a password, and you type it in. You can be asked for a {t:code}, by typing it in, reading it out or sending it on. Or you can be asked to press Allow on a {t:permission}, so that an app can use your account. Each of the three opens the account in a different way, and for now they are one kind, because in all three the request is for a way into an account.',
       'Notice what the kind does not depend on. Tariq’s sign-in is real, and he started it himself. The next card shows a message that asks for the same thing and is not real. A request to sign in can be an everyday part of using an account, or the first step of a scam, and the first question does not say which. It says only what is being asked: here, a way into an account.',
       'It is a kind of its own because of what a way in is worth. Whoever gets into your email can read it, and use it to reset the password of nearly every other account you have. A way in can be used again and again, until someone shuts it.'
     ],
     feature: { step: 'D1', option: 'access' },
     name: [
-      'The key’s answer, and the name of this kind, is {a:D1.access}. After this answer the key asks a further question, and sometimes two, that give a finer name: the name of a kind of scam, or of the real thing that the scams copy. In this unit the answer to this first question is the name.'
+      'The answer, and the name of this kind, is {a:D1.access}. After this answer there is a further question, and sometimes two, that give a finer name: the name of a kind of scam, or of the real thing that the scams copy. In this unit the answer to this first question is the name.'
     ] },
 
   { id: 'again-access', kind: 'again', family: 'access',
@@ -52,7 +52,7 @@ FC.cards('scams', 'u1', [
     prompt: { kind: 'phrase', answer: 'Sign in with your password to unlock it' },
     shared: [
       'Both messages ask for the same thing: a way into an account, by typing a password into a sign-in page. Tariq typed the pension company’s address himself and was asked to sign in. Nell is sent a link by text and is asked to sign in.',
-      'There is a difference between them that you may have noticed: Tariq went to the page, and the page came to Nell. That difference matters a great deal, and the key has a question for it. It is not the question this unit teaches. This question asks only what is being requested, and in both cases the answer is the same.',
+      'There is a difference between them that you may have noticed: Tariq went to the page, and the page came to Nell. That difference matters a great deal, and there is a question for it. It is not the question this unit teaches. This question asks only what is being requested, and in both cases the answer is the same.',
       'So the answer does not say real or fake. It says what you are being asked for, and that is what {a:D1.access} names.'
     ] },
 
@@ -67,11 +67,11 @@ FC.cards('scams', 'u1', [
     ],
     not: [
       'A notice that your account was signed in to from a new phone is not a request for a way into it: it only tells you. A message that says the same and adds "sign in here to secure your account" is a request.',
-      'It is also not a request to put something on your phone or computer. If nothing is to be installed, opened or shared, and you are only asked to type something into a page or press Allow, the key’s answer is this one.'
+      'It is also not a request to put something on your phone or computer. If nothing is to be installed, opened or shared, and you are only asked to type something into a page or press Allow, the answer is this one.'
     ],
     wild: ['"Your account has been locked. Sign in to unlock it."', '"Please enter the code we just sent you."', '"Read me the six-digit number on your phone."', '"Allow this app to read your mail?"', '"Confirm it is you: log in below."'],
     self: 'Every time you sign in to something, a code arrives, or an app asks to connect, you are answering this kind of request, usually without thinking. The same words reach you in messages, which is why the habit of typing them in is the thing a copy relies on.',
-    ask: '"What would I be typing or pressing here, and would it open one of my accounts?" If it would, the key’s answer is the one for a way into an account.' },
+    ask: '"What would I be typing or pressing here, and would it open one of my accounts?" If it would, the answer is the one for a way into an account.' },
 
   { id: 'check-access', kind: 'check', after: 'access',
     case: 'g-diary-app',
@@ -83,8 +83,8 @@ FC.cards('scams', 'u1', [
     instruction: 'Both cases are about Priya’s email account and a sign-in from a new device. Compare one thing: does the message ask her to do something, or does it only tell her?',
     prompt: { kind: 'which', option: 'D1.access', answer: 'g-sec-link' },
     difference: [
-      'In Case A the notice sits inside Priya’s own mail app, and it only tells her what happened. It says that, if it was not her, she can open the app she is already in and choose Security. Nothing in it is new to her: no link, no number, no sign-in page. The key’s answer is {a:D1.nothing}.',
-      'In Case B the email says almost the same thing and then adds "sign in here to secure your account", with an address to go to. Now she is asked to sign in, and the way to do it comes with the message. The key’s answer is {a:D1.access}.',
+      'In Case A the notice sits inside Priya’s own mail app, and it only tells her what happened. It says that, if it was not her, she can open the app she is already in and choose Security. Nothing in it is new to her: no link, no number, no sign-in page. The answer is {a:D1.nothing}.',
+      'In Case B the email says almost the same thing and then adds "sign in here to secure your account", with an address to go to. Now she is asked to sign in, and the way to do it comes with the message. The answer is {a:D1.access}.',
       'The first sentence of the two is nearly the same. That is what makes this pair dangerous: you cannot tell them apart by how they begin, by the company that is named or by how serious they sound. You can tell them apart by what each asks of you, and by whether what it asks you to use came with the message.'
     ] },
 

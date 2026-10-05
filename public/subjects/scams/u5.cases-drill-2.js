@@ -32,7 +32,7 @@ FC.cases('scams', 'u5', [  /* ---------- Stage two: one question at a time, on a
     cues: { F1: 'her date of birth, her address and a photo of her passport', F2: ['A caller says to Dara', 'Dara did not ring them'] },
     not: { outcome: 'realdetails', why: 'A phone company may ask a customer for a date of birth when she rings about an upgrade. Dara did not ring them.' },
     reason: { F1: 'The caller asks for papers and facts that identify Dara: {cue:F1}.',
-              F2: 'The call came to Dara, and she began nothing: {cue:F2}. The key’s answer is the one for something that does not fit.' } },
+              F2: 'The call came to Dara, and she began nothing: {cue:F2}. The answer is the one for something that does not fit.' } },
 
   { id: 'u5-p-cycling', use: 'drill', tier: 'clean', setting: 'leisure', topic: 'a stranger who comments on a cycling photo',
     text: "A stranger comments on Sol's cycling photo and then sends him a private message: 'Great ride! Do you live round here?' Sol has never seen his name before. Over the next week the stranger asks where Sol works and when he is usually at home.",

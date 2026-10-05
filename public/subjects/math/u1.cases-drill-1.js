@@ -46,9 +46,9 @@ FC.cases('math', 'u1', [
     text: 'A carpenter fits a diagonal brace across a rectangular garden gate. The gate is 1.5 m wide and 2 m high. How long is the brace?',
     route: { M1: ['shape'] },
     cues: { M1: ['The gate is 1.5 m wide and 2 m high', 'How long is the brace?'] },
-    reason: { M1: 'The width, the height and the brace make a {t:righttriangle}, because a gate has square corners. The problem gives two of its sides and asks for the third: {cue:M1}.' },
+    reason: { M1: 'The width, the height and the brace make a {t:righttriangle}, because the rectangle has square corners. The problem gives two of its sides and asks for the third: {cue:M1}.' },
     not: { outcome: 'unknown', why: 'The length of the brace is the number the problem leaves out, but nothing in the problem is a calculation, a rate or a pair of totals. It is a length on a triangle with a square corner.' },
-    wouldChange: 'If the problem gave the gate’s area and its width and asked for its height, there would be no triangle, and it would be {a:M1.unknown}.' },
+    wouldChange: 'If the problem gave the rectangle’s area and its width and asked for its height, there would be no triangle, and it would be {a:M1.unknown}.' },
 
   { id: 'gt-coins', use: 'drill', tier: 'clean', setting: 'home', topic: 'two sorts of coin in a jar',
     text: 'Rafa’s jar holds only 20-cent coins and 50-cent coins. There are 18 coins and they are worth €6.30 in all. How many coins of each kind are in the jar?',
@@ -64,7 +64,7 @@ FC.cases('math', 'u1', [
     route: { M1: ['growth'] },
     cues: { M1: ['the drip delivers 25 ml every hour', 'How long will it take for the bag to empty?'] },
     reason: { M1: 'One amount, what is in the bag, is followed through time: {cue:M1}. It goes down by the same number every hour, and the question asks how long it takes to reach a target, nothing left.' },
-    not: { outcome: 'unknown', why: 'There is a rate, 25 ml every hour, and a number the problem leaves out. But the rate is for each hour, and the key gives a rate for each hour to {a:M1.growth}.' },
+    not: { outcome: 'unknown', why: 'There is a rate, 25 ml every hour, and a number the problem leaves out. But the rate is for each hour, and a rate for each hour goes to {a:M1.growth}.' },
     wouldChange: 'If the problem asked how many full 40 ml doses the bag holds and how much is left over, it would be {a:M1.whole}.' },
 
   { id: 'gt-busstram', use: 'drill', tier: 'clean', setting: 'travel', topic: 'a bus and a tram at one stop',

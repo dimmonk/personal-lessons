@@ -64,7 +64,7 @@ FC.specimens('psychology', [
     reason: { D1: 'Years, places and relationships are all in the case: {cue:D1}.',
               P1: 'She makes desperate efforts to keep people close, and swings from adoring to attacking when they seem to pull away: {cue:P1}. It has cost her every relationship and two jobs.' },
     not: { outcome: 'histrionic', why: 'Her calls are not made to an audience and are not about being the centre of a room. They are about keeping one person from leaving, and they swing to attack when that person seems to be going.' },
-    wouldChange: 'If this had begun after one recent loss, instead of with everyone since her teens, it would not be a lasting way she is, and the key’s first question would get a different answer.' },
+    wouldChange: 'If this had begun after one recent loss, instead of with everyone since her teens, it would not be a lasting way she is, and the first question would get a different answer.' },
 
   { id: 'sp-analysts', tier: 'varied', setting: 'work', topic: 'analysts in a report',
     text: "The report cites six analysts who back her thesis and dismisses the two who don't as \"not understanding the sector\", a phrase she doesn't apply to any of the six, several of whom have less sector experience than the two she dismissed.",
@@ -91,7 +91,7 @@ FC.specimens('psychology', [
             T1: ['Shown the receipts proving he had claimed a family holiday as a business trip', 'he had never claimed anything he shouldn’t have', 'was now making things up', 'how HR could let a loyal employee be treated like this'] },
     reason: { D1: 'One person is saying something to others about another person and about what has happened between them: he {cue:D1}.',
               T1: 'The case shows he did it: {cue:T1}. In one answer he does all three things this answer needs. He denies it, he attacks the manager who raised it, and he presents himself as the one wronged.' },
-    not: { outcome: 'projection', why: 'He does accuse his manager of making things up while he is the one not telling the truth, which could look like {o:projection}. But his accusation comes as the answer to being caught out, together with a denial and with himself as the one wronged. When a case shows both, the key gives {o:darvo}.' },
+    not: { outcome: 'projection', why: 'He does accuse his manager of making things up while he is the one not telling the truth, which could look like {o:projection}. But his accusation comes as the answer to being caught out, together with a denial and with himself as the one wronged. When a case shows both, the answer is {o:darvo}.' },
     wouldChange: 'If the receipts were wrong and he had not claimed the holiday, an angry denial would be {o:ordexchange}: an innocent person can deny something angrily.' },
 
   { id: 'sp-colin', tier: 'varied', setting: 'home', topic: 'a brother and their mother',
@@ -111,7 +111,7 @@ FC.specimens('psychology', [
             P1: ['“the only one who actually does the work, and nobody ever notices.”', 'she goes quiet for weeks and stops speaking to them', 'She has lost three close friendships this way'] },
     reason: { D1: 'Years, places and relationships are all in the case: {cue:D1}, and with her sister and her friends.',
               P1: 'She tells people she is not noticed or rewarded as she should be, and when someone else is praised she pulls away in silence: {cue:P1}. That keeps costing her and the people around her.' },
-    not: { outcome: 'narcgrand', why: 'She needs to be treated as special just as a grandiose narcissist does, but she never puts anyone down or demands anything out loud. Her answer is inward: silence, withdrawal and a private ledger.' },
+    not: { outcome: 'narcgrand', why: 'She needs to be treated as special just as a grandiose narcissist does, but she never puts anyone down or demands anything out loud. Her answer is inward: silence, withdrawal and a private tally of every slight.' },
     wouldChange: 'If the workplaces really had passed her over unfairly, and she had raised it with them and moved on without losing friends, this would be {o:ordpersonality}.' },
 
   { id: 'sp-rosalind', tier: 'varied', setting: 'leisure', topic: 'the first on the dance floor',

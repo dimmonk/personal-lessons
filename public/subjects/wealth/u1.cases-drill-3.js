@@ -15,7 +15,7 @@ FC.cases('wealth', 'u1', [
     text: "Odile, 60, plans to retire next year. £450,000 of her £520,000 is shares in the company where she works. This spring the company's price fell by 40%, and she wonders whether to sell before it gets worse.",
     route: { D1: ['shock'] },
     cues: { D1: '£450,000 of her £520,000 is shares in the company where she works' },
-    reason: { D1: 'One company is most of what she has: {cue:D1}. £450,000 out of £520,000 is about 87%. The fall and the coming retirement make it look like a fall in prices, and the case does show both. When a case shows both, the key chooses {a:D1.shock}, because the harm comes through one company.' },
+    reason: { D1: 'One company is most of what she has: {cue:D1}. £450,000 out of £520,000 is about 87%. The fall and the coming retirement make it look like a fall in prices, and the case does show both. When a case shows both, the answer is {a:D1.shock}, because the harm comes through one company.' },
     not: { outcome: 'timing', why: 'A fall and a retirement are in the case, so it looks like a fall in prices, but the fall is one company’s. Money spread over many companies would not have lost 40%.' },
     wouldChange: 'If her £520,000 were spread over hundreds of companies in funds, and she still planned to retire next year, it would be {a:D1.timing}.' },
 
@@ -32,7 +32,7 @@ FC.cases('wealth', 'u1', [
     text: "Lucy and Hal set £36,000 a year as their spending when they retired with £600,000, which is 6%. Two bad years have taken their money to £420,000, and they still take out £36,000 every year, which is now 8.6%.",
     route: { D1: ['erosion'] },
     cues: { D1: 'they still take out £36,000 every year, which is now 8.6%' },
-    reason: { D1: 'A fixed sum comes out of money that has shrunk: {cue:D1}. The fall explains why the money shrank, but the case is about the sum. When a case shows both, the key chooses {a:D1.erosion}.' },
+    reason: { D1: 'A fixed sum comes out of money that has shrunk: {cue:D1}. The fall explains why the money shrank, but the case is about the sum. When a case shows both, the answer is {a:D1.erosion}.' },
     not: { outcome: 'timing', why: 'The fall is in the case, and it explains the shrinking. But the case raises how much comes out each year, relative to what is left, and that decides it.' },
     wouldChange: 'If the sum they took out had always been about 5% of whatever their money was worth, and the only fact were that prices had fallen, it would be {a:D1.timing}.' },
 
@@ -55,17 +55,17 @@ FC.cases('wealth', 'u1', [
     text: '"My neighbour says the only way to protect a pension pot is to move it offshore and use a private bank. I have £60,000 in a pension that I add to every month, and I don’t need it for thirty years."',
     ask: { type: 'option', step: 'D1', answer: 'none' },
     fault: 'The claim names a cure before it says what could lose the money. In what the speaker has described, nothing comes out of the pension that is mentioned, no one thing is most of it, nothing is due on a date, and no handover is raised. A structure that costs money to set up and to run is chosen after the first question has been answered, not instead of it.',
-    corrected: 'I have £60,000 in a pension that I add to every month and will not need for thirty years. Nothing in that raises one of the four, so in the key’s words it is {a:D1.none}. If someone says I need a structure, I ask what could lose my money that it answers, and I ask for the answer in numbers.' },
+    corrected: 'I have £60,000 in a pension that I add to every month and will not need for thirty years. Nothing in that raises one of the four, so it is {a:D1.none}. If someone says I need a structure, I ask what could lose my money that it answers, and I ask for the answer in numbers.' },
 
   { id: 'c-nobuffer', use: 'claim',
     text: '"I’m 62 and I live off the shares in my £400,000. I don’t need any cash set aside. When I want money I’ll just sell some, and prices always come back."',
     ask: { type: 'option', step: 'D1', answer: 'timing' },
     fault: 'The claim says nothing needs to be arranged, because prices come back. But the speaker lives off the shares, so something is sold every month, and a sale in a fall takes place at the low price. What is sold is not there when prices come back. "Always" is a promise that nobody can make, and the case is about what happens if they do not come back soon.',
-    corrected: 'I’m 62 and I live off the shares in my £400,000, with nothing set aside in cash. If prices fall, I will be selling at the low price to pay my bills. In the key’s words that is {a:D1.timing}.' },
+    corrected: 'I’m 62 and I live off the shares in my £400,000, with nothing set aside in cash. If prices fall, I will be selling at the low price to pay my bills. That is {a:D1.timing}.' },
 
   { id: 'c-employer', use: 'claim',
     text: '"My whole pension is in my company’s shares because I believe in the company. It isn’t a gamble if you believe in it."',
     ask: { type: 'option', step: 'D1', answer: 'shock' },
     fault: 'The claim treats belief as protection. How much the speaker believes in the company says nothing about what would happen to the pension if the company did badly, and companies can do badly for reasons nobody inside them controls. What the claim describes is one company that is the whole of the pension, and if it failed, most of {t:pot} would go with it.',
-    corrected: 'My whole pension is in my company’s shares. I believe in the company, and that is a reason I chose it. It is not a reason it could not fall, and if it did, most of what I have would go with it. In the key’s words that is {a:D1.shock}.' }
+    corrected: 'My whole pension is in my company’s shares. I believe in the company, and that is a reason I chose it. It is not a reason it could not fall, and if it did, most of what I have would go with it. That is {a:D1.shock}.' }
 ]);

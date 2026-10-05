@@ -5,7 +5,7 @@
 
 FC.unit('ideology', 'u3', {
   kind: 'C',              // C classification, F facts, P procedure
-  rev: 1,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
+  rev: 2,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
   standard: 1,            // lesson-standard version this unit was built to
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author). The app labels a draft as a draft.
   tag: 'Three',
@@ -22,7 +22,7 @@ FC.unit('ideology', 'u3', {
   ledger: [
     { id: 'nationalism~fasc', pair: ['nationalism', 'fasc'], step: 'N2',
       shared: 'Both speak for everyone in the country as one people and put it first, and both can sound loud, proud and sure of themselves.',
-      rule: 'In {o:nationalism} the text lets the voters keep their say. In {o:fasc} the key’s answer to the second question is {a:N2.aside}: the text takes the voters’ say away, and with it the say of other parties and of anyone who objects.',
+      rule: 'In {o:nationalism} the text lets the voters keep their say. In {o:fasc} the answer to the second question is {a:N2.aside}: the text takes the voters’ say away, and with it the say of other parties and of anyone who objects.',
       test: 'Look at what the text wants done with elections, other parties and people who disagree. Are they left in place, or are they to go?' },
     { id: 'natpop~fasc', pair: ['natpop', 'fasc'], step: 'N2',
       shared: 'Both can blame a few at the top, and both can ask for the country’s industry, culture or borders to come first.',
@@ -54,7 +54,7 @@ FC.unit('ideology', 'u3', {
       test: 'Is the only line the one between ordinary people and a few at the top? Or are peoples ranked by blood or birth?' },
     { id: 'fasc~nazi', pair: ['fasc', 'nazi'], step: 'N1',
       shared: 'Both can end the vote, shut out other parties and silence critics, and both can be full of marches, uniforms and talk of one nation.',
-      rule: 'In {o:fasc} the people is the whole nation, or the country’s ordinary people against an {t:elite}, and nobody is ranked by blood. In {o:nazi} peoples are ranked by blood or birth and the text’s own is placed above the rest. The key goes by that ranking alone: a text that ranks peoples by blood gets {a:N1.blood}, whatever it says about the vote.',
+      rule: 'In {o:fasc} the people is the whole nation, or the country’s ordinary people against an {t:elite}, and nobody is ranked by blood. In {o:nazi} peoples are ranked by blood or birth and the text’s own is placed above the rest. The answer goes by that ranking alone: a text that ranks peoples by blood gets {a:N1.blood}, whatever it says about the vote.',
       test: 'Does the text rank peoples by blood or birth, with its own above the others? Or does it speak of one nation, or of its ordinary people, with nobody ranked by blood?' }
   ],
 
@@ -70,7 +70,7 @@ FC.unit('ideology', 'u3', {
               'look-nationalism-natpop', 'look-natpop-pop', 'exc-elitefasc', 'refute-socialist'] },
     { id: 'p3', title: 'One people ranked by blood, and what every dictatorship does',
       cards: ['meet-nazi', 'again-nazi', 'portrait-nazi', 'check-nazi', 'look-fasc-nazi', 'exc-methods', 'refute-nazisocialist'] },
-    { id: 'p4', title: 'The key’s two questions',
+    { id: 'p4', title: 'The two questions',
       cards: ['q-who', 'check-who', 'q-elections', 'check-elections', 'refute-lots', 'refute-horseshoe'] },
     { id: 'p5', title: 'Two whole cases, then the drill',
       cards: ['worked-natpop', 'worked-torchlit'], drill: true, close: ['recap', 'transfer'] }
@@ -81,7 +81,7 @@ FC.unit('ideology', 'u3', {
   // inside a tier band (clean, then varied, then misleading) and shuffles inside each group. Every case is new.
   drill: {
     key: 'u3',            // the old quick-drill totals for this subject were stored under other keys (frozen; see E8)
-    add: 'Some of these texts are loud and some are calm, and neither tells you the name. A few are built to look like a text you met on the cards and to be another. Go by the words that answer the key’s questions.',
+    add: 'Some of these texts are loud and some are calm, and neither tells you the name. A few are built to look like a text you met on the cards and to be another. Go by the words that answer the questions.',
     rungs: [
       { ask: 'name',
         items: [['n-nm-nat', 'n-nm-fasc'], ['n-nm-natpop', 'n-nm-pop'], ['n-nm-fasc2', 'n-nm-nazi']] },
@@ -119,7 +119,8 @@ FC.unit('ideology', 'u3', {
   build: {
     // What changed at each revision (R1). One entry for every revision from 1 to rev.
     history: [
-      { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the branch unit for the key’s second answer. Two questions, five names, one term. Not yet deployed, so later edits before the first deploy stay revision 1.' }
+      { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the branch unit for the key’s second answer. Two questions, five names, one term. Not yet deployed, so later edits before the first deploy stay revision 1.' },
+      { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' }
     ],
     // What changed in the key for this branch, and why (K2). From docs/rebuild/ideology-plan.md, part a.
     keyChanges: [

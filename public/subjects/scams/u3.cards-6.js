@@ -6,13 +6,13 @@ FC.cards('scams', 'u3', [
 
   { id: 'recap', kind: 'recap',
     h: 'What to carry away',
-    link: 'You have now run the key\'s two questions on your own. This card puts the unit in one place, in the key\'s words.',
+    link: 'You have now run the two questions on your own. This card puts the unit in one place.',
     carry: [
       'Put two questions to a request to sign in, to give a code or to press Allow: what am I asked to type or press, and did I start it? Point to the words that show each. If you cannot point, you do not have an answer yet.',
       'When it came to you, a page that wants a password is {o:phishing}, a person who wants you to pass on a code is {o:codescam}, and a {t:permission} that wants you to press Allow for an app asking far more than its job is {o:appscam}. When you began it yourself and it asks no more than your task needs, it is {o:realsignin}.',
       'The page, the code and the {t:permission} can all be real, and they are real in the scams too. How a request looks, whose name is on it, and where it sits among your messages tell you nothing. Whether you started it tells you what you need, and you can answer that at the moment.',
       'When you cannot say that you started it, stop, and start again from an app, an address or a number that you already had. That is {t:check}, and a real company never minds it.',
-      'When a page asks for a password and then for a code, the key takes the password.',
+      'When a page asks for a password and then for a code, the answer is the one for the password.',
       'If you have already given something away: change a password at once; ring the company at once about a code; and remove the app for an Allow, because changing the password does not take it away.'
     ] },
 

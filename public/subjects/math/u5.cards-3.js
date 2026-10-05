@@ -65,8 +65,8 @@ FC.cards('math', 'u5', [
     instruction: 'Both problems are about the same café owner, the same 6 pastries and the same 3 picks. Compare one thing: does the order the pastries go in matter?',
     prompt: { kind: 'which', option: 'C1.group', answer: 'm5-la-window-co' },
     difference: [
-      'In Case A the pastries go in a row, from left to right, so a row with the same pastries in a different order is a different row. The order counts, and the key’s answer is {a:C1.order}. The count is 6 × 5 × 4 = 120.',
-      'In Case B the pastries go in a box, and the box is the same whichever pastry goes in first. The same three pastries in any order are one box, and the key’s answer is {a:C1.group}. The count in order is the same 120, and each box is in it once for every order its three pastries can be put in, 3 × 2 × 1 = 6, so the answer is 120 ÷ 6 = 20.',
+      'In Case A the pastries go in a row, from left to right, so a row with the same pastries in a different order is a different row. The order counts, and the answer is {a:C1.order}. The count is 6 × 5 × 4 = 120.',
+      'In Case B the pastries go in a box, and the box is the same whichever pastry goes in first. The same three pastries in any order are one box, and the answer is {a:C1.group}. The count in order is the same 120, and each box is in it once for every order its three pastries can be put in, 3 × 2 × 1 = 6, so the answer is 120 ÷ 6 = 20.',
       'Both start from the same 6 × 5 × 4 = 120. The second kind stops there, and the third goes on and divides. The numbers show how the two fit: each of the 20 boxes can be put in a row in 6 different orders, and 20 × 6 = 120 rows.'
     ] },
 
@@ -76,8 +76,8 @@ FC.cards('math', 'u5', [
     instruction: 'Both problems are about the same stall and the same 6 flavours. Compare one thing: does the customer pick one thing from each of two separate lists, or several things from one list?',
     prompt: { kind: 'which', option: 'C1.group', answer: 'm5-la-cones-co' },
     difference: [
-      'In Case A the customer picks one flavour and one cone. There are two separate lists, 6 flavours and 3 cones, and picking a flavour uses up no cone. Each choice has a list of its own: the key’s answer is {a:C1.lists}, and the count is 6 × 3 = 18.',
-      'In Case B the customer picks 2 different flavours, both from the one list of 6, in either order. The second flavour comes from the 5 that are left, and the same two flavours in the other order are the same tub. That is one group with each pick using something up, and with an order that does not count: the key’s answer is {a:C1.group}. The count in order is 6 × 5 = 30, and each tub is counted twice, 2 × 1 = 2, so the answer is 30 ÷ 2 = 15.',
+      'In Case A the customer picks one flavour and one cone. There are two separate lists, 6 flavours and 3 cones, and picking a flavour uses up no cone. Each choice has a list of its own: the answer is {a:C1.lists}, and the count is 6 × 3 = 18.',
+      'In Case B the customer picks 2 different flavours, both from the one list of 6, in either order. The second flavour comes from the 5 that are left, and the same two flavours in the other order are the same tub. That is one group with each pick using something up, and with an order that does not count: the answer is {a:C1.group}. The count in order is 6 × 5 = 30, and each tub is counted twice, 2 × 1 = 2, so the answer is 30 ÷ 2 = 15.',
       'Both are about 6 flavours, and both multiply. What differs is whether the picks come from separate lists or from one group. Separate lists keep their full length however many picks are made, and one group gets shorter with each pick.'
     ] },
 
@@ -90,7 +90,7 @@ FC.cards('math', 'u5', [
     right: [
       'A bike lock with 3 rings, each marked 0 to 9, is called a combination lock, but look at what its code is. Each ring is a separate choice from the same full list of 10 digits. Turning one ring uses up none of the digits on the other rings, and the same digit can be on every ring. The order of the rings matters: 3, 5, 1 is a different code from 1, 5, 3.',
       'Those are the marks of {o:multprin}, not of {o:comb}: three separate choices, each from its own full list, which gives 10 × 10 × 10 = 1,000 codes. If you counted the lock as picking a group of 3 different digits from the 10, in any order, you would get 120, which is far fewer than the 1,000 codes it really has.',
-      'So the name tells you what people call the lock. It does not tell you what the problem asks. Put the key’s question to the words of the problem: {q:C1}'
+      'So the name tells you what people call the lock. It does not tell you what the problem asks. Put the question to the words of the problem: {q:C1}'
     ],
     testedBy: ['m5-dr-mp-3'] }
 ]);

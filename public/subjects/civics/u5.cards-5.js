@@ -12,9 +12,9 @@ FC.cards('civics', 'u5', [
     instruction: 'Both cases are about the same kind of law, and in both the Constitution is in the argument. Compare one thing: who makes the last decision. In one case it is lawmakers voting. In the other it is a judge, who has been asked about a law that is already in use.',
     prompt: { kind: 'which', option: 'D1.courts', answer: 'ls-worship-fine' },
     difference: [
-      'In Case A the House and the Senate vote for the law, and the story ends there. The last decision is a vote, so the key’s first answer is {a:D1.congress}. Its second answer, for a law of this kind, is {a:C1.barred}.',
-      'In Case B the law is a year old, Hana has been fined under it, and the story ends with her asking a judge to cancel the fine because the law takes away the right to worship and to gather peacefully. The last decision is a judge’s, so the key’s first answer is {a:D1.courts}, and the second is {a:J1.check}. The case is {o:review}.',
-      'The law and the right are the same. In one case you are watching lawmakers make it, and in the other you are watching a judge asked whether it was allowed. What separates them is whose decision the story ends on, which is the key’s first question.'
+      'In Case A the House and the Senate vote for the law, and the story ends there. The last decision is a vote, so the first answer is {a:D1.congress}. Its second answer, for a law of this kind, is {a:C1.barred}.',
+      'In Case B the law is a year old, Hana has been fined under it, and the story ends with her asking a judge to cancel the fine because the law takes away the right to worship and to gather peacefully. The last decision is a judge’s, so the first answer is {a:D1.courts}, and the second is {a:J1.check}. The case is {o:review}.',
+      'The law and the right are the same. In one case you are watching lawmakers make it, and in the other you are watching a judge asked whether it was allowed. What separates them is whose decision the story ends on, which is the first question.'
     ] },
 
   { id: 'look-trialrights-beyondcong', kind: 'lookalike', ledger: 'trialrights~beyondcong',
@@ -23,18 +23,18 @@ FC.cards('civics', 'u5', [
     instruction: 'Both cases are about printers, and in both the Constitution stands in the government’s way. Compare one thing: who makes the last decision. In one case it is lawmakers voting. In the other it is a judge, asked about how a person accused of a crime was treated.',
     prompt: { kind: 'which', option: 'D1.courts', answer: 'ls-print-search' },
     difference: [
-      'In Case A the House and the Senate vote for a law that bans printing certain pamphlets, and the story ends there. The last decision is a vote, so the key’s first answer is {a:D1.congress}, and its second, for a law of this kind, is {a:C1.barred}.',
-      'In Case B a printer has been arrested on suspicion of theft, and the police searched his shop with no warrant. His lawyer asks a judge to decide whether the search was unreasonable. The last decision is a judge’s, so the key’s first answer is {a:D1.courts}. The judge is asked about a step promised to an accused person, so the second is {a:J1.accused}, and the case is {o:trialrights}.',
+      'In Case A the House and the Senate vote for a law that bans printing certain pamphlets, and the story ends there. The last decision is a vote, so the first answer is {a:D1.congress}, and its second, for a law of this kind, is {a:C1.barred}.',
+      'In Case B a printer has been arrested on suspicion of theft, and the police searched his shop with no warrant. His lawyer asks a judge to decide whether the search was unreasonable. The last decision is a judge’s, so the first answer is {a:D1.courts}. The judge is asked about a step promised to an accused person, so the second is {a:J1.accused}, and the case is {o:trialrights}.',
       'Both cases have a printer and a right that stops the government. In one the right stops lawmakers from passing a law, and in the other it is a step promised to a person who is accused. The right alone does not tell you which. Start with whose decision the story ends on.'
     ] },
 
-  /* ---------- The key's question ---------- */
+  /* ---------- The question ---------- */
   { id: 'q-judge', kind: 'question', step: 'J1',
     h: 'The question you have been answering all along',
-    link: 'Since the leaflet fine you have seen the key’s question at the foot of each new name, with one answer under it. This card puts the question and its four answers in one place, as the key shows them, and says why the key asks it.',
+    link: 'Since the leaflet fine you have seen the question at the foot of each new name, with one answer under it. This card puts the question and its four answers in one place, and says why it is asked.',
     decides: [
-      'Two stories can end with a judge and need different names, and two stories about the very same rule can need different names too. For one of them the key’s answer is {a:J1.check}; for another, about the same rule, it is {a:J1.words}. Nothing about the topic, the people or how serious it sounds tells them apart. Only what the judge is asked to do tells them apart.',
-      'That is why the key does not ask which court the judge sits in, how important the case is, or whether the case is about a crime. A judge in a court of one state, or in a court of the whole country, can be asked any of the four.'
+      'Two stories can end with a judge and need different names, and two stories about the very same rule can need different names too. For one of them the answer is {a:J1.check}; for another, about the same rule, it is {a:J1.words}. Nothing about the topic, the people or how serious it sounds tells them apart. Only what the judge is asked to do tells them apart.',
+      'That is why the question is not which court the judge sits in, how important the case is, or whether the case is about a crime. A judge in a court of one state, or in a court of the whole country, can be asked any of the four.'
     ],
     how: [
       'Find the sentence that says what is asked of the judge, or the one that says what the person wants the judge to do. Then ask which of the four answers describes it. You should be able to put your finger on the words: that the law breaks the Constitution, that a step promised to an accused person was skipped, that the words of a law do or do not reach what happened, or that the judge should choose a better policy.',
@@ -50,7 +50,7 @@ FC.cards('civics', 'u5', [
   /* ---------- Two whole cases ---------- */
   { id: 'worked-yardsign', kind: 'worked',
     h: 'A whole case, from the first question to the name',
-    link: 'You have the four names and the key’s question about them. Before you run a case yourself, watch two being run from the top, in the order the key asks. You are not asked anything until the end of each.',
+    link: 'You have the four names and the question about them. Before you run a case yourself, watch two being run from the top, in the order they are asked. You are not asked anything until the end of each.',
     case: 'w-yardsign',
     steps: [
       { step: 'D1',
@@ -72,14 +72,14 @@ FC.cards('civics', 'u5', [
         answer: 'b' },
       reason: [
         'For {o:interpret} you must be able to point to this: {needs:interpret}. Nobody in Wanda’s case is asking whether the words of the law reach her sign. She says the law should not stand, because it takes away a right the Constitution protects.',
-        'It is the question from the park rule, where one person used a loudspeaker and another a violin. {test:review~interpret} Here the person says the law is not allowed, so the key’s answer is {a:J1.check}.'
+        'It is the question from the park rule, where one person used a loudspeaker and another a violin. {test:review~interpret} Here the person says the law is not allowed, so the answer is {a:J1.check}.'
       ]
     },
     impression: {
       resembles: 'r-leaflets',
       text: [
-        'The key has given its answer. Now take a second look of a different kind: does this case look like one you know? It should bring back the leaflet fine: a rule about speaking, a person fined under it, and a judge asked whether the rule fits the Constitution.',
-        'Here the key and the likeness agree, so the answer stands. The key’s question comes first, because it makes you point at words in the case. The likeness is only a second look. When the two disagree, do not pick the one you prefer. Go back to the key’s question and find the words in the case that answer it. The second whole case shows how.'
+        'The questions have given their answer. Now take a second look of a different kind: does this case look like one you know? It should bring back the leaflet fine: a rule about speaking, a person fined under it, and a judge asked whether the rule fits the Constitution.',
+        'Here the questions and the likeness agree, so the answer stands. The question comes first, because it makes you point at words in the case. The likeness is only a second look. When the two disagree, do not pick the one you prefer. Go back to the question and find the words in the case that answer it. The second whole case shows how.'
       ]
     } },
 
@@ -107,21 +107,21 @@ FC.cards('civics', 'u5', [
         answer: 'c' },
       reason: [
         'For {o:review} you must be able to point to this: {needs:review}. The part that is missing is the claim that the rule breaks the Constitution. Greta never makes it. The right to speak is in the story, and it is not what the judge is asked about.',
-        'It is the question from the park rule again. {test:review~interpret} Here the only question put to the judge is how far a word reaches, so the key’s answer is {a:J1.words}.'
+        'It is the question from the park rule again. {test:review~interpret} Here the only question put to the judge is how far a word reaches, so the answer is {a:J1.words}.'
       ]
     },
     impression: {
       resembles: 'i-hives', first: 'r-leaflets',
       text: [
-        'Now the second look: does this case look like one you know? A protester, a fine and the right to speak may bring back the leaflet fine first, and the leaflet fine was {o:review}. So here the likeness and the key seem to disagree.',
-        'When that happens, go back to the key’s question and find the words in the case that answer it. They are {cue:J1}. The leaflet case has nothing like them: Marisol told the judge that the rule breaks her right to speak. The case this one really looks like is the rooftop hives: a law nobody attacks, a word, and a judge asked whether it covers a situation. So the key’s answer stands.'
+        'Now the second look: does this case look like one you know? A protester, a fine and the right to speak may bring back the leaflet fine first, and the leaflet fine was {o:review}. So here the likeness and the questions seem to disagree.',
+        'When that happens, go back to the question and find the words in the case that answer it. They are {cue:J1}. The leaflet case has nothing like them: Marisol told the judge that the rule breaks her right to speak. The case this one really looks like is the rooftop hives: a law nobody attacks, a word, and a judge asked whether it covers a situation. So the answer stands.'
       ]
     } },
 
   /* ---------- The close ---------- */
   { id: 'recap', kind: 'recap',
     h: 'What to carry away',
-    link: 'You have now run the key on your own. This card puts the unit in one place, in the key’s words.',
+    link: 'You have now run the questions on your own. This card puts the unit in one place.',
     carry: [
       'Find what the judge is asked to do, and point to the words in the case that show it. If you cannot point, you do not have an answer yet.',
       'The story never decides. Nor do the size of the fine, the importance of the right or the word "trial": a case about a protester can be {o:interpret}, and a case with a courtroom in it can be {o:review}.',

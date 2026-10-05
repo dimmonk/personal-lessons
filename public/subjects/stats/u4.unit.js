@@ -8,7 +8,7 @@
 
 FC.unit('stats', 'u4', {
   kind: 'C',              // C classification, F facts, P procedure
-  rev: 1,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
+  rev: 2,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
   standard: 1,            // lesson-standard version this unit was built to
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author). The app labels a draft as a draft.
   tag: 'Four',
@@ -57,7 +57,7 @@ FC.unit('stats', 'u4', {
       cards: ['meet-defshift', 'again-defshift', 'portrait-defshift', 'check-defshift', 'look-defshift-real', 'look-proxy-defshift',
               'meet-detection', 'again-detection', 'portrait-detection', 'check-detection', 'look-detection-real',
               'look-proxy-detection', 'look-defshift-detection', 'exc-counter', 'refute-moved'] },
-    { id: 'p3', title: 'The key’s question, and two whole claims',
+    { id: 'p3', title: 'The question, and two whole claims',
       cards: ['q-measure', 'check-measure', 'worked-inspections', 'worked-calls'], drill: true, close: ['recap', 'transfer', 'plan'] }
   ],
 
@@ -105,7 +105,8 @@ FC.unit('stats', 'u4', {
   build: {
     // What changed at each revision (R1). One entry for every revision from 1 to rev.
     history: [
-      { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the branch unit for the gate answer "What the number counts". Not yet deployed, so later edits before the first deploy stay revision 1. Replaces old Unit Three, its drill (V3) and old error-drill item 10; the tool half of the old outcome (a new meter, a new scale) has its own second case.' }
+      { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the branch unit for the gate answer "What the number counts". Not yet deployed, so later edits before the first deploy stay revision 1. Replaces old Unit Three, its drill (V3) and old error-drill item 10; the tool half of the old outcome (a new meter, a new scale) has its own second case.' },
+      { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' }
     ],
     // What changed in the key for this branch, and why (K2; docs/rebuild/stats-plan.md, items 17 to 20).
     keyChanges: [

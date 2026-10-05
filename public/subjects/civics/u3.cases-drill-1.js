@@ -6,7 +6,7 @@
 
 FC.cases('civics', 'u3', [
 
-  /* ---------- Stage one: the key's answers are shown, the learner gives the name ---------- */
+  /* ---------- Stage one: the answers are shown, the learner gives the name ---------- */
   { id: 'n-trucks', use: 'drill', tier: 'clean', setting: 'work', topic: 'trucks stopped at state lines',
     text: "Fruit growers say their trucks are stopped and searched at every state line. The House and the Senate passed a bill that bans states from stopping trucks at their borders to search goods that are only passing through.",
     outcome: 'enumerated', route: { D1: ['congress'], C1: ['listed'] },
@@ -39,10 +39,10 @@ FC.cases('civics', 'u3', [
     text: "The House voted by more than half to charge a federal judge with lying to hide a gift. The Senate will hold the trial on Monday.",
     outcome: 'impeach', route: { D1: ['congress'], C1: ['remove'] },
     cues: { C1: 'The House voted by more than half to charge a federal judge with lying to hide a gift' },
-    reason: { C1: 'The House has taken the first step: {cue:C1}. The trial is still to come, and the key’s answer covers the charge as well as the trial.' },
+    reason: { C1: 'The House has taken the first step: {cue:C1}. The trial is still to come, and the answer covers the charge as well as the trial.' },
     not: { outcome: 'confirm', why: 'A Senate vote is coming, but not on a person the President put forward for a job. The judge already has the job, and the vote will be on a charge.' } },
 
-  /* ---------- Stage two: the key's question alone, on a new case ---------- */
+  /* ---------- Stage two: the question alone, on a new case ---------- */
   { id: 'pc-borrow', use: 'drill', tier: 'clean', setting: 'money', topic: 'the government borrows more',
     text: "Tax money no longer covers all of the government’s bills this year. The House and the Senate passed a bill that lets the government borrow another $40 billion.",
     outcome: 'enumerated', route: { D1: ['congress'], C1: ['listed'] },
@@ -75,10 +75,10 @@ FC.cases('civics', 'u3', [
     text: "The head of the federal land office was accused of selling public land to a friend for far less than it was worth. The House voted by more than half to charge her, and the Senate trial ended with 60 of the 100 senators voting to convict, so she stayed in her job.",
     outcome: 'impeach', route: { D1: ['congress'], C1: ['remove'] },
     cues: { C1: ['The House voted by more than half to charge her', 'the Senate trial ended with 60 of the 100 senators voting to convict'] },
-    reason: { C1: 'Both steps are in the case: {cue:C1}. The Senate did not convict, so she stayed, but the key’s answer is about the charge and the trial, not about how the trial ended.' },
+    reason: { C1: 'Both steps are in the case: {cue:C1}. The Senate did not convict, so she stayed, but the answer is about the charge and the trial, not about how the trial ended.' },
     not: { outcome: 'confirm', why: 'A Senate vote on a person is what the two names have in common. But she already had the job, and the vote was on a charge, not on putting her forward.' } },
 
-  /* ---------- Stage three: the first answer is shown; the learner answers the key's question and gives the name ---------- */
+  /* ---------- Stage three: the first answer is shown; the learner answers the question and gives the name ---------- */
   { id: 'f-rice', use: 'drill', tier: 'varied', setting: 'work', topic: 'rice sold to other countries',
     text: "Rice farmers want to sell more abroad, but they must get a licence for each shipment. The House and the Senate passed a bill that ends the licence for rice shipments to other countries.",
     outcome: 'enumerated', route: { D1: ['congress'], C1: ['listed'] },
@@ -108,6 +108,6 @@ FC.cases('civics', 'u3', [
     outcome: 'impeach', route: { D1: ['congress'], C1: ['remove'] },
     cues: { D1: 'the Senate’s trial opens on Thursday', C1: 'The House voted to charge him' },
     reason: { D1: 'The case ends with a trial held by senators: {cue:D1}. A trial held in the Senate is a vote by lawmakers, not a decision by a judge.',
-              C1: 'The House has already taken the first step: {cue:C1}. The trial is the second step, and the key’s answer covers both.' },
+              C1: 'The House has already taken the first step: {cue:C1}. The trial is the second step, and the answer covers both.' },
     not: { outcome: 'confirm', why: 'It is a Senate matter about a person, but the vote will be on a charge against someone who already has the job.' } }
 ]);

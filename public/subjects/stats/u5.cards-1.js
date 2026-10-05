@@ -17,7 +17,7 @@ FC.cards('stats', 'u5', [
     ],
     add: [
       'Two words are used all the way through, so here they are once. A count is an actual number of people or things, such as 3 out of 40. A percentage is a count turned into a share of 100, and it cannot give the count back: 3 out of 40 and 30 out of 400 are both 7.5%.',
-      'This unit teaches one question of the key, and the three names that go with its answers. It leans on Unit One, which taught the key’s first question and its five answers, and on Units Two, Three and Four, which taught the names for a claim that holds, for the people counted, and for what a figure counts.'
+      'This unit teaches one question, and the three names that go with its answers. It leans on Unit One, which taught the first question and its five answers, and on Units Two, Three and Four, which taught the names for a claim that holds, for the people counted, and for what a figure counts.'
     ],
     map: { branch: 'compare' } },
 
@@ -64,7 +64,7 @@ FC.cards('stats', 'u5', [
       'From here on the claims change their stories on purpose. Sometimes two claims share one story and differ only in what is left out. When that happens, the shared story is there to show you that it decides nothing.',
       'Two other things change on purpose: how big the percentage or the total is, and whether you would like the claim to be true. A large percentage can come with every count given, and a small one can hide everything.'
     ],
-    fixed: ['what the figure is set beside, which is what the key asks about: {q:C1}'],
+    fixed: ['what the figure is set beside, which is what this question asks about: {q:C1}'],
     varies: ['the topic', 'the people', 'whether the percentage rises or falls', 'how big the figure is', 'whether you would like it to be true'] },
 
   { id: 'portrait-relrisk', kind: 'portrait', outcome: 'relrisk',
@@ -107,13 +107,13 @@ FC.cards('stats', 'u5', [
     testedBy: ['claim-fairest'] },
 
   { id: 'look-relrisk-compok', kind: 'lookalike', ledger: 'relrisk~comp_ok',
-    link: 'Unit Two taught {o:comp_ok}: a comparison that holds. The same percentage can appear in a claim that holds and in one that does not. Here are two claims about the same bus routes. One is {o:relrisk}, and the other is {o:comp_ok}.',
+    link: 'Unit Two taught {o:comp_ok}: a comparison that holds. The same percentage can appear in a claim that holds and in one that does not. Here are two claims about the same bus lines. One is {o:relrisk}, and the other is {o:comp_ok}.',
     cases: ['la1-bus-pct', 'la1-bus-counts'],
-    instruction: 'Both claims are about Route 12 and Route 9, and in both Route 12 comes out likelier to be late. Compare one thing: whether you can find the counts the percentage was worked out from.',
+    instruction: 'Both claims are about Line 12 and Line 9, and in both Line 12 comes out likelier to be late. Compare one thing: whether you can find the counts the percentage was worked out from.',
     prompt: { kind: 'which', option: 'S1.holds', answer: 'la1-bus-counts' },
     difference: [
-      'In Case A the claim gives "50% more likely" and no counts. If 4 trips in every 100 arrive late on Route 9, Route 12 has 6. If 40 in every 100 arrive late on Route 9, Route 12 has 60. The claim does not let you tell which, so you cannot tell how many riders it affects. The key’s answer is {a:S1.compare}, and the case is {o:relrisk}.',
-      'In Case B the counts are given: 15 of 300 trips late on Route 12, and 10 of 300 on Route 9. Work it out: 15 is 10 plus half of 10, so Route 12 is 50% more likely to arrive late, and the same words are now backed up by the numbers. The routes are alike, every trip was timed the same way over the same month, and the claim says only which is likelier. The key’s answer is {a:S1.holds}, and the case is {o:comp_ok}.',
+      'In Case A the claim gives "50% more likely" and no counts. If 4 trips in every 100 arrive late on Line 9, Line 12 has 6. If 40 in every 100 arrive late on Line 9, Line 12 has 60. The claim does not let you tell which, so you cannot tell how many riders it affects. The answer is {a:S1.compare}, and the case is {o:relrisk}.',
+      'In Case B the counts are given: 15 of 300 trips late on Line 12, and 10 of 300 on Line 9. Work it out: 15 is 10 plus half of 10, so Line 12 is 50% more likely to arrive late, and the same words are now backed up by the numbers. The lines are alike, every trip was timed the same way over the same month, and the claim says only which is likelier. The answer is {a:S1.holds}, and the case is {o:comp_ok}.',
       'The percentage is the same in both. What differs is whether the counts are beside it. A percentage with its counts is a claim you can rely on, and a percentage on its own is not yet one.'
     ] }
 ]);

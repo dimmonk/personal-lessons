@@ -14,12 +14,12 @@ FC.cards('stats', 'u1', [
     canDo: 'After this unit you can read a claim made with numbers, such as a headline, an ad or a message a friend forwards, and say where the trouble in it starts, or that there is none. You will be able to point to the words that show it, and to say why it is not one of the other answers. The claim can be about a café, a hospital, a school, your street, or something you are about to share.',
     everyday: [
       'You meet claims like these every week. A headline says, "Nine in ten parents want school to start later." A message in the neighborhood group says, "Burglaries on our road are up 200%!" An ad says, "People who take our vitamin catch fewer colds." Each one puts a number in front of you and wants you to believe something, share it, or act on it.',
-      'A number on its own proves nothing. A claim made with numbers is built in steps, and each step can be sound or unsound. First, some people or things are counted. Then the count is read as showing something real. Then it is set beside something, so that you can tell whether it is big or small. And sometimes the claim goes further and says that one thing caused another. Each step rests on the ones before it. If an early step is wrong, nothing built on it can be relied on: ten parents stopped outside one school gate tell you nothing about parents in general, however carefully the later steps are done.',
-      'Most people do not check any of this. They check whether the number sounds big, or whether they like it. This unit teaches the key’s first question about every claim: which of its parts goes wrong first. It also teaches that sometimes the answer is that none of them does.'
+      'A number on its own proves nothing. A claim made with numbers is built in steps, and each step can be sound or unsound. First, some people or things are counted. Then the count is read as showing something real. Then it is set beside something, so that you can tell whether it is big or small. And sometimes the claim goes further and says that one thing caused another. Each step rests on the ones before it. If an early step is wrong, nothing built on it can be relied on: ten parents stopped outside one school entrance tell you nothing about parents in general, however carefully the later steps are done.',
+      'Most people do not check any of this. They check whether the number sounds big, or whether they like it. This unit teaches the first question about every claim: which of its parts goes wrong first. It also teaches that sometimes the answer is that none of them does.'
     ],
     add: [
-      'Four words are used all the way through, so here they are once. A claim is what someone says with a number in it. A figure is the number, or the numbers, in a claim: a share, an average, a count. A case is the app’s word for one example: a claim as someone might say it to you, with whatever the speaker tells you about where the figure came from, in a few sentences. The key is a short list of questions that you put to a claim, always in the same order. Each answer narrows down what is wrong with it, until one name is left.',
-      'This unit teaches the first question of the key and nothing after it. That question sorts a claim into one of five answers, and in this unit the answer is the name. Four of the answers name a part of a claim that fails. The fifth says that no part does, and that is a result in its own right: a claim can be sound, and being able to say so is as much a part of the skill as finding what is wrong. Everything else in the subject starts from the answer to this first question.'
+      'Four words are used all the way through, so here they are once. A claim is what someone says with a number in it. A figure is the number, or the numbers, in a claim: a share, an average, a count. A case is the app’s word for one example: a claim as someone might say it to you, with whatever the speaker tells you about where the figure came from, in a few sentences. The questions are a short list that you put to a claim, always in the same order. Each answer narrows down what is wrong with it, until one name is left.',
+      'This unit teaches the first question and nothing after it. That question sorts a claim into one of five answers, and in this unit the answer is the name. Four of the answers name a part of a claim that fails. The fifth says that no part does, and that is a result in its own right: a claim can be sound, and being able to say so is as much a part of the skill as finding what is wrong. Everything else in the subject starts from the answer to this first question.'
     ],
     map: { branch: 'gate' } },
 
@@ -42,12 +42,12 @@ FC.cards('stats', 'u1', [
     ],
     feature: { step: 'S1', option: 'counted' },
     name: [
-      'In this unit the key’s answer is also the name of the family: {a:S1.counted}. In every claim in this subject, this is the part you look at first. "Counted" means that a person, a thing or a place is included in the figure, whether anyone literally counted heads or the figure is an average or a share.',
+      'In this unit the answer is also the name of the kind: {a:S1.counted}. In every claim in this subject, this is the part you look at first. "Counted" means that a person, a thing or a place is included in the figure, whether anyone literally counted heads or the figure is an average or a share.',
       'The people or things in the figure do not have to be everyone. A group can be a fair picture of a bigger group without being all of it. What matters is whether anyone was favoured, or left out, in a way that could move the figure.'
     ] },
 
   { id: 'again-counted', kind: 'again', family: 'counted',
-    link: 'The golf club gave you what to point to, from one case: {needs:counted}. Here is a second case with a completely different story, and this time the trouble is the second way the key allows: too few.',
+    link: 'The golf club gave you what to point to, from one case: {needs:counted}. Here is a second case with a completely different story, and this time the trouble is the second way the first question allows: too few.',
     first: 'gate-golf', second: 'gate-windows', step: 'S1',
     instruction: 'Find what the two cases share. Ignore the story (a golf course, a window firm) and ignore how large the claim sounds. Look at one thing only: what is the figure worked out from, and does that stand for the group the claim speaks for?',
     prompt: { kind: 'phrase', answer: 'On his first four calls with a new opening line, three people agreed to a visit' },
@@ -66,7 +66,7 @@ FC.cards('stats', 'u1', [
       'From here on, the cases change their stories on purpose. Sometimes two cases share the same people and the same topic and differ only underneath. When that happens, the shared story is there to show you that it decides nothing.',
       'Two more things change on purpose: how large or surprising the number is, and whether you would like the claim to be true. A huge number can be sound and a modest one can rest on nothing, so neither tells you the answer. And a claim you agree with is run through the same question as one you do not.'
     ],
-    fixed: ['how the claim is put together, which is what the key asks about: {q:S1}'],
+    fixed: ['how the claim is put together, which is what the first question asks about: {q:S1}'],
     varies: ['the topic', 'the people', 'how large or surprising the number is', 'whether you would like it to be true', 'whether anything is wrong at all'] },
 
   { id: 'portrait-counted', kind: 'portrait', family: 'counted',

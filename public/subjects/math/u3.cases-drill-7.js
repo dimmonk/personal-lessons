@@ -17,8 +17,8 @@ FC.cases('math', 'u3', [
       A1: ['width × (width + 5)', 'A pool’s area is 36 m²']
     },
     reason: {
-      M1: 'The problem asks {cue:M1}, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no {t:righttriangle} or copy at another size, so the key’s first answer is {a:M1.unknown}.',
-      A1: 'The words {cue:A1} give a rule and the result it came to, 36 m², which looks like {a:A1.formula}. But in the rule the missing width appears twice, once on its own and once inside the bracket, so it is multiplied by itself, and the key’s answer is {a:A1.itself}.'
+      M1: 'The problem asks {cue:M1}, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no {t:righttriangle} or copy at another size, so the answer to the first question is {a:M1.unknown}.',
+      A1: 'The words {cue:A1} give a rule and the result it came to, 36 m², which looks like {a:A1.formula}. But in the rule the missing width appears twice, once on its own and once inside the bracket, so it is multiplied by itself, and the answer is {a:A1.itself}.'
     },
     not: {
       outcome: 'rearr',
@@ -85,7 +85,7 @@ FC.cases('math', 'u3', [
       A1: ['multiplied by itself and then added to 4 times itself, gives −13']
     },
     reason: {
-      M1: 'The problem asks {cue:M1}, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no {t:righttriangle} or copy at another size, so the key’s first answer is {a:M1.unknown}.',
+      M1: 'The problem asks {cue:M1}, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no {t:righttriangle} or copy at another size, so the answer to the first question is {a:M1.unknown}.',
       A1: 'The words {cue:A1} give a result, −13, and the missing number is multiplied by itself as well as used on its own. That is {a:A1.itself}. Whether any number fits is settled by the working, and a result below zero is one way for no number to fit.'
     },
     not: {

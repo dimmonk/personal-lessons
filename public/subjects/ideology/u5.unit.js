@@ -6,7 +6,7 @@
 
 FC.unit('ideology', 'u5', {
   kind: 'C',              // C classification, F facts, P procedure
-  rev: 1,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
+  rev: 2,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
   standard: 1,            // lesson-standard version this unit was built to
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author). The app labels a draft as a draft.
   tag: 'Five',
@@ -58,7 +58,7 @@ FC.unit('ideology', 'u5', {
     { id: 'p3', title: 'Rules said to hold some groups back',
       cards: ['term-equity', 'meet-idegal', 'again-idegal', 'portrait-idegal', 'check-idegal',
               'look-modlib-idegal', 'look-clib-idegal', 'refute-ranking', 'exc-startrules'] },
-    { id: 'p4', title: 'The key’s question, and where this branch gives way',
+    { id: 'p4', title: 'The question, and where the first question wins',
       cards: ['q-does', 'check-does', 'exc-class', 'exc-tradition', 'exc-nation'] },
     { id: 'p5', title: 'Two whole cases, then the drill',
       cards: ['worked-clean', 'worked-misleading'], drill: true, close: ['recap', 'transfer'] }
@@ -70,7 +70,7 @@ FC.unit('ideology', 'u5', {
   // The {earlier: 'u1'} items draw, at run time, from Unit One's bank, including its texts that set rights beside the first answer.
   drill: {
     key: 'u5',            // the old quick-drill totals for this unit were stored under pl:ideology:stats:u5 (frozen; see E8)
-    add: 'Some of these texts want a fair start and some want rules changed, and a few want both. That is on purpose: when a text shows two answers, the key chooses one, and you will practise telling which.',
+    add: 'Some of these texts want a fair start and some want rules changed, and a few want both. That is on purpose: when a text shows two answers, one of them wins, and you will practise telling which.',
     rungs: [
       { ask: 'name',
         items: [['i5-n-clib1', 'i5-n-modlib1', 'i5-n-idegal1'],
@@ -107,7 +107,8 @@ FC.unit('ideology', 'u5', {
   build: {
     // What changed at each revision (R1). One entry for every revision from 1 to rev.
     history: [
-      { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the branch unit for “Rights and fair treatment for everyone”. One question, three names, the word equity taught on its own card, and the gate’s three decisions for this answer (working people against owners, old ways, one people put first) taught as exceptions. Not yet deployed, so later edits before the first deploy stay revision 1.' }
+      { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the branch unit for “Rights and fair treatment for everyone”. One question, three names, the word equity taught on its own card, and the gate’s three decisions for this answer (working people against owners, old ways, one people put first) taught as exceptions. Not yet deployed, so later edits before the first deploy stay revision 1.' },
+      { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' }
     ],
     // What changed in the key for this branch, and why (K2). This unit carries the lines of the question and the outcomes it teaches;
     // the gate's lines are carried by Unit One. (docs/rebuild/ideology-plan.md, part a)

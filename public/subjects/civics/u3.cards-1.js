@@ -14,7 +14,7 @@ FC.cards('civics', 'u3', [
     canDo: 'After this unit you can read a short news item or an everyday story in which Congress does something, and say which of five things it is: {plain:enumerated}; {plain:beyondcong}; {plain:purse}; {plain:confirm}; or {plain:impeach}. You will be able to point to the words that tell you, and to say why it is not one of the other four.',
     everyday: [
       'You already read this sort of story every week. “Congress passed a new law on airline tickets.” “Congress cut the money for the programme.” “The Senate approved the President’s choice.” “The House voted to charge a judge.” “A court says Congress went too far.” Each of them says that Congress did something, and each is a different thing.',
-      'The first unit taught you the key’s first question: whose decision does the case end on? When the answer is Congress, one question is left, and this unit teaches it. It is the question about what Congress does. Congress does more than pass laws. It also decides how much money the government may spend. The Senate votes on people the President has chosen and on agreements the President has signed. And the two chambers can charge an official with serious misconduct, and try the charge.',
+      'The first unit taught you the first question: whose decision does the case end on? When the answer is Congress, one question is left, and this unit teaches it. It is the question about what Congress does. Congress does more than pass laws. It also decides how much money the government may spend. The Senate votes on people the President has chosen and on agreements the President has signed. And the two chambers can charge an official with serious misconduct, and try the charge.',
       'Laws need one word more. A law that has passed every vote is not always a law Congress was allowed to pass. The Constitution, the founding set of rules for the country, gives Congress a list of matters it may make laws about, and it protects some rights that no law may take away. So for a law there is a second thing to look at beyond the vote: whether the Constitution lets Congress pass it. That is why one of the five things is a law Congress was allowed to pass and another is a law it was not.'
     ],
     add: 'Two words are used all the way through. A bill is a proposed law, and it becomes a law when both chambers have passed it and the President has signed it. The chambers are the House of Representatives and the Senate, the two groups of lawmakers that make up Congress.',
@@ -22,7 +22,7 @@ FC.cards('civics', 'u3', [
 
   /* ---------- Enumerated power ---------- */
   { id: 'meet-enumerated', kind: 'meet', outcome: 'enumerated',     // heading is the outcome's plain words, from the key
-    link: 'You know the key’s answer to its first question: {a:D1.congress}. This unit asks what Congress does. Start with the commonest thing, passing a law, and with the case where the law is one the Constitution lets Congress pass.',
+    link: 'You know the answer to its first question: {a:D1.congress}. This unit asks what Congress does. Start with the commonest thing, passing a law, and with the case where the law is one the Constitution lets Congress pass.',
     case: 'e-airfare', mark: 'C1',
     strip: [
       'Congress passes a law: the House and the Senate have both voted for the bill.',
@@ -33,7 +33,7 @@ FC.cards('civics', 'u3', [
     ],
     explain: [
       'What you are shown is a law, passed by the House and by the Senate, about a tax. Airports need repairs, and the bill makes the people who fly pay part of the cost. The repairs tell you why the bill exists. What Congress did is pass a law, and what the law is about is a tax.',
-      'Here is the new thing. A law is not allowed just because both chambers voted for it. The Constitution is the founding set of rules for the whole country, and in the part called Article I it lists the matters Congress may make laws about. Congress has only the powers the Constitution gives it, and what is not on the list is for the states to decide. Taxing is on the list. The key spells out the answer: it is the answer when {when:C1.listed}.',
+      'Here is the new thing. A law is not allowed just because both chambers voted for it. The Constitution is the founding set of rules for the whole country, and in the part called Article I it lists the matters Congress may make laws about. Congress has only the powers the Constitution gives it, and what is not on the list is for the states to decide. Taxing is on the list. This is the answer when {when:C1.listed}.',
       'There is a second limit. The Constitution also protects some rights: to speak, to worship, to publish and to gather peacefully. Congress may not pass a law that takes one of them away, even on a matter that is on the list. The tax on tickets takes none of them away, so Congress was allowed to pass it.'
     ],
     feature: { step: 'C1', option: 'listed' },
@@ -55,9 +55,9 @@ FC.cards('civics', 'u3', [
     body: [
       'Every case in this unit has two layers. The top layer is the story: a tax, a school, a flood barrier, a judge. The layer underneath is what Congress does. The five names belong to the layer underneath. The same story can carry any of them: a tax can be passed by Congress as a law, and the money it raises can be voted out to a programme; a judge can be approved by the Senate and, years later, be charged by the House.',
       'From here on, the cases change their stories on purpose. Sometimes two cases share a story and differ only in what Congress does. When that happens, the shared story is there to show you that it decides nothing.',
-      'One more thing changes on purpose: who else is in the case. The President, an office that carries out laws, a judge and a state may all appear. The first question of the key has already been asked, and its answer is Congress. These people are how the matter reached Congress, and the question now is what Congress does. Whether you agree with it, or like the people who did it, is not part of the question either.'
+      'One more thing changes on purpose: who else is in the case. The President, an office that carries out laws, a judge and a state may all appear. The first question has already been asked, and its answer is Congress. These people are how the matter reached Congress, and the question now is what Congress does. Whether you agree with it, or like the people who did it, is not part of the question either.'
     ],
-    fixed: ['what Congress does, which is what the key asks about: {q:C1}'],
+    fixed: ['what Congress does, which is what the question asks about: {q:C1}'],
     varies: ['the topic', 'the people', 'how big the matter is', 'whether you think the law or the decision is a good one', 'who else appears in the case'] },
 
   { id: 'portrait-enumerated', kind: 'portrait', outcome: 'enumerated',
@@ -72,7 +72,7 @@ FC.cards('civics', 'u3', [
     not: 'A law having passed is not enough for this name. The matter has to be one on the Constitution’s list, and the law has to take no right away. A law that fails either test is not this name, however many votes it got.',
     wild: ['“Congress passed a law requiring…”', '“Under its power to tax…”', '“Under its power over trade between the states.”', '“The new law sets…”', '“The bill passed both chambers.”'],
     self: 'In your own life you meet this whenever a federal tax, a coin, the post office or a rule about becoming a citizen changes. Someone in Congress voted for it, and the Constitution lists the matter.',
-    ask: '“What is this law about, and is that on the Constitution’s list? Does it take away anyone’s right to speak, to worship, to publish or to gather peacefully?” If the matter is on the list and no right is taken away, the key’s answer is {a:C1.listed}.' },
+    ask: '“What is this law about, and is that on the Constitution’s list? Does it take away anyone’s right to speak, to worship, to publish or to gather peacefully?” If the matter is on the list and no right is taken away, the answer is {a:C1.listed}.' },
 
   { id: 'check-enumerated', kind: 'check', after: 'enumerated',
     case: 'k-courts',

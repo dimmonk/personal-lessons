@@ -86,23 +86,23 @@ FC.cases('wealth', 'u4', [
     text: '"Prices fell 30% this year, so I need to rebalance. My plan is 60% in shares and I allow 5 points either way, and shares are at 58% of the money."',
     ask: { type: 'missing', name: 'rebalance' },
     fault: 'The claim treats a fall in prices as the reason to rebalance. The name needs a mix that has moved well outside the limits the plan allows, and the speaker’s own numbers show shares at 58%, two points from the plan and inside the limit of 5. A fall moves {t:mix} a little as a matter of course, which is why a plan has limits. Selling or buying now would be a trade that the plan does not call for.',
-    corrected: 'Prices fell 30% this year. My plan is 60% in shares and I allow 5 points either way, and shares are at 58%. That is inside my limit, so nothing needs doing, and in the key’s words the answer is {a:T1.ready}. It would be {o:rebalance} only if shares were outside 55% to 65%.' },
+    corrected: 'Prices fell 30% this year. My plan is 60% in shares and I allow 5 points either way, and shares are at 58%. That is inside my limit, so nothing needs doing, and the answer is {a:T1.ready}. It would be {o:rebalance} only if shares were outside 55% to 65%.' },
 
   { id: 'c-cash', use: 'claim',
     text: '"I’m 64 and I live off my funds, selling a little each month. A friend says I should keep three years of spending in cash, £75,000. Cash earns nothing, so that is just £75,000 wasted."',
     ask: { type: 'option', step: 'T1', answer: 'livingcosts' },
     fault: 'The claim counts the cost of the cash and never counts what it is for. Cash earns less than shares are expected to, which is a real cost: if shares grew 5% and the account paid 1%, £75,000 would give up £3,000 a year. But the speaker lives on funds by selling a little each month, so a fall means selling at the low price, and what is sold is not there when prices come back. That is {t:sequence}, and the cash is the price of not selling then. "Earns nothing" is not true, and "wasted" is not the right word for a price paid in order to wait.',
-    corrected: 'I live off my funds by selling a little each month, which in the key’s words is {a:T1.livingcosts}. Holding three years of spending as cash would cost me about £3,000 a year in growth I would not get, if shares grew 5% and the account paid 1%. It buys me time not to sell on a bad day. I should count that cost against what a fall could cost me, and then decide.' },
+    corrected: 'I live off my funds by selling a little each month, which is {a:T1.livingcosts}. Holding three years of spending as cash would cost me about £3,000 a year in growth I would not get, if shares grew 5% and the account paid 1%. It buys me time not to sell on a bad day. I should count that cost against what a fall could cost me, and then decide.' },
 
   { id: 'c-bill', use: 'claim',
     text: '"My daughter’s university fees of £30,000 are due in September, two years from now, and the money is in a share fund. Bonds are boring and pay less. Shares beat bonds over the long run, so I’ll leave it where it is."',
     ask: { type: 'option', step: 'T1', answer: 'datedbill' },
     fault: 'The claim answers a question about the long run, and the bill has a date. "Over the long run" says something about many years taken together, and nothing in it says what the fund will be worth on the day in September when £30,000 is due. After a fall of 25% the fund would hold £22,500, which is £7,500 short, and the date would not move. The claim counts what bonds give up, and never what the date takes.',
-    corrected: 'My daughter’s fees of £30,000 are due on a date two years from now, and the money for them is in shares, which in the key’s words is {a:T1.datedbill}. One bond that repays £30,000 by the day takes the fall out of the question, at the price of some growth. What shares may do over the long run is not about this bill, because this bill has a day.' },
+    corrected: 'My daughter’s fees of £30,000 are due on a date two years from now, and the money for them is in shares, which is {a:T1.datedbill}. One bond that repays £30,000 by the day takes the fall out of the question, at the price of some growth. What shares may do over the long run is not about this bill, because this bill has a day.' },
 
   { id: 'c-covered', use: 'claim',
     text: '"I have £5,000 in my savings account, so the £30,000 school fees in September are covered."',
     ask: { type: 'missing', name: 'covered' },
     fault: 'The claim says covered, and shows £5,000 against a bill of £30,000. For the name you must be able to point to the money for the bill already in cash, or in bonds that repay in time, and here that is £5,000 of £30,000. The other £25,000 is somewhere the claim does not say, and if it is in shares, a fall could leave it short. Having some cash is not the same as having the bill covered.',
-    corrected: 'I have £5,000 in my savings account, and the school fees are £30,000 in September, with the other £25,000 in shares. £25,000 of the bill is in shares, which in the key’s words is {a:T1.datedbill}. It would be {o:covered} only if all £30,000 were already in cash, or in bonds that repay it by September.' }
+    corrected: 'I have £5,000 in my savings account, and the school fees are £30,000 in September, with the other £25,000 in shares. £25,000 of the bill is in shares, which is {a:T1.datedbill}. It would be {o:covered} only if all £30,000 were already in cash, or in bonds that repay it by September.' }
 ]);

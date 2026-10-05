@@ -7,7 +7,7 @@
 
 FC.unit('civics', 'u5', {
   kind: 'C',              // C classification, F facts, P procedure
-  rev: 1,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
+  rev: 2,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
   standard: 1,            // lesson-standard version this unit was built to
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author). The app labels a draft as a draft.
   tag: 'Five',
@@ -66,7 +66,7 @@ FC.unit('civics', 'u5', {
     { id: 'p3', title: 'A judge and a person accused of a crime',
       cards: ['meet-trialrights', 'again-trialrights', 'portrait-trialrights', 'check-trialrights', 'refute-citizen',
               'look-review-trialrights', 'exc-defendant', 'look-review-beyondcong', 'look-trialrights-beyondcong'] },
-    { id: 'p4', title: 'The key’s question',
+    { id: 'p4', title: 'The question',
       cards: ['q-judge', 'check-judge'] },
     { id: 'p5', title: 'Two whole cases, then the drill',
       cards: ['worked-yardsign', 'worked-megaphone'], drill: true, close: ['recap', 'transfer'] }
@@ -113,7 +113,8 @@ FC.unit('civics', 'u5', {
   build: {
     // What changed at each revision (R1). One entry for every revision from 1 to rev.
     history: [
-      { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the branch unit of Civics for a judge in any court. It replaces the courts part of old Unit Three, the election-holiday worked case and old specimens 3, 7, 11 and 16. Not yet deployed, so later edits before the first deploy stay revision 1.' }
+      { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the branch unit of Civics for a judge in any court. It replaces the courts part of old Unit Three, the election-holiday worked case and old specimens 3, 7, 11 and 16. Not yet deployed, so later edits before the first deploy stay revision 1.' },
+      { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' }
     ],
     // What the K2 rewrite changed in the key for this branch, and why (docs/rebuild/civics-plan.md, section a). "was" is the wording of the old course.
     keyChanges: [

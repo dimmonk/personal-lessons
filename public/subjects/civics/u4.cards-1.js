@@ -56,7 +56,7 @@ FC.cards('civics', 'u4', [
       'From here on, the cases change their stories on purpose. Sometimes two cases share almost the same story and differ only underneath. When that happens, the shared story is there to show you that it tells you nothing.',
       'One more thing changes on purpose. The loudest part of a case is often not the part that decides it: an order with a signature, a visit by another country’s leader, a law that came first. What decides is what the President or the office does, and whether a law stands behind it where one is needed.'
     ],
-    fixed: ['what the President or the office does, which is what the key asks about: {q:E1}'],
+    fixed: ['what the President or the office does, which is what the question asks about: {q:E1}'],
     varies: ['the topic', 'the people', 'which office is named', 'how loud or important the case sounds', 'whether you agree with what is done'] },
 
   { id: 'portrait-execute', kind: 'portrait', outcome: 'execute',

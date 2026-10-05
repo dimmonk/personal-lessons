@@ -26,7 +26,7 @@ FC.cards('civics', 'u3', [
     ],
     explain: [
       'The President chose, and the President’s choice is only a choice until the Senate votes. The Senate held two days of hearings, and then it voted. Until the vote is yes she is only the person the President has proposed, and not yet the head of anything. When she is approved she may start.',
-      'So this is a vote on a person the President put forward, and the vote is the Senate’s alone. The jobs it covers are the top ones: a judge, the head of a federal {t:agency}, someone to represent the country abroad. The key spells out the answer: it is the answer when {when:C1.approve}.',
+      'So this is a vote on a person the President put forward, and the vote is the Senate’s alone. The jobs it covers are the top ones: a judge, the head of a federal {t:agency}, someone to represent the country abroad. This is the answer when {when:C1.approve}.',
       'The same line covers a {t:treaty}: the Senate votes on one that the President has signed. The number of yes votes that is needed is not the same for the two, and the line above says what each is.'
     ],
     feature: { step: 'C1', option: 'approve' },
@@ -51,10 +51,10 @@ FC.cards('civics', 'u3', [
       'Until the vote, the person is only proposed and the {t:treaty} binds nobody. The words you hear are “awaiting Senate approval”, “the nominee”, “the hearings”.',
       'The Senate can say no. Only if enough senators say yes does the person take the job or the agreement take effect.'
     ],
-    not: 'Choosing a person, or signing an agreement, is not this name on its own. If the case stops there, it is the President’s act, and the key’s answer to its first question is {a:D1.president}. This name needs the Senate’s vote, or the request that the Senate vote.',
+    not: 'Choosing a person, or signing an agreement, is not this name on its own. If the case stops there, it is the President’s act, and the answer to its first question is {a:D1.president}. This name needs the Senate’s vote, or the request that the Senate vote.',
     wild: ['“The Senate confirmed her.”', '“A confirmation hearing.”', '“The Senate ratified the treaty.”', '“Awaiting Senate approval.”'],
     self: 'In your own life you meet it when the news says that a judge, an ambassador or the head of an office has been “confirmed” or is “awaiting confirmation”, and when a deal with another country is “sent to the Senate”.',
-    ask: '“Has the President already chosen or signed? Is the Senate being asked to vote?” If the case is the Senate’s vote on a person or an agreement the President put forward, the key’s answer is {a:C1.approve}.' },
+    ask: '“Has the President already chosen or signed? Is the Senate being asked to vote?” If the case is the Senate’s vote on a person or an agreement the President put forward, the answer is {a:C1.approve}.' },
 
   { id: 'check-confirm', kind: 'check', after: 'confirm',
     case: 'k-taxhead',

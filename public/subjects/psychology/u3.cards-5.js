@@ -10,8 +10,8 @@ FC.cards('psychology', 'u3', [
     instruction: 'Both cases are about Anil, his sister Bea and who was to book the flights for a family trip. Compare one thing: is this one disagreement that gets settled, or the same denial coming back for months until Anil doubts his own memory?',
     prompt: { kind: 'which', option: 'T1.denymemory', answer: 'trip-months' },
     difference: [
-      'In Case A, Bea wrote in March that she would book the flights, and she never did. Since then she has said, whenever Anil asks, that she never said it, that he muddles who said what, and that he invents things. It has gone on for four months, and Anil now checks every plan with his mother before he believes his own memory of it. The key’s answer is {a:T1.denymemory}, and the case is {o:gaslight}.',
-      'In Case B, Anil and Bea remember it differently, once. Bea suggests looking at the chat, the chat shows Anil said he would book them, and Bea says "My mistake". The disagreement is settled by looking, and nobody is left doubting their own memory. The key’s answer is {a:T1.plain}, and the case is {o:ordexchange}.',
+      'In Case A, Bea wrote in March that she would book the flights, and she never did. Since then she has said, whenever Anil asks, that she never said it, that he muddles who said what, and that he invents things. It has gone on for four months, and Anil now checks every plan with his mother before he believes his own memory of it. The answer is {a:T1.denymemory}, and the case is {o:gaslight}.',
+      'In Case B, Anil and Bea remember it differently, once. Bea suggests looking at the chat, the chat shows Anil said he would book them, and Bea says "My mistake". The disagreement is settled by looking, and nobody is left doubting their own memory. The answer is {a:T1.plain}, and the case is {o:ordexchange}.',
       'Both cases have two people who remember who was to book the flights differently. What differs is whether it is one disagreement that gets checked, or one denial that keeps coming back.'
     ] },
 
@@ -21,8 +21,8 @@ FC.cards('psychology', 'u3', [
     instruction: 'Both cases are about Mira, her neighbour Joel and a smashed fence panel. Compare one thing: does the case show that Joel did it?',
     prompt: { kind: 'which', option: 'T1.reverse', answer: 'fence-guilty' },
     difference: [
-      'In Case A, the doorbell camera shows Joel backing his van into the fence. When Mira raises it, he denies it ("I never touched your fence"), attacks her ("you are the one who parks across everyone’s drive") and plays the one wronged ("I am sick of being the one who gets blamed"). The key’s answer is {a:T1.reverse}, and the case is {o:darvo}.',
-      'In Case B, the camera shows Joel’s van parked outside his own house all that day. Joel says "That is not true, and I do not like being blamed", and tells Mira to look. She does, and she says sorry. His denial is true. He does not attack her, and he does not claim to be the one wronged. The key’s answer is {a:T1.plain}, and the case is {o:ordexchange}.',
+      'In Case A, the doorbell camera shows Joel backing his van into the fence. When Mira raises it, he denies it ("I never touched your fence"), attacks her ("you are the one who parks across everyone’s drive") and plays the one wronged ("I am sick of being the one who gets blamed"). The answer is {a:T1.reverse}, and the case is {o:darvo}.',
+      'In Case B, the camera shows Joel’s van parked outside his own house all that day. Joel says "That is not true, and I do not like being blamed", and tells Mira to look. She does, and she says sorry. His denial is true. He does not attack her, and he does not claim to be the one wronged. The answer is {a:T1.plain}, and the case is {o:ordexchange}.',
       'Joel denies it in both. What differs is whether the denial is of something the case shows he did.'
     ] },
 
@@ -31,9 +31,9 @@ FC.cards('psychology', 'u3', [
     link: 'The last card put two tidy cases side by side. This one is messier: a person who denies it, attacks, and says they are the one picked on, and who is not turning anything around.',
     case: 'cupboard',
     setup: 'Tara’s answer has all three parts: she denies it ("I locked it"), she attacks Mr Boyd ("You always blame me first"), and she says she is the one picked on. Yet this case is {o:ordexchange}.',
-    prompt: { kind: 'phrase', answer: 'The key log shows Tara locked it at noon, and that it was opened again at three by Neil, who has the other key.' },
+    prompt: { kind: 'phrase', answer: 'The cupboard log shows Tara locked it at noon, and that it was opened again at three by Neil, who has the other key.' },
     because: [
-      'The first thing the name {o:darvo} needs is that the case shows the person did what was raised. Here the case shows the opposite. Tara locked the cupboard, and the key log shows who opened it. Her denial is true.',
+      'The first thing the name {o:darvo} needs is that the case shows the person did what was raised. Here the case shows the opposite. Tara locked the cupboard, and the cupboard log shows who opened it. Her denial is true.',
       'A person who is wrongly accused can be hurt, say sharp things, and say they are picked on, and all of that is an ordinary reply to a mistake. What makes the name is that the denial is of something the case shows they did. Take that away and the same words are only a defence.'
     ] },
 
@@ -43,8 +43,8 @@ FC.cards('psychology', 'u3', [
     instruction: 'Both cases are about Dan and Eli, and the first week is word for word the same. Compare one thing: what Eli does when Dan says he cannot come to Sunday lunch.',
     prompt: { kind: 'which', option: 'T1.floodpull', answer: 'friend-flood' },
     difference: [
-      'In Case A, Eli does not speak to Dan for a month, and then says "I thought you were different". That is the pulling back, with criticism, once Dan says no. Together with a first week of dinners every night, a spare key and "the best friend I have ever had", which is far more than a week would explain, both halves are there. The key’s answer is {a:T1.floodpull}, and the case is {o:lovebomb}.',
-      'In Case B, Eli says "No problem, another time" and is just as friendly the next day. The first week is the same, but nothing is pulled back. The key’s answer is {a:T1.plain}, and the case is {o:ordexchange}.',
+      'In Case A, Eli does not speak to Dan for a month, and then says "I thought you were different". That is the pulling back, with criticism, once Dan says no. Together with a first week of dinners every night, a way into his home and "the best friend I have ever had", which is far more than a week would explain, both halves are there. The answer is {a:T1.floodpull}, and the case is {o:lovebomb}.',
+      'In Case B, Eli says "No problem, another time" and is just as friendly the next day. The first week is the same, but nothing is pulled back. The answer is {a:T1.plain}, and the case is {o:ordexchange}.',
       'So the flood on its own, however large, is not the name. Both halves are needed, and what separates the two cases is only the second half.'
     ] },
 
@@ -54,8 +54,8 @@ FC.cards('psychology', 'u3', [
     instruction: 'Both cases are about Colm, Shay and swapped shifts. Compare one thing: does the shift book show Shay doing it?',
     prompt: { kind: 'which', option: 'T1.ownfault', answer: 'rota-accuse' },
     difference: [
-      'In Case A, Colm tells the manager, unprompted, that Shay is always swapping shifts without telling anyone. The shift book shows that Colm has done it four times this month, and shows no swap by Shay. The key’s answer is {a:T1.ownfault}, and the case is {o:projection}.',
-      'In Case B, Colm tells Shay that she swapped Thursday without telling anyone, and the book shows that she did. It also shows that Colm has done the same twice, and Shay says so. They agree to put swaps on the board. The accusation is true, so the key’s answer is {a:T1.plain}, and the case is {o:ordexchange}.',
+      'In Case A, Colm tells the manager, unprompted, that Shay is always swapping shifts without telling anyone. The shift book shows that Colm has done it four times this month, and shows no swap by Shay. The answer is {a:T1.ownfault}, and the case is {o:projection}.',
+      'In Case B, Colm tells Shay that she swapped Thursday without telling anyone, and the book shows that she did. It also shows that Colm has done the same twice, and Shay says so. They agree to put swaps on the board. The accusation is true, so the answer is {a:T1.plain}, and the case is {o:ordexchange}.',
       'Colm does the same thing in both cases. What differs is whether the case shows the other person doing it.'
     ] },
 
@@ -79,13 +79,13 @@ FC.cards('psychology', 'u3', [
     right: [
       'A case shows what one person said or did to another. It does not show what a person is like. A case of one man telling his partner the same denial every month does not show how he is with his friends, or at work, or next year, and the same person can do nothing of the kind the next day.',
       'It also gives you a name that cannot be checked. "What he said to Tess in February, March and May was {o:gaslight}" can be checked against the case. "He is a gaslighter" can only be argued about, and it ends the conversation.',
-      'So the key asks about the words and the events, and not about the person: {q:T1} Say what was done, and point to the words that show it.'
+      'So the question is about the words and the events, and not about the person: {q:T1} Say what was done, and point to the words that show it.'
     ],
     testedBy: ['claim-person'] },
 
   { id: 'q-does', kind: 'question', step: 'T1',
     h: 'The question you have been answering all along',
-    link: 'Since the car repair you have seen the key’s question at the foot of each new name, with one answer under it. This card puts the question and its five answers in one place, as the key shows them, and says why the key asks it.',
+    link: 'Since the car repair you have seen the question at the foot of each new name, with one answer under it. This card puts the question and its five answers in one place, and says why it is asked.',
     decides: [
       'Look at what the question leaves out. It does not ask how upset anyone is, whether it was meant, or whether the person is a good one. It asks what the words and events in the case do to the other person, because that is what a case can show.',
       'So two cases can have the same two people, the same upset, even the same words, and get different names. A denial can be {o:gaslight} in one case and the plain truth in another. The same angry reply can be {o:darvo}, or an ordinary defence. Only what the case shows tells them apart.'

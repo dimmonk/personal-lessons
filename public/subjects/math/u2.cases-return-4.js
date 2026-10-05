@@ -16,7 +16,7 @@ FC.cases('math', 'u2', [
     route: { M1: ['whole'], W1: ['exact'] },
     cues: { M1: ['Is 3.1416 exactly equal to pi?'], W1: ['Is 3.1416 exactly equal to pi?'] },
     reason: {
-      M1: 'The problem asks {cue:M1}, a question about whether one number can be written exactly. It is about the value of a number, with no amount followed through time and no hidden number for a calculation to fit, so the key’s first answer is {a:M1.whole}.',
+      M1: 'The problem asks {cue:M1}, a question about whether one number can be written exactly. It is about the value of a number, with no amount followed through time and no hidden number for a calculation to fit, so the answer to the first question is {a:M1.whole}.',
       W1: 'The words {cue:W1} ask whether one number can be written exactly, which is {a:W1.exact}.'
     },
     not: {

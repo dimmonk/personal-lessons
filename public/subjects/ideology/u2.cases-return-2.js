@@ -10,7 +10,7 @@ FC.cases('ideology', 'u2', [
     cues: { D1: 'The company that owns the lending libraries sells subscriptions and underpays its staff, and we are with the staff', C1: 'The libraries should pass to the public, to be run for all readers', C2: 'to be run for all readers' },
     reason: { D1: 'The text sets the staff against the company that owns the libraries, and stands with the staff: {cue:D1}.',
               C1: 'The libraries are to pass out of the company’s hands to the public: {cue:C1}.',
-              C2: 'The text says nothing about how power is won or held. It ends on who the libraries are run for: {cue:C2}. A handover with no word on how is the key’s case for the answer that nothing is said.' },
+              C2: 'The text says nothing about how power is won or held. It ends on who the libraries are run for: {cue:C2}. A handover with no word on how is a case of the answer that nothing is said.' },
     not: { outcome: 'classonly', why: 'The text does more than take the staff’s side: it says the libraries should pass to the public. A text that only took the side would be {o:classonly}.' } },
 
   { id: 'c-ret-dm3', use: 'return', tier: 'varied', setting: 'work', topic: 'foundry staff and a law giving the foundry to its staff',

@@ -71,8 +71,8 @@ FC.cards('civics', 'u5', [
     instruction: 'Both cases are about Vince, who was arrested at a march. Compare one thing: what the judge is asked to check. In one case it is the law Vince is charged under. In the other it is how Vince was dealt with.',
     prompt: { kind: 'which', option: 'J1.check', answer: 'ls-vince-law' },
     difference: [
-      'In Case A the law is what Vince attacks. He was charged under it, and he tells the judge that it takes away his right to speak. That is a claim that the law clashes with the Constitution. The key’s answer is {a:J1.check}, and the case is {o:review}.',
-      'In Case B Vince does not attack the law against blocking a road. His lawyer says that how he was treated after the arrest skipped a step the Constitution promises: a lawyer. The question is about the steps, not about the law. The key’s answer is {a:J1.accused}, and the case is {o:trialrights}.',
+      'In Case A the law is what Vince attacks. He was charged under it, and he tells the judge that it takes away his right to speak. That is a claim that the law clashes with the Constitution. The answer is {a:J1.check}, and the case is {o:review}.',
+      'In Case B Vince does not attack the law against blocking a road. His lawyer says that how he was treated after the arrest skipped a step the Constitution promises: a lawyer. The question is about the steps, not about the law. The answer is {a:J1.accused}, and the case is {o:trialrights}.',
       'Both are about Vince, both end in front of a judge, and in both the Constitution is part of the argument. The difference is what the judge is asked to check: the law itself, or the way an accused person was treated.'
     ] },
 
@@ -80,7 +80,7 @@ FC.cards('civics', 'u5', [
     h: 'On trial, and still about the law',
     link: 'The last card kept the two names tidy. In a real case a person on trial can be asking about the law itself, and the trial around the question does not change the name.',
     case: 'x-defendant',
-    setup: 'The case is full of a trial: a courtroom, a jury, a lawyer, a public hearing. Those are the steps the Constitution promises an accused person, and a person accused of a crime in front of a judge is what you point to for {a:J1.accused}. Yet the key’s answer for this case is {a:J1.check}.',
+    setup: 'The case is full of a trial: a courtroom, a jury, a lawyer, a public hearing. Those are the steps the Constitution promises an accused person, and a person accused of a crime in front of a judge is what you point to for {a:J1.accused}. Yet the answer for this case is {a:J1.check}.',
     prompt: { kind: 'phrase', answer: 'the rule takes away the right to gather peacefully' },
     because: [
       'Ask what the judge is asked to decide. Nell’s trial is going properly: she has a jury, a lawyer and a public hearing, and nobody says a step was skipped. What her lawyer asks is whether the rule she is charged under is allowed at all. That is a claim that the rule clashes with the Constitution.',

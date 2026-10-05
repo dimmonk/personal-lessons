@@ -20,13 +20,13 @@ FC.cases('math', 'u6', [
       S2: 'How far is she now from where she began, in a straight line?'
     },
     reason: {
-      M1: 'The problem asks {cue:M1}, a length in a {t:righttriangle}. Nothing in it follows an amount through time, hides a number that a {t:formula} must fit, or counts ways, so the key’s first answer is {a:M1.shape}.',
+      M1: 'The problem asks {cue:M1}, a length in a {t:righttriangle}. Nothing in it follows an amount through time, hides a number that a {t:formula} must fit, or counts ways, so the answer to the first question is {a:M1.shape}.',
       S1: 'The words {cue:S1} give the lengths of two sides of a {t:righttriangle}, and no angle in degrees besides the square corner. That is {a:S1.twosides}.',
       S2: 'The words {cue:S2} ask how long a side is, which is {a:S2.length}.'
     },
     not: {
       outcome: 'trig',
-      why: 'No angle in degrees is given besides the square corner, so there is nothing for the calculator’s angle keys to work from. {o:trig} would be the name if the problem gave one side and an angle in degrees.'
+      why: 'No angle in degrees is given besides the square corner, so there is nothing for the calculator’s angle buttons to work from. {o:trig} would be the name if the problem gave one side and an angle in degrees.'
     },
     steps: [
       {
@@ -76,13 +76,13 @@ FC.cases('math', 'u6', [
       S2: 'How long is the pipe?'
     },
     reason: {
-      M1: 'The problem asks {cue:M1}, a length in a {t:righttriangle}. Nothing in it follows an amount through time, hides a number that a {t:formula} must fit, or counts ways, so the key’s first answer is {a:M1.shape}.',
+      M1: 'The problem asks {cue:M1}, a length in a {t:righttriangle}. Nothing in it follows an amount through time, hides a number that a {t:formula} must fit, or counts ways, so the answer to the first question is {a:M1.shape}.',
       S1: 'The words {cue:S1} give the lengths of two sides of a {t:righttriangle}, and no angle in degrees besides the square corner. That is {a:S1.twosides}.',
       S2: 'The words {cue:S2} ask how long a side is, which is {a:S2.length}.'
     },
     not: {
       outcome: 'trig',
-      why: 'No angle in degrees is given besides the square corner, so there is nothing for the calculator’s angle keys to work from. {o:trig} would be the name if the problem gave one side and an angle in degrees.'
+      why: 'No angle in degrees is given besides the square corner, so there is nothing for the calculator’s angle buttons to work from. {o:trig} would be the name if the problem gave one side and an angle in degrees.'
     },
     steps: [
       {
@@ -132,13 +132,13 @@ FC.cases('math', 'u6', [
       S2: 'How far is the boat from the foot of the lighthouse, measured along the sea?'
     },
     reason: {
-      M1: 'The problem asks {cue:M1}, a length in a {t:righttriangle}. Nothing in it follows an amount through time, hides a number that a {t:formula} must fit, or counts ways, so the key’s first answer is {a:M1.shape}.',
+      M1: 'The problem asks {cue:M1}, a length in a {t:righttriangle}. Nothing in it follows an amount through time, hides a number that a {t:formula} must fit, or counts ways, so the answer to the first question is {a:M1.shape}.',
       S1: 'The words {cue:S1} give the lengths of two sides of a {t:righttriangle}, and no angle in degrees besides the square corner. That is {a:S1.twosides}.',
       S2: 'The words {cue:S2} ask how long a side is, which is {a:S2.length}.'
     },
     not: {
       outcome: 'trig',
-      why: 'No angle in degrees is given besides the square corner, so there is nothing for the calculator’s angle keys to work from. {o:trig} would be the name if the problem gave one side and an angle in degrees.'
+      why: 'No angle in degrees is given besides the square corner, so there is nothing for the calculator’s angle buttons to work from. {o:trig} would be the name if the problem gave one side and an angle in degrees.'
     },
     steps: [
       {
@@ -191,13 +191,13 @@ FC.cases('math', 'u6', [
       S2: 'How long is the bar?'
     },
     reason: {
-      M1: 'The problem asks {cue:M1}, a length in a {t:righttriangle}. Nothing in it follows an amount through time, hides a number that a {t:formula} must fit, or counts ways, so the key’s first answer is {a:M1.shape}.',
+      M1: 'The problem asks {cue:M1}, a length in a {t:righttriangle}. Nothing in it follows an amount through time, hides a number that a {t:formula} must fit, or counts ways, so the answer to the first question is {a:M1.shape}.',
       S1: 'The words {cue:S1} give the lengths of two sides of a {t:righttriangle}, and no angle in degrees besides the square corner. That is {a:S1.twosides}.',
       S2: 'The words {cue:S2} ask how long a side is, which is {a:S2.length}.'
     },
     not: {
       outcome: 'trig',
-      why: 'No angle in degrees is given besides the square corner, so there is nothing for the calculator’s angle keys to work from. {o:trig} would be the name if the problem gave one side and an angle in degrees.'
+      why: 'No angle in degrees is given besides the square corner, so there is nothing for the calculator’s angle buttons to work from. {o:trig} would be the name if the problem gave one side and an angle in degrees.'
     },
     steps: [
       {
@@ -247,13 +247,13 @@ FC.cases('math', 'u6', [
       S2: 'How long is the cable?'
     },
     reason: {
-      M1: 'The problem asks {cue:M1}, a length in a {t:righttriangle}. Nothing in it follows an amount through time, hides a number that a {t:formula} must fit, or counts ways, so the key’s first answer is {a:M1.shape}.',
+      M1: 'The problem asks {cue:M1}, a length in a {t:righttriangle}. Nothing in it follows an amount through time, hides a number that a {t:formula} must fit, or counts ways, so the answer to the first question is {a:M1.shape}.',
       S1: 'The words {cue:S1} give the lengths of two sides of a {t:righttriangle}, and no angle in degrees besides the square corner. That is {a:S1.twosides}.',
       S2: 'The words {cue:S2} ask how long a side is, which is {a:S2.length}.'
     },
     not: {
       outcome: 'trig',
-      why: 'No angle in degrees is given besides the square corner, so there is nothing for the calculator’s angle keys to work from. {o:trig} would be the name if the problem gave one side and an angle in degrees.'
+      why: 'No angle in degrees is given besides the square corner, so there is nothing for the calculator’s angle buttons to work from. {o:trig} would be the name if the problem gave one side and an angle in degrees.'
     },
     echo: 'm6-wd-skilift',
     steps: [

@@ -17,7 +17,7 @@ FC.cards('scams', 'u4', [
       'The text does not ask for much. £2.99 is less than the price of a coffee, which is how the scam gets past your attention. A person who would hesitate over £300 does not hesitate over £2.99.',
       'Look at what the link leads to. It leads to a page that is made to look like the courier’s. It asks for the number on Jonas’s card, its expiry date and the three digits on the back. After that it often says that his bank is sending a code, and asks him to type that in as well. The £2.99 is not the point. The point is the card number: it is used straight away for much larger payments, and the code is what lets them go through.',
       'You can see all of this when the text arrives: a charge, a link, and a page that wants your card. What the text cannot tell you is whether there really is a parcel. The way to find out is to look in the courier’s own app or on the shop’s own page, which you already had.',
-      'Notice that the text asks Jonas to pay, and also leads him to hand over his card number. The key’s first question gave the answer {a:D1.money} for this kind of request, because paying is what it asks for, and the card number is how he would pay.',
+      'Notice that the text asks Jonas to pay, and also leads him to hand over his card number. The first question gave the answer {a:D1.money} for this kind of request, because paying is what it asks for, and the card number is how he would pay.',
       'The reason the text gives for the money, a parcel that he is waiting for, is a reason that a real courier could give too. So the question about what the money is for cannot settle it. What settles it is what the text asks him to do with the money: pay on a page that he reaches through a link in the message.'
     ],
     feature: { step: 'M2', option: 'link' },
@@ -45,7 +45,7 @@ FC.cards('scams', 'u4', [
     ],
     not: [
       'A real company does sometimes text you about a charge. What makes a charge real is that you can find it in the company’s own app, or on the page you already use, and pay it there.',
-      'A message that only tells you that a parcel is on its way, and asks for nothing, is not this name at all, because it asks you for nothing. Nor is a request for your card number so that “nothing will be charged”: that asks for facts about you, and the key puts it elsewhere.'
+      'A message that only tells you that a parcel is on its way, and asks for nothing, is not this name at all, because it asks you for nothing. Nor is a request for your card number so that “nothing will be charged”: that asks for facts about you, and it belongs elsewhere.'
     ],
     wild: ['"Your parcel could not be delivered. Pay a redelivery fee."', '"You have an unpaid toll. Pay now to avoid a fine."', '"Your subscription has failed. Update your card here."', '"Pay your fine of £4.50 before it rises."'],
     self: 'Many people have had one. It is sent to a great many phones at once, and it works for the same reason that junk mail does: it only has to catch the few people who really are waiting for a parcel.',
@@ -68,20 +68,20 @@ FC.cards('scams', 'u4', [
     instruction: 'Both cases are about Dina, a pair of boots and a £6.20 customs charge. Compare one thing: where she is asked to pay.',
     prompt: { kind: 'which', option: 'M2.agreed', answer: 'm-dina-app' },
     difference: [
-      'In Case A the charge arrives in a text from a number she does not know, with a link to pay on. Nothing that she already had shows that it is real. The key’s answer is {a:M2.link}, and the case is {o:fakelink}.',
-      'In Case B the same charge appears in her courier’s own app, which she installed last year, and on the shop’s own order page, which she opened by typing in the shop’s address. She found it through a way she already had. The key’s answer is {a:M2.agreed}, and the case is {o:realpayment}.',
+      'In Case A the charge arrives in a text from a number she does not know, with a link to pay on. Nothing that she already had shows that it is real. The answer is {a:M2.link}, and the case is {o:fakelink}.',
+      'In Case B the same charge appears in her courier’s own app, which she installed last year, and on the shop’s own order page, which she opened by typing in the shop’s address. She found it through a way she already had. The answer is {a:M2.agreed}, and the case is {o:realpayment}.',
       'The boots, the amount and the courier are the same. What differs is whether the charge came to her in a message, or whether she found it herself.'
     ] },
 
   { id: 'exc-link-fee', kind: 'exception', ledger: 'advancefee~fakelink', looksLike: 'fakelink', is: 'advancefee',
     h: 'A prize that costs a delivery fee, paid on a link',
-    link: 'A payment page reached through a link is what the last name is built on. Here is a case with one, in which the key gives a different answer.',
+    link: 'A payment page reached through a link is what the last name is built on. Here is a case with one, in which the answer is a different one.',
     case: 'm-exc-voucher',
     setup: 'The text asks for £1.99 on a page that is reached through a link, and that is what {a:M2.link} describes. Yet the name for this case is {o:advancefee}.',
     prompt: { kind: 'phrase', answer: 'To claim it, pay £1.99 delivery' },
     because: [
       'Read what the £1.99 is for. The text says that a £500 voucher has been won, and that a delivery fee must be paid to claim it. That is money said to be waiting, and a fee that comes first: the two things that {o:advancefee} is made of.',
-      'The link is there, and the page at the end of it will want a card number. But the link is only the way the payment is made. The reason for the payment is a prize that does not exist. Where a message has both, the key gives the answer about the fee that comes first, because that is what the sender is selling.'
+      'The link is there, and the page at the end of it will want a card number. But the link is only the way the payment is made. The reason for the payment is a prize that does not exist. Where a message has both, the answer is the one about the fee that comes first, because that is what the sender is selling.'
     ],
     take: 'Where a case shows a fee that comes first and a payment page behind a link, put your finger on the fee. The link is how it is paid.' }
 ]);

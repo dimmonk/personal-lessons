@@ -6,7 +6,7 @@ FC.cards('psychology', 'u3', [
 
   { id: 'worked-hike', kind: 'worked',
     h: 'A whole case, from the first question to the name',
-    link: 'You have the five names and the key’s question about them. Before you run a case yourself, watch two being run from the top, in the order the key asks. You are not asked anything until the end of each.',
+    link: 'You have the five names and the question about them. Before you run a case yourself, watch two being run from the top, in the order the questions are asked. You are not asked anything until the end of each.',
     case: 'w-hike',
     steps: [
       { step: 'D1',
@@ -28,14 +28,14 @@ FC.cards('psychology', 'u3', [
         answer: 'c' },
       reason: [
         'For {o:ordexchange} the case must show none of the four. Here it shows one: {needs:lovebomb}. Raf’s friendliness does not settle it, because it is only the first half.',
-        'It is the question from the two neighbours, Dan and Eli. {test:lovebomb~ordexchange} Here the attention is pulled back, so the key’s answer is {a:T1.floodpull}.'
+        'It is the question from the two neighbours, Dan and Eli. {test:lovebomb~ordexchange} Here the attention is pulled back, so the answer is {a:T1.floodpull}.'
       ]
     },
     impression: {
       resembles: 'l-wedding',
       text: [
-        'The key has given its answer. Now take a second look of a different kind: does this case look like one you know? It should bring back Priya and Callum, the first month: a flood of attention at the start, and then one "no" and the attention is gone.',
-        'Here the key and the likeness agree, so the answer stands. The key’s question comes first, because it makes you point at words in the case. The likeness is only a second look. When the two disagree, do not pick the one you prefer. Go back to the key’s question and find the words in the case that answer it. The second whole case shows how.'
+        'You have the answer. Now take a second look of a different kind: does this case look like one you know? It should bring back Priya and Callum, the first month: a flood of attention at the start, and then one "no" and the attention is gone.',
+        'Here the answer and the likeness agree, so the answer stands. The question comes first, because it makes you point at words in the case. The likeness is only a second look. When the two disagree, do not pick the one you prefer. Go back to the question and find the words in the case that answer it. The second whole case shows how.'
       ]
     } },
 
@@ -63,26 +63,26 @@ FC.cards('psychology', 'u3', [
         answer: 'c' },
       reason: [
         'For {o:gaslight} you must be able to point to this: {needs:gaslight}. The case says the opposite about time: it is the first time the booking has come up, and nothing shows Pia doubting her memory.',
-        'It is the question from Ravi and Lena and the dent. {test:gaslight~darvo} Here it is one exchange with three parts, so the key’s answer is {a:T1.reverse}.'
+        'It is the question from Ravi and Lena and the dent. {test:gaslight~darvo} Here it is one exchange with three parts, so the answer is {a:T1.reverse}.'
       ]
     },
     impression: {
       resembles: 'd-till', first: 'g-repair',
       text: [
-        'Now the second look: does this case look like one you know? "You have got that wrong" and "you are always muddled" may bring back Tess and the car repair first, and Tess’s case was {o:gaslight}. So here the likeness and the key seem to disagree.',
-        'When that happens, go back to the key’s question and find the words in the case that answer it. They are: {cue:T1} Tess’s case has months of denial and a person who doubts her memory. This case has one reply with three parts. The case it really looks like is Marek’s at the bar: someone raised something he did, and he denied it, attacked, and said he was the one being picked on. So the key’s answer stands.'
+        'Now the second look: does this case look like one you know? "You have got that wrong" and "you are always muddled" may bring back Tess and the car repair first, and Tess’s case was {o:gaslight}. So here the likeness and the answer seem to disagree.',
+        'When that happens, go back to the question and find the words in the case that answer it. They are: {cue:T1} Tess’s case has months of denial and a person who doubts her memory. This case has one reply with three parts. The case it really looks like is Marek’s at the bar: someone raised something he did, and he denied it, attacked, and said he was the one being picked on. So the answer stands.'
       ]
     } },
 
   { id: 'recap', kind: 'recap',
     h: 'What to carry away',
-    link: 'You have now run the key on your own. This card puts the unit in one place, in the key’s words.',
+    link: 'You have now gone from the first question to the name on your own. This card puts the unit in one place.',
     carry: [
       'Say what is done to the other person, and point to the words in the case that show it. If you cannot point, you do not have an answer yet.',
       'Most cases are {o:ordexchange}. Start there, and give one of the other names only when you can point to all that it needs. How upset anyone is does not decide it, and neither does how kind or unkind the words sound.',
       'Some names need time or two halves. {o:gaslight} needs something that really happened, a denial that comes back over weeks or months, and the other person doubting their memory. {o:lovebomb} needs the flood and the pulling back. {o:darvo} needs one exchange with all three parts, and the case showing that the person did it. {o:projection} needs the case to show the accuser doing it, and nothing to show the other person doing it.',
-      'The key names what is done, never what kind of person did it and never what they meant. The same person can do one of these on Monday and have {o:ordexchange} on Tuesday.',
-      'The key sorts a short account of what was said or done. It cannot tell you whether you are safe. If you think someone is controlling you, or you are afraid of them, talk to someone you trust or to a professional. That is not something a key can settle.'
+      'The names are for what is done, never for what kind of person did it or what they meant. The same person can do one of these on Monday and have {o:ordexchange} on Tuesday.',
+      'The questions sort a short account of what was said or done. They cannot tell you whether you are safe. If you think someone is controlling you, or you are afraid of them, talk to someone you trust or to a professional. That is not something a set of questions can settle.'
     ] },
 
   { id: 'transfer', kind: 'transfer',

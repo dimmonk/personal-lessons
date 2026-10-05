@@ -19,7 +19,7 @@ FC.cards('math', 'u3', [
     ],
     add: [
       'The words from the last unit hold here. A procedure is the fixed set of steps that solves one kind of problem, and it gives the right answer whatever the numbers are. The working is the procedure carried out on one problem, with every number written down. A step is one stage of the working, named by what it is for. The arithmetic can be done on a calculator: what this unit practises is which steps to take, and why.',
-      'The four kinds are taught in the order of what they give: a calculation and the result it came to, a rate, two facts, and a calculation that has the missing number in it twice. Each is taught as in the last unit: first a problem of the kind and the idea behind its procedure, then two worked problems in different parts of life with every step computed, and then problems that you finish yourself. Two of the kinds can pass for another, and a card for each shows how. When all four have been taught, the key’s question gets its own card, and then the drill mixes all four, with problems from the earlier units among them.'
+      'The four kinds are taught in the order of what they give: a calculation and the result it came to, a rate, two facts, and a calculation that has the missing number in it twice. Each is taught as in the last unit: first a problem of the kind and the idea behind its procedure, then two worked problems in different parts of life with every step computed, and then problems that you finish yourself. Two of the kinds can pass for another, and a card for each shows how. When all four have been taught, the question gets its own card, and then the drill mixes all four, with problems from the earlier units among them.'
     ],
     map: { branch: 'unknown' } },
 
@@ -59,7 +59,7 @@ FC.cards('math', 'u3', [
       'The numbers change the working but never the steps. A problem of one kind with bigger numbers, or with three things done to the missing number instead of two, is worked with the same steps, with different working in them.',
       'Two things change on purpose from card to card: the words of the question (“how long”, “how much”, “how many”) and the setting. None of them tells you the kind. Only what the problem gives for the missing number to fit does.'
     ],
-    fixed: ['the question the key asks of every problem in this unit: {q:A1}'],
+    fixed: ['the question asked of every problem in this unit: {q:A1}'],
     varies: ['the story', 'the people', 'the size of the numbers', 'how many things are done to the missing number', 'the words of the question (“how long”, “how much”, “how many”)'] },
 
   { id: 'portrait-rearr', kind: 'portrait', outcome: 'rearr',

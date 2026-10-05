@@ -20,8 +20,8 @@ FC.cases('math', 'u3', [
       A1: ['says 10 mg of a medicine for every 25 kg of body weight', 'a patient of 100 kg']
     },
     reason: {
-      M1: 'The problem asks {cue:M1}, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no {t:righttriangle} or copy at another size, so the key’s first answer is {a:M1.unknown}.',
-      A1: 'The words {cue:A1} give so much for so many, 10 mg for every 25 kg, and a new amount of body weight. The sheet’s number, the third of five, is a number no step uses, and nothing is added on top, so the key’s answer is {a:A1.rate}.'
+      M1: 'The problem asks {cue:M1}, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no {t:righttriangle} or copy at another size, so the answer to the first question is {a:M1.unknown}.',
+      A1: 'The words {cue:A1} give so much for so many, 10 mg for every 25 kg, and a new amount of body weight. The sheet’s number, the third of five, is a number no step uses, and nothing is added on top, so the answer is {a:A1.rate}.'
     },
     not: {
       outcome: 'rearr',
@@ -80,7 +80,7 @@ FC.cases('math', 'u3', [
       A1: ['bought 20 items, some water bottles at €5 each and some caps at €8 each', 'paid €124']
     },
     reason: {
-      M1: 'The problem asks {cue:M1}, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no {t:righttriangle} or copy at another size, so the key’s first answer is {a:M1.unknown}.',
+      M1: 'The problem asks {cue:M1}, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no {t:righttriangle} or copy at another size, so the answer to the first question is {a:M1.unknown}.',
       A1: 'In {cue:A1}, two numbers are missing, and two facts are stated about the pair: how many there are in all, and what they come to in all. That is {a:A1.totals}.'
     },
     not: {
@@ -151,7 +151,7 @@ FC.cases('math', 'u3', [
       ]
     },
     reason: {
-      M1: 'The problem asks {cue:M1}, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no {t:righttriangle} or copy at another size, so the key’s first answer is {a:M1.unknown}.',
+      M1: 'The problem asks {cue:M1}, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no {t:righttriangle} or copy at another size, so the answer to the first question is {a:M1.unknown}.',
       A1: 'In {cue:A1}, two numbers are missing, and two facts are stated about the pair: how many there are in all, and what they come to in all. That is {a:A1.totals}.'
     },
     not: {
@@ -219,7 +219,7 @@ FC.cases('math', 'u3', [
       A1: ['holds 16 bicycles and tricycles', 'the wheels number 41 in all']
     },
     reason: {
-      M1: 'The problem asks {cue:M1}, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no {t:righttriangle} or copy at another size, so the key’s first answer is {a:M1.unknown}.',
+      M1: 'The problem asks {cue:M1}, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no {t:righttriangle} or copy at another size, so the answer to the first question is {a:M1.unknown}.',
       A1: 'In {cue:A1}, two numbers are missing, how many bicycles and how many tricycles, and two facts are stated about them: 16 in all and 41 wheels in all. The wheels are what the second fact adds up, as prices would be. That is {a:A1.totals}.'
     },
     not: {

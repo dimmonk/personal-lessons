@@ -86,7 +86,7 @@ FC.cases('wealth', 'u3', [
             S1: ['runs the pharmacy company she bought', 'which holds her shares in the company as security', 'Her savings are £20,000, and her household spends £40,000 a year'] },
     reason: { D1: 'A business she runs is most of what she owns: {cue:D1}. £450,000 out of £520,000 is 87%.',
               S1: 'She runs the business, and the loan is against its shares: {cue:S1}. That is one of {t:threesupports} missing, and her savings, about six months, are a second. The bank’s power to demand the money back is part of the same answer.' },
-    not: { outcome: 'deleverage', why: 'A loan the lender could use is in the case, and it looks like the answer for a loan. But the loan is against the shares of a business she runs, and the key gives the answer for the business.' },
+    not: { outcome: 'deleverage', why: 'A loan the lender could use is in the case, and it looks like the answer for a loan. But the loan is against the shares of a business she runs, and the answer is the one for the business.' },
     wouldChange: 'If she did not run the pharmacy, and the loan were against shares in it that she held as an investment, it would be {a:S1.riskyloan}.' },
 
   { id: 'w3-r-mis-del', use: 'drill', tier: 'misleading', setting: 'property', topic: 'a restaurant building and a loan on demand', echo: 'w3-h-sup-1',
@@ -106,7 +106,7 @@ FC.cases('wealth', 'u3', [
     cues: { D1: 'a tenant badly hurt in a fall in the top flat could win £2,500,000',
             S1: ['a tenant badly hurt in a fall in the top flat could win £2,500,000', 'Her insurance pays up to £400,000 on any one claim'] },
     reason: { D1: 'A demand could reach everything she owns: {cue:D1}. £2,500,000 is more than the £1,500,000 she has in all.',
-              S1: 'One claim could be far bigger than the insurance: {cue:S1}. £2,500,000 less £400,000 leaves £2,100,000 uncovered. The flats in one name are in the case too, and when a case shows both, the key chooses the claim.' },
+              S1: 'One claim could be far bigger than the insurance: {cue:S1}. £2,500,000 less £400,000 leaves £2,100,000 uncovered. The flats in one name are in the case too, and when a case shows both, the answer is the claim.' },
     not: { outcome: 'entity', why: 'Four flats and a home all in one name is what the answer for properties in one name looks like, and it is true here. But the case also shows {t:claim} far bigger than the insurance, and that comes first.' },
     wouldChange: 'If the insurance paid up to £4,000,000 and each flat were in a company of its own, it would be {a:S1.madesafe}.' },
 

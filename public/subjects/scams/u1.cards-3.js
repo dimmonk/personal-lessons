@@ -26,13 +26,13 @@ FC.cards('scams', 'u1', [
     ],
     explain: [
       'What you are shown is a request to put something on a device: here, a program, downloaded on the strength of a phone call. That is all a message of this kind is made of: one phone or computer, and a request to install, open or share something that reaches into it.',
-      'The request can take three forms, and the key counts all three as one kind. You can be asked to install a program or an app. You can be asked to open or run a file, such as an attachment. Or you can be asked to let someone watch or control your device from far away, which is {t:screenshare}. The key also counts a warning that says your device has a problem and gives you someone to ring to fix it, because the person you reach will ask for one of the three.',
+      'The request can take three forms, and all three count as one kind. You can be asked to install a program or an app. You can be asked to open or run a file, such as an attachment. Or you can be asked to let someone watch or control your device from far away, which is {t:screenshare}. A warning that says your device has a problem and gives you someone to ring to fix it counts as this kind too, because the person you reach will ask for one of the three.',
       'It is a kind of its own because of how far it reaches. Once a program is installed, or someone can watch your device, the risk is no longer one account but everything the device holds. They can read your accounts, copy your passwords as you type them, and stay on the device after the call has ended.',
       'Here again the story does not decide it. Diane’s caller might be a real engineer, and the case would be the same. What decides it is the request: a program to download.'
     ],
     feature: { step: 'D1', option: 'device' },
     name: [
-      'The key’s answer, and the name of this kind, is {a:D1.device}. After this answer the key asks a further question that gives a finer name: the name of a kind of scam, or of the real thing that the scams copy.'
+      'The answer, and the name of this kind, is {a:D1.device}. After this answer there is a further question that gives a finer name: the name of a kind of scam, or of the real thing that the scams copy.'
     ] },
 
   { id: 'again-device', kind: 'again', family: 'device',
@@ -60,7 +60,7 @@ FC.cards('scams', 'u1', [
     ],
     wild: ['"Please download this program so I can fix it from here."', '"Open the attached file and click Enable Editing."', '"Press Share so that I can see your screen."', '"Your computer is infected. Call this number now."', '"An update is ready. Install now?"'],
     self: 'Updates on your phone and your games console, work software that your employer pushes out, a helper on the end of a phone line: these are everyday requests of this kind, and most of them are fine.',
-    ask: '"Is anything being put on my phone or computer, opened on it, or shown from it?" If it is, the key’s answer is the one for a request about your device.' },
+    ask: '"Is anything being put on my phone or computer, opened on it, or shown from it?" If it is, the answer is the one for a request about your device.' },
 
   { id: 'check-device', kind: 'check', after: 'device',
     case: 'g-console-update',
@@ -72,8 +72,8 @@ FC.cards('scams', 'u1', [
     instruction: 'Both cases are about Ravi and a photo editor. Compare one thing: what would pressing the button do, put a program on his computer or let an app use his account?',
     prompt: { kind: 'which', option: 'D1.device', answer: 'g-installer' },
     difference: [
-      'In Case A Ravi has a program file from the maker’s website, and the box asks him to install it on his computer. The words "allow this app to make changes to your device" are the computer’s way of asking whether he is sure. The request is to put a program on his device. The key’s answer is {a:D1.device}.',
-      'In Case B he is using the web version, and the box comes from his email account and asks him to allow an app to read and send his mail. Nothing is put on his computer. The request is for the app to be let into an account. The key’s answer is {a:D1.access}.',
+      'In Case A Ravi has a program file from the maker’s website, and the box asks him to install it on his computer. The words "allow this app to make changes to your device" are the computer’s way of asking whether he is sure. The request is to put a program on his device. The answer is {a:D1.device}.',
+      'In Case B he is using the web version, and the box comes from his email account and asks him to allow an app to read and send his mail. Nothing is put on his computer. The request is for the app to be let into an account. The answer is {a:D1.access}.',
       'Both boxes say "allow", and both name the same app. What they ask is different: one puts something onto the device, and the other opens an account to an app.'
     ] }
 ]);

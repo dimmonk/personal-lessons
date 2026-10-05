@@ -38,7 +38,7 @@ FC.cases('psychology', 'u3', [
     cues: { D1: "At the tenants' meeting, Rhona says Bill 'never pays his share of the cleaning'",
             T1: ["Rhona says Bill 'never pays his share of the cleaning'", 'Rhona has paid nothing for six months and that Bill has paid every month'] },
     reason: { D1: 'One person is saying something to another about what has happened between them, at their meeting: {cue:D1}.',
-              T1: 'Rhona accuses Bill: {cue:T1}. The ledger shows the accuser doing it and the person accused doing the opposite, and nobody had raised it with her.' },
+              T1: 'Rhona accuses Bill: {cue:T1}. The case shows the accuser doing it and the person accused doing the opposite, and nobody had raised it with her.' },
     not: { outcome: 'darvo', why: 'Nobody had asked Rhona about her payments, so she is not answering anything by denying, attacking and playing the one wronged. The accusation is where the case starts.' } },
 
   /* ---------- Stage four, clean: the whole route, no help ---------- */

@@ -63,8 +63,8 @@ FC.cards('math', 'u2', [
     instruction: 'Both problems are about a tram and the number 7. Compare one thing: are there two things that each repeat, or one loop and a count that goes round it?',
     prompt: { kind: 'which', option: 'W1.cycle', answer: 'la-tram-modrem' },
     difference: [
-      'In Case A a tram stops every 7 minutes and a bus every 10 minutes, and the question is when they next stop together. Two things repeat, and the key’s answer is {a:W1.together}. The answer is 70 minutes.',
-      'In Case B there is one loop, the tram line of 7 stops, and a count of 100 stops that goes round it, and the question is where the count ends. The key’s answer is {a:W1.cycle}. 100 stops are 14 whole loops of 7, which is 98 stops, with 2 left over, so the tram ends 2 stops on from stop 1, at stop 3.',
+      'In Case A a tram stops every 7 minutes and a bus every 10 minutes, and the question is when they next stop together. Two things repeat, and the answer is {a:W1.together}. The answer is 70 minutes.',
+      'In Case B there is one loop, the tram line of 7 stops, and a count of 100 stops that goes round it, and the question is where the count ends. The answer is {a:W1.cycle}. 100 stops are 14 whole loops of 7, which is 98 stops, with 2 left over, so the tram ends 2 stops on from stop 1, at stop 3.',
       'The 7 is a repeat in A and the size of a loop in B. What differs is whether two repeats have to be brought together, or one count has to be ended on a loop.'
     ] },
 
@@ -127,8 +127,8 @@ FC.cards('math', 'u2', [
     instruction: 'Both problems are about a mosaic maker and the number 29. Compare one thing: is the problem about sharing 29 things out in equal groups, or about writing down the exact value of a number?',
     prompt: { kind: 'which', option: 'W1.exact', answer: 'la-mosaic-irrat' },
     difference: [
-      'In Case A the maker has 29 tiles and asks whether they can be laid in equal rows, with more than one row and more than one tile in each. A count is shared out, and the key’s answer is {a:W1.split}. The answer is no, because 29 is a {t:prime}.',
-      'In Case B the same 29 is an area, and the question is whether the side, the {t:sqroot} of 29, can be written exactly. The key’s answer is {a:W1.exact}, and the answer is no again.',
+      'In Case A the maker has 29 tiles and asks whether they can be laid in equal rows, with more than one row and more than one tile in each. A count is shared out, and the answer is {a:W1.split}. The answer is no, because 29 is a {t:prime}.',
+      'In Case B the same 29 is an area, and the question is whether the side, the {t:sqroot} of 29, can be written exactly. The answer is {a:W1.exact}, and the answer is no again.',
       'The two problems give the same number and the same answer for different reasons: 29 cannot be shared out in equal rows, and its root cannot be written exactly. Only what the problem asks tells them apart.'
     ] }
 ]);

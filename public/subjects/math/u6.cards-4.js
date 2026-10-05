@@ -62,8 +62,8 @@ FC.cards('math', 'u6', [
     instruction: 'Both problems are about the same printer and the same postcard, enlarged from 10 cm wide to 40 cm wide. Compare one thing: what does each problem ask for?',
     prompt: { kind: 'which', option: 'S2.room', answer: 'm6-la-poster-sqcube' },
     difference: [
-      'In Case A the printer asks how high the poster is. That is how long a part is, so the key’s answer is {a:S2.length}. The poster is 40 ÷ 10 = 4 times longer than the postcard in every direction, so its height is 15 × 4 = 60 cm: the number of times longer is used once.',
-      'In Case B the printer asks how much ink the poster uses, when the postcard uses 2 g. Ink covers a surface, so the key’s answer is {a:S2.room}. The same 4 times longer gives 4 × 4 = 16 times as much ink, so the poster uses 2 × 16 = 32 g: the number of times longer is multiplied by itself, because a surface has two directions.',
+      'In Case A the printer asks how high the poster is. That is how long a part is, so the answer is {a:S2.length}. The poster is 40 ÷ 10 = 4 times longer than the postcard in every direction, so its height is 15 × 4 = 60 cm: the number of times longer is used once.',
+      'In Case B the printer asks how much ink the poster uses, when the postcard uses 2 g. Ink covers a surface, so the answer is {a:S2.room}. The same 4 times longer gives 4 × 4 = 16 times as much ink, so the poster uses 2 × 16 = 32 g: the number of times longer is multiplied by itself, because a surface has two directions.',
       'Both problems start from the same two things and the same 4 times longer. What differs is only what is asked: a length, which multiplies once, or an area, which multiplies by itself.'
     ] }
 ]);

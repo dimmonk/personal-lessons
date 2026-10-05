@@ -6,14 +6,14 @@
 
 FC.cards('ideology', 'u1', [
 
-  /* ---------- The key's first question, as a question ---------- */
+  /* ---------- The first question, as a question ---------- */
   { id: 'q-sides', kind: 'question', step: 'D1',
     h: 'The question you have been answering all along',
-    link: 'Since the depot leaflet you have seen the key’s question at the foot of each new answer, with one answer under it. This card puts the question and its five answers in one place, as the key shows them, and says why the key asks it before anything else.',
+    link: 'Since the depot leaflet you have seen the question at the foot of each new answer, with one answer under it. This card puts the question and its five answers in one place, worded as it always is, and says why it is asked before anything else.',
     decides: [
       'A text can only be read for what it is about. If you take a notice about a lift for a text on the side of the workers, you go looking for owners that are not there. If you take a text about what every person is owed for a text about one people, you change whom it speaks for. Getting the first answer wrong means asking the wrong questions next, however carefully you ask them.',
       'That is why this question comes first, before any finer name, and why every case in this subject starts with it. Each of the first four answers is where a different {t:ideology} starts.',
-      'In this unit it is the only question, so its answer is the name. In the rest of the subject, each of the first four answers is followed by questions that lead to a finer name, and the fifth answer is followed by nothing. The answers you give on the way to a name are called your route: this first answer, and then the answers to the questions that follow it. Once a route has more than one answer, two things are marked separately: the name you give a case, and your route to it. A right name reached by a wrong answer to this first question counts as a miss, which is why the first question gets a whole unit of practice.'
+      'In this unit it is the only question, so its answer is the name. In the rest of the subject, each of the first four answers is followed by questions that lead to a finer name, and the fifth answer is followed by nothing. The answers you give on the way to a name are this first answer, and then the answers to the questions that follow it. Once there is more than one answer on the way to a name, two things are marked separately: the name you give a case, and your answers on the way to it. A right name reached by a wrong answer to this first question counts as a miss, which is why the first question gets a whole unit of practice.'
     ],
     how: [
       'Read the whole text before you answer, the last sentence included. The side a text takes is often in the last line, and a notice can end in an order. Then, for each answer in turn, ask whether the text shows it, and look for the words that show it. What you must be able to point to for each is printed here.',
@@ -25,8 +25,8 @@ FC.cards('ideology', 'u1', [
       'Whichever answer you give, put your finger on the words that show it: the two groups and the side taken, the people put first, the old ways held up, what is owed to every person, or the plain matter of what happens. If you cannot point, you do not have an answer yet.'
     ],
     whenBoth: [
-      'Some texts show two of the answers at once. You have met six such texts: the mill-and-port meeting, the loom hands’ newsletter, the bishop’s letter, the teachers’ leaflet, the candidate’s letter and the speech about the two duties. In each the key chose one answer, and each choice is printed below with the question that tells the pair apart.',
-      'The key’s decisions run in one order. {a:D1.class} wins over every other answer. {a:D1.tradition} wins over {a:D1.nation} and {a:D1.rights}. {a:D1.nation} wins over {a:D1.rights}. So when you meet two answers in one text, the one that comes first in that order is the key’s answer, and the other gives way.'
+      'Some texts show two of the answers at once. You have met six such texts: the mill-and-port meeting, the loom hands’ newsletter, the bishop’s letter, the teachers’ leaflet, the candidate’s letter and the speech about the two duties. In each, one answer won, and each choice is printed below with the question that tells the pair apart.',
+      'The decisions run in one order. {a:D1.class} wins over every other answer. {a:D1.tradition} wins over {a:D1.nation} and {a:D1.rights}. {a:D1.nation} wins over {a:D1.rights}. So when you meet two answers in one text, the one that comes first in that order is the answer, and the other gives way.'
     ] },
 
   { id: 'check-sides', kind: 'check', after: 'D1',
@@ -36,7 +36,7 @@ FC.cards('ideology', 'u1', [
   /* ---------- Two whole cases, watched ---------- */
   { id: 'worked-homes', kind: 'worked',
     h: 'A whole case, from the question to the answer',
-    link: 'You have the five answers and the key’s question about them. Before the drill, watch two cases being run from the top. You are not asked anything until the end of each.',
+    link: 'You have the five answers and the question about them. Before the drill, watch two cases being run from the top. You are not asked anything until the end of each.',
     case: 'i-w-clean',
     steps: [
       { step: 'D1',
@@ -60,14 +60,14 @@ FC.cards('ideology', 'u1', [
         answer: 'b' },
       reason: [
         'For {a:D1.nation} you must be able to point to this: {needs:nation}. The letter does mention the country, and that is why it can look like the second answer. But it does not speak for one people. It says that a fair chance at a home is owed to every person alike, whoever they are and wherever they were born, and that a country that sets this first has its priorities right. The country in the letter is the one that should keep the promise. It is not what the letter puts first.',
-        'It is the question from the two texts about race: {test:nation~rights} Here nothing places one people above the others, and what is put first is what every person is owed, so the key’s answer is {a:D1.rights}.'
+        'It is the question from the two texts about race: {test:nation~rights} Here nothing places one people above the others, and what is put first is what every person is owed, so the answer is {a:D1.rights}.'
       ]
     },
     impression: {
       resembles: 'i-rights-again',
       text: [
-        'The key has given its answer. Now take a second look of a different kind: does this case look like one you know? It should bring back the speech about every child. There too, a text said what every person is owed, whatever their name or bank balance, and said that it comes first.',
-        'Here the key and the likeness agree, so the answer stands. The key’s question comes first, because it makes you point at words in the text. The likeness is only a second look. When the two disagree, do not pick the one you prefer. Go back to the key’s question and find the words in the text that answer it. The second whole case shows how.'
+        'The first question has given its answer. Now take a second look of a different kind: does this case look like one you know? It should bring back the speech about every child. There too, a text said what every person is owed, whatever their name or bank balance, and said that it comes first.',
+        'Here the answer and the likeness agree, so it stands. The question comes first, because it makes you point at words in the text. The likeness is only a second look. When the two disagree, do not pick the one you prefer. Go back to the question and find the words in the text that answer it. The second whole case shows how.'
       ]
     } },
 
@@ -96,29 +96,29 @@ FC.cards('ideology', 'u1', [
         answer: 'b' },
       reason: [
         'For {a:D1.nation} you must be able to point to this: {needs:nation}. The speech uses the words nation and country, but it never speaks for one people. It does the opposite. It says the nation gave nothing, and that the wage was won from employers. It splits the country into those who work and those who own, and takes the first side.',
-        'It is the question from the mill-and-port meeting: {test:class~nation} Here the line runs between those who work and those who own, so the key’s answer is {a:D1.class}.'
+        'It is the question from the mill-and-port meeting: {test:class~nation} Here the line runs between those who work and those who own, so the answer is {a:D1.class}.'
       ]
     },
     impression: {
       resembles: 'i-whouse', first: 'i-speech-nation',
       text: [
-        'Now the second look: does this case look like one you know? A speech that says "nation" and "country" may bring back the bridge speech first, and the bridge speech was {a:D1.nation}. So here the likeness and the key seem to disagree.',
-        'When that happens, go back to the key’s question and find the words in the text that answer it. They are {cue:D1}. The bridge speech has nothing like them: it speaks of one people, and it has no owners and no workers in it. The depot leaflet does: drivers and loaders on one side, owners on the other, and the text with the first. So the case this one really looks like is the depot leaflet, and the key’s answer stands.'
+        'Now the second look: does this case look like one you know? A speech that says "nation" and "country" may bring back the bridge speech first, and the bridge speech was {a:D1.nation}. So here the likeness and the answer seem to disagree.',
+        'When that happens, go back to the question and find the words in the text that answer it. They are {cue:D1}. The bridge speech has nothing like them: it speaks of one people, and it has no owners and no workers in it. The depot leaflet does: drivers and loaders on one side, owners on the other, and the text with the first. So the case this one really looks like is the depot leaflet, and the answer stands.'
       ]
     } },
 
   /* ---------- After the drill ---------- */
   { id: 'recap-sides', kind: 'recap',
     h: 'What to carry away',
-    link: 'You have now answered the key’s first question on your own. This card puts the unit in one place, in the key’s words.',
+    link: 'You have now answered the first question on your own. This card puts the unit in one place.',
     carry: [
       'Before any name, ask who or what the text puts first, and point to the words that show it. If you cannot point, you do not have an answer yet.',
       'There are five answers. Four name a side or a thing put first: {a:D1.class}, {a:D1.nation}, {a:D1.tradition} and {a:D1.rights}. The fifth, {a:D1.none}, is for a text that only says what will happen or who is in charge.',
-      'The answer is not a verdict. A text can be fair or unfair, calm or angry, and still get any of the five. Whether it is right is a separate question that no part of the key asks.',
+      'The answer is not a verdict. A text can be fair or unfair, calm or angry, and still get any of the five. Whether it is right is a separate question that none of the questions asks.',
       'A word such as "national", "workers" or "church" is not an answer. The words that decide are the ones that say who or what is put first.',
-      'When a text shows two answers, the key chooses. The order is {a:D1.class} first, then {a:D1.tradition}, then {a:D1.nation}, then {a:D1.rights}, and the first one a text shows is the key’s answer.',
+      'When a text shows two answers, one of them wins. The order is {a:D1.class} first, then {a:D1.tradition}, then {a:D1.nation}, then {a:D1.rights}, and the first one a text shows is the answer.',
       'A name thrown at a text is not a description of it. The first answer is where a name starts, and a name has to be earned from what the text itself says.',
-      'Every case in this subject starts with this question. Your answer to it is the first part of your route to a name.'
+      'Every case in this subject starts with this question. Your answer to it is the first of your answers on the way to a name.'
     ] },
 
   { id: 'transfer-sides', kind: 'transfer',

@@ -20,8 +20,8 @@ FC.cards('scams', 'u5', [
       'Those are the two things this unit teaches you to look at, and the three names are the three things you can find.'
     ],
     add: [
-      'The unit has three parts. The first puts a real request next to the copy that asks for the same papers, because the facts asked for are often identical and what differs is who began it. The second is about a friendly chat that asks about your life and nothing else, and where such a chat usually goes. The third puts the key’s two questions in one place, shows three whole cases from start to finish, and then lets you run cases yourself.',
-      'You have already learned to answer the key’s first question, which sends every case in this unit to the same answer. The two questions after it are new here. One of them, {q:F2}, you may have met before: it is the same question that was asked about a sign-in page, now asked about a request for facts.'
+      'The unit has three parts. The first puts a real request next to the copy that asks for the same papers, because the facts asked for are often identical and what differs is who began it. The second is about a friendly chat that asks about your life and nothing else, and where such a chat usually goes. The third puts the two questions in one place, shows three whole cases from start to finish, and then lets you run cases yourself.',
+      'You have already learned to answer the first question, which sends every case in this unit to the same answer. The two questions after it are new here. One of them, {q:F2}, you may have met before: it is the same question that was asked about a sign-in page, now asked about a request for facts.'
     ],
     map: { branch: 'details' } },
 
@@ -43,7 +43,7 @@ FC.cards('scams', 'u5', [
     ],
     feature: { step: 'F2', option: 'fits' },
     name: [
-      'The name for this is {o:realdetails}. It is the one real thing among the three names in this unit, and the key includes it so that you can say "this one is fine" as exactly as you can say what is wrong elsewhere.'
+      'The name for this is {o:realdetails}. It is the one real thing among the three names in this unit, and it is included so that you can say "this one is fine" as exactly as you can say what is wrong elsewhere.'
     ] },
 
   { id: 'again-realdetails', kind: 'again', outcome: 'realdetails',
@@ -52,7 +52,7 @@ FC.cards('scams', 'u5', [
     instruction: 'Find what the two cases share. Ignore the story (a building society, a surgery) and ignore which facts are asked for. Look at one thing only: who began it?',
     prompt: { kind: 'phrase', answer: 'he walks into the Marlow Surgery to register as a patient' },
     shared: [
-      'Both people began it themselves. Chen decided to open an account and went to the building society’s own site. Reg decided to see a doctor and walked into the surgery, the company’s own office in person, which is one of the ways the key counts as one you already had. Neither was approached. In both, what is asked for is what the job needs: proof of who Chen is for an account, and a few facts to set up Reg’s records. In both, the other side says why it asks.',
+      'Both people began it themselves. Chen decided to open an account and went to the building society’s own site. Reg decided to see a doctor and walked into the surgery, the company’s own office in person, which counts as one of the ways you already had. Neither was approached. In both, what is asked for is what the job needs: proof of who Chen is for an account, and a few facts to set up Reg’s records. In both, the other side says why it asks.',
       'The stories share nothing else. So this is not about banks, or doctors, or about the facts themselves: the same date of birth and the same address are asked for in both. It holds wherever you began something yourself, reached the other side through {t:already}, and are asked for no more than the job needs. That is what {o:realdetails} names.'
     ] },
 
@@ -60,11 +60,11 @@ FC.cards('scams', 'u5', [
     h: 'The story and the facts do not decide the answer',
     link: 'The last card asked you to ignore the story and the list of facts. That instruction holds for the whole unit, so here it is once in full.',
     body: [
-      'Every case in this unit has two layers. The top layer is the story: a bank, a doctor, a job, a parcel, a grant, a friend of a friend. The layer underneath is what the person is asked to tell, and who began it. Whatever the story, the key asks about the layer underneath.',
+      'Every case in this unit has two layers. The top layer is the story: a bank, a doctor, a job, a parcel, a grant, a friend of a friend. The layer underneath is what the person is asked to tell, and who began it. Whatever the story, the question is about the layer underneath.',
       'The same facts turn up in all three names. A date of birth and an address are asked for by the surgery, by a copy of a bank, and by a stranger who wants to know where you live. A request for a passport can be real in one case and a copy in the next. So the facts alone never tell you which name you have.',
       'From here on the cases change on purpose in four ways: the story, how official the other side sounds, how much is asked for, and whether the request is real. Some cases are real requests and some are copies, and the question you put to them is the same. Telling the two apart is what the rest of this unit is for.'
     ],
-    fixed: ['who began it, and whether what is asked is what the job needs, which is what the key asks: {q:F2}'],
+    fixed: ['who began it, and whether what is asked is what the job needs, which is the question: {q:F2}'],
     varies: ['the story and the sender', 'how official it sounds', 'how many facts are asked for', 'whether the request is real or a copy'] },
 
   { id: 'portrait-realdetails', kind: 'portrait', outcome: 'realdetails',
@@ -77,12 +77,12 @@ FC.cards('scams', 'u5', [
       'A real organisation is glad to be checked. It will give you a number to ring, let you do it in its app, or let you walk into its office.'
     ],
     not: [
-      'It is not safe merely because the other side sounds official, knows your name, or is calm and polite. All of those can be copied, and none of them is what the key asks about.',
+      'It is not safe merely because the other side sounds official, knows your name, or is calm and polite. All of those can be copied, and none of them is what the question asks about.',
       'And it is not suspect merely because a lot is asked for or because papers are asked for. A request that you did not begin, which asks for the same papers, is a different name, and one that asks for more than the job needs, even though you began it, is a different name too.'
     ],
     wild: ['"Can I take your date of birth and the first line of your address?"', '"We need to see photo ID to open the account."', '"Please confirm your name, so I can find your record."', '"You can do this at our desk or on our website, whichever you prefer."'],
     self: 'You meet it whenever you register with a doctor, open an account, apply for a job, rent a flat, move house, or ring a company about something you own.',
-    ask: '"Did I begin this, through a way I already had, and does what they ask for match what I came to do?" If both are yes, the key’s answer is {a:F2.fits}.',
+    ask: '"Did I begin this, through a way I already had, and does what they ask for match what I came to do?" If both are yes, the answer is {a:F2.fits}.',
     act: [
       'Give what the job needs and no more. If a form asks for something that the job does not seem to need, ask why before you fill it in, and leave the line blank until you have an answer that fits.',
       'Give the facts in the other side’s own place: their own site, their own app, their own desk, or a phone line whose number you already had. If you are unsure whether you are in the right place, stop and use {t:check} before you type.',

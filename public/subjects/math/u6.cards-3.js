@@ -61,15 +61,15 @@ FC.cards('math', 'u6', [
     h: 'A shadow, which shows a triangle and is also a copy',
     link: 'The first kind of problem in this unit had a triangle with a square corner and two of its sides. A shadow brings that triangle into a problem of the third kind, and the problem then shows both.',
     case: 'm6-ex-shadow',
-    setup: 'The problem gives a woman and her shadow: her height, 1.7 m, and the length of her shadow, 2 m. She stands straight up and the ground is level, so her height, her shadow and the line from the top of her head to the tip of her shadow make a triangle with a square corner, and two of its sides are given. That is what you point to for {a:S1.twosides}. Yet the key’s answer for this case is {a:S1.matching}.',
+    setup: 'The problem gives a woman and her shadow: her height, 1.7 m, and the length of her shadow, 2 m. She stands straight up and the ground is level, so her height, her shadow and the line from the top of her head to the tip of her shadow make a triangle with a square corner, and two of its sides are given. That is what you point to for {a:S1.twosides}. Yet the answer for this case is {a:S1.matching}.',
     prompt: { kind: 'phrase', answer: 'At the same moment a tree beside her casts a shadow 14 m long' },
     because: [
       'Look at what is wanted. The triangle that is given is the woman’s, and the length wanted, the height of the tree, is not a side of it. It is a side of a second triangle, the tree’s, made by the tree, its shadow and the line from the top of the tree to the tip of its shadow. The third side of the woman’s own triangle, the line from her head to the tip of her shadow, is a length that nobody asks for.',
       'The two triangles have exactly the same shape, because the sun is at the same angle for both at the same moment. So the woman and the tree are two things of exactly the same shape at different sizes, and a length is measured on both: the shadow, 2 m for the woman and 14 m for the tree. The tree’s shadow is 14 ÷ 2 = 7 times as long, so the tree is 7 times as tall as the woman: 1.7 × 7 = 11.9 m.',
-      'So the problem shows both: two sides of a triangle with a square corner, and a second thing that is an exact copy at another size. When it shows both, the key’s answer is {a:S1.matching}.'
+      'So the problem shows both: two sides of a triangle with a square corner, and a second thing that is an exact copy at another size. When it shows both, the answer is {a:S1.matching}.'
     ],
     take: [
-      'This is the key’s decision, and the test is where the length wanted is. If the length wanted is the third side of the triangle whose two sides are given, the answer is {a:S1.twosides}: for example, how far it is from the top of her head to the tip of her shadow. If the length wanted is on a second thing of the same shape, the answer is {a:S1.matching}.',
+      'This is a decision made for the questions, and the test is where the length wanted is. If the length wanted is the third side of the triangle whose two sides are given, the answer is {a:S1.twosides}: for example, how far it is from the top of her head to the tip of her shadow. If the length wanted is on a second thing of the same shape, the answer is {a:S1.matching}.',
       'A model or a shadow always has this second thing. If a problem gave only the woman and her shadow and asked for the line from her head to the tip of the shadow, there would be no second thing, and the problem would be about a triangle with a square corner and two of its sides.'
     ] },
 
@@ -80,23 +80,23 @@ FC.cards('math', 'u6', [
     instruction: 'Both problems are about the same harbour pilot and the same lighthouse, and both ask how tall something is. Compare one thing: what is given that lets the height be found?',
     prompt: { kind: 'which', option: 'S1.matching', answer: 'm6-la-lighthouse-similar' },
     difference: [
-      'In Case A the pilot stands 80 m from the foot of the lighthouse and sees the lamp at 25° above level ground. That is one length and one angle in degrees, besides the square corner. The key’s answer is {a:S1.sideangle}, and the procedure uses the tan key: 80 × tan 25° = 80 × 0.4663 = 37.3 m, the height of the lamp.',
-      'In Case B the pilot has a postcard that is an exact copy of the lighthouse. On the card the lighthouse is 12 cm tall and its door is 0.5 cm tall, and the real door is 2 m tall. There is no angle. There are two things of exactly the same shape at different sizes, with the door measured on both. The key’s answer is {a:S1.matching}. The real door is 200 cm ÷ 0.5 cm = 400 times longer than the door on the card, so the real lighthouse is 12 × 400 = 4,800 cm, which is 48 m tall.',
+      'In Case A the pilot stands 80 m from the foot of the lighthouse and sees the lamp at 25° above level ground. That is one length and one angle in degrees, besides the square corner. The answer is {a:S1.sideangle}, and the procedure uses the tan button: 80 × tan 25° = 80 × 0.4663 = 37.3 m, the height of the lamp.',
+      'In Case B the pilot has a postcard that is an exact copy of the lighthouse. On the card the lighthouse is 12 cm tall and its door is 0.5 cm tall, and the real door is 2 m tall. There is no angle. There are two things of exactly the same shape at different sizes, with the door measured on both. The answer is {a:S1.matching}. The real door is 200 cm ÷ 0.5 cm = 400 times longer than the door on the card, so the real lighthouse is 12 × 400 = 4,800 cm, which is 48 m tall.',
       'Both find a height that nobody climbs up to measure. What differs is how: Case A uses an angle, and Case B uses a copy with a part measured on both.'
     ] },
 
-  /* ---------- The key’s first question for this unit, now that all of its answers have been met ---------- */
+  /* ---------- The first question for this unit, now that all of its answers have been met ---------- */
   { id: 'q-s1', kind: 'question', step: 'S1',
     h: 'What the problem gives you: the first of this unit’s two questions',
-    link: 'At the foot of each kind’s first card you saw the key’s question with one answer under it. This card puts the question and its three answers in one place, as the key shows them, and says why the key asks it before any working.',
+    link: 'At the foot of each kind’s first card you saw the question with one answer under it. This card puts the question and its three answers in one place and says why it is asked before any working.',
     decides: [
       'A procedure for the wrong kind still gives a number, and nothing in the number says that it is wrong. The numbers cannot tell you the kind: 3 and 4 can be two sides of a triangle with a square corner, or a part measured on a model and the same part measured on the real thing. What the problem gives you can: two sides of a triangle, one side and an angle, or two things of the same shape.',
-      'This question comes first because it sorts the kinds that start from different things. It does not finish the job on its own: the answer for two things of the same shape keeps two kinds, and the key asks a second question of these problems, whose answer you have already seen at the foot of each kind’s first card. Your route is the answer to the key’s first question, then this one, then that one.'
+      'This question comes first because it sorts the kinds that start from different things. It does not finish the job on its own: the answer for two things of the same shape keeps two kinds, and a second question is asked of these problems, whose answer you have already seen at the foot of each kind’s first card. Your answers on the way are your answer to the first question, then to this one, then to that one.'
     ],
     how: [
       'Look for what the problem gives you, and not for what it asks. Read the numbers in the problem and say what each one is: a side of a triangle with a square corner, an angle in degrees, or a length on one of two copies.',
       'Two sides of a triangle with a square corner, and no angle in degrees besides the square corner, is {a:S1.twosides}. One side and one angle in degrees is {a:S1.sideangle}. A copy of something at another size, with a length measured on both, is {a:S1.matching}.',
-      'Put your finger on the words that show it. If a problem shows two of the answers, as the shadow did, the key’s tie-break decides, and the test is where the length wanted is.'
+      'Put your finger on the words that show it. If a problem shows two of the answers, as the shadow did, the tie-break decides, and the test is where the length wanted is.'
     ],
     whenBoth: 'Some problems show two of the answers at once, and some pairs of kinds share a story or even the same numbers. Each of those pairs has been set side by side in this unit, and each has a question that tells it apart.' },
 

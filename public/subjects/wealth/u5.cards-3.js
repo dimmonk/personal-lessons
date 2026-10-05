@@ -77,8 +77,8 @@ FC.cards('wealth', 'u5', [
     instruction: 'Both cases are about Ellis, a widower of 74 with current papers. Compare one thing: his estate set against the £500,000 line, and what he has to spare.',
     prompt: { kind: 'which', option: 'H1.bigestate', answer: 'la-estate-high' },
     difference: [
-      'In Case A Ellis’s estate is £1,200,000. That is £700,000 above the line, and the tax would be £280,000. His pension also pays him £20,000 a year more than he spends, so there is money to spare. The key’s answer is {a:H1.bigestate}, and the case is {o:gifting}.',
-      'In Case B the estate is £430,000, which is £70,000 below the line, so the tax would be £0. His pension pays him just what he spends, so there is nothing to give. The key’s answer is {a:H1.inorder}, and the case is {o:simple}.',
+      'In Case A Ellis’s estate is £1,200,000. That is £700,000 above the line, and the tax would be £280,000. His pension also pays him £20,000 a year more than he spends, so there is money to spare. The answer is {a:H1.bigestate}, and the case is {o:gifting}.',
+      'In Case B the estate is £430,000, which is £70,000 below the line, so the tax would be £0. His pension pays him just what he spends, so there is nothing to give. The answer is {a:H1.inorder}, and the case is {o:simple}.',
       'Everything else is the same: the age, the widowhood, the papers. Only the size of the estate and what is left over differ.'
     ] }
 ]);

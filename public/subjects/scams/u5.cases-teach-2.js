@@ -85,7 +85,7 @@ FC.cases('scams', 'u5', [
     text: "Aisha has ordered a sofa from the Harrow Furniture website, which she reached by typing its address herself. At the checkout the page asks for her delivery address and a phone number for the delivery team.",
     outcome: 'realdetails', route: { D1: ['details'], F1: ['identify'], F2: ['fits'] },
     cues: { D1: 'the page asks for her delivery address and a phone number for the delivery team', F1: 'her delivery address', F2: ['ordered a sofa from the Harrow Furniture website', 'which she reached by typing its address herself'] },
-    reason: { F1: 'The page asks for facts about Aisha that identify her: {cue:F1}. An address is one of the facts the key counts here, even though it is only needed for a delivery. It asks about nothing in her life.' } },
+    reason: { F1: 'The page asks for facts about Aisha that identify her: {cue:F1}. An address is one of the facts that count here, even though it is only needed for a delivery. It asks about nothing in her life.' } },
 
   { id: 'u5-qf2', use: 'check', tier: 'varied', setting: 'leisure', topic: 'ringing the gym and being asked for more than a bill needs',
     text: "Max rings the number on his gym membership card to ask about a bill. The adviser asks him to confirm his date of birth, and also the full number and the three-digit code on the back of his bank card, 'to speed things up'.",

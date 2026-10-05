@@ -11,11 +11,11 @@ FC.cards('scams', 'u5', [
     case: 'u5-w-room',
     steps: [
       { step: 'D1',
-        reason: 'The advert and the viewing are the story. What is asked of Ben is in the last sentence: {cue:D1}. That is a request for facts about him. Nothing asks him to install, sign in or pay, so the key’s answer is {a:D1.details}.' },
+        reason: 'The advert and the viewing are the story. What is asked of Ben is in the last sentence: {cue:D1}. That is a request for facts about him. Nothing asks him to install, sign in or pay, so the answer is {a:D1.details}.' },
       { step: 'F1',
-        reason: 'A passport, a photo of him holding it and a tax number are facts that identify him: {cue:F1}. He is not asked about his life. The key’s answer is {a:F1.identify}.' },
+        reason: 'A passport, a photo of him holding it and a tax number are facts that identify him: {cue:F1}. He is not asked about his life. The answer is {a:F1.identify}.' },
       { step: 'F2',
-        reason: 'This is the step where the case misleads. Ben did begin it: he answered an advert on a site he has used for years. If that were all the question asked, the key’s answer would be {a:F2.fits}. But the question has two halves, and the second is whether what is asked is what the job needs. The job is holding a room until a viewing: {cue:F2}. That needs a name and a way to reach him, and it does not need a photo of him holding his passport or a tax number. It asks for more than the job needs, so the key’s answer is {a:F2.notfit}.' }
+        reason: 'This is the step where the case misleads. Ben did begin it: he answered an advert on a site he has used for years. If that were all the question asked, the answer would be {a:F2.fits}. But the question has two halves, and the second is whether what is asked is what the job needs. The job is holding a room until a viewing: {cue:F2}. That needs a name and a way to reach him, and it does not need a photo of him holding his passport or a tax number. It asks for more than the job needs, so the answer is {a:F2.notfit}.' }
     ],
     hold: {
       neighbour: 'realdetails',
@@ -31,27 +31,27 @@ FC.cards('scams', 'u5', [
         answer: 'b' },
       reason: [
         'For {o:realdetails} you must be able to point to this: {needs:realdetails}. Both halves are needed, and the second is missing. A room held until a viewing needs a name and a way to reach him, and it does not need a photo of him holding his passport.',
-        'It is the question from the gym adviser who asked for more than a bill needs. {test:identitytheft~realdetails} Here the second half is not met, so the key’s answer is {a:F2.notfit}.'
+        'It is the question from the gym adviser who asked for more than a bill needs. {test:identitytheft~realdetails} Here the second half is not met, so the answer is {a:F2.notfit}.'
       ]
     },
     impression: {
       resembles: 'u5-grant', first: 'u5-bank',
       text: [
-        'Now the second look: does this case look like one you know? A person who answers an advert and is asked for a passport may bring back Chen and the savings account first, and Chen’s case was {o:realdetails}. So here the likeness and the key seem to disagree.',
-        'When that happens, go back to the key’s question and find the words in the case that answer it. They are {cue:F2}. Chen’s building society asked for a passport after he had decided to open an account, to meet a rule that applies to every customer, and it did not ask for a photo of him holding it. The case this one really looks like is the energy grant: a pleasant offer, and a request for more than any of it needs. So the key’s answer stands.'
+        'Now the second look: does this case look like one you know? A person who answers an advert and is asked for a passport may bring back Chen and the savings account first, and Chen’s case was {o:realdetails}. So here the likeness and the questions seem to disagree.',
+        'When that happens, go back to the question and find the words in the case that answer it. They are {cue:F2}. Chen’s building society asked for a passport after he had decided to open an account, to meet a rule that applies to every customer, and it did not ask for a photo of him holding it. The case this one really looks like is the energy grant: a pleasant offer, and a request for more than any of it needs. So the answer stands.'
       ]
     } },
 
   { id: 'recap', kind: 'recap',
     h: 'What to carry away',
-    link: 'You have now run the key on requests for facts about you, on your own. This card puts the unit in one place, in the key’s words.',
+    link: 'You have now run the questions on requests for facts about you, on your own. This card puts the unit in one place.',
     carry: [
-      'Before any name, ask what is being asked right now. A request for facts about you is {a:D1.details}. If it asks for something earlier in the key’s list as well (a program, a way into an account, money), it takes that earlier answer instead.',
+      'Before any name, ask what is being asked right now. A request for facts about you is {a:D1.details}. If it asks for something earlier in the list as well (a program, a way into an account, money), it takes that earlier answer instead.',
       'Then ask two things about the facts. First, {q:F1} Is it papers and numbers that identify you, or is it your life? Second, does it fit: did you begin it, through {t:already}, and is what they ask for what you came to do?',
       'The facts themselves never decide. The same date of birth and the same passport are asked for by {o:realdetails} and by {o:identitytheft}. Who began it, and what the job needs, are what decide.',
       'A request that came to you does not fit, however real it sounds, and a real caller gets the same answer as a copy of one. What settles whether it is real is {t:check}: stop, and contact them yourself through {t:already}.',
       'Knowing your name, your address or your date of birth proves nothing about someone who contacted you.',
-      'A chat that asks for nothing is the stage before the ask. It is not a sign of safety. When the ask comes, the key has another answer ready for it, for money or for papers.',
+      'A chat that asks for nothing is the stage before the ask. It is not a sign of safety. When the ask comes, the questions have another answer ready for it, for money or for papers.',
       'Both questions can be answered at the moment you are asked, before you give anything. Whether the other side is honest, and what they will do with the facts, cannot, so stop before you give.',
       'Most requests for facts are real. Treating every one as a scam is a mistake too: a doctor’s form, a new account or a job you accepted all fit.'
     ] },

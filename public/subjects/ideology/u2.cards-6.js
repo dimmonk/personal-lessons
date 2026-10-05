@@ -15,11 +15,11 @@ FC.cards('ideology', 'u2', [
     ],
     explain: [
       'Here the workers own the businesses, as in the last name. What is new is what the text keeps. It does not do away with competition, prices or failure. It keeps a market: firms selling to customers, charging what they choose, and closing if they cannot pay their way. What it changes is who owns each firm.',
-      'People who argue for this say that markets are good at telling firms what to make and at making them careful with money, and that what is wrong with markets is that outside owners gain from other people’s work. So keep the market and change the owner. People who disagree say that firms that must compete will treat their own workers as hard as any owner would, or that a market does not work without outside owners. Both are argued over, and the key does not take a side.',
-      'Notice the competing. A text that gives each business to its workers and says nothing about competing is a different answer to the key’s question. The key needs both things here: workers who own, and firms that compete and can fail.'
+      'People who argue for this say that markets are good at telling firms what to make and at making them careful with money, and that what is wrong with markets is that outside owners gain from other people’s work. So keep the market and change the owner. People who disagree say that firms that must compete will treat their own workers as hard as any owner would, or that a market does not work without outside owners. Both are argued over, and no side is taken here.',
+      'Notice the competing. A text that gives each business to its workers and says nothing about competing is a different answer to the question. Both things are needed here: workers who own, and firms that compete and can fail.'
     ],
     feature: { step: 'C1', option: 'market' },
-    name: 'The name for this is {o:mktsoc}. "Market" is the word for firms selling to customers who choose, and "socialism" here points at the other half: the owners are the people who work in each firm, and not outsiders. These are the two things the key looks for.' },
+    name: 'The name for this is {o:mktsoc}. "Market" is the word for firms selling to customers who choose, and "socialism" here points at the other half: the owners are the people who work in each firm, and not outsiders. These are the two things to look for.' },
 
   { id: 'again-mktsoc', kind: 'again', outcome: 'mktsoc',
     link: 'The furniture makers gave you what to point to from one case: {needs:mktsoc}. Here is a second case with a different story. This time the work is picking and growing, and the words come from a workers’ association.',
@@ -55,8 +55,8 @@ FC.cards('ideology', 'u2', [
     instruction: 'Both cases are about the Quill bindery, and both say it should belong to the people who work in it. Compare one thing: whether the text says the bindery should compete with other binderies for customers.',
     prompt: { kind: 'which', option: 'C1.market', answer: 'c-lk-anmk-mk' },
     difference: [
-      'In Case A the text says nothing about competing. It wants no government telling it what to do or who to sell to, and it will run the bindery and the district together, in meetings. The key’s answer about the government is {a:C2.gone}, and the case is {o:anarch}.',
-      'In Case B the text says the bindery should compete with other binderies for customers, set its own prices, and close if it fails. The key’s answer is {a:C1.market}, and the case is {o:mktsoc}.',
+      'In Case A the text says nothing about competing. It wants no government telling it what to do or who to sell to, and it will run the bindery and the district together, in meetings. The answer about the government is {a:C2.gone}, and the case is {o:anarch}.',
+      'In Case B the text says the bindery should compete with other binderies for customers, set its own prices, and close if it fails. The answer is {a:C1.market}, and the case is {o:mktsoc}.',
       'Both give the bindery to the people who work in it. What separates them is not who owns it. It is what the text keeps around it: a market, or no government.'
     ] },
 
@@ -67,8 +67,8 @@ FC.cards('ideology', 'u2', [
     setup: 'This text asks the voters for a law that hands each glassworks to the people who work in it. That is a handover by a vote, which is what you point to for {o:demsoc}. Yet this case is {o:mktsoc}.',
     prompt: { kind: 'phrase', answer: 'Those glassworks will still compete with each other for customers, set their own prices, and fail if they cannot pay their way' },
     because: [
-      'The text also says the glassworks will still compete for customers, set their own prices and fail if they cannot pay their way. That is what the key’s answer {a:C1.market} asks for, and it asks for more than the handover alone. When a text shows both the handover to the workers and the competing, the competing decides, and the case is {o:mktsoc}.',
-      'The reason is that the handover alone says nothing about competing. A text that gives the businesses to their workers and is silent on competing leaves open whether they compete. This text closes it, and the key goes by the more exact answer.'
+      'The text also says the glassworks will still compete for customers, set their own prices and fail if they cannot pay their way. That is what the answer {a:C1.market} asks for, and it asks for more than the handover alone. When a text shows both the handover to the workers and the competing, the competing decides, and the case is {o:mktsoc}.',
+      'The reason is that the handover alone says nothing about competing. A text that gives the businesses to their workers and is silent on competing leaves open whether they compete. This text closes it, and the answer goes by the more exact one.'
     ],
-    take: 'This is the key’s decision, and it has a reason you can state: the more exact thing a text says about the businesses wins. Some people who study these texts would call every worker-owned firm the same thing whether or not it competes. The key does not, so that two people using it reach the same name.' }
+    take: 'This is a decision, and it has a reason you can state: the more exact thing a text says about the businesses wins. Some people who study these texts would call every worker-owned firm the same thing whether or not it competes. Here that is not done, so that two people using the same questions reach the same name.' }
 ]);

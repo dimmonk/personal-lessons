@@ -7,7 +7,7 @@ FC.cards('psychology', 'u1', [
 
   /* ---------- The fourth kind: a passing moment ---------- */
   { id: 'meet-none', kind: 'meet', family: 'none',
-    link: 'Three kinds so far: one person’s reasons, something said or done to another person, and a person across years. Many cases are none of these, and the key has an answer for them.',
+    link: 'Three kinds so far: one person’s reasons, something said or done to another person, and a person across years. Many cases are none of these, and there is an answer for them.',
     case: 'g-amira', mark: 'D1',
     strip: [
       'There is one person: Amira.',
@@ -19,12 +19,12 @@ FC.cards('psychology', 'u1', [
     explain: [
       'Set this case against the three kinds you have met. There is no reasoning to judge: Amira is not defending a view or explaining a choice. There are other people in the case, but nothing is said or done to any of them about them. Being short with whoever asks a question is not about the person who asked. And there are no years: the case begins on Monday.',
       'What is left is a person having a hard week, for a reason you can see. Her reaction fits what happened, and a reaction like this usually eases as the weeks go on. That is a fourth kind of thing, and it is a very ordinary one: most people have a hard week, a bad night or a short-tempered afternoon now and then.',
-      'The colleague’s word, "moody", shows what goes wrong when this kind is missed. "Moody" sounds like a description of Amira. It is really a description of five days. The key has an answer for a case like this so that you have somewhere to put it that is not a judgement of the person.'
+      'The colleague’s word, "moody", shows what goes wrong when this kind is missed. "Moody" sounds like a description of Amira. It is really a description of five days. There is an answer for a case like this so that you have somewhere to put it that is not a judgement of the person.'
     ],
     feature: { step: 'D1', option: 'none' },
     name: [
-      'The key’s answer, and the name of the kind, is {a:D1.none}. "Moment" here does not only mean a minute. It means one occasion or one short stretch: an evening, a bad day, a hard week. "Passing" means short-lived: it belongs to one occasion or one stretch, and it is not how the person is from year to year.',
-      'After this answer the key asks nothing more. It has no finer name to give, and that is a result in its own right: you looked, and there was nothing to name.'
+      'The answer, and the name of the kind, is {a:D1.none}. "Moment" here does not only mean a minute. It means one occasion or one short stretch: an evening, a bad day, a hard week. "Passing" means short-lived: it belongs to one occasion or one stretch, and it is not how the person is from year to year.',
+      'After this answer nothing more is asked. It has no finer name to give, and that is a result in its own right: you looked, and there was nothing to name.'
     ] },
 
   { id: 'again-none', kind: 'again', family: 'none',
@@ -48,7 +48,7 @@ FC.cards('psychology', 'u1', [
       'Sometimes no cause is given, and the case is simply one occasion: someone was loud at one party, or cried once in a meeting. One occasion with nothing else is still this kind, because one occasion is all the case shows.'
     ],
     not: [
-      'This answer does not say that nothing happened. Amira really was short with people, and it may have stung. The answer says only that the case holds a moment and no more, so the key has nothing to name.',
+      'This answer does not say that nothing happened. Amira really was short with people, and it may have stung. The answer says only that the case holds a moment and no more, so there is nothing to name.',
       'It is not a promise about the future either. If the same thing is still there in a year, in other places and with other people, that will be a different case, and it will get a different answer.'
     ],
     wild: ['"She’s not herself this week."', '"He’s had a lot on."', '"I was in a state that night."', '"It was one bad evening."', '"Anyone would be upset."'],
@@ -68,9 +68,9 @@ FC.cards('psychology', 'u1', [
     verdict: 'This is wrong.',
     right: [
       'Words such as "unstable", "paranoid", "obsessive" and "bipolar" come from medicine, or sound as if they do. A word like that is a diagnosis: a named medical or psychological condition, given by someone trained to give it, after a long assessment of how long something has gone on, how much of the person’s life it touches, and what else was happening.',
-      'The key does not diagnose anyone. Even when a case does show years, places and relationships, and the answer is {a:D1.pattern}, that answer only says what the case shows. It is not a diagnosis, and only a professional can give one.',
+      'The questions do not diagnose anyone. Even when a case does show years, places and relationships, and the answer is {a:D1.pattern}, that answer only says what the case shows. It is not a diagnosis, and only a professional can give one.',
       'A hard week gives you none of what a diagnosis needs. It gives you one short stretch, and usually something real that set it off. The speaker here has not asked the first thing you would want to know: what happened to her this week?',
-      'The plain description is also the accurate one: "Something has happened, and she is having a terrible week." It says how long, it leaves room for a cause, and it claims nothing else. In the key’s words the case is {a:D1.none}, and what you can point to is this: {needs:none}.'
+      'The plain description is also the accurate one: "Something has happened, and she is having a terrible week." It says how long, it leaves room for a cause, and it claims nothing else. The case is {a:D1.none}, and what you can point to is this: {needs:none}.'
     ],
     testedBy: ['g-claim-clinical'] },
 
@@ -81,8 +81,8 @@ FC.cards('psychology', 'u1', [
     instruction: 'Both cases are about Desmond talking about his deals. Compare one thing: how much of his life does each case show?',
     prompt: { kind: 'which', option: 'D1.none', answer: 'g-retirement' },
     difference: [
-      'In Case A you have one evening, and it is an evening on which talking about your working life is what people do. The guest’s verdict covers a whole man, and the guest has had twenty minutes of him. The key’s answer is {a:D1.none}.',
-      'In Case B the same talk is shown across thirty years, in three places, and in three relationships: with his children, with his partners and with his oldest friend. The key’s answer is {a:D1.pattern}.',
+      'In Case A you have one evening, and it is an evening on which talking about your working life is what people do. The guest’s verdict covers a whole man, and the guest has had twenty minutes of him. The answer is {a:D1.none}.',
+      'In Case B the same talk is shown across thirty years, in three places, and in three relationships: with his children, with his partners and with his oldest friend. The answer is {a:D1.pattern}.',
       'What Desmond does is the same in both cases. That is the point of putting them together. You cannot tell these two kinds apart by what the person does. You can only tell them apart by how much of the person’s life the case shows.'
     ] },
 
@@ -90,7 +90,7 @@ FC.cards('psychology', 'u1', [
     h: 'One evening that sounds like a lifetime',
     link: 'The last card made the difference easy to see, because Case B said "thirty years" out loud. The mistake people really make is harder to catch: the case shows one evening, and it sounds like a lifetime.',
     case: 'g-dinner-party',
-    setup: 'There is a lot of the same behaviour here, three things all pointing one way, and a guest who says "always". A run of the same behaviour, and the word "always", are what {a:D1.pattern} usually sounds like. Yet the key’s answer for this case is {a:D1.none}.',
+    setup: 'There is a lot of the same behaviour here, three things all pointing one way, and a guest who says "always". A run of the same behaviour, and the word "always", are what {a:D1.pattern} usually sounds like. Yet the answer for this case is {a:D1.none}.',
     prompt: { kind: 'phrase', answer: 'who had met her that evening' },
     because: [
       'Count what the case shows. One evening. One place. One table of guests. The three things Yasmin did feel like a lot to go on, but they are three samples of the same two hours. And "always" comes from someone who has known her for those same two hours, so it adds no years at all.',
@@ -108,7 +108,7 @@ FC.cards('psychology', 'u1', [
     right: [
       'One occasion shows you one occasion. People act out of character after bad news, without sleep, when they are frightened, and for many other reasons, and from the outside you usually cannot tell which of these you are looking at. The feeling that you have seen "the real person" comes from how striking the occasion was. It does not come from how much the occasion showed.',
       'A claim about who someone is, is a claim about years, and it needs a case that shows them. So when you catch yourself summing a person up, count what you really have: how many occasions, in how many places, with how many people.',
-      'If the count is one, the key’s answer is {a:D1.none}. If, on that one occasion, something was said or done to another person about them, it is {a:D1.tactic}. In neither case is it {a:D1.pattern}. For that you must be able to point to this: {needs:pattern}.'
+      'If the count is one, the answer is {a:D1.none}. If, on that one occasion, something was said or done to another person about them, it is {a:D1.tactic}. In neither case is it {a:D1.pattern}. For that you must be able to point to this: {needs:pattern}.'
     ],
     testedBy: ['g-claim-once'] }
 ]);

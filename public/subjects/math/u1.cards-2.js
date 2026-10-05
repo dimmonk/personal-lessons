@@ -33,7 +33,7 @@ FC.cards('math', 'u1', [
       'Every problem asks you for a number, so “there is a number to find” cannot be what marks this kind. What marks it is what the problem gives you to find the number with: a calculation and its result, a rate, or totals. The facts do not change as you read, and the hidden number is whatever makes them all true together.'
     ],
     feature: { step: 'M1', option: 'unknown' },
-    name: 'The key’s answer, and so the name of this kind of problem, is {a:M1.unknown}. “Missing” means not given by the problem: it is the number you are asked for. “Totals” means two facts about numbers you are not told, such as how many there are and what they come to. This is the kind where you are handed the facts and must find the number that fits them.' },
+    name: 'The answer, and so the name of this kind of problem, is {a:M1.unknown}. “Missing” means not given by the problem: it is the number you are asked for. “Totals” means two facts about numbers you are not told, such as how many there are and what they come to. This is the kind where you are handed the facts and must find the number that fits them.' },
 
   { id: 'again-unknown', kind: 'again', family: 'unknown',
     link: 'The van hire gave you what to point to: {needs:unknown}. Here is the same thing in a different story, with the facts in a different shape.',
@@ -55,7 +55,7 @@ FC.cards('math', 'u1', [
       'It is the widest of the five kinds: a great many everyday questions are of this shape.'
     ],
     not: [
-      'Having an answer to find does not make a problem this kind, because every problem has one. A problem that says seven pens cost €2 each and asks what they cost together is a plain sum. There is no calculation to run backwards, no rate to scale and no totals to untangle. The key does not sort it, because there is nothing to choose: you do the sum.',
+      'Having an answer to find does not make a problem this kind, because every problem has one. A problem that says seven pens cost €2 each and asks what they cost together is a plain sum. There is no calculation to run backwards, no rate to scale and no totals to untangle. No question sorts it, because there is nothing to choose: you do the sum.',
       'And a rate does not make a problem this kind every time. A rate for each thing, such as each kilometre or each person, is. A price that goes up for each hour, day, month or year is an amount changing as time passes, and this unit has a card for exactly that case.'
     ],
     wild: ['"How many do I need to get to €60?"', '"What would the price have to be?"', '"Same again, but for seven people."', '"How far did she drive?"', '"Two numbers add up to 9."'],

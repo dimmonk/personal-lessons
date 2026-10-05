@@ -4,7 +4,7 @@
 
 FC.unit('psychology', 'u4', {
   kind: 'C',              // C classification, F facts, P procedure
-  rev: 1,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
+  rev: 2,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
   standard: 1,            // lesson-standard version this unit was built to
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author). The app labels a draft as a draft.
   tag: 'Four',
@@ -74,7 +74,7 @@ FC.unit('psychology', 'u4', {
     { id: 'p4', title: 'At the centre of attention',
       cards: ['meet-histrionic', 'again-histrionic', 'portrait-histrionic', 'check-histrionic',
               'look-borderline-histrionic', 'look-narcgrand-histrionic', 'look-histrionic-ordpersonality'] },
-    { id: 'p5', title: 'Breaking rules and using people, and the key’s question',
+    { id: 'p5', title: 'Breaking rules and using people, and the question',
       cards: ['meet-antisocial', 'again-antisocial', 'portrait-antisocial', 'check-antisocial', 'look-narcgrand-antisocial', 'exc-both',
               'look-antisocial-ordpersonality', 'refute-difficult', 'q-pat', 'check-pat'] },
     { id: 'p6', title: 'Two whole cases, then the drill',
@@ -123,7 +123,8 @@ FC.unit('psychology', 'u4', {
   build: {
     // What changed at each revision (R1). One entry for every revision from 1 to rev.
     history: [
-      { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the lasting-way branch of the key, taught as six names with a repeated cost as the one thing that separates the five names from the sixth. Not yet deployed, so later edits before the first deploy stay revision 1.' }
+      { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the lasting-way branch of the key, taught as six names with a repeated cost as the one thing that separates the five names from the sixth. Not yet deployed, so later edits before the first deploy stay revision 1.' },
+      { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' }
     ],
     wrongIdeas: [
       { card: 'refute-label', about: 'narcgrand',

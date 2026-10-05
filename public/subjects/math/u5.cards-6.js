@@ -8,10 +8,10 @@ FC.cards('math', 'u5', [
   /* ---------- The key's one question ---------- */
   { id: 'q-c1', kind: 'question', step: 'C1',
     h: 'The one question that tells the five kinds apart',
-    link: 'At the foot of each kind’s first card you saw the key’s question with one answer under it. This card puts the question and its five answers in one place, as the key shows them, and says why the key asks it before any working.',
+    link: 'At the foot of each kind’s first card you saw the question with one answer under it. This card puts the question and its five answers in one place and says why it is asked before any working.',
     decides: [
       'The same numbers give very different answers depending on how the choices are made and on what is asked, and a wrong procedure gives a number as neat as the right one. You saw it on the first card of this unit: 9 things and 4 picks give 6,561 when each pick has a full list, 3,024 when each pick uses one up and the order counts, and 126 when each pick uses one up and the order does not count. Nothing in the number says which was meant. Only the question can, and only the words of the problem can answer it.',
-      'That is why this question comes before any working, and why every problem in this unit starts with it. In this unit it is the only question after the key’s first one, so its answer leads straight to a name, and the name leads to the procedure. Your route is the answer to the first question and then this one.'
+      'That is why this question comes before any working, and why every problem in this unit starts with it. In this unit it is the only question after the first one, so its answer leads straight to a name, and the name leads to the procedure. Your answers on the way are your answer to the first question and then your answer to this one.'
     ],
     how: [
       'Read the last sentence of the problem first, because the question is usually there, and find what it asks: how many different results there are, or how likely something is. Mark those words, and then look for the words that say how the choices are made.',
@@ -27,9 +27,9 @@ FC.cards('math', 'u5', [
   /* ---------- After the drill ---------- */
   { id: 'recap-chance', kind: 'recap',
     h: 'What to carry away',
-    link: 'You have now worked problems of all five kinds on your own. This card puts the unit in one place, in the key’s words.',
+    link: 'You have now worked problems of all five kinds on your own. This card puts the unit in one place.',
     carry: [
-      'Before any working, ask what is being counted, or what chance is wanted, and point to the words that say it. If you cannot point to them, you do not have an answer yet. The key asks: {q:C1}',
+      'Before any working, ask what is being counted, or what chance is wanted, and point to the words that say it. If you cannot point to them, you do not have an answer yet. The question is: {q:C1}',
       'A choice with a full list of its own for each pick leads to {o:multprin}. One group with each pick using someone up leads to {o:perm} when the order counts, and to {o:comb} when it does not. The chance that one or more of a set of separate things happens leads to {o:complement}. A test result and how far to trust it lead to {o:baserate}.',
       'The numbers do not tell you the kind. The same 9 things and 4 picks give 6,561, 3,024 or 126, depending on whether each pick has a full list, or uses one up with the order counting, or uses one up with the order not counting.',
       'For {o:multprin}: name each choice, count its full list, and multiply the counts. Adding the counts would count single items and never a whole result.',

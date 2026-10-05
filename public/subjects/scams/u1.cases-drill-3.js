@@ -42,7 +42,7 @@ FC.cases('scams', 'u1', [
     route: { D1: ['money'] },
     cues: { D1: 'Put in £500 and I will show you how' },
     reason: { D1: 'Today Elise asks Dan to put money in: {cue:D1}. It is a request to send £500, and the months of friendly chat before it are the story.' },
-    not: { outcome: 'details', why: 'For months she has asked him about his life, which is the kind that asks for facts about you. Today she asks for money, and the key answers for what is asked right now.' },
+    not: { outcome: 'details', why: 'For months she has asked him about his life, which is the kind that asks for facts about you. Today she asks for money, and the answer is for what is asked right now.' },
     wouldChange: 'If she had only asked about his work and his plans, it would be {a:D1.details}.' },
 
   { id: 'g-dt-chat', use: 'drill', tier: 'misleading', setting: 'relationships', topic: 'a friendly message from someone met once',

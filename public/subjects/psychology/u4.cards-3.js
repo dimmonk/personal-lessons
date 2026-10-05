@@ -30,9 +30,9 @@ FC.cards('psychology', 'u4', [
     instruction: 'In both cases the younger brother has just made partner. Compare one thing: what each man does with the hurt of not being the one who was chosen. Does he attack, or does he pull away?',
     prompt: { kind: 'which', option: 'P1.overlooked', answer: 'pa-piers' },
     difference: [
-      'In Case A Anton turns on his brother at the family lunch: "only got there by licking boots". It is outward: anger and scorn. The key’s answer is {a:P1.above}, and the case is {o:narcgrand}.',
-      'In Case B Piers says "Lovely news", goes quiet and leaves before the pudding, and says nobody has ever noticed what he has done. It is inward: hurt and resentment. The key’s answer is {a:P1.overlooked}, and the case is {o:narcvuln}.',
-      'So these two names are one family, and this is the difference inside it. Both brothers have the same sore place: their worth depends on being treated as special, and their brother’s promotion does not treat them so. Anton defends it outward and Piers defends it inward. Which way it goes is what the key’s question picks out.'
+      'In Case A Anton turns on his brother at the family lunch: "only got there by licking boots". It is outward: anger and scorn. The answer is {a:P1.above}, and the case is {o:narcgrand}.',
+      'In Case B Piers says "Lovely news", goes quiet and leaves before the pudding, and says nobody has ever noticed what he has done. It is inward: hurt and resentment. The answer is {a:P1.overlooked}, and the case is {o:narcvuln}.',
+      'So these two names are one family, and this is the difference inside it. Both brothers have the same sore place: their worth depends on being treated as special, and their brother’s promotion does not treat them so. Anton defends it outward and Piers defends it inward. Which way it goes is what the question picks out.'
     ] },
 
   { id: 'look-narcvuln-ordpersonality', kind: 'lookalike', ledger: 'narcvuln~ordpersonality',
@@ -41,8 +41,8 @@ FC.cards('psychology', 'u4', [
     instruction: 'Both keep to themselves at work, in four offices. Compare two things: what each does when a colleague is thanked, and what it has cost.',
     prompt: { kind: 'which', option: 'P1.overlooked', answer: 'pa-hugh' },
     difference: [
-      'In Case A Hugh says that others get the good projects because they are noticed and he is not, and that he is owed more. When a colleague is thanked he stops speaking to her for a month, and he has done it with six colleagues. His managers say his silences make it impossible to plan around him. The key’s answer is {a:P1.overlooked}, and the case is {o:narcvuln}.',
-      'In Case B Amara is just as quiet. When a colleague is thanked she sends a note saying well done. Her managers say she can be relied on, and her friends from each office are still her friends. The key’s answer is {a:P1.steady}, and the case is {o:ordpersonality}.',
+      'In Case A Hugh says that others get the good projects because they are noticed and he is not, and that he is owed more. When a colleague is thanked he stops speaking to her for a month, and he has done it with six colleagues. His managers say his silences make it impossible to plan around him. The answer is {a:P1.overlooked}, and the case is {o:narcvuln}.',
+      'In Case B Amara is just as quiet. When a colleague is thanked she sends a note saying well done. Her managers say she can be relied on, and her friends from each office are still her friends. The answer is {a:P1.steady}, and the case is {o:ordpersonality}.',
       'The quietness is the same in both. What differs is the count of what others owe, the cold withdrawal when someone else is thanked, and the cost.'
     ] },
 
@@ -72,7 +72,7 @@ FC.cards('psychology', 'u4', [
     instruction: 'The marked words in the first case are three different things: how she holds on, how she turns on the friend who seems to be going, and what it has cost. Find the words in this case that match the middle one: what the person does to the one who seems about to leave. Ignore who is involved (a friend, a deputy at a youth club).',
     prompt: { kind: 'phrase', answer: "When she said she needed time to think, he told the committee she was 'poisonous' and that she had used him" },
     shared: [
-      'Nadia and Tomas each make desperate efforts to keep someone close: forty messages and an offer of flights, car keys and a pay rise the club could not afford. Each swings to attacking when the person seems about to go: "You are a fake and I never want to see you again", "poisonous". Each swings back: twelve apologies, a letter saying she was the best person he knew. And each does it with many people over many years, and has lost people.',
+      'Nadia and Tomas each make desperate efforts to keep someone close: forty messages and an offer of flights, the use of his car and a pay rise the club could not afford. Each swings to attacking when the person seems about to go: "You are a fake and I never want to see you again", "poisonous". Each swings back: twelve apologies, a letter saying she was the best person he knew. And each does it with many people over many years, and has lost people.',
       'A woman and a man, a friend and a deputy. So this is not about gender, friendship or work. It holds wherever a person makes desperate efforts to keep people close, and swings to attacking them when they seem about to leave. That is what {o:borderline} names.'
     ] },
 

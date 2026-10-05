@@ -5,7 +5,7 @@
 
 FC.unit('ideology', 'u2', {
   kind: 'C',              // C classification, F facts, P procedure
-  rev: 1,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
+  rev: 2,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
   standard: 1,            // lesson-standard version this unit was built to
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author). The app labels a draft as a draft.
   tag: 'Two',
@@ -106,7 +106,7 @@ FC.unit('ideology', 'u2', {
     { id: 'p4', title: 'An explanation of how owners gain',
       cards: ['term-surplus', 'meet-marx', 'again-marx', 'portrait-marx', 'check-marx', 'refute-tax',
               'look-classonly-marx', 'look-socdem-marx', 'look-marx-ml', 'look-marx-anarch', 'exc-dyeworks'] },
-    { id: 'p5', title: 'The key’s two questions, each in one place',
+    { id: 'p5', title: 'The two questions, each in one place',
       cards: ['q-business', 'check-business', 'q-government', 'check-government'] },
     { id: 'p6', title: 'Two whole cases, then the drill',
       cards: ['worked-power', 'worked-docks'], drill: true, close: ['recap', 'transfer'] }
@@ -160,7 +160,8 @@ FC.unit('ideology', 'u2', {
   build: {
     // What changed at each revision (R1). One entry for every revision from 1 to rev.
     history: [
-      { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the branch unit for the first answer of the gate. Two questions and seven names, one bakery as the lens, seventeen look-alike pairs. Not yet deployed, so later edits before the first deploy stay revision 1.' }
+      { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the branch unit for the first answer of the gate. Two questions and seven names, one bakery as the lens, seventeen look-alike pairs. Not yet deployed, so later edits before the first deploy stay revision 1.' },
+      { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' }
     ],
     // What changed in the key for this branch, and why (K2). Old wording is the app's wording before the rebuild
     // (public/subjects/ideology/standard0.js); the full table is docs/rebuild/ideology-plan.md, part a.

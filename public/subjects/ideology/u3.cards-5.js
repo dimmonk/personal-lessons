@@ -14,14 +14,14 @@ FC.cards('ideology', 'u3', [
     ],
     explain: [
       'What is new here is the ranking. In every text so far a people was put first, and nobody was said to be worth less by birth. Here people are sorted at birth into peoples, and the sorting is said to matter more than anything a person does. That is what sorting people by blood means. Blood here means descent: who your parents and grandparents were.',
-      'The key reads one thing in this text: peoples ranked higher and lower, with the text\'s own people placed above the rest. When a text does that, the key\'s answer to its first question is {a:N1.blood}, and that question is settled.',
+      'One thing is read in this text: peoples ranked higher and lower, with the text\'s own people placed above the rest. When a text does that, the answer to its first question is {a:N1.blood}, and that question is settled.',
       'Set this beside the names you have met. Where the nation is spoken for as one, nobody is ranked. Where ordinary people are set against a few at the top, the other side is the few at the top, whoever they are, and not a people. Here the other side is whole peoples, chosen by birth.',
       'The second question does not change the name. This pamphlet wants one party only, and a text with the same ranking that left elections in place would get the same name. The second question separates names that do not rank peoples. For this name, the ranking has already decided.'
     ],
     feature: { step: 'N1', option: 'blood' },
     name: [
       'The name for this is {o:nazi}. It is borrowed from a real movement. Every text in this unit is invented, and none describes a real party or a real person.',
-      'Like {o:fasc}, its edges are argued over by the people who study it. Some keep it for one movement in one country, and some use it for any text that ranks peoples by blood. The key draws its line at the ranking, because that is what a short text can show.'
+      'Like {o:fasc}, its edges are argued over by the people who study it. Some keep it for one movement in one country, and some use it for any text that ranks peoples by blood. The line is drawn at the ranking, because that is what a short text can show.'
     ] },
 
   { id: 'again-nazi', kind: 'again', outcome: 'nazi',
@@ -45,9 +45,9 @@ FC.cards('ideology', 'u3', [
       'The enemy is whole peoples, chosen by birth, and not people chosen by what they have done.'
     ],
     not: [
-      'The ranking is what the name needs. A text that is proud of its people\'s history or language, and says no people is worth less, does not have it. A text that says that rules which treat everyone alike still leave some groups behind, and asks for fair results, ranks nobody, and has the key\'s answer {a:D1.rights} at the first question.',
+      'The ranking is what the name needs. A text that is proud of its people\'s history or language, and says no people is worth less, does not have it. A text that says that rules which treat everyone alike still leave some groups behind, and asks for fair results, ranks nobody, and has the answer {a:D1.rights} at the first question.',
       'Three of the names you have met can be mixed up with this one, because all of them can leave the vote in place and all of them put one people first. {o:nationalism} speaks for everyone in the country as equals. {o:natpop} and {o:pop} set ordinary people against a few at the top, and their anger is at those at the top, not at a people chosen by blood.',
-      'What a text says about who should own the businesses does not give this name either. The key asks that only of texts that have the first answer {a:D1.class}.'
+      'What a text says about who should own the businesses does not give this name either. That is asked only of texts that have the first answer {a:D1.class}.'
     ],
     wild: ['"Blood decides what a people can do."', '"They are not our kind."', '"The first people has the first right."', '"Some peoples are born to lead."', '"Our people comes first, by birth."'],
     self: 'You are unlikely to meet it as a whole programme. In your own life it is more often a single line in a comment or a joke, or a claim that one group is, by birth, better or worse. A line like that has the answer {a:N1.blood}, if it ranks a people by blood.',
@@ -64,8 +64,8 @@ FC.cards('ideology', 'u3', [
     instruction: 'Both cases are about a youth parade in Marren, and in both the old parties are dissolved. Compare one thing: whether the text ranks peoples by blood.',
     prompt: { kind: 'which', option: 'N1.blood', answer: 'n-lk-parade-nazi' },
     difference: [
-      'In Case A "every child of Marren marches today as one people with one will". The old parties are dissolved, and the Leader has one voice. Nobody is ranked, so the key\'s answer to the first question is {a:N1.whole}. With the vote pushed aside, the case is {o:fasc}.',
-      'In Case B the children of the first blood march, and the later peoples "may watch from the side, as is fitting for a lower people". The old parties are dissolved here too, and the Leader has the same one voice. People are ranked by blood, so the key\'s answer is {a:N1.blood}, and the case is {o:nazi}.',
+      'In Case A "every child of Marren marches today as one people with one will". The old parties are dissolved, and the Leader has one voice. Nobody is ranked, so the answer to the first question is {a:N1.whole}. With the vote pushed aside, the case is {o:fasc}.',
+      'In Case B the children of the first blood march, and the later peoples "may watch from the side, as is fitting for a lower people". The old parties are dissolved here too, and the Leader has the same one voice. People are ranked by blood, so the answer is {a:N1.blood}, and the case is {o:nazi}.',
       'The answer to the second question is the same in both. That is why it cannot tell them apart. The first question does: whether peoples are ranked by blood.'
     ] }
 ]);

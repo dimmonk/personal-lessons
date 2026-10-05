@@ -17,7 +17,7 @@ FC.cards('civics', 'u3', [
     explain: [
       'Look at what is the same as in the last case. Congress passed a law, and both chambers voted for it. Nothing about the vote is wrong. If the vote were all that mattered, this law would have the same name as the tax on airline tickets.',
       'The difference is the matter. The Constitution lists what Congress may make laws about, and schooling is not on the list. Congress has only the powers the Constitution gives it, so a matter that is not on the list is for the states to decide: each state decides what its own schools teach. Congress has no power over the matter, however the votes go.',
-      'So a law can fail in a way that no vote can repair. It can pass both chambers and be signed by the President, and still be a law Congress was never allowed to pass. A person it harms can ask a judge to check it against the Constitution, which is where the key’s first question puts a case that ends with a judge: {a:D1.courts}. The key reads the moment before that: Congress has passed the law, and the question is whether the Constitution let it.'
+      'So a law can fail in a way that no vote can repair. It can pass both chambers and be signed by the President, and still be a law Congress was never allowed to pass. A person it harms can ask a judge to check it against the Constitution, which is where the first question puts a case that ends with a judge: {a:D1.courts}. This name is about the moment before that: Congress has passed the law, and the point is whether the Constitution let it.'
     ],
     feature: { step: 'C1', option: 'barred' },
     name: 'The name for this is {o:beyondcong}. “Beyond” says that the law lies outside the edge of what Congress is allowed to do. It is the opposite of the last name.' },
@@ -44,7 +44,7 @@ FC.cards('civics', 'u3', [
     not: 'A law that is unpopular, unwise or unfair is not {o:beyondcong} for that reason. What makes a law {o:beyondcong} is the Constitution’s list and its rights: the matter is not on the list, or a right is taken away.',
     wild: ['“Congress overstepped.”', '“It’s unconstitutional.”', '“The Constitution gives Congress no power to do that.”', '“That’s for the states, not for Washington.”'],
     self: 'In your own life you meet it when someone says that a new federal law reaches into something your state or your town decides, or into your freedom to speak, to worship, to publish or to gather. Whether they are right is the question this name asks.',
-    ask: '“Is the matter on the Constitution’s list for Congress? Does the law take away a right?” If the matter is not on the list, or a right is taken away, the key’s answer is {a:C1.barred}.' },
+    ask: '“Is the matter on the Constitution’s list for Congress? Does the law take away a right?” If the matter is not on the list, or a right is taken away, the answer is {a:C1.barred}.' },
 
   { id: 'check-beyondcong', kind: 'check', after: 'beyondcong',
     case: 'k-march',
@@ -57,7 +57,7 @@ FC.cards('civics', 'u3', [
     verdict: 'This is wrong.',
     right: [
       'Passing both chambers and being signed is what a law goes through. It is not what makes Congress allowed to pass it. Congress has only the powers the Constitution gives it, and it may not take away a right the Constitution protects. A law that fails either test is a law Congress was not allowed to pass, however many votes it got, and a court can strike it down in a real case.',
-      'So when you hear that a law is valid because it passed, go back to the question you have been asking: is the matter on the list, and does the law take away a right? If the matter is not on the list, or a right is taken away, the key’s answer is {a:C1.barred}.'
+      'So when you hear that a law is valid because it passed, go back to the question you have been asking: is the matter on the list, and does the law take away a right? If the matter is not on the list, or a right is taken away, the answer is {a:C1.barred}.'
     ],
     testedBy: ['claim-valid'] },
 
@@ -69,8 +69,8 @@ FC.cards('civics', 'u3', [
     instruction: 'Both cases are about the post office, and the mail is one of the matters on the Constitution’s list. Compare one thing: whether the law takes away anyone’s right.',
     prompt: { kind: 'which', option: 'C1.barred', answer: 'l-mail-ban' },
     difference: [
-      'In Case A the matter is the mail, which is on the list, and the law only sets a price for sending a parcel. It takes no right away from anyone. The key’s answer is {a:C1.listed}, and the case is {o:enumerated}.',
-      'In Case B the matter is the mail too, and it is still on the list. But the law bars a magazine from the post because of what the magazine prints, and the Constitution protects the right to publish. The key’s answer is {a:C1.barred}, and the case is {o:beyondcong}.',
+      'In Case A the matter is the mail, which is on the list, and the law only sets a price for sending a parcel. It takes no right away from anyone. The answer is {a:C1.listed}, and the case is {o:enumerated}.',
+      'In Case B the matter is the mail too, and it is still on the list. But the law bars a magazine from the post because of what the magazine prints, and the Constitution protects the right to publish. The answer is {a:C1.barred}, and the case is {o:beyondcong}.',
       'So being on the list is only half of what a law needs. A law on a listed matter still has to take no right away. The matter does not tell you the name, and neither does the vote. Only the two tests together do.'
     ] }
 ]);

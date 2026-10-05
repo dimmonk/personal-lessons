@@ -19,8 +19,8 @@ FC.cases('math', 'u5', [
       C1: ['2 letters from A to Z followed by 3 digits from 0 to 9, and letters and digits may repeat']
     },
     reason: {
-      M1: 'The words {cue:M1} ask how many different account names can be made, a count of ways something can turn out. Nothing here is followed through time, no number is hidden for a calculation to fit, no whole number is split into groups, and no shape is measured. The problem asks for the number of different results, or for a chance, which is the key’s first answer {a:M1.chance}.',
-      C1: 'The words {cue:C1} give five separate choices, two letters and three digits, each from a full list that can be used again, and ask how many different names there are, so the key’s answer is {a:C1.lists}.'
+      M1: 'The words {cue:M1} ask how many different account names can be made, a count of ways something can turn out. Nothing here is followed through time, no number is hidden for a calculation to fit, no whole number is split into groups, and no shape is measured. The problem asks for the number of different results, or for a chance, which is the answer to the first question {a:M1.chance}.',
+      C1: 'The words {cue:C1} give five separate choices, two letters and three digits, each from a full list that can be used again, and ask how many different names there are, so the answer is {a:C1.lists}.'
     },
     not: {
       outcome: 'perm',
@@ -74,8 +74,8 @@ FC.cases('math', 'u5', [
       C1: ['3 rings, and each ring is marked 0 to 9']
     },
     reason: {
-      M1: 'The words {cue:M1} ask how many different codes the lock has, a count of ways something can turn out. Nothing in it follows an amount as time passes, hides a number that a calculation must fit, or splits whole numbers into groups, and there is no shape to measure. What it asks for is a count of the results, or the chance of something, so the key’s first answer is {a:M1.chance}.',
-      C1: 'The words {cue:C1} give three separate choices, one for each ring, each from the same full list of ten digits, and ask how many different settings there are, whatever the lock is called, so the key’s answer is {a:C1.lists}.'
+      M1: 'The words {cue:M1} ask how many different codes the lock has, a count of ways something can turn out. Nothing in it follows an amount as time passes, hides a number that a calculation must fit, or splits whole numbers into groups, and there is no shape to measure. What it asks for is a count of the results, or the chance of something, so the answer to the first question is {a:M1.chance}.',
+      C1: 'The words {cue:C1} give three separate choices, one for each ring, each from the same full list of ten digits, and ask how many different settings there are, whatever the lock is called, so the answer is {a:C1.lists}.'
     },
     not: {
       outcome: 'comb',
@@ -126,8 +126,8 @@ FC.cases('math', 'u5', [
       C1: ['Each spin lands on one of 8 prizes, and a prize can come up more than once']
     },
     reason: {
-      M1: 'The words {cue:M1} ask how many different sets of three spins there are, a count of ways something can turn out. The problem does not change as time passes, has no hidden number for a calculation to fit, does not share whole numbers out in groups and has no shape. It is about the number of ways that something can come out, or its chance, so the key’s first answer is {a:M1.chance}.',
-      C1: 'The words {cue:C1} show three separate spins, each landing on one of the same 8 prizes with repeats allowed, and ask how many different sets there are, so the key’s answer is {a:C1.lists}.'
+      M1: 'The words {cue:M1} ask how many different sets of three spins there are, a count of ways something can turn out. The problem does not change as time passes, has no hidden number for a calculation to fit, does not share whole numbers out in groups and has no shape. It is about the number of ways that something can come out, or its chance, so the answer to the first question is {a:M1.chance}.',
+      C1: 'The words {cue:C1} show three separate spins, each landing on one of the same 8 prizes with repeats allowed, and ask how many different sets there are, so the answer is {a:C1.lists}.'
     },
     not: {
       outcome: 'perm',
@@ -178,8 +178,8 @@ FC.cases('math', 'u5', [
       C1: ['each job to a different worker']
     },
     reason: {
-      M1: 'The words {cue:M1} ask in how many different ways the jobs can be given out, a count of ways something can turn out. Nothing here is followed through time, no number is hidden for a calculation to fit, no whole number is split into groups, and no shape is measured. The problem asks for the number of different results, or for a chance, which is the key’s first answer {a:M1.chance}.',
-      C1: 'The words {cue:C1} show three jobs given out one after another from one group of 9 workers, each to a different worker, so that each pick leaves one fewer, and the question asks how many different ways there are, so the key’s answer is {a:C1.order}.'
+      M1: 'The words {cue:M1} ask in how many different ways the jobs can be given out, a count of ways something can turn out. Nothing here is followed through time, no number is hidden for a calculation to fit, no whole number is split into groups, and no shape is measured. The problem asks for the number of different results, or for a chance, which is the answer to the first question {a:M1.chance}.',
+      C1: 'The words {cue:C1} show three jobs given out one after another from one group of 9 workers, each to a different worker, so that each pick leaves one fewer, and the question asks how many different ways there are, so the answer is {a:C1.order}.'
     },
     not: {
       outcome: 'comb',
@@ -230,8 +230,8 @@ FC.cases('math', 'u5', [
       C1: ['5 museums to visit and time for all of them, one after another']
     },
     reason: {
-      M1: 'The words {cue:M1} ask in how many different orders the museums can be visited, a count of ways something can turn out. Nothing in it follows an amount as time passes, hides a number that a calculation must fit, or splits whole numbers into groups, and there is no shape to measure. What it asks for is a count of the results, or the chance of something, so the key’s first answer is {a:M1.chance}.',
-      C1: 'The words {cue:C1} show one group of 5 museums, visited one after another so that each visit uses one up, and ask how many different orders there are, so the key’s answer is {a:C1.order}.'
+      M1: 'The words {cue:M1} ask in how many different orders the museums can be visited, a count of ways something can turn out. Nothing in it follows an amount as time passes, hides a number that a calculation must fit, or splits whole numbers into groups, and there is no shape to measure. What it asks for is a count of the results, or the chance of something, so the answer to the first question is {a:M1.chance}.',
+      C1: 'The words {cue:C1} show one group of 5 museums, visited one after another so that each visit uses one up, and ask how many different orders there are, so the answer is {a:C1.order}.'
     },
     not: {
       outcome: 'comb',

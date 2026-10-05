@@ -78,7 +78,7 @@ FC.specimens('stats', [
             C1: 'It gives no counts, either for this month or for the month before' },
     reason: { S1: 'The claim gives a change only as a percentage of what it was: {cue:S1}.',
               C1: '{cue:C1}. Up 40% could be 5 children becoming 7 in a district of 9,000, or 100 becoming 140. You cannot tell which from the claim, and the two mean very different things.' },
-    not: { outcome: 'smalln', why: 'With only a few children behind it, a big percentage would be {o:smalln}, and the key names that first. This case gives no count at all, so nothing shows how few there are: what is missing is the numbers themselves.' },
+    not: { outcome: 'smalln', why: 'With only a few children behind it, a big percentage would be {o:smalln}, and that is the first part to name. This case gives no count at all, so nothing shows how few there are: what is missing is the numbers themselves.' },
     wouldChange: 'If the newsletter said that 50 children were sent home last month and 70 this month, the numbers would be there and the 40% could be read.' },
 
   { id: 'sp-screening', tier: 'clean', setting: 'health', topic: 'a screening test result',
@@ -180,7 +180,7 @@ FC.specimens('stats', [
             A1: '1 reported sighting last summer and 4 this summer' },
     reason: { S1: 'The newsletter gives a percentage and not the numbers behind it, which would send you to ask how many there were. The log answers that: {cue:S1}. The figure is built on a handful, and that goes wrong before the missing numbers matter.',
               A1: 'Nobody is left out of a count of what was reported, but there are only a handful: {cue:A1}. One sighting more or fewer would move the percentage by 100 points or more, so it cannot show that bears are becoming more common.' },
-    not: { outcome: 'relrisk', why: 'Both fit, and the key gives the earlier part. A percentage with the numbers missing is {o:relrisk}, but when the numbers behind it are this small, the figure goes wrong earlier, in how few there are.' },
+    not: { outcome: 'relrisk', why: 'Both fit, and the answer is the earlier part. A percentage with the numbers missing is {o:relrisk}, but when the numbers behind it are this small, the figure goes wrong earlier, in how few there are.' },
     wouldChange: 'If the log showed 100 sightings last summer and 400 this summer and the newsletter still gave only the percentage, this would be {o:relrisk}.' },
 
   { id: 'sp-bacon', tier: 'misleading', setting: 'health', topic: 'processed meat and bowel cancer',

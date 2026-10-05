@@ -5,10 +5,10 @@ FC.cards('psychology', 'u4', [
 
   /* ---------- An ordinary personality ---------- */
   { id: 'meet-ordpersonality', kind: 'meet', outcome: 'ordpersonality',
-    link: 'Everything so far has been about ways of being that keep costing something. Most of the people you will ever describe are not like that, and the key has a name for them. It is easy to forget, so it is taught as carefully as the others.',
+    link: 'Everything so far has been about ways of being that keep costing something. Most of the people you will ever describe are not like that, and there is a name for them. It is easy to forget, so it is taught as carefully as the others.',
     case: 'pa-rosa', mark: 'P1',
     strip: [
-      'There are years and more than one place: thirty years of the bakery, and before that a school team, a union branch and a church rota.',
+      'There are years and more than one place: thirty years of the bakery, and before that a school team, a trade union and a church rota.',
       'The same way of being runs through all of it: Rosa is the loudest and surest person in every room.',
       'It is a strong way of being, and her family teases her about it. She does not turn scornful when someone else is thanked: she organises the party.',
       'It does not keep costing. Her staff have stayed an average of fifteen years, and she has the same three friends she made at school.'
@@ -41,10 +41,10 @@ FC.cards('psychology', 'u4', [
       'A bad week, or one big falling-out, is part of life and does not turn it into something else.',
       'It is not a lesser answer. For most of the people a case describes, it is the right one.'
     ],
-    not: 'It is not the name for anyone who is nice. Someone can be unpleasant, loud or a bit of a nuisance and still show {o:ordpersonality}, if what they do does not keep leaving damage behind. And it is not the name for a case that has given you too little. If a case shows only a week or one occasion, the key’s first question has already sent you somewhere else, and this question is not asked.',
+    not: 'It is not the name for anyone who is nice. Someone can be unpleasant, loud or a bit of a nuisance and still show {o:ordpersonality}, if what they do does not keep leaving damage behind. And it is not the name for a case that has given you too little. If a case shows only a week or one occasion, the first question has already sent you somewhere else, and this question is not asked.',
     wild: ['"That’s just how he is."', '"She’s always been like that."', '"He’s a bit much, but he’d do anything for you."', '"Loud, but a good heart."'],
     self: 'You will meet it in most of the people you know well: the friend who is always late and always forgiven, the uncle who tells the same story, the colleague who says exactly what she thinks.',
-    ask: '"What has this way of being cost, again and again, and who has paid?" If the honest answer is "very little, and it was put right", the key’s answer is this one.' },
+    ask: '"What has this way of being cost, again and again, and who has paid?" If the honest answer is "very little, and it was put right", the answer is this one.' },
 
   { id: 'check-ordpersonality', kind: 'check', after: 'ordpersonality',
     case: 'pa-marcus',
@@ -56,8 +56,8 @@ FC.cards('psychology', 'u4', [
     instruction: 'Both chefs tell every new cook that he is the best in the city. Compare two things: what each does when a young cook is written up in the paper, and what the years have cost.',
     prompt: { kind: 'which', option: 'P1.above', answer: 'pa-paolo' },
     difference: [
-      'In Case A Paolo runs the young cook down: "a pretty face with a borrowed recipe". He stops giving her shifts. The best cooks leave within a year, and his daughters stopped bringing friends years ago. The key’s answer is {a:P1.above}, and the case is {o:narcgrand}.',
-      'In Case B Sunil says the same thing about himself, and frames the article. His cooks stay for years, and some of them still ring him. The key’s answer is {a:P1.steady}, and the case is {o:ordpersonality}.',
+      'In Case A Paolo runs the young cook down: "a pretty face with a borrowed recipe". He stops giving her shifts. The best cooks leave within a year, and his daughters stopped bringing friends years ago. The answer is {a:P1.above}, and the case is {o:narcgrand}.',
+      'In Case B Sunil says the same thing about himself, and frames the article. His cooks stay for years, and some of them still ring him. The answer is {a:P1.steady}, and the case is {o:ordpersonality}.',
       'The boast is the same in both. What differs is what comes with it. A boast, and even a loud, bossy way of being, is not enough for {o:narcgrand}. What makes it that name is the scorn when another person is praised, and a cost that keeps coming back.'
     ] },
 
@@ -76,7 +76,7 @@ FC.cards('psychology', 'u4', [
       'Put Ellis next to Dennis. On the surface they could hardly be more different. Dennis is loud and scornful, and Ellis is quiet and polite. Dennis acts above everyone, and Ellis says he has been overlooked.',
       'Underneath, they are built the same way. Remember the idea from Dennis: for some people, how much they are worth depends on being treated as special by others, again and again. When it is not given, that sense of worth feels under threat, and the person defends it.',
       'Dennis defends it outward, with anger and scorn at whoever is in the way. Ellis defends it inward, with hurt and resentment. "Resentment" is a lasting bitterness about something you feel you were owed. Ellis does not run his sister down. He goes quiet, keeps count of what he is owed, and lets it grow. A person like this feels that other people keep failing to see how special they are, and pulls away and resents it rather than lashing out.',
-      'That is why the key gives both of them one family name, narcissism. It is the name for a sense of worth that depends on being treated as special. What differs is how it is defended: outward, with anger and scorn, or inward, with hurt and resentment. In both there is little room for what other people feel, and in both it keeps costing.',
+      'That is why both of them share one name, narcissism. It is the name for a sense of worth that depends on being treated as special. What differs is how it is defended: outward, with anger and scorn, or inward, with hurt and resentment. In both there is little room for what other people feel, and in both it keeps costing.',
       'It is not the same as shyness. A shy person is also quiet, but shyness does not keep a count of what people owe. Ellis’s silence has a reason and a target.'
     ],
     feature: { step: 'P1', option: 'overlooked' },

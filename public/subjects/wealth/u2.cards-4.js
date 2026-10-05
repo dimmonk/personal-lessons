@@ -62,8 +62,8 @@ FC.cards('wealth', 'u2', [
     instruction: 'Ravi and his brother Sunil hold the same two funds, the other way round. Compare one thing: which account holds the fund that pays out the most.',
     prompt: { kind: 'which', option: 'E1.nomore', answer: 'e-l-nocut-b' },
     difference: [
-      'In Case A Ravi’s bond fund pays out £3,000 a year and sits in the ordinary account, where he pays £750 on it every year. His pension holds the fund that pays out almost nothing. The key’s answer is {a:E1.incometax}, and the case is {o:location}.',
-      'In Case B Sunil has the same two funds, and the bond fund is in his pension. Its £3,000 is not taxed, and the fund of shares in his ordinary account costs him £150. That is already about as low as it can be, so nothing needs changing. The key’s answer is {a:E1.nomore}, and the case is {o:nocut}.',
+      'In Case A Ravi’s bond fund pays out £3,000 a year and sits in the ordinary account, where he pays £750 on it every year. His pension holds the fund that pays out almost nothing. The answer is {a:E1.incometax}, and the case is {o:location}.',
+      'In Case B Sunil has the same two funds, and the bond fund is in his pension. Its £3,000 is not taxed, and the fund of shares in his ordinary account costs him £150. That is already about as low as it can be, so nothing needs changing. The answer is {a:E1.nomore}, and the case is {o:nocut}.',
       'The brothers have the same funds, the same sums and the same accounts. Only which fund is in which account differs, and that turns £750 a year of tax into £150. The first case needs a swap and the second needs nothing.'
     ] }
 ]);

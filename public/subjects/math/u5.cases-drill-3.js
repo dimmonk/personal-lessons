@@ -21,8 +21,8 @@ FC.cases('math', 'u5', [
       ]
     },
     reason: {
-      M1: 'The words {cue:M1} ask in how many different ways four places can be filled, a count of ways something can turn out. The problem does not change as time passes, has no hidden number for a calculation to fit, does not share whole numbers out in groups and has no shape. It is about the number of ways that something can come out, or its chance, so the key’s first answer is {a:M1.chance}.',
-      C1: 'The words {cue:C1} show four places filled one after another from one group of 10 runners, so that each place uses one runner up, and the places are different from each other, so the key’s answer is {a:C1.order}.'
+      M1: 'The words {cue:M1} ask in how many different ways four places can be filled, a count of ways something can turn out. The problem does not change as time passes, has no hidden number for a calculation to fit, does not share whole numbers out in groups and has no shape. It is about the number of ways that something can come out, or its chance, so the answer to the first question is {a:M1.chance}.',
+      C1: 'The words {cue:C1} show four places filled one after another from one group of 10 runners, so that each place uses one runner up, and the places are different from each other, so the answer is {a:C1.order}.'
     },
     not: {
       outcome: 'comb',
@@ -76,8 +76,8 @@ FC.cases('math', 'u5', [
       C1: ['lines up 3 of 8 children in a row for a photo, from left to right']
     },
     reason: {
-      M1: 'The words {cue:M1} ask how many different rows can be made, a count of ways something can turn out. Nothing here is followed through time, no number is hidden for a calculation to fit, no whole number is split into groups, and no shape is measured. The problem asks for the number of different results, or for a chance, which is the key’s first answer {a:M1.chance}.',
-      C1: 'The words {cue:C1} show 3 children taken from one group of 8 and placed from left to right, so that the order is part of the result, and ask how many different rows there are, so the key’s answer is {a:C1.order}.'
+      M1: 'The words {cue:M1} ask how many different rows can be made, a count of ways something can turn out. Nothing here is followed through time, no number is hidden for a calculation to fit, no whole number is split into groups, and no shape is measured. The problem asks for the number of different results, or for a chance, which is the answer to the first question {a:M1.chance}.',
+      C1: 'The words {cue:C1} show 3 children taken from one group of 8 and placed from left to right, so that the order is part of the result, and ask how many different rows there are, so the answer is {a:C1.order}.'
     },
     not: {
       outcome: 'comb',
@@ -125,8 +125,8 @@ FC.cases('math', 'u5', [
       C1: ['a first, a second and a third prize. Each ticket can win at most one prize']
     },
     reason: {
-      M1: 'The words {cue:M1} ask in how many different ways the prizes can go to tickets, a count of ways something can turn out. Nothing in it follows an amount as time passes, hides a number that a calculation must fit, or splits whole numbers into groups, and there is no shape to measure. What it asks for is a count of the results, or the chance of something, so the key’s first answer is {a:M1.chance}.',
-      C1: 'The words {cue:C1} show three different prizes drawn one after another from one drum of 20 tickets, with no ticket winning twice, and ask how many different ways there are, so the key’s answer is {a:C1.order}.'
+      M1: 'The words {cue:M1} ask in how many different ways the prizes can go to tickets, a count of ways something can turn out. Nothing in it follows an amount as time passes, hides a number that a calculation must fit, or splits whole numbers into groups, and there is no shape to measure. What it asks for is a count of the results, or the chance of something, so the answer to the first question is {a:M1.chance}.',
+      C1: 'The words {cue:C1} show three different prizes drawn one after another from one drum of 20 tickets, with no ticket winning twice, and ask how many different ways there are, so the answer is {a:C1.order}.'
     },
     not: {
       outcome: 'comb',
@@ -182,8 +182,8 @@ FC.cases('math', 'u5', [
       ]
     },
     reason: {
-      M1: 'The words {cue:M1} ask how many different morning lists are possible, a count of ways something can turn out. The problem does not change as time passes, has no hidden number for a calculation to fit, does not share whole numbers out in groups and has no shape. It is about the number of ways that something can come out, or its chance, so the key’s first answer is {a:M1.chance}.',
-      C1: 'The words {cue:C1} show 4 of 7 applicants taken one after another, with the order of the four fixed, so that the order is part of the result, so the key’s answer is {a:C1.order}.'
+      M1: 'The words {cue:M1} ask how many different morning lists are possible, a count of ways something can turn out. The problem does not change as time passes, has no hidden number for a calculation to fit, does not share whole numbers out in groups and has no shape. It is about the number of ways that something can come out, or its chance, so the answer to the first question is {a:M1.chance}.',
+      C1: 'The words {cue:C1} show 4 of 7 applicants taken one after another, with the order of the four fixed, so that the order is part of the result, so the answer is {a:C1.order}.'
     },
     not: {
       outcome: 'comb',
@@ -234,8 +234,8 @@ FC.cases('math', 'u5', [
       C1: ['4 dishes picked from the 9 on its list', 'the order matters']
     },
     reason: {
-      M1: 'The words {cue:M1} ask how many different tasting menus can be made, a count of ways something can turn out. Nothing here is followed through time, no number is hidden for a calculation to fit, no whole number is split into groups, and no shape is measured. The problem asks for the number of different results, or for a chance, which is the key’s first answer {a:M1.chance}.',
-      C1: 'The words {cue:C1} show 4 dishes picked from one list of 9, one after another, and say that the order matters, so that two menus with the same dishes in a different order are different menus, so the key’s answer is {a:C1.order}.'
+      M1: 'The words {cue:M1} ask how many different tasting menus can be made, a count of ways something can turn out. Nothing here is followed through time, no number is hidden for a calculation to fit, no whole number is split into groups, and no shape is measured. The problem asks for the number of different results, or for a chance, which is the answer to the first question {a:M1.chance}.',
+      C1: 'The words {cue:C1} show 4 dishes picked from one list of 9, one after another, and say that the order matters, so that two menus with the same dishes in a different order are different menus, so the answer is {a:C1.order}.'
     },
     not: {
       outcome: 'comb',

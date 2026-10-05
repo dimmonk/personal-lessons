@@ -17,10 +17,10 @@ FC.cards('wealth', 'u3', [
       'A landlord has six flats and a shop, and every one is in his own name. A tenant has just fallen on the stairs of one of them.',
       'A couple have a house with a pool. Their insurance would pay up to half a million. A lawyer tells them a serious injury to a child can bring a demand for four times that.',
       'And two more, in which the same shape is there and nothing needs doing. A woman runs a brewery that is most of what she owns, and she has six years of spending in the bank, the rest of her money spread over funds, and nobody holding her shares as security for a loan. A man owes a small sum on a flat, at a rate fixed for fifteen years, and the bank cannot ask for the money back.',
-      'In every one of these, the first question of the key finds the same thing: {a:D1.shock}. That answer says where to look. What you do about it depends on what the one thing is and what the person can do about it, and in the last two cases the honest answer is to leave it alone. This unit teaches you to tell the seven apart.'
+      'In every one of these, the first question finds the same thing: {a:D1.shock}. That answer says where to look. What you do about it depends on what the one thing is and what the person can do about it, and in the last two cases the honest answer is to leave it alone. This unit teaches you to tell the seven apart.'
     ],
     add: [
-      'Every case in this unit begins with that first answer. The unit teaches the next question of the key, which asks what the one thing is and what can be done about it. It has seven answers, and each leads to one name. Six of the names say what to do. One says that nothing needs doing.',
+      'Every case in this unit begins with that first answer. The unit teaches the next question, which asks what the one thing is and what can be done about it. It has seven answers, and each leads to one name. Six of the names say what to do. One says that nothing needs doing.',
       'Each name is taught with cases first. After every step you answer one question about a new case, and the answer and the reason are shown straight away.'
     ],
     map: { branch: 'shock' } },
@@ -28,7 +28,7 @@ FC.cards('wealth', 'u3', [
   /* ---------- The word "a holding" ---------- */
   { id: 'w3-term-holding', kind: 'term', term: 'holding',
     h: 'One investment, and how much of everything it is',
-    link: 'The key’s next question is about one thing that could take most of what a person has. Before it, one word, so that every case means the same thing by it.',
+    link: 'The next question is about one thing that could take most of what a person has. Before it, one word, so that every case means the same thing by it.',
     case: 'w3-h-t-holding',
     plain: [
       'Joanna owns four things she could sell: shares in the water company (£30,000), a flat (£180,000), a quarter of her brother’s bakery (£40,000) and a pension fund (£60,000). Together that is £310,000.',
@@ -40,7 +40,7 @@ FC.cards('wealth', 'u3', [
 
   /* ---------- First answer: one holding, free to sell, not run by the owner ---------- */
   { id: 'w3-meet-diversify', kind: 'meet', outcome: 'diversify',
-    link: 'The key’s question has seven answers. The first is the plainest: one holding that is most of what the person has, and nothing in the way of doing something about it.',
+    link: 'The question has seven answers. The first is the plainest: one holding that is most of what the person has, and nothing in the way of doing something about it.',
     case: 'w3-h-div-1', mark: 'S1',
     strip: [
       'There is one person, Meena, and about £530,000: £420,000 in one company’s shares, and £110,000 in savings and a pension.',
@@ -56,7 +56,7 @@ FC.cards('wealth', 'u3', [
     ],
     feature: { step: 'S1', option: 'freeheld' },
     name: [
-      'The key’s answer is {a:S1.freeheld}, and the name of what to do about it is {o:diversify}. “Sell down” means sell part, then more, in steps. “On a schedule” means the steps are planned in advance, with dates.',
+      'The answer is {a:S1.freeheld}, and the name of what to do about it is {o:diversify}. “Sell down” means sell part, then more, in steps. “On a schedule” means the steps are planned in advance, with dates.',
       'The name is about what to do. It does not say that the company is a bad one. It says that no one company should be most of what a person has, when they are free to sell it and have no part in running it.'
     ] },
 
@@ -79,7 +79,7 @@ FC.cards('wealth', 'u3', [
       'From here on, the cases change their stories on purpose. Sometimes two cases will share a person and a story and differ only underneath. When that happens, the shared story is there to show you that it decides nothing.',
       'Two more things change on purpose. One is size: £30,000 and £3,000,000 can be the same kind of case. The other is whether anything needs doing. In some cases the one thing is already looked after, and the answer is to leave it alone. Seeing that is part of the skill.'
     ],
-    fixed: ['what the person can do about the one thing, which is what the key asks about: {q:S1}'],
+    fixed: ['what the person can do about the one thing, which is what the question is about: {q:S1}'],
     varies: ['the kind of money', 'the people', 'the size of the sums', 'how worried you would be', 'whether anything needs doing'] },
 
   { id: 'w3-portrait-diversify', kind: 'portrait', outcome: 'diversify',
@@ -120,7 +120,7 @@ FC.cards('wealth', 'u3', [
     right: [
       'What is true: knowing a company well helps you judge whether it is a good one. Someone who knows an industry can be right that a company is strong, and while a person is still building money and could earn it again, putting a lot into what they know can be a reasonable bet.',
       'What does not follow: knowing a company does not stop what comes from outside what you know. A rival wins its biggest contract, a law changes, a fire starts, a fraud is hidden from every outsider, a whole industry has a bad ten years. None of these needs ignorance to happen to someone who knows the company well. Knowledge changes how likely you think a bad event is. It does not change how much of your money goes with it if one comes.',
-      'The key’s question is about the second thing: what could take most of what a person has. It is not asked about how well you understand the thing. Understanding is a reason to expect that nothing will go wrong. This unit is about what to do in case something does.'
+      'The question is about the second thing: what could take most of what a person has. It is not asked about how well you understand the thing. Understanding is a reason to expect that nothing will go wrong. This unit is about what to do in case something does.'
     ],
     testedBy: ['w3-r-sup-2'] }
 ]);

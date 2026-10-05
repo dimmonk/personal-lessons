@@ -44,7 +44,7 @@ FC.cards('stats', 'u6', [
       'Nothing in the claim says which came first. Order is exactly what a snapshot leaves out.',
       'The second thing is something that could be a reason for the first: a break-in is a reason to buy a camera, a good month is a reason to praise a team, being ill is a reason to see a doctor.',
       'It turns up in health, money, work and crime, wherever people respond to a problem or a success by doing something. The doing then goes together with the problem or the success.',
-      'Sometimes both arrows are real, and each feeds the other. The key asks only whether the second could come first and lead to the first, because that is enough to make the claim unsafe.'
+      'Sometimes both arrows are real, and each feeds the other. The question is only whether the second could come first and lead to the first, because that is enough to make the claim unsafe.'
     ],
     not: [
       'Two things going together is not enough. The name needs a way the second could come first. If the case shows something else that differs between the groups and nothing about order, that is the answer {a:K1.behind}.',
@@ -70,25 +70,25 @@ FC.cards('stats', 'u6', [
     instruction: 'Both cases are about the same city, the same trees and the same home prices. Compare one thing: what the account shows beside the figures. Is it something else that differs between the streets, or the order in which things happened?',
     prompt: { kind: 'which', option: 'K1.backward', answer: 'k-trees-first' },
     difference: [
-      'In Case A the account shows that most of the tree-lined streets are in older neighborhoods, where the lots are twice as large. Large lots sell for more and have room for trees. Lot size is something else that differs between the streets and could bring about the high prices on its own, and it explains the trees as well. The key’s answer is {a:K1.behind}, and the case is {o:confound}.',
-      'In Case B the account shows an order: the city planted trees on a street only after its prices passed $400,000, because the city pays for trees out of property tax. Nothing else is needed. The high prices came first and led to the trees. The key’s answer is {a:K1.backward}, and the case is {o:reverse}.',
+      'In Case A the account shows that most of the tree-lined streets are in older neighborhoods, where the lots are twice as large. Large lots sell for more and have room for trees. Lot size is something else that differs between the streets and could bring about the high prices on its own, and it explains the trees as well. The answer is {a:K1.behind}, and the case is {o:confound}.',
+      'In Case B the account shows an order: the city planted trees on a street only after its prices passed $400,000, because the city pays for trees out of property tax. Nothing else is needed. The high prices came first and led to the trees. The answer is {a:K1.backward}, and the case is {o:reverse}.',
       'The figures and the claim are the same in both. A third thing behind both gives one answer, and the second thing coming first gives the other.'
     ] },
 
   { id: 'look-confound-fair', kind: 'lookalike', ledger: 'confound~cause_ok',
-    link: 'A claim built on two groups can have groups that chose or were put where they are, or groups that a draw formed, and a draw is what the key’s first question answers with {a:S1.holds}. The figures of the two can look the same. This card puts them side by side.',
+    link: 'A claim built on two groups can have groups that chose or were put where they are, or groups that a draw formed, and a draw is what the first question answers with {a:S1.holds}. The figures of the two can look the same. This card puts them side by side.',
     cases: ['k-quit-chose', 'k-quit-lottery'],
     instruction: 'Both cases are about the same health department and the same quit-smoking text program, and in both the program group did better. Compare one thing: who decided which smokers were in the program.',
     prompt: { kind: 'which', option: 'S1.holds', answer: 'k-quit-lottery' },
     difference: [
-      'In Case A smokers signed up themselves, and 240 of the 300 who signed up had already picked a quit date, against 70 of the 700 who did not. Readiness to quit is something else that differs between the groups and could bring about the result alone. The key’s first answer is {a:S1.cause}, and the second answer, to {q:K1}, is {a:K1.behind}.',
-      'In Case B the department had places for half of the 800 smokers who asked to join, and a draw from a hat decided who got them. Readiness to quit is no likelier to be in one group than the other. All 800 were reached a year later and counted in the same way, and 30 in 100 against 20 in 100 is a difference the claim can rest on. The key’s answer is {a:S1.holds}, because the claim rests on {plain:cause_ok}.',
+      'In Case A smokers signed up themselves, and 240 of the 300 who signed up had already picked a quit date, against 70 of the 700 who did not. Readiness to quit is something else that differs between the groups and could bring about the result alone. The first answer is {a:S1.cause}, and the second answer, to {q:K1}, is {a:K1.behind}.',
+      'In Case B the department had places for half of the 800 smokers who asked to join, and a draw from a hat decided who got them. Readiness to quit is no likelier to be in one group than the other. All 800 were reached a year later and counted in the same way, and 30 in 100 against 20 in 100 is a difference the claim can rest on. The answer is {a:S1.holds}, because the claim rests on {plain:cause_ok}.',
       'The program and the claim are the same in both. In Case A the smokers decided who got the program, and in Case B a draw did.'
     ] },
 
   { id: 'exc-simpson', kind: 'exception', looksLike: 'simpson', is: 'confound', ledger: 'confound~simpson',
     h: 'A hidden mix of mild and severe, and still {o:confound}',
-    link: 'A different name, {plain:simpson}, is for totals set side by side as a ranking, and the key reaches it through the answer {a:C1.split}. A claim of cause can look just like it. This card shows one.',
+    link: 'A different name, {plain:simpson}, is for totals set side by side as a ranking, and it is reached through the answer {a:C1.split}. A claim of cause can look just like it. This card shows one.',
     case: 'k-antibiotic',
     setup: 'In the records of this case the two groups have a very different mix of mild and severe patients, and a different mix of easy and hard ones is what the name for {plain:simpson} is about. Yet this case is {o:confound}.',
     prompt: { kind: 'phrase', answer: 'Doctors gave the antibiotic mostly to the sickest patients' },
@@ -97,5 +97,5 @@ FC.cards('stats', 'u6', [
       'That is what you point to for {o:confound}: {needs:confound}. Here the doctors decided who got the antibiotic, so the sickest patients are bunched in the antibiotic group: 70 of 100, against 20 of 100. Being severely ill could keep a patient in the hospital longer on its own. The 3 extra days are what you would expect from a sicker group, with the antibiotic having done nothing at all.',
       'You can check what a hidden mix does with arithmetic. Among the severe patients, 70 got the antibiotic and 20 did not, and among the mild ones 30 got it and 80 did not. Suppose the antibiotic did nothing, and a severe patient stays 11 days and a mild one stays 5, whoever they are. The antibiotic group would average (70 × 11 + 30 × 5) ÷ 100 = 920 ÷ 100 = 9.2 days. The other group would average (20 × 11 + 80 × 5) ÷ 100 = 620 ÷ 100 = 6.2 days. The gap is 3 days, the same as the health site’s, with the antibiotic doing nothing at all.'
     ],
-    take: 'This is the key’s decision, and it is worth knowing that it is the key’s decision. In the field, one of these is a form of the other, and people who study them do not all draw the line in one place. The key draws it at what is set side by side: two totals of two places or people, which gives {a:C1.split}, or a group that did a thing beside a group that did not, with a claim of cause, which gives {a:K1.behind}.' }
+    take: 'This is a choice made to keep the answers clear, and it is worth knowing that it is a choice. In the field, one of these is a form of the other, and people who study them do not all draw the line in one place. The line is drawn at what is set side by side: two totals of two places or people, which gives {a:C1.split}, or a group that did a thing beside a group that did not, with a claim of cause, which gives {a:K1.behind}.' }
 ]);

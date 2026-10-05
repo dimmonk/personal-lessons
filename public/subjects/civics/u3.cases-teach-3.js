@@ -30,7 +30,7 @@ FC.cases('civics', 'u3', [
       { text: 'The House has voted to charge the head of the federal housing department with misusing public money' },
       { text: 'The Senate will hold the trial next month', note: 'That is the second step, and it is still to come. The words asked for are the step already taken.' }
     ],
-    reason: { C1: 'The House has taken the first step: it has voted to charge a federal official with serious misconduct. The Senate’s trial of the charge is still to come, and the key’s answer covers both steps.' },
+    reason: { C1: 'The House has taken the first step: it has voted to charge a federal official with serious misconduct. The Senate’s trial of the charge is still to come, and the answer covers both steps.' },
     not: { outcome: 'confirm', why: 'It is a matter for the Senate about a person who works for the government. But he already has the job, and the vote will be on a charge, not on putting him forward.' } },
 
   /* ---------- The look-alike pair: the same person, before and after she has the job ---------- */
@@ -44,7 +44,7 @@ FC.cases('civics', 'u3', [
     outcome: 'impeach', route: { D1: ['congress'], C1: ['remove'] },
     cues: { C1: 'The House voted, by more than half, to charge her with taking money to decide cases' } },
 
-  /* ---------- The check on the key's question: every answer is possible ---------- */
+  /* ---------- The check on the question: every answer is possible ---------- */
   { id: 'k-wed', use: 'check', tier: 'clean', setting: 'home', topic: 'a marriage age for every state', name: 'The marriage age',
     text: "Two people in a small town want to marry at eighteen. The House and the Senate passed a bill that says no one in any state may marry before the age of twenty-one.",
     outcome: 'beyondcong', route: { D1: ['congress'], C1: ['barred'] },

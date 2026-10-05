@@ -13,14 +13,14 @@ FC.cards('psychology', 'u4', [
     everyday: [
       'You have heard the labels. A boss is called by the medical name for a swollen ego, an ex by the medical name for clinging, a flatmate by the medical name for being dramatic, a stranger by a word for being cold and cruel. Almost always, the person saying it has seen one bad week, one hard relationship, or one loud person at one party.',
       'This unit teaches what each label would need before it could be used for an account of a person. All of them need years, more than one place, more than one relationship, and what the person does again and again. Five of the six names also need something people rarely count: a cost, something that keeps being lost or harmed because of how the person is. The sixth name is for the person who is loud, shy, dramatic, blunt or touchy in the same way for years and does no lasting harm. It is the most common right answer.',
-      'The people in this unit are invented. Even for them, the key names what a case shows, and the cards say what that would and would not tell you about a real person.'
+      'The people in this unit are invented. Even for them, a name says what a case shows, and the cards say what that would and would not tell you about a real person.'
     ],
     map: { branch: 'pattern' } },
 
   /* ---------- A word the whole unit is built on ---------- */
   { id: 'term-pd', kind: 'term', term: 'pd',
     h: 'A lasting way of being that keeps costing',
-    link: 'Before any of the six names, one word that the unit and the key both lean on. It is easier to see on a case first.',
+    link: 'Before any of the six names, one word that the whole unit leans on. It is easier to see on a case first.',
     case: 'pa-dale',
     plain: [
       'Dale has had five jobs in twenty years, and in every one the same thing has happened. This is not a bad week. Look at three things about it. The first is how long: twenty years. The second is how widely: five workplaces, and a first marriage, and two sons as well. The third is what it has done: he has left or been pushed out of every job, and one of his sons has not spoken to him for six years.',
@@ -29,7 +29,7 @@ FC.cards('psychology', 'u4', [
     ],
     after: [
       'Two things about the word. The first is that it is used for all three at once. A way of being that lasts and turns up everywhere, like being shy, is not this unless it also keeps costing. The second is that it is a medical word. Only a professional can say that a particular person has one. That judgement is called a diagnosis, and it comes after a long assessment: many meetings and a full history. A short account of a person is not that.',
-      'In the word, "personality" means how a person usually is, and "disorder" says that it keeps doing harm. Dale’s way has a name in the key. This card is not about that name. It is about the three things that every name in this unit has to show.'
+      'In the word, "personality" means how a person usually is, and "disorder" says that it keeps doing harm. Dale’s way has a name here. This card is not about that name. It is about the three things that every name in this unit has to show.'
     ] },
 
   /* ---------- Grandiose narcissism ---------- */
@@ -51,7 +51,7 @@ FC.cards('psychology', 'u4', [
       'And notice that it keeps costing. Two juniors resigned with the same complaint and his son keeps away. Take the cost out and you would have a loud, certain man. Leave it in, and you have a way of being that keeps hurting the people around it.'
     ],
     feature: { step: 'P1', option: 'above' },
-    name: 'The name for this is {o:narcgrand}. "Narcissism" is the word for a sense of worth that depends on being treated as special. "Grandiose" means having a grand picture of yourself, as better than others and owed more. So the name says: that sense of worth, defended by acting grand. It is one of two narcissisms in the key.' },
+    name: 'The name for this is {o:narcgrand}. "Narcissism" is the word for a sense of worth that depends on being treated as special. "Grandiose" means having a grand picture of yourself, as better than others and owed more. So the name says: that sense of worth, defended by acting grand. It is one of two narcissisms in this subject.' },
 
   { id: 'again-narcgrand', kind: 'again', outcome: 'narcgrand',
     link: 'Dennis gave you what to point to: {needs:narcgrand}. Here is a second case, in a village hall and not a law firm.',
@@ -71,7 +71,7 @@ FC.cards('psychology', 'u4', [
       'The names belong to the layer underneath. The same story can carry any of them: a person who is scornful at work could be one of several names, depending on what else the case shows. And each name turns up in every kind of story. Nor does how loud the person is decide it. Some of the names here are loud and some are quiet, and some of the loudest people in these cases are ones whose way of being does no lasting harm.',
       'From here on the cases change their stories on purpose. Sometimes two cases will share a story and differ only underneath. Where they do, the shared story is there to show you that it tells you nothing.'
     ],
-    fixed: ['what the key asks about: {q:P1}'],
+    fixed: ['what the question asks about: {q:P1}'],
     varies: ['the setting', 'the people', 'how loud or quiet the person is', 'whether you like the person', 'how much is at stake'] },
 
   { id: 'portrait-narcgrand', kind: 'portrait', outcome: 'narcgrand',
@@ -86,7 +86,7 @@ FC.cards('psychology', 'u4', [
     ],
     not: [
       'Confidence is not this name. A confident person believes they can do something, and can still ask how you are, thank the junior who won the case and take a correction. The name needs the scorn and the cost.',
-      'Pride is not it either. Someone who is proud of an achievement and still interested in you is showing ordinary pride. Nor is one boastful evening or one bad week: it needs the years. And it is never a label for a person you dislike. The key names what a case shows, and it does not say what a man is.'
+      'Pride is not it either. Someone who is proud of an achievement and still interested in you is showing ordinary pride. Nor is one boastful evening or one bad week: it needs the years. And it is never a label for a person you dislike. The name says what a case shows, and it does not say what a man is.'
     ],
     wild: ['"Do you know who I am?"', '"They were never going to appreciate someone like me."', '"It wasn’t my fault. The team let me down."', '"Nobody here is in my league."'],
     self: 'You will rarely have enough to go on. You may have this much about a boss you worked under for many years, or a relative. About most of the people you are tempted to describe this way, you have a week, or one argument.',

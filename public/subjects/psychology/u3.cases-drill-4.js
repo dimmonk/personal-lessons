@@ -59,7 +59,7 @@ FC.cases('psychology', 'u3', [
     text: '"I asked him about the missing keys, and he said he had not taken them. That is turning the blame around."',
     ask: { type: 'missing', name: 'darvo' },
     fault: 'The claim shows a denial and stops there. A denial on its own is not {o:darvo}. The case must show that he did it, and that in answer to being asked he also attacks the person who asked and plays the one wronged. The claim shows none of those.',
-    corrected: 'I asked him about the missing keys, and he said he had not taken them. That is a denial, and so far nothing more. It would be {o:darvo} only if the case showed he had taken them and, when I asked, he denied it, attacked me for asking, and said he was the one being wronged.' },
+    corrected: 'I asked him about what had gone missing, and he said he had not taken it. That is a denial, and so far nothing more. It would be {o:darvo} only if the case showed he had taken them and, when I asked, he denied it, attacked me for asking, and said he was the one being wronged.' },
 
   { id: 'claim-doubt', use: 'claim',
     text: '"She told me I had the wrong day for our dinner. That is gaslighting."',
@@ -70,18 +70,18 @@ FC.cases('psychology', 'u3', [
   { id: 'claim-meant', use: 'claim',
     text: '"She honestly believes he is the dishonest one, so it cannot be projection."',
     ask: { type: 'missing', name: 'projection' },
-    fault: 'The claim asks what she believes. The key never asks that, and an honest belief and {o:projection} can go together. What the key asks is what is done to the other person, as the case shows it: an accusation, the accuser doing exactly that, and nothing showing the other person doing it.',
+    fault: 'The claim asks what she believes. The questions never ask that, and an honest belief and {o:projection} can go together. What they ask is what is done to the other person, as the case shows it: an accusation, the accuser doing exactly that, and nothing showing the other person doing it.',
     corrected: 'She may honestly believe he is dishonest. It is {o:projection} if the case shows she is the one doing what she accuses him of, and nothing in the case shows him doing it.' },
 
   { id: 'claim-everywhere', use: 'claim',
     text: '"My boss told me my report was late, and I felt awful for days. She was manipulating me."',
     ask: { type: 'option', step: 'T1', answer: 'plain' },
-    fault: 'The claim reasons from how it felt. The key does not ask how upset anyone was, or whether it was meant. As the case shows it, the boss said the report was late and nothing more. That is the answer {a:T1.plain}.',
-    corrected: 'My boss told me my report was late, and I felt awful for days. Feeling awful tells me it hurt. It does not tell me she did one of the four things: she said what it looked like, and nothing more, so the key’s answer is {a:T1.plain}.' },
+    fault: 'The claim reasons from how it felt. The questions do not ask how upset anyone was, or whether it was meant. As the case shows it, the boss said the report was late and nothing more. That is the answer {a:T1.plain}.',
+    corrected: 'My boss told me my report was late, and I felt awful for days. Feeling awful tells me it hurt. It does not tell me she did one of the four things: she said what it looked like, and nothing more, so the answer is {a:T1.plain}.' },
 
   { id: 'claim-person', use: 'claim',
     text: '"She went cold for a week after I said no to her. She is a love-bomber."',
     ask: { type: 'missing', name: 'lovebomb' },
-    fault: 'The claim names a kind of person and points to one cold week. The key names what is done in a case, not what a person is. And the cold week is only the second half: nothing in the claim shows far more attention earlier on.',
+    fault: 'The claim names a kind of person and points to one cold week. The names are for what is done in a case, not for what a person is. And the cold week is only the second half: nothing in the claim shows far more attention earlier on.',
     corrected: 'She went cold for a week after I said no to her. That is the pulling back. It would be {o:lovebomb} only if, early on, she had given me far more praise, attention, gifts or plans than we had known each other long enough to explain.' }
 ]);

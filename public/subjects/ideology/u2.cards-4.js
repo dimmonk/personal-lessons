@@ -17,11 +17,11 @@ FC.cards('ideology', 'u2', [
     explain: [
       'The earlier texts asked the government for things, or promised to win the next election and pass a law. This text does not. It says that the owners’ strength cannot be beaten by votes, so the workers must take power themselves, through a party, and hold it. And it says that no rival party will be allowed.',
       'Notice the two halves. One is how power is won: taken, and not voted for. The other is how it is kept: held by one party, with no rivals and no election it could lose. Either half is enough to point to, and a text may give one or both. What matters is that the text does not offer to give power up at an election.',
-      'People who argue for this say that owners and their allies will use every means to stop a change, so the workers need one organised party that cannot be voted out until the change is safe. People who disagree say that a party that cannot be voted out has no way to be told it is wrong. Both claims are argued over. The key does not decide between them. It goes by whether the text says that a party, or the workers, will take power and keep it.',
+      'People who argue for this say that owners and their allies will use every means to stop a change, so the workers need one organised party that cannot be voted out until the change is safe. People who disagree say that a party that cannot be voted out has no way to be told it is wrong. Both claims are argued over. This course does not decide between them. It goes by whether the text says that a party, or the workers, will take power and keep it.',
       'On this card the marked words answer the question about the government, and not the one about the businesses. That is because here the words about power are what decide, and the words about the mills could be changed without changing the name.'
     ],
     feature: { step: 'C2', option: 'seize' },
-    name: 'The name for this is {o:ml}. It has two halves with a hyphen between them. The key does not need the history of either half. It uses the name for one thing: a party, or the workers, taking power and keeping it, with no offer to give it up at an election.' },
+    name: 'The name for this is {o:ml}. It has two halves with a hyphen between them. The history of either half is not needed here. The name stands for one thing: a party, or the workers, taking power and keeping it, with no offer to give it up at an election.' },
 
   { id: 'again-ml', kind: 'again', outcome: 'ml',
     link: 'The mill pamphlet gave you what to point to from one case: {needs:ml}. Here is a second case with a different story. This time the people are dockers, and the words come from a committee.',
@@ -61,7 +61,7 @@ FC.cards('ideology', 'u2', [
     prompt: { kind: 'which', option: 'C2.seize', answer: 'c-lk-dmml-ml' },
     difference: [
       'In Case A the text says it will win a majority in parliament and pass the law. A majority in parliament can be lost at the next election, so the text is leaving its power in the voters’ hands. It says nothing about taking power by force or ruling alone. The case is {o:demsoc}.',
-      'In Case B the text says the party will take power and keep it, and allow no rival party. That cannot be lost at an election. The key’s answer is {a:C2.seize}, and the case is {o:ml}.',
+      'In Case B the text says the party will take power and keep it, and allow no rival party. That cannot be lost at an election. The answer is {a:C2.seize}, and the case is {o:ml}.',
       'The mines, the miners and the handover are the same in both. What differs is whether the people asking can be voted out. That is why you cannot name a text from what it asks to be done with the businesses.'
     ] },
 
@@ -76,5 +76,5 @@ FC.cards('ideology', 'u2', [
       'The text says nothing about what should happen to the businesses, so the question about the businesses does not settle it. The question about the government does: the committee will rule alone, and no rival party will be allowed, so the answer is {a:C2.seize}. That answer keeps one name, {o:ml}.',
       'Nothing has to be said about the businesses for this name to apply. What the name needs is the taking and keeping of power, and the needs line says so: {needs:ml}.'
     ],
-    take: 'This is why the key asks two questions and not one. A text can be silent on the businesses and loud on power. If you stopped after the question about the businesses, you would have named this bulletin with a name that says nothing is attached, when the text has attached the one thing that matters most to another name.' }
+    take: 'This is why there are two questions and not one. A text can be silent on the businesses and loud on power. If you stopped after the question about the businesses, you would have named this bulletin with a name that says nothing is attached, when the text has attached the one thing that matters most to another name.' }
 ]);

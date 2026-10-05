@@ -62,5 +62,5 @@ FC.cases('scams', 'u5', [  /* ---------- Stage four: the whole route, no help. F
               F1: 'Someone Callum knows only through the site, who wrote to him out of nowhere, asks about his work and his family: {cue:F1}.',
               F2: 'Callum began nothing with him. A message from an opponent he has never met arrived first: {cue:F2}.' },
     not: { outcome: 'realdetails', why: 'The website is real and Callum chose to use it, but the questions about his work and family come from a private message that someone else began, and nothing he began needs the answers.' },
-    wouldChange: 'If he had met the opponent in person at a chess club, he would know him in another way, and the key would not apply.' }
+    wouldChange: 'If he had met the opponent in person at a chess club, he would know him in another way, and these questions would not apply.' }
 ]);

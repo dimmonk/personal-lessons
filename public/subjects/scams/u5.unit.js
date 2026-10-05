@@ -8,7 +8,7 @@
 
 FC.unit('scams', 'u5', {
   kind: 'C',              // C classification, F facts, P procedure
-  rev: 1,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
+  rev: 2,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
   standard: 1,            // lesson-standard version this unit was built to
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author). The app labels a draft as a draft.
   tag: 'Five',
@@ -52,7 +52,7 @@ FC.unit('scams', 'u5', {
     { id: 'p2', title: 'A friendly chat, and where it leads',
       cards: ['meet-friendlychat', 'again-friendlychat', 'portrait-friendlychat', 'check-friendlychat',
               'look-identitytheft-friendlychat', 'look-friendlychat-romance', 'exc-papers', 'refute-nomoney'] },
-    { id: 'p3', title: 'The key’s two questions, three whole cases, then the drill',
+    { id: 'p3', title: 'The two questions, three whole cases, then the drill',
       cards: ['q-f1', 'check-f1', 'q-f2', 'check-f2', 'worked-hearing', 'worked-running', 'worked-room'],
       drill: true, close: ['recap', 'transfer', 'plan'] }
   ],
@@ -99,7 +99,8 @@ FC.unit('scams', 'u5', {
   // Build notes: not shown to the learner, and left out of the fingerprint. The validator reads them.
   build: {
     history: [
-      { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1, written to the rewritten key (docs/rebuild/scams-plan.md). Not yet deployed, so later edits before the first deploy stay revision 1. Three names, the real one first; two questions; four look-alike pairs, one of them with a name from the unit on money; three whole cases; seventy-six or so cases in all.' }
+      { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1, written to the rewritten key (docs/rebuild/scams-plan.md). Not yet deployed, so later edits before the first deploy stay revision 1. Three names, the real one first; two questions; four look-alike pairs, one of them with a name from the unit on money; three whole cases; seventy-six or so cases in all.' },
+      { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' }
     ],
     // What the K2 rewrite changed in the key for this branch, and why (from docs/rebuild/scams-plan.md, section a).
     keyChanges: [

@@ -15,7 +15,7 @@ FC.cards('stats', 'u4', [
     canDo: 'After this unit you can read a claim about a figure that rose, fell or differed, such as a headline, a report to staff or a message a friend forwards, and say what else, apart from the real thing, might have moved it, or that nothing else did. You will be able to point to the words that show it. The claim can be about a delivery firm, a clinic, a school, a city or your own phone.',
     everyday: [
       'You have met claims like these. "Reported burglaries are up 30% since the new hotline." "Our waiting times are down by a third." "Diagnoses have doubled in ten years." "Nine in ten deliveries now arrive on time." Each one gives you a figure and tells you what to make of it: more crime, shorter waits, more illness, better service.',
-      'A figure is not the thing it stands for. It is what was written down, counted or measured, and then read as showing the real thing. Most of the time the two move together. Sometimes the figure moves and the real thing does not. The key has already sorted claims by the first part that goes wrong, and this unit is for the claims where its answer was {a:S1.measure}: the figure could rise, fall or differ while the real thing did nothing of the kind.',
+      'A figure is not the thing it stands for. It is what was written down, counted or measured, and then read as showing the real thing. Most of the time the two move together. Sometimes the figure moves and the real thing does not. The first question has already sorted claims by the first part that goes wrong, and this unit is for the claims where the answer was {a:S1.measure}: the figure could rise, fall or differ while the real thing did nothing of the kind.',
       'There are three ordinary ways for that to happen, and each sends you to a different check. People who are judged on the figure can work on the figure instead of the real thing. The way of counting can change, so that the same situation gets a different number. Or more effort can go into finding the thing, so that more of what was always there turns up. This unit teaches you to tell the three apart, and to see a figure for what it is: a count made by someone, in some way, with some amount of effort.'
     ],
     add: [
@@ -59,11 +59,11 @@ FC.cards('stats', 'u4', [
     link: 'The last card asked you to ignore the story. That instruction holds for the whole unit, so here it is once in full.',
     body: [
       'Every claim in this unit has two layers. The top layer is the story: a delivery firm, a school, a clinic, a ski area. The layer underneath is how the figure came to be what it is: who makes it, how it is counted, and how hard anyone looked for what it counts.',
-      'The three names belong to the layer underneath. The same story can carry any of them. A claim about a hospital can be a figure the staff are paid on, a figure counted in a new way, or a figure from more testing. And it can be a claim in which none of the three applies. The key has its own answer for that: {a:S1.holds}.',
+      'The three names belong to the layer underneath. The same story can carry any of them. A claim about a hospital can be a figure the staff are paid on, a figure counted in a new way, or a figure from more testing. And it can be a claim in which none of the three applies. There is an answer for that too: {a:S1.holds}.',
       'From here on, the claims change their stories on purpose. Sometimes two claims share the same story and the same rise, and differ only underneath. When that happens, the shared story is there to show you that it decides nothing.',
       'Two more things change on purpose: how large the rise is, and whether anyone did anything wrong. A rise of 16 points can come from the real thing moving, and a rise of 1 point can be the work of someone paid on it. Nobody in these claims has to be dishonest for a figure to move.'
     ],
-    fixed: ['how the figure came to be what it is, which is what the key asks about: {q:M1}'],
+    fixed: ['how the figure came to be what it is, which is what this question asks about: {q:M1}'],
     varies: ['the topic', 'the people', 'how large the rise is', 'whether anyone meant to mislead', 'whether the figure moved because of anything but the real thing'] },
 
   { id: 'portrait-proxy', kind: 'portrait', outcome: 'proxy',

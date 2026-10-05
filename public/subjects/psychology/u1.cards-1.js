@@ -18,8 +18,8 @@ FC.cards('psychology', 'u1', [
       'So before any label, there is an earlier question: what kind of thing is in front of you? This unit teaches that question.'
     ],
     add: [
-      'Two words are used all the way through, so here they are once. A case is a short account of something a person said or did: a few sentences, the sort of thing a friend tells you or you read in a message. The key is a short list of questions that you put to a case, always in the same order. Each answer narrows down what the case can be, until one name is left.',
-      'This unit teaches the first question of the key and nothing after it. That question sorts a case into one of four kinds, and in this unit the kind is the name. The labels people use in daily life, such as the three above, are finer than these four kinds, and this unit does not teach any of them. Three of the four kinds lead on to a further question, taught in a later unit, and that question gives a finer name. The fourth kind does not: when the answer is {a:D1.none}, the key has nothing more to ask, and that is a result in its own right. Everything else in the subject starts from the answer to this first question.'
+      'One word is used all the way through, so here it is once. A case is a short account of something a person said or did: a few sentences, the sort of thing a friend tells you or you read in a message. You put a short list of questions to a case, always in the same order. Each answer narrows down what the case can be, until one name is left.',
+      'This unit teaches the first question and nothing after it. That question sorts a case into one of four kinds, and in this unit the kind is the name. The labels people use in daily life, such as the three above, are finer than these four kinds, and this unit does not teach any of them. Three of the four kinds lead on to a further question, taught in a later unit, and that question gives a finer name. The fourth kind does not: when the answer is {a:D1.none}, there is nothing more to ask, and that is a result in its own right. Everything else in the subject starts from the answer to this first question.'
     ],
     map: { branch: 'gate' } },              // a gate unit's preview map is the gate itself, drawn from the key
 
@@ -36,12 +36,12 @@ FC.cards('psychology', 'u1', [
     ],
     explain: [
       'What you are shown is one decision and the thinking behind it. Leila has a choice to make, and the case gives you her reasons and where she comes out. That is all a case of this kind is made of: one person, something that is theirs, and the reasons they give for it.',
-      'The something that is theirs can be one of three things: a choice they are making (as Leila is), a view they hold about what is true, or something they have already done. Reasons are not only sentences with "because" in them. A person can also be handed a fact and show their reasoning by what they do with it: they change their mind, or they explain why the fact does not count. The key counts that too, and the line you will see below includes it.',
+      'The something that is theirs can be one of three things: a choice they are making (as Leila is), a view they hold about what is true, or something they have already done. Reasons are not only sentences with "because" in them. A person can also be handed a fact and show their reasoning by what they do with it: they change their mind, or they explain why the fact does not count. That counts too, and the line you will see below includes it.',
       'Notice two things the kind does not depend on. It does not depend on whether the reasoning is any good. Leila’s reasons look reasonable. Someone else might talk themselves into a bad choice with reasons that only sound good. Both are the same kind of thing, because in both, the reasoning is what there is to judge.',
       'It also does not depend on who is listening. Leila’s sister hears every word, but if Leila had written the same words in a diary instead, nothing in the case would change. When you can take the listener away and the case is still whole, you are looking at this first kind.'
     ],
     feature: { step: 'D1', option: 'reasoning' },
-    name: 'In this unit the key’s answer is also the name of the kind: {a:D1.reasoning}. "Reasoning" means the thinking a person does to reach a view or a choice, to defend it, or to change it. The word does not say the thinking is good. Careful reasoning and self-serving reasoning (reasoning arranged to suit the person doing it) are both reasoning.' },
+    name: 'In this unit the answer is also the name of the kind: {a:D1.reasoning}. "Reasoning" means the thinking a person does to reach a view or a choice, to defend it, or to change it. The word does not say the thinking is good. Careful reasoning and self-serving reasoning (reasoning arranged to suit the person doing it) are both reasoning.' },
 
   { id: 'again-reasoning', kind: 'again', family: 'reasoning',
     link: 'The last card gave you what to point to, from one case: {needs:reasoning}. Here is a second case with a completely different story, and this time the person is defending a view, not making a choice.',
@@ -63,7 +63,7 @@ FC.cards('psychology', 'u1', [
       'From here on, the cases change their stories on purpose. Sometimes two cases will share the same people and the same story and differ only underneath. When that happens, the shared story is there to show you that it decides nothing.',
       'One more thing changes on purpose: how bad the behaviour sounds. An ugly remark and a gentle one can be the same kind of thing, and something that sounds alarming can turn out to be the kind with nothing in it to name. The kind is not a verdict on anyone. It only says what there is to look at.'
     ],
-    fixed: ['what the case is made of, which is what the key asks about: {q:D1}'],
+    fixed: ['what the case is made of, which is what the question asks about: {q:D1}'],
     varies: ['the topic', 'the people', 'how bad it sounds', 'whether you like the person', 'whether anything is wrong at all'] },
 
   { id: 'portrait-reasoning', kind: 'portrait', family: 'reasoning',

@@ -9,7 +9,7 @@ FC.cards('math', 'u6', [
     kind: 'solved',
     outcome: 'trig',
     h: 'Worked again: how long a ramp is, from its rise and its slope',
-    link: 'The same procedure for {o:trig} in a different story, with a different key and with the side you want underneath, so that the last steps divide.',
+    link: 'The same procedure for {o:trig} in a different story, with a different button and with the side you want underneath, so that the last steps divide.',
     problem: 'm6-s-trig-2',
     steps: [
       {
@@ -18,20 +18,20 @@ FC.cards('math', 'u6', [
         why: 'The same first step, from the angle of 6°. The ramp is the longest side, because it is opposite the square corner where the rise meets the ground. The rise of 0.9 m is opposite the angle, and the ground under the ramp is next to it.'
       },
       {
-        does: 'Choose the calculator key that joins the side you know to the side you want',
-        working: 'You know the side opposite the angle (0.9 m) and want the longest side. The sin key joins those two: sin = opposite ÷ longest',
-        why: 'You know the side opposite the angle, the rise of 0.9 m, and you want the longest side, the ramp. The key that joins the side opposite the angle and the longest side is sin, which gives the side opposite the angle divided by the longest side. The side next to the angle plays no part, which is why the distance along the ground is never needed.'
+        does: 'Choose the calculator button that joins the side you know to the side you want',
+        working: 'You know the side opposite the angle (0.9 m) and want the longest side. The sin button joins those two: sin = opposite ÷ longest',
+        why: 'You know the side opposite the angle, the rise of 0.9 m, and you want the longest side, the ramp. The button that joins the side opposite the angle and the longest side is sin, which gives the side opposite the angle divided by the longest side. The side next to the angle plays no part, which is why the distance along the ground is never needed.'
       },
       {
-        does: 'Write the key’s comparison with the numbers in',
+        does: 'Write the button’s comparison with the numbers in',
         working: 'sin 6° = 0.9 ÷ ramp',
-        why: 'The same step as in the first problem: the key’s comparison, with the numbers in. This time the side you know, the rise, is on top, and the side you want, the ramp, is underneath.'
+        why: 'The same step as in the first problem: the button’s comparison, with the numbers in. This time the side you know, the rise, is on top, and the side you want, the ramp, is underneath.'
       },
       { does: 'Get the side you want on its own', working: 'ramp = 0.9 ÷ sin 6°' },
       {
-        does: 'Read the key’s value off the calculator, set to degrees, and finish the sum',
+        does: 'Read the button’s value off the calculator, set to degrees, and finish the sum',
         working: 'sin 6° = 0.1045; 0.9 ÷ 0.1045 = 8.6124, so about 8.6 m',
-        why: 'The sin key gives 0.1045 for 6° to four decimal places, and 0.9 ÷ 0.1045 = 8.612, which is 8.6 m to one decimal place. As a check, a ramp is always longer than its own rise, and 8.6 m is much longer than 0.9 m, because a slope of 6° is a gentle one.'
+        why: 'The sin button gives 0.1045 for 6° to four decimal places, and 0.9 ÷ 0.1045 = 8.612, which is 8.6 m to one decimal place. As a check, a ramp is always longer than its own rise, and 8.6 m is much longer than 0.9 m, because a slope of 6° is a gentle one.'
       }
     ],
     result: 'The ramp is about 8.6 m long along its slope.',
@@ -42,7 +42,7 @@ FC.cards('math', 'u6', [
         choices: [
           {
             id: 'x',
-            text: 'The side you want is underneath in the comparison, so it is found by dividing the side you know by the key’s value.'
+            text: 'The side you want is underneath in the comparison, so it is found by dividing the side you know by the button’s value.'
           },
           {
             id: 'y',
@@ -58,7 +58,7 @@ FC.cards('math', 'u6', [
         answer: 'x'
       },
       reason: [
-        'The comparison says that 0.9 divided by the ramp gives the key’s value. So the ramp is the number that 0.9 has to be divided by to give that value, and that is 0.9 divided by the key’s value: ramp = 0.9 ÷ sin 6°. To see it with easy numbers, if a ramp of 10 m rose 1 m, the key’s value would be 1 ÷ 10 = 0.1, and to get the 10 back from the 1 and the 0.1 you divide: 1 ÷ 0.1 = 10.',
+        'The comparison says that 0.9 divided by the ramp gives the button’s value. So the ramp is the number that 0.9 has to be divided by to give that value, and that is 0.9 divided by the button’s value: ramp = 0.9 ÷ sin 6°. To see it with easy numbers, if a ramp of 10 m rose 1 m, the button’s value would be 1 ÷ 10 = 0.1, and to get the 10 back from the 1 and the 0.1 you divide: 1 ÷ 0.1 = 10.',
         'In the first problem the side wanted was on top of the comparison, and the step multiplied. Here the side wanted is underneath, and the step divides. Mixing them up is a common slip: multiplying here would give 0.9 × 0.1045 = 0.09 m, a ramp shorter than its own rise, which is impossible for the longest side of a triangle.'
       ]
     }

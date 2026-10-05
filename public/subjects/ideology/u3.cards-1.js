@@ -43,7 +43,7 @@ FC.cards('ideology', 'u3', [
       'Why would a speaker do this? A country is made of people who disagree about almost everything. A speaker who wants all of them behind one effort, a recovery, a hospital, a hard winter, reaches for the one thing they all share, which is the country.'
     ],
     feature: { step: 'N1', option: 'whole' },
-    name: 'The name for this is {o:nationalism}. A "nation" is a people who share a country and a life, and the ending "-ism" turns that into a belief: the belief that this people comes first. Some people use the word only for something harsh. The key uses it for the plain case you have just read: the nation first, spoken for as one, with the vote left alone. The harsher cases have names of their own.' },
+    name: 'The name for this is {o:nationalism}. A "nation" is a people who share a country and a life, and the ending "-ism" turns that into a belief: the belief that this people comes first. Some people use the word only for something harsh. It is used here for the plain case you have just read: the nation first, spoken for as one, with the vote left alone. The harsher cases have names of their own.' },
 
   { id: 'again-nationalism', kind: 'again', outcome: 'nationalism',
     link: 'The anniversary speech gave you what to point to, from one case: {needs:nationalism}. Here is a second case with a completely different story.',
@@ -65,7 +65,7 @@ FC.cards('ideology', 'u3', [
       'From here on, the texts change their stories on purpose. Sometimes two texts will share a story and differ only underneath. When that happens, the shared story is there to show you that it tells you nothing.',
       'The tone does not decide either. A text can be loud, proud, angry or polite and carry any of the five names. What decides is what the text says it wants.'
     ],
-    fixed: ['what the key asks about: {q:N1} and {q:N2}'],
+    fixed: ['what the questions ask about: {q:N1} and {q:N2}'],
     varies: ['the topic', 'the people', 'how loud or calm the words are', 'whether you like the speaker', 'how much is at stake'] },
 
   { id: 'portrait-nationalism', kind: 'portrait', outcome: 'nationalism',

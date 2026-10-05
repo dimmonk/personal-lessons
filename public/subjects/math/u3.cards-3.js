@@ -61,8 +61,8 @@ FC.cards('math', 'u3', [
     instruction: 'Both problems are at the same garden centre, with the same plants at €9 and pots at €4, and the same €73. Compare one thing: how many numbers are left out?',
     prompt: { kind: 'which', option: 'A1.totals', answer: 'm3-la-plants-simul' },
     difference: [
-      'In Case A Mia buys 5 plants and some pots, and pays €73. Only one number is left out, how many pots, and one calculation has a result to undo: 5 plants at €9 and some pots at €4 make €73. The key’s answer is {a:A1.formula}.',
-      'In Case B the garden centre sold 12 items in all, plants and pots, for €73, and nobody says how many of either. Two numbers are left out, and there are two facts, the count and the total. The key’s answer is {a:A1.totals}.',
+      'In Case A Mia buys 5 plants and some pots, and pays €73. Only one number is left out, how many pots, and one calculation has a result to undo: 5 plants at €9 and some pots at €4 make €73. The answer is {a:A1.formula}.',
+      'In Case B the garden centre sold 12 items in all, plants and pots, for €73, and nobody says how many of either. Two numbers are left out, and there are two facts, the count and the total. The answer is {a:A1.totals}.',
       'The prices and the total are the same in both, and the answers are the same too: 5 plants and 7 pots. What differs is how many numbers the problem leaves out, one or two, and so how many facts are needed to find them.'
     ] }
 ]);

@@ -65,7 +65,7 @@ FC.cards('psychology', 'u2', [
       'The five names belong to the layer underneath. The same story can carry any of them, and each name turns up in every kind of story. A case about money is no more likely to be one name than another.',
       'From here on, the cases change their stories on purpose. Sometimes two cases will share a story and differ only underneath. When that happens, the shared story is there to show you that it tells you nothing.'
     ],
-    fixed: ['what the person’s reasoning does, which is what the key asks about: {q:R1}'],
+    fixed: ['what the person’s reasoning does, which is what the question asks about: {q:R1}'],
     varies: ['the topic', 'the people', 'how much is at stake', 'whether you like the person', 'where the person ends up'] },
 
   { id: 'portrait-dissonance', kind: 'portrait', outcome: 'dissonance',

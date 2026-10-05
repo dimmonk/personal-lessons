@@ -55,7 +55,7 @@ FC.cases('civics', 'u5', [
       { text: 'She was held for two days and could not call a lawyer.', voice: 'trialrights' },
       { text: 'He says the town’s rule takes away his right to worship.', voice: 'review' },
       { text: 'They argue that the word "shop" cannot cover a food truck.', voice: 'interpret' },
-      { text: 'They want the judge to choose a shorter bus route.', voice: 'notlegal' }
+      { text: 'They want the judge to choose a shorter way for the bus to go.', voice: 'notlegal' }
     ],
     why: 'That detail is a step the Constitution promises an accused person (a lawyer) said to have been skipped.' },
 

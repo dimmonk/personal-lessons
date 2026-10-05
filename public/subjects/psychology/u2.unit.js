@@ -4,7 +4,7 @@
 
 FC.unit('psychology', 'u2', {
   kind: 'C',              // C classification, F facts, P procedure
-  rev: 2,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
+  rev: 3,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
   standard: 1,            // lesson-standard version this unit was built to
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author). The app labels a draft as a draft.
   tag: 'Two',
@@ -61,7 +61,7 @@ FC.unit('psychology', 'u2', {
       cards: ['meet-confbias', 'again-confbias', 'portrait-confbias', 'check-confbias',
               'meet-motivated', 'again-motivated', 'portrait-motivated', 'check-motivated',
               'look-confbias-motivated', 'exc-both', 'look-dissonance-confbias'] },
-    { id: 'p3', title: 'Reasoning that goes where the facts point, and the key’s question',
+    { id: 'p3', title: 'Reasoning that goes where the facts point, and the question',
       cards: ['meet-fair', 'again-fair', 'portrait-fair', 'check-fair',
               'look-confbias-fair', 'look-sunkcost-fair', 'exc-convert', 'q-does', 'check-does'] },
     { id: 'p4', title: 'Two whole cases, then the drill',
@@ -106,7 +106,8 @@ FC.unit('psychology', 'u2', {
     // What changed at each revision (R1). One entry for every revision from 1 to rev.
     history: [
       { rev: 1, date: '2026-10-04', change: 'First version under lesson standard 1. Not yet deployed, so later edits before the first deploy stay revision 1.' },
-      { rev: 2, date: '2026-10-05', change: 'The key’s first question now has four answers (Unit One rebuilt), and its second answer is worded “Something one person does to another”. Unit Two prints the gate from the key, so its orient map changed with it.' }
+      { rev: 2, date: '2026-10-05', change: 'The first question now has four answers (Unit One rebuilt), and its second answer is worded “Something one person does to another”. Unit Two prints the gate from the key, so its orient map changed with it.' },
+      { rev: 3, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' }
     ],
     // What changed in the key for this branch, and why (K2). Old wording is the app's wording before the rebuild.
     keyChanges: [

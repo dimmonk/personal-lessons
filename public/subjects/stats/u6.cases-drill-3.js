@@ -11,7 +11,7 @@ FC.cases('stats', 'u6', [
     outcome: 'nocontrol', route: { S1: ['cause'], K1: ['anyway'] },
     cues: { S1: 'The monitors save fuel', K1: 'The firm has no trucks without monitors' },
     reason: { S1: 'The figures are given for all 85 trucks, and the fleet manager says {cue:S1}. That is a claim of cause.',
-              K1: 'The only figures are for trucks that got the monitors, before and after: {cue:K1}. Fuel prices and routes changed in the same months, and any of those could move fuel use, so nothing shows what the same trucks would have used with no monitors.' },
+              K1: 'The only figures are for trucks that got the monitors, before and after: {cue:K1}. Fuel prices and the roads driven changed in the same months, and any of those could move fuel use, so nothing shows what the same trucks would have used with no monitors.' },
     not: { outcome: 'regression', why: 'The firm did not pick trucks because they used the most fuel. Every truck got a monitor.' },
     wouldChange: 'If the firm had fitted monitors in 40 trucks drawn by lottery and left 45 as they were, the 45 would show what fuel use does anyway.' },
 
@@ -21,7 +21,7 @@ FC.cases('stats', 'u6', [
     cues: { S1: 'The booklet lowers blood pressure', K1: 'picks the 30 patients with the highest blood pressure readings at a Monday screening' },
     reason: { S1: 'The readings are given, and the clinic says {cue:S1}. That is a claim of cause.',
               K1: 'The 30 were picked for having the highest readings on one day: the clinic {cue:K1}. A reading is a person’s usual pressure plus how that day went, so the highest 30 on one Monday are partly the people who had a high day, and their readings drift back toward usual with no booklet.' },
-    not: { outcome: 'nocontrol', why: 'No patient went without the booklet, and the case shows that too. But the 30 were picked at their highest on one day, and when a case shows both, the key’s answer is {a:K1.extreme}.' },
+    not: { outcome: 'nocontrol', why: 'No patient went without the booklet, and the case shows that too. But the 30 were picked at their highest on one day, and when a case shows both, the answer is {a:K1.extreme}.' },
     wouldChange: 'If the clinic had given the booklet to 15 of the 30 by lottery and not to the other 15, the 15 without it would show how much comes back anyway.' },
 
   { id: 'k-r-studygroup', use: 'drill', tier: 'varied', setting: 'learning', topic: 'study groups and university grades',
@@ -57,8 +57,8 @@ FC.cases('stats', 'u6', [
     outcome: 'regression', route: { S1: ['cause'], K1: ['extreme'] },
     cues: { S1: 'Patrols cut burglaries by more than a third', K1: 'picks the 8 city blocks with the most burglaries last year' },
     reason: { S1: 'The numbers are given, and the chief says {cue:S1}. That is a claim of cause.',
-              K1: 'The most noticeable thing is the last sentence: no block went without a patrol. That is true, and it is the answer {a:K1.anyway}. But look at how the blocks were picked: the department {cue:K1}. A count of burglaries is how risky a block is plus luck, so the worst 8 are partly the unluckiest 8, and their counts drift back with no patrols. When a case shows both, the key’s answer is {a:K1.extreme}.' },
-    not: { outcome: 'nocontrol', why: 'It is true that no block went without a patrol, and the case shows that clearly. But the eight blocks were picked because they were at their worst, and the key gives the more exact answer.' },
+              K1: 'The most noticeable thing is the last sentence: no block went without a patrol. That is true, and it is the answer {a:K1.anyway}. But look at how the blocks were picked: the department {cue:K1}. A count of burglaries is how risky a block is plus luck, so the worst 8 are partly the unluckiest 8, and their counts drift back with no patrols. When a case shows both, the answer is {a:K1.extreme}.' },
+    not: { outcome: 'nocontrol', why: 'It is true that no block went without a patrol, and the case shows that clearly. But the eight blocks were picked because they were at their worst, and the more exact answer is the one to give.' },
     wouldChange: 'If the department had put patrols on 4 of the 8 worst blocks, picked by lottery, and none on the other 4, the 4 left alone would show how much of the fall comes back anyway.' },
 
   { id: 'k-r-sauna', use: 'drill', tier: 'misleading', setting: 'health', topic: 'a gym sauna installed in March and colds', echo: 'k-cameras',
@@ -75,7 +75,7 @@ FC.cases('stats', 'u6', [
     outcome: 'cause_ok', route: { S1: ['holds'], H1: ['causes'] },
     cues: { S1: 'the company drew 40 of them by lottery to work four days for six months', H1: 'A four-day week raises output' },
     reason: { S1: 'The most noticeable thing is that the teams volunteered, which can bring to mind people who put themselves in a group. But all 80 volunteered, and then {cue:S1}. A lottery formed the groups from the same volunteers, so nothing else is likelier to be in one group than the other. All 80 are counted in the same way, and the numbers are given. Nothing is wrong in any part.',
-              H1: 'The company says {cue:H1}, and the key’s answer to what the figures show is {a:H1.causes}, from groups formed by a draw.' },
+              H1: 'The company says {cue:H1}, and the answer to what the figures show is {a:H1.causes}, from groups formed by a draw.' },
     not: { outcome: 'confound', why: 'Volunteering would matter if volunteers were set beside people who did not volunteer. Here every team volunteered, and a draw decided who tried the four-day week, so nothing else differs between the groups.' },
     wouldChange: 'If the 40 teams that tried a four-day week had been the 40 that asked for it, and the rest stayed as they were, the answer would be {a:S1.cause}.' }
 ]);

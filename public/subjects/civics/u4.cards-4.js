@@ -55,8 +55,8 @@ FC.cards('civics', 'u4', [
     instruction: 'Both cases are about navy ships and the port of Istrene. Compare one thing: does the President tell the navy what to do, or settle something with Istrene’s leader?',
     prompt: { kind: 'which', option: 'E1.abroad', answer: 'e-ships-agree' },
     difference: [
-      'In Case A the President orders the navy to send three ships to the port, and to keep them there for a month. The ships obey, and nobody from Istrene is asked anything. The key’s answer is {a:E1.military}, and the case is {o:commander}.',
-      'In Case B the President goes to Istrene and spends two days with its leader, and the two of them sign an agreement about each country’s ships using the other’s ports. The ships are in the story, but nobody orders them anywhere. The two countries settle how the ports may be used. The key’s answer is {a:E1.abroad}, and the case is {o:diplomacy}.',
+      'In Case A the President orders the navy to send three ships to the port, and to keep them there for a month. The ships obey, and nobody from Istrene is asked anything. The answer is {a:E1.military}, and the case is {o:commander}.',
+      'In Case B the President goes to Istrene and spends two days with its leader, and the two of them sign an agreement about each country’s ships using the other’s ports. The ships are in the story, but nobody orders them anywhere. The two countries settle how the ports may be used. The answer is {a:E1.abroad}, and the case is {o:diplomacy}.',
       'Ships, ports and another country appear in both. What differs is what the President does: tell the forces what to do, or settle something with another country.'
     ] },
 
@@ -68,7 +68,7 @@ FC.cards('civics', 'u4', [
     prompt: { kind: 'phrase', answer: 'the President ordered a ship carrying two hundred soldiers to leave for a six-week training exercise with the allied navy' },
     because: [
       'Look at what the President does. The ally asked for something, and its leader thanked the President afterwards, but nothing is negotiated or signed with the ally. What the President decides is an order: a ship with soldiers on it is to leave for a six-week exercise.',
-      'The ally’s part of the story is how the matter got there, and what happened afterwards. The decision in the middle of it is an order to the armed forces, and the key asks what the President does.',
+      'The ally’s part of the story is how the matter got there, and what happened afterwards. The decision in the middle of it is an order to the armed forces, and the question is what the President does.',
       'Put the question printed below, the one from the ships and the port of Istrene, to this case. The President tells the forces what to do, and nobody is met or negotiated with.'
     ] },
 
@@ -79,8 +79,8 @@ FC.cards('civics', 'u4', [
     instruction: 'Both cases are about visitors from Calvera who may stay ninety days. Compare one thing: is a federal official dealing with Calvera as a country, or dealing with one visitor under a law?',
     prompt: { kind: 'which', option: 'E1.carryout', answer: 'e-visas-desk' },
     difference: [
-      'In Case A the Secretary of State, speaking for the President, meets Calvera’s foreign minister, and the two countries agree and sign how long visitors may stay. Two governments are settling something between them. The key’s answer is {a:E1.abroad}, and the case is {o:diplomacy}.',
-      'In Case B a clerk checks one visitor’s papers against a list in a law Congress passed, and stamps the passport. The visitor comes from Calvera, but the clerk is not dealing with Calvera. The clerk is putting a law into daily practice for one person. The key’s answer is {a:E1.carryout}, and the case is {o:execute}.',
+      'In Case A the Secretary of State, speaking for the President, meets Calvera’s foreign minister, and the two countries agree and sign how long visitors may stay. Two governments are settling something between them. The answer is {a:E1.abroad}, and the case is {o:diplomacy}.',
+      'In Case B a clerk checks one visitor’s papers against a list in a law Congress passed, and stamps the passport. The visitor comes from Calvera, but the clerk is not dealing with Calvera. The clerk is putting a law into daily practice for one person. The answer is {a:E1.carryout}, and the case is {o:execute}.',
       'Both cases have the same ninety days, and people from Calvera. What differs is who the official is dealing with: a government, as one country with another, or one person under a law.'
     ] },
 
@@ -91,8 +91,8 @@ FC.cards('civics', 'u4', [
     instruction: 'Both cases are about the same trade agreement with Tormark. Compare one thing: does the case end with the President making the agreement, or with senators voting on it?',
     prompt: { kind: 'which', option: 'D1.president', answer: 'e-trade-signed' },
     difference: [
-      'In Case A the President flies to Tormark, negotiates, and the two leaders sign. Nobody votes. The key’s first answer is {a:D1.president}, and its answer to the next question is {a:E1.abroad}, so the case is {o:diplomacy}.',
-      'In Case B the agreement is already signed, and the story is about what comes after: it does not take effect until the Senate votes, and the vote is next month. The signing is how the matter got there. The case ends by asking the Senate for a decision. The key’s first answer is {a:D1.congress}, and its answer to the next question is {a:C1.approve}.',
+      'In Case A the President flies to Tormark, negotiates, and the two leaders sign. Nobody votes. The first answer is {a:D1.president}, and its answer to the next question is {a:E1.abroad}, so the case is {o:diplomacy}.',
+      'In Case B the agreement is already signed, and the story is about what comes after: it does not take effect until the Senate votes, and the vote is next month. The signing is how the matter got there. The case ends by asking the Senate for a decision. The first answer is {a:D1.congress}, and its answer to the next question is {a:C1.approve}.',
       'It is one agreement at two moments, as in Unit One: first negotiated and signed, then voted on. The case is the moment it ends on.'
     ] }
 ]);

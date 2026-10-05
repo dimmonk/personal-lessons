@@ -9,8 +9,8 @@ FC.cards('psychology', 'u4', [
     instruction: 'In both cases a close friend cannot come to the birthday dinner. Compare one thing: what each person does about it. Does the person pull away, or reach for the friend and then attack her?',
     prompt: { kind: 'which', option: 'P1.clings', answer: 'pa-kai' },
     difference: [
-      'In Case A Isla replies "No problem", goes silent for three months and keeps count of what she is owed. She does not reach for the friend at all. The key’s answer is {a:P1.overlooked}, and the case is {o:narcvuln}.',
-      'In Case B Kai sends thirty messages that night, offers to cancel the dinner so that she will not feel left out, then tells their friends that she is "the cruellest person he knew", and apologises the next morning. The key’s answer is {a:P1.clings}, and the case is {o:borderline}.',
+      'In Case A Isla replies "No problem", goes silent for three months and keeps count of what she is owed. She does not reach for the friend at all. The answer is {a:P1.overlooked}, and the case is {o:narcvuln}.',
+      'In Case B Kai sends thirty messages that night, offers to cancel the dinner so that she will not feel left out, then tells their friends that she is "the cruellest person he knew", and apologises the next morning. The answer is {a:P1.clings}, and the case is {o:borderline}.',
       'Both people are hurt, and in both it has cost friendships. What separates them is the direction. Isla pulls back and resents. Kai goes towards the friend, and when that fails attacks her, and then goes towards her again.'
     ] },
 
@@ -20,8 +20,8 @@ FC.cards('psychology', 'u4', [
     instruction: 'In both cases a husband says he is thinking of leaving. Compare one thing: does she try to keep him, or does she run him down and let him go?',
     prompt: { kind: 'which', option: 'P1.clings', answer: 'pa-dani' },
     difference: [
-      'In Case A Ruth tells her husband that he would never find anyone as good as her and that his friends laugh at him behind his back, and then does not speak to him for a week. She has never once asked him to stay. The key’s answer is {a:P1.above}, and the case is {o:narcgrand}.',
-      'In Case B Dani begs her husband to stay, promises to change everything about herself and hides his car keys. When he asks for a night at his brother’s she calls him "a liar who never loved her", throws his clothes into the street, and then rings him seven times that night to say she is sorry. The key’s answer is {a:P1.clings}, and the case is {o:borderline}.',
+      'In Case A Ruth tells her husband that he would never find anyone as good as her and that his friends laugh at him behind his back, and then does not speak to him for a week. She has never once asked him to stay. The answer is {a:P1.above}, and the case is {o:narcgrand}.',
+      'In Case B Dani begs her husband to stay, promises to change everything about herself and hides what he would need to drive away. When he asks for a night at his brother’s she calls him "a liar who never loved her", throws his clothes into the street, and then rings him seven times that night to say she is sorry. The answer is {a:P1.clings}, and the case is {o:borderline}.',
       'Both women are angry. The difference is which way the anger goes. Ruth’s anger pushes him away: she needs to be above him, and she does not try to keep him. Dani’s anger comes from the fear of his going, and within hours she is going towards him again.'
     ] },
 
@@ -82,8 +82,8 @@ FC.cards('psychology', 'u4', [
     instruction: 'In both cases a flatmate is leaving. Compare one thing: who each person’s display is for. Is it for the one who is leaving, or for the whole room?',
     prompt: { kind: 'which', option: 'P1.clings', answer: 'pa-mira' },
     difference: [
-      'In Case A Mira clings to the flatmate, says that she would be nothing without her, and the next week tells the others that she was selfish. One person, who seems to be leaving, is the point, and the feeling swings from adoring her to attacking her. The key’s answer is {a:P1.clings}, and the case is {o:borderline}.',
-      'In Case B Orla stands on a chair and speaks to the whole room, and when another guest is applauded for a song she sings louder over the end of it. The room is the point, and no one person has to stay. She does not attack anyone. The key’s answer is {a:P1.centre}, and the case is {o:histrionic}.',
+      'In Case A Mira clings to the flatmate, says that she would be nothing without her, and the next week tells the others that she was selfish. One person, who seems to be leaving, is the point, and the feeling swings from adoring her to attacking her. The answer is {a:P1.clings}, and the case is {o:borderline}.',
+      'In Case B Orla stands on a chair and speaks to the whole room, and when another guest is applauded for a song she sings louder over the end of it. The room is the point, and no one person has to stay. She does not attack anyone. The answer is {a:P1.centre}, and the case is {o:histrionic}.',
       'The tears are the same in both. What differs is who the display is aimed at, and whether it turns into an attack on the person who seems to be leaving.'
     ] },
 
@@ -93,8 +93,8 @@ FC.cards('psychology', 'u4', [
     instruction: 'In both cases a colleague has just been applauded after a talk. Compare one thing: what each person does to that colleague, and what each does for himself or herself.',
     prompt: { kind: 'which', option: 'P1.centre', answer: 'pa-bea' },
     difference: [
-      'In Case A Felix tells the manager that she was "all slides and no substance" and that she would never have been asked if he had not trained her. He runs the colleague down, so that he stays above her. Four colleagues have changed teams. The key’s answer is {a:P1.above}, and the case is {o:narcgrand}.',
-      'In Case B Bea says nothing against the colleague. She tells the whole table about a dreadful week, until they are all listening to her. Four colleagues have stopped sitting near her. The key’s answer is {a:P1.centre}, and the case is {o:histrionic}.',
+      'In Case A Felix tells the manager that she was "all slides and no substance" and that she would never have been asked if he had not trained her. He runs the colleague down, so that he stays above her. Four colleagues have changed teams. The answer is {a:P1.above}, and the case is {o:narcgrand}.',
+      'In Case B Bea says nothing against the colleague. She tells the whole table about a dreadful week, until they are all listening to her. Four colleagues have stopped sitting near her. The answer is {a:P1.centre}, and the case is {o:histrionic}.',
       'Both people take the room. Felix wants to be treated as better than the person who was applauded, and runs her down. Bea wants the attention and nothing else, and puts on a bigger display.'
     ] },
 
@@ -104,8 +104,8 @@ FC.cards('psychology', 'u4', [
     instruction: 'Both are dramatic in everything, at every event, in every village. Compare one thing: what the drama has cost.',
     prompt: { kind: 'which', option: 'P1.centre', answer: 'pa-sofia' },
     difference: [
-      'In Case A Sofia says that her heart is racing and she needs to sit down when the raffle winner is announced, until the stall-holders gather round her. The committee has stopped asking her to help, and two neighbours cross the road. The key’s answer is {a:P1.centre}, and the case is {o:histrionic}.',
-      'In Case B Tito leads the cheering and buys the winner a drink. The committee asks him to introduce the raffle every year, and the neighbours he made twenty years ago still come to his parties. The key’s answer is {a:P1.steady}, and the case is {o:ordpersonality}.',
+      'In Case A Sofia says that her heart is racing and she needs to sit down when the raffle winner is announced, until the stall-holders gather round her. The committee has stopped asking her to help, and two neighbours cross the road. The answer is {a:P1.centre}, and the case is {o:histrionic}.',
+      'In Case B Tito leads the cheering and buys the winner a drink. The committee asks him to introduce the raffle every year, and the neighbours he made twenty years ago still come to his parties. The answer is {a:P1.steady}, and the case is {o:ordpersonality}.',
       'Both are as theatrical as each other. A theatrical way of being is common and ordinary, and a person can be as dramatic as Tito and have no repeated cost at all. What turns it into {o:histrionic} is the bigger display when the attention goes elsewhere, and what it has cost.'
     ] }
 ]);

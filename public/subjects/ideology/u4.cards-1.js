@@ -13,10 +13,10 @@ FC.cards('ideology', 'u4', [
     canDo: 'After this unit you can read a short text that holds up the old ways of faith, home life and custom, and give it one of two names, by pointing to the words in it that tell you. You will also be able to say why it is not the name it looks most like, whether that is a name that goes with putting a nation first, or one that goes with the side of working people. The text can be a parish newsletter, a speech about a school, a few lines from a pamphlet about an old law, a post, or a letter to a town council.',
     everyday: [
       'You already hear this talked about. A neighbour says the village should "keep its traditions". Someone else says a new law "destroyed our way of life". A columnist calls one politician "reactionary" and another "just conservative", and neither says what they mean. The two words are often used as if they were the same, or as if one were praise and the other an insult.',
-      'They are not the same thing, and the key tells them apart. Unit One taught the key’s first question, and every text in this unit gets one answer to it: {a:D1.tradition}. That answer is a place to start, and it leaves two names open. One kind of text wants what is still there kept, and wants any change to come slowly. Another says that something has been lost, that its loss was a wrong, and asks for it to be given back. The key gives them different names, and tells them apart with one more question.',
+      'They are not the same thing, and they can be told apart. Unit One taught the first question, and every text in this unit gets one answer to it: {a:D1.tradition}. That answer is a place to start, and it leaves two names open. One kind of text wants what is still there kept, and wants any change to come slowly. Another says that something has been lost, that its loss was a wrong, and asks for it to be given back. They are given different names, and one more question tells them apart.',
       'That question is {q:T1} You answer it by pointing at words in the text, as you did in Unit One. It is the only question that comes after Unit One’s, so the answer you give to it is also the name you end with.'
     ],
-    add: 'Every text in this unit is invented. The countries, towns, laws and groups in them do not exist, and no text says what any real person or party believes. Real people and parties say different things in different places, so the key reads one short text at a time and gives no verdict on whoever wrote it.',
+    add: 'Every text in this unit is invented. The countries, towns, laws and groups in them do not exist, and no text says what any real person or party believes. Real people and parties say different things in different places, so this course reads one short text at a time and gives no verdict on whoever wrote it.',
     map: { branch: 'tradition' } },        // the preview map is drawn from the key, with plain words beside each label
 
   /* ---------- The first name: what is still there is to be kept ---------- */
@@ -26,17 +26,17 @@ FC.cards('ideology', 'u4', [
     strip: [
       'Something from the past is named, and it is still there: a walk round the parish, with a blessing, which the grandparents walked and the children still walk.',
       'The text says it should carry on. "Keep the walk."',
-      'It allows that something may have to change, because a new road cuts across the route. It asks for the change to be slow, a step at a time, with the old walkers asked first.',
+      'It allows that something may have to change, because a new road cuts across the walk’s path. It asks for the change to be slow, a step at a time, with the old walkers asked first.',
       'Nothing is said to have been torn down, and nothing is asked to come back. The walk is still being walked.'
     ],
     explain: [
       'In Unit One this text gets the answer {a:D1.tradition}: it names a custom and a faith handed down, and says they should guide how the village plans its years. That answer leaves two names open, and this card is about the question that chooses between them: {q:T1}',
       'Look at what the text asks. The walk is still walked. Nobody has stopped it. So the text is not asking for anything to be brought back. It is asking that what is there stay there, and that if anything must change, it changes slowly and with the people it touches asked first.',
-      'The idea behind this kind of text is that what has been handed down has been tested by many people over many years, and that anything new is risky until it has been tried. People who think this need not want everything to stay as it is. They accept that some change will come. What they ask for is a slow pace, and a say for the people it touches. People who disagree say that going slowly can be a way of never changing, and that some old ways should be dropped. Whether the old ways are good is argued over, and the key takes no side. It goes by what the text asks for.',
-      'Notice what the key is not asking. It is not asking whether the faith is true or the walk is a good custom. It is asking what the text wants done with the old ways it holds up. Here the text wants them kept.'
+      'The idea behind this kind of text is that what has been handed down has been tested by many people over many years, and that anything new is risky until it has been tried. People who think this need not want everything to stay as it is. They accept that some change will come. What they ask for is a slow pace, and a say for the people it touches. People who disagree say that going slowly can be a way of never changing, and that some old ways should be dropped. Whether the old ways are good is argued over, and no side is taken here. The answer goes by what the text asks for.',
+      'Notice what is not being asked. It is not asking whether the faith is true or the walk is a good custom. It is asking what the text wants done with the old ways it holds up. Here the text wants them kept.'
     ],
     feature: { step: 'T1', option: 'keep' },
-    name: 'The name for this is {o:conserv}. The word comes from "conserve", which means to keep safe. The key uses it for the one thing you just saw: a text that holds up old ways, wants them kept, and wants any change to come slowly. It is a plain description of what a text asks for, and it is neither praise nor blame.' },
+    name: 'The name for this is {o:conserv}. The word comes from "conserve", which means to keep safe. It is used here for the one thing you just saw: a text that holds up old ways, wants them kept, and wants any change to come slowly. It is a plain description of what a text asks for, and it is neither praise nor blame.' },
 
   { id: 'again-conserv', kind: 'again', outcome: 'conserv',
     link: 'The boundary walk gave you what to point to from one case: {needs:conserv}. Here is a second case in a different setting: a row of old almshouses, and a letter to a town council.',
@@ -57,7 +57,7 @@ FC.cards('ideology', 'u4', [
       'Two other things change on purpose, and they tell you nothing either. One is how warm or how angry a text sounds: a gentle text can ask for an order to be brought back, and a sharp one can ask only for a custom to be kept. The other is whether you agree with it.',
       'From here on, some cases will share a story and differ only underneath. When that happens, the shared story is there to show you that it decides nothing.'
     ],
-    fixed: ['what the text wants done with the old ways it holds up, which is what the key asks about: {q:T1}'],
+    fixed: ['what the text wants done with the old ways it holds up, which is what the question asks about: {q:T1}'],
     varies: ['the topic', 'the people', 'how warm or how angry the text sounds', 'whether you agree with it', 'how much of the old order is still there'] },
 
   { id: 'portrait-conserv', kind: 'portrait', outcome: 'conserv',

@@ -9,7 +9,7 @@
 
 FC.unit('civics', 'u10', {
   kind: 'F',              // C classification, F facts, P procedure
-  rev: 1,
+  rev: 2,
   standard: 1,
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author)
   tag: 'Ten',
@@ -112,7 +112,8 @@ FC.unit('civics', 'u10', {
   // Build notes: not shown to the learner, and left out of the fingerprint. The validator reads them.
   build: {
     history: [
-      { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the fact unit for history since 1877, replacing the old Unit Five cards on its last two eras ("Factories and immigration (1877 to 1914)" and "World wars, civil rights and today (1914 onward)"), "The right to vote, widened by inches", "Places and symbols", the drill items of those eras (n5), and old claim 6 (always a democracy), which is held as rows. Fourteen groups of facts under the idea each serves, sixty-one facts, nine look-alike pairs. Every fact comes from the old data and none is added. The years 1877 to 1900 are skipped: the unit holds three dates from them (1882, 1886, 1892) and says so. The old "which era" question is gone: a facts card cannot hold five rows with one answer (V57), so each era became groups of facts, each asked one way. Not yet deployed.' }
+      { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the fact unit for history since 1877, replacing the old Unit Five cards on its last two eras ("Factories and immigration (1877 to 1914)" and "World wars, civil rights and today (1914 onward)"), "The right to vote, widened by inches", "Places and symbols", the drill items of those eras (n5), and old claim 6 (always a democracy), which is held as rows. Fourteen groups of facts under the idea each serves, sixty-one facts, nine look-alike pairs. Every fact comes from the old data and none is added. The years 1877 to 1900 are skipped: the unit holds three dates from them (1882, 1886, 1892) and says so. The old "which era" question is gone: a facts card cannot hold five rows with one answer (V57), so each era became groups of facts, each asked one way. Not yet deployed.' },
+      { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' }
     ],
     keyChanges: [],
     wrongIdeas: [],       // old claim 6 becomes the founding-voters row and the years and gap rows; a fact unit has no refute card (A12, gap 6 of the civics plan)

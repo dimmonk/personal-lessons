@@ -21,8 +21,8 @@ FC.cases('math', 'u5', [
       ]
     },
     reason: {
-      M1: 'The words {cue:M1} ask how likely it is that a result is right, a chance and not a count. The problem does not change as time passes, has no hidden number for a calculation to fit, does not share whole numbers out in groups and has no shape. It is about the number of ways that something can come out, or its chance, so the key’s first answer is {a:M1.chance}.',
-      C1: 'The words {cue:C1} give a dog that has marked a bag, how common banned food is, and how often the dog is right and wrong, and ask how likely it is that the mark is right, so the key’s answer is {a:C1.test}.'
+      M1: 'The words {cue:M1} ask how likely it is that a result is right, a chance and not a count. The problem does not change as time passes, has no hidden number for a calculation to fit, does not share whole numbers out in groups and has no shape. It is about the number of ways that something can come out, or its chance, so the answer to the first question is {a:M1.chance}.',
+      C1: 'The words {cue:C1} give a dog that has marked a bag, how common banned food is, and how often the dog is right and wrong, and ask how likely it is that the mark is right, so the answer is {a:C1.test}.'
     },
     not: {
       outcome: 'complement',
@@ -78,8 +78,8 @@ FC.cases('math', 'u5', [
       C1: ['The gate at the door beeps for 98% of those customers, and also for 1% of the others']
     },
     reason: {
-      M1: 'The words {cue:M1} ask how likely it is that a result is right, a chance and not a count. Nothing here is followed through time, no number is hidden for a calculation to fit, no whole number is split into groups, and no shape is measured. The problem asks for the number of different results, or for a chance, which is the key’s first answer {a:M1.chance}.',
-      C1: 'The words {cue:C1} give a gate that has beeped, how common unpaid goods are, and how often the gate is right and wrong, and ask how likely it is that the beep is right, so the key’s answer is {a:C1.test}.'
+      M1: 'The words {cue:M1} ask how likely it is that a result is right, a chance and not a count. Nothing here is followed through time, no number is hidden for a calculation to fit, no whole number is split into groups, and no shape is measured. The problem asks for the number of different results, or for a chance, which is the answer to the first question {a:M1.chance}.',
+      C1: 'The words {cue:C1} give an alarm that has beeped, how common unpaid goods are, and how often the alarm is right and wrong, and ask how likely it is that the beep is right, so the answer is {a:C1.test}.'
     },
     not: {
       outcome: 'complement',
@@ -137,8 +137,8 @@ FC.cases('math', 'u5', [
       ]
     },
     reason: {
-      M1: 'The words {cue:M1} ask how likely it is that a result is right, a chance and not a count. Nothing in it follows an amount as time passes, hides a number that a calculation must fit, or splits whole numbers into groups, and there is no shape to measure. What it asks for is a count of the results, or the chance of something, so the key’s first answer is {a:M1.chance}.',
-      C1: 'The words {cue:C1} give a detector that has shown a result, how common damp is, and how often the detector is right and wrong, and ask how likely it is that the result is right, so the key’s answer is {a:C1.test}.'
+      M1: 'The words {cue:M1} ask how likely it is that a result is right, a chance and not a count. Nothing in it follows an amount as time passes, hides a number that a calculation must fit, or splits whole numbers into groups, and there is no shape to measure. What it asks for is a count of the results, or the chance of something, so the answer to the first question is {a:M1.chance}.',
+      C1: 'The words {cue:C1} give a detector that has shown a result, how common damp is, and how often the detector is right and wrong, and ask how likely it is that the result is right, so the answer is {a:C1.test}.'
     },
     not: {
       outcome: 'complement',
@@ -197,8 +197,8 @@ FC.cases('math', 'u5', [
       ]
     },
     reason: {
-      M1: 'The words {cue:M1} ask how likely it is that a result is right, a chance and not a count. The problem does not change as time passes, has no hidden number for a calculation to fit, does not share whole numbers out in groups and has no shape. It is about the number of ways that something can come out, or its chance, so the key’s first answer is {a:M1.chance}.',
-      C1: 'The words {cue:C1} give a model that has flagged someone, how common missed repayments are, and how often the model is right and wrong, and ask how likely it is that the flag is right, so the key’s answer is {a:C1.test}.'
+      M1: 'The words {cue:M1} ask how likely it is that a result is right, a chance and not a count. The problem does not change as time passes, has no hidden number for a calculation to fit, does not share whole numbers out in groups and has no shape. It is about the number of ways that something can come out, or its chance, so the answer to the first question is {a:M1.chance}.',
+      C1: 'The words {cue:C1} give a model that has flagged someone, how common missed repayments are, and how often the model is right and wrong, and ask how likely it is that the flag is right, so the answer is {a:C1.test}.'
     },
     not: {
       outcome: 'complement',

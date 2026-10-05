@@ -19,7 +19,7 @@ FC.cards('wealth', 'u2', [
       'The line printed below names two other forms of this sound case, and here is each in one example. The first is income investments already in the sheltered account: Zoe has {t:bond} fund paying £2,000 a year inside her pension, where it is not taxed, and {t:fund} of shares paying £400 a year in her ordinary account, where she pays £100. The tax she pays is already about as low as it can be. The second is spending reset each year: Tim takes 4% of whatever his pot is worth every January, so in a year when {t:pot} falls he takes less. His sum can never become too large for {t:pot}. Each is a cost already as low as it can be, and in each there is something you can point to that shows it. Kamal’s case is the first form, a charge for real work at a set price.'
     ],
     feature: { step: 'E1', option: 'nomore' },
-    name: 'The name for this is {o:nocut}. It is the one name in the unit that says to leave it alone, and it is a full answer. The key includes it so that you can say "nothing needs cutting back here" as exactly as you can say what is wrong elsewhere.' },
+    name: 'The name for this is {o:nocut}. It is the one name in the unit that says to leave it alone, and it is a full answer. It is there so that you can say "nothing needs cutting back here" as exactly as you can say what is wrong elsewhere.' },
 
   { id: 'again-nocut', kind: 'again', outcome: 'nocut',
     link: 'The last card gave you what to point to, from one case, and said that it has three forms. Kamal’s was a charge for real work. Here is a second case, in the second form.',
@@ -62,8 +62,8 @@ FC.cards('wealth', 'u2', [
     instruction: 'Both cases are about the same firm and the same £3,000 a year, for two sisters with the same pot. Compare one thing: what each £3,000 pays for.',
     prompt: { kind: 'which', option: 'E1.nomore', answer: 'e-l-fee-b' },
     difference: [
-      'In Case A the firm takes 1% of Gwen’s £300,000 and has done nothing else since it chose her funds. The £3,000 is for choosing, and it would grow if her pot did. The key’s answer is {a:E1.picking}, and the case is {o:feecore}.',
-      'In Case B the firm takes £3,000 from Ann too, but it is a flat price and it pays for a return, a check of her will and a plan. If the firm stopped, those would stop. The key’s answer is {a:E1.nomore}, and the case is {o:nocut}.',
+      'In Case A the firm takes 1% of Gwen’s £300,000 and has done nothing else since it chose her funds. The £3,000 is for choosing, and it would grow if her pot did. The answer is {a:E1.picking}, and the case is {o:feecore}.',
+      'In Case B the firm takes £3,000 from Ann too, but it is a flat price and it pays for a return, a check of her will and a plan. If the firm stopped, those would stop. The answer is {a:E1.nomore}, and the case is {o:nocut}.',
       'The size is the same, £3,000 each, and so is the firm. So neither tells you anything. Only what the money pays for, and whether the price moves with {t:pot}, tells the two apart.'
     ] }
 ]);

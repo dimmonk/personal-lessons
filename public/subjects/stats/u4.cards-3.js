@@ -37,8 +37,8 @@ FC.cards('stats', 'u4', [
     instruction: 'Both claims come from the same ski area and give the same figure: average snow depth in February rose from 90 cm to 120 cm over ten years. Compare one thing: whether the pole that measures the snow stood in the same place all along.',
     prompt: { kind: 'which', option: 'S1.holds', answer: 'meas-snow-same' },
     difference: [
-      'In Case A the ski area moved its pole in year six, from an open slope to a hollow behind the lodge, where wind drifts snow. A second pole left on the open slope read 91 cm and then 92 cm, so the snow itself barely changed (92 − 91 = 1 cm), and nearly all of the 30 cm rise (120 − 90 = 30) is where the pole stands. The key’s first answer is {a:S1.measure}, and its second is {a:M1.newrule}: the case is {o:defshift}.',
-      'In Case B the pole has never been moved, and no other pole on the mountain reads differently. Nothing but the snow could have moved the figure. Every part holds, so the key’s first answer is {a:S1.holds}, and the kind of claim it makes is {a:H1.change}: the claim is a sound one, {plain:meas_ok}.',
+      'In Case A the ski area moved its pole in year six, from an open slope to a hollow behind the lodge, where wind drifts snow. A second pole left on the open slope read 91 cm and then 92 cm, so the snow itself barely changed (92 − 91 = 1 cm), and nearly all of the 30 cm rise (120 − 90 = 30) is where the pole stands. The first answer is {a:S1.measure}, and its second is {a:M1.newrule}: the case is {o:defshift}.',
+      'In Case B the pole has never been moved, and no other pole on the mountain reads differently. Nothing but the snow could have moved the figure. Every part holds, so the first answer is {a:S1.holds}, and the kind of claim it makes is {a:H1.change}: the claim is a sound one, {plain:meas_ok}.',
       'The same 30 cm, in the same words, is a pole that was moved in one claim and snow that really deepened in the other. The sentence that tells you is in the account of how it was measured.'
     ] },
 
@@ -48,8 +48,8 @@ FC.cards('stats', 'u4', [
     instruction: 'Both claims come from a bank, and both give the same figure: the average time to approve a loan fell from 12 days to 5. Compare one thing: whether the people who make the figure are ranked on it and could end the clock early, or the clock itself now starts at a different point.',
     prompt: { kind: 'which', option: 'M1.newrule', answer: 'meas-loans-clock' },
     difference: [
-      'In Case A the officers are ranked on the average and enter the approval date themselves, and they now enter it on the day a file arrives and do the checks over the next week. The customers still wait about 12 days for a final answer. The figure fell from 12 to 5 because of what the officers enter. The key’s second answer is {a:M1.pushed}, and the case is {o:proxy}.',
-      'In Case B nobody is ranked on the figure, and the clock now starts on the day the file is complete, after the customer has sent every document. Counted from the day of application, the same 200 loans took 12 days in both years. Counted from the day the file is complete, they took 5. The figure fell from 12 to 5 because the clock starts later. The key’s second answer is {a:M1.newrule}, and the case is {o:defshift}.',
+      'In Case A the officers are ranked on the average and enter the approval date themselves, and they now enter it on the day a file arrives and do the checks over the next week. The customers still wait about 12 days for a final answer. The figure fell from 12 to 5 because of what the officers enter. The second answer is {a:M1.pushed}, and the case is {o:proxy}.',
+      'In Case B nobody is ranked on the figure, and the clock now starts on the day the file is complete, after the customer has sent every document. Counted from the day of application, the same 200 loans took 12 days in both years. Counted from the day the file is complete, they took 5. The figure fell from 12 to 5 because the clock starts later. The second answer is {a:M1.newrule}, and the case is {o:defshift}.',
       'In both, the new figure is lower than the wait a customer feels. What differs is who moved it: people judged on the figure, or a new point to start the clock.'
     ] },
 

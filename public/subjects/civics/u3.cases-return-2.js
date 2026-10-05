@@ -19,7 +19,7 @@ FC.cases('civics', 'u3', [
     reason: { D1: 'The last decision is a vote in the Senate: {cue:D1}. The President’s signature is how the matter got there.',
               C1: 'The Senate voted on a {t:treaty} the President had signed: {cue:C1}.' },
     not: { outcome: 'impeach', why: 'Both are Senate votes. But nobody is accused of anything here. The vote is on an agreement the President signed.' },
-    wouldChange: 'If the story had stopped after the President signed, with nothing about the Senate, the key’s answer to the first question would be {a:D1.president}.' },
+    wouldChange: 'If the story had stopped after the President signed, with nothing about the Senate, the answer to the first question would be {a:D1.president}.' },
 
   { id: 'ret-railhead', use: 'return', tier: 'misleading', setting: 'work', topic: 'a railway head not yet approved',
     text: "The President announced on Monday that Carla Dunn will run the federal railway office, and the White House said she would start in a week. She can begin only after the Senate votes on her name, which is set for Thursday.",
@@ -28,7 +28,7 @@ FC.cases('civics', 'u3', [
     reason: { D1: 'The case ends by asking the Senate for a decision, set for Thursday: {cue:D1}. The announcement is how the matter got there.',
               C1: 'The vote is on a person the President put forward: she can begin only {cue:C1}.' },
     not: { outcome: 'impeach', why: 'It is a Senate vote about a woman. But she does not yet have the job, and nobody is accused of anything.' },
-    wouldChange: 'If the story had ended with the President announcing her and saying that she starts in a week, with nothing about a Senate vote, the key’s answer to the first question would be {a:D1.president}.' },
+    wouldChange: 'If the story had ended with the President announcing her and saying that she starts in a week, with nothing about a Senate vote, the answer to the first question would be {a:D1.president}.' },
 
   /* ---------- Impeachment ---------- */
   { id: 'ret-inspector', use: 'return', tier: 'clean', setting: 'work', topic: 'an inspector general who covered up a theft',
@@ -44,7 +44,7 @@ FC.cases('civics', 'u3', [
     outcome: 'impeach', route: { D1: ['congress'], C1: ['remove'] },
     cues: { D1: 'The Senate trial ended with only 51 of the 100 senators voting to convict', C1: 'The House voted by more than half to charge her' },
     reason: { D1: 'The last decision is a vote by senators: {cue:D1}.',
-              C1: 'The House brought the charge: {cue:C1}. The Senate tried it and did not convict. The key’s answer covers the charge and the trial, whatever the result.' },
+              C1: 'The House brought the charge: {cue:C1}. The Senate tried it and did not convict. The answer covers the charge and the trial, whatever the result.' },
     not: { outcome: 'confirm', why: 'Both are Senate votes about a woman at the head of an office. But she already had the job, and the vote was on a charge.' } },
 
   { id: 'ret-courtservice', use: 'return', tier: 'misleading', setting: 'money', topic: 'a court-service head accused over costs', echo: 'l-okafor-seat',

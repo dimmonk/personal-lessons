@@ -15,9 +15,9 @@ FC.cards('scams', 'u3', [
     ],
     explain: [
       'What you are shown is a {t:permission} that asks you to press Allow. It is not a copy. It comes from Rafa\'s real email provider, with the real name and logo, and it lists real things. That is why this is the hardest of the three scams to spot: nothing on the {t:permission} is false. What is false is the reason Rafa was given for pressing Allow, a shared document.',
-      'Here is how it goes, in order. First, the scammer builds an app and registers it with the email provider, which is quick and costs nothing, and gives it an ordinary name. Second, an email with a link goes to many people, and the link leads to the provider\'s own {t:permission} for the scammer\'s app. Third, Rafa presses Allow. Fourth, the provider gives the app a key to Rafa\'s account, and the key is a standing one. Fifth, the app can now read his mail, send mail as him, delete it and see his contacts, without ever seeing his password, and it keeps the key until Rafa takes it away.',
+      'Here is how it goes, in order. First, the scammer builds an app and registers it with the email provider, which is quick and costs nothing, and gives it an ordinary name. Second, an email with a link goes to many people, and the link leads to the provider\'s own {t:permission} for the scammer\'s app. Third, Rafa presses Allow. Fourth, the provider gives the app standing access to Rafa\'s account. Fifth, the app can now read his mail, send mail as him, delete it and see his contacts, without ever seeing his password, and it keeps that access until Rafa takes it away.',
       'Notice what it does not need. It does not need Rafa\'s password, so changing the password afterwards does not remove it. It does not need him to sign in again, so no warning about a new sign-in appears. The way in is the Allow, and it stays open until someone shuts it.',
-      'And notice what the {t:permission} asks for. A document needs to be opened. It does not need every email Rafa has ever received, or the right to send mail in his name, or to delete anything. The gap between what the reason needs and what the {t:permission} asks for is one of the two things the key looks at.'
+      'And notice what the {t:permission} asks for. A document needs to be opened. It does not need every email Rafa has ever received, or the right to send mail in his name, or to delete anything. The gap between what the reason needs and what the {t:permission} asks for is one of the two things the questions look at.'
     ],
     feature: { step: 'A1', option: 'allow' },
     name: [
@@ -41,8 +41,8 @@ FC.cards('scams', 'u3', [
       'It begins with a lure that sends you to an app: a shared document, a quiz, a prize, a free offer, a tool that promises to scan your mail or tidy your photos.',
       'The app sends you to your account provider, and the provider shows you a {t:permission}. The {t:permission} is real. It names the app, and it lists what the app wants to do.',
       'The list is the thing to read. What it asks for is much more than the reason given: reading, sending and deleting all your mail, or seeing all your contacts or files.',
-      'When you press Allow, the provider gives the app a standing key to your account. You do not give a password, and you do not sign in again for it.',
-      'The app can then read your mail, send mail as you and use the account to reset other passwords, for as long as the key stays.',
+      'When you press Allow, the provider gives the app standing access to your account. You do not give a password, and you do not sign in again for it.',
+      'The app can then read your mail, send mail as you and use the account to reset other passwords, for as long as that access stays.',
       'The app is not a hacker breaking in. It is an app that you let in, and it stays until you remove it in your account\'s settings.'
     ],
     not: [
@@ -68,8 +68,8 @@ FC.cards('scams', 'u3', [
     instruction: 'Both cases are about Omar and the {t:permission} that his email provider shows when an app asks to connect, and in both the {t:permission} has an Allow button. Compare two things: how Omar came to the app, and what the {t:permission} asks the app to be allowed to do.',
     prompt: { kind: 'which', option: 'A2.fits', answer: 'ac-planner-own' },
     difference: [
-      'In Case A Omar went looking for a meeting planner himself, in the app list of his own provider. The {t:permission} asks to see his calendar, and nothing else, which is what a planner needs. The key\'s answer is {a:A2.fits}, and the case is {o:realsignin}.',
-      'In Case B a text from a number he does not know sends him to the same kind of {t:permission}. He did not go looking for anything, and the {t:permission} asks to read, send and delete all his email, which free storage has no use for. The key\'s answer is the other one for the same question, and the case is {o:appscam}.',
+      'In Case A Omar went looking for a meeting planner himself, in the app list of his own provider. The {t:permission} asks to see his calendar, and nothing else, which is what a planner needs. The answer is {a:A2.fits}, and the case is {o:realsignin}.',
+      'In Case B a text from a number he does not know sends him to the same kind of {t:permission}. He did not go looking for anything, and the {t:permission} asks to read, send and delete all his email, which free storage has no use for. The answer is the other one for the same question, and the case is {o:appscam}.',
       'The {t:permission} is the real {t:permission} both times, with the real provider\'s name. So the {t:permission} cannot tell you which case you are in. What tells you is who started it, and whether what it asks matches what you wanted.'
     ] }
 ]);

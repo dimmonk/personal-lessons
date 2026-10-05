@@ -53,7 +53,7 @@ FC.cases('civics', 'u6', [
   { id: 'u6-claim-demo', use: 'claim',
     text: '“Federal law gives workers twelve weeks of unpaid leave, so a state that adds paid leave on top is breaking federal law.”',
     ask: { type: 'missing', name: 'preempted' },
-    fault: 'The claim points at a federal law and a state rule on the same matter, and stops there. Two rules on one matter are not yet {o:preempted}. That name needs a federal law that shuts the states out, or one the state’s rule clashes with. Here the federal law sets a floor, and a worker who gets paid leave also gets the leave the federal law asks for. The key’s answer is {a:S2.floor}.',
+    fault: 'The claim points at a federal law and a state rule on the same matter, and stops there. Two rules on one matter are not yet {o:preempted}. That name needs a federal law that shuts the states out, or one the state’s rule clashes with. Here the federal law sets a floor, and a worker who gets paid leave also gets the leave the federal law asks for. The answer is {a:S2.floor}.',
     corrected: 'A federal law gives twelve weeks of unpaid leave, and a state adds paid leave on top. The two stand side by side, so the case is {o:concurrent}. It would be {o:preempted} only if the federal law said that no state may add to it.' },
 
   { id: 'u6-claim-always', use: 'claim',
@@ -77,6 +77,6 @@ FC.cases('civics', 'u6', [
   { id: 'u6-claim-right', use: 'claim',
     text: '“The county can ban those leaflets. The First Amendment only limits Congress, and a county is not Congress.”',
     ask: { type: 'option', step: 'S2', answer: 'right' },
-    fault: 'The claim reasons that no right reaches a county. The first ten amendments were first written to limit only the federal government. But after the Civil War the Fourteenth Amendment was read to bring those limits to the states, and so a right binds a state, a city and a county as well. The key’s answer to the second question is {a:S2.right}.',
+    fault: 'The claim reasons that no right reaches a county. The first ten amendments were first written to limit only the federal government. But after the Civil War the Fourteenth Amendment was read to bring those limits to the states, and so a right binds a state, a city and a county as well. The answer to the second question is {a:S2.right}.',
     corrected: 'The First Amendment was first written to limit Congress, but the Fourteenth Amendment brought it to the states, so it binds a county too. A county board that bans leaflets because of what they say is making a rule that a right forbids: {o:protected}.' }
 ]);

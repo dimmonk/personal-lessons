@@ -68,7 +68,7 @@ FC.cases('wealth', 'u4', [
     cues: { D1: 'He needs £2,000 a month to live on',
             T1: 'he pays it by selling units of the shares every month, with no cash set aside' },
     segments: [
-      { text: 'His plan is 60% in shares and 40% in bonds, and shares are now 71% of his £500,000, which is £355,000', note: 'That is {t:mix}, and it has moved. It is real, but it is not the part the key puts first.' },
+      { text: 'His plan is 60% in shares and 40% in bonds, and shares are now 71% of his £500,000, which is £355,000', note: 'That is {t:mix}, and it has moved. It is real, but it is not the part that comes first.' },
       { text: 'He needs £2,000 a month to live on, and he pays it by selling units of the shares every month, with no cash set aside' }
     ] },
 
@@ -78,7 +78,7 @@ FC.cases('wealth', 'u4', [
     cues: { D1: "Her son's university course begins on 1 September, nine months from now",
             T1: ['The first payment, £27,000, is due that day', 'the money for it is in the shares'] },
     segments: [
-      { text: "Beata's plan is 50% in shares and 50% in bonds, and shares are now 64% of her £300,000, which is £192,000", note: 'That is {t:mix}, and it has moved. It is real, but it is not the part the key puts first.' },
+      { text: "Beata's plan is 50% in shares and 50% in bonds, and shares are now 64% of her £300,000, which is £192,000", note: 'That is {t:mix}, and it has moved. It is real, but it is not the part that comes first.' },
       { text: 'She works, and her pay covers her bills', note: 'That tells you the bills are not paid by selling shares. It is why this is not a case of living costs.' },
       { text: "Her son's university course begins on 1 September, nine months from now. The first payment, £27,000, is due that day, and the money for it is in the shares" }
     ] },

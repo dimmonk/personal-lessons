@@ -4,7 +4,7 @@ FC.cards('wealth', 'u5', [
 
   /* ---------- Nothing more needed ---------- */
   { id: 'meet-simple', kind: 'meet', outcome: 'simple',
-    link: 'So far the name has been something to put right: a paper that is stale or missing. The papers can also be in good order, and the key has a name for that. You need it as much as the first: without it, every case about a will looks like a case with something wrong.',
+    link: 'So far the name has been something to put right: a paper that is stale or missing. The papers can also be in good order, and there is a name for that. You need it as much as the first: without it, every case about a will looks like a case with something wrong.',
     case: 'm-anselm', mark: 'H1',
     strip: [
       'One couple, with a house and savings that come to £410,000.',
@@ -60,8 +60,8 @@ FC.cards('wealth', 'u5', [
     instruction: 'Both cases are about Rosalind, who divorced six years ago and has the same flat and the same savings. Compare one thing: what the case says about the papers.',
     prompt: { kind: 'which', option: 'H1.inorder', answer: 'la-form-current' },
     difference: [
-      'In Case A Rosalind divorced six years ago and her pension form still names her former husband. If she died tomorrow, that form would pay the pension to him. The key’s answer is {a:H1.papers}, and the case is {o:basicdocs}.',
-      'In Case B she changed the form the month after the divorce, and she rewrote her will and signed {t:poa} at the same time. All three papers match her life, and the estate is £380,000, below the limit. The key’s answer is {a:H1.inorder}, and the case is {o:simple}.',
+      'In Case A Rosalind divorced six years ago and her pension form still names her former husband. If she died tomorrow, that form would pay the pension to him. The answer is {a:H1.papers}, and the case is {o:basicdocs}.',
+      'In Case B she changed the form the month after the divorce, and she rewrote her will and signed {t:poa} at the same time. All three papers match her life, and the estate is £380,000, below the limit. The answer is {a:H1.inorder}, and the case is {o:simple}.',
       'The divorce, the flat and the savings are the same in both. What differs is one sentence about one paper. That is why you can never name a case from its story.'
     ] }
 ]);

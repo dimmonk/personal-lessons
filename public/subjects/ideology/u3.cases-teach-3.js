@@ -87,7 +87,7 @@ FC.cases('ideology', 'u3', [
     text: "From a radio address by the head of the Harvest Board of Tolvar: 'Farmers of every region, we are one country, and this year's harvest is everyone's harvest. Bring in the grain and the whole nation eats.' The address did not mention elections, parties or critics at all.",
     outcome: 'nationalism', route: { D1: ['nation'], N1: ['whole'], N2: ['keep'] },
     cues: { N2: 'The address did not mention elections, parties or critics at all' },
-    reason: { N2: 'The text asks for nothing to be taken away: {cue:N2}. The key asks what the text would do about the vote and about its critics, and a text that does not ask for them to go has not asked for them to go.' } },
+    reason: { N2: 'The text asks for nothing to be taken away: {cue:N2}. The question is what the text would do about the vote and about its critics, and a text that does not ask for them to go has not asked for them to go.' } },
 
   /* ---------- The two cases worked from the top ---------- */
   { id: 'n-w-clean', use: 'teach', tier: 'clean', setting: 'housing', topic: 'old streets pulled down for towers', name: 'The old streets flyer',

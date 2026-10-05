@@ -52,7 +52,7 @@ FC.cases('wealth', 'u3', [
             S1: ['a tenant badly hurt in a fall there could win £2,000,000', 'Kwame’s landlord insurance pays up to £300,000 on any one claim'] },
     segments: [
       { text: 'Kwame, 59, owns five flats and the house he lives in, all in his own name, worth £1,400,000 together.',
-        note: 'That is what makes the case look like several properties in one name, and it is true. The key asks what could take most of it, and {t:claim} that the insurance cannot meet comes first.' },
+        note: 'That is what makes the case look like several properties in one name, and it is true. The question is what could take most of it, and {t:claim} that the insurance cannot meet comes first.' },
       { text: ' A lawyer who looked at the stairs in the oldest flat says that a tenant badly hurt in a fall there could win £2,000,000.' },
       { text: ' Kwame’s landlord insurance pays up to £300,000 on any one claim.',
         note: 'That is the other half of the comparison, and it matters only because of the sentence before it. The words that settle the case are the ones that show the size of the claim.' }

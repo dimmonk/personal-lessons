@@ -18,7 +18,7 @@ FC.cards('scams', 'u2', [
     ],
     explain: [
       'Here is the scam as it really unfolds. First, the call: a refund that Harold did not expect, from a company that he really deals with. Second, a reason to let the caller see his computer: he says that he needs to see Harold’s account to send the money. Third, once the caller is watching, he asks Harold to log in to his online bank “to see where to send it”. Fourth, while Harold is logged in and the caller is watching, the caller moves money between Harold’s own accounts, say from savings into the current account, so that the balance on the page jumps: £3,120 where a refund of £312 was promised. Fifth, the caller is upset. He has typed an extra zero, he will lose his job, and could Harold send the difference back? What Harold would send is his own money, and the extra on the page was only his own savings, moved across.',
-      'Now ask which of those steps Harold could still have refused. The first is a call, and he did nothing. The second is the request: let him see your computer. Everything after that, the balance, the apology and the request to send money back, can only be known once Harold has let him in, and by then the page on his computer is controlled by someone else, so Harold cannot trust it. The key’s question is answered at the second step, and the answer is {a:I1.refund}: the caller’s reason is money, and the request is to install something or to let them see your computer while it is dealt with.',
+      'Now ask which of those steps Harold could still have refused. The first is a call, and he did nothing. The second is the request: let him see your computer. Everything after that, the balance, the apology and the request to send money back, can only be known once Harold has let him in, and by then the page on his computer is controlled by someone else, so Harold cannot trust it. The question is answered at the second step, and the answer is {a:I1.refund}: the caller’s reason is money, and the request is to install something or to let them see your computer while it is dealt with.',
       'Notice that the reason given is money, and that nothing is said to be wrong with the device. In the third name the reason given for the same request was a fault in the device.'
     ],
     feature: { step: 'I1', option: 'refund' },
@@ -31,7 +31,7 @@ FC.cards('scams', 'u2', [
     prompt: { kind: 'phrase', answer: 'Someone is trying to take money from your account tonight' },
     shared: [
       'Harold and Odette each had a call from someone who said they were from a company that holds their money, and each was given a reason about money: a refund to send, a payment to stop. In both, the caller asked to see the device so that the money could be dealt with while they watched.',
-      'Nothing was wrong before either call. A refund and a danger to your account are different stories, and they share one thing: a reason about money, given by someone who has contacted you, for letting them see your device. That is what {o:refundscam} names. In the second story it is the bank account itself that needs attention, and the key counts that as the same name.'
+      'Nothing was wrong before either call. A refund and a danger to your account are different stories, and they share one thing: a reason about money, given by someone who has contacted you, for letting them see your device. That is what {o:refundscam} names. In the second story it is the bank account itself that needs attention, and that counts as the same name.'
     ] },
 
   { id: 'portrait-refundscam', kind: 'portrait', outcome: 'refundscam',
@@ -45,7 +45,7 @@ FC.cards('scams', 'u2', [
       'What you can no longer trust is the page on your own computer. Whoever controls it can make a balance say whatever they like.'
     ],
     not: [
-      'A refund is not always a scam. A real company can owe you money, and a real refund goes back to the card or the account that paid, with no call and no need for anyone to see your computer. A refund that simply arrives, with nobody on the phone, asks you for nothing, and the key’s first question gives it the answer {a:D1.nothing}.',
+      'A refund is not always a scam. A real company can owe you money, and a real refund goes back to the card or the account that paid, with no call and no need for anyone to see your computer. A refund that simply arrives, with nobody on the phone, asks you for nothing, and the first question gives it the answer {a:D1.nothing}.',
       'And a call from your bank is not always this name. A real bank can ring about a payment. What gives the name is the request to install something or to let them see your device, and a real bank does not need that.'
     ],
     wild: ['"You were charged twice, so I owe you a refund."', '"I will process it while you watch. Press Share."', '"Someone is trying to take money from your account tonight."', '"Oh no, I have typed an extra zero. I will lose my job."', '"Please send the difference back."'],
@@ -68,8 +68,8 @@ FC.cards('scams', 'u2', [
     instruction: 'Both cases are about Hal, and in both a caller asks to see his device. Compare one thing: the reason the caller gives for wanting to see it.',
     prompt: { kind: 'which', option: 'I1.refund', answer: 'dv-lk-hal-refund' },
     difference: [
-      'In Case A the reason is a fault with the device. A page on his laptop says that it is locked, and the man he rings says that he can fix it, but needs to see the device. The key’s answer is {a:I1.support}, and the case is {o:techsupport}.',
-      'In Case B the reason is money. Nothing was wrong with his device, and nobody had warned him about anything. A woman rings to say that he was charged twice and that she owes him £60, and she needs to see the device to put it back. The key’s answer is {a:I1.refund}, and the case is {o:refundscam}.',
+      'In Case A the reason is a fault with the device. A page on his laptop says that it is locked, and the man he rings says that he can fix it, but needs to see the device. The answer is {a:I1.support}, and the case is {o:techsupport}.',
+      'In Case B the reason is money. Nothing was wrong with his device, and nobody had warned him about anything. A woman rings to say that he was charged twice and that she owes him £60, and she needs to see the device to put it back. The answer is {a:I1.refund}, and the case is {o:refundscam}.',
       'The request is the same in both: let me see your device. What differs is the reason given for it, a fault or a refund, and Hal can hear that difference at the moment he is asked.'
     ] },
 
@@ -80,8 +80,8 @@ FC.cards('scams', 'u2', [
     setup: 'Nia saw a warning that gave her a number to ring, and the man who answered offered to fix a problem. That is what {o:techsupport} looks like. Yet this case is {o:refundscam}.',
     prompt: { kind: 'phrase', answer: 'you were charged twice for it, so I owe you £199 back' },
     because: [
-      'The case shows two reasons for wanting to see her computer: a fault with the device, and a refund. The fault came first, and on its own it would be {o:techsupport}. But the second reason is about money, and it is the one the key puts first, because a refund call is the one that goes on to reach your bank.',
-      'In real calls the two run together. A technician who has been given access finds that there is a “licence” to be refunded, or a “mistake” to be put right, and the call turns into the other scam. The key does not ask which came first. It asks what reasons the case shows.'
+      'The case shows two reasons for wanting to see her computer: a fault with the device, and a refund. The fault came first, and on its own it would be {o:techsupport}. But the second reason is about money, and it is the one that comes first, because a refund call is the one that goes on to reach your bank.',
+      'In real calls the two run together. A technician who has been given access finds that there is a “licence” to be refunded, or a “mistake” to be put right, and the call turns into the other scam. The questions do not ask which came first. They ask what reasons the case shows.'
     ],
-    take: 'This is the key’s decision, made on purpose. Many calls start as one and turn into the other, and the key gives each case one name, so that two people using it reach the same answer. What you do does not change: stop, and use {t:check}.' }
+    take: 'This is the decision, made on purpose. Many calls start as one and turn into the other, and each case gets one name, so that two people using the questions reach the same answer. What you do does not change: stop, and use {t:check}.' }
 ]);

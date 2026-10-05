@@ -7,7 +7,7 @@
 
 FC.unit('stats', 'u2', {
   kind: 'C',              // C classification, F facts, P procedure
-  rev: 1,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
+  rev: 2,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
   standard: 1,            // lesson-standard version this unit was built to
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author). The app labels a draft as a draft.
   tag: 'Two',
@@ -45,7 +45,7 @@ FC.unit('stats', 'u2', {
       cards: ['meet-compok', 'again-compok', 'portrait-compok', 'check-compok', 'look-meas-comp', 'exc-years',
               'term-placebo', 'meet-causeok', 'again-causeok', 'portrait-causeok', 'check-causeok', 'look-comp-cause', 'exc-stops',
               'refute-comparison'] },
-    { id: 'p3', title: 'The key’s question, two whole claims, and the drill',
+    { id: 'p3', title: 'The question, two whole claims, and the drill',
       cards: ['q-holds', 'check-q', 'worked-libraries', 'worked-backs'], drill: true,
       close: ['recap-holds', 'transfer-holds', 'plan-holds'] }
   ],
@@ -56,7 +56,7 @@ FC.unit('stats', 'u2', {
   // mixes in claims with something wrong, so a learner does not take it that every claim in this unit's stage holds.
   drill: {
     key: 'u2',            // the old quick-drill totals for this unit were stored under pl:stats:stats:u2 (frozen; see E8)
-    add: 'Every claim in this unit holds, and that is on purpose: this is the unit about what such claims look like. A few claims from Unit One are mixed in without a label, and some of those do go wrong. When one appears, the key’s first question comes before this unit’s question, and its answer will be one of the other four.',
+    add: 'Every claim in this unit holds, and that is on purpose: this is the unit about what such claims look like. A few claims from Unit One are mixed in without a label, and some of those do go wrong. When one appears, the first question comes before this unit’s question, and its answer will be one of the other four.',
     rungs: [
       { ask: 'name',
         items: [['n-heating', 'n-rain'], ['n-trucks', 'n-quiz'], ['n-sales', 'n-schools']] },
@@ -87,7 +87,8 @@ FC.unit('stats', 'u2', {
   build: {
     // What changed at each revision (R1). One entry for every revision from 1 to rev.
     history: [
-      { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the branch unit for the fifth answer of the key’s first question, with the four names for a claim that holds. Not yet deployed, so later edits before the first deploy stay revision 1. Replaces the old cards "When nothing is wrong", "A fair count", "A trustworthy measure", "A fair comparison" and "A cause that holds up", and the sound items of the old drills.' }
+      { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the branch unit for the fifth answer of the first question, with the four names for a claim that holds. Not yet deployed, so later edits before the first deploy stay revision 1. Replaces the old cards "When nothing is wrong", "A fair count", "A trustworthy measure", "A fair comparison" and "A cause that holds up", and the sound items of the old drills.' },
+      { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' }
     ],
     // What changed in the key for this branch, and why (docs/rebuild/stats-plan.md, section (a)).
     keyChanges: [

@@ -70,8 +70,8 @@ FC.cards('scams', 'u3', [
     instruction: 'Both cases are about Hana, her bank, a payment of £60 and a code that arrives on her phone. Compare one thing: who asks for the code, and where it goes.',
     prompt: { kind: 'which', option: 'A2.fits', answer: 'ac-bank-own' },
     difference: [
-      'In Case A Hana opened her own banking app to pay a bill. The code arrives because of what she did, and she types it into the same app. Nobody else sees it. The key\'s answer is {a:A2.fits}, and the case is {o:realsignin}.',
-      'In Case B a man rings her, and he is the one who asks for the code: "read it out to me". She did not start anything. The code is just as real as in Case A. The key\'s answer is the other one for the same question, and the case is {o:codescam}.',
+      'In Case A Hana opened her own banking app to pay a bill. The code arrives because of what she did, and she types it into the same app. Nobody else sees it. The answer is {a:A2.fits}, and the case is {o:realsignin}.',
+      'In Case B a man rings her, and he is the one who asks for the code: "read it out to me". She did not start anything. The code is just as real as in Case A. The answer is the other one for the same question, and the case is {o:codescam}.',
       'So the code does not tell you which case you are in. The same bank sends the same code in both. What differs is whose hands it is going into: your own app, or a caller\'s ear.'
     ] },
 
@@ -84,7 +84,7 @@ FC.cards('scams', 'u3', [
     prompt: { kind: 'phrase', answer: 'The link opens a page that asks for his password' },
     because: [
       'Count what is asked, and in what order. First, Gil is sent to a page that asks for his password. Only after he has typed it does a second window ask for the code. That is two requests, and the second only comes if the first is done.',
-      'The key gives every case one answer, and where a case asks for two things the key takes the first one, so here the answer is {a:A1.password}. The code here is not the one from the call: nobody is asking Gil to read it out to them. It is a step on the same copied page. The scammer is signing in to the real shop at that moment with the password that Gil has just typed, the real shop has sent the code, and the copied page asks for it so that it can be passed on.',
+      'Every case gets one answer, and where a case asks for two things the answer is the first one, so here the answer is {a:A1.password}. The code here is not the one from the call: nobody is asking Gil to read it out to them. It is a step on the same copied page. The scammer is signing in to the real shop at that moment with the password that Gil has just typed, the real shop has sent the code, and the copied page asks for it so that it can be passed on.',
       'So the code does not make the case {o:codescam}. It makes it a more complete {o:phishing}. The code scam is the one that has no page: a person who contacted you asks you to read a code out or send it on.'
     ],
     take: 'When a case asks for a password and then for a code, put your finger on the password. The password is what the page began by asking for, and the code is what it needs next. The copied page is the thing to leave.' },

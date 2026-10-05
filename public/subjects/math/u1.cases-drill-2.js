@@ -38,7 +38,7 @@ FC.cases('math', 'u1', [
     cues: { M1: ['It loses 20% of its value every year', 'What will it be worth after 3 years?'] },
     reason: { M1: 'One amount, the value of the laptop, is followed through time: {cue:M1}. It is multiplied by the same number every year, because each year it loses a share of what is left, and the question asks what it will be at a given time.' },
     not: { outcome: 'unknown', why: 'There is a percentage and a number the problem leaves out, which can look like a hidden number that must fit a rate. But the percentage goes with each year, so it describes an amount changing as time passes.' },
-    wouldChange: 'If the problem asked what 20% of €900 is and nothing else, it would be a plain sum, and the key would have nothing to sort.' },
+    wouldChange: 'If the problem asked what 20% of €900 is and nothing else, it would be a plain sum, and there would be nothing to sort.' },
 
   { id: 'gt-sail', use: 'drill', tier: 'clean', setting: 'travel', topic: 'the sail of a small boat',
     text: 'The sail of a small boat is a triangle with a square corner. Its mast side is 4 m long and its bottom edge is 3 m long. How long is its slanting edge?',

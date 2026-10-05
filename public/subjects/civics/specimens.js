@@ -88,7 +88,7 @@ FC.specimens('civics', [
     reason: { D1: 'The bill passed Congress first, and that is how the matter got here. The last decision is the President’s: {cue:D1}.',
               E1: 'A bill Congress passed was sent back unsigned, with objections: {cue:E1}. Nobody is forgiven for a crime, and no office is putting a law into practice.' },
     not: { outcome: 'pardon', why: 'Sending a paper back can sound like the President forgiving someone. But no crime is in the case. The President is refusing to sign a bill.' },
-    wouldChange: 'If the President had signed the bill, the case would end on Congress’s vote, and the key’s answer to the first question would be {a:D1.congress}.' },
+    wouldChange: 'If the President had signed the bill, the case would end on Congress’s vote, and the answer to the first question would be {a:D1.congress}.' },
 
   { id: 'sp-forged-notes', tier: 'clean', setting: 'money', topic: 'a prisoner who counterfeited banknotes',
     text: "Tom Aldous served two years of a five-year sentence in federal prison for counterfeiting banknotes. On Friday the President signed a paper that forgives the crime, and Tom was released that afternoon.",
@@ -180,8 +180,8 @@ FC.specimens('civics', [
     cues: { D1: 'Congress passes the year’s appropriations bill with no money for it',
             C1: ['Congress passes the year’s appropriations bill with no money for it', 'the programme cannot proceed'] },
     reason: { D1: 'The President announced the programme, but the case turns on Congress: {cue:D1}.',
-              C1: 'Congress left the money out, so the government cannot spend on the programme: {cue:C1}. The federal courts are a matter on the Constitution’s list, so the case also shows a law on a listed matter. When a case shows both, the key’s answer is {a:C1.money}.' },
-    not: { outcome: 'enumerated', why: 'The year’s bill is a law, and the federal courts are on the Constitution’s list, so {o:enumerated} seems to fit. But what Congress decides is whether the government may spend, and the key puts that first.' },
+              C1: 'Congress left the money out, so the government cannot spend on the programme: {cue:C1}. The federal courts are a matter on the Constitution’s list, so the case also shows a law on a listed matter. When a case shows both, the answer is {a:C1.money}.' },
+    not: { outcome: 'enumerated', why: 'The year’s bill is a law, and the federal courts are on the Constitution’s list, so {o:enumerated} seems to fit. But what Congress decides is whether the government may spend, and when a case shows both, that is the answer.' },
     wouldChange: 'If an earlier law had already set aside the money, the office spending it would be putting that law into practice, and the name would be {o:execute}.' },
 
   { id: 'sp-department-head', tier: 'misleading', setting: 'travel', topic: 'a department head who used the department’s planes',
@@ -224,5 +224,5 @@ FC.specimens('civics', [
     reason: { D1: 'The last decision is the vote of both chambers: {cue:D1}. The President’s signature at the end does not make it the President’s decision.',
               C1: 'The law punishes people for speaking out: {cue:C1}. The Constitution protects the right to speak, and a law passed by every vote it needed is still beyond Congress if a right forbids it.' },
     not: { outcome: 'enumerated', why: 'A bill passed by both chambers and signed can look like {o:enumerated}. But that name needs a law that takes away no right the Constitution protects, and this one takes away the right to speak.' },
-    wouldChange: 'If the President had refused to sign it, the case would end on the President’s decision, and the key’s answer to the first question would be {a:D1.president}.' }
+    wouldChange: 'If the President had refused to sign it, the case would end on the President’s decision, and the answer to the first question would be {a:D1.president}.' }
 ]);

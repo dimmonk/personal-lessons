@@ -6,7 +6,7 @@
 
 FC.unit('civics', 'u4', {
   kind: 'C',              // C classification, F facts, P procedure
-  rev: 1,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
+  rev: 2,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
   standard: 1,            // lesson-standard version this unit was built to
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author). The app labels a draft as a draft.
   tag: 'Four',
@@ -67,7 +67,7 @@ FC.unit('civics', 'u4', {
       cards: ['meet-commander', 'again-commander', 'portrait-commander', 'check-commander', 'refute-war',
               'meet-diplomacy', 'again-diplomacy', 'portrait-diplomacy', 'check-diplomacy',
               'look-commander-diplomacy', 'exc-exercise', 'look-diplomacy-execute', 'look-confirm-diplomacy'] },
-    { id: 'p3', title: 'The President and a bill, the President and a crime, and the key’s question',
+    { id: 'p3', title: 'The President and a bill, the President and a crime, and the question',
       cards: ['meet-veto', 'again-veto', 'portrait-veto', 'check-veto',
               'meet-pardon', 'again-pardon', 'portrait-pardon', 'check-pardon', 'refute-pardon',
               'look-veto-pardon', 'look-veto-execute', 'q-pres', 'check-pres'] },
@@ -122,7 +122,8 @@ FC.unit('civics', 'u4', {
   build: {
     // What changed at each revision (R1). One entry for every revision from 1 to rev.
     history: [
-      { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the branch unit for the President or a federal agency. It replaces old Unit Three’s President part, the airline-rule worked case, old Unit Four’s card on the citizenship test, and old Unit Seven’s passport-fee worked case. Not yet deployed, so later edits stay revision 1.' }
+      { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the branch unit for the President or a federal agency. It replaces old Unit Three’s President part, the airline-rule worked case, old Unit Four’s card on the citizenship test, and old Unit Seven’s passport-fee worked case. Not yet deployed, so later edits stay revision 1.' },
+      { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' }
     ],
     // What the K2 rewrite changed in the key for this branch, and why (docs/rebuild/civics-plan.md, section a). "was" is the wording of the old course.
     keyChanges: [

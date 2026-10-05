@@ -95,7 +95,7 @@ FC.cases('wealth', 'u3', [
       { text: 'Alicia, 47, has just added her seventeen-year-old son to her car insurance.',
         note: 'That is what could bring {t:claim}. It does not show how big {t:claim} could be next to the insurance.' },
       { text: ' The policy pays up to £1,000,000 if the car harms other people.',
-        note: 'That is the insurance she holds. It is only half of the comparison the key asks for.' },
+        note: 'That is the insurance she holds. It is only half of the comparison the question asks for.' },
       { text: ' A lawyer she knows says that a crash that leaves a young person unable to work for life can lead to a demand for £5,000,000.' },
       { text: ' Alicia owns a house worth £500,000 and has £150,000 in savings.',
         note: 'That is what {t:claim} could reach. It is not the words that show how big the claim could be.' }

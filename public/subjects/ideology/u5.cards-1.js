@@ -12,8 +12,8 @@ FC.cards('ideology', 'u5', [
     canDo: 'After this unit you can read a short text that puts first what every person is owed, such as a petition, a speech, a leaflet or a letter, and say which of three things it wants done for people. You will be able to point to the words that tell you, and to say why it is not one of the other two. The text can be about a street permit, a clinic, a school test, a housing list or a border post.',
     everyday: [
       'You have probably heard all three of these in one week. One person says, "Just protect people’s rights and leave them alone." Another says, "Rights are no use to a child with no school, so the government should pay for one." A third says, "The rules are the same for everyone, and that is exactly the problem." Each of them can say, with perfect honesty, that every person has rights and should be treated fairly. They are not disagreeing about that. They are disagreeing about what to do.',
-      'The key’s first question has already sorted a text like this: it puts first what every person is owed. This unit teaches the question that comes after it, and it has one question and three answers. Each answer leads to one name. The three names are not insults and not compliments. They are descriptions of what a text asks for, and a text can ask for one of them whether or not you agree.',
-      'Real people and real parties say many different things in many different places, so none of these names is a verdict on a person. They are names for the words of one short text, and the key reads one short text at a time.'
+      'The first question has already sorted a text like this: it puts first what every person is owed. This unit teaches the question that comes after it, and it has one question and three answers. Each answer leads to one name. The three names are not insults and not compliments. They are descriptions of what a text asks for, and a text can ask for one of them whether or not you agree.',
+      'Real people and real parties say many different things in many different places, so none of these names is a verdict on a person. They are names for the words of one short text, and each short text is read on its own.'
     ],
     add: [
       'Every text in this unit is invented. The places, the people and the groups are made up, and nothing in a text says what any real person or party believes.',
@@ -23,7 +23,7 @@ FC.cards('ideology', 'u5', [
 
   /* ---------- Classical liberalism ---------- */
   { id: 'meet-clib', kind: 'meet', outcome: 'clib',     // heading is the outcome's plain words, from the key
-    link: 'Start with the answer that asks the least of the government. A text that puts rights first, as the key’s first question found, can go on to ask a great deal of a government or almost nothing. This first case asks almost nothing.',
+    link: 'Start with the answer that asks the least of the government. A text that puts rights first, as the first question found, can go on to ask a great deal of a government or almost nothing. This first case asks almost nothing.',
     case: 'i5-clib-meet', mark: 'R1',
     strip: [
       'The text names what each person is free to do: to play, to speak and to sell what they make on a public street.',
@@ -33,7 +33,7 @@ FC.cards('ideology', 'u5', [
     ],
     explain: [
       'What this text wants done for people is very little, and it says so. A council is a local government, and "the government" is the word this unit uses for any of them. Here the council is to guard the freedoms (keep the peace, settle disputes, answer a fire) and then step back. Everything else is left to the people themselves: whether to play, what to charge, whom to listen to.',
-      'The idea behind a text like this is that each person is the best judge of their own life, and that a government which does a few jobs well leaves the most room for each person to live as they choose. Whether that is true is one of the oldest arguments in politics, and the key does not settle it. It only asks you to see that this is what the text asks for.',
+      'The idea behind a text like this is that each person is the best judge of their own life, and that a government which does a few jobs well leaves the most room for each person to live as they choose. Whether that is true is one of the oldest arguments in politics, and this course does not settle it. It only asks you to see that this is what the text asks for.',
       'Notice what "a few jobs" means. It does not mean none. The musicians want the police, the courts and the fire service, and would be dismayed to lose them. What they ask is that the council stay inside those jobs.',
       'Notice also what the text does not ask. Suppose the same musicians had added, "and the council should pay for a stage in every square". They would then be asking for something to be given, and the text would be asking something else. This text asks for nothing to be given.'
     ],
@@ -58,7 +58,7 @@ FC.cards('ideology', 'u5', [
       'The three names belong to the layer underneath. The same story can carry any of them. Two texts can both be about a clinic, and one asks the government to stay out of it while the other asks it to pay. A text that mentions schools is not, for that reason, asking the government to provide them.',
       'From here on, the texts change their stories on purpose. Sometimes two texts will share a story and differ only underneath. When that happens, the shared story is there to show you that it tells you nothing.'
     ],
-    fixed: ['what the text wants done for people, which is what the key asks about: {q:R1}'],
+    fixed: ['what the text wants done for people, which is what the question asks about: {q:R1}'],
     varies: ['the topic', 'the people', 'who is speaking', 'whether you agree with it', 'how much the text thinks the government should do'] },
 
   { id: 'portrait-clib', kind: 'portrait', outcome: 'clib',
@@ -71,7 +71,7 @@ FC.cards('ideology', 'u5', [
       'It may be sympathetic to people who have less, and say so. What marks the name is what it asks the government to do about it: leave people free, not give.'
     ],
     not: [
-      'A mention of low taxes does not make a text {o:clib}. Texts of very different kinds want low taxes, and some of them put old ways first, which the key reads differently. A small government is not the same as no government: the text keeps the jobs it names. And a text that asks the government to protect rights and also to provide a school or a doctor is not this name, however firmly it speaks of freedom.'
+      'A mention of low taxes does not make a text {o:clib}. Texts of very different kinds want low taxes, and some of them put old ways first, which are read differently here. A small government is not the same as no government: the text keeps the jobs it names. And a text that asks the government to protect rights and also to provide a school or a doctor is not this name, however firmly it speaks of freedom.'
     ],
     wild: ['"It’s a free country."', '"Mind your own business."', '"Let people live their own lives."', '"Keep the government out of it."', '"I don’t need a permit to do what I already have the right to do."'],
     self: 'In your own life it is the voice that says a rule has gone too far: the form you had to fill in to do something ordinary, the licence for a stall, the fee for the right to work.',
@@ -89,7 +89,7 @@ FC.cards('ideology', 'u5', [
     verdict: 'This is wrong.',
     right: [
       'A small government is a government that keeps to a short list of jobs. The musicians in the first case ask for the police, the courts and the fire service, and want them done well. A text that wanted no government would not ask for any of them.',
-      'The difference is in the words of the text. Look for the jobs it names. If it names courts, police, defence or keeping contracts, it wants a government with those jobs, and the key’s answer to its question is {a:R1.leave}. If it names no jobs and says that people should run things together without a government, that is a different answer to a different question, and this unit does not ask it.',
+      'The difference is in the words of the text. Look for the jobs it names. If it names courts, police, defence or keeping contracts, it wants a government with those jobs, and the answer to its question is {a:R1.leave}. If it names no jobs and says that people should run things together without a government, that is a different answer to a different question, and this unit does not ask it.',
       'So before you say "no government", point to the words that say so. "Leave us alone" is not those words: it is said about everything beyond the jobs the text names.'
     ],
     testedBy: ['i5-claim-small'] }

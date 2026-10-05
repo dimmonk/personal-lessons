@@ -35,7 +35,7 @@ FC.cases('wealth', 'u1', [
     text: "Pavel, 69, set himself £30,000 a year when his money was £500,000, which was 6%. Prices have since fallen, and he now has £340,000. He still takes £30,000 a year, which is now 8.8% of what is left, and he says the market is to blame.",
     route: { D1: ['erosion'] },
     cues: { D1: 'He still takes £30,000 a year, which is now 8.8% of what is left' },
-    reason: { D1: 'A fixed sum comes out of money that has shrunk: {cue:D1}. The fall in prices is in the case and it explains the shrinking, but the case is about the sum. When a case shows both, the key chooses {a:D1.erosion}.' },
+    reason: { D1: 'A fixed sum comes out of money that has shrunk: {cue:D1}. The fall in prices is in the case and it explains the shrinking, but the case is about the sum. When a case shows both, the answer is {a:D1.erosion}.' },
     not: { outcome: 'timing', why: 'The fall is in the case, so Pavel’s own explanation points to prices. But the sum was set for money that no longer exists, and that is what the case raises.' },
     wouldChange: 'If the sum he took out had always been a fair share of whatever his money was worth, and the only fact were that prices fell, it would be {a:D1.timing}.' },
 

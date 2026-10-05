@@ -21,7 +21,7 @@ FC.cards('wealth', 'u3', [
     ],
     feature: { step: 'S1', option: 'blocked' },
     name: [
-      'The key’s answer is {a:S1.blocked}, and the name of what to do about it is {o:hedge}. To “cap” a loss is to put a ceiling on it, and “without selling” is the point: the shares stay where they are.',
+      'The answer is {a:S1.blocked}, and the name of what to do about it is {o:hedge}. To “cap” a loss is to put a ceiling on it, and “without selling” is the point: the shares stay where they are.',
       'The name is about the waiting time. It does not say that the company is a bad one.'
     ] },
 
@@ -68,8 +68,8 @@ FC.cards('wealth', 'u3', [
     instruction: 'Both cases are about Ruth, who has £500,000 of shares in the same sports-shoe company and £60,000 of other savings. Compare one thing: what, if anything, stops her selling the shares.',
     prompt: { kind: 'which', option: 'S1.blocked', answer: 'w3-h-la-dh-b' },
     difference: [
-      'In Case A Ruth left the company two years ago, takes no part in running it, and could sell on any day. £500,000 out of £560,000 is 89% in one company, and nothing stands in her way. The key’s answer is {a:S1.freeheld}, and the name is {o:diversify}: a schedule of sales.',
-      'In Case B the shares are the same and so is the sum, but the rules of the staff scheme stop her selling for another eighteen months. The key’s answer is {a:S1.blocked}, and the name is {o:hedge}: she cannot sell, so she can only limit what she could lose while she waits.',
+      'In Case A Ruth left the company two years ago, takes no part in running it, and could sell on any day. £500,000 out of £560,000 is 89% in one company, and nothing stands in her way. The answer is {a:S1.freeheld}, and the name is {o:diversify}: a schedule of sales.',
+      'In Case B the shares are the same and so is the sum, but the rules of the staff scheme stop her selling for another eighteen months. The answer is {a:S1.blocked}, and the name is {o:hedge}: she cannot sell, so she can only limit what she could lose while she waits.',
       'The money, the company and the person are the same in both. Only the rule is different, and the rule is what decides the answer. That is why nobody can name a case from how much is in one company.'
     ] }
 ]);

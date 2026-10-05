@@ -30,7 +30,7 @@ FC.cases('wealth', 'u4', [
     cues: { D1: 'She lives on £150,000 in funds of shares', T1: 'selling about £4,100 of them each month, with no cash put by' },
     reason: { D1: 'The case is about what a fall would do to money that is lived on: {cue:D1}. Nothing in it comes out as a charge, rests on one thing, or is about a death or a gift.',
               T1: 'Priyanka’s bills are paid by selling funds, with nothing set aside to spend from: {cue:T1}. Each month at lower prices means selling more for the same sum.' },
-    not: { outcome: 'rebalance', why: 'The case gives no plan for a mix and no mix that has moved. It shows living costs paid by selling, which the key puts first.' },
+    not: { outcome: 'rebalance', why: 'The case gives no plan for a mix and no mix that has moved. It shows living costs paid by selling, which comes first.' },
     wouldChange: 'If her bills for the three years were already sitting in a savings account, and she paid them from it, nothing would be sold while prices were down, and the case would be {a:T1.ready}.' },
 
   { id: 'ret-cash-4', use: 'return', tier: 'varied', setting: 'property', topic: 'a field sold and paid out monthly',

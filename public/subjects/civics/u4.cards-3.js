@@ -7,25 +7,25 @@ FC.cards('civics', 'u4', [
 
   /* ---------- Look-alikes with the part of the key for Congress ---------- */
   { id: 'look-enumerated-execute', kind: 'lookalike', ledger: 'enumerated~execute',
-    link: 'A law can appear in two cases that end in different places. Two names, one from the part of the key for Congress and one from this unit, are the pair you are most likely to mix up in the news. This card puts them side by side.',
+    link: 'A law can appear in two cases that end in different places. Two names, one from the questions for Congress and one from this unit, are the pair you are most likely to mix up in the news. This card puts them side by side.',
     cases: ['e-tea-vote', 'e-tea-form'],
     instruction: 'Both cases are about the same tax on imported tea. Compare one thing: whose decision does each story end on, the lawmakers who vote, or the office that collects?',
     prompt: { kind: 'which', option: 'D1.president', answer: 'e-tea-form' },
     difference: [
-      'In Case A the story is about the law itself: the Senate votes to pass it, as the House had done. Nobody else decides anything. The key’s first answer is {a:D1.congress}, and its answer to the next question is {a:C1.listed}, so the case is {o:enumerated}.',
-      'In Case B the law is already passed, and the story is about what comes after it: an office publishes the form that importers must fill in to pay the tax. The law is still in the story, as how the matter got there. The last decision is the office’s. The key’s first answer is {a:D1.president}, and its answer to the next question is {a:E1.carryout}, so the case is {o:execute}.',
-      'One tax gives you both, as the food-label law did in Unit One. The key does not weigh the two. It asks for the last decision, or the one the case asks for.'
+      'In Case A the story is about the law itself: the Senate votes to pass it, as the House had done. Nobody else decides anything. The first answer is {a:D1.congress}, and its answer to the next question is {a:C1.listed}, so the case is {o:enumerated}.',
+      'In Case B the law is already passed, and the story is about what comes after it: an office publishes the form that importers must fill in to pay the tax. The law is still in the story, as how the matter got there. The last decision is the office’s. The first answer is {a:D1.president}, and its answer to the next question is {a:E1.carryout}, so the case is {o:execute}.',
+      'One tax gives you both, as the food-label law did in Unit One. The question does not weigh the two. It asks for the last decision, or the one the case asks for.'
     ] },
 
   { id: 'look-beyondcong-beyondpres', kind: 'lookalike', ledger: 'beyondcong~beyondpres',
-    link: 'Two of the names have "beyond" in them, and both are about someone doing what they had no power to do. They belong to different parts of the key, so they are easy to run together. This card puts them side by side.',
+    link: 'Two of the names have "beyond" in them, and both are about someone doing what they had no power to do. They belong to the questions for different kinds of case, so they are easy to run together. This card puts them side by side.',
     cases: ['e-barber-law', 'e-barber-order'],
     instruction: 'Both cases are about the hours barbers may open their shops, and in both the President signs something on Monday. Compare one thing: who made the rule, lawmakers who voted on a law, or the President by an order?',
     prompt: { kind: 'which', option: 'D1.president', answer: 'e-barber-order' },
     difference: [
-      'In Case A the House and the Senate both passed a law, and the President signed it. A signature on a law that lawmakers passed leaves the decision with them, as Unit One showed. The key’s first answer is {a:D1.congress}. Its answer to the next question is {a:C1.barred}, because the hours barbers work are not among the Constitution’s powers for Congress, so the case is {o:beyondcong}.',
-      'In Case B nobody voted. The President signed an order about the barbers’ hours, and the case says no law Congress passed gives the President that power. The key’s first answer is {a:D1.president}, and its answer to the next question is {a:E1.newduty}, so the case is {o:beyondpres}.',
-      'In both cases a rule about barbers’ hours is out of reach of the one who made it, and the story is the same. What differs is who made the rule: lawmakers, or the President by an order. That is the question the key asks first.'
+      'In Case A the House and the Senate both passed a law, and the President signed it. A signature on a law that lawmakers passed leaves the decision with them, as Unit One showed. The first answer is {a:D1.congress}. Its answer to the next question is {a:C1.barred}, because the hours barbers work are not among the Constitution’s powers for Congress, so the case is {o:beyondcong}.',
+      'In Case B nobody voted. The President signed an order about the barbers’ hours, and the case says no law Congress passed gives the President that power. The first answer is {a:D1.president}, and its answer to the next question is {a:E1.newduty}, so the case is {o:beyondpres}.',
+      'In both cases a rule about barbers’ hours is out of reach of the one who made it, and the story is the same. What differs is who made the rule: lawmakers, or the President by an order. That is the question asked first.'
     ] },
 
   /* ---------- Orders to the armed forces ---------- */
@@ -81,7 +81,7 @@ FC.cards('civics', 'u4', [
     verdict: 'This is wrong.',
     right: [
       'The President gives the armed forces their orders. That is what {o:commander} names. But declaring war is not an order to the forces. It belongs to Congress, and Congress also votes the money that pays for the forces.',
-      'So a story in which the President sends the army or the navy somewhere is about {o:commander}. A story in which lawmakers vote to declare a war is about the lawmakers, and the key’s first answer is {a:D1.congress}. When you hear that the President "declared war", check whose decision the story ends on.'
+      'So a story in which the President sends the army or the navy somewhere is about {o:commander}. A story in which lawmakers vote to declare a war is about the lawmakers, and the first answer is {a:D1.congress}. When you hear that the President "declared war", check whose decision the story ends on.'
     ],
     testedBy: ['e-claim-war'] }
 ]);

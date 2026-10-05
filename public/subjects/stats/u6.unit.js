@@ -6,7 +6,7 @@
 
 FC.unit('stats', 'u6', {
   kind: 'C',              // C classification, F facts, P procedure
-  rev: 1,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
+  rev: 2,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
   standard: 1,            // lesson-standard version this unit was built to
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author). The app labels a draft as a draft.
   tag: 'Six',
@@ -58,7 +58,7 @@ FC.unit('stats', 'u6', {
       cards: ['meet-confound', 'again-confound', 'portrait-confound', 'check-confound', 'look-nocontrol-confound', 'refute-nothing',
               'meet-reverse', 'again-reverse', 'portrait-reverse', 'check-reverse',
               'look-confound-reverse', 'look-confound-fair', 'exc-simpson'] },
-    { id: 'p3', title: 'The key’s question, and two whole claims, then the drill',
+    { id: 'p3', title: 'The question, and two whole claims, then the drill',
       cards: ['q-cause', 'check-cause', 'worked-bikers', 'worked-swim'], drill: true, close: ['recap', 'transfer', 'plan'] }
   ],
 
@@ -103,7 +103,8 @@ FC.unit('stats', 'u6', {
   build: {
     // What changed at each revision (R1). One entry for every revision from 1 to rev.
     history: [
-      { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the cause branch of Statistical Claims. Not yet deployed, so later edits before the first deploy stay revision 1. Replaces old Unit Five (cards and drill V5), the card and items for No comparison group from old Unit Four, and old faulty-claims item 2.' }
+      { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the cause branch of Statistical Claims. Not yet deployed, so later edits before the first deploy stay revision 1. Replaces old Unit Five (cards and drill V5), the card and items for No comparison group from old Unit Four, and old faulty-claims item 2.' },
+      { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' }
     ],
     // What the K2 rewrite changed in the key for this branch, and why (docs/rebuild/stats-plan.md, section (a), "What it says caused what").
     keyChanges: [

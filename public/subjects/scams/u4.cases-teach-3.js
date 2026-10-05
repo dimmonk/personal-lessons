@@ -99,13 +99,13 @@ FC.cases('scams', 'u4', [
   /* ---------- The checks after the two question cards ---------- */
   { id: 'm-chk-m1', use: 'check', tier: 'clean', setting: 'leisure', topic: 'a holiday flat deposit',
     text: "Lucia booked a holiday flat through the owner's own website, which she found by typing in the address a friend gave her. The booking email in her inbox says: 'Please pay the £300 deposit by the 10th, into the account named on your booking confirmation. Ring me on the number on the website if you want to talk about it.'",
-    reason: { M1: 'The deposit is part of a booking that Lucia made herself: {cue:M1}. That is a deal that she is in, so the key’s answer is {a:M1.deal}.' },
+    reason: { M1: 'The deposit is part of a booking that Lucia made herself: {cue:M1}. That is a deal that she is in, so the answer is {a:M1.deal}.' },
     outcome: 'realpayment', route: { D1: ['money'], M1: ['deal'], M2: ['agreed'] },
     cues: { D1: 'Please pay the £300 deposit by the 10th', M1: "Lucia booked a holiday flat through the owner's own website", M2: ['into the account named on your booking confirmation', 'Ring me on the number on the website'] } },
 
   { id: 'm-chk-m2', use: 'check', tier: 'clean', setting: 'government', topic: 'a passport held at an airport',
     text: "Pete has written to a woman called Carla for seven months and has never met her. She writes: 'The police at the airport have taken my passport and say I must pay a £1,500 fine before they give it back. Please send it to the account below, and then I can fly to you.'",
-    reason: { M2: 'Carla asks Pete to pay a fine that she says is hers, so that she can leave the airport: {cue:M2}. That is trouble of someone he has never met, so the key’s answer is {a:M2.crisis}.' },
+    reason: { M2: 'Carla asks Pete to pay a fine that she says is hers, so that she can leave the airport: {cue:M2}. That is trouble of someone he has never met, so the answer is {a:M2.crisis}.' },
     outcome: 'romance', route: { D1: ['money'], M1: ['online'], M2: ['crisis'] },
     cues: { D1: 'Please send it to the account below', M1: 'The police at the airport have taken my passport and say I must pay a £1,500 fine', M2: 'The police at the airport have taken my passport and say I must pay a £1,500 fine' } },
 

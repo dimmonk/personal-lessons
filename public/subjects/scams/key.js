@@ -190,7 +190,7 @@ FC.key('scams', {
     { word: 'harvesting', sayInstead: 'collecting' },
     { word: 'interception', sayInstead: 'someone asking for your one-time code' },
     { word: 'odd part', sayInstead: 'what it asks you to do with the money (the key no longer asks for the odd part)' },
-    { word: 'diagnostic', sayInstead: 'the key’s question' },
+    { word: 'diagnostic', sayInstead: 'the question' },
     { word: 'falsify', sayInstead: 'what would make it a different name' },
     { word: 'deciding feature', sayInstead: 'what you must be able to point to' },
     { word: 'provisional', sayInstead: 'from one case so far' },
@@ -207,7 +207,7 @@ FC.key('scams', {
     code: 'D1', unit: 'u1',
     q: 'What is it asking you to do right now?',
     purpose: 'Sorts a message, a call or an offer by the next thing it asks of you: something on your device, a way into an account, money, facts about you, or nothing at all',
-    why: 'Each kind of request puts something different at risk, is guarded by a different habit, and leads to a different set of names. The story that comes with it, who it says it is from, and what the sender is after in the end do not change the answer: what it asks you to do does. You can answer it from the message or the call itself, at the moment the request is made. Where a request asks for two of these things, the key takes the one higher in the list, because it reaches further: a program or a view of your screen reaches everything on the device, a way into an account reaches what the account holds, and money is gone once it is sent.',
+    why: 'Each kind of request puts something different at risk, is guarded by a different habit, and leads to a different set of names. The story that comes with it, who it says it is from, and what the sender is after in the end do not change the answer: what it asks you to do does. You can answer it from the message or the call itself, at the moment the request is made. Where a request asks for two of these things, the answer is the one higher in the list, because it reaches further: a program or a view of your screen reaches everything on the device, a way into an account reaches what the account holds, and money is gone once it is sent.',
     options: [
       { id: 'device', n: 'Install something, open a file, or share your screen',
         plain: 'a way onto your phone or computer',
@@ -251,7 +251,7 @@ FC.key('scams', {
       { code: 'I1', unit: 'u2',
         q: 'How did it come to you?',
         purpose: 'Tells apart the three ways scams get onto a device, and a real installation, by how the request reached you',
-        why: 'Once a program is on your device, or someone can see your screen, they can watch everything you do there, so what decides it is how you came to be asked. Each of the four names is defined by that one thing, so this part of the key has one question. You can answer it at the moment you are asked, before you install, open or share anything.',
+        why: 'Once a program is on your device, or someone can see your screen, they can watch everything you do there, so what decides it is how you came to be asked. Each of the four names is defined by that one thing, so this part has one question. You can answer it at the moment you are asked, before you install, open or share anything.',
         options: [
           { id: 'support', n: 'Someone offering to fix a problem with your device',
             when: 'a warning on your screen, a call, a message or a search advert says that your device has a problem or offers support for it, and the person you reach wants to install something or see your screen to fix it',
