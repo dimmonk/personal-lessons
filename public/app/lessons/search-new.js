@@ -27,9 +27,9 @@ function newSearchEntries(subj){
   const sv = subjectView(subj.id), model = keyMapModel(sv);
   const steps = model.drawn.length ? [sv.key.gate, ...model.drawn.flatMap(o => sv.key.branches[o.id] || [])] : [];
   const names = mapNames(sv).map(t => ({ g: 'Names', s: subj, t: t.n, sub: `${subj.name} · ${t.plain}`, go: () => openReference(subj) }));
-  const questions = steps.map(step => ({ g: 'Questions', s: subj, t: step.q, sub: `${subj.name} · a question in the key`, go: () => openReference(subj) }));
-  const specimens = isFullyRebuilt(subj) ? sv.data.specimens.map((sp, i) => ({ g: 'Specimens', s: subj, t: sp.text, quote: true,
-    sub: `${subj.name} · specimen ${pad2(i + 1)}`, go: () => openSpecimen(subj.id, sp.id) })) : [];
+  const questions = steps.map(step => ({ g: 'Questions', s: subj, t: step.q, sub: `${subj.name} · a question`, go: () => openReference(subj) }));
+  const specimens = isFullyRebuilt(subj) ? sv.data.specimens.map((sp, i) => ({ g: 'Whole cases', s: subj, t: sp.text, quote: true,
+    sub: `${subj.name} · case ${pad2(i + 1)}`, go: () => openSpecimen(subj.id, sp.id) })) : [];
   return [...sv.unitIds().flatMap(unitId => unitSearchEntries(subj, unitId)), ...names, ...questions, ...specimens];
 }
 // an old tool entry is dropped where the key now carries the same name

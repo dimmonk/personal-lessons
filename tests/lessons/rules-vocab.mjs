@@ -3,6 +3,7 @@
 // Each rule scans the authored prose of one unit (its cards, cases and records) or of one subject (specimens, the subject record,
 // the bank of a unit not yet rebuilt). Fields that quote what people say are never scanned for key wording (S5).
 import { unitRule, subjectRule } from './rule.mjs';
+import { APP_JARGON } from '../plain-words.mjs';
 import { tokensOf, stripTokens, hasUnknownToken, prose, norm, wordSet, containsPhrase, cuesOf, strings } from './text.mjs';
 
 const cache = new WeakMap();
@@ -141,11 +142,14 @@ function V36(ctx, check) {
 }
 
 /* ---------- V50 ---------- */
-const APP_WORDS_TO_AVOID = ['lesson', 'rung', 'screen', 'provisional', 'deciding feature'];
+// "screen" alone is ordinary in some subjects (share your screen); only the app's own screens are meant
+const APP_WORDS_TO_AVOID = ['lesson', 'rung', 'this screen', 'next screen', 'last screen', 'provisional', 'deciding feature', ...APP_JARGON];
 
 function V50(ctx, check) {
   const words = [...(ctx.key.avoid || []).map(a => a.word), ...APP_WORDS_TO_AVOID];
-  for (const { where, text } of proseOf(ctx)) {
+  const extra = [ctx.keyTarget, ctx.limitsTarget].filter(Boolean).map(f => f());
+  const keyLines = extra.flatMap(t => prose(t.obj).map(([path, text]) => ({ where: `${t.label}${path}`, text })));
+  for (const { where, text } of [...proseOf(ctx), ...keyLines]) {
     const bare = norm(stripTokens(text));
     words.forEach(w => check(!containsPhrase(bare, w), `${where}: a word to avoid, "${w}", in "${text.slice(0, 50)}"`));
   }

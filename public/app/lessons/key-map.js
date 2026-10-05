@@ -4,9 +4,9 @@
 // While a subject mixes old and new units, only the branches whose units are rebuilt are drawn.
 
 const MAP_SAY = {
-  opening: 'This is the whole key as a map. You are not expected to follow it yet: each unit teaches one part of it. Under each question are its answers, in the key’s own words. Beside each answer, in plain words, is what it leads to.',
-  fixed: 'The key as a map, in its fixed wording. Under each question are its answers; beside each answer is what it leads to.',
-  unfinished: names => `The rest of the key is being rewritten and is not drawn yet: ${names}.`,
+  opening: 'These are all of this subject’s questions, as a map. You are not expected to follow it yet: each unit teaches one part of it. Under each question are its answers. Beside each answer, in plain words, is what it leads to.',
+  fixed: 'All the questions, as a map. Under each question are its answers; beside each answer is what it leads to.',
+  unfinished: names => `The rest of the questions are being rewritten and are not drawn yet: ${names}.`,
   namesHeading: 'Every name, in plain words, and the unit that teaches it',
   thenAsks: q => `then the question ${q}`
 };

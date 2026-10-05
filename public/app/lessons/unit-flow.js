@@ -82,9 +82,9 @@ function checkJoined(v, T, card, c){
     return v.isGate || !names.length ? '' : `This answer leads to ${T.namesAt(names, card.id)}.`;
   }
   // in a gate unit the answer is the name, so there is no second thing to join
-  if(v.isGate) return a.type === 'phrase' ? `The key’s answer for this case is ${T.a(a.step, answer.id)}.` : '';
+  if(v.isGate) return a.type === 'phrase' ? `The answer for this case is ${T.a(a.step, answer.id)}.` : '';
   return a.type === 'phrase'
-    ? `The key’s answer for this case is ${T.a(a.step, answer.id)}, and the name is ${T.o(target)}.`
+    ? `The answer for this case is ${T.a(a.step, answer.id)}, and the name is ${T.o(target)}.`
     : `The name that goes with this answer is ${T.o(target)}.`;
 }
 // A check is one case and one question; in a fact unit one row of the facts card before it; in a procedure unit a problem to finish.

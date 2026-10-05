@@ -305,7 +305,7 @@ async function openingMapChecks(env, page, s, width, label) {
   check(map.questions === 1 + shape.branchSteps.length, `${label}: the map draws ${map.questions} questions, not the gate and the ${shape.branchSteps.length} of its drawn branches`);
   shape.names.filter(o => o.unit).forEach(o => check(map.text.includes(`${o.n}, taught in Unit ${o.unit}`), `${label}: the map does not say Unit ${o.unit} teaches ${o.n}`));
   // while any branch is still being rewritten the map says so and names it; a subject with none says nothing of the kind
-  if (shape.pending.length) check(/The rest of the key is being rewritten and is not drawn yet/.test(map.text) && shape.pending.every(o => map.text.includes(o.n)), `${label}: the map does not say the rest is being rewritten (${shape.pending.map(o => o.n).join(', ')})`);
+  if (shape.pending.length) check(/The rest of the questions are being rewritten and are not drawn yet/.test(map.text) && shape.pending.every(o => map.text.includes(o.n)), `${label}: the map does not say the rest is being rewritten (${shape.pending.map(o => o.n).join(', ')})`);
   else check(!/being rewritten/.test(map.text), `${label}: a subject with every branch rebuilt says part of its key is being rewritten`);
   const undrawn = shape.undrawnNames.filter(n => map.text.includes(n));
   check(undrawn.length === 0, `${label}: the map draws a branch whose units are not rebuilt (${undrawn.join(', ')})`);
@@ -365,7 +365,7 @@ async function referenceChecks(env, page, s, label) {
   facts.lines.forEach(t => check(text.includes(t), `${label}: the reference leaves out a look-alike line (${t.slice(0, 50)})`));
   const questions = [shape.gate.q, ...shape.branchSteps.map(st => st.q)];
   check(shape.drawn.length === 0 || questions.every(q => text.includes(q)), `${label}: the reference leaves out a question of the key map`);
-  check(/Where this key stops/.test(text) && shape.limits.every(h => text.includes(h)), `${label}: the reference leaves out where the key stops`);
+  check(/Where these questions stop/.test(text) && shape.limits.every(h => text.includes(h)), `${label}: the reference leaves out where the key stops`);
   // the generated names are exactly the drawn ones: a name whose branch is not rebuilt is not listed (its old unit's own reference may still mention it)
   const listed = await page.evaluate(() => [...document.querySelectorAll('#screen details.fg[data-name]')].map(d => d.dataset.name));
   check(JSON.stringify([...listed].sort()) === JSON.stringify(shape.names.map(o => o.id).sort()), `${label}: the reference lists the names ${listed.join(', ')}, not the ${shape.names.length} of the rebuilt branches (${shape.names.map(o => o.id).join(', ')})`);
@@ -376,7 +376,7 @@ async function referenceChecks(env, page, s, label) {
   await shot(page, `reference-${s.id}`);
   await page.click('#screen [data-v="subject"]');
   await page.click('[data-ref="caveats"]');
-  check(/Where this key stops/.test(await screenOf(page)), `${label}: the "Where this key stops" page is empty`);
+  check(/Where these questions stop/.test(await screenOf(page)), `${label}: the "Where these questions stop" page is empty`);
   await layout(env, page, `${label} where this key stops`);
   const after = await page.evaluate(id => JSON.stringify([localStorage.getItem(`pl:${id}:items`), localStorage.getItem('pl:log'), dueReturns(id)]), s.id);
   check(before === after, `${label}: visiting the reference changed the practice record, the log or what is due: a lookup must not count as review`);
@@ -435,7 +435,7 @@ export async function testDetermination(env, width = 390) {
   await page.click('#startDet');
   check(await queueOf(page).then(q => q.join() === 'sp-a,sp-b'), 'the offered cases are not the two clean cases of the finished unit, clean first');
   text = await screenOf(page);
-  check(/A worked determination first/.test(text) && /Nothing is asked/.test(text) && /Reason for G1/.test(text) && /Reason for B2/.test(text), 'no complete worked determination before the first case');
+  check(/One worked for you first/.test(text) && /Nothing is asked/.test(text) && /Reason for G1/.test(text) && /Reason for B2/.test(text), 'no complete worked determination before the first case');
   await layout(env, page, `${width}px worked determination`);
   await shot(page, 'determination-worked');
   await page.click('#goOn');
@@ -450,7 +450,7 @@ export async function testDetermination(env, width = 390) {
   await page.click('[data-step="B2"] .opt[data-o="loud"]');
   await page.click('#nameOpts .opt[data-n="oa"]');
   text = await screenOf(page);
-  check(/Right name, wrong route/.test(text) && /What would make it a different name/.test(text) && !/falsify/i.test(text), 'the verdict is not "Right name, wrong route" with "What would make it a different name"');
+  check(/Right name, wrong answer on the way/.test(text) && /What would make it a different name/.test(text) && !/falsify/i.test(text), 'the verdict is not "Right name, wrong answer on the way" with "What would make it a different name"');
   const tries = (await getStore(page, 'pl:mini:items'))['spec/sp-a'].tries;
   check(tries.length === 1 && tries[0].mode === 'spec' && tries[0].ok === false && tries[0].name === 'oa', `the specimen was recorded as ${JSON.stringify(tries)}`);
   await layout(env, page, `${width}px determination verdict`);
@@ -520,7 +520,7 @@ export async function testRealDetermination(env, width = 390) {
     await layout(env, run.page, `${label} determination overview`);
     await run.page.click('#startDet');
     check((await queueOf(run.page)).join() === data.ids.join(), `${label}: the cases run ${(await queueOf(run.page)).join()}, not clean, varied, misleading`);
-    check(/A worked determination first/.test(await screenOf(run.page)), `${label}: no worked determination before the first case`);
+    check(/One worked for you first/.test(await screenOf(run.page)), `${label}: no worked determination before the first case`);
     await run.page.click('#goOn');
     for (const [k, sp] of data.plans.entries()) {
       const wrong = k === 1 && sp.steps.some(st => st.wrong);
@@ -529,8 +529,8 @@ export async function testRealDetermination(env, width = 390) {
       for (const [n, st] of sp.steps.entries()) await run.page.click(`[data-step="${st.code}"] .opt[data-o="${wrong && n === sp.steps.length - 1 ? st.wrong : st.right}"]`);
       await run.page.click(`#nameOpts .opt[data-n="${sp.outcome}"]`);
       const verdict = await screenOf(run.page);
-      if (wrong) check(/Right:/.test(verdict) && /Route missed/.test(verdict) && /Right name, wrong route/.test(verdict), `${label}/${sp.id}: a right name by a wrong route is not marked "Right name, wrong route"`);
-      else check(/Right:/.test(verdict) && /Route right/.test(verdict) && !/Right name, wrong route/.test(verdict), `${label}/${sp.id}: a right determination is not marked right on both`);
+      if (wrong) check(/Right:/.test(verdict) && /Answers missed/.test(verdict) && /Right name, wrong answer on the way/.test(verdict), `${label}/${sp.id}: a right name by a wrong route is not marked "Right name, wrong answer on the way"`);
+      else check(/Right:/.test(verdict) && /Answers right/.test(verdict) && !/Right name, wrong answer on the way/.test(verdict), `${label}/${sp.id}: a right determination is not marked right on both`);
       if (k === 0) await layout(env, run.page, `${label} determination verdict`);
       await run.page.click('#next');
     }
@@ -548,7 +548,7 @@ export async function testTryAnyway(env) {
   await env.openSubject(page, 'mini');
   await page.click('#screen [data-v="det"]');
   await page.click('#anyway');
-  check(/worked determination first/i.test(await screenOf(page)), 'no worked determination before the first case tried anyway');
+  check(/One worked for you first/i.test(await screenOf(page)), 'no worked determination before the first case tried anyway');
   await page.click('#goOn');
   const { names, mode } = await page.evaluate(() => ({ names: DET.cur.item.names, mode: DET.mode }));
   check(names.length === 4 && mode === 'anyway' && (await queueOf(page)).join() === 'sp-a,sp-b,sp-c,sp-d', `"try anyway" offers ${names.length} names over ${(await queueOf(page)).join()}`);
@@ -607,7 +607,7 @@ export async function testProgress(env, width = 390) {
   await page.reload();
   await env.clickVisible(page, '[data-v="progress"]');
   const block = norm(await page.locator('[data-practice-record]').textContent());
-  check(block.includes('All first tries2 of 4 · 50%') && block.includes('Whole routes1 of 2 · 50%') && block.includes('Single questions1 of 2 · 50%'), `the practice record reads "${block.slice(0, 220)}"`);
+  check(block.includes('All first tries2 of 4 · 50%') && block.includes('Whole cases1 of 2 · 50%') && block.includes('Single questions1 of 2 · 50%'), `the practice record reads "${block.slice(0, 220)}"`);
   check(/Units started1/.test(block) && /Parts completed1/.test(block) && /Sets completed1/.test(block) && /Days returned2/.test(block), `the persistence figures read "${block.slice(200, 420)}"`);
   await layout(env, page, `${width}px progress`);
   await shot(page, 'progress');

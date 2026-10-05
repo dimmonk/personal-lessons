@@ -217,7 +217,7 @@ async function probeProc(env) {
     const plan = await drillPlan(page, true);   // the route and the kind of problem right, the number wrong
     for (const sel of plan.clicks) await page.click(sel);
     const routed = await unitText(page);
-    return /Right: Percent of an amount/.test(routed) && /Route right/.test(routed) && /The answer is: £33/.test(routed) && /Why not Percent change/.test(routed) && /This case may have brought back The rent/.test(routed);
+    return /Right: Percent of an amount/.test(routed) && /Answers right/.test(routed) && /The answer is: £33/.test(routed) && /Why not Percent change/.test(routed) && /This case may have brought back The rent/.test(routed);
   });
   const t = await storedTries(page, S, 'u1/dr-of3');
   out.procRecords = t.length >= 1 && t[t.length - 1].mode === 'route' && t[t.length - 1].ok === false && t[t.length - 1].name === 'of' && JSON.stringify([...new Set(drilled.map(d => d.mode))]) === '["last","whole","route"]';
@@ -332,7 +332,7 @@ async function probeSeparator(env) {
   const opts = (await page.locator('#host .opt').allTextContents()).map(norm).sort();
   // the question the key itself says separates the pair: the one on which the two share no answer
   const truth = await page.evaluate(() => { const v = unitView('acttest', 'u2'), [x, y] = v.ledger('invoice~prize').pair; return v.unitSteps.filter(s => !s.options.some(o => o.keeps.includes(x) && o.keeps.includes(y))).map(s => s.q); });
-  out.separatorAsked = /You cannot tell whether a case is Fake invoice or Prize scam\. Which of the key’s questions tells these two apart\?/.test(stem)
+  out.separatorAsked = /You cannot tell whether a case is Fake invoice or Prize scam\. Which question tells these two apart\?/.test(stem)
     && JSON.stringify(opts) === JSON.stringify(['Does the payment go to the account you always pay?', 'Were you expecting a payment request from this sender?']) && truth.length === 1 && !(await page.locator('#host .feedback').count());
   out.separatorRight = await safe(async () => {
     await page.click(`#host .opt >> text="${truth[0]}"`);

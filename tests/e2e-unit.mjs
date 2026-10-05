@@ -103,8 +103,8 @@ async function playDrill(env, page, u, opts) {
       for (const sel of plan.clicks) await page.click(sel);
       const marks = norm(await page.locator('.feedback .marks, #host .marks').first().textContent());
       const warn = await page.locator('.warn').count() ? norm(await page.locator('.warn').first().textContent()) : '';
-      check(/Route missed/.test(await unitText(page)), `${opts.label}: a wrong route was not marked "Route missed" (${marks})`);
-      check(/Right name, wrong route/.test(warn), `${opts.label}: no "Right name, wrong route" line`);
+      check(/Answers missed/.test(await unitText(page)), `${opts.label}: a wrong route was not marked "Route missed" (${marks})`);
+      check(/Right name, wrong answer on the way/.test(warn), `${opts.label}: no "Right name, wrong answer on the way" line`);
       await shot(page, `${u.subject}-${u.unit}-route-wrong`);
       const tries = await page.evaluate(([S, key]) => { const items = JSON.parse(localStorage.getItem(`pl:${S}:items`)); if (!items[key]) throw new Error(`no ${key} in ${Object.keys(items).join(',')}`); return items[key].tries; }, [u.subject, `${owner}/${plan.id}`]);
       check(tries[tries.length - 1].ok === false, `${opts.label}: the wrong route was recorded as a right one`);

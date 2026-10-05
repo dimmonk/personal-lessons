@@ -1,7 +1,7 @@
 /* ===================== SUBJECT INDEX ===================== */
 
 function drillOf(u, subj){
-  if(u.drill.kind === 'det') return 'full determination';
+  if(u.drill.kind === 'det') return 'naming whole cases';
   if(u.drill.kind === 'err') return subj.errDrill.length + ' claims';
   return 'drill: ' + subj.quickDrills.find(q => q.key === u.drill.key).title.toLowerCase();
 }
@@ -10,8 +10,8 @@ function oldDetCard(subj, d){
   return `<div class="block"><div class="card">
       <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px">
         <div style="display:flex;flex-direction:column;gap:5px">
-          <span class="m a">The key</span>
-          <span style="font-size:19px;font-weight:700;letter-spacing:-.02em">Full determination</span>
+          <span class="m a">All the questions</span>
+          <span style="font-size:19px;font-weight:700;letter-spacing:-.02em">Name a case</span>
         </div>
         <span style="color:var(--accent);display:flex">${icon('target',26)}</span>
       </div>
@@ -19,9 +19,9 @@ function oldDetCard(subj, d){
       <div class="statrow">
         <span class="stat"><b>${d.n}/${subj.specimens.length}</b><span>Determined</span></span>
         <span class="stat"><b>${d.n ? d.label : '&mdash;'}</b><span>Name</span></span>
-        <span class="stat"><b>${d.n ? d.frame : '&mdash;'}</b><span>Route</span></span>
+        <span class="stat"><b>${d.n ? d.frame : '&mdash;'}</b><span>Answers</span></span>
       </div>
-      <button class="btn ghost sm" data-v="det">${d.n ? 'Continue the determination' : 'Run the determination'}</button>
+      <button class="btn ghost sm" data-v="det">${d.n ? 'Go on naming cases' : 'Name a case'}</button>
     </div></div>`;
 }
 // the old drills (scored quick drills, faulty claims) and, for each finished rebuilt unit, "Practise again"
@@ -49,7 +49,7 @@ function drillsSection(subj, S){
 function keyGlance(subj){
   if(!FC.get(subj.id).key) return '';
   const map = keyMapSection(subjectView(subj.id), 'plain');
-  return map ? `<div class="sect"><span class="m">The key at a glance</span></div>${map}<div style="padding-bottom:22px"></div>` : '';
+  return map ? `<div class="sect"><span class="m">The questions at a glance</span></div>${map}<div style="padding-bottom:22px"></div>` : '';
 }
 
 function renderSubject(subj){
@@ -64,7 +64,7 @@ function renderSubject(subj){
     <div style="display:flex;flex-direction:column;gap:12px;padding:10px 0 22px">
       <div style="display:flex;align-items:center;gap:10px">
         <span class="sigil" style="width:30px;height:30px;flex:0 0 30px">${subj.keyNo}</span>
-        <span class="m">Key ${subj.keyNo} &middot; Revision ${esc(subj.rev)}</span>
+        <span class="m">Subject ${subj.keyNo} &middot; Revision ${esc(subj.rev)}</span>
       </div>
       <h1 style="margin:0;font-size:34px;font-weight:800;letter-spacing:-.03em;line-height:1">${esc(subj.name)}</h1>
       <p style="margin:0;font-size:15px;line-height:1.5;color:var(--dim);max-width:34ch">${esc(subj.blurb)}</p>
@@ -98,7 +98,7 @@ function renderSubject(subj){
       </button>
       <button class="row sm" data-ref="caveats">
         <span style="color:var(--label);display:flex">${icon('alert',18)}</span>
-        <span class="grow"><span class="t" style="font-weight:500">Where this key stops</span></span>
+        <span class="grow"><span class="t" style="font-weight:500">Where these questions stop</span></span>
         ${icon('chevron')}
       </button>
     </div>

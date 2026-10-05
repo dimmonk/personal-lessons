@@ -14,16 +14,16 @@ const blocks = arr => arr.flatMap(p => [p, '']);
 
 export const APP = {
   stakes: 'Nothing here is graded. A miss only decides what comes back.',
-  route: 'Unit One also taught that two things are marked separately: the name you give a case, and your route to it, meaning the answers you gave to the key’s questions on the way.',
-  preview: n => `**The part of the key this unit teaches.** This is a preview. You are not expected to follow it yet: every line is explained on the cards that come next. The question and its answers are in the key’s own words. Beside each answer, in plain words, is the thing it leads to. There are ${num(n)} of them, and each gets its name when it is taught.`,
+  route: 'Two things are marked separately: the name you give a case, and your answers to the questions on the way to it.',
+  preview: n => `**The questions this unit teaches.** This is a preview. You are not expected to follow it yet: every line is explained on the cards that come next. The question and its answers are worded exactly as you will meet them. Beside each answer, in plain words, is the thing it leads to. There are ${num(n)} of them, and each gets its name when it is taught.`,
   // a gate unit: the answers are the names, so the preview has no second list
-  previewGate: n => `**The part of the key this unit teaches.** This is a preview. You are not expected to follow it yet: every line is explained on the cards that come next. The question and its answers are in the key’s own words. Beside each answer, in plain words, is what a case of that kind is made of. There are ${num(n)} answers, and in this unit each answer is itself the name of a kind.`,
+  previewGate: n => `**The questions this unit teaches.** This is a preview. You are not expected to follow it yet: every line is explained on the cards that come next. The question and its answers are worded exactly as you will meet them. Beside each answer, in plain words, is what a case of that kind is made of. There are ${num(n)} answers, and in this unit each answer is itself the name of a kind.`,
   howTaught: 'Each name is taught through cases first. After every step you answer one question about a new case, and the answer and the reason are shown straight away.',
   pointTo: 'What you must be able to point to',
   inPlain: 'In plain words',
   oneCase: 'This comes from one case so far. The next card tests it on a second case.',
-  keyAsks: 'The key asks:',
-  keyAnswer: 'Its answer for a case like this one, in the key’s fixed words:',
+  keyAsks: 'The question:',
+  keyAnswer: 'Its answer for a case like this one:',
   aka: (akas, name) => `You may also hear this called ${akas.map(x => `“${x}”`).join(' or ')}. ${akas.length > 1 ? 'Those words mean' : 'That means'} the same thing here, and from now on this unit uses one name: ${name}.`,
   againHeading: name => `${name}: the same thing in a different story`,
   portraitHeading: name => `${name}: what it is like`,
@@ -33,12 +33,12 @@ export const APP = {
   whichStem: answer => `Which case gives the answer ${answer}?`,
   holdStem: (x, y) => `Why is this ${x} and not ${y}? Every statement below is true of the case. Before you read the reason, choose the one that settles it.`,
   tellApart: 'How to tell them apart',
-  tieBreak: (loser, say, winner) => `When a case shows both ${loser} and ${say}, the key’s answer is ${winner}.`,
+  tieBreak: (loser, say, winner) => `When a case shows both ${loser} and ${say}, the answer is ${winner}.`,
   secondLook: 'Does it look like a case you know?',
   ask: 'The question to ask when you spot it',
   act: 'What to do when you meet it',
-  notOnRoute: 'Not asked on its route',
-  keyAlsoAsks: 'The key also asks, and this is its answer for a case like this one:',
+  notOnRoute: 'Not asked for this one',
+  keyAlsoAsks: 'There is also this question, and its answer for a case like this one:',
   // procedure units (A12): the app's wording, view.js SAY
   solvedProblem: 'The problem', solvedResult: 'The result', workingLabel: 'The working, step by step',
   solvedStem: 'This step carries the idea. Every statement below is true of the problem. Before you read the reason, choose the one that explains why this step is done.',
@@ -51,7 +51,7 @@ export const APP = {
   gateAnswers: n => `In this unit each answer is itself the name of a kind, and so rules out the other ${num(n - 1)}.`,
   gateWorked: others => `In this unit the answer is the name. Ruled out: ${others}.`,
   // fact units (A12): the app's wording, view.js SAY
-  factsToHold: 'This unit is facts to hold, not a skill to apply. There is no route to follow. Each fact is something you will be asked from memory, and it comes back on later days.',
+  factsToHold: 'This unit is facts to hold, not a skill to apply. There are no questions to work through. Each fact is something you will be asked from memory, and it comes back on later days.',
   factsCount: (facts, groups) => `The unit holds ${num(facts)} fact${facts === 1 ? '' : 's'}, in ${num(groups)} group${groups === 1 ? '' : 's'}:`,
   howTaughtFacts: 'Each group starts with a case, then the idea in plain words, then the facts. After each fact you are asked it from memory, and the answer and how it fits are shown straight away.',
   factCheckHeading: 'A question from memory',
@@ -145,7 +145,7 @@ export function makeCardRenderers(v, T) {
   const tabled = new Set();
   const tellApart = (entry, withTie) => {
     const out = [`**${APP.tellApart}**`, '', T.t(entry.test), '', ...(withTie && tieLine(entry) ? [tieLine(entry), ''] : [])];
-    if (!tabled.has(entry.id)) { tabled.add(entry.id); out.push('**Side by side, in the key’s words**', '', ...pairTable(entry), ''); }
+    if (!tabled.has(entry.id)) { tabled.add(entry.id); out.push('**Side by side**', '', ...pairTable(entry), ''); }
     return out;
   };
 
@@ -187,7 +187,7 @@ export function makeCardRenderers(v, T) {
     if (v.isFacts) return factOrient(card);
     const out = [...blocks(T.P(card.canDo)), ...blocks(T.P(card.everyday)), ...blocks(T.P(card.add))];
     v.priorSteps.forEach(s => {
-      out.push(`**What Unit One taught, in one place.** The key’s first question is ${T.q(s.code)} Its answers:`, '');
+      out.push(`**What Unit One taught, in one place.** The first question is ${T.q(s.code)} Its answers:`, '');
       s.options.forEach(opt => out.push(`- ${T.a(s.code, opt.id)}: give this answer when ${opt.when}.` + (opt.id === card.map.branch ? ' **This unit is about these cases.**' : '')));
       out.push('', APP.route, '', '*(One tap on any of these lines opens the card in Unit One that taught it.)*', '');
     });
@@ -285,7 +285,7 @@ export function makeCardRenderers(v, T) {
     const gateStep = v.isGate && s.code === v.gate.code;
     const single = !gateStep && s.options.every(opt => opt.keeps.filter(id => taught.includes(id)).length === 1);
     const out = [T.t(card.link), '', `**${APP.keyAsks}** ${T.q(s.code)}`, '', `**What it is for.** ${s.purpose}.`, '',
-      '**Its answers, exactly as the key shows them**', ''];
+      '**Its answers**', ''];
     if (gateStep) out.push(APP.gateAnswers(s.options.length), '');
     if (single) out.push(`Each answer leads to one name, and so rules out the other ${num(taught.length - 1)}.`, '');
     s.options.forEach(opt => {
@@ -339,7 +339,7 @@ export function makeCardRenderers(v, T) {
     if (v.isFacts) return [T.t(card.link), '', ...Object.values(v.cards).filter(k => k.kind === 'facts').flatMap(k =>
       [`**${T.t(k.h)}**`, '', ...list(k.rows.map(r => `**${r.q}** ${r.a}`)), '']), '**To carry away**', '', ...list(T.P(card.carry))];
     const portraitOf = id => Object.values(v.cards).find(k => k.kind === 'portrait' && v.subjectOf(k) === id);
-    const out = [T.t(card.link), '', '**The key for this unit, in its own words**', ''];
+    const out = [T.t(card.link), '', '**This unit’s questions and answers**', ''];
     v.unitSteps().forEach(s => {
       out.push(`${s.q}`);
       s.options.forEach(opt => out.push(v.isGate ? `- ${opt.n}` : `- ${opt.n} → ${opt.keeps.map(id => v.outcome(id).n).join(' · ')}`));

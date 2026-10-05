@@ -158,7 +158,7 @@ export function registerProcedureUnit() {
     { id: 'check-change-solve', kind: 'check', after: 'change', case: 'ck-ch', ask: { type: 'solve', solve: 'whole' } },
     { id: 'look-pc', kind: 'lookalike', ledger: 'of~change', link: 'These two get mixed up, because both talk about the same phone.', cases: ['l-of', 'l-ch'], instruction: 'Compare what each one gives you.',
       prompt: { kind: 'which', option: 'R1.two', answer: 'l-ch' }, difference: 'Case B gives an old and a new price, and so it compares two amounts. Case A gives one price and a percentage of it.' },
-    { id: 'q-r1', kind: 'question', step: 'R1', h: 'Which procedure', link: 'The key asks one question to choose between the two.', decides: 'It decides which numbers you start from.', how: 'Count the amounts the problem gives.' },
+    { id: 'q-r1', kind: 'question', step: 'R1', h: 'Which procedure', link: 'One question chooses between the two.', decides: 'It decides which numbers you start from.', how: 'Count the amounts the problem gives.' },
     { id: 'check-r1', kind: 'check', after: 'R1', case: 'ck-ch-tap', ask: { type: 'step', step: 'R1' } },
     { id: 'recap', kind: 'recap', h: 'What to carry', link: 'Here is the unit in one place.', carry: ['Count the amounts, then choose the procedure.'] },
     { id: 'transfer', kind: 'transfer', h: 'In your own life', link: 'Name a time you needed one of these.', ask: 'Name one.', prompts: [{ outcome: 'of', occasion: 'a price cut' }, { outcome: 'change', occasion: 'a rise in a bill' }], places: ['work', 'home'] }

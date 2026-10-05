@@ -60,10 +60,26 @@ export function subjectView(data, subjectId) {
       ...orphanBanks(subject).flatMap(([, list]) => list).map(c => target(c.id, c, c)),
       target('subject', { blurb: subject.meta.blurb, limits: subject.meta.limits })
     ],
+    // every line of the key the learner reads (questions, answers, plain words, what a name needs, tie-break lines, term
+    // meanings), for the words-to-avoid check only (V50): the key is where key wording lives, so V2 and V8 do not read it
+    keyTarget: () => target('key', keyProse(key)),
+    // "where these questions stop", shown on the reference screen; its prose sits in fields named text, which other rules read as quoted
+    limitsTarget: () => target('limits', (subject.meta.limits || []).map(l => ({ h: l.h, body: l.text }))),
     allCaseLists: caseLists,
     allCases: [...caseLists.flatMap(([, list]) => list), ...subject.specimens],
     orphanCases: orphanBanks(subject).flatMap(([, list]) => list),
     unitIds: Object.keys(subject.units)
+  };
+}
+
+// The learner-visible lines of a key, as prose (ids, codes and other names are left out)
+function keyProse(key) {
+  const steps = [key.gate, ...Object.values(key.branches || {}).flat()].filter(Boolean);
+  return {
+    outcomes: key.outcomes.map(o => ({ plain: o.plain, needs: o.needs })),
+    steps: steps.map(s => ({ q: s.q, purpose: s.purpose, why: s.why,
+      options: s.options.map(o => ({ when: o.when, plain: o.plain, needs: o.needs, say: (o.yieldsTo || []).map(t => t.say) })) })),
+    terms: (key.terms || []).map(t => ({ means: t.means }))
   };
 }
 

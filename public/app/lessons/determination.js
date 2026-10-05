@@ -6,17 +6,17 @@
 // A subject that still has an old unit keeps the old determination screen (drills.js); shell.js chooses.
 
 const DET_SAY = {
-  title: 'Full determination',
-  how: 'Each case is run through the key’s questions in order, from the first, and then named. Name and route are marked separately: a right name reached by a wrong answer on the way counts as a miss. ' + SAY.stakes,
+  title: 'Name a case',
+  how: 'For each case, answer the questions in order, from the first, and then give the name. The name and your answers on the way are marked separately: a right name reached by a wrong answer on the way counts as a miss. ' + SAY.stakes,
   open: n => `${cap(numWord(n))} case${n === 1 ? ' is' : 's are'} open to you now, because the unit that teaches ${n === 1 ? 'its name is' : 'their names are'} done.`,
   none: 'No case is open to you yet: each opens when the unit that teaches its name is done.',
   later: n => `${cap(numWord(n))} more open${n === 1 ? 's' : ''} with later units.`,
   anyway: 'Try one anyway',
-  anywayNote: 'These cases use names you have not been taught yet. Every name in the key is offered, and a miss only decides what comes back.',
+  anywayNote: 'These cases use names you have not been taught yet. Every name in the subject is offered, and a miss only decides what comes back.',
   start: 'Start',
-  workedHeading: 'A worked determination first',
-  workedLead: 'This is one complete determination, worked for you before the first one that is yours: every question on the case’s route, in order, then the name. Nothing is asked.',
-  keyMap: 'The key, as a map',
+  workedHeading: 'One worked for you first',
+  workedLead: 'This one is worked for you before the first that is yours: every question the case is asked, in order, then the name. Nothing is asked of you.',
+  keyMap: 'All the questions, as a map',
   done: 'That set is done',
   firsts: 'These are your first tries. ' + SAY.stakes
 };
@@ -161,13 +161,13 @@ function detCardNew(subj){
   const sv = subjectView(subj.id), { open, later } = specimenSplit(sv), stats = specimenStats(sv);
   return `<div class="block"><div class="card" data-det-card>
     <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px">
-      <div style="display:flex;flex-direction:column;gap:5px"><span class="m a">The key</span>
+      <div style="display:flex;flex-direction:column;gap:5px"><span class="m a">All the questions</span>
         <span style="font-size:19px;font-weight:700;letter-spacing:-.02em">${DET_SAY.title}</span></div>
       <span style="color:var(--accent);display:flex">${icon('target', 26)}</span></div>
     <p style="margin:0;font-size:14px;line-height:1.5;color:var(--dim)">${esc(open.length ? DET_SAY.open(open.length) : DET_SAY.none)}${later.length ? ' ' + esc(DET_SAY.later(later.length)) : ''}</p>
     <div class="statrow"><span class="stat"><b>${stats.n}/${stats.total}</b><span>Met</span></span>
       <span class="stat"><b>${stats.n ? stats.nameRight : '&mdash;'}</b><span>Name</span></span>
-      <span class="stat"><b>${stats.n ? stats.routeRight : '&mdash;'}</b><span>Route</span></span></div>
-    <button class="btn ghost sm" data-v="det">${stats.n ? 'Continue the determination' : 'Run the determination'}</button>
+      <span class="stat"><b>${stats.n ? stats.routeRight : '&mdash;'}</b><span>Answers</span></span></div>
+    <button class="btn ghost sm" data-v="det">${stats.n ? 'Go on naming cases' : 'Name a case'}</button>
   </div></div>`;
 }

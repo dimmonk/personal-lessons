@@ -32,7 +32,7 @@ function renderLibrary(){
   screenEl().innerHTML = `<div class="pane">
     <div class="topbar"><span class="m">Fieldcraft &middot; Pragmatic knowledge</span></div>
     <div class="mast">
-      <h1>${cap(numWord(SUBJECTS.length))} ${SUBJECTS.length === 1 ? 'key' : 'keys'}.</h1>
+      <h1>${cap(numWord(SUBJECTS.length))} ${SUBJECTS.length === 1 ? 'subject' : 'subjects'}.</h1>
       <p>Learn the questions that decide a call, then drill them on cases that arrive unlabelled.</p>
     </div>
     <button class="searchfield" data-v="search">${icon('search',16)}<span>Search subjects, units, drills</span></button>

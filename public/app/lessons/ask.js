@@ -44,7 +44,7 @@ function answerMiss(ask, c, code, chosenId){
   // the tie-break form is used only where the case really shows both answers, so two lines never contradict
   const tie = (c.also || []).includes(chosenId) && v.tieBreak(code, chosenId, right.id);
   if(tie && tie.loser === chosenId)
-    return `You chose ${T.kw(chosen.n)}. This case does show that. It also shows ${esc(tie.say)}, and when a case shows both, the key’s answer is ${T.kw(right.n)}.`;
+    return `You chose ${T.kw(chosen.n)}. This case does show that. It also shows ${esc(tie.say)}, and when a case shows both, the answer is ${T.kw(right.n)}.`;
   // the nearest wrong name's reason is the line for the near answer, unless a name is asked: then "Why not" already prints it
   if(c.not && !ask.item.askName && v.isOutcome(target) && chosen.keeps.length === 1 && chosen.keeps[0] === c.not.outcome)
     return T.t(paras(c.not.why).join(' '), c);
@@ -86,7 +86,7 @@ function caseFeedback(ask){
   if(item.askName){
     const routed = item.asked.length > 0;
     out.push(`<div class="marks">${verdictMark(res.nameOk, res.nameOk ? 'Right:' : 'The answer is:', esc(v.nameOf(target)))}`
-      + (routed ? `<span class="mark ${res.routeOk ? '' : 'no'}">${icon(res.routeOk ? 'check' : 'cross', 13)}Route ${res.routeOk ? 'right' : 'missed'}</span>` : '') + '</div>');
+      + (routed ? `<span class="mark ${res.routeOk ? '' : 'no'}">${icon(res.routeOk ? 'check' : 'cross', 13)}Answers ${res.routeOk ? 'right' : 'missed'}</span>` : '') + '</div>');
     if(res.nameOk && !res.routeOk) out.push(`<div class="warn"><span class="verdictline">${SAY.rightNameWrongRoute}.</span> A right name reached by a wrong answer on the way counts as a miss.</div>`);
   } else {
     const code = item.asked[0];
@@ -315,10 +315,10 @@ function problemFeedback(ask){
   const pick = c.answer.choices[state.picked], right = c.answer.choices.find(x => x.id === c.answer.right);
   const numOk = pick.id === right.id, res = routed ? caseResult(ask) : { ok: true, nameOk: true, routeOk: true }, target = caseTarget(v, c);
   const marks = (routed ? verdictMark(res.nameOk, res.nameOk ? 'Right:' : 'The answer is:', esc(v.nameOf(target)))
-      + `<span class="mark ${res.routeOk ? '' : 'no'}">${icon(res.routeOk ? 'check' : 'cross', 13)}Route ${res.routeOk ? 'right' : 'missed'}</span>` : '')
+      + `<span class="mark ${res.routeOk ? '' : 'no'}">${icon(res.routeOk ? 'check' : 'cross', 13)}Answers ${res.routeOk ? 'right' : 'missed'}</span>` : '')
     + verdictMark(numOk, numOk ? 'Right:' : 'The answer is:', esc(right.text));
   const working = c.steps.map(st => `<div class="stepdone static"><span class="tick">${icon('check', 12)}</span><span class="grow"><span class="m s">${T.t(st.does)}</span><span class="v">${T.t(st.working)}</span></span></div>`).join('');
-  const routeLines = routed && !res.routeOk ? `<div class="vblock"><span class="m">The route</span>${[...res.wrongSteps, ...item.asked.filter(code => !res.wrongSteps.includes(code))].map(code => stepLine(ask, c, code)).join('')}</div>` : '';
+  const routeLines = routed && !res.routeOk ? `<div class="vblock"><span class="m">Your answers on the way</span>${[...res.wrongSteps, ...item.asked.filter(code => !res.wrongSteps.includes(code))].map(code => stepLine(ask, c, code)).join('')}</div>` : '';
   const own = [
     ...(numOk ? [] : [SAY.slipLine(T.kw(pick.text), T.t(paras(pick.slip).join(' '), c))]),
     ...(routed ? res.wrongSteps.map(code => answerMiss(ask, c, code, state.answers[code])) : []),

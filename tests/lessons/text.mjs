@@ -32,7 +32,8 @@ export function* strings(value, path = '') {
 // Fields that hold ids, codes and enums are never prose; fields that quote what people say are free text (S5, V2).
 const STRUCTURAL = /\.(id|kind|use|tier|setting|topic|case|first|second|outcome|family|ledger|step|mark|after|looksLike|is|about|answer|voice|neighbour|resembles|option|taughtIn|branch|term|expect|echo|continues|type|name|demo|concept|problem|row|solve)$/;
 const STRUCTURAL_IN = /\.(route|cues|segments\.\d+\.text|pair|among|testedBy|cases|facts|also|feature|map)(\.|$)/;
-const QUOTED = /\.(text|idea|wild\.\d+|options\.\d+\.text)$/;
+// a case's or claim's own story (its top-level text) is quoted; a choice's text on a card is the app's prose and is scanned
+const QUOTED = /^\.text$|\.(idea|wild\.\d+|options\.\d+\.text)$/;
 export const prose = obj => [...strings(obj)].filter(([p]) => !STRUCTURAL.test(p) && !STRUCTURAL_IN.test(p) && !QUOTED.test(p));
 
 // Comparison form: no capitals, no punctuation, single spaces.

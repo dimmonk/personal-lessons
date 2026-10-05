@@ -127,7 +127,7 @@ function returnSetRun(subj, items){
   const allFacts = items.length > 0 && items.every(i => i.fact);
   const intro = allFacts
     ? 'These are facts that are due to come back, each next to the fact it is most often swapped with. Each is asked from memory. ' + SAY.stakes
-    : 'These are names that are due to come back, each on a case you have not seen, next to a case of the name it is most often taken for. Answer every question in the key’s order, then give the name. ' + SAY.stakes;
+    : 'These are names that are due to come back, each on a case you have not seen, next to a case of the name it is most often taken for. Answer every question in order, then give the name. ' + SAY.stakes;
   return crossUnitRun(subj, { context: 'return', title: 'Due today', intro, ask: allFacts ? 'fact' : 'route',
     instruction: allFacts ? SAY.stage.fact() : SAY.stage.route(), queue: items.map(i => ({ returned: true, unitId: i.unitId, caseId: i.caseId, fact: i.fact })) });
 }
@@ -253,7 +253,7 @@ function mountDrillRun(host, run, onEnd){
 function runResultsHtml(run){
   const firsts = run.tries.filter(t => t.first);
   const acc = list => { const a = firstTryAccuracy(list); return a.n ? `${a.ok} of ${a.n}` : '—'; };
-  const stageNames = { name: 'Naming', piece: 'One question at a time', finish: 'Finishing a route', route: 'Whole routes', claim: 'Faulty claims',
+  const stageNames = { name: 'Naming', piece: 'One question at a time', finish: 'Finishing the answers', route: 'Whole cases', claim: 'Faulty claims',
                        last: 'The last step', whole: 'Whole problems', fact: 'Facts from memory' };
   const stages = [...new Set(run.tries.map(t => t.stage))];
   const whole = firsts.filter(t => ['finish', 'route', 'whole'].includes(t.mode)), single = firsts.filter(t => ['piece', 'name', 'tell', 'reverse', 'separator', 'fact', 'last'].includes(t.mode));
@@ -267,7 +267,7 @@ function runResultsHtml(run){
     rows.push(['Cases that came back today', acc(firsts)]);
   } else {
     stages.forEach(s => rows.push([stageNames[s] || s, acc(firsts.filter(t => t.stage === s))]));
-    if(whole.length && single.length){ rows.push(['All whole routes, every stage', acc(whole)]); rows.push(['All single questions, every stage', acc(single)]); }
+    if(whole.length && single.length){ rows.push(['All whole cases, every stage', acc(whole)]); rows.push(['All single questions, every stage', acc(single)]); }
   }
   // action subjects: accuracy on sound cases beside cases with a fault (lesson standard E8)
   const named = firsts.filter(t => t.target && t.mode !== 'reverse');

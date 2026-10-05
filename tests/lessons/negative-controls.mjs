@@ -11,7 +11,12 @@ import { setIn, updateIn, removeIn, plain } from './immutable.mjs';
 import { CONTROLS, NO_CONTROL } from './controls-table.mjs';
 import { KIND_FIXTURES, loadKindFixture } from './kind-fixtures.mjs';
 
-const EXEMPLAR = new URL('../../docs/lesson-standard/exemplar/public/', import.meta.url);
+// The exemplar is the live Psychology subject (Unit Two is the unit every control seeds its fault into), read from public/,
+// its one copy, so the controls can never run on wording the app no longer ships. Only that subject is kept, which keeps a
+// control as fast as one subject's validation.
+const EXEMPLAR = new URL('../../public/', import.meta.url);
+const EXEMPLAR_SUBJECT = 'psychology';
+const onlyExemplarSubject = data => ({ ...data, subjects: { [EXEMPLAR_SUBJECT]: data.subjects[EXEMPLAR_SUBJECT] } });
 
 const emptyInput = data => ({ data, lock: lockEntries(data), committedLock: null, standard0: { units: [] }, committedStandard0: { units: [] },
   site: { files: [], indexScripts: null, swShell: null }, validatorSources: {} });
@@ -19,7 +24,7 @@ const emptyInput = data => ({ data, lock: lockEntries(data), committedLock: null
 // The exemplar, and a unit of each other kind (fact, procedure, gate). The exemplar runs every rule; a unit of another kind runs only the
 // rules that apply to its kind and that its fixture meets (kind-fixtures.mjs).
 async function baselines() {
-  const data = plain(await loadFromPublic(EXEMPLAR));
+  const data = onlyExemplarSubject(plain(await loadFromPublic(EXEMPLAR)));
   const exemplar = {
     data, lock: lockEntries(data), committedLock: null, standard0: { units: [] }, committedStandard0: { units: [] },
     site: await collectSite(EXEMPLAR), validatorSources: await collectValidatorSources()

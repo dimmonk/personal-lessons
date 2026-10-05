@@ -5,6 +5,7 @@ import { testRebuiltUnit, testUnitAt360, testDraftAndOldUnits, testMigration } f
 import { testLessonEngineReview } from './e2e-review.mjs';
 import { testNewScreens } from './e2e-screens.mjs';
 import { testKinds } from './e2e-kinds.mjs';
+import { APP_JARGON } from './plain-words.mjs';
 import { subjectMeta } from './fixtures/app-data.mjs';
 
 const WIDTHS = [360, 390, 768, 1200, 1600];
@@ -49,9 +50,22 @@ async function clippedText(page) {
     .map(el => `"${el.textContent.trim().replace(/\s+/g, ' ').slice(0, 30)}"`));
 }
 
+// The words a learner never reads outside a case's own story or a quotation (tests/plain-words.mjs; lesson standard K9).
+async function jargonShown(page) {
+  const text = await page.evaluate(() => {
+    const copy = document.querySelector('#screen').cloneNode(true);
+    copy.querySelectorAll('blockquote, .passage, .casename').forEach(el => el.remove());   // a case may say anything
+    return copy.textContent;
+  });
+  const prose = text.replace(/“[^”]*”|"[^"]*"/g, ' ');   // and so may a quotation
+  return APP_JARGON.filter(w => new RegExp(`\\b${w}(['’]s)?\\b`, 'i').test(prose));
+}
+
 async function inspect(page, label) {
   const text = await screenText(page);
   check(text.length > 40, `${label}: screen is empty`);
+  const jargon = await jargonShown(page);
+  check(jargon.length === 0, `${label}: shows the maintainers' word${jargon.length > 1 ? 's' : ''} ${jargon.map(w => `"${w}"`).join(', ')}`);
   const over = await horizontalOverflow(page);
   check(over <= 0, `${label}: ${over}px horizontal overflow`);
   const clipped = await clippedText(page);
@@ -137,7 +151,7 @@ async function testDeterminations() {
     await page.click(`#nameOpts .opt[data-n="${right.outcome}"]`);
     await page.click('#record');
     const okMarks = await page.locator('.marks').textContent();
-    check(/Name correct/.test(okMarks) && /Route correct/.test(okMarks), `${s.id}: correct determination scored "${okMarks.trim()}"`);
+    check(/Name correct/.test(okMarks) && /Answers right/.test(okMarks), `${s.id}: correct determination scored "${okMarks.trim()}"`);
     await page.click('#next');
 
     const wrong = await routeFor(page, s.id, 1, true);
@@ -145,9 +159,9 @@ async function testDeterminations() {
     await page.click(`#nameOpts .opt[data-n="${wrong.outcome}"]`);
     await page.click('#record');
     const missMarks = await page.locator('.marks').textContent();
-    check(/Name correct/.test(missMarks) && /Route missed/.test(missMarks), `${s.id}: wrong route scored "${missMarks.trim()}"`);
+    check(/Name correct/.test(missMarks) && /Answers missed/.test(missMarks), `${s.id}: wrong route scored "${missMarks.trim()}"`);
     const warn = await page.locator('.warn').textContent();
-    check(/Right name, wrong route/.test(warn), `${s.id}: no "right name, wrong route" warning`);
+    check(/Right name, wrong answer on the way/.test(warn), `${s.id}: no "right name, wrong route" warning`);
     const score = (await page.locator('.score').textContent()).replace(/\s+/g, ' ');
     check(/2 ?Determined/.test(score) && /2 ?Name/.test(score) && /1 ?Route/.test(score), `${s.id}: running score is "${score}"`);
     await toSubject(page);

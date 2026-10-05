@@ -98,12 +98,12 @@ CARD.orient = (ctx, card) => {
   const out = [T.PP(card.canDo), T.PP(card.everyday)];
   v.priorSteps.forEach(s => {
     out.push(lessonSection(`What ${unitLabel(v.data, s.unit)} taught, in one place`,
-      `<p>The key’s first question is ${T.q(s.code)} Its answers:</p>`
+      `<p>The first question is ${T.q(s.code)} Its answers:</p>`
       + lessonList(s.options.map(opt => `${T.a(s.code, opt.id)}: give this answer when ${esc(opt.when)}.`
           + (opt.id === card.map.branch ? ' <b class="here">This unit is about these cases.</b>' : '')))
       + `<p>${SAY.route}</p>`));
   });
-  out.push(lessonSection('The part of the key this unit teaches', `<p>${SAY.preview(v.taught.length)}</p>`
+  out.push(lessonSection('The questions this unit teaches', `<p>${SAY.preview(v.taught.length)}</p>`
     + branch.map(s => `<p class="mapq">${esc(s.q)}</p>` + lessonList(s.options.map(opt => {
         const leads = v.isGate ? [opt.plain] : opt.keeps.filter(id => v.taught.includes(id)).map(id => v.thing(id).plain);
         return `<span class="kw">${esc(opt.n)}</span>${leads.length ? ' → ' + esc(leads.join(' · ')) : ''}`;
@@ -218,7 +218,7 @@ CARD.question = (ctx, card) => {
   return `<p>${T.t(card.link)}</p>`
     + lessonSection(SAY.keyAsks, `<p>${T.q(s.code)}</p>`)
     + lessonSection('What it is for', `<p>${esc(s.purpose)}.</p>`)
-    + lessonSection('Its answers, exactly as the key shows them',
+    + lessonSection('Its answers',
         (single && !v.isGate ? `<p>Each answer leads to one name, and so rules out the other ${numWord(taught.length - 1)}.</p>` : '') + `<ul class="answers">${answers}</ul>`)
     + lessonSection('Why it decides', `<p>${esc(s.why)}</p>${T.PP(card.decides)}`)
     + lessonSection('How to answer it from a case', T.PP(card.how))
@@ -277,7 +277,7 @@ CARD.recap = (ctx, card) => {
     + lessonSection('To carry away', lessonList(T.P(card.carry)));
   const portraitOf = id => v.cardOrder.map(v.card).find(k => k.kind === 'portrait' && (k.outcome || k.family) === id);
   return `<p>${T.t(card.link)}</p>`
-    + lessonSection('The key for this unit, in its own words', v.unitSteps.map(s => `<p class="mapq">${esc(s.q)}</p>`
+    + lessonSection('This unit’s questions and answers', v.unitSteps.map(s => `<p class="mapq">${esc(s.q)}</p>`
         + lessonList(s.options.map(opt => `<span class="kw">${esc(opt.n)}</span>${v.isGate ? '' : ' → ' + esc(opt.keeps.filter(id => v.taught.includes(id)).map(v.nameOf).join(' · '))}`))).join(''))
     + lessonSection(`For each name: ${lowerFirst(SAY.pointTo)}, and ${lowerFirst(SAY.ask)}`,
         lessonList(v.taught.map(id => `${T.o(id)}: ${esc(v.thing(id).needs)}.`

@@ -14,8 +14,8 @@ function searchIndex(){
     s.quickDrills.forEach(q => INDEX.push({g:'Drills', s, t:q.title,
       sub:`${s.name} · ${q.items.length} items`,
       go:() => { APP.subjectId = s.id; touch(s.id); go('drill', {drillKey:q.key}); }}));
-    s.specimens.forEach((sp,i) => INDEX.push({g:'Specimens', s, t:sp.q, quote:true,
-      sub:`${s.name} · specimen ${pad2(i+1)}`,
+    s.specimens.forEach((sp,i) => INDEX.push({g:'Whole cases', s, t:sp.q, quote:true,
+      sub:`${s.name} · case ${pad2(i+1)}`,
       go:() => { APP.subjectId = s.id; touch(s.id); st(s).detState = Object.assign(freshDet(), {i}); go('det'); }}));
     s.errDrill.forEach((e,i) => INDEX.push({g:'Faulty claims', s, t:e.q, quote:true,
       sub:`${s.name} · claim ${pad2(i+1)}`,
@@ -57,13 +57,13 @@ function paintResults(){
   const q = APP.query.trim();
   if(!q){
     box.innerHTML = `<p class="empty">Everything is searchable &mdash; subject names, unit titles,
-      the names and questions in each key, the cases on the cards, drill items and the specimens themselves.</p>`;
+      the names and questions in each subject, the cases on the cards, drill items and the whole cases for naming.</p>`;
     return;
   }
   const hits = searchIndex().filter(e => e.t.toLowerCase().includes(q.toLowerCase()));
   if(!hits.length){ box.innerHTML = `<p class="empty">Nothing matches &ldquo;${esc(q)}&rdquo;.</p>`; return; }
 
-  const order = ['Subjects','Units','Cards','Names','Questions','Cases','Tools','Drills','Specimens','Faulty claims'];
+  const order = ['Subjects','Units','Cards','Names','Questions','Cases','Tools','Drills','Whole cases','Faulty claims'];
   const groups = order.map(g => [g, hits.filter(h => h.g === g)]).filter(([,list]) => list.length);
   let n = 0;
 

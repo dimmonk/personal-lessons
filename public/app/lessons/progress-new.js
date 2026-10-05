@@ -7,7 +7,7 @@ const PROGRESS_SAY = {
   heading: 'Practice record',
   intro: 'First tries only: what you got right the first time a question or a case came up. Anything missed came back, and is not counted again.',
   allFirst: 'All first tries',
-  whole: 'Whole routes',
+  whole: 'Whole cases',
   single: 'Single questions',
   persistence: 'Showing up',
   logNote: 'The log stays on this device. The file holds the log and, for every subject, your practice record, your places and your notes.',

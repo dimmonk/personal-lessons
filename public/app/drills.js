@@ -132,7 +132,7 @@ function mountDet(host, subj, state, finish){
     <div class="score">
       <span class="stat"><b>${stats.n}</b><span>Determined</span></span>
       <span class="stat"><b>${stats.label}</b><span>Name</span></span>
-      <span class="stat"><b>${stats.frame}</b><span>Route</span></span>
+      <span class="stat"><b>${stats.frame}</b><span>Answers</span></span>
     </div>
     <div class="actbar">
       <div class="actrow">
@@ -189,12 +189,12 @@ function mountVerdict(host, subj, state, sp, stats, finish){
       <h1 style="margin:0;font-size:32px;font-weight:800;letter-spacing:-.03em;line-height:1.02;color:var(--accent)">${esc(outcomeName(subj, sp.outcome))}</h1>
       <div class="marks">
         <span class="mark ${okO?'':'no'}">${icon(okO?'check':'cross',13)}Name ${okO?'correct':'missed'}</span>
-        <span class="mark ${routeOk?'':'no'}">${icon(routeOk?'check':'cross',13)}Route ${routeOk?'correct':'missed'}</span>
+        <span class="mark ${routeOk?'':'no'}">${icon(routeOk?'check':'cross',13)}Answers ${routeOk?'right':'missed'}</span>
       </div>
     </div>
     ${(okO && !routeOk) ? `<div class="warn" style="margin:0 0 24px">
       <strong>Right name, wrong route.</strong> Scored as a miss. The question &ldquo;${esc(bad.label)}&rdquo; wanted
-      <b style="color:var(--text)">${esc(want)}</b>. A label you cannot derive from the key will not survive an unfamiliar case.</div>` : ''}
+      <b style="color:var(--text)">${esc(want)}</b>. A name you cannot reach by the questions will not survive an unfamiliar case.</div>` : ''}
     ${(!okO && !routeOk && bad) ? `<div class="warn" style="margin:0 0 24px">
       <strong>&ldquo;${esc(bad.label)}&rdquo; went wrong.</strong> It wanted <b style="color:var(--text)">${esc(want)}</b>.</div>` : ''}
     <div style="display:flex;flex-direction:column;gap:24px;padding-bottom:4px">
@@ -204,7 +204,7 @@ function mountVerdict(host, subj, state, sp, stats, finish){
     <div class="score">
       <span class="stat"><b>${stats.n}</b><span>Determined</span></span>
       <span class="stat"><b style="color:var(--green)">${stats.label}</b><span>Name</span></span>
-      <span class="stat"><b style="color:${stats.frame===stats.n?'var(--green)':'var(--coral)'}">${stats.frame}</b><span>Route</span></span>
+      <span class="stat"><b style="color:${stats.frame===stats.n?'var(--green)':'var(--coral)'}">${stats.frame}</b><span>Answers</span></span>
     </div>
     <div class="actbar"><button class="btn" id="next">${last?'Finish':'Next specimen'}${icon('arrow')}</button></div>`;
 
@@ -259,8 +259,8 @@ function renderErr(subj){
 function renderDet(subj){
   const S = st(subj), d = S.stats.det;
   drillShell(subj, 'Determination', host => mountDet(host, subj, S.detState,
-    () => doneScreen(subj, 'Determination complete',
-      `Names correct <b>${d.label}</b> &middot; routes correct <b>${d.frame}</b> of <b>${d.n}</b> recorded.`,
+    () => doneScreen(subj, 'All cases named',
+      `Names correct <b>${d.label}</b> &middot; answers right <b>${d.frame}</b> of <b>${d.n}</b> recorded.`,
       () => { S.detState = freshDet(); render(); })));
 }
 
@@ -294,7 +294,7 @@ function renderUnitDone(subj){
   const key = u.drill.kind === 'det' ? 'det' : (u.drill.kind === 'err' ? 'err' : u.drill.key);
   const s = S.stats[key];
   const line = u.drill.kind === 'det'
-    ? `Names correct <b>${s.label}</b> &middot; routes correct <b>${s.frame}</b> of <b>${s.n}</b>.`
+    ? `Names correct <b>${s.label}</b> &middot; answers right <b>${s.frame}</b> of <b>${s.n}</b>.`
     : (u.drill.kind === 'err' ? `All ${subj.errDrill.length} faults reviewed.`
                               : `<b>${s.ok}</b> correct of <b>${s.n}</b> answered.`);
 
@@ -311,7 +311,7 @@ function renderUnitDone(subj){
         <button class="btn ghost" id="redo">Redo the drill</button>
         <button class="btn ghost" id="reread">Reread the lesson</button>
       </div>
-      ${last ? `<p style="padding-top:8px">Every unit is run. The reference keeps all of it, plus where this key stops.</p>` : ''}
+      ${last ? `<p style="padding-top:8px">Every unit is run. The reference keeps all of it, plus where these questions stop.</p>` : ''}
     </div>
   </div>`;
 

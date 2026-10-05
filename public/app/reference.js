@@ -12,10 +12,10 @@ function referenceBody(subj, units){
   if(!meta) return units ? oldUnitsHtml(subj) : `<div class="lesson">${subj.caveats}</div>`;
   if(units){
     return generated
-      + `<div class="sect top"><span class="m">${esc(REF_SAY.stopsHeading)}</span></div>${limitsHtml(meta)}`
+      + `<div class="sect top"><span class="m">${esc(REF_SAY.stopsHeading)}</span></div>${limitsHtml(subj.id)}`
       + (old ? `<div class="sect top"><span class="m">${esc(REF_SAY.oldUnits)}</span></div>${oldUnitsHtml(subj)}` : '');
   }
-  return limitsHtml(meta) + (old ? `<div class="lesson">${subj.caveats}</div>` : '');
+  return limitsHtml(subj.id) + (old ? `<div class="lesson">${subj.caveats}</div>` : '');
 }
 
 function renderReference(subj){

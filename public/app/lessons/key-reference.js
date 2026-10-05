@@ -8,7 +8,7 @@
 const REF_SAY = {
   lookup: 'Look things up here. Nothing on this screen is scheduled, and looking at it does not count as review: the drills ask you from memory.',
   namesHeading: 'Names',
-  stopsHeading: 'Where this key stops',
+  stopsHeading: 'Where these questions stop',
   alsoCalled: 'Also called',
   namedCases: 'Named cases',
   lookalikes: 'Look-alikes',
@@ -47,7 +47,11 @@ function nameEntryHtml(sv, thing){
       ${lines.length ? lessonSection(REF_SAY.lookalikes, lines.join('')) : ''}
     </div></details>`;
 }
-const limitsHtml = meta => `<div class="lesson">${(meta.limits || []).map(l => `<h3>${esc(l.h)}</h3>${paras(l.text).map(p => `<p>${esc(p)}</p>`).join('')}`).join('')}</div>`;
+// "Where these questions stop": the subject's own notes, with tokens filled from its key like every other line the learner reads
+const limitsHtml = subjectId => {
+  const meta = FC.get(subjectId).meta, T = lessonText(subjectView(subjectId));
+  return `<div class="lesson">${(meta.limits || []).map(l => `<h3>${T.t(l.h)}</h3>${paras(l.text).map(p => `<p>${T.t(p)}</p>`).join('')}`).join('')}</div>`;
+};
 
 // the generated part of the reference screen for a subject with any rebuilt unit; '' where it has none
 function keyReferenceHtml(subj){

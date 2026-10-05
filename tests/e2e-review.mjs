@@ -59,7 +59,7 @@ async function wrongChoiceMarks(env) {
   const repeated = paragraphs.filter((p, i) => paragraphs.indexOf(p) !== i);
   env.check(repeated.length === 0, `the same paragraph is printed twice in one piece of feedback: "${(repeated[0] || '').slice(0, 70)}"`);
   const warn = await page.evaluate(() => { const el = document.querySelector('#host .warn *'); return el ? Number(getComputedStyle(el).fontWeight) : 0; });
-  env.check(warn > 0 && warn < 600, `"Right name, wrong route" is set in weight ${warn}; weight 600 is for marked words only (E16)`);
+  env.check(warn > 0 && warn < 600, `"Right name, wrong answer on the way" is set in weight ${warn}; weight 600 is for marked words only (E16)`);
   await context.close();
 }
 
@@ -189,7 +189,7 @@ async function wordingAndData(env) {
       d.innerHTML = CARD[v.card(id).kind](cardContext(narrowed, T, id, ui), v.card(id));
       return [...d.querySelectorAll('.lsec')].find(s => s.textContent.startsWith(label)).textContent;
     };
-    return section('recap', 'The key for this unit') + ' ' + section('orient', 'The part of the key this unit teaches');
+    return section('recap', 'This unit’s questions and answers') + ' ' + section('orient', 'The questions this unit teaches');
   });
   const names = await page.evaluate(() => { const v = unitView('psychology', 'u2'); return v.taught.slice(2).map(v.nameOf); });
   const plains = await page.evaluate(() => { const v = unitView('psychology', 'u2'); return v.taught.slice(2).map(id => v.thing(id).plain); });

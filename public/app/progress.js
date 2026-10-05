@@ -36,7 +36,7 @@ function renderProgress(){
     <div class="topbar"><span class="m">Progress</span></div>
     <div class="mast">
       <h1>${doneUnits} of ${totalUnits}</h1>
-      <p>units run across ${numWord(SUBJECTS.length)} subject${SUBJECTS.length===1?'':'s'}. Determinations are the measure that matters &mdash; a name is only earned when the route is too.</p>
+      <p>units run across ${numWord(SUBJECTS.length)} subject${SUBJECTS.length===1?'':'s'}. Naming whole cases is the measure that matters: a name only counts when every answer on the way to it is right too.</p>
     </div>
     ${practiceBlockHtml()}
     ${oldSubjects.length ? oldLessonsHtml(det) : ''}
