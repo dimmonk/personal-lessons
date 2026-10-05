@@ -28,6 +28,7 @@ Fieldcraft ("Pragmatic knowledge") is a static learning web app: https://fieldcr
 - Validator: the gate-unit variants of V11 to V15, V20 to V24, V35, V39 and V44 are not written. The fact and procedure fixtures are not standard-conforming (the procedure one fails V5), so their kind-specific rules were shown on fixtures only. The action fixture is not a validator baseline (V37 was checked on Psychology with `action` switched on). Lock entries carry no `deployed` stamp because nothing stamps it.
 - Not real yet: any subject other than Psychology Unit Two in the interactive format. Expect to correct section 4 of the standard when the first real fact unit and procedure unit are written.
 - Psychology's other units, its full key (gate and the other two branches) and its determination screen are still card-format. Unit Two assumes Unit One, which is card-format.
+- Psychology runs on two keys until its key is rewritten. Unit Two's key has ONE reasoning question ("What does the reasoning do?"), so the opening map on the Psychology screen shows that. The old full-determination screen and Unit Six still ask two ("What does the reasoning start from?" first, then "What does the reasoning do?"). The names and the five answers match; only that extra first question differs. Rewriting Psychology's whole key (step 1 of section 6) removes the mismatch.
 
 ## 5. What to do next (ask the owner first: see section 7)
 1. All of Psychology in the interactive format: key rewrite, Unit One as the gate unit, units Three to Six, specimens re-keyed, then judge it.
