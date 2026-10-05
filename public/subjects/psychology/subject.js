@@ -4,7 +4,7 @@ FC.subject('psychology', {
   rev: 1,                 // subject revision; goes up whenever this record, the key or the specimens change (lesson standard R2)
   standard: 1,            // lesson-standard version the subject's key was written to
   action: false,          // true for subjects the learner acts on (Scams, Wealth Preservation, Statistical Claims)
-  blurb: 'Tell a bad moment from a stable pattern, and a tactic from a personality, before reaching for a label.',
+  blurb: 'Tell a hard moment from a lasting way someone is, and reasoning from a move between people, before you reach for a label.',
   units: ['u1', 'u2', 'u3', 'u4', 'u5', 'u6'],   // order of the course; only u2 is rebuilt in this exemplar
   // The areas of life a case can be set in. case.setting must be one of these; case.topic carries the detail.
   // A fixed list is what makes "three settings" and "a different setting" checkable (lesson standard W5.3, V33).

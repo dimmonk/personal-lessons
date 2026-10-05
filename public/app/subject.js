@@ -100,7 +100,7 @@ function detBlurb(subj){
   const nSteps = d.gateCode
     ? 1 + Math.max(...Object.values(d.stepsByGate).map(a => a.length))
     : d.steps.length;
-  return `${nSteps} question${nSteps===1?'':'s'} narrow ${subj.outcomes.length} tools to one. `
+  return `${nSteps} question${nSteps===1?'':'s'} narrow ${subj.outcomes.length} names to one. `
        + `${cap(numWord(subj.specimens.length))} unlabelled cases.`;
 }
 

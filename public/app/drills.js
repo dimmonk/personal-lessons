@@ -53,7 +53,7 @@ function mountErr(host, subj, state, finish){
     </div>
     <blockquote class="passage">${esc(it.q)}</blockquote>
     ${state.picked ? `<div class="vblock" style="padding-top:6px"><span class="m">The fault</span><p>${esc(it.w)}</p></div>`
-      : `<p style="margin:0;font-size:14px;line-height:1.55;color:var(--dim)">State the fault out loud or in writing before revealing it. Name which diagnostic question the claim fails to engage.</p>`}
+      : `<p style="margin:0;font-size:14px;line-height:1.55;color:var(--dim)">Say what is wrong with the claim, out loud or in writing, before you reveal it.</p>`}
     <div class="actbar">
       <button class="btn ${state.picked?'':'ghost'}" id="act">${state.picked
         ? (state.i === subj.errDrill.length-1 ? 'Finish' : 'Next claim') + icon('arrow')
@@ -87,7 +87,7 @@ function mountDet(host, subj, state, finish){
   const stepsHTML = steps.map((step, i) => {
     const ansId = state.answers[step.code];
     if(i === openIdx) return `<div class="stepopen">
-      <div class="stephead"><span class="num on">${i+1}</span><span class="m a">${esc(step.code)} &middot; ${esc(step.label)}</span></div>
+      <div class="stephead"><span class="num on">${i+1}</span><span class="m a">Question ${i+1} &middot; ${esc(step.label)}</span></div>
       <div class="opts" data-step="${esc(step.code)}">${step.options.map(o =>
         `<button class="opt ${ansId===o.id?'sel':''}" data-o="${esc(o.id)}">${esc(o.n)}${o.sub?`<small>${esc(o.sub)}</small>`:''}</button>`).join('')}</div>
     </div>`;
@@ -95,25 +95,25 @@ function mountDet(host, subj, state, finish){
       const opt = step.options.find(o => o.id === ansId);
       return `<button class="stepdone" data-edit="${esc(step.code)}">
         <span class="tick">${icon('check',12)}</span>
-        <span class="grow"><span class="m s">${esc(step.code)} &middot; ${esc(step.label)}</span><span class="v">${esc(opt.n)}</span></span>
+        <span class="grow"><span class="m s">${esc(step.label)}</span><span class="v">${esc(opt.n)}</span></span>
         <span class="m s">Change</span></button>`;
     }
     return `<div class="steplock">
       <span class="num off">${i+1}</span>
-      <span class="grow"><span class="m s">${esc(step.code)} &middot; ${esc(step.label)}</span>
+      <span class="grow"><span class="m s">${esc(step.label)}</span>
         <span class="v">Answer the step above</span></span>
       <span style="color:var(--disabled);display:flex">${icon('lock',15)}</span></div>`;
   }).join('');
 
   const nameHTML = ready
     ? `<div class="stepopen">
-        <div class="stephead"><span class="num on">${steps.length+1}</span><span class="m a">ID &middot; Name it</span></div>
+        <div class="stephead"><span class="num on">${steps.length+1}</span><span class="m a">Name it</span></div>
         <div class="opts" id="nameOpts">${nameOptions(subj, state).map(o =>
           `<button class="opt ${state.outcome===o.id?'sel':''}" data-n="${esc(o.id)}">${esc(o.n)}</button>`).join('')}</div>
       </div>`
     : `<div class="steplock">
         <span class="num off">${steps.length+1}</span>
-        <span class="grow"><span class="m s">ID &middot; Name it</span>
+        <span class="grow"><span class="m s">Name it</span>
           <span class="v">Answer every step first</span></span>
         <span style="color:var(--disabled);display:flex">${icon('lock',15)}</span></div>`;
 
@@ -193,10 +193,10 @@ function mountVerdict(host, subj, state, sp, stats, finish){
       </div>
     </div>
     ${(okO && !routeOk) ? `<div class="warn" style="margin:0 0 24px">
-      <strong>Right name, wrong route.</strong> Scored as a miss. Step ${esc(bad.code)} wanted
+      <strong>Right name, wrong route.</strong> Scored as a miss. The question &ldquo;${esc(bad.label)}&rdquo; wanted
       <b style="color:var(--text)">${esc(want)}</b>. A label you cannot derive from the key will not survive an unfamiliar case.</div>` : ''}
     ${(!okO && !routeOk && bad) ? `<div class="warn" style="margin:0 0 24px">
-      <strong>Step ${esc(bad.code)} went wrong.</strong> It wanted <b style="color:var(--text)">${esc(want)}</b>.</div>` : ''}
+      <strong>&ldquo;${esc(bad.label)}&rdquo; went wrong.</strong> It wanted <b style="color:var(--text)">${esc(want)}</b>.</div>` : ''}
     <div style="display:flex;flex-direction:column;gap:24px;padding-bottom:4px">
       <div class="vblock"><span class="m">Why</span><p>${esc(sp.why)}</p></div>
       <div class="vblock soft"><span class="m">${esc(subj.falsLabel || 'What would falsify this reading')}</span><p>${esc(sp.fals)}</p></div>

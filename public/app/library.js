@@ -48,7 +48,7 @@ function renderLibrary(){
         <span class="sigil">${s.keyNo}</span>
         <span class="grow">
           <span class="t">${esc(s.name)}</span>
-          <span class="s">${s.course.length} units &middot; ${s.quickDrills.length} drills &middot; ${s.outcomes.length} tools</span>
+          <span class="s">${s.course.length} units &middot; ${s.quickDrills.length} drills &middot; ${s.outcomes.length} names</span>
         </span>
         <span class="end">${progressMark(s)}</span>
         ${icon('chevron')}
