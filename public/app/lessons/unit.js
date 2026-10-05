@@ -27,7 +27,10 @@ function moveTo(i){
   saveUnitPlace();
   paintUnit();
   window.scrollTo(0, 0);
+  focusScreenHead();
 }
+// a new screen takes focus on its heading, so a keyboard or screen-reader learner starts reading at the top
+const focusScreenHead = () => focusOn('.eyebrow-row h1, .done-screen h2, .done-screen .stopline, #host .lesson, #host .readhead');
 function renderUnit(subj){
   if(!UNIT_RUN || UNIT_RUN.subj.id !== subj.id) return go('subject');
   paintUnit();
@@ -59,7 +62,7 @@ function goBack(run){
   const screen = run.flow[run.i];
   if(screen.type === 'card'){
     const cs = run.cards[screen.id], card = run.v.card(screen.id);
-    if(card.kind === 'worked' && cs && cs.ui.step > 0){ cs.ui.step--; paintUnit(); window.scrollTo(0, 0); return; }
+    if(card.kind === 'worked' && cs && cs.ui.step > 0){ cs.ui.step--; paintUnit(); window.scrollTo(0, 0); focusScreenHead(); return; }
   }
   const j = previousIndex(run, run.i), before = run.flow[j];
   if(before.type === 'card' && run.v.card(before.id).kind === 'worked') cardState(run, run.v.card(before.id)).ui.step = run.v.card(before.id).steps.length;
@@ -87,6 +90,8 @@ function confusedHtml(run, cardId){
     ? `<p class="hintline">${esc(SAY.confusedNoted)}</p>`
     : `<button class="linkish" data-confused>${esc(SAY.confused)}</button>`}</div>`;
 }
+// A learner who already knows the unit can open its drill without reading the cards, which stay open (lesson standard E11, E17)
+const toDrillHtml = card => card.kind === 'orient' ? `<p class="hintline"><button class="linkish" data-to-drill>${esc(SAY.toDrill)}</button></p>` : '';
 function paintCard(run, screen){
   const { v, T } = run, card = v.card(screen.id), cs = cardState(run, card);
   const ctx = cardContext(v, T, card.id, cs.ui);
@@ -98,7 +103,7 @@ function paintCard(run, screen){
     <div class="segs thin" style="margin:14px 0 0">${v.cardOrder.map((_, k) => `<i class="${k < no ? 'on' : ''}"></i>`).join('')}</div>
     <div class="eyebrow-row"><span class="m a">${esc(v.title)}</span><h1>${cardHeading(v, T, card)}</h1></div>
     <div class="lesson" id="cardbody">${ask ? askHtml(ask) : cardHtml(ctx, card)}</div>
-    ${confusedHtml(run, card.id)}`,
+    ${toDrillHtml(card)}${confusedHtml(run, card.id)}`,
     unitActions(first ? '' : 'Back', 'Next', awaiting));
   wireCard(run, card, cs, ask);
 }
@@ -107,14 +112,16 @@ function commitAnswer(run, card, cs, picked){
   recordTry(run.subj.id, run.v.unitId, 'commit:' + card.id, run.v.unit.rev,
     { mode: 'commit', context: 'unit', steps: {}, name: null, ok: commitRight(run.v, card, picked) });
   paintUnit();
+  focusOn('.answerline, .feedback');
 }
 function wireCard(run, card, cs, ask){
   const { subj, v } = run, root = screenEl();
   on('#back', () => goBack(run));
   on('#fwd', () => {
-    if(card.kind === 'worked' && cs.ui.step < card.steps.length){ cs.ui.step++; paintUnit(); window.scrollTo(0, 0); return; }
+    if(card.kind === 'worked' && cs.ui.step < card.steps.length){ cs.ui.step++; paintUnit(); window.scrollTo(0, 0); focusScreenHead(); return; }
     moveTo(run.i + 1);
   });
+  on('[data-to-drill]', () => moveTo(run.flow.findIndex(s => s.type === 'drill')));
   on('[data-confused]', () => {
     logEvent('confused', { subject: subj.id, unit: v.unitId, rev: v.unit.rev, card: card.id });
     run.noted.add(card.id); paintUnit();
@@ -122,7 +129,7 @@ function wireCard(run, card, cs, ask){
   if(ask){
     wireAsk(root, ask, paintUnit, outcome => recordTry(subj.id, v.unitId, ask.item.c.id, v.unit.rev,
       { mode: 'check', context: 'unit', steps: outcome.steps, name: outcome.name, ok: outcome.ok }));
-    on('[data-open-card]', el => openCardSheet(v, el.dataset.openCard), root);
+    on('[data-open-card]', el => openCardSheet(v, el.dataset.openCard, el), root);
     return;
   }
   if(card.kind === 'transfer') return wireTransfer(run, card, cs, root);
@@ -158,8 +165,9 @@ function paintDrill(run, screen){
   if(!run.drillRun) run.drillRun = unitDrillRun(run.subj, run.v, 'unit');
   unitFrame(run, screen, '<div id="host"></div>');
   mountDrillRun(document.getElementById('host'), run.drillRun, () => {
+    // coming back to a finished drill passes straight through it: the set is logged once
+    if(!run.drillFinished) logEvent('set', { subject: run.subj.id, unit: run.v.unitId, rev: run.v.unit.rev });
     run.drillFinished = true;
-    logEvent('set', { subject: run.subj.id, unit: run.v.unitId, rev: run.v.unit.rev });
     moveTo(run.i + 1);
   });
 }

@@ -227,6 +227,8 @@ table.k td b{color:var(--text)}
 .mark{display:flex;align-items:center;gap:7px;padding:8px 12px;border:1px solid var(--green);
   font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--green)}
 .mark.no{border-color:var(--coral);color:var(--coral)}
+.mark .verd{flex:none;white-space:nowrap}
+.mark .ans{font-size:14px;letter-spacing:0;text-transform:none;line-height:1.4}
 .vblock{display:flex;flex-direction:column;gap:9px}
 .vblock p{margin:0;font-family:var(--serif);font-size:16.5px;line-height:1.6;color:var(--body);text-wrap:pretty}
 .vblock.soft p{color:var(--bodydim)}
@@ -288,7 +290,7 @@ mark.cue{background:color-mix(in srgb,var(--accent) 26%,transparent);color:var(-
 /* the key's own wording: sans face, normal weight */
 .kw{font-family:var(--sans);font-weight:400;font-style:normal;color:var(--text)}
 .lesson b.here{font-family:var(--sans);font-weight:400;padding:1px 6px;background:var(--divider)}
-.lsec{margin:24px 0 0}
+.lsec{margin:24px 0 16px}
 .lsec>*:last-child{margin-bottom:0}
 .m.lab{display:block;margin-bottom:8px}
 .lesson .m{font-family:var(--mono)}
@@ -318,6 +320,10 @@ span.tap:hover{background:color-mix(in srgb,var(--accent) 14%,transparent)}
 .opts.two .opt{align-items:center;text-align:center}
 .chips.wrap{flex-wrap:wrap;overflow:visible}
 .stepdone.static{cursor:default}
+.stepdone.wrong .tick{background:var(--coral)}
+.lesson+.readout{margin-top:16px}
+.shownroute ul.choices{margin:12px 0 0;padding-left:20px;font-family:var(--sans);font-size:15px;line-height:1.45;color:var(--bodydim)}
+.shownroute ul.choices li{margin-bottom:8px}
 .noteinput{width:100%;height:48px;padding:0 14px;background:var(--field);border:1px solid var(--border);
   color:var(--text);font-size:15px}
 .noteinput:focus{border-color:var(--accent);outline:none}

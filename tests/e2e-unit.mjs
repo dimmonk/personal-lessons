@@ -7,6 +7,7 @@ const SHOT_DIR = process.env.FC_SHOTS || null;
 const SUBJECT = 'psychology', UNIT_ID = 'u2';
 const DRAFT = 'Draft: not yet read by a newcomer';
 const norm = s => s.replace(/\s+/g, ' ').trim();
+const FROZEN = { 'pl:psychology:stats:u2': '{"n":3,"ok":2}', 'pl:psychology:stats:det': '{"n":1,"label":1,"frame":0}', 'pl:mixed': '{"n":4,"ok":3}' };
 
 async function shot(page, name) {
   if (!SHOT_DIR) return;
@@ -230,6 +231,9 @@ export async function testRebuiltUnit(env) {
   const { context, page } = await freshPage(390);
   await page.addInitScript(() => { window.__timers = []; for (const n of ['setTimeout', 'setInterval']) { const o = window[n]; window[n] = (...a) => { window.__timers.push(n); return o(...a); }; } });
   await page.reload();
+  // X5: the old counters are frozen. They are read, never written, so seed them and look at them after the session.
+  await page.evaluate(seed => Object.entries(seed).forEach(([k, v]) => localStorage.setItem(k, v)), FROZEN);
+  await page.reload();
   await env.openSubject(page, SUBJECT);
   await shot(page, 'subject-before');
   await env.clickVisible(page, `#screen [data-u="1"]`);
@@ -276,6 +280,12 @@ export async function testRebuiltUnit(env) {
   check(await page.evaluate(() => rebuiltUnitDone('psychology', 'u2')), 'Unit Two is not done at standard 1');
   await page.click('[data-v="subject"]');
   await shot(page, 'subject-after');
+  // X5, as far as a session through a unit goes: only the keys of lesson standard E8, and the frozen counters untouched
+  const stored = await page.evaluate(() => Object.fromEntries(Object.keys(localStorage).map(k => [k, localStorage.getItem(k)])));
+  const E8_KEYS = /^pl:(app|recent|mixed|log)$|^pl:[a-z]+:(items|seen|notes|stats:[a-z0-9]+)$/;
+  check(Object.keys(stored).every(k => E8_KEYS.test(k)), `storage holds keys outside the list of lesson standard E8: ${Object.keys(stored).filter(k => !E8_KEYS.test(k)).join(', ')}`);
+  check(Object.entries(FROZEN).every(([k, v]) => stored[k] === v), 'a frozen counter (pl:<subject>:stats:*, pl:mixed) was written during a unit session');
+  check(!('pl:psychology:course' in stored), 'the old pl:psychology:course key was written');
   const after = await unitText(page);
   check(/1 of 6 units/.test(after), `after Unit Two the subject says "${after.match(/\d of \d units/)}"`);
   await context.close();

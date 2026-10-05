@@ -75,12 +75,12 @@ CARD.orient = (ctx, card) => {
   });
   out.push(lessonSection('The part of the key this unit teaches', `<p>${SAY.preview(v.taught.length)}</p>`
     + branch.map(s => `<p class="mapq">${esc(s.q)}</p>` + lessonList(s.options.map(opt => {
-        const leads = v.isGate ? [opt.plain] : opt.keeps.map(id => v.thing(id).plain);
+        const leads = v.isGate ? [opt.plain] : opt.keeps.filter(id => v.taught.includes(id)).map(id => v.thing(id).plain);
         return `<span class="kw">${esc(opt.n)}</span>${leads.length ? ' → ' + esc(leads.join(' · ')) : ''}`;
       }))).join('')));
   out.push(lessonSection(`The ${numWord(v.taught.length)} things, and the name each will get`,
     lessonList(v.taught.map(id => `${esc(cap(v.thing(id).plain))}: <span class="kw">${esc(v.nameOf(id))}</span>`))));
-  out.push(`<p>The unit has ${numWord(v.unit.parts.length)} parts, and you can stop after any of them.</p>`
+  out.push(`<p>The unit has ${numWord(v.unit.parts.length)} part${v.unit.parts.length === 1 ? '' : 's'}, and you can stop after any of them.</p>`
     + `<ol>${v.unit.parts.map(p => `<li>${esc(p.title)}</li>`).join('')}</ol>`
     + (card.add ? T.PP(card.add) : '') + `<p>${SAY.howTaught} ${SAY.stakes}</p>`);
   return out.join('');
@@ -197,8 +197,11 @@ CARD.worked = (ctx, card) => {
     const opt = v.option(st.step, c.route[st.step][0]);
     return v.isGate ? live.filter(id => id === opt.id) : live.filter(id => opt.keeps.includes(id) || !v.taught.includes(id));
   }, v.taught);
+  const standing = live => (live.length === v.taught.length ? `Still possible: all ${numWord(v.taught.length)} names this unit teaches.` : `Still possible: ${T.names(live)}.`)
+    + (live.length < v.taught.length ? ` Ruled out: ${T.names(v.taught.filter(id => !live.includes(id)))}.` : '');
   const readout = live => `<div class="readout"><div class="readhead"><span class="m s">Still possible</span><span class="m s">${live.length} of ${v.taught.length}</span></div>`
-    + `<ul class="cands">${v.taught.map(id => `<li class="cand ${live.includes(id) ? '' : 'out'}">${esc(v.nameOf(id))}</li>`).join('')}</ul></div>`;
+    + `<ul class="cands">${v.taught.map(id => `<li class="cand ${live.includes(id) ? '' : 'out'}">${esc(v.nameOf(id))}</li>`).join('')}</ul>`
+    + `<p class="forline">${standing(live)}</p></div>`;
   const doneRow = (st, i) => `<div class="stepdone static"><span class="tick">${icon('check', 12)}</span>`
     + `<span class="grow"><span class="m s">Question ${i + 1} of ${n} · ${esc(v.step(st.step).q)}</span><span class="v">${esc(v.option(st.step, c.route[st.step][0]).n)}</span></span></div>`;
   const head = `${ui.step === 0 ? `<p>${T.t(card.link)}</p>` : ''}${T.caseName(c)}`;
@@ -231,7 +234,7 @@ CARD.recap = (ctx, card) => {
   const portraitOf = id => v.cardOrder.map(v.card).find(k => k.kind === 'portrait' && (k.outcome || k.family) === id);
   return `<p>${T.t(card.link)}</p>`
     + lessonSection('The key for this unit, in its own words', v.unitSteps.map(s => `<p class="mapq">${esc(s.q)}</p>`
-        + lessonList(s.options.map(opt => `<span class="kw">${esc(opt.n)}</span>${v.isGate ? '' : ' → ' + esc(opt.keeps.map(v.nameOf).join(' · '))}`))).join(''))
+        + lessonList(s.options.map(opt => `<span class="kw">${esc(opt.n)}</span>${v.isGate ? '' : ' → ' + esc(opt.keeps.filter(id => v.taught.includes(id)).map(v.nameOf).join(' · '))}`))).join(''))
     + lessonSection(`For each name: ${lowerFirst(SAY.pointTo)}, and ${lowerFirst(SAY.ask)}`,
         lessonList(v.taught.map(id => `${T.o(id)}: ${esc(v.thing(id).needs)}.`
           + (portraitOf(id) ? `<ul><li>Ask: ${T.P(portraitOf(id).ask).join(' ')}</li></ul>` : ''))))
@@ -265,6 +268,7 @@ function cardHeading(v, T, card){
   if(card.kind === 'again' && !card.h) return esc(SAY.againHeading(v.nameOf(id)));
   if(card.kind === 'portrait' && !card.h) return esc(SAY.portraitHeading(v.nameOf(id)));
   if(card.kind === 'lookalike' && !card.h) return esc(SAY.lookalikeHeading(...v.ledger(card.ledger).pair.map(v.nameOf)));
+  if(card.h == null) lessonFail(`card ${card.id} has no heading`);
   return T.t(card.h);
 }
 const COMMIT_KINDS = ['again', 'lookalike', 'exception'];

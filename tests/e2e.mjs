@@ -2,6 +2,7 @@
 import { chromium } from 'playwright';
 import { startServer } from './static-server.mjs';
 import { testRebuiltUnit, testUnitAt360, testDraftAndOldUnits, testMigration } from './e2e-unit.mjs';
+import { testLessonEngineReview } from './e2e-review.mjs';
 
 const WIDTHS = [360, 390, 768, 1200, 1600];
 const FONT_FAMILIES = ['Bricolage Grotesque', 'Literata', 'JetBrains Mono'];
@@ -227,6 +228,7 @@ try {
   await testUnitAt360(unitEnv);
   await testDraftAndOldUnits(unitEnv);
   await testMigration(unitEnv);
+  await testLessonEngineReview(unitEnv);
   await testPwa();
 } catch (err) {
   failures.push(`crashed: ${err.stack || err}`);

@@ -42,7 +42,8 @@ function answerMiss(ask, c, code, chosenId){
   const tie = (c.also || []).includes(chosenId) && v.tieBreak(code, chosenId, right.id);
   if(tie && tie.loser === chosenId)
     return `You chose ${T.kw(chosen.n)}. This case does show that. It also shows ${esc(tie.say)}, and when a case shows both, the key’s answer is ${T.kw(right.n)}.`;
-  if(c.not && v.isOutcome(target) && chosen.keeps.length === 1 && chosen.keeps[0] === c.not.outcome)
+  // the nearest wrong name's reason is the line for the near answer, unless a name is asked: then "Why not" already prints it
+  if(c.not && !ask.item.askName && v.isOutcome(target) && chosen.keeps.length === 1 && chosen.keeps[0] === c.not.outcome)
     return T.t(paras(c.not.why).join(' '), c);
   return `You chose ${T.kw(chosen.n)}. Give that answer when ${esc(chosen.when)}. This case shows something else: ${esc(right.when)}.`;
 }
@@ -62,7 +63,11 @@ function taughtOnLine(ask, what){
   return hit.cardId ? `<p class="taughton">Taught on: <button class="linkish" data-open-card="${esc(hit.cardId)}">${hit.heading}</button></p>`
                     : `<p class="taughton">${esc(hit.text)}</p>`;
 }
-const answerHead = (ok, html) => `<div class="marks"><span class="mark ${ok ? '' : 'no'}">${icon(ok ? 'check' : 'cross', 13)}${ok ? 'Right' : 'The answer is'}: ${html}</span></div>`;
+// the verdict word is the app's, set in the mark's own type; the key's words after it keep the key's voice (E16)
+const keyWords = html => `<span class="kw ans">${html}</span>`;
+const verdictMark = (ok, label, wordsHtml, tail = '') =>
+  `<span class="mark ${ok ? '' : 'no'}">${icon(ok ? 'check' : 'cross', 13)}<span class="verd">${label} </span>${keyWords(wordsHtml)}${tail}</span>`;
+const answerHead = (ok, html) => `<div class="marks">${verdictMark(ok, ok ? 'Right:' : 'The answer is:', html)}</div>`;
 
 /* ---------- a case: some questions shown, some asked, then perhaps the name ---------- */
 function caseResult(ask){
@@ -77,9 +82,9 @@ function caseFeedback(ask){
   const out = [];
   if(item.askName){
     const routed = item.asked.length > 0;
-    out.push(`<div class="marks"><span class="mark ${res.nameOk ? '' : 'no'}">${icon(res.nameOk ? 'check' : 'cross', 13)}${res.nameOk ? 'Right' : 'The answer is'}: ${esc(v.nameOf(target))}</span>`
+    out.push(`<div class="marks">${verdictMark(res.nameOk, res.nameOk ? 'Right:' : 'The answer is:', esc(v.nameOf(target)))}`
       + (routed ? `<span class="mark ${res.routeOk ? '' : 'no'}">${icon(res.routeOk ? 'check' : 'cross', 13)}Route ${res.routeOk ? 'right' : 'missed'}</span>` : '') + '</div>');
-    if(res.nameOk && !res.routeOk) out.push(`<div class="warn"><strong>${SAY.rightNameWrongRoute}.</strong> A right name reached by a wrong answer on the way counts as a miss.</div>`);
+    if(res.nameOk && !res.routeOk) out.push(`<div class="warn"><span class="verdictline">${SAY.rightNameWrongRoute}.</span> A right name reached by a wrong answer on the way counts as a miss.</div>`);
   } else {
     const code = item.asked[0];
     out.push(answerHead(res.ok, esc(rightAnswers(c, code).map(id => v.option(code, id).n).join(' or '))));
@@ -128,17 +133,21 @@ function caseHtml(ask){
       <div class="stephead"><span class="num on">${i + 1}</span><span class="m a">${total > 1 ? `Question ${i + 1} of ${total}` : (item.prompt || SAY.keyAsks)}</span></div>
       <p class="stem">${esc(s.q)}${item.amongNote ? ` <span class="amongnote">${esc(item.amongNote)}</span>` : ''}</p>
       <div class="opts" data-step="${esc(code)}">${ids.map(id => `<button class="opt" data-o="${esc(id)}">${esc(v.option(code, id).n)}</button>`).join('')}</div></div>`;
-    if(chosen) return `<${state.done ? 'div' : 'button'} class="stepdone ${state.done ? 'static' : ''}" ${state.done ? '' : `data-edit="${esc(code)}"`}>
-      <span class="tick">${icon('check', 12)}</span>
+    if(chosen){
+      const wrong = state.done && !stepRight(c, code, chosen);
+      return `<${state.done ? 'div' : 'button'} class="stepdone ${state.done ? 'static' : ''} ${wrong ? 'wrong' : ''}" ${state.done ? '' : `data-edit="${esc(code)}"`}>
+      <span class="tick">${icon(wrong ? 'cross' : 'check', 12)}</span>
       <span class="grow"><span class="m s">${esc(s.q)}</span><span class="v">${esc(v.option(code, chosen).n)}</span></span>
       ${state.done ? '' : '<span class="m s">Change</span>'}</${state.done ? 'div' : 'button'}>`;
+    }
     return `<div class="steplock"><span class="num off">${i + 1}</span><span class="grow"><span class="m s">${esc(s.q)}</span><span class="v">Answer the question above</span></span>
       <span style="color:var(--disabled);display:flex">${icon('lock', 15)}</span></div>`;
   });
   if(item.askName){
     const ready = openIdx === -1 && !state.done;
+    const nameWrong = state.done && state.name !== caseTarget(v, c);
     rows.push(state.done
-      ? `<div class="stepdone static"><span class="tick">${icon('check', 12)}</span><span class="grow"><span class="m s">Name it</span><span class="v">${esc(v.nameOf(state.name))}</span></span></div>`
+      ? `<div class="stepdone static ${nameWrong ? 'wrong' : ''}"><span class="tick">${icon(nameWrong ? 'cross' : 'check', 12)}</span><span class="grow"><span class="m s">Name it</span><span class="v">${esc(v.nameOf(state.name))}</span></span></div>`
       : ready ? `<div class="stepopen"><div class="stephead"><span class="num on">${total}</span><span class="m a">${item.asked.length ? 'Name it' : 'Which name goes with these answers?'}</span></div>
           <div class="opts" id="nameOpts">${item.names.map(id => `<button class="opt" data-n="${esc(id)}">${esc(v.nameOf(id))}</button>`).join('')}</div></div>`
       : `<div class="steplock"><span class="num off">${total}</span><span class="grow"><span class="m s">Name it</span><span class="v">Answer every question first</span></span>
@@ -157,7 +166,8 @@ function tapHtml(ask){
   const ok = state.picked === tap.right, miss = !ok && c.segments[state.picked].note;
   const rest = (miss ? `<div class="vblock"><span class="m">Your answer</span><p>${T.t(paras(miss).join(' '), c)}</p></div>` : '')
     + taughtOnLine(ask, { name: caseTarget(ask.v, c) });
-  return tap.html + `<div class="feedback">${answerHead(ok, '“' + esc(c.segments[tap.right].text) + '”')}
+  const words = '“' + esc(c.segments[tap.right].text) + '”';
+  return tap.html + `<div class="feedback">${ok ? answerHead(true, words) : `<div class="marks">${verdictMark(false, 'The words are', words, '.')}</div>`}
     <div class="vblock"><span class="m">Why</span><p>${stepReason(ask, c, item.step)}${item.joined ? ' ' + item.joined : ''}</p></div>${rest}</div>`;
 }
 const tapRight = ask => ask.item.c.segments[ask.state.picked].text.includes(ask.item.answer);
@@ -207,7 +217,7 @@ function claimParts(ask, c){
     answer: c.ask.answer
   };
 }
-const claimQuote = (T, c) => `<blockquote class="passage plain">${esc(c.text)}</blockquote>${c.context ? T.PP(c.context) : ''}`;
+const claimQuote = (T, c) => `<blockquote class="passage">${esc(c.text)}</blockquote>${c.context ? T.PP(c.context) : ''}`;
 function claimClosing(T, c){
   return `<div class="vblock"><span class="m">The fault</span><p>${T.t(paras(c.fault).join(' '))}</p></div>
     <div class="vblock soft"><span class="m">The claim, put right</span><p>${T.t(paras(c.corrected).join(' '))}</p></div>`;
@@ -215,8 +225,9 @@ function claimClosing(T, c){
 // a claim worked for the learner: nothing is asked of it (lesson standard E6)
 function claimDemoHtml(ask, c){
   const parts = claimParts(ask, c), right = parts.choices.find(x => x.id === parts.answer);
-  return claimQuote(ask.T, c) + `<div class="stepopen prompt"><p class="stem">${parts.question}</p></div>
-    <div class="feedback"><div class="marks"><span class="mark">${icon('check', 13)}The answer: ${right.html}</span></div>${claimClosing(ask.T, c)}</div>`;
+  return claimQuote(ask.T, c) + `<div class="shownroute"><p class="stem">${parts.question}</p>
+      <ul class="choices">${parts.choices.map(x => `<li>${x.html}</li>`).join('')}</ul></div>
+    <div class="feedback"><div class="marks">${verdictMark(true, 'The answer:', right.html)}</div>${claimClosing(ask.T, c)}</div>`;
 }
 function claimHtml(ask){
   const { v, T, item, state } = ask, c = item.c, parts = claimParts(ask, c);
@@ -252,19 +263,20 @@ function askOutcome(ask){
 // Wires the item's controls. onChange re-renders; onDone is called once, the moment the item is answered.
 function wireAsk(root, ask, onChange, onDone){
   const { item, state } = ask;
-  const finish = () => { state.done = true; onDone(askOutcome(ask)); onChange(); };
+  const finish = () => { state.done = true; onDone(askOutcome(ask)); onChange(); focusOn('.feedback, .answerline'); };
+  const next = () => { onChange(); focusOn('.stepopen'); };
   on('[data-step] .opt', el => {
     const code = el.parentElement.dataset.step;
     const idx = item.asked.indexOf(code);
     const kept = Object.fromEntries(item.asked.slice(0, idx).map(k => [k, state.answers[k]]));
     state.answers = { ...kept, [code]: el.dataset.o };
     state.name = null;
-    if(!item.askName && item.asked.every(k => state.answers[k])) finish(); else onChange();
+    if(!item.askName && item.asked.every(k => state.answers[k])) finish(); else next();
   }, root);
   on('[data-edit]', el => {
     const idx = item.asked.indexOf(el.dataset.edit);
     state.answers = Object.fromEntries(item.asked.slice(0, idx).map(k => [k, state.answers[k]]));
-    state.name = null; onChange();
+    state.name = null; next();
   }, root);
   on('#nameOpts .opt', el => { state.name = el.dataset.n; finish(); }, root);
   on('[data-pick]', el => {

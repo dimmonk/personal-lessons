@@ -328,8 +328,7 @@ const PSYCH_COURSE = [
 ];
 
 const PSYCHOLOGY = {
-  id:'psychology', name:'Psychology', rev:1,
-  blurb:'Tell a bad moment from a stable pattern, and a tactic from a personality, before reaching for a label.',
+  id:'psychology',
   topics:'Self-justification · Narcissism spectrum · Manipulation tactics',
   intro:'Run each scenario through the diagnostic questions before naming it. A correct label reached by the wrong route is scored as a miss.',
   outcomes: PSYCH_OUTCOMES,

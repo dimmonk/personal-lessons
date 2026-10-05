@@ -40,8 +40,10 @@ function sheetBody(v, T, card){
     `<section class="sheetstep">${cardHtml(ctx(answeredUi(T, v, card, s)), card)}</section>`).join('');
 }
 
-function openCardSheet(v, cardId){
-  const T = lessonText(v), card = v.card(cardId);
+// A modal: the page behind it is inert, Tab stays inside it, Escape and Close shut it, and focus goes back to the link
+// that opened it. `opener` is that link.
+function openCardSheet(v, cardId, opener){
+  const T = lessonText(v), card = v.card(cardId), app = document.querySelector('.app');
   const sheet = document.createElement('div');
   sheet.className = 'sheet';
   sheet.setAttribute('role', 'dialog');
@@ -52,9 +54,27 @@ function openCardSheet(v, cardId){
       <div class="lesson">${sheetBody(v, T, card)}</div>
       <div class="actbar"><button class="btn neutral" data-close-sheet>Close</button></div>
     </div>`;
-  const close = () => { sheet.remove(); document.body.style.overflow = ''; };
+  const keep = e => {
+    if(e.key === 'Escape'){ e.preventDefault(); close(); }
+    if(e.key === 'Tab'){
+      // the only controls inside are the ones the sheet owns: keep focus on them
+      const own = [...sheet.querySelectorAll('button, [href], input, [tabindex]:not([tabindex="-1"])')];
+      const at = own.indexOf(document.activeElement), to = e.shiftKey ? at - 1 : at + 1;
+      e.preventDefault();
+      own[(to + own.length) % own.length].focus();
+    }
+  };
+  function close(){
+    document.removeEventListener('keydown', keep);
+    sheet.remove();
+    app.inert = false;
+    document.body.style.overflow = '';
+    if(opener && opener.isConnected) opener.focus();
+  }
+  app.inert = true;
   document.body.style.overflow = 'hidden';
   document.body.appendChild(sheet);
+  document.addEventListener('keydown', keep);
   on('[data-close-sheet]', close, sheet);
   sheet.querySelector('[data-close-sheet]').focus();
 }

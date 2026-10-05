@@ -6,9 +6,17 @@ const paras = text => text == null ? [] : Array.isArray(text) ? text : [text];
 const cuesOf = (c, step) => c.cues && c.cues[step] ? paras(c.cues[step]) : [];
 const TOKEN = /\{(o|plain|needs|q|a|when|t|means|test|cue):([^}]+)\}/g;
 const lowerFirst = s => s.charAt(0).toLowerCase() + s.slice(1);
-const joinWords = list => list.length < 2 ? list.join('') : list.slice(0, -1).join(', ') + ' and ' + list[list.length - 1];
+const joinWords = (list, last = 'and') => list.length < 2 ? list.join('') : list.slice(0, -1).join(', ') + ` ${last} ` + list[list.length - 1];
 const byId = list => Object.fromEntries(list.map(x => [x.id, x]));
 function lessonFail(message){ throw new Error('Lesson data: ' + message); }
+// A screen is repainted whole, so focus would fall to <body>. This puts it on the region the learner should
+// hear next: a new card's heading, the feedback to an answer, the question now open.
+function focusOn(selector){
+  const el = document.querySelector(selector);
+  if(!el) return;
+  el.setAttribute('tabindex', '-1');
+  el.focus({ preventScroll: true });
+}
 // "Unit One": the registered unit's tag, else its place in the subject's course (an earlier unit not yet rebuilt)
 function unitLabel(data, unitId){
   if(data.units[unitId]) return 'Unit ' + data.units[unitId].tag;
@@ -26,7 +34,7 @@ const SAY = {
   oneCase: 'This comes from one case so far. The next card tests it on a second case.',
   keyAsks: 'The key asks',
   keyAnswer: 'Its answer for a case like this one, in the key’s fixed words',
-  aka: (akas, nameHtml) => `You may also hear this called ${joinWords(akas.map(x => '“' + esc(x) + '”')).replace(/ and /, ' or ')}. ${akas.length > 1 ? 'Those words mean' : 'That means'} the same thing here, and from now on this unit uses one name: ${nameHtml}.`,
+  aka: (akas, nameHtml) => `You may also hear this called ${joinWords(akas.map(x => '“' + esc(x) + '”'), 'or')}. ${akas.length > 1 ? 'Those words mean' : 'That means'} the same thing here, and from now on this unit uses one name: ${nameHtml}.`,
   againHeading: name => `${name}: the same thing in a different story`,
   portraitHeading: name => `${name}: what it is like`,
   lookalikeHeading: (x, y) => `${x} or ${y}: telling them apart`,
@@ -45,6 +53,7 @@ const SAY = {
   draft: 'Draft: not yet read by a newcomer',
   endOfPart: (n, next) => `End of part ${n}. You can stop here; your place is kept. Next: part ${n + 1}, ${next}.`,
   endOfUnit: tag => `End of Unit ${tag}. Every name comes back on later days with a new case: what you missed first, in a day or two, and the rest a little later.`,
+  toDrill: 'Already know this unit? Go straight to the drill.',
   confused: 'This card confused me',
   confusedNoted: 'Noted, with this unit’s revision. It stays on this device.',
   answerToGoOn: 'Answer above to go on',

@@ -113,39 +113,50 @@ const runCounts = run => ({
   done: run.stages.slice(0, run.si).reduce((n, s) => n + s.queue.length, 0) + run.qi
 });
 
-function mountDrillRun(host, run, onEnd){
-  const stage = run.stages[run.si];
-  if(!run.started && run.intro){
-    host.innerHTML = `<div class="lesson drillintro"><p>${esc(run.intro)}</p>${run.add ? lessonText(run.v).PP(run.add) : ''}</div>
-      <div class="actbar"><button class="btn" id="start">Start${icon('arrow')}</button></div>`;
-    on('#start', () => { run.started = true; mountDrillRun(host, run, onEnd); window.scrollTo(0, 0); }, host);
-    return;
+// Moves the drill on: shows what is next, scrolls to the top and puts focus where the learner reads from.
+function showNext(host, run, onEnd, focus){
+  mountDrillRun(host, run, onEnd);
+  window.scrollTo(0, 0);
+  focusOn(focus);
+}
+function paintDrillIntro(host, run, onEnd){
+  host.innerHTML = `<div class="lesson drillintro"><p>${esc(run.intro)}</p>${run.add ? lessonText(run.v).PP(run.add) : ''}</div>
+    <div class="actbar"><button class="btn" id="start">Start${icon('arrow')}</button></div>`;
+  on('#start', () => { run.started = true; showNext(host, run, onEnd, '#host .readhead, #host .lesson'); }, host);
+}
+function paintStageIntro(host, run, stage, onEnd){
+  const ask = { v: run.v, T: lessonText(run.v), ledgerRead: new Set(run.v.unit.ledger.map(l => l.id)) };
+  host.innerHTML = `<div class="readhead" style="padding:16px 0"><span class="m">${run.stages.length > 1 ? `Stage ${run.si + 1} of ${run.stages.length}` : 'One stage'}</span></div>
+    <div class="lesson"><p>${esc(stage.instruction)}</p></div>
+    ${stage.demo ? lessonSection('A claim worked for you. Nothing is asked.', claimDemoHtml(ask, run.v.caseById(stage.demo))) : ''}
+    <div class="actbar"><button class="btn" id="start">Go on${icon('arrow')}</button></div>`;
+  on('#start', () => { stage.shownIntro = true; showNext(host, run, onEnd, '#host .readhead'); }, host);
+}
+// Builds the item the learner is on. False when there is nothing to draw (an earlier unit with no case left).
+function beginItem(run, stage){
+  const built = runItem(run, stage.queue[run.qi]);
+  if(!built) return false;
+  // "first" is per stage and case: a case asked again after a miss, or in a later stage, is not a first try
+  const itemKeyId = itemKey(built.v.unitId, built.id), metKey = `${run.si}/${itemKeyId}`;
+  run.current = { ...built, state: freshAsk(), first: !run.met.includes(metKey), key: itemKeyId };
+  run.met = [...run.met, metKey];
+  run.current.item.seenBefore = seenBefore(built.v.subjectId, built.v.unitId, built.id);
+  run.asked = [...run.asked, built.id];
+  return true;
+}
+// An answer: recorded in the practice record and in this run's tries; a miss goes back into the queue.
+function recordAnswer(run, stage, cur, outcome){
+  const v = cur.v;
+  recordTry(v.subjectId, v.unitId, cur.id, v.unit.rev, { mode: cur.item.mode, context: run.context, steps: outcome.steps, name: outcome.name, ok: outcome.ok });
+  run.tries = [...run.tries, { stage: stage.ask, mode: cur.item.mode, ok: outcome.ok, first: cur.first, returned: !!stage.queue[run.qi].returned,
+                               target: cur.item.c ? caseTarget(v, cur.item.c) : null, chosen: outcome.name, unitId: v.unitId }];
+  // a missed item is asked again, at least three items later, until it has been answered right once
+  if(!outcome.ok){
+    const at = Math.min(stage.queue.length, run.qi + 1 + REQUEUE_GAP);
+    stage.queue = [...stage.queue.slice(0, at), stage.queue[run.qi], ...stage.queue.slice(at)];
   }
-  if(!stage) return onEnd(run);
-  if(run.qi >= stage.queue.length){
-    run.si++; run.qi = 0; run.current = null;
-    return mountDrillRun(host, run, onEnd);
-  }
-  if(!stage.shownIntro){
-    const T = lessonText(run.v);
-    const ask = { v: run.v, T, ledgerRead: new Set(run.v.unit.ledger.map(l => l.id)) };
-    host.innerHTML = `<div class="readhead" style="padding:16px 0"><span class="m">${run.stages.length > 1 ? `Stage ${run.si + 1} of ${run.stages.length}` : 'One stage'}</span></div>
-      <div class="lesson"><p>${esc(stage.instruction)}</p></div>
-      ${stage.demo ? lessonSection('A claim worked for you. Nothing is asked.', claimDemoHtml(ask, run.v.caseById(stage.demo))) : ''}
-      <div class="actbar"><button class="btn" id="start">Go on${icon('arrow')}</button></div>`;
-    on('#start', () => { stage.shownIntro = true; mountDrillRun(host, run, onEnd); window.scrollTo(0, 0); }, host);
-    return;
-  }
-  if(!run.current){
-    const built = runItem(run, stage.queue[run.qi]);
-    if(!built){ run.qi++; return mountDrillRun(host, run, onEnd); }      // nothing to draw from an earlier unit yet
-    // "first" is per stage and case: a case asked again after a miss, or in a later stage, is not a first try
-    const itemKeyId = itemKey(built.v.unitId, built.id), metKey = `${run.si}/${itemKeyId}`;
-    run.current = { ...built, state: freshAsk(), first: !run.met.includes(metKey), key: itemKeyId };
-    run.met = [...run.met, metKey];
-    run.current.item.seenBefore = seenBefore(built.v.subjectId, built.v.unitId, built.id);
-    run.asked = [...run.asked, built.id];
-  }
+}
+function paintItem(host, run, stage, onEnd){
   const cur = run.current, v = cur.v, T = lessonText(v);
   const ask = { v, T, item: cur.item, state: cur.state, ledgerRead: new Set(v.unit.ledger.map(l => l.id)), taughtOn: what => taughtOnCard(v, T, what) };
   const counts = runCounts(run);
@@ -157,22 +168,31 @@ function mountDrillRun(host, run, onEnd){
       <div class="actbar">${cur.state.done
         ? `<button class="btn" id="next">Next${icon('arrow')}</button>`
         : `<button class="btn ghost" id="skip">Skip for now</button>`}</div>`;
-    wireAsk(host, ask, paint, outcome => {
-      const unitRev = v.unit.rev;
-      recordTry(v.subjectId, v.unitId, cur.id, unitRev, { mode: cur.item.mode, context: run.context, steps: outcome.steps, name: outcome.name, ok: outcome.ok });
-      run.tries = [...run.tries, { stage: stage.ask, mode: cur.item.mode, ok: outcome.ok, first: cur.first, returned: !!stage.queue[run.qi].returned,
-                                   target: cur.item.c ? caseTarget(v, cur.item.c) : null, chosen: outcome.name, unitId: v.unitId }];
-      // a missed item is asked again, at least three items later, until it has been answered right once
-      if(!outcome.ok){
-        const at = Math.min(stage.queue.length, run.qi + 1 + REQUEUE_GAP);
-        stage.queue = [...stage.queue.slice(0, at), stage.queue[run.qi], ...stage.queue.slice(at)];
-      }
-    });
-    on('#next', () => { run.qi++; run.current = null; mountDrillRun(host, run, onEnd); window.scrollTo(0, 0); }, host);
-    on('#skip', () => { run.qi++; run.current = null; mountDrillRun(host, run, onEnd); window.scrollTo(0, 0); }, host);
-    on('[data-open-card]', el => openCardSheet(v, el.dataset.openCard), host);
+    wireAsk(host, ask, paint, outcome => recordAnswer(run, stage, cur, outcome));
+    const move = () => {
+      // moving on while the later lines are still behind "Show the reasoning" is logged (lesson standard E5, E8)
+      if(cur.state.done && host.querySelector('[data-show-rest]'))
+        logEvent('left-feedback', { subject: v.subjectId, unit: v.unitId, rev: v.unit.rev, card: cur.id });
+      run.qi++; run.current = null;
+      showNext(host, run, onEnd, '#host .readhead');
+    };
+    on('#next', move, host);
+    on('#skip', move, host);
+    on('[data-open-card]', el => openCardSheet(v, el.dataset.openCard, el), host);
   };
   paint();
+}
+function mountDrillRun(host, run, onEnd){
+  const stage = run.stages[run.si];
+  if(!run.started && run.intro) return paintDrillIntro(host, run, onEnd);
+  if(!stage) return onEnd(run);
+  if(run.qi >= stage.queue.length){
+    run.si++; run.qi = 0; run.current = null;
+    return mountDrillRun(host, run, onEnd);
+  }
+  if(!stage.shownIntro) return paintStageIntro(host, run, stage, onEnd);
+  if(!run.current && !beginItem(run, stage)){ run.qi++; return mountDrillRun(host, run, onEnd); }
+  paintItem(host, run, stage, onEnd);
 }
 
 /* ---------- results: the learner's own numbers (lesson standard E10) ---------- */

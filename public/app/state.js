@@ -26,8 +26,10 @@ function buildSubject(id, index){
   if(!data.legacy) throw new Error(`${id}: no legacy record; a subject with no old content is not wired into the old screens`);
   const unitIds = subjectUnitIds(data);
   const course = unitIds.map((unitId, i) => data.units[unitId] ? rebuiltEntry(id, unitId) : legacyEntry(data, unitIds, unitId, i));
+  // the subject record, where there is one, is the only place the name, revision and blurb are typed
+  const record = data.meta ? { name: data.meta.name, rev: data.meta.rev, blurb: data.meta.blurb } : {};
   return {
-    ...data.legacy, course,
+    ...data.legacy, ...record, course,
     accent: data.legacy.accent || ACCENTS[index % ACCENTS.length],
     keyNo: pad2(index + 1),
     cardCount: course.reduce((a, u) => a + u.cards.length, 0)
