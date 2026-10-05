@@ -1017,3 +1017,4 @@ const SCAMS = {
   </ul>`
 };
 
+FC.legacy('scams', SCAMS);

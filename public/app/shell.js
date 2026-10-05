@@ -16,6 +16,7 @@ function render(){
   switch(APP.view){
     case 'subject':   return renderSubject(subj);
     case 'lesson':    return renderLesson(subj);
+    case 'unit':      return renderUnit(subj);
     case 'unitdrill': return renderUnitDrill(subj);
     case 'unitdone':  return renderUnitDone(subj);
     case 'drill':     return renderDrill(subj);

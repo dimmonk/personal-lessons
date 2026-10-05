@@ -8,7 +8,7 @@ function searchIndex(){
     INDEX.push({g:'Subjects', s, t:s.name, sub:`${s.course.length} units · ${s.quickDrills.length} drills`,
       go:() => openSubject(s.id)});
     s.course.forEach((u,i) => INDEX.push({g:'Units', s, t:u.title,
-      sub:`${s.name} · Unit ${u.tag} · ${u.cards.length} cards`, go:() => openUnit(s, i)}));
+      sub:`${s.name} · Unit ${u.tag}${isRebuilt(u) ? ' · rev ' + u.rev : ''} · ${u.cards.length} cards`, go:() => openUnit(s, i)}));
     s.outcomes.forEach(o => INDEX.push({g:'Tools', s, t:o.n,
       sub:`${s.name} · one of ${s.outcomes.length} outcomes`, go:() => openSubject(s.id)}));
     s.quickDrills.forEach(q => INDEX.push({g:'Drills', s, t:q.title,

@@ -878,3 +878,4 @@ const IDEOLOGY = {
   </ul>`
 };
 
+FC.legacy('ideology', IDEOLOGY);

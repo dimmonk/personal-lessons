@@ -29,7 +29,7 @@ function renderSubject(subj){
         <span class="m">Progress</span>
         <span class="m" style="letter-spacing:.08em">${done} of ${total} units</span>
       </div>
-      <div class="segs">${subj.course.map((_,i) => `<i class="${c.done[i]?'on':''}"></i>`).join('')}</div>
+      <div class="segs">${subj.course.map((_,i) => `<i class="${unitDone(subj,i)?'on':''}"></i>`).join('')}</div>
     </div>
 
     <div class="block"><button class="btn" id="resume">${resumeText}${icon('arrow',17)}</button></div>
@@ -53,21 +53,7 @@ function renderSubject(subj){
 
     <div class="sect"><span class="m">Course</span>
       <span class="m s">${total} units &middot; ${subj.cardCount} cards</span></div>
-    <div class="rows">${subj.course.map((u,i) => {
-      const isDone = c.done[i], isNow = !isDone && i === c.u;
-      const badge = isDone
-        ? `<span class="sigil sm fill">${icon('check',13)}</span>`
-        : `<span class="sigil sm ${isNow?'on':''}">${i+1}</span>`;
-      const meta = isNow && (c.card > 0 || c.phase !== 'read')
-        ? `Card ${c.card+1} of ${u.cards.length} &middot; in progress`
-        : `${u.cards.length} card${u.cards.length===1?'':'s'} &middot; ${drillOf(u, subj)}`;
-      return `<button class="row sm ${isDone?'done':''} ${isNow?'now':''}" data-u="${i}">
-        ${badge}
-        <span class="grow"><span class="t">${esc(u.title)}</span>
-          <span class="s" ${isNow?'style="color:var(--accent)"':''}>${meta}</span></span>
-        ${icon('chevron')}
-      </button>`;
-    }).join('')}</div>
+    <div class="rows">${subj.course.map((u,i) => unitRow(subj, u, i)).join('')}</div>
 
     <div class="sect top"><span class="m">Drills</span>
       <span class="m s">${subj.quickDrills.length} scored &middot; 1 not</span></div>
@@ -116,4 +102,35 @@ function detBlurb(subj){
     : d.steps.length;
   return `${nSteps} question${nSteps===1?'':'s'} narrow ${subj.outcomes.length} names to one. `
        + `${cap(numWord(subj.specimens.length))} unlabelled cases.`;
+}
+
+/* A unit's row on the subject screen: an old unit shows its card count and drill, a rebuilt one its revision,
+   its draft line and its place (lesson standard E15). */
+function unitRow(subj, u, i){
+  const c = st(subj).course, isDone = unitDone(subj, i), isNow = !isDone && i === c.u;
+  const badge = isDone
+    ? `<span class="sigil sm fill">${icon('check',13)}</span>`
+    : `<span class="sigil sm ${isNow?'on':''}">${i+1}</span>`;
+  const lines = isRebuilt(u) ? rebuiltRowLines(subj, u) : [oldRowMeta(subj, u, c, isNow)];
+  return `<button class="row sm ${isDone?'done':''} ${isNow?'now':''}" data-u="${i}">
+    ${badge}
+    <span class="grow"><span class="t">${esc(u.title)}</span>
+      ${lines.map(l => `<span class="s" ${isNow?'style="color:var(--accent)"':''}>${l}</span>`).join('')}</span>
+    ${icon('chevron')}
+  </button>`;
+}
+function oldRowMeta(subj, u, c, isNow){
+  return isNow && (c.card > 0 || c.phase !== 'read')
+    ? `Card ${c.card+1} of ${u.cards.length} &middot; in progress`
+    : `${u.cards.length} card${u.cards.length===1?'':'s'} &middot; ${drillOf(u, subj)}`;
+}
+function rebuiltRowLines(subj, u){
+  const status = rebuiltStatus(subj.id, u.id), at = (seenOf(subj.id)[u.id] || {}).at;
+  const place = status !== 'progress' ? null
+    : (u.cards.includes(at) ? `Card ${u.cards.indexOf(at) + 1} of ${u.cards.length}` : (at === 'drill' ? 'In the drill' : 'In the closing cards'));
+  const first = [`Rev ${u.rev}`,
+    status === 'again' ? 'Rebuilt: start again'
+      : status === 'done' ? 'Done'
+      : place ? `${place} &middot; in progress` : `${u.cards.length} cards &middot; drill`].join(' &middot; ');
+  return [first, ...(u.status === 'draft' ? [esc(SAY.draft)] : [])];
 }

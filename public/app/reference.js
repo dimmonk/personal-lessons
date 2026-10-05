@@ -9,7 +9,7 @@ function renderReference(subj){
       <h1>${units ? 'Reference' : 'Where this key stops'}</h1>
     </div>
     ${units
-      ? subj.course.map(u => `<details class="fg"><summary>Unit ${esc(u.tag)} &mdash; ${esc(u.title)}
+      ? subj.course.filter(u => !isRebuilt(u)).map(u => `<details class="fg"><summary>Unit ${esc(u.tag)} &mdash; ${esc(u.title)}
           <span class="ar" style="display:flex">${icon('chevron',16)}</span></summary>
           <div class="fg-body lesson">${u.cards.map(c => `<h3>${esc(c.h)}</h3>${c.b}`).join('')}</div></details>`).join('')
       : `<div class="lesson">${subj.caveats}</div>`}

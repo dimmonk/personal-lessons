@@ -1,7 +1,7 @@
 /* ===================== SUBJECT: PSYCHOLOGICAL PATTERNS ===================== */
 
 // One vocabulary. The names below, the key's questions and answers, the card text, the drill options and the
-// feedback all use these exact words.
+// feedback all use these exact words. The five names in the reasoning group match key.js (Unit Two).
 const PSYCH_OUTCOMES = [
   {id:'dissonance', n:'Cognitive dissonance reduction',   group:'reasoning'},
   {id:'confbias',   n:'Confirmation bias',                 group:'reasoning'},
@@ -101,30 +101,6 @@ const U1_DRILL = [
    a:'One person’s reasoning', w:'The question that decides it is “What kind of thing is this?” She is reaching a choice of her own and changing her mind, and nobody is being worked on. Reasoning does not mean bad reasoning: the kind is the same whether it is fair or not. Unit Two is where fair and unfair reasoning are told apart.'},
   {q:'At the team lunch, Priyam talked about her promotion for ten minutes. In the team chat afterwards, a colleague wrote: “Classic narcissist.”',
    a:'A lasting way someone is', w:'The question that decides it is “What kind of thing is this?” The telling detail is “Classic narcissist”: a label, and a label is a claim about how a person is across years, places and relationships. The key puts labels here and then checks them. The case itself shows ten minutes at one lunch, so the claim is far bigger than the evidence. Unit Three shows how to check it.'}
-];
-
-const U2_OPTS = ['Cognitive dissonance reduction','Sunk cost fallacy','Confirmation bias','Motivated reasoning','Fair reasoning'];
-const U2_DRILL = [
-  {q:'Amira is sure her new neighbour is rude. She remembers the day he did not wave, and the evening his music was loud. When he brings her parcel round and apologises for the noise, she thinks: “He is only being nice because he wants something.”',
-   a:'Confirmation bias', w:'The question that decides it is “What does the reasoning do?” The evidence for her view (no wave, loud music) is taken as it stands, and the evidence against it (the parcel, the apology) gets a test: “only being nice because he wants something”. The key’s answer is “Tests evidence against their view harder than evidence for it”. It is not Motivated reasoning, because nobody set out on a search with the answer chosen. It is a view she already holds, and evidence that turned up.'},
-  {q:'Sam has a ticket for a band he no longer likes. The venue is a two-hour drive away, and a storm warning has just been issued. “I paid sixty pounds for this,” he says. “I’m going.”',
-   a:'Sunk cost fallacy', w:'The question that decides it is “What does the reasoning do?” A next step is still to be decided (drive or stay home), and the reason he gives is money already spent: “I paid sixty pounds”. The key’s answer is “Gives what is already spent as the reason to keep going”. The sixty pounds are gone whichever way he decides. It is not Cognitive dissonance reduction, because he is not giving a reason why something he did is fine.'},
-  {q:'Tariq was sure the new bus timetable would make his journey to work longer. After two weeks of timing the trip on his phone, the average came out nine minutes shorter. He told his wife: “I was wrong about that. It is better.”',
-   a:'Fair reasoning', w:'The question that decides it is “What does the reasoning start from?” Facts about the matter are in the case (two weeks of journey times), and they decided the view, even against what he expected. The key’s answer is “The facts, whichever way they point”. Then “What does the reasoning do?” gives “Gives every fact the same test, and goes where the facts point”. A changed view is not a fault. It is not Cognitive dissonance reduction, because what came between the old view and the new one was a fact about the matter, not something he did.'},
-  {q:'Jo has told her team for months that deadlines are sacred. On Friday she sends her own report two days late. “It was a holiday week,” she says, “so it doesn’t really count.”',
-   a:'Cognitive dissonance reduction', w:'The question that decides it is “What does the reasoning do?” Something she did (a late report) does not fit what she has told her team, and afterwards she adds a reason why it is fine: “so it doesn’t really count”. The key’s answer is “Adds a reason why what they did is fine after all”. Nothing changes: the report is still late, and the rule still stands for her team. It is not Sunk cost fallacy, because nothing already spent is given as the reason for a next step.'},
-  {q:'Dana has already decided to give the redesign job to her friend’s agency. She tells her boss she will “compare options”. She sends two other agencies a brief that is written so that only her friend’s agency fits, and when their quotes come in she dismisses both as “not a match”.',
-   a:'Motivated reasoning', w:'The question that decides it is “What does the reasoning start from?” Dana set out on a search (the comparison), and the case shows the answer was chosen before it began: “already decided”. The key’s answer is “An answer already chosen, before any search began”. Her search then collects only support, which is “Chooses the answer first, then searches for support”. It is not Confirmation bias, because she did not meet evidence while holding a view. She built the search to say yes.'},
-  {q:'Mina believes her local library should keep its Saturday opening. A councillor sends her a report saying Saturday visits have halved. Mina checks the report’s figures, then puts the same two questions to the figures she had been relying on: how long a period they cover, and who counted them. The report covers two weeks after a holiday, and her own covers one busy month. She asks for a full year of counts from both, reads them, and tells the councillor the full year still supports keeping Saturday opening, and shows him why.',
-   a:'Fair reasoning', w:'The question that decides it is “What does the reasoning do?” Mina put the same two questions to the report’s figures and to her own, went to the full year of counts, and her view stayed where those counts pointed. The key’s answer is “Gives every fact the same test, and goes where the facts point”. A view that stays can be fair. It is not Confirmation bias, because the evidence against her view did not get a harder test than the evidence for it.'},
-  {q:'Luis has put two years and most of his savings into a second restaurant that loses money every month. His accountant shows him that closing it now would cost less than another year open. “After everything I have put into that place,” Luis says, “I can’t be the one who shuts it.”',
-   a:'Sunk cost fallacy', w:'The question that decides it is “What does the reasoning do?” A next step is still to be decided (keep the restaurant open another year, or close it), and Luis’s reason for carrying on is what is already spent: “after everything I have put into that place”. The key’s answer is “Gives what is already spent as the reason to keep going”. The accountant’s figures about the future are not the reason he gives. It is not Fair reasoning, because the facts about what carrying on will cost and bring are set aside.'},
-  {q:'Ben’s team has lost three games in a row, and he says the new training plan is working. He points to the one game they played well. The three losses, he says, “were down to the referee and bad luck”. He has never put the good game down to luck.',
-   a:'Confirmation bias', w:'The question that decides it is “What does the reasoning do?” The evidence for his view (the one good game) is accepted as it stands, and the evidence against it (three losses) is explained away: “down to the referee and bad luck”. He has never asked that of the good game. The key’s answer is “Tests evidence against their view harder than evidence for it”. It is not Motivated reasoning, because nobody set out on a search with the answer chosen.'},
-  {q:'Hana tells everyone she never buys fast fashion. On Saturday she comes home with five cheap tops from a discount chain. “They were so cheap that it hardly counts,” she says.',
-   a:'Cognitive dissonance reduction', w:'The question that decides it is “What does the reasoning do?” She did something that does not fit what she tells people, and the reason arrives afterwards: “so cheap that it hardly counts”. The key’s answer is “Adds a reason why what they did is fine after all”. She did not take the tops back, and she still says she never buys fast fashion. It is not Motivated reasoning, because she did not set out on any search.'},
-  {q:'Raj has told his partner that the new route to work will be faster, before he has tried it. For a week he times each journey, but only on the mornings the main road is clear. He shows her the numbers. “See?” he says. “I looked into it.”',
-   a:'Motivated reasoning', w:'The question that decides it is “What does the reasoning start from?” Raj set out on a search (timing the journeys), and the case shows the answer was chosen first: he told his partner it would be faster before he had tried it. The key’s answer is “An answer already chosen, before any search began”. Then “What does the reasoning do?” gives “Chooses the answer first, then searches for support”: he timed only the clear mornings. It is not Confirmation bias, because he did not just meet evidence while holding a view. He built a search to back an answer already chosen.'}
 ];
 
 const U3_OPTS = ['Outward narcissism (grandiose)','Inward narcissism (vulnerable)','Not enough for a disorder'];
@@ -427,92 +403,6 @@ const PSYCH_COURSE = [
   ],
   drill:{kind:'pick', key:'u1'} },
 
-{ id:'u2', tag:'Two', title:'One person’s reasoning',
-  cards:[
-  {h:'What this unit is for',
-   b:`<p class="lead">By the end of this unit you will be able to listen to someone defending a view or a choice (a colleague, a relative, someone in the news, or you) and say which of five things their reasoning is doing.</p>
-      <p>This comes up whenever you hear “it doesn’t count”, “I’ve come too far to stop now”, “that study is rubbish” or “I looked into it, and I was right”. Each of those can be the sound of a different thing, and one sentence on its own is never enough to say which. The unit answers the two questions of the key that come after <i>One person’s reasoning</i>: <i>What does the reasoning start from?</i> and <i>What does the reasoning do?</i></p>
-      <p>You will learn five names: <i>Cognitive dissonance reduction</i>, <i>Sunk cost fallacy</i>, <i>Confirmation bias</i>, <i>Motivated reasoning</i> and <i>Fair reasoning</i>. Four of them are ways reasoning bends to protect something. The fifth, <i>Fair reasoning</i>, is reasoning working as it should, and it is the one people most often mistake for a fault. This unit is only about one person’s own reasoning. Something one person does to another is Unit Five.</p>`},
-  {h:'When reasoning protects instead of informs',
-   b:`<p><b>What it is.</b> Reasoning is supposed to work like a pair of scales: you weigh the facts, and the view goes where they point. People often do something else. The view or the choice comes first, and the reasoning is used to protect it. Four of this unit’s names are four ways of doing that. The fifth is the scales working properly. Nobody has to be lying or stupid for the protecting to happen. Most people doing it are sincere, which is why it is so hard to see in yourself.</p>
-      <p><b>Example.</b> A friend says, “I looked into it, and I’m glad I bought it.” That sentence could come from someone who compared the options and is pleased with what they found. It could come from someone who had decided before they looked. It could come from someone defending money they have already spent. The sentence is the same each time. What differs is what the reasoning started from, and what it did.</p>
-      <p><b>Sounds like.</b> “It doesn’t count.” “I’ve come too far to stop.” “That source can’t be trusted.” “I knew before I looked.” “I checked, and I was wrong.”</p>
-      <p><b>Catch it.</b> Do not judge the sentence. Ask the two questions of this unit, in order. First: <i>What does the reasoning start from?</i> Then: <i>What does the reasoning do?</i> Each of the next five cards shows what the answers look like for one name.</p>
-      <p><b>What to do.</b> Before you name anything, find the place in the case where the person made up their mind, and the place where the facts arrived. The order they come in tells you more than anything the person says.</p>
-      <p><b>Don’t confuse it with</b> lying. Someone who knows the truth and says something else is lying, and that is not this unit. Here the person believes their own reasoning.</p>`},
-  {h:'Cognitive dissonance reduction',
-   b:`<p><b>What it is.</b> You do something that does not fit what you believe, or what you have said about yourself. For a moment the two sit side by side, and it is uncomfortable: a small jolt of “this is not like me”. Psychologists call that jolt <i>cognitive dissonance</i>. There are honest ways to make it go away. You can undo what you did, or admit that your belief was not as strong as you said. Each of those changes something real. The third way changes nothing real: after the act, you give a reason why it was fine, or why it does not count. Making the jolt smaller that way is <i>Cognitive dissonance reduction</i>. In everyday words, it is an excuse added after the act.</p>
-      <p><b>Example.</b> Maya has told everyone at work that she is vegan. At a team dinner she learns, halfway through her plate, that the sauce is made with fish stock. She finishes the plate. On the way home she says, “It was only a splash. It hardly counts.” She did not put down her fork, and she did not say, “I’m not as strict as I tell people.” She added a reason. The jolt went away, and nothing real changed: she ate the fish stock, and she still calls herself vegan.</p>
-      <p><b>Sounds like.</b> “It was only once.” “Everyone does it.” “It doesn’t really count.” “I’d had a hard day.” Said after the act, about the act.</p>
-      <p><b>Catch it.</b> Ask: <i>What does the reasoning start from?</i> If the person is defending something they did, spent or believed, and did not set out on a search with the answer chosen, the key’s answer is <i>Something already done, spent or believed, that the person is protecting</i>. Then ask: <i>What does the reasoning do?</i> If it gives a reason why what they did is fine, and no new fact has arrived about the matter, the answer is <i>Adds a reason why what they did is fine after all</i>.</p>
-      <p><b>What to do.</b> In yourself, watch for the reason that turns up after the act. If you catch yourself explaining why something does not count, ask whether you would accept that reason from someone else. In another person, do not argue with the excuse: it works because the jolt is real, and they are not asking to be corrected. Ask what they would like to do about the thing itself.</p>
-      <p><b>Don’t confuse it with</b> <i>Sunk cost fallacy</i>. Both look back at something already done. The difference is what the reason is for. <i>Cognitive dissonance reduction</i> gives a reason why something already done is fine. <i>Sunk cost fallacy</i> gives what is already spent as the reason for the next step.</p>`},
-  {h:'Sunk cost fallacy',
-   b:`<p><b>What it is.</b> Carrying on with something because of what you have already put into it, instead of what carrying on will cost and bring from here. A “sunk” cost is money, time or effort that is spent and cannot be got back, whichever way you decide now. The mistake is letting it decide the next step. The next step has its own cost and its own payoff, and those are the only things that can still change. In everyday words, it is carrying on because of what is already spent. Some people call it throwing good money after bad.</p>
-      <p><b>Example.</b> Bea has knitted two thirds of a sweater and can see that the wool is the wrong colour for her. “I’m forty hours in,” she says, and she buys the last four balls of the same wool. The forty hours are gone whether she finishes or not. What is still open is the cost of four more balls and another twenty hours, against a sweater she will not wear. She is not weighing those. She is weighing the forty.</p>
-      <p><b>Sounds like.</b> “I’ve come this far.” “I’ve already paid for it, so I’m going.” “After everything I’ve put in, I can’t quit now.” “I can’t have wasted three years for nothing.”</p>
-      <p><b>Catch it.</b> Ask: <i>What does the reasoning start from?</i> Money, time or effort already spent is something already done and spent, so the key’s answer is <i>Something already done, spent or believed, that the person is protecting</i>. Then ask: <i>What does the reasoning do?</i> If a next step is still to be decided and the reason given for taking it is what is already spent, the answer is <i>Gives what is already spent as the reason to keep going</i>. Look for a decision still ahead, and look at the reason given for it.</p>
-      <p><b>What to do.</b> Ask the one question that cuts through it: “If I were starting fresh today, with nothing spent, would I choose this?” Decide on what the next step costs and brings from here. This does not mean that quitting is always right. If the answer is yes, carrying on is fine, and the reason is then the future and not the past.</p>
-      <p><b>Don’t confuse it with</b> <i>Fair reasoning</i> that ends in carrying on (the last name in this unit). Two people can both carry on. The difference is the reason. One gives what is already spent. The other gives what carrying on will cost and bring.</p>`},
-  {h:'Confirmation bias',
-   b:`<p><b>What it is.</b> Holding a view and giving the evidence that agrees with it an easy pass, while the evidence against it gets cross-examined. It is not just “believing what you want”. It is a double standard: the questions put to unwelcome evidence (who paid for that, is the sample big enough, is it only one case) are questions the welcome evidence never had to answer. In everyday words, it is a harder test for unwelcome evidence.</p>
-      <p><b>Example.</b> Yusuf is convinced that the office’s new open-plan layout has ruined everyone’s work. He passes on every complaint about noise as proof. When the quarterly figures show more work finished than in the same quarter last year, he says figures like that can be made to say anything. He has never said that about the complaints.</p>
-      <p><b>Sounds like.</b> “Who paid for that study?” (asked only about the studies you dislike). “That’s just one case.” “That doesn’t prove anything.” “I’ve never believed those numbers.”</p>
-      <p><b>Catch it.</b> Ask: <i>What does the reasoning start from?</i> A view the person already holds is something already believed, so the key’s answer is <i>Something already done, spent or believed, that the person is protecting</i>, as long as nobody set out on a search with the answer chosen. Then ask: <i>What does the reasoning do?</i> If evidence for the view and evidence against it are both in the case, and the evidence against gets a harder test than the evidence for ever did, the answer is <i>Tests evidence against their view harder than evidence for it</i>. Always compare the two sides: what test did each piece of evidence get?</p>
-      <p><b>What to do.</b> Put the same question to both sides. If you would ask “who funded it?” about a study that disagrees with you, ask it about the studies that agree. With another person, point at the double standard gently, as a question: “Would we accept that from a study we liked?” Do not tell them they are biased.</p>
-      <p><b>Don’t confuse it with</b> <i>Motivated reasoning</i>, the next name. Both are harder on evidence the person does not like. The difference is whether the person set out on a search to settle something with the answer already chosen. If they did, it is <i>Motivated reasoning</i>. <i>Confirmation bias</i> is for a view already held and evidence that simply turns up.</p>`},
-  {h:'Motivated reasoning',
-   b:`<p><b>What it is.</b> The answer comes first. The person sets out on a search to settle a choice or a question (asking around, reading reviews, testing, interviewing), but the answer was chosen before the search began. The search is then built to find support for it. It is reasoning run backwards: the destination is fixed and the route is made up on the way. In everyday words, it is the answer first, the search afterwards.</p>
-      <p><b>Example.</b> Pete had set his heart on the new phone before it was even on sale. The week it came out he “did his research”: he watched four videos titled “Why this phone is worth it”. “I’ve looked into it,” he said, “and it’s worth it.” He did look. But the answer was chosen first, and the only things he looked at were things that could say yes.</p>
-      <p><b>Sounds like.</b> “I looked into it, and I was right.” “I just need a couple more reasons to back this up.” “I knew which one I wanted before I looked at the others.”</p>
-      <p><b>Catch it.</b> Ask: <i>What does the reasoning start from?</i> Find the point where the person set out on a search and the point where they decided. If the case shows they decided first, the key’s answer is <i>An answer already chosen, before any search began</i>. Then ask: <i>What does the reasoning do?</i> If it collects only support for that answer, the answer is <i>Chooses the answer first, then searches for support</i>. The giveaway is a search that could only have said yes.</p>
-      <p><b>What to do.</b> Before you look, write down what would change your mind, and then look for that. With another person, ask what they would have done if the result had come out the other way.</p>
-      <p><b>Don’t confuse it with</b> <i>Fair reasoning</i> that ends where the person hoped. Plenty of honest searches end where the person hoped. What decides it is whether the search could have gone the other way, and whether the person would have followed it.</p>`},
-  {h:'Fair reasoning',
-   b:`<p><b>What it is.</b> The scales working. Facts about the matter are in front of the person, every fact gets the same test whichever way it points, and the view or plan ends up where the facts point. That can mean changing their mind. It can equally mean keeping their view, because it held up when it was tested as hard as anything else. Fair reasoning is not weakness, and it is not being open to anything at all. In everyday words, it is the same test for every fact, and the view goes where the facts point.</p>
-      <p><b>Example.</b> Keisha was sure the cheaper brand of paint would peel. A year later she looked at her fence. It looked as good as the expensive brand next door. She told her neighbour, “I was wrong about that, and I’ll use it on the shed too.” Nothing in her reasoning protected her earlier view. The fence decided.</p>
-      <p><b>Sounds like.</b> “I checked, and I was wrong.” “I looked at it properly, and I still think I was right, and here is why.” “The numbers came out worse than I expected, so I’m changing the plan.”</p>
-      <p><b>Catch it.</b> Ask: <i>What does the reasoning start from?</i> If facts about the matter are in the case and they decide it, the key’s answer is <i>The facts, whichever way they point</i>. Then ask: <i>What does the reasoning do?</i> If every fact got the same test and the view went where the facts pointed, the answer is <i>Gives every fact the same test, and goes where the facts point</i>. A view that changed, and a view that stayed after a fair test, both fit.</p>
-      <p><b>What to do.</b> Do not treat a changed mind as a fault in someone else, or as weakness in yourself. It is the best sign in this unit. When you see it in someone else, say so: “That was a fair way to change your mind.”</p>
-      <p><b>Don’t confuse it with</b> <i>Motivated reasoning</i> or <i>Confirmation bias</i> that end on a view the person liked. Reaching the answer you wanted is not always bad reasoning. Ask whether the facts had the same chance to decide whichever way they pointed.</p>`},
-  {h:'The two questions and the five names',
-   b:`<p class="lead">Every case in this unit gets the same two questions, always in this order. The first narrows the five names, and the second picks one. The words in italics are the key’s own words.</p>
-      <p><b>The first question:</b> <i>What does the reasoning start from?</i></p>
-      <table class="k">
-      <tr><th>The key’s answer</th><th>What is left</th></tr>
-      <tr><td><i>An answer already chosen, before any search began</i></td><td><i>Motivated reasoning</i></td></tr>
-      <tr><td><i>Something already done, spent or believed, that the person is protecting</i></td><td><i>Cognitive dissonance reduction</i>, <i>Sunk cost fallacy</i>, <i>Confirmation bias</i></td></tr>
-      <tr><td><i>The facts, whichever way they point</i></td><td><i>Fair reasoning</i></td></tr>
-      </table>
-      <p><b>The second question:</b> <i>What does the reasoning do?</i></p>
-      <table class="k">
-      <tr><th>The key’s answer</th><th>The name</th></tr>
-      <tr><td><i>Adds a reason why what they did is fine after all</i></td><td><i>Cognitive dissonance reduction</i></td></tr>
-      <tr><td><i>Gives what is already spent as the reason to keep going</i></td><td><i>Sunk cost fallacy</i></td></tr>
-      <tr><td><i>Tests evidence against their view harder than evidence for it</i></td><td><i>Confirmation bias</i></td></tr>
-      <tr><td><i>Chooses the answer first, then searches for support</i></td><td><i>Motivated reasoning</i></td></tr>
-      <tr><td><i>Gives every fact the same test, and goes where the facts point</i></td><td><i>Fair reasoning</i></td></tr>
-      </table>
-      <p>When two names look alike, one question settles it:</p>
-      <table class="k">
-      <tr><th>Look-alike pair</th><th>The question that separates them</th></tr>
-      <tr><td><i>Cognitive dissonance reduction</i> or <i>Sunk cost fallacy</i></td><td>Is the reason about why something already done is fine, or does it give what is already spent as the reason for the next step?</td></tr>
-      <tr><td><i>Confirmation bias</i> or <i>Motivated reasoning</i></td><td>Did the person set out on a search with the answer already chosen?</td></tr>
-      <tr><td><i>Sunk cost fallacy</i> or <i>Fair reasoning</i></td><td>Is the reason for the next step what is already spent, or what the next step will cost and bring?</td></tr>
-      <tr><td><i>Motivated reasoning</i> or <i>Fair reasoning</i></td><td>Could the search have come out the other way, and would the person have followed it?</td></tr>
-      </table>`},
-  {h:'A worked example',
-   b:`<p class="lead">Here is one new case taken through the key one question at a time, with the words in the case that earn each answer.</p>
-      <p><b>The case.</b> Marta is sure her manager dislikes her. She remembers the day he did not say hello, and the meeting where he cut her off. Last week he praised her report in front of the whole team. “He is only being nice,” she told a friend, “because he needs it finished by Friday.”</p>
-      <ol>
-        <li><b>What kind of thing is this?</b> <i>One person’s reasoning.</i> Marta is explaining a view of her own: “He is only being nice”. Nobody is doing anything to anyone else here.</li>
-        <li><b>What does the reasoning start from?</b> <i>Something already done, spent or believed, that the person is protecting.</i> The words are “Marta is sure her manager dislikes her”: a view she already holds. Nobody set out on a search with the answer chosen, so it is not the first answer. The facts did not decide it, so it is not the third. Three names are left: <i>Cognitive dissonance reduction</i>, <i>Sunk cost fallacy</i> and <i>Confirmation bias</i>.</li>
-        <li><b>What does the reasoning do?</b> <i>Tests evidence against their view harder than evidence for it.</i> The evidence for her view (no hello, being cut off) is taken as it stands. The evidence against it (the praise) gets a test: “only being nice because he needs it finished by Friday”. Nothing she did needs a reason why it is fine, so it is not <i>Cognitive dissonance reduction</i>. Nothing already spent is given as a reason to carry on, so it is not <i>Sunk cost fallacy</i>.</li>
-        <li><b>The name.</b> <i>Confirmation bias.</i></li>
-      </ol>
-      <p><b>What to do.</b> Ask Marta the same question of both sides: “If he had said hello that day, would you have said he was only being polite?” That puts the double standard in front of her without calling her biased.</p>`}
-  ],
-  drill:{kind:'pick', key:'u2'} },
 { id:'u3', tag:'Three', title:'Narcissism, outward and inward',
   cards:[
   {h:'What this unit is for',
@@ -783,14 +673,14 @@ const PSYCH_COURSE = [
    b:`<p>Every case gets the same first question. After that, the questions depend on the answer.</p>
       <ol>
         <li><b>The first question:</b> <i>What kind of thing is this?</i> The answers are <i>One person’s reasoning</i>, <i>A move between people</i> and <i>A lasting way someone is</i> (Unit One).</li>
-        <li><b>If the answer is</b> <i>One person’s reasoning</i>, ask <i>What does the reasoning start from?</i> and then <i>What does the reasoning do?</i> (Unit Two).</li>
+        <li><b>If the answer is</b> <i>One person’s reasoning</i>, ask <i>What does the reasoning start from?</i> and then <i>What does the reasoning do?</i> (the next card, and Unit Two).</li>
         <li><b>If the answer is</b> <i>A move between people</i>, ask <i>What is the move doing to the other person?</i> and then <i>How much of it is there?</i> (Unit Five).</li>
         <li><b>If the answer is</b> <i>A lasting way someone is</i>, ask <i>What does the person most fear, or most need?</i> and then <i>What does the person do when something goes against them?</i> (Units Three and Four).</li>
         <li><b>The name.</b> The readout shows what is left. Pick the name that your answers lead to.</li>
       </ol>
       <p>Answer each question from the words in the case, and be ready to say which words. If you cannot point to any, you do not have an answer yet. A question the case cannot answer is worth noticing too: the case may not give enough to name.</p>`},
   {h:'Inside One person’s reasoning',
-   b:`<p class="lead">When the first answer is <i>One person’s reasoning</i>, the key asks two more questions. They come in this order: <i>What does the reasoning start from?</i> and then <i>What does the reasoning do?</i> Unit Two taught both.</p>
+   b:`<p class="lead">When the first answer is <i>One person’s reasoning</i>, the key asks two more questions. Unit Two taught the second one, <i>What does the reasoning do?</i> In the practice, a quick first look comes before it: <i>What does the reasoning start from?</i></p>
       <p><b>What it is.</b> The first look has three answers. Each one leaves fewer names for the second question to choose from. Give the answer the case shows.</p>
       <ul>
         <li><i>An answer already chosen, before any search began.</i> Give this when the person sets out on a search to settle a choice or a question (asking around, reading, testing, interviewing) and the case shows they had already decided before it began. “She chose the second-hand van before she looked at any other, then read only the reviews of that van.” One name is left: <i>Motivated reasoning</i>.</li>
@@ -851,8 +741,7 @@ const PSYCH_COURSE = [
 ];
 
 const PSYCHOLOGY = {
-  id:'psychology', name:'Psychology', rev:1,
-  blurb:'Tell a hard moment from a lasting way someone is, and reasoning from a move between people, before you reach for a label.',
+  id:'psychology',
   topics:'Reasoning that protects you · Narcissism and its look-alikes · Moves between people',
   intro:'Run each case through the key’s questions before naming it. A right name reached by the wrong route counts as a miss.',
   outcomes: PSYCH_OUTCOMES,
@@ -870,7 +759,6 @@ const PSYCHOLOGY = {
   specimens: PSYCH_SPECIMENS,
   quickDrills: [
     {key:'u1', title:'What kind of thing is this?', prompt:'What kind of thing is this?', items:U1_DRILL, opts:U1_OPTS},
-    {key:'u2', title:'Five things reasoning can do', prompt:'Which name fits best?', items:U2_DRILL, opts:U2_OPTS},
     {key:'u3', title:'Narcissism, outward and inward', prompt:'Which name fits best?', items:U3_DRILL, opts:U3_OPTS},
     {key:'u4', title:'Telling the lasting ways apart', prompt:'Which name fits best?', items:U4_DRILL, opts:U4_OPTS},
     {key:'u5', title:'Moves between people', prompt:'Which name fits best?', items:U5_DRILL, opts:U5_OPTS}
@@ -879,7 +767,7 @@ const PSYCHOLOGY = {
   course: PSYCH_COURSE,
   tabs: [
     {key:'course', label:'Course'}, {key:'det', label:'Determination'},
-    {key:'u1', label:'What kind of thing'}, {key:'u2', label:'Reasoning'}, {key:'u3', label:'Narcissism'},
+    {key:'u1', label:'What kind of thing'}, {key:'u3', label:'Narcissism'},
     {key:'u4', label:'Lasting ways'}, {key:'u5', label:'Moves between people'},
     {key:'err', label:'Faulty claims'}, {key:'reference', label:'Reference'}
   ],
@@ -895,3 +783,4 @@ const PSYCHOLOGY = {
   </ul>`
 };
 
+FC.legacy('psychology', PSYCHOLOGY);
