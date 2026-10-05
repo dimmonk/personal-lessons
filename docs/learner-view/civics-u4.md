@@ -1,15 +1,15 @@
 # Learner view: US Civics & History, Unit Four: The President or a federal agency
 
-*Six things the President or a federal office can do, and how to tell which one you are looking at.* Unit revision 1, built to lesson standard 1, status: draft.
+*Six things the President or a federal office can do, and how to tell which one you are looking at.* Unit revision 2, built to lesson standard 1, status: draft.
 
 This file is generated from the data files by `tools/render-learner-view.mjs`. It shows every screen in the order a learner meets it. In the app one card is on screen at a time and the learner moves on when ready.
 
-- **Bold text in quotation marks** is the key’s own wording, printed from `key.js`. Bold names are the outcome names from the same file. Neither is typed anywhere else. "What you must be able to point to" lines and "How to tell them apart" lines are also printed from one place each (the key and the look-alike ledger).
+- **Bold text in quotation marks** is the subject’s own wording for its questions and answers, written once and printed everywhere. Bold names are the names, written once in the same place. Neither is typed anywhere else. "What you must be able to point to" lines and "How to tell them apart" lines are also printed from one place each (the subject’s questions and the pairs it compares).
 - ⟦Double brackets⟧ show the words the app marks in a case (one highlight style everywhere).
 - The line in italics under each heading is the app’s top bar. The line in square brackets after it is for reviewers and is not shown to the learner.
 - Headings, prompt wording and stage instructions that are the same in every unit are the app’s wording, not this unit’s.
 - "Shown as soon as you …" is what appears the moment the learner answers. Nothing is hidden behind a second tap the first time a case is met, or after a miss.
-- After every answer the app shows, in this order: the right answer in the key’s words; the reason, quoting the marked words; for a name, why the nearest wrong name fails; after a miss, a line about the answer the learner chose; and last a link to the card that taught it. Where a line about the learner’s own choice is not written for the case, the app builds it from the key, and this file says so in place of repeating it.
+- After every answer the app shows, in this order: the right answer; the reason, quoting the marked words; for a name, why the nearest wrong name fails; after a miss, a line about the answer the learner chose; and last a link to the card that taught it. Where a line about the learner’s own choice is not written for the case, the app builds it from the answers’ own wording, and this file says so in place of repeating it.
 
 ---
 
@@ -17,7 +17,7 @@ This file is generated from the data files by `tools/render-learner-view.mjs`. I
 
 ### 1. Six things the President or a federal office can do
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 1 of 47*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 1 of 47*
 
 [reviewers only: card kind `orient`, id `orient-pres`]
 
@@ -31,18 +31,18 @@ Five of the six are things the President or an office is allowed to do. The sixt
 
 One word is used in two ways in this unit, so here it is once. A federal *agency* is also called a federal office, and the two words mean the same thing: an office of a government that carries out particular laws day to day, such as the immigration service or the tax office.
 
-**What Unit One taught, in one place.** The key’s first question is **“Who makes the last decision in the case, or is asked to make it?”** Its answers:
+**What Unit One taught, in one place.** The first question is **“Who makes the last decision in the case, or is asked to make it?”** Its answers:
 
 - **“Congress, in the House or the Senate”**: give this answer when the last decision in the case is a vote in the House, the Senate or both, or the case ends by asking Congress for one: on a law, on money, on a person the President chose or an agreement the President signed with another country, or on charging or trying an official. A law Congress passed is still Congress’s decision when the case adds that the President signed it.
 - **“The President or a federal agency”**: give this answer when the last decision in the case is made by the President or a federal agency, or the case ends by asking them for one: an agency writes rules, inspects or enforces, the President gives an order, commands the armed forces, deals with another country, refuses to sign a law or forgives a federal crime. **This unit is about these cases.**
 - **“A judge, in any court”**: give this answer when the last decision in the case is a judge’s, in any court, federal or state, or the case ends with someone asking a judge to decide.
 - **“A state, city or county government”**: give this answer when the last decision in the case is made by a state’s lawmakers, its governor or its agencies, or by a city, town or county, or the case ends by asking one of them for it. A judge in a state’s court counts as a judge, not as the state.
 
-Unit One also taught that two things are marked separately: the name you give a case, and your route to it, meaning the answers you gave to the key’s questions on the way.
+Two things are marked separately: the name you give a case, and your answers to the questions on the way to it.
 
 *(One tap on any of these lines opens the card in Unit One that taught it.)*
 
-**The part of the key this unit teaches.** This is a preview. You are not expected to follow it yet: every line is explained on the cards that come next. The question and its answers are in the key’s own words. Beside each answer, in plain words, is the thing it leads to. There are six of them, and each gets its name when it is taught.
+**The questions this unit teaches.** This is a preview. You are not expected to follow it yet: every line is explained on the cards that come next. The question and its answers are worded exactly as you will meet them. Beside each answer, in plain words, is the thing it leads to. There are six of them, and each gets its name when it is taught.
 
 What does the President or the agency do?
 - Puts a law Congress passed into practice → an agency putting a law into practice
@@ -65,14 +65,14 @@ The unit has four parts, and you can stop after any of them.
 
 1. The President in charge of the laws, and what it looks like when no law is behind a demand
 2. The President’s own powers: orders to the armed forces, and dealing with other countries
-3. The President and a bill, the President and a crime, and the key’s question
+3. The President and a bill, the President and a crime, and the question
 4. Two whole cases, then the drill
 
 Each name is taught through cases first. After every step you answer one question about a new case, and the answer and the reason are shown straight away. Nothing here is graded. A miss only decides what comes back.
 
 ### 2. An agency putting a law into practice
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 2 of 47*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 2 of 47*
 
 [reviewers only: card kind `meet`, id `meet-execute`]
 
@@ -97,9 +97,9 @@ Think of the two other ways it could have gone. If Congress had to write every f
 
 **What you must be able to point to.** A law Congress passed, and a federal agency or the President putting it into practice (writing its detailed rules, processing, inspecting, collecting, enforcing) without going past what it allows. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What does the President or the agency do?”**
+**The question:** **“What does the President or the agency do?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“Puts a law Congress passed into practice”**
+**Its answer for a case like this one:** **“Puts a law Congress passed into practice”**
 
 The name for this is **Carrying out the law**. It means what it says: the law already exists, and someone is making it work in daily life.
 
@@ -107,7 +107,7 @@ You may also hear this called “enforcing the law” or “implementing a law�
 
 ### 3. Carrying out the law: the same thing in a different story
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 3 of 47*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 3 of 47*
 
 [reviewers only: card kind `again`, id `again-execute`]
 
@@ -140,7 +140,7 @@ The two stories share nothing else. One is about taxes and the other about lorri
 
 ### 4. The story never decides the answer
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 4 of 47*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 4 of 47*
 
 [reviewers only: card kind `lens`, id `lens-pres`]
 
@@ -154,13 +154,13 @@ From here on, the cases change their stories on purpose. Sometimes two cases sha
 
 One more thing changes on purpose. The loudest part of a case is often not the part that decides it: an order with a signature, a visit by another country’s leader, a law that came first. What decides is what the President or the office does, and whether a law stands behind it where one is needed.
 
-**Stays the same from case to case:** what the President or the office does, which is what the key asks about: **“What does the President or the agency do?”**
+**Stays the same from case to case:** what the President or the office does, which is what the question asks about: **“What does the President or the agency do?”**
 
 **Changes on purpose:** the topic; the people; which office is named; how loud or important the case sounds; whether you agree with what is done.
 
 ### 5. Carrying out the law: what it is like
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 5 of 47*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 5 of 47*
 
 [reviewers only: card kind `portrait`, id `portrait-execute`]
 
@@ -189,7 +189,7 @@ You meet it in your own life every time a form, a fee or an inspection comes fro
 
 ### 6. A question about a new case
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 6 of 47*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 6 of 47*
 
 [reviewers only: card kind `check`, id `check-execute`]
 
@@ -204,7 +204,7 @@ The pieces you can tap:
 
 **Shown as soon as you tap**
 
-- If you are right: “Right: ‘a clerk at the federal animal-health agency checked it against the list in the law, found it complete and mailed her the permit’.” The decision is the clerk’s: an office is processing an application under a law that is already there. It writes no new rule, and it asks for nothing the law does not list. The key’s answer for this case is **“Puts a law Congress passed into practice”**, and the name is **Carrying out the law**.
+- If you are right: “Right: ‘a clerk at the federal animal-health agency checked it against the list in the law, found it complete and mailed her the permit’.” The decision is the clerk’s: an office is processing an application under a law that is already there. It writes no new rule, and it asks for nothing the law does not list. The answer for this case is **“Puts a law Congress passed into practice”**, and the name is **Carrying out the law**.
 - If you miss: “The words are ‘a clerk at the federal animal-health agency checked it against the list in the law, found it complete and mailed her the permit’.” The same reason follows, and then a line about the piece you tapped:
   - “Under a law Congress passed, anyone who brings a pet bird into the country needs an import permit”: That is the law, and it came first. It is not the decision in the case.
   - “Mina sent in her form last month”: That is what the person asking did. The decision belongs to the office that answers her.
@@ -212,7 +212,7 @@ The pieces you can tap:
 
 ### 7. A written instruction from the President to the offices
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 7 of 47*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 7 of 47*
 
 [reviewers only: card kind `term`, id `term-order`]
 
@@ -235,7 +235,7 @@ An *executive order* can tell the offices how to carry out the laws that already
 
 ### 8. An order that demands what no law allows
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 8 of 47*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 8 of 47*
 
 [reviewers only: card kind `meet`, id `meet-beyondpres`]
 
@@ -262,9 +262,9 @@ People who think an order goes past the law can ask a judge to look at it. That 
 
 **What you must be able to point to.** An executive order or a rule from the President or a federal agency, something it demands of people or businesses, and no law Congress passed that allows it. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What does the President or the agency do?”**
+**The question:** **“What does the President or the agency do?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“Demands something of people that no law allows”**
+**Its answer for a case like this one:** **“Demands something of people that no law allows”**
 
 The name for this is **Beyond the President’s power**. "Beyond" because the demand goes past what the President can do alone, and "power" because power is the word for what a part of government is allowed to do.
 
@@ -272,7 +272,7 @@ You may also hear this called “exceeding the President’s powers”. That mea
 
 ### 9. Beyond the President’s power: the same thing in a different story
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 9 of 47*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 9 of 47*
 
 [reviewers only: card kind `again`, id `again-beyondpres`]
 
@@ -305,7 +305,7 @@ The two stories share nothing else. So this is not about plastic or about holida
 
 ### 10. Beyond the President’s power: what it is like
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 10 of 47*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 10 of 47*
 
 [reviewers only: card kind `portrait`, id `portrait-beyondpres`]
 
@@ -335,13 +335,13 @@ You hear it in the news whenever someone says an order "goes too far", or asks "
 
 ### 11. A question about a new case
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 11 of 47*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 11 of 47*
 
 [reviewers only: card kind `check`, id `check-beyondpres`]
 
 > The federal education agency announced that every college in the country must charge each student a new fee of $200 a year and send the money to the government. The agency says it can do this by its own rule. No law Congress passed mentions such a fee.
 
-**The key asks:** **“What does the President or the agency do?”** Which of the answers you have met so far fits this case?
+**The question:** **“What does the President or the agency do?”** Which of the answers you have met so far fits this case?
 
 - Puts a law Congress passed into practice
 - Demands something of people that no law allows
@@ -355,7 +355,7 @@ You hear it in the news whenever someone says an order "goes too far", or asks "
 
 ### 12. A wrong idea about a written order
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 12 of 47*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 12 of 47*
 
 [reviewers only: card kind `refute`, id `refute-order`]
 
@@ -376,7 +376,7 @@ Third, it does not last as long. The next President can undo an *executive order
 
 ### 13. Carrying out the law or Beyond the President’s power: telling them apart
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 13 of 47*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 13 of 47*
 
 [reviewers only: card kind `lookalike`, id `look-execute-beyondpres`]
 
@@ -398,9 +398,9 @@ You have met both names on their own. They are easy to mix up, because both can 
 
 **Why this one and not the other**
 
-In Case A a law exists: Congress passed one that says every snack must show how much salt it holds. The office decides the details of the label: how large the line must be, and from what date. It adds no new demand, and only fills in how the law is followed. The key’s answer is **“Puts a law Congress passed into practice”**, and the case is **Carrying out the law**.
+In Case A a law exists: Congress passed one that says every snack must show how much salt it holds. The office decides the details of the label: how large the line must be, and from what date. It adds no new demand, and only fills in how the law is followed. The answer is **“Puts a law Congress passed into practice”**, and the case is **Carrying out the law**.
 
-In Case B no law exists: the case says Congress has passed none on how much salt a snack may hold. The office sets a limit and a fine, which are demands on every firm that sells snacks, with nothing behind them. The key’s answer is **“Demands something of people that no law allows”**, and the case is **Beyond the President’s power**.
+In Case B no law exists: the case says Congress has passed none on how much salt a snack may hold. The office sets a limit and a fine, which are demands on every firm that sells snacks, with nothing behind them. The answer is **“Demands something of people that no law allows”**, and the case is **Beyond the President’s power**.
 
 The office is the same, the product is the same, and both rules are about salt. Only the law differs, which is why the story can never be what decides.
 
@@ -408,7 +408,7 @@ The office is the same, the product is the same, and both rules are about salt. 
 
 Can you name a law Congress passed that allows what the rule or the order demands, and does the rule or order stay inside it?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Carrying out the law | Beyond the President’s power |
 |---|---|---|
@@ -419,7 +419,7 @@ Can you name a law Congress passed that allows what the rule or the order demand
 
 ### 14. An order that only carries out a law
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 14 of 47*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 14 of 47*
 
 [reviewers only: card kind `exception`, id `exc-order`]
 
@@ -459,7 +459,7 @@ In the news both kinds will be called an *executive order*. The word does not se
 
 ### 15. A rule that only looks like carrying out a law
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 15 of 47*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 15 of 47*
 
 [reviewers only: card kind `exception`, id `exc-fee`]
 
@@ -497,11 +497,11 @@ Can you name a law Congress passed that allows what the rule or the order demand
 
 ### 16. Enumerated power or Carrying out the law: telling them apart
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 16 of 47*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 16 of 47*
 
 [reviewers only: card kind `lookalike`, id `look-enumerated-execute`]
 
-A law can appear in two cases that end in different places. Two names, one from the part of the key for Congress and one from this unit, are the pair you are most likely to mix up in the news. This card puts them side by side.
+A law can appear in two cases that end in different places. Two names, one from the questions for Congress and one from this unit, are the pair you are most likely to mix up in the news. This card puts them side by side.
 
 **Case A**
 
@@ -519,33 +519,33 @@ A law can appear in two cases that end in different places. Two names, one from 
 
 **Why this one and not the other**
 
-In Case A the story is about the law itself: the Senate votes to pass it, as the House had done. Nobody else decides anything. The key’s first answer is **“Congress, in the House or the Senate”**, and its answer to the next question is **“Passes a law on a matter the Constitution lists for it”**, so the case is **Enumerated power**.
+In Case A the story is about the law itself: the Senate votes to pass it, as the House had done. Nobody else decides anything. The first answer is **“Congress, in the House or the Senate”**, and its answer to the next question is **“Passes a law on a matter the Constitution lists for it”**, so the case is **Enumerated power**.
 
-In Case B the law is already passed, and the story is about what comes after it: an office publishes the form that importers must fill in to pay the tax. The law is still in the story, as how the matter got there. The last decision is the office’s. The key’s first answer is **“The President or a federal agency”**, and its answer to the next question is **“Puts a law Congress passed into practice”**, so the case is **Carrying out the law**.
+In Case B the law is already passed, and the story is about what comes after it: an office publishes the form that importers must fill in to pay the tax. The law is still in the story, as how the matter got there. The last decision is the office’s. The first answer is **“The President or a federal agency”**, and its answer to the next question is **“Puts a law Congress passed into practice”**, so the case is **Carrying out the law**.
 
-One tax gives you both, as the food-label law did in Unit One. The key does not weigh the two. It asks for the last decision, or the one the case asks for.
+One tax gives you both, as the food-label law did in Unit One. The question does not weigh the two. It asks for the last decision, or the one the case asks for.
 
 **How to tell them apart**
 
 Does the case end on the vote that passed the law, or on what an office does with a law that is already passed?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Enumerated power | Carrying out the law |
 |---|---|---|
 | Who makes the last decision in the case, or is asked to make it? | Congress, in the House or the Senate | The President or a federal agency |
-| What does Congress do in the case? | Passes a law on a matter the Constitution lists for it | *Not asked on its route* |
-| What does the President or the agency do? | *Not asked on its route* | Puts a law Congress passed into practice |
+| What does Congress do in the case? | Passes a law on a matter the Constitution lists for it | *Not asked for this one* |
+| What does the President or the agency do? | *Not asked for this one* | Puts a law Congress passed into practice |
 | What you must be able to point to | A law Congress passes, a matter the Constitution lists among Congress’s powers that the law is about, and no right the Constitution protects that the law takes away | A law Congress passed, and a federal agency or the President putting it into practice (writing its detailed rules, processing, inspecting, collecting, enforcing) without going past what it allows |
 
 
 ### 17. Beyond Congress’s power or Beyond the President’s power: telling them apart
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 17 of 47*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 17 of 47*
 
 [reviewers only: card kind `lookalike`, id `look-beyondcong-beyondpres`]
 
-Two of the names have "beyond" in them, and both are about someone doing what they had no power to do. They belong to different parts of the key, so they are easy to run together. This card puts them side by side.
+Two of the names have "beyond" in them, and both are about someone doing what they had no power to do. They belong to the questions for different kinds of case, so they are easy to run together. This card puts them side by side.
 
 **Case A**
 
@@ -563,23 +563,23 @@ Two of the names have "beyond" in them, and both are about someone doing what th
 
 **Why this one and not the other**
 
-In Case A the House and the Senate both passed a law, and the President signed it. A signature on a law that lawmakers passed leaves the decision with them, as Unit One showed. The key’s first answer is **“Congress, in the House or the Senate”**. Its answer to the next question is **“Passes a law the Constitution does not let it pass”**, because the hours barbers work are not among the Constitution’s powers for Congress, so the case is **Beyond Congress’s power**.
+In Case A the House and the Senate both passed a law, and the President signed it. A signature on a law that lawmakers passed leaves the decision with them, as Unit One showed. The first answer is **“Congress, in the House or the Senate”**. Its answer to the next question is **“Passes a law the Constitution does not let it pass”**, because the hours barbers work are not among the Constitution’s powers for Congress, so the case is **Beyond Congress’s power**.
 
-In Case B nobody voted. The President signed an order about the barbers’ hours, and the case says no law Congress passed gives the President that power. The key’s first answer is **“The President or a federal agency”**, and its answer to the next question is **“Demands something of people that no law allows”**, so the case is **Beyond the President’s power**.
+In Case B nobody voted. The President signed an order about the barbers’ hours, and the case says no law Congress passed gives the President that power. The first answer is **“The President or a federal agency”**, and its answer to the next question is **“Demands something of people that no law allows”**, so the case is **Beyond the President’s power**.
 
-In both cases a rule about barbers’ hours is out of reach of the one who made it, and the story is the same. What differs is who made the rule: lawmakers, or the President by an order. That is the question the key asks first.
+In both cases a rule about barbers’ hours is out of reach of the one who made it, and the story is the same. What differs is who made the rule: lawmakers, or the President by an order. That is the question asked first.
 
 **How to tell them apart**
 
 Who made the rule: lawmakers who voted on a law, or the President or an office acting by an order or a rule?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Beyond Congress’s power | Beyond the President’s power |
 |---|---|---|
 | Who makes the last decision in the case, or is asked to make it? | Congress, in the House or the Senate | The President or a federal agency |
-| What does Congress do in the case? | Passes a law the Constitution does not let it pass | *Not asked on its route* |
-| What does the President or the agency do? | *Not asked on its route* | Demands something of people that no law allows |
+| What does Congress do in the case? | Passes a law the Constitution does not let it pass | *Not asked for this one* |
+| What does the President or the agency do? | *Not asked for this one* | Demands something of people that no law allows |
 | What you must be able to point to | A law Congress passes, and either a matter the Constitution does not list among Congress’s powers, or a right the Constitution protects that the law takes away | An executive order or a rule from the President or a federal agency, something it demands of people or businesses, and no law Congress passed that allows it |
 
 
@@ -591,7 +591,7 @@ Who made the rule: lawmakers who voted on a law, or the President or an office a
 
 ### 18. The President giving the armed forces orders
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 18 of 47*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 18 of 47*
 
 [reviewers only: card kind `meet`, id `meet-commander`]
 
@@ -616,9 +616,9 @@ There is a limit, and it is worth knowing now, because stories about armies are 
 
 **What you must be able to point to.** The President giving orders to the armed forces: where they go, what they do, or who leads them. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What does the President or the agency do?”**
+**The question:** **“What does the President or the agency do?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“Gives orders to the armed forces”**
+**Its answer for a case like this one:** **“Gives orders to the armed forces”**
 
 The name for this is **Commander in chief**. A "commander" is someone who gives orders, and "in chief" means the highest: the President is the highest commander of the armed forces.
 
@@ -626,7 +626,7 @@ You may also hear this called “command of the armed forces”. That means the 
 
 ### 19. Commander in chief: the same thing in a different story
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 19 of 47*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 19 of 47*
 
 [reviewers only: card kind `again`, id `again-commander`]
 
@@ -659,7 +659,7 @@ The two stories share nothing else. One is about a flood and the other about a f
 
 ### 20. Commander in chief: what it is like
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 20 of 47*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 20 of 47*
 
 [reviewers only: card kind `portrait`, id `portrait-commander`]
 
@@ -689,13 +689,13 @@ You meet it when the news shows soldiers and helicopters arriving after a disast
 
 ### 21. A question about a new case
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 21 of 47*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 21 of 47*
 
 [reviewers only: card kind `check`, id `check-commander`]
 
 > The President told the air force to move its transport planes from two old bases to one new base in the south before the end of the month. The generals who run the bases were sent the order on Friday.
 
-**The key asks:** **“What does the President or the agency do?”** Which of the answers you have met so far fits this case?
+**The question:** **“What does the President or the agency do?”** Which of the answers you have met so far fits this case?
 
 - Puts a law Congress passed into practice
 - Demands something of people that no law allows
@@ -711,7 +711,7 @@ You meet it when the news shows soldiers and helicopters arriving after a disast
 
 ### 22. A wrong idea: "the President can declare war"
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 22 of 47*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 22 of 47*
 
 [reviewers only: card kind `refute`, id `refute-war`]
 
@@ -725,12 +725,12 @@ The picture of **Commander in chief** said that an order to the forces is one th
 
 The President gives the armed forces their orders. That is what **Commander in chief** names. But declaring war is not an order to the forces. It belongs to Congress, and Congress also votes the money that pays for the forces.
 
-So a story in which the President sends the army or the navy somewhere is about **Commander in chief**. A story in which lawmakers vote to declare a war is about the lawmakers, and the key’s first answer is **“Congress, in the House or the Senate”**. When you hear that the President "declared war", check whose decision the story ends on.
+So a story in which the President sends the army or the navy somewhere is about **Commander in chief**. A story in which lawmakers vote to declare a war is about the lawmakers, and the first answer is **“Congress, in the House or the Senate”**. When you hear that the President "declared war", check whose decision the story ends on.
 
 
 ### 23. The President dealing with another country
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 23 of 47*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 23 of 47*
 
 [reviewers only: card kind `meet`, id `meet-diplomacy`]
 
@@ -755,9 +755,9 @@ Notice where the case stops. The President has talked and signed. A *treaty* doe
 
 **What you must be able to point to.** The President, or an official acting for the President, dealing with another country: meeting, negotiating or signing an agreement. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What does the President or the agency do?”**
+**The question:** **“What does the President or the agency do?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“Deals with another country”**
+**Its answer for a case like this one:** **“Deals with another country”**
 
 The name for this is **Foreign affairs**. "Foreign" means belonging to another country, and "affairs" means the things a government has to see to. So the name means the business of dealing with other countries.
 
@@ -765,7 +765,7 @@ You may also hear this called “diplomacy” or “negotiating a treaty”. Tho
 
 ### 24. Foreign affairs: the same thing in a different story
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 24 of 47*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 24 of 47*
 
 [reviewers only: card kind `again`, id `again-diplomacy`]
 
@@ -798,7 +798,7 @@ The two stories share nothing else. So this is not about fishing or about studen
 
 ### 25. Foreign affairs: what it is like
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 25 of 47*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 25 of 47*
 
 [reviewers only: card kind `portrait`, id `portrait-diplomacy`]
 
@@ -827,13 +827,13 @@ You meet it in the news whenever the President travels, hosts another country’
 
 ### 26. A question about a new case
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 26 of 47*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 26 of 47*
 
 [reviewers only: card kind `check`, id `check-diplomacy`]
 
 > An official acting for the President met the officials of a country across the sea to talk about how many tourists each country’s ships may carry. The talks ended on Thursday with a signed agreement.
 
-**The key asks:** **“What does the President or the agency do?”** Which of the answers you have met so far fits this case?
+**The question:** **“What does the President or the agency do?”** Which of the answers you have met so far fits this case?
 
 - Puts a law Congress passed into practice
 - Demands something of people that no law allows
@@ -851,7 +851,7 @@ You meet it in the news whenever the President travels, hosts another country’
 
 ### 27. Commander in chief or Foreign affairs: telling them apart
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 27 of 47*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 27 of 47*
 
 [reviewers only: card kind `lookalike`, id `look-commander-diplomacy`]
 
@@ -873,9 +873,9 @@ These two are easy to mix up, because both can be about ships, soldiers and anot
 
 **Why this one and not the other**
 
-In Case A the President orders the navy to send three ships to the port, and to keep them there for a month. The ships obey, and nobody from Istrene is asked anything. The key’s answer is **“Gives orders to the armed forces”**, and the case is **Commander in chief**.
+In Case A the President orders the navy to send three ships to the port, and to keep them there for a month. The ships obey, and nobody from Istrene is asked anything. The answer is **“Gives orders to the armed forces”**, and the case is **Commander in chief**.
 
-In Case B the President goes to Istrene and spends two days with its leader, and the two of them sign an agreement about each country’s ships using the other’s ports. The ships are in the story, but nobody orders them anywhere. The two countries settle how the ports may be used. The key’s answer is **“Deals with another country”**, and the case is **Foreign affairs**.
+In Case B the President goes to Istrene and spends two days with its leader, and the two of them sign an agreement about each country’s ships using the other’s ports. The ships are in the story, but nobody orders them anywhere. The two countries settle how the ports may be used. The answer is **“Deals with another country”**, and the case is **Foreign affairs**.
 
 Ships, ports and another country appear in both. What differs is what the President does: tell the forces what to do, or settle something with another country.
 
@@ -883,7 +883,7 @@ Ships, ports and another country appear in both. What differs is what the Presid
 
 Who is on the other side of what the President does: the armed forces, who are told where to go or what to do, or the leaders and officials of another country, who are met and negotiated with?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Commander in chief | Foreign affairs |
 |---|---|---|
@@ -894,7 +894,7 @@ Who is on the other side of what the President does: the armed forces, who are t
 
 ### 28. Another country in the story, and an order in the case
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 28 of 47*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 28 of 47*
 
 [reviewers only: card kind `exception`, id `exc-exercise`]
 
@@ -921,7 +921,7 @@ The pieces you can tap:
 
 Look at what the President does. The ally asked for something, and its leader thanked the President afterwards, but nothing is negotiated or signed with the ally. What the President decides is an order: a ship with soldiers on it is to leave for a six-week exercise.
 
-The ally’s part of the story is how the matter got there, and what happened afterwards. The decision in the middle of it is an order to the armed forces, and the key asks what the President does.
+The ally’s part of the story is how the matter got there, and what happened afterwards. The decision in the middle of it is an order to the armed forces, and the question is what the President does.
 
 Put the question printed below, the one from the ships and the port of Istrene, to this case. The President tells the forces what to do, and nobody is met or negotiated with.
 
@@ -932,7 +932,7 @@ Who is on the other side of what the President does: the armed forces, who are t
 
 ### 29. Foreign affairs or Carrying out the law: telling them apart
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 29 of 47*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 29 of 47*
 
 [reviewers only: card kind `lookalike`, id `look-diplomacy-execute`]
 
@@ -954,9 +954,9 @@ Federal officials deal with people from other countries in two quite different w
 
 **Why this one and not the other**
 
-In Case A the Secretary of State, speaking for the President, meets Calvera’s foreign minister, and the two countries agree and sign how long visitors may stay. Two governments are settling something between them. The key’s answer is **“Deals with another country”**, and the case is **Foreign affairs**.
+In Case A the Secretary of State, speaking for the President, meets Calvera’s foreign minister, and the two countries agree and sign how long visitors may stay. Two governments are settling something between them. The answer is **“Deals with another country”**, and the case is **Foreign affairs**.
 
-In Case B a clerk checks one visitor’s papers against a list in a law Congress passed, and stamps the passport. The visitor comes from Calvera, but the clerk is not dealing with Calvera. The clerk is putting a law into daily practice for one person. The key’s answer is **“Puts a law Congress passed into practice”**, and the case is **Carrying out the law**.
+In Case B a clerk checks one visitor’s papers against a list in a law Congress passed, and stamps the passport. The visitor comes from Calvera, but the clerk is not dealing with Calvera. The clerk is putting a law into daily practice for one person. The answer is **“Puts a law Congress passed into practice”**, and the case is **Carrying out the law**.
 
 Both cases have the same ninety days, and people from Calvera. What differs is who the official is dealing with: a government, as one country with another, or one person under a law.
 
@@ -964,7 +964,7 @@ Both cases have the same ninety days, and people from Calvera. What differs is w
 
 Is the official dealing with another country’s government, or dealing with people under a law Congress passed?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Foreign affairs | Carrying out the law |
 |---|---|---|
@@ -975,7 +975,7 @@ Is the official dealing with another country’s government, or dealing with peo
 
 ### 30. Advice and consent or Foreign affairs: telling them apart
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 30 of 47*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 30 of 47*
 
 [reviewers only: card kind `lookalike`, id `look-confirm-diplomacy`]
 
@@ -997,9 +997,9 @@ A written agreement with another country passes through two sets of hands: the P
 
 **Why this one and not the other**
 
-In Case A the President flies to Tormark, negotiates, and the two leaders sign. Nobody votes. The key’s first answer is **“The President or a federal agency”**, and its answer to the next question is **“Deals with another country”**, so the case is **Foreign affairs**.
+In Case A the President flies to Tormark, negotiates, and the two leaders sign. Nobody votes. The first answer is **“The President or a federal agency”**, and its answer to the next question is **“Deals with another country”**, so the case is **Foreign affairs**.
 
-In Case B the agreement is already signed, and the story is about what comes after: it does not take effect until the Senate votes, and the vote is next month. The signing is how the matter got there. The case ends by asking the Senate for a decision. The key’s first answer is **“Congress, in the House or the Senate”**, and its answer to the next question is **“Votes on a person or a treaty the President put forward”**.
+In Case B the agreement is already signed, and the story is about what comes after: it does not take effect until the Senate votes, and the vote is next month. The signing is how the matter got there. The case ends by asking the Senate for a decision. The first answer is **“Congress, in the House or the Senate”**, and its answer to the next question is **“Votes on a person or a treaty the President put forward”**.
 
 It is one agreement at two moments, as in Unit One: first negotiated and signed, then voted on. The case is the moment it ends on.
 
@@ -1007,25 +1007,25 @@ It is one agreement at two moments, as in Unit One: first negotiated and signed,
 
 Does the case end on the President’s side, meeting, negotiating and signing, or on senators voting, or being asked to vote, on what the President put forward?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Advice and consent | Foreign affairs |
 |---|---|---|
 | Who makes the last decision in the case, or is asked to make it? | Congress, in the House or the Senate | The President or a federal agency |
-| What does Congress do in the case? | Votes on a person or a treaty the President put forward | *Not asked on its route* |
-| What does the President or the agency do? | *Not asked on its route* | Deals with another country |
+| What does Congress do in the case? | Votes on a person or a treaty the President put forward | *Not asked for this one* |
+| What does the President or the agency do? | *Not asked for this one* | Deals with another country |
 | What you must be able to point to | A person the President has chosen for a top government job, or a treaty the President has signed, and the Senate voting on whether to approve it | The President, or an official acting for the President, dealing with another country: meeting, negotiating or signing an agreement |
 
 
-*End of part 2. You can stop here; your place is kept. Next: part 3, The President and a bill, the President and a crime, and the key’s question.*
+*End of part 2. You can stop here; your place is kept. Next: part 3, The President and a bill, the President and a crime, and the question.*
 
 ---
 
-## Part 3 of 4: The President and a bill, the President and a crime, and the key’s question
+## Part 3 of 4: The President and a bill, the President and a crime, and the question
 
 ### 31. The President sending a law back unsigned
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 31 of 47*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 31 of 47*
 
 [reviewers only: card kind `meet`, id `meet-veto`]
 
@@ -1047,13 +1047,13 @@ Refusing does not end the bill for ever. Congress can pass it anyway, if two-thi
 
 The President can also do nothing. If the President neither signs the bill nor sends it back within ten days, Sundays not counted, while Congress is in session, the bill becomes a law without a signature. So doing nothing and refusing are different acts, with different results.
 
-Notice the signature again. A signature on a bill that Congress passed changes nothing about what the law says, which is why a signed law stays with the lawmakers in the key’s first question. A refusal is different. It is a decision of the President’s own, and it stops the bill from becoming a law unless Congress votes again.
+Notice the signature again. A signature on a bill that Congress passed changes nothing about what the law says, which is why a signed law stays with the lawmakers in the first question. A refusal is different. It is a decision of the President’s own, and it stops the bill from becoming a law unless Congress votes again.
 
 **What you must be able to point to.** A law Congress has passed, and the President refusing to sign it and sending it back with objections. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What does the President or the agency do?”**
+**The question:** **“What does the President or the agency do?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“Refuses to sign a law Congress passed”**
+**Its answer for a case like this one:** **“Refuses to sign a law Congress passed”**
 
 The name for this is **Veto**: the President’s refusal to sign a bill, and the return of the bill to Congress.
 
@@ -1061,7 +1061,7 @@ You may also hear this called “vetoing a bill”. That means the same thing he
 
 ### 32. Veto: the same thing in a different story
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 32 of 47*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 32 of 47*
 
 [reviewers only: card kind `again`, id `again-veto`]
 
@@ -1094,7 +1094,7 @@ The two stories share nothing else. One is about pay and the other about researc
 
 ### 33. Veto: what it is like
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 33 of 47*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 33 of 47*
 
 [reviewers only: card kind `portrait`, id `portrait-veto`]
 
@@ -1123,13 +1123,13 @@ You meet it whenever the news says that a bill is "on the President’s desk" an
 
 ### 34. A question about a new case
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 34 of 47*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 34 of 47*
 
 [reviewers only: card kind `check`, id `check-veto`]
 
 > Congress passed a bill to close two federal post offices in the north. The bill arrived on the President’s desk on Friday. On Monday the President returned it to Congress, unsigned, with a note listing objections.
 
-**The key asks:** **“What does the President or the agency do?”** Which of the answers you have met so far fits this case?
+**The question:** **“What does the President or the agency do?”** Which of the answers you have met so far fits this case?
 
 - Puts a law Congress passed into practice
 - Demands something of people that no law allows
@@ -1149,7 +1149,7 @@ You meet it whenever the news says that a bill is "on the President’s desk" an
 
 ### 35. The President forgiving a federal crime
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 35 of 47*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 35 of 47*
 
 [reviewers only: card kind `meet`, id `meet-pardon`]
 
@@ -1176,9 +1176,9 @@ It reaches federal crimes only. A person convicted under a state’s own law can
 
 **What you must be able to point to.** A federal crime someone was charged with or convicted of, and the President forgiving it so that the punishment is lifted or never comes. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What does the President or the agency do?”**
+**The question:** **“What does the President or the agency do?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“Forgives a federal crime”**
+**Its answer for a case like this one:** **“Forgives a federal crime”**
 
 The name for this is **Pardon**: the President’s forgiveness of a federal crime.
 
@@ -1186,7 +1186,7 @@ You may also hear this called “a presidential pardon”. That means the same t
 
 ### 36. Pardon: the same thing in a different story
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 36 of 47*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 36 of 47*
 
 [reviewers only: card kind `again`, id `again-pardon`]
 
@@ -1219,7 +1219,7 @@ The two stories share nothing else. So this is not about tax, parks or prison. I
 
 ### 37. Pardon: what it is like
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 37 of 47*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 37 of 47*
 
 [reviewers only: card kind `portrait`, id `portrait-pardon`]
 
@@ -1249,13 +1249,13 @@ You hear about it whenever the news says that someone has been "pardoned" and as
 
 ### 38. A question about a new case
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 38 of 47*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 38 of 47*
 
 [reviewers only: card kind `check`, id `check-pardon`]
 
 > A federal court found a pilot guilty of leaving a test result off a safety form, and sentenced him to a year in prison. Last week the President pardoned him, and the sentence no longer applies.
 
-**The key asks:** **“What does the President or the agency do?”** Which of the answers you have met so far fits this case?
+**The question:** **“What does the President or the agency do?”** Which of the answers you have met so far fits this case?
 
 - Puts a law Congress passed into practice
 - Demands something of people that no law allows
@@ -1277,7 +1277,7 @@ You hear about it whenever the news says that someone has been "pardoned" and as
 
 ### 39. A wrong idea about whom the President can forgive
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 39 of 47*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 39 of 47*
 
 [reviewers only: card kind `refute`, id `refute-pardon`]
 
@@ -1296,7 +1296,7 @@ So when a case says that someone was pardoned, ask first which law the person br
 
 ### 40. Veto or Pardon: telling them apart
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 40 of 47*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 40 of 47*
 
 [reviewers only: card kind `lookalike`, id `look-veto-pardon`]
 
@@ -1318,9 +1318,9 @@ You have now met all six. Two of them are the President acting on something that
 
 **Why this one and not the other**
 
-In Case A the President acts on a bill that Congress has passed: a bill that cuts a fine. The President will not sign it, and sends it back. Nobody has been charged with anything. The key’s answer is **“Refuses to sign a law Congress passed”**, and the case is **Veto**.
+In Case A the President acts on a bill that Congress has passed: a bill that cuts a fine. The President will not sign it, and sends it back. Nobody has been charged with anything. The answer is **“Refuses to sign a law Congress passed”**, and the case is **Veto**.
 
-In Case B the President acts on a man who was fined for dumping rubbish by a federal court, and forgives the crime, so that the fine is cancelled. No bill is in the story. The key’s answer is **“Forgives a federal crime”**, and the case is **Pardon**.
+In Case B the President acts on a man who was fined for dumping rubbish by a federal court, and forgives the crime, so that the fine is cancelled. No bill is in the story. The answer is **“Forgives a federal crime”**, and the case is **Pardon**.
 
 The park, the rubbish and the Monday are the same. What differs is what the President acts on.
 
@@ -1328,7 +1328,7 @@ The park, the rubbish and the Monday are the same. What differs is what the Pres
 
 What is the President acting on: a bill that Congress passed, or a person who broke a federal law?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Veto | Pardon |
 |---|---|---|
@@ -1339,7 +1339,7 @@ What is the President acting on: a bill that Congress passed, or a person who br
 
 ### 41. Veto or Carrying out the law: telling them apart
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 41 of 47*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 41 of 47*
 
 [reviewers only: card kind `lookalike`, id `look-veto-execute`]
 
@@ -1361,9 +1361,9 @@ A law that Congress passed can be in a case about the President or an office in 
 
 **Why this one and not the other**
 
-In Case A the bill has reached the President, who refuses to sign it and sends it back with objections. The bill is not yet a law in force, so there is nothing for an office to put into practice. The key’s answer is **“Refuses to sign a law Congress passed”**, and the case is **Veto**.
+In Case A the bill has reached the President, who refuses to sign it and sends it back with objections. The bill is not yet a law in force, so there is nothing for an office to put into practice. The answer is **“Refuses to sign a law Congress passed”**, and the case is **Veto**.
 
-In Case B the law was passed last year, and an office now publishes what size and weight a free bag must be allowed to have, and when airlines must follow the rule. The key’s answer is **“Puts a law Congress passed into practice”**, and the case is **Carrying out the law**.
+In Case B the law was passed last year, and an office now publishes what size and weight a free bag must be allowed to have, and when airlines must follow the rule. The answer is **“Puts a law Congress passed into practice”**, and the case is **Carrying out the law**.
 
 It is one law at two moments. Before it takes effect, the President may refuse it. After it takes effect, an office puts it into daily practice.
 
@@ -1371,7 +1371,7 @@ It is one law at two moments. Before it takes effect, the President may refuse i
 
 Is the President deciding whether the bill will take effect, or is an office already putting a law into practice?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Veto | Carrying out the law |
 |---|---|---|
@@ -1382,17 +1382,17 @@ Is the President deciding whether the bill will take effect, or is an office alr
 
 ### 42. The question you have been answering all along
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 42 of 47*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 42 of 47*
 
 [reviewers only: card kind `question`, id `q-pres`]
 
-Since the insulation credit you have seen the key’s question at the foot of each new name, with one answer under it. This card puts the question and its six answers in one place, as the key shows them, and says why the key asks it.
+Since the insulation credit you have seen the question at the foot of each new name, with one answer under it. This card puts the question and its six answers in one place, and says why it is asked.
 
-**The key asks:** **“What does the President or the agency do?”**
+**The question:** **“What does the President or the agency do?”**
 
 **What it is for.** Tells apart six things the President and the federal agencies do: carry out a law, demand what no law allows, command the armed forces, deal with other countries, send a law back unsigned, and forgive a federal crime.
 
-**Its answers, exactly as the key shows them**
+**Its answers**
 
 Each answer leads to one name, and so rules out the other five.
 
@@ -1421,7 +1421,7 @@ The six names are defined by the act itself, and for an order or a rule by wheth
 
 The President and the offices do very different things, and each is held back by different limits. An office putting a law into practice may go only as far as the law allows. The President, ordering the forces or dealing with another country, is using a power the President holds alone, and a law Congress passed need not be behind it. The President can refuse a bill that Congress passed or forgive a federal crime, and these two are the President’s alone. An order or a rule that demands something of people outside the government needs a law Congress passed behind it, and without one it is beyond what the President can do.
 
-So the key asks what the President or the office does, and the answer decides which limit to look for. Mistaking one for another sends you to the wrong limit: looking for a law behind an order to the army, or taking an office’s rule for something the President does alone.
+So the question is what the President or the office does, and the answer decides which limit to look for. Mistaking one for another sends you to the wrong limit: looking for a law behind an order to the army, or taking an office’s rule for something the President does alone.
 
 **How to answer it from a case**
 
@@ -1446,13 +1446,13 @@ Sometimes two answers both seem to fit. You have met the common shapes: a rule w
 
 ### 43. A question about a new case
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 43 of 47*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 43 of 47*
 
 [reviewers only: card kind `check`, id `check-pres`]
 
 > The federal housing agency has told every landlord in the country that rent may not rise by more than 3 percent a year, and that landlords who break the rule will be fined. Congress has not passed a law about rents.
 
-**The key asks:** **“What does the President or the agency do?”**
+**The question:** **“What does the President or the agency do?”**
 
 - Puts a law Congress passed into practice
 - Demands something of people that no law allows
@@ -1480,11 +1480,11 @@ Sometimes two answers both seem to fit. You have met the common shapes: a rule w
 
 ### 44. A whole case, from the first question to the name
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 44 of 47*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 44 of 47*
 
 [reviewers only: card kind `worked`, id `worked-hospital`]
 
-You have the six names and the key’s question about them. Before you run a case yourself, watch two being run from the top, in the order the key asks. You are not asked anything until the end of each.
+You have the six names and the question about them. Before you run a case yourself, watch two being run from the top, in the order they are asked. You are not asked anything until the end of each.
 
 *The hospital prices*
 
@@ -1510,7 +1510,7 @@ What it is for: tells apart six things the President and the federal agencies do
 
 Answer: **“Puts a law Congress passed into practice”**
 
-Now ask what the office did. A law stands behind it, and the office fills in the rest: “Congress passed a law last year that requires every hospital that takes federal money to post its prices for common treatments” and “the form the list must take, and the date from which it applies”. It decided the details the law leaves open: the list, the form and the date. It added no demand of its own: it did not tell hospitals to do anything the law does not already require. That is an office putting a law into daily practice and staying inside it, and the key’s answer is **“Puts a law Congress passed into practice”**.
+Now ask what the office did. A law stands behind it, and the office fills in the rest: “Congress passed a law last year that requires every hospital that takes federal money to post its prices for common treatments” and “the form the list must take, and the date from which it applies”. It decided the details the law leaves open: the list, the form and the date. It added no demand of its own: it did not tell hospitals to do anything the law does not already require. That is an office putting a law into daily practice and staying inside it, and the answer is **“Puts a law Congress passed into practice”**.
 
 Still possible: **Carrying out the law**. Ruled out: **Beyond the President’s power**, **Commander in chief**, **Foreign affairs**, **Veto** and **Pardon**.
 
@@ -1530,17 +1530,17 @@ Still possible: **Carrying out the law**. Ruled out: **Beyond the President’s 
 
 For **Beyond the President’s power** you must be able to point to this: an executive order or a rule from the President or a federal agency, something it demands of people or businesses, and no law Congress passed that allows it. The case has a rule that demands something of hospitals, and that is half of it. The other half, no law Congress passed that allows it, is missing: the law is in the first sentence.
 
-It is the question from the salt in snacks. Can you name a law Congress passed that allows what the rule or the order demands, and does the rule or order stay inside it? Here a law exists and the office stays inside it, so the key’s answer is **“Puts a law Congress passed into practice”**.
+It is the question from the salt in snacks. Can you name a law Congress passed that allows what the rule or the order demands, and does the rule or order stay inside it? Here a law exists and the office stays inside it, so the answer is **“Puts a law Congress passed into practice”**.
 
 **Does it look like a case you know?**
 
-The key has given its answer. Now take a second look of a different kind: does this case look like one you know? It should bring back the insulation credit. There too, a law Congress passed came first, and a federal office worked out the form and the details of how people follow it.
+The questions have given their answer. Now take a second look of a different kind: does this case look like one you know? It should bring back the insulation credit. There too, a law Congress passed came first, and a federal office worked out the form and the details of how people follow it.
 
-Here the key and the likeness agree, so the answer stands. The key’s question comes first, because it makes you point at words in the case. The likeness is only a second look. When the two disagree, do not pick the one you prefer. Go back to the key’s question and find the words in the case that answer it. The second whole case shows how.
+Here the questions and the likeness agree, so the answer stands. The question comes first, because it makes you point at words in the case. The likeness is only a second look. When the two disagree, do not pick the one you prefer. Go back to the question and find the words in the case that answer it. The second whole case shows how.
 
 ### 45. A second whole case, where the story points the wrong way
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 45 of 47*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 45 of 47*
 
 [reviewers only: card kind `worked`, id `worked-harbour`]
 
@@ -1570,7 +1570,7 @@ What it is for: tells apart six things the President and the federal agencies do
 
 Answer: **“Gives orders to the armed forces”**
 
-The trade talks were the opening. What the President does after them is give an order to part of the armed forces: “orders the three navy ships in the harbour to sail at once and tow the supply ship clear”. The ships obey the President, and no law is named. Nothing is being negotiated or signed at that point: the talks were put off for the day. The key’s answer is **“Gives orders to the armed forces”**.
+The trade talks were the opening. What the President does after them is give an order to part of the armed forces: “orders the three navy ships in the harbour to sail at once and tow the supply ship clear”. The ships obey the President, and no law is named. Nothing is being negotiated or signed at that point: the talks were put off for the day. The answer is **“Gives orders to the armed forces”**.
 
 Still possible: **Commander in chief**. Ruled out: **Carrying out the law**, **Beyond the President’s power**, **Foreign affairs**, **Veto** and **Pardon**.
 
@@ -1590,13 +1590,13 @@ Still possible: **Commander in chief**. Ruled out: **Carrying out the law**, **B
 
 For **Foreign affairs** you must be able to point to this: the President, or an official acting for the President, dealing with another country: meeting, negotiating or signing an agreement. The first sentence shows a visit and talks about trade. But the visit is where the President is, not what the President decides. The decision at the end is an order to the navy.
 
-It is the question from the ships and the port of Istrene. Who is on the other side of what the President does: the armed forces, who are told where to go or what to do, or the leaders and officials of another country, who are met and negotiated with? Here the President tells the forces what to do, so the key’s answer is **“Gives orders to the armed forces”**.
+It is the question from the ships and the port of Istrene. Who is on the other side of what the President does: the armed forces, who are told where to go or what to do, or the leaders and officials of another country, who are met and negotiated with? Here the President tells the forces what to do, so the answer is **“Gives orders to the armed forces”**.
 
 **Does it look like a case you know?**
 
-Now the second look: does this case look like one you know? A President visiting another country to talk about trade may bring back the coast talks first, and that case was **“Deals with another country”**. So here the likeness and the key seem to disagree.
+Now the second look: does this case look like one you know? A President visiting another country to talk about trade may bring back the coast talks first, and that case was **“Deals with another country”**. So here the likeness and the questions seem to disagree.
 
-When that happens, go back to the key’s question and find the words in the case that answer it. They are “orders the three navy ships in the harbour to sail at once and tow the supply ship clear”. The coast talks have nothing like them: nobody was ordered anywhere. The flood relief does: the President gave an order to the army. So the case this one really looks like is the flood relief, and the key’s answer stands.
+When that happens, go back to the question and find the words in the case that answer it. They are “orders the three navy ships in the harbour to sail at once and tow the supply ship clear”. The coast talks have nothing like them: nobody was ordered anywhere. The flood relief does: the President gave an order to the army. So the case this one really looks like is the flood relief, and the answer stands.
 
 ### The drill
 
@@ -1604,7 +1604,7 @@ The cards are out of view from here, and every case is new. The drill has five s
 
 Many of these cases name a law, an office and the President together, and the one named first is often not the one that decides. Read each case to its end, and look for what the President or the office does last.
 
-#### Stage 1 of 5. The key’s answers are shown for each case. Give the name that goes with them. This stage practises one thing: which name goes with which answer.
+#### Stage 1 of 5. The answers are shown for each case. Give the name that goes with them. This stage practises one thing: which name goes with which answer.
 
 The names offered are the six this unit teaches: Carrying out the law / Beyond the President’s power / Commander in chief / Foreign affairs / Veto / Pardon.
 
@@ -1624,7 +1624,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Beyond the President’s power**: Nothing is demanded that the law does not allow. The law gives the grant, and the office only says how to apply for it.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Beyond the President’s power**, the look-alike card’s lines follow: Both can be a rule or an order from a federal office or the President, and both can have a law somewhere in the story. In **Carrying out the law** a law Congress passed stands behind what is done, and the office stays inside it. In **Beyond the President’s power** no law Congress passed allows what is demanded of people outside the government, so the order or the rule goes past what the President can do alone. Can you name a law Congress passed that allows what the rule or the order demands, and does the rule or order stay inside it?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “An agency putting a law into practice” (one tap opens the card).
 
 **Drill item 2 of 55**
@@ -1643,7 +1643,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Carrying out the law**: An office that carries out a law stays inside a law Congress passed. The case says there is none about cups.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Carrying out the law**, the look-alike card’s lines follow: Both can be a rule or an order from a federal office or the President, and both can have a law somewhere in the story. In **Carrying out the law** a law Congress passed stands behind what is done, and the office stays inside it. In **Beyond the President’s power** no law Congress passed allows what is demanded of people outside the government, so the order or the rule goes past what the President can do alone. Can you name a law Congress passed that allows what the rule or the order demands, and does the rule or order stay inside it?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “An order that demands what no law allows” (one tap opens the card).
 
 **Drill item 3 of 55**
@@ -1662,7 +1662,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Foreign affairs**: The President is not meeting or negotiating with anyone from another country. The order goes to soldiers, and the town that asked is in the same country.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Foreign affairs**, the look-alike card’s lines follow: Both are things the President does for the whole country, and both can involve ships, soldiers or another country’s leader. In **Commander in chief** the President gives the forces their orders, and they obey. In **Foreign affairs** the President, or someone speaking for the President, meets, negotiates or signs with another country’s government. Who is on the other side of what the President does: the armed forces, who are told where to go or what to do, or the leaders and officials of another country, who are met and negotiated with?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “The President giving the armed forces orders” (one tap opens the card).
 
 **Drill item 4 of 55**
@@ -1681,7 +1681,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Commander in chief**: Nobody in the armed forces is given an order. The two leaders settle something between their countries.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Commander in chief**, the look-alike card’s lines follow: Both are things the President does for the whole country, and both can involve ships, soldiers or another country’s leader. In **Commander in chief** the President gives the forces their orders, and they obey. In **Foreign affairs** the President, or someone speaking for the President, meets, negotiates or signs with another country’s government. Who is on the other side of what the President does: the armed forces, who are told where to go or what to do, or the leaders and officials of another country, who are met and negotiated with?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “The President dealing with another country” (one tap opens the card).
 
 **Drill item 5 of 55**
@@ -1700,7 +1700,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Pardon**: No one has been charged with a crime, and nobody is being forgiven. The President is acting on a bill.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Pardon**, the look-alike card’s lines follow: Both are things only the President can do, done by signing or not signing a paper, and both stop something that others set going: a bill Congress passed, or a punishment. In **Veto** the President acts on a bill that Congress has passed, and refuses to sign it. In **Pardon** the President acts on a person who broke a federal law, and forgives the crime. What is the President acting on: a bill that Congress passed, or a person who broke a federal law?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “The President sending a law back unsigned” (one tap opens the card).
 
 **Drill item 6 of 55**
@@ -1719,7 +1719,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Veto**: No bill is in the case. The President is acting on a person who was found guilty, and not on a law Congress passed.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Veto**, the look-alike card’s lines follow: Both are things only the President can do, done by signing or not signing a paper, and both stop something that others set going: a bill Congress passed, or a punishment. In **Veto** the President acts on a bill that Congress has passed, and refuses to sign it. In **Pardon** the President acts on a person who broke a federal law, and forgives the crime. What is the President acting on: a bill that Congress passed, or a person who broke a federal law?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “The President forgiving a federal crime” (one tap opens the card).
 
 **Drill item 7 of 55**
@@ -1738,7 +1738,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Carrying out the law**: The bill is not yet a law in force, so there is nothing for an office to put into practice. The President is deciding whether it goes any further.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Carrying out the law**, the look-alike card’s lines follow: In both a law, or a bill that would become one, is in the story, and the President or an office is acting on it. In **Veto** the President is deciding whether a bill Congress passed will go any further, and refuses it. In **Carrying out the law** the law is already in force, and an office is putting it into daily practice. Is the President deciding whether the bill will take effect, or is an office already putting a law into practice?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “The President sending a law back unsigned” (one tap opens the card).
 
 **Drill item 8 of 55**
@@ -1757,7 +1757,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Veto**: The law has already been passed and is in force, so nobody is deciding whether to sign it. An office is putting it into practice.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Veto**, the look-alike card’s lines follow: In both a law, or a bill that would become one, is in the story, and the President or an office is acting on it. In **Veto** the President is deciding whether a bill Congress passed will go any further, and refuses it. In **Carrying out the law** the law is already in force, and an office is putting it into daily practice. Is the President deciding whether the bill will take effect, or is an office already putting a law into practice?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “An agency putting a law into practice” (one tap opens the card).
 
 #### Stage 2 of 5. One question at a time.
@@ -1780,7 +1780,7 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **Puts a law Congress passed into practice.**” The licence is the law’s own idea, and the office is making it work: “The federal health office published its licence form on Monday”. The visits by inspectors are the next step of the same thing. This answer leads to **Carrying out the law**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **Demands something of people that no law allows**: The office demands nothing that the law does not already require. It only supplies the form.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 10 of 55**
@@ -1801,7 +1801,7 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **Demands something of people that no law allows.**” A new fee falls on every visitor, and the case says that nothing stands behind it: “Congress has passed no law that lets the office charge for parking”. This answer leads to **Beyond the President’s power**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **Puts a law Congress passed into practice**: There is no law about parking for the office to be putting into practice, so a fee set by the office alone is a demand with no law behind it.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 11 of 55**
@@ -1822,7 +1822,7 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **Gives orders to the armed forces.**” The President tells part of the armed forces where to go and what to do: “The President told the navy to send two ships to patrol the northern coast through the winter”. Choosing the admiral who leads them is part of the same thing. This answer leads to **Commander in chief**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **Deals with another country**: Nobody from another country is met or negotiated with. The order goes to the navy, and the coast is the country’s own.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 12 of 55**
@@ -1843,7 +1843,7 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **Deals with another country.**” An official speaking for the President is dealing with another country’s government: “The Secretary of State, speaking for the President, met the education minister of Brasland”. The two are agreeing how something will work between their countries. This answer leads to **Foreign affairs**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **Puts a law Congress passed into practice**: The official is not putting a law Congress passed into practice. The official is meeting another country’s minister.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 13 of 55**
@@ -1864,7 +1864,7 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **Refuses to sign a law Congress passed.**” The bill has passed, and what the President decides is the refusal: “The President would not sign it, and on Friday sent it back to Congress with a letter of objections”. This answer leads to **Veto**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **Puts a law Congress passed into practice**: The bill is not a law that an office is carrying out. The President is refusing it.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 14 of 55**
@@ -1885,7 +1885,7 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **Forgives a federal crime.**” The President’s act comes after a federal court has found her guilty: “the President forgave the crime, and she was released that day”. It lifts what is left of her sentence. This answer leads to **Pardon**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **Refuses to sign a law Congress passed**: No bill is in the case. The President is acting on a person, and on a crime that has already been judged.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 15 of 55**
@@ -2138,12 +2138,12 @@ Shown to you, with the words that decide each answer marked:
 **Shown as soon as you answer**
 
 - If you are right: “Right: **Congress, in the House or the Senate.**” The last decision is a vote by lawmakers of the whole country: “the House of Representatives voted for a bill that would cut the price of a stamp by two cents”. The Senate has not voted, and the case stops before it does. Nobody else decides anything.
-- If you miss: “The answer is …”, the same reason, and then the line built from the key for the answer you chose.
-- Then, right or wrong: “This case leaves the part of the key you have been taught. The questions that follow this answer come in a part of the course you have not reached, so the case stops here.”
+- If you miss: “The answer is …”, the same reason, and then the line built from the answers’ own wording for the answer you chose.
+- Then, right or wrong: “The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.”
 
-#### Stage 3 of 5. The first answer is shown. Answer the rest, then give the name. From here on your route is marked as well as the name: a right name reached by a wrong answer on the way counts as a miss.
+#### Stage 3 of 5. The first answer is shown. Answer the rest, then give the name. From here on your answers on the way are marked as well as the name: a right name reached by a wrong answer counts as a miss.
 
-Each question is shown with all of its answers from the key, in the key’s order, and the names offered are the six this unit teaches.
+Each question is shown with all of its answers, in order, and the names offered are the six this unit teaches.
 
 **Drill item 30 of 55**
 
@@ -2160,10 +2160,10 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Beyond the President’s power**: The office’s rule is about how to follow a law that exists. It does not ask for anything the law does not already require.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - If you chose **Demands something of people that no law allows**: The office’s rule is about how to follow a law that exists. It does not ask for anything the law does not already require.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Beyond the President’s power**, the look-alike card’s lines follow: Both can be a rule or an order from a federal office or the President, and both can have a law somewhere in the story. In **Carrying out the law** a law Congress passed stands behind what is done, and the office stays inside it. In **Beyond the President’s power** no law Congress passed allows what is demanded of people outside the government, so the order or the rule goes past what the President can do alone. Can you name a law Congress passed that allows what the rule or the order demands, and does the rule or order stay inside it?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “An agency putting a law into practice” (one tap opens the card).
 
 **Drill item 31 of 55**
@@ -2181,10 +2181,10 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Carrying out the law**: There is no law for the order to be carrying out. The order names none, and the fee goes to people outside the government.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - If you chose **Puts a law Congress passed into practice**: There is no law for the order to be carrying out. The order names none, and the fee goes to people outside the government.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Carrying out the law**, the look-alike card’s lines follow: Both can be a rule or an order from a federal office or the President, and both can have a law somewhere in the story. In **Carrying out the law** a law Congress passed stands behind what is done, and the office stays inside it. In **Beyond the President’s power** no law Congress passed allows what is demanded of people outside the government, so the order or the rule goes past what the President can do alone. Can you name a law Congress passed that allows what the rule or the order demands, and does the rule or order stay inside it?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “An order that demands what no law allows” (one tap opens the card).
 
 **Drill item 32 of 55**
@@ -2202,10 +2202,10 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Foreign affairs**: Nobody from another country is met or negotiated with. The order goes to the army, and the island is the country’s own.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - If you chose **Deals with another country**: Nobody from another country is met or negotiated with. The order goes to the army, and the island is the country’s own.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Foreign affairs**, the look-alike card’s lines follow: Both are things the President does for the whole country, and both can involve ships, soldiers or another country’s leader. In **Commander in chief** the President gives the forces their orders, and they obey. In **Foreign affairs** the President, or someone speaking for the President, meets, negotiates or signs with another country’s government. Who is on the other side of what the President does: the armed forces, who are told where to go or what to do, or the leaders and officials of another country, who are met and negotiated with?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “The President giving the armed forces orders” (one tap opens the card).
 
 **Drill item 33 of 55**
@@ -2223,15 +2223,15 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Commander in chief**: Nobody in the armed forces is given an order. The two leaders agree something between their countries.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - If you chose **Gives orders to the armed forces**: Nobody in the armed forces is given an order. The two leaders agree something between their countries.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Commander in chief**, the look-alike card’s lines follow: Both are things the President does for the whole country, and both can involve ships, soldiers or another country’s leader. In **Commander in chief** the President gives the forces their orders, and they obey. In **Foreign affairs** the President, or someone speaking for the President, meets, negotiates or signs with another country’s government. Who is on the other side of what the President does: the armed forces, who are told where to go or what to do, or the leaders and officials of another country, who are met and negotiated with?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “The President dealing with another country” (one tap opens the card).
 
-#### Stage 4 of 5. No help. Answer every question in the key’s order, then give the name.
+#### Stage 4 of 5. No help. Answer every question in order, then give the name.
 
-Each question is shown with all of its answers from the key, in the key’s order, and the names offered are the six this unit teaches.
+Each question is shown with all of its answers, in order, and the names offered are the six this unit teaches.
 
 **Drill item 34 of 55**
 
@@ -2246,10 +2246,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **The President or a federal agency.** The last decision in the case is an office’s: “the federal medicines office published what a prescription for lenses must show and how long it stays valid”. It belongs to the government of the whole country, and it is not lawmakers, a judge or a state.
   - If you chose **Demands something of people that no law allows**: The office demands nothing that the law does not already require. It says only what a prescription must show.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Beyond the President’s power**, the look-alike card’s lines follow: Both can be a rule or an order from a federal office or the President, and both can have a law somewhere in the story. In **Carrying out the law** a law Congress passed stands behind what is done, and the office stays inside it. In **Beyond the President’s power** no law Congress passed allows what is demanded of people outside the government, so the order or the rule goes past what the President can do alone. Can you name a law Congress passed that allows what the rule or the order demands, and does the rule or order stay inside it?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “An agency putting a law into practice” (one tap opens the card).
 
 **Drill item 35 of 55**
@@ -2265,10 +2265,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **The President or a federal agency.** The last decision in the case is the President’s: “The President signed an executive order that every cinema in the country must give each customer a free glass of water”. Nobody votes, and no judge has been asked anything.
   - If you chose **Puts a law Congress passed into practice**: There is no law about cinemas for the order to be carrying out, and the order names none.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Carrying out the law**, the look-alike card’s lines follow: Both can be a rule or an order from a federal office or the President, and both can have a law somewhere in the story. In **Carrying out the law** a law Congress passed stands behind what is done, and the office stays inside it. In **Beyond the President’s power** no law Congress passed allows what is demanded of people outside the government, so the order or the rule goes past what the President can do alone. Can you name a law Congress passed that allows what the rule or the order demands, and does the rule or order stay inside it?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “An order that demands what no law allows” (one tap opens the card).
 
 **Drill item 36 of 55**
@@ -2284,10 +2284,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **The President or a federal agency.** The last decision in the case is the President’s: “the President ordered an air force transport plane to fly the medicine to the island”. Nobody votes, and no judge appears.
   - If you chose **Deals with another country**: Nobody from another country is met or negotiated with. The island is the country’s own, and the order goes to the air force.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Foreign affairs**, the look-alike card’s lines follow: Both are things the President does for the whole country, and both can involve ships, soldiers or another country’s leader. In **Commander in chief** the President gives the forces their orders, and they obey. In **Foreign affairs** the President, or someone speaking for the President, meets, negotiates or signs with another country’s government. Who is on the other side of what the President does: the armed forces, who are told where to go or what to do, or the leaders and officials of another country, who are met and negotiated with?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “The President giving the armed forces orders” (one tap opens the card).
 
 **Drill item 37 of 55**
@@ -2303,10 +2303,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **The President or a federal agency.** The last decision is made by an official acting for the President: “The Secretary of State, acting for the President, flew to the capital of Zanta”. That official belongs to the government of the whole country.
   - If you chose **Gives orders to the armed forces**: Nobody in the armed forces is given an order. The two governments work out how a river will be shared.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Commander in chief**, the look-alike card’s lines follow: Both are things the President does for the whole country, and both can involve ships, soldiers or another country’s leader. In **Commander in chief** the President gives the forces their orders, and they obey. In **Foreign affairs** the President, or someone speaking for the President, meets, negotiates or signs with another country’s government. Who is on the other side of what the President does: the armed forces, who are told where to go or what to do, or the leaders and officials of another country, who are met and negotiated with?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “The President dealing with another country” (one tap opens the card).
 
 **Drill item 38 of 55**
@@ -2322,10 +2322,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **The President or a federal agency.** The last decision in the case is the President’s: “The President refused to sign it and sent it back to Congress with a note of objections”. The vote in Congress was earlier, and it is how the matter got here.
   - If you chose **Forgives a federal crime**: No one has been charged with a crime. The President is acting on a bill, and not on a person.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Pardon**, the look-alike card’s lines follow: Both are things only the President can do, done by signing or not signing a paper, and both stop something that others set going: a bill Congress passed, or a punishment. In **Veto** the President acts on a bill that Congress has passed, and refuses to sign it. In **Pardon** the President acts on a person who broke a federal law, and forgives the crime. What is the President acting on: a bill that Congress passed, or a person who broke a federal law?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “The President sending a law back unsigned” (one tap opens the card).
 
 **Drill item 39 of 55**
@@ -2341,10 +2341,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **The President or a federal agency.** The last decision in the case is the President’s: “the President signed a paper that forgives the crime and ends the rest of the sentence”. A federal court decided earlier, and it is not being asked anything now.
   - If you chose **Refuses to sign a law Congress passed**: No bill is in the case. The President is acting on a man who was found guilty of a crime.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Veto**, the look-alike card’s lines follow: Both are things only the President can do, done by signing or not signing a paper, and both stop something that others set going: a bill Congress passed, or a punishment. In **Veto** the President acts on a bill that Congress has passed, and refuses to sign it. In **Pardon** the President acts on a person who broke a federal law, and forgives the crime. What is the President acting on: a bill that Congress passed, or a person who broke a federal law?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “The President forgiving a federal crime” (one tap opens the card).
 
 **Drill item 40 of 55**
@@ -2360,10 +2360,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **The President or a federal agency.** The last decision is an office’s: “The federal education office put out the reporting form in August”. It is a federal office, and no vote or judge comes after it.
   - If you chose **Refuses to sign a law Congress passed**: The law is already passed and in force, so nobody is deciding whether to sign it. An office is making it work.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Veto**, the look-alike card’s lines follow: In both a law, or a bill that would become one, is in the story, and the President or an office is acting on it. In **Veto** the President is deciding whether a bill Congress passed will go any further, and refuses it. In **Carrying out the law** the law is already in force, and an office is putting it into daily practice. Is the President deciding whether the bill will take effect, or is an office already putting a law into practice?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “An agency putting a law into practice” (one tap opens the card).
 
 **Drill item 41 of 55**
@@ -2379,10 +2379,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **The President or a federal agency.** The last decision in the case is the President’s: “would not sign the bill, and returned it to Congress on Monday”.
   - If you chose **Puts a law Congress passed into practice**: The bridge has not been built under any law. The bill has not become one, and the President is refusing it.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Carrying out the law**, the look-alike card’s lines follow: In both a law, or a bill that would become one, is in the story, and the President or an office is acting on it. In **Veto** the President is deciding whether a bill Congress passed will go any further, and refuses it. In **Carrying out the law** the law is already in force, and an office is putting it into daily practice. Is the President deciding whether the bill will take effect, or is an office already putting a law into practice?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “The President sending a law back unsigned” (one tap opens the card).
 
 **Drill item 42 of 55**
@@ -2398,10 +2398,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **The President or a federal agency.** The last decision is an officer’s: “an officer of the federal immigration service checked Ms Okoye’s papers against the list in the law”. The officer works for an office of the government of the whole country.
   - If you chose **Deals with another country**: Ms Okoye may have come from another country, but the officer is not dealing with that country. The officer is checking one person’s papers against a law.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Foreign affairs**, the look-alike card’s lines follow: Both are done by federal officials, and both can involve people who come from another country. In **Foreign affairs** the official sits across the table from another country’s government, as one country with another. In **Carrying out the law** the official makes a law Congress passed work for people, even when the people come from another country. Is the official dealing with another country’s government, or dealing with people under a law Congress passed?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “An agency putting a law into practice” (one tap opens the card).
 
 **Drill item 43 of 55**
@@ -2417,10 +2417,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **The President or a federal agency.** The last decision is made by an official speaking for the President: “The Secretary of State, speaking for the President, met the ministers of Lorandia on Tuesday”.
   - If you chose **Puts a law Congress passed into practice**: No law Congress passed is being put into practice for one person. The official is dealing with another country’s ministers.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Carrying out the law**, the look-alike card’s lines follow: Both are done by federal officials, and both can involve people who come from another country. In **Foreign affairs** the official sits across the table from another country’s government, as one country with another. In **Carrying out the law** the official makes a law Congress passed work for people, even when the people come from another country. Is the official dealing with another country’s government, or dealing with people under a law Congress passed?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “The President dealing with another country” (one tap opens the card).
 
 **Drill item 44 of 55**
@@ -2436,10 +2436,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **The President or a federal agency.** The last decision in the case is the President’s: “Last Monday the President signed a pardon for her”. The federal court decided earlier.
   - If you chose **Refuses to sign a law Congress passed**: No bill is in the case. The President is acting on a person who was found guilty of a crime.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Veto**, the look-alike card’s lines follow: Both are things only the President can do, done by signing or not signing a paper, and both stop something that others set going: a bill Congress passed, or a punishment. In **Veto** the President acts on a bill that Congress has passed, and refuses to sign it. In **Pardon** the President acts on a person who broke a federal law, and forgives the crime. What is the President acting on: a bill that Congress passed, or a person who broke a federal law?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “The President forgiving a federal crime” (one tap opens the card).
 
 **Drill item 45 of 55**
@@ -2455,10 +2455,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **The President or a federal agency.** The last decision in the case is the President’s: “on Thursday wrote to the House and the Senate saying so and returned the bill without a signature”. The vote in Congress came before it.
   - If you chose **Forgives a federal crime**: No one has been charged with a crime. The President is acting on a bill, and not on a person.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Pardon**, the look-alike card’s lines follow: Both are things only the President can do, done by signing or not signing a paper, and both stop something that others set going: a bill Congress passed, or a punishment. In **Veto** the President acts on a bill that Congress has passed, and refuses to sign it. In **Pardon** the President acts on a person who broke a federal law, and forgives the crime. What is the President acting on: a bill that Congress passed, or a person who broke a federal law?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “The President sending a law back unsigned” (one tap opens the card).
 
 **Drill item 46 of 55**
@@ -2474,11 +2474,11 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **The President or a federal agency.** The last decision in the case is the office’s: “the office announced that from next month the fee will be 6 percent”. The law came first, and it is how the matter got here.
   - If you chose **Puts a law Congress passed into practice**: The case looks like an office carrying out a law: a law, an office, a fee. But the office has gone past the law, and a rule that goes past it has no law behind it.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Carrying out the law**, the look-alike card’s lines follow: Both can be a rule or an order from a federal office or the President, and both can have a law somewhere in the story. In **Carrying out the law** a law Congress passed stands behind what is done, and the office stays inside it. In **Beyond the President’s power** no law Congress passed allows what is demanded of people outside the government, so the order or the rule goes past what the President can do alone. Can you name a law Congress passed that allows what the rule or the order demands, and does the rule or order stay inside it?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *The insulation credit*, which was **Carrying out the law**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *The insulation credit*, which was **Carrying out the law**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If the office kept the fee at 2 percent and only published the form for paying it, the case would be an office putting a law into practice.
 - Taught on: “An order that demands what no law allows” (one tap opens the card).
 
@@ -2495,11 +2495,11 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **The President or a federal agency.** The last decision in the case is the President’s: “the President signed an executive order telling the offices to hand each new worker a written copy of the safety rules on the first day”. Nobody votes, and no judge is asked anything.
   - If you chose **Demands something of people that no law allows**: An order from the President that nobody voted on is often what **Beyond the President’s power** looks like. But this order asks nothing of people outside the government, and a law stands behind it.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Beyond the President’s power**, the look-alike card’s lines follow: Both can be a rule or an order from a federal office or the President, and both can have a law somewhere in the story. In **Carrying out the law** a law Congress passed stands behind what is done, and the office stays inside it. In **Beyond the President’s power** no law Congress passed allows what is demanded of people outside the government, so the order or the rule goes past what the President can do alone. Can you name a law Congress passed that allows what the rule or the order demands, and does the rule or order stay inside it?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *The straw ban*, which was **Beyond the President’s power**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *The straw ban*, which was **Beyond the President’s power**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If the order had told every private company in the country to train its workers, and no law required that, the case would be a demand with no law behind it.
 - Taught on: “An agency putting a law into practice” (one tap opens the card).
 
@@ -2516,11 +2516,11 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **The President or a federal agency.** The last decision in the case is the President’s: “the President ordered the three hundred soldiers who had been training in the ally’s country to come home on Friday”. The ceremony with the ally’s leader came earlier in the day.
   - If you chose **Deals with another country**: The visit and the ally’s leader make the case look like dealing with another country. But the leader only says thank you, and the decision at the end is an order to soldiers.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Foreign affairs**, the look-alike card’s lines follow: Both are things the President does for the whole country, and both can involve ships, soldiers or another country’s leader. In **Commander in chief** the President gives the forces their orders, and they obey. In **Foreign affairs** the President, or someone speaking for the President, meets, negotiates or signs with another country’s government. Who is on the other side of what the President does: the armed forces, who are told where to go or what to do, or the leaders and officials of another country, who are met and negotiated with?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *The coast talks*, which was **Foreign affairs**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *The coast talks*, which was **Foreign affairs**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If the two leaders had spent the afternoon agreeing how long the soldiers may stay, and signed an agreement, the case would be one of dealing with another country.
 - Taught on: “The President giving the armed forces orders” (one tap opens the card).
 
@@ -2537,11 +2537,11 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **The President or a federal agency.** The last decision in the case is the President’s: “On Tuesday the President flew to Brisk and spent the day with its government”. The soldiers’ arrival on Monday is how the matter got here.
   - If you chose **Gives orders to the armed forces**: Soldiers and a field hospital make the case look like an order to the armed forces. But the case ends on talks and a signed agreement with another country’s government.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Commander in chief**, the look-alike card’s lines follow: Both are things the President does for the whole country, and both can involve ships, soldiers or another country’s leader. In **Commander in chief** the President gives the forces their orders, and they obey. In **Foreign affairs** the President, or someone speaking for the President, meets, negotiates or signs with another country’s government. Who is on the other side of what the President does: the armed forces, who are told where to go or what to do, or the leaders and officials of another country, who are met and negotiated with?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *The flood relief*, which was **Commander in chief**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *The flood relief*, which was **Commander in chief**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If the President had stayed at home and ordered the soldiers to leave Brisk on Friday, the case would be an order to the armed forces.
 - Taught on: “The President dealing with another country” (one tap opens the card).
 
@@ -2561,8 +2561,8 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - If you are right: “Right: **A state, city or county government.**” The last decision is a vote by the lawmakers of one state: “the Corvin state legislature voted to start the school year a week later in every public school in the state”. It is about public schools in that state only.
-- If you miss: “The answer is …”, the same reason, and then the line built from the key for the answer you chose.
-- Then, right or wrong: “This case leaves the part of the key you have been taught. The questions that follow this answer come in a part of the course you have not reached, so the case stops here.”
+- If you miss: “The answer is …”, the same reason, and then the line built from the answers’ own wording for the answer you chose.
+- Then, right or wrong: “The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.”
 
 #### Last stage. Each of these is something a person might say that uses one of this unit’s names, or reasons in one of its ways. Each has a fault. The first is worked for you. For the rest, answer before the fault is shown.
 
@@ -2599,7 +2599,7 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - The answer is: **Congress, in the House or the Senate.**
-- If you chose another answer, the line is built from the key, as for any other question.
+- If you chose another answer, the line is built from the answers’ own wording, as for any other question.
 - The fault: The claim treats the power to command the forces as the power to declare a war. They are different decisions made by different people. A declaration of war is made by Congress, which also votes the money for the forces.
 - The claim, put right (always the last thing shown): The President is the head of the army and the navy, and gives them their orders. Only Congress can declare war, and it also votes the money for the forces.
 
@@ -2679,21 +2679,21 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - The answer is: **Refuses to sign a law Congress passed.**
-- If you chose another answer, the line is built from the key, as for any other question.
+- If you chose another answer, the line is built from the answers’ own wording, as for any other question.
 - The fault: The claim is right that the President can refuse to sign a bill and send it back. It is wrong that this stops the bill for good. Congress can pass the bill anyway, if two-thirds of the House and two-thirds of the Senate vote for it again.
 - The claim, put right (always the last thing shown): The President can refuse to sign a bill and send it back to Congress with objections. Congress can still pass the bill, if two-thirds of the House and two-thirds of the Senate vote for it again.
 
-**When the drill ends.** The learner sees their own results: first-try accuracy for each stage, whole routes beside single questions, the pair of names they mixed up most often, and what will come back and when. Anything missed was asked again before the drill ended. Nothing here is graded. A miss only decides what comes back.
+**When the drill ends.** The learner sees their own results: first-try accuracy for each stage, whole cases beside single questions, the pair of names they mixed up most often, and what will come back and when. Anything missed was asked again before the drill ended. Nothing here is graded. A miss only decides what comes back.
 
 ### 46. What to carry away
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 46 of 47*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 46 of 47*
 
 [reviewers only: card kind `recap`, id `recap-pres`]
 
-You have now run the key on your own. This card puts the unit in one place, in the key’s words.
+You have now run the questions on your own. This card puts the unit in one place.
 
-**The key for this unit, in its own words**
+**This unit’s questions and answers**
 
 What does the President or the agency do?
 - Puts a law Congress passed into practice → Carrying out the law
@@ -2726,11 +2726,11 @@ What does the President or the agency do?
 - An order from the President is not always **Beyond the President’s power**. An *executive order* that only tells the offices how to do their work is **Carrying out the law**. Look at what it demands, and of whom.
 - A visit by another country’s leader does not make a case **Foreign affairs**, and soldiers in a case do not make it **Commander in chief**. What the President does decides.
 - Only Congress can declare war, and the President cannot forgive a crime against a state’s own law. When a case seems to say otherwise, check whose decision it ends on.
-- Every case in this unit begins with the key’s first question, and its answer is **“The President or a federal agency”**. A signed law is not the President’s decision, and a refusal to sign is.
+- Every case in this unit begins with the first question, and its answer is **“The President or a federal agency”**. A signed law is not the President’s decision, and a refusal to sign is.
 
 ### 47. Where would you meet this?
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 47 of 47*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 47 of 47*
 
 [reviewers only: card kind `transfer`, id `transfer-pres`]
 
@@ -2759,7 +2759,7 @@ One line is enough. It is kept on this device only and is never marked.
 
 ## After the unit: what comes back on later days
 
-A name that is due returns as a case the learner has not seen, next to a case of the name they most often confuse it with. Each is run as a whole route. These are the fresh cases held back for that purpose: three for each name, one for each scheduled return. The first return is about two days after the drill, the next about a week after that, the next about three and a half weeks later.
+A name that is due returns as a case the learner has not seen, next to a case of the name they most often confuse it with. Each is run as a whole case: every question, then the name. These are the fresh cases held back for that purpose: three for each name, one for each scheduled return. The first return is about two days after the drill, the next about a week after that, the next about three and a half weeks later.
 
 **Return case 1 of 18**
 
@@ -2774,10 +2774,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **The President or a federal agency.** The last decision in the case is an office’s: “the federal farm office published the list of products that count as that chemical”. It belongs to the government of the whole country.
   - If you chose **Demands something of people that no law allows**: The ban comes from a law Congress passed. The office only works out which products fall under it.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Beyond the President’s power**, the look-alike card’s lines follow: Both can be a rule or an order from a federal office or the President, and both can have a law somewhere in the story. In **Carrying out the law** a law Congress passed stands behind what is done, and the office stays inside it. In **Beyond the President’s power** no law Congress passed allows what is demanded of people outside the government, so the order or the rule goes past what the President can do alone. Can you name a law Congress passed that allows what the rule or the order demands, and does the rule or order stay inside it?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “An agency putting a law into practice” (one tap opens the card).
 
 **Return case 2 of 18**
@@ -2793,10 +2793,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **The President or a federal agency.** The last decision is an office’s: “The federal housing office sent every builder a checklist on Monday”. Nobody votes, and no judge is asked anything.
   - If you chose **Refuses to sign a law Congress passed**: The law has already been passed and is in force. Nobody is deciding whether it goes ahead: an office is making it work.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Veto**, the look-alike card’s lines follow: In both a law, or a bill that would become one, is in the story, and the President or an office is acting on it. In **Veto** the President is deciding whether a bill Congress passed will go any further, and refuses it. In **Carrying out the law** the law is already in force, and an office is putting it into daily practice. Is the President deciding whether the bill will take effect, or is an office already putting a law into practice?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “An agency putting a law into practice” (one tap opens the card).
 
 **Return case 3 of 18**
@@ -2812,10 +2812,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **The President or a federal agency.** The last decision is an office’s: “the federal tax office mailed airlines the form for paying the tax each month”. It belongs to the government of the whole country.
   - If you chose **Deals with another country**: Some of the airlines may belong to other countries, but the office is not dealing with those countries. It is collecting a tax under a law.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Foreign affairs**, the look-alike card’s lines follow: Both are done by federal officials, and both can involve people who come from another country. In **Foreign affairs** the official sits across the table from another country’s government, as one country with another. In **Carrying out the law** the official makes a law Congress passed work for people, even when the people come from another country. Is the official dealing with another country’s government, or dealing with people under a law Congress passed?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “An agency putting a law into practice” (one tap opens the card).
 
 **Return case 4 of 18**
@@ -2831,10 +2831,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **The President or a federal agency.** The last decision in the case is an office’s: “The federal education office announced that every school in the country must serve a hot lunch to every pupil each day”. Nobody votes, and no judge is asked anything.
   - If you chose **Puts a law Congress passed into practice**: There is no law about hot lunches for the office to be putting into practice, and the office points to none.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Carrying out the law**, the look-alike card’s lines follow: Both can be a rule or an order from a federal office or the President, and both can have a law somewhere in the story. In **Carrying out the law** a law Congress passed stands behind what is done, and the office stays inside it. In **Beyond the President’s power** no law Congress passed allows what is demanded of people outside the government, so the order or the rule goes past what the President can do alone. Can you name a law Congress passed that allows what the rule or the order demands, and does the rule or order stay inside it?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “An order that demands what no law allows” (one tap opens the card).
 
 **Return case 5 of 18**
@@ -2850,10 +2850,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **The President or a federal agency.** The last decision in the case is the President’s: “The President signed an executive order that every company with more than fifty workers must give each worker a free bus pass”.
   - If you chose **Puts a law Congress passed into practice**: The order tells private companies what to do, and it names no law that it carries out.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Carrying out the law**, the look-alike card’s lines follow: Both can be a rule or an order from a federal office or the President, and both can have a law somewhere in the story. In **Carrying out the law** a law Congress passed stands behind what is done, and the office stays inside it. In **Beyond the President’s power** no law Congress passed allows what is demanded of people outside the government, so the order or the rule goes past what the President can do alone. Can you name a law Congress passed that allows what the rule or the order demands, and does the rule or order stay inside it?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “An order that demands what no law allows” (one tap opens the card).
 
 **Return case 6 of 18**
@@ -2869,10 +2869,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **The President or a federal agency.** The last decision in the case is an office’s: “The federal housing office announced a rule that no landlord in the country may refuse a tenant a pet”.
   - If you chose **Puts a law Congress passed into practice**: The rule is about rented homes, and Congress has passed no law on them. The office has nothing to be carrying out.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Carrying out the law**, the look-alike card’s lines follow: Both can be a rule or an order from a federal office or the President, and both can have a law somewhere in the story. In **Carrying out the law** a law Congress passed stands behind what is done, and the office stays inside it. In **Beyond the President’s power** no law Congress passed allows what is demanded of people outside the government, so the order or the rule goes past what the President can do alone. Can you name a law Congress passed that allows what the rule or the order demands, and does the rule or order stay inside it?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “An order that demands what no law allows” (one tap opens the card).
 
 **Return case 7 of 18**
@@ -2888,10 +2888,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **The President or a federal agency.** The last decision in the case is the President’s: “the President ordered the army’s engineers to build a temporary bridge”.
   - If you chose **Deals with another country**: Nobody from another country is met or negotiated with. The order goes to the army’s engineers.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Foreign affairs**, the look-alike card’s lines follow: Both are things the President does for the whole country, and both can involve ships, soldiers or another country’s leader. In **Commander in chief** the President gives the forces their orders, and they obey. In **Foreign affairs** the President, or someone speaking for the President, meets, negotiates or signs with another country’s government. Who is on the other side of what the President does: the armed forces, who are told where to go or what to do, or the leaders and officials of another country, who are met and negotiated with?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “The President giving the armed forces orders” (one tap opens the card).
 
 **Return case 8 of 18**
@@ -2907,10 +2907,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **The President or a federal agency.** The last decision in the case is the President’s: “the President chose a general to take his place”.
   - If you chose **Deals with another country**: Nobody from another country is met or negotiated with. The choice is of a person to lead part of the armed forces.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Foreign affairs**, the look-alike card’s lines follow: Both are things the President does for the whole country, and both can involve ships, soldiers or another country’s leader. In **Commander in chief** the President gives the forces their orders, and they obey. In **Foreign affairs** the President, or someone speaking for the President, meets, negotiates or signs with another country’s government. Who is on the other side of what the President does: the armed forces, who are told where to go or what to do, or the leaders and officials of another country, who are met and negotiated with?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “The President giving the armed forces orders” (one tap opens the card).
 
 **Return case 9 of 18**
@@ -2926,10 +2926,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **The President or a federal agency.** The last decision in the case is the President’s: “the President told the navy to send the ship to the damaged harbour in the west instead”.
   - If you chose **Deals with another country**: Both harbours are in the country’s own territory, and nobody from another country is involved. The order goes to the navy.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Foreign affairs**, the look-alike card’s lines follow: Both are things the President does for the whole country, and both can involve ships, soldiers or another country’s leader. In **Commander in chief** the President gives the forces their orders, and they obey. In **Foreign affairs** the President, or someone speaking for the President, meets, negotiates or signs with another country’s government. Who is on the other side of what the President does: the armed forces, who are told where to go or what to do, or the leaders and officials of another country, who are met and negotiated with?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “The President giving the armed forces orders” (one tap opens the card).
 
 **Return case 10 of 18**
@@ -2945,10 +2945,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **The President or a federal agency.** The last decision is made by an official speaking for the President: “The Secretary of State, speaking for the President, flew to Pellora to agree with its government”.
   - If you chose **Gives orders to the armed forces**: Nobody in the armed forces is given an order. The two governments agree how teams will be treated.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Commander in chief**, the look-alike card’s lines follow: Both are things the President does for the whole country, and both can involve ships, soldiers or another country’s leader. In **Commander in chief** the President gives the forces their orders, and they obey. In **Foreign affairs** the President, or someone speaking for the President, meets, negotiates or signs with another country’s government. Who is on the other side of what the President does: the armed forces, who are told where to go or what to do, or the leaders and officials of another country, who are met and negotiated with?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “The President dealing with another country” (one tap opens the card).
 
 **Return case 11 of 18**
@@ -2964,10 +2964,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **The President or a federal agency.** The last decision in the case is the President’s: “The President sat down with the prime minister of Taldor at the capital on Wednesday”.
   - If you chose **Gives orders to the armed forces**: No order goes to the armed forces. The President and another country’s leader settle how a cost will be shared.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Commander in chief**, the look-alike card’s lines follow: Both are things the President does for the whole country, and both can involve ships, soldiers or another country’s leader. In **Commander in chief** the President gives the forces their orders, and they obey. In **Foreign affairs** the President, or someone speaking for the President, meets, negotiates or signs with another country’s government. Who is on the other side of what the President does: the armed forces, who are told where to go or what to do, or the leaders and officials of another country, who are met and negotiated with?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “The President dealing with another country” (one tap opens the card).
 
 **Return case 12 of 18**
@@ -2983,10 +2983,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **The President or a federal agency.** The last decision is made by an official acting for the President: “An official acting for the President met the officials of Orsen on the bridge between the two countries on Tuesday”.
   - If you chose **Puts a law Congress passed into practice**: No law Congress passed is being put into practice. The official is meeting another country’s officials, and they agree something between the two countries.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Carrying out the law**, the look-alike card’s lines follow: Both are done by federal officials, and both can involve people who come from another country. In **Foreign affairs** the official sits across the table from another country’s government, as one country with another. In **Carrying out the law** the official makes a law Congress passed work for people, even when the people come from another country. Is the official dealing with another country’s government, or dealing with people under a law Congress passed?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “The President dealing with another country” (one tap opens the card).
 
 **Return case 13 of 18**
@@ -3002,10 +3002,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **The President or a federal agency.** The last decision in the case is the President’s: “on Tuesday returned the bill to Congress, unsigned, with a letter saying so”. The vote in Congress was earlier.
   - If you chose **Forgives a federal crime**: No one has been charged with a crime. The President is acting on a bill.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Pardon**, the look-alike card’s lines follow: Both are things only the President can do, done by signing or not signing a paper, and both stop something that others set going: a bill Congress passed, or a punishment. In **Veto** the President acts on a bill that Congress has passed, and refuses to sign it. In **Pardon** the President acts on a person who broke a federal law, and forgives the crime. What is the President acting on: a bill that Congress passed, or a person who broke a federal law?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “The President sending a law back unsigned” (one tap opens the card).
 
 **Return case 14 of 18**
@@ -3021,10 +3021,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **The President or a federal agency.** The last decision in the case is the President’s: “On Monday the President sent it back with a letter of objections, and no signature”.
   - If you chose **Puts a law Congress passed into practice**: The bill has not become a law that anyone is putting into practice. The President is refusing it.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Carrying out the law**, the look-alike card’s lines follow: In both a law, or a bill that would become one, is in the story, and the President or an office is acting on it. In **Veto** the President is deciding whether a bill Congress passed will go any further, and refuses it. In **Carrying out the law** the law is already in force, and an office is putting it into daily practice. Is the President deciding whether the bill will take effect, or is an office already putting a law into practice?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “The President sending a law back unsigned” (one tap opens the card).
 
 **Return case 15 of 18**
@@ -3040,10 +3040,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **The President or a federal agency.** The last decision in the case is the President’s: “the President wrote to the House and the Senate that it would not be signed, and returned it”.
   - If you chose **Forgives a federal crime**: No one has been charged with a crime, and nobody is being forgiven. The President is acting on a bill.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Pardon**, the look-alike card’s lines follow: Both are things only the President can do, done by signing or not signing a paper, and both stop something that others set going: a bill Congress passed, or a punishment. In **Veto** the President acts on a bill that Congress has passed, and refuses to sign it. In **Pardon** the President acts on a person who broke a federal law, and forgives the crime. What is the President acting on: a bill that Congress passed, or a person who broke a federal law?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “The President sending a law back unsigned” (one tap opens the card).
 
 **Return case 16 of 18**
@@ -3059,10 +3059,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **The President or a federal agency.** The last decision in the case is the President’s: “the President signed a pardon for him, and the fine was cancelled”. The federal court decided earlier.
   - If you chose **Refuses to sign a law Congress passed**: No bill is in the case. The President is acting on a person.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Veto**, the look-alike card’s lines follow: Both are things only the President can do, done by signing or not signing a paper, and both stop something that others set going: a bill Congress passed, or a punishment. In **Veto** the President acts on a bill that Congress has passed, and refuses to sign it. In **Pardon** the President acts on a person who broke a federal law, and forgives the crime. What is the President acting on: a bill that Congress passed, or a person who broke a federal law?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “The President forgiving a federal crime” (one tap opens the card).
 
 **Return case 17 of 18**
@@ -3078,10 +3078,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **The President or a federal agency.** The last decision in the case is the President’s: “Before the case came to trial, the President forgave the crime”. No judge is asked anything after it.
   - If you chose **Refuses to sign a law Congress passed**: No bill is in the case. The President is acting on a person who was charged with a crime.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Veto**, the look-alike card’s lines follow: Both are things only the President can do, done by signing or not signing a paper, and both stop something that others set going: a bill Congress passed, or a punishment. In **Veto** the President acts on a bill that Congress has passed, and refuses to sign it. In **Pardon** the President acts on a person who broke a federal law, and forgives the crime. What is the President acting on: a bill that Congress passed, or a person who broke a federal law?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “The President forgiving a federal crime” (one tap opens the card).
 
 **Return case 18 of 18**
@@ -3097,9 +3097,9 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **The President or a federal agency.** The last decision in the case is the President’s: “the President pardoned her, and she went home”. The federal court decided earlier.
   - If you chose **Refuses to sign a law Congress passed**: No bill is in the case. The President is acting on a person who was found guilty of a crime.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Veto**, the look-alike card’s lines follow: Both are things only the President can do, done by signing or not signing a paper, and both stop something that others set going: a bill Congress passed, or a punishment. In **Veto** the President acts on a bill that Congress has passed, and refuses to sign it. In **Pardon** the President acts on a person who broke a federal law, and forgives the crime. What is the President acting on: a bill that Congress passed, or a person who broke a federal law?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “The President forgiving a federal crime” (one tap opens the card).
 

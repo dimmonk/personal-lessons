@@ -1,16 +1,16 @@
 # Learner view: Political Ideologies, Unit One: Whose side a text is on
 
-*The key’s first question, and the five answers it sorts every text into.* Unit revision 1, built to lesson standard 1, status: draft.
+*The first question, and the five answers it sorts every text into.* Unit revision 2, built to lesson standard 1, status: draft.
 
 This file is generated from the data files by `tools/render-learner-view.mjs`. It shows every screen in the order a learner meets it. In the app one card is on screen at a time and the learner moves on when ready.
 
-- **Bold text in quotation marks** is the key’s own wording, printed from `key.js`. Bold names are the outcome names from the same file. Neither is typed anywhere else. "What you must be able to point to" lines and "How to tell them apart" lines are also printed from one place each (the key and the look-alike ledger).
-- This is the subject’s gate unit. It teaches the key’s first question, and its names are that question’s answers: wherever a bold answer in quotation marks appears, it is also the name of a kind.
+- **Bold text in quotation marks** is the subject’s own wording for its questions and answers, written once and printed everywhere. Bold names are the names, written once in the same place. Neither is typed anywhere else. "What you must be able to point to" lines and "How to tell them apart" lines are also printed from one place each (the subject’s questions and the pairs it compares).
+- This is the subject’s first unit. It teaches the first question, and its names are that question’s answers: wherever a bold answer in quotation marks appears, it is also the name of a kind.
 - ⟦Double brackets⟧ show the words the app marks in a case (one highlight style everywhere).
 - The line in italics under each heading is the app’s top bar. The line in square brackets after it is for reviewers and is not shown to the learner.
 - Headings, prompt wording and stage instructions that are the same in every unit are the app’s wording, not this unit’s.
 - "Shown as soon as you …" is what appears the moment the learner answers. Nothing is hidden behind a second tap the first time a case is met, or after a miss.
-- After every answer the app shows, in this order: the right answer in the key’s words; the reason, quoting the marked words; for a name, why the nearest wrong name fails; after a miss, a line about the answer the learner chose; and last a link to the card that taught it. Where a line about the learner’s own choice is not written for the case, the app builds it from the key, and this file says so in place of repeating it.
+- After every answer the app shows, in this order: the right answer; the reason, quoting the marked words; for a name, why the nearest wrong name fails; after a miss, a line about the answer the learner chose; and last a link to the card that taught it. Where a line about the learner’s own choice is not written for the case, the app builds it from the answers’ own wording, and this file says so in place of repeating it.
 
 ---
 
@@ -18,11 +18,11 @@ This file is generated from the data files by `tools/render-learner-view.mjs`. I
 
 ### 1. Before any name: whose side is the text on?
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 1 of 7 · Card 1 of 49*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 1 of 7 · Card 1 of 49*
 
 [reviewers only: card kind `orient`, id `orient-sides`]
 
-After this unit you can read a short text, such as a few lines of a speech, a leaflet, a post, a notice or the start of an opinion piece, and say which of five answers it gets to the key’s first question. You will be able to point to the words that tell you, and to say why it is not one of the other four. The text can be about wages, a border, a church, an exam desk or a bus lane. It can be something a friend sends you or something you come across yourself.
+After this unit you can read a short text, such as a few lines of a speech, a leaflet, a post, a notice or the start of an opinion piece, and say which of five answers it gets to the first question. You will be able to point to the words that tell you, and to say why it is not one of the other four. The text can be about wages, a border, a church, an exam desk or a bus lane. It can be something a friend sends you or something you come across yourself.
 
 You already do a rough version of this. Someone shares a post and a friend says, "That’s just socialist." A speech comes on the radio and an uncle says, "That’s fascist." A neighbour defends the church bells and someone mutters, "Typical reactionary." Each of those is a name reached in one jump, and a name thrown across a room is often not a description of anything.
 
@@ -30,13 +30,13 @@ A name has to be earned from what a text says. Before it, there is an earlier qu
 
 If you skip that question you are wrong before you have chosen a word. You have read a notice about a bus lane as a political movement, or a text about a country as a text about wages. So before any label there is this one question. This unit teaches it.
 
-Two words are used all the way through, so here they are once. A case is a short text of the kind people really read or hear: a few lines from a speech, a leaflet, a post, a notice or an opinion piece. The key is a short list of questions that you put to a case, always in the same order. Each answer narrows down what the text can be, until a name is left.
+One word is used all the way through, so here it is once. A case is a short text of the kind people really read or hear: a few lines from a speech, a leaflet, a post, a notice or an opinion piece. You put the same questions to every case, always in the same order. Each answer narrows down what the text can be, until a name is left.
 
-This unit teaches the first question of the key and nothing after it. That question has five answers, and in this unit the answer is also the name you give. Four of the five answers lead on to further questions, taught in the units that follow, and those questions give a finer name, such as the ones you hear in the news. The fifth answer leads nowhere. When a text speaks for no side, the key has nothing more to ask, and that is a result in its own right.
+This unit teaches the first question and nothing after it. That question has five answers, and in this unit the answer is also the name you give. Four of the five answers lead on to further questions, taught in the units that follow, and those questions give a finer name, such as the ones you hear in the news. The fifth answer leads nowhere. When a text speaks for no side, there is nothing more to ask, and that is a result in its own right.
 
-Every text in this unit is invented. None is a quotation from a real person or party, and none says what any real person believes. Real people and parties say different things in different places, so the key reads one short text at a time and gives no verdict on whoever wrote it.
+Every text in this unit is invented. None is a quotation from a real person or party, and none says what any real person believes. Real people and parties say different things in different places, so this course reads one short text at a time and gives no verdict on whoever wrote it.
 
-**The part of the key this unit teaches.** This is a preview. You are not expected to follow it yet: every line is explained on the cards that come next. The question and its answers are in the key’s own words. Beside each answer, in plain words, is what a case of that kind is made of. There are five answers, and in this unit each answer is itself the name of a kind.
+**The questions this unit teaches.** This is a preview. You are not expected to follow it yet: every line is explained on the cards that come next. The question and its answers are worded exactly as you will meet them. Beside each answer, in plain words, is what a case of that kind is made of. There are five answers, and in this unit each answer is itself the name of a kind.
 
 Who or what does the text put first?
 - Working people, against those who own the businesses → working people and owners, on opposite sides
@@ -53,17 +53,17 @@ The unit has seven parts, and you can stop after any of them.
 4. The fourth answer: what every person is owed
 5. The fifth answer: a text with no side
 6. The fifth answer beside the other four
-7. The key’s question, two whole cases, then the drill
+7. The question, two whole cases, then the drill
 
 Each name is taught through cases first. After every step you answer one question about a new case, and the answer and the reason are shown straight away. Nothing here is graded. A miss only decides what comes back.
 
 ### 2. Answers about who a country is for
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 1 of 7 · Card 2 of 49*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 1 of 7 · Card 2 of 49*
 
 [reviewers only: card kind `term`, id `term-ideology`]
 
-Before the first of the five answers, there is one word that this unit and the whole key lean on. It is easier to see in a case first.
+Before the first of the five answers, there is one word that this whole subject leans on. It is easier to see in a case first.
 
 > Two neighbours wait at a bus stop and talk about the country. Dolores says, 'A country is for the people who keep it running, so they should have the first say, and the government should answer to them.' Her neighbour Emeka says, 'A country is for what we were handed by the people before us, so we should keep what works and change it slowly.' They do not agree, but each has given, in a few lines, an answer to who the country is for and a view of how it should be run.
 
@@ -73,14 +73,14 @@ That is more than one opinion about one matter, such as where to put a bus stop.
 
 **The word for this.** *Ideology*: a set of beliefs about who a country is for and how it should be run.
 
-Two things about the word. The first is that it is not an insult and not a compliment. Calling a set of beliefs an *ideology* says nothing about whether it is right. The second is that it is a word for the beliefs a text shows, and not for the person who wrote it. One short text shows a few lines of someone’s beliefs, and the key reads the lines in front of it.
+Two things about the word. The first is that it is not an insult and not a compliment. Calling a set of beliefs an *ideology* says nothing about whether it is right. The second is that it is a word for the beliefs a text shows, and not for the person who wrote it. One short text shows a few lines of someone’s beliefs, and only the lines in front of you are read.
 
-This is why the key starts with the question it does. Each of the first four answers to it is a different place to start from, and the fifth is a text that starts from none of them.
+This is why the first question is the one it is. Each of the first four answers to it is a different place to start from, and the fifth is a text that starts from none of them.
 
 
 ### 3. Working people and owners, on opposite sides
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 1 of 7 · Card 3 of 49*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 1 of 7 · Card 3 of 49*
 
 [reviewers only: card kind `meet`, id `meet-class`]
 
@@ -107,15 +107,15 @@ Notice what the answer does not depend on. It does not depend on whether you agr
 
 **What you must be able to point to.** People who work for a wage, people who own the farms, factories, shops or banks, and the text on the side of the workers against the owners. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“Who or what does the text put first?”**
+**The question:** **“Who or what does the text put first?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“Working people, against those who own the businesses”**
+**Its answer for a case like this one:** **“Working people, against those who own the businesses”**
 
-In this unit the key’s answer is also the name of the kind of text: **“Working people, against those who own the businesses”**. "Working people" means the people who work in the farms, factories, shops and banks for pay. "Those who own the businesses" means the people who own them and keep what they earn. The answer needs both groups, because one group alone is not a split.
+In this unit the answer is also the name of the kind of text: **“Working people, against those who own the businesses”**. "Working people" means the people who work in the farms, factories, shops and banks for pay. "Those who own the businesses" means the people who own them and keep what they earn. The answer needs both groups, because one group alone is not a split.
 
 ### 4. Working people, against those who own the businesses: the same thing in a different story
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 1 of 7 · Card 4 of 49*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 1 of 7 · Card 4 of 49*
 
 [reviewers only: card kind `again`, id `again-class`]
 
@@ -148,7 +148,7 @@ The two stories share nothing else. One is a depot and a raise, and the other is
 
 ### 5. The story does not decide the answer
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 1 of 7 · Card 5 of 49*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 1 of 7 · Card 5 of 49*
 
 [reviewers only: card kind `lens`, id `lens-sides`]
 
@@ -162,13 +162,13 @@ From here on, the cases change their stories on purpose. Sometimes two cases wil
 
 Two other things change on purpose: how angry a text sounds, and whether you are likely to agree with it. An angry text and a calm one can get the same answer, and a text you dislike can get the same answer as one you like. The answer is not a verdict on anyone. It only says what the text puts first.
 
-**Stays the same from case to case:** who or what the text puts first, which is what the key asks about: **“Who or what does the text put first?”**
+**Stays the same from case to case:** who or what the text puts first, which is what the first question asks about: **“Who or what does the text put first?”**
 
 **Changes on purpose:** the topic; the people; how angry it sounds; whether you agree with it; whether it takes any side at all.
 
 ### 6. Working people, against those who own the businesses: what it is like
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 1 of 7 · Card 6 of 49*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 1 of 7 · Card 6 of 49*
 
 [reviewers only: card kind `portrait`, id `portrait-class`]
 
@@ -200,7 +200,7 @@ In your own life it is the talk at a workplace when pay or hours change, a union
 
 ### 7. A question about a new case
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 1 of 7 · Card 7 of 49*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 1 of 7 · Card 7 of 49*
 
 [reviewers only: card kind `check`, id `check-class`]
 
@@ -215,7 +215,7 @@ The pieces you can tap:
 
 **Shown as soon as you tap**
 
-- If you are right: “Right: ‘The tellers and cleaners who keep these branches open are not asking for charity. We are asking for our share, and we will stand together against the owners until we get it.’.” The words that settle it are “The tellers and cleaners who keep these branches open” and “we will stand together against the owners until we get it”: working people on one side, owners on the other, and the text standing with the workers. Nothing in the text speaks for a nation or for old ways. The key’s answer for this case is **“Working people, against those who own the businesses”**.
+- If you are right: “Right: ‘The tellers and cleaners who keep these branches open are not asking for charity. We are asking for our share, and we will stand together against the owners until we get it.’.” The words that settle it are “The tellers and cleaners who keep these branches open” and “we will stand together against the owners until we get it”: working people on one side, owners on the other, and the text standing with the workers. Nothing in the text speaks for a nation or for old ways. The answer for this case is **“Working people, against those who own the businesses”**.
 - If you miss: “The words are ‘The tellers and cleaners who keep these branches open are not asking for charity. We are asking for our share, and we will stand together against the owners until we get it.’.” The same reason follows, and then a line about the piece you tapped:
   - “The branch staff at Crowley Savings have voted to strike”: That is what the staff did. It does not yet say who they stand against.
   - “The bank's owners paid themselves a bonus the size of our whole year's wages”: That names the owners and what they took. It is half of what you point to. The other half is the staff, and the side the text takes.
@@ -229,7 +229,7 @@ The pieces you can tap:
 
 ### 8. One people and its country
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 2 of 7 · Card 8 of 49*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 2 of 7 · Card 8 of 49*
 
 [reviewers only: card kind `meet`, id `meet-nation`]
 
@@ -256,15 +256,15 @@ Notice what the answer does not depend on. It does not depend on whether you thi
 
 **What you must be able to point to.** A people the text calls its own, marked out by its country, its culture or its blood, and the text putting that people first. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“Who or what does the text put first?”**
+**The question:** **“Who or what does the text put first?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“The nation, or its ordinary people”**
+**Its answer for a case like this one:** **“The nation, or its ordinary people”**
 
-In this unit the key’s answer is also the name of the kind of text: **“The nation, or its ordinary people”**. "The nation" means a people that shares a country. "Its ordinary people" means the ordinary members of that people, set against a few at the top. In both shapes it is a people that is put first.
+In this unit the answer is also the name of the kind of text: **“The nation, or its ordinary people”**. "The nation" means a people that shares a country. "Its ordinary people" means the ordinary members of that people, set against a few at the top. In both shapes it is a people that is put first.
 
 ### 9. The nation, or its ordinary people: the same thing in a different story
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 2 of 7 · Card 9 of 49*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 2 of 7 · Card 9 of 49*
 
 [reviewers only: card kind `again`, id `again-nation`]
 
@@ -299,7 +299,7 @@ The two stories share nothing else, so this holds wherever a text speaks for one
 
 ### 10. The nation, or its ordinary people: what it is like
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 2 of 7 · Card 10 of 49*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 2 of 7 · Card 10 of 49*
 
 [reviewers only: card kind `portrait`, id `portrait-nation`]
 
@@ -331,13 +331,13 @@ In your own life it is the "us" and "them" of a speech, the way a news story tal
 
 ### 11. A question about a new case
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 2 of 7 · Card 11 of 49*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 2 of 7 · Card 11 of 49*
 
 [reviewers only: card kind `check`, id `check-nation`]
 
 > The education minister told a school assembly: 'Our children should learn first the songs, the history and the language of this country. We are one people, and a people that does not know its own story will not stay a people.'
 
-**The key asks:** **“Who or what does the text put first?”** Which of the answers you have met so far fits this case?
+**The question:** **“Who or what does the text put first?”** Which of the answers you have met so far fits this case?
 
 - Working people, against those who own the businesses
 - The nation, or its ordinary people
@@ -352,7 +352,7 @@ In your own life it is the "us" and "them" of a speech, the way a news story tal
 
 ### 12. Working people, against those who own the businesses or The nation, or its ordinary people: telling them apart
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 2 of 7 · Card 12 of 49*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 2 of 7 · Card 12 of 49*
 
 [reviewers only: card kind `lookalike`, id `look-class-nation`]
 
@@ -374,9 +374,9 @@ You have now met two answers on their own. They are easy to mix up, because both
 
 **Why this one and not the other**
 
-In Case A the cannery closes and the text sorts the people involved into two groups: the owners, who move the work and keep the profit, and the people who stood at the line for thirty years. It stands with the second group. Nobody is spoken for as a country. The key’s answer is **“Working people, against those who own the businesses”**.
+In Case A the cannery closes and the text sorts the people involved into two groups: the owners, who move the work and keep the profit, and the people who stood at the line for thirty years. It stands with the second group. Nobody is spoken for as a country. The answer is **“Working people, against those who own the businesses”**.
 
-In Case B the same cannery closes and the text speaks for one people, marked out by its country: "We are one people", "the whole nation is smaller". There are no owners and no workers in it, and its first duty, it says, is to the nation. The key’s answer is **“The nation, or its ordinary people”**.
+In Case B the same cannery closes and the text speaks for one people, marked out by its country: "We are one people", "the whole nation is smaller". There are no owners and no workers in it, and its first duty, it says, is to the nation. The answer is **“The nation, or its ordinary people”**.
 
 The cannery is the same, and so is the anger. What differs is the line the text draws. In Case A it runs between those who work and those who own. In Case B it runs around the country.
 
@@ -384,7 +384,7 @@ The cannery is the same, and so is the anger. What differs is the line the text 
 
 Who is "us", and who is "them"? Are they the people who work for pay and the people who own where they work? Or is "us" one people, marked out by its country, culture or birth?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Working people, against those who own the businesses | The nation, or its ordinary people |
 |---|---|---|
@@ -394,7 +394,7 @@ Who is "us", and who is "them"? Are they the people who work for pay and the peo
 
 ### 13. A text that speaks of the country and still takes the workers’ side
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 2 of 7 · Card 13 of 49*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 2 of 7 · Card 13 of 49*
 
 [reviewers only: card kind `exception`, id `exc-ourcountry`]
 
@@ -404,7 +404,7 @@ The last card kept the two answers on separate stories. A real text can show bot
 
 > At a union meeting: 'This country was built by the people who work its mills and ports, and it is time the country remembered them. The owners of those mills have shipped the profits abroad and left the town with the bill. We are the country's workers, and we stand against the owners.'
 
-The text speaks of the country, and of what the country owes the people who built it. Speaking for a country and its people is what you point to for **“The nation, or its ordinary people”**. Yet the key’s answer for this case is **“Working people, against those who own the businesses”**.
+The text speaks of the country, and of what the country owes the people who built it. Speaking for a country and its people is what you point to for **“The nation, or its ordinary people”**. Yet the answer for this case is **“Working people, against those who own the businesses”**.
 
 **You are asked:** This looks like **“The nation, or its ordinary people”**. Before you read why it is **“Working people, against those who own the businesses”**, tap the words in the case that settle it.
 
@@ -421,22 +421,22 @@ The pieces you can tap:
 
 The text does speak of the country. It says the country was built by working people and should remember them. If that were all it said, it would be **“The nation, or its ordinary people”**. But the text goes on to name the owners, say what they did, and say "we stand against the owners". That is working people set against owners, with the text on the workers’ side.
 
-So the case shows both answers at once. When it does, the key has to choose, and it chooses the first. A text that speaks of the country and also sets working people against owners is about the split, and the country is where the split is described.
+So the case shows both answers at once. When it does, the first answer wins. A text that speaks of the country and also sets working people against owners is about the split, and the country is where the split is described.
 
-It chooses this way round for a reason. If the case were given **“The nation, or its ordinary people”**, the owners and the workers would drop out of what the key looks at, and they are what the text is about.
+The answer goes this way round for a reason. If the case were given **“The nation, or its ordinary people”**, the owners and the workers would drop out of the reading, and they are what the text is about.
 
 **How to tell them apart**
 
 Who is "us", and who is "them"? Are they the people who work for pay and the people who own where they work? Or is "us" one people, marked out by its country, culture or birth?
 
-When a case shows both **“The nation, or its ordinary people”** and working people set against those who own the businesses, the key’s answer is **“Working people, against those who own the businesses”**.
+When a case shows both **“The nation, or its ordinary people”** and working people set against those who own the businesses, the answer is **“Working people, against those who own the businesses”**.
 
-It is worth knowing that this is the key’s decision. In life, a speaker can mean both, and nobody can draw a sharp line between "for the country" and "for the people who work in it". The key gives each text one answer, so that two people using it reach the same one and can each say why.
+It is worth knowing that this is a decision. In life, a speaker can mean both, and nobody can draw a sharp line between "for the country" and "for the people who work in it". Each text gets one answer, so that two people using the same questions reach the same one and can each say why.
 
 
 ### 14. Workers and owners named only to be denied
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 2 of 7 · Card 14 of 49*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 2 of 7 · Card 14 of 49*
 
 [reviewers only: card kind `exception`, id `exc-deny`]
 
@@ -446,7 +446,7 @@ The last card showed a text that speaks of the country and still takes the worke
 
 > From a radio address: 'Some will tell you that the drivers and the dock owners are on opposite sides. They are not. There is only one side, the nation, and it is ours. Those who try to split us by wages and ownership are working against the whole country.'
 
-The text names the drivers and the dock owners. Sorting people into those who work and those who own is what you point to for **“Working people, against those who own the businesses”**. Yet the key’s answer for this case is **“The nation, or its ordinary people”**.
+The text names the drivers and the dock owners. Sorting people into those who work and those who own is what you point to for **“Working people, against those who own the businesses”**. Yet the answer for this case is **“The nation, or its ordinary people”**.
 
 **You are asked:** This looks like **“Working people, against those who own the businesses”**. Before you read why it is **“The nation, or its ordinary people”**, tap the words in the case that settle it.
 
@@ -471,9 +471,9 @@ The last sentence confirms it. Anyone who splits people by wages and ownership i
 
 Who is "us", and who is "them"? Are they the people who work for pay and the people who own where they work? Or is "us" one people, marked out by its country, culture or birth?
 
-When a case shows both **“The nation, or its ordinary people”** and working people set against those who own the businesses, the key’s answer is **“Working people, against those who own the businesses”**.
+When a case shows both **“The nation, or its ordinary people”** and working people set against those who own the businesses, the answer is **“Working people, against those who own the businesses”**.
 
-The key’s decision printed above is for a text that shows both answers. This text does not show the first one. It names the two groups to refuse the split, so what it shows is only the second.
+The decision printed above is for a text that shows both answers. This text does not show the first one. It names the two groups to refuse the split, so what it shows is only the second.
 
 This does not make every text that mentions a boss and a worker the second answer. The question is always who or what the text puts first. If it names the two groups and stands with the workers, it is **“Working people, against those who own the businesses”**.
 
@@ -486,7 +486,7 @@ This does not make every text that mentions a boss and a worker the second answe
 
 ### 15. The ways handed down from the past
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 3 of 7 · Card 15 of 49*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 3 of 7 · Card 15 of 49*
 
 [reviewers only: card kind `meet`, id `meet-tradition`]
 
@@ -505,27 +505,27 @@ Stripped of its story, the case is this:
 
 What this text is made of is ways of living that come from the past, and a claim that they should guide us. The ways can be a faith (what a church teaches, and a year built around its days), a way of home life (who raises the children, how a household keeps its Sundays), or old customs (a dance, a feast, a way of marking a death). A text can also hold up an old order of crown, church and rank.
 
-The key is not asking whether a faith is true or an old custom is good. It is asking what the text holds up as the thing that should guide. Here the text says that what was handed down should guide the country, and that without it there would be nothing to steer by.
+This question is not asking whether a faith is true or an old custom is good. It is asking what the text holds up as the thing that should guide. Here the text says that what was handed down should guide the country, and that without it there would be nothing to steer by.
 
 The idea behind this kind of text is that a country needs more than money and laws to hold together. It needs what earlier generations built and passed on, and a country that cuts itself off from that loses its bearings. People who think so need not be angry. They may only want what is old kept.
 
 Notice that this text speaks of "this country", and yet its answer is not the second. What decides it is what the text holds up, and it holds up the old ways. A text that held up one people, and spoke of a flag, would be a different case.
 
-**What you must be able to point to.** Ways handed down from the past (a faith, the family, old customs, or an old order of crown, church and rank), and the text holding them up as what should guide the country. This comes from one case so far. The next card tests it on a second case.
+**What you must be able to point to.** Ways handed down from the past (a faith, home life, old customs, or an old order of crown, church and rank), and the text holding them up as what should guide the country. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“Who or what does the text put first?”**
+**The question:** **“Who or what does the text put first?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“Old ways of faith, family and custom”**
+**Its answer for a case like this one:** **“Old ways of faith, family and custom”**
 
-In this unit the key’s answer is also the name of the kind of text: **“Old ways of faith, family and custom”**. "Old ways" means ways of living that come from the past: a faith, a way of home life, a custom, or an old order of crown, church and rank. The answer needs two things together: the old ways, and the text holding them up as what should guide.
+In this unit the answer is also the name of the kind of text: **“Old ways of faith, family and custom”**. "Old ways" means ways of living that come from the past: a faith, a way of home life, a custom, or an old order of crown, church and rank. The answer needs two things together: the old ways, and the text holding them up as what should guide.
 
 ### 16. Old ways of faith, family and custom: the same thing in a different story
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 3 of 7 · Card 16 of 49*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 3 of 7 · Card 16 of 49*
 
 [reviewers only: card kind `again`, id `again-tradition`]
 
-The harvest sermon gave you what to point to from one case: ways handed down from the past (a faith, the family, old customs, or an old order of crown, church and rank), and the text holding them up as what should guide the country. Here is a second case in a different setting: a school and a Sunday morning.
+The harvest sermon gave you what to point to from one case: ways handed down from the past (a faith, home life, old customs, or an old order of crown, church and rank), and the text holding them up as what should guide the country. Here is a second case in a different setting: a school and a Sunday morning.
 
 The first case again, in one line. *The harvest sermon*: “they handed all of it down to us” and “The faith, the family and the old customs are what should guide how this country is run”
 
@@ -554,7 +554,7 @@ One text is about a whole country and the other is about one school. That makes 
 
 ### 17. Old ways of faith, family and custom: what it is like
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 3 of 7 · Card 17 of 49*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 3 of 7 · Card 17 of 49*
 
 [reviewers only: card kind `portrait`, id `portrait-tradition`]
 
@@ -572,7 +572,7 @@ You now know what to point to. This card fills in the rest of the picture, so th
 
 Mentioning a church, a custom or the past does not make a text this answer. A notice that the church bells will ring at ten names a church and holds nothing up. What you point to is the old ways held up as what should guide.
 
-A text can speak of the country and also hold up the old ways as the guide. The key has one decision for that, and this unit works it through on a case of its own.
+A text can speak of the country and also hold up the old ways as the guide. There is one decision for that, and this unit works it through on a case of its own.
 
 **Where you will hear it**
 
@@ -586,13 +586,13 @@ In your own life it is the holiday that has to be kept just so, the grandparent 
 
 ### 18. A question about a new case
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 3 of 7 · Card 18 of 49*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 3 of 7 · Card 18 of 49*
 
 [reviewers only: card kind `check`, id `check-tradition`]
 
 > Councillor Ashby opposes opening the town market on Sundays. 'Our town has always set Sunday aside for church and home. These customs were handed down to us, and they ought to decide how we run the town, whatever the stalls would earn.'
 
-**The key asks:** **“Who or what does the text put first?”** Which of the answers you have met so far fits this case?
+**The question:** **“Who or what does the text put first?”** Which of the answers you have met so far fits this case?
 
 - Working people, against those who own the businesses
 - The nation, or its ordinary people
@@ -603,13 +603,13 @@ In your own life it is the holiday that has to be kept just so, the grandparent 
 - If you are right: “Right: **Old ways of faith, family and custom.**” The text holds up customs from the past as what should guide the town: “These customs were handed down to us, and they ought to decide how we run the town”. It sorts nobody by wages or by owning a business, and it does not speak for one people against others.
   - Why not **“The nation, or its ordinary people”**: Nothing here puts one people first. The text speaks of the town’s customs and of what was handed down, and that is the thing it puts first.
 - If you miss: “The answer is **Old ways of faith, family and custom.**” The same reason follows, and then a line about the answer you chose:
-  - If you chose **Working people, against those who own the businesses**: Give that answer when the text sorts people by whether they work for a wage or own the businesses (or are rich from owning them), and takes the side of the workers against the owners. This case shows something else: the text holds up ways handed down from the past (a faith, the family, old customs, or an old order of crown, church and rank) as what should guide the country.
+  - If you chose **Working people, against those who own the businesses**: Give that answer when the text sorts people by whether they work for a wage or own the businesses (or are rich from owning them), and takes the side of the workers against the owners. This case shows something else: the text holds up ways handed down from the past (a faith, home life, old customs, or an old order of crown, church and rank) as what should guide the country.
   - If you chose **The nation, or its ordinary people**: Nothing here puts one people first. The text speaks of the town’s customs and of what was handed down, and that is the thing it puts first.
 - Taught on: “The ways handed down from the past” (one tap opens the card).
 
 ### 19. Working people, against those who own the businesses or Old ways of faith, family and custom: telling them apart
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 3 of 7 · Card 19 of 49*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 3 of 7 · Card 19 of 49*
 
 [reviewers only: card kind `lookalike`, id `look-class-tradition`]
 
@@ -631,9 +631,9 @@ You have now met three answers on their own. The first and the third are easy to
 
 **Why this one and not the other**
 
-In Case A the cannery closes and the text mourns a harvest supper that the cannery households have held in the chapel hall for a hundred years. It says that faith, home life and old custom held the town together and should guide how it rebuilds. No owners are named and nobody is sorted by wages. The key’s answer is **“Old ways of faith, family and custom”**.
+In Case A the cannery closes and the text mourns a harvest supper that the cannery households have held in the chapel hall for a hundred years. It says that faith, home life and old custom held the town together and should guide how it rebuilds. No owners are named and nobody is sorted by wages. The answer is **“Old ways of faith, family and custom”**.
 
-In Case B the same cannery closes and the text sorts the people involved into the owners, who move the work and keep the profit, and the people who stood at the line. It stands with the second group. The chapel and the supper are not mentioned. The key’s answer is **“Working people, against those who own the businesses”**.
+In Case B the same cannery closes and the text sorts the people involved into the owners, who move the work and keep the profit, and the people who stood at the line. It stands with the second group. The chapel and the supper are not mentioned. The answer is **“Working people, against those who own the businesses”**.
 
 Both texts are angry that the town is losing the cannery. The difference is what each says has been lost: what the people at the line earned, while the owners kept the profit, or the town’s inherited way of life.
 
@@ -641,17 +641,17 @@ Both texts are angry that the town is losing the cannery. The difference is what
 
 Is the text about the jobs and money of working people against owners? Or is it about something handed down from the past, which it says should guide?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Working people, against those who own the businesses | Old ways of faith, family and custom |
 |---|---|---|
 | In plain words | Working people and owners, on opposite sides | The ways handed down from the past |
-| What you must be able to point to | People who work for a wage, people who own the farms, factories, shops or banks, and the text on the side of the workers against the owners | Ways handed down from the past (a faith, the family, old customs, or an old order of crown, church and rank), and the text holding them up as what should guide the country |
+| What you must be able to point to | People who work for a wage, people who own the farms, factories, shops or banks, and the text on the side of the workers against the owners | Ways handed down from the past (a faith, home life, old customs, or an old order of crown, church and rank), and the text holding them up as what should guide the country |
 
 
 ### 20. The nation, or its ordinary people or Old ways of faith, family and custom: telling them apart
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 3 of 7 · Card 20 of 49*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 3 of 7 · Card 20 of 49*
 
 [reviewers only: card kind `lookalike`, id `look-nation-tradition`]
 
@@ -673,9 +673,9 @@ The second and third answers can both say "our", and both can speak of a country
 
 **Why this one and not the other**
 
-In Case A the cannery closes and the text says that we are one people, and that when one of our towns is hollowed out the whole nation is smaller. It puts the people first, and it says nothing of a faith, a custom or the past. The key’s answer is **“The nation, or its ordinary people”**.
+In Case A the cannery closes and the text says that we are one people, and that when one of our towns is hollowed out the whole nation is smaller. It puts the people first, and it says nothing of a faith, a custom or the past. The answer is **“The nation, or its ordinary people”**.
 
-In Case B the text speaks of a supper held for a hundred years in the chapel hall, and says that faith, home life and old custom should guide how the town is rebuilt. It names no people to be put first. The key’s answer is **“Old ways of faith, family and custom”**.
+In Case B the text speaks of a supper held for a hundred years in the chapel hall, and says that faith, home life and old custom should guide how the town is rebuilt. It names no people to be put first. The answer is **“Old ways of faith, family and custom”**.
 
 Both texts say "us" and both are fond of the place. The difference is what they hold up: a people in Case A, and in Case B what was handed down to the people.
 
@@ -683,17 +683,17 @@ Both texts say "us" and both are fond of the place. The difference is what they 
 
 What does the text hold up as first: the people itself, marked out by country, culture or birth? Or ways handed down from the past, such as a faith or old customs?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | The nation, or its ordinary people | Old ways of faith, family and custom |
 |---|---|---|
 | In plain words | One people and its country | The ways handed down from the past |
-| What you must be able to point to | A people the text calls its own, marked out by its country, its culture or its blood, and the text putting that people first | Ways handed down from the past (a faith, the family, old customs, or an old order of crown, church and rank), and the text holding them up as what should guide the country |
+| What you must be able to point to | A people the text calls its own, marked out by its country, its culture or its blood, and the text putting that people first | Ways handed down from the past (a faith, home life, old customs, or an old order of crown, church and rank), and the text holding them up as what should guide the country |
 
 
 ### 21. One people, and the faith of the fathers
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 3 of 7 · Card 21 of 49*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 3 of 7 · Card 21 of 49*
 
 [reviewers only: card kind `exception`, id `exc-faith`]
 
@@ -703,7 +703,7 @@ The last card kept the two answers on separate stories. A real text can show bot
 
 > From a bishop's letter: 'Ours is one people with one past, and that past is held together by the faith of our fathers, the family home and the customs of the harvest. What is built on them will stand and what is built against them will fall. Let the faith of our fathers guide this country.'
 
-The letter begins by speaking for one people with one past, which is what you point to for **“The nation, or its ordinary people”**. Yet the key’s answer for this case is **“Old ways of faith, family and custom”**.
+The letter begins by speaking for one people with one past, which is what you point to for **“The nation, or its ordinary people”**. Yet the answer for this case is **“Old ways of faith, family and custom”**.
 
 **You are asked:** This looks like **“The nation, or its ordinary people”**. Before you read why it is **“Old ways of faith, family and custom”**, tap the words in the case that settle it.
 
@@ -720,7 +720,7 @@ The pieces you can tap:
 
 The letter does speak for one people. If that were all it said, it would be **“The nation, or its ordinary people”**. But look at what it says holds that people together, and what it asks the country to follow: the faith of our fathers, the home and the customs of the harvest. Those are old ways, handed down, and its last sentence asks that they guide the country.
 
-So the case shows both answers at once. When it does, the key has to choose, and it chooses the third. A text that speaks of one people and then says old ways should guide it holds up the old ways as the thing that decides.
+So the case shows both answers at once. When it does, the third answer wins. A text that speaks of one people and then says old ways should guide it holds up the old ways as the thing that decides.
 
 There is a way to see why. Take away the words about one people, and the letter still makes sense: it holds up the faith, the home and the harvest customs as the guide. Take away the faith and the customs, and nothing is left to say what the country should follow. The old ways are what the text rests on.
 
@@ -728,16 +728,16 @@ There is a way to see why. Take away the words about one people, and the letter 
 
 What does the text hold up as first: the people itself, marked out by country, culture or birth? Or ways handed down from the past, such as a faith or old customs?
 
-When a case shows both **“The nation, or its ordinary people”** and old ways of faith, family or custom held up as what should guide the country, the key’s answer is **“Old ways of faith, family and custom”**.
+When a case shows both **“The nation, or its ordinary people”** and old ways of faith, home life or custom held up as what should guide the country, the answer is **“Old ways of faith, family and custom”**.
 
-It is worth knowing that this is the key’s decision. In life, love of a people and love of its old ways run into each other all the time, and nobody can draw a sharp line between them. The key gives each text one answer, so that two people using it reach the same one and can each say why.
+It is worth knowing that this is a decision. In life, love of a people and love of its old ways run into each other all the time, and nobody can draw a sharp line between them. Each text gets one answer, so that two people using the same questions reach the same one and can each say why.
 
-It chooses this way round for a reason. The key’s later questions for the third answer ask whether the old ways are to be kept or put back, and that is what a text like this one is about. If the letter were given the second answer, those questions would drop out of view.
+The answer goes this way round for a reason. The later questions for the third answer ask whether the old ways are to be kept or put back, and that is what a text like this one is about. If the letter were given the second answer, those questions would drop out of view.
 
 
 ### 22. Old customs mourned, and the owners blamed
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 3 of 7 · Card 22 of 49*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 3 of 7 · Card 22 of 49*
 
 [reviewers only: card kind `exception`, id `exc-loomhands`]
 
@@ -747,7 +747,7 @@ The last card showed old ways winning over a people. They do not win over everyt
 
 > From a mill-town newsletter: 'The chapel, the Sunday rest and the harvest supper were handed down to us by the loom hands before us, and they should guide how this town is run. But the mill's owners have cut the hours that let us keep them. Those who work the looms and those who own the mill want different things, and we stand with the loom hands.'
 
-The newsletter holds up the chapel, the Sunday rest and the harvest supper, handed down by the loom hands before them, and says they should guide the town. That is what you point to for **“Old ways of faith, family and custom”**. Yet the key’s answer for this case is **“Working people, against those who own the businesses”**.
+The newsletter holds up the chapel, the Sunday rest and the harvest supper, handed down by the loom hands before them, and says they should guide the town. That is what you point to for **“Old ways of faith, family and custom”**. Yet the answer for this case is **“Working people, against those who own the businesses”**.
 
 **You are asked:** This looks like **“Old ways of faith, family and custom”**. Before you read why it is **“Working people, against those who own the businesses”**, tap the words in the case that settle it.
 
@@ -764,17 +764,17 @@ The pieces you can tap:
 
 The newsletter does hold up old customs as the guide. If that were all it said, it would be **“Old ways of faith, family and custom”**. But it goes on to say that the mill’s owners cut the hours that let the loom hands keep those customs, and that "those who work the looms and those who own the mill want different things, and we stand with the loom hands". That is working people set against owners, with the text on the workers’ side.
 
-So the case shows both answers at once. When it does, the key chooses the first. The customs are in the text, but what the text does with them is argue for the loom hands against the owners.
+So the case shows both answers at once. When it does, the first answer wins. The customs are in the text, but what the text does with them is argue for the loom hands against the owners.
 
-It chooses this way round for a reason. If the newsletter were given **“Old ways of faith, family and custom”**, the owners and the loom hands would drop out of what the key looks at, and they are what the newsletter is about.
+The answer goes this way round for a reason. If the newsletter were given **“Old ways of faith, family and custom”**, the owners and the loom hands would drop out of the reading, and they are what the newsletter is about.
 
 **How to tell them apart**
 
 Is the text about the jobs and money of working people against owners? Or is it about something handed down from the past, which it says should guide?
 
-When a case shows both **“Old ways of faith, family and custom”** and working people set against those who own the businesses, the key’s answer is **“Working people, against those who own the businesses”**.
+When a case shows both **“Old ways of faith, family and custom”** and working people set against those who own the businesses, the answer is **“Working people, against those who own the businesses”**.
 
-It is worth knowing that this is the key’s decision. In life, a text can mourn what was handed down and blame owners in the same breath, and nobody can draw a sharp line between the two. The key gives each text one answer, so that two people using it reach the same one and can each say why.
+It is worth knowing that this is a decision. In life, a text can mourn what was handed down and blame owners in the same breath, and nobody can draw a sharp line between the two. Each text gets one answer, so that two people using the same questions reach the same one and can each say why.
 
 
 *End of part 3. You can stop here; your place is kept. Next: part 4, The fourth answer: what every person is owed.*
@@ -785,7 +785,7 @@ It is worth knowing that this is the key’s decision. In life, a text can mourn
 
 ### 23. What every person is owed
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 4 of 7 · Card 23 of 49*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 4 of 7 · Card 23 of 49*
 
 [reviewers only: card kind `meet`, id `meet-rights`]
 
@@ -812,15 +812,15 @@ Notice what the answer does not depend on. It does not depend on whether the thi
 
 **What you must be able to point to.** Something the text says every person is owed (the freedom to speak, believe, own and trade, a fair start in life, or fair treatment whatever group they belong to), and the text putting that first. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“Who or what does the text put first?”**
+**The question:** **“Who or what does the text put first?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“Rights and fair treatment for everyone”**
+**Its answer for a case like this one:** **“Rights and fair treatment for everyone”**
 
-In this unit the key’s answer is also the name of the kind of text: **“Rights and fair treatment for everyone”**. A "right" here means something a person is owed simply by being a person. "Fair treatment" means being treated the same however a person is described: by sex, race, income, belief or birthplace.
+In this unit the answer is also the name of the kind of text: **“Rights and fair treatment for everyone”**. A "right" here means something a person is owed simply by being a person. "Fair treatment" means being treated the same however a person is described: by sex, race, income, belief or birthplace.
 
 ### 24. Rights and fair treatment for everyone: the same thing in a different story
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 4 of 7 · Card 24 of 49*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 4 of 7 · Card 24 of 49*
 
 [reviewers only: card kind `again`, id `again-rights`]
 
@@ -853,7 +853,7 @@ What they share is the shape: every person, something owed, and put first. Neith
 
 ### 25. Rights and fair treatment for everyone: what it is like
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 4 of 7 · Card 25 of 49*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 4 of 7 · Card 25 of 49*
 
 [reviewers only: card kind `portrait`, id `portrait-rights`]
 
@@ -885,13 +885,13 @@ In your own life it is the argument over whether a rule is fair to everyone, a p
 
 ### 26. A question about a new case
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 4 of 7 · Card 26 of 49*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 4 of 7 · Card 26 of 49*
 
 [reviewers only: card kind `check`, id `check-rights`]
 
 > The exam board seats every candidate at the same kind of desk for the same three hours. 'That sounds fair to everyone,' said a disability advocate, 'and it still shuts out students who cannot sit for three hours. Fair treatment for every student means changing the rule so that no group is left behind.'
 
-**The key asks:** **“Who or what does the text put first?”** Which of the answers you have met so far fits this case?
+**The question:** **“Who or what does the text put first?”** Which of the answers you have met so far fits this case?
 
 - Working people, against those who own the businesses
 - The nation, or its ordinary people
@@ -905,12 +905,12 @@ In your own life it is the argument over whether a rule is fair to everyone, a p
 - If you miss: “The answer is **Rights and fair treatment for everyone.**” The same reason follows, and then a line about the answer you chose:
   - If you chose **Working people, against those who own the businesses**: The groups in this text are groups of students, and nobody is sorted by wages or by owning a business.
   - If you chose **The nation, or its ordinary people**: Give that answer when the text speaks for one people, marked out by its country, its culture or its blood, and puts that people first: the whole nation as one, or its ordinary people against a few at the top. This case shows something else: the text puts first what it says every person is owed: the freedom to speak, believe, own and trade, a fair start in life, or fair treatment whatever group they belong to.
-  - If you chose **Old ways of faith, family and custom**: Give that answer when the text holds up ways handed down from the past (a faith, the family, old customs, or an old order of crown, church and rank) as what should guide the country. This case shows something else: the text puts first what it says every person is owed: the freedom to speak, believe, own and trade, a fair start in life, or fair treatment whatever group they belong to.
+  - If you chose **Old ways of faith, family and custom**: Give that answer when the text holds up ways handed down from the past (a faith, home life, old customs, or an old order of crown, church and rank) as what should guide the country. This case shows something else: the text puts first what it says every person is owed: the freedom to speak, believe, own and trade, a fair start in life, or fair treatment whatever group they belong to.
 - Taught on: “What every person is owed” (one tap opens the card).
 
 ### 27. Working people, against those who own the businesses or Rights and fair treatment for everyone: telling them apart
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 4 of 7 · Card 27 of 49*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 4 of 7 · Card 27 of 49*
 
 [reviewers only: card kind `lookalike`, id `look-class-rights`]
 
@@ -932,9 +932,9 @@ The first and fourth answers are easy to mix up, because both can ask for fair p
 
 **Why this one and not the other**
 
-In Case A the cannery closes and the text says that every person who loses a job there is owed a fair hearing, fair notice and a fair start elsewhere, whoever they are and whatever they earned. It speaks for every person alike. There is no owner in it and no side. The key’s answer is **“Rights and fair treatment for everyone”**.
+In Case A the cannery closes and the text says that every person who loses a job there is owed a fair hearing, fair notice and a fair start elsewhere, whoever they are and whatever they earned. It speaks for every person alike. There is no owner in it and no side. The answer is **“Rights and fair treatment for everyone”**.
 
-In Case B the same cannery closes and the text sorts the people involved into the owners, who keep the profit, and the people who stood at the line. It stands with the second group, and says so. The key’s answer is **“Working people, against those who own the businesses”**.
+In Case B the same cannery closes and the text sorts the people involved into the owners, who keep the profit, and the people who stood at the line. It stands with the second group, and says so. The answer is **“Working people, against those who own the businesses”**.
 
 Both texts want the people who lose their jobs treated better. The difference is who the text speaks for: every person in Case A, or one of two sides of a split in Case B.
 
@@ -942,7 +942,7 @@ Both texts want the people who lose their jobs treated better. The difference is
 
 Is there a side the text is against, the people who own where others work? Or does it speak for every person, whoever they are?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Working people, against those who own the businesses | Rights and fair treatment for everyone |
 |---|---|---|
@@ -952,7 +952,7 @@ Is there a side the text is against, the people who own where others work? Or do
 
 ### 28. The nation, or its ordinary people or Rights and fair treatment for everyone: telling them apart
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 4 of 7 · Card 28 of 49*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 4 of 7 · Card 28 of 49*
 
 [reviewers only: card kind `lookalike`, id `look-nation-rights`]
 
@@ -974,9 +974,9 @@ The second and fourth answers are easy to mix up when a text speaks of race or o
 
 **Why this one and not the other**
 
-In Case A the text says that its own race is the best and that the others were born to serve it. It puts one people first and places it above the rest. The key’s answer is **“The nation, or its ordinary people”**.
+In Case A the text says that its own race is the best and that the others were born to serve it. It puts one people first and places it above the rest. The answer is **“The nation, or its ordinary people”**.
 
-In Case B the text says that no rule mentions race, and that rules treating every applicant alike still leave applicants of one race behind. It adds "Nobody is above anybody here", and asks for fair treatment for every applicant. The key’s answer is **“Rights and fair treatment for everyone”**.
+In Case B the text says that no rule mentions race, and that rules treating every applicant alike still leave applicants of one race behind. It adds "Nobody is above anybody here", and asks for fair treatment for every applicant. The answer is **“Rights and fair treatment for everyone”**.
 
 The two texts share a word and nothing else. One puts a people above the others. The other puts no one above anyone, and asks that rules be changed. You cannot tell them apart by the word, or by how angry they sound. You can tell them apart by who the text puts first.
 
@@ -984,7 +984,7 @@ The two texts share a word and nothing else. One puts a people above the others.
 
 Is one people being put first, perhaps above the others? Or is something said to be owed to every person, whatever group they belong to?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | The nation, or its ordinary people | Rights and fair treatment for everyone |
 |---|---|---|
@@ -994,7 +994,7 @@ Is one people being put first, perhaps above the others? Or is something said to
 
 ### 29. Old ways of faith, family and custom or Rights and fair treatment for everyone: telling them apart
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 4 of 7 · Card 29 of 49*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 4 of 7 · Card 29 of 49*
 
 [reviewers only: card kind `lookalike`, id `look-tradition-rights`]
 
@@ -1016,9 +1016,9 @@ The third and fourth answers are easy to mix up, because both can say that some 
 
 **Why this one and not the other**
 
-In Case A the text mourns a supper held for a hundred years, and says that faith, home life and old custom should guide how the town rebuilds. What it names matters because it was handed down. The key’s answer is **“Old ways of faith, family and custom”**.
+In Case A the text mourns a supper held for a hundred years, and says that faith, home life and old custom should guide how the town rebuilds. What it names matters because it was handed down. The answer is **“Old ways of faith, family and custom”**.
 
-In Case B the text says that every person who loses a job is owed a fair hearing, fair notice and a fair start. What it names matters because every person is owed it, whoever they are and however long anything has been done. The key’s answer is **“Rights and fair treatment for everyone”**.
+In Case B the text says that every person who loses a job is owed a fair hearing, fair notice and a fair start. What it names matters because every person is owed it, whoever they are and however long anything has been done. The answer is **“Rights and fair treatment for everyone”**.
 
 Both texts want something kept from being taken away. One keeps it because it is old, and the other because every person is owed it. The reason the text gives is what you point to.
 
@@ -1026,17 +1026,17 @@ Both texts want something kept from being taken away. One keeps it because it is
 
 Is the text’s reason that the thing was handed down from the past? Or is its reason that every person is owed it?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Old ways of faith, family and custom | Rights and fair treatment for everyone |
 |---|---|---|
 | In plain words | The ways handed down from the past | What every person is owed |
-| What you must be able to point to | Ways handed down from the past (a faith, the family, old customs, or an old order of crown, church and rank), and the text holding them up as what should guide the country | Something the text says every person is owed (the freedom to speak, believe, own and trade, a fair start in life, or fair treatment whatever group they belong to), and the text putting that first |
+| What you must be able to point to | Ways handed down from the past (a faith, home life, old customs, or an old order of crown, church and rank), and the text holding them up as what should guide the country | Something the text says every person is owed (the freedom to speak, believe, own and trade, a fair start in life, or fair treatment whatever group they belong to), and the text putting that first |
 
 
 ### 30. What every child is owed, and teachers against owners
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 4 of 7 · Card 30 of 49*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 4 of 7 · Card 30 of 49*
 
 [reviewers only: card kind `exception`, id `exc-fairstart`]
 
@@ -1046,7 +1046,7 @@ The last three cards compared the fourth answer with the first, second and third
 
 > From a teachers' union leaflet: 'Every child in this city is owed a school with a roof that does not leak. But the academy chain that owns our school takes a fee for every pupil while the staff who teach them are paid less each year. Teachers and owners want different things, and we are with the teachers.'
 
-The leaflet begins by saying that every child is owed a school with a roof that does not leak. Saying what every person is owed is what you point to for **“Rights and fair treatment for everyone”**. Yet the key’s answer for this case is **“Working people, against those who own the businesses”**.
+The leaflet begins by saying that every child is owed a school with a roof that does not leak. Saying what every person is owed is what you point to for **“Rights and fair treatment for everyone”**. Yet the answer for this case is **“Working people, against those who own the businesses”**.
 
 **You are asked:** This looks like **“Rights and fair treatment for everyone”**. Before you read why it is **“Working people, against those who own the businesses”**, tap the words in the case that settle it.
 
@@ -1063,22 +1063,22 @@ The pieces you can tap:
 
 The leaflet does say what every child is owed. If that were all it said, it would be **“Rights and fair treatment for everyone”**. But it goes on to name the academy chain that owns the school and the staff who teach in it, and says "teachers and owners want different things, and we are with the teachers". That is working people set against owners, with the text on the workers’ side.
 
-So the case shows both answers at once. When it does, the key chooses the first. The promise to every child is in the text, but what the text does with it is argue for the teachers against the owners.
+So the case shows both answers at once. When it does, the first answer wins. The promise to every child is in the text, but what the text does with it is argue for the teachers against the owners.
 
-It chooses this way round for a reason. If the leaflet were given **“Rights and fair treatment for everyone”**, the owners and the staff would drop out of what the key looks at, and they are what the leaflet is about.
+The answer goes this way round for a reason. If the leaflet were given **“Rights and fair treatment for everyone”**, the owners and the staff would drop out of the reading, and they are what the leaflet is about.
 
 **How to tell them apart**
 
 Is there a side the text is against, the people who own where others work? Or does it speak for every person, whoever they are?
 
-When a case shows both **“Rights and fair treatment for everyone”** and working people set against those who own the businesses, the key’s answer is **“Working people, against those who own the businesses”**.
+When a case shows both **“Rights and fair treatment for everyone”** and working people set against those who own the businesses, the answer is **“Working people, against those who own the businesses”**.
 
-It is worth knowing that this is the key’s decision. In life, a text can speak for every person and for one side at once, and the field draws no sharp line between the two. The key gives each text one answer, so that two people using it reach the same one and can each say why.
+It is worth knowing that this is a decision. In life, a text can speak for every person and for one side at once, and the field draws no sharp line between the two. Each text gets one answer, so that two people using the same questions reach the same one and can each say why.
 
 
 ### 31. Freedom, and old values to guide it
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 4 of 7 · Card 31 of 49*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 4 of 7 · Card 31 of 49*
 
 [reviewers only: card kind `exception`, id `exc-lowtax`]
 
@@ -1088,7 +1088,7 @@ The last card showed the fourth answer giving way to the first. It also gives wa
 
 > From a candidate's letter to voters: 'Every person should keep what they earn, and the government should be kept small. But freedom without the old values is only a loose crowd. The church, the family and the customs our parents taught us are what hold a free country together, and what should guide it.'
 
-The letter begins with what each person should keep and with a small government. That is what you point to for **“Rights and fair treatment for everyone”**. Yet the key’s answer for this case is **“Old ways of faith, family and custom”**.
+The letter begins with what each person should keep and with a small government. That is what you point to for **“Rights and fair treatment for everyone”**. Yet the answer for this case is **“Old ways of faith, family and custom”**.
 
 **You are asked:** This looks like **“Rights and fair treatment for everyone”**. Before you read why it is **“Old ways of faith, family and custom”**, tap the words in the case that settle it.
 
@@ -1105,22 +1105,22 @@ The pieces you can tap:
 
 The letter does say what each person should keep, and that the government should be small. If that were all it said, it would be **“Rights and fair treatment for everyone”**. But look at its turn: "freedom without the old values is only a loose crowd". The letter then names the church, the home and the customs the writer’s parents taught, and says they are what hold a free country together and what should guide it.
 
-So the case shows both answers at once. When it does, the key chooses the third. The letter holds up the old values as what guides, and freedom as something that needs them.
+So the case shows both answers at once. When it does, the third answer wins. The letter holds up the old values as what guides, and freedom as something that needs them.
 
-It chooses this way round for a reason. The letter itself puts the old values first: it calls freedom without them a loose crowd.
+The answer goes this way round for a reason. The letter itself puts the old values first: it calls freedom without them a loose crowd.
 
 **How to tell them apart**
 
 Is the text’s reason that the thing was handed down from the past? Or is its reason that every person is owed it?
 
-When a case shows both **“Rights and fair treatment for everyone”** and old ways of faith, family or custom held up as what should guide the country, the key’s answer is **“Old ways of faith, family and custom”**.
+When a case shows both **“Rights and fair treatment for everyone”** and old ways of faith, home life or custom held up as what should guide the country, the answer is **“Old ways of faith, family and custom”**.
 
-It is worth knowing that this is the key’s decision. In life, people who want a small government and people who want old values to guide are often the same people, and say both in one breath. The key gives each text one answer, so that two people using it reach the same one and can each say why.
+It is worth knowing that this is a decision. In life, people who want a small government and people who want old values to guide are often the same people, and say both in one breath. Each text gets one answer, so that two people using the same questions reach the same one and can each say why.
 
 
 ### 32. A fair hearing for all, and the people first
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 4 of 7 · Card 32 of 49*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 4 of 7 · Card 32 of 49*
 
 [reviewers only: card kind `exception`, id `exc-twoduties`]
 
@@ -1130,7 +1130,7 @@ The last card showed the fourth answer giving way to the third. It also gives wa
 
 > From a speech: 'Every person is owed a fair hearing, and I will defend that. But this country is one people, and our first duty is to our own people, and it comes before any stranger's claim.'
 
-The speech begins by saying that every person is owed a fair hearing. Saying what every person is owed is what you point to for **“Rights and fair treatment for everyone”**. Yet the key’s answer for this case is **“The nation, or its ordinary people”**.
+The speech begins by saying that every person is owed a fair hearing. Saying what every person is owed is what you point to for **“Rights and fair treatment for everyone”**. Yet the answer for this case is **“The nation, or its ordinary people”**.
 
 **You are asked:** This looks like **“Rights and fair treatment for everyone”**. Before you read why it is **“The nation, or its ordinary people”**, tap the words in the case that settle it.
 
@@ -1147,22 +1147,22 @@ The pieces you can tap:
 
 The speech does say that every person is owed a fair hearing. If that were all it said, it would be **“Rights and fair treatment for everyone”**. But it goes on to say that this country is one people, and that "our first duty is to our own people, and it comes before any stranger’s claim". That is one people, marked out by its country, put first.
 
-So the case shows both answers at once. When it does, the key chooses the second. The fair hearing is in the text, but the text ranks it below the duty to its own people.
+So the case shows both answers at once. When it does, the second answer wins. The fair hearing is in the text, but the text ranks it below the duty to its own people.
 
-It chooses this way round for a reason. The speech itself says which duty comes first, and the key asks what the text puts first.
+The answer goes this way round for a reason. The speech itself says which duty comes first, and the first question asks what the text puts first.
 
 **How to tell them apart**
 
 Is one people being put first, perhaps above the others? Or is something said to be owed to every person, whatever group they belong to?
 
-When a case shows both **“Rights and fair treatment for everyone”** and one people put first, the key’s answer is **“The nation, or its ordinary people”**.
+When a case shows both **“Rights and fair treatment for everyone”** and one people put first, the answer is **“The nation, or its ordinary people”**.
 
-It is worth knowing that this is the key’s decision. In life, people can mean both a fair hearing for everyone and loyalty to their own people, and the field draws no sharp line between them. The key gives each text one answer, so that two people using it reach the same one and can each say why.
+It is worth knowing that this is a decision. In life, people can mean both a fair hearing for everyone and loyalty to their own people, and the field draws no sharp line between them. Each text gets one answer, so that two people using the same questions reach the same one and can each say why.
 
 
 ### 33. A wrong idea: "they both talk about race, so they are the same"
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 4 of 7 · Card 33 of 49*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 4 of 7 · Card 33 of 49*
 
 [reviewers only: card kind `refute`, id `refute-race`]
 
@@ -1176,7 +1176,7 @@ The two texts about race put the same noun to opposite uses. People often say th
 
 A word is not a text. "Race" turns up in both, and so does the fact that people are treated differently. But a text is what it says about the word, and these two say opposite things. One puts its own people above the others and says the others were born to serve. The other says nobody is above anybody, and asks that rules be changed so that no group is left behind.
 
-The key asks who or what the text puts first. For the pamphlet the answer is **“The nation, or its ordinary people”**: a people, placed above the rest. For the speech it is **“Rights and fair treatment for everyone”**: what every person is owed, with no one ranked. They are different answers to the same first question, so they cannot be the same text.
+The question is who or what the text puts first. For the pamphlet the answer is **“The nation, or its ordinary people”**: a people, placed above the rest. For the speech it is **“Rights and fair treatment for everyone”**: what every person is owed, with no one ranked. They are different answers to the same first question, so they cannot be the same text.
 
 This is true whichever way you feel about either text. Telling them apart is not approving of one of them. It is reading what each says, and the words that decide it are the ones that say whether one people is placed above the others, or no one is.
 
@@ -1189,11 +1189,11 @@ This is true whichever way you feel about either text. Telling them apart is not
 
 ### 34. Who rules, or one practical matter, and no side
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 5 of 7 · Card 34 of 49*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 5 of 7 · Card 34 of 49*
 
 [reviewers only: card kind `meet`, id `meet-none`]
 
-Four answers so far, and in each one the text had a side, or a thing it put first. Many texts have neither, and the key has an answer for them.
+Four answers so far, and in each one the text had a side, or a thing it put first. Many texts have neither, and there is an answer for them.
 
 *The lift notice*
 
@@ -1212,21 +1212,21 @@ What is left is a text about one practical matter. It says what will happen, whe
 
 A text of this answer comes in two shapes. This notice is the first: it says what will happen, when, and what to do. In the second shape the text says who holds power and how they keep it: who chairs a council and for how long, or who may give orders and who must obey. A text like that can be dry or frightening, but it still names no side, because saying who decides is not the same as saying whom the text speaks for.
 
-Why does the key have this answer at all? Because a key with only four answers would push a notice about a lift into one of them. A reader who had to choose would find a side in the text that is not there. A fifth answer lets you look, find nothing to name, and say so.
+Why is there this answer at all? Because a list with only four answers would push a notice about a lift into one of them. A reader who had to choose would find a side in the text that is not there. A fifth answer lets you look, find nothing to name, and say so.
 
 **What you must be able to point to.** A text about who holds power and how they keep it, or about one practical matter, and no side it speaks for: no working people against owners, no nation or people, no old ways, and nothing every person is owed. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“Who or what does the text put first?”**
+**The question:** **“Who or what does the text put first?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“No side named”**
+**Its answer for a case like this one:** **“No side named”**
 
-In this unit the key’s answer is also the name of the kind of text: **“No side named”**. It means that the text speaks for no one: it is about one practical matter, or about who holds power and how. "Side" means one of the groups, peoples or things the other four answers put first.
+In this unit the answer is also the name of the kind of text: **“No side named”**. It means that the text speaks for no one: it is about one practical matter, or about who holds power and how. "Side" means one of the groups, peoples or things the other four answers put first.
 
-After this answer the key asks nothing more. There is no finer name to give, and that is a result in its own right: you looked, and there was nothing to name.
+After this answer nothing more is asked. There is no finer name to give, and that is a result in its own right: you looked, and there was nothing to name.
 
 ### 35. No side named: the same thing in a different story
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 5 of 7 · Card 35 of 49*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 5 of 7 · Card 35 of 49*
 
 [reviewers only: card kind `again`, id `again-none`]
 
@@ -1259,7 +1259,7 @@ One text is about a lift and the other about a council, and one is a practical m
 
 ### 36. No side named: what it is like
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 5 of 7 · Card 36 of 49*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 5 of 7 · Card 36 of 49*
 
 [reviewers only: card kind `portrait`, id `portrait-none`]
 
@@ -1290,13 +1290,13 @@ In your own life it is most of what you read in a day: a bus timetable, a letter
 
 ### 37. A question about a new case
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 5 of 7 · Card 37 of 49*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 5 of 7 · Card 37 of 49*
 
 [reviewers only: card kind `check`, id `check-none`]
 
 > From a sign at the Ash Road clinic: 'From the first of May the clinic opens at 8 instead of 9. Patients with an appointment before 9 should arrive after 8. The pharmacy hours do not change.'
 
-**The key asks:** **“Who or what does the text put first?”** Which of the answers you have met so far fits this case?
+**The question:** **“Who or what does the text put first?”** Which of the answers you have met so far fits this case?
 
 - Working people, against those who own the businesses
 - Rights and fair treatment for everyone
@@ -1313,7 +1313,7 @@ In your own life it is most of what you read in a day: a bus timetable, a letter
 
 ### 38. A wrong idea: "he called it communism, so that is what it is"
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 5 of 7 · Card 38 of 49*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 5 of 7 · Card 38 of 49*
 
 [reviewers only: card kind `refute`, id `refute-insult`]
 
@@ -1329,7 +1329,7 @@ A name thrown at a plan is the thrower’s opinion of the plan. It is not a desc
 
 The names thrown in an argument are names for an *ideology*: a set of beliefs about who a country is for and how it should be run. A bus lane is a decision about a road. It would take a text that says something about who the country is for before such a name could fit it. A person who says “communism” about a bus lane is telling you how they feel about it.
 
-Describing what a text says and attacking it are different jobs, and the key is only for the first. The first question gives this plan **“No side named”**, and any finer name has to be earned from the text’s own words, which is the work the rest of the key does.
+Describing what a text says and attacking it are different jobs, and this course is only for the first. The first question gives this plan **“No side named”**, and any finer name has to be earned from the text’s own words, which is the work the later questions do.
 
 
 *End of part 5. You can stop here; your place is kept. Next: part 6, The fifth answer beside the other four.*
@@ -1340,7 +1340,7 @@ Describing what a text says and attacking it are different jobs, and the key is 
 
 ### 39. Working people, against those who own the businesses or No side named: telling them apart
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 6 of 7 · Card 39 of 49*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 6 of 7 · Card 39 of 49*
 
 [reviewers only: card kind `lookalike`, id `look-class-none`]
 
@@ -1362,9 +1362,9 @@ Now the pairs that involve the fifth answer. The first and the fifth are easy to
 
 **Why this one and not the other**
 
-In Case A the ferry is cut to one sailing a day and the text gives the timetable: when the boat leaves, when it returns, who needs to book. It takes no side. The key’s answer is **“No side named”**.
+In Case A the ferry is cut to one sailing a day and the text gives the timetable: when the boat leaves, when it returns, who needs to book. It takes no side. The answer is **“No side named”**.
 
-In Case B the same cut is told as a quarrel between the ferry company’s owners and the crews who work the boats, and the text stands with the crews. The key’s answer is **“Working people, against those who own the businesses”**.
+In Case B the same cut is told as a quarrel between the ferry company’s owners and the crews who work the boats, and the text stands with the crews. The answer is **“Working people, against those who own the businesses”**.
 
 The facts are the same, one sailing a day, and the matter is the same, work on a boat. What differs is whether the text sets two groups against each other and stands with one.
 
@@ -1372,7 +1372,7 @@ The facts are the same, one sailing a day, and the matter is the same, work on a
 
 Does the text take the workers’ side against the owners? Or does it only say what is to be done, or who decides?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Working people, against those who own the businesses | No side named |
 |---|---|---|
@@ -1382,7 +1382,7 @@ Does the text take the workers’ side against the owners? Or does it only say w
 
 ### 40. The nation, or its ordinary people or No side named: telling them apart
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 6 of 7 · Card 40 of 49*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 6 of 7 · Card 40 of 49*
 
 [reviewers only: card kind `lookalike`, id `look-nation-none`]
 
@@ -1404,9 +1404,9 @@ The second and fifth answers are easy to mix up when a text is about a country, 
 
 **Why this one and not the other**
 
-In Case A the cut is told as an island cut off from the rest of its own country. The text says the islanders are as much a part of our nation as anyone, and that a nation that leaves its own people behind has stopped being one people. It puts the people first. The key’s answer is **“The nation, or its ordinary people”**.
+In Case A the cut is told as an island cut off from the rest of its own country. The text says the islanders are as much a part of our nation as anyone, and that a nation that leaves its own people behind has stopped being one people. It puts the people first. The answer is **“The nation, or its ordinary people”**.
 
-In Case B the text gives the timetable and says who needs to book. It names no people and no country. The key’s answer is **“No side named”**.
+In Case B the text gives the timetable and says who needs to book. It names no people and no country. The answer is **“No side named”**.
 
 Both texts are about the same ferry. One speaks for a people, and the other says only what will happen.
 
@@ -1414,7 +1414,7 @@ Both texts are about the same ferry. One speaks for a people, and the other says
 
 Does the text speak for one people and put it first? Or does it only say who is in charge and how they keep power, or what will happen?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | The nation, or its ordinary people | No side named |
 |---|---|---|
@@ -1424,7 +1424,7 @@ Does the text speak for one people and put it first? Or does it only say who is 
 
 ### 41. Old ways of faith, family and custom or No side named: telling them apart
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 6 of 7 · Card 41 of 49*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 6 of 7 · Card 41 of 49*
 
 [reviewers only: card kind `lookalike`, id `look-tradition-none`]
 
@@ -1446,9 +1446,9 @@ The third and fifth answers are easy to mix up when a text is about a church, a 
 
 **Why this one and not the other**
 
-In Case A the text gives the timetable. It names no custom, no church and nothing handed down. The key’s answer is **“No side named”**.
+In Case A the text gives the timetable. It names no custom, no church and nothing handed down. The answer is **“No side named”**.
 
-In Case B the same cut is told as the loss of the Sunday boat that the island has used to reach the mainland church for two hundred years. The text says the Sunday crossing, the church and the old island customs should guide how the ferry is run. The key’s answer is **“Old ways of faith, family and custom”**.
+In Case B the same cut is told as the loss of the Sunday boat that the island has used to reach the mainland church for two hundred years. The text says the Sunday crossing, the church and the old island customs should guide how the ferry is run. The answer is **“Old ways of faith, family and custom”**.
 
 A church and a Sunday appear in Case B, but a text could mention a church and a Sunday and hold nothing up, as a notice of service times would. What matters is whether the old ways are held up as what should guide.
 
@@ -1456,17 +1456,17 @@ A church and a Sunday appear in Case B, but a text could mention a church and a 
 
 Does the text hold up old ways as what should guide? Or does it only handle one practical matter?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Old ways of faith, family and custom | No side named |
 |---|---|---|
 | In plain words | The ways handed down from the past | Who rules, or one practical matter, and no side |
-| What you must be able to point to | Ways handed down from the past (a faith, the family, old customs, or an old order of crown, church and rank), and the text holding them up as what should guide the country | A text about who holds power and how they keep it, or about one practical matter, and no side it speaks for: no working people against owners, no nation or people, no old ways, and nothing every person is owed |
+| What you must be able to point to | Ways handed down from the past (a faith, home life, old customs, or an old order of crown, church and rank), and the text holding them up as what should guide the country | A text about who holds power and how they keep it, or about one practical matter, and no side it speaks for: no working people against owners, no nation or people, no old ways, and nothing every person is owed |
 
 
 ### 42. Rights and fair treatment for everyone or No side named: telling them apart
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 6 of 7 · Card 42 of 49*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 6 of 7 · Card 42 of 49*
 
 [reviewers only: card kind `lookalike`, id `look-rights-none`]
 
@@ -1488,9 +1488,9 @@ The fourth and fifth answers are the last pair. Both can be about forms, appeals
 
 **Why this one and not the other**
 
-In Case A the text says that every islander is owed a way to a hospital and a school, whatever their age, income or health, and that fair treatment for every person means a crossing they can rely on. It puts what is owed first. The key’s answer is **“Rights and fair treatment for everyone”**.
+In Case A the text says that every islander is owed a way to a hospital and a school, whatever their age, income or health, and that fair treatment for every person means a crossing they can rely on. It puts what is owed first. The answer is **“Rights and fair treatment for everyone”**.
 
-In Case B the text gives the timetable. It says who needs to book and by when. Nothing is said to be owed to anyone. The key’s answer is **“No side named”**.
+In Case B the text gives the timetable. It says who needs to book and by when. Nothing is said to be owed to anyone. The answer is **“No side named”**.
 
 A ferry is a service, and a service is not a right. A text about a service is the fourth answer only when it says that every person is owed it.
 
@@ -1498,7 +1498,7 @@ A ferry is a service, and a service is not a right. A text about a service is th
 
 Does the text say that every person is owed something? Or does it only say how one thing is to be done?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Rights and fair treatment for everyone | No side named |
 |---|---|---|
@@ -1508,7 +1508,7 @@ Does the text say that every person is owed something? Or does it only say how o
 
 ### 43. A ruler’s orders
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 6 of 7 · Card 43 of 49*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 6 of 7 · Card 43 of 49*
 
 [reviewers only: card kind `exception`, id `exc-ruler`]
 
@@ -1518,7 +1518,7 @@ The last pairs kept the fifth answer to notices and timetables. It also covers a
 
 > Order of the Governor of the Eastern District: 'Two newspapers are closed from today. The Harbour party is dissolved and its offices sealed. A watcher will be named in every street to report who meets whom. The Governor thanks those who obey, and these orders will stand for as long as he chooses.'
 
-The Governor closes newspapers, bans a party and sets a watcher in every street. Texts that put one people first and silence everyone else can do all of these things, so a reader may take this one for **“The nation, or its ordinary people”**. Yet the key’s answer for this case is **“No side named”**.
+The Governor closes newspapers, bans a party and sets a watcher in every street. Texts that put one people first and silence everyone else can do all of these things, so a reader may take this one for **“The nation, or its ordinary people”**. Yet the answer for this case is **“No side named”**.
 
 **You are asked:** This looks like **“The nation, or its ordinary people”**. Before you read why it is **“No side named”**, tap the words in the case that settle it.
 
@@ -1535,7 +1535,7 @@ The pieces you can tap:
 
 Read the Governor’s order for whom it speaks for. There is no "we", no people and no country in it. There are orders, and there is the Governor, who decides how long they last. The text says who holds power and how they keep it. It does not say that anyone is put first.
 
-Closing newspapers, banning parties and setting watchers are ways of keeping power, and a ruler can use them whatever else the ruler believes. They tell you how this ruler holds power. They do not tell you whom the text speaks for, and that is what the key asks.
+Closing newspapers, banning parties and setting watchers are ways of keeping power, and a ruler can use them whatever else the ruler believes. They tell you how this ruler holds power. They do not tell you whom the text speaks for, and that is what the first question asks.
 
 A text can show a ruler’s methods and also put one people first, and then the answer is **“The nation, or its ordinary people”**. This one shows only the methods.
 
@@ -1548,25 +1548,25 @@ This answer does not say the orders are harmless, and it does not say they are f
 The same goes for a text that praises a ruler without saying whom the ruler serves. With no people, no side, no old way and nothing owed to every person, the answer is **“No side named”**.
 
 
-*End of part 6. You can stop here; your place is kept. Next: part 7, The key’s question, two whole cases, then the drill.*
+*End of part 6. You can stop here; your place is kept. Next: part 7, The question, two whole cases, then the drill.*
 
 ---
 
-## Part 7 of 7: The key’s question, two whole cases, then the drill
+## Part 7 of 7: The question, two whole cases, then the drill
 
 ### 44. The question you have been answering all along
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 7 of 7 · Card 44 of 49*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 7 of 7 · Card 44 of 49*
 
 [reviewers only: card kind `question`, id `q-sides`]
 
-Since the depot leaflet you have seen the key’s question at the foot of each new answer, with one answer under it. This card puts the question and its five answers in one place, as the key shows them, and says why the key asks it before anything else.
+Since the depot leaflet you have seen the question at the foot of each new answer, with one answer under it. This card puts the question and its five answers in one place, worded as it always is, and says why it is asked before anything else.
 
-**The key asks:** **“Who or what does the text put first?”**
+**The question:** **“Who or what does the text put first?”**
 
 **What it is for.** Sorts texts that speak for working people against owners, for a nation or its ordinary people, for old ways handed down, or for what every person is owed, from texts that speak for no side at all.
 
-**Its answers, exactly as the key shows them**
+**Its answers**
 
 In this unit each answer is itself the name of a kind, and so rules out the other four.
 
@@ -1575,7 +1575,7 @@ In this unit each answer is itself the name of a kind, and so rules out the othe
 - **“The nation, or its ordinary people”**
   - Give this answer when the text speaks for one people, marked out by its country, its culture or its blood, and puts that people first: the whole nation as one, or its ordinary people against a few at the top.
 - **“Old ways of faith, family and custom”**
-  - Give this answer when the text holds up ways handed down from the past (a faith, the family, old customs, or an old order of crown, church and rank) as what should guide the country.
+  - Give this answer when the text holds up ways handed down from the past (a faith, home life, old customs, or an old order of crown, church and rank) as what should guide the country.
 - **“Rights and fair treatment for everyone”**
   - Give this answer when the text puts first what it says every person is owed: the freedom to speak, believe, own and trade, a fair start in life, or fair treatment whatever group they belong to.
 - **“No side named”**
@@ -1589,7 +1589,7 @@ A text can only be read for what it is about. If you take a notice about a lift 
 
 That is why this question comes first, before any finer name, and why every case in this subject starts with it. Each of the first four answers is where a different *ideology* starts.
 
-In this unit it is the only question, so its answer is the name. In the rest of the subject, each of the first four answers is followed by questions that lead to a finer name, and the fifth answer is followed by nothing. The answers you give on the way to a name are called your route: this first answer, and then the answers to the questions that follow it. Once a route has more than one answer, two things are marked separately: the name you give a case, and your route to it. A right name reached by a wrong answer to this first question counts as a miss, which is why the first question gets a whole unit of practice.
+In this unit it is the only question, so its answer is the name. In the rest of the subject, each of the first four answers is followed by questions that lead to a finer name, and the fifth answer is followed by nothing. The answers you give on the way to a name are this first answer, and then the answers to the questions that follow it. Once there is more than one answer on the way to a name, two things are marked separately: the name you give a case, and your answers on the way to it. A right name reached by a wrong answer to this first question counts as a miss, which is why the first question gets a whole unit of practice.
 
 **How to answer it from a case**
 
@@ -1599,7 +1599,7 @@ For **“Working people, against those who own the businesses”**: people who w
 
 For **“The nation, or its ordinary people”**: a people the text calls its own, marked out by its country, its culture or its blood, and the text putting that people first.
 
-For **“Old ways of faith, family and custom”**: ways handed down from the past (a faith, the family, old customs, or an old order of crown, church and rank), and the text holding them up as what should guide the country.
+For **“Old ways of faith, family and custom”**: ways handed down from the past (a faith, home life, old customs, or an old order of crown, church and rank), and the text holding them up as what should guide the country.
 
 For **“Rights and fair treatment for everyone”**: something the text says every person is owed (the freedom to speak, believe, own and trade, a fair start in life, or fair treatment whatever group they belong to), and the text putting that first.
 
@@ -1609,31 +1609,31 @@ Whichever answer you give, put your finger on the words that show it: the two gr
 
 **When two answers both seem to fit**
 
-Some texts show two of the answers at once. You have met six such texts: the mill-and-port meeting, the loom hands’ newsletter, the bishop’s letter, the teachers’ leaflet, the candidate’s letter and the speech about the two duties. In each the key chose one answer, and each choice is printed below with the question that tells the pair apart.
+Some texts show two of the answers at once. You have met six such texts: the mill-and-port meeting, the loom hands’ newsletter, the bishop’s letter, the teachers’ leaflet, the candidate’s letter and the speech about the two duties. In each, one answer won, and each choice is printed below with the question that tells the pair apart.
 
-The key’s decisions run in one order. **“Working people, against those who own the businesses”** wins over every other answer. **“Old ways of faith, family and custom”** wins over **“The nation, or its ordinary people”** and **“Rights and fair treatment for everyone”**. **“The nation, or its ordinary people”** wins over **“Rights and fair treatment for everyone”**. So when you meet two answers in one text, the one that comes first in that order is the key’s answer, and the other gives way.
+The decisions run in one order. **“Working people, against those who own the businesses”** wins over every other answer. **“Old ways of faith, family and custom”** wins over **“The nation, or its ordinary people”** and **“Rights and fair treatment for everyone”**. **“The nation, or its ordinary people”** wins over **“Rights and fair treatment for everyone”**. So when you meet two answers in one text, the one that comes first in that order is the answer, and the other gives way.
 
-- Working people, against those who own the businesses or The nation, or its ordinary people: Who is "us", and who is "them"? Are they the people who work for pay and the people who own where they work? Or is "us" one people, marked out by its country, culture or birth? When a case shows both **“The nation, or its ordinary people”** and working people set against those who own the businesses, the key’s answer is **“Working people, against those who own the businesses”**.
-- Working people, against those who own the businesses or Old ways of faith, family and custom: Is the text about the jobs and money of working people against owners? Or is it about something handed down from the past, which it says should guide? When a case shows both **“Old ways of faith, family and custom”** and working people set against those who own the businesses, the key’s answer is **“Working people, against those who own the businesses”**.
-- Working people, against those who own the businesses or Rights and fair treatment for everyone: Is there a side the text is against, the people who own where others work? Or does it speak for every person, whoever they are? When a case shows both **“Rights and fair treatment for everyone”** and working people set against those who own the businesses, the key’s answer is **“Working people, against those who own the businesses”**.
+- Working people, against those who own the businesses or The nation, or its ordinary people: Who is "us", and who is "them"? Are they the people who work for pay and the people who own where they work? Or is "us" one people, marked out by its country, culture or birth? When a case shows both **“The nation, or its ordinary people”** and working people set against those who own the businesses, the answer is **“Working people, against those who own the businesses”**.
+- Working people, against those who own the businesses or Old ways of faith, family and custom: Is the text about the jobs and money of working people against owners? Or is it about something handed down from the past, which it says should guide? When a case shows both **“Old ways of faith, family and custom”** and working people set against those who own the businesses, the answer is **“Working people, against those who own the businesses”**.
+- Working people, against those who own the businesses or Rights and fair treatment for everyone: Is there a side the text is against, the people who own where others work? Or does it speak for every person, whoever they are? When a case shows both **“Rights and fair treatment for everyone”** and working people set against those who own the businesses, the answer is **“Working people, against those who own the businesses”**.
 - Working people, against those who own the businesses or No side named: Does the text take the workers’ side against the owners? Or does it only say what is to be done, or who decides?
-- The nation, or its ordinary people or Old ways of faith, family and custom: What does the text hold up as first: the people itself, marked out by country, culture or birth? Or ways handed down from the past, such as a faith or old customs? When a case shows both **“The nation, or its ordinary people”** and old ways of faith, family or custom held up as what should guide the country, the key’s answer is **“Old ways of faith, family and custom”**.
-- The nation, or its ordinary people or Rights and fair treatment for everyone: Is one people being put first, perhaps above the others? Or is something said to be owed to every person, whatever group they belong to? When a case shows both **“Rights and fair treatment for everyone”** and one people put first, the key’s answer is **“The nation, or its ordinary people”**.
+- The nation, or its ordinary people or Old ways of faith, family and custom: What does the text hold up as first: the people itself, marked out by country, culture or birth? Or ways handed down from the past, such as a faith or old customs? When a case shows both **“The nation, or its ordinary people”** and old ways of faith, home life or custom held up as what should guide the country, the answer is **“Old ways of faith, family and custom”**.
+- The nation, or its ordinary people or Rights and fair treatment for everyone: Is one people being put first, perhaps above the others? Or is something said to be owed to every person, whatever group they belong to? When a case shows both **“Rights and fair treatment for everyone”** and one people put first, the answer is **“The nation, or its ordinary people”**.
 - The nation, or its ordinary people or No side named: Does the text speak for one people and put it first? Or does it only say who is in charge and how they keep power, or what will happen?
-- Old ways of faith, family and custom or Rights and fair treatment for everyone: Is the text’s reason that the thing was handed down from the past? Or is its reason that every person is owed it? When a case shows both **“Rights and fair treatment for everyone”** and old ways of faith, family or custom held up as what should guide the country, the key’s answer is **“Old ways of faith, family and custom”**.
+- Old ways of faith, family and custom or Rights and fair treatment for everyone: Is the text’s reason that the thing was handed down from the past? Or is its reason that every person is owed it? When a case shows both **“Rights and fair treatment for everyone”** and old ways of faith, home life or custom held up as what should guide the country, the answer is **“Old ways of faith, family and custom”**.
 - Old ways of faith, family and custom or No side named: Does the text hold up old ways as what should guide? Or does it only handle one practical matter?
 - Rights and fair treatment for everyone or No side named: Does the text say that every person is owed something? Or does it only say how one thing is to be done?
 
 
 ### 45. A question about a new case
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 7 of 7 · Card 45 of 49*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 7 of 7 · Card 45 of 49*
 
 [reviewers only: card kind `check`, id `check-sides`]
 
 > From the newsletter of the Border Counties League: 'Our valleys have been home to one people for a thousand years, and laws made by strangers will not rule them. Our country, our language, our people first.'
 
-**The key asks:** **“Who or what does the text put first?”**
+**The question:** **“Who or what does the text put first?”**
 
 - Working people, against those who own the businesses
 - The nation, or its ordinary people
@@ -1654,11 +1654,11 @@ The key’s decisions run in one order. **“Working people, against those who o
 
 ### 46. A whole case, from the question to the answer
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 7 of 7 · Card 46 of 49*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 7 of 7 · Card 46 of 49*
 
 [reviewers only: card kind `worked`, id `worked-homes`]
 
-You have the five answers and the key’s question about them. Before the drill, watch two cases being run from the top. You are not asked anything until the end of each.
+You have the five answers and the question about them. Before the drill, watch two cases being run from the top. You are not asked anything until the end of each.
 
 *The letter about homes*
 
@@ -1694,17 +1694,17 @@ In this unit the answer is the name. Ruled out: **“Working people, against tho
 
 For **“The nation, or its ordinary people”** you must be able to point to this: a people the text calls its own, marked out by its country, its culture or its blood, and the text putting that people first. The letter does mention the country, and that is why it can look like the second answer. But it does not speak for one people. It says that a fair chance at a home is owed to every person alike, whoever they are and wherever they were born, and that a country that sets this first has its priorities right. The country in the letter is the one that should keep the promise. It is not what the letter puts first.
 
-It is the question from the two texts about race: Is one people being put first, perhaps above the others? Or is something said to be owed to every person, whatever group they belong to? Here nothing places one people above the others, and what is put first is what every person is owed, so the key’s answer is **“Rights and fair treatment for everyone”**.
+It is the question from the two texts about race: Is one people being put first, perhaps above the others? Or is something said to be owed to every person, whatever group they belong to? Here nothing places one people above the others, and what is put first is what every person is owed, so the answer is **“Rights and fair treatment for everyone”**.
 
 **Does it look like a case you know?**
 
-The key has given its answer. Now take a second look of a different kind: does this case look like one you know? It should bring back the speech about every child. There too, a text said what every person is owed, whatever their name or bank balance, and said that it comes first.
+The first question has given its answer. Now take a second look of a different kind: does this case look like one you know? It should bring back the speech about every child. There too, a text said what every person is owed, whatever their name or bank balance, and said that it comes first.
 
-Here the key and the likeness agree, so the answer stands. The key’s question comes first, because it makes you point at words in the text. The likeness is only a second look. When the two disagree, do not pick the one you prefer. Go back to the key’s question and find the words in the text that answer it. The second whole case shows how.
+Here the answer and the likeness agree, so it stands. The question comes first, because it makes you point at words in the text. The likeness is only a second look. When the two disagree, do not pick the one you prefer. Go back to the question and find the words in the text that answer it. The second whole case shows how.
 
 ### 47. A second whole case, where the words point the wrong way
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 7 of 7 · Card 47 of 49*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 7 of 7 · Card 47 of 49*
 
 [reviewers only: card kind `worked`, id `worked-wage`]
 
@@ -1742,13 +1742,13 @@ In this unit the answer is the name. Ruled out: **“The nation, or its ordinary
 
 For **“The nation, or its ordinary people”** you must be able to point to this: a people the text calls its own, marked out by its country, its culture or its blood, and the text putting that people first. The speech uses the words nation and country, but it never speaks for one people. It does the opposite. It says the nation gave nothing, and that the wage was won from employers. It splits the country into those who work and those who own, and takes the first side.
 
-It is the question from the mill-and-port meeting: Who is "us", and who is "them"? Are they the people who work for pay and the people who own where they work? Or is "us" one people, marked out by its country, culture or birth? Here the line runs between those who work and those who own, so the key’s answer is **“Working people, against those who own the businesses”**.
+It is the question from the mill-and-port meeting: Who is "us", and who is "them"? Are they the people who work for pay and the people who own where they work? Or is "us" one people, marked out by its country, culture or birth? Here the line runs between those who work and those who own, so the answer is **“Working people, against those who own the businesses”**.
 
 **Does it look like a case you know?**
 
-Now the second look: does this case look like one you know? A speech that says "nation" and "country" may bring back the bridge speech first, and the bridge speech was **“The nation, or its ordinary people”**. So here the likeness and the key seem to disagree.
+Now the second look: does this case look like one you know? A speech that says "nation" and "country" may bring back the bridge speech first, and the bridge speech was **“The nation, or its ordinary people”**. So here the likeness and the answer seem to disagree.
 
-When that happens, go back to the key’s question and find the words in the text that answer it. They are “The cleaners and the drivers won it from their employers, in strikes” and “A country's wealth is made by the people who work and held by the people who own, and I am with the first”. The bridge speech has nothing like them: it speaks of one people, and it has no owners and no workers in it. The depot leaflet does: drivers and loaders on one side, owners on the other, and the text with the first. So the case this one really looks like is the depot leaflet, and the key’s answer stands.
+When that happens, go back to the question and find the words in the text that answer it. They are “The cleaners and the drivers won it from their employers, in strikes” and “A country's wealth is made by the people who work and held by the people who own, and I am with the first”. The bridge speech has nothing like them: it speaks of one people, and it has no owners and no workers in it. The depot leaflet does: drivers and loaders on one side, owners on the other, and the text with the first. So the case this one really looks like is the depot leaflet, and the answer stands.
 
 ### The drill
 
@@ -1758,7 +1758,7 @@ Some of these texts are only a notice or a timetable, and some name workers and 
 
 #### Stage 1 of 3. One question at a time.
 
-The question is shown with all five of its answers from the key, in the key’s order.
+The question is shown with all five of its answers, in order.
 
 **Drill item 1 of 39**
 
@@ -1777,10 +1777,10 @@ The question is shown with all five of its answers from the key, in the key’s 
 - If you are right: “Right: **Working people, against those who own the businesses.**” The text sorts people into those who build and those who own and sell, and takes the first side: “The developer who owns the site will sell them for twice what they cost to build” and “which of the two sides it is on: the people who build, not the people who sell”.
   - Why not **“Rights and fair treatment for everyone”**: The text does complain of unfairness, but it does not say what every person is owed. It names two sides and stands with one of them.
 - If you miss: “The answer is **Working people, against those who own the businesses.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **The nation, or its ordinary people**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **Old ways of faith, family and custom**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose **The nation, or its ordinary people**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **Old ways of faith, family and custom**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Rights and fair treatment for everyone**: the “why not” line above.
-  - If you chose **No side named**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose **No side named**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 2 of 39**
@@ -1801,9 +1801,9 @@ The question is shown with all five of its answers from the key, in the key’s 
   - Why not **“Working people, against those who own the businesses”**: The notice is about a workplace, and workers are the people it is written to, but nothing in it sets them against anyone. It tells them how to ask for a swap.
 - If you miss: “The answer is **No side named.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **Working people, against those who own the businesses**: the “why not” line above.
-  - If you chose **The nation, or its ordinary people**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **Old ways of faith, family and custom**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **Rights and fair treatment for everyone**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose **The nation, or its ordinary people**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **Old ways of faith, family and custom**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **Rights and fair treatment for everyone**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 3 of 39**
@@ -1824,9 +1824,9 @@ The question is shown with all five of its answers from the key, in the key’s 
   - Why not **“Working people, against those who own the businesses”**: The text mentions what patients earn only to say that it makes no difference. It sorts nobody into workers and owners.
 - If you miss: “The answer is **Rights and fair treatment for everyone.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **Working people, against those who own the businesses**: the “why not” line above.
-  - If you chose **The nation, or its ordinary people**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **Old ways of faith, family and custom**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **No side named**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose **The nation, or its ordinary people**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **Old ways of faith, family and custom**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **No side named**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 4 of 39**
@@ -1846,10 +1846,10 @@ The question is shown with all five of its answers from the key, in the key’s 
 - If you are right: “Right: **The nation, or its ordinary people.**” The text speaks for the country’s own people against a few at the top, and puts those people first: “a few insiders in the capital decide how their money is spent” and “This country belongs to its own people, and its own people will run it”.
   - Why not **“Rights and fair treatment for everyone”**: The text speaks of the people of one country, and what they are owed is that they run it themselves. It does not say that every person is owed anything.
 - If you miss: “The answer is **The nation, or its ordinary people.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **Working people, against those who own the businesses**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **Old ways of faith, family and custom**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose **Working people, against those who own the businesses**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **Old ways of faith, family and custom**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Rights and fair treatment for everyone**: the “why not” line above.
-  - If you chose **No side named**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose **No side named**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 5 of 39**
@@ -1869,9 +1869,9 @@ The question is shown with all five of its answers from the key, in the key’s 
 - If you are right: “Right: **Old ways of faith, family and custom.**” The text holds up what was handed down as what should guide: “We were given those bells and that church, and we mean to keep them” and “They are what a town should be run by”.
   - Why not **“No side named”**: A text about bells and a council vote could be a plain notice. This one goes further and says the old ways should decide how the town is run.
 - If you miss: “The answer is **Old ways of faith, family and custom.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **Working people, against those who own the businesses**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **The nation, or its ordinary people**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **Rights and fair treatment for everyone**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose **Working people, against those who own the businesses**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **The nation, or its ordinary people**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **Rights and fair treatment for everyone**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **No side named**: the “why not” line above.
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
@@ -1892,10 +1892,10 @@ The question is shown with all five of its answers from the key, in the key’s 
 - If you are right: “Right: **The nation, or its ordinary people.**” The text speaks for one people and puts it first: “one people, one flag, one future” and “A people that stops believing in itself is swallowed”.
   - Why not **“Old ways of faith, family and custom”**: The text speaks of a flag and a future. It holds up no faith, home life or custom as the guide, so it is the people itself that comes first.
 - If you miss: “The answer is **The nation, or its ordinary people.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **Working people, against those who own the businesses**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose **Working people, against those who own the businesses**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Old ways of faith, family and custom**: the “why not” line above.
-  - If you chose **Rights and fair treatment for everyone**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **No side named**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose **Rights and fair treatment for everyone**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **No side named**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 7 of 39**
@@ -1912,7 +1912,7 @@ The question is shown with all five of its answers from the key, in the key’s 
 
 **Shown as soon as you answer**
 
-- The answer is: “Who is "us", and who is "them"? Are they the people who work for pay and the people who own where they work? Or is "us" one people, marked out by its country, culture or birth?” Both can be angry about the same closing or the same cut, and both can say "us" against someone else. In **“Working people, against those who own the businesses”** "us" is the people who work for pay, and "them" is the people who own where they work. In **“The nation, or its ordinary people”** "us" is one people, marked out by its country, culture or birth, and the text puts it first. A text can mention wages, bosses and the rich and still get the second answer, if what it speaks for is the people as a whole. When a case shows both **“The nation, or its ordinary people”** and working people set against those who own the businesses, the key’s answer is **“Working people, against those who own the businesses”**.
+- The answer is: “Who is "us", and who is "them"? Are they the people who work for pay and the people who own where they work? Or is "us" one people, marked out by its country, culture or birth?” Both can be angry about the same closing or the same cut, and both can say "us" against someone else. In **“Working people, against those who own the businesses”** "us" is the people who work for pay, and "them" is the people who own where they work. In **“The nation, or its ordinary people”** "us" is one people, marked out by its country, culture or birth, and the text puts it first. A text can mention wages, bosses and the rich and still get the second answer, if what it speaks for is the people as a whole. When a case shows both **“The nation, or its ordinary people”** and working people set against those who own the businesses, the answer is **“Working people, against those who own the businesses”**.
 - If you chose “Is the text about the jobs and money of working people against owners? Or is it about something handed down from the past, which it says should guide?”: that question separates **“Working people, against those who own the businesses”** and **“Old ways of faith, family and custom”**.
 - If you chose “Is there a side the text is against, the people who own where others work? Or does it speak for every person, whoever they are?”: that question separates **“Working people, against those who own the businesses”** and **“Rights and fair treatment for everyone”**.
 - If you chose “Does the text take the workers’ side against the owners? Or does it only say what is to be done, or who decides?”: that question separates **“Working people, against those who own the businesses”** and **“No side named”**.
@@ -1935,7 +1935,7 @@ The question is shown with all five of its answers from the key, in the key’s 
 
 **Shown as soon as you answer**
 
-- The answer is: “Is there a side the text is against, the people who own where others work? Or does it speak for every person, whoever they are?” Both can ask for fair pay and fair rules, and both can stand with people who have less. In **“Working people, against those who own the businesses”** the people the text speaks for are the workers, and the owners are named as the other side. In **“Rights and fair treatment for everyone”** the text speaks for every person alike, and names no side to be on the far end of it. When a case shows both **“Rights and fair treatment for everyone”** and working people set against those who own the businesses, the key’s answer is **“Working people, against those who own the businesses”**.
+- The answer is: “Is there a side the text is against, the people who own where others work? Or does it speak for every person, whoever they are?” Both can ask for fair pay and fair rules, and both can stand with people who have less. In **“Working people, against those who own the businesses”** the people the text speaks for are the workers, and the owners are named as the other side. In **“Rights and fair treatment for everyone”** the text speaks for every person alike, and names no side to be on the far end of it. When a case shows both **“Rights and fair treatment for everyone”** and working people set against those who own the businesses, the answer is **“Working people, against those who own the businesses”**.
 - If you chose “Who is "us", and who is "them"? Are they the people who work for pay and the people who own where they work? Or is "us" one people, marked out by its country, culture or birth?”: that question separates **“Working people, against those who own the businesses”** and **“The nation, or its ordinary people”**.
 - If you chose “Is the text about the jobs and money of working people against owners? Or is it about something handed down from the past, which it says should guide?”: that question separates **“Working people, against those who own the businesses”** and **“Old ways of faith, family and custom”**.
 - If you chose “Does the text take the workers’ side against the owners? Or does it only say what is to be done, or who decides?”: that question separates **“Working people, against those who own the businesses”** and **“No side named”**.
@@ -1958,7 +1958,7 @@ The question is shown with all five of its answers from the key, in the key’s 
 
 **Shown as soon as you answer**
 
-- The answer is: “What does the text hold up as first: the people itself, marked out by country, culture or birth? Or ways handed down from the past, such as a faith or old customs?” Both can love the country and its past, and both can say "our country" and "our ways". **“The nation, or its ordinary people”** puts one people first: its country, its culture or its birth. **“Old ways of faith, family and custom”** puts first the ways handed down from the past, such as a faith, home life or old customs. The first is about who belongs. The second is about what should guide. When a case shows both **“The nation, or its ordinary people”** and old ways of faith, family or custom held up as what should guide the country, the key’s answer is **“Old ways of faith, family and custom”**.
+- The answer is: “What does the text hold up as first: the people itself, marked out by country, culture or birth? Or ways handed down from the past, such as a faith or old customs?” Both can love the country and its past, and both can say "our country" and "our ways". **“The nation, or its ordinary people”** puts one people first: its country, its culture or its birth. **“Old ways of faith, family and custom”** puts first the ways handed down from the past, such as a faith, home life or old customs. The first is about who belongs. The second is about what should guide. When a case shows both **“The nation, or its ordinary people”** and old ways of faith, home life or custom held up as what should guide the country, the answer is **“Old ways of faith, family and custom”**.
 - If you chose “Who is "us", and who is "them"? Are they the people who work for pay and the people who own where they work? Or is "us" one people, marked out by its country, culture or birth?”: that question separates **“Working people, against those who own the businesses”** and **“The nation, or its ordinary people”**.
 - If you chose “Is the text about the jobs and money of working people against owners? Or is it about something handed down from the past, which it says should guide?”: that question separates **“Working people, against those who own the businesses”** and **“Old ways of faith, family and custom”**.
 - If you chose “Is one people being put first, perhaps above the others? Or is something said to be owed to every person, whatever group they belong to?”: that question separates **“The nation, or its ordinary people”** and **“Rights and fair treatment for everyone”**.
@@ -2131,9 +2131,9 @@ The question is shown with all five of its answers from the key, in the key’s 
 - If you chose "Each person is owed the freedom to say what they think.": that belongs to **“Rights and fair treatment for everyone”**.
 - Taught on: “No side named: what it is like” (one tap opens the card).
 
-#### Stage 2 of 3. No help. Whole cases, mixed together, and the later ones have a story that points the wrong way. In this unit the key has one question, and its answer is the name.
+#### Stage 2 of 3. No help. Whole cases, mixed together, and the later ones have a story that points the wrong way. In this unit there is one question, and its answer is the name.
 
-The question is shown with all five of its answers from the key, in the key’s order.
+The question is shown with all five of its answers, in order.
 
 **Drill item 18 of 39**
 
@@ -2153,9 +2153,9 @@ The question is shown with all five of its answers from the key, in the key’s 
   - Why not **“The nation, or its ordinary people”**: The text speaks of a school and of lunches, and it puts no people or country first. The two sides it names are staff and owners.
 - If you miss: “The answer is **Working people, against those who own the businesses.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **The nation, or its ordinary people**: the “why not” line above. Then the lines from the card that compared the two: Both can be angry about the same closing or the same cut, and both can say "us" against someone else. In **“Working people, against those who own the businesses”** "us" is the people who work for pay, and "them" is the people who own where they work. In **“The nation, or its ordinary people”** "us" is one people, marked out by its country, culture or birth, and the text puts it first. A text can mention wages, bosses and the rich and still get the second answer, if what it speaks for is the people as a whole. Who is "us", and who is "them"? Are they the people who work for pay and the people who own where they work? Or is "us" one people, marked out by its country, culture or birth?
-  - If you chose **Old ways of faith, family and custom**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can speak up for ordinary people against powerful ones, and both can be bitter about what a closing does to a town. **“Working people, against those who own the businesses”** is about who works for pay and who owns, and which of them the text stands with. **“Old ways of faith, family and custom”** is about what was handed down from the past, and the text holds it up as the guide. The first looks at jobs and money. The second looks at what came before and should carry on. Is the text about the jobs and money of working people against owners? Or is it about something handed down from the past, which it says should guide?
-  - If you chose **Rights and fair treatment for everyone**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can ask for fair pay and fair rules, and both can stand with people who have less. In **“Working people, against those who own the businesses”** the people the text speaks for are the workers, and the owners are named as the other side. In **“Rights and fair treatment for everyone”** the text speaks for every person alike, and names no side to be on the far end of it. Is there a side the text is against, the people who own where others work? Or does it speak for every person, whoever they are?
-  - If you chose **No side named**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a workplace, and both can mention wages, bosses and rotas. **“Working people, against those who own the businesses”** takes the side of the workers against the owners. **“No side named”** takes no side. It says only what will happen, or who is in charge. Does the text take the workers’ side against the owners? Or does it only say what is to be done, or who decides?
+  - If you chose **Old ways of faith, family and custom**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can speak up for ordinary people against powerful ones, and both can be bitter about what a closing does to a town. **“Working people, against those who own the businesses”** is about who works for pay and who owns, and which of them the text stands with. **“Old ways of faith, family and custom”** is about what was handed down from the past, and the text holds it up as the guide. The first looks at jobs and money. The second looks at what came before and should carry on. Is the text about the jobs and money of working people against owners? Or is it about something handed down from the past, which it says should guide?
+  - If you chose **Rights and fair treatment for everyone**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can ask for fair pay and fair rules, and both can stand with people who have less. In **“Working people, against those who own the businesses”** the people the text speaks for are the workers, and the owners are named as the other side. In **“Rights and fair treatment for everyone”** the text speaks for every person alike, and names no side to be on the far end of it. Is there a side the text is against, the people who own where others work? Or does it speak for every person, whoever they are?
+  - If you chose **No side named**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a workplace, and both can mention wages, bosses and rotas. **“Working people, against those who own the businesses”** takes the side of the workers against the owners. **“No side named”** takes no side. It says only what will happen, or who is in charge. Does the text take the workers’ side against the owners? Or does it only say what is to be done, or who decides?
 - What would make it a different name: If the text had only said that dinner staff would be paid on the 28th, with no firm, no owners and no side taken, it would be **“No side named”**.
 - Taught on: “Working people and owners, on opposite sides” (one tap opens the card).
 
@@ -2177,9 +2177,9 @@ The question is shown with all five of its answers from the key, in the key’s 
   - Why not **“Working people, against those who own the businesses”**: Nobody in the text is sorted by wages or by owning a business. It speaks of one people, whatever part of the country they come from.
 - If you miss: “The answer is **The nation, or its ordinary people.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **Working people, against those who own the businesses**: the “why not” line above. Then the lines from the card that compared the two: Both can be angry about the same closing or the same cut, and both can say "us" against someone else. In **“Working people, against those who own the businesses”** "us" is the people who work for pay, and "them" is the people who own where they work. In **“The nation, or its ordinary people”** "us" is one people, marked out by its country, culture or birth, and the text puts it first. A text can mention wages, bosses and the rich and still get the second answer, if what it speaks for is the people as a whole. Who is "us", and who is "them"? Are they the people who work for pay and the people who own where they work? Or is "us" one people, marked out by its country, culture or birth?
-  - If you chose **Old ways of faith, family and custom**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can love the country and its past, and both can say "our country" and "our ways". **“The nation, or its ordinary people”** puts one people first: its country, its culture or its birth. **“Old ways of faith, family and custom”** puts first the ways handed down from the past, such as a faith, home life or old customs. The first is about who belongs. The second is about what should guide. What does the text hold up as first: the people itself, marked out by country, culture or birth? Or ways handed down from the past, such as a faith or old customs?
-  - If you chose **Rights and fair treatment for everyone**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can speak of race and origin, and both can say that people are treated differently according to the group they were born into. In **“The nation, or its ordinary people”** the people the text belongs to is put first, and may be placed above others. In **“Rights and fair treatment for everyone”** no people is placed above another: something is said to be owed to every person, and the complaint is that rules leave some groups behind. Is one people being put first, perhaps above the others? Or is something said to be owed to every person, whatever group they belong to?
-  - If you chose **No side named**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can come from a ruler’s mouth, and both can speak of power and of who is in charge. **“The nation, or its ordinary people”** speaks for a people and puts it first. **“No side named”** says who holds power and how they keep it, or how one practical matter will be handled, and speaks for no people at all. A ruler’s methods are not a side. Does the text speak for one people and put it first? Or does it only say who is in charge and how they keep power, or what will happen?
+  - If you chose **Old ways of faith, family and custom**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can love the country and its past, and both can say "our country" and "our ways". **“The nation, or its ordinary people”** puts one people first: its country, its culture or its birth. **“Old ways of faith, family and custom”** puts first the ways handed down from the past, such as a faith, home life or old customs. The first is about who belongs. The second is about what should guide. What does the text hold up as first: the people itself, marked out by country, culture or birth? Or ways handed down from the past, such as a faith or old customs?
+  - If you chose **Rights and fair treatment for everyone**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can speak of race and origin, and both can say that people are treated differently according to the group they were born into. In **“The nation, or its ordinary people”** the people the text belongs to is put first, and may be placed above others. In **“Rights and fair treatment for everyone”** no people is placed above another: something is said to be owed to every person, and the complaint is that rules leave some groups behind. Is one people being put first, perhaps above the others? Or is something said to be owed to every person, whatever group they belong to?
+  - If you chose **No side named**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can come from a ruler’s mouth, and both can speak of power and of who is in charge. **“The nation, or its ordinary people”** speaks for a people and puts it first. **“No side named”** says who holds power and how they keep it, or how one practical matter will be handled, and speaks for no people at all. A ruler’s methods are not a side. Does the text speak for one people and put it first? Or does it only say who is in charge and how they keep power, or what will happen?
 - What would make it a different name: If the text had said that the old faith and the old customs, not the flag, should guide the country, what it held up would be old ways and the answer would be **“Old ways of faith, family and custom”**.
 - Taught on: “One people and its country” (one tap opens the card).
 
@@ -2200,10 +2200,10 @@ The question is shown with all five of its answers from the key, in the key’s 
 - If you are right: “Right: **Old ways of faith, family and custom.**” The text holds up ways handed down from the past and asks the country to be guided by them: “We hold to them because they are old, and we ask this country to be guided by them”.
   - Why not **“The nation, or its ordinary people”**: The text speaks of this country, but it asks it to be guided by the fasts, bells and saints’ days. It does not put one people first.
 - If you miss: “The answer is **Old ways of faith, family and custom.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **Working people, against those who own the businesses**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can speak up for ordinary people against powerful ones, and both can be bitter about what a closing does to a town. **“Working people, against those who own the businesses”** is about who works for pay and who owns, and which of them the text stands with. **“Old ways of faith, family and custom”** is about what was handed down from the past, and the text holds it up as the guide. The first looks at jobs and money. The second looks at what came before and should carry on. Is the text about the jobs and money of working people against owners? Or is it about something handed down from the past, which it says should guide?
+  - If you chose **Working people, against those who own the businesses**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can speak up for ordinary people against powerful ones, and both can be bitter about what a closing does to a town. **“Working people, against those who own the businesses”** is about who works for pay and who owns, and which of them the text stands with. **“Old ways of faith, family and custom”** is about what was handed down from the past, and the text holds it up as the guide. The first looks at jobs and money. The second looks at what came before and should carry on. Is the text about the jobs and money of working people against owners? Or is it about something handed down from the past, which it says should guide?
   - If you chose **The nation, or its ordinary people**: the “why not” line above. Then the lines from the card that compared the two: Both can love the country and its past, and both can say "our country" and "our ways". **“The nation, or its ordinary people”** puts one people first: its country, its culture or its birth. **“Old ways of faith, family and custom”** puts first the ways handed down from the past, such as a faith, home life or old customs. The first is about who belongs. The second is about what should guide. What does the text hold up as first: the people itself, marked out by country, culture or birth? Or ways handed down from the past, such as a faith or old customs?
-  - If you chose **Rights and fair treatment for everyone**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can say that some things are owed to people and must not be taken away: a faith, a freedom, a way of life. **“Old ways of faith, family and custom”** holds up what was handed down from the past as what should guide. **“Rights and fair treatment for everyone”** holds up what is owed to every person, whether it is old or new. The first looks back at what came before. The second asks what each person is owed. Is the text’s reason that the thing was handed down from the past? Or is its reason that every person is owed it?
-  - If you chose **No side named**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a church, a parish, a village custom or a home matter. **“Old ways of faith, family and custom”** holds up a faith, a custom or an old order as what should guide. **“No side named”** deals with one practical matter, such as who will repair the church roof or when the bells ring, and says nothing about what should guide anyone. Does the text hold up old ways as what should guide? Or does it only handle one practical matter?
+  - If you chose **Rights and fair treatment for everyone**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can say that some things are owed to people and must not be taken away: a faith, a freedom, a way of life. **“Old ways of faith, family and custom”** holds up what was handed down from the past as what should guide. **“Rights and fair treatment for everyone”** holds up what is owed to every person, whether it is old or new. The first looks back at what came before. The second asks what each person is owed. Is the text’s reason that the thing was handed down from the past? Or is its reason that every person is owed it?
+  - If you chose **No side named**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a church, a parish, a village custom or a home matter. **“Old ways of faith, family and custom”** holds up a faith, a custom or an old order as what should guide. **“No side named”** deals with one practical matter, such as who will repair the church roof or when the bells ring, and says nothing about what should guide anyone. Does the text hold up old ways as what should guide? Or does it only handle one practical matter?
 - What would make it a different name: If the newsletter only said that the Easter bells would ring at ten and that the hall would be open after, with nothing about what should guide anyone, it would be **“No side named”**.
 - Taught on: “The ways handed down from the past” (one tap opens the card).
 
@@ -2225,9 +2225,9 @@ The question is shown with all five of its answers from the key, in the key’s 
   - Why not **“Working people, against those who own the businesses”**: The writer is a shopkeeper, which is an owner, but the text does not sort people into owners and workers or take a side between them. It says that each person is owed a freedom.
 - If you miss: “The answer is **Rights and fair treatment for everyone.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **Working people, against those who own the businesses**: the “why not” line above. Then the lines from the card that compared the two: Both can ask for fair pay and fair rules, and both can stand with people who have less. In **“Working people, against those who own the businesses”** the people the text speaks for are the workers, and the owners are named as the other side. In **“Rights and fair treatment for everyone”** the text speaks for every person alike, and names no side to be on the far end of it. Is there a side the text is against, the people who own where others work? Or does it speak for every person, whoever they are?
-  - If you chose **The nation, or its ordinary people**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can speak of race and origin, and both can say that people are treated differently according to the group they were born into. In **“The nation, or its ordinary people”** the people the text belongs to is put first, and may be placed above others. In **“Rights and fair treatment for everyone”** no people is placed above another: something is said to be owed to every person, and the complaint is that rules leave some groups behind. Is one people being put first, perhaps above the others? Or is something said to be owed to every person, whatever group they belong to?
-  - If you chose **Old ways of faith, family and custom**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can say that some things are owed to people and must not be taken away: a faith, a freedom, a way of life. **“Old ways of faith, family and custom”** holds up what was handed down from the past as what should guide. **“Rights and fair treatment for everyone”** holds up what is owed to every person, whether it is old or new. The first looks back at what came before. The second asks what each person is owed. Is the text’s reason that the thing was handed down from the past? Or is its reason that every person is owed it?
-  - If you chose **No side named**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about forms, appeals, services and fair process. **“Rights and fair treatment for everyone”** says that something is owed to every person, and puts that first. **“No side named”** says only how one practical matter will be handled: who to write to, by when, at what cost. Does the text say that every person is owed something? Or does it only say how one thing is to be done?
+  - If you chose **The nation, or its ordinary people**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can speak of race and origin, and both can say that people are treated differently according to the group they were born into. In **“The nation, or its ordinary people”** the people the text belongs to is put first, and may be placed above others. In **“Rights and fair treatment for everyone”** no people is placed above another: something is said to be owed to every person, and the complaint is that rules leave some groups behind. Is one people being put first, perhaps above the others? Or is something said to be owed to every person, whatever group they belong to?
+  - If you chose **Old ways of faith, family and custom**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can say that some things are owed to people and must not be taken away: a faith, a freedom, a way of life. **“Old ways of faith, family and custom”** holds up what was handed down from the past as what should guide. **“Rights and fair treatment for everyone”** holds up what is owed to every person, whether it is old or new. The first looks back at what came before. The second asks what each person is owed. Is the text’s reason that the thing was handed down from the past? Or is its reason that every person is owed it?
+  - If you chose **No side named**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about forms, appeals, services and fair process. **“Rights and fair treatment for everyone”** says that something is owed to every person, and puts that first. **“No side named”** says only how one practical matter will be handled: who to write to, by when, at what cost. Does the text say that every person is owed something? Or does it only say how one thing is to be done?
 - What would make it a different name: If the shopkeeper had said that the shop’s owners and the shop’s staff want opposite things and sided with the staff, it would be **“Working people, against those who own the businesses”**.
 - Taught on: “What every person is owed” (one tap opens the card).
 
@@ -2248,9 +2248,9 @@ The question is shown with all five of its answers from the key, in the key’s 
 - If you are right: “Right: **No side named.**” The text says how one practical matter will be handled: “recycling collection on Hollin Road moves from Mondays to Tuesdays” and “Put bins out by seven in the morning”. It speaks for no side.
   - Why not **“Rights and fair treatment for everyone”**: A collection is a service the council provides, but the notice does not say that every household is owed one. It says which day.
 - If you miss: “The answer is **No side named.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **Working people, against those who own the businesses**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a workplace, and both can mention wages, bosses and rotas. **“Working people, against those who own the businesses”** takes the side of the workers against the owners. **“No side named”** takes no side. It says only what will happen, or who is in charge. Does the text take the workers’ side against the owners? Or does it only say what is to be done, or who decides?
-  - If you chose **The nation, or its ordinary people**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can come from a ruler’s mouth, and both can speak of power and of who is in charge. **“The nation, or its ordinary people”** speaks for a people and puts it first. **“No side named”** says who holds power and how they keep it, or how one practical matter will be handled, and speaks for no people at all. A ruler’s methods are not a side. Does the text speak for one people and put it first? Or does it only say who is in charge and how they keep power, or what will happen?
-  - If you chose **Old ways of faith, family and custom**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a church, a parish, a village custom or a home matter. **“Old ways of faith, family and custom”** holds up a faith, a custom or an old order as what should guide. **“No side named”** deals with one practical matter, such as who will repair the church roof or when the bells ring, and says nothing about what should guide anyone. Does the text hold up old ways as what should guide? Or does it only handle one practical matter?
+  - If you chose **Working people, against those who own the businesses**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a workplace, and both can mention wages, bosses and rotas. **“Working people, against those who own the businesses”** takes the side of the workers against the owners. **“No side named”** takes no side. It says only what will happen, or who is in charge. Does the text take the workers’ side against the owners? Or does it only say what is to be done, or who decides?
+  - If you chose **The nation, or its ordinary people**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can come from a ruler’s mouth, and both can speak of power and of who is in charge. **“The nation, or its ordinary people”** speaks for a people and puts it first. **“No side named”** says who holds power and how they keep it, or how one practical matter will be handled, and speaks for no people at all. A ruler’s methods are not a side. Does the text speak for one people and put it first? Or does it only say who is in charge and how they keep power, or what will happen?
+  - If you chose **Old ways of faith, family and custom**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a church, a parish, a village custom or a home matter. **“Old ways of faith, family and custom”** holds up a faith, a custom or an old order as what should guide. **“No side named”** deals with one practical matter, such as who will repair the church roof or when the bells ring, and says nothing about what should guide anyone. Does the text hold up old ways as what should guide? Or does it only handle one practical matter?
   - If you chose **Rights and fair treatment for everyone**: the “why not” line above. Then the lines from the card that compared the two: Both can be about forms, appeals, services and fair process. **“Rights and fair treatment for everyone”** says that something is owed to every person, and puts that first. **“No side named”** says only how one practical matter will be handled: who to write to, by when, at what cost. Does the text say that every person is owed something? Or does it only say how one thing is to be done?
 - What would make it a different name: If it said that every household, however poor, is owed a collection and that the council had broken that promise, it would be **“Rights and fair treatment for everyone”**.
 - Taught on: “Who rules, or one practical matter, and no side” (one tap opens the card).
@@ -2273,9 +2273,9 @@ The question is shown with all five of its answers from the key, in the key’s 
   - Why not **“The nation, or its ordinary people”**: The text speaks of a city, but it does not speak for the whole city as one people. It splits the city in two.
 - If you miss: “The answer is **Working people, against those who own the businesses.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **The nation, or its ordinary people**: the “why not” line above. Then the lines from the card that compared the two: Both can be angry about the same closing or the same cut, and both can say "us" against someone else. In **“Working people, against those who own the businesses”** "us" is the people who work for pay, and "them" is the people who own where they work. In **“The nation, or its ordinary people”** "us" is one people, marked out by its country, culture or birth, and the text puts it first. A text can mention wages, bosses and the rich and still get the second answer, if what it speaks for is the people as a whole. Who is "us", and who is "them"? Are they the people who work for pay and the people who own where they work? Or is "us" one people, marked out by its country, culture or birth?
-  - If you chose **Old ways of faith, family and custom**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can speak up for ordinary people against powerful ones, and both can be bitter about what a closing does to a town. **“Working people, against those who own the businesses”** is about who works for pay and who owns, and which of them the text stands with. **“Old ways of faith, family and custom”** is about what was handed down from the past, and the text holds it up as the guide. The first looks at jobs and money. The second looks at what came before and should carry on. Is the text about the jobs and money of working people against owners? Or is it about something handed down from the past, which it says should guide?
-  - If you chose **Rights and fair treatment for everyone**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can ask for fair pay and fair rules, and both can stand with people who have less. In **“Working people, against those who own the businesses”** the people the text speaks for are the workers, and the owners are named as the other side. In **“Rights and fair treatment for everyone”** the text speaks for every person alike, and names no side to be on the far end of it. Is there a side the text is against, the people who own where others work? Or does it speak for every person, whoever they are?
-  - If you chose **No side named**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a workplace, and both can mention wages, bosses and rotas. **“Working people, against those who own the businesses”** takes the side of the workers against the owners. **“No side named”** takes no side. It says only what will happen, or who is in charge. Does the text take the workers’ side against the owners? Or does it only say what is to be done, or who decides?
+  - If you chose **Old ways of faith, family and custom**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can speak up for ordinary people against powerful ones, and both can be bitter about what a closing does to a town. **“Working people, against those who own the businesses”** is about who works for pay and who owns, and which of them the text stands with. **“Old ways of faith, family and custom”** is about what was handed down from the past, and the text holds it up as the guide. The first looks at jobs and money. The second looks at what came before and should carry on. Is the text about the jobs and money of working people against owners? Or is it about something handed down from the past, which it says should guide?
+  - If you chose **Rights and fair treatment for everyone**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can ask for fair pay and fair rules, and both can stand with people who have less. In **“Working people, against those who own the businesses”** the people the text speaks for are the workers, and the owners are named as the other side. In **“Rights and fair treatment for everyone”** the text speaks for every person alike, and names no side to be on the far end of it. Is there a side the text is against, the people who own where others work? Or does it speak for every person, whoever they are?
+  - If you chose **No side named**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a workplace, and both can mention wages, bosses and rotas. **“Working people, against those who own the businesses”** takes the side of the workers against the owners. **“No side named”** takes no side. It says only what will happen, or who is in charge. Does the text take the workers’ side against the owners? Or does it only say what is to be done, or who decides?
 - What would make it a different name: If the speaker had said that everyone who lives in the city is one people with one future, and that the city comes first, it would be **“The nation, or its ordinary people”**.
 - Taught on: “Working people and owners, on opposite sides” (one tap opens the card).
 
@@ -2297,9 +2297,9 @@ The question is shown with all five of its answers from the key, in the key’s 
   - Why not **“Working people, against those who own the businesses”**: The few at the top are officials, not owners, and the people are the country’s own people, not workers set against owners.
 - If you miss: “The answer is **The nation, or its ordinary people.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **Working people, against those who own the businesses**: the “why not” line above. Then the lines from the card that compared the two: Both can be angry about the same closing or the same cut, and both can say "us" against someone else. In **“Working people, against those who own the businesses”** "us" is the people who work for pay, and "them" is the people who own where they work. In **“The nation, or its ordinary people”** "us" is one people, marked out by its country, culture or birth, and the text puts it first. A text can mention wages, bosses and the rich and still get the second answer, if what it speaks for is the people as a whole. Who is "us", and who is "them"? Are they the people who work for pay and the people who own where they work? Or is "us" one people, marked out by its country, culture or birth?
-  - If you chose **Old ways of faith, family and custom**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can love the country and its past, and both can say "our country" and "our ways". **“The nation, or its ordinary people”** puts one people first: its country, its culture or its birth. **“Old ways of faith, family and custom”** puts first the ways handed down from the past, such as a faith, home life or old customs. The first is about who belongs. The second is about what should guide. What does the text hold up as first: the people itself, marked out by country, culture or birth? Or ways handed down from the past, such as a faith or old customs?
-  - If you chose **Rights and fair treatment for everyone**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can speak of race and origin, and both can say that people are treated differently according to the group they were born into. In **“The nation, or its ordinary people”** the people the text belongs to is put first, and may be placed above others. In **“Rights and fair treatment for everyone”** no people is placed above another: something is said to be owed to every person, and the complaint is that rules leave some groups behind. Is one people being put first, perhaps above the others? Or is something said to be owed to every person, whatever group they belong to?
-  - If you chose **No side named**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can come from a ruler’s mouth, and both can speak of power and of who is in charge. **“The nation, or its ordinary people”** speaks for a people and puts it first. **“No side named”** says who holds power and how they keep it, or how one practical matter will be handled, and speaks for no people at all. A ruler’s methods are not a side. Does the text speak for one people and put it first? Or does it only say who is in charge and how they keep power, or what will happen?
+  - If you chose **Old ways of faith, family and custom**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can love the country and its past, and both can say "our country" and "our ways". **“The nation, or its ordinary people”** puts one people first: its country, its culture or its birth. **“Old ways of faith, family and custom”** puts first the ways handed down from the past, such as a faith, home life or old customs. The first is about who belongs. The second is about what should guide. What does the text hold up as first: the people itself, marked out by country, culture or birth? Or ways handed down from the past, such as a faith or old customs?
+  - If you chose **Rights and fair treatment for everyone**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can speak of race and origin, and both can say that people are treated differently according to the group they were born into. In **“The nation, or its ordinary people”** the people the text belongs to is put first, and may be placed above others. In **“Rights and fair treatment for everyone”** no people is placed above another: something is said to be owed to every person, and the complaint is that rules leave some groups behind. Is one people being put first, perhaps above the others? Or is something said to be owed to every person, whatever group they belong to?
+  - If you chose **No side named**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can come from a ruler’s mouth, and both can speak of power and of who is in charge. **“The nation, or its ordinary people”** speaks for a people and puts it first. **“No side named”** says who holds power and how they keep it, or how one practical matter will be handled, and speaks for no people at all. A ruler’s methods are not a side. Does the text speak for one people and put it first? Or does it only say who is in charge and how they keep power, or what will happen?
 - What would make it a different name: If the few at the top were the owners of the mills and the people were the workers standing against them, it would be **“Working people, against those who own the businesses”**.
 - Taught on: “One people and its country” (one tap opens the card).
 
@@ -2320,10 +2320,10 @@ The question is shown with all five of its answers from the key, in the key’s 
 - If you are right: “Right: **No side named.**” The text says how one practical matter is handled: “Travellers carrying more than 10,000 in cash must declare it at the red desk”. It speaks for no people.
   - Why not **“The nation, or its ordinary people”**: A border is where texts for the nation are often written, but this one only says what a traveller must do.
 - If you miss: “The answer is **No side named.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **Working people, against those who own the businesses**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a workplace, and both can mention wages, bosses and rotas. **“Working people, against those who own the businesses”** takes the side of the workers against the owners. **“No side named”** takes no side. It says only what will happen, or who is in charge. Does the text take the workers’ side against the owners? Or does it only say what is to be done, or who decides?
+  - If you chose **Working people, against those who own the businesses**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a workplace, and both can mention wages, bosses and rotas. **“Working people, against those who own the businesses”** takes the side of the workers against the owners. **“No side named”** takes no side. It says only what will happen, or who is in charge. Does the text take the workers’ side against the owners? Or does it only say what is to be done, or who decides?
   - If you chose **The nation, or its ordinary people**: the “why not” line above. Then the lines from the card that compared the two: Both can come from a ruler’s mouth, and both can speak of power and of who is in charge. **“The nation, or its ordinary people”** speaks for a people and puts it first. **“No side named”** says who holds power and how they keep it, or how one practical matter will be handled, and speaks for no people at all. A ruler’s methods are not a side. Does the text speak for one people and put it first? Or does it only say who is in charge and how they keep power, or what will happen?
-  - If you chose **Old ways of faith, family and custom**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a church, a parish, a village custom or a home matter. **“Old ways of faith, family and custom”** holds up a faith, a custom or an old order as what should guide. **“No side named”** deals with one practical matter, such as who will repair the church roof or when the bells ring, and says nothing about what should guide anyone. Does the text hold up old ways as what should guide? Or does it only handle one practical matter?
-  - If you chose **Rights and fair treatment for everyone**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about forms, appeals, services and fair process. **“Rights and fair treatment for everyone”** says that something is owed to every person, and puts that first. **“No side named”** says only how one practical matter will be handled: who to write to, by when, at what cost. Does the text say that every person is owed something? Or does it only say how one thing is to be done?
+  - If you chose **Old ways of faith, family and custom**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a church, a parish, a village custom or a home matter. **“Old ways of faith, family and custom”** holds up a faith, a custom or an old order as what should guide. **“No side named”** deals with one practical matter, such as who will repair the church roof or when the bells ring, and says nothing about what should guide anyone. Does the text hold up old ways as what should guide? Or does it only handle one practical matter?
+  - If you chose **Rights and fair treatment for everyone**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about forms, appeals, services and fair process. **“Rights and fair treatment for everyone”** says that something is owed to every person, and puts that first. **“No side named”** says only how one practical matter will be handled: who to write to, by when, at what cost. Does the text say that every person is owed something? Or does it only say how one thing is to be done?
 - What would make it a different name: If the notice had said that the border keeps one people together and that this people comes first, it would be **“The nation, or its ordinary people”**.
 - Taught on: “Who rules, or one practical matter, and no side” (one tap opens the card).
 
@@ -2344,10 +2344,10 @@ The question is shown with all five of its answers from the key, in the key’s 
 - If you are right: “Right: **Old ways of faith, family and custom.**” The text holds up ways handed down as what should guide: “These were passed down by every teacher before us” and “The old ways are not a decoration. They are what a school, and a country, should be built on”.
   - Why not **“The nation, or its ordinary people”**: The text says “a country”, but it asks for no one people to be put first. What it asks the school and the country to be built on is the old ways.
 - If you miss: “The answer is **Old ways of faith, family and custom.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **Working people, against those who own the businesses**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can speak up for ordinary people against powerful ones, and both can be bitter about what a closing does to a town. **“Working people, against those who own the businesses”** is about who works for pay and who owns, and which of them the text stands with. **“Old ways of faith, family and custom”** is about what was handed down from the past, and the text holds it up as the guide. The first looks at jobs and money. The second looks at what came before and should carry on. Is the text about the jobs and money of working people against owners? Or is it about something handed down from the past, which it says should guide?
+  - If you chose **Working people, against those who own the businesses**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can speak up for ordinary people against powerful ones, and both can be bitter about what a closing does to a town. **“Working people, against those who own the businesses”** is about who works for pay and who owns, and which of them the text stands with. **“Old ways of faith, family and custom”** is about what was handed down from the past, and the text holds it up as the guide. The first looks at jobs and money. The second looks at what came before and should carry on. Is the text about the jobs and money of working people against owners? Or is it about something handed down from the past, which it says should guide?
   - If you chose **The nation, or its ordinary people**: the “why not” line above. Then the lines from the card that compared the two: Both can love the country and its past, and both can say "our country" and "our ways". **“The nation, or its ordinary people”** puts one people first: its country, its culture or its birth. **“Old ways of faith, family and custom”** puts first the ways handed down from the past, such as a faith, home life or old customs. The first is about who belongs. The second is about what should guide. What does the text hold up as first: the people itself, marked out by country, culture or birth? Or ways handed down from the past, such as a faith or old customs?
-  - If you chose **Rights and fair treatment for everyone**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can say that some things are owed to people and must not be taken away: a faith, a freedom, a way of life. **“Old ways of faith, family and custom”** holds up what was handed down from the past as what should guide. **“Rights and fair treatment for everyone”** holds up what is owed to every person, whether it is old or new. The first looks back at what came before. The second asks what each person is owed. Is the text’s reason that the thing was handed down from the past? Or is its reason that every person is owed it?
-  - If you chose **No side named**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a church, a parish, a village custom or a home matter. **“Old ways of faith, family and custom”** holds up a faith, a custom or an old order as what should guide. **“No side named”** deals with one practical matter, such as who will repair the church roof or when the bells ring, and says nothing about what should guide anyone. Does the text hold up old ways as what should guide? Or does it only handle one practical matter?
+  - If you chose **Rights and fair treatment for everyone**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can say that some things are owed to people and must not be taken away: a faith, a freedom, a way of life. **“Old ways of faith, family and custom”** holds up what was handed down from the past as what should guide. **“Rights and fair treatment for everyone”** holds up what is owed to every person, whether it is old or new. The first looks back at what came before. The second asks what each person is owed. Is the text’s reason that the thing was handed down from the past? Or is its reason that every person is owed it?
+  - If you chose **No side named**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a church, a parish, a village custom or a home matter. **“Old ways of faith, family and custom”** holds up a faith, a custom or an old order as what should guide. **“No side named”** deals with one practical matter, such as who will repair the church roof or when the bells ring, and says nothing about what should guide anyone. Does the text hold up old ways as what should guide? Or does it only handle one practical matter?
 - What would make it a different name: If the head had written that the timetable broke what every pupil is owed, whatever their beliefs, it would be **“Rights and fair treatment for everyone”**.
 - Taught on: “The ways handed down from the past” (one tap opens the card).
 
@@ -2368,10 +2368,10 @@ The question is shown with all five of its answers from the key, in the key’s 
 - If you are right: “Right: **Rights and fair treatment for everyone.**” The text puts first what every person who arrives is owed: “is owed a fair hearing before anything is decided about them” and “fair treatment comes first”.
   - Why not **“The nation, or its ordinary people”**: The text is posted at a border, where texts for the nation are often written. It speaks for every person who arrives and puts no one people first.
 - If you miss: “The answer is **Rights and fair treatment for everyone.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **Working people, against those who own the businesses**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can ask for fair pay and fair rules, and both can stand with people who have less. In **“Working people, against those who own the businesses”** the people the text speaks for are the workers, and the owners are named as the other side. In **“Rights and fair treatment for everyone”** the text speaks for every person alike, and names no side to be on the far end of it. Is there a side the text is against, the people who own where others work? Or does it speak for every person, whoever they are?
+  - If you chose **Working people, against those who own the businesses**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can ask for fair pay and fair rules, and both can stand with people who have less. In **“Working people, against those who own the businesses”** the people the text speaks for are the workers, and the owners are named as the other side. In **“Rights and fair treatment for everyone”** the text speaks for every person alike, and names no side to be on the far end of it. Is there a side the text is against, the people who own where others work? Or does it speak for every person, whoever they are?
   - If you chose **The nation, or its ordinary people**: the “why not” line above. Then the lines from the card that compared the two: Both can speak of race and origin, and both can say that people are treated differently according to the group they were born into. In **“The nation, or its ordinary people”** the people the text belongs to is put first, and may be placed above others. In **“Rights and fair treatment for everyone”** no people is placed above another: something is said to be owed to every person, and the complaint is that rules leave some groups behind. Is one people being put first, perhaps above the others? Or is something said to be owed to every person, whatever group they belong to?
-  - If you chose **Old ways of faith, family and custom**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can say that some things are owed to people and must not be taken away: a faith, a freedom, a way of life. **“Old ways of faith, family and custom”** holds up what was handed down from the past as what should guide. **“Rights and fair treatment for everyone”** holds up what is owed to every person, whether it is old or new. The first looks back at what came before. The second asks what each person is owed. Is the text’s reason that the thing was handed down from the past? Or is its reason that every person is owed it?
-  - If you chose **No side named**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about forms, appeals, services and fair process. **“Rights and fair treatment for everyone”** says that something is owed to every person, and puts that first. **“No side named”** says only how one practical matter will be handled: who to write to, by when, at what cost. Does the text say that every person is owed something? Or does it only say how one thing is to be done?
+  - If you chose **Old ways of faith, family and custom**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can say that some things are owed to people and must not be taken away: a faith, a freedom, a way of life. **“Old ways of faith, family and custom”** holds up what was handed down from the past as what should guide. **“Rights and fair treatment for everyone”** holds up what is owed to every person, whether it is old or new. The first looks back at what came before. The second asks what each person is owed. Is the text’s reason that the thing was handed down from the past? Or is its reason that every person is owed it?
+  - If you chose **No side named**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about forms, appeals, services and fair process. **“Rights and fair treatment for everyone”** says that something is owed to every person, and puts that first. **“No side named”** says only how one practical matter will be handled: who to write to, by when, at what cost. Does the text say that every person is owed something? Or does it only say how one thing is to be done?
 - What would make it a different name: If it said that those who arrive must prove they belong to the one people of this country before they are heard, it would be **“The nation, or its ordinary people”**.
 - Taught on: “What every person is owed” (one tap opens the card).
 
@@ -2393,10 +2393,10 @@ The question is shown with all five of its answers from the key, in the key’s 
   - Why not **“The nation, or its ordinary people”**: “The pride of this country” is only where the story is set. The text speaks for no one people. It speaks for the stallholders against the owners.
 - If you miss: “The answer is **Working people, against those who own the businesses.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **The nation, or its ordinary people**: the “why not” line above. Then the lines from the card that compared the two: Both can be angry about the same closing or the same cut, and both can say "us" against someone else. In **“Working people, against those who own the businesses”** "us" is the people who work for pay, and "them" is the people who own where they work. In **“The nation, or its ordinary people”** "us" is one people, marked out by its country, culture or birth, and the text puts it first. A text can mention wages, bosses and the rich and still get the second answer, if what it speaks for is the people as a whole. Who is "us", and who is "them"? Are they the people who work for pay and the people who own where they work? Or is "us" one people, marked out by its country, culture or birth?
-  - If you chose **Old ways of faith, family and custom**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can speak up for ordinary people against powerful ones, and both can be bitter about what a closing does to a town. **“Working people, against those who own the businesses”** is about who works for pay and who owns, and which of them the text stands with. **“Old ways of faith, family and custom”** is about what was handed down from the past, and the text holds it up as the guide. The first looks at jobs and money. The second looks at what came before and should carry on. Is the text about the jobs and money of working people against owners? Or is it about something handed down from the past, which it says should guide?
-  - If you chose **Rights and fair treatment for everyone**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can ask for fair pay and fair rules, and both can stand with people who have less. In **“Working people, against those who own the businesses”** the people the text speaks for are the workers, and the owners are named as the other side. In **“Rights and fair treatment for everyone”** the text speaks for every person alike, and names no side to be on the far end of it. Is there a side the text is against, the people who own where others work? Or does it speak for every person, whoever they are?
-  - If you chose **No side named**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a workplace, and both can mention wages, bosses and rotas. **“Working people, against those who own the businesses”** takes the side of the workers against the owners. **“No side named”** takes no side. It says only what will happen, or who is in charge. Does the text take the workers’ side against the owners? Or does it only say what is to be done, or who decides?
-- This case may have brought back *The bridge speech*, which was **“The nation, or its ordinary people”**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose **Old ways of faith, family and custom**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can speak up for ordinary people against powerful ones, and both can be bitter about what a closing does to a town. **“Working people, against those who own the businesses”** is about who works for pay and who owns, and which of them the text stands with. **“Old ways of faith, family and custom”** is about what was handed down from the past, and the text holds it up as the guide. The first looks at jobs and money. The second looks at what came before and should carry on. Is the text about the jobs and money of working people against owners? Or is it about something handed down from the past, which it says should guide?
+  - If you chose **Rights and fair treatment for everyone**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can ask for fair pay and fair rules, and both can stand with people who have less. In **“Working people, against those who own the businesses”** the people the text speaks for are the workers, and the owners are named as the other side. In **“Rights and fair treatment for everyone”** the text speaks for every person alike, and names no side to be on the far end of it. Is there a side the text is against, the people who own where others work? Or does it speak for every person, whoever they are?
+  - If you chose **No side named**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a workplace, and both can mention wages, bosses and rotas. **“Working people, against those who own the businesses”** takes the side of the workers against the owners. **“No side named”** takes no side. It says only what will happen, or who is in charge. Does the text take the workers’ side against the owners? Or does it only say what is to be done, or who decides?
+- This case may have brought back *The bridge speech*, which was **“The nation, or its ordinary people”**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If the letter had said that owners and stallholders alike are one people and that the show belongs to the country, it would be **“The nation, or its ordinary people”**.
 - Taught on: “Working people and owners, on opposite sides” (one tap opens the card).
 
@@ -2418,10 +2418,10 @@ The question is shown with all five of its answers from the key, in the key’s 
   - Why not **“Working people, against those who own the businesses”**: Workers and a boss are named, which is what the first answer looks for. But the text stands with none of them against the others. It says they are one.
 - If you miss: “The answer is **The nation, or its ordinary people.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **Working people, against those who own the businesses**: the “why not” line above. Then the lines from the card that compared the two: Both can be angry about the same closing or the same cut, and both can say "us" against someone else. In **“Working people, against those who own the businesses”** "us" is the people who work for pay, and "them" is the people who own where they work. In **“The nation, or its ordinary people”** "us" is one people, marked out by its country, culture or birth, and the text puts it first. A text can mention wages, bosses and the rich and still get the second answer, if what it speaks for is the people as a whole. Who is "us", and who is "them"? Are they the people who work for pay and the people who own where they work? Or is "us" one people, marked out by its country, culture or birth?
-  - If you chose **Old ways of faith, family and custom**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can love the country and its past, and both can say "our country" and "our ways". **“The nation, or its ordinary people”** puts one people first: its country, its culture or its birth. **“Old ways of faith, family and custom”** puts first the ways handed down from the past, such as a faith, home life or old customs. The first is about who belongs. The second is about what should guide. What does the text hold up as first: the people itself, marked out by country, culture or birth? Or ways handed down from the past, such as a faith or old customs?
-  - If you chose **Rights and fair treatment for everyone**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can speak of race and origin, and both can say that people are treated differently according to the group they were born into. In **“The nation, or its ordinary people”** the people the text belongs to is put first, and may be placed above others. In **“Rights and fair treatment for everyone”** no people is placed above another: something is said to be owed to every person, and the complaint is that rules leave some groups behind. Is one people being put first, perhaps above the others? Or is something said to be owed to every person, whatever group they belong to?
-  - If you chose **No side named**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can come from a ruler’s mouth, and both can speak of power and of who is in charge. **“The nation, or its ordinary people”** speaks for a people and puts it first. **“No side named”** says who holds power and how they keep it, or how one practical matter will be handled, and speaks for no people at all. A ruler’s methods are not a side. Does the text speak for one people and put it first? Or does it only say who is in charge and how they keep power, or what will happen?
-- This case may have brought back *The depot leaflet*, which was **“Working people, against those who own the businesses”**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose **Old ways of faith, family and custom**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can love the country and its past, and both can say "our country" and "our ways". **“The nation, or its ordinary people”** puts one people first: its country, its culture or its birth. **“Old ways of faith, family and custom”** puts first the ways handed down from the past, such as a faith, home life or old customs. The first is about who belongs. The second is about what should guide. What does the text hold up as first: the people itself, marked out by country, culture or birth? Or ways handed down from the past, such as a faith or old customs?
+  - If you chose **Rights and fair treatment for everyone**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can speak of race and origin, and both can say that people are treated differently according to the group they were born into. In **“The nation, or its ordinary people”** the people the text belongs to is put first, and may be placed above others. In **“Rights and fair treatment for everyone”** no people is placed above another: something is said to be owed to every person, and the complaint is that rules leave some groups behind. Is one people being put first, perhaps above the others? Or is something said to be owed to every person, whatever group they belong to?
+  - If you chose **No side named**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can come from a ruler’s mouth, and both can speak of power and of who is in charge. **“The nation, or its ordinary people”** speaks for a people and puts it first. **“No side named”** says who holds power and how they keep it, or how one practical matter will be handled, and speaks for no people at all. A ruler’s methods are not a side. Does the text speak for one people and put it first? Or does it only say who is in charge and how they keep power, or what will happen?
+- This case may have brought back *The depot leaflet*, which was **“Working people, against those who own the businesses”**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If the text had said that the labourer and the boss are on opposite sides and had stood with the labourer, it would be **“Working people, against those who own the businesses”**.
 - Taught on: “One people and its country” (one tap opens the card).
 
@@ -2443,10 +2443,10 @@ The question is shown with all five of its answers from the key, in the key’s 
   - Why not **“Working people, against those who own the businesses”**: “Communism on wheels” is a name people use for working people against owners, but nothing in the plan, or in anything the councillor says about it, sets workers against owners.
 - If you miss: “The answer is **No side named.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **Working people, against those who own the businesses**: the “why not” line above. Then the lines from the card that compared the two: Both can be about a workplace, and both can mention wages, bosses and rotas. **“Working people, against those who own the businesses”** takes the side of the workers against the owners. **“No side named”** takes no side. It says only what will happen, or who is in charge. Does the text take the workers’ side against the owners? Or does it only say what is to be done, or who decides?
-  - If you chose **The nation, or its ordinary people**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can come from a ruler’s mouth, and both can speak of power and of who is in charge. **“The nation, or its ordinary people”** speaks for a people and puts it first. **“No side named”** says who holds power and how they keep it, or how one practical matter will be handled, and speaks for no people at all. A ruler’s methods are not a side. Does the text speak for one people and put it first? Or does it only say who is in charge and how they keep power, or what will happen?
-  - If you chose **Old ways of faith, family and custom**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a church, a parish, a village custom or a home matter. **“Old ways of faith, family and custom”** holds up a faith, a custom or an old order as what should guide. **“No side named”** deals with one practical matter, such as who will repair the church roof or when the bells ring, and says nothing about what should guide anyone. Does the text hold up old ways as what should guide? Or does it only handle one practical matter?
-  - If you chose **Rights and fair treatment for everyone**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about forms, appeals, services and fair process. **“Rights and fair treatment for everyone”** says that something is owed to every person, and puts that first. **“No side named”** says only how one practical matter will be handled: who to write to, by when, at what cost. Does the text say that every person is owed something? Or does it only say how one thing is to be done?
-- This case may have brought back *The depot leaflet*, which was **“Working people, against those who own the businesses”**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose **The nation, or its ordinary people**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can come from a ruler’s mouth, and both can speak of power and of who is in charge. **“The nation, or its ordinary people”** speaks for a people and puts it first. **“No side named”** says who holds power and how they keep it, or how one practical matter will be handled, and speaks for no people at all. A ruler’s methods are not a side. Does the text speak for one people and put it first? Or does it only say who is in charge and how they keep power, or what will happen?
+  - If you chose **Old ways of faith, family and custom**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a church, a parish, a village custom or a home matter. **“Old ways of faith, family and custom”** holds up a faith, a custom or an old order as what should guide. **“No side named”** deals with one practical matter, such as who will repair the church roof or when the bells ring, and says nothing about what should guide anyone. Does the text hold up old ways as what should guide? Or does it only handle one practical matter?
+  - If you chose **Rights and fair treatment for everyone**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about forms, appeals, services and fair process. **“Rights and fair treatment for everyone”** says that something is owed to every person, and puts that first. **“No side named”** says only how one practical matter will be handled: who to write to, by when, at what cost. Does the text say that every person is owed something? Or does it only say how one thing is to be done?
+- This case may have brought back *The depot leaflet*, which was **“Working people, against those who own the businesses”**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If the plan had been a call for the people who drive the buses to take the depot from its owners, it would be **“Working people, against those who own the businesses”**.
 - Taught on: “Who rules, or one practical matter, and no side” (one tap opens the card).
 
@@ -2465,13 +2465,13 @@ The question is shown with all five of its answers from the key, in the key’s 
 **Shown as soon as you answer**
 
 - If you are right: “Right: **Working people, against those who own the businesses.**” The text names the mill’s owners and the people who work the shifts, and takes the side of the shifts: “The mill's owners now rota us on Sundays and keep the extra profit” and “The people who work the shifts and the people who own the mill are on opposite sides, and this notice is on the side of the shifts”.
-  - Why not **“Old ways of faith, family and custom”**: Old ways are in the text: the Sabbath and the chapel supper, held up as the guide. On its own that would be the third answer. But the text also sets the people who work against the owners, and when a case shows both, the key’s answer is **“Working people, against those who own the businesses”**.
+  - Why not **“Old ways of faith, family and custom”**: Old ways are in the text: the Sabbath and the chapel supper, held up as the guide. On its own that would be the third answer. But the text also sets the people who work against the owners, and when a case shows both, the answer is **“Working people, against those who own the businesses”**.
 - If you miss: “The answer is **Working people, against those who own the businesses.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **The nation, or its ordinary people**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can be angry about the same closing or the same cut, and both can say "us" against someone else. In **“Working people, against those who own the businesses”** "us" is the people who work for pay, and "them" is the people who own where they work. In **“The nation, or its ordinary people”** "us" is one people, marked out by its country, culture or birth, and the text puts it first. A text can mention wages, bosses and the rich and still get the second answer, if what it speaks for is the people as a whole. Who is "us", and who is "them"? Are they the people who work for pay and the people who own where they work? Or is "us" one people, marked out by its country, culture or birth?
-  - If you chose **Old ways of faith, family and custom**: This case does show that. It also shows working people set against those who own the businesses, and when a case shows both, the key’s answer is **Working people, against those who own the businesses**. Then the lines from the card that compared the two: Both can speak up for ordinary people against powerful ones, and both can be bitter about what a closing does to a town. **“Working people, against those who own the businesses”** is about who works for pay and who owns, and which of them the text stands with. **“Old ways of faith, family and custom”** is about what was handed down from the past, and the text holds it up as the guide. The first looks at jobs and money. The second looks at what came before and should carry on. Is the text about the jobs and money of working people against owners? Or is it about something handed down from the past, which it says should guide?
-  - If you chose **Rights and fair treatment for everyone**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can ask for fair pay and fair rules, and both can stand with people who have less. In **“Working people, against those who own the businesses”** the people the text speaks for are the workers, and the owners are named as the other side. In **“Rights and fair treatment for everyone”** the text speaks for every person alike, and names no side to be on the far end of it. Is there a side the text is against, the people who own where others work? Or does it speak for every person, whoever they are?
-  - If you chose **No side named**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a workplace, and both can mention wages, bosses and rotas. **“Working people, against those who own the businesses”** takes the side of the workers against the owners. **“No side named”** takes no side. It says only what will happen, or who is in charge. Does the text take the workers’ side against the owners? Or does it only say what is to be done, or who decides?
-- This case may have brought back *The harvest sermon*, which was **“Old ways of faith, family and custom”**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose **The nation, or its ordinary people**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be angry about the same closing or the same cut, and both can say "us" against someone else. In **“Working people, against those who own the businesses”** "us" is the people who work for pay, and "them" is the people who own where they work. In **“The nation, or its ordinary people”** "us" is one people, marked out by its country, culture or birth, and the text puts it first. A text can mention wages, bosses and the rich and still get the second answer, if what it speaks for is the people as a whole. Who is "us", and who is "them"? Are they the people who work for pay and the people who own where they work? Or is "us" one people, marked out by its country, culture or birth?
+  - If you chose **Old ways of faith, family and custom**: This case does show that. It also shows working people set against those who own the businesses, and when a case shows both, the answer is **Working people, against those who own the businesses**. Then the lines from the card that compared the two: Both can speak up for ordinary people against powerful ones, and both can be bitter about what a closing does to a town. **“Working people, against those who own the businesses”** is about who works for pay and who owns, and which of them the text stands with. **“Old ways of faith, family and custom”** is about what was handed down from the past, and the text holds it up as the guide. The first looks at jobs and money. The second looks at what came before and should carry on. Is the text about the jobs and money of working people against owners? Or is it about something handed down from the past, which it says should guide?
+  - If you chose **Rights and fair treatment for everyone**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can ask for fair pay and fair rules, and both can stand with people who have less. In **“Working people, against those who own the businesses”** the people the text speaks for are the workers, and the owners are named as the other side. In **“Rights and fair treatment for everyone”** the text speaks for every person alike, and names no side to be on the far end of it. Is there a side the text is against, the people who own where others work? Or does it speak for every person, whoever they are?
+  - If you chose **No side named**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a workplace, and both can mention wages, bosses and rotas. **“Working people, against those who own the businesses”** takes the side of the workers against the owners. **“No side named”** takes no side. It says only what will happen, or who is in charge. Does the text take the workers’ side against the owners? Or does it only say what is to be done, or who decides?
+- This case may have brought back *The harvest sermon*, which was **“Old ways of faith, family and custom”**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If the notice had stopped after its first sentence, it would be **“Old ways of faith, family and custom”**.
 - Taught on: “Working people and owners, on opposite sides” (one tap opens the card).
 
@@ -2490,13 +2490,13 @@ The question is shown with all five of its answers from the key, in the key’s 
 **Shown as soon as you answer**
 
 - If you are right: “Right: **The nation, or its ordinary people.**” The text puts one people first: “this country is one people, and the first call on its money is its own people”.
-  - Why not **“Rights and fair treatment for everyone”**: Something owed to everyone is in the text, and on its own it would be the fourth answer. But the text then says that its own people come first, and when a case shows both, the key’s answer is **“The nation, or its ordinary people”**.
+  - Why not **“Rights and fair treatment for everyone”**: Something owed to everyone is in the text, and on its own it would be the fourth answer. But the text then says that its own people come first, and when a case shows both, the answer is **“The nation, or its ordinary people”**.
 - If you miss: “The answer is **The nation, or its ordinary people.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **Working people, against those who own the businesses**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can be angry about the same closing or the same cut, and both can say "us" against someone else. In **“Working people, against those who own the businesses”** "us" is the people who work for pay, and "them" is the people who own where they work. In **“The nation, or its ordinary people”** "us" is one people, marked out by its country, culture or birth, and the text puts it first. A text can mention wages, bosses and the rich and still get the second answer, if what it speaks for is the people as a whole. Who is "us", and who is "them"? Are they the people who work for pay and the people who own where they work? Or is "us" one people, marked out by its country, culture or birth?
-  - If you chose **Old ways of faith, family and custom**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can love the country and its past, and both can say "our country" and "our ways". **“The nation, or its ordinary people”** puts one people first: its country, its culture or its birth. **“Old ways of faith, family and custom”** puts first the ways handed down from the past, such as a faith, home life or old customs. The first is about who belongs. The second is about what should guide. What does the text hold up as first: the people itself, marked out by country, culture or birth? Or ways handed down from the past, such as a faith or old customs?
-  - If you chose **Rights and fair treatment for everyone**: This case does show that. It also shows one people put first, and when a case shows both, the key’s answer is **The nation, or its ordinary people**. Then the lines from the card that compared the two: Both can speak of race and origin, and both can say that people are treated differently according to the group they were born into. In **“The nation, or its ordinary people”** the people the text belongs to is put first, and may be placed above others. In **“Rights and fair treatment for everyone”** no people is placed above another: something is said to be owed to every person, and the complaint is that rules leave some groups behind. Is one people being put first, perhaps above the others? Or is something said to be owed to every person, whatever group they belong to?
-  - If you chose **No side named**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can come from a ruler’s mouth, and both can speak of power and of who is in charge. **“The nation, or its ordinary people”** speaks for a people and puts it first. **“No side named”** says who holds power and how they keep it, or how one practical matter will be handled, and speaks for no people at all. A ruler’s methods are not a side. Does the text speak for one people and put it first? Or does it only say who is in charge and how they keep power, or what will happen?
-- This case may have brought back *The open-counter pamphlet*, which was **“Rights and fair treatment for everyone”**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose **Working people, against those who own the businesses**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be angry about the same closing or the same cut, and both can say "us" against someone else. In **“Working people, against those who own the businesses”** "us" is the people who work for pay, and "them" is the people who own where they work. In **“The nation, or its ordinary people”** "us" is one people, marked out by its country, culture or birth, and the text puts it first. A text can mention wages, bosses and the rich and still get the second answer, if what it speaks for is the people as a whole. Who is "us", and who is "them"? Are they the people who work for pay and the people who own where they work? Or is "us" one people, marked out by its country, culture or birth?
+  - If you chose **Old ways of faith, family and custom**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can love the country and its past, and both can say "our country" and "our ways". **“The nation, or its ordinary people”** puts one people first: its country, its culture or its birth. **“Old ways of faith, family and custom”** puts first the ways handed down from the past, such as a faith, home life or old customs. The first is about who belongs. The second is about what should guide. What does the text hold up as first: the people itself, marked out by country, culture or birth? Or ways handed down from the past, such as a faith or old customs?
+  - If you chose **Rights and fair treatment for everyone**: This case does show that. It also shows one people put first, and when a case shows both, the answer is **The nation, or its ordinary people**. Then the lines from the card that compared the two: Both can speak of race and origin, and both can say that people are treated differently according to the group they were born into. In **“The nation, or its ordinary people”** the people the text belongs to is put first, and may be placed above others. In **“Rights and fair treatment for everyone”** no people is placed above another: something is said to be owed to every person, and the complaint is that rules leave some groups behind. Is one people being put first, perhaps above the others? Or is something said to be owed to every person, whatever group they belong to?
+  - If you chose **No side named**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can come from a ruler’s mouth, and both can speak of power and of who is in charge. **“The nation, or its ordinary people”** speaks for a people and puts it first. **“No side named”** says who holds power and how they keep it, or how one practical matter will be handled, and speaks for no people at all. A ruler’s methods are not a side. Does the text speak for one people and put it first? Or does it only say who is in charge and how they keep power, or what will happen?
+- This case may have brought back *The open-counter pamphlet*, which was **“Rights and fair treatment for everyone”**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If the text had stopped after its first sentence, it would be **“Rights and fair treatment for everyone”**.
 - Taught on: “One people and its country” (one tap opens the card).
 
@@ -2515,13 +2515,13 @@ The question is shown with all five of its answers from the key, in the key’s 
 **Shown as soon as you answer**
 
 - If you are right: “Right: **Old ways of faith, family and custom.**” The text asks that the old prayers guide what is done: “A flag without that faith is a rag. Let the old prayers, not the newest fashions, guide what we do”.
-  - Why not **“The nation, or its ordinary people”**: “Our country is one people” is in the text, and on its own it would be the second answer. But the text says that the faith is what made the people one, and asks that old prayers guide what is done. When a case shows both, the key’s answer is **“Old ways of faith, family and custom”**.
+  - Why not **“The nation, or its ordinary people”**: “Our country is one people” is in the text, and on its own it would be the second answer. But the text says that the faith is what made the people one, and asks that old prayers guide what is done. When a case shows both, the answer is **“Old ways of faith, family and custom”**.
 - If you miss: “The answer is **Old ways of faith, family and custom.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **Working people, against those who own the businesses**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can speak up for ordinary people against powerful ones, and both can be bitter about what a closing does to a town. **“Working people, against those who own the businesses”** is about who works for pay and who owns, and which of them the text stands with. **“Old ways of faith, family and custom”** is about what was handed down from the past, and the text holds it up as the guide. The first looks at jobs and money. The second looks at what came before and should carry on. Is the text about the jobs and money of working people against owners? Or is it about something handed down from the past, which it says should guide?
-  - If you chose **The nation, or its ordinary people**: This case does show that. It also shows old ways of faith, family or custom held up as what should guide the country, and when a case shows both, the key’s answer is **Old ways of faith, family and custom**. Then the lines from the card that compared the two: Both can love the country and its past, and both can say "our country" and "our ways". **“The nation, or its ordinary people”** puts one people first: its country, its culture or its birth. **“Old ways of faith, family and custom”** puts first the ways handed down from the past, such as a faith, home life or old customs. The first is about who belongs. The second is about what should guide. What does the text hold up as first: the people itself, marked out by country, culture or birth? Or ways handed down from the past, such as a faith or old customs?
-  - If you chose **Rights and fair treatment for everyone**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can say that some things are owed to people and must not be taken away: a faith, a freedom, a way of life. **“Old ways of faith, family and custom”** holds up what was handed down from the past as what should guide. **“Rights and fair treatment for everyone”** holds up what is owed to every person, whether it is old or new. The first looks back at what came before. The second asks what each person is owed. Is the text’s reason that the thing was handed down from the past? Or is its reason that every person is owed it?
-  - If you chose **No side named**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a church, a parish, a village custom or a home matter. **“Old ways of faith, family and custom”** holds up a faith, a custom or an old order as what should guide. **“No side named”** deals with one practical matter, such as who will repair the church roof or when the bells ring, and says nothing about what should guide anyone. Does the text hold up old ways as what should guide? Or does it only handle one practical matter?
-- This case may have brought back *The bridge speech*, which was **“The nation, or its ordinary people”**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose **Working people, against those who own the businesses**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can speak up for ordinary people against powerful ones, and both can be bitter about what a closing does to a town. **“Working people, against those who own the businesses”** is about who works for pay and who owns, and which of them the text stands with. **“Old ways of faith, family and custom”** is about what was handed down from the past, and the text holds it up as the guide. The first looks at jobs and money. The second looks at what came before and should carry on. Is the text about the jobs and money of working people against owners? Or is it about something handed down from the past, which it says should guide?
+  - If you chose **The nation, or its ordinary people**: This case does show that. It also shows old ways of faith, home life or custom held up as what should guide the country, and when a case shows both, the answer is **Old ways of faith, family and custom**. Then the lines from the card that compared the two: Both can love the country and its past, and both can say "our country" and "our ways". **“The nation, or its ordinary people”** puts one people first: its country, its culture or its birth. **“Old ways of faith, family and custom”** puts first the ways handed down from the past, such as a faith, home life or old customs. The first is about who belongs. The second is about what should guide. What does the text hold up as first: the people itself, marked out by country, culture or birth? Or ways handed down from the past, such as a faith or old customs?
+  - If you chose **Rights and fair treatment for everyone**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can say that some things are owed to people and must not be taken away: a faith, a freedom, a way of life. **“Old ways of faith, family and custom”** holds up what was handed down from the past as what should guide. **“Rights and fair treatment for everyone”** holds up what is owed to every person, whether it is old or new. The first looks back at what came before. The second asks what each person is owed. Is the text’s reason that the thing was handed down from the past? Or is its reason that every person is owed it?
+  - If you chose **No side named**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a church, a parish, a village custom or a home matter. **“Old ways of faith, family and custom”** holds up a faith, a custom or an old order as what should guide. **“No side named”** deals with one practical matter, such as who will repair the church roof or when the bells ring, and says nothing about what should guide anyone. Does the text hold up old ways as what should guide? Or does it only handle one practical matter?
+- This case may have brought back *The bridge speech*, which was **“The nation, or its ordinary people”**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If the text had said nothing of faith and asked only that the people come first, it would be **“The nation, or its ordinary people”**.
 - Taught on: “The ways handed down from the past” (one tap opens the card).
 
@@ -2543,10 +2543,10 @@ The question is shown with all five of its answers from the key, in the key’s 
   - Why not **“Working people, against those who own the businesses”**: Workers and owners are both named, which is what the first answer looks for. But the text stands with neither. It says each is owed something, and puts that first.
 - If you miss: “The answer is **Rights and fair treatment for everyone.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **Working people, against those who own the businesses**: the “why not” line above. Then the lines from the card that compared the two: Both can ask for fair pay and fair rules, and both can stand with people who have less. In **“Working people, against those who own the businesses”** the people the text speaks for are the workers, and the owners are named as the other side. In **“Rights and fair treatment for everyone”** the text speaks for every person alike, and names no side to be on the far end of it. Is there a side the text is against, the people who own where others work? Or does it speak for every person, whoever they are?
-  - If you chose **The nation, or its ordinary people**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can speak of race and origin, and both can say that people are treated differently according to the group they were born into. In **“The nation, or its ordinary people”** the people the text belongs to is put first, and may be placed above others. In **“Rights and fair treatment for everyone”** no people is placed above another: something is said to be owed to every person, and the complaint is that rules leave some groups behind. Is one people being put first, perhaps above the others? Or is something said to be owed to every person, whatever group they belong to?
-  - If you chose **Old ways of faith, family and custom**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can say that some things are owed to people and must not be taken away: a faith, a freedom, a way of life. **“Old ways of faith, family and custom”** holds up what was handed down from the past as what should guide. **“Rights and fair treatment for everyone”** holds up what is owed to every person, whether it is old or new. The first looks back at what came before. The second asks what each person is owed. Is the text’s reason that the thing was handed down from the past? Or is its reason that every person is owed it?
-  - If you chose **No side named**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about forms, appeals, services and fair process. **“Rights and fair treatment for everyone”** says that something is owed to every person, and puts that first. **“No side named”** says only how one practical matter will be handled: who to write to, by when, at what cost. Does the text say that every person is owed something? Or does it only say how one thing is to be done?
-- This case may have brought back *The depot leaflet*, which was **“Working people, against those who own the businesses”**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose **The nation, or its ordinary people**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can speak of race and origin, and both can say that people are treated differently according to the group they were born into. In **“The nation, or its ordinary people”** the people the text belongs to is put first, and may be placed above others. In **“Rights and fair treatment for everyone”** no people is placed above another: something is said to be owed to every person, and the complaint is that rules leave some groups behind. Is one people being put first, perhaps above the others? Or is something said to be owed to every person, whatever group they belong to?
+  - If you chose **Old ways of faith, family and custom**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can say that some things are owed to people and must not be taken away: a faith, a freedom, a way of life. **“Old ways of faith, family and custom”** holds up what was handed down from the past as what should guide. **“Rights and fair treatment for everyone”** holds up what is owed to every person, whether it is old or new. The first looks back at what came before. The second asks what each person is owed. Is the text’s reason that the thing was handed down from the past? Or is its reason that every person is owed it?
+  - If you chose **No side named**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about forms, appeals, services and fair process. **“Rights and fair treatment for everyone”** says that something is owed to every person, and puts that first. **“No side named”** says only how one practical matter will be handled: who to write to, by when, at what cost. Does the text say that every person is owed something? Or does it only say how one thing is to be done?
+- This case may have brought back *The depot leaflet*, which was **“Working people, against those who own the businesses”**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If the text had said that owners are owed nothing and that the workers should have the profit, it would be **“Working people, against those who own the businesses”**.
 - Taught on: “What every person is owed” (one tap opens the card).
 
@@ -2567,11 +2567,11 @@ The question is shown with all five of its answers from the key, in the key’s 
 - If you are right: “Right: **No side named.**” The text says who holds power and how they keep it: “I alone decide who may stand for the council, and I alone decide who may speak at its meetings” and “The Chairman's word stands”. It speaks for no people and no side.
   - Why not **“The nation, or its ordinary people”**: A ruler who silences others is what texts for the nation can sound like. But this text never says whom it speaks for. It only says who decides.
 - If you miss: “The answer is **No side named.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **Working people, against those who own the businesses**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a workplace, and both can mention wages, bosses and rotas. **“Working people, against those who own the businesses”** takes the side of the workers against the owners. **“No side named”** takes no side. It says only what will happen, or who is in charge. Does the text take the workers’ side against the owners? Or does it only say what is to be done, or who decides?
+  - If you chose **Working people, against those who own the businesses**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a workplace, and both can mention wages, bosses and rotas. **“Working people, against those who own the businesses”** takes the side of the workers against the owners. **“No side named”** takes no side. It says only what will happen, or who is in charge. Does the text take the workers’ side against the owners? Or does it only say what is to be done, or who decides?
   - If you chose **The nation, or its ordinary people**: the “why not” line above. Then the lines from the card that compared the two: Both can come from a ruler’s mouth, and both can speak of power and of who is in charge. **“The nation, or its ordinary people”** speaks for a people and puts it first. **“No side named”** says who holds power and how they keep it, or how one practical matter will be handled, and speaks for no people at all. A ruler’s methods are not a side. Does the text speak for one people and put it first? Or does it only say who is in charge and how they keep power, or what will happen?
-  - If you chose **Old ways of faith, family and custom**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a church, a parish, a village custom or a home matter. **“Old ways of faith, family and custom”** holds up a faith, a custom or an old order as what should guide. **“No side named”** deals with one practical matter, such as who will repair the church roof or when the bells ring, and says nothing about what should guide anyone. Does the text hold up old ways as what should guide? Or does it only handle one practical matter?
-  - If you chose **Rights and fair treatment for everyone**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about forms, appeals, services and fair process. **“Rights and fair treatment for everyone”** says that something is owed to every person, and puts that first. **“No side named”** says only how one practical matter will be handled: who to write to, by when, at what cost. Does the text say that every person is owed something? Or does it only say how one thing is to be done?
-- This case may have brought back *The bridge speech*, which was **“The nation, or its ordinary people”**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose **Old ways of faith, family and custom**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a church, a parish, a village custom or a home matter. **“Old ways of faith, family and custom”** holds up a faith, a custom or an old order as what should guide. **“No side named”** deals with one practical matter, such as who will repair the church roof or when the bells ring, and says nothing about what should guide anyone. Does the text hold up old ways as what should guide? Or does it only handle one practical matter?
+  - If you chose **Rights and fair treatment for everyone**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about forms, appeals, services and fair process. **“Rights and fair treatment for everyone”** says that something is owed to every person, and puts that first. **“No side named”** says only how one practical matter will be handled: who to write to, by when, at what cost. Does the text say that every person is owed something? Or does it only say how one thing is to be done?
+- This case may have brought back *The bridge speech*, which was **“The nation, or its ordinary people”**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If the Chairman had said that he alone speaks for the one people of this country and that the people comes first, it would be **“The nation, or its ordinary people”**.
 - Taught on: “Who rules, or one practical matter, and no side” (one tap opens the card).
 
@@ -2610,9 +2610,9 @@ The question is shown with all five of its answers from the key, in the key’s 
 **Shown as soon as you answer**
 
 - The answer is: **No side named.**
-- If you chose another answer, the line is built from the key, as for any other question.
+- If you chose another answer, the line is built from the answers’ own wording, as for any other question.
 - The fault: The claim takes a name that was thrown as an insult and treats it as a description. The words the councillor threw tell you what he thinks of the plan. They do not tell you what the plan says. An *ideology* begins from someone or something put first, and the plan puts no one first.
-- The claim, put right (always the last thing shown): The councillor called the plan “communism on wheels”. The plan only says where a lane will be painted, what it will cost and when it starts. The key’s answer is **“No side named”**. A name thrown at a plan is an insult until the plan itself says something that fits the name.
+- The claim, put right (always the last thing shown): The councillor called the plan “communism on wheels”. The plan only says where a lane will be painted, what it will cost and when it starts. The answer is **“No side named”**. A name thrown at a plan is an insult until the plan itself says something that fits the name.
 
 **Drill item 37 of 39**
 
@@ -2629,7 +2629,7 @@ The question is shown with all five of its answers from the key, in the key’s 
 **Shown as soon as you answer**
 
 - The answer is: **Rights and fair treatment for everyone.**
-- If you chose another answer, the line is built from the key, as for any other question.
+- If you chose another answer, the line is built from the answers’ own wording, as for any other question.
 - The fault: The claim treats the word “race” as if it were all that either text says. The two texts point opposite ways. One places a people above the others. The other places no one above anyone, and says that rules which treat everyone alike can still leave a group behind.
 - The claim, put right (always the last thing shown): The speech says that rules which treat every applicant alike still leave one group behind, and asks for fair treatment for every applicant. That is **“Rights and fair treatment for everyone”**. A pamphlet that ranks the races puts its own people above the rest, and that is **“The nation, or its ordinary people”**. The two share a noun and nothing else.
 
@@ -2648,9 +2648,9 @@ The question is shown with all five of its answers from the key, in the key’s 
 **Shown as soon as you answer**
 
 - The answer is: **Old ways of faith, family and custom.**
-- If you chose another answer, the line is built from the key, as for any other question.
-- The fault: The claim stops at the first words that sound like the second answer. The newsletter does call the village one people. But what it asks the parish to be run by is the bells, the feast and the old prayers, and when a text shows both, the key’s answer is **“Old ways of faith, family and custom”**.
-- The claim, put right (always the last thing shown): The newsletter calls the village one people, and asks for the parish to be run by the Sunday bells, the harvest feast and the old prayers. Those are ways handed down, held up as the guide, so the key’s answer is **“Old ways of faith, family and custom”**.
+- If you chose another answer, the line is built from the answers’ own wording, as for any other question.
+- The fault: The claim stops at the first words that sound like the second answer. The newsletter does call the village one people. But what it asks the parish to be run by is the bells, the feast and the old prayers, and when a text shows both, the answer is **“Old ways of faith, family and custom”**.
+- The claim, put right (always the last thing shown): The newsletter calls the village one people, and asks for the parish to be run by the Sunday bells, the harvest feast and the old prayers. Those are ways handed down, held up as the guide, so the answer is **“Old ways of faith, family and custom”**.
 
 **Drill item 39 of 39**
 
@@ -2667,21 +2667,21 @@ The question is shown with all five of its answers from the key, in the key’s 
 **Shown as soon as you answer**
 
 - The answer is: **Working people, against those who own the businesses.**
-- If you chose another answer, the line is built from the key, as for any other question.
+- If you chose another answer, the line is built from the answers’ own wording, as for any other question.
 - The fault: The claim jumps from what the leaflet shows to a name. All the leaflet shows is workers on one side and owners on the other, with the leaflet standing with the workers. Texts that want very different things can begin like that, so the beginning cannot settle a name.
-- The claim, put right (always the last thing shown): The leaflet blames the mill owners for the closing and stands with the people who worked there. At this point the key’s answer is **“Working people, against those who own the businesses”**, and it is only the first answer. A name needs more of the text than this.
+- The claim, put right (always the last thing shown): The leaflet blames the mill owners for the closing and stands with the people who worked there. At this point the answer is **“Working people, against those who own the businesses”**, and it is only the first answer. A name needs more of the text than this.
 
 **When the drill ends.** The learner sees their own results: first-try accuracy for each stage, mixed cases beside single questions, the pair of kinds they mixed up most often, and what will come back and when. Anything missed was asked again before the drill ended. Nothing here is graded. A miss only decides what comes back.
 
 ### 48. What to carry away
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 7 of 7 · Card 48 of 49*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 7 of 7 · Card 48 of 49*
 
 [reviewers only: card kind `recap`, id `recap-sides`]
 
-You have now answered the key’s first question on your own. This card puts the unit in one place, in the key’s words.
+You have now answered the first question on your own. This card puts the unit in one place.
 
-**The key for this unit, in its own words**
+**This unit’s questions and answers**
 
 Who or what does the text put first?
 - Working people, against those who own the businesses
@@ -2696,7 +2696,7 @@ Who or what does the text put first?
   - Ask: "Who are the two groups here, and which one does the text stand with?" If you can name both groups and the side in one sentence, this is the answer to look at.
 - **“The nation, or its ordinary people”**: a people the text calls its own, marked out by its country, its culture or its blood, and the text putting that people first.
   - Ask: "Who is the people, how does the text mark it out, and does it put that people first?" If you can say all three in a sentence, this is the answer to look at.
-- **“Old ways of faith, family and custom”**: ways handed down from the past (a faith, the family, old customs, or an old order of crown, church and rank), and the text holding them up as what should guide the country.
+- **“Old ways of faith, family and custom”**: ways handed down from the past (a faith, home life, old customs, or an old order of crown, church and rank), and the text holding them up as what should guide the country.
   - Ask: "What from the past is named, and does the text hold it up as what should guide?" If you can say both in one sentence, this is the answer to look at.
 - **“Rights and fair treatment for everyone”**: something the text says every person is owed (the freedom to speak, believe, own and trade, a fair start in life, or fair treatment whatever group they belong to), and the text putting that first.
   - Ask: "What is said to be owed, who is it said to be owed to, and does the text put it first?" If it is owed to every person, and it comes first, this is the answer to look at.
@@ -2707,15 +2707,15 @@ Who or what does the text put first?
 
 - Before any name, ask who or what the text puts first, and point to the words that show it. If you cannot point, you do not have an answer yet.
 - There are five answers. Four name a side or a thing put first: **“Working people, against those who own the businesses”**, **“The nation, or its ordinary people”**, **“Old ways of faith, family and custom”** and **“Rights and fair treatment for everyone”**. The fifth, **“No side named”**, is for a text that only says what will happen or who is in charge.
-- The answer is not a verdict. A text can be fair or unfair, calm or angry, and still get any of the five. Whether it is right is a separate question that no part of the key asks.
+- The answer is not a verdict. A text can be fair or unfair, calm or angry, and still get any of the five. Whether it is right is a separate question that none of the questions asks.
 - A word such as "national", "workers" or "church" is not an answer. The words that decide are the ones that say who or what is put first.
-- When a text shows two answers, the key chooses. The order is **“Working people, against those who own the businesses”** first, then **“Old ways of faith, family and custom”**, then **“The nation, or its ordinary people”**, then **“Rights and fair treatment for everyone”**, and the first one a text shows is the key’s answer.
+- When a text shows two answers, one of them wins. The order is **“Working people, against those who own the businesses”** first, then **“Old ways of faith, family and custom”**, then **“The nation, or its ordinary people”**, then **“Rights and fair treatment for everyone”**, and the first one a text shows is the answer.
 - A name thrown at a text is not a description of it. The first answer is where a name starts, and a name has to be earned from what the text itself says.
-- Every case in this subject starts with this question. Your answer to it is the first part of your route to a name.
+- Every case in this subject starts with this question. Your answer to it is the first of your answers on the way to a name.
 
 ### 49. Where would you meet this?
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 7 of 7 · Card 49 of 49*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 7 of 7 · Card 49 of 49*
 
 [reviewers only: card kind `transfer`, id `transfer-sides`]
 
@@ -2743,7 +2743,7 @@ One line is enough. It is kept on this device only and is never marked.
 
 ## After the unit: what comes back on later days
 
-A name that is due returns as a case the learner has not seen, next to a case of the name they most often confuse it with. Each is asked the key’s first question, with the full feedback of the last case stage. These are the fresh cases held back for that purpose: three for each name, one for each scheduled return. The first return is about two days after the drill, the next about a week after that, the next about three and a half weeks later.
+A name that is due returns as a case the learner has not seen, next to a case of the name they most often confuse it with. Each is asked the first question, with the full feedback of the last case stage. These are the fresh cases held back for that purpose: three for each name, one for each scheduled return. The first return is about two days after the drill, the next about a week after that, the next about three and a half weeks later.
 
 **Return case 1 of 15**
 
@@ -2762,10 +2762,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **Working people, against those who own the businesses.**” The text sets the agency’s owners against the people who clean, and stands with the cleaners: “the agency's owners and the people who clean are on opposite sides, and we stand together”.
   - Why not **“Rights and fair treatment for everyone”**: The cleaners complain of unfairness, but they do not say what every person is owed. They name two sides and stand together on one.
 - If you miss: “The answer is **Working people, against those who own the businesses.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **The nation, or its ordinary people**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can be angry about the same closing or the same cut, and both can say "us" against someone else. In **“Working people, against those who own the businesses”** "us" is the people who work for pay, and "them" is the people who own where they work. In **“The nation, or its ordinary people”** "us" is one people, marked out by its country, culture or birth, and the text puts it first. A text can mention wages, bosses and the rich and still get the second answer, if what it speaks for is the people as a whole. Who is "us", and who is "them"? Are they the people who work for pay and the people who own where they work? Or is "us" one people, marked out by its country, culture or birth?
-  - If you chose **Old ways of faith, family and custom**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can speak up for ordinary people against powerful ones, and both can be bitter about what a closing does to a town. **“Working people, against those who own the businesses”** is about who works for pay and who owns, and which of them the text stands with. **“Old ways of faith, family and custom”** is about what was handed down from the past, and the text holds it up as the guide. The first looks at jobs and money. The second looks at what came before and should carry on. Is the text about the jobs and money of working people against owners? Or is it about something handed down from the past, which it says should guide?
+  - If you chose **The nation, or its ordinary people**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be angry about the same closing or the same cut, and both can say "us" against someone else. In **“Working people, against those who own the businesses”** "us" is the people who work for pay, and "them" is the people who own where they work. In **“The nation, or its ordinary people”** "us" is one people, marked out by its country, culture or birth, and the text puts it first. A text can mention wages, bosses and the rich and still get the second answer, if what it speaks for is the people as a whole. Who is "us", and who is "them"? Are they the people who work for pay and the people who own where they work? Or is "us" one people, marked out by its country, culture or birth?
+  - If you chose **Old ways of faith, family and custom**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can speak up for ordinary people against powerful ones, and both can be bitter about what a closing does to a town. **“Working people, against those who own the businesses”** is about who works for pay and who owns, and which of them the text stands with. **“Old ways of faith, family and custom”** is about what was handed down from the past, and the text holds it up as the guide. The first looks at jobs and money. The second looks at what came before and should carry on. Is the text about the jobs and money of working people against owners? Or is it about something handed down from the past, which it says should guide?
   - If you chose **Rights and fair treatment for everyone**: the “why not” line above. Then the lines from the card that compared the two: Both can ask for fair pay and fair rules, and both can stand with people who have less. In **“Working people, against those who own the businesses”** the people the text speaks for are the workers, and the owners are named as the other side. In **“Rights and fair treatment for everyone”** the text speaks for every person alike, and names no side to be on the far end of it. Is there a side the text is against, the people who own where others work? Or does it speak for every person, whoever they are?
-  - If you chose **No side named**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a workplace, and both can mention wages, bosses and rotas. **“Working people, against those who own the businesses”** takes the side of the workers against the owners. **“No side named”** takes no side. It says only what will happen, or who is in charge. Does the text take the workers’ side against the owners? Or does it only say what is to be done, or who decides?
+  - If you chose **No side named**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a workplace, and both can mention wages, bosses and rotas. **“Working people, against those who own the businesses”** takes the side of the workers against the owners. **“No side named”** takes no side. It says only what will happen, or who is in charge. Does the text take the workers’ side against the owners? Or does it only say what is to be done, or who decides?
 - What would make it a different name: If the cleaners had said that everyone who works is owed a fair hour’s pay, whoever employs them, and had named no side, it would be **“Rights and fair treatment for everyone”**.
 - Taught on: “Working people and owners, on opposite sides” (one tap opens the card).
 
@@ -2786,9 +2786,9 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **Working people, against those who own the businesses.**” The text names two groups, those who drive and those who own the app, and speaks for the first: “There are those who drive and those who own the app” and “We are done pretending we want the same thing”.
   - Why not **“No side named”**: A statement about fare cuts could simply report them. This one names two groups with different interests and stands with one.
 - If you miss: “The answer is **Working people, against those who own the businesses.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **The nation, or its ordinary people**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can be angry about the same closing or the same cut, and both can say "us" against someone else. In **“Working people, against those who own the businesses”** "us" is the people who work for pay, and "them" is the people who own where they work. In **“The nation, or its ordinary people”** "us" is one people, marked out by its country, culture or birth, and the text puts it first. A text can mention wages, bosses and the rich and still get the second answer, if what it speaks for is the people as a whole. Who is "us", and who is "them"? Are they the people who work for pay and the people who own where they work? Or is "us" one people, marked out by its country, culture or birth?
-  - If you chose **Old ways of faith, family and custom**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can speak up for ordinary people against powerful ones, and both can be bitter about what a closing does to a town. **“Working people, against those who own the businesses”** is about who works for pay and who owns, and which of them the text stands with. **“Old ways of faith, family and custom”** is about what was handed down from the past, and the text holds it up as the guide. The first looks at jobs and money. The second looks at what came before and should carry on. Is the text about the jobs and money of working people against owners? Or is it about something handed down from the past, which it says should guide?
-  - If you chose **Rights and fair treatment for everyone**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can ask for fair pay and fair rules, and both can stand with people who have less. In **“Working people, against those who own the businesses”** the people the text speaks for are the workers, and the owners are named as the other side. In **“Rights and fair treatment for everyone”** the text speaks for every person alike, and names no side to be on the far end of it. Is there a side the text is against, the people who own where others work? Or does it speak for every person, whoever they are?
+  - If you chose **The nation, or its ordinary people**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be angry about the same closing or the same cut, and both can say "us" against someone else. In **“Working people, against those who own the businesses”** "us" is the people who work for pay, and "them" is the people who own where they work. In **“The nation, or its ordinary people”** "us" is one people, marked out by its country, culture or birth, and the text puts it first. A text can mention wages, bosses and the rich and still get the second answer, if what it speaks for is the people as a whole. Who is "us", and who is "them"? Are they the people who work for pay and the people who own where they work? Or is "us" one people, marked out by its country, culture or birth?
+  - If you chose **Old ways of faith, family and custom**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can speak up for ordinary people against powerful ones, and both can be bitter about what a closing does to a town. **“Working people, against those who own the businesses”** is about who works for pay and who owns, and which of them the text stands with. **“Old ways of faith, family and custom”** is about what was handed down from the past, and the text holds it up as the guide. The first looks at jobs and money. The second looks at what came before and should carry on. Is the text about the jobs and money of working people against owners? Or is it about something handed down from the past, which it says should guide?
+  - If you chose **Rights and fair treatment for everyone**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can ask for fair pay and fair rules, and both can stand with people who have less. In **“Working people, against those who own the businesses”** the people the text speaks for are the workers, and the owners are named as the other side. In **“Rights and fair treatment for everyone”** the text speaks for every person alike, and names no side to be on the far end of it. Is there a side the text is against, the people who own where others work? Or does it speak for every person, whoever they are?
   - If you chose **No side named**: the “why not” line above. Then the lines from the card that compared the two: Both can be about a workplace, and both can mention wages, bosses and rotas. **“Working people, against those who own the businesses”** takes the side of the workers against the owners. **“No side named”** takes no side. It says only what will happen, or who is in charge. Does the text take the workers’ side against the owners? Or does it only say what is to be done, or who decides?
 - What would make it a different name: If the statement had only said that fares would change on the first of the month and where to see the new table, it would be **“No side named”**.
 - Taught on: “Working people and owners, on opposite sides” (one tap opens the card).
@@ -2811,10 +2811,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
   - Why not **“The nation, or its ordinary people”**: The country and the nation are named, but the text does not speak for them as one people. It says that the owners are on the other side.
 - If you miss: “The answer is **Working people, against those who own the businesses.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **The nation, or its ordinary people**: the “why not” line above. Then the lines from the card that compared the two: Both can be angry about the same closing or the same cut, and both can say "us" against someone else. In **“Working people, against those who own the businesses”** "us" is the people who work for pay, and "them" is the people who own where they work. In **“The nation, or its ordinary people”** "us" is one people, marked out by its country, culture or birth, and the text puts it first. A text can mention wages, bosses and the rich and still get the second answer, if what it speaks for is the people as a whole. Who is "us", and who is "them"? Are they the people who work for pay and the people who own where they work? Or is "us" one people, marked out by its country, culture or birth?
-  - If you chose **Old ways of faith, family and custom**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can speak up for ordinary people against powerful ones, and both can be bitter about what a closing does to a town. **“Working people, against those who own the businesses”** is about who works for pay and who owns, and which of them the text stands with. **“Old ways of faith, family and custom”** is about what was handed down from the past, and the text holds it up as the guide. The first looks at jobs and money. The second looks at what came before and should carry on. Is the text about the jobs and money of working people against owners? Or is it about something handed down from the past, which it says should guide?
-  - If you chose **Rights and fair treatment for everyone**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can ask for fair pay and fair rules, and both can stand with people who have less. In **“Working people, against those who own the businesses”** the people the text speaks for are the workers, and the owners are named as the other side. In **“Rights and fair treatment for everyone”** the text speaks for every person alike, and names no side to be on the far end of it. Is there a side the text is against, the people who own where others work? Or does it speak for every person, whoever they are?
-  - If you chose **No side named**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a workplace, and both can mention wages, bosses and rotas. **“Working people, against those who own the businesses”** takes the side of the workers against the owners. **“No side named”** takes no side. It says only what will happen, or who is in charge. Does the text take the workers’ side against the owners? Or does it only say what is to be done, or who decides?
-- This case may have brought back *The bridge speech*, which was **“The nation, or its ordinary people”**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose **Old ways of faith, family and custom**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can speak up for ordinary people against powerful ones, and both can be bitter about what a closing does to a town. **“Working people, against those who own the businesses”** is about who works for pay and who owns, and which of them the text stands with. **“Old ways of faith, family and custom”** is about what was handed down from the past, and the text holds it up as the guide. The first looks at jobs and money. The second looks at what came before and should carry on. Is the text about the jobs and money of working people against owners? Or is it about something handed down from the past, which it says should guide?
+  - If you chose **Rights and fair treatment for everyone**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can ask for fair pay and fair rules, and both can stand with people who have less. In **“Working people, against those who own the businesses”** the people the text speaks for are the workers, and the owners are named as the other side. In **“Rights and fair treatment for everyone”** the text speaks for every person alike, and names no side to be on the far end of it. Is there a side the text is against, the people who own where others work? Or does it speak for every person, whoever they are?
+  - If you chose **No side named**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a workplace, and both can mention wages, bosses and rotas. **“Working people, against those who own the businesses”** takes the side of the workers against the owners. **“No side named”** takes no side. It says only what will happen, or who is in charge. Does the text take the workers’ side against the owners? Or does it only say what is to be done, or who decides?
+- This case may have brought back *The bridge speech*, which was **“The nation, or its ordinary people”**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If the text had said that pickers and owners alike are one people, and that the farms belong to the nation, it would be **“The nation, or its ordinary people”**.
 - Taught on: “Working people and owners, on opposite sides” (one tap opens the card).
 
@@ -2836,9 +2836,9 @@ A name that is due returns as a case the learner has not seen, next to a case of
   - Why not **“Working people, against those who own the businesses”**: Nobody in the text is sorted by wages or by owning a business. It speaks of one people, whatever brought each person there.
 - If you miss: “The answer is **The nation, or its ordinary people.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **Working people, against those who own the businesses**: the “why not” line above. Then the lines from the card that compared the two: Both can be angry about the same closing or the same cut, and both can say "us" against someone else. In **“Working people, against those who own the businesses”** "us" is the people who work for pay, and "them" is the people who own where they work. In **“The nation, or its ordinary people”** "us" is one people, marked out by its country, culture or birth, and the text puts it first. A text can mention wages, bosses and the rich and still get the second answer, if what it speaks for is the people as a whole. Who is "us", and who is "them"? Are they the people who work for pay and the people who own where they work? Or is "us" one people, marked out by its country, culture or birth?
-  - If you chose **Old ways of faith, family and custom**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can love the country and its past, and both can say "our country" and "our ways". **“The nation, or its ordinary people”** puts one people first: its country, its culture or its birth. **“Old ways of faith, family and custom”** puts first the ways handed down from the past, such as a faith, home life or old customs. The first is about who belongs. The second is about what should guide. What does the text hold up as first: the people itself, marked out by country, culture or birth? Or ways handed down from the past, such as a faith or old customs?
-  - If you chose **Rights and fair treatment for everyone**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can speak of race and origin, and both can say that people are treated differently according to the group they were born into. In **“The nation, or its ordinary people”** the people the text belongs to is put first, and may be placed above others. In **“Rights and fair treatment for everyone”** no people is placed above another: something is said to be owed to every person, and the complaint is that rules leave some groups behind. Is one people being put first, perhaps above the others? Or is something said to be owed to every person, whatever group they belong to?
-  - If you chose **No side named**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can come from a ruler’s mouth, and both can speak of power and of who is in charge. **“The nation, or its ordinary people”** speaks for a people and puts it first. **“No side named”** says who holds power and how they keep it, or how one practical matter will be handled, and speaks for no people at all. A ruler’s methods are not a side. Does the text speak for one people and put it first? Or does it only say who is in charge and how they keep power, or what will happen?
+  - If you chose **Old ways of faith, family and custom**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can love the country and its past, and both can say "our country" and "our ways". **“The nation, or its ordinary people”** puts one people first: its country, its culture or its birth. **“Old ways of faith, family and custom”** puts first the ways handed down from the past, such as a faith, home life or old customs. The first is about who belongs. The second is about what should guide. What does the text hold up as first: the people itself, marked out by country, culture or birth? Or ways handed down from the past, such as a faith or old customs?
+  - If you chose **Rights and fair treatment for everyone**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can speak of race and origin, and both can say that people are treated differently according to the group they were born into. In **“The nation, or its ordinary people”** the people the text belongs to is put first, and may be placed above others. In **“Rights and fair treatment for everyone”** no people is placed above another: something is said to be owed to every person, and the complaint is that rules leave some groups behind. Is one people being put first, perhaps above the others? Or is something said to be owed to every person, whatever group they belong to?
+  - If you chose **No side named**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can come from a ruler’s mouth, and both can speak of power and of who is in charge. **“The nation, or its ordinary people”** speaks for a people and puts it first. **“No side named”** says who holds power and how they keep it, or how one practical matter will be handled, and speaks for no people at all. A ruler’s methods are not a side. Does the text speak for one people and put it first? Or does it only say who is in charge and how they keep power, or what will happen?
 - What would make it a different name: If the text had asked that the old churches and customs of the land, not the people, should guide what is done, it would be **“Old ways of faith, family and custom”**.
 - Taught on: “One people and its country” (one tap opens the card).
 
@@ -2860,9 +2860,9 @@ A name that is due returns as a case the learner has not seen, next to a case of
   - Why not **“Working people, against those who own the businesses”**: The few at the top are ministers, not owners, and the families are the country’s own people, not workers set against owners.
 - If you miss: “The answer is **The nation, or its ordinary people.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **Working people, against those who own the businesses**: the “why not” line above. Then the lines from the card that compared the two: Both can be angry about the same closing or the same cut, and both can say "us" against someone else. In **“Working people, against those who own the businesses”** "us" is the people who work for pay, and "them" is the people who own where they work. In **“The nation, or its ordinary people”** "us" is one people, marked out by its country, culture or birth, and the text puts it first. A text can mention wages, bosses and the rich and still get the second answer, if what it speaks for is the people as a whole. Who is "us", and who is "them"? Are they the people who work for pay and the people who own where they work? Or is "us" one people, marked out by its country, culture or birth?
-  - If you chose **Old ways of faith, family and custom**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can love the country and its past, and both can say "our country" and "our ways". **“The nation, or its ordinary people”** puts one people first: its country, its culture or its birth. **“Old ways of faith, family and custom”** puts first the ways handed down from the past, such as a faith, home life or old customs. The first is about who belongs. The second is about what should guide. What does the text hold up as first: the people itself, marked out by country, culture or birth? Or ways handed down from the past, such as a faith or old customs?
-  - If you chose **Rights and fair treatment for everyone**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can speak of race and origin, and both can say that people are treated differently according to the group they were born into. In **“The nation, or its ordinary people”** the people the text belongs to is put first, and may be placed above others. In **“Rights and fair treatment for everyone”** no people is placed above another: something is said to be owed to every person, and the complaint is that rules leave some groups behind. Is one people being put first, perhaps above the others? Or is something said to be owed to every person, whatever group they belong to?
-  - If you chose **No side named**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can come from a ruler’s mouth, and both can speak of power and of who is in charge. **“The nation, or its ordinary people”** speaks for a people and puts it first. **“No side named”** says who holds power and how they keep it, or how one practical matter will be handled, and speaks for no people at all. A ruler’s methods are not a side. Does the text speak for one people and put it first? Or does it only say who is in charge and how they keep power, or what will happen?
+  - If you chose **Old ways of faith, family and custom**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can love the country and its past, and both can say "our country" and "our ways". **“The nation, or its ordinary people”** puts one people first: its country, its culture or its birth. **“Old ways of faith, family and custom”** puts first the ways handed down from the past, such as a faith, home life or old customs. The first is about who belongs. The second is about what should guide. What does the text hold up as first: the people itself, marked out by country, culture or birth? Or ways handed down from the past, such as a faith or old customs?
+  - If you chose **Rights and fair treatment for everyone**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can speak of race and origin, and both can say that people are treated differently according to the group they were born into. In **“The nation, or its ordinary people”** the people the text belongs to is put first, and may be placed above others. In **“Rights and fair treatment for everyone”** no people is placed above another: something is said to be owed to every person, and the complaint is that rules leave some groups behind. Is one people being put first, perhaps above the others? Or is something said to be owed to every person, whatever group they belong to?
+  - If you chose **No side named**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can come from a ruler’s mouth, and both can speak of power and of who is in charge. **“The nation, or its ordinary people”** speaks for a people and puts it first. **“No side named”** says who holds power and how they keep it, or how one practical matter will be handled, and speaks for no people at all. A ruler’s methods are not a side. Does the text speak for one people and put it first? Or does it only say who is in charge and how they keep power, or what will happen?
 - What would make it a different name: If the few at the top were the owners of the banks and the families were the people who work for them, and the text stood with the workers, it would be **“Working people, against those who own the businesses”**.
 - Taught on: “One people and its country” (one tap opens the card).
 
@@ -2884,10 +2884,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
   - Why not **“Working people, against those who own the businesses”**: Workers and owners are named, which is what the first answer looks for. But the text stands with neither. It says there is only a citizen.
 - If you miss: “The answer is **The nation, or its ordinary people.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **Working people, against those who own the businesses**: the “why not” line above. Then the lines from the card that compared the two: Both can be angry about the same closing or the same cut, and both can say "us" against someone else. In **“Working people, against those who own the businesses”** "us" is the people who work for pay, and "them" is the people who own where they work. In **“The nation, or its ordinary people”** "us" is one people, marked out by its country, culture or birth, and the text puts it first. A text can mention wages, bosses and the rich and still get the second answer, if what it speaks for is the people as a whole. Who is "us", and who is "them"? Are they the people who work for pay and the people who own where they work? Or is "us" one people, marked out by its country, culture or birth?
-  - If you chose **Old ways of faith, family and custom**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can love the country and its past, and both can say "our country" and "our ways". **“The nation, or its ordinary people”** puts one people first: its country, its culture or its birth. **“Old ways of faith, family and custom”** puts first the ways handed down from the past, such as a faith, home life or old customs. The first is about who belongs. The second is about what should guide. What does the text hold up as first: the people itself, marked out by country, culture or birth? Or ways handed down from the past, such as a faith or old customs?
-  - If you chose **Rights and fair treatment for everyone**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can speak of race and origin, and both can say that people are treated differently according to the group they were born into. In **“The nation, or its ordinary people”** the people the text belongs to is put first, and may be placed above others. In **“Rights and fair treatment for everyone”** no people is placed above another: something is said to be owed to every person, and the complaint is that rules leave some groups behind. Is one people being put first, perhaps above the others? Or is something said to be owed to every person, whatever group they belong to?
-  - If you chose **No side named**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can come from a ruler’s mouth, and both can speak of power and of who is in charge. **“The nation, or its ordinary people”** speaks for a people and puts it first. **“No side named”** says who holds power and how they keep it, or how one practical matter will be handled, and speaks for no people at all. A ruler’s methods are not a side. Does the text speak for one people and put it first? Or does it only say who is in charge and how they keep power, or what will happen?
-- This case may have brought back *The depot leaflet*, which was **“Working people, against those who own the businesses”**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose **Old ways of faith, family and custom**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can love the country and its past, and both can say "our country" and "our ways". **“The nation, or its ordinary people”** puts one people first: its country, its culture or its birth. **“Old ways of faith, family and custom”** puts first the ways handed down from the past, such as a faith, home life or old customs. The first is about who belongs. The second is about what should guide. What does the text hold up as first: the people itself, marked out by country, culture or birth? Or ways handed down from the past, such as a faith or old customs?
+  - If you chose **Rights and fair treatment for everyone**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can speak of race and origin, and both can say that people are treated differently according to the group they were born into. In **“The nation, or its ordinary people”** the people the text belongs to is put first, and may be placed above others. In **“Rights and fair treatment for everyone”** no people is placed above another: something is said to be owed to every person, and the complaint is that rules leave some groups behind. Is one people being put first, perhaps above the others? Or is something said to be owed to every person, whatever group they belong to?
+  - If you chose **No side named**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can come from a ruler’s mouth, and both can speak of power and of who is in charge. **“The nation, or its ordinary people”** speaks for a people and puts it first. **“No side named”** says who holds power and how they keep it, or how one practical matter will be handled, and speaks for no people at all. A ruler’s methods are not a side. Does the text speak for one people and put it first? Or does it only say who is in charge and how they keep power, or what will happen?
+- This case may have brought back *The depot leaflet*, which was **“Working people, against those who own the businesses”**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If the text had said that the workers should stand against the owners whatever the country calls, it would be **“Working people, against those who own the businesses”**.
 - Taught on: “One people and its country” (one tap opens the card).
 
@@ -2908,11 +2908,11 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **Old ways of faith, family and custom.**” The text holds up what was handed down as what should guide: “It was given to us and we will give it on” and “What was handed down is what a village should be guided by”.
   - Why not **“No side named”**: A text about a yearly walk could be a plain notice of the day and time. This one says that what was handed down should guide.
 - If you miss: “The answer is **Old ways of faith, family and custom.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **Working people, against those who own the businesses**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can speak up for ordinary people against powerful ones, and both can be bitter about what a closing does to a town. **“Working people, against those who own the businesses”** is about who works for pay and who owns, and which of them the text stands with. **“Old ways of faith, family and custom”** is about what was handed down from the past, and the text holds it up as the guide. The first looks at jobs and money. The second looks at what came before and should carry on. Is the text about the jobs and money of working people against owners? Or is it about something handed down from the past, which it says should guide?
-  - If you chose **The nation, or its ordinary people**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can love the country and its past, and both can say "our country" and "our ways". **“The nation, or its ordinary people”** puts one people first: its country, its culture or its birth. **“Old ways of faith, family and custom”** puts first the ways handed down from the past, such as a faith, home life or old customs. The first is about who belongs. The second is about what should guide. What does the text hold up as first: the people itself, marked out by country, culture or birth? Or ways handed down from the past, such as a faith or old customs?
-  - If you chose **Rights and fair treatment for everyone**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can say that some things are owed to people and must not be taken away: a faith, a freedom, a way of life. **“Old ways of faith, family and custom”** holds up what was handed down from the past as what should guide. **“Rights and fair treatment for everyone”** holds up what is owed to every person, whether it is old or new. The first looks back at what came before. The second asks what each person is owed. Is the text’s reason that the thing was handed down from the past? Or is its reason that every person is owed it?
+  - If you chose **Working people, against those who own the businesses**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can speak up for ordinary people against powerful ones, and both can be bitter about what a closing does to a town. **“Working people, against those who own the businesses”** is about who works for pay and who owns, and which of them the text stands with. **“Old ways of faith, family and custom”** is about what was handed down from the past, and the text holds it up as the guide. The first looks at jobs and money. The second looks at what came before and should carry on. Is the text about the jobs and money of working people against owners? Or is it about something handed down from the past, which it says should guide?
+  - If you chose **The nation, or its ordinary people**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can love the country and its past, and both can say "our country" and "our ways". **“The nation, or its ordinary people”** puts one people first: its country, its culture or its birth. **“Old ways of faith, family and custom”** puts first the ways handed down from the past, such as a faith, home life or old customs. The first is about who belongs. The second is about what should guide. What does the text hold up as first: the people itself, marked out by country, culture or birth? Or ways handed down from the past, such as a faith or old customs?
+  - If you chose **Rights and fair treatment for everyone**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can say that some things are owed to people and must not be taken away: a faith, a freedom, a way of life. **“Old ways of faith, family and custom”** holds up what was handed down from the past as what should guide. **“Rights and fair treatment for everyone”** holds up what is owed to every person, whether it is old or new. The first looks back at what came before. The second asks what each person is owed. Is the text’s reason that the thing was handed down from the past? Or is its reason that every person is owed it?
   - If you chose **No side named**: the “why not” line above. Then the lines from the card that compared the two: Both can be about a church, a parish, a village custom or a home matter. **“Old ways of faith, family and custom”** holds up a faith, a custom or an old order as what should guide. **“No side named”** deals with one practical matter, such as who will repair the church roof or when the bells ring, and says nothing about what should guide anyone. Does the text hold up old ways as what should guide? Or does it only handle one practical matter?
-- What would make it a different name: If the notice only said that this year’s walk starts at the church gate at nine, with no word on what should guide anything, it would be **“No side named”**.
+- What would make it a different name: If the notice only said that this year’s walk starts at the church at nine, with no word on what should guide anything, it would be **“No side named”**.
 - Taught on: “The ways handed down from the past” (one tap opens the card).
 
 **Return case 8 of 15**
@@ -2932,10 +2932,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **Old ways of faith, family and custom.**” The text holds up what was inherited as what should come first: “were handed down by every class before this one” and “what we inherited should come before what is convenient”.
   - Why not **“Rights and fair treatment for everyone”**: The text says what should come first, and it is what was inherited. It does not say that every person is owed anything.
 - If you miss: “The answer is **Old ways of faith, family and custom.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **Working people, against those who own the businesses**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can speak up for ordinary people against powerful ones, and both can be bitter about what a closing does to a town. **“Working people, against those who own the businesses”** is about who works for pay and who owns, and which of them the text stands with. **“Old ways of faith, family and custom”** is about what was handed down from the past, and the text holds it up as the guide. The first looks at jobs and money. The second looks at what came before and should carry on. Is the text about the jobs and money of working people against owners? Or is it about something handed down from the past, which it says should guide?
-  - If you chose **The nation, or its ordinary people**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can love the country and its past, and both can say "our country" and "our ways". **“The nation, or its ordinary people”** puts one people first: its country, its culture or its birth. **“Old ways of faith, family and custom”** puts first the ways handed down from the past, such as a faith, home life or old customs. The first is about who belongs. The second is about what should guide. What does the text hold up as first: the people itself, marked out by country, culture or birth? Or ways handed down from the past, such as a faith or old customs?
+  - If you chose **Working people, against those who own the businesses**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can speak up for ordinary people against powerful ones, and both can be bitter about what a closing does to a town. **“Working people, against those who own the businesses”** is about who works for pay and who owns, and which of them the text stands with. **“Old ways of faith, family and custom”** is about what was handed down from the past, and the text holds it up as the guide. The first looks at jobs and money. The second looks at what came before and should carry on. Is the text about the jobs and money of working people against owners? Or is it about something handed down from the past, which it says should guide?
+  - If you chose **The nation, or its ordinary people**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can love the country and its past, and both can say "our country" and "our ways". **“The nation, or its ordinary people”** puts one people first: its country, its culture or its birth. **“Old ways of faith, family and custom”** puts first the ways handed down from the past, such as a faith, home life or old customs. The first is about who belongs. The second is about what should guide. What does the text hold up as first: the people itself, marked out by country, culture or birth? Or ways handed down from the past, such as a faith or old customs?
   - If you chose **Rights and fair treatment for everyone**: the “why not” line above. Then the lines from the card that compared the two: Both can say that some things are owed to people and must not be taken away: a faith, a freedom, a way of life. **“Old ways of faith, family and custom”** holds up what was handed down from the past as what should guide. **“Rights and fair treatment for everyone”** holds up what is owed to every person, whether it is old or new. The first looks back at what came before. The second asks what each person is owed. Is the text’s reason that the thing was handed down from the past? Or is its reason that every person is owed it?
-  - If you chose **No side named**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a church, a parish, a village custom or a home matter. **“Old ways of faith, family and custom”** holds up a faith, a custom or an old order as what should guide. **“No side named”** deals with one practical matter, such as who will repair the church roof or when the bells ring, and says nothing about what should guide anyone. Does the text hold up old ways as what should guide? Or does it only handle one practical matter?
+  - If you chose **No side named**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a church, a parish, a village custom or a home matter. **“Old ways of faith, family and custom”** holds up a faith, a custom or an old order as what should guide. **“No side named”** deals with one practical matter, such as who will repair the church roof or when the bells ring, and says nothing about what should guide anyone. Does the text hold up old ways as what should guide? Or does it only handle one practical matter?
 - What would make it a different name: If the text had said that every child is owed a place in the service, whatever they believe, it would be **“Rights and fair treatment for everyone”**.
 - Taught on: “The ways handed down from the past” (one tap opens the card).
 
@@ -2954,13 +2954,13 @@ A name that is due returns as a case the learner has not seen, next to a case of
 **Shown as soon as you answer**
 
 - If you are right: “Right: **Old ways of faith, family and custom.**” The text asks that the country be guided by what the parents taught: “freedom is a plant that grows in old soil: church, home and the customs of our parents. Guide the country by them”.
-  - Why not **“Rights and fair treatment for everyone”**: Freedom to run a shop is in the text, and on its own it would be the fourth answer. But the text goes on to say that old ways should guide the country. When a case shows both, the key’s answer is **“Old ways of faith, family and custom”**.
+  - Why not **“Rights and fair treatment for everyone”**: Freedom to run a shop is in the text, and on its own it would be the fourth answer. But the text goes on to say that old ways should guide the country. When a case shows both, the answer is **“Old ways of faith, family and custom”**.
 - If you miss: “The answer is **Old ways of faith, family and custom.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **Working people, against those who own the businesses**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can speak up for ordinary people against powerful ones, and both can be bitter about what a closing does to a town. **“Working people, against those who own the businesses”** is about who works for pay and who owns, and which of them the text stands with. **“Old ways of faith, family and custom”** is about what was handed down from the past, and the text holds it up as the guide. The first looks at jobs and money. The second looks at what came before and should carry on. Is the text about the jobs and money of working people against owners? Or is it about something handed down from the past, which it says should guide?
-  - If you chose **The nation, or its ordinary people**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can love the country and its past, and both can say "our country" and "our ways". **“The nation, or its ordinary people”** puts one people first: its country, its culture or its birth. **“Old ways of faith, family and custom”** puts first the ways handed down from the past, such as a faith, home life or old customs. The first is about who belongs. The second is about what should guide. What does the text hold up as first: the people itself, marked out by country, culture or birth? Or ways handed down from the past, such as a faith or old customs?
-  - If you chose **Rights and fair treatment for everyone**: This case does show that. It also shows old ways of faith, family or custom held up as what should guide the country, and when a case shows both, the key’s answer is **Old ways of faith, family and custom**. Then the lines from the card that compared the two: Both can say that some things are owed to people and must not be taken away: a faith, a freedom, a way of life. **“Old ways of faith, family and custom”** holds up what was handed down from the past as what should guide. **“Rights and fair treatment for everyone”** holds up what is owed to every person, whether it is old or new. The first looks back at what came before. The second asks what each person is owed. Is the text’s reason that the thing was handed down from the past? Or is its reason that every person is owed it?
-  - If you chose **No side named**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a church, a parish, a village custom or a home matter. **“Old ways of faith, family and custom”** holds up a faith, a custom or an old order as what should guide. **“No side named”** deals with one practical matter, such as who will repair the church roof or when the bells ring, and says nothing about what should guide anyone. Does the text hold up old ways as what should guide? Or does it only handle one practical matter?
-- This case may have brought back *The open-counter pamphlet*, which was **“Rights and fair treatment for everyone”**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose **Working people, against those who own the businesses**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can speak up for ordinary people against powerful ones, and both can be bitter about what a closing does to a town. **“Working people, against those who own the businesses”** is about who works for pay and who owns, and which of them the text stands with. **“Old ways of faith, family and custom”** is about what was handed down from the past, and the text holds it up as the guide. The first looks at jobs and money. The second looks at what came before and should carry on. Is the text about the jobs and money of working people against owners? Or is it about something handed down from the past, which it says should guide?
+  - If you chose **The nation, or its ordinary people**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can love the country and its past, and both can say "our country" and "our ways". **“The nation, or its ordinary people”** puts one people first: its country, its culture or its birth. **“Old ways of faith, family and custom”** puts first the ways handed down from the past, such as a faith, home life or old customs. The first is about who belongs. The second is about what should guide. What does the text hold up as first: the people itself, marked out by country, culture or birth? Or ways handed down from the past, such as a faith or old customs?
+  - If you chose **Rights and fair treatment for everyone**: This case does show that. It also shows old ways of faith, home life or custom held up as what should guide the country, and when a case shows both, the answer is **Old ways of faith, family and custom**. Then the lines from the card that compared the two: Both can say that some things are owed to people and must not be taken away: a faith, a freedom, a way of life. **“Old ways of faith, family and custom”** holds up what was handed down from the past as what should guide. **“Rights and fair treatment for everyone”** holds up what is owed to every person, whether it is old or new. The first looks back at what came before. The second asks what each person is owed. Is the text’s reason that the thing was handed down from the past? Or is its reason that every person is owed it?
+  - If you chose **No side named**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a church, a parish, a village custom or a home matter. **“Old ways of faith, family and custom”** holds up a faith, a custom or an old order as what should guide. **“No side named”** deals with one practical matter, such as who will repair the church roof or when the bells ring, and says nothing about what should guide anyone. Does the text hold up old ways as what should guide? Or does it only handle one practical matter?
+- This case may have brought back *The open-counter pamphlet*, which was **“Rights and fair treatment for everyone”**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If the text had stopped after its first sentence, it would be **“Rights and fair treatment for everyone”**.
 - Taught on: “The ways handed down from the past” (one tap opens the card).
 
@@ -2982,9 +2982,9 @@ A name that is due returns as a case the learner has not seen, next to a case of
   - Why not **“Working people, against those who own the businesses”**: Tenants are named, but the text does not sort anyone into workers and owners or take a side between them. It says what every tenant is owed.
 - If you miss: “The answer is **Rights and fair treatment for everyone.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **Working people, against those who own the businesses**: the “why not” line above. Then the lines from the card that compared the two: Both can ask for fair pay and fair rules, and both can stand with people who have less. In **“Working people, against those who own the businesses”** the people the text speaks for are the workers, and the owners are named as the other side. In **“Rights and fair treatment for everyone”** the text speaks for every person alike, and names no side to be on the far end of it. Is there a side the text is against, the people who own where others work? Or does it speak for every person, whoever they are?
-  - If you chose **The nation, or its ordinary people**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can speak of race and origin, and both can say that people are treated differently according to the group they were born into. In **“The nation, or its ordinary people”** the people the text belongs to is put first, and may be placed above others. In **“Rights and fair treatment for everyone”** no people is placed above another: something is said to be owed to every person, and the complaint is that rules leave some groups behind. Is one people being put first, perhaps above the others? Or is something said to be owed to every person, whatever group they belong to?
-  - If you chose **Old ways of faith, family and custom**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can say that some things are owed to people and must not be taken away: a faith, a freedom, a way of life. **“Old ways of faith, family and custom”** holds up what was handed down from the past as what should guide. **“Rights and fair treatment for everyone”** holds up what is owed to every person, whether it is old or new. The first looks back at what came before. The second asks what each person is owed. Is the text’s reason that the thing was handed down from the past? Or is its reason that every person is owed it?
-  - If you chose **No side named**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about forms, appeals, services and fair process. **“Rights and fair treatment for everyone”** says that something is owed to every person, and puts that first. **“No side named”** says only how one practical matter will be handled: who to write to, by when, at what cost. Does the text say that every person is owed something? Or does it only say how one thing is to be done?
+  - If you chose **The nation, or its ordinary people**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can speak of race and origin, and both can say that people are treated differently according to the group they were born into. In **“The nation, or its ordinary people”** the people the text belongs to is put first, and may be placed above others. In **“Rights and fair treatment for everyone”** no people is placed above another: something is said to be owed to every person, and the complaint is that rules leave some groups behind. Is one people being put first, perhaps above the others? Or is something said to be owed to every person, whatever group they belong to?
+  - If you chose **Old ways of faith, family and custom**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can say that some things are owed to people and must not be taken away: a faith, a freedom, a way of life. **“Old ways of faith, family and custom”** holds up what was handed down from the past as what should guide. **“Rights and fair treatment for everyone”** holds up what is owed to every person, whether it is old or new. The first looks back at what came before. The second asks what each person is owed. Is the text’s reason that the thing was handed down from the past? Or is its reason that every person is owed it?
+  - If you chose **No side named**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about forms, appeals, services and fair process. **“Rights and fair treatment for everyone”** says that something is owed to every person, and puts that first. **“No side named”** says only how one practical matter will be handled: who to write to, by when, at what cost. Does the text say that every person is owed something? Or does it only say how one thing is to be done?
 - What would make it a different name: If the text had said that tenants and landlords want opposite things and that it stands with the tenants, it would be **“Working people, against those who own the businesses”**.
 - Taught on: “What every person is owed” (one tap opens the card).
 
@@ -3005,9 +3005,9 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **Rights and fair treatment for everyone.**” The text puts first what every patient is owed, and says rules that treat all alike can still leave a group behind: “which sounds fair and leaves the disabled behind” and “Fair treatment for every patient means changing how the queue works”.
   - Why not **“No side named”**: The text is about how a queue works, but it says that fair treatment is owed to every patient, and that is what it puts first.
 - If you miss: “The answer is **Rights and fair treatment for everyone.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **Working people, against those who own the businesses**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can ask for fair pay and fair rules, and both can stand with people who have less. In **“Working people, against those who own the businesses”** the people the text speaks for are the workers, and the owners are named as the other side. In **“Rights and fair treatment for everyone”** the text speaks for every person alike, and names no side to be on the far end of it. Is there a side the text is against, the people who own where others work? Or does it speak for every person, whoever they are?
-  - If you chose **The nation, or its ordinary people**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can speak of race and origin, and both can say that people are treated differently according to the group they were born into. In **“The nation, or its ordinary people”** the people the text belongs to is put first, and may be placed above others. In **“Rights and fair treatment for everyone”** no people is placed above another: something is said to be owed to every person, and the complaint is that rules leave some groups behind. Is one people being put first, perhaps above the others? Or is something said to be owed to every person, whatever group they belong to?
-  - If you chose **Old ways of faith, family and custom**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can say that some things are owed to people and must not be taken away: a faith, a freedom, a way of life. **“Old ways of faith, family and custom”** holds up what was handed down from the past as what should guide. **“Rights and fair treatment for everyone”** holds up what is owed to every person, whether it is old or new. The first looks back at what came before. The second asks what each person is owed. Is the text’s reason that the thing was handed down from the past? Or is its reason that every person is owed it?
+  - If you chose **Working people, against those who own the businesses**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can ask for fair pay and fair rules, and both can stand with people who have less. In **“Working people, against those who own the businesses”** the people the text speaks for are the workers, and the owners are named as the other side. In **“Rights and fair treatment for everyone”** the text speaks for every person alike, and names no side to be on the far end of it. Is there a side the text is against, the people who own where others work? Or does it speak for every person, whoever they are?
+  - If you chose **The nation, or its ordinary people**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can speak of race and origin, and both can say that people are treated differently according to the group they were born into. In **“The nation, or its ordinary people”** the people the text belongs to is put first, and may be placed above others. In **“Rights and fair treatment for everyone”** no people is placed above another: something is said to be owed to every person, and the complaint is that rules leave some groups behind. Is one people being put first, perhaps above the others? Or is something said to be owed to every person, whatever group they belong to?
+  - If you chose **Old ways of faith, family and custom**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can say that some things are owed to people and must not be taken away: a faith, a freedom, a way of life. **“Old ways of faith, family and custom”** holds up what was handed down from the past as what should guide. **“Rights and fair treatment for everyone”** holds up what is owed to every person, whether it is old or new. The first looks back at what came before. The second asks what each person is owed. Is the text’s reason that the thing was handed down from the past? Or is its reason that every person is owed it?
   - If you chose **No side named**: the “why not” line above. Then the lines from the card that compared the two: Both can be about forms, appeals, services and fair process. **“Rights and fair treatment for everyone”** says that something is owed to every person, and puts that first. **“No side named”** says only how one practical matter will be handled: who to write to, by when, at what cost. Does the text say that every person is owed something? Or does it only say how one thing is to be done?
 - What would make it a different name: If the text had only said that the clinic works by appointment and where to book, it would be **“No side named”**.
 - Taught on: “What every person is owed” (one tap opens the card).
@@ -3029,11 +3029,11 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **Rights and fair treatment for everyone.**” The text says what every person is owed, whatever flag they were born under: “a fair trial is owed to them in this country” and “keeps that promise to strangers”.
   - Why not **“The nation, or its ordinary people”**: The country and pride in it are named, which is what the second answer looks for. But the text does not put one people first. It says a fair trial is owed to strangers too.
 - If you miss: “The answer is **Rights and fair treatment for everyone.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **Working people, against those who own the businesses**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can ask for fair pay and fair rules, and both can stand with people who have less. In **“Working people, against those who own the businesses”** the people the text speaks for are the workers, and the owners are named as the other side. In **“Rights and fair treatment for everyone”** the text speaks for every person alike, and names no side to be on the far end of it. Is there a side the text is against, the people who own where others work? Or does it speak for every person, whoever they are?
+  - If you chose **Working people, against those who own the businesses**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can ask for fair pay and fair rules, and both can stand with people who have less. In **“Working people, against those who own the businesses”** the people the text speaks for are the workers, and the owners are named as the other side. In **“Rights and fair treatment for everyone”** the text speaks for every person alike, and names no side to be on the far end of it. Is there a side the text is against, the people who own where others work? Or does it speak for every person, whoever they are?
   - If you chose **The nation, or its ordinary people**: the “why not” line above. Then the lines from the card that compared the two: Both can speak of race and origin, and both can say that people are treated differently according to the group they were born into. In **“The nation, or its ordinary people”** the people the text belongs to is put first, and may be placed above others. In **“Rights and fair treatment for everyone”** no people is placed above another: something is said to be owed to every person, and the complaint is that rules leave some groups behind. Is one people being put first, perhaps above the others? Or is something said to be owed to every person, whatever group they belong to?
-  - If you chose **Old ways of faith, family and custom**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can say that some things are owed to people and must not be taken away: a faith, a freedom, a way of life. **“Old ways of faith, family and custom”** holds up what was handed down from the past as what should guide. **“Rights and fair treatment for everyone”** holds up what is owed to every person, whether it is old or new. The first looks back at what came before. The second asks what each person is owed. Is the text’s reason that the thing was handed down from the past? Or is its reason that every person is owed it?
-  - If you chose **No side named**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about forms, appeals, services and fair process. **“Rights and fair treatment for everyone”** says that something is owed to every person, and puts that first. **“No side named”** says only how one practical matter will be handled: who to write to, by when, at what cost. Does the text say that every person is owed something? Or does it only say how one thing is to be done?
-- This case may have brought back *The bridge speech*, which was **“The nation, or its ordinary people”**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose **Old ways of faith, family and custom**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can say that some things are owed to people and must not be taken away: a faith, a freedom, a way of life. **“Old ways of faith, family and custom”** holds up what was handed down from the past as what should guide. **“Rights and fair treatment for everyone”** holds up what is owed to every person, whether it is old or new. The first looks back at what came before. The second asks what each person is owed. Is the text’s reason that the thing was handed down from the past? Or is its reason that every person is owed it?
+  - If you chose **No side named**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about forms, appeals, services and fair process. **“Rights and fair treatment for everyone”** says that something is owed to every person, and puts that first. **“No side named”** says only how one practical matter will be handled: who to write to, by when, at what cost. Does the text say that every person is owed something? Or does it only say how one thing is to be done?
+- This case may have brought back *The bridge speech*, which was **“The nation, or its ordinary people”**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If the text had said that only members of the one people of this country are owed a fair trial, it would be **“The nation, or its ordinary people”**.
 - Taught on: “What every person is owed” (one tap opens the card).
 
@@ -3054,9 +3054,9 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **No side named.**” The text says how one practical matter will be handled: “The school office will be closed on 12 March for staff training” and “Letters for the head teacher can be left in the box by the gate”. It speaks for no side.
   - Why not **“Rights and fair treatment for everyone”**: The notice is about a school, but it does not say that anyone is owed anything. It says when the office is closed and where to leave a letter.
 - If you miss: “The answer is **No side named.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **Working people, against those who own the businesses**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a workplace, and both can mention wages, bosses and rotas. **“Working people, against those who own the businesses”** takes the side of the workers against the owners. **“No side named”** takes no side. It says only what will happen, or who is in charge. Does the text take the workers’ side against the owners? Or does it only say what is to be done, or who decides?
-  - If you chose **The nation, or its ordinary people**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can come from a ruler’s mouth, and both can speak of power and of who is in charge. **“The nation, or its ordinary people”** speaks for a people and puts it first. **“No side named”** says who holds power and how they keep it, or how one practical matter will be handled, and speaks for no people at all. A ruler’s methods are not a side. Does the text speak for one people and put it first? Or does it only say who is in charge and how they keep power, or what will happen?
-  - If you chose **Old ways of faith, family and custom**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a church, a parish, a village custom or a home matter. **“Old ways of faith, family and custom”** holds up a faith, a custom or an old order as what should guide. **“No side named”** deals with one practical matter, such as who will repair the church roof or when the bells ring, and says nothing about what should guide anyone. Does the text hold up old ways as what should guide? Or does it only handle one practical matter?
+  - If you chose **Working people, against those who own the businesses**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a workplace, and both can mention wages, bosses and rotas. **“Working people, against those who own the businesses”** takes the side of the workers against the owners. **“No side named”** takes no side. It says only what will happen, or who is in charge. Does the text take the workers’ side against the owners? Or does it only say what is to be done, or who decides?
+  - If you chose **The nation, or its ordinary people**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can come from a ruler’s mouth, and both can speak of power and of who is in charge. **“The nation, or its ordinary people”** speaks for a people and puts it first. **“No side named”** says who holds power and how they keep it, or how one practical matter will be handled, and speaks for no people at all. A ruler’s methods are not a side. Does the text speak for one people and put it first? Or does it only say who is in charge and how they keep power, or what will happen?
+  - If you chose **Old ways of faith, family and custom**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a church, a parish, a village custom or a home matter. **“Old ways of faith, family and custom”** holds up a faith, a custom or an old order as what should guide. **“No side named”** deals with one practical matter, such as who will repair the church roof or when the bells ring, and says nothing about what should guide anyone. Does the text hold up old ways as what should guide? Or does it only handle one practical matter?
   - If you chose **Rights and fair treatment for everyone**: the “why not” line above. Then the lines from the card that compared the two: Both can be about forms, appeals, services and fair process. **“Rights and fair treatment for everyone”** says that something is owed to every person, and puts that first. **“No side named”** says only how one practical matter will be handled: who to write to, by when, at what cost. Does the text say that every person is owed something? Or does it only say how one thing is to be done?
 - What would make it a different name: If the notice had said that every parent is owed a say in how the school is run, and that the closure took it away, it would be **“Rights and fair treatment for everyone”**.
 - Taught on: “Who rules, or one practical matter, and no side” (one tap opens the card).
@@ -3079,9 +3079,9 @@ A name that is due returns as a case the learner has not seen, next to a case of
   - Why not **“Working people, against those who own the businesses”**: A bank and its customers are in the background, and a text could take the customers’ side against the bank. This one only gives the terms.
 - If you miss: “The answer is **No side named.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **Working people, against those who own the businesses**: the “why not” line above. Then the lines from the card that compared the two: Both can be about a workplace, and both can mention wages, bosses and rotas. **“Working people, against those who own the businesses”** takes the side of the workers against the owners. **“No side named”** takes no side. It says only what will happen, or who is in charge. Does the text take the workers’ side against the owners? Or does it only say what is to be done, or who decides?
-  - If you chose **The nation, or its ordinary people**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can come from a ruler’s mouth, and both can speak of power and of who is in charge. **“The nation, or its ordinary people”** speaks for a people and puts it first. **“No side named”** says who holds power and how they keep it, or how one practical matter will be handled, and speaks for no people at all. A ruler’s methods are not a side. Does the text speak for one people and put it first? Or does it only say who is in charge and how they keep power, or what will happen?
-  - If you chose **Old ways of faith, family and custom**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a church, a parish, a village custom or a home matter. **“Old ways of faith, family and custom”** holds up a faith, a custom or an old order as what should guide. **“No side named”** deals with one practical matter, such as who will repair the church roof or when the bells ring, and says nothing about what should guide anyone. Does the text hold up old ways as what should guide? Or does it only handle one practical matter?
-  - If you chose **Rights and fair treatment for everyone**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about forms, appeals, services and fair process. **“Rights and fair treatment for everyone”** says that something is owed to every person, and puts that first. **“No side named”** says only how one practical matter will be handled: who to write to, by when, at what cost. Does the text say that every person is owed something? Or does it only say how one thing is to be done?
+  - If you chose **The nation, or its ordinary people**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can come from a ruler’s mouth, and both can speak of power and of who is in charge. **“The nation, or its ordinary people”** speaks for a people and puts it first. **“No side named”** says who holds power and how they keep it, or how one practical matter will be handled, and speaks for no people at all. A ruler’s methods are not a side. Does the text speak for one people and put it first? Or does it only say who is in charge and how they keep power, or what will happen?
+  - If you chose **Old ways of faith, family and custom**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a church, a parish, a village custom or a home matter. **“Old ways of faith, family and custom”** holds up a faith, a custom or an old order as what should guide. **“No side named”** deals with one practical matter, such as who will repair the church roof or when the bells ring, and says nothing about what should guide anyone. Does the text hold up old ways as what should guide? Or does it only handle one practical matter?
+  - If you chose **Rights and fair treatment for everyone**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about forms, appeals, services and fair process. **“Rights and fair treatment for everyone”** says that something is owed to every person, and puts that first. **“No side named”** says only how one practical matter will be handled: who to write to, by when, at what cost. Does the text say that every person is owed something? Or does it only say how one thing is to be done?
 - What would make it a different name: If the text had said that the bank’s owners keep the interest while the savers are left with nothing, and had stood with the savers, it would be **“Working people, against those who own the businesses”**.
 - Taught on: “Who rules, or one practical matter, and no side” (one tap opens the card).
 
@@ -3102,11 +3102,11 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **No side named.**” The text says who decides and how: “border crossings are closed after dark” and “The Commissioner will decide when they reopen, and no appeal will be heard”. It names no people it speaks for and no side.
   - Why not **“The nation, or its ordinary people”**: Borders, soldiers and a ruler who allows no appeal are what texts for the nation can sound like. But this text never says whom it speaks for.
 - If you miss: “The answer is **No side named.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **Working people, against those who own the businesses**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a workplace, and both can mention wages, bosses and rotas. **“Working people, against those who own the businesses”** takes the side of the workers against the owners. **“No side named”** takes no side. It says only what will happen, or who is in charge. Does the text take the workers’ side against the owners? Or does it only say what is to be done, or who decides?
+  - If you chose **Working people, against those who own the businesses**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a workplace, and both can mention wages, bosses and rotas. **“Working people, against those who own the businesses”** takes the side of the workers against the owners. **“No side named”** takes no side. It says only what will happen, or who is in charge. Does the text take the workers’ side against the owners? Or does it only say what is to be done, or who decides?
   - If you chose **The nation, or its ordinary people**: the “why not” line above. Then the lines from the card that compared the two: Both can come from a ruler’s mouth, and both can speak of power and of who is in charge. **“The nation, or its ordinary people”** speaks for a people and puts it first. **“No side named”** says who holds power and how they keep it, or how one practical matter will be handled, and speaks for no people at all. A ruler’s methods are not a side. Does the text speak for one people and put it first? Or does it only say who is in charge and how they keep power, or what will happen?
-  - If you chose **Old ways of faith, family and custom**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a church, a parish, a village custom or a home matter. **“Old ways of faith, family and custom”** holds up a faith, a custom or an old order as what should guide. **“No side named”** deals with one practical matter, such as who will repair the church roof or when the bells ring, and says nothing about what should guide anyone. Does the text hold up old ways as what should guide? Or does it only handle one practical matter?
-  - If you chose **Rights and fair treatment for everyone**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about forms, appeals, services and fair process. **“Rights and fair treatment for everyone”** says that something is owed to every person, and puts that first. **“No side named”** says only how one practical matter will be handled: who to write to, by when, at what cost. Does the text say that every person is owed something? Or does it only say how one thing is to be done?
-- This case may have brought back *The bridge speech*, which was **“The nation, or its ordinary people”**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose **Old ways of faith, family and custom**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a church, a parish, a village custom or a home matter. **“Old ways of faith, family and custom”** holds up a faith, a custom or an old order as what should guide. **“No side named”** deals with one practical matter, such as who will repair the church roof or when the bells ring, and says nothing about what should guide anyone. Does the text hold up old ways as what should guide? Or does it only handle one practical matter?
+  - If you chose **Rights and fair treatment for everyone**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about forms, appeals, services and fair process. **“Rights and fair treatment for everyone”** says that something is owed to every person, and puts that first. **“No side named”** says only how one practical matter will be handled: who to write to, by when, at what cost. Does the text say that every person is owed something? Or does it only say how one thing is to be done?
+- This case may have brought back *The bridge speech*, which was **“The nation, or its ordinary people”**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If the order had said that the borders are closed to keep the one people of this country whole, and that the people comes first, it would be **“The nation, or its ordinary people”**.
 - Taught on: “Who rules, or one practical matter, and no side” (one tap opens the card).
 

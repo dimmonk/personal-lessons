@@ -1,15 +1,15 @@
 # Learner view: Basic Math, Unit Three: A missing number, from a formula, a rate or totals
 
-*Four kinds of problem with a number missing, and a procedure worked out step by step for each.* Unit revision 1, built to lesson standard 1, status: draft.
+*Four kinds of problem with a number missing, and a procedure worked out step by step for each.* Unit revision 2, built to lesson standard 1, status: draft.
 
 This file is generated from the data files by `tools/render-learner-view.mjs`. It shows every screen in the order a learner meets it. In the app one card is on screen at a time and the learner moves on when ready.
 
-- **Bold text in quotation marks** is the key’s own wording, printed from `key.js`. Bold names are the outcome names from the same file. Neither is typed anywhere else. "What you must be able to point to" lines and "How to tell them apart" lines are also printed from one place each (the key and the look-alike ledger).
+- **Bold text in quotation marks** is the subject’s own wording for its questions and answers, written once and printed everywhere. Bold names are the names, written once in the same place. Neither is typed anywhere else. "What you must be able to point to" lines and "How to tell them apart" lines are also printed from one place each (the subject’s questions and the pairs it compares).
 - ⟦Double brackets⟧ show the words the app marks in a case (one highlight style everywhere).
 - The line in italics under each heading is the app’s top bar. The line in square brackets after it is for reviewers and is not shown to the learner.
 - Headings, prompt wording and stage instructions that are the same in every unit are the app’s wording, not this unit’s.
 - "Shown as soon as you …" is what appears the moment the learner answers. Nothing is hidden behind a second tap the first time a case is met, or after a miss.
-- After every answer the app shows, in this order: the right answer in the key’s words; the reason, quoting the marked words; for a name, why the nearest wrong name fails; after a miss, a line about the answer the learner chose; and last a link to the card that taught it. Where a line about the learner’s own choice is not written for the case, the app builds it from the key, and this file says so in place of repeating it.
+- After every answer the app shows, in this order: the right answer; the reason, quoting the marked words; for a name, why the nearest wrong name fails; after a miss, a line about the answer the learner chose; and last a link to the card that taught it. Where a line about the learner’s own choice is not written for the case, the app builds it from the answers’ own wording, and this file says so in place of repeating it.
 
 ---
 
@@ -17,7 +17,7 @@ This file is generated from the data files by `tools/render-learner-view.mjs`. I
 
 ### 1. Four kinds of problem with a number missing, and a procedure for each
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 1 of 44*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 1 of 44*
 
 [reviewers only: card kind `orient`, id `orient-unknown`]
 
@@ -29,9 +29,9 @@ Unit One’s first question gave the same answer to all four: **“A missing num
 
 The words from the last unit hold here. A procedure is the fixed set of steps that solves one kind of problem, and it gives the right answer whatever the numbers are. The working is the procedure carried out on one problem, with every number written down. A step is one stage of the working, named by what it is for. The arithmetic can be done on a calculator: what this unit practises is which steps to take, and why.
 
-The four kinds are taught in the order of what they give: a calculation and the result it came to, a rate, two facts, and a calculation that has the missing number in it twice. Each is taught as in the last unit: first a problem of the kind and the idea behind its procedure, then two worked problems in different parts of life with every step computed, and then problems that you finish yourself. Two of the kinds can pass for another, and a card for each shows how. When all four have been taught, the key’s question gets its own card, and then the drill mixes all four, with problems from the earlier units among them.
+The four kinds are taught in the order of what they give: a calculation and the result it came to, a rate, two facts, and a calculation that has the missing number in it twice. Each is taught as in the last unit: first a problem of the kind and the idea behind its procedure, then two worked problems in different parts of life with every step computed, and then problems that you finish yourself. Two of the kinds can pass for another, and a card for each shows how. When all four have been taught, the question gets its own card, and then the drill mixes all four, with problems from the earlier units among them.
 
-**What Unit One taught, in one place.** The key’s first question is **“What does the problem ask you to work out?”** Its answers:
+**What Unit One taught, in one place.** The first question is **“What does the problem ask you to work out?”** Its answers:
 
 - **“How whole numbers split, repeat or are made up”**: give this answer when the problem is about whole numbers and asks whether they split into equal groups with nothing left over, what is left over, what a number is made of, when two things that repeat happen together, where a count ends on a loop such as the days of a week, or whether a number can be written exactly.
 - **“A missing number, from a formula, a rate or totals”**: give this answer when the problem leaves out one number, or two, and gives a formula, a rate such as so much for each thing, or totals that the missing number must fit. **This unit is about these cases.**
@@ -39,11 +39,11 @@ The four kinds are taught in the order of what they give: a calculation and the 
 - **“How many ways something can turn out, or how likely it is”**: give this answer when the problem asks how many different ways something can be chosen or ordered, or how likely it is that at least one of several things happens, or that a test result is right.
 - **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”**: give this answer when the problem has a right-angled triangle, or two things of exactly the same shape at different sizes, and asks for a length, an area or a volume, or for how many times more area or volume one has than the other.
 
-Unit One also taught that two things are marked separately: the name you give a case, and your route to it, meaning the answers you gave to the key’s questions on the way.
+Two things are marked separately: the name you give a case, and your answers to the questions on the way to it.
 
 *(One tap on any of these lines opens the card in Unit One that taught it.)*
 
-**The part of the key this unit teaches.** This is a preview. You are not expected to follow it yet: every line is explained on the cards that come next. The question and its answers are in the key’s own words. Beside each answer, in plain words, is the thing it leads to. There are four of them, and each gets its name when it is taught.
+**The questions this unit teaches.** This is a preview. You are not expected to follow it yet: every line is explained on the cards that come next. The question and its answers are worded exactly as you will meet them. Beside each answer, in plain words, is the thing it leads to. There are four of them, and each gets its name when it is taught.
 
 What does the problem give that the missing number must fit?
 - A formula, and the result it came to → a formula worked backwards
@@ -70,7 +70,7 @@ Each name is taught through cases first. After every step you answer one questio
 
 ### 2. A formula worked backwards
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 2 of 44*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 2 of 44*
 
 [reviewers only: card kind `meet`, id `meet-rearr`]
 
@@ -95,9 +95,9 @@ Notice what decides the kind. It is not that the problem is about a field, or th
 
 **What you must be able to point to.** A formula, or a calculation described in words, the result it came to, and one number in it that the problem does not give. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What does the problem give that the missing number must fit?”**
+**The question:** **“What does the problem give that the missing number must fit?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“A formula, and the result it came to”**
+**Its answer for a case like this one:** **“A formula, and the result it came to”**
 
 A problem like this is **Rearranging a formula**. A *formula* is a calculation written out once, with a word or a letter where a number goes, and here it is described in words. The name says what is done to it: it is rearranged so that the missing number is on its own, which is the same as working the calculation backwards from its result.
 
@@ -105,7 +105,7 @@ You may also hear this called “changing the subject of a formula” or “solv
 
 ### 3. Rearranging a formula: the same thing in a different story
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 3 of 44*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 3 of 44*
 
 [reviewers only: card kind `again`, id `again-rearr`]
 
@@ -138,7 +138,7 @@ That is all you point to, and it is why one name covers a fencing firm and a kni
 
 ### 4. Story and structure, now that there is something to solve
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 4 of 44*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 4 of 44*
 
 [reviewers only: card kind `lens`, id `lens-procedure`]
 
@@ -150,13 +150,13 @@ The numbers change the working but never the steps. A problem of one kind with b
 
 Two things change on purpose from card to card: the words of the question (“how long”, “how much”, “how many”) and the setting. None of them tells you the kind. Only what the problem gives for the missing number to fit does.
 
-**Stays the same from case to case:** the question the key asks of every problem in this unit: **“What does the problem give that the missing number must fit?”**
+**Stays the same from case to case:** the question asked of every problem in this unit: **“What does the problem give that the missing number must fit?”**
 
 **Changes on purpose:** the story; the people; the size of the numbers; how many things are done to the missing number; the words of the question (“how long”, “how much”, “how many”).
 
 ### 5. Rearranging a formula: what it is like
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 5 of 44*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 5 of 44*
 
 [reviewers only: card kind `portrait`, id `portrait-rearr`]
 
@@ -187,7 +187,7 @@ In your own life you meet this when you know a final price and want the price be
 
 ### 6. A question about a new case
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 6 of 44*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 6 of 44*
 
 [reviewers only: card kind `check`, id `check-rearr`]
 
@@ -202,7 +202,7 @@ The pieces you can tap:
 
 **Shown as soon as you tap**
 
-- If you are right: “Right: ‘A hostel works out how many beds to book like this: the number of guests, divided by 2, plus 3 spares.’.” The words “the number of guests, divided by 2, plus 3 spares” and “It booked 11 beds” give a calculation and the result it came to, and one number in the calculation is left out. Each thing done to that number can be undone, which is **“A formula, and the result it came to”**. The key’s answer for this case is **“A formula, and the result it came to”**, and the name is **Rearranging a formula**.
+- If you are right: “Right: ‘A hostel works out how many beds to book like this: the number of guests, divided by 2, plus 3 spares.’.” The words “the number of guests, divided by 2, plus 3 spares” and “It booked 11 beds” give a calculation and the result it came to, and one number in the calculation is left out. Each thing done to that number can be undone, which is **“A formula, and the result it came to”**. The answer for this case is **“A formula, and the result it came to”**, and the name is **Rearranging a formula**.
 - If you miss: “The words are ‘A hostel works out how many beds to book like this: the number of guests, divided by 2, plus 3 spares.’.” The same reason follows, and then a line about the piece you tapped:
   - “It booked 11 beds.”: That gives a number to work with, and it matters, but it is not the part you are asked to tap.
   - “How many guests are coming?”: That is the question. The words you are asked to tap are in another sentence.
@@ -210,7 +210,7 @@ The pieces you can tap:
 
 ### 7. Worked: the list price of a jacket
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 7 of 44*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 7 of 44*
 
 [reviewers only: card kind `solved`, id `solved-rearr-1`]
 
@@ -259,7 +259,7 @@ The list price was €53. Taking €8 off gives €45, and multiplying by 1.2 to
 
 ### 8. Worked again: the fourth long jump
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 8 of 44*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 8 of 44*
 
 [reviewers only: card kind `solved`, id `solved-rearr-2`]
 
@@ -308,7 +308,7 @@ Dev’s fourth jump must be 16 m. The four jumps then total 52 m, and 52 ÷ 4 = 
 
 ### 9. A question about a new case
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 9 of 44*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 9 of 44*
 
 [reviewers only: card kind `check`, id `check-rearr-last`]
 
@@ -341,7 +341,7 @@ Dev’s fourth jump must be 16 m. The four jumps then total 52 m, and 52 ÷ 4 = 
 
 ### 10. A question about a new case
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 10 of 44*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 10 of 44*
 
 [reviewers only: card kind `check`, id `check-rearr-whole`]
 
@@ -374,7 +374,7 @@ Dev’s fourth jump must be 16 m. The four jumps then total 52 m, and 52 ÷ 4 = 
 
 ### 11. A rate scaled to a new amount
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 11 of 44*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 11 of 44*
 
 [reviewers only: card kind `meet`, id `meet-prop`]
 
@@ -399,9 +399,9 @@ Notice what decides the kind. It is not the recipe or the grams. It is that the 
 
 **What you must be able to point to.** So much for so many of something, a new amount of that thing, and the question what the first amount becomes for the new amount. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What does the problem give that the missing number must fit?”**
+**The question:** **“What does the problem give that the missing number must fit?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“A rate, and a new amount to scale it to”**
+**Its answer for a case like this one:** **“A rate, and a new amount to scale it to”**
 
 A problem like this is **Proportion**. The name says what the procedure keeps: the two numbers stay in step, so that whatever happens to one happens to the other.
 
@@ -409,7 +409,7 @@ You may also hear this called “scaling by a rate” or “the unitary method�
 
 ### 12. Proportion: the same thing in a different story
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 12 of 44*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 12 of 44*
 
 [reviewers only: card kind `again`, id `again-prop`]
 
@@ -440,7 +440,7 @@ That is all you point to, and it is why one name covers a recipe and a school tr
 
 ### 13. Proportion: what it is like
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 13 of 44*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 13 of 44*
 
 [reviewers only: card kind `portrait`, id `portrait-prop`]
 
@@ -471,7 +471,7 @@ In your own life you meet this when you stretch or shrink a recipe, when you wor
 
 ### 14. A question about a new case
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 14 of 44*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 14 of 44*
 
 [reviewers only: card kind `check`, id `check-prop`]
 
@@ -485,14 +485,14 @@ The pieces you can tap:
 
 **Shown as soon as you tap**
 
-- If you are right: “Right: ‘A print shop uses 2 ink cartridges for every 1,200 pages it prints.’.” The words “uses 2 ink cartridges for every 1,200 pages it prints” and “for 3,000 pages” give so much for so many, 2 cartridges for every 1,200 pages, and a new amount of pages, 3,000. Nothing is added on top and no calculation has a result to undo, so the key’s answer is **“A rate, and a new amount to scale it to”**. The key’s answer for this case is **“A rate, and a new amount to scale it to”**, and the name is **Proportion**.
+- If you are right: “Right: ‘A print shop uses 2 ink cartridges for every 1,200 pages it prints.’.” The words “uses 2 ink cartridges for every 1,200 pages it prints” and “for 3,000 pages” give so much for so many, 2 cartridges for every 1,200 pages, and a new amount of pages, 3,000. Nothing is added on top and no calculation has a result to undo, so the answer is **“A rate, and a new amount to scale it to”**. The answer for this case is **“A rate, and a new amount to scale it to”**, and the name is **Proportion**.
 - If you miss: “The words are ‘A print shop uses 2 ink cartridges for every 1,200 pages it prints.’.” The same reason follows, and then a line about the piece you tapped:
   - “How many cartridges does it need for 3,000 pages?”: That is the question. The words you are asked to tap are in another sentence.
 - Taught on: “A rate scaled to a new amount” (one tap opens the card).
 
 ### 15. Worked: the price of 12 kg of apples
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 15 of 44*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 15 of 44*
 
 [reviewers only: card kind `solved`, id `solved-prop-1`]
 
@@ -541,7 +541,7 @@ More apples must cost more, so the answer has to be more than €6, and €9 is.
 
 ### 16. Worked again: the posts for a shorter fence
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 16 of 44*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 16 of 44*
 
 [reviewers only: card kind `solved`, id `solved-prop-2`]
 
@@ -590,7 +590,7 @@ A 15 m fence needs 18 posts.
 
 ### 17. A question about a new case
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 17 of 44*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 17 of 44*
 
 [reviewers only: card kind `check`, id `check-prop-last`]
 
@@ -623,7 +623,7 @@ A 15 m fence needs 18 posts.
 
 ### 18. A question about a new case
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 18 of 44*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 18 of 44*
 
 [reviewers only: card kind `check`, id `check-prop-whole`]
 
@@ -650,7 +650,7 @@ A 15 m fence needs 18 posts.
 
 ### 19. Rearranging a formula or Proportion: telling them apart
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 19 of 44*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 19 of 44*
 
 [reviewers only: card kind `lookalike`, id `look-rearr-prop`]
 
@@ -672,9 +672,9 @@ The first two kinds are easy to mix up, because both have a few numbers and a pr
 
 **Why this one and not the other**
 
-In Case A Jon buys three loaves and a pastry, and pays €11 in all. The loaves and the pastry are put together in one calculation, and the question is what one loaf cost. There is a result to undo, and the key’s answer is **“A formula, and the result it came to”**.
+In Case A Jon buys three loaves and a pastry, and pays €11 in all. The loaves and the pastry are put together in one calculation, and the question is what one loaf cost. There is a result to undo, and the answer is **“A formula, and the result it came to”**.
 
-In Case B the bakery sells four loaves for €12, and the question is what ten loaves cost. There is a rate and a new amount, and nothing else, and the key’s answer is **“A rate, and a new amount to scale it to”**.
+In Case B the bakery sells four loaves for €12, and the question is what ten loaves cost. There is a rate and a new amount, and nothing else, and the answer is **“A rate, and a new amount to scale it to”**.
 
 Both have a loaf, a price and a few small numbers, and the working for one can look like the working for the other. What differs is what is given: a calculation and its result, or a rate and a new amount.
 
@@ -682,7 +682,7 @@ Both have a loaf, a price and a few small numbers, and the working for one can l
 
 Is there a calculation with a result it came to, or anything fixed added on top of the price for each one? Or is there only a rate, and a new amount of what the rate is for?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Rearranging a formula | Proportion |
 |---|---|---|
@@ -693,7 +693,7 @@ Is there a calculation with a result it came to, or anything fixed added on top 
 
 ### 20. A price for each unit, with a charge on top
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 20 of 44*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 20 of 44*
 
 [reviewers only: card kind `exception`, id `exc-bill`]
 
@@ -703,7 +703,7 @@ The last card kept the two kinds apart with a loaf in each. Real problems are le
 
 > An electricity bill has a standing charge of €8, plus 25 cents for each unit of electricity used. This month’s bill is €38. How many units were used?
 
-The bill gives 25 cents for each unit of electricity, which is so much for so many, and it asks for a number of units. That is what you point to for **“A rate, and a new amount to scale it to”**. Yet the key’s answer for this case is **“A formula, and the result it came to”**.
+The bill gives 25 cents for each unit of electricity, which is so much for so many, and it asks for a number of units. That is what you point to for **“A rate, and a new amount to scale it to”**. Yet the answer for this case is **“A formula, and the result it came to”**.
 
 **You are asked:** This looks like **Proportion**. Before you read why it is **Rearranging a formula**, tap the words in the case that settle it.
 
@@ -722,17 +722,17 @@ Look at what else the bill contains. There is a standing charge of €8 that doe
 
 And look at what the problem gives. There is no new amount to scale a rate to. There is a result, the bill of €38, and the question is what number of units went into the calculation to produce it. That is working backwards from a result.
 
-So the problem shows both: a price for each thing, which looks like a rate, and a fixed amount added on top, which makes it a calculation. When it shows both, the key’s answer is **“A formula, and the result it came to”**.
+So the problem shows both: a price for each thing, which looks like a rate, and a fixed amount added on top, which makes it a calculation. When it shows both, the answer is **“A formula, and the result it came to”**.
 
 **How to tell them apart**
 
 Is there a calculation with a result it came to, or anything fixed added on top of the price for each one? Or is there only a rate, and a new amount of what the rate is for?
 
-When a case shows both **“A rate, and a new amount to scale it to”** and a fixed amount added on top of the rate, such as a call-out fee or a standing charge, the key’s answer is **“A formula, and the result it came to”**.
+When a case shows both **“A rate, and a new amount to scale it to”** and a fixed amount added on top of the rate, such as a call-out fee or a standing charge, the answer is **“A formula, and the result it came to”**.
 
-This is the key’s own decision, and the line it draws is a fine one. A fixed amount on top of a rate, such as a call-out fee or a standing charge, makes a calculation. Without the €8, the same bill would be a rate, 25 cents for each unit, and the question would need a number of units to scale it to.
+This is a decision made for the questions, and the line it draws is a fine one. A fixed amount on top of a rate, such as a call-out fee or a standing charge, makes a calculation. Without the €8, the same bill would be a rate, 25 cents for each unit, and the question would need a number of units to scale it to.
 
-If the problem had said only that 25 cents is charged for each unit, and asked for the cost of 120 units, there would be a rate and a new amount, and nothing else, and the key’s answer would be **“A rate, and a new amount to scale it to”**.
+If the problem had said only that 25 cents is charged for each unit, and asked for the cost of 120 units, there would be a rate and a new amount, and nothing else, and the answer would be **“A rate, and a new amount to scale it to”**.
 
 
 *End of part 2. You can stop here; your place is kept. Next: part 3, Two numbers to find, and two facts to find them from.*
@@ -743,7 +743,7 @@ If the problem had said only that 25 cents is charged for each unit, and asked f
 
 ### 21. Two missing numbers, two facts
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 21 of 44*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 21 of 44*
 
 [reviewers only: card kind `meet`, id `meet-simul`]
 
@@ -768,9 +768,9 @@ Notice what decides the kind. It is that two numbers are left out and two separa
 
 **What you must be able to point to.** Two numbers the problem does not give, and two separate facts about them, such as how many there are in all and what they come to in all. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What does the problem give that the missing number must fit?”**
+**The question:** **“What does the problem give that the missing number must fit?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“Two facts that two missing numbers must both fit”**
+**Its answer for a case like this one:** **“Two facts that two missing numbers must both fit”**
 
 A problem like this is **Simultaneous equations**. The two facts are two equations, an equation being a statement that two amounts are equal, and the missing numbers are worked out together, at the same time.
 
@@ -778,7 +778,7 @@ You may also hear this called “two equations with two unknowns” or “a syst
 
 ### 22. Simultaneous equations: the same thing in a different story
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 22 of 44*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 22 of 44*
 
 [reviewers only: card kind `again`, id `again-simul`]
 
@@ -809,7 +809,7 @@ That is all you point to, and it is why one name covers a sports club and a clin
 
 ### 23. Simultaneous equations: what it is like
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 23 of 44*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 23 of 44*
 
 [reviewers only: card kind `portrait`, id `portrait-simul`]
 
@@ -840,7 +840,7 @@ In your own life you meet this when a till total and an item count have to be sp
 
 ### 24. A question about a new case
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 24 of 44*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 24 of 44*
 
 [reviewers only: card kind `check`, id `check-simul`]
 
@@ -854,14 +854,14 @@ The pieces you can tap:
 
 **Shown as soon as you tap**
 
-- If you are right: “Right: ‘A stall sold 11 plants, some small at €3 each and some large at €8 each, and took €58 in all.’.” In “sold 11 plants, some small at €3 each and some large at €8 each” and “took €58 in all”, two numbers are missing, how many small and how many large, and two facts are stated about them: 11 plants in all and €58 in all. That is **“Two facts that two missing numbers must both fit”**. The key’s answer for this case is **“Two facts that two missing numbers must both fit”**, and the name is **Simultaneous equations**.
+- If you are right: “Right: ‘A stall sold 11 plants, some small at €3 each and some large at €8 each, and took €58 in all.’.” In “sold 11 plants, some small at €3 each and some large at €8 each” and “took €58 in all”, two numbers are missing, how many small and how many large, and two facts are stated about them: 11 plants in all and €58 in all. That is **“Two facts that two missing numbers must both fit”**. The answer for this case is **“Two facts that two missing numbers must both fit”**, and the name is **Simultaneous equations**.
 - If you miss: “The words are ‘A stall sold 11 plants, some small at €3 each and some large at €8 each, and took €58 in all.’.” The same reason follows, and then a line about the piece you tapped:
   - “How many of each size did it sell?”: That is the question. The words you are asked to tap are in another sentence.
 - Taught on: “Two missing numbers, two facts” (one tap opens the card).
 
 ### 25. Worked: pens and notebooks for an office
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 25 of 44*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 25 of 44*
 
 [reviewers only: card kind `solved`, id `solved-simul-1`]
 
@@ -918,7 +918,7 @@ The office bought 13 pens and 7 notebooks.
 
 ### 26. Worked again: bags of cement on a site
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 26 of 44*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 26 of 44*
 
 [reviewers only: card kind `solved`, id `solved-simul-2`]
 
@@ -975,7 +975,7 @@ There were 10 bags of 25 kg and 4 bags of 40 kg.
 
 ### 27. A question about a new case
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 27 of 44*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 27 of 44*
 
 [reviewers only: card kind `check`, id `check-simul-last`]
 
@@ -1012,7 +1012,7 @@ There were 10 bags of 25 kg and 4 bags of 40 kg.
 
 ### 28. A question about a new case
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 28 of 44*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 28 of 44*
 
 [reviewers only: card kind `check`, id `check-simul-whole`]
 
@@ -1041,7 +1041,7 @@ There were 10 bags of 25 kg and 4 bags of 40 kg.
 
 ### 29. Rearranging a formula or Simultaneous equations: telling them apart
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 29 of 44*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 29 of 44*
 
 [reviewers only: card kind `lookalike`, id `look-rearr-simul`]
 
@@ -1063,9 +1063,9 @@ The first and third kinds look alike when the numbers are small and the story is
 
 **Why this one and not the other**
 
-In Case A Mia buys 5 plants and some pots, and pays €73. Only one number is left out, how many pots, and one calculation has a result to undo: 5 plants at €9 and some pots at €4 make €73. The key’s answer is **“A formula, and the result it came to”**.
+In Case A Mia buys 5 plants and some pots, and pays €73. Only one number is left out, how many pots, and one calculation has a result to undo: 5 plants at €9 and some pots at €4 make €73. The answer is **“A formula, and the result it came to”**.
 
-In Case B the garden centre sold 12 items in all, plants and pots, for €73, and nobody says how many of either. Two numbers are left out, and there are two facts, the count and the total. The key’s answer is **“Two facts that two missing numbers must both fit”**.
+In Case B the garden centre sold 12 items in all, plants and pots, for €73, and nobody says how many of either. Two numbers are left out, and there are two facts, the count and the total. The answer is **“Two facts that two missing numbers must both fit”**.
 
 The prices and the total are the same in both, and the answers are the same too: 5 plants and 7 pots. What differs is how many numbers the problem leaves out, one or two, and so how many facts are needed to find them.
 
@@ -1073,7 +1073,7 @@ The prices and the total are the same in both, and the answers are the same too:
 
 How many numbers are left out, and how many separate facts are given about them? One number and one result, or two numbers and two facts?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Rearranging a formula | Simultaneous equations |
 |---|---|---|
@@ -1090,7 +1090,7 @@ How many numbers are left out, and how many separate facts are given about them?
 
 ### 30. A number multiplied by itself
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 30 of 44*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 30 of 44*
 
 [reviewers only: card kind `term`, id `term-squared`]
 
@@ -1113,7 +1113,7 @@ Two things are worth holding on to. Multiplying a number by itself is not doubli
 
 ### 31. A missing number that is squared
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 31 of 44*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 31 of 44*
 
 [reviewers only: card kind `meet`, id `meet-quad`]
 
@@ -1138,9 +1138,9 @@ Notice what decides the kind. It is that the missing number is multiplied by its
 
 **What you must be able to point to.** A formula or a fact in which the missing number is multiplied by itself, and a result it must come to. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What does the problem give that the missing number must fit?”**
+**The question:** **“What does the problem give that the missing number must fit?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“A formula in which the missing number is multiplied by itself”**
+**Its answer for a case like this one:** **“A formula in which the missing number is multiplied by itself”**
 
 A problem like this is **Quadratic equation**. The name comes from an old word for a square: the missing number is multiplied by itself, as the sides of a square are.
 
@@ -1148,7 +1148,7 @@ You may also hear this called “a squared unknown”. That means the same thing
 
 ### 32. Quadratic equation: the same thing in a different story
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 32 of 44*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 32 of 44*
 
 [reviewers only: card kind `again`, id `again-quad`]
 
@@ -1179,7 +1179,7 @@ That is all you point to, and it is why one name covers a rug and a patio. The s
 
 ### 33. Quadratic equation: what it is like
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 33 of 44*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 33 of 44*
 
 [reviewers only: card kind `portrait`, id `portrait-quad`]
 
@@ -1210,7 +1210,7 @@ In your own life you meet this when a space has to fit an area and one side is l
 
 ### 34. A question about a new case
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 34 of 44*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 34 of 44*
 
 [reviewers only: card kind `check`, id `check-quad`]
 
@@ -1224,14 +1224,14 @@ The pieces you can tap:
 
 **Shown as soon as you tap**
 
-- If you are right: “Right: ‘A rectangular play area is 4 m longer than it is wide, and its area is 77 m².’.” The words “4 m longer than it is wide” and “its area is 77 m²” say that the length is the width plus 4, and the area is the width multiplied by the length, so the missing width is multiplied by itself as well as used on its own. That is **“A formula in which the missing number is multiplied by itself”**. The key’s answer for this case is **“A formula in which the missing number is multiplied by itself”**, and the name is **Quadratic equation**.
+- If you are right: “Right: ‘A rectangular play area is 4 m longer than it is wide, and its area is 77 m².’.” The words “4 m longer than it is wide” and “its area is 77 m²” say that the length is the width plus 4, and the area is the width multiplied by the length, so the missing width is multiplied by itself as well as used on its own. That is **“A formula in which the missing number is multiplied by itself”**. The answer for this case is **“A formula in which the missing number is multiplied by itself”**, and the name is **Quadratic equation**.
 - If you miss: “The words are ‘A rectangular play area is 4 m longer than it is wide, and its area is 77 m².’.” The same reason follows, and then a line about the piece you tapped:
   - “How wide is it?”: That is the question. The words you are asked to tap are in another sentence.
 - Taught on: “A missing number that is squared” (one tap opens the card).
 
 ### 35. Worked: the width of a banner
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 35 of 44*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 35 of 44*
 
 [reviewers only: card kind `solved`, id `solved-quad-1`]
 
@@ -1288,7 +1288,7 @@ The banner is 7 m wide and 10 m long: 7 × 10 = 70 m².
 
 ### 36. Worked again: two matching lawns
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 36 of 44*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 36 of 44*
 
 [reviewers only: card kind `solved`, id `solved-quad-2`]
 
@@ -1345,7 +1345,7 @@ Each lawn is 6 m wide and 12 m long. Together they cover 2 × 72 = 144 m².
 
 ### 37. A question about a new case
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 37 of 44*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 37 of 44*
 
 [reviewers only: card kind `check`, id `check-quad-last`]
 
@@ -1382,7 +1382,7 @@ Each lawn is 6 m wide and 12 m long. Together they cover 2 × 72 = 144 m².
 
 ### 38. A question about a new case
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 38 of 44*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 38 of 44*
 
 [reviewers only: card kind `check`, id `check-quad-whole`]
 
@@ -1411,7 +1411,7 @@ Each lawn is 6 m wide and 12 m long. Together they cover 2 × 72 = 144 m².
 
 ### 39. Rearranging a formula or Quadratic equation: telling them apart
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 39 of 44*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 39 of 44*
 
 [reviewers only: card kind `lookalike`, id `look-rearr-quad`]
 
@@ -1433,9 +1433,9 @@ The first and fourth kinds look alike whenever the story is a rectangle with an 
 
 **Why this one and not the other**
 
-In Case A the rug is 4 m wide and has an area of 28 m², and the question is how long it is. The missing length is used once, in width times length, so the calculation can be undone by dividing 28 by 4. The key’s answer is **“A formula, and the result it came to”**.
+In Case A the rug is 4 m wide and has an area of 28 m², and the question is how long it is. The missing length is used once, in width times length, so the calculation can be undone by dividing 28 by 4. The answer is **“A formula, and the result it came to”**.
 
-In Case B the rug is 3 m longer than it is wide and has an area of 28 m², and the question is how wide it is. The missing width is used twice, once as the width and once inside the length, so it is multiplied by itself, and the key’s answer is **“A formula in which the missing number is multiplied by itself”**.
+In Case B the rug is 3 m longer than it is wide and has an area of 28 m², and the question is how wide it is. The missing width is used twice, once as the width and once inside the length, so it is multiplied by itself, and the answer is **“A formula in which the missing number is multiplied by itself”**.
 
 Both are the same rug with the same area, and both come out at 4 and 7: Case A’s length is 7, and Case B’s width is 4 with a length of 7. What differs is whether the missing number appears once or twice.
 
@@ -1443,7 +1443,7 @@ Both are the same rug with the same area, and both come out at 4 and 7: Case A�
 
 Does the missing number appear once in the calculation, or is it multiplied by itself?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Rearranging a formula | Quadratic equation |
 |---|---|---|
@@ -1454,7 +1454,7 @@ Does the missing number appear once in the calculation, or is it multiplied by i
 
 ### 40. A profit rule that gives a result of zero
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 40 of 44*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 40 of 44*
 
 [reviewers only: card kind `exception`, id `exc-breakeven`]
 
@@ -1464,7 +1464,7 @@ The last card showed the two kinds apart with a rug in each. Real problems are l
 
 > A stall owner works out her profit, in tens of euros, from selling n crates of plums as 12 × n − n × n − 20. How many crates must she sell to just break even, with a profit of zero?
 
-The problem gives a *formula*, the stall owner’s profit rule, and the result it must come to, a profit of zero, and it leaves out a number that the rule used, the number of crates. That is what you point to for **“A formula, and the result it came to”**. Yet the key’s answer for this case is **“A formula in which the missing number is multiplied by itself”**.
+The problem gives a *formula*, the stall owner’s profit rule, and the result it must come to, a profit of zero, and it leaves out a number that the rule used, the number of crates. That is what you point to for **“A formula, and the result it came to”**. Yet the answer for this case is **“A formula in which the missing number is multiplied by itself”**.
 
 **You are asked:** This looks like **Rearranging a formula**. Before you read why it is **Quadratic equation**, tap the words in the case that settle it.
 
@@ -1481,17 +1481,17 @@ Look at where the missing number appears in the rule: 12 × n − n × n − 20.
 
 The two answers show it too. Two numbers of crates give a profit of zero: 2 crates (12 × 2 − 2 × 2 − 20 = 24 − 4 − 20 = 0) and 10 crates (12 × 10 − 10 × 10 − 20 = 120 − 100 − 20 = 0). Between them, from 3 to 9 crates, the profit is above zero, and past 10 crates it is below zero again. A calculation in which the missing number is used once never gives two answers.
 
-So the problem shows both: a rule with a result, and a missing number multiplied by itself. When it shows both, the key’s answer is **“A formula in which the missing number is multiplied by itself”**.
+So the problem shows both: a rule with a result, and a missing number multiplied by itself. When it shows both, the answer is **“A formula in which the missing number is multiplied by itself”**.
 
 **How to tell them apart**
 
 Does the missing number appear once in the calculation, or is it multiplied by itself?
 
-When a case shows both **“A formula, and the result it came to”** and the missing number multiplied by itself, the key’s answer is **“A formula in which the missing number is multiplied by itself”**.
+When a case shows both **“A formula, and the result it came to”** and the missing number multiplied by itself, the answer is **“A formula in which the missing number is multiplied by itself”**.
 
-This is the key’s decision, written as a tie-break: a missing number multiplied by itself needs its own procedure, so it wins over the rule whose result it is part of. Both answers, 2 and 10 crates, are real break-even points here, and no story rules either out. Recognising the kind is the point of this card; the working that finds 2 and 10 follows the steps of the procedure, with the minus sign in front of the number in front of n.
+This is a decision made for the questions, written as a tie-break: a missing number multiplied by itself needs its own procedure, so it wins over the rule whose result it is part of. Both answers, 2 and 10 crates, are real break-even points here, and no story rules either out. Recognising the kind is the point of this card; the working that finds 2 and 10 follows the steps of the procedure, with the minus sign in front of the number in front of n.
 
-If the rule had been 12 × n − 20, with no n × n, the missing number would appear once, and the key’s answer would be **“A formula, and the result it came to”**.
+If the rule had been 12 × n − 20, with no n × n, the missing number would appear once, and the answer would be **“A formula, and the result it came to”**.
 
 
 *End of part 4. You can stop here; your place is kept. Next: part 5, The question that tells them apart, then the drill.*
@@ -1502,17 +1502,17 @@ If the rule had been 12 × n − 20, with no n × n, the missing number would ap
 
 ### 41. The one question that tells the four kinds apart
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 41 of 44*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 41 of 44*
 
 [reviewers only: card kind `question`, id `q-a1`]
 
-At the foot of each kind’s first card you saw the key’s question with one answer under it. This card puts the question and its four answers in one place, as the key shows them, and says why the key asks it before any working.
+At the foot of each kind’s first card you saw the question with one answer under it. This card puts the question and its four answers in one place and says why it is asked before any working.
 
-**The key asks:** **“What does the problem give that the missing number must fit?”**
+**The question:** **“What does the problem give that the missing number must fit?”**
 
 **What it is for.** Tells apart four things a problem can give that a missing number must fit.
 
-**Its answers, exactly as the key shows them**
+**Its answers**
 
 Each answer leads to one name, and so rules out the other three.
 
@@ -1535,7 +1535,7 @@ What the missing number must fit decides how you work it out. A formula is undon
 
 A wrong procedure gives a number just as neat as the right one, and nothing in the number says that it is wrong. So the number cannot tell you which procedure to use, or whether you used the right one. Only the question can, and only the words of the problem can answer the question.
 
-That is why this question comes before any working, and why every problem in this unit starts with it. In this unit it is the only question after the key’s first one, so its answer leads straight to a name, and the name leads to the procedure. Your route is the answer to the first question and then this one.
+That is why this question comes before any working, and why every problem in this unit starts with it. In this unit it is the only question after the first one, so its answer leads straight to a name, and the name leads to the procedure. Your answers on the way are your answer to the first question and then your answer to this one.
 
 **How to answer it from a case**
 
@@ -1547,22 +1547,22 @@ Put your finger on the words that show it. If you cannot point to them, you do n
 
 **When two answers both seem to fit**
 
-Some problems show two of the answers at once, and then the key has a rule. A price for each thing with a fixed charge on top is a calculation to undo, so it gets the first answer and not the second. A rule with a result that has the missing number in it twice gets the fourth answer and not the first. Each of these has been shown on a card of its own in this unit, and the other pairs that people mix up have been set side by side too.
+Some problems show two of the answers at once, and then there is a rule. A price for each thing with a fixed charge on top is a calculation to undo, so it gets the first answer and not the second. A rule with a result that has the missing number in it twice gets the fourth answer and not the first. Each of these has been shown on a card of its own in this unit, and the other pairs that people mix up have been set side by side too.
 
-- Rearranging a formula or Proportion: Is there a calculation with a result it came to, or anything fixed added on top of the price for each one? Or is there only a rate, and a new amount of what the rate is for? When a case shows both **“A rate, and a new amount to scale it to”** and a fixed amount added on top of the rate, such as a call-out fee or a standing charge, the key’s answer is **“A formula, and the result it came to”**.
+- Rearranging a formula or Proportion: Is there a calculation with a result it came to, or anything fixed added on top of the price for each one? Or is there only a rate, and a new amount of what the rate is for? When a case shows both **“A rate, and a new amount to scale it to”** and a fixed amount added on top of the rate, such as a call-out fee or a standing charge, the answer is **“A formula, and the result it came to”**.
 - Rearranging a formula or Simultaneous equations: How many numbers are left out, and how many separate facts are given about them? One number and one result, or two numbers and two facts?
-- Rearranging a formula or Quadratic equation: Does the missing number appear once in the calculation, or is it multiplied by itself? When a case shows both **“A formula, and the result it came to”** and the missing number multiplied by itself, the key’s answer is **“A formula in which the missing number is multiplied by itself”**.
+- Rearranging a formula or Quadratic equation: Does the missing number appear once in the calculation, or is it multiplied by itself? When a case shows both **“A formula, and the result it came to”** and the missing number multiplied by itself, the answer is **“A formula in which the missing number is multiplied by itself”**.
 
 
 ### 42. A question about a new case
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 42 of 44*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 42 of 44*
 
 [reviewers only: card kind `check`, id `check-a1`]
 
 > A dye works needs 2 litres of dye for every 5 metres of cloth. How much dye is needed for 30 metres of cloth?
 
-**The key asks:** **“What does the problem give that the missing number must fit?”**
+**The question:** **“What does the problem give that the missing number must fit?”**
 
 - A formula, and the result it came to
 - A rate, and a new amount to scale it to
@@ -1571,7 +1571,7 @@ Some problems show two of the answers at once, and then the key has a rule. A pr
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **A rate, and a new amount to scale it to.**” The words “needs 2 litres of dye for every 5 metres of cloth” and “for 30 metres of cloth” give so much for so many, 2 litres of dye for every 5 metres of cloth, and a new amount of cloth, 30 metres. Nothing is added on top and no calculation has a result to undo, so the key’s answer is **“A rate, and a new amount to scale it to”**. This answer leads to **Proportion**.
+- If you are right: “Right: **A rate, and a new amount to scale it to.**” The words “needs 2 litres of dye for every 5 metres of cloth” and “for 30 metres of cloth” give so much for so many, 2 litres of dye for every 5 metres of cloth, and a new amount of cloth, 30 metres. Nothing is added on top and no calculation has a result to undo, so the answer is **“A rate, and a new amount to scale it to”**. This answer leads to **Proportion**.
 - If you miss: “The answer is **A rate, and a new amount to scale it to.**” The same reason follows, and then a line about the answer you chose:
   - If you chose **A formula, and the result it came to**: Give that answer when the problem gives a formula, or a calculation in words such as a fee plus so much for each unit, the result it came to, and every number in it but one. This case shows something else: the problem gives so much for so many of something, such as 300 g of rice for 4 people or 12 square metres for each litre, and a new amount of that thing; the rate is for each thing, not for each hour, month or year, and nothing is added on top.
   - If you chose **Two facts that two missing numbers must both fit**: Give that answer when the problem leaves out two numbers and gives two separate facts about them, such as how many there are in all and what they come to in all. This case shows something else: the problem gives so much for so many of something, such as 300 g of rice for 4 people or 12 square metres for each litre, and a new amount of that thing; the rate is for each thing, not for each hour, month or year, and nothing is added on top.
@@ -2024,9 +2024,9 @@ After each answer, look at the slip named behind a wrong choice. Every wrong cho
 - If you chose 15 bags of 3 kg and 15 bags of 5 kg: You chose **15 bags of 3 kg and 15 bags of 5 kg**. That is the answer you get when you use only the count fact and share the 30 out equally, which ignores the totals fact.
 - Taught on: “Worked: pens and notebooks for an office” (one tap opens the card).
 
-#### Last stage. No help. First answer the key’s questions in order and give the kind of problem it is. Then work the problem with that procedure and choose the answer.
+#### Last stage. No help. First answer the questions in order and say what kind of problem it is. Then work the problem with that procedure and choose the answer.
 
-Each question is shown with all of its answers from the key, in the key’s order, and the names offered are the four this unit teaches.
+Each question is shown with all of its answers, in order, and the names offered are the four this unit teaches.
 
 **Drill item 17 of 36**
 
@@ -2045,8 +2045,8 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - If you are right: “Right: **How whole numbers split, repeat or are made up.**” The problem asks whether 57 stamps can be shared evenly between albums: “every album holds the same number of stamps” and “Is it possible?”. There is nothing else to work out: no price, no time passing, no shape.
-- If you miss: “The answer is …”, the same reason, and then the line built from the key for the answer you chose.
-- Then, right or wrong: “This case leaves the part of the key you have been taught. The questions that follow this answer come in a part of the course you have not reached, so the case stops here.”
+- If you miss: “The answer is …”, the same reason, and then the line built from the answers’ own wording for the answer you chose.
+- Then, right or wrong: “The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.”
 
 **Drill item 18 of 36**
 
@@ -2065,8 +2065,8 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - If you are right: “Right: **How many ways something can turn out, or how likely it is.**” A drink, a main and a side are each picked from a list of their own, and the question asks how many different results that gives: “one drink out of 6, one main out of 5 and one side out of 4” and “How many different breakfasts can a customer build?”.
-- If you miss: “The answer is …”, the same reason, and then the line built from the key for the answer you chose.
-- Then, right or wrong: “This case leaves the part of the key you have been taught. The questions that follow this answer come in a part of the course you have not reached, so the case stops here.”
+- If you miss: “The answer is …”, the same reason, and then the line built from the answers’ own wording for the answer you chose.
+- Then, right or wrong: “The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.”
 
 **Drill item 19 of 36**
 
@@ -2093,7 +2093,7 @@ Each question is shown with all of its answers from the key, in the key’s orde
   A number can be split into equal groups only if two whole numbers multiply to give it, and the smaller of the two is never more than the *square root* of the number. So testing no further than the *square root* is enough. Testing the primes is enough too: a number that splits by 6 also splits by 2 and by 3, so leaving out the numbers that are not *prime number*s misses nothing.
 - If you chose Prime: none of 2, 3 and 5 fits it: You chose **Prime: none of 2, 3 and 5 fits it**. That is the answer you get when you stop testing at 5 and never try 7, though 7 × 7 = 49 is not more than 161.
 - If you chose Not prime: 5 × 32: You chose **Not prime: 5 × 32**. That is the answer you get when you read 161 = 5 × 32 + 1 as a fit and ignore the 1 left over, though a fit leaves nothing over.
-- What does the problem ask you to work out? **How whole numbers split, repeat or are made up.** The problem asks “wants to set them out on trays in equal rows, with more than one row and more than one cupcake in each row”, a question about whether one whole number can be shared out in equal groups. Nothing in it changes as time passes, no hidden number has to be found from a calculation, and there is no shape or choice, so the key’s first answer is **“How whole numbers split, repeat or are made up”**.
+- What does the problem ask you to work out? **How whole numbers split, repeat or are made up.** The problem asks “wants to set them out on trays in equal rows, with more than one row and more than one cupcake in each row”, a question about whether one whole number can be shared out in equal groups. Nothing in it changes as time passes, no hidden number has to be found from a calculation, and there is no shape or choice, so the answer to the first question is **“How whole numbers split, repeat or are made up”**.
 - What does the problem want to know about the number or numbers? **Whether one number splits into equal groups at all.** The words “wants to set them out on trays in equal rows, with more than one row and more than one cupcake in each row” give one number and ask only whether anything other than 1 and itself shares it out exactly. That is a yes or a no about one number, which is **“Whether one number splits into equal groups at all”**.
 - Why not **Prime factors**: The problem asks only whether the number splits at all, and a yes or a no is all that is wanted. **Prime factors** would be the name if it asked what the number is made of, or for every way it splits.
 
@@ -2122,7 +2122,7 @@ Each question is shown with all of its answers from the key, in the key’s orde
   A number can be split into equal groups only if two whole numbers multiply to give it, and the smaller of the two is never more than the *square root* of the number. So testing no further than the *square root* is enough. Testing the primes is enough too: a number that splits by 6 also splits by 2 and by 3, so leaving out the numbers that are not *prime number*s misses nothing.
 - If you chose Prime: none of 2, 3 and 5 fits it: You chose **Prime: none of 2, 3 and 5 fits it**. That is the answer you get when you stop testing at 5 and never try 7, though 7 × 7 = 49 is not more than 161.
 - If you chose Not prime: 5 × 32: You chose **Not prime: 5 × 32**. That is the answer you get when you read 161 = 5 × 32 + 1 as a fit and ignore the 1 left over, though a fit leaves nothing over.
-- What does the problem ask you to work out? **How whole numbers split, repeat or are made up.** The problem asks “wants to set them out on trays in equal rows, with more than one row and more than one cupcake in each row”, a question about whether one whole number can be shared out in equal groups. Nothing in it changes as time passes, no hidden number has to be found from a calculation, and there is no shape or choice, so the key’s first answer is **“How whole numbers split, repeat or are made up”**.
+- What does the problem ask you to work out? **How whole numbers split, repeat or are made up.** The problem asks “wants to set them out on trays in equal rows, with more than one row and more than one cupcake in each row”, a question about whether one whole number can be shared out in equal groups. Nothing in it changes as time passes, no hidden number has to be found from a calculation, and there is no shape or choice, so the answer to the first question is **“How whole numbers split, repeat or are made up”**.
 - What does the problem want to know about the number or numbers? **Whether one number splits into equal groups at all.** The words “wants to set them out on trays in equal rows, with more than one row and more than one cupcake in each row” give one number and ask only whether anything other than 1 and itself shares it out exactly. That is a yes or a no about one number, which is **“Whether one number splits into equal groups at all”**.
 - Why not **Prime factors**: The problem asks only whether the number splits at all, and a yes or a no is all that is wanted. **Prime factors** would be the name if it asked what the number is made of, or for every way it splits.
 
@@ -2143,8 +2143,8 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - If you are right: “Right: **How whole numbers split, repeat or are made up.**” The problem asks whether 57 stamps can be shared evenly between albums: “every album holds the same number of stamps” and “Is it possible?”. There is nothing else to work out: no price, no time passing, no shape.
-- If you miss: “The answer is …”, the same reason, and then the line built from the key for the answer you chose.
-- Then, right or wrong: “This case leaves the part of the key you have been taught. The questions that follow this answer come in a part of the course you have not reached, so the case stops here.”
+- If you miss: “The answer is …”, the same reason, and then the line built from the answers’ own wording for the answer you chose.
+- Then, right or wrong: “The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.”
 
 **Drill item 22 of 36**
 
@@ -2171,7 +2171,7 @@ Each question is shown with all of its answers from the key, in the key’s orde
   A number can be split into equal groups only if two whole numbers multiply to give it, and the smaller of the two is never more than the *square root* of the number. So testing no further than the *square root* is enough. Testing the primes is enough too: a number that splits by 6 also splits by 2 and by 3, so leaving out the numbers that are not *prime number*s misses nothing.
 - If you chose Prime: none of 2, 3 and 5 fits it: You chose **Prime: none of 2, 3 and 5 fits it**. That is the answer you get when you stop testing at 5 and never try 7, though 7 × 7 = 49 is not more than 161.
 - If you chose Not prime: 5 × 32: You chose **Not prime: 5 × 32**. That is the answer you get when you read 161 = 5 × 32 + 1 as a fit and ignore the 1 left over, though a fit leaves nothing over.
-- What does the problem ask you to work out? **How whole numbers split, repeat or are made up.** The problem asks “wants to set them out on trays in equal rows, with more than one row and more than one cupcake in each row”, a question about whether one whole number can be shared out in equal groups. Nothing in it changes as time passes, no hidden number has to be found from a calculation, and there is no shape or choice, so the key’s first answer is **“How whole numbers split, repeat or are made up”**.
+- What does the problem ask you to work out? **How whole numbers split, repeat or are made up.** The problem asks “wants to set them out on trays in equal rows, with more than one row and more than one cupcake in each row”, a question about whether one whole number can be shared out in equal groups. Nothing in it changes as time passes, no hidden number has to be found from a calculation, and there is no shape or choice, so the answer to the first question is **“How whole numbers split, repeat or are made up”**.
 - What does the problem want to know about the number or numbers? **Whether one number splits into equal groups at all.** The words “wants to set them out on trays in equal rows, with more than one row and more than one cupcake in each row” give one number and ask only whether anything other than 1 and itself shares it out exactly. That is a yes or a no about one number, which is **“Whether one number splits into equal groups at all”**.
 - Why not **Prime factors**: The problem asks only whether the number splits at all, and a yes or a no is all that is wanted. **Prime factors** would be the name if it asked what the number is made of, or for every way it splits.
 
@@ -2198,7 +2198,7 @@ Each question is shown with all of its answers from the key, in the key’s orde
   Each thing done to the missing number can be cancelled by its opposite, and the opposites have to be done in the reverse order, because the last thing done sits outside the others, as socks go on before shoes and come off after them. Undoing from the result back through the steps leads to the number you started from, and running the *formula* forward on the answer proves it.
 - If you chose €110: You chose **€110**. That is the answer you get when you undo the steps in the order they were done instead of in reverse, so what was done first is undone first.
 - If you chose €35: You chose **€35**. That is the answer you get when you divide by 2 once more instead of undoing it by multiplying by 2.
-- What does the problem ask you to work out? **A missing number, from a formula, a rate or totals.** The problem asks “take the full price, subtract €15, then halve what is left” and “What was the full price?”, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no *right-angled triangle* or copy at another size, so the key’s first answer is **“A missing number, from a formula, a rate or totals”**.
+- What does the problem ask you to work out? **A missing number, from a formula, a rate or totals.** The problem asks “take the full price, subtract €15, then halve what is left” and “What was the full price?”, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no *right-angled triangle* or copy at another size, so the answer to the first question is **“A missing number, from a formula, a rate or totals”**.
 - What does the problem give that the missing number must fit? **A formula, and the result it came to.** The words “take the full price, subtract €15, then halve what is left” and “costs €40 after the coupon” give a calculation and the result it came to, and one number in the calculation is left out. Each thing done to that number can be undone, which is **“A formula, and the result it came to”**.
 - Why not **Proportion**: There is a calculation to undo, with a result it came to, and not only a rate to scale. **Proportion** would be the name if the problem gave only so much for so many and a new amount of the same thing.
 - Taught on: “Worked: the list price of a jacket” (one tap opens the card).
@@ -2226,7 +2226,7 @@ Each question is shown with all of its answers from the key, in the key’s orde
   A rate says that its two numbers keep in step: with twice as many of one there are twice as many of the other. So finding how many times as big the new amount is, and making the other number that many times as big, keeps to the same rate. The check on the direction catches a rate scaled the wrong way round.
 - If you chose 12 litres of cleaner: You chose **12 litres of cleaner**. That is the answer you get when you divide 18 by 1.5 instead of multiplying, so the answer moves the wrong way: more rooms must mean more litres of cleaner.
 - If you chose 75 litres of cleaner: You chose **75 litres of cleaner**. That is the answer you get when you pair the new amount with 18 litres of cleaner, the other number in the rate, and not with 30 rooms, the number of the same thing.
-- What does the problem ask you to work out? **A missing number, from a formula, a rate or totals.** The problem asks “uses 18 litres of cleaner for every 30 rooms” and “How many litres are needed for 45 rooms?”, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no *right-angled triangle* or copy at another size, so the key’s first answer is **“A missing number, from a formula, a rate or totals”**.
+- What does the problem ask you to work out? **A missing number, from a formula, a rate or totals.** The problem asks “uses 18 litres of cleaner for every 30 rooms” and “How many litres are needed for 45 rooms?”, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no *right-angled triangle* or copy at another size, so the answer to the first question is **“A missing number, from a formula, a rate or totals”**.
 - What does the problem give that the missing number must fit? **A rate, and a new amount to scale it to.** The words “uses 18 litres of cleaner for every 30 rooms” and “for 45 rooms” give so much for so many of one thing, and a new amount of one of them, with nothing added on top and no calculation whose result has to be undone. That is **“A rate, and a new amount to scale it to”**.
 - Why not **Rearranging a formula**: The problem gives a rate and a new amount, with nothing added on top and no calculation whose result has to be undone. **Rearranging a formula** would be the name if a calculation, or a fixed amount on top of the rate, had a result to undo.
 - Taught on: “Worked: the price of 12 kg of apples” (one tap opens the card).
@@ -2256,7 +2256,7 @@ Each question is shown with all of its answers from the key, in the key’s orde
   One fact alone cannot fix two missing numbers, because many pairs fit it. Using the count fact to write one letter in terms of the other leaves a single letter in the totals fact, and a single letter can be solved. The other number then follows from the count fact, and the pair has to fit both facts.
 - If you chose 6 trays of rolls and 10 trays of buns: You chose **6 trays of rolls and 10 trays of buns**. That is the answer you get when you attach the two numbers to the wrong things: 6 belongs to the trays of buns, the thing that was named y, and not to the trays of rolls.
 - If you chose 8 trays of rolls and 8 trays of buns: You chose **8 trays of rolls and 8 trays of buns**. That is the answer you get when you use only the count fact and share the 16 out equally, which ignores the totals fact.
-- What does the problem ask you to work out? **A missing number, from a formula, a rate or totals.** The problem asks “filled 16 trays, some with 12 rolls each and some with 20 buns each” and “baked 240 items in all” and “How many trays of rolls and how many of buns were there?”, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no *right-angled triangle* or copy at another size, so the key’s first answer is **“A missing number, from a formula, a rate or totals”**.
+- What does the problem ask you to work out? **A missing number, from a formula, a rate or totals.** The problem asks “filled 16 trays, some with 12 rolls each and some with 20 buns each” and “baked 240 items in all” and “How many trays of rolls and how many of buns were there?”, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no *right-angled triangle* or copy at another size, so the answer to the first question is **“A missing number, from a formula, a rate or totals”**.
 - What does the problem give that the missing number must fit? **Two facts that two missing numbers must both fit.** In “filled 16 trays, some with 12 rolls each and some with 20 buns each” and “baked 240 items in all”, two numbers are missing, and two facts are stated about the pair: how many there are in all, and what they come to in all. That is **“Two facts that two missing numbers must both fit”**.
 - Why not **Rearranging a formula**: Two numbers are left out and two facts are given about them, so no single calculation can simply be undone. **Rearranging a formula** would be the name if only one number were left out of one calculation.
 - Taught on: “Worked: pens and notebooks for an office” (one tap opens the card).
@@ -2284,7 +2284,7 @@ Each question is shown with all of its answers from the key, in the key’s orde
   Each thing done to the missing number can be cancelled by its opposite, and the opposites have to be done in the reverse order, because the last thing done sits outside the others, as socks go on before shoes and come off after them. Undoing from the result back through the steps leads to the number you started from, and running the *formula* forward on the answer proves it.
 - If you chose 7: You chose **7**. That is the answer you get when you undo the steps in the order they were done instead of in reverse, so what was done first is undone first.
 - If you chose 15: You chose **15**. That is the answer you get when you add 6 once more instead of undoing it by taking away 6.
-- What does the problem ask you to work out? **A missing number, from a formula, a rate or totals.** The problem asks “multiply the number of cakes by 3, then add 6” and “How many cakes is it for?”, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no *right-angled triangle* or copy at another size, so the key’s first answer is **“A missing number, from a formula, a rate or totals”**.
+- What does the problem ask you to work out? **A missing number, from a formula, a rate or totals.** The problem asks “multiply the number of cakes by 3, then add 6” and “How many cakes is it for?”, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no *right-angled triangle* or copy at another size, so the answer to the first question is **“A missing number, from a formula, a rate or totals”**.
 - What does the problem give that the missing number must fit? **A formula, and the result it came to.** The words “multiply the number of cakes by 3, then add 6” and “An order is for 39 eggs” give a calculation and the result it came to, and one number in the calculation is left out. Each thing done to that number can be undone, which is **“A formula, and the result it came to”**.
 - Why not **Simultaneous equations**: Only one number is left out, and one calculation has a result to undo. **Simultaneous equations** would be the name if two numbers were left out and two separate facts were given about them.
 - Taught on: “Worked: the list price of a jacket” (one tap opens the card).
@@ -2314,7 +2314,7 @@ Each question is shown with all of its answers from the key, in the key’s orde
   Adding the square of half the number in front of x to both sides turns the left side into one number *squared*, (x + half of it)², and a number that has been multiplied by itself can be undone with a *square root*. A *square root* has two answers, one above zero and one below it, and the story decides which can stay.
 - If you chose 8.5 m: You chose **8.5 m**. That is the answer you get when you stop after the *square root* and give 8.5, though it is x + 4.5 that is 8.5, so 4.5 still has to come off.
 - If you chose 13 m: You chose **13 m**. That is the answer you get when you add half the number in front of x, 4.5, instead of taking it away.
-- What does the problem ask you to work out? **A missing number, from a formula, a rate or totals.** The problem asks “9 m longer than it is wide” and “How wide is the deck?”, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no *right-angled triangle* or copy at another size, so the key’s first answer is **“A missing number, from a formula, a rate or totals”**.
+- What does the problem ask you to work out? **A missing number, from a formula, a rate or totals.** The problem asks “9 m longer than it is wide” and “How wide is the deck?”, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no *right-angled triangle* or copy at another size, so the answer to the first question is **“A missing number, from a formula, a rate or totals”**.
 - What does the problem give that the missing number must fit? **A formula in which the missing number is multiplied by itself.** The words “9 m longer than it is wide” and “its area is 52 m²” give a result, and the missing number is multiplied by itself as well as used on its own. That is **“A formula in which the missing number is multiplied by itself”**.
 - Why not **Rearranging a formula**: The missing number is multiplied by itself, so it cannot be undone one thing at a time. **Rearranging a formula** would be the name if it appeared only once in the calculation.
 - Taught on: “Worked: the width of a banner” (one tap opens the card).
@@ -2342,7 +2342,7 @@ Each question is shown with all of its answers from the key, in the key’s orde
   Each thing done to the missing number can be cancelled by its opposite, and the opposites have to be done in the reverse order, because the last thing done sits outside the others, as socks go on before shoes and come off after them. Undoing from the result back through the steps leads to the number you started from, and running the *formula* forward on the answer proves it.
 - If you chose 6.4: You chose **6.4**. That is the answer you get when you undo the steps in the order they were done instead of in reverse, so what was done first is undone first.
 - If you chose 152: You chose **152**. That is the answer you get when you multiply by 5 once more instead of undoing it by dividing by 5.
-- What does the problem ask you to work out? **A missing number, from a formula, a rate or totals.** The problem asks “take the number of lockers booked, subtract the 2 that are free, then multiply by 5” and “How many lockers were booked?”, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no *right-angled triangle* or copy at another size, so the key’s first answer is **“A missing number, from a formula, a rate or totals”**.
+- What does the problem ask you to work out? **A missing number, from a formula, a rate or totals.** The problem asks “take the number of lockers booked, subtract the 2 that are free, then multiply by 5” and “How many lockers were booked?”, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no *right-angled triangle* or copy at another size, so the answer to the first question is **“A missing number, from a formula, a rate or totals”**.
 - What does the problem give that the missing number must fit? **A formula, and the result it came to.** The words “take the number of lockers booked, subtract the 2 that are free, then multiply by 5” and “The fee is €30” give a calculation and the result it came to, and one number in the calculation is left out. Each thing done to that number can be undone, which is **“A formula, and the result it came to”**.
 - Why not **Quadratic equation**: The missing number is used once in the calculation, so each thing done to it can be undone in turn. **Quadratic equation** would be the name if it were multiplied by itself as well.
 - Taught on: “Worked: the list price of a jacket” (one tap opens the card).
@@ -2370,7 +2370,7 @@ Each question is shown with all of its answers from the key, in the key’s orde
   A rate says that its two numbers keep in step: with twice as many of one there are twice as many of the other. So finding how many times as big the new amount is, and making the other number that many times as big, keeps to the same rate. The check on the direction catches a rate scaled the wrong way round.
 - If you chose 5 walkers: You chose **5 walkers**. That is the answer you get when you divide 15 by 3 instead of multiplying, so the answer moves the wrong way: more bottles must mean more walkers.
 - If you chose 16.2 walkers: You chose **16.2 walkers**. That is the answer you get when you pair the new amount with 15 walkers, the other number in the rate, and not with 9 bottles, the number of the same thing.
-- What does the problem ask you to work out? **A missing number, from a formula, a rate or totals.** The problem asks “packs 9 bottles of water for every 15 walkers” and “How many walkers can it supply?”, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no *right-angled triangle* or copy at another size, so the key’s first answer is **“A missing number, from a formula, a rate or totals”**.
+- What does the problem ask you to work out? **A missing number, from a formula, a rate or totals.** The problem asks “packs 9 bottles of water for every 15 walkers” and “How many walkers can it supply?”, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no *right-angled triangle* or copy at another size, so the answer to the first question is **“A missing number, from a formula, a rate or totals”**.
 - What does the problem give that the missing number must fit? **A rate, and a new amount to scale it to.** The words “packs 9 bottles of water for every 15 walkers” and “It has 27 bottles” give so much for so many of one thing, and a new amount of one of them, with nothing added on top and no calculation whose result has to be undone. That is **“A rate, and a new amount to scale it to”**.
 - Why not **Rearranging a formula**: The problem gives a rate and a new amount, with nothing added on top and no calculation whose result has to be undone. **Rearranging a formula** would be the name if a calculation, or a fixed amount on top of the rate, had a result to undo.
 - Taught on: “Worked: the price of 12 kg of apples” (one tap opens the card).
@@ -2400,7 +2400,7 @@ Each question is shown with all of its answers from the key, in the key’s orde
   One fact alone cannot fix two missing numbers, because many pairs fit it. Using the count fact to write one letter in terms of the other leaves a single letter in the totals fact, and a single letter can be solved. The other number then follows from the count fact, and the pair has to fit both facts.
 - If you chose 8 herbs and 4 shrubs: You chose **8 herbs and 4 shrubs**. That is the answer you get when you attach the two numbers to the wrong things: 8 belongs to the shrubs, the thing that was named y, and not to the herbs.
 - If you chose 6 herbs and 6 shrubs: You chose **6 herbs and 6 shrubs**. That is the answer you get when you use only the count fact and share the 12 out equally, which ignores the totals fact.
-- What does the problem ask you to work out? **A missing number, from a formula, a rate or totals.** The problem asks “bought 12 plants for the garden, some herbs at €3 each and some shrubs at €9 each” and “spent €84” and “How many herbs and how many shrubs did they buy?”, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no *right-angled triangle* or copy at another size, so the key’s first answer is **“A missing number, from a formula, a rate or totals”**.
+- What does the problem ask you to work out? **A missing number, from a formula, a rate or totals.** The problem asks “bought 12 plants for the garden, some herbs at €3 each and some shrubs at €9 each” and “spent €84” and “How many herbs and how many shrubs did they buy?”, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no *right-angled triangle* or copy at another size, so the answer to the first question is **“A missing number, from a formula, a rate or totals”**.
 - What does the problem give that the missing number must fit? **Two facts that two missing numbers must both fit.** In “bought 12 plants for the garden, some herbs at €3 each and some shrubs at €9 each” and “spent €84”, two numbers are missing, and two facts are stated about the pair: how many there are in all, and what they come to in all. That is **“Two facts that two missing numbers must both fit”**.
 - Why not **Rearranging a formula**: Two numbers are left out and two facts are given about them, so no single calculation can simply be undone. **Rearranging a formula** would be the name if only one number were left out of one calculation.
 - Taught on: “Worked: pens and notebooks for an office” (one tap opens the card).
@@ -2428,7 +2428,7 @@ Each question is shown with all of its answers from the key, in the key’s orde
   Each thing done to the missing number can be cancelled by its opposite, and the opposites have to be done in the reverse order, because the last thing done sits outside the others, as socks go on before shoes and come off after them. Undoing from the result back through the steps leads to the number you started from, and running the *formula* forward on the answer proves it.
 - If you chose 288: You chose **288**. That is the answer you get when you undo the steps in the order they were done instead of in reverse, so what was done first is undone first.
 - If you chose 360: You chose **360**. That is the answer you get when you add 12 once more instead of undoing it by taking away 12.
-- What does the problem ask you to work out? **A missing number, from a formula, a rate or totals.** The problem asks “divide the number of copies by 5, then add 12 for the set-up” and “How many copies is it for?”, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no *right-angled triangle* or copy at another size, so the key’s first answer is **“A missing number, from a formula, a rate or totals”**.
+- What does the problem ask you to work out? **A missing number, from a formula, a rate or totals.** The problem asks “divide the number of copies by 5, then add 12 for the set-up” and “How many copies is it for?”, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no *right-angled triangle* or copy at another size, so the answer to the first question is **“A missing number, from a formula, a rate or totals”**.
 - What does the problem give that the missing number must fit? **A formula, and the result it came to.** The words “divide the number of copies by 5, then add 12 for the set-up” and “The quote is €60” give a calculation and the result it came to, and one number in the calculation is left out. Each thing done to that number can be undone, which is **“A formula, and the result it came to”**.
 - Why not **Simultaneous equations**: Only one number is left out, and one calculation has a result to undo. **Simultaneous equations** would be the name if two numbers were left out and two separate facts were given about them.
 - Taught on: “Worked: the list price of a jacket” (one tap opens the card).
@@ -2456,7 +2456,7 @@ Each question is shown with all of its answers from the key, in the key’s orde
   Each thing done to the missing number can be cancelled by its opposite, and the opposites have to be done in the reverse order, because the last thing done sits outside the others, as socks go on before shoes and come off after them. Undoing from the result back through the steps leads to the number you started from, and running the *formula* forward on the answer proves it.
 - If you chose 8 km: You chose **8 km**. That is the answer you get when you undo the steps in the order they were done instead of in reverse, so what was done first is undone first.
 - If you chose 18 km: You chose **18 km**. That is the answer you get when you add 6 once more instead of undoing it by taking away 6.
-- What does the problem ask you to work out? **A missing number, from a formula, a rate or totals.** The problem asks “a starting charge of €6, plus €1.50 for each kilometre” and “How many kilometres was the ride?”, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no *right-angled triangle* or copy at another size, so the key’s first answer is **“A missing number, from a formula, a rate or totals”**.
+- What does the problem ask you to work out? **A missing number, from a formula, a rate or totals.** The problem asks “a starting charge of €6, plus €1.50 for each kilometre” and “How many kilometres was the ride?”, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no *right-angled triangle* or copy at another size, so the answer to the first question is **“A missing number, from a formula, a rate or totals”**.
 - What does the problem give that the missing number must fit? **A formula, and the result it came to.** The words “a starting charge of €6, plus €1.50 for each kilometre” and “One fare comes to €21” show a price for each kilometre, which looks like a rate, but a starting charge is added on top of it, and the problem gives the result of that whole calculation and asks for the kilometres in it. A rate with a fixed amount added on top is **“A formula, and the result it came to”**.
 - Why not **Proportion**: There is a calculation to undo, with a result it came to, and not only a rate to scale. **Proportion** would be the name if the problem gave only so much for so many and a new amount of the same thing.
 - Taught on: “Worked: the list price of a jacket” (one tap opens the card).
@@ -2484,8 +2484,8 @@ Each question is shown with all of its answers from the key, in the key’s orde
   A rate says that its two numbers keep in step: with twice as many of one there are twice as many of the other. So finding how many times as big the new amount is, and making the other number that many times as big, keeps to the same rate. The check on the direction catches a rate scaled the wrong way round.
 - If you chose 7.2 eggs: You chose **7.2 eggs**. That is the answer you get when you divide 18 by 2.5 instead of multiplying, so the answer moves the wrong way: more pupils must mean more eggs.
 - If you chose 20 eggs: You chose **20 eggs**. That is the answer you get when you pair the new amount with 18 eggs, the other number in the rate, and not with 12 pupils, the number of the same thing.
-- What does the problem ask you to work out? **A missing number, from a formula, a rate or totals.** The problem asks “uses 18 eggs for every 12 pupils” and “How many eggs are needed?”, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no *right-angled triangle* or copy at another size, so the key’s first answer is **“A missing number, from a formula, a rate or totals”**.
-- What does the problem give that the missing number must fit? **A rate, and a new amount to scale it to.** The words “uses 18 eggs for every 12 pupils” and “Today 30 pupils are in for lunch” give so much for so many, 18 eggs for every 12 pupils, and a new amount of pupils. The 3 cooks and the word “today” are numbers and words that no step uses, and nothing is added on top, so the key’s answer is **“A rate, and a new amount to scale it to”**.
+- What does the problem ask you to work out? **A missing number, from a formula, a rate or totals.** The problem asks “uses 18 eggs for every 12 pupils” and “How many eggs are needed?”, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no *right-angled triangle* or copy at another size, so the answer to the first question is **“A missing number, from a formula, a rate or totals”**.
+- What does the problem give that the missing number must fit? **A rate, and a new amount to scale it to.** The words “uses 18 eggs for every 12 pupils” and “Today 30 pupils are in for lunch” give so much for so many, 18 eggs for every 12 pupils, and a new amount of pupils. The 3 cooks and the word “today” are numbers and words that no step uses, and nothing is added on top, so the answer is **“A rate, and a new amount to scale it to”**.
 - Why not **Rearranging a formula**: The problem gives a rate and a new amount, with nothing added on top and no calculation whose result has to be undone. **Rearranging a formula** would be the name if a calculation, or a fixed amount on top of the rate, had a result to undo.
 - Taught on: “Worked: the price of 12 kg of apples” (one tap opens the card).
 
@@ -2514,8 +2514,8 @@ Each question is shown with all of its answers from the key, in the key’s orde
   Adding the square of half the number in front of x to both sides turns the left side into one number *squared*, (x + half of it)², and a number that has been multiplied by itself can be undone with a *square root*. A *square root* has two answers, one above zero and one below it, and the story decides which can stay.
 - If you chose 6.5 m: You chose **6.5 m**. That is the answer you get when you stop after the *square root* and give 6.5, though it is x + 2.5 that is 6.5, so 2.5 still has to come off.
 - If you chose −9 m: You chose **−9 m**. That is the answer you get when you keep the answer below zero, −9, though the story rules it out.
-- What does the problem ask you to work out? **A missing number, from a formula, a rate or totals.** The problem asks “width × (width + 5)” and “What is its width?”, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no *right-angled triangle* or copy at another size, so the key’s first answer is **“A missing number, from a formula, a rate or totals”**.
-- What does the problem give that the missing number must fit? **A formula in which the missing number is multiplied by itself.** The words “width × (width + 5)” and “A pool’s area is 36 m²” give a rule and the result it came to, 36 m², which looks like **“A formula, and the result it came to”**. But in the rule the missing width appears twice, once on its own and once inside the bracket, so it is multiplied by itself, and the key’s answer is **“A formula in which the missing number is multiplied by itself”**.
+- What does the problem ask you to work out? **A missing number, from a formula, a rate or totals.** The problem asks “width × (width + 5)” and “What is its width?”, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no *right-angled triangle* or copy at another size, so the answer to the first question is **“A missing number, from a formula, a rate or totals”**.
+- What does the problem give that the missing number must fit? **A formula in which the missing number is multiplied by itself.** The words “width × (width + 5)” and “A pool’s area is 36 m²” give a rule and the result it came to, 36 m², which looks like **“A formula, and the result it came to”**. But in the rule the missing width appears twice, once on its own and once inside the bracket, so it is multiplied by itself, and the answer is **“A formula in which the missing number is multiplied by itself”**.
 - Why not **Rearranging a formula**: The missing number is multiplied by itself, so it cannot be undone one thing at a time. **Rearranging a formula** would be the name if it appeared only once in the calculation.
 - Taught on: “Worked: the width of a banner” (one tap opens the card).
 
@@ -2542,7 +2542,7 @@ Each question is shown with all of its answers from the key, in the key’s orde
   Each thing done to the missing number can be cancelled by its opposite, and the opposites have to be done in the reverse order, because the last thing done sits outside the others, as socks go on before shoes and come off after them. Undoing from the result back through the steps leads to the number you started from, and running the *formula* forward on the answer proves it.
 - If you chose 7.8 m: You chose **7.8 m**. That is the answer you get when you undo the steps in the order they were done instead of in reverse, so what was done first is undone first.
 - If you chose 199 m: You chose **199 m**. That is the answer you get when you multiply by 5 once more instead of undoing it by dividing by 5.
-- What does the problem ask you to work out? **A missing number, from a formula, a rate or totals.** The problem asks “A rectangular banner is 5 m long” and “a strip of 1 m is added to its width” and “How wide was the banner before?”, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no *right-angled triangle* or copy at another size, so the key’s first answer is **“A missing number, from a formula, a rate or totals”**.
+- What does the problem ask you to work out? **A missing number, from a formula, a rate or totals.** The problem asks “A rectangular banner is 5 m long” and “a strip of 1 m is added to its width” and “How wide was the banner before?”, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no *right-angled triangle* or copy at another size, so the answer to the first question is **“A missing number, from a formula, a rate or totals”**.
 - What does the problem give that the missing number must fit? **A formula, and the result it came to.** The words “A rectangular banner is 5 m long” and “a strip of 1 m is added to its width” and “its area is 40 m²” give an area, which is a result, and the missing width is used once in it: it has 1 added and is then multiplied by 5. The missing width is used once, so each thing done to it can be undone, which is **“A formula, and the result it came to”**.
 - Why not **Quadratic equation**: The missing number is used once in the calculation, so each thing done to it can be undone in turn. **Quadratic equation** would be the name if it were multiplied by itself as well.
 - Taught on: “Worked: the list price of a jacket” (one tap opens the card).
@@ -2570,22 +2570,22 @@ Each question is shown with all of its answers from the key, in the key’s orde
   Adding the square of half the number in front of x to both sides turns the left side into one number *squared*. A number multiplied by itself is never below zero, so when the right side comes out below zero no number fits, and the problem has no answer.
 - If you chose x = 1: You chose **x = 1**. That is the answer you get when you drop the minus sign from −9 and take its *square root*, 3, which gives x + 2 = 3.
 - If you chose x = −5: You chose **x = −5**. That is the answer you get when you read the *square root* of −9 as −3, though −3 × −3 is 9, not −9.
-- What does the problem ask you to work out? **A missing number, from a formula, a rate or totals.** The problem asks “multiplied by itself and then added to 4 times itself, gives −13” and “What is the number?”, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no *right-angled triangle* or copy at another size, so the key’s first answer is **“A missing number, from a formula, a rate or totals”**.
+- What does the problem ask you to work out? **A missing number, from a formula, a rate or totals.** The problem asks “multiplied by itself and then added to 4 times itself, gives −13” and “What is the number?”, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no *right-angled triangle* or copy at another size, so the answer to the first question is **“A missing number, from a formula, a rate or totals”**.
 - What does the problem give that the missing number must fit? **A formula in which the missing number is multiplied by itself.** The words “multiplied by itself and then added to 4 times itself, gives −13” give a result, −13, and the missing number is multiplied by itself as well as used on its own. That is **“A formula in which the missing number is multiplied by itself”**. Whether any number fits is settled by the working, and a result below zero is one way for no number to fit.
 - Why not **Rearranging a formula**: The missing number is multiplied by itself, so it cannot be undone one thing at a time. **Rearranging a formula** would be the name if it appeared only once in the calculation.
 - Taught on: “Worked: the width of a banner” (one tap opens the card).
 
-**When the drill ends.** The learner sees their own results: first-try accuracy for each stage, whole routes beside single questions, the pair of names they mixed up most often, and what will come back and when. Anything missed was asked again before the drill ended. Nothing here is graded. A miss only decides what comes back.
+**When the drill ends.** The learner sees their own results: first-try accuracy for each stage, whole cases beside single questions, the pair of names they mixed up most often, and what will come back and when. Anything missed was asked again before the drill ended. Nothing here is graded. A miss only decides what comes back.
 
 ### 43. What to carry away
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 43 of 44*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 43 of 44*
 
 [reviewers only: card kind `recap`, id `recap-unknown`]
 
-You have now worked problems of all four kinds on your own. This card puts the unit in one place, in the key’s words.
+You have now worked problems of all four kinds on your own. This card puts the unit in one place.
 
-**The key for this unit, in its own words**
+**This unit’s questions and answers**
 
 What does the problem give that the missing number must fit?
 - A formula, and the result it came to → Rearranging a formula
@@ -2606,7 +2606,7 @@ What does the problem give that the missing number must fit?
 
 **To carry away**
 
-- Before any working, ask what the problem hands you for the missing number to match, and point to the words that say it. If you cannot point to them, you do not have an answer yet. The key asks: **“What does the problem give that the missing number must fit?”**
+- Before any working, ask what the problem hands you for the missing number to match, and point to the words that say it. If you cannot point to them, you do not have an answer yet. The question is: **“What does the problem give that the missing number must fit?”**
 - A rule with its result leads to **Rearranging a formula**. So much for so many and a new amount lead to **Proportion**. Two missing numbers with two facts lead to **Simultaneous equations**. A missing number multiplied by itself leads to **Quadratic equation**.
 - The numbers do not tell you the kind. The same 28 m² of rug can ask for a length from a width, which is **Rearranging a formula**, or for a width when the length is 3 m more, which is **Quadratic equation**.
 - Two kinds can pass for another. A price for each thing with a fixed charge on top is a calculation, so it is **Rearranging a formula**, and not **Proportion**. A rule that has the missing number in it twice is **Quadratic equation**, and not **Rearranging a formula**, even when it comes with a result.
@@ -2617,7 +2617,7 @@ What does the problem give that the missing number must fit?
 
 ### 44. Where would you meet this?
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 44 of 44*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 44 of 44*
 
 [reviewers only: card kind `transfer`, id `transfer-unknown`]
 
@@ -2644,7 +2644,7 @@ One line is enough. It is kept on this device only and is never marked.
 
 ## After the unit: what comes back on later days
 
-A name that is due returns as a case the learner has not seen, next to a case of the name they most often confuse it with. Each is run as a whole route. These are the fresh cases held back for that purpose: three for each name, one for each scheduled return. The first return is about two days after the drill, the next about a week after that, the next about three and a half weeks later.
+A name that is due returns as a case the learner has not seen, next to a case of the name they most often confuse it with. Each is run as a whole case: every question, then the name. These are the fresh cases held back for that purpose: three for each name, one for each scheduled return. The first return is about two days after the drill, the next about a week after that, the next about three and a half weeks later.
 
 **Return case 1 of 12**
 
@@ -2669,7 +2669,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
   Each thing done to the missing number can be cancelled by its opposite, and the opposites have to be done in the reverse order, because the last thing done sits outside the others, as socks go on before shoes and come off after them. Undoing from the result back through the steps leads to the number you started from, and running the *formula* forward on the answer proves it.
 - If you chose 7.9 kg: You chose **7.9 kg**. That is the answer you get when you undo the steps in the order they were done instead of in reverse, so what was done first is undone first.
 - If you chose 7197 kg: You chose **7197 kg**. That is the answer you get when you multiply by 30 once more instead of undoing it by dividing by 30.
-- What does the problem ask you to work out? **A missing number, from a formula, a rate or totals.** The problem asks “take the baby’s weight in kilos, add 3, then multiply by 30” and “What does the baby weigh?”, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no *right-angled triangle* or copy at another size, so the key’s first answer is **“A missing number, from a formula, a rate or totals”**.
+- What does the problem ask you to work out? **A missing number, from a formula, a rate or totals.** The problem asks “take the baby’s weight in kilos, add 3, then multiply by 30” and “What does the baby weigh?”, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no *right-angled triangle* or copy at another size, so the answer to the first question is **“A missing number, from a formula, a rate or totals”**.
 - What does the problem give that the missing number must fit? **A formula, and the result it came to.** The words “take the baby’s weight in kilos, add 3, then multiply by 30” and “feed is 240 mL” give a calculation and the result it came to, and one number in the calculation is left out. Each thing done to that number can be undone, which is **“A formula, and the result it came to”**.
 - Why not **Proportion**: There is a calculation to undo, with a result it came to, and not only a rate to scale. **Proportion** would be the name if the problem gave only so much for so many and a new amount of the same thing.
 - Taught on: “Worked: the list price of a jacket” (one tap opens the card).
@@ -2697,7 +2697,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
   Each thing done to the missing number can be cancelled by its opposite, and the opposites have to be done in the reverse order, because the last thing done sits outside the others, as socks go on before shoes and come off after them. Undoing from the result back through the steps leads to the number you started from, and running the *formula* forward on the answer proves it.
 - If you chose 108 cm: You chose **108 cm**. That is the answer you get when you undo the steps in the order they were done instead of in reverse, so what was done first is undone first.
 - If you chose 92 cm: You chose **92 cm**. That is the answer you get when you take away 4 once more instead of undoing it by adding 4.
-- What does the problem ask you to work out? **A missing number, from a formula, a rate or totals.** The problem asks “take the curtain’s width in cm, subtract 4, then divide by 3” and “How wide is it?”, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no *right-angled triangle* or copy at another size, so the key’s first answer is **“A missing number, from a formula, a rate or totals”**.
+- What does the problem ask you to work out? **A missing number, from a formula, a rate or totals.** The problem asks “take the curtain’s width in cm, subtract 4, then divide by 3” and “How wide is it?”, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no *right-angled triangle* or copy at another size, so the answer to the first question is **“A missing number, from a formula, a rate or totals”**.
 - What does the problem give that the missing number must fit? **A formula, and the result it came to.** The words “take the curtain’s width in cm, subtract 4, then divide by 3” and “A curtain has 32 pleats” give a calculation and the result it came to, and one number in the calculation is left out. Each thing done to that number can be undone, which is **“A formula, and the result it came to”**.
 - Why not **Simultaneous equations**: Only one number is left out, and one calculation has a result to undo. **Simultaneous equations** would be the name if two numbers were left out and two separate facts were given about them.
 - Taught on: “Worked: the list price of a jacket” (one tap opens the card).
@@ -2725,7 +2725,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
   Each thing done to the missing number can be cancelled by its opposite, and the opposites have to be done in the reverse order, because the last thing done sits outside the others, as socks go on before shoes and come off after them. Undoing from the result back through the steps leads to the number you started from, and running the *formula* forward on the answer proves it.
 - If you chose 8: You chose **8**. That is the answer you get when you undo the steps in the order they were done instead of in reverse, so what was done first is undone first.
 - If you chose 16: You chose **16**. That is the answer you get when you add 6 once more instead of undoing it by taking away 6.
-- What does the problem ask you to work out? **A missing number, from a formula, a rate or totals.** The problem asks “a €6 delivery fee plus €3 for each plant” and “How many plants were in it?”, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no *right-angled triangle* or copy at another size, so the key’s first answer is **“A missing number, from a formula, a rate or totals”**.
+- What does the problem ask you to work out? **A missing number, from a formula, a rate or totals.** The problem asks “a €6 delivery fee plus €3 for each plant” and “How many plants were in it?”, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no *right-angled triangle* or copy at another size, so the answer to the first question is **“A missing number, from a formula, a rate or totals”**.
 - What does the problem give that the missing number must fit? **A formula, and the result it came to.** The words “a €6 delivery fee plus €3 for each plant” and “An order costs €42” show a price for each plant, which looks like a rate, but a delivery fee is added on top of it, and the problem gives the result of that whole calculation. A rate with a fixed amount added on top is **“A formula, and the result it came to”**.
 - Why not **Proportion**: There is a calculation to undo, with a result it came to, and not only a rate to scale. **Proportion** would be the name if the problem gave only so much for so many and a new amount of the same thing.
 - Taught on: “Worked: the list price of a jacket” (one tap opens the card).
@@ -2753,7 +2753,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
   A rate says that its two numbers keep in step: with twice as many of one there are twice as many of the other. So finding how many times as big the new amount is, and making the other number that many times as big, keeps to the same rate. The check on the direction catches a rate scaled the wrong way round.
 - If you chose 3 stems: You chose **3 stems**. That is the answer you get when you divide 9 by 3 instead of multiplying, so the answer moves the wrong way: more vases must mean more stems.
 - If you chose 12 stems: You chose **12 stems**. That is the answer you get when you pair the new amount with 9 stems, the other number in the rate, and not with 6 vases, the number of the same thing.
-- What does the problem ask you to work out? **A missing number, from a formula, a rate or totals.** The problem asks “uses 9 stems for every 6 vases” and “How many stems are needed for 18 vases?”, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no *right-angled triangle* or copy at another size, so the key’s first answer is **“A missing number, from a formula, a rate or totals”**.
+- What does the problem ask you to work out? **A missing number, from a formula, a rate or totals.** The problem asks “uses 9 stems for every 6 vases” and “How many stems are needed for 18 vases?”, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no *right-angled triangle* or copy at another size, so the answer to the first question is **“A missing number, from a formula, a rate or totals”**.
 - What does the problem give that the missing number must fit? **A rate, and a new amount to scale it to.** The words “uses 9 stems for every 6 vases” and “for 18 vases” give so much for so many of one thing, and a new amount of one of them, with nothing added on top and no calculation whose result has to be undone. That is **“A rate, and a new amount to scale it to”**.
 - Why not **Rearranging a formula**: The problem gives a rate and a new amount, with nothing added on top and no calculation whose result has to be undone. **Rearranging a formula** would be the name if a calculation, or a fixed amount on top of the rate, had a result to undo.
 - Taught on: “Worked: the price of 12 kg of apples” (one tap opens the card).
@@ -2781,7 +2781,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
   A rate says that its two numbers keep in step: with twice as many of one there are twice as many of the other. So finding how many times as big the new amount is, and making the other number that many times as big, keeps to the same rate. The check on the direction catches a rate scaled the wrong way round.
 - If you chose 6 guests: You chose **6 guests**. That is the answer you get when you divide 18 by 3 instead of multiplying, so the answer moves the wrong way: more rooms must mean more guests.
 - If you chose 24 guests: You chose **24 guests**. That is the answer you get when you pair the new amount with 18 guests, the other number in the rate, and not with 12 rooms, the number of the same thing.
-- What does the problem ask you to work out? **A missing number, from a formula, a rate or totals.** The problem asks “puts 18 guests in every 12 rooms” and “How many guests can it take?”, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no *right-angled triangle* or copy at another size, so the key’s first answer is **“A missing number, from a formula, a rate or totals”**.
+- What does the problem ask you to work out? **A missing number, from a formula, a rate or totals.** The problem asks “puts 18 guests in every 12 rooms” and “How many guests can it take?”, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no *right-angled triangle* or copy at another size, so the answer to the first question is **“A missing number, from a formula, a rate or totals”**.
 - What does the problem give that the missing number must fit? **A rate, and a new amount to scale it to.** The words “puts 18 guests in every 12 rooms” and “It has 36 rooms free” give so much for so many of one thing, and a new amount of one of them, with nothing added on top and no calculation whose result has to be undone. That is **“A rate, and a new amount to scale it to”**.
 - Why not **Rearranging a formula**: The problem gives a rate and a new amount, with nothing added on top and no calculation whose result has to be undone. **Rearranging a formula** would be the name if a calculation, or a fixed amount on top of the rate, had a result to undo.
 - Taught on: “Worked: the price of 12 kg of apples” (one tap opens the card).
@@ -2809,8 +2809,8 @@ A name that is due returns as a case the learner has not seen, next to a case of
   A rate says that its two numbers keep in step: with twice as many of one there are twice as many of the other. So finding how many times as big the new amount is, and making the other number that many times as big, keeps to the same rate. The check on the direction catches a rate scaled the wrong way round.
 - If you chose 2.5 mg: You chose **2.5 mg**. That is the answer you get when you divide 10 by 4 instead of multiplying, so the answer moves the wrong way: more kg of body weight must mean more mg.
 - If you chose 250 mg: You chose **250 mg**. That is the answer you get when you pair the new amount with 10 mg, the other number in the rate, and not with 25 kg of body weight, the number of the same thing.
-- What does the problem ask you to work out? **A missing number, from a formula, a rate or totals.** The problem asks “says 10 mg of a medicine for every 25 kg of body weight” and “What dose is right for a patient of 100 kg?”, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no *right-angled triangle* or copy at another size, so the key’s first answer is **“A missing number, from a formula, a rate or totals”**.
-- What does the problem give that the missing number must fit? **A rate, and a new amount to scale it to.** The words “says 10 mg of a medicine for every 25 kg of body weight” and “a patient of 100 kg” give so much for so many, 10 mg for every 25 kg, and a new amount of body weight. The sheet’s number, the third of five, is a number no step uses, and nothing is added on top, so the key’s answer is **“A rate, and a new amount to scale it to”**.
+- What does the problem ask you to work out? **A missing number, from a formula, a rate or totals.** The problem asks “says 10 mg of a medicine for every 25 kg of body weight” and “What dose is right for a patient of 100 kg?”, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no *right-angled triangle* or copy at another size, so the answer to the first question is **“A missing number, from a formula, a rate or totals”**.
+- What does the problem give that the missing number must fit? **A rate, and a new amount to scale it to.** The words “says 10 mg of a medicine for every 25 kg of body weight” and “a patient of 100 kg” give so much for so many, 10 mg for every 25 kg, and a new amount of body weight. The sheet’s number, the third of five, is a number no step uses, and nothing is added on top, so the answer is **“A rate, and a new amount to scale it to”**.
 - Why not **Rearranging a formula**: The problem gives a rate and a new amount, with nothing added on top and no calculation whose result has to be undone. **Rearranging a formula** would be the name if a calculation, or a fixed amount on top of the rate, had a result to undo.
 - Taught on: “Worked: the price of 12 kg of apples” (one tap opens the card).
 
@@ -2839,7 +2839,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
   One fact alone cannot fix two missing numbers, because many pairs fit it. Using the count fact to write one letter in terms of the other leaves a single letter in the totals fact, and a single letter can be solved. The other number then follows from the count fact, and the pair has to fit both facts.
 - If you chose 8 bottles and 12 caps: You chose **8 bottles and 12 caps**. That is the answer you get when you attach the two numbers to the wrong things: 8 belongs to the caps, the thing that was named y, and not to the bottles.
 - If you chose 10 bottles and 10 caps: You chose **10 bottles and 10 caps**. That is the answer you get when you use only the count fact and share the 20 out equally, which ignores the totals fact.
-- What does the problem ask you to work out? **A missing number, from a formula, a rate or totals.** The problem asks “bought 20 items, some water bottles at €5 each and some caps at €8 each” and “paid €124” and “How many bottles and how many caps did it buy?”, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no *right-angled triangle* or copy at another size, so the key’s first answer is **“A missing number, from a formula, a rate or totals”**.
+- What does the problem ask you to work out? **A missing number, from a formula, a rate or totals.** The problem asks “bought 20 items, some water bottles at €5 each and some caps at €8 each” and “paid €124” and “How many bottles and how many caps did it buy?”, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no *right-angled triangle* or copy at another size, so the answer to the first question is **“A missing number, from a formula, a rate or totals”**.
 - What does the problem give that the missing number must fit? **Two facts that two missing numbers must both fit.** In “bought 20 items, some water bottles at €5 each and some caps at €8 each” and “paid €124”, two numbers are missing, and two facts are stated about the pair: how many there are in all, and what they come to in all. That is **“Two facts that two missing numbers must both fit”**.
 - Why not **Rearranging a formula**: Two numbers are left out and two facts are given about them, so no single calculation can simply be undone. **Rearranging a formula** would be the name if only one number were left out of one calculation.
 - Taught on: “Worked: pens and notebooks for an office” (one tap opens the card).
@@ -2869,7 +2869,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
   One fact alone cannot fix two missing numbers, because many pairs fit it. Using the count fact to write one letter in terms of the other leaves a single letter in the totals fact, and a single letter can be solved. The other number then follows from the count fact, and the pair has to fit both facts.
 - If you chose 8 deliveries of sand and 18 deliveries of gravel: You chose **8 deliveries of sand and 18 deliveries of gravel**. That is the answer you get when you attach the two numbers to the wrong things: 8 belongs to the deliveries of gravel, the thing that was named y, and not to the deliveries of sand.
 - If you chose 13 deliveries of sand and 13 deliveries of gravel: You chose **13 deliveries of sand and 13 deliveries of gravel**. That is the answer you get when you use only the count fact and share the 26 out equally, which ignores the totals fact.
-- What does the problem ask you to work out? **A missing number, from a formula, a rate or totals.** The problem asks “made 26 deliveries, some of 2 tonnes of sand and some of 3 tonnes of gravel” and “carried 60 tonnes in all” and “How many deliveries of each were there?”, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no *right-angled triangle* or copy at another size, so the key’s first answer is **“A missing number, from a formula, a rate or totals”**.
+- What does the problem ask you to work out? **A missing number, from a formula, a rate or totals.** The problem asks “made 26 deliveries, some of 2 tonnes of sand and some of 3 tonnes of gravel” and “carried 60 tonnes in all” and “How many deliveries of each were there?”, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no *right-angled triangle* or copy at another size, so the answer to the first question is **“A missing number, from a formula, a rate or totals”**.
 - What does the problem give that the missing number must fit? **Two facts that two missing numbers must both fit.** In “made 26 deliveries, some of 2 tonnes of sand and some of 3 tonnes of gravel” and “carried 60 tonnes in all”, two numbers are missing, and two facts are stated about the pair: how many there are in all, and what they come to in all. That is **“Two facts that two missing numbers must both fit”**.
 - Why not **Rearranging a formula**: Two numbers are left out and two facts are given about them, so no single calculation can simply be undone. **Rearranging a formula** would be the name if only one number were left out of one calculation.
 - Taught on: “Worked: pens and notebooks for an office” (one tap opens the card).
@@ -2899,7 +2899,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
   One fact alone cannot fix two missing numbers, because many pairs fit it. Using the count fact to write one letter in terms of the other leaves a single letter in the totals fact, and a single letter can be solved. The other number then follows from the count fact, and the pair has to fit both facts.
 - If you chose 9 bicycles and 7 tricycles: You chose **9 bicycles and 7 tricycles**. That is the answer you get when you attach the two numbers to the wrong things: 9 belongs to the tricycles, the thing that was named y, and not to the bicycles.
 - If you chose 8 bicycles and 8 tricycles: You chose **8 bicycles and 8 tricycles**. That is the answer you get when you use only the count fact and share the 16 out equally, which ignores the totals fact.
-- What does the problem ask you to work out? **A missing number, from a formula, a rate or totals.** The problem asks “holds 16 bicycles and tricycles” and “the wheels number 41 in all” and “How many of each are in the shed?”, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no *right-angled triangle* or copy at another size, so the key’s first answer is **“A missing number, from a formula, a rate or totals”**.
+- What does the problem ask you to work out? **A missing number, from a formula, a rate or totals.** The problem asks “holds 16 bicycles and tricycles” and “the wheels number 41 in all” and “How many of each are in the shed?”, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no *right-angled triangle* or copy at another size, so the answer to the first question is **“A missing number, from a formula, a rate or totals”**.
 - What does the problem give that the missing number must fit? **Two facts that two missing numbers must both fit.** In “holds 16 bicycles and tricycles” and “the wheels number 41 in all”, two numbers are missing, how many bicycles and how many tricycles, and two facts are stated about them: 16 in all and 41 wheels in all. The wheels are what the second fact adds up, as prices would be. That is **“Two facts that two missing numbers must both fit”**.
 - Why not **Rearranging a formula**: Two numbers are left out and two facts are given about them, so no single calculation can simply be undone. **Rearranging a formula** would be the name if only one number were left out of one calculation.
 - Taught on: “Worked: pens and notebooks for an office” (one tap opens the card).
@@ -2929,7 +2929,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
   Adding the square of half the number in front of x to both sides turns the left side into one number *squared*, (x + half of it)², and a number that has been multiplied by itself can be undone with a *square root*. A *square root* has two answers, one above zero and one below it, and the story decides which can stay.
 - If you chose 14.5 cm: You chose **14.5 cm**. That is the answer you get when you stop after the *square root* and give 14.5, though it is x + 2.5 that is 14.5, so 2.5 still has to come off.
 - If you chose 17 cm: You chose **17 cm**. That is the answer you get when you add half the number in front of x, 2.5, instead of taking it away.
-- What does the problem ask you to work out? **A missing number, from a formula, a rate or totals.** The problem asks “5 cm longer than it is wide” and “How wide is the pane?”, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no *right-angled triangle* or copy at another size, so the key’s first answer is **“A missing number, from a formula, a rate or totals”**.
+- What does the problem ask you to work out? **A missing number, from a formula, a rate or totals.** The problem asks “5 cm longer than it is wide” and “How wide is the pane?”, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no *right-angled triangle* or copy at another size, so the answer to the first question is **“A missing number, from a formula, a rate or totals”**.
 - What does the problem give that the missing number must fit? **A formula in which the missing number is multiplied by itself.** The words “5 cm longer than it is wide” and “its area is 204 cm²” give a result, and the missing number is multiplied by itself as well as used on its own. That is **“A formula in which the missing number is multiplied by itself”**.
 - Why not **Rearranging a formula**: The missing number is multiplied by itself, so it cannot be undone one thing at a time. **Rearranging a formula** would be the name if it appeared only once in the calculation.
 - Taught on: “Worked: the width of a banner” (one tap opens the card).
@@ -2959,7 +2959,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
   Adding the square of half the number in front of x to both sides turns the left side into one number *squared*, (x + half of it)², and a number that has been multiplied by itself can be undone with a *square root*. A *square root* has two answers, one above zero and one below it, and the story decides which can stay.
 - If you chose 5 m: You chose **5 m**. That is the answer you get when you add half the number in front of x, 1, instead of taking it away.
 - If you chose −5 m: You chose **−5 m**. That is the answer you get when you keep the answer below zero, −5, though the story rules it out.
-- What does the problem ask you to work out? **A missing number, from a formula, a rate or totals.** The problem asks “each 2 m longer than they are wide” and “How wide is each plot?”, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no *right-angled triangle* or copy at another size, so the key’s first answer is **“A missing number, from a formula, a rate or totals”**.
+- What does the problem ask you to work out? **A missing number, from a formula, a rate or totals.** The problem asks “each 2 m longer than they are wide” and “How wide is each plot?”, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no *right-angled triangle* or copy at another size, so the answer to the first question is **“A missing number, from a formula, a rate or totals”**.
 - What does the problem give that the missing number must fit? **A formula in which the missing number is multiplied by itself.** The words “each 2 m longer than they are wide” and “together they cover 45 m²” give a result, and the missing number is multiplied by itself as well as used on its own. That is **“A formula in which the missing number is multiplied by itself”**.
 - Why not **Rearranging a formula**: The missing number is multiplied by itself, so it cannot be undone one thing at a time. **Rearranging a formula** would be the name if it appeared only once in the calculation.
 - Taught on: “Worked: the width of a banner” (one tap opens the card).
@@ -2987,7 +2987,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
   Adding the square of half the number in front of x to both sides turns the left side into one number *squared*. A number multiplied by itself is never below zero, so when the right side comes out below zero no number fits, and the problem has no answer.
 - If you chose x = −1: You chose **x = −1**. That is the answer you get when you drop the minus sign from −4 and take its *square root*, 2, which gives x + 3 = 2.
 - If you chose x = −5: You chose **x = −5**. That is the answer you get when you read the *square root* of −4 as −2, though −2 × −2 is 4, not −4.
-- What does the problem ask you to work out? **A missing number, from a formula, a rate or totals.** The problem asks “multiplied by itself and then added to 6 times itself, gives −13” and “What is the number?”, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no *right-angled triangle* or copy at another size, so the key’s first answer is **“A missing number, from a formula, a rate or totals”**.
+- What does the problem ask you to work out? **A missing number, from a formula, a rate or totals.** The problem asks “multiplied by itself and then added to 6 times itself, gives −13” and “What is the number?”, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no *right-angled triangle* or copy at another size, so the answer to the first question is **“A missing number, from a formula, a rate or totals”**.
 - What does the problem give that the missing number must fit? **A formula in which the missing number is multiplied by itself.** The words “multiplied by itself and then added to 6 times itself, gives −13” give a result, −13, and the missing number is multiplied by itself as well as used on its own. That is **“A formula in which the missing number is multiplied by itself”**. Whether any number fits is settled by the working, and a result below zero is one way for no number to fit.
 - Why not **Rearranging a formula**: The missing number is multiplied by itself, so it cannot be undone one thing at a time. **Rearranging a formula** would be the name if it appeared only once in the calculation.
 - Taught on: “Worked: the width of a banner” (one tap opens the card).

@@ -1,15 +1,15 @@
 # Learner view: Basic Math, Unit Six: A length, an area or a volume, from a right-angled triangle or the same shape at different sizes
 
-*Four kinds of problem about lengths, areas and volumes, and a procedure worked out step by step for each.* Unit revision 1, built to lesson standard 1, status: draft.
+*Four kinds of problem about lengths, areas and volumes, and a procedure worked out step by step for each.* Unit revision 2, built to lesson standard 1, status: draft.
 
 This file is generated from the data files by `tools/render-learner-view.mjs`. It shows every screen in the order a learner meets it. In the app one card is on screen at a time and the learner moves on when ready.
 
-- **Bold text in quotation marks** is the key’s own wording, printed from `key.js`. Bold names are the outcome names from the same file. Neither is typed anywhere else. "What you must be able to point to" lines and "How to tell them apart" lines are also printed from one place each (the key and the look-alike ledger).
+- **Bold text in quotation marks** is the subject’s own wording for its questions and answers, written once and printed everywhere. Bold names are the names, written once in the same place. Neither is typed anywhere else. "What you must be able to point to" lines and "How to tell them apart" lines are also printed from one place each (the subject’s questions and the pairs it compares).
 - ⟦Double brackets⟧ show the words the app marks in a case (one highlight style everywhere).
 - The line in italics under each heading is the app’s top bar. The line in square brackets after it is for reviewers and is not shown to the learner.
 - Headings, prompt wording and stage instructions that are the same in every unit are the app’s wording, not this unit’s.
 - "Shown as soon as you …" is what appears the moment the learner answers. Nothing is hidden behind a second tap the first time a case is met, or after a miss.
-- After every answer the app shows, in this order: the right answer in the key’s words; the reason, quoting the marked words; for a name, why the nearest wrong name fails; after a miss, a line about the answer the learner chose; and last a link to the card that taught it. Where a line about the learner’s own choice is not written for the case, the app builds it from the key, and this file says so in place of repeating it.
+- After every answer the app shows, in this order: the right answer; the reason, quoting the marked words; for a name, why the nearest wrong name fails; after a miss, a line about the answer the learner chose; and last a link to the card that taught it. Where a line about the learner’s own choice is not written for the case, the app builds it from the answers’ own wording, and this file says so in place of repeating it.
 
 ---
 
@@ -17,7 +17,7 @@ This file is generated from the data files by `tools/render-learner-view.mjs`. I
 
 ### 1. Four kinds of problem about shapes, and a procedure for each
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 1 of 44*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 1 of 44*
 
 [reviewers only: card kind `orient`, id `orient-shape`]
 
@@ -25,13 +25,13 @@ After this unit you can take a problem about a length, an area or a volume, such
 
 Picture a weekend of jobs at a house, with four questions coming up, every one of them about a shape. “A strip has to run across the corner of the new door, and the frame is 80 cm wide and 150 cm high: how long is the strip?” “A ski lift cable climbs at an angle of 30° and is 200 m long: how high does it go?” “The town has a model of a new bridge, with a tower 12 cm tall, and the real bridge will be 50 times longer than the model: how tall will the real tower be?” “A big stock pot is exactly the same shape as a small one, but 3 times as tall and 3 times as wide: how many times more soup does it hold?”
 
-The key’s first question, which Unit One taught, gives the same answer to all four: **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”**. But they are four different questions, with four different procedures, and a procedure for the wrong one still gives a number, with nothing in the number to say that it is wrong. So in this unit the order is always the same: first work out what the problem gives you and what it asks about, and only then solve it.
+The first question, which Unit One taught, gives the same answer to all four: **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”**. But they are four different questions, with four different procedures, and a procedure for the wrong one still gives a number, with nothing in the number to say that it is wrong. So in this unit the order is always the same: first work out what the problem gives you and what it asks about, and only then solve it.
 
-Three words from earlier units are used here and are not taught again. A *right-angled triangle* is a triangle with a square corner. The *square root* of a number is the number that multiplies by itself to give it. And *squared* is the word for a number that has been multiplied by itself. Nothing else is assumed. The arithmetic can be done on a calculator: what this unit practises is which steps to take, and why. One thing is new, because **Trigonometry** cannot be explained without it: three keys on the calculator, which are taught on the card for that kind.
+Three words from earlier units are used here and are not taught again. A *right-angled triangle* is a triangle with a square corner. The *square root* of a number is the number that multiplies by itself to give it. And *squared* is the word for a number that has been multiplied by itself. Nothing else is assumed. The arithmetic can be done on a calculator: what this unit practises is which steps to take, and why. One thing is new, because **Trigonometry** cannot be explained without it: three buttons on the calculator, which are taught on the card for that kind.
 
-Each kind is taught the same way as in Unit Two. First a problem of the kind, and the idea behind its procedure. Then two worked problems, in different parts of life, with every step computed and the reason for every step given; on one step in each, the reason is held back until you have chosen it. Then problems that you finish yourself. This unit differs from Unit Two in one way: the key asks two questions here, and each gets its own card once the kinds it separates have been taught. Then the drill mixes all four kinds.
+Each kind is taught the same way as in Unit Two. First a problem of the kind, and the idea behind its procedure. Then two worked problems, in different parts of life, with every step computed and the reason for every step given; on one step in each, the reason is held back until you have chosen it. Then problems that you finish yourself. This unit differs from Unit Two in one way: two questions are asked here, and each gets its own card once the kinds it separates have been taught. Then the drill mixes all four kinds.
 
-**What Unit One taught, in one place.** The key’s first question is **“What does the problem ask you to work out?”** Its answers:
+**What Unit One taught, in one place.** The first question is **“What does the problem ask you to work out?”** Its answers:
 
 - **“How whole numbers split, repeat or are made up”**: give this answer when the problem is about whole numbers and asks whether they split into equal groups with nothing left over, what is left over, what a number is made of, when two things that repeat happen together, where a count ends on a loop such as the days of a week, or whether a number can be written exactly.
 - **“A missing number, from a formula, a rate or totals”**: give this answer when the problem leaves out one number, or two, and gives a formula, a rate such as so much for each thing, or totals that the missing number must fit.
@@ -39,11 +39,11 @@ Each kind is taught the same way as in Unit Two. First a problem of the kind, an
 - **“How many ways something can turn out, or how likely it is”**: give this answer when the problem asks how many different ways something can be chosen or ordered, or how likely it is that at least one of several things happens, or that a test result is right.
 - **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”**: give this answer when the problem has a right-angled triangle, or two things of exactly the same shape at different sizes, and asks for a length, an area or a volume, or for how many times more area or volume one has than the other. **This unit is about these cases.**
 
-Unit One also taught that two things are marked separately: the name you give a case, and your route to it, meaning the answers you gave to the key’s questions on the way.
+Two things are marked separately: the name you give a case, and your answers to the questions on the way to it.
 
 *(One tap on any of these lines opens the card in Unit One that taught it.)*
 
-**The part of the key this unit teaches.** This is a preview. You are not expected to follow it yet: every line is explained on the cards that come next. The question and its answers are in the key’s own words. Beside each answer, in plain words, is the thing it leads to. There are four of them, and each gets its name when it is taught.
+**The questions this unit teaches.** This is a preview. You are not expected to follow it yet: every line is explained on the cards that come next. The question and its answers are worded exactly as you will meet them. Beside each answer, in plain words, is the thing it leads to. There are four of them, and each gets its name when it is taught.
 
 What does the problem give you to work with?
 - Two sides of a right-angled triangle → the third side of a right-angled triangle
@@ -73,7 +73,7 @@ Each name is taught through cases first. After every step you answer one questio
 
 ### 2. The third side of a right-angled triangle
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 2 of 44*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 2 of 44*
 
 [reviewers only: card kind `meet`, id `meet-pyth`]
 
@@ -94,17 +94,17 @@ What you are shown is a triangle with a square corner and the lengths of two of 
 
 The idea behind the procedure is about squares. Picture a square of floor tiles built on each of the three sides of the triangle, with the side as one edge of the square. On the 3 km side the square has 3 × 3 = 9 tiles. On the 4 km side it has 4 × 4 = 16 tiles. On the straight walk back it has as many tiles as the other two together, 9 + 16 = 25, and a square of 25 tiles has 5 tiles along each edge, because 5 × 5 = 25. So the straight walk back is 5 km. That is true of every triangle with a square corner, of any size: the square on the longest side holds as many tiles as the squares on the two shorter sides together. It is not true of a triangle without a square corner. The longest side is always the one opposite the square corner.
 
-So the procedure is this. Multiply each side you are given by itself. Add the two results if you want the longest side, or take one away from the other if you are given the longest side. Then find the number that multiplies by itself to give what is left; the √ key on a calculator finds it. The two worked problems after this card show both cases, with every step written out.
+So the procedure is this. Multiply each side you are given by itself. Add the two results if you want the longest side, or take one away from the other if you are given the longest side. Then find the number that multiplies by itself to give what is left; the √ button on a calculator finds it. The two worked problems after this card show both cases, with every step written out.
 
 Notice what decides the kind. It is not that 3, 4 and 5 happen to be whole numbers, and it is not the story of a hike. It is that the problem has a triangle with a square corner, gives the lengths of two of its sides, and asks for the third. The same triangle could come up in a problem that gives one side and an angle in degrees instead, and that would be a different kind, with a different procedure.
 
 **What you must be able to point to.** A right-angled triangle, the lengths of two of its sides, and the question how long the third side is. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What does the problem give you to work with?”**
+**The question:** **“What does the problem give you to work with?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“Two sides of a right-angled triangle”**
+**Its answer for a case like this one:** **“Two sides of a right-angled triangle”**
 
-**The key also asks, and this is its answer for a case like this one:** **“Does the problem ask how long something is, or how much area or volume it has?”** **“How long one of its sides or parts is”**
+**There is also this question, and its answer for a case like this one:** **“Does the problem ask how long something is, or how much area or volume it has?”** **“How long one of its sides or parts is”**
 
 A problem like this is **Pythagoras’ theorem**: the fact that, in a triangle with a square corner, the square on the longest side holds as many tiles as the squares on the two shorter sides together, used to find a side that is not given.
 
@@ -112,7 +112,7 @@ You may also hear this called “Pythagoras” or “a² + b² = c²”. Those w
 
 ### 3. Pythagoras’ theorem: the same thing in a different story
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 3 of 44*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 3 of 44*
 
 [reviewers only: card kind `again`, id `again-pyth`]
 
@@ -145,7 +145,7 @@ That is all you point to, and it is why one name covers a hike and a door frame.
 
 ### 4. Story and structure, now that there is something to solve
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 4 of 44*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 4 of 44*
 
 [reviewers only: card kind `lens`, id `lens-procedure`]
 
@@ -157,13 +157,13 @@ There is one new thing. Once the kind is chosen, you carry out its procedure on 
 
 Two things change on purpose from card to card: the words of the question (“how long”, “how high”, “how far”, “how many times more”) and the setting. None of them tells you the kind. Only what the problem gives and what it asks about does.
 
-**Stays the same from case to case:** the two questions the key asks of every problem in this unit: **“What does the problem give you to work with?”** and **“Does the problem ask how long something is, or how much area or volume it has?”**
+**Stays the same from case to case:** the two questions asked of every problem in this unit: **“What does the problem give you to work with?”** and **“Does the problem ask how long something is, or how much area or volume it has?”**
 
 **Changes on purpose:** the story; the people; the size of the numbers; the units (cm, m, km); which side or which amount is missing; the words of the question (“how long”, “how high”, “how many times more”).
 
 ### 5. Pythagoras’ theorem: what it is like
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 5 of 44*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 5 of 44*
 
 [reviewers only: card kind `portrait`, id `portrait-pyth`]
 
@@ -194,7 +194,7 @@ In your own life you meet this when you fit something through a gap on the slant
 
 ### 6. A question about a new case
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 6 of 44*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 6 of 44*
 
 [reviewers only: card kind `check`, id `check-pyth`]
 
@@ -209,7 +209,7 @@ The pieces you can tap:
 
 **Shown as soon as you tap**
 
-- If you are right: “Right: ‘A shop sells a television whose rectangular display is 48 cm high and 64 cm wide.’.” The words “whose rectangular display is 48 cm high and 64 cm wide” give the lengths of two sides of a *right-angled triangle*, 48 cm and 64 cm, and no angle in degrees besides the square corner. That is **“Two sides of a right-angled triangle”**. The key’s answer for this case is **“Two sides of a right-angled triangle”**, and the name is **Pythagoras’ theorem**.
+- If you are right: “Right: ‘A shop sells a television whose rectangular display is 48 cm high and 64 cm wide.’.” The words “whose rectangular display is 48 cm high and 64 cm wide” give the lengths of two sides of a *right-angled triangle*, 48 cm and 64 cm, and no angle in degrees besides the square corner. That is **“Two sides of a right-angled triangle”**. The answer for this case is **“Two sides of a right-angled triangle”**, and the name is **Pythagoras’ theorem**.
 - If you miss: “The words are ‘A shop sells a television whose rectangular display is 48 cm high and 64 cm wide.’.” The same reason follows, and then a line about the piece you tapped:
   - “The label gives the distance across the display from one corner to the opposite corner.”: That says which distance is wanted. The lengths that are given come in the first sentence.
   - “How long is that distance?”: That is the question. The lengths that are given come in the first sentence.
@@ -217,7 +217,7 @@ The pieces you can tap:
 
 ### 7. Worked: the path across a 30 m by 40 m yard
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 7 of 44*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 7 of 44*
 
 [reviewers only: card kind `solved`, id `solved-pyth-1`]
 
@@ -257,7 +257,7 @@ The same holds for every triangle with a square corner, whatever its size: 30, 4
 
 - Find the number that multiplies by itself to give the result: 50 × 50 = 2,500, so the longest side is 50 m
 
-The total, 2,500, is the number of square metres in the square on the path, so the path is the side of that square: the number that multiplies by itself to give 2,500. That number is the *square root* of 2,500, and the √ key on a calculator finds it. Here 50 × 50 = 2,500 exactly, so the path is 50 m long. As a check, walking along two edges of the yard would be 30 + 40 = 70 m, and a straight line across is shorter than that, so 50 m is a sensible answer.
+The total, 2,500, is the number of square metres in the square on the path, so the path is the side of that square: the number that multiplies by itself to give 2,500. That number is the *square root* of 2,500, and the √ button on a calculator finds it. Here 50 × 50 = 2,500 exactly, so the path is 50 m long. As a check, walking along two edges of the yard would be 30 + 40 = 70 m, and a straight line across is shorter than that, so 50 m is a sensible answer.
 
 **The result**
 
@@ -266,7 +266,7 @@ The path is 50 m long. Going round two edges of the yard would be 70 m, so the p
 
 ### 8. Worked again: the height of a pole held by a cable
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 8 of 44*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 8 of 44*
 
 [reviewers only: card kind `solved`, id `solved-pyth-2`]
 
@@ -315,7 +315,7 @@ The pole is 8 m tall.
 
 ### 9. A question about a new case
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 9 of 44*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 9 of 44*
 
 [reviewers only: card kind `check`, id `check-pyth-last`]
 
@@ -348,7 +348,7 @@ The pole is 8 m tall.
 
 ### 10. A question about a new case
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 10 of 44*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 10 of 44*
 
 [reviewers only: card kind `check`, id `check-pyth-whole`]
 
@@ -381,7 +381,7 @@ The pole is 8 m tall.
 
 ### 11. A side from an angle
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 11 of 44*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 11 of 44*
 
 [reviewers only: card kind `meet`, id `meet-trig`]
 
@@ -402,33 +402,33 @@ What you are shown is a triangle with a square corner, the length of one side, a
 
 To see why, think about a slope of 30°. However long the cable is, a 30° slope always climbs half as much as the cable is long: 10 m of cable climb 5 m, 100 m climb 50 m, and 200 m climb 100 m. The angle fixes how long the side opposite the angle, the height, is compared with the longest side, the cable. That comparison, one side divided by another, stays the same for every triangle with those angles, whatever its size.
 
-Calculators store these comparisons. There are three keys, and each gives one comparison between two sides for any angle you type in, with the calculator set to degrees. The sin key gives the side opposite the angle divided by the longest side: type 30 and it gives 0.5, the half you have just seen. The cos key gives the side next to the angle divided by the longest side. The tan key gives the side opposite the angle divided by the side next to it. Here the three sides need names, and they are always named from the angle. The side opposite the angle is the one that does not touch the angle. The side next to the angle is the one that touches it and is not the longest. The longest side is always the one opposite the square corner.
+Calculators store these comparisons. There are three buttons, and each gives one comparison between two sides for any angle you type in, with the calculator set to degrees. The sin button gives the side opposite the angle divided by the longest side: type 30 and it gives 0.5, the half you have just seen. The cos button gives the side next to the angle divided by the longest side. The tan button gives the side opposite the angle divided by the side next to it. Here the three sides need names, and they are always named from the angle. The side opposite the angle is the one that does not touch the angle. The side next to the angle is the one that touches it and is not the longest. The longest side is always the one opposite the square corner.
 
-You can check what the keys give with a triangle whose sides you know: 3, 4 and 5, which has a square corner. Take the angle between the sides of 4 and 5. It is about 37°. The side opposite it is 3, the side next to it is 4, and the longest side is 5. The sin key at 37° gives 0.6018, close to 3 ÷ 5 = 0.6. The cos key gives 0.7986, close to 4 ÷ 5 = 0.8. The tan key gives 0.7536, close to 3 ÷ 4 = 0.75. They are close and not equal because 37° is the angle to the nearest degree: the exact angle of the 3, 4, 5 triangle is about 36.87°.
+You can check what the buttons give with a triangle whose sides you know: 3, 4 and 5, which has a square corner. Take the angle between the sides of 4 and 5. It is about 37°. The side opposite it is 3, the side next to it is 4, and the longest side is 5. The sin button at 37° gives 0.6018, close to 3 ÷ 5 = 0.6. The cos button gives 0.7986, close to 4 ÷ 5 = 0.8. The tan button gives 0.7536, close to 3 ÷ 4 = 0.75. They are close and not equal because 37° is the angle to the nearest degree: the exact angle of the 3, 4, 5 triangle is about 36.87°.
 
-So the procedure rests on two ideas. First, the angle and a key do the work of the missing side: together they give the comparison between two sides. Second, you have to choose the key whose two sides are the side you know and the side you want, and then use the comparison to find the missing side, by multiplying or by dividing. Here the cable is the longest side and the height is opposite the angle, so the key is sin, and the height is 200 × sin 30° = 200 × 0.5 = 100 m. The two worked problems after this card show every step, and show both multiplying and dividing.
+So the procedure rests on two ideas. First, the angle and a button do the work of the missing side: together they give the comparison between two sides. Second, you have to choose the button whose two sides are the side you know and the side you want, and then use the comparison to find the missing side, by multiplying or by dividing. Here the cable is the longest side and the height is opposite the angle, so the button is sin, and the height is 200 × sin 30° = 200 × 0.5 = 100 m. The two worked problems after this card show every step, and show both multiplying and dividing.
 
 Notice what decides the kind. It is not the size of the angle, or that a cable is involved. It is that the problem has a triangle with a square corner, gives the length of one side and one angle in degrees besides the square corner, and asks how long another side is.
 
 **What you must be able to point to.** A right-angled triangle, the length of one side and one other angle in degrees, and the question how long another side is. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What does the problem give you to work with?”**
+**The question:** **“What does the problem give you to work with?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“One side and one angle of a right-angled triangle”**
+**Its answer for a case like this one:** **“One side and one angle of a right-angled triangle”**
 
-**The key also asks, and this is its answer for a case like this one:** **“Does the problem ask how long something is, or how much area or volume it has?”** **“How long one of its sides or parts is”**
+**There is also this question, and its answer for a case like this one:** **“Does the problem ask how long something is, or how much area or volume it has?”** **“How long one of its sides or parts is”**
 
-A problem like this is **Trigonometry**: finding a side of a triangle with a square corner from one side and one angle, using the calculator key that joins the side you know to the side you want.
+A problem like this is **Trigonometry**: finding a side of a triangle with a square corner from one side and one angle, using the calculator button that joins the side you know to the side you want.
 
 You may also hear this called “sin, cos and tan” or “SOH CAH TOA”. Those words mean the same thing here, and from now on this unit uses one name: **Trigonometry**.
 
 ### 12. Trigonometry: the same thing in a different story
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 12 of 44*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 12 of 44*
 
 [reviewers only: card kind `again`, id `again-trig`]
 
-The ski lift gave you what to point to: a right-angled triangle, the length of one side and one other angle in degrees, and the question how long another side is. Here is a second problem with a different story, a roof, in which the same thing is given. The key will be a different one, because the sides are different.
+The ski lift gave you what to point to: a right-angled triangle, the length of one side and one other angle in degrees, and the question how long another side is. Here is a second problem with a different story, a roof, in which the same thing is given. The button will be a different one, because the sides are different.
 
 The first case again, in one line. *The ski lift*: “is 200 m long and rises at an angle of 30° above level ground”
 
@@ -452,12 +452,12 @@ The pieces you can tap:
 
 Both problems give one length and one angle in degrees, besides the square corner, and ask how long another side is. The ski lift gives the cable, 200 m, which is the longest side, and wants the height, which is opposite the angle. The roof gives 4 m along level ground, which is next to the angle, and wants the height of the ridge, which is opposite the angle.
 
-The sides are not the same in the two stories, so the key is not the same either: the lift joins the side opposite the angle and the longest side, which is the sin key, and the roof joins the side opposite the angle and the side next to it, which is the tan key. What is the same is what is given and what is asked, and that is what you point to.
+The sides are not the same in the two stories, so the button is not the same either: the lift joins the side opposite the angle and the longest side, which is the sin button, and the roof joins the side opposite the angle and the side next to it, which is the tan button. What is the same is what is given and what is asked, and that is what you point to.
 
 
 ### 13. Trigonometry: what it is like
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 13 of 44*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 13 of 44*
 
 [reviewers only: card kind `portrait`, id `portrait-trig`]
 
@@ -468,7 +468,7 @@ You know what to point to for **Trigonometry**. This card fills in the rest of t
 - A slope, a line of sight or a rope that makes an angle with level ground or with a wall: a ramp, a roof, a ladder, a kite string, a cable, the line from your eye to the top of a tower.
 - One length, and one angle in degrees, usually the angle between the slope and the ground, or between your line of sight and the ground. The question asks for another length, often a height or a distance along the ground that is hard to measure directly.
 - Often the longest side is the slope itself, but not always. If the problem says how far you stand from a tower and the angle you look up at, the length you have is next to the angle, and the longest side, your line of sight, is not in the problem at all.
-- A calculator set to degrees, and one of its three keys, is part of the working. The answer is almost never a whole number.
+- A calculator set to degrees, and one of its three buttons, is part of the working. The answer is almost never a whole number.
 
 **What it is not**
 
@@ -488,7 +488,7 @@ In your own life you meet this when someone describes how steep something is in 
 
 ### 14. A question about a new case
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 14 of 44*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 14 of 44*
 
 [reviewers only: card kind `check`, id `check-trig`]
 
@@ -503,7 +503,7 @@ The pieces you can tap:
 
 **Shown as soon as you tap**
 
-- If you are right: “Right: ‘The road is 500 m long and slopes up at an angle of 4° above level.’.” The words “The road is 500 m long and slopes up at an angle of 4° above level” give the length of one side of a *right-angled triangle*, the road, and one angle in degrees besides the square corner. That is **“One side and one angle of a right-angled triangle”**. The key’s answer for this case is **“One side and one angle of a right-angled triangle”**, and the name is **Trigonometry**.
+- If you are right: “Right: ‘The road is 500 m long and slopes up at an angle of 4° above level.’.” The words “The road is 500 m long and slopes up at an angle of 4° above level” give the length of one side of a *right-angled triangle*, the road, and one angle in degrees besides the square corner. That is **“One side and one angle of a right-angled triangle”**. The answer for this case is **“One side and one angle of a right-angled triangle”**, and the name is **Trigonometry**.
 - If you miss: “The words are ‘The road is 500 m long and slopes up at an angle of 4° above level.’.” The same reason follows, and then a line about the piece you tapped:
   - “A cyclist rides up a straight hill road.”: That says what is happening. The length and the angle that are given come in the next sentence.
   - “How high does she climb?”: That is the question. The length and the angle that are given come in the sentence before it.
@@ -511,7 +511,7 @@ The pieces you can tap:
 
 ### 15. Worked: the height of a tower measured at 35°
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 15 of 44*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 15 of 44*
 
 [reviewers only: card kind `solved`, id `solved-trig-1`]
 
@@ -527,35 +527,35 @@ Here is the procedure for the second kind of problem in this unit with real numb
 
 Everything in this procedure is measured from the angle, so the sides are named first. The longest side is always opposite the square corner. The side opposite the angle is the one that does not touch the angle. The side next to the angle is the one that touches it and is not the longest. They have to be named from the angle you were given: from the other end of the slope, the same side would be called by a different name.
 
-- Choose the calculator key that joins the side you know to the side you want: You know the side next to the angle (30 m) and want the side opposite the angle. The tan key joins those two: tan = opposite ÷ next to
+- Choose the calculator button that joins the side you know to the side you want: You know the side next to the angle (30 m) and want the side opposite the angle. The tan button joins those two: tan = opposite ÷ next to
 
 **You are asked:** This step carries the idea. Every statement below is true of the problem. Before you read the reason, choose the one that explains why this step is done.
 
-- Each key gives one fixed comparison between two sides for a given angle, and the third side plays no part in it, so the key to use is the one whose two sides are the side you know and the side you want.
+- Each button (sin, cos or tan) gives one fixed comparison between two sides for a given angle, and the third side plays no part in it, so the button to use is the one whose two sides are the side you know and the side you want.
 - The tower is 30 m from the surveyor.
 - The angle is 35°.
 
 **Shown as soon as you answer**
 
-- The one that explains it: Each key gives one fixed comparison between two sides for a given angle, and the third side plays no part in it, so the key to use is the one whose two sides are the side you know and the side you want.
-  - If you chose “The tower is 30 m from the surveyor.”: That is true, but it does not say how to choose between the three keys.
-  - If you chose “The angle is 35°.”: That is true, and every key needs it, but it does not say which key to use.
+- The one that explains it: Each button (sin, cos or tan) gives one fixed comparison between two sides for a given angle, and the third side plays no part in it, so the button to use is the one whose two sides are the side you know and the side you want.
+  - If you chose “The tower is 30 m from the surveyor.”: That is true, but it does not say how to choose between the three buttons.
+  - If you chose “The angle is 35°.”: That is true, and every button needs it, but it does not say which button to use.
 
-Once the angle of a *right-angled triangle* is fixed, its shape is fixed, and so is how long each side is compared with each other side, whatever the size of the triangle. For 35°, the side opposite the angle is always 0.7002 times as long as the side next to it. A tower ten times as big, seen at 35°, gives the same 0.7002. The tan key stores this comparison: type 35 and it gives 0.7002.
+Once the angle of a *right-angled triangle* is fixed, its shape is fixed, and so is how long each side is compared with each other side, whatever the size of the triangle. For 35°, the side opposite the angle is always 0.7002 times as long as the side next to it. A tower ten times as big, seen at 35°, gives the same 0.7002. The tan button stores this comparison: type 35 and it gives 0.7002.
 
-There are three comparisons, and so three keys. The sin key gives the side opposite the angle divided by the longest side. The cos key gives the side next to the angle divided by the longest side. The tan key gives the side opposite the angle divided by the side next to it. Each key joins two of the three sides. In this problem the side you know is next to the angle and the side you want is opposite it, and the longest side is not in the problem at all, so the key that joins those two is tan.
+There are three comparisons, and so three buttons. The sin button gives the side opposite the angle divided by the longest side. The cos button gives the side next to the angle divided by the longest side. The tan button gives the side opposite the angle divided by the side next to it. Each button joins two of the three sides. In this problem the side you know is next to the angle and the side you want is opposite it, and the longest side is not in the problem at all, so the button that joins those two is tan.
 
-- Write the key’s comparison with the numbers in: tan 35° = height ÷ 30
+- Write the button’s comparison with the numbers in: tan 35° = height ÷ 30
 
-The key’s comparison is a fraction made of two sides: for the tan key, the side opposite the angle on top and the side next to it underneath. Writing it with the numbers in shows where the missing side sits. Here the height, the side you want, is on top, and the 30 m, the side you know, is underneath.
+The button’s comparison is a fraction made of two sides: for the tan button, the side opposite the angle on top and the side next to it underneath. Writing it with the numbers in shows where the missing side sits. Here the height, the side you want, is on top, and the 30 m, the side you know, is underneath.
 
 - Get the side you want on its own: height = 30 × tan 35°
 
-The comparison says that the height divided by 30 gives the key’s value for 35°. So the height is 30 times the key’s value: multiplying both sides of the comparison by 30 leaves the height alone. When the side you want is on top of the comparison, you multiply the side you know by the key’s value. When it is underneath, you divide.
+The comparison says that the height divided by 30 gives the button’s value for 35°. So the height is 30 times the button’s value: multiplying both sides of the comparison by 30 leaves the height alone. When the side you want is on top of the comparison, you multiply the side you know by the button’s value. When it is underneath, you divide.
 
-- Read the key’s value off the calculator, set to degrees, and finish the sum: tan 35° = 0.7002; 30 × 0.7002 = 21.006, so about 21.0 m
+- Read the button’s value off the calculator, set to degrees, and finish the sum: tan 35° = 0.7002; 30 × 0.7002 = 21.006, so about 21.0 m
 
-The calculator has to be set to degrees, because the angle is in degrees. Set to radians, another way of measuring angles, it gives a different number for the same 35. The tan key gives 0.7002 to four decimal places, and 30 × 0.7002 = 21.006, which is 21.0 m to one decimal place. As a check, 35° is less than 45°, where the opposite and next-to sides would be equal, so the height should be less than the 30 m along the ground, and it is.
+The calculator has to be set to degrees, because the angle is in degrees. Set to radians, another way of measuring angles, it gives a different number for the same 35. The tan button gives 0.7002 to four decimal places, and 30 × 0.7002 = 21.006, which is 21.0 m to one decimal place. As a check, 35° is less than 45°, where the opposite and next-to sides would be equal, so the height should be less than the 30 m along the ground, and it is.
 
 **The result**
 
@@ -564,11 +564,11 @@ The tower is about 21.0 m tall.
 
 ### 16. Worked again: how long a ramp is, from its rise and its slope
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 16 of 44*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 16 of 44*
 
 [reviewers only: card kind `solved`, id `solved-trig-2`]
 
-The same procedure for **Trigonometry** in a different story, with a different key and with the side you want underneath, so that the last steps divide.
+The same procedure for **Trigonometry** in a different story, with a different button and with the side you want underneath, so that the last steps divide.
 
 **The problem**
 
@@ -580,35 +580,35 @@ The same procedure for **Trigonometry** in a different story, with a different k
 
 The same first step, from the angle of 6°. The ramp is the longest side, because it is opposite the square corner where the rise meets the ground. The rise of 0.9 m is opposite the angle, and the ground under the ramp is next to it.
 
-- Choose the calculator key that joins the side you know to the side you want: You know the side opposite the angle (0.9 m) and want the longest side. The sin key joins those two: sin = opposite ÷ longest
+- Choose the calculator button that joins the side you know to the side you want: You know the side opposite the angle (0.9 m) and want the longest side. The sin button joins those two: sin = opposite ÷ longest
 
-You know the side opposite the angle, the rise of 0.9 m, and you want the longest side, the ramp. The key that joins the side opposite the angle and the longest side is sin, which gives the side opposite the angle divided by the longest side. The side next to the angle plays no part, which is why the distance along the ground is never needed.
+You know the side opposite the angle, the rise of 0.9 m, and you want the longest side, the ramp. The button that joins the side opposite the angle and the longest side is sin, which gives the side opposite the angle divided by the longest side. The side next to the angle plays no part, which is why the distance along the ground is never needed.
 
-- Write the key’s comparison with the numbers in: sin 6° = 0.9 ÷ ramp
+- Write the button’s comparison with the numbers in: sin 6° = 0.9 ÷ ramp
 
-The same step as in the first problem: the key’s comparison, with the numbers in. This time the side you know, the rise, is on top, and the side you want, the ramp, is underneath.
+The same step as in the first problem: the button’s comparison, with the numbers in. This time the side you know, the rise, is on top, and the side you want, the ramp, is underneath.
 
 - Get the side you want on its own: ramp = 0.9 ÷ sin 6°
 
 **You are asked:** This step carries the idea. Every statement below is true of the problem. Before you read the reason, choose the one that explains why this step is done.
 
-- The side you want is underneath in the comparison, so it is found by dividing the side you know by the key’s value.
+- The side you want is underneath in the comparison, so it is found by dividing the side you know by the button’s value.
 - sin 6° = 0.1045.
 - The ramp is longer than the rise.
 
 **Shown as soon as you answer**
 
-- The one that explains it: The side you want is underneath in the comparison, so it is found by dividing the side you know by the key’s value.
+- The one that explains it: The side you want is underneath in the comparison, so it is found by dividing the side you know by the button’s value.
   - If you chose “sin 6° = 0.1045.”: That is true, but it is the next step’s working, and it does not say why this step divides.
   - If you chose “The ramp is longer than the rise.”: That is true, and it is a good check on the answer, but it does not say why this step divides.
 
-The comparison says that 0.9 divided by the ramp gives the key’s value. So the ramp is the number that 0.9 has to be divided by to give that value, and that is 0.9 divided by the key’s value: ramp = 0.9 ÷ sin 6°. To see it with easy numbers, if a ramp of 10 m rose 1 m, the key’s value would be 1 ÷ 10 = 0.1, and to get the 10 back from the 1 and the 0.1 you divide: 1 ÷ 0.1 = 10.
+The comparison says that 0.9 divided by the ramp gives the button’s value. So the ramp is the number that 0.9 has to be divided by to give that value, and that is 0.9 divided by the button’s value: ramp = 0.9 ÷ sin 6°. To see it with easy numbers, if a ramp of 10 m rose 1 m, the button’s value would be 1 ÷ 10 = 0.1, and to get the 10 back from the 1 and the 0.1 you divide: 1 ÷ 0.1 = 10.
 
 In the first problem the side wanted was on top of the comparison, and the step multiplied. Here the side wanted is underneath, and the step divides. Mixing them up is a common slip: multiplying here would give 0.9 × 0.1045 = 0.09 m, a ramp shorter than its own rise, which is impossible for the longest side of a triangle.
 
-- Read the key’s value off the calculator, set to degrees, and finish the sum: sin 6° = 0.1045; 0.9 ÷ 0.1045 = 8.6124, so about 8.6 m
+- Read the button’s value off the calculator, set to degrees, and finish the sum: sin 6° = 0.1045; 0.9 ÷ 0.1045 = 8.6124, so about 8.6 m
 
-The sin key gives 0.1045 for 6° to four decimal places, and 0.9 ÷ 0.1045 = 8.612, which is 8.6 m to one decimal place. As a check, a ramp is always longer than its own rise, and 8.6 m is much longer than 0.9 m, because a slope of 6° is a gentle one.
+The sin button gives 0.1045 for 6° to four decimal places, and 0.9 ÷ 0.1045 = 8.612, which is 8.6 m to one decimal place. As a check, a ramp is always longer than its own rise, and 8.6 m is much longer than 0.9 m, because a slope of 6° is a gentle one.
 
 **The result**
 
@@ -617,7 +617,7 @@ The ramp is about 8.6 m long along its slope.
 
 ### 17. A question about a new case
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 17 of 44*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 17 of 44*
 
 [reviewers only: card kind `check`, id `check-trig-last`]
 
@@ -626,11 +626,11 @@ The ramp is about 8.6 m long along its slope.
 **The working, step by step** (all but the last step)
 
 - Name the three sides, starting from the angle you were given: The angle is 40°. The longest side, opposite the square corner, is the string, 50 m. The side opposite the angle is the height of the kite. The side next to the angle, the one that is not the longest, is the ground under the kite
-- Choose the calculator key that joins the side you know to the side you want: You know the longest side (50 m) and want the side opposite the angle. The sin key joins those two: sin = opposite ÷ longest
-- Write the key’s comparison with the numbers in: sin 40° = height ÷ 50
+- Choose the calculator button that joins the side you know to the side you want: You know the longest side (50 m) and want the side opposite the angle. The sin button joins those two: sin = opposite ÷ longest
+- Write the button’s comparison with the numbers in: sin 40° = height ÷ 50
 - Get the side you want on its own: height = 50 × sin 40°
 
-**You are asked:** The working is shown up to the last step. The last step is yours: Read the key’s value off the calculator, set to degrees, and finish the sum. Choose what the problem comes to.
+**You are asked:** The working is shown up to the last step. The last step is yours: Read the button’s value off the calculator, set to degrees, and finish the sum. Choose what the problem comes to.
 
 - 32.1 m
 - 38.3 m
@@ -641,18 +641,18 @@ The ramp is about 8.6 m long along its slope.
 - The answer: **32.1 m**.
 - The working, step by step:
   - Name the three sides, starting from the angle you were given: The angle is 40°. The longest side, opposite the square corner, is the string, 50 m. The side opposite the angle is the height of the kite. The side next to the angle, the one that is not the longest, is the ground under the kite
-  - Choose the calculator key that joins the side you know to the side you want: You know the longest side (50 m) and want the side opposite the angle. The sin key joins those two: sin = opposite ÷ longest
-  - Write the key’s comparison with the numbers in: sin 40° = height ÷ 50
+  - Choose the calculator button that joins the side you know to the side you want: You know the longest side (50 m) and want the side opposite the angle. The sin button joins those two: sin = opposite ÷ longest
+  - Write the button’s comparison with the numbers in: sin 40° = height ÷ 50
   - Get the side you want on its own: height = 50 × sin 40°
-  - Read the key’s value off the calculator, set to degrees, and finish the sum: sin 40° = 0.6428; 50 × 0.6428 = 32.14, so about 32.1 m
-  In a *right-angled triangle* the angle settles how long each side is compared with the others, whatever the size of the triangle, and each calculator key gives one of those comparisons for the angle you type in. Choosing the key whose two sides are the one you know and the one you want, and then multiplying or dividing by its value, turns that comparison into the missing length.
-- If you chose 38.3 m: You chose **38.3 m**. That is the answer you get when you use the cos key, which compares the side next to the angle with the longest side, though the two sides in this problem are the longest side and the side opposite the angle.
-- If you chose 77.8 m: You chose **77.8 m**. That is the answer you get when you divide by the key’s value, though the side you want is the one on top of the key’s comparison and the side you know is the one under it, so you should multiply.
+  - Read the button’s value off the calculator, set to degrees, and finish the sum: sin 40° = 0.6428; 50 × 0.6428 = 32.14, so about 32.1 m
+  In a *right-angled triangle* the angle settles how long each side is compared with the others, whatever the size of the triangle, and each calculator button gives one of those comparisons for the angle you type in. Choosing the button whose two sides are the one you know and the one you want, and then multiplying or dividing by its value, turns that comparison into the missing length.
+- If you chose 38.3 m: You chose **38.3 m**. That is the answer you get when you use the cos button, which compares the side next to the angle with the longest side, though the two sides in this problem are the longest side and the side opposite the angle.
+- If you chose 77.8 m: You chose **77.8 m**. That is the answer you get when you divide by the button’s value, though the side you want is the one on top of the button’s comparison and the side you know is the one under it, so you should multiply.
 - Taught on: “Worked: the height of a tower measured at 35°” (one tap opens the card).
 
 ### 18. A question about a new case
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 18 of 44*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 18 of 44*
 
 [reviewers only: card kind `check`, id `check-trig-whole`]
 
@@ -669,18 +669,18 @@ The ramp is about 8.6 m long along its slope.
 - The answer: **2.1 m**.
 - The working, step by step:
   - Name the three sides, starting from the angle you were given: The angle is 70°. The longest side, opposite the square corner, is the ladder, 6 m. The side opposite the angle is the height the ladder reaches up the wall. The side next to the angle, the one that is not the longest, is the distance from the foot of the ladder to the wall
-  - Choose the calculator key that joins the side you know to the side you want: You know the longest side (6 m) and want the side next to the angle. The cos key joins those two: cos = next to ÷ longest
-  - Write the key’s comparison with the numbers in: cos 70° = distance ÷ 6
+  - Choose the calculator button that joins the side you know to the side you want: You know the longest side (6 m) and want the side next to the angle. The cos button joins those two: cos = next to ÷ longest
+  - Write the button’s comparison with the numbers in: cos 70° = distance ÷ 6
   - Get the side you want on its own: distance = 6 × cos 70°
-  - Read the key’s value off the calculator, set to degrees, and finish the sum: cos 70° = 0.342; 6 × 0.342 = 2.052, so about 2.1 m
-  In a *right-angled triangle* the angle settles how long each side is compared with the others, whatever the size of the triangle, and each calculator key gives one of those comparisons for the angle you type in. Choosing the key whose two sides are the one you know and the one you want, and then multiplying or dividing by its value, turns that comparison into the missing length.
-- If you chose 5.6 m: You chose **5.6 m**. That is the answer you get when you use the sin key, which compares the side opposite the angle with the longest side, though the two sides in this problem are the longest side and the side next to the angle.
-- If you chose 3.8 m: You chose **3.8 m**. That is the answer you get when your calculator is set to radians and not to degrees, so the cos key reads 70 as 70 radians and gives 0.6333.
+  - Read the button’s value off the calculator, set to degrees, and finish the sum: cos 70° = 0.342; 6 × 0.342 = 2.052, so about 2.1 m
+  In a *right-angled triangle* the angle settles how long each side is compared with the others, whatever the size of the triangle, and each calculator button gives one of those comparisons for the angle you type in. Choosing the button whose two sides are the one you know and the one you want, and then multiplying or dividing by its value, turns that comparison into the missing length.
+- If you chose 5.6 m: You chose **5.6 m**. That is the answer you get when you use the sin button, which compares the side opposite the angle with the longest side, though the two sides in this problem are the longest side and the side next to the angle.
+- If you chose 3.8 m: You chose **3.8 m**. That is the answer you get when your calculator is set to radians and not to degrees, so the cos button reads 70 as 70 radians and gives 0.6333.
 - Taught on: “Worked: the height of a tower measured at 35°” (one tap opens the card).
 
 ### 19. Pythagoras’ theorem or Trigonometry: telling them apart
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 19 of 44*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 19 of 44*
 
 [reviewers only: card kind `lookalike`, id `look-pyth-trig`]
 
@@ -702,9 +702,9 @@ The first two kinds both find a side of a triangle with a square corner, and a s
 
 **Why this one and not the other**
 
-In Case A the builder gives the ramp, 6.5 m long, and how far from the foot of the dock wall it ends, 6 m. Those are two sides of a triangle with a square corner, and no angle is given. The key’s answer is **“Two sides of a right-angled triangle”**, and the procedure takes the squares away: 6.5 × 6.5 = 42.25, 6 × 6 = 36, and 42.25 − 36 = 6.25, so the height is 2.5 m.
+In Case A the builder gives the ramp, 6.5 m long, and how far from the foot of the dock wall it ends, 6 m. Those are two sides of a triangle with a square corner, and no angle is given. The answer is **“Two sides of a right-angled triangle”**, and the procedure takes the squares away: 6.5 × 6.5 = 42.25, 6 × 6 = 36, and 42.25 − 36 = 6.25, so the height is 2.5 m.
 
-In Case B the builder gives the same ramp, 6.5 m long, and the angle it rises at, 21°. That is one side and one angle, and no second side. The key’s answer is **“One side and one angle of a right-angled triangle”**, and the procedure uses the sin key: 6.5 × sin 21° = 6.5 × 0.3584 = 2.33 m.
+In Case B the builder gives the same ramp, 6.5 m long, and the angle it rises at, 21°. That is one side and one angle, and no second side. The answer is **“One side and one angle of a right-angled triangle”**, and the procedure uses the sin button: 6.5 × sin 21° = 6.5 × 0.3584 = 2.33 m.
 
 The ramp, the dock and the question are the same in both. What differs is only what is given besides the ramp: a second length, or an angle in degrees.
 
@@ -712,7 +712,7 @@ The ramp, the dock and the question are the same in both. What differs is only w
 
 Besides the one length that everyone can see, is a second length given, or an angle in degrees?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Pythagoras’ theorem | Trigonometry |
 |---|---|---|
@@ -730,7 +730,7 @@ Besides the one length that everyone can see, is a second length given, or an an
 
 ### 20. A length on the same shape at another size
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 20 of 44*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 20 of 44*
 
 [reviewers only: card kind `meet`, id `meet-similar`]
 
@@ -755,11 +755,11 @@ Notice what decides the kind. It is not that the problem mentions a model, or a 
 
 **What you must be able to point to.** Two things of exactly the same shape at different sizes, one part measured on both, another part measured on one of them, and the question how long that part is on the other. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What does the problem give you to work with?”**
+**The question:** **“What does the problem give you to work with?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“Two things of the same shape at different sizes”**
+**Its answer for a case like this one:** **“Two things of the same shape at different sizes”**
 
-**The key also asks, and this is its answer for a case like this one:** **“Does the problem ask how long something is, or how much area or volume it has?”** **“How long one of its sides or parts is”**
+**There is also this question, and its answer for a case like this one:** **“Does the problem ask how long something is, or how much area or volume it has?”** **“How long one of its sides or parts is”**
 
 A problem like this is **Similar shapes**: finding a length on one thing from how many times longer it is than a copy of the same shape.
 
@@ -767,7 +767,7 @@ You may also hear this called “similar triangles” or “scale drawings”. T
 
 ### 21. Similar shapes: the same thing in a different story
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 21 of 44*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 21 of 44*
 
 [reviewers only: card kind `again`, id `again-similar`]
 
@@ -800,7 +800,7 @@ In neither problem is there an angle in degrees, and in neither are two sides of
 
 ### 22. Similar shapes: what it is like
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 22 of 44*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 22 of 44*
 
 [reviewers only: card kind `portrait`, id `portrait-similar`]
 
@@ -831,7 +831,7 @@ In your own life you meet this when you read a map or a plan, when you enlarge o
 
 ### 23. A question about a new case
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 23 of 44*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 23 of 44*
 
 [reviewers only: card kind `check`, id `check-similar`]
 
@@ -846,7 +846,7 @@ The pieces you can tap:
 
 **Shown as soon as you tap**
 
-- If you are right: “Right: ‘A school makes a flag as an exact copy of a badge.’.” The words “makes a flag as an exact copy of a badge” give two things of exactly the same shape at different sizes, a badge and a flag, with the width measured on both. That is **“Two things of the same shape at different sizes”**. The key’s answer for this case is **“Two things of the same shape at different sizes”**, and the name is **Similar shapes**.
+- If you are right: “Right: ‘A school makes a flag as an exact copy of a badge.’.” The words “makes a flag as an exact copy of a badge” give two things of exactly the same shape at different sizes, a badge and a flag, with the width measured on both. That is **“Two things of the same shape at different sizes”**. The answer for this case is **“Two things of the same shape at different sizes”**, and the name is **Similar shapes**.
 - If you miss: “The words are ‘A school makes a flag as an exact copy of a badge.’.” The same reason follows, and then a line about the piece you tapped:
   - “The badge is 4 cm wide and 6 cm high, and the flag is 60 cm wide.”: Those lengths matter later, in the working. The words that say the two things have the same shape are in the sentence before.
   - “How high is the flag?”: That is the question. The words that say the two things have the same shape are in the first sentence.
@@ -854,7 +854,7 @@ The pieces you can tap:
 
 ### 24. Worked: how high an enlarged photo is
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 24 of 44*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 24 of 44*
 
 [reviewers only: card kind `solved`, id `solved-similar-1`]
 
@@ -899,7 +899,7 @@ The enlargement is 37.5 cm high.
 
 ### 25. Worked again: how long a toy car is
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 25 of 44*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 25 of 44*
 
 [reviewers only: card kind `solved`, id `solved-similar-2`]
 
@@ -944,7 +944,7 @@ The toy car is 60 cm long.
 
 ### 26. A question about a new case
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 26 of 44*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 26 of 44*
 
 [reviewers only: card kind `check`, id `check-similar-last`]
 
@@ -975,7 +975,7 @@ The toy car is 60 cm long.
 
 ### 27. A question about a new case
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 27 of 44*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 27 of 44*
 
 [reviewers only: card kind `check`, id `check-similar-whole`]
 
@@ -1002,7 +1002,7 @@ The toy car is 60 cm long.
 
 ### 28. A shadow, which shows a triangle and is also a copy
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 28 of 44*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 28 of 44*
 
 [reviewers only: card kind `exception`, id `exc-shadow`]
 
@@ -1012,7 +1012,7 @@ The first kind of problem in this unit had a triangle with a square corner and t
 
 > A woman 1.7 m tall stands in the sun, and her shadow on level ground is 2 m long. At the same moment a tree beside her casts a shadow 14 m long. How tall is the tree?
 
-The problem gives a woman and her shadow: her height, 1.7 m, and the length of her shadow, 2 m. She stands straight up and the ground is level, so her height, her shadow and the line from the top of her head to the tip of her shadow make a triangle with a square corner, and two of its sides are given. That is what you point to for **“Two sides of a right-angled triangle”**. Yet the key’s answer for this case is **“Two things of the same shape at different sizes”**.
+The problem gives a woman and her shadow: her height, 1.7 m, and the length of her shadow, 2 m. She stands straight up and the ground is level, so her height, her shadow and the line from the top of her head to the tip of her shadow make a triangle with a square corner, and two of its sides are given. That is what you point to for **“Two sides of a right-angled triangle”**. Yet the answer for this case is **“Two things of the same shape at different sizes”**.
 
 **You are asked:** This looks like **Pythagoras’ theorem**. Before you read why it is **Similar shapes**, tap the words in the case that settle it.
 
@@ -1031,15 +1031,15 @@ Look at what is wanted. The triangle that is given is the woman’s, and the len
 
 The two triangles have exactly the same shape, because the sun is at the same angle for both at the same moment. So the woman and the tree are two things of exactly the same shape at different sizes, and a length is measured on both: the shadow, 2 m for the woman and 14 m for the tree. The tree’s shadow is 14 ÷ 2 = 7 times as long, so the tree is 7 times as tall as the woman: 1.7 × 7 = 11.9 m.
 
-So the problem shows both: two sides of a triangle with a square corner, and a second thing that is an exact copy at another size. When it shows both, the key’s answer is **“Two things of the same shape at different sizes”**.
+So the problem shows both: two sides of a triangle with a square corner, and a second thing that is an exact copy at another size. When it shows both, the answer is **“Two things of the same shape at different sizes”**.
 
 **How to tell them apart**
 
 Is the length wanted a side of the very triangle whose other sides are given, or a length on a second thing of the same shape?
 
-When a case shows both **“Two sides of a right-angled triangle”** and a second thing of the same shape at a different size, and the length wanted is on that second thing, the key’s answer is **“Two things of the same shape at different sizes”**.
+When a case shows both **“Two sides of a right-angled triangle”** and a second thing of the same shape at a different size, and the length wanted is on that second thing, the answer is **“Two things of the same shape at different sizes”**.
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Pythagoras’ theorem | Similar shapes |
 |---|---|---|
@@ -1048,14 +1048,14 @@ When a case shows both **“Two sides of a right-angled triangle”** and a seco
 | Does the problem ask how long something is, or how much area or volume it has? | How long one of its sides or parts is | How long one of its sides or parts is |
 | What you must be able to point to | A right-angled triangle, the lengths of two of its sides, and the question how long the third side is | Two things of exactly the same shape at different sizes, one part measured on both, another part measured on one of them, and the question how long that part is on the other |
 
-This is the key’s decision, and the test is where the length wanted is. If the length wanted is the third side of the triangle whose two sides are given, the answer is **“Two sides of a right-angled triangle”**: for example, how far it is from the top of her head to the tip of her shadow. If the length wanted is on a second thing of the same shape, the answer is **“Two things of the same shape at different sizes”**.
+This is a decision made for the questions, and the test is where the length wanted is. If the length wanted is the third side of the triangle whose two sides are given, the answer is **“Two sides of a right-angled triangle”**: for example, how far it is from the top of her head to the tip of her shadow. If the length wanted is on a second thing of the same shape, the answer is **“Two things of the same shape at different sizes”**.
 
 A model or a shadow always has this second thing. If a problem gave only the woman and her shadow and asked for the line from her head to the tip of the shadow, there would be no second thing, and the problem would be about a triangle with a square corner and two of its sides.
 
 
 ### 29. Trigonometry or Similar shapes: telling them apart
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 29 of 44*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 29 of 44*
 
 [reviewers only: card kind `lookalike`, id `look-trig-similar`]
 
@@ -1077,9 +1077,9 @@ The second and third kinds are easy to mix up when the length wanted is a height
 
 **Why this one and not the other**
 
-In Case A the pilot stands 80 m from the foot of the lighthouse and sees the lamp at 25° above level ground. That is one length and one angle in degrees, besides the square corner. The key’s answer is **“One side and one angle of a right-angled triangle”**, and the procedure uses the tan key: 80 × tan 25° = 80 × 0.4663 = 37.3 m, the height of the lamp.
+In Case A the pilot stands 80 m from the foot of the lighthouse and sees the lamp at 25° above level ground. That is one length and one angle in degrees, besides the square corner. The answer is **“One side and one angle of a right-angled triangle”**, and the procedure uses the tan button: 80 × tan 25° = 80 × 0.4663 = 37.3 m, the height of the lamp.
 
-In Case B the pilot has a postcard that is an exact copy of the lighthouse. On the card the lighthouse is 12 cm tall and its door is 0.5 cm tall, and the real door is 2 m tall. There is no angle. There are two things of exactly the same shape at different sizes, with the door measured on both. The key’s answer is **“Two things of the same shape at different sizes”**. The real door is 200 cm ÷ 0.5 cm = 400 times longer than the door on the card, so the real lighthouse is 12 × 400 = 4,800 cm, which is 48 m tall.
+In Case B the pilot has a postcard that is an exact copy of the lighthouse. On the card the lighthouse is 12 cm tall and its door is 0.5 cm tall, and the real door is 2 m tall. There is no angle. There are two things of exactly the same shape at different sizes, with the door measured on both. The answer is **“Two things of the same shape at different sizes”**. The real door is 200 cm ÷ 0.5 cm = 400 times longer than the door on the card, so the real lighthouse is 12 × 400 = 4,800 cm, which is 48 m tall.
 
 Both find a height that nobody climbs up to measure. What differs is how: Case A uses an angle, and Case B uses a copy with a part measured on both.
 
@@ -1087,7 +1087,7 @@ Both find a height that nobody climbs up to measure. What differs is how: Case A
 
 Is an angle in degrees given, or a length measured on both of two things of the same shape?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Trigonometry | Similar shapes |
 |---|---|---|
@@ -1099,17 +1099,17 @@ Is an angle in degrees given, or a length measured on both of two things of the 
 
 ### 30. What the problem gives you: the first of this unit’s two questions
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 30 of 44*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 30 of 44*
 
 [reviewers only: card kind `question`, id `q-s1`]
 
-At the foot of each kind’s first card you saw the key’s question with one answer under it. This card puts the question and its three answers in one place, as the key shows them, and says why the key asks it before any working.
+At the foot of each kind’s first card you saw the question with one answer under it. This card puts the question and its three answers in one place and says why it is asked before any working.
 
-**The key asks:** **“What does the problem give you to work with?”**
+**The question:** **“What does the problem give you to work with?”**
 
 **What it is for.** Sorts two sides of a right-angled triangle, from one side and one angle of a right-angled triangle, from two things of the same shape at different sizes.
 
-**Its answers, exactly as the key shows them**
+**Its answers**
 
 - **“Two sides of a right-angled triangle”**
   - Give this answer when the problem has a right-angled triangle, such as a wall and the ground or the edges of a screen, and gives the lengths of two of its sides, and no angle besides the right angle.
@@ -1127,7 +1127,7 @@ Each needs its own procedure. Two sides of a right-angled triangle give the thir
 
 A procedure for the wrong kind still gives a number, and nothing in the number says that it is wrong. The numbers cannot tell you the kind: 3 and 4 can be two sides of a triangle with a square corner, or a part measured on a model and the same part measured on the real thing. What the problem gives you can: two sides of a triangle, one side and an angle, or two things of the same shape.
 
-This question comes first because it sorts the kinds that start from different things. It does not finish the job on its own: the answer for two things of the same shape keeps two kinds, and the key asks a second question of these problems, whose answer you have already seen at the foot of each kind’s first card. Your route is the answer to the key’s first question, then this one, then that one.
+This question comes first because it sorts the kinds that start from different things. It does not finish the job on its own: the answer for two things of the same shape keeps two kinds, and a second question is asked of these problems, whose answer you have already seen at the foot of each kind’s first card. Your answers on the way are your answer to the first question, then to this one, then to that one.
 
 **How to answer it from a case**
 
@@ -1135,26 +1135,26 @@ Look for what the problem gives you, and not for what it asks. Read the numbers 
 
 Two sides of a triangle with a square corner, and no angle in degrees besides the square corner, is **“Two sides of a right-angled triangle”**. One side and one angle in degrees is **“One side and one angle of a right-angled triangle”**. A copy of something at another size, with a length measured on both, is **“Two things of the same shape at different sizes”**.
 
-Put your finger on the words that show it. If a problem shows two of the answers, as the shadow did, the key’s tie-break decides, and the test is where the length wanted is.
+Put your finger on the words that show it. If a problem shows two of the answers, as the shadow did, the tie-break decides, and the test is where the length wanted is.
 
 **When two answers both seem to fit**
 
 Some problems show two of the answers at once, and some pairs of kinds share a story or even the same numbers. Each of those pairs has been set side by side in this unit, and each has a question that tells it apart.
 
 - Pythagoras’ theorem or Trigonometry: Besides the one length that everyone can see, is a second length given, or an angle in degrees?
-- Pythagoras’ theorem or Similar shapes: Is the length wanted a side of the very triangle whose other sides are given, or a length on a second thing of the same shape? When a case shows both **“Two sides of a right-angled triangle”** and a second thing of the same shape at a different size, and the length wanted is on that second thing, the key’s answer is **“Two things of the same shape at different sizes”**.
+- Pythagoras’ theorem or Similar shapes: Is the length wanted a side of the very triangle whose other sides are given, or a length on a second thing of the same shape? When a case shows both **“Two sides of a right-angled triangle”** and a second thing of the same shape at a different size, and the length wanted is on that second thing, the answer is **“Two things of the same shape at different sizes”**.
 - Trigonometry or Similar shapes: Is an angle in degrees given, or a length measured on both of two things of the same shape?
 
 
 ### 31. A question about a new case
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 31 of 44*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 31 of 44*
 
 [reviewers only: card kind `check`, id `check-s1`]
 
 > An escalator in a shop is 18 m long and rises at an angle of 25° above the floor. How high does it lift a shopper?
 
-**The key asks:** **“What does the problem give you to work with?”**
+**The question:** **“What does the problem give you to work with?”**
 
 - Two sides of a right-angled triangle
 - One side and one angle of a right-angled triangle
@@ -1176,7 +1176,7 @@ Some problems show two of the answers at once, and some pairs of kinds share a s
 
 ### 32. Area or volume of the same shape at another size
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 32 of 44*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 32 of 44*
 
 [reviewers only: card kind `meet`, id `meet-sqcube`]
 
@@ -1201,11 +1201,11 @@ Notice what decides the kind. It is not that the problem mentions mats, or boxes
 
 **What you must be able to point to.** Two things of exactly the same shape at different sizes, how many times longer one is than the other, and the question how many times more area or volume it has. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“Does the problem ask how long something is, or how much area or volume it has?”**
+**The question:** **“Does the problem ask how long something is, or how much area or volume it has?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“How much area or volume it has”**
+**Its answer for a case like this one:** **“How much area or volume it has”**
 
-**The key also asks, and this is its answer for a case like this one:** **“What does the problem give you to work with?”** **“Two things of the same shape at different sizes”**
+**There is also this question, and its answer for a case like this one:** **“What does the problem give you to work with?”** **“Two things of the same shape at different sizes”**
 
 A problem like this is **Square-cube law**: the area of a copy grows by how many times longer it is, multiplied by itself, and its volume by how many times longer it is, multiplied by itself twice over. The name joins the two rules into one law about two things of the same shape: the square for an area, and the cube for a volume.
 
@@ -1213,7 +1213,7 @@ You may also hear this called “area and volume grow faster than length”. Tha
 
 ### 33. Square-cube law: the same thing in a different story
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 33 of 44*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 33 of 44*
 
 [reviewers only: card kind `again`, id `again-sqcube`]
 
@@ -1246,7 +1246,7 @@ That is what you point to: two copies, and a question about how much surface or 
 
 ### 34. Square-cube law: what it is like
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 34 of 44*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 34 of 44*
 
 [reviewers only: card kind `portrait`, id `portrait-sqcube`]
 
@@ -1277,7 +1277,7 @@ In your own life you meet this when you compare sizes of things that are priced 
 
 ### 35. A question about a new case
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 35 of 44*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 35 of 44*
 
 [reviewers only: card kind `check`, id `check-sqcube`]
 
@@ -1292,7 +1292,7 @@ The pieces you can tap:
 
 **Shown as soon as you tap**
 
-- If you are right: “Right: ‘A customer asks how many times more cork covers the front of the big board.’.” The words “how many times more cork covers the front of the big board” ask how much of the front of the bigger board is covered, which is a surface. That is **“How much area or volume it has”**. The key’s answer for this case is **“How much area or volume it has”**, and the name is **Square-cube law**.
+- If you are right: “Right: ‘A customer asks how many times more cork covers the front of the big board.’.” The words “how many times more cork covers the front of the big board” ask how much of the front of the bigger board is covered, which is a surface. That is **“How much area or volume it has”**. The answer for this case is **“How much area or volume it has”**, and the name is **Square-cube law**.
 - If you miss: “The words are ‘A customer asks how many times more cork covers the front of the big board.’.” The same reason follows, and then a line about the piece you tapped:
   - “A shop sells a notice board 40 cm wide”: That gives the first board. The words that say what is asked about the boards come in the last sentence.
   - “and another notice board of exactly the same shape that is 80 cm wide.”: That gives the second board. The words that say what is asked about the boards come in the last sentence.
@@ -1300,7 +1300,7 @@ The pieces you can tap:
 
 ### 36. Worked: how much more clay a bigger cube holds
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 36 of 44*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 36 of 44*
 
 [reviewers only: card kind `solved`, id `solved-sqcube-1`]
 
@@ -1349,7 +1349,7 @@ The bigger cube holds 8 times as much clay as the smaller one.
 
 ### 37. Worked again: what the glass for a larger window pane costs
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 37 of 44*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 37 of 44*
 
 [reviewers only: card kind `solved`, id `solved-sqcube-2`]
 
@@ -1398,7 +1398,7 @@ The glass for the larger pane costs 54 euros.
 
 ### 38. A question about a new case
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 38 of 44*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 38 of 44*
 
 [reviewers only: card kind `check`, id `check-sqcube-last`]
 
@@ -1431,7 +1431,7 @@ The glass for the larger pane costs 54 euros.
 
 ### 39. A question about a new case
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 39 of 44*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 39 of 44*
 
 [reviewers only: card kind `check`, id `check-sqcube-whole`]
 
@@ -1458,7 +1458,7 @@ The glass for the larger pane costs 54 euros.
 
 ### 40. Similar shapes or Square-cube law: telling them apart
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 40 of 44*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 40 of 44*
 
 [reviewers only: card kind `lookalike`, id `look-similar-sqcube`]
 
@@ -1480,9 +1480,9 @@ The third and fourth kinds both start from a copy of something at another size, 
 
 **Why this one and not the other**
 
-In Case A the printer asks how high the poster is. That is how long a part is, so the key’s answer is **“How long one of its sides or parts is”**. The poster is 40 ÷ 10 = 4 times longer than the postcard in every direction, so its height is 15 × 4 = 60 cm: the number of times longer is used once.
+In Case A the printer asks how high the poster is. That is how long a part is, so the answer is **“How long one of its sides or parts is”**. The poster is 40 ÷ 10 = 4 times longer than the postcard in every direction, so its height is 15 × 4 = 60 cm: the number of times longer is used once.
 
-In Case B the printer asks how much ink the poster uses, when the postcard uses 2 g. Ink covers a surface, so the key’s answer is **“How much area or volume it has”**. The same 4 times longer gives 4 × 4 = 16 times as much ink, so the poster uses 2 × 16 = 32 g: the number of times longer is multiplied by itself, because a surface has two directions.
+In Case B the printer asks how much ink the poster uses, when the postcard uses 2 g. Ink covers a surface, so the answer is **“How much area or volume it has”**. The same 4 times longer gives 4 × 4 = 16 times as much ink, so the poster uses 2 × 16 = 32 g: the number of times longer is multiplied by itself, because a surface has two directions.
 
 Both problems start from the same two things and the same 4 times longer. What differs is only what is asked: a length, which multiplies once, or an area, which multiplies by itself.
 
@@ -1490,7 +1490,7 @@ Both problems start from the same two things and the same 4 times longer. What d
 
 Does the problem ask how long a part is, or how much surface or how much room inside?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Similar shapes | Square-cube law |
 |---|---|---|
@@ -1508,17 +1508,17 @@ Does the problem ask how long a part is, or how much surface or how much room in
 
 ### 41. How long, or how much area or volume: the second of this unit’s two questions
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 41 of 44*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 41 of 44*
 
 [reviewers only: card kind `question`, id `q-s2`]
 
-The first question left two kinds together, because both start from a thing and its exact copy at another size. This card puts the second question and its two answers in one place, as the key shows them, and says why it comes second.
+The first question left two kinds together, because both start from a thing and its exact copy at another size. This card puts the second question and its two answers in one place and says why it comes second.
 
-**The key asks:** **“Does the problem ask how long something is, or how much area or volume it has?”**
+**The question:** **“Does the problem ask how long something is, or how much area or volume it has?”**
 
 **What it is for.** Sorts a problem that asks for a length from one that asks how much surface or how much room inside something has.
 
-**Its answers, exactly as the key shows them**
+**Its answers**
 
 - **“How long one of its sides or parts is”**
   - Give this answer when the problem asks how long, how high, how far or how wide something is.
@@ -1552,13 +1552,13 @@ A problem can mention both, as when it gives the area of the small thing and ask
 
 ### 42. A question about a new case
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 42 of 44*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 42 of 44*
 
 [reviewers only: card kind `check`, id `check-s2`]
 
 > A bakery sells a small cake box and a big cake box of exactly the same shape. The big box is twice as wide, twice as long and twice as tall as the small box. How many times more cake does the big box hold?
 
-**The key asks:** **“Does the problem ask how long something is, or how much area or volume it has?”**
+**The question:** **“Does the problem ask how long something is, or how much area or volume it has?”**
 
 - How long one of its sides or parts is
 - How much area or volume it has
@@ -1614,11 +1614,11 @@ After each answer, look at the slip named behind a wrong choice. Every wrong cho
 **The working, step by step** (all but the last step)
 
 - Name the three sides, starting from the angle you were given: The angle is 24°. The longest side, opposite the square corner, is the line of sight to the top of the cliff. The side opposite the angle is the height of the cliff. The side next to the angle, the one that is not the longest, is the 150 m along the ground
-- Choose the calculator key that joins the side you know to the side you want: You know the side next to the angle (150 m) and want the side opposite the angle. The tan key joins those two: tan = opposite ÷ next to
-- Write the key’s comparison with the numbers in: tan 24° = height ÷ 150
+- Choose the calculator button that joins the side you know to the side you want: You know the side next to the angle (150 m) and want the side opposite the angle. The tan button joins those two: tan = opposite ÷ next to
+- Write the button’s comparison with the numbers in: tan 24° = height ÷ 150
 - Get the side you want on its own: height = 150 × tan 24°
 
-**You are asked:** The working is shown up to the last step. The last step is yours: Read the key’s value off the calculator, set to degrees, and finish the sum. Choose what the problem comes to.
+**You are asked:** The working is shown up to the last step. The last step is yours: Read the button’s value off the calculator, set to degrees, and finish the sum. Choose what the problem comes to.
 
 - 66.8 m
 - 61.0 m
@@ -1629,13 +1629,13 @@ After each answer, look at the slip named behind a wrong choice. Every wrong cho
 - The answer: **66.8 m**.
 - The working, step by step:
   - Name the three sides, starting from the angle you were given: The angle is 24°. The longest side, opposite the square corner, is the line of sight to the top of the cliff. The side opposite the angle is the height of the cliff. The side next to the angle, the one that is not the longest, is the 150 m along the ground
-  - Choose the calculator key that joins the side you know to the side you want: You know the side next to the angle (150 m) and want the side opposite the angle. The tan key joins those two: tan = opposite ÷ next to
-  - Write the key’s comparison with the numbers in: tan 24° = height ÷ 150
+  - Choose the calculator button that joins the side you know to the side you want: You know the side next to the angle (150 m) and want the side opposite the angle. The tan button joins those two: tan = opposite ÷ next to
+  - Write the button’s comparison with the numbers in: tan 24° = height ÷ 150
   - Get the side you want on its own: height = 150 × tan 24°
-  - Read the key’s value off the calculator, set to degrees, and finish the sum: tan 24° = 0.4452; 150 × 0.4452 = 66.78, so about 66.8 m
-  In a *right-angled triangle* the angle settles how long each side is compared with the others, whatever the size of the triangle, and each calculator key gives one of those comparisons for the angle you type in. Choosing the key whose two sides are the one you know and the one you want, and then multiplying or dividing by its value, turns that comparison into the missing length.
-- If you chose 61.0 m: You chose **61.0 m**. That is the answer you get when you use the sin key, which compares the side opposite the angle with the longest side, though the two sides in this problem are the side next to the angle and the side opposite the angle.
-- If you chose 336.9 m: You chose **336.9 m**. That is the answer you get when you divide by the key’s value, though the side you want is the one on top of the key’s comparison and the side you know is the one under it, so you should multiply.
+  - Read the button’s value off the calculator, set to degrees, and finish the sum: tan 24° = 0.4452; 150 × 0.4452 = 66.78, so about 66.8 m
+  In a *right-angled triangle* the angle settles how long each side is compared with the others, whatever the size of the triangle, and each calculator button gives one of those comparisons for the angle you type in. Choosing the button whose two sides are the one you know and the one you want, and then multiplying or dividing by its value, turns that comparison into the missing length.
+- If you chose 61.0 m: You chose **61.0 m**. That is the answer you get when you use the sin button, which compares the side opposite the angle with the longest side, though the two sides in this problem are the side next to the angle and the side opposite the angle.
+- If you chose 336.9 m: You chose **336.9 m**. That is the answer you get when you divide by the button’s value, though the side you want is the one on top of the button’s comparison and the side you know is the one under it, so you should multiply.
 - Taught on: “Worked: the height of a tower measured at 35°” (one tap opens the card).
 
 **Drill item 3 of 48**
@@ -1674,11 +1674,11 @@ After each answer, look at the slip named behind a wrong choice. Every wrong cho
 **The working, step by step** (all but the last step)
 
 - Name the three sides, starting from the angle you were given: The angle is 5°. The longest side, opposite the square corner, is the road. The side opposite the angle is the climb of 80 m. The side next to the angle, the one that is not the longest, is the level ground under the road
-- Choose the calculator key that joins the side you know to the side you want: You know the side opposite the angle (80 m) and want the side next to the angle. The tan key joins those two: tan = opposite ÷ next to
-- Write the key’s comparison with the numbers in: tan 5° = 80 ÷ distance
+- Choose the calculator button that joins the side you know to the side you want: You know the side opposite the angle (80 m) and want the side next to the angle. The tan button joins those two: tan = opposite ÷ next to
+- Write the button’s comparison with the numbers in: tan 5° = 80 ÷ distance
 - Get the side you want on its own: distance = 80 ÷ tan 5°
 
-**You are asked:** The working is shown up to the last step. The last step is yours: Read the key’s value off the calculator, set to degrees, and finish the sum. Choose what the problem comes to.
+**You are asked:** The working is shown up to the last step. The last step is yours: Read the button’s value off the calculator, set to degrees, and finish the sum. Choose what the problem comes to.
 
 - 914.4 m
 - 917.4 m
@@ -1689,13 +1689,13 @@ After each answer, look at the slip named behind a wrong choice. Every wrong cho
 - The answer: **914.4 m**.
 - The working, step by step:
   - Name the three sides, starting from the angle you were given: The angle is 5°. The longest side, opposite the square corner, is the road. The side opposite the angle is the climb of 80 m. The side next to the angle, the one that is not the longest, is the level ground under the road
-  - Choose the calculator key that joins the side you know to the side you want: You know the side opposite the angle (80 m) and want the side next to the angle. The tan key joins those two: tan = opposite ÷ next to
-  - Write the key’s comparison with the numbers in: tan 5° = 80 ÷ distance
+  - Choose the calculator button that joins the side you know to the side you want: You know the side opposite the angle (80 m) and want the side next to the angle. The tan button joins those two: tan = opposite ÷ next to
+  - Write the button’s comparison with the numbers in: tan 5° = 80 ÷ distance
   - Get the side you want on its own: distance = 80 ÷ tan 5°
-  - Read the key’s value off the calculator, set to degrees, and finish the sum: tan 5° = 0.08749; 80 ÷ 0.08749 = 914.3902, so about 914.4 m
-  In a *right-angled triangle* the angle settles how long each side is compared with the others, whatever the size of the triangle, and each calculator key gives one of those comparisons for the angle you type in. Choosing the key whose two sides are the one you know and the one you want, and then multiplying or dividing by its value, turns that comparison into the missing length.
-- If you chose 917.4 m: You chose **917.4 m**. That is the answer you get when you use the sin key, which compares the side opposite the angle with the longest side, though the two sides in this problem are the side opposite the angle and the side next to the angle.
-- If you chose 7.0 m: You chose **7.0 m**. That is the answer you get when you multiply by the key’s value, though the side you want is the one under the key’s comparison and the side you know is the one on top of it, so you should divide.
+  - Read the button’s value off the calculator, set to degrees, and finish the sum: tan 5° = 0.08749; 80 ÷ 0.08749 = 914.3902, so about 914.4 m
+  In a *right-angled triangle* the angle settles how long each side is compared with the others, whatever the size of the triangle, and each calculator button gives one of those comparisons for the angle you type in. Choosing the button whose two sides are the one you know and the one you want, and then multiplying or dividing by its value, turns that comparison into the missing length.
+- If you chose 917.4 m: You chose **917.4 m**. That is the answer you get when you use the sin button, which compares the side opposite the angle with the longest side, though the two sides in this problem are the side opposite the angle and the side next to the angle.
+- If you chose 7.0 m: You chose **7.0 m**. That is the answer you get when you multiply by the button’s value, though the side you want is the one under the button’s comparison and the side you know is the one on top of it, so you should divide.
 - Taught on: “Worked: the height of a tower measured at 35°” (one tap opens the card).
 
 **Drill item 5 of 48**
@@ -1846,11 +1846,11 @@ After each answer, look at the slip named behind a wrong choice. Every wrong cho
 **The working, step by step** (all but the last step)
 
 - Name the three sides, starting from the angle you were given: The angle is 55°. The longest side, opposite the square corner, is the rope. The side opposite the angle is the tent pole. The side next to the angle, the one that is not the longest, is the 3.5 m along the ground
-- Choose the calculator key that joins the side you know to the side you want: You know the side next to the angle (3.5 m) and want the longest side. The cos key joins those two: cos = next to ÷ longest
-- Write the key’s comparison with the numbers in: cos 55° = 3.5 ÷ rope
+- Choose the calculator button that joins the side you know to the side you want: You know the side next to the angle (3.5 m) and want the longest side. The cos button joins those two: cos = next to ÷ longest
+- Write the button’s comparison with the numbers in: cos 55° = 3.5 ÷ rope
 - Get the side you want on its own: rope = 3.5 ÷ cos 55°
 
-**You are asked:** The working is shown up to the last step. The last step is yours: Read the key’s value off the calculator, set to degrees, and finish the sum. Choose what the problem comes to.
+**You are asked:** The working is shown up to the last step. The last step is yours: Read the button’s value off the calculator, set to degrees, and finish the sum. Choose what the problem comes to.
 
 - 6.1 m
 - 4.3 m
@@ -1861,13 +1861,13 @@ After each answer, look at the slip named behind a wrong choice. Every wrong cho
 - The answer: **6.1 m**.
 - The working, step by step:
   - Name the three sides, starting from the angle you were given: The angle is 55°. The longest side, opposite the square corner, is the rope. The side opposite the angle is the tent pole. The side next to the angle, the one that is not the longest, is the 3.5 m along the ground
-  - Choose the calculator key that joins the side you know to the side you want: You know the side next to the angle (3.5 m) and want the longest side. The cos key joins those two: cos = next to ÷ longest
-  - Write the key’s comparison with the numbers in: cos 55° = 3.5 ÷ rope
+  - Choose the calculator button that joins the side you know to the side you want: You know the side next to the angle (3.5 m) and want the longest side. The cos button joins those two: cos = next to ÷ longest
+  - Write the button’s comparison with the numbers in: cos 55° = 3.5 ÷ rope
   - Get the side you want on its own: rope = 3.5 ÷ cos 55°
-  - Read the key’s value off the calculator, set to degrees, and finish the sum: cos 55° = 0.5736; 3.5 ÷ 0.5736 = 6.1018, so about 6.1 m
-  In a *right-angled triangle* the angle settles how long each side is compared with the others, whatever the size of the triangle, and each calculator key gives one of those comparisons for the angle you type in. Choosing the key whose two sides are the one you know and the one you want, and then multiplying or dividing by its value, turns that comparison into the missing length.
-- If you chose 4.3 m: You chose **4.3 m**. That is the answer you get when you use the sin key, which compares the side opposite the angle with the longest side, though the two sides in this problem are the side next to the angle and the longest side.
-- If you chose 158.2 m: You chose **158.2 m**. That is the answer you get when your calculator is set to radians and not to degrees, so the cos key reads 55 as 55 radians and gives 0.0221.
+  - Read the button’s value off the calculator, set to degrees, and finish the sum: cos 55° = 0.5736; 3.5 ÷ 0.5736 = 6.1018, so about 6.1 m
+  In a *right-angled triangle* the angle settles how long each side is compared with the others, whatever the size of the triangle, and each calculator button gives one of those comparisons for the angle you type in. Choosing the button whose two sides are the one you know and the one you want, and then multiplying or dividing by its value, turns that comparison into the missing length.
+- If you chose 4.3 m: You chose **4.3 m**. That is the answer you get when you use the sin button, which compares the side opposite the angle with the longest side, though the two sides in this problem are the side next to the angle and the longest side.
+- If you chose 158.2 m: You chose **158.2 m**. That is the answer you get when your calculator is set to radians and not to degrees, so the cos button reads 55 as 55 radians and gives 0.0221.
 - Taught on: “Worked: the height of a tower measured at 35°” (one tap opens the card).
 
 **Drill item 11 of 48**
@@ -1970,13 +1970,13 @@ After each answer, look at the slip named behind a wrong choice. Every wrong cho
 - The answer: **13.7 m**.
 - The working, step by step:
   - Name the three sides, starting from the angle you were given: The angle is 20°. The longest side, opposite the square corner, is the diver’s path, 40 m. The side opposite the angle is the depth below the surface. The side next to the angle, the one that is not the longest, is the distance along the surface above her
-  - Choose the calculator key that joins the side you know to the side you want: You know the longest side (40 m) and want the side opposite the angle. The sin key joins those two: sin = opposite ÷ longest
-  - Write the key’s comparison with the numbers in: sin 20° = depth ÷ 40
+  - Choose the calculator button that joins the side you know to the side you want: You know the longest side (40 m) and want the side opposite the angle. The sin button joins those two: sin = opposite ÷ longest
+  - Write the button’s comparison with the numbers in: sin 20° = depth ÷ 40
   - Get the side you want on its own: depth = 40 × sin 20°
-  - Read the key’s value off the calculator, set to degrees, and finish the sum: sin 20° = 0.342; 40 × 0.342 = 13.68, so about 13.7 m
-  In a *right-angled triangle* the angle settles how long each side is compared with the others, whatever the size of the triangle, and each calculator key gives one of those comparisons for the angle you type in. Choosing the key whose two sides are the one you know and the one you want, and then multiplying or dividing by its value, turns that comparison into the missing length.
-- If you chose 37.6 m: You chose **37.6 m**. That is the answer you get when you use the cos key, which compares the side next to the angle with the longest side, though the two sides in this problem are the longest side and the side opposite the angle.
-- If you chose 36.5 m: You chose **36.5 m**. That is the answer you get when your calculator is set to radians and not to degrees, so the sin key reads 20 as 20 radians and gives 0.9129.
+  - Read the button’s value off the calculator, set to degrees, and finish the sum: sin 20° = 0.342; 40 × 0.342 = 13.68, so about 13.7 m
+  In a *right-angled triangle* the angle settles how long each side is compared with the others, whatever the size of the triangle, and each calculator button gives one of those comparisons for the angle you type in. Choosing the button whose two sides are the one you know and the one you want, and then multiplying or dividing by its value, turns that comparison into the missing length.
+- If you chose 37.6 m: You chose **37.6 m**. That is the answer you get when you use the cos button, which compares the side next to the angle with the longest side, though the two sides in this problem are the longest side and the side opposite the angle.
+- If you chose 36.5 m: You chose **36.5 m**. That is the answer you get when your calculator is set to radians and not to degrees, so the sin button reads 20 as 20 radians and gives 0.9129.
 - Taught on: “Worked: the height of a tower measured at 35°” (one tap opens the card).
 
 **Drill item 15 of 48**
@@ -2017,13 +2017,13 @@ After each answer, look at the slip named behind a wrong choice. Every wrong cho
 - The answer: **12.4 m**.
 - The working, step by step:
   - Name the three sides, starting from the angle you were given: The angle is 75°. The longest side, opposite the square corner, is the ladder. The side opposite the angle is the height of 12 m up to the window. The side next to the angle, the one that is not the longest, is the distance from the foot of the ladder to the wall
-  - Choose the calculator key that joins the side you know to the side you want: You know the side opposite the angle (12 m) and want the longest side. The sin key joins those two: sin = opposite ÷ longest
-  - Write the key’s comparison with the numbers in: sin 75° = 12 ÷ ladder
+  - Choose the calculator button that joins the side you know to the side you want: You know the side opposite the angle (12 m) and want the longest side. The sin button joins those two: sin = opposite ÷ longest
+  - Write the button’s comparison with the numbers in: sin 75° = 12 ÷ ladder
   - Get the side you want on its own: ladder = 12 ÷ sin 75°
-  - Read the key’s value off the calculator, set to degrees, and finish the sum: sin 75° = 0.9659; 12 ÷ 0.9659 = 12.4236, so about 12.4 m
-  In a *right-angled triangle* the angle settles how long each side is compared with the others, whatever the size of the triangle, and each calculator key gives one of those comparisons for the angle you type in. Choosing the key whose two sides are the one you know and the one you want, and then multiplying or dividing by its value, turns that comparison into the missing length.
-- If you chose 46.4 m: You chose **46.4 m**. That is the answer you get when you use the cos key, which compares the side next to the angle with the longest side, though the two sides in this problem are the side opposite the angle and the longest side.
-- If you chose 11.6 m: You chose **11.6 m**. That is the answer you get when you multiply by the key’s value, though the side you want is the one under the key’s comparison and the side you know is the one on top of it, so you should divide.
+  - Read the button’s value off the calculator, set to degrees, and finish the sum: sin 75° = 0.9659; 12 ÷ 0.9659 = 12.4236, so about 12.4 m
+  In a *right-angled triangle* the angle settles how long each side is compared with the others, whatever the size of the triangle, and each calculator button gives one of those comparisons for the angle you type in. Choosing the button whose two sides are the one you know and the one you want, and then multiplying or dividing by its value, turns that comparison into the missing length.
+- If you chose 46.4 m: You chose **46.4 m**. That is the answer you get when you use the cos button, which compares the side next to the angle with the longest side, though the two sides in this problem are the side opposite the angle and the longest side.
+- If you chose 11.6 m: You chose **11.6 m**. That is the answer you get when you multiply by the button’s value, though the side you want is the one under the button’s comparison and the side you know is the one on top of it, so you should divide.
 - Taught on: “Worked: the height of a tower measured at 35°” (one tap opens the card).
 
 **Drill item 17 of 48**
@@ -2155,13 +2155,13 @@ After each answer, look at the slip named behind a wrong choice. Every wrong cho
 - The answer: **3.1 m**.
 - The working, step by step:
   - Name the three sides, starting from the angle you were given: The angle is 12°. The longest side, opposite the square corner, is the ramp, 3.2 m. The side opposite the angle is the height of the top of the ramp. The side next to the angle, the one that is not the longest, is the distance along the ground
-  - Choose the calculator key that joins the side you know to the side you want: You know the longest side (3.2 m) and want the side next to the angle. The cos key joins those two: cos = next to ÷ longest
-  - Write the key’s comparison with the numbers in: cos 12° = distance ÷ 3.2
+  - Choose the calculator button that joins the side you know to the side you want: You know the longest side (3.2 m) and want the side next to the angle. The cos button joins those two: cos = next to ÷ longest
+  - Write the button’s comparison with the numbers in: cos 12° = distance ÷ 3.2
   - Get the side you want on its own: distance = 3.2 × cos 12°
-  - Read the key’s value off the calculator, set to degrees, and finish the sum: cos 12° = 0.9781; 3.2 × 0.9781 = 3.1299, so about 3.1 m
-  In a *right-angled triangle* the angle settles how long each side is compared with the others, whatever the size of the triangle, and each calculator key gives one of those comparisons for the angle you type in. Choosing the key whose two sides are the one you know and the one you want, and then multiplying or dividing by its value, turns that comparison into the missing length.
-- If you chose 0.7 m: You chose **0.7 m**. That is the answer you get when you use the tan key, which compares the side opposite the angle with the side next to it, though the two sides in this problem are the longest side and the side next to the angle.
-- If you chose 3.3 m: You chose **3.3 m**. That is the answer you get when you divide by the key’s value, though the side you want is the one on top of the key’s comparison and the side you know is the one under it, so you should multiply.
+  - Read the button’s value off the calculator, set to degrees, and finish the sum: cos 12° = 0.9781; 3.2 × 0.9781 = 3.1299, so about 3.1 m
+  In a *right-angled triangle* the angle settles how long each side is compared with the others, whatever the size of the triangle, and each calculator button gives one of those comparisons for the angle you type in. Choosing the button whose two sides are the one you know and the one you want, and then multiplying or dividing by its value, turns that comparison into the missing length.
+- If you chose 0.7 m: You chose **0.7 m**. That is the answer you get when you use the tan button, which compares the side opposite the angle with the side next to it, though the two sides in this problem are the longest side and the side next to the angle.
+- If you chose 3.3 m: You chose **3.3 m**. That is the answer you get when you divide by the button’s value, though the side you want is the one on top of the button’s comparison and the side you know is the one under it, so you should multiply.
 - Taught on: “Worked: the height of a tower measured at 35°” (one tap opens the card).
 
 **Drill item 23 of 48**
@@ -2209,9 +2209,9 @@ After each answer, look at the slip named behind a wrong choice. Every wrong cho
 - If you chose about 1.6 times as much: You chose **about 1.6 times as much**. That is the answer you get when you multiply by the number of times longer three times over, as for a volume, though the problem asks about an area, which has only two directions that grow.
 - Taught on: “Worked: how much more clay a bigger cube holds” (one tap opens the card).
 
-#### Last stage. No help. First answer the key’s questions in order and give the kind of problem it is. Then work the problem with that procedure and choose the answer.
+#### Last stage. No help. First answer the questions in order and say what kind of problem it is. Then work the problem with that procedure and choose the answer.
 
-Each question is shown with all of its answers from the key, in the key’s order, and the names offered are the four this unit teaches.
+Each question is shown with all of its answers, in order, and the names offered are the four this unit teaches.
 
 **Drill item 25 of 48**
 
@@ -2230,8 +2230,8 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - If you are right: “Right: **How whole numbers split, repeat or are made up.**” The problem asks whether 57 stamps can be shared evenly between albums: “every album holds the same number of stamps” and “Is it possible?”. There is nothing else to work out: no price, no time passing, no shape.
-- If you miss: “The answer is …”, the same reason, and then the line built from the key for the answer you chose.
-- Then, right or wrong: “This case leaves the part of the key you have been taught. The questions that follow this answer come in a part of the course you have not reached, so the case stops here.”
+- If you miss: “The answer is …”, the same reason, and then the line built from the answers’ own wording for the answer you chose.
+- Then, right or wrong: “The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.”
 
 **Drill item 26 of 48**
 
@@ -2250,8 +2250,8 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - If you are right: “Right: **How many ways something can turn out, or how likely it is.**” A drink, a main and a side are each picked from a list of their own, and the question asks how many different results that gives: “one drink out of 6, one main out of 5 and one side out of 4” and “How many different breakfasts can a customer build?”.
-- If you miss: “The answer is …”, the same reason, and then the line built from the key for the answer you chose.
-- Then, right or wrong: “This case leaves the part of the key you have been taught. The questions that follow this answer come in a part of the course you have not reached, so the case stops here.”
+- If you miss: “The answer is …”, the same reason, and then the line built from the answers’ own wording for the answer you chose.
+- Then, right or wrong: “The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.”
 
 **Drill item 27 of 48**
 
@@ -2270,8 +2270,8 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - If you are right: “Right: **A missing number, from a formula, a rate or totals.**” The problem gives a rate, so much for so many metres, and a new amount to scale it to: “sells 6 metres of chain for €15” and “How much will it cost her?”. The price is the number it leaves out.
-- If you miss: “The answer is …”, the same reason, and then the line built from the key for the answer you chose.
-- Then, right or wrong: “This case leaves the part of the key you have been taught. The questions that follow this answer come in a part of the course you have not reached, so the case stops here.”
+- If you miss: “The answer is …”, the same reason, and then the line built from the answers’ own wording for the answer you chose.
+- Then, right or wrong: “The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.”
 
 **Drill item 28 of 48**
 
@@ -2290,8 +2290,8 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - If you are right: “Right: **What an amount becomes over time, or how long it takes.**” One amount, the money in the jar, is followed through time: “Tomas adds €15 to it every month” and “How many months until the jar holds €300?”. It goes up by the same number every month, and the question asks how long it takes to reach a target.
-- If you miss: “The answer is …”, the same reason, and then the line built from the key for the answer you chose.
-- Then, right or wrong: “This case leaves the part of the key you have been taught. The questions that follow this answer come in a part of the course you have not reached, so the case stops here.”
+- If you miss: “The answer is …”, the same reason, and then the line built from the answers’ own wording for the answer you chose.
+- Then, right or wrong: “The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.”
 
 **Drill item 29 of 48**
 
@@ -2310,8 +2310,8 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - If you are right: “Right: **How whole numbers split, repeat or are made up.**” The problem asks whether 57 stamps can be shared evenly between albums: “every album holds the same number of stamps” and “Is it possible?”. There is nothing else to work out: no price, no time passing, no shape.
-- If you miss: “The answer is …”, the same reason, and then the line built from the key for the answer you chose.
-- Then, right or wrong: “This case leaves the part of the key you have been taught. The questions that follow this answer come in a part of the course you have not reached, so the case stops here.”
+- If you miss: “The answer is …”, the same reason, and then the line built from the answers’ own wording for the answer you chose.
+- Then, right or wrong: “The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.”
 
 **Drill item 30 of 48**
 
@@ -2330,8 +2330,8 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - If you are right: “Right: **How many ways something can turn out, or how likely it is.**” A drink, a main and a side are each picked from a list of their own, and the question asks how many different results that gives: “one drink out of 6, one main out of 5 and one side out of 4” and “How many different breakfasts can a customer build?”.
-- If you miss: “The answer is …”, the same reason, and then the line built from the key for the answer you chose.
-- Then, right or wrong: “This case leaves the part of the key you have been taught. The questions that follow this answer come in a part of the course you have not reached, so the case stops here.”
+- If you miss: “The answer is …”, the same reason, and then the line built from the answers’ own wording for the answer you chose.
+- Then, right or wrong: “The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.”
 
 **Drill item 31 of 48**
 
@@ -2356,10 +2356,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
   In a triangle with a square corner, the square on the longest side holds as many tiles as the squares on the two shorter sides together. So the longest side is the number that multiplies by itself to give the sum of the two other sides, each multiplied by itself.
 - If you chose 49 m: You chose **49 m**. That is the answer you get when you add the two sides, 9 + 40, and never multiply them by themselves, though a straight line across is shorter than the two sides one after the other.
 - If you chose 1,681 m²: You chose **1,681 m²**. That is the answer you get when you stop after adding the two results, so you give 1,681, which is an area, and not the length of a side.
-- What does the problem ask you to work out? **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes.** The problem asks “How long is the pipe?”, a length in a *right-angled triangle*. Nothing in it follows an amount through time, hides a number that a *formula* must fit, or counts ways, so the key’s first answer is **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”**.
+- What does the problem ask you to work out? **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes.** The problem asks “How long is the pipe?”, a length in a *right-angled triangle*. Nothing in it follows an amount through time, hides a number that a *formula* must fit, or counts ways, so the answer to the first question is **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”**.
 - What does the problem give you to work with? **Two sides of a right-angled triangle.** The words “a rectangular plot 9 m wide and 40 m long” give the lengths of two sides of a *right-angled triangle*, and no angle in degrees besides the square corner. That is **“Two sides of a right-angled triangle”**.
 - Does the problem ask how long something is, or how much area or volume it has? **How long one of its sides or parts is.** The words “How long is the pipe?” ask how long a side is, which is **“How long one of its sides or parts is”**.
-- Why not **Trigonometry**: No angle in degrees is given besides the square corner, so there is nothing for the calculator’s angle keys to work from. **Trigonometry** would be the name if the problem gave one side and an angle in degrees.
+- Why not **Trigonometry**: No angle in degrees is given besides the square corner, so there is nothing for the calculator’s angle buttons to work from. **Trigonometry** would be the name if the problem gave one side and an angle in degrees.
 - What would make it a different kind: If the problem gave one side and an angle in degrees besides the square corner, and not two sides, it would be **Trigonometry**.
 - Taught on: “Worked: the path across a 30 m by 40 m yard” (one tap opens the card).
 
@@ -2380,14 +2380,14 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - The answer: **19.5 m**, and the kind of problem is **Trigonometry**.
 - The working, step by step:
   - Name the three sides, starting from the angle you were given: The angle is 38°. The longest side, opposite the square corner, is the line of sight to the top of the tree. The side opposite the angle is the height of the tree. The side next to the angle, the one that is not the longest, is the 25 m along the ground
-  - Choose the calculator key that joins the side you know to the side you want: You know the side next to the angle (25 m) and want the side opposite the angle. The tan key joins those two: tan = opposite ÷ next to
-  - Write the key’s comparison with the numbers in: tan 38° = height ÷ 25
+  - Choose the calculator button that joins the side you know to the side you want: You know the side next to the angle (25 m) and want the side opposite the angle. The tan button joins those two: tan = opposite ÷ next to
+  - Write the button’s comparison with the numbers in: tan 38° = height ÷ 25
   - Get the side you want on its own: height = 25 × tan 38°
-  - Read the key’s value off the calculator, set to degrees, and finish the sum: tan 38° = 0.7813; 25 × 0.7813 = 19.5325, so about 19.5 m
-  In a *right-angled triangle* the angle settles how long each side is compared with the others, whatever the size of the triangle, and each calculator key gives one of those comparisons for the angle you type in. Choosing the key whose two sides are the one you know and the one you want, and then multiplying or dividing by its value, turns that comparison into the missing length.
-- If you chose 15.4 m: You chose **15.4 m**. That is the answer you get when you use the sin key, which compares the side opposite the angle with the longest side, though the two sides in this problem are the side next to the angle and the side opposite the angle.
-- If you chose 32.0 m: You chose **32.0 m**. That is the answer you get when you divide by the key’s value, though the side you want is the one on top of the key’s comparison and the side you know is the one under it, so you should multiply.
-- What does the problem ask you to work out? **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes.** The problem asks “How tall is the tree?”, a length in a *right-angled triangle* that is worked out from an angle. Nothing in it follows an amount through time, hides a number that a *formula* must fit, or counts ways, so the key’s first answer is **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”**.
+  - Read the button’s value off the calculator, set to degrees, and finish the sum: tan 38° = 0.7813; 25 × 0.7813 = 19.5325, so about 19.5 m
+  In a *right-angled triangle* the angle settles how long each side is compared with the others, whatever the size of the triangle, and each calculator button gives one of those comparisons for the angle you type in. Choosing the button whose two sides are the one you know and the one you want, and then multiplying or dividing by its value, turns that comparison into the missing length.
+- If you chose 15.4 m: You chose **15.4 m**. That is the answer you get when you use the sin button, which compares the side opposite the angle with the longest side, though the two sides in this problem are the side next to the angle and the side opposite the angle.
+- If you chose 32.0 m: You chose **32.0 m**. That is the answer you get when you divide by the button’s value, though the side you want is the one on top of the button’s comparison and the side you know is the one under it, so you should multiply.
+- What does the problem ask you to work out? **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes.** The problem asks “How tall is the tree?”, a length in a *right-angled triangle* that is worked out from an angle. Nothing in it follows an amount through time, hides a number that a *formula* must fit, or counts ways, so the answer to the first question is **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”**.
 - What does the problem give you to work with? **One side and one angle of a right-angled triangle.** The words “stands on level ground 25 m from the foot of a tree and sees its top at an angle of 38° above level ground” give the length of one side of a *right-angled triangle* and one angle in degrees besides the square corner. That is **“One side and one angle of a right-angled triangle”**.
 - Does the problem ask how long something is, or how much area or volume it has? **How long one of its sides or parts is.** The words “How tall is the tree?” ask how long a side is, which is **“How long one of its sides or parts is”**.
 - Why not **Pythagoras’ theorem**: The problem gives one side and an angle in degrees, and no second side. **Pythagoras’ theorem** would be the name if it gave the lengths of two sides and no angle besides the square corner.
@@ -2411,14 +2411,14 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - The answer: **124.7 m**, and the kind of problem is **Trigonometry**.
 - The working, step by step:
   - Name the three sides, starting from the angle you were given: The angle is 12°. The longest side, opposite the square corner, is the flight path, 600 m. The side opposite the angle is the height gained. The side next to the angle, the one that is not the longest, is the distance along the ground below
-  - Choose the calculator key that joins the side you know to the side you want: You know the longest side (600 m) and want the side opposite the angle. The sin key joins those two: sin = opposite ÷ longest
-  - Write the key’s comparison with the numbers in: sin 12° = height ÷ 600
+  - Choose the calculator button that joins the side you know to the side you want: You know the longest side (600 m) and want the side opposite the angle. The sin button joins those two: sin = opposite ÷ longest
+  - Write the button’s comparison with the numbers in: sin 12° = height ÷ 600
   - Get the side you want on its own: height = 600 × sin 12°
-  - Read the key’s value off the calculator, set to degrees, and finish the sum: sin 12° = 0.2079; 600 × 0.2079 = 124.74, so about 124.7 m
-  In a *right-angled triangle* the angle settles how long each side is compared with the others, whatever the size of the triangle, and each calculator key gives one of those comparisons for the angle you type in. Choosing the key whose two sides are the one you know and the one you want, and then multiplying or dividing by its value, turns that comparison into the missing length.
-- If you chose 586.9 m: You chose **586.9 m**. That is the answer you get when you use the cos key, which compares the side next to the angle with the longest side, though the two sides in this problem are the longest side and the side opposite the angle.
-- If you chose 2,886.0 m: You chose **2,886.0 m**. That is the answer you get when you divide by the key’s value, though the side you want is the one on top of the key’s comparison and the side you know is the one under it, so you should multiply.
-- What does the problem ask you to work out? **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes.** The problem asks “How much height does it gain?”, a length in a *right-angled triangle* that is worked out from an angle. Nothing in it follows an amount through time, hides a number that a *formula* must fit, or counts ways, so the key’s first answer is **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”**.
+  - Read the button’s value off the calculator, set to degrees, and finish the sum: sin 12° = 0.2079; 600 × 0.2079 = 124.74, so about 124.7 m
+  In a *right-angled triangle* the angle settles how long each side is compared with the others, whatever the size of the triangle, and each calculator button gives one of those comparisons for the angle you type in. Choosing the button whose two sides are the one you know and the one you want, and then multiplying or dividing by its value, turns that comparison into the missing length.
+- If you chose 586.9 m: You chose **586.9 m**. That is the answer you get when you use the cos button, which compares the side next to the angle with the longest side, though the two sides in this problem are the longest side and the side opposite the angle.
+- If you chose 2,886.0 m: You chose **2,886.0 m**. That is the answer you get when you divide by the button’s value, though the side you want is the one on top of the button’s comparison and the side you know is the one under it, so you should multiply.
+- What does the problem ask you to work out? **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes.** The problem asks “How much height does it gain?”, a length in a *right-angled triangle* that is worked out from an angle. Nothing in it follows an amount through time, hides a number that a *formula* must fit, or counts ways, so the answer to the first question is **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”**.
 - What does the problem give you to work with? **One side and one angle of a right-angled triangle.** The words “climbs along a straight path 600 m long at an angle of 12° above level ground” give the length of one side of a *right-angled triangle* and one angle in degrees besides the square corner. That is **“One side and one angle of a right-angled triangle”**.
 - Does the problem ask how long something is, or how much area or volume it has? **How long one of its sides or parts is.** The words “How much height does it gain?” ask how long a side is, which is **“How long one of its sides or parts is”**.
 - Why not **Pythagoras’ theorem**: The problem gives one side and an angle in degrees, and no second side. **Pythagoras’ theorem** would be the name if it gave the lengths of two sides and no angle besides the square corner.
@@ -2447,7 +2447,7 @@ Each question is shown with all of its answers from the key, in the key’s orde
   Two things of exactly the same shape differ only in size: every length on the bigger one is the same number of times longer than the matching length on the smaller one. So a part measured on both gives that number of times, and it can be used on any other matching length.
 - If you chose 3.6 cm: You chose **3.6 cm**. That is the answer you get when you divide by the number of times where you should multiply, so the bigger thing gets the shorter length.
 - If you chose 27 cm: You chose **27 cm**. That is the answer you get when you add the same 18 cm that the part measured on both differs by, instead of multiplying by the same number of times, though a copy keeps its shape only if every length is multiplied by the same number.
-- What does the problem ask you to work out? **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes.** The problem asks “How wide is the large pattern?”, a length on one of two things of exactly the same shape. Nothing in it follows an amount through time, hides a number that a *formula* must fit, or counts ways, so the key’s first answer is **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”**.
+- What does the problem ask you to work out? **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes.** The problem asks “How wide is the large pattern?”, a length on one of two things of exactly the same shape. Nothing in it follows an amount through time, hides a number that a *formula* must fit, or counts ways, so the answer to the first question is **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”**.
 - What does the problem give you to work with? **Two things of the same shape at different sizes.** The words “a cloth pattern as an exact copy of a larger one. The small pattern is 12 cm long and 9 cm wide. The large pattern is 30 cm long” give two things of exactly the same shape at different sizes, with a length measured on both. That is **“Two things of the same shape at different sizes”**.
 - Does the problem ask how long something is, or how much area or volume it has? **How long one of its sides or parts is.** The words “How wide is the large pattern?” ask how long a part is, which is **“How long one of its sides or parts is”**.
 - Why not **Square-cube law**: A length is asked, not an area or a volume. **Square-cube law** would be the name if the problem asked how much surface or how much room inside the bigger thing has, or how many times more.
@@ -2477,7 +2477,7 @@ Each question is shown with all of its answers from the key, in the key’s orde
   Two things of exactly the same shape differ only in size: every length on the bigger one is the same number of times longer than the matching length on the smaller one. So a part measured on both gives that number of times, and it can be used on any other matching length.
 - If you chose 200,000 km: You chose **200,000 km**. That is the answer you get when you forget to change the answer from cm into km at the end, so the number is the one in cm and the unit is wrong.
 - If you chose 20 km: You chose **20 km**. That is the answer you get when you divide by 10,000 and not by 100,000 when changing cm into km.
-- What does the problem ask you to work out? **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes.** The problem asks “How far apart are they on the ground, in kilometres?”, a length on one of two things of exactly the same shape. Nothing in it follows an amount through time, hides a number that a *formula* must fit, or counts ways, so the key’s first answer is **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”**.
+- What does the problem ask you to work out? **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes.** The problem asks “How far apart are they on the ground, in kilometres?”, a length on one of two things of exactly the same shape. Nothing in it follows an amount through time, hides a number that a *formula* must fit, or counts ways, so the answer to the first question is **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”**.
 - What does the problem give you to work with? **Two things of the same shape at different sizes.** The words “A map is an exact copy of a region at a scale of 1 to 25,000: every 1 cm on the map stands for 25,000 cm on the ground. Two villages are 8 cm apart on the map” give two things of exactly the same shape at different sizes, with a length measured on both. That is **“Two things of the same shape at different sizes”**.
 - Does the problem ask how long something is, or how much area or volume it has? **How long one of its sides or parts is.** The words “How far apart are they on the ground, in kilometres?” ask how long a part is, which is **“How long one of its sides or parts is”**.
 - Why not **Square-cube law**: A length is asked, not an area or a volume. **Square-cube law** would be the name if the problem asked how much surface or how much room inside the bigger thing has, or how many times more.
@@ -2507,7 +2507,7 @@ Each question is shown with all of its answers from the key, in the key’s orde
   If every length is made a number of times longer, the length, the width and the height of a solid all grow by that number of times, so the solid holds that number multiplied by itself twice over as many unit cubes. Volume grows by the number of times longer, multiplied by itself twice over.
 - If you chose 3 times as much: You chose **3 times as much**. That is the answer you get when you multiply by the number of times longer only once, as for a length, though a volume has three directions, length, width and height, and all of them grow.
 - If you chose 9 times as much: You chose **9 times as much**. That is the answer you get when you multiply by the number of times longer only twice, as for an area, though a volume has a third direction, height, that grows too.
-- What does the problem ask you to work out? **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes.** The problem asks “How many times more jam does the big jar hold?”, a question about how much one of two things of exactly the same shape has, and not a count of ways, an amount through time or a number that a *formula* must fit, so the key’s first answer is **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”**.
+- What does the problem ask you to work out? **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes.** The problem asks “How many times more jam does the big jar hold?”, a question about how much one of two things of exactly the same shape has, and not a count of ways, an amount through time or a number that a *formula* must fit, so the answer to the first question is **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”**.
 - What does the problem give you to work with? **Two things of the same shape at different sizes.** The words “A shop sells a small jam jar 8 cm tall and a big jam jar of exactly the same shape that is 24 cm tall” give two things of exactly the same shape at different sizes, which is **“Two things of the same shape at different sizes”**.
 - Does the problem ask how long something is, or how much area or volume it has? **How much area or volume it has.** The words “How many times more jam does the big jar hold?” ask how much area or volume something has, which is **“How much area or volume it has”**.
 - Why not **Similar shapes**: The problem asks how much area or volume the bigger thing has, not how long one of its parts is. **Similar shapes** would be the name if it asked for a length on the bigger thing.
@@ -2537,10 +2537,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
   In a triangle with a square corner, the square on the longest side holds as many tiles as the squares on the two shorter sides together. So a shorter side is the number that multiplies by itself to give the longest side multiplied by itself, with the other shorter side multiplied by itself taken away.
 - If you chose about 69.3 m: You chose **about 69.3 m**. That is the answer you get when you add the two results, though the longest side is one of the sides you were given, so the other side must be found by taking away.
 - If you chose 2 m: You chose **2 m**. That is the answer you get when you take the shorter side from the longest side, 50 − 48, and never multiply anything by itself, though it is the results that must be taken away.
-- What does the problem ask you to work out? **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes.** The problem asks “How far is the boat from the foot of the lighthouse, measured along the sea?”, a length in a *right-angled triangle*. Nothing in it follows an amount through time, hides a number that a *formula* must fit, or counts ways, so the key’s first answer is **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”**.
+- What does the problem ask you to work out? **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes.** The problem asks “How far is the boat from the foot of the lighthouse, measured along the sea?”, a length in a *right-angled triangle*. Nothing in it follows an amount through time, hides a number that a *formula* must fit, or counts ways, so the answer to the first question is **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”**.
 - What does the problem give you to work with? **Two sides of a right-angled triangle.** The words “lamp is 48 m above the sea” and “A boat is 50 m from the lamp, measured in a straight line” give the lengths of two sides of a *right-angled triangle*, and no angle in degrees besides the square corner. That is **“Two sides of a right-angled triangle”**.
 - Does the problem ask how long something is, or how much area or volume it has? **How long one of its sides or parts is.** The words “How far is the boat from the foot of the lighthouse, measured along the sea?” ask how long a side is, which is **“How long one of its sides or parts is”**.
-- Why not **Trigonometry**: No angle in degrees is given besides the square corner, so there is nothing for the calculator’s angle keys to work from. **Trigonometry** would be the name if the problem gave one side and an angle in degrees.
+- Why not **Trigonometry**: No angle in degrees is given besides the square corner, so there is nothing for the calculator’s angle buttons to work from. **Trigonometry** would be the name if the problem gave one side and an angle in degrees.
 - What would make it a different kind: If the problem gave one side and an angle in degrees besides the square corner, and not two sides, it would be **Trigonometry**.
 - Taught on: “Worked: the path across a 30 m by 40 m yard” (one tap opens the card).
 
@@ -2566,7 +2566,7 @@ Each question is shown with all of its answers from the key, in the key’s orde
   Two things of exactly the same shape differ only in size: every length on the bigger one is the same number of times longer than the matching length on the smaller one. So a part measured on both gives that number of times, and it can be used on any other matching length.
 - If you chose 36 cm: You chose **36 cm**. That is the answer you get when you multiply by the number of times where you should divide, so the smaller thing gets the longer length.
 - If you chose about 1.33 cm: You chose **about 1.33 cm**. That is the answer you get when you divide by the number of times twice over, as for an area, though a length is asked and every length changes only once by that number.
-- What does the problem ask you to work out? **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes.** The problem asks “How high is the new logo?”, a length on one of two things of exactly the same shape. Nothing in it follows an amount through time, hides a number that a *formula* must fit, or counts ways, so the key’s first answer is **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”**.
+- What does the problem ask you to work out? **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes.** The problem asks “How high is the new logo?”, a length on one of two things of exactly the same shape. Nothing in it follows an amount through time, hides a number that a *formula* must fit, or counts ways, so the answer to the first question is **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”**.
 - What does the problem give you to work with? **Two things of the same shape at different sizes.** The words “its logo as an exact copy. The old logo is 18 cm wide and 12 cm high. The new logo is 6 cm wide” give two things of exactly the same shape at different sizes, with a length measured on both. That is **“Two things of the same shape at different sizes”**.
 - Does the problem ask how long something is, or how much area or volume it has? **How long one of its sides or parts is.** The words “How high is the new logo?” ask how long a part is, which is **“How long one of its sides or parts is”**.
 - Why not **Square-cube law**: A length is asked, not an area or a volume. **Square-cube law** would be the name if the problem asked how much surface or how much room inside the bigger thing has, or how many times more.
@@ -2596,10 +2596,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
   In a triangle with a square corner, the square on the longest side holds as many tiles as the squares on the two shorter sides together. So the longest side is the number that multiplies by itself to give the sum of the two other sides, each multiplied by itself.
 - If you chose 4 m²: You chose **4 m²**. That is the answer you get when you stop after adding the two results, so you give 4, which is an area, and not the length of a side.
 - If you chose about 1.1 m: You chose **about 1.1 m**. That is the answer you get when you take the two results away from each other, though the side you want is the longest, so the two results must be added.
-- What does the problem ask you to work out? **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes.** The problem asks “How long is the bar?”, a length in a *right-angled triangle*. Nothing in it follows an amount through time, hides a number that a *formula* must fit, or counts ways, so the key’s first answer is **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”**.
+- What does the problem ask you to work out? **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes.** The problem asks “How long is the bar?”, a length in a *right-angled triangle*. Nothing in it follows an amount through time, hides a number that a *formula* must fit, or counts ways, so the answer to the first question is **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”**.
 - What does the problem give you to work with? **Two sides of a right-angled triangle.** The words “a farm gate that is 1.2 m high and 1.6 m wide” give the lengths of two sides of a *right-angled triangle*, and no angle in degrees besides the square corner. That is **“Two sides of a right-angled triangle”**.
 - Does the problem ask how long something is, or how much area or volume it has? **How long one of its sides or parts is.** The words “How long is the bar?” ask how long a side is, which is **“How long one of its sides or parts is”**.
-- Why not **Trigonometry**: No angle in degrees is given besides the square corner, so there is nothing for the calculator’s angle keys to work from. **Trigonometry** would be the name if the problem gave one side and an angle in degrees.
+- Why not **Trigonometry**: No angle in degrees is given besides the square corner, so there is nothing for the calculator’s angle buttons to work from. **Trigonometry** would be the name if the problem gave one side and an angle in degrees.
 - What would make it a different kind: If the problem gave one side and an angle in degrees besides the square corner, and not two sides, it would be **Trigonometry**.
 - Taught on: “Worked: the path across a 30 m by 40 m yard” (one tap opens the card).
 
@@ -2620,14 +2620,14 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - The answer: **5.0 m**, and the kind of problem is **Trigonometry**.
 - The working, step by step:
   - Name the three sides, starting from the angle you were given: The angle is 33°. The longest side, opposite the square corner, is the rafter. The side opposite the angle is the height of the ridge. The side next to the angle, the one that is not the longest, is the 4.2 m along level ground
-  - Choose the calculator key that joins the side you know to the side you want: You know the side next to the angle (4.2 m) and want the longest side. The cos key joins those two: cos = next to ÷ longest
-  - Write the key’s comparison with the numbers in: cos 33° = 4.2 ÷ rafter
+  - Choose the calculator button that joins the side you know to the side you want: You know the side next to the angle (4.2 m) and want the longest side. The cos button joins those two: cos = next to ÷ longest
+  - Write the button’s comparison with the numbers in: cos 33° = 4.2 ÷ rafter
   - Get the side you want on its own: rafter = 4.2 ÷ cos 33°
-  - Read the key’s value off the calculator, set to degrees, and finish the sum: cos 33° = 0.8387; 4.2 ÷ 0.8387 = 5.0078, so about 5.0 m
-  In a *right-angled triangle* the angle settles how long each side is compared with the others, whatever the size of the triangle, and each calculator key gives one of those comparisons for the angle you type in. Choosing the key whose two sides are the one you know and the one you want, and then multiplying or dividing by its value, turns that comparison into the missing length.
-- If you chose 6.5 m: You chose **6.5 m**. That is the answer you get when you use the tan key, which compares the side opposite the angle with the side next to it, though the two sides in this problem are the side next to the angle and the longest side.
+  - Read the button’s value off the calculator, set to degrees, and finish the sum: cos 33° = 0.8387; 4.2 ÷ 0.8387 = 5.0078, so about 5.0 m
+  In a *right-angled triangle* the angle settles how long each side is compared with the others, whatever the size of the triangle, and each calculator button gives one of those comparisons for the angle you type in. Choosing the button whose two sides are the one you know and the one you want, and then multiplying or dividing by its value, turns that comparison into the missing length.
+- If you chose 6.5 m: You chose **6.5 m**. That is the answer you get when you use the tan button, which compares the side opposite the angle with the side next to it, though the two sides in this problem are the side next to the angle and the longest side.
 - If you chose 7.7 m: You chose **7.7 m**. That is the answer you get when you use the angle at the other end of the slope, 57°, and not the angle you were given, 33°.
-- What does the problem ask you to work out? **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes.** The problem asks “How long is the rafter?”, a length in a *right-angled triangle* that is worked out from an angle. Nothing in it follows an amount through time, hides a number that a *formula* must fit, or counts ways, so the key’s first answer is **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”**.
+- What does the problem ask you to work out? **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes.** The problem asks “How long is the rafter?”, a length in a *right-angled triangle* that is worked out from an angle. Nothing in it follows an amount through time, hides a number that a *formula* must fit, or counts ways, so the answer to the first question is **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”**.
 - What does the problem give you to work with? **One side and one angle of a right-angled triangle.** The words “cuts a straight rafter that must run 4.2 m along level ground and slope at an angle of 33° above level ground” give the length of one side of a *right-angled triangle* and one angle in degrees besides the square corner. That is **“One side and one angle of a right-angled triangle”**.
 - Does the problem ask how long something is, or how much area or volume it has? **How long one of its sides or parts is.** The words “How long is the rafter?” ask how long a side is, which is **“How long one of its sides or parts is”**.
 - Why not **Pythagoras’ theorem**: The problem gives one side and an angle in degrees, and no second side. **Pythagoras’ theorem** would be the name if it gave the lengths of two sides and no angle besides the square corner.
@@ -2657,7 +2657,7 @@ Each question is shown with all of its answers from the key, in the key’s orde
   If every length is made a number of times longer, both the length and the width of a surface grow by that number of times, so the surface holds that number multiplied by itself as many unit squares. Area grows by the number of times longer, multiplied by itself.
 - If you chose 6 g: You chose **6 g**. That is the answer you get when you multiply by the number of times longer only once, as for a length, though an area has two directions, length and width, and both grow.
 - If you chose 54 g: You chose **54 g**. That is the answer you get when you multiply by the number of times longer three times over, as for a volume, though the problem asks about an area, which has only two directions that grow.
-- What does the problem ask you to work out? **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes.** The problem asks “How much glue does the large plaster use?”, a question about how much one of two things of exactly the same shape has, and not a count of ways, an amount through time or a number that a *formula* must fit, so the key’s first answer is **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”**.
+- What does the problem ask you to work out? **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes.** The problem asks “How much glue does the large plaster use?”, a question about how much one of two things of exactly the same shape has, and not a count of ways, an amount through time or a number that a *formula* must fit, so the answer to the first question is **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”**.
 - What does the problem give you to work with? **Two things of the same shape at different sizes.** The words “A small sticking plaster 3 cm wide uses 2 g of glue. A large plaster of exactly the same shape is 9 cm wide” give two things of exactly the same shape at different sizes, which is **“Two things of the same shape at different sizes”**.
 - Does the problem ask how long something is, or how much area or volume it has? **How much area or volume it has.** The words “How much glue does the large plaster use?” ask how much area or volume something has, which is **“How much area or volume it has”**.
 - Why not **Similar shapes**: The problem asks how much area or volume the bigger thing has, not how long one of its parts is. **Similar shapes** would be the name if it asked for a length on the bigger thing.
@@ -2688,7 +2688,7 @@ Each question is shown with all of its answers from the key, in the key’s orde
   Two things of exactly the same shape differ only in size: every length on the bigger one is the same number of times longer than the matching length on the smaller one. So a part measured on both gives that number of times, and it can be used on any other matching length.
 - If you chose 750 m: You chose **750 m**. That is the answer you get when you forget to change the answer from cm into m at the end, so the number is the one in cm and the unit is wrong.
 - If you chose 225 m: You chose **225 m**. That is the answer you get when you multiply by the number of times twice over, as for an area, though a length is asked and every length changes only once by that number.
-- What does the problem ask you to work out? **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes.** The problem asks “How high is the real house, in metres?”, a length on one of two things of exactly the same shape. Nothing in it follows an amount through time, hides a number that a *formula* must fit, or counts ways, so the key’s first answer is **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”**.
+- What does the problem ask you to work out? **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes.** The problem asks “How high is the real house, in metres?”, a length on one of two things of exactly the same shape. Nothing in it follows an amount through time, hides a number that a *formula* must fit, or counts ways, so the answer to the first question is **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”**.
 - What does the problem give you to work with? **Two things of the same shape at different sizes.** The words “a model of a house, an exact copy of it. The model is 40 cm wide and 25 cm high, and the real house is 12 m wide” give two things of exactly the same shape at different sizes, with a length measured on both. That is **“Two things of the same shape at different sizes”**.
 - Does the problem ask how long something is, or how much area or volume it has? **How long one of its sides or parts is.** The words “How high is the real house, in metres?” ask how long a part is, which is **“How long one of its sides or parts is”**.
 - Why not **Square-cube law**: A length is asked, not an area or a volume. **Square-cube law** would be the name if the problem asked how much surface or how much room inside the bigger thing has, or how many times more.
@@ -2718,11 +2718,11 @@ Each question is shown with all of its answers from the key, in the key’s orde
   In a triangle with a square corner, the square on the longest side holds as many tiles as the squares on the two shorter sides together. So the longest side is the number that multiplies by itself to give the sum of the two other sides, each multiplied by itself.
 - If you chose 350 m: You chose **350 m**. That is the answer you get when you add the two sides, 150 + 200, and never multiply them by themselves, though a straight line across is shorter than the two sides one after the other.
 - If you chose 62,500 m²: You chose **62,500 m²**. That is the answer you get when you stop after adding the two results, so you give 62,500, which is an area, and not the length of a side.
-- What does the problem ask you to work out? **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes.** The problem asks “How long is the cable?”, a length in a *right-angled triangle*. Nothing in it follows an amount through time, hides a number that a *formula* must fit, or counts ways, so the key’s first answer is **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”**.
+- What does the problem ask you to work out? **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes.** The problem asks “How long is the cable?”, a length in a *right-angled triangle*. Nothing in it follows an amount through time, hides a number that a *formula* must fit, or counts ways, so the answer to the first question is **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”**.
 - What does the problem give you to work with? **Two sides of a right-angled triangle.** The words “Its top station is 150 m higher than its bottom station and 200 m further along level ground” give the lengths of two sides of a *right-angled triangle*, and no angle in degrees besides the square corner. That is **“Two sides of a right-angled triangle”**.
 - Does the problem ask how long something is, or how much area or volume it has? **How long one of its sides or parts is.** The words “How long is the cable?” ask how long a side is, which is **“How long one of its sides or parts is”**.
-- Why not **Trigonometry**: No angle in degrees is given besides the square corner, so there is nothing for the calculator’s angle keys to work from. **Trigonometry** would be the name if the problem gave one side and an angle in degrees.
-- This case may have brought back *The ski lift*, which was **Trigonometry**. When a likeness and the key disagree, go by the words that answer the key’s question.
+- Why not **Trigonometry**: No angle in degrees is given besides the square corner, so there is nothing for the calculator’s angle buttons to work from. **Trigonometry** would be the name if the problem gave one side and an angle in degrees.
+- This case may have brought back *The ski lift*, which was **Trigonometry**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different kind: If the problem gave the length of the cable and the angle it rises at, and asked how high the top station is, it would be **Trigonometry**.
 - Taught on: “Worked: the path across a 30 m by 40 m yard” (one tap opens the card).
 
@@ -2743,18 +2743,18 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - The answer: **1.7 km**, and the kind of problem is **Trigonometry**.
 - The working, step by step:
   - Name the three sides, starting from the angle you were given: The angle is 25°. The longest side, opposite the square corner, is the track, 4 km. The side opposite the angle is the distance north. The side next to the angle, the one that is not the longest, is the distance east
-  - Choose the calculator key that joins the side you know to the side you want: You know the longest side (4 km) and want the side opposite the angle. The sin key joins those two: sin = opposite ÷ longest
-  - Write the key’s comparison with the numbers in: sin 25° = distance ÷ 4
+  - Choose the calculator button that joins the side you know to the side you want: You know the longest side (4 km) and want the side opposite the angle. The sin button joins those two: sin = opposite ÷ longest
+  - Write the button’s comparison with the numbers in: sin 25° = distance ÷ 4
   - Get the side you want on its own: distance = 4 × sin 25°
-  - Read the key’s value off the calculator, set to degrees, and finish the sum: sin 25° = 0.4226; 4 × 0.4226 = 1.6904, so about 1.7 km
-  In a *right-angled triangle* the angle settles how long each side is compared with the others, whatever the size of the triangle, and each calculator key gives one of those comparisons for the angle you type in. Choosing the key whose two sides are the one you know and the one you want, and then multiplying or dividing by its value, turns that comparison into the missing length.
-- If you chose 3.6 km: You chose **3.6 km**. That is the answer you get when you use the cos key, which compares the side next to the angle with the longest side, though the two sides in this problem are the longest side and the side opposite the angle.
-- If you chose 9.5 km: You chose **9.5 km**. That is the answer you get when you divide by the key’s value, though the side you want is the one on top of the key’s comparison and the side you know is the one under it, so you should multiply.
-- What does the problem ask you to work out? **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes.** The problem asks “How far north of her starting point is she?”, a length in a *right-angled triangle* that is worked out from an angle. Nothing in it follows an amount through time, hides a number that a *formula* must fit, or counts ways, so the key’s first answer is **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”**.
+  - Read the button’s value off the calculator, set to degrees, and finish the sum: sin 25° = 0.4226; 4 × 0.4226 = 1.6904, so about 1.7 km
+  In a *right-angled triangle* the angle settles how long each side is compared with the others, whatever the size of the triangle, and each calculator button gives one of those comparisons for the angle you type in. Choosing the button whose two sides are the one you know and the one you want, and then multiplying or dividing by its value, turns that comparison into the missing length.
+- If you chose 3.6 km: You chose **3.6 km**. That is the answer you get when you use the cos button, which compares the side next to the angle with the longest side, though the two sides in this problem are the longest side and the side opposite the angle.
+- If you chose 9.5 km: You chose **9.5 km**. That is the answer you get when you divide by the button’s value, though the side you want is the one on top of the button’s comparison and the side you know is the one under it, so you should multiply.
+- What does the problem ask you to work out? **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes.** The problem asks “How far north of her starting point is she?”, a length in a *right-angled triangle* that is worked out from an angle. Nothing in it follows an amount through time, hides a number that a *formula* must fit, or counts ways, so the answer to the first question is **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”**.
 - What does the problem give you to work with? **One side and one angle of a right-angled triangle.** The words “follows a straight track that points 25° north of due east and walks 4 km along it” give the length of one side of a *right-angled triangle* and one angle in degrees besides the square corner. That is **“One side and one angle of a right-angled triangle”**.
 - Does the problem ask how long something is, or how much area or volume it has? **How long one of its sides or parts is.** The words “How far north of her starting point is she?” ask how long a side is, which is **“How long one of its sides or parts is”**.
 - Why not **Pythagoras’ theorem**: The problem gives one side and an angle in degrees, and no second side. **Pythagoras’ theorem** would be the name if it gave the lengths of two sides and no angle besides the square corner.
-- This case may have brought back *The hike*, which was **Pythagoras’ theorem**. When a likeness and the key disagree, go by the words that answer the key’s question.
+- This case may have brought back *The hike*, which was **Pythagoras’ theorem**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different kind: If the problem gave how far she walked east and how far north, and asked how far she is from her start in a straight line, it would be **Pythagoras’ theorem**.
 - Taught on: “Worked: the height of a tower measured at 35°” (one tap opens the card).
 
@@ -2780,11 +2780,11 @@ Each question is shown with all of its answers from the key, in the key’s orde
   Two things of exactly the same shape differ only in size: every length on the bigger one is the same number of times longer than the matching length on the smaller one. So a part measured on both gives that number of times, and it can be used on any other matching length.
 - If you chose 10 cm: You chose **10 cm**. That is the answer you get when you divide by the number of times where you should multiply, so the bigger thing gets the shorter length.
 - If you chose 70 cm: You chose **70 cm**. That is the answer you get when you add the same 40 cm that the part measured on both differs by, instead of multiplying by the same number of times, though a copy keeps its shape only if every length is multiplied by the same number.
-- What does the problem ask you to work out? **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes.** The problem asks “How high is the poster?”, a length on one of two things of exactly the same shape. Nothing in it follows an amount through time, hides a number that a *formula* must fit, or counts ways, so the key’s first answer is **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”**.
+- What does the problem ask you to work out? **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes.** The problem asks “How high is the poster?”, a length on one of two things of exactly the same shape. Nothing in it follows an amount through time, hides a number that a *formula* must fit, or counts ways, so the answer to the first question is **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”**.
 - What does the problem give you to work with? **Two things of the same shape at different sizes.** The words “A poster is an exact copy of a card. The card is 20 cm wide and 30 cm high, so its area is 600 square cm. The poster is 60 cm wide” give two things of exactly the same shape at different sizes, with a length measured on both. That is **“Two things of the same shape at different sizes”**.
 - Does the problem ask how long something is, or how much area or volume it has? **How long one of its sides or parts is.** The words “How high is the poster?” ask how long a part is, which is **“How long one of its sides or parts is”**.
 - Why not **Square-cube law**: The problem mentions an area, 600 square cm, but it asks how high the poster is, which is a length. **Square-cube law** would be the name if it asked how much paper the poster needs, or how many times more than the card.
-- This case may have brought back *The two mats*, which was **Square-cube law**. When a likeness and the key disagree, go by the words that answer the key’s question.
+- This case may have brought back *The two mats*, which was **Square-cube law**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different kind: If the problem asked how many times more paper the poster needs than the card, and not how high it is, it would be **Square-cube law**.
 - Taught on: “Worked: how high an enlarged photo is” (one tap opens the card).
 
@@ -2811,11 +2811,11 @@ Each question is shown with all of its answers from the key, in the key’s orde
   If every length is made a number of times longer, both the length and the width of a surface grow by that number of times, so the surface holds that number multiplied by itself as many unit squares. Area grows by the number of times longer, multiplied by itself.
 - If you chose 6 litres: You chose **6 litres**. That is the answer you get when you multiply by the number of times longer only once, as for a length, though an area has two directions, length and width, and both grow.
 - If you chose 54 litres: You chose **54 litres**. That is the answer you get when you multiply by the number of times longer three times over, as for a volume, though the problem asks about an area, which has only two directions that grow.
-- What does the problem ask you to work out? **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes.** The problem asks “How much paint do the walls of the garden shed need?”, a question about how much one of two things of exactly the same shape has, and not a count of ways, an amount through time or a number that a *formula* must fit, so the key’s first answer is **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”**.
+- What does the problem ask you to work out? **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes.** The problem asks “How much paint do the walls of the garden shed need?”, a question about how much one of two things of exactly the same shape has, and not a count of ways, an amount through time or a number that a *formula* must fit, so the answer to the first question is **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”**.
 - What does the problem give you to work with? **Two things of the same shape at different sizes.** The words “A garden shed is an exact copy of a model shed. The model shed is 1 m high and the garden shed is 3 m high. The paint for the walls of the model shed is 2 litres” give two things of exactly the same shape at different sizes, which is **“Two things of the same shape at different sizes”**.
 - Does the problem ask how long something is, or how much area or volume it has? **How much area or volume it has.** The words “How much paint do the walls of the garden shed need?” ask how much area or volume something has, which is **“How much area or volume it has”**.
 - Why not **Similar shapes**: The problem asks how much area or volume the bigger thing has, not how long one of its parts is. **Similar shapes** would be the name if it asked for a length on the bigger thing.
-- This case may have brought back *The footbridge model*, which was **Similar shapes**. When a likeness and the key disagree, go by the words that answer the key’s question.
+- This case may have brought back *The footbridge model*, which was **Similar shapes**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different kind: If the problem asked how tall the garden shed is, and gave the height of the model, it would be **Similar shapes**.
 - Taught on: “Worked: how much more clay a bigger cube holds” (one tap opens the card).
 
@@ -2841,11 +2841,11 @@ Each question is shown with all of its answers from the key, in the key’s orde
   Two things of exactly the same shape differ only in size: every length on the bigger one is the same number of times longer than the matching length on the smaller one. So a part measured on both gives that number of times, and it can be used on any other matching length.
 - If you chose 0.24 m: You chose **0.24 m**. That is the answer you get when you divide by the number of times where you should multiply, so the bigger thing gets the shorter length.
 - If you chose 7.6 m: You chose **7.6 m**. That is the answer you get when you add the same 6.4 m that the part measured on both differs by, instead of multiplying by the same number of times, though a copy keeps its shape only if every length is multiplied by the same number.
-- What does the problem ask you to work out? **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes.** The problem asks “How tall is the lamp post?”, a length on one of two things of exactly the same shape. Nothing in it follows an amount through time, hides a number that a *formula* must fit, or counts ways, so the key’s first answer is **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”**.
+- What does the problem ask you to work out? **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes.** The problem asks “How tall is the lamp post?”, a length on one of two things of exactly the same shape. Nothing in it follows an amount through time, hides a number that a *formula* must fit, or counts ways, so the answer to the first question is **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”**.
 - What does the problem give you to work with? **Two things of the same shape at different sizes.** The words “A boy 1.2 m tall casts a shadow 1.6 m long on level ground. At the same moment a lamp post casts a shadow 8 m long” give two things of exactly the same shape at different sizes, with a length measured on both. That is **“Two things of the same shape at different sizes”**.
 - Does the problem ask how long something is, or how much area or volume it has? **How long one of its sides or parts is.** The words “How tall is the lamp post?” ask how long a part is, which is **“How long one of its sides or parts is”**.
 - Why not **Pythagoras’ theorem**: Two lengths are given, but they are not two sides of the triangle whose third side is wanted: the length wanted is on a second thing of the same shape. **Pythagoras’ theorem** would be the name if the length wanted were the third side of that very triangle.
-- This case may have brought back *The hike*, which was **Pythagoras’ theorem**. When a likeness and the key disagree, go by the words that answer the key’s question.
+- This case may have brought back *The hike*, which was **Pythagoras’ theorem**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different kind: If the problem asked how far it is from the top of the boy’s head to the tip of his shadow, it would be **Pythagoras’ theorem**, because that length is the third side of the boy’s own triangle.
 - Taught on: “Worked: how high an enlarged photo is” (one tap opens the card).
 
@@ -2872,25 +2872,25 @@ Each question is shown with all of its answers from the key, in the key’s orde
   If every length is made a number of times longer, the length, the width and the height of a solid all grow by that number of times, so the solid holds that number multiplied by itself twice over as many unit cubes. Volume grows by the number of times longer, multiplied by itself twice over.
 - If you chose 3 times as much: You chose **3 times as much**. That is the answer you get when you multiply by the number of times longer only once, as for a length, though a volume has three directions, length, width and height, and all of them grow.
 - If you chose 9 times as much: You chose **9 times as much**. That is the answer you get when you multiply by the number of times longer only twice, as for an area, though a volume has a third direction, height, that grows too.
-- What does the problem ask you to work out? **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes.** The problem asks “How many times more air does the big balloon hold?”, a question about how much one of two things of exactly the same shape has, and not a count of ways, an amount through time or a number that a *formula* must fit, so the key’s first answer is **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”**.
+- What does the problem ask you to work out? **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes.** The problem asks “How many times more air does the big balloon hold?”, a question about how much one of two things of exactly the same shape has, and not a count of ways, an amount through time or a number that a *formula* must fit, so the answer to the first question is **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”**.
 - What does the problem give you to work with? **Two things of the same shape at different sizes.** The words “A balloon seller has a small balloon 20 cm across and a big balloon, an exact copy of it, that is 60 cm across” give two things of exactly the same shape at different sizes, which is **“Two things of the same shape at different sizes”**.
 - Does the problem ask how long something is, or how much area or volume it has? **How much area or volume it has.** The words “How many times more air does the big balloon hold?” ask how much area or volume something has, which is **“How much area or volume it has”**.
 - Why not **Similar shapes**: The problem asks how much area or volume the bigger thing has, not how long one of its parts is. **Similar shapes** would be the name if it asked for a length on the bigger thing.
-- This case may have brought back *The footbridge model*, which was **Similar shapes**. When a likeness and the key disagree, go by the words that answer the key’s question.
+- This case may have brought back *The footbridge model*, which was **Similar shapes**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different kind: If the problem asked how long the big balloon’s string is, given the small balloon’s string, it would be **Similar shapes**.
 - Taught on: “Worked: how much more clay a bigger cube holds” (one tap opens the card).
 
-**When the drill ends.** The learner sees their own results: first-try accuracy for each stage, whole routes beside single questions, the pair of names they mixed up most often, and what will come back and when. Anything missed was asked again before the drill ended. Nothing here is graded. A miss only decides what comes back.
+**When the drill ends.** The learner sees their own results: first-try accuracy for each stage, whole cases beside single questions, the pair of names they mixed up most often, and what will come back and when. Anything missed was asked again before the drill ended. Nothing here is graded. A miss only decides what comes back.
 
 ### 43. What to carry away
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 43 of 44*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 43 of 44*
 
 [reviewers only: card kind `recap`, id `recap-shape`]
 
-You have now worked problems of all four kinds on your own. This card puts the unit in one place, in the key’s words.
+You have now worked problems of all four kinds on your own. This card puts the unit in one place.
 
-**The key for this unit, in its own words**
+**This unit’s questions and answers**
 
 What does the problem give you to work with?
 - Two sides of a right-angled triangle → Pythagoras’ theorem
@@ -2914,18 +2914,18 @@ Does the problem ask how long something is, or how much area or volume it has?
 
 **To carry away**
 
-- Before any working, ask what the problem gives you and what it asks about, and point to the words that say it. If you cannot point to them, you do not have an answer yet. The key asks two questions in this unit: **“What does the problem give you to work with?”** **“Does the problem ask how long something is, or how much area or volume it has?”**
+- Before any working, ask what the problem gives you and what it asks about, and point to the words that say it. If you cannot point to them, you do not have an answer yet. Two questions are asked in this unit: **“What does the problem give you to work with?”** **“Does the problem ask how long something is, or how much area or volume it has?”**
 - Two sides of a triangle with a square corner lead to **Pythagoras’ theorem**. One side and one angle in degrees lead to **Trigonometry**. Two things of exactly the same shape lead to **Similar shapes** when a length is asked, and to **Square-cube law** when an area or a volume is asked.
 - The story does not tell you the kind. A ramp can be given with two sides, or with one side and an angle, and the answers are found in different ways. The same two posters can ask how high the bigger one is, which is a length, or how much ink it needs, which is an area.
 - For **Pythagoras’ theorem**: find which side is the longest, multiply each side you are given by itself, add the two results if you want the longest side, or take away if you are given it, and find the number that multiplies by itself to give what is left. The square on the longest side is the sum of the squares on the other two.
-- For **Trigonometry**: name the three sides from the angle, choose the key that joins the side you know to the side you want, write its comparison with the numbers in, get the side you want on its own, and read the key off a calculator set to degrees. A side on top of the comparison is found by multiplying, and a side underneath by dividing.
+- For **Trigonometry**: name the three sides from the angle, choose the button that joins the side you know to the side you want, write its comparison with the numbers in, get the side you want on its own, and read the button’s value off a calculator set to degrees. A side on top of the comparison is found by multiplying, and a side underneath by dividing.
 - For **Similar shapes**: find a part that is measured on both things, find how many times longer the bigger one is, and multiply the length you have by that number if it is on the smaller thing, or divide by it if it is on the bigger thing.
 - For **Square-cube law**: find how many times longer the bigger one is, decide whether the problem asks about an area or about a volume, and multiply that number by itself, with two of them for an area and three of them for a volume. Then multiply a known amount by the result, if the problem gives one.
 - When the problem shows a triangle with a square corner and also a second thing of the same shape, such as a shadow, the length wanted decides: a side of that very triangle is **Pythagoras’ theorem**, and a length on the second thing is **Similar shapes**.
 
 ### 44. Where would you meet this?
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 44 of 44*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 44 of 44*
 
 [reviewers only: card kind `transfer`, id `transfer-shape`]
 
@@ -2952,7 +2952,7 @@ One line is enough. It is kept on this device only and is never marked.
 
 ## After the unit: what comes back on later days
 
-A name that is due returns as a case the learner has not seen, next to a case of the name they most often confuse it with. Each is run as a whole route. These are the fresh cases held back for that purpose: three for each name, one for each scheduled return. The first return is about two days after the drill, the next about a week after that, the next about three and a half weeks later.
+A name that is due returns as a case the learner has not seen, next to a case of the name they most often confuse it with. Each is run as a whole case: every question, then the name. These are the fresh cases held back for that purpose: three for each name, one for each scheduled return. The first return is about two days after the drill, the next about a week after that, the next about three and a half weeks later.
 
 **Return case 1 of 12**
 
@@ -2977,10 +2977,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
   In a triangle with a square corner, the square on the longest side holds as many tiles as the squares on the two shorter sides together. So the longest side is the number that multiplies by itself to give the sum of the two other sides, each multiplied by itself.
 - If you chose 2.1 m: You chose **2.1 m**. That is the answer you get when you add the two sides, 0.9 + 1.2, and never multiply them by themselves, though a straight line across is shorter than the two sides one after the other.
 - If you chose 2.25 m²: You chose **2.25 m²**. That is the answer you get when you stop after adding the two results, so you give 2.25, which is an area, and not the length of a side.
-- What does the problem ask you to work out? **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes.** The problem asks “how long it is from one corner to the opposite corner”, a length in a *right-angled triangle*. Nothing in it follows an amount through time, hides a number that a *formula* must fit, or counts ways, so the key’s first answer is **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”**.
+- What does the problem ask you to work out? **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes.** The problem asks “how long it is from one corner to the opposite corner”, a length in a *right-angled triangle*. Nothing in it follows an amount through time, hides a number that a *formula* must fit, or counts ways, so the answer to the first question is **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”**.
 - What does the problem give you to work with? **Two sides of a right-angled triangle.** The words “a rectangular tablecloth 0.9 m wide and 1.2 m long” give the lengths of two sides of a *right-angled triangle*, and no angle in degrees besides the square corner. That is **“Two sides of a right-angled triangle”**.
 - Does the problem ask how long something is, or how much area or volume it has? **How long one of its sides or parts is.** The words “how long it is from one corner to the opposite corner” ask how long a side is, which is **“How long one of its sides or parts is”**.
-- Why not **Trigonometry**: No angle in degrees is given besides the square corner, so there is nothing for the calculator’s angle keys to work from. **Trigonometry** would be the name if the problem gave one side and an angle in degrees.
+- Why not **Trigonometry**: No angle in degrees is given besides the square corner, so there is nothing for the calculator’s angle buttons to work from. **Trigonometry** would be the name if the problem gave one side and an angle in degrees.
 - What would make it a different kind: If the problem gave one side and an angle in degrees besides the square corner, and not two sides, it would be **Trigonometry**.
 - Taught on: “Worked: the path across a 30 m by 40 m yard” (one tap opens the card).
 
@@ -3007,10 +3007,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
   In a triangle with a square corner, the square on the longest side holds as many tiles as the squares on the two shorter sides together. So a shorter side is the number that multiplies by itself to give the longest side multiplied by itself, with the other shorter side multiplied by itself taken away.
 - If you chose about 27.9 m: You chose **about 27.9 m**. That is the answer you get when you add the two results, though the longest side is one of the sides you were given, so the other side must be found by taking away.
 - If you chose 576 m²: You chose **576 m²**. That is the answer you get when you stop after taking the results away, so you give 576, which is an area, and not the length of a side.
-- What does the problem ask you to work out? **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes.** The problem asks “How tall is the mast?”, a length in a *right-angled triangle*. Nothing in it follows an amount through time, hides a number that a *formula* must fit, or counts ways, so the key’s first answer is **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”**.
+- What does the problem ask you to work out? **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes.** The problem asks “How tall is the mast?”, a length in a *right-angled triangle*. Nothing in it follows an amount through time, hides a number that a *formula* must fit, or counts ways, so the answer to the first question is **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”**.
 - What does the problem give you to work with? **Two sides of a right-angled triangle.** The words “A guy wire 26 m long runs from the top of a radio mast to a post in level ground 10 m from the base of the mast” give the lengths of two sides of a *right-angled triangle*, and no angle in degrees besides the square corner. That is **“Two sides of a right-angled triangle”**.
 - Does the problem ask how long something is, or how much area or volume it has? **How long one of its sides or parts is.** The words “How tall is the mast?” ask how long a side is, which is **“How long one of its sides or parts is”**.
-- Why not **Trigonometry**: No angle in degrees is given besides the square corner, so there is nothing for the calculator’s angle keys to work from. **Trigonometry** would be the name if the problem gave one side and an angle in degrees.
+- Why not **Trigonometry**: No angle in degrees is given besides the square corner, so there is nothing for the calculator’s angle buttons to work from. **Trigonometry** would be the name if the problem gave one side and an angle in degrees.
 - What would make it a different kind: If the problem gave one side and an angle in degrees besides the square corner, and not two sides, it would be **Trigonometry**.
 - Taught on: “Worked: the path across a 30 m by 40 m yard” (one tap opens the card).
 
@@ -3037,10 +3037,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
   In a triangle with a square corner, the square on the longest side holds as many tiles as the squares on the two shorter sides together. So the longest side is the number that multiplies by itself to give the sum of the two other sides, each multiplied by itself.
 - If you chose 85 m: You chose **85 m**. That is the answer you get when you add the two sides, 25 + 60, and never multiply them by themselves, though a straight line across is shorter than the two sides one after the other.
 - If you chose about 54.5 m: You chose **about 54.5 m**. That is the answer you get when you take the two results away from each other, though the side you want is the longest, so the two results must be added.
-- What does the problem ask you to work out? **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes.** The problem asks “How far does she run?”, a length in a *right-angled triangle*. Nothing in it follows an amount through time, hides a number that a *formula* must fit, or counts ways, so the key’s first answer is **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”**.
+- What does the problem ask you to work out? **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes.** The problem asks “How far does she run?”, a length in a *right-angled triangle*. Nothing in it follows an amount through time, hides a number that a *formula* must fit, or counts ways, so the answer to the first question is **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”**.
 - What does the problem give you to work with? **Two sides of a right-angled triangle.** The words “a rectangular car park 25 m wide and 60 m long” give the lengths of two sides of a *right-angled triangle*, and no angle in degrees besides the square corner. That is **“Two sides of a right-angled triangle”**.
 - Does the problem ask how long something is, or how much area or volume it has? **How long one of its sides or parts is.** The words “How far does she run?” ask how long a side is, which is **“How long one of its sides or parts is”**.
-- Why not **Trigonometry**: No angle in degrees is given besides the square corner, so there is nothing for the calculator’s angle keys to work from. **Trigonometry** would be the name if the problem gave one side and an angle in degrees.
+- Why not **Trigonometry**: No angle in degrees is given besides the square corner, so there is nothing for the calculator’s angle buttons to work from. **Trigonometry** would be the name if the problem gave one side and an angle in degrees.
 - What would make it a different kind: If the problem gave one side and an angle in degrees besides the square corner, and not two sides, it would be **Trigonometry**.
 - Taught on: “Worked: the path across a 30 m by 40 m yard” (one tap opens the card).
 
@@ -3061,14 +3061,14 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - The answer: **10.6 m**, and the kind of problem is **Trigonometry**.
 - The working, step by step:
   - Name the three sides, starting from the angle you were given: The angle is 28°. The longest side, opposite the square corner, is the line of sight to the top of the post. The side opposite the angle is the height of the post. The side next to the angle, the one that is not the longest, is the 20 m along the ground
-  - Choose the calculator key that joins the side you know to the side you want: You know the side next to the angle (20 m) and want the side opposite the angle. The tan key joins those two: tan = opposite ÷ next to
-  - Write the key’s comparison with the numbers in: tan 28° = height ÷ 20
+  - Choose the calculator button that joins the side you know to the side you want: You know the side next to the angle (20 m) and want the side opposite the angle. The tan button joins those two: tan = opposite ÷ next to
+  - Write the button’s comparison with the numbers in: tan 28° = height ÷ 20
   - Get the side you want on its own: height = 20 × tan 28°
-  - Read the key’s value off the calculator, set to degrees, and finish the sum: tan 28° = 0.5317; 20 × 0.5317 = 10.634, so about 10.6 m
-  In a *right-angled triangle* the angle settles how long each side is compared with the others, whatever the size of the triangle, and each calculator key gives one of those comparisons for the angle you type in. Choosing the key whose two sides are the one you know and the one you want, and then multiplying or dividing by its value, turns that comparison into the missing length.
-- If you chose 9.4 m: You chose **9.4 m**. That is the answer you get when you use the sin key, which compares the side opposite the angle with the longest side, though the two sides in this problem are the side next to the angle and the side opposite the angle.
-- If you chose 37.6 m: You chose **37.6 m**. That is the answer you get when you divide by the key’s value, though the side you want is the one on top of the key’s comparison and the side you know is the one under it, so you should multiply.
-- What does the problem ask you to work out? **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes.** The problem asks “How tall is the post?”, a length in a *right-angled triangle* that is worked out from an angle. Nothing in it follows an amount through time, hides a number that a *formula* must fit, or counts ways, so the key’s first answer is **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”**.
+  - Read the button’s value off the calculator, set to degrees, and finish the sum: tan 28° = 0.5317; 20 × 0.5317 = 10.634, so about 10.6 m
+  In a *right-angled triangle* the angle settles how long each side is compared with the others, whatever the size of the triangle, and each calculator button gives one of those comparisons for the angle you type in. Choosing the button whose two sides are the one you know and the one you want, and then multiplying or dividing by its value, turns that comparison into the missing length.
+- If you chose 9.4 m: You chose **9.4 m**. That is the answer you get when you use the sin button, which compares the side opposite the angle with the longest side, though the two sides in this problem are the side next to the angle and the side opposite the angle.
+- If you chose 37.6 m: You chose **37.6 m**. That is the answer you get when you divide by the button’s value, though the side you want is the one on top of the button’s comparison and the side you know is the one under it, so you should multiply.
+- What does the problem ask you to work out? **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes.** The problem asks “How tall is the post?”, a length in a *right-angled triangle* that is worked out from an angle. Nothing in it follows an amount through time, hides a number that a *formula* must fit, or counts ways, so the answer to the first question is **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”**.
 - What does the problem give you to work with? **One side and one angle of a right-angled triangle.** The words “stands on level ground 20 m from the foot of a billboard post and sees its top at an angle of 28° above level ground” give the length of one side of a *right-angled triangle* and one angle in degrees besides the square corner. That is **“One side and one angle of a right-angled triangle”**.
 - Does the problem ask how long something is, or how much area or volume it has? **How long one of its sides or parts is.** The words “How tall is the post?” ask how long a side is, which is **“How long one of its sides or parts is”**.
 - Why not **Pythagoras’ theorem**: The problem gives one side and an angle in degrees, and no second side. **Pythagoras’ theorem** would be the name if it gave the lengths of two sides and no angle besides the square corner.
@@ -3092,14 +3092,14 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - The answer: **2.8 m**, and the kind of problem is **Trigonometry**.
 - The working, step by step:
   - Name the three sides, starting from the angle you were given: The angle is 38°. The longest side, opposite the square corner, is the slide, 4.5 m. The side opposite the angle is the height of the top of the slide. The side next to the angle, the one that is not the longest, is the distance along the ground
-  - Choose the calculator key that joins the side you know to the side you want: You know the longest side (4.5 m) and want the side opposite the angle. The sin key joins those two: sin = opposite ÷ longest
-  - Write the key’s comparison with the numbers in: sin 38° = height ÷ 4.5
+  - Choose the calculator button that joins the side you know to the side you want: You know the longest side (4.5 m) and want the side opposite the angle. The sin button joins those two: sin = opposite ÷ longest
+  - Write the button’s comparison with the numbers in: sin 38° = height ÷ 4.5
   - Get the side you want on its own: height = 4.5 × sin 38°
-  - Read the key’s value off the calculator, set to degrees, and finish the sum: sin 38° = 0.6157; 4.5 × 0.6157 = 2.7707, so about 2.8 m
-  In a *right-angled triangle* the angle settles how long each side is compared with the others, whatever the size of the triangle, and each calculator key gives one of those comparisons for the angle you type in. Choosing the key whose two sides are the one you know and the one you want, and then multiplying or dividing by its value, turns that comparison into the missing length.
-- If you chose 3.5 m: You chose **3.5 m**. That is the answer you get when you use the cos key, which compares the side next to the angle with the longest side, though the two sides in this problem are the longest side and the side opposite the angle.
-- If you chose 1.3 m: You chose **1.3 m**. That is the answer you get when your calculator is set to radians and not to degrees, so the sin key reads 38 as 38 radians and gives 0.2964.
-- What does the problem ask you to work out? **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes.** The problem asks “How high is the top of the slide above the ground?”, a length in a *right-angled triangle* that is worked out from an angle. Nothing in it follows an amount through time, hides a number that a *formula* must fit, or counts ways, so the key’s first answer is **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”**.
+  - Read the button’s value off the calculator, set to degrees, and finish the sum: sin 38° = 0.6157; 4.5 × 0.6157 = 2.7707, so about 2.8 m
+  In a *right-angled triangle* the angle settles how long each side is compared with the others, whatever the size of the triangle, and each calculator button gives one of those comparisons for the angle you type in. Choosing the button whose two sides are the one you know and the one you want, and then multiplying or dividing by its value, turns that comparison into the missing length.
+- If you chose 3.5 m: You chose **3.5 m**. That is the answer you get when you use the cos button, which compares the side next to the angle with the longest side, though the two sides in this problem are the longest side and the side opposite the angle.
+- If you chose 1.3 m: You chose **1.3 m**. That is the answer you get when your calculator is set to radians and not to degrees, so the sin button reads 38 as 38 radians and gives 0.2964.
+- What does the problem ask you to work out? **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes.** The problem asks “How high is the top of the slide above the ground?”, a length in a *right-angled triangle* that is worked out from an angle. Nothing in it follows an amount through time, hides a number that a *formula* must fit, or counts ways, so the answer to the first question is **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”**.
 - What does the problem give you to work with? **One side and one angle of a right-angled triangle.** The words “is 4.5 m long along its surface and slopes at an angle of 38° to level ground” give the length of one side of a *right-angled triangle* and one angle in degrees besides the square corner. That is **“One side and one angle of a right-angled triangle”**.
 - Does the problem ask how long something is, or how much area or volume it has? **How long one of its sides or parts is.** The words “How high is the top of the slide above the ground?” ask how long a side is, which is **“How long one of its sides or parts is”**.
 - Why not **Pythagoras’ theorem**: The problem gives one side and an angle in degrees, and no second side. **Pythagoras’ theorem** would be the name if it gave the lengths of two sides and no angle besides the square corner.
@@ -3123,14 +3123,14 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - The answer: **4.0 m**, and the kind of problem is **Trigonometry**.
 - The working, step by step:
   - Name the three sides, starting from the angle you were given: The angle is 35°. The longest side, opposite the square corner, is the line along the edges of the steps. The side opposite the angle is the rise of 2.8 m. The side next to the angle, the one that is not the longest, is the distance along the floor
-  - Choose the calculator key that joins the side you know to the side you want: You know the side opposite the angle (2.8 m) and want the side next to the angle. The tan key joins those two: tan = opposite ÷ next to
-  - Write the key’s comparison with the numbers in: tan 35° = 2.8 ÷ distance
+  - Choose the calculator button that joins the side you know to the side you want: You know the side opposite the angle (2.8 m) and want the side next to the angle. The tan button joins those two: tan = opposite ÷ next to
+  - Write the button’s comparison with the numbers in: tan 35° = 2.8 ÷ distance
   - Get the side you want on its own: distance = 2.8 ÷ tan 35°
-  - Read the key’s value off the calculator, set to degrees, and finish the sum: tan 35° = 0.7002; 2.8 ÷ 0.7002 = 3.9989, so about 4.0 m
-  In a *right-angled triangle* the angle settles how long each side is compared with the others, whatever the size of the triangle, and each calculator key gives one of those comparisons for the angle you type in. Choosing the key whose two sides are the one you know and the one you want, and then multiplying or dividing by its value, turns that comparison into the missing length.
-- If you chose 4.9 m: You chose **4.9 m**. That is the answer you get when you use the sin key, which compares the side opposite the angle with the longest side, though the two sides in this problem are the side opposite the angle and the side next to the angle.
-- If you chose 2.0 m: You chose **2.0 m**. That is the answer you get when you multiply by the key’s value, though the side you want is the one under the key’s comparison and the side you know is the one on top of it, so you should divide.
-- What does the problem ask you to work out? **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes.** The problem asks “How far does it run along the floor?”, a length in a *right-angled triangle* that is worked out from an angle. Nothing in it follows an amount through time, hides a number that a *formula* must fit, or counts ways, so the key’s first answer is **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”**.
+  - Read the button’s value off the calculator, set to degrees, and finish the sum: tan 35° = 0.7002; 2.8 ÷ 0.7002 = 3.9989, so about 4.0 m
+  In a *right-angled triangle* the angle settles how long each side is compared with the others, whatever the size of the triangle, and each calculator button gives one of those comparisons for the angle you type in. Choosing the button whose two sides are the one you know and the one you want, and then multiplying or dividing by its value, turns that comparison into the missing length.
+- If you chose 4.9 m: You chose **4.9 m**. That is the answer you get when you use the sin button, which compares the side opposite the angle with the longest side, though the two sides in this problem are the side opposite the angle and the side next to the angle.
+- If you chose 2.0 m: You chose **2.0 m**. That is the answer you get when you multiply by the button’s value, though the side you want is the one under the button’s comparison and the side you know is the one on top of it, so you should divide.
+- What does the problem ask you to work out? **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes.** The problem asks “How far does it run along the floor?”, a length in a *right-angled triangle* that is worked out from an angle. Nothing in it follows an amount through time, hides a number that a *formula* must fit, or counts ways, so the answer to the first question is **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”**.
 - What does the problem give you to work with? **One side and one angle of a right-angled triangle.** The words “rises 2.8 m at a slope of 35° above the floor” give the length of one side of a *right-angled triangle* and one angle in degrees besides the square corner. That is **“One side and one angle of a right-angled triangle”**.
 - Does the problem ask how long something is, or how much area or volume it has? **How long one of its sides or parts is.** The words “How far does it run along the floor?” ask how long a side is, which is **“How long one of its sides or parts is”**.
 - Why not **Pythagoras’ theorem**: The problem gives one side and an angle in degrees, and no second side. **Pythagoras’ theorem** would be the name if it gave the lengths of two sides and no angle besides the square corner.
@@ -3159,7 +3159,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
   Two things of exactly the same shape differ only in size: every length on the bigger one is the same number of times longer than the matching length on the smaller one. So a part measured on both gives that number of times, and it can be used on any other matching length.
 - If you chose 240 cm: You chose **240 cm**. That is the answer you get when you multiply by the number of times where you should divide, so the smaller thing gets the longer length.
 - If you chose 3.75 cm: You chose **3.75 cm**. That is the answer you get when you divide by the number of times twice over, as for an area, though a length is asked and every length changes only once by that number.
-- What does the problem ask you to work out? **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes.** The problem asks “How high is the small menu?”, a length on one of two things of exactly the same shape. Nothing in it follows an amount through time, hides a number that a *formula* must fit, or counts ways, so the key’s first answer is **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”**.
+- What does the problem ask you to work out? **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes.** The problem asks “How high is the small menu?”, a length on one of two things of exactly the same shape. Nothing in it follows an amount through time, hides a number that a *formula* must fit, or counts ways, so the answer to the first question is **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”**.
 - What does the problem give you to work with? **Two things of the same shape at different sizes.** The words “a small menu as an exact copy of a big one. The big menu is 40 cm wide and 60 cm high. The small menu is 10 cm wide” give two things of exactly the same shape at different sizes, with a length measured on both. That is **“Two things of the same shape at different sizes”**.
 - Does the problem ask how long something is, or how much area or volume it has? **How long one of its sides or parts is.** The words “How high is the small menu?” ask how long a part is, which is **“How long one of its sides or parts is”**.
 - Why not **Square-cube law**: A length is asked, not an area or a volume. **Square-cube law** would be the name if the problem asked how much surface or how much room inside the bigger thing has, or how many times more.
@@ -3189,7 +3189,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
   Two things of exactly the same shape differ only in size: every length on the bigger one is the same number of times longer than the matching length on the smaller one. So a part measured on both gives that number of times, and it can be used on any other matching length.
 - If you chose 700 m: You chose **700 m**. That is the answer you get when you forget to change the answer from cm into m at the end, so the number is the one in cm and the unit is wrong.
 - If you chose 70 m: You chose **70 m**. That is the answer you get when you divide by 10 and not by 100 when changing cm into m.
-- What does the problem ask you to work out? **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes.** The problem asks “How long is the real lorry, in metres?”, a length on one of two things of exactly the same shape. Nothing in it follows an amount through time, hides a number that a *formula* must fit, or counts ways, so the key’s first answer is **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”**.
+- What does the problem ask you to work out? **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes.** The problem asks “How long is the real lorry, in metres?”, a length on one of two things of exactly the same shape. Nothing in it follows an amount through time, hides a number that a *formula* must fit, or counts ways, so the answer to the first question is **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”**.
 - What does the problem give you to work with? **Two things of the same shape at different sizes.** The words “A model of a lorry is an exact copy at a scale of 1 to 25: every 1 cm on the model stands for 25 cm on the lorry. The model is 28 cm long” give two things of exactly the same shape at different sizes, with a length measured on both. That is **“Two things of the same shape at different sizes”**.
 - Does the problem ask how long something is, or how much area or volume it has? **How long one of its sides or parts is.** The words “How long is the real lorry, in metres?” ask how long a part is, which is **“How long one of its sides or parts is”**.
 - Why not **Square-cube law**: A length is asked, not an area or a volume. **Square-cube law** would be the name if the problem asked how much surface or how much room inside the bigger thing has, or how many times more.
@@ -3218,7 +3218,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
   Two things of exactly the same shape differ only in size: every length on the bigger one is the same number of times longer than the matching length on the smaller one. So a part measured on both gives that number of times, and it can be used on any other matching length.
 - If you chose about 5.71 mm: You chose **about 5.71 mm**. That is the answer you get when you divide by the number of times where you should multiply, so the bigger thing gets the shorter length.
 - If you chose 245 mm: You chose **245 mm**. That is the answer you get when you multiply by the number of times twice over, as for an area, though a length is asked and every length changes only once by that number.
-- What does the problem ask you to work out? **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes.** The problem asks “How tall is the tooth in the enlargement?”, a length on one of two things of exactly the same shape. Nothing in it follows an amount through time, hides a number that a *formula* must fit, or counts ways, so the key’s first answer is **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”**.
+- What does the problem ask you to work out? **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes.** The problem asks “How tall is the tooth in the enlargement?”, a length on one of two things of exactly the same shape. Nothing in it follows an amount through time, hides a number that a *formula* must fit, or counts ways, so the answer to the first question is **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”**.
 - What does the problem give you to work with? **Two things of the same shape at different sizes.** The words “enlarges a photo of a tooth as an exact copy. A filling measures 4 mm wide in the photo and 14 mm wide in the enlargement. The tooth measures 20 mm tall in the photo” give two things of exactly the same shape at different sizes, with a length measured on both. That is **“Two things of the same shape at different sizes”**.
 - Does the problem ask how long something is, or how much area or volume it has? **How long one of its sides or parts is.** The words “How tall is the tooth in the enlargement?” ask how long a part is, which is **“How long one of its sides or parts is”**.
 - Why not **Square-cube law**: A length is asked, not an area or a volume. **Square-cube law** would be the name if the problem asked how much surface or how much room inside the bigger thing has, or how many times more.
@@ -3248,7 +3248,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
   If every length is made a number of times longer, both the length and the width of a surface grow by that number of times, so the surface holds that number multiplied by itself as many unit squares. Area grows by the number of times longer, multiplied by itself.
 - If you chose 2.5 times as much: You chose **2.5 times as much**. That is the answer you get when you multiply by the number of times longer only once, as for a length, though an area has two directions, length and width, and both grow.
 - If you chose 15.625 times as much: You chose **15.625 times as much**. That is the answer you get when you multiply by the number of times longer three times over, as for a volume, though the problem asks about an area, which has only two directions that grow.
-- What does the problem ask you to work out? **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes.** The problem asks “How many times more floor does the second tile cover?”, a question about how much one of two things of exactly the same shape has, and not a count of ways, an amount through time or a number that a *formula* must fit, so the key’s first answer is **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”**.
+- What does the problem ask you to work out? **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes.** The problem asks “How many times more floor does the second tile cover?”, a question about how much one of two things of exactly the same shape has, and not a count of ways, an amount through time or a number that a *formula* must fit, so the answer to the first question is **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”**.
 - What does the problem give you to work with? **Two things of the same shape at different sizes.** The words “A tiler has a tile 10 cm wide and a second tile of exactly the same shape that is 25 cm wide” give two things of exactly the same shape at different sizes, which is **“Two things of the same shape at different sizes”**.
 - Does the problem ask how long something is, or how much area or volume it has? **How much area or volume it has.** The words “How many times more floor does the second tile cover?” ask how much area or volume something has, which is **“How much area or volume it has”**.
 - Why not **Similar shapes**: The problem asks how much area or volume the bigger thing has, not how long one of its parts is. **Similar shapes** would be the name if it asked for a length on the bigger thing.
@@ -3278,7 +3278,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
   If every length is made a number of times longer, the length, the width and the height of a solid all grow by that number of times, so the solid holds that number multiplied by itself twice over as many unit cubes. Volume grows by the number of times longer, multiplied by itself twice over.
 - If you chose 12 litres: You chose **12 litres**. That is the answer you get when you multiply by the number of times longer only once, as for a length, though a volume has three directions, length, width and height, and all of them grow.
 - If you chose 18 litres: You chose **18 litres**. That is the answer you get when you multiply by the number of times longer only twice, as for an area, though a volume has a third direction, height, that grows too.
-- What does the problem ask you to work out? **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes.** The problem asks “How much does the big box hold?”, a question about how much one of two things of exactly the same shape has, and not a count of ways, an amount through time or a number that a *formula* must fit, so the key’s first answer is **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”**.
+- What does the problem ask you to work out? **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes.** The problem asks “How much does the big box hold?”, a question about how much one of two things of exactly the same shape has, and not a count of ways, an amount through time or a number that a *formula* must fit, so the answer to the first question is **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”**.
 - What does the problem give you to work with? **Two things of the same shape at different sizes.** The words “A small storage box 20 cm tall holds 8 litres. A big box of exactly the same shape is 30 cm tall” give two things of exactly the same shape at different sizes, which is **“Two things of the same shape at different sizes”**.
 - Does the problem ask how long something is, or how much area or volume it has? **How much area or volume it has.** The words “How much does the big box hold?” ask how much area or volume something has, which is **“How much area or volume it has”**.
 - Why not **Similar shapes**: The problem asks how much area or volume the bigger thing has, not how long one of its parts is. **Similar shapes** would be the name if it asked for a length on the bigger thing.
@@ -3308,7 +3308,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
   If every length is made a number of times longer, both the length and the width of a surface grow by that number of times, so the surface holds that number multiplied by itself as many unit squares. Area grows by the number of times longer, multiplied by itself.
 - If you chose 4.5 litres: You chose **4.5 litres**. That is the answer you get when you multiply by the number of times longer only once, as for a length, though an area has two directions, length and width, and both grow.
 - If you chose 40.5 litres: You chose **40.5 litres**. That is the answer you get when you multiply by the number of times longer three times over, as for a volume, though the problem asks about an area, which has only two directions that grow.
-- What does the problem ask you to work out? **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes.** The problem asks “How much paint does the hull of the bigger boat need?”, a question about how much one of two things of exactly the same shape has, and not a count of ways, an amount through time or a number that a *formula* must fit, so the key’s first answer is **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”**.
+- What does the problem ask you to work out? **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes.** The problem asks “How much paint does the hull of the bigger boat need?”, a question about how much one of two things of exactly the same shape has, and not a count of ways, an amount through time or a number that a *formula* must fit, so the answer to the first question is **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”**.
 - What does the problem give you to work with? **Two things of the same shape at different sizes.** The words “A small boat 2 m long needs 1.5 litres of paint for its hull. A bigger boat of exactly the same shape is 6 m long” give two things of exactly the same shape at different sizes, which is **“Two things of the same shape at different sizes”**.
 - Does the problem ask how long something is, or how much area or volume it has? **How much area or volume it has.** The words “How much paint does the hull of the bigger boat need?” ask how much area or volume something has, which is **“How much area or volume it has”**.
 - Why not **Similar shapes**: The problem asks how much area or volume the bigger thing has, not how long one of its parts is. **Similar shapes** would be the name if it asked for a length on the bigger thing.

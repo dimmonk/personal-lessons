@@ -1,15 +1,15 @@
 # Learner view: US Civics & History, Unit Eight: Rights and duties
 
-*What everyone here has, what only citizens have, what is asked of you, what is not promised, the oath and the test.* Unit revision 1, built to lesson standard 1, status: draft.
+*What everyone here has, what only citizens have, what is asked of you, what is not promised, the oath and the test.* Unit revision 2, built to lesson standard 1, status: draft.
 
 This file is generated from the data files by `tools/render-learner-view.mjs`. It shows every screen in the order a learner meets it. In the app one card is on screen at a time and the learner moves on when ready.
 
-- **Bold text in quotation marks** is the key’s own wording, printed from `key.js`. Bold names are the outcome names from the same file. Neither is typed anywhere else. "What you must be able to point to" lines and "How to tell them apart" lines are also printed from one place each (the key and the look-alike ledger).
+- **Bold text in quotation marks** is the subject’s own wording for its questions and answers, written once and printed everywhere. Bold names are the names, written once in the same place. Neither is typed anywhere else. "What you must be able to point to" lines and "How to tell them apart" lines are also printed from one place each (the subject’s questions and the pairs it compares).
 - ⟦Double brackets⟧ show the words the app marks in a case (one highlight style everywhere).
 - The line in italics under each heading is the app’s top bar. The line in square brackets after it is for reviewers and is not shown to the learner.
 - Headings, prompt wording and stage instructions that are the same in every unit are the app’s wording, not this unit’s.
 - "Shown as soon as you …" is what appears the moment the learner answers. Nothing is hidden behind a second tap the first time a case is met, or after a miss.
-- After every answer the app shows, in this order: the right answer in the key’s words; the reason, quoting the marked words; for a name, why the nearest wrong name fails; after a miss, a line about the answer the learner chose; and last a link to the card that taught it. Where a line about the learner’s own choice is not written for the case, the app builds it from the key, and this file says so in place of repeating it.
+- After every answer the app shows, in this order: the right answer; the reason, quoting the marked words; for a name, why the nearest wrong name fails; after a miss, a line about the answer the learner chose; and last a link to the card that taught it. Where a line about the learner’s own choice is not written for the case, the app builds it from the answers’ own wording, and this file says so in place of repeating it.
 
 ---
 
@@ -17,11 +17,11 @@ This file is generated from the data files by `tools/render-learner-view.mjs`. I
 
 ### 1. Facts to hold: what you have, what is asked of you, and what is not promised
 
-*Unit Eight · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 1 of 61*
+*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 1 of 61*
 
 [reviewers only: card kind `orient`, id `orient-rights`]
 
-This unit is different from the units that teach the key. Those teach you to put a question to a case. This one is a set of facts to hold: the rights, duties and promises of living here, the oath, and how the citizenship test works. By the end you can say each fact without looking it up, which is what you need when the question is put to you, at an interview or at a kitchen table.
+This unit is different from the units that sort cases. Those teach you to put a question to a case. This one is a set of facts to hold: the rights, duties and promises of living here, the oath, and how the citizenship test works. By the end you can say each fact without looking it up, which is what you need when the question is put to you, at an interview or at a kitchen table.
 
 The facts are worth holding because people guess wrong about them in both directions. The question ‘am I allowed?’ has a different answer for a citizen, for a permanent resident and for a visitor, and a person who does not know the facts tends to believe that they have fewer protections than they do, or more promises than anyone made them. A fact that you already hold costs you no time and no guess.
 
@@ -31,7 +31,7 @@ Each of those moments has a plain answer, and the answer is a fact. A person who
 
 **What this unit is**
 
-This unit is facts to hold, not a skill to apply. There is no route to follow. Each fact is something you will be asked from memory, and it comes back on later days.
+This unit is facts to hold, not a skill to apply. There are no questions to work through. Each fact is something you will be asked from memory, and it comes back on later days.
 
 **The unit holds 36 facts, in eight groups:**
 
@@ -59,7 +59,7 @@ Each group starts with a case, then the idea in plain words, then the facts. Aft
 
 ### 2. A right is the government held back from you
 
-*Unit Eight · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 2 of 61*
+*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 2 of 61*
 
 [reviewers only: card kind `concept`, id `con-speak`]
 
@@ -77,12 +77,12 @@ Who has these rights? Most of the Bill of Rights is written with words such as �
 
 The first ten amendments were first written to limit only the federal government, which is the government of the whole country. After the Civil War the Fourteenth Amendment, in 1868, was read to bring the same limits to the states, so today they hold your state and your city back as well.
 
-You already have key names for this. When a case shows Congress passing a law that takes one of these rights away, the key’s name is **Beyond Congress’s power**. When it shows a state or a city taking one away, the key’s name is **A right that binds the states**. This group holds the five rights themselves, one fact each.
+You already have names for this. When a case shows Congress passing a law that takes one of these rights away, the name is **Beyond Congress’s power**. When it shows a state or a city taking one away, the name is **A right that binds the states**. This group holds the five rights themselves, one fact each.
 
 
 ### 3. The five freedoms of the First Amendment
 
-*Unit Eight · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 3 of 61*
+*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 3 of 61*
 
 [reviewers only: card kind `facts`, id `facts-speak`]
 
@@ -101,12 +101,12 @@ These are the five rights of the First Amendment, each with how it fits the idea
 - **The right to free speech**: It holds the government back from punishing what you say, and it names no citizenship, so a visitor and a citizen are covered alike. A person who writes an article that criticises the government is protected by this right and by the right to a free press together.
 - **The right to practise a religion, or none**: The government is held back from punishing you for the religion that you practise, or for having none. The First Amendment protects the choice, and it applies to everyone here whatever their immigration status.
 - **The right to a free press**: The ‘press’ here means newspapers and magazines. A city may not order a newsstand to stop selling a magazine because the mayor dislikes it: the right to a free press holds every government back, a city’s included, because the Fourteenth Amendment brought the limit to the states.
-- **The right to assemble peacefully**: It protects people who gather peacefully. A law from Congress that banned every group from holding a political rally in a public park would take it away, which is the kind of case that the key calls **Beyond Congress’s power**.
+- **The right to assemble peacefully**: It protects people who gather peacefully. A law from Congress that banned every group from holding a political rally in a public park would take it away, which is the kind of case called **Beyond Congress’s power**.
 - **The right to petition the government**: To petition is to ask the government to put right a wrong. Signing a petition asking the council to keep a library open is using it, and it is open to everyone here, as the other four rights are.
 
 ### 4. A question from memory
 
-*Unit Eight · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 4 of 61*
+*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 4 of 61*
 
 [reviewers only: card kind `check`, id `chk-sp-speech`]
 
@@ -129,7 +129,7 @@ These are the five rights of the First Amendment, each with how it fits the idea
 
 ### 5. A question from memory
 
-*Unit Eight · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 5 of 61*
+*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 5 of 61*
 
 [reviewers only: card kind `check`, id `chk-sp-religion`]
 
@@ -152,7 +152,7 @@ These are the five rights of the First Amendment, each with how it fits the idea
 
 ### 6. A question from memory
 
-*Unit Eight · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 6 of 61*
+*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 6 of 61*
 
 [reviewers only: card kind `check`, id `chk-sp-press`]
 
@@ -175,7 +175,7 @@ These are the five rights of the First Amendment, each with how it fits the idea
 
 ### 7. A question from memory
 
-*Unit Eight · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 7 of 61*
+*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 7 of 61*
 
 [reviewers only: card kind `check`, id `chk-sp-assembly`]
 
@@ -189,7 +189,7 @@ These are the five rights of the First Amendment, each with how it fits the idea
 
 **Shown as soon as you answer**
 
-- The answer: **The right to assemble peacefully**. Why: It protects people who gather peacefully. A law from Congress that banned every group from holding a political rally in a public park would take it away, which is the kind of case that the key calls **Beyond Congress’s power**.
+- The answer: **The right to assemble peacefully**. Why: It protects people who gather peacefully. A law from Congress that banned every group from holding a political rally in a public park would take it away, which is the kind of case called **Beyond Congress’s power**.
   - If you chose The right to free speech: You chose **The right to free speech**. That is the answer to a different fact: Which right protects you from being punished by the government for what you say?
   - If you chose The right to practise a religion, or none: You chose **The right to practise a religion, or none**. That is the answer to a different fact: Which right protects your choice to follow a religion, or none?
   - If you chose The right to a free press: You chose **The right to a free press**. That is the answer to a different fact: Which right stops a mayor from having a newsstand pull a magazine that he dislikes?
@@ -198,7 +198,7 @@ These are the five rights of the First Amendment, each with how it fits the idea
 
 ### 8. A question from memory
 
-*Unit Eight · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 8 of 61*
+*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 8 of 61*
 
 [reviewers only: card kind `check`, id `chk-sp-petition`]
 
@@ -221,7 +221,7 @@ These are the five rights of the First Amendment, each with how it fits the idea
 
 ### 9. Speaking and printing
 
-*Unit Eight · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 9 of 61*
+*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 9 of 61*
 
 [reviewers only: card kind `lookalike`, id `look-speak`]
 
@@ -264,7 +264,7 @@ Is the government acting against a person for their own words, or against someth
 
 ### 10. When the government accuses you of a crime
 
-*Unit Eight · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 10 of 61*
+*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 10 of 61*
 
 [reviewers only: card kind `concept`, id `con-accused`]
 
@@ -280,12 +280,12 @@ A criminal case is one in which a person is on trial for a crime. The steps come
 
 The Constitution asks for fair legal steps before the government takes a person’s liberty, and people call that due process. The four rights in this group are four of those steps. (The Eighth Amendment holds others, such as limits on bail and on cruel punishment. This unit does not hold them.)
 
-When a judge is asked whether an accused person got these steps, the key’s name is **The rights of the accused**. This group holds four of the steps themselves, one fact each.
+When a judge is asked whether an accused person got these steps, the name is **The rights of the accused**. This group holds four of the steps themselves, one fact each.
 
 
 ### 11. Four steps for a person who is accused
 
-*Unit Eight · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 11 of 61*
+*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 11 of 61*
 
 [reviewers only: card kind `facts`, id `facts-accused`]
 
@@ -307,7 +307,7 @@ These are the four steps of Kofi’s case, each with how it fits the idea that t
 
 ### 12. A question from memory
 
-*Unit Eight · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 12 of 61*
+*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 12 of 61*
 
 [reviewers only: card kind `check`, id `chk-ac-search`]
 
@@ -328,7 +328,7 @@ These are the four steps of Kofi’s case, each with how it fits the idea that t
 
 ### 13. A question from memory
 
-*Unit Eight · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 13 of 61*
+*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 13 of 61*
 
 [reviewers only: card kind `check`, id `chk-ac-silence`]
 
@@ -349,7 +349,7 @@ These are the four steps of Kofi’s case, each with how it fits the idea that t
 
 ### 14. A question from memory
 
-*Unit Eight · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 14 of 61*
+*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 14 of 61*
 
 [reviewers only: card kind `check`, id `chk-ac-lawyer`]
 
@@ -370,7 +370,7 @@ These are the four steps of Kofi’s case, each with how it fits the idea that t
 
 ### 15. A question from memory
 
-*Unit Eight · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 15 of 61*
+*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 15 of 61*
 
 [reviewers only: card kind `check`, id `chk-ac-jury`]
 
@@ -391,7 +391,7 @@ These are the four steps of Kofi’s case, each with how it fits the idea that t
 
 ### 16. Saying nothing, and having a lawyer
 
-*Unit Eight · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 16 of 61*
+*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 16 of 61*
 
 [reviewers only: card kind `lookalike`, id `look-accused`]
 
@@ -440,7 +440,7 @@ Is it about whether I have to answer, or about someone who stands with me in the
 
 ### 17. A duty is the law asking something of you
 
-*Unit Eight · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 17 of 61*
+*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 17 of 61*
 
 [reviewers only: card kind `concept`, id `con-duty`]
 
@@ -461,7 +461,7 @@ Not knowing a requirement does not excuse missing it. So the useful habit is to 
 
 ### 18. Three duties that fall on everyone here
 
-*Unit Eight · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 18 of 61*
+*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 18 of 61*
 
 [reviewers only: card kind `facts`, id `facts-duty`]
 
@@ -481,7 +481,7 @@ These are the three duties of Ravi’s year, each with how it fits the idea that
 
 ### 19. A question from memory
 
-*Unit Eight · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 19 of 61*
+*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 19 of 61*
 
 [reviewers only: card kind `check`, id `chk-du-obey`]
 
@@ -500,7 +500,7 @@ These are the three duties of Ravi’s year, each with how it fits the idea that
 
 ### 20. A question from memory
 
-*Unit Eight · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 20 of 61*
+*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 20 of 61*
 
 [reviewers only: card kind `check`, id `chk-du-tax`]
 
@@ -519,7 +519,7 @@ These are the three duties of Ravi’s year, each with how it fits the idea that
 
 ### 21. A question from memory
 
-*Unit Eight · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 21 of 61*
+*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 21 of 61*
 
 [reviewers only: card kind `check`, id `chk-du-draft`]
 
@@ -538,7 +538,7 @@ These are the three duties of Ravi’s year, each with how it fits the idea that
 
 ### 22. A few things are kept for citizens
 
-*Unit Eight · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 22 of 61*
+*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 22 of 61*
 
 [reviewers only: card kind `concept`, id `con-citizen`]
 
@@ -559,7 +559,7 @@ Jury service is a duty and a privilege together, because a person cannot be kept
 
 ### 23. Three things kept for citizens
 
-*Unit Eight · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 23 of 61*
+*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 23 of 61*
 
 [reviewers only: card kind `facts`, id `facts-citizen`]
 
@@ -579,7 +579,7 @@ These are the three things in Amara’s story that need citizenship, each with h
 
 ### 24. A question from memory
 
-*Unit Eight · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 24 of 61*
+*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 24 of 61*
 
 [reviewers only: card kind `check`, id `chk-cz-vote`]
 
@@ -598,7 +598,7 @@ These are the three things in Amara’s story that need citizenship, each with h
 
 ### 25. A question from memory
 
-*Unit Eight · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 25 of 61*
+*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 25 of 61*
 
 [reviewers only: card kind `check`, id `chk-cz-run`]
 
@@ -617,7 +617,7 @@ These are the three things in Amara’s story that need citizenship, each with h
 
 ### 26. A question from memory
 
-*Unit Eight · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 26 of 61*
+*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 26 of 61*
 
 [reviewers only: card kind `check`, id `chk-cz-jury`]
 
@@ -636,7 +636,7 @@ These are the three things in Amara’s story that need citizenship, each with h
 
 ### 27. A jury trial, and jury service
 
-*Unit Eight · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 27 of 61*
+*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 27 of 61*
 
 [reviewers only: card kind `lookalike`, id `look-jury`]
 
@@ -679,7 +679,7 @@ Is it about the person who is on trial, or about a person who is summoned to dec
 
 ### 28. A right is not a promise to give you something
 
-*Unit Eight · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 28 of 61*
+*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 28 of 61*
 
 [reviewers only: card kind `concept`, id `con-promise`]
 
@@ -700,7 +700,7 @@ State constitutions are separate from this one, and they do promise public schoo
 
 ### 29. What the Constitution does not promise
 
-*Unit Eight · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 29 of 61*
+*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 29 of 61*
 
 [reviewers only: card kind `facts`, id `facts-promise`]
 
@@ -722,7 +722,7 @@ These are the four facts of Ines’s search, each with how it fits the idea that
 
 ### 30. A question from memory
 
-*Unit Eight · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 30 of 61*
+*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 30 of 61*
 
 [reviewers only: card kind `check`, id `chk-np-kind`]
 
@@ -743,7 +743,7 @@ These are the four facts of Ines’s search, each with how it fits the idea that
 
 ### 31. A question from memory
 
-*Unit Eight · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 31 of 61*
+*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 31 of 61*
 
 [reviewers only: card kind `check`, id `chk-np-none`]
 
@@ -764,7 +764,7 @@ These are the four facts of Ines’s search, each with how it fits the idea that
 
 ### 32. A question from memory
 
-*Unit Eight · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 32 of 61*
+*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 32 of 61*
 
 [reviewers only: card kind `check`, id `chk-np-source`]
 
@@ -785,7 +785,7 @@ These are the four facts of Ines’s search, each with how it fits the idea that
 
 ### 33. A question from memory
 
-*Unit Eight · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 33 of 61*
+*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 33 of 61*
 
 [reviewers only: card kind `check`, id `chk-np-change`]
 
@@ -812,7 +812,7 @@ These are the four facts of Ines’s search, each with how it fits the idea that
 
 ### 34. Two kinds of case: criminal and civil
 
-*Unit Eight · rev 1 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 34 of 61*
+*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 34 of 61*
 
 [reviewers only: card kind `concept`, id `con-hearing`]
 
@@ -833,7 +833,7 @@ That is all the course holds. It does not say which of the other rights still ap
 
 ### 35. A criminal case and an immigration hearing
 
-*Unit Eight · rev 1 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 35 of 61*
+*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 35 of 61*
 
 [reviewers only: card kind `facts`, id `facts-hearing`]
 
@@ -855,7 +855,7 @@ These are the four facts of Luis and Pavel’s Monday, each with how it fits the
 
 ### 36. A question from memory
 
-*Unit Eight · rev 1 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 36 of 61*
+*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 36 of 61*
 
 [reviewers only: card kind `check`, id `chk-ic-crim`]
 
@@ -876,7 +876,7 @@ These are the four facts of Luis and Pavel’s Monday, each with how it fits the
 
 ### 37. A question from memory
 
-*Unit Eight · rev 1 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 37 of 61*
+*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 37 of 61*
 
 [reviewers only: card kind `check`, id `chk-ic-civil`]
 
@@ -897,7 +897,7 @@ These are the four facts of Luis and Pavel’s Monday, each with how it fits the
 
 ### 38. A question from memory
 
-*Unit Eight · rev 1 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 38 of 61*
+*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 38 of 61*
 
 [reviewers only: card kind `check`, id `chk-ic-accused`]
 
@@ -918,7 +918,7 @@ These are the four facts of Luis and Pavel’s Monday, each with how it fits the
 
 ### 39. A question from memory
 
-*Unit Eight · rev 1 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 39 of 61*
+*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 39 of 61*
 
 [reviewers only: card kind `check`, id `chk-ic-immig`]
 
@@ -939,7 +939,7 @@ These are the four facts of Luis and Pavel’s Monday, each with how it fits the
 
 ### 40. Criminal and civil
 
-*Unit Eight · rev 1 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 40 of 61*
+*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 40 of 61*
 
 [reviewers only: card kind `lookalike`, id `look-kind`]
 
@@ -982,7 +982,7 @@ Is the person on trial for a crime, or is nobody?
 
 ### 41. Who the promise is written for, and what becomes of it
 
-*Unit Eight · rev 1 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 41 of 61*
+*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 41 of 61*
 
 [reviewers only: card kind `lookalike`, id `look-lawyer`]
 
@@ -1025,7 +1025,7 @@ Am I being asked whom the promise is written for, or what becomes of it in an im
 
 ### 42. The oath that ends the process of becoming a citizen
 
-*Unit Eight · rev 1 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 42 of 61*
+*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 42 of 61*
 
 [reviewers only: card kind `concept`, id `con-oath`]
 
@@ -1048,7 +1048,7 @@ Giving up loyalty to other countries is part of the oath. Whether your country o
 
 ### 43. The oath and the pledge
 
-*Unit Eight · rev 1 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 43 of 61*
+*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 43 of 61*
 
 [reviewers only: card kind `facts`, id `facts-oath`]
 
@@ -1072,7 +1072,7 @@ These are the five facts of Fatima’s ceremony, each with how it fits the idea 
 
 ### 44. A question from memory
 
-*Unit Eight · rev 1 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 44 of 61*
+*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 44 of 61*
 
 [reviewers only: card kind `check`, id `chk-oa-what`]
 
@@ -1095,7 +1095,7 @@ These are the five facts of Fatima’s ceremony, each with how it fits the idea 
 
 ### 45. A question from memory
 
-*Unit Eight · rev 1 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 45 of 61*
+*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 45 of 61*
 
 [reviewers only: card kind `check`, id `chk-oa-pledge`]
 
@@ -1118,7 +1118,7 @@ These are the five facts of Fatima’s ceremony, each with how it fits the idea 
 
 ### 46. A question from memory
 
-*Unit Eight · rev 1 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 46 of 61*
+*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 46 of 61*
 
 [reviewers only: card kind `check`, id `chk-oa-giveup`]
 
@@ -1141,7 +1141,7 @@ These are the five facts of Fatima’s ceremony, each with how it fits the idea 
 
 ### 47. A question from memory
 
-*Unit Eight · rev 1 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 47 of 61*
+*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 47 of 61*
 
 [reviewers only: card kind `check`, id `chk-oa-support`]
 
@@ -1164,7 +1164,7 @@ These are the five facts of Fatima’s ceremony, each with how it fits the idea 
 
 ### 48. A question from memory
 
-*Unit Eight · rev 1 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 48 of 61*
+*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 48 of 61*
 
 [reviewers only: card kind `check`, id `chk-oa-serve`]
 
@@ -1187,7 +1187,7 @@ These are the five facts of Fatima’s ceremony, each with how it fits the idea 
 
 ### 49. The oath and the pledge
 
-*Unit Eight · rev 1 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 49 of 61*
+*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 49 of 61*
 
 [reviewers only: card kind `lookalike`, id `look-oath`]
 
@@ -1236,7 +1236,7 @@ Is it made once, at the ceremony that makes someone a citizen, or said to the fl
 
 ### 50. The citizenship test, and who sets its details
 
-*Unit Eight · rev 1 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 50 of 61*
+*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 50 of 61*
 
 [reviewers only: card kind `concept`, id `con-test`]
 
@@ -1248,7 +1248,7 @@ The oath comes at the end of the process. The test comes before it, and who deci
 
 Chidi’s interview shows three stable parts of the test. It is spoken. The questions come from a published list, and he knew in advance what was on it. And it comes alongside an assessment of his English reading, writing and speaking. A fourth stable part does not show in his story: there are exemptions and adjustments, based on age and years of residence and for certain medical conditions.
 
-The rules of the test seem to change from time to time, and the key shows why. Congress wrote the law that says an applicant must show knowledge of civics and English. But the immigration service, which is an *agency*, runs the interview and sets the details: the question list, how many questions are asked and the pass mark. That is a case of **Carrying out the law**: the *agency* carries out a law that Congress passed, and it stays inside what the law allows. The *agency* can change the details without Congress passing anything, and it has changed them more than once.
+The rules of the test seem to change from time to time, and the reason is who sets them. Congress wrote the law that says an applicant must show knowledge of civics and English. But the immigration service, which is an *agency*, runs the interview and sets the details: the question list, how many questions are asked and the pass mark. That is a case of **Carrying out the law**: the *agency* carries out a law that Congress passed, and it stays inside what the law allows. The *agency* can change the details without Congress passing anything, and it has changed them more than once.
 
 So the rules of the test are not written in the Constitution. A law requires the test, and an *agency* decides how it works.
 
@@ -1257,7 +1257,7 @@ This unit skips the details, because they change and can depend on when you file
 
 ### 51. What is stable about the test
 
-*Unit Eight · rev 1 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 51 of 61*
+*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 51 of 61*
 
 [reviewers only: card kind `facts`, id `facts-test`]
 
@@ -1281,13 +1281,13 @@ These are the eight facts of Chidi’s interview, each with how it fits the idea
 - **English reading, writing and speaking**: The civics test comes alongside an assessment of English reading, writing and speaking, so there are two things to prepare for, not one.
 - **Their age, years of residence and certain medical conditions**: There are exemptions and adjustments based on these. Which of them applies to a person is a question for the official rules, and this unit does not hold the details.
 - **A law that Congress wrote**: Congress wrote the law that says an applicant must show that knowledge. That is where the requirement comes from. The Constitution does not write the rules of the test.
-- **The immigration service**: It is an *agency*: it carries out the law day to day. It can change the details without Congress passing anything, which is why they have changed more than once. In the key, that is **Carrying out the law**.
+- **The immigration service**: It is an *agency*: it carries out the law day to day. It can change the details without Congress passing anything, which is why they have changed more than once. That is **Carrying out the law**.
 - **uscis.gov**: It is the immigration service’s own website. The official list is the thing to take and to study, because the list is what you will be asked.
 - **The date you filed**: Which version applies can depend on when you filed. So a list that a friend studied two years ago may not be the list for your own application, as Dana’s was not for Chidi’s.
 
 ### 52. A question from memory
 
-*Unit Eight · rev 1 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 52 of 61*
+*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 52 of 61*
 
 [reviewers only: card kind `check`, id `chk-te-form`]
 
@@ -1316,7 +1316,7 @@ These are the eight facts of Chidi’s interview, each with how it fits the idea
 
 ### 53. A question from memory
 
-*Unit Eight · rev 1 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 53 of 61*
+*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 53 of 61*
 
 [reviewers only: card kind `check`, id `chk-te-list`]
 
@@ -1345,7 +1345,7 @@ These are the eight facts of Chidi’s interview, each with how it fits the idea
 
 ### 54. A question from memory
 
-*Unit Eight · rev 1 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 54 of 61*
+*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 54 of 61*
 
 [reviewers only: card kind `check`, id `chk-te-english`]
 
@@ -1374,7 +1374,7 @@ These are the eight facts of Chidi’s interview, each with how it fits the idea
 
 ### 55. A question from memory
 
-*Unit Eight · rev 1 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 55 of 61*
+*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 55 of 61*
 
 [reviewers only: card kind `check`, id `chk-te-exempt`]
 
@@ -1403,7 +1403,7 @@ These are the eight facts of Chidi’s interview, each with how it fits the idea
 
 ### 56. A question from memory
 
-*Unit Eight · rev 1 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 56 of 61*
+*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 56 of 61*
 
 [reviewers only: card kind `check`, id `chk-te-law`]
 
@@ -1432,7 +1432,7 @@ These are the eight facts of Chidi’s interview, each with how it fits the idea
 
 ### 57. A question from memory
 
-*Unit Eight · rev 1 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 57 of 61*
+*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 57 of 61*
 
 [reviewers only: card kind `check`, id `chk-te-who`]
 
@@ -1449,7 +1449,7 @@ These are the eight facts of Chidi’s interview, each with how it fits the idea
 
 **Shown as soon as you answer**
 
-- The answer: **The immigration service**. Why: It is an *agency*: it carries out the law day to day. It can change the details without Congress passing anything, which is why they have changed more than once. In the key, that is **Carrying out the law**.
+- The answer: **The immigration service**. Why: It is an *agency*: it carries out the law day to day. It can change the details without Congress passing anything, which is why they have changed more than once. That is **Carrying out the law**.
   - If you chose A spoken test: You chose **A spoken test**. That is the answer to a different fact: Is the civics test written or spoken?
   - If you chose A published list: You chose **A published list**. That is the answer to a different fact: Where do the questions of the civics test come from?
   - If you chose English reading, writing and speaking: You chose **English reading, writing and speaking**. That is the answer to a different fact: What else is assessed alongside the civics test?
@@ -1461,7 +1461,7 @@ These are the eight facts of Chidi’s interview, each with how it fits the idea
 
 ### 58. A question from memory
 
-*Unit Eight · rev 1 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 58 of 61*
+*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 58 of 61*
 
 [reviewers only: card kind `check`, id `chk-te-source`]
 
@@ -1490,7 +1490,7 @@ These are the eight facts of Chidi’s interview, each with how it fits the idea
 
 ### 59. A question from memory
 
-*Unit Eight · rev 1 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 59 of 61*
+*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 59 of 61*
 
 [reviewers only: card kind `check`, id `chk-te-version`]
 
@@ -1519,7 +1519,7 @@ These are the eight facts of Chidi’s interview, each with how it fits the idea
 
 ### 60. Where the test comes from, and who sets its details
 
-*Unit Eight · rev 1 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 60 of 61*
+*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 60 of 61*
 
 [reviewers only: card kind `lookalike`, id `look-test`]
 
@@ -1557,7 +1557,7 @@ Is it asking where the requirement comes from, or who runs the interview and set
 |---|---|---|
 | Asked | What requires an applicant to show knowledge of civics and English? | Who runs the interview and sets its details, such as the question list and the pass mark? |
 | The answer | A law that Congress wrote | The immigration service |
-| How it fits | Congress wrote the law that says an applicant must show that knowledge. That is where the requirement comes from. The Constitution does not write the rules of the test. | It is an *agency*: it carries out the law day to day. It can change the details without Congress passing anything, which is why they have changed more than once. In the key, that is **Carrying out the law**. |
+| How it fits | Congress wrote the law that says an applicant must show that knowledge. That is where the requirement comes from. The Constitution does not write the rules of the test. | It is an *agency*: it carries out the law day to day. It can change the details without Congress passing anything, which is why they have changed more than once. That is **Carrying out the law**. |
 
 
 ### The drill
@@ -1636,7 +1636,7 @@ The cards are out of view from here. The drill has one stage. Nothing here is gr
 
 **Shown as soon as you answer**
 
-- The answer: **The right to assemble peacefully**. Why: It protects people who gather peacefully. A law from Congress that banned every group from holding a political rally in a public park would take it away, which is the kind of case that the key calls **Beyond Congress’s power**.
+- The answer: **The right to assemble peacefully**. Why: It protects people who gather peacefully. A law from Congress that banned every group from holding a political rally in a public park would take it away, which is the kind of case called **Beyond Congress’s power**.
   - If you chose The right to free speech: You chose **The right to free speech**. That is the answer to a different fact: Which right protects you from being punished by the government for what you say?
   - If you chose The right to practise a religion, or none: You chose **The right to practise a religion, or none**. That is the answer to a different fact: Which right protects your choice to follow a religion, or none?
   - If you chose The right to a free press: You chose **The right to a free press**. That is the answer to a different fact: Which right stops a mayor from having a newsstand pull a magazine that he dislikes?
@@ -2191,7 +2191,7 @@ The cards are out of view from here. The drill has one stage. Nothing here is gr
 
 **Shown as soon as you answer**
 
-- The answer: **The immigration service**. Why: It is an *agency*: it carries out the law day to day. It can change the details without Congress passing anything, which is why they have changed more than once. In the key, that is **Carrying out the law**.
+- The answer: **The immigration service**. Why: It is an *agency*: it carries out the law day to day. It can change the details without Congress passing anything, which is why they have changed more than once. That is **Carrying out the law**.
   - If you chose A spoken test: You chose **A spoken test**. That is the answer to a different fact: Is the civics test written or spoken?
   - If you chose A published list: You chose **A published list**. That is the answer to a different fact: Where do the questions of the civics test come from?
   - If you chose English reading, writing and speaking: You chose **English reading, writing and speaking**. That is the answer to a different fact: What else is assessed alongside the civics test?
@@ -2251,11 +2251,11 @@ The cards are out of view from here. The drill has one stage. Nothing here is gr
   - If you chose uscis.gov: You chose **uscis.gov**. That is the answer to a different fact: Where should you take the official question list from?
 - Taught on: “What is stable about the test” (one tap opens the card).
 
-**When the drill ends.** The learner sees their own results: first-try accuracy for each stage, whole routes beside single questions, the pair of names they mixed up most often, and what will come back and when. Anything missed was asked again before the drill ended. Nothing here is graded. A miss only decides what comes back.
+**When the drill ends.** The learner sees their own results: first-try accuracy for each stage, whole cases beside single questions, the pair of names they mixed up most often, and what will come back and when. Anything missed was asked again before the drill ended. Nothing here is graded. A miss only decides what comes back.
 
 ### 61. What to carry away
 
-*Unit Eight · rev 1 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 61 of 61*
+*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 61 of 61*
 
 [reviewers only: card kind `recap`, id `recap-rights`]
 
@@ -2337,5 +2337,5 @@ You have now met every fact in the unit, in its group. This card puts them toget
 
 ## After the unit: what comes back on later days
 
-A name that is due returns as a case the learner has not seen, next to a case of the name they most often confuse it with. Each is run as a whole route. These are the fresh cases held back for that purpose: three for each name, one for each scheduled return. The first return is about two days after the drill, the next about a week after that, the next about three and a half weeks later.
+A name that is due returns as a case the learner has not seen, next to a case of the name they most often confuse it with. Each is run as a whole case: every question, then the name. These are the fresh cases held back for that purpose: three for each name, one for each scheduled return. The first return is about two days after the drill, the next about a week after that, the next about three and a half weeks later.
 

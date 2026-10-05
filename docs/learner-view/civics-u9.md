@@ -1,15 +1,15 @@
 # Learner view: US Civics & History, Unit Nine: History to the end of Reconstruction
 
-*The colonies and the founding, the growth of the country and the slavery question, the Civil War, and the years after it, to 1877.* Unit revision 1, built to lesson standard 1, status: draft.
+*The colonies and the founding, the growth of the country and the slavery question, the Civil War, and the years after it, to 1877.* Unit revision 2, built to lesson standard 1, status: draft.
 
 This file is generated from the data files by `tools/render-learner-view.mjs`. It shows every screen in the order a learner meets it. In the app one card is on screen at a time and the learner moves on when ready.
 
-- **Bold text in quotation marks** is the key’s own wording, printed from `key.js`. Bold names are the outcome names from the same file. Neither is typed anywhere else. "What you must be able to point to" lines and "How to tell them apart" lines are also printed from one place each (the key and the look-alike ledger).
+- **Bold text in quotation marks** is the subject’s own wording for its questions and answers, written once and printed everywhere. Bold names are the names, written once in the same place. Neither is typed anywhere else. "What you must be able to point to" lines and "How to tell them apart" lines are also printed from one place each (the subject’s questions and the pairs it compares).
 - ⟦Double brackets⟧ show the words the app marks in a case (one highlight style everywhere).
 - The line in italics under each heading is the app’s top bar. The line in square brackets after it is for reviewers and is not shown to the learner.
 - Headings, prompt wording and stage instructions that are the same in every unit are the app’s wording, not this unit’s.
 - "Shown as soon as you …" is what appears the moment the learner answers. Nothing is hidden behind a second tap the first time a case is met, or after a miss.
-- After every answer the app shows, in this order: the right answer in the key’s words; the reason, quoting the marked words; for a name, why the nearest wrong name fails; after a miss, a line about the answer the learner chose; and last a link to the card that taught it. Where a line about the learner’s own choice is not written for the case, the app builds it from the key, and this file says so in place of repeating it.
+- After every answer the app shows, in this order: the right answer; the reason, quoting the marked words; for a name, why the nearest wrong name fails; after a miss, a line about the answer the learner chose; and last a link to the card that taught it. Where a line about the learner’s own choice is not written for the case, the app builds it from the answers’ own wording, and this file says so in place of repeating it.
 
 ---
 
@@ -17,13 +17,13 @@ This file is generated from the data files by `tools/render-learner-view.mjs`. I
 
 ### 1. Facts to hold, about how the country began, grew and divided over slavery
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 1 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 1 of 106*
 
 [reviewers only: card kind `orient`, id `orient-hist`]
 
 This unit is a set of facts to hold, not a skill to apply. By the end you can say, without looking anything up, why people came to the colonies and who else was there, how the colonists fell out with Britain, the years in which the country was founded, how it grew, how slavery divided it, what happened in the Civil War, and what the three amendments after the war did. The unit stops at 1877.
 
-They are worth holding for three reasons. The citizenship interview asks about this history directly. The news keeps using it: when a story says that a right “applies to the states”, or that a person is “a citizen by birth”, the amendments that followed the Civil War are what it rests on. And some of the names in the key have a history of their own, which this unit gives.
+They are worth holding for three reasons. The citizenship interview asks about this history directly. The news keeps using it: when a story says that a right “applies to the states”, or that a person is “a citizen by birth”, the amendments that followed the Civil War are what it rests on. And some of the names from the earlier units have a history of their own, which this unit gives.
 
 Picture the interview itself. The officer asks: “Why did the colonists quarrel with Britain?” or “What did the Emancipation Proclamation do?” A person who has only met a list of dates has a date with nothing around it. A person who knows the story can find the answer, because each fact has something to hang on.
 
@@ -31,7 +31,7 @@ That is why this unit is not a list. Each fact comes with the idea that it serve
 
 **What this unit is**
 
-This unit is facts to hold, not a skill to apply. There is no route to follow. Each fact is something you will be asked from memory, and it comes back on later days.
+This unit is facts to hold, not a skill to apply. There are no questions to work through. Each fact is something you will be asked from memory, and it comes back on later days.
 
 **The unit holds 62 facts, in 15 groups:**
 
@@ -70,7 +70,7 @@ Each group starts with a case, then the idea in plain words, then the facts. Aft
 
 ### 2. Why people crossed the ocean to the colonies
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 2 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 2 of 106*
 
 [reviewers only: card kind `concept`, id `con-hist-came`]
 
@@ -91,7 +91,7 @@ The four facts below are the four reasons. Each one is asked by what the person 
 
 ### 3. Four reasons for coming
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 3 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 3 of 106*
 
 [reviewers only: card kind `facts`, id `facts-hist-came`]
 
@@ -113,7 +113,7 @@ These are the four reasons, each with how it fits the idea that people came for 
 
 ### 4. A question from memory
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 4 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 4 of 106*
 
 [reviewers only: card kind `check`, id `chk-hist-came-faith`]
 
@@ -134,7 +134,7 @@ These are the four reasons, each with how it fits the idea that people came for 
 
 ### 5. A question from memory
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 5 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 5 of 106*
 
 [reviewers only: card kind `check`, id `chk-hist-came-vote`]
 
@@ -155,7 +155,7 @@ These are the four reasons, each with how it fits the idea that people came for 
 
 ### 6. A question from memory
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 6 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 6 of 106*
 
 [reviewers only: card kind `check`, id `chk-hist-came-living`]
 
@@ -176,7 +176,7 @@ These are the four reasons, each with how it fits the idea that people came for 
 
 ### 7. A question from memory
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 7 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 7 of 106*
 
 [reviewers only: card kind `check`, id `chk-hist-came-flee`]
 
@@ -197,7 +197,7 @@ These are the four reasons, each with how it fits the idea that people came for 
 
 ### 8. Something to have, and something to leave behind
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 8 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 8 of 106*
 
 [reviewers only: card kind `lookalike`, id `look-hist-came`]
 
@@ -240,7 +240,7 @@ Is it what the person hoped to have, or what they hoped to leave behind?
 
 ### 9. Who else was there, and how they came
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 9 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 9 of 106*
 
 [reviewers only: card kind `concept`, id `con-hist-who`]
 
@@ -263,7 +263,7 @@ The three facts below are the three groups, so that you can tell them apart.
 
 ### 10. Three groups of people in the colonies
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 10 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 10 of 106*
 
 [reviewers only: card kind `facts`, id `facts-hist-who`]
 
@@ -283,7 +283,7 @@ These are the three groups, each with how it fits the idea of who was there and 
 
 ### 11. A question from memory
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 11 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 11 of 106*
 
 [reviewers only: card kind `check`, id `chk-hist-who-indent`]
 
@@ -302,7 +302,7 @@ These are the three groups, each with how it fits the idea of who was there and 
 
 ### 12. A question from memory
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 12 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 12 of 106*
 
 [reviewers only: card kind `check`, id `chk-hist-who-enslaved`]
 
@@ -321,7 +321,7 @@ These are the three groups, each with how it fits the idea of who was there and 
 
 ### 13. A question from memory
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 13 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 13 of 106*
 
 [reviewers only: card kind `check`, id `chk-hist-who-native`]
 
@@ -340,7 +340,7 @@ These are the three groups, each with how it fits the idea of who was there and 
 
 ### 14. Working for years to pay a debt, and being held as property
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 14 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 14 of 106*
 
 [reviewers only: card kind `lookalike`, id `look-hist-who`]
 
@@ -383,7 +383,7 @@ Did the person work a set number of years to pay for the journey, or were they b
 
 ### 15. The quarrel with Britain: taxed with no say
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 15 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 15 of 106*
 
 [reviewers only: card kind `concept`, id `con-hist-quarrel`]
 
@@ -401,14 +401,14 @@ So the quarrel with Britain was about consent, and the slogan says what was miss
 
 In 1773, in Boston, colonists protested the tax on tea by throwing a ship’s whole cargo of tea into the harbour. This is the Boston Tea Party. The point of it was not the price of tea. It was that the tax had been laid by a body that would not listen to them.
 
-The same idea, that money is taken and spent only by people whom the public can vote out, is the history behind the key’s name **The power of the purse**.
+The same idea, that money is taken and spent only by people whom the public can vote out, is the history behind the name **The power of the purse**.
 
 The four facts below are the parts of the quarrel: who taxed, what the colonists said was missing, the short form of their complaint, and the protest.
 
 
 ### 16. Four parts of the quarrel
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 16 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 16 of 106*
 
 [reviewers only: card kind `facts`, id `facts-hist-quarrel`]
 
@@ -430,7 +430,7 @@ These are the four parts of the quarrel, each with how it fits the idea that a t
 
 ### 17. A question from memory
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 17 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 17 of 106*
 
 [reviewers only: card kind `check`, id `chk-hist-q-parl`]
 
@@ -451,7 +451,7 @@ These are the four parts of the quarrel, each with how it fits the idea that a t
 
 ### 18. A question from memory
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 18 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 18 of 106*
 
 [reviewers only: card kind `check`, id `chk-hist-q-consent`]
 
@@ -472,7 +472,7 @@ These are the four parts of the quarrel, each with how it fits the idea that a t
 
 ### 19. A question from memory
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 19 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 19 of 106*
 
 [reviewers only: card kind `check`, id `chk-hist-q-repr`]
 
@@ -493,7 +493,7 @@ These are the four parts of the quarrel, each with how it fits the idea that a t
 
 ### 20. A question from memory
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 20 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 20 of 106*
 
 [reviewers only: card kind `check`, id `chk-hist-q-tea`]
 
@@ -514,7 +514,7 @@ These are the four parts of the quarrel, each with how it fits the idea that a t
 
 ### 21. Agreeing to a tax, and having someone in the room
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 21 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 21 of 106*
 
 [reviewers only: card kind `lookalike`, id `look-hist-quarrel`]
 
@@ -563,7 +563,7 @@ Is it the agreement of the people who are taxed, or the place in the body that t
 
 ### 22. The founding as a chain of years
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 22 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 22 of 106*
 
 [reviewers only: card kind `concept`, id `con-hist-chain`]
 
@@ -586,7 +586,7 @@ The eight facts below are the eight years in the chain.
 
 ### 23. Eight years of the founding
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 23 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 23 of 106*
 
 [reviewers only: card kind `facts`, id `facts-hist-chain`]
 
@@ -616,7 +616,7 @@ These are the eight years, each with how it fits the chain from the quarrel to t
 
 ### 24. A question from memory
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 24 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 24 of 106*
 
 [reviewers only: card kind `check`, id `chk-hist-yr-slavery`]
 
@@ -645,7 +645,7 @@ These are the eight years, each with how it fits the chain from the quarrel to t
 
 ### 25. A question from memory
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 25 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 25 of 106*
 
 [reviewers only: card kind `check`, id `chk-hist-yr-tea`]
 
@@ -674,7 +674,7 @@ These are the eight years, each with how it fits the chain from the quarrel to t
 
 ### 26. A question from memory
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 26 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 26 of 106*
 
 [reviewers only: card kind `check`, id `chk-hist-yr-declare`]
 
@@ -703,7 +703,7 @@ These are the eight years, each with how it fits the chain from the quarrel to t
 
 ### 27. A question from memory
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 27 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 27 of 106*
 
 [reviewers only: card kind `check`, id `chk-hist-yr-warend`]
 
@@ -732,7 +732,7 @@ These are the eight years, each with how it fits the chain from the quarrel to t
 
 ### 28. A question from memory
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 28 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 28 of 106*
 
 [reviewers only: card kind `check`, id `chk-hist-yr-written`]
 
@@ -761,7 +761,7 @@ These are the eight years, each with how it fits the chain from the quarrel to t
 
 ### 29. A question from memory
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 29 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 29 of 106*
 
 [reviewers only: card kind `check`, id `chk-hist-yr-effect`]
 
@@ -790,7 +790,7 @@ These are the eight years, each with how it fits the chain from the quarrel to t
 
 ### 30. A question from memory
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 30 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 30 of 106*
 
 [reviewers only: card kind `check`, id `chk-hist-yr-rights`]
 
@@ -819,7 +819,7 @@ These are the eight years, each with how it fits the chain from the quarrel to t
 
 ### 31. A question from memory
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 31 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 31 of 106*
 
 [reviewers only: card kind `check`, id `chk-hist-yr-capital`]
 
@@ -848,7 +848,7 @@ These are the eight years, each with how it fits the chain from the quarrel to t
 
 ### 32. The year of the break, and the year of the plan
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 32 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 32 of 106*
 
 [reviewers only: card kind `lookalike`, id `look-hist-chain-doc`]
 
@@ -891,7 +891,7 @@ Is it the year of the announced break, or the year the plan of government was wr
 
 ### 33. Written in one year, in effect from another
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 33 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 33 of 106*
 
 [reviewers only: card kind `lookalike`, id `look-hist-chain-eff`]
 
@@ -934,7 +934,7 @@ Is it the year the plan was written, or the year it began to govern?
 
 ### 34. One name, a man and a city
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 34 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 34 of 106*
 
 [reviewers only: card kind `concept`, id `con-hist-wash`]
 
@@ -955,7 +955,7 @@ The three facts below are the man, the city and the title. Keep the first two ap
 
 ### 35. The man, the city and the title
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 35 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 35 of 106*
 
 [reviewers only: card kind `facts`, id `facts-hist-wash`]
 
@@ -975,7 +975,7 @@ These are the three facts, each with how it fits the idea that one name can belo
 
 ### 36. A question from memory
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 36 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 36 of 106*
 
 [reviewers only: card kind `check`, id `chk-hist-wash-man`]
 
@@ -994,7 +994,7 @@ These are the three facts, each with how it fits the idea that one name can belo
 
 ### 37. A question from memory
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 37 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 37 of 106*
 
 [reviewers only: card kind `check`, id `chk-hist-wash-city`]
 
@@ -1013,7 +1013,7 @@ These are the three facts, each with how it fits the idea that one name can belo
 
 ### 38. A question from memory
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 38 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 38 of 106*
 
 [reviewers only: card kind `check`, id `chk-hist-wash-title`]
 
@@ -1032,7 +1032,7 @@ These are the three facts, each with how it fits the idea that one name can belo
 
 ### 39. A person called Washington, and a place called Washington
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 39 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 39 of 106*
 
 [reviewers only: card kind `lookalike`, id `look-hist-wash`]
 
@@ -1081,7 +1081,7 @@ Is it a person who led, or a place where the government sits?
 
 ### 40. Three events, and the country in each
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 40 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 40 of 106*
 
 [reviewers only: card kind `concept`, id `con-hist-countries`]
 
@@ -1104,7 +1104,7 @@ So there is one purchase and two wars. The three facts below are the three count
 
 ### 41. Three countries, three events
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 41 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 41 of 106*
 
 [reviewers only: card kind `facts`, id `facts-hist-countries`]
 
@@ -1124,7 +1124,7 @@ These are the three countries, each with how it fits the idea of the country gro
 
 ### 42. A question from memory
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 42 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 42 of 106*
 
 [reviewers only: card kind `check`, id `chk-hist-ctry-france`]
 
@@ -1143,7 +1143,7 @@ These are the three countries, each with how it fits the idea of the country gro
 
 ### 43. A question from memory
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 43 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 43 of 106*
 
 [reviewers only: card kind `check`, id `chk-hist-ctry-britain`]
 
@@ -1162,7 +1162,7 @@ These are the three countries, each with how it fits the idea of the country gro
 
 ### 44. A question from memory
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 44 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 44 of 106*
 
 [reviewers only: card kind `check`, id `chk-hist-ctry-mexico`]
 
@@ -1181,7 +1181,7 @@ These are the three countries, each with how it fits the idea of the country gro
 
 ### 45. What the growth left behind, and what it cost
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 45 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 45 of 106*
 
 [reviewers only: card kind `concept`, id `con-hist-growth`]
 
@@ -1204,7 +1204,7 @@ The five facts below are the five panels: what the purchase did, what was writte
 
 ### 46. Five things the growth left, and cost
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 46 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 46 of 106*
 
 [reviewers only: card kind `facts`, id `facts-hist-growth`]
 
@@ -1228,7 +1228,7 @@ These are the five facts, each with how it fits the idea of what the growth left
 
 ### 47. A question from memory
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 47 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 47 of 106*
 
 [reviewers only: card kind `check`, id `chk-hist-grow-size`]
 
@@ -1251,7 +1251,7 @@ These are the five facts, each with how it fits the idea of what the growth left
 
 ### 48. A question from memory
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 48 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 48 of 106*
 
 [reviewers only: card kind `check`, id `chk-hist-grow-anthem`]
 
@@ -1274,7 +1274,7 @@ These are the five facts, each with how it fits the idea of what the growth left
 
 ### 49. A question from memory
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 49 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 49 of 106*
 
 [reviewers only: card kind `check`, id `chk-hist-grow-calif`]
 
@@ -1297,7 +1297,7 @@ These are the five facts, each with how it fits the idea of what the growth left
 
 ### 50. A question from memory
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 50 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 50 of 106*
 
 [reviewers only: card kind `check`, id `chk-hist-grow-means`]
 
@@ -1320,7 +1320,7 @@ These are the five facts, each with how it fits the idea of what the growth left
 
 ### 51. A question from memory
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 51 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 51 of 106*
 
 [reviewers only: card kind `check`, id `chk-hist-grow-trail`]
 
@@ -1343,7 +1343,7 @@ These are the five facts, each with how it fits the idea of what the growth left
 
 ### 52. Five years of the growth, in order
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 52 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 52 of 106*
 
 [reviewers only: card kind `concept`, id `con-hist-years`]
 
@@ -1364,7 +1364,7 @@ The five facts below are the five years.
 
 ### 53. Five years of the growth
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 53 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 53 of 106*
 
 [reviewers only: card kind `facts`, id `facts-hist-years`]
 
@@ -1388,7 +1388,7 @@ These are the five years, each with how it fits the sixty years of growth and th
 
 ### 54. A question from memory
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 54 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 54 of 106*
 
 [reviewers only: card kind `check`, id `chk-hist-yg-purchase`]
 
@@ -1411,7 +1411,7 @@ These are the five years, each with how it fits the sixty years of growth and th
 
 ### 55. A question from memory
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 55 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 55 of 106*
 
 [reviewers only: card kind `check`, id `chk-hist-yg-comp1`]
 
@@ -1434,7 +1434,7 @@ These are the five years, each with how it fits the sixty years of growth and th
 
 ### 56. A question from memory
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 56 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 56 of 106*
 
 [reviewers only: card kind `check`, id `chk-hist-yg-mexico`]
 
@@ -1457,7 +1457,7 @@ These are the five years, each with how it fits the sixty years of growth and th
 
 ### 57. A question from memory
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 57 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 57 of 106*
 
 [reviewers only: card kind `check`, id `chk-hist-yg-comp2`]
 
@@ -1480,7 +1480,7 @@ These are the five years, each with how it fits the sixty years of growth and th
 
 ### 58. A question from memory
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 58 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 58 of 106*
 
 [reviewers only: card kind `check`, id `chk-hist-yg-dred`]
 
@@ -1503,7 +1503,7 @@ These are the five years, each with how it fits the sixty years of growth and th
 
 ### 59. The first compromise, and the second
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 59 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 59 of 106*
 
 [reviewers only: card kind `lookalike`, id `look-hist-years`]
 
@@ -1552,7 +1552,7 @@ Is it the first compromise, or the second one, thirty years later?
 
 ### 60. The question that every new state raised
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 60 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 60 of 106*
 
 [reviewers only: card kind `concept`, id `con-hist-slavery`]
 
@@ -1568,14 +1568,14 @@ Congress tried to settle it with compromises. In 1820 it admitted Missouri as a 
 
 In 1857 the Supreme Court dealt with it in a different way, in the Dred Scott decision. The Court ruled that Black people could not be citizens, and that Congress had no power to ban slavery in the territories, which are lands that had not yet become states. The decision is now widely seen as one of the worst the Court ever made.
 
-The second of those rulings is an example of the key’s name **Beyond Congress’s power**: the Court said that a law of Congress went past what Congress may do. And the first did not stand. In 1868 the Fourteenth Amendment overturned it, by making everyone born here a citizen.
+The second of those rulings is an example of the name **Beyond Congress’s power**: the Court said that a law of Congress went past what Congress may do. And the first did not stand. In 1868 the Fourteenth Amendment overturned it, by making everyone born here a citizen.
 
 The five facts below are the question, what the compromises did, the two rulings of 1857, and what overturned the first ruling.
 
 
 ### 61. The question, the compromises, the Court and the amendment
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 61 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 61 of 106*
 
 [reviewers only: card kind `facts`, id `facts-hist-slavery`]
 
@@ -1594,12 +1594,12 @@ These are the five facts, each with how it fits the idea of a question that grow
 - **Whether slavery would be allowed there**: The founders had put the question off. Each new state brought it back, because Congress had to decide whether slavery would be allowed there.
 - **They bought time without settling it**: The compromises were deals made in Congress. Each one bought time without settling the matter, so the question came back with the next state.
 - **They could not be citizens**: This is the first of the two rulings of 1857. The decision is now widely seen as one of the worst the Court ever made.
-- **Congress had no power to ban slavery there**: This is the second of the two rulings of 1857. The Court said that a law of Congress went past what Congress may do, which is what the key’s name **Beyond Congress’s power** describes.
+- **Congress had no power to ban slavery there**: This is the second of the two rulings of 1857. The Court said that a law of Congress went past what Congress may do, which is what the name **Beyond Congress’s power** describes.
 - **The Fourteenth Amendment made everyone born here a citizen**: The Fourteenth Amendment was added to overturn the citizenship part of the Dred Scott decision. Since 1868, everyone born here has been a citizen under the Constitution.
 
 ### 62. A question from memory
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 62 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 62 of 106*
 
 [reviewers only: card kind `check`, id `chk-hist-slv-question`]
 
@@ -1622,7 +1622,7 @@ These are the five facts, each with how it fits the idea of a question that grow
 
 ### 63. A question from memory
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 63 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 63 of 106*
 
 [reviewers only: card kind `check`, id `chk-hist-slv-time`]
 
@@ -1645,7 +1645,7 @@ These are the five facts, each with how it fits the idea of a question that grow
 
 ### 64. A question from memory
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 64 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 64 of 106*
 
 [reviewers only: card kind `check`, id `chk-hist-slv-citizen`]
 
@@ -1668,7 +1668,7 @@ These are the five facts, each with how it fits the idea of a question that grow
 
 ### 65. A question from memory
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 65 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 65 of 106*
 
 [reviewers only: card kind `check`, id `chk-hist-slv-terr`]
 
@@ -1682,7 +1682,7 @@ These are the five facts, each with how it fits the idea of a question that grow
 
 **Shown as soon as you answer**
 
-- The answer: **Congress had no power to ban slavery there**. Why: This is the second of the two rulings of 1857. The Court said that a law of Congress went past what Congress may do, which is what the key’s name **Beyond Congress’s power** describes.
+- The answer: **Congress had no power to ban slavery there**. Why: This is the second of the two rulings of 1857. The Court said that a law of Congress went past what Congress may do, which is what the name **Beyond Congress’s power** describes.
   - If you chose Whether slavery would be allowed there: You chose **Whether slavery would be allowed there**. That is the answer to a different fact: What did each new state force the country to decide?
   - If you chose They bought time without settling it: You chose **They bought time without settling it**. That is the answer to a different fact: What did the compromises of 1820 and 1850 do about the quarrel over slavery?
   - If you chose They could not be citizens: You chose **They could not be citizens**. That is the answer to a different fact: What did the Supreme Court decide in 1857, in the Dred Scott decision, about Black people?
@@ -1691,7 +1691,7 @@ These are the five facts, each with how it fits the idea of a question that grow
 
 ### 66. A question from memory
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 66 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 66 of 106*
 
 [reviewers only: card kind `check`, id `chk-hist-slv-undone`]
 
@@ -1714,7 +1714,7 @@ These are the five facts, each with how it fits the idea of a question that grow
 
 ### 67. Two rulings in one decision
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 67 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 67 of 106*
 
 [reviewers only: card kind `lookalike`, id `look-hist-slavery`]
 
@@ -1752,7 +1752,7 @@ Is the ruling about a group of people and whether they could be citizens, or abo
 |---|---|---|
 | Asked | What did the Supreme Court decide in 1857, in the Dred Scott decision, about Black people? | What did the Supreme Court decide in 1857 about a ban on slavery in the territories? |
 | The answer | They could not be citizens | Congress had no power to ban slavery there |
-| How it fits | This is the first of the two rulings of 1857. The decision is now widely seen as one of the worst the Court ever made. | This is the second of the two rulings of 1857. The Court said that a law of Congress went past what Congress may do, which is what the key’s name **Beyond Congress’s power** describes. |
+| How it fits | This is the first of the two rulings of 1857. The decision is now widely seen as one of the worst the Court ever made. | This is the second of the two rulings of 1857. The Court said that a law of Congress went past what Congress may do, which is what the name **Beyond Congress’s power** describes. |
 
 
 *End of part 4. You can stop here; your place is kept. Next: part 5, The Civil War.*
@@ -1763,7 +1763,7 @@ Is the ruling about a group of people and whether they could be citizens, or abo
 
 ### 68. The war, held by five names
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 68 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 68 of 106*
 
 [reviewers only: card kind `concept`, id `con-hist-war`]
 
@@ -1784,7 +1784,7 @@ The five facts below are five names: the word for leaving, the President, the pr
 
 ### 69. Five names of the Civil War
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 69 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 69 of 106*
 
 [reviewers only: card kind `facts`, id `facts-hist-war`]
 
@@ -1808,7 +1808,7 @@ These are the five names, each with how it fits the story of the states that lef
 
 ### 70. A question from memory
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 70 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 70 of 106*
 
 [reviewers only: card kind `check`, id `chk-hist-w-secession`]
 
@@ -1831,7 +1831,7 @@ These are the five names, each with how it fits the story of the states that lef
 
 ### 71. A question from memory
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 71 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 71 of 106*
 
 [reviewers only: card kind `check`, id `chk-hist-w-lincoln`]
 
@@ -1854,7 +1854,7 @@ These are the five names, each with how it fits the story of the states that lef
 
 ### 72. A question from memory
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 72 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 72 of 106*
 
 [reviewers only: card kind `check`, id `chk-hist-w-emancip`]
 
@@ -1877,7 +1877,7 @@ These are the five names, each with how it fits the story of the states that lef
 
 ### 73. A question from memory
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 73 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 73 of 106*
 
 [reviewers only: card kind `check`, id `chk-hist-w-gettys`]
 
@@ -1900,7 +1900,7 @@ These are the five names, each with how it fits the story of the states that lef
 
 ### 74. A question from memory
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 74 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 74 of 106*
 
 [reviewers only: card kind `check`, id `chk-hist-w-cause`]
 
@@ -1923,7 +1923,7 @@ These are the five names, each with how it fits the story of the states that lef
 
 ### 75. A proclamation, and a speech
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 75 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 75 of 106*
 
 [reviewers only: card kind `lookalike`, id `look-hist-war`]
 
@@ -1966,7 +1966,7 @@ Did it declare people free, or say what the war was testing?
 
 ### 76. The war by its years
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 76 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 76 of 106*
 
 [reviewers only: card kind `concept`, id `con-hist-wyears`]
 
@@ -1987,7 +1987,7 @@ The four facts below are the four years.
 
 ### 77. Four years of the Civil War
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 77 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 77 of 106*
 
 [reviewers only: card kind `facts`, id `facts-hist-wyears`]
 
@@ -2009,7 +2009,7 @@ These are the four years, each with how it fits the order of the war: the electi
 
 ### 78. A question from memory
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 78 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 78 of 106*
 
 [reviewers only: card kind `check`, id `chk-hist-yw-elect`]
 
@@ -2030,7 +2030,7 @@ These are the four years, each with how it fits the order of the war: the electi
 
 ### 79. A question from memory
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 79 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 79 of 106*
 
 [reviewers only: card kind `check`, id `chk-hist-yw-start`]
 
@@ -2051,7 +2051,7 @@ These are the four years, each with how it fits the order of the war: the electi
 
 ### 80. A question from memory
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 80 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 80 of 106*
 
 [reviewers only: card kind `check`, id `chk-hist-yw-emancip`]
 
@@ -2072,7 +2072,7 @@ These are the four years, each with how it fits the order of the war: the electi
 
 ### 81. A question from memory
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 81 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 81 of 106*
 
 [reviewers only: card kind `check`, id `chk-hist-yw-end`]
 
@@ -2093,7 +2093,7 @@ These are the four years, each with how it fits the order of the war: the electi
 
 ### 82. The year the fighting began, and the year it ended
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 82 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 82 of 106*
 
 [reviewers only: card kind `lookalike`, id `look-hist-wyears`]
 
@@ -2136,7 +2136,7 @@ Is it the year the fighting began, or the year it ended?
 
 ### 83. Three numbers that say how big it was and what came of it
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 83 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 83 of 106*
 
 [reviewers only: card kind `concept`, id `con-hist-count`]
 
@@ -2157,7 +2157,7 @@ The three facts below are the three numbers.
 
 ### 84. Three numbers of the war and what followed
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 84 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 84 of 106*
 
 [reviewers only: card kind `facts`, id `facts-hist-count`]
 
@@ -2177,7 +2177,7 @@ These are the three numbers, each with how it fits the idea of three different t
 
 ### 85. A question from memory
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 85 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 85 of 106*
 
 [reviewers only: card kind `check`, id `chk-hist-n-states`]
 
@@ -2196,7 +2196,7 @@ These are the three numbers, each with how it fits the idea of three different t
 
 ### 86. A question from memory
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 86 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 86 of 106*
 
 [reviewers only: card kind `check`, id `chk-hist-n-dead`]
 
@@ -2215,7 +2215,7 @@ These are the three numbers, each with how it fits the idea of three different t
 
 ### 87. A question from memory
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 87 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 87 of 106*
 
 [reviewers only: card kind `check`, id `chk-hist-n-amend`]
 
@@ -2240,7 +2240,7 @@ These are the three numbers, each with how it fits the idea of three different t
 
 ### 88. Freed, citizens, vote: the three amendments
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 88 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 88 of 106*
 
 [reviewers only: card kind `concept`, id `con-hist-amend`]
 
@@ -2256,14 +2256,14 @@ The years from 1865 to 1877, when the country tried to rebuild and to settle wha
 
 Due process means that the government must follow fair steps before it punishes you or takes something from you. Equal protection means that the law protects people equally.
 
-The Fourteenth is the one that matters most for the key. It put rights above every state. That is why a court can stop a state or a city from acting against a right, which is the key’s name **A right that binds the states**. Its first part is also where birthright citizenship comes from. Since 1868, everyone born here has been a citizen under the Constitution.
+The Fourteenth is the one that matters most for the cases in this course. It put rights above every state. That is why a court can stop a state or a city from acting against a right, which is the name **A right that binds the states**. Its first part is also where birthright citizenship comes from. Since 1868, everyone born here has been a citizen under the Constitution.
 
 The order is the thing to hold: freed, citizens, vote. The three facts below are the three amendments, each asked by what it did.
 
 
 ### 89. The Thirteenth, Fourteenth and Fifteenth Amendments
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 89 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 89 of 106*
 
 [reviewers only: card kind `facts`, id `facts-hist-amend`]
 
@@ -2278,12 +2278,12 @@ These are the three amendments, each with how it fits the idea of three steps in
 **How each fact fits the idea**
 
 - **The Thirteenth**: It is the first of the three, from 1865, and it is the one about being freed.
-- **The Fourteenth**: It is the second of the three, from 1868, and it is the one about being a citizen. It is the amendment behind the key’s name **A right that binds the states**, and it overturned the citizenship part of the Dred Scott decision.
+- **The Fourteenth**: It is the second of the three, from 1868, and it is the one about being a citizen. It is the amendment behind the name **A right that binds the states**, and it overturned the citizenship part of the Dred Scott decision.
 - **The Fifteenth**: It is the third of the three, from 1870, and it is the one about the vote.
 
 ### 90. A question from memory
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 90 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 90 of 106*
 
 [reviewers only: card kind `check`, id `chk-hist-am-13`]
 
@@ -2302,7 +2302,7 @@ These are the three amendments, each with how it fits the idea of three steps in
 
 ### 91. A question from memory
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 91 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 91 of 106*
 
 [reviewers only: card kind `check`, id `chk-hist-am-14`]
 
@@ -2314,14 +2314,14 @@ These are the three amendments, each with how it fits the idea of three steps in
 
 **Shown as soon as you answer**
 
-- The answer: **The Fourteenth**. Why: It is the second of the three, from 1868, and it is the one about being a citizen. It is the amendment behind the key’s name **A right that binds the states**, and it overturned the citizenship part of the Dred Scott decision.
+- The answer: **The Fourteenth**. Why: It is the second of the three, from 1868, and it is the one about being a citizen. It is the amendment behind the name **A right that binds the states**, and it overturned the citizenship part of the Dred Scott decision.
   - If you chose The Thirteenth: You chose **The Thirteenth**. That is the answer to a different fact: Which amendment abolished slavery?
   - If you chose The Fifteenth: You chose **The Fifteenth**. That is the answer to a different fact: Which amendment said that the vote cannot be denied because of race?
 - Taught on: “The Thirteenth, Fourteenth and Fifteenth Amendments” (one tap opens the card).
 
 ### 92. A question from memory
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 92 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 92 of 106*
 
 [reviewers only: card kind `check`, id `chk-hist-am-15`]
 
@@ -2340,7 +2340,7 @@ These are the three amendments, each with how it fits the idea of three steps in
 
 ### 93. Being a citizen, and being able to vote
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 93 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 93 of 106*
 
 [reviewers only: card kind `lookalike`, id `look-hist-amend`]
 
@@ -2378,12 +2378,12 @@ Is it about who counts as a citizen, or about who may vote?
 |---|---|---|
 | Asked | Which amendment made everyone born here a citizen, and promised due process and equal protection? | Which amendment said that the vote cannot be denied because of race? |
 | The answer | The Fourteenth | The Fifteenth |
-| How it fits | It is the second of the three, from 1868, and it is the one about being a citizen. It is the amendment behind the key’s name **A right that binds the states**, and it overturned the citizenship part of the Dred Scott decision. | It is the third of the three, from 1870, and it is the one about the vote. |
+| How it fits | It is the second of the three, from 1868, and it is the one about being a citizen. It is the amendment behind the name **A right that binds the states**, and it overturned the citizenship part of the Dred Scott decision. | It is the third of the three, from 1870, and it is the one about the vote. |
 
 
 ### 94. The years of Reconstruction
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 94 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 94 of 106*
 
 [reviewers only: card kind `concept`, id `con-hist-ryears`]
 
@@ -2404,7 +2404,7 @@ The four facts below are the three amendment years and the year that Reconstruct
 
 ### 95. Four years of Reconstruction
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 95 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 95 of 106*
 
 [reviewers only: card kind `facts`, id `facts-hist-ryears`]
 
@@ -2426,7 +2426,7 @@ These are the four years, each with how it fits the order of freed, citizens, vo
 
 ### 96. A question from memory
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 96 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 96 of 106*
 
 [reviewers only: card kind `check`, id `chk-hist-ry-13`]
 
@@ -2447,7 +2447,7 @@ These are the four years, each with how it fits the order of freed, citizens, vo
 
 ### 97. A question from memory
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 97 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 97 of 106*
 
 [reviewers only: card kind `check`, id `chk-hist-ry-14`]
 
@@ -2468,7 +2468,7 @@ These are the four years, each with how it fits the order of freed, citizens, vo
 
 ### 98. A question from memory
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 98 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 98 of 106*
 
 [reviewers only: card kind `check`, id `chk-hist-ry-15`]
 
@@ -2489,7 +2489,7 @@ These are the four years, each with how it fits the order of freed, citizens, vo
 
 ### 99. A question from memory
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 99 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 99 of 106*
 
 [reviewers only: card kind `check`, id `chk-hist-ry-end`]
 
@@ -2510,7 +2510,7 @@ These are the four years, each with how it fits the order of freed, citizens, vo
 
 ### 100. When the troops left: a promise that went unkept
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 100 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 100 of 106*
 
 [reviewers only: card kind `concept`, id `con-hist-after`]
 
@@ -2533,7 +2533,7 @@ The three facts below are the segregation laws, the poll tax, and the decade whe
 
 ### 101. Two barriers, and when they gave way
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 101 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 101 of 106*
 
 [reviewers only: card kind `facts`, id `facts-hist-after`]
 
@@ -2553,7 +2553,7 @@ These are the three facts, each with how it fits the idea of a promise in the Co
 
 ### 102. A question from memory
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 102 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 102 of 106*
 
 [reviewers only: card kind `check`, id `chk-hist-aft-seg`]
 
@@ -2572,7 +2572,7 @@ These are the three facts, each with how it fits the idea of a promise in the Co
 
 ### 103. A question from memory
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 103 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 103 of 106*
 
 [reviewers only: card kind `check`, id `chk-hist-aft-poll`]
 
@@ -2591,7 +2591,7 @@ These are the three facts, each with how it fits the idea of a promise in the Co
 
 ### 104. A question from memory
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 104 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 104 of 106*
 
 [reviewers only: card kind `check`, id `chk-hist-aft-1960s`]
 
@@ -2610,7 +2610,7 @@ These are the three facts, each with how it fits the idea of a promise in the Co
 
 ### 105. Keeping people apart, and charging a fee to vote
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 105 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 105 of 106*
 
 [reviewers only: card kind `lookalike`, id `look-hist-after`]
 
@@ -3350,7 +3350,7 @@ The cards are out of view from here. The drill has one stage. Nothing here is gr
 
 **Shown as soon as you answer**
 
-- The answer: **Congress had no power to ban slavery there**. Why: This is the second of the two rulings of 1857. The Court said that a law of Congress went past what Congress may do, which is what the key’s name **Beyond Congress’s power** describes.
+- The answer: **Congress had no power to ban slavery there**. Why: This is the second of the two rulings of 1857. The Court said that a law of Congress went past what Congress may do, which is what the name **Beyond Congress’s power** describes.
   - If you chose Whether slavery would be allowed there: You chose **Whether slavery would be allowed there**. That is the answer to a different fact: What did each new state force the country to decide?
   - If you chose They bought time without settling it: You chose **They bought time without settling it**. That is the answer to a different fact: What did the compromises of 1820 and 1850 do about the quarrel over slavery?
   - If you chose They could not be citizens: You chose **They could not be citizens**. That is the answer to a different fact: What did the Supreme Court decide in 1857, in the Dred Scott decision, about Black people? Both are rulings from the Dred Scott decision of 1857, and both are about slavery. One ruling was about Black people: “**They could not be citizens**”. The other was about Congress and the territories: “**Congress had no power to ban slavery there**”. Is the ruling about a group of people and whether they could be citizens, or about what Congress had the power to do?
@@ -3632,7 +3632,7 @@ The cards are out of view from here. The drill has one stage. Nothing here is gr
 
 **Shown as soon as you answer**
 
-- The answer: **The Fourteenth**. Why: It is the second of the three, from 1868, and it is the one about being a citizen. It is the amendment behind the key’s name **A right that binds the states**, and it overturned the citizenship part of the Dred Scott decision.
+- The answer: **The Fourteenth**. Why: It is the second of the three, from 1868, and it is the one about being a citizen. It is the amendment behind the name **A right that binds the states**, and it overturned the citizenship part of the Dred Scott decision.
   - If you chose The Thirteenth: You chose **The Thirteenth**. That is the answer to a different fact: Which amendment abolished slavery?
   - If you chose The Fifteenth: You chose **The Fifteenth**. That is the answer to a different fact: Which amendment said that the vote cannot be denied because of race? Both are about the rights of freed people after the war, and they came only two years apart. One is about who is a citizen: **The Fourteenth**. The other is about who may vote: **The Fifteenth**. Is it about who counts as a citizen, or about who may vote?
 - Taught on: “The Thirteenth, Fourteenth and Fifteenth Amendments” (one tap opens the card).
@@ -3780,11 +3780,11 @@ The cards are out of view from here. The drill has one stage. Nothing here is gr
   - If you chose Poll taxes: You chose **Poll taxes**. That is the answer to a different fact: What were fees to vote called, which were used as a barrier to keep Black citizens from voting?
 - Taught on: “Two barriers, and when they gave way” (one tap opens the card).
 
-**When the drill ends.** The learner sees their own results: first-try accuracy for each stage, whole routes beside single questions, the pair of names they mixed up most often, and what will come back and when. Anything missed was asked again before the drill ended. Nothing here is graded. A miss only decides what comes back.
+**When the drill ends.** The learner sees their own results: first-try accuracy for each stage, whole cases beside single questions, the pair of names they mixed up most often, and what will come back and when. Anything missed was asked again before the drill ended. Nothing here is graded. A miss only decides what comes back.
 
 ### 106. What to carry away
 
-*Unit Nine · rev 1 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 106 of 106*
+*Unit Nine · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 106 of 106*
 
 [reviewers only: card kind `recap`, id `recap-hist`]
 
@@ -3915,5 +3915,5 @@ You have now met every fact in the unit, in its group. This card puts them toget
 
 ## After the unit: what comes back on later days
 
-A name that is due returns as a case the learner has not seen, next to a case of the name they most often confuse it with. Each is run as a whole route. These are the fresh cases held back for that purpose: three for each name, one for each scheduled return. The first return is about two days after the drill, the next about a week after that, the next about three and a half weeks later.
+A name that is due returns as a case the learner has not seen, next to a case of the name they most often confuse it with. Each is run as a whole case: every question, then the name. These are the fresh cases held back for that purpose: three for each name, one for each scheduled return. The first return is about two days after the drill, the next about a week after that, the next about three and a half weeks later.
 

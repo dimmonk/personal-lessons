@@ -1,15 +1,15 @@
 # Learner view: Statistical Claims, Unit Four: What the number counts
 
-*Three ways a figure can move while the real thing stands still, and how to tell which one you are looking at.* Unit revision 1, built to lesson standard 1, status: draft.
+*Three ways a figure can move while the real thing stands still, and how to tell which one you are looking at.* Unit revision 2, built to lesson standard 1, status: draft.
 
 This file is generated from the data files by `tools/render-learner-view.mjs`. It shows every screen in the order a learner meets it. In the app one card is on screen at a time and the learner moves on when ready.
 
-- **Bold text in quotation marks** is the key’s own wording, printed from `key.js`. Bold names are the outcome names from the same file. Neither is typed anywhere else. "What you must be able to point to" lines and "How to tell them apart" lines are also printed from one place each (the key and the look-alike ledger).
+- **Bold text in quotation marks** is the subject’s own wording for its questions and answers, written once and printed everywhere. Bold names are the names, written once in the same place. Neither is typed anywhere else. "What you must be able to point to" lines and "How to tell them apart" lines are also printed from one place each (the subject’s questions and the pairs it compares).
 - ⟦Double brackets⟧ show the words the app marks in a case (one highlight style everywhere).
 - The line in italics under each heading is the app’s top bar. The line in square brackets after it is for reviewers and is not shown to the learner.
 - Headings, prompt wording and stage instructions that are the same in every unit are the app’s wording, not this unit’s.
 - "Shown as soon as you …" is what appears the moment the learner answers. Nothing is hidden behind a second tap the first time a case is met, or after a miss.
-- After every answer the app shows, in this order: the right answer in the key’s words; the reason, quoting the marked words; for a name, why the nearest wrong name fails; after a miss, a line about the answer the learner chose; and last a link to the card that taught it. Where a line about the learner’s own choice is not written for the case, the app builds it from the key, and this file says so in place of repeating it.
+- After every answer the app shows, in this order: the right answer; the reason, quoting the marked words; for a name, why the nearest wrong name fails; after a miss, a line about the answer the learner chose; and last a link to the card that taught it. Where a line about the learner’s own choice is not written for the case, the app builds it from the answers’ own wording, and this file says so in place of repeating it.
 
 ---
 
@@ -17,7 +17,7 @@ This file is generated from the data files by `tools/render-learner-view.mjs`. I
 
 ### 1. A number went up. Did the thing it counts go up?
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 1 of 30*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 1 of 30*
 
 [reviewers only: card kind `orient`, id `orient`]
 
@@ -25,7 +25,7 @@ After this unit you can read a claim about a figure that rose, fell or differed,
 
 You have met claims like these. "Reported burglaries are up 30% since the new hotline." "Our waiting times are down by a third." "Diagnoses have doubled in ten years." "Nine in ten deliveries now arrive on time." Each one gives you a figure and tells you what to make of it: more crime, shorter waits, more illness, better service.
 
-A figure is not the thing it stands for. It is what was written down, counted or measured, and then read as showing the real thing. Most of the time the two move together. Sometimes the figure moves and the real thing does not. The key has already sorted claims by the first part that goes wrong, and this unit is for the claims where its answer was **“What the number counts”**: the figure could rise, fall or differ while the real thing did nothing of the kind.
+A figure is not the thing it stands for. It is what was written down, counted or measured, and then read as showing the real thing. Most of the time the two move together. Sometimes the figure moves and the real thing does not. The first question has already sorted claims by the first part that goes wrong, and this unit is for the claims where the answer was **“What the number counts”**: the figure could rise, fall or differ while the real thing did nothing of the kind.
 
 There are three ordinary ways for that to happen, and each sends you to a different check. People who are judged on the figure can work on the figure instead of the real thing. The way of counting can change, so that the same situation gets a different number. Or more effort can go into finding the thing, so that more of what was always there turns up. This unit teaches you to tell the three apart, and to see a figure for what it is: a count made by someone, in some way, with some amount of effort.
 
@@ -33,7 +33,7 @@ Two phrases are used all the way through. The real thing is what the figure is r
 
 When people are counted as having an illness, they are "found". The word "case" is kept for what the app calls one example: a claim as someone might say it to you, with whatever the speaker tells you about how the figure was made.
 
-**What Unit One taught, in one place.** The key’s first question is **“Which part of the claim goes wrong first?”** Its answers:
+**What Unit One taught, in one place.** The first question is **“Which part of the claim goes wrong first?”** Its answers:
 
 - **“Who was counted”**: give this answer when the people or things the figure was worked out from are not a fair picture of the group the claim is about, or are too few to trust.
 - **“What the number counts”**: give this answer when the figure could rise, fall or differ without the real thing it is read as showing doing the same. **This unit is about these cases.**
@@ -41,11 +41,11 @@ When people are counted as having an illness, they are "found". The word "case" 
 - **“What it says caused what”**: give this answer when the claim says one thing made another happen, and the case shows another way the same result could have come about.
 - **“Nothing goes wrong”**: give this answer when every part the claim makes holds up when it is checked in order, and none of them goes wrong.
 
-Unit One also taught that two things are marked separately: the name you give a case, and your route to it, meaning the answers you gave to the key’s questions on the way.
+Two things are marked separately: the name you give a case, and your answers to the questions on the way to it.
 
 *(One tap on any of these lines opens the card in Unit One that taught it.)*
 
-**The part of the key this unit teaches.** This is a preview. You are not expected to follow it yet: every line is explained on the cards that come next. The question and its answers are in the key’s own words. Beside each answer, in plain words, is the thing it leads to. There are three of them, and each gets its name when it is taught.
+**The questions this unit teaches.** This is a preview. You are not expected to follow it yet: every line is explained on the cards that come next. The question and its answers are worded exactly as you will meet them. Beside each answer, in plain words, is the thing it leads to. There are three of them, and each gets its name when it is taught.
 
 What besides the real thing could move this figure?
 - People working on the figure itself → pushing up the figure instead of the thing it stands for
@@ -62,13 +62,13 @@ The unit has three parts, and you can stop after any of them.
 
 1. When the people who make a figure are judged on it
 2. When the counting changes, and when the looking grows
-3. The key’s question, and two whole claims
+3. The question, and two whole claims
 
 Each name is taught through cases first. After every step you answer one question about a new case, and the answer and the reason are shown straight away. Nothing here is graded. A miss only decides what comes back.
 
 ### 2. Pushing up the figure instead of the thing it stands for
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 2 of 30*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 2 of 30*
 
 [reviewers only: card kind `meet`, id `meet-proxy`]
 
@@ -94,9 +94,9 @@ Most people who do this do not think of it as cheating. They are doing what the 
 
 **What you must be able to point to.** A figure that people are paid, ranked or judged on, a rise in it, and a way they could raise it without more of the thing it is meant to show. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What besides the real thing could move this figure?”**
+**The question:** **“What besides the real thing could move this figure?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“People working on the figure itself”**
+**Its answer for a case like this one:** **“People working on the figure itself”**
 
 The name for this is **Gaming the target**. A "target" is a figure that people are asked to reach. "Gaming" means playing the system to reach it, here by tapping instead of delivering. The name is for the situation where people who are judged on a figure raise the figure itself, and not the real thing it was meant to show.
 
@@ -104,7 +104,7 @@ You may also hear this called “Goodhart’s law” or “teaching to the test�
 
 ### 3. Gaming the target: the same thing in a different story
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 3 of 30*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 3 of 30*
 
 [reviewers only: card kind `again`, id `again-proxy`]
 
@@ -141,7 +141,7 @@ The two stories share nothing else. So this is not about parcels or about langua
 
 ### 4. The story never decides which of the three it is
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 4 of 30*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 4 of 30*
 
 [reviewers only: card kind `lens`, id `lens`]
 
@@ -149,19 +149,19 @@ The last card asked you to ignore the story. That instruction holds for the whol
 
 Every claim in this unit has two layers. The top layer is the story: a delivery firm, a school, a clinic, a ski area. The layer underneath is how the figure came to be what it is: who makes it, how it is counted, and how hard anyone looked for what it counts.
 
-The three names belong to the layer underneath. The same story can carry any of them. A claim about a hospital can be a figure the staff are paid on, a figure counted in a new way, or a figure from more testing. And it can be a claim in which none of the three applies. The key has its own answer for that: **“Nothing goes wrong”**.
+The three names belong to the layer underneath. The same story can carry any of them. A claim about a hospital can be a figure the staff are paid on, a figure counted in a new way, or a figure from more testing. And it can be a claim in which none of the three applies. There is an answer for that too: **“Nothing goes wrong”**.
 
 From here on, the claims change their stories on purpose. Sometimes two claims share the same story and the same rise, and differ only underneath. When that happens, the shared story is there to show you that it decides nothing.
 
 Two more things change on purpose: how large the rise is, and whether anyone did anything wrong. A rise of 16 points can come from the real thing moving, and a rise of 1 point can be the work of someone paid on it. Nobody in these claims has to be dishonest for a figure to move.
 
-**Stays the same from case to case:** how the figure came to be what it is, which is what the key asks about: **“What besides the real thing could move this figure?”**
+**Stays the same from case to case:** how the figure came to be what it is, which is what this question asks about: **“What besides the real thing could move this figure?”**
 
 **Changes on purpose:** the topic; the people; how large the rise is; whether anyone meant to mislead; whether the figure moved because of anything but the real thing.
 
 ### 5. Gaming the target: what it is like
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 5 of 30*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 5 of 30*
 
 [reviewers only: card kind `portrait`, id `portrait-proxy`]
 
@@ -201,7 +201,7 @@ Until you have found one, repeat only what the figure says ("marked on time") an
 
 ### 6. A question about a new case
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 6 of 30*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 6 of 30*
 
 [reviewers only: card kind `check`, id `check-proxy`]
 
@@ -217,7 +217,7 @@ The pieces you can tap:
 
 **Shown as soon as you tap**
 
-- If you are right: “Right: ‘A software company gives each team a $100 bonus for every 10 bug reports it closes in a month, and the team itself decides how a problem is split into reports.’.” The team is paid for each report it closes, and it decides how a problem is split into reports: “gives each team a $100 bonus for every 10 bug reports it closes in a month, and the team itself decides how a problem is split into reports”. Splitting one problem into three reports raises the figure from 40 to 120 with no more problems fixed, and the testers’ count of different problems stayed at 25. The key’s answer for this case is **“People working on the figure itself”**, and the name is **Gaming the target**.
+- If you are right: “Right: ‘A software company gives each team a $100 bonus for every 10 bug reports it closes in a month, and the team itself decides how a problem is split into reports.’.” The team is paid for each report it closes, and it decides how a problem is split into reports: “gives each team a $100 bonus for every 10 bug reports it closes in a month, and the team itself decides how a problem is split into reports”. Splitting one problem into three reports raises the figure from 40 to 120 with no more problems fixed, and the testers’ count of different problems stayed at 25. The answer for this case is **“People working on the figure itself”**, and the name is **Gaming the target**.
 - If you miss: “The words are ‘A software company gives each team a $100 bonus for every 10 bug reports it closes in a month, and the team itself decides how a problem is split into reports.’.” The same reason follows, and then a line about the piece you tapped:
   - “The team closed 40 reports in March and 120 in May.”: These are the figures that rose, from 40 to 120. They do not show who gains from the rise or how it could be raised.
   - “In May it began writing one report for each page a problem shows up on, where before it wrote one report for the whole problem.”: This shows how the figure was raised. The words asked for are the ones that show the team gains from a higher figure and decides how it is made. They come in the first sentence.
@@ -226,7 +226,7 @@ The pieces you can tap:
 
 ### 7. Gaming the target or A real change: telling them apart
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 7 of 30*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 7 of 30*
 
 [reviewers only: card kind `lookalike`, id `look-proxy-real`]
 
@@ -248,9 +248,9 @@ You have met one way a figure can be moved. People reading a headline often cann
 
 **Why this one and not the other**
 
-In Case A the drivers are paid when 90 of every 100 trips are logged on time, and each driver logs the trip with a press of a panel. The figure can rise from 78 to 90 because of what the drivers press, with no bus running any earlier. The key’s first answer is **“What the number counts”**, and its second is **“People working on the figure itself”**: the case is **Gaming the target**.
+In Case A the drivers are paid when 90 of every 100 trips are logged on time, and each driver logs the trip with a press of a panel. The figure can rise from 78 to 90 because of what the drivers press, with no bus running any earlier. The first answer is **“What the number counts”**, and its second is **“People working on the figure itself”**: the case is **Gaming the target**.
 
-In Case B nobody is paid on the figure, and a computer logs each trip from the bus’s satellite position, against a timetable that did not change. Nothing but the buses running earlier could move the figure from 78 to 90. Every part holds, so the key’s first answer is **“Nothing goes wrong”**, and the kind of claim it makes is **“A rise or fall in one figure”**: one figure at two times, said to have risen, and nothing more. The claim is a sound one: a figure that moved because the thing itself moved.
+In Case B nobody is paid on the figure, and a computer logs each trip from the bus’s satellite position, against a timetable that did not change. Nothing but the buses running earlier could move the figure from 78 to 90. Every part holds, so the first answer is **“Nothing goes wrong”**, and the kind of claim it makes is **“A rise or fall in one figure”**: one figure at two times, said to have risen, and nothing more. The claim is a sound one: a figure that moved because the thing itself moved.
 
 So the same rise, in the same company, in the same words, is two different things. Nothing in the headline tells them apart. The people who make the figure, and whether they gain from it, do.
 
@@ -258,19 +258,19 @@ So the same rise, in the same company, in the same words, is two different thing
 
 Who makes the figure, and who gains if it is high? Could anyone raise it without more of the real thing happening?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Gaming the target | A real change |
 |---|---|---|
 | Which part of the claim goes wrong first? | What the number counts | Nothing goes wrong |
-| What does the claim say the figures show? | *Not asked on its route* | A rise or fall in one figure |
-| What besides the real thing could move this figure? | People working on the figure itself | *Not asked on its route* |
+| What does the claim say the figures show? | *Not asked for this one* | A rise or fall in one figure |
+| What besides the real thing could move this figure? | People working on the figure itself | *Not asked for this one* |
 | What you must be able to point to | A figure that people are paid, ranked or judged on, a rise in it, and a way they could raise it without more of the thing it is meant to show | One figure that rose or fell, counted by the same rule and the same tool with the same effort to find it from start to end, nothing that could push it without the thing itself moving, and a claim that says no more than that it rose or fell |
 
 
 ### 8. A bonus on the figure, and nothing to push
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 8 of 30*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 8 of 30*
 
 [reviewers only: card kind `exception`, id `exc-chairs`]
 
@@ -299,7 +299,7 @@ The pieces you can tap:
 
 Ask the question the name needs: is there a way for the workers to raise the figure without making stronger chairs? Here the test is run by an outside laboratory that loads every finished chair with 120 kg and is paid the same whatever the result. The workers do not run the test, choose which chairs are tested or write down the result. The only way to get more chairs through is to make chairs that bear 120 kg.
 
-So the figure moved from 700 to 900 in every 1,000 because the chairs got stronger: 200 more in every 1,000 bear the load. A bonus tells you that someone gains from the figure. It does not tell you that they can raise it another way. For **Gaming the target** you must be able to point to this: a figure that people are paid, ranked or judged on, a rise in it, and a way they could raise it without more of the thing it is meant to show. The bonus is there, and so is the rise, but the way is missing. The key’s first answer for this claim is **“Nothing goes wrong”**.
+So the figure moved from 700 to 900 in every 1,000 because the chairs got stronger: 200 more in every 1,000 bear the load. A bonus tells you that someone gains from the figure. It does not tell you that they can raise it another way. For **Gaming the target** you must be able to point to this: a figure that people are paid, ranked or judged on, a rise in it, and a way they could raise it without more of the thing it is meant to show. The bonus is there, and so is the rise, but the way is missing. The first answer for this claim is **“Nothing goes wrong”**.
 
 **How to tell them apart**
 
@@ -316,7 +316,7 @@ So a target and a rise are never enough to name a claim **Gaming the target**. L
 
 ### 9. A new way of counting, with the same name on the figure
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 9 of 30*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 9 of 30*
 
 [reviewers only: card kind `meet`, id `meet-defshift`]
 
@@ -340,11 +340,11 @@ Every figure has a definition behind it: an exact statement of what goes into th
 
 Nobody has to be dishonest or paid on the figure. A new definition is often an improvement. What matters here is that the figure moved and the real thing did not.
 
-**What you must be able to point to.** A figure that rose or fell, and a change at the same time in the rule for what counts or in the tool that measures, which could move the figure on its own. This comes from one case so far. The next card tests it on a second case.
+**What you must be able to point to.** A figure that rose or fell, and a change at the same time in the definition of what counts or in the tool that measures, which could move the figure on its own. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What besides the real thing could move this figure?”**
+**The question:** **“What besides the real thing could move this figure?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“A new rule or tool for counting it”**
+**Its answer for a case like this one:** **“A new rule or tool for counting it”**
 
 The name for this is **A change in how it is counted**. It covers two kinds of change, and the next card shows the second. A new definition, like this one, changes what counts. A new tool changes what does the counting: a different scale, a meter, a gauge, or the same one moved somewhere else.
 
@@ -352,11 +352,11 @@ You may also hear this called “a change of definition” or “a new measuring
 
 ### 10. A change in how it is counted: the same thing in a different story
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 10 of 30*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 10 of 30*
 
 [reviewers only: card kind `again`, id `again-defshift`]
 
-The jobless count gave you what to point to: a figure that rose or fell, and a change at the same time in the rule for what counts or in the tool that measures, which could move the figure on its own. That was a change in what counts. Here is a second claim, with a change in the tool that does the counting.
+The jobless count gave you what to point to: a figure that rose or fell, and a change at the same time in the definition of what counts or in the tool that measures, which could move the figure on its own. That was a change in what counts. Here is a second claim, with a change in the tool that does the counting.
 
 The first case again, in one line. *The jobless count*: “Last year the office counted as jobless every adult who had no job and had looked for work in the past twelve months. This year it counts only adults who have no job and have looked for work in the past four weeks”
 
@@ -389,7 +389,7 @@ The two stories share nothing else. So this is not about jobs or about gyms. It 
 
 ### 11. A change in how it is counted: what it is like
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 11 of 30*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 11 of 30*
 
 [reviewers only: card kind `portrait`, id `portrait-defshift`]
 
@@ -429,13 +429,13 @@ Do not pass the claim on as a change in the real thing until you can say how muc
 
 ### 12. A question about a new case
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 12 of 30*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 12 of 30*
 
 [reviewers only: card kind `check`, id `check-defshift`]
 
 > A bank reports: 'Customer complaints fell from 600 to 400 this year.' Until last year the bank logged every complaint, whether made by phone, in person or in writing. This year it logs only complaints made in writing. Last year 350 of the 600 complaints were written ones, and this year 400 are.
 
-**The key asks:** **“What besides the real thing could move this figure?”** Which of the answers you have met so far fits this case?
+**The question:** **“What besides the real thing could move this figure?”** Which of the answers you have met so far fits this case?
 
 - People working on the figure itself
 - A new rule or tool for counting it
@@ -444,12 +444,12 @@ Do not pass the claim on as a change in the real thing until you can say how muc
 
 - If you are right: “Right: **A new rule or tool for counting it.**” The bank counts differently this year: “Until last year the bank logged every complaint, whether made by phone, in person or in writing. This year it logs only complaints made in writing”. Counted last year’s way, this year’s complaints would be more than 400, because phone and in-person ones are no longer logged. Counted this year’s way, last year’s were 350, so written complaints rose from 350 to 400 while the figure fell from 600 to 400. The name that goes with this answer is **A change in how it is counted**.
 - If you miss: “The answer is **A new rule or tool for counting it.**” The same reason follows, and then a line about the answer you chose:
-  - If you chose **People working on the figure itself**: Give that answer when the people the figure measures are paid, ranked or judged on it (a target, a bonus, a quota), and they could raise it without more of the thing it is meant to show. This case shows something else: the rule for what counts, or the tool that measures, changed during the time the figure covers (a new definition, a new form, a new meter), and that change alone could move the figure.
+  - If you chose **People working on the figure itself**: Give that answer when the people the figure measures are paid, ranked or judged on it (a target, a bonus, a quota), and they could raise it without more of the thing it is meant to show. This case shows something else: the definition of what counts, or the tool that measures, changed during the time the figure covers (a new definition, a new form, a new meter), and that change alone could move the figure.
 - Taught on: “A new way of counting, with the same name on the figure” (one tap opens the card).
 
 ### 13. A change in how it is counted or A real change: telling them apart
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 13 of 30*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 13 of 30*
 
 [reviewers only: card kind `lookalike`, id `look-defshift-real`]
 
@@ -471,9 +471,9 @@ You have met a second way a figure can be moved. Here it is again beside a claim
 
 **Why this one and not the other**
 
-In Case A the ski area moved its pole in year six, from an open slope to a hollow behind the lodge, where wind drifts snow. A second pole left on the open slope read 91 cm and then 92 cm, so the snow itself barely changed (92 − 91 = 1 cm), and nearly all of the 30 cm rise (120 − 90 = 30) is where the pole stands. The key’s first answer is **“What the number counts”**, and its second is **“A new rule or tool for counting it”**: the case is **A change in how it is counted**.
+In Case A the ski area moved its pole in year six, from an open slope to a hollow behind the lodge, where wind drifts snow. A second pole left on the open slope read 91 cm and then 92 cm, so the snow itself barely changed (92 − 91 = 1 cm), and nearly all of the 30 cm rise (120 − 90 = 30) is where the pole stands. The first answer is **“What the number counts”**, and its second is **“A new rule or tool for counting it”**: the case is **A change in how it is counted**.
 
-In Case B the pole has never been moved, and no other pole on the mountain reads differently. Nothing but the snow could have moved the figure. Every part holds, so the key’s first answer is **“Nothing goes wrong”**, and the kind of claim it makes is **“A rise or fall in one figure”**: the claim is a sound one, a figure that moved because the thing itself moved.
+In Case B the pole has never been moved, and no other pole on the mountain reads differently. Nothing but the snow could have moved the figure. Every part holds, so the first answer is **“Nothing goes wrong”**, and the kind of claim it makes is **“A rise or fall in one figure”**: the claim is a sound one, a figure that moved because the thing itself moved.
 
 The same 30 cm, in the same words, is a pole that was moved in one claim and snow that really deepened in the other. The sentence that tells you is in the account of how it was measured.
 
@@ -481,19 +481,19 @@ The same 30 cm, in the same words, is a pole that was moved in one claim and sno
 
 Was the figure counted by the same definition and the same tool all the way through? Is there a date in the account when either changed?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | A change in how it is counted | A real change |
 |---|---|---|
 | Which part of the claim goes wrong first? | What the number counts | Nothing goes wrong |
-| What does the claim say the figures show? | *Not asked on its route* | A rise or fall in one figure |
-| What besides the real thing could move this figure? | A new rule or tool for counting it | *Not asked on its route* |
-| What you must be able to point to | A figure that rose or fell, and a change at the same time in the rule for what counts or in the tool that measures, which could move the figure on its own | One figure that rose or fell, counted by the same rule and the same tool with the same effort to find it from start to end, nothing that could push it without the thing itself moving, and a claim that says no more than that it rose or fell |
+| What does the claim say the figures show? | *Not asked for this one* | A rise or fall in one figure |
+| What besides the real thing could move this figure? | A new rule or tool for counting it | *Not asked for this one* |
+| What you must be able to point to | A figure that rose or fell, and a change at the same time in the definition of what counts or in the tool that measures, which could move the figure on its own | One figure that rose or fell, counted by the same rule and the same tool with the same effort to find it from start to end, nothing that could push it without the thing itself moving, and a claim that says no more than that it rose or fell |
 
 
 ### 14. Gaming the target or A change in how it is counted: telling them apart
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 14 of 30*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 14 of 30*
 
 [reviewers only: card kind `lookalike`, id `look-proxy-defshift`]
 
@@ -515,9 +515,9 @@ The first two names can also be taken for each other. In both, a figure falls wi
 
 **Why this one and not the other**
 
-In Case A the officers are ranked on the average and enter the approval date themselves, and they now enter it on the day a file arrives and do the checks over the next week. The customers still wait about 12 days for a final answer. The figure fell from 12 to 5 because of what the officers enter. The key’s second answer is **“People working on the figure itself”**, and the case is **Gaming the target**.
+In Case A the officers are ranked on the average and enter the approval date themselves, and they now enter it on the day a file arrives and do the checks over the next week. The customers still wait about 12 days for a final answer. The figure fell from 12 to 5 because of what the officers enter. The second answer is **“People working on the figure itself”**, and the case is **Gaming the target**.
 
-In Case B nobody is ranked on the figure, and the clock now starts on the day the file is complete, after the customer has sent every document. Counted from the day of application, the same 200 loans took 12 days in both years. Counted from the day the file is complete, they took 5. The figure fell from 12 to 5 because the clock starts later. The key’s second answer is **“A new rule or tool for counting it”**, and the case is **A change in how it is counted**.
+In Case B nobody is ranked on the figure, and the clock now starts on the day the file is complete, after the customer has sent every document. Counted from the day of application, the same 200 loans took 12 days in both years. Counted from the day the file is complete, they took 5. The figure fell from 12 to 5 because the clock starts later. The second answer is **“A new rule or tool for counting it”**, and the case is **A change in how it is counted**.
 
 In both, the new figure is lower than the wait a customer feels. What differs is who moved it: people judged on the figure, or a new point to start the clock.
 
@@ -525,18 +525,18 @@ In both, the new figure is lower than the wait a customer feels. What differs is
 
 Did anything about what counts or what measures change at a date? Or did the people who make the figure gain from a higher one, with a way to raise it?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Gaming the target | A change in how it is counted |
 |---|---|---|
 | Which part of the claim goes wrong first? | What the number counts | What the number counts |
 | What besides the real thing could move this figure? | People working on the figure itself | A new rule or tool for counting it |
-| What you must be able to point to | A figure that people are paid, ranked or judged on, a rise in it, and a way they could raise it without more of the thing it is meant to show | A figure that rose or fell, and a change at the same time in the rule for what counts or in the tool that measures, which could move the figure on its own |
+| What you must be able to point to | A figure that people are paid, ranked or judged on, a rise in it, and a way they could raise it without more of the thing it is meant to show | A figure that rose or fell, and a change at the same time in the definition of what counts or in the tool that measures, which could move the figure on its own |
 
 
 ### 15. More found, because more was looked for
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 15 of 30*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 15 of 30*
 
 [reviewers only: card kind `meet`, id `meet-detection`]
 
@@ -562,9 +562,9 @@ Nobody pushed the figure, and nothing in the counting changed: the same exam, th
 
 **What you must be able to point to.** A figure of how many were found, more effort put into finding them (more tests, more cameras, an easier way to report), and the rise read as more of the thing happening. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What besides the real thing could move this figure?”**
+**The question:** **“What besides the real thing could move this figure?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“More looking for it”**
+**Its answer for a case like this one:** **“More looking for it”**
 
 The name for this is **Detection bias**. "Detection" means finding something that was there to be found. "Bias" here means a lean in what the figure shows: toward a higher count when more effort goes into finding, and toward a lower one when less does.
 
@@ -572,7 +572,7 @@ You may also hear this called “more looking, not more happening” or “surve
 
 ### 16. Detection bias: the same thing in a different story
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 16 of 30*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 16 of 30*
 
 [reviewers only: card kind `again`, id `again-detection`]
 
@@ -607,7 +607,7 @@ The two stories share nothing else. So this is not about illness or about drivin
 
 ### 17. Detection bias: what it is like
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 17 of 30*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 17 of 30*
 
 [reviewers only: card kind `portrait`, id `portrait-detection`]
 
@@ -647,13 +647,13 @@ Until you have, read the claim as "more were found" and not as "more is happenin
 
 ### 18. A question about a new case
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 18 of 30*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 18 of 30*
 
 [reviewers only: card kind `check`, id `check-detection`]
 
 > A university's integrity office reports: 'Copied essays found this year: 90, up from 30 last year. Cheating is on the rise.' Last year staff checked only the 600 essays that markers had flagged as looking odd. This year, with extra staff hours, they checked all 3,000 essays handed in, by the same method. An essay counts as copied by the same standard in both years. That is 5 found in every 100 checked last year, and 3 in every 100 this year.
 
-**The key asks:** **“What besides the real thing could move this figure?”** Which of the answers you have met so far fits this case?
+**The question:** **“What besides the real thing could move this figure?”** Which of the answers you have met so far fits this case?
 
 - People working on the figure itself
 - A new rule or tool for counting it
@@ -664,12 +664,12 @@ Until you have, read the claim as "more were found" and not as "more is happenin
 - If you are right: “Right: **More looking for it.**” The office checked five times as many essays this year: “Last year staff checked only the 600 essays that markers had flagged as looking odd. This year, with extra staff hours, they checked all 3,000 essays handed in, by the same method”. The standard for a copied essay and the method are the same, so the count of essays found rose from 30 to 90 because 3,000 were checked instead of 600. Among those checked, the share found fell from 5 in 100 to 3 in 100. The name that goes with this answer is **Detection bias**.
 - If you miss: “The answer is **More looking for it.**” The same reason follows, and then a line about the answer you chose:
   - If you chose **People working on the figure itself**: Give that answer when the people the figure measures are paid, ranked or judged on it (a target, a bonus, a quota), and they could raise it without more of the thing it is meant to show. This case shows something else: more effort went into finding the thing during the time the figure covers (more tests, more cameras, an easier way to report it), and finding more could raise the figure with no more of the thing happening.
-  - If you chose **A new rule or tool for counting it**: Give that answer when the rule for what counts, or the tool that measures, changed during the time the figure covers (a new definition, a new form, a new meter), and that change alone could move the figure. This case shows something else: more effort went into finding the thing during the time the figure covers (more tests, more cameras, an easier way to report it), and finding more could raise the figure with no more of the thing happening.
+  - If you chose **A new rule or tool for counting it**: Give that answer when the definition of what counts, or the tool that measures, changed during the time the figure covers (a new definition, a new form, a new meter), and that change alone could move the figure. This case shows something else: more effort went into finding the thing during the time the figure covers (more tests, more cameras, an easier way to report it), and finding more could raise the figure with no more of the thing happening.
 - Taught on: “More found, because more was looked for” (one tap opens the card).
 
 ### 19. Detection bias or A real change: telling them apart
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 19 of 30*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 19 of 30*
 
 [reviewers only: card kind `lookalike`, id `look-detection-real`]
 
@@ -691,9 +691,9 @@ You have now met all three ways. Here is the third one again beside a claim that
 
 **Why this one and not the other**
 
-In Case A the number of species recorded rose from 12 to 31, and the claim reads it as more kinds of bird living at the lake. In the first year four volunteers searched for 10 hours a month in all, and in the second year fifteen searched for 60 hours a month in all. The searching grew sixfold (60 ÷ 10 = 6) and the count grew 2.6 times. The key’s first answer is **“What the number counts”**, and its second is **“More looking for it”**: the case is **Detection bias**.
+In Case A the number of species recorded rose from 12 to 31, and the claim reads it as more kinds of bird living at the lake. In the first year four volunteers searched for 10 hours a month in all, and in the second year fifteen searched for 60 hours a month in all. The searching grew sixfold (60 ÷ 10 = 6) and the count grew 2.6 times. The first answer is **“What the number counts”**, and its second is **“More looking for it”**: the case is **Detection bias**.
 
-In Case B the same four volunteers searched the same stretch of shore for the same 10 hours a month in both years, on the same days. The searching did not change, so nothing but the birds could move the count from 12 to 15. Every part holds, so the key’s first answer is **“Nothing goes wrong”**, and the kind of claim it makes is **“A rise or fall in one figure”**: the claim is a sound one, a figure that moved because the thing itself moved.
+In Case B the same four volunteers searched the same stretch of shore for the same 10 hours a month in both years, on the same days. The searching did not change, so nothing but the birds could move the count from 12 to 15. Every part holds, so the first answer is **“Nothing goes wrong”**, and the kind of claim it makes is **“A rise or fall in one figure”**: the claim is a sound one, a figure that moved because the thing itself moved.
 
 Both claims show a rise, and both are true as counts. One was made with six times the searching, and the other with the same searching.
 
@@ -701,19 +701,19 @@ Both claims show a rise, and both are true as counts. One was made with six time
 
 How much looking went into the count at each end? Was it the same?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Detection bias | A real change |
 |---|---|---|
 | Which part of the claim goes wrong first? | What the number counts | Nothing goes wrong |
-| What does the claim say the figures show? | *Not asked on its route* | A rise or fall in one figure |
-| What besides the real thing could move this figure? | More looking for it | *Not asked on its route* |
+| What does the claim say the figures show? | *Not asked for this one* | A rise or fall in one figure |
+| What besides the real thing could move this figure? | More looking for it | *Not asked for this one* |
 | What you must be able to point to | A figure of how many were found, more effort put into finding them (more tests, more cameras, an easier way to report), and the rise read as more of the thing happening | One figure that rose or fell, counted by the same rule and the same tool with the same effort to find it from start to end, nothing that could push it without the thing itself moving, and a claim that says no more than that it rose or fell |
 
 
 ### 20. Gaming the target or Detection bias: telling them apart
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 20 of 30*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 20 of 30*
 
 [reviewers only: card kind `lookalike`, id `look-proxy-detection`]
 
@@ -735,9 +735,9 @@ The first and third names can also be taken for each other. In both, more effort
 
 **Why this one and not the other**
 
-In Case A each guard is paid $5 for every incident logged and decides what is worth logging. The entries added are a dropped bag or a customer asking where to go. The effort went into the figure: logged incidents rose by 80 (120 − 40 = 80), and losses found at the monthly stock count stayed at $4,000. The key’s second answer is **“People working on the figure itself”**, and the case is **Gaming the target**.
+In Case A each guard is paid $5 for every incident logged and decides what is worth logging. The entries added are a dropped bag or a customer asking where to go. The effort went into the figure: logged incidents rose by 80 (120 − 40 = 80), and losses found at the monthly stock count stayed at $4,000. The second answer is **“People working on the figure itself”**, and the case is **Gaming the target**.
 
-In Case B the guards are paid a flat wage, and 20 cameras show parts of the store they could never see before. The new entries are shoplifters who were already there. The effort went into finding what the figure counts, and nobody gains from the count. The key’s second answer is **“More looking for it”**, and the case is **Detection bias**.
+In Case B the guards are paid a flat wage, and 20 cameras show parts of the store they could never see before. The new entries are shoplifters who were already there. The effort went into finding what the figure counts, and nobody gains from the count. The second answer is **“More looking for it”**, and the case is **Detection bias**.
 
 Both are a rise in logged incidents that the manager reads as a crime wave. What differs is where the effort went, and who gains: in A, the people who make the figure gain from a higher one; in B, nobody does.
 
@@ -745,7 +745,7 @@ Both are a rise in logged incidents that the manager reads as a crime wave. What
 
 What did the extra effort go into: raising the number, or finding the thing the number stands for? Who gains if the count is high?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Gaming the target | Detection bias |
 |---|---|---|
@@ -756,7 +756,7 @@ What did the extra effort go into: raising the number, or finding the thing the 
 
 ### 21. A change in how it is counted or Detection bias: telling them apart
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 21 of 30*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 21 of 30*
 
 [reviewers only: card kind `lookalike`, id `look-defshift-detection`]
 
@@ -778,9 +778,9 @@ The last pair that can be taken for each other is the second name and the third.
 
 **Why this one and not the other**
 
-In Case A the lab tested 1,000 people in each year and replaced its analyzer in March with a new one that reads about 4 points lower on the same blood. A person is called deficient below 20, so a reading 4 points lower puts more people under the line. The 1,000 tested last year gave 20 found; the 1,000 tested this year gave 60. What counts as a find changed with the tool. The key’s second answer is **“A new rule or tool for counting it”**, and the case is **A change in how it is counted**.
+In Case A the lab tested 1,000 people in each year and replaced its analyzer in March with a new one that reads about 4 points lower on the same blood. A person is called deficient below 20, so a reading 4 points lower puts more people under the line. The 1,000 tested last year gave 20 found; the 1,000 tested this year gave 60. What counts as a find changed with the tool. The second answer is **“A new rule or tool for counting it”**, and the case is **A change in how it is counted**.
 
-In Case B the lab used the same analyzer and the same line of 20 for five years, and tested 3,000 people this year instead of 1,000. That is 2 found in every 100 tested in both years: 20 in 1,000 and 60 in 3,000. The tool and the line are the same, and there was more testing. The key’s second answer is **“More looking for it”**, and the case is **Detection bias**.
+In Case B the lab used the same analyzer and the same line of 20 for five years, and tested 3,000 people this year instead of 1,000. That is 2 found in every 100 tested in both years: 20 in 1,000 and 60 in 3,000. The tool and the line are the same, and there was more testing. The second answer is **“More looking for it”**, and the case is **Detection bias**.
 
 Both count the same deficiency and both triple. In A the tool changed and the number tested did not. In B the number tested changed and the tool did not.
 
@@ -788,18 +788,18 @@ Both count the same deficiency and both triple. In A the tool changed and the nu
 
 Is what counts as a find decided by a different definition or tool than before, or by the same one used on more people or more often?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | A change in how it is counted | Detection bias |
 |---|---|---|
 | Which part of the claim goes wrong first? | What the number counts | What the number counts |
 | What besides the real thing could move this figure? | A new rule or tool for counting it | More looking for it |
-| What you must be able to point to | A figure that rose or fell, and a change at the same time in the rule for what counts or in the tool that measures, which could move the figure on its own | A figure of how many were found, more effort put into finding them (more tests, more cameras, an easier way to report), and the rise read as more of the thing happening |
+| What you must be able to point to | A figure that rose or fell, and a change at the same time in the definition of what counts or in the tool that measures, which could move the figure on its own | A figure of how many were found, more effort put into finding them (more tests, more cameras, an easier way to report), and the rise read as more of the thing happening |
 
 
 ### 22. More counted, and no more looking
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 22 of 30*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 22 of 30*
 
 [reviewers only: card kind `exception`, id `exc-counter`]
 
@@ -830,18 +830,18 @@ Ask what changed: how much effort went into counting, or what the count counts. 
 
 On the day it was installed the staff clicked 400 adults while the sensor counted 560, and 560 ÷ 400 = 1.4. The "40% more visits" is exactly the gap between the two instruments, with no more people coming. The count rose because a different tool decides what counts as a visit.
 
-So this is the second name: a figure that rose or fell, and a change at the same time in the rule for what counts or in the tool that measures, which could move the figure on its own. The extra count did not come from looking harder; it came from counting more kinds of thing.
+So this is the second name: a figure that rose or fell, and a change at the same time in the definition of what counts or in the tool that measures, which could move the figure on its own. The extra count did not come from looking harder; it came from counting more kinds of thing.
 
 **How to tell them apart**
 
 Is what counts as a find decided by a different definition or tool than before, or by the same one used on more people or more often?
 
-In real life a new tool and more looking often arrive together: a new test is brought in and more people are tested with it. The key has no tie-break between the two, so every claim in this unit says which one it shows. When you meet a real claim that shows both, say so and name both, instead of choosing one.
+In real life a new tool and more looking often arrive together: a new test is brought in and more people are tested with it. Nothing in the questions chooses between the two, so every claim in this unit says which one it shows. When you meet a real claim that shows both, say so and name both, instead of choosing one.
 
 
 ### 23. A wrong idea: "if the figure went up, more of it is happening"
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 23 of 30*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 23 of 30*
 
 [reviewers only: card kind `refute`, id `refute-moved`]
 
@@ -857,28 +857,28 @@ A figure that went up shows only that the figure went up. Whether the thing it c
 
 It is also not true that a figure that went up never shows more of the real thing. When nothing besides the real thing could have moved it, a rise is a rise, and that is the sound claim.
 
-So when a figure rises, ask the key’s question before you decide what it means: **“What besides the real thing could move this figure?”** If you can name one, and point to the words that show it, you have an answer. If you can find none, the figure may well have moved because the real thing did.
+So when a figure rises, ask the question before you decide what it means: **“What besides the real thing could move this figure?”** If you can name one, and point to the words that show it, you have an answer. If you can find none, the figure may well have moved because the real thing did.
 
 
-*End of part 2. You can stop here; your place is kept. Next: part 3, The key’s question, and two whole claims.*
+*End of part 2. You can stop here; your place is kept. Next: part 3, The question, and two whole claims.*
 
 ---
 
-## Part 3 of 3: The key’s question, and two whole claims
+## Part 3 of 3: The question, and two whole claims
 
 ### 24. The question you have been answering all along
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 24 of 30*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 24 of 30*
 
 [reviewers only: card kind `question`, id `q-measure`]
 
-Since the delivery bonus you have seen the key’s question at the foot of each new name, with one answer under it. This card puts the question and its three answers in one place, as the key shows them, and says why the key asks it.
+Since the delivery bonus you have seen the question at the foot of each new name, with one answer under it. This card puts the question and its three answers in one place, as they are always asked, and says why it is asked.
 
-**The key asks:** **“What besides the real thing could move this figure?”**
+**The question:** **“What besides the real thing could move this figure?”**
 
 **What it is for.** Tells apart three ways a figure can rise, fall or differ while the real thing it is read as showing stays the same.
 
-**Its answers, exactly as the key shows them**
+**Its answers**
 
 Each answer leads to one name, and so rules out the other two.
 
@@ -886,7 +886,7 @@ Each answer leads to one name, and so rules out the other two.
   - Give this answer when the people the figure measures are paid, ranked or judged on it (a target, a bonus, a quota), and they could raise it without more of the thing it is meant to show.
   - It leads to **Gaming the target**.
 - **“A new rule or tool for counting it”**
-  - Give this answer when the rule for what counts, or the tool that measures, changed during the time the figure covers (a new definition, a new form, a new meter), and that change alone could move the figure.
+  - Give this answer when the definition of what counts, or the tool that measures, changed during the time the figure covers (a new definition, a new form, a new meter), and that change alone could move the figure.
   - It leads to **A change in how it is counted**.
 - **“More looking for it”**
   - Give this answer when more effort went into finding the thing during the time the figure covers (more tests, more cameras, an easier way to report it), and finding more could raise the figure with no more of the thing happening.
@@ -896,15 +896,15 @@ Each answer leads to one name, and so rules out the other two.
 
 The three names are defined by what moved the figure in place of the real thing. Each sends you to a different check: what people did to the figure, what changed in the counting, or how hard anyone looked.
 
-The key’s first question has already found that the figure could move without the real thing moving, and sent the claim here. This question asks what moved it. Each answer sends you to a different check, and a check made for one answer is no use for another. For **“People working on the figure itself”**, you look for a count that nobody is judged on. For **“A new rule or tool for counting it”**, you look for the figure counted both ways in the same period. For **“More looking for it”**, you divide the number found by the number looked at.
+The first question has already found that the figure could move without the real thing moving, and sent the claim here. This question asks what moved it. Each answer sends you to a different check, and a check made for one answer is no use for another. For **“People working on the figure itself”**, you look for a count that nobody is judged on. For **“A new rule or tool for counting it”**, you look for the figure counted both ways in the same period. For **“More looking for it”**, you divide the number found by the number looked at.
 
-This is the only question in this branch, so its answer is the name. And a claim can fail to have an answer at all: when you have put each of the three to it and found nothing, the figure was moved by nothing but the real thing. That is not an answer to this question. It was the first question’s answer **“Nothing goes wrong”**, and a claim with that answer is never asked this one.
+This is the only question for this kind of claim, so its answer is the name. And a claim can fail to have an answer at all: when you have put each of the three to it and found nothing, the figure was moved by nothing but the real thing. That is not an answer to this question. It was the first question’s answer **“Nothing goes wrong”**, and a claim with that answer is never asked this one.
 
 **How to answer it from a case**
 
 Read the whole claim, the last sentence too, because the sentence that says how the figure is made is often at the end. Then look for the words that fit each answer in turn, always in this order: who is paid or ranked on the figure and also makes it; what changed in how it is counted; how much looking there was at each end.
 
-First, look for **“People working on the figure itself”**: a figure that people are paid, ranked or judged on, a rise in it, and a way they could raise it without more of the thing it is meant to show. Second, look for **“A new rule or tool for counting it”**: a figure that rose or fell, and a change at the same time in the rule for what counts or in the tool that measures, which could move the figure on its own. Third, look for **“More looking for it”**: a figure of how many were found, more effort put into finding them (more tests, more cameras, an easier way to report), and the rise read as more of the thing happening.
+First, look for **“People working on the figure itself”**: a figure that people are paid, ranked or judged on, a rise in it, and a way they could raise it without more of the thing it is meant to show. Second, look for **“A new rule or tool for counting it”**: a figure that rose or fell, and a change at the same time in the definition of what counts or in the tool that measures, which could move the figure on its own. Third, look for **“More looking for it”**: a figure of how many were found, more effort put into finding them (more tests, more cameras, an easier way to report), and the rise read as more of the thing happening.
 
 Whichever you give, put your finger on the words that show it. If you cannot point, you do not have an answer yet.
 
@@ -912,7 +912,7 @@ The arithmetic often settles it. For **“More looking for it”**, the number f
 
 **When two answers both seem to fit**
 
-Sometimes two answers seem to fit. Each pair below has been set side by side earlier in this unit, and each has one question that separates it. Where the key has no tie-break for a pair, the claims in this unit show one of the two, and the claim itself says which.
+Sometimes two answers seem to fit. Each pair below has been set side by side earlier in this unit, and each has one question that separates it. Where nothing in the questions chooses between a pair, the claims in this unit show one of the two, and the claim itself says which.
 
 - Gaming the target or Detection bias: What did the extra effort go into: raising the number, or finding the thing the number stands for? Who gains if the count is high?
 - A change in how it is counted or Detection bias: Is what counts as a find decided by a different definition or tool than before, or by the same one used on more people or more often?
@@ -921,13 +921,13 @@ Sometimes two answers seem to fit. Each pair below has been set side by side ear
 
 ### 25. A question about a new case
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 25 of 30*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 25 of 30*
 
 [reviewers only: card kind `check`, id `check-measure`]
 
 > A phone app tells Rina: 'Your average steps per day rose from 6,200 to 7,400 this month.' In the second week an update changed how the app counts: it now counts the arm movements of pushing a stroller as steps, which it ignored before. Rina walked her usual routes with the stroller every day, as in earlier months.
 
-**The key asks:** **“What besides the real thing could move this figure?”**
+**The question:** **“What besides the real thing could move this figure?”**
 
 - People working on the figure itself
 - A new rule or tool for counting it
@@ -937,17 +937,17 @@ Sometimes two answers seem to fit. Each pair below has been set side by side ear
 
 - If you are right: “Right: **A new rule or tool for counting it.**” Nothing about Rina changed, and nobody is paid on the figure. What changed is the counting: “an update changed how the app counts: it now counts the arm movements of pushing a stroller as steps, which it ignored before”. The 1,200 more steps a day come from movements the app now counts and used to ignore. This answer leads to **A change in how it is counted**.
 - If you miss: “The answer is **A new rule or tool for counting it.**” The same reason follows, and then a line about the answer you chose:
-  - If you chose **People working on the figure itself**: Give that answer when the people the figure measures are paid, ranked or judged on it (a target, a bonus, a quota), and they could raise it without more of the thing it is meant to show. This case shows something else: the rule for what counts, or the tool that measures, changed during the time the figure covers (a new definition, a new form, a new meter), and that change alone could move the figure.
-  - If you chose **More looking for it**: Give that answer when more effort went into finding the thing during the time the figure covers (more tests, more cameras, an easier way to report it), and finding more could raise the figure with no more of the thing happening. This case shows something else: the rule for what counts, or the tool that measures, changed during the time the figure covers (a new definition, a new form, a new meter), and that change alone could move the figure.
+  - If you chose **People working on the figure itself**: Give that answer when the people the figure measures are paid, ranked or judged on it (a target, a bonus, a quota), and they could raise it without more of the thing it is meant to show. This case shows something else: the definition of what counts, or the tool that measures, changed during the time the figure covers (a new definition, a new form, a new meter), and that change alone could move the figure.
+  - If you chose **More looking for it**: Give that answer when more effort went into finding the thing during the time the figure covers (more tests, more cameras, an easier way to report it), and finding more could raise the figure with no more of the thing happening. This case shows something else: the definition of what counts, or the tool that measures, changed during the time the figure covers (a new definition, a new form, a new meter), and that change alone could move the figure.
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 ### 26. A whole claim, from the first question to the name
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 26 of 30*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 26 of 30*
 
 [reviewers only: card kind `worked`, id `worked-inspections`]
 
-You have the three names and the key’s question about them. Before you run a claim yourself, watch two being run from the top, in the order the key asks. You are not asked anything until the end of each.
+You have the three names and the question about them. Before you run a claim yourself, watch two being run from the top, in the order the questions are asked. You are not asked anything until the end of each.
 
 *The restaurant inspections*
 
@@ -961,9 +961,9 @@ What it is for: sorts a claim made with numbers by the first of its four parts t
 
 Answer: **“What the number counts”**
 
-The key’s first question takes the parts of a claim in order and stops at the first that goes wrong. Start with the people or things in the figure. The restaurants inspected are drawn by lottery from the city’s list in both years, so nobody is favored or left out, and that part holds.
+The first question takes the parts of a claim in order and stops at the first that goes wrong. Start with the people or things in the figure. The restaurants inspected are drawn by lottery from the city’s list in both years, so nobody is favored or left out, and that part holds.
 
-Next, what the figure counts. The claim says that violations found tripled, from 840 to 2,520, and reads that as restaurants getting dirtier. The case says this: “This year the department hired six more inspectors, and the number of inspections went from 400 a year to 1,200”. A count of what inspectors find rises with the number of inspections, so the figure could rise with no restaurant dirtier. The key’s answer is **“What the number counts”**.
+Next, what the figure counts. The claim says that violations found tripled, from 840 to 2,520, and reads that as restaurants getting dirtier. The case says this: “This year the department hired six more inspectors, and the number of inspections went from 400 a year to 1,200”. A count of what inspectors find rises with the number of inspections, so the figure could rise with no restaurant dirtier. The answer is **“What the number counts”**.
 
 Still possible: all three names this unit teaches.
 
@@ -977,7 +977,7 @@ Answer: **“More looking for it”**
 
 Now ask what besides the real thing moved it. Nobody is paid on the figure: the case does not say the inspectors are paid by the violation, so **“People working on the figure itself”** has nothing to point to. The checklist and the standard for a violation did not change, so **“A new rule or tool for counting it”** has nothing to point to either. What changed is how much looking there was: “This year the department hired six more inspectors, and the number of inspections went from 400 a year to 1,200”.
 
-The arithmetic confirms it. Last year, 840 violations in 400 inspections is 2.1 for every inspection. This year, 2,520 in 1,200 is 2.1 for every inspection. The share found did not move, and the count tripled because the inspections did. The key’s answer is **“More looking for it”**.
+The arithmetic confirms it. Last year, 840 violations in 400 inspections is 2.1 for every inspection. This year, 2,520 in 1,200 is 2.1 for every inspection. The share found did not move, and the count tripled because the inspections did. The answer is **“More looking for it”**.
 
 Still possible: **Detection bias**. Ruled out: **Gaming the target** and **A change in how it is counted**.
 
@@ -995,19 +995,19 @@ Still possible: **Detection bias**. Ruled out: **Gaming the target** and **A cha
 
 **Why this is Detection bias and not A change in how it is counted**
 
-For **A change in how it is counted** you must be able to point to this: a figure that rose or fell, and a change at the same time in the rule for what counts or in the tool that measures, which could move the figure on its own. The case shows the opposite: the same checklist and the same standard. For **Detection bias** you must be able to point to this: a figure of how many were found, more effort put into finding them (more tests, more cameras, an easier way to report), and the rise read as more of the thing happening. It shows three times the inspections and three times the violations, at 2.1 for every inspection in each year.
+For **A change in how it is counted** you must be able to point to this: a figure that rose or fell, and a change at the same time in the definition of what counts or in the tool that measures, which could move the figure on its own. The case shows the opposite: the same checklist and the same standard. For **Detection bias** you must be able to point to this: a figure of how many were found, more effort put into finding them (more tests, more cameras, an easier way to report), and the rise read as more of the thing happening. It shows three times the inspections and three times the violations, at 2.1 for every inspection in each year.
 
-It is the question from the lab that tested more people. Is what counts as a find decided by a different definition or tool than before, or by the same one used on more people or more often? Here the tool and the standard are the same and the number checked grew, so the key’s answer is **“More looking for it”**.
+It is the question from the lab that tested more people. Is what counts as a find decided by a different definition or tool than before, or by the same one used on more people or more often? Here the tool and the standard are the same and the number checked grew, so the answer is **“More looking for it”**.
 
 **Does it look like a case you know?**
 
-The key has given its answer. Now take a second look of a different kind: does this claim look like one you know? It should bring back the screening van: a count of what was found rose, the claim read it as more of the bad thing, and many more were being examined.
+You have an answer. Now take a second look of a different kind: does this claim look like one you know? It should bring back the screening van: a count of what was found rose, the claim read it as more of the bad thing, and many more were being examined.
 
-Here the key and the likeness agree, so the answer stands. The key’s question comes first, because it makes you point at words in the case. The likeness is only a second look. When the two disagree, do not pick the one you prefer. Go back to the key’s question and find the words in the case that answer it. The second whole claim shows how.
+Here the likeness agrees with the answer, so the answer stands. The question comes first, because it makes you point at words in the case. The likeness is only a second look. When the two disagree, do not pick the one you prefer. Go back to the question and find the words in the case that answer it. The second whole claim shows how.
 
 ### 27. A second whole claim, where the story points the wrong way
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 27 of 30*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 27 of 30*
 
 [reviewers only: card kind `worked`, id `worked-calls`]
 
@@ -1025,9 +1025,9 @@ What it is for: sorts a claim made with numbers by the first of its four parts t
 
 Answer: **“What the number counts”**
 
-The claim opens with a new phone system and a fall in the average call time, so it can look as if everything turns on a new tool. Take the key’s order. The people or things in the figure are every call the center handled, so nobody is left out, and that part holds.
+The claim opens with a new phone system and a fall in the average call time, so it can look as if everything turns on a new tool. Take the order. The people or things in the figure are every call the center handled, so nobody is left out, and that part holds.
 
-Next, what the figure counts. The claim reads the fall in call time as the new system working, and the case says this: “Agents are ranked each month by average call time, and the ten lowest get a $150 bonus”. The agents are ranked on the figure, so it could fall with no better service. The key’s answer is **“What the number counts”**.
+Next, what the figure counts. The claim reads the fall in call time as the new system working, and the case says this: “Agents are ranked each month by average call time, and the ten lowest get a $150 bonus”. The agents are ranked on the figure, so it could fall with no better service. The answer is **“What the number counts”**.
 
 Still possible: all three names this unit teaches.
 
@@ -1041,7 +1041,7 @@ Answer: **“People working on the figure itself”**
 
 Now ask what besides the real thing moved it, and take the answers in order. Start with **“People working on the figure itself”**, because the case has a ranking and a bonus. The case says this: “Agents are ranked each month by average call time, and the ten lowest get a $150 bonus. The system times every call to the second, as the old one did. Agents have found that when a call reaches 5 minutes they can hang up”. A call hung up at 5 minutes is ended early, and a hung-up call counts like any other, so the agents can lower the average without handling calls any faster.
 
-Check the other two. The system times every call to the second, as the old one did, so how the figure is counted did not change, and **“A new rule or tool for counting it”** has nothing to point to. Nothing says that more effort went into finding anything, so **“More looking for it”** has nothing either. And a second count agrees: the share of customers whose problem was solved on the first call fell from 70 in every 100 to 52, while the average call time fell from 8 minutes to 5. The key’s answer is **“People working on the figure itself”**.
+Check the other two. The system times every call to the second, as the old one did, so how the figure is counted did not change, and **“A new rule or tool for counting it”** has nothing to point to. Nothing says that more effort went into finding anything, so **“More looking for it”** has nothing either. And a second count agrees: the share of customers whose problem was solved on the first call fell from 70 in every 100 to 52, while the average call time fell from 8 minutes to 5. The answer is **“People working on the figure itself”**.
 
 Still possible: **Gaming the target**. Ruled out: **A change in how it is counted** and **Detection bias**.
 
@@ -1059,15 +1059,15 @@ Still possible: **Gaming the target**. Ruled out: **A change in how it is counte
 
 **Why this is Gaming the target and not A change in how it is counted**
 
-For **A change in how it is counted** you must be able to point to this: a figure that rose or fell, and a change at the same time in the rule for what counts or in the tool that measures, which could move the figure on its own. The case has no change in what counts or in the tool that measures: the new system times each call the way the old one did. For **Gaming the target** you must be able to point to this: a figure that people are paid, ranked or judged on, a rise in it, and a way they could raise it without more of the thing it is meant to show. The case has all of it: agents ranked and paid on the figure, a fall in the figure, and a way to lower it without better service.
+For **A change in how it is counted** you must be able to point to this: a figure that rose or fell, and a change at the same time in the definition of what counts or in the tool that measures, which could move the figure on its own. The case has no change in what counts or in the tool that measures: the new system times each call the way the old one did. For **Gaming the target** you must be able to point to this: a figure that people are paid, ranked or judged on, a rise in it, and a way they could raise it without more of the thing it is meant to show. The case has all of it: agents ranked and paid on the figure, a fall in the figure, and a way to lower it without better service.
 
-It is the question from the bank that ranked its loan officers. Did anything about what counts or what measures change at a date? Or did the people who make the figure gain from a higher one, with a way to raise it? Here the people who make the figure gain from it and could end the call early, so the key’s answer is **“People working on the figure itself”**.
+It is the question from the bank that ranked its loan officers. Did anything about what counts or what measures change at a date? Or did the people who make the figure gain from a higher one, with a way to raise it? Here the people who make the figure gain from it and could end the call early, so the answer is **“People working on the figure itself”**.
 
 **Does it look like a case you know?**
 
-Now the second look: does this claim look like one you know? A new machine and a fall in a figure may bring back the gym scale first, and the gym scale was **A change in how it is counted**. So here the likeness and the key seem to disagree.
+Now the second look: does this claim look like one you know? A new machine and a fall in a figure may bring back the gym scale first, and the gym scale was **A change in how it is counted**. So here the likeness and the answer seem to disagree.
 
-When that happens, go back to the key’s question and find the words in the case that answer it. They are “Agents are ranked each month by average call time, and the ten lowest get a $150 bonus. The system times every call to the second, as the old one did. Agents have found that when a call reaches 5 minutes they can hang up”. The gym scale has nothing like them: nobody was ranked on body fat. This claim does have them. So the claim this one really looks like is the delivery bonus, where people paid on a figure made the figure, and the key’s answer stands.
+When that happens, go back to the question and find the words in the case that answer it. They are “Agents are ranked each month by average call time, and the ten lowest get a $150 bonus. The system times every call to the second, as the old one did. Agents have found that when a call reaches 5 minutes they can hang up”. The gym scale has nothing like them: nobody was ranked on body fat. This claim does have them. So the claim this one really looks like is the delivery bonus, where people paid on a figure made the figure, and the answer stands.
 
 ### The drill
 
@@ -1075,7 +1075,7 @@ The cards are out of view from here, and every case is new. The drill has five s
 
 Some of these claims have nothing wrong with them, and that is on purpose. A claim in which none of the three ways applies is an answer as much as they are, and you will need it as often. A claim that sounds alarming is not harder to judge for that, and a dull one is not easier.
 
-#### Stage 1 of 5. The key’s answers are shown for each case. Give the name that goes with them. This stage practises one thing: which name goes with which answer.
+#### Stage 1 of 5. The answers are shown for each case. Give the name that goes with them. This stage practises one thing: which name goes with which answer.
 
 The names offered are the three this unit teaches: Gaming the target / A change in how it is counted / Detection bias.
 
@@ -1095,7 +1095,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Detection bias**: Nobody is looking harder for books Maya reads. What changed is what Maya does with a figure she is paid on.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Detection bias**, the look-alike card’s lines follow: In both, more effort went into something, a count rose, and the real thing may not have moved. In **Gaming the target** the extra effort went into the figure itself, by people who gain from a higher figure and make it. In **Detection bias** the extra effort went into finding what the figure counts, and nobody gains from the count being high. What did the extra effort go into: raising the number, or finding the thing the number stands for? Who gains if the count is high?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “Pushing up the figure instead of the thing it stands for” (one tap opens the card).
 
 **Drill item 2 of 48**
@@ -1114,7 +1114,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Gaming the target**: Nobody is paid or judged on the number of cracks Dan finds. He did not do anything to the figure; he looked more.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Gaming the target**, the look-alike card’s lines follow: In both, more effort went into something, a count rose, and the real thing may not have moved. In **Gaming the target** the extra effort went into the figure itself, by people who gain from a higher figure and make it. In **Detection bias** the extra effort went into finding what the figure counts, and nobody gains from the count being high. What did the extra effort go into: raising the number, or finding the thing the number stands for? Who gains if the count is high?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “More found, because more was looked for” (one tap opens the card).
 
 **Drill item 3 of 48**
@@ -1133,7 +1133,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Gaming the target**: Nobody is paid or ranked on the count, so nobody could raise it without selling more loaves.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Gaming the target**, the look-alike card’s lines follow: Both give a figure that rose, in the same words, and the claim says only that the figure rose. In **Gaming the target** the people who make the figure are judged on it, and they could raise it without more of the real thing happening. In **A real change** nobody who makes the figure gains from it, and nothing but the real thing moving could change it. Who makes the figure, and who gains if it is high? Could anyone raise it without more of the real thing happening?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 
 **Drill item 4 of 48**
 
@@ -1151,7 +1151,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Detection bias**: No more effort went into finding absent pupils. The pupils who arrive late were found both years; they stopped being counted as absent.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Detection bias**, the look-alike card’s lines follow: In both, a count of what was found rose, and the people or things looked at may be the same ones. In **A change in how it is counted** what counts as a find was decided by a different definition or tool than before. In **Detection bias** the definition and the tool are what they were, and more was looked at, or it was looked at more often. Is what counts as a find decided by a different definition or tool than before, or by the same one used on more people or more often?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “A new way of counting, with the same name on the figure” (one tap opens the card).
 
 **Drill item 5 of 48**
@@ -1170,7 +1170,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **A change in how it is counted**: The standard for hiding income and the way returns are chosen are the same in both years. What changed is how many returns were looked at.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **A change in how it is counted**, the look-alike card’s lines follow: In both, a count of what was found rose, and the people or things looked at may be the same ones. In **A change in how it is counted** what counts as a find was decided by a different definition or tool than before. In **Detection bias** the definition and the tool are what they were, and more was looked at, or it was looked at more often. Is what counts as a find decided by a different definition or tool than before, or by the same one used on more people or more often?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “More found, because more was looked for” (one tap opens the card).
 
 **Drill item 6 of 48**
@@ -1189,7 +1189,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **A change in how it is counted**: The band counts steps the same way throughout. What changed is what the people being counted do with the figure.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **A change in how it is counted**, the look-alike card’s lines follow: In both, a figure moved with the real thing standing still, and a new system may be part of the story. In **Gaming the target** the people who make the figure are judged on it and could raise it by what they do. In **A change in how it is counted** the definition or the tool is what changed, and nobody has to gain from the figure. Did anything about what counts or what measures change at a date? Or did the people who make the figure gain from a higher one, with a way to raise it?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “Pushing up the figure instead of the thing it stands for” (one tap opens the card).
 
 **Drill item 7 of 48**
@@ -1208,7 +1208,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Detection bias**: Nobody looked harder for patients who return. The same returns happened both years; this year only some of them are counted.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Detection bias**, the look-alike card’s lines follow: In both, a count of what was found rose, and the people or things looked at may be the same ones. In **A change in how it is counted** what counts as a find was decided by a different definition or tool than before. In **Detection bias** the definition and the tool are what they were, and more was looked at, or it was looked at more often. Is what counts as a find decided by a different definition or tool than before, or by the same one used on more people or more often?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “A new way of counting, with the same name on the figure” (one tap opens the card).
 
 **Drill item 8 of 48**
@@ -1227,7 +1227,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **A change in how it is counted**: The cameras are the same kind used the same way, so how a lion is counted did not change. There are more of them looking.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **A change in how it is counted**, the look-alike card’s lines follow: In both, a count of what was found rose, and the people or things looked at may be the same ones. In **A change in how it is counted** what counts as a find was decided by a different definition or tool than before. In **Detection bias** the definition and the tool are what they were, and more was looked at, or it was looked at more often. Is what counts as a find decided by a different definition or tool than before, or by the same one used on more people or more often?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “More found, because more was looked for” (one tap opens the card).
 
 #### Stage 2 of 5. One question at a time.
@@ -1248,7 +1248,7 @@ Shown to you, with the words that decide each answer marked:
 
 - If you are right: “Right: **What the number counts.**” The count of accounts opened can rise with no more customers wanting accounts: “gives each branch manager a bonus when the branch opens 1,000 new accounts a month, and each manager signs off on every new account”. It rose by 700 a month while accounts with any money in them rose by 10. This answer leads to **Gaming the target**, **A change in how it is counted** and **Detection bias**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught in Unit One (one tap opens the card).
 
 **Drill item 10 of 48**
@@ -1267,7 +1267,7 @@ Shown to you, with the words that decide each answer marked:
 
 - If you are right: “Right: **Nothing goes wrong.**” Every part holds: “the same rain gauge in her garden every morning at 8, and has done for years. Nobody gains or loses by what it reads”. One gauge was read the same way at the same hour, and nobody has a reason to push the reading, so nothing besides the rain could move it. This answer leads to **A fair count**, **A real change**, **A fair comparison** and **A fair test**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught in Unit One (one tap opens the card).
 
 **Drill item 11 of 48**
@@ -1286,7 +1286,7 @@ Shown to you, with the words that decide each answer marked:
 
 - If you are right: “Right: **What the number counts.**” The figure fell with no tenant waiting less: “Until last year the wait was counted from the day a tenant called. This year it is counted from the day an inspector visits and writes the job up”. Counted from the call, 500 waited more than 30 days in both years, and the figure of 200 comes from starting the clock later. This answer leads to **Gaming the target**, **A change in how it is counted** and **Detection bias**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught in Unit One (one tap opens the card).
 
 **Drill item 12 of 48**
@@ -1305,7 +1305,7 @@ Shown to you, with the words that decide each answer marked:
 
 - If you are right: “Right: **Nothing goes wrong.**” Every part holds: “the same gate and counter have been used for years. Nobody is paid or ranked by the count, and the entry price did not change”. One counter counted the same way, nobody gains from a higher count, and the price did not change, so nothing besides the visits could move it. This answer leads to **A fair count**, **A real change**, **A fair comparison** and **A fair test**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught in Unit One (one tap opens the card).
 
 **Drill item 13 of 48**
@@ -1323,7 +1323,7 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **People working on the figure itself.**” The staff are paid on the figure and ring it up themselves: “pays sales staff a bonus for every pair 'sold', and staff ring up a sale themselves as soon as a customer takes a pair to the fitting room”. Ringing up a sale early is easier than selling more. This answer leads to **Gaming the target**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **More looking for it**: Nobody is looking harder for sales. The staff gain from the figure and make it, which is a different way for it to move.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 14 of 48**
@@ -1341,7 +1341,7 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **More looking for it.**” More effort went into finding it: “This year the town hired two more inspectors to drive its roads, and the kilometers driven each month went from 500 to 2,000”. The inspectors found dumping at the same rate per kilometer, so the rise follows the driving. This answer leads to **Detection bias**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **People working on the figure itself**: The inspectors are not paid by the number they find. They simply covered four times as many roads.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 15 of 48**
@@ -1359,7 +1359,7 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **A new rule or tool for counting it.**” The exam used to measure the pupils is a different one: “The district replaced its yearly math exam with a newer edition. On a day when 300 pupils sat both editions, the old one averaged 58 and the new one averaged 66”. A new tool can read higher or lower than the old one. This answer leads to **A change in how it is counted**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **People working on the figure itself**: Nobody is paid or ranked on the score here. What changed is the exam that makes the score.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 16 of 48**
@@ -1377,7 +1377,7 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **More looking for it.**” More tests were done with the same test: “Last winter a nurse swabbed patients with a cough on weekdays only. This winter a second nurse swabbed them on weekends too, so 2,000 patients were swabbed against 1,000 the winter before”. The share found among those swabbed stayed at 10 in 100. This answer leads to **Detection bias**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **A new rule or tool for counting it**: The swab test and the standard for a positive are the same. What changed is how many people were swabbed.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 17 of 48**
@@ -1562,12 +1562,12 @@ Shown to you, with the words that decide each answer marked:
 **Shown as soon as you answer**
 
 - If you are right: “Right: **Who was counted.**” The claim speaks for all 400 staff, but the figure comes only from the 20 who happened to be in at eight on a Monday: “asked the 20 people who were working in the office at eight o'clock on Monday morning”. Early arrivals are not a fair picture of everyone.
-- If you miss: “The answer is …”, the same reason, and then the line built from the key for the answer you chose.
-- Then, right or wrong: “This case leaves the part of the key you have been taught. The questions that follow this answer come in a part of the course you have not reached, so the case stops here.”
+- If you miss: “The answer is …”, the same reason, and then the line built from the answers’ own wording for the answer you chose.
+- Then, right or wrong: “The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.”
 
-#### Stage 3 of 5. The first answer is shown. Answer the rest, then give the name. From here on your route is marked as well as the name: a right name reached by a wrong answer on the way counts as a miss.
+#### Stage 3 of 5. The first answer is shown. Answer the rest, then give the name. From here on your answers on the way are marked as well as the name: a right name reached by a wrong answer counts as a miss.
 
-Each question is shown with all of its answers from the key, in the key’s order, and the names offered are the three this unit teaches.
+Each question is shown with all of its answers, in order, and the names offered are the three this unit teaches.
 
 **Drill item 27 of 48**
 
@@ -1584,10 +1584,10 @@ Shown to you, with the words that decide each answer marked:
   - Why not **A change in how it is counted**: The definition of noon and the form are unchanged. What changed is what the people who write the times do, because the figure now pays them.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - If you chose **A new rule or tool for counting it**: The definition of noon and the form are unchanged. What changed is what the people who write the times do, because the figure now pays them.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A change in how it is counted**, the look-alike card’s lines follow: In both, a figure moved with the real thing standing still, and a new system may be part of the story. In **Gaming the target** the people who make the figure are judged on it and could raise it by what they do. In **A change in how it is counted** the definition or the tool is what changed, and nobody has to gain from the figure. Did anything about what counts or what measures change at a date? Or did the people who make the figure gain from a higher one, with a way to raise it?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Pushing up the figure instead of the thing it stands for” (one tap opens the card).
 
 **Drill item 28 of 48**
@@ -1605,10 +1605,10 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Gaming the target**: Nobody is paid by the number of drivers stopped here. The police tested twice as many.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - If you chose **People working on the figure itself**: Nobody is paid by the number of drivers stopped here. The police tested twice as many.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Gaming the target**, the look-alike card’s lines follow: In both, more effort went into something, a count rose, and the real thing may not have moved. In **Gaming the target** the extra effort went into the figure itself, by people who gain from a higher figure and make it. In **Detection bias** the extra effort went into finding what the figure counts, and nobody gains from the count being high. What did the extra effort go into: raising the number, or finding the thing the number stands for? Who gains if the count is high?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “More found, because more was looked for” (one tap opens the card).
 
 **Drill item 29 of 48**
@@ -1625,10 +1625,10 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **A real change**.” What does the claim say the figures show? **A rise or fall in one figure.** The claim gives one figure at two times and says it fell: “The reservoir fell 2.6 meters between March and September”. Arithmetic: 14.2 − 11.6 = 2.6. It sets the figure beside nothing else and says nothing about why.
   - Why not **A change in how it is counted**: The gauge, its place and the hour are unchanged, so nothing about how the level is counted changed.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A change in how it is counted**, the look-alike card’s lines follow: Both give a figure that moved between two points, in the same words, and both can quote the same size of change. In **A change in how it is counted** the definition or the tool changed somewhere between the two ends, so the figure could move with the real thing standing still. In **A real change** what counts and what measures are the same at both ends. Was the figure counted by the same definition and the same tool all the way through? Is there a date in the account when either changed?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 
 **Drill item 30 of 48**
 
@@ -1645,10 +1645,10 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Detection bias**: Nobody looked harder or put in more monitors. The one monitor was moved to a different place.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - If you chose **More looking for it**: Nobody looked harder or put in more monitors. The one monitor was moved to a different place.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Detection bias**, the look-alike card’s lines follow: In both, a count of what was found rose, and the people or things looked at may be the same ones. In **A change in how it is counted** what counts as a find was decided by a different definition or tool than before. In **Detection bias** the definition and the tool are what they were, and more was looked at, or it was looked at more often. Is what counts as a find decided by a different definition or tool than before, or by the same one used on more people or more often?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A new way of counting, with the same name on the figure” (one tap opens the card).
 
 **Drill item 31 of 48**
@@ -1666,15 +1666,15 @@ Shown to you, with the words that decide each answer marked:
   - Why not **A change in how it is counted**: The nets and places are the same, so how a pike is counted did not change. The club netted for more days.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - If you chose **A new rule or tool for counting it**: The nets and places are the same, so how a pike is counted did not change. The club netted for more days.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A change in how it is counted**, the look-alike card’s lines follow: In both, a count of what was found rose, and the people or things looked at may be the same ones. In **A change in how it is counted** what counts as a find was decided by a different definition or tool than before. In **Detection bias** the definition and the tool are what they were, and more was looked at, or it was looked at more often. Is what counts as a find decided by a different definition or tool than before, or by the same one used on more people or more often?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “More found, because more was looked for” (one tap opens the card).
 
-#### Stage 4 of 5. No help. Answer every question in the key’s order, then give the name.
+#### Stage 4 of 5. No help. Answer every question in order, then give the name.
 
-Each question is shown with all of its answers from the key, in the key’s order, and the names offered are the three this unit teaches.
+Each question is shown with all of its answers, in order, and the names offered are the three this unit teaches.
 
 **Drill item 32 of 48**
 
@@ -1689,10 +1689,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **What the number counts.** The count of pledges can rise with no more money coming in: “gives each fundraiser a bonus per pledge 'received', and the fundraiser enters each pledge in the system after the call”. The count rose by 500 a month, and the bank’s records rose by $500.
   - If you chose **More looking for it**: Nobody is looking harder for pledges. The fundraisers gain from the figure and make it, which is a different way for it to move.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Detection bias**, the look-alike card’s lines follow: In both, more effort went into something, a count rose, and the real thing may not have moved. In **Gaming the target** the extra effort went into the figure itself, by people who gain from a higher figure and make it. In **Detection bias** the extra effort went into finding what the figure counts, and nobody gains from the count being high. What did the extra effort go into: raising the number, or finding the thing the number stands for? Who gains if the count is high?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If a donor’s pledge counted only when the bank received the money, and the fundraisers were paid a flat wage, a rise in the figure could no longer be pushed, and the claim could be **A real change**.
 - Taught on: “Pushing up the figure instead of the thing it stands for” (one tap opens the card).
 
@@ -1709,10 +1709,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **What the number counts.** The count of incidents reported can rise with no more danger: “put a reporting box on every floor and held a month of 'report everything' talks”. Payroll’s count of injuries that sent a worker home stayed at 6.
   - If you chose **People working on the figure itself**: Nobody is paid by the number of reports. The factory made reporting easier, so more of the incidents that were already happening were found.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Gaming the target**, the look-alike card’s lines follow: In both, more effort went into something, a count rose, and the real thing may not have moved. In **Gaming the target** the extra effort went into the figure itself, by people who gain from a higher figure and make it. In **Detection bias** the extra effort went into finding what the figure counts, and nobody gains from the count being high. What did the extra effort go into: raising the number, or finding the thing the number stands for? Who gains if the count is high?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If staff were paid for each report they filed, the figure could also be pushed, and the claim would show more than one way for the figure to move. The case says nobody is.
 - Taught on: “More found, because more was looked for” (one tap opens the card).
 
@@ -1728,10 +1728,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
   - Why not **Gaming the target**: Nobody is paid or ranked on the count, so nobody could raise it without more books being borrowed.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **Nothing goes wrong.** Every part holds: “the same scanner has been used for years. Nobody is paid or ranked by the count, and the loan period did not change”. One scanner counted the same way, nobody gains from a higher count, and the loan period did not change, so nothing besides the borrowing could move it.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Gaming the target**, the look-alike card’s lines follow: Both give a figure that rose, in the same words, and the claim says only that the figure rose. In **Gaming the target** the people who make the figure are judged on it, and they could raise it without more of the real thing happening. In **A real change** nobody who makes the figure gains from it, and nothing but the real thing moving could change it. Who makes the figure, and who gains if it is high? Could anyone raise it without more of the real thing happening?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the librarian were paid a bonus for each loan and entered them by hand, the figure could be pushed, and the name would change.
 
 **Drill item 35 of 48**
@@ -1747,10 +1747,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **What the number counts.** The share fell with no household better off: “Last year a household of four counted as in poverty if its income was under $20,000. This year the line is $17,000”. Counted with last year’s line, both years are 140 in 1,000, which is 14%; counted with this year’s, both are 110, which is 11%.
   - If you chose **More looking for it**: Nobody looked harder for poor households. The same 1,000 were counted both years, against a different line.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Detection bias**, the look-alike card’s lines follow: In both, a count of what was found rose, and the people or things looked at may be the same ones. In **A change in how it is counted** what counts as a find was decided by a different definition or tool than before. In **Detection bias** the definition and the tool are what they were, and more was looked at, or it was looked at more often. Is what counts as a find decided by a different definition or tool than before, or by the same one used on more people or more often?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the line stayed at $20,000 in both years and the share still fell from 14% to 11%, nothing in the case would move the figure but the households, and it could be **A real change**.
 - Taught on: “A new way of counting, with the same name on the figure” (one tap opens the card).
 
@@ -1767,10 +1767,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **What the number counts.** The share passing can rise with no pupil knowing more: “her bonus rises with the share of her pupils who score 50 or more”. It rose from 60 to 90 in every 100, and the outside marker’s 12 of 20 is 60 in every 100 again.
   - If you chose **A new rule or tool for counting it**: The exam and the pass mark are the same in both years. What changed is that the person who grades is paid on the result and added points.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A change in how it is counted**, the look-alike card’s lines follow: In both, a figure moved with the real thing standing still, and a new system may be part of the story. In **Gaming the target** the people who make the figure are judged on it and could raise it by what they do. In **A change in how it is counted** the definition or the tool is what changed, and nobody has to gain from the figure. Did anything about what counts or what measures change at a date? Or did the people who make the figure gain from a higher one, with a way to raise it?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If an outside marker graded every exam without knowing the class, and the teacher had no say over it, the teacher could no longer push the figure, and the claim could be **A real change**.
 - Taught on: “Pushing up the figure instead of the thing it stands for” (one tap opens the card).
 
@@ -1787,10 +1787,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **What the number counts.** The count found can rise with no more fraud happening: “Last year the fraud team reviewed every card payment over $5,000, about 20,000 payments. This year it reviews every payment over $500, about 60,000 payments”. Three times as many payments were reviewed and three times as many were found (2 in every 100 of 20,000 is 400; of 60,000 is 1,200).
   - If you chose **A new rule or tool for counting it**: The test that calls a payment fraudulent is the same in both years. What changed is how many payments the team looked at.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A change in how it is counted**, the look-alike card’s lines follow: In both, a count of what was found rose, and the people or things looked at may be the same ones. In **A change in how it is counted** what counts as a find was decided by a different definition or tool than before. In **Detection bias** the definition and the tool are what they were, and more was looked at, or it was looked at more often. Is what counts as a find decided by a different definition or tool than before, or by the same one used on more people or more often?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the team had switched to a new test that calls more payments fraudulent, with the same number reviewed, the case would be **A change in how it is counted**.
 - Taught on: “More found, because more was looked for” (one tap opens the card).
 
@@ -1806,10 +1806,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
   - Why not **A real change**: The figure could rise with no patient changing, because the new cuffs read higher. A rise in a figure is only the real thing moving when it is counted the same way at both ends.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **What the number counts.** The average can rise with no patient’s blood pressure higher: “In April the clinic replaced its blood pressure cuffs with a new model. Forty patients measured with both models on the same day read about 6 points higher on the new one”. The two models differ by 6 points on the same people (128 − 122 = 6), which is the whole rise.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A real change**, the look-alike card’s lines follow: Both give a figure that moved between two points, in the same words, and both can quote the same size of change. In **A change in how it is counted** the definition or the tool changed somewhere between the two ends, so the figure could move with the real thing standing still. In **A real change** what counts and what measures are the same at both ends. Was the figure counted by the same definition and the same tool all the way through? Is there a date in the account when either changed?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the clinic had kept its old cuffs, nothing in the case would move the figure but the patients, and it could be **A real change**.
 - Taught on: “A new way of counting, with the same name on the figure” (one tap opens the card).
 
@@ -1825,10 +1825,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
   - Why not **A change in how it is counted**: The door and the scanner are unchanged, so nothing about how the pallets are counted changed.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **Nothing goes wrong.** Every part holds: “at the same dock door as it is loaded, and nobody is paid or ranked by the number scanned. The door and the scanner have not changed”. One door and one scanner counted the same way, and nobody gains from a higher count, so nothing besides the pallets leaving could move it.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A change in how it is counted**, the look-alike card’s lines follow: Both give a figure that moved between two points, in the same words, and both can quote the same size of change. In **A change in how it is counted** the definition or the tool changed somewhere between the two ends, so the figure could move with the real thing standing still. In **A real change** what counts and what measures are the same at both ends. Was the figure counted by the same definition and the same tool all the way through? Is there a date in the account when either changed?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the scanner had been replaced in the spring by a model that also scans pallets moved inside the building, the case would be **A change in how it is counted**.
 
 **Drill item 40 of 48**
@@ -1844,12 +1844,12 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **What the number counts.** The attendance figure can rise with no more pupils in the room: “Teachers are ranked each term by their class's attendance, and teachers hold the pupils' cards and scan them at the door”. The head count found 90 in every 100 in both years, and the figure went from 90 to 97.
   - If you chose **A new rule or tool for counting it**: The new scanner counts a pupil as present by the same test as the roll call, so how it is counted did not change. The story of a new machine is not what moves the figure; the teachers’ hold on it is.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A change in how it is counted**, the look-alike card’s lines follow: In both, a figure moved with the real thing standing still, and a new system may be part of the story. In **Gaming the target** the people who make the figure are judged on it and could raise it by what they do. In **A change in how it is counted** the definition or the tool is what changed, and nobody has to gain from the figure. Did anything about what counts or what measures change at a date? Or did the people who make the figure gain from a higher one, with a way to raise it?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *The gym scale*, which was **A change in how it is counted**. When a likeness and the key disagree, go by the words that answer the key’s question.
-- What would make it a different name: If the scanner counted a pupil present from the moment their card crossed the school gate, and not from 9:00 in the room, the counting would have changed, and the case would be **A change in how it is counted**.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *The gym scale*, which was **A change in how it is counted**. When a likeness and the answers disagree, go by the words that answer the question.
+- What would make it a different name: If the scanner counted a pupil present from the moment their card crossed the school entrance, and not from 9:00 in the room, the counting would have changed, and the case would be **A change in how it is counted**.
 - Taught on: “Pushing up the figure instead of the thing it stands for” (one tap opens the card).
 
 **Drill item 41 of 48**
@@ -1865,11 +1865,11 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **What the number counts.** The count of tickets can rise with no more bad parking: “after I told our wardens to add a second daily walk along half of our streets”. 2 in every 100 of 1,000,000 cars is 20,000 tickets; 2 in every 100 of 1,500,000 is 30,000.
   - If you chose **People working on the figure itself**: The wardens’ pay does not depend on the number of tickets, so they gain nothing from raising it. A figure that staff write down may bring staff who are paid on it to mind, but nobody is paid on this one.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Gaming the target**, the look-alike card’s lines follow: In both, more effort went into something, a count rose, and the real thing may not have moved. In **Gaming the target** the extra effort went into the figure itself, by people who gain from a higher figure and make it. In **Detection bias** the extra effort went into finding what the figure counts, and nobody gains from the count being high. What did the extra effort go into: raising the number, or finding the thing the number stands for? Who gains if the count is high?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *The store guards’ pay*, which was **Gaming the target**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *The store guards’ pay*, which was **Gaming the target**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If each warden’s bonus rose with the tickets they wrote and they decided what to ticket, the figure could also be pushed, and the case would show more than one way for it to move.
 - Taught on: “More found, because more was looked for” (one tap opens the card).
 
@@ -1886,11 +1886,11 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **What the number counts.** The count fell with no fewer complaints: “the regulator, which sets what counts as a complaint for every energy firm and pays no one by the figure, stopped counting complaints about billing delays of under 5 days”. Counted the old way, this year is 4,500 + 3,500 = 8,000 again; counted the new way, last year was 4,500.
   - If you chose **People working on the figure itself**: The executives are paid on the figure, which is why the case can look like **Gaming the target**. But the firm did not choose the new definition; the regulator did, and complaints of every other kind did not move.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Gaming the target**, the look-alike card’s lines follow: In both, a figure moved with the real thing standing still, and a new system may be part of the story. In **Gaming the target** the people who make the figure are judged on it and could raise it by what they do. In **A change in how it is counted** the definition or the tool is what changed, and nobody has to gain from the figure. Did anything about what counts or what measures change at a date? Or did the people who make the figure gain from a higher one, with a way to raise it?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *The delivery bonus*, which was **Gaming the target**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *The delivery bonus*, which was **Gaming the target**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If the firm itself had decided to stop counting the short-delay complaints in order to win the bonus, the case would show the firm acting on the figure to win its bonus, and the answer would be **“People working on the figure itself”**.
 - Taught on: “A new way of counting, with the same name on the figure” (one tap opens the card).
 
@@ -1906,11 +1906,11 @@ Each question is shown with all of its answers from the key, in the key’s orde
   - Why not **Gaming the target**: The tutors are paid on the figure, which is why the case can look like **Gaming the target**. But a way to raise it without more passes is missing: the state grades the exams blind.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **Nothing goes wrong.** Every part holds, even with a bonus in the story: “The state grades each exam without knowing who the student's tutor was, and no tutor sees an exam before it is graded”. The tutors are paid on passes, but they cannot touch the grading, so there is no way to raise the figure without more students passing.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Gaming the target**, the look-alike card’s lines follow: Both give a figure that rose, in the same words, and the claim says only that the figure rose. In **Gaming the target** the people who make the figure are judged on it, and they could raise it without more of the real thing happening. In **A real change** nobody who makes the figure gains from it, and nothing but the real thing moving could change it. Who makes the figure, and who gains if it is high? Could anyone raise it without more of the real thing happening?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *The loan officers’ ranking*, which was **Gaming the target**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *The loan officers’ ranking*, which was **Gaming the target**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If the tutors graded the exams themselves, they could raise the figure without more passes, and the case would be **Gaming the target**.
 
 **Drill item 44 of 48**
@@ -1930,8 +1930,8 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - If you are right: “Right: **What it is compared with.**” The figure is a percentage, and the claim leaves out what it is a percentage of: “Our new savings account pays 50% more interest”. Fifty percent more than 0.1% is still very little, and fifty percent more than 4% is a lot.
-- If you miss: “The answer is …”, the same reason, and then the line built from the key for the answer you chose.
-- Then, right or wrong: “This case leaves the part of the key you have been taught. The questions that follow this answer come in a part of the course you have not reached, so the case stops here.”
+- If you miss: “The answer is …”, the same reason, and then the line built from the answers’ own wording for the answer you chose.
+- Then, right or wrong: “The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.”
 
 #### Last stage. Each of these is something a person might say that uses one of this unit’s names, or reasons in one of its ways. Each has a fault. The first is worked for you. For the rest, answer before the fault is shown.
 
@@ -1958,7 +1958,7 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **You are asked:** The claim uses the name **Detection bias**. What would you need to see in the case before that name could be used?
 
 - A figure that people are paid, ranked or judged on, a rise in it, and a way they could raise it without more of the thing it is meant to show
-- A figure that rose or fell, and a change at the same time in the rule for what counts or in the tool that measures, which could move the figure on its own
+- A figure that rose or fell, and a change at the same time in the definition of what counts or in the tool that measures, which could move the figure on its own
 - A figure of how many were found, more effort put into finding them (more tests, more cameras, an easier way to report), and the rise read as more of the thing happening
 
 **Shown as soon as you answer**
@@ -1981,7 +1981,7 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - The answer is: **A new rule or tool for counting it.**
-- If you chose another answer, the line is built from the key, as for any other question.
+- If you chose another answer, the line is built from the answers’ own wording, as for any other question.
 - The fault: The claim itself says what changed. The bank counted every complaint before and counts only written ones now, so the two figures count different things. Written complaints were 350 of the 600 last year, so on the old count nothing fell: the figure of 600 includes 250 that this year’s count would not log.
 - The claim, put right (always the last thing shown): Complaints fell from 600 to 400 once the bank started logging only the written ones. That is **“A new rule or tool for counting it”**. To say customers are happier, I would need the complaints counted the same way in both years: 350 written complaints last year against 400 this year.
 
@@ -1992,7 +1992,7 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **You are asked:** The claim uses the name **Gaming the target**. What would you need to see in the case before that name could be used?
 
 - A figure that people are paid, ranked or judged on, a rise in it, and a way they could raise it without more of the thing it is meant to show
-- A figure that rose or fell, and a change at the same time in the rule for what counts or in the tool that measures, which could move the figure on its own
+- A figure that rose or fell, and a change at the same time in the definition of what counts or in the tool that measures, which could move the figure on its own
 - A figure of how many were found, more effort put into finding them (more tests, more cameras, an easier way to report), and the rise read as more of the thing happening
 
 **Shown as soon as you answer**
@@ -2015,21 +2015,21 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - The answer is: **More looking for it.**
-- If you chose another answer, the line is built from the key, as for any other question.
+- If you chose another answer, the line is built from the answers’ own wording, as for any other question.
 - The fault: The claim reads the number of tickets as how often drivers speed. Each camera adds a place where speeding is found, so the count of tickets rises with the cameras even when each camera catches the same share of cars. The claim never says how many cars the cameras checked.
 - The claim, put right (always the last thing shown): The number of speeding tickets has gone up every year since we added cameras. That is **“More looking for it”**. To say drivers are getting worse, I would need the share of cars caught at each camera, year by year: if that share is the same, only the looking has grown.
 
-**When the drill ends.** The learner sees their own results: first-try accuracy for each stage, whole routes beside single questions, the pair of names they mixed up most often, and what will come back and when. Anything missed was asked again before the drill ended. Nothing here is graded. A miss only decides what comes back.
+**When the drill ends.** The learner sees their own results: first-try accuracy for each stage, whole cases beside single questions, the pair of names they mixed up most often, and what will come back and when. Anything missed was asked again before the drill ended. Nothing here is graded. A miss only decides what comes back.
 
 ### 28. What to carry away
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 28 of 30*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 28 of 30*
 
 [reviewers only: card kind `recap`, id `recap`]
 
-You have now run the key’s question on your own. This card puts the unit in one place, in the key’s words.
+You have now run the question on your own. This card puts the unit in one place, in the words used all the way through.
 
-**The key for this unit, in its own words**
+**This unit’s questions and answers**
 
 What besides the real thing could move this figure?
 - People working on the figure itself → Gaming the target
@@ -2041,7 +2041,7 @@ What besides the real thing could move this figure?
 - **Gaming the target**: a figure that people are paid, ranked or judged on, a rise in it, and a way they could raise it without more of the thing it is meant to show.
   - Ask: "Who is judged by this figure, and what is the easiest way for them to raise it? Is that the same as raising what it stands for?"
   - Do: First find out who is paid, ranked or judged on the figure, and who makes it. If they are the same people, go on to the next question. Ask what the easiest way to raise the figure would be, and whether that way raises the real thing too. Look for a second count of the same real thing that nobody is judged on, such as customers’ own messages or a test with new questions, and see whether it moved as the figure did. Until you have found one, repeat only what the figure says ("marked on time") and not what it stands for ("on time"), and do not pass the claim on as it stands.
-- **A change in how it is counted**: a figure that rose or fell, and a change at the same time in the rule for what counts or in the tool that measures, which could move the figure on its own.
+- **A change in how it is counted**: a figure that rose or fell, and a change at the same time in the definition of what counts or in the tool that measures, which could move the figure on its own.
   - Ask: "Was this counted by the same definition and the same tool at both ends? Is there a date where either changed?"
   - Do: First look for the date. Read the small print, the notes under the table, and the words "revised", "now includes", "no longer counts" and "new method". Ask for the figure counted both ways in the same period, as the gym did with 80 members on both scales. The gap between the two is the part of the move that the counting made. If there is no such figure, compare only numbers made the same way, and say that the two ends cannot be compared. Do not pass the claim on as a change in the real thing until you can say how much of the move is left once the counting is the same.
 - **Detection bias**: a figure of how many were found, more effort put into finding them (more tests, more cameras, an easier way to report), and the rise read as more of the thing happening.
@@ -2050,16 +2050,16 @@ What besides the real thing could move this figure?
 
 **To carry away**
 
-- Before any name, put the key’s question to the claim and point to the words that show your answer: **“What besides the real thing could move this figure?”** If you cannot point, you do not have an answer yet.
+- Before any name, put the question to the claim and point to the words that show your answer: **“What besides the real thing could move this figure?”** If you cannot point, you do not have an answer yet.
 - A figure is not the real thing it stands for. It is a count made by someone, in some way, with some amount of effort. Each of the three names is one way the making of the figure can move it while the real thing stays put.
 - The arithmetic usually settles which one: a second count made by someone who gains nothing, the same people counted both ways, or the share found among those looked at.
 - A target alone, a new tool alone, or a rise alone is not a name. Look for the way the figure could move without the real thing: a way for the people judged on it to raise it, a change in what counts or what measures, or more effort put into finding.
-- When you have put each of the three to a claim and none applies, the figure moved because the real thing did. That is an answer too, and the key gives it: **“Nothing goes wrong”**.
+- When you have put each of the three to a claim and none applies, the figure moved because the real thing did. That is an answer too: **“Nothing goes wrong”**.
 - Naming one of these does not make a claim false. It says what the figure cannot show, and what you would need to see.
 
 ### 29. Where would you meet this?
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 29 of 30*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 29 of 30*
 
 [reviewers only: card kind `transfer`, id `transfer`]
 
@@ -2081,7 +2081,7 @@ One line is enough. It is kept on this device only and is never marked.
 
 ### 30. A plan, if you want one
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 30 of 30*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 30 of 30*
 
 [reviewers only: card kind `plan`, id `plan`]
 
@@ -2103,7 +2103,7 @@ Or write your own: If …, then I will …
 
 ## After the unit: what comes back on later days
 
-A name that is due returns as a case the learner has not seen, next to a case of the name they most often confuse it with. Each is run as a whole route. These are the fresh cases held back for that purpose: three for each name, one for each scheduled return. The first return is about two days after the drill, the next about a week after that, the next about three and a half weeks later.
+A name that is due returns as a case the learner has not seen, next to a case of the name they most often confuse it with. Each is run as a whole case: every question, then the name. These are the fresh cases held back for that purpose: three for each name, one for each scheduled return. The first return is about two days after the drill, the next about a week after that, the next about three and a half weeks later.
 
 **Return case 1 of 12**
 
@@ -2118,10 +2118,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **What the number counts.** The count of calls can rise with no more selling: “pays each rep $2 for every call 'made', and the dialer counts a call as made when the line connects for one second. A rep can end a call at once”. It rose by 110 a day (from 50 to 160), and the conversations that lasted more than a minute stayed at 12.
   - If you chose **More looking for it**: Nobody is looking harder for calls. The reps gain from the figure and can make it higher themselves.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Detection bias**, the look-alike card’s lines follow: In both, more effort went into something, a count rose, and the real thing may not have moved. In **Gaming the target** the extra effort went into the figure itself, by people who gain from a higher figure and make it. In **Detection bias** the extra effort went into finding what the figure counts, and nobody gains from the count being high. What did the extra effort go into: raising the number, or finding the thing the number stands for? Who gains if the count is high?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Pushing up the figure instead of the thing it stands for” (one tap opens the card).
 
 **Return case 2 of 12**
@@ -2137,10 +2137,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **What the number counts.** The count of cars sold can rise with no more cars leaving: “pays each salesperson a bonus for every car 'sold' in the last week of the quarter, and a car counts as sold when the customer signs the order”. It rose by 35 (from 60 to 95), and 35 of the orders were cancelled, so deliveries stayed at 60.
   - If you chose **A new rule or tool for counting it**: A sale is counted at the same point in both years, when the customer signs. What changed is what the salespeople do to get signatures.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A change in how it is counted**, the look-alike card’s lines follow: In both, a figure moved with the real thing standing still, and a new system may be part of the story. In **Gaming the target** the people who make the figure are judged on it and could raise it by what they do. In **A change in how it is counted** the definition or the tool is what changed, and nobody has to gain from the figure. Did anything about what counts or what measures change at a date? Or did the people who make the figure gain from a higher one, with a way to raise it?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Pushing up the figure instead of the thing it stands for” (one tap opens the card).
 
 **Return case 3 of 12**
@@ -2156,10 +2156,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **What the number counts.** The logged kilometers can rise with no more running: “gives a prize each month to the member with the most kilometers logged, and members can type in a run by hand”. They rose by 190 (from 120 to 310) while the timed runs show about 120 km a month.
   - If you chose **A new rule or tool for counting it**: The logging works the same way in both months. What changed is that a prize now rewards the number a member types in.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A change in how it is counted**, the look-alike card’s lines follow: In both, a figure moved with the real thing standing still, and a new system may be part of the story. In **Gaming the target** the people who make the figure are judged on it and could raise it by what they do. In **A change in how it is counted** the definition or the tool is what changed, and nobody has to gain from the figure. Did anything about what counts or what measures change at a date? Or did the people who make the figure gain from a higher one, with a way to raise it?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Pushing up the figure instead of the thing it stands for” (one tap opens the card).
 
 **Return case 4 of 12**
@@ -2175,10 +2175,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **What the number counts.** The count of requests closed can rise with no more problems solved: “ranks its agents on 'requests closed' per day, and an agent closes a request by clicking 'resolved'”. It rose from 18 to 41 a day, and callers phoning back rose from 8 to 31 in every 100.
   - If you chose **More looking for it**: Nobody looked harder for problems. The agents are ranked on the figure and make it.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Detection bias**, the look-alike card’s lines follow: In both, more effort went into something, a count rose, and the real thing may not have moved. In **Gaming the target** the extra effort went into the figure itself, by people who gain from a higher figure and make it. In **Detection bias** the extra effort went into finding what the figure counts, and nobody gains from the count being high. What did the extra effort go into: raising the number, or finding the thing the number stands for? Who gains if the count is high?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Pushing up the figure instead of the thing it stands for” (one tap opens the card).
 
 **Return case 5 of 12**
@@ -2194,10 +2194,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **What the number counts.** The count fell with no fewer accidents: “Until last year every accident that stopped someone working for even a day was counted. This year only accidents that stop someone working for more than three days are counted”. Counted last year’s way, this year is 30 + 20 = 50, the same as last year.
   - If you chose **More looking for it**: Nobody looked less hard for accidents. The short stoppages were left out of the count by a new definition.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Detection bias**, the look-alike card’s lines follow: In both, a count of what was found rose, and the people or things looked at may be the same ones. In **A change in how it is counted** what counts as a find was decided by a different definition or tool than before. In **Detection bias** the definition and the tool are what they were, and more was looked at, or it was looked at more often. Is what counts as a find decided by a different definition or tool than before, or by the same one used on more people or more often?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A new way of counting, with the same name on the figure” (one tap opens the card).
 
 **Return case 6 of 12**
@@ -2213,10 +2213,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **What the number counts.** The rate rose with no more students finishing: “Until last year it counted a student as graduating only if they finished within four years. This year it counts those who finish within six”. Counted the four-year way, both years are 600 in 1,000, which is 60%; counted the six-year way, both are 720, which is 72%.
   - If you chose **More looking for it**: Nobody looked harder for graduates. The same 120 who finish late were there in both years, and this year they are counted.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Detection bias**, the look-alike card’s lines follow: In both, a count of what was found rose, and the people or things looked at may be the same ones. In **A change in how it is counted** what counts as a find was decided by a different definition or tool than before. In **Detection bias** the definition and the tool are what they were, and more was looked at, or it was looked at more often. Is what counts as a find decided by a different definition or tool than before, or by the same one used on more people or more often?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A new way of counting, with the same name on the figure” (one tap opens the card).
 
 **Return case 7 of 12**
@@ -2232,10 +2232,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **What the number counts.** The figure rose with the family using no more: “The utility replaced his meter in the second week of the month. A technician's bench test showed that the new meter reads about 15% higher than the old one on the same load”. 15% of 360 is 54, so the same use would read about 414 on the new meter, close to the 420 on the bill.
   - If you chose **People working on the figure itself**: Nobody is paid or ranked on the reading. What changed is the meter that makes it.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Gaming the target**, the look-alike card’s lines follow: In both, a figure moved with the real thing standing still, and a new system may be part of the story. In **Gaming the target** the people who make the figure are judged on it and could raise it by what they do. In **A change in how it is counted** the definition or the tool is what changed, and nobody has to gain from the figure. Did anything about what counts or what measures change at a date? Or did the people who make the figure gain from a higher one, with a way to raise it?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A new way of counting, with the same name on the figure” (one tap opens the card).
 
 **Return case 8 of 12**
@@ -2250,10 +2250,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
   - Why not **A real change**: A fall in a figure is only the real thing moving when it is counted the same way at both ends. The course is not the same course.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **What the number counts.** The average time fell with no runner running faster: “In year three the race moved its turnaround point, and a surveyor's wheel later showed that the course is now 2.2 km short of a full marathon”. The fall is 4:40 − 4:25 = 15 minutes, and a course 2.2 km shorter takes about 15 minutes less.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A real change**, the look-alike card’s lines follow: Both give a figure that moved between two points, in the same words, and both can quote the same size of change. In **A change in how it is counted** the definition or the tool changed somewhere between the two ends, so the figure could move with the real thing standing still. In **A real change** what counts and what measures are the same at both ends. Was the figure counted by the same definition and the same tool all the way through? Is there a date in the account when either changed?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A new way of counting, with the same name on the figure” (one tap opens the card).
 
 **Return case 9 of 12**
@@ -2269,10 +2269,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **What the number counts.** The count of potholes found can rise with no more potholes: “The city tripled its road crews: 2,000 km of road were driven and checked last year and 6,000 km this year, to the same standard”. 0.4 for every km of 2,000 km is 800; 0.4 for every km of 6,000 km is 2,400.
   - If you chose **A new rule or tool for counting it**: A pothole is counted by the same standard in both years. What changed is how many kilometers were checked.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A change in how it is counted**, the look-alike card’s lines follow: In both, a count of what was found rose, and the people or things looked at may be the same ones. In **A change in how it is counted** what counts as a find was decided by a different definition or tool than before. In **Detection bias** the definition and the tool are what they were, and more was looked at, or it was looked at more often. Is what counts as a find decided by a different definition or tool than before, or by the same one used on more people or more often?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “More found, because more was looked for” (one tap opens the card).
 
 **Return case 10 of 12**
@@ -2288,10 +2288,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **What the number counts.** The count of mold found can rise with no damper buildings: “Last year an inspector visited 100 flats picked at random. This year the landlord paid for visits to 400 flats”. 5 in every 100 of 100 flats is 5; 5 in every 100 of 400 flats is 20.
   - If you chose **People working on the figure itself**: The inspector is not paid by the amount of mold found. The landlord paid for four times as many visits.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Gaming the target**, the look-alike card’s lines follow: In both, more effort went into something, a count rose, and the real thing may not have moved. In **Gaming the target** the extra effort went into the figure itself, by people who gain from a higher figure and make it. In **Detection bias** the extra effort went into finding what the figure counts, and nobody gains from the count being high. What did the extra effort go into: raising the number, or finding the thing the number stands for? Who gains if the count is high?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “More found, because more was looked for” (one tap opens the card).
 
 **Return case 11 of 12**
@@ -2307,10 +2307,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **What the number counts.** The count of unsafe lifts logged can rise with no more careless lifting: “Supervisors used to walk the floor 5 times a week and now walk it 15 times”. 2 for every walk of 5 walks is 10; 2 for every walk of 15 walks is 30.
   - If you chose **A new rule or tool for counting it**: An unsafe lift is logged by the same checklist in both years. What changed is how often supervisors looked.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A change in how it is counted**, the look-alike card’s lines follow: In both, a count of what was found rose, and the people or things looked at may be the same ones. In **A change in how it is counted** what counts as a find was decided by a different definition or tool than before. In **Detection bias** the definition and the tool are what they were, and more was looked at, or it was looked at more often. Is what counts as a find decided by a different definition or tool than before, or by the same one used on more people or more often?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “More found, because more was looked for” (one tap opens the card).
 
 **Return case 12 of 12**
@@ -2326,9 +2326,9 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **What the number counts.** The count of pupils found can rise with no worse eyesight: “Last year the nurse visited one day a week and tested the 300 pupils who were in school on that day. This year she visits three days a week and has tested 900 pupils”. 10 in every 100 of 300 is 30; 10 in every 100 of 900 is 90.
   - If you chose **A new rule or tool for counting it**: The chart and the standard for needing glasses are the same. What changed is how many pupils were tested.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A change in how it is counted**, the look-alike card’s lines follow: In both, a count of what was found rose, and the people or things looked at may be the same ones. In **A change in how it is counted** what counts as a find was decided by a different definition or tool than before. In **Detection bias** the definition and the tool are what they were, and more was looked at, or it was looked at more often. Is what counts as a find decided by a different definition or tool than before, or by the same one used on more people or more often?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “More found, because more was looked for” (one tap opens the card).
 

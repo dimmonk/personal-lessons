@@ -1,15 +1,15 @@
 # Learner view: Wealth Preservation, Unit Three: One thing most of it depends on
 
-*Seven names for what to do when one thing could take most of what a person has, including the one that says to leave it alone.* Unit revision 1, built to lesson standard 1, status: draft.
+*Seven names for what to do when one thing could take most of what a person has, including the one that says to leave it alone.* Unit revision 2, built to lesson standard 1, status: draft.
 
 This file is generated from the data files by `tools/render-learner-view.mjs`. It shows every screen in the order a learner meets it. In the app one card is on screen at a time and the learner moves on when ready.
 
-- **Bold text in quotation marks** is the key’s own wording, printed from `key.js`. Bold names are the outcome names from the same file. Neither is typed anywhere else. "What you must be able to point to" lines and "How to tell them apart" lines are also printed from one place each (the key and the look-alike ledger).
+- **Bold text in quotation marks** is the subject’s own wording for its questions and answers, written once and printed everywhere. Bold names are the names, written once in the same place. Neither is typed anywhere else. "What you must be able to point to" lines and "How to tell them apart" lines are also printed from one place each (the subject’s questions and the pairs it compares).
 - ⟦Double brackets⟧ show the words the app marks in a case (one highlight style everywhere).
 - The line in italics under each heading is the app’s top bar. The line in square brackets after it is for reviewers and is not shown to the learner.
 - Headings, prompt wording and stage instructions that are the same in every unit are the app’s wording, not this unit’s.
 - "Shown as soon as you …" is what appears the moment the learner answers. Nothing is hidden behind a second tap the first time a case is met, or after a miss.
-- After every answer the app shows, in this order: the right answer in the key’s words; the reason, quoting the marked words; for a name, why the nearest wrong name fails; after a miss, a line about the answer the learner chose; and last a link to the card that taught it. Where a line about the learner’s own choice is not written for the case, the app builds it from the key, and this file says so in place of repeating it.
+- After every answer the app shows, in this order: the right answer; the reason, quoting the marked words; for a name, why the nearest wrong name fails; after a miss, a line about the answer the learner chose; and last a link to the card that taught it. Where a line about the learner’s own choice is not written for the case, the app builds it from the answers’ own wording, and this file says so in place of repeating it.
 
 ---
 
@@ -17,7 +17,7 @@ This file is generated from the data files by `tools/render-learner-view.mjs`. I
 
 ### 1. One thing could take most of it: what can be done?
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 1 of 50*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 1 of 50*
 
 [reviewers only: card kind `orient`, id `w3-orient`]
 
@@ -35,13 +35,13 @@ A couple have a house with a pool. Their insurance would pay up to half a millio
 
 And two more, in which the same shape is there and nothing needs doing. A woman runs a brewery that is most of what she owns, and she has six years of spending in the bank, the rest of her money spread over funds, and nobody holding her shares as security for a loan. A man owes a small sum on a flat, at a rate fixed for fifteen years, and the bank cannot ask for the money back.
 
-In every one of these, the first question of the key finds the same thing: **“One thing most of it depends on”**. That answer says where to look. What you do about it depends on what the one thing is and what the person can do about it, and in the last two cases the honest answer is to leave it alone. This unit teaches you to tell the seven apart.
+In every one of these, the first question finds the same thing: **“One thing most of it depends on”**. That answer says where to look. What you do about it depends on what the one thing is and what the person can do about it, and in the last two cases the honest answer is to leave it alone. This unit teaches you to tell the seven apart.
 
-Every case in this unit begins with that first answer. The unit teaches the next question of the key, which asks what the one thing is and what can be done about it. It has seven answers, and each leads to one name. Six of the names say what to do. One says that nothing needs doing.
+Every case in this unit begins with that first answer. The unit teaches the next question, which asks what the one thing is and what can be done about it. It has seven answers, and each leads to one name. Six of the names say what to do. One says that nothing needs doing.
 
 Each name is taught with cases first. After every step you answer one question about a new case, and the answer and the reason are shown straight away.
 
-**What Unit One taught, in one place.** The key’s first question is **“What could lose this money?”** Its answers:
+**What Unit One taught, in one place.** The first question is **“What could lose this money?”** Its answers:
 
 - **“Something taken out of it every year”**: give this answer when the case is about something taken out of the pot every year: what funds, an adviser or the firm that holds the investments charge, tax on the investments, or a sum taken out to spend.
 - **“One thing most of it depends on”**: give this answer when the case is about one thing that most of the pot depends on: one company’s shares, one property or one business that makes up most of it, a claim that could reach everything the person owns, or a loan whose lender could demand the money back and force a sale. **This unit is about these cases.**
@@ -49,11 +49,11 @@ Each name is taught with cases first. After every step you answer one question a
 - **“The handover to other people”**: give this answer when the case is about what happens to the pot when its owner dies or can no longer handle it, or when it is passed to family during the owner’s life: who receives it, the tax on it, the papers that say who gets what, and how the people who receive it will behave.
 - **“Nothing in the case”**: give this answer when the case shows money being kept and none of the things the other four answers ask about: no charge, tax or spending that the case raises, nothing most of the pot depends on, no living costs or bill to pay from it soon and no mix away from its plan, and no handover in view.
 
-Unit One also taught that two things are marked separately: the name you give a case, and your route to it, meaning the answers you gave to the key’s questions on the way.
+Two things are marked separately: the name you give a case, and your answers to the questions on the way to it.
 
 *(One tap on any of these lines opens the card in Unit One that taught it.)*
 
-**The part of the key this unit teaches.** This is a preview. You are not expected to follow it yet: every line is explained on the cards that come next. The question and its answers are in the key’s own words. Beside each answer, in plain words, is the thing it leads to. There are seven of them, and each gets its name when it is taught.
+**The questions this unit teaches.** This is a preview. You are not expected to follow it yet: every line is explained on the cards that come next. The question and its answers are worded exactly as you will meet them. Beside each answer, in plain words, is the thing it leads to. There are seven of them, and each gets its name when it is taught.
 
 What one thing could take most of it?
 - One holding they can sell and do not run → one big holding, free to sell, that the owner does not run
@@ -79,17 +79,17 @@ The unit has four parts, and you can stop after any of them.
 1. One holding that is most of what a person has
 2. A business the person runs, and what makes it safe
 3. Claims, and several properties in one name
-4. A loan, the key’s question, two whole cases, then the drill
+4. A loan, the question, two whole cases, then the drill
 
 Each name is taught through cases first. After every step you answer one question about a new case, and the answer and the reason are shown straight away. Nothing here is graded. A miss only decides what comes back.
 
 ### 2. One investment, and how much of everything it is
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 2 of 50*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 2 of 50*
 
 [reviewers only: card kind `term`, id `w3-term-holding`]
 
-The key’s next question is about one thing that could take most of what a person has. Before it, one word, so that every case means the same thing by it.
+The next question is about one thing that could take most of what a person has. Before it, one word, so that every case means the same thing by it.
 
 *Joanna’s list*
 
@@ -110,11 +110,11 @@ One of these investments is *a holding*. From here on, when a case says the hold
 
 ### 3. One big holding, free to sell, that the owner does not run
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 3 of 50*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 3 of 50*
 
 [reviewers only: card kind `meet`, id `w3-meet-diversify`]
 
-The key’s question has seven answers. The first is the plainest: one holding that is most of what the person has, and nothing in the way of doing something about it.
+The question has seven answers. The first is the plainest: one holding that is most of what the person has, and nothing in the way of doing something about it.
 
 *Meena and the bus shares*
 
@@ -137,11 +137,11 @@ Why not sell everything today? Nobody knows which day is a good day to sell. One
 
 **What you must be able to point to.** One company’s shares or one property that is most of what the person owns, nothing stopping them selling it, and no part for them in running it. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What one thing could take most of it?”**
+**The question:** **“What one thing could take most of it?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“One holding they can sell and do not run”**
+**Its answer for a case like this one:** **“One holding they can sell and do not run”**
 
-The key’s answer is **“One holding they can sell and do not run”**, and the name of what to do about it is **Sell down on a schedule**. “Sell down” means sell part, then more, in steps. “On a schedule” means the steps are planned in advance, with dates.
+The answer is **“One holding they can sell and do not run”**, and the name of what to do about it is **Sell down on a schedule**. “Sell down” means sell part, then more, in steps. “On a schedule” means the steps are planned in advance, with dates.
 
 The name is about what to do. It does not say that the company is a bad one. It says that no one company should be most of what a person has, when they are free to sell it and have no part in running it.
 
@@ -149,7 +149,7 @@ You may also hear this called “staged diversification”. That means the same 
 
 ### 4. Sell down on a schedule: the same thing in a different story
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 4 of 50*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 4 of 50*
 
 [reviewers only: card kind `again`, id `w3-again-diversify`]
 
@@ -180,7 +180,7 @@ What the two share is therefore not the thing owned. It is what the person can d
 
 ### 5. The story does not decide the answer
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 5 of 50*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 5 of 50*
 
 [reviewers only: card kind `lens`, id `w3-lens`]
 
@@ -194,13 +194,13 @@ From here on, the cases change their stories on purpose. Sometimes two cases wil
 
 Two more things change on purpose. One is size: £30,000 and £3,000,000 can be the same kind of case. The other is whether anything needs doing. In some cases the one thing is already looked after, and the answer is to leave it alone. Seeing that is part of the skill.
 
-**Stays the same from case to case:** what the person can do about the one thing, which is what the key asks about: **“What one thing could take most of it?”**
+**Stays the same from case to case:** what the person can do about the one thing, which is what the question is about: **“What one thing could take most of it?”**
 
 **Changes on purpose:** the kind of money; the people; the size of the sums; how worried you would be; whether anything needs doing.
 
 ### 6. Sell down on a schedule: what it is like
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 6 of 50*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 6 of 50*
 
 [reviewers only: card kind `portrait`, id `w3-portrait-diversify`]
 
@@ -241,7 +241,7 @@ Then follow the dates, whatever the price did in the weeks before them.
 
 ### 7. A question about a new case
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 7 of 50*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 7 of 50*
 
 [reviewers only: card kind `check`, id `w3-check-diversify`]
 
@@ -256,7 +256,7 @@ The pieces you can tap:
 
 **Shown as soon as you tap**
 
-- If you are right: “Right: ‘ He could sell the shares through his broker tomorrow.’.” Nothing stops Declan selling: he could do it tomorrow through his broker. Together with the fact that he left the company, that is the whole answer. £300,000 out of £380,000 is about 79%, all in one company. The key’s answer for this case is **“One holding they can sell and do not run”**, and the name is **Sell down on a schedule**.
+- If you are right: “Right: ‘ He could sell the shares through his broker tomorrow.’.” Nothing stops Declan selling: he could do it tomorrow through his broker. Together with the fact that he left the company, that is the whole answer. £300,000 out of £380,000 is about 79%, all in one company. The answer for this case is **“One holding they can sell and do not run”**, and the name is **Sell down on a schedule**.
 - If you miss: “The words are ‘ He could sell the shares through his broker tomorrow.’.” The same reason follows, and then a line about the piece you tapped:
   - “Declan, 55, has £380,000 in all. £300,000 of it is shares in the telephone company where he worked until last year.”: That shows how much of what he owns rests on one company, 79%. The words asked for show what he is free to do about it.
   - “ He no longer works there.”: That shows he takes no part in running the company. It is half of the answer. The words asked for are the other half: nothing stops him selling.
@@ -264,7 +264,7 @@ The pieces you can tap:
 
 ### 8. A wrong idea: “I know the company, so I need not spread anything”
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 8 of 50*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 8 of 50*
 
 [reviewers only: card kind `refute`, id `w3-refute-ignorance`]
 
@@ -280,12 +280,12 @@ What is true: knowing a company well helps you judge whether it is a good one. S
 
 What does not follow: knowing a company does not stop what comes from outside what you know. A rival wins its biggest contract, a law changes, a fire starts, a fraud is hidden from every outsider, a whole industry has a bad ten years. None of these needs ignorance to happen to someone who knows the company well. Knowledge changes how likely you think a bad event is. It does not change how much of your money goes with it if one comes.
 
-The key’s question is about the second thing: what could take most of what a person has. It is not asked about how well you understand the thing. Understanding is a reason to expect that nothing will go wrong. This unit is about what to do in case something does.
+The question is about the second thing: what could take most of what a person has. It is not asked about how well you understand the thing. Understanding is a reason to expect that nothing will go wrong. This unit is about what to do in case something does.
 
 
 ### 9. One big holding that cannot be sold yet
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 9 of 50*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 9 of 50*
 
 [reviewers only: card kind `meet`, id `w3-meet-hedge`]
 
@@ -314,11 +314,11 @@ None of this makes the shares safe, and none of it spreads anything. It limits t
 
 **What you must be able to point to.** One company’s shares that are most of what the person owns, and a rule that stops them selling for a set time, such as after the company first sells its shares to the public, or for shares paid as part of their wages. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What one thing could take most of it?”**
+**The question:** **“What one thing could take most of it?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“One holding they are not allowed to sell yet”**
+**Its answer for a case like this one:** **“One holding they are not allowed to sell yet”**
 
-The key’s answer is **“One holding they are not allowed to sell yet”**, and the name of what to do about it is **Cap the loss without selling**. To “cap” a loss is to put a ceiling on it, and “without selling” is the point: the shares stay where they are.
+The answer is **“One holding they are not allowed to sell yet”**, and the name of what to do about it is **Cap the loss without selling**. To “cap” a loss is to put a ceiling on it, and “without selling” is the point: the shares stay where they are.
 
 The name is about the waiting time. It does not say that the company is a bad one.
 
@@ -326,7 +326,7 @@ You may also hear this called “hedging” or “a collar”. Those words mean 
 
 ### 10. Cap the loss without selling: the same thing in a different story
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 10 of 50*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 10 of 50*
 
 [reviewers only: card kind `again`, id `w3-again-hedge`]
 
@@ -359,7 +359,7 @@ The rule does not say that the shares are worth little or that the company is in
 
 ### 11. Cap the loss without selling: what it is like
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 11 of 50*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 11 of 50*
 
 [reviewers only: card kind `portrait`, id `w3-portrait-hedge`]
 
@@ -398,13 +398,13 @@ Fourth, write down the day the rule ends and the first sale you will make on tha
 
 ### 12. A question about a new case
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 12 of 50*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 12 of 50*
 
 [reviewers only: card kind `check`, id `w3-check-hedge`]
 
 > Stefan, 29, was given shares in the delivery firm he works for as part of his pay. They are worth £150,000, which is most of what he has, and the firm’s rules say he may not sell any of them until March, two years away.
 
-**The key asks:** **“What one thing could take most of it?”** Which of the answers you have met so far fits this case?
+**The question:** **“What one thing could take most of it?”** Which of the answers you have met so far fits this case?
 
 - One holding they can sell and do not run
 - One holding they are not allowed to sell yet
@@ -418,7 +418,7 @@ Fourth, write down the day the rule ends and the first sale you will make on tha
 
 ### 13. Sell down on a schedule or Cap the loss without selling: telling them apart
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 13 of 50*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 13 of 50*
 
 [reviewers only: card kind `lookalike`, id `w3-look-diversify-hedge`]
 
@@ -440,9 +440,9 @@ The two answers you have met are neighbours: in both, one company’s shares are
 
 **Why this one and not the other**
 
-In Case A Ruth left the company two years ago, takes no part in running it, and could sell on any day. £500,000 out of £560,000 is 89% in one company, and nothing stands in her way. The key’s answer is **“One holding they can sell and do not run”**, and the name is **Sell down on a schedule**: a schedule of sales.
+In Case A Ruth left the company two years ago, takes no part in running it, and could sell on any day. £500,000 out of £560,000 is 89% in one company, and nothing stands in her way. The answer is **“One holding they can sell and do not run”**, and the name is **Sell down on a schedule**: a schedule of sales.
 
-In Case B the shares are the same and so is the sum, but the rules of the staff scheme stop her selling for another eighteen months. The key’s answer is **“One holding they are not allowed to sell yet”**, and the name is **Cap the loss without selling**: she cannot sell, so she can only limit what she could lose while she waits.
+In Case B the shares are the same and so is the sum, but the rules of the staff scheme stop her selling for another eighteen months. The answer is **“One holding they are not allowed to sell yet”**, and the name is **Cap the loss without selling**: she cannot sell, so she can only limit what she could lose while she waits.
 
 The money, the company and the person are the same in both. Only the rule is different, and the rule is what decides the answer. That is why nobody can name a case from how much is in one company.
 
@@ -450,7 +450,7 @@ The money, the company and the person are the same in both. Only the rule is dif
 
 Is anything stopping the person selling, and until when?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Sell down on a schedule | Cap the loss without selling |
 |---|---|---|
@@ -467,7 +467,7 @@ Is anything stopping the person selling, and until when?
 
 ### 14. What makes it safe to keep most of your money in a business you run
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 14 of 50*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 14 of 50*
 
 [reviewers only: card kind `term`, id `w3-term-threesupports`]
 
@@ -494,11 +494,11 @@ From here on, *the three supports* means the three things in Lucía’s case. A 
 
 ### 15. A business the owner runs, without what makes keeping it safe
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 15 of 50*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 15 of 50*
 
 [reviewers only: card kind `meet`, id `w3-meet-supports`]
 
-The key’s next answer is the other side of that case. When one of the three things in Lucía’s case is missing, a business that is most of what someone has stops being a sound choice and becomes a risk.
+The next answer is the other side of that case. When one of the three things in Lucía’s case is missing, a business that is most of what someone has stops being a sound choice and becomes a risk.
 
 *Femi and the roofing firm*
 
@@ -523,17 +523,17 @@ Femi has all three missing, which makes the shape easy to see. One missing is en
 
 **What you must be able to point to.** A business the person runs day to day that is most of what they own, and at least one of the three supports missing. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What one thing could take most of it?”**
+**The question:** **“What one thing could take most of it?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“A business they run, with a support missing”**
+**Its answer for a case like this one:** **“A business they run, with a support missing”**
 
-The key’s answer is **“A business they run, with a support missing”**, and the name of what to do about it is **Put the three supports in place**. It says what the fix is: build what is missing, and what is to be built is *the three supports*.
+The answer is **“A business they run, with a support missing”**, and the name of what to do about it is **Put the three supports in place**. It says what the fix is: build what is missing, and what is to be built is *the three supports*.
 
 The name says nothing against running a business, or against having most of what you own in it.
 
 ### 16. Put the three supports in place: the same thing in a different story
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 16 of 50*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 16 of 50*
 
 [reviewers only: card kind `again`, id `w3-again-supports`]
 
@@ -568,7 +568,7 @@ Both are cases of **“A business they run, with a support missing”**: the own
 
 ### 17. Put the three supports in place: what it is like
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 17 of 50*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 17 of 50*
 
 [reviewers only: card kind `portrait`, id `w3-portrait-supports`]
 
@@ -608,13 +608,13 @@ Fifth, check all three again once a year, because they can slip: a loan is taken
 
 ### 18. A question about a new case
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 18 of 50*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 18 of 50*
 
 [reviewers only: card kind `check`, id `w3-check-supports`]
 
 > Dmitri, 63, owns and runs the garage he opened, worth £550,000, which is most of the £600,000 he owns. He has £5,000 in the bank, and the rest, £45,000, is tools and a van. His household spends £28,000 a year. He has never borrowed against the garage.
 
-**The key asks:** **“What one thing could take most of it?”** Which of the answers you have met so far fits this case?
+**The question:** **“What one thing could take most of it?”** Which of the answers you have met so far fits this case?
 
 - One holding they can sell and do not run
 - One holding they are not allowed to sell yet
@@ -630,7 +630,7 @@ Fifth, check all three again once a year, because they can slip: a loan is taken
 
 ### 19. Sell down on a schedule or Put the three supports in place: telling them apart
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 19 of 50*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 19 of 50*
 
 [reviewers only: card kind `lookalike`, id `w3-look-diversify-supports`]
 
@@ -652,9 +652,9 @@ You have now met two answers that both start from one holding that is most of wh
 
 **Why this one and not the other**
 
-In Case A Tariq handed the day-to-day running to a new manager last year and takes no part in it, and nothing stops him selling. The key’s answer is **“One holding they can sell and do not run”**, and the name is **Sell down on a schedule**: a schedule of sales. Selling costs him no job.
+In Case A Tariq handed the day-to-day running to a new manager last year and takes no part in it, and nothing stops him selling. The answer is **“One holding they can sell and do not run”**, and the name is **Sell down on a schedule**: a schedule of sales. Selling costs him no job.
 
-In Case B the company and the sum are the same, but he still runs it every day. His other money is £40,000 and his household spends £35,000 a year, so only about fourteen months are covered. The key’s answer is **“A business they run, with a support missing”**, and the name is **Put the three supports in place**. He cannot sell in steps without giving up his work, and the problem is not that he holds too much of it but that nothing stands round it.
+In Case B the company and the sum are the same, but he still runs it every day. His other money is £40,000 and his household spends £35,000 a year, so only about fourteen months are covered. The answer is **“A business they run, with a support missing”**, and the name is **Put the three supports in place**. He cannot sell in steps without giving up his work, and the problem is not that he holds too much of it but that nothing stands round it.
 
 So the question that separates them is not how much he owns or how well the company is doing. It is whether he runs it.
 
@@ -662,7 +662,7 @@ So the question that separates them is not how much he owns or how well the comp
 
 Does the person do the work of running it, or does someone else?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Sell down on a schedule | Put the three supports in place |
 |---|---|---|
@@ -673,11 +673,11 @@ Does the person do the work of running it, or does someone else?
 
 ### 20. One big thing the pot depends on, already made safe
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 20 of 50*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 20 of 50*
 
 [reviewers only: card kind `meet`, id `w3-meet-safe`]
 
-In every case so far something was missing, or in the way. The key’s next answer is for the opposite: a business the person runs, most of what they have, and nothing missing round it.
+In every case so far something was missing, or in the way. The next answer is for the opposite: a business the person runs, most of what they have, and nothing missing round it.
 
 *Hugo and the timber yard*
 
@@ -693,7 +693,7 @@ Stripped of its story, the case is this:
 
 Compare Hugo with Femi and Naomi. The first question finds the same thing in all three: one business that the person runs, most of what they own. What is different is what stands round it. Hugo has *the three supports*, all three, in numbers: £100,000 ÷ £33,000 is just over three years; his other money is in funds that hold thousands of companies; and no lender has his shares.
 
-So nothing needs doing about the yard. This is a real answer, and the key gives it a name so that it can be said as plainly as the others. A person can say: “Yes, most of what I have is in one business, and it is looked after.”
+So nothing needs doing about the yard. This is a real answer, and it has a name so that it can be said as plainly as the others. A person can say: “Yes, most of what I have is in one business, and it is looked after.”
 
 There is a reason to say it firmly. Every fix has a price. If an adviser told Hugo to sell half the yard, he would pay tax and fees on the sale, he would give up part of a business he runs and likes, and he would be paying to guard against a bad year that his three years of savings, his spread of funds and his clean ownership already guard against. The money would be spent on a problem the case does not show.
 
@@ -703,17 +703,17 @@ This answer covers more than a business with three supports. It is the name for 
 
 **What you must be able to point to.** One thing that most of the pot depends on, or that could bring a claim or force a sale, and the case showing it already made safe: a business the person runs with all three supports in place, insurance well above any claim the case shows could come, properties or businesses already held in separate companies, or a loan that is modest, at a fixed rate and cannot be demanded back while it is paid. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What one thing could take most of it?”**
+**The question:** **“What one thing could take most of it?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“Nothing: it is already made safe”**
+**Its answer for a case like this one:** **“Nothing: it is already made safe”**
 
-The key’s answer is **“Nothing: it is already made safe”**, and the name is **Safe as it stands**. It is the one name in this unit that says nothing needs doing.
+The answer is **“Nothing: it is already made safe”**, and the name is **Safe as it stands**. It is the one name in this unit that says nothing needs doing.
 
 It does not say that nothing could go wrong. Something could: the yard could still have a bad year. The name says that the case shows the one thing already made safe, so that a bad year would not force anything.
 
 ### 21. Safe as it stands: the same thing in a different story
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 21 of 50*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 21 of 50*
 
 [reviewers only: card kind `again`, id `w3-again-safe`]
 
@@ -748,7 +748,7 @@ What the two share is that the case shows the one thing already looked after, an
 
 ### 22. Safe as it stands: what it is like
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 22 of 50*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 22 of 50*
 
 [reviewers only: card kind `portrait`, id `w3-portrait-safe`]
 
@@ -787,13 +787,13 @@ Fourth, if someone offers a fix, ask what problem it answers that your numbers d
 
 ### 23. A question about a new case
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 23 of 50*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 23 of 50*
 
 [reviewers only: card kind `check`, id `w3-check-safe`]
 
 > Wanjiru, 49, owns and runs a pharmacy worth £400,000, which is most of the £700,000 she owns. £210,000 is in funds that hold thousands of companies and £90,000 is in savings, and her household spends £30,000 a year. The pharmacy has no loans.
 
-**The key asks:** **“What one thing could take most of it?”** Which of the answers you have met so far fits this case?
+**The question:** **“What one thing could take most of it?”** Which of the answers you have met so far fits this case?
 
 - One holding they can sell and do not run
 - One holding they are not allowed to sell yet
@@ -811,7 +811,7 @@ Fourth, if someone offers a fix, ask what problem it answers that your numbers d
 
 ### 24. Put the three supports in place or Safe as it stands: telling them apart
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 24 of 50*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 24 of 50*
 
 [reviewers only: card kind `lookalike`, id `w3-look-supports-safe`]
 
@@ -833,9 +833,9 @@ These two answers are the nearest neighbours in the unit. In both, the person ru
 
 **Why this one and not the other**
 
-In Case A she has all three of *the three supports*: the rest is spread over funds, £150,000 of savings covers more than three years of the £40,000 she spends, and no bank holds her shares as security. The key’s answer is **“Nothing: it is already made safe”**, and the name is **Safe as it stands**. Nothing needs doing.
+In Case A she has all three of *the three supports*: the rest is spread over funds, £150,000 of savings covers more than three years of the £40,000 she spends, and no bank holds her shares as security. The answer is **“Nothing: it is already made safe”**, and the name is **Safe as it stands**. Nothing needs doing.
 
-In Case B one sentence is different: last year she borrowed £120,000 for new ovens, and the bank holds her shares in the bakery as security. The bank can now take the shares if she cannot keep up the payments, so a lender could decide the future of the bakery. The key’s answer is **“A business they run, with a support missing”**, and the name is **Put the three supports in place**: one of the three has gone, and the first thing to do is to deal with the loan.
+In Case B one sentence is different: last year she borrowed £120,000 for new ovens, and the bank holds her shares in the bakery as security. The bank can now take the shares if she cannot keep up the payments, so a lender could decide the future of the bakery. The answer is **“A business they run, with a support missing”**, and the name is **Put the three supports in place**: one of the three has gone, and the first thing to do is to deal with the loan.
 
 One sentence changed the answer. That is the point of the pair: the story is the same bakery, and the answer follows the three things, not the story.
 
@@ -843,7 +843,7 @@ One sentence changed the answer. That is the point of the pair: the story is the
 
 Can you point to each of the three: everything else spread, several years of spending held outside, and no loan against the shares? Which, if any, is missing?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Put the three supports in place | Safe as it stands |
 |---|---|---|
@@ -860,11 +860,11 @@ Can you point to each of the three: everything else spread, several years of spe
 
 ### 25. A claim that could cost far more than the insurance pays
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 25 of 50*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 25 of 50*
 
 [reviewers only: card kind `meet`, id `w3-meet-insure`]
 
-The next answers are about harm that one person could be ordered to pay for, the other thing the key’s first answer covers besides holdings. It starts with the simplest case: someone with insurance, and a demand that could be bigger.
+The next answers are about harm that one person could be ordered to pay for, the other thing the first answer covers besides holdings. It starts with the simplest case: someone with insurance, and a demand that could be bigger.
 
 *Hari and the pool*
 
@@ -889,11 +889,11 @@ Insurance is not unlimited and it is not for everything. It will not pay for har
 
 **What you must be able to point to.** Something in the person’s life that could bring a claim against them (a car, a home, a pool, a property rented out), and a claim that could be far bigger than the insurance they hold. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What one thing could take most of it?”**
+**The question:** **“What one thing could take most of it?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“A claim bigger than the insurance they hold”**
+**Its answer for a case like this one:** **“A claim bigger than the insurance they hold”**
 
-The key’s answer is **“A claim bigger than the insurance they hold”**, and the name of what to do about it is **Insure the big loss**. In the name, “the big loss” is the part of *a claim* that the insurance you hold would leave unpaid, and “insure” is what to do about it.
+The answer is **“A claim bigger than the insurance they hold”**, and the name of what to do about it is **Insure the big loss**. In the name, “the big loss” is the part of *a claim* that the insurance you hold would leave unpaid, and “insure” is what to do about it.
 
 The name does not say that *a claim* will come. It says that if one did, there would be a gap.
 
@@ -901,7 +901,7 @@ You may also hear this called “umbrella insurance” or “risk transfer”. T
 
 ### 26. Insure the big loss: the same thing in a different story
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 26 of 50*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 26 of 50*
 
 [reviewers only: card kind `again`, id `w3-again-insure`]
 
@@ -924,7 +924,7 @@ The pieces you can tap:
 
 **Shown as soon as you tap.** The words are “ A lawyer she knows says that a crash that leaves a young person unable to work for life can lead to a demand for £5,000,000.”.
 - If you tapped “Alicia, 47, has just added her seventeen-year-old son to her car insurance.”: That is what could bring *a claim*. It does not show how big *a claim* could be next to the insurance.
-- If you tapped “ The policy pays up to £1,000,000 if the car harms other people.”: That is the insurance she holds. It is only half of the comparison the key asks for.
+- If you tapped “ The policy pays up to £1,000,000 if the car harms other people.”: That is the insurance she holds. It is only half of the comparison the question asks for.
 - If you tapped “ Alicia owns a house worth £500,000 and has £150,000 in savings.”: That is what *a claim* could reach. It is not the words that show how big the claim could be.
 
 **What the two share**
@@ -938,7 +938,7 @@ That is what **“A claim bigger than the insurance they hold”** names: someth
 
 ### 27. Insure the big loss: what it is like
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 27 of 50*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 27 of 50*
 
 [reviewers only: card kind `portrait`, id `w3-portrait-insure`]
 
@@ -977,13 +977,13 @@ Fourth, check again once a year, and whenever something changes: a new driver, a
 
 ### 28. A question about a new case
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 28 of 50*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 28 of 50*
 
 [reviewers only: card kind `check`, id `w3-check-insure`]
 
 > Rob, 60, owns a holiday cottage worth £450,000 and has £200,000 in savings. His landlord’s insurance pays up to £400,000 if a guest is hurt. A guest who falls on the steep stairs and cannot work again could ask for £1,800,000.
 
-**The key asks:** **“What one thing could take most of it?”** Which of the answers you have met so far fits this case?
+**The question:** **“What one thing could take most of it?”** Which of the answers you have met so far fits this case?
 
 - One holding they can sell and do not run
 - One holding they are not allowed to sell yet
@@ -1003,7 +1003,7 @@ Fourth, check again once a year, and whenever something changes: a new driver, a
 
 ### 29. Insure the big loss or Safe as it stands: telling them apart
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 29 of 50*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 29 of 50*
 
 [reviewers only: card kind `lookalike`, id `w3-look-insure-safe`]
 
@@ -1025,9 +1025,9 @@ You have now met two answers in which insurance is in the case. They are easy to
 
 **Why this one and not the other**
 
-In Case A the insurance pays up to £250,000 and a demand could be £1,500,000: a gap of £1,250,000, which is nearly twice the value of Dana’s house. The key’s answer is **“A claim bigger than the insurance they hold”**, and the name is **Insure the big loss**.
+In Case A the insurance pays up to £250,000 and a demand could be £1,500,000: a gap of £1,250,000, which is nearly twice the value of Dana’s house. The answer is **“A claim bigger than the insurance they hold”**, and the name is **Insure the big loss**.
 
-In Case B the demand could still be £1,500,000, but the insurance pays up to £2,500,000, which is £1,000,000 more than the demand. Nothing could be left unpaid, so no claim could reach the house. The key’s answer is **“Nothing: it is already made safe”**, and the name is **Safe as it stands**: the thing that could bring *a claim* is already made safe, and there is nothing to buy.
+In Case B the demand could still be £1,500,000, but the insurance pays up to £2,500,000, which is £1,000,000 more than the demand. Nothing could be left unpaid, so no claim could reach the house. The answer is **“Nothing: it is already made safe”**, and the name is **Safe as it stands**: the thing that could bring *a claim* is already made safe, and there is nothing to buy.
 
 The dog, the house, the lawyer and the possible demand are the same in both. Only the insurance limit changes, and it is the comparison that decides, not the presence of a risk.
 
@@ -1035,7 +1035,7 @@ The dog, the house, the lawyer and the possible demand are the same in both. Onl
 
 Put the biggest demand that the case says could come next to what the insurance pays. Which is bigger, and by how much?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Insure the big loss | Safe as it stands |
 |---|---|---|
@@ -1046,7 +1046,7 @@ Put the biggest demand that the case says could come next to what the insurance 
 
 ### 30. A business that the law treats as a person
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 30 of 50*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 30 of 50*
 
 [reviewers only: card kind `term`, id `w3-term-company`]
 
@@ -1073,7 +1073,7 @@ A business of this kind is *a limited company*. From here on, when a case says a
 
 ### 31. Several things that could bring a claim, all held in one name
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 31 of 50*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 31 of 50*
 
 [reviewers only: card kind `meet`, id `w3-meet-entity`]
 
@@ -1100,11 +1100,11 @@ There is a price, and the answer is right only where the saving is larger than t
 
 **What you must be able to point to.** Several properties or businesses that could each bring a claim, all held in the person’s own name, so that one claim could reach the rest and their home. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What one thing could take most of it?”**
+**The question:** **“What one thing could take most of it?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“Several properties or businesses, all in their own name”**
+**Its answer for a case like this one:** **“Several properties or businesses, all in their own name”**
 
-The key’s answer is **“Several properties or businesses, all in their own name”**, and the name of what to do about it is **Separate companies for each property or business**. The name says what the fix is, and the “each” in it is the point: one company for each property or business, and not one company for all of them.
+The answer is **“Several properties or businesses, all in their own name”**, and the name of what to do about it is **Separate companies for each property or business**. The name says what the fix is, and the “each” in it is the point: one company for each property or business, and not one company for all of them.
 
 One company for all of them would put *a claim* on one back in reach of the rest.
 
@@ -1112,7 +1112,7 @@ You may also hear this called “ring-fencing” or “entity separation”. Tho
 
 ### 32. Separate companies for each property or business: the same thing in a different story
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 32 of 50*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 32 of 50*
 
 [reviewers only: card kind `again`, id `w3-again-entity`]
 
@@ -1149,7 +1149,7 @@ That is what **“Several properties or businesses, all in their own name”** n
 
 ### 33. Separate companies for each property or business: what it is like
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 33 of 50*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 33 of 50*
 
 [reviewers only: card kind `portrait`, id `w3-portrait-entity`]
 
@@ -1182,20 +1182,20 @@ In your own life, look at the deeds and the accounts: whose name is on each prop
 **What to do when you meet it**
 
 First, list every property and business, with its value and the name it is held in, and mark your own home.
-Second, check the insurance on each. Cover that is too small is the cheaper first fix, and when it is in the case the key’s answer is **“A claim bigger than the insurance they hold”**.
+Second, check the insurance on each. Cover that is too small is the cheaper first fix, and when it is in the case the answer is **“A claim bigger than the insurance they hold”**.
 Third, ask a solicitor for a written quote for putting each into its own company: the one-off cost, the yearly cost, any tax and fees on moving it, and what each lender would require, such as a personal promise to repay.
 Fourth, set the yearly cost against what each company would keep out of reach, and go ahead only where the saving is clearly larger. Below some size it is not worth it.
 Fifth, keep each company’s money and affairs apart from your own: a company run as if it were the owner’s purse can lose its protection.
 
 ### 34. A question about a new case
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 34 of 50*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 34 of 50*
 
 [reviewers only: card kind `check`, id `w3-check-entity`]
 
 > Gil, 68, retired from building. He owns four houses that he rents out to students, and the house he lives in, all in his own name. Together they are worth £1,300,000, and any tenant who is badly hurt could bring a claim against him.
 
-**The key asks:** **“What one thing could take most of it?”** Which of the answers you have met so far fits this case?
+**The question:** **“What one thing could take most of it?”** Which of the answers you have met so far fits this case?
 
 - One holding they can sell and do not run
 - One holding they are not allowed to sell yet
@@ -1217,7 +1217,7 @@ Fifth, keep each company’s money and affairs apart from your own: a company ru
 
 ### 35. Insure the big loss or Separate companies for each property or business: telling them apart
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 35 of 50*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 35 of 50*
 
 [reviewers only: card kind `lookalike`, id `w3-look-insure-entity`]
 
@@ -1239,17 +1239,17 @@ These two answers both come from the same two things: claims, and what *a claim*
 
 **Why this one and not the other**
 
-In Case A she has one flat. A lawyer says a tenant badly hurt on its stairs could win £1,200,000, and her insurance pays up to £250,000: a gap of £950,000. The key’s answer is **“A claim bigger than the insurance they hold”**, and the name is **Insure the big loss**. With one flat there is nothing to separate it from.
+In Case A she has one flat. A lawyer says a tenant badly hurt on its stairs could win £1,200,000, and her insurance pays up to £250,000: a gap of £950,000. The answer is **“A claim bigger than the insurance they hold”**, and the name is **Insure the big loss**. With one flat there is nothing to separate it from.
 
-In Case B she has five flats and her house, all in her own name, and the case says nothing about *a claim* bigger than the insurance. A demand on one could reach the other four and her home. The key’s answer is **“Several properties or businesses, all in their own name”**, and the name is **Separate companies for each property or business**.
+In Case B she has five flats and her house, all in her own name, and the case says nothing about *a claim* bigger than the insurance. A demand on one could reach the other four and her home. The answer is **“Several properties or businesses, all in their own name”**, and the name is **Separate companies for each property or business**.
 
-The first case is about the size of one claim. The second is about the reach of any claim. A case can show both at once, and the key then decides between them.
+The first case is about the size of one claim. The second is about the reach of any claim. A case can show both at once, and when it does, the answer is the first.
 
 **How to tell them apart**
 
 Does the case show a demand bigger than the insurance, or only how the properties are held?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Insure the big loss | Separate companies for each property or business |
 |---|---|---|
@@ -1258,19 +1258,19 @@ Does the case show a demand bigger than the insurance, or only how the propertie
 | What you must be able to point to | Something in the person’s life that could bring a claim against them (a car, a home, a pool, a property rented out), and a claim that could be far bigger than the insurance they hold | Several properties or businesses that could each bring a claim, all held in the person’s own name, so that one claim could reach the rest and their home |
 
 
-### 36. Several properties in one name, and the key’s answer is still the insurance
+### 36. Several properties in one name, and the answer is still the insurance
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 36 of 50*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 36 of 50*
 
 [reviewers only: card kind `exception`, id `w3-exc-insure`]
 
-A case with several properties in one name looks like **Separate companies for each property or business**. This card shows a case in which the properties are exactly that, and the key gives a different answer.
+A case with several properties in one name looks like **Separate companies for each property or business**. This card shows a case in which the properties are exactly that, and the answer is a different one.
 
 *Kwame and the old stairs*
 
 > Kwame, 59, owns five flats and the house he lives in, all in his own name, worth £1,400,000 together. A lawyer who looked at the stairs in the oldest flat says that a tenant badly hurt in a fall there could win £2,000,000. Kwame’s landlord insurance pays up to £300,000 on any one claim.
 
-Kwame has five flats and his own home, all in his own name. That is what **Separate companies for each property or business** usually looks like, and it is true. Yet the key’s answer for this case is **“A claim bigger than the insurance they hold”**, and the name is **Insure the big loss**.
+Kwame has five flats and his own home, all in his own name. That is what **Separate companies for each property or business** usually looks like, and it is true. Yet the answer for this case is **“A claim bigger than the insurance they hold”**, and the name is **Insure the big loss**.
 
 **You are asked:** This looks like **Separate companies for each property or business**. Before you read why it is **Insure the big loss**, tap the words in the case that settle it.
 
@@ -1280,7 +1280,7 @@ The pieces you can tap:
 3. “ Kwame’s landlord insurance pays up to £300,000 on any one claim.”
 
 **Shown as soon as you tap.** The words are “ A lawyer who looked at the stairs in the oldest flat says that a tenant badly hurt in a fall there could win £2,000,000.”.
-- If you tapped “Kwame, 59, owns five flats and the house he lives in, all in his own name, worth £1,400,000 together.”: That is what makes the case look like several properties in one name, and it is true. The key asks what could take most of it, and *a claim* that the insurance cannot meet comes first.
+- If you tapped “Kwame, 59, owns five flats and the house he lives in, all in his own name, worth £1,400,000 together.”: That is what makes the case look like several properties in one name, and it is true. The question is what could take most of it, and *a claim* that the insurance cannot meet comes first.
 - If you tapped “ Kwame’s landlord insurance pays up to £300,000 on any one claim.”: That is the other half of the comparison, and it matters only because of the sentence before it. The words that settle the case are the ones that show the size of the claim.
 
 **Why this is Insure the big loss and not Separate companies for each property or business**
@@ -1289,26 +1289,26 @@ Look at what the case shows besides the properties. A lawyer says *a claim* on t
 
 Companies would cut the reach of *a claim*, as they did for Bo. But they would not pay it, and the flat with the stairs would still be in the claim’s way. More cover would pay it. It is the cheaper first fix, because its cost is a premium and not a set of companies, and it deals with the size of the claim, which is what threatens most of what he has.
 
-The key decides this, and it is a decision and not a fact of nature: real advisers differ about which to do first. The key gives the claim bigger than the insurance, because insurance pays the claim itself and costs less than setting up and running six companies.
+This is a decision and not a fact of nature: real advisers differ about which to do first. The answer is the claim bigger than the insurance, because insurance pays the claim itself and costs less than setting up and running six companies.
 
 **How to tell them apart**
 
 Does the case show a demand bigger than the insurance, or only how the properties are held?
 
-When a case shows both **“Several properties or businesses, all in their own name”** and a claim that could be far bigger than the insurance they hold, the key’s answer is **“A claim bigger than the insurance they hold”**.
+When a case shows both **“Several properties or businesses, all in their own name”** and a claim that could be far bigger than the insurance they hold, the answer is **“A claim bigger than the insurance they hold”**.
 
 The insurance comes first. When it is well above the biggest claim, what is left to say about the properties depends on the case as it then stands.
 
 
-*End of part 3. You can stop here; your place is kept. Next: part 4, A loan, the key’s question, two whole cases, then the drill.*
+*End of part 3. You can stop here; your place is kept. Next: part 4, A loan, the question, two whole cases, then the drill.*
 
 ---
 
-## Part 4 of 4: A loan, the key’s question, two whole cases, then the drill
+## Part 4 of 4: A loan, the question, two whole cases, then the drill
 
 ### 37. A loan that could force a sale at the worst moment
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 37 of 50*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 37 of 50*
 
 [reviewers only: card kind `meet`, id `w3-meet-deleverage`]
 
@@ -1337,17 +1337,17 @@ A loan is not a bad thing in itself. It is the lender’s power that matters, an
 
 **What you must be able to point to.** A loan a lender could use to force a sale: one they can demand back, or ask more to be put up against, at any time; one whose rate can jump; or one that is large against what it is borrowed against. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What one thing could take most of it?”**
+**The question:** **“What one thing could take most of it?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“A loan the lender could use to force a sale”**
+**Its answer for a case like this one:** **“A loan the lender could use to force a sale”**
 
-The key’s answer is **“A loan the lender could use to force a sale”**, and the name of what to do about it is **Borrow modestly, on safe terms**. The name is the fix: a loan that is modest in size, on terms that stay safe.
+The answer is **“A loan the lender could use to force a sale”**, and the name of what to do about it is **Borrow modestly, on safe terms**. The name is the fix: a loan that is modest in size, on terms that stay safe.
 
 The name does not say that borrowing is wrong, or that the lender is acting badly. It says that the loan, as it stands, hands the lender a power that could force a sale.
 
 ### 38. Borrow modestly, on safe terms: the same thing in a different story
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 38 of 50*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 38 of 50*
 
 [reviewers only: card kind `again`, id `w3-again-deleverage`]
 
@@ -1377,12 +1377,12 @@ Ian’s loan and Sunil’s loan look different: a broker lending against shares,
 
 Sunil’s numbers show it. At 3%, interest on £800,000 is £24,000 a year. At 7% it is £56,000, which is £32,000 more, out of rents of £70,000. The rents are the same. Only the rate moved. If it went higher, or the flats’ value fell below the loan, he could be forced to sell whatever the flats were earning.
 
-That is what **“A loan the lender could use to force a sale”** names, and the key’s own words for what to point to are these: a loan a lender could use to force a sale: one they can demand back, or ask more to be put up against, at any time; one whose rate can jump; or one that is large against what it is borrowed against.
+That is what **“A loan the lender could use to force a sale”** names, and the words to point to are these: a loan a lender could use to force a sale: one they can demand back, or ask more to be put up against, at any time; one whose rate can jump; or one that is large against what it is borrowed against.
 
 
 ### 39. Borrow modestly, on safe terms: what it is like
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 39 of 50*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 39 of 50*
 
 [reviewers only: card kind `portrait`, id `w3-portrait-deleverage`]
 
@@ -1421,7 +1421,7 @@ Fourth, do not replace a loan that can be demanded back with another on the same
 
 ### 40. A question about a new case
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 40 of 50*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 40 of 50*
 
 [reviewers only: card kind `check`, id `w3-check-deleverage`]
 
@@ -1436,7 +1436,7 @@ The pieces you can tap:
 
 **Shown as soon as you tap**
 
-- If you are right: “Right: ‘ The bank can change the rate every six months’.” The bank can change the rate every six months, so the cost of the loan can jump, and the loan is large against the flat: £420,000 out of £500,000 is 84%. Either is enough to point to. The key’s answer for this case is **“A loan the lender could use to force a sale”**, and the name is **Borrow modestly, on safe terms**.
+- If you are right: “Right: ‘ The bank can change the rate every six months’.” The bank can change the rate every six months, so the cost of the loan can jump, and the loan is large against the flat: £420,000 out of £500,000 is 84%. Either is enough to point to. The answer for this case is **“A loan the lender could use to force a sale”**, and the name is **Borrow modestly, on safe terms**.
 - If you miss: “The words are ‘ The bank can change the rate every six months’.” The same reason follows, and then a line about the piece you tapped:
   - “Maribel, 66, owns a flat worth £500,000 and a £60,000 pension. She owes £420,000 on the flat.”: That shows the size of the loan, 84% of the flat. The words asked for show the bank’s power to change the terms.
   - “, and the loan must be repaid in full at the end of five years.”: That is a second way the lender could cause trouble. The words asked for are the ones about the rate.
@@ -1444,7 +1444,7 @@ The pieces you can tap:
 
 ### 41. Borrow modestly, on safe terms or Safe as it stands: telling them apart
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 41 of 50*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 41 of 50*
 
 [reviewers only: card kind `lookalike`, id `w3-look-deleverage-safe`]
 
@@ -1466,9 +1466,9 @@ You have now met two answers about loans. They are easy to mix up, because a loa
 
 **Why this one and not the other**
 
-In Case A Jon owes £400,000 on a £480,000 flat, which is 83%. The rate follows the bank’s, and the bank can ask for more money to be put up if the flat’s value falls. A fall of 10% in the flat, to £432,000, would take the loan to 93% of its value. The key’s answer is **“A loan the lender could use to force a sale”**, and the name is **Borrow modestly, on safe terms**.
+In Case A Jon owes £400,000 on a £480,000 flat, which is 83%. The rate follows the bank’s, and the bank can ask for more money to be put up if the flat’s value falls. A fall of 10% in the flat, to £432,000, would take the loan to 93% of its value. The answer is **“A loan the lender could use to force a sale”**, and the name is **Borrow modestly, on safe terms**.
 
-In Case B Jon owes £150,000 on the same flat, which is 31%. The rate is fixed for fifteen years, and the bank cannot demand the money back while he makes the payments. The flat could fall by half, to £240,000, and the loan would be 63% of its value, with the bank still unable to act. The key’s answer is **“Nothing: it is already made safe”**, and the name is **Safe as it stands**.
+In Case B Jon owes £150,000 on the same flat, which is 31%. The rate is fixed for fifteen years, and the bank cannot demand the money back while he makes the payments. The flat could fall by half, to £240,000, and the loan would be 63% of its value, with the bank still unable to act. The answer is **“Nothing: it is already made safe”**, and the name is **Safe as it stands**.
 
 The flat and the person are the same. The size of the loan and the bank’s rights are what differ, and they decide.
 
@@ -1476,7 +1476,7 @@ The flat and the person are the same. The size of the loan and the bank’s righ
 
 How large is the loan against what it is secured on, and what is the lender allowed to do?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Borrow modestly, on safe terms | Safe as it stands |
 |---|---|---|
@@ -1485,19 +1485,19 @@ How large is the loan against what it is secured on, and what is the lender allo
 | What you must be able to point to | A loan a lender could use to force a sale: one they can demand back, or ask more to be put up against, at any time; one whose rate can jump; or one that is large against what it is borrowed against | One thing that most of the pot depends on, or that could bring a claim or force a sale, and the case showing it already made safe: a business the person runs with all three supports in place, insurance well above any claim the case shows could come, properties or businesses already held in separate companies, or a loan that is modest, at a fixed rate and cannot be demanded back while it is paid |
 
 
-### 42. A loan the lender could use, and the key’s answer is the business
+### 42. A loan the lender could use, and the answer is the business
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 42 of 50*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 42 of 50*
 
 [reviewers only: card kind `exception`, id `w3-exc-supports`]
 
-A loan whose lender can demand the money back looks like **Borrow modestly, on safe terms**. This card shows a case in which that loan is there, and the key gives a different answer.
+A loan whose lender can demand the money back looks like **Borrow modestly, on safe terms**. This card shows a case in which that loan is there, and the answer is a different one.
 
 *Reza and the tyre shops*
 
 > Reza, 52, runs a small chain of tyre shops worth £900,000, which is most of the £1,100,000 he owns. Two years ago he borrowed £200,000 from a bank to open a new shop. The loan agreement says the bank can demand the money back if the takings in any three months fall below £60,000, and that the bank may take his shares in the company if he cannot repay it. His savings are £15,000 and his household spends £36,000 a year; the rest of what he owns is £185,000 in funds that hold thousands of companies.
 
-Reza has a loan that his bank can demand back, and that gives the bank his shares if he cannot pay. That is exactly what **Borrow modestly, on safe terms** points to. Yet the key’s answer for this case is **“A business they run, with a support missing”**, and the name is **Put the three supports in place**.
+Reza has a loan that his bank can demand back, and that gives the bank his shares if he cannot pay. That is exactly what **Borrow modestly, on safe terms** points to. Yet the answer for this case is **“A business they run, with a support missing”**, and the name is **Put the three supports in place**.
 
 **You are asked:** This looks like **Borrow modestly, on safe terms**. Before you read why it is **Put the three supports in place**, tap the words in the case that settle it.
 
@@ -1516,15 +1516,15 @@ Ask what else the case shows. Reza runs the business, and it is most of what he 
 
 There is more missing. His savings of £15,000 cover about five months of the £36,000 he spends a year, which is a second gap. Putting *the three supports* in place means ending the loan against the shares and building the reserve, and ending the loan is what deals with the bank’s power.
 
-Compare Ian, in the case of **Borrow modestly, on safe terms**. His loan was against shares in a company that he did not run. Reza’s loan is part of a business that he runs, and when the loan is part of a business that the owner runs, the key gives the answer for the business.
+Compare Ian, in the case of **Borrow modestly, on safe terms**. His loan was against shares in a company that he did not run. Reza’s loan is part of a business that he runs, and when the loan is part of a business that the owner runs, the answer is the one for the business.
 
 **How to tell them apart**
 
 Is what the loan is secured on a business that the person runs?
 
-When a case shows both **“A loan the lender could use to force a sale”** and a business they run, with one of the three supports missing, the key’s answer is **“A business they run, with a support missing”**.
+When a case shows both **“A loan the lender could use to force a sale”** and a business they run, with one of the three supports missing, the answer is **“A business they run, with a support missing”**.
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Borrow modestly, on safe terms | Put the three supports in place |
 |---|---|---|
@@ -1532,12 +1532,12 @@ When a case shows both **“A loan the lender could use to force a sale”** and
 | What one thing could take most of it? | A loan the lender could use to force a sale | A business they run, with a support missing |
 | What you must be able to point to | A loan a lender could use to force a sale: one they can demand back, or ask more to be put up against, at any time; one whose rate can jump; or one that is large against what it is borrowed against | A business the person runs day to day that is most of what they own, and at least one of the three supports missing |
 
-When a case shows both a loan the lender could use and a business the person runs, the key’s answer is **“A business they run, with a support missing”**: the loan is one of the three gaps.
+When a case shows both a loan the lender could use and a business the person runs, the answer is **“A business they run, with a support missing”**: the loan is one of the three gaps.
 
 
 ### 43. A wrong idea: “my house is my best investment, so it cannot be a risk”
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 43 of 50*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 43 of 50*
 
 [reviewers only: card kind `refute`, id `w3-refute-house`]
 
@@ -1545,11 +1545,11 @@ The picture of **Borrow modestly, on safe terms** said that a loan is usually ta
 
 **The idea, as people say it:** My house is my best investment. It has gone up every year since I bought it, so there is no risk in having most of what I own in it, even with the loan.
 
-**This is wrong. What it says about the past may be true, and it answers a different question from the one the key asks.**
+**This is wrong. What it says about the past may be true, and it answers a different question from the one that matters here.**
 
 **What is right instead**
 
-How well a house has done tells you what happened. The key’s question is about what could happen to most of what a person has. A house that has risen for years can still be most of what someone owns, and a loan on it can still be one that a lender could use.
+How well a house has done tells you what happened. The question is about what could happen to most of what a person has. A house that has risen for years can still be most of what someone owns, and a loan on it can still be one that a lender could use.
 
 Take a house worth £400,000 with a loan of £340,000 whose rate follows the bank’s. The loan is 85% of the value. If prices in the area fell by 15%, the house would be worth £340,000, exactly what is owed, and nothing would be left of what the owner put in. If the rate then jumped from 3% to 7%, the interest would go from £10,200 a year to £23,800.
 
@@ -1558,17 +1558,17 @@ None of that needs the house to have been a bad buy. A good buy and a risky shap
 
 ### 44. The question you have been answering all along
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 44 of 50*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 44 of 50*
 
 [reviewers only: card kind `question`, id `w3-q-shock`]
 
-Since the first case you have seen the key’s question at the foot of each new answer, with one answer under it. This card puts the question and its seven answers in one place, as the key shows them, and says why the key asks it.
+Since the first case you have seen the question at the foot of each new answer, with one answer under it. This card puts the question and its seven answers in one place, and says why it is asked.
 
-**The key asks:** **“What one thing could take most of it?”**
+**The question:** **“What one thing could take most of it?”**
 
 **What it is for.** Tells apart six ways one thing could take most of the pot at once, and the case where that one thing is already made safe.
 
-**Its answers, exactly as the key shows them**
+**Its answers**
 
 Each answer leads to one name, and so rules out the other six.
 
@@ -1614,16 +1614,16 @@ If you cannot point to the words, you do not have an answer yet.
 
 **When two answers both seem to fit**
 
-Two pairs of answers can both seem to fit one case, and the key has a rule for each. A demand bigger than the insurance wins over properties in one name. A business the person runs with a support missing wins over a loan the lender could use, because a loan against a business’s shares is one of *the three supports*. Each pair has been put side by side earlier in this unit.
+Two pairs of answers can both seem to fit one case, and there is a rule for each. A demand bigger than the insurance wins over properties in one name. A business the person runs with a support missing wins over a loan the lender could use, because a loan against a business’s shares is one of *the three supports*. Each pair has been put side by side earlier in this unit.
 
 - Sell down on a schedule or Cap the loss without selling: Is anything stopping the person selling, and until when?
 - Sell down on a schedule or Put the three supports in place: Does the person do the work of running it, or does someone else?
 - Put the three supports in place or Safe as it stands: Can you point to each of the three: everything else spread, several years of spending held outside, and no loan against the shares? Which, if any, is missing?
 - Insure the big loss or Safe as it stands: Put the biggest demand that the case says could come next to what the insurance pays. Which is bigger, and by how much?
-- Insure the big loss or Separate companies for each property or business: Does the case show a demand bigger than the insurance, or only how the properties are held? When a case shows both **“Several properties or businesses, all in their own name”** and a claim that could be far bigger than the insurance they hold, the key’s answer is **“A claim bigger than the insurance they hold”**.
+- Insure the big loss or Separate companies for each property or business: Does the case show a demand bigger than the insurance, or only how the properties are held? When a case shows both **“Several properties or businesses, all in their own name”** and a claim that could be far bigger than the insurance they hold, the answer is **“A claim bigger than the insurance they hold”**.
 - Separate companies for each property or business or Safe as it stands: Whose name is each property or business held in?
 - Borrow modestly, on safe terms or Safe as it stands: How large is the loan against what it is secured on, and what is the lender allowed to do?
-- Borrow modestly, on safe terms or Put the three supports in place: Is what the loan is secured on a business that the person runs? When a case shows both **“A loan the lender could use to force a sale”** and a business they run, with one of the three supports missing, the key’s answer is **“A business they run, with a support missing”**.
+- Borrow modestly, on safe terms or Put the three supports in place: Is what the loan is secured on a business that the person runs? When a case shows both **“A loan the lender could use to force a sale”** and a business they run, with one of the three supports missing, the answer is **“A business they run, with a support missing”**.
 
 **Separate companies for each property or business beside Safe as it stands**
 
@@ -1636,13 +1636,13 @@ Two pairs of answers can both seem to fit one case, and the key has a rule for e
 
 ### 45. A question about a new case
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 45 of 50*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 45 of 50*
 
 [reviewers only: card kind `check`, id `w3-check-shock`]
 
 > Rosario, 54, owns four flats that she rents out, each in a company of its own that she owns, and the house she lives in is in her own name. Each flat is worth £220,000, her house is worth £450,000, and she has £110,000 in savings. A tenant who is hurt in one flat can claim only against the company that owns that flat.
 
-**The key asks:** **“What one thing could take most of it?”**
+**The question:** **“What one thing could take most of it?”**
 
 - One holding they can sell and do not run
 - One holding they are not allowed to sell yet
@@ -1666,11 +1666,11 @@ Two pairs of answers can both seem to fit one case, and the key has a rule for e
 
 ### 46. A whole case, from the first question to the name
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 46 of 50*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 46 of 50*
 
 [reviewers only: card kind `worked`, id `w3-worked-solar`]
 
-You have the seven answers and the key’s question about them. Before you run a case yourself, watch two being run from the top, in the order the key asks. You are not asked anything until the end of each.
+You have the seven answers and the question about them. Before you run a case yourself, watch two being run from the top, in the order the questions are asked. You are not asked anything until the end of each.
 
 *Elena and the solar shares*
 
@@ -1720,17 +1720,17 @@ Still possible: **Sell down on a schedule**. Ruled out: **Cap the loss without s
 
 For **“One holding they are not allowed to sell yet”** you must be able to point to this: one company’s shares that are most of what the person owns, and a rule that stops them selling for a set time, such as after the company first sells its shares to the public, or for shares paid as part of their wages. Elena’s case has shares paid as part of wages, but it says that nothing in the rules stops her selling them. A rule is the whole of that answer, and here it is missing.
 
-It is the question from Ruth. Is anything stopping the person selling, and until when? Here nothing stops her, so the key’s answer is **“One holding they can sell and do not run”**, and the name is **Sell down on a schedule**.
+It is the question from Ruth. Is anything stopping the person selling, and until when? Here nothing stops her, so the answer is **“One holding they can sell and do not run”**, and the name is **Sell down on a schedule**.
 
 **Does it look like a case you know?**
 
-The key has given its answer. Now take a second look of a different kind: does this case look like one you know? It should bring back Meena and the bus shares: one company that is most of what the person has, nothing in the way of selling, and no part in running it.
+You have the answer. Now take a second look of a different kind: does this case look like one you know? It should bring back Meena and the bus shares: one company that is most of what the person has, nothing in the way of selling, and no part in running it.
 
-Here the key and the likeness agree, so the answer stands. The key’s questions come first, because they make you point at words in the case. The likeness is only a second look. When the two disagree, do not pick the one you prefer. Go back to the key’s question and find the words in the case that answer it. The second whole case shows how.
+Here the answer and the likeness agree, so it stands. The questions come first, because they make you point at words in the case. The likeness is only a second look. When the two disagree, do not pick the one you prefer. Go back to the question and find the words in the case that answer it. The second whole case shows how.
 
 ### 47. A second whole case, where the loudest thing points the wrong way
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 47 of 50*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 47 of 50*
 
 [reviewers only: card kind `worked`, id `w3-worked-brewery`]
 
@@ -1764,7 +1764,7 @@ Answer: **“Nothing: it is already made safe”**
 
 Now ask what stands round the business. Greta has “£420,000 in funds that hold thousands of companies” and “which is six years of the £30,000 her household spends” and “No bank holds her shares in the brewery as security”. The funds are £420,000 spread across thousands of companies, the savings are £180,000 against £30,000 a year, which is six years, and no bank holds her shares as security. All of *the three supports* are in place.
 
-Nothing is missing, so nothing needs doing. The key’s answer is **“Nothing: it is already made safe”**.
+Nothing is missing, so nothing needs doing. The answer is **“Nothing: it is already made safe”**.
 
 Still possible: **Safe as it stands**. Ruled out: **Sell down on a schedule**, **Cap the loss without selling**, **Put the three supports in place**, **Insure the big loss**, **Separate companies for each property or business** and **Borrow modestly, on safe terms**.
 
@@ -1784,20 +1784,20 @@ Still possible: **Safe as it stands**. Ruled out: **Sell down on a schedule**, *
 
 For **“A business they run, with a support missing”** you must be able to point to this: a business the person runs day to day that is most of what they own, and at least one of the three supports missing. Greta runs the brewery and it is most of what she owns, and that is as far as the likeness goes. Not one of *the three supports* is missing: she has six years of spending, funds that hold thousands of companies, and no loan on her shares.
 
-It is the question from Alma. Can you point to each of the three: everything else spread, several years of spending held outside, and no loan against the shares? Which, if any, is missing? Here nothing has gone from the three, so the key’s answer is **“Nothing: it is already made safe”**, and the name is **Safe as it stands**. Selling half the brewery would cost tax and fees and part of her work, and it would not make any of the three stronger.
+It is the question from Alma. Can you point to each of the three: everything else spread, several years of spending held outside, and no loan against the shares? Which, if any, is missing? Here nothing has gone from the three, so the answer is **“Nothing: it is already made safe”**, and the name is **Safe as it stands**. Selling half the brewery would cost tax and fees and part of her work, and it would not make any of the three stronger.
 
 **Does it look like a case you know?**
 
-Now the second look: does this case look like one you know? A business owner with most of what she has in the business, and a friend who says it is dangerous, may bring back Femi first, and Femi’s case was **“A business they run, with a support missing”**. So here the likeness and the key seem to disagree.
+Now the second look: does this case look like one you know? A business owner with most of what she has in the business, and a friend who says it is dangerous, may bring back Femi first, and Femi’s case was **“A business they run, with a support missing”**. So here the likeness and the answer seem to disagree.
 
-When that happens, go back to the key’s question and find the words in the case that answer it. They are “£420,000 in funds that hold thousands of companies” and “which is six years of the £30,000 her household spends” and “No bank holds her shares in the brewery as security”. Femi’s case had nothing like them: his savings covered five months, nothing was spread, and a bank held his shares. Greta’s case has the opposite. The case this one really looks like is Hugo’s, and the key’s answer stands.
+When that happens, go back to the question and find the words in the case that answer it. They are “£420,000 in funds that hold thousands of companies” and “which is six years of the £30,000 her household spends” and “No bank holds her shares in the brewery as security”. Femi’s case had nothing like them: his savings covered five months, nothing was spread, and a bank held his shares. Greta’s case has the opposite. The case this one really looks like is Hugo’s, and the answer stands.
 
 ### The drill
 
 The cards are out of view from here, and every case is new. The drill has five stages. Cases that are easy to mix up are placed next to each other on purpose. This is meant to feel harder than the questions between the cards: telling look-alikes apart side by side is what makes the difference stick. Two of the cases come from an earlier unit, without being labelled. Nothing here is graded. A miss only decides what comes back. What you miss is asked again before the drill ends, and every name comes back on later days with a new case.
 
 
-#### Stage 1 of 5. The key’s answers are shown for each case. Give the name that goes with them. This stage practises one thing: which name goes with which answer.
+#### Stage 1 of 5. The answers are shown for each case. Give the name that goes with them. This stage practises one thing: which name goes with which answer.
 
 The names offered are the seven this unit teaches: Sell down on a schedule / Cap the loss without selling / Put the three supports in place / Safe as it stands / Insure the big loss / Separate companies for each property or business / Borrow modestly, on safe terms.
 
@@ -1817,7 +1817,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Cap the loss without selling**: A rule that stopped her selling would make it the answer for shares that cannot be sold yet. Her broker says she may sell whenever she likes, so nothing stands in the way.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Cap the loss without selling**, the look-alike card’s lines follow: In both, one company’s shares are most of what the person has, and nothing is said about prices in general. In **Sell down on a schedule** nothing stops the person selling the shares, so the fix is to sell them in steps. In **Cap the loss without selling** a rule stops them selling for a set time, so the fix can only limit the loss while they wait. Is anything stopping the person selling, and until when?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “One big holding, free to sell, that the owner does not run” (one tap opens the card).
 
 **Drill item 2 of 55**
@@ -1836,7 +1836,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Sell down on a schedule**: Shares that are most of what a person has are often ones they are free to sell. Here the studio’s rule stops him, so a schedule of sales cannot begin.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Sell down on a schedule**, the look-alike card’s lines follow: In both, one company’s shares are most of what the person has, and nothing is said about prices in general. In **Sell down on a schedule** nothing stops the person selling the shares, so the fix is to sell them in steps. In **Cap the loss without selling** a rule stops them selling for a set time, so the fix can only limit the loss while they wait. Is anything stopping the person selling, and until when?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “One big holding that cannot be sold yet” (one tap opens the card).
 
 **Drill item 3 of 55**
@@ -1855,7 +1855,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Safe as it stands**: The same business could be safe if everything round it were in place. Here the savings are short and the bank holds the shares, so something is missing.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Safe as it stands**, the look-alike card’s lines follow: In both, the person runs a business that is most of what they have. In **Put the three supports in place** at least one of *the three supports* is missing. In **Safe as it stands** all three are in place. Can you point to each of the three: everything else spread, several years of spending held outside, and no loan against the shares? Which, if any, is missing?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “A business the owner runs, without what makes keeping it safe” (one tap opens the card).
 
 **Drill item 4 of 55**
@@ -1874,7 +1874,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Put the three supports in place**: She runs a business that is most of what she owns, which is why the case looks like a business with a gap. But nothing is missing, so there is no gap to name.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Put the three supports in place**, the look-alike card’s lines follow: In both, the person runs a business that is most of what they have. In **Put the three supports in place** at least one of *the three supports* is missing. In **Safe as it stands** all three are in place. Can you point to each of the three: everything else spread, several years of spending held outside, and no loan against the shares? Which, if any, is missing?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “One big thing the pot depends on, already made safe” (one tap opens the card).
 
 **Drill item 5 of 55**
@@ -1892,8 +1892,8 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **Insure the big loss**.” What one thing could take most of it? **A claim bigger than the insurance they hold.** The riding school could bring *a claim*, and the insurance has a limit: “His insurance pays up to £300,000 if a rider is hurt” and “a rider who can never walk again could be awarded £4,000,000”. £4,000,000 less £300,000 leaves £3,700,000, far more than the £750,000 Colm owns.
   - Why not **Separate companies for each property or business**: The case does not say that several properties are held in one name. It shows one business and a gap between *a claim* and its cover.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
-  - If you chose **Separate companies for each property or business**, the look-alike card’s lines follow: In both, *a claim* is in the case, and what a demand could reach is most of what the person owns. In **Insure the big loss** the case shows *a claim* that could be far bigger than the insurance. In **Separate companies for each property or business** the case shows several properties or businesses in one name, so a demand on any one could reach the rest. When a case shows both, the key chooses **Insure the big loss**. Does the case show a demand bigger than the insurance, or only how the properties are held?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose **Separate companies for each property or business**, the look-alike card’s lines follow: In both, *a claim* is in the case, and what a demand could reach is most of what the person owns. In **Insure the big loss** the case shows *a claim* that could be far bigger than the insurance. In **Separate companies for each property or business** the case shows several properties or businesses in one name, so a demand on any one could reach the rest. When a case shows both, the answer is **Insure the big loss**. Does the case show a demand bigger than the insurance, or only how the properties are held?
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “A claim that could cost far more than the insurance pays” (one tap opens the card).
 
 **Drill item 6 of 55**
@@ -1911,8 +1911,8 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **Separate companies for each property or business**.” What one thing could take most of it? **Several properties or businesses, all in their own name.** Several properties could each bring *a claim*, and they are all in one name: “with every one of them in her own name” and “A customer who is badly hurt in any of the shops could bring a claim against her”. A demand on one shop could reach the other two and her home.
   - Why not **Insure the big loss**: The case does not say what any insurance pays, or how big *a claim* could be. It shows only how the properties are held.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
-  - If you chose **Insure the big loss**, the look-alike card’s lines follow: In both, *a claim* is in the case, and what a demand could reach is most of what the person owns. In **Insure the big loss** the case shows *a claim* that could be far bigger than the insurance. In **Separate companies for each property or business** the case shows several properties or businesses in one name, so a demand on any one could reach the rest. When a case shows both, the key chooses **Insure the big loss**. Does the case show a demand bigger than the insurance, or only how the properties are held?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose **Insure the big loss**, the look-alike card’s lines follow: In both, *a claim* is in the case, and what a demand could reach is most of what the person owns. In **Insure the big loss** the case shows *a claim* that could be far bigger than the insurance. In **Separate companies for each property or business** the case shows several properties or businesses in one name, so a demand on any one could reach the rest. When a case shows both, the answer is **Insure the big loss**. Does the case show a demand bigger than the insurance, or only how the properties are held?
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “Several things that could bring a claim, all held in one name” (one tap opens the card).
 
 **Drill item 7 of 55**
@@ -1931,7 +1931,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Safe as it stands**: A safe loan could not be topped up at the lender’s request. This one can, and the margin before the broker acts is small.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Safe as it stands**, the look-alike card’s lines follow: In both, there is a loan against something that is most of what the person has. In **Borrow modestly, on safe terms** the lender could force a sale: the loan is large against what it is secured on, or the lender can demand it back, or the rate can jump. In **Safe as it stands** the loan is modest, at a fixed rate, and cannot be demanded back while it is paid. How large is the loan against what it is secured on, and what is the lender allowed to do?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “A loan that could force a sale at the worst moment” (one tap opens the card).
 
 **Drill item 8 of 55**
@@ -1950,7 +1950,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Borrow modestly, on safe terms**: There is a loan against the thing that is most of what he owns, which is why it can look like a loan the lender could use. But the rate cannot jump and the bank cannot demand the money back.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Borrow modestly, on safe terms**, the look-alike card’s lines follow: In both, there is a loan against something that is most of what the person has. In **Borrow modestly, on safe terms** the lender could force a sale: the loan is large against what it is secured on, or the lender can demand it back, or the rate can jump. In **Safe as it stands** the loan is modest, at a fixed rate, and cannot be demanded back while it is paid. How large is the loan against what it is secured on, and what is the lender allowed to do?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “One big thing the pot depends on, already made safe” (one tap opens the card).
 
 #### Stage 2 of 5. One question at a time.
@@ -1974,7 +1974,7 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **Several properties or businesses, all in their own name.**” Several properties could each bring *a claim*, and they are all held in her own name: “All four are in her own name” and “A farm worker who is badly hurt on any of the farms could bring a claim against her”. A demand on one farm could reach the other two farms and her home, £1,400,000 in all. This answer leads to **Separate companies for each property or business**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **Nothing: it is already made safe**: The case does not say that any farm is held in a company of its own. All four are in one name, so *a claim* on one is not stopped at its edge.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 10 of 55**
@@ -1996,7 +1996,7 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **Nothing: it is already made safe.**” Several flats could each bring *a claim*, and the case shows each in *a limited company* of its own, already held apart: “each held in a separate company that she owns” and “A tenant who is hurt in one flat can claim only against the company that owns it”. A demand on one flat could reach £240,000 and no more, not the other four flats or her home. This answer leads to **Safe as it stands**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **Several properties or businesses, all in their own name**: Five flats could bring claims, which is why the case can look like several properties in one name. The case says each is in a company of its own, so *a claim* on one stops there.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 11 of 55**
@@ -2018,7 +2018,7 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **One holding they are not allowed to sell yet.**” One company’s shares are most of what he has, and a contract stops him selling them for a set time: “The sale contract says he may not sell any of them for three years”. This answer leads to **Cap the loss without selling**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **One holding they can sell and do not run**: He is not running the chain, and the shares are most of what he has, but he is not free to sell. A schedule of sales cannot start until the three years are over.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 12 of 55**
@@ -2040,7 +2040,7 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **A business they run, with a support missing.**” She runs a business that is most of what she owns, and at least one thing is missing round it: “Her savings are £30,000, and her household spends £60,000 a year” and “Everything else she owns is a £90,000 share in a flat in the same town as the practice”. £30,000 covers six months of £60,000 a year, and nothing is spread across many investments. This answer leads to **Put the three supports in place**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **Nothing: it is already made safe**: The business is the same shape as a safe one, but the savings are six months and not years, and the rest is one flat nearby.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 13 of 55**
@@ -2123,7 +2123,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Shown as soon as you answer**
 
-- The answer is: “Does the case show a demand bigger than the insurance, or only how the properties are held?” In both, *a claim* is in the case, and what a demand could reach is most of what the person owns. In **Insure the big loss** the case shows *a claim* that could be far bigger than the insurance. In **Separate companies for each property or business** the case shows several properties or businesses in one name, so a demand on any one could reach the rest. When a case shows both, the key chooses **Insure the big loss**. When a case shows both **“Several properties or businesses, all in their own name”** and a claim that could be far bigger than the insurance they hold, the key’s answer is **“A claim bigger than the insurance they hold”**.
+- The answer is: “Does the case show a demand bigger than the insurance, or only how the properties are held?” In both, *a claim* is in the case, and what a demand could reach is most of what the person owns. In **Insure the big loss** the case shows *a claim* that could be far bigger than the insurance. In **Separate companies for each property or business** the case shows several properties or businesses in one name, so a demand on any one could reach the rest. When a case shows both, the answer is **Insure the big loss**. When a case shows both **“Several properties or businesses, all in their own name”** and a claim that could be far bigger than the insurance they hold, the answer is **“A claim bigger than the insurance they hold”**.
 - If you chose “Put the biggest demand that the case says could come next to what the insurance pays. Which is bigger, and by how much?”: that question separates **Insure the big loss** and **Safe as it stands**.
 - If you chose “Whose name is each property or business held in?”: that question separates **Separate companies for each property or business** and **Safe as it stands**.
 - Taught on: “Insure the big loss or Separate companies for each property or business: telling them apart” (one tap opens the card).
@@ -2158,11 +2158,11 @@ Shown to you, with the words that decide each answer marked:
 
 **Shown as soon as you answer**
 
-- The answer is: “Is what the loan is secured on a business that the person runs?” In both, a loan could be used against the borrower, and what it is secured on is most of what they have. In **Put the three supports in place** the person runs the business, and a loan against its shares is one of the gaps. In **Borrow modestly, on safe terms** the loan is against something the person does not run. When a case shows both, the key chooses **Put the three supports in place**. When a case shows both **“A loan the lender could use to force a sale”** and a business they run, with one of the three supports missing, the key’s answer is **“A business they run, with a support missing”**.
+- The answer is: “Is what the loan is secured on a business that the person runs?” In both, a loan could be used against the borrower, and what it is secured on is most of what they have. In **Put the three supports in place** the person runs the business, and a loan against its shares is one of the gaps. In **Borrow modestly, on safe terms** the loan is against something the person does not run. When a case shows both, the answer is **Put the three supports in place**. When a case shows both **“A loan the lender could use to force a sale”** and a business they run, with one of the three supports missing, the answer is **“A business they run, with a support missing”**.
 - If you chose “Does the person do the work of running it, or does someone else?”: that question separates **Sell down on a schedule** and **Put the three supports in place**.
 - If you chose “Can you point to each of the three: everything else spread, several years of spending held outside, and no loan against the shares? Which, if any, is missing?”: that question separates **Put the three supports in place** and **Safe as it stands**.
 - If you chose “How large is the loan against what it is secured on, and what is the lender allowed to do?”: that question separates **Borrow modestly, on safe terms** and **Safe as it stands**.
-- Taught on: “A loan the lender could use, and the key’s answer is the business” (one tap opens the card).
+- Taught on: “A loan the lender could use, and the answer is the business” (one tap opens the card).
 
 **Drill item 20 of 55**
 
@@ -2300,12 +2300,12 @@ Shown to you, with the words that decide each answer marked:
 **Shown as soon as you answer**
 
 - If you are right: “Right: **Something taken out of it every year.**” Two charges come out of her money every year: “Each year her adviser's firm takes 1.3% of it, £3,250” and “the funds she holds take another 0.9%”. Nothing is said about a fall in prices, a sale or a death.
-- If you miss: “The answer is …”, the same reason, and then the line built from the key for the answer you chose.
-- Then, right or wrong: “This case leaves the part of the key you have been taught. The questions that follow this answer come in a part of the course you have not reached, so the case stops here.”
+- If you miss: “The answer is …”, the same reason, and then the line built from the answers’ own wording for the answer you chose.
+- Then, right or wrong: “The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.”
 
-#### Stage 3 of 5. The first answer is shown. Answer the rest, then give the name. From here on your route is marked as well as the name: a right name reached by a wrong answer on the way counts as a miss.
+#### Stage 3 of 5. The first answer is shown. Answer the rest, then give the name. From here on your answers on the way are marked as well as the name: a right name reached by a wrong answer counts as a miss.
 
-Each question is shown with all of its answers from the key, in the key’s order, and the names offered are the seven this unit teaches.
+Each question is shown with all of its answers, in order, and the names offered are the seven this unit teaches.
 
 **Drill item 28 of 55**
 
@@ -2322,10 +2322,10 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Put the three supports in place**: The farm is most of what he has, which is why a business with a gap can come to mind. But he does not run it, so there is no business of his own to put supports round.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - If you chose **A business they run, with a support missing**: The farm is most of what he has, which is why a business with a gap can come to mind. But he does not run it, so there is no business of his own to put supports round.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Put the three supports in place**, the look-alike card’s lines follow: In both, one holding is most of what the person has, and it may be doing very well. In **Sell down on a schedule** the person takes no part in running it and can sell. In **Put the three supports in place** the person runs the business day to day, and at least one thing that would make it safe is missing. Does the person do the work of running it, or does someone else?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “One big holding, free to sell, that the owner does not run” (one tap opens the card).
 
 **Drill item 29 of 55**
@@ -2343,10 +2343,10 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Sell down on a schedule**: The restaurant is most of what she owns, which is why a single large holding can come to mind. But she runs it, and she cannot sell down a business she works in without giving up her work.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - If you chose **One holding they can sell and do not run**: The restaurant is most of what she owns, which is why a single large holding can come to mind. But she runs it, and she cannot sell down a business she works in without giving up her work.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Sell down on a schedule**, the look-alike card’s lines follow: In both, one holding is most of what the person has, and it may be doing very well. In **Sell down on a schedule** the person takes no part in running it and can sell. In **Put the three supports in place** the person runs the business day to day, and at least one thing that would make it safe is missing. Does the person do the work of running it, or does someone else?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A business the owner runs, without what makes keeping it safe” (one tap opens the card).
 
 **Drill item 30 of 55**
@@ -2364,10 +2364,10 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Safe as it stands**: The insurance is in the case, which is why it can look looked after. But a limit of £1,000,000 is far below a demand of £6,000,000.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - If you chose **Nothing: it is already made safe**: The insurance is in the case, which is why it can look looked after. But a limit of £1,000,000 is far below a demand of £6,000,000.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Safe as it stands**, the look-alike card’s lines follow: In both, something in the person’s life could bring *a claim*, and insurance is in the case. In **Insure the big loss** the demand that could come is far bigger than the insurance. In **Safe as it stands** the insurance is well above any demand that could come. Put the biggest demand that the case says could come next to what the insurance pays. Which is bigger, and by how much?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A claim that could cost far more than the insurance pays” (one tap opens the card).
 
 **Drill item 31 of 55**
@@ -2385,15 +2385,15 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Insure the big loss**: A demand could come, which is why it can look like a gap. But the insurance is well above the largest claim the case says could come, so there is no gap.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - If you chose **A claim bigger than the insurance they hold**: A demand could come, which is why it can look like a gap. But the insurance is well above the largest claim the case says could come, so there is no gap.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Insure the big loss**, the look-alike card’s lines follow: In both, something in the person’s life could bring *a claim*, and insurance is in the case. In **Insure the big loss** the demand that could come is far bigger than the insurance. In **Safe as it stands** the insurance is well above any demand that could come. Put the biggest demand that the case says could come next to what the insurance pays. Which is bigger, and by how much?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “One big thing the pot depends on, already made safe” (one tap opens the card).
 
-#### Stage 4 of 5. No help. Answer every question in the key’s order, then give the name.
+#### Stage 4 of 5. No help. Answer every question in order, then give the name.
 
-Each question is shown with all of its answers from the key, in the key’s order, and the names offered are the seven this unit teaches.
+Each question is shown with all of its answers, in order, and the names offered are the seven this unit teaches.
 
 **Drill item 32 of 55**
 
@@ -2408,10 +2408,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **One thing most of it depends on.** One property is most of what she has: “owns a woodland estate worth £650,000, which is most of the £720,000 she has”. £650,000 out of £720,000 is 90%.
   - If you chose **One holding they are not allowed to sell yet**: A rule that stopped her selling would make it the answer for what cannot be sold yet. The case says nothing stops her.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Cap the loss without selling**, the look-alike card’s lines follow: In both, one company’s shares are most of what the person has, and nothing is said about prices in general. In **Sell down on a schedule** nothing stops the person selling the shares, so the fix is to sell them in steps. In **Cap the loss without selling** a rule stops them selling for a set time, so the fix can only limit the loss while they wait. Is anything stopping the person selling, and until when?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If a covenant stopped her selling for ten years, it would be **“One holding they are not allowed to sell yet”**; if she ran the estate herself, it would be **“A business they run, with a support missing”**.
 - Taught on: “One big holding, free to sell, that the owner does not run” (one tap opens the card).
 
@@ -2428,10 +2428,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **One thing most of it depends on.** One company’s shares are most of what he has: “He holds £240,000 of them, which is most of the £280,000 he has”. £240,000 out of £280,000 is 86%.
   - If you chose **One holding they can sell and do not run**: The shares are one company’s and most of what he has, but he is not free to sell them, and a schedule of sales needs that freedom.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Sell down on a schedule**, the look-alike card’s lines follow: In both, one company’s shares are most of what the person has, and nothing is said about prices in general. In **Sell down on a schedule** nothing stops the person selling the shares, so the fix is to sell them in steps. In **Cap the loss without selling** a rule stops them selling for a set time, so the fix can only limit the loss while they wait. Is anything stopping the person selling, and until when?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the bank let him sell each year’s shares at once, it would be **“One holding they can sell and do not run”**.
 - Taught on: “One big holding that cannot be sold yet” (one tap opens the card).
 
@@ -2448,10 +2448,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **One thing most of it depends on.** A business she runs is most of what she owns: “worth £580,000, which is most of the £860,000 she owns”. £580,000 out of £860,000 is 67%.
   - If you chose **Nothing: it is already made safe**: The rest is spread and nothing is borrowed against the shares, which is two of the three. The third is missing, and one is enough.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Safe as it stands**, the look-alike card’s lines follow: In both, the person runs a business that is most of what they have. In **Put the three supports in place** at least one of *the three supports* is missing. In **Safe as it stands** all three are in place. Can you point to each of the three: everything else spread, several years of spending held outside, and no loan against the shares? Which, if any, is missing?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If her savings were £130,000, which covers three years, nothing would be missing, and it would be **“Nothing: it is already made safe”**.
 - Taught on: “A business the owner runs, without what makes keeping it safe” (one tap opens the card).
 
@@ -2468,10 +2468,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **One thing most of it depends on.** A business he runs is most of what he owns: “worth £720,000, which is most of the £1,000,000 he owns”. £720,000 out of £1,000,000 is 72%.
   - If you chose **A business they run, with a support missing**: A business he runs that is most of what he owns is the same shape as a case with a gap. But nothing is missing, so there is no gap to name.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Put the three supports in place**, the look-alike card’s lines follow: In both, the person runs a business that is most of what they have. In **Put the three supports in place** at least one of *the three supports* is missing. In **Safe as it stands** all three are in place. Can you point to each of the three: everything else spread, several years of spending held outside, and no loan against the shares? Which, if any, is missing?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the clinics had borrowed £200,000 against their shares for new premises, it would be **“A business they run, with a support missing”**.
 - Taught on: “One big thing the pot depends on, already made safe” (one tap opens the card).
 
@@ -2488,10 +2488,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **One thing most of it depends on.** A demand could reach everything she owns: “a serious accident in the metal workshop could lead to a demand for £3,000,000”. £3,000,000 is nearly three times the £1,050,000 she has in all.
   - If you chose **Several properties or businesses, all in their own name**: A block of workshops can look like several properties, but it is one building, and the case is about *a claim* bigger than the insurance, not about how things are held.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **Separate companies for each property or business**, the look-alike card’s lines follow: In both, *a claim* is in the case, and what a demand could reach is most of what the person owns. In **Insure the big loss** the case shows *a claim* that could be far bigger than the insurance. In **Separate companies for each property or business** the case shows several properties or businesses in one name, so a demand on any one could reach the rest. When a case shows both, the key chooses **Insure the big loss**. Does the case show a demand bigger than the insurance, or only how the properties are held?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **Separate companies for each property or business**, the look-alike card’s lines follow: In both, *a claim* is in the case, and what a demand could reach is most of what the person owns. In **Insure the big loss** the case shows *a claim* that could be far bigger than the insurance. In **Separate companies for each property or business** the case shows several properties or businesses in one name, so a demand on any one could reach the rest. When a case shows both, the answer is **Insure the big loss**. Does the case show a demand bigger than the insurance, or only how the properties are held?
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the insurance paid up to £6,000,000, well above the largest claim, it would be **“Nothing: it is already made safe”**.
 - Taught on: “A claim that could cost far more than the insurance pays” (one tap opens the card).
 
@@ -2508,10 +2508,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **One thing most of it depends on.** A demand could reach everything he owns: “each in his own name, and he owns the house he lives in”. Together that is £1,700,000.
   - If you chose **A claim bigger than the insurance they hold**: The case says nothing about what any insurance pays or how big *a claim* could be. It shows only how the hotels are held.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **Insure the big loss**, the look-alike card’s lines follow: In both, *a claim* is in the case, and what a demand could reach is most of what the person owns. In **Insure the big loss** the case shows *a claim* that could be far bigger than the insurance. In **Separate companies for each property or business** the case shows several properties or businesses in one name, so a demand on any one could reach the rest. When a case shows both, the key chooses **Insure the big loss**. Does the case show a demand bigger than the insurance, or only how the properties are held?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **Insure the big loss**, the look-alike card’s lines follow: In both, *a claim* is in the case, and what a demand could reach is most of what the person owns. In **Insure the big loss** the case shows *a claim* that could be far bigger than the insurance. In **Separate companies for each property or business** the case shows several properties or businesses in one name, so a demand on any one could reach the rest. When a case shows both, the answer is **Insure the big loss**. Does the case show a demand bigger than the insurance, or only how the properties are held?
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If each hotel were in a company of its own, it would be **“Nothing: it is already made safe”**; if a lawyer said *a claim* could be £5,000,000 against insurance of £500,000, it would be **“A claim bigger than the insurance they hold”**.
 - Taught on: “Several things that could bring a claim, all held in one name” (one tap opens the card).
 
@@ -2528,10 +2528,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **One thing most of it depends on.** A demand could reach what he owns: “the largest demand that an accident at sea could lead to is £1,000,000”. £1,000,000 is more than the £690,000 he has in all.
   - If you chose **A claim bigger than the insurance they hold**: A demand could come, and *a claim* above £690,000 would be more than he owns. But the insurance is three times the largest claim, so there is no gap.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Insure the big loss**, the look-alike card’s lines follow: In both, something in the person’s life could bring *a claim*, and insurance is in the case. In **Insure the big loss** the demand that could come is far bigger than the insurance. In **Safe as it stands** the insurance is well above any demand that could come. Put the biggest demand that the case says could come next to what the insurance pays. Which is bigger, and by how much?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the insurance paid up to £300,000, it would be **“A claim bigger than the insurance they hold”**.
 - Taught on: “One big thing the pot depends on, already made safe” (one tap opens the card).
 
@@ -2548,10 +2548,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **One thing most of it depends on.** A loan could force a sale of the house, most of what he owns: “owes £420,000 on it”. £420,000 out of £450,000 is 93%.
   - If you chose **Nothing: it is already made safe**: It is a loan on a house, as a safe loan would be. But a safe loan is small and fixed, and this one is 93% of the value, at a rate that has just tripled.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Safe as it stands**, the look-alike card’s lines follow: In both, there is a loan against something that is most of what the person has. In **Borrow modestly, on safe terms** the lender could force a sale: the loan is large against what it is secured on, or the lender can demand it back, or the rate can jump. In **Safe as it stands** the loan is modest, at a fixed rate, and cannot be demanded back while it is paid. How large is the loan against what it is secured on, and what is the lender allowed to do?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If he owed £120,000 on the house at a rate fixed for fifteen years, it would be **“Nothing: it is already made safe”**.
 - Taught on: “A loan that could force a sale at the worst moment” (one tap opens the card).
 
@@ -2568,10 +2568,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **One thing most of it depends on.** The flat, with a loan on it, is most of what she has: “owns a flat worth £380,000, which is most of what she has, and owes £90,000 on it”.
   - If you chose **A loan the lender could use to force a sale**: A loan on the thing that is most of what she has can look like a loan the lender could use. But the rate cannot move and the bank has no right to ask for the money back.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Borrow modestly, on safe terms**, the look-alike card’s lines follow: In both, there is a loan against something that is most of what the person has. In **Borrow modestly, on safe terms** the lender could force a sale: the loan is large against what it is secured on, or the lender can demand it back, or the rate can jump. In **Safe as it stands** the loan is modest, at a fixed rate, and cannot be demanded back while it is paid. How large is the loan against what it is secured on, and what is the lender allowed to do?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the rate followed the bank’s and the loan were £340,000, it would be **“A loan the lender could use to force a sale”**.
 - Taught on: “One big thing the pot depends on, already made safe” (one tap opens the card).
 
@@ -2588,10 +2588,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **One thing most of it depends on.** One company’s shares are most of what he has: “worth £200,000, which is most of the £230,000 he has”. £200,000 out of £230,000 is 87%.
   - If you chose **One holding they can sell and do not run**: He holds one company’s shares that are most of what he has, and he does not run it, but he is not free to sell. The condition rules out a schedule of sales until he is 35.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Sell down on a schedule**, the look-alike card’s lines follow: In both, one company’s shares are most of what the person has, and nothing is said about prices in general. In **Sell down on a schedule** nothing stops the person selling the shares, so the fix is to sell them in steps. In **Cap the loss without selling** a rule stops them selling for a set time, so the fix can only limit the loss while they wait. Is anything stopping the person selling, and until when?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the gift had no conditions, it would be **“One holding they can sell and do not run”**.
 - Taught on: “One big holding that cannot be sold yet” (one tap opens the card).
 
@@ -2608,10 +2608,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **One thing most of it depends on.** One company’s shares are most of what he has: “worth £480,000, which is most of the £560,000 he has”. £480,000 out of £560,000 is 86%.
   - If you chose **A business they run, with a support missing**: The shares are a business’s, which is why a business with a gap can come to mind. But Rafael does not run it, so the question of what stands round a business he runs does not arise.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Put the three supports in place**, the look-alike card’s lines follow: In both, one holding is most of what the person has, and it may be doing very well. In **Sell down on a schedule** the person takes no part in running it and can sell. In **Put the three supports in place** the person runs the business day to day, and at least one thing that would make it safe is missing. Does the person do the work of running it, or does someone else?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the agreement said no owner could sell for ten years, it would be **“One holding they are not allowed to sell yet”**; if Rafael ran the vineyard himself, it would be **“A business they run, with a support missing”**.
 - Taught on: “One big holding, free to sell, that the owner does not run” (one tap opens the card).
 
@@ -2628,10 +2628,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **One thing most of it depends on.** A business he runs is most of what he owns: “worth £800,000, which is most of the £900,000 he owns”. £800,000 out of £900,000 is 89%.
   - If you chose **One holding they can sell and do not run**: The firm is most of what he owns, as a single holding would be. But he runs it himself, so selling down on a schedule would mean giving up his work, and the gaps round it come first.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Sell down on a schedule**, the look-alike card’s lines follow: In both, one holding is most of what the person has, and it may be doing very well. In **Sell down on a schedule** the person takes no part in running it and can sell. In **Put the three supports in place** the person runs the business day to day, and at least one thing that would make it safe is missing. Does the person do the work of running it, or does someone else?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If he had £150,000 in savings, the rest in funds that hold thousands of companies, and no loan against the shares, it would be **“Nothing: it is already made safe”**.
 - Taught on: “A business the owner runs, without what makes keeping it safe” (one tap opens the card).
 
@@ -2648,10 +2648,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **One thing most of it depends on.** A demand could reach everything they own: “a guest hurt on the steep staircase could be awarded £2,500,000”. £2,500,000 is more than three times the £730,000 they have in all.
   - If you chose **Nothing: it is already made safe**: Insurance is in the case, which can make it look looked after. But £300,000 is far below the £2,500,000 a lawyer says could come.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Safe as it stands**, the look-alike card’s lines follow: In both, something in the person’s life could bring *a claim*, and insurance is in the case. In **Insure the big loss** the demand that could come is far bigger than the insurance. In **Safe as it stands** the insurance is well above any demand that could come. Put the biggest demand that the case says could come next to what the insurance pays. Which is bigger, and by how much?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the policy paid up to £4,000,000, it would be **“Nothing: it is already made safe”**.
 - Taught on: “A claim that could cost far more than the insurance pays” (one tap opens the card).
 
@@ -2668,10 +2668,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **One thing most of it depends on.** A demand could reach everything they own: “all in their joint names”. £1,300,000 in all sits in one pair of names.
   - If you chose **A claim bigger than the insurance they hold**: The case says nothing about what any insurance pays or how big *a claim* could be. It shows only how everything is held.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **Insure the big loss**, the look-alike card’s lines follow: In both, *a claim* is in the case, and what a demand could reach is most of what the person owns. In **Insure the big loss** the case shows *a claim* that could be far bigger than the insurance. In **Separate companies for each property or business** the case shows several properties or businesses in one name, so a demand on any one could reach the rest. When a case shows both, the key chooses **Insure the big loss**. Does the case show a demand bigger than the insurance, or only how the properties are held?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **Insure the big loss**, the look-alike card’s lines follow: In both, *a claim* is in the case, and what a demand could reach is most of what the person owns. In **Insure the big loss** the case shows *a claim* that could be far bigger than the insurance. In **Separate companies for each property or business** the case shows several properties or businesses in one name, so a demand on any one could reach the rest. When a case shows both, the answer is **Insure the big loss**. Does the case show a demand bigger than the insurance, or only how the properties are held?
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If each property were in a company of its own, it would be **“Nothing: it is already made safe”**.
 - Taught on: “Several things that could bring a claim, all held in one name” (one tap opens the card).
 
@@ -2688,10 +2688,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **One thing most of it depends on.** Several rented houses could each bring *a claim*, which is why the first question gives its answer: “owns three rented houses worth £300,000 each”. The next question shows what stands round them.
   - If you chose **Several properties or businesses, all in their own name**: Three rented houses could each bring *a claim*, which is why it can look like several properties in one name. But each is in a company of its own, so *a claim* on one stops there.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Separate companies for each property or business**, the look-alike card’s lines follow: In both, several properties or businesses are in the case, and each could bring *a claim*. In **Separate companies for each property or business** they are all held in the person’s own name, so one demand could reach the rest. In **Safe as it stands** each is already held in a company of its own, so a demand stops at the edge of that company. Whose name is each property or business held in?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the three houses were in his own name, it would be **“Several properties or businesses, all in their own name”**.
 - Taught on: “One big thing the pot depends on, already made safe” (one tap opens the card).
 
@@ -2708,10 +2708,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **One thing most of it depends on.** A loan could force a sale of the shops, most of what he owns: “owes £720,000 on them”. £720,000 out of £800,000 is 90%.
   - If you chose **Nothing: it is already made safe**: A loan is in the case, as it is in a safe case. But a safe loan is small and cannot be demanded back while it is paid, and this one is 90% of the value and due in full.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Safe as it stands**, the look-alike card’s lines follow: In both, there is a loan against something that is most of what the person has. In **Borrow modestly, on safe terms** the lender could force a sale: the loan is large against what it is secured on, or the lender can demand it back, or the rate can jump. In **Safe as it stands** the loan is modest, at a fixed rate, and cannot be demanded back while it is paid. How large is the loan against what it is secured on, and what is the lender allowed to do?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If he owed £200,000 at a rate fixed for fifteen years, with no right for the bank to demand it back while it is paid, it would be **“Nothing: it is already made safe”**.
 - Taught on: “A loan that could force a sale at the worst moment” (one tap opens the card).
 
@@ -2724,15 +2724,15 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - If you are right: “Right: **Put the three supports in place**.” What one thing could take most of it? **A business they run, with a support missing.** She runs the business, and the loan is against its shares: “runs the pharmacy company she bought” and “which holds her shares in the company as security” and “Her savings are £20,000, and her household spends £40,000 a year”. That is one of *the three supports* missing, and her savings, about six months, are a second. The bank’s power to demand the money back is part of the same answer.
-  - Why not **Borrow modestly, on safe terms**: A loan the lender could use is in the case, and it looks like the answer for a loan. But the loan is against the shares of a business she runs, and the key gives the answer for the business.
+  - Why not **Borrow modestly, on safe terms**: A loan the lender could use is in the case, and it looks like the answer for a loan. But the loan is against the shares of a business she runs, and the answer is the one for the business.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **One thing most of it depends on.** A business she runs is most of what she owns: “worth £450,000, which is most of the £520,000 she owns”. £450,000 out of £520,000 is 87%.
-  - If you chose **A loan the lender could use to force a sale**: You chose **A loan the lender could use to force a sale**. This case does show that. It also shows a business they run, with one of the three supports missing, and when a case shows both, the key’s answer is **A business they run, with a support missing**.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **Borrow modestly, on safe terms**, the look-alike card’s lines follow: In both, a loan could be used against the borrower, and what it is secured on is most of what they have. In **Put the three supports in place** the person runs the business, and a loan against its shares is one of the gaps. In **Borrow modestly, on safe terms** the loan is against something the person does not run. When a case shows both, the key chooses **Put the three supports in place**. Is what the loan is secured on a business that the person runs?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *Ian and the broker’s loan*, which was **Borrow modestly, on safe terms**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose **A loan the lender could use to force a sale**: You chose **A loan the lender could use to force a sale**. This case does show that. It also shows a business they run, with one of the three supports missing, and when a case shows both, the answer is **A business they run, with a support missing**.
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **Borrow modestly, on safe terms**, the look-alike card’s lines follow: In both, a loan could be used against the borrower, and what it is secured on is most of what they have. In **Put the three supports in place** the person runs the business, and a loan against its shares is one of the gaps. In **Borrow modestly, on safe terms** the loan is against something the person does not run. When a case shows both, the answer is **Put the three supports in place**. Is what the loan is secured on a business that the person runs?
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *Ian and the broker’s loan*, which was **Borrow modestly, on safe terms**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If she did not run the pharmacy, and the loan were against shares in it that she held as an investment, it would be **“A loan the lender could use to force a sale”**.
 - Taught on: “A business the owner runs, without what makes keeping it safe” (one tap opens the card).
 
@@ -2749,11 +2749,11 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **One thing most of it depends on.** A loan could force a sale of the building, most of what he owns: “owes £600,000 on the building”. £600,000 out of £800,000 is 75%.
   - If you chose **A business they run, with a support missing**: A restaurant that is most of what he has, with a loan, brings back a business owner with a gap. But Kemal does not run the restaurant: his brother does. The loan is against a building he owns.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **Put the three supports in place**, the look-alike card’s lines follow: In both, a loan could be used against the borrower, and what it is secured on is most of what they have. In **Put the three supports in place** the person runs the business, and a loan against its shares is one of the gaps. In **Borrow modestly, on safe terms** the loan is against something the person does not run. When a case shows both, the key chooses **Put the three supports in place**. Is what the loan is secured on a business that the person runs?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *Femi and the roofing firm*, which was **Put the three supports in place**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **Put the three supports in place**, the look-alike card’s lines follow: In both, a loan could be used against the borrower, and what it is secured on is most of what they have. In **Put the three supports in place** the person runs the business, and a loan against its shares is one of the gaps. In **Borrow modestly, on safe terms** the loan is against something the person does not run. When a case shows both, the answer is **Put the three supports in place**. Is what the loan is secured on a business that the person runs?
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *Femi and the roofing firm*, which was **Put the three supports in place**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If Kemal ran the restaurant himself, and the loan were against his shares in it, it would be **“A business they run, with a support missing”**.
 - Taught on: “A loan that could force a sale at the worst moment” (one tap opens the card).
 
@@ -2765,16 +2765,16 @@ Each question is shown with all of its answers from the key, in the key’s orde
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Insure the big loss**.” What one thing could take most of it? **A claim bigger than the insurance they hold.** One claim could be far bigger than the insurance: “a tenant badly hurt in a fall in the top flat could win £2,500,000” and “Her insurance pays up to £400,000 on any one claim”. £2,500,000 less £400,000 leaves £2,100,000 uncovered. The flats in one name are in the case too, and when a case shows both, the key chooses the claim.
+- If you are right: “Right: **Insure the big loss**.” What one thing could take most of it? **A claim bigger than the insurance they hold.** One claim could be far bigger than the insurance: “a tenant badly hurt in a fall in the top flat could win £2,500,000” and “Her insurance pays up to £400,000 on any one claim”. £2,500,000 less £400,000 leaves £2,100,000 uncovered. The flats in one name are in the case too, and when a case shows both, the answer is the claim.
   - Why not **Separate companies for each property or business**: Four flats and a home all in one name is what the answer for properties in one name looks like, and it is true here. But the case also shows *a claim* far bigger than the insurance, and that comes first.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **One thing most of it depends on.** A demand could reach everything she owns: “a tenant badly hurt in a fall in the top flat could win £2,500,000”. £2,500,000 is more than the £1,500,000 she has in all.
-  - If you chose **Several properties or businesses, all in their own name**: You chose **Several properties or businesses, all in their own name**. This case does show that. It also shows a claim that could be far bigger than the insurance they hold, and when a case shows both, the key’s answer is **A claim bigger than the insurance they hold**.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **Separate companies for each property or business**, the look-alike card’s lines follow: In both, *a claim* is in the case, and what a demand could reach is most of what the person owns. In **Insure the big loss** the case shows *a claim* that could be far bigger than the insurance. In **Separate companies for each property or business** the case shows several properties or businesses in one name, so a demand on any one could reach the rest. When a case shows both, the key chooses **Insure the big loss**. Does the case show a demand bigger than the insurance, or only how the properties are held?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *Chioma’s properties*, which was **Separate companies for each property or business**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose **Several properties or businesses, all in their own name**: You chose **Several properties or businesses, all in their own name**. This case does show that. It also shows a claim that could be far bigger than the insurance they hold, and when a case shows both, the answer is **A claim bigger than the insurance they hold**.
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **Separate companies for each property or business**, the look-alike card’s lines follow: In both, *a claim* is in the case, and what a demand could reach is most of what the person owns. In **Insure the big loss** the case shows *a claim* that could be far bigger than the insurance. In **Separate companies for each property or business** the case shows several properties or businesses in one name, so a demand on any one could reach the rest. When a case shows both, the answer is **Insure the big loss**. Does the case show a demand bigger than the insurance, or only how the properties are held?
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *Chioma’s properties*, which was **Separate companies for each property or business**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If the insurance paid up to £4,000,000 and each flat were in a company of its own, it would be **“Nothing: it is already made safe”**.
 - Taught on: “A claim that could cost far more than the insurance pays” (one tap opens the card).
 
@@ -2791,11 +2791,11 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **One thing most of it depends on.** A demand could reach what he owns: “the largest demand that a pool accident could lead to is £1,500,000”. £1,500,000 is more than the £1,100,000 he has in all.
   - If you chose **A claim bigger than the insurance they hold**: A pool and a house bring back the case of a gap between *a claim* and the cover. But here the cover is more than three times the largest demand, so there is no gap.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Insure the big loss**, the look-alike card’s lines follow: In both, something in the person’s life could bring *a claim*, and insurance is in the case. In **Insure the big loss** the demand that could come is far bigger than the insurance. In **Safe as it stands** the insurance is well above any demand that could come. Put the biggest demand that the case says could come next to what the insurance pays. Which is bigger, and by how much?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *Hari and the pool*, which was **Insure the big loss**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *Hari and the pool*, which was **Insure the big loss**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If the cover were £500,000, it would be **“A claim bigger than the insurance they hold”**.
 - Taught on: “One big thing the pot depends on, already made safe” (one tap opens the card).
 
@@ -2816,8 +2816,8 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - If you are right: “Right: **A fall in prices it is not ready for.**” The case shows bills met by selling holdings whose prices swing, with nothing set aside, in a falling market: “she sells £1,500 of them each month, with nothing in cash” and “prices fell by 28%”. Each sale takes place at a lower price than before.
-- If you miss: “The answer is …”, the same reason, and then the line built from the key for the answer you chose.
-- Then, right or wrong: “This case leaves the part of the key you have been taught. The questions that follow this answer come in a part of the course you have not reached, so the case stops here.”
+- If you miss: “The answer is …”, the same reason, and then the line built from the answers’ own wording for the answer you chose.
+- Then, right or wrong: “The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.”
 
 #### Last stage. Each of these is something a person might say that uses one of this unit’s names, or reasons in one of its ways. Each has a fault. The first is worked for you. For the rest, answer before the fault is shown.
 
@@ -2839,7 +2839,7 @@ Each question is shown with all of its answers from the key, in the key’s orde
 
 **The answer:** A business they run, with a support missing.
 - The fault: The claim treats knowing the firm as the whole of safety. Knowing it well helps in choosing it, and it does nothing about what comes from outside: a rival, a fire, a bad stretch for the whole trade. What the speaker describes is a business he runs that is most of what he owns, with £15,000 of savings and the rest in a firm that would suffer in the same bad year. At least one of *the three supports* is missing, and he says so himself.
-- The claim, put right (always the last thing shown): I run this firm and I know it well. Nearly everything I own is in it, with £15,000 in the bank and the rest in a second firm like it. In the key’s words that is **“A business they run, with a support missing”**. What to do about it is to build what is missing, not to say that I know the firm.
+- The claim, put right (always the last thing shown): I run this firm and I know it well. Nearly everything I own is in it, with £15,000 in the bank and the rest in a second firm like it. That is **“A business they run, with a support missing”**. What to do about it is to build what is missing, not to say that I know the firm.
 
 **Drill item 53 of 55**
 
@@ -2858,9 +2858,9 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - The answer is: **A loan the lender could use to force a sale.**
-- If you chose another answer, the line is built from the key, as for any other question.
-- The fault: The claim says how the house has done, which answers a different question from the one the key asks. £360,000 on a £400,000 house is 90% of its value, at a rate that follows the bank’s, so a fall of 10% in the price would leave the loan as large as the house, and a rise in the rate would make every payment harder. How well it has done says nothing about what the lender could do.
-- The claim, put right (always the last thing shown): I owe £360,000 on a £400,000 house, which is 90% of its value, at a rate that follows the bank’s. In the key’s words that is **“A loan the lender could use to force a sale”**. It may have been a good buy, and it is also a loan that could force a sale.
+- If you chose another answer, the line is built from the answers’ own wording, as for any other question.
+- The fault: The claim says how the house has done, which answers a different question from the one that matters here. £360,000 on a £400,000 house is 90% of its value, at a rate that follows the bank’s, so a fall of 10% in the price would leave the loan as large as the house, and a rise in the rate would make every payment harder. How well it has done says nothing about what the lender could do.
+- The claim, put right (always the last thing shown): I owe £360,000 on a £400,000 house, which is 90% of its value, at a rate that follows the bank’s. That is **“A loan the lender could use to force a sale”**. It may have been a good buy, and it is also a loan that could force a sale.
 
 **Drill item 54 of 55**
 
@@ -2879,9 +2879,9 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - The answer is: **One holding they are not allowed to sell yet.**
-- If you chose another answer, the line is built from the key, as for any other question.
+- If you chose another answer, the line is built from the answers’ own wording, as for any other question.
 - The fault: The claim treats a ban on selling as the end of the matter. A ban stops one remedy, the schedule of sales, and leaves another: limiting what can be lost while waiting, by a contract that sets a floor under the price, where the employer allows one. Waiting and hoping does nothing about 80% of what the speaker owns resting on one company for two years.
-- The claim, put right (always the last thing shown): Most of what I have is in my employer’s shares, and I cannot sell them for two years. In the key’s words that is **“One holding they are not allowed to sell yet”**. I cannot sell, but I can find out whether I may buy a contract that sets a floor under the price and what it would cost, and write down the sales I will make the day the rule ends.
+- The claim, put right (always the last thing shown): Most of what I have is in my employer’s shares, and I cannot sell them for two years. That is **“One holding they are not allowed to sell yet”**. I cannot sell, but I can find out whether I may buy a contract that sets a floor under the price and what it would cost, and write down the sales I will make the day the rule ends.
 
 **Drill item 55 of 55**
 
@@ -2900,21 +2900,21 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - The answer is: **Nothing: it is already made safe.**
-- If you chose another answer, the line is built from the key, as for any other question.
+- If you chose another answer, the line is built from the answers’ own wording, as for any other question.
 - The fault: The claim says that too much in one place is a problem whatever stands round it. What the speaker describes is a business he runs with all of *the three supports* in place: funds spread over many companies, three years of spending in the bank, and no loan against the shares. Nothing is missing, so there is nothing to put right. Selling half would bring tax and fees and give up part of a business he runs, and the adviser’s structure would cost money every year, to answer a problem the case does not show.
-- The claim, put right (always the last thing shown): I run a timber yard that is most of what I own, and I have all three supports in place. In the key’s words that is **“Nothing: it is already made safe”**, and there is nothing to fix. If my friend says otherwise, I ask what could go wrong that my three years of savings, my funds and my clean ownership do not already answer.
+- The claim, put right (always the last thing shown): I run a timber yard that is most of what I own, and I have all three supports in place. That is **“Nothing: it is already made safe”**, and there is nothing to fix. If my friend says otherwise, I ask what could go wrong that my three years of savings, my funds and my clean ownership do not already answer.
 
-**When the drill ends.** The learner sees their own results: first-try accuracy for each stage, whole routes beside single questions, the pair of names they mixed up most often, and what will come back and when. Anything missed was asked again before the drill ended. Nothing here is graded. A miss only decides what comes back.
+**When the drill ends.** The learner sees their own results: first-try accuracy for each stage, whole cases beside single questions, the pair of names they mixed up most often, and what will come back and when. Anything missed was asked again before the drill ended. Nothing here is graded. A miss only decides what comes back.
 
 ### 48. What to carry away
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 48 of 50*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 48 of 50*
 
 [reviewers only: card kind `recap`, id `w3-recap`]
 
-You have now run the key on your own. This card puts the unit in one place, in the key’s words.
+You have now run the questions on your own. This card puts the unit in one place.
 
-**The key for this unit, in its own words**
+**This unit’s questions and answers**
 
 What one thing could take most of it?
 - One holding they can sell and do not run → Sell down on a schedule
@@ -2944,7 +2944,7 @@ What one thing could take most of it?
   - Do: First, find the limit on each policy that would answer *a claim* by someone else (home, car, rented property, business) and write it next to the biggest claim an insurer or a lawyer thinks realistic. Second, ask a broker or an insurer for a quote for extra cover for harm to others that sits on top of what you have: the amount, the price a year, and what it leaves out. Third, buy cover that is well above the biggest realistic claim, and keep the policies underneath it in force, because extra cover usually depends on them. Fourth, check again once a year, and whenever something changes: a new driver, a pool, another property, a new business.
 - **Separate companies for each property or business**: several properties or businesses that could each bring a claim, all held in the person’s own name, so that one claim could reach the rest and their home.
   - Ask: “If something went wrong in this one, what else could the claim reach?” If the answer is everything, because everything is in one name, you are probably looking at this answer.
-  - Do: First, list every property and business, with its value and the name it is held in, and mark your own home. Second, check the insurance on each. Cover that is too small is the cheaper first fix, and when it is in the case the key’s answer is **“A claim bigger than the insurance they hold”**. Third, ask a solicitor for a written quote for putting each into its own company: the one-off cost, the yearly cost, any tax and fees on moving it, and what each lender would require, such as a personal promise to repay. Fourth, set the yearly cost against what each company would keep out of reach, and go ahead only where the saving is clearly larger. Below some size it is not worth it. Fifth, keep each company’s money and affairs apart from your own: a company run as if it were the owner’s purse can lose its protection.
+  - Do: First, list every property and business, with its value and the name it is held in, and mark your own home. Second, check the insurance on each. Cover that is too small is the cheaper first fix, and when it is in the case the answer is **“A claim bigger than the insurance they hold”**. Third, ask a solicitor for a written quote for putting each into its own company: the one-off cost, the yearly cost, any tax and fees on moving it, and what each lender would require, such as a personal promise to repay. Fourth, set the yearly cost against what each company would keep out of reach, and go ahead only where the saving is clearly larger. Below some size it is not worth it. Fifth, keep each company’s money and affairs apart from your own: a company run as if it were the owner’s purse can lose its protection.
 - **Borrow modestly, on safe terms**: a loan a lender could use to force a sale: one they can demand back, or ask more to be put up against, at any time; one whose rate can jump; or one that is large against what it is borrowed against.
   - Ask: “What could the lender do, however well I pay, and how far would prices or rates have to move before they did it?” If the answer is that they could act soon, you are probably looking at this answer.
   - Do: First, write down every loan: how much, what it is secured on, whether the rate is fixed, and whether the lender can demand the money back or ask for more security. Second, work out how far the value would have to fall before the lender could act: divide the loan by the limit the contract names, and compare the result with what the thing is worth today. £350,000 ÷ 0.6 is about £583,000. Third, reduce the loan or change its terms so that the answer to the second step is a very large fall, with a rate fixed for years and no right for the lender to demand the money back while the payments are made. Fourth, do not replace a loan that can be demanded back with another on the same terms.
@@ -2958,12 +2958,12 @@ What one thing could take most of it?
 - A demand is about two numbers: what it could be, and what the insurance pays. **Insure the big loss** is for a gap between them. The same insurance well above the claim is **Safe as it stands**.
 - Several properties in one name are about reach. **Separate companies for each property or business** is for the reach of *a claim*. Companies cost money, and are worth it only where the saving is larger.
 - A loan is about what the lender may do: ask for the money back or for more, change the rate, or lend against nearly all of the value. A small loan, at a fixed rate, that cannot be demanded back while it is paid is **Safe as it stands**.
-- Two of these can both show in one case, and the key chooses. A demand bigger than the insurance wins over properties in one name. A business the person runs wins over a loan against its shares.
+- Two of these can both show in one case, and one of them wins. A demand bigger than the insurance wins over properties in one name. A business the person runs wins over a loan against its shares.
 - Saying that it is already safe is as much an answer as the rest, and it saves the cost of a fix for a problem the case does not have.
 
 ### 49. Where would you meet this?
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 49 of 50*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 49 of 50*
 
 [reviewers only: card kind `transfer`, id `w3-transfer`]
 
@@ -2989,7 +2989,7 @@ One line is enough. It is kept on this device only and is never marked.
 
 ### 50. A plan, if you want one
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 50 of 50*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 50 of 50*
 
 [reviewers only: card kind `plan`, id `w3-plan`]
 
@@ -3011,7 +3011,7 @@ Or write your own: If …, then I will …
 
 ## After the unit: what comes back on later days
 
-A name that is due returns as a case the learner has not seen, next to a case of the name they most often confuse it with. Each is run as a whole route. These are the fresh cases held back for that purpose: three for each name, one for each scheduled return. The first return is about two days after the drill, the next about a week after that, the next about three and a half weeks later.
+A name that is due returns as a case the learner has not seen, next to a case of the name they most often confuse it with. Each is run as a whole case: every question, then the name. These are the fresh cases held back for that purpose: three for each name, one for each scheduled return. The first return is about two days after the drill, the next about a week after that, the next about three and a half weeks later.
 
 **Return case 1 of 28**
 
@@ -3026,10 +3026,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **One thing most of it depends on.** One company’s shares are most of what she has: “owns shares worth £510,000 in the regional brewery her grandfather helped to found, which is most of the £600,000 she has”. £510,000 out of £600,000 is 85%.
   - If you chose **One holding they are not allowed to sell yet**: Shares that came down a family are sometimes tied by a rule. Here nothing stops her, so there is no rule to point to.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Cap the loss without selling**, the look-alike card’s lines follow: In both, one company’s shares are most of what the person has, and nothing is said about prices in general. In **Sell down on a schedule** nothing stops the person selling the shares, so the fix is to sell them in steps. In **Cap the loss without selling** a rule stops them selling for a set time, so the fix can only limit the loss while they wait. Is anything stopping the person selling, and until when?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the family agreement barred any sale for ten years, it would be **“One holding they are not allowed to sell yet”**.
 - Taught on: “One big holding, free to sell, that the owner does not run” (one tap opens the card).
 
@@ -3046,10 +3046,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **One thing most of it depends on.** One property is most of what he has: “owns a hotel building worth £1,100,000, which is most of the £1,250,000 he has”. £1,100,000 out of £1,250,000 is 88%.
   - If you chose **A business they run, with a support missing**: A hotel is a business, which brings to mind an owner who runs it. Walter does not: a management company does.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Put the three supports in place**, the look-alike card’s lines follow: In both, one holding is most of what the person has, and it may be doing very well. In **Sell down on a schedule** the person takes no part in running it and can sell. In **Put the three supports in place** the person runs the business day to day, and at least one thing that would make it safe is missing. Does the person do the work of running it, or does someone else?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If Walter ran the hotel himself, with £10,000 in savings, it would be **“A business they run, with a support missing”**.
 - Taught on: “One big holding, free to sell, that the owner does not run” (one tap opens the card).
 
@@ -3066,10 +3066,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **One thing most of it depends on.** One company’s shares are most of what she has: “worth £390,000, which is most of the £470,000 she has”. £390,000 out of £470,000 is 83%.
   - If you chose **One holding they are not allowed to sell yet**: A rule in a company’s papers could stop a sale. This case says there is none.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Cap the loss without selling**, the look-alike card’s lines follow: In both, one company’s shares are most of what the person has, and nothing is said about prices in general. In **Sell down on a schedule** nothing stops the person selling the shares, so the fix is to sell them in steps. In **Cap the loss without selling** a rule stops them selling for a set time, so the fix can only limit the loss while they wait. Is anything stopping the person selling, and until when?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the rules said no shareholder could sell for five years, it would be **“One holding they are not allowed to sell yet”**.
 - Taught on: “One big holding, free to sell, that the owner does not run” (one tap opens the card).
 
@@ -3084,13 +3084,13 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **Sell down on a schedule**.” What one thing could take most of it? **One holding they can sell and do not run.** He worked there as an employee and can sell at any time: “where he worked as an engineer” and “he can sell them at any time”. He did not run it, and nothing stops a sale.
   - Why not **Put the three supports in place**: He worked at the company, which can bring to mind a business he runs. He was an engineer there, not its owner or its head.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What could lose this money? **One thing most of it depends on.** One company’s shares are most of what he has: “£480,000 of his £560,000 is shares in the engineering company where he worked as an engineer”. £480,000 out of £560,000 is 86%. Selling shares each month in a fall looks like a case about a fall in prices, and the case does show both. When a case shows both, the key chooses **“One thing most of it depends on”**.
+  - What could lose this money? **One thing most of it depends on.** One company’s shares are most of what he has: “£480,000 of his £560,000 is shares in the engineering company where he worked as an engineer”. £480,000 out of £560,000 is 86%. Selling shares each month in a fall looks like a case about a fall in prices, and the case does show both. When a case shows both, the answer is **“One thing most of it depends on”**.
   - If you chose **A business they run, with a support missing**: He worked at the company, which can bring to mind a business he runs. He was an engineer there, not its owner or its head.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Put the three supports in place**, the look-alike card’s lines follow: In both, one holding is most of what the person has, and it may be doing very well. In **Sell down on a schedule** the person takes no part in running it and can sell. In **Put the three supports in place** the person runs the business day to day, and at least one thing that would make it safe is missing. Does the person do the work of running it, or does someone else?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *Tomasz and the locked shares*, which was **Cap the loss without selling**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *Tomasz and the locked shares*, which was **Cap the loss without selling**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If the shares were locked for two years, it would be **“One holding they are not allowed to sell yet”**.
 - Taught on: “One big holding, free to sell, that the owner does not run” (one tap opens the card).
 
@@ -3107,10 +3107,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **One thing most of it depends on.** One company’s shares are most of what she has: “was paid £350,000 in its shares, which is most of the £400,000 she has”. £350,000 out of £400,000 is 88%.
   - If you chose **One holding they can sell and do not run**: The shares are one company’s and most of what she has, and she does not run it. But she is not free to sell, and a schedule of sales needs that freedom.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Sell down on a schedule**, the look-alike card’s lines follow: In both, one company’s shares are most of what the person has, and nothing is said about prices in general. In **Sell down on a schedule** nothing stops the person selling the shares, so the fix is to sell them in steps. In **Cap the loss without selling** a rule stops them selling for a set time, so the fix can only limit the loss while they wait. Is anything stopping the person selling, and until when?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the agreement set no limit, it would be **“One holding they can sell and do not run”**.
 - Taught on: “One big holding that cannot be sold yet” (one tap opens the card).
 
@@ -3127,10 +3127,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **One thing most of it depends on.** One company’s shares are most of what he has: “He has £260,000 of them waiting, which is most of the £310,000 he has”. £260,000 out of £310,000 is 84%.
   - If you chose **One holding they can sell and do not run**: Shares paid as salary can be sold in some schemes. Here the airline’s rule holds each year’s shares for four years, so he is not free to sell.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Sell down on a schedule**, the look-alike card’s lines follow: In both, one company’s shares are most of what the person has, and nothing is said about prices in general. In **Sell down on a schedule** nothing stops the person selling the shares, so the fix is to sell them in steps. In **Cap the loss without selling** a rule stops them selling for a set time, so the fix can only limit the loss while they wait. Is anything stopping the person selling, and until when?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If each year’s shares were his to sell at once, it would be **“One holding they can sell and do not run”**.
 - Taught on: “One big holding that cannot be sold yet” (one tap opens the card).
 
@@ -3147,10 +3147,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **One thing most of it depends on.** One company’s shares are most of what she has: “was given £180,000 of shares in her family’s tea company when she turned 21, and they are most of the £210,000 she has”. £180,000 out of £210,000 is 86%.
   - If you chose **One holding they can sell and do not run**: A gift of shares that a person does not run is often free to sell. This one comes with a ten-year bar, so she is not free.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Sell down on a schedule**, the look-alike card’s lines follow: In both, one company’s shares are most of what the person has, and nothing is said about prices in general. In **Sell down on a schedule** nothing stops the person selling the shares, so the fix is to sell them in steps. In **Cap the loss without selling** a rule stops them selling for a set time, so the fix can only limit the loss while they wait. Is anything stopping the person selling, and until when?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the agreement had no bar, it would be **“One holding they can sell and do not run”**.
 - Taught on: “One big holding that cannot be sold yet” (one tap opens the card).
 
@@ -3167,11 +3167,11 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **One thing most of it depends on.** One company’s shares are most of what she has: “owns £600,000 of shares in the medical-device company she helped to found, which is most of the £680,000 she has”. £600,000 out of £680,000 is 88%.
   - If you chose **One holding they can sell and do not run**: She has no part in running the company, as with *a holding* she is free to sell. But she is not free to sell, because the rules stop her until the end of next year.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Sell down on a schedule**, the look-alike card’s lines follow: In both, one company’s shares are most of what the person has, and nothing is said about prices in general. In **Sell down on a schedule** nothing stops the person selling the shares, so the fix is to sell them in steps. In **Cap the loss without selling** a rule stops them selling for a set time, so the fix can only limit the loss while they wait. Is anything stopping the person selling, and until when?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *Meena and the bus shares*, which was **Sell down on a schedule**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *Meena and the bus shares*, which was **Sell down on a schedule**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If the rules let her sell now, it would be **“One holding they can sell and do not run”**.
 - Taught on: “One big holding that cannot be sold yet” (one tap opens the card).
 
@@ -3188,10 +3188,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **One thing most of it depends on.** A business he runs is most of what he owns: “worth £540,000, which is most of the £610,000 he owns”. £540,000 out of £610,000 is 89%.
   - If you chose **Nothing: it is already made safe**: The pension is spread and no bank holds the shares, which are two of the three. The savings are five months and not years, and one gap is enough.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Safe as it stands**, the look-alike card’s lines follow: In both, the person runs a business that is most of what they have. In **Put the three supports in place** at least one of *the three supports* is missing. In **Safe as it stands** all three are in place. Can you point to each of the three: everything else spread, several years of spending held outside, and no loan against the shares? Which, if any, is missing?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If his savings were £110,000, which covers three years, it would be **“Nothing: it is already made safe”**.
 - Taught on: “A business the owner runs, without what makes keeping it safe” (one tap opens the card).
 
@@ -3204,14 +3204,14 @@ A name that is due returns as a case the learner has not seen, next to a case of
 **Shown as soon as you answer**
 
 - If you are right: “Right: **Put the three supports in place**.” What one thing could take most of it? **A business they run, with a support missing.** The reserve and the spread are in place, and one thing is not: “She borrowed £200,000 to extend the clinic” and “the bank holds her shares in the company as security”. A loan against the shares is one of the three, and the bank can take them.
-  - Why not **Borrow modestly, on safe terms**: A loan the lender could use is in the case, which can look like the answer for a loan. But it is against the shares of a business she runs, and the key gives the answer for the business.
+  - Why not **Borrow modestly, on safe terms**: A loan the lender could use is in the case, which can look like the answer for a loan. But it is against the shares of a business she runs, and the answer is the one for the business.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **One thing most of it depends on.** A business she runs is most of what she owns: “worth £850,000, which is most of the £1,100,000 she owns”. £850,000 out of £1,100,000 is 77%.
-  - If you chose **A loan the lender could use to force a sale**: A loan the lender could use is in the case, which can look like the answer for a loan. But it is against the shares of a business she runs, and the key gives the answer for the business.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **Borrow modestly, on safe terms**, the look-alike card’s lines follow: In both, a loan could be used against the borrower, and what it is secured on is most of what they have. In **Put the three supports in place** the person runs the business, and a loan against its shares is one of the gaps. In **Borrow modestly, on safe terms** the loan is against something the person does not run. When a case shows both, the key chooses **Put the three supports in place**. Is what the loan is secured on a business that the person runs?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose **A loan the lender could use to force a sale**: A loan the lender could use is in the case, which can look like the answer for a loan. But it is against the shares of a business she runs, and the answer is the one for the business.
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **Borrow modestly, on safe terms**, the look-alike card’s lines follow: In both, a loan could be used against the borrower, and what it is secured on is most of what they have. In **Put the three supports in place** the person runs the business, and a loan against its shares is one of the gaps. In **Borrow modestly, on safe terms** the loan is against something the person does not run. When a case shows both, the answer is **Put the three supports in place**. Is what the loan is secured on a business that the person runs?
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the loan were against the clinic’s equipment and not her shares, it would be **“Nothing: it is already made safe”**.
 - Taught on: “A business the owner runs, without what makes keeping it safe” (one tap opens the card).
 
@@ -3228,10 +3228,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **One thing most of it depends on.** A business he runs is most of what he has: “worth £700,000, which is most of the £1,000,000 he has”. £700,000 out of £1,000,000 is 70%.
   - If you chose **Nothing: it is already made safe**: The reserve and the loan are in place, which are two of the three. But the other money is in the same trade and the same city, so it is not spread.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Safe as it stands**, the look-alike card’s lines follow: In both, the person runs a business that is most of what they have. In **Put the three supports in place** at least one of *the three supports* is missing. In **Safe as it stands** all three are in place. Can you point to each of the three: everything else spread, several years of spending held outside, and no loan against the shares? Which, if any, is missing?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the £200,000 were in funds that hold thousands of companies, it would be **“Nothing: it is already made safe”**.
 - Taught on: “A business the owner runs, without what makes keeping it safe” (one tap opens the card).
 
@@ -3248,11 +3248,11 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **One thing most of it depends on.** A business she runs is most of what she owns: “worth £900,000, which is most of the £1,700,000 she owns”. £900,000 out of £1,700,000 is 53%.
   - If you chose **Nothing: it is already made safe**: Six years of spending and funds spread over thousands of companies bring back a business that is made safe. But the loan against the shares is missing from the three, and one gap is enough.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Safe as it stands**, the look-alike card’s lines follow: In both, the person runs a business that is most of what they have. In **Put the three supports in place** at least one of *the three supports* is missing. In **Safe as it stands** all three are in place. Can you point to each of the three: everything else spread, several years of spending held outside, and no loan against the shares? Which, if any, is missing?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *Hugo and the timber yard*, which was **Safe as it stands**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *Hugo and the timber yard*, which was **Safe as it stands**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If the loan were secured on the company’s equipment and not on her shares, it would be **“Nothing: it is already made safe”**.
 - Taught on: “A business the owner runs, without what makes keeping it safe” (one tap opens the card).
 
@@ -3269,10 +3269,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **One thing most of it depends on.** A business she runs is most of what she owns: “worth £640,000, which is most of the £900,000 she owns”. £640,000 out of £900,000 is 71%.
   - If you chose **A business they run, with a support missing**: A business she runs that is most of what she owns is the same shape as a case with a gap. But nothing is missing, so there is no gap to name.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Put the three supports in place**, the look-alike card’s lines follow: In both, the person runs a business that is most of what they have. In **Put the three supports in place** at least one of *the three supports* is missing. In **Safe as it stands** all three are in place. Can you point to each of the three: everything else spread, several years of spending held outside, and no loan against the shares? Which, if any, is missing?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If her savings were £12,000, it would be **“A business they run, with a support missing”**.
 - Taught on: “One big thing the pot depends on, already made safe” (one tap opens the card).
 
@@ -3289,10 +3289,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **One thing most of it depends on.** A demand could reach what he owns: “the largest demand that a guest’s injury could lead to is £2,000,000”. £2,000,000 is more than the £900,000 he has in all.
   - If you chose **A claim bigger than the insurance they hold**: A demand could come, and it could be larger than everything he owns. But the insurance is two and a half times the largest claim, so there is no gap.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Insure the big loss**, the look-alike card’s lines follow: In both, something in the person’s life could bring *a claim*, and insurance is in the case. In **Insure the big loss** the demand that could come is far bigger than the insurance. In **Safe as it stands** the insurance is well above any demand that could come. Put the biggest demand that the case says could come next to what the insurance pays. Which is bigger, and by how much?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the insurance paid up to £600,000, it would be **“A claim bigger than the insurance they hold”**.
 - Taught on: “One big thing the pot depends on, already made safe” (one tap opens the card).
 
@@ -3309,10 +3309,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **One thing most of it depends on.** Two businesses could each bring *a claim*, which is why the first question gives its answer: “owns a café and a bakery that managers run for her, each in a company of its own that she owns”. The next question shows what stands round them.
   - If you chose **Several properties or businesses, all in their own name**: Two businesses could each bring *a claim*, which can look like several businesses in one name. But each is in a company of its own, so *a claim* on one stops there.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Separate companies for each property or business**, the look-alike card’s lines follow: In both, several properties or businesses are in the case, and each could bring *a claim*. In **Separate companies for each property or business** they are all held in the person’s own name, so one demand could reach the rest. In **Safe as it stands** each is already held in a company of its own, so a demand stops at the edge of that company. Whose name is each property or business held in?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If both were in her own name, it would be **“Several properties or businesses, all in their own name”**.
 - Taught on: “One big thing the pot depends on, already made safe” (one tap opens the card).
 
@@ -3329,11 +3329,11 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **One thing most of it depends on.** A house with a loan on it is most of what she owns: “owns a house worth £900,000, which is most of what she owns, and owes £200,000 on it”.
   - If you chose **A loan the lender could use to force a sale**: A jump in the bank’s rate brings back a loan whose rate can jump. But her rate is fixed for fourteen years and the bank cannot demand the money back, so the news does not reach her.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Borrow modestly, on safe terms**, the look-alike card’s lines follow: In both, there is a loan against something that is most of what the person has. In **Borrow modestly, on safe terms** the lender could force a sale: the loan is large against what it is secured on, or the lender can demand it back, or the rate can jump. In **Safe as it stands** the loan is modest, at a fixed rate, and cannot be demanded back while it is paid. How large is the loan against what it is secured on, and what is the lender allowed to do?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *Sunil and the rising rate*, which was **Borrow modestly, on safe terms**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *Sunil and the rising rate*, which was **Borrow modestly, on safe terms**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If her rate followed the base rate, it would be **“A loan the lender could use to force a sale”**.
 - Taught on: “One big thing the pot depends on, already made safe” (one tap opens the card).
 
@@ -3350,10 +3350,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **One thing most of it depends on.** A demand could reach everything he owns: “a serious accident in the hot tub could lead to a demand for £2,000,000”. £2,000,000 is more than twice the £800,000 he has in all.
   - If you chose **Nothing: it is already made safe**: Insurance is in the case, which can make it look looked after. But £250,000 is far below the £2,000,000 a lawyer says could come.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Safe as it stands**, the look-alike card’s lines follow: In both, something in the person’s life could bring *a claim*, and insurance is in the case. In **Insure the big loss** the demand that could come is far bigger than the insurance. In **Safe as it stands** the insurance is well above any demand that could come. Put the biggest demand that the case says could come next to what the insurance pays. Which is bigger, and by how much?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the insurance paid up to £3,000,000, it would be **“Nothing: it is already made safe”**.
 - Taught on: “A claim that could cost far more than the insurance pays” (one tap opens the card).
 
@@ -3370,10 +3370,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **One thing most of it depends on.** A demand could reach everything he owns: “a crash that injured several players could lead to a demand for £6,000,000”. £6,000,000 is ten times the £600,000 he has in all.
   - If you chose **Nothing: it is already made safe**: A £1,000,000 policy sounds large, which is why it can look looked after. But the lawyer’s figure is six times as much.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Safe as it stands**, the look-alike card’s lines follow: In both, something in the person’s life could bring *a claim*, and insurance is in the case. In **Insure the big loss** the demand that could come is far bigger than the insurance. In **Safe as it stands** the insurance is well above any demand that could come. Put the biggest demand that the case says could come next to what the insurance pays. Which is bigger, and by how much?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the policy paid up to £8,000,000, it would be **“Nothing: it is already made safe”**.
 - Taught on: “A claim that could cost far more than the insurance pays” (one tap opens the card).
 
@@ -3390,10 +3390,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **One thing most of it depends on.** A demand could reach everything she owns: “a bad fall in a garden like hers could lead to a demand for £1,800,000”. £1,800,000 is more than the £1,000,000 she has in all.
   - If you chose **Nothing: it is already made safe**: Her cover is in the case, which can look looked after. But it is under a third of the figure a lawyer gives.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Safe as it stands**, the look-alike card’s lines follow: In both, something in the person’s life could bring *a claim*, and insurance is in the case. In **Insure the big loss** the demand that could come is far bigger than the insurance. In **Safe as it stands** the insurance is well above any demand that could come. Put the biggest demand that the case says could come next to what the insurance pays. Which is bigger, and by how much?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If her insurance paid up to £3,000,000, it would be **“Nothing: it is already made safe”**.
 - Taught on: “A claim that could cost far more than the insurance pays” (one tap opens the card).
 
@@ -3405,16 +3405,16 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Insure the big loss**.” What one thing could take most of it? **A claim bigger than the insurance they hold.** One event could bring *a claim* far bigger than the insurance: “a fire caused by faulty wiring in the oldest block could lead to demands for £3,000,000 from the tenants who were hurt” and “His landlord insurance pays up to £600,000 for all such claims”. £3,000,000 less £600,000 leaves £2,400,000 uncovered. The properties in one name are in the case too, and when a case shows both, the key chooses the claim.
+- If you are right: “Right: **Insure the big loss**.” What one thing could take most of it? **A claim bigger than the insurance they hold.** One event could bring *a claim* far bigger than the insurance: “a fire caused by faulty wiring in the oldest block could lead to demands for £3,000,000 from the tenants who were hurt” and “His landlord insurance pays up to £600,000 for all such claims”. £3,000,000 less £600,000 leaves £2,400,000 uncovered. The properties in one name are in the case too, and when a case shows both, the answer is the claim.
   - Why not **Separate companies for each property or business**: Six flats and a home in one name is what the answer for properties in one name looks like, and it is true here. But the case also shows *a claim* far bigger than the insurance, and that comes first.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **One thing most of it depends on.** A demand could reach everything he owns: “a fire caused by faulty wiring in the oldest block could lead to demands for £3,000,000 from the tenants who were hurt”. £3,000,000 is more than the £2,000,000 he has in all.
-  - If you chose **Several properties or businesses, all in their own name**: You chose **Several properties or businesses, all in their own name**. This case does show that. It also shows a claim that could be far bigger than the insurance they hold, and when a case shows both, the key’s answer is **A claim bigger than the insurance they hold**.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **Separate companies for each property or business**, the look-alike card’s lines follow: In both, *a claim* is in the case, and what a demand could reach is most of what the person owns. In **Insure the big loss** the case shows *a claim* that could be far bigger than the insurance. In **Separate companies for each property or business** the case shows several properties or businesses in one name, so a demand on any one could reach the rest. When a case shows both, the key chooses **Insure the big loss**. Does the case show a demand bigger than the insurance, or only how the properties are held?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *Chioma’s properties*, which was **Separate companies for each property or business**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose **Several properties or businesses, all in their own name**: You chose **Several properties or businesses, all in their own name**. This case does show that. It also shows a claim that could be far bigger than the insurance they hold, and when a case shows both, the answer is **A claim bigger than the insurance they hold**.
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **Separate companies for each property or business**, the look-alike card’s lines follow: In both, *a claim* is in the case, and what a demand could reach is most of what the person owns. In **Insure the big loss** the case shows *a claim* that could be far bigger than the insurance. In **Separate companies for each property or business** the case shows several properties or businesses in one name, so a demand on any one could reach the rest. When a case shows both, the answer is **Insure the big loss**. Does the case show a demand bigger than the insurance, or only how the properties are held?
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *Chioma’s properties*, which was **Separate companies for each property or business**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If the insurance paid up to £4,000,000 and each block were in a company of its own, it would be **“Nothing: it is already made safe”**.
 - Taught on: “A claim that could cost far more than the insurance pays” (one tap opens the card).
 
@@ -3431,10 +3431,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **One thing most of it depends on.** A demand could reach everything he owns: “all in his own name”. Together that is £1,600,000.
   - If you chose **A claim bigger than the insurance they hold**: The case says nothing about what any insurance pays or how big *a claim* could be. It shows only how everything is held.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **Insure the big loss**, the look-alike card’s lines follow: In both, *a claim* is in the case, and what a demand could reach is most of what the person owns. In **Insure the big loss** the case shows *a claim* that could be far bigger than the insurance. In **Separate companies for each property or business** the case shows several properties or businesses in one name, so a demand on any one could reach the rest. When a case shows both, the key chooses **Insure the big loss**. Does the case show a demand bigger than the insurance, or only how the properties are held?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **Insure the big loss**, the look-alike card’s lines follow: In both, *a claim* is in the case, and what a demand could reach is most of what the person owns. In **Insure the big loss** the case shows *a claim* that could be far bigger than the insurance. In **Separate companies for each property or business** the case shows several properties or businesses in one name, so a demand on any one could reach the rest. When a case shows both, the answer is **Insure the big loss**. Does the case show a demand bigger than the insurance, or only how the properties are held?
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If each flat were in a company of its own, it would be **“Nothing: it is already made safe”**.
 - Taught on: “Several things that could bring a claim, all held in one name” (one tap opens the card).
 
@@ -3451,10 +3451,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **One thing most of it depends on.** A demand could reach everything she owns: “all in her own name”. Together that is £1,300,000.
   - If you chose **Nothing: it is already made safe**: The properties are let to people who run them, and that can look like something already looked after. But the case does not say they are held apart, and all are in her own name.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Safe as it stands**, the look-alike card’s lines follow: In both, several properties or businesses are in the case, and each could bring *a claim*. In **Separate companies for each property or business** they are all held in the person’s own name, so one demand could reach the rest. In **Safe as it stands** each is already held in a company of its own, so a demand stops at the edge of that company. Whose name is each property or business held in?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the park, the boatyard and the pub were each in a company of its own, it would be **“Nothing: it is already made safe”**.
 - Taught on: “Several things that could bring a claim, all held in one name” (one tap opens the card).
 
@@ -3471,10 +3471,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **One thing most of it depends on.** A demand could reach everything he owns: “each in his own name, as is the house he lives in”. Together that is £2,100,000.
   - If you chose **A claim bigger than the insurance they hold**: The case gives no insurance limit and no figure for *a claim*, so there is no gap between them to point to. It shows only how everything is held.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **Insure the big loss**, the look-alike card’s lines follow: In both, *a claim* is in the case, and what a demand could reach is most of what the person owns. In **Insure the big loss** the case shows *a claim* that could be far bigger than the insurance. In **Separate companies for each property or business** the case shows several properties or businesses in one name, so a demand on any one could reach the rest. When a case shows both, the key chooses **Insure the big loss**. Does the case show a demand bigger than the insurance, or only how the properties are held?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **Insure the big loss**, the look-alike card’s lines follow: In both, *a claim* is in the case, and what a demand could reach is most of what the person owns. In **Insure the big loss** the case shows *a claim* that could be far bigger than the insurance. In **Separate companies for each property or business** the case shows several properties or businesses in one name, so a demand on any one could reach the rest. When a case shows both, the answer is **Insure the big loss**. Does the case show a demand bigger than the insurance, or only how the properties are held?
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If a lawyer said one accident could lead to a demand of £6,000,000 against insurance of £500,000, it would be **“A claim bigger than the insurance they hold”**.
 - Taught on: “Several things that could bring a claim, all held in one name” (one tap opens the card).
 
@@ -3491,11 +3491,11 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **One thing most of it depends on.** A demand could reach everything he owns: “The flats and the house are all in his own name”. Together that is £900,000.
   - If you chose **Nothing: it is already made safe**: A company exists, which can look like properties held apart. But it holds his accountancy practice, not the flats, which are in his own name.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Safe as it stands**, the look-alike card’s lines follow: In both, several properties or businesses are in the case, and each could bring *a claim*. In **Separate companies for each property or business** they are all held in the person’s own name, so one demand could reach the rest. In **Safe as it stands** each is already held in a company of its own, so a demand stops at the edge of that company. Whose name is each property or business held in?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *Maureen, one flat*, which was **Insure the big loss**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *Maureen, one flat*, which was **Insure the big loss**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If each flat were in a company of its own, it would be **“Nothing: it is already made safe”**.
 - Taught on: “Several things that could bring a claim, all held in one name” (one tap opens the card).
 
@@ -3512,10 +3512,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **One thing most of it depends on.** A loan could force a sale of shares that are most of what she owns: “the broker may sell her shares without warning if the loan is ever more than 70% of their value”.
   - If you chose **Nothing: it is already made safe**: A safe loan could not be acted on at the lender’s choice. This one can, and the margin before the broker acts is small.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Safe as it stands**, the look-alike card’s lines follow: In both, there is a loan against something that is most of what the person has. In **Borrow modestly, on safe terms** the lender could force a sale: the loan is large against what it is secured on, or the lender can demand it back, or the rate can jump. In **Safe as it stands** the loan is modest, at a fixed rate, and cannot be demanded back while it is paid. How large is the loan against what it is secured on, and what is the lender allowed to do?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the loan were £100,000 with no right for the broker to sell, it would be **“Nothing: it is already made safe”**.
 - Taught on: “A loan that could force a sale at the worst moment” (one tap opens the card).
 
@@ -3532,10 +3532,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **One thing most of it depends on.** A loan could force a sale of the flats, most of what he owns: “owes £1,250,000 on them”. £1,250,000 out of £1,500,000 is 83%.
   - If you chose **Nothing: it is already made safe**: A loan against property can be safe, but a safe one is small and fixed. This one is 83% of the value, and its rate has doubled.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Safe as it stands**, the look-alike card’s lines follow: In both, there is a loan against something that is most of what the person has. In **Borrow modestly, on safe terms** the lender could force a sale: the loan is large against what it is secured on, or the lender can demand it back, or the rate can jump. In **Safe as it stands** the loan is modest, at a fixed rate, and cannot be demanded back while it is paid. How large is the loan against what it is secured on, and what is the lender allowed to do?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If he owed £300,000 at a rate fixed for fifteen years, it would be **“Nothing: it is already made safe”**.
 - Taught on: “A loan that could force a sale at the worst moment” (one tap opens the card).
 
@@ -3552,10 +3552,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **One thing most of it depends on.** A loan could force a sale of the house, most of what he has: “owes £450,000 on it”. £450,000 out of £600,000 is 75%.
   - If you chose **Nothing: it is already made safe**: A safe loan cannot be demanded back while it is paid. This one can be, on three months’ notice, however well he pays.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Safe as it stands**, the look-alike card’s lines follow: In both, there is a loan against something that is most of what the person has. In **Borrow modestly, on safe terms** the lender could force a sale: the loan is large against what it is secured on, or the lender can demand it back, or the rate can jump. In **Safe as it stands** the loan is modest, at a fixed rate, and cannot be demanded back while it is paid. How large is the loan against what it is secured on, and what is the lender allowed to do?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the agreement said the lender could not demand the money back while he paid, and the loan were £120,000, it would be **“Nothing: it is already made safe”**.
 - Taught on: “A loan that could force a sale at the worst moment” (one tap opens the card).
 
@@ -3572,11 +3572,11 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **One thing most of it depends on.** A loan could force a sale of the shares, most of what he has: “Hamza borrowed £500,000 against his shares”. £500,000 out of £800,000 is 63%.
   - If you chose **A business they run, with a support missing**: A company and a loan against its shares bring back a business owner with a gap. But Hamza does not run the company: his father does.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **Put the three supports in place**, the look-alike card’s lines follow: In both, a loan could be used against the borrower, and what it is secured on is most of what they have. In **Put the three supports in place** the person runs the business, and a loan against its shares is one of the gaps. In **Borrow modestly, on safe terms** the loan is against something the person does not run. When a case shows both, the key chooses **Put the three supports in place**. Is what the loan is secured on a business that the person runs?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *Femi and the roofing firm*, which was **Put the three supports in place**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **Put the three supports in place**, the look-alike card’s lines follow: In both, a loan could be used against the borrower, and what it is secured on is most of what they have. In **Put the three supports in place** the person runs the business, and a loan against its shares is one of the gaps. In **Borrow modestly, on safe terms** the loan is against something the person does not run. When a case shows both, the answer is **Put the three supports in place**. Is what the loan is secured on a business that the person runs?
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *Femi and the roofing firm*, which was **Put the three supports in place**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If Hamza ran the company himself, it would be **“A business they run, with a support missing”**.
 - Taught on: “A loan that could force a sale at the worst moment” (one tap opens the card).
 

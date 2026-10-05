@@ -1,15 +1,15 @@
 # Learner view: US Civics & History, Unit Ten: History since 1877
 
-*From the factories and the great arrivals to September 11, the widening of the right to vote, and the symbols of the country.* Unit revision 1, built to lesson standard 1, status: draft.
+*From the factories and the great arrivals to September 11, the widening of the right to vote, and the symbols of the country.* Unit revision 2, built to lesson standard 1, status: draft.
 
 This file is generated from the data files by `tools/render-learner-view.mjs`. It shows every screen in the order a learner meets it. In the app one card is on screen at a time and the learner moves on when ready.
 
-- **Bold text in quotation marks** is the key’s own wording, printed from `key.js`. Bold names are the outcome names from the same file. Neither is typed anywhere else. "What you must be able to point to" lines and "How to tell them apart" lines are also printed from one place each (the key and the look-alike ledger).
+- **Bold text in quotation marks** is the subject’s own wording for its questions and answers, written once and printed everywhere. Bold names are the names, written once in the same place. Neither is typed anywhere else. "What you must be able to point to" lines and "How to tell them apart" lines are also printed from one place each (the subject’s questions and the pairs it compares).
 - ⟦Double brackets⟧ show the words the app marks in a case (one highlight style everywhere).
 - The line in italics under each heading is the app’s top bar. The line in square brackets after it is for reviewers and is not shown to the learner.
 - Headings, prompt wording and stage instructions that are the same in every unit are the app’s wording, not this unit’s.
 - "Shown as soon as you …" is what appears the moment the learner answers. Nothing is hidden behind a second tap the first time a case is met, or after a miss.
-- After every answer the app shows, in this order: the right answer in the key’s words; the reason, quoting the marked words; for a name, why the nearest wrong name fails; after a miss, a line about the answer the learner chose; and last a link to the card that taught it. Where a line about the learner’s own choice is not written for the case, the app builds it from the key, and this file says so in place of repeating it.
+- After every answer the app shows, in this order: the right answer; the reason, quoting the marked words; for a name, why the nearest wrong name fails; after a miss, a line about the answer the learner chose; and last a link to the card that taught it. Where a line about the learner’s own choice is not written for the case, the app builds it from the answers’ own wording, and this file says so in place of repeating it.
 
 ---
 
@@ -17,11 +17,11 @@ This file is generated from the data files by `tools/render-learner-view.mjs`. I
 
 ### 1. Facts to hold: the history since 1877, and the symbols of the country
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 1 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 1 of 100*
 
 [reviewers only: card kind `orient`, id `orient-since`]
 
-This unit is different from the units that teach the key’s questions. Those teach you to put a question to a case. This one is a set of facts to hold: what happened from the years of factories and great arrivals to September 11, 2001; the years in which the right to vote was widened; and the plain facts about the flag, the days and the names that stand for the country. By the end you can say each fact without looking it up, which is what the history part of the citizenship interview asks of you.
+This unit is different from the units that sort cases. Those teach you to put a question to a case. This one is a set of facts to hold: what happened from the years of factories and great arrivals to September 11, 2001; the years in which the right to vote was widened; and the plain facts about the flag, the days and the names that stand for the country. By the end you can say each fact without looking it up, which is what the history part of the citizenship interview asks of you.
 
 Some of these facts also explain what you read in the news. Why the rules on who may come in come from Congress and are run by a federal *agency*, why a tax on what people earn exists, and why arguments about voting go back so far: each of those has its answer in the history here.
 
@@ -31,7 +31,7 @@ A landmark is useful because it lets you place a story. If you know that the Dep
 
 **What this unit is**
 
-This unit is facts to hold, not a skill to apply. There is no route to follow. Each fact is something you will be asked from memory, and it comes back on later days.
+This unit is facts to hold, not a skill to apply. There are no questions to work through. Each fact is something you will be asked from memory, and it comes back on later days.
 
 **The unit holds 61 facts, in 14 groups:**
 
@@ -63,13 +63,13 @@ The unit starts where the history before it stopped, in 1877, when Reconstructio
 
 Each group starts from one question that a period of history answered, or from one thing a newcomer is expected to know. It opens with a short story of someone who needs the idea, then explains the idea in plain words, then gives the facts for that group in a table. After the table, each fact is asked once, from memory. In one table the answers all have one form (all years, or all names, or all things done), so you cannot guess an answer from its shape and must know it.
 
-Where the unit says what the key calls something, it prints the key’s own name. In this course, “the vote” and “the right to vote” are the words for one thing, throughout.
+Where the unit gives a name you have already met, it prints that name as it was taught. In this course, “the vote” and “the right to vote” are the words for one thing, throughout.
 
 Each group starts with a case, then the idea in plain words, then the facts. After each fact you are asked it from memory, and the answer and how it fits are shown straight away. Nothing here is graded. A miss only decides what comes back.
 
 ### 2. The great arrivals, in four years
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 2 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 2 of 100*
 
 [reviewers only: card kind `concept`, id `con-wave`]
 
@@ -90,7 +90,7 @@ The four facts below are four years: when the Act was passed, when the statue wa
 
 ### 3. Four dates of the great arrivals
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 3 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 3 of 100*
 
 [reviewers only: card kind `facts`, id `facts-wave`]
 
@@ -112,7 +112,7 @@ These are the four years from Noor’s questions, each with how it fits the year
 
 ### 4. A question from memory
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 4 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 4 of 100*
 
 [reviewers only: card kind `check`, id `chk-wv-exclusion`]
 
@@ -133,7 +133,7 @@ These are the four years from Noor’s questions, each with how it fits the year
 
 ### 5. A question from memory
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 5 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 5 of 100*
 
 [reviewers only: card kind `check`, id `chk-wv-statue`]
 
@@ -154,7 +154,7 @@ These are the four years from Noor’s questions, each with how it fits the year
 
 ### 6. A question from memory
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 6 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 6 of 100*
 
 [reviewers only: card kind `check`, id `chk-wv-ellis`]
 
@@ -175,7 +175,7 @@ These are the four years from Noor’s questions, each with how it fits the year
 
 ### 7. A question from memory
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 7 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 7 of 100*
 
 [reviewers only: card kind `check`, id `chk-wv-closed`]
 
@@ -196,7 +196,7 @@ These are the four years from Noor’s questions, each with how it fits the year
 
 ### 8. Two landmarks in one harbour
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 8 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 8 of 100*
 
 [reviewers only: card kind `lookalike`, id `look-wave`]
 
@@ -239,7 +239,7 @@ Is it the year of the gift that stands in the harbour, or the year of the statio
 
 ### 9. Who decides who may come in
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 9 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 9 of 100*
 
 [reviewers only: card kind `concept`, id `con-door`]
 
@@ -253,12 +253,12 @@ The resident in the story is right, and the years of the great arrivals are when
 
 The same answer shows in the other two landmarks. Congress passed the Chinese Exclusion Act in 1882, which is a law for the whole country. And Ellis Island, where arrivals were examined, was the federal immigration station: it belonged to the government of the whole country, and not to a state.
 
-That is why, today, the rules on who may come in come from Congress and are run by a federal *agency*. It also fits the key: a state’s own scheme for who may stay in the country would be pushed aside, which the key calls **Preemption**. The four facts below are who did what.
+That is why, today, the rules on who may come in come from Congress and are run by a federal *agency*. It also fits a name from the earlier units: a state’s own scheme for who may stay in the country would be pushed aside, which is called **Preemption**. The four facts below are who did what.
 
 
 ### 10. Who acted on who may come in
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 10 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 10 of 100*
 
 [reviewers only: card kind `facts`, id `facts-door`]
 
@@ -280,7 +280,7 @@ These are the four facts about who acted, each with how it fits the idea that de
 
 ### 11. A question from memory
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 11 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 11 of 100*
 
 [reviewers only: card kind `check`, id `chk-do-state`]
 
@@ -301,7 +301,7 @@ These are the four facts about who acted, each with how it fits the idea that de
 
 ### 12. A question from memory
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 12 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 12 of 100*
 
 [reviewers only: card kind `check`, id `chk-do-court`]
 
@@ -322,7 +322,7 @@ These are the four facts about who acted, each with how it fits the idea that de
 
 ### 13. A question from memory
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 13 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 13 of 100*
 
 [reviewers only: card kind `check`, id `chk-do-congress`]
 
@@ -343,7 +343,7 @@ These are the four facts about who acted, each with how it fits the idea that de
 
 ### 14. A question from memory
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 14 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 14 of 100*
 
 [reviewers only: card kind `check`, id `chk-do-station`]
 
@@ -364,7 +364,7 @@ These are the four facts about who acted, each with how it fits the idea that de
 
 ### 15. Two federal bodies that acted on arrivals
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 15 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 15 of 100*
 
 [reviewers only: card kind `lookalike`, id `look-door`]
 
@@ -413,7 +413,7 @@ Did this body decide whether a state’s law was allowed, or did it write a law 
 
 ### 16. Four changes of the factory years, and what each did
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 16 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 16 of 100*
 
 [reviewers only: card kind `concept`, id `con-laws`]
 
@@ -432,7 +432,7 @@ Two more changes belong to the same years. In 1882 Congress passed the Chinese E
 
 ### 17. What four changes did
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 17 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 17 of 100*
 
 [reviewers only: card kind `facts`, id `facts-laws`]
 
@@ -454,7 +454,7 @@ These are the four facts, each with how it fits the idea of a country changing i
 
 ### 18. A question from memory
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 18 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 18 of 100*
 
 [reviewers only: card kind `check`, id `chk-lw-sixteenth`]
 
@@ -475,7 +475,7 @@ These are the four facts, each with how it fits the idea of a country changing i
 
 ### 19. A question from memory
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 19 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 19 of 100*
 
 [reviewers only: card kind `check`, id `chk-lw-seventeenth`]
 
@@ -496,7 +496,7 @@ These are the four facts, each with how it fits the idea of a country changing i
 
 ### 20. A question from memory
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 20 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 20 of 100*
 
 [reviewers only: card kind `check`, id `chk-lw-exclusion`]
 
@@ -517,7 +517,7 @@ These are the four facts, each with how it fits the idea of a country changing i
 
 ### 21. A question from memory
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 21 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 21 of 100*
 
 [reviewers only: card kind `check`, id `chk-lw-reform`]
 
@@ -538,7 +538,7 @@ These are the four facts, each with how it fits the idea of a country changing i
 
 ### 22. Two amendments of the same year
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 22 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 22 of 100*
 
 [reviewers only: card kind `lookalike`, id `look-laws`]
 
@@ -581,7 +581,7 @@ Is it about a tax, or about how senators are chosen?
 
 ### 23. A line of seven landmarks, from 1917 to 2001
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 23 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 23 of 100*
 
 [reviewers only: card kind `concept`, id `con-line`]
 
@@ -600,7 +600,7 @@ Three of the landmarks get a group of their own after this one, with what and wh
 
 ### 24. Seven years on one line
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 24 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 24 of 100*
 
 [reviewers only: card kind `facts`, id `facts-line`]
 
@@ -628,7 +628,7 @@ These are the seven years on Kofi’s strip, in order, each with where it sits a
 
 ### 25. A question from memory
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 25 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 25 of 100*
 
 [reviewers only: card kind `check`, id `chk-tl-ww1`]
 
@@ -655,7 +655,7 @@ These are the seven years on Kofi’s strip, in order, each with where it sits a
 
 ### 26. A question from memory
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 26 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 26 of 100*
 
 [reviewers only: card kind `check`, id `chk-tl-depression`]
 
@@ -682,7 +682,7 @@ These are the seven years on Kofi’s strip, in order, each with where it sits a
 
 ### 27. A question from memory
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 27 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 27 of 100*
 
 [reviewers only: card kind `check`, id `chk-tl-pearl`]
 
@@ -709,7 +709,7 @@ These are the seven years on Kofi’s strip, in order, each with where it sits a
 
 ### 28. A question from memory
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 28 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 28 of 100*
 
 [reviewers only: card kind `check`, id `chk-tl-ww2end`]
 
@@ -736,7 +736,7 @@ These are the seven years on Kofi’s strip, in order, each with where it sits a
 
 ### 29. A question from memory
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 29 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 29 of 100*
 
 [reviewers only: card kind `check`, id `chk-tl-coldstart`]
 
@@ -763,7 +763,7 @@ These are the seven years on Kofi’s strip, in order, each with where it sits a
 
 ### 30. A question from memory
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 30 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 30 of 100*
 
 [reviewers only: card kind `check`, id `chk-tl-coldend`]
 
@@ -790,7 +790,7 @@ These are the seven years on Kofi’s strip, in order, each with where it sits a
 
 ### 31. A question from memory
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 31 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 31 of 100*
 
 [reviewers only: card kind `check`, id `chk-tl-attack`]
 
@@ -817,7 +817,7 @@ These are the seven years on Kofi’s strip, in order, each with where it sits a
 
 ### 32. Two years in which the country entered a war
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 32 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 32 of 100*
 
 [reviewers only: card kind `lookalike`, id `look-line`]
 
@@ -866,7 +866,7 @@ Is it the first of the two world wars, or the attack that brought the country in
 
 ### 33. Hard times, and what was done about them
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 33 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 33 of 100*
 
 [reviewers only: card kind `concept`, id `con-hard`]
 
@@ -880,12 +880,12 @@ Ines’s card is one small piece of a very large change, and the change began wi
 
 The President’s answer was a set of new programmes called the New Deal, and the President was Franklin D. Roosevelt. Social Security, the programme named on Ines’s card, is the example that this course holds. New programmes such as Social Security were run by new federal offices, and an office of that kind is called an *agency*.
 
-The result was that the federal government took a far larger role in daily life. The key’s name for what these new offices did is **Carrying out the law**: putting laws into practice, at a scale that the founders never saw. The four facts below are the trouble, the answer, the President and the example.
+The result was that the federal government took a far larger role in daily life. The name for what these new offices did is **Carrying out the law**: putting laws into practice, at a scale that the founders never saw. The four facts below are the trouble, the answer, the President and the example.
 
 
 ### 34. The Depression and the New Deal
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 34 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 34 of 100*
 
 [reviewers only: card kind `facts`, id `facts-hard`]
 
@@ -907,7 +907,7 @@ These are the four names of the group, each with how it fits the idea of hard ti
 
 ### 35. A question from memory
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 35 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 35 of 100*
 
 [reviewers only: card kind `check`, id `chk-hd-depression`]
 
@@ -928,7 +928,7 @@ These are the four names of the group, each with how it fits the idea of hard ti
 
 ### 36. A question from memory
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 36 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 36 of 100*
 
 [reviewers only: card kind `check`, id `chk-hd-newdeal`]
 
@@ -949,7 +949,7 @@ These are the four names of the group, each with how it fits the idea of hard ti
 
 ### 37. A question from memory
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 37 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 37 of 100*
 
 [reviewers only: card kind `check`, id `chk-hd-roosevelt`]
 
@@ -970,7 +970,7 @@ These are the four names of the group, each with how it fits the idea of hard ti
 
 ### 38. A question from memory
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 38 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 38 of 100*
 
 [reviewers only: card kind `check`, id `chk-hd-security`]
 
@@ -991,7 +991,7 @@ These are the four names of the group, each with how it fits the idea of hard ti
 
 ### 39. The trouble and the answer to it
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 39 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 39 of 100*
 
 [reviewers only: card kind `lookalike`, id `look-hard`]
 
@@ -1034,7 +1034,7 @@ Is it the trouble itself, or what was done about it?
 
 ### 40. A long standoff, and the wars in it
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 40 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 40 of 100*
 
 [reviewers only: card kind `concept`, id `con-cold`]
 
@@ -1053,7 +1053,7 @@ Notice what the facts below do not hold: how the standoff began, why each war wa
 
 ### 41. The Cold War in four names
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 41 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 41 of 100*
 
 [reviewers only: card kind `facts`, id `facts-cold`]
 
@@ -1075,7 +1075,7 @@ These are the four names of the group, each with how it fits the idea of a long 
 
 ### 42. A question from memory
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 42 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 42 of 100*
 
 [reviewers only: card kind `check`, id `chk-cw-name`]
 
@@ -1096,7 +1096,7 @@ These are the four names of the group, each with how it fits the idea of a long 
 
 ### 43. A question from memory
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 43 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 43 of 100*
 
 [reviewers only: card kind `check`, id `chk-cw-rival`]
 
@@ -1117,7 +1117,7 @@ These are the four names of the group, each with how it fits the idea of a long 
 
 ### 44. A question from memory
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 44 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 44 of 100*
 
 [reviewers only: card kind `check`, id `chk-cw-wars`]
 
@@ -1138,7 +1138,7 @@ These are the four names of the group, each with how it fits the idea of a long 
 
 ### 45. A question from memory
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 45 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 45 of 100*
 
 [reviewers only: card kind `check`, id `chk-cw-policy`]
 
@@ -1159,7 +1159,7 @@ These are the four names of the group, each with how it fits the idea of a long 
 
 ### 46. The civil rights movement: a court, a law and many people
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 46 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 46 of 100*
 
 [reviewers only: card kind `concept`, id `con-civil`]
 
@@ -1173,14 +1173,14 @@ Amir’s daughter has the three parts of the answer in her question already: a c
 
 Segregation means keeping people of different races apart, as when Black and white children were kept in separate public schools. The movement pushed to end that, and to end discrimination, which means treating people worse because of their race.
 
-The court was the Supreme Court. In 1954 it ruled, in a case called Brown v. Board of Education, that separate public schools for Black and white children are unequal. In the key’s words, that is **Judicial review**: a court checking a law against the Constitution. The people included Martin Luther King Jr. and thousands of others, who led marches and boycotts. A boycott is a refusal, by a group, to use or buy something, in order to press for a change. The law was the Civil Rights Act of 1964, passed by Congress, which outlaws segregation and discrimination. And in March 1965 marchers set out from Selma, Alabama, toward the state capital to demand the right to vote. The Voting Rights Act, which Congress passed months later, belongs to the groups on the vote, a little further on.
+The court was the Supreme Court. In 1954 it ruled, in a case called Brown v. Board of Education, that separate public schools for Black and white children are unequal. That is called **Judicial review**: a court checking a law against the Constitution. The people included Martin Luther King Jr. and thousands of others, who led marches and boycotts. A boycott is a refusal, by a group, to use or buy something, in order to press for a change. The law was the Civil Rights Act of 1964, passed by Congress, which outlaws segregation and discrimination. And in March 1965 marchers set out from Selma, Alabama, toward the state capital to demand the right to vote. The Voting Rights Act, which Congress passed months later, belongs to the groups on the vote, a little further on.
 
 The five facts below are the ruling, the leader, the law, the town and what the movement pushed to end.
 
 
 ### 47. Five names of the civil rights movement
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 47 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 47 of 100*
 
 [reviewers only: card kind `facts`, id `facts-civil`]
 
@@ -1196,7 +1196,7 @@ These are the five names of the group, each with how it fits the movement to end
 
 **How each fact fits the idea**
 
-- **Brown v. Board of Education**: A court was asked about a law and checked it against the Constitution, which the key calls **Judicial review**. It is the court landmark of the movement, ten years before the law of 1964.
+- **Brown v. Board of Education**: A court was asked about a law and checked it against the Constitution, which is called **Judicial review**. It is the court landmark of the movement, ten years before the law of 1964.
 - **Martin Luther King Jr.**: The movement was the work of many people, and he is the leader that this course names. Marches and boycotts are two of the ways in which the movement pushed.
 - **The Civil Rights Act of 1964**: It outlaws segregation and discrimination. It is Congress writing the rules, which is a different job from the court’s ruling in 1954.
 - **Selma, Alabama**: The marchers set out toward the state capital. Months later Congress passed the Voting Rights Act, and federal examiners began registering Black voters across the South.
@@ -1204,7 +1204,7 @@ These are the five names of the group, each with how it fits the movement to end
 
 ### 48. A question from memory
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 48 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 48 of 100*
 
 [reviewers only: card kind `check`, id `chk-cr-brown`]
 
@@ -1218,7 +1218,7 @@ These are the five names of the group, each with how it fits the movement to end
 
 **Shown as soon as you answer**
 
-- The answer: **Brown v. Board of Education**. Why: A court was asked about a law and checked it against the Constitution, which the key calls **Judicial review**. It is the court landmark of the movement, ten years before the law of 1964.
+- The answer: **Brown v. Board of Education**. Why: A court was asked about a law and checked it against the Constitution, which is called **Judicial review**. It is the court landmark of the movement, ten years before the law of 1964.
   - If you chose Martin Luther King Jr.: You chose **Martin Luther King Jr.**. That is the answer to a different fact: Which leader, together with thousands of others, led the marches and boycotts of the movement?
   - If you chose The Civil Rights Act of 1964: You chose **The Civil Rights Act of 1964**. That is the answer to a different fact: Which 1964 law, passed by Congress, outlawed discrimination?
   - If you chose Selma, Alabama: You chose **Selma, Alabama**. That is the answer to a different fact: From which Alabama town did marchers set out in March 1965 to demand the right to vote?
@@ -1227,7 +1227,7 @@ These are the five names of the group, each with how it fits the movement to end
 
 ### 49. A question from memory
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 49 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 49 of 100*
 
 [reviewers only: card kind `check`, id `chk-cr-king`]
 
@@ -1250,7 +1250,7 @@ These are the five names of the group, each with how it fits the movement to end
 
 ### 50. A question from memory
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 50 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 50 of 100*
 
 [reviewers only: card kind `check`, id `chk-cr-act`]
 
@@ -1273,7 +1273,7 @@ These are the five names of the group, each with how it fits the movement to end
 
 ### 51. A question from memory
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 51 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 51 of 100*
 
 [reviewers only: card kind `check`, id `chk-cr-selma`]
 
@@ -1296,7 +1296,7 @@ These are the five names of the group, each with how it fits the movement to end
 
 ### 52. A question from memory
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 52 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 52 of 100*
 
 [reviewers only: card kind `check`, id `chk-cr-end`]
 
@@ -1319,7 +1319,7 @@ These are the five names of the group, each with how it fits the movement to end
 
 ### 53. A court’s ruling and a law of Congress
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 53 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 53 of 100*
 
 [reviewers only: card kind `lookalike`, id `look-civil`]
 
@@ -1357,7 +1357,7 @@ Was it a ruling by a court, or a law passed by lawmakers?
 |---|---|---|
 | Asked | Which 1954 ruling of the Supreme Court said that separate public schools for Black and white children are unequal? | Which 1964 law, passed by Congress, outlawed discrimination? |
 | The answer | Brown v. Board of Education | The Civil Rights Act of 1964 |
-| How it fits | A court was asked about a law and checked it against the Constitution, which the key calls **Judicial review**. It is the court landmark of the movement, ten years before the law of 1964. | It outlaws segregation and discrimination. It is Congress writing the rules, which is a different job from the court’s ruling in 1954. |
+| How it fits | A court was asked about a law and checked it against the Constitution, which is called **Judicial review**. It is the court landmark of the movement, ten years before the law of 1964. | It outlaws segregation and discrimination. It is Congress writing the rules, which is a different job from the court’s ruling in 1954. |
 
 
 *End of part 3. You can stop here; your place is kept. Next: part 4, September 11, and the right to vote in years.*
@@ -1368,7 +1368,7 @@ Was it a ruling by a court, or a law passed by lawmakers?
 
 ### 54. September 11, 2001: what happened that day
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 54 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 54 of 100*
 
 [reviewers only: card kind `concept`, id `con-attack`]
 
@@ -1387,7 +1387,7 @@ Afterward the country made new security rules, created a new federal department 
 
 ### 55. Five facts about September 11
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 55 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 55 of 100*
 
 [reviewers only: card kind `facts`, id `facts-attack`]
 
@@ -1411,7 +1411,7 @@ These are the five facts of the group, each with how it fits what happened that 
 
 ### 56. A question from memory
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 56 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 56 of 100*
 
 [reviewers only: card kind `check`, id `chk-nn-planes`]
 
@@ -1434,7 +1434,7 @@ These are the five facts of the group, each with how it fits what happened that 
 
 ### 57. A question from memory
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 57 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 57 of 100*
 
 [reviewers only: card kind `check`, id `chk-nn-targets`]
 
@@ -1457,7 +1457,7 @@ These are the five facts of the group, each with how it fits what happened that 
 
 ### 58. A question from memory
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 58 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 58 of 100*
 
 [reviewers only: card kind `check`, id `chk-nn-dead`]
 
@@ -1480,7 +1480,7 @@ These are the five facts of the group, each with how it fits what happened that 
 
 ### 59. A question from memory
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 59 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 59 of 100*
 
 [reviewers only: card kind `check`, id `chk-nn-dept`]
 
@@ -1503,7 +1503,7 @@ These are the five facts of the group, each with how it fits what happened that 
 
 ### 60. A question from memory
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 60 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 60 of 100*
 
 [reviewers only: card kind `check`, id `chk-nn-immig`]
 
@@ -1526,7 +1526,7 @@ These are the five facts of the group, each with how it fits what happened that 
 
 ### 61. The right to vote was widened five times: in what years
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 61 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 61 of 100*
 
 [reviewers only: card kind `concept`, id `con-vote`]
 
@@ -1545,7 +1545,7 @@ Two of the five years are one year apart, 1964 and 1965, and one pair of them is
 
 ### 62. Five years in which the vote was widened
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 62 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 62 of 100*
 
 [reviewers only: card kind `facts`, id `facts-vote`]
 
@@ -1569,7 +1569,7 @@ These are the five years of the group, each with how it fits the story of the vo
 
 ### 63. A question from memory
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 63 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 63 of 100*
 
 [reviewers only: card kind `check`, id `chk-vy-race`]
 
@@ -1592,7 +1592,7 @@ These are the five years of the group, each with how it fits the story of the vo
 
 ### 64. A question from memory
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 64 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 64 of 100*
 
 [reviewers only: card kind `check`, id `chk-vy-sex`]
 
@@ -1615,7 +1615,7 @@ These are the five years of the group, each with how it fits the story of the vo
 
 ### 65. A question from memory
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 65 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 65 of 100*
 
 [reviewers only: card kind `check`, id `chk-vy-poll`]
 
@@ -1638,7 +1638,7 @@ These are the five years of the group, each with how it fits the story of the vo
 
 ### 66. A question from memory
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 66 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 66 of 100*
 
 [reviewers only: card kind `check`, id `chk-vy-vra`]
 
@@ -1661,7 +1661,7 @@ These are the five years of the group, each with how it fits the story of the vo
 
 ### 67. A question from memory
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 67 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 67 of 100*
 
 [reviewers only: card kind `check`, id `chk-vy-age`]
 
@@ -1684,7 +1684,7 @@ These are the five years of the group, each with how it fits the story of the vo
 
 ### 68. The promise written down, and the promise made real
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 68 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 68 of 100*
 
 [reviewers only: card kind `lookalike`, id `look-vote`]
 
@@ -1733,7 +1733,7 @@ Is it when the promise was written down, or when it was made real?
 
 ### 69. Who was behind the widenings of the vote
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 69 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 69 of 100*
 
 [reviewers only: card kind `concept`, id `con-who`]
 
@@ -1747,12 +1747,12 @@ Ilse’s trouble is that she knows the dates but not the people. A widening of t
 
 At the start, the people who could mostly vote were white men who owned property. The campaign for women’s right to vote began in 1848 and was led by Susan B. Anthony, Elizabeth Cady Stanton and others, most of whom did not live to see it succeed in 1920. In 1965 it was Congress that passed the Voting Rights Act, and after it federal examiners began registering Black voters across the South.
 
-The last two are worth setting side by side. The lawmakers wrote the law, and the examiners, who are federal officials, did the work of registering voters. In the key’s words, putting a law into practice is **Carrying out the law**, and here it is applied to a right. The four facts below are the starting point, the campaigners, the lawmakers and the examiners.
+The last two are worth setting side by side. The lawmakers wrote the law, and the examiners, who are federal officials, did the work of registering voters. Putting a law into practice is **Carrying out the law**, and here it is applied to a right. The four facts below are the starting point, the campaigners, the lawmakers and the examiners.
 
 
 ### 70. Four facts about who was behind the vote
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 70 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 70 of 100*
 
 [reviewers only: card kind `facts`, id `facts-who`]
 
@@ -1774,7 +1774,7 @@ These are the four facts about who was behind the vote, each with how it fits th
 
 ### 71. A question from memory
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 71 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 71 of 100*
 
 [reviewers only: card kind `check`, id `chk-vw-founding`]
 
@@ -1795,7 +1795,7 @@ These are the four facts about who was behind the vote, each with how it fits th
 
 ### 72. A question from memory
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 72 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 72 of 100*
 
 [reviewers only: card kind `check`, id `chk-vw-campaign`]
 
@@ -1816,7 +1816,7 @@ These are the four facts about who was behind the vote, each with how it fits th
 
 ### 73. A question from memory
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 73 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 73 of 100*
 
 [reviewers only: card kind `check`, id `chk-vw-congress`]
 
@@ -1837,7 +1837,7 @@ These are the four facts about who was behind the vote, each with how it fits th
 
 ### 74. A question from memory
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 74 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 74 of 100*
 
 [reviewers only: card kind `check`, id `chk-vw-examiners`]
 
@@ -1858,7 +1858,7 @@ These are the four facts about who was behind the vote, each with how it fits th
 
 ### 75. The lawmakers and the examiners
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 75 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 75 of 100*
 
 [reviewers only: card kind `lookalike`, id `look-who`]
 
@@ -1901,7 +1901,7 @@ Did they write the law, or did they put it into practice by registering voters?
 
 ### 76. A promise, and ninety-five years
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 76 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 76 of 100*
 
 [reviewers only: card kind `concept`, id `con-gap`]
 
@@ -1920,7 +1920,7 @@ Two more numbers belong with it: 1848, the year that the campaign for women’s 
 
 ### 77. Three numbers of the long struggle for the vote
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 77 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 77 of 100*
 
 [reviewers only: card kind `facts`, id `facts-gap`]
 
@@ -1940,7 +1940,7 @@ These are the three numbers of the group, each with how it fits the idea of a ri
 
 ### 78. A question from memory
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 78 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 78 of 100*
 
 [reviewers only: card kind `check`, id `chk-vg-gap`]
 
@@ -1959,7 +1959,7 @@ These are the three numbers of the group, each with how it fits the idea of a ri
 
 ### 79. A question from memory
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 79 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 79 of 100*
 
 [reviewers only: card kind `check`, id `chk-vg-start`]
 
@@ -1978,7 +1978,7 @@ These are the three numbers of the group, each with how it fits the idea of a ri
 
 ### 80. A question from memory
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 80 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 80 of 100*
 
 [reviewers only: card kind `check`, id `chk-vg-age`]
 
@@ -2003,7 +2003,7 @@ These are the three numbers of the group, each with how it fits the idea of a ri
 
 ### 81. What the flag, July 4 and the statue stand for
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 81 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 81 of 100*
 
 [reviewers only: card kind `concept`, id `con-flag`]
 
@@ -2022,7 +2022,7 @@ The Statue of Liberty is a symbol too. It became a symbol of welcome in the year
 
 ### 82. What four symbols stand for
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 82 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 82 of 100*
 
 [reviewers only: card kind `facts`, id `facts-flag`]
 
@@ -2044,7 +2044,7 @@ These are the four facts of the group, each with how it fits the idea that a sym
 
 ### 83. A question from memory
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 83 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 83 of 100*
 
 [reviewers only: card kind `check`, id `chk-sy-stripes`]
 
@@ -2065,7 +2065,7 @@ These are the four facts of the group, each with how it fits the idea that a sym
 
 ### 84. A question from memory
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 84 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 84 of 100*
 
 [reviewers only: card kind `check`, id `chk-sy-stars`]
 
@@ -2086,7 +2086,7 @@ These are the four facts of the group, each with how it fits the idea that a sym
 
 ### 85. A question from memory
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 85 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 85 of 100*
 
 [reviewers only: card kind `check`, id `chk-sy-july`]
 
@@ -2107,7 +2107,7 @@ These are the four facts of the group, each with how it fits the idea that a sym
 
 ### 86. A question from memory
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 86 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 86 of 100*
 
 [reviewers only: card kind `check`, id `chk-sy-statue`]
 
@@ -2128,7 +2128,7 @@ These are the four facts of the group, each with how it fits the idea that a sym
 
 ### 87. Thirteen stripes and fifty stars
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 87 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 87 of 100*
 
 [reviewers only: card kind `lookalike`, id `look-flag`]
 
@@ -2171,7 +2171,7 @@ Does it count how the country began, or what it is made of now?
 
 ### 88. Five names a newcomer is expected to know
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 88 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 88 of 100*
 
 [reviewers only: card kind `concept`, id `con-names`]
 
@@ -2190,7 +2190,7 @@ The five facts below are the five names: the capital, the anthem, the two partie
 
 ### 89. Five names
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 89 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 89 of 100*
 
 [reviewers only: card kind `facts`, id `facts-names`]
 
@@ -2214,7 +2214,7 @@ These are the five names of the group, each with where you meet it.
 
 ### 90. A question from memory
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 90 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 90 of 100*
 
 [reviewers only: card kind `check`, id `chk-nm-capital`]
 
@@ -2237,7 +2237,7 @@ These are the five names of the group, each with where you meet it.
 
 ### 91. A question from memory
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 91 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 91 of 100*
 
 [reviewers only: card kind `check`, id `chk-nm-anthem`]
 
@@ -2260,7 +2260,7 @@ These are the five names of the group, each with where you meet it.
 
 ### 92. A question from memory
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 92 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 92 of 100*
 
 [reviewers only: card kind `check`, id `chk-nm-parties`]
 
@@ -2283,7 +2283,7 @@ These are the five names of the group, each with where you meet it.
 
 ### 93. A question from memory
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 93 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 93 of 100*
 
 [reviewers only: card kind `check`, id `chk-nm-france`]
 
@@ -2306,7 +2306,7 @@ These are the five names of the group, each with where you meet it.
 
 ### 94. A question from memory
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 94 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 94 of 100*
 
 [reviewers only: card kind `check`, id `chk-nm-harbor`]
 
@@ -2329,7 +2329,7 @@ These are the five names of the group, each with where you meet it.
 
 ### 95. Fifty states, and places that are not states
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 95 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 95 of 100*
 
 [reviewers only: card kind `concept`, id `con-states`]
 
@@ -2348,7 +2348,7 @@ This unit does not say how they differ, because this course holds nothing about 
 
 ### 96. The states and the territories
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 96 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 96 of 100*
 
 [reviewers only: card kind `facts`, id `facts-states`]
 
@@ -2368,7 +2368,7 @@ These are the three facts of the group, each with how it fits the map of the cou
 
 ### 97. A question from memory
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 97 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 97 of 100*
 
 [reviewers only: card kind `check`, id `chk-st-count`]
 
@@ -2387,7 +2387,7 @@ These are the three facts of the group, each with how it fits the map of the cou
 
 ### 98. A question from memory
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 98 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 98 of 100*
 
 [reviewers only: card kind `check`, id `chk-st-def`]
 
@@ -2406,7 +2406,7 @@ These are the three facts of the group, each with how it fits the map of the cou
 
 ### 99. A question from memory
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 99 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 99 of 100*
 
 [reviewers only: card kind `check`, id `chk-st-rights`]
 
@@ -2943,7 +2943,7 @@ The cards are out of view from here. The drill has one stage. Nothing here is gr
 
 **Shown as soon as you answer**
 
-- The answer: **Brown v. Board of Education**. Why: A court was asked about a law and checked it against the Constitution, which the key calls **Judicial review**. It is the court landmark of the movement, ten years before the law of 1964.
+- The answer: **Brown v. Board of Education**. Why: A court was asked about a law and checked it against the Constitution, which is called **Judicial review**. It is the court landmark of the movement, ten years before the law of 1964.
   - If you chose Martin Luther King Jr.: You chose **Martin Luther King Jr.**. That is the answer to a different fact: Which leader, together with thousands of others, led the marches and boycotts of the movement?
   - If you chose The Civil Rights Act of 1964: You chose **The Civil Rights Act of 1964**. That is the answer to a different fact: Which 1964 law, passed by Congress, outlawed discrimination? Both are landmarks of the civil rights movement, and both were aimed at segregation and discrimination. One is a ruling by a court in 1954: **Brown v. Board of Education**. The other is a law passed by Congress in 1964: **The Civil Rights Act of 1964**. Was it a ruling by a court, or a law passed by lawmakers?
   - If you chose Selma, Alabama: You chose **Selma, Alabama**. That is the answer to a different fact: From which Alabama town did marchers set out in March 1965 to demand the right to vote?
@@ -3537,11 +3537,11 @@ The cards are out of view from here. The drill has one stage. Nothing here is gr
   - If you chose Part of the United States that is not a state: You chose **Part of the United States that is not a state**. That is the answer to a different fact: What is a territory of the United States, such as Guam?
 - Taught on: “The states and the territories” (one tap opens the card).
 
-**When the drill ends.** The learner sees their own results: first-try accuracy for each stage, whole routes beside single questions, the pair of names they mixed up most often, and what will come back and when. Anything missed was asked again before the drill ended. Nothing here is graded. A miss only decides what comes back.
+**When the drill ends.** The learner sees their own results: first-try accuracy for each stage, whole cases beside single questions, the pair of names they mixed up most often, and what will come back and when. Anything missed was asked again before the drill ended. Nothing here is graded. A miss only decides what comes back.
 
 ### 100. What to carry away
 
-*Unit Ten · rev 1 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 100 of 100*
+*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 100 of 100*
 
 [reviewers only: card kind `recap`, id `recap-since`]
 
@@ -3664,5 +3664,5 @@ You have now met every fact in the unit, in its group. This card puts them toget
 
 ## After the unit: what comes back on later days
 
-A name that is due returns as a case the learner has not seen, next to a case of the name they most often confuse it with. Each is run as a whole route. These are the fresh cases held back for that purpose: three for each name, one for each scheduled return. The first return is about two days after the drill, the next about a week after that, the next about three and a half weeks later.
+A name that is due returns as a case the learner has not seen, next to a case of the name they most often confuse it with. Each is run as a whole case: every question, then the name. These are the fresh cases held back for that purpose: three for each name, one for each scheduled return. The first return is about two days after the drill, the next about a week after that, the next about three and a half weeks later.
 

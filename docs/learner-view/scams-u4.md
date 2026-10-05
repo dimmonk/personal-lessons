@@ -1,15 +1,15 @@
 # Learner view: Scams & Social Engineering, Unit Four: Pay or send money
 
-*Nine names for a request for money: eight kinds of scam, and the real request that they copy.* Unit revision 1, built to lesson standard 1, status: draft.
+*Nine names for a request for money: eight kinds of scam, and the real request that they copy.* Unit revision 2, built to lesson standard 1, status: draft.
 
 This file is generated from the data files by `tools/render-learner-view.mjs`. It shows every screen in the order a learner meets it. In the app one card is on screen at a time and the learner moves on when ready.
 
-- **Bold text in quotation marks** is the key’s own wording, printed from `key.js`. Bold names are the outcome names from the same file. Neither is typed anywhere else. "What you must be able to point to" lines and "How to tell them apart" lines are also printed from one place each (the key and the look-alike ledger).
+- **Bold text in quotation marks** is the subject’s own wording for its questions and answers, written once and printed everywhere. Bold names are the names, written once in the same place. Neither is typed anywhere else. "What you must be able to point to" lines and "How to tell them apart" lines are also printed from one place each (the subject’s questions and the pairs it compares).
 - ⟦Double brackets⟧ show the words the app marks in a case (one highlight style everywhere).
 - The line in italics under each heading is the app’s top bar. The line in square brackets after it is for reviewers and is not shown to the learner.
 - Headings, prompt wording and stage instructions that are the same in every unit are the app’s wording, not this unit’s.
 - "Shown as soon as you …" is what appears the moment the learner answers. Nothing is hidden behind a second tap the first time a case is met, or after a miss.
-- After every answer the app shows, in this order: the right answer in the key’s words; the reason, quoting the marked words; for a name, why the nearest wrong name fails; after a miss, a line about the answer the learner chose; and last a link to the card that taught it. Where a line about the learner’s own choice is not written for the case, the app builds it from the key, and this file says so in place of repeating it.
+- After every answer the app shows, in this order: the right answer; the reason, quoting the marked words; for a name, why the nearest wrong name fails; after a miss, a line about the answer the learner chose; and last a link to the card that taught it. Where a line about the learner’s own choice is not written for the case, the app builds it from the answers’ own wording, and this file says so in place of repeating it.
 
 ---
 
@@ -17,7 +17,7 @@ This file is generated from the data files by `tools/render-learner-view.mjs`. I
 
 ### 1. Money: what is the request for, and what does it ask you to do with it?
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 1 of 62*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 1 of 62*
 
 [reviewers only: card kind `orient`, id `orient`]
 
@@ -27,15 +27,15 @@ The request can come as a text, an email, a letter, a phone call or a message fr
 
 You already meet these. A text says that a parcel is waiting and a small fee must be paid. Your builder emails an invoice. Someone you have only ever met online is in trouble. A caller says that you owe tax and that someone will come to your door. A buyer for your old bike pays you too much. Every one of them asks for money, and every one of them can be real or can be a copy.
 
-In the first unit you learned to ask what a message asks you to do. This unit starts from one of its answers: **“Pay or send money”**. It is the answer where most is at stake, because money sent by bank transfer, in cash, in gift cards or in crypto is usually very hard to get back. That is why this part of the key has two questions and not one: what the request says the money is for, and what it asks you to do with the money.
+In the first unit you learned to ask what a message asks you to do. This unit starts from one of its answers: **“Pay or send money”**. It is the answer where most is at stake, because money sent by bank transfer, in cash, in gift cards or in crypto is usually very hard to get back. That is why there are two questions here and not one: what the request says the money is for, and what it asks you to do with the money.
 
-There are nine names to learn here, and one of them is not a scam. The real request to pay has a name of its own because real requests come with the same reasons as the copies: a bill, a fine, a deal. If the key had no place for them, you would have to treat every bill as a scam, and a person who suspects everything soon stops checking anything.
+There are nine names to learn here, and one of them is not a scam. The real request to pay has a name of its own because real requests come with the same reasons as the copies: a bill, a fine, a deal. If the questions had no place for them, you would have to treat every bill as a scam, and a person who suspects everything soon stops checking anything.
 
 Two things hold all the way through. The first is that what makes a request real is not how it looks. It is whether it holds up when you contact the person or the company yourself, through *a way you already had*. That is what *the check* means. The second is that every question in this unit can be answered at the moment the request arrives, from the request itself, before any money leaves your account.
 
-Many scams show more of themselves afterwards: a withdrawal that is refused, a buyer’s payment that vanishes, a second request for more. That is how many people notice, and by then the money has gone. The key leaves all of that out and asks only about what you can see on the day. Each name is told in the order in which it really happens, with what you can see when the request arrives marked apart from what only shows later.
+Many scams show more of themselves afterwards: a withdrawal that is refused, a buyer’s payment that vanishes, a second request for more. That is how many people notice, and by then the money has gone. The questions leave all of that out and ask only about what you can see on the day. Each name is told in the order in which it really happens, with what you can see when the request arrives marked apart from what only shows later.
 
-**What Unit One taught, in one place.** The key’s first question is **“What is it asking you to do right now?”** Its answers:
+**What Unit One taught, in one place.** The first question is **“What is it asking you to do right now?”** Its answers:
 
 - **“Install something, open a file, or share your screen”**: give this answer when it asks you to install a program or an app, to open or run a file, or to let someone see or control your screen, or it warns that your device has a problem and gives you someone to ring to fix it.
 - **“Sign in, give a code, or allow an app”**: give this answer when it asks you to sign in, to give a one-time code by typing it, reading it out or sending it on, or to press Allow so that an app can use one of your accounts.
@@ -43,11 +43,11 @@ Many scams show more of themselves afterwards: a withdrawal that is refused, a b
 - **“Tell them about yourself”**: give this answer when it asks for facts about you: a document, an ID or card number, your date of birth or address, or your work, home and family.
 - **“Nothing: it only tells you something”**: give this answer when it tells you that something has happened or will happen and asks you to do nothing, and anything it suggests uses only what you already had, such as the app on your phone or the number on your card.
 
-Unit One also taught that two things are marked separately: the name you give a case, and your route to it, meaning the answers you gave to the key’s questions on the way.
+Two things are marked separately: the name you give a case, and your answers to the questions on the way to it.
 
 *(One tap on any of these lines opens the card in Unit One that taught it.)*
 
-**The part of the key this unit teaches.** This is a preview. You are not expected to follow it yet: every line is explained on the cards that come next. The question and its answers are in the key’s own words. Beside each answer, in plain words, is the thing it leads to. There are nine of them, and each gets its name when it is taught.
+**The questions this unit teaches.** This is a preview. You are not expected to follow it yet: every line is explained on the cards that come next. The question and its answers are worded exactly as you will meet them. Beside each answer, in plain words, is the thing it leads to. There are nine of them, and each gets its name when it is taught.
 
 What does the request say the money is for?
 - An investment or an emergency of someone you know only online → an online friend’s investment site that keeps your money · an online partner’s emergency that needs your money
@@ -85,13 +85,13 @@ The unit has five parts, and you can stop after any of them.
 2. Money that is waiting for you, or that you lost
 3. A bill, a fine or a deal: the real request, and two quiet copies
 4. A bill, a fine or a deal: a threat, and a buyer who pays too much
-5. The key’s two questions about money, three whole cases, then the drill
+5. The two questions about money, three whole cases, then the drill
 
 Each name is taught through cases first. After every step you answer one question about a new case, and the answer and the reason are shown straight away. Nothing here is graded. A miss only decides what comes back.
 
 ### 2. An online partner’s emergency that needs your money
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 2 of 62*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 2 of 62*
 
 [reviewers only: card kind `meet`, id `meet-romance`]
 
@@ -116,11 +116,11 @@ Notice what Ana could point to on the day the request arrived. Daniel is someone
 
 **What you must be able to point to.** Someone you know only online and have never met in person, and an emergency of theirs that you are asked to pay for. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What does the request say the money is for?”**
+**The question:** **“What does the request say the money is for?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“An investment or an emergency of someone you know only online”**
+**Its answer for a case like this one:** **“An investment or an emergency of someone you know only online”**
 
-**The key also asks, and this is its answer for a case like this one:** **“What does it ask you to do with the money?”** **“Pay for an emergency of someone you have never met”**
+**There is also this question, and its answer for a case like this one:** **“What does it ask you to do with the money?”** **“Pay for an emergency of someone you have never met”**
 
 The name for this is **Romance scam**. The relationship is the tool: the money is asked for in the name of a partner who has become real to the person who pays.
 
@@ -128,7 +128,7 @@ You may also hear this called “dating scam” or “sweetheart scam”. Those 
 
 ### 3. Romance scam: the same thing in a different story
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 3 of 62*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 3 of 62*
 
 [reviewers only: card kind `again`, id `again-romance`]
 
@@ -163,7 +163,7 @@ The stories share nothing else, so the kind of trouble does not matter. A ticket
 
 ### 4. The story never decides the answer
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 4 of 62*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 4 of 62*
 
 [reviewers only: card kind `lens`, id `lens`]
 
@@ -173,15 +173,15 @@ Every case in this unit has two layers. The top layer is the story: love, a bill
 
 The nine names belong to the layer underneath. Any story can carry any name, and a real request and its copy can use the same story: a builder’s invoice, a parcel fee, a letter from the tax office. A friendly message can be a scam and a frightening one can be real.
 
-From here on the cases change their stories on purpose, and some of them are real requests. Whether a request is real is not something you read off its story. You find it out by contacting the person or the company yourself, and this unit teaches you when and how. What the key adds is a name for each kind of request, so that you know what to look for and what to do.
+From here on the cases change their stories on purpose, and some of them are real requests. Whether a request is real is not something you read off its story. You find it out by contacting the person or the company yourself, and this unit teaches you when and how. What the questions add is a name for each kind of request, so that you know what to look for and what to do.
 
-**Stays the same from case to case:** what the request says the money is for, and what it asks you to do with the money, which are what the key asks: **“What does the request say the money is for?”** and **“What does it ask you to do with the money?”**
+**Stays the same from case to case:** what the request says the money is for, and what it asks you to do with the money, which are the questions: **“What does the request say the money is for?”** and **“What does it ask you to do with the money?”**
 
 **Changes on purpose:** the story and the sender; how friendly or frightening it sounds; the amount; how well it is written; whether it is real or a copy.
 
 ### 5. Romance scam: what it is like
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 5 of 62*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 5 of 62*
 
 [reviewers only: card kind `portrait`, id `portrait-romance`]
 
@@ -194,13 +194,13 @@ You know what to point to. This card fills in the rest of the picture, so that y
 - A small favour sometimes comes first: a phone top-up, a parcel to forward. Each yes makes the next request easier to say yes to.
 - Then comes the emergency: a hospital bill, a fine, a ticket home, a blocked card, a customs charge. It is always far away, always urgent, and always something only you can fix, because the person says they cannot reach anyone else.
 - The money is to go by a way that is hard to undo, and often you are asked to keep it private, because your family would “not understand”.
-- Which of this can you see when the request arrives? The months of messages, the person you have never met and the emergency are all in front of you on the day. The next emergency, which follows as soon as you have paid, only shows afterwards. The key does not use it, because by then the money has gone.
+- Which of this can you see when the request arrives? The months of messages, the person you have never met and the emergency are all in front of you on the day. The next emergency, which follows as soon as you have paid, only shows afterwards. The questions do not use it, because by then the money has gone.
 
 **What it is not**
 
 A long friendship that began online is not this name, and neither is a couple who met on a site and have since met in person. This name needs a request for money, for trouble that someone you have never met says is theirs.
 
-A friend or partner whom you know in person, or through people you both know, is outside the key. You can ask the people around them, which is the thing you cannot do for a voice in messages.
+A friend or partner whom you know in person, or through people you both know, is outside these questions. You can ask the people around them, which is the thing you cannot do for a voice in messages.
 
 **Where you will hear it**
 
@@ -222,7 +222,7 @@ If you have already sent money, ring your bank straight away, on the number on t
 
 ### 6. A question about a new case
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 6 of 62*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 6 of 62*
 
 [reviewers only: card kind `check`, id `check-romance`]
 
@@ -238,7 +238,7 @@ The pieces you can tap:
 
 **Shown as soon as you tap**
 
-- If you are right: “Right: ‘My phone and wallet were taken in Lisbon, and my bank has blocked my card’.” The money is for trouble that the writer says is hers: “My phone and wallet were taken in Lisbon, and my bank has blocked my card”. Craig knows her only through an app, and has never seen her on a live call. The key’s answer for this case is **“An investment or an emergency of someone you know only online”**, and the name is **Romance scam**.
+- If you are right: “Right: ‘My phone and wallet were taken in Lisbon, and my bank has blocked my card’.” The money is for trouble that the writer says is hers: “My phone and wallet were taken in Lisbon, and my bank has blocked my card”. Craig knows her only through an app, and has never seen her on a live call. The answer for this case is **“An investment or an emergency of someone you know only online”**, and the name is **Romance scam**.
 - If you miss: “The words are ‘My phone and wallet were taken in Lisbon, and my bank has blocked my card’.” The same reason follows, and then a line about the piece you tapped:
   - “Craig has chatted with a woman called Ioana for five months on a language-learning app”: This is how Craig knows her. It is not what the money is for.
   - “has never seen her on a live call”: This shows that he has never met or seen her live. It is not what the money is for either.
@@ -247,7 +247,7 @@ The pieces you can tap:
 
 ### 7. An online friend’s investment site that keeps your money
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 7 of 62*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 7 of 62*
 
 [reviewers only: card kind `meet`, id `meet-pigbutcher`]
 
@@ -267,19 +267,19 @@ Stripped of its story, the case is this:
 
 Follow the money. In Ana’s case it was to go to Daniel’s side, to pay for his daughter’s hospital. Here it is to go into an app, and Kai says nothing about any trouble of his own. He says that the app will make Lena richer.
 
-The key has two questions about money, and this case shows why. Its first question, what the request says the money is for, gives the same answer here as it gave for Ana, because in both the money comes from, or goes through, a person you know only online. What separates the two cases is the second question, the one at the foot of this card: what the request asks you to do with the money.
+There are two questions about money, and this case shows why. Its first question, what the request says the money is for, gives the same answer here as it gave for Ana, because in both the money comes from, or goes through, a person you know only online. What separates the two cases is the second question, the one at the foot of this card: what the request asks you to do with the money.
 
 The app is not a real market. The profits it shows her are numbers that the scam puts on the page, and the £100 that she took out was paid to her on purpose, to prove that it works. A small amount that comes out is the cheapest part of the scam. It makes the large deposit feel safe.
 
-Everything in that sequence can be seen at the moment of the request: the wrong number, the weeks of chat, the app, the small win, and above all the request itself, to put £6,000 into an app that someone she knows only online showed her. What follows, when Lena tries to take her profit out, only shows afterwards, and by then the money has gone. The key does not use it.
+Everything in that sequence can be seen at the moment of the request: the wrong number, the weeks of chat, the app, the small win, and above all the request itself, to put £6,000 into an app that someone she knows only online showed her. What follows, when Lena tries to take her profit out, only shows afterwards, and by then the money has gone. The questions do not use it.
 
 **What you must be able to point to.** Someone you know only online, a trading or investment site or app that they showed you, and a request to put money into it or to pay it before you can take money out. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What does it ask you to do with the money?”**
+**The question:** **“What does it ask you to do with the money?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“Put it into a trading site or app that they showed you”**
+**Its answer for a case like this one:** **“Put it into a trading site or app that they showed you”**
 
-**The key also asks, and this is its answer for a case like this one:** **“What does the request say the money is for?”** **“An investment or an emergency of someone you know only online”**
+**There is also this question, and its answer for a case like this one:** **“What does the request say the money is for?”** **“An investment or an emergency of someone you know only online”**
 
 The name for this is **Pig-butchering scam**. It comes from the way the scam is run: a person is fed with attention and small wins for weeks, like an animal fattened before the end, and then everything is taken. The word is crude, and it is the one you will see in news reports.
 
@@ -287,7 +287,7 @@ You may also hear this called “investment scam” or “crypto romance scam”
 
 ### 8. Pig-butchering scam: the same thing in a different story
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 8 of 62*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 8 of 62*
 
 [reviewers only: card kind `again`, id `again-pigbutcher`]
 
@@ -322,7 +322,7 @@ The stories share nothing else, so neither the currency nor the name of the plat
 
 ### 9. Pig-butchering scam: what it is like
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 9 of 62*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 9 of 62*
 
 [reviewers only: card kind `portrait`, id `portrait-pigbutcher`]
 
@@ -335,13 +335,13 @@ What you point to is the site or the app that someone you have never met showed 
 - A small deposit goes in and the app shows growth. A small withdrawal works. That is bait: it costs the scammer very little, and it is the best proof they could give you that the app is real.
 - Larger deposits follow, with pressure to keep up: an offer that ends on Friday, a friend who says your family would only try to stop you.
 - When you try to take out the large sum, the app asks for a fee, a tax or a deposit first. Paying it unlocks nothing. Another charge follows, and then silence.
-- Which of this can you see when the request arrives? The friend you have never met, the app they showed you and the request to put money into it are all in front of you on the day. The refused withdrawal only comes afterwards, so the key does not use it.
+- Which of this can you see when the request arrives? The friend you have never met, the app they showed you and the request to put money into it are all in front of you on the day. The refused withdrawal only comes afterwards, so the questions do not use it.
 
 **What it is not**
 
 Not every site that handles investments is this name. A real one is a site you reached yourself, whose firm you can look up on the regulator’s own register, and whose owner did not first make friends with you.
 
-A friend whom you know in person telling you about the fund they use is outside the key. The name needs both parts: someone you know only through messages, and a site or an app that they showed you.
+A friend whom you know in person telling you about the fund they use is outside these questions. The name needs both parts: someone you know only through messages, and a site or an app that they showed you.
 
 **Where you will hear it**
 
@@ -363,7 +363,7 @@ If you have already deposited money, do not pay a fee or a tax to take it out. R
 
 ### 10. A question about a new case
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 10 of 62*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 10 of 62*
 
 [reviewers only: card kind `check`, id `check-pigbutcher`]
 
@@ -379,16 +379,16 @@ The pieces you can tap:
 
 **Shown as soon as you tap**
 
-- If you are right: “Right: ‘Move your savings into it this week’.” Dev is asked to put his savings into a fund that she showed him: “Move your savings into it this week”. The key’s answer for this case is **“Put it into a trading site or app that they showed you”**, and the name is **Pig-butchering scam**.
+- If you are right: “Right: ‘Move your savings into it this week’.” Dev is asked to put his savings into a fund that she showed him: “Move your savings into it this week”. The answer for this case is **“Put it into a trading site or app that they showed you”**, and the name is **Pig-butchering scam**.
 - If you miss: “The words are ‘Move your savings into it this week’.” The same reason follows, and then a line about the piece you tapped:
   - “Dev matched with a woman called Amelia on a dating app”: This is how Dev knows her. It does not say where the money is to go.
   - “and I will guide you through every step”: This is her offer of help. It is not where she asks him to put the money.
-  - “They have never met”: This is something to point to for the first part of the key, but it is not the request.
+  - “They have never met”: This is something to point to for the first question, but it is not the request.
 - Taught on: “An online friend’s investment site that keeps your money” (one tap opens the card).
 
 ### 11. Pig-butchering scam or Romance scam: telling them apart
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 11 of 62*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 11 of 62*
 
 [reviewers only: card kind `lookalike`, id `look-pigbutcher-romance`]
 
@@ -410,7 +410,7 @@ You have met both names. They are easy to mix up: in both, someone you have neve
 
 **Why this one and not the other**
 
-In Case A the £3,000 is to go into a trading app that Theo showed her. It is not for any trouble of his. The key’s answer is **“Put it into a trading site or app that they showed you”**, and the case is **Pig-butchering scam**.
+In Case A the £3,000 is to go into a trading app that Theo showed her. It is not for any trouble of his. The answer is **“Put it into a trading site or app that they showed you”**, and the case is **Pig-butchering scam**.
 
 In Case B the £3,000 is to pay for something of Theo’s own: his sister’s operation. It goes into an account to pay for his trouble, and nothing is invested. The money is for trouble that he says is his, and the case is **Romance scam**.
 
@@ -420,7 +420,7 @@ The amount, the man and the months of messages are the same in both. What differ
 
 Is the money to pay for something that has gone wrong for the person, or is it to be invested in a platform that they pointed me to?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Pig-butchering scam | Romance scam |
 |---|---|---|
@@ -438,7 +438,7 @@ Is the money to pay for something that has gone wrong for the person, or is it t
 
 ### 12. A fee to collect money that is not coming
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 12 of 62*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 12 of 62*
 
 [reviewers only: card kind `meet`, id `meet-advancefee`]
 
@@ -463,11 +463,11 @@ Why would anyone pay? Because the fee is small beside the prize, and because the
 
 **What you must be able to point to.** Money you are told is waiting for you (a prize, an inheritance, a grant, a loan, a payout), and a fee you must pay before any of it reaches you. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What does the request say the money is for?”**
+**The question:** **“What does the request say the money is for?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“A prize, an inheritance, a grant or a loan waiting for you”**
+**Its answer for a case like this one:** **“A prize, an inheritance, a grant or a loan waiting for you”**
 
-**The key also asks, and this is its answer for a case like this one:** **“What does it ask you to do with the money?”** **“Pay a fee before the money reaches you”**
+**There is also this question, and its answer for a case like this one:** **“What does it ask you to do with the money?”** **“Pay a fee before the money reaches you”**
 
 The name for this is **Advance-fee scam**. “Advance” means ahead of time: the fee is paid in advance, before the money arrives, and the money never does.
 
@@ -475,7 +475,7 @@ You may also hear this called “advance fee fraud” or “419 scam” or “lo
 
 ### 13. Advance-fee scam: the same thing in a different story
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 13 of 62*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 13 of 62*
 
 [reviewers only: card kind `again`, id `again-advancefee`]
 
@@ -510,7 +510,7 @@ One of the two people had applied for something and the other had entered nothin
 
 ### 14. Advance-fee scam: what it is like
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 14 of 62*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 14 of 62*
 
 [reviewers only: card kind `portrait`, id `portrait-advancefee`]
 
@@ -551,13 +551,13 @@ Ask yourself who you would be paying, and how you would find them again afterwar
 
 ### 15. A question about a new case
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 15 of 62*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 15 of 62*
 
 [reviewers only: card kind `check`, id `check-advancefee`]
 
 > Sade runs a small bakery. A text arrives: 'You have been selected for a £9,000 grant for small businesses. To receive it, pay a £180 registration fee to the account in this message.'
 
-**The key asks:** **“What does the request say the money is for?”** Which of the answers you have met so far fits this case?
+**The question:** **“What does the request say the money is for?”** Which of the answers you have met so far fits this case?
 
 - An investment or an emergency of someone you know only online
 - A prize, an inheritance, a grant or a loan waiting for you
@@ -571,7 +571,7 @@ Ask yourself who you would be paying, and how you would find them again afterwar
 
 ### 16. A fee to get back money you lost
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 16 of 62*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 16 of 62*
 
 [reviewers only: card kind `meet`, id `meet-recovery`]
 
@@ -598,11 +598,11 @@ Real help with a loss exists: your bank, the police, and a regulated solicitor. 
 
 **What you must be able to point to.** Money you lost earlier, someone who says they can get it back, and a fee you must pay before they do. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What does the request say the money is for?”**
+**The question:** **“What does the request say the money is for?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“Getting back money you lost”**
+**Its answer for a case like this one:** **“Getting back money you lost”**
 
-**The key also asks, and this is its answer for a case like this one:** **“What does it ask you to do with the money?”** **“Pay a fee before the money reaches you”**
+**There is also this question, and its answer for a case like this one:** **“What does it ask you to do with the money?”** **“Pay a fee before the money reaches you”**
 
 The name for this is **Recovery scam**. “Recovery” means getting something back, and the scam is a fee for a recovery that does not happen.
 
@@ -610,7 +610,7 @@ You may also hear this called “recovery room scam” or “fund recovery scam�
 
 ### 17. Recovery scam: the same thing in a different story
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 17 of 62*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 17 of 62*
 
 [reviewers only: card kind `again`, id `again-recovery`]
 
@@ -643,7 +643,7 @@ It makes no difference whether the firm found the person or the person found the
 
 ### 18. Recovery scam: what it is like
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 18 of 62*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 18 of 62*
 
 [reviewers only: card kind `portrait`, id `portrait-recovery`]
 
@@ -684,13 +684,13 @@ If you have already paid, tell your bank at once, and expect to be contacted aga
 
 ### 19. A question about a new case
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 19 of 62*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 19 of 62*
 
 [reviewers only: card kind `check`, id `check-recovery`]
 
 > A year after a man she met online took £7,500 from her, Nora gets a message from a firm that says it hunts down fraudsters. 'Your money has been found,' it says. 'A release fee of £700 will unlock it.'
 
-**The key asks:** **“What does the request say the money is for?”** Which of the answers you have met so far fits this case?
+**The question:** **“What does the request say the money is for?”** Which of the answers you have met so far fits this case?
 
 - An investment or an emergency of someone you know only online
 - A prize, an inheritance, a grant or a loan waiting for you
@@ -706,7 +706,7 @@ If you have already paid, tell your bank at once, and expect to be contacted aga
 
 ### 20. Advance-fee scam or Recovery scam: telling them apart
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 20 of 62*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 20 of 62*
 
 [reviewers only: card kind `lookalike`, id `look-advancefee-recovery`]
 
@@ -728,9 +728,9 @@ You have met both names, and both end with a fee in advance. This card puts them
 
 **Why this one and not the other**
 
-In Case A the £6,000 is compensation that Imran never claimed. It was never his, and nothing was ever taken from him. The key’s answer is **“A prize, an inheritance, a grant or a loan waiting for you”**, and the case is **Advance-fee scam**.
+In Case A the £6,000 is compensation that Imran never claimed. It was never his, and nothing was ever taken from him. The answer is **“A prize, an inheritance, a grant or a loan waiting for you”**, and the case is **Advance-fee scam**.
 
-In Case B the £6,000 is money that Imran really had and really lost, to a fake insurance broker. The email says that it has been recovered. The key’s answer is **“Getting back money you lost”**, and the case is **Recovery scam**.
+In Case B the £6,000 is money that Imran really had and really lost, to a fake insurance broker. The email says that it has been recovered. The answer is **“Getting back money you lost”**, and the case is **Recovery scam**.
 
 The fee, the sum and the man are the same. What differs is where the waiting money comes from: money that was never his, or money that was taken from him.
 
@@ -738,7 +738,7 @@ The fee, the sum and the man are the same. What differs is where the waiting mon
 
 Is the money that is said to be waiting something that was never mine, or something that I lost earlier?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Advance-fee scam | Recovery scam |
 |---|---|---|
@@ -750,7 +750,7 @@ Is the money that is said to be waiting something that was never mine, or someth
 
 ### 21. A refund that is held for you, and was lost
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 21 of 62*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 21 of 62*
 
 [reviewers only: card kind `exception`, id `exc-recovery-prize`]
 
@@ -760,7 +760,7 @@ The pair you have just seen was tidy: one email about money that was never owed,
 
 > Frances paid £2,000 to an online shop that turned out not to exist, and her bank could not get the money back. Now a text arrives: 'A refund of £2,000 is being held for you. To release it, pay a £90 release charge to the account below.'
 
-The text says that a refund is being held for Frances, and money that is held for you is what **“A prize, an inheritance, a grant or a loan waiting for you”** sounds like. Yet the key’s answer for this case is **“Getting back money you lost”**.
+The text says that a refund is being held for Frances, and money that is held for you is what **“A prize, an inheritance, a grant or a loan waiting for you”** sounds like. Yet the answer for this case is **“Getting back money you lost”**.
 
 **You are asked:** This looks like **Advance-fee scam**. Before you read why it is **Recovery scam**, tap the words in the case that settle it.
 
@@ -777,20 +777,20 @@ The pieces you can tap:
 
 Look at where the £2,000 comes from. Frances paid it to a shop that did not exist, and her bank could not get it back. The text offers her that same money. So the case shows both things: money that is waiting for her, and money that she lost.
 
-The key gives such a case the answer about the loss. The reason is what the sender is doing. Someone who knows about your loss and offers to return it is going after you a second time, and what protects you is what protects you against **Recovery scam**: no fee, and contact only through *a way you already had*.
+Such a case gets the answer about the loss. The reason is what the sender is doing. Someone who knows about your loss and offers to return it is going after you a second time, and what protects you is what protects you against **Recovery scam**: no fee, and contact only through *a way you already had*.
 
 **How to tell them apart**
 
 Is the money that is said to be waiting something that was never mine, or something that I lost earlier?
 
-When a case shows both **“A prize, an inheritance, a grant or a loan waiting for you”** and money you lost earlier, which someone says they can get back, the key’s answer is **“Getting back money you lost”**.
+When a case shows both **“A prize, an inheritance, a grant or a loan waiting for you”** and money you lost earlier, which someone says they can get back, the answer is **“Getting back money you lost”**.
 
-The key decides it this way on purpose. In life the two overlap, and the line could be drawn in another place. The key picks one answer so that two people using it reach the same name, and each can say why.
+It is decided this way on purpose. In life the two overlap, and the line could be drawn in another place. The questions pick one answer so that two people using them reach the same name, and each can say why.
 
 
 ### 22. A tax to take your profit out
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 22 of 62*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 22 of 62*
 
 [reviewers only: card kind `exception`, id `exc-site-fee`]
 
@@ -800,7 +800,7 @@ The names in this part have one thing in common: a fee that comes first. Here is
 
 > Gareth has put £8,000 into a trading app. A woman called Nina, whom he has chatted to for three months and never met, showed him the app. It now shows £14,500. When he tries to take out his profit, a message appears: 'To withdraw, you must first pay a 20% tax of £2,900 into your trading account.'
 
-The app makes Gareth pay a tax before he can take his money out, and a fee that must be paid before money reaches you is what **Advance-fee scam** usually sounds like. Yet the key’s answer for this case is **“Put it into a trading site or app that they showed you”**, and the name is **Pig-butchering scam**.
+The app makes Gareth pay a tax before he can take his money out, and a fee that must be paid before money reaches you is what **Advance-fee scam** usually sounds like. Yet the answer for this case is **“Put it into a trading site or app that they showed you”**, and the name is **Pig-butchering scam**.
 
 **You are asked:** This looks like **Advance-fee scam**. Before you read why it is **Pig-butchering scam**, tap the words in the case that settle it.
 
@@ -817,13 +817,13 @@ The pieces you can tap:
 
 Ask where Gareth’s money is. He has put £8,000 into a trading app that Nina, a woman he has never met, showed him. The tax is asked for by the app, to let him take his money out of it. So the case shows both things: a site that someone he knows only online showed him, and a fee that must be paid before money reaches him.
 
-The key gives such a case the answer about the site. The fee is how the scam is run once the money is in, and it only exists because the site came first.
+Such a case gets the answer about the site. The fee is how the scam is run once the money is in, and it only exists because the site came first.
 
 **How to tell them apart**
 
 Did someone I know only online show me a site or an app where my money is, or is the money said to be waiting for me from someone who contacted me?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Pig-butchering scam | Advance-fee scam |
 |---|---|---|
@@ -843,7 +843,7 @@ The fee does not go away, and it is not forgotten. It does not decide the answer
 
 ### 23. A bill, a fine or a deal that is what it says
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 23 of 62*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 23 of 62*
 
 [reviewers only: card kind `meet`, id `meet-realpayment`]
 
@@ -867,23 +867,23 @@ What makes this one real is not any one word in it, because a copy can use the s
 
 The last of the five matters most, and it has a name: *the check*. It means stopping before you pay and contacting them yourself, through *a way you already had*. It works because it does not depend on your being able to tell a real message from a copy. A copy can look exactly like this one. It cannot answer a call that you make to the number in your own agreement.
 
-The key needs a name for the real request, for the reason that a key with no place for the real thing is one you stop using. Each of the four copies in this part has a real twin that looks the same, and when you meet the copy you will be shown the twin beside it.
+The questions need a name for the real request, because questions with no place for the real thing are ones you stop using. Each of the four copies in this part has a real twin that looks the same, and when you meet the copy you will be shown the twin beside it.
 
-One more thing about the key. It has two questions about money, and the second is the one at the foot of this card: what the request asks you to do with the money. The first question, what the request says the money is for, cannot separate a real request from its copies, because they give the same reasons: a bill, a fine, a deal. Hana’s rent is a bill. A copy can be a bill too, so it is the second question that separates them.
+One more thing about the questions. It has two questions about money, and the second is the one at the foot of this card: what the request asks you to do with the money. The first question, what the request says the money is for, cannot separate a real request from its copies, because they give the same reasons: a bill, a fine, a deal. Hana’s rent is a bill. A copy can be a bill too, so it is the second question that separates them.
 
 **What you must be able to point to.** A bill, a fine or a deal that you can tie to something you already had or started, the amount you agreed or owe, details you have always paid or were given at the start, and a request that holds up when you contact them through a way you already had. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What does it ask you to do with the money?”**
+**The question:** **“What does it ask you to do with the money?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“Pay what you agreed or owe, to details that pass the check”**
+**Its answer for a case like this one:** **“Pay what you agreed or owe, to details that pass the check”**
 
-**The key also asks, and this is its answer for a case like this one:** **“What does the request say the money is for?”** **“A bill from someone you already pay”** or **“A fine, a tax, or keeping your money safe”** or **“Something you are buying, selling or booking”**
+**There is also this question, and its answer for a case like this one:** **“What does the request say the money is for?”** **“A bill from someone you already pay”** or **“A fine, a tax, or keeping your money safe”** or **“Something you are buying, selling or booking”**
 
 The name for this is **Real payment request**. Nothing is wrong with it. You pay it in the normal way, and the name is there so that you can say so as exactly as you can say what is wrong in the others.
 
 ### 24. Real payment request: the same thing in a different story
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 24 of 62*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 24 of 62*
 
 [reviewers only: card kind `again`, id `again-realpayment`]
 
@@ -918,7 +918,7 @@ The reasons for paying were different, rent and a fine, and so were the ways of 
 
 ### 25. Real payment request: what it is like
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 25 of 62*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 25 of 62*
 
 [reviewers only: card kind `portrait`, id `portrait-realpayment`]
 
@@ -943,7 +943,7 @@ A request that fits all of this and then changes is not this name any longer. If
 
 "Rent is due on the 1st, to the account on your agreement." "Invoice attached, as quoted. Ring me if anything looks wrong." "Your deposit is protected in a scheme that you can look up." "There is no rush: it is due at the end of the month."
 
-Most of the requests for money that reach you are this name: rent, council tax, bills, school fees, a builder, a solicitor, a holiday booking. It is the one you meet most, and the one that is easiest to forget that the key has a name for.
+Most of the requests for money that reach you are this name: rent, council tax, bills, school fees, a builder, a solicitor, a holiday booking. It is the one you meet most, and the easiest one to forget that there is a name for.
 
 **The question to ask when you spot it**
 
@@ -954,11 +954,11 @@ Most of the requests for money that reach you are this name: rent, council tax, 
 Pay it in the normal way, and keep the confirmation.
 For a large payment, or the first payment to someone new, do *the check* once. A real request passes it, so it costs you a few minutes.
 Where you can, pay in a way that protects you, such as by card or through a marketplace’s own payment button. Those can sometimes be disputed afterwards, and a bank transfer that you send yourself usually cannot.
-If the details change, if someone starts to hurry you, or if you are told not to check, stop. The request has become something else, and you need to ask the key’s questions again.
+If the details change, if someone starts to hurry you, or if you are told not to check, stop. The request has become something else, and you need to ask the questions again.
 
 ### 26. A question about a new case
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 26 of 62*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 26 of 62*
 
 [reviewers only: card kind `check`, id `check-realpayment`]
 
@@ -973,7 +973,7 @@ The pieces you can tap:
 
 **Shown as soon as you tap**
 
-- If you are right: “Right: ‘the same total and the same bank details as the quote’.” The invoice matches what Wen agreed: “the same total and the same bank details as the quote”. Nothing has changed, and she can ring the roofer on the number on his quote. The key’s answer for this case is **“Pay what you agreed or owe, to details that pass the check”**, and the name is **Real payment request**.
+- If you are right: “Right: ‘the same total and the same bank details as the quote’.” The invoice matches what Wen agreed: “the same total and the same bank details as the quote”. Nothing has changed, and she can ring the roofer on the number on his quote. The answer for this case is **“Pay what you agreed or owe, to details that pass the check”**, and the name is **Real payment request**.
 - If you miss: “The words are ‘the same total and the same bank details as the quote’.” The same reason follows, and then a line about the piece you tapped:
   - “a roofer repaired its roof for the £2,200 he quoted by email”: This is what Wen agreed. The words to tap are the ones that show that the invoice matches it.
   - “Pay within 30 days”: This is the request, and it gives her a month. It does not show what the invoice matches.
@@ -981,7 +981,7 @@ The pieces you can tap:
 
 ### 27. A real bill, sent to new bank details
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 27 of 62*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 27 of 62*
 
 [reviewers only: card kind `meet`, id `meet-invoicefraud`]
 
@@ -1004,17 +1004,17 @@ How can a scammer send it? In one of two ways. They have got into the landscaper
 
 It works because it is calm. There is no hurry, no threat and nothing odd in the tone. The only thing that is different is the thing a thief needs: the account. That is why a change of bank details is a reason to stop, whoever is telling you.
 
-Notice that the reason this email gives for the money, a bill that Joe already pays, is exactly the reason that a real invoice from Maeve would give. So the key’s question about what the money is for cannot tell the two apart. What tells them apart is what the request asks Joe to do with the money: here, to pay into new details that a message has just announced.
+Notice that the reason this email gives for the money, a bill that Joe already pays, is exactly the reason that a real invoice from Maeve would give. So the question about what the money is for cannot tell the two apart. What tells them apart is what the request asks Joe to do with the money: here, to pay into new details that a message has just announced.
 
 You can see this on the day. The bill is a real one, and a message arrives telling you to pay into new details. What you cannot see from the message is whether the change is real, and that is what contacting them yourself is for.
 
 **What you must be able to point to.** A bill or a payment you already make to someone, a message saying that their bank details have changed, and new details to pay into. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What does the request say the money is for?”**
+**The question:** **“What does the request say the money is for?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“A bill from someone you already pay”**
+**Its answer for a case like this one:** **“A bill from someone you already pay”**
 
-**The key also asks, and this is its answer for a case like this one:** **“What does it ask you to do with the money?”** **“Pay into new bank details sent by message”**
+**There is also this question, and its answer for a case like this one:** **“What does it ask you to do with the money?”** **“Pay into new bank details sent by message”**
 
 The name for this is **Invoice fraud**. An invoice is a bill that a business sends. The fraud is not in the bill, which is real, but in the bank details on it.
 
@@ -1022,7 +1022,7 @@ You may also hear this called “changed bank details scam” or “payment dive
 
 ### 28. Invoice fraud: the same thing in a different story
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 28 of 62*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 28 of 62*
 
 [reviewers only: card kind `again`, id `again-invoicefraud`]
 
@@ -1055,7 +1055,7 @@ The sum is £1,850 in one case and £18,500 in the other, and the stories have n
 
 ### 29. Invoice fraud: what it is like
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 29 of 62*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 29 of 62*
 
 [reviewers only: card kind `portrait`, id `portrait-invoicefraud`]
 
@@ -1072,7 +1072,7 @@ What you point to is a payment you already make and a message that announces new
 
 **What it is not**
 
-A change of bank details is not always a fraud, because businesses do change banks. The message cannot tell you which this is. That is why the key gives every message that announces new details this name: the name says what to do next, and does not claim to know the answer.
+A change of bank details is not always a fraud, because businesses do change banks. The message cannot tell you which this is. That is why every message that announces new details gets this name: the name says what to do next, and does not claim to know the answer.
 
 A bill with the same details as the last one is not this name. And if you ring the person on a number you already had and they confirm the change, you have found out something that the message could not tell you.
 
@@ -1096,7 +1096,7 @@ If you have already paid, ring your bank at once, on the number on your card, an
 
 ### 30. A question about a new case
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 30 of 62*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 30 of 62*
 
 [reviewers only: card kind `check`, id `check-invoicefraud`]
 
@@ -1111,7 +1111,7 @@ The pieces you can tap:
 
 **Shown as soon as you tap**
 
-- If you are right: “Right: ‘We have moved to a new bank’.” A message says that the bank has changed: “We have moved to a new bank”. The new details are what Owen is asked to pay into. The key’s answer for this case is **“Pay into new bank details sent by message”**, and the name is **Invoice fraud**.
+- If you are right: “Right: ‘We have moved to a new bank’.” A message says that the bank has changed: “We have moved to a new bank”. The new details are what Owen is asked to pay into. The answer for this case is **“Pay into new bank details sent by message”**, and the name is **Invoice fraud**.
 - If you miss: “The words are ‘We have moved to a new bank’.” The same reason follows, and then a line about the piece you tapped:
   - “Owen's accountant has emailed him a bill every quarter for three years”: This is the arrangement. It is not the part that is different this time.
   - “Please pay the £620 into the account below”: This is the request. The words to tap are the ones that say what has changed.
@@ -1119,7 +1119,7 @@ The pieces you can tap:
 
 ### 31. Invoice fraud or Real payment request: telling them apart
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 31 of 62*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 31 of 62*
 
 [reviewers only: card kind `lookalike`, id `look-invoicefraud-realpayment`]
 
@@ -1141,7 +1141,7 @@ You have met both names. This is the hardest pair in this part, because the bill
 
 **Why this one and not the other**
 
-In Case A the invoice asks Tessa to pay into the account that she has paid into four times, and she can see it in her own banking app. The key’s answer is **“Pay what you agreed or owe, to details that pass the check”**, and the case is **Real payment request**.
+In Case A the invoice asks Tessa to pay into the account that she has paid into four times, and she can see it in her own banking app. The answer is **“Pay what you agreed or owe, to details that pass the check”**, and the case is **Real payment request**.
 
 In Case B the same invoice, in the same thread, says that the builder has changed bank and gives a new account. A message that announces new details to pay into is what **Invoice fraud** is made of.
 
@@ -1151,7 +1151,7 @@ The builder, the amount, the logo and the email thread are the same. Only the ac
 
 Are the bank details the ones I was given at the start, or has a message just told me that they have changed?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Invoice fraud | Real payment request |
 |---|---|---|
@@ -1163,7 +1163,7 @@ Are the bank details the ones I was given at the start, or has a message just to
 
 ### 32. A small charge you do not owe, paid through a link
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 32 of 62*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 32 of 62*
 
 [reviewers only: card kind `meet`, id `meet-fakelink`]
 
@@ -1186,17 +1186,17 @@ Look at what the link leads to. It leads to a page that is made to look like the
 
 You can see all of this when the text arrives: a charge, a link, and a page that wants your card. What the text cannot tell you is whether there really is a parcel. The way to find out is to look in the courier’s own app or on the shop’s own page, which you already had.
 
-Notice that the text asks Jonas to pay, and also leads him to hand over his card number. The key’s first question gave the answer **“Pay or send money”** for this kind of request, because paying is what it asks for, and the card number is how he would pay.
+Notice that the text asks Jonas to pay, and also leads him to hand over his card number. The first question gave the answer **“Pay or send money”** for this kind of request, because paying is what it asks for, and the card number is how he would pay.
 
 The reason the text gives for the money, a parcel that he is waiting for, is a reason that a real courier could give too. So the question about what the money is for cannot settle it. What settles it is what the text asks him to do with the money: pay on a page that he reaches through a link in the message.
 
 **What you must be able to point to.** A bill, a fine or a charge on something you are buying, a link in the message, and a payment page at the end of the link that asks for your card details. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What does it ask you to do with the money?”**
+**The question:** **“What does it ask you to do with the money?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“Pay on a page reached from a link in the message”**
+**Its answer for a case like this one:** **“Pay on a page reached from a link in the message”**
 
-**The key also asks, and this is its answer for a case like this one:** **“What does the request say the money is for?”** **“A bill from someone you already pay”** or **“A fine, a tax, or keeping your money safe”** or **“Something you are buying, selling or booking”**
+**There is also this question, and its answer for a case like this one:** **“What does the request say the money is for?”** **“A bill from someone you already pay”** or **“A fine, a tax, or keeping your money safe”** or **“Something you are buying, selling or booking”**
 
 The name for this is **Fake payment link**. The charge is the bait and the link is the trap: the page at the end of the link is not the company’s.
 
@@ -1204,7 +1204,7 @@ You may also hear this called “parcel delivery scam” or “fake fine text”
 
 ### 33. Fake payment link: the same thing in a different story
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 33 of 62*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 33 of 62*
 
 [reviewers only: card kind `again`, id `again-fakelink`]
 
@@ -1237,7 +1237,7 @@ A parcel and a toll have nothing else in common. A charge on something you are b
 
 ### 34. Fake payment link: what it is like
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 34 of 62*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 34 of 62*
 
 [reviewers only: card kind `portrait`, id `portrait-fakelink`]
 
@@ -1256,7 +1256,7 @@ What you point to is a charge, a link, and a payment page that asks for your car
 
 A real company does sometimes text you about a charge. What makes a charge real is that you can find it in the company’s own app, or on the page you already use, and pay it there.
 
-A message that only tells you that a parcel is on its way, and asks for nothing, is not this name at all, because it asks you for nothing. Nor is a request for your card number so that “nothing will be charged”: that asks for facts about you, and the key puts it elsewhere.
+A message that only tells you that a parcel is on its way, and asks for nothing, is not this name at all, because it asks you for nothing. Nor is a request for your card number so that “nothing will be charged”: that asks for facts about you, and it belongs elsewhere.
 
 **Where you will hear it**
 
@@ -1278,13 +1278,13 @@ If a caller then says that he is from your bank and tells you to move your money
 
 ### 35. A question about a new case
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 35 of 62*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 35 of 62*
 
 [reviewers only: card kind `check`, id `check-fakelink`]
 
 > Kofi pays for a streaming service every month. A text arrives: 'Your account has been suspended because your last payment failed. Update your card at streamplus-billing.example.'
 
-**The key asks:** **“What does it ask you to do with the money?”** Which of the answers you have met so far fits this case?
+**The question:** **“What does it ask you to do with the money?”** Which of the answers you have met so far fits this case?
 
 - Put it into a trading site or app that they showed you
 - Pay what you agreed or owe, to details that pass the check
@@ -1300,7 +1300,7 @@ If a caller then says that he is from your bank and tells you to move your money
 
 ### 36. Fake payment link or Real payment request: telling them apart
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 36 of 62*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 36 of 62*
 
 [reviewers only: card kind `lookalike`, id `look-fakelink-realpayment`]
 
@@ -1322,9 +1322,9 @@ You have met both names. This pair shares the same small charge and the same cou
 
 **Why this one and not the other**
 
-In Case A the charge arrives in a text from a number she does not know, with a link to pay on. Nothing that she already had shows that it is real. The key’s answer is **“Pay on a page reached from a link in the message”**, and the case is **Fake payment link**.
+In Case A the charge arrives in a text from a number she does not know, with a link to pay on. Nothing that she already had shows that it is real. The answer is **“Pay on a page reached from a link in the message”**, and the case is **Fake payment link**.
 
-In Case B the same charge appears in her courier’s own app, which she installed last year, and on the shop’s own order page, which she opened by typing in the shop’s address. She found it through a way she already had. The key’s answer is **“Pay what you agreed or owe, to details that pass the check”**, and the case is **Real payment request**.
+In Case B the same charge appears in her courier’s own app, which she installed last year, and on the shop’s own order page, which she opened by typing in the shop’s address. She found it through a way she already had. The answer is **“Pay what you agreed or owe, to details that pass the check”**, and the case is **Real payment request**.
 
 The boots, the amount and the courier are the same. What differs is whether the charge came to her in a message, or whether she found it herself.
 
@@ -1332,7 +1332,7 @@ The boots, the amount and the courier are the same. What differs is whether the 
 
 Did the charge come to me in a message with a link to pay on, or can I find it myself in the company’s own app or on a page that I already use?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Fake payment link | Real payment request |
 |---|---|---|
@@ -1344,11 +1344,11 @@ Did the charge come to me in a message with a link to pay on, or can I find it m
 
 ### 37. A prize that costs a delivery fee, paid on a link
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 37 of 62*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 37 of 62*
 
 [reviewers only: card kind `exception`, id `exc-link-fee`]
 
-A payment page reached through a link is what the last name is built on. Here is a case with one, in which the key gives a different answer.
+A payment page reached through a link is what the last name is built on. Here is a case with one, in which the answer is a different one.
 
 *The voucher with a fee*
 
@@ -1371,13 +1371,13 @@ The pieces you can tap:
 
 Read what the £1.99 is for. The text says that a £500 voucher has been won, and that a delivery fee must be paid to claim it. That is money said to be waiting, and a fee that comes first: the two things that **Advance-fee scam** is made of.
 
-The link is there, and the page at the end of it will want a card number. But the link is only the way the payment is made. The reason for the payment is a prize that does not exist. Where a message has both, the key gives the answer about the fee that comes first, because that is what the sender is selling.
+The link is there, and the page at the end of it will want a card number. But the link is only the way the payment is made. The reason for the payment is a prize that does not exist. Where a message has both, the answer is the one about the fee that comes first, because that is what the sender is selling.
 
 **How to tell them apart**
 
 Is the payment a fee to receive something that is said to be waiting for me, or a charge on something that I am buying or already pay for?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Advance-fee scam | Fake payment link |
 |---|---|---|
@@ -1397,7 +1397,7 @@ Where a case shows a fee that comes first and a payment page behind a link, put 
 
 ### 38. A threat from an official or your bank, paid off at once and in secret
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 38 of 62*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 38 of 62*
 
 [reviewers only: card kind `meet`, id `meet-fakeofficial`]
 
@@ -1424,11 +1424,11 @@ You can see all of this on the day. Who the call says it is from, the threat, th
 
 **What you must be able to point to.** Someone who says they are an official or from your bank, a fine, a debt or a danger to your money, and an order to pay at once by gift cards, crypto, cash or a transfer to an account they give you, often with an order to tell no one. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What does the request say the money is for?”**
+**The question:** **“What does the request say the money is for?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“A fine, a tax, or keeping your money safe”**
+**Its answer for a case like this one:** **“A fine, a tax, or keeping your money safe”**
 
-**The key also asks, and this is its answer for a case like this one:** **“What does it ask you to do with the money?”** **“Pay at once, in a way that cannot be undone, and tell no one”**
+**There is also this question, and its answer for a case like this one:** **“What does it ask you to do with the money?”** **“Pay at once, in a way that cannot be undone, and tell no one”**
 
 The name for this is **Fake official scam**. The “official” is the role that the caller claims: the tax office, the police, a court, or your own bank. The claim is the lie.
 
@@ -1436,7 +1436,7 @@ You may also hear this called “impersonation scam” or “safe account scam�
 
 ### 39. Fake official scam: the same thing in a different story
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 39 of 62*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 39 of 62*
 
 [reviewers only: card kind `again`, id `again-fakeofficial`]
 
@@ -1471,7 +1471,7 @@ The roles are different, a tax officer and a bank’s fraud team, and so are the
 
 ### 40. Fake official scam: what it is like
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 40 of 62*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 40 of 62*
 
 [reviewers only: card kind `portrait`, id `portrait-fakeofficial`]
 
@@ -1512,13 +1512,13 @@ If you have already paid, ring your bank at once, and the police.
 
 ### 41. A question about a new case
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 41 of 62*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 41 of 62*
 
 [reviewers only: card kind `check`, id `check-fakeofficial`]
 
 > Pia runs a cleaning firm. A text arrives: 'Court Services: a claim of £480 has been made against your company. Judgment will be entered tomorrow unless you pay today in cash vouchers. Do not contact your solicitor.'
 
-**The key asks:** **“What does the request say the money is for?”** Which of the answers you have met so far fits this case?
+**The question:** **“What does the request say the money is for?”** Which of the answers you have met so far fits this case?
 
 - An investment or an emergency of someone you know only online
 - A prize, an inheritance, a grant or a loan waiting for you
@@ -1538,7 +1538,7 @@ If you have already paid, ring your bank at once, and the police.
 
 ### 42. Fake official scam or Real payment request: telling them apart
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 42 of 62*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 42 of 62*
 
 [reviewers only: card kind `lookalike`, id `look-fakeofficial-realpayment`]
 
@@ -1562,7 +1562,7 @@ You have met both names. This pair is about the same tax, from the same office. 
 
 In Case A a man rings out of the blue and demands payment today, by transfer to an account that he gives, and tells Sam not to tell his employer. He gives Sam nothing that he could look up. The case is **Fake official scam**.
 
-In Case B a letter gives Sam 30 days and a way to appeal, and says not to trust a link or a number in any message. Sam types in the address that he knows from his own tax account, and finds the same amount and the same reference. The key’s answer is **“Pay what you agreed or owe, to details that pass the check”**, and the case is **Real payment request**.
+In Case B a letter gives Sam 30 days and a way to appeal, and says not to trust a link or a number in any message. Sam types in the address that he knows from his own tax account, and finds the same amount and the same reference. The answer is **“Pay what you agreed or owe, to details that pass the check”**, and the case is **Real payment request**.
 
 The tax office, the sum and the man are the same. What differs is whether he is hurried and kept quiet, or given time and something that he can check for himself.
 
@@ -1570,7 +1570,7 @@ The tax office, the sum and the man are the same. What differs is whether he is 
 
 Am I being hurried and kept quiet, or given time and something that I can look up for myself?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Fake official scam | Real payment request |
 |---|---|---|
@@ -1582,11 +1582,11 @@ Am I being hurried and kept quiet, or given time and something that I can look u
 
 ### 43. Fake official scam or One-time code scam: telling them apart
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 43 of 62*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 43 of 62*
 
 [reviewers only: card kind `lookalike`, id `look-fakeofficial-codescam`]
 
-Both of the last two names can arrive as a call from your bank, and one of them you met in an earlier unit, in the part of the key about signing in. Here they are side by side, with the same caller and the same story.
+Both of the last two names can arrive as a call from your bank, and one of them you met in an earlier unit, in the part about signing in. Here they are side by side, with the same caller and the same story.
 
 **Case A**
 
@@ -1604,31 +1604,31 @@ Both of the last two names can arrive as a call from your bank, and one of them 
 
 **Why this one and not the other**
 
-In Case A the caller asks Elena to move her savings to an account that he gives her, and to tell no one. That is a request to send money, and the key’s answer to the first question is **“Pay or send money”**. The case is **Fake official scam**.
+In Case A the caller asks Elena to move her savings to an account that he gives her, and to tell no one. That is a request to send money, and the answer to the first question is **“Pay or send money”**. The case is **Fake official scam**.
 
-In Case B the caller asks Elena to read out a code that has just been texted to her. That is a request for a way into her account, and the key’s answer to the first question is **“Sign in, give a code, or allow an app”**. The case is **One-time code scam**.
+In Case B the caller asks Elena to read out a code that has just been texted to her. That is a request for a way into her account, and the answer to the first question is **“Sign in, give a code, or allow an app”**. The case is **One-time code scam**.
 
-The bank, the call and the danger are the same. The two cases are told apart by the very first question of the key, before the questions of this unit are reached: money, or a way into an account.
+The bank, the call and the danger are the same. The two cases are told apart by the very first question, before the questions of this unit are reached: money, or a way into an account.
 
 **How to tell them apart**
 
 Am I asked to read out or type in a code that has just been sent to me, or to move or send money?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Fake official scam | One-time code scam |
 |---|---|---|
 | What is it asking you to do right now? | Pay or send money | Sign in, give a code, or allow an app |
-| What does it want you to type in or press? | *Not asked on its route* | A one-time code sent to your phone or email |
-| Does it fit something you started? | *Not asked on its route* | No: it came to you, or it asks for more than you set out to do |
-| What does the request say the money is for? | A fine, a tax, or keeping your money safe | *Not asked on its route* |
-| What does it ask you to do with the money? | Pay at once, in a way that cannot be undone, and tell no one | *Not asked on its route* |
+| What does it want you to type in or press? | *Not asked for this one* | A one-time code sent to your phone or email |
+| Does it fit something you started? | *Not asked for this one* | No: it came to you, or it asks for more than you set out to do |
+| What does the request say the money is for? | A fine, a tax, or keeping your money safe | *Not asked for this one* |
+| What does it ask you to do with the money? | Pay at once, in a way that cannot be undone, and tell no one | *Not asked for this one* |
 | What you must be able to point to | Someone who says they are an official or from your bank, a fine, a debt or a danger to your money, and an order to pay at once by gift cards, crypto, cash or a transfer to an account they give you, often with an order to tell no one | A one-time code that has just come to your phone or email, and someone who contacted you asking you to read it out or send it on |
 
 
 ### 44. A refund from the tax office that needs a fee
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 44 of 62*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 44 of 62*
 
 [reviewers only: card kind `exception`, id `exc-official-prize`]
 
@@ -1638,7 +1638,7 @@ The caller in the last cards threatened. Here is a message that sounds official,
 
 > A message arrives: 'The tax office owes you a refund of £740. To release it, pay a £35 processing fee by transfer to the account below.'
 
-The message comes from the tax office, and a message from an official about tax is what **“A fine, a tax, or keeping your money safe”** sounds like. Yet the key’s answer for this case is **“A prize, an inheritance, a grant or a loan waiting for you”**.
+The message comes from the tax office, and a message from an official about tax is what **“A fine, a tax, or keeping your money safe”** sounds like. Yet the answer for this case is **“A prize, an inheritance, a grant or a loan waiting for you”**.
 
 **You are asked:** This looks like **Fake official scam**. Before you read why it is **Advance-fee scam**, tap the words in the case that settle it.
 
@@ -1655,15 +1655,15 @@ The pieces you can tap:
 
 Read what the message says. It does not threaten anyone, and it does not say that you owe the tax office anything. It says that the tax office owes you £740, and that you must pay a fee to release it. That is money that is waiting for you, and a fee that comes first.
 
-So the case shows both things: an official as the sender, and money that is waiting for you. The key gives such a case the answer about the waiting money. Writing in the name of the tax office is how the scammer makes the prize look real. It is not what the message asks you to do.
+So the case shows both things: an official as the sender, and money that is waiting for you. Such a case gets the answer about the waiting money. Writing in the name of the tax office is how the scammer makes the prize look real. It is not what the message asks you to do.
 
 **How to tell them apart**
 
 Does the message say that money is owed to me and that I must pay first, or that I owe money and will be punished unless I pay?
 
-When a case shows both **“A fine, a tax, or keeping your money safe”** and money said to be waiting for you, the key’s answer is **“A prize, an inheritance, a grant or a loan waiting for you”**.
+When a case shows both **“A fine, a tax, or keeping your money safe”** and money said to be waiting for you, the answer is **“A prize, an inheritance, a grant or a loan waiting for you”**.
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Advance-fee scam | Fake official scam |
 |---|---|---|
@@ -1672,12 +1672,12 @@ When a case shows both **“A fine, a tax, or keeping your money safe”** and m
 | What does it ask you to do with the money? | Pay a fee before the money reaches you | Pay at once, in a way that cannot be undone, and tell no one |
 | What you must be able to point to | Money you are told is waiting for you (a prize, an inheritance, a grant, a loan, a payout), and a fee you must pay before any of it reaches you | Someone who says they are an official or from your bank, a fine, a debt or a danger to your money, and an order to pay at once by gift cards, crypto, cash or a transfer to an account they give you, often with an order to tell no one |
 
-The key decides it this way on purpose, so that two people reach the same name. Whatever the sender calls themselves, put your finger on what the money is for.
+It is decided this way on purpose, so that two people reach the same name. Whatever the sender calls themselves, put your finger on what the money is for.
 
 
 ### 45. A threat, a hurry and a secret, paid on a link
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 45 of 62*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 45 of 62*
 
 [reviewers only: card kind `exception`, id `exc-rush-link`]
 
@@ -1687,7 +1687,7 @@ The tax caller was hurried, threatening and secretive, and wanted gift cards. He
 
 > A text arrives: 'Final notice from the Traffic Penalty Office: you have an unpaid fine of £90. Pay at penalty-office.example in the next two hours, or a warrant will be issued. Do not discuss this with anyone.'
 
-The text has an official, a threat, a deadline of two hours and an order to tell no one, and all of that is what **Fake official scam** sounds like. Yet the key’s answer for this case is **“Pay on a page reached from a link in the message”**, and the name is **Fake payment link**.
+The text has an official, a threat, a deadline of two hours and an order to tell no one, and all of that is what **Fake official scam** sounds like. Yet the answer for this case is **“Pay on a page reached from a link in the message”**, and the name is **Fake payment link**.
 
 **You are asked:** This looks like **Fake official scam**. Before you read why it is **Fake payment link**, tap the words in the case that settle it.
 
@@ -1706,15 +1706,15 @@ The pieces you can tap:
 
 Look at how the text asks you to pay. It does not ask for gift cards, or for a transfer to an account that someone gives you over the phone. It asks you to pay on a page that you reach through a link in the message. That is what the name **Fake payment link** is built on.
 
-Hurry, threat and secrecy turn up in many scams, and they are there to stop you thinking. Because they turn up so often, they cannot be what decides the name. The key gives the answer about the link, and keeps **Fake official scam** for a case in which nothing more specific shows: no link, no fee, no deal, and a caller who wants payment at once, in a way that cannot be undone, and in secret.
+Hurry, threat and secrecy turn up in many scams, and they are there to stop you thinking. Because they turn up so often, they cannot be what decides the name. The answer is the one about the link, and **Fake official scam** is kept for a case in which nothing more specific shows: no link, no fee, no deal, and a caller who wants payment at once, in a way that cannot be undone, and in secret.
 
 **How to tell them apart**
 
 Am I told to pay on a page that I reach through a link, or told to pay at once in a way that cannot be undone, with nothing more specific?
 
-When a case shows both **“Pay at once, in a way that cannot be undone, and tell no one”** and a payment page reached from a link in the message, the key’s answer is **“Pay on a page reached from a link in the message”**.
+When a case shows both **“Pay at once, in a way that cannot be undone, and tell no one”** and a payment page reached from a link in the message, the answer is **“Pay on a page reached from a link in the message”**.
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Fake official scam | Fake payment link |
 |---|---|---|
@@ -1728,7 +1728,7 @@ This tie-break applies to more than one pair. Hurry, secrecy and payment that ca
 
 ### 46. A wrong idea: “my bank would have stopped it”
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 46 of 62*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 46 of 62*
 
 [reviewers only: card kind `refute`, id `refute-bank`]
 
@@ -1744,12 +1744,12 @@ A bank’s fraud checks are built to catch someone else using your account. When
 
 A payment that you sent yourself is also hard to get back, whether it went by transfer, in cash, in gift cards or in crypto. Ringing your bank at once can sometimes recall a transfer in the first hours, which is why speed matters.
 
-So the bank is the second line of defence, and you are the first. What can stop the loss is what you ask before you press send, and it is the key’s own two questions about money. The first is **“What does the request say the money is for?”** The second is **“What does it ask you to do with the money?”** A warning from your bank is a stop sign, and it is worth reading as one.
+So the bank is the second line of defence, and you are the first. What can stop the loss is what you ask before you press send, and it is these two questions about money. The first is **“What does the request say the money is for?”** The second is **“What does it ask you to do with the money?”** A warning from your bank is a stop sign, and it is worth reading as one.
 
 
 ### 47. A buyer who pays too much and wants the difference
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 47 of 62*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 47 of 62*
 
 [reviewers only: card kind `meet`, id `meet-overpayment`]
 
@@ -1772,15 +1772,15 @@ But the £800 is not what it seems. It may be a payment that is reversed a few d
 
 There is a fair way for a buyer who really overpaid to put it right. They ask their own bank to reverse the payment, or they ask for all of it back to the account it came from, and then pay again. They do not ask for a second payment to somebody else, and a courier’s account is somebody else.
 
-You can see the shape of this on the day. A deal is under way, a payment arrives that is more than the price, and you are asked to send some of it back or on. What you cannot see on the day is that the payment will be reversed. That only shows afterwards, so the key leaves it out.
+You can see the shape of this on the day. A deal is under way, a payment arrives that is more than the price, and you are asked to send some of it back or on. What you cannot see on the day is that the payment will be reversed. That only shows afterwards, so the questions leave it out.
 
 **What you must be able to point to.** Something you are selling, a payment from the buyer that is more than the price, and a request to send the difference back or on to someone else. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What does the request say the money is for?”**
+**The question:** **“What does the request say the money is for?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“Something you are buying, selling or booking”**
+**Its answer for a case like this one:** **“Something you are buying, selling or booking”**
 
-**The key also asks, and this is its answer for a case like this one:** **“What does it ask you to do with the money?”** **“Send back money they say they paid you by mistake”**
+**There is also this question, and its answer for a case like this one:** **“What does it ask you to do with the money?”** **“Send back money they say they paid you by mistake”**
 
 The name for this is **Overpayment scam**. The buyer pays over the price, and the scam is in what you are asked to do with the extra.
 
@@ -1788,7 +1788,7 @@ You may also hear this called “fake buyer scam”. That means the same thing h
 
 ### 48. Overpayment scam: the same thing in a different story
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 48 of 62*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 48 of 62*
 
 [reviewers only: card kind `again`, id `again-overpayment`]
 
@@ -1823,7 +1823,7 @@ A bike and piano lessons share nothing else. A deal that you are in, a payment t
 
 ### 49. Overpayment scam: what it is like
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 49 of 62*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 49 of 62*
 
 [reviewers only: card kind `portrait`, id `portrait-overpayment`]
 
@@ -1836,7 +1836,7 @@ What you point to is a payment that is more than the price, and a request to sen
 - A payment arrives, and it is too much: double the price or more. A message says that it was a mistake: an extra zero, a slip by an assistant, a wrong box.
 - You are asked to send the difference back, or on, to a different account: a courier, a relative, a “shipping agent”. Sometimes you are asked to be quick, because a courier is on the way.
 - Days later the buyer’s payment disappears: a stolen card, a transfer recalled, a cheque that bounces. Your payment does not. You have lost the money, and often the item as well.
-- Which of this can you see on the day? The deal, the payment that is too large and the request to send some of it on are all there. The payment that later disappears can only be seen afterwards, and the key does not use it.
+- Which of this can you see on the day? The deal, the payment that is too large and the request to send some of it on are all there. The payment that later disappears can only be seen afterwards, and the questions do not use it.
 
 **What it is not**
 
@@ -1864,13 +1864,13 @@ Tell the marketplace or the site where you listed the item.
 
 ### 50. A question about a new case
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 50 of 62*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 50 of 62*
 
 [reviewers only: card kind `check`, id `check-overpayment`]
 
 > Zainab is selling a sofa for £350. A buyer she has never heard from before transfers £500 and writes: 'Oops, too much! Please send the £150 back to a different account, the one I will text you, as mine is being fixed.'
 
-**The key asks:** **“What does the request say the money is for?”** Which of the answers you have met so far fits this case?
+**The question:** **“What does the request say the money is for?”** Which of the answers you have met so far fits this case?
 
 - An investment or an emergency of someone you know only online
 - A prize, an inheritance, a grant or a loan waiting for you
@@ -1892,7 +1892,7 @@ Tell the marketplace or the site where you listed the item.
 
 ### 51. Overpayment scam or Real payment request: telling them apart
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 51 of 62*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 51 of 62*
 
 [reviewers only: card kind `lookalike`, id `look-overpayment-realpayment`]
 
@@ -1916,7 +1916,7 @@ You have met both names. This pair is about the same camera changing hands at th
 
 In Case A Isla is selling the camera. The buyer pays £1,000 and asks her to send the extra £400 on to a friend’s account. She is being asked to send money out of her account to someone other than the buyer. The case is **Overpayment scam**.
 
-In Case B Isla is buying a camera, at the price that she agreed with the seller in the app’s chat. She pays it through the marketplace’s own button, in an app that she has used for years, which holds the money until the camera arrives. She found the way to pay through a way she already had, and nothing is hurried or hidden. The key’s answer is **“Pay what you agreed or owe, to details that pass the check”**, and the case is **Real payment request**.
+In Case B Isla is buying a camera, at the price that she agreed with the seller in the app’s chat. She pays it through the marketplace’s own button, in an app that she has used for years, which holds the money until the camera arrives. She found the way to pay through a way she already had, and nothing is hurried or hidden. The answer is **“Pay what you agreed or owe, to details that pass the check”**, and the case is **Real payment request**.
 
 It is the same camera at the same price. What differs is whether she is asked to send money where a stranger says, or to pay in the way that she already used.
 
@@ -1924,7 +1924,7 @@ It is the same camera at the same price. What differs is whether she is asked to
 
 Is the amount the one that was agreed, or am I being asked to send some of a payment back or on to someone else?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Overpayment scam | Real payment request |
 |---|---|---|
@@ -1936,11 +1936,11 @@ Is the amount the one that was agreed, or am I being asked to send some of a pay
 
 ### 52. Overpayment scam or Refund scam: telling them apart
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 52 of 62*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 52 of 62*
 
 [reviewers only: card kind `lookalike`, id `look-overpayment-refundscam`]
 
-**Overpayment scam** has a look-alike in another part of the key: **Refund scam**, which you met in an earlier unit. In both, too much money is said to have reached you, and you are asked to send the difference back. This card puts them side by side.
+**Overpayment scam** has a look-alike elsewhere: **Refund scam**, which you met in an earlier unit. In both, too much money is said to have reached you, and you are asked to send the difference back. This card puts them side by side.
 
 **Case A**
 
@@ -1958,46 +1958,46 @@ Is the amount the one that was agreed, or am I being asked to send some of a pay
 
 **Why this one and not the other**
 
-In Case A Aziz is selling something, a buyer says that they paid too much, and he is asked to send the difference to an account. Nothing is asked of his phone or his computer. The key’s answer to the first question is **“Pay or send money”**, and the case is **Overpayment scam**.
+In Case A Aziz is selling something, a buyer says that they paid too much, and he is asked to send the difference to an account. Nothing is asked of his phone or his computer. The answer to the first question is **“Pay or send money”**, and the case is **Overpayment scam**.
 
-In Case B a caller says that a refund was too large, and asks Aziz to install a support tool so that the caller can watch his phone while he sends the difference back. The first thing that he is asked to do is to put something on his device, and the key’s answer to the first question is **“Install something, open a file, or share your screen”**. The case is **Refund scam**.
+In Case B a caller says that a refund was too large, and asks Aziz to install a support tool so that the caller can watch his phone while he sends the difference back. The first thing that he is asked to do is to put something on his device, and the answer to the first question is **“Install something, open a file, or share your screen”**. The case is **Refund scam**.
 
-The story is the same: too much money, and a difference to send back. What differs is what comes first. When a request asks for something on your device and for money, the key takes the device, because once someone can watch your phone they can do far more than take the £200.
+The story is the same: too much money, and a difference to send back. What differs is what comes first. When a request asks for something on your device and for money, the answer is the device, because once someone can watch your phone they can do far more than take the £200.
 
 **How to tell them apart**
 
 Before any money is sent, am I asked to install something or to let someone watch my phone or computer, or only to send the money?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Overpayment scam | Refund scam |
 |---|---|---|
 | What is it asking you to do right now? | Pay or send money | Install something, open a file, or share your screen |
-| How did it come to you? | *Not asked on its route* | Someone sorting out a refund or your bank account |
-| What does the request say the money is for? | Something you are buying, selling or booking | *Not asked on its route* |
-| What does it ask you to do with the money? | Send back money they say they paid you by mistake | *Not asked on its route* |
+| How did it come to you? | *Not asked for this one* | Someone sorting out a refund or your bank account |
+| What does the request say the money is for? | Something you are buying, selling or booking | *Not asked for this one* |
+| What does it ask you to do with the money? | Send back money they say they paid you by mistake | *Not asked for this one* |
 | What you must be able to point to | Something you are selling, a payment from the buyer that is more than the price, and a request to send the difference back or on to someone else | Someone who says you are owed a refund or that your bank account needs attention, and a request to install something or let them see your screen while they sort it out |
 
 
-*End of part 4. You can stop here; your place is kept. Next: part 5, The key’s two questions about money, three whole cases, then the drill.*
+*End of part 4. You can stop here; your place is kept. Next: part 5, The two questions about money, three whole cases, then the drill.*
 
 ---
 
-## Part 5 of 5: The key’s two questions about money, three whole cases, then the drill
+## Part 5 of 5: The two questions about money, three whole cases, then the drill
 
 ### 53. The first question about money: what is it for?
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 53 of 62*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 53 of 62*
 
 [reviewers only: card kind `question`, id `q-m1`]
 
-You have now met all nine names, and the key’s questions have been at the foot of each card, one answer at a time. This card puts the first question, and its six answers, in one place, as the key shows them, and says why the key asks it.
+You have now met all nine names, and the questions have been at the foot of each card, one answer at a time. This card puts the first question, and its six answers, in one place, and says why it is asked.
 
-**The key asks:** **“What does the request say the money is for?”**
+**The question:** **“What does the request say the money is for?”**
 
 **What it is for.** Sorts requests for money by the reason they give, which leaves one name or a few.
 
-**Its answers, exactly as the key shows them**
+**Its answers**
 
 - **“An investment or an emergency of someone you know only online”**
   - Give this answer when the request comes from, or through, someone you have got to know only by messages and calls, usually over weeks or months, and the money is for an investment they showed you or for trouble they say they are in.
@@ -2022,7 +2022,7 @@ You have now met all nine names, and the key’s questions have been at the foot
 
 Each scam that asks for money comes with its own kind of reason, and a real request comes with an ordinary one: a bill, a fine or a tax, or a deal you are in. So the reason leaves one name, or a few for the next question to tell apart. You can answer it from the request itself, at the moment it is made.
 
-The reason is what the sender chooses to show you, so it is the first thing that the key looks at, and the six answers are the reasons that real requests and scams actually use. Some of them are shared: a real request and several scams give the same ordinary reason, a bill, a fine or a deal, and that is why a second question is needed.
+The reason is what the sender chooses to show you, so it is the first thing that the questions look at, and the six answers are the reasons that real requests and scams actually use. Some of them are shared: a real request and several scams give the same ordinary reason, a bill, a fine or a deal, and that is why a second question is needed.
 
 Notice what the question asks and what it does not. It asks what the request says the money is for. It does not ask what you think it is really for, or whether the reason is true. You do not need to know that. You only need to read the reason that is given.
 
@@ -2036,13 +2036,13 @@ You can answer this at the moment the request arrives, from the request itself. 
 
 **When two answers both seem to fit**
 
-Sometimes a request seems to give two reasons at once, and the key has an order for three of them. Money that you lost comes before money that is waiting for you: a refund that is held for you after a scam is **“Getting back money you lost”**. Money that is waiting for you comes before an official: a tax refund that needs a fee is **“A prize, an inheritance, a grant or a loan waiting for you”**. And someone you know only online comes before a deal: a sale or an investment offered to you by a person you have never met is **“An investment or an emergency of someone you know only online”**.
+Sometimes a request seems to give two reasons at once, and there is an order for three of them. Money that you lost comes before money that is waiting for you: a refund that is held for you after a scam is **“Getting back money you lost”**. Money that is waiting for you comes before an official: a tax refund that needs a fee is **“A prize, an inheritance, a grant or a loan waiting for you”**. And someone you know only online comes before a deal: a sale or an investment offered to you by a person you have never met is **“An investment or an emergency of someone you know only online”**.
 
 A sale is not a threat. A hurried buyer who wants a payment sent back, in secret, is still part of a deal, so the answer is **“Something you are buying, selling or booking”** and the name is **Overpayment scam**. A caller who threatens you with an official’s power is **Fake official scam**. The first of these two has a deal in it, and the second has a threat.
 
-- Advance-fee scam or Recovery scam: Is the money that is said to be waiting something that was never mine, or something that I lost earlier? When a case shows both **“A prize, an inheritance, a grant or a loan waiting for you”** and money you lost earlier, which someone says they can get back, the key’s answer is **“Getting back money you lost”**.
+- Advance-fee scam or Recovery scam: Is the money that is said to be waiting something that was never mine, or something that I lost earlier? When a case shows both **“A prize, an inheritance, a grant or a loan waiting for you”** and money you lost earlier, which someone says they can get back, the answer is **“Getting back money you lost”**.
 - Pig-butchering scam or Advance-fee scam: Did someone I know only online show me a site or an app where my money is, or is the money said to be waiting for me from someone who contacted me?
-- Advance-fee scam or Fake official scam: Does the message say that money is owed to me and that I must pay first, or that I owe money and will be punished unless I pay? When a case shows both **“A fine, a tax, or keeping your money safe”** and money said to be waiting for you, the key’s answer is **“A prize, an inheritance, a grant or a loan waiting for you”**.
+- Advance-fee scam or Fake official scam: Does the message say that money is owed to me and that I must pay first, or that I owe money and will be punished unless I pay? When a case shows both **“A fine, a tax, or keeping your money safe”** and money said to be waiting for you, the answer is **“A prize, an inheritance, a grant or a loan waiting for you”**.
 - Advance-fee scam or Fake payment link: Is the payment a fee to receive something that is said to be waiting for me, or a charge on something that I am buying or already pay for?
 - Fake official scam or Overpayment scam: Is the money part of a deal that I am in, with a payment that has reached me, or does someone with an official’s power threaten me unless I pay?
 
@@ -2058,13 +2058,13 @@ A sale is not a threat. A hurried buyer who wants a payment sent back, in secret
 
 ### 54. A question about a new case
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 54 of 62*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 54 of 62*
 
 [reviewers only: card kind `check`, id `check-m1`]
 
 > Lucia booked a holiday flat through the owner's own website, which she found by typing in the address a friend gave her. The booking email in her inbox says: 'Please pay the £300 deposit by the 10th, into the account named on your booking confirmation. Ring me on the number on the website if you want to talk about it.'
 
-**The key asks:** **“What does the request say the money is for?”**
+**The question:** **“What does the request say the money is for?”**
 
 - An investment or an emergency of someone you know only online
 - A prize, an inheritance, a grant or a loan waiting for you
@@ -2075,7 +2075,7 @@ A sale is not a threat. A hurried buyer who wants a payment sent back, in secret
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Something you are buying, selling or booking.**” The deposit is part of a booking that Lucia made herself: “Lucia booked a holiday flat through the owner's own website”. That is a deal that she is in, so the key’s answer is **“Something you are buying, selling or booking”**. This answer leads to **Overpayment scam**, **Fake payment link** and **Real payment request**.
+- If you are right: “Right: **Something you are buying, selling or booking.**” The deposit is part of a booking that Lucia made herself: “Lucia booked a holiday flat through the owner's own website”. That is a deal that she is in, so the answer is **“Something you are buying, selling or booking”**. This answer leads to **Overpayment scam**, **Fake payment link** and **Real payment request**.
 - If you miss: “The answer is **Something you are buying, selling or booking.**” The same reason follows, and then a line about the answer you chose:
   - If you chose **An investment or an emergency of someone you know only online**: Give that answer when the request comes from, or through, someone you have got to know only by messages and calls, usually over weeks or months, and the money is for an investment they showed you or for trouble they say they are in. This case shows something else: the request is part of a deal you are in: something you are buying, selling, renting, booking or waiting to have delivered.
   - If you chose **A prize, an inheritance, a grant or a loan waiting for you**: Give that answer when the request says that money is waiting for you (a prize, an inheritance, a grant, a loan, a refund or a payout) and the payment is part of getting it. This case shows something else: the request is part of a deal you are in: something you are buying, selling, renting, booking or waiting to have delivered.
@@ -2086,17 +2086,17 @@ A sale is not a threat. A hurried buyer who wants a payment sent back, in secret
 
 ### 55. The second question about money: what does it ask you to do with it?
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 55 of 62*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 55 of 62*
 
 [reviewers only: card kind `question`, id `q-m2`]
 
-The first question left one name, or a few. This card puts the second question, and its eight answers, in one place, as the key shows them, and says why the key asks it.
+The first question left one name, or a few. This card puts the second question, and its eight answers, in one place, and says why it is asked.
 
-**The key asks:** **“What does it ask you to do with the money?”**
+**The question:** **“What does it ask you to do with the money?”**
 
 **What it is for.** Tells apart the names that share a reason for paying, by what the request asks you to do with the money.
 
-**Its answers, exactly as the key shows them**
+**Its answers**
 
 - **“Put it into a trading site or app that they showed you”**
   - Give this answer when you are asked to put money into a trading or investment site or app that someone you know only online showed you, or to pay that site a fee, a tax or a deposit before you can take money out.
@@ -2135,13 +2135,13 @@ That is why this question is the one that separates the real request from its co
 
 Find the sentence that says what you are to do with the money. The eight answers are: invest it in a platform, pay for someone’s emergency, pay a fee first, pay into new details, pay on a link, pay at once and in secret, send some back, and pay what was agreed. Then put your finger on the words.
 
-Seven of the eight answers can be given from the request alone, at the moment it arrives. The last one, the answer for a real request, needs one more thing from you: you must contact them yourself, through *a way you already had*, and see that the request holds up. That is *the check*. Until you have done it, you cannot give that answer. This is not a flaw in the key. It is what contacting them is for.
+Seven of the eight answers can be given from the request alone, at the moment it arrives. The last one, the answer for a real request, needs one more thing from you: you must contact them yourself, through *a way you already had*, and see that the request holds up. That is *the check*. Until you have done it, you cannot give that answer. This is not a flaw in the questions. It is what contacting them is for.
 
-What the question never asks is what happens after you pay: a withdrawal that is refused, a buyer’s payment that disappears, a second fee. Those are often the first sign that people notice, and by then the money has gone. The key asks only for what the request itself shows.
+What the question never asks is what happens after you pay: a withdrawal that is refused, a buyer’s payment that disappears, a second fee. Those are often the first sign that people notice, and by then the money has gone. The questions ask only for what the request itself shows.
 
 **When two answers both seem to fit**
 
-Hurry and secrecy turn up in most money scams, so many requests show a hurry together with something more specific: a fee, a link, a trading app, an emergency, a payment to send back. The key gives the more specific one. **“Pay at once, in a way that cannot be undone, and tell no one”** is the answer only when nothing more specific shows, which is why it belongs to **Fake official scam** and to nothing else.
+Hurry and secrecy turn up in most money scams, so many requests show a hurry together with something more specific: a fee, a link, a trading app, an emergency, a payment to send back. The more specific one is the answer. **“Pay at once, in a way that cannot be undone, and tell no one”** is the answer only when nothing more specific shows, which is why it belongs to **Fake official scam** and to nothing else.
 
 A fee on a link goes to the fee, and a fee to take money out of a trading app goes to the app. Each pair below can look alike, and each has one question that separates it.
 
@@ -2151,7 +2151,7 @@ A fee on a link goes to the fee, and a fee to take money out of a trading app go
 - Fake official scam or Real payment request: Am I being hurried and kept quiet, or given time and something that I can look up for myself?
 - Overpayment scam or Real payment request: Is the amount the one that was agreed, or am I being asked to send some of a payment back or on to someone else?
 - Invoice fraud or Fake payment link: Am I asked to pay into a new account that the message names, or to pay on a page that I reach through a link in the message?
-- Fake official scam or Fake payment link: Am I told to pay on a page that I reach through a link, or told to pay at once in a way that cannot be undone, with nothing more specific? When a case shows both **“Pay at once, in a way that cannot be undone, and tell no one”** and a payment page reached from a link in the message, the key’s answer is **“Pay on a page reached from a link in the message”**.
+- Fake official scam or Fake payment link: Am I told to pay on a page that I reach through a link, or told to pay at once in a way that cannot be undone, with nothing more specific? When a case shows both **“Pay at once, in a way that cannot be undone, and tell no one”** and a payment page reached from a link in the message, the answer is **“Pay on a page reached from a link in the message”**.
 - Overpayment scam or Fake payment link: Has money reached me first, so that I am asked to send some of it back, or am I asked to pay on a page that I reach through a link?
 
 **Invoice fraud beside Fake payment link**
@@ -2175,13 +2175,13 @@ A fee on a link goes to the fee, and a fee to take money out of a trading app go
 
 ### 56. A question about a new case
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 56 of 62*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 56 of 62*
 
 [reviewers only: card kind `check`, id `check-m2`]
 
 > Pete has written to a woman called Carla for seven months and has never met her. She writes: 'The police at the airport have taken my passport and say I must pay a £1,500 fine before they give it back. Please send it to the account below, and then I can fly to you.'
 
-**The key asks:** **“What does it ask you to do with the money?”**
+**The question:** **“What does it ask you to do with the money?”**
 
 - Put it into a trading site or app that they showed you
 - Pay for an emergency of someone you have never met
@@ -2194,7 +2194,7 @@ A fee on a link goes to the fee, and a fee to take money out of a trading app go
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Pay for an emergency of someone you have never met.**” Carla asks Pete to pay a fine that she says is hers, so that she can leave the airport: “The police at the airport have taken my passport and say I must pay a £1,500 fine”. That is trouble of someone he has never met, so the key’s answer is **“Pay for an emergency of someone you have never met”**. This answer leads to **Romance scam**.
+- If you are right: “Right: **Pay for an emergency of someone you have never met.**” Carla asks Pete to pay a fine that she says is hers, so that she can leave the airport: “The police at the airport have taken my passport and say I must pay a £1,500 fine”. That is trouble of someone he has never met, so the answer is **“Pay for an emergency of someone you have never met”**. This answer leads to **Romance scam**.
 - If you miss: “The answer is **Pay for an emergency of someone you have never met.**” The same reason follows, and then a line about the answer you chose:
   - If you chose **Put it into a trading site or app that they showed you**: Give that answer when you are asked to put money into a trading or investment site or app that someone you know only online showed you, or to pay that site a fee, a tax or a deposit before you can take money out. This case shows something else: you are asked to pay for an emergency (a hospital bill, a fine, a ticket home, a blocked card) of someone you have never met in person and often never seen on a live video call.
   - If you chose **Pay a fee before the money reaches you**: Give that answer when you must pay a fee, a tax, a deposit or a charge before money you are promised will reach you. This case shows something else: you are asked to pay for an emergency (a hospital bill, a fine, a ticket home, a blocked card) of someone you have never met in person and often never seen on a live video call.
@@ -2207,11 +2207,11 @@ A fee on a link goes to the fee, and a fee to take money out of a trading app go
 
 ### 57. A whole case, from the first question to the name
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 57 of 62*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 57 of 62*
 
 [reviewers only: card kind `worked`, id `worked-invoice`]
 
-You have the nine names and the key’s two questions about money. Before the drill, watch three cases being run from the top, in the order that the key asks. You are not asked anything until the end of each.
+You have the nine names and the two questions about money. Before the drill, watch three cases being run from the top, in the order that the questions are asked. You are not asked anything until the end of each.
 
 *The compost supplier*
 
@@ -2219,13 +2219,13 @@ You have the nine names and the key’s two questions about money. Before the dr
 
 **Question 1 of 3: What is it asking you to do right now?**
 
-What it is for: sorts a message, a call or an offer by the next thing it asks of you: something on your device, a way into an account, money, facts about you, or nothing at all. Each kind of request puts something different at risk, is guarded by a different habit, and leads to a different set of names. The story that comes with it, who it says it is from, and what the sender is after in the end do not change the answer: what it asks you to do does. You can answer it from the message or the call itself, at the moment the request is made. Where a request asks for two of these things, the key takes the one higher in the list, because it reaches further: a program or a view of your screen reaches everything on the device, a way into an account reaches what the account holds, and money is gone once it is sent.
+What it is for: sorts a message, a call or an offer by the next thing it asks of you: something on your device, a way into an account, money, facts about you, or nothing at all. Each kind of request puts something different at risk, is guarded by a different habit, and leads to a different set of names. The story that comes with it, who it says it is from, and what the sender is after in the end do not change the answer: what it asks you to do does. You can answer it from the message or the call itself, at the moment the request is made. Where a request asks for two of these things, the answer is the one higher in the list, because it reaches further: a program or a view of your screen reaches everything on the device, a way into an account reaches what the account holds, and money is gone once it is sent.
 
 > Noor runs a small plant nursery and pays her supplier, Greenfield Compost, every month by bank transfer. An email arrives from the supplier's usual address: '⟦Please pay this month's invoice of £1,260⟧. Our bank has changed, so the account on the attached invoice is the new one; please do not use the old one.' No deadline is given.
 
 Answer: **“Pay or send money”**
 
-The email asks Noor to pay: “Please pay this month's invoice of £1,260”. It asks for no program, no file, no sign-in and no facts about her, so nothing earlier in the key’s list applies. The key’s answer is **“Pay or send money”**.
+The email asks Noor to pay: “Please pay this month's invoice of £1,260”. It asks for no program, no file, no sign-in and no facts about her, so nothing earlier in the list applies. The answer is **“Pay or send money”**.
 
 Still possible: all nine names this unit teaches.
 
@@ -2237,7 +2237,7 @@ What it is for: sorts requests for money by the reason they give, which leaves o
 
 Answer: **“A bill from someone you already pay”**
 
-The request is about something that she already pays for: “pays her supplier, Greenfield Compost, every month by bank transfer”. That is a bill from someone she already pays, so the key’s answer is **“A bill from someone you already pay”**. This is the answer that three names share, which is why a second question is needed.
+The request is about something that she already pays for: “pays her supplier, Greenfield Compost, every month by bank transfer”. That is a bill from someone she already pays, so the answer is **“A bill from someone you already pay”**. This is the answer that three names share, which is why a second question is needed.
 
 Still possible: **Real payment request**, **Invoice fraud** and **Fake payment link**. Ruled out: **Romance scam**, **Pig-butchering scam**, **Advance-fee scam**, **Recovery scam**, **Fake official scam** and **Overpayment scam**.
 
@@ -2269,21 +2269,21 @@ Still possible: **Invoice fraud**. Ruled out: **Romance scam**, **Pig-butchering
 
 For **Real payment request** you must be able to point to this: a bill, a fine or a deal that you can tie to something you already had or started, the amount you agreed or owe, details you have always paid or were given at the start, and a request that holds up when you contact them through a way you already had. The details are the part of that which the email does not satisfy: they are new, and they came in a message. Everything else about the case would fit a real request, and that is exactly why the copy works.
 
-It is the question from Tessa’s two invoices. Are the bank details the ones I was given at the start, or has a message just told me that they have changed? Here the account has changed, so the key’s answer is **“Pay into new bank details sent by message”**. Whether the change is real is not something that the email can tell her. She finds that out by ringing the supplier on a number from the contract.
+It is the question from Tessa’s two invoices. Are the bank details the ones I was given at the start, or has a message just told me that they have changed? Here the account has changed, so the answer is **“Pay into new bank details sent by message”**. Whether the change is real is not something that the email can tell her. She finds that out by ringing the supplier on a number from the contract.
 
 **Does it look like a case you know?**
 
-The key has given its answer. Now take a second look of a different kind: does this case look like one you know? It should bring back the landscaper’s email: the usual thread, the usual signature, and one line about a new bank.
+You have your answer. Now take a second look of a different kind: does this case look like one you know? It should bring back the landscaper’s email: the usual thread, the usual signature, and one line about a new bank.
 
-Here the key and the likeness agree, so the answer stands. The key’s questions come first, because they make you point at words in the case. The likeness is only a second look. When the two disagree, do not pick the one you prefer. Go back to the key’s questions and find the words in the case that answer them. The third whole case shows how.
+Here the questions and the likeness agree, so the answer stands. The questions come first, because they make you point at words in the case. The likeness is only a second look. When the two disagree, do not pick the one you prefer. Go back to the questions and find the words in the case that answer them. The third whole case shows how.
 
 ### 58. A second whole case, where the request is real
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 58 of 62*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 58 of 62*
 
 [reviewers only: card kind `worked`, id `worked-cottage`]
 
-The compost supplier was a copy. Not every case is. In this one the request is real, and the key’s questions are asked in exactly the same way.
+The compost supplier was a copy. Not every case is. In this one the request is real, and the questions are asked in exactly the same way.
 
 *The cottage deposit*
 
@@ -2297,7 +2297,7 @@ What it is for: sorts a message, a call or an offer by the next thing it asks of
 
 Answer: **“Pay or send money”**
 
-The email asks Ruth to pay a deposit: “Please pay the £200 deposit by 20 May”. Nothing earlier in the key’s list is asked of her, so the key’s answer is **“Pay or send money”**.
+The email asks Ruth to pay a deposit: “Please pay the £200 deposit by 20 May”. Nothing earlier in the list is asked of her, so the answer is **“Pay or send money”**.
 
 Still possible: all nine names this unit teaches.
 
@@ -2309,7 +2309,7 @@ What it is for: sorts requests for money by the reason they give, which leaves o
 
 Answer: **“Something you are buying, selling or booking”**
 
-The deposit is part of a booking that she made herself: “Ruth booked a weekend cottage through the owner's own website”. That is a deal that she is in, so the key’s answer is **“Something you are buying, selling or booking”**.
+The deposit is part of a booking that she made herself: “Ruth booked a weekend cottage through the owner's own website”. That is a deal that she is in, so the answer is **“Something you are buying, selling or booking”**.
 
 Still possible: **Real payment request**, **Fake payment link** and **Overpayment scam**. Ruled out: **Romance scam**, **Pig-butchering scam**, **Advance-fee scam**, **Recovery scam**, **Invoice fraud** and **Fake official scam**.
 
@@ -2321,7 +2321,7 @@ What it is for: tells apart the names that share a reason for paying, by what th
 
 Answer: **“Pay what you agreed or owe, to details that pass the check”**
 
-She has checked what she can without anyone’s help. The deposit is to go to the account named on her booking confirmation, which she already had, and the figures are the ones on the website that she found herself: “into the account named on your booking confirmation” and “The deposit and the balance are the figures on the website”. The email also invites her to ring the owner. Nobody hurries her and nobody asks her to keep it quiet. So the key’s answer is **“Pay what you agreed or owe, to details that pass the check”**.
+She has checked what she can without anyone’s help. The deposit is to go to the account named on her booking confirmation, which she already had, and the figures are the ones on the website that she found herself: “into the account named on your booking confirmation” and “The deposit and the balance are the figures on the website”. The email also invites her to ring the owner. Nobody hurries her and nobody asks her to keep it quiet. So the answer is **“Pay what you agreed or owe, to details that pass the check”**.
 
 Still possible: **Real payment request**. Ruled out: **Romance scam**, **Pig-butchering scam**, **Advance-fee scam**, **Recovery scam**, **Invoice fraud**, **Fake payment link**, **Fake official scam** and **Overpayment scam**.
 
@@ -2341,17 +2341,17 @@ Still possible: **Real payment request**. Ruled out: **Romance scam**, **Pig-but
 
 For **Invoice fraud** you must be able to point to this: a bill or a payment you already make to someone, a message saying that their bank details have changed, and new details to pay into. There are no new details here. The account is the one that she was given when she booked, so the one thing that the copy is made of is missing.
 
-It is the question from Tessa’s two invoices. Are the bank details the ones I was given at the start, or has a message just told me that they have changed? Here nothing has changed, so the key’s answer is **“Pay what you agreed or owe, to details that pass the check”**, and the case is **Real payment request**. A real request is as much an answer of the key as a scam is, and saying so is the key doing its job.
+It is the question from Tessa’s two invoices. Are the bank details the ones I was given at the start, or has a message just told me that they have changed? Here nothing has changed, so the answer is **“Pay what you agreed or owe, to details that pass the check”**, and the case is **Real payment request**. A real request is as much an answer as a scam is, and saying so is what the questions are for.
 
 **Does it look like a case you know?**
 
 Now take a second look: does this case look like one you know? It should bring back Hana’s rent reminder: a payment that is due, an account that she was given at the start, and a number to ring.
 
-Here the key and the likeness agree, so the answer stands. Notice that the likeness points to the real thing as readily as to a copy. That is the reason the key’s questions come first.
+Here the questions and the likeness agree, so the answer stands. Notice that the likeness points to the real thing as readily as to a copy. That is the reason the questions come first.
 
 ### 59. A third whole case, where the story points the wrong way
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 59 of 62*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 59 of 62*
 
 [reviewers only: card kind `worked`, id `worked-sofa`]
 
@@ -2369,7 +2369,7 @@ What it is for: sorts a message, a call or an offer by the next thing it asks of
 
 Answer: **“Pay or send money”**
 
-The buyer asks Imogen to send money: “I need the £350 back today, by transfer to my sister's account”. Nothing earlier in the key’s list is asked of her, so the key’s answer is **“Pay or send money”**.
+The buyer asks Imogen to send money: “I need the £350 back today, by transfer to my sister's account”. Nothing earlier in the list is asked of her, so the answer is **“Pay or send money”**.
 
 Still possible: all nine names this unit teaches.
 
@@ -2381,7 +2381,7 @@ What it is for: sorts requests for money by the reason they give, which leaves o
 
 Answer: **“Something you are buying, selling or booking”**
 
-The money is part of a sale that she is making: “Imogen advertises a sofa for £350”. That is a deal she is in, so the key’s answer is **“Something you are buying, selling or booking”**. There is no official, no prize, no loss and no stranger who showed her a site. The person behind the request is a buyer.
+The money is part of a sale that she is making: “Imogen advertises a sofa for £350”. That is a deal she is in, so the answer is **“Something you are buying, selling or booking”**. There is no official, no prize, no loss and no stranger who showed her a site. The person behind the request is a buyer.
 
 Still possible: **Real payment request**, **Fake payment link** and **Overpayment scam**. Ruled out: **Romance scam**, **Pig-butchering scam**, **Advance-fee scam**, **Recovery scam**, **Invoice fraud** and **Fake official scam**.
 
@@ -2393,7 +2393,7 @@ What it is for: tells apart the names that share a reason for paying, by what th
 
 Answer: **“Send back money they say they paid you by mistake”**
 
-This is the question that matters. The buyer has paid twice the price and asks her to send the extra to someone else’s account: “Sorry, my mistake! I need the £350 back today, by transfer to my sister's account”. That is the answer **“Send back money they say they paid you by mistake”**. The text also says today, by transfer, and do not tell your bank. Those words are a hurry, a payment that cannot be undone, and a secret, which is what the answer **“Pay at once, in a way that cannot be undone, and tell no one”** sounds like. When a request shows both, the key gives the more specific answer, and the more specific one is the payment to send back.
+This is the question that matters. The buyer has paid twice the price and asks her to send the extra to someone else’s account: “Sorry, my mistake! I need the £350 back today, by transfer to my sister's account”. That is the answer **“Send back money they say they paid you by mistake”**. The text also says today, by transfer, and do not tell your bank. Those words are a hurry, a payment that cannot be undone, and a secret, which is what the answer **“Pay at once, in a way that cannot be undone, and tell no one”** sounds like. When a request shows both, the answer is the more specific one, and the more specific one is the payment to send back.
 
 Still possible: **Overpayment scam**. Ruled out: **Romance scam**, **Pig-butchering scam**, **Advance-fee scam**, **Recovery scam**, **Real payment request**, **Invoice fraud**, **Fake payment link** and **Fake official scam**.
 
@@ -2413,21 +2413,21 @@ Still possible: **Overpayment scam**. Ruled out: **Romance scam**, **Pig-butcher
 
 For **Fake official scam** you must be able to point to this: someone who says they are an official or from your bank, a fine, a debt or a danger to your money, and an order to pay at once by gift cards, crypto, cash or a transfer to an account they give you, often with an order to tell no one. There is no official here, and no fine, debt or danger. The sender is a buyer, and the money is part of a sale. A hurry and a secret are there, but they are only part of what that name needs.
 
-The question that separates the two is the one from the first question card. Is the money part of a deal that I am in, with a payment that has reached me, or does someone with an official’s power threaten me unless I pay? Here the money is part of a deal that Imogen is in, and the buyer asks her to send some back. So the key’s answer is **“Send back money they say they paid you by mistake”**, and the name is **Overpayment scam**.
+The question that separates the two is the one from the first question card. Is the money part of a deal that I am in, with a payment that has reached me, or does someone with an official’s power threaten me unless I pay? Here the money is part of a deal that Imogen is in, and the buyer asks her to send some back. So the answer is **“Send back money they say they paid you by mistake”**, and the name is **Overpayment scam**.
 
 **Does it look like a case you know?**
 
-Now the second look: does this case look like one you know? A buyer who hurries you, tells you to keep a payment from your bank and wants a transfer today may bring back the tax caller first, and that case was **Fake official scam**. So here the likeness and the key seem to disagree.
+Now the second look: does this case look like one you know? A buyer who hurries you, tells you to keep a payment from your bank and wants a transfer today may bring back the tax caller first, and that case was **Fake official scam**. So here the likeness and the questions seem to disagree.
 
-When that happens, go back to the key’s questions and find the words in the case that answer them. They are “Sorry, my mistake! I need the £350 back today, by transfer to my sister's account”. The tax caller has nothing like them: there was no deal and no payment from the other side. The bike with a typing slip does: someone had paid twice the price, and asked for the difference to be sent on. So the case this one really looks like is Rafa’s bike, and the key’s answer stands.
+When that happens, go back to the questions and find the words in the case that answer them. They are “Sorry, my mistake! I need the £350 back today, by transfer to my sister's account”. The tax caller has nothing like them: there was no deal and no payment from the other side. The bike with a typing slip does: someone had paid twice the price, and asked for the difference to be sent on. So the case this one really looks like is Rafa’s bike, and the answer stands.
 
 ### The drill
 
 The cards are out of view from here, and every case is new. The drill has five stages. Cases that are easy to mix up are placed next to each other on purpose. This is meant to feel harder than the questions between the cards: telling look-alikes apart side by side is what makes the difference stick. Five of the cases come from an earlier unit, without being labelled. Nothing here is graded. A miss only decides what comes back. What you miss is asked again before the drill ends, and every name comes back on later days with a new case.
 
-Some of these requests are real, and some are copies made to take money. That is on purpose. Nothing in the key’s questions says that a request is a scam. They ask what it says the money is for and what it asks you to do with it, and a real request gets a name of its own, so you will need that name as often as the others. When the name is a scam, it also tells you what to do next.
+Some of these requests are real, and some are copies made to take money. That is on purpose. Nothing in the questions says that a request is a scam. They ask what it says the money is for and what it asks you to do with it, and a real request gets a name of its own, so you will need that name as often as the others. When the name is a scam, it also tells you what to do next.
 
-#### Stage 1 of 5. The key’s answers are shown for each case. Give the name that goes with them. This stage practises one thing: which name goes with which answer.
+#### Stage 1 of 5. The answers are shown for each case. Give the name that goes with them. This stage practises one thing: which name goes with which answer.
 
 The names offered are the nine this unit teaches: Romance scam / Pig-butchering scam / Advance-fee scam / Recovery scam / Real payment request / Invoice fraud / Fake payment link / Fake official scam / Overpayment scam.
 
@@ -2448,7 +2448,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Pig-butchering scam**: Mike does not ask her to put money into any site or app. The money is for his own trouble.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Pig-butchering scam**, the look-alike card’s lines follow: Both begin with someone you have only ever known through messages, often for weeks or months, and both end in a request for a large sum. The same person often runs one after the other. **Romance scam** asks you to pay for trouble that the person says is their own, such as a hospital bill or a ticket home. **Pig-butchering scam** asks you to invest: to put your money into a platform that the person showed you, or to pay a charge to that platform before your money can come out. Is the money to pay for something that has gone wrong for the person, or is it to be invested in a platform that they pointed me to?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “An online partner’s emergency that needs your money” (one tap opens the card).
 
 **Drill item 2 of 85**
@@ -2468,7 +2468,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Romance scam**: Jin does not have an emergency. The money is to go into an app that he showed her, not to pay for his trouble.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Romance scam**, the look-alike card’s lines follow: Both begin with someone you have only ever known through messages, often for weeks or months, and both end in a request for a large sum. The same person often runs one after the other. **Romance scam** asks you to pay for trouble that the person says is their own, such as a hospital bill or a ticket home. **Pig-butchering scam** asks you to invest: to put your money into a platform that the person showed you, or to pay a charge to that platform before your money can come out. Is the money to pay for something that has gone wrong for the person, or is it to be invested in a platform that they pointed me to?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “An online friend’s investment site that keeps your money” (one tap opens the card).
 
 **Drill item 3 of 85**
@@ -2488,7 +2488,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Recovery scam**: The £420,000 was never Brian’s and nothing was taken from him, so this is not an offer to get back something he lost.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Recovery scam**, the look-alike card’s lines follow: Both are about money that is said to be waiting to be released to you, and both ask for a fee before you can have it. In **Advance-fee scam** the money was never yours: a prize, a grant, a loan or an inheritance. In **Recovery scam** the money was yours and was taken from you earlier, and someone offers to get it back. Is the money that is said to be waiting something that was never mine, or something that I lost earlier?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “A fee to collect money that is not coming” (one tap opens the card).
 
 **Drill item 4 of 85**
@@ -2508,7 +2508,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Advance-fee scam**: The money is not a prize or a grant that was never hers. It is money that she paid and lost.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Advance-fee scam**, the look-alike card’s lines follow: Both are about money that is said to be waiting to be released to you, and both ask for a fee before you can have it. In **Advance-fee scam** the money was never yours: a prize, a grant, a loan or an inheritance. In **Recovery scam** the money was yours and was taken from you earlier, and someone offers to get it back. Is the money that is said to be waiting something that was never mine, or something that I lost earlier?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “A fee to get back money you lost” (one tap opens the card).
 
 **Drill item 5 of 85**
@@ -2528,7 +2528,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Invoice fraud**: The bank details are the ones on the quote. Nothing in the email says that they have changed.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Invoice fraud**, the look-alike card’s lines follow: Both are a bill that you really pay, with the same logo, the same email thread and the same amount. In **Real payment request** the account to pay into is the one that you have always paid, or were given when you started. In **Invoice fraud** a message tells you that the details have changed, and gives new ones. Are the bank details the ones I was given at the start, or has a message just told me that they have changed?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “A bill, a fine or a deal that is what it says” (one tap opens the card).
 
 **Drill item 6 of 85**
@@ -2548,7 +2548,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Real payment request**: The amount and the sender are what he expects, but the details are new, and they arrived in a message. A real request uses the details he was given at the start.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Real payment request**, the look-alike card’s lines follow: Both are a bill that you really pay, with the same logo, the same email thread and the same amount. In **Real payment request** the account to pay into is the one that you have always paid, or were given when you started. In **Invoice fraud** a message tells you that the details have changed, and gives new ones. Are the bank details the ones I was given at the start, or has a message just told me that they have changed?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “A real bill, sent to new bank details” (one tap opens the card).
 
 **Drill item 7 of 85**
@@ -2568,7 +2568,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Real payment request**: Nothing that she already had shows that the charge is real. It came in a message, with a link to pay on.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Real payment request**, the look-alike card’s lines follow: Both are a small charge on something that you are waiting for or already pay for, from a company that you deal with, and both can lead to a payment page. In **Real payment request** you find the charge yourself, in the company’s own app or on a page that you already use, and pay it there. In **Fake payment link** the charge arrives in a message, and the page to pay on is behind a link in that message. Did the charge come to me in a message with a link to pay on, or can I find it myself in the company’s own app or on a page that I already use?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “A small charge you do not owe, paid through a link” (one tap opens the card).
 
 **Drill item 8 of 85**
@@ -2588,7 +2588,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Fake payment link**: There is no link and no payment page. Raj is told to buy gift cards and read out the numbers.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Fake payment link**, the look-alike card’s lines follow: Both can come from someone who says that they are an official, with a fine or a debt, a deadline and a threat. In **Fake payment link** the request is to pay on a page that you reach through a link in the message, and a hurry or a threat does not change that. In **Fake official scam** nothing more specific shows: you are told to pay at once, in a way that cannot be undone, and to tell no one. Am I told to pay on a page that I reach through a link, or told to pay at once in a way that cannot be undone, with nothing more specific?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “A threat from an official or your bank, paid off at once and in secret” (one tap opens the card).
 
 **Drill item 9 of 85**
@@ -2608,7 +2608,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Real payment request**: The amount that reached Chris is not the price that was agreed, and he is asked to send some of it on to a third party.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Real payment request**, the look-alike card’s lines follow: Both are part of a deal that you are in, at a price that was agreed, between two people who found each other through an advert or an app. In **Real payment request** the amount is the one that was agreed, and the money moves in the way the deal began. In **Overpayment scam** a payment arrives that is more than the price, and you are asked to send some of it back or on. Is the amount the one that was agreed, or am I being asked to send some of a payment back or on to someone else?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “A buyer who pays too much and wants the difference” (one tap opens the card).
 
 **Drill item 10 of 85**
@@ -2628,7 +2628,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Fake payment link**: The payment is not on a page reached through a link in a message. She is paying inside an app that she installed herself.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Fake payment link**, the look-alike card’s lines follow: Both are a small charge on something that you are waiting for or already pay for, from a company that you deal with, and both can lead to a payment page. In **Real payment request** you find the charge yourself, in the company’s own app or on a page that you already use, and pay it there. In **Fake payment link** the charge arrives in a message, and the page to pay on is behind a link in that message. Did the charge come to me in a message with a link to pay on, or can I find it myself in the company’s own app or on a page that I already use?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “A bill, a fine or a deal that is what it says” (one tap opens the card).
 
 **Drill item 11 of 85**
@@ -2648,7 +2648,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Real payment request**: The bill came in a message with its own link to pay on. Nothing that Femi already had shows that it is real.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Real payment request**, the look-alike card’s lines follow: Both are a small charge on something that you are waiting for or already pay for, from a company that you deal with, and both can lead to a payment page. In **Real payment request** you find the charge yourself, in the company’s own app or on a page that you already use, and pay it there. In **Fake payment link** the charge arrives in a message, and the page to pay on is behind a link in that message. Did the charge come to me in a message with a link to pay on, or can I find it myself in the company’s own app or on a page that I already use?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “A small charge you do not owe, paid through a link” (one tap opens the card).
 
 #### Stage 2 of 5. One question at a time.
@@ -2670,7 +2670,7 @@ Shown to you, with the words that decide each answer marked:
 
 - If you are right: “Right: **An investment or an emergency of someone you know only online.**” Rina is someone he knows only from a forum, and the money is for trouble that she says is hers: “My card was blocked in Dubai and the hotel has kept my passport until I pay £1,950”. This answer leads to **Pig-butchering scam** and **Romance scam**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The first question about money: what is it for?” (one tap opens the card).
 
 **Drill item 13 of 85**
@@ -2691,7 +2691,7 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **Getting back money you lost.**” The sender offers to get back money that Rosa lost earlier: “We can get your £4,000 back from the seller's bank”. This answer leads to **Recovery scam**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **A prize, an inheritance, a grant or a loan waiting for you**: The £4,000 is not a prize or a grant that was never hers. It is money that she paid and lost.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The first question about money: what is it for?” (one tap opens the card).
 
 **Drill item 14 of 85**
@@ -2712,7 +2712,7 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **A prize, an inheritance, a grant or a loan waiting for you.**” The letter says that money is waiting for her, a rebate that she has not applied for: “Your household has been awarded a £2,500 energy rebate”. This answer leads to **Advance-fee scam**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **Getting back money you lost**: Nothing was taken from Leila earlier. The rebate is said to be new money that is waiting for her.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The first question about money: what is it for?” (one tap opens the card).
 
 **Drill item 15 of 85**
@@ -2732,7 +2732,7 @@ Shown to you, with the words that decide each answer marked:
 
 - If you are right: “Right: **A fine, a tax, or keeping your money safe.**” The text claims to come from the bank, and the reason it gives is a danger to the money in the account: “Your bank has blocked your account because of suspicious payments”. This answer leads to **Fake official scam**, **Fake payment link** and **Real payment request**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The first question about money: what is it for?” (one tap opens the card).
 
 **Drill item 16 of 85**
@@ -2752,7 +2752,7 @@ Shown to you, with the words that decide each answer marked:
 
 - If you are right: “Right: **Something you are buying, selling or booking.**” The payment is part of a purchase that she is making herself, at a shop that she reached on her own: “Kim buys a washing machine from a shop whose website she found by typing in its address”. This answer leads to **Overpayment scam**, **Fake payment link** and **Real payment request**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The first question about money: what is it for?” (one tap opens the card).
 
 **Drill item 17 of 85**
@@ -2775,7 +2775,7 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **Pay into new bank details sent by message.**” A message tells Ayo that the account has changed, and asks him to pay into the new one: “My bank account has changed”. This answer leads to **Invoice fraud**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **Pay what you agreed or owe, to details that pass the check**: The amount and the sender are what Ayo expects, but the details are new, and they arrived in a message.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The second question about money: what does it ask you to do with it?” (one tap opens the card).
 
 **Drill item 18 of 85**
@@ -2798,7 +2798,7 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **Pay what you agreed or owe, to details that pass the check.**” She is asked to pay the amount that she paid last year, inside an app that she already uses: “Pay £60 in the app, as last year” and “The amount is the one on last year's receipt”. This answer leads to **Real payment request**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **Pay into new bank details sent by message**: No new details are given. She pays inside the app, in the way that she paid last year.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The second question about money: what does it ask you to do with it?” (one tap opens the card).
 
 **Drill item 19 of 85**
@@ -2821,7 +2821,7 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **Send back money they say they paid you by mistake.**” The renter has paid more than the price and asks Sven to send the extra on to someone else: “Please send the extra £200 to a friend of mine who is collecting the van”. This answer leads to **Overpayment scam**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **Pay what you agreed or owe, to details that pass the check**: The amount that reached Sven is not the price that was agreed, and he is asked to send some of it on.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The second question about money: what does it ask you to do with it?” (one tap opens the card).
 
 **Drill item 20 of 85**
@@ -2844,7 +2844,7 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **Pay on a page reached from a link in the message.**” She is told to pay on a page that she reaches through a link in the text: “Settle it at citypark-fines.example”. This answer leads to **Fake payment link**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **Pay at once, in a way that cannot be undone, and tell no one**: The text asks her to pay on a link. It does not ask for gift cards, crypto or a transfer to an account that someone gives her, and it does not tell her to keep it secret.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The second question about money: what does it ask you to do with it?” (one tap opens the card).
 
 **Drill item 21 of 85**
@@ -2866,7 +2866,7 @@ Shown to you, with the words that decide each answer marked:
 
 - If you are right: “Right: **Put it into a trading site or app that they showed you.**” He is asked to put money into a platform that someone he knows only online showed him: “Open an account with £2,000”. This answer leads to **Pig-butchering scam**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The second question about money: what does it ask you to do with it?” (one tap opens the card).
 
 **Drill item 22 of 85**
@@ -2889,7 +2889,7 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **Pay at once, in a way that cannot be undone, and tell no one.**” Wanda is to pay at once, in a way that cannot be undone, and to tell no one: “Pay it now in cryptocurrency from the machine at the supermarket”. Nothing more specific shows. This answer leads to **Fake official scam**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **Pay on a page reached from a link in the message**: She is not asked to pay on a link. She is told to pay in crypto at a machine, at once, and to say nothing.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The second question about money: what does it ask you to do with it?” (one tap opens the card).
 
 **Drill item 23 of 85**
@@ -2916,7 +2916,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Shown as soon as you answer**
 
-- The answer is: “Is the money that is said to be waiting something that was never mine, or something that I lost earlier?” Both are about money that is said to be waiting to be released to you, and both ask for a fee before you can have it. In **Advance-fee scam** the money was never yours: a prize, a grant, a loan or an inheritance. In **Recovery scam** the money was yours and was taken from you earlier, and someone offers to get it back. When a case shows both **“A prize, an inheritance, a grant or a loan waiting for you”** and money you lost earlier, which someone says they can get back, the key’s answer is **“Getting back money you lost”**.
+- The answer is: “Is the money that is said to be waiting something that was never mine, or something that I lost earlier?” Both are about money that is said to be waiting to be released to you, and both ask for a fee before you can have it. In **Advance-fee scam** the money was never yours: a prize, a grant, a loan or an inheritance. In **Recovery scam** the money was yours and was taken from you earlier, and someone offers to get it back. When a case shows both **“A prize, an inheritance, a grant or a loan waiting for you”** and money you lost earlier, which someone says they can get back, the answer is **“Getting back money you lost”**.
 - If you chose “Did someone I know only online show me a site or an app where my money is, or is the money said to be waiting for me from someone who contacted me?”: that question separates **Pig-butchering scam** and **Advance-fee scam**.
 - If you chose “Does the message say that money is owed to me and that I must pay first, or that I owe money and will be punished unless I pay?”: that question separates **Advance-fee scam** and **Fake official scam**.
 - If you chose “Is the payment a fee to receive something that is said to be waiting for me, or a charge on something that I am buying or already pay for?”: that question separates **Advance-fee scam** and **Fake payment link**.
@@ -3030,7 +3030,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Shown as soon as you answer**
 
-- The answer is: “Am I told to pay on a page that I reach through a link, or told to pay at once in a way that cannot be undone, with nothing more specific?” Both can come from someone who says that they are an official, with a fine or a debt, a deadline and a threat. In **Fake payment link** the request is to pay on a page that you reach through a link in the message, and a hurry or a threat does not change that. In **Fake official scam** nothing more specific shows: you are told to pay at once, in a way that cannot be undone, and to tell no one. When a case shows both **“Pay at once, in a way that cannot be undone, and tell no one”** and a payment page reached from a link in the message, the key’s answer is **“Pay on a page reached from a link in the message”**.
+- The answer is: “Am I told to pay on a page that I reach through a link, or told to pay at once in a way that cannot be undone, with nothing more specific?” Both can come from someone who says that they are an official, with a fine or a debt, a deadline and a threat. In **Fake payment link** the request is to pay on a page that you reach through a link in the message, and a hurry or a threat does not change that. In **Fake official scam** nothing more specific shows: you are told to pay at once, in a way that cannot be undone, and to tell no one. When a case shows both **“Pay at once, in a way that cannot be undone, and tell no one”** and a payment page reached from a link in the message, the answer is **“Pay on a page reached from a link in the message”**.
 - If you chose “Did the charge come to me in a message with a link to pay on, or can I find it myself in the company’s own app or on a page that I already use?”: that question separates **Fake payment link** and **Real payment request**.
 - If you chose “Am I being hurried and kept quiet, or given time and something that I can look up for myself?”: that question separates **Fake official scam** and **Real payment request**.
 - If you chose “Am I asked to pay into a new account that the message names, or to pay on a page that I reach through a link in the message?”: that question separates **Invoice fraud** and **Fake payment link**.
@@ -3062,7 +3062,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Drill item 31 of 85**
 
-**You are asked:** You cannot tell whether a case is **Pig-butchering scam** or **Romance scam**. Which of the key’s questions tells these two apart?
+**You are asked:** You cannot tell whether a case is **Pig-butchering scam** or **Romance scam**. Which question tells these two apart?
 
 - What does the request say the money is for?
 - What does it ask you to do with the money?
@@ -3075,7 +3075,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Drill item 32 of 85**
 
-**You are asked:** You cannot tell whether a case is **Advance-fee scam** or **Recovery scam**. Which of the key’s questions tells these two apart?
+**You are asked:** You cannot tell whether a case is **Advance-fee scam** or **Recovery scam**. Which question tells these two apart?
 
 - What does the request say the money is for?
 - What does it ask you to do with the money?
@@ -3088,7 +3088,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Drill item 33 of 85**
 
-**You are asked:** You cannot tell whether a case is **Fake payment link** or **Real payment request**. Which of the key’s questions tells these two apart?
+**You are asked:** You cannot tell whether a case is **Fake payment link** or **Real payment request**. Which question tells these two apart?
 
 - What does the request say the money is for?
 - What does it ask you to do with the money?
@@ -3269,8 +3269,8 @@ Shown to you, with the words that decide each answer marked:
 **Shown as soon as you answer**
 
 - If you are right: “Right: **Install something, open a file, or share your screen.**” The pop-up asks Wes to download something and run it on his laptop: “Click here to download and run the update”. That is a request about the device itself.
-- If you miss: “The answer is …”, the same reason, and then the line built from the key for the answer you chose.
-- Then, right or wrong: “This case leaves the part of the key you have been taught. The questions that follow this answer come in a part of the course you have not reached, so the case stops here.”
+- If you miss: “The answer is …”, the same reason, and then the line built from the answers’ own wording for the answer you chose.
+- Then, right or wrong: “The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.”
 
 **Drill item 44 of 85**
 
@@ -3289,12 +3289,12 @@ Shown to you, with the words that decide each answer marked:
 **Shown as soon as you answer**
 
 - If you are right: “Right: **Sign in, give a code, or allow an app.**” The app asks Isla to type in a *one-time code* that has just been sent to her: “Enter the code we have just texted you”. That is a request for a way into an account. She started the move herself, and the first question does not ask about that.
-- If you miss: “The answer is …”, the same reason, and then the line built from the key for the answer you chose.
-- Then, right or wrong: “This case leaves the part of the key you have been taught. The questions that follow this answer come in a part of the course you have not reached, so the case stops here.”
+- If you miss: “The answer is …”, the same reason, and then the line built from the answers’ own wording for the answer you chose.
+- Then, right or wrong: “The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.”
 
-#### Stage 3 of 5. The first answer is shown. Answer the rest, then give the name. From here on your route is marked as well as the name: a right name reached by a wrong answer on the way counts as a miss.
+#### Stage 3 of 5. The first answer is shown. Answer the rest, then give the name. From here on your answers on the way are marked as well as the name: a right name reached by a wrong answer counts as a miss.
 
-Each question is shown with all of its answers from the key, in the key’s order, and the names offered are the nine this unit teaches.
+Each question is shown with all of its answers, in order, and the names offered are the nine this unit teaches.
 
 **Drill item 45 of 85**
 
@@ -3312,10 +3312,10 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Pig-butchering scam**: Walter does not show her a site or an app to put money into. The money is for his own trouble.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - If you chose **Put it into a trading site or app that they showed you**: Walter does not show her a site or an app to put money into. The money is for his own trouble.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Pig-butchering scam**, the look-alike card’s lines follow: Both begin with someone you have only ever known through messages, often for weeks or months, and both end in a request for a large sum. The same person often runs one after the other. **Romance scam** asks you to pay for trouble that the person says is their own, such as a hospital bill or a ticket home. **Pig-butchering scam** asks you to invest: to put your money into a platform that the person showed you, or to pay a charge to that platform before your money can come out. Is the money to pay for something that has gone wrong for the person, or is it to be invested in a platform that they pointed me to?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “An online partner’s emergency that needs your money” (one tap opens the card).
 
 **Drill item 46 of 85**
@@ -3334,10 +3334,10 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Romance scam**: Ben has no emergency. The money is to go into an app that he showed her.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - If you chose **Pay for an emergency of someone you have never met**: Ben has no emergency. The money is to go into an app that he showed her.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Romance scam**, the look-alike card’s lines follow: Both begin with someone you have only ever known through messages, often for weeks or months, and both end in a request for a large sum. The same person often runs one after the other. **Romance scam** asks you to pay for trouble that the person says is their own, such as a hospital bill or a ticket home. **Pig-butchering scam** asks you to invest: to put your money into a platform that the person showed you, or to pay a charge to that platform before your money can come out. Is the money to pay for something that has gone wrong for the person, or is it to be invested in a platform that they pointed me to?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “An online friend’s investment site that keeps your money” (one tap opens the card).
 
 **Drill item 47 of 85**
@@ -3355,10 +3355,10 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **Recovery scam**.” What does it ask you to do with the money? **Pay a fee before the money reaches you.** There is a fee that comes first: “if you send a £90 start-up fee first”.
   - Why not **Advance-fee scam**: The £900 was not a prize that was never his. It is his own deposit, which he paid and lost.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Advance-fee scam**, the look-alike card’s lines follow: Both are about money that is said to be waiting to be released to you, and both ask for a fee before you can have it. In **Advance-fee scam** the money was never yours: a prize, a grant, a loan or an inheritance. In **Recovery scam** the money was yours and was taken from you earlier, and someone offers to get it back. Is the money that is said to be waiting something that was never mine, or something that I lost earlier?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A fee to get back money you lost” (one tap opens the card).
 
 **Drill item 48 of 85**
@@ -3376,10 +3376,10 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **Advance-fee scam**.” What does it ask you to do with the money? **Pay a fee before the money reaches you.** He must pay before any of it reaches him: “To release it, pay a £75 handling fee”.
   - Why not **Recovery scam**: Mr Osei lost nothing that someone offers to get back. The refund is said to be new money that is waiting for him.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Recovery scam**, the look-alike card’s lines follow: Both are about money that is said to be waiting to be released to you, and both ask for a fee before you can have it. In **Advance-fee scam** the money was never yours: a prize, a grant, a loan or an inheritance. In **Recovery scam** the money was yours and was taken from you earlier, and someone offers to get it back. Is the money that is said to be waiting something that was never mine, or something that I lost earlier?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A fee to collect money that is not coming” (one tap opens the card).
 
 **Drill item 49 of 85**
@@ -3398,10 +3398,10 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Fake payment link**: The payment is not on a page that she reaches through a link in a message. It is inside the school’s own app, which she already had.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - If you chose **Pay on a page reached from a link in the message**: The payment is not on a page that she reaches through a link in a message. It is inside the school’s own app, which she already had.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Fake payment link**, the look-alike card’s lines follow: Both are a small charge on something that you are waiting for or already pay for, from a company that you deal with, and both can lead to a payment page. In **Real payment request** you find the charge yourself, in the company’s own app or on a page that you already use, and pay it there. In **Fake payment link** the charge arrives in a message, and the page to pay on is behind a link in that message. Did the charge come to me in a message with a link to pay on, or can I find it myself in the company’s own app or on a page that I already use?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A bill, a fine or a deal that is what it says” (one tap opens the card).
 
 **Drill item 50 of 85**
@@ -3420,10 +3420,10 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Real payment request**: The sender and the amount are the usual ones, but the account is new, and it arrived in a message.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - If you chose **Pay what you agreed or owe, to details that pass the check**: The sender and the amount are the usual ones, but the account is new, and it arrived in a message.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Real payment request**, the look-alike card’s lines follow: Both are a bill that you really pay, with the same logo, the same email thread and the same amount. In **Real payment request** the account to pay into is the one that you have always paid, or were given when you started. In **Invoice fraud** a message tells you that the details have changed, and gives new ones. Are the bank details the ones I was given at the start, or has a message just told me that they have changed?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A real bill, sent to new bank details” (one tap opens the card).
 
 **Drill item 51 of 85**
@@ -3442,10 +3442,10 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Real payment request**: The charge came in a message, with a link to pay on. Nothing that Rahul already had shows that it is real.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - If you chose **Pay what you agreed or owe, to details that pass the check**: The charge came in a message, with a link to pay on. Nothing that Rahul already had shows that it is real.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Real payment request**, the look-alike card’s lines follow: Both are a small charge on something that you are waiting for or already pay for, from a company that you deal with, and both can lead to a payment page. In **Real payment request** you find the charge yourself, in the company’s own app or on a page that you already use, and pay it there. In **Fake payment link** the charge arrives in a message, and the page to pay on is behind a link in that message. Did the charge come to me in a message with a link to pay on, or can I find it myself in the company’s own app or on a page that I already use?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A small charge you do not owe, paid through a link” (one tap opens the card).
 
 **Drill item 52 of 85**
@@ -3464,10 +3464,10 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Fake payment link**: No link and no payment page are involved. Money has reached Nadia first, and she is asked to send some of it on.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - If you chose **Pay on a page reached from a link in the message**: No link and no payment page are involved. Money has reached Nadia first, and she is asked to send some of it on.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Fake payment link**, the look-alike card’s lines follow: Both are about something that you are buying or selling or waiting to have delivered, and both can arrive as a message. In **Overpayment scam** money has already reached you, and you are asked to send some of it on. In **Fake payment link** no money has reached you, and you are asked to pay on a page that you reach through a link. Has money reached me first, so that I am asked to send some of it back, or am I asked to pay on a page that I reach through a link?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A buyer who pays too much and wants the difference” (one tap opens the card).
 
 **Drill item 53 of 85**
@@ -3486,10 +3486,10 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Real payment request**: A real request would give him time, a way to appeal and something that he could look up himself. This one hurries him and tells him to keep quiet.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - If you chose **Pay what you agreed or owe, to details that pass the check**: A real request would give him time, a way to appeal and something that he could look up himself. This one hurries him and tells him to keep quiet.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Real payment request**, the look-alike card’s lines follow: Both are about a fine, a tax or a debt that is said to be owed to an official body or to your bank, and both can come with a real-looking reference. In **Real payment request** you are given time and a way to appeal, you can look the amount up yourself, and you are asked to pay in an ordinary way. In **Fake official scam** you are told to pay at once, in a way that cannot be undone, and to say nothing. Am I being hurried and kept quiet, or given time and something that I can look up for myself?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A threat from an official or your bank, paid off at once and in secret” (one tap opens the card).
 
 **Drill item 54 of 85**
@@ -3508,15 +3508,15 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Fake official scam**: The bill is not backed by a threat. It gives him time, matches what he signed, and invites him to ring.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - If you chose **Pay at once, in a way that cannot be undone, and tell no one**: The bill is not backed by a threat. It gives him time, matches what he signed, and invites him to ring.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Fake official scam**, the look-alike card’s lines follow: Both are about a fine, a tax or a debt that is said to be owed to an official body or to your bank, and both can come with a real-looking reference. In **Real payment request** you are given time and a way to appeal, you can look the amount up yourself, and you are asked to pay in an ordinary way. In **Fake official scam** you are told to pay at once, in a way that cannot be undone, and to say nothing. Am I being hurried and kept quiet, or given time and something that I can look up for myself?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A bill, a fine or a deal that is what it says” (one tap opens the card).
 
-#### Stage 4 of 5. No help. Answer every question in the key’s order, then give the name.
+#### Stage 4 of 5. No help. Answer every question in order, then give the name.
 
-Each question is shown with all of its answers from the key, in the key’s order, and the names offered are the nine this unit teaches.
+Each question is shown with all of its answers, in order, and the names offered are the nine this unit teaches.
 
 **Drill item 55 of 85**
 
@@ -3529,13 +3529,13 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you are right: “Right: **Romance scam**.” What does it ask you to do with the money? **Pay for an emergency of someone you have never met.** She is asked to pay for his emergency, a medical bill: “my insurance will not cover the £1,350”. Nothing is to be invested.
   - Why not **Pig-butchering scam**: Leo does not show her a site or an app to put money into. The money is for his own bill.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What is it asking you to do right now? **Pay or send money.** “Please send it to the clinic's account” asks her to send money. Nothing earlier in the key’s list is asked of her, so the answer is **“Pay or send money”**.
+  - What is it asking you to do right now? **Pay or send money.** “Please send it to the clinic's account” asks her to send money. Nothing earlier in the list is asked of her, so the answer is **“Pay or send money”**.
   - What does the request say the money is for? **An investment or an emergency of someone you know only online.** Leo is a voice in messages, and the money is for trouble that he says is his own: “my insurance will not cover the £1,350”.
   - If you chose **Put it into a trading site or app that they showed you**: Leo does not show her a site or an app to put money into. The money is for his own bill.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Pig-butchering scam**, the look-alike card’s lines follow: Both begin with someone you have only ever known through messages, often for weeks or months, and both end in a request for a large sum. The same person often runs one after the other. **Romance scam** asks you to pay for trouble that the person says is their own, such as a hospital bill or a ticket home. **Pig-butchering scam** asks you to invest: to put your money into a platform that the person showed you, or to pay a charge to that platform before your money can come out. Is the money to pay for something that has gone wrong for the person, or is it to be invested in a platform that they pointed me to?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If Leo had told her to put the £1,350 into a trading app that he showed her, it would be **Pig-butchering scam**.
 - Taught on: “An online partner’s emergency that needs your money” (one tap opens the card).
 
@@ -3550,13 +3550,13 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you are right: “Right: **Pig-butchering scam**.” What does it ask you to do with the money? **Put it into a trading site or app that they showed you.** He is asked to put money into the site that she showed him: “Sign up and put in £4,000”.
   - Why not **Romance scam**: Dana has no emergency of her own. The money is to go into a site that she showed him.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What is it asking you to do right now? **Pay or send money.** “put in £4,000” is a request to put money in. Nothing earlier in the key’s list is asked, so the answer is **“Pay or send money”**.
+  - What is it asking you to do right now? **Pay or send money.** “put in £4,000” is a request to put money in. Nothing earlier in the list is asked, so the answer is **“Pay or send money”**.
   - What does the request say the money is for? **An investment or an emergency of someone you know only online.** Dana is someone he knows only from a chat group, and the money is for an investment that she showed him: “sent the address of a trading site that she says doubled her savings”.
   - If you chose **Pay for an emergency of someone you have never met**: Dana has no emergency of her own. The money is to go into a site that she showed him.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Romance scam**, the look-alike card’s lines follow: Both begin with someone you have only ever known through messages, often for weeks or months, and both end in a request for a large sum. The same person often runs one after the other. **Romance scam** asks you to pay for trouble that the person says is their own, such as a hospital bill or a ticket home. **Pig-butchering scam** asks you to invest: to put your money into a platform that the person showed you, or to pay a charge to that platform before your money can come out. Is the money to pay for something that has gone wrong for the person, or is it to be invested in a platform that they pointed me to?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If Dana had said that she could not pay her rent, and asked him to send her £4,000, it would be **Romance scam**.
 - Taught on: “An online friend’s investment site that keeps your money” (one tap opens the card).
 
@@ -3571,12 +3571,12 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you are right: “Right: **Advance-fee scam**.” What does it ask you to do with the money? **Pay a fee before the money reaches you.** A payment must be made before any of it reaches the reader: “To collect, pay a £210 tax”.
   - Why not **Recovery scam**: The £75,000 was never the reader’s, and nothing was taken from them. It is said to be a prize that is waiting.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What is it asking you to do right now? **Pay or send money.** “pay a £210 tax to the account below” asks for a payment, and nothing earlier in the key’s list is asked, so the answer is **“Pay or send money”**.
+  - What is it asking you to do right now? **Pay or send money.** “pay a £210 tax to the account below” asks for a payment, and nothing earlier in the list is asked, so the answer is **“Pay or send money”**.
   - What does the request say the money is for? **A prize, an inheritance, a grant or a loan waiting for you.** The text says that a prize is waiting, from a draw that the reader never entered: “Your phone number has won £75,000 in the national mobile draw”.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Recovery scam**, the look-alike card’s lines follow: Both are about money that is said to be waiting to be released to you, and both ask for a fee before you can have it. In **Advance-fee scam** the money was never yours: a prize, a grant, a loan or an inheritance. In **Recovery scam** the money was yours and was taken from you earlier, and someone offers to get it back. Is the money that is said to be waiting something that was never mine, or something that I lost earlier?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the text had said that it could get back money that the reader lost last year, it would be **Recovery scam**.
 - Taught on: “A fee to collect money that is not coming” (one tap opens the card).
 
@@ -3591,12 +3591,12 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you are right: “Right: **Recovery scam**.” What does it ask you to do with the money? **Pay a fee before the money reaches you.** There is a fee that comes first: “A £375 compliance fee is payable first”.
   - Why not **Advance-fee scam**: The money is not a prize or a grant that was never his. He lost it to the fake site.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What is it asking you to do right now? **Pay or send money.** “A £375 compliance fee is payable first” asks for a payment, and nothing earlier in the key’s list is asked, so the answer is **“Pay or send money”**.
+  - What is it asking you to do right now? **Pay or send money.** “A £375 compliance fee is payable first” asks for a payment, and nothing earlier in the list is asked, so the answer is **“Pay or send money”**.
   - What does the request say the money is for? **Getting back money you lost.** The email offers to return money that Gus lost earlier: “After a fake investment website took £5,500 from him in the spring” and “Your funds have been frozen and can be returned to you”.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Advance-fee scam**, the look-alike card’s lines follow: Both are about money that is said to be waiting to be released to you, and both ask for a fee before you can have it. In **Advance-fee scam** the money was never yours: a prize, a grant, a loan or an inheritance. In **Recovery scam** the money was yours and was taken from you earlier, and someone offers to get it back. Is the money that is said to be waiting something that was never mine, or something that I lost earlier?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the email had said that Gus had won a prize, with no mention of a loss, it would be **Advance-fee scam**.
 - Taught on: “A fee to get back money you lost” (one tap opens the card).
 
@@ -3611,13 +3611,13 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you are right: “Right: **Real payment request**.” What does it ask you to do with the money? **Pay what you agreed or owe, to details that pass the check.** He does not rely on anything in the letter. He finds the same amount through an address that he already had: “He does not use the address printed on the letter” and “sees the same £190 and the same date”.
   - Why not **Fake official scam**: Nothing is hurried or secret, and there is no threat. He can look the amount up for himself.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What is it asking you to do right now? **Pay or send money.** “his vehicle tax of £190 is due by 1 March” is a request to pay, and nothing earlier in the key’s list is asked, so the answer is **“Pay or send money”**.
+  - What is it asking you to do right now? **Pay or send money.** “his vehicle tax of £190 is due by 1 March” is a request to pay, and nothing earlier in the list is asked, so the answer is **“Pay or send money”**.
   - What does the request say the money is for? **A fine, a tax, or keeping your money safe.** The reason is a tax that comes from an official body: “A reminder letter tells Yusuf that his vehicle tax of £190 is due by 1 March”.
   - If you chose **Pay at once, in a way that cannot be undone, and tell no one**: Nothing is hurried or secret, and there is no threat. He can look the amount up for himself.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Fake official scam**, the look-alike card’s lines follow: Both are about a fine, a tax or a debt that is said to be owed to an official body or to your bank, and both can come with a real-looking reference. In **Real payment request** you are given time and a way to appeal, you can look the amount up yourself, and you are asked to pay in an ordinary way. In **Fake official scam** you are told to pay at once, in a way that cannot be undone, and to say nothing. Am I being hurried and kept quiet, or given time and something that I can look up for myself?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If a caller had told him to pay the £190 at once in vouchers and to say nothing, it would be **Fake official scam**.
 - Taught on: “A bill, a fine or a deal that is what it says” (one tap opens the card).
 
@@ -3632,13 +3632,13 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you are right: “Right: **Invoice fraud**.” What does it ask you to do with the money? **Pay into new bank details sent by message.** A message tells her that the account has changed: “I have a new business bank account”.
   - Why not **Real payment request**: The sender and the amount are the usual ones, but the account is new, and it arrived in a message.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What is it asking you to do right now? **Pay or send money.** “Please use these details for this month's payment and from now on” asks her to pay into new details, and nothing earlier in the key’s list is asked, so the answer is **“Pay or send money”**.
+  - What is it asking you to do right now? **Pay or send money.** “Please use these details for this month's payment and from now on” asks her to pay into new details, and nothing earlier in the list is asked, so the answer is **“Pay or send money”**.
   - What does the request say the money is for? **A bill from someone you already pay.** The money is for a payment that she already makes every month: “Lena pays a freelance designer, Pip, £700 on the first of each month”.
   - If you chose **Pay what you agreed or owe, to details that pass the check**: The sender and the amount are the usual ones, but the account is new, and it arrived in a message.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Real payment request**, the look-alike card’s lines follow: Both are a bill that you really pay, with the same logo, the same email thread and the same amount. In **Real payment request** the account to pay into is the one that you have always paid, or were given when you started. In **Invoice fraud** a message tells you that the details have changed, and gives new ones. Are the bank details the ones I was given at the start, or has a message just told me that they have changed?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If Pip’s email had asked for the same account as every month, it would be **Real payment request**.
 - Taught on: “A real bill, sent to new bank details” (one tap opens the card).
 
@@ -3653,13 +3653,13 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you are right: “Right: **Fake payment link**.” What does it ask you to do with the money? **Pay on a page reached from a link in the message.** He is told to pay on a page that he reaches through a link in the text: “Pay £1.20 at flowerfast-redeliver.example”.
   - Why not **Real payment request**: The charge came in a message, with a link to pay on. Nothing that he already had shows that it is real.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What is it asking you to do right now? **Pay or send money.** “Pay £1.20 at flowerfast-redeliver.example” asks him to pay, and nothing earlier in the key’s list is asked, so the answer is **“Pay or send money”**.
+  - What is it asking you to do right now? **Pay or send money.** “Pay £1.20 at flowerfast-redeliver.example” asks him to pay, and nothing earlier in the list is asked, so the answer is **“Pay or send money”**.
   - What does the request say the money is for? **Something you are buying, selling or booking.** The charge is part of a delivery that he is waiting for: “We could not deliver your flowers”.
   - If you chose **Pay what you agreed or owe, to details that pass the check**: The charge came in a message, with a link to pay on. Nothing that he already had shows that it is real.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Real payment request**, the look-alike card’s lines follow: Both are a small charge on something that you are waiting for or already pay for, from a company that you deal with, and both can lead to a payment page. In **Real payment request** you find the charge yourself, in the company’s own app or on a page that you already use, and pay it there. In **Fake payment link** the charge arrives in a message, and the page to pay on is behind a link in that message. Did the charge come to me in a message with a link to pay on, or can I find it myself in the company’s own app or on a page that I already use?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the charge were shown in the florist’s own app, which he installed himself, it would be **Real payment request**.
 - Taught on: “A small charge you do not owe, paid through a link” (one tap opens the card).
 
@@ -3674,13 +3674,13 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you are right: “Right: **Fake official scam**.” What does it ask you to do with the money? **Pay at once, in a way that cannot be undone, and tell no one.** She is to pay in cash, which cannot be undone, and to tell no one: “withdraw £5,000 in cash and give it to the officer who will call at your door. Tell no one at the bank”. Nothing more specific shows.
   - Why not **Fake payment link**: No link and no payment page are involved. She is told to hand over cash and keep it secret.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What is it asking you to do right now? **Pay or send money.** “withdraw £5,000 in cash and give it to the officer who will call at your door” asks her to hand over money, and nothing earlier in the key’s list is asked, so the answer is **“Pay or send money”**.
+  - What is it asking you to do right now? **Pay or send money.** “withdraw £5,000 in cash and give it to the officer who will call at your door” asks her to hand over money, and nothing earlier in the list is asked, so the answer is **“Pay or send money”**.
   - What does the request say the money is for? **A fine, a tax, or keeping your money safe.** The caller claims to be an official, and the reason is a danger to her: “Your name has been used to open accounts in a fraud case”.
   - If you chose **Pay on a page reached from a link in the message**: No link and no payment page are involved. She is told to hand over cash and keep it secret.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Fake payment link**, the look-alike card’s lines follow: Both can come from someone who says that they are an official, with a fine or a debt, a deadline and a threat. In **Fake payment link** the request is to pay on a page that you reach through a link in the message, and a hurry or a threat does not change that. In **Fake official scam** nothing more specific shows: you are told to pay at once, in a way that cannot be undone, and to tell no one. Am I told to pay on a page that I reach through a link, or told to pay at once in a way that cannot be undone, with nothing more specific?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the message had said to pay £35 on a page reached through a link, it would be **Fake payment link**.
 - Taught on: “A threat from an official or your bank, paid off at once and in secret” (one tap opens the card).
 
@@ -3695,13 +3695,13 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you are right: “Right: **Overpayment scam**.” What does it ask you to do with the money? **Send back money they say they paid you by mistake.** The buyer has paid more than the price and asks him to send the extra to someone else: “My dad sent too much. Please send the other £200 to my brother's account”.
   - Why not **Real payment request**: The amount that reached Pavel is not the price, and he is asked to send some of it on to a third party.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What is it asking you to do right now? **Pay or send money.** “Please send the other £200 to my brother's account” asks him to send money, and nothing earlier in the key’s list is asked, so the answer is **“Pay or send money”**.
+  - What is it asking you to do right now? **Pay or send money.** “Please send the other £200 to my brother's account” asks him to send money, and nothing earlier in the list is asked, so the answer is **“Pay or send money”**.
   - What does the request say the money is for? **Something you are buying, selling or booking.** The money is part of a sale that he is making: “Pavel sells a second-hand guitar for £220”.
   - If you chose **Pay what you agreed or owe, to details that pass the check**: The amount that reached Pavel is not the price, and he is asked to send some of it on to a third party.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Real payment request**, the look-alike card’s lines follow: Both are part of a deal that you are in, at a price that was agreed, between two people who found each other through an advert or an app. In **Real payment request** the amount is the one that was agreed, and the money moves in the way the deal began. In **Overpayment scam** a payment arrives that is more than the price, and you are asked to send some of it back or on. Is the amount the one that was agreed, or am I being asked to send some of a payment back or on to someone else?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the buyer had paid exactly £220 and asked for nothing back, there would be no request at all.
 - Taught on: “A buyer who pays too much and wants the difference” (one tap opens the card).
 
@@ -3716,13 +3716,13 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you are right: “Right: **Pig-butchering scam**.” What does it ask you to do with the money? **Put it into a trading site or app that they showed you.** She is asked to put money into the fund that he showed her: “Transfer £8,000 to open your place”.
   - Why not **Advance-fee scam**: Nobody says that money is waiting for Hana. She is asked to put her own money into the fund.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What is it asking you to do right now? **Pay or send money.** “Transfer £8,000 to open your place” asks her to send money, and nothing earlier in the key’s list is asked, so the answer is **“Pay or send money”**.
+  - What is it asking you to do right now? **Pay or send money.** “Transfer £8,000 to open your place” asks her to send money, and nothing earlier in the list is asked, so the answer is **“Pay or send money”**.
   - What does the request say the money is for? **An investment or an emergency of someone you know only online.** Victor is someone she knows only from a network, and the money is for an investment that he showed her: “After a month of messages he shares a link to a fund that only his clients can join”.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Advance-fee scam**, the look-alike card’s lines follow: Both ask for a fee before money reaches you or leaves a site, and both can promise large sums. In **Pig-butchering scam** the money is in a trading site or app that someone you know only online showed you, and the fee is to take it out. In **Advance-fee scam** the money is said to be waiting for you from someone who contacted you, and you never put any in. Did someone I know only online show me a site or an app where my money is, or is the money said to be waiting for me from someone who contacted me?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- What would make it a different name: If Victor had been her own bank’s adviser, whom she had contacted herself, the case would be outside the key.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- What would make it a different name: If Victor had been her own bank’s adviser, whom she had contacted herself, the case would be outside these questions.
 - Taught on: “An online friend’s investment site that keeps your money” (one tap opens the card).
 
 **Drill item 65 of 85**
@@ -3736,14 +3736,14 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you are right: “Right: **Romance scam**.” What does it ask you to do with the money? **Pay for an emergency of someone you have never met.** She is asked to pay for his emergency, a frozen card and an unpaid hotel: “My bank has frozen my card while I am travelling, and I cannot pay my hotel”.
   - Why not **Pig-butchering scam**: Marc does not show her a site or an app to put money into. The money is for his own bill.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What is it asking you to do right now? **Pay or send money.** “Please send £1,600 to the hotel's account” asks her to send money, and nothing earlier in the key’s list is asked, so the answer is **“Pay or send money”**.
+  - What is it asking you to do right now? **Pay or send money.** “Please send £1,600 to the hotel's account” asks her to send money, and nothing earlier in the list is asked, so the answer is **“Pay or send money”**.
   - What does the request say the money is for? **An investment or an emergency of someone you know only online.** Marc is someone she knows only from a card game, and the money is for trouble that he says is his: “My bank has frozen my card while I am travelling, and I cannot pay my hotel”.
   - If you chose **Put it into a trading site or app that they showed you**: Marc does not show her a site or an app to put money into. The money is for his own bill.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Pig-butchering scam**, the look-alike card’s lines follow: Both begin with someone you have only ever known through messages, often for weeks or months, and both end in a request for a large sum. The same person often runs one after the other. **Romance scam** asks you to pay for trouble that the person says is their own, such as a hospital bill or a ticket home. **Pig-butchering scam** asks you to invest: to put your money into a platform that the person showed you, or to pay a charge to that platform before your money can come out. Is the money to pay for something that has gone wrong for the person, or is it to be invested in a platform that they pointed me to?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- What would make it a different name: If Marc had been a friend from her own club whom she had met many times, the case would be outside the key.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- What would make it a different name: If Marc had been a friend from her own club whom she had met many times, the case would be outside these questions.
 - Taught on: “An online partner’s emergency that needs your money” (one tap opens the card).
 
 **Drill item 66 of 85**
@@ -3757,13 +3757,13 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you are right: “Right: **Real payment request**.” What does it ask you to do with the money? **Pay what you agreed or owe, to details that pass the check.** The account is the one on his quote, and it matches the website that she typed in herself: “into the account on my quote” and “The account matches the one on the carpenter's own website, which Rosa typed in herself”.
   - Why not **Invoice fraud**: No details have changed. The account is the one that she was given at the start, and she has checked it against a website that she typed in.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What is it asking you to do right now? **Pay or send money.** “a £400 deposit by the 5th” is a request to pay, and nothing earlier in the key’s list is asked, so the answer is **“Pay or send money”**.
+  - What is it asking you to do right now? **Pay or send money.** “a £400 deposit by the 5th” is a request to pay, and nothing earlier in the list is asked, so the answer is **“Pay or send money”**.
   - What does the request say the money is for? **Something you are buying, selling or booking.** The deposit is part of a job that she arranged herself: “Rosa asked a carpenter to build shelves”.
   - If you chose **Pay into new bank details sent by message**: No details have changed. The account is the one that she was given at the start, and she has checked it against a website that she typed in.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Invoice fraud**, the look-alike card’s lines follow: Both are a bill that you really pay, with the same logo, the same email thread and the same amount. In **Real payment request** the account to pay into is the one that you have always paid, or were given when you started. In **Invoice fraud** a message tells you that the details have changed, and gives new ones. Are the bank details the ones I was given at the start, or has a message just told me that they have changed?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the email had said that his account had changed since the quote, it would be **Invoice fraud**.
 - Taught on: “A bill, a fine or a deal that is what it says” (one tap opens the card).
 
@@ -3778,13 +3778,13 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you are right: “Right: **Invoice fraud**.” What does it ask you to do with the money? **Pay into new bank details sent by message.** A message tells her that the bank has changed, and gives new details: “We have moved to a new bank”.
   - Why not **Fake payment link**: There is no link and no payment page. The request is to pay into new bank details.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What is it asking you to do right now? **Pay or send money.** “Please pay this term's £2,100 into the account in the attached letter” asks her to pay, and nothing earlier in the key’s list is asked, so the answer is **“Pay or send money”**.
+  - What is it asking you to do right now? **Pay or send money.** “Please pay this term's £2,100 into the account in the attached letter” asks her to pay, and nothing earlier in the list is asked, so the answer is **“Pay or send money”**.
   - What does the request say the money is for? **A bill from someone you already pay.** The money is for fees that she already pays: “Reema pays her child's nursery its fees each term”.
   - If you chose **Pay on a page reached from a link in the message**: There is no link and no payment page. The request is to pay into new bank details.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Fake payment link**, the look-alike card’s lines follow: Both are about a bill or a charge, can arrive as a message, and both end with you paying to a place that the message gives. **Invoice fraud** is a bill that you really pay, with new bank details to pay into. **Fake payment link** is a charge, usually a small one, with a payment page behind a link. Am I asked to pay into a new account that the message names, or to pay on a page that I reach through a link in the message?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the fees were to go to the account that the nursery gave her when she enrolled, it would be **Real payment request**.
 - Taught on: “A real bill, sent to new bank details” (one tap opens the card).
 
@@ -3799,13 +3799,13 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you are right: “Right: **Fake payment link**.” What does it ask you to do with the money? **Pay on a page reached from a link in the message.** He is told to pay on a page that he reaches through a link in the text: “Settle it at citycharge-pay.example to avoid a £160 penalty”.
   - Why not **Real payment request**: Nothing that Dilip already had shows that the charge is real. It came in a message, with a link to pay on.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What is it asking you to do right now? **Pay or send money.** “Settle it at citycharge-pay.example” asks him to pay, and nothing earlier in the key’s list is asked, so the answer is **“Pay or send money”**.
+  - What is it asking you to do right now? **Pay or send money.** “Settle it at citycharge-pay.example” asks him to pay, and nothing earlier in the list is asked, so the answer is **“Pay or send money”**.
   - What does the request say the money is for? **A fine, a tax, or keeping your money safe.** The reason is a charge from an authority, with a penalty behind it: “Your congestion charge of £15 was not paid”.
   - If you chose **Pay what you agreed or owe, to details that pass the check**: Nothing that Dilip already had shows that the charge is real. It came in a message, with a link to pay on.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Real payment request**, the look-alike card’s lines follow: Both are a small charge on something that you are waiting for or already pay for, from a company that you deal with, and both can lead to a payment page. In **Real payment request** you find the charge yourself, in the company’s own app or on a page that you already use, and pay it there. In **Fake payment link** the charge arrives in a message, and the page to pay on is behind a link in that message. Did the charge come to me in a message with a link to pay on, or can I find it myself in the company’s own app or on a page that I already use?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If he found the same £15 on the authority’s own website, at an address he typed in, it would be **Real payment request**.
 - Taught on: “A small charge you do not owe, paid through a link” (one tap opens the card).
 
@@ -3820,13 +3820,13 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you are right: “Right: **Fake official scam**.” What does it ask you to do with the money? **Pay at once, in a way that cannot be undone, and tell no one.** He is to pay at once, with vouchers that cannot be undone, and to tell no one: “pay now with vouchers from the post office. Do not discuss it with anyone”. Nothing more specific shows.
   - Why not **Real payment request**: A real court would write, give him time and a way to appeal, and would not take vouchers or ask him to keep quiet.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What is it asking you to do right now? **Pay or send money.** “pay now with vouchers from the post office” asks him to pay, and nothing earlier in the key’s list is asked, so the answer is **“Pay or send money”**.
+  - What is it asking you to do right now? **Pay or send money.** “pay now with vouchers from the post office” asks him to pay, and nothing earlier in the list is asked, so the answer is **“Pay or send money”**.
   - What does the request say the money is for? **A fine, a tax, or keeping your money safe.** The caller claims to be from a court, and the reason is a debt with a bailiff behind it: “A judgment of £2,700 has been made against you”.
   - If you chose **Pay what you agreed or owe, to details that pass the check**: A real court would write, give him time and a way to appeal, and would not take vouchers or ask him to keep quiet.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Real payment request**, the look-alike card’s lines follow: Both are about a fine, a tax or a debt that is said to be owed to an official body or to your bank, and both can come with a real-looking reference. In **Real payment request** you are given time and a way to appeal, you can look the amount up yourself, and you are asked to pay in an ordinary way. In **Fake official scam** you are told to pay at once, in a way that cannot be undone, and to say nothing. Am I being hurried and kept quiet, or given time and something that I can look up for myself?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If a letter had given him 30 days and a way to appeal, and he found the same judgment on the court’s own website, it would be **Real payment request**.
 - Taught on: “A threat from an official or your bank, paid off at once and in secret” (one tap opens the card).
 
@@ -3841,13 +3841,13 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you are right: “Right: **Overpayment scam**.” What does it ask you to do with the money? **Send back money they say they paid you by mistake.** The client has paid more than the price and asks her to send the difference to a different account: “Please send back the £500 to our other company's account”.
   - Why not **Fake payment link**: No link and no payment page are involved. Money has reached Mina first, and she is asked to send some of it on.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What is it asking you to do right now? **Pay or send money.** “Please send back the £500 to our other company's account” asks her to send money, and nothing earlier in the key’s list is asked, so the answer is **“Pay or send money”**.
+  - What is it asking you to do right now? **Pay or send money.** “Please send back the £500 to our other company's account” asks her to send money, and nothing earlier in the list is asked, so the answer is **“Pay or send money”**.
   - What does the request say the money is for? **Something you are buying, selling or booking.** The money is part of a job that she is paid for: “Mina, a translator, charges a client £350”.
   - If you chose **Pay on a page reached from a link in the message**: No link and no payment page are involved. Money has reached Mina first, and she is asked to send some of it on.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Fake payment link**, the look-alike card’s lines follow: Both are about something that you are buying or selling or waiting to have delivered, and both can arrive as a message. In **Overpayment scam** money has already reached you, and you are asked to send some of it on. In **Fake payment link** no money has reached you, and you are asked to pay on a page that you reach through a link. Has money reached me first, so that I am asked to send some of it back, or am I asked to pay on a page that I reach through a link?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the client had asked her to send the £500 back to the account that it came from, after their bank reversed it, there would be no payment to a third party.
 - Taught on: “A buyer who pays too much and wants the difference” (one tap opens the card).
 
@@ -3862,13 +3862,13 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you are right: “Right: **Real payment request**.” What does it ask you to do with the money? **Pay what you agreed or owe, to details that pass the check.** The amount is the one he was told, the account is the one on the booking page he used, and he is invited to ring: “£220 to the account that was on the booking page he used” and “Call reception on the number on the booking page”.
   - Why not **Overpayment scam**: Joss is not paid anything and is not asked to send anything on. The practice asks him to pay the price that he was given.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What is it asking you to do right now? **Pay or send money.** “the practice emails a bill for £220” is a request to pay, and nothing earlier in the key’s list is asked, so the answer is **“Pay or send money”**.
+  - What is it asking you to do right now? **Pay or send money.** “the practice emails a bill for £220” is a request to pay, and nothing earlier in the list is asked, so the answer is **“Pay or send money”**.
   - What does the request say the money is for? **A bill from someone you already pay.** The money is a bill for a service that he arranged and agreed the price of: “Joss had four sessions with a physiotherapist, who told him the price of £220 at the start”.
   - If you chose **Send back money they say they paid you by mistake**: Joss is not paid anything and is not asked to send anything on. The practice asks him to pay the price that he was given.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Overpayment scam**, the look-alike card’s lines follow: Both are part of a deal that you are in, at a price that was agreed, between two people who found each other through an advert or an app. In **Real payment request** the amount is the one that was agreed, and the money moves in the way the deal began. In **Overpayment scam** a payment arrives that is more than the price, and you are asked to send some of it back or on. Is the amount the one that was agreed, or am I being asked to send some of a payment back or on to someone else?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the email had said that the practice had changed banks, it would be **Invoice fraud**.
 - Taught on: “A bill, a fine or a deal that is what it says” (one tap opens the card).
 
@@ -3880,16 +3880,16 @@ Each question is shown with all of its answers from the key, in the key’s orde
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Pig-butchering scam**.” What does it ask you to do with the money? **Put it into a trading site or app that they showed you.** The request is to pay a fee to take his money out of the site that he was shown: “Pay a 15% release fee of £1,650 to unlock your funds”. A fee before money reaches you also fits, and when a case shows both, the key’s answer is **“Put it into a trading site or app that they showed you”**.
+- If you are right: “Right: **Pig-butchering scam**.” What does it ask you to do with the money? **Put it into a trading site or app that they showed you.** The request is to pay a fee to take his money out of the site that he was shown: “Pay a 15% release fee of £1,650 to unlock your funds”. A fee before money reaches you also fits, and when a case shows both, the answer is **“Put it into a trading site or app that they showed you”**.
   - Why not **Advance-fee scam**: The fee is real in the story, but the money is not a prize that was never his. It is in an exchange that a person he has never met showed him.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What is it asking you to do right now? **Pay or send money.** “Pay a 15% release fee of £1,650 to unlock your funds” asks him to pay, and nothing earlier in the key’s list is asked, so the answer is **“Pay or send money”**.
+  - What is it asking you to do right now? **Pay or send money.** “Pay a 15% release fee of £1,650 to unlock your funds” asks him to pay, and nothing earlier in the list is asked, so the answer is **“Pay or send money”**.
   - What does the request say the money is for? **An investment or an emergency of someone you know only online.** The money is in an exchange that someone he has never met showed him: “shown a cryptocurrency exchange by a woman he has never met, whom he chats to every day on a gaming forum”.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Advance-fee scam**, the look-alike card’s lines follow: Both ask for a fee before money reaches you or leaves a site, and both can promise large sums. In **Pig-butchering scam** the money is in a trading site or app that someone you know only online showed you, and the fee is to take it out. In **Advance-fee scam** the money is said to be waiting for you from someone who contacted you, and you never put any in. Did someone I know only online show me a site or an app where my money is, or is the money said to be waiting for me from someone who contacted me?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *The draw nobody entered*, which was **Advance-fee scam**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *The draw nobody entered*, which was **Advance-fee scam**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If no one he knew had shown him the exchange, and a message said that a prize was waiting and a fee must be paid, it would be **Advance-fee scam**.
 - Taught on: “An online friend’s investment site that keeps your money” (one tap opens the card).
 
@@ -3904,14 +3904,14 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you are right: “Right: **Advance-fee scam**.” What does it ask you to do with the money? **Pay a fee before the money reaches you.** A payment must be made before the grant is transferred: “as soon as you pay a £45 administration charge”.
   - Why not **Fake official scam**: The council crest makes it look official, but nobody is told that they owe anything, and nobody is threatened. The message says that money is owed to the reader.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What is it asking you to do right now? **Pay or send money.** “pay a £45 administration charge to the account below” asks for a payment, and nothing earlier in the key’s list is asked, so the answer is **“Pay or send money”**.
-  - What does the request say the money is for? **A prize, an inheritance, a grant or a loan waiting for you.** The council is not threatening anyone. It says that money is waiting for the reader: “chosen for a £1,800 council hardship grant”. A request from an official also fits, and when a case shows both, the key’s answer is **“A prize, an inheritance, a grant or a loan waiting for you”**.
+  - What is it asking you to do right now? **Pay or send money.** “pay a £45 administration charge to the account below” asks for a payment, and nothing earlier in the list is asked, so the answer is **“Pay or send money”**.
+  - What does the request say the money is for? **A prize, an inheritance, a grant or a loan waiting for you.** The council is not threatening anyone. It says that money is waiting for the reader: “chosen for a £1,800 council hardship grant”. A request from an official also fits, and when a case shows both, the answer is **“A prize, an inheritance, a grant or a loan waiting for you”**.
   - If you chose **Pay at once, in a way that cannot be undone, and tell no one**: The council crest makes it look official, but nobody is told that they owe anything, and nobody is threatened. The message says that money is owed to the reader.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Fake official scam**, the look-alike card’s lines follow: Both can arrive in the name of an official body, such as a tax office, and both ask you to pay. In **Advance-fee scam** the official owes you something, such as a refund, and you must pay a fee first. In **Fake official scam** the official says that you owe, and threatens you unless you pay at once. Does the message say that money is owed to me and that I must pay first, or that I owe money and will be punished unless I pay?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *The tax caller*, which was **Fake official scam**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *The tax caller*, which was **Fake official scam**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If the letter had said that the reader owed the council £1,800, and would be taken to court unless they paid at once in vouchers, it would be **Fake official scam**.
 - Taught on: “A fee to collect money that is not coming” (one tap opens the card).
 
@@ -3926,13 +3926,13 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you are right: “Right: **Recovery scam**.” What does it ask you to do with the money? **Pay a fee before the money reaches you.** A fee must be paid first: “Pay the £220 release charge to receive it”.
   - Why not **Advance-fee scam**: The compensation is not a prize that was never hers. The sum matches what the man took, and the message uses her loss to make the offer.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What is it asking you to do right now? **Pay or send money.** “Pay the £220 release charge to receive it” asks her to pay, and nothing earlier in the key’s list is asked, so the answer is **“Pay or send money”**.
-  - What does the request say the money is for? **Getting back money you lost.** The £9,000 that is said to be held is the money that was taken from her: “After a man she met online took £9,000 from her” and “A compensation payment of £9,000 is being held for you”. Money that is waiting for her also fits, and when a case shows both, the key’s answer is **“Getting back money you lost”**.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - What is it asking you to do right now? **Pay or send money.** “Pay the £220 release charge to receive it” asks her to pay, and nothing earlier in the list is asked, so the answer is **“Pay or send money”**.
+  - What does the request say the money is for? **Getting back money you lost.** The £9,000 that is said to be held is the money that was taken from her: “After a man she met online took £9,000 from her” and “A compensation payment of £9,000 is being held for you”. Money that is waiting for her also fits, and when a case shows both, the answer is **“Getting back money you lost”**.
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Advance-fee scam**, the look-alike card’s lines follow: Both are about money that is said to be waiting to be released to you, and both ask for a fee before you can have it. In **Advance-fee scam** the money was never yours: a prize, a grant, a loan or an inheritance. In **Recovery scam** the money was yours and was taken from you earlier, and someone offers to get it back. Is the money that is said to be waiting something that was never mine, or something that I lost earlier?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *The approved loan*, which was **Advance-fee scam**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *The approved loan*, which was **Advance-fee scam**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If Pat had lost nothing and the message said that she had won £9,000, it would be **Advance-fee scam**.
 - Taught on: “A fee to get back money you lost” (one tap opens the card).
 
@@ -3944,17 +3944,17 @@ Each question is shown with all of its answers from the key, in the key’s orde
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Fake payment link**.” What does it ask you to do with the money? **Pay on a page reached from a link in the message.** The text says to pay on a page that is reached through a link: “Pay in the next hour at roadtax-final.example”. The hurry, the threat and the order to tell nobody also fit, and when a case shows both, the key’s answer is **“Pay on a page reached from a link in the message”**.
+- If you are right: “Right: **Fake payment link**.” What does it ask you to do with the money? **Pay on a page reached from a link in the message.** The text says to pay on a page that is reached through a link: “Pay in the next hour at roadtax-final.example”. The hurry, the threat and the order to tell nobody also fit, and when a case shows both, the answer is **“Pay on a page reached from a link in the message”**.
   - Why not **Fake official scam**: The hurry and the secrecy are there, but the payment is to be made on a link. A more specific answer comes before them.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What is it asking you to do right now? **Pay or send money.** “Pay in the next hour at roadtax-final.example” asks for a payment, and nothing earlier in the key’s list is asked, so the answer is **“Pay or send money”**.
+  - What is it asking you to do right now? **Pay or send money.** “Pay in the next hour at roadtax-final.example” asks for a payment, and nothing earlier in the list is asked, so the answer is **“Pay or send money”**.
   - What does the request say the money is for? **A fine, a tax, or keeping your money safe.** The reason is a tax from an official body: “your vehicle tax of £190 is overdue”.
-  - If you chose **Pay at once, in a way that cannot be undone, and tell no one**: You chose **Pay at once, in a way that cannot be undone, and tell no one**. This case does show that. It also shows a payment page reached from a link in the message, and when a case shows both, the key’s answer is **Pay on a page reached from a link in the message**.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose **Pay at once, in a way that cannot be undone, and tell no one**: You chose **Pay at once, in a way that cannot be undone, and tell no one**. This case does show that. It also shows a payment page reached from a link in the message, and when a case shows both, the answer is **Pay on a page reached from a link in the message**.
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Fake official scam**, the look-alike card’s lines follow: Both can come from someone who says that they are an official, with a fine or a debt, a deadline and a threat. In **Fake payment link** the request is to pay on a page that you reach through a link in the message, and a hurry or a threat does not change that. In **Fake official scam** nothing more specific shows: you are told to pay at once, in a way that cannot be undone, and to tell no one. Am I told to pay on a page that I reach through a link, or told to pay at once in a way that cannot be undone, with nothing more specific?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *The safe account*, which was **Fake official scam**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *The safe account*, which was **Fake official scam**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If it had no link, and had told him to pay in vouchers by phone and to tell nobody, it would be **Fake official scam**.
 - Taught on: “A small charge you do not owe, paid through a link” (one tap opens the card).
 
@@ -3969,14 +3969,14 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you are right: “Right: **Fake official scam**.” What does it ask you to do with the money? **Pay at once, in a way that cannot be undone, and tell no one.** She is to pay at once, in vouchers, which cannot be undone, and to tell the council office nothing: “Pay the £140 today with two supermarket vouchers, and do not tell the council office”. Nothing more specific shows.
   - Why not **Real payment request**: The reminder looks like a real one, but the call is not: the council would give her time, would not take vouchers, and would not tell her to keep it from its own office.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What is it asking you to do right now? **Pay or send money.** “Pay the £140 today with two supermarket vouchers” asks her to pay, and nothing earlier in the key’s list is asked, so the answer is **“Pay or send money”**.
+  - What is it asking you to do right now? **Pay or send money.** “Pay the £140 today with two supermarket vouchers” asks her to pay, and nothing earlier in the list is asked, so the answer is **“Pay or send money”**.
   - What does the request say the money is for? **A fine, a tax, or keeping your money safe.** The reason is a debt to the council, and the caller claims to be from it: “Your council tax account is £140 behind” and “I am from the council's recovery team”.
   - If you chose **Pay what you agreed or owe, to details that pass the check**: The reminder looks like a real one, but the call is not: the council would give her time, would not take vouchers, and would not tell her to keep it from its own office.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Real payment request**, the look-alike card’s lines follow: Both are about a fine, a tax or a debt that is said to be owed to an official body or to your bank, and both can come with a real-looking reference. In **Real payment request** you are given time and a way to appeal, you can look the amount up yourself, and you are asked to pay in an ordinary way. In **Fake official scam** you are told to pay at once, in a way that cannot be undone, and to say nothing. Am I being hurried and kept quiet, or given time and something that I can look up for myself?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *The council parking letter*, which was **Real payment request**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *The council parking letter*, which was **Real payment request**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If she had found the same £140 in her own council account, at an address that she typed in, and nobody had hurried her, it would be **Real payment request**.
 - Taught on: “A threat from an official or your bank, paid off at once and in secret” (one tap opens the card).
 
@@ -3991,14 +3991,14 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you are right: “Right: **Real payment request**.” What does it ask you to do with the money? **Pay what you agreed or owe, to details that pass the check.** The words are firm, but nothing is hidden. The same amount is in her own app, she has until the 30th, and she is told to ring the number on her bill: “the same £76 is in the account section of the app that she installed herself” and “Ring the number on your bill”.
   - Why not **Fake official scam**: “Final reminder” and a late fee sound like a threat, but there is no claim to an official’s power, no hurry beyond a real due date, and no order to keep quiet.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What is it asking you to do right now? **Pay or send money.** “Pay by the 30th, or a late fee of £5 applies” is a request to pay, and nothing earlier in the key’s list is asked, so the answer is **“Pay or send money”**.
+  - What is it asking you to do right now? **Pay or send money.** “Pay by the 30th, or a late fee of £5 applies” is a request to pay, and nothing earlier in the list is asked, so the answer is **“Pay or send money”**.
   - What does the request say the money is for? **A bill from someone you already pay.** The money is a bill from a company that she has paid for years: “Your bill of £76 is overdue”.
   - If you chose **Pay at once, in a way that cannot be undone, and tell no one**: “Final reminder” and a late fee sound like a threat, but there is no claim to an official’s power, no hurry beyond a real due date, and no order to keep quiet.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Fake official scam**, the look-alike card’s lines follow: Both are about a fine, a tax or a debt that is said to be owed to an official body or to your bank, and both can come with a real-looking reference. In **Real payment request** you are given time and a way to appeal, you can look the amount up yourself, and you are asked to pay in an ordinary way. In **Fake official scam** you are told to pay at once, in a way that cannot be undone, and to say nothing. Am I being hurried and kept quiet, or given time and something that I can look up for myself?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *The tax caller*, which was **Fake official scam**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *The tax caller*, which was **Fake official scam**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If a caller had told her to pay the £76 today in vouchers and to say nothing to the company, it would be **Fake official scam**.
 - Taught on: “A bill, a fine or a deal that is what it says” (one tap opens the card).
 
@@ -4019,8 +4019,8 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - If you are right: “Right: **Tell them about yourself.**” The form asks Mrs Khan to tell the website facts about herself: “The form asks for her date of birth and her place of birth”. Nothing in this case asks her to pay, sign in or install anything.
-- If you miss: “The answer is …”, the same reason, and then the line built from the key for the answer you chose.
-- Then, right or wrong: “This case leaves the part of the key you have been taught. The questions that follow this answer come in a part of the course you have not reached, so the case stops here.”
+- If you miss: “The answer is …”, the same reason, and then the line built from the answers’ own wording for the answer you chose.
+- Then, right or wrong: “The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.”
 
 **Drill item 79 of 85**
 
@@ -4039,8 +4039,8 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - If you are right: “Right: **Install something, open a file, or share your screen.**” The pop-up asks Wes to download something and run it on his laptop: “Click here to download and run the update”. That is a request about the device itself.
-- If you miss: “The answer is …”, the same reason, and then the line built from the key for the answer you chose.
-- Then, right or wrong: “This case leaves the part of the key you have been taught. The questions that follow this answer come in a part of the course you have not reached, so the case stops here.”
+- If you miss: “The answer is …”, the same reason, and then the line built from the answers’ own wording for the answer you chose.
+- Then, right or wrong: “The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.”
 
 **Drill item 80 of 85**
 
@@ -4059,8 +4059,8 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - If you are right: “Right: **Sign in, give a code, or allow an app.**” The app asks Isla to type in a *one-time code* that has just been sent to her: “Enter the code we have just texted you”. That is a request for a way into an account. She started the move herself, and the first question does not ask about that.
-- If you miss: “The answer is …”, the same reason, and then the line built from the key for the answer you chose.
-- Then, right or wrong: “This case leaves the part of the key you have been taught. The questions that follow this answer come in a part of the course you have not reached, so the case stops here.”
+- If you miss: “The answer is …”, the same reason, and then the line built from the answers’ own wording for the answer you chose.
+- Then, right or wrong: “The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.”
 
 #### Last stage. Each of these is something a person might say that uses one of this unit’s names, or reasons in one of its ways. Each has a fault. The first is worked for you. For the rest, answer before the fault is shown.
 
@@ -4083,7 +4083,7 @@ Each question is shown with all of its answers from the key, in the key’s orde
 
 **The answer:** Pay a fee before the money reaches you.
 - The fault: The claim treats paperwork as proof. A registration number, a licence number and a certificate cost nothing to copy: a real firm’s number can be pasted into any letter. They say nothing about what the letter asks her to do with her money, and what it asks is that she pay £400 before any money reaches her.
-- The claim, put right (always the last thing shown): The paperwork tells me nothing. The letter asks me to pay a fee before the money reaches me, and the answer to the key’s question is **“Pay a fee before the money reaches you”**. A real firm would not mind if I looked it up myself, in the regulator’s own register, and used *the check* before I paid anything.
+- The claim, put right (always the last thing shown): The paperwork tells me nothing. The letter asks me to pay a fee before the money reaches me, and the answer to the question is **“Pay a fee before the money reaches you”**. A real firm would not mind if I looked it up myself, in the regulator’s own register, and used *the check* before I paid anything.
 
 **Drill item 81 of 85**
 
@@ -4103,9 +4103,9 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - The answer is: **Pay at once, in a way that cannot be undone, and tell no one.**
-- If you chose another answer, the line is built from the key, as for any other question.
+- If you chose another answer, the line is built from the answers’ own wording, as for any other question.
 - The fault: The claim treats the bank’s not stopping the payment as proof that the request was real. A bank’s checks cannot tell a payment that you send yourself from your own wish, and a warning that you press past does not stop anything. That the payment went through says nothing about what the caller asked.
-- The claim, put right (always the last thing shown): The caller told me to pay at once, in a way that cannot be undone, and to tell nobody at the branch. The answer to the key’s question is **“Pay at once, in a way that cannot be undone, and tell no one”**. The warning was my bank doing what it can, and I should have read it as a stop sign and phoned my bank on the number on my card.
+- The claim, put right (always the last thing shown): The caller told me to pay at once, in a way that cannot be undone, and to tell nobody at my bank’s local office. The answer to the question is **“Pay at once, in a way that cannot be undone, and tell no one”**. The warning was my bank doing what it can, and I should have read it as a stop sign and phoned my bank on the number on my card.
 
 **Drill item 82 of 85**
 
@@ -4125,9 +4125,9 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - The answer is: **Put it into a trading site or app that they showed you.**
-- If you chose another answer, the line is built from the key, as for any other question.
+- If you chose another answer, the line is built from the answers’ own wording, as for any other question.
 - The fault: The claim treats a payout as proof that the app is real. A small payment out costs the scammer very little, and it is the best proof that they could give. It says nothing about the request, which is to put £5,000 into an app that a man she has never met showed her.
-- The claim, put right (always the last thing shown): The payout tells me nothing, because it is how this kind of scam is run. What he asks is that I put money into an app that he showed me. The answer to the key’s question is **“Put it into a trading site or app that they showed you”**, and I should not do it, however well it seems to be working.
+- The claim, put right (always the last thing shown): The payout tells me nothing, because it is how this kind of scam is run. What he asks is that I put money into an app that he showed me. The answer to the question is **“Put it into a trading site or app that they showed you”**, and I should not do it, however well it seems to be working.
 
 **Drill item 83 of 85**
 
@@ -4147,9 +4147,9 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - The answer is: **Pay into new bank details sent by message.**
-- If you chose another answer, the line is built from the key, as for any other question.
+- If you chose another answer, the line is built from the answers’ own wording, as for any other question.
 - The fault: The claim treats the address and the thread as proof. A scammer who has got into a mailbox, or set up a look-alike address, sends from the same thread. The address says nothing about the one thing that has changed, the account.
-- The claim, put right (always the last thing shown): The email says that the supplier has changed its bank and asks me to pay into new details. The answer to the key’s question is **“Pay into new bank details sent by message”**. Before I pay I should ring the supplier on a number that I already had, and use nothing that is in the email.
+- The claim, put right (always the last thing shown): The email says that the supplier has changed its bank and asks me to pay into new details. The answer to the question is **“Pay into new bank details sent by message”**. Before I pay I should ring the supplier on a number that I already had, and use nothing that is in the email.
 
 **Drill item 84 of 85**
 
@@ -4169,9 +4169,9 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - The answer is: **Pay what you agreed or owe, to details that pass the check.**
-- If you chose another answer, the line is built from the key, as for any other question.
+- If you chose another answer, the line is built from the answers’ own wording, as for any other question.
 - The fault: The claim treats every request for money as a scam. This one came from the council that he deals with, for a charge that he can find for himself on a website whose address he already had. Ignoring a real charge costs him the reduction for paying early, and may cost him more.
-- The claim, put right (always the last thing shown): The charge is the one that I owe, and I found it myself on the council’s website, through an address that I already had. The answer to the key’s question is **“Pay what you agreed or owe, to details that pass the check”**. A real request like this one is paid, in the normal way.
+- The claim, put right (always the last thing shown): The charge is the one that I owe, and I found it myself on the council’s website, through an address that I already had. The answer to the question is **“Pay what you agreed or owe, to details that pass the check”**. A real request like this one is paid, in the normal way.
 
 **Drill item 85 of 85**
 
@@ -4191,21 +4191,21 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - The answer is: **Pay on a page reached from a link in the message.**
-- If you chose another answer, the line is built from the key, as for any other question.
+- If you chose another answer, the line is built from the answers’ own wording, as for any other question.
 - The fault: The claim treats hurry as what makes a scam. Hurry turns up in many scams, and many others, like this one, have none. What counts is what the text asks: to pay a small charge on a page that you reach through a link in the message.
-- The claim, put right (always the last thing shown): The text did not hurry me, and that tells me nothing. It asked me to pay on a link in the message, and the answer to the key’s question is **“Pay on a page reached from a link in the message”**. I would not tap it, and I would look for the charge in the courier’s own app.
+- The claim, put right (always the last thing shown): The text did not hurry me, and that tells me nothing. It asked me to pay on a link in the message, and the answer to the question is **“Pay on a page reached from a link in the message”**. I would not tap it, and I would look for the charge in the courier’s own app.
 
-**When the drill ends.** The learner sees their own results: first-try accuracy for each stage, whole routes beside single questions, the pair of names they mixed up most often, and what will come back and when. Anything missed was asked again before the drill ended. Nothing here is graded. A miss only decides what comes back.
+**When the drill ends.** The learner sees their own results: first-try accuracy for each stage, whole cases beside single questions, the pair of names they mixed up most often, and what will come back and when. Anything missed was asked again before the drill ended. Nothing here is graded. A miss only decides what comes back.
 
 ### 60. What to carry away
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 60 of 62*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 60 of 62*
 
 [reviewers only: card kind `recap`, id `recap`]
 
-You have now run the key on your own. This card puts the unit in one place, in the key’s words.
+You have now run the questions on your own. This card puts the unit in one place.
 
-**The key for this unit, in its own words**
+**This unit’s questions and answers**
 
 What does the request say the money is for?
 - An investment or an emergency of someone you know only online → Pig-butchering scam · Romance scam
@@ -4241,7 +4241,7 @@ What does it ask you to do with the money?
   - Do: Pay nothing, and do not reply. Anyone who contacts you first about your loss is a warning in itself. Report the loss to your bank on the number on your card, and to the police or to your country’s fraud-reporting service. They are the real places to get help, and they do not charge you or contact you first with an offer. If you went looking for help and found a firm through a search, remember that the top result may be an advert. Anyone can buy that place. Tell someone you trust. Being embarrassed is what this scam relies on. If you have already paid, tell your bank at once, and expect to be contacted again.
 - **Real payment request**: a bill, a fine or a deal that you can tie to something you already had or started, the amount you agreed or owe, details you have always paid or were given at the start, and a request that holds up when you contact them through a way you already had.
   - Ask: "Did I start this, is the amount what I agreed or owe, and are the details the ones I was given at the start?"
-  - Do: Pay it in the normal way, and keep the confirmation. For a large payment, or the first payment to someone new, do *the check* once. A real request passes it, so it costs you a few minutes. Where you can, pay in a way that protects you, such as by card or through a marketplace’s own payment button. Those can sometimes be disputed afterwards, and a bank transfer that you send yourself usually cannot. If the details change, if someone starts to hurry you, or if you are told not to check, stop. The request has become something else, and you need to ask the key’s questions again.
+  - Do: Pay it in the normal way, and keep the confirmation. For a large payment, or the first payment to someone new, do *the check* once. A real request passes it, so it costs you a few minutes. Where you can, pay in a way that protects you, such as by card or through a marketplace’s own payment button. Those can sometimes be disputed afterwards, and a bank transfer that you send yourself usually cannot. If the details change, if someone starts to hurry you, or if you are told not to check, stop. The request has become something else, and you need to ask the questions again.
 - **Invoice fraud**: a bill or a payment you already make to someone, a message saying that their bank details have changed, and new details to pay into.
   - Ask: "Has anyone told me, by message, that the details I pay into have changed?"
   - Do: Before you pay into any new details, ring the person who sent the bill on a number that you already had: the one on the contract, on an earlier paper invoice, or on a website that you typed in yourself. Never use a number in the message that announced the change. Ask them, out loud, whether their bank details have changed. If the change is real, they will confirm it in a minute. If you cannot reach them, wait. A real bill can wait a day, and a thief cannot. In a business, make it a rule that every change of bank details is confirmed by a call and approved by a second person. If you have already paid, ring your bank at once, on the number on your card, and ask them to try to recall the payment. The first hours matter most.
@@ -4259,14 +4259,14 @@ What does it ask you to do with the money?
 
 - Before any name, put your finger on the words that show what the request says the money is for, and then on the words that show what it asks you to do with the money. If you cannot point to them, you do not yet have an answer.
 - A real request and its copy can use the same story, the same bill and the same words. What separates them is not how they look. It is what the request asks you to do with the money, and whether it holds up when you contact them yourself, through *a way you already had*. That is what *the check* means, and it works on every name in this unit.
-- Hurry, secrecy and a payment that cannot be undone turn up in most of the scams. They are a reason to stop, and they do not decide the name: the key gives the more specific answer whenever there is one.
-- Everything that the key asks can be seen when the request arrives. What happens after you pay (a refused withdrawal, a buyer’s payment that disappears, a second fee) is how many people notice, and by then the money has gone.
-- When a request is a real one, the right thing to do is to pay it in the normal way. **Real payment request** is a name in the key because treating every bill as a scam is a mistake of its own.
+- Hurry, secrecy and a payment that cannot be undone turn up in most of the scams. They are a reason to stop, and they do not decide the name: the name comes from the more specific answer whenever there is one.
+- Everything that the questions ask can be seen when the request arrives. What happens after you pay (a refused withdrawal, a buyer’s payment that disappears, a second fee) is how many people notice, and by then the money has gone.
+- When a request is a real one, the right thing to do is to pay it in the normal way. **Real payment request** is a name here because treating every bill as a scam is a mistake of its own.
 - What to do on the spot is the same in nearly every name: do not pay yet, and contact them yourself.
 
 ### 61. Where would you meet this?
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 61 of 62*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 61 of 62*
 
 [reviewers only: card kind `transfer`, id `transfer`]
 
@@ -4294,7 +4294,7 @@ One line is enough. It is kept on this device only and is never marked.
 
 ### 62. A plan, if you want one
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 62 of 62*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 62 of 62*
 
 [reviewers only: card kind `plan`, id `plan`]
 
@@ -4320,7 +4320,7 @@ Or write your own: If …, then I will …
 
 ## After the unit: what comes back on later days
 
-A name that is due returns as a case the learner has not seen, next to a case of the name they most often confuse it with. Each is run as a whole route. These are the fresh cases held back for that purpose: three for each name, one for each scheduled return. The first return is about two days after the drill, the next about a week after that, the next about three and a half weeks later.
+A name that is due returns as a case the learner has not seen, next to a case of the name they most often confuse it with. Each is run as a whole case: every question, then the name. These are the fresh cases held back for that purpose: three for each name, one for each scheduled return. The first return is about two days after the drill, the next about a week after that, the next about three and a half weeks later.
 
 **Return case 1 of 36**
 
@@ -4333,13 +4333,13 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **Romance scam**.” What does it ask you to do with the money? **Pay for an emergency of someone you have never met.** She is asked to pay for his emergency, a ticket home: “the airline will only rebook me if I pay £640”.
   - Why not **Pig-butchering scam**: Tomas does not show her a site or an app to put money into. The money is for his own travel.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What is it asking you to do right now? **Pay or send money.** “Please send it to the travel agent's account” asks her to send money, and nothing earlier in the key’s list is asked, so the answer is **“Pay or send money”**.
+  - What is it asking you to do right now? **Pay or send money.** “Please send it to the travel agent's account” asks her to send money, and nothing earlier in the list is asked, so the answer is **“Pay or send money”**.
   - What does the request say the money is for? **An investment or an emergency of someone you know only online.** Tomas is someone she knows only through an app, and the money is for trouble that he says is his: “the airline will only rebook me if I pay £640”.
   - If you chose **Put it into a trading site or app that they showed you**: Tomas does not show her a site or an app to put money into. The money is for his own travel.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Pig-butchering scam**, the look-alike card’s lines follow: Both begin with someone you have only ever known through messages, often for weeks or months, and both end in a request for a large sum. The same person often runs one after the other. **Romance scam** asks you to pay for trouble that the person says is their own, such as a hospital bill or a ticket home. **Pig-butchering scam** asks you to invest: to put your money into a platform that the person showed you, or to pay a charge to that platform before your money can come out. Is the money to pay for something that has gone wrong for the person, or is it to be invested in a platform that they pointed me to?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If he had told her to put £640 into a trading app that he showed her, it would be **Pig-butchering scam**.
 - Taught on: “An online partner’s emergency that needs your money” (one tap opens the card).
 
@@ -4354,14 +4354,14 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **Romance scam**.” What does it ask you to do with the money? **Pay for an emergency of someone you have never met.** He is asked to pay for an emergency of hers, her mother’s medicine: “My mother needs a medicine that the hospital does not stock, and the pharmacy wants £1,200 before it will order it”.
   - Why not **Pig-butchering scam**: Priti does not show him a site to put money into. The money is for her mother’s medicine.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What is it asking you to do right now? **Pay or send money.** “Please send it to this account” asks him to send money, and nothing earlier in the key’s list is asked, so the answer is **“Pay or send money”**.
+  - What is it asking you to do right now? **Pay or send money.** “Please send it to this account” asks him to send money, and nothing earlier in the list is asked, so the answer is **“Pay or send money”**.
   - What does the request say the money is for? **An investment or an emergency of someone you know only online.** Priti is someone he knows only from a book club online, and the money is for trouble that she says is hers: “the pharmacy wants £1,200 before it will order it”.
   - If you chose **Put it into a trading site or app that they showed you**: Priti does not show him a site to put money into. The money is for her mother’s medicine.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Pig-butchering scam**, the look-alike card’s lines follow: Both begin with someone you have only ever known through messages, often for weeks or months, and both end in a request for a large sum. The same person often runs one after the other. **Romance scam** asks you to pay for trouble that the person says is their own, such as a hospital bill or a ticket home. **Pig-butchering scam** asks you to invest: to put your money into a platform that the person showed you, or to pay a charge to that platform before your money can come out. Is the money to pay for something that has gone wrong for the person, or is it to be invested in a platform that they pointed me to?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- What would make it a different name: If Priti were his sister, whom he sees every month, the request would be outside the key.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- What would make it a different name: If Priti were his sister, whom he sees every month, the request would be outside these questions.
 - Taught on: “An online partner’s emergency that needs your money” (one tap opens the card).
 
 **Return case 3 of 36**
@@ -4375,14 +4375,14 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **Romance scam**.” What does it ask you to do with the money? **Pay for an emergency of someone you have never met.** She is asked to pay for his emergency, bail after an accident: “I was in a car accident, and the court wants £2,000 bail before I can leave”.
   - Why not **Pig-butchering scam**: Karl does not show her a site or an app. The money is for his own bail.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What is it asking you to do right now? **Pay or send money.** “Please send the money to my lawyer's account” asks her to send money, and nothing earlier in the key’s list is asked, so the answer is **“Pay or send money”**.
+  - What is it asking you to do right now? **Pay or send money.** “Please send the money to my lawyer's account” asks her to send money, and nothing earlier in the list is asked, so the answer is **“Pay or send money”**.
   - What does the request say the money is for? **An investment or an emergency of someone you know only online.** Karl is someone she knows only through messages, and the money is for trouble that he says is his: “the court wants £2,000 bail before I can leave”.
   - If you chose **Put it into a trading site or app that they showed you**: Karl does not show her a site or an app. The money is for his own bail.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Pig-butchering scam**, the look-alike card’s lines follow: Both begin with someone you have only ever known through messages, often for weeks or months, and both end in a request for a large sum. The same person often runs one after the other. **Romance scam** asks you to pay for trouble that the person says is their own, such as a hospital bill or a ticket home. **Pig-butchering scam** asks you to invest: to put your money into a platform that the person showed you, or to pay a charge to that platform before your money can come out. Is the money to pay for something that has gone wrong for the person, or is it to be invested in a platform that they pointed me to?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- What would make it a different name: If Karl had been a colleague whom she had worked with in her own office, the request would be outside the key.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- What would make it a different name: If Karl had been a colleague whom she had worked with in her own office, the request would be outside these questions.
 - Taught on: “An online partner’s emergency that needs your money” (one tap opens the card).
 
 **Return case 4 of 36**
@@ -4393,17 +4393,17 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Romance scam**.” What does it ask you to do with the money? **Pay for an emergency of someone you have never met.** He is asked to pay for her emergency, a stolen wallet and a hotel that holds her luggage: “My wallet was stolen at the conference, and the hotel will not release my luggage until I pay £480”. The gift cards, the hurry and the secret also fit another answer, and when a case shows both, the key’s answer is **“Pay for an emergency of someone you have never met”**.
+- If you are right: “Right: **Romance scam**.” What does it ask you to do with the money? **Pay for an emergency of someone you have never met.** He is asked to pay for her emergency, a stolen wallet and a hotel that holds her luggage: “My wallet was stolen at the conference, and the hotel will not release my luggage until I pay £480”. The gift cards, the hurry and the secret also fit another answer, and when a case shows both, the answer is **“Pay for an emergency of someone you have never met”**.
   - Why not **Pig-butchering scam**: Sunita does not show him a site to invest in. The money is to pay for her own trouble, in gift cards.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What is it asking you to do right now? **Pay or send money.** “Please buy gift cards for it today and send me the numbers” asks him to pay, and nothing earlier in the key’s list is asked, so the answer is **“Pay or send money”**.
+  - What is it asking you to do right now? **Pay or send money.** “Please buy gift cards for it today and send me the numbers” asks him to pay, and nothing earlier in the list is asked, so the answer is **“Pay or send money”**.
   - What does the request say the money is for? **An investment or an emergency of someone you know only online.** Sunita is someone he knows only from a forum, and the money is for trouble that she says is hers: “the hotel will not release my luggage until I pay £480”.
   - If you chose **Put it into a trading site or app that they showed you**: Sunita does not show him a site to invest in. The money is to pay for her own trouble, in gift cards.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Pig-butchering scam**, the look-alike card’s lines follow: Both begin with someone you have only ever known through messages, often for weeks or months, and both end in a request for a large sum. The same person often runs one after the other. **Romance scam** asks you to pay for trouble that the person says is their own, such as a hospital bill or a ticket home. **Pig-butchering scam** asks you to invest: to put your money into a platform that the person showed you, or to pay a charge to that platform before your money can come out. Is the money to pay for something that has gone wrong for the person, or is it to be invested in a platform that they pointed me to?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *The tax caller*, which was **Fake official scam**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *The tax caller*, which was **Fake official scam**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If a caller who said that he was from the tax office had asked for the gift cards, with a warrant as the reason, it would be **Fake official scam**.
 - Taught on: “An online partner’s emergency that needs your money” (one tap opens the card).
 
@@ -4418,13 +4418,13 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **Pig-butchering scam**.” What does it ask you to do with the money? **Put it into a trading site or app that they showed you.** He is asked to put money into the app that she showed him: “Put in £1,000 to start”.
   - Why not **Romance scam**: Gigi has no emergency. The money is to go into an app that she showed him.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What is it asking you to do right now? **Pay or send money.** “Put in £1,000 to start” asks him to put money in, and nothing earlier in the key’s list is asked, so the answer is **“Pay or send money”**.
+  - What is it asking you to do right now? **Pay or send money.** “Put in £1,000 to start” asks him to put money in, and nothing earlier in the list is asked, so the answer is **“Pay or send money”**.
   - What does the request say the money is for? **An investment or an emergency of someone you know only online.** Gigi is someone he knows only from a dating app, and the money is for an investment that she showed him: “she told him about a currency app that she uses, and sent him its address”.
   - If you chose **Pay for an emergency of someone you have never met**: Gigi has no emergency. The money is to go into an app that she showed him.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Romance scam**, the look-alike card’s lines follow: Both begin with someone you have only ever known through messages, often for weeks or months, and both end in a request for a large sum. The same person often runs one after the other. **Romance scam** asks you to pay for trouble that the person says is their own, such as a hospital bill or a ticket home. **Pig-butchering scam** asks you to invest: to put your money into a platform that the person showed you, or to pay a charge to that platform before your money can come out. Is the money to pay for something that has gone wrong for the person, or is it to be invested in a platform that they pointed me to?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If Gigi had asked for £1,000 to pay her rent, it would be **Romance scam**.
 - Taught on: “An online friend’s investment site that keeps your money” (one tap opens the card).
 
@@ -4439,12 +4439,12 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **Pig-butchering scam**.” What does it ask you to do with the money? **Put it into a trading site or app that they showed you.** He is asked to put money into the app that she showed him: “Add £7,500 tonight”.
   - Why not **Advance-fee scam**: Nobody says that money is waiting for him. He is asked to put his own money into an app.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What is it asking you to do right now? **Pay or send money.** “Add £7,500 tonight” asks him to put money in, and nothing earlier in the key’s list is asked, so the answer is **“Pay or send money”**.
+  - What is it asking you to do right now? **Pay or send money.** “Add £7,500 tonight” asks him to put money in, and nothing earlier in the list is asked, so the answer is **“Pay or send money”**.
   - What does the request say the money is for? **An investment or an emergency of someone you know only online.** Lila is someone he knows only from a wrong-number text, and the money is for an investment that she showed him: “She then shows him an oil-futures app on which she says she has made a fortune”.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Advance-fee scam**, the look-alike card’s lines follow: Both ask for a fee before money reaches you or leaves a site, and both can promise large sums. In **Pig-butchering scam** the money is in a trading site or app that someone you know only online showed you, and the fee is to take it out. In **Advance-fee scam** the money is said to be waiting for you from someone who contacted you, and you never put any in. Did someone I know only online show me a site or an app where my money is, or is the money said to be waiting for me from someone who contacted me?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If Lila had been a stranger who texted to say that he had won a prize and must pay a fee, it would be **Advance-fee scam**.
 - Taught on: “An online friend’s investment site that keeps your money” (one tap opens the card).
 
@@ -4459,14 +4459,14 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **Pig-butchering scam**.” What does it ask you to do with the money? **Put it into a trading site or app that they showed you.** She is asked to open an account on the platform that he showed her: “Open an account with £3,000”.
   - Why not **Romance scam**: Colin has no trouble of his own to pay for. The money is to go into a platform.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What is it asking you to do right now? **Pay or send money.** “Open an account with £3,000” asks her to put money in, and nothing earlier in the key’s list is asked, so the answer is **“Pay or send money”**.
+  - What is it asking you to do right now? **Pay or send money.** “Open an account with £3,000” asks her to put money in, and nothing earlier in the list is asked, so the answer is **“Pay or send money”**.
   - What does the request say the money is for? **An investment or an emergency of someone you know only online.** Colin is someone she knows only from an app, and the money is for an investment that he showed her: “He says that he can get her into a 'pre-launch share platform' that few people know about”.
   - If you chose **Pay for an emergency of someone you have never met**: Colin has no trouble of his own to pay for. The money is to go into a platform.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Romance scam**, the look-alike card’s lines follow: Both begin with someone you have only ever known through messages, often for weeks or months, and both end in a request for a large sum. The same person often runs one after the other. **Romance scam** asks you to pay for trouble that the person says is their own, such as a hospital bill or a ticket home. **Pig-butchering scam** asks you to invest: to put your money into a platform that the person showed you, or to pay a charge to that platform before your money can come out. Is the money to pay for something that has gone wrong for the person, or is it to be invested in a platform that they pointed me to?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- What would make it a different name: If she had found the platform through her own bank, and he had no part in it, the case would be outside the key.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- What would make it a different name: If she had found the platform through her own bank, and he had no part in it, the case would be outside these questions.
 - Taught on: “An online friend’s investment site that keeps your money” (one tap opens the card).
 
 **Return case 8 of 36**
@@ -4477,16 +4477,16 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Pig-butchering scam**.” What does it ask you to do with the money? **Put it into a trading site or app that they showed you.** He is asked to pay a further deposit to be able to take money out of the app: “To confirm that you can cover losses, deposit a further £3,000 first”. A fee before money reaches you also fits, and when a case shows both, the key’s answer is **“Put it into a trading site or app that they showed you”**.
+- If you are right: “Right: **Pig-butchering scam**.” What does it ask you to do with the money? **Put it into a trading site or app that they showed you.** He is asked to pay a further deposit to be able to take money out of the app: “To confirm that you can cover losses, deposit a further £3,000 first”. A fee before money reaches you also fits, and when a case shows both, the answer is **“Put it into a trading site or app that they showed you”**.
   - Why not **Advance-fee scam**: The deposit is asked for by the app, which a person he has never met showed him. No one says that a prize is waiting.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What is it asking you to do right now? **Pay or send money.** “deposit a further £3,000 first” asks him to pay more, and nothing earlier in the key’s list is asked, so the answer is **“Pay or send money”**.
+  - What is it asking you to do right now? **Pay or send money.** “deposit a further £3,000 first” asks him to pay more, and nothing earlier in the list is asked, so the answer is **“Pay or send money”**.
   - What does the request say the money is for? **An investment or an emergency of someone you know only online.** The money is in an app that someone he has never met showed him: “an app that a man called Pieter, whom he has never met, showed him on a forum for investors”.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Advance-fee scam**, the look-alike card’s lines follow: Both ask for a fee before money reaches you or leaves a site, and both can promise large sums. In **Pig-butchering scam** the money is in a trading site or app that someone you know only online showed you, and the fee is to take it out. In **Advance-fee scam** the money is said to be waiting for you from someone who contacted you, and you never put any in. Did someone I know only online show me a site or an app where my money is, or is the money said to be waiting for me from someone who contacted me?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *The recovery email*, which was **Recovery scam**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *The recovery email*, which was **Recovery scam**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If a stranger had written to him about money that he had lost in a different app, and offered to get it back for a fee, it would be **Recovery scam**.
 - Taught on: “An online friend’s investment site that keeps your money” (one tap opens the card).
 
@@ -4501,12 +4501,12 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **Advance-fee scam**.” What does it ask you to do with the money? **Pay a fee before the money reaches you.** She must pay a fee before any of it reaches her: “Send a £400 transfer fee to the account below, and the money will be released to you”.
   - Why not **Recovery scam**: The £4.6 million was never hers, and nothing was taken from her. It is said to be waiting for her.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What is it asking you to do right now? **Pay or send money.** “Send a £400 transfer fee to the account below” asks her to send money, and nothing earlier in the key’s list is asked, so the answer is **“Pay or send money”**.
+  - What is it asking you to do right now? **Pay or send money.** “Send a £400 transfer fee to the account below” asks her to send money, and nothing earlier in the list is asked, so the answer is **“Pay or send money”**.
   - What does the request say the money is for? **A prize, an inheritance, a grant or a loan waiting for you.** The email says that a large sum is waiting for her, as the nearest relative: “You are the nearest relative”.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Recovery scam**, the look-alike card’s lines follow: Both are about money that is said to be waiting to be released to you, and both ask for a fee before you can have it. In **Advance-fee scam** the money was never yours: a prize, a grant, a loan or an inheritance. In **Recovery scam** the money was yours and was taken from you earlier, and someone offers to get it back. Is the money that is said to be waiting something that was never mine, or something that I lost earlier?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the email had offered to get back money that she lost to a scam, it would be **Recovery scam**.
 - Taught on: “A fee to collect money that is not coming” (one tap opens the card).
 
@@ -4518,16 +4518,16 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Advance-fee scam**.” What does it ask you to do with the money? **Pay a fee before the money reaches you.** He must pay a fee before it reaches him: “Pay a £95 registration fee”. A link is there too, and when a case shows both, the key’s answer is **“Pay a fee before the money reaches you”**.
+- If you are right: “Right: **Advance-fee scam**.” What does it ask you to do with the money? **Pay a fee before the money reaches you.** He must pay a fee before it reaches him: “Pay a £95 registration fee”. A link is there too, and when a case shows both, the answer is **“Pay a fee before the money reaches you”**.
   - Why not **Fake payment link**: The link is only the way the fee is paid. The reason for the payment is a grant that was never his.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What is it asking you to do right now? **Pay or send money.** “Pay a £95 registration fee through the link in our profile” asks him to pay, and nothing earlier in the key’s list is asked, so the answer is **“Pay or send money”**.
+  - What is it asking you to do right now? **Pay or send money.** “Pay a £95 registration fee through the link in our profile” asks him to pay, and nothing earlier in the list is asked, so the answer is **“Pay or send money”**.
   - What does the request say the money is for? **A prize, an inheritance, a grant or a loan waiting for you.** The message says that a grant is waiting for him: “You have been selected for a £6,000 grant for single parents”.
-  - If you chose **Pay on a page reached from a link in the message**: You chose **Pay on a page reached from a link in the message**. This case does show that. It also shows a fee before money you are promised reaches you, and when a case shows both, the key’s answer is **Pay a fee before the money reaches you**.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose **Pay on a page reached from a link in the message**: You chose **Pay on a page reached from a link in the message**. This case does show that. It also shows a fee before money you are promised reaches you, and when a case shows both, the answer is **Pay a fee before the money reaches you**.
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Fake payment link**, the look-alike card’s lines follow: Both ask for a small payment, often on a page, before something reaches you. In **Advance-fee scam** the payment is a fee that comes first, for a prize, a grant or a loan that is said to be waiting. In **Fake payment link** the payment is a charge or a fine on something that you are buying or already pay for. Is the payment a fee to receive something that is said to be waiting for me, or a charge on something that I am buying or already pay for?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the message had been about a parcel that he was expecting, with a small charge on a link, it would be **Fake payment link**.
 - Taught on: “A fee to collect money that is not coming” (one tap opens the card).
 
@@ -4542,13 +4542,13 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **Advance-fee scam**.” What does it ask you to do with the money? **Pay a fee before the money reaches you.** He must pay a charge before any of it reaches him: “Pay the £500 customs charge to our agent's account and the parcel will be delivered”.
   - Why not **Fake payment link**: This is not a small charge on something that he ordered. The parcel is a sum that he never expected.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What is it asking you to do right now? **Pay or send money.** “Pay the £500 customs charge to our agent's account” asks him to pay, and nothing earlier in the key’s list is asked, so the answer is **“Pay or send money”**.
+  - What is it asking you to do right now? **Pay or send money.** “Pay the £500 customs charge to our agent's account” asks him to pay, and nothing earlier in the list is asked, so the answer is **“Pay or send money”**.
   - What does the request say the money is for? **A prize, an inheritance, a grant or a loan waiting for you.** The message says that money that was left to him is waiting: “a parcel with £90,000 in cash that a dead client left him”.
   - If you chose **Pay on a page reached from a link in the message**: This is not a small charge on something that he ordered. The parcel is a sum that he never expected.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Fake payment link**, the look-alike card’s lines follow: Both ask for a small payment, often on a page, before something reaches you. In **Advance-fee scam** the payment is a fee that comes first, for a prize, a grant or a loan that is said to be waiting. In **Fake payment link** the payment is a charge or a fine on something that you are buying or already pay for. Is the payment a fee to receive something that is said to be waiting for me, or a charge on something that I am buying or already pay for?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If he had ordered a pair of boots and the courier asked for £6.20 in its own app, it would be **Real payment request**.
 - Taught on: “A fee to collect money that is not coming” (one tap opens the card).
 
@@ -4560,17 +4560,17 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Advance-fee scam**.” What does it ask you to do with the money? **Pay a fee before the money reaches you.** He must pay before it reaches him: “To release your prize, pay £15”. A payment page behind a link also fits, and when a case shows both, the key’s answer is **“Pay a fee before the money reaches you”**.
+- If you are right: “Right: **Advance-fee scam**.” What does it ask you to do with the money? **Pay a fee before the money reaches you.** He must pay before it reaches him: “To release your prize, pay £15”. A payment page behind a link also fits, and when a case shows both, the answer is **“Pay a fee before the money reaches you”**.
   - Why not **Fake payment link**: The link is only how the £15 is paid. The reason for it is a prize that does not exist.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What is it asking you to do right now? **Pay or send money.** “pay £15 at lottery-release.example” asks him to pay, and nothing earlier in the key’s list is asked, so the answer is **“Pay or send money”**.
+  - What is it asking you to do right now? **Pay or send money.** “pay £15 at lottery-release.example” asks him to pay, and nothing earlier in the list is asked, so the answer is **“Pay or send money”**.
   - What does the request say the money is for? **A prize, an inheritance, a grant or a loan waiting for you.** The text says that a prize is waiting for him, from a draw that he never entered: “you have won £10,000”.
-  - If you chose **Pay on a page reached from a link in the message**: You chose **Pay on a page reached from a link in the message**. This case does show that. It also shows a fee before money you are promised reaches you, and when a case shows both, the key’s answer is **Pay a fee before the money reaches you**.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose **Pay on a page reached from a link in the message**: You chose **Pay on a page reached from a link in the message**. This case does show that. It also shows a fee before money you are promised reaches you, and when a case shows both, the answer is **Pay a fee before the money reaches you**.
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Fake payment link**, the look-alike card’s lines follow: Both ask for a small payment, often on a page, before something reaches you. In **Advance-fee scam** the payment is a fee that comes first, for a prize, a grant or a loan that is said to be waiting. In **Fake payment link** the payment is a charge or a fine on something that you are buying or already pay for. Is the payment a fee to receive something that is said to be waiting for me, or a charge on something that I am buying or already pay for?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *The redelivery fee*, which was **Fake payment link**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *The redelivery fee*, which was **Fake payment link**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If the text had asked for £1.99 delivery on a parcel that he was expecting, it would be **Fake payment link**.
 - Taught on: “A fee to collect money that is not coming” (one tap opens the card).
 
@@ -4585,12 +4585,12 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **Recovery scam**.” What does it ask you to do with the money? **Pay a fee before the money reaches you.** A fee must be paid before they start: “Our engagement fee is £700, paid in advance, and then we start”.
   - Why not **Advance-fee scam**: The £8,000 was not a prize that was never hers. It is crypto that she lost to the fake exchange.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What is it asking you to do right now? **Pay or send money.** “Our engagement fee is £700, paid in advance” asks her to pay, and nothing earlier in the key’s list is asked, so the answer is **“Pay or send money”**.
+  - What is it asking you to do right now? **Pay or send money.** “Our engagement fee is £700, paid in advance” asks her to pay, and nothing earlier in the list is asked, so the answer is **“Pay or send money”**.
   - What does the request say the money is for? **Getting back money you lost.** The firm offers to trace money that Zoe lost earlier: “kept £8,000 of her crypto” and “We use forensic tools to trace stolen coins”.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Advance-fee scam**, the look-alike card’s lines follow: Both are about money that is said to be waiting to be released to you, and both ask for a fee before you can have it. In **Advance-fee scam** the money was never yours: a prize, a grant, a loan or an inheritance. In **Recovery scam** the money was yours and was taken from you earlier, and someone offers to get it back. Is the money that is said to be waiting something that was never mine, or something that I lost earlier?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the firm had written to say that she had won a prize, with no mention of any loss, it would be **Advance-fee scam**.
 - Taught on: “A fee to get back money you lost” (one tap opens the card).
 
@@ -4605,12 +4605,12 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **Recovery scam**.” What does it ask you to do with the money? **Pay a fee before the money reaches you.** A fee must be paid first: “once you pay our £150 case fee”.
   - Why not **Advance-fee scam**: The £750 is not money that was never his. It is his deposit, which he paid and lost.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What is it asking you to do right now? **Pay or send money.** “once you pay our £150 case fee” asks him to pay, and nothing earlier in the key’s list is asked, so the answer is **“Pay or send money”**.
+  - What is it asking you to do right now? **Pay or send money.** “once you pay our £150 case fee” asks him to pay, and nothing earlier in the list is asked, so the answer is **“Pay or send money”**.
   - What does the request say the money is for? **Getting back money you lost.** The caller offers to get back money that Walt lost: “paid a £750 deposit for a puppy that was never delivered” and “we can recover your £750”.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Advance-fee scam**, the look-alike card’s lines follow: Both are about money that is said to be waiting to be released to you, and both ask for a fee before you can have it. In **Advance-fee scam** the money was never yours: a prize, a grant, a loan or an inheritance. In **Recovery scam** the money was yours and was taken from you earlier, and someone offers to get it back. Is the money that is said to be waiting something that was never mine, or something that I lost earlier?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the caller had said that a grant of £750 was waiting for Walt, it would be **Advance-fee scam**.
 - Taught on: “A fee to get back money you lost” (one tap opens the card).
 
@@ -4625,12 +4625,12 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **Recovery scam**.” What does it ask you to do with the money? **Pay a fee before the money reaches you.** A fee must be paid before it is released: “To release it, pay a £600 clearance fee”.
   - Why not **Advance-fee scam**: The £14,000 is the sum that she lost. It was hers, and it is not a new prize.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What is it asking you to do right now? **Pay or send money.** “pay a £600 clearance fee to the account below” asks her to pay, and nothing earlier in the key’s list is asked, so the answer is **“Pay or send money”**.
+  - What is it asking you to do right now? **Pay or send money.** “pay a £600 clearance fee to the account below” asks her to pay, and nothing earlier in the list is asked, so the answer is **“Pay or send money”**.
   - What does the request say the money is for? **Getting back money you lost.** The text says that money that Linh lost has been found: “lost £14,000 in a pension transfer scam” and “your £14,000 has been found”.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Advance-fee scam**, the look-alike card’s lines follow: Both are about money that is said to be waiting to be released to you, and both ask for a fee before you can have it. In **Advance-fee scam** the money was never yours: a prize, a grant, a loan or an inheritance. In **Recovery scam** the money was yours and was taken from you earlier, and someone offers to get it back. Is the money that is said to be waiting something that was never mine, or something that I lost earlier?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the text had threatened her with a fine unless she paid at once in vouchers, it would be **Fake official scam**.
 - Taught on: “A fee to get back money you lost” (one tap opens the card).
 
@@ -4645,14 +4645,14 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **Recovery scam**.” What does it ask you to do with the money? **Pay a fee before the money reaches you.** Whatever is said about a fee only on success, there is a payment to make before they start: “we need a £60 admin deposit to open your file”.
   - Why not **Advance-fee scam**: The money is not a prize that was never his. The firm’s whole offer is about the £2,000 that he lost.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What is it asking you to do right now? **Pay or send money.** “we need a £60 admin deposit to open your file” asks him to pay, and nothing earlier in the key’s list is asked, so the answer is **“Pay or send money”**.
+  - What is it asking you to do right now? **Pay or send money.** “we need a £60 admin deposit to open your file” asks him to pay, and nothing earlier in the list is asked, so the answer is **“Pay or send money”**.
   - What does the request say the money is for? **Getting back money you lost.** The firm offers to win back money that Hari lost: “Hari lost £2,000 to a fake holiday booking site” and “We win nine in ten cases”.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Advance-fee scam**, the look-alike card’s lines follow: Both are about money that is said to be waiting to be released to you, and both ask for a fee before you can have it. In **Advance-fee scam** the money was never yours: a prize, a grant, a loan or an inheritance. In **Recovery scam** the money was yours and was taken from you earlier, and someone offers to get it back. Is the money that is said to be waiting something that was never mine, or something that I lost earlier?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *The cottage deposit*, which was **Real payment request**. When a likeness and the key disagree, go by the words that answer the key’s question.
-- What would make it a different name: If he had paid nothing, and the firm had asked only for his bank’s details to start a complaint through the bank, the case would be outside the key.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *The cottage deposit*, which was **Real payment request**. When a likeness and the answers disagree, go by the words that answer the question.
+- What would make it a different name: If he had paid nothing, and the firm had asked only for his bank’s details to start a complaint through the bank, the case would be outside these questions.
 - Taught on: “A fee to get back money you lost” (one tap opens the card).
 
 **Return case 17 of 36**
@@ -4666,13 +4666,13 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **Real payment request**.” What does it ask you to do with the money? **Pay what you agreed or owe, to details that pass the check.** It comes in an app that he installed himself, and the amount is the one he always pays: “The council's own app, which he installed himself” and “The amount is the same as every month”.
   - Why not **Fake official scam**: Nothing is hurried or secret, and there is no threat. It comes in an app that he already had.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What is it asking you to do right now? **Pay or send money.** “Please pay your £132 instalment by the 15th” is a request to pay, and nothing earlier in the key’s list is asked, so the answer is **“Pay or send money”**.
+  - What is it asking you to do right now? **Pay or send money.** “Please pay your £132 instalment by the 15th” is a request to pay, and nothing earlier in the list is asked, so the answer is **“Pay or send money”**.
   - What does the request say the money is for? **A fine, a tax, or keeping your money safe.** The money is a tax that he owes to his council: “Ciaran has paid his council tax by instalments for years”.
   - If you chose **Pay at once, in a way that cannot be undone, and tell no one**: Nothing is hurried or secret, and there is no threat. It comes in an app that he already had.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Fake official scam**, the look-alike card’s lines follow: Both are about a fine, a tax or a debt that is said to be owed to an official body or to your bank, and both can come with a real-looking reference. In **Real payment request** you are given time and a way to appeal, you can look the amount up yourself, and you are asked to pay in an ordinary way. In **Fake official scam** you are told to pay at once, in a way that cannot be undone, and to say nothing. Am I being hurried and kept quiet, or given time and something that I can look up for myself?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If a caller had told him to pay the £132 at once in vouchers and to tell no one, it would be **Fake official scam**.
 - Taught on: “A bill, a fine or a deal that is what it says” (one tap opens the card).
 
@@ -4687,13 +4687,13 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **Real payment request**.” What does it ask you to do with the money? **Pay what you agreed or owe, to details that pass the check.** She reached the site through an address that she typed in, and the price matches her saved quote: “which she reached by typing in its address” and “The price is the one in the quote that she saved”.
   - Why not **Fake payment link**: She did not reach the page through a link in a message. She went to the company’s own site.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What is it asking you to do right now? **Pay or send money.** “Pay a £150 deposit by card now” is a request to pay, and nothing earlier in the key’s list is asked, so the answer is **“Pay or send money”**.
+  - What is it asking you to do right now? **Pay or send money.** “Pay a £150 deposit by card now” is a request to pay, and nothing earlier in the list is asked, so the answer is **“Pay or send money”**.
   - What does the request say the money is for? **Something you are buying, selling or booking.** The deposit is part of a booking that she is making herself: “Fay hires a car on the rental company's own website”.
   - If you chose **Pay on a page reached from a link in the message**: She did not reach the page through a link in a message. She went to the company’s own site.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Fake payment link**, the look-alike card’s lines follow: Both are a small charge on something that you are waiting for or already pay for, from a company that you deal with, and both can lead to a payment page. In **Real payment request** you find the charge yourself, in the company’s own app or on a page that you already use, and pay it there. In **Fake payment link** the charge arrives in a message, and the page to pay on is behind a link in that message. Did the charge come to me in a message with a link to pay on, or can I find it myself in the company’s own app or on a page that I already use?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the page had been reached through a link in a text from a number she did not know, it would be **Fake payment link**.
 - Taught on: “A bill, a fine or a deal that is what it says” (one tap opens the card).
 
@@ -4708,13 +4708,13 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **Real payment request**.” What does it ask you to do with the money? **Pay what you agreed or owe, to details that pass the check.** The amount and the way of paying are the ones on her order form: “as on your order form”. There is no link, and she pays when the sofa arrives.
   - Why not **Fake payment link**: The text gives no link to pay on. She pays the driver in person, as she agreed in the shop.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What is it asking you to do right now? **Pay or send money.** “Please pay the balance of £640 on delivery” is a request to pay, and nothing earlier in the key’s list is asked, so the answer is **“Pay or send money”**.
+  - What is it asking you to do right now? **Pay or send money.** “Please pay the balance of £640 on delivery” is a request to pay, and nothing earlier in the list is asked, so the answer is **“Pay or send money”**.
   - What does the request say the money is for? **Something you are buying, selling or booking.** The money is the balance on a purchase that she made herself: “Ines ordered a sofa in a shop's showroom and paid a £200 deposit”.
   - If you chose **Pay on a page reached from a link in the message**: The text gives no link to pay on. She pays the driver in person, as she agreed in the shop.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Fake payment link**, the look-alike card’s lines follow: Both are a small charge on something that you are waiting for or already pay for, from a company that you deal with, and both can lead to a payment page. In **Real payment request** you find the charge yourself, in the company’s own app or on a page that you already use, and pay it there. In **Fake payment link** the charge arrives in a message, and the page to pay on is behind a link in that message. Did the charge come to me in a message with a link to pay on, or can I find it myself in the company’s own app or on a page that I already use?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the text had asked her to pay a new fee on a link before delivery, it would be **Fake payment link**.
 - Taught on: “A bill, a fine or a deal that is what it says” (one tap opens the card).
 
@@ -4729,14 +4729,14 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **Real payment request**.” What does it ask you to do with the money? **Pay what you agreed or owe, to details that pass the check.** The words are firm, but the same amount is in his own app, he has days, and he is told to ring the number on his policy: “The same £412 is in his account in the app” and “Ring the number on your policy”.
   - Why not **Fake official scam**: A deadline and the word “uninsured” sound like a threat, but nobody claims an official’s power, nobody says to tell no one, and the amount is in his own app.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What is it asking you to do right now? **Pay or send money.** “Pay £412 by Thursday to renew it” is a request to pay, and nothing earlier in the key’s list is asked, so the answer is **“Pay or send money”**.
+  - What is it asking you to do right now? **Pay or send money.** “Pay £412 by Thursday to renew it” is a request to pay, and nothing earlier in the list is asked, so the answer is **“Pay or send money”**.
   - What does the request say the money is for? **A bill from someone you already pay.** The money is for a policy that he already pays for: “Your policy ends on Friday”.
   - If you chose **Pay at once, in a way that cannot be undone, and tell no one**: A deadline and the word “uninsured” sound like a threat, but nobody claims an official’s power, nobody says to tell no one, and the amount is in his own app.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Fake official scam**, the look-alike card’s lines follow: Both are about a fine, a tax or a debt that is said to be owed to an official body or to your bank, and both can come with a real-looking reference. In **Real payment request** you are given time and a way to appeal, you can look the amount up yourself, and you are asked to pay in an ordinary way. In **Fake official scam** you are told to pay at once, in a way that cannot be undone, and to say nothing. Am I being hurried and kept quiet, or given time and something that I can look up for myself?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *The tax caller*, which was **Fake official scam**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *The tax caller*, which was **Fake official scam**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If a caller said that he was from the insurer and told him to pay in gift cards and keep quiet, it would be **Fake official scam**.
 - Taught on: “A bill, a fine or a deal that is what it says” (one tap opens the card).
 
@@ -4751,13 +4751,13 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **Invoice fraud**.” What does it ask you to do with the money? **Pay into new bank details sent by message.** A message tells her that the bank has changed, and gives new details: “Our accounts team has changed banks”.
   - Why not **Real payment request**: The venue and the amount are the ones she expects, but the account is new, and it arrived in a message.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What is it asking you to do right now? **Pay or send money.** “Please pay the final £4,500 into the new account below by Friday” asks her to pay, and nothing earlier in the key’s list is asked, so the answer is **“Pay or send money”**.
+  - What is it asking you to do right now? **Pay or send money.** “Please pay the final £4,500 into the new account below by Friday” asks her to pay, and nothing earlier in the list is asked, so the answer is **“Pay or send money”**.
   - What does the request say the money is for? **A bill from someone you already pay.** The money is for a payment that she is already making: “Chloe has paid a wedding venue in three instalments”.
   - If you chose **Pay what you agreed or owe, to details that pass the check**: The venue and the amount are the ones she expects, but the account is new, and it arrived in a message.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Real payment request**, the look-alike card’s lines follow: Both are a bill that you really pay, with the same logo, the same email thread and the same amount. In **Real payment request** the account to pay into is the one that you have always paid, or were given when you started. In **Invoice fraud** a message tells you that the details have changed, and gives new ones. Are the bank details the ones I was given at the start, or has a message just told me that they have changed?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the email had named the account on her contract, it would be **Real payment request**.
 - Taught on: “A real bill, sent to new bank details” (one tap opens the card).
 
@@ -4772,13 +4772,13 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **Invoice fraud**.” What does it ask you to do with the money? **Pay into new bank details sent by message.** A message tells him that the bank has changed, and gives new details in a file: “The university's finance office has moved to a new bank”.
   - Why not **Fake payment link**: There is no link and no payment page. The request is to pay into new bank details.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What is it asking you to do right now? **Pay or send money.** “Please use the details in the attached file for the £3,250 fee” asks him to pay, and nothing earlier in the key’s list is asked, so the answer is **“Pay or send money”**.
+  - What is it asking you to do right now? **Pay or send money.** “Please use the details in the attached file for the £3,250 fee” asks him to pay, and nothing earlier in the list is asked, so the answer is **“Pay or send money”**.
   - What does the request say the money is for? **A bill from someone you already pay.** The money is for a bill that he pays every term: “Ahmad's son's university has sent a fee invoice each term”.
   - If you chose **Pay on a page reached from a link in the message**: There is no link and no payment page. The request is to pay into new bank details.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Fake payment link**, the look-alike card’s lines follow: Both are about a bill or a charge, can arrive as a message, and both end with you paying to a place that the message gives. **Invoice fraud** is a bill that you really pay, with new bank details to pay into. **Fake payment link** is a charge, usually a small one, with a payment page behind a link. Am I asked to pay into a new account that the message names, or to pay on a page that I reach through a link in the message?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the details in the file were the ones in the university’s own student portal, which he opened himself, it would be **Real payment request**.
 - Taught on: “A real bill, sent to new bank details” (one tap opens the card).
 
@@ -4793,13 +4793,13 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **Invoice fraud**.” What does it ask you to do with the money? **Pay into new bank details sent by message.** The account has changed, and the old one is to be ignored: “please ignore the account on earlier invoices”.
   - Why not **Real payment request**: The roofer’s address and the amount are the usual ones, but the account is new, and it arrived in a message.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What is it asking you to do right now? **Pay or send money.** “Please pay £7,800 into the account shown” asks the firm to pay, and nothing earlier in the key’s list is asked, so the answer is **“Pay or send money”**.
+  - What is it asking you to do right now? **Pay or send money.** “Please pay £7,800 into the account shown” asks the firm to pay, and nothing earlier in the list is asked, so the answer is **“Pay or send money”**.
   - What does the request say the money is for? **A bill from someone you already pay.** The money is for an invoice that the firm already pays: “A small firm pays its roofer's invoices by transfer”.
   - If you chose **Pay what you agreed or owe, to details that pass the check**: The roofer’s address and the amount are the usual ones, but the account is new, and it arrived in a message.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Real payment request**, the look-alike card’s lines follow: Both are a bill that you really pay, with the same logo, the same email thread and the same amount. In **Real payment request** the account to pay into is the one that you have always paid, or were given when you started. In **Invoice fraud** a message tells you that the details have changed, and gives new ones. Are the bank details the ones I was given at the start, or has a message just told me that they have changed?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the invoice had named the account on earlier invoices, it would be **Real payment request**.
 - Taught on: “A real bill, sent to new bank details” (one tap opens the card).
 
@@ -4814,14 +4814,14 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **Invoice fraud**.” What does it ask you to do with the money? **Pay into new bank details sent by message.** A message tells him that the bank has changed: “I have changed bank”. The number in the email came with the message, so ringing it would not check anything.
   - Why not **Real payment request**: The invitation to ring looks like a real request’s, but the number came with the email that announces new details. The number on his tenancy agreement is the one that he already had.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What is it asking you to do right now? **Pay or send money.** “Please pay this month's £880 into the new account below” asks him to pay, and nothing earlier in the key’s list is asked, so the answer is **“Pay or send money”**.
+  - What is it asking you to do right now? **Pay or send money.** “Please pay this month's £880 into the new account below” asks him to pay, and nothing earlier in the list is asked, so the answer is **“Pay or send money”**.
   - What does the request say the money is for? **A bill from someone you already pay.** The money is for rent that he already pays: “Kofi pays his landlord, Mrs Dale, by transfer each month”.
   - If you chose **Pay what you agreed or owe, to details that pass the check**: The invitation to ring looks like a real request’s, but the number came with the email that announces new details. The number on his tenancy agreement is the one that he already had.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Real payment request**, the look-alike card’s lines follow: Both are a bill that you really pay, with the same logo, the same email thread and the same amount. In **Real payment request** the account to pay into is the one that you have always paid, or were given when you started. In **Invoice fraud** a message tells you that the details have changed, and gives new ones. Are the bank details the ones I was given at the start, or has a message just told me that they have changed?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *The agency rent reminder*, which was **Real payment request**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *The agency rent reminder*, which was **Real payment request**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If he rang the number on his tenancy agreement and Mrs Dale confirmed the change, he would have found out something that the email could not tell him.
 - Taught on: “A real bill, sent to new bank details” (one tap opens the card).
 
@@ -4836,13 +4836,13 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **Fake payment link**.” What does it ask you to do with the money? **Pay on a page reached from a link in the message.** She is told to pay on a page that she reaches through a link in the text: “Pay a £3.50 storage fee at postfast-depot.example”.
   - Why not **Real payment request**: The charge came in a message, with a link to pay on. Nothing that Mira already had shows that it is real.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What is it asking you to do right now? **Pay or send money.** “Pay a £3.50 storage fee at postfast-depot.example” asks her to pay, and nothing earlier in the key’s list is asked, so the answer is **“Pay or send money”**.
+  - What is it asking you to do right now? **Pay or send money.** “Pay a £3.50 storage fee at postfast-depot.example” asks her to pay, and nothing earlier in the list is asked, so the answer is **“Pay or send money”**.
   - What does the request say the money is for? **Something you are buying, selling or booking.** The charge is part of a delivery that she is waiting for: “your package is held at our depot”.
   - If you chose **Pay what you agreed or owe, to details that pass the check**: The charge came in a message, with a link to pay on. Nothing that Mira already had shows that it is real.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Real payment request**, the look-alike card’s lines follow: Both are a small charge on something that you are waiting for or already pay for, from a company that you deal with, and both can lead to a payment page. In **Real payment request** you find the charge yourself, in the company’s own app or on a page that you already use, and pay it there. In **Fake payment link** the charge arrives in a message, and the page to pay on is behind a link in that message. Did the charge come to me in a message with a link to pay on, or can I find it myself in the company’s own app or on a page that I already use?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If she found a storage fee in the courier’s own app, she could pay it there, and it would be **Real payment request**.
 - Taught on: “A small charge you do not owe, paid through a link” (one tap opens the card).
 
@@ -4857,13 +4857,13 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **Fake payment link**.” What does it ask you to do with the money? **Pay on a page reached from a link in the message.** He is told to pay on a page that he reaches through a link in the text: “Update your details at mobiletel-bill.example to keep your number”.
   - Why not **Invoice fraud**: No new bank details are given. The text asks him to pay on a page behind a link.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What is it asking you to do right now? **Pay or send money.** “Update your details at mobiletel-bill.example” asks him to pay, and nothing earlier in the key’s list is asked, so the answer is **“Pay or send money”**.
+  - What is it asking you to do right now? **Pay or send money.** “Update your details at mobiletel-bill.example” asks him to pay, and nothing earlier in the list is asked, so the answer is **“Pay or send money”**.
   - What does the request say the money is for? **A bill from someone you already pay.** The reason is a bill that he may well pay: “Your payment of £28 failed”.
   - If you chose **Pay into new bank details sent by message**: No new bank details are given. The text asks him to pay on a page behind a link.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Invoice fraud**, the look-alike card’s lines follow: Both are about a bill or a charge, can arrive as a message, and both end with you paying to a place that the message gives. **Invoice fraud** is a bill that you really pay, with new bank details to pay into. **Fake payment link** is a charge, usually a small one, with a payment page behind a link. Am I asked to pay into a new account that the message names, or to pay on a page that I reach through a link in the message?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the text had told him to pay into a new account because the company had changed banks, it would be **Invoice fraud**.
 - Taught on: “A small charge you do not owe, paid through a link” (one tap opens the card).
 
@@ -4878,13 +4878,13 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **Fake payment link**.” What does it ask you to do with the money? **Pay on a page reached from a link in the message.** She is told to pay on a page that she reaches through a link in the text: “Renew it for £25 at permit-renew.example”. That the permit really is about to run out does not change this.
   - Why not **Real payment request**: The fee may well be real, but it came in a message with a link. Nothing that Bea already had shows that the page is the council’s.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What is it asking you to do right now? **Pay or send money.** “Renew it for £25 at permit-renew.example” asks her to pay, and nothing earlier in the key’s list is asked, so the answer is **“Pay or send money”**.
+  - What is it asking you to do right now? **Pay or send money.** “Renew it for £25 at permit-renew.example” asks her to pay, and nothing earlier in the list is asked, so the answer is **“Pay or send money”**.
   - What does the request say the money is for? **A fine, a tax, or keeping your money safe.** The reason is a charge that would be owed to a parking office: “Your parking permit expires soon”.
   - If you chose **Pay what you agreed or owe, to details that pass the check**: The fee may well be real, but it came in a message with a link. Nothing that Bea already had shows that the page is the council’s.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Real payment request**, the look-alike card’s lines follow: Both are a small charge on something that you are waiting for or already pay for, from a company that you deal with, and both can lead to a payment page. In **Real payment request** you find the charge yourself, in the company’s own app or on a page that you already use, and pay it there. In **Fake payment link** the charge arrives in a message, and the page to pay on is behind a link in that message. Did the charge come to me in a message with a link to pay on, or can I find it myself in the company’s own app or on a page that I already use?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If she typed in the council’s address from her old permit and found the same fee there, it would be **Real payment request**.
 - Taught on: “A small charge you do not owe, paid through a link” (one tap opens the card).
 
@@ -4899,14 +4899,14 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **Fake payment link**.” What does it ask you to do with the money? **Pay on a page reached from a link in the message.** He is told to pay on a page that he reaches through a link in the text: “Pay at courier-address.example”. Arriving in a thread with real messages does not make the link his own.
   - Why not **Real payment request**: The thread looks like the courier’s, but a message can be made to appear there. The charge is not in the courier’s own app, which he already had.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What is it asking you to do right now? **Pay or send money.** “Pay at courier-address.example” asks him to pay, and nothing earlier in the key’s list is asked, so the answer is **“Pay or send money”**.
+  - What is it asking you to do right now? **Pay or send money.** “Pay at courier-address.example” asks him to pay, and nothing earlier in the list is asked, so the answer is **“Pay or send money”**.
   - What does the request say the money is for? **Something you are buying, selling or booking.** The charge is part of a delivery that he is waiting for: “Your parcel needs a £1.80 address fee”.
   - If you chose **Pay what you agreed or owe, to details that pass the check**: The thread looks like the courier’s, but a message can be made to appear there. The charge is not in the courier’s own app, which he already had.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Real payment request**, the look-alike card’s lines follow: Both are a small charge on something that you are waiting for or already pay for, from a company that you deal with, and both can lead to a payment page. In **Real payment request** you find the charge yourself, in the company’s own app or on a page that you already use, and pay it there. In **Fake payment link** the charge arrives in a message, and the page to pay on is behind a link in that message. Did the charge come to me in a message with a link to pay on, or can I find it myself in the company’s own app or on a page that I already use?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *The agency rent reminder*, which was **Real payment request**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *The agency rent reminder*, which was **Real payment request**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If the £1.80 were shown in the courier’s own app, he could pay it there, and it would be **Real payment request**.
 - Taught on: “A small charge you do not owe, paid through a link” (one tap opens the card).
 
@@ -4921,13 +4921,13 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **Fake official scam**.” What does it ask you to do with the money? **Pay at once, in a way that cannot be undone, and tell no one.** He is to pay today, by a transfer that cannot be undone, and to tell no one: “pay a £2,000 bond today by transfer to the account I give you, and tell no one”. Nothing more specific shows.
   - Why not **Fake payment link**: No link and no payment page are involved. He is told to transfer money to an account that the caller gives, and to say nothing.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What is it asking you to do right now? **Pay or send money.** “pay a £2,000 bond today by transfer to the account I give you” asks him to pay, and nothing earlier in the key’s list is asked, so the answer is **“Pay or send money”**.
+  - What is it asking you to do right now? **Pay or send money.** “pay a £2,000 bond today by transfer to the account I give you” asks him to pay, and nothing earlier in the list is asked, so the answer is **“Pay or send money”**.
   - What does the request say the money is for? **A fine, a tax, or keeping your money safe.** The caller claims to be from an agency, and the reason is a danger to Gabe: “A parcel in your name was seized at the airport, with illegal goods inside”.
   - If you chose **Pay on a page reached from a link in the message**: No link and no payment page are involved. He is told to transfer money to an account that the caller gives, and to say nothing.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Fake payment link**, the look-alike card’s lines follow: Both can come from someone who says that they are an official, with a fine or a debt, a deadline and a threat. In **Fake payment link** the request is to pay on a page that you reach through a link in the message, and a hurry or a threat does not change that. In **Fake official scam** nothing more specific shows: you are told to pay at once, in a way that cannot be undone, and to tell no one. Am I told to pay on a page that I reach through a link, or told to pay at once in a way that cannot be undone, with nothing more specific?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If a letter had asked him to attend an interview in a month, and said nothing about money, it would ask for nothing at all.
 - Taught on: “A threat from an official or your bank, paid off at once and in secret” (one tap opens the card).
 
@@ -4942,13 +4942,13 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **Fake official scam**.” What does it ask you to do with the money? **Pay at once, in a way that cannot be undone, and tell no one.** She is to pay today, by a transfer that cannot be undone, and to tell no one: “if you pay today by bank transfer to the account I give you. Do not discuss it with anyone”. Nothing more specific shows.
   - Why not **Real payment request**: A real fine would arrive in writing, give her time and a way to appeal, and let her pay on the authority’s own site.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What is it asking you to do right now? **Pay or send money.** “if you pay today by bank transfer to the account I give you” asks her to pay, and nothing earlier in the key’s list is asked, so the answer is **“Pay or send money”**.
+  - What is it asking you to do right now? **Pay or send money.** “if you pay today by bank transfer to the account I give you” asks her to pay, and nothing earlier in the list is asked, so the answer is **“Pay or send money”**.
   - What does the request say the money is for? **A fine, a tax, or keeping your money safe.** The caller claims to be an officer, and the reason is a fine: “A camera caught your car at 92 in a 60 zone”.
   - If you chose **Pay what you agreed or owe, to details that pass the check**: A real fine would arrive in writing, give her time and a way to appeal, and let her pay on the authority’s own site.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Real payment request**, the look-alike card’s lines follow: Both are about a fine, a tax or a debt that is said to be owed to an official body or to your bank, and both can come with a real-looking reference. In **Real payment request** you are given time and a way to appeal, you can look the amount up yourself, and you are asked to pay in an ordinary way. In **Fake official scam** you are told to pay at once, in a way that cannot be undone, and to say nothing. Am I being hurried and kept quiet, or given time and something that I can look up for myself?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If a letter had given her 28 days and she found the same £250 on the authority’s site, at an address that she typed in, it would be **Real payment request**.
 - Taught on: “A threat from an official or your bank, paid off at once and in secret” (one tap opens the card).
 
@@ -4963,13 +4963,13 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **Fake official scam**.” What does it ask you to do with the money? **Pay at once, in a way that cannot be undone, and tell no one.** She is to pay at once, in gift cards, which cannot be undone, and to tell no one: “Pay £300 now with gift cards to settle it, and do not tell anyone”. Nothing more specific shows.
   - Why not **Fake payment link**: No link and no payment page are involved. She is told to pay in gift cards, at once, and to say nothing.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What is it asking you to do right now? **Pay or send money.** “Pay £300 now with gift cards to settle it” asks her to pay, and nothing earlier in the key’s list is asked, so the answer is **“Pay or send money”**.
+  - What is it asking you to do right now? **Pay or send money.** “Pay £300 now with gift cards to settle it” asks her to pay, and nothing earlier in the list is asked, so the answer is **“Pay or send money”**.
   - What does the request say the money is for? **A fine, a tax, or keeping your money safe.** The caller claims to be from an office, and the reason is a fine: “Your licence has lapsed, and a fine of £600 will be added today”.
   - If you chose **Pay on a page reached from a link in the message**: No link and no payment page are involved. She is told to pay in gift cards, at once, and to say nothing.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Fake payment link**, the look-alike card’s lines follow: Both can come from someone who says that they are an official, with a fine or a debt, a deadline and a threat. In **Fake payment link** the request is to pay on a page that you reach through a link in the message, and a hurry or a threat does not change that. In **Fake official scam** nothing more specific shows: you are told to pay at once, in a way that cannot be undone, and to tell no one. Am I told to pay on a page that I reach through a link, or told to pay at once in a way that cannot be undone, with nothing more specific?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If a letter had told her that the licence was due, and she found the same amount in her own account on the office’s website, it would be **Real payment request**.
 - Taught on: “A threat from an official or your bank, paid off at once and in secret” (one tap opens the card).
 
@@ -4984,14 +4984,14 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **Fake official scam**.” What does it ask you to do with the money? **Pay at once, in a way that cannot be undone, and tell no one.** He is to pay at once, in a gift card, which cannot be undone, and to tell no one: “Pay now by gift card, and do not tell the post office staff, or the fine will double”. The number came with the letter, so ringing it checked nothing, and the crest proves nothing either.
   - Why not **Real payment request**: The letter looks like a real one, but a real fine does not ask for gift cards or tell him to hide the payment from the post office. The number came with the letter.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What is it asking you to do right now? **Pay or send money.** “Pay now by gift card” asks him to pay, and nothing earlier in the key’s list is asked, so the answer is **“Pay or send money”**.
+  - What is it asking you to do right now? **Pay or send money.** “Pay now by gift card” asks him to pay, and nothing earlier in the list is asked, so the answer is **“Pay or send money”**.
   - What does the request say the money is for? **A fine, a tax, or keeping your money safe.** The reason is a fine from an official body: “a fine of £180 is due”.
   - If you chose **Pay what you agreed or owe, to details that pass the check**: The letter looks like a real one, but a real fine does not ask for gift cards or tell him to hide the payment from the post office. The number came with the letter.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Real payment request**, the look-alike card’s lines follow: Both are about a fine, a tax or a debt that is said to be owed to an official body or to your bank, and both can come with a real-looking reference. In **Real payment request** you are given time and a way to appeal, you can look the amount up yourself, and you are asked to pay in an ordinary way. In **Fake official scam** you are told to pay at once, in a way that cannot be undone, and to say nothing. Am I being hurried and kept quiet, or given time and something that I can look up for myself?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *The council parking letter*, which was **Real payment request**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *The council parking letter*, which was **Real payment request**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If he had phoned the authority on a number from his own earlier paperwork, and been told that the fine was real and could be paid on its site, it would be **Real payment request**.
 - Taught on: “A threat from an official or your bank, paid off at once and in secret” (one tap opens the card).
 
@@ -5006,13 +5006,13 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **Overpayment scam**.” What does it ask you to do with the money? **Send back money they say they paid you by mistake.** The client has paid more than the price and asks her to send the extra to someone else: “My dad paid by mistake. Please send £500 to the bride's cousin, who is organising the cars”.
   - Why not **Real payment request**: The amount that reached Lea is not the price, and she is asked to send some of it on to a third person.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What is it asking you to do right now? **Pay or send money.** “Please send £500 to the bride's cousin” asks her to send money, and nothing earlier in the key’s list is asked, so the answer is **“Pay or send money”**.
+  - What is it asking you to do right now? **Pay or send money.** “Please send £500 to the bride's cousin” asks her to send money, and nothing earlier in the list is asked, so the answer is **“Pay or send money”**.
   - What does the request say the money is for? **Something you are buying, selling or booking.** The money is part of a job that she has quoted for: “Lea, a photographer, quotes £450 for a wedding”.
   - If you chose **Pay what you agreed or owe, to details that pass the check**: The amount that reached Lea is not the price, and she is asked to send some of it on to a third person.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Real payment request**, the look-alike card’s lines follow: Both are part of a deal that you are in, at a price that was agreed, between two people who found each other through an advert or an app. In **Real payment request** the amount is the one that was agreed, and the money moves in the way the deal began. In **Overpayment scam** a payment arrives that is more than the price, and you are asked to send some of it back or on. Is the amount the one that was agreed, or am I being asked to send some of a payment back or on to someone else?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the client had paid exactly £450 and asked for nothing back, there would be no request at all.
 - Taught on: “A buyer who pays too much and wants the difference” (one tap opens the card).
 
@@ -5027,13 +5027,13 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **Overpayment scam**.” What does it ask you to do with the money? **Send back money they say they paid you by mistake.** The student has paid more than was owed and asks him to send the difference to an agent’s account: “My mum paid too much by mistake. Please send £600 back to my agent's account”.
   - Why not **Real payment request**: The amount that reached Tom is not what was agreed, and he is asked to send some of it to a third party.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What is it asking you to do right now? **Pay or send money.** “Please send £600 back to my agent's account” asks him to send money, and nothing earlier in the key’s list is asked, so the answer is **“Pay or send money”**.
+  - What is it asking you to do right now? **Pay or send money.** “Please send £600 back to my agent's account” asks him to send money, and nothing earlier in the list is asked, so the answer is **“Pay or send money”**.
   - What does the request say the money is for? **Something you are buying, selling or booking.** The money is part of a rental that he is arranging: “Tom rents out a room for £600 a month”.
   - If you chose **Pay what you agreed or owe, to details that pass the check**: The amount that reached Tom is not what was agreed, and he is asked to send some of it to a third party.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Real payment request**, the look-alike card’s lines follow: Both are part of a deal that you are in, at a price that was agreed, between two people who found each other through an advert or an app. In **Real payment request** the amount is the one that was agreed, and the money moves in the way the deal began. In **Overpayment scam** a payment arrives that is more than the price, and you are asked to send some of it back or on. Is the amount the one that was agreed, or am I being asked to send some of a payment back or on to someone else?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the student had paid £1,200 and asked for nothing back, there would be no request at all.
 - Taught on: “A buyer who pays too much and wants the difference” (one tap opens the card).
 
@@ -5048,13 +5048,13 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **Overpayment scam**.” What does it ask you to do with the money? **Send back money they say they paid you by mistake.** The client has paid more than the fee and asks her to send the extra to a supplier’s account: “Sorry, finance sent the wrong figure. Please send £1,000 to our supplier's account”.
   - Why not **Fake payment link**: No link and no payment page are involved. Money has reached Raya first, and she is asked to send some of it on.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What is it asking you to do right now? **Pay or send money.** “Please send £1,000 to our supplier's account” asks her to send money, and nothing earlier in the key’s list is asked, so the answer is **“Pay or send money”**.
+  - What is it asking you to do right now? **Pay or send money.** “Please send £1,000 to our supplier's account” asks her to send money, and nothing earlier in the list is asked, so the answer is **“Pay or send money”**.
   - What does the request say the money is for? **Something you are buying, selling or booking.** The money is part of a job that she has agreed a fee for: “Raya, a freelance web developer, agrees a fee of £800 for a website”.
   - If you chose **Pay on a page reached from a link in the message**: No link and no payment page are involved. Money has reached Raya first, and she is asked to send some of it on.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Fake payment link**, the look-alike card’s lines follow: Both are about something that you are buying or selling or waiting to have delivered, and both can arrive as a message. In **Overpayment scam** money has already reached you, and you are asked to send some of it on. In **Fake payment link** no money has reached you, and you are asked to pay on a page that you reach through a link. Has money reached me first, so that I am asked to send some of it back, or am I asked to pay on a page that I reach through a link?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the client’s bank had reversed the extra and asked her for nothing, there would be no request at all.
 - Taught on: “A buyer who pays too much and wants the difference” (one tap opens the card).
 
@@ -5069,14 +5069,14 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **Overpayment scam**.” What does it ask you to do with the money? **Send back money they say they paid you by mistake.** The buyer says that he has paid too much, though nothing has reached Josh yet, and asks him to send the extra back: “I paid too much. Please send the £350 back to the account on the screenshot”. Someone who seems to have paid more than they owe is enough.
   - Why not **Real payment request**: The amount that is claimed is not the agreed price, and Josh is asked to send money out before anything has reached him.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What is it asking you to do right now? **Pay or send money.** “Please send the £350 back to the account on the screenshot” asks him to send money, and nothing earlier in the key’s list is asked, so the answer is **“Pay or send money”**.
+  - What is it asking you to do right now? **Pay or send money.** “Please send the £350 back to the account on the screenshot” asks him to send money, and nothing earlier in the list is asked, so the answer is **“Pay or send money”**.
   - What does the request say the money is for? **Something you are buying, selling or booking.** The money is part of a sale that he is making: “Josh sells his drone for £350”.
   - If you chose **Pay what you agreed or owe, to details that pass the check**: The amount that is claimed is not the agreed price, and Josh is asked to send money out before anything has reached him.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Real payment request**, the look-alike card’s lines follow: Both are part of a deal that you are in, at a price that was agreed, between two people who found each other through an advert or an app. In **Real payment request** the amount is the one that was agreed, and the money moves in the way the deal began. In **Overpayment scam** a payment arrives that is more than the price, and you are asked to send some of it back or on. Is the amount the one that was agreed, or am I being asked to send some of a payment back or on to someone else?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *The draw nobody entered*, which was **Advance-fee scam**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *The draw nobody entered*, which was **Advance-fee scam**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If the buyer had paid the £350 into his account and he had checked that it had cleared, there would be nothing to send back.
 - Taught on: “A buyer who pays too much and wants the difference” (one tap opens the card).
 

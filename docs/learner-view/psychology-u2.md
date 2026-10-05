@@ -1,15 +1,15 @@
 # Learner view: Psychology, Unit Two: One person’s reasoning
 
-*Five things a person’s reasoning can be doing, and how to tell which one you are looking at.* Unit revision 2, built to lesson standard 1, status: draft.
+*Five things a person’s reasoning can be doing, and how to tell which one you are looking at.* Unit revision 3, built to lesson standard 1, status: draft.
 
 This file is generated from the data files by `tools/render-learner-view.mjs`. It shows every screen in the order a learner meets it. In the app one card is on screen at a time and the learner moves on when ready.
 
-- **Bold text in quotation marks** is the key’s own wording, printed from `key.js`. Bold names are the outcome names from the same file. Neither is typed anywhere else. "What you must be able to point to" lines and "How to tell them apart" lines are also printed from one place each (the key and the look-alike ledger).
+- **Bold text in quotation marks** is the subject’s own wording for its questions and answers, written once and printed everywhere. Bold names are the names, written once in the same place. Neither is typed anywhere else. "What you must be able to point to" lines and "How to tell them apart" lines are also printed from one place each (the subject’s questions and the pairs it compares).
 - ⟦Double brackets⟧ show the words the app marks in a case (one highlight style everywhere).
 - The line in italics under each heading is the app’s top bar. The line in square brackets after it is for reviewers and is not shown to the learner.
 - Headings, prompt wording and stage instructions that are the same in every unit are the app’s wording, not this unit’s.
 - "Shown as soon as you …" is what appears the moment the learner answers. Nothing is hidden behind a second tap the first time a case is met, or after a miss.
-- After every answer the app shows, in this order: the right answer in the key’s words; the reason, quoting the marked words; for a name, why the nearest wrong name fails; after a miss, a line about the answer the learner chose; and last a link to the card that taught it. Where a line about the learner’s own choice is not written for the case, the app builds it from the key, and this file says so in place of repeating it.
+- After every answer the app shows, in this order: the right answer; the reason, quoting the marked words; for a name, why the nearest wrong name fails; after a miss, a line about the answer the learner chose; and last a link to the card that taught it. Where a line about the learner’s own choice is not written for the case, the app builds it from the answers’ own wording, and this file says so in place of repeating it.
 
 ---
 
@@ -17,7 +17,7 @@ This file is generated from the data files by `tools/render-learner-view.mjs`. I
 
 ### 1. Reasoning that protects, and reasoning that goes where the facts point
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 1 of 38*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 1 of 38*
 
 [reviewers only: card kind `orient`, id `orient`]
 
@@ -27,18 +27,18 @@ You already know the raw material. Think of the last time you heard one of these
 
 Each of these can be the sound of one of five different things. In four of them, the reasoning bends to protect something the person did, spent or believes. In the fifth, the reasoning is working as it should. A sentence on its own is never enough to say which one you are hearing. This unit teaches what else you need to see in the case, and the question to ask once you have seen it, which is different for each of the five.
 
-**What Unit One taught, in one place.** The key’s first question is **“What kind of thing is this?”** Its answers:
+**What Unit One taught, in one place.** The first question is **“What kind of thing is this?”** Its answers:
 
 - **“One person’s reasoning”**: give this answer when the case shows how one person reaches, defends or changes a view or a choice of their own. **This unit is about these cases.**
 - **“Something one person does to another”**: give this answer when the case shows one person saying or doing something to another person, and it is about that person or about what has happened between the two of them.
 - **“A lasting way someone is”**: give this answer when the case shows how a person is across years, places and relationships.
 - **“A passing moment”**: give this answer when the case shows how a person feels or acts on one occasion or for one short stretch, often after something has happened to them, and it shows nothing else (no reasons for a view or a choice, nothing said or done to another person about them, and nothing across years).
 
-Unit One also taught that two things are marked separately: the name you give a case, and your route to it, meaning the answers you gave to the key’s questions on the way.
+Two things are marked separately: the name you give a case, and your answers to the questions on the way to it.
 
 *(One tap on any of these lines opens the card in Unit One that taught it.)*
 
-**The part of the key this unit teaches.** This is a preview. You are not expected to follow it yet: every line is explained on the cards that come next. The question and its answers are in the key’s own words. Beside each answer, in plain words, is the thing it leads to. There are five of them, and each gets its name when it is taught.
+**The questions this unit teaches.** This is a preview. You are not expected to follow it yet: every line is explained on the cards that come next. The question and its answers are worded exactly as you will meet them. Beside each answer, in plain words, is the thing it leads to. There are five of them, and each gets its name when it is taught.
 
 What does the reasoning do?
 - Adds a reason why what they did is fine after all → an excuse added after the act
@@ -59,14 +59,14 @@ The unit has four parts, and you can stop after any of them.
 
 1. Reasoning about something the person did or spent
 2. Reasoning about evidence
-3. Reasoning that goes where the facts point, and the key’s question
+3. Reasoning that goes where the facts point, and the question
 4. Two whole cases, then the drill
 
 Each name is taught through cases first. After every step you answer one question about a new case, and the answer and the reason are shown straight away. Nothing here is graded. A miss only decides what comes back.
 
 ### 2. The jolt when what you do does not fit what you believe
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 2 of 38*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 2 of 38*
 
 [reviewers only: card kind `term`, id `term-cd`]
 
@@ -89,7 +89,7 @@ There is also a third way, and it changes nothing real: giving a reason why the 
 
 ### 3. An excuse added after the act
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 3 of 38*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 3 of 38*
 
 [reviewers only: card kind `meet`, id `meet-dissonance`]
 
@@ -112,9 +112,9 @@ The excuse works. The discomfort goes, and nothing real has changed: she ate the
 
 **What you must be able to point to.** Something the person did that does not fit what they believe or have said, and a reason they give afterwards for why it is fine or does not count. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What does the reasoning do?”**
+**The question:** **“What does the reasoning do?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“Adds a reason why what they did is fine after all”**
+**Its answer for a case like this one:** **“Adds a reason why what they did is fine after all”**
 
 The name for this is **Cognitive dissonance reduction**. You have met *cognitive dissonance*, the discomfort. "Reduction" means making something smaller. The name is for making the discomfort smaller by adding a reason, without changing what caused it.
 
@@ -122,7 +122,7 @@ You may also hear this called “rationalising” or “making excuses”. Those
 
 ### 4. Cognitive dissonance reduction: the same thing in a different story
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 4 of 38*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 4 of 38*
 
 [reviewers only: card kind `again`, id `again-dissonance`]
 
@@ -155,7 +155,7 @@ The two stories share nothing else. So this is not about food or about driving. 
 
 ### 5. The story never decides the answer
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 5 of 38*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 5 of 38*
 
 [reviewers only: card kind `lens`, id `lens`]
 
@@ -167,13 +167,13 @@ The five names belong to the layer underneath. The same story can carry any of t
 
 From here on, the cases change their stories on purpose. Sometimes two cases will share a story and differ only underneath. When that happens, the shared story is there to show you that it tells you nothing.
 
-**Stays the same from case to case:** what the person’s reasoning does, which is what the key asks about: **“What does the reasoning do?”**
+**Stays the same from case to case:** what the person’s reasoning does, which is what the question asks about: **“What does the reasoning do?”**
 
 **Changes on purpose:** the topic; the people; how much is at stake; whether you like the person; where the person ends up.
 
 ### 6. Cognitive dissonance reduction: what it is like
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 6 of 38*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 6 of 38*
 
 [reviewers only: card kind `portrait`, id `portrait-dissonance`]
 
@@ -203,7 +203,7 @@ You will also hear it in your own head, usually the morning after: the gym sessi
 
 ### 7. A question about a new case
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 7 of 38*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 7 of 38*
 
 [reviewers only: card kind `check`, id `check-dissonance`]
 
@@ -218,7 +218,7 @@ The pieces you can tap:
 
 **Shown as soon as you tap**
 
-- If you are right: “Right: ‘One order makes no difference to anyone’.” These words come after the order was placed. They say the order is fine, and nothing else changes: Priya has still ordered from the giant retailer, and she still says she believes in local shops. The key’s answer for this case is **“Adds a reason why what they did is fine after all”**, and the name is **Cognitive dissonance reduction**.
+- If you are right: “Right: ‘One order makes no difference to anyone’.” These words come after the order was placed. They say the order is fine, and nothing else changes: Priya has still ordered from the giant retailer, and she still says she believes in local shops. The answer for this case is **“Adds a reason why what they did is fine after all”**, and the name is **Cognitive dissonance reduction**.
 - If you miss: “The words are ‘One order makes no difference to anyone’.” The same reason follows, and then a line about the piece you tapped:
   - “Priya believes in buying from local shops and often says so”: That is what she believes. It was there before the order.
   - “she ordered a week of groceries from a giant online retailer”: That is what she did. The reason comes after it.
@@ -226,7 +226,7 @@ The pieces you can tap:
 
 ### 8. A wrong idea about the phrase cognitive dissonance
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 8 of 38*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 8 of 38*
 
 [reviewers only: card kind `refute`, id `refute-mismatch`]
 
@@ -247,7 +247,7 @@ So when someone’s words and actions do not fit, you have seen the conditions a
 
 ### 9. Carrying on because of what is already spent
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 9 of 38*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 9 of 38*
 
 [reviewers only: card kind `meet`, id `meet-sunkcost`]
 
@@ -270,9 +270,9 @@ So the only thing their choice can change is what happens next: whether another 
 
 **What you must be able to point to.** Something already spent that cannot be got back, a next step still to be decided, and what is already spent given as the reason to take it. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What does the reasoning do?”**
+**The question:** **“What does the reasoning do?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“Gives what is already spent as the reason to keep going”**
+**Its answer for a case like this one:** **“Gives what is already spent as the reason to keep going”**
 
 The name for this is **Sunk cost fallacy**. The name is built from two phrases. A "sunk cost" is money, time or effort that is already spent and cannot be got back. A "fallacy" is a mistake in reasoning that feels like a sound argument. This one feels very sound, because nobody likes waste.
 
@@ -280,7 +280,7 @@ You may also hear this called “throwing good money after bad” or “escalati
 
 ### 10. Sunk cost fallacy: the same thing in a different story
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 10 of 38*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 10 of 38*
 
 [reviewers only: card kind `again`, id `again-sunkcost`]
 
@@ -313,7 +313,7 @@ What is spent can be money, time or effort. It makes no difference which. That i
 
 ### 11. Sunk cost fallacy: what it is like
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 11 of 38*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 11 of 38*
 
 [reviewers only: card kind `portrait`, id `portrait-sunkcost`]
 
@@ -343,13 +343,13 @@ In your own life it tends to gather around things you no longer enjoy but have p
 
 ### 12. A question about a new case
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 12 of 38*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 12 of 38*
 
 [reviewers only: card kind `check`, id `check-sunkcost`]
 
 > Omar has paid for a year of evening classes in accounting. By the third month he knows he dislikes the subject and will never use it. 'I've paid for the whole year,' he says, 'so I'm going to every single class.'
 
-**The key asks:** **“What does the reasoning do?”** Which of the answers you have met so far fits this case?
+**The question:** **“What does the reasoning do?”** Which of the answers you have met so far fits this case?
 
 - Adds a reason why what they did is fine after all
 - Gives what is already spent as the reason to keep going
@@ -363,7 +363,7 @@ In your own life it tends to gather around things you no longer enjoy but have p
 
 ### 13. A wrong idea: "if I stop now, everything I put in is wasted"
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 13 of 38*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 13 of 38*
 
 [reviewers only: card kind `refute`, id `refute-waste`]
 
@@ -382,7 +382,7 @@ The only thing still in your hands is what you spend next. So the useful questio
 
 ### 14. Cognitive dissonance reduction or Sunk cost fallacy: telling them apart
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 14 of 38*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 14 of 38*
 
 [reviewers only: card kind `lookalike`, id `look-dissonance-sunkcost`]
 
@@ -404,15 +404,15 @@ You have met both names on their own. They are easy to mix up, because both look
 
 **Why this one and not the other**
 
-In Case A the £80 is spent, and there is a next step to decide: go out with a fever, or stay in. The reason Rosa gives for going is the £80. The key’s answer is **“Gives what is already spent as the reason to keep going”**, and the case is **Sunk cost fallacy**.
+In Case A the £80 is spent, and there is a next step to decide: go out with a fever, or stay in. The reason Rosa gives for going is the £80. The answer is **“Gives what is already spent as the reason to keep going”**, and the case is **Sunk cost fallacy**.
 
-In Case B Rosa has done something she said she would never do: she paid a reseller. The reason she gives ("a once-in-a-lifetime show") is not a reason for any next step. It says the purchase is fine. The key’s answer is **“Adds a reason why what they did is fine after all”**, and the case is **Cognitive dissonance reduction**.
+In Case B Rosa has done something she said she would never do: she paid a reseller. The reason she gives ("a once-in-a-lifetime show") is not a reason for any next step. It says the purchase is fine. The answer is **“Adds a reason why what they did is fine after all”**, and the case is **Cognitive dissonance reduction**.
 
 **How to tell them apart**
 
 Read the reason the person gives. Does it say that something they did is fine or does not count? Or does it point at what is already spent and offer that as the reason for the next step?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Cognitive dissonance reduction | Sunk cost fallacy |
 |---|---|---|
@@ -429,7 +429,7 @@ Read the reason the person gives. Does it say that something they did is fine or
 
 ### 15. A harder test for unwelcome evidence
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 15 of 38*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 15 of 38*
 
 [reviewers only: card kind `meet`, id `meet-confbias`]
 
@@ -454,15 +454,15 @@ Notice what Greg is not doing. He has not set out to find anything. The neighbou
 
 **What you must be able to point to.** A view the person already holds, evidence for it and evidence against it, and a harder test for the evidence against it than the evidence for it ever got. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What does the reasoning do?”**
+**The question:** **“What does the reasoning do?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“Tests evidence against their view harder than evidence for it”**
+**Its answer for a case like this one:** **“Tests evidence against their view harder than evidence for it”**
 
 The name for this is **Confirmation bias**: a lean towards whatever confirms what you already think.
 
 ### 16. Confirmation bias: the same thing in a different story
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 16 of 38*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 16 of 38*
 
 [reviewers only: card kind `again`, id `again-confbias`]
 
@@ -497,7 +497,7 @@ The test may even be a fair one. What is wrong is that only one side has to sit 
 
 ### 17. Confirmation bias: what it is like
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 17 of 38*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 17 of 38*
 
 [reviewers only: card kind `portrait`, id `portrait-confbias`]
 
@@ -527,13 +527,13 @@ In your own life it is easiest to catch in what you pass on to friends: the arti
 
 ### 18. A question about a new case
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 18 of 38*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 18 of 38*
 
 [reviewers only: card kind `check`, id `check-confbias`]
 
 > Helen believes that people who work from home do less. When a home worker finishes a report early, she says he must have had an easy week. When a home worker misses a deadline, she says, 'See? This is what I mean.'
 
-**The key asks:** **“What does the reasoning do?”** Which of the answers you have met so far fits this case?
+**The question:** **“What does the reasoning do?”** Which of the answers you have met so far fits this case?
 
 - Adds a reason why what they did is fine after all
 - Gives what is already spent as the reason to keep going
@@ -549,7 +549,7 @@ In your own life it is easiest to catch in what you pass on to friends: the arti
 
 ### 19. The answer first, the search afterwards
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 19 of 38*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 19 of 38*
 
 [reviewers only: card kind `meet`, id `meet-motivated`]
 
@@ -575,15 +575,15 @@ So put this to a case like Carol’s. Did the person set out on a search to sett
 
 **What you must be able to point to.** A search the person set out on to settle a choice or a question, an answer chosen before that search began, and a search that collects only support for it. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What does the reasoning do?”**
+**The question:** **“What does the reasoning do?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“Chooses the answer first, then searches for support”**
+**Its answer for a case like this one:** **“Chooses the answer first, then searches for support”**
 
 The name for this is **Motivated reasoning**. "Motivated" because what steers the reasoning is a motive, something the person wants, and not the evidence.
 
 ### 20. Motivated reasoning: the same thing in a different story
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 20 of 38*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 20 of 38*
 
 [reviewers only: card kind `again`, id `again-motivated`]
 
@@ -618,7 +618,7 @@ Ines calls her search "research", and Carol’s was a round of interviews. Readi
 
 ### 21. Motivated reasoning: what it is like
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 21 of 38*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 21 of 38*
 
 [reviewers only: card kind `portrait`, id `portrait-motivated`]
 
@@ -647,13 +647,13 @@ In your own life, look at the evening before a purchase you have already set you
 
 ### 22. A question about a new case
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 22 of 38*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 22 of 38*
 
 [reviewers only: card kind `check`, id `check-motivated`]
 
 > Before the family meeting about where to go on holiday, Raj has made up his mind: Portugal. At the meeting he reads out the weather forecast for Portugal and the best review of the villa he likes. He leaves in his bag the price comparison the family asked him to bring.
 
-**The key asks:** **“What does the reasoning do?”** Which of the answers you have met so far fits this case?
+**The question:** **“What does the reasoning do?”** Which of the answers you have met so far fits this case?
 
 - Adds a reason why what they did is fine after all
 - Gives what is already spent as the reason to keep going
@@ -671,7 +671,7 @@ In your own life, look at the evening before a purchase you have already set you
 
 ### 23. Confirmation bias or Motivated reasoning: telling them apart
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 23 of 38*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 23 of 38*
 
 [reviewers only: card kind `lookalike`, id `look-confbias-motivated`]
 
@@ -693,15 +693,15 @@ These two are the hardest pair in the unit. In both, a person is harder on evide
 
 **Why this one and not the other**
 
-In Case A Sam sets out to settle a choice: which firm to hire. He "gets quotes", which is a search. And you can see the order: he chose his cousin’s firm on Friday, and the search came on Saturday. It was never going to change anything: one question each, and a fault noted in each rival. The key’s answer is **“Chooses the answer first, then searches for support”**, and the case is **Motivated reasoning**.
+In Case A Sam sets out to settle a choice: which firm to hire. He "gets quotes", which is a search. And you can see the order: he chose his cousin’s firm on Friday, and the search came on Saturday. It was never going to change anything: one question each, and a fault noted in each rival. The answer is **“Chooses the answer first, then searches for support”**, and the case is **Motivated reasoning**.
 
-In Case B Sam is not choosing anything and has not set out to find anything. He has held a view for years, and events come along. The same event, finishing a month late, counts as normal for a small builder and as proof against a big one. The key’s answer is **“Tests evidence against their view harder than evidence for it”**, and the case is **Confirmation bias**.
+In Case B Sam is not choosing anything and has not set out to find anything. He has held a view for years, and events come along. The same event, finishing a month late, counts as normal for a small builder and as proof against a big one. The answer is **“Tests evidence against their view harder than evidence for it”**, and the case is **Confirmation bias**.
 
 **How to tell them apart**
 
 Did the person set out on a search to settle something? If they did, can you point to the answer being chosen before the search began?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Confirmation bias | Motivated reasoning |
 |---|---|---|
@@ -712,7 +712,7 @@ Did the person set out on a search to settle something? If they did, can you poi
 
 ### 24. When a case shows both
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 24 of 38*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 24 of 38*
 
 [reviewers only: card kind `exception`, id `exc-both`]
 
@@ -743,14 +743,14 @@ The case shows something that happened before any evidence was handled: the answ
 
 Did the person set out on a search to settle something? If they did, can you point to the answer being chosen before the search began?
 
-When a case shows both **“Tests evidence against their view harder than evidence for it”** and an answer chosen before a search began, the key’s answer is **“Chooses the answer first, then searches for support”**.
+When a case shows both **“Tests evidence against their view harder than evidence for it”** and an answer chosen before a search began, the answer is **“Chooses the answer first, then searches for support”**.
 
-The key decides it this way on purpose, and it is worth knowing that this is the key’s decision. In life the two overlap, and people who study them do not all draw the line in the same place. The key gives each case one name, by the earliest thing you can point to, so that two people using it reach the same answer and can each say why.
+The answer is chosen this way on purpose, and it is worth knowing that the choice is made in advance, for every case alike. In life the two overlap, and people who study them do not all draw the line in the same place. Each case gets one name, by the earliest thing you can point to, so that two people using these questions reach the same answer and can each say why.
 
 
 ### 25. One man, one habit, two names
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 25 of 38*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 25 of 38*
 
 [reviewers only: card kind `lookalike`, id `look-dissonance-confbias`]
 
@@ -772,17 +772,17 @@ The first part of this unit was about reasoning about something the person did o
 
 **Why this one and not the other**
 
-In Case A nobody has put any evidence in front of Vic. He is explaining something he does, and he gives a reason why it is fine after all: the stress. The key’s answer is **“Adds a reason why what they did is fine after all”**, and the case is **Cognitive dissonance reduction**.
+In Case A nobody has put any evidence in front of Vic. He is explaining something he does, and he gives a reason why it is fine after all: the stress. The answer is **“Adds a reason why what they did is fine after all”**, and the case is **Cognitive dissonance reduction**.
 
-In Case B there is evidence in the case, a study against smoking and a story for it, and Vic is judging both. The study is asked who paid for it. The story about one grandfather is asked nothing. The key’s answer is **“Tests evidence against their view harder than evidence for it”**, and the case is **Confirmation bias**.
+In Case B there is evidence in the case, a study against smoking and a story for it, and Vic is judging both. The study is asked who paid for it. The story about one grandfather is asked nothing. The answer is **“Tests evidence against their view harder than evidence for it”**, and the case is **Confirmation bias**.
 
-So the same person, defending the same habit, can do two different things in one week. The key does not name the person. It names what the reasoning in front of you does. Seeing what the reasoning is about, something the person did or evidence about what is true, is a quick first step: it tells you which answers are worth considering.
+So the same person, defending the same habit, can do two different things in one week. Nothing names the person. The name goes to what the reasoning in front of you does. Seeing what the reasoning is about, something the person did or evidence about what is true, is a quick first step: it tells you which answers are worth considering.
 
 **How to tell them apart**
 
 Is the person explaining something they did, or testing evidence about what is true?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Cognitive dissonance reduction | Confirmation bias |
 |---|---|---|
@@ -791,15 +791,15 @@ Is the person explaining something they did, or testing evidence about what is t
 | What you must be able to point to | Something the person did that does not fit what they believe or have said, and a reason they give afterwards for why it is fine or does not count | A view the person already holds, evidence for it and evidence against it, and a harder test for the evidence against it than the evidence for it ever got |
 
 
-*End of part 2. You can stop here; your place is kept. Next: part 3, Reasoning that goes where the facts point, and the key’s question.*
+*End of part 2. You can stop here; your place is kept. Next: part 3, Reasoning that goes where the facts point, and the question.*
 
 ---
 
-## Part 3 of 4: Reasoning that goes where the facts point, and the key’s question
+## Part 3 of 4: Reasoning that goes where the facts point, and the question
 
 ### 26. The same test for every fact, and the view goes where the facts point
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 26 of 38*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 26 of 38*
 
 [reviewers only: card kind `meet`, id `meet-fair`]
 
@@ -824,17 +824,17 @@ In Ben’s case the facts pointed away from his view, so it changed. That is the
 
 **What you must be able to point to.** Facts about the matter, the same test for them whichever way they point, and a view or plan that ends up where they point, whether that means changing it or keeping it. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What does the reasoning do?”**
+**The question:** **“What does the reasoning do?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“Gives every fact the same test, and goes where the facts point”**
+**Its answer for a case like this one:** **“Gives every fact the same test, and goes where the facts point”**
 
-The name for this is **Fair reasoning**. It is the one name in this unit that is not a fault. The key includes it so that you can say "nothing is wrong here" as exactly as you can say what is wrong elsewhere.
+The name for this is **Fair reasoning**. It is the one name in this unit that is not a fault. It is there so that you can say "nothing is wrong here" as exactly as you can say what is wrong elsewhere.
 
 You may also hear this called “keeping an open mind”. That means the same thing here, and from now on this unit uses one name: **Fair reasoning**.
 
 ### 27. Fair reasoning: the same thing in a different story
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 27 of 38*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 27 of 38*
 
 [reviewers only: card kind `again`, id `again-fair`]
 
@@ -869,7 +869,7 @@ So **Fair reasoning** is not the same thing as changing your mind. A view that i
 
 ### 28. Fair reasoning: what it is like
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 28 of 38*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 28 of 38*
 
 [reviewers only: card kind `portrait`, id `portrait-fair`]
 
@@ -902,13 +902,13 @@ In your own life, think of the last time you said "I was wrong" and meant it, an
 
 ### 29. A question about a new case
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 29 of 38*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 29 of 38*
 
 [reviewers only: card kind `check`, id `check-fair`]
 
 > Farah told her book club for a month that her favourite author's new novel would be a masterpiece. She read it over the weekend. 'It's a mess,' she told them on Monday. 'I was wrong about this one.'
 
-**The key asks:** **“What does the reasoning do?”** Which of the answers you have met so far fits this case?
+**The question:** **“What does the reasoning do?”** Which of the answers you have met so far fits this case?
 
 - Adds a reason why what they did is fine after all
 - Gives what is already spent as the reason to keep going
@@ -928,7 +928,7 @@ In your own life, think of the last time you said "I was wrong" and meant it, an
 
 ### 30. Confirmation bias or Fair reasoning: telling them apart
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 30 of 38*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 30 of 38*
 
 [reviewers only: card kind `lookalike`, id `look-confbias-fair`]
 
@@ -950,9 +950,9 @@ These two start from the same place: a person with a view meets evidence against
 
 **Why this one and not the other**
 
-In Case A Luis does test the figures: he checks how they were counted. That is a fair test, the kind he would want for any figures, and when they pass, his view goes where they point. The key’s answer is **“Gives every fact the same test, and goes where the facts point”**, and the case is **Fair reasoning**.
+In Case A Luis does test the figures: he checks how they were counted. That is a fair test, the kind he would want for any figures, and when they pass, his view goes where they point. The answer is **“Gives every fact the same test, and goes where the facts point”**, and the case is **Fair reasoning**.
 
-In Case B he sets a test too: one quarter is not enough. But two weeks earlier one missed deadline was enough. How much evidence counts changes with the side the evidence is on. The key’s answer is **“Tests evidence against their view harder than evidence for it”**, and the case is **Confirmation bias**.
+In Case B he sets a test too: one quarter is not enough. But two weeks earlier one missed deadline was enough. How much evidence counts changes with the side the evidence is on. The answer is **“Tests evidence against their view harder than evidence for it”**, and the case is **Confirmation bias**.
 
 So the difference is not whether the person questions evidence they do not like. Luis questions it in both cases. It is whether the same questions were put to the evidence on his own side.
 
@@ -960,7 +960,7 @@ So the difference is not whether the person questions evidence they do not like.
 
 Were the questions put to the evidence against the view also put to the evidence for it?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Confirmation bias | Fair reasoning |
 |---|---|---|
@@ -971,7 +971,7 @@ Were the questions put to the evidence against the view also put to the evidence
 
 ### 31. Sunk cost fallacy or Fair reasoning: telling them apart
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 31 of 38*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 31 of 38*
 
 [reviewers only: card kind `lookalike`, id `look-sunkcost-fair`]
 
@@ -993,9 +993,9 @@ The picture of **Sunk cost fallacy** said that carrying on is not the fallacy. H
 
 **Why this one and not the other**
 
-In Case A the reason Mei gives is the year and the savings already spent. She says nothing about what next year would bring, and the case tells you the stall has lost money every month. The key’s answer is **“Gives what is already spent as the reason to keep going”**, and the case is **Sunk cost fallacy**.
+In Case A the reason Mei gives is the year and the savings already spent. She says nothing about what next year would bring, and the case tells you the stall has lost money every month. The answer is **“Gives what is already spent as the reason to keep going”**, and the case is **Sunk cost fallacy**.
 
-In Case B Mei looks at next year: what it costs, and what the last ten weeks say it will bring. Those are facts about the matter, and her plan goes where they point. The year already spent does not appear in her reason at all. The key’s answer is **“Gives every fact the same test, and goes where the facts point”**, and the case is **Fair reasoning**.
+In Case B Mei looks at next year: what it costs, and what the last ten weeks say it will bring. Those are facts about the matter, and her plan goes where they point. The year already spent does not appear in her reason at all. The answer is **“Gives every fact the same test, and goes where the facts point”**, and the case is **Fair reasoning**.
 
 The choice is the same in both cases. Only the reason differs. That is why you can never name a case from what the person decided.
 
@@ -1003,7 +1003,7 @@ The choice is the same in both cases. Only the reason differs. That is why you c
 
 Is the reason for the next step about what is already spent, or about what the next step would cost and bring?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Sunk cost fallacy | Fair reasoning |
 |---|---|---|
@@ -1014,7 +1014,7 @@ Is the reason for the next step about what is already spent, or about what the n
 
 ### 32. A change of view that is not Fair reasoning
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 32 of 38*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 32 of 38*
 
 [reviewers only: card kind `exception`, id `exc-convert`]
 
@@ -1051,7 +1051,7 @@ So this is the first name in the unit again: something the person did that does 
 
 What came between the old view and the new one: a new fact about the matter, or only something the person did?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Cognitive dissonance reduction | Fair reasoning |
 |---|---|---|
@@ -1062,17 +1062,17 @@ What came between the old view and the new one: a new fact about the matter, or 
 
 ### 33. The question you have been answering all along
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 33 of 38*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 33 of 38*
 
 [reviewers only: card kind `question`, id `q-does`]
 
-Since the fish-stock sauce you have seen the key’s question at the foot of each new name, with one answer under it. This card puts the question and its five answers in one place, as the key shows them, and says why the key asks it.
+Since the fish-stock sauce you have seen the question at the foot of each new name, with one answer under it. This card puts the question and its five answers in one place, and says why it is asked.
 
-**The key asks:** **“What does the reasoning do?”**
+**The question:** **“What does the reasoning do?”**
 
 **What it is for.** Tells apart four ways reasoning protects what suits the person, and the one way it goes where the facts point.
 
-**Its answers, exactly as the key shows them**
+**Its answers**
 
 Each answer leads to one name, and so rules out the other four.
 
@@ -1096,7 +1096,7 @@ Each answer leads to one name, and so rules out the other four.
 
 The five names are defined by what the reasoning does. They are not defined by who is reasoning, by the topic, or by where the person ends up.
 
-So two people can reach the same conclusion on the same matter and get different names. For one of them the key’s answer is **“Chooses the answer first, then searches for support”**; for the other it is **“Gives every fact the same test, and goes where the facts point”**. Nothing about the topic, the person or the conclusion tells them apart. Only what the reasoning did tells them apart.
+So two people can reach the same conclusion on the same matter and get different names. For one of them the answer is **“Chooses the answer first, then searches for support”**; for the other it is **“Gives every fact the same test, and goes where the facts point”**. Nothing about the topic, the person or the conclusion tells them apart. Only what the reasoning did tells them apart.
 
 **How to answer it from a case**
 
@@ -1111,7 +1111,7 @@ Evidence can be in a case without the person’s reasoning ever touching it. In 
 Sometimes two answers both seem to fit. Each pair below has been set side by side earlier in this unit, and each has one question that separates it.
 
 - Cognitive dissonance reduction or Sunk cost fallacy: Read the reason the person gives. Does it say that something they did is fine or does not count? Or does it point at what is already spent and offer that as the reason for the next step?
-- Confirmation bias or Motivated reasoning: Did the person set out on a search to settle something? If they did, can you point to the answer being chosen before the search began? When a case shows both **“Tests evidence against their view harder than evidence for it”** and an answer chosen before a search began, the key’s answer is **“Chooses the answer first, then searches for support”**.
+- Confirmation bias or Motivated reasoning: Did the person set out on a search to settle something? If they did, can you point to the answer being chosen before the search began? When a case shows both **“Tests evidence against their view harder than evidence for it”** and an answer chosen before a search began, the answer is **“Chooses the answer first, then searches for support”**.
 - Cognitive dissonance reduction or Confirmation bias: Is the person explaining something they did, or testing evidence about what is true?
 - Confirmation bias or Fair reasoning: Were the questions put to the evidence against the view also put to the evidence for it?
 - Sunk cost fallacy or Fair reasoning: Is the reason for the next step about what is already spent, or about what the next step would cost and bring?
@@ -1129,13 +1129,13 @@ Sometimes two answers both seem to fit. Each pair below has been set side by sid
 
 ### 34. A question about a new case
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 34 of 38*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 34 of 38*
 
 [reviewers only: card kind `check`, id `check-does`]
 
 > A city council has spent £2 million on plans for a tram line. A new estimate shows the line would cost four times the original figure and carry half the passengers. 'We cannot walk away from two million pounds of work,' the council leader says, and she approves the next stage.
 
-**The key asks:** **“What does the reasoning do?”**
+**The question:** **“What does the reasoning do?”**
 
 - Adds a reason why what they did is fine after all
 - Gives what is already spent as the reason to keep going
@@ -1161,11 +1161,11 @@ Sometimes two answers both seem to fit. Each pair below has been set side by sid
 
 ### 35. A whole case, from the first question to the name
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 35 of 38*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 35 of 38*
 
 [reviewers only: card kind `worked`, id `worked-longrun`]
 
-You have the five names and the key’s question about them. Before you run a case yourself, watch two being run from the top, in the order the key asks. You are not asked anything until the end of each.
+You have the five names and the question about them. Before you run a case yourself, watch two being run from the top, in the order the questions are asked. You are not asked anything until the end of each.
 
 *The missed long run*
 
@@ -1211,17 +1211,17 @@ Still possible: **Cognitive dissonance reduction**. Ruled out: **Sunk cost falla
 
 For **Sunk cost fallacy** you must be able to point to this: something already spent that cannot be got back, a next step still to be decided, and what is already spent given as the reason to take it. Noor is not deciding any next step. The run is already missed. Her eight months appear inside the excuse, to make one Sunday look small. They are not something she refuses to waste.
 
-It is the question from Rosa’s two concert tickets. Read the reason the person gives. Does it say that something they did is fine or does not count? Or does it point at what is already spent and offer that as the reason for the next step? Here the reason says that something she did is fine, so the key’s answer is **“Adds a reason why what they did is fine after all”**.
+It is the question from Rosa’s two concert tickets. Read the reason the person gives. Does it say that something they did is fine or does not count? Or does it point at what is already spent and offer that as the reason for the next step? Here the reason says that something she did is fine, so the answer is **“Adds a reason why what they did is fine after all”**.
 
 **Does it look like a case you know?**
 
-The key has given its answer. Now take a second look of a different kind: does this case look like one you know? It should bring back the fish-stock sauce: something done that does not fit what the person says about herself, and a reason afterwards for why it hardly counts.
+You have the answer. Now take a second look of a different kind: does this case look like one you know? It should bring back the fish-stock sauce: something done that does not fit what the person says about herself, and a reason afterwards for why it hardly counts.
 
-Here the key and the likeness agree, so the answer stands. The key’s question comes first, because it makes you point at words in the case. The likeness is only a second look. When the two disagree, do not pick the one you prefer. Go back to the key’s question and find the words in the case that answer it. The second whole case shows how.
+Here the answer and the likeness agree, so the answer stands. The question comes first, because it makes you point at words in the case. The likeness is only a second look. When the two disagree, do not pick the one you prefer. Go back to the question and find the words in the case that answer it. The second whole case shows how.
 
 ### 36. A second whole case, where the story points the wrong way
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 36 of 38*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 36 of 38*
 
 [reviewers only: card kind `worked`, id `worked-tasting`]
 
@@ -1269,22 +1269,22 @@ Still possible: **Motivated reasoning**. Ruled out: **Cognitive dissonance reduc
 
 **Why this is Motivated reasoning and not Confirmation bias**
 
-Writing down the compliments and not the complaints is a harder test for one side, and on its own that would point to **Confirmation bias**. But the case shows something earlier: Grace set out on a search, and the answer was chosen a month before it began. When a case shows both, the key’s answer is **“Chooses the answer first, then searches for support”**.
+Writing down the compliments and not the complaints is a harder test for one side, and on its own that would point to **Confirmation bias**. But the case shows something earlier: Grace set out on a search, and the answer was chosen a month before it began. When a case shows both, the answer is **“Chooses the answer first, then searches for support”**.
 
 **Confirmation bias** is for cases with no search that the person set out on: only a view already held, and a harder test for the evidence against it as it turns up.
 
 **Does it look like a case you know?**
 
-Now the second look: does this case look like one you know? Notes that leave out every complaint may bring back Greg and the one-way system first, and Greg’s case was **Confirmation bias**. So here the likeness and the key seem to disagree.
+Now the second look: does this case look like one you know? Notes that leave out every complaint may bring back Greg and the one-way system first, and Greg’s case was **Confirmation bias**. So here the likeness and the answer seem to disagree.
 
-When that happens, go back to the key’s question and find the words in the case that answer it. They are “In March she decided to switch” and “In April she held a tasting”. Greg’s case has nothing like them: he never set out to settle anything. Carol’s interviews do: she chose first, then ran a search and wrote down what fitted. So the case this one really looks like is Carol’s, and the key’s answer stands.
+When that happens, go back to the question and find the words in the case that answer it. They are “In March she decided to switch” and “In April she held a tasting”. Greg’s case has nothing like them: he never set out to settle anything. Carol’s interviews do: she chose first, then ran a search and wrote down what fitted. So the case this one really looks like is Carol’s, and the answer stands.
 
 ### The drill
 
 The cards are out of view from here, and every case is new. The drill has five stages. Cases that are easy to mix up are placed next to each other on purpose. This is meant to feel harder than the questions between the cards: telling look-alikes apart side by side is what makes the difference stick. Two of the cases come from an earlier unit, without being labelled. Nothing here is graded. A miss only decides what comes back. What you miss is asked again before the drill ends, and every name comes back on later days with a new case.
 
 
-#### Stage 1 of 5. The key’s answers are shown for each case. Give the name that goes with them. This stage practises one thing: which name goes with which answer.
+#### Stage 1 of 5. The answers are shown for each case. Give the name that goes with them. This stage practises one thing: which name goes with which answer.
 
 The names offered are the five this unit teaches: Cognitive dissonance reduction / Sunk cost fallacy / Confirmation bias / Motivated reasoning / Fair reasoning.
 
@@ -1304,7 +1304,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Sunk cost fallacy**: Nothing already spent is being given as the reason for a next step.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Sunk cost fallacy**, the look-alike card’s lines follow: Both look back at something the person has already done or spent. **Cognitive dissonance reduction** gives a reason why something the person did is fine. **Sunk cost fallacy** gives what is already spent as the reason to take the next step. Read the reason the person gives. Does it say that something they did is fine or does not count? Or does it point at what is already spent and offer that as the reason for the next step?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “An excuse added after the act” (one tap opens the card).
 
 **Drill item 2 of 34**
@@ -1323,7 +1323,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Cognitive dissonance reduction**: She is not giving a reason why something she did is fine. There is a next step to decide, buying more wool, and the hours already spent are her reason for taking it.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Cognitive dissonance reduction**, the look-alike card’s lines follow: Both look back at something the person has already done or spent. **Cognitive dissonance reduction** gives a reason why something the person did is fine. **Sunk cost fallacy** gives what is already spent as the reason to take the next step. Read the reason the person gives. Does it say that something they did is fine or does not count? Or does it point at what is already spent and offer that as the reason for the next step?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “Carrying on because of what is already spent” (one tap opens the card).
 
 **Drill item 3 of 34**
@@ -1342,7 +1342,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Confirmation bias**: No evidence against his view turns up and gets a harder test. He set out on a search, and the answer was chosen before it began.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Confirmation bias**, the look-alike card’s lines follow: In both, the person is harder on evidence they do not like, and ends where they began. In **Motivated reasoning** the person set out on a search to settle a choice or a question, and the answer was chosen before the search began. In **Confirmation bias** nobody set out to search: evidence turns up, and the evidence against the view gets a harder test than the evidence for it. Did the person set out on a search to settle something? If they did, can you point to the answer being chosen before the search began?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “The answer first, the search afterwards” (one tap opens the card).
 
 **Drill item 4 of 34**
@@ -1361,7 +1361,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Motivated reasoning**: Yusuf did not set out on a search to settle anything, and no answer was chosen before one. He has a view, and evidence turns up.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Motivated reasoning**, the look-alike card’s lines follow: In both, the person is harder on evidence they do not like, and ends where they began. In **Motivated reasoning** the person set out on a search to settle a choice or a question, and the answer was chosen before the search began. In **Confirmation bias** nobody set out to search: evidence turns up, and the evidence against the view gets a harder test than the evidence for it. Did the person set out on a search to settle something? If they did, can you point to the answer being chosen before the search began?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “A harder test for unwelcome evidence” (one tap opens the card).
 
 **Drill item 5 of 34**
@@ -1380,7 +1380,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Confirmation bias**: **Confirmation bias** would have Kemi finding fault with the results because they went against her. She gave them no harder test than results she liked would have got.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Confirmation bias**, the look-alike card’s lines follow: Both start with a view and evidence against it. In **Fair reasoning** the evidence against the view gets the same test that evidence for it would get, and the view goes where the evidence points. In **Confirmation bias** the evidence against the view gets a harder test than the evidence for it ever got, and the view stays. Were the questions put to the evidence against the view also put to the evidence for it?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “The same test for every fact, and the view goes where the facts point” (one tap opens the card).
 
 #### Stage 2 of 5. One question at a time.
@@ -1402,7 +1402,7 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **Gives what is already spent as the reason to keep going.**” Her reason for staying is “We've waited this long”: the forty minutes. The meal still to come, which is what the choice is about, is not in her reasoning. This answer leads to **Sunk cost fallacy**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **Adds a reason why what they did is fine after all**: She is not giving a reason why something she did is fine. A next step is still to be decided, stay or cross the road, and the time already spent is her reason.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 7 of 34**
@@ -1422,7 +1422,7 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **Adds a reason why what they did is fine after all.**” “I earned that one” is a reason given after the shower. It says the shower is fine, and nothing else changes: he will go on lecturing his housemates about water. This answer leads to **Cognitive dissonance reduction**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **Gives what is already spent as the reason to keep going**: The shower is over. Nothing already spent is being given as the reason for a next step.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 8 of 34**
@@ -1442,7 +1442,7 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **Tests evidence against their view harder than evidence for it.**” A colleague's one late bus, which is evidence for her view, went straight in: 'See?' The month's record, which is evidence against it, is thrown out: “Those records are worthless”. One side gets a harder test. This answer leads to **Confirmation bias**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **Adds a reason why what they did is fine after all**: There is nothing she did that she is giving a reason for. Her reasoning is about a record.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 9 of 34**
@@ -1462,7 +1462,7 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **Adds a reason why what they did is fine after all.**” Dev did something that does not fit what he said for a year: he signed up. “It's different when it's for charity” is a reason given afterwards for why that is fine. This answer leads to **Cognitive dissonance reduction**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **Gives every fact the same test, and goes where the facts point**: His view of the challenge has changed, but no new fact about it arrived. The only thing that came between the old view and the new one is that he signed up.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 10 of 34**
@@ -1476,7 +1476,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Shown as soon as you answer**
 
-- The answer is: “Did the person set out on a search to settle something? If they did, can you point to the answer being chosen before the search began?” In both, the person is harder on evidence they do not like, and ends where they began. In **Motivated reasoning** the person set out on a search to settle a choice or a question, and the answer was chosen before the search began. In **Confirmation bias** nobody set out to search: evidence turns up, and the evidence against the view gets a harder test than the evidence for it. When a case shows both **“Tests evidence against their view harder than evidence for it”** and an answer chosen before a search began, the key’s answer is **“Chooses the answer first, then searches for support”**.
+- The answer is: “Did the person set out on a search to settle something? If they did, can you point to the answer being chosen before the search began?” In both, the person is harder on evidence they do not like, and ends where they began. In **Motivated reasoning** the person set out on a search to settle a choice or a question, and the answer was chosen before the search began. In **Confirmation bias** nobody set out to search: evidence turns up, and the evidence against the view gets a harder test than the evidence for it. When a case shows both **“Tests evidence against their view harder than evidence for it”** and an answer chosen before a search began, the answer is **“Chooses the answer first, then searches for support”**.
 - If you chose “Is the person explaining something they did, or testing evidence about what is true?”: that question separates **Cognitive dissonance reduction** and **Confirmation bias**.
 - If you chose “Were the questions put to the evidence against the view also put to the evidence for it?”: that question separates **Confirmation bias** and **Fair reasoning**.
 - If you chose “Could the search have come out the other way, and would the person have gone with it?”: that question separates **Motivated reasoning** and **Fair reasoning**.
@@ -1604,12 +1604,12 @@ Shown to you, with the words that decide each answer marked:
 **Shown as soon as you answer**
 
 - If you are right: “Right: **Something one person does to another.**” One person is saying something to another, about her and about what has passed between them: “he tells her it never happened and that her memory is going”. The case also shows where it leaves Zoe: writing conversations down to check herself.
-- If you miss: “The answer is …”, the same reason, and then the line built from the key for the answer you chose.
-- Then, right or wrong: “This case leaves the part of the key you have been taught. The questions that follow this answer come in a part of the course you have not reached, so the case stops here.”
+- If you miss: “The answer is …”, the same reason, and then the line built from the answers’ own wording for the answer you chose.
+- Then, right or wrong: “The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.”
 
-#### Stage 3 of 5. The first answer is shown. Answer the rest, then give the name. From here on your route is marked as well as the name: a right name reached by a wrong answer on the way counts as a miss.
+#### Stage 3 of 5. The first answer is shown. Answer the rest, then give the name. From here on your answers on the way are marked as well as the name: a right name reached by a wrong answer counts as a miss.
 
-Each question is shown with all of its answers from the key, in the key’s order, and the names offered are the five this unit teaches.
+Each question is shown with all of its answers, in order, and the names offered are the five this unit teaches.
 
 **Drill item 18 of 34**
 
@@ -1626,10 +1626,10 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Motivated reasoning**: Lin has not set out on a search to settle anything, and no answer was chosen before one. She has a view already, and results turn up day by day.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - If you chose **Chooses the answer first, then searches for support**: Lin has not set out on a search to settle anything, and no answer was chosen before one. She has a view already, and results turn up day by day.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Motivated reasoning**, the look-alike card’s lines follow: In both, the person is harder on evidence they do not like, and ends where they began. In **Motivated reasoning** the person set out on a search to settle a choice or a question, and the answer was chosen before the search began. In **Confirmation bias** nobody set out to search: evidence turns up, and the evidence against the view gets a harder test than the evidence for it. Did the person set out on a search to settle something? If they did, can you point to the answer being chosen before the search began?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A harder test for unwelcome evidence” (one tap opens the card).
 
 **Drill item 19 of 34**
@@ -1647,15 +1647,15 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Confirmation bias**: No evidence against her view turns up and gets a harder test. She chose first, and then set up a search that could not go against her.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - If you chose **Tests evidence against their view harder than evidence for it**: No evidence against her view turns up and gets a harder test. She chose first, and then set up a search that could not go against her.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Confirmation bias**, the look-alike card’s lines follow: In both, the person is harder on evidence they do not like, and ends where they began. In **Motivated reasoning** the person set out on a search to settle a choice or a question, and the answer was chosen before the search began. In **Confirmation bias** nobody set out to search: evidence turns up, and the evidence against the view gets a harder test than the evidence for it. Did the person set out on a search to settle something? If they did, can you point to the answer being chosen before the search began?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “The answer first, the search afterwards” (one tap opens the card).
 
-#### Stage 4 of 5. No help. Answer every question in the key’s order, then give the name.
+#### Stage 4 of 5. No help. Answer every question in order, then give the name.
 
-Each question is shown with all of its answers from the key, in the key’s order, and the names offered are the five this unit teaches.
+Each question is shown with all of its answers, in order, and the names offered are the five this unit teaches.
 
 **Drill item 20 of 34**
 
@@ -1670,10 +1670,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **One person’s reasoning.** One person is giving his reason for a choice of his own: “the owner says, and he hires another developer”.
   - If you chose **Gives every fact the same test, and goes where the facts point**: **Fair reasoning** would have him going where the cost comparison points. It is in the case, and his reasoning never touches it.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Fair reasoning**, the look-alike card’s lines follow: Both face a choice about something that has already cost a lot, and both can end with the person carrying on. In **Sunk cost fallacy** the reason given for the next step is what is already spent. In **Fair reasoning** the reason given is what the next step would cost and what it would bring. Is the reason for the next step about what is already spent, or about what the next step would cost and bring?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Carrying on because of what is already spent” (one tap opens the card).
 
 **Drill item 21 of 34**
@@ -1689,10 +1689,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **One person’s reasoning.** One person is reaching a choice of his own about his own project: “he sold it as a project to someone with a workshop”.
   - If you chose **Gives what is already spent as the reason to keep going**: **Sunk cost fallacy** would have Stefan saying he cannot stop after two years. His reason is about the parts still to buy, not the time already spent.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Sunk cost fallacy**, the look-alike card’s lines follow: Both face a choice about something that has already cost a lot, and both can end with the person carrying on. In **Sunk cost fallacy** the reason given for the next step is what is already spent. In **Fair reasoning** the reason given is what the next step would cost and what it would bring. Is the reason for the next step about what is already spent, or about what the next step would cost and bring?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “The same test for every fact, and the view goes where the facts point” (one tap opens the card).
 
 **Drill item 22 of 34**
@@ -1708,10 +1708,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **One person’s reasoning.** One person is defending something he did himself: “he told his wife in the car afterwards”. It is his own account of his own act.
   - If you chose **Gives what is already spent as the reason to keep going**: There is no next step to decide and nothing already spent. He is giving a reason why something he did is fine.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Sunk cost fallacy**, the look-alike card’s lines follow: Both look back at something the person has already done or spent. **Cognitive dissonance reduction** gives a reason why something the person did is fine. **Sunk cost fallacy** gives what is already spent as the reason to take the next step. Read the reason the person gives. Does it say that something they did is fine or does not count? Or does it point at what is already spent and offer that as the reason for the next step?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “An excuse added after the act” (one tap opens the card).
 
 **Drill item 23 of 34**
@@ -1727,10 +1727,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **One person’s reasoning.** One person is defending a view of her own: “Dawn is sure her daughter's school is the best in town”.
   - If you chose **Chooses the answer first, then searches for support**: Dawn has not set out on a search to settle a choice. League tables turn up each year, and she treats the two differently.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Motivated reasoning**, the look-alike card’s lines follow: In both, the person is harder on evidence they do not like, and ends where they began. In **Motivated reasoning** the person set out on a search to settle a choice or a question, and the answer was chosen before the search began. In **Confirmation bias** nobody set out to search: evidence turns up, and the evidence against the view gets a harder test than the evidence for it. Did the person set out on a search to settle something? If they did, can you point to the answer being chosen before the search began?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A harder test for unwelcome evidence” (one tap opens the card).
 
 **Drill item 24 of 34**
@@ -1745,11 +1745,11 @@ Each question is shown with all of its answers from the key, in the key’s orde
   - Why not **Confirmation bias**: He is harder on the other two flats, which would fit **Confirmation bias**. But he set out on a search, and the answer was chosen before it began. When a case shows both, that decides it.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **One person’s reasoning.** One person is telling how he reached a choice of his own: “the one by the park is the best”.
-  - If you chose **Tests evidence against their view harder than evidence for it**: You chose **Tests evidence against their view harder than evidence for it**. This case does show that. It also shows an answer chosen before a search began, and when a case shows both, the key’s answer is **Chooses the answer first, then searches for support**.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose **Tests evidence against their view harder than evidence for it**: You chose **Tests evidence against their view harder than evidence for it**. This case does show that. It also shows an answer chosen before a search began, and when a case shows both, the answer is **Chooses the answer first, then searches for support**.
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Confirmation bias**, the look-alike card’s lines follow: In both, the person is harder on evidence they do not like, and ends where they began. In **Motivated reasoning** the person set out on a search to settle a choice or a question, and the answer was chosen before the search began. In **Confirmation bias** nobody set out to search: evidence turns up, and the evidence against the view gets a harder test than the evidence for it. Did the person set out on a search to settle something? If they did, can you point to the answer being chosen before the search began?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “The answer first, the search afterwards” (one tap opens the card).
 
 **Drill item 25 of 34**
@@ -1765,10 +1765,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **One person’s reasoning.** One person is reaching a choice of her own, starting from a view of her own: “She has always thought it was fine”.
   - If you chose **Tests evidence against their view harder than evidence for it**: She kept her view, which is what **Confirmation bias** can look like. But she did not give the evidence against it a harder test. She went and got the evidence herself, and it supported her.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Confirmation bias**, the look-alike card’s lines follow: Both start with a view and evidence against it. In **Fair reasoning** the evidence against the view gets the same test that evidence for it would get, and the view goes where the evidence points. In **Confirmation bias** the evidence against the view gets a harder test than the evidence for it ever got, and the view stays. Were the questions put to the evidence against the view also put to the evidence for it?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “The same test for every fact, and the view goes where the facts point” (one tap opens the card).
 
 **Drill item 26 of 34**
@@ -1784,10 +1784,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **One person’s reasoning.** One person is explaining a choice of her own and her view of it: “I see it differently these days”.
   - If you chose **Gives every fact the same test, and goes where the facts point**: Her view did change, which is what **Fair reasoning** can look like. But nothing came between the old view and the new one except that she hired a cleaner. No new fact about cleaners arrived.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Fair reasoning**, the look-alike card’s lines follow: In both, the person’s view can change. In **Fair reasoning** a fact about the matter came between the old view and the new one. In **Cognitive dissonance reduction** the only thing that came between them is something the person did, and the new view is the reason why it is fine. What came between the old view and the new one: a new fact about the matter, or only something the person did?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “An excuse added after the act” (one tap opens the card).
 
 **Drill item 27 of 34**
@@ -1803,11 +1803,11 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **One person’s reasoning.** One person is defending a view of his own, that his diet is a good one: “He dismisses a fourth, which goes against it”.
   - If you chose **Adds a reason why what they did is fine after all**: Arun has a year on the diet behind him, so it can look as if he is defending something he did. But he gives no reason why something he did is fine. He is judging studies, and only the one against his view gets the question about money.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Cognitive dissonance reduction**, the look-alike card’s lines follow: Both defend something the person is attached to, and the same person can do both. In **Cognitive dissonance reduction** the person gives a reason why something they did is fine, and no evidence is being tested. In **Confirmation bias** evidence for a view and evidence against it are in the case, and the evidence against it gets the harder test. Is the person explaining something they did, or testing evidence about what is true?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *Vic's two weeks*, which was **Cognitive dissonance reduction**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *Vic's two weeks*, which was **Cognitive dissonance reduction**. When a likeness and the answers disagree, go by the words that answer the question.
 - Taught on: “A harder test for unwelcome evidence” (one tap opens the card).
 
 **Drill item 28 of 34**
@@ -1822,11 +1822,11 @@ Each question is shown with all of its answers from the key, in the key’s orde
   - Why not **Confirmation bias**: She does give the unwelcome answer a harder test ("always been dramatic"), which is what you point to for **Confirmation bias**. But she set out on a search, and the answer was chosen before it began. When a case shows both, that decides it.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **One person’s reasoning.** One person is backing up a choice of her own: “she asked three friends who own dogs whether it was a good idea”.
-  - If you chose **Tests evidence against their view harder than evidence for it**: You chose **Tests evidence against their view harder than evidence for it**. This case does show that. It also shows an answer chosen before a search began, and when a case shows both, the key’s answer is **Chooses the answer first, then searches for support**.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose **Tests evidence against their view harder than evidence for it**: You chose **Tests evidence against their view harder than evidence for it**. This case does show that. It also shows an answer chosen before a search began, and when a case shows both, the answer is **Chooses the answer first, then searches for support**.
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Confirmation bias**, the look-alike card’s lines follow: In both, the person is harder on evidence they do not like, and ends where they began. In **Motivated reasoning** the person set out on a search to settle a choice or a question, and the answer was chosen before the search began. In **Confirmation bias** nobody set out to search: evidence turns up, and the evidence against the view gets a harder test than the evidence for it. Did the person set out on a search to settle something? If they did, can you point to the answer being chosen before the search began?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “The answer first, the search afterwards” (one tap opens the card).
 
 **Drill item 29 of 34**
@@ -1842,11 +1842,11 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **One person’s reasoning.** One person is reaching a choice of his own, and the case shows how he went about it. It starts from what he hoped: “Amit hoped the cheaper supplier would turn out to be good enough”.
   - If you chose **Chooses the answer first, then searches for support**: He ended up where he hoped to, which is what **Motivated reasoning** can look like. But no answer was chosen before the search began. He set the test up so that it could have come out the other way.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Motivated reasoning**, the look-alike card’s lines follow: Both can end on the answer the person hoped for. In **Motivated reasoning** the answer was chosen before the search began, so the search could not have changed it. In **Fair reasoning** the search came first and could have gone either way. Could the search have come out the other way, and would the person have gone with it?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *Grace's tasting*, which was **Motivated reasoning**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *Grace's tasting*, which was **Motivated reasoning**. When a likeness and the answers disagree, go by the words that answer the question.
 - Taught on: “The same test for every fact, and the view goes where the facts point” (one tap opens the card).
 
 **Drill item 30 of 34**
@@ -1862,11 +1862,11 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **One person’s reasoning.** One person is giving his reason for a choice of his own: “he writes in the club chat”.
   - If you chose **Adds a reason why what they did is fine after all**: Kit says one thing to his club and is about to do another, so it can look like an excuse. But his reason does not say that something he did is fine. It gives what is already spent as the reason for what he does next.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Cognitive dissonance reduction**, the look-alike card’s lines follow: Both look back at something the person has already done or spent. **Cognitive dissonance reduction** gives a reason why something the person did is fine. **Sunk cost fallacy** gives what is already spent as the reason to take the next step. Read the reason the person gives. Does it say that something they did is fine or does not count? Or does it point at what is already spent and offer that as the reason for the next step?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *The missed long run*, which was **Cognitive dissonance reduction**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *The missed long run*, which was **Cognitive dissonance reduction**. When a likeness and the answers disagree, go by the words that answer the question.
 - Taught on: “Carrying on because of what is already spent” (one tap opens the card).
 
 **Drill item 31 of 34**
@@ -1885,8 +1885,8 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - If you are right: “Right: **A lasting way someone is.**” The case is a long view of one person: “For ten years, in every job and every friendship” and “His family say he was the same at school”. Ten years, every job, every friendship and his school days, with the same thing in each.
-- If you miss: “The answer is …”, the same reason, and then the line built from the key for the answer you chose.
-- Then, right or wrong: “This case leaves the part of the key you have been taught. The questions that follow this answer come in a part of the course you have not reached, so the case stops here.”
+- If you miss: “The answer is …”, the same reason, and then the line built from the answers’ own wording for the answer you chose.
+- Then, right or wrong: “The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.”
 
 #### Last stage. Each of these is something a person might say that uses one of this unit’s names, or reasons in one of its ways. Each has a fault. The first is worked for you. For the rest, answer before the fault is shown.
 
@@ -1942,7 +1942,7 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - The answer is: **Gives what is already spent as the reason to keep going.**
-- If you chose another answer, the line is built from the key, as for any other question.
+- If you chose another answer, the line is built from the answers’ own wording, as for any other question.
 - The fault: The speaker is reasoning on her behalf, and the reason is the two years already spent. Those are spent whether she stays or leaves.
 - The claim, put right (always the last thing shown): The two years are spent whether she stays or leaves. What she can still decide is the next two, so the question is what those would cost her and what they would bring.
 
@@ -1965,17 +1965,17 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - The fault: The claim says where she ended up and what she gained. It never shows a search she set out on, or an answer chosen before one. Ending on an answer that suits you is not **Motivated reasoning**.
 - The claim, put right (always the last thing shown): She gained from the merger, which is a reason to look at how she reached her view. It is **Motivated reasoning** only if she set out to settle the question, had chosen her answer before she began, and collected only support for it.
 
-**When the drill ends.** The learner sees their own results: first-try accuracy for each stage, whole routes beside single questions, the pair of names they mixed up most often, and what will come back and when. Anything missed was asked again before the drill ended. Nothing here is graded. A miss only decides what comes back.
+**When the drill ends.** The learner sees their own results: first-try accuracy for each stage, whole cases beside single questions, the pair of names they mixed up most often, and what will come back and when. Anything missed was asked again before the drill ended. Nothing here is graded. A miss only decides what comes back.
 
 ### 37. What to carry away
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 37 of 38*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 37 of 38*
 
 [reviewers only: card kind `recap`, id `recap`]
 
-You have now run the key on your own. This card puts the unit in one place, in the key’s words.
+You have now gone from the first question to the name on your own. This card puts the unit in one place.
 
-**The key for this unit, in its own words**
+**This unit’s questions and answers**
 
 What does the reasoning do?
 - Adds a reason why what they did is fine after all → Cognitive dissonance reduction
@@ -2006,7 +2006,7 @@ What does the reasoning do?
 
 ### 38. Where would you meet this?
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 38 of 38*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 38 of 38*
 
 [reviewers only: card kind `transfer`, id `transfer`]
 
@@ -2034,7 +2034,7 @@ One line is enough. It is kept on this device only and is never marked.
 
 ## After the unit: what comes back on later days
 
-A name that is due returns as a case the learner has not seen, next to a case of the name they most often confuse it with. Each is run as a whole route. These are the fresh cases held back for that purpose: three for each name, one for each scheduled return. The first return is about two days after the drill, the next about a week after that, the next about three and a half weeks later.
+A name that is due returns as a case the learner has not seen, next to a case of the name they most often confuse it with. Each is run as a whole case: every question, then the name. These are the fresh cases held back for that purpose: three for each name, one for each scheduled return. The first return is about two days after the drill, the next about a week after that, the next about three and a half weeks later.
 
 **Return case 1 of 15**
 
@@ -2049,10 +2049,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **One person’s reasoning.** One person is defending something she did herself: “She walks into her own Monday meeting twelve minutes late”, followed by her reason for it.
   - If you chose **Tests evidence against their view harder than evidence for it**: No evidence is being tested. She is explaining her own lateness.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Confirmation bias**, the look-alike card’s lines follow: Both defend something the person is attached to, and the same person can do both. In **Cognitive dissonance reduction** the person gives a reason why something they did is fine, and no evidence is being tested. In **Confirmation bias** evidence for a view and evidence against it are in the case, and the evidence against it gets the harder test. Is the person explaining something they did, or testing evidence about what is true?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “An excuse added after the act” (one tap opens the card).
 
 **Return case 2 of 15**
@@ -2068,10 +2068,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **One person’s reasoning.** One person is defending something he did himself: “He has cancelled his own check-up three times this year”, followed by his reason for it.
   - If you chose **Gives what is already spent as the reason to keep going**: Nothing already spent is being given as the reason for a next step. He is giving a reason why something he did is fine.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Sunk cost fallacy**, the look-alike card’s lines follow: Both look back at something the person has already done or spent. **Cognitive dissonance reduction** gives a reason why something the person did is fine. **Sunk cost fallacy** gives what is already spent as the reason to take the next step. Read the reason the person gives. Does it say that something they did is fine or does not count? Or does it point at what is already spent and offer that as the reason for the next step?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “An excuse added after the act” (one tap opens the card).
 
 **Return case 3 of 15**
@@ -2087,10 +2087,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **One person’s reasoning.** One person is defending something she did herself: “she put a week of bottles and cans in the general bin”, followed by her reason for it.
   - If you chose **Gives every fact the same test, and goes where the facts point**: Nothing she believes about recycling has changed, and no new fact arrived. She is giving a reason why one week does not count.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Fair reasoning**, the look-alike card’s lines follow: In both, the person’s view can change. In **Fair reasoning** a fact about the matter came between the old view and the new one. In **Cognitive dissonance reduction** the only thing that came between them is something the person did, and the new view is the reason why it is fine. What came between the old view and the new one: a new fact about the matter, or only something the person did?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “An excuse added after the act” (one tap opens the card).
 
 **Return case 4 of 15**
@@ -2106,10 +2106,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **One person’s reasoning.** One person is giving a reason for a choice of their own: “the leader of the walking group says”.
   - If you chose **Adds a reason why what they did is fine after all**: The leader is not giving a reason why something already done is fine. The drive already made is given as the reason for the next step.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Cognitive dissonance reduction**, the look-alike card’s lines follow: Both look back at something the person has already done or spent. **Cognitive dissonance reduction** gives a reason why something the person did is fine. **Sunk cost fallacy** gives what is already spent as the reason to take the next step. Read the reason the person gives. Does it say that something they did is fine or does not count? Or does it point at what is already spent and offer that as the reason for the next step?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Carrying on because of what is already spent” (one tap opens the card).
 
 **Return case 5 of 15**
@@ -2125,10 +2125,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **One person’s reasoning.** One person is making a choice of her own and giving her reason for it: “She renews”.
   - If you chose **Adds a reason why what they did is fine after all**: She is not giving a reason why something she did is fine. She is giving money already spent as the reason to spend more.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Cognitive dissonance reduction**, the look-alike card’s lines follow: Both look back at something the person has already done or spent. **Cognitive dissonance reduction** gives a reason why something the person did is fine. **Sunk cost fallacy** gives what is already spent as the reason to take the next step. Read the reason the person gives. Does it say that something they did is fine or does not count? Or does it point at what is already spent and offer that as the reason for the next step?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Carrying on because of what is already spent” (one tap opens the card).
 
 **Return case 6 of 15**
@@ -2144,10 +2144,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **One person’s reasoning.** One person is giving a reason for a choice of their own: “the brewer says”.
   - If you chose **Gives every fact the same test, and goes where the facts point**: **Fair reasoning** would have the brewer going where the sales figures point. They are in the case, and the reasoning never touches them.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Fair reasoning**, the look-alike card’s lines follow: Both face a choice about something that has already cost a lot, and both can end with the person carrying on. In **Sunk cost fallacy** the reason given for the next step is what is already spent. In **Fair reasoning** the reason given is what the next step would cost and what it would bring. Is the reason for the next step about what is already spent, or about what the next step would cost and bring?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Carrying on because of what is already spent” (one tap opens the card).
 
 **Return case 7 of 15**
@@ -2163,10 +2163,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **One person’s reasoning.** One person is defending a view of his own: “Edu is sure his local bakery has gone downhill”.
   - If you chose **Gives every fact the same test, and goes where the facts point**: **Fair reasoning** would have the excellent loaf count as much as the dry croissant. It is explained away, and his view stays where it was.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Fair reasoning**, the look-alike card’s lines follow: Both start with a view and evidence against it. In **Fair reasoning** the evidence against the view gets the same test that evidence for it would get, and the view goes where the evidence points. In **Confirmation bias** the evidence against the view gets a harder test than the evidence for it ever got, and the view stays. Were the questions put to the evidence against the view also put to the evidence for it?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A harder test for unwelcome evidence” (one tap opens the card).
 
 **Return case 8 of 15**
@@ -2182,10 +2182,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **One person’s reasoning.** One person is defending a view of his own: “Bo has said since January”.
   - If you chose **Chooses the answer first, then searches for support**: Bo has not set out on a search to settle a choice. Complaints and figures turn up, and he treats them differently.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Motivated reasoning**, the look-alike card’s lines follow: In both, the person is harder on evidence they do not like, and ends where they began. In **Motivated reasoning** the person set out on a search to settle a choice or a question, and the answer was chosen before the search began. In **Confirmation bias** nobody set out to search: evidence turns up, and the evidence against the view gets a harder test than the evidence for it. Did the person set out on a search to settle something? If they did, can you point to the answer being chosen before the search began?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A harder test for unwelcome evidence” (one tap opens the card).
 
 **Return case 9 of 15**
@@ -2201,10 +2201,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **One person’s reasoning.** One person is defending a view of his own: he “says nothing else lasts”.
   - If you chose **Adds a reason why what they did is fine after all**: Cal is not giving a reason why something he did is fine. He is judging two reviews, and only one of them is questioned.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Cognitive dissonance reduction**, the look-alike card’s lines follow: Both defend something the person is attached to, and the same person can do both. In **Cognitive dissonance reduction** the person gives a reason why something they did is fine, and no evidence is being tested. In **Confirmation bias** evidence for a view and evidence against it are in the case, and the evidence against it gets the harder test. Is the person explaining something they did, or testing evidence about what is true?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A harder test for unwelcome evidence” (one tap opens the card).
 
 **Return case 10 of 15**
@@ -2219,11 +2219,11 @@ A name that is due returns as a case the learner has not seen, next to a case of
   - Why not **Confirmation bias**: The marking is harder on two of the three, which would fit **Confirmation bias**. But she set out on a search, and the answer was chosen before it began. When a case shows both, that decides it.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **One person’s reasoning.** One person is reaching a choice of her own and backing it up: “She then marked the applications”.
-  - If you chose **Tests evidence against their view harder than evidence for it**: You chose **Tests evidence against their view harder than evidence for it**. This case does show that. It also shows an answer chosen before a search began, and when a case shows both, the key’s answer is **Chooses the answer first, then searches for support**.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose **Tests evidence against their view harder than evidence for it**: You chose **Tests evidence against their view harder than evidence for it**. This case does show that. It also shows an answer chosen before a search began, and when a case shows both, the answer is **Chooses the answer first, then searches for support**.
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Confirmation bias**, the look-alike card’s lines follow: In both, the person is harder on evidence they do not like, and ends where they began. In **Motivated reasoning** the person set out on a search to settle a choice or a question, and the answer was chosen before the search began. In **Confirmation bias** nobody set out to search: evidence turns up, and the evidence against the view gets a harder test than the evidence for it. Did the person set out on a search to settle something? If they did, can you point to the answer being chosen before the search began?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “The answer first, the search afterwards” (one tap opens the card).
 
 **Return case 11 of 15**
@@ -2239,10 +2239,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **One person’s reasoning.** One person is telling how she reached a choice of her own: “We looked at all three properly”.
   - If you chose **Gives every fact the same test, and goes where the facts point**: **Fair reasoning** would need visits that could have changed her mind. The choice was made before the first one.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Fair reasoning**, the look-alike card’s lines follow: Both can end on the answer the person hoped for. In **Motivated reasoning** the answer was chosen before the search began, so the search could not have changed it. In **Fair reasoning** the search came first and could have gone either way. Could the search have come out the other way, and would the person have gone with it?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “The answer first, the search afterwards” (one tap opens the card).
 
 **Return case 12 of 15**
@@ -2258,10 +2258,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **One person’s reasoning.** One person is reaching a choice of his own and backing it up: “he set up a 'selection panel' and wrote its scoring sheet himself”.
   - If you chose **Tests evidence against their view harder than evidence for it**: No evidence against a view turns up here and gets a harder test. He chose first, and then built the search around the choice.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Confirmation bias**, the look-alike card’s lines follow: In both, the person is harder on evidence they do not like, and ends where they began. In **Motivated reasoning** the person set out on a search to settle a choice or a question, and the answer was chosen before the search began. In **Confirmation bias** nobody set out to search: evidence turns up, and the evidence against the view gets a harder test than the evidence for it. Did the person set out on a search to settle something? If they did, can you point to the answer being chosen before the search began?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “The answer first, the search afterwards” (one tap opens the card).
 
 **Return case 13 of 15**
@@ -2277,10 +2277,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **One person’s reasoning.** One person is changing a view of her own: “Tess had told everyone that the new ring road would be a disaster”, and the case shows what she did about it.
   - If you chose **Adds a reason why what they did is fine after all**: What came between her old view and her new one was a count of shops, not something she had done.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Cognitive dissonance reduction**, the look-alike card’s lines follow: In both, the person’s view can change. In **Fair reasoning** a fact about the matter came between the old view and the new one. In **Cognitive dissonance reduction** the only thing that came between them is something the person did, and the new view is the reason why it is fine. What came between the old view and the new one: a new fact about the matter, or only something the person did?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “The same test for every fact, and the view goes where the facts point” (one tap opens the card).
 
 **Return case 14 of 15**
@@ -2296,10 +2296,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **One person’s reasoning.** One person is reaching a choice of his own, starting from a view of his own: “Abe has always run the warehouse on fixed shifts”.
   - If you chose **Tests evidence against their view harder than evidence for it**: He kept his view, which is what **Confirmation bias** can look like. But the evidence against it got no harder test. He agreed to the comparison and would have had to live with either result.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Confirmation bias**, the look-alike card’s lines follow: Both start with a view and evidence against it. In **Fair reasoning** the evidence against the view gets the same test that evidence for it would get, and the view goes where the evidence points. In **Confirmation bias** the evidence against the view gets a harder test than the evidence for it ever got, and the view stays. Were the questions put to the evidence against the view also put to the evidence for it?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “The same test for every fact, and the view goes where the facts point” (one tap opens the card).
 
 **Return case 15 of 15**
@@ -2315,9 +2315,9 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **One person’s reasoning.** One person is reaching a choice of her own: “She sells it for parts”, and the case shows how she got there.
   - If you chose **Gives what is already spent as the reason to keep going**: **Sunk cost fallacy** would have Jen saying she cannot give up after £900. Her reason is about the repair still to pay for, not the money already spent.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Sunk cost fallacy**, the look-alike card’s lines follow: Both face a choice about something that has already cost a lot, and both can end with the person carrying on. In **Sunk cost fallacy** the reason given for the next step is what is already spent. In **Fair reasoning** the reason given is what the next step would cost and what it would bring. Is the reason for the next step about what is already spent, or about what the next step would cost and bring?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “The same test for every fact, and the view goes where the facts point” (one tap opens the card).
 

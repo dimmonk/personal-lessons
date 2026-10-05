@@ -1,15 +1,15 @@
 # Learner view: Wealth Preservation, Unit Two: Something taken out of it every year
 
-*Six things that can take money out of a person’s savings every year, how to tell which one you are looking at, and when nothing needs cutting back.* Unit revision 1, built to lesson standard 1, status: draft.
+*Six things that can take money out of a person’s savings every year, how to tell which one you are looking at, and when nothing needs cutting back.* Unit revision 2, built to lesson standard 1, status: draft.
 
 This file is generated from the data files by `tools/render-learner-view.mjs`. It shows every screen in the order a learner meets it. In the app one card is on screen at a time and the learner moves on when ready.
 
-- **Bold text in quotation marks** is the key’s own wording, printed from `key.js`. Bold names are the outcome names from the same file. Neither is typed anywhere else. "What you must be able to point to" lines and "How to tell them apart" lines are also printed from one place each (the key and the look-alike ledger).
+- **Bold text in quotation marks** is the subject’s own wording for its questions and answers, written once and printed everywhere. Bold names are the names, written once in the same place. Neither is typed anywhere else. "What you must be able to point to" lines and "How to tell them apart" lines are also printed from one place each (the subject’s questions and the pairs it compares).
 - ⟦Double brackets⟧ show the words the app marks in a case (one highlight style everywhere).
 - The line in italics under each heading is the app’s top bar. The line in square brackets after it is for reviewers and is not shown to the learner.
 - Headings, prompt wording and stage instructions that are the same in every unit are the app’s wording, not this unit’s.
 - "Shown as soon as you …" is what appears the moment the learner answers. Nothing is hidden behind a second tap the first time a case is met, or after a miss.
-- After every answer the app shows, in this order: the right answer in the key’s words; the reason, quoting the marked words; for a name, why the nearest wrong name fails; after a miss, a line about the answer the learner chose; and last a link to the card that taught it. Where a line about the learner’s own choice is not written for the case, the app builds it from the key, and this file says so in place of repeating it.
+- After every answer the app shows, in this order: the right answer; the reason, quoting the marked words; for a name, why the nearest wrong name fails; after a miss, a line about the answer the learner chose; and last a link to the card that taught it. Where a line about the learner’s own choice is not written for the case, the app builds it from the answers’ own wording, and this file says so in place of repeating it.
 
 ---
 
@@ -17,7 +17,7 @@ This file is generated from the data files by `tools/render-learner-view.mjs`. I
 
 ### 1. Before any fix: what is taking the money out?
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 1 of 43*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 1 of 43*
 
 [reviewers only: card kind `orient`, id `orient`]
 
@@ -29,7 +29,7 @@ A man reads his pension statement and finds that the fund and an adviser togethe
 
 All six are about money leaving *the pot* every year. Each has a different cause and a different fix, and one of them needs no fix at all. A fix for one does nothing for another: cheaper funds do not lower a tax bill, and a tax move does not change how much is spent. This unit teaches you to tell the six apart before you touch anything.
 
-**What Unit One taught, in one place.** The key’s first question is **“What could lose this money?”** Its answers:
+**What Unit One taught, in one place.** The first question is **“What could lose this money?”** Its answers:
 
 - **“Something taken out of it every year”**: give this answer when the case is about something taken out of the pot every year: what funds, an adviser or the firm that holds the investments charge, tax on the investments, or a sum taken out to spend. **This unit is about these cases.**
 - **“One thing most of it depends on”**: give this answer when the case is about one thing that most of the pot depends on: one company’s shares, one property or one business that makes up most of it, a claim that could reach everything the person owns, or a loan whose lender could demand the money back and force a sale.
@@ -37,11 +37,11 @@ All six are about money leaving *the pot* every year. Each has a different cause
 - **“The handover to other people”**: give this answer when the case is about what happens to the pot when its owner dies or can no longer handle it, or when it is passed to family during the owner’s life: who receives it, the tax on it, the papers that say who gets what, and how the people who receive it will behave.
 - **“Nothing in the case”**: give this answer when the case shows money being kept and none of the things the other four answers ask about: no charge, tax or spending that the case raises, nothing most of the pot depends on, no living costs or bill to pay from it soon and no mix away from its plan, and no handover in view.
 
-Unit One also taught that two things are marked separately: the name you give a case, and your route to it, meaning the answers you gave to the key’s questions on the way.
+Two things are marked separately: the name you give a case, and your answers to the questions on the way to it.
 
 *(One tap on any of these lines opens the card in Unit One that taught it.)*
 
-**The part of the key this unit teaches.** This is a preview. You are not expected to follow it yet: every line is explained on the cards that come next. The question and its answers are in the key’s own words. Beside each answer, in plain words, is the thing it leads to. There are six of them, and each gets its name when it is taught.
+**The questions this unit teaches.** This is a preview. You are not expected to follow it yet: every line is explained on the cards that come next. The question and its answers are worded exactly as you will meet them. Beside each answer, in plain words, is the thing it leads to. There are six of them, and each gets its name when it is taught.
 
 What is taking money out of it?
 - A yearly charge for picking investments → paying a lot every year for someone to pick the investments
@@ -64,14 +64,14 @@ The unit has four parts, and you can stop after any of them.
 
 1. A charge, and when paying it is right
 2. Tax
-3. A sum spent, and the key’s question
+3. A sum spent, and the question
 4. Two whole cases, then the drill
 
 Each name is taught through cases first. After every step you answer one question about a new case, and the answer and the reason are shown straight away. Nothing here is graded. A miss only decides what comes back.
 
 ### 2. Growth on growth
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 2 of 43*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 2 of 43*
 
 [reviewers only: card kind `term`, id `term-compounding`]
 
@@ -98,7 +98,7 @@ The 4% here is an example, chosen to show how the arithmetic works. It is not a 
 
 ### 3. Funds where nobody picks the investments
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 3 of 43*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 3 of 43*
 
 [reviewers only: card kind `term`, id `term-indexfund`]
 
@@ -121,7 +121,7 @@ Nothing about it is clever. It is cheap because it leaves out the one expensive 
 
 ### 4. Paying a lot every year for someone to pick the investments
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 4 of 43*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 4 of 43*
 
 [reviewers only: card kind `meet`, id `meet-feecore`]
 
@@ -148,9 +148,9 @@ That is why this is a problem to fix and not just a fact to note. The fix is to 
 
 **What you must be able to point to.** A charge taken from the pot every year for choosing investments (by fund managers, an adviser or both), far more than an index fund charges, and either nothing else in the case that the charge pays for, or other work it pays for that does not grow as the pot grows while the charge does. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What is taking money out of it?”**
+**The question:** **“What is taking money out of it?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“A yearly charge for picking investments”**
+**Its answer for a case like this one:** **“A yearly charge for picking investments”**
 
 The name for this is **Switch to index funds**. It says what to do: move the money into funds that copy a published list, so that nobody is paid to choose. Such *a fund* is *an index fund*. The name covers the problem and the way out together, and this unit uses it that way from now on.
 
@@ -158,7 +158,7 @@ You may also hear this called “a low-cost core” or “passive investing”. 
 
 ### 5. Switch to index funds: the same thing in a different story
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 5 of 43*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 5 of 43*
 
 [reviewers only: card kind `again`, id `again-feecore`]
 
@@ -191,25 +191,25 @@ The stories differ in age, in size and in who is paid. What they share is a perc
 
 ### 6. The story never decides the answer
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 6 of 43*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 6 of 43*
 
 [reviewers only: card kind `lens`, id `lens`]
 
 The last card asked you to ignore the story. That instruction holds for the whole unit, so here it is once in full.
 
-Every case in this unit has two layers. The top layer is the story: a pension, a flat, a retirement, a shop. The layer underneath is what is taking money out of *the pot* every year, and that is the only layer the key asks about.
+Every case in this unit has two layers. The top layer is the story: a pension, a flat, a retirement, a shop. The layer underneath is what is taking money out of *the pot* every year, and that is the only layer the question asks about.
 
 The six names belong to the layer underneath. A pension can carry any of them, and so can a rented flat. Size is part of the story too: a charge of £250 and a charge of £25,000 can be the same name, and a charge of £3,000 can be a problem in one case and fine in the next.
 
 Two more things change on purpose. One is who is paid: *a fund*, an adviser, the tax office, or the person themselves. The other is whether anything is wrong at all. In some cases what comes out is worth it, or already as low as it can be, and one of the six names is for those. Seeing that is part of the skill, and not looking for a problem the case does not show is part of seeing it.
 
-**Stays the same from case to case:** what is taking money out of *the pot* every year, which is what the key asks about: **“What is taking money out of it?”**
+**Stays the same from case to case:** what is taking money out of *the pot* every year, which is what the question is about: **“What is taking money out of it?”**
 
 **Changes on purpose:** the kind of account; the people; the size of the sums; who is paid; whether anything is wrong at all.
 
 ### 7. Switch to index funds: what it is like
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 7 of 43*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 7 of 43*
 
 [reviewers only: card kind `portrait`, id `portrait-feecore`]
 
@@ -247,7 +247,7 @@ Fifth, if nothing else is paid for, move the money into funds that copy a publis
 
 ### 8. A question about a new case
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 8 of 43*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 8 of 43*
 
 [reviewers only: card kind `check`, id `check-feecore`]
 
@@ -262,7 +262,7 @@ The pieces you can tap:
 
 **Shown as soon as you tap**
 
-- If you are right: “Right: ‘The bank's yearly letter says the charge is 'for selecting the investments' and lists nothing else’.” The bank's own letter says what the 1.6% pays for: “The bank's yearly letter says the charge is 'for selecting the investments' and lists nothing else”. Choosing investments is the one thing it names, and no other work is listed. It is far more than the 0.1% *a fund* that simply follows a published list charges. The key’s answer for this case is **“A yearly charge for picking investments”**, and the name is **Switch to index funds**.
+- If you are right: “Right: ‘The bank's yearly letter says the charge is 'for selecting the investments' and lists nothing else’.” The bank's own letter says what the 1.6% pays for: “The bank's yearly letter says the charge is 'for selecting the investments' and lists nothing else”. Choosing investments is the one thing it names, and no other work is listed. It is far more than the 0.1% *a fund* that simply follows a published list charges. The answer for this case is **“A yearly charge for picking investments”**, and the name is **Switch to index funds**.
 - If you miss: “The words are ‘The bank's yearly letter says the charge is 'for selecting the investments' and lists nothing else’.” The same reason follows, and then a line about the piece you tapped:
   - “Dev owns a small building firm and keeps £180,000 of his savings in a fund at his bank.”: That is what he has. It does not say what comes out of it or what that pays for.
   - “The fund's managers choose the shares, and the bank takes 1.6% of the money in it every year.”: That shows the charge is taken every year. It does not yet say what the charge pays for, and the question is about what it pays for.
@@ -270,7 +270,7 @@ The pieces you can tap:
 
 ### 9. A wrong idea: “a good adviser picks winners, so a high fee is worth it”
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 9 of 43*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 9 of 43*
 
 [reviewers only: card kind `refute`, id `refute-adviser`]
 
@@ -291,7 +291,7 @@ So when someone says a high fee is worth it because of what the adviser can pick
 
 ### 10. Two kinds of account
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 10 of 43*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 10 of 43*
 
 [reviewers only: card kind `term`, id `term-sheltered`]
 
@@ -303,7 +303,7 @@ The next name is about a cost that is already worth paying or already as low as 
 
 Leila holds the same fund in two places, and she pays different tax on it. In the pension, the law does not tax the £1,600 the fund pays out each year; it taxes what she takes out in old age. In the ordinary account, the £1,600 is taxed in full every year, and she pays 25% of it, £400. The fund, the amount and the income are the same. Only the place differs.
 
-Which accounts are taxed less, and how, differs from country to country and changes often, so the cases in this unit use a general version: a pension is the sheltered account, and an ordinary investment account is not. The key’s own name for an ordinary investment account, taxed in full, is a taxable account, and the cases may use either. The tax rate of 25% on income is an example to show how the idea works.
+Which accounts are taxed less, and how, differs from country to country and changes often, so the cases in this unit use a general version: a pension is the sheltered account, and an ordinary investment account is not. Another name for an ordinary investment account, taxed in full, is a taxable account, and the cases may use either. The tax rate of 25% on income is an example to show how the idea works.
 
 **The word for this.** *A sheltered account*: an account the law taxes less, or later, such as a pension. An ordinary investment account, taxed in full, is a taxable account.
 
@@ -314,7 +314,7 @@ Where things are held is the one thing about tax that a person controls without 
 
 ### 11. Yearly costs that are worth paying, or already as low as they can be
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 11 of 43*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 11 of 43*
 
 [reviewers only: card kind `meet`, id `meet-nocut`]
 
@@ -343,17 +343,17 @@ The line printed below names two other forms of this sound case, and here is eac
 
 **What you must be able to point to.** Something taken out of the pot every year, and the case showing it is worth it or already as low as it can be: a charge for work that would not otherwise get done, at a set price that does not grow with the pot; investments that pay out income already in the sheltered account; or spending reset each year as a share of what the pot is worth. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What is taking money out of it?”**
+**The question:** **“What is taking money out of it?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“Nothing more than it should”**
+**Its answer for a case like this one:** **“Nothing more than it should”**
 
-The name for this is **Nothing to cut back**. It is the one name in the unit that says to leave it alone, and it is a full answer. The key includes it so that you can say "nothing needs cutting back here" as exactly as you can say what is wrong elsewhere.
+The name for this is **Nothing to cut back**. It is the one name in the unit that says to leave it alone, and it is a full answer. It is there so that you can say "nothing needs cutting back here" as exactly as you can say what is wrong elsewhere.
 
 You may also hear this called “a cost worth paying”. That means the same thing here, and from now on this unit uses one name: **Nothing to cut back**.
 
 ### 12. Nothing to cut back: the same thing in a different story
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 12 of 43*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 12 of 43*
 
 [reviewers only: card kind `again`, id `again-nocut`]
 
@@ -386,7 +386,7 @@ The two stories share one thing: you can point to words that show the cost is al
 
 ### 13. Nothing to cut back: what it is like
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 13 of 43*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 13 of 43*
 
 [reviewers only: card kind `portrait`, id `portrait-nocut`]
 
@@ -424,13 +424,13 @@ Fifth, leave it alone. Doing nothing, having checked, is the answer.
 
 ### 14. A question about a new case
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 14 of 43*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 14 of 43*
 
 [reviewers only: card kind `check`, id `check-nocut`]
 
 > Omar's father has dementia and £400,000. Omar pays a specialist £4,200 a year, a flat price, to manage his father's care payments, claim the benefits he is owed and keep the legal forms in order. Omar says doing it himself would take most of his weekends. The price would be the same if the money were £800,000.
 
-**The key asks:** **“What is taking money out of it?”** Which of the answers you have met so far fits this case?
+**The question:** **“What is taking money out of it?”** Which of the answers you have met so far fits this case?
 
 - A yearly charge for picking investments
 - Nothing more than it should
@@ -444,7 +444,7 @@ Fifth, leave it alone. Doing nothing, having checked, is the answer.
 
 ### 15. Switch to index funds or Nothing to cut back: telling them apart
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 15 of 43*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 15 of 43*
 
 [reviewers only: card kind `lookalike`, id `look-feecore-nocut`]
 
@@ -466,9 +466,9 @@ The two names you have just met are easy to mix up, because in both a firm or an
 
 **Why this one and not the other**
 
-In Case A the firm takes 1% of Gwen’s £300,000 and has done nothing else since it chose her funds. The £3,000 is for choosing, and it would grow if her pot did. The key’s answer is **“A yearly charge for picking investments”**, and the case is **Switch to index funds**.
+In Case A the firm takes 1% of Gwen’s £300,000 and has done nothing else since it chose her funds. The £3,000 is for choosing, and it would grow if her pot did. The answer is **“A yearly charge for picking investments”**, and the case is **Switch to index funds**.
 
-In Case B the firm takes £3,000 from Ann too, but it is a flat price and it pays for a return, a check of her will and a plan. If the firm stopped, those would stop. The key’s answer is **“Nothing more than it should”**, and the case is **Nothing to cut back**.
+In Case B the firm takes £3,000 from Ann too, but it is a flat price and it pays for a return, a check of her will and a plan. If the firm stopped, those would stop. The answer is **“Nothing more than it should”**, and the case is **Nothing to cut back**.
 
 The size is the same, £3,000 each, and so is the firm. So neither tells you anything. Only what the money pays for, and whether the price moves with *the pot*, tells the two apart.
 
@@ -476,7 +476,7 @@ The size is the same, £3,000 each, and so is the firm. So neither tells you any
 
 If the charge stopped, what important job would stop being done? Can you point to that job in the case, and to a price that stays the same when *the pot* grows?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Switch to index funds | Nothing to cut back |
 |---|---|---|
@@ -493,7 +493,7 @@ If the charge stopped, what important job would stop being done? Can you point t
 
 ### 16. Income taxed every year because it sits in the wrong account
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 16 of 43*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 16 of 43*
 
 [reviewers only: card kind `meet`, id `meet-location`]
 
@@ -522,9 +522,9 @@ The cost of the swap is small here. Inside the pension, switching funds is usual
 
 **What you must be able to point to.** A sheltered account and a taxable account, investments that pay out income every year held in the taxable account and taxed on that income, and a sheltered account holding investments that pay out little, or with room to spare. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What is taking money out of it?”**
+**The question:** **“What is taking money out of it?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“Yearly tax on income from investments in the taxable account”**
+**Its answer for a case like this one:** **“Yearly tax on income from investments in the taxable account”**
 
 The name for this is **Right account for each investment**. It says what to do: put each investment in the account where it costs the least tax, which for an investment that pays out a lot is the sheltered account.
 
@@ -532,7 +532,7 @@ You may also hear this called “asset location”. That means the same thing he
 
 ### 17. Right account for each investment: the same thing in a different story
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 17 of 43*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 17 of 43*
 
 [reviewers only: card kind `again`, id `again-location`]
 
@@ -567,7 +567,7 @@ The funds are different kinds and the people are different ages. What they share
 
 ### 18. Right account for each investment: what it is like
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 18 of 43*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 18 of 43*
 
 [reviewers only: card kind `portrait`, id `portrait-location`]
 
@@ -605,13 +605,13 @@ Fifth, if the swap would cost a lot of tax, use new money instead: put each new 
 
 ### 19. A question about a new case
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 19 of 43*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 19 of 43*
 
 [reviewers only: card kind `check`, id `check-location`]
 
 > Femi, 39, has £60,000 in an ordinary investment account, in a fund that owns office buildings and passes the rent on to its owners. It pays out £3,600 a year, and Femi pays 25% tax on it, £900, every year. His pension, £40,000, is in a fund of shares that pays out almost nothing.
 
-**The key asks:** **“What is taking money out of it?”** Which of the answers you have met so far fits this case?
+**The question:** **“What is taking money out of it?”** Which of the answers you have met so far fits this case?
 
 - A yearly charge for picking investments
 - Nothing more than it should
@@ -627,7 +627,7 @@ Fifth, if the swap would cost a lot of tax, use new money instead: put each new 
 
 ### 20. Right account for each investment or Nothing to cut back: telling them apart
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 20 of 43*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 20 of 43*
 
 [reviewers only: card kind `lookalike`, id `look-location-nocut`]
 
@@ -649,9 +649,9 @@ The last name turned on where the income investments sit. The sound name had a f
 
 **Why this one and not the other**
 
-In Case A Ravi’s bond fund pays out £3,000 a year and sits in the ordinary account, where he pays £750 on it every year. His pension holds the fund that pays out almost nothing. The key’s answer is **“Yearly tax on income from investments in the taxable account”**, and the case is **Right account for each investment**.
+In Case A Ravi’s bond fund pays out £3,000 a year and sits in the ordinary account, where he pays £750 on it every year. His pension holds the fund that pays out almost nothing. The answer is **“Yearly tax on income from investments in the taxable account”**, and the case is **Right account for each investment**.
 
-In Case B Sunil has the same two funds, and the bond fund is in his pension. Its £3,000 is not taxed, and the fund of shares in his ordinary account costs him £150. That is already about as low as it can be, so nothing needs changing. The key’s answer is **“Nothing more than it should”**, and the case is **Nothing to cut back**.
+In Case B Sunil has the same two funds, and the bond fund is in his pension. Its £3,000 is not taxed, and the fund of shares in his ordinary account costs him £150. That is already about as low as it can be, so nothing needs changing. The answer is **“Nothing more than it should”**, and the case is **Nothing to cut back**.
 
 The brothers have the same funds, the same sums and the same accounts. Only which fund is in which account differs, and that turns £750 a year of tax into £150. The first case needs a swap and the second needs nothing.
 
@@ -659,7 +659,7 @@ The brothers have the same funds, the same sums and the same accounts. Only whic
 
 Which account holds the investment that pays out the most income each year: the taxed one or the sheltered one?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Right account for each investment | Nothing to cut back |
 |---|---|---|
@@ -670,7 +670,7 @@ Which account holds the investment that pays out the most income each year: the 
 
 ### 21. A profit on paper
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 21 of 43*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 21 of 43*
 
 [reviewers only: card kind `term`, id `term-gain`]
 
@@ -693,7 +693,7 @@ Two things follow. First, a plan to sell something that has risen is a plan to p
 
 ### 22. A tax bill from a sale nobody needs to make
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 22 of 43*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 22 of 43*
 
 [reviewers only: card kind `meet`, id `meet-defer`]
 
@@ -718,13 +718,13 @@ Notice what is not claimed. Not selling does not make the £6,000 free of tax fo
 
 The line printed below gives two ways a sale can be unneeded, and Imogen’s case is the first: there is no reason to sell. The second is that the sale has a job, but new money could do the same job. Here is an example. A person chose a mix of 60% shares and 40% bonds, and after a good year shares have risen to 62%. An adviser says to sell some shares and buy bonds, to put it back. If the person is about to pay in new money, putting all of it into bonds does the same thing with no sale, and so no tax. The sale was only one way to do the job.
 
-This is why the key’s answer is not about the sale itself. It is about a tax bill on a sale that does not have to happen.
+This is why the answer is not about the sale itself. It is about a tax bill on a sale that does not have to happen.
 
 **What you must be able to point to.** Something now worth more than was paid for it, a plan to sell some of it that would bring a tax bill on the gain, and nothing in the case that needs the sale: new money could do the same job, or there is no reason to sell. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What is taking money out of it?”**
+**The question:** **“What is taking money out of it?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“Tax on a sale that does not have to happen”**
+**Its answer for a case like this one:** **“Tax on a sale that does not have to happen”**
 
 The name for this is **Delay the tax by not selling**. It says what to do: hold off the sale, so that the tax is put off. "Delay" is exact: the tax is put off, not cancelled.
 
@@ -732,7 +732,7 @@ You may also hear this called “deferring the tax on a gain”. That means the 
 
 ### 23. Delay the tax by not selling: the same thing in a different story
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 23 of 43*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 23 of 43*
 
 [reviewers only: card kind `again`, id `again-defer`]
 
@@ -765,7 +765,7 @@ The sums differ by a factor of eight, and one is *a fund* and the other a flat. 
 
 ### 24. Delay the tax by not selling: what it is like
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 24 of 43*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 24 of 43*
 
 [reviewers only: card kind `portrait`, id `portrait-defer`]
 
@@ -776,7 +776,7 @@ You now know what to point to. This card fills in the rest of the picture, so th
 - The reason given for selling is a remark, not a need: "lock in the profit", "it has had a good run", "it looks expensive", "let us tidy up". None of these is a bill or a use for the money.
 - The tax bill is known before the sale. It is the gain times the rate: £6,000 at 20% is £1,200. A person can put that number next to the reason and see which is larger.
 - The gain is on paper, so the person feels rich and feels the pull to bank it. Selling makes it feel safe. What it does is make it taxable.
-- It also shows up as a sale to put *the mix* back. Say a person chose 60% shares and 40% bonds. After a good year the shares are worth £264,000 and the bonds £160,000, so shares are 62% of £424,000. An adviser says to sell some shares and buy bonds. That sale brings tax on the gain in the shares sold. But new money paid in can do the same job: £20,000 put wholly into bonds makes them £180,000 of £444,000, and shares are then 59.5%, with no sale and no tax. For such a case the key’s answer to the first question is **“Something taken out of it every year”**, and not **“A fall in prices it is not ready for”**, because the tax could be avoided.
+- It also shows up as a sale to put *the mix* back. Say a person chose 60% shares and 40% bonds. After a good year the shares are worth £264,000 and the bonds £160,000, so shares are 62% of £424,000. An adviser says to sell some shares and buy bonds. That sale brings tax on the gain in the shares sold. But new money paid in can do the same job: £20,000 put wholly into bonds makes them £180,000 of £444,000, and shares are then 59.5%, with no sale and no tax. For such a case the answer to the first question is **“Something taken out of it every year”**, and not **“A fall in prices it is not ready for”**, because the tax could be avoided.
 - The delay is not an escape. The tax is still due when something is sold, and the gain may be larger by then. What is gained is time, and growth on the money not paid.
 
 **What it is not**
@@ -803,13 +803,13 @@ Fifth, if a sale is truly needed, sell the part with the smallest gain first.
 
 ### 25. A question about a new case
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 25 of 43*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 25 of 43*
 
 [reviewers only: card kind `check`, id `check-defer`]
 
 > Priya, 48, holds £45,000 of shares she bought for £30,000. A newsletter says 'take your profits before the summer', and she is about to sell them all. She needs no cash. The sale would bring tax of 20% on the £15,000 gain, £3,000.
 
-**The key asks:** **“What is taking money out of it?”** Which of the answers you have met so far fits this case?
+**The question:** **“What is taking money out of it?”** Which of the answers you have met so far fits this case?
 
 - A yearly charge for picking investments
 - Nothing more than it should
@@ -827,7 +827,7 @@ Fifth, if a sale is truly needed, sell the part with the smallest gain first.
 
 ### 26. Right account for each investment or Delay the tax by not selling: telling them apart
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 26 of 43*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 26 of 43*
 
 [reviewers only: card kind `lookalike`, id `look-location-defer`]
 
@@ -849,9 +849,9 @@ Both of the last two names are about tax on money held in an ordinary account, a
 
 **Why this one and not the other**
 
-In Case A the tax is £500 a year on the interest of *a bond* fund, and Imani sells nothing. It comes every year for as long as the fund stays where it is. The key’s answer is **“Yearly tax on income from investments in the taxable account”**, and the case is **Right account for each investment**.
+In Case A the tax is £500 a year on the interest of *a bond* fund, and Imani sells nothing. It comes every year for as long as the fund stays where it is. The answer is **“Yearly tax on income from investments in the taxable account”**, and the case is **Right account for each investment**.
 
-In Case B nothing is taxed yet. The tax of £1,200 would come only if she sold the fund of shares, and nothing needs her to. If she does not sell, there is nothing to pay. The key’s answer is **“Tax on a sale that does not have to happen”**, and the case is **Delay the tax by not selling**.
+In Case B nothing is taxed yet. The tax of £1,200 would come only if she sold the fund of shares, and nothing needs her to. If she does not sell, there is nothing to pay. The answer is **“Tax on a sale that does not have to happen”**, and the case is **Delay the tax by not selling**.
 
 Both are tax in an ordinary account, and both could be smaller. But one comes every year whatever Imani does, and the other comes only if she acts. The fix for the first is to move *a fund* to another account. The fix for the second is to leave the fund where it is.
 
@@ -859,7 +859,7 @@ Both are tax in an ordinary account, and both could be smaller. But one comes ev
 
 Does the tax arrive every year without anyone selling anything? Or would it arrive only if something were sold?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Right account for each investment | Delay the tax by not selling |
 |---|---|---|
@@ -870,7 +870,7 @@ Does the tax arrive every year without anyone selling anything? Or would it arri
 
 ### 27. A gain taxed this year, while another investment sits below what it cost
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 27 of 43*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 27 of 43*
 
 [reviewers only: card kind `meet`, id `meet-harvest`]
 
@@ -899,9 +899,9 @@ Two things must both be in the case. One is a sale this year that made a profit,
 
 **What you must be able to point to.** Something sold this tax year for more than was paid for it, so that the gain will be taxed, and another investment in the taxable account, not yet sold, now worth less than was paid for it. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What is taking money out of it?”**
+**The question:** **“What is taking money out of it?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“Tax on this year’s gain, while another investment sits below what it cost”**
+**Its answer for a case like this one:** **“Tax on this year’s gain, while another investment sits below what it cost”**
 
 The name for this is **Use a loss to cut tax**. It says what to do: use a loss that is already there to cut the tax on the gain. A loss is only worth something for tax once the investment that fell is sold.
 
@@ -909,7 +909,7 @@ You may also hear this called “tax-loss harvesting”. That means the same thi
 
 ### 28. Use a loss to cut tax: the same thing in a different story
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 28 of 43*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 28 of 43*
 
 [reviewers only: card kind `again`, id `again-harvest`]
 
@@ -940,7 +940,7 @@ Their ages, their sums and their stories differ. What they share is the pair: *a
 
 ### 29. Use a loss to cut tax: what it is like
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 29 of 43*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 29 of 43*
 
 [reviewers only: card kind `portrait`, id `portrait-harvest`]
 
@@ -978,13 +978,13 @@ Fifth, sell the one that fell and buy the similar one before the tax year ends, 
 
 ### 30. A question about a new case
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 30 of 43*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 30 of 43*
 
 [reviewers only: card kind `check`, id `check-harvest`]
 
 > Hugo, 36, has two funds in an ordinary investment account. This year he sold one of them for £2,000 more than he paid, so he will owe tax of £400 on that gain. The other, which he has not sold, cost him £5,000 and is now worth £4,000.
 
-**The key asks:** **“What is taking money out of it?”** Which of the answers you have met so far fits this case?
+**The question:** **“What is taking money out of it?”** Which of the answers you have met so far fits this case?
 
 - A yearly charge for picking investments
 - Nothing more than it should
@@ -1004,7 +1004,7 @@ Fifth, sell the one that fell and buy the similar one before the tax year ends, 
 
 ### 31. Delay the tax by not selling or Use a loss to cut tax: telling them apart
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 31 of 43*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 31 of 43*
 
 [reviewers only: card kind `lookalike`, id `look-defer-harvest`]
 
@@ -1026,9 +1026,9 @@ The last name and the one before both involve a sale, tax on *a gain* and *a fun
 
 **Why this one and not the other**
 
-In Case A Noel has sold nothing this year. A friend says his fund has run too far, and a sale is only a thought. It would bring £1,200 of tax, and nothing needs it. Holding off removes the tax. The key’s answer is **“Tax on a sale that does not have to happen”**, and the case is **Delay the tax by not selling**.
+In Case A Noel has sold nothing this year. A friend says his fund has run too far, and a sale is only a thought. It would bring £1,200 of tax, and nothing needs it. Holding off removes the tax. The answer is **“Tax on a sale that does not have to happen”**, and the case is **Delay the tax by not selling**.
 
-In Case B the sale has been made: £6,000 more than he paid, so £1,200 of tax. And another fund in the same account is £4,500 below what he paid. Selling that one sets the loss against the gain: the taxed gain falls to £1,500 and the tax to £300, a saving of £900. The key’s answer is **“Tax on this year’s gain, while another investment sits below what it cost”**, and the case is **Use a loss to cut tax**.
+In Case B the sale has been made: £6,000 more than he paid, so £1,200 of tax. And another fund in the same account is £4,500 below what he paid. Selling that one sets the loss against the gain: the taxed gain falls to £1,500 and the tax to £300, a saving of £900. The answer is **“Tax on this year’s gain, while another investment sits below what it cost”**, and the case is **Use a loss to cut tax**.
 
 Both involve £1,200 and *a fund* Noel could sell. In one, not selling is the answer. In the other, selling the second fund is. The words that decide are in the case: nothing sold yet and no need, or something sold already with a loss beside it.
 
@@ -1036,7 +1036,7 @@ Both involve £1,200 and *a fund* Noel could sell. In one, not selling is the an
 
 Has something already been sold this year at *a gain*? And is another investment, not yet sold, worth less than was paid for it?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Delay the tax by not selling | Use a loss to cut tax |
 |---|---|---|
@@ -1045,15 +1045,15 @@ Has something already been sold this year at *a gain*? And is another investment
 | What you must be able to point to | Something now worth more than was paid for it, a plan to sell some of it that would bring a tax bill on the gain, and nothing in the case that needs the sale: new money could do the same job, or there is no reason to sell | Something sold this tax year for more than was paid for it, so that the gain will be taxed, and another investment in the taxable account, not yet sold, now worth less than was paid for it |
 
 
-*End of part 2. You can stop here; your place is kept. Next: part 3, A sum spent, and the key’s question.*
+*End of part 2. You can stop here; your place is kept. Next: part 3, A sum spent, and the question.*
 
 ---
 
-## Part 3 of 4: A sum spent, and the key’s question
+## Part 3 of 4: A sum spent, and the question
 
 ### 32. The same sum taken out each year from a pot that has shrunk
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 32 of 43*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 32 of 43*
 
 [reviewers only: card kind `meet`, id `meet-burnrate`]
 
@@ -1080,9 +1080,9 @@ There is a price. The person has to be willing to spend a little less in a year 
 
 **What you must be able to point to.** A fixed sum of money taken out to spend every year, set when the pot was worth more, and now a bigger share of a smaller pot. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What is taking money out of it?”**
+**The question:** **“What is taking money out of it?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“The same sum taken out every year from a pot that has shrunk”**
+**Its answer for a case like this one:** **“The same sum taken out every year from a pot that has shrunk”**
 
 The name for this is **Spend a percentage of the pot**. It says what to do: take a percentage of *the pot*, worked out again each year, and not a fixed number of pounds.
 
@@ -1090,7 +1090,7 @@ You may also hear this called “a withdrawal rate” or “percentage withdrawa
 
 ### 33. Spend a percentage of the pot: the same thing in a different story
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 33 of 43*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 33 of 43*
 
 [reviewers only: card kind `again`, id `again-burnrate`]
 
@@ -1121,7 +1121,7 @@ The reasons *the pot* shrank differ, and neither is the point. What the two case
 
 ### 34. Spend a percentage of the pot: what it is like
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 34 of 43*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 34 of 43*
 
 [reviewers only: card kind `portrait`, id `portrait-burnrate`]
 
@@ -1159,7 +1159,7 @@ Fifth, write the share, the date and the cuts on one page, and keep it with your
 
 ### 35. A question about a new case
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 35 of 43*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 35 of 43*
 
 [reviewers only: card kind `check`, id `check-burnrate`]
 
@@ -1173,14 +1173,14 @@ The pieces you can tap:
 
 **Shown as soon as you tap**
 
-- If you are right: “Right: ‘He has never changed the figure. His pot is now £500,000, so the £28,000 is 5.6% of it’.” The sum was set when *the pot* was bigger, and it has not moved: “He has never changed the figure. His pot is now £500,000, so the £28,000 is 5.6% of it”. The same £28,000 is now 5.6% of a pot that is £200,000 smaller than it was. The key’s answer for this case is **“The same sum taken out every year from a pot that has shrunk”**, and the name is **Spend a percentage of the pot**.
+- If you are right: “Right: ‘He has never changed the figure. His pot is now £500,000, so the £28,000 is 5.6% of it’.” The sum was set when *the pot* was bigger, and it has not moved: “He has never changed the figure. His pot is now £500,000, so the £28,000 is 5.6% of it”. The same £28,000 is now 5.6% of a pot that is £200,000 smaller than it was. The answer for this case is **“The same sum taken out every year from a pot that has shrunk”**, and the name is **Spend a percentage of the pot**.
 - If you miss: “The words are ‘He has never changed the figure. His pot is now £500,000, so the £28,000 is 5.6% of it’.” The same reason follows, and then a line about the piece you tapped:
   - “Felix, 65, sold his shop at 63 and set himself £28,000 a year to live on, which was 4% of the £700,000 he got.”: That is how the sum was set, and at the time it was a fair share. It is half of what settles the case. The other half is what has happened to the sum since.
 - Taught on: “The same sum taken out each year from a pot that has shrunk” (one tap opens the card).
 
 ### 36. Spend a percentage of the pot or Nothing to cut back: telling them apart
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 36 of 43*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 36 of 43*
 
 [reviewers only: card kind `lookalike`, id `look-burnrate-nocut`]
 
@@ -1202,9 +1202,9 @@ You have now met a fixed sum that goes wrong. The sound way of spending was the 
 
 **Why this one and not the other**
 
-In Case A Cora fixed £42,000 when *the pot* was £1,050,000 and has never changed it. Her pot is now £840,000, so £42,000 is 5%. The key’s answer is **“The same sum taken out every year from a pot that has shrunk”**, and the case is **Spend a percentage of the pot**.
+In Case A Cora fixed £42,000 when *the pot* was £1,050,000 and has never changed it. Her pot is now £840,000, so £42,000 is 5%. The answer is **“The same sum taken out every year from a pot that has shrunk”**, and the case is **Spend a percentage of the pot**.
 
-In Case B Dee works out 4% of what *the pot* is worth every January. This year that is £33,600, and she cuts her holiday budget. The key’s answer is **“Nothing more than it should”**, and the case is **Nothing to cut back**.
+In Case B Dee works out 4% of what *the pot* is worth every January. This year that is £33,600, and she cuts her holiday budget. The answer is **“Nothing more than it should”**, and the case is **Nothing to cut back**.
 
 The sisters started with the same sum and the same share. Today Cora takes £8,400 more than Dee from the same pot. Cora is taking 5% and Dee still takes 4%. Over the years, *the pot* of the one who reset has more left.
 
@@ -1212,7 +1212,7 @@ The sisters started with the same sum and the same share. Today Cora takes £8,4
 
 Is the sum the same number of pounds as in earlier years, or worked out again each year from what *the pot* is worth now?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Spend a percentage of the pot | Nothing to cut back |
 |---|---|---|
@@ -1223,17 +1223,17 @@ Is the sum the same number of pounds as in earlier years, or worked out again ea
 
 ### 37. The question you have been answering all along
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 37 of 43*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 37 of 43*
 
 [reviewers only: card kind `question`, id `q-erosion`]
 
-Since Mara’s two charges you have seen the key’s question at the foot of each new name, with one answer under it. This card puts the question and its six answers in one place, as the key shows them, and says why the key asks it.
+Since Mara’s two charges you have seen the question at the foot of each new name, with one answer under it. This card puts the question and its six answers in one place, and says why it is asked.
 
-**The key asks:** **“What is taking money out of it?”**
+**The question:** **“What is taking money out of it?”**
 
 **What it is for.** Tells apart five things that take more out of the pot each year than they need to, and the case where what comes out is worth it or already as low as it can be.
 
-**Its answers, exactly as the key shows them**
+**Its answers**
 
 Each answer leads to one name, and so rules out the other five.
 
@@ -1260,23 +1260,23 @@ Each answer leads to one name, and so rules out the other five.
 
 Each of the six answers has its own fix, and a fix for one does nothing for another: cheaper funds do not lower a tax bill, and moving investments between accounts does not change how much is spent. So the name comes from what the case shows taking the money out, not from how large the sum is or who is involved.
 
-Two people with the same pot and the same yearly loss of £3,000 can need opposite things. One pays £3,000 to someone who chose investments and did nothing else. The other pays £3,000 for a tax return, a check of a will and a plan. The size is the same and the people are the same. The key’s answer for the first is **“A yearly charge for picking investments”** and for the second **“Nothing more than it should”**. Only what the money is for tells them apart.
+Two people with the same pot and the same yearly loss of £3,000 can need opposite things. One pays £3,000 to someone who chose investments and did nothing else. The other pays £3,000 for a tax return, a check of a will and a plan. The size is the same and the people are the same. The answer for the first is **“A yearly charge for picking investments”** and for the second **“Nothing more than it should”**. Only what the money is for tells them apart.
 
-That is why the key asks what is taking the money out, and not how large the sum is, who is paid, or whether it sounds fair. Applied to a case that shows **“Nothing more than it should”**, any of the fixes costs money and fixes nothing.
+That is why the question is what is taking the money out, and not how large the sum is, who is paid, or whether it sounds fair. Applied to a case that shows **“Nothing more than it should”**, any of the fixes costs money and fixes nothing.
 
 **How to answer it from a case**
 
-Read the whole case. Then look for the words that show what comes out, and ask the key’s question of them. You should be able to put your finger on the words: a charge and what it pays for, a tax bill and what it is on, or a sum and what it was set against. If you cannot, you do not yet have an answer.
+Read the whole case. Then look for the words that show what comes out, and ask the question of them. You should be able to put your finger on the words: a charge and what it pays for, a tax bill and what it is on, or a sum and what it was set against. If you cannot, you do not yet have an answer.
 
 A quick first step is to see where the money goes. If it goes to a firm or an adviser, the answer is **“A yearly charge for picking investments”** or **“Nothing more than it should”**. If it goes to the tax office, it is one of the three about tax. If it is the person’s own spending, it is **“The same sum taken out every year from a pot that has shrunk”** or, again, **“Nothing more than it should”**. That narrows the choice. It does not make it: the words in the case do.
 
 A sound case, the sixth answer, is not a case with nothing coming out. Something comes out, and the case shows it is worth it or already as low as it can be. If you can point to the words that show that, the answer is **“Nothing more than it should”**. If you cannot, and you cannot point to words for any of the other five either, do not invent a problem.
 
-The key’s first question, **“What could lose this money?”**, has already put the case in this branch: it has told you that something comes out of *the pot* every year. The question on this card is only which of the six it is.
+The first question, **“What could lose this money?”**, has already narrowed the case down: it has told you that something comes out of *the pot* every year. The question on this card is only which of the six it is.
 
 **When two answers both seem to fit**
 
-Sometimes two answers seem to fit, and sometimes the case also shows an answer to the first question that is not this one. Each pair below has been set side by side earlier in this unit, and each has one question that separates it. There is one more thing from the first question. When a case shows **“A fall in prices it is not ready for”** and also a sale to put *the mix* back where the sale itself would bring a tax bill that new money could do without, the key’s answer to the first question is **“Something taken out of it every year”**, and the answer to this one is **“Tax on a sale that does not have to happen”**. A sum fixed in pounds and left unchanged while a fall in prices shrinks *the pot* is treated the same way, and the answer here is **“The same sum taken out every year from a pot that has shrunk”**.
+Sometimes two answers seem to fit, and sometimes the case also shows an answer to the first question that is not this one. Each pair below has been set side by side earlier in this unit, and each has one question that separates it. There is one more thing from the first question. When a case shows **“A fall in prices it is not ready for”** and also a sale to put *the mix* back where the sale itself would bring a tax bill that new money could do without, the answer to the first question is **“Something taken out of it every year”**, and the answer to this one is **“Tax on a sale that does not have to happen”**. A sum fixed in pounds and left unchanged while a fall in prices shrinks *the pot* is treated the same way, and the answer here is **“The same sum taken out every year from a pot that has shrunk”**.
 
 - Switch to index funds or Nothing to cut back: If the charge stopped, what important job would stop being done? Can you point to that job in the case, and to a price that stays the same when *the pot* grows?
 - Right account for each investment or Delay the tax by not selling: Does the tax arrive every year without anyone selling anything? Or would it arrive only if something were sold?
@@ -1287,13 +1287,13 @@ Sometimes two answers seem to fit, and sometimes the case also shows an answer t
 
 ### 38. A question about a new case
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 38 of 43*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 38 of 43*
 
 [reviewers only: card kind `check`, id `check-erosion`]
 
 > Yuki, 41, has £140,000 in funds her bank's adviser picked. The funds take 1.4% a year, and the bank adds 0.6% a year for choosing them. The bank has done nothing else for her. Index funds that follow published lists charge about 0.1% a year.
 
-**The key asks:** **“What is taking money out of it?”**
+**The question:** **“What is taking money out of it?”**
 
 - A yearly charge for picking investments
 - Yearly tax on income from investments in the taxable account
@@ -1321,11 +1321,11 @@ Sometimes two answers seem to fit, and sometimes the case also shows an answer t
 
 ### 39. A whole case, from the first question to the name
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 39 of 43*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 39 of 43*
 
 [reviewers only: card kind `worked`, id `worked-accounts`]
 
-You have the six names and the key’s question about them. Before you run a case yourself, watch two being run from the top, in the order the key asks. You are not asked anything until the end of each.
+You have the six names and the question about them. Before you run a case yourself, watch two being run from the top, in the order the questions are asked. You are not asked anything until the end of each.
 
 *Marit and the two accounts*
 
@@ -1371,17 +1371,17 @@ Still possible: **Right account for each investment**. Ruled out: **Switch to in
 
 For **Nothing to cut back** you must be able to point to this: something taken out of the pot every year, and the case showing it is worth it or already as low as it can be: a charge for work that would not otherwise get done, at a set price that does not grow with the pot; investments that pay out income already in the sheltered account; or spending reset each year as a share of what the pot is worth. Marit’s case has small charges, but the income investment is not in the sheltered account: the largest payout sits in the taxed one. Nothing about it is already as low as it can be.
 
-It is the question from Ravi and Sunil. Which account holds the investment that pays out the most income each year: the taxed one or the sheltered one? Here the investment that pays out the most is in the taxed account, so the key’s answer is **“Yearly tax on income from investments in the taxable account”**.
+It is the question from Ravi and Sunil. Which account holds the investment that pays out the most income each year: the taxed one or the sheltered one? Here the investment that pays out the most is in the taxed account, so the answer is **“Yearly tax on income from investments in the taxable account”**.
 
 **Does it look like a case you know?**
 
-The key has given its answer. Now take a second look of a different kind: does this case look like one you know? It should bring back Ana: a pension, an ordinary account, and *a fund* that pays out income that is taxed every year.
+You have the answer. Now take a second look of a different kind: does this case look like one you know? It should bring back Ana: a pension, an ordinary account, and *a fund* that pays out income that is taxed every year.
 
-Here the key and the likeness agree, so the answer stands. The key’s question comes first, because it makes you point at words in the case. The likeness is only a second look. When the two disagree, do not pick the one you prefer. Go back to the key’s question and find the words in the case that answer it. The second whole case shows how.
+Here the answer and the likeness agree, so it stands. The question comes first, because it makes you point at words in the case. The likeness is only a second look. When the two disagree, do not pick the one you prefer. Go back to the question and find the words in the case that answer it. The second whole case shows how.
 
 ### 40. A second whole case, where the loudest thing points the wrong way
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 40 of 43*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 40 of 43*
 
 [reviewers only: card kind `worked`, id `worked-planner`]
 
@@ -1411,7 +1411,7 @@ What it is for: tells apart five things that take more out of the pot each year 
 
 Answer: **“Nothing more than it should”**
 
-The friend’s remark is about size: 1.2% of £700,000. The words that answer the key’s question are about what the charge is for: “a flat sum agreed for three years at a time” and “For the £8,400 the planner prepares Rui's and his wife's tax returns, runs their spending plan, and has spent this year sorting out the papers of Rui's late mother, which Rui says he could not have done alone”. It is a flat sum, not a percentage of *the pot*, and it pays for returns, a spending plan and the papers of a late mother that Rui says he could not sort alone. No commission is taken, and nobody is paid for choosing: the money is in index funds.
+The friend’s remark is about size: 1.2% of £700,000. The words that answer the question are about what the charge is for: “a flat sum agreed for three years at a time” and “For the £8,400 the planner prepares Rui's and his wife's tax returns, runs their spending plan, and has spent this year sorting out the papers of Rui's late mother, which Rui says he could not have done alone”. It is a flat sum, not a percentage of *the pot*, and it pays for returns, a spending plan and the papers of a late mother that Rui says he could not sort alone. No commission is taken, and nobody is paid for choosing: the money is in index funds.
 
 Still possible: **Nothing to cut back**. Ruled out: **Switch to index funds**, **Right account for each investment**, **Delay the tax by not selling**, **Use a loss to cut tax** and **Spend a percentage of the pot**.
 
@@ -1431,13 +1431,13 @@ Still possible: **Nothing to cut back**. Ruled out: **Switch to index funds**, *
 
 For **Switch to index funds** you must be able to point to this: a charge taken from the pot every year for choosing investments (by fund managers, an adviser or both), far more than an index fund charges, and either nothing else in the case that the charge pays for, or other work it pays for that does not grow as the pot grows while the charge does. Rui’s charge is large, but it is not a percentage of *the pot* for choosing investments and nothing else. It pays for named work that would not otherwise get done, at a price that is flat.
 
-It is the question from Gwen and Ann. If the charge stopped, what important job would stop being done? Can you point to that job in the case, and to a price that stays the same when *the pot* grows? Here the £8,400 pays for returns, a plan and papers, and the price stays the same whatever *the pot* does, so the key’s answer is **“Nothing more than it should”**.
+It is the question from Gwen and Ann. If the charge stopped, what important job would stop being done? Can you point to that job in the case, and to a price that stays the same when *the pot* grows? Here the £8,400 pays for returns, a plan and papers, and the price stays the same whatever *the pot* does, so the answer is **“Nothing more than it should”**.
 
 **Does it look like a case you know?**
 
-Now the second look: does this case look like one you know? A charge of 1.2% that a friend calls robbery may bring back Mara first, and Mara’s case was **Switch to index funds**. So here the likeness and the key seem to disagree.
+Now the second look: does this case look like one you know? A charge of 1.2% that a friend calls robbery may bring back Mara first, and Mara’s case was **Switch to index funds**. So here the likeness and the answer seem to disagree.
 
-When that happens, go back to the key’s question and find the words in the case that answer it. They are “a flat sum agreed for three years at a time” and “For the £8,400 the planner prepares Rui's and his wife's tax returns, runs their spending plan, and has spent this year sorting out the papers of Rui's late mother, which Rui says he could not have done alone”. Mara’s case had nothing like them: her adviser had done nothing else since the fund was chosen. Rui’s case has the opposite. The case this one really looks like is Kamal’s, a flat price for named work, and the key’s answer stands.
+When that happens, go back to the question and find the words in the case that answer it. They are “a flat sum agreed for three years at a time” and “For the £8,400 the planner prepares Rui's and his wife's tax returns, runs their spending plan, and has spent this year sorting out the papers of Rui's late mother, which Rui says he could not have done alone”. Mara’s case had nothing like them: her adviser had done nothing else since the fund was chosen. Rui’s case has the opposite. The case this one really looks like is Kamal’s, a flat price for named work, and the answer stands.
 
 ### The drill
 
@@ -1445,7 +1445,7 @@ The cards are out of view from here, and every case is new. The drill has five s
 
 Some of these cases show a charge, a tax bill or a sum spent that is fine as it is. That is on purpose: one of the six answers is that nothing needs cutting back, and in real life you will need it as often as the others. Look for the words that show the problem. If you cannot point to them, do not invent them.
 
-#### Stage 1 of 5. The key’s answers are shown for each case. Give the name that goes with them. This stage practises one thing: which name goes with which answer.
+#### Stage 1 of 5. The answers are shown for each case. Give the name that goes with them. This stage practises one thing: which name goes with which answer.
 
 The names offered are the six this unit teaches: Switch to index funds / Nothing to cut back / Right account for each investment / Delay the tax by not selling / Use a loss to cut tax / Spend a percentage of the pot.
 
@@ -1465,7 +1465,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Nothing to cut back**: No work that would otherwise be left undone is shown, and every charge is a percentage of the money, so all three grow when the money does.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Nothing to cut back**, the look-alike card’s lines follow: In both, a firm or an adviser is paid out of *the pot* every year, and the person may have no complaint about it. In **Switch to index funds** the charge is for choosing investments and for nothing else, and it is a percentage of *the pot*, so it grows when *the pot* does. In **Nothing to cut back** the charge is for named work that would not otherwise get done, at a set price that does not grow with *the pot*. If the charge stopped, what important job would stop being done? Can you point to that job in the case, and to a price that stays the same when *the pot* grows?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “Paying a lot every year for someone to pick the investments” (one tap opens the card).
 
 **Drill item 2 of 50**
@@ -1484,7 +1484,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Switch to index funds**: The £2,000 does not pay for choosing investments, which are already in index funds. It pays for work that would not otherwise get done, at a price that does not grow with *the pot*.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Switch to index funds**, the look-alike card’s lines follow: In both, a firm or an adviser is paid out of *the pot* every year, and the person may have no complaint about it. In **Switch to index funds** the charge is for choosing investments and for nothing else, and it is a percentage of *the pot*, so it grows when *the pot* does. In **Nothing to cut back** the charge is for named work that would not otherwise get done, at a set price that does not grow with *the pot*. If the charge stopped, what important job would stop being done? Can you point to that job in the case, and to a price that stays the same when *the pot* grows?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “Yearly costs that are worth paying, or already as low as they can be” (one tap opens the card).
 
 **Drill item 3 of 50**
@@ -1503,7 +1503,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Delay the tax by not selling**: Nothing is planned to be sold. The tax is charged on what the fund pays out every year, whether or not Osei sells anything.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Delay the tax by not selling**, the look-alike card’s lines follow: Both are tax on money invested in an ordinary account, and in both the tax could be smaller. In **Right account for each investment** the tax is on income that the investments pay out every year, so it comes whether or not anything is sold. In **Delay the tax by not selling** the tax is on *a gain*, and it comes only because a sale is planned. Does the tax arrive every year without anyone selling anything? Or would it arrive only if something were sold?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “Income taxed every year because it sits in the wrong account” (one tap opens the card).
 
 **Drill item 4 of 50**
@@ -1522,7 +1522,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Use a loss to cut tax**: No sale has been made this year and no other investment is worth less than it cost, so there is no loss to set against the gain.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Use a loss to cut tax**, the look-alike card’s lines follow: Both are about tax on *a gain* that comes with a sale. In **Delay the tax by not selling** the sale is only planned and nothing needs it, so holding off removes the tax. In **Use a loss to cut tax** a sale has already made *a gain* that will be taxed this year, and another investment, not yet sold, is worth less than it cost, so selling that one lowers the tax. Has something already been sold this year at *a gain*? And is another investment, not yet sold, worth less than was paid for it?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “A tax bill from a sale nobody needs to make” (one tap opens the card).
 
 **Drill item 5 of 50**
@@ -1541,7 +1541,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Delay the tax by not selling**: Nobody is planning a sale that is not needed. The sale has happened, and there is a loss waiting in the same account that can be set against it.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Delay the tax by not selling**, the look-alike card’s lines follow: Both are about tax on *a gain* that comes with a sale. In **Delay the tax by not selling** the sale is only planned and nothing needs it, so holding off removes the tax. In **Use a loss to cut tax** a sale has already made *a gain* that will be taxed this year, and another investment, not yet sold, is worth less than it cost, so selling that one lowers the tax. Has something already been sold this year at *a gain*? And is another investment, not yet sold, worth less than was paid for it?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “A gain taxed this year, while another investment sits below what it cost” (one tap opens the card).
 
 **Drill item 6 of 50**
@@ -1560,7 +1560,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Right account for each investment**: The investments are in the right accounts already. For this name, the larger payout would be held in the taxed account instead.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Right account for each investment**, the look-alike card’s lines follow: In both, the person holds a pension and an ordinary account, and one of the funds pays out a good deal of income every year. In **Right account for each investment** the investment paying out the most is held in the taxed account, so tax is charged on it each year. In **Nothing to cut back** it already sits in *a sheltered account*, and what is taxed is the investment that pays out little. Which account holds the investment that pays out the most income each year: the taxed one or the sheltered one?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “Yearly costs that are worth paying, or already as low as they can be” (one tap opens the card).
 
 **Drill item 7 of 50**
@@ -1579,7 +1579,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Nothing to cut back**: Spending is sound when it is reset each year as a percentage of what *the pot* is worth. Anil set a number of pounds and left it.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Nothing to cut back**, the look-alike card’s lines follow: In both, a sum is taken out of *the pot* every year to spend. In **Spend a percentage of the pot** the sum is a fixed number of pounds, set when *the pot* was worth more, so it becomes a bigger share as *the pot* shrinks. In **Nothing to cut back** the sum is worked out again each year as a percentage of what *the pot* is worth now, so it falls when *the pot* falls. Is the sum the same number of pounds as in earlier years, or worked out again each year from what *the pot* is worth now?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “The same sum taken out each year from a pot that has shrunk” (one tap opens the card).
 
 **Drill item 8 of 50**
@@ -1598,7 +1598,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Spend a percentage of the pot**: A fixed sum set earlier would be £21,000 again, now 3.9% of £540,000. Marisol reset the sum to the share instead.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Spend a percentage of the pot**, the look-alike card’s lines follow: In both, a sum is taken out of *the pot* every year to spend. In **Spend a percentage of the pot** the sum is a fixed number of pounds, set when *the pot* was worth more, so it becomes a bigger share as *the pot* shrinks. In **Nothing to cut back** the sum is worked out again each year as a percentage of what *the pot* is worth now, so it falls when *the pot* falls. Is the sum the same number of pounds as in earlier years, or worked out again each year from what *the pot* is worth now?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “Yearly costs that are worth paying, or already as low as they can be” (one tap opens the card).
 
 #### Stage 2 of 5. One question at a time.
@@ -1621,7 +1621,7 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **A yearly charge for picking investments.**” The bank's own answer names one job and no other: “1.8% of the pot every year. When she asked what else the 1.8% covers, the bank said, 'Our selection, which is what clients pay for.'”. £2,160 a year, 1.8% of £120,000, pays for choosing, against £120 for *a fund* that follows a published list. This answer leads to **Switch to index funds**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **Nothing more than it should**: No other work is shown, and the charge is a percentage of the money, not a set price for named work.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 10 of 50**
@@ -1642,7 +1642,7 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **Nothing more than it should.**” The charge is a flat price for named work, and the case says that work would not otherwise get done: “a flat price agreed in writing, to keep the firm's books, pay its staff and file his own tax return. Without the accountant none of that would get done on time. The price has not changed in four years, though Gus's own savings have doubled”. Doubling his savings has not moved the price. This answer leads to **Nothing to cut back**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **A yearly charge for picking investments**: The £5,500 does not pay for choosing investments. It pays for books, wages and a tax return, at a price that does not grow with his savings.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 11 of 50**
@@ -1663,7 +1663,7 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **Yearly tax on income from investments in the taxable account.**” The investment that pays out five times as much sits in the account taxed in full: “The ordinary account holds a bond fund that pays out £4,500 of interest a year, and she pays 25% tax on it, £1,125, every year”. The pension holds the one that pays out £900 a year, so the two could swap places. This answer leads to **Right account for each investment**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **Nothing more than it should**: The investments are in the wrong accounts, not the right ones: the bigger payout is the one being taxed every year.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 12 of 50**
@@ -1684,7 +1684,7 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **Nothing more than it should.**” The investment that pays out the most is in the sheltered account and the one that pays out little is in the taxed one: “a fund of loans to companies in his pension, where its £1,800 of interest a year is not taxed. In his ordinary account he holds a fund of shares in growing firms that pays out £200 a year”. £50 a year of tax is already about as low as it can be. This answer leads to **Nothing to cut back**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **Yearly tax on income from investments in the taxable account**: Nothing is in the wrong account. Funds of company loans paying £1,800 a year in the ordinary account would be the case for this name.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 13 of 50**
@@ -1705,7 +1705,7 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **Tax on a sale that does not have to happen.**” A sale is about to be made that would bring tax on *a gain*, and nothing needs it: “about to sell it all. He has no bill to pay and no need for the cash. Selling would bring tax of 20% on the £12,000 gain, £2,400”. A hunch that a price is near its top is not a bill or a need. This answer leads to **Delay the tax by not selling**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **Tax on this year’s gain, while another investment sits below what it cost**: No other investment in the case is below what it cost, and nothing has been sold yet this year, so there is no loss to set against the gain.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 14 of 50**
@@ -1726,7 +1726,7 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **Tax on this year’s gain, while another investment sits below what it cost.**” The case shows *a gain* made this year that will be taxed, and shares she has not sold are worth less than she paid: “so she will owe tax of £800 on that gain. In the same ordinary account she still holds shares she has not sold, which cost £6,000 and are now worth £4,500”. Selling them would set a £1,500 loss against the £4,000 gain. This answer leads to **Use a loss to cut tax**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **Tax on a sale that does not have to happen**: The sale was made in May, so there is no unneeded sale to hold off. What the case shows is a loss waiting beside *a gain*.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 15 of 50**
@@ -1923,12 +1923,12 @@ Shown to you, with the words that decide each answer marked:
 **Shown as soon as you answer**
 
 - If you are right: “Right: **A fall in prices it is not ready for.**” The case shows bills met by selling holdings whose prices swing, with nothing set aside, in a falling market: “she sells £1,500 of them each month, with nothing in cash” and “prices fell by 28%”. Each sale takes place at a lower price than before.
-- If you miss: “The answer is …”, the same reason, and then the line built from the key for the answer you chose.
-- Then, right or wrong: “This case leaves the part of the key you have been taught. The questions that follow this answer come in a part of the course you have not reached, so the case stops here.”
+- If you miss: “The answer is …”, the same reason, and then the line built from the answers’ own wording for the answer you chose.
+- Then, right or wrong: “The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.”
 
-#### Stage 3 of 5. The first answer is shown. Answer the rest, then give the name. From here on your route is marked as well as the name: a right name reached by a wrong answer on the way counts as a miss.
+#### Stage 3 of 5. The first answer is shown. Answer the rest, then give the name. From here on your answers on the way are marked as well as the name: a right name reached by a wrong answer counts as a miss.
 
-Each question is shown with all of its answers from the key, in the key’s order, and the names offered are the six this unit teaches.
+Each question is shown with all of its answers, in order, and the names offered are the six this unit teaches.
 
 **Drill item 27 of 50**
 
@@ -1945,10 +1945,10 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Nothing to cut back**: A sum spent every year is sound only when it is reset as a percentage of *the pot*. Lena set a number of pounds when *the pot* was £250,000 bigger.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - If you chose **Nothing more than it should**: A sum spent every year is sound only when it is reset as a percentage of *the pot*. Lena set a number of pounds when *the pot* was £250,000 bigger.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Nothing to cut back**, the look-alike card’s lines follow: In both, a sum is taken out of *the pot* every year to spend. In **Spend a percentage of the pot** the sum is a fixed number of pounds, set when *the pot* was worth more, so it becomes a bigger share as *the pot* shrinks. In **Nothing to cut back** the sum is worked out again each year as a percentage of what *the pot* is worth now, so it falls when *the pot* falls. Is the sum the same number of pounds as in earlier years, or worked out again each year from what *the pot* is worth now?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “The same sum taken out each year from a pot that has shrunk” (one tap opens the card).
 
 **Drill item 28 of 50**
@@ -1966,10 +1966,10 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Spend a percentage of the pot**: His pot is down, which is how a fixed sum goes wrong, but Oskar does not keep a fixed sum. He takes the same share, so the amount fell with *the pot*.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - If you chose **The same sum taken out every year from a pot that has shrunk**: His pot is down, which is how a fixed sum goes wrong, but Oskar does not keep a fixed sum. He takes the same share, so the amount fell with *the pot*.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Spend a percentage of the pot**, the look-alike card’s lines follow: In both, a sum is taken out of *the pot* every year to spend. In **Spend a percentage of the pot** the sum is a fixed number of pounds, set when *the pot* was worth more, so it becomes a bigger share as *the pot* shrinks. In **Nothing to cut back** the sum is worked out again each year as a percentage of what *the pot* is worth now, so it falls when *the pot* falls. Is the sum the same number of pounds as in earlier years, or worked out again each year from what *the pot* is worth now?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Yearly costs that are worth paying, or already as low as they can be” (one tap opens the card).
 
 **Drill item 29 of 50**
@@ -1987,10 +1987,10 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Use a loss to cut tax**: No sale has been made this year, and nothing else in the case is worth less than it cost, so there is no loss to set against the gain.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - If you chose **Tax on this year’s gain, while another investment sits below what it cost**: No sale has been made this year, and nothing else in the case is worth less than it cost, so there is no loss to set against the gain.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Use a loss to cut tax**, the look-alike card’s lines follow: Both are about tax on *a gain* that comes with a sale. In **Delay the tax by not selling** the sale is only planned and nothing needs it, so holding off removes the tax. In **Use a loss to cut tax** a sale has already made *a gain* that will be taxed this year, and another investment, not yet sold, is worth less than it cost, so selling that one lowers the tax. Has something already been sold this year at *a gain*? And is another investment, not yet sold, worth less than was paid for it?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A tax bill from a sale nobody needs to make” (one tap opens the card).
 
 **Drill item 30 of 50**
@@ -2008,15 +2008,15 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Delay the tax by not selling**: The sale has already happened, so there is no sale to hold off. What the case shows is a loss waiting in the same account.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - If you chose **Tax on a sale that does not have to happen**: The sale has already happened, so there is no sale to hold off. What the case shows is a loss waiting in the same account.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Delay the tax by not selling**, the look-alike card’s lines follow: Both are about tax on *a gain* that comes with a sale. In **Delay the tax by not selling** the sale is only planned and nothing needs it, so holding off removes the tax. In **Use a loss to cut tax** a sale has already made *a gain* that will be taxed this year, and another investment, not yet sold, is worth less than it cost, so selling that one lowers the tax. Has something already been sold this year at *a gain*? And is another investment, not yet sold, worth less than was paid for it?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A gain taxed this year, while another investment sits below what it cost” (one tap opens the card).
 
-#### Stage 4 of 5. No help. Answer every question in the key’s order, then give the name.
+#### Stage 4 of 5. No help. Answer every question in order, then give the name.
 
-Each question is shown with all of its answers from the key, in the key’s order, and the names offered are the six this unit teaches.
+Each question is shown with all of its answers, in order, and the names offered are the six this unit teaches.
 
 **Drill item 31 of 50**
 
@@ -2031,10 +2031,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **Something taken out of it every year.** Two charges come out of *the pot* every year: “The fund takes 1.3% a year, and the adviser takes a further 0.9% a year”. The case has no one thing that is most of his money, no bill in a fall, and no death or will in it.
   - If you chose **Nothing more than it should**: No work that would otherwise get done is shown. The charges are shares of the money, and the adviser has not done anything for three years.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Nothing to cut back**, the look-alike card’s lines follow: In both, a firm or an adviser is paid out of *the pot* every year, and the person may have no complaint about it. In **Switch to index funds** the charge is for choosing investments and for nothing else, and it is a percentage of *the pot*, so it grows when *the pot* does. In **Nothing to cut back** the charge is for named work that would not otherwise get done, at a set price that does not grow with *the pot*. If the charge stopped, what important job would stop being done? Can you point to that job in the case, and to a price that stays the same when *the pot* grows?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Paying a lot every year for someone to pick the investments” (one tap opens the card).
 
 **Drill item 32 of 50**
@@ -2050,10 +2050,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **Something taken out of it every year.** The case is about something taken out of *the pot* every year: “pays a planner £2,400 a year, flat”. It has no fall in prices, no one thing that is most of her money, and no handover.
   - If you chose **A yearly charge for picking investments**: The charge does not pay for choosing investments. It pays for a return, forms and advice, at a price that does not move with *the pot*.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Switch to index funds**, the look-alike card’s lines follow: In both, a firm or an adviser is paid out of *the pot* every year, and the person may have no complaint about it. In **Switch to index funds** the charge is for choosing investments and for nothing else, and it is a percentage of *the pot*, so it grows when *the pot* does. In **Nothing to cut back** the charge is for named work that would not otherwise get done, at a set price that does not grow with *the pot*. If the charge stopped, what important job would stop being done? Can you point to that job in the case, and to a price that stays the same when *the pot* grows?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Yearly costs that are worth paying, or already as low as they can be” (one tap opens the card).
 
 **Drill item 33 of 50**
@@ -2069,10 +2069,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **Something taken out of it every year.** The case is about tax that comes out of the money every year: “on which he pays 25% tax, £825, every year”. The funds charge very little, and nothing in it is a bill, *a claim* or a handover.
   - If you chose **Nothing more than it should**: The charges are low, which can make it look as if nothing needs cutting. But the tax is the problem, and it comes from the wrong fund being in the taxed account.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Nothing to cut back**, the look-alike card’s lines follow: In both, the person holds a pension and an ordinary account, and one of the funds pays out a good deal of income every year. In **Right account for each investment** the investment paying out the most is held in the taxed account, so tax is charged on it each year. In **Nothing to cut back** it already sits in *a sheltered account*, and what is taxed is the investment that pays out little. Which account holds the investment that pays out the most income each year: the taxed one or the sheltered one?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Income taxed every year because it sits in the wrong account” (one tap opens the card).
 
 **Drill item 34 of 50**
@@ -2088,10 +2088,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **Something taken out of it every year.** The case is about tax taken from the money every year: “on which he pays £75 tax”. It is a small sum, and nothing else in the case could lose his money.
   - If you chose **Yearly tax on income from investments in the taxable account**: There is tax every year, but it is on the investment that pays little. For this name, the bond fund would be the one sitting in the ordinary account.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Right account for each investment**, the look-alike card’s lines follow: In both, the person holds a pension and an ordinary account, and one of the funds pays out a good deal of income every year. In **Right account for each investment** the investment paying out the most is held in the taxed account, so tax is charged on it each year. In **Nothing to cut back** it already sits in *a sheltered account*, and what is taxed is the investment that pays out little. Which account holds the investment that pays out the most income each year: the taxed one or the sheltered one?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Yearly costs that are worth paying, or already as low as they can be” (one tap opens the card).
 
 **Drill item 35 of 50**
@@ -2107,10 +2107,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **Something taken out of it every year.** The case is about a tax bill that would come out of *the pot*: “Selling would bring tax of 20% on the £20,000 gain, £4,000”. It has no claim, no handover and no bill falling due.
   - If you chose **Tax on this year’s gain, while another investment sits below what it cost**: There is no loss in the case. Nothing she holds is worth less than it cost, so nothing could be set against the gain.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Use a loss to cut tax**, the look-alike card’s lines follow: Both are about tax on *a gain* that comes with a sale. In **Delay the tax by not selling** the sale is only planned and nothing needs it, so holding off removes the tax. In **Use a loss to cut tax** a sale has already made *a gain* that will be taxed this year, and another investment, not yet sold, is worth less than it cost, so selling that one lowers the tax. Has something already been sold this year at *a gain*? And is another investment, not yet sold, worth less than was paid for it?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A tax bill from a sale nobody needs to make” (one tap opens the card).
 
 **Drill item 36 of 50**
@@ -2126,10 +2126,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **Something taken out of it every year.** The case is about tax that will come out of the money this year: “he will owe tax of £2,000”. It has no one thing that is most of what he owns, and no handover.
   - If you chose **Tax on a sale that does not have to happen**: The sale was made in June. There is no unneeded sale to hold off. What the case shows is a loss waiting beside the gain.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Delay the tax by not selling**, the look-alike card’s lines follow: Both are about tax on *a gain* that comes with a sale. In **Delay the tax by not selling** the sale is only planned and nothing needs it, so holding off removes the tax. In **Use a loss to cut tax** a sale has already made *a gain* that will be taxed this year, and another investment, not yet sold, is worth less than it cost, so selling that one lowers the tax. Has something already been sold this year at *a gain*? And is another investment, not yet sold, worth less than was paid for it?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A gain taxed this year, while another investment sits below what it cost” (one tap opens the card).
 
 **Drill item 37 of 50**
@@ -2145,10 +2145,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **Something taken out of it every year.** The case is about a sum that comes out of *the pot* every year to live on: “They still take £48,000 a year”. Nothing in it is a fall in prices, *a claim* or a handover.
   - If you chose **Nothing more than it should**: Spending is only sound when it is reset each year as a percentage of *the pot*. Pat and Jo kept the same number of pounds.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Nothing to cut back**, the look-alike card’s lines follow: In both, a sum is taken out of *the pot* every year to spend. In **Spend a percentage of the pot** the sum is a fixed number of pounds, set when *the pot* was worth more, so it becomes a bigger share as *the pot* shrinks. In **Nothing to cut back** the sum is worked out again each year as a percentage of what *the pot* is worth now, so it falls when *the pot* falls. Is the sum the same number of pounds as in earlier years, or worked out again each year from what *the pot* is worth now?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “The same sum taken out each year from a pot that has shrunk” (one tap opens the card).
 
 **Drill item 38 of 50**
@@ -2164,10 +2164,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **Something taken out of it every year.** The case is about a sum taken out of *the pot* every year to spend: “takes 4% of her pot on the first of January each year”. Nothing in it is a bill due on a date or one thing that is most of her money.
   - If you chose **The same sum taken out every year from a pot that has shrunk**: There is a sum taken every year, but it is a percentage of *the pot*, not a fixed number of pounds. It rose with *the pot* as it would have fallen with it.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Spend a percentage of the pot**, the look-alike card’s lines follow: In both, a sum is taken out of *the pot* every year to spend. In **Spend a percentage of the pot** the sum is a fixed number of pounds, set when *the pot* was worth more, so it becomes a bigger share as *the pot* shrinks. In **Nothing to cut back** the sum is worked out again each year as a percentage of what *the pot* is worth now, so it falls when *the pot* falls. Is the sum the same number of pounds as in earlier years, or worked out again each year from what *the pot* is worth now?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Yearly costs that are worth paying, or already as low as they can be” (one tap opens the card).
 
 **Drill item 39 of 50**
@@ -2183,10 +2183,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **Something taken out of it every year.** The case is about tax that comes out of the money every year: “she pays 25% tax on it, £1,050, every year”. It has no claim, no fall in prices and no handover.
   - If you chose **Tax on a sale that does not have to happen**: No sale is planned. The tax comes every year on the income the fund pays out, so there is nothing to hold off.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Delay the tax by not selling**, the look-alike card’s lines follow: Both are tax on money invested in an ordinary account, and in both the tax could be smaller. In **Right account for each investment** the tax is on income that the investments pay out every year, so it comes whether or not anything is sold. In **Delay the tax by not selling** the tax is on *a gain*, and it comes only because a sale is planned. Does the tax arrive every year without anyone selling anything? Or would it arrive only if something were sold?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Income taxed every year because it sits in the wrong account” (one tap opens the card).
 
 **Drill item 40 of 50**
@@ -2202,10 +2202,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **Something taken out of it every year.** The case is about a tax bill that would come out of *the pot*: “Selling would bring tax of 20% on the £60,000 gain, £12,000”. The land is a small part of what he owns, so no one thing is most of it.
   - If you chose **Yearly tax on income from investments in the taxable account**: The tax here is on a sale that is planned, not on income paid out every year. If Raúl does not sell, nothing is taxed.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Right account for each investment**, the look-alike card’s lines follow: Both are tax on money invested in an ordinary account, and in both the tax could be smaller. In **Right account for each investment** the tax is on income that the investments pay out every year, so it comes whether or not anything is sold. In **Delay the tax by not selling** the tax is on *a gain*, and it comes only because a sale is planned. Does the tax arrive every year without anyone selling anything? Or would it arrive only if something were sold?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A tax bill from a sale nobody needs to make” (one tap opens the card).
 
 **Drill item 41 of 50**
@@ -2221,11 +2221,11 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **Something taken out of it every year.** The case is about something that comes out of *the pot* every year: “Each year the firm takes 1.2% of the pot, £4,800”. It has no claim, no fall in prices and no handover.
   - If you chose **Nothing more than it should**: A planner who meets you each spring can look like the one who earns a flat price. But there the meeting comes with a return, forms and a plan. Here nothing is done that would not otherwise get done, and the charge is a percentage of *the pot*.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Nothing to cut back**, the look-alike card’s lines follow: In both, a firm or an adviser is paid out of *the pot* every year, and the person may have no complaint about it. In **Switch to index funds** the charge is for choosing investments and for nothing else, and it is a percentage of *the pot*, so it grows when *the pot* does. In **Nothing to cut back** the charge is for named work that would not otherwise get done, at a set price that does not grow with *the pot*. If the charge stopped, what important job would stop being done? Can you point to that job in the case, and to a price that stays the same when *the pot* grows?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *Kamal and his planner*, which was **Nothing to cut back**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *Kamal and his planner*, which was **Nothing to cut back**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: It would be a different name if the firm charged a flat price and the case named work such as a tax return and a check of the will, with the charge staying the same when *the pot* grows.
 - Taught on: “Paying a lot every year for someone to pick the investments” (one tap opens the card).
 
@@ -2242,10 +2242,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **Something taken out of it every year.** The case is about something that comes out of the money every year: “pays her accountant £9,000 a year”. It has no fall in prices, no claim and no handover.
   - If you chose **A yearly charge for picking investments**: The £9,000 does not pay for choosing investments, which are in index funds already. It pays for returns and payroll that would otherwise be left undone.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Switch to index funds**, the look-alike card’s lines follow: In both, a firm or an adviser is paid out of *the pot* every year, and the person may have no complaint about it. In **Switch to index funds** the charge is for choosing investments and for nothing else, and it is a percentage of *the pot*, so it grows when *the pot* does. In **Nothing to cut back** the charge is for named work that would not otherwise get done, at a set price that does not grow with *the pot*. If the charge stopped, what important job would stop being done? Can you point to that job in the case, and to a price that stays the same when *the pot* grows?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Yearly costs that are worth paying, or already as low as they can be” (one tap opens the card).
 
 **Drill item 43 of 50**
@@ -2259,12 +2259,12 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you are right: “Right: **Delay the tax by not selling**.” What is taking money out of it? **Tax on a sale that does not have to happen.** A sale is planned that would bring tax on *a gain*, and the case shows the sale is not needed: “sell £9,600 of shares and buy bonds to put the mix back. That sale would bring tax of 20% on a £4,000 gain, £800. Tobias is about to pay in £20,000 of new money”. £20,000 of new money put into bonds would take them from 38% to about 40% of £444,000, which is the plan, and so put *the mix* back with no sale at all.
   - Why not **Use a loss to cut tax**: No sale has been made this year and none of the holdings is worth less than it cost. The case is about a sale being planned, not about a loss to set against *a gain*.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What could lose this money? **Something taken out of it every year.** In this case *the mix* has moved from its plan, which is why it can look like **“A fall in prices it is not ready for”**. But the sale that would put it back brings a tax bill, “That sale would bring tax of 20% on a £4,000 gain, £800”, and new money paid in could do the same job. When a case shows both, the key gives the answer about what is taken out.
+  - What could lose this money? **Something taken out of it every year.** In this case *the mix* has moved from its plan, which is why it can look like **“A fall in prices it is not ready for”**. But the sale that would put it back brings a tax bill, “That sale would bring tax of 20% on a £4,000 gain, £800”, and new money paid in could do the same job. When a case shows both, the answer is the one about what is taken out.
   - If you chose **Tax on this year’s gain, while another investment sits below what it cost**: No sale has been made this year and none of the holdings is worth less than it cost. The case is about a sale being planned, not about a loss to set against *a gain*.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Use a loss to cut tax**, the look-alike card’s lines follow: Both are about tax on *a gain* that comes with a sale. In **Delay the tax by not selling** the sale is only planned and nothing needs it, so holding off removes the tax. In **Use a loss to cut tax** a sale has already made *a gain* that will be taxed this year, and another investment, not yet sold, is worth less than it cost, so selling that one lowers the tax. Has something already been sold this year at *a gain*? And is another investment, not yet sold, worth less than was paid for it?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: It would be a different name if the shares had to be sold, for example if he needed the cash for a bill or for living costs.
 - Taught on: “A tax bill from a sale nobody needs to make” (one tap opens the card).
 
@@ -2281,10 +2281,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **Something taken out of it every year.** The case is about tax that will come out of the money this year: “she will owe tax of £1,800 on that gain”. It has no handover and no one thing that is most of what she owns.
   - If you chose **Tax on a sale that does not have to happen**: The sale has been made, and nobody is planning one that is not needed. What the case shows is a loss waiting in the same account as *a gain*.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Delay the tax by not selling**, the look-alike card’s lines follow: Both are about tax on *a gain* that comes with a sale. In **Delay the tax by not selling** the sale is only planned and nothing needs it, so holding off removes the tax. In **Use a loss to cut tax** a sale has already made *a gain* that will be taxed this year, and another investment, not yet sold, is worth less than it cost, so selling that one lowers the tax. Has something already been sold this year at *a gain*? And is another investment, not yet sold, worth less than was paid for it?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A gain taxed this year, while another investment sits below what it cost” (one tap opens the card).
 
 **Drill item 45 of 50**
@@ -2298,12 +2298,12 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you are right: “Right: **Spend a percentage of the pot**.” What is taking money out of it? **The same sum taken out every year from a pot that has shrunk.** The sum was fixed when *the pot* was £700,000 bigger and has not been reset: “set their spending at £100,000 a year, which was 5%. Prices then fell 35%, and their pot is now £1,300,000. They still take £100,000 a year, which is now about 7.7% of it”. The fall explains why *the pot* shrank; the sum stays fixed whatever prices do.
   - Why not **Nothing to cut back**: Spending is sound when it is reset each year as a percentage of *the pot*. They kept the number of pounds and *the pot* fell under it.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What could lose this money? **Something taken out of it every year.** Prices have fallen and they sell shares to live, which can look like **“A fall in prices it is not ready for”**. But the case also shows a sum fixed in pounds that they keep taking while their savings shrink: “They still take £100,000 a year, which is now about 7.7% of it”. When a case shows both, the key gives the answer about what is taken out.
+  - What could lose this money? **Something taken out of it every year.** Prices have fallen and they sell shares to live, which can look like **“A fall in prices it is not ready for”**. But the case also shows a sum fixed in pounds that they keep taking while their savings shrink: “They still take £100,000 a year, which is now about 7.7% of it”. When a case shows both, the answer is the one about what is taken out.
   - If you chose **Nothing more than it should**: Spending is sound when it is reset each year as a percentage of *the pot*. They kept the number of pounds and *the pot* fell under it.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Nothing to cut back**, the look-alike card’s lines follow: In both, a sum is taken out of *the pot* every year to spend. In **Spend a percentage of the pot** the sum is a fixed number of pounds, set when *the pot* was worth more, so it becomes a bigger share as *the pot* shrinks. In **Nothing to cut back** the sum is worked out again each year as a percentage of what *the pot* is worth now, so it falls when *the pot* falls. Is the sum the same number of pounds as in earlier years, or worked out again each year from what *the pot* is worth now?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: It would be a different name if they took a percentage of what *the pot* is worth each year, so that spending fell when *the pot* fell.
 - Taught on: “The same sum taken out each year from a pot that has shrunk” (one tap opens the card).
 
@@ -2320,10 +2320,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **Something taken out of it every year.** The case is about a sum taken out of *the pot* every year to spend: “takes 3.5% of his pot each January”. The fall in prices is in the case, but nothing the money has to pay for is caught by it.
   - If you chose **The same sum taken out every year from a pot that has shrunk**: His pot has fallen sharply, which is how a fixed sum goes wrong. But Joaquim does not take a fixed sum. He takes a percentage, so the amount fell as *the pot* did.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Spend a percentage of the pot**, the look-alike card’s lines follow: In both, a sum is taken out of *the pot* every year to spend. In **Spend a percentage of the pot** the sum is a fixed number of pounds, set when *the pot* was worth more, so it becomes a bigger share as *the pot* shrinks. In **Nothing to cut back** the sum is worked out again each year as a percentage of what *the pot* is worth now, so it falls when *the pot* falls. Is the sum the same number of pounds as in earlier years, or worked out again each year from what *the pot* is worth now?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Yearly costs that are worth paying, or already as low as they can be” (one tap opens the card).
 
 **Drill item 47 of 50**
@@ -2343,8 +2343,8 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - If you are right: “Right: **One thing most of it depends on.**” One thing is most of what he has: “£560,000 of it is still shares in the buyer's company”. £560,000 out of £700,000 is 80%, and the price of *a share* in one company can move a long way in either direction.
-- If you miss: “The answer is …”, the same reason, and then the line built from the key for the answer you chose.
-- Then, right or wrong: “This case leaves the part of the key you have been taught. The questions that follow this answer come in a part of the course you have not reached, so the case stops here.”
+- If you miss: “The answer is …”, the same reason, and then the line built from the answers’ own wording for the answer you chose.
+- Then, right or wrong: “The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.”
 
 #### Last stage. Each of these is something a person might say that uses one of this unit’s names, or reasons in one of its ways. Each has a fault. The first is worked for you. For the rest, answer before the fault is shown.
 
@@ -2383,7 +2383,7 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - The answer is: **Tax on a sale that does not have to happen.**
-- If you chose another answer, the line is built from the key, as for any other question.
+- If you chose another answer, the line is built from the answers’ own wording, as for any other question.
 - The fault: Wealthy people do pay tax. What the claim describes is money that has gone up in price and has not been sold. The tax on that gain is put off, not cancelled: it comes when something is sold. Income that investments pay out every year is taxed whether or not anything is sold, so money that never leaves does not mean tax that never comes.
 - The claim, put right (always the last thing shown): People with a lot of money often pay less tax sooner by not selling investments that have risen, because the tax on *a gain* is due only on a sale. That is **“Tax on a sale that does not have to happen”**. Tax on income paid out every year, and on any gain when it is finally sold, still comes.
 
@@ -2403,7 +2403,7 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - The answer is: **A yearly charge for picking investments.**
-- If you chose another answer, the line is built from the key, as for any other question.
+- If you chose another answer, the line is built from the answers’ own wording, as for any other question.
 - The fault: The claim looks only at the part that builds up. A whole-life payment is split three ways: cover that pays out if you die, a savings part, and charges, and part of those charges is a commission paid to the person who sold it. The insurer's managers also choose what the savings part holds, and charge for that too. The claim says nothing about how much of each payment goes to the charges, or what those pay for. Asked **“What is taking money out of it?”**, the answer includes **“A yearly charge for picking investments”**.
 - The claim, put right (always the last thing shown): Some of what you pay builds up inside it, and some of it goes in charges, including a commission to the seller and a yearly charge for choosing the investments. Ask what each part costs. The same cover and *an index fund* bought separately usually cost far less in total.
 
@@ -2423,21 +2423,21 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - The answer is: **Tax on this year’s gain, while another investment sits below what it cost.**
-- If you chose another answer, the line is built from the key, as for any other question.
+- If you chose another answer, the line is built from the answers’ own wording, as for any other question.
 - The fault: The claim treats not selling as costless. If a sale this year made *a gain* and an investment still held in that account is worth less than was paid, selling it sets its loss against the profit and lowers the tax bill. A loss on paper is a real fact about what the money is worth; refusing to sell it does not bring the price back, and it leaves the tax higher.
 - The claim, put right (always the last thing shown): A fall on paper becomes useful for tax only when the investment is sold. With *a gain* taxed this year and a second investment in that account below its cost, the answer is **“Tax on this year’s gain, while another investment sits below what it cost”**: selling the fallen one cuts the tax, and the money can go into a similar investment.
 
-**When the drill ends.** The learner sees their own results: first-try accuracy for each stage, whole routes beside single questions, the pair of names they mixed up most often, and what will come back and when. Anything missed was asked again before the drill ended. Nothing here is graded. A miss only decides what comes back.
+**When the drill ends.** The learner sees their own results: first-try accuracy for each stage, whole cases beside single questions, the pair of names they mixed up most often, and what will come back and when. Anything missed was asked again before the drill ended. Nothing here is graded. A miss only decides what comes back.
 
 ### 41. What to carry away
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 41 of 43*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 41 of 43*
 
 [reviewers only: card kind `recap`, id `recap`]
 
-You have now run the key on your own. This card puts the unit in one place, in the key’s words.
+You have now run the questions on your own. This card puts the unit in one place.
 
-**The key for this unit, in its own words**
+**This unit’s questions and answers**
 
 What is taking money out of it?
 - A yearly charge for picking investments → Switch to index funds
@@ -2475,12 +2475,12 @@ What is taking money out of it?
 - Tax comes in three shapes: on income every year, with nothing sold; on *a gain*, only if a sale is made; and on *a gain* already made this year, with a loss waiting beside it. Each has its own fix. Do not sell because tax is in the case. Sell only when a loss is there to use, or when the sale has a job to do.
 - A fixed number of pounds taken from a pot that has shrunk is a bigger share than it was. The fix is a percentage of what *the pot* is worth now, worked out again each year.
 - **“Nothing more than it should”** is a real answer and a common one. Something does come out, and the case shows it is worth it or already as low as it can be. If you cannot point to words that show a problem, do not invent one, and do not buy a cure for a problem the case does not have.
-- Two cases belong here and can look like **“A fall in prices it is not ready for”**: a sale to put *the mix* back that new money could make unnecessary, and a fixed sum of pounds that a fall in prices has made too big for *the pot*. In both the key’s answer to the first question is **“Something taken out of it every year”**.
-- Your route is two answers long: the first question, then this one. A right name reached by a wrong first answer counts as a miss.
+- Two cases belong here and can look like **“A fall in prices it is not ready for”**: a sale to put *the mix* back that new money could make unnecessary, and a fixed sum of pounds that a fall in prices has made too big for *the pot*. In both the answer to the first question is **“Something taken out of it every year”**.
+- You give two answers on the way: the first question, then this one. A right name reached by a wrong first answer counts as a miss.
 
 ### 42. Where would you meet this?
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 42 of 43*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 42 of 43*
 
 [reviewers only: card kind `transfer`, id `transfer`]
 
@@ -2505,7 +2505,7 @@ One line is enough. It is kept on this device only and is never marked.
 
 ### 43. A plan, if you want one
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 43 of 43*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 43 of 43*
 
 [reviewers only: card kind `plan`, id `plan`]
 
@@ -2527,7 +2527,7 @@ Or write your own: If …, then I will …
 
 ## After the unit: what comes back on later days
 
-A name that is due returns as a case the learner has not seen, next to a case of the name they most often confuse it with. Each is run as a whole route. These are the fresh cases held back for that purpose: three for each name, one for each scheduled return. The first return is about two days after the drill, the next about a week after that, the next about three and a half weeks later.
+A name that is due returns as a case the learner has not seen, next to a case of the name they most often confuse it with. Each is run as a whole case: every question, then the name. These are the fresh cases held back for that purpose: three for each name, one for each scheduled return. The first return is about two days after the drill, the next about a week after that, the next about three and a half weeks later.
 
 **Return case 1 of 24**
 
@@ -2542,10 +2542,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **Something taken out of it every year.** The case is about something that comes out of *the pot* every year: “The fund's managers take 1.5% a year”. It has no claim, no bill and no handover.
   - If you chose **Nothing more than it should**: No named work that would not otherwise get done is shown, and both charges are shares of the money.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Nothing to cut back**, the look-alike card’s lines follow: In both, a firm or an adviser is paid out of *the pot* every year, and the person may have no complaint about it. In **Switch to index funds** the charge is for choosing investments and for nothing else, and it is a percentage of *the pot*, so it grows when *the pot* does. In **Nothing to cut back** the charge is for named work that would not otherwise get done, at a set price that does not grow with *the pot*. If the charge stopped, what important job would stop being done? Can you point to that job in the case, and to a price that stays the same when *the pot* grows?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Paying a lot every year for someone to pick the investments” (one tap opens the card).
 
 **Return case 2 of 24**
@@ -2561,10 +2561,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **Something taken out of it every year.** The case is about a charge that comes out of the money every year: “who picks his shares for 1.4% a year, £4,480”. Nothing in it is a fall in prices, *a claim* or a handover.
   - If you chose **Nothing more than it should**: The letter lists no work that would not otherwise get done. A flat price for named work would look different.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Nothing to cut back**, the look-alike card’s lines follow: In both, a firm or an adviser is paid out of *the pot* every year, and the person may have no complaint about it. In **Switch to index funds** the charge is for choosing investments and for nothing else, and it is a percentage of *the pot*, so it grows when *the pot* does. In **Nothing to cut back** the charge is for named work that would not otherwise get done, at a set price that does not grow with *the pot*. If the charge stopped, what important job would stop being done? Can you point to that job in the case, and to a price that stays the same when *the pot* grows?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Paying a lot every year for someone to pick the investments” (one tap opens the card).
 
 **Return case 3 of 24**
@@ -2580,10 +2580,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **Something taken out of it every year.** Three layers of charges come out of *the pot* every year: “The funds inside it take 0.9% a year, the fund of funds takes another 0.5%, and the platform that holds it takes 0.4%”. The case has no fall in prices, no claim and no handover.
   - If you chose **Nothing more than it should**: No work such as a tax return or a plan is shown, and every layer is a percentage of the money.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Nothing to cut back**, the look-alike card’s lines follow: In both, a firm or an adviser is paid out of *the pot* every year, and the person may have no complaint about it. In **Switch to index funds** the charge is for choosing investments and for nothing else, and it is a percentage of *the pot*, so it grows when *the pot* does. In **Nothing to cut back** the charge is for named work that would not otherwise get done, at a set price that does not grow with *the pot*. If the charge stopped, what important job would stop being done? Can you point to that job in the case, and to a price that stays the same when *the pot* grows?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Paying a lot every year for someone to pick the investments” (one tap opens the card).
 
 **Return case 4 of 24**
@@ -2599,10 +2599,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **Something taken out of it every year.** The case is about a charge that comes out of *the pot* every year: “The fund charges 1.9% a year, £9,500”. It has no fall in prices, no claim and no handover.
   - If you chose **Nothing more than it should**: A good record can look like value for money. But nothing is done that would not otherwise get done, and the charge grows with *the pot*.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Nothing to cut back**, the look-alike card’s lines follow: In both, a firm or an adviser is paid out of *the pot* every year, and the person may have no complaint about it. In **Switch to index funds** the charge is for choosing investments and for nothing else, and it is a percentage of *the pot*, so it grows when *the pot* does. In **Nothing to cut back** the charge is for named work that would not otherwise get done, at a set price that does not grow with *the pot*. If the charge stopped, what important job would stop being done? Can you point to that job in the case, and to a price that stays the same when *the pot* grows?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Paying a lot every year for someone to pick the investments” (one tap opens the card).
 
 **Return case 5 of 24**
@@ -2618,10 +2618,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **Something taken out of it every year.** The case is about something that comes out of the money every year: “pays a specialist £3,600 a year, a flat price agreed for five years”. Nothing in it is a fall in prices, *a claim* or a handover.
   - If you chose **A yearly charge for picking investments**: The £3,600 does not pay for choosing investments. It pays for returns and forms, at a price that stays the same.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Switch to index funds**, the look-alike card’s lines follow: In both, a firm or an adviser is paid out of *the pot* every year, and the person may have no complaint about it. In **Switch to index funds** the charge is for choosing investments and for nothing else, and it is a percentage of *the pot*, so it grows when *the pot* does. In **Nothing to cut back** the charge is for named work that would not otherwise get done, at a set price that does not grow with *the pot*. If the charge stopped, what important job would stop being done? Can you point to that job in the case, and to a price that stays the same when *the pot* grows?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Yearly costs that are worth paying, or already as low as they can be” (one tap opens the card).
 
 **Return case 6 of 24**
@@ -2637,10 +2637,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **Something taken out of it every year.** The case is about tax that comes out of the money every year: “he pays £75 tax on it”. It is a small sum, and nothing else in the case could lose the money.
   - If you chose **Yearly tax on income from investments in the taxable account**: There is tax every year, but on the fund that pays out little. The bond fund is already in the pension.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Right account for each investment**, the look-alike card’s lines follow: In both, the person holds a pension and an ordinary account, and one of the funds pays out a good deal of income every year. In **Right account for each investment** the investment paying out the most is held in the taxed account, so tax is charged on it each year. In **Nothing to cut back** it already sits in *a sheltered account*, and what is taxed is the investment that pays out little. Which account holds the investment that pays out the most income each year: the taxed one or the sheltered one?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Yearly costs that are worth paying, or already as low as they can be” (one tap opens the card).
 
 **Return case 7 of 24**
@@ -2656,10 +2656,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **Something taken out of it every year.** The case is about a sum taken out of *the pot* every year to spend: “takes 4% of her pot each February”. Nothing in it is a bill, *a claim* or a handover.
   - If you chose **The same sum taken out every year from a pot that has shrunk**: The sum changed from £20,000 to £22,400. It is a percentage of *the pot*, not a fixed number of pounds.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Spend a percentage of the pot**, the look-alike card’s lines follow: In both, a sum is taken out of *the pot* every year to spend. In **Spend a percentage of the pot** the sum is a fixed number of pounds, set when *the pot* was worth more, so it becomes a bigger share as *the pot* shrinks. In **Nothing to cut back** the sum is worked out again each year as a percentage of what *the pot* is worth now, so it falls when *the pot* falls. Is the sum the same number of pounds as in earlier years, or worked out again each year from what *the pot* is worth now?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Yearly costs that are worth paying, or already as low as they can be” (one tap opens the card).
 
 **Return case 8 of 24**
@@ -2675,10 +2675,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **Something taken out of it every year.** The case is about something that comes out of the money every year: “pays a firm £5,400 a year, a flat price”. Nothing in it is a fall in prices, *a claim* or a handover.
   - If you chose **A yearly charge for picking investments**: A big percentage can look like a charge for picking. But nothing here is for choosing investments, and the price does not move with *the pot*.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Switch to index funds**, the look-alike card’s lines follow: In both, a firm or an adviser is paid out of *the pot* every year, and the person may have no complaint about it. In **Switch to index funds** the charge is for choosing investments and for nothing else, and it is a percentage of *the pot*, so it grows when *the pot* does. In **Nothing to cut back** the charge is for named work that would not otherwise get done, at a set price that does not grow with *the pot*. If the charge stopped, what important job would stop being done? Can you point to that job in the case, and to a price that stays the same when *the pot* grows?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Yearly costs that are worth paying, or already as low as they can be” (one tap opens the card).
 
 **Return case 9 of 24**
@@ -2694,10 +2694,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **Something taken out of it every year.** The case is about tax that comes out of the money every year: “she pays 25% tax on it, £350, every year”. It has no fall in prices, no claim and no handover.
   - If you chose **Nothing more than it should**: The charges are small, but the tax is not: the larger payout is the one in the taxed account.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Nothing to cut back**, the look-alike card’s lines follow: In both, the person holds a pension and an ordinary account, and one of the funds pays out a good deal of income every year. In **Right account for each investment** the investment paying out the most is held in the taxed account, so tax is charged on it each year. In **Nothing to cut back** it already sits in *a sheltered account*, and what is taxed is the investment that pays out little. Which account holds the investment that pays out the most income each year: the taxed one or the sheltered one?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Income taxed every year because it sits in the wrong account” (one tap opens the card).
 
 **Return case 10 of 24**
@@ -2713,10 +2713,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **Something taken out of it every year.** The case is about tax that comes out of the money every year: “he pays 25% tax on it, £900, every year”. It has no claim, no fall in prices and no handover.
   - If you chose **Tax on a sale that does not have to happen**: No sale is planned. The tax comes on what the fund pays out, every year.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Delay the tax by not selling**, the look-alike card’s lines follow: Both are tax on money invested in an ordinary account, and in both the tax could be smaller. In **Right account for each investment** the tax is on income that the investments pay out every year, so it comes whether or not anything is sold. In **Delay the tax by not selling** the tax is on *a gain*, and it comes only because a sale is planned. Does the tax arrive every year without anyone selling anything? Or would it arrive only if something were sold?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Income taxed every year because it sits in the wrong account” (one tap opens the card).
 
 **Return case 11 of 24**
@@ -2732,10 +2732,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **Something taken out of it every year.** The case is about tax that comes out of the money every year: “she pays 25% tax on it, £1,875, every year”. It has no fall in prices, no claim and no handover.
   - If you chose **Nothing more than it should**: There is nothing sound about where the funds sit: the larger payout is in the taxed account.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Nothing to cut back**, the look-alike card’s lines follow: In both, the person holds a pension and an ordinary account, and one of the funds pays out a good deal of income every year. In **Right account for each investment** the investment paying out the most is held in the taxed account, so tax is charged on it each year. In **Nothing to cut back** it already sits in *a sheltered account*, and what is taxed is the investment that pays out little. Which account holds the investment that pays out the most income each year: the taxed one or the sheltered one?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Income taxed every year because it sits in the wrong account” (one tap opens the card).
 
 **Return case 12 of 24**
@@ -2751,10 +2751,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **Something taken out of it every year.** The case is about tax that comes out of the money every year: “he pays 25% tax on it, £500, every year”. It has no claim, no fall in prices and no handover.
   - If you chose **Tax on a sale that does not have to happen**: A sale and a tax on *a gain* are in the case, which can look like a sale nobody needs. But this sale has a job: it stops £500 of tax every year, at a cost of £100 once.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Delay the tax by not selling**, the look-alike card’s lines follow: Both are tax on money invested in an ordinary account, and in both the tax could be smaller. In **Right account for each investment** the tax is on income that the investments pay out every year, so it comes whether or not anything is sold. In **Delay the tax by not selling** the tax is on *a gain*, and it comes only because a sale is planned. Does the tax arrive every year without anyone selling anything? Or would it arrive only if something were sold?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: It would be a different name if the sale had no job to do, so that not selling cost nothing.
 - Taught on: “Income taxed every year because it sits in the wrong account” (one tap opens the card).
 
@@ -2771,10 +2771,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **Something taken out of it every year.** The case is about a tax bill that would come out of *the pot*: “Selling would bring tax of 20% on the £30,000 gain, £6,000”. It has no claim, no handover and no bill falling due.
   - If you chose **Tax on this year’s gain, while another investment sits below what it cost**: Nothing has been sold at *a gain* yet, and nothing else in the case is worth less than it cost, so there is no loss to set against the gain.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Use a loss to cut tax**, the look-alike card’s lines follow: Both are about tax on *a gain* that comes with a sale. In **Delay the tax by not selling** the sale is only planned and nothing needs it, so holding off removes the tax. In **Use a loss to cut tax** a sale has already made *a gain* that will be taxed this year, and another investment, not yet sold, is worth less than it cost, so selling that one lowers the tax. Has something already been sold this year at *a gain*? And is another investment, not yet sold, worth less than was paid for it?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A tax bill from a sale nobody needs to make” (one tap opens the card).
 
 **Return case 14 of 24**
@@ -2790,10 +2790,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **Something taken out of it every year.** The case is about a tax bill that would come out of *the pot*: “Selling would bring tax of 20% on the £9,000 gain, £1,800”. It has no claim, no handover and no one thing that is most of his money.
   - If you chose **Tax on this year’s gain, while another investment sits below what it cost**: There is no loss in the case and nothing has been sold yet this year, so nothing could be set against the gain.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Use a loss to cut tax**, the look-alike card’s lines follow: Both are about tax on *a gain* that comes with a sale. In **Delay the tax by not selling** the sale is only planned and nothing needs it, so holding off removes the tax. In **Use a loss to cut tax** a sale has already made *a gain* that will be taxed this year, and another investment, not yet sold, is worth less than it cost, so selling that one lowers the tax. Has something already been sold this year at *a gain*? And is another investment, not yet sold, worth less than was paid for it?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A tax bill from a sale nobody needs to make” (one tap opens the card).
 
 **Return case 15 of 24**
@@ -2809,10 +2809,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **Something taken out of it every year.** The case is about a tax bill that would come out of *the pot*: “Selling would bring tax of 20% on the £11,000 gain, £2,200”. It has no claim and no handover.
   - If you chose **Tax on this year’s gain, while another investment sits below what it cost**: No sale has been made at *a gain* this year, and none of the six funds is described as worth less than it cost.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Use a loss to cut tax**, the look-alike card’s lines follow: Both are about tax on *a gain* that comes with a sale. In **Delay the tax by not selling** the sale is only planned and nothing needs it, so holding off removes the tax. In **Use a loss to cut tax** a sale has already made *a gain* that will be taxed this year, and another investment, not yet sold, is worth less than it cost, so selling that one lowers the tax. Has something already been sold this year at *a gain*? And is another investment, not yet sold, worth less than was paid for it?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A tax bill from a sale nobody needs to make” (one tap opens the card).
 
 **Return case 16 of 24**
@@ -2826,12 +2826,12 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **Delay the tax by not selling**.” What is taking money out of it? **Tax on a sale that does not have to happen.** A sale is planned that would bring tax on *a gain*, and the case shows it is not needed: “sell £21,000 of shares and buy bonds to put the mix back. That sale would bring tax of 20% on a £10,000 gain, £2,000. Ingrid is about to pay in £30,000 of new money”. £30,000 of new money put into bonds would make them £180,000 of £600,000, which is 30%, so *the mix* would be back with no sale.
   - Why not **Use a loss to cut tax**: There is no loss in the case, and no sale has been made this year. The case is about a sale being planned.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What could lose this money? **Something taken out of it every year.** In this case *the mix* has moved from its plan, which can look like **“A fall in prices it is not ready for”**. But the sale that would put it back brings a tax bill, “That sale would bring tax of 20% on a £10,000 gain, £2,000”, and new money paid in could do the same job. When a case shows both, the key gives the answer about what is taken out.
+  - What could lose this money? **Something taken out of it every year.** In this case *the mix* has moved from its plan, which can look like **“A fall in prices it is not ready for”**. But the sale that would put it back brings a tax bill, “That sale would bring tax of 20% on a £10,000 gain, £2,000”, and new money paid in could do the same job. When a case shows both, the answer is the one about what is taken out.
   - If you chose **Tax on this year’s gain, while another investment sits below what it cost**: There is no loss in the case, and no sale has been made this year. The case is about a sale being planned.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Use a loss to cut tax**, the look-alike card’s lines follow: Both are about tax on *a gain* that comes with a sale. In **Delay the tax by not selling** the sale is only planned and nothing needs it, so holding off removes the tax. In **Use a loss to cut tax** a sale has already made *a gain* that will be taxed this year, and another investment, not yet sold, is worth less than it cost, so selling that one lowers the tax. Has something already been sold this year at *a gain*? And is another investment, not yet sold, worth less than was paid for it?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: It would be a different name if the shares had to be sold, for example because the money was needed for a bill.
 - Taught on: “A tax bill from a sale nobody needs to make” (one tap opens the card).
 
@@ -2848,10 +2848,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **Something taken out of it every year.** The case is about tax that will come out of the money this year: “he will owe tax of £1,100 on that gain”. It has no handover and no one thing that is most of what he owns.
   - If you chose **Tax on a sale that does not have to happen**: The sale has been made. There is no sale to hold off; there is a loss waiting beside *a gain*.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Delay the tax by not selling**, the look-alike card’s lines follow: Both are about tax on *a gain* that comes with a sale. In **Delay the tax by not selling** the sale is only planned and nothing needs it, so holding off removes the tax. In **Use a loss to cut tax** a sale has already made *a gain* that will be taxed this year, and another investment, not yet sold, is worth less than it cost, so selling that one lowers the tax. Has something already been sold this year at *a gain*? And is another investment, not yet sold, worth less than was paid for it?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A gain taxed this year, while another investment sits below what it cost” (one tap opens the card).
 
 **Return case 18 of 24**
@@ -2867,10 +2867,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **Something taken out of it every year.** The case is about tax that will come out of the money this year: “which will bring tax of £600”. It has no handover and no one thing that is most of what she owns.
   - If you chose **Tax on a sale that does not have to happen**: The sale has been made. The fund that rose is not being sold, and the one that fell is the one that matters.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Delay the tax by not selling**, the look-alike card’s lines follow: Both are about tax on *a gain* that comes with a sale. In **Delay the tax by not selling** the sale is only planned and nothing needs it, so holding off removes the tax. In **Use a loss to cut tax** a sale has already made *a gain* that will be taxed this year, and another investment, not yet sold, is worth less than it cost, so selling that one lowers the tax. Has something already been sold this year at *a gain*? And is another investment, not yet sold, worth less than was paid for it?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A gain taxed this year, while another investment sits below what it cost” (one tap opens the card).
 
 **Return case 19 of 24**
@@ -2886,10 +2886,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **Something taken out of it every year.** The case is about tax that will come out of the money this year: “he will owe tax of £2,400”. It has no handover and no claim.
   - If you chose **Tax on a sale that does not have to happen**: The sale was made in the spring, so there is no sale left to hold off. A loss is sitting beside the gain.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Delay the tax by not selling**, the look-alike card’s lines follow: Both are about tax on *a gain* that comes with a sale. In **Delay the tax by not selling** the sale is only planned and nothing needs it, so holding off removes the tax. In **Use a loss to cut tax** a sale has already made *a gain* that will be taxed this year, and another investment, not yet sold, is worth less than it cost, so selling that one lowers the tax. Has something already been sold this year at *a gain*? And is another investment, not yet sold, worth less than was paid for it?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A gain taxed this year, while another investment sits below what it cost” (one tap opens the card).
 
 **Return case 20 of 24**
@@ -2905,10 +2905,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **Something taken out of it every year.** The case is about tax that will come out of the money this year: “she will owe tax of £1,400”. The quarrel with the adviser is not about a charge.
   - If you chose **Tax on a sale that does not have to happen**: The sale has been made, so there is nothing to hold off. What the case shows is a loss in the same account as *a gain*, and her anger about the adviser is not what settles it.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Delay the tax by not selling**, the look-alike card’s lines follow: Both are about tax on *a gain* that comes with a sale. In **Delay the tax by not selling** the sale is only planned and nothing needs it, so holding off removes the tax. In **Use a loss to cut tax** a sale has already made *a gain* that will be taxed this year, and another investment, not yet sold, is worth less than it cost, so selling that one lowers the tax. Has something already been sold this year at *a gain*? And is another investment, not yet sold, worth less than was paid for it?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A gain taxed this year, while another investment sits below what it cost” (one tap opens the card).
 
 **Return case 21 of 24**
@@ -2924,10 +2924,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **Something taken out of it every year.** The case is about a sum taken out of *the pot* every year to spend: “set his spending at £30,000 a year”. It has no fall in prices and no handover.
   - If you chose **Nothing more than it should**: Spending is sound when it is reset each year as a percentage of *the pot*. Kofi set a number of pounds and left it.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Nothing to cut back**, the look-alike card’s lines follow: In both, a sum is taken out of *the pot* every year to spend. In **Spend a percentage of the pot** the sum is a fixed number of pounds, set when *the pot* was worth more, so it becomes a bigger share as *the pot* shrinks. In **Nothing to cut back** the sum is worked out again each year as a percentage of what *the pot* is worth now, so it falls when *the pot* falls. Is the sum the same number of pounds as in earlier years, or worked out again each year from what *the pot* is worth now?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “The same sum taken out each year from a pot that has shrunk” (one tap opens the card).
 
 **Return case 22 of 24**
@@ -2943,10 +2943,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **Something taken out of it every year.** The case is about a sum taken out of *the pot* every year to spend: “He still takes £75,000”. It has no claim and no handover.
   - If you chose **Nothing more than it should**: The sum was never reset as a percentage of what *the pot* is worth, and the loan made *the pot* smaller under it.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Nothing to cut back**, the look-alike card’s lines follow: In both, a sum is taken out of *the pot* every year to spend. In **Spend a percentage of the pot** the sum is a fixed number of pounds, set when *the pot* was worth more, so it becomes a bigger share as *the pot* shrinks. In **Nothing to cut back** the sum is worked out again each year as a percentage of what *the pot* is worth now, so it falls when *the pot* falls. Is the sum the same number of pounds as in earlier years, or worked out again each year from what *the pot* is worth now?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “The same sum taken out each year from a pot that has shrunk” (one tap opens the card).
 
 **Return case 23 of 24**
@@ -2962,10 +2962,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **Something taken out of it every year.** The case is about a sum taken out of *the pot* every year to spend: “she still takes £20,000”. Nothing in it is a fall in prices or a handover.
   - If you chose **Nothing more than it should**: Spending is sound when it is reset each year as a percentage of *the pot*. Marguerite set a number of pounds and left it.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Nothing to cut back**, the look-alike card’s lines follow: In both, a sum is taken out of *the pot* every year to spend. In **Spend a percentage of the pot** the sum is a fixed number of pounds, set when *the pot* was worth more, so it becomes a bigger share as *the pot* shrinks. In **Nothing to cut back** the sum is worked out again each year as a percentage of what *the pot* is worth now, so it falls when *the pot* falls. Is the sum the same number of pounds as in earlier years, or worked out again each year from what *the pot* is worth now?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “The same sum taken out each year from a pot that has shrunk” (one tap opens the card).
 
 **Return case 24 of 24**
@@ -2981,9 +2981,9 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **Something taken out of it every year.** The case is about a sum taken out of *the pot* every year to spend: “he still takes £200,000”. It has no fall in prices and no handover.
   - If you chose **Nothing more than it should**: A very large pot can sound as if nothing needs cutting. But spending is only sound when it is reset as a percentage of what *the pot* is worth, and Reza kept a number of pounds.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Nothing to cut back**, the look-alike card’s lines follow: In both, a sum is taken out of *the pot* every year to spend. In **Spend a percentage of the pot** the sum is a fixed number of pounds, set when *the pot* was worth more, so it becomes a bigger share as *the pot* shrinks. In **Nothing to cut back** the sum is worked out again each year as a percentage of what *the pot* is worth now, so it falls when *the pot* falls. Is the sum the same number of pounds as in earlier years, or worked out again each year from what *the pot* is worth now?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “The same sum taken out each year from a pot that has shrunk” (one tap opens the card).
 

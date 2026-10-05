@@ -1,16 +1,16 @@
 # Learner view: Psychology, Unit One: Four kinds of thing
 
-*The key’s first question, and the four kinds of thing it sorts every case into.* Unit revision 1, built to lesson standard 1, status: draft.
+*The first question, and the four kinds of thing it sorts every case into.* Unit revision 2, built to lesson standard 1, status: draft.
 
 This file is generated from the data files by `tools/render-learner-view.mjs`. It shows every screen in the order a learner meets it. In the app one card is on screen at a time and the learner moves on when ready.
 
-- **Bold text in quotation marks** is the key’s own wording, printed from `key.js`. Bold names are the outcome names from the same file. Neither is typed anywhere else. "What you must be able to point to" lines and "How to tell them apart" lines are also printed from one place each (the key and the look-alike ledger).
-- This is the subject’s gate unit. It teaches the key’s first question, and its names are that question’s answers: wherever a bold answer in quotation marks appears, it is also the name of a kind.
+- **Bold text in quotation marks** is the subject’s own wording for its questions and answers, written once and printed everywhere. Bold names are the names, written once in the same place. Neither is typed anywhere else. "What you must be able to point to" lines and "How to tell them apart" lines are also printed from one place each (the subject’s questions and the pairs it compares).
+- This is the subject’s first unit. It teaches the first question, and its names are that question’s answers: wherever a bold answer in quotation marks appears, it is also the name of a kind.
 - ⟦Double brackets⟧ show the words the app marks in a case (one highlight style everywhere).
 - The line in italics under each heading is the app’s top bar. The line in square brackets after it is for reviewers and is not shown to the learner.
 - Headings, prompt wording and stage instructions that are the same in every unit are the app’s wording, not this unit’s.
 - "Shown as soon as you …" is what appears the moment the learner answers. Nothing is hidden behind a second tap the first time a case is met, or after a miss.
-- After every answer the app shows, in this order: the right answer in the key’s words; the reason, quoting the marked words; for a name, why the nearest wrong name fails; after a miss, a line about the answer the learner chose; and last a link to the card that taught it. Where a line about the learner’s own choice is not written for the case, the app builds it from the key, and this file says so in place of repeating it.
+- After every answer the app shows, in this order: the right answer; the reason, quoting the marked words; for a name, why the nearest wrong name fails; after a miss, a line about the answer the learner chose; and last a link to the card that taught it. Where a line about the learner’s own choice is not written for the case, the app builds it from the answers’ own wording, and this file says so in place of repeating it.
 
 ---
 
@@ -18,7 +18,7 @@ This file is generated from the data files by `tools/render-learner-view.mjs`. I
 
 ### 1. Before any name: what kind of thing are you looking at?
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 1 of 35*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 1 of 35*
 
 [reviewers only: card kind `orient`, id `orient-kind`]
 
@@ -30,11 +30,11 @@ Each of those is a label reached in one jump, and the three are not even about t
 
 So before any label, there is an earlier question: what kind of thing is in front of you? This unit teaches that question.
 
-Two words are used all the way through, so here they are once. A case is a short account of something a person said or did: a few sentences, the sort of thing a friend tells you or you read in a message. The key is a short list of questions that you put to a case, always in the same order. Each answer narrows down what the case can be, until one name is left.
+One word is used all the way through, so here it is once. A case is a short account of something a person said or did: a few sentences, the sort of thing a friend tells you or you read in a message. You put a short list of questions to a case, always in the same order. Each answer narrows down what the case can be, until one name is left.
 
-This unit teaches the first question of the key and nothing after it. That question sorts a case into one of four kinds, and in this unit the kind is the name. The labels people use in daily life, such as the three above, are finer than these four kinds, and this unit does not teach any of them. Three of the four kinds lead on to a further question, taught in a later unit, and that question gives a finer name. The fourth kind does not: when the answer is **“A passing moment”**, the key has nothing more to ask, and that is a result in its own right. Everything else in the subject starts from the answer to this first question.
+This unit teaches the first question and nothing after it. That question sorts a case into one of four kinds, and in this unit the kind is the name. The labels people use in daily life, such as the three above, are finer than these four kinds, and this unit does not teach any of them. Three of the four kinds lead on to a further question, taught in a later unit, and that question gives a finer name. The fourth kind does not: when the answer is **“A passing moment”**, there is nothing more to ask, and that is a result in its own right. Everything else in the subject starts from the answer to this first question.
 
-**The part of the key this unit teaches.** This is a preview. You are not expected to follow it yet: every line is explained on the cards that come next. The question and its answers are in the key’s own words. Beside each answer, in plain words, is what a case of that kind is made of. There are four answers, and in this unit each answer is itself the name of a kind.
+**The questions this unit teaches.** This is a preview. You are not expected to follow it yet: every line is explained on the cards that come next. The question and its answers are worded exactly as you will meet them. Beside each answer, in plain words, is what a case of that kind is made of. There are four answers, and in this unit each answer is itself the name of a kind.
 
 What kind of thing is this?
 - One person’s reasoning → one person, and their reasons for a view or a choice
@@ -48,14 +48,14 @@ The unit has six parts, and you can stop after any of them.
 2. The second kind: two people
 3. The third kind: a person across years
 4. The fourth kind: a moment, and nothing to name
-5. The pairs still to compare, and the key’s first question
+5. The pairs still to compare, and the first question
 6. Two whole cases, then the drill
 
 Each name is taught through cases first. After every step you answer one question about a new case, and the answer and the reason are shown straight away. Nothing here is graded. A miss only decides what comes back.
 
 ### 2. One person, and their reasons for a view or a choice
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 2 of 35*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 2 of 35*
 
 [reviewers only: card kind `meet`, id `meet-reasoning`]
 
@@ -75,7 +75,7 @@ Stripped of its story, the case is this:
 
 What you are shown is one decision and the thinking behind it. Leila has a choice to make, and the case gives you her reasons and where she comes out. That is all a case of this kind is made of: one person, something that is theirs, and the reasons they give for it.
 
-The something that is theirs can be one of three things: a choice they are making (as Leila is), a view they hold about what is true, or something they have already done. Reasons are not only sentences with "because" in them. A person can also be handed a fact and show their reasoning by what they do with it: they change their mind, or they explain why the fact does not count. The key counts that too, and the line you will see below includes it.
+The something that is theirs can be one of three things: a choice they are making (as Leila is), a view they hold about what is true, or something they have already done. Reasons are not only sentences with "because" in them. A person can also be handed a fact and show their reasoning by what they do with it: they change their mind, or they explain why the fact does not count. That counts too, and the line you will see below includes it.
 
 Notice two things the kind does not depend on. It does not depend on whether the reasoning is any good. Leila’s reasons look reasonable. Someone else might talk themselves into a bad choice with reasons that only sound good. Both are the same kind of thing, because in both, the reasoning is what there is to judge.
 
@@ -83,15 +83,15 @@ It also does not depend on who is listening. Leila’s sister hears every word, 
 
 **What you must be able to point to.** A view, a choice or an act that is the person’s own, and the reasons they give for it or what they do with the facts about it. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What kind of thing is this?”**
+**The question:** **“What kind of thing is this?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“One person’s reasoning”**
+**Its answer for a case like this one:** **“One person’s reasoning”**
 
-In this unit the key’s answer is also the name of the kind: **“One person’s reasoning”**. "Reasoning" means the thinking a person does to reach a view or a choice, to defend it, or to change it. The word does not say the thinking is good. Careful reasoning and self-serving reasoning (reasoning arranged to suit the person doing it) are both reasoning.
+In this unit the answer is also the name of the kind: **“One person’s reasoning”**. "Reasoning" means the thinking a person does to reach a view or a choice, to defend it, or to change it. The word does not say the thinking is good. Careful reasoning and self-serving reasoning (reasoning arranged to suit the person doing it) are both reasoning.
 
 ### 3. One person’s reasoning: the same thing in a different story
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 3 of 35*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 3 of 35*
 
 [reviewers only: card kind `again`, id `again-reasoning`]
 
@@ -126,7 +126,7 @@ The two stories share nothing else. So this is not about jobs or about crime. It
 
 ### 4. The story does not decide the kind
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 4 of 35*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 4 of 35*
 
 [reviewers only: card kind `lens`, id `lens-kind`]
 
@@ -140,13 +140,13 @@ From here on, the cases change their stories on purpose. Sometimes two cases wil
 
 One more thing changes on purpose: how bad the behaviour sounds. An ugly remark and a gentle one can be the same kind of thing, and something that sounds alarming can turn out to be the kind with nothing in it to name. The kind is not a verdict on anyone. It only says what there is to look at.
 
-**Stays the same from case to case:** what the case is made of, which is what the key asks about: **“What kind of thing is this?”**
+**Stays the same from case to case:** what the case is made of, which is what the question asks about: **“What kind of thing is this?”**
 
 **Changes on purpose:** the topic; the people; how bad it sounds; whether you like the person; whether anything is wrong at all.
 
 ### 5. One person’s reasoning: what it is like
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 5 of 35*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 5 of 35*
 
 [reviewers only: card kind `portrait`, id `portrait-reasoning`]
 
@@ -176,7 +176,7 @@ In your own life it is the voice that explains your choices to you: why you boug
 
 ### 6. A question about a new case
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 6 of 35*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 6 of 35*
 
 [reviewers only: card kind `check`, id `check-reasoning`]
 
@@ -191,7 +191,7 @@ The pieces you can tap:
 
 **Shown as soon as you tap**
 
-- If you are right: “Right: ‘The repair was £300, and a new one would cost me £200 a month’.” These words are Esme’s reasons for a choice of her own: what the repair cost, set against what a new car would cost. The neighbour only listens. Nothing is said about the neighbour, and nothing in the case goes beyond this one choice. The key’s answer for this case is **“One person’s reasoning”**.
+- If you are right: “Right: ‘The repair was £300, and a new one would cost me £200 a month’.” These words are Esme’s reasons for a choice of her own: what the repair cost, set against what a new car would cost. The neighbour only listens. Nothing is said about the neighbour, and nothing in the case goes beyond this one choice. The answer for this case is **“One person’s reasoning”**.
 - If you miss: “The words are ‘The repair was £300, and a new one would cost me £200 a month’.” The same reason follows, and then a line about the piece you tapped:
   - “Esme has decided to keep her old car for another year”: That is the choice, and it is half of what you point to. The question asks for the other half: the reasons she gives for it.
   - “She tells her neighbour why”: That only tells you who is listening. The neighbour could be anyone, and the case would be the same.
@@ -205,7 +205,7 @@ The pieces you can tap:
 
 ### 7. Two people, and what one says or does to the other
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 7 of 35*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 7 of 35*
 
 [reviewers only: card kind `meet`, id `meet-tactic`]
 
@@ -227,19 +227,19 @@ This case is not made of one person’s reasons. Carla is not weighing a choice,
 
 That is what this second kind is made of. There are two people. One of them says or does something to the other. And what is said or done is about that other person, or about something that has passed between the two. To look at a case like this you have to keep both people in view. Try the test from the first kind: take Ben out. There is nothing left to look at.
 
-As with the first kind, the kind is not a verdict. Most of what people say and do to each other is fair: a friend who cancels and apologises, a colleague who says "I remember it differently", a manager who gives praise. All of those are this kind too. Whether what Carla said was a fair defence or something worse is a separate question. The key asks it later, and this unit does not teach it. Here you are only saying what there is to look at: what she said to him, and where it left him.
+As with the first kind, the kind is not a verdict. Most of what people say and do to each other is fair: a friend who cancels and apologises, a colleague who says "I remember it differently", a manager who gives praise. All of those are this kind too. Whether what Carla said was a fair defence or something worse is a separate question. A later question asks it, and this unit does not teach it. Here you are only saying what there is to look at: what she said to him, and where it left him.
 
 **What you must be able to point to.** Two people, and something one of them says or does to the other that is about that person or about what has happened between the two. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What kind of thing is this?”**
+**The question:** **“What kind of thing is this?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“Something one person does to another”**
+**Its answer for a case like this one:** **“Something one person does to another”**
 
-The key’s answer, and so the name of the kind, is **“Something one person does to another”**. "Another" means another person: the one it is said or done to. This unit calls that person the other person. "Does" covers saying as well as doing, because words said to someone are something done to them.
+The answer, and so the name of the kind, is **“Something one person does to another”**. "Another" means another person: the one it is said or done to. This unit calls that person the other person. "Does" covers saying as well as doing, because words said to someone are something done to them.
 
 ### 8. Something one person does to another: the same thing in a different story
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 8 of 35*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 8 of 35*
 
 [reviewers only: card kind `again`, id `again-tactic`]
 
@@ -274,7 +274,7 @@ One of these sounds like an attack and the other sounds like love. That makes no
 
 ### 9. Something one person does to another: what it is like
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 9 of 35*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 9 of 35*
 
 [reviewers only: card kind `portrait`, id `portrait-tactic`]
 
@@ -306,13 +306,13 @@ In your own life this is the kind you are in the middle of, on one side or the o
 
 ### 10. A question about a new case
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 10 of 35*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 10 of 35*
 
 [reviewers only: card kind `check`, id `check-tactic`]
 
 > When Rob's mother phones, she tells him that his sister visits every week, and that a son who cared would do the same. Rob puts down the phone and cancels his weekend away.
 
-**The key asks:** **“What kind of thing is this?”** Which of the answers you have met so far fits this case?
+**The question:** **“What kind of thing is this?”** Which of the answers you have met so far fits this case?
 
 - One person’s reasoning
 - Something one person does to another
@@ -327,7 +327,7 @@ In your own life this is the kind you are in the middle of, on one side or the o
 
 ### 11. One person’s reasoning or Something one person does to another: telling them apart
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 11 of 35*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 11 of 35*
 
 [reviewers only: card kind `lookalike`, id `look-reasoning-tactic`]
 
@@ -349,9 +349,9 @@ You have now met two kinds on their own. They are easy to mix up, because in bot
 
 **Why this one and not the other**
 
-In Case A Dev is explaining something he did, and the explanation is about Dev: his month at work. His brother is only listening. Take the brother away and the case is unchanged: a man giving a reason for his own mistake. The key’s answer is **“One person’s reasoning”**.
+In Case A Dev is explaining something he did, and the explanation is about Dev: his month at work. His brother is only listening. Take the brother away and the case is unchanged: a man giving a reason for his own mistake. The answer is **“One person’s reasoning”**.
 
-In Case B the same man, about the same forgotten birthday, says something to his wife about his wife: that she is too sensitive, and what she "always" does. The case shows where it leaves her: apologising for having been hurt. Take her away and nothing is left. The key’s answer is **“Something one person does to another”**.
+In Case B the same man, about the same forgotten birthday, says something to his wife about his wife: that she is too sensitive, and what she "always" does. The case shows where it leaves her: apologising for having been hurt. Take her away and nothing is left. The answer is **“Something one person does to another”**.
 
 So the same person, about the same forgotten birthday, can give you two different kinds of case. What separates them is not how bad it sounds. It is who the words are about and who they are said to.
 
@@ -359,7 +359,7 @@ So the same person, about the same forgotten birthday, can give you two differen
 
 Who are the words about, and who are they said to? Are they about the speaker’s own view or choice, with anyone else only listening? Or are they said to another person, about that person or about what has happened between the two?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | One person’s reasoning | Something one person does to another |
 |---|---|---|
@@ -369,7 +369,7 @@ Who are the words about, and who are they said to? Are they about the speaker’
 
 ### 12. A reason that is about the other person
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 12 of 35*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 12 of 35*
 
 [reviewers only: card kind `exception`, id `exc-blame`]
 
@@ -379,7 +379,7 @@ The last card kept the two kinds tidy: in Case A Dev’s words were about himsel
 
 > After a row, Marta says to her husband Kofi, 'I only shouted because you never listen. If you listened, I wouldn't have to.' Kofi spends the rest of the evening asking himself whether he ever listens.
 
-Marta gives a reason for something she did: she shouted, and here is why. A reason for something the person did is what you point to for **“One person’s reasoning”**. Yet the key’s answer for this case is **“Something one person does to another”**.
+Marta gives a reason for something she did: she shouted, and here is why. A reason for something the person did is what you point to for **“One person’s reasoning”**. Yet the answer for this case is **“Something one person does to another”**.
 
 **You are asked:** This looks like **“One person’s reasoning”**. Before you read why it is **“Something one person does to another”**, tap the words in the case that settle it.
 
@@ -398,17 +398,17 @@ Marta’s reason is not about Marta. It is about Kofi, and she says it to him. A
 
 The case shows the second job being done. Kofi does not spend the evening thinking about the shouting. He spends it asking whether he ever listens. The question on the table has changed from what Marta did to what Kofi is like.
 
-So this case shows both kinds at once: a person’s reason for her own act, and something said to another person about him. When a case shows both, the key has to choose one answer, and it chooses the second kind.
+So this case shows both kinds at once: a person’s reason for her own act, and something said to another person about him. When a case shows both, the answer has to be one, and it is the second kind.
 
 **How to tell them apart**
 
 Who are the words about, and who are they said to? Are they about the speaker’s own view or choice, with anyone else only listening? Or are they said to another person, about that person or about what has happened between the two?
 
-When a case shows both **“One person’s reasoning”** and something said or done to another person about them, the key’s answer is **“Something one person does to another”**.
+When a case shows both **“One person’s reasoning”** and something said or done to another person about them, the answer is **“Something one person does to another”**.
 
-It is worth knowing that this is the key’s decision. In life, explaining yourself and blaming someone else run into each other all the time, and nobody can draw a sharp line between them. The key gives each case one answer, so that two people using it reach the same one and can each say why.
+It is worth knowing that this is decided in advance. In life, explaining yourself and blaming someone else run into each other all the time, and nobody can draw a sharp line between them. Each case gets one answer, so that two people using these questions reach the same one and can each say why.
 
-It chooses this way round for a reason. The key’s later question about **“Something one person does to another”** looks at what was said or done to the other person, and that is what Kofi would want someone to look at. If the case were given the answer **“One person’s reasoning”**, Kofi would be left out of what the key looks at.
+It chooses this way round for a reason. The later question about **“Something one person does to another”** looks at what was said or done to the other person, and that is what Kofi would want someone to look at. If the case were given the answer **“One person’s reasoning”**, Kofi would be left out of what the questions look at.
 
 
 *End of part 2. You can stop here; your place is kept. Next: part 3, The third kind: a person across years.*
@@ -419,7 +419,7 @@ It chooses this way round for a reason. The key’s later question about **“So
 
 ### 13. One person, the same way for years, wherever they are and whoever they are with
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 13 of 35*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 13 of 35*
 
 [reviewers only: card kind `meet`, id `meet-pattern`]
 
@@ -441,21 +441,21 @@ No single moment is shown here. You are not told about one meeting or one argume
 
 The years, the places and the relationships each do a job. The years show that it is not a bad patch. The places show that it is not one job or one household bringing it out. The relationships show that it is not one other person bringing it out. When a case has all three, what is left to explain what you see is the person: it is no longer the week, the workplace or the other party.
 
-This is the largest claim of the four kinds, because it is a claim about a whole person and not about one thing they said or did. That is why it needs the most to point to, and why the key gives this answer only when the case itself shows all of it.
+This is the largest claim of the four kinds, because it is a claim about a whole person and not about one thing they said or did. That is why it needs the most to point to, and why this answer is given only when the case itself shows all of it.
 
 **What you must be able to point to.** Years, more than one place and more than one relationship, and the same behaviour in all of them. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What kind of thing is this?”**
+**The question:** **“What kind of thing is this?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“A lasting way someone is”**
+**Its answer for a case like this one:** **“A lasting way someone is”**
 
-The key’s answer, and the name of the kind, is **“A lasting way someone is”**. "Lasting" is the word that matters. It means years, and it means in more than one part of the person’s life. "A way someone is" can be anything: generous, blunt, anxious, unable to admit a mistake. The name does not say the way is a bad one. Whether a way of being does any harm is something the key asks about after this question.
+The answer, and the name of the kind, is **“A lasting way someone is”**. "Lasting" is the word that matters. It means years, and it means in more than one part of the person’s life. "A way someone is" can be anything: generous, blunt, anxious, unable to admit a mistake. The name does not say the way is a bad one. Whether a way of being does any harm is something a later question asks about.
 
-This answer is also not a diagnosis. A diagnosis is a named medical or psychological condition, and only a trained professional can give one, after a long assessment of the person. The key does something different: it says what a case shows. A case can show years, places and relationships without anyone having diagnosed anything.
+This answer is also not a diagnosis. A diagnosis is a named medical or psychological condition, and only a trained professional can give one, after a long assessment of the person. The answer does something different: it says what a case shows. A case can show years, places and relationships without anyone having diagnosed anything.
 
 ### 14. A lasting way someone is: the same thing in a different story
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 14 of 35*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 14 of 35*
 
 [reviewers only: card kind `again`, id `again-pattern`]
 
@@ -490,7 +490,7 @@ So this kind is not about any particular behaviour. Whatever the behaviour is, t
 
 ### 15. A lasting way someone is: what it is like
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 15 of 35*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 15 of 35*
 
 [reviewers only: card kind `portrait`, id `portrait-pattern`]
 
@@ -523,13 +523,13 @@ In your own life you have this much to go on about very few people: yourself, yo
 
 ### 16. A question about a new case
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 16 of 35*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 16 of 35*
 
 [reviewers only: card kind `check`, id `check-pattern`]
 
 > Colleagues at Gareth's last three jobs all describe the same man: charming for the first month, then borrowing money that he does not pay back. His ex-wife and two former flatmates say the same. It goes back at least to his early twenties.
 
-**The key asks:** **“What kind of thing is this?”** Which of the answers you have met so far fits this case?
+**The question:** **“What kind of thing is this?”** Which of the answers you have met so far fits this case?
 
 - One person’s reasoning
 - Something one person does to another
@@ -546,7 +546,7 @@ In your own life you have this much to go on about very few people: yourself, yo
 
 ### 17. Something one person does to another or A lasting way someone is: telling them apart
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 17 of 35*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 17 of 35*
 
 [reviewers only: card kind `lookalike`, id `look-tactic-pattern`]
 
@@ -568,9 +568,9 @@ The second and third kinds are easily mixed up, and usually in one direction: a 
 
 **Why this one and not the other**
 
-In Case A you are shown one episode between two people. Paul does something to Gina: he takes her idea. Then he says something to her about her: she must be confused. You see where it leaves her, wondering. Nothing in the case goes outside the two of them, and nothing goes back further than Friday. The key’s answer is **“Something one person does to another”**.
+In Case A you are shown one episode between two people. Paul does something to Gina: he takes her idea. Then he says something to her about her: she must be confused. You see where it leaves her, wondering. Nothing in the case goes outside the two of them, and nothing goes back further than Friday. The answer is **“Something one person does to another”**.
 
-In Case B Gina does not appear, and nobody is having a conversation. The case follows Paul: every job, two firms in his thirties, a sister back in his school days, a football club. The key’s answer is **“A lasting way someone is”**.
+In Case B Gina does not appear, and nobody is having a conversation. The case follows Paul: every job, two firms in his thirties, a sister back in his school days, a football club. The answer is **“A lasting way someone is”**.
 
 Case A can be true without Case B. A person can do this once, to one colleague, in one bad week of a long working life. So Case A on its own never lets you say what Paul is like. It lets you say what Paul did to Gina, which is already a good deal, and is the thing Gina needs looked at.
 
@@ -578,7 +578,7 @@ Case A can be true without Case B. A person can do this once, to one colleague, 
 
 Does the case stay between two people, and show what one of them says or does to the other? Or does it show this: years, more than one place and more than one relationship, and the same behaviour in all of them?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Something one person does to another | A lasting way someone is |
 |---|---|---|
@@ -588,17 +588,17 @@ Does the case stay between two people, and show what one of them says or does to
 
 ### 18. One evening, and then the years behind it
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 18 of 35*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 18 of 35*
 
 [reviewers only: card kind `exception`, id `exc-years`]
 
-In the last card each case showed one kind only. Some cases start as one evening between two people and then go on to show you the years. In a case like that the key has to choose between **“A lasting way someone is”** and another answer. Here is one, and the key chooses the same way every time one turns up.
+In the last card each case showed one kind only. Some cases start as one evening between two people and then go on to show you the years. In a case like that the answer has to be either **“A lasting way someone is”** or another one. Here is one, and it is decided the same way every time one turns up.
 
 *Mia and the phone*
 
 > Last night, when Aaron came home an hour late, Mia accused him of seeing someone else and went through his phone while he stood there. She did the same to the two partners before him, her sister says she was like this about friends at fifteen, and at her last job she was warned for checking up on colleagues.
 
-The case opens on one evening: Mia accuses Aaron and goes through his phone. That is two people, and something one of them does to the other, so it shows what you point to for **“Something one person does to another”**. Yet the key’s answer for this case is **“A lasting way someone is”**.
+The case opens on one evening: Mia accuses Aaron and goes through his phone. That is two people, and something one of them does to the other, so it shows what you point to for **“Something one person does to another”**. Yet the answer for this case is **“A lasting way someone is”**.
 
 **You are asked:** This looks like **“Something one person does to another”**. Before you read why it is **“A lasting way someone is”**, tap the words in the case that settle it.
 
@@ -613,19 +613,19 @@ The pieces you can tap:
 
 **Why this is A lasting way someone is and not Something one person does to another**
 
-The first half of the case is one evening between two people, and if it stopped there the key’s answer would be **“Something one person does to another”**. The second half changes what the case is made of. It leaves Aaron behind and follows Mia: two earlier partners, friends when she was fifteen, colleagues at her last job.
+The first half of the case is one evening between two people, and if it stopped there the answer would be **“Something one person does to another”**. The second half changes what the case is made of. It leaves Aaron behind and follows Mia: two earlier partners, friends when she was fifteen, colleagues at her last job.
 
 Now check it against what you must be able to point to for **“A lasting way someone is”**: years, more than one place and more than one relationship, and the same behaviour in all of them. The years are there, from fifteen to now. The places are there, home and work. The relationships are there: partners, friends, colleagues. And it is the same thing in each.
 
-So the case shows both kinds: something done to another person on one evening, and the same thing running through years. The key gives every case one answer, and for a case like this it has chosen which.
+So the case shows both kinds: something done to another person on one evening, and the same thing running through years. Every case gets one answer, and for a case like this the choice has been made.
 
 **How to tell them apart**
 
 Does the case stay between two people, and show what one of them says or does to the other? Or does it show this: years, more than one place and more than one relationship, and the same behaviour in all of them?
 
-When a case shows both **“Something one person does to another”** and the same behaviour across years, places and relationships, the key’s answer is **“A lasting way someone is”**.
+When a case shows both **“Something one person does to another”** and the same behaviour across years, places and relationships, the answer is **“A lasting way someone is”**.
 
-This too is the key’s decision, and here is the reason for it. **“Something one person does to another”** is a claim about one evening or one relationship. **“A lasting way someone is”** is a claim about a person. A case that supports the larger claim is not fully described by the smaller one.
+This too is decided in advance, and here is the reason for it. **“Something one person does to another”** is a claim about one evening or one relationship. **“A lasting way someone is”** is a claim about a person. A case that supports the larger claim is not fully described by the smaller one.
 
 The evening with Aaron does not vanish. It becomes one of the occasions that make up the long view. And notice what did the work: the last sentence of the case. Without it you would have one evening, and one evening is never enough for this answer, however bad the evening was.
 
@@ -638,11 +638,11 @@ The evening with Aaron does not vanish. It becomes one of the occasions that mak
 
 ### 19. One person, one occasion or one short stretch, and nothing to name
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 19 of 35*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 19 of 35*
 
 [reviewers only: card kind `meet`, id `meet-none`]
 
-Three kinds so far: one person’s reasons, something said or done to another person, and a person across years. Many cases are none of these, and the key has an answer for them.
+Three kinds so far: one person’s reasons, something said or done to another person, and a person across years. Many cases are none of these, and there is an answer for them.
 
 *The week of the diagnosis*
 
@@ -660,21 +660,21 @@ Set this case against the three kinds you have met. There is no reasoning to jud
 
 What is left is a person having a hard week, for a reason you can see. Her reaction fits what happened, and a reaction like this usually eases as the weeks go on. That is a fourth kind of thing, and it is a very ordinary one: most people have a hard week, a bad night or a short-tempered afternoon now and then.
 
-The colleague’s word, "moody", shows what goes wrong when this kind is missed. "Moody" sounds like a description of Amira. It is really a description of five days. The key has an answer for a case like this so that you have somewhere to put it that is not a judgement of the person.
+The colleague’s word, "moody", shows what goes wrong when this kind is missed. "Moody" sounds like a description of Amira. It is really a description of five days. There is an answer for a case like this so that you have somewhere to put it that is not a judgement of the person.
 
 **What you must be able to point to.** One occasion or one short stretch, how the person felt or acted in it, and nothing else (no reasons for a view or a choice, nothing said or done to another person about them, and no years). This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What kind of thing is this?”**
+**The question:** **“What kind of thing is this?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“A passing moment”**
+**Its answer for a case like this one:** **“A passing moment”**
 
-The key’s answer, and the name of the kind, is **“A passing moment”**. "Moment" here does not only mean a minute. It means one occasion or one short stretch: an evening, a bad day, a hard week. "Passing" means short-lived: it belongs to one occasion or one stretch, and it is not how the person is from year to year.
+The answer, and the name of the kind, is **“A passing moment”**. "Moment" here does not only mean a minute. It means one occasion or one short stretch: an evening, a bad day, a hard week. "Passing" means short-lived: it belongs to one occasion or one stretch, and it is not how the person is from year to year.
 
-After this answer the key asks nothing more. It has no finer name to give, and that is a result in its own right: you looked, and there was nothing to name.
+After this answer nothing more is asked. It has no finer name to give, and that is a result in its own right: you looked, and there was nothing to name.
 
 ### 20. A passing moment: the same thing in a different story
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 20 of 35*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 20 of 35*
 
 [reviewers only: card kind `again`, id `again-none`]
 
@@ -707,7 +707,7 @@ One of these stories is sad and one ends well. One lasts a week and the other a 
 
 ### 21. A passing moment: what it is like
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 21 of 35*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 21 of 35*
 
 [reviewers only: card kind `portrait`, id `portrait-none`]
 
@@ -724,7 +724,7 @@ You know what to point to for **“A passing moment”**. Because this kind is p
 
 **What it is not**
 
-This answer does not say that nothing happened. Amira really was short with people, and it may have stung. The answer says only that the case holds a moment and no more, so the key has nothing to name.
+This answer does not say that nothing happened. Amira really was short with people, and it may have stung. The answer says only that the case holds a moment and no more, so there is nothing to name.
 
 It is not a promise about the future either. If the same thing is still there in a year, in other places and with other people, that will be a different case, and it will get a different answer.
 
@@ -740,7 +740,7 @@ You will meet it most in the words people use about each other’s bad days, and
 
 ### 22. A question about a new case
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 22 of 35*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 22 of 35*
 
 [reviewers only: card kind `check`, id `check-none`]
 
@@ -755,7 +755,7 @@ The pieces you can tap:
 
 **Shown as soon as you tap**
 
-- If you are right: “Right: ‘Two days after his mother's funeral’.” These words place the case on one occasion and give it a cause: a funeral two days before. Nothing else is shown. Callum gives no reasons for anything, he says nothing to anyone about them, and nothing in the case goes back further than this week. The key’s answer for this case is **“A passing moment”**.
+- If you are right: “Right: ‘Two days after his mother's funeral’.” These words place the case on one occasion and give it a cause: a funeral two days before. Nothing else is shown. Callum gives no reasons for anything, he says nothing to anyone about them, and nothing in the case goes back further than this week. The answer for this case is **“A passing moment”**.
 - If you miss: “The words are ‘Two days after his mother's funeral’.” The same reason follows, and then a line about the piece you tapped:
   - “Callum burst into tears in a team meeting when someone asked him a routine question”: That is what happened in the room, and it is what people will remember. It does not tell you how long this has been going on, or what is behind it.
   - “He left the room for ten minutes, came back, and finished the meeting”: That shows it passing, which fits. But the words that tie it to one occasion and to something real come at the start.
@@ -763,7 +763,7 @@ The pieces you can tap:
 
 ### 23. A wrong idea: a hard week needs a medical word
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 23 of 35*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 23 of 35*
 
 [reviewers only: card kind `refute`, id `refute-clinical`]
 
@@ -777,16 +777,16 @@ Amira’s colleague said "moody". People often go further than that, and describ
 
 Words such as "unstable", "paranoid", "obsessive" and "bipolar" come from medicine, or sound as if they do. A word like that is a diagnosis: a named medical or psychological condition, given by someone trained to give it, after a long assessment of how long something has gone on, how much of the person’s life it touches, and what else was happening.
 
-The key does not diagnose anyone. Even when a case does show years, places and relationships, and the answer is **“A lasting way someone is”**, that answer only says what the case shows. It is not a diagnosis, and only a professional can give one.
+The questions do not diagnose anyone. Even when a case does show years, places and relationships, and the answer is **“A lasting way someone is”**, that answer only says what the case shows. It is not a diagnosis, and only a professional can give one.
 
 A hard week gives you none of what a diagnosis needs. It gives you one short stretch, and usually something real that set it off. The speaker here has not asked the first thing you would want to know: what happened to her this week?
 
-The plain description is also the accurate one: "Something has happened, and she is having a terrible week." It says how long, it leaves room for a cause, and it claims nothing else. In the key’s words the case is **“A passing moment”**, and what you can point to is this: one occasion or one short stretch, how the person felt or acted in it, and nothing else (no reasons for a view or a choice, nothing said or done to another person about them, and no years).
+The plain description is also the accurate one: "Something has happened, and she is having a terrible week." It says how long, it leaves room for a cause, and it claims nothing else. The case is **“A passing moment”**, and what you can point to is this: one occasion or one short stretch, how the person felt or acted in it, and nothing else (no reasons for a view or a choice, nothing said or done to another person about them, and no years).
 
 
 ### 24. A lasting way someone is or A passing moment: telling them apart
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 24 of 35*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 24 of 35*
 
 [reviewers only: card kind `lookalike`, id `look-pattern-none`]
 
@@ -808,9 +808,9 @@ The plain description is also the accurate one: "Something has happened, and she
 
 **Why this one and not the other**
 
-In Case A you have one evening, and it is an evening on which talking about your working life is what people do. The guest’s verdict covers a whole man, and the guest has had twenty minutes of him. The key’s answer is **“A passing moment”**.
+In Case A you have one evening, and it is an evening on which talking about your working life is what people do. The guest’s verdict covers a whole man, and the guest has had twenty minutes of him. The answer is **“A passing moment”**.
 
-In Case B the same talk is shown across thirty years, in three places, and in three relationships: with his children, with his partners and with his oldest friend. The key’s answer is **“A lasting way someone is”**.
+In Case B the same talk is shown across thirty years, in three places, and in three relationships: with his children, with his partners and with his oldest friend. The answer is **“A lasting way someone is”**.
 
 What Desmond does is the same in both cases. That is the point of putting them together. You cannot tell these two kinds apart by what the person does. You can only tell them apart by how much of the person’s life the case shows.
 
@@ -818,7 +818,7 @@ What Desmond does is the same in both cases. That is the point of putting them t
 
 How much of the person’s life does the case show? One occasion or one short stretch? Or this: years, more than one place and more than one relationship, and the same behaviour in all of them?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | A lasting way someone is | A passing moment |
 |---|---|---|
@@ -828,7 +828,7 @@ How much of the person’s life does the case show? One occasion or one short st
 
 ### 25. One evening that sounds like a lifetime
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 25 of 35*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 25 of 35*
 
 [reviewers only: card kind `exception`, id `exc-evening`]
 
@@ -838,7 +838,7 @@ The last card made the difference easy to see, because Case B said "thirty years
 
 > At a dinner party Yasmin talked over the other guests, told three long stories about her new job, and was still talking when the host began clearing the plates. 'She's always been like that,' said a woman who had met her that evening.
 
-There is a lot of the same behaviour here, three things all pointing one way, and a guest who says "always". A run of the same behaviour, and the word "always", are what **“A lasting way someone is”** usually sounds like. Yet the key’s answer for this case is **“A passing moment”**.
+There is a lot of the same behaviour here, three things all pointing one way, and a guest who says "always". A run of the same behaviour, and the word "always", are what **“A lasting way someone is”** usually sounds like. Yet the answer for this case is **“A passing moment”**.
 
 **You are asked:** This looks like **“A lasting way someone is”**. Before you read why it is **“A passing moment”**, tap the words in the case that settle it.
 
@@ -868,7 +868,7 @@ If the same thing turns out to be true of Yasmin at work, at home and ten years 
 
 ### 26. A wrong idea: "once is enough to know someone"
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 26 of 35*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 26 of 35*
 
 [reviewers only: card kind `refute`, id `refute-once`]
 
@@ -884,18 +884,18 @@ One occasion shows you one occasion. People act out of character after bad news,
 
 A claim about who someone is, is a claim about years, and it needs a case that shows them. So when you catch yourself summing a person up, count what you really have: how many occasions, in how many places, with how many people.
 
-If the count is one, the key’s answer is **“A passing moment”**. If, on that one occasion, something was said or done to another person about them, it is **“Something one person does to another”**. In neither case is it **“A lasting way someone is”**. For that you must be able to point to this: years, more than one place and more than one relationship, and the same behaviour in all of them.
+If the count is one, the answer is **“A passing moment”**. If, on that one occasion, something was said or done to another person about them, it is **“Something one person does to another”**. In neither case is it **“A lasting way someone is”**. For that you must be able to point to this: years, more than one place and more than one relationship, and the same behaviour in all of them.
 
 
-*End of part 4. You can stop here; your place is kept. Next: part 5, The pairs still to compare, and the key’s first question.*
+*End of part 4. You can stop here; your place is kept. Next: part 5, The pairs still to compare, and the first question.*
 
 ---
 
-## Part 5 of 6: The pairs still to compare, and the key’s first question
+## Part 5 of 6: The pairs still to compare, and the first question
 
 ### 27. Something one person does to another or A passing moment: telling them apart
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 27 of 35*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 27 of 35*
 
 [reviewers only: card kind `lookalike`, id `look-tactic-none`]
 
@@ -917,9 +917,9 @@ You have compared three pairs of kinds. Three pairs are left. The first is **“
 
 **Why this one and not the other**
 
-In Case A Cora is hard to be around, and the whole office feels it. But nothing is said or done to any one of them about them. One-word answers and headphones are how she is with everyone this week. The key’s answer is **“A passing moment”**.
+In Case A Cora is hard to be around, and the whole office feels it. But nothing is said or done to any one of them about them. One-word answers and headphones are how she is with everyone this week. The answer is **“A passing moment”**.
 
-In Case B it is the same week and the same bad news. This time something is said to one particular person, about him: the mistake was his, and perhaps he is not up to the job. The case shows where it leaves Finn: staying late every night. The key’s answer is **“Something one person does to another”**.
+In Case B it is the same week and the same bad news. This time something is said to one particular person, about him: the mistake was his, and perhaps he is not up to the job. The case shows where it leaves Finn: staying late every night. The answer is **“Something one person does to another”**.
 
 The hard week is real in both cases, and in Case B you can keep it in mind. It does not change the answer. A bad week explains a mood. It does not turn what was said to Finn into a mood. Once something is said or done to one person about them, there are two people to keep in view.
 
@@ -927,7 +927,7 @@ The hard week is real in both cases, and in Case B you can keep it in mind. It d
 
 Is anything said or done to one particular person, about that person or about what has happened between the two? Or is this only how someone was for a short while, with everyone or with no one?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Something one person does to another | A passing moment |
 |---|---|---|
@@ -937,7 +937,7 @@ Is anything said or done to one particular person, about that person or about wh
 
 ### 28. One person’s reasoning or A passing moment: telling them apart
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 28 of 35*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 28 of 35*
 
 [reviewers only: card kind `lookalike`, id `look-reasoning-none`]
 
@@ -959,9 +959,9 @@ The next pair is **“One person’s reasoning”** and **“A passing moment”
 
 **Why this one and not the other**
 
-In Case A you are shown how the news has hit Ruth: no sleep, no appetite, a cancelled weekend. She has not made a choice that she then defends, and she gives no reasons for anything. Cancelling the weekend is part of how the week went. The key’s answer is **“A passing moment”**.
+In Case A you are shown how the news has hit Ruth: no sleep, no appetite, a cancelled weekend. She has not made a choice that she then defends, and she gives no reasons for anything. Cancelling the weekend is part of how the week went. The answer is **“A passing moment”**.
 
-In Case B the same news is followed by a choice, and by a reason for it. Ruth has decided not to apply for the two posts, and she says why: they would only get rid of her again. Now there is a piece of reasoning to look at, and you could go on to ask whether it is sound. The key’s answer is **“One person’s reasoning”**.
+In Case B the same news is followed by a choice, and by a reason for it. Ruth has decided not to apply for the two posts, and she says why: they would only get rid of her again. Now there is a piece of reasoning to look at, and you could go on to ask whether it is sound. The answer is **“One person’s reasoning”**.
 
 Feeling bad is not reasoning, even when it leads a person to do things. It becomes reasoning at the point where the person says why: where a view or a choice is put forward, and something is offered in support of it.
 
@@ -969,7 +969,7 @@ Feeling bad is not reasoning, even when it leads a person to do things. It becom
 
 Does the person give reasons for a view, a choice or something they did? Or does the case show only how they felt and acted?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | One person’s reasoning | A passing moment |
 |---|---|---|
@@ -979,7 +979,7 @@ Does the person give reasons for a view, a choice or something they did? Or does
 
 ### 29. One person’s reasoning or A lasting way someone is: telling them apart
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 29 of 35*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 29 of 35*
 
 [reviewers only: card kind `lookalike`, id `look-reasoning-pattern`]
 
@@ -1001,17 +1001,17 @@ The last pair is **“One person’s reasoning”** and **“A lasting way someo
 
 **Why this one and not the other**
 
-In Case A there is one choice, the café, and Greta’s reasons for it: a feeling, the location, how hard her friend works. Her brother only listens. You could go on to ask how good those reasons are. The key’s answer is **“One person’s reasoning”**.
+In Case A there is one choice, the café, and Greta’s reasons for it: a feeling, the location, how hard her friend works. Her brother only listens. You could go on to ask how good those reasons are. The answer is **“One person’s reasoning”**.
 
-In Case B no single choice is being weighed. The case counts eleven of them, across twenty-five years and three cities, seen by three people who each know a different part of her life. The key’s answer is **“A lasting way someone is”**.
+In Case B no single choice is being weighed. The case counts eleven of them, across twenty-five years and three cities, seen by three people who each know a different part of her life. The answer is **“A lasting way someone is”**.
 
-Case A may well be the twelfth venture. From Case A alone you cannot know that, and the key answers for the case in front of you. If one case shows both, a piece of reasoning and the years behind it, the key chooses as it did with Mia and the phone: the answer is **“A lasting way someone is”**.
+Case A may well be the twelfth venture. From Case A alone you cannot know that, and the answer is for the case in front of you. If one case shows both, a piece of reasoning and the years behind it, the answer is the same as with Mia and the phone: **“A lasting way someone is”**.
 
 **How to tell them apart**
 
 Is the case one piece of thinking, about one view or one choice? Or does it show this: years, more than one place and more than one relationship, and the same behaviour in all of them?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | One person’s reasoning | A lasting way someone is |
 |---|---|---|
@@ -1021,17 +1021,17 @@ Is the case one piece of thinking, about one view or one choice? Or does it show
 
 ### 30. The question you have been answering all along
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 30 of 35*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 30 of 35*
 
 [reviewers only: card kind `question`, id `q-kind`]
 
-Since the job offer you have seen the key’s question at the foot of each new kind, with one answer under it. This card puts the question and its four answers in one place, as the key shows them, and says why the key asks it before anything else.
+Since the job offer you have seen the question at the foot of each new kind, with one answer under it. This card puts the question and its four answers in one place, and says why it is asked before anything else.
 
-**The key asks:** **“What kind of thing is this?”**
+**The question:** **“What kind of thing is this?”**
 
 **What it is for.** Sorts one person’s reasoning from something one person does to another, from the way a person is over years, and from a moment that will pass.
 
-**Its answers, exactly as the key shows them**
+**Its answers**
 
 In this unit each answer is itself the name of a kind, and so rules out the other three.
 
@@ -1052,7 +1052,7 @@ A case can only be judged on what it is made of. If you take one evening for a p
 
 That is why this question comes first, before any finer name, and why every case in this subject starts with it.
 
-In this unit it is the only question, so its answer is the name. In the rest of the subject, each of the first three answers is followed by one more question, and that question leads to a finer name. The fourth answer is followed by nothing. The answers you give on the way to a name are called your route: this first answer, and then the answer to the next question. Once a route has two answers, two things are marked separately: the name you give a case, and your route to it. A right name reached by a wrong answer to this first question counts as a miss, which is why the first question gets a whole unit of practice.
+In this unit it is the only question, so its answer is the name. In the rest of the subject, each of the first three answers is followed by one more question, and that question leads to a finer name. The fourth answer is followed by nothing. Your answers on the way to a name are this first answer and then the answer to the next question. Once there are two answers, two things are marked separately: the name you give a case, and your answers on the way to it. A right name reached by a wrong answer to this first question counts as a miss, which is why the first question gets a whole unit of practice.
 
 **How to answer it from a case**
 
@@ -1070,25 +1070,25 @@ Whichever answer you give, put your finger on the words that show it: the years 
 
 **When two answers both seem to fit**
 
-Some cases show two of the four at once. You have met two. In the shouting, Marta’s reason for her own act was made out of Kofi. In Mia and the phone, one evening turned out to have years behind it. The key gives every case one answer, and the order above is how it chooses. Each pair below has been set side by side earlier in this unit, and each has one question that separates it.
+Some cases show two of the four at once. You have met two. In the shouting, Marta’s reason for her own act was made out of Kofi. In Mia and the phone, one evening turned out to have years behind it. Every case gets one answer, and the order above is how it is chosen. Each pair below has been set side by side earlier in this unit, and each has one question that separates it.
 
-- One person’s reasoning or Something one person does to another: Who are the words about, and who are they said to? Are they about the speaker’s own view or choice, with anyone else only listening? Or are they said to another person, about that person or about what has happened between the two? When a case shows both **“One person’s reasoning”** and something said or done to another person about them, the key’s answer is **“Something one person does to another”**.
-- Something one person does to another or A lasting way someone is: Does the case stay between two people, and show what one of them says or does to the other? Or does it show this: years, more than one place and more than one relationship, and the same behaviour in all of them? When a case shows both **“Something one person does to another”** and the same behaviour across years, places and relationships, the key’s answer is **“A lasting way someone is”**.
+- One person’s reasoning or Something one person does to another: Who are the words about, and who are they said to? Are they about the speaker’s own view or choice, with anyone else only listening? Or are they said to another person, about that person or about what has happened between the two? When a case shows both **“One person’s reasoning”** and something said or done to another person about them, the answer is **“Something one person does to another”**.
+- Something one person does to another or A lasting way someone is: Does the case stay between two people, and show what one of them says or does to the other? Or does it show this: years, more than one place and more than one relationship, and the same behaviour in all of them? When a case shows both **“Something one person does to another”** and the same behaviour across years, places and relationships, the answer is **“A lasting way someone is”**.
 - A lasting way someone is or A passing moment: How much of the person’s life does the case show? One occasion or one short stretch? Or this: years, more than one place and more than one relationship, and the same behaviour in all of them?
 - Something one person does to another or A passing moment: Is anything said or done to one particular person, about that person or about what has happened between the two? Or is this only how someone was for a short while, with everyone or with no one?
 - One person’s reasoning or A passing moment: Does the person give reasons for a view, a choice or something they did? Or does the case show only how they felt and acted?
-- One person’s reasoning or A lasting way someone is: Is the case one piece of thinking, about one view or one choice? Or does it show this: years, more than one place and more than one relationship, and the same behaviour in all of them? When a case shows both **“One person’s reasoning”** and the same behaviour across years, places and relationships, the key’s answer is **“A lasting way someone is”**.
+- One person’s reasoning or A lasting way someone is: Is the case one piece of thinking, about one view or one choice? Or does it show this: years, more than one place and more than one relationship, and the same behaviour in all of them? When a case shows both **“One person’s reasoning”** and the same behaviour across years, places and relationships, the answer is **“A lasting way someone is”**.
 
 
 ### 31. A question about a new case
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 31 of 35*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 31 of 35*
 
 [reviewers only: card kind `check`, id `check-kind`]
 
 > Kemal has not answered his friends' messages for ten days. His restaurant closed for good at the start of the month. Before that, his friends say, he was the one who organised everything.
 
-**The key asks:** **“What kind of thing is this?”**
+**The question:** **“What kind of thing is this?”**
 
 - One person’s reasoning
 - Something one person does to another
@@ -1113,11 +1113,11 @@ Some cases show two of the four at once. You have met two. In the shouting, Mart
 
 ### 32. A whole case, from the question to the answer
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 32 of 35*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 32 of 35*
 
 [reviewers only: card kind `worked`, id `worked-dent`]
 
-You have the four kinds and the key’s question about them. Before the drill, watch two cases being run from the top. You are not asked anything until the end of each.
+You have the four kinds and the question about them. Before the drill, watch two cases being run from the top. You are not asked anything until the end of each.
 
 *The dent*
 
@@ -1153,17 +1153,17 @@ In this unit the answer is the name. Ruled out: **“One person’s reasoning”
 
 For **“One person’s reasoning”** you must be able to point to this: a view, a choice or an act that is the person’s own, and the reasons they give for it or what they do with the facts about it. Reece does defend himself, and that is why the case can look like it. But look at who his words are about and who they are said to. He says the dent had been there for months: that is said to Imani, about what happened between the two of them. He says she never notices anything about her own car, and that it was typical of her to accuse him: that is said to Imani, about Imani. Nobody in this case is only listening.
 
-It is the question from Dev and the forgotten birthday. Who are the words about, and who are they said to? Are they about the speaker’s own view or choice, with anyone else only listening? Or are they said to another person, about that person or about what has happened between the two? Here they are said to another person, about her, so the key’s answer is **“Something one person does to another”**.
+It is the question from Dev and the forgotten birthday. Who are the words about, and who are they said to? Are they about the speaker’s own view or choice, with anyone else only listening? Or are they said to another person, about that person or about what has happened between the two? Here they are said to another person, about her, so the answer is **“Something one person does to another”**.
 
 **Does it look like a case you know?**
 
-The key has given its answer. Now take a second look of a different kind: does this case look like one you know? It should bring back the deadline. There too, someone was asked a fair question, said that it had not happened that way, turned to what the asker was like, and sent them away to check themselves.
+You have the answer. Now take a second look of a different kind: does this case look like one you know? It should bring back the deadline. There too, someone was asked a fair question, said that it had not happened that way, turned to what the asker was like, and sent them away to check themselves.
 
-Here the key and the likeness agree, so the answer stands. The key’s question comes first, because it makes you point at words in the case. The likeness is only a second look. When the two disagree, do not pick the one you prefer. Go back to the key’s question and find the words in the case that answer it. The second whole case shows how.
+Here the answer and the likeness agree, so the answer stands. The question comes first, because it makes you point at words in the case. The likeness is only a second look. When the two disagree, do not pick the one you prefer. Go back to the question and find the words in the case that answer it. The second whole case shows how.
 
 ### 33. A second whole case, where the opening points the wrong way
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 33 of 35*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 33 of 35*
 
 [reviewers only: card kind `worked`, id `worked-rehearsal`]
 
@@ -1199,17 +1199,17 @@ In this unit the answer is the name. Ruled out: **“One person’s reasoning”
 
 **Why this is A lasting way someone is and not One person’s reasoning**
 
-A person giving reasons for something she did is what you point to for **“One person’s reasoning”**, and the first half of this case shows it. The second half shows the same thing across twenty years, at family occasions and at three jobs. When a case shows both, the key’s answer is **“A lasting way someone is”**.
+A person giving reasons for something she did is what you point to for **“One person’s reasoning”**, and the first half of this case shows it. The second half shows the same thing across twenty years, at family occasions and at three jobs. When a case shows both, the answer is **“A lasting way someone is”**.
 
-This is the choice the key made with Mia and the phone. There, one evening of something done to another person turned out to have years behind it. Here, one excuse does. The larger claim is the one the case supports, so it is the one the key gives.
+This is the choice made with Mia and the phone. There, one evening of something done to another person turned out to have years behind it. Here, one excuse does. The larger claim is the one the case supports, so it is the answer.
 
 Petra’s reasons on the day may even be true. The traffic may have been impossible. The answer does not depend on that. It depends on how much of her life the case shows.
 
 **Does it look like a case you know?**
 
-Now the second look: does this case look like one you know? A missed family occasion and a ready reason may bring back Dev and the forgotten birthday first, and Dev’s case, as he told it to his brother, was **“One person’s reasoning”**. So here the likeness and the key seem to disagree.
+Now the second look: does this case look like one you know? A missed family occasion and a ready reason may bring back Dev and the forgotten birthday first, and Dev’s case, as he told it to his brother, was **“One person’s reasoning”**. So here the likeness and the answer seem to disagree.
 
-When that happens, go back to the key’s question and find the words in the case that answer it. They are “In the twenty years since they left home” and “birthdays, two graduations and her own farewell parties at three different jobs”. Dev’s case has nothing like them: it was one birthday and one evening. Moira’s case does: twenty years, more than one place, and each time somebody else to blame. So the case this one really looks like is Moira’s, and the key’s answer stands.
+When that happens, go back to the question and find the words in the case that answer it. They are “In the twenty years since they left home” and “birthdays, two graduations and her own farewell parties at three different jobs”. Dev’s case has nothing like them: it was one birthday and one evening. Moira’s case does: twenty years, more than one place, and each time somebody else to blame. So the case this one really looks like is Moira’s, and the answer stands.
 
 ### The drill
 
@@ -1219,7 +1219,7 @@ Some of these cases show nothing wrong at all, and some show an ordinary bad day
 
 #### Stage 1 of 3. One question at a time.
 
-The question is shown with all four of its answers from the key, in the key’s order.
+The question is shown with all four of its answers, in order.
 
 **Drill item 1 of 34**
 
@@ -1237,9 +1237,9 @@ The question is shown with all four of its answers from the key, in the key’s 
 - If you are right: “Right: **One person’s reasoning.**” One person is giving her reason for a choice of her own: “I've put four years into this” and “I can't switch now”. The tutor only listens, and nothing is said about the tutor.
   - Why not **“A lasting way someone is”**: Four years is how long the degree has taken. It is not how long Anneke has been a certain way. The case shows one choice and the reason she gives for it.
 - If you miss: “The answer is **One person’s reasoning.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **Something one person does to another**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose **Something one person does to another**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A lasting way someone is**: the “why not” line above.
-  - If you chose **A passing moment**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose **A passing moment**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 2 of 34**
@@ -1260,7 +1260,7 @@ The question is shown with all four of its answers from the key, in the key’s 
 - If you miss: “The answer is **Something one person does to another.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **One person’s reasoning**: the “why not” line above.
   - If you chose **A lasting way someone is**: It happens again and again, but always between the same two people. The case shows no other place and no other relationship of his, so the case does not show how he is with people in general.
-  - If you chose **A passing moment**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose **A passing moment**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 3 of 34**
@@ -1280,8 +1280,8 @@ The question is shown with all four of its answers from the key, in the key’s 
   - Why not **“One person’s reasoning”**: Deciding that other people are fools is a view, but the case shows no single piece of thinking about it. It shows ten years of the same thing, at work, among friends and at school.
 - If you miss: “The answer is **A lasting way someone is.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **One person’s reasoning**: the “why not” line above.
-  - If you chose **Something one person does to another**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **A passing moment**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose **Something one person does to another**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **A passing moment**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 4 of 34**
@@ -1300,8 +1300,8 @@ The question is shown with all four of its answers from the key, in the key’s 
 - If you are right: “Right: **A passing moment.**” The case is tied to one evening, with something real behind it: “The evening before her final exam”. By the next afternoon it has passed. Sofia gives no reasons for anything, and nothing is said or done to anyone about them.
   - Why not **“A lasting way someone is”**: One evening, in one place, before one exam. Nothing in the case says she is like this in other weeks or in other parts of her life.
 - If you miss: “The answer is **A passing moment.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **One person’s reasoning**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **Something one person does to another**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose **One person’s reasoning**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **Something one person does to another**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A lasting way someone is**: the “why not” line above.
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
@@ -1322,7 +1322,7 @@ The question is shown with all four of its answers from the key, in the key’s 
   - Why not **“One person’s reasoning”**: The tutor is not explaining a view or a choice of his own. He is telling Lucia something about her presentation, and he says it to her.
 - If you miss: “The answer is **Something one person does to another.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **One person’s reasoning**: the “why not” line above.
-  - If you chose **A lasting way someone is**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose **A lasting way someone is**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A passing moment**: Nothing is wrong here, and that can make this feel like a case with nothing to name. But the kind is not a verdict. Something is said to one person about her, so there are two people to keep in view.
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
@@ -1342,8 +1342,8 @@ The question is shown with all four of its answers from the key, in the key’s 
 - If you are right: “Right: **A passing moment.**” The case is one short stretch, with something real behind it: “In the first month after the baby came”. By the spring it has passed. No reasons are given, and nothing is said or done to anyone about them.
   - Why not **“A lasting way someone is”**: A month is not years, and the case says he was back to normal by the spring. A lasting way of being does not end when the baby starts sleeping.
 - If you miss: “The answer is **A passing moment.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **One person’s reasoning**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **Something one person does to another**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose **One person’s reasoning**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **Something one person does to another**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A lasting way someone is**: the “why not” line above.
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
@@ -1364,8 +1364,8 @@ The question is shown with all four of its answers from the key, in the key’s 
   - Why not **“Something one person does to another”**: Hugo is talking to his son, but nothing he says is about his son or about anything between the two of them. It is all about the broadband.
 - If you miss: “The answer is **One person’s reasoning.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **Something one person does to another**: the “why not” line above.
-  - If you chose **A lasting way someone is**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **A passing moment**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose **A lasting way someone is**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **A passing moment**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 8 of 34**
@@ -1384,9 +1384,9 @@ The question is shown with all four of its answers from the key, in the key’s 
 - If you are right: “Right: **A lasting way someone is.**” The case is a long view of one person: “For as long as anyone on the street can remember” and “Her colleagues at the library and her nieces in another city say the same of her”. Many years, three places, and neighbours, colleagues and nieces all saying the same. That it is a good thing makes no difference to the kind.
   - Why not **“Something one person does to another”**: Bringing soup is something done for another person, but the case does not stay with any one neighbour. It follows Mrs Okafor through the years and through everyone who knows her.
 - If you miss: “The answer is **A lasting way someone is.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **One person’s reasoning**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose **One person’s reasoning**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Something one person does to another**: the “why not” line above.
-  - If you chose **A passing moment**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose **A passing moment**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 9 of 34**
@@ -1401,7 +1401,7 @@ The question is shown with all four of its answers from the key, in the key’s 
 
 **Shown as soon as you answer**
 
-- The answer is: “Who are the words about, and who are they said to? Are they about the speaker’s own view or choice, with anyone else only listening? Or are they said to another person, about that person or about what has happened between the two?” In both, a person may be explaining or defending themselves, and someone else may be there to hear it. In **“One person’s reasoning”** the reasons are about the speaker’s own view, choice or act, and anyone else is only listening. In **“Something one person does to another”** what is said or done is about the other person, or about what has happened between the two, and it is said or done to them. When a case shows both **“One person’s reasoning”** and something said or done to another person about them, the key’s answer is **“Something one person does to another”**.
+- The answer is: “Who are the words about, and who are they said to? Are they about the speaker’s own view or choice, with anyone else only listening? Or are they said to another person, about that person or about what has happened between the two?” In both, a person may be explaining or defending themselves, and someone else may be there to hear it. In **“One person’s reasoning”** the reasons are about the speaker’s own view, choice or act, and anyone else is only listening. In **“Something one person does to another”** what is said or done is about the other person, or about what has happened between the two, and it is said or done to them. When a case shows both **“One person’s reasoning”** and something said or done to another person about them, the answer is **“Something one person does to another”**.
 - If you chose “Does the case stay between two people, and show what one of them says or does to the other? Or does it show this: years, more than one place and more than one relationship, and the same behaviour in all of them?”: that question separates **“Something one person does to another”** and **“A lasting way someone is”**.
 - If you chose “Is anything said or done to one particular person, about that person or about what has happened between the two? Or is this only how someone was for a short while, with everyone or with no one?”: that question separates **“Something one person does to another”** and **“A passing moment”**.
 - If you chose “Does the person give reasons for a view, a choice or something they did? Or does the case show only how they felt and acted?”: that question separates **“One person’s reasoning”** and **“A passing moment”**.
@@ -1439,7 +1439,7 @@ The question is shown with all four of its answers from the key, in the key’s 
 
 **Shown as soon as you answer**
 
-- The answer is: “Does the case stay between two people, and show what one of them says or does to the other? Or does it show this: years, more than one place and more than one relationship, and the same behaviour in all of them?” In both, one person may be treating another badly, and the very same behaviour can appear in each. **“Something one person does to another”** stays between two people: it shows what one of them says or does to the other. **“A lasting way someone is”** follows one person across years, places and relationships. When a case shows both **“Something one person does to another”** and the same behaviour across years, places and relationships, the key’s answer is **“A lasting way someone is”**.
+- The answer is: “Does the case stay between two people, and show what one of them says or does to the other? Or does it show this: years, more than one place and more than one relationship, and the same behaviour in all of them?” In both, one person may be treating another badly, and the very same behaviour can appear in each. **“Something one person does to another”** stays between two people: it shows what one of them says or does to the other. **“A lasting way someone is”** follows one person across years, places and relationships. When a case shows both **“Something one person does to another”** and the same behaviour across years, places and relationships, the answer is **“A lasting way someone is”**.
 - If you chose “Who are the words about, and who are they said to? Are they about the speaker’s own view or choice, with anyone else only listening? Or are they said to another person, about that person or about what has happened between the two?”: that question separates **“One person’s reasoning”** and **“Something one person does to another”**.
 - If you chose “How much of the person’s life does the case show? One occasion or one short stretch? Or this: years, more than one place and more than one relationship, and the same behaviour in all of them?”: that question separates **“A lasting way someone is”** and **“A passing moment”**.
 - If you chose “Is anything said or done to one particular person, about that person or about what has happened between the two? Or is this only how someone was for a short while, with everyone or with no one?”: that question separates **“Something one person does to another”** and **“A passing moment”**.
@@ -1533,9 +1533,9 @@ The question is shown with all four of its answers from the key, in the key’s 
 - If you chose "Every job she has ever had, it ends the same way.": that belongs to **“A lasting way someone is”**.
 - Taught on: “A passing moment: what it is like” (one tap opens the card).
 
-#### Stage 2 of 3. No help. Whole cases, mixed together, and the later ones have a story that points the wrong way. In this unit the key has one question, and its answer is the name.
+#### Stage 2 of 3. No help. Whole cases, mixed together, and the later ones have a story that points the wrong way. In this unit there is one question, and its answer is the name.
 
-The question is shown with all four of its answers from the key, in the key’s order.
+The question is shown with all four of its answers, in order.
 
 **Drill item 17 of 34**
 
@@ -1553,8 +1553,8 @@ The question is shown with all four of its answers from the key, in the key’s 
 - If you are right: “Right: **One person’s reasoning.**” One person is giving her reasons for a choice of her own: “My knees can't take the digging any more” and “I would rather stop while I still enjoy it”. The committee only listens.
   - Why not **“A passing moment”**: Wendy is not only feeling something. She has made a choice and she says why, so there is reasoning to look at.
 - If you miss: “The answer is **One person’s reasoning.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **Something one person does to another**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, a person may be explaining or defending themselves, and someone else may be there to hear it. In **“One person’s reasoning”** the reasons are about the speaker’s own view, choice or act, and anyone else is only listening. In **“Something one person does to another”** what is said or done is about the other person, or about what has happened between the two, and it is said or done to them. Who are the words about, and who are they said to? Are they about the speaker’s own view or choice, with anyone else only listening? Or are they said to another person, about that person or about what has happened between the two?
-  - If you chose **A lasting way someone is**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can show a person defending themselves, and the reasons can sound the same. **“One person’s reasoning”** shows one piece of thinking: this view, this choice, this occasion. **“A lasting way someone is”** shows the same behaviour across years, places and relationships. Is the case one piece of thinking, about one view or one choice? Or does it show this: years, more than one place and more than one relationship, and the same behaviour in all of them?
+  - If you chose **Something one person does to another**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, a person may be explaining or defending themselves, and someone else may be there to hear it. In **“One person’s reasoning”** the reasons are about the speaker’s own view, choice or act, and anyone else is only listening. In **“Something one person does to another”** what is said or done is about the other person, or about what has happened between the two, and it is said or done to them. Who are the words about, and who are they said to? Are they about the speaker’s own view or choice, with anyone else only listening? Or are they said to another person, about that person or about what has happened between the two?
+  - If you chose **A lasting way someone is**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can show a person defending themselves, and the reasons can sound the same. **“One person’s reasoning”** shows one piece of thinking: this view, this choice, this occasion. **“A lasting way someone is”** shows the same behaviour across years, places and relationships. Is the case one piece of thinking, about one view or one choice? Or does it show this: years, more than one place and more than one relationship, and the same behaviour in all of them?
   - If you chose **A passing moment**: the “why not” line above. Then the lines from the card that compared the two: Both are about one person on one occasion, and both can follow something that happened to them. In **“One person’s reasoning”** the person gives reasons for a view, a choice or something they did. In **“A passing moment”** no reasons are given: the case shows only how the person felt and acted. Does the person give reasons for a view, a choice or something they did? Or does the case show only how they felt and acted?
 - What would make it a different name: If the case showed only that Wendy had been low and tired for a few weeks, with no choice made and no reasons given, it would be **“A passing moment”**.
 - Taught on: “One person, and their reasons for a view or a choice” (one tap opens the card).
@@ -1576,8 +1576,8 @@ The question is shown with all four of its answers from the key, in the key’s 
   - Why not **“One person’s reasoning”**: Dominic wants the money, but he is not setting out reasons for a view or a choice of his own. What he says is about Anya, what she has always been and what she would do if she were decent, and it is said to her.
 - If you miss: “The answer is **Something one person does to another.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **One person’s reasoning**: the “why not” line above. Then the lines from the card that compared the two: In both, a person may be explaining or defending themselves, and someone else may be there to hear it. In **“One person’s reasoning”** the reasons are about the speaker’s own view, choice or act, and anyone else is only listening. In **“Something one person does to another”** what is said or done is about the other person, or about what has happened between the two, and it is said or done to them. Who are the words about, and who are they said to? Are they about the speaker’s own view or choice, with anyone else only listening? Or are they said to another person, about that person or about what has happened between the two?
-  - If you chose **A lasting way someone is**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, one person may be treating another badly, and the very same behaviour can appear in each. **“Something one person does to another”** stays between two people: it shows what one of them says or does to the other. **“A lasting way someone is”** follows one person across years, places and relationships. Does the case stay between two people, and show what one of them says or does to the other? Or does it show this: years, more than one place and more than one relationship, and the same behaviour in all of them?
-  - If you chose **A passing moment**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, someone can be hard to be around, and other people can be hurt by it. In **“A passing moment”** nothing is said or done to anyone about them: other people are near it, and are not what it is about. In **“Something one person does to another”** something is said or done to one particular person, about that person or about what has happened between the two. Is anything said or done to one particular person, about that person or about what has happened between the two? Or is this only how someone was for a short while, with everyone or with no one?
+  - If you chose **A lasting way someone is**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, one person may be treating another badly, and the very same behaviour can appear in each. **“Something one person does to another”** stays between two people: it shows what one of them says or does to the other. **“A lasting way someone is”** follows one person across years, places and relationships. Does the case stay between two people, and show what one of them says or does to the other? Or does it show this: years, more than one place and more than one relationship, and the same behaviour in all of them?
+  - If you chose **A passing moment**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, someone can be hard to be around, and other people can be hurt by it. In **“A passing moment”** nothing is said or done to anyone about them: other people are near it, and are not what it is about. In **“Something one person does to another”** something is said or done to one particular person, about that person or about what has happened between the two. Is anything said or done to one particular person, about that person or about what has happened between the two? Or is this only how someone was for a short while, with everyone or with no one?
 - What would make it a different name: If Dominic had said all this to a friend, as his reasons for thinking the will unfair, and Anya had never heard it, the case would be **“One person’s reasoning”**.
 - Taught on: “Two people, and what one says or does to the other” (one tap opens the card).
 
@@ -1597,9 +1597,9 @@ The question is shown with all four of its answers from the key, in the key’s 
 - If you are right: “Right: **A passing moment.**” The case is one short stretch, with something real behind it: “While she waited ten days for the result of a scan”. When the cause goes, the behaviour goes too. No reasons are given, and nothing is said or done to anyone about them.
   - Why not **“Something one person does to another”**: Her family will have felt the silence, but nothing is said or done to any one of them about them. It is how she was with everyone for ten days.
 - If you miss: “The answer is **A passing moment.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **One person’s reasoning**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both are about one person on one occasion, and both can follow something that happened to them. In **“One person’s reasoning”** the person gives reasons for a view, a choice or something they did. In **“A passing moment”** no reasons are given: the case shows only how the person felt and acted. Does the person give reasons for a view, a choice or something they did? Or does the case show only how they felt and acted?
+  - If you chose **One person’s reasoning**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both are about one person on one occasion, and both can follow something that happened to them. In **“One person’s reasoning”** the person gives reasons for a view, a choice or something they did. In **“A passing moment”** no reasons are given: the case shows only how the person felt and acted. Does the person give reasons for a view, a choice or something they did? Or does the case show only how they felt and acted?
   - If you chose **Something one person does to another**: the “why not” line above. Then the lines from the card that compared the two: In both, someone can be hard to be around, and other people can be hurt by it. In **“A passing moment”** nothing is said or done to anyone about them: other people are near it, and are not what it is about. In **“Something one person does to another”** something is said or done to one particular person, about that person or about what has happened between the two. Is anything said or done to one particular person, about that person or about what has happened between the two? Or is this only how someone was for a short while, with everyone or with no one?
-  - If you chose **A lasting way someone is**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: The behaviour itself can be exactly the same in both. What differs is how much of the person’s life the case shows. **“A passing moment”** shows one occasion or one short stretch. **“A lasting way someone is”** shows the same thing across years, places and relationships. How much of the person’s life does the case show? One occasion or one short stretch? Or this: years, more than one place and more than one relationship, and the same behaviour in all of them?
+  - If you chose **A lasting way someone is**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: The behaviour itself can be exactly the same in both. What differs is how much of the person’s life the case shows. **“A passing moment”** shows one occasion or one short stretch. **“A lasting way someone is”** shows the same thing across years, places and relationships. How much of the person’s life does the case show? One occasion or one short stretch? Or this: years, more than one place and more than one relationship, and the same behaviour in all of them?
 - What would make it a different name: If, during those ten days, she had told her husband that his fussing was the reason she could not sleep, something would have been said to one person about him, and the case would be **“Something one person does to another”**.
 - Taught on: “One person, one occasion or one short stretch, and nothing to name” (one tap opens the card).
 
@@ -1619,9 +1619,9 @@ The question is shown with all four of its answers from the key, in the key’s 
 - If you are right: “Right: **A lasting way someone is.**” The case is a long view of one man: “Tenants in three different towns, over twenty years, tell the same story” and “His former business partner and his own brother describe the same man”. Twenty years, three towns, and tenants, a partner and a brother all describing the same thing.
   - Why not **“Something one person does to another”**: Ignoring a tenant’s calls is something done to another person, but the case does not stay with any one tenant. It follows Mr Hale through twenty years and three towns.
 - If you miss: “The answer is **A lasting way someone is.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **One person’s reasoning**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can show a person defending themselves, and the reasons can sound the same. **“One person’s reasoning”** shows one piece of thinking: this view, this choice, this occasion. **“A lasting way someone is”** shows the same behaviour across years, places and relationships. Is the case one piece of thinking, about one view or one choice? Or does it show this: years, more than one place and more than one relationship, and the same behaviour in all of them?
+  - If you chose **One person’s reasoning**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can show a person defending themselves, and the reasons can sound the same. **“One person’s reasoning”** shows one piece of thinking: this view, this choice, this occasion. **“A lasting way someone is”** shows the same behaviour across years, places and relationships. Is the case one piece of thinking, about one view or one choice? Or does it show this: years, more than one place and more than one relationship, and the same behaviour in all of them?
   - If you chose **Something one person does to another**: the “why not” line above. Then the lines from the card that compared the two: In both, one person may be treating another badly, and the very same behaviour can appear in each. **“Something one person does to another”** stays between two people: it shows what one of them says or does to the other. **“A lasting way someone is”** follows one person across years, places and relationships. Does the case stay between two people, and show what one of them says or does to the other? Or does it show this: years, more than one place and more than one relationship, and the same behaviour in all of them?
-  - If you chose **A passing moment**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: The behaviour itself can be exactly the same in both. What differs is how much of the person’s life the case shows. **“A passing moment”** shows one occasion or one short stretch. **“A lasting way someone is”** shows the same thing across years, places and relationships. How much of the person’s life does the case show? One occasion or one short stretch? Or this: years, more than one place and more than one relationship, and the same behaviour in all of them?
+  - If you chose **A passing moment**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: The behaviour itself can be exactly the same in both. What differs is how much of the person’s life the case shows. **“A passing moment”** shows one occasion or one short stretch. **“A lasting way someone is”** shows the same thing across years, places and relationships. How much of the person’s life does the case show? One occasion or one short stretch? Or this: years, more than one place and more than one relationship, and the same behaviour in all of them?
 - What would make it a different name: If the case told you only about one tenant, and one winter of unanswered calls, it would be **“Something one person does to another”**.
 - Taught on: “One person, the same way for years, wherever they are and whoever they are with” (one tap opens the card).
 
@@ -1641,8 +1641,8 @@ The question is shown with all four of its answers from the key, in the key’s 
 - If you are right: “Right: **A passing moment.**” The case is one day, with something real behind it: “On the first day of the holiday, after a cancelled flight and a night on an airport floor”. By the next morning it has passed.
   - Why not **“A lasting way someone is”**: One day, on one holiday, after one bad night. Nothing in the case says Jonas is like this in other years or in other places.
 - If you miss: “The answer is **A passing moment.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **One person’s reasoning**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both are about one person on one occasion, and both can follow something that happened to them. In **“One person’s reasoning”** the person gives reasons for a view, a choice or something they did. In **“A passing moment”** no reasons are given: the case shows only how the person felt and acted. Does the person give reasons for a view, a choice or something they did? Or does the case show only how they felt and acted?
-  - If you chose **Something one person does to another**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, someone can be hard to be around, and other people can be hurt by it. In **“A passing moment”** nothing is said or done to anyone about them: other people are near it, and are not what it is about. In **“Something one person does to another”** something is said or done to one particular person, about that person or about what has happened between the two. Is anything said or done to one particular person, about that person or about what has happened between the two? Or is this only how someone was for a short while, with everyone or with no one?
+  - If you chose **One person’s reasoning**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both are about one person on one occasion, and both can follow something that happened to them. In **“One person’s reasoning”** the person gives reasons for a view, a choice or something they did. In **“A passing moment”** no reasons are given: the case shows only how the person felt and acted. Does the person give reasons for a view, a choice or something they did? Or does the case show only how they felt and acted?
+  - If you chose **Something one person does to another**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, someone can be hard to be around, and other people can be hurt by it. In **“A passing moment”** nothing is said or done to anyone about them: other people are near it, and are not what it is about. In **“Something one person does to another”** something is said or done to one particular person, about that person or about what has happened between the two. Is anything said or done to one particular person, about that person or about what has happened between the two? Or is this only how someone was for a short while, with everyone or with no one?
   - If you chose **A lasting way someone is**: the “why not” line above. Then the lines from the card that compared the two: The behaviour itself can be exactly the same in both. What differs is how much of the person’s life the case shows. **“A passing moment”** shows one occasion or one short stretch. **“A lasting way someone is”** shows the same thing across years, places and relationships. How much of the person’s life does the case show? One occasion or one short stretch? Or this: years, more than one place and more than one relationship, and the same behaviour in all of them?
 - What would make it a different name: If his family said he had been like this on every holiday for fifteen years, and at work and at home as well, the case would be **“A lasting way someone is”**.
 - Taught on: “One person, one occasion or one short stretch, and nothing to name” (one tap opens the card).
@@ -1663,9 +1663,9 @@ The question is shown with all four of its answers from the key, in the key’s 
 - If you are right: “Right: **One person’s reasoning.**” One person is changing a view of his own, and saying what changed it: “I had no idea it was that many” and “I withdraw my objection”. The room listens, and nothing is said to anyone about them.
   - Why not **“A lasting way someone is”**: "All year" is how long Arthur has held one view about one crossing. It is not a way of being that runs through years, places and relationships. The case is one piece of thinking, and it ends with him changing his mind.
 - If you miss: “The answer is **One person’s reasoning.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **Something one person does to another**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, a person may be explaining or defending themselves, and someone else may be there to hear it. In **“One person’s reasoning”** the reasons are about the speaker’s own view, choice or act, and anyone else is only listening. In **“Something one person does to another”** what is said or done is about the other person, or about what has happened between the two, and it is said or done to them. Who are the words about, and who are they said to? Are they about the speaker’s own view or choice, with anyone else only listening? Or are they said to another person, about that person or about what has happened between the two?
+  - If you chose **Something one person does to another**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, a person may be explaining or defending themselves, and someone else may be there to hear it. In **“One person’s reasoning”** the reasons are about the speaker’s own view, choice or act, and anyone else is only listening. In **“Something one person does to another”** what is said or done is about the other person, or about what has happened between the two, and it is said or done to them. Who are the words about, and who are they said to? Are they about the speaker’s own view or choice, with anyone else only listening? Or are they said to another person, about that person or about what has happened between the two?
   - If you chose **A lasting way someone is**: the “why not” line above. Then the lines from the card that compared the two: Both can show a person defending themselves, and the reasons can sound the same. **“One person’s reasoning”** shows one piece of thinking: this view, this choice, this occasion. **“A lasting way someone is”** shows the same behaviour across years, places and relationships. Is the case one piece of thinking, about one view or one choice? Or does it show this: years, more than one place and more than one relationship, and the same behaviour in all of them?
-  - If you chose **A passing moment**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both are about one person on one occasion, and both can follow something that happened to them. In **“One person’s reasoning”** the person gives reasons for a view, a choice or something they did. In **“A passing moment”** no reasons are given: the case shows only how the person felt and acted. Does the person give reasons for a view, a choice or something they did? Or does the case show only how they felt and acted?
+  - If you chose **A passing moment**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both are about one person on one occasion, and both can follow something that happened to them. In **“One person’s reasoning”** the person gives reasons for a view, a choice or something they did. In **“A passing moment”** no reasons are given: the case shows only how the person felt and acted. Does the person give reasons for a view, a choice or something they did? Or does the case show only how they felt and acted?
 - What would make it a different name: If the case showed Arthur arguing against every change in the village for thirty years, at the council, at his club and at home, it would be **“A lasting way someone is”**.
 - Taught on: “One person, and their reasons for a view or a choice” (one tap opens the card).
 
@@ -1685,8 +1685,8 @@ The question is shown with all four of its answers from the key, in the key’s 
 - If you are right: “Right: **Something one person does to another.**” One person is doing something to another, and it is about what has happened between the two of them, her night out: “her boyfriend has not spoken to her” and “When she asks what is wrong, he leaves the room”. He speaks to everyone else in the house. The case shows where it leaves Mirela: she cancels the reunion.
   - Why not **“A passing moment”**: A bad mood would fall on the whole house. This silence falls on one person only, and it began with something she did.
 - If you miss: “The answer is **Something one person does to another.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **One person’s reasoning**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, a person may be explaining or defending themselves, and someone else may be there to hear it. In **“One person’s reasoning”** the reasons are about the speaker’s own view, choice or act, and anyone else is only listening. In **“Something one person does to another”** what is said or done is about the other person, or about what has happened between the two, and it is said or done to them. Who are the words about, and who are they said to? Are they about the speaker’s own view or choice, with anyone else only listening? Or are they said to another person, about that person or about what has happened between the two?
-  - If you chose **A lasting way someone is**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, one person may be treating another badly, and the very same behaviour can appear in each. **“Something one person does to another”** stays between two people: it shows what one of them says or does to the other. **“A lasting way someone is”** follows one person across years, places and relationships. Does the case stay between two people, and show what one of them says or does to the other? Or does it show this: years, more than one place and more than one relationship, and the same behaviour in all of them?
+  - If you chose **One person’s reasoning**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, a person may be explaining or defending themselves, and someone else may be there to hear it. In **“One person’s reasoning”** the reasons are about the speaker’s own view, choice or act, and anyone else is only listening. In **“Something one person does to another”** what is said or done is about the other person, or about what has happened between the two, and it is said or done to them. Who are the words about, and who are they said to? Are they about the speaker’s own view or choice, with anyone else only listening? Or are they said to another person, about that person or about what has happened between the two?
+  - If you chose **A lasting way someone is**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, one person may be treating another badly, and the very same behaviour can appear in each. **“Something one person does to another”** stays between two people: it shows what one of them says or does to the other. **“A lasting way someone is”** follows one person across years, places and relationships. Does the case stay between two people, and show what one of them says or does to the other? Or does it show this: years, more than one place and more than one relationship, and the same behaviour in all of them?
   - If you chose **A passing moment**: the “why not” line above. Then the lines from the card that compared the two: In both, someone can be hard to be around, and other people can be hurt by it. In **“A passing moment”** nothing is said or done to anyone about them: other people are near it, and are not what it is about. In **“Something one person does to another”** something is said or done to one particular person, about that person or about what has happened between the two. Is anything said or done to one particular person, about that person or about what has happened between the two? Or is this only how someone was for a short while, with everyone or with no one?
 - What would make it a different name: If he had been silent with everyone in the house for four days, after some bad news of his own, it would be **“A passing moment”**.
 - Taught on: “Two people, and what one says or does to the other” (one tap opens the card).
@@ -1708,8 +1708,8 @@ The question is shown with all four of its answers from the key, in the key’s 
   - Why not **“One person’s reasoning”**: Paloma makes choices, but the case gives none of her reasons and shows her defending nothing. It shows what she did in three weeks, and no more.
 - If you miss: “The answer is **A passing moment.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **One person’s reasoning**: the “why not” line above. Then the lines from the card that compared the two: Both are about one person on one occasion, and both can follow something that happened to them. In **“One person’s reasoning”** the person gives reasons for a view, a choice or something they did. In **“A passing moment”** no reasons are given: the case shows only how the person felt and acted. Does the person give reasons for a view, a choice or something they did? Or does the case show only how they felt and acted?
-  - If you chose **Something one person does to another**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, someone can be hard to be around, and other people can be hurt by it. In **“A passing moment”** nothing is said or done to anyone about them: other people are near it, and are not what it is about. In **“Something one person does to another”** something is said or done to one particular person, about that person or about what has happened between the two. Is anything said or done to one particular person, about that person or about what has happened between the two? Or is this only how someone was for a short while, with everyone or with no one?
-  - If you chose **A lasting way someone is**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: The behaviour itself can be exactly the same in both. What differs is how much of the person’s life the case shows. **“A passing moment”** shows one occasion or one short stretch. **“A lasting way someone is”** shows the same thing across years, places and relationships. How much of the person’s life does the case show? One occasion or one short stretch? Or this: years, more than one place and more than one relationship, and the same behaviour in all of them?
+  - If you chose **Something one person does to another**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, someone can be hard to be around, and other people can be hurt by it. In **“A passing moment”** nothing is said or done to anyone about them: other people are near it, and are not what it is about. In **“Something one person does to another”** something is said or done to one particular person, about that person or about what has happened between the two. Is anything said or done to one particular person, about that person or about what has happened between the two? Or is this only how someone was for a short while, with everyone or with no one?
+  - If you chose **A lasting way someone is**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: The behaviour itself can be exactly the same in both. What differs is how much of the person’s life the case shows. **“A passing moment”** shows one occasion or one short stretch. **“A lasting way someone is”** shows the same thing across years, places and relationships. How much of the person’s life does the case show? One occasion or one short stretch? Or this: years, more than one place and more than one relationship, and the same behaviour in all of them?
 - What would make it a different name: If the case gave her reasons, for example that she had wanted a motorbike for ten years and could now afford one, there would be reasoning to look at, and it would be **“One person’s reasoning”**.
 - Taught on: “One person, one occasion or one short stretch, and nothing to name” (one tap opens the card).
 
@@ -1729,8 +1729,8 @@ The question is shown with all four of its answers from the key, in the key’s 
 - If you are right: “Right: **A lasting way someone is.**” The case is a long view of one man: “Pupils from the 1990s, pupils from last year, parents, and the staff of two schools all say the same two things”. Thirty years or so, two schools, and pupils, parents and staff all saying the same.
   - Why not **“A passing moment”**: Being late once is a moment. The case shows the same thing across decades and two schools, from everyone who has known him.
 - If you miss: “The answer is **A lasting way someone is.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **One person’s reasoning**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can show a person defending themselves, and the reasons can sound the same. **“One person’s reasoning”** shows one piece of thinking: this view, this choice, this occasion. **“A lasting way someone is”** shows the same behaviour across years, places and relationships. Is the case one piece of thinking, about one view or one choice? Or does it show this: years, more than one place and more than one relationship, and the same behaviour in all of them?
-  - If you chose **Something one person does to another**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, one person may be treating another badly, and the very same behaviour can appear in each. **“Something one person does to another”** stays between two people: it shows what one of them says or does to the other. **“A lasting way someone is”** follows one person across years, places and relationships. Does the case stay between two people, and show what one of them says or does to the other? Or does it show this: years, more than one place and more than one relationship, and the same behaviour in all of them?
+  - If you chose **One person’s reasoning**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can show a person defending themselves, and the reasons can sound the same. **“One person’s reasoning”** shows one piece of thinking: this view, this choice, this occasion. **“A lasting way someone is”** shows the same behaviour across years, places and relationships. Is the case one piece of thinking, about one view or one choice? Or does it show this: years, more than one place and more than one relationship, and the same behaviour in all of them?
+  - If you chose **Something one person does to another**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, one person may be treating another badly, and the very same behaviour can appear in each. **“Something one person does to another”** stays between two people: it shows what one of them says or does to the other. **“A lasting way someone is”** follows one person across years, places and relationships. Does the case stay between two people, and show what one of them says or does to the other? Or does it show this: years, more than one place and more than one relationship, and the same behaviour in all of them?
   - If you chose **A passing moment**: the “why not” line above. Then the lines from the card that compared the two: The behaviour itself can be exactly the same in both. What differs is how much of the person’s life the case shows. **“A passing moment”** shows one occasion or one short stretch. **“A lasting way someone is”** shows the same thing across years, places and relationships. How much of the person’s life does the case show? One occasion or one short stretch? Or this: years, more than one place and more than one relationship, and the same behaviour in all of them?
 - What would make it a different name: If the case said only that Mr Bains was late for assembly last Tuesday, it would be **“A passing moment”**.
 - Taught on: “One person, the same way for years, wherever they are and whoever they are with” (one tap opens the card).
@@ -1751,10 +1751,10 @@ The question is shown with all four of its answers from the key, in the key’s 
 - If you are right: “Right: **A passing moment.**” The case shows one evening, in one place: “At her cousin's wedding” and “who was meeting her for the first time”. "Typical" comes from someone who has known her for that one evening, so it adds no years.
   - Why not **“A lasting way someone is”**: There is a lot of the same behaviour, but it is all one evening. The case shows no other year, no other place, and nobody who has known her for longer than a few hours.
 - If you miss: “The answer is **A passing moment.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **One person’s reasoning**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both are about one person on one occasion, and both can follow something that happened to them. In **“One person’s reasoning”** the person gives reasons for a view, a choice or something they did. In **“A passing moment”** no reasons are given: the case shows only how the person felt and acted. Does the person give reasons for a view, a choice or something they did? Or does the case show only how they felt and acted?
-  - If you chose **Something one person does to another**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, someone can be hard to be around, and other people can be hurt by it. In **“A passing moment”** nothing is said or done to anyone about them: other people are near it, and are not what it is about. In **“Something one person does to another”** something is said or done to one particular person, about that person or about what has happened between the two. Is anything said or done to one particular person, about that person or about what has happened between the two? Or is this only how someone was for a short while, with everyone or with no one?
+  - If you chose **One person’s reasoning**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both are about one person on one occasion, and both can follow something that happened to them. In **“One person’s reasoning”** the person gives reasons for a view, a choice or something they did. In **“A passing moment”** no reasons are given: the case shows only how the person felt and acted. Does the person give reasons for a view, a choice or something they did? Or does the case show only how they felt and acted?
+  - If you chose **Something one person does to another**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, someone can be hard to be around, and other people can be hurt by it. In **“A passing moment”** nothing is said or done to anyone about them: other people are near it, and are not what it is about. In **“Something one person does to another”** something is said or done to one particular person, about that person or about what has happened between the two. Is anything said or done to one particular person, about that person or about what has happened between the two? Or is this only how someone was for a short while, with everyone or with no one?
   - If you chose **A lasting way someone is**: the “why not” line above. Then the lines from the card that compared the two: The behaviour itself can be exactly the same in both. What differs is how much of the person’s life the case shows. **“A passing moment”** shows one occasion or one short stretch. **“A lasting way someone is”** shows the same thing across years, places and relationships. How much of the person’s life does the case show? One occasion or one short stretch? Or this: years, more than one place and more than one relationship, and the same behaviour in all of them?
-- This case may have brought back *Thirty years of Desmond*, which was **“A lasting way someone is”**. When a likeness and the key disagree, go by the words that answer the key’s question.
+- This case may have brought back *Thirty years of Desmond*, which was **“A lasting way someone is”**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If her family and her colleagues said she had done this at every gathering for twenty years, the case would be **“A lasting way someone is”**.
 - Taught on: “One person, one occasion or one short stretch, and nothing to name” (one tap opens the card).
 
@@ -1774,10 +1774,10 @@ The question is shown with all four of its answers from the key, in the key’s 
 - If you are right: “Right: **Something one person does to another.**” One person is saying something to another, about her: “he told his girlfriend that her constant questions were what was wearing him out, that she was needy, and that a better partner would leave him in peace”. The case shows where it leaves her: she has stopped asking.
   - Why not **“A passing moment”**: The month of double shifts is real, and it would explain a bad mood. But this is not a mood that falls on everyone. Something is said to one person, about her, and it changes what she does.
 - If you miss: “The answer is **Something one person does to another.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **One person’s reasoning**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, a person may be explaining or defending themselves, and someone else may be there to hear it. In **“One person’s reasoning”** the reasons are about the speaker’s own view, choice or act, and anyone else is only listening. In **“Something one person does to another”** what is said or done is about the other person, or about what has happened between the two, and it is said or done to them. Who are the words about, and who are they said to? Are they about the speaker’s own view or choice, with anyone else only listening? Or are they said to another person, about that person or about what has happened between the two?
-  - If you chose **A lasting way someone is**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, one person may be treating another badly, and the very same behaviour can appear in each. **“Something one person does to another”** stays between two people: it shows what one of them says or does to the other. **“A lasting way someone is”** follows one person across years, places and relationships. Does the case stay between two people, and show what one of them says or does to the other? Or does it show this: years, more than one place and more than one relationship, and the same behaviour in all of them?
+  - If you chose **One person’s reasoning**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, a person may be explaining or defending themselves, and someone else may be there to hear it. In **“One person’s reasoning”** the reasons are about the speaker’s own view, choice or act, and anyone else is only listening. In **“Something one person does to another”** what is said or done is about the other person, or about what has happened between the two, and it is said or done to them. Who are the words about, and who are they said to? Are they about the speaker’s own view or choice, with anyone else only listening? Or are they said to another person, about that person or about what has happened between the two?
+  - If you chose **A lasting way someone is**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, one person may be treating another badly, and the very same behaviour can appear in each. **“Something one person does to another”** stays between two people: it shows what one of them says or does to the other. **“A lasting way someone is”** follows one person across years, places and relationships. Does the case stay between two people, and show what one of them says or does to the other? Or does it show this: years, more than one place and more than one relationship, and the same behaviour in all of them?
   - If you chose **A passing moment**: the “why not” line above. Then the lines from the card that compared the two: In both, someone can be hard to be around, and other people can be hurt by it. In **“A passing moment”** nothing is said or done to anyone about them: other people are near it, and are not what it is about. In **“Something one person does to another”** something is said or done to one particular person, about that person or about what has happened between the two. Is anything said or done to one particular person, about that person or about what has happened between the two? Or is this only how someone was for a short while, with everyone or with no one?
-- This case may have brought back *The week of the diagnosis*, which was **“A passing moment”**. When a likeness and the key disagree, go by the words that answer the key’s question.
+- This case may have brought back *The week of the diagnosis*, which was **“A passing moment”**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If Nadim had simply been silent and short with everyone that month, with nothing said to his girlfriend about her, it would be **“A passing moment”**.
 - Taught on: “Two people, and what one says or does to the other” (one tap opens the card).
 
@@ -1795,12 +1795,12 @@ The question is shown with all four of its answers from the key, in the key’s 
 **Shown as soon as you answer**
 
 - If you are right: “Right: **A lasting way someone is.**” The case opens on one evening, and then goes on to a long view of one man: “His daughter says he has spoken to waiters, shop staff and nurses like that since she was a child” and “both his former wives say the same of how he spoke to them at home”. Decades, restaurants, shops, hospitals and two homes, with the same thing in each.
-  - Why not **“Something one person does to another”**: What Victor said to the waitress is something done to another person, and on its own that would be the answer. The case goes on to show the same thing through decades, in many places and with many people. When a case shows both, the key gives the larger answer.
+  - Why not **“Something one person does to another”**: What Victor said to the waitress is something done to another person, and on its own that would be the answer. The case goes on to show the same thing through decades, in many places and with many people. When a case shows both, the answer is the larger one.
 - If you miss: “The answer is **A lasting way someone is.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **One person’s reasoning**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can show a person defending themselves, and the reasons can sound the same. **“One person’s reasoning”** shows one piece of thinking: this view, this choice, this occasion. **“A lasting way someone is”** shows the same behaviour across years, places and relationships. Is the case one piece of thinking, about one view or one choice? Or does it show this: years, more than one place and more than one relationship, and the same behaviour in all of them?
-  - If you chose **Something one person does to another**: This case does show that. It also shows the same behaviour across years, places and relationships, and when a case shows both, the key’s answer is **A lasting way someone is**. Then the lines from the card that compared the two: In both, one person may be treating another badly, and the very same behaviour can appear in each. **“Something one person does to another”** stays between two people: it shows what one of them says or does to the other. **“A lasting way someone is”** follows one person across years, places and relationships. Does the case stay between two people, and show what one of them says or does to the other? Or does it show this: years, more than one place and more than one relationship, and the same behaviour in all of them?
-  - If you chose **A passing moment**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: The behaviour itself can be exactly the same in both. What differs is how much of the person’s life the case shows. **“A passing moment”** shows one occasion or one short stretch. **“A lasting way someone is”** shows the same thing across years, places and relationships. How much of the person’s life does the case show? One occasion or one short stretch? Or this: years, more than one place and more than one relationship, and the same behaviour in all of them?
-- This case may have brought back *The deadline*, which was **“Something one person does to another”**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose **One person’s reasoning**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can show a person defending themselves, and the reasons can sound the same. **“One person’s reasoning”** shows one piece of thinking: this view, this choice, this occasion. **“A lasting way someone is”** shows the same behaviour across years, places and relationships. Is the case one piece of thinking, about one view or one choice? Or does it show this: years, more than one place and more than one relationship, and the same behaviour in all of them?
+  - If you chose **Something one person does to another**: This case does show that. It also shows the same behaviour across years, places and relationships, and when a case shows both, the answer is **A lasting way someone is**. Then the lines from the card that compared the two: In both, one person may be treating another badly, and the very same behaviour can appear in each. **“Something one person does to another”** stays between two people: it shows what one of them says or does to the other. **“A lasting way someone is”** follows one person across years, places and relationships. Does the case stay between two people, and show what one of them says or does to the other? Or does it show this: years, more than one place and more than one relationship, and the same behaviour in all of them?
+  - If you chose **A passing moment**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: The behaviour itself can be exactly the same in both. What differs is how much of the person’s life the case shows. **“A passing moment”** shows one occasion or one short stretch. **“A lasting way someone is”** shows the same thing across years, places and relationships. How much of the person’s life does the case show? One occasion or one short stretch? Or this: years, more than one place and more than one relationship, and the same behaviour in all of them?
+- This case may have brought back *The deadline*, which was **“Something one person does to another”**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If the case ended after its first sentence, it would be **“Something one person does to another”**: one evening, and something said to one person about her.
 - Taught on: “One person, the same way for years, wherever they are and whoever they are with” (one tap opens the card).
 
@@ -1818,12 +1818,12 @@ The question is shown with all four of its answers from the key, in the key’s 
 **Shown as soon as you answer**
 
 - If you are right: “Right: **Something one person does to another.**” Simone gives a reason for being late, and the reason is about the boy’s father and is said to him: “I wouldn't be late if you didn't make every handover a battle” and “You stress me so much I can't think straight”. The case shows where it leaves him: apologising, and offering to do the driving.
-  - Why not **“One person’s reasoning”**: She is giving a reason for something she did, and on its own that would be **“One person’s reasoning”**. But the reason is made out of the other person and said to him. When a case shows both, the key’s answer is **“Something one person does to another”**.
+  - Why not **“One person’s reasoning”**: She is giving a reason for something she did, and on its own that would be **“One person’s reasoning”**. But the reason is made out of the other person and said to him. When a case shows both, the answer is **“Something one person does to another”**.
 - If you miss: “The answer is **Something one person does to another.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **One person’s reasoning**: This case does show that. It also shows something said or done to another person about them, and when a case shows both, the key’s answer is **Something one person does to another**. Then the lines from the card that compared the two: In both, a person may be explaining or defending themselves, and someone else may be there to hear it. In **“One person’s reasoning”** the reasons are about the speaker’s own view, choice or act, and anyone else is only listening. In **“Something one person does to another”** what is said or done is about the other person, or about what has happened between the two, and it is said or done to them. Who are the words about, and who are they said to? Are they about the speaker’s own view or choice, with anyone else only listening? Or are they said to another person, about that person or about what has happened between the two?
-  - If you chose **A lasting way someone is**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, one person may be treating another badly, and the very same behaviour can appear in each. **“Something one person does to another”** stays between two people: it shows what one of them says or does to the other. **“A lasting way someone is”** follows one person across years, places and relationships. Does the case stay between two people, and show what one of them says or does to the other? Or does it show this: years, more than one place and more than one relationship, and the same behaviour in all of them?
-  - If you chose **A passing moment**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, someone can be hard to be around, and other people can be hurt by it. In **“A passing moment”** nothing is said or done to anyone about them: other people are near it, and are not what it is about. In **“Something one person does to another”** something is said or done to one particular person, about that person or about what has happened between the two. Is anything said or done to one particular person, about that person or about what has happened between the two? Or is this only how someone was for a short while, with everyone or with no one?
-- This case may have brought back *Dev and the forgotten birthday*, which was **“One person’s reasoning”**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose **One person’s reasoning**: This case does show that. It also shows something said or done to another person about them, and when a case shows both, the answer is **Something one person does to another**. Then the lines from the card that compared the two: In both, a person may be explaining or defending themselves, and someone else may be there to hear it. In **“One person’s reasoning”** the reasons are about the speaker’s own view, choice or act, and anyone else is only listening. In **“Something one person does to another”** what is said or done is about the other person, or about what has happened between the two, and it is said or done to them. Who are the words about, and who are they said to? Are they about the speaker’s own view or choice, with anyone else only listening? Or are they said to another person, about that person or about what has happened between the two?
+  - If you chose **A lasting way someone is**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, one person may be treating another badly, and the very same behaviour can appear in each. **“Something one person does to another”** stays between two people: it shows what one of them says or does to the other. **“A lasting way someone is”** follows one person across years, places and relationships. Does the case stay between two people, and show what one of them says or does to the other? Or does it show this: years, more than one place and more than one relationship, and the same behaviour in all of them?
+  - If you chose **A passing moment**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, someone can be hard to be around, and other people can be hurt by it. In **“A passing moment”** nothing is said or done to anyone about them: other people are near it, and are not what it is about. In **“Something one person does to another”** something is said or done to one particular person, about that person or about what has happened between the two. Is anything said or done to one particular person, about that person or about what has happened between the two? Or is this only how someone was for a short while, with everyone or with no one?
+- This case may have brought back *Dev and the forgotten birthday*, which was **“One person’s reasoning”**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If Simone had said to a friend afterwards, "The traffic was terrible, anyone would have been late", the reason would be about her own lateness and nobody would be on the receiving end. That would be **“One person’s reasoning”**.
 - Taught on: “Two people, and what one says or does to the other” (one tap opens the card).
 
@@ -1843,10 +1843,10 @@ The question is shown with all four of its answers from the key, in the key’s 
 - If you are right: “Right: **One person’s reasoning.**” One person is defending a choice of his own, and giving his reason: “It has never let me down, and I am not changing now”. His daughter brings a fact, and the case is about what he does with it.
   - Why not **“A lasting way someone is”**: Thirty years is how long he has had the account. It is what his choice is about. The case does not show how Edwin is in other places or with other people. It shows one choice, defended once.
 - If you miss: “The answer is **One person’s reasoning.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **Something one person does to another**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, a person may be explaining or defending themselves, and someone else may be there to hear it. In **“One person’s reasoning”** the reasons are about the speaker’s own view, choice or act, and anyone else is only listening. In **“Something one person does to another”** what is said or done is about the other person, or about what has happened between the two, and it is said or done to them. Who are the words about, and who are they said to? Are they about the speaker’s own view or choice, with anyone else only listening? Or are they said to another person, about that person or about what has happened between the two?
+  - If you chose **Something one person does to another**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, a person may be explaining or defending themselves, and someone else may be there to hear it. In **“One person’s reasoning”** the reasons are about the speaker’s own view, choice or act, and anyone else is only listening. In **“Something one person does to another”** what is said or done is about the other person, or about what has happened between the two, and it is said or done to them. Who are the words about, and who are they said to? Are they about the speaker’s own view or choice, with anyone else only listening? Or are they said to another person, about that person or about what has happened between the two?
   - If you chose **A lasting way someone is**: the “why not” line above. Then the lines from the card that compared the two: Both can show a person defending themselves, and the reasons can sound the same. **“One person’s reasoning”** shows one piece of thinking: this view, this choice, this occasion. **“A lasting way someone is”** shows the same behaviour across years, places and relationships. Is the case one piece of thinking, about one view or one choice? Or does it show this: years, more than one place and more than one relationship, and the same behaviour in all of them?
-  - If you chose **A passing moment**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both are about one person on one occasion, and both can follow something that happened to them. In **“One person’s reasoning”** the person gives reasons for a view, a choice or something they did. In **“A passing moment”** no reasons are given: the case shows only how the person felt and acted. Does the person give reasons for a view, a choice or something they did? Or does the case show only how they felt and acted?
-- This case may have brought back *Twenty years of Moira*, which was **“A lasting way someone is”**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose **A passing moment**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both are about one person on one occasion, and both can follow something that happened to them. In **“One person’s reasoning”** the person gives reasons for a view, a choice or something they did. In **“A passing moment”** no reasons are given: the case shows only how the person felt and acted. Does the person give reasons for a view, a choice or something they did? Or does the case show only how they felt and acted?
+- This case may have brought back *Twenty years of Moira*, which was **“A lasting way someone is”**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If the case showed Edwin refusing every change for thirty years, at work, at home and among his friends, it would be **“A lasting way someone is”**.
 - Taught on: “One person, and their reasons for a view or a choice” (one tap opens the card).
 
@@ -1901,7 +1901,7 @@ The question is shown with all four of its answers from the key, in the key’s 
 **Shown as soon as you answer**
 
 - The answer is: **A passing moment.**
-- If you chose another answer, the line is built from the key, as for any other question.
+- If you chose another answer, the line is built from the answers’ own wording, as for any other question.
 - The fault: The claim describes one short stretch that began with something real, and then uses a word for a whole person. Being tearful and jumpy after a burglary fits what happened. The claim shows no reasoning, nothing said to anyone about them, and no years.
 - The claim, put right (always the last thing shown): She has been tearful and jumpy since the burglary. Something frightening happened, and she is still shaken. That is **“A passing moment”**, and there is nothing more to name.
 
@@ -1919,7 +1919,7 @@ The question is shown with all four of its answers from the key, in the key’s 
 **Shown as soon as you answer**
 
 - The answer is: **Something one person does to another.**
-- If you chose another answer, the line is built from the key, as for any other question.
+- If you chose another answer, the line is built from the answers’ own wording, as for any other question.
 - The fault: What the claim describes is one evening between two people: something he said to her about what had passed between them. "A born liar" is a claim about his whole life, and the claim shows one night of it.
 - The claim, put right (always the last thing shown): Last night he told her she had imagined the whole conversation. That is **“Something one person does to another”**, and it deserves to be looked at as that. Whether it is how he is with everyone, and has been for years, is something one evening cannot show.
 
@@ -1937,7 +1937,7 @@ The question is shown with all four of its answers from the key, in the key’s 
 **Shown as soon as you answer**
 
 - The answer is: **One person’s reasoning.**
-- If you chose another answer, the line is built from the key, as for any other question.
+- If you chose another answer, the line is built from the answers’ own wording, as for any other question.
 - The fault: What the claim describes is one man giving his reasons for one choice. "He always has to be right" and "it’s who he is" are claims about years, and the claim shows ten minutes.
 - The claim, put right (always the last thing shown): He spent ten minutes telling me why he is keeping the van. That is **“One person’s reasoning”**: one choice, and his reasons for it. Whether the reasons are good is a fair thing to ask next. What he is like in general is something ten minutes cannot show.
 
@@ -1945,13 +1945,13 @@ The question is shown with all four of its answers from the key, in the key’s 
 
 ### 34. What to carry away
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 34 of 35*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 34 of 35*
 
 [reviewers only: card kind `recap`, id `recap-kind`]
 
-You have now answered the key’s first question on your own. This card puts the unit in one place, in the key’s words.
+You have now answered the first question on your own. This card puts the unit in one place.
 
-**The key for this unit, in its own words**
+**This unit’s questions and answers**
 
 What kind of thing is this?
 - One person’s reasoning
@@ -1973,16 +1973,16 @@ What kind of thing is this?
 **To carry away**
 
 - Before any name, ask what the case is made of, and point to the words that show it. If you cannot point, you do not have an answer yet.
-- The kind is not a verdict. Each of the first three can be fair or unfair, harmless or harmful. Sorting that out is what the key’s later questions are for.
+- The kind is not a verdict. Each of the first three can be fair or unfair, harmless or harmful. Sorting that out is what the later questions are for.
 - One evening is never **“A lasting way someone is”**, however bad the evening was and whoever says "always". Count the occasions, the places and the people.
 - A hard week after something real is **“A passing moment”**. It does not need a bigger word, and giving it one is a mistake about the person.
 - None of the four kinds is a diagnosis. Each says only what a case shows, and a diagnosis is something only a trained professional can give, after a long assessment.
-- When a case shows two kinds, the key chooses: years, places and relationships first; then anything said or done to another person about them; then one person’s reasons.
-- Every case in this subject starts with this question. Your answer to it is the first part of your route to a name.
+- When a case shows two kinds, the answer is chosen in this order: years, places and relationships first; then anything said or done to another person about them; then one person’s reasons.
+- Every case in this subject starts with this question. Your answer to it is the first of your answers on the way to a name.
 
 ### 35. Where would you meet this?
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 35 of 35*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 35 of 35*
 
 [reviewers only: card kind `transfer`, id `transfer-kind`]
 
@@ -2009,7 +2009,7 @@ One line is enough. It is kept on this device only and is never marked.
 
 ## After the unit: what comes back on later days
 
-A name that is due returns as a case the learner has not seen, next to a case of the name they most often confuse it with. Each is asked the key’s first question, with the full feedback of the last case stage. These are the fresh cases held back for that purpose: three for each name, one for each scheduled return. The first return is about two days after the drill, the next about a week after that, the next about three and a half weeks later.
+A name that is due returns as a case the learner has not seen, next to a case of the name they most often confuse it with. Each is asked the first question, with the full feedback of the last case stage. These are the fresh cases held back for that purpose: three for each name, one for each scheduled return. The first return is about two days after the drill, the next about a week after that, the next about three and a half weeks later.
 
 **Return case 1 of 12**
 
@@ -2028,8 +2028,8 @@ A name that is due returns as a case the learner has not seen, next to a case of
   - Why not **“Something one person does to another”**: She is speaking to her brother, but nothing she says is about him or about anything between the two of them.
 - If you miss: “The answer is **One person’s reasoning.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **Something one person does to another**: the “why not” line above. Then the lines from the card that compared the two: In both, a person may be explaining or defending themselves, and someone else may be there to hear it. In **“One person’s reasoning”** the reasons are about the speaker’s own view, choice or act, and anyone else is only listening. In **“Something one person does to another”** what is said or done is about the other person, or about what has happened between the two, and it is said or done to them. Who are the words about, and who are they said to? Are they about the speaker’s own view or choice, with anyone else only listening? Or are they said to another person, about that person or about what has happened between the two?
-  - If you chose **A lasting way someone is**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can show a person defending themselves, and the reasons can sound the same. **“One person’s reasoning”** shows one piece of thinking: this view, this choice, this occasion. **“A lasting way someone is”** shows the same behaviour across years, places and relationships. Is the case one piece of thinking, about one view or one choice? Or does it show this: years, more than one place and more than one relationship, and the same behaviour in all of them?
-  - If you chose **A passing moment**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both are about one person on one occasion, and both can follow something that happened to them. In **“One person’s reasoning”** the person gives reasons for a view, a choice or something they did. In **“A passing moment”** no reasons are given: the case shows only how the person felt and acted. Does the person give reasons for a view, a choice or something they did? Or does the case show only how they felt and acted?
+  - If you chose **A lasting way someone is**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can show a person defending themselves, and the reasons can sound the same. **“One person’s reasoning”** shows one piece of thinking: this view, this choice, this occasion. **“A lasting way someone is”** shows the same behaviour across years, places and relationships. Is the case one piece of thinking, about one view or one choice? Or does it show this: years, more than one place and more than one relationship, and the same behaviour in all of them?
+  - If you chose **A passing moment**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both are about one person on one occasion, and both can follow something that happened to them. In **“One person’s reasoning”** the person gives reasons for a view, a choice or something they did. In **“A passing moment”** no reasons are given: the case shows only how the person felt and acted. Does the person give reasons for a view, a choice or something they did? Or does the case show only how they felt and acted?
 - What would make it a different name: If she had told her brother that the roof only leaks because he never helped with the house, something would have been said to him about him, and it would be **“Something one person does to another”**.
 - Taught on: “One person, and their reasons for a view or a choice” (one tap opens the card).
 
@@ -2050,8 +2050,8 @@ A name that is due returns as a case the learner has not seen, next to a case of
   - Why not **“Something one person does to another”**: Bruno is talking about his opponent, but not to him. Nothing is said or done to the opponent, and the secretary is only an audience.
 - If you miss: “The answer is **One person’s reasoning.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **Something one person does to another**: the “why not” line above. Then the lines from the card that compared the two: In both, a person may be explaining or defending themselves, and someone else may be there to hear it. In **“One person’s reasoning”** the reasons are about the speaker’s own view, choice or act, and anyone else is only listening. In **“Something one person does to another”** what is said or done is about the other person, or about what has happened between the two, and it is said or done to them. Who are the words about, and who are they said to? Are they about the speaker’s own view or choice, with anyone else only listening? Or are they said to another person, about that person or about what has happened between the two?
-  - If you chose **A lasting way someone is**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can show a person defending themselves, and the reasons can sound the same. **“One person’s reasoning”** shows one piece of thinking: this view, this choice, this occasion. **“A lasting way someone is”** shows the same behaviour across years, places and relationships. Is the case one piece of thinking, about one view or one choice? Or does it show this: years, more than one place and more than one relationship, and the same behaviour in all of them?
-  - If you chose **A passing moment**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both are about one person on one occasion, and both can follow something that happened to them. In **“One person’s reasoning”** the person gives reasons for a view, a choice or something they did. In **“A passing moment”** no reasons are given: the case shows only how the person felt and acted. Does the person give reasons for a view, a choice or something they did? Or does the case show only how they felt and acted?
+  - If you chose **A lasting way someone is**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can show a person defending themselves, and the reasons can sound the same. **“One person’s reasoning”** shows one piece of thinking: this view, this choice, this occasion. **“A lasting way someone is”** shows the same behaviour across years, places and relationships. Is the case one piece of thinking, about one view or one choice? Or does it show this: years, more than one place and more than one relationship, and the same behaviour in all of them?
+  - If you chose **A passing moment**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both are about one person on one occasion, and both can follow something that happened to them. In **“One person’s reasoning”** the person gives reasons for a view, a choice or something they did. In **“A passing moment”** no reasons are given: the case shows only how the person felt and acted. Does the person give reasons for a view, a choice or something they did? Or does the case show only how they felt and acted?
 - What would make it a different name: If Bruno had told his opponent to his face that he only wins by wasting time, and the opponent had stopped coming to the club, it would be **“Something one person does to another”**.
 - Taught on: “One person, and their reasons for a view or a choice” (one tap opens the card).
 
@@ -2071,8 +2071,8 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **One person’s reasoning.**” One person is giving her reasons for a choice of her own: “The pay is a fifth higher, I sleep badly anyway, and I would be home when the children get in from school”. The note goes to her manager, but nothing in it is about the manager.
   - Why not **“A passing moment”**: Chiara is not only reacting to something. She has made a choice and set out three reasons for it.
 - If you miss: “The answer is **One person’s reasoning.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **Something one person does to another**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, a person may be explaining or defending themselves, and someone else may be there to hear it. In **“One person’s reasoning”** the reasons are about the speaker’s own view, choice or act, and anyone else is only listening. In **“Something one person does to another”** what is said or done is about the other person, or about what has happened between the two, and it is said or done to them. Who are the words about, and who are they said to? Are they about the speaker’s own view or choice, with anyone else only listening? Or are they said to another person, about that person or about what has happened between the two?
-  - If you chose **A lasting way someone is**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can show a person defending themselves, and the reasons can sound the same. **“One person’s reasoning”** shows one piece of thinking: this view, this choice, this occasion. **“A lasting way someone is”** shows the same behaviour across years, places and relationships. Is the case one piece of thinking, about one view or one choice? Or does it show this: years, more than one place and more than one relationship, and the same behaviour in all of them?
+  - If you chose **Something one person does to another**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, a person may be explaining or defending themselves, and someone else may be there to hear it. In **“One person’s reasoning”** the reasons are about the speaker’s own view, choice or act, and anyone else is only listening. In **“Something one person does to another”** what is said or done is about the other person, or about what has happened between the two, and it is said or done to them. Who are the words about, and who are they said to? Are they about the speaker’s own view or choice, with anyone else only listening? Or are they said to another person, about that person or about what has happened between the two?
+  - If you chose **A lasting way someone is**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can show a person defending themselves, and the reasons can sound the same. **“One person’s reasoning”** shows one piece of thinking: this view, this choice, this occasion. **“A lasting way someone is”** shows the same behaviour across years, places and relationships. Is the case one piece of thinking, about one view or one choice? Or does it show this: years, more than one place and more than one relationship, and the same behaviour in all of them?
   - If you chose **A passing moment**: the “why not” line above. Then the lines from the card that compared the two: Both are about one person on one occasion, and both can follow something that happened to them. In **“One person’s reasoning”** the person gives reasons for a view, a choice or something they did. In **“A passing moment”** no reasons are given: the case shows only how the person felt and acted. Does the person give reasons for a view, a choice or something they did? Or does the case show only how they felt and acted?
 - What would make it a different name: If the case showed only that Chiara had been sleepless and unsettled for a month, with no choice made and no reasons given, it would be **“A passing moment”**.
 - Taught on: “One person, and their reasons for a view or a choice” (one tap opens the card).
@@ -2093,9 +2093,9 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **Something one person does to another.**” One person is saying something to another, about her: “her husband tells her that the children cry for her the whole time, and that a good mother would not need to get away”. The case shows where it leaves Noelle: two cancelled trips.
   - Why not **“A lasting way someone is”**: It happens each time, but always between the same two people. The case shows no other place and no other relationship of his.
 - If you miss: “The answer is **Something one person does to another.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **One person’s reasoning**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, a person may be explaining or defending themselves, and someone else may be there to hear it. In **“One person’s reasoning”** the reasons are about the speaker’s own view, choice or act, and anyone else is only listening. In **“Something one person does to another”** what is said or done is about the other person, or about what has happened between the two, and it is said or done to them. Who are the words about, and who are they said to? Are they about the speaker’s own view or choice, with anyone else only listening? Or are they said to another person, about that person or about what has happened between the two?
+  - If you chose **One person’s reasoning**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, a person may be explaining or defending themselves, and someone else may be there to hear it. In **“One person’s reasoning”** the reasons are about the speaker’s own view, choice or act, and anyone else is only listening. In **“Something one person does to another”** what is said or done is about the other person, or about what has happened between the two, and it is said or done to them. Who are the words about, and who are they said to? Are they about the speaker’s own view or choice, with anyone else only listening? Or are they said to another person, about that person or about what has happened between the two?
   - If you chose **A lasting way someone is**: the “why not” line above. Then the lines from the card that compared the two: In both, one person may be treating another badly, and the very same behaviour can appear in each. **“Something one person does to another”** stays between two people: it shows what one of them says or does to the other. **“A lasting way someone is”** follows one person across years, places and relationships. Does the case stay between two people, and show what one of them says or does to the other? Or does it show this: years, more than one place and more than one relationship, and the same behaviour in all of them?
-  - If you chose **A passing moment**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, someone can be hard to be around, and other people can be hurt by it. In **“A passing moment”** nothing is said or done to anyone about them: other people are near it, and are not what it is about. In **“Something one person does to another”** something is said or done to one particular person, about that person or about what has happened between the two. Is anything said or done to one particular person, about that person or about what has happened between the two? Or is this only how someone was for a short while, with everyone or with no one?
+  - If you chose **A passing moment**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, someone can be hard to be around, and other people can be hurt by it. In **“A passing moment”** nothing is said or done to anyone about them: other people are near it, and are not what it is about. In **“Something one person does to another”** something is said or done to one particular person, about that person or about what has happened between the two. Is anything said or done to one particular person, about that person or about what has happened between the two? Or is this only how someone was for a short while, with everyone or with no one?
 - What would make it a different name: If the case showed him speaking this way to his first wife, to his sisters and to the women he manages, over twenty years, it would be **“A lasting way someone is”**.
 - Taught on: “Two people, and what one says or does to the other” (one tap opens the card).
 
@@ -2116,8 +2116,8 @@ A name that is due returns as a case the learner has not seen, next to a case of
   - Why not **“One person’s reasoning”**: The director is not explaining a view or a choice of her own. She is telling Olek something about Olek, to his face.
 - If you miss: “The answer is **Something one person does to another.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **One person’s reasoning**: the “why not” line above. Then the lines from the card that compared the two: In both, a person may be explaining or defending themselves, and someone else may be there to hear it. In **“One person’s reasoning”** the reasons are about the speaker’s own view, choice or act, and anyone else is only listening. In **“Something one person does to another”** what is said or done is about the other person, or about what has happened between the two, and it is said or done to them. Who are the words about, and who are they said to? Are they about the speaker’s own view or choice, with anyone else only listening? Or are they said to another person, about that person or about what has happened between the two?
-  - If you chose **A lasting way someone is**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, one person may be treating another badly, and the very same behaviour can appear in each. **“Something one person does to another”** stays between two people: it shows what one of them says or does to the other. **“A lasting way someone is”** follows one person across years, places and relationships. Does the case stay between two people, and show what one of them says or does to the other? Or does it show this: years, more than one place and more than one relationship, and the same behaviour in all of them?
-  - If you chose **A passing moment**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, someone can be hard to be around, and other people can be hurt by it. In **“A passing moment”** nothing is said or done to anyone about them: other people are near it, and are not what it is about. In **“Something one person does to another”** something is said or done to one particular person, about that person or about what has happened between the two. Is anything said or done to one particular person, about that person or about what has happened between the two? Or is this only how someone was for a short while, with everyone or with no one?
+  - If you chose **A lasting way someone is**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, one person may be treating another badly, and the very same behaviour can appear in each. **“Something one person does to another”** stays between two people: it shows what one of them says or does to the other. **“A lasting way someone is”** follows one person across years, places and relationships. Does the case stay between two people, and show what one of them says or does to the other? Or does it show this: years, more than one place and more than one relationship, and the same behaviour in all of them?
+  - If you chose **A passing moment**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, someone can be hard to be around, and other people can be hurt by it. In **“A passing moment”** nothing is said or done to anyone about them: other people are near it, and are not what it is about. In **“Something one person does to another”** something is said or done to one particular person, about that person or about what has happened between the two. Is anything said or done to one particular person, about that person or about what has happened between the two? Or is this only how someone was for a short while, with everyone or with no one?
 - What would make it a different name: If the director had only written in her own notes why she thought the audit had gone well, with nothing said to Olek, it would be **“One person’s reasoning”**.
 - Taught on: “Two people, and what one says or does to the other” (one tap opens the card).
 
@@ -2137,8 +2137,8 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **Something one person does to another.**” Something is done to one person, and then something is said to him, and both follow from what passed between the two of them in that meeting: “has stopped copying him into the project emails since he questioned her figures in a meeting” and “she says he must have deleted them”. The case shows where it leaves Farid: searching his own inbox.
   - Why not **“A passing moment”**: This is not a mood that falls on the whole team. It falls on one person only, and it began with something he did in a meeting.
 - If you miss: “The answer is **Something one person does to another.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **One person’s reasoning**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, a person may be explaining or defending themselves, and someone else may be there to hear it. In **“One person’s reasoning”** the reasons are about the speaker’s own view, choice or act, and anyone else is only listening. In **“Something one person does to another”** what is said or done is about the other person, or about what has happened between the two, and it is said or done to them. Who are the words about, and who are they said to? Are they about the speaker’s own view or choice, with anyone else only listening? Or are they said to another person, about that person or about what has happened between the two?
-  - If you chose **A lasting way someone is**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, one person may be treating another badly, and the very same behaviour can appear in each. **“Something one person does to another”** stays between two people: it shows what one of them says or does to the other. **“A lasting way someone is”** follows one person across years, places and relationships. Does the case stay between two people, and show what one of them says or does to the other? Or does it show this: years, more than one place and more than one relationship, and the same behaviour in all of them?
+  - If you chose **One person’s reasoning**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, a person may be explaining or defending themselves, and someone else may be there to hear it. In **“One person’s reasoning”** the reasons are about the speaker’s own view, choice or act, and anyone else is only listening. In **“Something one person does to another”** what is said or done is about the other person, or about what has happened between the two, and it is said or done to them. Who are the words about, and who are they said to? Are they about the speaker’s own view or choice, with anyone else only listening? Or are they said to another person, about that person or about what has happened between the two?
+  - If you chose **A lasting way someone is**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, one person may be treating another badly, and the very same behaviour can appear in each. **“Something one person does to another”** stays between two people: it shows what one of them says or does to the other. **“A lasting way someone is”** follows one person across years, places and relationships. Does the case stay between two people, and show what one of them says or does to the other? Or does it show this: years, more than one place and more than one relationship, and the same behaviour in all of them?
   - If you chose **A passing moment**: the “why not” line above. Then the lines from the card that compared the two: In both, someone can be hard to be around, and other people can be hurt by it. In **“A passing moment”** nothing is said or done to anyone about them: other people are near it, and are not what it is about. In **“Something one person does to another”** something is said or done to one particular person, about that person or about what has happened between the two. Is anything said or done to one particular person, about that person or about what has happened between the two? Or is this only how someone was for a short while, with everyone or with no one?
 - What would make it a different name: If she had been slow to answer everyone’s emails for a fortnight, after an emergency at home, it would be **“A passing moment”**.
 - Taught on: “Two people, and what one says or does to the other” (one tap opens the card).
@@ -2159,8 +2159,8 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **A lasting way someone is.**” The case is a long view of one man: “Players he coached in the 1980s, players he coaches now, and the parents of both say the same” and “His own grown-up children say he was the same at home”. Forty years, a club and a home, and players, parents and children all saying the same.
   - Why not **“A passing moment”**: One patient training session would be a moment. The case shows the same thing through forty years, in two places, from everyone who has known him.
 - If you miss: “The answer is **A lasting way someone is.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **One person’s reasoning**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can show a person defending themselves, and the reasons can sound the same. **“One person’s reasoning”** shows one piece of thinking: this view, this choice, this occasion. **“A lasting way someone is”** shows the same behaviour across years, places and relationships. Is the case one piece of thinking, about one view or one choice? Or does it show this: years, more than one place and more than one relationship, and the same behaviour in all of them?
-  - If you chose **Something one person does to another**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, one person may be treating another badly, and the very same behaviour can appear in each. **“Something one person does to another”** stays between two people: it shows what one of them says or does to the other. **“A lasting way someone is”** follows one person across years, places and relationships. Does the case stay between two people, and show what one of them says or does to the other? Or does it show this: years, more than one place and more than one relationship, and the same behaviour in all of them?
+  - If you chose **One person’s reasoning**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can show a person defending themselves, and the reasons can sound the same. **“One person’s reasoning”** shows one piece of thinking: this view, this choice, this occasion. **“A lasting way someone is”** shows the same behaviour across years, places and relationships. Is the case one piece of thinking, about one view or one choice? Or does it show this: years, more than one place and more than one relationship, and the same behaviour in all of them?
+  - If you chose **Something one person does to another**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, one person may be treating another badly, and the very same behaviour can appear in each. **“Something one person does to another”** stays between two people: it shows what one of them says or does to the other. **“A lasting way someone is”** follows one person across years, places and relationships. Does the case stay between two people, and show what one of them says or does to the other? Or does it show this: years, more than one place and more than one relationship, and the same behaviour in all of them?
   - If you chose **A passing moment**: the “why not” line above. Then the lines from the card that compared the two: The behaviour itself can be exactly the same in both. What differs is how much of the person’s life the case shows. **“A passing moment”** shows one occasion or one short stretch. **“A lasting way someone is”** shows the same thing across years, places and relationships. How much of the person’s life does the case show? One occasion or one short stretch? Or this: years, more than one place and more than one relationship, and the same behaviour in all of them?
 - What would make it a different name: If the case told you only about last Saturday’s session, it would be **“A passing moment”**.
 - Taught on: “One person, the same way for years, wherever they are and whoever they are with” (one tap opens the card).
@@ -2181,9 +2181,9 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **A lasting way someone is.**” The case is a long view of one woman: “Her brothers remember it from the 1970s, her two husbands lived with it, and the committee of her bridge club has learned to hold its votes before she arrives”. Fifty years, home and a club, and brothers, husbands and a committee all describing the same thing.
   - Why not **“Something one person does to another”**: Walking out of an argument is done to whoever she is arguing with, but the case does not stay with any one of them. It follows her through fifty years and through everyone she has argued with.
 - If you miss: “The answer is **A lasting way someone is.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **One person’s reasoning**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can show a person defending themselves, and the reasons can sound the same. **“One person’s reasoning”** shows one piece of thinking: this view, this choice, this occasion. **“A lasting way someone is”** shows the same behaviour across years, places and relationships. Is the case one piece of thinking, about one view or one choice? Or does it show this: years, more than one place and more than one relationship, and the same behaviour in all of them?
+  - If you chose **One person’s reasoning**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can show a person defending themselves, and the reasons can sound the same. **“One person’s reasoning”** shows one piece of thinking: this view, this choice, this occasion. **“A lasting way someone is”** shows the same behaviour across years, places and relationships. Is the case one piece of thinking, about one view or one choice? Or does it show this: years, more than one place and more than one relationship, and the same behaviour in all of them?
   - If you chose **Something one person does to another**: the “why not” line above. Then the lines from the card that compared the two: In both, one person may be treating another badly, and the very same behaviour can appear in each. **“Something one person does to another”** stays between two people: it shows what one of them says or does to the other. **“A lasting way someone is”** follows one person across years, places and relationships. Does the case stay between two people, and show what one of them says or does to the other? Or does it show this: years, more than one place and more than one relationship, and the same behaviour in all of them?
-  - If you chose **A passing moment**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: The behaviour itself can be exactly the same in both. What differs is how much of the person’s life the case shows. **“A passing moment”** shows one occasion or one short stretch. **“A lasting way someone is”** shows the same thing across years, places and relationships. How much of the person’s life does the case show? One occasion or one short stretch? Or this: years, more than one place and more than one relationship, and the same behaviour in all of them?
+  - If you chose **A passing moment**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: The behaviour itself can be exactly the same in both. What differs is how much of the person’s life the case shows. **“A passing moment”** shows one occasion or one short stretch. **“A lasting way someone is”** shows the same thing across years, places and relationships. How much of the person’s life does the case show? One occasion or one short stretch? Or this: years, more than one place and more than one relationship, and the same behaviour in all of them?
 - What would make it a different name: If the case showed only that she walked out of one argument with one brother last Christmas, it would be **“Something one person does to another”**.
 - Taught on: “One person, the same way for years, wherever they are and whoever they are with” (one tap opens the card).
 
@@ -2201,11 +2201,11 @@ A name that is due returns as a case the learner has not seen, next to a case of
 **Shown as soon as you answer**
 
 - If you are right: “Right: **A lasting way someone is.**” The case opens on one late payment and one reason, and then gives a long view of one man: “In nine years, at this address and at the two before it, according to the landlords she rang, the rent has been late most months”. Nine years, three addresses and three landlords, with the same thing in each.
-  - Why not **“One person’s reasoning”**: A reason for one late payment would be **“One person’s reasoning”** if the case ended there. It goes on to show the same thing for nine years and at three addresses, and when a case shows both, the key gives the larger answer.
+  - Why not **“One person’s reasoning”**: A reason for one late payment would be **“One person’s reasoning”** if the case ended there. It goes on to show the same thing for nine years and at three addresses, and when a case shows both, the answer is the larger one.
 - If you miss: “The answer is **A lasting way someone is.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **One person’s reasoning**: This case does show that. It also shows the same behaviour across years, places and relationships, and when a case shows both, the key’s answer is **A lasting way someone is**. Then the lines from the card that compared the two: Both can show a person defending themselves, and the reasons can sound the same. **“One person’s reasoning”** shows one piece of thinking: this view, this choice, this occasion. **“A lasting way someone is”** shows the same behaviour across years, places and relationships. Is the case one piece of thinking, about one view or one choice? Or does it show this: years, more than one place and more than one relationship, and the same behaviour in all of them?
-  - If you chose **Something one person does to another**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, one person may be treating another badly, and the very same behaviour can appear in each. **“Something one person does to another”** stays between two people: it shows what one of them says or does to the other. **“A lasting way someone is”** follows one person across years, places and relationships. Does the case stay between two people, and show what one of them says or does to the other? Or does it show this: years, more than one place and more than one relationship, and the same behaviour in all of them?
-  - If you chose **A passing moment**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: The behaviour itself can be exactly the same in both. What differs is how much of the person’s life the case shows. **“A passing moment”** shows one occasion or one short stretch. **“A lasting way someone is”** shows the same thing across years, places and relationships. How much of the person’s life does the case show? One occasion or one short stretch? Or this: years, more than one place and more than one relationship, and the same behaviour in all of them?
+  - If you chose **One person’s reasoning**: This case does show that. It also shows the same behaviour across years, places and relationships, and when a case shows both, the answer is **A lasting way someone is**. Then the lines from the card that compared the two: Both can show a person defending themselves, and the reasons can sound the same. **“One person’s reasoning”** shows one piece of thinking: this view, this choice, this occasion. **“A lasting way someone is”** shows the same behaviour across years, places and relationships. Is the case one piece of thinking, about one view or one choice? Or does it show this: years, more than one place and more than one relationship, and the same behaviour in all of them?
+  - If you chose **Something one person does to another**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, one person may be treating another badly, and the very same behaviour can appear in each. **“Something one person does to another”** stays between two people: it shows what one of them says or does to the other. **“A lasting way someone is”** follows one person across years, places and relationships. Does the case stay between two people, and show what one of them says or does to the other? Or does it show this: years, more than one place and more than one relationship, and the same behaviour in all of them?
+  - If you chose **A passing moment**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: The behaviour itself can be exactly the same in both. What differs is how much of the person’s life the case shows. **“A passing moment”** shows one occasion or one short stretch. **“A lasting way someone is”** shows the same thing across years, places and relationships. How much of the person’s life does the case show? One occasion or one short stretch? Or this: years, more than one place and more than one relationship, and the same behaviour in all of them?
 - What would make it a different name: If the case showed only this month’s late rent and his reason for it, it would be **“One person’s reasoning”**.
 - Taught on: “One person, the same way for years, wherever they are and whoever they are with” (one tap opens the card).
 
@@ -2225,8 +2225,8 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **A passing moment.**” The case is one short stretch, with something real behind it: “The week the puppy arrived”. A fortnight later it has passed, and the case even tells you he is usually the calm one.
   - Why not **“A lasting way someone is”**: One week is not years, and the case says outright that this is not how he usually is.
 - If you miss: “The answer is **A passing moment.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **One person’s reasoning**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both are about one person on one occasion, and both can follow something that happened to them. In **“One person’s reasoning”** the person gives reasons for a view, a choice or something they did. In **“A passing moment”** no reasons are given: the case shows only how the person felt and acted. Does the person give reasons for a view, a choice or something they did? Or does the case show only how they felt and acted?
-  - If you chose **Something one person does to another**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, someone can be hard to be around, and other people can be hurt by it. In **“A passing moment”** nothing is said or done to anyone about them: other people are near it, and are not what it is about. In **“Something one person does to another”** something is said or done to one particular person, about that person or about what has happened between the two. Is anything said or done to one particular person, about that person or about what has happened between the two? Or is this only how someone was for a short while, with everyone or with no one?
+  - If you chose **One person’s reasoning**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both are about one person on one occasion, and both can follow something that happened to them. In **“One person’s reasoning”** the person gives reasons for a view, a choice or something they did. In **“A passing moment”** no reasons are given: the case shows only how the person felt and acted. Does the person give reasons for a view, a choice or something they did? Or does the case show only how they felt and acted?
+  - If you chose **Something one person does to another**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, someone can be hard to be around, and other people can be hurt by it. In **“A passing moment”** nothing is said or done to anyone about them: other people are near it, and are not what it is about. In **“Something one person does to another”** something is said or done to one particular person, about that person or about what has happened between the two. Is anything said or done to one particular person, about that person or about what has happened between the two? Or is this only how someone was for a short while, with everyone or with no one?
   - If you chose **A lasting way someone is**: the “why not” line above. Then the lines from the card that compared the two: The behaviour itself can be exactly the same in both. What differs is how much of the person’s life the case shows. **“A passing moment”** shows one occasion or one short stretch. **“A lasting way someone is”** shows the same thing across years, places and relationships. How much of the person’s life does the case show? One occasion or one short stretch? Or this: years, more than one place and more than one relationship, and the same behaviour in all of them?
 - What would make it a different name: If his family said he had shouted at things in every house and every job for thirty years, it would be **“A lasting way someone is”**.
 - Taught on: “One person, one occasion or one short stretch, and nothing to name” (one tap opens the card).
@@ -2247,9 +2247,9 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **A passing moment.**” The case is one morning, with something real behind it: “On the morning the exam results came out”. By supper it has passed.
   - Why not **“Something one person does to another”**: Walking out when her father knocked may have hurt him, but nothing is said or done to him about him. It is how she was with everyone that morning.
 - If you miss: “The answer is **A passing moment.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **One person’s reasoning**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both are about one person on one occasion, and both can follow something that happened to them. In **“One person’s reasoning”** the person gives reasons for a view, a choice or something they did. In **“A passing moment”** no reasons are given: the case shows only how the person felt and acted. Does the person give reasons for a view, a choice or something they did? Or does the case show only how they felt and acted?
+  - If you chose **One person’s reasoning**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both are about one person on one occasion, and both can follow something that happened to them. In **“One person’s reasoning”** the person gives reasons for a view, a choice or something they did. In **“A passing moment”** no reasons are given: the case shows only how the person felt and acted. Does the person give reasons for a view, a choice or something they did? Or does the case show only how they felt and acted?
   - If you chose **Something one person does to another**: the “why not” line above. Then the lines from the card that compared the two: In both, someone can be hard to be around, and other people can be hurt by it. In **“A passing moment”** nothing is said or done to anyone about them: other people are near it, and are not what it is about. In **“Something one person does to another”** something is said or done to one particular person, about that person or about what has happened between the two. Is anything said or done to one particular person, about that person or about what has happened between the two? Or is this only how someone was for a short while, with everyone or with no one?
-  - If you chose **A lasting way someone is**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: The behaviour itself can be exactly the same in both. What differs is how much of the person’s life the case shows. **“A passing moment”** shows one occasion or one short stretch. **“A lasting way someone is”** shows the same thing across years, places and relationships. How much of the person’s life does the case show? One occasion or one short stretch? Or this: years, more than one place and more than one relationship, and the same behaviour in all of them?
+  - If you chose **A lasting way someone is**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: The behaviour itself can be exactly the same in both. What differs is how much of the person’s life the case shows. **“A passing moment”** shows one occasion or one short stretch. **“A lasting way someone is”** shows the same thing across years, places and relationships. How much of the person’s life does the case show? One occasion or one short stretch? Or this: years, more than one place and more than one relationship, and the same behaviour in all of them?
 - What would make it a different name: If she had told her father that his nagging was the reason she could not face the envelope, something would have been said to him about him, and it would be **“Something one person does to another”**.
 - Taught on: “One person, one occasion or one short stretch, and nothing to name” (one tap opens the card).
 
@@ -2269,8 +2269,8 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **A passing moment.**” The case is one occasion: “At the street's summer party” and “On Monday he said good morning as usual”. No cause is given, and none is needed. One evening is all the case shows, and by Monday it has passed.
   - Why not **“A lasting way someone is”**: If anything, the five years point the other way: this is not how he is. One evening on a table does not become a way of being by standing out.
 - If you miss: “The answer is **A passing moment.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **One person’s reasoning**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both are about one person on one occasion, and both can follow something that happened to them. In **“One person’s reasoning”** the person gives reasons for a view, a choice or something they did. In **“A passing moment”** no reasons are given: the case shows only how the person felt and acted. Does the person give reasons for a view, a choice or something they did? Or does the case show only how they felt and acted?
-  - If you chose **Something one person does to another**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, someone can be hard to be around, and other people can be hurt by it. In **“A passing moment”** nothing is said or done to anyone about them: other people are near it, and are not what it is about. In **“Something one person does to another”** something is said or done to one particular person, about that person or about what has happened between the two. Is anything said or done to one particular person, about that person or about what has happened between the two? Or is this only how someone was for a short while, with everyone or with no one?
+  - If you chose **One person’s reasoning**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both are about one person on one occasion, and both can follow something that happened to them. In **“One person’s reasoning”** the person gives reasons for a view, a choice or something they did. In **“A passing moment”** no reasons are given: the case shows only how the person felt and acted. Does the person give reasons for a view, a choice or something they did? Or does the case show only how they felt and acted?
+  - If you chose **Something one person does to another**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, someone can be hard to be around, and other people can be hurt by it. In **“A passing moment”** nothing is said or done to anyone about them: other people are near it, and are not what it is about. In **“Something one person does to another”** something is said or done to one particular person, about that person or about what has happened between the two. Is anything said or done to one particular person, about that person or about what has happened between the two? Or is this only how someone was for a short while, with everyone or with no one?
   - If you chose **A lasting way someone is**: the “why not” line above. Then the lines from the card that compared the two: The behaviour itself can be exactly the same in both. What differs is how much of the person’s life the case shows. **“A passing moment”** shows one occasion or one short stretch. **“A lasting way someone is”** shows the same thing across years, places and relationships. How much of the person’s life does the case show? One occasion or one short stretch? Or this: years, more than one place and more than one relationship, and the same behaviour in all of them?
 - What would make it a different name: If neighbours from three streets he had lived on said he did this at every party for twenty years, it would be **“A lasting way someone is”**.
 - Taught on: “One person, one occasion or one short stretch, and nothing to name” (one tap opens the card).

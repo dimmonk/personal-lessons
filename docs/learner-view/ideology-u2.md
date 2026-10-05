@@ -1,15 +1,15 @@
 # Learner view: Political Ideologies, Unit Two: Working people, against those who own the businesses
 
-*Seven names for a text on the side of working people, and the two questions that tell them apart.* Unit revision 1, built to lesson standard 1, status: draft.
+*Seven names for a text on the side of working people, and the two questions that tell them apart.* Unit revision 2, built to lesson standard 1, status: draft.
 
 This file is generated from the data files by `tools/render-learner-view.mjs`. It shows every screen in the order a learner meets it. In the app one card is on screen at a time and the learner moves on when ready.
 
-- **Bold text in quotation marks** is the key’s own wording, printed from `key.js`. Bold names are the outcome names from the same file. Neither is typed anywhere else. "What you must be able to point to" lines and "How to tell them apart" lines are also printed from one place each (the key and the look-alike ledger).
+- **Bold text in quotation marks** is the subject’s own wording for its questions and answers, written once and printed everywhere. Bold names are the names, written once in the same place. Neither is typed anywhere else. "What you must be able to point to" lines and "How to tell them apart" lines are also printed from one place each (the subject’s questions and the pairs it compares).
 - ⟦Double brackets⟧ show the words the app marks in a case (one highlight style everywhere).
 - The line in italics under each heading is the app’s top bar. The line in square brackets after it is for reviewers and is not shown to the learner.
 - Headings, prompt wording and stage instructions that are the same in every unit are the app’s wording, not this unit’s.
 - "Shown as soon as you …" is what appears the moment the learner answers. Nothing is hidden behind a second tap the first time a case is met, or after a miss.
-- After every answer the app shows, in this order: the right answer in the key’s words; the reason, quoting the marked words; for a name, why the nearest wrong name fails; after a miss, a line about the answer the learner chose; and last a link to the card that taught it. Where a line about the learner’s own choice is not written for the case, the app builds it from the key, and this file says so in place of repeating it.
+- After every answer the app shows, in this order: the right answer; the reason, quoting the marked words; for a name, why the nearest wrong name fails; after a miss, a line about the answer the learner chose; and last a link to the card that taught it. Where a line about the learner’s own choice is not written for the case, the app builds it from the answers’ own wording, and this file says so in place of repeating it.
 
 ---
 
@@ -17,31 +17,31 @@ This file is generated from the data files by `tools/render-learner-view.mjs`. I
 
 ### 1. On the side of working people: what does the text ask for?
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 1 of 55*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 1 of 55*
 
 [reviewers only: card kind `orient`, id `orient`]
 
-After this unit you can read a short text that takes the side of working people against the people who own the businesses, and give it one of seven names, by pointing to the words in it that tell you. You will also be able to say why it is not the name it looks most like. The text can be a leaflet at a workplace gate, a few lines from a union meeting, a post, a notice or the start of a manifesto.
+After this unit you can read a short text that takes the side of working people against the people who own the businesses, and give it one of seven names, by pointing to the words in it that tell you. You will also be able to say why it is not the name it looks most like. The text can be a leaflet at a workplace, a few lines from a union meeting, a post, a notice or the start of a manifesto.
 
 You have heard these words used as one lump. A friend says a plan to tax big companies is "communism". Someone else says the same plan is "just socialism". A leaflet from a staff association is called "radical" when all it says is that the staff deserve a raise. All of these texts are on the side of working people against owners, and that is the only thing they share.
 
-Unit One taught the key’s first question, and these texts all get one answer to it: **“Working people, against those who own the businesses”**. That answer is a place to start, and it leaves a lot open. One text on the side of working people wants the owners to keep their businesses and pay more tax. Another wants the businesses handed to the government. Another wants no government at all. Another only says whose side it is on and stops. They are different texts, and the key gives them different names.
+Unit One taught the first question, and these texts all get one answer to it: **“Working people, against those who own the businesses”**. That answer is a place to start, and it leaves a lot open. One text on the side of working people wants the owners to keep their businesses and pay more tax. Another wants the businesses handed to the government. Another wants no government at all. Another only says whose side it is on and stops. They are different texts, and they are given different names.
 
 This unit adds two questions to the one you know, and puts them in this order: **“What does the text say about the farms, factories, shops and banks?”** and then **“What does the text want done with the government?”**. Between them they split the one answer into seven names. You answer each by pointing at words in the text, and where the text has no words about it, you say so.
 
-**What Unit One taught, in one place.** The key’s first question is **“Who or what does the text put first?”** Its answers:
+**What Unit One taught, in one place.** The first question is **“Who or what does the text put first?”** Its answers:
 
 - **“Working people, against those who own the businesses”**: give this answer when the text sorts people by whether they work for a wage or own the businesses (or are rich from owning them), and takes the side of the workers against the owners. **This unit is about these cases.**
 - **“The nation, or its ordinary people”**: give this answer when the text speaks for one people, marked out by its country, its culture or its blood, and puts that people first: the whole nation as one, or its ordinary people against a few at the top.
-- **“Old ways of faith, family and custom”**: give this answer when the text holds up ways handed down from the past (a faith, the family, old customs, or an old order of crown, church and rank) as what should guide the country.
+- **“Old ways of faith, family and custom”**: give this answer when the text holds up ways handed down from the past (a faith, home life, old customs, or an old order of crown, church and rank) as what should guide the country.
 - **“Rights and fair treatment for everyone”**: give this answer when the text puts first what it says every person is owed: the freedom to speak, believe, own and trade, a fair start in life, or fair treatment whatever group they belong to.
 - **“No side named”**: give this answer when the text says only who holds power and how they keep it, or how one practical matter should be handled, and speaks for no side: no working people against owners, no nation or people, no old ways, and nothing every person is owed.
 
-Unit One also taught that two things are marked separately: the name you give a case, and your route to it, meaning the answers you gave to the key’s questions on the way.
+Two things are marked separately: the name you give a case, and your answers to the questions on the way to it.
 
 *(One tap on any of these lines opens the card in Unit One that taught it.)*
 
-**The part of the key this unit teaches.** This is a preview. You are not expected to follow it yet: every line is explained on the cards that come next. The question and its answers are in the key’s own words. Beside each answer, in plain words, is the thing it leads to. There are seven of them, and each gets its name when it is taught.
+**The questions this unit teaches.** This is a preview. You are not expected to follow it yet: every line is explained on the cards that come next. The question and its answers are worded exactly as you will meet them. Beside each answer, in plain words, is the thing it leads to. There are seven of them, and each gets its name when it is taught.
 
 What does the text say about the farms, factories, shops and banks?
 - Their owners keep them, and taxes and public services even out what people get → owners keep the businesses, and taxes even things out
@@ -73,14 +73,14 @@ The unit has six parts, and you can stop after any of them.
 2. The businesses pass to the government
 3. The businesses pass to the people who work in them
 4. An explanation of how owners gain
-5. The key’s two questions, each in one place
+5. The two questions, each in one place
 6. Two whole cases, then the drill
 
 Each name is taught through cases first. After every step you answer one question about a new case, and the answer and the reason are shown straight away. Nothing here is graded. A miss only decides what comes back.
 
 ### 2. Owners keep the businesses, and taxes even things out
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 2 of 55*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 2 of 55*
 
 [reviewers only: card kind `meet`, id `meet-socdem`]
 
@@ -101,23 +101,23 @@ This text is not against owning a business. It takes for granted that the wareho
 
 It does this in two ways, and a text may use either one or both. One is a rule about pay. A floor under pay is a minimum wage: the lowest pay the law allows. The other is a tax on the owners’ profits, with the money spent on things working people need, such as sick pay, pensions, health care, schooling and childcare. Both leave the business where it is. Both change who gets what.
 
-People who argue for this say that businesses are good at making things and creating wealth, so they are best left running as they are, and what needs fixing is how the results are divided. People who disagree say that heavy taxes drive businesses away, or that the owners should not hold so much to begin with. Whether either side is right is argued over. For the key none of that matters: it goes by what the text asks for.
+People who argue for this say that businesses are good at making things and creating wealth, so they are best left running as they are, and what needs fixing is how the results are divided. People who disagree say that heavy taxes drive businesses away, or that the owners should not hold so much to begin with. Whether either side is right is argued over. None of that matters here: the answer goes by what the text asks for.
 
 **What you must be able to point to.** Working people set against owners, the owners keeping their businesses, and the government taxing them, setting a floor for pay, or paying for services such as health care, schooling and pensions, so that working people get more. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What does the text say about the farms, factories, shops and banks?”**
+**The question:** **“What does the text say about the farms, factories, shops and banks?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“Their owners keep them, and taxes and public services even out what people get”**
+**Its answer for a case like this one:** **“Their owners keep them, and taxes and public services even out what people get”**
 
-**The key also asks, and this is its answer for a case like this one:** **“What does the text want done with the government?”** **“Keep it, run by whoever wins elections”** or **“The text does not say”**
+**There is also this question, and its answer for a case like this one:** **“What does the text want done with the government?”** **“Keep it, run by whoever wins elections”** or **“The text does not say”**
 
-The name for this is **Social democracy**. "Democracy" means that voters choose who runs the government, and "social" means to do with how a whole society shares what it makes. The name has a long history that differs from place to place, and the key does not rest on it. It uses the name for the one thing you just saw: the owners keep the businesses, and the government is asked to even out the result.
+The name for this is **Social democracy**. "Democracy" means that voters choose who runs the government, and "social" means to do with how a whole society shares what it makes. The name has a long history that differs from place to place, and this course does not rest on it. It uses the name for the one thing you just saw: the owners keep the businesses, and the government is asked to even out the result.
 
 You may also hear this called “the welfare state” or “the Nordic model”. Those words mean the same thing here, and from now on this unit uses one name: **Social democracy**.
 
 ### 3. Social democracy: the same thing in a different story
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 3 of 55*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 3 of 55*
 
 [reviewers only: card kind `again`, id `again-socdem`]
 
@@ -150,7 +150,7 @@ The two stories share nothing else. So this holds wherever a text on the side of
 
 ### 4. One bakery, and the story never decides the answer
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 4 of 55*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 4 of 55*
 
 [reviewers only: card kind `lens`, id `lens`]
 
@@ -160,17 +160,17 @@ Every text in this unit has two layers. The top layer is the story: a warehouse,
 
 Here is one bakery to hold it by. Dana owns Millbrook Bakery, and eight bakers work for her. Seven different texts could be written on the side of the bakers, and the bakery would be the same in all of them. One says: leave Dana the bakery, but tax her profits, set a floor for the bakers’ pay and pay for their sick leave and pensions. One says only that the bakers and Dana are on opposite sides, and asks you to come to a meeting. One says the bakery should pass to the government, to be run for everyone, through a vote. One says a party must take power, and the bakery will be run by its government. One says the bakers should own the bakery and run it with no government at all. One says the bakers should own it, and that it should compete with the bakery down the road, set its own prices and close if it fails. And one explains how Dana comes to keep part of what the bakers make, and asks for nothing.
 
-You do not need the names yet. Notice that the bakery, Dana, the bakers and the oven are the same every time. What differs is what the text says about who should own the bakery, and what it wants done with the government. Those are the two things the key asks about.
+You do not need the names yet. Notice that the bakery, Dana, the bakers and the oven are the same every time. What differs is what the text says about who should own the bakery, and what it wants done with the government. Those are the two things the questions ask about.
 
 From here on the cases change their stories on purpose. Sometimes two cases will share a story and differ only underneath. When that happens, the shared story is there to show you that it decides nothing. Two other things change on purpose: how angry a text sounds, and whether you agree with it. The answer is never a verdict on anyone. It says only what the text says.
 
-**Stays the same from case to case:** what the text says about the businesses and what it wants done with the government, which is what the key asks about: **“What does the text say about the farms, factories, shops and banks?”**, and then **“What does the text want done with the government?”**
+**Stays the same from case to case:** what the text says about the businesses and what it wants done with the government, which is what the questions ask about: **“What does the text say about the farms, factories, shops and banks?”**, and then **“What does the text want done with the government?”**
 
 **Changes on purpose:** the topic; the people; how angry it sounds; whether you agree with it; how much else the text says.
 
 ### 5. Social democracy: what it is like
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 5 of 55*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 5 of 55*
 
 [reviewers only: card kind `portrait`, id `portrait-socdem`]
 
@@ -199,7 +199,7 @@ In your own life it is the talk at election time about minimum wages, sick pay, 
 
 ### 6. A question about a new case
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 6 of 55*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 6 of 55*
 
 [reviewers only: card kind `check`, id `check-socdem`]
 
@@ -214,7 +214,7 @@ The pieces you can tap:
 
 **Shown as soon as you tap**
 
-- If you are right: “Right: ‘We want a law that sets a minimum wage, and a tax on the bank's profits to pay for training that every worker in the county can use’.” The words are “We do not want the bank taken from its shareholders. We want a law that sets a minimum wage, and a tax on the bank's profits to pay for training that every worker in the county can use”: the shareholders keep the bank, and a tax and a law are asked for to even out what people get. The key’s answer for this case is **“Their owners keep them, and taxes and public services even out what people get”**, and the name is **Social democracy**.
+- If you are right: “Right: ‘We want a law that sets a minimum wage, and a tax on the bank's profits to pay for training that every worker in the county can use’.” The words are “We do not want the bank taken from its shareholders. We want a law that sets a minimum wage, and a tax on the bank's profits to pay for training that every worker in the county can use”: the shareholders keep the bank, and a tax and a law are asked for to even out what people get. The answer for this case is **“Their owners keep them, and taxes and public services even out what people get”**, and the name is **Social democracy**.
 - If you miss: “The words are ‘We want a law that sets a minimum wage, and a tax on the bank's profits to pay for training that every worker in the county can use’.” The same reason follows, and then a line about the piece you tapped:
   - “The bank's shareholders collect the interest and the tellers collect the complaints”: That names the owners and the workers. It does not say what the text wants done with the bank.
   - “We do not want the bank taken from its shareholders”: That says what the text does not want. The shareholders keep the bank. It is half of what you point to. The other half is what the text asks for in its place.
@@ -222,11 +222,11 @@ The pieces you can tap:
 
 ### 7. Working people against owners, and nothing more said
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 7 of 55*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 7 of 55*
 
 [reviewers only: card kind `meet`, id `meet-classonly`]
 
-The last text had a plan for the businesses. Many texts on the side of working people have none, and the key has a name for that too. It is the first time in this unit that the right answer is a silence.
+The last text had a plan for the businesses. Many texts on the side of working people have none, and there is a name for that too. It is the first time in this unit that the right answer is a silence.
 
 *The laundry notice*
 
@@ -241,27 +241,27 @@ Stripped of its story, the case is this:
 
 Most of what is written on the side of working people looks like this. A notice goes up, a post is shared, a speaker says a few lines to a crowd. The purpose is to bring people together and to say whose side they are on. It is not to set out a plan for the whole economy.
 
-So when you ask what the text says about the businesses, there are no words to point to, and it is worth saying how that works. The marked words on this card are the words where a plan could have stood, and what stands there instead: an invitation to a meeting. The key’s answer is **“The text does not say”**. It is a real answer, and a text that gets it can have a name of its own.
+So when you ask what the text says about the businesses, there are no words to point to, and it is worth saying how that works. The marked words on this card are the words where a plan could have stood, and what stands there instead: an invitation to a meeting. The answer is **“The text does not say”**. It is a real answer, and a text that gets it can have a name of its own.
 
-It is not a guess about what the writers secretly want. They may want the owners taxed, or the laundry taken over, or something else. A short text that does not say is a text that does not say, and the key never fills a silence. What is in front of you is all the key can read.
+It is not a guess about what the writers secretly want. They may want the owners taxed, or the laundry taken over, or something else. A short text that does not say is a text that does not say, and a silence is never filled with a guess. What is in front of you is all there is to read.
 
-It is also not a weaker or milder text. A furious text and a calm one can both say nothing about the businesses. The side the text takes has already been used by the key’s first question. What is left to ask is whether the text goes on to a plan, and this one does not.
+It is also not a weaker or milder text. A furious text and a calm one can both say nothing about the businesses. The side the text takes has already been used by the first question. What is left to ask is whether the text goes on to a plan, and this one does not.
 
 The line below also says there is no party seizing power and no getting rid of the government. That is because a text that said either of those would be saying more than the side it takes, and it would get another name. This text mentions neither.
 
 **What you must be able to point to.** Working people set against owners, and nothing said about the businesses (no plan for who should own them, no taxes or services to even things out, no explanation of how owners gain), and no party seizing power and no getting rid of the government. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What does the text say about the farms, factories, shops and banks?”**
+**The question:** **“What does the text say about the farms, factories, shops and banks?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“The text does not say”**
+**Its answer for a case like this one:** **“The text does not say”**
 
-**The key also asks, and this is its answer for a case like this one:** **“What does the text want done with the government?”** **“Keep it, run by whoever wins elections”** or **“The text does not say”**
+**There is also this question, and its answer for a case like this one:** **“What does the text want done with the government?”** **“Keep it, run by whoever wins elections”** or **“The text does not say”**
 
 The name for this is **Class politics with nothing attached**. "Class" here means a group of people sorted by how they earn their living: those who work for pay, and those who own where they work. "Politics" means the effort to win a say in how things are run. "With nothing attached" says that no plan has been fastened to the side-taking. The name is not a verdict that the text is empty. It says that the text takes a side and says nothing more.
 
 ### 8. Class politics with nothing attached: the same thing in a different story
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 8 of 55*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 8 of 55*
 
 [reviewers only: card kind `again`, id `again-classonly`]
 
@@ -294,7 +294,7 @@ The two stories share nothing else. So this holds wherever a text takes the work
 
 ### 9. Class politics with nothing attached: what it is like
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 9 of 55*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 9 of 55*
 
 [reviewers only: card kind `portrait`, id `portrait-classonly`]
 
@@ -304,7 +304,7 @@ You now know what to point to. This card fills in the rest of the picture, so th
 
 - It names two groups and takes a side.
 - It may say what is wrong: low pay, a bonus, a closing, a cut. That is a complaint about what has happened. It is not a plan.
-- What it asks of the reader is small and near: come, sign, share, stand at the gate, vote on a strike.
+- What it asks of the reader is small and near: come, sign, share, stand outside the works, vote on a strike.
 - It can be short or long. A long text that never gets to a plan for the businesses is still this name.
 - It leaves the reader to fill the gap, and readers do. A friend who sees it may say the writers are secretly one thing or another. That is a guess about the writers, not something the text says.
 
@@ -320,17 +320,17 @@ In your own life it is the notice on a staff-room wall, the group chat of a trad
 
 **The question to ask when you spot it**
 
-"Does the text go past taking a side to say what should be done about the businesses?" If you cannot find words that do, the key’s answer is **“The text does not say”**.
+"Does the text go past taking a side to say what should be done about the businesses?" If you cannot find words that do, the answer is **“The text does not say”**.
 
 ### 10. A question about a new case
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 10 of 55*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 10 of 55*
 
 [reviewers only: card kind `check`, id `check-classonly`]
 
 > Drivers at the Thornley bus company have written to the town: 'The owners paid themselves a bonus while we were told there was no money for a raise. We drive, they own, and we are on the side of the drivers. Please come and stand with us outside the depot on Friday.'
 
-**The key asks:** **“What does the text say about the farms, factories, shops and banks?”** Which of the answers you have met so far fits this case?
+**The question:** **“What does the text say about the farms, factories, shops and banks?”** Which of the answers you have met so far fits this case?
 
 - Their owners keep them, and taxes and public services even out what people get
 - The text does not say
@@ -344,7 +344,7 @@ In your own life it is the notice on a staff-room wall, the group chat of a trad
 
 ### 11. Social democracy or Class politics with nothing attached: telling them apart
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 11 of 55*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 11 of 55*
 
 [reviewers only: card kind `lookalike`, id `look-socdem-classonly`]
 
@@ -366,9 +366,9 @@ These two names are the pair most easily taken for each other. Both are on the w
 
 **Why this one and not the other**
 
-In Case A the text goes on to a plan. It leaves the dairy with its owners, and asks for a minimum wage that rises with prices and a tax on the dairy’s profits to pay for training. The key’s answer is **“Their owners keep them, and taxes and public services even out what people get”**, and the case is **Social democracy**.
+In Case A the text goes on to a plan. It leaves the dairy with its owners, and asks for a minimum wage that rises with prices and a tax on the dairy’s profits to pay for training. The answer is **“Their owners keep them, and taxes and public services even out what people get”**, and the case is **Social democracy**.
 
-In Case B the text stops after taking the workers’ side. It asks the reader to come to the gate, and says nothing about the owners keeping the dairy or losing it, about tax, or about services. The key’s answer is **“The text does not say”**, and the case is **Class politics with nothing attached**.
+In Case B the text stops after taking the workers’ side. It asks the reader to come along, and says nothing about the owners keeping the dairy or losing it, about tax, or about services. The answer is **“The text does not say”**, and the case is **Class politics with nothing attached**.
 
 The story and the complaint are word for word the same. The difference is what comes after them: a plan, or nothing. That is why you cannot name a text from what it complains about.
 
@@ -376,7 +376,7 @@ The story and the complaint are word for word the same. The difference is what c
 
 Look for a plan. Does the text say anything about what the government should do about pay, taxes or services, or about who should own the businesses? Or does it only say whose side it is on?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Social democracy | Class politics with nothing attached |
 |---|---|---|
@@ -394,7 +394,7 @@ Look for a plan. Does the text say anything about what the government should do 
 
 ### 12. The businesses handed over, by votes
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 12 of 55*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 12 of 55*
 
 [reviewers only: card kind `meet`, id `meet-demsoc`]
 
@@ -413,9 +413,9 @@ Stripped of its story, the case is this:
 
 Think back to the bakery. In the last names Dana kept her bakery, and the text either taxed her or did not mention her. Here the text says Dana should not keep the ferries. "Belong to the public" means that everyone is the owner, through the government, and the aim is that the ferries are run for the people who use them and not for a shareholder’s profit.
 
-People who argue for this say that some businesses are too important to leave to owners who run them for profit: transport, water, power, the banks. People who disagree say that governments run businesses badly, or that the owners have a right to what they built. That argument is old and it is not settled. The key does not take a side: it goes by what the text asks for.
+People who argue for this say that some businesses are too important to leave to owners who run them for profit: transport, water, power, the banks. People who disagree say that governments run businesses badly, or that the owners have a right to what they built. That argument is old and it is not settled. No side is taken here: the answer goes by what the text asks for.
 
-Some texts ask only for the biggest businesses to pass to the government, such as the railways or the banks, and leave the small ones alone. That is enough for this answer. The key does not ask how many.
+Some texts ask only for the biggest businesses to pass to the government, such as the railways or the banks, and leave the small ones alone. That is enough for this answer. How many does not matter.
 
 This text also says how the change is to come: by the voters. That is a second thing, separate from the first. This card is about the first: who should own the businesses.
 
@@ -423,17 +423,17 @@ The line below also rules two things out: a party seizing power, and getting rid
 
 **What you must be able to point to.** Working people set against owners, the businesses (or the biggest of them) to pass to the public or to the people who work in them, and no party seizing power and no getting rid of the government: the change comes through elections, or the text does not say how. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What does the text say about the farms, factories, shops and banks?”**
+**The question:** **“What does the text say about the farms, factories, shops and banks?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“They should pass to the government, to be run for everyone”**
+**Its answer for a case like this one:** **“They should pass to the government, to be run for everyone”**
 
-**The key also asks, and this is its answer for a case like this one:** **“What does the text want done with the government?”** **“Keep it, run by whoever wins elections”** or **“The text does not say”**
+**There is also this question, and its answer for a case like this one:** **“What does the text want done with the government?”** **“Keep it, run by whoever wins elections”** or **“The text does not say”**
 
-The name for this is **Democratic socialism**. "Socialism" is a word with a long history and many meanings, and the key does not rest on any of them. What the key looks for is what you just saw: the businesses passing to the government. "Democratic" says that no party takes power by force or rules alone, and that the change comes through votes, or that no word is said about how.
+The name for this is **Democratic socialism**. "Socialism" is a word with a long history and many meanings, and this course does not rest on any of them. What it looks for is what you just saw: the businesses passing to the government. "Democratic" says that no party takes power by force or rules alone, and that the change comes through votes, or that no word is said about how.
 
 ### 13. Democratic socialism: the same thing in a different story
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 13 of 55*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 13 of 55*
 
 [reviewers only: card kind `again`, id `again-demsoc`]
 
@@ -461,14 +461,14 @@ The pieces you can tap:
 
 Both texts say that the business should pass out of its owners’ hands. The ferry leaflet says the ferries should belong to the public, run by the government for everyone. The signal workers say the railway should pass into public ownership, run for everyone and not for its shareholders.
 
-There is one difference between them, and it is the key’s decision. The ferry leaflet says how the change will come: by asking the voters. The signal workers do not say how at all. The key files both under this name. A text that asks for the handover, and says nothing about taking power by force, or ruling alone, or getting rid of the government, is **Democratic socialism**, whether or not it mentions elections. The field itself does not draw the line in one place: some would not name the second text until they knew more. The key draws it here, so that two people using it reach the same name and can each say why. It does not claim to know what the signal workers would do.
+There is one difference between them, and it is a decision made here. The ferry leaflet says how the change will come: by asking the voters. The signal workers do not say how at all. Both are filed under this name. A text that asks for the handover, and says nothing about taking power by force, or ruling alone, or getting rid of the government, is **Democratic socialism**, whether or not it mentions elections. The field itself does not draw the line in one place: some would not name the second text until they knew more. The line is drawn here, so that two people using the same questions reach the same name and can each say why. It does not claim to know what the signal workers would do.
 
 The two stories share nothing else. So this holds wherever a text asks for the businesses, or the biggest of them, to pass to the government. That is what **Democratic socialism** names.
 
 
 ### 14. Democratic socialism: what it is like
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 14 of 55*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 14 of 55*
 
 [reviewers only: card kind `portrait`, id `portrait-demsoc`]
 
@@ -497,13 +497,13 @@ In your own life it is the argument over whether the buses, the trains or the po
 
 ### 15. A question about a new case
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 15 of 55*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 15 of 55*
 
 [reviewers only: card kind `check`, id `check-demsoc`]
 
 > The tellers at the Harrow Savings Bank say: 'The bank's shareholders gather the interest and the tellers gather the complaints. We side with the tellers. Parliament should pass a law that brings the bank into public ownership, to be run for everyone.'
 
-**The key asks:** **“What does the text say about the farms, factories, shops and banks?”** Which of the answers you have met so far fits this case?
+**The question:** **“What does the text say about the farms, factories, shops and banks?”** Which of the answers you have met so far fits this case?
 
 - Their owners keep them, and taxes and public services even out what people get
 - The text does not say
@@ -519,7 +519,7 @@ In your own life it is the argument over whether the buses, the trains or the po
 
 ### 16. Social democracy or Democratic socialism: telling them apart
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 16 of 55*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 16 of 55*
 
 [reviewers only: card kind `lookalike`, id `look-socdem-demsoc`]
 
@@ -541,9 +541,9 @@ These two both ask the government to do something about how businesses treat the
 
 **Why this one and not the other**
 
-In Case A the hospitals can stay with their owners, so long as the government taxes their profits to pay for nurses’ pensions and training places. The owners still own them afterwards. The key’s answer is **“Their owners keep them, and taxes and public services even out what people get”**, and the case is **Social democracy**.
+In Case A the hospitals can stay with their owners, so long as the government taxes their profits to pay for nurses’ pensions and training places. The owners still own them afterwards. The answer is **“Their owners keep them, and taxes and public services even out what people get”**, and the case is **Social democracy**.
 
-In Case B the hospitals are to be taken from the company and run by the government for everyone. After the government acts, the owners no longer own them. The key’s answer is **“They should pass to the government, to be run for everyone”**, and the case is **Democratic socialism**.
+In Case B the hospitals are to be taken from the company and run by the government for everyone. After the government acts, the owners no longer own them. The answer is **“They should pass to the government, to be run for everyone”**, and the case is **Democratic socialism**.
 
 The nurses, the profit and the night shifts are the same in both. What differs is who owns the hospitals at the end. A tax changes what the owners keep. A handover changes who the owner is.
 
@@ -551,7 +551,7 @@ The nurses, the profit and the night shifts are the same in both. What differs i
 
 Once the government has acted, who owns the business? Is it still the owners, or has it passed to the government?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Social democracy | Democratic socialism |
 |---|---|---|
@@ -563,7 +563,7 @@ Once the government has acted, who owns the business? Is it still the owners, or
 
 ### 17. Taxes and services, and a handover too
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 17 of 55*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 17 of 55*
 
 [reviewers only: card kind `exception`, id `exc-railbus`]
 
@@ -588,7 +588,7 @@ The pieces you can tap:
 
 **Why this is Democratic socialism and not Social democracy**
 
-The text asks for tax and services, and it also asks for two kinds of business to be taken from their owners. The second is what the key’s question about the businesses turns on. When a text shows both, the key’s answer is **“They should pass to the government, to be run for everyone”**, and the name is **Democratic socialism**.
+The text asks for tax and services, and it also asks for two kinds of business to be taken from their owners. The second is what the question about the businesses turns on. When a text shows both, the answer is **“They should pass to the government, to be run for everyone”**, and the name is **Democratic socialism**.
 
 The reason is the one the whole question is built on. A tax leaves the owner in place, and a handover does not. A text with even one handover in it has said something about who should own the businesses, and that says more than "the owners keep them".
 
@@ -596,14 +596,14 @@ The reason is the one the whole question is built on. A tax leaves the owner in 
 
 Once the government has acted, who owns the business? Is it still the owners, or has it passed to the government?
 
-When a case shows both **“Their owners keep them, and taxes and public services even out what people get”** and the businesses to pass to the government, the key’s answer is **“They should pass to the government, to be run for everyone”**.
+When a case shows both **“Their owners keep them, and taxes and public services even out what people get”** and the businesses to pass to the government, the answer is **“They should pass to the government, to be run for everyone”**.
 
-The key decides it this way on purpose. In life, texts mix the two, and people who study them do not all give a mixed text the same name. The key gives each text one name, by the most exact thing it says about who should own the businesses, so that two people using it reach the same name and can each say why.
+It is decided this way on purpose. In life, texts mix the two, and people who study them do not all give a mixed text the same name. Each text gets one name, by the most exact thing it says about who should own the businesses, so that two people using the same questions reach the same name and can each say why.
 
 
 ### 18. One party takes power and rules for the workers
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 18 of 55*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 18 of 55*
 
 [reviewers only: card kind `meet`, id `meet-ml`]
 
@@ -625,25 +625,25 @@ The earlier texts asked the government for things, or promised to win the next e
 
 Notice the two halves. One is how power is won: taken, and not voted for. The other is how it is kept: held by one party, with no rivals and no election it could lose. Either half is enough to point to, and a text may give one or both. What matters is that the text does not offer to give power up at an election.
 
-People who argue for this say that owners and their allies will use every means to stop a change, so the workers need one organised party that cannot be voted out until the change is safe. People who disagree say that a party that cannot be voted out has no way to be told it is wrong. Both claims are argued over. The key does not decide between them. It goes by whether the text says that a party, or the workers, will take power and keep it.
+People who argue for this say that owners and their allies will use every means to stop a change, so the workers need one organised party that cannot be voted out until the change is safe. People who disagree say that a party that cannot be voted out has no way to be told it is wrong. Both claims are argued over. This course does not decide between them. It goes by whether the text says that a party, or the workers, will take power and keep it.
 
 On this card the marked words answer the question about the government, and not the one about the businesses. That is because here the words about power are what decide, and the words about the mills could be changed without changing the name.
 
 **What you must be able to point to.** Working people set against owners, and a party, or the workers themselves, taking power by force or ruling as the only party, with no offer to give it up at an election. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What does the text want done with the government?”**
+**The question:** **“What does the text want done with the government?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“Seize power and hold it for the workers, with no rivals allowed”**
+**Its answer for a case like this one:** **“Seize power and hold it for the workers, with no rivals allowed”**
 
-**The key also asks, and this is its answer for a case like this one:** **“What does the text say about the farms, factories, shops and banks?”** **“They should pass to the government, to be run for everyone”** or **“They should pass to the people who work in each one”** or **“It explains how their owners gain from what workers make”** or **“The text does not say”**
+**There is also this question, and its answer for a case like this one:** **“What does the text say about the farms, factories, shops and banks?”** **“They should pass to the government, to be run for everyone”** or **“They should pass to the people who work in each one”** or **“It explains how their owners gain from what workers make”** or **“The text does not say”**
 
-The name for this is **Marxism-Leninism**. It has two halves with a hyphen between them. The key does not need the history of either half. It uses the name for one thing: a party, or the workers, taking power and keeping it, with no offer to give it up at an election.
+The name for this is **Marxism-Leninism**. It has two halves with a hyphen between them. The history of either half is not needed here. The name stands for one thing: a party, or the workers, taking power and keeping it, with no offer to give it up at an election.
 
 You may also hear this called “communism” or “Leninism” or “Soviet-style communism”. Those words mean the same thing here, and from now on this unit uses one name: **Marxism-Leninism**.
 
 ### 19. Marxism-Leninism: the same thing in a different story
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 19 of 55*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 19 of 55*
 
 [reviewers only: card kind `again`, id `again-ml`]
 
@@ -678,7 +678,7 @@ The stories share nothing else. So this holds wherever a text says that a party,
 
 ### 20. Marxism-Leninism: what it is like
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 20 of 55*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 20 of 55*
 
 [reviewers only: card kind `portrait`, id `portrait-ml`]
 
@@ -708,7 +708,7 @@ In your own life it is mostly the way a word like "communist" is thrown about: a
 
 ### 21. A question about a new case
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 21 of 55*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 21 of 55*
 
 [reviewers only: card kind `check`, id `check-ml`]
 
@@ -723,7 +723,7 @@ The pieces you can tap:
 
 **Shown as soon as you tap**
 
-- If you are right: “Right: ‘The committee will take power in the city and hold it. It will be the only party, and it will not hold elections it could lose’.” The committee takes power and keeps it: “The committee will take power in the city and hold it. It will be the only party, and it will not hold elections it could lose”. No rival is allowed to challenge it at an election. The key’s answer for this case is **“Seize power and hold it for the workers, with no rivals allowed”**, and the name is **Marxism-Leninism**.
+- If you are right: “Right: ‘The committee will take power in the city and hold it. It will be the only party, and it will not hold elections it could lose’.” The committee takes power and keeps it: “The committee will take power in the city and hold it. It will be the only party, and it will not hold elections it could lose”. No rival is allowed to challenge it at an election. The answer for this case is **“Seize power and hold it for the workers, with no rivals allowed”**, and the name is **Marxism-Leninism**.
 - If you miss: “The words are ‘The committee will take power in the city and hold it. It will be the only party, and it will not hold elections it could lose’.” The same reason follows, and then a line about the piece you tapped:
   - “The firms that own the building sites live off our labour, and we stand with the people who build”: That names the two groups and the side the text takes. It says nothing yet about who holds power.
   - “The sites will belong to the government it forms”: That is about the sites. It says who will own them, and nothing about how the committee will win or hold power.
@@ -731,7 +731,7 @@ The pieces you can tap:
 
 ### 22. Democratic socialism or Marxism-Leninism: telling them apart
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 22 of 55*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 22 of 55*
 
 [reviewers only: card kind `lookalike`, id `look-demsoc-ml`]
 
@@ -755,7 +755,7 @@ These two ask for the same thing to be done with the businesses, and they are am
 
 In Case A the text says it will win a majority in parliament and pass the law. A majority in parliament can be lost at the next election, so the text is leaving its power in the voters’ hands. It says nothing about taking power by force or ruling alone. The case is **Democratic socialism**.
 
-In Case B the text says the party will take power and keep it, and allow no rival party. That cannot be lost at an election. The key’s answer is **“Seize power and hold it for the workers, with no rivals allowed”**, and the case is **Marxism-Leninism**.
+In Case B the text says the party will take power and keep it, and allow no rival party. That cannot be lost at an election. The answer is **“Seize power and hold it for the workers, with no rivals allowed”**, and the case is **Marxism-Leninism**.
 
 The mines, the miners and the handover are the same in both. What differs is whether the people asking can be voted out. That is why you cannot name a text from what it asks to be done with the businesses.
 
@@ -763,7 +763,7 @@ The mines, the miners and the handover are the same in both. What differs is whe
 
 Does the text say that a party, or the workers, will take power by force or rule as the only party? If it says nothing about power, the answer is no.
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Democratic socialism | Marxism-Leninism |
 |---|---|---|
@@ -775,7 +775,7 @@ Does the text say that a party, or the workers, will take power by force or rule
 
 ### 23. Nothing about the businesses, and a party that rules alone
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 23 of 55*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 23 of 55*
 
 [reviewers only: card kind `exception`, id `exc-bulletin`]
 
@@ -808,7 +808,7 @@ Nothing has to be said about the businesses for this name to apply. What the nam
 
 Does the text say anything about who will hold power, or how? If it says a party will take power and rule alone, the answer is yes.
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Class politics with nothing attached | Marxism-Leninism |
 |---|---|---|
@@ -817,7 +817,7 @@ Does the text say anything about who will hold power, or how? If it says a party
 | What does the text want done with the government? | Keep it, run by whoever wins elections / The text does not say | Seize power and hold it for the workers, with no rivals allowed |
 | What you must be able to point to | Working people set against owners, and nothing said about the businesses (no plan for who should own them, no taxes or services to even things out, no explanation of how owners gain), and no party seizing power and no getting rid of the government | Working people set against owners, and a party, or the workers themselves, taking power by force or ruling as the only party, with no offer to give it up at an election |
 
-This is why the key asks two questions and not one. A text can be silent on the businesses and loud on power. If you stopped after the question about the businesses, you would have named this bulletin with a name that says nothing is attached, when the text has attached the one thing that matters most to another name.
+This is why there are two questions and not one. A text can be silent on the businesses and loud on power. If you stopped after the question about the businesses, you would have named this bulletin with a name that says nothing is attached, when the text has attached the one thing that matters most to another name.
 
 
 *End of part 2. You can stop here; your place is kept. Next: part 3, The businesses pass to the people who work in them.*
@@ -828,7 +828,7 @@ This is why the key asks two questions and not one. A text can be silent on the 
 
 ### 24. No bosses and no government
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 24 of 55*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 24 of 55*
 
 [reviewers only: card kind `meet`, id `meet-anarch`]
 
@@ -847,27 +847,27 @@ Stripped of its story, the case is this:
 
 In the last name a party took power and kept it. Here no one is to hold power over anyone: not an owner, not a party, not a government. The text calls the owner and the government two kinds of ruler, and says it wants neither.
 
-The words that answer the key’s question about the government are the last ones: the town run by open meetings, with no government at all. This does not mean disorder, and people who hold the view say so. They say that people can run their work and their towns together, by agreement, in meetings, with no one giving orders. People who disagree say that without a government there is no way to settle a dispute the meeting cannot settle, or to stop the strong from bullying the weak. Both claims are argued over. For the key none of that matters. What matters is that the text wants the government gone.
+The words that answer the question about the government are the last ones: the town run by open meetings, with no government at all. This does not mean disorder, and people who hold the view say so. They say that people can run their work and their towns together, by agreement, in meetings, with no one giving orders. People who disagree say that without a government there is no way to settle a dispute the meeting cannot settle, or to stop the strong from bullying the weak. Both claims are argued over. None of that matters here. What matters is that the text wants the government gone.
 
-The words "now, not used first" matter too. A text that wants a government to make the changes for the workers, and says that the government will fade away one day, has not asked for it to be got rid of now. It wants to use it. The key’s answer here is for a text that wants it gone, and has no use for it.
+The words "now, not used first" matter too. A text that wants a government to make the changes for the workers, and says that the government will fade away one day, has not asked for it to be got rid of now. It wants to use it. The answer here is for a text that wants it gone, and has no use for it.
 
 Notice that the marked words on this card answer the question about the government. The text also says something about the businesses: the print works are to belong to the people who work in them. But more than one name says that, and the words about the government are what set this name apart.
 
 **What you must be able to point to.** Working people set against owners, and the government to be got rid of now, not used first, with people running their work and their towns together without it. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What does the text want done with the government?”**
+**The question:** **“What does the text want done with the government?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“Get rid of it, and run things together without it”**
+**Its answer for a case like this one:** **“Get rid of it, and run things together without it”**
 
-**The key also asks, and this is its answer for a case like this one:** **“What does the text say about the farms, factories, shops and banks?”** **“They should pass to the people who work in each one”** or **“It explains how their owners gain from what workers make”** or **“The text does not say”**
+**There is also this question, and its answer for a case like this one:** **“What does the text say about the farms, factories, shops and banks?”** **“They should pass to the people who work in each one”** or **“It explains how their owners gain from what workers make”** or **“The text does not say”**
 
-The name for this is **Anarchism**. The word comes from a Greek word meaning "without a ruler". It does not mean "without order". The key uses the name for one thing: the government to be got rid of now, with people running their work and their towns together without it.
+The name for this is **Anarchism**. The word comes from a Greek word meaning "without a ruler". It does not mean "without order". The name stands for one thing: the government to be got rid of now, with people running their work and their towns together without it.
 
 You may also hear this called “libertarian socialism” or “anarcho-syndicalism”. Those words mean the same thing here, and from now on this unit uses one name: **Anarchism**.
 
 ### 25. Anarchism: the same thing in a different story
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 25 of 55*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 25 of 55*
 
 [reviewers only: card kind `again`, id `again-anarch`]
 
@@ -902,7 +902,7 @@ The two stories share nothing else. So this holds wherever a text wants the gove
 
 ### 26. Anarchism: what it is like
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 26 of 55*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 26 of 55*
 
 [reviewers only: card kind `portrait`, id `portrait-anarch`]
 
@@ -931,7 +931,7 @@ In your own life it is the co-operative or the open meeting that runs itself wit
 
 ### 27. A question about a new case
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 27 of 55*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 27 of 55*
 
 [reviewers only: card kind `check`, id `check-anarch`]
 
@@ -946,7 +946,7 @@ The pieces you can tap:
 
 **Shown as soon as you tap**
 
-- If you are right: “Right: ‘We want the government done away with, now, and not used first: we will run the valley's schools in open meetings’.” The text wants the government got rid of, and says when and how: “We want the government done away with, now, and not used first: we will run the valley's schools in open meetings”. It does not want it used first and does not want a party to hold it. The key’s answer for this case is **“Get rid of it, and run things together without it”**, and the name is **Anarchism**.
+- If you are right: “Right: ‘We want the government done away with, now, and not used first: we will run the valley's schools in open meetings’.” The text wants the government got rid of, and says when and how: “We want the government done away with, now, and not used first: we will run the valley's schools in open meetings”. It does not want it used first and does not want a party to hold it. The answer for this case is **“Get rid of it, and run things together without it”**, and the name is **Anarchism**.
 - If you miss: “The words are ‘We want the government done away with, now, and not used first: we will run the valley's schools in open meetings’.” The same reason follows, and then a line about the piece you tapped:
   - “The group that owns the schools runs them for profit, and the government backs it”: That names the owners and the government and says what is wrong. It does not yet say what should be done about the government.
   - “The teachers, cooks and caretakers should run each school together”: That is about who should run the schools. The question here is about the government.
@@ -954,7 +954,7 @@ The pieces you can tap:
 
 ### 28. Marxism-Leninism or Anarchism: telling them apart
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 28 of 55*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 28 of 55*
 
 [reviewers only: card kind `lookalike`, id `look-ml-anarch`]
 
@@ -976,9 +976,9 @@ Both of these will not wait for an election, and both want working people to tak
 
 **Why this one and not the other**
 
-In Case A the text says the workers must take power through a single party and keep it, and that no rival party is to be allowed. After the change a party holds power. The key’s answer is **“Seize power and hold it for the workers, with no rivals allowed”**, and the case is **Marxism-Leninism**.
+In Case A the text says the workers must take power through a single party and keep it, and that no rival party is to be allowed. After the change a party holds power. The answer is **“Seize power and hold it for the workers, with no rivals allowed”**, and the case is **Marxism-Leninism**.
 
-In Case B the text says there should be no party and no government, because a party that holds power is only a new boss. After the change no one holds power over the rest. The key’s answer is **“Get rid of it, and run things together without it”**, and the case is **Anarchism**.
+In Case B the text says there should be no party and no government, because a party that holds power is only a new boss. After the change no one holds power over the rest. The answer is **“Get rid of it, and run things together without it”**, and the case is **Anarchism**.
 
 Both say the workers must take over, and neither will wait for a vote. What separates them is whether anyone holds power afterwards.
 
@@ -986,7 +986,7 @@ Both say the workers must take over, and neither will wait for a vote. What sepa
 
 After the change, does a party or committee hold power and rule alone? Or is there no government, and people run things together?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Marxism-Leninism | Anarchism |
 |---|---|---|
@@ -998,7 +998,7 @@ After the change, does a party or committee hold power and rule alone? Or is the
 
 ### 29. Democratic socialism or Anarchism: telling them apart
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 29 of 55*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 29 of 55*
 
 [reviewers only: card kind `lookalike`, id `look-demsoc-anarch`]
 
@@ -1022,7 +1022,7 @@ The next pair also want the same thing for the businesses: each is to belong to 
 
 In Case A the text says it will win the vote in parliament and pass a law, and that the government will stay and answer to the voters. The government is kept, and it is the government that makes the change. The case is **Democratic socialism**.
 
-In Case B the text says it wants no government to pass a law for it. The workers will take the yard themselves and run it with the town in open meetings. The key’s answer is **“Get rid of it, and run things together without it”**, and the case is **Anarchism**.
+In Case B the text says it wants no government to pass a law for it. The workers will take the yard themselves and run it with the town in open meetings. The answer is **“Get rid of it, and run things together without it”**, and the case is **Anarchism**.
 
 The yard, the welders and the owners are the same in both. What differs is whether the government is something to use or something to be rid of.
 
@@ -1030,7 +1030,7 @@ The yard, the welders and the owners are the same in both. What differs is wheth
 
 Should the government stay, or be done away with now, according to the text?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Democratic socialism | Anarchism |
 |---|---|---|
@@ -1042,7 +1042,7 @@ Should the government stay, or be done away with now, according to the text?
 
 ### 30. Nothing about the businesses, and no government
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 30 of 55*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 30 of 55*
 
 [reviewers only: card kind `exception`, id `exc-flyer`]
 
@@ -1065,7 +1065,7 @@ The pieces you can tap:
 
 **Why this is Anarchism and not Class politics with nothing attached**
 
-The flyer says nothing about who should own the warehouse, so the question about the businesses gets the answer **“The text does not say”**. The question about the government is different. The flyer wants no government, and says that people will begin running things themselves. The key’s answer is **“Get rid of it, and run things together without it”**, and that answer keeps one name, **Anarchism**.
+The flyer says nothing about who should own the warehouse, so the question about the businesses gets the answer **“The text does not say”**. The question about the government is different. The flyer wants no government, and says that people will begin running things themselves. The answer is **“Get rid of it, and run things together without it”**, and that answer keeps one name, **Anarchism**.
 
 The needs line of **Class politics with nothing attached** ends by saying there is no getting rid of the government. A text that wants it gone has attached something, even if it has attached nothing to the businesses.
 
@@ -1073,7 +1073,7 @@ The needs line of **Class politics with nothing attached** ends by saying there 
 
 Does the text say anything about the government itself: that it should be kept, or done away with?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Class politics with nothing attached | Anarchism |
 |---|---|---|
@@ -1087,7 +1087,7 @@ Put the last two exceptions side by side. A text on the workers’ side can be s
 
 ### 31. Firms owned by their workers, competing for customers
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 31 of 55*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 31 of 55*
 
 [reviewers only: card kind `meet`, id `meet-mktsoc`]
 
@@ -1106,23 +1106,23 @@ Stripped of its story, the case is this:
 
 Here the workers own the businesses, as in the last name. What is new is what the text keeps. It does not do away with competition, prices or failure. It keeps a market: firms selling to customers, charging what they choose, and closing if they cannot pay their way. What it changes is who owns each firm.
 
-People who argue for this say that markets are good at telling firms what to make and at making them careful with money, and that what is wrong with markets is that outside owners gain from other people’s work. So keep the market and change the owner. People who disagree say that firms that must compete will treat their own workers as hard as any owner would, or that a market does not work without outside owners. Both are argued over, and the key does not take a side.
+People who argue for this say that markets are good at telling firms what to make and at making them careful with money, and that what is wrong with markets is that outside owners gain from other people’s work. So keep the market and change the owner. People who disagree say that firms that must compete will treat their own workers as hard as any owner would, or that a market does not work without outside owners. Both are argued over, and no side is taken here.
 
-Notice the competing. A text that gives each business to its workers and says nothing about competing is a different answer to the key’s question. The key needs both things here: workers who own, and firms that compete and can fail.
+Notice the competing. A text that gives each business to its workers and says nothing about competing is a different answer to the question. Both things are needed here: workers who own, and firms that compete and can fail.
 
 **What you must be able to point to.** Working people set against owners, each business to belong to the people who work in it, and those businesses competing with each other for customers, setting their own prices and able to fail. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What does the text say about the farms, factories, shops and banks?”**
+**The question:** **“What does the text say about the farms, factories, shops and banks?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“They should pass to the people who work in each one, and compete for customers”**
+**Its answer for a case like this one:** **“They should pass to the people who work in each one, and compete for customers”**
 
-**The key also asks, and this is its answer for a case like this one:** **“What does the text want done with the government?”** **“Keep it, run by whoever wins elections”** or **“The text does not say”**
+**There is also this question, and its answer for a case like this one:** **“What does the text want done with the government?”** **“Keep it, run by whoever wins elections”** or **“The text does not say”**
 
-The name for this is **Market socialism**. "Market" is the word for firms selling to customers who choose, and "socialism" here points at the other half: the owners are the people who work in each firm, and not outsiders. These are the two things the key looks for.
+The name for this is **Market socialism**. "Market" is the word for firms selling to customers who choose, and "socialism" here points at the other half: the owners are the people who work in each firm, and not outsiders. These are the two things to look for.
 
 ### 32. Market socialism: the same thing in a different story
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 32 of 55*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 32 of 55*
 
 [reviewers only: card kind `again`, id `again-mktsoc`]
 
@@ -1155,7 +1155,7 @@ The two stories share nothing else. So this holds wherever a text gives each bus
 
 ### 33. Market socialism: what it is like
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 33 of 55*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 33 of 55*
 
 [reviewers only: card kind `portrait`, id `portrait-mktsoc`]
 
@@ -1184,13 +1184,13 @@ In your own life it is the worker-owned shop or co-operative that sells to the p
 
 ### 34. A question about a new case
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 34 of 55*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 34 of 55*
 
 [reviewers only: card kind `check`, id `check-mktsoc`]
 
 > From the minutes of a meeting of mechanics at the Orwell bicycle repair chain: 'The chain's owners keep what is left after wages, and we do the repairs. We want each shop to belong to the people who work in it. The shops should compete with each other for customers, set their own prices, and close if they cannot pay their way.'
 
-**The key asks:** **“What does the text say about the farms, factories, shops and banks?”** Which of the answers you have met so far fits this case?
+**The question:** **“What does the text say about the farms, factories, shops and banks?”** Which of the answers you have met so far fits this case?
 
 - Their owners keep them, and taxes and public services even out what people get
 - The text does not say
@@ -1208,7 +1208,7 @@ In your own life it is the worker-owned shop or co-operative that sells to the p
 
 ### 35. Anarchism or Market socialism: telling them apart
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 35 of 55*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 35 of 55*
 
 [reviewers only: card kind `lookalike`, id `look-anarch-mktsoc`]
 
@@ -1230,9 +1230,9 @@ These two both give the business to the people who work in it. They part on what
 
 **Why this one and not the other**
 
-In Case A the text says nothing about competing. It wants no government telling it what to do or who to sell to, and it will run the bindery and the district together, in meetings. The key’s answer about the government is **“Get rid of it, and run things together without it”**, and the case is **Anarchism**.
+In Case A the text says nothing about competing. It wants no government telling it what to do or who to sell to, and it will run the bindery and the district together, in meetings. The answer about the government is **“Get rid of it, and run things together without it”**, and the case is **Anarchism**.
 
-In Case B the text says the bindery should compete with other binderies for customers, set its own prices, and close if it fails. The key’s answer is **“They should pass to the people who work in each one, and compete for customers”**, and the case is **Market socialism**.
+In Case B the text says the bindery should compete with other binderies for customers, set its own prices, and close if it fails. The answer is **“They should pass to the people who work in each one, and compete for customers”**, and the case is **Market socialism**.
 
 Both give the bindery to the people who work in it. What separates them is not who owns it. It is what the text keeps around it: a market, or no government.
 
@@ -1240,7 +1240,7 @@ Both give the bindery to the people who work in it. What separates them is not w
 
 Once the workers own it, does the business compete with others for customers and risk failing? Or does the text say nothing about that, and want the government gone?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Anarchism | Market socialism |
 |---|---|---|
@@ -1252,7 +1252,7 @@ Once the workers own it, does the business compete with others for customers and
 
 ### 36. Handed to its workers by a vote, and still competing
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 36 of 55*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 36 of 55*
 
 [reviewers only: card kind `exception`, id `exc-glassworks`]
 
@@ -1277,15 +1277,15 @@ The pieces you can tap:
 
 **Why this is Market socialism and not Democratic socialism**
 
-The text also says the glassworks will still compete for customers, set their own prices and fail if they cannot pay their way. That is what the key’s answer **“They should pass to the people who work in each one, and compete for customers”** asks for, and it asks for more than the handover alone. When a text shows both the handover to the workers and the competing, the competing decides, and the case is **Market socialism**.
+The text also says the glassworks will still compete for customers, set their own prices and fail if they cannot pay their way. That is what the answer **“They should pass to the people who work in each one, and compete for customers”** asks for, and it asks for more than the handover alone. When a text shows both the handover to the workers and the competing, the competing decides, and the case is **Market socialism**.
 
-The reason is that the handover alone says nothing about competing. A text that gives the businesses to their workers and is silent on competing leaves open whether they compete. This text closes it, and the key goes by the more exact answer.
+The reason is that the handover alone says nothing about competing. A text that gives the businesses to their workers and is silent on competing leaves open whether they compete. This text closes it, and the answer goes by the more exact one.
 
 **How to tell them apart**
 
 After the handover, do the businesses compete with each other for customers, set their own prices and risk failing?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Democratic socialism | Market socialism |
 |---|---|---|
@@ -1294,7 +1294,7 @@ After the handover, do the businesses compete with each other for customers, set
 | What does the text want done with the government? | Keep it, run by whoever wins elections / The text does not say | Keep it, run by whoever wins elections / The text does not say |
 | What you must be able to point to | Working people set against owners, the businesses (or the biggest of them) to pass to the public or to the people who work in them, and no party seizing power and no getting rid of the government: the change comes through elections, or the text does not say how | Working people set against owners, each business to belong to the people who work in it, and those businesses competing with each other for customers, setting their own prices and able to fail |
 
-This is the key’s decision, and it has a reason you can state: the more exact thing a text says about the businesses wins. Some people who study these texts would call every worker-owned firm the same thing whether or not it competes. The key does not, so that two people using it reach the same name.
+This is a decision, and it has a reason you can state: the more exact thing a text says about the businesses wins. Some people who study these texts would call every worker-owned firm the same thing whether or not it competes. Here that is not done, so that two people using the same questions reach the same name.
 
 
 *End of part 3. You can stop here; your place is kept. Next: part 4, An explanation of how owners gain.*
@@ -1305,7 +1305,7 @@ This is the key’s decision, and it has a reason you can state: the more exact 
 
 ### 37. A bakery’s sums, and a word for the gap
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 37 of 55*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 37 of 55*
 
 [reviewers only: card kind `term`, id `term-surplus`]
 
@@ -1321,14 +1321,14 @@ The sum has the same shape wherever wages are paid, whether the numbers are larg
 
 **The word for this.** *Surplus value*: the part of what workers make that they are not paid for, which the owner keeps as profit.
 
-Two cautions about the word. First, it names the £48 and says nothing about whether keeping it is fair. Dana can say that the £48 pays for the ovens, the risk she takes and her idea, and people argue over that. Second, the numbers here are an invented sum. Economists disagree about where profit comes from, and the key does not take a side. It needs the word only because some texts use it.
+Two cautions about the word. First, it names the £48 and says nothing about whether keeping it is fair. Dana can say that the £48 pays for the ovens, the risk she takes and her idea, and people argue over that. Second, the numbers here are an invented sum. Economists disagree about where profit comes from, and no side is taken here. The word is needed only because some texts use it.
 
-A text that explains how an owner comes to keep *surplus value* is making an argument. The key asks only whether the text makes it, and what else the text says.
+A text that explains how an owner comes to keep *surplus value* is making an argument. The only question is whether the text makes it, and what else the text says.
 
 
 ### 38. An explanation of how owners gain from workers
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 38 of 55*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 38 of 55*
 
 [reviewers only: card kind `meet`, id `meet-marx`]
 
@@ -1352,23 +1352,23 @@ The explanation is the whole text. It does not say that anything should be done 
 
 The same explanation can be told as a story of history. Some texts say that in every age the owners and the workers fight over who gets what, and that this fight is what moves history forward. That is an explanation too, and it counts for this answer.
 
-People who hold this explanation say it shows why owners and workers can never quite want the same thing. People who disagree say that profit comes from the owner’s risk, ideas and savings and not only from the workers’ work, so the explanation leaves things out. These are old arguments, and the key does not take a side in them. It only asks whether the text makes the explanation.
+People who hold this explanation say it shows why owners and workers can never quite want the same thing. People who disagree say that profit comes from the owner’s risk, ideas and savings and not only from the workers’ work, so the explanation leaves things out. These are old arguments, and no side is taken in them here. The only question is whether the text makes the explanation.
 
 **What you must be able to point to.** Owners and workers, and the text explaining, as the way the system itself works, that owners gain from what workers make and are not paid for, or that the fight between owners and workers is what moves history; and no plan for who should own the businesses and no party seizing power. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What does the text say about the farms, factories, shops and banks?”**
+**The question:** **“What does the text say about the farms, factories, shops and banks?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“It explains how their owners gain from what workers make”**
+**Its answer for a case like this one:** **“It explains how their owners gain from what workers make”**
 
-**The key also asks, and this is its answer for a case like this one:** **“What does the text want done with the government?”** **“Keep it, run by whoever wins elections”** or **“The text does not say”**
+**There is also this question, and its answer for a case like this one:** **“What does the text want done with the government?”** **“Keep it, run by whoever wins elections”** or **“The text does not say”**
 
-The name for this is **Marxism**. It is the name of the explanation, and "Marx" is the name of a writer whose books set it out. The key uses the name for a text that explains how owners gain from what workers make, and asks for nothing about the businesses or about power.
+The name for this is **Marxism**. It is the name of the explanation, and "Marx" is the name of a writer whose books set it out. The name stands for a text that explains how owners gain from what workers make, and asks for nothing about the businesses or about power.
 
 You may also hear this called “Marxist theory”. That means the same thing here, and from now on this unit uses one name: **Marxism**.
 
 ### 39. Marxism: the same thing in a different story
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 39 of 55*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 39 of 55*
 
 [reviewers only: card kind `again`, id `again-marx`]
 
@@ -1401,7 +1401,7 @@ The two stories share nothing else. One has numbers and the other has none. So t
 
 ### 40. Marxism: what it is like
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 40 of 55*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 40 of 55*
 
 [reviewers only: card kind `portrait`, id `portrait-marx`]
 
@@ -1431,13 +1431,13 @@ In your own life it is the lecture or the pamphlet that tries to show how a wage
 
 ### 41. A question about a new case
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 41 of 55*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 41 of 55*
 
 [reviewers only: card kind `check`, id `check-marx`]
 
 > From a column in a care workers' newsletter: 'Why can a care chain make a profit at all? Because the home pays its carers less than the care is worth to the people who pay the fees. The owners keep the gap, and not because they are greedy: it is how a business that pays wages has to work. We write for the carers.'
 
-**The key asks:** **“What does the text say about the farms, factories, shops and banks?”** Which of the answers you have met so far fits this case?
+**The question:** **“What does the text say about the farms, factories, shops and banks?”** Which of the answers you have met so far fits this case?
 
 - Their owners keep them, and taxes and public services even out what people get
 - The text does not say
@@ -1457,7 +1457,7 @@ In your own life it is the lecture or the pamphlet that tries to show how a wage
 
 ### 42. A wrong idea about taxing the rich
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 42 of 55*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 42 of 55*
 
 [reviewers only: card kind `refute`, id `refute-tax`]
 
@@ -1473,12 +1473,12 @@ Taxing the rich, however heavily, leaves the businesses with their owners, and f
 
 A tax rate is also not a name. Texts that ask for a very high tax and texts that ask for a very low one can both leave the owners their businesses. What you point to is whether the text leaves the owners their businesses and asks for tax or services, or explains how owners gain.
 
-So when someone says that a text that taxes the rich must be **Marxism**, ask what the text says about the businesses. If the owners keep them and the text asks for tax and services, the key’s answer is **“Their owners keep them, and taxes and public services even out what people get”**, and the name is **Social democracy**.
+So when someone says that a text that taxes the rich must be **Marxism**, ask what the text says about the businesses. If the owners keep them and the text asks for tax and services, the answer is **“Their owners keep them, and taxes and public services even out what people get”**, and the name is **Social democracy**.
 
 
 ### 43. Class politics with nothing attached or Marxism: telling them apart
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 43 of 55*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 43 of 55*
 
 [reviewers only: card kind `lookalike`, id `look-classonly-marx`]
 
@@ -1500,9 +1500,9 @@ These two are the pair most often taken for each other, because both talk about 
 
 **Why this one and not the other**
 
-In Case A the text complains that this owner paid himself a bonus and refused a raise. That is one owner’s choice, and the text goes on to an invitation to a canteen meeting. Nothing is explained and nothing is asked. The key’s answer is **“The text does not say”**, and the case is **Class politics with nothing attached**.
+In Case A the text complains that this owner paid himself a bonus and refused a raise. That is one owner’s choice, and the text goes on to an invitation to a canteen meeting. Nothing is explained and nothing is asked. The answer is **“The text does not say”**, and the case is **Class politics with nothing attached**.
 
-In Case B the text says the gap is not this owner’s greed: every owner has to keep a gap like it, because that is how the arrangement works. That is an explanation of how owners gain. The key’s answer is **“It explains how their owners gain from what workers make”**, and the case is **Marxism**.
+In Case B the text says the gap is not this owner’s greed: every owner has to keep a gap like it, because that is how the arrangement works. That is an explanation of how owners gain. The answer is **“It explains how their owners gain from what workers make”**, and the case is **Marxism**.
 
 Both are on the weavers’ side, both mention the owner’s money, and neither asks for a tax or a handover. The difference is that one complains and the other explains.
 
@@ -1510,7 +1510,7 @@ Both are on the weavers’ side, both mention the owner’s money, and neither a
 
 Is the text about this owner’s choices? Or does it explain why any owner would gain from the work, as the way the arrangement works?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Class politics with nothing attached | Marxism |
 |---|---|---|
@@ -1522,7 +1522,7 @@ Is the text about this owner’s choices? Or does it explain why any owner would
 
 ### 44. Social democracy or Marxism: telling them apart
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 44 of 55*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 44 of 55*
 
 [reviewers only: card kind `lookalike`, id `look-socdem-marx`]
 
@@ -1544,9 +1544,9 @@ Both of these say the owners gain from the workers. They part on whether the tex
 
 **Why this one and not the other**
 
-In Case A the text says the firm can stay with its owners, and asks for a tax on its profits to pay for sick pay and a pension. It asks the government for something, and leaves the owners their firm. The key’s answer is **“Their owners keep them, and taxes and public services even out what people get”**, and the case is **Social democracy**.
+In Case A the text says the firm can stay with its owners, and asks for a tax on its profits to pay for sick pay and a pension. It asks the government for something, and leaves the owners their firm. The answer is **“Their owners keep them, and taxes and public services even out what people get”**, and the case is **Social democracy**.
 
-In Case B the text asks for nothing. It says that this is how any firm that pays wages has to work, and that every owner lives from what workers make and are not paid for. The key’s answer is **“It explains how their owners gain from what workers make”**, and the case is **Marxism**.
+In Case B the text asks for nothing. It says that this is how any firm that pays wages has to work, and that every owner lives from what workers make and are not paid for. The answer is **“It explains how their owners gain from what workers make”**, and the case is **Marxism**.
 
 The opening is the same. A text that says the owners keep most of what the workers make can be going on to a plan or to an explanation. Read what comes next.
 
@@ -1554,7 +1554,7 @@ The opening is the same. A text that says the owners keep most of what the worke
 
 Does the text ask the government to do something about pay, taxes or services? Or does it explain how owners come to gain from the work, and stop there?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Social democracy | Marxism |
 |---|---|---|
@@ -1566,7 +1566,7 @@ Does the text ask the government to do something about pay, taxes or services? O
 
 ### 45. Marxism or Marxism-Leninism: telling them apart
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 45 of 55*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 45 of 55*
 
 [reviewers only: card kind `lookalike`, id `look-marx-ml`]
 
@@ -1588,9 +1588,9 @@ Both of these can explain how owners gain. They part on whether the text goes on
 
 **Why this one and not the other**
 
-In Case A the text explains and stops. It says nothing about power. The key’s answer to the question about the businesses is **“It explains how their owners gain from what workers make”**, and with nothing said about power, the case is **Marxism**.
+In Case A the text explains and stops. It says nothing about power. The answer to the question about the businesses is **“It explains how their owners gain from what workers make”**, and with nothing said about power, the case is **Marxism**.
 
-In Case B the text gives the same explanation, and then says the spinners’ party must take power and keep it, and allow no rival. The key’s answer about power is **“Seize power and hold it for the workers, with no rivals allowed”**, and the case is **Marxism-Leninism**.
+In Case B the text gives the same explanation, and then says the spinners’ party must take power and keep it, and allow no rival. The answer about power is **“Seize power and hold it for the workers, with no rivals allowed”**, and the case is **Marxism-Leninism**.
 
 An explanation can be held with a plan for power or without one. What the text goes on to say about power is what separates them.
 
@@ -1598,7 +1598,7 @@ An explanation can be held with a plan for power or without one. What the text g
 
 Does the text say that a party, or the workers, will take power and keep it? Or does it only explain how owners gain?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Marxism | Marxism-Leninism |
 |---|---|---|
@@ -1610,7 +1610,7 @@ Does the text say that a party, or the workers, will take power and keep it? Or 
 
 ### 46. Anarchism or Marxism: telling them apart
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 46 of 55*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 46 of 55*
 
 [reviewers only: card kind `lookalike`, id `look-marx-anarch`]
 
@@ -1632,9 +1632,9 @@ Both of these explain how owners gain, and a text that does only that is **Marxi
 
 **Why this one and not the other**
 
-In Case A the text explains, and then says it will make its case to the voters at every election. The government stays, and the voters decide who runs it. The key’s answer to the question about the businesses is **“It explains how their owners gain from what workers make”**, and with the change put to the voters, the case is **Marxism**.
+In Case A the text explains, and then says it will make its case to the voters at every election. The government stays, and the voters decide who runs it. The answer to the question about the businesses is **“It explains how their owners gain from what workers make”**, and with the change put to the voters, the case is **Marxism**.
 
-In Case B the text gives the same explanation, and then says it wants no government at all, with people running the mill and the town together. The key’s answer about the government is **“Get rid of it, and run things together without it”**, and the case is **Anarchism**.
+In Case B the text gives the same explanation, and then says it wants no government at all, with people running the mill and the town together. The answer about the government is **“Get rid of it, and run things together without it”**, and the case is **Anarchism**.
 
 An explanation can be held with a government or without one. What the text goes on to say about the government is what separates them.
 
@@ -1642,7 +1642,7 @@ An explanation can be held with a government or without one. What the text goes 
 
 Besides the explanation, does the text say that the government should be done away with, now?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Anarchism | Marxism |
 |---|---|---|
@@ -1654,7 +1654,7 @@ Besides the explanation, does the text say that the government should be done aw
 
 ### 47. An explanation that ends in a plan
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 47 of 55*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 47 of 55*
 
 [reviewers only: card kind `exception`, id `exc-dyeworks`]
 
@@ -1679,17 +1679,17 @@ The pieces you can tap:
 
 **Why this is Democratic socialism and not Marxism**
 
-The text goes on to say that the dye works should be taken into public ownership. That is a plan for the businesses, and the key’s answer is **“They should pass to the government, to be run for everyone”**. When a text both explains how owners gain and says what should happen to the businesses, the plan decides, and the explanation gives way.
+The text goes on to say that the dye works should be taken into public ownership. That is a plan for the businesses, and the answer is **“They should pass to the government, to be run for everyone”**. When a text both explains how owners gain and says what should happen to the businesses, the plan decides, and the explanation gives way.
 
-The reason is that an explanation alone is open: a reader does not know what the writers want done. A plan closes it. The key goes by the more exact thing the text says.
+The reason is that an explanation alone is open: a reader does not know what the writers want done. A plan closes it. The answer goes by the more exact thing the text says.
 
 **How to tell them apart**
 
 Does the text say what should happen to the businesses, or does it only explain how owners gain?
 
-When a case shows both **“It explains how their owners gain from what workers make”** and a plan for the businesses to pass to the government, the key’s answer is **“They should pass to the government, to be run for everyone”**.
+When a case shows both **“It explains how their owners gain from what workers make”** and a plan for the businesses to pass to the government, the answer is **“They should pass to the government, to be run for everyone”**.
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Democratic socialism | Marxism |
 |---|---|---|
@@ -1698,28 +1698,28 @@ When a case shows both **“It explains how their owners gain from what workers 
 | What does the text want done with the government? | Keep it, run by whoever wins elections / The text does not say | Keep it, run by whoever wins elections / The text does not say |
 | What you must be able to point to | Working people set against owners, the businesses (or the biggest of them) to pass to the public or to the people who work in them, and no party seizing power and no getting rid of the government: the change comes through elections, or the text does not say how | Owners and workers, and the text explaining, as the way the system itself works, that owners gain from what workers make and are not paid for, or that the fight between owners and workers is what moves history; and no plan for who should own the businesses and no party seizing power |
 
-This is the key’s decision, and it is stated once so that two people using the key reach the same name. In the field, many who hold the explanation would still say the text is mainly an explanation. The key goes by what the text asks for.
+This is a decision, and it is stated once so that two people using the same questions reach the same name. In the field, many who hold the explanation would still say the text is mainly an explanation. The answer goes by what the text asks for.
 
 
-*End of part 4. You can stop here; your place is kept. Next: part 5, The key’s two questions, each in one place.*
+*End of part 4. You can stop here; your place is kept. Next: part 5, The two questions, each in one place.*
 
 ---
 
-## Part 5 of 6: The key’s two questions, each in one place
+## Part 5 of 6: The two questions, each in one place
 
 ### 48. The question about the businesses
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 48 of 55*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 48 of 55*
 
 [reviewers only: card kind `question`, id `q-business`]
 
-Each card that introduced a name showed one of the key’s two questions at its foot, with one answer under it. This card puts the question about the farms, factories, shops and banks in one place, with all six of its answers as the key shows them, and says why the key asks it.
+Each card that introduced a name showed one of the two questions at its foot, with one answer under it. This card puts the question about the farms, factories, shops and banks in one place, with all six of its answers worded as they always are, and says why it is asked.
 
-**The key asks:** **“What does the text say about the farms, factories, shops and banks?”**
+**The question:** **“What does the text say about the farms, factories, shops and banks?”**
 
 **What it is for.** Tells apart texts that keep the owners and tax them, texts that hand the businesses to the public or to the people who work in them, texts that only explain how owners gain, and texts that say nothing about the businesses.
 
-**Its answers, exactly as the key shows them**
+**Its answers**
 
 - **“Their owners keep them, and taxes and public services even out what people get”**
   - Give this answer when the text leaves the businesses with their owners, and asks the government to tax them, set a floor for pay, or pay for services such as health care, schooling and pensions.
@@ -1754,7 +1754,7 @@ Read the text for any sentence that says what should happen to the businesses: w
 
 Three things can look like an answer and are not. A complaint about what the owners did, with no plan, gets the answer **“The text does not say”**: the text complains and goes no further. A tax or a floor for pay gives the first answer only if the owners keep the businesses. And naming a business is not a handover: the text must say it should pass out of the owners’ hands.
 
-Where a text gives two answers at once, the key has already decided which wins, and each decision was taught on a card of its own: a handover beats a tax, workers who also compete beat workers alone, and a plan beats an explanation. An explanation with no plan keeps its answer, and the question about the government then decides the name. If you are not sure, find the sentence that says the most exact thing about who should own the businesses, and go by it.
+Where a text gives two answers at once, it has already been decided which wins, and each decision was taught on a card of its own: a handover beats a tax, workers who also compete beat workers alone, and a plan beats an explanation. An explanation with no plan keeps its answer, and the question about the government then decides the name. If you are not sure, find the sentence that says the most exact thing about who should own the businesses, and go by it.
 
 Four pairs that this question separates have no card of their own, because the difference is plain once you ask it. **Social democracy** and **Market socialism**: the owners keep the businesses, or the people who work in each one own it and compete. **Class politics with nothing attached** and **Democratic socialism**: nothing is said about who should own the businesses, or they are to pass out of the owners’ hands. **Class politics with nothing attached** and **Market socialism**: nothing is said, or each business is to belong to its workers and compete. **Market socialism** and **Marxism**: the businesses are to belong to their workers and compete, or the text only explains how owners gain.
 
@@ -1763,16 +1763,16 @@ Four pairs that this question separates have no card of their own, because the d
 Sometimes two answers both seem to fit. Each pair below has been put side by side earlier in this unit, or just above, and each has one question that tells it apart.
 
 - Social democracy or Class politics with nothing attached: Look for a plan. Does the text say anything about what the government should do about pay, taxes or services, or about who should own the businesses? Or does it only say whose side it is on?
-- Social democracy or Democratic socialism: Once the government has acted, who owns the business? Is it still the owners, or has it passed to the government? When a case shows both **“Their owners keep them, and taxes and public services even out what people get”** and the businesses to pass to the government, the key’s answer is **“They should pass to the government, to be run for everyone”**.
-- Social democracy or Market socialism: Who owns each business: the same owners as before, or the people who work in it? When a case shows both **“Their owners keep them, and taxes and public services even out what people get”** and the businesses to pass to the people who work in them, and to compete for customers, the key’s answer is **“They should pass to the people who work in each one, and compete for customers”**.
-- Social democracy or Marxism: Does the text ask the government to do something about pay, taxes or services? Or does it explain how owners come to gain from the work, and stop there? When a case shows both **“It explains how their owners gain from what workers make”** and a plan to tax the owners and pay for services, the key’s answer is **“Their owners keep them, and taxes and public services even out what people get”**.
+- Social democracy or Democratic socialism: Once the government has acted, who owns the business? Is it still the owners, or has it passed to the government? When a case shows both **“Their owners keep them, and taxes and public services even out what people get”** and the businesses to pass to the government, the answer is **“They should pass to the government, to be run for everyone”**.
+- Social democracy or Market socialism: Who owns each business: the same owners as before, or the people who work in it? When a case shows both **“Their owners keep them, and taxes and public services even out what people get”** and the businesses to pass to the people who work in them, and to compete for customers, the answer is **“They should pass to the people who work in each one, and compete for customers”**.
+- Social democracy or Marxism: Does the text ask the government to do something about pay, taxes or services? Or does it explain how owners come to gain from the work, and stop there? When a case shows both **“It explains how their owners gain from what workers make”** and a plan to tax the owners and pay for services, the answer is **“Their owners keep them, and taxes and public services even out what people get”**.
 - Class politics with nothing attached or Democratic socialism: Does the text say who should own the businesses? Or does it only say whose side it is on?
 - Class politics with nothing attached or Market socialism: Does the text say who should own each business, and that the businesses should compete?
 - Class politics with nothing attached or Marxism: Is the text about this owner’s choices? Or does it explain why any owner would gain from the work, as the way the arrangement works?
 - Democratic socialism or Market socialism: After the handover, do the businesses compete with each other for customers, set their own prices and risk failing?
-- Democratic socialism or Marxism: Does the text say what should happen to the businesses, or does it only explain how owners gain? When a case shows both **“It explains how their owners gain from what workers make”** and a plan for the businesses to pass to the government, the key’s answer is **“They should pass to the government, to be run for everyone”**.
-- Market socialism or Marxism: Does the text say who should own each business, or does it only explain how owners gain? When a case shows both **“It explains how their owners gain from what workers make”** and a plan for the businesses to pass to their workers and compete for customers, the key’s answer is **“They should pass to the people who work in each one, and compete for customers”**.
-- Anarchism or Market socialism: Once the workers own it, does the business compete with others for customers and risk failing? Or does the text say nothing about that, and want the government gone? When a case shows both **“They should pass to the people who work in each one”** and businesses owned by their workers that compete with each other for customers, the key’s answer is **“They should pass to the people who work in each one, and compete for customers”**.
+- Democratic socialism or Marxism: Does the text say what should happen to the businesses, or does it only explain how owners gain? When a case shows both **“It explains how their owners gain from what workers make”** and a plan for the businesses to pass to the government, the answer is **“They should pass to the government, to be run for everyone”**.
+- Market socialism or Marxism: Does the text say who should own each business, or does it only explain how owners gain? When a case shows both **“It explains how their owners gain from what workers make”** and a plan for the businesses to pass to their workers and compete for customers, the answer is **“They should pass to the people who work in each one, and compete for customers”**.
+- Anarchism or Market socialism: Once the workers own it, does the business compete with others for customers and risk failing? Or does the text say nothing about that, and want the government gone? When a case shows both **“They should pass to the people who work in each one”** and businesses owned by their workers that compete with each other for customers, the answer is **“They should pass to the people who work in each one, and compete for customers”**.
 
 **Social democracy beside Market socialism**
 
@@ -1813,13 +1813,13 @@ Sometimes two answers both seem to fit. Each pair below has been put side by sid
 
 ### 49. A question about a new case
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 49 of 55*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 49 of 55*
 
 [reviewers only: card kind `check`, id `check-business`]
 
 > From the newsletter of the Fennick bakers' union: 'The bakeries' owners keep the profit, and we bake. We stand with the bakers. Each bakery should belong to the people who bake in it, and the bakers should run it together.'
 
-**The key asks:** **“What does the text say about the farms, factories, shops and banks?”**
+**The question:** **“What does the text say about the farms, factories, shops and banks?”**
 
 - Their owners keep them, and taxes and public services even out what people get
 - They should pass to the government, to be run for everyone
@@ -1841,17 +1841,17 @@ Sometimes two answers both seem to fit. Each pair below has been put side by sid
 
 ### 50. The question about the government
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 50 of 55*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 50 of 55*
 
 [reviewers only: card kind `question`, id `q-government`]
 
 The question about the businesses came first. The question about the government has four answers. Two of them, seizing power and getting rid of the government, you have met at the foot of a card. The other two have been in the texts all along: texts that put their case to the voters, and texts that said nothing about power.
 
-**The key asks:** **“What does the text want done with the government?”**
+**The question:** **“What does the text want done with the government?”**
 
 **What it is for.** Tells apart texts in which a party or the workers seize power and keep it, texts in which the government stays and whoever wins elections runs it, and texts that would get rid of government altogether.
 
-**Its answers, exactly as the key shows them**
+**Its answers**
 
 - **“Seize power and hold it for the workers, with no rivals allowed”**
   - Give this answer when the text says a party, or the workers themselves, should take power by force or rule as the only party, and does not offer to give it up at an election.
@@ -1870,15 +1870,15 @@ The question about the businesses came first. The question about the government 
 
 Two texts can want the same thing done with the businesses and get there by opposite roads: through elections that can be lost, through a party that cannot be voted out, or by doing away with government. The road is part of what each name means.
 
-This question sorts a text by what it says about power, and not about the businesses. Two texts can ask for exactly the same handover and differ here: one leaves its power in the voters’ hands, and one will not. That is the difference between a handover voters can undo and one they cannot, and the key treats it as part of what each name means.
+This question sorts a text by what it says about power, and not about the businesses. Two texts can ask for exactly the same handover and differ here: one leaves its power in the voters’ hands, and one will not. That is the difference between a handover voters can undo and one they cannot, and it is treated as part of what each name means.
 
-The answer **“Keep it, run by whoever wins elections”** is not a promise that the text likes elections. It is given when the text says the change will come through elections, parliament or the courts, or that voters can remove whoever runs the government. The answer **“The text does not say”** is given when the text says nothing about how power is to be won or held, or about what should happen to the government. For **Democratic socialism** this is a real answer, and the key decides it: public ownership with no word on how is filed under **Democratic socialism**. Some people who study these texts would not draw the line there. The key draws it there, so that two people using it reach the same name and can each say why.
+The answer **“Keep it, run by whoever wins elections”** is not a promise that the text likes elections. It is given when the text says the change will come through elections, parliament or the courts, or that voters can remove whoever runs the government. The answer **“The text does not say”** is given when the text says nothing about how power is to be won or held, or about what should happen to the government. For **Democratic socialism** this is a real answer, and it has been decided: public ownership with no word on how is filed under **Democratic socialism**. Some people who study these texts would not draw the line there. The line is drawn there, so that two people using the same questions reach the same name and can each say why.
 
 **How to answer it from a case**
 
 Look for words about power: who takes it, how, whether it can be taken back, and whether the government stays. "We will win the vote and pass the law" is the answer about elections. "The party will take power and keep it" is the answer about seizing. "We want no government" is the answer about getting rid of it. If none of these is in the text, the answer is **“The text does not say”**, and that is a correct reading.
 
-Several texts say something about power without saying anything about the businesses, and a text that only explains how owners gain can say it too: the explanation answers the question about the businesses, and these words answer this one. This question stands on its own: a text can be silent on the businesses and decisive on the government. Answer each question as if the other were not there, and the key does the combining.
+Several texts say something about power without saying anything about the businesses, and a text that only explains how owners gain can say it too: the explanation answers the question about the businesses, and these words answer this one. This question stands on its own: a text can be silent on the businesses and decisive on the government. Answer each question as if the other were not there, and the two answers are combined afterwards.
 
 Asking the government to do something is not an answer here. "The government should tax the owners" asks the government for something. It does not say how power is won or held. Only words about power, or about the government itself, answer this question.
 
@@ -1899,13 +1899,13 @@ Sometimes two answers both seem to fit. Each pair below has been put side by sid
 
 ### 51. A question about a new case
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 51 of 55*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 51 of 55*
 
 [reviewers only: card kind `check`, id `check-government`]
 
 > A statement from the Penny Lane shop workers' union: 'The chain that owns the shops keeps the profit, and we stand behind the counters. We would leave the shops with the chain, and tax its profits to pay for a minimum wage and sick pay. We will make our case to the voters at the next election and let them decide.'
 
-**The key asks:** **“What does the text want done with the government?”**
+**The question:** **“What does the text want done with the government?”**
 
 - Seize power and hold it for the workers, with no rivals allowed
 - Keep it, run by whoever wins elections
@@ -1929,11 +1929,11 @@ Sometimes two answers both seem to fit. Each pair below has been put side by sid
 
 ### 52. A whole case, from the first question to the name
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 52 of 55*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 52 of 55*
 
 [reviewers only: card kind `worked`, id `worked-power`]
 
-You have the seven names and the key’s two questions about them. Before you run a case yourself, watch two being run from the top, in the order the key asks. You are not asked anything until the end of each.
+You have the seven names and the two questions about them. Before you run a case yourself, watch two being run from the top, in the order the questions come. You are not asked anything until the end of each.
 
 *The power-station leaflet*
 
@@ -1971,7 +1971,7 @@ What it is for: tells apart texts in which a party or the workers seize power an
 
 Answer: **“The text does not say”**
 
-The text asks for a change of ownership and goes no further: “run for everyone, not for the company's shareholders”. It says nothing about how power is to be won or held, about elections, or about getting rid of the government. The key’s answer is **“The text does not say”**, and it leaves one name.
+The text asks for a change of ownership and goes no further: “run for everyone, not for the company's shareholders”. It says nothing about how power is to be won or held, about elections, or about getting rid of the government. The answer is **“The text does not say”**, and it leaves one name.
 
 Still possible: **Democratic socialism**. Ruled out: **Social democracy**, **Class politics with nothing attached**, **Marxism-Leninism**, **Anarchism**, **Market socialism** and **Marxism**.
 
@@ -1991,17 +1991,17 @@ Still possible: **Democratic socialism**. Ruled out: **Social democracy**, **Cla
 
 For **Marxism-Leninism** you must be able to point to this: working people set against owners, and a party, or the workers themselves, taking power by force or ruling as the only party, with no offer to give it up at an election. Nothing in this text says anything about taking power or ruling alone. Without those words, the question about the government gets **“The text does not say”**, and together with **“They should pass to the government, to be run for everyone”** that leaves **Democratic socialism** and rules out **Marxism-Leninism**.
 
-The key’s decision is the one you met on the cards: public ownership with no word on how is filed under **Democratic socialism**. The key does not say the staff would not seize power. It says that this text does not say so, and the key never fills a silence.
+The decision is the one you met on the cards: public ownership with no word on how is filed under **Democratic socialism**. The answer does not say the staff would not seize power. It says that this text does not say so, and a silence is never filled with a guess.
 
 **Does it look like a case you know?**
 
-The key has given its answer. Now take a second look of a different kind: does this case look like one you know? It should bring back the signal workers’ motion: a business to be owned by the government and run for everyone, and nothing said about how the change is made.
+The questions have given their answer. Now take a second look of a different kind: does this case look like one you know? It should bring back the signal workers’ motion: a business to be owned by the government and run for everyone, and nothing said about how the change is made.
 
-Here the key and the likeness agree, so the answer stands. The key’s questions come first, because they make you point at words in the case. The likeness is only a second look. When the two disagree, do not pick the one you prefer. Go back to the key’s questions and find the words in the case that answer them. The second whole case shows how.
+Here the answer and the likeness agree, so it stands. The questions come first, because they make you point at words in the case. The likeness is only a second look. When the two disagree, do not pick the one you prefer. Go back to the questions and find the words in the case that answer them. The second whole case shows how.
 
 ### 53. A second whole case, where the story points the wrong way
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 53 of 55*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 53 of 55*
 
 [reviewers only: card kind `worked`, id `worked-docks`]
 
@@ -2031,7 +2031,7 @@ What it is for: tells apart texts that keep the owners and tax them, texts that 
 
 Answer: **“They should pass to the government, to be run for everyone”**
 
-The text does two things about the businesses. It explains how the owners gain, with a sum and the words about every owner. And it says what should happen to the docks: “The docks will then belong to the government, run for everyone”. When a text explains and also says what should happen to the businesses, the plan decides, and the key’s answer is **“They should pass to the government, to be run for everyone”**.
+The text does two things about the businesses. It explains how the owners gain, with a sum and the words about every owner. And it says what should happen to the docks: “The docks will then belong to the government, run for everyone”. When a text explains and also says what should happen to the businesses, the plan decides, and the answer is **“They should pass to the government, to be run for everyone”**.
 
 Still possible: **Democratic socialism** and **Marxism-Leninism**. Ruled out: **Social democracy**, **Class politics with nothing attached**, **Anarchism**, **Market socialism** and **Marxism**.
 
@@ -2063,13 +2063,13 @@ Still possible: **Marxism-Leninism**. Ruled out: **Social democracy**, **Class p
 
 **Marxism** needs this: owners and workers, and the text explaining, as the way the system itself works, that owners gain from what workers make and are not paid for, or that the fight between owners and workers is what moves history; and no plan for who should own the businesses and no party seizing power. This text goes past that. It says who will take power and that it will be held with no rival, and the needs line for **Marxism** ends by ruling that out. The answer about power leaves only **Marxism-Leninism**.
 
-Explaining is not what separates the two names. A text can explain and say nothing about power, and that is **Marxism**. A text can explain and then say that a party will take power and keep it, and that is **Marxism-Leninism**. The explanation is the same in both. What the text goes on to say is what the key goes by.
+Explaining is not what separates the two names. A text can explain and say nothing about power, and that is **Marxism**. A text can explain and then say that a party will take power and keep it, and that is **Marxism-Leninism**. The explanation is the same in both. What the text goes on to say is what the answer goes by.
 
 **Does it look like a case you know?**
 
-The key has given its answer. Now the second look: does this case look like one you know? The sum, and the words about every owner keeping a gap, bring back the weaver’s sums first, and that case was **Marxism**. So here the likeness and the key seem to disagree.
+The questions have given their answer. Now the second look: does this case look like one you know? The sum, and the words about every owner keeping a gap, bring back the weaver’s sums first, and that case was **Marxism**. So here the likeness and the answer seem to disagree.
 
-When that happens, go back to the key’s questions and find the words in the case that answer them. For the question about power they are “The party will take the government by force, hold it, and allow no rival party”. The weaver’s pamphlet has nothing like them. The mill pamphlet does: it also says the party must take power and keep it. So the case this one really looks like is the mill pamphlet, and the key’s answer stands.
+When that happens, go back to the questions and find the words in the case that answer them. For the question about power they are “The party will take the government by force, hold it, and allow no rival party”. The weaver’s pamphlet has nothing like them. The mill pamphlet does: it also says the party must take power and keep it. So the case this one really looks like is the mill pamphlet, and the answer stands.
 
 ### The drill
 
@@ -2077,7 +2077,7 @@ The cards are out of view from here, and every case is new. The drill has five s
 
 Some of these texts say nothing about the businesses, and some say nothing about the government. That is on purpose. Saying that a text does not say is one of the answers to each question, and you will need it as often as the others. A text that says nothing about either is a real case with a name of its own.
 
-#### Stage 1 of 5. The key’s answers are shown for each case. Give the name that goes with them. This stage practises one thing: which name goes with which answer.
+#### Stage 1 of 5. The answers are shown for each case. Give the name that goes with them. This stage practises one thing: which name goes with which answer.
 
 The names offered are the seven this unit teaches: Social democracy / Class politics with nothing attached / Democratic socialism / Marxism-Leninism / Anarchism / Market socialism / Marxism.
 
@@ -2098,7 +2098,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Class politics with nothing attached**: The text goes past taking the workers’ side to a plan: a law and a tax. A text that only took the side would be **Class politics with nothing attached**.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Class politics with nothing attached**, the look-alike card’s lines follow: Both put working people against owners, and both can be angry about the same profit and the same pay. In **Social democracy** the text says what should be done about the businesses: the owners keep them, and a tax, a floor for pay or public services even out the result. In **Class politics with nothing attached** the text takes the workers’ side and says nothing about the businesses. Look for a plan. Does the text say anything about what the government should do about pay, taxes or services, or about who should own the businesses? Or does it only say whose side it is on?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “Owners keep the businesses, and taxes even things out” (one tap opens the card).
 
 **Drill item 2 of 76**
@@ -2118,7 +2118,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Social democracy**: The text asks for no tax, no minimum wage and no service. A text that asked for those, and left the owners their hotel, would be **Social democracy**.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Social democracy**, the look-alike card’s lines follow: Both put working people against owners, and both can be angry about the same profit and the same pay. In **Social democracy** the text says what should be done about the businesses: the owners keep them, and a tax, a floor for pay or public services even out the result. In **Class politics with nothing attached** the text takes the workers’ side and says nothing about the businesses. Look for a plan. Does the text say anything about what the government should do about pay, taxes or services, or about who should own the businesses? Or does it only say whose side it is on?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “Working people against owners, and nothing more said” (one tap opens the card).
 
 **Drill item 3 of 76**
@@ -2138,7 +2138,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Marxism-Leninism**: Handing the buses to the town is something both names ask for. This text puts it to the voters. A text that said a party would take power and keep it would be **Marxism-Leninism**.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Marxism-Leninism**, the look-alike card’s lines follow: Both can want the businesses, or the biggest of them, to pass to the government, and both can speak for the workers. In **Democratic socialism** the change comes through elections that the people asking for it can lose, or the text says nothing about how. In **Marxism-Leninism** the party or the workers take power by force or rule as the only party, with no offer to give it up at an election. Does the text say that a party, or the workers, will take power by force or rule as the only party? If it says nothing about power, the answer is no.
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “The businesses handed over, by votes” (one tap opens the card).
 
 **Drill item 4 of 76**
@@ -2158,7 +2158,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Democratic socialism**: Handing the bank to everyone is something **Democratic socialism** asks for as well. This text says the party will hold power and allow no rival. A text that left the change to the voters would be **Democratic socialism**.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Democratic socialism**, the look-alike card’s lines follow: Both can want the businesses, or the biggest of them, to pass to the government, and both can speak for the workers. In **Democratic socialism** the change comes through elections that the people asking for it can lose, or the text says nothing about how. In **Marxism-Leninism** the party or the workers take power by force or rule as the only party, with no offer to give it up at an election. Does the text say that a party, or the workers, will take power by force or rule as the only party? If it says nothing about power, the answer is no.
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “One party takes power and rules for the workers” (one tap opens the card).
 
 **Drill item 5 of 76**
@@ -2178,7 +2178,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Democratic socialism**: Giving the stalls to the people who work them is something **Democratic socialism** asks for too. This text wants no government to do it. A text that left the government in place, answering to the voters, would be **Democratic socialism**.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Democratic socialism**, the look-alike card’s lines follow: Both can want each business to belong to the people who work in it. In **Democratic socialism** the government stays, and elections decide who runs it, or the text says nothing about how the change is made. In **Anarchism** the government is to be got rid of now, with people running their work and their towns together without it. Should the government stay, or be done away with now, according to the text?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “No bosses and no government” (one tap opens the card).
 
 **Drill item 6 of 76**
@@ -2198,7 +2198,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Anarchism**: Both give the firm to its workers. This text keeps it competing for customers, and says nothing about getting rid of the government, which **Anarchism** would need.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Anarchism**, the look-alike card’s lines follow: Both want each business to belong to the people who work in it. In **Market socialism** the businesses compete for customers, set their own prices and can fail, and the text says nothing about getting rid of the government. In **Anarchism** the text says nothing about competing, and wants the government got rid of. Once the workers own it, does the business compete with others for customers and risk failing? Or does the text say nothing about that, and want the government gone?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “Firms owned by their workers, competing for customers” (one tap opens the card).
 
 **Drill item 7 of 76**
@@ -2218,7 +2218,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Class politics with nothing attached**: The text does more than complain about one firm: it says why any owner gains from the work. A text that only complained, and asked the reader to come along, would be **Class politics with nothing attached**.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Class politics with nothing attached**, the look-alike card’s lines follow: Both are on the workers’ side, both can mention that owners take a profit, and neither says what should be done with the businesses. In **Class politics with nothing attached** the text complains about this owner or this profit and says nothing about how owners gain. In **Marxism** the text sets out how owners come by their profit from the work done for them, as the way the whole system works, whoever the owner is. Is the text about this owner’s choices? Or does it explain why any owner would gain from the work, as the way the arrangement works?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “An explanation of how owners gain from workers” (one tap opens the card).
 
 **Drill item 8 of 76**
@@ -2238,7 +2238,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Democratic socialism**: The chain is left with its schools. A text that asked for the schools to be taken from the chain and run by the government would be **Democratic socialism**.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Democratic socialism**, the look-alike card’s lines follow: Both want the government to do something about how businesses treat the people who work in them, and both can ask for health care, pensions and fair pay. In **Social democracy** the owners keep their businesses, and the government taxes them and pays for services. In **Democratic socialism** the businesses, or the biggest of them, pass out of the owners’ hands to the government. A text that asks for both is **Democratic socialism**. Once the government has acted, who owns the business? Is it still the owners, or has it passed to the government?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “Owners keep the businesses, and taxes even things out” (one tap opens the card).
 
 **Drill item 9 of 76**
@@ -2254,11 +2254,11 @@ Shown to you, with the words that decide each answer marked:
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Democratic socialism**.” What does the text want done with the government? **The text does not say.** The text says nothing about how power is won or held. It ends on who the pharmacies are run for: “run for the patients and not for the owners”. A handover with no word on how is the key’s case for the answer that nothing is said.
+- If you are right: “Right: **Democratic socialism**.” What does the text want done with the government? **The text does not say.** The text says nothing about how power is won or held. It ends on who the pharmacies are run for: “run for the patients and not for the owners”. A handover with no word on how is a case of the answer that nothing is said.
   - Why not **Social democracy**: The pharmacies leave the chain. A text that left the chain its pharmacies and taxed it would be **Social democracy**.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Social democracy**, the look-alike card’s lines follow: Both want the government to do something about how businesses treat the people who work in them, and both can ask for health care, pensions and fair pay. In **Social democracy** the owners keep their businesses, and the government taxes them and pays for services. In **Democratic socialism** the businesses, or the biggest of them, pass out of the owners’ hands to the government. A text that asks for both is **Democratic socialism**. Once the government has acted, who owns the business? Is it still the owners, or has it passed to the government?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “The businesses handed over, by votes” (one tap opens the card).
 
 **Drill item 10 of 76**
@@ -2278,7 +2278,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Marxism-Leninism**: Both want the workers to take over. This text names no party to hold power, and says it will not use a government. A text that said a party would take power and keep it would be **Marxism-Leninism**.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Marxism-Leninism**, the look-alike card’s lines follow: Both can want working people to take control from the owners without waiting for an election. In **Marxism-Leninism** the workers, through a party, take power and keep it, and no rival is allowed. In **Anarchism** the government is got rid of, so that no party and no person holds power over the rest. After the change, does a party or committee hold power and rule alone? Or is there no government, and people run things together?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “No bosses and no government” (one tap opens the card).
 
 **Drill item 11 of 76**
@@ -2298,7 +2298,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Class politics with nothing attached**: The text says nothing about the businesses, but it says the committee will rule alone, and the question about the government names that. A text that said nothing about power as well would be **Class politics with nothing attached**.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Class politics with nothing attached**, the look-alike card’s lines follow: Both can say nothing about what should happen to the businesses, and both stand with the workers. **Class politics with nothing attached** says nothing about the government. **Marxism-Leninism** says that a party, or the workers, will take power and keep it, even when it says nothing about the businesses. Does the text say anything about who will hold power, or how? If it says a party will take power and rule alone, the answer is yes.
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “One party takes power and rules for the workers” (one tap opens the card).
 
 **Drill item 12 of 76**
@@ -2318,7 +2318,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Social democracy**: The text asks for no tax, no minimum wage and no service. It only explains. A text that asked for those, and left the firm with its owners, would be **Social democracy**.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Social democracy**, the look-alike card’s lines follow: Both say that owners gain from what working people do, and both can be written for the workers. In **Social democracy** the text asks for something to be done: a tax, a floor for pay, public services. In **Marxism** the text sets out how owners come by their profit, as the way the whole system works, and asks for nothing about the businesses. Does the text ask the government to do something about pay, taxes or services? Or does it explain how owners come to gain from the work, and stop there?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “An explanation of how owners gain from workers” (one tap opens the card).
 
 **Drill item 13 of 76**
@@ -2338,7 +2338,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Democratic socialism**: The text also gives the brewery to its workers, by a vote, which **Democratic socialism** asks for. But it keeps the brewery selling in the open market and taking its own losses, and when a text shows both, the more exact answer decides.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Democratic socialism**, the look-alike card’s lines follow: Both want the businesses taken from their owners, and both can ask for it through elections. In **Democratic socialism** the businesses pass to the government, or to the people who work in them, and nothing is said about competing. In **Market socialism** each business belongs to the people who work in it and competes with the others for customers. A text that says both is **Market socialism**. After the handover, do the businesses compete with each other for customers, set their own prices and risk failing?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “Firms owned by their workers, competing for customers” (one tap opens the card).
 
 **Drill item 14 of 76**
@@ -2358,7 +2358,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Marxism**: The text is angry about what these owners did. It does not explain how any owner gains. A text that explained how owners gain from the work, as the way the arrangement works, would be **Marxism**.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Marxism**, the look-alike card’s lines follow: Both are on the workers’ side, both can mention that owners take a profit, and neither says what should be done with the businesses. In **Class politics with nothing attached** the text complains about this owner or this profit and says nothing about how owners gain. In **Marxism** the text sets out how owners come by their profit from the work done for them, as the way the whole system works, whoever the owner is. Is the text about this owner’s choices? Or does it explain why any owner would gain from the work, as the way the arrangement works?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “Working people against owners, and nothing more said” (one tap opens the card).
 
 #### Stage 2 of 5. One question at a time.
@@ -2380,7 +2380,7 @@ Shown to you, with the words that decide each answer marked:
 
 - If you are right: “Right: **Their owners keep them, and taxes and public services even out what people get.**” The company is to keep the estate, and a law and a tax are asked for to even out the result: “We do not want the estate taken from the company. We want a law on cleaners' pay, and a tax on the company's rents to pay for night buses for every worker who finishes late”. This answer leads to **Social democracy**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question about the businesses” (one tap opens the card).
 
 **Drill item 16 of 76**
@@ -2401,7 +2401,7 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **The text does not say.**” Where a plan for the ambulance service would be, the text has only an invitation: “We ask the public to stand with us at the county hall on Saturday”. It says nothing about who should own the service, about taxes, or about how the company gains. This answer leads to **Class politics with nothing attached**, **Marxism-Leninism** and **Anarchism**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **Their owners keep them, and taxes and public services even out what people get**: The text asks for no law and no tax. A text that asked for those, and left the company its service, would be **Social democracy**.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question about the businesses” (one tap opens the card).
 
 **Drill item 17 of 76**
@@ -2422,7 +2422,7 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **They should pass to the government, to be run for everyone.**” The water supply is to pass out of the company’s hands to the government: “The water supply should belong to the public, run by the government for everyone”. That is a handover, not a tax on a company that keeps its pipes. This answer leads to **Democratic socialism** and **Marxism-Leninism**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **Their owners keep them, and taxes and public services even out what people get**: The company does not keep the water supply. A text that left the company its pipes and taxed it would be **Social democracy**.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question about the businesses” (one tap opens the card).
 
 **Drill item 18 of 76**
@@ -2442,7 +2442,7 @@ Shown to you, with the words that decide each answer marked:
 
 - If you are right: “Right: **They should pass to the people who work in each one, and compete for customers.**” Each shop is to belong to its staff and to compete and risk closing: “We want each print shop to belong to its staff, to compete for orders and set its own prices, and to close if it loses its customers”. Both halves are in the text. This answer leads to **Market socialism**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question about the businesses” (one tap opens the card).
 
 **Drill item 19 of 76**
@@ -2463,7 +2463,7 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **They should pass to the people who work in each one.**” The depot is to belong to the people who drive and mend the buses: “The depot should belong to the people who drive and mend the buses”. Nothing is said about competing for passengers. This answer leads to **Democratic socialism**, **Marxism-Leninism** and **Anarchism**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **They should pass to the people who work in each one, and compete for customers**: Both give the depot to its workers. This text says nothing about competing, and wants no government. A text that kept the depot competing for passengers would be **Market socialism**.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question about the businesses” (one tap opens the card).
 
 **Drill item 20 of 76**
@@ -2483,7 +2483,7 @@ Shown to you, with the words that decide each answer marked:
 
 - If you are right: “Right: **It explains how their owners gain from what workers make.**” The text explains how the owners gain, as the way the arrangement works for every owner: “Every bank has to keep a gap like it; that is how the arrangement works, for every owner”. It asks for nothing to be done with the bank. This answer leads to **Marxism**, **Marxism-Leninism** and **Anarchism**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question about the businesses” (one tap opens the card).
 
 **Drill item 21 of 76**
@@ -2501,7 +2501,7 @@ Shown to you, with the words that decide each answer marked:
 
 - If you are right: “Right: **Seize power and hold it for the workers, with no rivals allowed.**” The party will take power by force and keep it, with no rival: “The party will take the estates by force and keep the power it wins. It will tolerate no rival party”. This answer leads to **Marxism-Leninism**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question about the government” (one tap opens the card).
 
 **Drill item 22 of 76**
@@ -2520,7 +2520,7 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **Keep it, run by whoever wins elections.**” The union will put its case to the voters and accept the result: “We will fight for it at the county election in May and accept the result”. The change is to come through an election it can lose. This answer leads to **Social democracy**, **Class politics with nothing attached**, **Democratic socialism**, **Market socialism** and **Marxism**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **Seize power and hold it for the workers, with no rivals allowed**: The text hands school catering to the county, as **Marxism-Leninism** might. But it accepts the result of an election. A text that said a party would take power and keep it would be **Marxism-Leninism**.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question about the government” (one tap opens the card).
 
 **Drill item 23 of 76**
@@ -2539,7 +2539,7 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **Get rid of it, and run things together without it.**” The text wants the government gone, with no party in its place: “We want the government gone and no party in its place, and we will run the bakery and the street together, in meetings”. This answer leads to **Anarchism**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **Seize power and hold it for the workers, with no rivals allowed**: Both want the workers to take over. This text wants no party in the government’s place. A text that said a party would take power and keep it would be **Marxism-Leninism**.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question about the government” (one tap opens the card).
 
 **Drill item 24 of 76**
@@ -2557,7 +2557,7 @@ Shown to you, with the words that decide each answer marked:
 
 - If you are right: “Right: **The text does not say.**” The text says nothing about elections, about a party taking power, or about the government itself. Its last words are about the clinic closing: “close if it cannot cover its costs”. This answer leads to **Social democracy**, **Class politics with nothing attached**, **Democratic socialism**, **Market socialism** and **Marxism**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question about the government” (one tap opens the card).
 
 **Drill item 25 of 76**
@@ -2603,7 +2603,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Shown as soon as you answer**
 
-- The answer is: “Once the government has acted, who owns the business? Is it still the owners, or has it passed to the government?” Both want the government to do something about how businesses treat the people who work in them, and both can ask for health care, pensions and fair pay. In **Social democracy** the owners keep their businesses, and the government taxes them and pays for services. In **Democratic socialism** the businesses, or the biggest of them, pass out of the owners’ hands to the government. A text that asks for both is **Democratic socialism**. When a case shows both **“Their owners keep them, and taxes and public services even out what people get”** and the businesses to pass to the government, the key’s answer is **“They should pass to the government, to be run for everyone”**.
+- The answer is: “Once the government has acted, who owns the business? Is it still the owners, or has it passed to the government?” Both want the government to do something about how businesses treat the people who work in them, and both can ask for health care, pensions and fair pay. In **Social democracy** the owners keep their businesses, and the government taxes them and pays for services. In **Democratic socialism** the businesses, or the biggest of them, pass out of the owners’ hands to the government. A text that asks for both is **Democratic socialism**. When a case shows both **“Their owners keep them, and taxes and public services even out what people get”** and the businesses to pass to the government, the answer is **“They should pass to the government, to be run for everyone”**.
 - If you chose “Look for a plan. Does the text say anything about what the government should do about pay, taxes or services, or about who should own the businesses? Or does it only say whose side it is on?”: that question separates **Social democracy** and **Class politics with nothing attached**.
 - If you chose “Who owns each business: the same owners as before, or the people who work in it?”: that question separates **Social democracy** and **Market socialism**.
 - If you chose “Does the text ask the government to do something about pay, taxes or services? Or does it explain how owners come to gain from the work, and stop there?”: that question separates **Social democracy** and **Marxism**.
@@ -2711,7 +2711,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Shown as soon as you answer**
 
-- The answer is: “Once the workers own it, does the business compete with others for customers and risk failing? Or does the text say nothing about that, and want the government gone?” Both want each business to belong to the people who work in it. In **Market socialism** the businesses compete for customers, set their own prices and can fail, and the text says nothing about getting rid of the government. In **Anarchism** the text says nothing about competing, and wants the government got rid of. When a case shows both **“They should pass to the people who work in each one”** and businesses owned by their workers that compete with each other for customers, the key’s answer is **“They should pass to the people who work in each one, and compete for customers”**.
+- The answer is: “Once the workers own it, does the business compete with others for customers and risk failing? Or does the text say nothing about that, and want the government gone?” Both want each business to belong to the people who work in it. In **Market socialism** the businesses compete for customers, set their own prices and can fail, and the text says nothing about getting rid of the government. In **Anarchism** the text says nothing about competing, and wants the government got rid of. When a case shows both **“They should pass to the people who work in each one”** and businesses owned by their workers that compete with each other for customers, the answer is **“They should pass to the people who work in each one, and compete for customers”**.
 - If you chose “Who owns each business: the same owners as before, or the people who work in it?”: that question separates **Social democracy** and **Market socialism**.
 - If you chose “Does the text say who should own each business, and that the businesses should compete?”: that question separates **Class politics with nothing attached** and **Market socialism**.
 - If you chose “After the handover, do the businesses compete with each other for customers, set their own prices and risk failing?”: that question separates **Democratic socialism** and **Market socialism**.
@@ -2769,7 +2769,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Shown as soon as you answer**
 
-- The answer is: “Does the text ask the government to do something about pay, taxes or services? Or does it explain how owners come to gain from the work, and stop there?” Both say that owners gain from what working people do, and both can be written for the workers. In **Social democracy** the text asks for something to be done: a tax, a floor for pay, public services. In **Marxism** the text sets out how owners come by their profit, as the way the whole system works, and asks for nothing about the businesses. When a case shows both **“It explains how their owners gain from what workers make”** and a plan to tax the owners and pay for services, the key’s answer is **“Their owners keep them, and taxes and public services even out what people get”**.
+- The answer is: “Does the text ask the government to do something about pay, taxes or services? Or does it explain how owners come to gain from the work, and stop there?” Both say that owners gain from what working people do, and both can be written for the workers. In **Social democracy** the text asks for something to be done: a tax, a floor for pay, public services. In **Marxism** the text sets out how owners come by their profit, as the way the whole system works, and asks for nothing about the businesses. When a case shows both **“It explains how their owners gain from what workers make”** and a plan to tax the owners and pay for services, the answer is **“Their owners keep them, and taxes and public services even out what people get”**.
 - If you chose “Look for a plan. Does the text say anything about what the government should do about pay, taxes or services, or about who should own the businesses? Or does it only say whose side it is on?”: that question separates **Social democracy** and **Class politics with nothing attached**.
 - If you chose “Once the government has acted, who owns the business? Is it still the owners, or has it passed to the government?”: that question separates **Social democracy** and **Democratic socialism**.
 - If you chose “Who owns each business: the same owners as before, or the people who work in it?”: that question separates **Social democracy** and **Market socialism**.
@@ -2939,7 +2939,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Shown as soon as you answer**
 
-- The answer is: “Does the text say what should happen to the businesses, or does it only explain how owners gain?” Both can describe how owners gain from the workers’ work, and both stand with the workers. In **Marxism** the text explains how owners gain and says nothing about what to do with the businesses. In **Democratic socialism** the text says the businesses should pass out of the owners’ hands. A text that explains and also asks for the handover is **Democratic socialism**. When a case shows both **“It explains how their owners gain from what workers make”** and a plan for the businesses to pass to the government, the key’s answer is **“They should pass to the government, to be run for everyone”**.
+- The answer is: “Does the text say what should happen to the businesses, or does it only explain how owners gain?” Both can describe how owners gain from the workers’ work, and both stand with the workers. In **Marxism** the text explains how owners gain and says nothing about what to do with the businesses. In **Democratic socialism** the text says the businesses should pass out of the owners’ hands. A text that explains and also asks for the handover is **Democratic socialism**. When a case shows both **“It explains how their owners gain from what workers make”** and a plan for the businesses to pass to the government, the answer is **“They should pass to the government, to be run for everyone”**.
 - If you chose “Once the government has acted, who owns the business? Is it still the owners, or has it passed to the government?”: that question separates **Social democracy** and **Democratic socialism**.
 - If you chose “Does the text ask the government to do something about pay, taxes or services? Or does it explain how owners come to gain from the work, and stop there?”: that question separates **Social democracy** and **Marxism**.
 - If you chose “Does the text say who should own the businesses? Or does it only say whose side it is on?”: that question separates **Class politics with nothing attached** and **Democratic socialism**.
@@ -3014,7 +3014,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Shown as soon as you answer**
 
-- The answer is: It says one party will rule and that no rival party will be allowed to stand. That detail is a party taking power and keeping it, with no rival: the answer to the key’s question about the government.
+- The answer is: It says one party will rule and that no rival party will be allowed to stand. That detail is a party taking power and keeping it, with no rival: the answer to the question about the government.
 - If you chose “It says the government will stay, and the voters can remove it if they dislike it.”: that belongs to **Democratic socialism**.
 - If you chose “It says the government is to be got rid of, with people running things in meetings.”: that belongs to **Anarchism**.
 - If you chose “It explains in a sum how any owner keeps a gap, and asks for nothing.”: that belongs to **Marxism**.
@@ -3031,7 +3031,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Shown as soon as you answer**
 
-- The answer is: It says the government is to be done away with, now, and not used first. That detail is the government to be got rid of, now: the answer to the key’s question about the government.
+- The answer is: It says the government is to be done away with, now, and not used first. That detail is the government to be got rid of, now: the answer to the question about the government.
 - If you chose “It says each firm should compete for customers and close if it fails.”: that belongs to **Market socialism**.
 - If you chose “It says the workers’ party must take power and hold it.”: that belongs to **Marxism-Leninism**.
 - If you chose “It says the owners keep the firm and a tax pays for pensions.”: that belongs to **Social democracy**.
@@ -3048,7 +3048,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Shown as soon as you answer**
 
-- The answer is: It says each business should belong to its workers and compete for customers, each setting its own prices. That detail is each business owned by its workers and still competing: the answer to the key’s question about the businesses.
+- The answer is: It says each business should belong to its workers and compete for customers, each setting its own prices. That detail is each business owned by its workers and still competing: the answer to the question about the businesses.
 - If you chose “It says each business should belong to its workers, with no government telling anyone what to do.”: that belongs to **Anarchism**.
 - If you chose “It only explains how owners gain from the work.”: that belongs to **Marxism**.
 - If you chose “It says the biggest businesses should pass to the government, to be run for everyone.”: that belongs to **Democratic socialism**.
@@ -3088,8 +3088,8 @@ Shown to you, with the words that decide each answer marked:
 **Shown as soon as you answer**
 
 - If you are right: “Right: **Rights and fair treatment for everyone.**” The text puts first what every person is owed: “Every patient who comes through the door of this hospital is owed the same attention, whatever they earn, whoever they voted for and wherever their grandparents came from”. It takes the side of no group against another.
-- If you miss: “The answer is …”, the same reason, and then the line built from the key for the answer you chose.
-- Then, right or wrong: “This case leaves the part of the key you have been taught. The questions that follow this answer come in a part of the course you have not reached, so the case stops here.”
+- If you miss: “The answer is …”, the same reason, and then the line built from the answers’ own wording for the answer you chose.
+- Then, right or wrong: “The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.”
 
 **Drill item 47 of 76**
 
@@ -3108,12 +3108,12 @@ Shown to you, with the words that decide each answer marked:
 **Shown as soon as you answer**
 
 - If you are right: “Right: **The nation, or its ordinary people.**” The text speaks for the country’s own people against a few at the top, and puts those people first: “a few insiders in the capital decide how their money is spent” and “This country belongs to its own people, and its own people will run it”.
-- If you miss: “The answer is …”, the same reason, and then the line built from the key for the answer you chose.
-- Then, right or wrong: “This case leaves the part of the key you have been taught. The questions that follow this answer come in a part of the course you have not reached, so the case stops here.”
+- If you miss: “The answer is …”, the same reason, and then the line built from the answers’ own wording for the answer you chose.
+- Then, right or wrong: “The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.”
 
-#### Stage 3 of 5. The first answer is shown. Answer the rest, then give the name. From here on your route is marked as well as the name: a right name reached by a wrong answer on the way counts as a miss.
+#### Stage 3 of 5. The first answer is shown. Answer the rest, then give the name. From here on your answers on the way are marked as well as the name: a right name reached by a wrong answer counts as a miss.
 
-Each question is shown with all of its answers from the key, in the key’s order, and the names offered are the seven this unit teaches.
+Each question is shown with all of its answers, in order, and the names offered are the seven this unit teaches.
 
 **Drill item 48 of 76**
 
@@ -3130,10 +3130,10 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **Social democracy**.” What does the text want done with the government? **The text does not say.** The text asks for a law: “We want a minimum wage written into law”. It says nothing about how power is to be won or held, or about the government itself.
   - Why not **Democratic socialism**: The chain keeps its supermarkets. A text that asked for them to be taken from the chain and run by the government would be **Democratic socialism**.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Democratic socialism**, the look-alike card’s lines follow: Both want the government to do something about how businesses treat the people who work in them, and both can ask for health care, pensions and fair pay. In **Social democracy** the owners keep their businesses, and the government taxes them and pays for services. In **Democratic socialism** the businesses, or the biggest of them, pass out of the owners’ hands to the government. A text that asks for both is **Democratic socialism**. Once the government has acted, who owns the business? Is it still the owners, or has it passed to the government?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Owners keep the businesses, and taxes even things out” (one tap opens the card).
 
 **Drill item 49 of 76**
@@ -3151,10 +3151,10 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **Democratic socialism**.” What does the text want done with the government? **Keep it, run by whoever wins elections.** The change is to come through parliament, and the voters can remove those who make it: “We will win a majority in parliament and pass the law, and the voters can remove us if they dislike it”.
   - Why not **Social democracy**: The company does not keep the lines. A text that left the company its lines and taxed it would be **Social democracy**.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Social democracy**, the look-alike card’s lines follow: Both want the government to do something about how businesses treat the people who work in them, and both can ask for health care, pensions and fair pay. In **Social democracy** the owners keep their businesses, and the government taxes them and pays for services. In **Democratic socialism** the businesses, or the biggest of them, pass out of the owners’ hands to the government. A text that asks for both is **Democratic socialism**. Once the government has acted, who owns the business? Is it still the owners, or has it passed to the government?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “The businesses handed over, by votes” (one tap opens the card).
 
 **Drill item 50 of 76**
@@ -3173,10 +3173,10 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Anarchism**: Both want the workers to take over and neither will wait for a vote. This text has the council keep the power, and **Anarchism** wants no one to hold it.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - If you chose **Get rid of it, and run things together without it**: Both want the workers to take over and neither will wait for a vote. This text has the council keep the power, and **Anarchism** wants no one to hold it.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Anarchism**, the look-alike card’s lines follow: Both can want working people to take control from the owners without waiting for an election. In **Marxism-Leninism** the workers, through a party, take power and keep it, and no rival is allowed. In **Anarchism** the government is got rid of, so that no party and no person holds power over the rest. After the change, does a party or committee hold power and rule alone? Or is there no government, and people run things together?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “One party takes power and rules for the workers” (one tap opens the card).
 
 **Drill item 51 of 76**
@@ -3195,10 +3195,10 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Marxism-Leninism**: The text explains and stops. A text that explained and then said a party would take power and keep it would be **Marxism-Leninism**.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - If you chose **Seize power and hold it for the workers, with no rivals allowed**: The text explains and stops. A text that explained and then said a party would take power and keep it would be **Marxism-Leninism**.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Marxism-Leninism**, the look-alike card’s lines follow: Both can set out how owners come by their profit. In **Marxism** the text explains and says nothing about who takes power. In **Marxism-Leninism** the text says that a party, or the workers, will take power and keep it, with no rivals allowed. Does the text say that a party, or the workers, will take power and keep it? Or does it only explain how owners gain?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “An explanation of how owners gain from workers” (one tap opens the card).
 
 **Drill item 52 of 76**
@@ -3216,10 +3216,10 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **Anarchism**.” What does the text want done with the government? **Get rid of it, and run things together without it.** The text wants no government and no party: “We want no government and no party: we will run the yard and the harbour together, in open meetings”.
   - Why not **Market socialism**: Both give the yard to its crew. This text says nothing about competing, and wants no government. A text that kept the yard competing for customers would be **Market socialism**.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Market socialism**, the look-alike card’s lines follow: Both want each business to belong to the people who work in it. In **Market socialism** the businesses compete for customers, set their own prices and can fail, and the text says nothing about getting rid of the government. In **Anarchism** the text says nothing about competing, and wants the government got rid of. Once the workers own it, does the business compete with others for customers and risk failing? Or does the text say nothing about that, and want the government gone?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “No bosses and no government” (one tap opens the card).
 
 **Drill item 53 of 76**
@@ -3238,15 +3238,15 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Anarchism**: Both give the shop to its staff. This text keeps it competing, and leaves the government in place to pass the law. **Anarchism** would want the government gone.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - If you chose **Get rid of it, and run things together without it**: Both give the shop to its staff. This text keeps it competing, and leaves the government in place to pass the law. **Anarchism** would want the government gone.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Anarchism**, the look-alike card’s lines follow: Both want each business to belong to the people who work in it. In **Market socialism** the businesses compete for customers, set their own prices and can fail, and the text says nothing about getting rid of the government. In **Anarchism** the text says nothing about competing, and wants the government got rid of. Once the workers own it, does the business compete with others for customers and risk failing? Or does the text say nothing about that, and want the government gone?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Firms owned by their workers, competing for customers” (one tap opens the card).
 
-#### Stage 4 of 5. No help. Answer every question in the key’s order, then give the name.
+#### Stage 4 of 5. No help. Answer every question in order, then give the name.
 
-Each question is shown with all of its answers from the key, in the key’s order, and the names offered are the seven this unit teaches.
+Each question is shown with all of its answers, in order, and the names offered are the seven this unit teaches.
 
 **Drill item 54 of 76**
 
@@ -3261,10 +3261,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who or what does the text put first? **Working people, against those who own the businesses.** The text sets the cooks against the company that owns the kitchens, and stands with the cooks: “The company that owns the college kitchens pays its cooks the least the law allows, and keeps the rest, and we stand with the cooks”.
   - What does the text say about the farms, factories, shops and banks? **Their owners keep them, and taxes and public services even out what people get.** The company keeps the kitchens, and a legal minimum and a tax are asked for: “We are not asking to own the kitchens. We are asking for a higher legal minimum, and a tax on the company's profits to pay for meals for students who cannot afford them”.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Class politics with nothing attached**, the look-alike card’s lines follow: Both put working people against owners, and both can be angry about the same profit and the same pay. In **Social democracy** the text says what should be done about the businesses: the owners keep them, and a tax, a floor for pay or public services even out the result. In **Class politics with nothing attached** the text takes the workers’ side and says nothing about the businesses. Look for a plan. Does the text say anything about what the government should do about pay, taxes or services, or about who should own the businesses? Or does it only say whose side it is on?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Owners keep the businesses, and taxes even things out” (one tap opens the card).
 
 **Drill item 55 of 76**
@@ -3280,10 +3280,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who or what does the text put first? **Working people, against those who own the businesses.** The text sets the people who clean against the people who own, and takes the cleaners’ side: “The people who clean and the people who own are not on the same side, and we are on ours”.
   - What does the text say about the farms, factories, shops and banks? **The text does not say.** Where a plan for the flats would be, the text has an invitation: “Join us outside the sales office on Friday”. It says nothing about who should own the flats, about taxes, or about how the owners gain.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Marxism**, the look-alike card’s lines follow: Both are on the workers’ side, both can mention that owners take a profit, and neither says what should be done with the businesses. In **Class politics with nothing attached** the text complains about this owner or this profit and says nothing about how owners gain. In **Marxism** the text sets out how owners come by their profit from the work done for them, as the way the whole system works, whoever the owner is. Is the text about this owner’s choices? Or does it explain why any owner would gain from the work, as the way the arrangement works?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Working people against owners, and nothing more said” (one tap opens the card).
 
 **Drill item 56 of 76**
@@ -3299,10 +3299,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who or what does the text put first? **Working people, against those who own the businesses.** The text sets the fitters against the owners who take the gap, and is written for the fitters: “The £60 goes to the owners” and “The circle meets for the fitters”.
   - What does the text say about the farms, factories, shops and banks? **It explains how their owners gain from what workers make.** The text explains how owners gain, as the way the arrangement works for any owner: “Any owner has to keep a gap like it, and that is how the arrangement works”. The £60 it says goes to the owners is the *surplus value* of the fitter’s day. The text asks for nothing to be done with the railway.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Class politics with nothing attached**, the look-alike card’s lines follow: Both are on the workers’ side, both can mention that owners take a profit, and neither says what should be done with the businesses. In **Class politics with nothing attached** the text complains about this owner or this profit and says nothing about how owners gain. In **Marxism** the text sets out how owners come by their profit from the work done for them, as the way the whole system works, whoever the owner is. Is the text about this owner’s choices? Or does it explain why any owner would gain from the work, as the way the arrangement works?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “An explanation of how owners gain from workers” (one tap opens the card).
 
 **Drill item 57 of 76**
@@ -3318,10 +3318,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who or what does the text put first? **Working people, against those who own the businesses.** The text sets the porters against the company that owns the services, and stands with the porters: “The company that owns the hospital's laundry and supplies runs them for its owners, and the porters carry the load, and we stand with the porters”.
   - What does the text say about the farms, factories, shops and banks? **They should pass to the government, to be run for everyone.** The services are to pass out of the company’s hands to the health service: “These services should pass to the health service and be run for the patients”.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Social democracy**, the look-alike card’s lines follow: Both want the government to do something about how businesses treat the people who work in them, and both can ask for health care, pensions and fair pay. In **Social democracy** the owners keep their businesses, and the government taxes them and pays for services. In **Democratic socialism** the businesses, or the biggest of them, pass out of the owners’ hands to the government. A text that asks for both is **Democratic socialism**. Once the government has acted, who owns the business? Is it still the owners, or has it passed to the government?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “The businesses handed over, by votes” (one tap opens the card).
 
 **Drill item 58 of 76**
@@ -3338,10 +3338,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
   - Who or what does the text put first? **Working people, against those who own the businesses.** The text sets the shipowners against the dockers, and stands with the dockers: “The shipowners and the dockers cannot share a port, and the committee stands with the dockers”.
   - What does the text say about the farms, factories, shops and banks? **They should pass to the people who work in each one.** The port is to belong to those who work it: “The port will belong to those who work it”.
   - If you chose **Get rid of it, and run things together without it**: Both want the dockers to take over without waiting for a vote. This text has a committee hold the port and ban other parties, and **Anarchism** wants no one to hold power.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Anarchism**, the look-alike card’s lines follow: Both can want working people to take control from the owners without waiting for an election. In **Marxism-Leninism** the workers, through a party, take power and keep it, and no rival is allowed. In **Anarchism** the government is got rid of, so that no party and no person holds power over the rest. After the change, does a party or committee hold power and rule alone? Or is there no government, and people run things together?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “One party takes power and rules for the workers” (one tap opens the card).
 
 **Drill item 59 of 76**
@@ -3357,10 +3357,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who or what does the text put first? **Working people, against those who own the businesses.** The text sets the helpers against the company that owns the contracts, and stands with the helpers: “The company that owns the school canteen and cleaning contracts pays us little, and the government guards its contracts, and we stand with the helpers”.
   - What does the text say about the farms, factories, shops and banks? **They should pass to the people who work in each one.** The services are to belong to the people who do them: “The services should belong to the people who do them”. Nothing is said about competing.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Democratic socialism**, the look-alike card’s lines follow: Both can want each business to belong to the people who work in it. In **Democratic socialism** the government stays, and elections decide who runs it, or the text says nothing about how the change is made. In **Anarchism** the government is to be got rid of now, with people running their work and their towns together without it. Should the government stay, or be done away with now, according to the text?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “No bosses and no government” (one tap opens the card).
 
 **Drill item 60 of 76**
@@ -3377,10 +3377,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
   - Who or what does the text put first? **Working people, against those who own the businesses.** The text sets the app’s owners against the riders, and stands with the riders: “The courier app's owners take a fee from every delivery, and the riders take the rain, and we are with the riders”.
   - What does the text say about the farms, factories, shops and banks? **They should pass to the people who work in each one, and compete for customers.** Each service is to belong to its riders, and to compete and risk folding: “Each courier service should belong to its riders, and the services should compete for orders, set their own rates and fold if they cannot cover their costs”.
   - If you chose **Get rid of it, and run things together without it**: Both give the business to the people who work in it. This text keeps the services competing, and says nothing about getting rid of the government.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Anarchism**, the look-alike card’s lines follow: Both want each business to belong to the people who work in it. In **Market socialism** the businesses compete for customers, set their own prices and can fail, and the text says nothing about getting rid of the government. In **Anarchism** the text says nothing about competing, and wants the government got rid of. Once the workers own it, does the business compete with others for customers and risk failing? Or does the text say nothing about that, and want the government gone?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Firms owned by their workers, competing for customers” (one tap opens the card).
 
 **Drill item 61 of 76**
@@ -3396,11 +3396,11 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who or what does the text put first? **Working people, against those who own the businesses.** The text sets the operators against the company that owns the docks, and speaks for the workers: “The dock company's owners have been bleeding us for years, and the day is coming when the workers win”.
   - What does the text say about the farms, factories, shops and banks? **Their owners keep them, and taxes and public services even out what people get.** The company keeps its docks, and a law and a tax are asked for: “The company can keep its docks, but it will pay: a floor under crane operators' pay written into law, and a tax on its profits to pay for pensions for every dock worker”. The fierce words about the day the workers win do not change who owns the docks.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Democratic socialism**, the look-alike card’s lines follow: Both want the government to do something about how businesses treat the people who work in them, and both can ask for health care, pensions and fair pay. In **Social democracy** the owners keep their businesses, and the government taxes them and pays for services. In **Democratic socialism** the businesses, or the biggest of them, pass out of the owners’ hands to the government. A text that asks for both is **Democratic socialism**. Once the government has acted, who owns the business? Is it still the owners, or has it passed to the government?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *The mill pamphlet*, which was **Marxism-Leninism**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *The mill pamphlet*, which was **Marxism-Leninism**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If the speech had said that the docks should pass to the government, it would be **Democratic socialism**. If it had said that the workers would take the docks and hold them with no election, it would be **Marxism-Leninism**.
 - Taught on: “Owners keep the businesses, and taxes even things out” (one tap opens the card).
 
@@ -3417,11 +3417,11 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who or what does the text put first? **Working people, against those who own the businesses.** The text sets the clerks against the company that owns the post offices, and stands with the clerks: “The company that owns the post offices keeps the profit from the stamps, and the clerks keep the queues, and we stand with the clerks”.
   - What does the text say about the farms, factories, shops and banks? **They should pass to the government, to be run for everyone.** The post offices are to be taken from the company and run by the government: “the post offices should be taken from the company and run by the government for everyone”. The text also asks for a tax and a pension, and when a text shows both, the handover decides.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Social democracy**, the look-alike card’s lines follow: Both want the government to do something about how businesses treat the people who work in them, and both can ask for health care, pensions and fair pay. In **Social democracy** the owners keep their businesses, and the government taxes them and pays for services. In **Democratic socialism** the businesses, or the biggest of them, pass out of the owners’ hands to the government. A text that asks for both is **Democratic socialism**. Once the government has acted, who owns the business? Is it still the owners, or has it passed to the government?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *The warehouse leaflet*, which was **Social democracy**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *The warehouse leaflet*, which was **Social democracy**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If the pamphlet had stopped after the tax and the pension, and left the company its post offices, it would be **Social democracy**.
 - Taught on: “The businesses handed over, by votes” (one tap opens the card).
 
@@ -3433,17 +3433,17 @@ Each question is shown with all of its answers from the key, in the key’s orde
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Class politics with nothing attached**.” What does the text want done with the government? **The text does not say.** The text says nothing about who will take power, or how. The words it ends on are about the gate: “at the gate tomorrow”.
+- If you are right: “Right: **Class politics with nothing attached**.” What does the text want done with the government? **The text does not say.** The text says nothing about who will take power, or how. The words it ends on are about where to meet: “at the gate tomorrow”.
   - Why not **Marxism-Leninism**: The speech is fierce, and promises a day of reckoning. But nothing in it says a party or the workers will take power and keep it, and the question about the government goes by what is said.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who or what does the text put first? **Working people, against those who own the businesses.** The text sets the workers against the owners, and speaks for the workers: “We are the workers and they are the owners, and there is no peace between us”.
   - What does the text say about the farms, factories, shops and banks? **The text does not say.** Where a plan for the mill would be, the text ends with an invitation: “Stand with us at the gate tomorrow”. The reckoning it promises is not a plan for who should own the mill.
   - If you chose **Seize power and hold it for the workers, with no rivals allowed**: The speech is fierce, and promises a day of reckoning. But nothing in it says a party or the workers will take power and keep it, and the question about the government goes by what is said.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Marxism-Leninism**, the look-alike card’s lines follow: Both can say nothing about what should happen to the businesses, and both stand with the workers. **Class politics with nothing attached** says nothing about the government. **Marxism-Leninism** says that a party, or the workers, will take power and keep it, even when it says nothing about the businesses. Does the text say anything about who will hold power, or how? If it says a party will take power and rule alone, the answer is yes.
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *The dockers’ committee*, which was **Marxism-Leninism**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *The dockers’ committee*, which was **Marxism-Leninism**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If the speech had said that the workers would take power and rule alone, with no rival allowed, it would be **Marxism-Leninism**. If it had asked for the mill to pass to the government, it would be **Democratic socialism**.
 - Taught on: “Working people against owners, and nothing more said” (one tap opens the card).
 
@@ -3460,11 +3460,11 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who or what does the text put first? **Working people, against those who own the businesses.** The text sets the owners against the workers, and stands with the workers: “the owners and the workers of the Linden Works have different interests, and we stand with the workers”.
   - What does the text say about the farms, factories, shops and banks? **They should pass to the people who work in each one.** The works are to belong to the workers who run them: “The works will belong to the workers who run them”.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Democratic socialism**, the look-alike card’s lines follow: Both can want the businesses, or the biggest of them, to pass to the government, and both can speak for the workers. In **Democratic socialism** the change comes through elections that the people asking for it can lose, or the text says nothing about how. In **Marxism-Leninism** the party or the workers take power by force or rule as the only party, with no offer to give it up at an election. Does the text say that a party, or the workers, will take power by force or rule as the only party? If it says nothing about power, the answer is no.
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *The ferry crews*, which was **Democratic socialism**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *The ferry crews*, which was **Democratic socialism**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If the memo had said that the committee would stand at the next election and accept the result, it would be **Democratic socialism**.
 - Taught on: “One party takes power and rules for the workers” (one tap opens the card).
 
@@ -3481,11 +3481,11 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who or what does the text put first? **Working people, against those who own the businesses.** The text sets the printers against the firm’s old owner, and stands with the printers: “The print firm's old owner took the profit, and the government sent the bailiffs when we asked for our pay, and we are with the printers”.
   - What does the text say about the farms, factories, shops and banks? **They should pass to the people who work in each one.** The firm is to belong to the people who print in it: “The firm should belong to the people who print in it”. Selling its work is not the same as competing for customers, setting prices and risking failure, and the text says none of those.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Market socialism**, the look-alike card’s lines follow: Both want each business to belong to the people who work in it. In **Market socialism** the businesses compete for customers, set their own prices and can fail, and the text says nothing about getting rid of the government. In **Anarchism** the text says nothing about competing, and wants the government got rid of. Once the workers own it, does the business compete with others for customers and risk failing? Or does the text say nothing about that, and want the government gone?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *The furniture makers*, which was **Market socialism**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *The furniture makers*, which was **Market socialism**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If the flyer had said nothing about getting rid of the government, and had said the firm should compete with other firms, set its own prices and close if it failed, it would be **Market socialism**.
 - Taught on: “No bosses and no government” (one tap opens the card).
 
@@ -3502,11 +3502,11 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who or what does the text put first? **Working people, against those who own the businesses.** The text sets the spinners against the owners who keep the gap, and is written for the spinners: “the £34 goes to the owners” and “We write for the spinners”.
   - What does the text say about the farms, factories, shops and banks? **It explains how their owners gain from what workers make.** The text explains how owners gain, as the way the arrangement works: “Every owner has to keep a gap like it, because that is how the arrangement works, and no law on pay changes that”. The minimum wage and the tax are mentioned only as what other people say, and the text does not ask for them.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Social democracy**, the look-alike card’s lines follow: Both say that owners gain from what working people do, and both can be written for the workers. In **Social democracy** the text asks for something to be done: a tax, a floor for pay, public services. In **Marxism** the text sets out how owners come by their profit, as the way the whole system works, and asks for nothing about the businesses. Does the text ask the government to do something about pay, taxes or services? Or does it explain how owners come to gain from the work, and stop there?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *The warehouse leaflet*, which was **Social democracy**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *The warehouse leaflet*, which was **Social democracy**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If the pamphlet had gone on to ask for a law on pay and a tax on the owners’ profits, it would be **Social democracy**.
 - Taught on: “An explanation of how owners gain from workers” (one tap opens the card).
 
@@ -3523,11 +3523,11 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who or what does the text put first? **Working people, against those who own the businesses.** The text sets the shareholders against the drivers and fitters, and stands with the workers: “The company that owned the buses ran them for its shareholders, and the drivers and fitters stand together against it”.
   - What does the text say about the farms, factories, shops and banks? **They should pass to the people who work in each one, and compete for customers.** The buses are to belong to the people who work on them, and the co-operative will still compete and risk folding: “The buses should belong to everyone who works on them” and “It will still compete with the other bus firms for routes, set its own fares and fold if it cannot cover its costs”. Both halves are in the text, and the competing is what makes it the more exact answer.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Democratic socialism**, the look-alike card’s lines follow: Both want the businesses taken from their owners, and both can ask for it through elections. In **Democratic socialism** the businesses pass to the government, or to the people who work in them, and nothing is said about competing. In **Market socialism** each business belongs to the people who work in it and competes with the others for customers. A text that says both is **Market socialism**. After the handover, do the businesses compete with each other for customers, set their own prices and risk failing?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *The signal workers*, which was **Democratic socialism**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *The signal workers*, which was **Democratic socialism**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If the charter had said nothing about competing, setting fares or folding, and nothing about power, the name would be **Democratic socialism**.
 - Taught on: “Firms owned by their workers, competing for customers” (one tap opens the card).
 
@@ -3548,8 +3548,8 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - If you are right: “Right: **Old ways of faith, family and custom.**” The text holds up what was handed down as what should guide: “We were given those bells and that church, and we mean to keep them” and “They are what a town should be run by”.
-- If you miss: “The answer is …”, the same reason, and then the line built from the key for the answer you chose.
-- Then, right or wrong: “This case leaves the part of the key you have been taught. The questions that follow this answer come in a part of the course you have not reached, so the case stops here.”
+- If you miss: “The answer is …”, the same reason, and then the line built from the answers’ own wording for the answer you chose.
+- Then, right or wrong: “The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.”
 
 **Drill item 69 of 76**
 
@@ -3568,8 +3568,8 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - If you are right: “Right: **Rights and fair treatment for everyone.**” The text puts first what every person is owed: “Every patient who comes through the door of this hospital is owed the same attention, whatever they earn, whoever they voted for and wherever their grandparents came from”. It takes the side of no group against another.
-- If you miss: “The answer is …”, the same reason, and then the line built from the key for the answer you chose.
-- Then, right or wrong: “This case leaves the part of the key you have been taught. The questions that follow this answer come in a part of the course you have not reached, so the case stops here.”
+- If you miss: “The answer is …”, the same reason, and then the line built from the answers’ own wording for the answer you chose.
+- Then, right or wrong: “The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.”
 
 #### Last stage. Each of these is something a person might say that uses one of this unit’s names, or reasons in one of its ways. Each has a fault. The first is worked for you. For the rest, answer before the fault is shown.
 
@@ -3590,7 +3590,7 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - Owners and workers, and the text explaining, as the way the system itself works, that owners gain from what workers make and are not paid for, or that the fight between owners and workers is what moves history; and no plan for who should own the businesses and no party seizing power
 
 **The answer:** Working people set against owners, the businesses (or the biggest of them) to pass to the public or to the people who work in them, and no party seizing power and no getting rid of the government: the change comes through elections, or the text does not say how.
-- The fault: The claim finds a complaint about the owners and jumps to a handover. Taking the workers’ side and complaining about the owners is what the key’s first question, about whose side the text is on, reads. It is not a call for the businesses to pass out of the owners’ hands, which is what **Democratic socialism** needs. Nothing in the claim shows the association asking for that.
+- The fault: The claim finds a complaint about the owners and jumps to a handover. Taking the workers’ side and complaining about the owners is what the first question, about whose side the text is on, reads. It is not a call for the businesses to pass out of the owners’ hands, which is what **Democratic socialism** needs. Nothing in the claim shows the association asking for that.
 - The claim, put right (always the last thing shown): The staff association says the owners are making a fortune out of its members. That shows the workers’ side. It would be **Democratic socialism** only if the association also said the company should pass to the government, or to the people who work in it.
 
 **Drill item 70 of 76**
@@ -3609,9 +3609,9 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - The answer is: **Their owners keep them, and taxes and public services even out what people get.**
-- If you chose another answer, the line is built from the key, as for any other question.
-- The fault: The claim looks at the size of the tax. A tax, however heavy, leaves the businesses with their owners, and a tax with a service paid from it is what the key’s answer **“Their owners keep them, and taxes and public services even out what people get”** is for. That answer leads to **Social democracy**. **Marxism** is for a text that explains how owners gain, and nothing in the claim does that.
-- The claim, put right (always the last thing shown): The government has put a heavy tax on the biggest companies and pays for free dental care with it. The companies keep their businesses, so the key’s answer is **“Their owners keep them, and taxes and public services even out what people get”**, and the name is **Social democracy**.
+- If you chose another answer, the line is built from the answers’ own wording, as for any other question.
+- The fault: The claim looks at the size of the tax. A tax, however heavy, leaves the businesses with their owners, and a tax with a service paid from it is what the answer **“Their owners keep them, and taxes and public services even out what people get”** is for. That answer leads to **Social democracy**. **Marxism** is for a text that explains how owners gain, and nothing in the claim does that.
+- The claim, put right (always the last thing shown): The government has put a heavy tax on the biggest companies and pays for free dental care with it. The companies keep their businesses, so the answer is **“Their owners keep them, and taxes and public services even out what people get”**, and the name is **Social democracy**.
 
 **Drill item 71 of 76**
 
@@ -3629,9 +3629,9 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - The answer is: **The text does not say.**
-- If you chose another answer, the line is built from the key, as for any other question.
-- The fault: The claim fills a silence with a guess. A text that says nothing about the businesses gets the key’s answer **“The text does not say”**. That answer does not say the owners should be left alone. The writers may want the factories taken over, or taxed, or nothing at all, and the leaflet does not tell you. The key never fills a silence.
-- The claim, put right (always the last thing shown): The leaflet never says who should own the factories. So the key’s answer to what it says about the businesses is **“The text does not say”**, and you cannot say what the writers want done with them.
+- If you chose another answer, the line is built from the answers’ own wording, as for any other question.
+- The fault: The claim fills a silence with a guess. A text that says nothing about the businesses gets the answer **“The text does not say”**. That answer does not say the owners should be left alone. The writers may want the factories taken over, or taxed, or nothing at all, and the leaflet does not tell you. A silence is never filled with a guess.
+- The claim, put right (always the last thing shown): The leaflet never says who should own the factories. So the answer to what it says about the businesses is **“The text does not say”**, and you cannot say what the writers want done with them.
 
 **Drill item 72 of 76**
 
@@ -3649,8 +3649,8 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - The answer is: **They should pass to the people who work in each one, and compete for customers.**
-- If you chose another answer, the line is built from the key, as for any other question.
-- The fault: The claim treats ownership by workers as if it meant having no market. A text can give each firm to its workers and keep the market: the firms compete for customers, set their own prices and can fail. That is the key’s answer **“They should pass to the people who work in each one, and compete for customers”**, and it leads to **Market socialism**. Whether the firms compete is something the text says. The owners being workers does not settle it.
+- If you chose another answer, the line is built from the answers’ own wording, as for any other question.
+- The fault: The claim treats ownership by workers as if it meant having no market. A text can give each firm to its workers and keep the market: the firms compete for customers, set their own prices and can fail. That is the answer **“They should pass to the people who work in each one, and compete for customers”**, and it leads to **Market socialism**. Whether the firms compete is something the text says. The owners being workers does not settle it.
 - The claim, put right (always the last thing shown): A text can say that each firm should belong to its workers and also that the firms should compete for customers and be able to fail. That is **“They should pass to the people who work in each one, and compete for customers”**, and the name is **Market socialism**.
 
 **Drill item 73 of 76**
@@ -3714,7 +3714,7 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - The answer is: **Working people set against owners, and a party, or the workers themselves, taking power by force or ruling as the only party, with no offer to give it up at an election.**
 - If you chose another line: “That is what you must be able to point to for «the name it belongs to», which is not the name the claim uses.”
 - The fault: The claim jumps from a handover to a seizure. Public ownership of the mines is what **Democratic socialism** asks for as well, and it says nothing about how power is won or held. What **Marxism-Leninism** needs is that a party, or the workers, take power by force or rule alone, with no offer to give it up at an election. The claim shows none of that.
-- The claim, put right (always the last thing shown): The party wants the mines in public hands. That is a handover. It would be **Marxism-Leninism** only if the party also said it would take power and keep it, with no election it could lose. With no word about power, the key files it under **Democratic socialism**.
+- The claim, put right (always the last thing shown): The party wants the mines in public hands. That is a handover. It would be **Marxism-Leninism** only if the party also said it would take power and keep it, with no election it could lose. With no word about power, it is filed under **Democratic socialism**.
 
 **Drill item 76 of 76**
 
@@ -3730,21 +3730,21 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - The answer is: **The text does not say.**
-- If you chose another answer, the line is built from the key, as for any other question.
-- The fault: The claim treats a silence about how as a reason to hold back a name. The key has an answer for it: **“The text does not say”**. A text that asks for the handover and says nothing about taking power by force, or ruling alone, or getting rid of the government is **Democratic socialism**, whether or not it mentions elections. That is the key’s decision. The field itself does not draw the line in one place, and the key does, so that two people using it reach the same name.
-- The claim, put right (always the last thing shown): The text wants the railway in public hands and says nothing about how. The key’s answer to what it wants done with the government is **“The text does not say”**, and with the handover, the name is **Democratic socialism**.
+- If you chose another answer, the line is built from the answers’ own wording, as for any other question.
+- The fault: The claim treats a silence about how as a reason to hold back a name. There is an answer for it: **“The text does not say”**. A text that asks for the handover and says nothing about taking power by force, or ruling alone, or getting rid of the government is **Democratic socialism**, whether or not it mentions elections. That is a decision. The field itself does not draw the line in one place, and here it is drawn, so that two people using the same questions reach the same name.
+- The claim, put right (always the last thing shown): The text wants the railway in public hands and says nothing about how. The answer to what it wants done with the government is **“The text does not say”**, and with the handover, the name is **Democratic socialism**.
 
-**When the drill ends.** The learner sees their own results: first-try accuracy for each stage, whole routes beside single questions, the pair of names they mixed up most often, and what will come back and when. Anything missed was asked again before the drill ended. Nothing here is graded. A miss only decides what comes back.
+**When the drill ends.** The learner sees their own results: first-try accuracy for each stage, whole cases beside single questions, the pair of names they mixed up most often, and what will come back and when. Anything missed was asked again before the drill ended. Nothing here is graded. A miss only decides what comes back.
 
 ### 54. What to carry away
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 54 of 55*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 54 of 55*
 
 [reviewers only: card kind `recap`, id `recap`]
 
-You have now run the key on your own. This card puts the unit in one place, in the key’s words.
+You have now run the questions on your own. This card puts the unit in one place.
 
-**The key for this unit, in its own words**
+**This unit’s questions and answers**
 
 What does the text say about the farms, factories, shops and banks?
 - Their owners keep them, and taxes and public services even out what people get → Social democracy
@@ -3765,7 +3765,7 @@ What does the text want done with the government?
 - **Social democracy**: working people set against owners, the owners keeping their businesses, and the government taxing them, setting a floor for pay, or paying for services such as health care, schooling and pensions, so that working people get more.
   - Ask: "Do the owners keep the business, and what is the government asked to do about how the money is shared?" If both halves have words in the text, this is the name to look at.
 - **Class politics with nothing attached**: working people set against owners, and nothing said about the businesses (no plan for who should own them, no taxes or services to even things out, no explanation of how owners gain), and no party seizing power and no getting rid of the government.
-  - Ask: "Does the text go past taking a side to say what should be done about the businesses?" If you cannot find words that do, the key’s answer is **“The text does not say”**.
+  - Ask: "Does the text go past taking a side to say what should be done about the businesses?" If you cannot find words that do, the answer is **“The text does not say”**.
 - **Democratic socialism**: working people set against owners, the businesses (or the biggest of them) to pass to the public or to the people who work in them, and no party seizing power and no getting rid of the government: the change comes through elections, or the text does not say how.
   - Ask: "Which businesses does the text say should pass to the government, and does it say how?" If the text names a business that is to change hands, look at how the change is to be made.
 - **Marxism-Leninism**: working people set against owners, and a party, or the workers themselves, taking power by force or ruling as the only party, with no offer to give it up at an election.
@@ -3780,15 +3780,15 @@ What does the text want done with the government?
 **To carry away**
 
 - Ask the two questions in order, and point to the words for each. If a question has no words to point to, the answer is that the text says nothing, and that is a real answer.
-- Taking the workers’ side is only the start. A text on the workers’ side can have any of seven names, and the key’s two questions between them decide which.
+- Taking the workers’ side is only the start. A text on the workers’ side can have any of seven names, and the two questions between them decide which.
 - A tax or a floor for pay leaves the owners in place. A handover does not. When a text shows both, the handover decides. When a text explains and also asks for something, what it asks for decides.
 - The question about the government can name a text that looks empty. A text silent on the businesses can still be **Marxism-Leninism** or **Anarchism**, and a text that only explains can be **Marxism**, **Marxism-Leninism** or **Anarchism** by what it says about power. A text silent on both is **Class politics with nothing attached**.
-- The key never fills a silence. A text that does not say is not a secret plan.
+- A silence is never filled with a guess. A text that does not say is not a secret plan.
 - A name thrown across a room is not a description. What a text says, and where, is the description.
 
 ### 55. Where would you meet this?
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 55 of 55*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 55 of 55*
 
 [reviewers only: card kind `transfer`, id `transfer`]
 
@@ -3818,7 +3818,7 @@ One line is enough. It is kept on this device only and is never marked.
 
 ## After the unit: what comes back on later days
 
-A name that is due returns as a case the learner has not seen, next to a case of the name they most often confuse it with. Each is run as a whole route. These are the fresh cases held back for that purpose: three for each name, one for each scheduled return. The first return is about two days after the drill, the next about a week after that, the next about three and a half weeks later.
+A name that is due returns as a case the learner has not seen, next to a case of the name they most often confuse it with. Each is run as a whole case: every question, then the name. These are the fresh cases held back for that purpose: three for each name, one for each scheduled return. The first return is about two days after the drill, the next about a week after that, the next about three and a half weeks later.
 
 **Return case 1 of 23**
 
@@ -3833,10 +3833,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who or what does the text put first? **Working people, against those who own the businesses.** The text sets the drivers against the company that owns the licences, and stands with the drivers: “The company that owns the taxi licences charges us a fortune to drive and keeps most of the fares, and we are with the drivers”.
   - What does the text say about the farms, factories, shops and banks? **Their owners keep them, and taxes and public services even out what people get.** The company keeps its licences, and a law and a tax are asked for: “The company can keep its licences. We ask for a law that caps what it can charge a driver, and a tax on its profits to pay for sick pay for every driver”.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Democratic socialism**, the look-alike card’s lines follow: Both want the government to do something about how businesses treat the people who work in them, and both can ask for health care, pensions and fair pay. In **Social democracy** the owners keep their businesses, and the government taxes them and pays for services. In **Democratic socialism** the businesses, or the biggest of them, pass out of the owners’ hands to the government. A text that asks for both is **Democratic socialism**. Once the government has acted, who owns the business? Is it still the owners, or has it passed to the government?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Owners keep the businesses, and taxes even things out” (one tap opens the card).
 
 **Return case 2 of 23**
@@ -3852,10 +3852,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who or what does the text put first? **Working people, against those who own the businesses.** The text sets the nurses against the agency that keeps half of each shift, and stands with the nurses: “The agency that supplies us to the hospitals takes half of what the hospitals pay for each shift, and we stand with the nurses”.
   - What does the text say about the farms, factories, shops and banks? **Their owners keep them, and taxes and public services even out what people get.** The agency is not to be taken over, and a law and a tax are asked for: “We do not ask for the agency to be taken over. We ask for a law on what an agency may keep from each shift, and a tax on its profits to pay nurses' pensions”.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Class politics with nothing attached**, the look-alike card’s lines follow: Both put working people against owners, and both can be angry about the same profit and the same pay. In **Social democracy** the text says what should be done about the businesses: the owners keep them, and a tax, a floor for pay or public services even out the result. In **Class politics with nothing attached** the text takes the workers’ side and says nothing about the businesses. Look for a plan. Does the text say anything about what the government should do about pay, taxes or services, or about who should own the businesses? Or does it only say whose side it is on?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Owners keep the businesses, and taxes even things out” (one tap opens the card).
 
 **Return case 3 of 23**
@@ -3871,10 +3871,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who or what does the text put first? **Working people, against those who own the businesses.** The text sets the labourers against the firm that owns the sites, and stands with the labourers: “The firm that owns the building sites hires us by the day and keeps the rest of what the houses sell for, and we are with the labourers”.
   - What does the text say about the farms, factories, shops and banks? **Their owners keep them, and taxes and public services even out what people get.** The firm keeps its sites, and a law and a tax are asked for: “It can keep its sites. We want a law that guarantees a labourer a week's pay, and a tax on its profits to pay for training places”.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Democratic socialism**, the look-alike card’s lines follow: Both want the government to do something about how businesses treat the people who work in them, and both can ask for health care, pensions and fair pay. In **Social democracy** the owners keep their businesses, and the government taxes them and pays for services. In **Democratic socialism** the businesses, or the biggest of them, pass out of the owners’ hands to the government. A text that asks for both is **Democratic socialism**. Once the government has acted, who owns the business? Is it still the owners, or has it passed to the government?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Owners keep the businesses, and taxes even things out” (one tap opens the card).
 
 **Return case 4 of 23**
@@ -3890,10 +3890,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who or what does the text put first? **Working people, against those who own the businesses.** The text sets the drivers against the owners and takes the drivers’ side: “We are the drivers and they are the owners, and we know whose side we are on”.
   - What does the text say about the farms, factories, shops and banks? **The text does not say.** Where a plan for the contract would be, the text has an invitation: “Please come to the school gates at eight on Monday”. It says nothing about who should own the contract, about taxes, or about how the owners gain.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Social democracy**, the look-alike card’s lines follow: Both put working people against owners, and both can be angry about the same profit and the same pay. In **Social democracy** the text says what should be done about the businesses: the owners keep them, and a tax, a floor for pay or public services even out the result. In **Class politics with nothing attached** the text takes the workers’ side and says nothing about the businesses. Look for a plan. Does the text say anything about what the government should do about pay, taxes or services, or about who should own the businesses? Or does it only say whose side it is on?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Working people against owners, and nothing more said” (one tap opens the card).
 
 **Return case 5 of 23**
@@ -3909,10 +3909,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who or what does the text put first? **Working people, against those who own the businesses.** The text sets the nurses against the owners and takes the nurses’ side: “The nurses and the owners do not want the same things, and we are with the nurses”.
   - What does the text say about the farms, factories, shops and banks? **The text does not say.** Where a plan for the practice would be, the text has a request to tell friends and write a letter: “Tell your friends, and write to the partners”. It says nothing about who should own the practice, or about taxes.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Democratic socialism**, the look-alike card’s lines follow: Both are on the workers’ side, and both can be written in a hurry for a leaflet or a post. **Class politics with nothing attached** says nothing about the businesses. **Democratic socialism** says the businesses go out of the owners’ hands, to the government or to those who work in them. Does the text say who should own the businesses? Or does it only say whose side it is on?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Working people against owners, and nothing more said” (one tap opens the card).
 
 **Return case 6 of 23**
@@ -3928,10 +3928,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who or what does the text put first? **Working people, against those who own the businesses.** The text sets the pickers against the owners and takes the pickers’ side: “Those who pick and those who own are on opposite sides, and we are on ours”.
   - What does the text say about the farms, factories, shops and banks? **The text does not say.** Where a plan for the warehouse would be, the text has a call to a meeting: “Tell your shift friends about the meeting at the van park on Tuesday”. It says nothing about who should own the warehouse, or how the company gains.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Marxism**, the look-alike card’s lines follow: Both are on the workers’ side, both can mention that owners take a profit, and neither says what should be done with the businesses. In **Class politics with nothing attached** the text complains about this owner or this profit and says nothing about how owners gain. In **Marxism** the text sets out how owners come by their profit from the work done for them, as the way the whole system works, whoever the owner is. Is the text about this owner’s choices? Or does it explain why any owner would gain from the work, as the way the arrangement works?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Working people against owners, and nothing more said” (one tap opens the card).
 
 **Return case 7 of 23**
@@ -3948,10 +3948,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
   - Who or what does the text put first? **Working people, against those who own the businesses.** The text sets the nurses against the company that owns the clinics, and stands with the nurses: “The company that owns the dialysis clinics sells care by the session, and the nurses carry the night shifts, and we stand with the nurses”.
   - What does the text say about the farms, factories, shops and banks? **They should pass to the government, to be run for everyone.** The clinics are to pass out of the company’s hands to the government: “The clinics should be owned by the government and run for the patients”.
   - If you chose **Seize power and hold it for the workers, with no rivals allowed**: The text hands the clinics to the government, as **Marxism-Leninism** might. But it accepts the voters’ answer. A text that said a party would take power and keep it would be **Marxism-Leninism**.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Marxism-Leninism**, the look-alike card’s lines follow: Both can want the businesses, or the biggest of them, to pass to the government, and both can speak for the workers. In **Democratic socialism** the change comes through elections that the people asking for it can lose, or the text says nothing about how. In **Marxism-Leninism** the party or the workers take power by force or rule as the only party, with no offer to give it up at an election. Does the text say that a party, or the workers, will take power by force or rule as the only party? If it says nothing about power, the answer is no.
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “The businesses handed over, by votes” (one tap opens the card).
 
 **Return case 8 of 23**
@@ -3962,15 +3962,15 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Democratic socialism**.” What does the text want done with the government? **The text does not say.** The text says nothing about how power is won or held. It ends on who the libraries are run for: “to be run for all readers”. A handover with no word on how is the key’s case for the answer that nothing is said.
+- If you are right: “Right: **Democratic socialism**.” What does the text want done with the government? **The text does not say.** The text says nothing about how power is won or held. It ends on who the libraries are run for: “to be run for all readers”. A handover with no word on how is a case of the answer that nothing is said.
   - Why not **Class politics with nothing attached**: The text does more than take the staff’s side: it says the libraries should pass to the public. A text that only took the side would be **Class politics with nothing attached**.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who or what does the text put first? **Working people, against those who own the businesses.** The text sets the staff against the company that owns the libraries, and stands with the staff: “The company that owns the lending libraries sells subscriptions and underpays its staff, and we are with the staff”.
   - What does the text say about the farms, factories, shops and banks? **They should pass to the government, to be run for everyone.** The libraries are to pass out of the company’s hands to the public: “The libraries should pass to the public, to be run for all readers”.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Class politics with nothing attached**, the look-alike card’s lines follow: Both are on the workers’ side, and both can be written in a hurry for a leaflet or a post. **Class politics with nothing attached** says nothing about the businesses. **Democratic socialism** says the businesses go out of the owners’ hands, to the government or to those who work in them. Does the text say who should own the businesses? Or does it only say whose side it is on?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “The businesses handed over, by votes” (one tap opens the card).
 
 **Return case 9 of 23**
@@ -3987,10 +3987,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
   - Who or what does the text put first? **Working people, against those who own the businesses.** The text sets the shareholders against the casters, and stands with the casters: “The foundry's shareholders take the profit, and the casters take the heat, and we are with the casters”.
   - What does the text say about the farms, factories, shops and banks? **They should pass to the people who work in each one.** The foundry is to belong to the people who work in it: “The foundry should belong to the people who work in it, together”. Nothing is said about competing for customers.
   - If you chose **Get rid of it, and run things together without it**: Both give the foundry to its workers. This text keeps the government and leaves it to the voters. **Anarchism** wants the government gone.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Anarchism**, the look-alike card’s lines follow: Both can want each business to belong to the people who work in it. In **Democratic socialism** the government stays, and elections decide who runs it, or the text says nothing about how the change is made. In **Anarchism** the government is to be got rid of now, with people running their work and their towns together without it. Should the government stay, or be done away with now, according to the text?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “The businesses handed over, by votes” (one tap opens the card).
 
 **Return case 10 of 23**
@@ -4006,10 +4006,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who or what does the text put first? **Working people, against those who own the businesses.** The text sets the company that owns the hospital against the orderlies, and stands with the orderlies: “The company that owns the hospital and the orderlies who carry its beds are on opposite sides, and our party is with the orderlies”.
   - What does the text say about the farms, factories, shops and banks? **They should pass to the government, to be run for everyone.** The hospital is to belong to the government the party forms: “The hospital will belong to the government we form”.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Democratic socialism**, the look-alike card’s lines follow: Both can want the businesses, or the biggest of them, to pass to the government, and both can speak for the workers. In **Democratic socialism** the change comes through elections that the people asking for it can lose, or the text says nothing about how. In **Marxism-Leninism** the party or the workers take power by force or rule as the only party, with no offer to give it up at an election. Does the text say that a party, or the workers, will take power by force or rule as the only party? If it says nothing about power, the answer is no.
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “One party takes power and rules for the workers” (one tap opens the card).
 
 **Return case 11 of 23**
@@ -4025,10 +4025,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who or what does the text put first? **Working people, against those who own the businesses.** The text sets the proprietors against the printers, and stands with the printers: “The proprietors of the presses and the printers are in two camps, and we are in the second”.
   - What does the text say about the farms, factories, shops and banks? **The text does not say.** Where a plan for the presses would be, the text has only a warning: “Be ready”. It says nothing about who should own the presses.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Class politics with nothing attached**, the look-alike card’s lines follow: Both can say nothing about what should happen to the businesses, and both stand with the workers. **Class politics with nothing attached** says nothing about the government. **Marxism-Leninism** says that a party, or the workers, will take power and keep it, even when it says nothing about the businesses. Does the text say anything about who will hold power, or how? If it says a party will take power and rule alone, the answer is yes.
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “One party takes power and rules for the workers” (one tap opens the card).
 
 **Return case 12 of 23**
@@ -4044,10 +4044,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who or what does the text put first? **Working people, against those who own the businesses.** The text sets the founders’ pay against the gap that goes to the owners, and is written by a workers’ party: “The £45 goes to the owners”.
   - What does the text say about the farms, factories, shops and banks? **It explains how their owners gain from what workers make.** The text explains how owners gain, as the way the arrangement works: “Every owner has to keep a gap like it, because that is how the arrangement works”. It asks for nothing to be done with the works, so the explanation is the answer here.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Marxism**, the look-alike card’s lines follow: Both can set out how owners come by their profit. In **Marxism** the text explains and says nothing about who takes power. In **Marxism-Leninism** the text says that a party, or the workers, will take power and keep it, with no rivals allowed. Does the text say that a party, or the workers, will take power and keep it? Or does it only explain how owners gain?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “One party takes power and rules for the workers” (one tap opens the card).
 
 **Return case 13 of 23**
@@ -4063,10 +4063,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who or what does the text put first? **Working people, against those who own the businesses.** The text sets the firm that owns the clinics against the staff, and stands with the staff: “The firm that owns the clinics pays the staff a flat wage and keeps the fees, and the health office backs it, and we are with the staff”.
   - What does the text say about the farms, factories, shops and banks? **They should pass to the people who work in each one.** The clinic is to belong to those who work in it: “The clinic should belong to those who work in it”. Nothing is said about competing.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Democratic socialism**, the look-alike card’s lines follow: Both can want each business to belong to the people who work in it. In **Democratic socialism** the government stays, and elections decide who runs it, or the text says nothing about how the change is made. In **Anarchism** the government is to be got rid of now, with people running their work and their towns together without it. Should the government stay, or be done away with now, according to the text?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “No bosses and no government” (one tap opens the card).
 
 **Return case 14 of 23**
@@ -4082,10 +4082,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who or what does the text put first? **Working people, against those who own the businesses.** The text sets the company that owns the quota against the fishers, and stands with the fishers: “The company that owns the fish quota takes what we catch, and the harbour authority backs it, and we stand with the fishers”.
   - What does the text say about the farms, factories, shops and banks? **They should pass to the people who work in each one.** The quota is to belong to the people who fish: “We want the quota to belong to the people who fish”. Nothing is said about competing.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Market socialism**, the look-alike card’s lines follow: Both want each business to belong to the people who work in it. In **Market socialism** the businesses compete for customers, set their own prices and can fail, and the text says nothing about getting rid of the government. In **Anarchism** the text says nothing about competing, and wants the government got rid of. Once the workers own it, does the business compete with others for customers and risk failing? Or does the text say nothing about that, and want the government gone?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “No bosses and no government” (one tap opens the card).
 
 **Return case 15 of 23**
@@ -4101,10 +4101,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who or what does the text put first? **Working people, against those who own the businesses.** The text sets the bank’s owners against the people at the tills, and stands with the tills: “The bank's owners and the people who work its tills are on opposite sides, and we are with the tills”.
   - What does the text say about the farms, factories, shops and banks? **The text does not say.** Where a plan for the bank would be, the text has only an invitation: “Bring a chair to the steps on Sunday”. It says nothing about who should own the bank.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Class politics with nothing attached**, the look-alike card’s lines follow: Both can say nothing about what should happen to the businesses, and both stand with the workers. **Class politics with nothing attached** says nothing about the government. **Anarchism** wants the government got rid of, even when it says nothing about the businesses. Does the text say anything about the government itself: that it should be kept, or done away with?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “No bosses and no government” (one tap opens the card).
 
 **Return case 16 of 23**
@@ -4121,10 +4121,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
   - Who or what does the text put first? **Working people, against those who own the businesses.** The text sets the firm that owns the business against the roofers, and stands with the roofers: “The firm that owns the roofing business takes the profit and sends us up the ladders, and we are with the roofers”.
   - What does the text say about the farms, factories, shops and banks? **They should pass to the people who work in each one, and compete for customers.** The business is to belong to the roofers and to keep competing for jobs and risk failing: “The business should belong to the roofers, and should keep bidding for jobs against other roofing firms, set its own prices and go out of business if it loses money”.
   - If you chose **Get rid of it, and run things together without it**: Both give the business to the people who work in it. This text keeps it competing, and says nothing about getting rid of the government.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Anarchism**, the look-alike card’s lines follow: Both want each business to belong to the people who work in it. In **Market socialism** the businesses compete for customers, set their own prices and can fail, and the text says nothing about getting rid of the government. In **Anarchism** the text says nothing about competing, and wants the government got rid of. Once the workers own it, does the business compete with others for customers and risk failing? Or does the text say nothing about that, and want the government gone?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Firms owned by their workers, competing for customers” (one tap opens the card).
 
 **Return case 17 of 23**
@@ -4140,10 +4140,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who or what does the text put first? **Working people, against those who own the businesses.** The text sets the company that owns the schools against the teachers, and stands with the teachers: “The company that owns the language schools keeps the fees, and we teach the classes, and we stand with the teachers”.
   - What does the text say about the farms, factories, shops and banks? **They should pass to the people who work in each one, and compete for customers.** Each school is to belong to its teachers, and to compete and risk closing: “Each school should belong to its teachers, compete with the other schools for students, set its own fees and close if the students stop coming”.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Democratic socialism**, the look-alike card’s lines follow: Both want the businesses taken from their owners, and both can ask for it through elections. In **Democratic socialism** the businesses pass to the government, or to the people who work in them, and nothing is said about competing. In **Market socialism** each business belongs to the people who work in it and competes with the others for customers. A text that says both is **Market socialism**. After the handover, do the businesses compete with each other for customers, set their own prices and risk failing?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Firms owned by their workers, competing for customers” (one tap opens the card).
 
 **Return case 18 of 23**
@@ -4159,10 +4159,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who or what does the text put first? **Working people, against those who own the businesses.** The text sets the company that owns the taxis against the drivers, and stands with the drivers: “The company that owns the taxis takes a share of every fare, and the drivers take the night shifts, and we are with the drivers”.
   - What does the text say about the farms, factories, shops and banks? **They should pass to the people who work in each one, and compete for customers.** Each firm is to belong to its drivers, and the firms will compete and risk going under: “Each taxi firm should belong to its drivers, and the firms should compete for passengers, set their own fares and go under if they cannot cover their costs”.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Democratic socialism**, the look-alike card’s lines follow: Both want the businesses taken from their owners, and both can ask for it through elections. In **Democratic socialism** the businesses pass to the government, or to the people who work in them, and nothing is said about competing. In **Market socialism** each business belongs to the people who work in it and competes with the others for customers. A text that says both is **Market socialism**. After the handover, do the businesses compete with each other for customers, set their own prices and risk failing?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Firms owned by their workers, competing for customers” (one tap opens the card).
 
 **Return case 19 of 23**
@@ -4178,10 +4178,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who or what does the text put first? **Working people, against those who own the businesses.** The text sets the bricklayers against the owners who take the gap, and is written for the bricklayers: “The £50 goes to the builder's owners” and “The talk is for the bricklayers”.
   - What does the text say about the farms, factories, shops and banks? **It explains how their owners gain from what workers make.** The text explains how owners gain, as the way the arrangement works for every owner: “Every owner has to keep a gap like it, because that is how the arrangement works”. It asks for nothing to be done with the building firm.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Class politics with nothing attached**, the look-alike card’s lines follow: Both are on the workers’ side, both can mention that owners take a profit, and neither says what should be done with the businesses. In **Class politics with nothing attached** the text complains about this owner or this profit and says nothing about how owners gain. In **Marxism** the text sets out how owners come by their profit from the work done for them, as the way the whole system works, whoever the owner is. Is the text about this owner’s choices? Or does it explain why any owner would gain from the work, as the way the arrangement works?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “An explanation of how owners gain from workers” (one tap opens the card).
 
 **Return case 20 of 23**
@@ -4197,10 +4197,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who or what does the text put first? **Working people, against those who own the businesses.** The text sets the people who own against the people who work, and is written for the tellers: “the people who own and the people who work have fought over who gets what” and “The lecture is for the tellers”.
   - What does the text say about the farms, factories, shops and banks? **It explains how their owners gain from what workers make.** The text says that the fight over who gets what moves history, and that today’s owners profit from the tellers’ work: “that fight is what has moved history forward” and “Today's bank owners gain from what the tellers make and are not paid for”. It asks for nothing to be done with the banks.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Class politics with nothing attached**, the look-alike card’s lines follow: Both are on the workers’ side, both can mention that owners take a profit, and neither says what should be done with the businesses. In **Class politics with nothing attached** the text complains about this owner or this profit and says nothing about how owners gain. In **Marxism** the text sets out how owners come by their profit from the work done for them, as the way the whole system works, whoever the owner is. Is the text about this owner’s choices? Or does it explain why any owner would gain from the work, as the way the arrangement works?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “An explanation of how owners gain from workers” (one tap opens the card).
 
 **Return case 21 of 23**
@@ -4216,10 +4216,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who or what does the text put first? **Working people, against those who own the businesses.** The text sets the cleaners against the owners who take the gap, and is written for the cleaners: “The £5 goes to the contractor's owners” and “the pamphlet is for the cleaners”.
   - What does the text say about the farms, factories, shops and banks? **It explains how their owners gain from what workers make.** The text explains how owners gain as the way any contractor has to work: “It is not the owners' wickedness. It is how any contractor has to work”. It asks for nothing to be done with the contract.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Social democracy**, the look-alike card’s lines follow: Both say that owners gain from what working people do, and both can be written for the workers. In **Social democracy** the text asks for something to be done: a tax, a floor for pay, public services. In **Marxism** the text sets out how owners come by their profit, as the way the whole system works, and asks for nothing about the businesses. Does the text ask the government to do something about pay, taxes or services? Or does it explain how owners come to gain from the work, and stop there?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “An explanation of how owners gain from workers” (one tap opens the card).
 
 **Return case 22 of 23**
@@ -4235,10 +4235,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who or what does the text put first? **Working people, against those who own the businesses.** The text sets the porters against the owners who take the gap, and is written for the porters: “The £35 goes to the company's owners” and “We give this talk for the porters”.
   - What does the text say about the farms, factories, shops and banks? **It explains how their owners gain from what workers make.** The text explains how owners gain, as the way the arrangement works for every owner: “Every owner has to keep a gap like it, because that is how the arrangement works”. It asks for nothing to be done with the hospital.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Democratic socialism**, the look-alike card’s lines follow: Both can describe how owners gain from the workers’ work, and both stand with the workers. In **Marxism** the text explains how owners gain and says nothing about what to do with the businesses. In **Democratic socialism** the text says the businesses should pass out of the owners’ hands. A text that explains and also asks for the handover is **Democratic socialism**. Does the text say what should happen to the businesses, or does it only explain how owners gain?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “An explanation of how owners gain from workers” (one tap opens the card).
 
 **Return case 23 of 23**
@@ -4254,9 +4254,9 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who or what does the text put first? **Working people, against those who own the businesses.** The text sets the tailors against the owners who take the gap, and is written for the tailors: “The £30 goes to the shop's owners” and “This pamphlet is for the tailors”.
   - What does the text say about the farms, factories, shops and banks? **It explains how their owners gain from what workers make.** The text explains how owners gain, as the way the arrangement works: “Every owner has to keep a gap like it, because that is how the arrangement works”. It asks for nothing to be done with the shops.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Marxism**, the look-alike card’s lines follow: Both can set out how owners come by their profit, and both are written for the workers. In **Marxism** the text explains and leaves the government as it is, or says nothing about it. In **Anarchism** the text, whether or not it explains, wants the government got rid of now, with people running things together without it. Besides the explanation, does the text say that the government should be done away with, now?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “No bosses and no government” (one tap opens the card).
 

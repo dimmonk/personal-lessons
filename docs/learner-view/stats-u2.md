@@ -1,15 +1,15 @@
 # Learner view: Statistical Claims, Unit Two: Nothing goes wrong
 
-*Four kinds of claim that hold up, and what each one has earned the right to say.* Unit revision 1, built to lesson standard 1, status: draft.
+*Four kinds of claim that hold up, and what each one has earned the right to say.* Unit revision 2, built to lesson standard 1, status: draft.
 
 This file is generated from the data files by `tools/render-learner-view.mjs`. It shows every screen in the order a learner meets it. In the app one card is on screen at a time and the learner moves on when ready.
 
-- **Bold text in quotation marks** is the key’s own wording, printed from `key.js`. Bold names are the outcome names from the same file. Neither is typed anywhere else. "What you must be able to point to" lines and "How to tell them apart" lines are also printed from one place each (the key and the look-alike ledger).
+- **Bold text in quotation marks** is the subject’s own wording for its questions and answers, written once and printed everywhere. Bold names are the names, written once in the same place. Neither is typed anywhere else. "What you must be able to point to" lines and "How to tell them apart" lines are also printed from one place each (the subject’s questions and the pairs it compares).
 - ⟦Double brackets⟧ show the words the app marks in a case (one highlight style everywhere).
 - The line in italics under each heading is the app’s top bar. The line in square brackets after it is for reviewers and is not shown to the learner.
 - Headings, prompt wording and stage instructions that are the same in every unit are the app’s wording, not this unit’s.
 - "Shown as soon as you …" is what appears the moment the learner answers. Nothing is hidden behind a second tap the first time a case is met, or after a miss.
-- After every answer the app shows, in this order: the right answer in the key’s words; the reason, quoting the marked words; for a name, why the nearest wrong name fails; after a miss, a line about the answer the learner chose; and last a link to the card that taught it. Where a line about the learner’s own choice is not written for the case, the app builds it from the key, and this file says so in place of repeating it.
+- After every answer the app shows, in this order: the right answer; the reason, quoting the marked words; for a name, why the nearest wrong name fails; after a miss, a line about the answer the learner chose; and last a link to the card that taught it. Where a line about the learner’s own choice is not written for the case, the app builds it from the answers’ own wording, and this file says so in place of repeating it.
 
 ---
 
@@ -17,7 +17,7 @@ This file is generated from the data files by `tools/render-learner-view.mjs`. I
 
 ### 1. Claims that hold up: four kinds, and what each one has earned
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 1 of 36*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 1 of 36*
 
 [reviewers only: card kind `orient`, id `orient-holds`]
 
@@ -29,7 +29,7 @@ A claim that holds has earned only what it says. The first gives one figure abou
 
 Four words are used all the way through, so here they are once more. A claim is what someone says with a number in it. A figure is the number, or the numbers, in a claim: a share, an average, a count. A group is the people or things the claim is about. A case is the app’s word for one example: a claim as someone might say it to you, with whatever the speaker tells you about where the figure came from. This unit never uses "case" for people found with an illness; it says "people found with it".
 
-**What Unit One taught, in one place.** The key’s first question is **“Which part of the claim goes wrong first?”** Its answers:
+**What Unit One taught, in one place.** The first question is **“Which part of the claim goes wrong first?”** Its answers:
 
 - **“Who was counted”**: give this answer when the people or things the figure was worked out from are not a fair picture of the group the claim is about, or are too few to trust.
 - **“What the number counts”**: give this answer when the figure could rise, fall or differ without the real thing it is read as showing doing the same.
@@ -37,11 +37,11 @@ Four words are used all the way through, so here they are once more. A claim is 
 - **“What it says caused what”**: give this answer when the claim says one thing made another happen, and the case shows another way the same result could have come about.
 - **“Nothing goes wrong”**: give this answer when every part the claim makes holds up when it is checked in order, and none of them goes wrong. **This unit is about these cases.**
 
-Unit One also taught that two things are marked separately: the name you give a case, and your route to it, meaning the answers you gave to the key’s questions on the way.
+Two things are marked separately: the name you give a case, and your answers to the questions on the way to it.
 
 *(One tap on any of these lines opens the card in Unit One that taught it.)*
 
-**The part of the key this unit teaches.** This is a preview. You are not expected to follow it yet: every line is explained on the cards that come next. The question and its answers are in the key’s own words. Beside each answer, in plain words, is the thing it leads to. There are four of them, and each gets its name when it is taught.
+**The questions this unit teaches.** This is a preview. You are not expected to follow it yet: every line is explained on the cards that come next. The question and its answers are worded exactly as you will meet them. Beside each answer, in plain words, is the thing it leads to. There are four of them, and each gets its name when it is taught.
 
 What does the claim say the figures show?
 - A figure for one group → a figure for a group, from a fair picture of it
@@ -60,13 +60,13 @@ The unit has three parts, and you can stop after any of them.
 
 1. Counting one group, and following one figure through time
 2. Setting two things side by side, and saying what made the difference
-3. The key’s question, two whole claims, and the drill
+3. The question, two whole claims, and the drill
 
 Each name is taught through cases first. After every step you answer one question about a new case, and the answer and the reason are shown straight away. Nothing here is graded. A miss only decides what comes back.
 
 ### 2. Asking some of them, and the word for it
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 2 of 36*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 2 of 36*
 
 [reviewers only: card kind `term`, id `term-sample`]
 
@@ -87,7 +87,7 @@ Every figure from a *sample* comes with one question: how did these 800 come to 
 
 ### 3. Letting a lottery choose
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 3 of 36*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 3 of 36*
 
 [reviewers only: card kind `term`, id `term-atrandom`]
 
@@ -110,11 +110,11 @@ Two things to notice. First, *at random* says how the people were picked and not
 
 ### 4. A figure for a group, from a fair picture of it
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 4 of 36*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 4 of 36*
 
 [reviewers only: card kind `meet`, id `meet-sampok`]
 
-Unit One ended with the fifth answer to the key’s first question, **“Nothing goes wrong”**. This unit teaches what that answer looks like. The plainest kind comes first: someone gives one figure about one group, and has drawn the people and heard from them carefully.
+Unit One ended with the fifth answer to the first question, **“Nothing goes wrong”**. This unit teaches what that answer looks like. The plainest kind comes first: someone gives one figure about one group, and has drawn the people and heard from them carefully.
 
 *The library card holders*
 
@@ -137,9 +137,9 @@ Last, what the claim says. It gives one figure about one group at one time. It d
 
 **What you must be able to point to.** A figure for one group, worked out from all of its members or from some picked at random, with most of those asked answering or followed up, and either every member counted or enough of them that one or two more or fewer would not move the figure, and a claim that says no more than the figure for that group. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What does the claim say the figures show?”**
+**The question:** **“What does the claim say the figures show?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“A figure for one group”**
+**Its answer for a case like this one:** **“A figure for one group”**
 
 The name for this is **A fair count**. The count is fair in a particular sense: the figure is a fair stand-in for the whole group of card holders, to within the luck of the draw. It does not mean the claim is important, and it does not mean the figure is exact.
 
@@ -147,7 +147,7 @@ You may also hear this called “a representative sample” or “a random sampl
 
 ### 5. A fair count: the same thing in a different story
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 5 of 36*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 5 of 36*
 
 [reviewers only: card kind `again`, id `again-sampok`]
 
@@ -180,7 +180,7 @@ The two stories share nothing else. So this is not about books or about flu shot
 
 ### 6. The story never decides the kind of claim
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 6 of 36*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 6 of 36*
 
 [reviewers only: card kind `lens`, id `lens-holds`]
 
@@ -194,13 +194,13 @@ From here on, the cases change their stories on purpose. Sometimes two cases wil
 
 Two more things change on purpose: how large or surprising the figure is, and whether you would like the claim to be true. A big drop and a tiny one can both hold. A claim you agree with is put to the same question as one you do not.
 
-**Stays the same from case to case:** what the claim says the figures show, which is what the key asks about: **“What does the claim say the figures show?”**
+**Stays the same from case to case:** what the claim says the figures show, which is what this question asks about: **“What does the claim say the figures show?”**
 
 **Changes on purpose:** the topic; the people; how large or surprising the figure is; whether you would like it to be true; whether the story hints at more than the claim says.
 
 ### 7. How far luck can move a figure
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 7 of 36*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 7 of 36*
 
 [reviewers only: card kind `term`, id `term-margin`]
 
@@ -225,7 +225,7 @@ Two things to carry from this. First, the margin covers only the luck of a fair 
 
 ### 8. A fair count: what it is like
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 8 of 36*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 8 of 36*
 
 [reviewers only: card kind `portrait`, id `portrait-sampok`]
 
@@ -263,7 +263,7 @@ In your own life it is a poll, a survey or a company’s figure about its own cu
 
 ### 9. A question about a new case
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 9 of 36*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 9 of 36*
 
 [reviewers only: card kind `check`, id `check-sampok`]
 
@@ -278,7 +278,7 @@ The pieces you can tap:
 
 **Shown as soon as you tap**
 
-- If you are right: “Right: ‘About 40% of our students bring lunch from home’.” The words after "The district says" are the claim, and the claim gives one figure about one group at one time. The sentences before it say how the figure was got, and they are what make it hold. They are not what the claim says. The key’s answer for this case is **“A figure for one group”**, and the name is **A fair count**.
+- If you are right: “Right: ‘About 40% of our students bring lunch from home’.” The words after "The district says" are the claim, and the claim gives one figure about one group at one time. The sentences before it say how the figure was got, and they are what make it hold. They are not what the claim says. The answer for this case is **“A figure for one group”**, and the name is **A fair count**.
 - If you miss: “The words are ‘About 40% of our students bring lunch from home’.” The same reason follows, and then a line about the piece you tapped:
   - “It drew 500 student ID numbers by lottery from its full roll, and a staff member asked each one in person, tracking down anyone who was absent until 470 had answered”: That says how the figure was got. It tells you why the figure can be relied on, and it is not the claim.
   - “Of the 470, 188 bring lunch from home, which is 40 in 100”: That is the figure. The claim is what the district says the figure shows.
@@ -286,7 +286,7 @@ The pieces you can tap:
 
 ### 10. A wrong idea: "A thousand people cannot speak for millions"
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 10 of 36*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 10 of 36*
 
 [reviewers only: card kind `refute`, id `refute-thousand`]
 
@@ -307,7 +307,7 @@ So the question to ask of "only a thousand" is not how many people are in the co
 
 ### 11. A figure that moved because the thing itself moved
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 11 of 36*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 11 of 36*
 
 [reviewers only: card kind `meet`, id `meet-measok`]
 
@@ -332,15 +332,15 @@ Notice what the claim does not say. It does not say why births fell, or that fam
 
 **What you must be able to point to.** One figure that rose or fell, counted by the same rule and the same tool with the same effort to find it from start to end, nothing that could push it without the thing itself moving, and a claim that says no more than that it rose or fell. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What does the claim say the figures show?”**
+**The question:** **“What does the claim say the figures show?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“A rise or fall in one figure”**
+**Its answer for a case like this one:** **“A rise or fall in one figure”**
 
 The name for this is **A real change**. "Change" means a rise or a fall. "Real" says that the thing itself changed, and not only the figure.
 
 ### 12. A real change: the same thing in a different story
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 12 of 36*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 12 of 36*
 
 [reviewers only: card kind `again`, id `again-measok`]
 
@@ -373,7 +373,7 @@ The two stories share nothing else. So this is not about babies or about power. 
 
 ### 13. A real change: what it is like
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 13 of 36*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 13 of 36*
 
 [reviewers only: card kind `portrait`, id `portrait-measok`]
 
@@ -406,18 +406,18 @@ In your own life it is anything you keep your own record of with the same tool: 
 **What to do when you meet it**
 
 1. Find how the figure was counted each time: the same form, tool or definition. If it is not said, you do not yet have an answer.
-2. Find whether anyone is paid, ranked or judged on it, and whether more effort went into finding things later. If either, stop: the key’s first question would not have given this answer.
+2. Find whether anyone is paid, ranked or judged on it, and whether more effort went into finding things later. If either, stop: the first question would not have given this answer.
 3. If neither, repeat only that it rose or fell, and by how much, from this figure to that one. Leave out "because".
 
 ### 14. A question about a new case
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 14 of 36*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 14 of 36*
 
 [reviewers only: card kind `check`, id `check-measok`]
 
 > A school records attendance every morning on the same register form for every class, and has done so since 2018. Nobody's pay, ranking or grant depends on the figure. In September, 94 in every 100 pupils were present on an average day. In November it was 91 in every 100. The school says: 'Average daily attendance fell from 94% in September to 91% in November.'
 
-**The key asks:** **“What does the claim say the figures show?”** Which of the answers you have met so far fits this case?
+**The question:** **“What does the claim say the figures show?”** Which of the answers you have met so far fits this case?
 
 - A figure for one group
 - A rise or fall in one figure
@@ -431,7 +431,7 @@ In your own life it is anything you keep your own record of with the same tool: 
 
 ### 15. A fair count or A real change: telling them apart
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 15 of 36*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 15 of 36*
 
 [reviewers only: card kind `lookalike`, id `look-samp-meas`]
 
@@ -453,9 +453,9 @@ Two names can look alike when they give the same figure about the same thing. Th
 
 **Why this one and not the other**
 
-In Case A the clinic drew 400 of last year’s 12,000 visits by lottery and timed each one. The claim gives one figure, 24 minutes, for one year. It says nothing about earlier years or later ones. The key’s answer is **“A figure for one group”**, and the case is **A fair count**.
+In Case A the clinic drew 400 of last year’s 12,000 visits by lottery and timed each one. The claim gives one figure, 24 minutes, for one year. It says nothing about earlier years or later ones. The answer is **“A figure for one group”**, and the case is **A fair count**.
 
-In Case B the clinic timed every visit in two years, the same way, and nobody’s pay depends on the number. The claim gives the figure twice, 31 minutes and 24 minutes, and says it fell. The fall is 31 − 24 = 7 minutes, which is 7 ÷ 31 = 0.23, about 23 in 100. The key’s answer is **“A rise or fall in one figure”**, and the case is **A real change**.
+In Case B the clinic timed every visit in two years, the same way, and nobody’s pay depends on the number. The claim gives the figure twice, 31 minutes and 24 minutes, and says it fell. The fall is 31 − 24 = 7 minutes, which is 7 ÷ 31 = 0.23, about 23 in 100. The answer is **“A rise or fall in one figure”**, and the case is **A real change**.
 
 The figure of 24 minutes is the same in both. What separates them is whether the claim gives it once or follows it through time. Notice also what a claim of the first kind cannot say: from Case A alone, you cannot say that waits fell, because Case A gives no earlier figure to fall from.
 
@@ -463,7 +463,7 @@ The figure of 24 minutes is the same in both. What separates them is whether the
 
 Does the claim give the figure once, for one time, or does it give the figure at two or more times and say that it rose or fell?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | A fair count | A real change |
 |---|---|---|
@@ -480,37 +480,37 @@ Does the claim give the figure once, for one time, or does it give the figure at
 
 ### 16. Two things of the same kind, set side by side the same way
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 16 of 36*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 16 of 36*
 
 [reviewers only: card kind `meet`, id `meet-compok`]
 
 The first two names each had one thing in the claim. The third has two, set side by side, and the claim says which is bigger.
 
-*The two bus routes*
+*The two bus lines*
 
-> A city transit agency compared two bus routes. Both are 12 miles long, run on weekdays in the same hours, and serve neighborhoods of similar size. The agency checked every trip in March with the same GPS tracker. On Route 5, 12 of 200 trips arrived more than ten minutes late. On Route 9, 31 of 205 did. The agency says: '⟦Route 9 buses are late more often than Route 5 buses: 15 trips in 100 against 6⟧.'
+> A city transit agency compared two bus lines. Both are 12 miles long, run on weekdays in the same hours, and serve neighborhoods of similar size. The agency checked every trip in March with the same GPS tracker. On Line 5, 12 of 200 trips arrived more than ten minutes late. On Line 9, 31 of 205 did. The agency says: '⟦Line 9 buses are late more often than Line 5 buses: 15 trips in 100 against 6⟧.'
 
 Stripped of its story, the case is this:
 
-- There are two things, Route 5 and Route 9, and a figure for each: 12 late trips out of 200, and 31 out of 205.
-- They are of the same kind: two bus routes of the same length, run in the same hours, through neighborhoods of similar size.
+- There are two things, Line 5 and Line 9, and a figure for each: 12 late trips out of 200, and 31 out of 205.
+- They are of the same kind: two bus lines of the same length, run in the same hours, through neighborhoods of similar size.
 - They were counted the same way over the same stretch of time: every trip in March, with the same tracker.
 - The numbers behind the comparison are given: how many trips each had, and how many were late.
 - The claim says which is later more often, and stops there.
 
-A comparison tells you how two things stand beside each other. For it to be fair, three things have to hold, and this case shows each. The two things have to be of the same kind: two routes of the same length, run in the same hours. A route through a quiet suburb at midday and a route through the center at rush hour are not of the same kind, and a difference between them says very little. Next, they have to be counted the same way over the same stretch of time. Here, every trip in March, one tracker. And the numbers have to be given, so that sizes can be put on the same scale.
+A comparison tells you how two things stand beside each other. For it to be fair, three things have to hold, and this case shows each. The two things have to be of the same kind: two lines of the same length, run in the same hours. A line through a quiet suburb at midday and a line through the center at rush hour are not of the same kind, and a difference between them says very little. Next, they have to be counted the same way over the same stretch of time. Here, every trip in March, one tracker. And the numbers have to be given, so that sizes can be put on the same scale.
 
-The key’s line for this name adds one more thing: no different mix of easy and hard cases hidden inside the two. Here is what that means. Suppose two garages repair cars. Garage A mostly does quick jobs, 90 in every 100, and Garage B mostly does long, hard ones, 90 in every 100. Say that both garages finish 5 in 100 quick jobs late and 40 in 100 hard jobs late, so they are exactly as good as each other at each kind of job. Garage A has 90 × 0.05 = 4.5 quick jobs late, plus 10 × 0.40 = 4 hard jobs late, which is 8.5 late in every 100. Garage B has 10 × 0.05 = 0.5 quick jobs late, plus 90 × 0.40 = 36 hard jobs late, which is 36.5 in every 100. A total counted over everything makes B look more than four times as bad, and it is not worse at anything. So a comparison is fair only when the two things deal with the same mix of easy and hard jobs, which is why this case tells you that both routes run in the same hours through similar neighborhoods.
+The full description of this name adds one more thing: no different mix of easy and hard cases hidden inside the two. Here is what that means. Suppose two garages repair cars. Garage A mostly does quick jobs, 90 in every 100, and Garage B mostly does long, hard ones, 90 in every 100. Say that both garages finish 5 in 100 quick jobs late and 40 in 100 hard jobs late, so they are exactly as good as each other at each kind of job. Garage A has 90 × 0.05 = 4.5 quick jobs late, plus 10 × 0.40 = 4 hard jobs late, which is 8.5 late in every 100. Garage B has 10 × 0.05 = 0.5 quick jobs late, plus 90 × 0.40 = 36 hard jobs late, which is 36.5 in every 100. A total counted over everything makes B look more than four times as bad, and it is not worse at anything. So a comparison is fair only when the two things deal with the same mix of easy and hard jobs, which is why this case tells you that both lines run in the same hours through similar neighborhoods.
 
-Putting sizes on the same scale is only division. Route 5 had 200 trips and Route 9 had 205, so the raw counts of late trips, 12 and 31, do not compare cleanly. Divide each by its own number of trips: 12 ÷ 200 = 0.06, which is 6 in 100 trips, and 31 ÷ 205 = 0.15, which is 15 in 100. Now the two figures stand on the same scale and can be set side by side.
+Putting sizes on the same scale is only division. Line 5 had 200 trips and Line 9 had 205, so the raw counts of late trips, 12 and 31, do not compare cleanly. Divide each by its own number of trips: 12 ÷ 200 = 0.06, which is 6 in 100 trips, and 31 ÷ 205 = 0.15, which is 15 in 100. Now the two figures stand on the same scale and can be set side by side.
 
-The claim then says only which is bigger: 15 in 100 against 6 in 100. It does not say why Route 9 is late more often, whether traffic, a bridge or old buses. **A fair comparison** tells you that two things differ and by how much. It has not earned the reason.
+The claim then says only which is bigger: 15 in 100 against 6 in 100. It does not say why Line 9 is late more often, whether traffic, a bridge or old buses. **A fair comparison** tells you that two things differ and by how much. It has not earned the reason.
 
 **What you must be able to point to.** Two groups, places or things of the same kind, counted the same way over the same period, the numbers given and not only a percentage, no different mix of easy and hard cases hidden inside them, and a claim that says which is bigger, likelier or riskier and stops there. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What does the claim say the figures show?”**
+**The question:** **“What does the claim say the figures show?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“A difference between two things”**
+**Its answer for a case like this one:** **“A difference between two things”**
 
 The name for this is **A fair comparison**. It is a comparison because the claim sets one thing beside another. It is fair because the two are alike and counted alike, and nothing about their size is hidden.
 
@@ -518,20 +518,20 @@ You may also hear this called “like for like”. That means the same thing her
 
 ### 17. A fair comparison: the same thing in a different story
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 17 of 36*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 17 of 36*
 
 [reviewers only: card kind `again`, id `again-compok`]
 
-The bus routes gave you what to point to: two groups, places or things of the same kind, counted the same way over the same period, the numbers given and not only a percentage, no different mix of easy and hard cases hidden inside them, and a claim that says which is bigger, likelier or riskier and stops there. Here is a second case with a completely different story.
+The bus lines gave you what to point to: two groups, places or things of the same kind, counted the same way over the same period, the numbers given and not only a percentage, no different mix of easy and hard cases hidden inside them, and a claim that says which is bigger, likelier or riskier and stops there. Here is a second case with a completely different story.
 
-The first case again, in one line. *The two bus routes*: “Route 9 buses are late more often than Route 5 buses: 15 trips in 100 against 6”
+The first case again, in one line. *The two bus lines*: “Line 9 buses are late more often than Line 5 buses: 15 trips in 100 against 6”
 
 The second case.
 
 *The two shifts*
 
 > A factory makes the same brake part on one line, day and night, and inspects every part the same way at the end of the line. Last quarter the day shift made 3,000 parts and 42 failed inspection, and the night shift made 3,100 parts and 68 failed. The factory says: 'The night shift’s parts fail inspection more often: 22 in 1,000 against 14 in 1,000.'
-**You are asked:** In *The two bus routes*, these words show it: “Route 9 buses are late more often than Route 5 buses: 15 trips in 100 against 6”. Which words show the same thing in this case? Tap them.
+**You are asked:** In *The two bus lines*, these words show it: “Line 9 buses are late more often than Line 5 buses: 15 trips in 100 against 6”. Which words show the same thing in this case? Tap them.
 
 The pieces you can tap:
 1. “A factory makes the same brake part on one line, day and night, and inspects every part the same way at the end of the line”
@@ -551,7 +551,7 @@ The two stories share nothing else. So this is not about buses or about brake pa
 
 ### 18. A fair comparison: what it is like
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 18 of 36*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 18 of 36*
 
 [reviewers only: card kind `portrait`, id `portrait-compok`]
 
@@ -569,11 +569,11 @@ You know what to point to. This card fills in the rest of the picture of **A fai
 
 Two figures side by side are not yet **A fair comparison**. The two things have to be alike and counted alike, and the numbers have to be there. A percentage with nothing behind it, or two totals that hide a different mix, would be a different case.
 
-And **A fair comparison** is not a cause. A route that is later more often has not been shown to be later because of anything in particular.
+And **A fair comparison** is not a cause. A line that is later more often has not been shown to be later because of anything in particular.
 
 **Where you will hear it**
 
-"Route 9 is late more often than Route 5: 15 trips in 100 against 6." "Both lines are inspected the same way, and the night shift fails more often." "This year’s level is 13 points below the usual for the date." "Both clinics start the clock at check-in, and Clinic B’s waits are longer."
+"Line 9 is late more often than Line 5: 15 trips in 100 against 6." "Both lines are inspected the same way, and the night shift fails more often." "This year’s level is 13 points below the usual for the date." "Both clinics start the clock at check-in, and Clinic B’s waits are longer."
 
 In your own life you do this when you compare two phone plans, two schools or two quotes. The comparison is fair when you can say that the two are alike in the ways that matter, were measured the same way, and you have the numbers.
 
@@ -589,13 +589,13 @@ In your own life you do this when you compare two phone plans, two schools or tw
 
 ### 19. A question about a new case
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 19 of 36*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 19 of 36*
 
 [reviewers only: card kind `check`, id `check-compok`]
 
 > A county tests the water at two public pools with the same lab and the same method every week for a year. Pool A failed 3 of 150 tests, and Pool B failed 9 of 150. The county says: 'Pool B's water fails tests more often: 6 in 100 against 2 in 100.'
 
-**The key asks:** **“What does the claim say the figures show?”** Which of the answers you have met so far fits this case?
+**The question:** **“What does the claim say the figures show?”** Which of the answers you have met so far fits this case?
 
 - A figure for one group
 - A rise or fall in one figure
@@ -611,7 +611,7 @@ In your own life you do this when you compare two phone plans, two schools or tw
 
 ### 20. A real change or A fair comparison: telling them apart
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 20 of 36*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 20 of 36*
 
 [reviewers only: card kind `lookalike`, id `look-meas-comp`]
 
@@ -633,9 +633,9 @@ The second pair of this unit: both claims put two figures in front of you, and b
 
 **Why this one and not the other**
 
-In Case A the district read the gauge on 1 June and again on 1 September, and the claim follows the one reservoir through the summer: 82% full, then 61% full. It fell by 82 − 61 = 21 points. The key’s answer is **“A rise or fall in one figure”**, and the case is **A real change**.
+In Case A the district read the gauge on 1 June and again on 1 September, and the claim follows the one reservoir through the summer: 82% full, then 61% full. It fell by 82 − 61 = 21 points. The answer is **“A rise or fall in one figure”**, and the case is **A real change**.
 
-In Case B the district looks at the reservoir on one date, 1 September, and sets this year’s 61% beside the average of twenty readings for that date, 74%. The gap is 74 − 61 = 13 points, and the claim says the level is below the usual. Nothing is followed through time. One thing is set beside its own usual figure. The key’s answer is **“A difference between two things”**, and the case is **A fair comparison**.
+In Case B the district looks at the reservoir on one date, 1 September, and sets this year’s 61% beside the average of twenty readings for that date, 74%. The gap is 74 − 61 = 13 points, and the claim says the level is below the usual. Nothing is followed through time. One thing is set beside its own usual figure. The answer is **“A difference between two things”**, and the case is **A fair comparison**.
 
 The gauge, the reservoir and the 61% are the same. In one claim the reservoir moves while the gauge is watched. In the other it stands still while it is set beside the usual.
 
@@ -643,7 +643,7 @@ The gauge, the reservoir and the 61% are the same. In one claim the reservoir mo
 
 Is the claim following one thing as time passes, or is it setting one thing beside another thing (or beside its own usual figure) and saying which is bigger?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | A real change | A fair comparison |
 |---|---|---|
@@ -654,7 +654,7 @@ Is the claim following one thing as time passes, or is it setting one thing besi
 
 ### 21. Two numbers side by side that are not a comparison
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 21 of 36*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 21 of 36*
 
 [reviewers only: card kind `exception`, id `exc-years`]
 
@@ -687,12 +687,12 @@ For **A fair comparison** you must be able to point to this: two groups, places 
 
 Is the claim following one thing as time passes, or is it setting one thing beside another thing (or beside its own usual figure) and saying which is bigger?
 
-This is the key’s decision, and it is worth knowing that it is. In life the line is not drawn in one place: a comparison of one year with the next can be read either way. The key goes by what the claim sets side by side. One thing as time passes is the answer **“A rise or fall in one figure”**. One thing against a different thing, or against its own usual figure, is the answer **“A difference between two things”**.
+This is a choice made to keep the answers clear, and it is worth knowing that it is. In life the line is not drawn in one place: a comparison of one year with the next can be read either way. The answer goes by what the claim sets side by side. One thing as time passes is the answer **“A rise or fall in one figure”**. One thing against a different thing, or against its own usual figure, is the answer **“A difference between two things”**.
 
 
 ### 22. A dummy that makes both groups go through the same thing
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 22 of 36*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 22 of 36*
 
 [reviewers only: card kind `term`, id `term-placebo`]
 
@@ -713,7 +713,7 @@ From here on, *placebo* always means a dummy of this kind, made to look like the
 
 ### 23. Groups formed by chance, one given the thing and one not
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 23 of 36*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 23 of 36*
 
 [reviewers only: card kind `meet`, id `meet-causeok`]
 
@@ -741,9 +741,9 @@ Luck can still make two groups differ a little, which is why such a test needs e
 
 **What you must be able to point to.** People or things split into groups at random, one group given the thing and the other not, both counted the same way afterwards, and a difference between the groups that the claim says the thing caused. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What does the claim say the figures show?”**
+**The question:** **“What does the claim say the figures show?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“One thing causing another”**
+**Its answer for a case like this one:** **“One thing causing another”**
 
 The name for this is **A fair test**. It is a test because the researchers gave the thing to one group and not to the other. It is fair because a lottery, and not anyone’s choice, formed the groups.
 
@@ -751,7 +751,7 @@ You may also hear this called “a randomised controlled trial” or “a random
 
 ### 24. A fair test: the same thing in a different story
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 24 of 36*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 24 of 36*
 
 [reviewers only: card kind `again`, id `again-causeok`]
 
@@ -784,7 +784,7 @@ The two stories share nothing else. So this is not about migraines or about loan
 
 ### 25. A fair test: what it is like
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 25 of 36*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 25 of 36*
 
 [reviewers only: card kind `portrait`, id `portrait-causeok`]
 
@@ -822,13 +822,13 @@ In your own life you meet it in news reports about medicines, in reports of a sc
 
 ### 26. A question about a new case
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 26 of 36*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 26 of 36*
 
 [reviewers only: card kind `check`, id `check-causeok`]
 
 > A garden co-op owns 200 plots of the same size and soil. A volunteer flipped a coin for each plot to decide whether it would get the new compost for the season. All 200 plots were planted with the same seeds on the same day and weighed the same way at harvest. The plots with compost gave 6.4 kilograms of tomatoes on average and the others gave 5.1. The co-op says: 'The new compost raised tomato yields: 6.4 kilograms against 5.1.'
 
-**The key asks:** **“What does the claim say the figures show?”** Which of the answers you have met so far fits this case?
+**The question:** **“What does the claim say the figures show?”** Which of the answers you have met so far fits this case?
 
 - A rise or fall in one figure
 - A difference between two things
@@ -844,7 +844,7 @@ In your own life you meet it in news reports about medicines, in reports of a sc
 
 ### 27. A fair comparison or A fair test: telling them apart
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 27 of 36*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 27 of 36*
 
 [reviewers only: card kind `lookalike`, id `look-comp-cause`]
 
@@ -866,9 +866,9 @@ The last pair of this unit: both show two groups with a gap, and the numbers can
 
 **Why this one and not the other**
 
-In Case A the school’s claim gives the two averages, 74 and 62, and says which group is ahead: 74 − 62 = 12 points. It stops there. It says nothing about why. The key’s answer is **“A difference between two things”**, and the case is **A fair comparison**.
+In Case A the school’s claim gives the two averages, 74 and 62, and says which group is ahead: 74 − 62 = 12 points. It stops there. It says nothing about why. The answer is **“A difference between two things”**, and the case is **A fair comparison**.
 
-In Case B the school ran the same lottery, set the same test and found the same 12 points, and its claim says the reading program raised the scores. It may say that, and the case shows why: names were drawn from a hat, so the pupils in the program and the pupils out of it were alike before the program began. The key’s answer is **“One thing causing another”**, and the case is **A fair test**.
+In Case B the school ran the same lottery, set the same test and found the same 12 points, and its claim says the reading program raised the scores. It may say that, and the case shows why: names were drawn from a hat, so the pupils in the program and the pupils out of it were alike before the program began. The answer is **“One thing causing another”**, and the case is **A fair test**.
 
 Everything is the same in both cases except the last sentence. A claim of the first kind never says what made the gap, however the groups were formed. A claim of the second kind may say it only because of the lottery. The lottery is in both cases. Which name applies depends on what the claim says.
 
@@ -876,7 +876,7 @@ Everything is the same in both cases except the last sentence. A claim of the fi
 
 Does the claim stop at which group is ahead, or does it say what made the gap? If it says what made the gap, who decided which group each person or thing was in?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | A fair comparison | A fair test |
 |---|---|---|
@@ -887,7 +887,7 @@ Does the claim stop at which group is ahead, or does it say what made the gap? I
 
 ### 28. A story that hints at a cause the claim does not make
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 28 of 36*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 28 of 36*
 
 [reviewers only: card kind `exception`, id `exc-stops`]
 
@@ -920,12 +920,12 @@ For **A fair test** you must be able to point to this: people or things split in
 
 Does the claim stop at which group is ahead, or does it say what made the gap? If it says what made the gap, who decided which group each person or thing was in?
 
-The story is where the cause comes from, and your own mind supplies it. That is the thing to guard against: go by what the claim says. If the report had said "the pickup cut garbage by 60 kilograms", it would be a claim of cause with no lottery behind it, and the key’s first question would not give **“Nothing goes wrong”** for it.
+The story is where the cause comes from, and your own mind supplies it. That is the thing to guard against: go by what the claim says. If the report had said "the pickup cut garbage by 60 kilograms", it would be a claim of cause with no lottery behind it, and the first question would not give **“Nothing goes wrong”** for it.
 
 
 ### 29. A wrong idea: "A fair comparison shows why"
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 29 of 36*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 29 of 36*
 
 [reviewers only: card kind `refute`, id `refute-comparison`]
 
@@ -944,25 +944,25 @@ Only one thing spreads the unseen differences evenly between two groups: a lotte
 So the question is never whether a comparison is fair, and then why. Ask what the claim says. If it stops at which is ahead, it holds, and you may repeat that and no more. If it says what made the gap, look for who decided which group each was in.
 
 
-*End of part 2. You can stop here; your place is kept. Next: part 3, The key’s question, two whole claims, and the drill.*
+*End of part 2. You can stop here; your place is kept. Next: part 3, The question, two whole claims, and the drill.*
 
 ---
 
-## Part 3 of 3: The key’s question, two whole claims, and the drill
+## Part 3 of 3: The question, two whole claims, and the drill
 
 ### 30. The question you have been answering all along
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 30 of 36*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 30 of 36*
 
 [reviewers only: card kind `question`, id `q-holds`]
 
-Since the library you have seen the key’s question at the foot of each new name, with one answer under it. This card puts the question and its four answers in one place, as the key shows them, and says why the key asks it.
+Since the library you have seen the question at the foot of each new name, with one answer under it. This card puts the question and its four answers in one place, as they are always asked, and says why it is asked.
 
-**The key asks:** **“What does the claim say the figures show?”**
+**The question:** **“What does the claim say the figures show?”**
 
 **What it is for.** Tells apart four kinds of sound claim by how far each goes: a figure for one group, a rise or fall in one figure, a difference between two things, and a cause.
 
-**Its answers, exactly as the key shows them**
+**Its answers**
 
 Each answer leads to one name, and so rules out the other three.
 
@@ -983,17 +983,17 @@ Each answer leads to one name, and so rules out the other three.
 
 A sound claim has earned only what it says. Each kind needs different parts to hold, so knowing which kind it is tells you what you can rely on and what it has not shown: a fair count shows nothing about change, and a fair comparison shows nothing about cause.
 
-The key asks this question about a claim whose first part has already been checked: the people or things are fair, the figure counts what it says, and what it is set beside is fair. It does not ask whether the claim is true in the world. It asks how far the claim goes. A claim that holds gets full credit for what it says and none for what it does not say.
+This question is asked about a claim whose first part has already been checked: the people or things are fair, the figure counts what it says, and what it is set beside is fair. It does not ask whether the claim is true in the world. It asks how far the claim goes. A claim that holds gets full credit for what it says and none for what it does not say.
 
 The four answers are four sizes of claim. A claim for one group at one time shows nothing about change. A claim that a figure rose or fell shows nothing about why. A claim that one thing is bigger than another shows nothing about why. And only a claim of cause may say why, because a lottery formed its groups. So knowing which of the four you are looking at tells you what you can repeat to someone else and what you cannot.
 
 **How to answer it from a case**
 
-Find the claim: the sentence that says what the figures show. Read it for its size. Count the groups and the times in it. One group at one time is **“A figure for one group”**. One thing at two or more times, with the claim saying it rose or fell, is **“A rise or fall in one figure”**. Two groups, places or things, or one thing and its usual level, with the claim saying which is bigger, is **“A difference between two things”**. A chance counts here too, as long as it is set beside another: "15 trips in 100 are late on Route 9, against 6 in 100 on Route 5" gives a chance of being late for each route, and says which is likelier. And a claim that says what made something happen is **“One thing causing another”**.
+Find the claim: the sentence that says what the figures show. Read it for its size. Count the groups and the times in it. One group at one time is **“A figure for one group”**. One thing at two or more times, with the claim saying it rose or fell, is **“A rise or fall in one figure”**. Two groups, places or things, or one thing and its usual level, with the claim saying which is bigger, is **“A difference between two things”**. A chance counts here too, as long as it is set beside another: "15 trips in 100 are late on Line 9, against 6 in 100 on Line 5" gives a chance of being late for each line, and says which is likelier. And a claim that says what made something happen is **“One thing causing another”**.
 
 The question looks only at what the claim says. The story can suggest more. A program in the story does not turn a difference into a cause, as in the two towns and their garbage. A list of years in the story does not turn one figure into a change unless the claim says that it rose or fell. If you give the answer for what the story hints at and not for what the claim says, you will credit a claim with something it never said.
 
-For the fourth answer, go back and look for the words that say how the groups were formed. A claim of cause with no words about a lottery behind it is not this answer, and the key’s first question would not have given **“Nothing goes wrong”** for it.
+For the fourth answer, go back and look for the words that say how the groups were formed. A claim of cause with no words about a lottery behind it is not this answer, and the first question would not have given **“Nothing goes wrong”** for it.
 
 **When two answers both seem to fit**
 
@@ -1006,13 +1006,13 @@ Sometimes two answers both seem to fit. Each pair below has been set side by sid
 
 ### 31. A question about a new case
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 31 of 36*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 31 of 36*
 
 [reviewers only: card kind `check`, id `check-q`]
 
 > A company with 3,000 employees wants to know how many commute by bike. Its HR office drew 600 employee numbers by lottery from the full payroll list, emailed each one, and phoned the ones who had not replied until 570 had answered. Of the 570, 114 commute by bike, which is 20 in 100. HR says: 'About 20% of our employees commute by bike.'
 
-**The key asks:** **“What does the claim say the figures show?”**
+**The question:** **“What does the claim say the figures show?”**
 
 - A figure for one group
 - A rise or fall in one figure
@@ -1030,11 +1030,11 @@ Sometimes two answers both seem to fit. Each pair below has been set side by sid
 
 ### 32. A whole claim, from the first question to the name
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 32 of 36*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 32 of 36*
 
 [reviewers only: card kind `worked`, id `worked-libraries`]
 
-You have the four names and the key’s question about them. Before you run a claim yourself, watch two being run from the top, in the order the key asks. You are not asked anything until the end of each.
+You have the four names and the question about them. Before you run a claim yourself, watch two being run from the top, in the order the questions are asked. You are not asked anything until the end of each.
 
 *The two libraries*
 
@@ -1050,7 +1050,7 @@ Answer: **“Nothing goes wrong”**
 
 Take the parts in order, as Unit One taught. Start with who is in the figure. The county counted every loan at both libraries, so nobody is missing and nobody chose whether to be counted. That part holds. Next, what the figure counts: loans returned late, in the same system, with the same due date at both libraries. Nothing changed and nobody is paid on it. That part holds. Next, what it is set beside: one library beside the other, with both totals given. That part holds.
 
-Then the last part, the claim itself. It says which library is later, and does not say that anything made it so. The words in the case that show the parts holding are “Both lend books on the same terms with the same three-week due date” and “counted every loan last year in the same system”. Every part holds, so the key’s answer is **“Nothing goes wrong”**.
+Then the last part, the claim itself. It says which library is later, and does not say that anything made it so. The words in the case that show the parts holding are “Both lend books on the same terms with the same three-week due date” and “counted every loan last year in the same system”. Every part holds, so the answer is **“Nothing goes wrong”**.
 
 Still possible: all four names this unit teaches.
 
@@ -1062,7 +1062,7 @@ What it is for: tells apart four kinds of sound claim by how far each goes: a fi
 
 Answer: **“A difference between two things”**
 
-Now the key’s question for a claim that holds: what does it say the figures show? The claim is “Books from West are returned late more often than books from East: 15 in 100 against 12”. It sets two libraries side by side and says which is later more often, and nothing else. For each library the late loans are divided by the total: 1,104 ÷ 9,200 = 0.12, which is 12 in 100, and 1,365 ÷ 9,100 = 0.15, which is 15 in 100. The two are alike and counted alike, and the numbers are given.
+Now the question for a claim that holds: what does it say the figures show? The claim is “Books from West are returned late more often than books from East: 15 in 100 against 12”. It sets two libraries side by side and says which is later more often, and nothing else. For each library the late loans are divided by the total: 1,104 ÷ 9,200 = 0.12, which is 12 in 100, and 1,365 ÷ 9,100 = 0.15, which is 15 in 100. The two are alike and counted alike, and the numbers are given.
 
 Still possible: **A fair comparison**. Ruled out: **A fair count**, **A real change** and **A fair test**.
 
@@ -1082,17 +1082,17 @@ Still possible: **A fair comparison**. Ruled out: **A fair count**, **A real cha
 
 For **A fair test** you must be able to point to this: people or things split into groups at random, one group given the thing and the other not, both counted the same way afterwards, and a difference between the groups that the claim says the thing caused. The claim here says nothing about what made West later, and nothing in the case forms the libraries into groups by lottery. **A fair comparison** is for a claim that stops at which is bigger, and this claim does.
 
-It is the question from the school and its reading program. Does the claim stop at which group is ahead, or does it say what made the gap? If it says what made the gap, who decided which group each person or thing was in? Here the claim stops at which library is later, so the key’s answer is **“A difference between two things”**.
+It is the question from the school and its reading program. Does the claim stop at which group is ahead, or does it say what made the gap? If it says what made the gap, who decided which group each person or thing was in? Here the claim stops at which library is later, so the answer is **“A difference between two things”**.
 
 **Does it look like a case you know?**
 
-The key has given its answer. Now take a second look of a different kind: does this case look like one you know? It should bring back the two bus routes: two things of one kind, counted one way, with their numbers given, and a claim that says which is later more often.
+You have an answer. Now take a second look of a different kind: does this case look like one you know? It should bring back the two bus lines: two things of one kind, counted one way, with their numbers given, and a claim that says which is later more often.
 
-Here the key and the likeness agree, so the answer stands. The key’s question comes first, because it makes you point at words in the case. The likeness is only a second look. When the two disagree, do not pick the one you prefer. Go back to the key’s question and find the words in the case that answer it. The second whole case shows how.
+Here the likeness agrees with the answer, so the answer stands. The question comes first, because it makes you point at words in the case. The likeness is only a second look. When the two disagree, do not pick the one you prefer. Go back to the question and find the words in the case that answer it. The second whole case shows how.
 
 ### 33. A second whole claim, where the story points the wrong way
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 33 of 36*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 33 of 36*
 
 [reviewers only: card kind `worked`, id `worked-backs`]
 
@@ -1112,7 +1112,7 @@ Answer: **“Nothing goes wrong”**
 
 Take the parts in order. Who is in the figure: 300 adults with long-term back pain who were enrolled in the study and then split into two groups, and all 300 filled in the same form. That part holds. What the figure counts: a pain score on the same 10-point form for both groups. That part holds. What it is set beside: the usual-care group, with both groups’ averages and sizes given. That part holds.
 
-Then the last part, where a claim of cause has to stand on how the groups were formed. The words are “A computer drew 150 of them by lottery for a daily stretching routine” and “everyone filled in the same pain form”. A lottery formed the groups, so nothing else is likelier to be in one group than the other. Every part holds, so the key’s answer is **“Nothing goes wrong”**.
+Then the last part, where a claim of cause has to stand on how the groups were formed. The words are “A computer drew 150 of them by lottery for a daily stretching routine” and “everyone filled in the same pain form”. A lottery formed the groups, so nothing else is likelier to be in one group than the other. Every part holds, so the answer is **“Nothing goes wrong”**.
 
 Still possible: all four names this unit teaches.
 
@@ -1124,7 +1124,7 @@ What it is for: tells apart four kinds of sound claim by how far each goes: a fi
 
 Answer: **“One thing causing another”**
 
-Now the key’s question for a claim that holds. The case sets two groups side by side with their averages, 3.1 and 4.4, and a gap of 4.4 − 3.1 = 1.3 points. But look at the claim: “Daily stretching reduced back pain: 3.1 against 4.4”. It does not stop at which group is ahead. It says that stretching reduced the pain.
+Now the question for a claim that holds. The case sets two groups side by side with their averages, 3.1 and 4.4, and a gap of 4.4 − 3.1 = 1.3 points. But look at the claim: “Daily stretching reduced back pain: 3.1 against 4.4”. It does not stop at which group is ahead. It says that stretching reduced the pain.
 
 Still possible: **A fair test**. Ruled out: **A fair count**, **A real change** and **A fair comparison**.
 
@@ -1144,21 +1144,21 @@ Still possible: **A fair test**. Ruled out: **A fair count**, **A real change** 
 
 For **A fair comparison** you must be able to point to this: two groups, places or things of the same kind, counted the same way over the same period, the numbers given and not only a percentage, no different mix of easy and hard cases hidden inside them, and a claim that says which is bigger, likelier or riskier and stops there. The case has all of that, and the claim goes past it. It says what made the gap. That is what **A fair test** needs: people or things split into groups at random, one group given the thing and the other not, both counted the same way afterwards, and a difference between the groups that the claim says the thing caused, and the case has that too, because a lottery formed the groups.
 
-When a claim says what made the gap, and a lottery formed the groups, the key’s answer is **“One thing causing another”**. The claim is allowed to say it. A claim that stopped at "3.1 against 4.4" would have been **A fair comparison**.
+When a claim says what made the gap, and a lottery formed the groups, the answer is **“One thing causing another”**. The claim is allowed to say it. A claim that stopped at "3.1 against 4.4" would have been **A fair comparison**.
 
 **Does it look like a case you know?**
 
-Now the second look: does this case look like one you know? Two groups with their averages side by side, one given a routine and one given the usual, may bring back the school and its reading groups first. In that case the claim only said which group was ahead, and the case was **A fair comparison**. So here the likeness and the key seem to disagree.
+Now the second look: does this case look like one you know? Two groups with their averages side by side, one given a routine and one given the usual, may bring back the school and its reading groups first. In that case the claim only said which group was ahead, and the case was **A fair comparison**. So here the likeness and the answer seem to disagree.
 
-When that happens, go back to the key’s question and find the words in the case that answer it. They are “Daily stretching reduced back pain: 3.1 against 4.4”. The reading groups’ claim has nothing like them: it stopped at the averages. This claim says what made the gap. So the case this one really looks like is the migraine test, where a lottery formed the groups and the claim said the tablet made the difference, and the key’s answer stands.
+When that happens, go back to the question and find the words in the case that answer it. They are “Daily stretching reduced back pain: 3.1 against 4.4”. The reading groups’ claim has nothing like them: it stopped at the averages. This claim says what made the gap. So the case this one really looks like is the migraine test, where a lottery formed the groups and the claim said the tablet made the difference, and the answer stands.
 
 ### The drill
 
 The cards are out of view from here, and every case is new. The drill has five stages. Cases that are easy to mix up are placed next to each other on purpose. This is meant to feel harder than the questions between the cards: telling look-alikes apart side by side is what makes the difference stick. Three of the cases come from an earlier unit, without being labelled. Nothing here is graded. A miss only decides what comes back. What you miss is asked again before the drill ends, and every name comes back on later days with a new case.
 
-Every claim in this unit holds, and that is on purpose: this is the unit about what such claims look like. A few claims from Unit One are mixed in without a label, and some of those do go wrong. When one appears, the key’s first question comes before this unit’s question, and its answer will be one of the other four.
+Every claim in this unit holds, and that is on purpose: this is the unit about what such claims look like. A few claims from Unit One are mixed in without a label, and some of those do go wrong. When one appears, the first question comes before this unit’s question, and its answer will be one of the other four.
 
-#### Stage 1 of 5. The key’s answers are shown for each case. Give the name that goes with them. This stage practises one thing: which name goes with which answer.
+#### Stage 1 of 5. The answers are shown for each case. Give the name that goes with them. This stage practises one thing: which name goes with which answer.
 
 The names offered are the four this unit teaches: A fair count / A real change / A fair comparison / A fair test.
 
@@ -1178,7 +1178,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **A real change**: The figure is given once, for one winter. Nothing is followed through time, and there is no earlier figure for it to have risen or fallen from.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **A real change**, the look-alike card’s lines follow: Both are sound claims about the same kind of figure, such as an average wait or a share, and in both the people or things counted are not in doubt. In **A fair count** the claim gives the figure once, for one group at one time. In **A real change** the claim follows one figure through two or more times and says it rose or fell. Does the claim give the figure once, for one time, or does it give the figure at two or more times and say that it rose or fell?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “A figure for a group, from a fair picture of it” (one tap opens the card).
 
 **Drill item 2 of 40**
@@ -1197,7 +1197,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **A fair comparison**: Two numbers appear, but they are one station in two years. Nothing else is set beside the figure, so the claim follows one thing through time.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **A fair comparison**, the look-alike card’s lines follow: Both put two figures into the claim, and both can sound like "this is lower than that". In **A real change** the two figures are one thing at two times, read the same way each time, and the claim says it rose or fell. In **A fair comparison** the two figures are two groups, places or things, or one thing and its usual level, set side by side, and the claim says which is bigger. Is the claim following one thing as time passes, or is it setting one thing beside another thing (or beside its own usual figure) and saying which is bigger?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “A figure that moved because the thing itself moved” (one tap opens the card).
 
 **Drill item 3 of 40**
@@ -1216,7 +1216,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **A fair test**: Nothing in the case says anyone formed the two warehouses into groups by lottery, and the claim does not say what makes the south one mislay more. It stops at which is ahead.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **A fair test**, the look-alike card’s lines follow: Both show two groups with a gap between them, and both can come with exactly the same numbers. In **A fair comparison** the claim stops at which group has more or less. In **A fair test** the claim goes on to say that what one group was given made the gap, and it may only do that because a lottery formed the groups. Does the claim stop at which group is ahead, or does it say what made the gap? If it says what made the gap, who decided which group each person or thing was in?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “Two things of the same kind, set side by side the same way” (one tap opens the card).
 
 **Drill item 4 of 40**
@@ -1235,7 +1235,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **A fair comparison**: **A fair comparison** is for a claim that stops at which group is ahead. This claim says the texts raised the number who passed.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **A fair comparison**, the look-alike card’s lines follow: Both show two groups with a gap between them, and both can come with exactly the same numbers. In **A fair comparison** the claim stops at which group has more or less. In **A fair test** the claim goes on to say that what one group was given made the gap, and it may only do that because a lottery formed the groups. Does the claim stop at which group is ahead, or does it say what made the gap? If it says what made the gap, who decided which group each person or thing was in?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “Groups formed by chance, one given the thing and one not” (one tap opens the card).
 
 **Drill item 5 of 40**
@@ -1254,7 +1254,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **A fair comparison**: A percentage and two numbers can look like a comparison, but both numbers are the same shop in two years. One thing is followed through time.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **A fair comparison**, the look-alike card’s lines follow: Both put two figures into the claim, and both can sound like "this is lower than that". In **A real change** the two figures are one thing at two times, read the same way each time, and the claim says it rose or fell. In **A fair comparison** the two figures are two groups, places or things, or one thing and its usual level, set side by side, and the claim says which is bigger. Is the claim following one thing as time passes, or is it setting one thing beside another thing (or beside its own usual figure) and saying which is bigger?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “A figure that moved because the thing itself moved” (one tap opens the card).
 
 **Drill item 6 of 40**
@@ -1273,7 +1273,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **A real change**: Two figures appear, but they are two districts at one time. Nothing is followed through time.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **A real change**, the look-alike card’s lines follow: Both put two figures into the claim, and both can sound like "this is lower than that". In **A real change** the two figures are one thing at two times, read the same way each time, and the claim says it rose or fell. In **A fair comparison** the two figures are two groups, places or things, or one thing and its usual level, set side by side, and the claim says which is bigger. Is the claim following one thing as time passes, or is it setting one thing beside another thing (or beside its own usual figure) and saying which is bigger?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “Two things of the same kind, set side by side the same way” (one tap opens the card).
 
 #### Stage 2 of 5. One question at a time.
@@ -1294,7 +1294,7 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **A figure for one group.**” The claim is “About 60% of our account holders use our phone app”. It gives one figure about one group at one time. The 651 of 700 who answered are why it holds, and the claim itself says nothing about change or cause. This answer leads to **A fair count**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **A rise or fall in one figure**: The figure is given once. No earlier figure is in the claim for it to have risen from.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 8 of 40**
@@ -1313,7 +1313,7 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **A rise or fall in one figure.**” The claim is “July passengers rose from 82,000 to 91,000”. It follows one figure, the ferry’s passengers, through two Julys and says that it rose by 91,000 − 82,000 = 9,000. This answer leads to **A real change**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **A difference between two things**: The two numbers are one ferry in two years, so nothing else is set beside the figure.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 9 of 40**
@@ -1332,7 +1332,7 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **A difference between two things.**” The claim is “Hospital B had more infections: 4 in 100 patients against 2 in 100”. It sets two wards of one kind side by side with the numbers behind each: 18 ÷ 900 = 0.02 and 36 ÷ 950 is about 0.04. It says which had more and stops. This answer leads to **A fair comparison**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **One thing causing another**: The claim does not say what made Hospital B’s number higher, and nothing in the case forms the hospitals into groups by lottery.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 10 of 40**
@@ -1351,7 +1351,7 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **One thing causing another.**” The claim is “The loyalty app raised weekly sales: $9,300 against $8,700”. It says what made the gap of 9,300 − 8,700 = $600 a week, the app, and the lottery is what lets it say so. This answer leads to **A fair test**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **A difference between two things**: The claim does not stop at which group of stores is ahead. It says the app raised sales.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 11 of 40**
@@ -1480,12 +1480,12 @@ Shown to you, with the words that decide each answer marked:
 **Shown as soon as you answer**
 
 - If you are right: “Right: **Who was counted.**” The claim speaks for all 400 staff, but the figure comes only from the 20 who happened to be in at eight on a Monday: “asked the 20 people who were working in the office at eight o'clock on Monday morning”. Early arrivals are not a fair picture of everyone.
-- If you miss: “The answer is …”, the same reason, and then the line built from the key for the answer you chose.
-- Then, right or wrong: “This case leaves the part of the key you have been taught. The questions that follow this answer come in a part of the course you have not reached, so the case stops here.”
+- If you miss: “The answer is …”, the same reason, and then the line built from the answers’ own wording for the answer you chose.
+- Then, right or wrong: “The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.”
 
-#### Stage 3 of 5. The first answer is shown. Answer the rest, then give the name. From here on your route is marked as well as the name: a right name reached by a wrong answer on the way counts as a miss.
+#### Stage 3 of 5. The first answer is shown. Answer the rest, then give the name. From here on your answers on the way are marked as well as the name: a right name reached by a wrong answer counts as a miss.
 
-Each question is shown with all of its answers from the key, in the key’s order, and the names offered are the four this unit teaches.
+Each question is shown with all of its answers, in order, and the names offered are the four this unit teaches.
 
 **Drill item 19 of 40**
 
@@ -1502,10 +1502,10 @@ Shown to you, with the words that decide each answer marked:
   - Why not **A real change**: The claim gives the figure once, for last year, and follows nothing through time.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - If you chose **A rise or fall in one figure**: The claim gives the figure once, for last year, and follows nothing through time.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A real change**, the look-alike card’s lines follow: Both are sound claims about the same kind of figure, such as an average wait or a share, and in both the people or things counted are not in doubt. In **A fair count** the claim gives the figure once, for one group at one time. In **A real change** the claim follows one figure through two or more times and says it rose or fell. Does the claim give the figure once, for one time, or does it give the figure at two or more times and say that it rose or fell?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A figure for a group, from a fair picture of it” (one tap opens the card).
 
 **Drill item 20 of 40**
@@ -1523,10 +1523,10 @@ Shown to you, with the words that decide each answer marked:
   - Why not **A fair count**: The claim gives the figure at two times and says it fell. A claim of the other name gives the figure once.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - If you chose **A figure for one group**: The claim gives the figure at two times and says it fell. A claim of the other name gives the figure once.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A fair count**, the look-alike card’s lines follow: Both are sound claims about the same kind of figure, such as an average wait or a share, and in both the people or things counted are not in doubt. In **A fair count** the claim gives the figure once, for one group at one time. In **A real change** the claim follows one figure through two or more times and says it rose or fell. Does the claim give the figure once, for one time, or does it give the figure at two or more times and say that it rose or fell?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A figure that moved because the thing itself moved” (one tap opens the card).
 
 **Drill item 21 of 40**
@@ -1544,10 +1544,10 @@ Shown to you, with the words that decide each answer marked:
   - Why not **A real change**: Two figures appear, but they are two insurers at one time. Nothing is followed through time.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - If you chose **A rise or fall in one figure**: Two figures appear, but they are two insurers at one time. Nothing is followed through time.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A real change**, the look-alike card’s lines follow: Both put two figures into the claim, and both can sound like "this is lower than that". In **A real change** the two figures are one thing at two times, read the same way each time, and the claim says it rose or fell. In **A fair comparison** the two figures are two groups, places or things, or one thing and its usual level, set side by side, and the claim says which is bigger. Is the claim following one thing as time passes, or is it setting one thing beside another thing (or beside its own usual figure) and saying which is bigger?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Two things of the same kind, set side by side the same way” (one tap opens the card).
 
 **Drill item 22 of 40**
@@ -1565,15 +1565,15 @@ Shown to you, with the words that decide each answer marked:
   - Why not **A fair comparison**: The claim does not stop at which group missed more. It says the call cut missed appointments.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - If you chose **A difference between two things**: The claim does not stop at which group missed more. It says the call cut missed appointments.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A fair comparison**, the look-alike card’s lines follow: Both show two groups with a gap between them, and both can come with exactly the same numbers. In **A fair comparison** the claim stops at which group has more or less. In **A fair test** the claim goes on to say that what one group was given made the gap, and it may only do that because a lottery formed the groups. Does the claim stop at which group is ahead, or does it say what made the gap? If it says what made the gap, who decided which group each person or thing was in?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Groups formed by chance, one given the thing and one not” (one tap opens the card).
 
-#### Stage 4 of 5. No help. Answer every question in the key’s order, then give the name.
+#### Stage 4 of 5. No help. Answer every question in order, then give the name.
 
-Each question is shown with all of its answers from the key, in the key’s order, and the names offered are the four this unit teaches.
+Each question is shown with all of its answers, in order, and the names offered are the four this unit teaches.
 
 **Drill item 23 of 40**
 
@@ -1588,10 +1588,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **Nothing goes wrong.** Each part holds. Nobody was favored in who was asked, and nearly everyone asked answered: “drew 1,000 membership numbers by lottery from the full list” and “until 940 had”. The claim gives one figure about one group.
   - If you chose **A rise or fall in one figure**: The figure is given once, for this year. Nothing is followed through time.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A real change**, the look-alike card’s lines follow: Both are sound claims about the same kind of figure, such as an average wait or a share, and in both the people or things counted are not in doubt. In **A fair count** the claim gives the figure once, for one group at one time. In **A real change** the claim follows one figure through two or more times and says it rose or fell. Does the claim give the figure once, for one time, or does it give the figure at two or more times and say that it rose or fell?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A figure for a group, from a fair picture of it” (one tap opens the card).
 
 **Drill item 24 of 40**
@@ -1607,10 +1607,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **Nothing goes wrong.** Each part holds. The count is the same every year and nobody could push it: “logs every arrival on the same system it has used since 2017” and “nobody's pay or funding depends on the count”. The claim says no more than that the figure rose.
   - If you chose **A figure for one group**: The claim gives the figure at two times and says it rose. A claim of the other name gives the figure once.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A fair count**, the look-alike card’s lines follow: Both are sound claims about the same kind of figure, such as an average wait or a share, and in both the people or things counted are not in doubt. In **A fair count** the claim gives the figure once, for one group at one time. In **A real change** the claim follows one figure through two or more times and says it rose or fell. Does the claim give the figure once, for one time, or does it give the figure at two or more times and say that it rose or fell?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A figure that moved because the thing itself moved” (one tap opens the card).
 
 **Drill item 25 of 40**
@@ -1621,15 +1621,15 @@ Each question is shown with all of its answers from the key, in the key’s orde
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **A fair comparison**.” What does the claim say the figures show? **A difference between two things.** The claim is “Branch Y gets more complaints: 3 in 100 transactions against 2 in 100”. It sets two branches of one kind side by side, with the numbers behind each: 1,800 ÷ 90,000 = 0.02 and 3,300 ÷ 110,000 = 0.03. It says which gets more and stops.
-  - Why not **A fair test**: The claim does not say what makes Branch Y’s number higher, and nothing in the case forms the branches into groups by lottery.
+- If you are right: “Right: **A fair comparison**.” What does the claim say the figures show? **A difference between two things.** The claim is “Branch Y gets more complaints: 3 in 100 transactions against 2 in 100”. It sets two of one kind side by side, with the numbers behind each: 1,800 ÷ 90,000 = 0.02 and 3,300 ÷ 110,000 = 0.03. It says which gets more and stops.
+  - Why not **A fair test**: The claim does not say what makes Y’s number higher, and nothing in the case forms the two into groups by lottery.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - Which part of the claim goes wrong first? **Nothing goes wrong.** Each part holds. The two branches are alike and counted alike: “Both serve the same kinds of members, both log every transaction in the same system”, and the numbers are given.
-  - If you chose **One thing causing another**: The claim does not say what makes Branch Y’s number higher, and nothing in the case forms the branches into groups by lottery.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - Which part of the claim goes wrong first? **Nothing goes wrong.** Each part holds. The two are alike and counted alike: “Both serve the same kinds of members, both log every transaction in the same system”, and the numbers are given.
+  - If you chose **One thing causing another**: The claim does not say what makes Y’s number higher, and nothing in the case forms the two into groups by lottery.
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A fair test**, the look-alike card’s lines follow: Both show two groups with a gap between them, and both can come with exactly the same numbers. In **A fair comparison** the claim stops at which group has more or less. In **A fair test** the claim goes on to say that what one group was given made the gap, and it may only do that because a lottery formed the groups. Does the claim stop at which group is ahead, or does it say what made the gap? If it says what made the gap, who decided which group each person or thing was in?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Two things of the same kind, set side by side the same way” (one tap opens the card).
 
 **Drill item 26 of 40**
@@ -1645,10 +1645,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **Nothing goes wrong.** Each part holds, and the claim says what made the gap, so the last part matters most. A lottery decided which intersections got the timers: “drew 300 of them by lottery to get new countdown timers” and “counted every pedestrian injury at every intersection the same way”.
   - If you chose **A difference between two things**: A claim that stopped at "12 against 20" would be the other name. This one says the timers cut the injuries.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A fair comparison**, the look-alike card’s lines follow: Both show two groups with a gap between them, and both can come with exactly the same numbers. In **A fair comparison** the claim stops at which group has more or less. In **A fair test** the claim goes on to say that what one group was given made the gap, and it may only do that because a lottery formed the groups. Does the claim stop at which group is ahead, or does it say what made the gap? If it says what made the gap, who decided which group each person or thing was in?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Groups formed by chance, one given the thing and one not” (one tap opens the card).
 
 **Drill item 27 of 40**
@@ -1664,10 +1664,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **Nothing goes wrong.** Each part holds. The *sample* is under 2 in 100 of the children, but a lottery chose it from a full list and nearly all were heard from: “drew 1,200 children by lottery from the full list of enrolled pupils” and “until 1,090 had answered”.
   - If you chose **A rise or fall in one figure**: The figure is given once. Nothing is followed through time.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A real change**, the look-alike card’s lines follow: Both are sound claims about the same kind of figure, such as an average wait or a share, and in both the people or things counted are not in doubt. In **A fair count** the claim gives the figure once, for one group at one time. In **A real change** the claim follows one figure through two or more times and says it rose or fell. Does the claim give the figure once, for one time, or does it give the figure at two or more times and say that it rose or fell?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A figure for a group, from a fair picture of it” (one tap opens the card).
 
 **Drill item 28 of 40**
@@ -1683,10 +1683,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **Nothing goes wrong.** Each part holds. The same counter has counted every vehicle in both years: “the same loop in the same place since 2012, counts every vehicle that crosses it”.
   - If you chose **A difference between two things**: Two figures appear, but they are one road in two years. Nothing else is set beside the figure.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A fair comparison**, the look-alike card’s lines follow: Both put two figures into the claim, and both can sound like "this is lower than that". In **A real change** the two figures are one thing at two times, read the same way each time, and the claim says it rose or fell. In **A fair comparison** the two figures are two groups, places or things, or one thing and its usual level, set side by side, and the claim says which is bigger. Is the claim following one thing as time passes, or is it setting one thing beside another thing (or beside its own usual figure) and saying which is bigger?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A figure that moved because the thing itself moved” (one tap opens the card).
 
 **Drill item 29 of 40**
@@ -1702,10 +1702,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **Nothing goes wrong.** Each part holds. The two districts are alike and every call was logged the same way: “cover districts of the same size and kind” and “in the same dispatch system”.
   - If you chose **A rise or fall in one figure**: Two figures appear, but they are two stations at one time. Nothing is followed through time.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A real change**, the look-alike card’s lines follow: Both put two figures into the claim, and both can sound like "this is lower than that". In **A real change** the two figures are one thing at two times, read the same way each time, and the claim says it rose or fell. In **A fair comparison** the two figures are two groups, places or things, or one thing and its usual level, set side by side, and the claim says which is bigger. Is the claim following one thing as time passes, or is it setting one thing beside another thing (or beside its own usual figure) and saying which is bigger?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Two things of the same kind, set side by side the same way” (one tap opens the card).
 
 **Drill item 30 of 40**
@@ -1721,10 +1721,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **Nothing goes wrong.** Each part holds. A lottery decided who used the new script, and both groups were counted the same way: “drew 300 of them by lottery to use a new call script” and “counted every ticket for both groups the same way”.
   - If you chose **A difference between two things**: The claim does not stop at which group closed more. It says the new script raised the number.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A fair comparison**, the look-alike card’s lines follow: Both show two groups with a gap between them, and both can come with exactly the same numbers. In **A fair comparison** the claim stops at which group has more or less. In **A fair test** the claim goes on to say that what one group was given made the gap, and it may only do that because a lottery formed the groups. Does the claim stop at which group is ahead, or does it say what made the gap? If it says what made the gap, who decided which group each person or thing was in?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Groups formed by chance, one given the thing and one not” (one tap opens the card).
 
 **Drill item 31 of 40**
@@ -1740,12 +1740,12 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **Nothing goes wrong.** Each part holds. A lottery chose the people from a full list, and 950 of 1,000 are in the figure: “draws 1,000 adults by lottery from the full list of the city's adults and reaches 950 of them”.
   - If you chose **A rise or fall in one figure**: The claim does not say that the figure rose or fell. It gives this month’s figure, once, and the list of earlier months is not part of what it says.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A real change**, the look-alike card’s lines follow: Both are sound claims about the same kind of figure, such as an average wait or a share, and in both the people or things counted are not in doubt. In **A fair count** the claim gives the figure once, for one group at one time. In **A real change** the claim follows one figure through two or more times and says it rose or fell. Does the claim give the figure once, for one time, or does it give the figure at two or more times and say that it rose or fell?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *The clinic’s wait, two years*, which was **A real change**. When a likeness and the key disagree, go by the words that answer the key’s question.
-- What would make it a different name: If the line the firm gave said that approval had risen from 47 to 52, the claim would follow one figure through time, and the key’s answer would be **“A rise or fall in one figure”**.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *The clinic’s wait, two years*, which was **A real change**. When a likeness and the answers disagree, go by the words that answer the question.
+- What would make it a different name: If the line the firm gave said that approval had risen from 47 to 52, the claim would follow one figure through time, and the answer would be **“A rise or fall in one figure”**.
 - Taught on: “A figure for a group, from a fair picture of it” (one tap opens the card).
 
 **Drill item 32 of 40**
@@ -1761,12 +1761,12 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **Nothing goes wrong.** Each part holds. The same scanner has counted every visitor for nine years, and nobody is paid on it: “counts every visitor who walks in, and it has been the same scanner at the same gate for nine years”.
   - If you chose **A difference between two things**: The two numbers are one zoo at two times. A claim of the other name sets two things side by side, or one thing beside its usual figure.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A fair comparison**, the look-alike card’s lines follow: Both put two figures into the claim, and both can sound like "this is lower than that". In **A real change** the two figures are one thing at two times, read the same way each time, and the claim says it rose or fell. In **A fair comparison** the two figures are two groups, places or things, or one thing and its usual level, set side by side, and the claim says which is bigger. Is the claim following one thing as time passes, or is it setting one thing beside another thing (or beside its own usual figure) and saying which is bigger?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *The reservoir beside its usual level*, which was **A fair comparison**. When a likeness and the key disagree, go by the words that answer the key’s question.
-- What would make it a different name: If the zoo had set this June beside the average of the last twenty Junes, it would be one thing beside its usual figure, and the key’s answer would be **“A difference between two things”**.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *The reservoir beside its usual level*, which was **A fair comparison**. When a likeness and the answers disagree, go by the words that answer the question.
+- What would make it a different name: If the zoo had set this June beside the average of the last twenty Junes, it would be one thing beside its usual figure, and the answer would be **“A difference between two things”**.
 - Taught on: “A figure that moved because the thing itself moved” (one tap opens the card).
 
 **Drill item 33 of 40**
@@ -1782,12 +1782,12 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **Nothing goes wrong.** Each part holds. The two towns are alike and every child in the grade was tested the same way: “towns of about the same size and the same kind of neighborhoods” and “gave every child in the same grade the same swim test in 2023”.
   - If you chose **One thing causing another**: The claim does not say the program made the gap, and nothing in the case says a lottery formed the towns into groups.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A fair test**, the look-alike card’s lines follow: Both show two groups with a gap between them, and both can come with exactly the same numbers. In **A fair comparison** the claim stops at which group has more or less. In **A fair test** the claim goes on to say that what one group was given made the gap, and it may only do that because a lottery formed the groups. Does the claim stop at which group is ahead, or does it say what made the gap? If it says what made the gap, who decided which group each person or thing was in?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *The reading program, the cause said*, which was **A fair test**. When a likeness and the key disagree, go by the words that answer the key’s question.
-- What would make it a different name: If the report said that the program raised passes, it would be a claim of cause with no lottery behind it, and the key’s first question would not give **“Nothing goes wrong”** for it.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *The reading program, the cause said*, which was **A fair test**. When a likeness and the answers disagree, go by the words that answer the question.
+- What would make it a different name: If the report said that the program raised passes, it would be a claim of cause with no lottery behind it, and the first question would not give **“Nothing goes wrong”** for it.
 - Taught on: “Two things of the same kind, set side by side the same way” (one tap opens the card).
 
 **Drill item 34 of 40**
@@ -1803,12 +1803,12 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **Nothing goes wrong.** Each part holds. A lottery decided which schools got tutoring, and every pupil sat the same test twice: “drew 200 of them by lottery to start an after-school tutoring program” and “sat the same test in September and again in May”.
   - If you chose **A difference between two things**: The claim does not stop at which group rose more. It says tutoring made the extra rise.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A fair comparison**, the look-alike card’s lines follow: Both show two groups with a gap between them, and both can come with exactly the same numbers. In **A fair comparison** the claim stops at which group has more or less. In **A fair test** the claim goes on to say that what one group was given made the gap, and it may only do that because a lottery formed the groups. Does the claim stop at which group is ahead, or does it say what made the gap? If it says what made the gap, who decided which group each person or thing was in?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *The reservoir through the summer*, which was **A real change**. When a likeness and the key disagree, go by the words that answer the key’s question.
-- What would make it a different name: If the state had only said that scores rose over the year, in schools without tutoring, it would follow one figure through time, and the key’s answer would be **“A rise or fall in one figure”**.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *The reservoir through the summer*, which was **A real change**. When a likeness and the answers disagree, go by the words that answer the question.
+- What would make it a different name: If the state had only said that scores rose over the year, in schools without tutoring, it would follow one figure through time, and the answer would be **“A rise or fall in one figure”**.
 - Taught on: “Groups formed by chance, one given the thing and one not” (one tap opens the card).
 
 **Drill item 35 of 40**
@@ -1828,8 +1828,8 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - If you are right: “Right: **What the number counts.**” Every member was weighed at both ends, so the people in the figure are fine. What is counted changed: “swapped its old scales for new ones that read 3 pounds lighter”. Three of the five pounds could come from the scales alone.
-- If you miss: “The answer is …”, the same reason, and then the line built from the key for the answer you chose.
-- Then, right or wrong: “This case leaves the part of the key you have been taught. The questions that follow this answer come in a part of the course you have not reached, so the case stops here.”
+- If you miss: “The answer is …”, the same reason, and then the line built from the answers’ own wording for the answer you chose.
+- Then, right or wrong: “The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.”
 
 **Drill item 36 of 40**
 
@@ -1848,8 +1848,8 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - If you are right: “Right: **What it is compared with.**” The figure is a percentage, and the claim leaves out what it is a percentage of: “Our new savings account pays 50% more interest”. Fifty percent more than 0.1% is still very little, and fifty percent more than 4% is a lot.
-- If you miss: “The answer is …”, the same reason, and then the line built from the key for the answer you chose.
-- Then, right or wrong: “This case leaves the part of the key you have been taught. The questions that follow this answer come in a part of the course you have not reached, so the case stops here.”
+- If you miss: “The answer is …”, the same reason, and then the line built from the answers’ own wording for the answer you chose.
+- Then, right or wrong: “The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.”
 
 #### Last stage. Each of these is something a person might say that uses one of this unit’s names, or reasons in one of its ways. Each has a fault. The first is worked for you. For the rest, answer before the fault is shown.
 
@@ -1920,8 +1920,8 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - The answer is: **A rise or fall in one figure.**
-- If you chose another answer, the line is built from the key, as for any other question.
-- The fault: The first half is a sound claim of the kind the key calls **“A rise or fall in one figure”**: one figure, followed through two years, counted the same way, and it fell, by 210 − 150 = 60. That is all it has earned. "So the streetlights worked" is a second claim, about what made it fall, and a fall in one figure does not say why. Nothing in the claim shows another road without the lights, or a lottery.
+- If you chose another answer, the line is built from the answers’ own wording, as for any other question.
+- The fault: The first half is a sound claim of the kind called **“A rise or fall in one figure”**: one figure, followed through two years, counted the same way, and it fell, by 210 − 150 = 60. That is all it has earned. "So the streetlights worked" is a second claim, about what made it fall, and a fall in one figure does not say why. Nothing in the claim shows another road without the lights, or a lottery.
 - The claim, put right (always the last thing shown): Burglaries on our road fell from 210 to 150, counted the same way both years. The new streetlights went up in the same period, and the figures do not show whether they are the reason.
 
 **Drill item 40 of 40**
@@ -1938,21 +1938,21 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - The answer is: **A figure for one group.**
-- If you chose another answer, the line is built from the key, as for any other question.
-- The fault: The first sentence is a sound claim of the kind the key calls **“A figure for one group”**: a *sample* drawn *at random*, and one figure for one group. What it has earned is "about 31%". "Exactly" claims more. A figure from a *sample* is off from the figure for the whole group by luck, and the *margin of error* for 1,000 people is about 1 ÷ √1,000 = 0.03, which is 3 points.
+- If you chose another answer, the line is built from the answers’ own wording, as for any other question.
+- The fault: The first sentence is a sound claim of the kind called **“A figure for one group”**: a *sample* drawn *at random*, and one figure for one group. What it has earned is "about 31%". "Exactly" claims more. A figure from a *sample* is off from the figure for the whole group by luck, and the *margin of error* for 1,000 people is about 1 ÷ √1,000 = 0.03, which is 3 points.
 - The claim, put right (always the last thing shown): We drew 1,000 adults by lottery and 31 in 100 of them smoke. So about 31% of the county’s adults smoke, give or take 3 points.
 
-**When the drill ends.** The learner sees their own results: first-try accuracy for each stage, whole routes beside single questions, the pair of names they mixed up most often, and what will come back and when. Anything missed was asked again before the drill ended. Nothing here is graded. A miss only decides what comes back.
+**When the drill ends.** The learner sees their own results: first-try accuracy for each stage, whole cases beside single questions, the pair of names they mixed up most often, and what will come back and when. Anything missed was asked again before the drill ended. Nothing here is graded. A miss only decides what comes back.
 
 ### 34. What to carry away
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 34 of 36*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 34 of 36*
 
 [reviewers only: card kind `recap`, id `recap-holds`]
 
-You have now run the key on claims that hold. This card puts the unit in one place, in the key’s words.
+You have now run the questions on claims that hold. This card puts the unit in one place, in the words used all the way through.
 
-**The key for this unit, in its own words**
+**This unit’s questions and answers**
 
 What does the claim say the figures show?
 - A figure for one group → A fair count
@@ -1967,7 +1967,7 @@ What does the claim say the figures show?
   - Do: 1. Find the sentence that says how the people were chosen. A lottery from a full list is what you want. If you cannot find one, you do not have an answer yet. 2. Find how many of those chosen answered, and what was done about the rest. Divide: the number who answered ÷ the number chosen. If most did, go on. If few did, stop: **A fair count** cannot be given yet. 3. If both hold, repeat the figure as the claim states it, for the group it names, with its margin: "about 41%, give or take 3 points". Leave out "more", "less", "rising" and "because". The claim has not earned any of them.
 - **A real change**: one figure that rose or fell, counted by the same rule and the same tool with the same effort to find it from start to end, nothing that could push it without the thing itself moving, and a claim that says no more than that it rose or fell.
   - Ask: "Was the figure counted the same way every time, and could anyone have pushed it, or looked harder later than earlier?"
-  - Do: 1. Find how the figure was counted each time: the same form, tool or definition. If it is not said, you do not yet have an answer. 2. Find whether anyone is paid, ranked or judged on it, and whether more effort went into finding things later. If either, stop: the key’s first question would not have given this answer. 3. If neither, repeat only that it rose or fell, and by how much, from this figure to that one. Leave out "because".
+  - Do: 1. Find how the figure was counted each time: the same form, tool or definition. If it is not said, you do not yet have an answer. 2. Find whether anyone is paid, ranked or judged on it, and whether more effort went into finding things later. If either, stop: the first question would not have given this answer. 3. If neither, repeat only that it rose or fell, and by how much, from this figure to that one. Leave out "because".
 - **A fair comparison**: two groups, places or things of the same kind, counted the same way over the same period, the numbers given and not only a percentage, no different mix of easy and hard cases hidden inside them, and a claim that says which is bigger, likelier or riskier and stops there.
   - Ask: "Are the two things alike, counted the same way over the same period, and are the numbers behind the comparison given?"
   - Do: 1. Check that the two are of the same kind: the same length, line, hours or sort of customer. If they are not, say that the comparison is not between alike things. 2. Check that both were counted the same way over the same time. Where the totals differ, divide each count by its own total to put them on the same scale. 3. If both hold, repeat which is bigger and by how much. Leave out any reason: the comparison has not earned one.
@@ -1982,11 +1982,11 @@ What does the claim say the figures show?
 - The size of the whole group does not decide how far a figure can be relied on. How the people were chosen, and how many of those chosen are in the figure, do. A margin says how far luck alone can move it.
 - **A fair test** is the only name that may say what made the difference, and the words to point to are the ones that say a lottery formed the groups.
 - The story can hint at more than the claim says. Go by what the claim says.
-- A claim that looks like these may still go wrong. The key’s first question comes before this one, so run it first and give this unit’s answer only if the first question gives **“Nothing goes wrong”**.
+- A claim that looks like these may still go wrong. The first question comes before this one, so run it first and give this unit’s answer only if the first question gives **“Nothing goes wrong”**.
 
 ### 35. Where would you meet this?
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 35 of 36*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 35 of 36*
 
 [reviewers only: card kind `transfer`, id `transfer-holds`]
 
@@ -1998,7 +1998,7 @@ Pick one of the four and name an occasion of your own: something you read, somet
 
 - **A fair count**: A poll, a survey or a company’s figure about its own customers, where you could find out how the people were chosen.
 - **A real change**: A figure you watched rise or fall with the same tool: a scale, a meter, an account or a record you keep yourself.
-- **A fair comparison**: Two things you compared, such as two plans, two schools or two routes. Were they alike, and did you have the numbers?
+- **A fair comparison**: Two things you compared, such as two plans, two schools or two bus lines. Were they alike, and did you have the numbers?
 - **A fair test**: A claim that something works that you have heard. Did it say who decided which group got it?
 
 Where was it? (tap one) At home / At work / In the news / On my phone
@@ -2009,7 +2009,7 @@ One line is enough. It is kept on this device only and is never marked.
 
 ### 36. A plan, if you want one
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 36 of 36*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 36 of 36*
 
 [reviewers only: card kind `plan`, id `plan-holds`]
 
@@ -2031,7 +2031,7 @@ Or write your own: If …, then I will …
 
 ## After the unit: what comes back on later days
 
-A name that is due returns as a case the learner has not seen, next to a case of the name they most often confuse it with. Each is run as a whole route. These are the fresh cases held back for that purpose: three for each name, one for each scheduled return. The first return is about two days after the drill, the next about a week after that, the next about three and a half weeks later.
+A name that is due returns as a case the learner has not seen, next to a case of the name they most often confuse it with. Each is run as a whole case: every question, then the name. These are the fresh cases held back for that purpose: three for each name, one for each scheduled return. The first return is about two days after the drill, the next about a week after that, the next about three and a half weeks later.
 
 **Return case 1 of 16**
 
@@ -2046,10 +2046,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **Nothing goes wrong.** Each part holds. A lottery chose the households from a full list, and 1,170 of 1,300 are in the figure: “drew 1,300 addresses by lottery from the utility's full list” and “until 1,170 households had answered”.
   - If you chose **A rise or fall in one figure**: The figure is given once. No earlier figure is in the claim for it to have risen or fallen from.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A real change**, the look-alike card’s lines follow: Both are sound claims about the same kind of figure, such as an average wait or a share, and in both the people or things counted are not in doubt. In **A fair count** the claim gives the figure once, for one group at one time. In **A real change** the claim follows one figure through two or more times and says it rose or fell. Does the claim give the figure once, for one time, or does it give the figure at two or more times and say that it rose or fell?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A figure for a group, from a fair picture of it” (one tap opens the card).
 
 **Return case 2 of 16**
@@ -2065,10 +2065,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **Nothing goes wrong.** Each part holds. A lottery chose the students from the full list, and 665 of 700 answered: “drew 700 student numbers by lottery from the registrar's full list” and “until 665 had”.
   - If you chose **A rise or fall in one figure**: The claim gives the figure once. It does not follow it through two or more times.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A real change**, the look-alike card’s lines follow: Both are sound claims about the same kind of figure, such as an average wait or a share, and in both the people or things counted are not in doubt. In **A fair count** the claim gives the figure once, for one group at one time. In **A real change** the claim follows one figure through two or more times and says it rose or fell. Does the claim give the figure once, for one time, or does it give the figure at two or more times and say that it rose or fell?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A figure for a group, from a fair picture of it” (one tap opens the card).
 
 **Return case 3 of 16**
@@ -2084,10 +2084,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **Nothing goes wrong.** Each part holds. A lottery chose the accounts from a full list, and 95 in 100 of those chosen answered: “drew 1,500 account numbers by lottery from its full list” and “until 1,425 had”.
   - If you chose **A rise or fall in one figure**: The figure is given once, and nothing in the claim says it rose or fell.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A real change**, the look-alike card’s lines follow: Both are sound claims about the same kind of figure, such as an average wait or a share, and in both the people or things counted are not in doubt. In **A fair count** the claim gives the figure once, for one group at one time. In **A real change** the claim follows one figure through two or more times and says it rose or fell. Does the claim give the figure once, for one time, or does it give the figure at two or more times and say that it rose or fell?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A figure for a group, from a fair picture of it” (one tap opens the card).
 
 **Return case 4 of 16**
@@ -2103,10 +2103,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **Nothing goes wrong.** Each part holds. A lottery chose the permits from a full list, and 540 of 600 were reached: “drew 600 permit numbers by lottery from the full list” and “reaching 540”.
   - If you chose **A rise or fall in one figure**: The claim gives the figure once, for one summer.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A real change**, the look-alike card’s lines follow: Both are sound claims about the same kind of figure, such as an average wait or a share, and in both the people or things counted are not in doubt. In **A fair count** the claim gives the figure once, for one group at one time. In **A real change** the claim follows one figure through two or more times and says it rose or fell. Does the claim give the figure once, for one time, or does it give the figure at two or more times and say that it rose or fell?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A figure for a group, from a fair picture of it” (one tap opens the card).
 
 **Return case 5 of 16**
@@ -2122,10 +2122,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **Nothing goes wrong.** Each part holds. The same scanner logged every loan in both years, and nobody could push the count: “logs every loan with the same barcode scanner it has used since 2016” and “nobody's pay or budget depends on the count”.
   - If you chose **A difference between two things**: The two numbers are one library in two years. Nothing else is set beside the figure.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A fair comparison**, the look-alike card’s lines follow: Both put two figures into the claim, and both can sound like "this is lower than that". In **A real change** the two figures are one thing at two times, read the same way each time, and the claim says it rose or fell. In **A fair comparison** the two figures are two groups, places or things, or one thing and its usual level, set side by side, and the claim says which is bigger. Is the claim following one thing as time passes, or is it setting one thing beside another thing (or beside its own usual figure) and saying which is bigger?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A figure that moved because the thing itself moved” (one tap opens the card).
 
 **Return case 6 of 16**
@@ -2141,10 +2141,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **Nothing goes wrong.** Each part holds. The same statement gave the balance each time: “records the balance of their savings account every month from the same bank statement”.
   - If you chose **A figure for one group**: The claim gives the balance at two times and says it rose. A claim of the other name gives a figure once.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A fair count**, the look-alike card’s lines follow: Both are sound claims about the same kind of figure, such as an average wait or a share, and in both the people or things counted are not in doubt. In **A fair count** the claim gives the figure once, for one group at one time. In **A real change** the claim follows one figure through two or more times and says it rose or fell. Does the claim give the figure once, for one time, or does it give the figure at two or more times and say that it rose or fell?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A figure that moved because the thing itself moved” (one tap opens the card).
 
 **Return case 7 of 16**
@@ -2160,10 +2160,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **Nothing goes wrong.** Each part holds. The same scale was used each time: “weighs himself every morning on the same bathroom scale”.
   - If you chose **A figure for one group**: The claim gives the figure at two times and says it fell.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A fair count**, the look-alike card’s lines follow: Both are sound claims about the same kind of figure, such as an average wait or a share, and in both the people or things counted are not in doubt. In **A fair count** the claim gives the figure once, for one group at one time. In **A real change** the claim follows one figure through two or more times and says it rose or fell. Does the claim give the figure once, for one time, or does it give the figure at two or more times and say that it rose or fell?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A figure that moved because the thing itself moved” (one tap opens the card).
 
 **Return case 8 of 16**
@@ -2179,10 +2179,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **Nothing goes wrong.** Each part holds. The same form counts every hive each spring, and nobody is paid on the number: “counts every hive in the county each spring from the same registration form”.
   - If you chose **A difference between two things**: The two numbers are one county in two years. Nothing else is set beside the figure.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A fair comparison**, the look-alike card’s lines follow: Both put two figures into the claim, and both can sound like "this is lower than that". In **A real change** the two figures are one thing at two times, read the same way each time, and the claim says it rose or fell. In **A fair comparison** the two figures are two groups, places or things, or one thing and its usual level, set side by side, and the claim says which is bigger. Is the claim following one thing as time passes, or is it setting one thing beside another thing (or beside its own usual figure) and saying which is bigger?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A figure that moved because the thing itself moved” (one tap opens the card).
 
 **Return case 9 of 16**
@@ -2198,10 +2198,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **Nothing goes wrong.** Each part holds. The two pharmacies are alike and every prescription was checked the same way: “Both fill the same kinds of prescriptions and check every one the same way”.
   - If you chose **A rise or fall in one figure**: Two figures appear, but they are two pharmacies at one time. Nothing is followed through time.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A real change**, the look-alike card’s lines follow: Both put two figures into the claim, and both can sound like "this is lower than that". In **A real change** the two figures are one thing at two times, read the same way each time, and the claim says it rose or fell. In **A fair comparison** the two figures are two groups, places or things, or one thing and its usual level, set side by side, and the claim says which is bigger. Is the claim following one thing as time passes, or is it setting one thing beside another thing (or beside its own usual figure) and saying which is bigger?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Two things of the same kind, set side by side the same way” (one tap opens the card).
 
 **Return case 10 of 16**
@@ -2217,10 +2217,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **Nothing goes wrong.** Each part holds. The stores are alike and every sale and return was logged the same way: “two stores of the same size in similar malls” and “Every sale and every return was logged in the same system for the whole year”.
   - If you chose **One thing causing another**: The claim does not say what makes Store 2’s returns higher, and nothing in the case forms the stores into groups by lottery.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A fair test**, the look-alike card’s lines follow: Both show two groups with a gap between them, and both can come with exactly the same numbers. In **A fair comparison** the claim stops at which group has more or less. In **A fair test** the claim goes on to say that what one group was given made the gap, and it may only do that because a lottery formed the groups. Does the claim stop at which group is ahead, or does it say what made the gap? If it says what made the gap, who decided which group each person or thing was in?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Two things of the same kind, set side by side the same way” (one tap opens the card).
 
 **Return case 11 of 16**
@@ -2236,10 +2236,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **Nothing goes wrong.** Each part holds. The buildings are alike and every meter was read the same way: “two apartment buildings of the same size and age with the same kind of heating” and “read every meter”.
   - If you chose **A rise or fall in one figure**: The two figures are two buildings in one winter. Nothing is followed through time.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A real change**, the look-alike card’s lines follow: Both put two figures into the claim, and both can sound like "this is lower than that". In **A real change** the two figures are one thing at two times, read the same way each time, and the claim says it rose or fell. In **A fair comparison** the two figures are two groups, places or things, or one thing and its usual level, set side by side, and the claim says which is bigger. Is the claim following one thing as time passes, or is it setting one thing beside another thing (or beside its own usual figure) and saying which is bigger?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Two things of the same kind, set side by side the same way” (one tap opens the card).
 
 **Return case 12 of 16**
@@ -2255,10 +2255,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **Nothing goes wrong.** Each part holds. The two centers give the same test and were counted over the same year: “Both give the same test, use examiners trained the same way”.
   - If you chose **One thing causing another**: The claim does not say what makes fewer drivers pass at South, and nothing in the case says a lottery formed the centers.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A fair test**, the look-alike card’s lines follow: Both show two groups with a gap between them, and both can come with exactly the same numbers. In **A fair comparison** the claim stops at which group has more or less. In **A fair test** the claim goes on to say that what one group was given made the gap, and it may only do that because a lottery formed the groups. Does the claim stop at which group is ahead, or does it say what made the gap? If it says what made the gap, who decided which group each person or thing was in?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Two things of the same kind, set side by side the same way” (one tap opens the card).
 
 **Return case 13 of 16**
@@ -2274,10 +2274,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **Nothing goes wrong.** Each part holds, and the claim says what made the gap, so the last part matters most. A lottery chose who got the letter: “drew 5,000 of them by lottery to get a monthly letter” and “read every meter the same way for a year”.
   - If you chose **A difference between two things**: A claim that stopped at "700 against 730" would be the other name. This one says the letter cut the use.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A fair comparison**, the look-alike card’s lines follow: Both show two groups with a gap between them, and both can come with exactly the same numbers. In **A fair comparison** the claim stops at which group has more or less. In **A fair test** the claim goes on to say that what one group was given made the gap, and it may only do that because a lottery formed the groups. Does the claim stop at which group is ahead, or does it say what made the gap? If it says what made the gap, who decided which group each person or thing was in?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Groups formed by chance, one given the thing and one not” (one tap opens the card).
 
 **Return case 14 of 16**
@@ -2293,10 +2293,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **Nothing goes wrong.** Each part holds. A lottery chose who got the texts, and everyone had the same test: “drew 150 of them by lottery to get a daily text program” and “checked every person with the same breath test”.
   - If you chose **A difference between two things**: The claim does not stop at which group quit more. It says the text program helped them quit.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A fair comparison**, the look-alike card’s lines follow: Both show two groups with a gap between them, and both can come with exactly the same numbers. In **A fair comparison** the claim stops at which group has more or less. In **A fair test** the claim goes on to say that what one group was given made the gap, and it may only do that because a lottery formed the groups. Does the claim stop at which group is ahead, or does it say what made the gap? If it says what made the gap, who decided which group each person or thing was in?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Groups formed by chance, one given the thing and one not” (one tap opens the card).
 
 **Return case 15 of 16**
@@ -2312,10 +2312,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **Nothing goes wrong.** Each part holds. A lottery chose who used the app, and one log counted both groups: “drew 100 of them by lottery to use a new route-planning app” and “the same GPS log counted every delivery for both groups”.
   - If you chose **A difference between two things**: The claim does not stop at which group made more deliveries. It says the app raised the number.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A fair comparison**, the look-alike card’s lines follow: Both show two groups with a gap between them, and both can come with exactly the same numbers. In **A fair comparison** the claim stops at which group has more or less. In **A fair test** the claim goes on to say that what one group was given made the gap, and it may only do that because a lottery formed the groups. Does the claim stop at which group is ahead, or does it say what made the gap? If it says what made the gap, who decided which group each person or thing was in?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Groups formed by chance, one given the thing and one not” (one tap opens the card).
 
 **Return case 16 of 16**
@@ -2331,9 +2331,9 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **Nothing goes wrong.** Each part holds. A lottery chose who was coached, and everyone ran the same course: “drew 100 of them by lottery for a coached beginners' group” and “timed every member over the same 5 km course”.
   - If you chose **A difference between two things**: The claim does not stop at which group finished more. It says coaching got more of them to the finish.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A fair comparison**, the look-alike card’s lines follow: Both show two groups with a gap between them, and both can come with exactly the same numbers. In **A fair comparison** the claim stops at which group has more or less. In **A fair test** the claim goes on to say that what one group was given made the gap, and it may only do that because a lottery formed the groups. Does the claim stop at which group is ahead, or does it say what made the gap? If it says what made the gap, who decided which group each person or thing was in?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Groups formed by chance, one given the thing and one not” (one tap opens the card).
 

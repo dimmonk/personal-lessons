@@ -1,15 +1,15 @@
 # Learner view: Basic Math, Unit Two: How whole numbers split, repeat or are made up
 
-*Six kinds of problem about whole numbers, and a procedure worked out step by step for each.* Unit revision 1, built to lesson standard 1, status: draft.
+*Six kinds of problem about whole numbers, and a procedure worked out step by step for each.* Unit revision 2, built to lesson standard 1, status: draft.
 
 This file is generated from the data files by `tools/render-learner-view.mjs`. It shows every screen in the order a learner meets it. In the app one card is on screen at a time and the learner moves on when ready.
 
-- **Bold text in quotation marks** is the key’s own wording, printed from `key.js`. Bold names are the outcome names from the same file. Neither is typed anywhere else. "What you must be able to point to" lines and "How to tell them apart" lines are also printed from one place each (the key and the look-alike ledger).
+- **Bold text in quotation marks** is the subject’s own wording for its questions and answers, written once and printed everywhere. Bold names are the names, written once in the same place. Neither is typed anywhere else. "What you must be able to point to" lines and "How to tell them apart" lines are also printed from one place each (the subject’s questions and the pairs it compares).
 - ⟦Double brackets⟧ show the words the app marks in a case (one highlight style everywhere).
 - The line in italics under each heading is the app’s top bar. The line in square brackets after it is for reviewers and is not shown to the learner.
 - Headings, prompt wording and stage instructions that are the same in every unit are the app’s wording, not this unit’s.
 - "Shown as soon as you …" is what appears the moment the learner answers. Nothing is hidden behind a second tap the first time a case is met, or after a miss.
-- After every answer the app shows, in this order: the right answer in the key’s words; the reason, quoting the marked words; for a name, why the nearest wrong name fails; after a miss, a line about the answer the learner chose; and last a link to the card that taught it. Where a line about the learner’s own choice is not written for the case, the app builds it from the key, and this file says so in place of repeating it.
+- After every answer the app shows, in this order: the right answer; the reason, quoting the marked words; for a name, why the nearest wrong name fails; after a miss, a line about the answer the learner chose; and last a link to the card that taught it. Where a line about the learner’s own choice is not written for the case, the app builds it from the answers’ own wording, and this file says so in place of repeating it.
 
 ---
 
@@ -17,7 +17,7 @@ This file is generated from the data files by `tools/render-learner-view.mjs`. I
 
 ### 1. Six kinds of problem about whole numbers, and a procedure for each
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 1 of 7 · Card 1 of 62*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 7 · Card 1 of 62*
 
 [reviewers only: card kind `orient`, id `orient-whole`]
 
@@ -25,13 +25,13 @@ After this unit you can take a problem about whole numbers, such as whether 67 s
 
 Picture the planning of a school fair, with five questions coming up in one afternoon, every one of them about whole numbers. “We have 67 volunteers: can they stand in equal rows?” “These two ribbons, 60 cm and 84 cm long, are to be cut into pieces that are all the same length, with none left over: how long can each piece be at most?” “One stall restocks every 20 minutes and the other every 30 minutes: when do they restock together?” “There are 50 sweets for 7 children: how many are left over?” And one child with a calculator asks: “Can the number that multiplies by itself to give 2 ever be written down exactly?”
 
-The key’s first question, which Unit One taught, gives the same answer to all five: **“How whole numbers split, repeat or are made up”**. But they are five different questions about whole numbers, and a sixth, what a number is made of, belongs with them. Each has its own procedure, and a procedure for the wrong one still gives a number, with nothing in the number to say that it is wrong. So in this unit the order is always the same: first work out what the problem wants to know about its numbers, and only then solve it.
+The first question, which Unit One taught, gives the same answer to all five: **“How whole numbers split, repeat or are made up”**. But they are five different questions about whole numbers, and a sixth, what a number is made of, belongs with them. Each has its own procedure, and a procedure for the wrong one still gives a number, with nothing in the number to say that it is wrong. So in this unit the order is always the same: first work out what the problem wants to know about its numbers, and only then solve it.
 
 Unit One only sorted problems. This is the first unit in which you solve them, so three words need to be exact. A procedure is the fixed set of steps that solves one kind of problem, and it gives the right answer whatever the numbers are. The arithmetic, the dividing and the multiplying, can be done on a calculator: what this unit practises is which steps to take, and why. The working is the procedure carried out on one problem, with every number written down. A step is one stage of the working, and each step is named by what it is for.
 
-Each kind is taught the same way. First a problem of the kind, and the idea behind its procedure. Then two worked problems, in different parts of life, with every step computed and the reason for every step given; on one step in each, the reason is held back until you have chosen it. Then problems that you finish yourself. When all six kinds have been taught, the key’s question that tells them apart gets its own card, and then the drill mixes all six.
+Each kind is taught the same way. First a problem of the kind, and the idea behind its procedure. Then two worked problems, in different parts of life, with every step computed and the reason for every step given; on one step in each, the reason is held back until you have chosen it. Then problems that you finish yourself. When all six kinds have been taught, the question that tells them apart gets its own card, and then the drill mixes all six.
 
-**What Unit One taught, in one place.** The key’s first question is **“What does the problem ask you to work out?”** Its answers:
+**What Unit One taught, in one place.** The first question is **“What does the problem ask you to work out?”** Its answers:
 
 - **“How whole numbers split, repeat or are made up”**: give this answer when the problem is about whole numbers and asks whether they split into equal groups with nothing left over, what is left over, what a number is made of, when two things that repeat happen together, where a count ends on a loop such as the days of a week, or whether a number can be written exactly. **This unit is about these cases.**
 - **“A missing number, from a formula, a rate or totals”**: give this answer when the problem leaves out one number, or two, and gives a formula, a rate such as so much for each thing, or totals that the missing number must fit.
@@ -39,11 +39,11 @@ Each kind is taught the same way. First a problem of the kind, and the idea behi
 - **“How many ways something can turn out, or how likely it is”**: give this answer when the problem asks how many different ways something can be chosen or ordered, or how likely it is that at least one of several things happens, or that a test result is right.
 - **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”**: give this answer when the problem has a right-angled triangle, or two things of exactly the same shape at different sizes, and asks for a length, an area or a volume, or for how many times more area or volume one has than the other.
 
-Unit One also taught that two things are marked separately: the name you give a case, and your route to it, meaning the answers you gave to the key’s questions on the way.
+Two things are marked separately: the name you give a case, and your answers to the questions on the way to it.
 
 *(One tap on any of these lines opens the card in Unit One that taught it.)*
 
-**The part of the key this unit teaches.** This is a preview. You are not expected to follow it yet: every line is explained on the cards that come next. The question and its answers are in the key’s own words. Beside each answer, in plain words, is the thing it leads to. There are six of them, and each gets its name when it is taught.
+**The questions this unit teaches.** This is a preview. You are not expected to follow it yet: every line is explained on the cards that come next. The question and its answers are worded exactly as you will meet them. Beside each answer, in plain words, is the thing it leads to. There are six of them, and each gets its name when it is taught.
 
 What does the problem want to know about the number or numbers?
 - Whether one number splits into equal groups at all → testing whether one number splits evenly
@@ -76,7 +76,7 @@ Each name is taught through cases first. After every step you answer one questio
 
 ### 2. A number that will not split
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 1 of 7 · Card 2 of 62*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 7 · Card 2 of 62*
 
 [reviewers only: card kind `term`, id `term-prime`]
 
@@ -97,7 +97,7 @@ Two things are worth holding on to. The number 2 is the only even one: every oth
 
 ### 3. Testing whether one number splits evenly
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 1 of 7 · Card 3 of 62*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 7 · Card 3 of 62*
 
 [reviewers only: card kind `meet`, id `meet-prime`]
 
@@ -122,9 +122,9 @@ Notice what decides the kind. It is not that 59 is odd, or small. It is that the
 
 **What you must be able to point to.** One whole number, and the question whether any whole number smaller than it, other than 1, divides it exactly. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What does the problem want to know about the number or numbers?”**
+**The question:** **“What does the problem want to know about the number or numbers?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“Whether one number splits into equal groups at all”**
+**Its answer for a case like this one:** **“Whether one number splits into equal groups at all”**
 
 A problem like this is **Prime check**. The word “check” is meant exactly: the procedure checks one number against the small numbers that could share it out. If it finds a fit, the number can be split. If it finds none, the number is a *prime number*, and cannot.
 
@@ -132,7 +132,7 @@ You may also hear this called “primality test”. That means the same thing he
 
 ### 4. Prime check: the same thing in a different story
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 1 of 7 · Card 4 of 62*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 7 · Card 4 of 62*
 
 [reviewers only: card kind `again`, id `again-prime`]
 
@@ -165,7 +165,7 @@ That is all you point to, and it is why one name covers a market stall and a dra
 
 ### 5. Story and structure, now that there is something to solve
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 1 of 7 · Card 5 of 62*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 7 · Card 5 of 62*
 
 [reviewers only: card kind `lens`, id `lens-procedure`]
 
@@ -177,13 +177,13 @@ There is one new thing. Once the kind is chosen, you carry out its procedure on 
 
 Two things change on purpose from card to card: the words of the question (“is it possible”, “how many”, “how long”, “what is left”) and the setting. None of them tells you the kind. Only what is asked about the numbers does.
 
-**Stays the same from case to case:** the question the key asks of every problem in this unit: **“What does the problem want to know about the number or numbers?”**
+**Stays the same from case to case:** the question asked of every problem in this unit: **“What does the problem want to know about the number or numbers?”**
 
 **Changes on purpose:** the story; the people; the size of the numbers; how many numbers the problem gives; the words of the question (“is it possible”, “how many”, “how long”).
 
 ### 6. Prime check: what it is like
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 1 of 7 · Card 6 of 62*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 7 · Card 6 of 62*
 
 [reviewers only: card kind `portrait`, id `portrait-prime`]
 
@@ -214,7 +214,7 @@ In your own life you meet this when you try to arrange a group in even rows or t
 
 ### 7. A question about a new case
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 1 of 7 · Card 7 of 62*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 7 · Card 7 of 62*
 
 [reviewers only: card kind `check`, id `check-prime`]
 
@@ -229,7 +229,7 @@ The pieces you can tap:
 
 **Shown as soon as you tap**
 
-- If you are right: “Right: ‘wants to split them into equal groups, with more than one group and more than one visitor in each group.’.” The words “split them into equal groups, with more than one group and more than one visitor in each group” and “Is that possible?” give one number, 73, and ask only whether any packing of that kind exists. That is a yes or a no about one number, and nothing else is asked, so the key’s answer is **“Whether one number splits into equal groups at all”**. The key’s answer for this case is **“Whether one number splits into equal groups at all”**, and the name is **Prime check**.
+- If you are right: “Right: ‘wants to split them into equal groups, with more than one group and more than one visitor in each group.’.” The words “split them into equal groups, with more than one group and more than one visitor in each group” and “Is that possible?” give one number, 73, and ask only whether any packing of that kind exists. That is a yes or a no about one number, and nothing else is asked, so the answer is **“Whether one number splits into equal groups at all”**. The answer for this case is **“Whether one number splits into equal groups at all”**, and the name is **Prime check**.
 - If you miss: “The words are ‘wants to split them into equal groups, with more than one group and more than one visitor in each group.’.” The same reason follows, and then a line about the piece you tapped:
   - “A tour guide has 73 visitors”: That gives the one number. You are asked for the words that say what has to be true of the groups.
   - “Is that possible?”: That is the question, a yes or a no. The words that say what has to be true of the groups come before it.
@@ -237,7 +237,7 @@ The pieces you can tap:
 
 ### 8. The number that multiplies by itself
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 1 of 7 · Card 8 of 62*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 7 · Card 8 of 62*
 
 [reviewers only: card kind `term`, id `term-sqroot`]
 
@@ -258,7 +258,7 @@ Finding the two whole numbers whose products with themselves sit either side of 
 
 ### 9. Worked: is 67 a prime number?
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 1 of 7 · Card 9 of 62*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 7 · Card 9 of 62*
 
 [reviewers only: card kind `solved`, id `solved-prime-1`]
 
@@ -307,7 +307,7 @@ If 67 could be split into equal rows, with more than one row and more than one s
 
 ### 10. Worked again: is 119 a prime number?
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 1 of 7 · Card 10 of 62*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 7 · Card 10 of 62*
 
 [reviewers only: card kind `solved`, id `solved-prime-2`]
 
@@ -356,7 +356,7 @@ The working ended the moment a prime fitted, because one exact fit is all that i
 
 ### 11. A question about a new case
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 1 of 7 · Card 11 of 62*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 7 · Card 11 of 62*
 
 [reviewers only: card kind `check`, id `check-prime-last`]
 
@@ -389,7 +389,7 @@ The working ended the moment a prime fitted, because one exact fit is all that i
 
 ### 12. A question about a new case
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 1 of 7 · Card 12 of 62*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 7 · Card 12 of 62*
 
 [reviewers only: card kind `check`, id `check-prime-whole`]
 
@@ -422,7 +422,7 @@ The working ended the moment a prime fitted, because one exact fit is all that i
 
 ### 13. A number that shares another out exactly
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 2 of 7 · Card 13 of 62*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 7 · Card 13 of 62*
 
 [reviewers only: card kind `term`, id `term-factor`]
 
@@ -441,7 +441,7 @@ So 3 and 4 are a pair of *factor*s of 12, and so are 2 and 6. Every number has a
 
 ### 14. Breaking one number into the prime numbers that make it
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 2 of 7 · Card 14 of 62*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 7 · Card 14 of 62*
 
 [reviewers only: card kind `meet`, id `meet-factor`]
 
@@ -460,15 +460,15 @@ Stripped of its story, the case is this:
 
 What you are shown is one whole number and a question about what it is built from. The building blocks are the *prime number*s, and every whole number above 1 that is not itself a *prime number* is built from them. 60 is built from 2, 2, 3 and 5, because 2 × 2 × 3 × 5 = 60. There is only one list that works, whichever order you find the numbers in.
 
-The key’s wording for this kind has two halves. One is “the prime numbers that make it”, as in the puzzle. The other is “every way it splits”: how many ways 28 tables can be set out in equal rows, or which sizes of equal team 24 players allow. They are one kind because the second is built from the first. Every way of sharing a number out evenly uses some of its primes multiplied together, so once you know the primes you can list every way.
+The wording for this kind has two halves. One is “the prime numbers that make it”, as in the puzzle. The other is “every way it splits”: how many ways 28 tables can be set out in equal rows, or which sizes of equal team 24 players allow. They are one kind because the second is built from the first. Every way of sharing a number out evenly uses some of its primes multiplied together, so once you know the primes you can list every way.
 
 What separates this kind from the first is the size of the answer. The first kind answers a yes or a no. This one answers with a list, or with a count made from a list.
 
 **What you must be able to point to.** One whole number, and the question what it is made of: the prime numbers that multiply to give it, or every way it splits into equal groups. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What does the problem want to know about the number or numbers?”**
+**The question:** **“What does the problem want to know about the number or numbers?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“Every way one number splits, or the prime numbers that make it”**
+**Its answer for a case like this one:** **“Every way one number splits, or the prime numbers that make it”**
 
 A problem like this is **Prime factors**: the *factor*s of the number that are *prime number*s, written as a product. A whole number above 1 that is not a *prime number* is built from them in only one way.
 
@@ -476,7 +476,7 @@ You may also hear this called “prime factorisation” or “prime decompositio
 
 ### 15. Prime factors: the same thing in a different story
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 2 of 7 · Card 15 of 62*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 7 · Card 15 of 62*
 
 [reviewers only: card kind `again`, id `again-factor`]
 
@@ -509,7 +509,7 @@ So they are one kind, and both are answered from the primes of the number. That 
 
 ### 16. Prime factors: what it is like
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 2 of 7 · Card 16 of 62*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 7 · Card 16 of 62*
 
 [reviewers only: card kind `portrait`, id `portrait-factor`]
 
@@ -540,7 +540,7 @@ In your own life you meet this when you want every way to arrange or pack a numb
 
 ### 17. A question about a new case
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 2 of 7 · Card 17 of 62*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 7 · Card 17 of 62*
 
 [reviewers only: card kind `check`, id `check-factor`]
 
@@ -554,14 +554,14 @@ The pieces you can tap:
 
 **Shown as soon as you tap**
 
-- If you are right: “Right: ‘The curator asks visitors which prime numbers multiply together to give 45’.” The words “which prime numbers multiply together to give 45” give one number, 45, and ask for the prime numbers it is made of. That is more than a yes or a no about whether it splits, and it concerns one number, so the key’s answer is **“Every way one number splits, or the prime numbers that make it”**. The key’s answer for this case is **“Every way one number splits, or the prime numbers that make it”**, and the name is **Prime factors**.
+- If you are right: “Right: ‘The curator asks visitors which prime numbers multiply together to give 45’.” The words “which prime numbers multiply together to give 45” give one number, 45, and ask for the prime numbers it is made of. That is more than a yes or a no about whether it splits, and it concerns one number, so the answer is **“Every way one number splits, or the prime numbers that make it”**. The answer for this case is **“Every way one number splits, or the prime numbers that make it”**, and the name is **Prime factors**.
 - If you miss: “The words are ‘The curator asks visitors which prime numbers multiply together to give 45’.” The same reason follows, and then a line about the piece you tapped:
   - “A museum label reads 45”: That gives the one number. You are asked for the words that say what is to be found about it.
 - Taught on: “Breaking one number into the prime numbers that make it” (one tap opens the card).
 
 ### 18. Worked: the primes that make 84
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 2 of 7 · Card 18 of 62*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 7 · Card 18 of 62*
 
 [reviewers only: card kind `solved`, id `solved-factor-1`]
 
@@ -606,7 +606,7 @@ The primes split off, 2, 2, 3 and 7, multiply back to the number: 2 × 2 = 4, 4 
 
 ### 19. Worked again: every size of bunch for 30 roses
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 2 of 7 · Card 19 of 62*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 7 · Card 19 of 62*
 
 [reviewers only: card kind `solved`, id `solved-factor-2`]
 
@@ -655,7 +655,7 @@ The florist can make bunches of 2, 3, 5, 6, 10 or 15 roses: six different sizes.
 
 ### 20. A question about a new case
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 2 of 7 · Card 20 of 62*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 7 · Card 20 of 62*
 
 [reviewers only: card kind `check`, id `check-factor-last`]
 
@@ -686,7 +686,7 @@ The florist can make bunches of 2, 3, 5, 6, 10 or 15 roses: six different sizes.
 
 ### 21. A question about a new case
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 2 of 7 · Card 21 of 62*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 7 · Card 21 of 62*
 
 [reviewers only: card kind `check`, id `check-factor-whole`]
 
@@ -713,7 +713,7 @@ The florist can make bunches of 2, 3, 5, 6, 10 or 15 roses: six different sizes.
 
 ### 22. Prime check or Prime factors: telling them apart
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 2 of 7 · Card 22 of 62*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 7 · Card 22 of 62*
 
 [reviewers only: card kind `lookalike`, id `look-prime-factor`]
 
@@ -735,9 +735,9 @@ The first two kinds are easy to mix up when a problem is about one number, becau
 
 **Why this one and not the other**
 
-In Case A the leader asks whether the 57 scouts can be split into equal patrols, with more than one patrol and more than one scout in each. The answer is a yes or a no, and the key’s answer is **“Whether one number splits into equal groups at all”**.
+In Case A the leader asks whether the 57 scouts can be split into equal patrols, with more than one patrol and more than one scout in each. The answer is a yes or a no, and the answer is **“Whether one number splits into equal groups at all”**.
 
-In Case B the same leader asks which prime numbers multiply together to give 57. The answer is a list, and the key’s answer is **“Every way one number splits, or the prime numbers that make it”**.
+In Case B the same leader asks which prime numbers multiply together to give 57. The answer is a list, and the answer is **“Every way one number splits, or the prime numbers that make it”**.
 
 Both are about the same 57, and the working for one contains what the other needs: testing 57 finds that 3 fits, and 57 = 3 × 19. That is why they are easy to mix up. What differs is only what is asked, a verdict or a list.
 
@@ -745,7 +745,7 @@ Both are about the same 57, and the working for one contains what the other need
 
 Is a yes or a no wanted about one number, or a list of what it is made of, or of every way it splits?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Prime check | Prime factors |
 |---|---|---|
@@ -762,7 +762,7 @@ Is a yes or a no wanted about one number, or a list of what it is made of, or of
 
 ### 23. The biggest equal pieces for two numbers
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 3 of 7 · Card 23 of 62*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 7 · Card 23 of 62*
 
 [reviewers only: card kind `meet`, id `meet-hcf`]
 
@@ -787,9 +787,9 @@ For small numbers you can find the answer by listing what shares each number out
 
 **What you must be able to point to.** Two whole numbers, and the question what the largest whole number is that divides both exactly, so that both split into equal pieces of that size with nothing left over. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What does the problem want to know about the number or numbers?”**
+**The question:** **“What does the problem want to know about the number or numbers?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“The biggest equal piece two numbers both split into”**
+**Its answer for a case like this one:** **“The biggest equal piece two numbers both split into”**
 
 A problem like this is **Highest common factor**. In the name, “common” means that both numbers share it: the answer is a *factor* of the first number and also a *factor* of the second, and “highest” means the biggest such number.
 
@@ -797,7 +797,7 @@ You may also hear this called “greatest common divisor” or “HCF” or “G
 
 ### 24. Highest common factor: the same thing in a different story
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 3 of 7 · Card 24 of 62*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 7 · Card 24 of 62*
 
 [reviewers only: card kind `again`, id `again-hcf`]
 
@@ -830,7 +830,7 @@ The stories are different, and the kind is the same. That is what **Highest comm
 
 ### 25. Highest common factor: what it is like
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 3 of 7 · Card 25 of 62*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 7 · Card 25 of 62*
 
 [reviewers only: card kind `portrait`, id `portrait-hcf`]
 
@@ -861,7 +861,7 @@ You meet it when you cut something into equal pieces with no waste, when you lay
 
 ### 26. A question about a new case
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 3 of 7 · Card 26 of 62*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 7 · Card 26 of 62*
 
 [reviewers only: card kind `check`, id `check-hcf`]
 
@@ -876,7 +876,7 @@ The pieces you can tap:
 
 **Shown as soon as you tap**
 
-- If you are right: “Right: ‘She wants to make bunches that all hold the same number of flowers, with only tulips in some bunches and only daffodils in the others and none left over.’.” The words “make bunches that all hold the same number of flowers, with only tulips in some bunches and only daffodils in the others and none left over” and “What is the largest bunch size?” give two numbers, 30 and 45, and ask for pieces of one size that both split into with none left over. The question asks for the largest such size, which is **“The biggest equal piece two numbers both split into”**. The key’s answer for this case is **“The biggest equal piece two numbers both split into”**, and the name is **Highest common factor**.
+- If you are right: “Right: ‘She wants to make bunches that all hold the same number of flowers, with only tulips in some bunches and only daffodils in the others and none left over.’.” The words “make bunches that all hold the same number of flowers, with only tulips in some bunches and only daffodils in the others and none left over” and “What is the largest bunch size?” give two numbers, 30 and 45, and ask for pieces of one size that both split into with none left over. The question asks for the largest such size, which is **“The biggest equal piece two numbers both split into”**. The answer for this case is **“The biggest equal piece two numbers both split into”**, and the name is **Highest common factor**.
 - If you miss: “The words are ‘She wants to make bunches that all hold the same number of flowers, with only tulips in some bunches and only daffodils in the others and none left over.’.” The same reason follows, and then a line about the piece you tapped:
   - “A florist has 30 tulips and 45 daffodils.”: That gives the two numbers. You are asked for the words that say what the pieces must be like.
   - “What is the largest bunch size?”: That is the question. The words that say what the pieces must be like are in the sentence before it.
@@ -884,7 +884,7 @@ The pieces you can tap:
 
 ### 27. Worked: the biggest equal piece for 60 and 84
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 3 of 7 · Card 27 of 62*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 7 · Card 27 of 62*
 
 [reviewers only: card kind `solved`, id `solved-hcf-1`]
 
@@ -929,7 +929,7 @@ The largest square tile has a side of 12 cm, and the panel is cut into 5 tiles a
 
 ### 28. Worked again: the biggest equal piece for 126 and 90
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 3 of 7 · Card 28 of 62*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 7 · Card 28 of 62*
 
 [reviewers only: card kind `solved`, id `solved-hcf-2`]
 
@@ -974,7 +974,7 @@ The greatest gap is 18 m: the posts make 7 gaps along the 126 m fence and 5 gaps
 
 ### 29. A question about a new case
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 3 of 7 · Card 29 of 62*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 7 · Card 29 of 62*
 
 [reviewers only: card kind `check`, id `check-hcf-last`]
 
@@ -1005,7 +1005,7 @@ The greatest gap is 18 m: the posts make 7 gaps along the 126 m fence and 5 gaps
 
 ### 30. A question about a new case
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 3 of 7 · Card 30 of 62*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 7 · Card 30 of 62*
 
 [reviewers only: card kind `check`, id `check-hcf-whole`]
 
@@ -1031,7 +1031,7 @@ The greatest gap is 18 m: the posts make 7 gaps along the 126 m fence and 5 gaps
 
 ### 31. Prime factors or Highest common factor: telling them apart
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 3 of 7 · Card 31 of 62*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 7 · Card 31 of 62*
 
 [reviewers only: card kind `lookalike`, id `look-factor-hcf`]
 
@@ -1053,9 +1053,9 @@ The second and third kinds both talk about equal packs, and both are worked from
 
 **Why this one and not the other**
 
-Case A gives only the 48 rolls and asks for every size of equal pack they can be made into. One number is taken apart, and the key’s answer is **“Every way one number splits, or the prime numbers that make it”**.
+Case A gives only the 48 rolls and asks for every size of equal pack they can be made into. One number is taken apart, and the answer is **“Every way one number splits, or the prime numbers that make it”**.
 
-Case B gives 48 rolls and 60 buns, and asks for the largest pack size that works for both. Two numbers are given, and the question is the biggest piece that fits both. The key’s answer is **“The biggest equal piece two numbers both split into”**.
+Case B gives 48 rolls and 60 buns, and asks for the largest pack size that works for both. Two numbers are given, and the question is the biggest piece that fits both. The answer is **“The biggest equal piece two numbers both split into”**.
 
 Both are about equal packs, and both use the primes of the numbers. What differs is how many numbers there are, and what is asked of them: every size for one number, or the biggest size that works for two.
 
@@ -1063,7 +1063,7 @@ Both are about equal packs, and both use the primes of the numbers. What differs
 
 Is there one number to be taken apart, or are there two numbers that must both be cut into pieces of one size?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Prime factors | Highest common factor |
 |---|---|---|
@@ -1080,7 +1080,7 @@ Is there one number to be taken apart, or are there two numbers that must both b
 
 ### 32. Two repeating things happening together again
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 4 of 7 · Card 32 of 62*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 4 of 7 · Card 32 of 62*
 
 [reviewers only: card kind `meet`, id `meet-lcm`]
 
@@ -1105,9 +1105,9 @@ Listing the times works for small numbers and shows what the answer is: the firs
 
 **What you must be able to point to.** Two things that each repeat every so many seconds, days or turns, and the question when they next happen at the same time. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What does the problem want to know about the number or numbers?”**
+**The question:** **“What does the problem want to know about the number or numbers?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“When two things that repeat next happen together”**
+**Its answer for a case like this one:** **“When two things that repeat next happen together”**
 
 A problem like this is **Lowest common multiple**. In the name, a multiple of a number is what you get by counting in steps of that number: 3, 6, 9 and 12 are multiples of 3. “Common” means that both numbers have it, and “lowest” means the first such number: 12 is the lowest multiple that 3 and 4 have in common.
 
@@ -1115,7 +1115,7 @@ You may also hear this called “least common multiple” or “LCM”. Those wo
 
 ### 33. Lowest common multiple: the same thing in a different story
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 4 of 7 · Card 33 of 62*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 4 of 7 · Card 33 of 62*
 
 [reviewers only: card kind `again`, id `again-lcm`]
 
@@ -1148,7 +1148,7 @@ The stories are different, and the kind is the same. That is what **Lowest commo
 
 ### 34. Lowest common multiple: what it is like
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 4 of 7 · Card 34 of 62*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 4 of 7 · Card 34 of 62*
 
 [reviewers only: card kind `portrait`, id `portrait-lcm`]
 
@@ -1179,7 +1179,7 @@ You meet it with timetables that repeat (two buses, two bin collections), with j
 
 ### 35. A question about a new case
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 4 of 7 · Card 35 of 62*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 4 of 7 · Card 35 of 62*
 
 [reviewers only: card kind `check`, id `check-lcm`]
 
@@ -1194,7 +1194,7 @@ The pieces you can tap:
 
 **Shown as soon as you tap**
 
-- If you are right: “Right: ‘After how many days will both next be done on the same day?’.” The words “empties the bins every 6 days and another cleans the windows every 15 days” and “both next be done on the same day” give two jobs on separate schedules, every 6 days and every 15 days, and ask for the first day on which both fall. That is **“When two things that repeat next happen together”**. The key’s answer for this case is **“When two things that repeat next happen together”**, and the name is **Lowest common multiple**.
+- If you are right: “Right: ‘After how many days will both next be done on the same day?’.” The words “empties the bins every 6 days and another cleans the windows every 15 days” and “both next be done on the same day” give two jobs on separate schedules, every 6 days and every 15 days, and ask for the first day on which both fall. That is **“When two things that repeat next happen together”**. The answer for this case is **“When two things that repeat next happen together”**, and the name is **Lowest common multiple**.
 - If you miss: “The words are ‘After how many days will both next be done on the same day?’.” The same reason follows, and then a line about the piece you tapped:
   - “One cleaner empties the bins every 6 days and another cleans the windows every 15 days.”: That gives the two repeats, and they matter. But the words that say what has to be found about them come in the last sentence.
   - “Both jobs were done today.”: That says where the count starts. It does not say what has to be found.
@@ -1202,7 +1202,7 @@ The pieces you can tap:
 
 ### 36. Worked: when two buses next arrive together
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 4 of 7 · Card 36 of 62*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 4 of 7 · Card 36 of 62*
 
 [reviewers only: card kind `solved`, id `solved-lcm-1`]
 
@@ -1247,7 +1247,7 @@ The buses next arrive together after 60 minutes.
 
 ### 37. Worked again: when two tablets are next taken together
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 4 of 7 · Card 37 of 62*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 4 of 7 · Card 37 of 62*
 
 [reviewers only: card kind `solved`, id `solved-lcm-2`]
 
@@ -1292,7 +1292,7 @@ Ravi next takes both tablets together after 24 hours.
 
 ### 38. A question about a new case
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 4 of 7 · Card 38 of 62*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 4 of 7 · Card 38 of 62*
 
 [reviewers only: card kind `check`, id `check-lcm-last`]
 
@@ -1323,7 +1323,7 @@ Ravi next takes both tablets together after 24 hours.
 
 ### 39. A question about a new case
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 4 of 7 · Card 39 of 62*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 4 of 7 · Card 39 of 62*
 
 [reviewers only: card kind `check`, id `check-lcm-whole`]
 
@@ -1349,7 +1349,7 @@ Ravi next takes both tablets together after 24 hours.
 
 ### 40. Highest common factor or Lowest common multiple: telling them apart
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 4 of 7 · Card 40 of 62*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 4 of 7 · Card 40 of 62*
 
 [reviewers only: card kind `lookalike`, id `look-hcf-lcm`]
 
@@ -1371,9 +1371,9 @@ The third and fourth kinds start from two numbers and use the primes of both, an
 
 **Why this one and not the other**
 
-In Case A the two numbers are lengths of ribbon, to be cut into pieces of one length with none left over, and the question asks for the greatest such length. The key’s answer is **“The biggest equal piece two numbers both split into”**, and the answer is 8 m.
+In Case A the two numbers are lengths of ribbon, to be cut into pieces of one length with none left over, and the question asks for the greatest such length. The answer is **“The biggest equal piece two numbers both split into”**, and the answer is 8 m.
 
-In Case B the same two numbers are how often two alarms sound, and the question is when they next sound together. The key’s answer is **“When two things that repeat next happen together”**, and the answer is 48 minutes.
+In Case B the same two numbers are how often two alarms sound, and the question is when they next sound together. The answer is **“When two things that repeat next happen together”**, and the answer is 48 minutes.
 
 The two answers show the difference. A piece that fits into both ribbons cannot be longer than the shorter ribbon, 16 m, and the answer, 8, is below that. The time when both alarms sound together cannot come before the slower alarm has sounded once, at 24 minutes, and the answer, 48, is above that. The same two numbers are used in opposite ways, and what the problem asks decides which.
 
@@ -1381,7 +1381,7 @@ The two answers show the difference. A piece that fits into both ribbons cannot 
 
 Are the two numbers lengths or amounts to be cut into equal pieces, or are they how often two things repeat, with the question when they meet? A piece is never more than the smaller number, and a meeting is never before the bigger one.
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Highest common factor | Lowest common multiple |
 |---|---|---|
@@ -1398,7 +1398,7 @@ Are the two numbers lengths or amounts to be cut into equal pieces, or are they 
 
 ### 41. Leftovers, and counting round a loop
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 5 of 7 · Card 41 of 62*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 5 of 7 · Card 41 of 62*
 
 [reviewers only: card kind `meet`, id `meet-modrem`]
 
@@ -1423,9 +1423,9 @@ What decides the kind is a count and one group size, or one loop. If a problem h
 
 **What you must be able to point to.** A count, the size it is divided by (a group size, or a loop such as the 7 days of a week), and the question what is left over or where the count ends. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What does the problem want to know about the number or numbers?”**
+**The question:** **“What does the problem want to know about the number or numbers?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“What is left over, or where a count ends on a loop”**
+**Its answer for a case like this one:** **“What is left over, or where a count ends on a loop”**
 
 A problem like this is **Remainder**. In the name, the word means what is left over after a count has been divided into whole groups. For a loop it means how far past the last whole loop the count has gone.
 
@@ -1433,7 +1433,7 @@ You may also hear this called “clock arithmetic” or “modular arithmetic”
 
 ### 42. Remainder: the same thing in a different story
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 5 of 7 · Card 42 of 62*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 5 of 7 · Card 42 of 62*
 
 [reviewers only: card kind `again`, id `again-modrem`]
 
@@ -1466,7 +1466,7 @@ One is a share and the other is a loop, and one kind covers both. That is what *
 
 ### 43. Remainder: what it is like
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 5 of 7 · Card 43 of 62*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 5 of 7 · Card 43 of 62*
 
 [reviewers only: card kind `portrait`, id `portrait-modrem`]
 
@@ -1497,7 +1497,7 @@ You meet it when you share things out and some are left, when you work out a day
 
 ### 44. A question about a new case
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 5 of 7 · Card 44 of 62*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 5 of 7 · Card 44 of 62*
 
 [reviewers only: card kind `check`, id `check-modrem`]
 
@@ -1511,14 +1511,14 @@ The pieces you can tap:
 
 **Shown as soon as you tap**
 
-- If you are right: “Right: ‘How many pupils are left over once every team is full?’.” The words “puts them in teams of 4” and “How many pupils are left over once every team is full?” give a count, 45, and the size of a group, 4, and ask what is left over once every group is full. That is **“What is left over, or where a count ends on a loop”**. The key’s answer for this case is **“What is left over, or where a count ends on a loop”**, and the name is **Remainder**.
+- If you are right: “Right: ‘How many pupils are left over once every team is full?’.” The words “puts them in teams of 4” and “How many pupils are left over once every team is full?” give a count, 45, and the size of a group, 4, and ask what is left over once every group is full. That is **“What is left over, or where a count ends on a loop”**. The answer for this case is **“What is left over, or where a count ends on a loop”**, and the name is **Remainder**.
 - If you miss: “The words are ‘How many pupils are left over once every team is full?’.” The same reason follows, and then a line about the piece you tapped:
   - “A teacher has 45 pupils and puts them in teams of 4.”: That gives the count and the size of one group, and they matter. But the words that say what has to be found come in the last sentence.
 - Taught on: “Leftovers, and counting round a loop” (one tap opens the card).
 
 ### 45. Worked: the time 50 hours after 9 o’clock
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 5 of 7 · Card 45 of 62*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 5 of 7 · Card 45 of 62*
 
 [reviewers only: card kind `solved`, id `solved-modrem-1`]
 
@@ -1563,7 +1563,7 @@ Fifty hours after 9 o’clock, the clock shows 11 o’clock.
 
 ### 46. Worked again: the pencils left over
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 5 of 7 · Card 46 of 62*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 5 of 7 · Card 46 of 62*
 
 [reviewers only: card kind `solved`, id `solved-modrem-2`]
 
@@ -1608,7 +1608,7 @@ There are 4 pencils left over after 12 full boxes.
 
 ### 47. A question about a new case
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 5 of 7 · Card 47 of 62*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 5 of 7 · Card 47 of 62*
 
 [reviewers only: card kind `check`, id `check-modrem-last`]
 
@@ -1639,7 +1639,7 @@ There are 4 pencils left over after 12 full boxes.
 
 ### 48. A question about a new case
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 5 of 7 · Card 48 of 62*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 5 of 7 · Card 48 of 62*
 
 [reviewers only: card kind `check`, id `check-modrem-whole`]
 
@@ -1665,7 +1665,7 @@ There are 4 pencils left over after 12 full boxes.
 
 ### 49. Lowest common multiple or Remainder: telling them apart
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 5 of 7 · Card 49 of 62*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 5 of 7 · Card 49 of 62*
 
 [reviewers only: card kind `lookalike`, id `look-lcm-modrem`]
 
@@ -1687,9 +1687,9 @@ The fourth and fifth kinds both go round and round, and a problem can mention a 
 
 **Why this one and not the other**
 
-In Case A a tram stops every 7 minutes and a bus every 10 minutes, and the question is when they next stop together. Two things repeat, and the key’s answer is **“When two things that repeat next happen together”**. The answer is 70 minutes.
+In Case A a tram stops every 7 minutes and a bus every 10 minutes, and the question is when they next stop together. Two things repeat, and the answer is **“When two things that repeat next happen together”**. The answer is 70 minutes.
 
-In Case B there is one loop, the tram line of 7 stops, and a count of 100 stops that goes round it, and the question is where the count ends. The key’s answer is **“What is left over, or where a count ends on a loop”**. 100 stops are 14 whole loops of 7, which is 98 stops, with 2 left over, so the tram ends 2 stops on from stop 1, at stop 3.
+In Case B there is one loop, the tram line of 7 stops, and a count of 100 stops that goes round it, and the question is where the count ends. The answer is **“What is left over, or where a count ends on a loop”**. 100 stops are 14 whole loops of 7, which is 98 stops, with 2 left over, so the tram ends 2 stops on from stop 1, at stop 3.
 
 The 7 is a repeat in A and the size of a loop in B. What differs is whether two repeats have to be brought together, or one count has to be ended on a loop.
 
@@ -1697,7 +1697,7 @@ The 7 is a repeat in A and the size of a loop in B. What differs is whether two 
 
 Are there two things that each repeat, or one loop and a count that goes round it?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Lowest common multiple | Remainder |
 |---|---|---|
@@ -1714,7 +1714,7 @@ Are there two things that each repeat, or one loop and a count that goes round i
 
 ### 50. Whether a number has an exact value
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 6 of 7 · Card 50 of 62*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 6 of 7 · Card 50 of 62*
 
 [reviewers only: card kind `meet`, id `meet-irrat`]
 
@@ -1739,9 +1739,9 @@ Notice that nothing is being split into equal groups, so this is not the first k
 
 **What you must be able to point to.** A square root of a whole number, or pi, and the question whether it can be written exactly, as a fraction or as a decimal that ends. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What does the problem want to know about the number or numbers?”**
+**The question:** **“What does the problem want to know about the number or numbers?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“Whether a number can be written exactly”**
+**Its answer for a case like this one:** **“Whether a number can be written exactly”**
 
 A problem like this is **Irrational number**. In the name, “rational” means able to be written exactly as a fraction, and the “ir” in front means not: the number cannot be.
 
@@ -1749,7 +1749,7 @@ You may also hear this called “a number with no exact fraction”. That means 
 
 ### 51. Irrational number: the same thing in a different story
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 6 of 7 · Card 51 of 62*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 6 of 7 · Card 51 of 62*
 
 [reviewers only: card kind `again`, id `again-irrat`]
 
@@ -1782,7 +1782,7 @@ The two numbers are different sorts, a root and pi, and the question about them 
 
 ### 52. Irrational number: what it is like
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 6 of 7 · Card 52 of 62*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 6 of 7 · Card 52 of 62*
 
 [reviewers only: card kind `portrait`, id `portrait-irrat`]
 
@@ -1813,7 +1813,7 @@ You meet it on a calculator that shows a long decimal, in a measurement such as 
 
 ### 53. A question about a new case
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 6 of 7 · Card 53 of 62*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 6 of 7 · Card 53 of 62*
 
 [reviewers only: card kind `check`, id `check-irrat`]
 
@@ -1828,7 +1828,7 @@ The pieces you can tap:
 
 **Shown as soon as you tap**
 
-- If you are right: “Right: ‘Can the side be written exactly, as a fraction or a decimal that ends?’.” The words “Can the side be written exactly, as a fraction or a decimal that ends?” ask whether one number, the side of the bed, can be written exactly. Nothing is split into groups and nothing is shared out. That is **“Whether a number can be written exactly”**. The key’s answer for this case is **“Whether a number can be written exactly”**, and the name is **Irrational number**.
+- If you are right: “Right: ‘Can the side be written exactly, as a fraction or a decimal that ends?’.” The words “Can the side be written exactly, as a fraction or a decimal that ends?” ask whether one number, the side of the bed, can be written exactly. Nothing is split into groups and nothing is shared out. That is **“Whether a number can be written exactly”**. The answer for this case is **“Whether a number can be written exactly”**, and the name is **Irrational number**.
 - If you miss: “The words are ‘Can the side be written exactly, as a fraction or a decimal that ends?’.” The same reason follows, and then a line about the piece you tapped:
   - “A square flower bed has an area of 3 m².”: That gives the area, and it matters. But the words that say what has to be found about the side come later.
   - “Its side is the number that multiplies by itself to give 3.”: That says which number is meant. It does not say what has to be found about it.
@@ -1836,7 +1836,7 @@ The pieces you can tap:
 
 ### 54. Worked: the diagonal of a square tile
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 6 of 7 · Card 54 of 62*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 6 of 7 · Card 54 of 62*
 
 [reviewers only: card kind `solved`, id `solved-irrat-1`]
 
@@ -1885,7 +1885,7 @@ The diagonal cannot be written exactly. Rounded, it is about 1.41 m, and no deci
 
 ### 55. Worked again: the side of a square patio
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 6 of 7 · Card 55 of 62*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 6 of 7 · Card 55 of 62*
 
 [reviewers only: card kind `solved`, id `solved-irrat-2`]
 
@@ -1934,7 +1934,7 @@ The side of the patio is 9 m, and it can be written exactly.
 
 ### 56. A question about a new case
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 6 of 7 · Card 56 of 62*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 6 of 7 · Card 56 of 62*
 
 [reviewers only: card kind `check`, id `check-irrat-last`]
 
@@ -1967,7 +1967,7 @@ The side of the patio is 9 m, and it can be written exactly.
 
 ### 57. A question about a new case
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 6 of 7 · Card 57 of 62*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 6 of 7 · Card 57 of 62*
 
 [reviewers only: card kind `check`, id `check-irrat-whole`]
 
@@ -1994,7 +1994,7 @@ The side of the patio is 9 m, and it can be written exactly.
 
 ### 58. Prime check or Irrational number: telling them apart
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 6 of 7 · Card 58 of 62*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 6 of 7 · Card 58 of 62*
 
 [reviewers only: card kind `lookalike`, id `look-prime-irrat`]
 
@@ -2016,9 +2016,9 @@ The first and last kinds can give the very same answer, no, to problems about th
 
 **Why this one and not the other**
 
-In Case A the maker has 29 tiles and asks whether they can be laid in equal rows, with more than one row and more than one tile in each. A count is shared out, and the key’s answer is **“Whether one number splits into equal groups at all”**. The answer is no, because 29 is a *prime number*.
+In Case A the maker has 29 tiles and asks whether they can be laid in equal rows, with more than one row and more than one tile in each. A count is shared out, and the answer is **“Whether one number splits into equal groups at all”**. The answer is no, because 29 is a *prime number*.
 
-In Case B the same 29 is an area, and the question is whether the side, the *square root* of 29, can be written exactly. The key’s answer is **“Whether a number can be written exactly”**, and the answer is no again.
+In Case B the same 29 is an area, and the question is whether the side, the *square root* of 29, can be written exactly. The answer is **“Whether a number can be written exactly”**, and the answer is no again.
 
 The two problems give the same number and the same answer for different reasons: 29 cannot be shared out in equal rows, and its root cannot be written exactly. Only what the problem asks tells them apart.
 
@@ -2026,7 +2026,7 @@ The two problems give the same number and the same answer for different reasons:
 
 Is a count of things to be shared out in equal groups, or is a number to be written down exactly?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Prime check | Irrational number |
 |---|---|---|
@@ -2043,17 +2043,17 @@ Is a count of things to be shared out in equal groups, or is a number to be writ
 
 ### 59. The one question that tells the six kinds apart
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 7 of 7 · Card 59 of 62*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 7 of 7 · Card 59 of 62*
 
 [reviewers only: card kind `question`, id `q-w1`]
 
-At the foot of each kind’s first card you saw the key’s question with one answer under it. This card puts the question and its six answers in one place, as the key shows them, and says why the key asks it before any working.
+At the foot of each kind’s first card you saw the question with one answer under it. This card puts the question and its six answers in one place and says why it is asked before any working.
 
-**The key asks:** **“What does the problem want to know about the number or numbers?”**
+**The question:** **“What does the problem want to know about the number or numbers?”**
 
 **What it is for.** Tells apart six things a problem can ask about whole numbers, each worked by its own procedure.
 
-**Its answers, exactly as the key shows them**
+**Its answers**
 
 Each answer leads to one name, and so rules out the other five.
 
@@ -2082,7 +2082,7 @@ The numbers alone never say which procedure to use. The same 12 and 18 can be sp
 
 A wrong procedure gives a number just as neat as the right one, and nothing in the number says that it is wrong. So the number cannot tell you which procedure to use, or whether you used the right one. Only the question can, and only the words of the problem can answer the question.
 
-That is why this question comes before any working, and why every problem in this unit starts with it. In this unit it is the only question after the key’s first one, so its answer leads straight to a name, and the name leads to the procedure. Your route is the answer to the first question and then this one.
+That is why this question comes before any working, and why every problem in this unit starts with it. In this unit it is the only question after the first one, so its answer leads straight to a name, and the name leads to the procedure. Your answers on the way are your answer to the first question and then your answer to this one.
 
 **How to answer it from a case**
 
@@ -2105,13 +2105,13 @@ No problem in this unit shows two of the answers at once, because each answer as
 
 ### 60. A question about a new case
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 7 of 7 · Card 60 of 62*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 7 of 7 · Card 60 of 62*
 
 [reviewers only: card kind `check`, id `check-w1`]
 
 > A music box plays the same tune of 8 notes again and again without a pause. Which note of the tune is the 100th note it plays?
 
-**The key asks:** **“What does the problem want to know about the number or numbers?”**
+**The question:** **“What does the problem want to know about the number or numbers?”**
 
 - Whether one number splits into equal groups at all
 - Every way one number splits, or the prime numbers that make it
@@ -2122,7 +2122,7 @@ No problem in this unit shows two of the answers at once, because each answer as
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **What is left over, or where a count ends on a loop.**” The words “plays the same tune of 8 notes again and again” and “Which note of the tune is the 100th note it plays?” give one loop, a tune of 8 notes that goes round and round, and a count, 100, and ask where the count ends. That is the key’s answer **“What is left over, or where a count ends on a loop”**, and no second thing repeats. This answer leads to **Remainder**.
+- If you are right: “Right: **What is left over, or where a count ends on a loop.**” The words “plays the same tune of 8 notes again and again” and “Which note of the tune is the 100th note it plays?” give one loop, a tune of 8 notes that goes round and round, and a count, 100, and ask where the count ends. That is the answer **“What is left over, or where a count ends on a loop”**, and no second thing repeats. This answer leads to **Remainder**.
 - If you miss: “The answer is **What is left over, or where a count ends on a loop.**” The same reason follows, and then a line about the answer you chose:
   - If you chose **Whether one number splits into equal groups at all**: Give that answer when the problem gives one whole number and asks whether it can be split into equal groups, with more than one group and more than one in each, or whether it is a prime number. This case shows something else: the problem shares a count out in equal groups and asks what is left over, or gives one loop of a fixed length, such as the 7 days of a week or the 12 hours on a clock, and a count of moves round it, and asks where the count ends.
   - If you chose **Every way one number splits, or the prime numbers that make it**: Give that answer when the problem gives one whole number and asks for every way it splits into equal groups, or for the prime numbers that multiply to make it. This case shows something else: the problem shares a count out in equal groups and asks what is left over, or gives one loop of a fixed length, such as the 7 days of a week or the 12 hours on a clock, and a count of moves round it, and asks where the count ends.
@@ -2845,9 +2845,9 @@ After each answer, look at the slip named behind a wrong choice. Every wrong cho
 - If you chose Exact: pi = 3.14159265: You chose **Exact: pi = 3.14159265**. That is the answer you get when you take the digits you can see as the whole of pi, though they go on without ending.
 - Taught on: “Worked: the diagonal of a square tile” (one tap opens the card).
 
-#### Last stage. No help. First answer the key’s questions in order and give the kind of problem it is. Then work the problem with that procedure and choose the answer.
+#### Last stage. No help. First answer the questions in order and say what kind of problem it is. Then work the problem with that procedure and choose the answer.
 
-Each question is shown with all of its answers from the key, in the key’s order, and the names offered are the six this unit teaches.
+Each question is shown with all of its answers, in order, and the names offered are the six this unit teaches.
 
 **Drill item 29 of 54**
 
@@ -2866,8 +2866,8 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - If you are right: “Right: **How many ways something can turn out, or how likely it is.**” A drink, a main and a side are each picked from a list of their own, and the question asks how many different results that gives: “one drink out of 6, one main out of 5 and one side out of 4” and “How many different breakfasts can a customer build?”.
-- If you miss: “The answer is …”, the same reason, and then the line built from the key for the answer you chose.
-- Then, right or wrong: “This case leaves the part of the key you have been taught. The questions that follow this answer come in a part of the course you have not reached, so the case stops here.”
+- If you miss: “The answer is …”, the same reason, and then the line built from the answers’ own wording for the answer you chose.
+- Then, right or wrong: “The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.”
 
 **Drill item 30 of 54**
 
@@ -2886,8 +2886,8 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - If you are right: “Right: **A missing number, from a formula, a rate or totals.**” The problem gives a rate, so much for so many metres, and a new amount to scale it to: “sells 6 metres of chain for €15” and “How much will it cost her?”. The price is the number it leaves out.
-- If you miss: “The answer is …”, the same reason, and then the line built from the key for the answer you chose.
-- Then, right or wrong: “This case leaves the part of the key you have been taught. The questions that follow this answer come in a part of the course you have not reached, so the case stops here.”
+- If you miss: “The answer is …”, the same reason, and then the line built from the answers’ own wording for the answer you chose.
+- Then, right or wrong: “The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.”
 
 **Drill item 31 of 54**
 
@@ -2906,8 +2906,8 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - If you are right: “Right: **What an amount becomes over time, or how long it takes.**” One amount, the money in the jar, is followed through time: “Tomas adds €15 to it every month” and “How many months until the jar holds €300?”. It goes up by the same number every month, and the question asks how long it takes to reach a target.
-- If you miss: “The answer is …”, the same reason, and then the line built from the key for the answer you chose.
-- Then, right or wrong: “This case leaves the part of the key you have been taught. The questions that follow this answer come in a part of the course you have not reached, so the case stops here.”
+- If you miss: “The answer is …”, the same reason, and then the line built from the answers’ own wording for the answer you chose.
+- Then, right or wrong: “The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.”
 
 **Drill item 32 of 54**
 
@@ -2925,9 +2925,9 @@ Each question is shown with all of its answers from the key, in the key’s orde
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes.**” The width, the height and the brace make a *right-angled triangle*, because a gate has square corners. The problem gives two of its sides and asks for the third: “The gate is 1.5 m wide and 2 m high” and “How long is the brace?”.
-- If you miss: “The answer is …”, the same reason, and then the line built from the key for the answer you chose.
-- Then, right or wrong: “This case leaves the part of the key you have been taught. The questions that follow this answer come in a part of the course you have not reached, so the case stops here.”
+- If you are right: “Right: **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes.**” The width, the height and the brace make a *right-angled triangle*, because the rectangle has square corners. The problem gives two of its sides and asks for the third: “The gate is 1.5 m wide and 2 m high” and “How long is the brace?”.
+- If you miss: “The answer is …”, the same reason, and then the line built from the answers’ own wording for the answer you chose.
+- Then, right or wrong: “The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.”
 
 **Drill item 33 of 54**
 
@@ -2946,8 +2946,8 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - If you are right: “Right: **How many ways something can turn out, or how likely it is.**” A drink, a main and a side are each picked from a list of their own, and the question asks how many different results that gives: “one drink out of 6, one main out of 5 and one side out of 4” and “How many different breakfasts can a customer build?”.
-- If you miss: “The answer is …”, the same reason, and then the line built from the key for the answer you chose.
-- Then, right or wrong: “This case leaves the part of the key you have been taught. The questions that follow this answer come in a part of the course you have not reached, so the case stops here.”
+- If you miss: “The answer is …”, the same reason, and then the line built from the answers’ own wording for the answer you chose.
+- Then, right or wrong: “The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.”
 
 **Drill item 34 of 54**
 
@@ -2966,8 +2966,8 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - If you are right: “Right: **A missing number, from a formula, a rate or totals.**” The problem gives a rate, so much for so many metres, and a new amount to scale it to: “sells 6 metres of chain for €15” and “How much will it cost her?”. The price is the number it leaves out.
-- If you miss: “The answer is …”, the same reason, and then the line built from the key for the answer you chose.
-- Then, right or wrong: “This case leaves the part of the key you have been taught. The questions that follow this answer come in a part of the course you have not reached, so the case stops here.”
+- If you miss: “The answer is …”, the same reason, and then the line built from the answers’ own wording for the answer you chose.
+- Then, right or wrong: “The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.”
 
 **Drill item 35 of 54**
 
@@ -2992,7 +2992,7 @@ Each question is shown with all of its answers from the key, in the key’s orde
   The *square root* of a whole number is either a whole number or a number that can never be written exactly as a fraction. There is nothing in between, so landing exactly on a whole number multiplied by itself is the only way for it to be exact, and when it does not land there, a calculator can only round it.
 - If you chose Exact: 2.65: You chose **Exact: 2.65**. That is the answer you get when you read the rounded decimal on the calculator as the exact value.
 - If you chose Exact: 3: You chose **Exact: 3**. That is the answer you get when you take the nearest whole number as the exact value.
-- What does the problem ask you to work out? **How whole numbers split, repeat or are made up.** The problem asks “Can the side be written exactly, as a fraction or a decimal that ends?”, a question about whether one number can be written exactly. It is about the value of a number, with no amount followed through time and no hidden number for a calculation to fit, so the key’s first answer is **“How whole numbers split, repeat or are made up”**.
+- What does the problem ask you to work out? **How whole numbers split, repeat or are made up.** The problem asks “Can the side be written exactly, as a fraction or a decimal that ends?”, a question about whether one number can be written exactly. It is about the value of a number, with no amount followed through time and no hidden number for a calculation to fit, so the answer to the first question is **“How whole numbers split, repeat or are made up”**.
 - What does the problem want to know about the number or numbers? **Whether a number can be written exactly.** The words “Can the side be written exactly, as a fraction or a decimal that ends?” ask whether one number can be written exactly, which is **“Whether a number can be written exactly”**.
 - Why not **Prime check**: The problem asks for the exact value of a number, and nothing is shared out in equal groups. **Prime check** would be the name if it asked whether a count of things could be split in rows or teams.
 - Taught on: “Worked: the diagonal of a square tile” (one tap opens the card).
@@ -3020,7 +3020,7 @@ Each question is shown with all of its answers from the key, in the key’s orde
   A number can be split into equal groups only if two whole numbers multiply to give it, and the smaller of the two is never more than the *square root* of the number. So testing no further than the *square root* is enough. Testing the primes is enough too: a number that splits by 6 also splits by 2 and by 3, so leaving out the numbers that are not *prime number*s misses nothing.
 - If you chose Not prime: 3 × 30: You chose **Not prime: 3 × 30**. That is the answer you get when you round 89 ÷ 3 up to 30 and call 3 × 30 a fit, though that is not 89.
 - If you chose Not prime: 1 × 89: You chose **Not prime: 1 × 89**. That is the answer you get when you count 1 and 89 itself as a fit, though every number splits by 1 and by itself.
-- What does the problem ask you to work out? **How whole numbers split, repeat or are made up.** The problem asks “line them up in equal rows, with more than one row and more than one pot in each row”, a question about whether one whole number can be shared out in equal groups. Nothing in it changes as time passes, no hidden number has to be found from a calculation, and there is no shape or choice, so the key’s first answer is **“How whole numbers split, repeat or are made up”**.
+- What does the problem ask you to work out? **How whole numbers split, repeat or are made up.** The problem asks “line them up in equal rows, with more than one row and more than one pot in each row”, a question about whether one whole number can be shared out in equal groups. Nothing in it changes as time passes, no hidden number has to be found from a calculation, and there is no shape or choice, so the answer to the first question is **“How whole numbers split, repeat or are made up”**.
 - What does the problem want to know about the number or numbers? **Whether one number splits into equal groups at all.** The words “line them up in equal rows, with more than one row and more than one pot in each row” give one number and ask only whether anything other than 1 and itself shares it out exactly. That is a yes or a no about one number, which is **“Whether one number splits into equal groups at all”**.
 - Why not **Irrational number**: The problem shares a count out in equal groups. **Irrational number** is about whether a root or pi can be written exactly, and nothing here is a root or pi.
 - Taught on: “Worked: is 67 a prime number?” (one tap opens the card).
@@ -3048,7 +3048,7 @@ Each question is shown with all of its answers from the key, in the key’s orde
   A number can be split into equal groups only if two whole numbers multiply to give it, and the smaller of the two is never more than the *square root* of the number. So testing no further than the *square root* is enough. Testing the primes is enough too: a number that splits by 6 also splits by 2 and by 3, so leaving out the numbers that are not *prime number*s misses nothing.
 - If you chose Prime: it is odd and does not end in 5: You chose **Prime: it is odd and does not end in 5**. That is the answer you get when you judge by how the number looks, odd and not ending in 5, and never divide by 3.
 - If you chose Not prime: 5 × 10: You chose **Not prime: 5 × 10**. That is the answer you get when you read 51 = 5 × 10 + 1 as a fit and ignore the 1 left over, though a fit leaves nothing over.
-- What does the problem ask you to work out? **How whole numbers split, repeat or are made up.** The problem asks “share them out in equal piles, with more than one pile and more than one book in each pile”, a question about whether one whole number can be shared out in equal groups. Nothing in it changes as time passes, no hidden number has to be found from a calculation, and there is no shape or choice, so the key’s first answer is **“How whole numbers split, repeat or are made up”**.
+- What does the problem ask you to work out? **How whole numbers split, repeat or are made up.** The problem asks “share them out in equal piles, with more than one pile and more than one book in each pile”, a question about whether one whole number can be shared out in equal groups. Nothing in it changes as time passes, no hidden number has to be found from a calculation, and there is no shape or choice, so the answer to the first question is **“How whole numbers split, repeat or are made up”**.
 - What does the problem want to know about the number or numbers? **Whether one number splits into equal groups at all.** The words “share them out in equal piles, with more than one pile and more than one book in each pile” give one number and ask only whether anything other than 1 and itself shares it out exactly. That is a yes or a no about one number, which is **“Whether one number splits into equal groups at all”**.
 - Why not **Prime factors**: The problem asks only whether the number splits at all, and a yes or a no is all that is wanted. **Prime factors** would be the name if it asked what the number is made of, or for every way it splits.
 - Taught on: “Worked: is 67 a prime number?” (one tap opens the card).
@@ -3076,7 +3076,7 @@ Each question is shown with all of its answers from the key, in the key’s orde
   Every group size that fits exactly is a product of some of the primes of the number, and every product of some of them fits exactly, so building all the products lists every size. Using none of them gives 1 and using all of them gives the number itself, which are the cases the problem rules out.
 - If you chose 12: You chose **12**. That is the answer you get when you count 1 and 90 as well, though they give one group, or groups of one.
 - If you chose 3: You chose **3**. That is the answer you get when you count only the prime numbers and never multiply any of them together.
-- What does the problem ask you to work out? **How whole numbers split, repeat or are made up.** The problem asks “every way to set them out in equal rows”, a question about what one whole number is made of or how it can be shared out. It follows no amount through time, hides no number to be found from a calculation, and has no shape or choice, so the key’s first answer is **“How whole numbers split, repeat or are made up”**.
+- What does the problem ask you to work out? **How whole numbers split, repeat or are made up.** The problem asks “every way to set them out in equal rows”, a question about what one whole number is made of or how it can be shared out. It follows no amount through time, hides no number to be found from a calculation, and has no shape or choice, so the answer to the first question is **“How whole numbers split, repeat or are made up”**.
 - What does the problem want to know about the number or numbers? **Every way one number splits, or the prime numbers that make it.** The words “every way to set them out in equal rows” give one number and ask what it is made of, or every way it can be shared out. That is more than a yes or a no about one number, which is **“Every way one number splits, or the prime numbers that make it”**.
 - Why not **Prime check**: The problem asks for more than whether the number splits: it wants what the number is made of, or every way it splits. A yes or a no, which is what **Prime check** gives, would leave the question unanswered.
 - Taught on: “Worked: the primes that make 84” (one tap opens the card).
@@ -3103,7 +3103,7 @@ Each question is shown with all of its answers from the key, in the key’s orde
   A piece that fits into both numbers with nothing left over can only be built from primes that both numbers contain, and the biggest such piece uses every shared prime as many times as the number that has it fewer times. That is the largest *factor* the two numbers have in common.
 - If you chose 600 cm: You chose **600 cm**. That is the answer you get when you keep every prime that either number has, the most times either has it, which gives the first time two repeats meet and not the biggest piece that fits both.
 - If you chose 10 cm: You chose **10 cm**. That is the answer you get when you count a shared prime once, though both numbers have it more than once.
-- What does the problem ask you to work out? **How whole numbers split, repeat or are made up.** The problem asks “cut both into pieces of equal length with no wood wasted”, a question about pieces of one size that two whole numbers can both be split into. Nothing grows, no hidden number has to be found from a calculation, and there is no shape or chance, so the key’s first answer is **“How whole numbers split, repeat or are made up”**.
+- What does the problem ask you to work out? **How whole numbers split, repeat or are made up.** The problem asks “cut both into pieces of equal length with no wood wasted”, a question about pieces of one size that two whole numbers can both be split into. Nothing grows, no hidden number has to be found from a calculation, and there is no shape or chance, so the answer to the first question is **“How whole numbers split, repeat or are made up”**.
 - What does the problem want to know about the number or numbers? **The biggest equal piece two numbers both split into.** The words “cut both into pieces of equal length with no wood wasted” give two numbers and ask for the biggest piece that both can be cut into with nothing left over, which is **“The biggest equal piece two numbers both split into”**.
 - Why not **Lowest common multiple**: The problem asks for the biggest piece that fits into both numbers, and nothing repeats. **Lowest common multiple** would ask when two repeats meet, and its answer is never less than the bigger number, where this answer is never more than the smaller.
 - Taught on: “Worked: the biggest equal piece for 60 and 84” (one tap opens the card).
@@ -3130,7 +3130,7 @@ Each question is shown with all of its answers from the key, in the key’s orde
   The first time two repeats happen together must be a number that both numbers divide, so it has to contain every prime of each. It needs each prime as many times as the number that has it more times: with fewer, one of the numbers would not divide it, and with more, it would not be the first time.
 - If you chose 4 seconds: You chose **4 seconds**. That is the answer you get when you keep only the primes both numbers have, which gives the biggest piece that fits both and not the first time two repeats meet.
 - If you chose 96 seconds: You chose **96 seconds**. That is the answer you get when you multiply the two numbers together, which is a time when both happen but not the first, because the numbers share a prime.
-- What does the problem ask you to work out? **How whole numbers split, repeat or are made up.** The problem asks “one every 8 seconds and the other every 12 seconds”, a question about two repeats and when they coincide. The numbers are whole counts that repeat, and no amount is followed as it grows, so the key’s first answer is **“How whole numbers split, repeat or are made up”**.
+- What does the problem ask you to work out? **How whole numbers split, repeat or are made up.** The problem asks “one every 8 seconds and the other every 12 seconds”, a question about two repeats and when they coincide. The numbers are whole counts that repeat, and no amount is followed as it grows, so the answer to the first question is **“How whole numbers split, repeat or are made up”**.
 - What does the problem want to know about the number or numbers? **When two things that repeat next happen together.** The words “one every 8 seconds and the other every 12 seconds” give two repeating schedules and ask for the first time they coincide, which is **“When two things that repeat next happen together”**.
 - Why not **Highest common factor**: Here two schedules repeat and the question is when they first coincide, so the answer is not less than the bigger number. **Highest common factor** asks for a piece that fits into both numbers, and is never more than the smaller.
 - Taught on: “Worked: when two buses next arrive together” (one tap opens the card).
@@ -3157,7 +3157,7 @@ Each question is shown with all of its answers from the key, in the key’s orde
   The first time two repeats happen together must be a number that both numbers divide, so it has to contain every prime of each. It needs each prime as many times as the number that has it more times: with fewer, one of the numbers would not divide it, and with more, it would not be the first time.
 - If you chose 3 days: You chose **3 days**. That is the answer you get when you keep only the primes both numbers have, which gives the biggest piece that fits both and not the first time two repeats meet.
 - If you chose 54 days: You chose **54 days**. That is the answer you get when you multiply the two numbers together, which is a time when both happen but not the first, because the numbers share a prime.
-- What does the problem ask you to work out? **How whole numbers split, repeat or are made up.** The problem asks “delivers to a shop every 6 days and a second van every 9 days”, a question about two repeats and when they coincide. The numbers are whole counts that repeat, and no amount is followed as it grows, so the key’s first answer is **“How whole numbers split, repeat or are made up”**.
+- What does the problem ask you to work out? **How whole numbers split, repeat or are made up.** The problem asks “delivers to a shop every 6 days and a second van every 9 days”, a question about two repeats and when they coincide. The numbers are whole counts that repeat, and no amount is followed as it grows, so the answer to the first question is **“How whole numbers split, repeat or are made up”**.
 - What does the problem want to know about the number or numbers? **When two things that repeat next happen together.** The words “delivers to a shop every 6 days and a second van every 9 days” give two repeating schedules and ask for the first time they coincide, which is **“When two things that repeat next happen together”**.
 - Why not **Remainder**: Two things repeat, so there are two repeats to bring together. **Remainder** needs one loop, or one group size, and a count that goes round it.
 - Taught on: “Worked: when two buses next arrive together” (one tap opens the card).
@@ -3184,7 +3184,7 @@ Each question is shown with all of its answers from the key, in the key’s orde
   Every whole loop brings the count back to the place it started, so whole loops change nothing. Only what is left over after them moves you on, and it is moved from the start.
 - If you chose Monday: You chose **Monday**. That is the answer you get when you throw away the 1 left over and stay where you started.
 - If you chose Wednesday: You chose **Wednesday**. That is the answer you get when you count the place you start on as the first move, so you go one place too far.
-- What does the problem ask you to work out? **How whole numbers split, repeat or are made up.** The problem asks “Today is Monday. A tradesman says he will call back in 50 days”, a question about the part that is not in a whole group, or the place a count reaches on a loop. The numbers are whole counts, and no amount is followed through time, so the key’s first answer is **“How whole numbers split, repeat or are made up”**.
+- What does the problem ask you to work out? **How whole numbers split, repeat or are made up.** The problem asks “Today is Monday. A tradesman says he will call back in 50 days”, a question about the part that is not in a whole group, or the place a count reaches on a loop. The numbers are whole counts, and no amount is followed through time, so the answer to the first question is **“How whole numbers split, repeat or are made up”**.
 - What does the problem want to know about the number or numbers? **What is left over, or where a count ends on a loop.** The words “On which day of the week will he call?” give a count and one group size, or one loop, and ask for the part not in a whole group or for the place the count reaches, which is **“What is left over, or where a count ends on a loop”**.
 - Why not **Lowest common multiple**: There is one group size, or one loop, and a count that goes round it. **Lowest common multiple** needs two separate schedules, and asks when they first coincide.
 - Taught on: “Worked: the time 50 hours after 9 o’clock” (one tap opens the card).
@@ -3212,7 +3212,7 @@ Each question is shown with all of its answers from the key, in the key’s orde
   A number can be split into equal groups only if two whole numbers multiply to give it, and the smaller of the two is never more than the *square root* of the number. So testing no further than the *square root* is enough. Testing the primes is enough too: a number that splits by 6 also splits by 2 and by 3, so leaving out the numbers that are not *prime number*s misses nothing.
 - If you chose Prime: none of 2, 3 and 5 fits it: You chose **Prime: none of 2, 3 and 5 fits it**. That is the answer you get when you stop testing at 5 and never try 7, though 7 × 7 = 49 is not more than 133.
 - If you chose Not prime: 11 × 12: You chose **Not prime: 11 × 12**. That is the answer you get when you read 133 = 11 × 12 + 1 as a fit and ignore the 1 left over, though a fit leaves nothing over.
-- What does the problem ask you to work out? **How whole numbers split, repeat or are made up.** The problem asks “Can 133 be split into equal groups, with more than one group and more than one in each group?”, a question about whether one whole number can be shared out in equal groups. Nothing in it changes as time passes, no hidden number has to be found from a calculation, and there is no shape or choice, so the key’s first answer is **“How whole numbers split, repeat or are made up”**.
+- What does the problem ask you to work out? **How whole numbers split, repeat or are made up.** The problem asks “Can 133 be split into equal groups, with more than one group and more than one in each group?”, a question about whether one whole number can be shared out in equal groups. Nothing in it changes as time passes, no hidden number has to be found from a calculation, and there is no shape or choice, so the answer to the first question is **“How whole numbers split, repeat or are made up”**.
 - What does the problem want to know about the number or numbers? **Whether one number splits into equal groups at all.** The words “Can 133 be split into equal groups, with more than one group and more than one in each group?” give one number and ask only whether anything other than 1 and itself shares it out exactly. That is a yes or a no about one number, which is **“Whether one number splits into equal groups at all”**.
 - Why not **Irrational number**: The problem shares a count out in equal groups. **Irrational number** is about whether a root or pi can be written exactly, and nothing here is a root or pi.
 - Taught on: “Worked: is 67 a prime number?” (one tap opens the card).
@@ -3240,7 +3240,7 @@ Each question is shown with all of its answers from the key, in the key’s orde
   Pi has been proved to be a number that no fraction and no decimal that ends can equal. Any value written down for it, such as a fraction or a rounded decimal, is only close, and it differs from pi at some decimal place.
 - If you chose Exact: 22/7 is pi: You chose **Exact: 22/7 is pi**. That is the answer you get when you take the value in the textbook as the exact value, though it differs from pi in its digits.
 - If you chose Exact: pi = 3.14159265: You chose **Exact: pi = 3.14159265**. That is the answer you get when you take the digits you can see as the whole of pi, though they go on without ending.
-- What does the problem ask you to work out? **How whole numbers split, repeat or are made up.** The problem asks “Is pi exactly equal to 22/7?”, a question about whether one number can be written exactly. It is about the value of a number, with no amount followed through time and no hidden number for a calculation to fit, so the key’s first answer is **“How whole numbers split, repeat or are made up”**.
+- What does the problem ask you to work out? **How whole numbers split, repeat or are made up.** The problem asks “Is pi exactly equal to 22/7?”, a question about whether one number can be written exactly. It is about the value of a number, with no amount followed through time and no hidden number for a calculation to fit, so the answer to the first question is **“How whole numbers split, repeat or are made up”**.
 - What does the problem want to know about the number or numbers? **Whether a number can be written exactly.** The words “Is pi exactly equal to 22/7?” ask whether one number can be written exactly, which is **“Whether a number can be written exactly”**.
 - Why not **Prime check**: The problem asks for the exact value of a number, and nothing is shared out in equal groups. **Prime check** would be the name if it asked whether a count of things could be split in rows or teams.
 - Taught on: “Worked: the diagonal of a square tile” (one tap opens the card).
@@ -3267,7 +3267,7 @@ Each question is shown with all of its answers from the key, in the key’s orde
   Splitting off the smallest prime that fits, and then doing the same to what is left, never leaves a piece that can still be split, and the pieces multiply back to the number. A number has only one set of primes that multiply to give it, so any order of splitting reaches the same list.
 - If you chose 391: You chose **391**. That is the answer you get when you stop while a piece can still be split: 391 is 17 × 23.
 - If you chose 1 × 17 × 23: You chose **1 × 17 × 23**. That is the answer you get when you write 1 as one of the primes, though 1 is not prime.
-- What does the problem ask you to work out? **How whole numbers split, repeat or are made up.** The problem asks “391 is the product of two prime numbers”, a question about what one whole number is made of or how it can be shared out. It follows no amount through time, hides no number to be found from a calculation, and has no shape or choice, so the key’s first answer is **“How whole numbers split, repeat or are made up”**.
+- What does the problem ask you to work out? **How whole numbers split, repeat or are made up.** The problem asks “391 is the product of two prime numbers”, a question about what one whole number is made of or how it can be shared out. It follows no amount through time, hides no number to be found from a calculation, and has no shape or choice, so the answer to the first question is **“How whole numbers split, repeat or are made up”**.
 - What does the problem want to know about the number or numbers? **Every way one number splits, or the prime numbers that make it.** The words “391 is the product of two prime numbers” give one number and ask what it is made of, or every way it can be shared out. That is more than a yes or a no about one number, which is **“Every way one number splits, or the prime numbers that make it”**.
 - Why not **Highest common factor**: There is one number here that is to be taken apart. **Highest common factor** would need two numbers and a piece that fits into both.
 - Taught on: “Worked: the primes that make 84” (one tap opens the card).
@@ -3294,7 +3294,7 @@ Each question is shown with all of its answers from the key, in the key’s orde
   A piece that fits into both numbers with nothing left over can only be built from primes that both numbers contain, and the biggest such piece uses every shared prime as many times as the number that has it fewer times. That is the largest *factor* the two numbers have in common.
 - If you chose 1050 cm: You chose **1050 cm**. That is the answer you get when you keep every prime that either number has, the most times either has it, which gives the first time two repeats meet and not the biggest piece that fits both.
 - If you chose 31500 cm: You chose **31500 cm**. That is the answer you get when you multiply the two numbers together, which gives a piece far too big to fit into either.
-- What does the problem ask you to work out? **How whole numbers split, repeat or are made up.** The problem asks “cut both into the longest equal pieces with nothing left over”, a question about pieces of one size that two whole numbers can both be split into. Nothing grows, no hidden number has to be found from a calculation, and there is no shape or chance, so the key’s first answer is **“How whole numbers split, repeat or are made up”**.
+- What does the problem ask you to work out? **How whole numbers split, repeat or are made up.** The problem asks “cut both into the longest equal pieces with nothing left over”, a question about pieces of one size that two whole numbers can both be split into. Nothing grows, no hidden number has to be found from a calculation, and there is no shape or chance, so the answer to the first question is **“How whole numbers split, repeat or are made up”**.
 - What does the problem want to know about the number or numbers? **The biggest equal piece two numbers both split into.** The words “cut both into the longest equal pieces with nothing left over” give two numbers and ask for the biggest piece that both can be cut into with nothing left over, which is **“The biggest equal piece two numbers both split into”**.
 - Why not **Prime factors**: The problem gives two numbers and asks for a piece that fits into both. **Prime factors** takes one number apart and has no second number to fit.
 - Taught on: “Worked: the biggest equal piece for 60 and 84” (one tap opens the card).
@@ -3321,7 +3321,7 @@ Each question is shown with all of its answers from the key, in the key’s orde
   Each whole pattern ends exactly where it began, so whole patterns change nothing. What is left over says how far into the next pattern the count has gone, and a left over of nothing means the count has just finished a pattern.
 - If you chose green: You chose **green**. That is the answer you get when you count the left over from 0, so 3 lands on the 4th tile and not the 3rd.
 - If you chose white: You chose **white**. That is the answer you get when you use the number of whole patterns, 20, as the place and not what is left over.
-- What does the problem ask you to work out? **How whole numbers split, repeat or are made up.** The problem asks “What colour is the 83rd tile?”, a question about the part that is not in a whole group, or the place a count reaches on a loop. The numbers are whole counts, and no amount is followed through time, so the key’s first answer is **“How whole numbers split, repeat or are made up”**.
+- What does the problem ask you to work out? **How whole numbers split, repeat or are made up.** The problem asks “What colour is the 83rd tile?”, a question about the part that is not in a whole group, or the place a count reaches on a loop. The numbers are whole counts, and no amount is followed through time, so the answer to the first question is **“How whole numbers split, repeat or are made up”**.
 - What does the problem want to know about the number or numbers? **What is left over, or where a count ends on a loop.** The words “What colour is the 83rd tile?” give a count and one group size, or one loop, and ask for the part not in a whole group or for the place the count reaches, which is **“What is left over, or where a count ends on a loop”**.
 - Why not **Lowest common multiple**: There is one group size, or one loop, and a count that goes round it. **Lowest common multiple** needs two separate schedules, and asks when they first coincide.
 - Taught on: “Worked: the time 50 hours after 9 o’clock” (one tap opens the card).
@@ -3348,7 +3348,7 @@ Each question is shown with all of its answers from the key, in the key’s orde
   The first time two repeats happen together must be a number that both numbers divide, so it has to contain every prime of each. It needs each prime as many times as the number that has it more times: with fewer, one of the numbers would not divide it, and with more, it would not be the first time.
 - If you chose 1 days: You chose **1 days**. That is the answer you get when you keep only the primes both numbers have, which gives the biggest piece that fits both and not the first time two repeats meet.
 - If you chose 7 days: You chose **7 days**. That is the answer you get when you take the bigger number, though the smaller one does not divide it.
-- What does the problem ask you to work out? **How whole numbers split, repeat or are made up.** The problem asks “does the laundry every 5 days and cleans the windows every 7 days”, a question about two repeats and when they coincide. The numbers are whole counts that repeat, and no amount is followed as it grows, so the key’s first answer is **“How whole numbers split, repeat or are made up”**.
+- What does the problem ask you to work out? **How whole numbers split, repeat or are made up.** The problem asks “does the laundry every 5 days and cleans the windows every 7 days”, a question about two repeats and when they coincide. The numbers are whole counts that repeat, and no amount is followed as it grows, so the answer to the first question is **“How whole numbers split, repeat or are made up”**.
 - What does the problem want to know about the number or numbers? **When two things that repeat next happen together.** The words “does the laundry every 5 days and cleans the windows every 7 days” give two repeating schedules and ask for the first time they coincide, which is **“When two things that repeat next happen together”**.
 - Why not **Remainder**: Two things repeat, so there are two repeats to bring together. **Remainder** needs one loop, or one group size, and a count that goes round it.
 - Taught on: “Worked: when two buses next arrive together” (one tap opens the card).
@@ -3375,7 +3375,7 @@ Each question is shown with all of its answers from the key, in the key’s orde
   Splitting off the smallest prime that fits, and then doing the same to what is left, never leaves a piece that can still be split, and the pieces multiply back to the number. A number has only one set of primes that multiply to give it, so any order of splitting reaches the same list.
 - If you chose 7 × 15: You chose **7 × 15**. That is the answer you get when you stop while a piece can still be split: 15 is 3 × 5.
 - If you chose 1 × 3 × 5 × 7: You chose **1 × 3 × 5 × 7**. That is the answer you get when you write 1 as one of the primes, though 1 is not prime.
-- What does the problem ask you to work out? **How whole numbers split, repeat or are made up.** The problem asks “the prime numbers that multiply together to give 105”, a question about what one whole number is made of or how it can be shared out. It follows no amount through time, hides no number to be found from a calculation, and has no shape or choice, so the key’s first answer is **“How whole numbers split, repeat or are made up”**.
+- What does the problem ask you to work out? **How whole numbers split, repeat or are made up.** The problem asks “the prime numbers that multiply together to give 105”, a question about what one whole number is made of or how it can be shared out. It follows no amount through time, hides no number to be found from a calculation, and has no shape or choice, so the answer to the first question is **“How whole numbers split, repeat or are made up”**.
 - What does the problem want to know about the number or numbers? **Every way one number splits, or the prime numbers that make it.** The words “the prime numbers that multiply together to give 105” give one number and ask what it is made of, or every way it can be shared out. That is more than a yes or a no about one number, which is **“Every way one number splits, or the prime numbers that make it”**.
 - Why not **Highest common factor**: There is one number here that is to be taken apart. **Highest common factor** would need two numbers and a piece that fits into both.
 - What would make it a different kind: If the question asked for the longest equal pieces that both slabs can be cut into, it would be **Highest common factor**.
@@ -3403,7 +3403,7 @@ Each question is shown with all of its answers from the key, in the key’s orde
   A piece that fits into both numbers with nothing left over can only be built from primes that both numbers contain, and the biggest such piece uses every shared prime as many times as the number that has it fewer times. That is the largest *factor* the two numbers have in common.
 - If you chose 216 members: You chose **216 members**. That is the answer you get when you keep every prime that either number has, the most times either has it, which gives the first time two repeats meet and not the biggest piece that fits both.
 - If you chose 6 members: You chose **6 members**. That is the answer you get when you count a shared prime once, though both numbers have it more than once.
-- What does the problem ask you to work out? **How whole numbers split, repeat or are made up.** The problem asks “split their members into teams of the same size, with nobody left out and every team drawn from one club”, a question about pieces of one size that two whole numbers can both be split into. Nothing grows, no hidden number has to be found from a calculation, and there is no shape or chance, so the key’s first answer is **“How whole numbers split, repeat or are made up”**.
+- What does the problem ask you to work out? **How whole numbers split, repeat or are made up.** The problem asks “split their members into teams of the same size, with nobody left out and every team drawn from one club”, a question about pieces of one size that two whole numbers can both be split into. Nothing grows, no hidden number has to be found from a calculation, and there is no shape or chance, so the answer to the first question is **“How whole numbers split, repeat or are made up”**.
 - What does the problem want to know about the number or numbers? **The biggest equal piece two numbers both split into.** The words “split their members into teams of the same size, with nobody left out and every team drawn from one club” give two numbers and ask for the biggest piece that both can be cut into with nothing left over, which is **“The biggest equal piece two numbers both split into”**.
 - Why not **Lowest common multiple**: The problem asks for the biggest piece that fits into both numbers, and nothing repeats. **Lowest common multiple** would ask when two repeats meet, and its answer is never less than the bigger number, where this answer is never more than the smaller.
 - What would make it a different kind: If the question asked after how many weeks the two clubs would next hold something on the same Saturday, each repeating on its own, it would be **Lowest common multiple**.
@@ -3432,7 +3432,7 @@ Each question is shown with all of its answers from the key, in the key’s orde
   A number can be split into equal groups only if two whole numbers multiply to give it, and the smaller of the two is never more than the *square root* of the number. So testing no further than the *square root* is enough. Testing the primes is enough too: a number that splits by 6 also splits by 2 and by 3, so leaving out the numbers that are not *prime number*s misses nothing.
 - If you chose Prime: none of 2, 3, 5 and 7 fits it: You chose **Prime: none of 2, 3, 5 and 7 fits it**. That is the answer you get when you stop testing at 7 and never try 11, though 11 × 11 = 121 is not more than 143.
 - If you chose Not prime: 3 × 48: You chose **Not prime: 3 × 48**. That is the answer you get when you round 143 ÷ 3 up to 48 and call 3 × 48 a fit, though that is not 143.
-- What does the problem ask you to work out? **How whole numbers split, repeat or are made up.** The problem asks “Can he lay the tiles in equal rows, with more than one row and more than one tile in each row?”, a question about whether one whole number can be shared out in equal groups. Nothing in it changes as time passes, no hidden number has to be found from a calculation, and there is no shape or choice, so the key’s first answer is **“How whole numbers split, repeat or are made up”**.
+- What does the problem ask you to work out? **How whole numbers split, repeat or are made up.** The problem asks “Can he lay the tiles in equal rows, with more than one row and more than one tile in each row?”, a question about whether one whole number can be shared out in equal groups. Nothing in it changes as time passes, no hidden number has to be found from a calculation, and there is no shape or choice, so the answer to the first question is **“How whole numbers split, repeat or are made up”**.
 - What does the problem want to know about the number or numbers? **Whether one number splits into equal groups at all.** The words “Can he lay the tiles in equal rows, with more than one row and more than one tile in each row?” give one number and ask only whether anything other than 1 and itself shares it out exactly. That is a yes or a no about one number, which is **“Whether one number splits into equal groups at all”**.
 - Why not **Irrational number**: The problem shares a count out in equal groups. **Irrational number** is about whether a root or pi can be written exactly, and nothing here is a root or pi.
 - What would make it a different kind: If the question asked whether √143 can be written exactly, as a fraction or a decimal that ends, it would be **Irrational number**.
@@ -3461,7 +3461,7 @@ Each question is shown with all of its answers from the key, in the key’s orde
   The *square root* of a whole number is either a whole number or a number that can never be written exactly as a fraction. There is nothing in between, so landing exactly on a whole number multiplied by itself is the only way for it to be exact, and when it does not land there, a calculator can only round it.
 - If you chose Exact: 5.48: You chose **Exact: 5.48**. That is the answer you get when you read the rounded decimal on the calculator as the exact value.
 - If you chose Exact: 5: You chose **Exact: 5**. That is the answer you get when you take the nearest whole number as the exact value.
-- What does the problem ask you to work out? **How whole numbers split, repeat or are made up.** The problem asks “whether the side of the floor can be written exactly, as a fraction or a decimal that ends”, a question about whether one number can be written exactly. It is about the value of a number, with no amount followed through time and no hidden number for a calculation to fit, so the key’s first answer is **“How whole numbers split, repeat or are made up”**.
+- What does the problem ask you to work out? **How whole numbers split, repeat or are made up.** The problem asks “whether the side of the floor can be written exactly, as a fraction or a decimal that ends”, a question about whether one number can be written exactly. It is about the value of a number, with no amount followed through time and no hidden number for a calculation to fit, so the answer to the first question is **“How whole numbers split, repeat or are made up”**.
 - What does the problem want to know about the number or numbers? **Whether a number can be written exactly.** The words “whether the side of the floor can be written exactly, as a fraction or a decimal that ends” ask whether one number can be written exactly, which is **“Whether a number can be written exactly”**.
 - Why not **Prime check**: The problem asks for the exact value of a number, and nothing is shared out in equal groups. **Prime check** would be the name if it asked whether a count of things could be split in rows or teams.
 - What would make it a different kind: If the question asked whether the 30 tiles can be laid in equal rows, with more than one row and more than one tile in each row, it would be **Prime check**.
@@ -3489,7 +3489,7 @@ Each question is shown with all of its answers from the key, in the key’s orde
   Every whole loop brings the count back to the place it started, so whole loops change nothing. Only what is left over after them moves you on, and it is moved from the start.
 - If you chose stop 1: You chose **stop 1**. That is the answer you get when you throw away the 2 left over and stay where you started.
 - If you chose stop 4: You chose **stop 4**. That is the answer you get when you count the place you start on as the first move, so you go one place too far.
-- What does the problem ask you to work out? **How whole numbers split, repeat or are made up.** The problem asks “travels 50 stops. At which stop does it finish?”, a question about the part that is not in a whole group, or the place a count reaches on a loop. The numbers are whole counts, and no amount is followed through time, so the key’s first answer is **“How whole numbers split, repeat or are made up”**.
+- What does the problem ask you to work out? **How whole numbers split, repeat or are made up.** The problem asks “travels 50 stops. At which stop does it finish?”, a question about the part that is not in a whole group, or the place a count reaches on a loop. The numbers are whole counts, and no amount is followed through time, so the answer to the first question is **“How whole numbers split, repeat or are made up”**.
 - What does the problem want to know about the number or numbers? **What is left over, or where a count ends on a loop.** The words “travels 50 stops. At which stop does it finish?” give a count and one group size, or one loop, and ask for the part not in a whole group or for the place the count reaches, which is **“What is left over, or where a count ends on a loop”**.
 - Why not **Lowest common multiple**: There is one group size, or one loop, and a count that goes round it. **Lowest common multiple** needs two separate schedules, and asks when they first coincide.
 - What would make it a different kind: If the question asked after how many stops the two trams would first be at their first stops together, it would be **Lowest common multiple**.
@@ -3517,23 +3517,23 @@ Each question is shown with all of its answers from the key, in the key’s orde
   The first time two repeats happen together must be a number that both numbers divide, so it has to contain every prime of each. It needs each prime as many times as the number that has it more times: with fewer, one of the numbers would not divide it, and with more, it would not be the first time.
 - If you chose 2 days: You chose **2 days**. That is the answer you get when you keep only the primes both numbers have, which gives the biggest piece that fits both and not the first time two repeats meet.
 - If you chose 24 days: You chose **24 days**. That is the answer you get when you multiply the two numbers together, which is a time when both happen but not the first, because the numbers share a prime.
-- What does the problem ask you to work out? **How whole numbers split, repeat or are made up.** The problem asks “One meets every 4 days and the other every 6 days”, a question about two repeats and when they coincide. The numbers are whole counts that repeat, and no amount is followed as it grows, so the key’s first answer is **“How whole numbers split, repeat or are made up”**.
+- What does the problem ask you to work out? **How whole numbers split, repeat or are made up.** The problem asks “One meets every 4 days and the other every 6 days”, a question about two repeats and when they coincide. The numbers are whole counts that repeat, and no amount is followed as it grows, so the answer to the first question is **“How whole numbers split, repeat or are made up”**.
 - What does the problem want to know about the number or numbers? **When two things that repeat next happen together.** The words “One meets every 4 days and the other every 6 days” give two repeating schedules and ask for the first time they coincide, which is **“When two things that repeat next happen together”**.
 - Why not **Remainder**: Two things repeat, so there are two repeats to bring together. **Remainder** needs one loop, or one group size, and a count that goes round it.
 - What would make it a different kind: If the question asked on which day of the week the first class would meet after 50 days, it would be **Remainder**.
 - Taught on: “Worked: when two buses next arrive together” (one tap opens the card).
 
-**When the drill ends.** The learner sees their own results: first-try accuracy for each stage, whole routes beside single questions, the pair of names they mixed up most often, and what will come back and when. Anything missed was asked again before the drill ended. Nothing here is graded. A miss only decides what comes back.
+**When the drill ends.** The learner sees their own results: first-try accuracy for each stage, whole cases beside single questions, the pair of names they mixed up most often, and what will come back and when. Anything missed was asked again before the drill ended. Nothing here is graded. A miss only decides what comes back.
 
 ### 61. What to carry away
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 7 of 7 · Card 61 of 62*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 7 of 7 · Card 61 of 62*
 
 [reviewers only: card kind `recap`, id `recap-whole`]
 
-You have now worked problems of all six kinds on your own. This card puts the unit in one place, in the key’s words.
+You have now worked problems of all six kinds on your own. This card puts the unit in one place.
 
-**The key for this unit, in its own words**
+**This unit’s questions and answers**
 
 What does the problem want to know about the number or numbers?
 - Whether one number splits into equal groups at all → Prime check
@@ -3560,7 +3560,7 @@ What does the problem want to know about the number or numbers?
 
 **To carry away**
 
-- Before any working, ask what the problem wants to know about its numbers, and point to the words that say it. If you cannot point to them, you do not have an answer yet. The key asks: **“What does the problem want to know about the number or numbers?”**
+- Before any working, ask what the problem wants to know about its numbers, and point to the words that say it. If you cannot point to them, you do not have an answer yet. The question is: **“What does the problem want to know about the number or numbers?”**
 - One number leads to **Prime check**, a yes or a no, or to **Prime factors**, a list. Two numbers lead to **Highest common factor**, the biggest piece that fits both, or to **Lowest common multiple**, the first time two repeats meet. A count with one group size or one loop leads to **Remainder**. A root or pi, with the question whether it can be written exactly, leads to **Irrational number**.
 - The numbers do not tell you the kind. 12 and 18 can ask for the biggest equal piece, 6, or for the first time two repeats meet, 36.
 - Two numbers have a check on the answer. The biggest equal piece is never more than the smaller number, and the first time two repeats meet is never less than the bigger one.
@@ -3572,7 +3572,7 @@ What does the problem want to know about the number or numbers?
 
 ### 62. Where would you meet this?
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 7 of 7 · Card 62 of 62*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 7 of 7 · Card 62 of 62*
 
 [reviewers only: card kind `transfer`, id `transfer-whole`]
 
@@ -3601,7 +3601,7 @@ One line is enough. It is kept on this device only and is never marked.
 
 ## After the unit: what comes back on later days
 
-A name that is due returns as a case the learner has not seen, next to a case of the name they most often confuse it with. Each is run as a whole route. These are the fresh cases held back for that purpose: three for each name, one for each scheduled return. The first return is about two days after the drill, the next about a week after that, the next about three and a half weeks later.
+A name that is due returns as a case the learner has not seen, next to a case of the name they most often confuse it with. Each is run as a whole case: every question, then the name. These are the fresh cases held back for that purpose: three for each name, one for each scheduled return. The first return is about two days after the drill, the next about a week after that, the next about three and a half weeks later.
 
 **Return case 1 of 18**
 
@@ -3626,7 +3626,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
   A number can be split into equal groups only if two whole numbers multiply to give it, and the smaller of the two is never more than the *square root* of the number. So testing no further than the *square root* is enough. Testing the primes is enough too: a number that splits by 6 also splits by 2 and by 3, so leaving out the numbers that are not *prime number*s misses nothing.
 - If you chose Not prime: 11 × 18: You chose **Not prime: 11 × 18**. That is the answer you get when you read 199 = 11 × 18 + 1 as a fit and ignore the 1 left over, though a fit leaves nothing over.
 - If you chose Not prime: 1 × 199: You chose **Not prime: 1 × 199**. That is the answer you get when you count 1 and 199 itself as a fit, though every number splits by 1 and by itself.
-- What does the problem ask you to work out? **How whole numbers split, repeat or are made up.** The problem asks “pack them in packets of the same size, with more than one packet and more than one seed in each packet”, a question about whether one whole number can be shared out in equal groups. Nothing in it changes as time passes, no hidden number has to be found from a calculation, and there is no shape or choice, so the key’s first answer is **“How whole numbers split, repeat or are made up”**.
+- What does the problem ask you to work out? **How whole numbers split, repeat or are made up.** The problem asks “pack them in packets of the same size, with more than one packet and more than one seed in each packet”, a question about whether one whole number can be shared out in equal groups. Nothing in it changes as time passes, no hidden number has to be found from a calculation, and there is no shape or choice, so the answer to the first question is **“How whole numbers split, repeat or are made up”**.
 - What does the problem want to know about the number or numbers? **Whether one number splits into equal groups at all.** The words “pack them in packets of the same size, with more than one packet and more than one seed in each packet” give one number and ask only whether anything other than 1 and itself shares it out exactly. That is a yes or a no about one number, which is **“Whether one number splits into equal groups at all”**.
 - Why not **Prime factors**: The problem asks only whether the number splits at all, and a yes or a no is all that is wanted. **Prime factors** would be the name if it asked what the number is made of, or for every way it splits.
 - Taught on: “Worked: is 67 a prime number?” (one tap opens the card).
@@ -3654,7 +3654,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
   A number can be split into equal groups only if two whole numbers multiply to give it, and the smaller of the two is never more than the *square root* of the number. So testing no further than the *square root* is enough. Testing the primes is enough too: a number that splits by 6 also splits by 2 and by 3, so leaving out the numbers that are not *prime number*s misses nothing.
 - If you chose Prime: none of 2, 3 and 5 fits it: You chose **Prime: none of 2, 3 and 5 fits it**. That is the answer you get when you stop testing at 5 and never try 7, though 7 × 7 = 49 is not more than 203.
 - If you chose Not prime: 3 × 68: You chose **Not prime: 3 × 68**. That is the answer you get when you round 203 ÷ 3 up to 68 and call 3 × 68 a fit, though that is not 203.
-- What does the problem ask you to work out? **How whole numbers split, repeat or are made up.** The problem asks “make bundles of the same size, with more than one bundle and more than one note in each bundle”, a question about whether one whole number can be shared out in equal groups. Nothing in it changes as time passes, no hidden number has to be found from a calculation, and there is no shape or choice, so the key’s first answer is **“How whole numbers split, repeat or are made up”**.
+- What does the problem ask you to work out? **How whole numbers split, repeat or are made up.** The problem asks “make bundles of the same size, with more than one bundle and more than one note in each bundle”, a question about whether one whole number can be shared out in equal groups. Nothing in it changes as time passes, no hidden number has to be found from a calculation, and there is no shape or choice, so the answer to the first question is **“How whole numbers split, repeat or are made up”**.
 - What does the problem want to know about the number or numbers? **Whether one number splits into equal groups at all.** The words “make bundles of the same size, with more than one bundle and more than one note in each bundle” give one number and ask only whether anything other than 1 and itself shares it out exactly. That is a yes or a no about one number, which is **“Whether one number splits into equal groups at all”**.
 - Why not **Irrational number**: The problem shares a count out in equal groups. **Irrational number** is about whether a root or pi can be written exactly, and nothing here is a root or pi.
 - Taught on: “Worked: is 67 a prime number?” (one tap opens the card).
@@ -3682,7 +3682,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
   A number can be split into equal groups only if two whole numbers multiply to give it, and the smaller of the two is never more than the *square root* of the number. So testing no further than the *square root* is enough. Testing the primes is enough too: a number that splits by 6 also splits by 2 and by 3, so leaving out the numbers that are not *prime number*s misses nothing.
 - If you chose Not prime: 7 × 18: You chose **Not prime: 7 × 18**. That is the answer you get when you read 127 = 7 × 18 + 1 as a fit and ignore the 1 left over, though a fit leaves nothing over.
 - If you chose Not prime: 1 × 127: You chose **Not prime: 1 × 127**. That is the answer you get when you count 1 and 127 itself as a fit, though every number splits by 1 and by itself.
-- What does the problem ask you to work out? **How whole numbers split, repeat or are made up.** The problem asks “set them in equal lines, with more than one line and more than one tent in each line”, a question about whether one whole number can be shared out in equal groups. Nothing in it changes as time passes, no hidden number has to be found from a calculation, and there is no shape or choice, so the key’s first answer is **“How whole numbers split, repeat or are made up”**.
+- What does the problem ask you to work out? **How whole numbers split, repeat or are made up.** The problem asks “set them in equal lines, with more than one line and more than one tent in each line”, a question about whether one whole number can be shared out in equal groups. Nothing in it changes as time passes, no hidden number has to be found from a calculation, and there is no shape or choice, so the answer to the first question is **“How whole numbers split, repeat or are made up”**.
 - What does the problem want to know about the number or numbers? **Whether one number splits into equal groups at all.** The words “set them in equal lines, with more than one line and more than one tent in each line” give one number and ask only whether anything other than 1 and itself shares it out exactly. That is a yes or a no about one number, which is **“Whether one number splits into equal groups at all”**.
 - Why not **Prime factors**: The problem asks only whether the number splits at all, and a yes or a no is all that is wanted. **Prime factors** would be the name if it asked what the number is made of, or for every way it splits.
 - Taught on: “Worked: is 67 a prime number?” (one tap opens the card).
@@ -3709,7 +3709,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
   Splitting off the smallest prime that fits, and then doing the same to what is left, never leaves a piece that can still be split, and the pieces multiply back to the number. A number has only one set of primes that multiply to give it, so any order of splitting reaches the same list.
 - If you chose 3 × 3 × 3 × 4: You chose **3 × 3 × 3 × 4**. That is the answer you get when you stop while a piece can still be split: 4 is 2 × 2.
 - If you chose 2 × 3 × 3 × 3: You chose **2 × 3 × 3 × 3**. That is the answer you get when you write the repeated 2 only once, which leaves a 2 out: the product is 54, not 108.
-- What does the problem ask you to work out? **How whole numbers split, repeat or are made up.** The problem asks “Which prime numbers multiply together to give 108?”, a question about what one whole number is made of or how it can be shared out. It follows no amount through time, hides no number to be found from a calculation, and has no shape or choice, so the key’s first answer is **“How whole numbers split, repeat or are made up”**.
+- What does the problem ask you to work out? **How whole numbers split, repeat or are made up.** The problem asks “Which prime numbers multiply together to give 108?”, a question about what one whole number is made of or how it can be shared out. It follows no amount through time, hides no number to be found from a calculation, and has no shape or choice, so the answer to the first question is **“How whole numbers split, repeat or are made up”**.
 - What does the problem want to know about the number or numbers? **Every way one number splits, or the prime numbers that make it.** The words “Which prime numbers multiply together to give 108?” give one number and ask what it is made of, or every way it can be shared out. That is more than a yes or a no about one number, which is **“Every way one number splits, or the prime numbers that make it”**.
 - Why not **Prime check**: The problem asks for more than whether the number splits: it wants what the number is made of, or every way it splits. A yes or a no, which is what **Prime check** gives, would leave the question unanswered.
 - Taught on: “Worked: the primes that make 84” (one tap opens the card).
@@ -3737,7 +3737,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
   Every group size that fits exactly is a product of some of the primes of the number, and every product of some of them fits exactly, so building all the products lists every size. Using none of them gives 1 and using all of them gives the number itself, which are the cases the problem rules out.
 - If you chose 10: You chose **10**. That is the answer you get when you count 1 and 48 as well, though they give one group, or groups of one.
 - If you chose 2: You chose **2**. That is the answer you get when you count only the prime numbers and never multiply any of them together.
-- What does the problem ask you to work out? **How whole numbers split, repeat or are made up.** The problem asks “every size of equal bottle load she can make”, a question about what one whole number is made of or how it can be shared out. It follows no amount through time, hides no number to be found from a calculation, and has no shape or choice, so the key’s first answer is **“How whole numbers split, repeat or are made up”**.
+- What does the problem ask you to work out? **How whole numbers split, repeat or are made up.** The problem asks “every size of equal bottle load she can make”, a question about what one whole number is made of or how it can be shared out. It follows no amount through time, hides no number to be found from a calculation, and has no shape or choice, so the answer to the first question is **“How whole numbers split, repeat or are made up”**.
 - What does the problem want to know about the number or numbers? **Every way one number splits, or the prime numbers that make it.** The words “every size of equal bottle load she can make” give one number and ask what it is made of, or every way it can be shared out. That is more than a yes or a no about one number, which is **“Every way one number splits, or the prime numbers that make it”**.
 - Why not **Prime check**: The problem asks for more than whether the number splits: it wants what the number is made of, or every way it splits. A yes or a no, which is what **Prime check** gives, would leave the question unanswered.
 - Taught on: “Worked: the primes that make 84” (one tap opens the card).
@@ -3764,7 +3764,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
   Splitting off the smallest prime that fits, and then doing the same to what is left, never leaves a piece that can still be split, and the pieces multiply back to the number. A number has only one set of primes that multiply to give it, so any order of splitting reaches the same list.
 - If you chose 6 × 11: You chose **6 × 11**. That is the answer you get when you stop while a piece can still be split: 6 is 2 × 3.
 - If you chose 1 × 2 × 3 × 11: You chose **1 × 2 × 3 × 11**. That is the answer you get when you write 1 as one of the primes, though 1 is not prime.
-- What does the problem ask you to work out? **How whole numbers split, repeat or are made up.** The problem asks “write 66 as a product of prime numbers”, a question about what one whole number is made of or how it can be shared out. It follows no amount through time, hides no number to be found from a calculation, and has no shape or choice, so the key’s first answer is **“How whole numbers split, repeat or are made up”**.
+- What does the problem ask you to work out? **How whole numbers split, repeat or are made up.** The problem asks “write 66 as a product of prime numbers”, a question about what one whole number is made of or how it can be shared out. It follows no amount through time, hides no number to be found from a calculation, and has no shape or choice, so the answer to the first question is **“How whole numbers split, repeat or are made up”**.
 - What does the problem want to know about the number or numbers? **Every way one number splits, or the prime numbers that make it.** The words “write 66 as a product of prime numbers” give one number and ask what it is made of, or every way it can be shared out. That is more than a yes or a no about one number, which is **“Every way one number splits, or the prime numbers that make it”**.
 - Why not **Prime check**: The problem asks for more than whether the number splits: it wants what the number is made of, or every way it splits. A yes or a no, which is what **Prime check** gives, would leave the question unanswered.
 - Taught on: “Worked: the primes that make 84” (one tap opens the card).
@@ -3791,7 +3791,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
   A piece that fits into both numbers with nothing left over can only be built from primes that both numbers contain, and the biggest such piece uses every shared prime as many times as the number that has it fewer times. That is the largest *factor* the two numbers have in common.
 - If you chose 96 cm: You chose **96 cm**. That is the answer you get when you keep every prime that either number has, the most times either has it, which gives the first time two repeats meet and not the biggest piece that fits both.
 - If you chose 2 cm: You chose **2 cm**. That is the answer you get when you count a shared prime once, though both numbers have it more than once.
-- What does the problem ask you to work out? **How whole numbers split, repeat or are made up.** The problem asks “cut it into square coasters, all the same size, with nothing wasted”, a question about pieces of one size that two whole numbers can both be split into. Nothing grows, no hidden number has to be found from a calculation, and there is no shape or chance, so the key’s first answer is **“How whole numbers split, repeat or are made up”**.
+- What does the problem ask you to work out? **How whole numbers split, repeat or are made up.** The problem asks “cut it into square coasters, all the same size, with nothing wasted”, a question about pieces of one size that two whole numbers can both be split into. Nothing grows, no hidden number has to be found from a calculation, and there is no shape or chance, so the answer to the first question is **“How whole numbers split, repeat or are made up”**.
 - What does the problem want to know about the number or numbers? **The biggest equal piece two numbers both split into.** The words “cut it into square coasters, all the same size, with nothing wasted” give two numbers and ask for the biggest piece that both can be cut into with nothing left over, which is **“The biggest equal piece two numbers both split into”**.
 - Why not **Lowest common multiple**: The problem asks for the biggest piece that fits into both numbers, and nothing repeats. **Lowest common multiple** would ask when two repeats meet, and its answer is never less than the bigger number, where this answer is never more than the smaller.
 - Taught on: “Worked: the biggest equal piece for 60 and 84” (one tap opens the card).
@@ -3818,7 +3818,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
   A piece that fits into both numbers with nothing left over can only be built from primes that both numbers contain, and the biggest such piece uses every shared prime as many times as the number that has it fewer times. That is the largest *factor* the two numbers have in common.
 - If you chose 924 leaflets: You chose **924 leaflets**. That is the answer you get when you keep every prime that either number has, the most times either has it, which gives the first time two repeats meet and not the biggest piece that fits both.
 - If you chose 6 leaflets: You chose **6 leaflets**. That is the answer you get when you count a shared prime once, though both numbers have it more than once.
-- What does the problem ask you to work out? **How whole numbers split, repeat or are made up.** The problem asks “tie them in bundles with the same number in each, every bundle of one sort only and none left over”, a question about pieces of one size that two whole numbers can both be split into. Nothing grows, no hidden number has to be found from a calculation, and there is no shape or chance, so the key’s first answer is **“How whole numbers split, repeat or are made up”**.
+- What does the problem ask you to work out? **How whole numbers split, repeat or are made up.** The problem asks “tie them in bundles with the same number in each, every bundle of one sort only and none left over”, a question about pieces of one size that two whole numbers can both be split into. Nothing grows, no hidden number has to be found from a calculation, and there is no shape or chance, so the answer to the first question is **“How whole numbers split, repeat or are made up”**.
 - What does the problem want to know about the number or numbers? **The biggest equal piece two numbers both split into.** The words “tie them in bundles with the same number in each, every bundle of one sort only and none left over” give two numbers and ask for the biggest piece that both can be cut into with nothing left over, which is **“The biggest equal piece two numbers both split into”**.
 - Why not **Lowest common multiple**: The problem asks for the biggest piece that fits into both numbers, and nothing repeats. **Lowest common multiple** would ask when two repeats meet, and its answer is never less than the bigger number, where this answer is never more than the smaller.
 - Taught on: “Worked: the biggest equal piece for 60 and 84” (one tap opens the card).
@@ -3845,7 +3845,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
   A piece that fits into both numbers with nothing left over can only be built from primes that both numbers contain, and the biggest such piece uses every shared prime as many times as the number that has it fewer times. That is the largest *factor* the two numbers have in common.
 - If you chose 180 €: You chose **180 €**. That is the answer you get when you keep every prime that either number has, the most times either has it, which gives the first time two repeats meet and not the biggest piece that fits both.
 - If you chose 2700 €: You chose **2700 €**. That is the answer you get when you multiply the two numbers together, which gives a piece far too big to fit into either.
-- What does the problem ask you to work out? **How whole numbers split, repeat or are made up.** The problem asks “splits each into prizes of the same value, with nothing left over”, a question about pieces of one size that two whole numbers can both be split into. Nothing grows, no hidden number has to be found from a calculation, and there is no shape or chance, so the key’s first answer is **“How whole numbers split, repeat or are made up”**.
+- What does the problem ask you to work out? **How whole numbers split, repeat or are made up.** The problem asks “splits each into prizes of the same value, with nothing left over”, a question about pieces of one size that two whole numbers can both be split into. Nothing grows, no hidden number has to be found from a calculation, and there is no shape or chance, so the answer to the first question is **“How whole numbers split, repeat or are made up”**.
 - What does the problem want to know about the number or numbers? **The biggest equal piece two numbers both split into.** The words “splits each into prizes of the same value, with nothing left over” give two numbers and ask for the biggest piece that both can be cut into with nothing left over, which is **“The biggest equal piece two numbers both split into”**.
 - Why not **Lowest common multiple**: The problem asks for the biggest piece that fits into both numbers, and nothing repeats. **Lowest common multiple** would ask when two repeats meet, and its answer is never less than the bigger number, where this answer is never more than the smaller.
 - Taught on: “Worked: the biggest equal piece for 60 and 84” (one tap opens the card).
@@ -3872,7 +3872,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
   The first time two repeats happen together must be a number that both numbers divide, so it has to contain every prime of each. It needs each prime as many times as the number that has it more times: with fewer, one of the numbers would not divide it, and with more, it would not be the first time.
 - If you chose 6 seconds: You chose **6 seconds**. That is the answer you get when you keep only the primes both numbers have, which gives the biggest piece that fits both and not the first time two repeats meet.
 - If you chose 540 seconds: You chose **540 seconds**. That is the answer you get when you multiply the two numbers together, which is a time when both happen but not the first, because the numbers share a prime.
-- What does the problem ask you to work out? **How whole numbers split, repeat or are made up.** The problem asks “flashes every 18 seconds and a second sign every 30 seconds”, a question about two repeats and when they coincide. The numbers are whole counts that repeat, and no amount is followed as it grows, so the key’s first answer is **“How whole numbers split, repeat or are made up”**.
+- What does the problem ask you to work out? **How whole numbers split, repeat or are made up.** The problem asks “flashes every 18 seconds and a second sign every 30 seconds”, a question about two repeats and when they coincide. The numbers are whole counts that repeat, and no amount is followed as it grows, so the answer to the first question is **“How whole numbers split, repeat or are made up”**.
 - What does the problem want to know about the number or numbers? **When two things that repeat next happen together.** The words “flashes every 18 seconds and a second sign every 30 seconds” give two repeating schedules and ask for the first time they coincide, which is **“When two things that repeat next happen together”**.
 - Why not **Highest common factor**: Here two schedules repeat and the question is when they first coincide, so the answer is not less than the bigger number. **Highest common factor** asks for a piece that fits into both numbers, and is never more than the smaller.
 - Taught on: “Worked: when two buses next arrive together” (one tap opens the card).
@@ -3899,7 +3899,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
   The first time two repeats happen together must be a number that both numbers divide, so it has to contain every prime of each. It needs each prime as many times as the number that has it more times: with fewer, one of the numbers would not divide it, and with more, it would not be the first time.
 - If you chose 4 seconds: You chose **4 seconds**. That is the answer you get when you keep only the primes both numbers have, which gives the biggest piece that fits both and not the first time two repeats meet.
 - If you chose 560 seconds: You chose **560 seconds**. That is the answer you get when you multiply the two numbers together, which is a time when both happen but not the first, because the numbers share a prime.
-- What does the problem ask you to work out? **How whole numbers split, repeat or are made up.** The problem asks “Ana runs one lap in 20 seconds and Ben in 28 seconds”, a question about two repeats and when they coincide. The numbers are whole counts that repeat, and no amount is followed as it grows, so the key’s first answer is **“How whole numbers split, repeat or are made up”**.
+- What does the problem ask you to work out? **How whole numbers split, repeat or are made up.** The problem asks “Ana runs one lap in 20 seconds and Ben in 28 seconds”, a question about two repeats and when they coincide. The numbers are whole counts that repeat, and no amount is followed as it grows, so the answer to the first question is **“How whole numbers split, repeat or are made up”**.
 - What does the problem want to know about the number or numbers? **When two things that repeat next happen together.** The words “Ana runs one lap in 20 seconds and Ben in 28 seconds” give two repeating schedules and ask for the first time they coincide, which is **“When two things that repeat next happen together”**.
 - Why not **Remainder**: Two things repeat, so there are two repeats to bring together. **Remainder** needs one loop, or one group size, and a count that goes round it.
 - Taught on: “Worked: when two buses next arrive together” (one tap opens the card).
@@ -3926,7 +3926,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
   The first time two repeats happen together must be a number that both numbers divide, so it has to contain every prime of each. It needs each prime as many times as the number that has it more times: with fewer, one of the numbers would not divide it, and with more, it would not be the first time.
 - If you chose 5 hours: You chose **5 hours**. That is the answer you get when you keep only the primes both numbers have, which gives the biggest piece that fits both and not the first time two repeats meet.
 - If you chose 300 hours: You chose **300 hours**. That is the answer you get when you multiply the two numbers together, which is a time when both happen but not the first, because the numbers share a prime.
-- What does the problem ask you to work out? **How whole numbers split, repeat or are made up.** The problem asks “taken every 15 hours and a second kind every 20 hours”, a question about two repeats and when they coincide. The numbers are whole counts that repeat, and no amount is followed as it grows, so the key’s first answer is **“How whole numbers split, repeat or are made up”**.
+- What does the problem ask you to work out? **How whole numbers split, repeat or are made up.** The problem asks “taken every 15 hours and a second kind every 20 hours”, a question about two repeats and when they coincide. The numbers are whole counts that repeat, and no amount is followed as it grows, so the answer to the first question is **“How whole numbers split, repeat or are made up”**.
 - What does the problem want to know about the number or numbers? **When two things that repeat next happen together.** The words “taken every 15 hours and a second kind every 20 hours” give two repeating schedules and ask for the first time they coincide, which is **“When two things that repeat next happen together”**.
 - Why not **Highest common factor**: Here two schedules repeat and the question is when they first coincide, so the answer is not less than the bigger number. **Highest common factor** asks for a piece that fits into both numbers, and is never more than the smaller.
 - Taught on: “Worked: when two buses next arrive together” (one tap opens the card).
@@ -3953,7 +3953,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
   Whole groups of one size use up the count in steps of that size, so the most they can use is the biggest multiple of the size that does not pass the count. What is not used up is what is left over, and it is always less than the size of one group.
 - If you chose 8: You chose **8**. That is the answer you get when you give the number of whole boxes and not what is left over.
 - If you chose 5: You chose **5**. That is the answer you get when you count one too many.
-- What does the problem ask you to work out? **How whole numbers split, repeat or are made up.** The problem asks “How many eggs are left over once every box is full?”, a question about the part that is not in a whole group, or the place a count reaches on a loop. The numbers are whole counts, and no amount is followed through time, so the key’s first answer is **“How whole numbers split, repeat or are made up”**.
+- What does the problem ask you to work out? **How whole numbers split, repeat or are made up.** The problem asks “How many eggs are left over once every box is full?”, a question about the part that is not in a whole group, or the place a count reaches on a loop. The numbers are whole counts, and no amount is followed through time, so the answer to the first question is **“How whole numbers split, repeat or are made up”**.
 - What does the problem want to know about the number or numbers? **What is left over, or where a count ends on a loop.** The words “How many eggs are left over once every box is full?” give a count and one group size, or one loop, and ask for the part not in a whole group or for the place the count reaches, which is **“What is left over, or where a count ends on a loop”**.
 - Why not **Lowest common multiple**: There is one group size, or one loop, and a count that goes round it. **Lowest common multiple** needs two separate schedules, and asks when they first coincide.
 - Taught on: “Worked: the time 50 hours after 9 o’clock” (one tap opens the card).
@@ -3980,7 +3980,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
   Every whole loop brings the count back to the place it started, so whole loops change nothing. Only what is left over after them moves you on, and it is moved from the start.
 - If you chose Saturday: You chose **Saturday**. That is the answer you get when you throw away the 3 left over and stay where you started.
 - If you chose Friday: You chose **Friday**. That is the answer you get when you move on by the number of whole loops, 6, and not by what is left over.
-- What does the problem ask you to work out? **How whole numbers split, repeat or are made up.** The problem asks “On which day of the week is it due?”, a question about the part that is not in a whole group, or the place a count reaches on a loop. The numbers are whole counts, and no amount is followed through time, so the key’s first answer is **“How whole numbers split, repeat or are made up”**.
+- What does the problem ask you to work out? **How whole numbers split, repeat or are made up.** The problem asks “On which day of the week is it due?”, a question about the part that is not in a whole group, or the place a count reaches on a loop. The numbers are whole counts, and no amount is followed through time, so the answer to the first question is **“How whole numbers split, repeat or are made up”**.
 - What does the problem want to know about the number or numbers? **What is left over, or where a count ends on a loop.** The words “On which day of the week is it due?” give a count and one group size, or one loop, and ask for the part not in a whole group or for the place the count reaches, which is **“What is left over, or where a count ends on a loop”**.
 - Why not **Lowest common multiple**: There is one group size, or one loop, and a count that goes round it. **Lowest common multiple** needs two separate schedules, and asks when they first coincide.
 - Taught on: “Worked: the time 50 hours after 9 o’clock” (one tap opens the card).
@@ -4007,7 +4007,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
   Each whole pattern ends exactly where it began, so whole patterns change nothing. What is left over says how far into the next pattern the count has gone, and a left over of nothing means the count has just finished a pattern.
 - If you chose red: You chose **red**. That is the answer you get when you count the left over from 0, so 2 lands on the 3rd light and not the 2nd.
 - If you chose white: You chose **white**. That is the answer you get when you use the number of whole patterns, 9, as the place and not what is left over.
-- What does the problem ask you to work out? **How whole numbers split, repeat or are made up.** The problem asks “What colour is the 47th light?”, a question about the part that is not in a whole group, or the place a count reaches on a loop. The numbers are whole counts, and no amount is followed through time, so the key’s first answer is **“How whole numbers split, repeat or are made up”**.
+- What does the problem ask you to work out? **How whole numbers split, repeat or are made up.** The problem asks “What colour is the 47th light?”, a question about the part that is not in a whole group, or the place a count reaches on a loop. The numbers are whole counts, and no amount is followed through time, so the answer to the first question is **“How whole numbers split, repeat or are made up”**.
 - What does the problem want to know about the number or numbers? **What is left over, or where a count ends on a loop.** The words “What colour is the 47th light?” give a count and one group size, or one loop, and ask for the part not in a whole group or for the place the count reaches, which is **“What is left over, or where a count ends on a loop”**.
 - Why not **Lowest common multiple**: There is one group size, or one loop, and a count that goes round it. **Lowest common multiple** needs two separate schedules, and asks when they first coincide.
 - Taught on: “Worked: the time 50 hours after 9 o’clock” (one tap opens the card).
@@ -4035,7 +4035,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
   The *square root* of a whole number is either a whole number or a number that can never be written exactly as a fraction. There is nothing in between, so landing exactly on a whole number multiplied by itself is the only way for it to be exact, and when it does not land there, a calculator can only round it.
 - If you chose Not exact: only about 15: You chose **Not exact: only about 15**. That is the answer you get when you assume every *square root* is only a rounded value and never check whether the number is a whole number multiplied by itself.
 - If you chose Exact: 112.5: You chose **Exact: 112.5**. That is the answer you get when you halve the number, instead of finding the number that multiplies by itself to give it.
-- What does the problem ask you to work out? **How whole numbers split, repeat or are made up.** The problem asks “Can the side be written exactly, as a fraction or a decimal that ends?”, a question about whether one number can be written exactly. It is about the value of a number, with no amount followed through time and no hidden number for a calculation to fit, so the key’s first answer is **“How whole numbers split, repeat or are made up”**.
+- What does the problem ask you to work out? **How whole numbers split, repeat or are made up.** The problem asks “Can the side be written exactly, as a fraction or a decimal that ends?”, a question about whether one number can be written exactly. It is about the value of a number, with no amount followed through time and no hidden number for a calculation to fit, so the answer to the first question is **“How whole numbers split, repeat or are made up”**.
 - What does the problem want to know about the number or numbers? **Whether a number can be written exactly.** The words “Can the side be written exactly, as a fraction or a decimal that ends?” ask whether one number can be written exactly, which is **“Whether a number can be written exactly”**.
 - Why not **Prime check**: The problem asks for the exact value of a number, and nothing is shared out in equal groups. **Prime check** would be the name if it asked whether a count of things could be split in rows or teams.
 - Taught on: “Worked: the diagonal of a square tile” (one tap opens the card).
@@ -4063,7 +4063,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
   The *square root* of a whole number is either a whole number or a number that can never be written exactly as a fraction. There is nothing in between, so landing exactly on a whole number multiplied by itself is the only way for it to be exact, and when it does not land there, a calculator can only round it.
 - If you chose Exact: 3.46: You chose **Exact: 3.46**. That is the answer you get when you read the rounded decimal on the calculator as the exact value.
 - If you chose Exact: 3: You chose **Exact: 3**. That is the answer you get when you take the nearest whole number as the exact value.
-- What does the problem ask you to work out? **How whole numbers split, repeat or are made up.** The problem asks “Can the side be written exactly, as a fraction or a decimal that ends?”, a question about whether one number can be written exactly. It is about the value of a number, with no amount followed through time and no hidden number for a calculation to fit, so the key’s first answer is **“How whole numbers split, repeat or are made up”**.
+- What does the problem ask you to work out? **How whole numbers split, repeat or are made up.** The problem asks “Can the side be written exactly, as a fraction or a decimal that ends?”, a question about whether one number can be written exactly. It is about the value of a number, with no amount followed through time and no hidden number for a calculation to fit, so the answer to the first question is **“How whole numbers split, repeat or are made up”**.
 - What does the problem want to know about the number or numbers? **Whether a number can be written exactly.** The words “Can the side be written exactly, as a fraction or a decimal that ends?” ask whether one number can be written exactly, which is **“Whether a number can be written exactly”**.
 - Why not **Prime check**: The problem asks for the exact value of a number, and nothing is shared out in equal groups. **Prime check** would be the name if it asked whether a count of things could be split in rows or teams.
 - Taught on: “Worked: the diagonal of a square tile” (one tap opens the card).
@@ -4091,7 +4091,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
   Pi has been proved to be a number that no fraction and no decimal that ends can equal. Any value written down for it, such as a fraction or a rounded decimal, is only close, and it differs from pi at some decimal place.
 - If you chose Exact: 3.1416 is pi: You chose **Exact: 3.1416 is pi**. That is the answer you get when you take the value in the textbook as the exact value, though it differs from pi in its digits.
 - If you chose Exact: pi = 3.14159265: You chose **Exact: pi = 3.14159265**. That is the answer you get when you take the digits you can see as the whole of pi, though they go on without ending.
-- What does the problem ask you to work out? **How whole numbers split, repeat or are made up.** The problem asks “Is 3.1416 exactly equal to pi?”, a question about whether one number can be written exactly. It is about the value of a number, with no amount followed through time and no hidden number for a calculation to fit, so the key’s first answer is **“How whole numbers split, repeat or are made up”**.
+- What does the problem ask you to work out? **How whole numbers split, repeat or are made up.** The problem asks “Is 3.1416 exactly equal to pi?”, a question about whether one number can be written exactly. It is about the value of a number, with no amount followed through time and no hidden number for a calculation to fit, so the answer to the first question is **“How whole numbers split, repeat or are made up”**.
 - What does the problem want to know about the number or numbers? **Whether a number can be written exactly.** The words “Is 3.1416 exactly equal to pi?” ask whether one number can be written exactly, which is **“Whether a number can be written exactly”**.
 - Why not **Prime check**: The problem asks for the exact value of a number, and nothing is shared out in equal groups. **Prime check** would be the name if it asked whether a count of things could be split in rows or teams.
 - Taught on: “Worked: the diagonal of a square tile” (one tap opens the card).

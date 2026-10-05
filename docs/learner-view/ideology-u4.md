@@ -1,15 +1,15 @@
 # Learner view: Political Ideologies, Unit Four: Old ways of faith, family and custom
 
-*Two names for a text that holds up old ways, the one question that tells them apart, and the names they are mistaken for.* Unit revision 1, built to lesson standard 1, status: draft.
+*Two names for a text that holds up old ways, the one question that tells them apart, and the names they are mistaken for.* Unit revision 2, built to lesson standard 1, status: draft.
 
 This file is generated from the data files by `tools/render-learner-view.mjs`. It shows every screen in the order a learner meets it. In the app one card is on screen at a time and the learner moves on when ready.
 
-- **Bold text in quotation marks** is the key’s own wording, printed from `key.js`. Bold names are the outcome names from the same file. Neither is typed anywhere else. "What you must be able to point to" lines and "How to tell them apart" lines are also printed from one place each (the key and the look-alike ledger).
+- **Bold text in quotation marks** is the subject’s own wording for its questions and answers, written once and printed everywhere. Bold names are the names, written once in the same place. Neither is typed anywhere else. "What you must be able to point to" lines and "How to tell them apart" lines are also printed from one place each (the subject’s questions and the pairs it compares).
 - ⟦Double brackets⟧ show the words the app marks in a case (one highlight style everywhere).
 - The line in italics under each heading is the app’s top bar. The line in square brackets after it is for reviewers and is not shown to the learner.
 - Headings, prompt wording and stage instructions that are the same in every unit are the app’s wording, not this unit’s.
 - "Shown as soon as you …" is what appears the moment the learner answers. Nothing is hidden behind a second tap the first time a case is met, or after a miss.
-- After every answer the app shows, in this order: the right answer in the key’s words; the reason, quoting the marked words; for a name, why the nearest wrong name fails; after a miss, a line about the answer the learner chose; and last a link to the card that taught it. Where a line about the learner’s own choice is not written for the case, the app builds it from the key, and this file says so in place of repeating it.
+- After every answer the app shows, in this order: the right answer; the reason, quoting the marked words; for a name, why the nearest wrong name fails; after a miss, a line about the answer the learner chose; and last a link to the card that taught it. Where a line about the learner’s own choice is not written for the case, the app builds it from the answers’ own wording, and this file says so in place of repeating it.
 
 ---
 
@@ -17,7 +17,7 @@ This file is generated from the data files by `tools/render-learner-view.mjs`. I
 
 ### 1. Old ways: keep them, or bring them back?
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 1 of 22*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 1 of 22*
 
 [reviewers only: card kind `orient`, id `orient-ways`]
 
@@ -25,25 +25,25 @@ After this unit you can read a short text that holds up the old ways of faith, h
 
 You already hear this talked about. A neighbour says the village should "keep its traditions". Someone else says a new law "destroyed our way of life". A columnist calls one politician "reactionary" and another "just conservative", and neither says what they mean. The two words are often used as if they were the same, or as if one were praise and the other an insult.
 
-They are not the same thing, and the key tells them apart. Unit One taught the key’s first question, and every text in this unit gets one answer to it: **“Old ways of faith, family and custom”**. That answer is a place to start, and it leaves two names open. One kind of text wants what is still there kept, and wants any change to come slowly. Another says that something has been lost, that its loss was a wrong, and asks for it to be given back. The key gives them different names, and tells them apart with one more question.
+They are not the same thing, and they can be told apart. Unit One taught the first question, and every text in this unit gets one answer to it: **“Old ways of faith, family and custom”**. That answer is a place to start, and it leaves two names open. One kind of text wants what is still there kept, and wants any change to come slowly. Another says that something has been lost, that its loss was a wrong, and asks for it to be given back. They are given different names, and one more question tells them apart.
 
 That question is **“What does the text want done with the old ways?”** You answer it by pointing at words in the text, as you did in Unit One. It is the only question that comes after Unit One’s, so the answer you give to it is also the name you end with.
 
-Every text in this unit is invented. The countries, towns, laws and groups in them do not exist, and no text says what any real person or party believes. Real people and parties say different things in different places, so the key reads one short text at a time and gives no verdict on whoever wrote it.
+Every text in this unit is invented. The countries, towns, laws and groups in them do not exist, and no text says what any real person or party believes. Real people and parties say different things in different places, so this course reads one short text at a time and gives no verdict on whoever wrote it.
 
-**What Unit One taught, in one place.** The key’s first question is **“Who or what does the text put first?”** Its answers:
+**What Unit One taught, in one place.** The first question is **“Who or what does the text put first?”** Its answers:
 
 - **“Working people, against those who own the businesses”**: give this answer when the text sorts people by whether they work for a wage or own the businesses (or are rich from owning them), and takes the side of the workers against the owners.
 - **“The nation, or its ordinary people”**: give this answer when the text speaks for one people, marked out by its country, its culture or its blood, and puts that people first: the whole nation as one, or its ordinary people against a few at the top.
-- **“Old ways of faith, family and custom”**: give this answer when the text holds up ways handed down from the past (a faith, the family, old customs, or an old order of crown, church and rank) as what should guide the country. **This unit is about these cases.**
+- **“Old ways of faith, family and custom”**: give this answer when the text holds up ways handed down from the past (a faith, home life, old customs, or an old order of crown, church and rank) as what should guide the country. **This unit is about these cases.**
 - **“Rights and fair treatment for everyone”**: give this answer when the text puts first what it says every person is owed: the freedom to speak, believe, own and trade, a fair start in life, or fair treatment whatever group they belong to.
 - **“No side named”**: give this answer when the text says only who holds power and how they keep it, or how one practical matter should be handled, and speaks for no side: no working people against owners, no nation or people, no old ways, and nothing every person is owed.
 
-Unit One also taught that two things are marked separately: the name you give a case, and your route to it, meaning the answers you gave to the key’s questions on the way.
+Two things are marked separately: the name you give a case, and your answers to the questions on the way to it.
 
 *(One tap on any of these lines opens the card in Unit One that taught it.)*
 
-**The part of the key this unit teaches.** This is a preview. You are not expected to follow it yet: every line is explained on the cards that come next. The question and its answers are in the key’s own words. Beside each answer, in plain words, is the thing it leads to. There are two of them, and each gets its name when it is taught.
+**The questions this unit teaches.** This is a preview. You are not expected to follow it yet: every line is explained on the cards that come next. The question and its answers are worded exactly as you will meet them. Beside each answer, in plain words, is the thing it leads to. There are two of them, and each gets its name when it is taught.
 
 What does the text want done with the old ways?
 - Keep what remains, and change slowly → keep the old ways, and change slowly
@@ -57,7 +57,7 @@ What does the text want done with the old ways?
 The unit has four parts, and you can stop after any of them.
 
 1. Keeping what has been handed down
-2. Bringing back what has gone, and the key’s question
+2. Bringing back what has gone, and the question
 3. The names these two are mistaken for
 4. Two whole cases, then the drill
 
@@ -65,7 +65,7 @@ Each name is taught through cases first. After every step you answer one questio
 
 ### 2. Keep the old ways, and change slowly
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 2 of 22*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 2 of 22*
 
 [reviewers only: card kind `meet`, id `meet-conserv`]
 
@@ -79,34 +79,34 @@ Stripped of its story, the case is this:
 
 - Something from the past is named, and it is still there: a walk round the parish, with a blessing, which the grandparents walked and the children still walk.
 - The text says it should carry on. "Keep the walk."
-- It allows that something may have to change, because a new road cuts across the route. It asks for the change to be slow, a step at a time, with the old walkers asked first.
+- It allows that something may have to change, because a new road cuts across the walk’s path. It asks for the change to be slow, a step at a time, with the old walkers asked first.
 - Nothing is said to have been torn down, and nothing is asked to come back. The walk is still being walked.
 
 In Unit One this text gets the answer **“Old ways of faith, family and custom”**: it names a custom and a faith handed down, and says they should guide how the village plans its years. That answer leaves two names open, and this card is about the question that chooses between them: **“What does the text want done with the old ways?”**
 
 Look at what the text asks. The walk is still walked. Nobody has stopped it. So the text is not asking for anything to be brought back. It is asking that what is there stay there, and that if anything must change, it changes slowly and with the people it touches asked first.
 
-The idea behind this kind of text is that what has been handed down has been tested by many people over many years, and that anything new is risky until it has been tried. People who think this need not want everything to stay as it is. They accept that some change will come. What they ask for is a slow pace, and a say for the people it touches. People who disagree say that going slowly can be a way of never changing, and that some old ways should be dropped. Whether the old ways are good is argued over, and the key takes no side. It goes by what the text asks for.
+The idea behind this kind of text is that what has been handed down has been tested by many people over many years, and that anything new is risky until it has been tried. People who think this need not want everything to stay as it is. They accept that some change will come. What they ask for is a slow pace, and a say for the people it touches. People who disagree say that going slowly can be a way of never changing, and that some old ways should be dropped. Whether the old ways are good is argued over, and no side is taken here. The answer goes by what the text asks for.
 
-Notice what the key is not asking. It is not asking whether the faith is true or the walk is a good custom. It is asking what the text wants done with the old ways it holds up. Here the text wants them kept.
+Notice what is not being asked. It is not asking whether the faith is true or the walk is a good custom. It is asking what the text wants done with the old ways it holds up. Here the text wants them kept.
 
-**What you must be able to point to.** Ways of faith, family or custom handed down from the past, the text wanting them kept, with any change made slowly, and no order that has gone asked to be brought back. This comes from one case so far. The next card tests it on a second case.
+**What you must be able to point to.** Ways of faith, home life or custom handed down from the past, the text wanting them kept, with any change made slowly, and no order that has gone asked to be brought back. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What does the text want done with the old ways?”**
+**The question:** **“What does the text want done with the old ways?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“Keep what remains, and change slowly”**
+**Its answer for a case like this one:** **“Keep what remains, and change slowly”**
 
-The name for this is **Conservatism**. The word comes from "conserve", which means to keep safe. The key uses it for the one thing you just saw: a text that holds up old ways, wants them kept, and wants any change to come slowly. It is a plain description of what a text asks for, and it is neither praise nor blame.
+The name for this is **Conservatism**. The word comes from "conserve", which means to keep safe. It is used here for the one thing you just saw: a text that holds up old ways, wants them kept, and wants any change to come slowly. It is a plain description of what a text asks for, and it is neither praise nor blame.
 
 You may also hear this called “small-c conservatism”. That means the same thing here, and from now on this unit uses one name: **Conservatism**.
 
 ### 3. Conservatism: the same thing in a different story
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 3 of 22*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 3 of 22*
 
 [reviewers only: card kind `again`, id `again-conserv`]
 
-The boundary walk gave you what to point to from one case: ways of faith, family or custom handed down from the past, the text wanting them kept, with any change made slowly, and no order that has gone asked to be brought back. Here is a second case in a different setting: a row of old almshouses, and a letter to a town council.
+The boundary walk gave you what to point to from one case: ways of faith, home life or custom handed down from the past, the text wanting them kept, with any change made slowly, and no order that has gone asked to be brought back. Here is a second case in a different setting: a row of old almshouses, and a letter to a town council.
 
 The first case again, in one line. *The boundary walk*: “Keep the walk” and “let it change slowly, a step at a time, and ask the old walkers first”
 
@@ -137,7 +137,7 @@ The two stories share nothing else. So this holds wherever a text holds up old w
 
 ### 4. The story never decides the answer
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 4 of 22*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 4 of 22*
 
 [reviewers only: card kind `lens`, id `lens-ways`]
 
@@ -151,13 +151,13 @@ Two other things change on purpose, and they tell you nothing either. One is how
 
 From here on, some cases will share a story and differ only underneath. When that happens, the shared story is there to show you that it decides nothing.
 
-**Stays the same from case to case:** what the text wants done with the old ways it holds up, which is what the key asks about: **“What does the text want done with the old ways?”**
+**Stays the same from case to case:** what the text wants done with the old ways it holds up, which is what the question asks about: **“What does the text want done with the old ways?”**
 
 **Changes on purpose:** the topic; the people; how warm or how angry the text sounds; whether you agree with it; how much of the old order is still there.
 
 ### 5. Conservatism: what it is like
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 5 of 22*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 5 of 22*
 
 [reviewers only: card kind `portrait`, id `portrait-conserv`]
 
@@ -189,7 +189,7 @@ In your own life it is the household custom that everyone agrees to keep, the cl
 
 ### 6. A question about a new case
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 6 of 22*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 6 of 22*
 
 [reviewers only: card kind `check`, id `check-conserv`]
 
@@ -204,21 +204,21 @@ The pieces you can tap:
 
 **Shown as soon as you tap**
 
-- If you are right: “Right: ‘Keep it, and if the opening hours must change, change them slowly and ask the shopkeepers first’.” The text says what is to be done with the day of rest: “Keep it, and if the opening hours must change, change them slowly and ask the shopkeepers first”. The day is still kept, and nothing that has gone is asked back. The text asks for it to stay, and for any change to be slow. The key’s answer for this case is **“Keep what remains, and change slowly”**, and the name is **Conservatism**.
+- If you are right: “Right: ‘Keep it, and if the opening hours must change, change them slowly and ask the shopkeepers first’.” The text says what is to be done with the day of rest: “Keep it, and if the opening hours must change, change them slowly and ask the shopkeepers first”. The day is still kept, and nothing that has gone is asked back. The text asks for it to stay, and for any change to be slow. The answer for this case is **“Keep what remains, and change slowly”**, and the name is **Conservatism**.
 - If you miss: “The words are ‘Keep it, and if the opening hours must change, change them slowly and ask the shopkeepers first’.” The same reason follows, and then a line about the piece you tapped:
   - “The shops of Oldgate have closed on Sunday since our grandfathers' day, so that a household can eat one meal together and go to church or chapel if it wishes.”: That names the old way, a day of rest that is still kept. It is not yet what the text wants done with it.
   - “That day of rest should guide how the town plans its markets.”: That says the old way should guide, which is the answer to Unit One’s question. This question asks what is to be done with it.
 - Taught on: “Keep the old ways, and change slowly” (one tap opens the card).
 
-*End of part 1. You can stop here; your place is kept. Next: part 2, Bringing back what has gone, and the key’s question.*
+*End of part 1. You can stop here; your place is kept. Next: part 2, Bringing back what has gone, and the question.*
 
 ---
 
-## Part 2 of 4: Bringing back what has gone, and the key’s question
+## Part 2 of 4: Bringing back what has gone, and the question
 
 ### 7. Bring back an old order that has gone
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 7 of 22*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 7 of 22*
 
 [reviewers only: card kind `meet`, id `meet-react`]
 
@@ -241,21 +241,21 @@ The second thing is what the text says about how it was lost. It does not say th
 
 In Unit One this text gets the answer **“Old ways of faith, family and custom”**, because it holds up an old order of crown and church as what should guide. That answer is shared with the last name. What separates the two is this unit’s question, and the answer it gets here is **“Bring back an order that has gone”**.
 
-People who think like this hold that a country’s order was built up over centuries, that those who tore it down had no right, and that what came after is worse. They need not want everything of the past. They may ask for one old order, or for several, to be put back. People who disagree say that the old order was unfair to many people, or that going back is not possible, or that it was not lost wrongly at all. The key takes no side. It goes by what the text asks for.
+People who think like this hold that a country’s order was built up over centuries, that those who tore it down had no right, and that what came after is worse. They need not want everything of the past. They may ask for one old order, or for several, to be put back. People who disagree say that the old order was unfair to many people, or that going back is not possible, or that it was not lost wrongly at all. No side is taken here. The answer goes by what the text asks for.
 
 **What you must be able to point to.** An old order of faith, crown, rank or custom that the text says was wrongly torn down, and the text asking for it to be put back. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What does the text want done with the old ways?”**
+**The question:** **“What does the text want done with the old ways?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“Bring back an order that has gone”**
+**Its answer for a case like this one:** **“Bring back an order that has gone”**
 
-The name for this is **Reactionary conservatism**. "Reactionary" means reacting against a change that has already been made, by trying to undo it. In everyday arguments the word is often thrown as an insult, to mean "backward" or "old-fashioned". The key does not use it that way. It uses it as a plain description of what you can point to in a text: an order that has gone, said to have been wrongly torn down, and asked for back. The second word of the name is the name from the last card, because this kind of text, like that one, holds up old ways.
+The name for this is **Reactionary conservatism**. "Reactionary" means reacting against a change that has already been made, by trying to undo it. In everyday arguments the word is often thrown as an insult, to mean "backward" or "old-fashioned". It is not used that way here. It is used as a plain description of what you can point to in a text: an order that has gone, said to have been wrongly torn down, and asked for back. The second word of the name is the name from the last card, because this kind of text, like that one, holds up old ways.
 
 You may also hear this called “throne and altar” or “traditionalism”. Those words mean the same thing here, and from now on this unit uses one name: **Reactionary conservatism**.
 
 ### 8. Reactionary conservatism: the same thing in a different story
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 8 of 22*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 8 of 22*
 
 [reviewers only: card kind `again`, id `again-react`]
 
@@ -288,7 +288,7 @@ The two stories share nothing else. So this holds wherever a text holds up an ol
 
 ### 9. Reactionary conservatism: what it is like
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 9 of 22*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 9 of 22*
 
 [reviewers only: card kind `portrait`, id `portrait-react`]
 
@@ -320,13 +320,13 @@ In your own life it is the argument that a school, a church service, a shop’s 
 
 ### 10. A question about a new case
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 10 of 22*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 10 of 22*
 
 [reviewers only: card kind `check`, id `check-react`]
 
 > From a speech at the market cross in Carrow: 'For a thousand years the market of Carrow was held under the lord of the manor, who set the weights, judged the quarrels and opened each market day with a blessing. The new Borough Act took the market from him. That Act was a theft, and not a reform, and Carrow has known no peace since. Give the lord his market and his place on the bench back, and let the blessing be said again from his steps.'
 
-**The key asks:** **“What does the text want done with the old ways?”** Which of the answers you have met so far fits this case?
+**The question:** **“What does the text want done with the old ways?”** Which of the answers you have met so far fits this case?
 
 - Keep what remains, and change slowly
 - Bring back an order that has gone
@@ -335,12 +335,12 @@ In your own life it is the argument that a school, a church service, a shop’s 
 
 - If you are right: “Right: **Bring back an order that has gone.**” The text names an order that has gone, the lord’s market and his place on the bench, and calls the way it was lost a wrong: “That Act was a theft, and not a reform” and “Give the lord his market and his place on the bench back”. It asks for the order to be given back, and nothing it names is still in place. The name that goes with this answer is **Reactionary conservatism**.
 - If you miss: “The answer is **Bring back an order that has gone.**” The same reason follows, and then a line about the answer you chose:
-  - If you chose **Keep what remains, and change slowly**: Give that answer when the text wants inherited ways of faith, family or custom kept, with any change made slowly, and does not ask for an order that has gone to be put back. This case shows something else: the text says an old order of faith, crown, rank or custom was wrongly torn down, and asks for it to be put back.
+  - If you chose **Keep what remains, and change slowly**: Give that answer when the text wants inherited ways of faith, home life or custom kept, with any change made slowly, and does not ask for an order that has gone to be put back. This case shows something else: the text says an old order of faith, crown, rank or custom was wrongly torn down, and asks for it to be put back.
 - Taught on: “Bring back an old order that has gone” (one tap opens the card).
 
 ### 11. Conservatism or Reactionary conservatism: telling them apart
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 11 of 22*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 11 of 22*
 
 [reviewers only: card kind `lookalike`, id `look-conserv-react`]
 
@@ -362,9 +362,9 @@ You have now met both names. They begin from the same place, a text that holds u
 
 **Why this one and not the other**
 
-In Case A the school is still a church school. The text says its Sunday hymns and the vicar’s choosing of the head teacher were handed down and should guide how the school is run, and it asks for them to be kept, and for any change to come slowly. Nothing has gone and nothing is asked back. The key’s answer is **“Keep what remains, and change slowly”**, and the case is **Conservatism**.
+In Case A the school is still a church school. The text says its Sunday hymns and the vicar’s choosing of the head teacher were handed down and should guide how the school is run, and it asks for them to be kept, and for any change to come slowly. Nothing has gone and nothing is asked back. The answer is **“Keep what remains, and change slowly”**, and the case is **Conservatism**.
 
-In Case B the school was taken from the church by an act, and the church no longer chooses the head teacher. The text says that was a wrong, and asks for the act to be undone and the school given back. The key’s answer is **“Bring back an order that has gone”**, and the case is **Reactionary conservatism**.
+In Case B the school was taken from the church by an act, and the church no longer chooses the head teacher. The text says that was a wrong, and asks for the act to be undone and the school given back. The answer is **“Bring back an order that has gone”**, and the case is **Reactionary conservatism**.
 
 Both texts love the same school and hold up the same old ways. They differ in what stands today and in what the text asks for. Case A asks for what is there to stay. Case B asks for what has gone to return.
 
@@ -372,18 +372,18 @@ Both texts love the same school and hold up the same old ways. They differ in wh
 
 Does the text ask for something that has gone to be put back, after calling its going a wrong? Or does it ask only for what is still there to stay, and for change to be slow?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Conservatism | Reactionary conservatism |
 |---|---|---|
 | Who or what does the text put first? | Old ways of faith, family and custom | Old ways of faith, family and custom |
 | What does the text want done with the old ways? | Keep what remains, and change slowly | Bring back an order that has gone |
-| What you must be able to point to | Ways of faith, family or custom handed down from the past, the text wanting them kept, with any change made slowly, and no order that has gone asked to be brought back | An old order of faith, crown, rank or custom that the text says was wrongly torn down, and the text asking for it to be put back |
+| What you must be able to point to | Ways of faith, home life or custom handed down from the past, the text wanting them kept, with any change made slowly, and no order that has gone asked to be brought back | An old order of faith, crown, rank or custom that the text says was wrongly torn down, and the text asking for it to be put back |
 
 
 ### 12. A wrong idea about a text that holds up old ways
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 12 of 22*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 12 of 22*
 
 [reviewers only: card kind `refute`, id `refute-values`]
 
@@ -395,31 +395,31 @@ You now have both names. There is a way of reading them that gets the first one 
 
 **What is right instead**
 
-First, valuing old ways is not asking for them to be put back. Many texts that hold up faith and custom are about something that is still there. They ask for it to be kept, and they say nothing was torn down. For those texts the key’s answer to **“What does the text want done with the old ways?”** is **“Keep what remains, and change slowly”**, and the name is **Conservatism**.
+First, valuing old ways is not asking for them to be put back. Many texts that hold up faith and custom are about something that is still there. They ask for it to be kept, and they say nothing was torn down. For those texts the answer to **“What does the text want done with the old ways?”** is **“Keep what remains, and change slowly”**, and the name is **Conservatism**.
 
-Second, "turning the clock back" is a figure of speech, and it can be stretched over almost anything. The key asks for words you can point to: an order that has gone, said to have been wrongly torn down, and a request for it to be put back. Without those words you do not have **Reactionary conservatism**.
+Second, "turning the clock back" is a figure of speech, and it can be stretched over almost anything. What counts is words you can point to: an order that has gone, said to have been wrongly torn down, and a request for it to be put back. Without those words you do not have **Reactionary conservatism**.
 
 So when a text holds up old ways, point to what it asks. Is anything asked back? If not, the name is **Conservatism**.
 
 
 ### 13. The question you have been answering all along
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 13 of 22*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 13 of 22*
 
 [reviewers only: card kind `question`, id `q-ways`]
 
-Since the boundary walk you have seen the key’s question at the foot of each new name, with one answer under it. This card puts the question and both its answers in one place, as the key shows them, and says why the key asks it.
+Since the boundary walk you have seen the question at the foot of each new name, with one answer under it. This card puts the question and both its answers in one place, worded as they always are, and says why it is asked.
 
-**The key asks:** **“What does the text want done with the old ways?”**
+**The question:** **“What does the text want done with the old ways?”**
 
 **What it is for.** Tells apart texts that want an order that has gone brought back from texts that want what remains kept, with change made slowly.
 
-**Its answers, exactly as the key shows them**
+**Its answers**
 
 Each answer leads to one name, and so rules out the other one.
 
 - **“Keep what remains, and change slowly”**
-  - Give this answer when the text wants inherited ways of faith, family or custom kept, with any change made slowly, and does not ask for an order that has gone to be put back.
+  - Give this answer when the text wants inherited ways of faith, home life or custom kept, with any change made slowly, and does not ask for an order that has gone to be put back.
   - It leads to **Conservatism**.
 - **“Bring back an order that has gone”**
   - Give this answer when the text says an old order of faith, crown, rank or custom was wrongly torn down, and asks for it to be put back.
@@ -433,7 +433,7 @@ Unit One’s question, **“Who or what does the text put first?”**, got the s
 
 Two texts can love the same old ways, quote the same grandparents and sound equally fond of them. One asks that what is there be looked after. The other asks that what has gone be given back. Nothing in how fond a text sounds, or how old the thing is, or how angry the writer is can tell you which. Only what is asked of the old ways can.
 
-This is the only question that comes after Unit One’s, and each of its answers leads to one name. So your answer to it is also the name you give. The name and the route are still marked separately, as in every unit. Your route here is two answers: the one you gave to Unit One’s question, and this one. A right name reached by a wrong answer to the first of them counts as a miss.
+This is the only question that comes after Unit One’s, and each of its answers leads to one name. So your answer to it is also the name you give. The name and your answers on the way are still marked separately, as in every unit. Your answers on the way here are two: the one you gave to Unit One’s question, and this one. A right name reached by a wrong answer to the first of them counts as a miss.
 
 **How to answer it from a case**
 
@@ -452,13 +452,13 @@ Sometimes both answers seem to fit: a text mourns an old order and also asks for
 
 ### 14. A question about a new case
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 14 of 22*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 14 of 22*
 
 [reviewers only: card kind `check`, id `check-ways`]
 
 > From a nurses' association letter: 'Until the Health Reform, every ward was led by a matron, whose word was final, and every nurse knew her rank by the colour of her belt. The Reform swept the matrons away and called it progress. That was a wrong done to the sick. This old order of the wards should guide how the hospital is run, so put the matrons back on every ward, with their belts and their authority, as it was.'
 
-**The key asks:** **“What does the text want done with the old ways?”**
+**The question:** **“What does the text want done with the old ways?”**
 
 - Keep what remains, and change slowly
 - Bring back an order that has gone
@@ -467,7 +467,7 @@ Sometimes both answers seem to fit: a text mourns an old order and also asks for
 
 - If you are right: “Right: **Bring back an order that has gone.**” The text names an order that has gone, the matrons with their belts and their word, and says its going was a wrong: “That was a wrong done to the sick” and “put the matrons back on every ward, with their belts and their authority, as it was”. It asks for the order to be put back. Nothing it names is still in place, so the answer is the one for an order brought back. This answer leads to **Reactionary conservatism**.
 - If you miss: “The answer is **Bring back an order that has gone.**” The same reason follows, and then a line about the answer you chose:
-  - If you chose **Keep what remains, and change slowly**: Give that answer when the text wants inherited ways of faith, family or custom kept, with any change made slowly, and does not ask for an order that has gone to be put back. This case shows something else: the text says an old order of faith, crown, rank or custom was wrongly torn down, and asks for it to be put back.
+  - If you chose **Keep what remains, and change slowly**: Give that answer when the text wants inherited ways of faith, home life or custom kept, with any change made slowly, and does not ask for an order that has gone to be put back. This case shows something else: the text says an old order of faith, crown, rank or custom was wrongly torn down, and asks for it to be put back.
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 *End of part 2. You can stop here; your place is kept. Next: part 3, The names these two are mistaken for.*
@@ -478,7 +478,7 @@ Sometimes both answers seem to fit: a text mourns an old order and also asks for
 
 ### 15. Old ways and one people, at the same festival
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 15 of 22*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 15 of 22*
 
 [reviewers only: card kind `lookalike`, id `look-conserv-nationalism`]
 
@@ -500,9 +500,9 @@ Both names in this unit love what was handed down, and so does a name taught in 
 
 **Why this one and not the other**
 
-In Case A the text says that the blessing of the boats was handed down by the crews before them and should guide how the festival is planned, and asks for it to be kept, and for any work on the quay to be slow. It speaks of no people to be put first. The key’s answer to Unit One’s question is **“Old ways of faith, family and custom”**, and its answer to this unit’s question is **“Keep what remains, and change slowly”**. The case is **Conservatism**.
+In Case A the text says that the blessing of the boats was handed down by the crews before them and should guide how the festival is planned, and asks for it to be kept, and for any work on the quay to be slow. It speaks of no people to be put first. The answer to Unit One’s question is **“Old ways of faith, family and custom”**, and its answer to this unit’s question is **“Keep what remains, and change slowly”**. The case is **Conservatism**.
 
-In Case B the text says that the festival shows we are one people, and that what divides us counts for less than what holds us together. It names no old ways that should guide. It leaves voting and disagreement alone. The key’s answers are **“The nation, or its ordinary people”**, **“The whole nation, as one people”** and **“Leave them in place”**. The case is **Nationalism**.
+In Case B the text says that the festival shows we are one people, and that what divides us counts for less than what holds us together. It names no old ways that should guide. It leaves voting and disagreement alone. The answers are **“The nation, or its ordinary people”**, **“The whole nation, as one people”** and **“Leave them in place”**. The case is **Nationalism**.
 
 Both texts love the same festival. The difference is what each holds up as first: the people who hold it, or the ways handed down that make it what it is.
 
@@ -510,20 +510,20 @@ Both texts love the same festival. The difference is what each holds up as first
 
 What does the text hold up first: one people, marked out by its country, its culture or its blood? Or ways that were handed down from the past, which it says should guide?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Conservatism | Nationalism |
 |---|---|---|
 | Who or what does the text put first? | Old ways of faith, family and custom | The nation, or its ordinary people |
-| Who does the text speak for, and against whom? | *Not asked on its route* | The whole nation, as one people |
-| What does the text want done with elections and with those who disagree? | *Not asked on its route* | Leave them in place |
-| What does the text want done with the old ways? | Keep what remains, and change slowly | *Not asked on its route* |
-| What you must be able to point to | Ways of faith, family or custom handed down from the past, the text wanting them kept, with any change made slowly, and no order that has gone asked to be brought back | The whole nation spoken for as one people and put first, no elite inside it named as the enemy, no ranking of peoples by blood, and elections, other parties and the right to disagree left in place |
+| Who does the text speak for, and against whom? | *Not asked for this one* | The whole nation, as one people |
+| What does the text want done with elections and with those who disagree? | *Not asked for this one* | Leave them in place |
+| What does the text want done with the old ways? | Keep what remains, and change slowly | *Not asked for this one* |
+| What you must be able to point to | Ways of faith, home life or custom handed down from the past, the text wanting them kept, with any change made slowly, and no order that has gone asked to be brought back | The whole nation spoken for as one people and put first, no elite inside it named as the enemy, no ranking of peoples by blood, and elections, other parties and the right to disagree left in place |
 
 
 ### 16. An old crown, and one people with one leader
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 16 of 22*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 16 of 22*
 
 [reviewers only: card kind `lookalike`, id `look-react-fasc`]
 
@@ -545,9 +545,9 @@ The second name of this unit can be mistaken for a name taught in Unit Three: th
 
 **Why this one and not the other**
 
-In Case A the text says that the crown and the old council were swept away by the men who made the parliament, that this was a wrong, and asks for the crown and the council to be put back. The key’s answers are **“Old ways of faith, family and custom”** and **“Bring back an order that has gone”**. The case is **Reactionary conservatism**.
+In Case A the text says that the crown and the old council were swept away by the men who made the parliament, that this was a wrong, and asks for the crown and the council to be put back. The answers are **“Old ways of faith, family and custom”** and **“Bring back an order that has gone”**. The case is **Reactionary conservatism**.
 
-In Case B the text says nothing of an old order. It speaks for the nation as a single people, says the parliament talks while the nation suffers, and says that parties and votes will be done away with so that one leader speaks for everyone. The key’s answers are **“The nation, or its ordinary people”**, **“The whole nation, as one people”** and **“Push them aside, so one leader or movement speaks for everyone”**. The case is **Fascism**.
+In Case B the text says nothing of an old order. It speaks for the nation as a single people, says the parliament talks while the nation suffers, and says that parties and votes will be done away with so that one leader speaks for everyone. The answers are **“The nation, or its ordinary people”**, **“The whole nation, as one people”** and **“Push them aside, so one leader or movement speaks for everyone”**. The case is **Fascism**.
 
 Both texts are against the parliament and want a great change. The difference is what each asks for: an old order put back, or one people with one leader.
 
@@ -555,20 +555,20 @@ Both texts are against the parliament and want a great change. The difference is
 
 Does the text hold up an order that once stood, and ask for it back? Or does it speak for one people and say that one leader or movement should speak for everyone?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Reactionary conservatism | Fascism |
 |---|---|---|
 | Who or what does the text put first? | Old ways of faith, family and custom | The nation, or its ordinary people |
-| Who does the text speak for, and against whom? | *Not asked on its route* | The whole nation, as one people / Ordinary people against an elite, with the nation’s borders, culture or industry put first |
-| What does the text want done with elections and with those who disagree? | *Not asked on its route* | Push them aside, so one leader or movement speaks for everyone |
-| What does the text want done with the old ways? | Bring back an order that has gone | *Not asked on its route* |
+| Who does the text speak for, and against whom? | *Not asked for this one* | The whole nation, as one people / Ordinary people against an elite, with the nation’s borders, culture or industry put first |
+| What does the text want done with elections and with those who disagree? | *Not asked for this one* | Push them aside, so one leader or movement speaks for everyone |
+| What does the text want done with the old ways? | Bring back an order that has gone | *Not asked for this one* |
 | What you must be able to point to | An old order of faith, crown, rank or custom that the text says was wrongly torn down, and the text asking for it to be put back | The nation spoken for as one people (or its ordinary people set against an elite, with the nation put first), and elections, other parties or those who disagree done away with, silenced or broken, so that one leader or one movement speaks for everyone |
 
 
 ### 17. One people under one crown
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 17 of 22*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 17 of 22*
 
 [reviewers only: card kind `exception`, id `exc-fasc-react`]
 
@@ -578,7 +578,7 @@ The last card kept the two names on separate stories. A real text can show the m
 
 > From a royalist pamphlet: 'We are one people under one crown, and for six hundred years the crown and the Church courts kept the peace between us. The Assembly tore both down and put talk in their place. That was a crime against the realm. Let us close the Assembly, put the king back on his throne, and let the Church courts sit again as they sat before. One crown will speak for all of us, as it always did.'
 
-The pamphlet speaks for one people, and asks for the Assembly to be closed so that one voice speaks for everyone. Together, those are what you point to for **Fascism**. Yet the key’s answer to Unit One’s question for this case is **“Old ways of faith, family and custom”**, and the name is **Reactionary conservatism**.
+The pamphlet speaks for one people, and asks for the Assembly to be closed so that one voice speaks for everyone. Together, those are what you point to for **Fascism**. Yet the answer to Unit One’s question for this case is **“Old ways of faith, family and custom”**, and the name is **Reactionary conservatism**.
 
 **You are asked:** This looks like **Fascism**. Before you read why it is **Reactionary conservatism**, tap the words in the case that settle it.
 
@@ -597,7 +597,7 @@ The pieces you can tap:
 
 The pamphlet does speak for one people, and it does ask for the Assembly to be closed so that one voice speaks for everyone. If that were all it said, it would be **Fascism**. But look at what it holds up. It names the crown and the Church courts, says they kept the peace for six hundred years, says they were torn down wrongly, and asks for them back. That is an old order of crown and church, held up as what should guide the country, and asked for back.
 
-So the case shows both answers at once. When it does, the key chooses **“Old ways of faith, family and custom”**, and the question that follows gives **“Bring back an order that has gone”**. A text that speaks of one people and then asks for an old order to be put back holds up the old order as the thing that decides.
+So the case shows both answers at once. When it does, the answer is **“Old ways of faith, family and custom”**, and the question that follows gives **“Bring back an order that has gone”**. A text that speaks of one people and then asks for an old order to be put back holds up the old order as the thing that decides.
 
 There is a way to see why. Take away the words about one people, and the pamphlet still makes sense: it asks for the crown and the courts back. Take away the crown and the courts, and nothing is left to say what the country should return to.
 
@@ -605,14 +605,14 @@ There is a way to see why. Take away the words about one people, and the pamphle
 
 Does the text hold up an order that once stood, and ask for it back? Or does it speak for one people and say that one leader or movement should speak for everyone?
 
-When a case shows both **“The nation, or its ordinary people”** and old ways of faith, family or custom held up as what should guide the country, the key’s answer is **“Old ways of faith, family and custom”**.
+When a case shows both **“The nation, or its ordinary people”** and old ways of faith, home life or custom held up as what should guide the country, the answer is **“Old ways of faith, family and custom”**.
 
-It is worth knowing that this is the key’s decision. In life, love of one people and love of an old order run into each other, and people who study them do not all draw the line in the same place. Some would call a text like this one **Fascism**, some **Reactionary conservatism**, and some would say it is both. The key gives each text one name, by its answer to Unit One’s question, so that two people using it reach the same one and can each say why. It chooses this way round because the question after the old-ways answer asks whether an old order is to be put back, and that is what this pamphlet is about.
+It is worth knowing that this is a decision. In life, love of one people and love of an old order run into each other, and people who study them do not all draw the line in the same place. Some would call a text like this one **Fascism**, some **Reactionary conservatism**, and some would say it is both. Each text gets one name, by its answer to Unit One’s question, so that two people using the same questions reach the same one and can each say why. The answer goes this way round because the question after the old-ways answer asks whether an old order is to be put back, and that is what this pamphlet is about.
 
 
 ### 18. Old customs kept, and the owners made to pay
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 18 of 22*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 18 of 22*
 
 [reviewers only: card kind `exception`, id `exc-class-conserv`]
 
@@ -622,7 +622,7 @@ The last card showed old ways winning over one people. They do not win over ever
 
 > From a notice pinned at the Dunmere quarry gate: 'The blessing of the stone at the start of each season, the Sunday rest and the old quarry songs were handed down to us by the quarrymen before us, and they should guide how this town is run. Keep them, and change them slowly, if at all. But the owners of the quarry have cut the Sunday rest to pay for more stone, and those who cut the stone and those who own the quarry want different things, and we stand with those who cut it. The quarry stays with its owners. Let the council set a floor under our pay, and let a tax on the quarry's profits pay for the old quarrymen's pensions.'
 
-The notice holds up the blessing of the stone, the Sunday rest and the old quarry songs, handed down by the quarrymen before them, and asks for them to be kept and for change to be slow. That is what you point to for **Conservatism**. Yet the key’s answer to Unit One’s question for this case is **“Working people, against those who own the businesses”**, and the name is **Social democracy**.
+The notice holds up the blessing of the stone, the Sunday rest and the old quarry songs, handed down by the quarrymen before them, and asks for them to be kept and for change to be slow. That is what you point to for **Conservatism**. Yet the answer to Unit One’s question for this case is **“Working people, against those who own the businesses”**, and the name is **Social democracy**.
 
 **You are asked:** This looks like **Conservatism**. Before you read why it is **Social democracy**, tap the words in the case that settle it.
 
@@ -641,27 +641,27 @@ The pieces you can tap:
 
 The notice does hold up old customs as the guide, and asks for them to be kept and changed slowly. If that were all it said, it would be **Conservatism**. But it goes on to say that the owners cut the Sunday rest, that those who cut the stone and those who own the quarry want different things, and that it stands with those who cut it. That is working people set against owners, with the text on the workers’ side.
 
-So the case shows both answers at once. When it does, the key chooses **“Working people, against those who own the businesses”**. The customs are in the text, but what the text does with them is argue for the quarrymen against the owners. Then the questions Unit Two taught apply. The quarry stays with its owners, and the government is asked to set a floor under pay and tax the profits to pay for pensions, so the answer to **“What does the text say about the farms, factories, shops and banks?”** is **“Their owners keep them, and taxes and public services even out what people get”**. The text says nothing about how power is to be won or held, so the answer to **“What does the text want done with the government?”** is **“The text does not say”**. The name is **Social democracy**.
+So the case shows both answers at once. When it does, the answer is **“Working people, against those who own the businesses”**. The customs are in the text, but what the text does with them is argue for the quarrymen against the owners. Then the questions Unit Two taught apply. The quarry stays with its owners, and the government is asked to set a floor under pay and tax the profits to pay for pensions, so the answer to **“What does the text say about the farms, factories, shops and banks?”** is **“Their owners keep them, and taxes and public services even out what people get”**. The text says nothing about how power is to be won or held, so the answer to **“What does the text want done with the government?”** is **“The text does not say”**. The name is **Social democracy**.
 
-It chooses this way round for a reason. If the notice were given the old-ways answer, the owners and the quarrymen would drop out of what the key looks at, and they are what the notice is about.
+The answer goes this way round for a reason. If the notice were given the old-ways answer, the owners and the quarrymen would drop out of the reading, and they are what the notice is about.
 
 **How to tell them apart**
 
 Does the text sort people into those who work for pay and those who own the businesses, and stand with the first? Or does it only hold up what was handed down?
 
-When a case shows both **“Old ways of faith, family and custom”** and working people set against those who own the businesses, the key’s answer is **“Working people, against those who own the businesses”**.
+When a case shows both **“Old ways of faith, family and custom”** and working people set against those who own the businesses, the answer is **“Working people, against those who own the businesses”**.
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Conservatism | Social democracy |
 |---|---|---|
 | Who or what does the text put first? | Old ways of faith, family and custom | Working people, against those who own the businesses |
-| What does the text say about the farms, factories, shops and banks? | *Not asked on its route* | Their owners keep them, and taxes and public services even out what people get |
-| What does the text want done with the government? | *Not asked on its route* | Keep it, run by whoever wins elections / The text does not say |
-| What does the text want done with the old ways? | Keep what remains, and change slowly | *Not asked on its route* |
-| What you must be able to point to | Ways of faith, family or custom handed down from the past, the text wanting them kept, with any change made slowly, and no order that has gone asked to be brought back | Working people set against owners, the owners keeping their businesses, and the government taxing them, setting a floor for pay, or paying for services such as health care, schooling and pensions, so that working people get more |
+| What does the text say about the farms, factories, shops and banks? | *Not asked for this one* | Their owners keep them, and taxes and public services even out what people get |
+| What does the text want done with the government? | *Not asked for this one* | Keep it, run by whoever wins elections / The text does not say |
+| What does the text want done with the old ways? | Keep what remains, and change slowly | *Not asked for this one* |
+| What you must be able to point to | Ways of faith, home life or custom handed down from the past, the text wanting them kept, with any change made slowly, and no order that has gone asked to be brought back | Working people set against owners, the owners keeping their businesses, and the government taxing them, setting a floor for pay, or paying for services such as health care, schooling and pensions, so that working people get more |
 
-It is worth knowing that this is the key’s decision. In life, a text can hold up what was handed down and blame owners in the same breath, and nobody can draw a sharp line between the two. The key gives each text one answer, so that two people using it reach the same one and can each say why. It is the same decision you met in Unit One, and it holds whichever name the text ends with.
+It is worth knowing that this is a decision. In life, a text can hold up what was handed down and blame owners in the same breath, and nobody can draw a sharp line between the two. Each text gets one answer, so that two people using the same questions reach the same one and can each say why. It is the same decision you met in Unit One, and it holds whichever name the text ends with.
 
 
 *End of part 3. You can stop here; your place is kept. Next: part 4, Two whole cases, then the drill.*
@@ -672,11 +672,11 @@ It is worth knowing that this is the key’s decision. In life, a text can hold 
 
 ### 19. A whole case, from the first question to the name
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 19 of 22*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 19 of 22*
 
 [reviewers only: card kind `worked`, id `worked-burial`]
 
-You have the two names and the question that chooses between them. Before the drill, watch two cases being run from the top, in the order the key asks. You are not asked anything until the end of each.
+You have the two names and the question that chooses between them. Before the drill, watch two cases being run from the top, in the order the questions come. You are not asked anything until the end of each.
 
 *The burial club*
 
@@ -728,13 +728,13 @@ It is the question from the two church-school letters: Does the text ask for som
 
 **Does it look like a case you know?**
 
-The key has given its answer. Now take a second look of a different kind: does this case look like one you know? It should bring back the boundary walk. There too a text held up something handed down, and asked for it to be kept, with change slow and the people it touched asked first.
+The questions have given their answer. Now take a second look of a different kind: does this case look like one you know? It should bring back the boundary walk. There too a text held up something handed down, and asked for it to be kept, with change slow and the people it touched asked first.
 
-Here the key and the likeness agree, so the answer stands. The key’s question comes first, because it makes you point at words in the text. The likeness is only a second look. When the two disagree, do not pick the one you prefer. Go back to the key’s question and find the words in the text that answer it. The second whole case shows how.
+Here the answer and the likeness agree, so it stands. The question comes first, because it makes you point at words in the text. The likeness is only a second look. When the two disagree, do not pick the one you prefer. Go back to the question and find the words in the text that answer it. The second whole case shows how.
 
 ### 20. A second whole case, where the tone points the wrong way
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 20 of 22*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 20 of 22*
 
 [reviewers only: card kind `worked`, id `worked-hospice`]
 
@@ -786,15 +786,15 @@ Still possible: **Reactionary conservatism**. Ruled out: **Conservatism**.
 
 **Why this is Reactionary conservatism and not Conservatism**
 
-For **Conservatism** you must be able to point to this: ways of faith, family or custom handed down from the past, the text wanting them kept, with any change made slowly, and no order that has gone asked to be brought back. The petition is patient, and slow change fits what it says. But the last clause of that line is not met: an order that has gone is asked to be brought back. The House is closed, and the petition asks for it to be reopened.
+For **Conservatism** you must be able to point to this: ways of faith, home life or custom handed down from the past, the text wanting them kept, with any change made slowly, and no order that has gone asked to be brought back. The petition is patient, and slow change fits what it says. But the last clause of that line is not met: an order that has gone is asked to be brought back. The House is closed, and the petition asks for it to be reopened.
 
 It is the question from the two church-school letters: Does the text ask for something that has gone to be put back, after calling its going a wrong? Or does it ask only for what is still there to stay, and for change to be slow? Here something that has gone is asked back, so the answer to **“What does the text want done with the old ways?”** is **“Bring back an order that has gone”**.
 
 **Does it look like a case you know?**
 
-Now the second look: does this case look like one you know? A text that speaks gently of waiting and of doing things slowly may bring back the boundary walk first, and the boundary walk was **Conservatism**. So here the likeness and the key seem to disagree.
+Now the second look: does this case look like one you know? A text that speaks gently of waiting and of doing things slowly may bring back the boundary walk first, and the boundary walk was **Conservatism**. So here the likeness and the answer seem to disagree.
 
-When that happens, go back to the key’s question and find the words in the text that answer it. They are “that was a wrong we will not call anything else” and “We ask only that the House be reopened, the sisters be brought back to it, and the old order of the House be restored”. The boundary walk has nothing like them: the walk was still being walked, and nothing was asked back. The Church courts of Aldmere do: an order that had gone, called a wrong, and asked for back. So the case this one really looks like is the Church courts, and the key’s answer stands.
+When that happens, go back to the question and find the words in the text that answer it. They are “that was a wrong we will not call anything else” and “We ask only that the House be reopened, the sisters be brought back to it, and the old order of the House be restored”. The boundary walk has nothing like them: the walk was still being walked, and nothing was asked back. The Church courts of Aldmere do: an order that had gone, called a wrong, and asked for back. So the case this one really looks like is the Church courts, and the answer stands.
 
 ### The drill
 
@@ -802,7 +802,7 @@ The cards are out of view from here, and every case is new. The drill has five s
 
 Some of these texts are sad about something that has gone, and some are calm and patient while asking for an order to be put back. That is on purpose. What a text asks for decides the name, and how it sounds does not.
 
-#### Stage 1 of 5. The key’s answers are shown for each case. Give the name that goes with them. This stage practises one thing: which name goes with which answer.
+#### Stage 1 of 5. The answers are shown for each case. Give the name that goes with them. This stage practises one thing: which name goes with which answer.
 
 The names offered are the two this unit teaches: Conservatism / Reactionary conservatism.
 
@@ -822,7 +822,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Reactionary conservatism**: Nothing is said to have been torn down, and nothing is asked to be put back. The ringing is still done every Thursday.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Reactionary conservatism**, the look-alike card’s lines follow: Both hold up what was handed down from the past, both are fond of it, and both can be sad about what has changed. **Conservatism** asks for what is still there to be kept, and for any change to come slowly. Nothing is asked back. **Reactionary conservatism** says that an old order has gone, that its going was a wrong, and asks for it to be put back. Does the text ask for something that has gone to be put back, after calling its going a wrong? Or does it ask only for what is still there to stay, and for change to be slow?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “Keep the old ways, and change slowly” (one tap opens the card).
 
 **Drill item 2 of 34**
@@ -841,7 +841,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Conservatism**: The text does love an old custom, but the custom is not being kept. It has been closed down, and the text asks for it to be put back.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Conservatism**, the look-alike card’s lines follow: Both hold up what was handed down from the past, both are fond of it, and both can be sad about what has changed. **Conservatism** asks for what is still there to be kept, and for any change to come slowly. Nothing is asked back. **Reactionary conservatism** says that an old order has gone, that its going was a wrong, and asks for it to be put back. Does the text ask for something that has gone to be put back, after calling its going a wrong? Or does it ask only for what is still there to stay, and for change to be slow?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “Bring back an old order that has gone” (one tap opens the card).
 
 **Drill item 3 of 34**
@@ -860,7 +860,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Reactionary conservatism**: The lunch has not been taken away, so nothing is asked back. The text asks for what is there to be kept.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Reactionary conservatism**, the look-alike card’s lines follow: Both hold up what was handed down from the past, both are fond of it, and both can be sad about what has changed. **Conservatism** asks for what is still there to be kept, and for any change to come slowly. Nothing is asked back. **Reactionary conservatism** says that an old order has gone, that its going was a wrong, and asks for it to be put back. Does the text ask for something that has gone to be put back, after calling its going a wrong? Or does it ask only for what is still there to stay, and for change to be slow?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “Keep the old ways, and change slowly” (one tap opens the card).
 
 **Drill item 4 of 34**
@@ -879,7 +879,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Conservatism**: The text holds up an old way, but the old way is not being kept. It has been taken away, and the text asks for it to be given back.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Conservatism**, the look-alike card’s lines follow: Both hold up what was handed down from the past, both are fond of it, and both can be sad about what has changed. **Conservatism** asks for what is still there to be kept, and for any change to come slowly. Nothing is asked back. **Reactionary conservatism** says that an old order has gone, that its going was a wrong, and asks for it to be put back. Does the text ask for something that has gone to be put back, after calling its going a wrong? Or does it ask only for what is still there to stay, and for change to be slow?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “Bring back an old order that has gone” (one tap opens the card).
 
 #### Stage 2 of 5. One question at a time.
@@ -898,7 +898,7 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **Keep what remains, and change slowly.**” The text is sorry that the choir has shrunk, but what it asks for is “We ask the chapel to look after the choir that is left, and to try new music only a little at a time”. It asks that what is left be kept, and that change be slow. It does not ask for the forty voices back. This answer leads to **Conservatism**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **Bring back an order that has gone**: The text is sad about a loss, which can look like the other name. But sadness is not a request. It does not call the loss a wrong, and it asks for nothing to be put back.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 6 of 34**
@@ -915,7 +915,7 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **Bring back an order that has gone.**” The old seats are gone, the text calls their loss a wrong, and it asks for them to be returned: “That was a wrong against the order of this country” and “return the seats of the Upper Hall to the houses that held them”. This answer leads to **Reactionary conservatism**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **Keep what remains, and change slowly**: The old order is not still in place to be kept. The text says it was taken, and asks for it to be put back.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 7 of 34**
@@ -932,7 +932,7 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **Keep what remains, and change slowly.**” The plots are still held and the custom is still kept, and the text asks for them to stay and for change to be slow: “Keep the plots with those who have worked them” and “change it slowly and with the plot-holders asked”. This answer leads to **Conservatism**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **Bring back an order that has gone**: Nothing has been taken away. The text asks for what is there to be kept.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 8 of 34**
@@ -949,7 +949,7 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **Bring back an order that has gone.**” The farms were taken from the abbey, the text calls that a robbery, and it asks for them to be given back: “That was a robbery, and we do not call it anything else” and “give the farms back to the abbey and let the abbot order them as before”. This answer leads to **Reactionary conservatism**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **Keep what remains, and change slowly**: The old law of alms is not being kept. The text says it was broken by the sale, and asks for the farms to be returned.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 9 of 34**
@@ -979,7 +979,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Shown as soon as you answer**
 
-- The answer is: “What does the text hold up first: one people, marked out by its country, its culture or its blood? Or ways that were handed down from the past, which it says should guide?” Both love the country and its past, both can say "our" ways and "our" people, and both leave elections alone. **Nationalism** puts one people first, and speaks for it as a whole: **“The nation, or its ordinary people”**. **Conservatism** puts first the ways handed down from the past, and asks for them to be kept: **“Old ways of faith, family and custom”**. The first is about who belongs. The second is about what should guide. When a case shows both **“The nation, or its ordinary people”** and old ways of faith, family or custom held up as what should guide the country, the key’s answer is **“Old ways of faith, family and custom”**.
+- The answer is: “What does the text hold up first: one people, marked out by its country, its culture or its blood? Or ways that were handed down from the past, which it says should guide?” Both love the country and its past, both can say "our" ways and "our" people, and both leave elections alone. **Nationalism** puts one people first, and speaks for it as a whole: **“The nation, or its ordinary people”**. **Conservatism** puts first the ways handed down from the past, and asks for them to be kept: **“Old ways of faith, family and custom”**. The first is about who belongs. The second is about what should guide. When a case shows both **“The nation, or its ordinary people”** and old ways of faith, home life or custom held up as what should guide the country, the answer is **“Old ways of faith, family and custom”**.
 - If you chose “Does the text ask for something that has gone to be put back, after calling its going a wrong? Or does it ask only for what is still there to stay, and for change to be slow?”: that question separates **Conservatism** and **Reactionary conservatism**.
 - If you chose “Does the text sort people into those who work for pay and those who own the businesses, and stand with the first? Or does it only hold up what was handed down?”: that question separates **Conservatism** and **Social democracy**.
 - Taught on: “Old ways and one people, at the same festival” (one tap opens the card).
@@ -993,7 +993,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Shown as soon as you answer**
 
-- The answer is: “Does the text hold up an order that once stood, and ask for it back? Or does it speak for one people and say that one leader or movement should speak for everyone?” Both can speak of a great past, both can be impatient with a parliament, and both can ask for a very large change to the country. **Fascism** puts the nation first, as a single people, and wants one leader or movement to speak for everyone: **“The nation, or its ordinary people”**. **Reactionary conservatism** puts an old order first, a crown, a church or ranks of birth that the text says were torn down wrongly: **“Old ways of faith, family and custom”**. When a case shows both **“The nation, or its ordinary people”** and old ways of faith, family or custom held up as what should guide the country, the key’s answer is **“Old ways of faith, family and custom”**.
+- The answer is: “Does the text hold up an order that once stood, and ask for it back? Or does it speak for one people and say that one leader or movement should speak for everyone?” Both can speak of a great past, both can be impatient with a parliament, and both can ask for a very large change to the country. **Fascism** puts the nation first, as a single people, and wants one leader or movement to speak for everyone: **“The nation, or its ordinary people”**. **Reactionary conservatism** puts an old order first, a crown, a church or ranks of birth that the text says were torn down wrongly: **“Old ways of faith, family and custom”**. When a case shows both **“The nation, or its ordinary people”** and old ways of faith, home life or custom held up as what should guide the country, the answer is **“Old ways of faith, family and custom”**.
 - If you chose “Does the text ask for something that has gone to be put back, after calling its going a wrong? Or does it ask only for what is still there to stay, and for change to be slow?”: that question separates **Conservatism** and **Reactionary conservatism**.
 - Taught on: “An old crown, and one people with one leader” (one tap opens the card).
 
@@ -1007,7 +1007,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Shown as soon as you answer**
 
-- The answer is: “Does the text sort people into those who work for pay and those who own the businesses, and stand with the first? Or does it only hold up what was handed down?” Both can be fond of the old ways of a town, and both can ask the government to protect people from change that comes too fast. **Social democracy** sorts people into those who work for pay and those who own the businesses, and takes the workers’ side: **“Working people, against those who own the businesses”**. **Conservatism** holds up ways handed down, and sets nobody against anybody: **“Old ways of faith, family and custom”**. When a case shows both **“Old ways of faith, family and custom”** and working people set against those who own the businesses, the key’s answer is **“Working people, against those who own the businesses”**.
+- The answer is: “Does the text sort people into those who work for pay and those who own the businesses, and stand with the first? Or does it only hold up what was handed down?” Both can be fond of the old ways of a town, and both can ask the government to protect people from change that comes too fast. **Social democracy** sorts people into those who work for pay and those who own the businesses, and takes the workers’ side: **“Working people, against those who own the businesses”**. **Conservatism** holds up ways handed down, and sets nobody against anybody: **“Old ways of faith, family and custom”**. When a case shows both **“Old ways of faith, family and custom”** and working people set against those who own the businesses, the answer is **“Working people, against those who own the businesses”**.
 - If you chose “Does the text ask for something that has gone to be put back, after calling its going a wrong? Or does it ask only for what is still there to stay, and for change to be slow?”: that question separates **Conservatism** and **Reactionary conservatism**.
 - If you chose “What does the text hold up first: one people, marked out by its country, its culture or its blood? Or ways that were handed down from the past, which it says should guide?”: that question separates **Conservatism** and **Nationalism**.
 - Taught on: “Old customs kept, and the owners made to pay” (one tap opens the card).
@@ -1063,8 +1063,8 @@ Shown to you, with the words that decide each answer marked:
 **Shown as soon as you answer**
 
 - If you are right: “Right: **Working people, against those who own the businesses.**” The text sorts people into those who build and those who own and sell, and takes the first side: “The developer who owns the site will sell them for twice what they cost to build” and “which of the two sides it is on: the people who build, not the people who sell”.
-- If you miss: “The answer is …”, the same reason, and then the line built from the key for the answer you chose.
-- Then, right or wrong: “This case leaves the part of the key you have been taught. The questions that follow this answer come in a part of the course you have not reached, so the case stops here.”
+- If you miss: “The answer is …”, the same reason, and then the line built from the answers’ own wording for the answer you chose.
+- Then, right or wrong: “The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.”
 
 **Drill item 16 of 34**
 
@@ -1083,12 +1083,12 @@ Shown to you, with the words that decide each answer marked:
 **Shown as soon as you answer**
 
 - If you are right: “Right: **Rights and fair treatment for everyone.**” The text puts first what every person is owed: “Every patient who comes through the door of this hospital is owed the same attention, whatever they earn, whoever they voted for and wherever their grandparents came from”. It takes the side of no group against another.
-- If you miss: “The answer is …”, the same reason, and then the line built from the key for the answer you chose.
-- Then, right or wrong: “This case leaves the part of the key you have been taught. The questions that follow this answer come in a part of the course you have not reached, so the case stops here.”
+- If you miss: “The answer is …”, the same reason, and then the line built from the answers’ own wording for the answer you chose.
+- Then, right or wrong: “The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.”
 
-#### Stage 3 of 5. The first answer is shown. Answer the rest, then give the name. From here on your route is marked as well as the name: a right name reached by a wrong answer on the way counts as a miss.
+#### Stage 3 of 5. The first answer is shown. Answer the rest, then give the name. From here on your answers on the way are marked as well as the name: a right name reached by a wrong answer counts as a miss.
 
-Each question is shown with all of its answers from the key, in the key’s order, and the names offered are the two this unit teaches.
+Each question is shown with all of its answers, in order, and the names offered are the two this unit teaches.
 
 **Drill item 17 of 34**
 
@@ -1105,10 +1105,10 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Reactionary conservatism**: New machines are in the story, which can look like change that is being undone. But nothing has been torn down, and nothing is asked to be put back.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - If you chose **Bring back an order that has gone**: New machines are in the story, which can look like change that is being undone. But nothing has been torn down, and nothing is asked to be put back.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Reactionary conservatism**, the look-alike card’s lines follow: Both hold up what was handed down from the past, both are fond of it, and both can be sad about what has changed. **Conservatism** asks for what is still there to be kept, and for any change to come slowly. Nothing is asked back. **Reactionary conservatism** says that an old order has gone, that its going was a wrong, and asks for it to be put back. Does the text ask for something that has gone to be put back, after calling its going a wrong? Or does it ask only for what is still there to stay, and for change to be slow?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Keep the old ways, and change slowly” (one tap opens the card).
 
 **Drill item 18 of 34**
@@ -1126,10 +1126,10 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Conservatism**: The text loves the old college, but the old college is not being kept. The text says it was handed to a board, and asks for it to be put back.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - If you chose **Keep what remains, and change slowly**: The text loves the old college, but the old college is not being kept. The text says it was handed to a board, and asks for it to be put back.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Conservatism**, the look-alike card’s lines follow: Both hold up what was handed down from the past, both are fond of it, and both can be sad about what has changed. **Conservatism** asks for what is still there to be kept, and for any change to come slowly. Nothing is asked back. **Reactionary conservatism** says that an old order has gone, that its going was a wrong, and asks for it to be put back. Does the text ask for something that has gone to be put back, after calling its going a wrong? Or does it ask only for what is still there to stay, and for change to be slow?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Bring back an old order that has gone” (one tap opens the card).
 
 **Drill item 19 of 34**
@@ -1147,10 +1147,10 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Reactionary conservatism**: The border and the new tunnel are in the story, but nothing has been taken away and nothing is asked back. The path is still walked.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - If you chose **Bring back an order that has gone**: The border and the new tunnel are in the story, but nothing has been taken away and nothing is asked back. The path is still walked.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Reactionary conservatism**, the look-alike card’s lines follow: Both hold up what was handed down from the past, both are fond of it, and both can be sad about what has changed. **Conservatism** asks for what is still there to be kept, and for any change to come slowly. Nothing is asked back. **Reactionary conservatism** says that an old order has gone, that its going was a wrong, and asks for it to be put back. Does the text ask for something that has gone to be put back, after calling its going a wrong? Or does it ask only for what is still there to stay, and for change to be slow?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Keep the old ways, and change slowly” (one tap opens the card).
 
 **Drill item 20 of 34**
@@ -1168,15 +1168,15 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Conservatism**: The fast days are not being kept. An act ended them, and the text asks for the old custom to be put back.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - If you chose **Keep what remains, and change slowly**: The fast days are not being kept. An act ended them, and the text asks for the old custom to be put back.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Conservatism**, the look-alike card’s lines follow: Both hold up what was handed down from the past, both are fond of it, and both can be sad about what has changed. **Conservatism** asks for what is still there to be kept, and for any change to come slowly. Nothing is asked back. **Reactionary conservatism** says that an old order has gone, that its going was a wrong, and asks for it to be put back. Does the text ask for something that has gone to be put back, after calling its going a wrong? Or does it ask only for what is still there to stay, and for change to be slow?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Bring back an old order that has gone” (one tap opens the card).
 
-#### Stage 4 of 5. No help. Answer every question in the key’s order, then give the name.
+#### Stage 4 of 5. No help. Answer every question in order, then give the name.
 
-Each question is shown with all of its answers from the key, in the key’s order, and the names offered are the two this unit teaches.
+Each question is shown with all of its answers, in order, and the names offered are the two this unit teaches.
 
 **Drill item 21 of 34**
 
@@ -1191,10 +1191,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who or what does the text put first? **Old ways of faith, family and custom.** The text holds up a custom handed down, the shared baking, as what should guide the village: “That shared baking should guide how we plan the new village hall”.
   - If you chose **Bring back an order that has gone**: The oven is in use today, so nothing has gone and nothing is asked back.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Reactionary conservatism**, the look-alike card’s lines follow: Both hold up what was handed down from the past, both are fond of it, and both can be sad about what has changed. **Conservatism** asks for what is still there to be kept, and for any change to come slowly. Nothing is asked back. **Reactionary conservatism** says that an old order has gone, that its going was a wrong, and asks for it to be put back. Does the text ask for something that has gone to be put back, after calling its going a wrong? Or does it ask only for what is still there to stay, and for change to be slow?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the text said the common oven had been closed by a law, that this was a wrong, and asked for it to be opened again, the answer would be **“Bring back an order that has gone”**.
 - Taught on: “Keep the old ways, and change slowly” (one tap opens the card).
 
@@ -1211,10 +1211,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who or what does the text put first? **Old ways of faith, family and custom.** The text holds up the parish’s old keeping of the churchyard as what should guide: “The old keeping of the churchyard should guide how we lay our dead”.
   - If you chose **Keep what remains, and change slowly**: The text holds up an old custom, but the parish has lost the churchyard. Nothing is being kept, and the text asks for it to be returned.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Conservatism**, the look-alike card’s lines follow: Both hold up what was handed down from the past, both are fond of it, and both can be sad about what has changed. **Conservatism** asks for what is still there to be kept, and for any change to come slowly. Nothing is asked back. **Reactionary conservatism** says that an old order has gone, that its going was a wrong, and asks for it to be put back. Does the text ask for something that has gone to be put back, after calling its going a wrong? Or does it ask only for what is still there to stay, and for change to be slow?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the parish still kept the churchyard and the text asked for it to stay with the parish, and for any change to be slow, the answer would be **“Keep what remains, and change slowly”**.
 - Taught on: “Bring back an old order that has gone” (one tap opens the card).
 
@@ -1231,10 +1231,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who or what does the text put first? **Old ways of faith, family and custom.** The text holds up a custom handed down, the market-day blessing, as what should guide: “That custom should guide how the market is run”.
   - If you chose **Bring back an order that has gone**: The border and the two tongues are in the story, but nothing has been taken away. The blessing is still said.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Reactionary conservatism**, the look-alike card’s lines follow: Both hold up what was handed down from the past, both are fond of it, and both can be sad about what has changed. **Conservatism** asks for what is still there to be kept, and for any change to come slowly. Nothing is asked back. **Reactionary conservatism** says that an old order has gone, that its going was a wrong, and asks for it to be put back. Does the text ask for something that has gone to be put back, after calling its going a wrong? Or does it ask only for what is still there to stay, and for change to be slow?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the text said the blessing in the old tongue had been banned, that the ban was a wrong, and asked for it to be said again, the answer would be **“Bring back an order that has gone”**.
 - Taught on: “Keep the old ways, and change slowly” (one tap opens the card).
 
@@ -1251,10 +1251,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who or what does the text put first? **Old ways of faith, family and custom.** The text holds up the old order of the farms, handed down from father to son, as what should guide the countryside: “That old order should guide the countryside”.
   - If you chose **Keep what remains, and change slowly**: The old order is not still in place to be kept. An act ended it, and the text asks for it to be put back.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Conservatism**, the look-alike card’s lines follow: Both hold up what was handed down from the past, both are fond of it, and both can be sad about what has changed. **Conservatism** asks for what is still there to be kept, and for any change to come slowly. Nothing is asked back. **Reactionary conservatism** says that an old order has gone, that its going was a wrong, and asks for it to be put back. Does the text ask for something that has gone to be put back, after calling its going a wrong? Or does it ask only for what is still there to stay, and for change to be slow?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If farms still passed to the eldest son and the text asked only that this be kept, and any change be slow, the answer would be **“Keep what remains, and change slowly”**.
 - Taught on: “Bring back an old order that has gone” (one tap opens the card).
 
@@ -1267,14 +1267,14 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - If you are right: “Right: **Conservatism**.” What does the text want done with the old ways? **Keep what remains, and change slowly.** The Sunday service, the green and the courtesies are still there, and the text asks for them to stay and for laws to change slowly: “Keep them” and “let them change slowly, a little at a time”.
-  - Why not **Nationalism**: The text is proud of the country, which is what you point to for **Nationalism**. But it holds up old ways as what should guide, and the key puts that answer first. It then asks for those ways to be kept, and for nothing to be put back.
+  - Why not **Nationalism**: The text is proud of the country, which is what you point to for **Nationalism**. But it holds up old ways as what should guide, and that answer comes first. It then asks for those ways to be kept, and for nothing to be put back.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - Who or what does the text put first? **Old ways of faith, family and custom.** The text speaks of the country, but what it says should guide the country is old ways handed down: “what makes it ours is the Sunday service, the village green and the old courtesies handed down to us, and those should guide how the country is run”. When a text shows both that and one people put first, the key’s answer is the old-ways one.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - Who or what does the text put first? **Old ways of faith, family and custom.** The text speaks of the country, but what it says should guide the country is old ways handed down: “what makes it ours is the Sunday service, the village green and the old courtesies handed down to us, and those should guide how the country is run”. When a text shows both that and one people put first, the answer is the old-ways one.
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Nationalism**, the look-alike card’s lines follow: Both love the country and its past, both can say "our" ways and "our" people, and both leave elections alone. **Nationalism** puts one people first, and speaks for it as a whole: **“The nation, or its ordinary people”**. **Conservatism** puts first the ways handed down from the past, and asks for them to be kept: **“Old ways of faith, family and custom”**. The first is about who belongs. The second is about what should guide. What does the text hold up first: one people, marked out by its country, its culture or its blood? Or ways that were handed down from the past, which it says should guide?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *The harbour festival, one people*, which was **Nationalism**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *The harbour festival, one people*, which was **Nationalism**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If the text left out the Sunday service, the green and the courtesies and spoke only of one proud people, the answer to **“Who or what does the text put first?”** would be **“The nation, or its ordinary people”**.
 - Taught on: “Keep the old ways, and change slowly” (one tap opens the card).
 
@@ -1289,12 +1289,12 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you are right: “Right: **Reactionary conservatism**.” What does the text want done with the old ways? **Bring back an order that has gone.** The throne is empty, the text calls what put it so a wrong, and it asks for the king and the bishops to be put back: “did a wrong we will not forgive” and “put the king back on his throne, put the bishops back in the king's court”.
   - Why not **Fascism**: The text speaks for one people and wants the Convention sent home, which can look like **Fascism**. But what it holds up is the crown, an old order that it says was torn down, and it asks for that order back. It does not say that a new leader or movement will speak for everyone.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - Who or what does the text put first? **Old ways of faith, family and custom.** The text speaks for one people, but what it says should guide the country is the crown, an old order: “The crown is the old order of Torra and should guide it”. When a text shows both, the key’s answer is the old-ways one.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - Who or what does the text put first? **Old ways of faith, family and custom.** The text speaks for one people, but what it says should guide the country is the crown, an old order: “The crown is the old order of Torra and should guide it”. When a text shows both, the answer is the old-ways one.
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Fascism**, the look-alike card’s lines follow: Both can speak of a great past, both can be impatient with a parliament, and both can ask for a very large change to the country. **Fascism** puts the nation first, as a single people, and wants one leader or movement to speak for everyone: **“The nation, or its ordinary people”**. **Reactionary conservatism** puts an old order first, a crown, a church or ranks of birth that the text says were torn down wrongly: **“Old ways of faith, family and custom”**. Does the text hold up an order that once stood, and ask for it back? Or does it speak for one people and say that one leader or movement should speak for everyone?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *The rally in the Ruddock Republic*, which was **Fascism**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *The rally in the Ruddock Republic*, which was **Fascism**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If the text said nothing of a crown or any old order and asked for every party to be shut down so that one leader spoke for the whole people, the answer to **“Who or what does the text put first?”** would be **“The nation, or its ordinary people”**.
 - Taught on: “Bring back an old order that has gone” (one tap opens the card).
 
@@ -1311,11 +1311,11 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who or what does the text put first? **Old ways of faith, family and custom.** The text holds up two customs handed down, the pressing and the blessing, as what should guide the village: “the cider-pressing that survives, and the blessing of the last trees, should guide how the village marks the autumn”.
   - If you chose **Bring back an order that has gone**: The text is sad about something that has gone, which can look like the other name. But it says it will not ask for the orchard back, and what it asks for is that what survives be kept.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Reactionary conservatism**, the look-alike card’s lines follow: Both hold up what was handed down from the past, both are fond of it, and both can be sad about what has changed. **Conservatism** asks for what is still there to be kept, and for any change to come slowly. Nothing is asked back. **Reactionary conservatism** says that an old order has gone, that its going was a wrong, and asks for it to be put back. Does the text ask for something that has gone to be put back, after calling its going a wrong? Or does it ask only for what is still there to stay, and for change to be slow?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *Marrow Lane school, given back*, which was **Reactionary conservatism**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *Marrow Lane school, given back*, which was **Reactionary conservatism**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If the text called the loss of the orchard a wrong and asked for the bypass to be pulled up and the orchard planted again, the answer would be **“Bring back an order that has gone”**.
 - Taught on: “Keep the old ways, and change slowly” (one tap opens the card).
 
@@ -1332,11 +1332,11 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who or what does the text put first? **Old ways of faith, family and custom.** The text holds up an old way of teaching as what should guide: “That old way of teaching should guide what Penhallow's children are taught”.
   - If you chose **Keep what remains, and change slowly**: The calm tone and the patience can look like a wish to keep what is there. But the school is closed, and the text asks for it to be reopened. What it asks for is something put back.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Conservatism**, the look-alike card’s lines follow: Both hold up what was handed down from the past, both are fond of it, and both can be sad about what has changed. **Conservatism** asks for what is still there to be kept, and for any change to come slowly. Nothing is asked back. **Reactionary conservatism** says that an old order has gone, that its going was a wrong, and asks for it to be put back. Does the text ask for something that has gone to be put back, after calling its going a wrong? Or does it ask only for what is still there to stay, and for change to be slow?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *Marrow Lane school, kept*, which was **Conservatism**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *Marrow Lane school, kept*, which was **Conservatism**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If the school were still open and the text asked only that it stay as it is, and that any change be slow, the answer would be **“Keep what remains, and change slowly”**.
 - Taught on: “Bring back an old order that has gone” (one tap opens the card).
 
@@ -1357,8 +1357,8 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - If you are right: “Right: **The nation, or its ordinary people.**” The text speaks for the country’s own people against a few at the top, and puts those people first: “a few insiders in the capital decide how their money is spent” and “This country belongs to its own people, and its own people will run it”.
-- If you miss: “The answer is …”, the same reason, and then the line built from the key for the answer you chose.
-- Then, right or wrong: “This case leaves the part of the key you have been taught. The questions that follow this answer come in a part of the course you have not reached, so the case stops here.”
+- If you miss: “The answer is …”, the same reason, and then the line built from the answers’ own wording for the answer you chose.
+- Then, right or wrong: “The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.”
 
 **Drill item 30 of 34**
 
@@ -1377,8 +1377,8 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - If you are right: “Right: **Working people, against those who own the businesses.**” The text sorts people into those who build and those who own and sell, and takes the first side: “The developer who owns the site will sell them for twice what they cost to build” and “which of the two sides it is on: the people who build, not the people who sell”.
-- If you miss: “The answer is …”, the same reason, and then the line built from the key for the answer you chose.
-- Then, right or wrong: “This case leaves the part of the key you have been taught. The questions that follow this answer come in a part of the course you have not reached, so the case stops here.”
+- If you miss: “The answer is …”, the same reason, and then the line built from the answers’ own wording for the answer you chose.
+- Then, right or wrong: “The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.”
 
 #### Last stage. Each of these is something a person might say that uses one of this unit’s names, or reasons in one of its ways. Each has a fault. The first is worked for you. For the rest, answer before the fault is shown.
 
@@ -1390,7 +1390,7 @@ Each question is shown with all of its answers from the key, in the key’s orde
 
 **The question:** The claim uses the name **Reactionary conservatism**. What would you need to see in the case before that name could be used?
 
-- Ways of faith, family or custom handed down from the past, the text wanting them kept, with any change made slowly, and no order that has gone asked to be brought back
+- Ways of faith, home life or custom handed down from the past, the text wanting them kept, with any change made slowly, and no order that has gone asked to be brought back
 - An old order of faith, crown, rank or custom that the text says was wrongly torn down, and the text asking for it to be put back
 
 **The answer:** An old order of faith, crown, rank or custom that the text says was wrongly torn down, and the text asking for it to be put back.
@@ -1409,8 +1409,8 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - The answer is: **Keep what remains, and change slowly.**
-- If you chose another answer, the line is built from the key, as for any other question.
-- The fault: The claim gives the letter’s own words, and they answer the question the claim then gets wrong. The hymns are still sung, so nothing has gone. The letter asks for them to be kept and for change to be slow. The key’s question asks what the text wants done with the old ways, and the answer to it is **“Keep what remains, and change slowly”**, not a wish to bring an order back.
+- If you chose another answer, the line is built from the answers’ own wording, as for any other question.
+- The fault: The claim gives the letter’s own words, and they answer the question the claim then gets wrong. The hymns are still sung, so nothing has gone. The letter asks for them to be kept and for change to be slow. The question asks what the text wants done with the old ways, and the answer to it is **“Keep what remains, and change slowly”**, not a wish to bring an order back.
 - The claim, put right (always the last thing shown): The letter says the old hymns are still sung every Sunday and should be kept, and that any change should be slow. Nothing has gone and nothing is asked back, so the answer to **“What does the text want done with the old ways?”** is **“Keep what remains, and change slowly”**, and the name is **Conservatism**.
 
 **Drill item 32 of 34**
@@ -1419,7 +1419,7 @@ Each question is shown with all of its answers from the key, in the key’s orde
 
 **You are asked:** The claim uses the name **Reactionary conservatism**. What would you need to see in the case before that name could be used?
 
-- Ways of faith, family or custom handed down from the past, the text wanting them kept, with any change made slowly, and no order that has gone asked to be brought back
+- Ways of faith, home life or custom handed down from the past, the text wanting them kept, with any change made slowly, and no order that has gone asked to be brought back
 - An old order of faith, crown, rank or custom that the text says was wrongly torn down, and the text asking for it to be put back
 
 **Shown as soon as you answer**
@@ -1435,19 +1435,19 @@ Each question is shown with all of its answers from the key, in the key’s orde
 
 **You are asked:** The claim uses the name **Conservatism**. What would you need to see in the case before that name could be used?
 
-- Ways of faith, family or custom handed down from the past, the text wanting them kept, with any change made slowly, and no order that has gone asked to be brought back
+- Ways of faith, home life or custom handed down from the past, the text wanting them kept, with any change made slowly, and no order that has gone asked to be brought back
 - An old order of faith, crown, rank or custom that the text says was wrongly torn down, and the text asking for it to be put back
 
 **Shown as soon as you answer**
 
-- The answer is: **Ways of faith, family or custom handed down from the past, the text wanting them kept, with any change made slowly, and no order that has gone asked to be brought back.**
+- The answer is: **Ways of faith, home life or custom handed down from the past, the text wanting them kept, with any change made slowly, and no order that has gone asked to be brought back.**
 - If you chose another line: “That is what you must be able to point to for «the name it belongs to», which is not the name the claim uses.”
-- The fault: The claim names a motive, fear, and no text can show that. What a text can show is what you point to for **Conservatism**: ways of faith, family or custom handed down from the past, the text wanting them kept, with any change made slowly, and no order that has gone asked to be brought back. A text may ask for old ways to be kept out of fear, or love, or habit, and the key cannot tell which.
-- The claim, put right (always the last thing shown): Someone says the old ways should be kept. That tells you only what they want. It is **Conservatism** if the text holds up ways handed down as what should guide, wants them kept and any change slow, and asks for nothing that has gone to be put back. Why they want it is a different question, and the key does not ask it.
+- The fault: The claim names a motive, fear, and no text can show that. What a text can show is what you point to for **Conservatism**: ways of faith, home life or custom handed down from the past, the text wanting them kept, with any change made slowly, and no order that has gone asked to be brought back. A text may ask for old ways to be kept out of fear, or love, or habit, and nothing in the text tells which.
+- The claim, put right (always the last thing shown): Someone says the old ways should be kept. That tells you only what they want. It is **Conservatism** if the text holds up ways handed down as what should guide, wants them kept and any change slow, and asks for nothing that has gone to be put back. Why they want it is a different question, and it is not asked here.
 
 **Drill item 34 of 34**
 
-> "The notice says it stands with those who cut the stone against those who own the quarry, and it asks for the old quarry songs to be kept. So the key must give it the old-ways answer."
+> "The notice says it stands with those who cut the stone against those who own the quarry, and it asks for the old quarry songs to be kept. So it must be given the old-ways answer."
 
 **You are asked:** Who or what does the text put first? (asked of the reasoning in the claim itself)
 
@@ -1460,21 +1460,21 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - The answer is: **Working people, against those who own the businesses.**
-- If you chose another answer, the line is built from the key, as for any other question.
-- The fault: The claim reads one half of the notice and then reads the other half out of it. The notice does ask for the old songs to be kept, but it also sets working people against owners and takes the workers’ side. When a text shows both **“Old ways of faith, family and custom”** and **“Working people, against those who own the businesses”**, the key’s answer is **“Working people, against those who own the businesses”**.
-- The claim, put right (always the last thing shown): The notice stands with those who cut the stone against those who own the quarry, and asks for the old songs to be kept. It shows two answers to **“Who or what does the text put first?”**, and the key chooses **“Working people, against those who own the businesses”**. The old songs are in the text, but the side the text takes is the workers’.
+- If you chose another answer, the line is built from the answers’ own wording, as for any other question.
+- The fault: The claim reads one half of the notice and then reads the other half out of it. The notice does ask for the old songs to be kept, but it also sets working people against owners and takes the workers’ side. When a text shows both **“Old ways of faith, family and custom”** and **“Working people, against those who own the businesses”**, the answer is **“Working people, against those who own the businesses”**.
+- The claim, put right (always the last thing shown): The notice stands with those who cut the stone against those who own the quarry, and asks for the old songs to be kept. It shows two answers to **“Who or what does the text put first?”**, and the answer is **“Working people, against those who own the businesses”**. The old songs are in the text, but the side the text takes is the workers’.
 
-**When the drill ends.** The learner sees their own results: first-try accuracy for each stage, whole routes beside single questions, the pair of names they mixed up most often, and what will come back and when. Anything missed was asked again before the drill ended. Nothing here is graded. A miss only decides what comes back.
+**When the drill ends.** The learner sees their own results: first-try accuracy for each stage, whole cases beside single questions, the pair of names they mixed up most often, and what will come back and when. Anything missed was asked again before the drill ended. Nothing here is graded. A miss only decides what comes back.
 
 ### 21. What to carry away
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 21 of 22*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 21 of 22*
 
 [reviewers only: card kind `recap`, id `recap-ways`]
 
-You have now run the key on your own. This card puts the unit in one place, in the key’s words.
+You have now run the questions on your own. This card puts the unit in one place.
 
-**The key for this unit, in its own words**
+**This unit’s questions and answers**
 
 What does the text want done with the old ways?
 - Keep what remains, and change slowly → Conservatism
@@ -1482,7 +1482,7 @@ What does the text want done with the old ways?
 
 **For each name: what you must be able to point to, and the question to ask when you spot it**
 
-- **Conservatism**: ways of faith, family or custom handed down from the past, the text wanting them kept, with any change made slowly, and no order that has gone asked to be brought back.
+- **Conservatism**: ways of faith, home life or custom handed down from the past, the text wanting them kept, with any change made slowly, and no order that has gone asked to be brought back.
   - Ask: "What is still there that the text wants kept, and has anything that has gone been asked back?" If you can say the first and the answer to the second is no, this is the name to look at.
 - **Reactionary conservatism**: an old order of faith, crown, rank or custom that the text says was wrongly torn down, and the text asking for it to be put back.
   - Ask: "What has gone, does the text say it was wrongly taken, and does it ask for it back?" If the answer to all three is yes, this is the name to look at.
@@ -1493,13 +1493,13 @@ What does the text want done with the old ways?
 - Point to what the text wants done with the old ways. If it asks for what is there to be kept and for any change to be slow, and asks for nothing to come back, the name is **Conservatism**. If it says an old order has gone, that its going was a wrong, and asks for it back, the name is **Reactionary conservatism**.
 - How a text sounds decides nothing. A calm text can ask for an order to be brought back, and a sharp text can ask only for a custom to be kept.
 - Sadness is not a request. A text that mourns what has gone and asks only that what is left be kept is **Conservatism**.
-- Both names describe what a text asks for. "Reactionary" is often thrown as an insult and "conservative" as praise or blame, but the key uses **Reactionary conservatism** and **Conservatism** only for what a text says. They are not a verdict on whether the text is right, and not a verdict on the person who wrote it.
+- Both names describe what a text asks for. "Reactionary" is often thrown as an insult and "conservative" as praise or blame, but here **Reactionary conservatism** and **Conservatism** are used only for what a text says. They are not a verdict on whether the text is right, and not a verdict on the person who wrote it.
 - Two decisions to remember. A text that speaks for one people and also holds up an old order gets the old-ways answer, even when it asks for parliament to be closed. A text that holds up old customs and also sets working people against owners gets the working-people answer. Unit One’s question decides first, and this unit’s question comes after it.
-- Your route is two answers, and a right name reached by a wrong first answer counts as a miss.
+- Your answers on the way are two, and a right name reached by a wrong first answer counts as a miss.
 
 ### 22. Where would you meet this?
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 22 of 22*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 22 of 22*
 
 [reviewers only: card kind `transfer`, id `transfer-ways`]
 
@@ -1524,7 +1524,7 @@ One line is enough. It is kept on this device only and is never marked.
 
 ## After the unit: what comes back on later days
 
-A name that is due returns as a case the learner has not seen, next to a case of the name they most often confuse it with. Each is run as a whole route. These are the fresh cases held back for that purpose: three for each name, one for each scheduled return. The first return is about two days after the drill, the next about a week after that, the next about three and a half weeks later.
+A name that is due returns as a case the learner has not seen, next to a case of the name they most often confuse it with. Each is run as a whole case: every question, then the name. These are the fresh cases held back for that purpose: three for each name, one for each scheduled return. The first return is about two days after the drill, the next about a week after that, the next about three and a half weeks later.
 
 **Return case 1 of 6**
 
@@ -1539,10 +1539,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who or what does the text put first? **Old ways of faith, family and custom.** The text holds up a custom handed down, the walk to the well, as what should guide: “That custom should guide how the school keeps its year”.
   - If you chose **Bring back an order that has gone**: Nothing has been taken away, so nothing is asked back. The walk to the well is still made each year.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Reactionary conservatism**, the look-alike card’s lines follow: Both hold up what was handed down from the past, both are fond of it, and both can be sad about what has changed. **Conservatism** asks for what is still there to be kept, and for any change to come slowly. Nothing is asked back. **Reactionary conservatism** says that an old order has gone, that its going was a wrong, and asks for it to be put back. Does the text ask for something that has gone to be put back, after calling its going a wrong? Or does it ask only for what is still there to stay, and for change to be slow?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Keep the old ways, and change slowly” (one tap opens the card).
 
 **Return case 2 of 6**
@@ -1558,10 +1558,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who or what does the text put first? **Old ways of faith, family and custom.** The text holds up an old way of passing on stalls as what should guide: “That old way of passing on a stall should guide how the market is run”.
   - If you chose **Bring back an order that has gone**: The old terms are still in use, so nothing has gone and nothing is asked back.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Reactionary conservatism**, the look-alike card’s lines follow: Both hold up what was handed down from the past, both are fond of it, and both can be sad about what has changed. **Conservatism** asks for what is still there to be kept, and for any change to come slowly. Nothing is asked back. **Reactionary conservatism** says that an old order has gone, that its going was a wrong, and asks for it to be put back. Does the text ask for something that has gone to be put back, after calling its going a wrong? Or does it ask only for what is still there to stay, and for change to be slow?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Keep the old ways, and change slowly” (one tap opens the card).
 
 **Return case 3 of 6**
@@ -1572,15 +1572,15 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Conservatism**.” What does the text want done with the old ways? **Keep what remains, and change slowly.** The custom is still kept, and the text asks for it to stay and for the route to change in small steps: “Keep it” and “let the board change the route in small steps and ask the bearers first”.
+- If you are right: “Right: **Conservatism**.” What does the text want done with the old ways? **Keep what remains, and change slowly.** The custom is still kept, and the text asks for it to stay and for the path to change in small steps: “Keep it” and “let the board change the route in small steps and ask the bearers first”.
   - Why not **Reactionary conservatism**: The custom has not been taken away, so nothing is asked back. The lane closing is a repair, not something torn down.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who or what does the text put first? **Old ways of faith, family and custom.** The text holds up a custom handed down, the bell and the walk to the church, as what should guide: “That custom should guide how the burial board is run”.
   - If you chose **Bring back an order that has gone**: The custom has not been taken away, so nothing is asked back. The lane closing is a repair, not something torn down.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Reactionary conservatism**, the look-alike card’s lines follow: Both hold up what was handed down from the past, both are fond of it, and both can be sad about what has changed. **Conservatism** asks for what is still there to be kept, and for any change to come slowly. Nothing is asked back. **Reactionary conservatism** says that an old order has gone, that its going was a wrong, and asks for it to be put back. Does the text ask for something that has gone to be put back, after calling its going a wrong? Or does it ask only for what is still there to stay, and for change to be slow?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Keep the old ways, and change slowly” (one tap opens the card).
 
 **Return case 4 of 6**
@@ -1596,10 +1596,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who or what does the text put first? **Old ways of faith, family and custom.** The text holds up an old order, the charter and its six wardens, as what should guide: “The old charter should guide us”.
   - If you chose **Keep what remains, and change slowly**: The wardens are not still in place to be kept. An act abolished them, and the text asks for them to be put back.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Conservatism**, the look-alike card’s lines follow: Both hold up what was handed down from the past, both are fond of it, and both can be sad about what has changed. **Conservatism** asks for what is still there to be kept, and for any change to come slowly. Nothing is asked back. **Reactionary conservatism** says that an old order has gone, that its going was a wrong, and asks for it to be put back. Does the text ask for something that has gone to be put back, after calling its going a wrong? Or does it ask only for what is still there to stay, and for change to be slow?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Bring back an old order that has gone” (one tap opens the card).
 
 **Return case 5 of 6**
@@ -1615,10 +1615,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who or what does the text put first? **Old ways of faith, family and custom.** The text holds up the church’s old giving of grain as what should guide: “The old giving of grain should guide how this valley is fed”.
   - If you chose **Keep what remains, and change slowly**: The old giving of grain is not being kept. The barns were sold, and the text asks for them to be returned.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Conservatism**, the look-alike card’s lines follow: Both hold up what was handed down from the past, both are fond of it, and both can be sad about what has changed. **Conservatism** asks for what is still there to be kept, and for any change to come slowly. Nothing is asked back. **Reactionary conservatism** says that an old order has gone, that its going was a wrong, and asks for it to be put back. Does the text ask for something that has gone to be put back, after calling its going a wrong? Or does it ask only for what is still there to stay, and for change to be slow?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Bring back an old order that has gone” (one tap opens the card).
 
 **Return case 6 of 6**
@@ -1634,9 +1634,9 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who or what does the text put first? **Old ways of faith, family and custom.** The text holds up the old ringing of the hours as what should guide the city: “The old ringing of the hours should guide how the city keeps its time”.
   - If you chose **Keep what remains, and change slowly**: The text holds up an old custom, but the chapter no longer holds the tower. Nothing is being kept, and the text asks for the tower to be returned.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Conservatism**, the look-alike card’s lines follow: Both hold up what was handed down from the past, both are fond of it, and both can be sad about what has changed. **Conservatism** asks for what is still there to be kept, and for any change to come slowly. Nothing is asked back. **Reactionary conservatism** says that an old order has gone, that its going was a wrong, and asks for it to be put back. Does the text ask for something that has gone to be put back, after calling its going a wrong? Or does it ask only for what is still there to stay, and for change to be slow?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Bring back an old order that has gone” (one tap opens the card).
 

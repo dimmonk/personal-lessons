@@ -1,15 +1,15 @@
 # Learner view: Psychology, Unit Four: A lasting way someone is
 
-*Five lasting ways of being that keep costing someone, one ordinary way that does not, and how to tell which a case shows.* Unit revision 1, built to lesson standard 1, status: draft.
+*Five lasting ways of being that keep costing someone, one ordinary way that does not, and how to tell which a case shows.* Unit revision 2, built to lesson standard 1, status: draft.
 
 This file is generated from the data files by `tools/render-learner-view.mjs`. It shows every screen in the order a learner meets it. In the app one card is on screen at a time and the learner moves on when ready.
 
-- **Bold text in quotation marks** is the key’s own wording, printed from `key.js`. Bold names are the outcome names from the same file. Neither is typed anywhere else. "What you must be able to point to" lines and "How to tell them apart" lines are also printed from one place each (the key and the look-alike ledger).
+- **Bold text in quotation marks** is the subject’s own wording for its questions and answers, written once and printed everywhere. Bold names are the names, written once in the same place. Neither is typed anywhere else. "What you must be able to point to" lines and "How to tell them apart" lines are also printed from one place each (the subject’s questions and the pairs it compares).
 - ⟦Double brackets⟧ show the words the app marks in a case (one highlight style everywhere).
 - The line in italics under each heading is the app’s top bar. The line in square brackets after it is for reviewers and is not shown to the learner.
 - Headings, prompt wording and stage instructions that are the same in every unit are the app’s wording, not this unit’s.
 - "Shown as soon as you …" is what appears the moment the learner answers. Nothing is hidden behind a second tap the first time a case is met, or after a miss.
-- After every answer the app shows, in this order: the right answer in the key’s words; the reason, quoting the marked words; for a name, why the nearest wrong name fails; after a miss, a line about the answer the learner chose; and last a link to the card that taught it. Where a line about the learner’s own choice is not written for the case, the app builds it from the key, and this file says so in place of repeating it.
+- After every answer the app shows, in this order: the right answer; the reason, quoting the marked words; for a name, why the nearest wrong name fails; after a miss, a line about the answer the learner chose; and last a link to the card that taught it. Where a line about the learner’s own choice is not written for the case, the app builds it from the answers’ own wording, and this file says so in place of repeating it.
 
 ---
 
@@ -17,7 +17,7 @@ This file is generated from the data files by `tools/render-learner-view.mjs`. I
 
 ### 1. Telling the lasting ways of being apart, and knowing when none of them applies
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 1 of 46*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 1 of 46*
 
 [reviewers only: card kind `orient`, id `orient-pat`]
 
@@ -27,20 +27,20 @@ You have heard the labels. A boss is called by the medical name for a swollen eg
 
 This unit teaches what each label would need before it could be used for an account of a person. All of them need years, more than one place, more than one relationship, and what the person does again and again. Five of the six names also need something people rarely count: a cost, something that keeps being lost or harmed because of how the person is. The sixth name is for the person who is loud, shy, dramatic, blunt or touchy in the same way for years and does no lasting harm. It is the most common right answer.
 
-The people in this unit are invented. Even for them, the key names what a case shows, and the cards say what that would and would not tell you about a real person.
+The people in this unit are invented. Even for them, a name says what a case shows, and the cards say what that would and would not tell you about a real person.
 
-**What Unit One taught, in one place.** The key’s first question is **“What kind of thing is this?”** Its answers:
+**What Unit One taught, in one place.** The first question is **“What kind of thing is this?”** Its answers:
 
 - **“One person’s reasoning”**: give this answer when the case shows how one person reaches, defends or changes a view or a choice of their own.
 - **“Something one person does to another”**: give this answer when the case shows one person saying or doing something to another person, and it is about that person or about what has happened between the two of them.
 - **“A lasting way someone is”**: give this answer when the case shows how a person is across years, places and relationships. **This unit is about these cases.**
 - **“A passing moment”**: give this answer when the case shows how a person feels or acts on one occasion or for one short stretch, often after something has happened to them, and it shows nothing else (no reasons for a view or a choice, nothing said or done to another person about them, and nothing across years).
 
-Unit One also taught that two things are marked separately: the name you give a case, and your route to it, meaning the answers you gave to the key’s questions on the way.
+Two things are marked separately: the name you give a case, and your answers to the questions on the way to it.
 
 *(One tap on any of these lines opens the card in Unit One that taught it.)*
 
-**The part of the key this unit teaches.** This is a preview. You are not expected to follow it yet: every line is explained on the cards that come next. The question and its answers are in the key’s own words. Beside each answer, in plain words, is the thing it leads to. There are six of them, and each gets its name when it is taught.
+**The questions this unit teaches.** This is a preview. You are not expected to follow it yet: every line is explained on the cards that come next. The question and its answers are worded exactly as you will meet them. Beside each answer, in plain words, is the thing it leads to. There are six of them, and each gets its name when it is taught.
 
 What does the person do, again and again, across those years?
 - Acts above others, and turns angry or scornful when not treated as special → acting above others for years, and angry when not treated so
@@ -65,18 +65,18 @@ The unit has six parts, and you can stop after any of them.
 2. The same family, defended inward
 3. Clinging to people, and turning on them
 4. At the centre of attention
-5. Breaking rules and using people, and the key’s question
+5. Breaking rules and using people, and the question
 6. Two whole cases, then the drill
 
 Each name is taught through cases first. After every step you answer one question about a new case, and the answer and the reason are shown straight away. Nothing here is graded. A miss only decides what comes back.
 
 ### 2. A lasting way of being that keeps costing
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 2 of 46*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 2 of 46*
 
 [reviewers only: card kind `term`, id `term-pd`]
 
-Before any of the six names, one word that the unit and the key both lean on. It is easier to see on a case first.
+Before any of the six names, one word that the whole unit leans on. It is easier to see on a case first.
 
 *Twenty years and many jobs*
 
@@ -88,16 +88,16 @@ Those three things together make up something this unit has a word for. It lasts
 
 A "cost", in this unit, is anything lost or harmed because of how the person is: a job, a friendship, money, someone’s trust, someone’s health.
 
-**The word for this.** *Personality disorder*: a lasting way of being, across years, places and relationships, that keeps costing the person or the people around them. Only a professional diagnoses one, after long assessment; the key names what a case shows, not a person.
+**The word for this.** *Personality disorder*: a lasting way of being, across years, places and relationships, that keeps costing the person or the people around them. Only a professional diagnoses one, after long assessment; the questions name what a case shows, not a person.
 
 Two things about the word. The first is that it is used for all three at once. A way of being that lasts and turns up everywhere, like being shy, is not this unless it also keeps costing. The second is that it is a medical word. Only a professional can say that a particular person has one. That judgement is called a diagnosis, and it comes after a long assessment: many meetings and a full history. A short account of a person is not that.
 
-In the word, "personality" means how a person usually is, and "disorder" says that it keeps doing harm. Dale’s way has a name in the key. This card is not about that name. It is about the three things that every name in this unit has to show.
+In the word, "personality" means how a person usually is, and "disorder" says that it keeps doing harm. Dale’s way has a name here. This card is not about that name. It is about the three things that every name in this unit has to show.
 
 
 ### 3. Acting above others for years, and angry when not treated so
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 3 of 46*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 3 of 46*
 
 [reviewers only: card kind `meet`, id `meet-narcgrand`]
 
@@ -127,17 +127,17 @@ And notice that it keeps costing. Two juniors resigned with the same complaint a
 
 **What you must be able to point to.** Years, more than one place and relationship, the person acting as if they are better than others and owed special treatment, little interest in what others feel, anger or scorn when they are not treated as special, and a cost to them or to people around them. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What does the person do, again and again, across those years?”**
+**The question:** **“What does the person do, again and again, across those years?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“Acts above others, and turns angry or scornful when not treated as special”**
+**Its answer for a case like this one:** **“Acts above others, and turns angry or scornful when not treated as special”**
 
-The name for this is **Grandiose narcissism**. "Narcissism" is the word for a sense of worth that depends on being treated as special. "Grandiose" means having a grand picture of yourself, as better than others and owed more. So the name says: that sense of worth, defended by acting grand. It is one of two narcissisms in the key.
+The name for this is **Grandiose narcissism**. "Narcissism" is the word for a sense of worth that depends on being treated as special. "Grandiose" means having a grand picture of yourself, as better than others and owed more. So the name says: that sense of worth, defended by acting grand. It is one of two narcissisms in this subject.
 
 You may also hear this called “a narcissist” or “overt narcissism” or “narcissistic personality disorder”. Those words mean the same thing here, and from now on this unit uses one name: **Grandiose narcissism**.
 
 ### 4. Grandiose narcissism: the same thing in a different story
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 4 of 46*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 4 of 46*
 
 [reviewers only: card kind `again`, id `again-narcgrand`]
 
@@ -170,7 +170,7 @@ A law partner and a village hall chair have nothing else in common. So this is n
 
 ### 5. The story never decides the answer
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 5 of 46*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 5 of 46*
 
 [reviewers only: card kind `lens`, id `lens-pat`]
 
@@ -182,13 +182,13 @@ The names belong to the layer underneath. The same story can carry any of them: 
 
 From here on the cases change their stories on purpose. Sometimes two cases will share a story and differ only underneath. Where they do, the shared story is there to show you that it tells you nothing.
 
-**Stays the same from case to case:** what the key asks about: **“What does the person do, again and again, across those years?”**
+**Stays the same from case to case:** what the question asks about: **“What does the person do, again and again, across those years?”**
 
 **Changes on purpose:** the setting; the people; how loud or quiet the person is; whether you like the person; how much is at stake.
 
 ### 6. Grandiose narcissism: what it is like
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 6 of 46*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 6 of 46*
 
 [reviewers only: card kind `portrait`, id `portrait-narcgrand`]
 
@@ -207,7 +207,7 @@ You now know what to point to. This card fills in the rest of the picture, so th
 
 Confidence is not this name. A confident person believes they can do something, and can still ask how you are, thank the junior who won the case and take a correction. The name needs the scorn and the cost.
 
-Pride is not it either. Someone who is proud of an achievement and still interested in you is showing ordinary pride. Nor is one boastful evening or one bad week: it needs the years. And it is never a label for a person you dislike. The key names what a case shows, and it does not say what a man is.
+Pride is not it either. Someone who is proud of an achievement and still interested in you is showing ordinary pride. Nor is one boastful evening or one bad week: it needs the years. And it is never a label for a person you dislike. The name says what a case shows, and it does not say what a man is.
 
 **Where you will hear it**
 
@@ -221,7 +221,7 @@ You will rarely have enough to go on. You may have this much about a boss you wo
 
 ### 7. A question about a new case
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 7 of 46*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 7 of 46*
 
 [reviewers only: card kind `check`, id `check-narcgrand`]
 
@@ -236,7 +236,7 @@ The pieces you can tap:
 
 **Shown as soon as you tap**
 
-- If you are right: “Right: ‘When the club chose a younger player as captain, Wes told the whole squad that the new captain was 'a clown who couldn't kick a ball'’.” The captaincy went to someone else, and Wes answered with scorn for the person who got it. The words that decide the case are “a clown who couldn't kick a ball” and “He has fallen out with three managers and two clubs”: the scorn, and what it has cost. The key’s answer for this case is **“Acts above others, and turns angry or scornful when not treated as special”**, and the name is **Grandiose narcissism**.
+- If you are right: “Right: ‘When the club chose a younger player as captain, Wes told the whole squad that the new captain was 'a clown who couldn't kick a ball'’.” The captaincy went to someone else, and Wes answered with scorn for the person who got it. The words that decide the case are “a clown who couldn't kick a ball” and “He has fallen out with three managers and two clubs”: the scorn, and what it has cost. The answer for this case is **“Acts above others, and turns angry or scornful when not treated as special”**, and the name is **Grandiose narcissism**.
 - If you miss: “The words are ‘When the club chose a younger player as captain, Wes told the whole squad that the new captain was 'a clown who couldn't kick a ball'’.” The same reason follows, and then a line about the piece you tapped:
   - “He tells each new signing that he is the best player they have had, and expects to wear the number ten shirt whatever his form”: That is Wes acting as if he is above the others. It happens before anything goes against him. The words asked for are what he does when something does.
   - “He has fallen out with three managers and two clubs over where he is picked”: That is a cost. It comes from what he does, but it is not what he does.
@@ -244,7 +244,7 @@ The pieces you can tap:
 
 ### 8. A wrong idea about the label
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 8 of 46*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 8 of 46*
 
 [reviewers only: card kind `refute`, id `refute-label`]
 
@@ -265,11 +265,11 @@ Third, the name is for what a case shows, not for what a person is. Even an acco
 
 ### 9. A way of being that stays the same, and does not keep doing harm
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 9 of 46*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 9 of 46*
 
 [reviewers only: card kind `meet`, id `meet-ordpersonality`]
 
-Everything so far has been about ways of being that keep costing something. Most of the people you will ever describe are not like that, and the key has a name for them. It is easy to forget, so it is taught as carefully as the others.
+Everything so far has been about ways of being that keep costing something. Most of the people you will ever describe are not like that, and there is a name for them. It is easy to forget, so it is taught as carefully as the others.
 
 *The loud baker*
 
@@ -277,7 +277,7 @@ Everything so far has been about ways of being that keep costing something. Most
 
 Stripped of its story, the case is this:
 
-- There are years and more than one place: thirty years of the bakery, and before that a school team, a union branch and a church rota.
+- There are years and more than one place: thirty years of the bakery, and before that a school team, a trade union and a church rota.
 - The same way of being runs through all of it: Rosa is the loudest and surest person in every room.
 - It is a strong way of being, and her family teases her about it. She does not turn scornful when someone else is thanked: she organises the party.
 - It does not keep costing. Her staff have stayed an average of fifteen years, and she has the same three friends she made at school.
@@ -292,9 +292,9 @@ This is the answer you will need most often. For a very large share of the peopl
 
 **What you must be able to point to.** Years, more than one place and relationship, the same way of being in all of them (confident, shy, dramatic, blunt, touchy), and no repeated cost to the person or to the people around them. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What does the person do, again and again, across those years?”**
+**The question:** **“What does the person do, again and again, across those years?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“Stays the same way for years, and it does not keep doing harm”**
+**Its answer for a case like this one:** **“Stays the same way for years, and it does not keep doing harm”**
 
 The name for this is **An ordinary personality**. "Personality" means how a person usually is, and "ordinary" means that it does not keep costing anyone. The name does not say that the person is easy to be with: Rosa is loud and bossy. It says that her way of being does not keep leaving damage behind.
 
@@ -302,7 +302,7 @@ You may also hear this called “just how they are”. That means the same thing
 
 ### 10. An ordinary personality: the same thing in a different story
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 10 of 46*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 10 of 46*
 
 [reviewers only: card kind `again`, id `again-ordpersonality`]
 
@@ -335,7 +335,7 @@ So this name is not about being shy, or loud, or any one thing. It holds whereve
 
 ### 11. An ordinary personality: what it is like
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 11 of 46*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 11 of 46*
 
 [reviewers only: card kind `portrait`, id `portrait-ordpersonality`]
 
@@ -351,7 +351,7 @@ You know what to point to. This card fills in the rest of the picture, because t
 
 **What it is not**
 
-It is not the name for anyone who is nice. Someone can be unpleasant, loud or a bit of a nuisance and still show **An ordinary personality**, if what they do does not keep leaving damage behind. And it is not the name for a case that has given you too little. If a case shows only a week or one occasion, the key’s first question has already sent you somewhere else, and this question is not asked.
+It is not the name for anyone who is nice. Someone can be unpleasant, loud or a bit of a nuisance and still show **An ordinary personality**, if what they do does not keep leaving damage behind. And it is not the name for a case that has given you too little. If a case shows only a week or one occasion, the first question has already sent you somewhere else, and this question is not asked.
 
 **Where you will hear it**
 
@@ -361,17 +361,17 @@ You will meet it in most of the people you know well: the friend who is always l
 
 **The question to ask when you spot it**
 
-"What has this way of being cost, again and again, and who has paid?" If the honest answer is "very little, and it was put right", the key’s answer is this one.
+"What has this way of being cost, again and again, and who has paid?" If the honest answer is "very little, and it was put right", the answer is this one.
 
 ### 12. A question about a new case
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 12 of 46*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 12 of 46*
 
 [reviewers only: card kind `check`, id `check-ordpersonality`]
 
 > Marcus has taught maths for thirty years in two schools and has always said exactly what he thinks. He tells students their working is 'a mess' when it is, and he tells the head she is wrong when he thinks so. He was the same as a student teacher. Pupils tease him about it, he laughs, and former pupils still write to him. He has been asked to stay on three times, and the head says she trusts him because he never says one thing and means another.
 
-**The key asks:** **“What does the person do, again and again, across those years?”** Which of the answers you have met so far fits this case?
+**The question:** **“What does the person do, again and again, across those years?”** Which of the answers you have met so far fits this case?
 
 - Acts above others, and turns angry or scornful when not treated as special
 - Stays the same way for years, and it does not keep doing harm
@@ -385,7 +385,7 @@ You will meet it in most of the people you know well: the friend who is always l
 
 ### 13. Grandiose narcissism or An ordinary personality: telling them apart
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 13 of 46*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 13 of 46*
 
 [reviewers only: card kind `lookalike`, id `look-narcgrand-ordpersonality`]
 
@@ -407,9 +407,9 @@ You have met both names, and both can be loud and sure of themselves. This is th
 
 **Why this one and not the other**
 
-In Case A Paolo runs the young cook down: "a pretty face with a borrowed recipe". He stops giving her shifts. The best cooks leave within a year, and his daughters stopped bringing friends years ago. The key’s answer is **“Acts above others, and turns angry or scornful when not treated as special”**, and the case is **Grandiose narcissism**.
+In Case A Paolo runs the young cook down: "a pretty face with a borrowed recipe". He stops giving her shifts. The best cooks leave within a year, and his daughters stopped bringing friends years ago. The answer is **“Acts above others, and turns angry or scornful when not treated as special”**, and the case is **Grandiose narcissism**.
 
-In Case B Sunil says the same thing about himself, and frames the article. His cooks stay for years, and some of them still ring him. The key’s answer is **“Stays the same way for years, and it does not keep doing harm”**, and the case is **An ordinary personality**.
+In Case B Sunil says the same thing about himself, and frames the article. His cooks stay for years, and some of them still ring him. The answer is **“Stays the same way for years, and it does not keep doing harm”**, and the case is **An ordinary personality**.
 
 The boast is the same in both. What differs is what comes with it. A boast, and even a loud, bossy way of being, is not enough for **Grandiose narcissism**. What makes it that name is the scorn when another person is praised, and a cost that keeps coming back.
 
@@ -417,7 +417,7 @@ The boast is the same in both. What differs is what comes with it. A boast, and 
 
 When someone else is praised or chosen, does this person turn on them, and have people been lost over the years because of it? Or do people stay?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Grandiose narcissism | An ordinary personality |
 |---|---|---|
@@ -434,7 +434,7 @@ When someone else is praised or chosen, does this person turn on them, and have 
 
 ### 14. Feeling overlooked and owed more for years, and hurt when not treated so
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 14 of 46*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 14 of 46*
 
 [reviewers only: card kind `meet`, id `meet-narcvuln`]
 
@@ -458,15 +458,15 @@ Underneath, they are built the same way. Remember the idea from Dennis: for some
 
 Dennis defends it outward, with anger and scorn at whoever is in the way. Ellis defends it inward, with hurt and resentment. "Resentment" is a lasting bitterness about something you feel you were owed. Ellis does not run his sister down. He goes quiet, keeps count of what he is owed, and lets it grow. A person like this feels that other people keep failing to see how special they are, and pulls away and resents it rather than lashing out.
 
-That is why the key gives both of them one family name, narcissism. It is the name for a sense of worth that depends on being treated as special. What differs is how it is defended: outward, with anger and scorn, or inward, with hurt and resentment. In both there is little room for what other people feel, and in both it keeps costing.
+That is why both of them share one name, narcissism. It is the name for a sense of worth that depends on being treated as special. What differs is how it is defended: outward, with anger and scorn, or inward, with hurt and resentment. In both there is little room for what other people feel, and in both it keeps costing.
 
 It is not the same as shyness. A shy person is also quiet, but shyness does not keep a count of what people owe. Ellis’s silence has a reason and a target.
 
 **What you must be able to point to.** Years, more than one place and relationship, the person saying they are overlooked and owed more than they get, little interest in what others feel, hurt withdrawal or quiet resentment when they are not treated as special, and a cost to them or to people around them. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What does the person do, again and again, across those years?”**
+**The question:** **“What does the person do, again and again, across those years?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“Feels overlooked and owed more, and turns hurt and resentful when not treated as special”**
+**Its answer for a case like this one:** **“Feels overlooked and owed more, and turns hurt and resentful when not treated as special”**
 
 The name for this is **Vulnerable narcissism**. "Narcissism" is the same word as before. "Vulnerable" means easily hurt, which is how this form looks from outside: the person is hurt by what others would hardly notice. So the name says: the same sense of worth, defended inward.
 
@@ -474,7 +474,7 @@ You may also hear this called “covert narcissism”. That means the same thing
 
 ### 15. Vulnerable narcissism: the same thing in a different story
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 15 of 46*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 15 of 46*
 
 [reviewers only: card kind `again`, id `again-narcvuln`]
 
@@ -507,7 +507,7 @@ A clerk and a research student, a man and a woman. So this is not about offices,
 
 ### 16. Vulnerable narcissism: what it is like
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 16 of 46*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 16 of 46*
 
 [reviewers only: card kind `portrait`, id `portrait-narcvuln`]
 
@@ -540,13 +540,13 @@ Everyone has felt the small cold hurt when a friend is thanked and they were not
 
 ### 17. A question about a new case
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 17 of 46*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 17 of 46*
 
 [reviewers only: card kind `check`, id `check-narcvuln`]
 
 > Lars has volunteered at the food bank for twelve years. He says that nobody ever thanks him for what he does, and that others get praised for much less. When a new volunteer was given a long-service award, Lars said nothing, went home and stayed away for a month. He did the same when the manager he had trained was promoted over him, and again when his own brother was thanked in the church newsletter. The manager says she has stopped asking him to events, because he goes quiet and cold for weeks afterwards.
 
-**The key asks:** **“What does the person do, again and again, across those years?”** Which of the answers you have met so far fits this case?
+**The question:** **“What does the person do, again and again, across those years?”** Which of the answers you have met so far fits this case?
 
 - Acts above others, and turns angry or scornful when not treated as special
 - Stays the same way for years, and it does not keep doing harm
@@ -562,7 +562,7 @@ Everyone has felt the small cold hurt when a friend is thanked and they were not
 
 ### 18. Grandiose narcissism or Vulnerable narcissism: telling them apart
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 18 of 46*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 18 of 46*
 
 [reviewers only: card kind `lookalike`, id `look-narcgrand-narcvuln`]
 
@@ -584,17 +584,17 @@ You have met both narcissisms. Here are two brothers, each answering the same pi
 
 **Why this one and not the other**
 
-In Case A Anton turns on his brother at the family lunch: "only got there by licking boots". It is outward: anger and scorn. The key’s answer is **“Acts above others, and turns angry or scornful when not treated as special”**, and the case is **Grandiose narcissism**.
+In Case A Anton turns on his brother at the family lunch: "only got there by licking boots". It is outward: anger and scorn. The answer is **“Acts above others, and turns angry or scornful when not treated as special”**, and the case is **Grandiose narcissism**.
 
-In Case B Piers says "Lovely news", goes quiet and leaves before the pudding, and says nobody has ever noticed what he has done. It is inward: hurt and resentment. The key’s answer is **“Feels overlooked and owed more, and turns hurt and resentful when not treated as special”**, and the case is **Vulnerable narcissism**.
+In Case B Piers says "Lovely news", goes quiet and leaves before the pudding, and says nobody has ever noticed what he has done. It is inward: hurt and resentment. The answer is **“Feels overlooked and owed more, and turns hurt and resentful when not treated as special”**, and the case is **Vulnerable narcissism**.
 
-So these two names are one family, and this is the difference inside it. Both brothers have the same sore place: their worth depends on being treated as special, and their brother’s promotion does not treat them so. Anton defends it outward and Piers defends it inward. Which way it goes is what the key’s question picks out.
+So these two names are one family, and this is the difference inside it. Both brothers have the same sore place: their worth depends on being treated as special, and their brother’s promotion does not treat them so. Anton defends it outward and Piers defends it inward. Which way it goes is what the question picks out.
 
 **How to tell them apart**
 
 When this person is not treated as special, which way does it go? Outward, at someone, with anger or scorn? Or inward, in hurt silence and a count of what they are owed?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Grandiose narcissism | Vulnerable narcissism |
 |---|---|---|
@@ -605,7 +605,7 @@ When this person is not treated as special, which way does it go? Outward, at so
 
 ### 19. Vulnerable narcissism or An ordinary personality: telling them apart
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 19 of 46*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 19 of 46*
 
 [reviewers only: card kind `lookalike`, id `look-narcvuln-ordpersonality`]
 
@@ -627,9 +627,9 @@ A quiet person is far more likely to be an ordinary shy person than to show **Vu
 
 **Why this one and not the other**
 
-In Case A Hugh says that others get the good projects because they are noticed and he is not, and that he is owed more. When a colleague is thanked he stops speaking to her for a month, and he has done it with six colleagues. His managers say his silences make it impossible to plan around him. The key’s answer is **“Feels overlooked and owed more, and turns hurt and resentful when not treated as special”**, and the case is **Vulnerable narcissism**.
+In Case A Hugh says that others get the good projects because they are noticed and he is not, and that he is owed more. When a colleague is thanked he stops speaking to her for a month, and he has done it with six colleagues. His managers say his silences make it impossible to plan around him. The answer is **“Feels overlooked and owed more, and turns hurt and resentful when not treated as special”**, and the case is **Vulnerable narcissism**.
 
-In Case B Amara is just as quiet. When a colleague is thanked she sends a note saying well done. Her managers say she can be relied on, and her friends from each office are still her friends. The key’s answer is **“Stays the same way for years, and it does not keep doing harm”**, and the case is **An ordinary personality**.
+In Case B Amara is just as quiet. When a colleague is thanked she sends a note saying well done. Her managers say she can be relied on, and her friends from each office are still her friends. The answer is **“Stays the same way for years, and it does not keep doing harm”**, and the case is **An ordinary personality**.
 
 The quietness is the same in both. What differs is the count of what others owe, the cold withdrawal when someone else is thanked, and the cost.
 
@@ -637,7 +637,7 @@ The quietness is the same in both. What differs is the count of what others owe,
 
 Is the silence a count of what is owed, going cold on someone who was thanked, with people lost to it? Or is the person simply quiet, and still on good terms with the people around them?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Vulnerable narcissism | An ordinary personality |
 |---|---|---|
@@ -654,7 +654,7 @@ Is the silence a count of what is owed, going cold on someone who was thanked, w
 
 ### 20. Clinging to people, and turning on them when they seem to be leaving
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 20 of 46*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 20 of 46*
 
 [reviewers only: card kind `meet`, id `meet-borderline`]
 
@@ -682,9 +682,9 @@ It is also not an act. People with this way of being are very often in real dist
 
 **What you must be able to point to.** Years, more than one place and relationship, desperate efforts to keep people close, a swing from adoring someone to attacking them when they seem about to leave or pull away, and a cost to them or to people around them. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What does the person do, again and again, across those years?”**
+**The question:** **“What does the person do, again and again, across those years?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“Clings to people, and turns on them when they seem to be leaving”**
+**Its answer for a case like this one:** **“Clings to people, and turns on them when they seem to be leaving”**
 
 The name for this is **Borderline personality**. The word "borderline" is old: doctors once thought the condition sat on the border between two kinds of illness. That idea has been dropped, but the word stayed, so it tells you nothing about what the case shows. Go by the case. "Personality" means how a person usually is.
 
@@ -692,7 +692,7 @@ You may also hear this called “borderline” or “BPD” or “borderline per
 
 ### 21. Borderline personality: the same thing in a different story
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 21 of 46*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 21 of 46*
 
 [reviewers only: card kind `again`, id `again-borderline`]
 
@@ -718,14 +718,14 @@ The pieces you can tap:
 
 **What the two share**
 
-Nadia and Tomas each make desperate efforts to keep someone close: forty messages and an offer of flights, car keys and a pay rise the club could not afford. Each swings to attacking when the person seems about to go: "You are a fake and I never want to see you again", "poisonous". Each swings back: twelve apologies, a letter saying she was the best person he knew. And each does it with many people over many years, and has lost people.
+Nadia and Tomas each make desperate efforts to keep someone close: forty messages and an offer of flights, the use of his car and a pay rise the club could not afford. Each swings to attacking when the person seems about to go: "You are a fake and I never want to see you again", "poisonous". Each swings back: twelve apologies, a letter saying she was the best person he knew. And each does it with many people over many years, and has lost people.
 
 A woman and a man, a friend and a deputy. So this is not about gender, friendship or work. It holds wherever a person makes desperate efforts to keep people close, and swings to attacking them when they seem about to leave. That is what **Borderline personality** names.
 
 
 ### 22. Borderline personality: what it is like
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 22 of 46*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 22 of 46*
 
 [reviewers only: card kind `portrait`, id `portrait-borderline`]
 
@@ -758,13 +758,13 @@ Almost everyone has felt a little of it: the dread when a message is not answere
 
 ### 23. A question about a new case
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 23 of 46*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 23 of 46*
 
 [reviewers only: card kind `check`, id `check-borderline`]
 
 > Pru is forty and belongs to a book group. When her closest friend there mentioned that she might not come every month, Pru rang her eleven times, brought gifts to the next meeting and said she would be lost without her. When the friend then missed a meeting, Pru told the others that she had never really cared, and the next day sent her a long apology. Pru's sister says it has been the same with every close friend and boyfriend since school. Six people have stopped answering her calls.
 
-**The key asks:** **“What does the person do, again and again, across those years?”** Which of the answers you have met so far fits this case?
+**The question:** **“What does the person do, again and again, across those years?”** Which of the answers you have met so far fits this case?
 
 - Acts above others, and turns angry or scornful when not treated as special
 - Stays the same way for years, and it does not keep doing harm
@@ -782,7 +782,7 @@ Almost everyone has felt a little of it: the dread when a message is not answere
 
 ### 24. Vulnerable narcissism or Borderline personality: telling them apart
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 24 of 46*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 24 of 46*
 
 [reviewers only: card kind `lookalike`, id `look-narcvuln-borderline`]
 
@@ -804,9 +804,9 @@ Both of these can look like a person who feels let down by a friend. This card p
 
 **Why this one and not the other**
 
-In Case A Isla replies "No problem", goes silent for three months and keeps count of what she is owed. She does not reach for the friend at all. The key’s answer is **“Feels overlooked and owed more, and turns hurt and resentful when not treated as special”**, and the case is **Vulnerable narcissism**.
+In Case A Isla replies "No problem", goes silent for three months and keeps count of what she is owed. She does not reach for the friend at all. The answer is **“Feels overlooked and owed more, and turns hurt and resentful when not treated as special”**, and the case is **Vulnerable narcissism**.
 
-In Case B Kai sends thirty messages that night, offers to cancel the dinner so that she will not feel left out, then tells their friends that she is "the cruellest person he knew", and apologises the next morning. The key’s answer is **“Clings to people, and turns on them when they seem to be leaving”**, and the case is **Borderline personality**.
+In Case B Kai sends thirty messages that night, offers to cancel the dinner so that she will not feel left out, then tells their friends that she is "the cruellest person he knew", and apologises the next morning. The answer is **“Clings to people, and turns on them when they seem to be leaving”**, and the case is **Borderline personality**.
 
 Both people are hurt, and in both it has cost friendships. What separates them is the direction. Isla pulls back and resents. Kai goes towards the friend, and when that fails attacks her, and then goes towards her again.
 
@@ -814,7 +814,7 @@ Both people are hurt, and in both it has cost friendships. What separates them i
 
 When someone close lets this person down, do they pull away and keep count? Or do they cling, attack and then apologise?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Vulnerable narcissism | Borderline personality |
 |---|---|---|
@@ -825,7 +825,7 @@ When someone close lets this person down, do they pull away and keep count? Or d
 
 ### 25. Grandiose narcissism or Borderline personality: telling them apart
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 25 of 46*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 25 of 46*
 
 [reviewers only: card kind `lookalike`, id `look-narcgrand-borderline`]
 
@@ -847,9 +847,9 @@ Anger when someone seems about to leave is in both of these names. Here are two 
 
 **Why this one and not the other**
 
-In Case A Ruth tells her husband that he would never find anyone as good as her and that his friends laugh at him behind his back, and then does not speak to him for a week. She has never once asked him to stay. The key’s answer is **“Acts above others, and turns angry or scornful when not treated as special”**, and the case is **Grandiose narcissism**.
+In Case A Ruth tells her husband that he would never find anyone as good as her and that his friends laugh at him behind his back, and then does not speak to him for a week. She has never once asked him to stay. The answer is **“Acts above others, and turns angry or scornful when not treated as special”**, and the case is **Grandiose narcissism**.
 
-In Case B Dani begs her husband to stay, promises to change everything about herself and hides his car keys. When he asks for a night at his brother’s she calls him "a liar who never loved her", throws his clothes into the street, and then rings him seven times that night to say she is sorry. The key’s answer is **“Clings to people, and turns on them when they seem to be leaving”**, and the case is **Borderline personality**.
+In Case B Dani begs her husband to stay, promises to change everything about herself and hides what he would need to drive away. When he asks for a night at his brother’s she calls him "a liar who never loved her", throws his clothes into the street, and then rings him seven times that night to say she is sorry. The answer is **“Clings to people, and turns on them when they seem to be leaving”**, and the case is **Borderline personality**.
 
 Both women are angry. The difference is which way the anger goes. Ruth’s anger pushes him away: she needs to be above him, and she does not try to keep him. Dani’s anger comes from the fear of his going, and within hours she is going towards him again.
 
@@ -857,7 +857,7 @@ Both women are angry. The difference is which way the anger goes. Ruth’s anger
 
 When someone close seems about to leave, does this person run them down and let them go? Or hold on, attack, and hold on again?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Grandiose narcissism | Borderline personality |
 |---|---|---|
@@ -874,7 +874,7 @@ When someone close seems about to leave, does this person run them down and let 
 
 ### 26. Always at the centre of attention, with bigger displays when it moves away
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 26 of 46*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 26 of 46*
 
 [reviewers only: card kind `meet`, id `meet-histrionic`]
 
@@ -901,9 +901,9 @@ And it keeps costing. Her sister has stopped inviting her to small gatherings. T
 
 **What you must be able to point to.** Years, more than one place and relationship, the person putting themselves at the centre of attention, bigger and bigger displays when attention moves to someone else, and a cost to them or to people around them. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What does the person do, again and again, across those years?”**
+**The question:** **“What does the person do, again and again, across those years?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“Keeps the attention on themselves, with bigger displays when it moves away”**
+**Its answer for a case like this one:** **“Keeps the attention on themselves, with bigger displays when it moves away”**
 
 The name for this is **Histrionic personality**. "Histrionic" comes from an old word for an actor, and means theatrical. "Personality" means how a person usually is. So the name says: a theatrical way of being, which has lasted.
 
@@ -911,7 +911,7 @@ You may also hear this called “histrionic personality disorder” or “attent
 
 ### 27. Histrionic personality: the same thing in a different story
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 27 of 46*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 27 of 46*
 
 [reviewers only: card kind `again`, id `again-histrionic`]
 
@@ -944,7 +944,7 @@ A guest and a teacher, a woman and a man. So this is not about parties, staff ro
 
 ### 28. Histrionic personality: what it is like
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 28 of 46*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 28 of 46*
 
 [reviewers only: card kind `portrait`, id `portrait-histrionic`]
 
@@ -977,13 +977,13 @@ You have probably been in a room where someone could not bear to see the attenti
 
 ### 29. A question about a new case
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 29 of 46*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 29 of 46*
 
 [reviewers only: card kind `check`, id `check-histrionic`]
 
 > Tilly is thirty-eight and sings in a community choir. She arrives in a different costume each week and tells everyone about her week at a volume that stops the rehearsal. When the choir applauded a soloist, Tilly clutched her chest and said she felt faint with emotion, and kept it up until the conductor stopped to ask if she was all right. She has been like this in every group she has joined since she was a teenager. The choir has lost two altos who said they could not rehearse around her, and the conductor has asked her three times to keep the drama for the stage.
 
-**The key asks:** **“What does the person do, again and again, across those years?”** Which of the answers you have met so far fits this case?
+**The question:** **“What does the person do, again and again, across those years?”** Which of the answers you have met so far fits this case?
 
 - Acts above others, and turns angry or scornful when not treated as special
 - Stays the same way for years, and it does not keep doing harm
@@ -1003,7 +1003,7 @@ You have probably been in a room where someone could not bear to see the attenti
 
 ### 30. Borderline personality or Histrionic personality: telling them apart
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 30 of 46*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 30 of 46*
 
 [reviewers only: card kind `lookalike`, id `look-borderline-histrionic`]
 
@@ -1025,9 +1025,9 @@ Both of these have big feelings, and big feelings are what people usually notice
 
 **Why this one and not the other**
 
-In Case A Mira clings to the flatmate, says that she would be nothing without her, and the next week tells the others that she was selfish. One person, who seems to be leaving, is the point, and the feeling swings from adoring her to attacking her. The key’s answer is **“Clings to people, and turns on them when they seem to be leaving”**, and the case is **Borderline personality**.
+In Case A Mira clings to the flatmate, says that she would be nothing without her, and the next week tells the others that she was selfish. One person, who seems to be leaving, is the point, and the feeling swings from adoring her to attacking her. The answer is **“Clings to people, and turns on them when they seem to be leaving”**, and the case is **Borderline personality**.
 
-In Case B Orla stands on a chair and speaks to the whole room, and when another guest is applauded for a song she sings louder over the end of it. The room is the point, and no one person has to stay. She does not attack anyone. The key’s answer is **“Keeps the attention on themselves, with bigger displays when it moves away”**, and the case is **Histrionic personality**.
+In Case B Orla stands on a chair and speaks to the whole room, and when another guest is applauded for a song she sings louder over the end of it. The room is the point, and no one person has to stay. She does not attack anyone. The answer is **“Keeps the attention on themselves, with bigger displays when it moves away”**, and the case is **Histrionic personality**.
 
 The tears are the same in both. What differs is who the display is aimed at, and whether it turns into an attack on the person who seems to be leaving.
 
@@ -1035,7 +1035,7 @@ The tears are the same in both. What differs is who the display is aimed at, and
 
 Who is the display for: one particular person who seems to be leaving, or whoever is in the room? And does it turn into an attack on that one person?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Borderline personality | Histrionic personality |
 |---|---|---|
@@ -1046,7 +1046,7 @@ Who is the display for: one particular person who seems to be leaving, or whoeve
 
 ### 31. Grandiose narcissism or Histrionic personality: telling them apart
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 31 of 46*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 31 of 46*
 
 [reviewers only: card kind `lookalike`, id `look-narcgrand-histrionic`]
 
@@ -1068,9 +1068,9 @@ Both of these want the room’s attention and take it over wherever they go. Thi
 
 **Why this one and not the other**
 
-In Case A Felix tells the manager that she was "all slides and no substance" and that she would never have been asked if he had not trained her. He runs the colleague down, so that he stays above her. Four colleagues have changed teams. The key’s answer is **“Acts above others, and turns angry or scornful when not treated as special”**, and the case is **Grandiose narcissism**.
+In Case A Felix tells the manager that she was "all slides and no substance" and that she would never have been asked if he had not trained her. He runs the colleague down, so that he stays above her. Four colleagues have changed teams. The answer is **“Acts above others, and turns angry or scornful when not treated as special”**, and the case is **Grandiose narcissism**.
 
-In Case B Bea says nothing against the colleague. She tells the whole table about a dreadful week, until they are all listening to her. Four colleagues have stopped sitting near her. The key’s answer is **“Keeps the attention on themselves, with bigger displays when it moves away”**, and the case is **Histrionic personality**.
+In Case B Bea says nothing against the colleague. She tells the whole table about a dreadful week, until they are all listening to her. Four colleagues have stopped sitting near her. The answer is **“Keeps the attention on themselves, with bigger displays when it moves away”**, and the case is **Histrionic personality**.
 
 Both people take the room. Felix wants to be treated as better than the person who was applauded, and runs her down. Bea wants the attention and nothing else, and puts on a bigger display.
 
@@ -1078,7 +1078,7 @@ Both people take the room. Felix wants to be treated as better than the person w
 
 When attention goes to someone else, does this person run that person down? Or put on a bigger display themselves?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Grandiose narcissism | Histrionic personality |
 |---|---|---|
@@ -1089,7 +1089,7 @@ When attention goes to someone else, does this person run that person down? Or p
 
 ### 32. Histrionic personality or An ordinary personality: telling them apart
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 32 of 46*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 32 of 46*
 
 [reviewers only: card kind `lookalike`, id `look-histrionic-ordpersonality`]
 
@@ -1111,9 +1111,9 @@ Drama alone is the thing most often mistaken for this name. Here are two people 
 
 **Why this one and not the other**
 
-In Case A Sofia says that her heart is racing and she needs to sit down when the raffle winner is announced, until the stall-holders gather round her. The committee has stopped asking her to help, and two neighbours cross the road. The key’s answer is **“Keeps the attention on themselves, with bigger displays when it moves away”**, and the case is **Histrionic personality**.
+In Case A Sofia says that her heart is racing and she needs to sit down when the raffle winner is announced, until the stall-holders gather round her. The committee has stopped asking her to help, and two neighbours cross the road. The answer is **“Keeps the attention on themselves, with bigger displays when it moves away”**, and the case is **Histrionic personality**.
 
-In Case B Tito leads the cheering and buys the winner a drink. The committee asks him to introduce the raffle every year, and the neighbours he made twenty years ago still come to his parties. The key’s answer is **“Stays the same way for years, and it does not keep doing harm”**, and the case is **An ordinary personality**.
+In Case B Tito leads the cheering and buys the winner a drink. The committee asks him to introduce the raffle every year, and the neighbours he made twenty years ago still come to his parties. The answer is **“Stays the same way for years, and it does not keep doing harm”**, and the case is **An ordinary personality**.
 
 Both are as theatrical as each other. A theatrical way of being is common and ordinary, and a person can be as dramatic as Tito and have no repeated cost at all. What turns it into **Histrionic personality** is the bigger display when the attention goes elsewhere, and what it has cost.
 
@@ -1121,7 +1121,7 @@ Both are as theatrical as each other. A theatrical way of being is common and or
 
 When attention goes to someone else, does the display get bigger? And has it cost the person friends, jobs or places over the years?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Histrionic personality | An ordinary personality |
 |---|---|---|
@@ -1130,19 +1130,19 @@ When attention goes to someone else, does the display get bigger? And has it cos
 | What you must be able to point to | Years, more than one place and relationship, the person putting themselves at the centre of attention, bigger and bigger displays when attention moves to someone else, and a cost to them or to people around them | Years, more than one place and relationship, the same way of being in all of them (confident, shy, dramatic, blunt, touchy), and no repeated cost to the person or to the people around them |
 
 
-*End of part 4. You can stop here; your place is kept. Next: part 5, Breaking rules and using people, and the key’s question.*
+*End of part 4. You can stop here; your place is kept. Next: part 5, Breaking rules and using people, and the question.*
 
 ---
 
-## Part 5 of 6: Breaking rules and using people, and the key’s question
+## Part 5 of 6: Breaking rules and using people, and the question
 
 ### 33. Breaking rules and using people, with no regret
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 33 of 46*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 33 of 46*
 
 [reviewers only: card kind `meet`, id `meet-antisocial`]
 
-The last name is the one people reach for fastest in everyday talk, and the key needs more of it than the everyday word does.
+The last name is the one people reach for fastest in everyday talk, and this name needs more of it than the everyday word does.
 
 *The garage owner*
 
@@ -1165,9 +1165,9 @@ It also has to be a pattern. A person who once lied to a friend, and felt terrib
 
 **What you must be able to point to.** Years, more than one place and relationship, rules broken and people lied to or used for the person’s own ends, no regret shown for the harm, and people hurt by it. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What does the person do, again and again, across those years?”**
+**The question:** **“What does the person do, again and again, across those years?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“Breaks rules and uses people, and shows no regret for the harm”**
+**Its answer for a case like this one:** **“Breaks rules and uses people, and shows no regret for the harm”**
 
 The name for this is **Antisocial personality**. "Antisocial" here does not mean shy or unsociable, which is how the word is used in everyday talk. It means against other people: against the rules that people live by together, and against their rights. "Personality" means how a person usually is.
 
@@ -1175,7 +1175,7 @@ You may also hear this called “psychopath” or “sociopath” or “psychopa
 
 ### 34. Antisocial personality: the same thing in a different story
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 34 of 46*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 34 of 46*
 
 [reviewers only: card kind `again`, id `again-antisocial`]
 
@@ -1208,7 +1208,7 @@ A garage and an arts society. So this is not about cars or about money. Whatever
 
 ### 35. Antisocial personality: what it is like
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 35 of 46*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 35 of 46*
 
 [reviewers only: card kind `portrait`, id `portrait-antisocial`]
 
@@ -1227,7 +1227,7 @@ You know what to point to. This card fills in the rest of the picture, and says 
 
 One lie is not this name, and neither is breaking one rule. Someone who lies once, feels terrible and puts it right has done something wrong, and shown a conscience. The name needs the years, the many people, and the lack of regret.
 
-It is also not a name for anyone who is selfish, rude or unkind. Those are common, and mostly ordinary. And the everyday words people use for anyone they find cold are not names the key uses for a person.
+It is also not a name for anyone who is selfish, rude or unkind. Those are common, and mostly ordinary. And the everyday words people use for anyone they find cold are not names used here for a person.
 
 **Where you will hear it**
 
@@ -1241,13 +1241,13 @@ You will meet this more often in the news and in stories than in the people you 
 
 ### 36. A question about a new case
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 36 of 46*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 36 of 46*
 
 [reviewers only: card kind `check`, id `check-antisocial`]
 
 > Sven is thirty-four. At nineteen he sold his classmates the answers to an exam he had stolen, and told the school it was another student. At twenty-five he took a deposit from a couple for a kitchen he never built, and at thirty he did the same to a family two towns away. When one of them rang him in tears, he said, 'That's business. You should have asked for references.' He has been to court twice, and says each time that the judge 'had it in for him'.
 
-**The key asks:** **“What does the person do, again and again, across those years?”** Which of the answers you have met so far fits this case?
+**The question:** **“What does the person do, again and again, across those years?”** Which of the answers you have met so far fits this case?
 
 - Acts above others, and turns angry or scornful when not treated as special
 - Stays the same way for years, and it does not keep doing harm
@@ -1269,7 +1269,7 @@ You will meet this more often in the news and in stories than in the people you 
 
 ### 37. Grandiose narcissism or Antisocial personality: telling them apart
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 37 of 46*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 37 of 46*
 
 [reviewers only: card kind `lookalike`, id `look-narcgrand-antisocial`]
 
@@ -1291,9 +1291,9 @@ Both of these can be charming and sure of themselves, and both leave people hurt
 
 **Why this one and not the other**
 
-In Case A Kurt tells his tenants that they are lucky to live under his roof, and calls one of them "an ungrateful nobody" for asking for a repair, which he did make in the end. He is scornful when he is not treated as special. No tenant’s money is kept. The key’s answer is **“Acts above others, and turns angry or scornful when not treated as special”**, and the case is **Grandiose narcissism**.
+In Case A Kurt tells his tenants that they are lucky to live under his roof, and calls one of them "an ungrateful nobody" for asking for a repair, which he did make in the end. He is scornful when he is not treated as special. No tenant’s money is kept. The answer is **“Acts above others, and turns angry or scornful when not treated as special”**, and the case is **Grandiose narcissism**.
 
-In Case B Vince spends four tenants’ deposits, keeps a tenant’s rent and sends nobody to mend her boiler, and when she writes that her baby is ill, he says "Nobody forced you." Rules are broken, people are lied to and used, and there is no regret. The key’s answer is **“Breaks rules and uses people, and shows no regret for the harm”**, and the case is **Antisocial personality**.
+In Case B Vince spends four tenants’ deposits, keeps a tenant’s rent and sends nobody to mend her boiler, and when she writes that her baby is ill, he says "Nobody forced you." Rules are broken, people are lied to and used, and there is no regret. The answer is **“Breaks rules and uses people, and shows no regret for the harm”**, and the case is **Antisocial personality**.
 
 A man who thinks he is above others can be unpleasant to people without breaking rules to use them. The difference is what he does to them, and whether he shows regret for the harm.
 
@@ -1301,7 +1301,7 @@ A man who thinks he is above others can be unpleasant to people without breaking
 
 Does the case show rules broken and people lied to and used, with no regret for the harm? Or does it show only acting above others, with anger or scorn when they are not treated as special?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Grandiose narcissism | Antisocial personality |
 |---|---|---|
@@ -1312,7 +1312,7 @@ Does the case show rules broken and people lied to and used, with no regret for 
 
 ### 38. When a case shows both
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 38 of 46*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 38 of 46*
 
 [reviewers only: card kind `exception`, id `exc-both`]
 
@@ -1345,18 +1345,18 @@ Once that is in the case, the scorn is not a second thing. A man who treats cust
 
 Does the case show rules broken and people lied to and used, with no regret for the harm? Or does it show only acting above others, with anger or scorn when they are not treated as special?
 
-When a case shows both **“Acts above others, and turns angry or scornful when not treated as special”** and rules broken and people lied to or used, with no regret for the harm, the key’s answer is **“Breaks rules and uses people, and shows no regret for the harm”**.
+When a case shows both **“Acts above others, and turns angry or scornful when not treated as special”** and rules broken and people lied to or used, with no regret for the harm, the answer is **“Breaks rules and uses people, and shows no regret for the harm”**.
 
-The key decides it this way on purpose, and it is worth knowing that this is the key’s decision. In life the two overlap, and people who study them do not all draw the line in the same place. The key gives each case one name, by what it can point to, so that two people using it reach the same answer and can each say why.
+The answer is chosen this way on purpose, and it is worth knowing that the choice is made in advance, for every case alike. In life the two overlap, and people who study them do not all draw the line in the same place. Each case gets one name, by what it can point to, so that two people using these questions reach the same answer and can each say why.
 
 
 ### 39. Antisocial personality or An ordinary personality: telling them apart
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 39 of 46*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 39 of 46*
 
 [reviewers only: card kind `lookalike`, id `look-antisocial-ordpersonality`]
 
-Plenty of ordinary people bend a rule now and then, and the key does not call that this name. Here are two people who have each been bending rules for years.
+Plenty of ordinary people bend a rule now and then, and that does not earn this name. Here are two people who have each been bending rules for years.
 
 **Case A**
 
@@ -1374,9 +1374,9 @@ Plenty of ordinary people bend a rule now and then, and the key does not call th
 
 **Why this one and not the other**
 
-In Case A Joss has talked three friends into lending him money for a business that does not exist, and when one asks for her money back he says she was lucky to have been asked and blocks her. He has never repaid anyone. The key’s answer is **“Breaks rules and uses people, and shows no regret for the harm”**, and the case is **Antisocial personality**.
+In Case A Joss has talked three friends into lending him money for a business that does not exist, and when one asks for her money back he says she was lucky to have been asked and blocks her. He has never repaid anyone. The answer is **“Breaks rules and uses people, and shows no regret for the harm”**, and the case is **Antisocial personality**.
 
-In Case B Lena parks in loading bays and argues for discounts, and when a friend lends her money she pays it back the next week, and when a neighbour is upset she apologises and stops. Her friends still lend her things and she lends them back. The key’s answer is **“Stays the same way for years, and it does not keep doing harm”**, and the case is **An ordinary personality**.
+In Case B Lena parks in loading bays and argues for discounts, and when a friend lends her money she pays it back the next week, and when a neighbour is upset she apologises and stops. Her friends still lend her things and she lends them back. The answer is **“Stays the same way for years, and it does not keep doing harm”**, and the case is **An ordinary personality**.
 
 Both bend rules, and both have done so for years. What differs is whether anyone is badly hurt, and what the person does when someone is: Lena puts it right, and Joss blames them.
 
@@ -1384,7 +1384,7 @@ Both bend rules, and both have done so for years. What differs is whether anyone
 
 When someone is hurt or upset by what this person did, do they show regret and put it right? Or do they blame the person who was hurt?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Antisocial personality | An ordinary personality |
 |---|---|---|
@@ -1395,7 +1395,7 @@ When someone is hurt or upset by what this person did, do they show regret and p
 
 ### 40. A wrong idea: "if someone is that hard to deal with, it must be a disorder"
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 40 of 46*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 40 of 46*
 
 [reviewers only: card kind `refute`, id `refute-difficult`]
 
@@ -1409,24 +1409,24 @@ You have now met all six names. The last wrong idea in this unit is the one that
 
 Being rude, selfish or hard to deal with is very common, and none of the five names is for it. Each needs years, more than one place, a particular thing done again and again, and a cost. A hard person with no repeated cost, who has the same way of being at school, at work and at home, shows **An ordinary personality**.
 
-The key has no name for "rude" or "difficult". It has one question: what does the person do again and again, and what has it cost? If you cannot point to those, the answer is **An ordinary personality**, and it is a full and proper answer.
+There is no name for "rude" or "difficult". There is one question: what does the person do again and again, and what has it cost? If you cannot point to those, the answer is **An ordinary personality**, and it is a full and proper answer.
 
 The last point is for you and not for him. "There is something wrong with him" feels like an explanation, but it ends the question. A plain description of what he does, and what it costs you, can be answered.
 
 
 ### 41. The question you have been answering all along
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 41 of 46*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 41 of 46*
 
 [reviewers only: card kind `question`, id `q-pat`]
 
-Since Dennis you have seen the key’s question at the foot of each new name, with one answer under it. This card puts the question and its six answers in one place, as the key shows them, and says why the key asks it.
+Since Dennis you have seen the question at the foot of each new name, with one answer under it. This card puts the question and its six answers in one place, and says why it is asked.
 
-**The key asks:** **“What does the person do, again and again, across those years?”**
+**The question:** **“What does the person do, again and again, across those years?”**
 
 **What it is for.** Tells apart five lasting ways of being that keep costing the person or the people around them, and the ordinary personality that does not.
 
-**Its answers, exactly as the key shows them**
+**Its answers**
 
 Each answer leads to one name, and so rules out the other five.
 
@@ -1459,7 +1459,7 @@ So two people can both be loud, or both be quiet, or both be furious when they a
 
 Find the sentences that show what the person does again and again: how they act with others, what they do when something goes against them, what they do when someone seems about to leave. Then ask which of the six answers those sentences give. You should be able to put your finger on the words.
 
-Before you give any of the first five answers, point to the cost. If you cannot point to a repeated cost, the answer is the sixth. And before you give any of the six, make sure the case shows years, more than one place and more than one relationship. If it shows a week, or one other person, the key’s first question has already sent you somewhere else.
+Before you give any of the first five answers, point to the cost. If you cannot point to a repeated cost, the answer is the sixth. And before you give any of the six, make sure the case shows years, more than one place and more than one relationship. If it shows a week, or one other person, the first question has already sent you somewhere else.
 
 Read what is missing as well as what is there. For **Vulnerable narcissism**, nothing is shouted: the evidence is a count of what is owed, and a silence. For **Antisocial personality**, part of the evidence is a missing feeling: no regret.
 
@@ -1475,19 +1475,19 @@ Sometimes two answers both seem to fit. Each pair below has been set side by sid
 - Borderline personality or Histrionic personality: Who is the display for: one particular person who seems to be leaving, or whoever is in the room? And does it turn into an attack on that one person?
 - Grandiose narcissism or Histrionic personality: When attention goes to someone else, does this person run that person down? Or put on a bigger display themselves?
 - Histrionic personality or An ordinary personality: When attention goes to someone else, does the display get bigger? And has it cost the person friends, jobs or places over the years?
-- Grandiose narcissism or Antisocial personality: Does the case show rules broken and people lied to and used, with no regret for the harm? Or does it show only acting above others, with anger or scorn when they are not treated as special? When a case shows both **“Acts above others, and turns angry or scornful when not treated as special”** and rules broken and people lied to or used, with no regret for the harm, the key’s answer is **“Breaks rules and uses people, and shows no regret for the harm”**.
+- Grandiose narcissism or Antisocial personality: Does the case show rules broken and people lied to and used, with no regret for the harm? Or does it show only acting above others, with anger or scorn when they are not treated as special? When a case shows both **“Acts above others, and turns angry or scornful when not treated as special”** and rules broken and people lied to or used, with no regret for the harm, the answer is **“Breaks rules and uses people, and shows no regret for the harm”**.
 - Antisocial personality or An ordinary personality: When someone is hurt or upset by what this person did, do they show regret and put it right? Or do they blame the person who was hurt?
 
 
 ### 42. A question about a new case
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 42 of 46*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 42 of 46*
 
 [reviewers only: card kind `check`, id `check-pat`]
 
 > Ward is sixty-three and has always been touchy about being corrected. In his twenties he sulked for an evening whenever a foreman put him right, and he still does, and then comes round and says sorry. He has done it at three workplaces, and at home, where his wife says she just waits for the evening to pass. He has kept the same friends for forty years, the whole street asks him to fetch the ladders, and his last employer gave him a long-service watch.
 
-**The key asks:** **“What does the person do, again and again, across those years?”**
+**The question:** **“What does the person do, again and again, across those years?”**
 
 - Acts above others, and turns angry or scornful when not treated as special
 - Feels overlooked and owed more, and turns hurt and resentful when not treated as special
@@ -1515,11 +1515,11 @@ Sometimes two answers both seem to fit. Each pair below has been set side by sid
 
 ### 43. A whole case, from the first question to the name
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 43 of 46*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 43 of 46*
 
 [reviewers only: card kind `worked`, id `worked-rafe`]
 
-You have the six names and the key’s question about them. Before you run a case yourself, watch two being run from the top, in the order the key asks. You are not asked anything until the end of each.
+You have the six names and the question about them. Before you run a case yourself, watch two being run from the top, in the order the questions are asked. You are not asked anything until the end of each.
 
 *The recruitment agent*
 
@@ -1565,17 +1565,17 @@ Still possible: **Antisocial personality**. Ruled out: **Grandiose narcissism**,
 
 For **Grandiose narcissism** you must be able to point to this: years, more than one place and relationship, the person acting as if they are better than others and owed special treatment, little interest in what others feel, anger or scorn when they are not treated as special, and a cost to them or to people around them. Rafe says he is the best, but that is all that is there. He does not turn scornful when someone fails to treat him as special. What he does is lie to people and use them, and shrug.
 
-It is the question from the two landlords. Does the case show rules broken and people lied to and used, with no regret for the harm? Or does it show only acting above others, with anger or scorn when they are not treated as special? Here the case shows the rules broken and the lack of regret, so the key’s answer is **“Breaks rules and uses people, and shows no regret for the harm”**.
+It is the question from the two landlords. Does the case show rules broken and people lied to and used, with no regret for the harm? Or does it show only acting above others, with anger or scorn when they are not treated as special? Here the case shows the rules broken and the lack of regret, so the answer is **“Breaks rules and uses people, and shows no regret for the harm”**.
 
 **Does it look like a case you know?**
 
-The key has given its answer. Now take a second look of a different kind: does this case look like one you know? It should bring back the garage owner: cars and customers there, placements and candidates here, and the same shrug when someone is hurt.
+You have the answer. Now take a second look of a different kind: does this case look like one you know? It should bring back the garage owner: cars and customers there, placements and candidates here, and the same shrug when someone is hurt.
 
-Here the key and the likeness agree, so the answer stands. The key’s question comes first, because it makes you point at words in the case. The likeness is only a second look. When the two disagree, do not pick the one you prefer. Go back to the key’s question and find the words in the case that answer it. The second whole case shows how.
+Here the answer and the likeness agree, so the answer stands. The question comes first, because it makes you point at words in the case. The likeness is only a second look. When the two disagree, do not pick the one you prefer. Go back to the question and find the words in the case that answer it. The second whole case shows how.
 
 ### 44. A second whole case, where the story points the wrong way
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 44 of 46*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 44 of 46*
 
 [reviewers only: card kind `worked`, id `worked-bruno`]
 
@@ -1625,13 +1625,13 @@ Still possible: **An ordinary personality**. Ruled out: **Grandiose narcissism**
 
 For **Histrionic personality** you must be able to point to this: years, more than one place and relationship, the person putting themselves at the centre of attention, bigger and bigger displays when attention moves to someone else, and a cost to them or to people around them. Bruno is at the centre of attention, but the other two things are missing. His displays do not get bigger when attention goes to someone else: he applauds. And nothing is being lost to it, so there is no cost to point to.
 
-It is the question from Sofia and Tito. When attention goes to someone else, does the display get bigger? And has it cost the person friends, jobs or places over the years? Here it has cost very little, so the key’s answer is **“Stays the same way for years, and it does not keep doing harm”**.
+It is the question from Sofia and Tito. When attention goes to someone else, does the display get bigger? And has it cost the person friends, jobs or places over the years? Here it has cost very little, so the answer is **“Stays the same way for years, and it does not keep doing harm”**.
 
 **Does it look like a case you know?**
 
-Now the second look: does this case look like one you know? A man who tells every story with his whole body and hugs everyone at a party may bring back Marguerite first, and Marguerite’s case was **Histrionic personality**. So here the likeness and the key seem to disagree.
+Now the second look: does this case look like one you know? A man who tells every story with his whole body and hugs everyone at a party may bring back Marguerite first, and Marguerite’s case was **Histrionic personality**. So here the likeness and the answer seem to disagree.
 
-When that happens, go back to the key’s question and find the words in the case that answer it. They are “Bruno applauds loudest” and “His friends from school still meet him every month” and “been thanked at the end of every one”. Marguerite’s case has nothing like them: when the room applauded someone else she told the story of her terrible week until the room turned back to her, and her sister stopped inviting her to small gatherings. The case this one really looks like is the fete host: dramatic in everything, and thanked for it every year. So the key’s answer stands.
+When that happens, go back to the question and find the words in the case that answer it. They are “Bruno applauds loudest” and “His friends from school still meet him every month” and “been thanked at the end of every one”. Marguerite’s case has nothing like them: when the room applauded someone else she told the story of her terrible week until the room turned back to her, and her sister stopped inviting her to small gatherings. The case this one really looks like is the fete host: dramatic in everything, and thanked for it every year. So the answer stands.
 
 ### The drill
 
@@ -1639,7 +1639,7 @@ The cards are out of view from here, and every case is new. The drill has five s
 
 Some of these cases show a loud, sure or dramatic way of being that does no lasting harm. That is on purpose. Seeing that a way of being does no lasting harm is one of the six answers, and you will need it as often as the other five.
 
-#### Stage 1 of 5. The key’s answers are shown for each case. Give the name that goes with them. This stage practises one thing: which name goes with which answer.
+#### Stage 1 of 5. The answers are shown for each case. Give the name that goes with them. This stage practises one thing: which name goes with which answer.
 
 The names offered are the six this unit teaches: Grandiose narcissism / Vulnerable narcissism / Borderline personality / Histrionic personality / Antisocial personality / An ordinary personality.
 
@@ -1659,7 +1659,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Vulnerable narcissism**: Hal does not pull away hurt and say that he has been overlooked. He turns on his daughter openly, with scorn.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Vulnerable narcissism**, the look-alike card’s lines follow: Both rest on a sense of worth that depends on being treated as special, and in both there is little room for what other people feel. **Grandiose narcissism** defends that sense of worth outward, with anger and scorn at whoever fails to treat the person as special. **Vulnerable narcissism** defends it inward, with hurt withdrawal and quiet resentment. When this person is not treated as special, which way does it go? Outward, at someone, with anger or scorn? Or inward, in hurt silence and a count of what they are owed?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “Acting above others for years, and angry when not treated so” (one tap opens the card).
 
 **Drill item 2 of 51**
@@ -1678,7 +1678,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Grandiose narcissism**: Carmen does not run the nurse down or turn scornful. She goes silent and stays away.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Grandiose narcissism**, the look-alike card’s lines follow: Both rest on a sense of worth that depends on being treated as special, and in both there is little room for what other people feel. **Grandiose narcissism** defends that sense of worth outward, with anger and scorn at whoever fails to treat the person as special. **Vulnerable narcissism** defends it inward, with hurt withdrawal and quiet resentment. When this person is not treated as special, which way does it go? Outward, at someone, with anger or scorn? Or inward, in hurt silence and a count of what they are owed?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “Feeling overlooked and owed more for years, and hurt when not treated so” (one tap opens the card).
 
 **Drill item 3 of 51**
@@ -1697,7 +1697,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Grandiose narcissism**: Lorne does not need anyone to treat him as special, and nothing in the case shows him turning scornful when they do not. What drives it is money, got by lying.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Grandiose narcissism**, the look-alike card’s lines follow: Both can be charming, sure of themselves and scornful of others, and both leave people hurt. In **Grandiose narcissism** what drives the case is being treated as special: the person turns angry or scornful when it is not given. In **Antisocial personality** what drives it is gain: the person lies to people and uses them, and shows no regret for the harm. Does the case show rules broken and people lied to and used, with no regret for the harm? Or does it show only acting above others, with anger or scorn when they are not treated as special?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “Breaking rules and using people, with no regret” (one tap opens the card).
 
 **Drill item 4 of 51**
@@ -1716,7 +1716,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Vulnerable narcissism**: Joelle does not pull away and keep a count. She reaches for her flatmate, attacks her, and begs her back.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Vulnerable narcissism**, the look-alike card’s lines follow: Both are hurt when someone close lets them down, and in both it has cost friendships over years. In **Vulnerable narcissism** the person pulls away and resents, and does not reach for the other person. In **Borderline personality** the person reaches for them hard when they seem to be leaving, attacks them, and reaches for them again. When someone close lets this person down, do they pull away and keep count? Or do they cling, attack and then apologise?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “Clinging to people, and turning on them when they seem to be leaving” (one tap opens the card).
 
 **Drill item 5 of 51**
@@ -1735,7 +1735,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Grandiose narcissism**: Gideon does not run the other representative down. He turns the attention back to himself.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Grandiose narcissism**, the look-alike card’s lines follow: Both want the room’s attention, and both take it over in every group. In **Grandiose narcissism** the person wants to be treated as better than others, and runs down whoever else is praised. In **Histrionic personality** the person wants any attention at all, and answers attention going elsewhere with a bigger display, not with scorn. When attention goes to someone else, does this person run that person down? Or put on a bigger display themselves?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “Always at the centre of attention, with bigger displays when it moves away” (one tap opens the card).
 
 **Drill item 6 of 51**
@@ -1754,7 +1754,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Grandiose narcissism**: She is gruff, which **Grandiose narcissism** can be too. But she does not turn scornful when she is corrected: she says "You're right" and changes the note, and her juniors ask to stay.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Grandiose narcissism**, the look-alike card’s lines follow: Both can be loud, sure of themselves and bossy, in the same way for years and in every place. In **Grandiose narcissism** the way of being turns scornful when someone else is praised or chosen, and it keeps costing: people resign, leave and keep away. In **An ordinary personality** the same loudness and certainty sits beside people who stay. When someone else is praised or chosen, does this person turn on them, and have people been lost over the years because of it? Or do people stay?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “A way of being that stays the same, and does not keep doing harm” (one tap opens the card).
 
 #### Stage 2 of 5. One question at a time.
@@ -1777,7 +1777,7 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **Acts above others, and turns angry or scornful when not treated as special.**” Ines acts as if the others are lucky to have her, and when the vote went against her she turned scornful: “they are lucky to learn from her” and “a hobbyist with a pencil” and “She has driven out four committee members”. It has lasted fifteen years and it has cost the club four committee members. This answer leads to **Grandiose narcissism**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **Stays the same way for years, and it does not keep doing harm**: A bossy, certain captain can be **An ordinary personality**. But Ines turns scornful when she is outvoted, and people have left because of it.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 8 of 51**
@@ -1798,7 +1798,7 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **Breaks rules and uses people, and shows no regret for the harm.**” Nigel has taken money from people who could not check, lied to their families, and shown no regret to a daughter in tears: “taken residents' pocket money 'for safekeeping' and spent it” and “should have kept better track” and “one family has lost four thousand pounds”. It has gone on for fifteen years in three homes. This answer leads to **Antisocial personality**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **Acts above others, and turns angry or scornful when not treated as special**: Nothing in the case shows Nigel needing to be treated as special, or turning scornful when he is not. What drives it is the money, got by lying.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 9 of 51**
@@ -1819,7 +1819,7 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **Stays the same way for years, and it does not keep doing harm.**” Mina has been the centre of the room for her whole life, and the case shows what that has not cost: “has been the class joker at school, at university and in the staff room” and “says sorry when it lands badly” and “Pupils from three years ago still email her”. She puts it right when it goes wrong, and people stay. This answer leads to **An ordinary personality**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **Keeps the attention on themselves, with bigger displays when it moves away**: She is the centre of the room, which **Histrionic personality** can be too. But nothing in the case shows her displays getting bigger when attention goes elsewhere, and nothing has been lost.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 10 of 51**
@@ -1840,7 +1840,7 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **Keeps the attention on themselves, with bigger displays when it moves away.**” Anders is at the centre of the club, and when another member got the attention his display got bigger: “the most talkative man at his golf club” and “stood on a bench and told the clubhouse about the day his father died” and “Two have asked him to leave”. It has been the same at three clubs, and two have asked him to leave. This answer leads to **Histrionic personality**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **Clings to people, and turns on them when they seem to be leaving**: Anders attacks no one and holds on to no one person. The whole room is his audience.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 11 of 51**
@@ -1861,7 +1861,7 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **Feels overlooked and owed more, and turns hurt and resentful when not treated as special.**” Sabine says she is overlooked and owed more, and when someone else was thanked she went cold: “everything she gives is taken for granted” and “did not speak to her for a year” and “her husband says he no longer knows whom to invite”. She has done it with relatives and neighbours for thirty years, and it has cost her a good deal of company. This answer leads to **Vulnerable narcissism**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **Clings to people, and turns on them when they seem to be leaving**: Sabine does not reach for anyone, and she does not swing between adoring them and attacking them. She withdraws, and she stays cold.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 12 of 51**
@@ -1882,7 +1882,7 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **Clings to people, and turns on them when they seem to be leaving.**” When a volunteer seems about to leave, Arjun holds on hard, then attacks her, then holds on again: “floods her with praise, offers her the best shifts and says that no one else understands the work” and “a snake” and “It has happened with seven volunteers and with each of his last four partners”. It has happened with seven volunteers and four partners. This answer leads to **Borderline personality**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **Keeps the attention on themselves, with bigger displays when it moves away**: Arjun’s display is not for the room. It is aimed at one person who seems to be leaving, and it turns into an attack on her.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 13 of 51**
@@ -1982,7 +1982,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Shown as soon as you answer**
 
-- The answer is: “Does the case show rules broken and people lied to and used, with no regret for the harm? Or does it show only acting above others, with anger or scorn when they are not treated as special?” Both can be charming, sure of themselves and scornful of others, and both leave people hurt. In **Grandiose narcissism** what drives the case is being treated as special: the person turns angry or scornful when it is not given. In **Antisocial personality** what drives it is gain: the person lies to people and uses them, and shows no regret for the harm. When a case shows both **“Acts above others, and turns angry or scornful when not treated as special”** and rules broken and people lied to or used, with no regret for the harm, the key’s answer is **“Breaks rules and uses people, and shows no regret for the harm”**.
+- The answer is: “Does the case show rules broken and people lied to and used, with no regret for the harm? Or does it show only acting above others, with anger or scorn when they are not treated as special?” Both can be charming, sure of themselves and scornful of others, and both leave people hurt. In **Grandiose narcissism** what drives the case is being treated as special: the person turns angry or scornful when it is not given. In **Antisocial personality** what drives it is gain: the person lies to people and uses them, and shows no regret for the harm. When a case shows both **“Acts above others, and turns angry or scornful when not treated as special”** and rules broken and people lied to or used, with no regret for the harm, the answer is **“Breaks rules and uses people, and shows no regret for the harm”**.
 - If you chose “When this person is not treated as special, which way does it go? Outward, at someone, with anger or scorn? Or inward, in hurt silence and a count of what they are owed?”: that question separates **Grandiose narcissism** and **Vulnerable narcissism**.
 - If you chose “When someone else is praised or chosen, does this person turn on them, and have people been lost over the years because of it? Or do people stay?”: that question separates **Grandiose narcissism** and **An ordinary personality**.
 - If you chose “When someone close seems about to leave, does this person run them down and let them go? Or hold on, attack, and hold on again?”: that question separates **Grandiose narcissism** and **Borderline personality**.
@@ -2131,12 +2131,12 @@ Shown to you, with the words that decide each answer marked:
 **Shown as soon as you answer**
 
 - If you are right: “Right: **One person’s reasoning.**” One person is giving her reason for a choice of her own: “I've put four years into this” and “I can't switch now”. The tutor only listens, and nothing is said about the tutor.
-- If you miss: “The answer is …”, the same reason, and then the line built from the key for the answer you chose.
-- Then, right or wrong: “This case leaves the part of the key you have been taught. The questions that follow this answer come in a part of the course you have not reached, so the case stops here.”
+- If you miss: “The answer is …”, the same reason, and then the line built from the answers’ own wording for the answer you chose.
+- Then, right or wrong: “The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.”
 
-#### Stage 3 of 5. The first answer is shown. Answer the rest, then give the name. From here on your route is marked as well as the name: a right name reached by a wrong answer on the way counts as a miss.
+#### Stage 3 of 5. The first answer is shown. Answer the rest, then give the name. From here on your answers on the way are marked as well as the name: a right name reached by a wrong answer counts as a miss.
 
-Each question is shown with all of its answers from the key, in the key’s order, and the names offered are the six this unit teaches.
+Each question is shown with all of its answers, in order, and the names offered are the six this unit teaches.
 
 **Drill item 26 of 51**
 
@@ -2153,10 +2153,10 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Grandiose narcissism**: Clive does not run anyone down or turn scornful. He stops speaking, and he keeps count.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - If you chose **Acts above others, and turns angry or scornful when not treated as special**: Clive does not run anyone down or turn scornful. He stops speaking, and he keeps count.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Grandiose narcissism**, the look-alike card’s lines follow: Both rest on a sense of worth that depends on being treated as special, and in both there is little room for what other people feel. **Grandiose narcissism** defends that sense of worth outward, with anger and scorn at whoever fails to treat the person as special. **Vulnerable narcissism** defends it inward, with hurt withdrawal and quiet resentment. When this person is not treated as special, which way does it go? Outward, at someone, with anger or scorn? Or inward, in hurt silence and a count of what they are owed?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Feeling overlooked and owed more for years, and hurt when not treated so” (one tap opens the card).
 
 **Drill item 27 of 51**
@@ -2174,10 +2174,10 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Vulnerable narcissism**: Pilar’s worry can look like a person who is hurt and withdraws. But she keeps no count of what she is owed, nobody is cut off, and nothing has been lost.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - If you chose **Feels overlooked and owed more, and turns hurt and resentful when not treated as special**: Pilar’s worry can look like a person who is hurt and withdraws. But she keeps no count of what she is owed, nobody is cut off, and nothing has been lost.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Vulnerable narcissism**, the look-alike card’s lines follow: Both can be quiet, keep to themselves and go silent at times, in the same way in every place. In **Vulnerable narcissism** the silence comes with a count of what the person is owed, it follows someone else’s praise or promotion, and it keeps costing. In **An ordinary personality** the quietness is only how the person is, and people stay. Is the silence a count of what is owed, going cold on someone who was thanked, with people lost to it? Or is the person simply quiet, and still on good terms with the people around them?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A way of being that stays the same, and does not keep doing harm” (one tap opens the card).
 
 **Drill item 28 of 51**
@@ -2195,10 +2195,10 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Histrionic personality**: Kevin’s display is aimed at one person who is going, and it turns into an attack on her. It is not put on for an audience.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - If you chose **Keeps the attention on themselves, with bigger displays when it moves away**: Kevin’s display is aimed at one person who is going, and it turns into an attack on her. It is not put on for an audience.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Histrionic personality**, the look-alike card’s lines follow: Both have big, quick feelings that other people notice first, and both have lost friends to them. In **Borderline personality** the big feelings are about one person who seems to be leaving: the person holds on to them and turns on them. In **Histrionic personality** the big displays are for whoever is watching, and they get bigger when attention goes to someone else. Who is the display for: one particular person who seems to be leaving, or whoever is in the room? And does it turn into an attack on that one person?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Clinging to people, and turning on them when they seem to be leaving” (one tap opens the card).
 
 **Drill item 29 of 51**
@@ -2216,15 +2216,15 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Borderline personality**: Doreen’s display is for the whole congregation. There is no one person she holds on to, and she attacks nobody.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - If you chose **Clings to people, and turns on them when they seem to be leaving**: Doreen’s display is for the whole congregation. There is no one person she holds on to, and she attacks nobody.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Borderline personality**, the look-alike card’s lines follow: Both have big, quick feelings that other people notice first, and both have lost friends to them. In **Borderline personality** the big feelings are about one person who seems to be leaving: the person holds on to them and turns on them. In **Histrionic personality** the big displays are for whoever is watching, and they get bigger when attention goes to someone else. Who is the display for: one particular person who seems to be leaving, or whoever is in the room? And does it turn into an attack on that one person?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Always at the centre of attention, with bigger displays when it moves away” (one tap opens the card).
 
-#### Stage 4 of 5. No help. Answer every question in the key’s order, then give the name.
+#### Stage 4 of 5. No help. Answer every question in order, then give the name.
 
-Each question is shown with all of its answers from the key, in the key’s order, and the names offered are the six this unit teaches.
+Each question is shown with all of its answers, in order, and the names offered are the six this unit teaches.
 
 **Drill item 30 of 51**
 
@@ -2239,10 +2239,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **A lasting way someone is.** The case follows one person through years, several workplaces and a family: “has run three departments in a council” and “his two grown sons never ring him”.
   - If you chose **Stays the same way for years, and it does not keep doing harm**: A confident, certain manager can be **An ordinary personality**. But Maurice turns scornful when he is corrected, and people keep leaving.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **An ordinary personality**, the look-alike card’s lines follow: Both can be loud, sure of themselves and bossy, in the same way for years and in every place. In **Grandiose narcissism** the way of being turns scornful when someone else is praised or chosen, and it keeps costing: people resign, leave and keep away. In **An ordinary personality** the same loudness and certainty sits beside people who stay. When someone else is praised or chosen, does this person turn on them, and have people been lost over the years because of it? Or do people stay?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Acting above others for years, and angry when not treated so” (one tap opens the card).
 
 **Drill item 31 of 51**
@@ -2258,10 +2258,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **A lasting way someone is.** The case covers twenty years and three choirs: “has sung in a church choir for twenty years” and “She has left two choirs in the same way”.
   - If you chose **Acts above others, and turns angry or scornful when not treated as special**: Beatrix does not run the younger singer down or turn scornful. She stops speaking, and she keeps a list.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Grandiose narcissism**, the look-alike card’s lines follow: Both rest on a sense of worth that depends on being treated as special, and in both there is little room for what other people feel. **Grandiose narcissism** defends that sense of worth outward, with anger and scorn at whoever fails to treat the person as special. **Vulnerable narcissism** defends it inward, with hurt withdrawal and quiet resentment. When this person is not treated as special, which way does it go? Outward, at someone, with anger or scorn? Or inward, in hurt silence and a count of what they are owed?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Feeling overlooked and owed more for years, and hurt when not treated so” (one tap opens the card).
 
 **Drill item 32 of 51**
@@ -2277,10 +2277,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **A lasting way someone is.** The case covers many years and every close relationship: “Since her teens each close relationship has followed the same course”.
   - If you chose **Feels overlooked and owed more, and turns hurt and resentful when not treated as special**: Lucia does not pull away and keep count. She holds on, attacks, and begs.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Vulnerable narcissism**, the look-alike card’s lines follow: Both are hurt when someone close lets them down, and in both it has cost friendships over years. In **Vulnerable narcissism** the person pulls away and resents, and does not reach for the other person. In **Borderline personality** the person reaches for them hard when they seem to be leaving, attacks them, and reaches for them again. When someone close lets this person down, do they pull away and keep count? Or do they cling, attack and then apologise?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Clinging to people, and turning on them when they seem to be leaving” (one tap opens the card).
 
 **Drill item 33 of 51**
@@ -2296,10 +2296,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **A lasting way someone is.** The case covers four workplaces and many colleagues: “has been the entertainer of every showroom he has worked in” and “He has done it in four showrooms”.
   - If you chose **Acts above others, and turns angry or scornful when not treated as special**: Raymond does not run the colleague down. He takes the attention back with a bigger display.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Grandiose narcissism**, the look-alike card’s lines follow: Both want the room’s attention, and both take it over in every group. In **Grandiose narcissism** the person wants to be treated as better than others, and runs down whoever else is praised. In **Histrionic personality** the person wants any attention at all, and answers attention going elsewhere with a bigger display, not with scorn. When attention goes to someone else, does this person run that person down? Or put on a bigger display themselves?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Always at the centre of attention, with bigger displays when it moves away” (one tap opens the card).
 
 **Drill item 34 of 51**
@@ -2315,10 +2315,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **A lasting way someone is.** The case covers seventeen years and three firms: “At twenty-three” and “she has done the same in three firms”.
   - If you chose **Acts above others, and turns angry or scornful when not treated as special**: Nothing in the case shows Tessa needing to be treated as special, or turning scornful when she is not. What drives it is the commission.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Grandiose narcissism**, the look-alike card’s lines follow: Both can be charming, sure of themselves and scornful of others, and both leave people hurt. In **Grandiose narcissism** what drives the case is being treated as special: the person turns angry or scornful when it is not given. In **Antisocial personality** what drives it is gain: the person lies to people and uses them, and shows no regret for the harm. Does the case show rules broken and people lied to and used, with no regret for the harm? Or does it show only acting above others, with anger or scorn when they are not treated as special?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Breaking rules and using people, with no regret” (one tap opens the card).
 
 **Drill item 35 of 51**
@@ -2334,10 +2334,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **A lasting way someone is.** The case covers forty years and several places and groups of people: “in every pub, club and street he has lived on” and “Forty years of neighbours”.
   - If you chose **Keeps the attention on themselves, with bigger displays when it moves away**: He is the centre of every group, which **Histrionic personality** can be too. But nothing gets bigger when attention goes elsewhere, and nothing has been lost.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Histrionic personality**, the look-alike card’s lines follow: Both can be dramatic in everything, in every place, for years. In **Histrionic personality** the displays get bigger when attention goes elsewhere, and people have been worn out and have drifted away. In **An ordinary personality** the drama is only how the person is, and friends and neighbours stay. When attention goes to someone else, does the display get bigger? And has it cost the person friends, jobs or places over the years?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A way of being that stays the same, and does not keep doing harm” (one tap opens the card).
 
 **Drill item 36 of 51**
@@ -2353,10 +2353,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **A lasting way someone is.** The case covers three businesses and years of managers: “She has done this in each of her three businesses”.
   - If you chose **Breaks rules and uses people, and shows no regret for the harm**: Wendy breaks no rule and uses no one for money she is not owed. What drives the case is her need to be above the people who work for her.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Antisocial personality**, the look-alike card’s lines follow: Both can be charming, sure of themselves and scornful of others, and both leave people hurt. In **Grandiose narcissism** what drives the case is being treated as special: the person turns angry or scornful when it is not given. In **Antisocial personality** what drives it is gain: the person lies to people and uses them, and shows no regret for the harm. Does the case show rules broken and people lied to and used, with no regret for the harm? Or does it show only acting above others, with anger or scorn when they are not treated as special?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Acting above others for years, and angry when not treated so” (one tap opens the card).
 
 **Drill item 37 of 51**
@@ -2372,10 +2372,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **A lasting way someone is.** The case covers seventeen years, several towns and a family: “At nineteen” and “under four names in three towns”.
   - If you chose **Acts above others, and turns angry or scornful when not treated as special**: Floyd does not need to be treated as special and does not turn scornful when he is not. What drives it is taking the money.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Grandiose narcissism**, the look-alike card’s lines follow: Both can be charming, sure of themselves and scornful of others, and both leave people hurt. In **Grandiose narcissism** what drives the case is being treated as special: the person turns angry or scornful when it is not given. In **Antisocial personality** what drives it is gain: the person lies to people and uses them, and shows no regret for the harm. Does the case show rules broken and people lied to and used, with no regret for the harm? Or does it show only acting above others, with anger or scorn when they are not treated as special?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Breaking rules and using people, with no regret” (one tap opens the card).
 
 **Drill item 38 of 51**
@@ -2391,10 +2391,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **A lasting way someone is.** The case covers a whole life and many relationships: “has been blunt all her life” and “her oldest friend of fifty-eight years”.
   - If you chose **Acts above others, and turns angry or scornful when not treated as special**: Hattie says hard things, and so does **Grandiose narcissism**. But she does not turn scornful when someone else is praised, and nobody has been driven away.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Grandiose narcissism**, the look-alike card’s lines follow: Both can be loud, sure of themselves and bossy, in the same way for years and in every place. In **Grandiose narcissism** the way of being turns scornful when someone else is praised or chosen, and it keeps costing: people resign, leave and keep away. In **An ordinary personality** the same loudness and certainty sits beside people who stay. When someone else is praised or chosen, does this person turn on them, and have people been lost over the years because of it? Or do people stay?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A way of being that stays the same, and does not keep doing harm” (one tap opens the card).
 
 **Drill item 39 of 51**
@@ -2410,10 +2410,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **A lasting way someone is.** The case covers years and many occasions with many people: “She was the same at her hen night and at three of her friends' weddings”.
   - If you chose **Stays the same way for years, and it does not keep doing harm**: A dramatic person can be **An ordinary personality**. But Colette’s display grows when attention goes elsewhere, and four friends have drawn back.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **An ordinary personality**, the look-alike card’s lines follow: Both can be dramatic in everything, in every place, for years. In **Histrionic personality** the displays get bigger when attention goes elsewhere, and people have been worn out and have drifted away. In **An ordinary personality** the drama is only how the person is, and friends and neighbours stay. When attention goes to someone else, does the display get bigger? And has it cost the person friends, jobs or places over the years?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Always at the centre of attention, with bigger displays when it moves away” (one tap opens the card).
 
 **Drill item 40 of 51**
@@ -2429,10 +2429,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **A lasting way someone is.** The case covers thirty years and a whole family: “For thirty years” and “both his sons have gone to other cities”.
   - If you chose **Clings to people, and turns on them when they seem to be leaving**: Rhys does not reach for anyone or swing between adoring and attacking. He pulls away and resents.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Borderline personality**, the look-alike card’s lines follow: Both are hurt when someone close lets them down, and in both it has cost friendships over years. In **Vulnerable narcissism** the person pulls away and resents, and does not reach for the other person. In **Borderline personality** the person reaches for them hard when they seem to be leaving, attacks them, and reaches for them again. When someone close lets this person down, do they pull away and keep count? Or do they cling, attack and then apologise?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Feeling overlooked and owed more for years, and hurt when not treated so” (one tap opens the card).
 
 **Drill item 41 of 51**
@@ -2448,10 +2448,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **A lasting way someone is.** The case covers many years, colleagues and partners: “She has done this with five colleagues and four partners”.
   - If you chose **Feels overlooked and owed more, and turns hurt and resentful when not treated as special**: Maeve does not pull away and keep count. She reaches for her colleague, attacks her, and reaches for her again.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Vulnerable narcissism**, the look-alike card’s lines follow: Both are hurt when someone close lets them down, and in both it has cost friendships over years. In **Vulnerable narcissism** the person pulls away and resents, and does not reach for the other person. In **Borderline personality** the person reaches for them hard when they seem to be leaving, attacks them, and reaches for them again. When someone close lets this person down, do they pull away and keep count? Or do they cling, attack and then apologise?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Clinging to people, and turning on them when they seem to be leaving” (one tap opens the card).
 
 **Drill item 42 of 51**
@@ -2467,11 +2467,11 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **A lasting way someone is.** The case covers thirty years, a firm and a family: “in thirty years he has never missed asking about her day” and “His juniors stay for ten years or more”.
   - If you chose **Acts above others, and turns angry or scornful when not treated as special**: The corner room, the head of the table and the story of the firm all look like Dennis. But Ioan does not turn scornful when someone else is praised, and nothing is being lost.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Grandiose narcissism**, the look-alike card’s lines follow: Both can be loud, sure of themselves and bossy, in the same way for years and in every place. In **Grandiose narcissism** the way of being turns scornful when someone else is praised or chosen, and it keeps costing: people resign, leave and keep away. In **An ordinary personality** the same loudness and certainty sits beside people who stay. When someone else is praised or chosen, does this person turn on them, and have people been lost over the years because of it? Or do people stay?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *The law partner*, which was **Grandiose narcissism**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *The law partner*, which was **Grandiose narcissism**. When a likeness and the answers disagree, go by the words that answer the question.
 - Taught on: “A way of being that stays the same, and does not keep doing harm” (one tap opens the card).
 
 **Drill item 43 of 51**
@@ -2487,10 +2487,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **A lasting way someone is.** The case covers four schools and years of deputies: “In four schools”.
   - If you chose **Stays the same way for years, and it does not keep doing harm**: Priya is charming and well liked, which **An ordinary personality** can be. But she runs down anyone who is praised, and people keep leaving.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **An ordinary personality**, the look-alike card’s lines follow: Both can be loud, sure of themselves and bossy, in the same way for years and in every place. In **Grandiose narcissism** the way of being turns scornful when someone else is praised or chosen, and it keeps costing: people resign, leave and keep away. In **An ordinary personality** the same loudness and certainty sits beside people who stay. When someone else is praised or chosen, does this person turn on them, and have people been lost over the years because of it? Or do people stay?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Acting above others for years, and angry when not treated so” (one tap opens the card).
 
 **Drill item 44 of 51**
@@ -2506,11 +2506,11 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **A lasting way someone is.** The case covers four firms and a marriage of many years: “at all four firms he has worked for” and “a speech in 1998”.
   - If you chose **Acts above others, and turns angry or scornful when not treated as special**: Quentin is not scornful. He laughs it off in public, and the hurt comes out as years of silence and a quiet tally.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Grandiose narcissism**, the look-alike card’s lines follow: Both rest on a sense of worth that depends on being treated as special, and in both there is little room for what other people feel. **Grandiose narcissism** defends that sense of worth outward, with anger and scorn at whoever fails to treat the person as special. **Vulnerable narcissism** defends it inward, with hurt withdrawal and quiet resentment. When this person is not treated as special, which way does it go? Outward, at someone, with anger or scorn? Or inward, in hurt silence and a count of what they are owed?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *The guest who is always at the centre*, which was **Histrionic personality**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *The guest who is always at the centre*, which was **Histrionic personality**. When a likeness and the answers disagree, go by the words that answer the question.
 - Taught on: “Feeling overlooked and owed more for years, and hurt when not treated so” (one tap opens the card).
 
 **Drill item 45 of 51**
@@ -2526,11 +2526,11 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **A lasting way someone is.** The case covers years and every close friend: “with every friend since university”.
   - If you chose **Feels overlooked and owed more, and turns hurt and resentful when not treated as special**: Odile is quiet, like Ellis. But she does not pull away and keep count: she holds on, and she goes after the friend.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Vulnerable narcissism**, the look-alike card’s lines follow: Both are hurt when someone close lets them down, and in both it has cost friendships over years. In **Vulnerable narcissism** the person pulls away and resents, and does not reach for the other person. In **Borderline personality** the person reaches for them hard when they seem to be leaving, attacks them, and reaches for them again. When someone close lets this person down, do they pull away and keep count? Or do they cling, attack and then apologise?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *The clerk*, which was **Vulnerable narcissism**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *The clerk*, which was **Vulnerable narcissism**. When a likeness and the answers disagree, go by the words that answer the question.
 - Taught on: “Clinging to people, and turning on them when they seem to be leaving” (one tap opens the card).
 
 **Drill item 46 of 51**
@@ -2549,8 +2549,8 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - If you are right: “Right: **Something one person does to another.**” One person is saying something to another, about her and about what has passed between them: “he tells her it never happened and that her memory is going”. The case also shows where it leaves Zoe: writing conversations down to check herself.
-- If you miss: “The answer is …”, the same reason, and then the line built from the key for the answer you chose.
-- Then, right or wrong: “This case leaves the part of the key you have been taught. The questions that follow this answer come in a part of the course you have not reached, so the case stops here.”
+- If you miss: “The answer is …”, the same reason, and then the line built from the answers’ own wording for the answer you chose.
+- Then, right or wrong: “The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.”
 
 #### Last stage. Each of these is something a person might say that uses one of this unit’s names, or reasons in one of its ways. Each has a fault. The first is worked for you. For the rest, answer before the fault is shown.
 
@@ -2609,7 +2609,7 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - The answer is: **Stays the same way for years, and it does not keep doing harm.**
-- If you chose another answer, the line is built from the key, as for any other question.
+- If you chose another answer, the line is built from the answers’ own wording, as for any other question.
 - The fault: Everything the claim gives is a way of being: blunt, loud, fifty years, every job. It gives no cost at all, and every name here but one needs a cost. What the claim describes is one steady way of being, with nothing in it that keeps costing anyone.
 - The claim, put right (always the last thing shown): She is blunt and loud, and she has been for fifty years in every job. That is a way of being. It would point to one of the five names that need a cost only if the case showed her way of being costing her, or the people around her, again and again.
 
@@ -2670,20 +2670,20 @@ Each question is shown with all of its answers from the key, in the key’s orde
 
 - The answer is: **Years, more than one place and relationship, rules broken and people lied to or used for the person’s own ends, no regret shown for the harm, and people hurt by it.**
 - If you chose another line: “That is what you must be able to point to for «the name it belongs to», which is not the name the claim uses.”
-- The fault: The claim points at one lie. One lie, even a bad one, is not rules broken and people used for years, in more than one place, with no regret. It shows nothing about regret at all. And the everyday word in the claim is not a name the key uses for a person. A lasting way of being that keeps costing is what the word *personality disorder* stands for, and one lie is not that.
+- The fault: The claim points at one lie. One lie, even a bad one, is not rules broken and people used for years, in more than one place, with no regret. It shows nothing about regret at all. And the everyday word in the claim is not a name used here for a person. A lasting way of being that keeps costing is what the word *personality disorder* stands for, and one lie is not that.
 - The claim, put right (always the last thing shown): He told his boss he was ill when he was not. That is one lie, and a lie is not a pattern. It would be **Antisocial personality** only if the case showed rules broken and people used for years, no regret, and people hurt.
 
-**When the drill ends.** The learner sees their own results: first-try accuracy for each stage, whole routes beside single questions, the pair of names they mixed up most often, and what will come back and when. Anything missed was asked again before the drill ended. Nothing here is graded. A miss only decides what comes back.
+**When the drill ends.** The learner sees their own results: first-try accuracy for each stage, whole cases beside single questions, the pair of names they mixed up most often, and what will come back and when. Anything missed was asked again before the drill ended. Nothing here is graded. A miss only decides what comes back.
 
 ### 45. What to carry away
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 45 of 46*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 45 of 46*
 
 [reviewers only: card kind `recap`, id `recap-pat`]
 
-You have now run the key on your own. This card puts the unit in one place, in the key’s words.
+You have now gone from the first question to the name on your own. This card puts the unit in one place.
 
-**The key for this unit, in its own words**
+**This unit’s questions and answers**
 
 What does the person do, again and again, across those years?
 - Acts above others, and turns angry or scornful when not treated as special → Grandiose narcissism
@@ -2706,19 +2706,19 @@ What does the person do, again and again, across those years?
 - **Antisocial personality**: years, more than one place and relationship, rules broken and people lied to or used for the person’s own ends, no regret shown for the harm, and people hurt by it.
   - Ask: "Have I seen this person break rules and lie to people again and again, and show no regret for the harm to the ones who lost out?"
 - **An ordinary personality**: years, more than one place and relationship, the same way of being in all of them (confident, shy, dramatic, blunt, touchy), and no repeated cost to the person or to the people around them.
-  - Ask: "What has this way of being cost, again and again, and who has paid?" If the honest answer is "very little, and it was put right", the key’s answer is this one.
+  - Ask: "What has this way of being cost, again and again, and who has paid?" If the honest answer is "very little, and it was put right", the answer is this one.
 
 **To carry away**
 
-- Before any name, count: years, more than one place, more than one relationship. If a case shows a week, or one other person, the key’s first question sends you somewhere else.
+- Before any name, count: years, more than one place, more than one relationship. If a case shows a week, or one other person, the first question sends you somewhere else.
 - Then ask what the person does, again and again, and point to the words. Before any of the first five names, point to the cost. If you cannot, the answer is **An ordinary personality**, and it is the right answer for most of the people anyone describes.
 - The two narcissisms are one family. Both come from a sense of worth that depends on being treated as special. Defended outward, it is anger and scorn. Defended inward, it is hurt and resentment. A loud person and a quiet one can belong to the same family.
-- When a case shows both the scorn of **Grandiose narcissism** and everything that **Antisocial personality** needs, the key’s answer is **“Breaks rules and uses people, and shows no regret for the harm”**.
-- Five of the six names are for a *personality disorder*, as the key uses the word. The sixth is the answer when there is no repeated cost. These names describe what a case shows. They are not a diagnosis of a person, and only a professional can diagnose, after a long assessment. "She said something cruel and then cried" is a sentence about a moment, and it is not a case.
+- When a case shows both the scorn of **Grandiose narcissism** and everything that **Antisocial personality** needs, the answer is **“Breaks rules and uses people, and shows no regret for the harm”**.
+- Five of the six names are for a *personality disorder*, as the word is used here. The sixth is the answer when there is no repeated cost. These names describe what a case shows. They are not a diagnosis of a person, and only a professional can diagnose, after a long assessment. "She said something cruel and then cried" is a sentence about a moment, and it is not a case.
 
 ### 46. Where would you meet this?
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 46 of 46*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 46 of 46*
 
 [reviewers only: card kind `transfer`, id `transfer-pat`]
 
@@ -2747,7 +2747,7 @@ One line is enough. It is kept on this device only and is never marked.
 
 ## After the unit: what comes back on later days
 
-A name that is due returns as a case the learner has not seen, next to a case of the name they most often confuse it with. Each is run as a whole route. These are the fresh cases held back for that purpose: three for each name, one for each scheduled return. The first return is about two days after the drill, the next about a week after that, the next about three and a half weeks later.
+A name that is due returns as a case the learner has not seen, next to a case of the name they most often confuse it with. Each is run as a whole case: every question, then the name. These are the fresh cases held back for that purpose: three for each name, one for each scheduled return. The first return is about two days after the drill, the next about a week after that, the next about three and a half weeks later.
 
 **Return case 1 of 18**
 
@@ -2762,10 +2762,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **A lasting way someone is.** The case follows one person through twenty years, a department and former colleagues: “has headed his department for twenty years” and “two former colleagues will not share a conference platform with him”.
   - If you chose **Stays the same way for years, and it does not keep doing harm**: A learned, confident professor can be **An ordinary personality**. But this one turns scornful when a student does well, and eleven students have gone.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **An ordinary personality**, the look-alike card’s lines follow: Both can be loud, sure of themselves and bossy, in the same way for years and in every place. In **Grandiose narcissism** the way of being turns scornful when someone else is praised or chosen, and it keeps costing: people resign, leave and keep away. In **An ordinary personality** the same loudness and certainty sits beside people who stay. When someone else is praised or chosen, does this person turn on them, and have people been lost over the years because of it? Or do people stay?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Acting above others for years, and angry when not treated so” (one tap opens the card).
 
 **Return case 2 of 18**
@@ -2781,10 +2781,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **A lasting way someone is.** The case covers eighteen years and four groups of residents: “has chaired the parish council for eighteen years” and “three earlier residents' groups”.
   - If you chose **Feels overlooked and owed more, and turns hurt and resentful when not treated as special**: She does not go quiet and hurt. She attacks the organiser, in public, in print.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Vulnerable narcissism**, the look-alike card’s lines follow: Both rest on a sense of worth that depends on being treated as special, and in both there is little room for what other people feel. **Grandiose narcissism** defends that sense of worth outward, with anger and scorn at whoever fails to treat the person as special. **Vulnerable narcissism** defends it inward, with hurt withdrawal and quiet resentment. When this person is not treated as special, which way does it go? Outward, at someone, with anger or scorn? Or inward, in hurt silence and a count of what they are owed?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Acting above others for years, and angry when not treated so” (one tap opens the card).
 
 **Return case 3 of 18**
@@ -2800,10 +2800,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **A lasting way someone is.** The case covers thirty years, a firm and a family: “has run the family building firm for thirty years” and “his two sons have set up a rival firm”.
   - If you chose **Stays the same way for years, and it does not keep doing harm**: A strong-minded owner can be **An ordinary personality**. But Gordon turns scornful when someone else succeeds, and the people around him keep leaving.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **An ordinary personality**, the look-alike card’s lines follow: Both can be loud, sure of themselves and bossy, in the same way for years and in every place. In **Grandiose narcissism** the way of being turns scornful when someone else is praised or chosen, and it keeps costing: people resign, leave and keep away. In **An ordinary personality** the same loudness and certainty sits beside people who stay. When someone else is praised or chosen, does this person turn on them, and have people been lost over the years because of it? Or do people stay?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Acting above others for years, and angry when not treated so” (one tap opens the card).
 
 **Return case 4 of 18**
@@ -2819,10 +2819,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **A lasting way someone is.** The case covers thirty years and many family occasions: “At every family wedding for thirty years” and “He did the same when his cousin was thanked at a funeral”.
   - If you chose **Acts above others, and turns angry or scornful when not treated as special**: Alberto does not run his niece down or turn scornful. He leaves and says nothing.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Grandiose narcissism**, the look-alike card’s lines follow: Both rest on a sense of worth that depends on being treated as special, and in both there is little room for what other people feel. **Grandiose narcissism** defends that sense of worth outward, with anger and scorn at whoever fails to treat the person as special. **Vulnerable narcissism** defends it inward, with hurt withdrawal and quiet resentment. When this person is not treated as special, which way does it go? Outward, at someone, with anger or scorn? Or inward, in hurt silence and a count of what they are owed?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Feeling overlooked and owed more for years, and hurt when not treated so” (one tap opens the card).
 
 **Return case 5 of 18**
@@ -2838,10 +2838,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **A lasting way someone is.** The case covers three laboratories and many colleagues: “In three laboratories” and “with four junior researchers and two heads of department”.
   - If you chose **Clings to people, and turns on them when they seem to be leaving**: Priscilla does not reach for anyone, attack them and reach for them again. She withdraws and stays withdrawn.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Borderline personality**, the look-alike card’s lines follow: Both are hurt when someone close lets them down, and in both it has cost friendships over years. In **Vulnerable narcissism** the person pulls away and resents, and does not reach for the other person. In **Borderline personality** the person reaches for them hard when they seem to be leaving, attacks them, and reaches for them again. When someone close lets this person down, do they pull away and keep count? Or do they cling, attack and then apologise?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Feeling overlooked and owed more for years, and hurt when not treated so” (one tap opens the card).
 
 **Return case 6 of 18**
@@ -2857,10 +2857,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **A lasting way someone is.** The case covers fifteen years and two clubs: “for fifteen years” and “He left his previous club in the same way”.
   - If you chose **Stays the same way for years, and it does not keep doing harm**: Being quiet is ordinary. But Desmond says he is owed more, he withdraws when someone else is honoured, and it has cost him friends twice over.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **An ordinary personality**, the look-alike card’s lines follow: Both can be quiet, keep to themselves and go silent at times, in the same way in every place. In **Vulnerable narcissism** the silence comes with a count of what the person is owed, it follows someone else’s praise or promotion, and it keeps costing. In **An ordinary personality** the quietness is only how the person is, and people stay. Is the silence a count of what is owed, going cold on someone who was thanked, with people lost to it? Or is the person simply quiet, and still on good terms with the people around them?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Feeling overlooked and owed more for years, and hurt when not treated so” (one tap opens the card).
 
 **Return case 7 of 18**
@@ -2876,10 +2876,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **A lasting way someone is.** The case covers years and every supervisor he has had: “With each supervisor, since his first degree”.
   - If you chose **Feels overlooked and owed more, and turns hurt and resentful when not treated as special**: Ravi does not pull away and keep count. He goes after the supervisor who seems to be leaving.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Vulnerable narcissism**, the look-alike card’s lines follow: Both are hurt when someone close lets them down, and in both it has cost friendships over years. In **Vulnerable narcissism** the person pulls away and resents, and does not reach for the other person. In **Borderline personality** the person reaches for them hard when they seem to be leaving, attacks them, and reaches for them again. When someone close lets this person down, do they pull away and keep count? Or do they cling, attack and then apologise?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Clinging to people, and turning on them when they seem to be leaving” (one tap opens the card).
 
 **Return case 8 of 18**
@@ -2895,10 +2895,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **A lasting way someone is.** The case covers a sister, friends and five partners over years: “with each of her friends and with her last five partners”.
   - If you chose **Acts above others, and turns angry or scornful when not treated as special**: Naomi’s anger does not push her sister away. She tries to keep her, attacks her, and tries to keep her again.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Grandiose narcissism**, the look-alike card’s lines follow: Both can be furious when someone close seems about to leave, and both have lost partners and colleagues over the years. In **Grandiose narcissism** the anger is scorn from above: the person does not try to keep the other, and the other is not what matters. In **Borderline personality** the anger comes with desperate efforts to keep them, and swings back to pleading within hours. When someone close seems about to leave, does this person run them down and let them go? Or hold on, attack, and hold on again?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Clinging to people, and turning on them when they seem to be leaving” (one tap opens the card).
 
 **Return case 9 of 18**
@@ -2914,10 +2914,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **A lasting way someone is.** The case covers twenty years and six neighbours: “It has happened with six neighbours over twenty years”.
   - If you chose **Keeps the attention on themselves, with bigger displays when it moves away**: Colm’s display is aimed at one neighbour who seems to be going, and it turns into an attack on her. He is not performing for the street.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Histrionic personality**, the look-alike card’s lines follow: Both have big, quick feelings that other people notice first, and both have lost friends to them. In **Borderline personality** the big feelings are about one person who seems to be leaving: the person holds on to them and turns on them. In **Histrionic personality** the big displays are for whoever is watching, and they get bigger when attention goes to someone else. Who is the display for: one particular person who seems to be leaving, or whoever is in the room? And does it turn into an attack on that one person?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Clinging to people, and turning on them when they seem to be leaving” (one tap opens the card).
 
 **Return case 10 of 18**
@@ -2933,10 +2933,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **A lasting way someone is.** The case covers every class in three studios: “In every class she has taught, in three studios”.
   - If you chose **Acts above others, and turns angry or scornful when not treated as special**: Giulia does not run the student down. She turns the attention back to herself.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Grandiose narcissism**, the look-alike card’s lines follow: Both want the room’s attention, and both take it over in every group. In **Grandiose narcissism** the person wants to be treated as better than others, and runs down whoever else is praised. In **Histrionic personality** the person wants any attention at all, and answers attention going elsewhere with a bigger display, not with scorn. When attention goes to someone else, does this person run that person down? Or put on a bigger display themselves?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Always at the centre of attention, with bigger displays when it moves away” (one tap opens the card).
 
 **Return case 11 of 18**
@@ -2952,10 +2952,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **A lasting way someone is.** The case covers four committees over years: “He has done this on four committees”.
   - If you chose **Stays the same way for years, and it does not keep doing harm**: A talkative man with a gift for stories can be **An ordinary personality**. But Ferdinand’s displays grow when someone else is praised, and committees have voted him off.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **An ordinary personality**, the look-alike card’s lines follow: Both can be dramatic in everything, in every place, for years. In **Histrionic personality** the displays get bigger when attention goes elsewhere, and people have been worn out and have drifted away. In **An ordinary personality** the drama is only how the person is, and friends and neighbours stay. When attention goes to someone else, does the display get bigger? And has it cost the person friends, jobs or places over the years?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Always at the centre of attention, with bigger displays when it moves away” (one tap opens the card).
 
 **Return case 12 of 18**
@@ -2971,10 +2971,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **A lasting way someone is.** The case covers forty years of family occasions: “has been the star of every family occasion for forty years”.
   - If you chose **Clings to people, and turns on them when they seem to be leaving**: Louisa’s display is for the whole hall. She holds on to no one person and attacks nobody.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Borderline personality**, the look-alike card’s lines follow: Both have big, quick feelings that other people notice first, and both have lost friends to them. In **Borderline personality** the big feelings are about one person who seems to be leaving: the person holds on to them and turns on them. In **Histrionic personality** the big displays are for whoever is watching, and they get bigger when attention goes to someone else. Who is the display for: one particular person who seems to be leaving, or whoever is in the room? And does it turn into an attack on that one person?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Always at the centre of attention, with bigger displays when it moves away” (one tap opens the card).
 
 **Return case 13 of 18**
@@ -2990,10 +2990,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **A lasting way someone is.** The case covers two decades and several places: “in two towns” and “at twenty-two for the same thing in another county”.
   - If you chose **Acts above others, and turns angry or scornful when not treated as special**: Nothing in the case shows Barry needing to be treated as special, or turning scornful when he is not. What drives it is the money.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Grandiose narcissism**, the look-alike card’s lines follow: Both can be charming, sure of themselves and scornful of others, and both leave people hurt. In **Grandiose narcissism** what drives the case is being treated as special: the person turns angry or scornful when it is not given. In **Antisocial personality** what drives it is gain: the person lies to people and uses them, and shows no regret for the harm. Does the case show rules broken and people lied to and used, with no regret for the harm? Or does it show only acting above others, with anger or scorn when they are not treated as special?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Breaking rules and using people, with no regret” (one tap opens the card).
 
 **Return case 14 of 18**
@@ -3009,10 +3009,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **A lasting way someone is.** The case covers nearly twenty years and several agencies: “At three agencies” and “At nineteen”.
   - If you chose **Stays the same way for years, and it does not keep doing harm**: This is not a rule bent a little and put right. People are lied to, used, and left to lose their money, and she shows no regret.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **An ordinary personality**, the look-alike card’s lines follow: Both can bend or break rules for years, in more than one place. In **Antisocial personality** people are lied to and used for the person’s own ends, they are hurt, and the person shows no regret. In **An ordinary personality** the rules that bend are small, nobody is badly hurt, and the person puts it right. When someone is hurt or upset by what this person did, do they show regret and put it right? Or do they blame the person who was hurt?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Breaking rules and using people, with no regret” (one tap opens the card).
 
 **Return case 15 of 18**
@@ -3028,10 +3028,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **A lasting way someone is.** The case covers three gyms and four company names: “has run three gyms” and “changed company names four times”.
   - If you chose **Acts above others, and turns angry or scornful when not treated as special**: Dominic does not need to be treated as special and does not turn scornful when he is not. What drives it is the money.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Grandiose narcissism**, the look-alike card’s lines follow: Both can be charming, sure of themselves and scornful of others, and both leave people hurt. In **Grandiose narcissism** what drives the case is being treated as special: the person turns angry or scornful when it is not given. In **Antisocial personality** what drives it is gain: the person lies to people and uses them, and shows no regret for the harm. Does the case show rules broken and people lied to and used, with no regret for the harm? Or does it show only acting above others, with anger or scorn when they are not treated as special?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Breaking rules and using people, with no regret” (one tap opens the card).
 
 **Return case 16 of 18**
@@ -3047,10 +3047,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **A lasting way someone is.** The case covers twenty-five years and three places where he is the same: “At the depot, at home and at the pub he is the same”.
   - If you chose **Acts above others, and turns angry or scornful when not treated as special**: He is gruff, which **Grandiose narcissism** can be too. But nobody is scorned, and nobody has left: his regulars wait for him.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Grandiose narcissism**, the look-alike card’s lines follow: Both can be loud, sure of themselves and bossy, in the same way for years and in every place. In **Grandiose narcissism** the way of being turns scornful when someone else is praised or chosen, and it keeps costing: people resign, leave and keep away. In **An ordinary personality** the same loudness and certainty sits beside people who stay. When someone else is praised or chosen, does this person turn on them, and have people been lost over the years because of it? Or do people stay?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A way of being that stays the same, and does not keep doing harm” (one tap opens the card).
 
 **Return case 17 of 18**
@@ -3066,10 +3066,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **A lasting way someone is.** The case covers a whole childhood and adulthood, and several places and people: “has been shy since primary school” and “the same two friends from school”.
   - If you chose **Feels overlooked and owed more, and turns hurt and resentful when not treated as special**: Avoiding people and eating alone can look like withdrawal. But Zofia makes no claim to be owed anything, keeps no count, and has lost nobody.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Vulnerable narcissism**, the look-alike card’s lines follow: Both can be quiet, keep to themselves and go silent at times, in the same way in every place. In **Vulnerable narcissism** the silence comes with a count of what the person is owed, it follows someone else’s praise or promotion, and it keeps costing. In **An ordinary personality** the quietness is only how the person is, and people stay. Is the silence a count of what is owed, going cold on someone who was thanked, with people lost to it? Or is the person simply quiet, and still on good terms with the people around them?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A way of being that stays the same, and does not keep doing harm” (one tap opens the card).
 
 **Return case 18 of 18**
@@ -3085,9 +3085,9 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **A lasting way someone is.** The case covers forty years and one club full of people: “in forty years” and “the club's treasurer for twenty years”.
   - If you chose **Feels overlooked and owed more, and turns hurt and resentful when not treated as special**: The sulk can look like hurt withdrawal. But it passes by the next morning, he keeps no count of what he is owed, and he has lost nobody.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Vulnerable narcissism**, the look-alike card’s lines follow: Both can be quiet, keep to themselves and go silent at times, in the same way in every place. In **Vulnerable narcissism** the silence comes with a count of what the person is owed, it follows someone else’s praise or promotion, and it keeps costing. In **An ordinary personality** the quietness is only how the person is, and people stay. Is the silence a count of what is owed, going cold on someone who was thanked, with people lost to it? Or is the person simply quiet, and still on good terms with the people around them?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A way of being that stays the same, and does not keep doing harm” (one tap opens the card).
 

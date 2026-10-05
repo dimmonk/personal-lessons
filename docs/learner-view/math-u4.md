@@ -1,15 +1,15 @@
 # Learner view: Basic Math, Unit Four: What an amount becomes over time, or how long it takes
 
-*Four kinds of problem about an amount that changes as time passes, and a procedure worked out step by step for each.* Unit revision 1, built to lesson standard 1, status: draft.
+*Four kinds of problem about an amount that changes as time passes, and a procedure worked out step by step for each.* Unit revision 2, built to lesson standard 1, status: draft.
 
 This file is generated from the data files by `tools/render-learner-view.mjs`. It shows every screen in the order a learner meets it. In the app one card is on screen at a time and the learner moves on when ready.
 
-- **Bold text in quotation marks** is the key’s own wording, printed from `key.js`. Bold names are the outcome names from the same file. Neither is typed anywhere else. "What you must be able to point to" lines and "How to tell them apart" lines are also printed from one place each (the key and the look-alike ledger).
+- **Bold text in quotation marks** is the subject’s own wording for its questions and answers, written once and printed everywhere. Bold names are the names, written once in the same place. Neither is typed anywhere else. "What you must be able to point to" lines and "How to tell them apart" lines are also printed from one place each (the subject’s questions and the pairs it compares).
 - ⟦Double brackets⟧ show the words the app marks in a case (one highlight style everywhere).
 - The line in italics under each heading is the app’s top bar. The line in square brackets after it is for reviewers and is not shown to the learner.
 - Headings, prompt wording and stage instructions that are the same in every unit are the app’s wording, not this unit’s.
 - "Shown as soon as you …" is what appears the moment the learner answers. Nothing is hidden behind a second tap the first time a case is met, or after a miss.
-- After every answer the app shows, in this order: the right answer in the key’s words; the reason, quoting the marked words; for a name, why the nearest wrong name fails; after a miss, a line about the answer the learner chose; and last a link to the card that taught it. Where a line about the learner’s own choice is not written for the case, the app builds it from the key, and this file says so in place of repeating it.
+- After every answer the app shows, in this order: the right answer; the reason, quoting the marked words; for a name, why the nearest wrong name fails; after a miss, a line about the answer the learner chose; and last a link to the card that taught it. Where a line about the learner’s own choice is not written for the case, the app builds it from the answers’ own wording, and this file says so in place of repeating it.
 
 ---
 
@@ -17,7 +17,7 @@ This file is generated from the data files by `tools/render-learner-view.mjs`. I
 
 ### 1. Four kinds of problem about an amount that changes, and a procedure for each
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 1 of 49*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 1 of 49*
 
 [reviewers only: card kind `orient`, id `orient-growth`]
 
@@ -25,13 +25,13 @@ After this unit you can take a problem about one amount that changes as time pas
 
 Picture a family opening the post on one afternoon, with four letters, and every one of them about an amount that changes as time passes. The gym writes: “Your fee is €30 a month, and it goes up by €2 every month: what will it be in six months?” The bank writes: “Your savings of €2,000 grow by 4% a year: what will you have in three years?” Later the bank writes again: “How many years until your savings reach €3,000?” And the bus company writes: “From 1 January the fare is €2.40, and it will stay at €2.40: what will it be in five years?”
 
-The key’s first question, which Unit One taught, gives the same answer to all four: **“What an amount becomes over time, or how long it takes”**. But they are four different problems. In the first, the amount goes up by the same number every month. In the second and the third, it grows by the same share of itself every year, and the second asks for the amount while the third asks how long it takes. In the fourth, it changed one time and has stayed. Each kind has its own procedure, and a procedure for the wrong one still gives a number, with nothing in the number to say that it is wrong. The first few answers of an amount that goes up by €50 a year and one that goes up by 5% a year are nearly the same, and later they are far apart. So in this unit the order is always the same: first work out how the amount changes and what the problem asks, and only then solve it.
+The first question, which Unit One taught, gives the same answer to all four: **“What an amount becomes over time, or how long it takes”**. But they are four different problems. In the first, the amount goes up by the same number every month. In the second and the third, it grows by the same share of itself every year, and the second asks for the amount while the third asks how long it takes. In the fourth, it changed one time and has stayed. Each kind has its own procedure, and a procedure for the wrong one still gives a number, with nothing in the number to say that it is wrong. The first few answers of an amount that goes up by €50 a year and one that goes up by 5% a year are nearly the same, and later they are far apart. So in this unit the order is always the same: first work out how the amount changes and what the problem asks, and only then solve it.
 
 The words from Unit Two carry on. A procedure is the fixed set of steps that solves one kind of problem, and it gives the right answer whatever the numbers are. The working is the procedure carried out on one problem, with every number written down, and a step is one stage of the working, named by what it is for. A calculator may do the arithmetic. What this unit practises is which steps to take, and why.
 
-In this unit the key asks two questions after its first, and they cross. The first is about how the amount changes: by the same number, by the same share, or one time only. The second is about what the problem wants: the amount at a given time, or the time to reach a target. Each kind is taught with a problem of the kind and the idea behind its procedure. Then come two worked problems, in different parts of life, with every step computed and the reason for each step given; in each, one reason is held back until you have chosen it. Then come problems you finish yourself. When the four kinds have been taught, each of the two questions gets its own card, and then the drill mixes all four.
+In this unit two questions come after the first, and they cross. The first is about how the amount changes: by the same number, by the same share, or one time only. The second is about what the problem wants: the amount at a given time, or the time to reach a target. Each kind is taught with a problem of the kind and the idea behind its procedure. Then come two worked problems, in different parts of life, with every step computed and the reason for each step given; in each, one reason is held back until you have chosen it. Then come problems you finish yourself. When the four kinds have been taught, each of the two questions gets its own card, and then the drill mixes all four.
 
-**What Unit One taught, in one place.** The key’s first question is **“What does the problem ask you to work out?”** Its answers:
+**What Unit One taught, in one place.** The first question is **“What does the problem ask you to work out?”** Its answers:
 
 - **“How whole numbers split, repeat or are made up”**: give this answer when the problem is about whole numbers and asks whether they split into equal groups with nothing left over, what is left over, what a number is made of, when two things that repeat happen together, where a count ends on a loop such as the days of a week, or whether a number can be written exactly.
 - **“A missing number, from a formula, a rate or totals”**: give this answer when the problem leaves out one number, or two, and gives a formula, a rate such as so much for each thing, or totals that the missing number must fit.
@@ -39,11 +39,11 @@ In this unit the key asks two questions after its first, and they cross. The fir
 - **“How many ways something can turn out, or how likely it is”**: give this answer when the problem asks how many different ways something can be chosen or ordered, or how likely it is that at least one of several things happens, or that a test result is right.
 - **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”**: give this answer when the problem has a right-angled triangle, or two things of exactly the same shape at different sizes, and asks for a length, an area or a volume, or for how many times more area or volume one has than the other.
 
-Unit One also taught that two things are marked separately: the name you give a case, and your route to it, meaning the answers you gave to the key’s questions on the way.
+Two things are marked separately: the name you give a case, and your answers to the questions on the way to it.
 
 *(One tap on any of these lines opens the card in Unit One that taught it.)*
 
-**The part of the key this unit teaches.** This is a preview. You are not expected to follow it yet: every line is explained on the cards that come next. The question and its answers are in the key’s own words. Beside each answer, in plain words, is the thing it leads to. There are four of them, and each gets its name when it is taught.
+**The questions this unit teaches.** This is a preview. You are not expected to follow it yet: every line is explained on the cards that come next. The question and its answers are worded exactly as you will meet them. Beside each answer, in plain words, is the thing it leads to. There are four of them, and each gets its name when it is taught.
 
 What happens to the amount each time it changes?
 - It goes up or down by the same number each time → change by the same number added or taken away
@@ -73,7 +73,7 @@ Each name is taught through cases first. After every step you answer one questio
 
 ### 2. Change by the same number added or taken away
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 2 of 49*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 2 of 49*
 
 [reviewers only: card kind `meet`, id `meet-lin`]
 
@@ -98,11 +98,11 @@ Notice what decides the kind. It is not that the numbers are small, or that the 
 
 **What you must be able to point to.** One amount that goes up or down by the same number each hour, day, month or year, and a question about what it will be after a given time or how long until it reaches a target. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What happens to the amount each time it changes?”**
+**The question:** **“What happens to the amount each time it changes?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“It goes up or down by the same number each time”**
+**Its answer for a case like this one:** **“It goes up or down by the same number each time”**
 
-**The key also asks, and this is its answer for a case like this one:** **“Does the problem ask what the amount will be, or how long until it reaches a target?”** **“What the amount will be after a given time”** or **“How long until the amount reaches a target”**
+**There is also this question, and its answer for a case like this one:** **“Does the problem ask what the amount will be, or how long until it reaches a target?”** **“What the amount will be after a given time”** or **“How long until the amount reaches a target”**
 
 A problem like this is **Linear growth**. The word “linear” means “along a line”: if you marked the jar’s amount week by week on a chart, the points would sit on a straight line, because each week climbs by the same €3.
 
@@ -110,7 +110,7 @@ You may also hear this called “straight-line growth” or “a flat rate”. T
 
 ### 3. Linear growth: the same thing in a different story
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 3 of 49*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 3 of 49*
 
 [reviewers only: card kind `again`, id `again-lin`]
 
@@ -143,7 +143,7 @@ That is all you point to, and it is why one name covers a toddler’s jar and a 
 
 ### 4. Story and structure, now that there is something to solve
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 4 of 49*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 4 of 49*
 
 [reviewers only: card kind `lens`, id `lens-growth`]
 
@@ -155,13 +155,13 @@ There is one new thing. Once the kind is chosen, you carry out its procedure on 
 
 Two things change on purpose from card to card: the words that describe the change (“puts in”, “delivers”, “grows by”, “rose to”) and the setting. None of them tells you the kind. Only how the amount changes each time does.
 
-**Stays the same from case to case:** the two questions the key asks of every problem in this unit: **“What happens to the amount each time it changes?”** and **“Does the problem ask what the amount will be, or how long until it reaches a target?”**
+**Stays the same from case to case:** the two questions asked of every problem in this unit: **“What happens to the amount each time it changes?”** and **“Does the problem ask what the amount will be, or how long until it reaches a target?”**
 
 **Changes on purpose:** the story; the people; the size of the numbers; whether the amount goes up or down; the words that describe the change (“puts in”, “grows by”, “rose to”); whether the problem asks for the amount or for the time.
 
 ### 5. Linear growth: what it is like
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 5 of 49*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 5 of 49*
 
 [reviewers only: card kind `portrait`, id `portrait-lin`]
 
@@ -192,7 +192,7 @@ In your own life you meet this in a regular saving of a fixed sum, a pay rate by
 
 ### 6. A question about a new case
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 6 of 49*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 6 of 49*
 
 [reviewers only: card kind `check`, id `check-lin`]
 
@@ -207,7 +207,7 @@ The pieces you can tap:
 
 **Shown as soon as you tap**
 
-- If you are right: “Right: ‘and it gets 85 km closer every hour.’.” The words “it gets 85 km closer every hour” show the distance going down by the same number every hour, whatever it has reached so far, so the key’s answer is **“It goes up or down by the same number each time”**. The key’s answer for this case is **“It goes up or down by the same number each time”**, and the name is **Linear growth**.
+- If you are right: “Right: ‘and it gets 85 km closer every hour.’.” The words “it gets 85 km closer every hour” show the distance going down by the same number every hour, whatever it has reached so far, so the answer is **“It goes up or down by the same number each time”**. The answer for this case is **“It goes up or down by the same number each time”**, and the name is **Linear growth**.
 - If you miss: “The words are ‘and it gets 85 km closer every hour.’.” The same reason follows, and then a line about the piece you tapped:
   - “A train is 340 km from its destination”: That gives the start of the amount. You are asked for the words that say how it changes each time.
   - “How far from its destination will it be after 3 hours?”: That is the question, and it gives a time or a target. The words that say how the amount changes each time come before it.
@@ -215,7 +215,7 @@ The pieces you can tap:
 
 ### 7. Worked: bricks on a scaffold after 5 hours
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 7 of 49*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 7 of 49*
 
 [reviewers only: card kind `solved`, id `solved-lin-1`]
 
@@ -260,7 +260,7 @@ After 5 hours the scaffold holds 500 bricks: the 200 it started with and 300 lif
 
 ### 8. Worked again: a drip bag emptying to 250 ml
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 8 of 49*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 8 of 49*
 
 [reviewers only: card kind `solved`, id `solved-lin-2`]
 
@@ -305,7 +305,7 @@ After 6 hours the drip bag holds 250 ml. Going forwards from the start confirms 
 
 ### 9. A question about a new case
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 9 of 49*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 9 of 49*
 
 [reviewers only: card kind `check`, id `check-lin-last`]
 
@@ -336,7 +336,7 @@ After 6 hours the drip bag holds 250 ml. Going forwards from the start confirms 
 
 ### 10. A question about a new case
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 10 of 49*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 10 of 49*
 
 [reviewers only: card kind `check`, id `check-lin-whole`]
 
@@ -368,7 +368,7 @@ After 6 hours the drip bag holds 250 ml. Going forwards from the start confirms 
 
 ### 11. What an amount is multiplied by when it goes up 5%
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 11 of 49*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 11 of 49*
 
 [reviewers only: card kind `term`, id `term-multiplier`]
 
@@ -389,7 +389,7 @@ Two things to hold on to. A *multiplier* above 1 makes the amount bigger and one
 
 ### 12. Change by multiplying, forward to a given time
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 12 of 49*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 12 of 49*
 
 [reviewers only: card kind `meet`, id `meet-expg`]
 
@@ -414,11 +414,11 @@ Notice what decides the kind. It is not that the problem says “percent”, or 
 
 **What you must be able to point to.** One amount that is multiplied by the same number each hour, day, month or year (it doubles, or grows or shrinks by the same percentage of itself), a given time, and the question what the amount will be by then. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What happens to the amount each time it changes?”**
+**The question:** **“What happens to the amount each time it changes?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“It is multiplied by the same number each time”**
+**Its answer for a case like this one:** **“It is multiplied by the same number each time”**
 
-**The key also asks, and this is its answer for a case like this one:** **“Does the problem ask what the amount will be, or how long until it reaches a target?”** **“What the amount will be after a given time”**
+**There is also this question, and its answer for a case like this one:** **“Does the problem ask what the amount will be, or how long until it reaches a target?”** **“What the amount will be after a given time”**
 
 A problem like this is **Exponential growth**. The word “exponential” is the mathematician’s word for “by repeated multiplying”: the amount is multiplied again and again, once for each time it changes.
 
@@ -426,7 +426,7 @@ You may also hear this called “compound growth” or “interest on interest�
 
 ### 13. Exponential growth: the same thing in a different story
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 13 of 49*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 13 of 49*
 
 [reviewers only: card kind `again`, id `again-expg`]
 
@@ -459,7 +459,7 @@ That is all you point to, and it is why one name covers money earning interest a
 
 ### 14. Exponential growth: what it is like
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 14 of 49*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 14 of 49*
 
 [reviewers only: card kind `portrait`, id `portrait-expg`]
 
@@ -490,7 +490,7 @@ In your own life you meet this in savings or a debt with interest that stays in,
 
 ### 15. A question about a new case
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 15 of 49*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 15 of 49*
 
 [reviewers only: card kind `check`, id `check-expg`]
 
@@ -505,7 +505,7 @@ The pieces you can tap:
 
 **Shown as soon as you tap**
 
-- If you are right: “Right: ‘Every hour the amount in the blood falls to half of what it was.’.” The words “falls to half of what it was” show the amount being multiplied by the same number every hour, here a halving, so the key’s answer is **“It is multiplied by the same number each time”**. The key’s answer for this case is **“It is multiplied by the same number each time”**, and the name is **Exponential growth**.
+- If you are right: “Right: ‘Every hour the amount in the blood falls to half of what it was.’.” The words “falls to half of what it was” show the amount being multiplied by the same number every hour, here a halving, so the answer is **“It is multiplied by the same number each time”**. The answer for this case is **“It is multiplied by the same number each time”**, and the name is **Exponential growth**.
 - If you miss: “The words are ‘Every hour the amount in the blood falls to half of what it was.’.” The same reason follows, and then a line about the piece you tapped:
   - “A patient is given 160 mg of a medicine.”: That gives the start of the amount. You are asked for the words that say how it changes each time.
   - “How much will be in the blood after 3 hours?”: That is the question, and it gives a time or a target. The words that say how the amount changes each time come before it.
@@ -513,7 +513,7 @@ The pieces you can tap:
 
 ### 16. A chart that gives equal space to each ten times
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 16 of 49*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 16 of 49*
 
 [reviewers only: card kind `term`, id `term-logscale`]
 
@@ -536,7 +536,7 @@ One warning for reading such charts. An amount that is multiplied each time draw
 
 ### 17. Worked: orders at a bakery after 4 weeks
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 17 of 49*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 17 of 49*
 
 [reviewers only: card kind `solved`, id `solved-expg-1`]
 
@@ -581,7 +581,7 @@ After 4 weeks the bakery takes about 518 orders a week. Adding 50 every week, as
 
 ### 18. Worked again: a van losing value over 3 years
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 18 of 49*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 18 of 49*
 
 [reviewers only: card kind `solved`, id `solved-expg-2`]
 
@@ -626,7 +626,7 @@ After 3 years the van is worth about €18,424. It lost €4,500 in the first ye
 
 ### 19. A question about a new case
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 19 of 49*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 19 of 49*
 
 [reviewers only: card kind `check`, id `check-expg-last`]
 
@@ -657,7 +657,7 @@ After 3 years the van is worth about €18,424. It lost €4,500 in the first ye
 
 ### 20. A question about a new case
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 20 of 49*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 20 of 49*
 
 [reviewers only: card kind `check`, id `check-expg-whole`]
 
@@ -683,7 +683,7 @@ After 3 years the van is worth about €18,424. It lost €4,500 in the first ye
 
 ### 21. Linear growth or Exponential growth: telling them apart
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 21 of 49*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 21 of 49*
 
 [reviewers only: card kind `lookalike`, id `look-lin-expg`]
 
@@ -705,7 +705,7 @@ The first and second kinds both follow an amount that changes again and again, a
 
 **Why this one and not the other**
 
-Case A says the website gains 100 more visitors every week: the same number each time, so the key’s answer is **“It goes up or down by the same number each time”**. Case B says its visitors grow by 5% every week: a share of what there is, so the answer is **“It is multiplied by the same number each time”**.
+Case A says the website gains 100 more visitors every week: the same number each time, so the answer is **“It goes up or down by the same number each time”**. Case B says its visitors grow by 5% every week: a share of what there is, so the answer is **“It is multiplied by the same number each time”**.
 
 In the first week the two look the same, because 5% of 2,000 is 100. By week 6 they have come apart: Case A has 2,000 + 6 × 100 = 2,600 visitors, and Case B has about 2,680. The gap grows each week, and after 30 weeks Case A would have 5,000 visitors and Case B about 8,644.
 
@@ -715,7 +715,7 @@ Both problems say “every week”, and both can be written with the same first 
 
 Is the amount changed by the same number each time, such as €50 a month, or by the same share of itself each time, such as 5% a month or a doubling?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Linear growth | Exponential growth |
 |---|---|---|
@@ -727,7 +727,7 @@ Is the amount changed by the same number each time, such as €50 a month, or by
 
 ### 22. A percentage, and still the same number each year
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 22 of 49*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 22 of 49*
 
 [reviewers only: card kind `exception`, id `exc-interest-out`]
 
@@ -771,7 +771,7 @@ When a problem has a percentage, ask what the percentage is taken of. If it is t
 
 ### 23. Change by multiplying, back to how long it takes
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 23 of 49*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 23 of 49*
 
 [reviewers only: card kind `meet`, id `meet-logsolve`]
 
@@ -796,19 +796,19 @@ Notice what decides the kind. It is not that the problem says “how long”: an
 
 **What you must be able to point to.** One amount that is multiplied by the same number each hour, day, month or year, a target it should reach, and the question how long, or how many times, until it gets there. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“Does the problem ask what the amount will be, or how long until it reaches a target?”**
+**The question:** **“Does the problem ask what the amount will be, or how long until it reaches a target?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“How long until the amount reaches a target”**
+**Its answer for a case like this one:** **“How long until the amount reaches a target”**
 
-**The key also asks, and this is its answer for a case like this one:** **“What happens to the amount each time it changes?”** **“It is multiplied by the same number each time”**
+**There is also this question, and its answer for a case like this one:** **“What happens to the amount each time it changes?”** **“It is multiplied by the same number each time”**
 
 A problem like this is **Logarithm**. The name means the answer to a question such as “how many times must 1.2 be multiplied by itself to reach 2?”, and a calculator can find it.
 
-You may also hear this called “doubling time” or “the log key”. Those words mean the same thing here, and from now on this unit uses one name: **Logarithm**.
+You may also hear this called “doubling time” or “the log function”. Those words mean the same thing here, and from now on this unit uses one name: **Logarithm**.
 
 ### 24. Logarithm: the same thing in a different story
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 24 of 49*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 24 of 49*
 
 [reviewers only: card kind `again`, id `again-logsolve`]
 
@@ -839,7 +839,7 @@ That is all you point to, and it is why one name covers a lab dish and an online
 
 ### 25. Logarithm: what it is like
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 25 of 49*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 25 of 49*
 
 [reviewers only: card kind `portrait`, id `portrait-logsolve`]
 
@@ -870,7 +870,7 @@ In your own life you meet this when you ask how long a debt takes to double at i
 
 ### 26. A question about a new case
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 26 of 49*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 26 of 49*
 
 [reviewers only: card kind `check`, id `check-logsolve`]
 
@@ -884,14 +884,14 @@ The pieces you can tap:
 
 **Shown as soon as you tap**
 
-- If you are right: “Right: ‘After how many months will it sell 400 coffees a day?’.” The words “After how many months will it sell 400 coffees a day?” give a target for the amount and ask how long until it gets there, so the key’s answer is **“How long until the amount reaches a target”**. The key’s answer for this case is **“How long until the amount reaches a target”**, and the name is **Logarithm**.
+- If you are right: “Right: ‘After how many months will it sell 400 coffees a day?’.” The words “After how many months will it sell 400 coffees a day?” give a target for the amount and ask how long until it gets there, so the answer is **“How long until the amount reaches a target”**. The answer for this case is **“How long until the amount reaches a target”**, and the name is **Logarithm**.
 - If you miss: “The words are ‘After how many months will it sell 400 coffees a day?’.” The same reason follows, and then a line about the piece you tapped:
   - “A café sells 200 coffees a day, and its daily sales grow by 10% every month.”: That gives the start and how the amount changes. You are asked for the words that say what the problem wants to know.
 - Taught on: “Change by multiplying, back to how long it takes” (one tap opens the card).
 
 ### 27. Worked: how many years until €1,500 becomes €3,000
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 27 of 49*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 27 of 49*
 
 [reviewers only: card kind `solved`, id `solved-logsolve-1`]
 
@@ -942,7 +942,7 @@ The account holds €3,000 after about 11.9 years, which means during the 12th y
 
 ### 28. Worked again: how many days for mould to cover 500 cm²
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 28 of 49*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 28 of 49*
 
 [reviewers only: card kind `solved`, id `solved-logsolve-2`]
 
@@ -991,7 +991,7 @@ The mould covers 500 cm² after about 7 days: it covers 256 cm² after 6 days an
 
 ### 29. A question about a new case
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 29 of 49*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 29 of 49*
 
 [reviewers only: card kind `check`, id `check-logsolve-last`]
 
@@ -1024,7 +1024,7 @@ The mould covers 500 cm² after about 7 days: it covers 256 cm² after 6 days an
 
 ### 30. A question about a new case
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 30 of 49*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 30 of 49*
 
 [reviewers only: card kind `check`, id `check-logsolve-whole`]
 
@@ -1051,7 +1051,7 @@ The mould covers 500 cm² after about 7 days: it covers 256 cm² after 6 days an
 
 ### 31. Exponential growth or Logarithm: telling them apart
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 31 of 49*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 31 of 49*
 
 [reviewers only: card kind `lookalike`, id `look-expg-logsolve`]
 
@@ -1073,9 +1073,9 @@ The second and third kinds have the very same sort of amount, multiplied by the 
 
 **Why this one and not the other**
 
-Case A gives a time, 10 years, and asks for the amount at the end of it: 8,000 multiplied by 1.03 ten times is about 10,751 people. The key’s answer is **“What the amount will be after a given time”**.
+Case A gives a time, 10 years, and asks for the amount at the end of it: 8,000 multiplied by 1.03 ten times is about 10,751 people. The answer is **“What the amount will be after a given time”**.
 
-Case B gives a target, 12,000 people, and asks how long until the town gets there. Counting the multiplications by 1.03 that turn 8,000 into 12,000 gives about 13.7 years. The key’s answer is **“How long until the amount reaches a target”**.
+Case B gives a target, 12,000 people, and asks how long until the town gets there. Counting the multiplications by 1.03 that turn 8,000 into 12,000 gives about 13.7 years. The answer is **“How long until the amount reaches a target”**.
 
 The start, the 3% and the story are the same, and the two answers are very different kinds of number: a number of people in Case A and a count of years in Case B. Which one is missing, the amount or the time, is what decides.
 
@@ -1083,7 +1083,7 @@ The start, the 3% and the story are the same, and the two answers are very diffe
 
 Does the problem give a length of time and ask for the amount, or give a target for the amount and ask how long?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Exponential growth | Logarithm |
 |---|---|---|
@@ -1095,7 +1095,7 @@ Does the problem give a length of time and ask for the amount, or give a target 
 
 ### 32. Linear growth or Logarithm: telling them apart
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 32 of 49*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 32 of 49*
 
 [reviewers only: card kind `lookalike`, id `look-lin-logsolve`]
 
@@ -1117,7 +1117,7 @@ The first and third kinds can both be asked how long until an amount reaches a t
 
 **Why this one and not the other**
 
-Case A says another 10 m² of weed appears every week: the same number each time, so the key’s answer is **“It goes up or down by the same number each time”**. It needs 400 − 40 = 360 m² more, and 10 m² a week brings that in 360 ÷ 10 = 36 weeks.
+Case A says another 10 m² of weed appears every week: the same number each time, so the answer is **“It goes up or down by the same number each time”**. It needs 400 − 40 = 360 m² more, and 10 m² a week brings that in 360 ÷ 10 = 36 weeks.
 
 Case B says the weed grows by 10% every week: a share of what there is, so the answer is **“It is multiplied by the same number each time”**. In the first week the weed gains 10% of 40 m², which is 4 m², but by week 20 it gains about 24 m² in a week. Counting the multiplications by 1.1 that turn 40 m² into 400 m² gives about 24.2 weeks.
 
@@ -1127,7 +1127,7 @@ Both ask the same question and give the same start and the same target, and the 
 
 When the problem asks how long, is each change the same size, or is each change bigger than the one before?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Linear growth | Logarithm |
 |---|---|---|
@@ -1145,7 +1145,7 @@ When the problem asks how long, is each change the same size, or is each change 
 
 ### 33. One change, then none
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 33 of 49*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 33 of 49*
 
 [reviewers only: card kind `meet`, id `meet-oneoff`]
 
@@ -1170,11 +1170,11 @@ Notice what decides the kind. It is not that the amount changed, because in all 
 
 **What you must be able to point to.** One amount that changed once and has stayed the same since, and a question about what it will be later or how long until it reaches a target. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What happens to the amount each time it changes?”**
+**The question:** **“What happens to the amount each time it changes?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“It changed once, and has stayed the same since”**
+**Its answer for a case like this one:** **“It changed once, and has stayed the same since”**
 
-**The key also asks, and this is its answer for a case like this one:** **“Does the problem ask what the amount will be, or how long until it reaches a target?”** **“What the amount will be after a given time”** or **“How long until the amount reaches a target”**
+**There is also this question, and its answer for a case like this one:** **“Does the problem ask what the amount will be, or how long until it reaches a target?”** **“What the amount will be after a given time”** or **“How long until the amount reaches a target”**
 
 A problem like this is **A one-off change**. The name says what it is: a change that was made one time, and is not made again.
 
@@ -1182,7 +1182,7 @@ You may also hear this called “a step change” or “a one-time jump”. Thos
 
 ### 34. A one-off change: the same thing in a different story
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 34 of 49*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 34 of 49*
 
 [reviewers only: card kind `again`, id `again-oneoff`]
 
@@ -1215,7 +1215,7 @@ That is all you point to, and it is why one name covers a gym and a lease. The s
 
 ### 35. A one-off change: what it is like
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 35 of 49*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 35 of 49*
 
 [reviewers only: card kind `portrait`, id `portrait-oneoff`]
 
@@ -1246,7 +1246,7 @@ In your own life you meet this in a price that was put up one time, a new tariff
 
 ### 36. A question about a new case
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 36 of 49*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 36 of 49*
 
 [reviewers only: card kind `check`, id `check-oneoff`]
 
@@ -1261,7 +1261,7 @@ The pieces you can tap:
 
 **Shown as soon as you tap**
 
-- If you are right: “Right: ‘In June it rose to €2.00 an hour, and it has not changed since.’.” The words “In June it rose to €2.00 an hour” and “it has not changed since” show the amount changing one time and staying where it reached, so no change repeats and the key’s answer is **“It changed once, and has stayed the same since”**. The key’s answer for this case is **“It changed once, and has stayed the same since”**, and the name is **A one-off change**.
+- If you are right: “Right: ‘In June it rose to €2.00 an hour, and it has not changed since.’.” The words “In June it rose to €2.00 an hour” and “it has not changed since” show the amount changing one time and staying where it reached, so no change repeats and the answer is **“It changed once, and has stayed the same since”**. The answer for this case is **“It changed once, and has stayed the same since”**, and the name is **A one-off change**.
 - If you miss: “The words are ‘In June it rose to €2.00 an hour, and it has not changed since.’.” The same reason follows, and then a line about the piece you tapped:
   - “A parking fee was €1.50 an hour.”: That gives the amount before the change. You are asked for the words that say what happens to the amount after it.
   - “What will it cost an hour in 3 years?”: That is the question, and it gives a time. The words that say what happens to the amount come before it.
@@ -1269,7 +1269,7 @@ The pieces you can tap:
 
 ### 37. Worked: a bridge toll in 4 years
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 37 of 49*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 37 of 49*
 
 [reviewers only: card kind `solved`, id `solved-oneoff-1`]
 
@@ -1318,7 +1318,7 @@ In 4 years the toll is €3.45, the same as now. Carrying the €0.45 forward as
 
 ### 38. Worked again: pay after a promotion, and a target it never reaches
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 38 of 49*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 38 of 49*
 
 [reviewers only: card kind `solved`, id `solved-oneoff-2`]
 
@@ -1367,7 +1367,7 @@ She never reaches €24 an hour on this pay: it is fixed at €18. The answer �
 
 ### 39. A question about a new case
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 39 of 49*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 39 of 49*
 
 [reviewers only: card kind `check`, id `check-oneoff-last`]
 
@@ -1400,7 +1400,7 @@ She never reaches €24 an hour on this pay: it is fixed at €18. The answer �
 
 ### 40. A question about a new case
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 40 of 49*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 40 of 49*
 
 [reviewers only: card kind `check`, id `check-oneoff-whole`]
 
@@ -1427,7 +1427,7 @@ She never reaches €24 an hour on this pay: it is fixed at €18. The answer �
 
 ### 41. Linear growth or A one-off change: telling them apart
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 41 of 49*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 41 of 49*
 
 [reviewers only: card kind `lookalike`, id `look-lin-oneoff`]
 
@@ -1449,9 +1449,9 @@ The first and fourth kinds can both be given with the same plain figure, a price
 
 **Why this one and not the other**
 
-Case A says the price goes up by €2 every month: the change comes again each time, so the key’s answer is **“It goes up or down by the same number each time”**. After 6 months it is €20 + 6 × €2 = €32.
+Case A says the price goes up by €2 every month: the change comes again each time, so the answer is **“It goes up or down by the same number each time”**. After 6 months it is €20 + 6 × €2 = €32.
 
-Case B says the price went up to €22 in January and has stayed at €22 since: the change was made one time, so the key’s answer is **“It changed once, and has stayed the same since”**. After 6 months it is still €22.
+Case B says the price went up to €22 in January and has stayed at €22 since: the change was made one time, so the answer is **“It changed once, and has stayed the same since”**. After 6 months it is still €22.
 
 Both start at €20 and both have risen by €2. What differs is whether the rise comes again. In Case A the words “every month” say that it does, and in Case B the words “has stayed” say that it does not.
 
@@ -1459,7 +1459,7 @@ Both start at €20 and both have risen by €2. What differs is whether the ris
 
 After the change is made, does the problem say that it is made again each hour, day, week, month or year, or does the amount stay where it reached?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Linear growth | A one-off change |
 |---|---|---|
@@ -1471,7 +1471,7 @@ After the change is made, does the problem say that it is made again each hour, 
 
 ### 42. Exponential growth or A one-off change: telling them apart
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 42 of 49*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 42 of 49*
 
 [reviewers only: card kind `lookalike`, id `look-expg-oneoff`]
 
@@ -1493,9 +1493,9 @@ The second and fourth kinds can both be given with a percentage, and both can as
 
 **Why this one and not the other**
 
-Case A says the price goes up by 8% every year: the percentage comes again each time, so the amount is multiplied by 1.08 each year, and the key’s answer is **“It is multiplied by the same number each time”**. After 2 years the price is €3.00 × 1.08 × 1.08 = €3.50.
+Case A says the price goes up by 8% every year: the percentage comes again each time, so the amount is multiplied by 1.08 each year, and the answer is **“It is multiplied by the same number each time”**. After 2 years the price is €3.00 × 1.08 × 1.08 = €3.50.
 
-Case B says the price went up by 8% in March, to €3.24, and has stayed at €3.24 since: the percentage was applied one time, so the key’s answer is **“It changed once, and has stayed the same since”**. After 2 years it is still €3.24.
+Case B says the price went up by 8% in March, to €3.24, and has stayed at €3.24 since: the percentage was applied one time, so the answer is **“It changed once, and has stayed the same since”**. After 2 years it is still €3.24.
 
 The 8% in both is the same number. What differs is whether it comes again: “every year” in Case A, “has stayed” in Case B. A percentage in a problem says how big a change is, and never says by itself how often it happens.
 
@@ -1503,7 +1503,7 @@ The 8% in both is the same number. What differs is whether it comes again: “ev
 
 Is the percentage applied again each hour, day, week, month or year, or only one time?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Exponential growth | A one-off change |
 |---|---|---|
@@ -1515,7 +1515,7 @@ Is the percentage applied again each hour, day, week, month or year, or only one
 
 ### 43. Logarithm or A one-off change: telling them apart
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 43 of 49*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 43 of 49*
 
 [reviewers only: card kind `lookalike`, id `look-logsolve-oneoff`]
 
@@ -1537,9 +1537,9 @@ The third and fourth kinds can both ask how long until an amount reaches a targe
 
 **Why this one and not the other**
 
-Case A says the number of members grows by 20% every month: it is multiplied by 1.2 each time, so the key’s answer is **“It is multiplied by the same number each time”**, and because a target is given, the problem is worked by counting the multiplications by 1.2 that turn 100 into 400. That is about 7.6 months.
+Case A says the number of members grows by 20% every month: it is multiplied by 1.2 each time, so the answer is **“It is multiplied by the same number each time”**, and because a target is given, the problem is worked by counting the multiplications by 1.2 that turn 100 into 400. That is about 7.6 months.
 
-Case B says the club jumped to 160 members when the pool opened and has had 160 since: the change was made one time, so the key’s answer is **“It changed once, and has stayed the same since”**. Nothing moves the number any more, so 400 is never reached on these facts.
+Case B says the club jumped to 160 members when the pool opened and has had 160 since: the change was made one time, so the answer is **“It changed once, and has stayed the same since”**. Nothing moves the number any more, so 400 is never reached on these facts.
 
 Both ask “how many months”, and only one of them has an answer in months. An amount that keeps changing can reach a target in time. An amount that has stopped changing cannot, unless a new change is made.
 
@@ -1547,7 +1547,7 @@ Both ask “how many months”, and only one of them has an answer in months. An
 
 When the problem asks how long, is the amount still changing each hour, day, week, month or year, or has it stopped?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Logarithm | A one-off change |
 |---|---|---|
@@ -1565,17 +1565,17 @@ When the problem asks how long, is the amount still changing each hour, day, wee
 
 ### 44. The first question: how the amount changes each time
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 44 of 49*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 44 of 49*
 
 [reviewers only: card kind `question`, id `q-g1`]
 
-At the foot of each kind’s first card you saw one of the key’s two questions with one answer under it. This card puts the first question and its three answers in one place, as the key shows them, and says why the key asks it before any working.
+At the foot of each kind’s first card you saw one of the two questions with one answer under it. This card puts the first question and its three answers in one place and says why it is asked before any working.
 
-**The key asks:** **“What happens to the amount each time it changes?”**
+**The question:** **“What happens to the amount each time it changes?”**
 
 **What it is for.** Sorts an amount that goes up or down by the same number each time, from one multiplied by the same number each time, from one that changed once and then stopped.
 
-**Its answers, exactly as the key shows them**
+**Its answers**
 
 - **“It goes up or down by the same number each time”**
   - Give this answer when the amount goes up, or down, by the same number each hour, day, month or year (€200 a month, 2 cm an hour), whatever it has reached so far.
@@ -1616,13 +1616,13 @@ A problem can show a percentage and still be an amount that adds: when the inter
 
 ### 45. A question about a new case
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 45 of 49*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 45 of 49*
 
 [reviewers only: card kind `check`, id `check-g1`]
 
 > A sports club has 120 members, and the number of members grows by 10% every year. How many members will it have after 3 years?
 
-**The key asks:** **“What happens to the amount each time it changes?”**
+**The question:** **“What happens to the amount each time it changes?”**
 
 - It goes up or down by the same number each time
 - It is multiplied by the same number each time
@@ -1630,7 +1630,7 @@ A problem can show a percentage and still be an amount that adds: when the inter
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **It is multiplied by the same number each time.**” The words “the number of members grows by 10% every year” show the amount being multiplied by the same number every year, so the key’s answer is **“It is multiplied by the same number each time”**. This answer leads to **Exponential growth** and **Logarithm**.
+- If you are right: “Right: **It is multiplied by the same number each time.**” The words “the number of members grows by 10% every year” show the amount being multiplied by the same number every year, so the answer is **“It is multiplied by the same number each time”**. This answer leads to **Exponential growth** and **Logarithm**.
 - If you miss: “The answer is **It is multiplied by the same number each time.**” The same reason follows, and then a line about the answer you chose:
   - If you chose **It goes up or down by the same number each time**: Give that answer when the amount goes up, or down, by the same number each hour, day, month or year (€200 a month, 2 cm an hour), whatever it has reached so far. This case shows something else: the amount is multiplied by the same number each hour, day, month or year: it doubles, or it grows or shrinks by the same percentage of what it has reached (5% a year).
   - If you chose **It changed once, and has stayed the same since**: Give that answer when the amount changed one time and has not changed since, so there is no change that repeats. This case shows something else: the amount is multiplied by the same number each hour, day, month or year: it doubles, or it grows or shrinks by the same percentage of what it has reached (5% a year).
@@ -1638,17 +1638,17 @@ A problem can show a percentage and still be an amount that adds: when the inter
 
 ### 46. The second question: the amount at a given time, or the time to a target
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 46 of 49*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 46 of 49*
 
 [reviewers only: card kind `question`, id `q-g2`]
 
-The first question left one of its answers with two names. This card puts the second question and its two answers in one place, as the key shows them, and says why it comes after the first.
+The first question left one of its answers with two names. This card puts the second question and its two answers in one place and says why it comes after the first.
 
-**The key asks:** **“Does the problem ask what the amount will be, or how long until it reaches a target?”**
+**The question:** **“Does the problem ask what the amount will be, or how long until it reaches a target?”**
 
 **What it is for.** Sorts a problem that asks for the amount at a given time from one that asks for the time to reach a given target.
 
-**Its answers, exactly as the key shows them**
+**Its answers**
 
 - **“What the amount will be after a given time”**
   - Give this answer when the problem says how long (6 hours, 3 years, 4 doublings) and asks what the amount will be by then.
@@ -1682,20 +1682,20 @@ Some problems seem to give both, a time in the story and a target in the questio
 
 ### 47. A question about a new case
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 47 of 49*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 47 of 49*
 
 [reviewers only: card kind `check`, id `check-g2`]
 
 > A forest has 12,000 trees, and the number of trees grows by 2% a year. After how many years will it have 15,000 trees?
 
-**The key asks:** **“Does the problem ask what the amount will be, or how long until it reaches a target?”**
+**The question:** **“Does the problem ask what the amount will be, or how long until it reaches a target?”**
 
 - What the amount will be after a given time
 - How long until the amount reaches a target
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **How long until the amount reaches a target.**” The words “After how many years will it have 15,000 trees?” give a target for the amount and ask how long until it gets there, so the key’s answer is **“How long until the amount reaches a target”**. This answer leads to **Linear growth**, **Logarithm** and **A one-off change**.
+- If you are right: “Right: **How long until the amount reaches a target.**” The words “After how many years will it have 15,000 trees?” give a target for the amount and ask how long until it gets there, so the answer is **“How long until the amount reaches a target”**. This answer leads to **Linear growth**, **Logarithm** and **A one-off change**.
 - If you miss: “The answer is **How long until the amount reaches a target.**” The same reason follows, and then a line about the answer you chose:
   - If you chose **What the amount will be after a given time**: Give that answer when the problem says how long (6 hours, 3 years, 4 doublings) and asks what the amount will be by then. This case shows something else: the problem gives a target for the amount (double, €2,400, the whole pond) and asks how long, or how many times it must change, until it gets there.
 - Taught on: “The second question: the amount at a given time, or the time to a target” (one tap opens the card).
@@ -2114,9 +2114,9 @@ After each answer, look at the slip named behind a wrong choice. Every wrong cho
 - If you chose About 0.8 years: You chose **About 0.8 years**. That is the answer you get when you apply the same percentage again every year until the target is reached, as if it came again each time.
 - Taught on: “Worked: a bridge toll in 4 years” (one tap opens the card).
 
-#### Last stage. No help. First answer the key’s questions in order and give the kind of problem it is. Then work the problem with that procedure and choose the answer.
+#### Last stage. No help. First answer the questions in order and say what kind of problem it is. Then work the problem with that procedure and choose the answer.
 
-Each question is shown with all of its answers from the key, in the key’s order, and the names offered are the four this unit teaches.
+Each question is shown with all of its answers, in order, and the names offered are the four this unit teaches.
 
 **Drill item 17 of 42**
 
@@ -2135,8 +2135,8 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - If you are right: “Right: **How whole numbers split, repeat or are made up.**” The problem asks whether 57 stamps can be shared evenly between albums: “every album holds the same number of stamps” and “Is it possible?”. There is nothing else to work out: no price, no time passing, no shape.
-- If you miss: “The answer is …”, the same reason, and then the line built from the key for the answer you chose.
-- Then, right or wrong: “This case leaves the part of the key you have been taught. The questions that follow this answer come in a part of the course you have not reached, so the case stops here.”
+- If you miss: “The answer is …”, the same reason, and then the line built from the answers’ own wording for the answer you chose.
+- Then, right or wrong: “The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.”
 
 **Drill item 18 of 42**
 
@@ -2155,8 +2155,8 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - If you are right: “Right: **How many ways something can turn out, or how likely it is.**” A drink, a main and a side are each picked from a list of their own, and the question asks how many different results that gives: “one drink out of 6, one main out of 5 and one side out of 4” and “How many different breakfasts can a customer build?”.
-- If you miss: “The answer is …”, the same reason, and then the line built from the key for the answer you chose.
-- Then, right or wrong: “This case leaves the part of the key you have been taught. The questions that follow this answer come in a part of the course you have not reached, so the case stops here.”
+- If you miss: “The answer is …”, the same reason, and then the line built from the answers’ own wording for the answer you chose.
+- Then, right or wrong: “The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.”
 
 **Drill item 19 of 42**
 
@@ -2175,8 +2175,8 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - If you are right: “Right: **A missing number, from a formula, a rate or totals.**” The problem gives a rate, so much for so many metres, and a new amount to scale it to: “sells 6 metres of chain for €15” and “How much will it cost her?”. The price is the number it leaves out.
-- If you miss: “The answer is …”, the same reason, and then the line built from the key for the answer you chose.
-- Then, right or wrong: “This case leaves the part of the key you have been taught. The questions that follow this answer come in a part of the course you have not reached, so the case stops here.”
+- If you miss: “The answer is …”, the same reason, and then the line built from the answers’ own wording for the answer you chose.
+- Then, right or wrong: “The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.”
 
 **Drill item 20 of 42**
 
@@ -2194,9 +2194,9 @@ Each question is shown with all of its answers from the key, in the key’s orde
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes.**” The width, the height and the brace make a *right-angled triangle*, because a gate has square corners. The problem gives two of its sides and asks for the third: “The gate is 1.5 m wide and 2 m high” and “How long is the brace?”.
-- If you miss: “The answer is …”, the same reason, and then the line built from the key for the answer you chose.
-- Then, right or wrong: “This case leaves the part of the key you have been taught. The questions that follow this answer come in a part of the course you have not reached, so the case stops here.”
+- If you are right: “Right: **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes.**” The width, the height and the brace make a *right-angled triangle*, because the rectangle has square corners. The problem gives two of its sides and asks for the third: “The gate is 1.5 m wide and 2 m high” and “How long is the brace?”.
+- If you miss: “The answer is …”, the same reason, and then the line built from the answers’ own wording for the answer you chose.
+- Then, right or wrong: “The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.”
 
 **Drill item 21 of 42**
 
@@ -2215,8 +2215,8 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - If you are right: “Right: **How whole numbers split, repeat or are made up.**” The problem asks whether 57 stamps can be shared evenly between albums: “every album holds the same number of stamps” and “Is it possible?”. There is nothing else to work out: no price, no time passing, no shape.
-- If you miss: “The answer is …”, the same reason, and then the line built from the key for the answer you chose.
-- Then, right or wrong: “This case leaves the part of the key you have been taught. The questions that follow this answer come in a part of the course you have not reached, so the case stops here.”
+- If you miss: “The answer is …”, the same reason, and then the line built from the answers’ own wording for the answer you chose.
+- Then, right or wrong: “The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.”
 
 **Drill item 22 of 42**
 
@@ -2235,8 +2235,8 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - If you are right: “Right: **How many ways something can turn out, or how likely it is.**” A drink, a main and a side are each picked from a list of their own, and the question asks how many different results that gives: “one drink out of 6, one main out of 5 and one side out of 4” and “How many different breakfasts can a customer build?”.
-- If you miss: “The answer is …”, the same reason, and then the line built from the key for the answer you chose.
-- Then, right or wrong: “This case leaves the part of the key you have been taught. The questions that follow this answer come in a part of the course you have not reached, so the case stops here.”
+- If you miss: “The answer is …”, the same reason, and then the line built from the answers’ own wording for the answer you chose.
+- Then, right or wrong: “The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.”
 
 **Drill item 23 of 42**
 
@@ -2260,9 +2260,9 @@ Each question is shown with all of its answers from the key, in the key’s orde
   The same number is added every time, so the change in all is that number multiplied by how many times. Going forwards, the change in all is worked out from the time and put on the start. Going backwards, the start is taken from the target to find the change needed, and that is divided by the change each time to find how many times. The two directions are one fact, read two ways.
 - If you chose 12 minutes: You chose **12 minutes**. That is the answer you get when you divide the target by the change each time, and forget to take the start away from it first.
 - If you chose 1,000 minutes: You chose **1,000 minutes**. That is the answer you get when you multiply the change needed in all by the change each time, instead of dividing.
-- What does the problem ask you to work out? **What an amount becomes over time, or how long it takes.** The words “the tap adds 10 litres every minute” follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a *formula*, and there is no shape or chance, so the key’s first answer is **“What an amount becomes over time, or how long it takes”**.
-- What happens to the amount each time it changes? **It goes up or down by the same number each time.** The words “the tap adds 10 litres every minute” show the amount going up by the same number every minute, whatever it has reached so far, so the key’s answer is **“It goes up or down by the same number each time”**.
-- Does the problem ask what the amount will be, or how long until it reaches a target? **How long until the amount reaches a target.** The words “After how many minutes will the bath hold 120 litres?” give a target for the amount and ask how long until it gets there, so the key’s answer is **“How long until the amount reaches a target”**. For this kind either answer to this question leads to the same procedure, run forwards for the amount and backwards for the time.
+- What does the problem ask you to work out? **What an amount becomes over time, or how long it takes.** The words “the tap adds 10 litres every minute” follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a *formula*, and there is no shape or chance, so the answer to the first question is **“What an amount becomes over time, or how long it takes”**.
+- What happens to the amount each time it changes? **It goes up or down by the same number each time.** The words “the tap adds 10 litres every minute” show the amount going up by the same number every minute, whatever it has reached so far, so the answer is **“It goes up or down by the same number each time”**.
+- Does the problem ask what the amount will be, or how long until it reaches a target? **How long until the amount reaches a target.** The words “After how many minutes will the bath hold 120 litres?” give a target for the amount and ask how long until it gets there, so the answer is **“How long until the amount reaches a target”**. For this kind either answer to this question leads to the same procedure, run forwards for the amount and backwards for the time.
 - Why not **A one-off change**: The change comes again each time. **A one-off change** would be the name if the change were made one time and the amount then stayed where it reached.
 - Taught on: “Worked: bricks on a scaffold after 5 hours” (one tap opens the card).
 
@@ -2289,9 +2289,9 @@ Each question is shown with all of its answers from the key, in the key’s orde
   A change that came one time, and is not said to come again, is not a pattern, so nothing is carried forward. The amount after the change is the amount at any later time, and a target that it is not already at is never reached unless a new change is made. The size of the change is a fact about the one change, and it is not carried forward.
 - If you chose About 1.7 years: You chose **About 1.7 years**. That is the answer you get when you add the change again every year until the target is reached, as if it came again each time.
 - If you chose About 1.3 years: You chose **About 1.3 years**. That is the answer you get when you apply the same percentage again every year until the target is reached, as if it came again each time.
-- What does the problem ask you to work out? **What an amount becomes over time, or how long it takes.** The words “the publisher has fixed it at €1.50 ever since” follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a *formula*, and there is no shape or chance, so the key’s first answer is **“What an amount becomes over time, or how long it takes”**.
-- What happens to the amount each time it changes? **It changed once, and has stayed the same since.** The words “In January it rose to €1.50” and “the publisher has fixed it at €1.50 ever since” show the amount changing one time and staying where it reached, so no change repeats and the key’s answer is **“It changed once, and has stayed the same since”**.
-- Does the problem ask what the amount will be, or how long until it reaches a target? **How long until the amount reaches a target.** The words “After how many years will it cost €2.00?” give a target for the amount and ask how long until it gets there, so the key’s answer is **“How long until the amount reaches a target”**. For this kind either answer to this question leads to the same procedure.
+- What does the problem ask you to work out? **What an amount becomes over time, or how long it takes.** The words “the publisher has fixed it at €1.50 ever since” follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a *formula*, and there is no shape or chance, so the answer to the first question is **“What an amount becomes over time, or how long it takes”**.
+- What happens to the amount each time it changes? **It changed once, and has stayed the same since.** The words “In January it rose to €1.50” and “the publisher has fixed it at €1.50 ever since” show the amount changing one time and staying where it reached, so no change repeats and the answer is **“It changed once, and has stayed the same since”**.
+- Does the problem ask what the amount will be, or how long until it reaches a target? **How long until the amount reaches a target.** The words “After how many years will it cost €2.00?” give a target for the amount and ask how long until it gets there, so the answer is **“How long until the amount reaches a target”**. For this kind either answer to this question leads to the same procedure.
 - Why not **Linear growth**: The change was made one time and the amount has stayed since, so nothing is added again. **Linear growth** would be the name if the same number were added each time.
 - Taught on: “Worked: a bridge toll in 4 years” (one tap opens the card).
 
@@ -2317,9 +2317,9 @@ Each question is shown with all of its answers from the key, in the key’s orde
   An amount that changes by a share of itself is multiplied by the same *multiplier* each time, and each multiplication is made on the result of the last, not on the start. That is why the changes are bigger when the amount grows and smaller when it shrinks. Multiplying once for each time the amount changes gives the amount at the end, and rounding only at the end keeps the answer true.
 - If you chose 1,000 posts: You chose **1,000 posts**. That is the answer you get when you add the first rise again each time, so every rise is the same size instead of growing.
 - If you chose 1,037 posts: You chose **1,037 posts**. That is the answer you get when you multiply one time too few, once for every time but the last.
-- What does the problem ask you to work out? **What an amount becomes over time, or how long it takes.** The words “the number of posts grows by 20% every month” follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a *formula*, and there is no shape or chance, so the key’s first answer is **“What an amount becomes over time, or how long it takes”**.
-- What happens to the amount each time it changes? **It is multiplied by the same number each time.** The words “the number of posts grows by 20% every month” show the amount being multiplied by the same number every month, as a percentage, a doubling or a halving is, so the key’s answer is **“It is multiplied by the same number each time”**.
-- Does the problem ask what the amount will be, or how long until it reaches a target? **What the amount will be after a given time.** The words “About how many posts will it have after 5 months?” give a time and ask for the amount at the end of it, so the key’s answer is **“What the amount will be after a given time”**.
+- What does the problem ask you to work out? **What an amount becomes over time, or how long it takes.** The words “the number of posts grows by 20% every month” follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a *formula*, and there is no shape or chance, so the answer to the first question is **“What an amount becomes over time, or how long it takes”**.
+- What happens to the amount each time it changes? **It is multiplied by the same number each time.** The words “the number of posts grows by 20% every month” show the amount being multiplied by the same number every month, as a percentage, a doubling or a halving is, so the answer is **“It is multiplied by the same number each time”**.
+- Does the problem ask what the amount will be, or how long until it reaches a target? **What the amount will be after a given time.** The words “About how many posts will it have after 5 months?” give a time and ask for the amount at the end of it, so the answer is **“What the amount will be after a given time”**.
 - Why not **Logarithm**: The problem gives a time and asks for the amount, so the amount is what is missing. **Logarithm** would be the name if it gave a target for the amount and asked how long.
 - Taught on: “Worked: orders at a bakery after 4 weeks” (one tap opens the card).
 
@@ -2346,9 +2346,9 @@ Each question is shown with all of its answers from the key, in the key’s orde
   The amount at the end is the start multiplied by the *multiplier* once for each time, so the question is how many multiplications by the *multiplier* turn the start into the target. The log of a number turns multiplying into adding: each multiplication adds the same amount, the log of the *multiplier*, to the log of the amount. So the number of multiplications is the log of how many times bigger the target is than the start, divided by the log of the *multiplier*. The check with whole numbers of times shows that the answer is where it should be.
 - If you chose About 20.0 weeks: You chose **About 20.0 weeks**. That is the answer you get when you add the same share of the start each time, so every rise is the same size, which ignores that each rise is bigger than the last.
 - If you chose About 2 weeks: You chose **About 2 weeks**. That is the answer you get when you give how many times bigger the target is as the number of weeks.
-- What does the problem ask you to work out? **What an amount becomes over time, or how long it takes.** The words “its daily sales grow by 5% every week” follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a *formula*, and there is no shape or chance, so the key’s first answer is **“What an amount becomes over time, or how long it takes”**.
-- What happens to the amount each time it changes? **It is multiplied by the same number each time.** The words “its daily sales grow by 5% every week” show the amount being multiplied by the same number every week, as a percentage, a doubling or a halving is, so the key’s answer is **“It is multiplied by the same number each time”**.
-- Does the problem ask what the amount will be, or how long until it reaches a target? **How long until the amount reaches a target.** The words “After how many weeks will it sell 800 loaves a day?” give a target for the amount and ask how long until it gets there, so the key’s answer is **“How long until the amount reaches a target”**.
+- What does the problem ask you to work out? **What an amount becomes over time, or how long it takes.** The words “its daily sales grow by 5% every week” follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a *formula*, and there is no shape or chance, so the answer to the first question is **“What an amount becomes over time, or how long it takes”**.
+- What happens to the amount each time it changes? **It is multiplied by the same number each time.** The words “its daily sales grow by 5% every week” show the amount being multiplied by the same number every week, as a percentage, a doubling or a halving is, so the answer is **“It is multiplied by the same number each time”**.
+- Does the problem ask what the amount will be, or how long until it reaches a target? **How long until the amount reaches a target.** The words “After how many weeks will it sell 800 loaves a day?” give a target for the amount and ask how long until it gets there, so the answer is **“How long until the amount reaches a target”**.
 - Why not **Exponential growth**: The problem gives a target for the amount and asks how long, so the time is what is missing. **Exponential growth** would be the name if it gave a time and asked for the amount.
 - Taught on: “Worked: how many years until €1,500 becomes €3,000” (one tap opens the card).
 
@@ -2374,9 +2374,9 @@ Each question is shown with all of its answers from the key, in the key’s orde
   The same number is added every time, so the change in all is that number multiplied by how many times. Going forwards, the change in all is worked out from the time and put on the start. Going backwards, the start is taken from the target to find the change needed, and that is divided by the change each time to find how many times. The two directions are one fact, read two ways.
 - If you chose 6,400 kg: You chose **6,400 kg**. That is the answer you get when you change the amount only once, instead of once for each month.
 - If you chose 64,000 kg: You chose **64,000 kg**. That is the answer you get when you add the change to the start first and then multiply by the number of months, so the start is counted again every month.
-- What does the problem ask you to work out? **What an amount becomes over time, or how long it takes.** The words “it collects 400 kg more every month” follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a *formula*, and there is no shape or chance, so the key’s first answer is **“What an amount becomes over time, or how long it takes”**.
-- What happens to the amount each time it changes? **It goes up or down by the same number each time.** The words “it collects 400 kg more every month” show the amount going up by the same number every month, whatever it has reached so far, so the key’s answer is **“It goes up or down by the same number each time”**.
-- Does the problem ask what the amount will be, or how long until it reaches a target? **What the amount will be after a given time.** The words “How many kg will it collect in a month, 10 months from now?” give a time and ask for the amount at the end of it, so the key’s answer is **“What the amount will be after a given time”**. For this kind either answer to this question leads to the same procedure, run forwards for the amount and backwards for the time.
+- What does the problem ask you to work out? **What an amount becomes over time, or how long it takes.** The words “it collects 400 kg more every month” follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a *formula*, and there is no shape or chance, so the answer to the first question is **“What an amount becomes over time, or how long it takes”**.
+- What happens to the amount each time it changes? **It goes up or down by the same number each time.** The words “it collects 400 kg more every month” show the amount going up by the same number every month, whatever it has reached so far, so the answer is **“It goes up or down by the same number each time”**.
+- Does the problem ask what the amount will be, or how long until it reaches a target? **What the amount will be after a given time.** The words “How many kg will it collect in a month, 10 months from now?” give a time and ask for the amount at the end of it, so the answer is **“What the amount will be after a given time”**. For this kind either answer to this question leads to the same procedure, run forwards for the amount and backwards for the time.
 - Why not **Exponential growth**: The amount is raised or lowered by the same figure every time, and not by a share of what it has reached. **Exponential growth** would be the name if each change were a percentage of the amount so far, or a doubling.
 - Taught on: “Worked: bricks on a scaffold after 5 hours” (one tap opens the card).
 
@@ -2402,9 +2402,9 @@ Each question is shown with all of its answers from the key, in the key’s orde
   An amount that changes by a share of itself is multiplied by the same *multiplier* each time, and each multiplication is made on the result of the last, not on the start. That is why the changes are bigger when the amount grows and smaller when it shrinks. Multiplying once for each time the amount changes gives the amount at the end, and rounding only at the end keeps the answer true.
 - If you chose €700.00: You chose **€700.00**. That is the answer you get when you add the first rise again each time, so every rise is the same size instead of growing.
 - If you chose €665.50: You chose **€665.50**. That is the answer you get when you multiply one time too few, once for every time but the last.
-- What does the problem ask you to work out? **What an amount becomes over time, or how long it takes.** The words “its value rises by 10% every year” follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a *formula*, and there is no shape or chance, so the key’s first answer is **“What an amount becomes over time, or how long it takes”**.
-- What happens to the amount each time it changes? **It is multiplied by the same number each time.** The words “its value rises by 10% every year” show the amount being multiplied by the same number every year, as a percentage, a doubling or a halving is, so the key’s answer is **“It is multiplied by the same number each time”**.
-- Does the problem ask what the amount will be, or how long until it reaches a target? **What the amount will be after a given time.** The words “What will it be worth after 4 years?” give a time and ask for the amount at the end of it, so the key’s answer is **“What the amount will be after a given time”**.
+- What does the problem ask you to work out? **What an amount becomes over time, or how long it takes.** The words “its value rises by 10% every year” follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a *formula*, and there is no shape or chance, so the answer to the first question is **“What an amount becomes over time, or how long it takes”**.
+- What happens to the amount each time it changes? **It is multiplied by the same number each time.** The words “its value rises by 10% every year” show the amount being multiplied by the same number every year, as a percentage, a doubling or a halving is, so the answer is **“It is multiplied by the same number each time”**.
+- Does the problem ask what the amount will be, or how long until it reaches a target? **What the amount will be after a given time.** The words “What will it be worth after 4 years?” give a time and ask for the amount at the end of it, so the answer is **“What the amount will be after a given time”**.
 - Why not **Linear growth**: The change is a share of what the amount has reached, so it is not the same size each time. **Linear growth** would be the name if the same number were added each time.
 - Taught on: “Worked: orders at a bakery after 4 weeks” (one tap opens the card).
 
@@ -2431,9 +2431,9 @@ Each question is shown with all of its answers from the key, in the key’s orde
   The amount at the end is the start multiplied by the *multiplier* once for each time, so the question is how many multiplications by the *multiplier* turn the start into the target. The log of a number turns multiplying into adding: each multiplication adds the same amount, the log of the *multiplier*, to the log of the amount. So the number of multiplications is the log of how many times bigger the target is than the start, divided by the log of the *multiplier*. The check with whole numbers of times shows that the answer is where it should be.
 - If you chose About 24.0 weeks: You chose **About 24.0 weeks**. That is the answer you get when you add the same share of the start each time, so every rise is the same size, which ignores that each rise is bigger than the last.
 - If you chose About 25 weeks: You chose **About 25 weeks**. That is the answer you get when you give how many times bigger the target is as the number of weeks.
-- What does the problem ask you to work out? **What an amount becomes over time, or how long it takes.** The words “the area they cover doubles every week” follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a *formula*, and there is no shape or chance, so the key’s first answer is **“What an amount becomes over time, or how long it takes”**.
-- What happens to the amount each time it changes? **It is multiplied by the same number each time.** The words “the area they cover doubles every week” show the amount being multiplied by the same number every week, as a percentage, a doubling or a halving is, so the key’s answer is **“It is multiplied by the same number each time”**.
-- Does the problem ask what the amount will be, or how long until it reaches a target? **How long until the amount reaches a target.** The words “After how many weeks will they cover 50 hectares?” give a target for the amount and ask how long until it gets there, so the key’s answer is **“How long until the amount reaches a target”**.
+- What does the problem ask you to work out? **What an amount becomes over time, or how long it takes.** The words “the area they cover doubles every week” follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a *formula*, and there is no shape or chance, so the answer to the first question is **“What an amount becomes over time, or how long it takes”**.
+- What happens to the amount each time it changes? **It is multiplied by the same number each time.** The words “the area they cover doubles every week” show the amount being multiplied by the same number every week, as a percentage, a doubling or a halving is, so the answer is **“It is multiplied by the same number each time”**.
+- Does the problem ask what the amount will be, or how long until it reaches a target? **How long until the amount reaches a target.** The words “After how many weeks will they cover 50 hectares?” give a target for the amount and ask how long until it gets there, so the answer is **“How long until the amount reaches a target”**.
 - Why not **A one-off change**: The amount keeps changing, so a target can be reached after some time. **A one-off change** would be the name if the amount changed once and then stayed.
 - Taught on: “Worked: how many years until €1,500 becomes €3,000” (one tap opens the card).
 
@@ -2460,9 +2460,9 @@ Each question is shown with all of its answers from the key, in the key’s orde
   A change that came one time, and is not said to come again, is not a pattern, so nothing is carried forward. The amount after the change is the amount at any later time, and a target that it is not already at is never reached unless a new change is made. The size of the change is a fact about the one change, and it is not carried forward.
 - If you chose About 1.5 months: You chose **About 1.5 months**. That is the answer you get when you add the change again every month until the target is reached, as if it came again each time.
 - If you chose About 1.2 months: You chose **About 1.2 months**. That is the answer you get when you apply the same percentage again every month until the target is reached, as if it came again each time.
-- What does the problem ask you to work out? **What an amount becomes over time, or how long it takes.** The words “the council has fixed it at €48” follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a *formula*, and there is no shape or chance, so the key’s first answer is **“What an amount becomes over time, or how long it takes”**.
-- What happens to the amount each time it changes? **It changed once, and has stayed the same since.** The words “After a service change in May it costs €48” and “the council has fixed it at €48” show the amount changing one time and staying where it reached, so no change repeats and the key’s answer is **“It changed once, and has stayed the same since”**.
-- Does the problem ask what the amount will be, or how long until it reaches a target? **How long until the amount reaches a target.** The words “After how many months will it cost €60?” give a target for the amount and ask how long until it gets there, so the key’s answer is **“How long until the amount reaches a target”**. For this kind either answer to this question leads to the same procedure.
+- What does the problem ask you to work out? **What an amount becomes over time, or how long it takes.** The words “the council has fixed it at €48” follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a *formula*, and there is no shape or chance, so the answer to the first question is **“What an amount becomes over time, or how long it takes”**.
+- What happens to the amount each time it changes? **It changed once, and has stayed the same since.** The words “After a service change in May it costs €48” and “the council has fixed it at €48” show the amount changing one time and staying where it reached, so no change repeats and the answer is **“It changed once, and has stayed the same since”**.
+- Does the problem ask what the amount will be, or how long until it reaches a target? **How long until the amount reaches a target.** The words “After how many months will it cost €60?” give a target for the amount and ask how long until it gets there, so the answer is **“How long until the amount reaches a target”**. For this kind either answer to this question leads to the same procedure.
 - Why not **Logarithm**: The amount changed once and has stopped, so it is not multiplied again and a target is not reached by waiting. **Logarithm** would be the name if the amount were multiplied each time.
 - Taught on: “Worked: a bridge toll in 4 years” (one tap opens the card).
 
@@ -2488,9 +2488,9 @@ Each question is shown with all of its answers from the key, in the key’s orde
   The same number is added every time, so the change in all is that number multiplied by how many times. Going forwards, the change in all is worked out from the time and put on the start. Going backwards, the start is taken from the target to find the change needed, and that is divided by the change each time to find how many times. The two directions are one fact, read two ways.
 - If you chose 6.5 hours: You chose **6.5 hours**. That is the answer you get when you divide the target by the change each time, and forget to take the start away from it first.
 - If you chose 4,500 hours: You chose **4,500 hours**. That is the answer you get when you multiply the change needed in all by the change each time, instead of dividing.
-- What does the problem ask you to work out? **What an amount becomes over time, or how long it takes.** The words “then €30 for every hour of work” follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a *formula*, and there is no shape or chance, so the key’s first answer is **“What an amount becomes over time, or how long it takes”**.
-- What happens to the amount each time it changes? **It goes up or down by the same number each time.** The words “then €30 for every hour of work” show the amount going up by the same number every hour, whatever it has reached so far, so the key’s answer is **“It goes up or down by the same number each time”**.
-- Does the problem ask what the amount will be, or how long until it reaches a target? **How long until the amount reaches a target.** The words “After how many hours of work will the bill reach €195?” give a target for the amount and ask how long until it gets there, so the key’s answer is **“How long until the amount reaches a target”**. For this kind either answer to this question leads to the same procedure, run forwards for the amount and backwards for the time.
+- What does the problem ask you to work out? **What an amount becomes over time, or how long it takes.** The words “then €30 for every hour of work” follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a *formula*, and there is no shape or chance, so the answer to the first question is **“What an amount becomes over time, or how long it takes”**.
+- What happens to the amount each time it changes? **It goes up or down by the same number each time.** The words “then €30 for every hour of work” show the amount going up by the same number every hour, whatever it has reached so far, so the answer is **“It goes up or down by the same number each time”**.
+- Does the problem ask what the amount will be, or how long until it reaches a target? **How long until the amount reaches a target.** The words “After how many hours of work will the bill reach €195?” give a target for the amount and ask how long until it gets there, so the answer is **“How long until the amount reaches a target”**. For this kind either answer to this question leads to the same procedure, run forwards for the amount and backwards for the time.
 - Why not **Logarithm**: The amount changes by the same number each time, so every change is the same size. **Logarithm** would be the name if each change were a share of the amount so far and the problem gave a target for it to reach.
 - Taught on: “Worked: bricks on a scaffold after 5 hours” (one tap opens the card).
 
@@ -2517,9 +2517,9 @@ Each question is shown with all of its answers from the key, in the key’s orde
   The amount at the end is the start multiplied by the *multiplier* once for each time, so the question is how many multiplications by the *multiplier* turn the start into the target. The log of a number turns multiplying into adding: each multiplication adds the same amount, the log of the *multiplier*, to the log of the amount. So the number of multiplications is the log of how many times bigger the target is than the start, divided by the log of the *multiplier*. The check with whole numbers of times shows that the answer is where it should be.
 - If you chose About 49.5 days: You chose **About 49.5 days**. That is the answer you get when you add the same share of the start each time, so every rise is the same size, which ignores that each rise is bigger than the last.
 - If you chose About 100 days: You chose **About 100 days**. That is the answer you get when you give how many times bigger the target is as the number of days.
-- What does the problem ask you to work out? **What an amount becomes over time, or how long it takes.** The words “the number of cells triples every day” follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a *formula*, and there is no shape or chance, so the key’s first answer is **“What an amount becomes over time, or how long it takes”**.
-- What happens to the amount each time it changes? **It is multiplied by the same number each time.** The words “the number of cells triples every day” show the amount being multiplied by the same number every day, as a percentage, a doubling or a halving is, so the key’s answer is **“It is multiplied by the same number each time”**.
-- Does the problem ask what the amount will be, or how long until it reaches a target? **How long until the amount reaches a target.** The words “After how many days will it hold 10,000 cells?” give a target for the amount and ask how long until it gets there, so the key’s answer is **“How long until the amount reaches a target”**.
+- What does the problem ask you to work out? **What an amount becomes over time, or how long it takes.** The words “the number of cells triples every day” follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a *formula*, and there is no shape or chance, so the answer to the first question is **“What an amount becomes over time, or how long it takes”**.
+- What happens to the amount each time it changes? **It is multiplied by the same number each time.** The words “the number of cells triples every day” show the amount being multiplied by the same number every day, as a percentage, a doubling or a halving is, so the answer is **“It is multiplied by the same number each time”**.
+- Does the problem ask what the amount will be, or how long until it reaches a target? **How long until the amount reaches a target.** The words “After how many days will it hold 10,000 cells?” give a target for the amount and ask how long until it gets there, so the answer is **“How long until the amount reaches a target”**.
 - Why not **Linear growth**: The amount is multiplied each time, and the problem gives a target and asks how long. **Linear growth** would be the name if the same number were added each time.
 - Taught on: “Worked: how many years until €1,500 becomes €3,000” (one tap opens the card).
 
@@ -2545,9 +2545,9 @@ Each question is shown with all of its answers from the key, in the key’s orde
   On a *log scale*, each gridline up is multiplied by 10, so a count that rises one gridline every day is multiplied by 10 every day. After 3 days it has been multiplied by 10 three times, once for each day, and each multiplication is made on the result of the last. That is the *multiplier* idea again: the same number, once for each day, gives the amount at the end.
 - If you chose 30 times bigger: You chose **30 times bigger**. That is the answer you get when you multiply the number of days by 10, instead of multiplying by 10 once for each day.
 - If you chose 100 times bigger: You chose **100 times bigger**. That is the answer you get when you multiply one time too few, once for every day but the last.
-- What does the problem ask you to work out? **What an amount becomes over time, or how long it takes.** The words “The count rises one gridline every day” follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a *formula*, and there is no shape or chance, so the key’s first answer is **“What an amount becomes over time, or how long it takes”**.
-- What happens to the amount each time it changes? **It is multiplied by the same number each time.** The words “The count rises one gridline every day” show the amount being multiplied by the same number every day, as a percentage, a doubling or a halving is, so the key’s answer is **“It is multiplied by the same number each time”**.
-- Does the problem ask what the amount will be, or how long until it reaches a target? **What the amount will be after a given time.** The words “How many times bigger will the count be after 3 days?” give a time and ask for the amount at the end of it, so the key’s answer is **“What the amount will be after a given time”**.
+- What does the problem ask you to work out? **What an amount becomes over time, or how long it takes.** The words “The count rises one gridline every day” follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a *formula*, and there is no shape or chance, so the answer to the first question is **“What an amount becomes over time, or how long it takes”**.
+- What happens to the amount each time it changes? **It is multiplied by the same number each time.** The words “The count rises one gridline every day” show the amount being multiplied by the same number every day, as a percentage, a doubling or a halving is, so the answer is **“It is multiplied by the same number each time”**.
+- Does the problem ask what the amount will be, or how long until it reaches a target? **What the amount will be after a given time.** The words “How many times bigger will the count be after 3 days?” give a time and ask for the amount at the end of it, so the answer is **“What the amount will be after a given time”**.
 - Why not **A one-off change**: The percentage comes again every time. **A one-off change** would be the name if it were applied one time and then stopped.
 - Taught on: “Worked: orders at a bakery after 4 weeks” (one tap opens the card).
 
@@ -2574,9 +2574,9 @@ Each question is shown with all of its answers from the key, in the key’s orde
   A change that came one time, and is not said to come again, is not a pattern, so nothing is carried forward. The amount after the change is the amount at any later time, and a target that it is not already at is never reached unless a new change is made. The size of the change is a fact about the one change, and it is not carried forward.
 - If you chose €0.18: You chose **€0.18**. That is the answer you get when you carry the change forward as if it came again every year.
 - If you chose €0.21: You chose **€0.21**. That is the answer you get when you carry the percentage forward as if it came again every year.
-- What does the problem ask you to work out? **What an amount becomes over time, or how long it takes.** The words “it has charged €0.12 a minute ever since” follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a *formula*, and there is no shape or chance, so the key’s first answer is **“What an amount becomes over time, or how long it takes”**.
-- What happens to the amount each time it changes? **It changed once, and has stayed the same since.** The words “In June it moved to €0.12 a minute” and “it has charged €0.12 a minute ever since” show the amount changing one time and staying where it reached, so no change repeats and the key’s answer is **“It changed once, and has stayed the same since”**.
-- Does the problem ask what the amount will be, or how long until it reaches a target? **What the amount will be after a given time.** The words “What will a minute cost after 3 years?” give a time and ask for the amount at the end of it, so the key’s answer is **“What the amount will be after a given time”**. For this kind either answer to this question leads to the same procedure.
+- What does the problem ask you to work out? **What an amount becomes over time, or how long it takes.** The words “it has charged €0.12 a minute ever since” follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a *formula*, and there is no shape or chance, so the answer to the first question is **“What an amount becomes over time, or how long it takes”**.
+- What happens to the amount each time it changes? **It changed once, and has stayed the same since.** The words “In June it moved to €0.12 a minute” and “it has charged €0.12 a minute ever since” show the amount changing one time and staying where it reached, so no change repeats and the answer is **“It changed once, and has stayed the same since”**.
+- Does the problem ask what the amount will be, or how long until it reaches a target? **What the amount will be after a given time.** The words “What will a minute cost after 3 years?” give a time and ask for the amount at the end of it, so the answer is **“What the amount will be after a given time”**. For this kind either answer to this question leads to the same procedure.
 - Why not **Exponential growth**: The percentage was applied one time, and the amount has stayed since. **Exponential growth** would be the name if the percentage came again each time.
 - Taught on: “Worked: a bridge toll in 4 years” (one tap opens the card).
 
@@ -2602,9 +2602,9 @@ Each question is shown with all of its answers from the key, in the key’s orde
   The same number is added every time, so the change in all is that number multiplied by how many times. Going forwards, the change in all is worked out from the time and put on the start. Going backwards, the start is taken from the target to find the change needed, and that is divided by the change each time to find how many times. The two directions are one fact, read two ways.
 - If you chose 1,750 ml: You chose **1,750 ml**. That is the answer you get when you change the amount only once, instead of once for each hour.
 - If you chose 3,250 ml: You chose **3,250 ml**. That is the answer you get when you add the fall to the start instead of taking it away.
-- What does the problem ask you to work out? **What an amount becomes over time, or how long it takes.** The words “drinks 250 ml every hour” follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a *formula*, and there is no shape or chance, so the key’s first answer is **“What an amount becomes over time, or how long it takes”**.
-- What happens to the amount each time it changes? **It goes up or down by the same number each time.** The words “drinks 250 ml every hour” show the amount going down by the same number every hour, whatever it has reached so far, so the key’s answer is **“It goes up or down by the same number each time”**.
-- Does the problem ask what the amount will be, or how long until it reaches a target? **What the amount will be after a given time.** The words “How much will be in the bottle after 5 hours?” give a time and ask for the amount at the end of it, so the key’s answer is **“What the amount will be after a given time”**. For this kind either answer to this question leads to the same procedure, run forwards for the amount and backwards for the time.
+- What does the problem ask you to work out? **What an amount becomes over time, or how long it takes.** The words “drinks 250 ml every hour” follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a *formula*, and there is no shape or chance, so the answer to the first question is **“What an amount becomes over time, or how long it takes”**.
+- What happens to the amount each time it changes? **It goes up or down by the same number each time.** The words “drinks 250 ml every hour” show the amount going down by the same number every hour, whatever it has reached so far, so the answer is **“It goes up or down by the same number each time”**.
+- Does the problem ask what the amount will be, or how long until it reaches a target? **What the amount will be after a given time.** The words “How much will be in the bottle after 5 hours?” give a time and ask for the amount at the end of it, so the answer is **“What the amount will be after a given time”**. For this kind either answer to this question leads to the same procedure, run forwards for the amount and backwards for the time.
 - Why not **Exponential growth**: The amount is raised or lowered by the same figure every time, and not by a share of what it has reached. **Exponential growth** would be the name if each change were a percentage of the amount so far, or a doubling.
 - Taught on: “Worked: bricks on a scaffold after 5 hours” (one tap opens the card).
 
@@ -2630,9 +2630,9 @@ Each question is shown with all of its answers from the key, in the key’s orde
   An amount that changes by a share of itself is multiplied by the same *multiplier* each time, and each multiplication is made on the result of the last, not on the start. That is why the changes are bigger when the amount grows and smaller when it shrinks. Multiplying once for each time the amount changes gives the amount at the end, and rounding only at the end keeps the answer true.
 - If you chose €2,300.00: You chose **€2,300.00**. That is the answer you get when you add the first rise again each time, so every rise is the same size instead of growing.
 - If you chose €2,205.00: You chose **€2,205.00**. That is the answer you get when you multiply one time too few, once for every time but the last.
-- What does the problem ask you to work out? **What an amount becomes over time, or how long it takes.** The words “the debt grows by 5% every year” follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a *formula*, and there is no shape or chance, so the key’s first answer is **“What an amount becomes over time, or how long it takes”**.
-- What happens to the amount each time it changes? **It is multiplied by the same number each time.** The words “the debt grows by 5% every year” show the amount being multiplied by the same number every year, as a percentage, a doubling or a halving is, so the key’s answer is **“It is multiplied by the same number each time”**.
-- Does the problem ask what the amount will be, or how long until it reaches a target? **What the amount will be after a given time.** The words “What will the debt be after 3 years?” give a time and ask for the amount at the end of it, so the key’s answer is **“What the amount will be after a given time”**.
+- What does the problem ask you to work out? **What an amount becomes over time, or how long it takes.** The words “the debt grows by 5% every year” follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a *formula*, and there is no shape or chance, so the answer to the first question is **“What an amount becomes over time, or how long it takes”**.
+- What happens to the amount each time it changes? **It is multiplied by the same number each time.** The words “the debt grows by 5% every year” show the amount being multiplied by the same number every year, as a percentage, a doubling or a halving is, so the answer is **“It is multiplied by the same number each time”**.
+- Does the problem ask what the amount will be, or how long until it reaches a target? **What the amount will be after a given time.** The words “What will the debt be after 3 years?” give a time and ask for the amount at the end of it, so the answer is **“What the amount will be after a given time”**.
 - Why not **Linear growth**: The change is a share of what the amount has reached, so it is not the same size each time. **Linear growth** would be the name if the same number were added each time.
 - Taught on: “Worked: orders at a bakery after 4 weeks” (one tap opens the card).
 
@@ -2658,9 +2658,9 @@ Each question is shown with all of its answers from the key, in the key’s orde
   The same number is added every time, so the change in all is that number multiplied by how many times. Going forwards, the change in all is worked out from the time and put on the start. Going backwards, the start is taken from the target to find the change needed, and that is divided by the change each time to find how many times. The two directions are one fact, read two ways.
 - If you chose €15,000: You chose **€15,000**. That is the answer you get when you change the amount only once, instead of once for each month.
 - If you chose €90,000: You chose **€90,000**. That is the answer you get when you add the change to the start first and then multiply by the number of months, so the start is counted again every month.
-- What does the problem ask you to work out? **What an amount becomes over time, or how long it takes.** The words “they have gone up by €3,000 every month since” follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a *formula*, and there is no shape or chance, so the key’s first answer is **“What an amount becomes over time, or how long it takes”**.
-- What happens to the amount each time it changes? **It goes up or down by the same number each time.** The words “they have gone up by €3,000 every month since” show the amount going up by the same number every month, whatever it has reached so far, so the key’s answer is **“It goes up or down by the same number each time”**.
-- Does the problem ask what the amount will be, or how long until it reaches a target? **What the amount will be after a given time.** The words “What will the sales be after 6 more months?” give a time and ask for the amount at the end of it, so the key’s answer is **“What the amount will be after a given time”**. For this kind either answer to this question leads to the same procedure, run forwards for the amount and backwards for the time.
+- What does the problem ask you to work out? **What an amount becomes over time, or how long it takes.** The words “they have gone up by €3,000 every month since” follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a *formula*, and there is no shape or chance, so the answer to the first question is **“What an amount becomes over time, or how long it takes”**.
+- What happens to the amount each time it changes? **It goes up or down by the same number each time.** The words “they have gone up by €3,000 every month since” show the amount going up by the same number every month, whatever it has reached so far, so the answer is **“It goes up or down by the same number each time”**.
+- Does the problem ask what the amount will be, or how long until it reaches a target? **What the amount will be after a given time.** The words “What will the sales be after 6 more months?” give a time and ask for the amount at the end of it, so the answer is **“What the amount will be after a given time”**. For this kind either answer to this question leads to the same procedure, run forwards for the amount and backwards for the time.
 - Why not **Exponential growth**: The amount is raised or lowered by the same figure every time, and not by a share of what it has reached. **Exponential growth** would be the name if each change were a percentage of the amount so far, or a doubling.
 - What would make it a different kind: If the sales had gone up by 25% every month, it would be **Exponential growth**.
 - Taught on: “Worked: bricks on a scaffold after 5 hours” (one tap opens the card).
@@ -2687,9 +2687,9 @@ Each question is shown with all of its answers from the key, in the key’s orde
   An amount that changes by a share of itself is multiplied by the same *multiplier* each time, and each multiplication is made on the result of the last, not on the start. That is why the changes are bigger when the amount grows and smaller when it shrinks. Multiplying once for each time the amount changes gives the amount at the end, and rounding only at the end keeps the answer true.
 - If you chose €1,040.00: You chose **€1,040.00**. That is the answer you get when you add the three rises, 10% + 10% + 10% = 30%, and take 30% of the €800, instead of multiplying by 1.1 three times.
 - If you chose €968.00: You chose **€968.00**. That is the answer you get when you multiply one time too few, once for every rise but the last.
-- What does the problem ask you to work out? **What an amount becomes over time, or how long it takes.** The words “raises a flat’s rent by 10% every year, three years in a row” follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a *formula*, and there is no shape or chance, so the key’s first answer is **“What an amount becomes over time, or how long it takes”**.
-- What happens to the amount each time it changes? **It is multiplied by the same number each time.** The words “raises a flat’s rent by 10% every year, three years in a row” show the amount being multiplied by the same number every year, as a percentage, a doubling or a halving is, so the key’s answer is **“It is multiplied by the same number each time”**.
-- Does the problem ask what the amount will be, or how long until it reaches a target? **What the amount will be after a given time.** The words “What will it be after the third rise?” give a time and ask for the amount at the end of it, so the key’s answer is **“What the amount will be after a given time”**.
+- What does the problem ask you to work out? **What an amount becomes over time, or how long it takes.** The words “raises a flat’s rent by 10% every year, three years in a row” follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a *formula*, and there is no shape or chance, so the answer to the first question is **“What an amount becomes over time, or how long it takes”**.
+- What happens to the amount each time it changes? **It is multiplied by the same number each time.** The words “raises a flat’s rent by 10% every year, three years in a row” show the amount being multiplied by the same number every year, as a percentage, a doubling or a halving is, so the answer is **“It is multiplied by the same number each time”**.
+- Does the problem ask what the amount will be, or how long until it reaches a target? **What the amount will be after a given time.** The words “What will it be after the third rise?” give a time and ask for the amount at the end of it, so the answer is **“What the amount will be after a given time”**.
 - Why not **Linear growth**: The change is a share of what the amount has reached, so it is not the same size each time. **Linear growth** would be the name if the same number were added each time.
 - What would make it a different kind: If the rent went up by €80 every year, it would be **Linear growth**.
 - Taught on: “Worked: orders at a bakery after 4 weeks” (one tap opens the card).
@@ -2717,9 +2717,9 @@ Each question is shown with all of its answers from the key, in the key’s orde
   The amount at the end is the start multiplied by the *multiplier* once for each time, so the question is how many multiplications by the *multiplier* turn the start into the target. The log of a number turns multiplying into adding: each multiplication adds the same amount, the log of the *multiplier*, to the log of the amount. So the number of multiplications is the log of how many times bigger the target is than the start, divided by the log of the *multiplier*. The check with whole numbers of times shows that the answer is where it should be.
 - If you chose About 10.0 years: You chose **About 10.0 years**. That is the answer you get when you add the same share of the start each time, so every rise is the same size, which ignores that each rise is bigger than the last.
 - If you chose About 2 years: You chose **About 2 years**. That is the answer you get when you give how many times bigger the target is as the number of years.
-- What does the problem ask you to work out? **What an amount becomes over time, or how long it takes.** The words “an account that pays 10% a year, with all the interest left in” follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a *formula*, and there is no shape or chance, so the key’s first answer is **“What an amount becomes over time, or how long it takes”**.
-- What happens to the amount each time it changes? **It is multiplied by the same number each time.** The words “an account that pays 10% a year, with all the interest left in” show the amount being multiplied by the same number every year, as a percentage, a doubling or a halving is, so the key’s answer is **“It is multiplied by the same number each time”**.
-- Does the problem ask what the amount will be, or how long until it reaches a target? **How long until the amount reaches a target.** The words “After how many years will she have €4,000?” give a target for the amount and ask how long until it gets there, so the key’s answer is **“How long until the amount reaches a target”**.
+- What does the problem ask you to work out? **What an amount becomes over time, or how long it takes.** The words “an account that pays 10% a year, with all the interest left in” follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a *formula*, and there is no shape or chance, so the answer to the first question is **“What an amount becomes over time, or how long it takes”**.
+- What happens to the amount each time it changes? **It is multiplied by the same number each time.** The words “an account that pays 10% a year, with all the interest left in” show the amount being multiplied by the same number every year, as a percentage, a doubling or a halving is, so the answer is **“It is multiplied by the same number each time”**.
+- Does the problem ask what the amount will be, or how long until it reaches a target? **How long until the amount reaches a target.** The words “After how many years will she have €4,000?” give a target for the amount and ask how long until it gets there, so the answer is **“How long until the amount reaches a target”**.
 - Why not **Linear growth**: The amount is multiplied each time, and the problem gives a target and asks how long. **Linear growth** would be the name if the same number were added each time.
 - What would make it a different kind: If the account added €200 every year, it would be **Linear growth**, and €4,000 would be reached in 10 years.
 - Taught on: “Worked: how many years until €1,500 becomes €3,000” (one tap opens the card).
@@ -2747,9 +2747,9 @@ Each question is shown with all of its answers from the key, in the key’s orde
   A change that came one time, and is not said to come again, is not a pattern, so nothing is carried forward. The amount after the change is the amount at any later time, and a target that it is not already at is never reached unless a new change is made. The size of the change is a fact about the one change, and it is not carried forward.
 - If you chose €1,860: You chose **€1,860**. That is the answer you get when you carry the change forward as if it came again every year.
 - If you chose €1,897.98: You chose **€1,897.98**. That is the answer you get when you carry the percentage forward as if it came again every year.
-- What does the problem ask you to work out? **What an amount becomes over time, or how long it takes.** The words “it has stayed at €1,560 ever since” follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a *formula*, and there is no shape or chance, so the key’s first answer is **“What an amount becomes over time, or how long it takes”**.
-- What happens to the amount each time it changes? **It changed once, and has stayed the same since.** The words “was raised by 4% in January, to €1,560 a month” and “it has stayed at €1,560 ever since” show the amount changing one time and staying where it reached, so no change repeats and the key’s answer is **“It changed once, and has stayed the same since”**.
-- Does the problem ask what the amount will be, or how long until it reaches a target? **What the amount will be after a given time.** The words “What will it be after 5 years?” give a time and ask for the amount at the end of it, so the key’s answer is **“What the amount will be after a given time”**. For this kind either answer to this question leads to the same procedure.
+- What does the problem ask you to work out? **What an amount becomes over time, or how long it takes.** The words “it has stayed at €1,560 ever since” follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a *formula*, and there is no shape or chance, so the answer to the first question is **“What an amount becomes over time, or how long it takes”**.
+- What happens to the amount each time it changes? **It changed once, and has stayed the same since.** The words “was raised by 4% in January, to €1,560 a month” and “it has stayed at €1,560 ever since” show the amount changing one time and staying where it reached, so no change repeats and the answer is **“It changed once, and has stayed the same since”**.
+- Does the problem ask what the amount will be, or how long until it reaches a target? **What the amount will be after a given time.** The words “What will it be after 5 years?” give a time and ask for the amount at the end of it, so the answer is **“What the amount will be after a given time”**. For this kind either answer to this question leads to the same procedure.
 - Why not **Exponential growth**: The percentage was applied one time, and the amount has stayed since. **Exponential growth** would be the name if the percentage came again each time.
 - What would make it a different kind: If the pension rose by 4% every year, it would be **Exponential growth**.
 - Taught on: “Worked: a bridge toll in 4 years” (one tap opens the card).
@@ -2777,9 +2777,9 @@ Each question is shown with all of its answers from the key, in the key’s orde
   On a *log scale*, each gridline up is multiplied by 10, so a count that rises one gridline every week is multiplied by 10 every week. The question is how many weeks of multiplying by 10 turn 20 into 150,000, which is how many times the *multiplier* 10 must be multiplied. The log of a number turns multiplying into adding, so that number of weeks is the log of how many times bigger the target is, divided by the log of 10, which is 1.
 - If you chose About 833.2 weeks: You chose **About 833.2 weeks**. That is the answer you get when you add the same share of the start each time, so every rise is the same size, which ignores that each rise is bigger than the last.
 - If you chose About 7,500 weeks: You chose **About 7,500 weeks**. That is the answer you get when you give how many times bigger the target is as the number of weeks.
-- What does the problem ask you to work out? **What an amount becomes over time, or how long it takes.** The words “The count rises one gridline every week” follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a *formula*, and there is no shape or chance, so the key’s first answer is **“What an amount becomes over time, or how long it takes”**.
-- What happens to the amount each time it changes? **It is multiplied by the same number each time.** The words “The count rises one gridline every week” show the amount being multiplied by the same number every week, as a percentage, a doubling or a halving is, so the key’s answer is **“It is multiplied by the same number each time”**.
-- Does the problem ask what the amount will be, or how long until it reaches a target? **How long until the amount reaches a target.** The words “After how many weeks will it reach 150,000 followers?” give a target for the amount and ask how long until it gets there, so the key’s answer is **“How long until the amount reaches a target”**.
+- What does the problem ask you to work out? **What an amount becomes over time, or how long it takes.** The words “The count rises one gridline every week” follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a *formula*, and there is no shape or chance, so the answer to the first question is **“What an amount becomes over time, or how long it takes”**.
+- What happens to the amount each time it changes? **It is multiplied by the same number each time.** The words “The count rises one gridline every week” show the amount being multiplied by the same number every week, as a percentage, a doubling or a halving is, so the answer is **“It is multiplied by the same number each time”**.
+- Does the problem ask what the amount will be, or how long until it reaches a target? **How long until the amount reaches a target.** The words “After how many weeks will it reach 150,000 followers?” give a target for the amount and ask how long until it gets there, so the answer is **“How long until the amount reaches a target”**.
 - Why not **Exponential growth**: The problem gives a target for the amount and asks how long, so the time is what is missing. **Exponential growth** would be the name if it gave a time and asked for the amount.
 - What would make it a different kind: If the count rose by 10 followers every week, it would be **Linear growth**.
 - Taught on: “Worked: how many years until €1,500 becomes €3,000” (one tap opens the card).
@@ -2806,24 +2806,24 @@ Each question is shown with all of its answers from the key, in the key’s orde
   An amount that changes by a share of itself is multiplied by the same *multiplier* each time, and each multiplication is made on the result of the last, not on the start. That is why the changes are bigger when the amount grows and smaller when it shrinks. Multiplying once for each time the amount changes gives the amount at the end, and rounding only at the end keeps the answer true.
 - If you chose 80 members: You chose **80 members**. That is the answer you get when you multiply by 2 instead of 3, forgetting that the members who were already there are still members.
 - If you chose 70 members: You chose **70 members**. That is the answer you get when you add the first rise again each time, so every rise is the same size instead of growing.
-- What does the problem ask you to work out? **What an amount becomes over time, or how long it takes.** The words “Every month each member brings in 2 new members, and nobody leaves” follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a *formula*, and there is no shape or chance, so the key’s first answer is **“What an amount becomes over time, or how long it takes”**.
-- What happens to the amount each time it changes? **It is multiplied by the same number each time.** The words “Every month each member brings in 2 new members, and nobody leaves” show the amount being multiplied by the same number every month, as a percentage, a doubling or a halving is, so the key’s answer is **“It is multiplied by the same number each time”**.
-- Does the problem ask what the amount will be, or how long until it reaches a target? **What the amount will be after a given time.** The words “How many members will the club have after 3 months?” give a time and ask for the amount at the end of it, so the key’s answer is **“What the amount will be after a given time”**.
+- What does the problem ask you to work out? **What an amount becomes over time, or how long it takes.** The words “Every month each member brings in 2 new members, and nobody leaves” follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a *formula*, and there is no shape or chance, so the answer to the first question is **“What an amount becomes over time, or how long it takes”**.
+- What happens to the amount each time it changes? **It is multiplied by the same number each time.** The words “Every month each member brings in 2 new members, and nobody leaves” show the amount being multiplied by the same number every month, as a percentage, a doubling or a halving is, so the answer is **“It is multiplied by the same number each time”**.
+- Does the problem ask what the amount will be, or how long until it reaches a target? **What the amount will be after a given time.** The words “How many members will the club have after 3 months?” give a time and ask for the amount at the end of it, so the answer is **“What the amount will be after a given time”**.
 - Why not **Linear growth**: The change is a share of what the amount has reached, so it is not the same size each time. **Linear growth** would be the name if the same number were added each time.
 - What would make it a different kind: If the club gained 2 new members every month in all, it would be **Linear growth**.
 - Taught on: “Worked: orders at a bakery after 4 weeks” (one tap opens the card).
 
-**When the drill ends.** The learner sees their own results: first-try accuracy for each stage, whole routes beside single questions, the pair of names they mixed up most often, and what will come back and when. Anything missed was asked again before the drill ended. Nothing here is graded. A miss only decides what comes back.
+**When the drill ends.** The learner sees their own results: first-try accuracy for each stage, whole cases beside single questions, the pair of names they mixed up most often, and what will come back and when. Anything missed was asked again before the drill ended. Nothing here is graded. A miss only decides what comes back.
 
 ### 48. What to carry away
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 48 of 49*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 48 of 49*
 
 [reviewers only: card kind `recap`, id `recap-growth`]
 
-You have now worked problems of all four kinds on your own. This card puts the unit in one place, in the key’s words.
+You have now worked problems of all four kinds on your own. This card puts the unit in one place.
 
-**The key for this unit, in its own words**
+**This unit’s questions and answers**
 
 What happens to the amount each time it changes?
 - It goes up or down by the same number each time → Linear growth
@@ -2847,7 +2847,7 @@ Does the problem ask what the amount will be, or how long until it reaches a tar
 
 **To carry away**
 
-- Before any working, put two questions to the problem and point to the words that answer each. The key asks: **“What happens to the amount each time it changes?”** And then: **“Does the problem ask what the amount will be, or how long until it reaches a target?”**
+- Before any working, put two questions to the problem and point to the words that answer each. The questions are: **“What happens to the amount each time it changes?”** And then: **“Does the problem ask what the amount will be, or how long until it reaches a target?”**
 - A change of the same size every time, up or down, is **Linear growth**. Find the start and the change each time. Going forwards, work out the change in all, which is the change each time multiplied by how many times, and add it to the start, or take it away if the amount goes down. Going backwards, take the start from the target to find the change needed in all, and divide it by the change each time to find how many times.
 - A share of the amount each time, or a doubling or a halving, is a multiplying kind. Find the *multiplier*: 100% plus the percentage if the amount goes up, 100% minus it if the amount goes down, written as a decimal, or 2 for a doubling and 0.5 for a halving.
 - If the problem gives a time and asks for the amount, it is **Exponential growth**. Multiply the start by the *multiplier* once for each time the amount changes, each time on the result of the last, and round only at the end. Adding the first change again each time gives an answer that is too low when the amount grows.
@@ -2858,7 +2858,7 @@ Does the problem ask what the amount will be, or how long until it reaches a tar
 
 ### 49. Where would you meet this?
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 49 of 49*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 49 of 49*
 
 [reviewers only: card kind `transfer`, id `transfer-growth`]
 
@@ -2885,7 +2885,7 @@ One line is enough. It is kept on this device only and is never marked.
 
 ## After the unit: what comes back on later days
 
-A name that is due returns as a case the learner has not seen, next to a case of the name they most often confuse it with. Each is run as a whole route. These are the fresh cases held back for that purpose: three for each name, one for each scheduled return. The first return is about two days after the drill, the next about a week after that, the next about three and a half weeks later.
+A name that is due returns as a case the learner has not seen, next to a case of the name they most often confuse it with. Each is run as a whole case: every question, then the name. These are the fresh cases held back for that purpose: three for each name, one for each scheduled return. The first return is about two days after the drill, the next about a week after that, the next about three and a half weeks later.
 
 **Return case 1 of 12**
 
@@ -2909,9 +2909,9 @@ A name that is due returns as a case the learner has not seen, next to a case of
   The same number is added every time, so the change in all is that number multiplied by how many times. Going forwards, the change in all is worked out from the time and put on the start. Going backwards, the start is taken from the target to find the change needed, and that is divided by the change each time to find how many times. The two directions are one fact, read two ways.
 - If you chose 165 tins: You chose **165 tins**. That is the answer you get when you change the amount only once, instead of once for each week.
 - If you chose 1,320 tins: You chose **1,320 tins**. That is the answer you get when you add the change to the start first and then multiply by the number of weeks, so the start is counted again every week.
-- What does the problem ask you to work out? **What an amount becomes over time, or how long it takes.** The words “a delivery brings 45 more tins every week” follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a *formula*, and there is no shape or chance, so the key’s first answer is **“What an amount becomes over time, or how long it takes”**.
-- What happens to the amount each time it changes? **It goes up or down by the same number each time.** The words “a delivery brings 45 more tins every week” show the amount going up by the same number every week, whatever it has reached so far, so the key’s answer is **“It goes up or down by the same number each time”**.
-- Does the problem ask what the amount will be, or how long until it reaches a target? **What the amount will be after a given time.** The words “How many tins will it hold after 8 weeks?” give a time and ask for the amount at the end of it, so the key’s answer is **“What the amount will be after a given time”**. For this kind either answer to this question leads to the same procedure, run forwards for the amount and backwards for the time.
+- What does the problem ask you to work out? **What an amount becomes over time, or how long it takes.** The words “a delivery brings 45 more tins every week” follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a *formula*, and there is no shape or chance, so the answer to the first question is **“What an amount becomes over time, or how long it takes”**.
+- What happens to the amount each time it changes? **It goes up or down by the same number each time.** The words “a delivery brings 45 more tins every week” show the amount going up by the same number every week, whatever it has reached so far, so the answer is **“It goes up or down by the same number each time”**.
+- Does the problem ask what the amount will be, or how long until it reaches a target? **What the amount will be after a given time.** The words “How many tins will it hold after 8 weeks?” give a time and ask for the amount at the end of it, so the answer is **“What the amount will be after a given time”**. For this kind either answer to this question leads to the same procedure, run forwards for the amount and backwards for the time.
 - Why not **Exponential growth**: The amount is raised or lowered by the same figure every time, and not by a share of what it has reached. **Exponential growth** would be the name if each change were a percentage of the amount so far, or a doubling.
 - Taught on: “Worked: bricks on a scaffold after 5 hours” (one tap opens the card).
 
@@ -2937,9 +2937,9 @@ A name that is due returns as a case the learner has not seen, next to a case of
   The same number is added every time, so the change in all is that number multiplied by how many times. Going forwards, the change in all is worked out from the time and put on the start. Going backwards, the start is taken from the target to find the change needed, and that is divided by the change each time to find how many times. The two directions are one fact, read two ways.
 - If you chose 5 days: You chose **5 days**. That is the answer you get when you divide the target by the change each time, and forget to take the start away from it first.
 - If you chose 360 days: You chose **360 days**. That is the answer you get when you multiply the change needed in all by the change each time, instead of dividing.
-- What does the problem ask you to work out? **What an amount becomes over time, or how long it takes.** The words “the heater burns 6 litres every day” follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a *formula*, and there is no shape or chance, so the key’s first answer is **“What an amount becomes over time, or how long it takes”**.
-- What happens to the amount each time it changes? **It goes up or down by the same number each time.** The words “the heater burns 6 litres every day” show the amount going down by the same number every day, whatever it has reached so far, so the key’s answer is **“It goes up or down by the same number each time”**.
-- Does the problem ask what the amount will be, or how long until it reaches a target? **How long until the amount reaches a target.** The words “After how many days will 30 litres be left?” give a target for the amount and ask how long until it gets there, so the key’s answer is **“How long until the amount reaches a target”**. For this kind either answer to this question leads to the same procedure, run forwards for the amount and backwards for the time.
+- What does the problem ask you to work out? **What an amount becomes over time, or how long it takes.** The words “the heater burns 6 litres every day” follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a *formula*, and there is no shape or chance, so the answer to the first question is **“What an amount becomes over time, or how long it takes”**.
+- What happens to the amount each time it changes? **It goes up or down by the same number each time.** The words “the heater burns 6 litres every day” show the amount going down by the same number every day, whatever it has reached so far, so the answer is **“It goes up or down by the same number each time”**.
+- Does the problem ask what the amount will be, or how long until it reaches a target? **How long until the amount reaches a target.** The words “After how many days will 30 litres be left?” give a target for the amount and ask how long until it gets there, so the answer is **“How long until the amount reaches a target”**. For this kind either answer to this question leads to the same procedure, run forwards for the amount and backwards for the time.
 - Why not **Logarithm**: The amount changes by the same number each time, so every change is the same size. **Logarithm** would be the name if each change were a share of the amount so far and the problem gave a target for it to reach.
 - Taught on: “Worked: bricks on a scaffold after 5 hours” (one tap opens the card).
 
@@ -2965,9 +2965,9 @@ A name that is due returns as a case the learner has not seen, next to a case of
   The same number is added every time, so the change in all is that number multiplied by how many times. Going forwards, the change in all is worked out from the time and put on the start. Going backwards, the start is taken from the target to find the change needed, and that is divided by the change each time to find how many times. The two directions are one fact, read two ways.
 - If you chose €2,325: You chose **€2,325**. That is the answer you get when you change the amount only once, instead of once for each month.
 - If you chose €3,300: You chose **€3,300**. That is the answer you get when you add the fall to the start instead of taking it away.
-- What does the problem ask you to work out? **What an amount becomes over time, or how long it takes.** The words “she pays off €75 of it every month, with no interest” follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a *formula*, and there is no shape or chance, so the key’s first answer is **“What an amount becomes over time, or how long it takes”**.
-- What happens to the amount each time it changes? **It goes up or down by the same number each time.** The words “she pays off €75 of it every month, with no interest” show the amount going down by the same number every month, whatever it has reached so far, so the key’s answer is **“It goes up or down by the same number each time”**.
-- Does the problem ask what the amount will be, or how long until it reaches a target? **What the amount will be after a given time.** The words “How much will she owe after 12 months?” give a time and ask for the amount at the end of it, so the key’s answer is **“What the amount will be after a given time”**. For this kind either answer to this question leads to the same procedure, run forwards for the amount and backwards for the time.
+- What does the problem ask you to work out? **What an amount becomes over time, or how long it takes.** The words “she pays off €75 of it every month, with no interest” follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a *formula*, and there is no shape or chance, so the answer to the first question is **“What an amount becomes over time, or how long it takes”**.
+- What happens to the amount each time it changes? **It goes up or down by the same number each time.** The words “she pays off €75 of it every month, with no interest” show the amount going down by the same number every month, whatever it has reached so far, so the answer is **“It goes up or down by the same number each time”**.
+- Does the problem ask what the amount will be, or how long until it reaches a target? **What the amount will be after a given time.** The words “How much will she owe after 12 months?” give a time and ask for the amount at the end of it, so the answer is **“What the amount will be after a given time”**. For this kind either answer to this question leads to the same procedure, run forwards for the amount and backwards for the time.
 - Why not **Exponential growth**: The amount is raised or lowered by the same figure every time, and not by a share of what it has reached. **Exponential growth** would be the name if each change were a percentage of the amount so far, or a doubling.
 - Taught on: “Worked: bricks on a scaffold after 5 hours” (one tap opens the card).
 
@@ -2993,9 +2993,9 @@ A name that is due returns as a case the learner has not seen, next to a case of
   An amount that changes by a share of itself is multiplied by the same *multiplier* each time, and each multiplication is made on the result of the last, not on the start. That is why the changes are bigger when the amount grows and smaller when it shrinks. Multiplying once for each time the amount changes gives the amount at the end, and rounding only at the end keeps the answer true.
 - If you chose 1,300 passengers: You chose **1,300 passengers**. That is the answer you get when you add the first rise again each time, so every rise is the same size instead of growing.
 - If you chose 1,210 passengers: You chose **1,210 passengers**. That is the answer you get when you multiply one time too few, once for every time but the last.
-- What does the problem ask you to work out? **What an amount becomes over time, or how long it takes.** The words “the number grows by 10% every week” follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a *formula*, and there is no shape or chance, so the key’s first answer is **“What an amount becomes over time, or how long it takes”**.
-- What happens to the amount each time it changes? **It is multiplied by the same number each time.** The words “the number grows by 10% every week” show the amount being multiplied by the same number every week, as a percentage, a doubling or a halving is, so the key’s answer is **“It is multiplied by the same number each time”**.
-- Does the problem ask what the amount will be, or how long until it reaches a target? **What the amount will be after a given time.** The words “How many passengers will it carry in a week, after 3 more weeks?” give a time and ask for the amount at the end of it, so the key’s answer is **“What the amount will be after a given time”**.
+- What does the problem ask you to work out? **What an amount becomes over time, or how long it takes.** The words “the number grows by 10% every week” follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a *formula*, and there is no shape or chance, so the answer to the first question is **“What an amount becomes over time, or how long it takes”**.
+- What happens to the amount each time it changes? **It is multiplied by the same number each time.** The words “the number grows by 10% every week” show the amount being multiplied by the same number every week, as a percentage, a doubling or a halving is, so the answer is **“It is multiplied by the same number each time”**.
+- Does the problem ask what the amount will be, or how long until it reaches a target? **What the amount will be after a given time.** The words “How many passengers will it carry in a week, after 3 more weeks?” give a time and ask for the amount at the end of it, so the answer is **“What the amount will be after a given time”**.
 - Why not **A one-off change**: The percentage comes again every time. **A one-off change** would be the name if it were applied one time and then stopped.
 - Taught on: “Worked: orders at a bakery after 4 weeks” (one tap opens the card).
 
@@ -3021,9 +3021,9 @@ A name that is due returns as a case the learner has not seen, next to a case of
   An amount that changes by a share of itself is multiplied by the same *multiplier* each time, and each multiplication is made on the result of the last, not on the start. That is why the changes are bigger when the amount grows and smaller when it shrinks. Multiplying once for each time the amount changes gives the amount at the end, and rounding only at the end keeps the answer true.
 - If you chose 320 mg: You chose **320 mg**. That is the answer you get when you halve the amount only once, instead of once for each day.
 - If you chose 40 mg: You chose **40 mg**. That is the answer you get when you halve one time too many, once more than the number of days.
-- What does the problem ask you to work out? **What an amount becomes over time, or how long it takes.** The words “a substance that halves every day” follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a *formula*, and there is no shape or chance, so the key’s first answer is **“What an amount becomes over time, or how long it takes”**.
-- What happens to the amount each time it changes? **It is multiplied by the same number each time.** The words “a substance that halves every day” show the amount being multiplied by the same number every day, as a percentage, a doubling or a halving is, so the key’s answer is **“It is multiplied by the same number each time”**.
-- Does the problem ask what the amount will be, or how long until it reaches a target? **What the amount will be after a given time.** The words “How much will be left after 5 days?” give a time and ask for the amount at the end of it, so the key’s answer is **“What the amount will be after a given time”**.
+- What does the problem ask you to work out? **What an amount becomes over time, or how long it takes.** The words “a substance that halves every day” follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a *formula*, and there is no shape or chance, so the answer to the first question is **“What an amount becomes over time, or how long it takes”**.
+- What happens to the amount each time it changes? **It is multiplied by the same number each time.** The words “a substance that halves every day” show the amount being multiplied by the same number every day, as a percentage, a doubling or a halving is, so the answer is **“It is multiplied by the same number each time”**.
+- Does the problem ask what the amount will be, or how long until it reaches a target? **What the amount will be after a given time.** The words “How much will be left after 5 days?” give a time and ask for the amount at the end of it, so the answer is **“What the amount will be after a given time”**.
 - Why not **Logarithm**: The problem gives a time and asks for the amount, so the amount is what is missing. **Logarithm** would be the name if it gave a target for the amount and asked how long.
 - Taught on: “Worked: orders at a bakery after 4 weeks” (one tap opens the card).
 
@@ -3049,9 +3049,9 @@ A name that is due returns as a case the learner has not seen, next to a case of
   An amount that changes by a share of itself is multiplied by the same *multiplier* each time, and each multiplication is made on the result of the last, not on the start. That is why the changes are bigger when the amount grows and smaller when it shrinks. Multiplying once for each time the amount changes gives the amount at the end, and rounding only at the end keeps the answer true.
 - If you chose €4,600.00: You chose **€4,600.00**. That is the answer you get when you add the first rise again each time, so every rise is the same size instead of growing.
 - If you chose €4,410.00: You chose **€4,410.00**. That is the answer you get when you multiply one time too few, once for every time but the last.
-- What does the problem ask you to work out? **What an amount becomes over time, or how long it takes.** The words “pays 5% a year, and she leaves all the interest in” follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a *formula*, and there is no shape or chance, so the key’s first answer is **“What an amount becomes over time, or how long it takes”**.
-- What happens to the amount each time it changes? **It is multiplied by the same number each time.** The words “pays 5% a year, and she leaves all the interest in” show the amount being multiplied by the same number every year, as a percentage, a doubling or a halving is, so the key’s answer is **“It is multiplied by the same number each time”**.
-- Does the problem ask what the amount will be, or how long until it reaches a target? **What the amount will be after a given time.** The words “What will the account hold after 3 years?” give a time and ask for the amount at the end of it, so the key’s answer is **“What the amount will be after a given time”**.
+- What does the problem ask you to work out? **What an amount becomes over time, or how long it takes.** The words “pays 5% a year, and she leaves all the interest in” follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a *formula*, and there is no shape or chance, so the answer to the first question is **“What an amount becomes over time, or how long it takes”**.
+- What happens to the amount each time it changes? **It is multiplied by the same number each time.** The words “pays 5% a year, and she leaves all the interest in” show the amount being multiplied by the same number every year, as a percentage, a doubling or a halving is, so the answer is **“It is multiplied by the same number each time”**.
+- Does the problem ask what the amount will be, or how long until it reaches a target? **What the amount will be after a given time.** The words “What will the account hold after 3 years?” give a time and ask for the amount at the end of it, so the answer is **“What the amount will be after a given time”**.
 - Why not **Linear growth**: The change is a share of what the amount has reached, so it is not the same size each time. **Linear growth** would be the name if the same number were added each time.
 - Taught on: “Worked: orders at a bakery after 4 weeks” (one tap opens the card).
 
@@ -3078,9 +3078,9 @@ A name that is due returns as a case the learner has not seen, next to a case of
   The amount at the end is the start multiplied by the *multiplier* once for each time, so the question is how many multiplications by the *multiplier* turn the start into the target. The log of a number turns multiplying into adding: each multiplication adds the same amount, the log of the *multiplier*, to the log of the amount. So the number of multiplications is the log of how many times bigger the target is than the start, divided by the log of the *multiplier*. The check with whole numbers of times shows that the answer is where it should be.
 - If you chose About 6.7 months: You chose **About 6.7 months**. That is the answer you get when you add the same share of the start each time, so every rise is the same size, which ignores that each rise is bigger than the last.
 - If you chose About 2 months: You chose **About 2 months**. That is the answer you get when you give how many times bigger the target is as the number of months.
-- What does the problem ask you to work out? **What an amount becomes over time, or how long it takes.** The words “the number of customers grows by 15% every month” follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a *formula*, and there is no shape or chance, so the key’s first answer is **“What an amount becomes over time, or how long it takes”**.
-- What happens to the amount each time it changes? **It is multiplied by the same number each time.** The words “the number of customers grows by 15% every month” show the amount being multiplied by the same number every month, as a percentage, a doubling or a halving is, so the key’s answer is **“It is multiplied by the same number each time”**.
-- Does the problem ask what the amount will be, or how long until it reaches a target? **How long until the amount reaches a target.** The words “After how many months will it have 600 customers?” give a target for the amount and ask how long until it gets there, so the key’s answer is **“How long until the amount reaches a target”**.
+- What does the problem ask you to work out? **What an amount becomes over time, or how long it takes.** The words “the number of customers grows by 15% every month” follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a *formula*, and there is no shape or chance, so the answer to the first question is **“What an amount becomes over time, or how long it takes”**.
+- What happens to the amount each time it changes? **It is multiplied by the same number each time.** The words “the number of customers grows by 15% every month” show the amount being multiplied by the same number every month, as a percentage, a doubling or a halving is, so the answer is **“It is multiplied by the same number each time”**.
+- Does the problem ask what the amount will be, or how long until it reaches a target? **How long until the amount reaches a target.** The words “After how many months will it have 600 customers?” give a target for the amount and ask how long until it gets there, so the answer is **“How long until the amount reaches a target”**.
 - Why not **A one-off change**: The amount keeps changing, so a target can be reached after some time. **A one-off change** would be the name if the amount changed once and then stayed.
 - Taught on: “Worked: how many years until €1,500 becomes €3,000” (one tap opens the card).
 
@@ -3107,9 +3107,9 @@ A name that is due returns as a case the learner has not seen, next to a case of
   The amount at the end is the start multiplied by the *multiplier* once for each time, so the question is how many multiplications by the *multiplier* turn the start into the target. The log of a number turns multiplying into adding: each multiplication adds the same amount, the log of the *multiplier*, to the log of the amount. So the number of multiplications is the log of how many times bigger the target is than the start, divided by the log of the *multiplier*. The check with whole numbers of times shows that the answer is where it should be.
 - If you chose About 15.0 days: You chose **About 15.0 days**. That is the answer you get when you add the same share of the start each time, so every rise is the same size, which ignores that each rise is bigger than the last.
 - If you chose About 16 days: You chose **About 16 days**. That is the answer you get when you give how many times bigger the target is as the number of days.
-- What does the problem ask you to work out? **What an amount becomes over time, or how long it takes.** The words “the amount doubles every day” follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a *formula*, and there is no shape or chance, so the key’s first answer is **“What an amount becomes over time, or how long it takes”**.
-- What happens to the amount each time it changes? **It is multiplied by the same number each time.** The words “the amount doubles every day” show the amount being multiplied by the same number every day, as a percentage, a doubling or a halving is, so the key’s answer is **“It is multiplied by the same number each time”**.
-- Does the problem ask what the amount will be, or how long until it reaches a target? **How long until the amount reaches a target.** The words “After how many days will it hold 800 ml?” give a target for the amount and ask how long until it gets there, so the key’s answer is **“How long until the amount reaches a target”**.
+- What does the problem ask you to work out? **What an amount becomes over time, or how long it takes.** The words “the amount doubles every day” follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a *formula*, and there is no shape or chance, so the answer to the first question is **“What an amount becomes over time, or how long it takes”**.
+- What happens to the amount each time it changes? **It is multiplied by the same number each time.** The words “the amount doubles every day” show the amount being multiplied by the same number every day, as a percentage, a doubling or a halving is, so the answer is **“It is multiplied by the same number each time”**.
+- Does the problem ask what the amount will be, or how long until it reaches a target? **How long until the amount reaches a target.** The words “After how many days will it hold 800 ml?” give a target for the amount and ask how long until it gets there, so the answer is **“How long until the amount reaches a target”**.
 - Why not **Exponential growth**: The problem gives a target for the amount and asks how long, so the time is what is missing. **Exponential growth** would be the name if it gave a time and asked for the amount.
 - Taught on: “Worked: how many years until €1,500 becomes €3,000” (one tap opens the card).
 
@@ -3136,9 +3136,9 @@ A name that is due returns as a case the learner has not seen, next to a case of
   The amount at the end is the start multiplied by the *multiplier* once for each time, so the question is how many multiplications by the *multiplier* turn the start into the target. The log of a number turns multiplying into adding: each multiplication adds the same amount, the log of the *multiplier*, to the log of the amount. So the number of multiplications is the log of how many times bigger the target is than the start, divided by the log of the *multiplier*. The check with whole numbers of times shows that the answer is where it should be.
 - If you chose About 2.5 years: You chose **About 2.5 years**. That is the answer you get when you take away the same share of the start each time, so every fall is the same size, which ignores that each fall is smaller than the last.
 - If you chose About 2 years: You chose **About 2 years**. That is the answer you get when you give how many times smaller the target is as the number of years.
-- What does the problem ask you to work out? **What an amount becomes over time, or how long it takes.** The words “its value falls by 20% every year” follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a *formula*, and there is no shape or chance, so the key’s first answer is **“What an amount becomes over time, or how long it takes”**.
-- What happens to the amount each time it changes? **It is multiplied by the same number each time.** The words “its value falls by 20% every year” show the amount being multiplied by the same number every year, as a percentage, a doubling or a halving is, so the key’s answer is **“It is multiplied by the same number each time”**.
-- Does the problem ask what the amount will be, or how long until it reaches a target? **How long until the amount reaches a target.** The words “After how many years will it be worth €10,000?” give a target for the amount and ask how long until it gets there, so the key’s answer is **“How long until the amount reaches a target”**.
+- What does the problem ask you to work out? **What an amount becomes over time, or how long it takes.** The words “its value falls by 20% every year” follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a *formula*, and there is no shape or chance, so the answer to the first question is **“What an amount becomes over time, or how long it takes”**.
+- What happens to the amount each time it changes? **It is multiplied by the same number each time.** The words “its value falls by 20% every year” show the amount being multiplied by the same number every year, as a percentage, a doubling or a halving is, so the answer is **“It is multiplied by the same number each time”**.
+- Does the problem ask what the amount will be, or how long until it reaches a target? **How long until the amount reaches a target.** The words “After how many years will it be worth €10,000?” give a target for the amount and ask how long until it gets there, so the answer is **“How long until the amount reaches a target”**.
 - Why not **Linear growth**: The amount is multiplied each time, and the problem gives a target and asks how long. **Linear growth** would be the name if the same number were added each time.
 - Taught on: “Worked: how many years until €1,500 becomes €3,000” (one tap opens the card).
 
@@ -3165,9 +3165,9 @@ A name that is due returns as a case the learner has not seen, next to a case of
   A change that came one time, and is not said to come again, is not a pattern, so nothing is carried forward. The amount after the change is the amount at any later time, and a target that it is not already at is never reached unless a new change is made. The size of the change is a fact about the one change, and it is not carried forward.
 - If you chose €11.00: You chose **€11.00**. That is the answer you get when you carry the change forward as if it came again every year.
 - If you chose €14.28: You chose **€14.28**. That is the answer you get when you carry the percentage forward as if it came again every year.
-- What does the problem ask you to work out? **What an amount becomes over time, or how long it takes.** The words “it has stayed at €6.50” follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a *formula*, and there is no shape or chance, so the key’s first answer is **“What an amount becomes over time, or how long it takes”**.
-- What happens to the amount each time it changes? **It changed once, and has stayed the same since.** The words “After a refit it was set at €6.50” and “it has stayed at €6.50” show the amount changing one time and staying where it reached, so no change repeats and the key’s answer is **“It changed once, and has stayed the same since”**.
-- Does the problem ask what the amount will be, or how long until it reaches a target? **What the amount will be after a given time.** The words “What will the entry cost after 3 years?” give a time and ask for the amount at the end of it, so the key’s answer is **“What the amount will be after a given time”**. For this kind either answer to this question leads to the same procedure.
+- What does the problem ask you to work out? **What an amount becomes over time, or how long it takes.** The words “it has stayed at €6.50” follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a *formula*, and there is no shape or chance, so the answer to the first question is **“What an amount becomes over time, or how long it takes”**.
+- What happens to the amount each time it changes? **It changed once, and has stayed the same since.** The words “After a refit it was set at €6.50” and “it has stayed at €6.50” show the amount changing one time and staying where it reached, so no change repeats and the answer is **“It changed once, and has stayed the same since”**.
+- Does the problem ask what the amount will be, or how long until it reaches a target? **What the amount will be after a given time.** The words “What will the entry cost after 3 years?” give a time and ask for the amount at the end of it, so the answer is **“What the amount will be after a given time”**. For this kind either answer to this question leads to the same procedure.
 - Why not **Linear growth**: The change was made one time and the amount has stayed since, so nothing is added again. **Linear growth** would be the name if the same number were added each time.
 - Taught on: “Worked: a bridge toll in 4 years” (one tap opens the card).
 
@@ -3194,9 +3194,9 @@ A name that is due returns as a case the learner has not seen, next to a case of
   A change that came one time, and is not said to come again, is not a pattern, so nothing is carried forward. The amount after the change is the amount at any later time, and a target that it is not already at is never reached unless a new change is made. The size of the change is a fact about the one change, and it is not carried forward.
 - If you chose About 1.0 year: You chose **About 1.0 year**. That is the answer you get when you add the change again every year until the target is reached, as if it came again each time.
 - If you chose About 0.8 years: You chose **About 0.8 years**. That is the answer you get when you apply the same percentage again every year until the target is reached, as if it came again each time.
-- What does the problem ask you to work out? **What an amount becomes over time, or how long it takes.** The words “the contract fixes it there” follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a *formula*, and there is no shape or chance, so the key’s first answer is **“What an amount becomes over time, or how long it takes”**.
-- What happens to the amount each time it changes? **It changed once, and has stayed the same since.** The words “Under a new contract she is paid €10 for every delivery” and “the contract fixes it there” show the amount changing one time and staying where it reached, so no change repeats and the key’s answer is **“It changed once, and has stayed the same since”**.
-- Does the problem ask what the amount will be, or how long until it reaches a target? **How long until the amount reaches a target.** The words “After how many years will she be paid €12 for a delivery?” give a target for the amount and ask how long until it gets there, so the key’s answer is **“How long until the amount reaches a target”**. For this kind either answer to this question leads to the same procedure.
+- What does the problem ask you to work out? **What an amount becomes over time, or how long it takes.** The words “the contract fixes it there” follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a *formula*, and there is no shape or chance, so the answer to the first question is **“What an amount becomes over time, or how long it takes”**.
+- What happens to the amount each time it changes? **It changed once, and has stayed the same since.** The words “Under a new contract she is paid €10 for every delivery” and “the contract fixes it there” show the amount changing one time and staying where it reached, so no change repeats and the answer is **“It changed once, and has stayed the same since”**.
+- Does the problem ask what the amount will be, or how long until it reaches a target? **How long until the amount reaches a target.** The words “After how many years will she be paid €12 for a delivery?” give a target for the amount and ask how long until it gets there, so the answer is **“How long until the amount reaches a target”**. For this kind either answer to this question leads to the same procedure.
 - Why not **Exponential growth**: The percentage was applied one time, and the amount has stayed since. **Exponential growth** would be the name if the percentage came again each time.
 - Taught on: “Worked: a bridge toll in 4 years” (one tap opens the card).
 
@@ -3223,9 +3223,9 @@ A name that is due returns as a case the learner has not seen, next to a case of
   A change that came one time, and is not said to come again, is not a pattern, so nothing is carried forward. The amount after the change is the amount at any later time, and a target that it is not already at is never reached unless a new change is made. The size of the change is a fact about the one change, and it is not carried forward.
 - If you chose €12.00: You chose **€12.00**. That is the answer you get when you carry the change forward as if it came again every year.
 - If you chose €15.36: You chose **€15.36**. That is the answer you get when you carry the percentage forward as if it came again every year.
-- What does the problem ask you to work out? **What an amount becomes over time, or how long it takes.** The words “the new plan fixes it there” follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a *formula*, and there is no shape or chance, so the key’s first answer is **“What an amount becomes over time, or how long it takes”**.
-- What happens to the amount each time it changes? **It changed once, and has stayed the same since.** The words “After switching plans it has been €24 a month” and “the new plan fixes it there” show the amount changing one time and staying where it reached, so no change repeats and the key’s answer is **“It changed once, and has stayed the same since”**.
-- Does the problem ask what the amount will be, or how long until it reaches a target? **What the amount will be after a given time.** The words “What will the bill be after 2 years?” give a time and ask for the amount at the end of it, so the key’s answer is **“What the amount will be after a given time”**. For this kind either answer to this question leads to the same procedure.
+- What does the problem ask you to work out? **What an amount becomes over time, or how long it takes.** The words “the new plan fixes it there” follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a *formula*, and there is no shape or chance, so the answer to the first question is **“What an amount becomes over time, or how long it takes”**.
+- What happens to the amount each time it changes? **It changed once, and has stayed the same since.** The words “After switching plans it has been €24 a month” and “the new plan fixes it there” show the amount changing one time and staying where it reached, so no change repeats and the answer is **“It changed once, and has stayed the same since”**.
+- Does the problem ask what the amount will be, or how long until it reaches a target? **What the amount will be after a given time.** The words “What will the bill be after 2 years?” give a time and ask for the amount at the end of it, so the answer is **“What the amount will be after a given time”**. For this kind either answer to this question leads to the same procedure.
 - Why not **Logarithm**: The amount changed once and has stopped, so it is not multiplied again and a target is not reached by waiting. **Logarithm** would be the name if the amount were multiplied each time.
 - Taught on: “Worked: a bridge toll in 4 years” (one tap opens the card).
 

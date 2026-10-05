@@ -1,15 +1,15 @@
 # Learner view: Psychology, Unit Three: Something one person does to another
 
-*Four things one person can do to another that work against them, and how to tell them from the many cases where none of them is happening.* Unit revision 1, built to lesson standard 1, status: draft.
+*Four things one person can do to another that work against them, and how to tell them from the many cases where none of them is happening.* Unit revision 2, built to lesson standard 1, status: draft.
 
 This file is generated from the data files by `tools/render-learner-view.mjs`. It shows every screen in the order a learner meets it. In the app one card is on screen at a time and the learner moves on when ready.
 
-- **Bold text in quotation marks** is the key’s own wording, printed from `key.js`. Bold names are the outcome names from the same file. Neither is typed anywhere else. "What you must be able to point to" lines and "How to tell them apart" lines are also printed from one place each (the key and the look-alike ledger).
+- **Bold text in quotation marks** is the subject’s own wording for its questions and answers, written once and printed everywhere. Bold names are the names, written once in the same place. Neither is typed anywhere else. "What you must be able to point to" lines and "How to tell them apart" lines are also printed from one place each (the subject’s questions and the pairs it compares).
 - ⟦Double brackets⟧ show the words the app marks in a case (one highlight style everywhere).
 - The line in italics under each heading is the app’s top bar. The line in square brackets after it is for reviewers and is not shown to the learner.
 - Headings, prompt wording and stage instructions that are the same in every unit are the app’s wording, not this unit’s.
 - "Shown as soon as you …" is what appears the moment the learner answers. Nothing is hidden behind a second tap the first time a case is met, or after a miss.
-- After every answer the app shows, in this order: the right answer in the key’s words; the reason, quoting the marked words; for a name, why the nearest wrong name fails; after a miss, a line about the answer the learner chose; and last a link to the card that taught it. Where a line about the learner’s own choice is not written for the case, the app builds it from the key, and this file says so in place of repeating it.
+- After every answer the app shows, in this order: the right answer; the reason, quoting the marked words; for a name, why the nearest wrong name fails; after a miss, a line about the answer the learner chose; and last a link to the card that taught it. Where a line about the learner’s own choice is not written for the case, the app builds it from the answers’ own wording, and this file says so in place of repeating it.
 
 ---
 
@@ -17,7 +17,7 @@ This file is generated from the data files by `tools/render-learner-view.mjs`. I
 
 ### 1. Four things one person can do to another, and the ordinary exchange that is none of them
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 1 of 42*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 1 of 42*
 
 [reviewers only: card kind `orient`, id `orient`]
 
@@ -27,18 +27,18 @@ You have heard all of these. 'That never happened.' 'You're imagining things.' '
 
 This unit teaches four things of the first kind, and one name for the second. The second is the one you will use most. Most arguments, complaints, defences and compliments are not any of the four, and a person who has just been told something unwelcome, or wrongly accused, or hurt, can say every one of those sentences without doing anything to anyone. A sentence on its own cannot tell you which you are hearing, and neither can how upset anyone is. The words and events in the case can, and this unit teaches which ones to look for.
 
-**What Unit One taught, in one place.** The key’s first question is **“What kind of thing is this?”** Its answers:
+**What Unit One taught, in one place.** The first question is **“What kind of thing is this?”** Its answers:
 
 - **“One person’s reasoning”**: give this answer when the case shows how one person reaches, defends or changes a view or a choice of their own.
 - **“Something one person does to another”**: give this answer when the case shows one person saying or doing something to another person, and it is about that person or about what has happened between the two of them. **This unit is about these cases.**
 - **“A lasting way someone is”**: give this answer when the case shows how a person is across years, places and relationships.
 - **“A passing moment”**: give this answer when the case shows how a person feels or acts on one occasion or for one short stretch, often after something has happened to them, and it shows nothing else (no reasons for a view or a choice, nothing said or done to another person about them, and nothing across years).
 
-Unit One also taught that two things are marked separately: the name you give a case, and your route to it, meaning the answers you gave to the key’s questions on the way.
+Two things are marked separately: the name you give a case, and your answers to the questions on the way to it.
 
 *(One tap on any of these lines opens the card in Unit One that taught it.)*
 
-**The part of the key this unit teaches.** This is a preview. You are not expected to follow it yet: every line is explained on the cards that come next. The question and its answers are in the key’s own words. Beside each answer, in plain words, is the thing it leads to. There are five of them, and each gets its name when it is taught.
+**The questions this unit teaches.** This is a preview. You are not expected to follow it yet: every line is explained on the cards that come next. The question and its answers are worded exactly as you will meet them. Beside each answer, in plain words, is the thing it leads to. There are five of them, and each gets its name when it is taught.
 
 What does it do to the other person?
 - Tells them, again and again, that what happened did not happen → telling someone, again and again, that what happened did not happen
@@ -60,14 +60,14 @@ The unit has five parts, and you can stop after any of them.
 1. Denials: over months, and in answer to being asked
 2. Accusing someone of what you do, and a flood of attention
 3. The ordinary exchange, and the four names it is mistaken for
-4. The key’s question
+4. The question
 5. Two whole cases, then the drill
 
 Each name is taught through cases first. After every step you answer one question about a new case, and the answer and the reason are shown straight away. Nothing here is graded. A miss only decides what comes back.
 
 ### 2. Telling someone, again and again, that what happened did not happen
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 2 of 42*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 2 of 42*
 
 [reviewers only: card kind `meet`, id `meet-gaslight`]
 
@@ -90,21 +90,21 @@ Jonas did something else. He told Tess, over and over, that what she remembered 
 
 Notice that this does not need one big lie. It is the repetition over months, about something that really happened, that does the work. One denial can be an honest mix-up. Four months of them, and a sister being asked "Am I remembering this wrong?", cannot be a mix-up.
 
-The key does not ask why Jonas does it, or whether he knows what he is doing. He may want to avoid paying; he may not see it as anything at all. The key asks what is done to the other person, as the case shows it, and the case shows this.
+The question is not why Jonas does it, or whether he knows what he is doing. He may want to avoid paying; he may not see it as anything at all. The question is what is done to the other person, as the case shows it, and the case shows this.
 
 **What you must be able to point to.** Something the case shows really happened, one person telling the other again and again, over weeks or months, that it did not happen or did not happen that way, and the other person starting to doubt their own memory. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What does it do to the other person?”**
+**The question:** **“What does it do to the other person?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“Tells them, again and again, that what happened did not happen”**
+**Its answer for a case like this one:** **“Tells them, again and again, that what happened did not happen”**
 
-The name for this is **Gaslighting**. It is the everyday word as well as the key’s name, and the key uses it only for what is described above: something that really happened, a denial that comes back over weeks or months, and a person who starts to doubt their own memory. It is not a word for any disagreement about what happened.
+The name for this is **Gaslighting**. It is the everyday word as well as the name used here, and here it is used only for what is described above: something that really happened, a denial that comes back over weeks or months, and a person who starts to doubt their own memory. It is not a word for any disagreement about what happened.
 
 You may also hear this called “making someone doubt their own mind”. That means the same thing here, and from now on this unit uses one name: **Gaslighting**.
 
 ### 3. Gaslighting: the same thing in a different story
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 3 of 42*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 3 of 42*
 
 [reviewers only: card kind `again`, id `again-gaslight`]
 
@@ -137,7 +137,7 @@ One story is a couple and a car, the other is a manager and a weekly report. The
 
 ### 4. The story never decides the answer
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 4 of 42*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 4 of 42*
 
 [reviewers only: card kind `lens`, id `lens`]
 
@@ -151,13 +151,13 @@ Two other things never decide it either, and the unit comes back to both: how up
 
 From here on, the cases change their stories on purpose. Sometimes two cases will share the same two people and the same story and differ only underneath. When that happens, the shared story is there to show you that it tells you nothing.
 
-**Stays the same from case to case:** what is done to the other person, as the case shows it, which is what the key asks about: **“What does it do to the other person?”**
+**Stays the same from case to case:** what is done to the other person, as the case shows it, which is what the question asks about: **“What does it do to the other person?”**
 
 **Changes on purpose:** the two people; the topic; how much is at stake; how upset anyone is; how kind or unkind the words sound.
 
 ### 5. Gaslighting: what it is like
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 5 of 42*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 5 of 42*
 
 [reviewers only: card kind `portrait`, id `portrait-gaslight`]
 
@@ -169,7 +169,7 @@ You now know what to point to. This card fills in the rest of the picture, so th
 - The denial usually comes with a reason that points at the other person: "you always get things muddled", "you are imagining it", "you are too tired", "you are being dramatic". It turns the other person’s memory into the problem.
 - It can be kind. "Oh sweetheart, you have been so tired lately" is as much a denial as an angry word is. The voice does not matter. What matters is that the case shows the thing really happened, and that the person is told it did not.
 - The person on the receiving end changes what they do. They keep screenshots and diaries, check their memory with other people before they trust it, and stop raising things. That change is part of what you point to.
-- The person who does it may know exactly what they are doing, or may not. The key does not ask. It reads what the case shows.
+- The person who does it may know exactly what they are doing, or may not. That is not what is asked. The answer comes from what the case shows.
 
 **What it is not**
 
@@ -187,7 +187,7 @@ You may meet it from the receiving end first: a relative who always says you mis
 
 ### 6. A question about a new case
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 6 of 42*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 6 of 42*
 
 [reviewers only: card kind `check`, id `check-gaslight`]
 
@@ -202,7 +202,7 @@ The pieces you can tap:
 
 **Shown as soon as you tap**
 
-- If you are right: “Right: ‘whenever Jade asks about it, Wen says, 'I never agreed to that. You must be thinking of someone else.' It has happened at almost every meeting for two months.’.” Something really happened: the chat shows the agreement. Wen then tells Jade that it did not, and the case says this comes back at almost every meeting for two months. Jade has started to doubt her own memory. The key’s answer for this case is **“Tells them, again and again, that what happened did not happen”**, and the name is **Gaslighting**.
+- If you are right: “Right: ‘whenever Jade asks about it, Wen says, 'I never agreed to that. You must be thinking of someone else.' It has happened at almost every meeting for two months.’.” Something really happened: the chat shows the agreement. Wen then tells Jade that it did not, and the case says this comes back at almost every meeting for two months. Jade has started to doubt her own memory. The answer for this case is **“Tells them, again and again, that what happened did not happen”**, and the name is **Gaslighting**.
 - If you miss: “The words are ‘whenever Jade asks about it, Wen says, 'I never agreed to that. You must be thinking of someone else.' It has happened at almost every meeting for two months.’.” The same reason follows, and then a line about the piece you tapped:
   - “Jade and Wen agreed in their group project's chat in October that Wen would write the methods section.”: That is what really happened. It is not the part that shows the telling.
   - “Jade has begun to wonder whether she is the one who keeps getting things wrong, and she now screenshots every message.”: That is what it has done to Jade. The words asked for are the ones that show what Wen says, and how often.
@@ -210,7 +210,7 @@ The pieces you can tap:
 
 ### 7. A wrong idea about a disagreement over what happened
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 7 of 42*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 7 of 42*
 
 [reviewers only: card kind `refute`, id `refute-doubt`]
 
@@ -224,14 +224,14 @@ You have met the first name and what to point to. In everyday talk the word is u
 
 Remembering something differently is a disagreement about what happened, and disagreements like that are part of ordinary life. Memory is not a recording, and two honest people can come away from one evening with two versions.
 
-Before you use the name **Gaslighting**, point to the three things the key needs: something the case shows really happened, one person telling the other again and again, over weeks or months, that it did not happen or did not happen that way, and the other person starting to doubt their own memory. If the case shows one disagreement, however bitter, you have not got there. If one person is simply wrong about what happened, you have not got there either, because the name needs something that really happened.
+Before you use the name **Gaslighting**, point to the three things the name needs: something the case shows really happened, one person telling the other again and again, over weeks or months, that it did not happen or did not happen that way, and the other person starting to doubt their own memory. If the case shows one disagreement, however bitter, you have not got there. If one person is simply wrong about what happened, you have not got there either, because the name needs something that really happened.
 
 So the right way to put it is that "we remember last Saturday differently" is where the question starts. It becomes **Gaslighting** only if the case shows that Saturday happened, that she keeps telling me over weeks or months that it did not, and that I have begun to doubt my own memory.
 
 
 ### 8. Caught out, they deny it, attack, and play the one wronged
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 8 of 42*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 8 of 42*
 
 [reviewers only: card kind `meet`, id `meet-darvo`]
 
@@ -258,9 +258,9 @@ This needs only one exchange. It does not have to be repeated. That is the diffe
 
 **What you must be able to point to.** Something the case shows the person did, someone raising it with them, and in answer all three: they deny it, they attack the person who raised it, and they present themselves as the one who has been wronged. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What does it do to the other person?”**
+**The question:** **“What does it do to the other person?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“Denies it, attacks them for raising it, and plays the one wronged”**
+**Its answer for a case like this one:** **“Denies it, attacks them for raising it, and plays the one wronged”**
 
 The name for this is **Turning the blame around**. The name says what happens to the blame: it starts with Marek and, by the end of the exchange, it has been turned around onto Joy. The name is for an exchange with all three parts, in which the case shows he did it. One or two of the three parts is not enough.
 
@@ -268,7 +268,7 @@ You may also hear this called “DARVO, short for deny, attack, reverse victim a
 
 ### 9. Turning the blame around: the same thing in a different story
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 9 of 42*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 9 of 42*
 
 [reviewers only: card kind `again`, id `again-darvo`]
 
@@ -299,7 +299,7 @@ One story is a bar and the other a marriage; one person took money and the other
 
 ### 10. Turning the blame around: what it is like
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 10 of 42*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 10 of 42*
 
 [reviewers only: card kind `portrait`, id `portrait-darvo`]
 
@@ -329,27 +329,27 @@ You may catch it in yourself, in the middle of a row: someone has raised somethi
 
 ### 11. A question about a new case
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 11 of 42*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 11 of 42*
 
 [reviewers only: card kind `check`, id `check-darvo`]
 
-> At the allotment committee, Hugh is told that the tool shed was left unlocked on Saturday and two spades went missing. The key log shows he signed the key out at four and never signed it back in. 'I did lock it,' Hugh says. 'And it's rich coming from you, Pam, when you've never paid your plot fee on time. After all the hours I've given this site, I'm the one being treated like a criminal.'
+> At the allotment committee, Hugh is told that the tool shed was left unlocked on Saturday and two spades went missing. The sign-out sheet shows he signed the key out at four and never signed it back in. 'I did lock it,' Hugh says. 'And it's rich coming from you, Pam, when you've never paid your plot fee on time. After all the hours I've given this site, I'm the one being treated like a criminal.'
 
-**The key asks:** **“What does it do to the other person?”** Which of the answers you have met so far fits this case?
+**The question:** **“What does it do to the other person?”** Which of the answers you have met so far fits this case?
 
 - Tells them, again and again, that what happened did not happen
 - Denies it, attacks them for raising it, and plays the one wronged
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Denies it, attacks them for raising it, and plays the one wronged.**” The key log shows Hugh did it, and Pam raises it. In answer he does all three in one go: he denies it ("I did lock it"), attacks the person who raised it ("rich coming from you, Pam"), and plays the one wronged ("the one being treated like a criminal"). “'I did lock it,' Hugh says. 'And it's rich coming from you, Pam, when you've never paid your plot fee on time. After all the hours I've given this site, I'm the one being treated like a criminal.'” The name that goes with this answer is **Turning the blame around**.
+- If you are right: “Right: **Denies it, attacks them for raising it, and plays the one wronged.**” The sign-out sheet shows Hugh did it, and Pam raises it. In answer he does all three in one go: he denies it ("I did lock it"), attacks the person who raised it ("rich coming from you, Pam"), and plays the one wronged ("the one being treated like a criminal"). “'I did lock it,' Hugh says. 'And it's rich coming from you, Pam, when you've never paid your plot fee on time. After all the hours I've given this site, I'm the one being treated like a criminal.'” The name that goes with this answer is **Turning the blame around**.
 - If you miss: “The answer is **Denies it, attacks them for raising it, and plays the one wronged.**” The same reason follows, and then a line about the answer you chose:
   - If you chose **Tells them, again and again, that what happened did not happen**: Nothing in the case shows the denial coming back over weeks or months, or Pam doubting her own memory. It is one exchange.
 - Taught on: “Caught out, they deny it, attack, and play the one wronged” (one tap opens the card).
 
 ### 12. Gaslighting or Turning the blame around: telling them apart
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 12 of 42*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 12 of 42*
 
 [reviewers only: card kind `lookalike`, id `look-gaslight-darvo`]
 
@@ -371,9 +371,9 @@ You have met both names on their own. Both have a person denying that something 
 
 **Why this one and not the other**
 
-In Case A the denial is not given once. In the weeks after March, and for months, Lena says the dent was there already, that it was never her, and that Ravi invents things. By July Ravi has stopped raising it and has asked a neighbour whether he is going mad. The key’s answer is **“Tells them, again and again, that what happened did not happen”**, and the case is **Gaslighting**.
+In Case A the denial is not given once. In the weeks after March, and for months, Lena says the dent was there already, that it was never her, and that Ravi invents things. By July Ravi has stopped raising it and has asked a neighbour whether he is going mad. The answer is **“Tells them, again and again, that what happened did not happen”**, and the case is **Gaslighting**.
 
-In Case B it is one dinner. Ravi raises it, and in answer Lena denies it, goes for his lateness with the children, and says she is the one being accused after being up since five. That is all three parts in one exchange, and nothing is repeated for months. The key’s answer is **“Denies it, attacks them for raising it, and plays the one wronged”**, and the case is **Turning the blame around**.
+In Case B it is one dinner. Ravi raises it, and in answer Lena denies it, goes for his lateness with the children, and says she is the one being accused after being up since five. That is all three parts in one exchange, and nothing is repeated for months. The answer is **“Denies it, attacks them for raising it, and plays the one wronged”**, and the case is **Turning the blame around**.
 
 The two cases share the same dent, the same two people and a denial. What differs is whether it is one exchange with three parts, or one denial that keeps coming back until the other person doubts themselves.
 
@@ -381,7 +381,7 @@ The two cases share the same dent, the same two people and a denial. What differ
 
 Is this one exchange, with an attack and the speaker playing the one wronged? Or is it the same denial coming back over weeks or months, until the other person doubts their own memory?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Gaslighting | Turning the blame around |
 |---|---|---|
@@ -392,7 +392,7 @@ Is this one exchange, with an attack and the speaker playing the one wronged? Or
 
 ### 13. When a case shows both
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 13 of 42*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 13 of 42*
 
 [reviewers only: card kind `exception`, id `exc-memory`]
 
@@ -427,9 +427,9 @@ When the denial of what happened comes back over weeks or months until the other
 
 Is this one exchange, with an attack and the speaker playing the one wronged? Or is it the same denial coming back over weeks or months, until the other person doubts their own memory?
 
-When a case shows both **“Denies it, attacks them for raising it, and plays the one wronged”** and the same denial of what happened, again and again over weeks or months, until the other person doubts their own memory, the key’s answer is **“Tells them, again and again, that what happened did not happen”**.
+When a case shows both **“Denies it, attacks them for raising it, and plays the one wronged”** and the same denial of what happened, again and again over weeks or months, until the other person doubts their own memory, the answer is **“Tells them, again and again, that what happened did not happen”**.
 
-The key decides it this way on purpose, and it is worth knowing that this is the key’s decision. In life the two overlap, and people who study them do not all draw the line in the same place. The key gives each case one name, and where a case shows both it takes the one that lasts longer, so that two people using it reach the same answer and can each say why.
+The answer is chosen this way on purpose, and it is worth knowing that the choice is made in advance, for every case alike. In life the two overlap, and people who study them do not all draw the line in the same place. Each case gets one name, and where a case shows both it takes the one that lasts longer, so that two people using these questions reach the same answer and can each say why.
 
 
 *End of part 1. You can stop here; your place is kept. Next: part 2, Accusing someone of what you do, and a flood of attention.*
@@ -440,7 +440,7 @@ The key decides it this way on purpose, and it is worth knowing that this is the
 
 ### 14. Accusing someone of what you are doing yourself
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 14 of 42*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 14 of 42*
 
 [reviewers only: card kind `meet`, id `meet-projection`]
 
@@ -461,13 +461,13 @@ An accusation is something one person says to another about them. Often it is fa
 
 Dana’s is different. The case shows who does what: Dana pads claims, and Omar does not. What she says about Omar describes what Dana does herself. People can do this without any plan. When someone does something they do not want to see in themselves, it can be easier to see it in someone else, and to feel quite sure, and to say it.
 
-The key does not ask whether Dana knows what she is doing. It asks what is done to the other person, as the case shows it. Omar has been called a fiddler of claims, to the person who looks after the money, by someone whose own claims show she is one. That is what is done to him, whether or not Dana knows where the words came from.
+The question is not whether Dana knows what she is doing. It is what is done to the other person, as the case shows it. Omar has been called a fiddler of claims, to the person who looks after the money, by someone whose own claims show she is one. That is what is done to him, whether or not Dana knows where the words came from.
 
 **What you must be able to point to.** An accusation one person makes against the other, and the case showing that the accuser is the one doing or feeling what they accuse the other of, with nothing in the case showing the other person doing it. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What does it do to the other person?”**
+**The question:** **“What does it do to the other person?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“Accuses them of what the accuser is doing”**
+**Its answer for a case like this one:** **“Accuses them of what the accuser is doing”**
 
 The name for this is **Projection**. To project something is to throw it outwards, and the name is for throwing your own fault out onto someone else. It is used here for an accusation that fits the person who makes it, and does not fit the person it is made against.
 
@@ -475,7 +475,7 @@ You may also hear this called “accusing others of what you do yourself”. Tha
 
 ### 15. Projection: the same thing in a different story
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 15 of 42*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 15 of 42*
 
 [reviewers only: card kind `again`, id `again-projection`]
 
@@ -508,7 +508,7 @@ One story is about expenses, the other about gossip. The stories share nothing, 
 
 ### 16. Projection: what it is like
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 16 of 42*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 16 of 42*
 
 [reviewers only: card kind `portrait`, id `portrait-projection`]
 
@@ -519,7 +519,7 @@ You now know what to point to. This card fills in the rest of the picture, so th
 - The accusation is about something the person does or feels: lying, being late, hiding things, being jealous, being disloyal, gossiping. The thing accused of is whatever the accuser is doing or feeling.
 - It often comes with little or no evidence, or with evidence that is not about the person accused. "People like him always fiddle their claims" is about a type of person. It is not about anything Omar’s claim shows.
 - It tends to come first. Nobody has raised anything with the accuser: the accusation is where the case starts. That is the difference from **Turning the blame around**, where the attack comes in answer.
-- The accuser is often quite sure, and may be sincere. They honestly see the thing in the other person, which is part of why it can sound convincing. The key does not ask about sincerity.
+- The accuser is often quite sure, and may be sincere. They honestly see the thing in the other person, which is part of why it can sound convincing. Sincerity is not what is asked about.
 - It can come back in new forms, and the person accused often ends up defending themselves against something they never did.
 
 **What it is not**
@@ -538,13 +538,13 @@ You may catch it in yourself when you feel sure about someone else’s bad motiv
 
 ### 17. A question about a new case
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 17 of 42*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 17 of 42*
 
 [reviewers only: card kind `check`, id `check-projection`]
 
 > At the climbing club, Rob tells the club captain that Lou 'keeps skipping the safety checks'. The sign-in book shows Rob has skipped them himself on his last six sessions. The same book shows Lou's checks logged every time, and the captain has watched her do them.
 
-**The key asks:** **“What does it do to the other person?”** Which of the answers you have met so far fits this case?
+**The question:** **“What does it do to the other person?”** Which of the answers you have met so far fits this case?
 
 - Tells them, again and again, that what happened did not happen
 - Denies it, attacks them for raising it, and plays the one wronged
@@ -560,7 +560,7 @@ You may catch it in yourself when you feel sure about someone else’s bad motiv
 
 ### 18. Turning the blame around or Projection: telling them apart
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 18 of 42*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 18 of 42*
 
 [reviewers only: card kind `lookalike`, id `look-darvo-projection`]
 
@@ -582,9 +582,9 @@ Both names have an attack in them, and in both the person who attacks is guilty 
 
 **Why this one and not the other**
 
-In Case A, Nell has asked Ed about the missing £60, and the receipt book shows he took it. The attack ("you are the one who never hands in receipts") comes in answer, with a denial and with Ed as the one wronged ("after all I have done for this club"). The key’s answer is **“Denies it, attacks them for raising it, and plays the one wronged”**, and the case is **Turning the blame around**.
+In Case A, Nell has asked Ed about the missing £60, and the receipt book shows he took it. The attack ("you are the one who never hands in receipts") comes in answer, with a denial and with Ed as the one wronged ("after all I have done for this club"). The answer is **“Denies it, attacks them for raising it, and plays the one wronged”**, and the case is **Turning the blame around**.
 
-In Case B, nobody has asked Ed anything. He says, unprompted, that Nell has been dipping into the tin. The book shows Ed took the £60, and shows every one of Nell’s receipts handed in on time. The key’s answer is **“Accuses them of what the accuser is doing”**, and the case is **Projection**.
+In Case B, nobody has asked Ed anything. He says, unprompted, that Nell has been dipping into the tin. The book shows Ed took the £60, and shows every one of Nell’s receipts handed in on time. The answer is **“Accuses them of what the accuser is doing”**, and the case is **Projection**.
 
 In both cases Ed goes for Nell about something Ed did. What differs is where the case starts: with Nell raising it, or with Ed.
 
@@ -592,7 +592,7 @@ In both cases Ed goes for Nell about something Ed did. What differs is where the
 
 Did someone first raise something with the speaker, so that the speaker is answering it? Or did the speaker start with the accusation?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Turning the blame around | Projection |
 |---|---|---|
@@ -603,7 +603,7 @@ Did someone first raise something with the speaker, so that the speaker is answe
 
 ### 19. When a case shows both
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 19 of 42*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 19 of 42*
 
 [reviewers only: card kind `exception`, id `exc-own`]
 
@@ -638,18 +638,18 @@ The accusation inside his attack does fit his own fault, but it is part of the a
 
 Did someone first raise something with the speaker, so that the speaker is answering it? Or did the speaker start with the accusation?
 
-When a case shows both **“Accuses them of what the accuser is doing”** and a denial of what they were asked about and an attack on the person who asked, with the speaker as the one wronged, the key’s answer is **“Denies it, attacks them for raising it, and plays the one wronged”**.
+When a case shows both **“Accuses them of what the accuser is doing”** and a denial of what they were asked about and an attack on the person who asked, with the speaker as the one wronged, the answer is **“Denies it, attacks them for raising it, and plays the one wronged”**.
 
-The key decides it this way on purpose, and it is worth knowing that this is the key’s decision. In life the two overlap, and people who study them do not all draw the line in the same place. The key gives each case one name, and where a case shows both it gives the one in which the person is answering something raised with them, so that two people using it reach the same answer and can each say why.
+The answer is chosen this way on purpose, and it is worth knowing that the choice is made in advance, for every case alike. In life the two overlap, and people who study them do not all draw the line in the same place. Each case gets one name, and where a case shows both it gives the one in which the person is answering something raised with them, so that two people using these questions reach the same answer and can each say why.
 
 
 ### 20. A wrong idea: "He does not even know, so she is not doing anything to him"
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 20 of 42*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 20 of 42*
 
 [reviewers only: card kind `refute`, id `refute-meant`]
 
-The picture of **Projection** said that the key does not ask what the speaker knows. Many people find that hard to accept, and this card is about why the key does it that way.
+The picture of **Projection** said that the questions do not ask what the speaker knows. Many people find that hard to accept, and this card is about why they do not.
 
 **The idea, as people say it:** "She honestly believes it. She does not mean to hurt him. So she is not doing anything to him."
 
@@ -657,7 +657,7 @@ The picture of **Projection** said that the key does not ask what the speaker kn
 
 **What is right instead**
 
-What a person believes, and what they mean, are things inside their head. A case does not show them. It shows only what the person says and does. So the key never asks about them. Its question is: **“What does it do to the other person?”**
+What a person believes, and what they mean, are things inside their head. A case does not show them. It shows only what the person says and does. So the questions never ask about them. Its question is: **“What does it do to the other person?”**
 
 An accusation is something one person says to another. Whether the accuser knows where it comes from, it is said to the other person, in front of whoever hears it, and it lands on them. Omar is called a fiddler of claims whether or not Dana knows that she is one herself.
 
@@ -666,7 +666,7 @@ So "she honestly believes it" and "she is doing this to him" can both be true. L
 
 ### 21. A flood of attention early on, pulled back later
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 21 of 42*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 21 of 42*
 
 [reviewers only: card kind `meet`, id `meet-lovebomb`]
 
@@ -689,13 +689,13 @@ What matters is the size and the speed, set against how long the two have known 
 
 That is why both halves are needed. The flood on its own is a keen friend. The pulling back on its own is a relationship that has cooled. Together, a person has first been made to feel very special and then made to feel they have lost it for saying no, and the natural response is to work to get it back.
 
-The key does not ask whether Callum planned it. It asks what is done to the other person, as the case shows it, and here the case shows both halves.
+The question is not whether Callum planned it. It is what is done to the other person, as the case shows it, and here the case shows both halves.
 
 **What you must be able to point to.** Early in a relationship, far more praise, attention, gifts or plans than the relationship so far would explain, and later that attention pulled back or turned into criticism, often once the other person sets a limit or does not go along. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What does it do to the other person?”**
+**The question:** **“What does it do to the other person?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“Floods them with attention early on, then pulls it back”**
+**Its answer for a case like this one:** **“Floods them with attention early on, then pulls it back”**
 
 The name for this is **Love-bombing**. A "bomb" is a great deal arriving all at once, and here it is praise and attention. The name is for a case with both halves: the flood early on and the pulling back later. It does not need a romance. It can be a friend, a mentor or a boss.
 
@@ -703,7 +703,7 @@ You may also hear this called “running hot and cold”. That means the same th
 
 ### 22. Love-bombing: the same thing in a different story
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 22 of 42*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 22 of 42*
 
 [reviewers only: card kind `again`, id `again-lovebomb`]
 
@@ -734,7 +734,7 @@ One story is a date and the other is an office. The stories share nothing, so th
 
 ### 23. Love-bombing: what it is like
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 23 of 42*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 23 of 42*
 
 [reviewers only: card kind `portrait`, id `portrait-lovebomb`]
 
@@ -764,13 +764,13 @@ You may meet it in a new friendship, job or group where everything is wonderful 
 
 ### 24. A question about a new case
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 24 of 42*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 24 of 42*
 
 [reviewers only: card kind `check`, id `check-lovebomb`]
 
 > Sam started piano lessons with a new teacher, Mr Vale. In the first two weeks he told her she was the most gifted pupil he had taught, gave her free extra sessions, and sent her a book of scores. When Sam said she would cut back to one lesson a week because of exams, Mr Vale's praise stopped, and he told her, 'I don't know why I bothered. You're not serious.'
 
-**The key asks:** **“What does it do to the other person?”** Which of the answers you have met so far fits this case?
+**The question:** **“What does it do to the other person?”** Which of the answers you have met so far fits this case?
 
 - Tells them, again and again, that what happened did not happen
 - Denies it, attacks them for raising it, and plays the one wronged
@@ -794,7 +794,7 @@ You may meet it in a new friendship, job or group where everything is wonderful 
 
 ### 25. Something said between two people, with nothing more to it
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 25 of 42*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 25 of 42*
 
 [reviewers only: card kind `meet`, id `meet-ordexchange`]
 
@@ -814,21 +814,21 @@ Stripped of its story, the case is this:
 
 Most of what people say to each other is not one of the four. People complain, disagree, defend themselves, forget things, get annoyed, say sharp words, apologise, and say kind ones. Priya is cross, and she says so. Sam answers. That is all there is.
 
-It is tempting, once you have learned four names for things people do to each other, to look for one of them in everything. That is a mistake the key is built to stop. The fifth answer is there so that you can say, as exactly as you can say what is going on elsewhere, that none of the four is.
+It is tempting, once you have learned four names for things people do to each other, to look for one of them in everything. That is a mistake the questions are built to stop. The fifth answer is there so that you can say, as exactly as you can say what is going on elsewhere, that none of the four is.
 
-Notice what "ordinary" does not mean. It does not mean polite, fair or kind. A person can be rude, unfair and wrong, and it is still **An ordinary exchange** in the key’s sense, because none of the four is in the case. And it does not mean nobody was hurt. The key does not ask how upset anyone was. It asks what was done to the other person, and here the answer is: what it looks like, and nothing more.
+Notice what "ordinary" does not mean. It does not mean polite, fair or kind. A person can be rude, unfair and wrong, and it is still **An ordinary exchange** in this sense, because none of the four is in the case. And it does not mean nobody was hurt. How upset anyone was is not what is asked. The question is what was done to the other person, and here the answer is: what it looks like, and nothing more.
 
 **What you must be able to point to.** Two people and something one says or does to the other (a disagreement, a complaint, a defence, praise), and none of the other four: no repeated denial of what happened, no deny, attack and play the one wronged when caught out, no flood of attention later pulled back, no accusation that fits the accuser. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What does it do to the other person?”**
+**The question:** **“What does it do to the other person?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“Says or does what it looks like, and nothing more”**
+**Its answer for a case like this one:** **“Says or does what it looks like, and nothing more”**
 
-The name for this is **An ordinary exchange**. An "exchange" is something said or done between two people, and "ordinary" says that none of the four is in it. It is the key’s name for a case where none of the four things is happening, and it is used as exactly as the other four.
+The name for this is **An ordinary exchange**. An "exchange" is something said or done between two people, and "ordinary" says that none of the four is in it. It is the name for a case where none of the four things is happening, and it is used as exactly as the other four.
 
 ### 26. An ordinary exchange: the same thing in a different story
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 26 of 42*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 26 of 42*
 
 [reviewers only: card kind `again`, id `again-ordexchange`]
 
@@ -861,7 +861,7 @@ A disagreement is not a sign that something is wrong. Two people who say what th
 
 ### 27. An ordinary exchange: what it is like
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 27 of 42*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 27 of 42*
 
 [reviewers only: card kind `portrait`, id `portrait-ordexchange`]
 
@@ -892,13 +892,13 @@ Most of what you meet this week will be this. The test is whether you can point 
 
 ### 28. A question about a new case
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 28 of 42*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 28 of 42*
 
 [reviewers only: card kind `check`, id `check-ordexchange`]
 
 > After a session, Femi's physiotherapist tells him he has done his exercises well and that his knee is stronger. Femi says thank you and asks if he can start jogging. She says he should wait two more weeks, and why.
 
-**The key asks:** **“What does it do to the other person?”** Which of the answers you have met so far fits this case?
+**The question:** **“What does it do to the other person?”** Which of the answers you have met so far fits this case?
 
 - Tells them, again and again, that what happened did not happen
 - Denies it, attacks them for raising it, and plays the one wronged
@@ -918,7 +918,7 @@ Most of what you meet this week will be this. The test is whether you can point 
 
 ### 29. A wrong idea: "Once you know the four, you see them everywhere"
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 29 of 42*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 29 of 42*
 
 [reviewers only: card kind `refute`, id `refute-everywhere`]
 
@@ -930,7 +930,7 @@ You now have all five names. The idea on this card is the most common mistake ma
 
 **What is right instead**
 
-Being upset tells you that something happened to you. It does not tell you which of the five it was. The key’s question never mentions how upset anyone was, whether it was meant, or what kind of person did it. It asks only what is done to the other person, as the case shows it.
+Being upset tells you that something happened to you. It does not tell you which of the five it was. The question never mentions how upset anyone was, whether it was meant, or what kind of person did it. It asks only what is done to the other person, as the case shows it.
 
 Most of what upsets us is **An ordinary exchange**: a sharp word, an unfair complaint, a refusal, a person being defensive. Treating it as one of the four has a cost. It turns an argument that could be talked about into an accusation that cannot be, and it makes the cases where one of the four is really there harder to hear.
 
@@ -939,7 +939,7 @@ Before you use any of the four names, point to what that name needs. If you cann
 
 ### 30. Gaslighting or An ordinary exchange: telling them apart
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 30 of 42*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 30 of 42*
 
 [reviewers only: card kind `lookalike`, id `look-gaslight-ord`]
 
@@ -961,9 +961,9 @@ All five names have now been met. The ordinary exchange is the one the other fou
 
 **Why this one and not the other**
 
-In Case A, Bea wrote in March that she would book the flights, and she never did. Since then she has said, whenever Anil asks, that she never said it, that he muddles who said what, and that he invents things. It has gone on for four months, and Anil now checks every plan with his mother before he believes his own memory of it. The key’s answer is **“Tells them, again and again, that what happened did not happen”**, and the case is **Gaslighting**.
+In Case A, Bea wrote in March that she would book the flights, and she never did. Since then she has said, whenever Anil asks, that she never said it, that he muddles who said what, and that he invents things. It has gone on for four months, and Anil now checks every plan with his mother before he believes his own memory of it. The answer is **“Tells them, again and again, that what happened did not happen”**, and the case is **Gaslighting**.
 
-In Case B, Anil and Bea remember it differently, once. Bea suggests looking at the chat, the chat shows Anil said he would book them, and Bea says "My mistake". The disagreement is settled by looking, and nobody is left doubting their own memory. The key’s answer is **“Says or does what it looks like, and nothing more”**, and the case is **An ordinary exchange**.
+In Case B, Anil and Bea remember it differently, once. Bea suggests looking at the chat, the chat shows Anil said he would book them, and Bea says "My mistake". The disagreement is settled by looking, and nobody is left doubting their own memory. The answer is **“Says or does what it looks like, and nothing more”**, and the case is **An ordinary exchange**.
 
 Both cases have two people who remember who was to book the flights differently. What differs is whether it is one disagreement that gets checked, or one denial that keeps coming back.
 
@@ -971,7 +971,7 @@ Both cases have two people who remember who was to book the flights differently.
 
 Does the case show that the thing really happened? Does the same denial come back over weeks or months? Does the other person now doubt their own memory? Or is this one disagreement that gets settled?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Gaslighting | An ordinary exchange |
 |---|---|---|
@@ -982,7 +982,7 @@ Does the case show that the thing really happened? Does the same denial come bac
 
 ### 31. Turning the blame around or An ordinary exchange: telling them apart
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 31 of 42*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 31 of 42*
 
 [reviewers only: card kind `lookalike`, id `look-darvo-ord`]
 
@@ -1004,9 +1004,9 @@ Next, **Turning the blame around** beside the ordinary exchange. In both a perso
 
 **Why this one and not the other**
 
-In Case A, the doorbell camera shows Joel backing his van into the fence. When Mira raises it, he denies it ("I never touched your fence"), attacks her ("you are the one who parks across everyone’s drive") and plays the one wronged ("I am sick of being the one who gets blamed"). The key’s answer is **“Denies it, attacks them for raising it, and plays the one wronged”**, and the case is **Turning the blame around**.
+In Case A, the doorbell camera shows Joel backing his van into the fence. When Mira raises it, he denies it ("I never touched your fence"), attacks her ("you are the one who parks across everyone’s drive") and plays the one wronged ("I am sick of being the one who gets blamed"). The answer is **“Denies it, attacks them for raising it, and plays the one wronged”**, and the case is **Turning the blame around**.
 
-In Case B, the camera shows Joel’s van parked outside his own house all that day. Joel says "That is not true, and I do not like being blamed", and tells Mira to look. She does, and she says sorry. His denial is true. He does not attack her, and he does not claim to be the one wronged. The key’s answer is **“Says or does what it looks like, and nothing more”**, and the case is **An ordinary exchange**.
+In Case B, the camera shows Joel’s van parked outside his own house all that day. Joel says "That is not true, and I do not like being blamed", and tells Mira to look. She does, and she says sorry. His denial is true. He does not attack her, and he does not claim to be the one wronged. The answer is **“Says or does what it looks like, and nothing more”**, and the case is **An ordinary exchange**.
 
 Joel denies it in both. What differs is whether the denial is of something the case shows he did.
 
@@ -1014,7 +1014,7 @@ Joel denies it in both. What differs is whether the denial is of something the c
 
 Does the case show that the person did what was raised with them? And is the answer a denial, an attack on the one who raised it, and a claim to be the one wronged: all three?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Turning the blame around | An ordinary exchange |
 |---|---|---|
@@ -1025,7 +1025,7 @@ Does the case show that the person did what was raised with them? And is the ans
 
 ### 32. A reply that sounds like Turning the blame around, and is not
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 32 of 42*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 32 of 42*
 
 [reviewers only: card kind `exception`, id `exc-wrongly`]
 
@@ -1033,7 +1033,7 @@ The last card put two tidy cases side by side. This one is messier: a person who
 
 *The art cupboard*
 
-> Tara's head teacher, Mr Boyd, tells her the art cupboard was left unlocked on Friday and paints went missing. The key log shows Tara locked it at noon, and that it was opened again at three by Neil, who has the other key. 'That isn't true, I locked it,' Tara says. 'You always blame me first. I'm the one who gets picked on round here.' Mr Boyd reads the log, says, 'Sorry, I should have checked first,' and goes to ask Neil.
+> Tara's head teacher, Mr Boyd, tells her the art cupboard was left unlocked on Friday and paints went missing. The cupboard log shows Tara locked it at noon, and that it was opened again at three by Neil, who has the other key. 'That isn't true, I locked it,' Tara says. 'You always blame me first. I'm the one who gets picked on round here.' Mr Boyd reads the log, says, 'Sorry, I should have checked first,' and goes to ask Neil.
 
 Tara’s answer has all three parts: she denies it ("I locked it"), she attacks Mr Boyd ("You always blame me first"), and she says she is the one picked on. Yet this case is **An ordinary exchange**.
 
@@ -1041,18 +1041,18 @@ Tara’s answer has all three parts: she denies it ("I locked it"), she attacks 
 
 The pieces you can tap:
 1. “Tara's head teacher, Mr Boyd, tells her the art cupboard was left unlocked on Friday and paints went missing.”
-2. “The key log shows Tara locked it at noon, and that it was opened again at three by Neil, who has the other key.”
+2. “The cupboard log shows Tara locked it at noon, and that it was opened again at three by Neil, who has the other key.”
 3. “'That isn't true, I locked it,' Tara says. 'You always blame me first. I'm the one who gets picked on round here.'”
 4. “Mr Boyd reads the log, says, 'Sorry, I should have checked first,' and goes to ask Neil.”
 
-**Shown as soon as you tap.** The words are “The key log shows Tara locked it at noon, and that it was opened again at three by Neil, who has the other key.”.
+**Shown as soon as you tap.** The words are “The cupboard log shows Tara locked it at noon, and that it was opened again at three by Neil, who has the other key.”.
 - If you tapped “Tara's head teacher, Mr Boyd, tells her the art cupboard was left unlocked on Friday and paints went missing.”: That is what Mr Boyd raises. It does not show whether Tara did it.
 - If you tapped “'That isn't true, I locked it,' Tara says. 'You always blame me first. I'm the one who gets picked on round here.'”: That sounds like a denial, an attack and playing the one wronged, and it is why the case looks like **Turning the blame around**. But **Turning the blame around** is only given when the case shows the person did what they are asked about, and that is the part you are asked for.
 - If you tapped “Mr Boyd reads the log, says, 'Sorry, I should have checked first,' and goes to ask Neil.”: That is how it ends. It confirms the log, but it is not the words that show Tara did not do it.
 
 **Why this is An ordinary exchange and not Turning the blame around**
 
-The first thing the name **Turning the blame around** needs is that the case shows the person did what was raised. Here the case shows the opposite. Tara locked the cupboard, and the key log shows who opened it. Her denial is true.
+The first thing the name **Turning the blame around** needs is that the case shows the person did what was raised. Here the case shows the opposite. Tara locked the cupboard, and the cupboard log shows who opened it. Her denial is true.
 
 A person who is wrongly accused can be hurt, say sharp things, and say they are picked on, and all of that is an ordinary reply to a mistake. What makes the name is that the denial is of something the case shows they did. Take that away and the same words are only a defence.
 
@@ -1063,7 +1063,7 @@ Does the case show that the person did what was raised with them? And is the ans
 
 ### 33. Love-bombing or An ordinary exchange: telling them apart
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 33 of 42*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 33 of 42*
 
 [reviewers only: card kind `lookalike`, id `look-lovebomb-ord`]
 
@@ -1085,9 +1085,9 @@ Next, **Love-bombing** beside the ordinary exchange. Both have a person who is w
 
 **Why this one and not the other**
 
-In Case A, Eli does not speak to Dan for a month, and then says "I thought you were different". That is the pulling back, with criticism, once Dan says no. Together with a first week of dinners every night, a spare key and "the best friend I have ever had", which is far more than a week would explain, both halves are there. The key’s answer is **“Floods them with attention early on, then pulls it back”**, and the case is **Love-bombing**.
+In Case A, Eli does not speak to Dan for a month, and then says "I thought you were different". That is the pulling back, with criticism, once Dan says no. Together with a first week of dinners every night, a way into his home and "the best friend I have ever had", which is far more than a week would explain, both halves are there. The answer is **“Floods them with attention early on, then pulls it back”**, and the case is **Love-bombing**.
 
-In Case B, Eli says "No problem, another time" and is just as friendly the next day. The first week is the same, but nothing is pulled back. The key’s answer is **“Says or does what it looks like, and nothing more”**, and the case is **An ordinary exchange**.
+In Case B, Eli says "No problem, another time" and is just as friendly the next day. The first week is the same, but nothing is pulled back. The answer is **“Says or does what it looks like, and nothing more”**, and the case is **An ordinary exchange**.
 
 So the flood on its own, however large, is not the name. Both halves are needed, and what separates the two cases is only the second half.
 
@@ -1095,7 +1095,7 @@ So the flood on its own, however large, is not the name. Both halves are needed,
 
 Set the attention against how long the two have known each other. Is it far more? Then ask what happens to it later, when the other person says no or goes their own way.
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Love-bombing | An ordinary exchange |
 |---|---|---|
@@ -1106,7 +1106,7 @@ Set the attention against how long the two have known each other. Is it far more
 
 ### 34. Projection or An ordinary exchange: telling them apart
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 34 of 42*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 34 of 42*
 
 [reviewers only: card kind `lookalike`, id `look-projection-ord`]
 
@@ -1128,9 +1128,9 @@ Last, accusing someone of what you do yourself, beside the ordinary exchange. Bo
 
 **Why this one and not the other**
 
-In Case A, Colm tells the manager, unprompted, that Shay is always swapping shifts without telling anyone. The shift book shows that Colm has done it four times this month, and shows no swap by Shay. The key’s answer is **“Accuses them of what the accuser is doing”**, and the case is **Projection**.
+In Case A, Colm tells the manager, unprompted, that Shay is always swapping shifts without telling anyone. The shift book shows that Colm has done it four times this month, and shows no swap by Shay. The answer is **“Accuses them of what the accuser is doing”**, and the case is **Projection**.
 
-In Case B, Colm tells Shay that she swapped Thursday without telling anyone, and the book shows that she did. It also shows that Colm has done the same twice, and Shay says so. They agree to put swaps on the board. The accusation is true, so the key’s answer is **“Says or does what it looks like, and nothing more”**, and the case is **An ordinary exchange**.
+In Case B, Colm tells Shay that she swapped Thursday without telling anyone, and the book shows that she did. It also shows that Colm has done the same twice, and Shay says so. They agree to put swaps on the board. The accusation is true, so the answer is **“Says or does what it looks like, and nothing more”**, and the case is **An ordinary exchange**.
 
 Colm does the same thing in both cases. What differs is whether the case shows the other person doing it.
 
@@ -1138,7 +1138,7 @@ Colm does the same thing in both cases. What differs is whether the case shows t
 
 Who does the case show doing or feeling what is being said: the person accused, the accuser, or both?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Projection | An ordinary exchange |
 |---|---|---|
@@ -1149,7 +1149,7 @@ Who does the case show doing or feeling what is being said: the person accused, 
 
 ### 35. A fair accusation from someone who does it too
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 35 of 42*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 35 of 42*
 
 [reviewers only: card kind `exception`, id `exc-both-late`]
 
@@ -1185,15 +1185,15 @@ A true accusation does not stop being true because the person who makes it is no
 Who does the case show doing or feeling what is being said: the person accused, the accuser, or both?
 
 
-*End of part 3. You can stop here; your place is kept. Next: part 4, The key’s question.*
+*End of part 3. You can stop here; your place is kept. Next: part 4, The question.*
 
 ---
 
-## Part 4 of 5: The key’s question
+## Part 4 of 5: The question
 
 ### 36. A wrong idea: "He is a gaslighter. She is a love-bomber."
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 36 of 42*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 36 of 42*
 
 [reviewers only: card kind `refute`, id `refute-person`]
 
@@ -1209,22 +1209,22 @@ A case shows what one person said or did to another. It does not show what a per
 
 It also gives you a name that cannot be checked. "What he said to Tess in February, March and May was **Gaslighting**" can be checked against the case. "He is a gaslighter" can only be argued about, and it ends the conversation.
 
-So the key asks about the words and the events, and not about the person: **“What does it do to the other person?”** Say what was done, and point to the words that show it.
+So the question is about the words and the events, and not about the person: **“What does it do to the other person?”** Say what was done, and point to the words that show it.
 
 
 ### 37. The question you have been answering all along
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 37 of 42*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 37 of 42*
 
 [reviewers only: card kind `question`, id `q-does`]
 
-Since the car repair you have seen the key’s question at the foot of each new name, with one answer under it. This card puts the question and its five answers in one place, as the key shows them, and says why the key asks it.
+Since the car repair you have seen the question at the foot of each new name, with one answer under it. This card puts the question and its five answers in one place, and says why it is asked.
 
-**The key asks:** **“What does it do to the other person?”**
+**The question:** **“What does it do to the other person?”**
 
 **What it is for.** Tells apart four things one person can do to another that work against them, and the ordinary exchange that does none of them.
 
-**Its answers, exactly as the key shows them**
+**Its answers**
 
 Each answer leads to one name, and so rules out the other four.
 
@@ -1264,8 +1264,8 @@ When you are unsure, start from the ordinary exchange, because most cases are on
 
 Sometimes two answers both seem to fit. Each pair below has been set side by side earlier in this unit, and each has one question that separates it.
 
-- Gaslighting or Turning the blame around: Is this one exchange, with an attack and the speaker playing the one wronged? Or is it the same denial coming back over weeks or months, until the other person doubts their own memory? When a case shows both **“Denies it, attacks them for raising it, and plays the one wronged”** and the same denial of what happened, again and again over weeks or months, until the other person doubts their own memory, the key’s answer is **“Tells them, again and again, that what happened did not happen”**.
-- Turning the blame around or Projection: Did someone first raise something with the speaker, so that the speaker is answering it? Or did the speaker start with the accusation? When a case shows both **“Accuses them of what the accuser is doing”** and a denial of what they were asked about and an attack on the person who asked, with the speaker as the one wronged, the key’s answer is **“Denies it, attacks them for raising it, and plays the one wronged”**.
+- Gaslighting or Turning the blame around: Is this one exchange, with an attack and the speaker playing the one wronged? Or is it the same denial coming back over weeks or months, until the other person doubts their own memory? When a case shows both **“Denies it, attacks them for raising it, and plays the one wronged”** and the same denial of what happened, again and again over weeks or months, until the other person doubts their own memory, the answer is **“Tells them, again and again, that what happened did not happen”**.
+- Turning the blame around or Projection: Did someone first raise something with the speaker, so that the speaker is answering it? Or did the speaker start with the accusation? When a case shows both **“Accuses them of what the accuser is doing”** and a denial of what they were asked about and an attack on the person who asked, with the speaker as the one wronged, the answer is **“Denies it, attacks them for raising it, and plays the one wronged”**.
 - Gaslighting or An ordinary exchange: Does the case show that the thing really happened? Does the same denial come back over weeks or months? Does the other person now doubt their own memory? Or is this one disagreement that gets settled?
 - Turning the blame around or An ordinary exchange: Does the case show that the person did what was raised with them? And is the answer a denial, an attack on the one who raised it, and a claim to be the one wronged: all three?
 - Love-bombing or An ordinary exchange: Set the attention against how long the two have known each other. Is it far more? Then ask what happens to it later, when the other person says no or goes their own way.
@@ -1274,13 +1274,13 @@ Sometimes two answers both seem to fit. Each pair below has been set side by sid
 
 ### 38. A question about a new case
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 38 of 42*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 38 of 42*
 
 [reviewers only: card kind `check`, id `check-does`]
 
 > In a seminar, Gus tells the tutor that Hira 'copies her essays from the internet'. The plagiarism checker flagged Gus's own last essay, and it has not flagged any of Hira's. Nobody has asked Gus about his essay.
 
-**The key asks:** **“What does it do to the other person?”**
+**The question:** **“What does it do to the other person?”**
 
 - Tells them, again and again, that what happened did not happen
 - Denies it, attacks them for raising it, and plays the one wronged
@@ -1306,11 +1306,11 @@ Sometimes two answers both seem to fit. Each pair below has been set side by sid
 
 ### 39. A whole case, from the first question to the name
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 39 of 42*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 39 of 42*
 
 [reviewers only: card kind `worked`, id `worked-hike`]
 
-You have the five names and the key’s question about them. Before you run a case yourself, watch two being run from the top, in the order the key asks. You are not asked anything until the end of each.
+You have the five names and the question about them. Before you run a case yourself, watch two being run from the top, in the order the questions are asked. You are not asked anything until the end of each.
 
 *The walking group*
 
@@ -1356,17 +1356,17 @@ Still possible: **Love-bombing**. Ruled out: **Gaslighting**, **Turning the blam
 
 For **An ordinary exchange** the case must show none of the four. Here it shows one: early in a relationship, far more praise, attention, gifts or plans than the relationship so far would explain, and later that attention pulled back or turned into criticism, often once the other person sets a limit or does not go along. Raf’s friendliness does not settle it, because it is only the first half.
 
-It is the question from the two neighbours, Dan and Eli. Set the attention against how long the two have known each other. Is it far more? Then ask what happens to it later, when the other person says no or goes their own way. Here the attention is pulled back, so the key’s answer is **“Floods them with attention early on, then pulls it back”**.
+It is the question from the two neighbours, Dan and Eli. Set the attention against how long the two have known each other. Is it far more? Then ask what happens to it later, when the other person says no or goes their own way. Here the attention is pulled back, so the answer is **“Floods them with attention early on, then pulls it back”**.
 
 **Does it look like a case you know?**
 
-The key has given its answer. Now take a second look of a different kind: does this case look like one you know? It should bring back Priya and Callum, the first month: a flood of attention at the start, and then one "no" and the attention is gone.
+You have the answer. Now take a second look of a different kind: does this case look like one you know? It should bring back Priya and Callum, the first month: a flood of attention at the start, and then one "no" and the attention is gone.
 
-Here the key and the likeness agree, so the answer stands. The key’s question comes first, because it makes you point at words in the case. The likeness is only a second look. When the two disagree, do not pick the one you prefer. Go back to the key’s question and find the words in the case that answer it. The second whole case shows how.
+Here the answer and the likeness agree, so the answer stands. The question comes first, because it makes you point at words in the case. The likeness is only a second look. When the two disagree, do not pick the one you prefer. Go back to the question and find the words in the case that answer it. The second whole case shows how.
 
 ### 40. A second whole case, where the story points the wrong way
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 40 of 42*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 40 of 42*
 
 [reviewers only: card kind `worked`, id `worked-booking`]
 
@@ -1416,20 +1416,20 @@ Still possible: **Turning the blame around**. Ruled out: **Gaslighting**, **Love
 
 For **Gaslighting** you must be able to point to this: something the case shows really happened, one person telling the other again and again, over weeks or months, that it did not happen or did not happen that way, and the other person starting to doubt their own memory. The case says the opposite about time: it is the first time the booking has come up, and nothing shows Pia doubting her memory.
 
-It is the question from Ravi and Lena and the dent. Is this one exchange, with an attack and the speaker playing the one wronged? Or is it the same denial coming back over weeks or months, until the other person doubts their own memory? Here it is one exchange with three parts, so the key’s answer is **“Denies it, attacks them for raising it, and plays the one wronged”**.
+It is the question from Ravi and Lena and the dent. Is this one exchange, with an attack and the speaker playing the one wronged? Or is it the same denial coming back over weeks or months, until the other person doubts their own memory? Here it is one exchange with three parts, so the answer is **“Denies it, attacks them for raising it, and plays the one wronged”**.
 
 **Does it look like a case you know?**
 
-Now the second look: does this case look like one you know? "You have got that wrong" and "you are always muddled" may bring back Tess and the car repair first, and Tess’s case was **Gaslighting**. So here the likeness and the key seem to disagree.
+Now the second look: does this case look like one you know? "You have got that wrong" and "you are always muddled" may bring back Tess and the car repair first, and Tess’s case was **Gaslighting**. So here the likeness and the answer seem to disagree.
 
-When that happens, go back to the key’s question and find the words in the case that answer it. They are: “she has the booking emails” and “'I never booked it twice,' Kai says. 'You've got that wrong. You're always muddled about dates, and you lose things all the time. I'm sick of being picked on in this office.'” and “This is the first time the booking has come up.” Tess’s case has months of denial and a person who doubts her memory. This case has one reply with three parts. The case it really looks like is Marek’s at the bar: someone raised something he did, and he denied it, attacked, and said he was the one being picked on. So the key’s answer stands.
+When that happens, go back to the question and find the words in the case that answer it. They are: “she has the booking emails” and “'I never booked it twice,' Kai says. 'You've got that wrong. You're always muddled about dates, and you lose things all the time. I'm sick of being picked on in this office.'” and “This is the first time the booking has come up.” Tess’s case has months of denial and a person who doubts her memory. This case has one reply with three parts. The case it really looks like is Marek’s at the bar: someone raised something he did, and he denied it, attacked, and said he was the one being picked on. So the answer stands.
 
 ### The drill
 
 The cards are out of view from here, and every case is new. The drill has five stages. Cases that are easy to mix up are placed next to each other on purpose. This is meant to feel harder than the questions between the cards: telling look-alikes apart side by side is what makes the difference stick. Three of the cases come from an earlier unit, without being labelled. Nothing here is graded. A miss only decides what comes back. What you miss is asked again before the drill ends, and every name comes back on later days with a new case.
 
 
-#### Stage 1 of 5. The key’s answers are shown for each case. Give the name that goes with them. This stage practises one thing: which name goes with which answer.
+#### Stage 1 of 5. The answers are shown for each case. Give the name that goes with them. This stage practises one thing: which name goes with which answer.
 
 The names offered are the five this unit teaches: Gaslighting / Turning the blame around / Love-bombing / Projection / An ordinary exchange.
 
@@ -1449,7 +1449,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **An ordinary exchange**: One disagreement about who said what would be **An ordinary exchange**. Here the denial comes back for months and Ben has begun to doubt his own memory.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **An ordinary exchange**, the look-alike card’s lines follow: In both, two people disagree about something that happened, and one of them says it did not happen the way the other says. The difference is how often it comes back, and what it does to the other person. In **Gaslighting** the thing really happened and the case shows it, the same denial returns over weeks or months, and the other person starts to doubt their own memory. In **An ordinary exchange** it is one disagreement, or the person who says it did not happen is right, and each person still trusts their own memory. Does the case show that the thing really happened? Does the same denial come back over weeks or months? Does the other person now doubt their own memory? Or is this one disagreement that gets settled?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “Telling someone, again and again, that what happened did not happen” (one tap opens the card).
 
 **Drill item 2 of 46**
@@ -1468,7 +1468,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Gaslighting**: Nothing shows the denial coming back over weeks or months, or Maya doubting her own memory. It is one conversation.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Gaslighting**, the look-alike card’s lines follow: In both, a person denies that something happened. **Turning the blame around** is one exchange: asked about something they did, the person denies it, attacks the one who asked, and plays the one wronged. **Gaslighting** is a denial of what happened that comes back again and again over weeks or months, until the other person doubts their own memory. Is this one exchange, with an attack and the speaker playing the one wronged? Or is it the same denial coming back over weeks or months, until the other person doubts their own memory?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “Caught out, they deny it, attack, and play the one wronged” (one tap opens the card).
 
 **Drill item 3 of 46**
@@ -1487,7 +1487,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Turning the blame around**: Paul does not deny it, attack Ruth or play the one wronged. He agrees and offers to fix it.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Turning the blame around**, the look-alike card’s lines follow: In both, someone is told about something and answers with a denial or with anger. In **Turning the blame around** the case shows the person did it, and the answer is a denial, an attack on the one who raised it, and a claim to be the one wronged: all three. In **An ordinary exchange** the answer may be a denial, or angry, or sharp, but either the case shows the person did not do it, or the answer is not all three. Does the case show that the person did what was raised with them? And is the answer a denial, an attack on the one who raised it, and a claim to be the one wronged: all three?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “Something said between two people, with nothing more to it” (one tap opens the card).
 
 **Drill item 4 of 46**
@@ -1506,7 +1506,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **An ordinary exchange**: Friendly, generous attention that stayed would be **An ordinary exchange**. Here it stops and turns critical when Kemal does not go along.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **An ordinary exchange**, the look-alike card’s lines follow: In both, someone is warm and generous early in a relationship. In **Love-bombing** the attention is far more than the relationship so far would explain, and it is later pulled back or turns into criticism. In **An ordinary exchange** the warmth fits how well the two know each other, or it stays when the other person sets a limit. Set the attention against how long the two have known each other. Is it far more? Then ask what happens to it later, when the other person says no or goes their own way.
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “A flood of attention early on, pulled back later” (one tap opens the card).
 
 **Drill item 5 of 46**
@@ -1525,7 +1525,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Turning the blame around**: Nobody has raised anything with Jess, so she is not answering anything by denying, attacking and playing the one wronged. The accusation is where the case starts.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Turning the blame around**, the look-alike card’s lines follow: In both, one person goes for the other about something the speaker is guilty of. In **Turning the blame around** the attack comes in answer to being asked about something the person did, along with a denial and the person playing the one wronged. In **Projection** nobody has raised anything with the speaker: the accusation comes first. Did someone first raise something with the speaker, so that the speaker is answering it? Or did the speaker start with the accusation?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “Accusing someone of what you are doing yourself” (one tap opens the card).
 
 **Drill item 6 of 46**
@@ -1544,7 +1544,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Love-bombing**: One piece of praise on one occasion is not far more attention than the relationship would explain, and nothing is pulled back later.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Love-bombing**, the look-alike card’s lines follow: In both, someone is warm and generous early in a relationship. In **Love-bombing** the attention is far more than the relationship so far would explain, and it is later pulled back or turns into criticism. In **An ordinary exchange** the warmth fits how well the two know each other, or it stays when the other person sets a limit. Set the attention against how long the two have known each other. Is it far more? Then ask what happens to it later, when the other person says no or goes their own way.
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “Something said between two people, with nothing more to it” (one tap opens the card).
 
 #### Stage 2 of 5. One question at a time.
@@ -1566,7 +1566,7 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **Tells them, again and again, that what happened did not happen.**” The receipt shows he really did take the prescription. He then tells her it did not happen: “whenever she asks where the old tablets went, he says, 'I never touched them,' and later, 'You moved them yourself and forgot,' and later, 'Your memory isn't what it was.' By April Noor has started to ask her daughter whether he is right.” It comes back for months, and Noor has begun to doubt her own memory. This answer leads to **Gaslighting**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **Denies it, attacks them for raising it, and plays the one wronged**: There is no single exchange of a denial, an attack and playing the one wronged. The same denial returns for months, until Noor doubts her memory.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 8 of 46**
@@ -1586,7 +1586,7 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **Denies it, attacks them for raising it, and plays the one wronged.**” The video shows Ollie dropped it, and Ray raises it. Ollie then denies it ("It came off the sun"), attacks Ray ("you always blame the wrong person"), and plays the one wronged ("I'm the one who gets hauled over"). “When his captain, Ray, asks about it afterwards, Ollie says, 'It came off the sun. You were the one who picked this ground, and you always blame the wrong person. I give my Saturdays to this club and I'm the one who gets hauled over.'” This answer leads to **Turning the blame around**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **Accuses them of what the accuser is doing**: Ollie is answering something Ray raised with him. In **Projection** nobody has raised anything, and the accusation is where the case starts.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 9 of 46**
@@ -1606,7 +1606,7 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **Floods them with attention early on, then pulls it back.**” The attention was far more than a fortnight would explain: “wrote to Elle every day for a fortnight about how special her voice was, gave her a ticket to his sister's concert, and told the choir she was its heart” and “he stopped speaking to her at rehearsals and told a friend she had been 'using him'”. It was pulled back, and turned into criticism, once Elle did not go along. This answer leads to **Love-bombing**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **Says or does what it looks like, and nothing more**: Warmth from a new friend would be **An ordinary exchange** if it stayed warm. Here it is pulled back and turns critical when Elle says no.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 10 of 46**
@@ -1626,7 +1626,7 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **Accuses them of what the accuser is doing.**” Edith accuses Dina: “Edith says that Dina 'always talks over everyone else'” and “shows Edith interrupting eleven times and Dina twice”. The recording shows the accuser doing it far more than the person she accuses, and nobody raised it with Edith first. This answer leads to **Projection**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **Says or does what it looks like, and nothing more**: A fair complaint would have the case showing Dina doing it. Here the recording shows Edith doing it, and shows little from Dina.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 11 of 46**
@@ -1646,7 +1646,7 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **Says or does what it looks like, and nothing more.**” Carla makes a complaint: “Carla phones her energy company and says her bill is double what she expected.” Ian checks and corrects it. Nothing is denied or turned on her, nothing repeats, and no attention is poured on and withdrawn. This answer leads to **An ordinary exchange**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **Denies it, attacks them for raising it, and plays the one wronged**: Ian does not deny, attack or play the one wronged. He checks, finds the fault and fixes it.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 12 of 46**
@@ -1660,7 +1660,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Shown as soon as you answer**
 
-- The answer is: “Is this one exchange, with an attack and the speaker playing the one wronged? Or is it the same denial coming back over weeks or months, until the other person doubts their own memory?” In both, a person denies that something happened. **Turning the blame around** is one exchange: asked about something they did, the person denies it, attacks the one who asked, and plays the one wronged. **Gaslighting** is a denial of what happened that comes back again and again over weeks or months, until the other person doubts their own memory. When a case shows both **“Denies it, attacks them for raising it, and plays the one wronged”** and the same denial of what happened, again and again over weeks or months, until the other person doubts their own memory, the key’s answer is **“Tells them, again and again, that what happened did not happen”**.
+- The answer is: “Is this one exchange, with an attack and the speaker playing the one wronged? Or is it the same denial coming back over weeks or months, until the other person doubts their own memory?” In both, a person denies that something happened. **Turning the blame around** is one exchange: asked about something they did, the person denies it, attacks the one who asked, and plays the one wronged. **Gaslighting** is a denial of what happened that comes back again and again over weeks or months, until the other person doubts their own memory. When a case shows both **“Denies it, attacks them for raising it, and plays the one wronged”** and the same denial of what happened, again and again over weeks or months, until the other person doubts their own memory, the answer is **“Tells them, again and again, that what happened did not happen”**.
 - If you chose “Did someone first raise something with the speaker, so that the speaker is answering it? Or did the speaker start with the accusation?”: that question separates **Turning the blame around** and **Projection**.
 - If you chose “Does the case show that the thing really happened? Does the same denial come back over weeks or months? Does the other person now doubt their own memory? Or is this one disagreement that gets settled?”: that question separates **Gaslighting** and **An ordinary exchange**.
 - If you chose “Does the case show that the person did what was raised with them? And is the answer a denial, an attack on the one who raised it, and a claim to be the one wronged: all three?”: that question separates **Turning the blame around** and **An ordinary exchange**.
@@ -1677,7 +1677,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Shown as soon as you answer**
 
-- The answer is: “Did someone first raise something with the speaker, so that the speaker is answering it? Or did the speaker start with the accusation?” In both, one person goes for the other about something the speaker is guilty of. In **Turning the blame around** the attack comes in answer to being asked about something the person did, along with a denial and the person playing the one wronged. In **Projection** nobody has raised anything with the speaker: the accusation comes first. When a case shows both **“Accuses them of what the accuser is doing”** and a denial of what they were asked about and an attack on the person who asked, with the speaker as the one wronged, the key’s answer is **“Denies it, attacks them for raising it, and plays the one wronged”**.
+- The answer is: “Did someone first raise something with the speaker, so that the speaker is answering it? Or did the speaker start with the accusation?” In both, one person goes for the other about something the speaker is guilty of. In **Turning the blame around** the attack comes in answer to being asked about something the person did, along with a denial and the person playing the one wronged. In **Projection** nobody has raised anything with the speaker: the accusation comes first. When a case shows both **“Accuses them of what the accuser is doing”** and a denial of what they were asked about and an attack on the person who asked, with the speaker as the one wronged, the answer is **“Denies it, attacks them for raising it, and plays the one wronged”**.
 - If you chose “Is this one exchange, with an attack and the speaker playing the one wronged? Or is it the same denial coming back over weeks or months, until the other person doubts their own memory?”: that question separates **Gaslighting** and **Turning the blame around**.
 - If you chose “Does the case show that the person did what was raised with them? And is the answer a denial, an attack on the one who raised it, and a claim to be the one wronged: all three?”: that question separates **Turning the blame around** and **An ordinary exchange**.
 - If you chose “Who does the case show doing or feeling what is being said: the person accused, the accuser, or both?”: that question separates **Projection** and **An ordinary exchange**.
@@ -1824,12 +1824,12 @@ Shown to you, with the words that decide each answer marked:
 **Shown as soon as you answer**
 
 - If you are right: “Right: **One person’s reasoning.**” One person is giving her reason for a choice of her own: “I've put four years into this” and “I can't switch now”. The tutor only listens, and nothing is said about the tutor.
-- If you miss: “The answer is …”, the same reason, and then the line built from the key for the answer you chose.
-- Then, right or wrong: “This case leaves the part of the key you have been taught. The questions that follow this answer come in a part of the course you have not reached, so the case stops here.”
+- If you miss: “The answer is …”, the same reason, and then the line built from the answers’ own wording for the answer you chose.
+- Then, right or wrong: “The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.”
 
-#### Stage 3 of 5. The first answer is shown. Answer the rest, then give the name. From here on your route is marked as well as the name: a right name reached by a wrong answer on the way counts as a miss.
+#### Stage 3 of 5. The first answer is shown. Answer the rest, then give the name. From here on your answers on the way are marked as well as the name: a right name reached by a wrong answer counts as a miss.
 
-Each question is shown with all of its answers from the key, in the key’s order, and the names offered are the five this unit teaches.
+Each question is shown with all of its answers, in order, and the names offered are the five this unit teaches.
 
 **Drill item 22 of 46**
 
@@ -1846,10 +1846,10 @@ Shown to you, with the words that decide each answer marked:
   - Why not **An ordinary exchange**: One disagreement about whether the pages were ever there would be **An ordinary exchange**. Here the denial keeps coming back and Marta has begun to doubt her memory.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - If you chose **Says or does what it looks like, and nothing more**: One disagreement about whether the pages were ever there would be **An ordinary exchange**. Here the denial keeps coming back and Marta has begun to doubt her memory.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **An ordinary exchange**, the look-alike card’s lines follow: In both, two people disagree about something that happened, and one of them says it did not happen the way the other says. The difference is how often it comes back, and what it does to the other person. In **Gaslighting** the thing really happened and the case shows it, the same denial returns over weeks or months, and the other person starts to doubt their own memory. In **An ordinary exchange** it is one disagreement, or the person who says it did not happen is right, and each person still trusts their own memory. Does the case show that the thing really happened? Does the same denial come back over weeks or months? Does the other person now doubt their own memory? Or is this one disagreement that gets settled?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Telling someone, again and again, that what happened did not happen” (one tap opens the card).
 
 **Drill item 23 of 46**
@@ -1867,10 +1867,10 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Gaslighting**: Fin does not tell Jo again and again that something did not happen. He remembers it differently once, checks, and agrees.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - If you chose **Tells them, again and again, that what happened did not happen**: Fin does not tell Jo again and again that something did not happen. He remembers it differently once, checks, and agrees.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Gaslighting**, the look-alike card’s lines follow: In both, two people disagree about something that happened, and one of them says it did not happen the way the other says. The difference is how often it comes back, and what it does to the other person. In **Gaslighting** the thing really happened and the case shows it, the same denial returns over weeks or months, and the other person starts to doubt their own memory. In **An ordinary exchange** it is one disagreement, or the person who says it did not happen is right, and each person still trusts their own memory. Does the case show that the thing really happened? Does the same denial come back over weeks or months? Does the other person now doubt their own memory? Or is this one disagreement that gets settled?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Something said between two people, with nothing more to it” (one tap opens the card).
 
 **Drill item 24 of 46**
@@ -1888,10 +1888,10 @@ Shown to you, with the words that decide each answer marked:
   - Why not **An ordinary exchange**: Someone who simply said "Sorry, I forgot to return it" would be **An ordinary exchange**. Kofi denies, attacks and plays the one wronged, all in one reply.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - If you chose **Says or does what it looks like, and nothing more**: Someone who simply said "Sorry, I forgot to return it" would be **An ordinary exchange**. Kofi denies, attacks and plays the one wronged, all in one reply.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **An ordinary exchange**, the look-alike card’s lines follow: In both, someone is told about something and answers with a denial or with anger. In **Turning the blame around** the case shows the person did it, and the answer is a denial, an attack on the one who raised it, and a claim to be the one wronged: all three. In **An ordinary exchange** the answer may be a denial, or angry, or sharp, but either the case shows the person did not do it, or the answer is not all three. Does the case show that the person did what was raised with them? And is the answer a denial, an attack on the one who raised it, and a claim to be the one wronged: all three?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Caught out, they deny it, attack, and play the one wronged” (one tap opens the card).
 
 **Drill item 25 of 46**
@@ -1905,19 +1905,19 @@ Shown to you, with the words that decide each answer marked:
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Projection**.” What does it do to the other person? **Accuses them of what the accuser is doing.** Rhona accuses Bill: “Rhona says Bill 'never pays his share of the cleaning'” and “Rhona has paid nothing for six months and that Bill has paid every month”. The ledger shows the accuser doing it and the person accused doing the opposite, and nobody had raised it with her.
+- If you are right: “Right: **Projection**.” What does it do to the other person? **Accuses them of what the accuser is doing.** Rhona accuses Bill: “Rhona says Bill 'never pays his share of the cleaning'” and “Rhona has paid nothing for six months and that Bill has paid every month”. The case shows the accuser doing it and the person accused doing the opposite, and nobody had raised it with her.
   - Why not **Turning the blame around**: Nobody had asked Rhona about her payments, so she is not answering anything by denying, attacking and playing the one wronged. The accusation is where the case starts.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - If you chose **Denies it, attacks them for raising it, and plays the one wronged**: Nobody had asked Rhona about her payments, so she is not answering anything by denying, attacking and playing the one wronged. The accusation is where the case starts.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Turning the blame around**, the look-alike card’s lines follow: In both, one person goes for the other about something the speaker is guilty of. In **Turning the blame around** the attack comes in answer to being asked about something the person did, along with a denial and the person playing the one wronged. In **Projection** nobody has raised anything with the speaker: the accusation comes first. Did someone first raise something with the speaker, so that the speaker is answering it? Or did the speaker start with the accusation?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Accusing someone of what you are doing yourself” (one tap opens the card).
 
-#### Stage 4 of 5. No help. Answer every question in the key’s order, then give the name.
+#### Stage 4 of 5. No help. Answer every question in order, then give the name.
 
-Each question is shown with all of its answers from the key, in the key’s order, and the names offered are the five this unit teaches.
+Each question is shown with all of its answers, in order, and the names offered are the five this unit teaches.
 
 **Drill item 26 of 46**
 
@@ -1932,10 +1932,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **Something one person does to another.** One person is saying something to another about what has happened between them: “whenever Lee brings it up, Carl says”.
   - If you chose **Denies it, attacks them for raising it, and plays the one wronged**: There is no single exchange of a denial, an attack and playing the one wronged. The same denial comes back for months, until Lee doubts his memory.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Turning the blame around**, the look-alike card’s lines follow: In both, a person denies that something happened. **Turning the blame around** is one exchange: asked about something they did, the person denies it, attacks the one who asked, and plays the one wronged. **Gaslighting** is a denial of what happened that comes back again and again over weeks or months, until the other person doubts their own memory. Is this one exchange, with an attack and the speaker playing the one wronged? Or is it the same denial coming back over weeks or months, until the other person doubts their own memory?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Telling someone, again and again, that what happened did not happen” (one tap opens the card).
 
 **Drill item 27 of 46**
@@ -1951,10 +1951,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **Something one person does to another.** One person is telling another something about them, and the other answers: “Dr Shah tells Mrs Okafor that her blood pressure is higher than last time”.
   - If you chose **Denies it, attacks them for raising it, and plays the one wronged**: Mrs Okafor disagrees, but she does not attack Dr Shah or play the one wronged, and the case does not show her doing anything wrong.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Turning the blame around**, the look-alike card’s lines follow: In both, someone is told about something and answers with a denial or with anger. In **Turning the blame around** the case shows the person did it, and the answer is a denial, an attack on the one who raised it, and a claim to be the one wronged: all three. In **An ordinary exchange** the answer may be a denial, or angry, or sharp, but either the case shows the person did not do it, or the answer is not all three. Does the case show that the person did what was raised with them? And is the answer a denial, an attack on the one who raised it, and a claim to be the one wronged: all three?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Something said between two people, with nothing more to it” (one tap opens the card).
 
 **Drill item 28 of 46**
@@ -1970,10 +1970,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **Something one person does to another.** One person is doing something to another that is about the other person: “Cass slammed the kitchen door, stopped cooking for her, and said, 'I did all that and you throw it in my face.'”.
   - If you chose **Says or does what it looks like, and nothing more**: A friendly flatmate who stayed friendly when Mia said no would be **An ordinary exchange**. Here the attention stops and turns critical.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **An ordinary exchange**, the look-alike card’s lines follow: In both, someone is warm and generous early in a relationship. In **Love-bombing** the attention is far more than the relationship so far would explain, and it is later pulled back or turns into criticism. In **An ordinary exchange** the warmth fits how well the two know each other, or it stays when the other person sets a limit. Set the attention against how long the two have known each other. Is it far more? Then ask what happens to it later, when the other person says no or goes their own way.
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A flood of attention early on, pulled back later” (one tap opens the card).
 
 **Drill item 29 of 46**
@@ -1989,10 +1989,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **Something one person does to another.** One person is raising something with another that has happened between them: “The club secretary, Una, asks him about it”.
   - If you chose **Accuses them of what the accuser is doing**: Karl is answering something Una raised with him. In **Projection** nobody has raised anything, and the accusation is where the case starts.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Projection**, the look-alike card’s lines follow: In both, one person goes for the other about something the speaker is guilty of. In **Turning the blame around** the attack comes in answer to being asked about something the person did, along with a denial and the person playing the one wronged. In **Projection** nobody has raised anything with the speaker: the accusation comes first. Did someone first raise something with the speaker, so that the speaker is answering it? Or did the speaker start with the accusation?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Caught out, they deny it, attack, and play the one wronged” (one tap opens the card).
 
 **Drill item 30 of 46**
@@ -2008,10 +2008,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **Something one person does to another.** One person is saying something to others about another, and it is about what has happened between them: “Sven tells everyone that Mia 'never does her share of the group work'”.
   - If you chose **Says or does what it looks like, and nothing more**: A fair complaint would have the case showing Mia doing it. It shows Sven doing it, and Mia doing the work.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **An ordinary exchange**, the look-alike card’s lines follow: In both, one person accuses the other of something. In **Projection** the case shows the accuser doing or feeling it, and nothing shows the other person doing it. In **An ordinary exchange** the case shows the other person doing it, so the accusation is fair, even if the accuser does it too. Who does the case show doing or feeling what is being said: the person accused, the accuser, or both?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Accusing someone of what you are doing yourself” (one tap opens the card).
 
 **Drill item 31 of 46**
@@ -2027,10 +2027,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **Something one person does to another.** One person is saying something to another about what was agreed between them: “whenever the team captain, Ned, asks about the slot, Marcia says”.
   - If you chose **Denies it, attacks them for raising it, and plays the one wronged**: There is no single exchange in which Marcia denies it, attacks Ned and plays the one wronged. The same denial returns for months.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Turning the blame around**, the look-alike card’s lines follow: In both, a person denies that something happened. **Turning the blame around** is one exchange: asked about something they did, the person denies it, attacks the one who asked, and plays the one wronged. **Gaslighting** is a denial of what happened that comes back again and again over weeks or months, until the other person doubts their own memory. Is this one exchange, with an attack and the speaker playing the one wronged? Or is it the same denial coming back over weeks or months, until the other person doubts their own memory?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Telling someone, again and again, that what happened did not happen” (one tap opens the card).
 
 **Drill item 32 of 46**
@@ -2046,10 +2046,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **Something one person does to another.** One person is raising something with another that has happened between them: “Her supervisor, Dr Cole, asks her about it”.
   - If you chose **Tells them, again and again, that what happened did not happen**: Nothing shows the denial coming back over weeks or months, or Dr Cole doubting his own memory. It is one exchange.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Gaslighting**, the look-alike card’s lines follow: In both, a person denies that something happened. **Turning the blame around** is one exchange: asked about something they did, the person denies it, attacks the one who asked, and plays the one wronged. **Gaslighting** is a denial of what happened that comes back again and again over weeks or months, until the other person doubts their own memory. Is this one exchange, with an attack and the speaker playing the one wronged? Or is it the same denial coming back over weeks or months, until the other person doubts their own memory?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Caught out, they deny it, attack, and play the one wronged” (one tap opens the card).
 
 **Drill item 33 of 46**
@@ -2065,10 +2065,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **Something one person does to another.** One person is doing something to another that is about the other person: “he went quiet for three weeks and then wrote, 'I see who my real friends are.'”.
   - If you chose **Says or does what it looks like, and nothing more**: A friend who stays friendly after being turned down would be **An ordinary exchange**. Here the attention stops and the reply is a reproach.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **An ordinary exchange**, the look-alike card’s lines follow: In both, someone is warm and generous early in a relationship. In **Love-bombing** the attention is far more than the relationship so far would explain, and it is later pulled back or turns into criticism. In **An ordinary exchange** the warmth fits how well the two know each other, or it stays when the other person sets a limit. Set the attention against how long the two have known each other. Is it far more? Then ask what happens to it later, when the other person says no or goes their own way.
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A flood of attention early on, pulled back later” (one tap opens the card).
 
 **Drill item 34 of 46**
@@ -2084,10 +2084,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **Something one person does to another.** One person is saying something to another about what happens between them: “Marco tells his partner Elena that she 'is always on her phone when I'm talking'”.
   - If you chose **Says or does what it looks like, and nothing more**: A fair complaint would have the case showing Elena on her phone. It shows Marco on his, and hers in her bag.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **An ordinary exchange**, the look-alike card’s lines follow: In both, one person accuses the other of something. In **Projection** the case shows the accuser doing or feeling it, and nothing shows the other person doing it. In **An ordinary exchange** the case shows the other person doing it, so the accusation is fair, even if the accuser does it too. Who does the case show doing or feeling what is being said: the person accused, the accuser, or both?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Accusing someone of what you are doing yourself” (one tap opens the card).
 
 **Drill item 35 of 46**
@@ -2103,10 +2103,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **Something one person does to another.** One person is telling another about something between them: “Isaac knocks on his neighbour Hettie's door and says her television has been too loud after eleven for a week”.
   - If you chose **Denies it, attacks them for raising it, and plays the one wronged**: Hettie does not deny it, and she does not put herself forward as the one wronged. Her sharp remark is one remark, and she agrees to turn the television down.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Turning the blame around**, the look-alike card’s lines follow: In both, someone is told about something and answers with a denial or with anger. In **Turning the blame around** the case shows the person did it, and the answer is a denial, an attack on the one who raised it, and a claim to be the one wronged: all three. In **An ordinary exchange** the answer may be a denial, or angry, or sharp, but either the case shows the person did not do it, or the answer is not all three. Does the case show that the person did what was raised with them? And is the answer a denial, an attack on the one who raised it, and a claim to be the one wronged: all three?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Something said between two people, with nothing more to it” (one tap opens the card).
 
 **Drill item 36 of 46**
@@ -2122,11 +2122,11 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **Something one person does to another.** One person is saying something to another about what has happened between them: “whenever Kaya brings it up, Walt says kindly”.
   - If you chose **Says or does what it looks like, and nothing more**: A gentle voice and a worried face can sound like **An ordinary exchange**. But the denial returns for five months about something the case shows really happened, and Kaya now doubts herself.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **An ordinary exchange**, the look-alike card’s lines follow: In both, two people disagree about something that happened, and one of them says it did not happen the way the other says. The difference is how often it comes back, and what it does to the other person. In **Gaslighting** the thing really happened and the case shows it, the same denial returns over weeks or months, and the other person starts to doubt their own memory. In **An ordinary exchange** it is one disagreement, or the person who says it did not happen is right, and each person still trusts their own memory. Does the case show that the thing really happened? Does the same denial come back over weeks or months? Does the other person now doubt their own memory? Or is this one disagreement that gets settled?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *The long draft*, which was **An ordinary exchange**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *The long draft*, which was **An ordinary exchange**. When a likeness and the answers disagree, go by the words that answer the question.
 - Taught on: “Telling someone, again and again, that what happened did not happen” (one tap opens the card).
 
 **Drill item 37 of 46**
@@ -2137,16 +2137,16 @@ Each question is shown with all of its answers from the key, in the key’s orde
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Turning the blame around**.” What does it do to the other person? **Denies it, attacks them for raising it, and plays the one wronged.** The emails show Sandy did it, and Lev raises it. Sandy denies it, attacks Lev, and plays the one wronged: “The committee's emails show that Sandy was told to renew it and never did” and “'I renewed it,' Sandy says. 'You're the one who never reads the post. You let the gas safety certificate lapse last year and nobody said a word. I do everything round here and I'm the one who gets cross-examined.'” The attack also fits the accuser, since Sandy is the one who let things lapse. When a case shows both, the key gives **“Denies it, attacks them for raising it, and plays the one wronged”**.
+- If you are right: “Right: **Turning the blame around**.” What does it do to the other person? **Denies it, attacks them for raising it, and plays the one wronged.** The emails show Sandy did it, and Lev raises it. Sandy denies it, attacks Lev, and plays the one wronged: “The committee's emails show that Sandy was told to renew it and never did” and “'I renewed it,' Sandy says. 'You're the one who never reads the post. You let the gas safety certificate lapse last year and nobody said a word. I do everything round here and I'm the one who gets cross-examined.'” The attack also fits the accuser, since Sandy is the one who let things lapse. When a case shows both, the answer is **“Denies it, attacks them for raising it, and plays the one wronged”**.
   - Why not **Projection**: Sandy does accuse Lev of what Sandy did. But Lev raised the lapse with Sandy first, so Sandy is answering something, with a denial and by playing the one wronged. That is what puts the case with the other name.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **Something one person does to another.** One person is raising something with another that has happened between them: “is asked by the secretary, Lev, why the hall's insurance lapsed in March”.
-  - If you chose **Accuses them of what the accuser is doing**: You chose **Accuses them of what the accuser is doing**. This case does show that. It also shows a denial of what they were asked about and an attack on the person who asked, with the speaker as the one wronged, and when a case shows both, the key’s answer is **Denies it, attacks them for raising it, and plays the one wronged**.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose **Accuses them of what the accuser is doing**: You chose **Accuses them of what the accuser is doing**. This case does show that. It also shows a denial of what they were asked about and an attack on the person who asked, with the speaker as the one wronged, and when a case shows both, the answer is **Denies it, attacks them for raising it, and plays the one wronged**.
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Projection**, the look-alike card’s lines follow: In both, one person goes for the other about something the speaker is guilty of. In **Turning the blame around** the attack comes in answer to being asked about something the person did, along with a denial and the person playing the one wronged. In **Projection** nobody has raised anything with the speaker: the accusation comes first. Did someone first raise something with the speaker, so that the speaker is answering it? Or did the speaker start with the accusation?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *The expense claims*, which was **Projection**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *The expense claims*, which was **Projection**. When a likeness and the answers disagree, go by the words that answer the question.
 - Taught on: “Caught out, they deny it, attack, and play the one wronged” (one tap opens the card).
 
 **Drill item 38 of 46**
@@ -2162,11 +2162,11 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **Something one person does to another.** One person is saying something to another about what has happened between them: “Callie takes Joe aside and says gently, 'I only say this because I care. You've been skipping our Monday check-ins.'”.
   - If you chose **Says or does what it looks like, and nothing more**: A fair complaint would have the case showing Joe skipping the check-ins. It shows the reverse, and shows Callie missing them.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **An ordinary exchange**, the look-alike card’s lines follow: In both, one person accuses the other of something. In **Projection** the case shows the accuser doing or feeling it, and nothing shows the other person doing it. In **An ordinary exchange** the case shows the other person doing it, so the accusation is fair, even if the accuser does it too. Who does the case show doing or feeling what is being said: the person accused, the accuser, or both?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *The washing up*, which was **An ordinary exchange**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *The washing up*, which was **An ordinary exchange**. When a likeness and the answers disagree, go by the words that answer the question.
 - Taught on: “Accusing someone of what you are doing yourself” (one tap opens the card).
 
 **Drill item 39 of 46**
@@ -2177,15 +2177,15 @@ Each question is shown with all of its answers from the key, in the key’s orde
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Love-bombing**.” What does it do to the other person? **Floods them with attention early on, then pulls it back.** This is not a romance, and the key does not need one. Within three weeks came far more trust and attention than three weeks would explain: “had given her a set of keys, called her 'my right hand', and asked her opinion on everything” and “Ben took her off the volunteers' group chat, stopped speaking to her on shifts, and told another volunteer she 'only does what suits her'”. It was pulled back, with criticism, when Zadie set a limit.
+- If you are right: “Right: **Love-bombing**.” What does it do to the other person? **Floods them with attention early on, then pulls it back.** This is not a romance, and the answer does not need one. Within three weeks came far more trust and attention than three weeks would explain: “had given her a set of keys, called her 'my right hand', and asked her opinion on everything” and “Ben took her off the volunteers' group chat, stopped speaking to her on shifts, and told another volunteer she 'only does what suits her'”. It was pulled back, with criticism, when Zadie set a limit.
   - Why not **An ordinary exchange**: A warm coordinator who stayed warm when Zadie said Saturdays only would be **An ordinary exchange**. Here the attention stops and turns critical.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **Something one person does to another.** One person is doing something to another that is about the other person: “Ben took her off the volunteers' group chat, stopped speaking to her on shifts, and told another volunteer she 'only does what suits her'”.
   - If you chose **Says or does what it looks like, and nothing more**: A warm coordinator who stayed warm when Zadie said Saturdays only would be **An ordinary exchange**. Here the attention stops and turns critical.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **An ordinary exchange**, the look-alike card’s lines follow: In both, someone is warm and generous early in a relationship. In **Love-bombing** the attention is far more than the relationship so far would explain, and it is later pulled back or turns into criticism. In **An ordinary exchange** the warmth fits how well the two know each other, or it stays when the other person sets a limit. Set the attention against how long the two have known each other. Is it far more? Then ask what happens to it later, when the other person says no or goes their own way.
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A flood of attention early on, pulled back later” (one tap opens the card).
 
 **Drill item 40 of 46**
@@ -2201,11 +2201,11 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **Something one person does to another.** One person is raising something with another that has happened between them: “His supervisor, Mel, asks him about it”.
   - If you chose **Denies it, attacks them for raising it, and plays the one wronged**: It looks like it, because the case shows he did it and Mel raised it. But **Turning the blame around** needs all three in answer: a denial, an attack and playing the one wronged, and Idris gives none of them.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Turning the blame around**, the look-alike card’s lines follow: In both, someone is told about something and answers with a denial or with anger. In **Turning the blame around** the case shows the person did it, and the answer is a denial, an attack on the one who raised it, and a claim to be the one wronged: all three. In **An ordinary exchange** the answer may be a denial, or angry, or sharp, but either the case shows the person did not do it, or the answer is not all three. Does the case show that the person did what was raised with them? And is the answer a denial, an attack on the one who raised it, and a claim to be the one wronged: all three?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *The missing till money*, which was **Turning the blame around**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *The missing till money*, which was **Turning the blame around**. When a likeness and the answers disagree, go by the words that answer the question.
 - Taught on: “Something said between two people, with nothing more to it” (one tap opens the card).
 
 **Drill item 41 of 46**
@@ -2224,8 +2224,8 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - If you are right: “Right: **A lasting way someone is.**” The case is a long view of one person: “For ten years, in every job and every friendship” and “His family say he was the same at school”. Ten years, every job, every friendship and his school days, with the same thing in each.
-- If you miss: “The answer is …”, the same reason, and then the line built from the key for the answer you chose.
-- Then, right or wrong: “This case leaves the part of the key you have been taught. The questions that follow this answer come in a part of the course you have not reached, so the case stops here.”
+- If you miss: “The answer is …”, the same reason, and then the line built from the answers’ own wording for the answer you chose.
+- Then, right or wrong: “The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.”
 
 **Drill item 42 of 46**
 
@@ -2243,8 +2243,8 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - If you are right: “Right: **One person’s reasoning.**” The case shows how one person reaches, defends or changes a view or a choice of their own.
-- If you miss: “The answer is …”, the same reason, and then the line built from the key for the answer you chose.
-- Then, right or wrong: “This case leaves the part of the key you have been taught. The questions that follow this answer come in a part of the course you have not reached, so the case stops here.”
+- If you miss: “The answer is …”, the same reason, and then the line built from the answers’ own wording for the answer you chose.
+- Then, right or wrong: “The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.”
 
 #### Last stage. Each of these is something a person might say that uses one of this unit’s names, or reasons in one of its ways. Each has a fault. The first is worked for you. For the rest, answer before the fault is shown.
 
@@ -2264,7 +2264,7 @@ Each question is shown with all of its answers from the key, in the key’s orde
 
 **The answer:** Something the case shows the person did, someone raising it with them, and in answer all three: they deny it, they attack the person who raised it, and they present themselves as the one who has been wronged.
 - The fault: The claim shows a denial and stops there. A denial on its own is not **Turning the blame around**. The case must show that he did it, and that in answer to being asked he also attacks the person who asked and plays the one wronged. The claim shows none of those.
-- The claim, put right (always the last thing shown): I asked him about the missing keys, and he said he had not taken them. That is a denial, and so far nothing more. It would be **Turning the blame around** only if the case showed he had taken them and, when I asked, he denied it, attacked me for asking, and said he was the one being wronged.
+- The claim, put right (always the last thing shown): I asked him about what had gone missing, and he said he had not taken it. That is a denial, and so far nothing more. It would be **Turning the blame around** only if the case showed he had taken them and, when I asked, he denied it, attacked me for asking, and said he was the one being wronged.
 
 **Drill item 43 of 46**
 
@@ -2301,7 +2301,7 @@ Each question is shown with all of its answers from the key, in the key’s orde
 
 - The answer is: **An accusation one person makes against the other, and the case showing that the accuser is the one doing or feeling what they accuse the other of, with nothing in the case showing the other person doing it.**
 - If you chose another line: “That is what you must be able to point to for «the name it belongs to», which is not the name the claim uses.”
-- The fault: The claim asks what she believes. The key never asks that, and an honest belief and **Projection** can go together. What the key asks is what is done to the other person, as the case shows it: an accusation, the accuser doing exactly that, and nothing showing the other person doing it.
+- The fault: The claim asks what she believes. The questions never ask that, and an honest belief and **Projection** can go together. What they ask is what is done to the other person, as the case shows it: an accusation, the accuser doing exactly that, and nothing showing the other person doing it.
 - The claim, put right (always the last thing shown): She may honestly believe he is dishonest. It is **Projection** if the case shows she is the one doing what she accuses him of, and nothing in the case shows him doing it.
 
 **Drill item 45 of 46**
@@ -2319,9 +2319,9 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - The answer is: **Says or does what it looks like, and nothing more.**
-- If you chose another answer, the line is built from the key, as for any other question.
-- The fault: The claim reasons from how it felt. The key does not ask how upset anyone was, or whether it was meant. As the case shows it, the boss said the report was late and nothing more. That is the answer **“Says or does what it looks like, and nothing more”**.
-- The claim, put right (always the last thing shown): My boss told me my report was late, and I felt awful for days. Feeling awful tells me it hurt. It does not tell me she did one of the four things: she said what it looked like, and nothing more, so the key’s answer is **“Says or does what it looks like, and nothing more”**.
+- If you chose another answer, the line is built from the answers’ own wording, as for any other question.
+- The fault: The claim reasons from how it felt. The questions do not ask how upset anyone was, or whether it was meant. As the case shows it, the boss said the report was late and nothing more. That is the answer **“Says or does what it looks like, and nothing more”**.
+- The claim, put right (always the last thing shown): My boss told me my report was late, and I felt awful for days. Feeling awful tells me it hurt. It does not tell me she did one of the four things: she said what it looked like, and nothing more, so the answer is **“Says or does what it looks like, and nothing more”**.
 
 **Drill item 46 of 46**
 
@@ -2339,20 +2339,20 @@ Each question is shown with all of its answers from the key, in the key’s orde
 
 - The answer is: **Early in a relationship, far more praise, attention, gifts or plans than the relationship so far would explain, and later that attention pulled back or turned into criticism, often once the other person sets a limit or does not go along.**
 - If you chose another line: “That is what you must be able to point to for «the name it belongs to», which is not the name the claim uses.”
-- The fault: The claim names a kind of person and points to one cold week. The key names what is done in a case, not what a person is. And the cold week is only the second half: nothing in the claim shows far more attention earlier on.
+- The fault: The claim names a kind of person and points to one cold week. The names are for what is done in a case, not for what a person is. And the cold week is only the second half: nothing in the claim shows far more attention earlier on.
 - The claim, put right (always the last thing shown): She went cold for a week after I said no to her. That is the pulling back. It would be **Love-bombing** only if, early on, she had given me far more praise, attention, gifts or plans than we had known each other long enough to explain.
 
-**When the drill ends.** The learner sees their own results: first-try accuracy for each stage, whole routes beside single questions, the pair of names they mixed up most often, and what will come back and when. Anything missed was asked again before the drill ended. Nothing here is graded. A miss only decides what comes back.
+**When the drill ends.** The learner sees their own results: first-try accuracy for each stage, whole cases beside single questions, the pair of names they mixed up most often, and what will come back and when. Anything missed was asked again before the drill ended. Nothing here is graded. A miss only decides what comes back.
 
 ### 41. What to carry away
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 41 of 42*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 41 of 42*
 
 [reviewers only: card kind `recap`, id `recap`]
 
-You have now run the key on your own. This card puts the unit in one place, in the key’s words.
+You have now gone from the first question to the name on your own. This card puts the unit in one place.
 
-**The key for this unit, in its own words**
+**This unit’s questions and answers**
 
 What does it do to the other person?
 - Tells them, again and again, that what happened did not happen → Gaslighting
@@ -2379,12 +2379,12 @@ What does it do to the other person?
 - Say what is done to the other person, and point to the words in the case that show it. If you cannot point, you do not have an answer yet.
 - Most cases are **An ordinary exchange**. Start there, and give one of the other names only when you can point to all that it needs. How upset anyone is does not decide it, and neither does how kind or unkind the words sound.
 - Some names need time or two halves. **Gaslighting** needs something that really happened, a denial that comes back over weeks or months, and the other person doubting their memory. **Love-bombing** needs the flood and the pulling back. **Turning the blame around** needs one exchange with all three parts, and the case showing that the person did it. **Projection** needs the case to show the accuser doing it, and nothing to show the other person doing it.
-- The key names what is done, never what kind of person did it and never what they meant. The same person can do one of these on Monday and have **An ordinary exchange** on Tuesday.
-- The key sorts a short account of what was said or done. It cannot tell you whether you are safe. If you think someone is controlling you, or you are afraid of them, talk to someone you trust or to a professional. That is not something a key can settle.
+- The names are for what is done, never for what kind of person did it or what they meant. The same person can do one of these on Monday and have **An ordinary exchange** on Tuesday.
+- The questions sort a short account of what was said or done. They cannot tell you whether you are safe. If you think someone is controlling you, or you are afraid of them, talk to someone you trust or to a professional. That is not something a set of questions can settle.
 
 ### 42. Where would you meet this?
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 42 of 42*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 42 of 42*
 
 [reviewers only: card kind `transfer`, id `transfer`]
 
@@ -2412,7 +2412,7 @@ One line is enough. It is kept on this device only and is never marked.
 
 ## After the unit: what comes back on later days
 
-A name that is due returns as a case the learner has not seen, next to a case of the name they most often confuse it with. Each is run as a whole route. These are the fresh cases held back for that purpose: three for each name, one for each scheduled return. The first return is about two days after the drill, the next about a week after that, the next about three and a half weeks later.
+A name that is due returns as a case the learner has not seen, next to a case of the name they most often confuse it with. Each is run as a whole case: every question, then the name. These are the fresh cases held back for that purpose: three for each name, one for each scheduled return. The first return is about two days after the drill, the next about a week after that, the next about three and a half weeks later.
 
 **Return case 1 of 15**
 
@@ -2427,10 +2427,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **Something one person does to another.** One person is saying something to another about what has happened between them: “whenever she mentions it, he says”.
   - If you chose **Says or does what it looks like, and nothing more**: A single disagreement about what a letter said would be **An ordinary exchange**. Here the denial comes back for five months and Beth has begun to doubt herself.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **An ordinary exchange**, the look-alike card’s lines follow: In both, two people disagree about something that happened, and one of them says it did not happen the way the other says. The difference is how often it comes back, and what it does to the other person. In **Gaslighting** the thing really happened and the case shows it, the same denial returns over weeks or months, and the other person starts to doubt their own memory. In **An ordinary exchange** it is one disagreement, or the person who says it did not happen is right, and each person still trusts their own memory. Does the case show that the thing really happened? Does the same denial come back over weeks or months? Does the other person now doubt their own memory? Or is this one disagreement that gets settled?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Telling someone, again and again, that what happened did not happen” (one tap opens the card).
 
 **Return case 2 of 15**
@@ -2446,10 +2446,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **Something one person does to another.** One person is saying something to another about what has happened between them: “whenever Rob asks about it, Gail says”.
   - If you chose **Denies it, attacks them for raising it, and plays the one wronged**: There is no single exchange of a denial, an attack and playing the one wronged. The same denial returns for months, until Rob doubts his memory.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Turning the blame around**, the look-alike card’s lines follow: In both, a person denies that something happened. **Turning the blame around** is one exchange: asked about something they did, the person denies it, attacks the one who asked, and plays the one wronged. **Gaslighting** is a denial of what happened that comes back again and again over weeks or months, until the other person doubts their own memory. Is this one exchange, with an attack and the speaker playing the one wronged? Or is it the same denial coming back over weeks or months, until the other person doubts their own memory?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Telling someone, again and again, that what happened did not happen” (one tap opens the card).
 
 **Return case 3 of 15**
@@ -2465,10 +2465,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **Something one person does to another.** One person is saying something to another about what has happened between them: “whenever she mentions it, he says”.
   - If you chose **Says or does what it looks like, and nothing more**: One disagreement about a date would be **An ordinary exchange**. Here the denial comes back for two months and Priya no longer trusts her notes.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **An ordinary exchange**, the look-alike card’s lines follow: In both, two people disagree about something that happened, and one of them says it did not happen the way the other says. The difference is how often it comes back, and what it does to the other person. In **Gaslighting** the thing really happened and the case shows it, the same denial returns over weeks or months, and the other person starts to doubt their own memory. In **An ordinary exchange** it is one disagreement, or the person who says it did not happen is right, and each person still trusts their own memory. Does the case show that the thing really happened? Does the same denial come back over weeks or months? Does the other person now doubt their own memory? Or is this one disagreement that gets settled?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Telling someone, again and again, that what happened did not happen” (one tap opens the card).
 
 **Return case 4 of 15**
@@ -2484,10 +2484,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **Something one person does to another.** One person is raising something with another that has happened between them: “Gina asks him to move it”.
   - If you chose **Tells them, again and again, that what happened did not happen**: Nothing shows the denial coming back over weeks or months, or Gina doubting her memory. It is one exchange.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Gaslighting**, the look-alike card’s lines follow: In both, a person denies that something happened. **Turning the blame around** is one exchange: asked about something they did, the person denies it, attacks the one who asked, and plays the one wronged. **Gaslighting** is a denial of what happened that comes back again and again over weeks or months, until the other person doubts their own memory. Is this one exchange, with an attack and the speaker playing the one wronged? Or is it the same denial coming back over weeks or months, until the other person doubts their own memory?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Caught out, they deny it, attack, and play the one wronged” (one tap opens the card).
 
 **Return case 5 of 15**
@@ -2503,10 +2503,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **Something one person does to another.** One person is raising something with another that has happened between them: “Her husband, Lars, asks her about it”.
   - If you chose **Accuses them of what the accuser is doing**: Lars raised it with Ines first, so she is answering something. In **Projection** nobody has raised anything, and the accusation is where the case starts.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Projection**, the look-alike card’s lines follow: In both, one person goes for the other about something the speaker is guilty of. In **Turning the blame around** the attack comes in answer to being asked about something the person did, along with a denial and the person playing the one wronged. In **Projection** nobody has raised anything with the speaker: the accusation comes first. Did someone first raise something with the speaker, so that the speaker is answering it? Or did the speaker start with the accusation?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Caught out, they deny it, attack, and play the one wronged” (one tap opens the card).
 
 **Return case 6 of 15**
@@ -2522,10 +2522,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **Something one person does to another.** One person is raising something with another that has happened between them: “His colleague Fay asks him about it”.
   - If you chose **Says or does what it looks like, and nothing more**: A calm voice can sound like an ordinary reply. But Dan does all three: he denies it, attacks Fay, and plays the one wronged.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **An ordinary exchange**, the look-alike card’s lines follow: In both, someone is told about something and answers with a denial or with anger. In **Turning the blame around** the case shows the person did it, and the answer is a denial, an attack on the one who raised it, and a claim to be the one wronged: all three. In **An ordinary exchange** the answer may be a denial, or angry, or sharp, but either the case shows the person did not do it, or the answer is not all three. Does the case show that the person did what was raised with them? And is the answer a denial, an attack on the one who raised it, and a claim to be the one wronged: all three?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Caught out, they deny it, attack, and play the one wronged” (one tap opens the card).
 
 **Return case 7 of 15**
@@ -2541,10 +2541,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **Something one person does to another.** One person is doing something to another that is about the other person: “Joel stopped answering her and told people she was 'flaky'”.
   - If you chose **Says or does what it looks like, and nothing more**: A keen new partner who stayed keen when Tara said Wednesdays were for others would be **An ordinary exchange**. Here the attention stops and turns critical.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **An ordinary exchange**, the look-alike card’s lines follow: In both, someone is warm and generous early in a relationship. In **Love-bombing** the attention is far more than the relationship so far would explain, and it is later pulled back or turns into criticism. In **An ordinary exchange** the warmth fits how well the two know each other, or it stays when the other person sets a limit. Set the attention against how long the two have known each other. Is it far more? Then ask what happens to it later, when the other person says no or goes their own way.
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A flood of attention early on, pulled back later” (one tap opens the card).
 
 **Return case 8 of 15**
@@ -2560,10 +2560,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **Something one person does to another.** One person is doing something to another that is about the other person: “Vera stopped inviting him to meetings and told the team his work had 'gone downhill'”.
   - If you chose **Says or does what it looks like, and nothing more**: Generous mentoring that stayed generous would be **An ordinary exchange**. Here it is withdrawn and replaced by criticism once Obi says no.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **An ordinary exchange**, the look-alike card’s lines follow: In both, someone is warm and generous early in a relationship. In **Love-bombing** the attention is far more than the relationship so far would explain, and it is later pulled back or turns into criticism. In **An ordinary exchange** the warmth fits how well the two know each other, or it stays when the other person sets a limit. Set the attention against how long the two have known each other. Is it far more? Then ask what happens to it later, when the other person says no or goes their own way.
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A flood of attention early on, pulled back later” (one tap opens the card).
 
 **Return case 9 of 15**
@@ -2579,10 +2579,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **Something one person does to another.** One person is doing something to another that is about the other person: “Lukas stopped replying for ten days and then wrote, 'I gave you everything and you shut me out.'”.
   - If you chose **Says or does what it looks like, and nothing more**: A friendly study partner who accepted "I will revise alone" would be **An ordinary exchange**. Here the attention stops and the reply is a reproach.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **An ordinary exchange**, the look-alike card’s lines follow: In both, someone is warm and generous early in a relationship. In **Love-bombing** the attention is far more than the relationship so far would explain, and it is later pulled back or turns into criticism. In **An ordinary exchange** the warmth fits how well the two know each other, or it stays when the other person sets a limit. Set the attention against how long the two have known each other. Is it far more? Then ask what happens to it later, when the other person says no or goes their own way.
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A flood of attention early on, pulled back later” (one tap opens the card).
 
 **Return case 10 of 15**
@@ -2598,10 +2598,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **Something one person does to another.** One person is saying something to another about a colleague, and it is about what has happened between them: “Hugo tells the boss that his colleague Nina 'is always late to client calls'”.
   - If you chose **Says or does what it looks like, and nothing more**: A fair complaint would have the case showing Nina late. It shows Hugo late, and Nina on time every time.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **An ordinary exchange**, the look-alike card’s lines follow: In both, one person accuses the other of something. In **Projection** the case shows the accuser doing or feeling it, and nothing shows the other person doing it. In **An ordinary exchange** the case shows the other person doing it, so the accusation is fair, even if the accuser does it too. Who does the case show doing or feeling what is being said: the person accused, the accuser, or both?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Accusing someone of what you are doing yourself” (one tap opens the card).
 
 **Return case 11 of 15**
@@ -2617,10 +2617,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **Something one person does to another.** One person is saying something to another about what happens between them: “Pia tells her sister Una that she 'hides what she buys so nobody sees'”.
   - If you chose **Denies it, attacks them for raising it, and plays the one wronged**: Nobody had asked Pia about her parcels, so she is not answering anything by denying, attacking and playing the one wronged. The accusation is where the case starts.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Turning the blame around**, the look-alike card’s lines follow: In both, one person goes for the other about something the speaker is guilty of. In **Turning the blame around** the attack comes in answer to being asked about something the person did, along with a denial and the person playing the one wronged. In **Projection** nobody has raised anything with the speaker: the accusation comes first. Did someone first raise something with the speaker, so that the speaker is answering it? Or did the speaker start with the accusation?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Accusing someone of what you are doing yourself” (one tap opens the card).
 
 **Return case 12 of 15**
@@ -2636,10 +2636,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **Something one person does to another.** One person is saying something to others about another, and it is about what has happened between them: “Raj tells the others that Lea 'always takes the credit for other people's work'”.
   - If you chose **Says or does what it looks like, and nothing more**: A fair complaint would have the case showing Lea taking credit. It shows Raj doing it.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **An ordinary exchange**, the look-alike card’s lines follow: In both, one person accuses the other of something. In **Projection** the case shows the accuser doing or feeling it, and nothing shows the other person doing it. In **An ordinary exchange** the case shows the other person doing it, so the accusation is fair, even if the accuser does it too. Who does the case show doing or feeling what is being said: the person accused, the accuser, or both?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Accusing someone of what you are doing yourself” (one tap opens the card).
 
 **Return case 13 of 15**
@@ -2655,10 +2655,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **Something one person does to another.** One person is asking something of another about a matter between them: “Imran asks a shop for a refund on a toaster that stopped working after a week”.
   - If you chose **Denies it, attacks them for raising it, and plays the one wronged**: Zoe does not deny anything, attack Imran, or play the one wronged. She asks for the receipt and gives the refund.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Turning the blame around**, the look-alike card’s lines follow: In both, someone is told about something and answers with a denial or with anger. In **Turning the blame around** the case shows the person did it, and the answer is a denial, an attack on the one who raised it, and a claim to be the one wronged: all three. In **An ordinary exchange** the answer may be a denial, or angry, or sharp, but either the case shows the person did not do it, or the answer is not all three. Does the case show that the person did what was raised with them? And is the answer a denial, an attack on the one who raised it, and a claim to be the one wronged: all three?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Something said between two people, with nothing more to it” (one tap opens the card).
 
 **Return case 14 of 15**
@@ -2674,10 +2674,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **Something one person does to another.** One person is saying something to another about a matter between them: “Wei tells his lecturer that he thinks his second argument deserved more marks”.
   - If you chose **Tells them, again and again, that what happened did not happen**: The lecturer does not tell Wei again and again that something did not happen. She disagrees once, gives her reason, and offers a second marker.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Gaslighting**, the look-alike card’s lines follow: In both, two people disagree about something that happened, and one of them says it did not happen the way the other says. The difference is how often it comes back, and what it does to the other person. In **Gaslighting** the thing really happened and the case shows it, the same denial returns over weeks or months, and the other person starts to doubt their own memory. In **An ordinary exchange** it is one disagreement, or the person who says it did not happen is right, and each person still trusts their own memory. Does the case show that the thing really happened? Does the same denial come back over weeks or months? Does the other person now doubt their own memory? Or is this one disagreement that gets settled?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Something said between two people, with nothing more to it” (one tap opens the card).
 
 **Return case 15 of 15**
@@ -2693,9 +2693,9 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **Something one person does to another.** One person is saying something to another about what has happened between them: “Olive thanks her, says she is the nicest neighbour she has had, and invites her round for tea at the weekend”.
   - If you chose **Floods them with attention early on, then pulls it back**: Thanks and an invitation after a favour are not far more attention than the relationship would explain, and Olive does not pull back when Kim says no.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Love-bombing**, the look-alike card’s lines follow: In both, someone is warm and generous early in a relationship. In **Love-bombing** the attention is far more than the relationship so far would explain, and it is later pulled back or turns into criticism. In **An ordinary exchange** the warmth fits how well the two know each other, or it stays when the other person sets a limit. Set the attention against how long the two have known each other. Is it far more? Then ask what happens to it later, when the other person says no or goes their own way.
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Something said between two people, with nothing more to it” (one tap opens the card).
 

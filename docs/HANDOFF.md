@@ -20,6 +20,8 @@ Every subject is in the interactive format of `docs/lesson-standard.md` (version
 
 All 42 units are `status: 'draft'`: none has had the cold read the standard requires before a unit is live (A14). The owner reading a unit cold is that check. Unit revisions start at 1 (Psychology Unit Two is at 2, the Psychology subject record at 3); raise `rev` whenever content changes after a deploy and run `npm run lock`.
 
+**Plain words.** The standard's names for the lesson machinery ("key", "route", "gate", "branch", "specimen", "determination", "ledger") are never shown to the learner: one list, `tests/plain-words.mjs`, is checked by the validator (V50) on every unit, key line and subject note, and by the browser tests on every screen as shown. What to say instead is in the standard, K9. This came from the owner's first cold read.
+
 `npm test` runs the data checks, about 1.6 million lesson checks, 86 negative controls and about 55,000 browser checks.
 
 ## 3. How the rebuild was done (and how to change a subject now)

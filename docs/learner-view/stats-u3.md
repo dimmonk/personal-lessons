@@ -1,15 +1,15 @@
 # Learner view: Statistical Claims, Unit Three: Who was counted
 
-*Four ways the people or things in a figure can fail to stand for the group the claim is about, and how to tell which one you are looking at.* Unit revision 1, built to lesson standard 1, status: draft.
+*Four ways the people or things in a figure can fail to stand for the group the claim is about, and how to tell which one you are looking at.* Unit revision 2, built to lesson standard 1, status: draft.
 
 This file is generated from the data files by `tools/render-learner-view.mjs`. It shows every screen in the order a learner meets it. In the app one card is on screen at a time and the learner moves on when ready.
 
-- **Bold text in quotation marks** is the key’s own wording, printed from `key.js`. Bold names are the outcome names from the same file. Neither is typed anywhere else. "What you must be able to point to" lines and "How to tell them apart" lines are also printed from one place each (the key and the look-alike ledger).
+- **Bold text in quotation marks** is the subject’s own wording for its questions and answers, written once and printed everywhere. Bold names are the names, written once in the same place. Neither is typed anywhere else. "What you must be able to point to" lines and "How to tell them apart" lines are also printed from one place each (the subject’s questions and the pairs it compares).
 - ⟦Double brackets⟧ show the words the app marks in a case (one highlight style everywhere).
 - The line in italics under each heading is the app’s top bar. The line in square brackets after it is for reviewers and is not shown to the learner.
 - Headings, prompt wording and stage instructions that are the same in every unit are the app’s wording, not this unit’s.
 - "Shown as soon as you …" is what appears the moment the learner answers. Nothing is hidden behind a second tap the first time a case is met, or after a miss.
-- After every answer the app shows, in this order: the right answer in the key’s words; the reason, quoting the marked words; for a name, why the nearest wrong name fails; after a miss, a line about the answer the learner chose; and last a link to the card that taught it. Where a line about the learner’s own choice is not written for the case, the app builds it from the key, and this file says so in place of repeating it.
+- After every answer the app shows, in this order: the right answer; the reason, quoting the marked words; for a name, why the nearest wrong name fails; after a miss, a line about the answer the learner chose; and last a link to the card that taught it. Where a line about the learner’s own choice is not written for the case, the app builds it from the answers’ own wording, and this file says so in place of repeating it.
 
 ---
 
@@ -17,7 +17,7 @@ This file is generated from the data files by `tools/render-learner-view.mjs`. I
 
 ### 1. Before you trust a figure: who is in it, and how did they get there?
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 1 of 33*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 1 of 33*
 
 [reviewers only: card kind `orient`, id `orient`]
 
@@ -27,7 +27,7 @@ You have met figures like these. A magazine says, "Four in five workers want a f
 
 Before a figure can say anything about a group, someone has to be counted, and the first question to put to every figure is who is in it and how they got there. Some are in because they were picked fairly. Others are in because of what happened to them: they stayed, they spoke up, they replied, or there were only a few to begin with. In each of those cases the figure can be an exact picture of the wrong group, and the claim then speaks for a bigger group than the figure can. This unit teaches four ways that happens, the one question that tells them apart, and how each looks beside the claim that holds which it is most often mistaken for. A figure from only some of a group is not for that reason a figure that goes wrong, and you will practise telling the difference.
 
-**What Unit One taught, in one place.** The key’s first question is **“Which part of the claim goes wrong first?”** Its answers:
+**What Unit One taught, in one place.** The first question is **“Which part of the claim goes wrong first?”** Its answers:
 
 - **“Who was counted”**: give this answer when the people or things the figure was worked out from are not a fair picture of the group the claim is about, or are too few to trust. **This unit is about these cases.**
 - **“What the number counts”**: give this answer when the figure could rise, fall or differ without the real thing it is read as showing doing the same.
@@ -35,11 +35,11 @@ Before a figure can say anything about a group, someone has to be counted, and t
 - **“What it says caused what”**: give this answer when the claim says one thing made another happen, and the case shows another way the same result could have come about.
 - **“Nothing goes wrong”**: give this answer when every part the claim makes holds up when it is checked in order, and none of them goes wrong.
 
-Unit One also taught that two things are marked separately: the name you give a case, and your route to it, meaning the answers you gave to the key’s questions on the way.
+Two things are marked separately: the name you give a case, and your answers to the questions on the way to it.
 
 *(One tap on any of these lines opens the card in Unit One that taught it.)*
 
-**The part of the key this unit teaches.** This is a preview. You are not expected to follow it yet: every line is explained on the cards that come next. The question and its answers are in the key’s own words. Beside each answer, in plain words, is the thing it leads to. There are four of them, and each gets its name when it is taught.
+**The questions this unit teaches.** This is a preview. You are not expected to follow it yet: every line is explained on the cards that come next. The question and its answers are worded exactly as you will meet them. Beside each answer, in plain words, is the thing it leads to. There are four of them, and each gets its name when it is taught.
 
 How did the people or things in the figure get into it?
 - Only the ones that lasted were counted → counting only the ones that lasted
@@ -58,13 +58,13 @@ The unit has three parts, and you can stop after any of them.
 
 1. Figures from the ones that lasted, and from the ones who chose to answer
 2. Figures from the few who replied, and from only a handful
-3. The key’s question, two whole claims, then the drill
+3. The question, two whole claims, then the drill
 
 Each name is taught through cases first. After every step you answer one question about a new case, and the answer and the reason are shown straight away. Nothing here is graded. A miss only decides what comes back.
 
 ### 2. Counting only the ones that lasted
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 2 of 33*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 2 of 33*
 
 [reviewers only: card kind `meet`, id `meet-survivor`]
 
@@ -89,9 +89,9 @@ The same thing happens whenever a figure is worked out after the fact from what 
 
 **What you must be able to point to.** A figure worked out after the fact from the ones still there at the end, the ones that closed, quit, failed or left missing from it, and the figure read as true of everyone who started, or what the survivors share read as the reason they lasted. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“How did the people or things in the figure get into it?”**
+**The question:** **“How did the people or things in the figure get into it?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“Only the ones that lasted were counted”**
+**Its answer for a case like this one:** **“Only the ones that lasted were counted”**
 
 The name for this is **Survivorship bias**. A "survivor" is one that is still there at the end, and "bias" is a lean in one direction: here, a figure that leans toward the ones that made it, because the ones that did not are missing.
 
@@ -99,7 +99,7 @@ You may also hear this called “looking only at the winners”. That means the 
 
 ### 3. Survivorship bias: the same thing in a different story
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 3 of 33*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 3 of 33*
 
 [reviewers only: card kind `again`, id `again-survivor`]
 
@@ -134,7 +134,7 @@ Both also read the figure as more than it is. The newsletter reads what the surv
 
 ### 4. The story does not decide which way the figure leans
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 4 of 33*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 4 of 33*
 
 [reviewers only: card kind `lens`, id `lens`]
 
@@ -148,13 +148,13 @@ From here on, the cases change their stories on purpose. Sometimes two cases sha
 
 Two more things change on purpose: how large the figure sounds, and how big the count behind it is. A big count can be a poor picture and a small one can be a fair one. And a claim you agree with goes through the same question as one you do not.
 
-**Stays the same from case to case:** how the people or things got into the figure, which is what the key asks about: **“How did the people or things in the figure get into it?”**
+**Stays the same from case to case:** how the people or things got into the figure, which is what this question asks about: **“How did the people or things in the figure get into it?”**
 
 **Changes on purpose:** the topic; the people; how big the figure sounds; how many are in it; whether you would like the claim to be true; whether anything is wrong at all.
 
 ### 5. Survivorship bias: what it is like
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 5 of 33*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 5 of 33*
 
 [reviewers only: card kind `portrait`, id `portrait-survivor`]
 
@@ -194,7 +194,7 @@ Do not copy what the survivors did until you have seen whether the ones that did
 
 ### 6. A question about a new case
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 6 of 33*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 6 of 33*
 
 [reviewers only: card kind `check`, id `check-survivor`]
 
@@ -208,14 +208,14 @@ The pieces you can tap:
 
 **Shown as soon as you tap**
 
-- If you are right: “Right: ‘The exam is only offered to learners who reach level 20. Of the 8,000 people who downloaded the app in January, 400 reached level 20.’.” The figure is worked out from the learners who got to level 20: “Of the 8,000 people who downloaded the app in January, 400 reached level 20”. That is 400 of 8,000, which is 5 in every 100 of the people who started. The other 7,600 are not in it, and the ones who gave up are the ones least likely to pass. The key’s answer for this case is **“Only the ones that lasted were counted”**, and the name is **Survivorship bias**.
+- If you are right: “Right: ‘The exam is only offered to learners who reach level 20. Of the 8,000 people who downloaded the app in January, 400 reached level 20.’.” The figure is worked out from the learners who got to level 20: “Of the 8,000 people who downloaded the app in January, 400 reached level 20”. That is 400 of 8,000, which is 5 in every 100 of the people who started. The other 7,600 are not in it, and the ones who gave up are the ones least likely to pass. The answer for this case is **“Only the ones that lasted were counted”**, and the name is **Survivorship bias**.
 - If you miss: “The words are ‘The exam is only offered to learners who reach level 20. Of the 8,000 people who downloaded the app in January, 400 reached level 20.’.” The same reason follows, and then a line about the piece you tapped:
   - “A language app advertises: 'Nine in ten learners pass the fluency exam.'”: That is the claim. What you are asked for is who the figure was worked out from, and the words for that come next.
 - Taught on: “Counting only the ones that lasted” (one tap opens the card).
 
 ### 7. Survivorship bias or A fair count: telling them apart
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 7 of 33*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 7 of 33*
 
 [reviewers only: card kind `lookalike`, id `look-survivor-samp`]
 
@@ -237,9 +237,9 @@ You now have one way a figure goes wrong, and the sound claim it is most often m
 
 **Why this one and not the other**
 
-In Case A the 14 kilograms is the average of the 30 plants that were alive in September. The 20 that died early are not in it. 30 plants at 14 kilograms each is 420 kilograms. Spread over all 50 seeds, 420 kilograms is 8.4 kilograms each, not 14. The figure is right for the plants that lived, and the claim speaks for plants in general. The key’s answer to the first question is **“Who was counted”**, and the question after it, **“How did the people or things in the figure get into it?”**, gets the answer **“Only the ones that lasted were counted”**.
+In Case A the 14 kilograms is the average of the 30 plants that were alive in September. The 20 that died early are not in it. 30 plants at 14 kilograms each is 420 kilograms. Spread over all 50 seeds, 420 kilograms is 8.4 kilograms each, not 14. The figure is right for the plants that lived, and the claim speaks for plants in general. The answer to the first question is **“Who was counted”**, and the question after it, **“How did the people or things in the figure get into it?”**, gets the answer **“Only the ones that lasted were counted”**.
 
-In Case B the company counts every seed it planted, the 30 that lived and the 20 that died, and reports the same 420 kilograms as 8.4 kilograms for every seed planted. Nothing is left out, and the claim stays with the 50 seeds of the trial. The key’s answer to the first question is **“Nothing goes wrong”**, and the question after it, **“What does the claim say the figures show?”**, gets the answer **“A figure for one group”**.
+In Case B the company counts every seed it planted, the 30 that lived and the 20 that died, and reports the same 420 kilograms as 8.4 kilograms for every seed planted. Nothing is left out, and the claim stays with the 50 seeds of the trial. The answer to the first question is **“Nothing goes wrong”**, and the question after it, **“What does the claim say the figures show?”**, gets the answer **“A figure for one group”**.
 
 The harvest is the same in both. What separates the two cases is who is in the average. 14 and 8.4 describe the same garden, and only one of them is about all the seeds that were planted.
 
@@ -247,19 +247,19 @@ The harvest is the same in both. What separates the two cases is who is in the a
 
 How many started, and are all of them in the figure? If some are missing, are they missing because of what happened to them?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Survivorship bias | A fair count |
 |---|---|---|
 | Which part of the claim goes wrong first? | Who was counted | Nothing goes wrong |
-| What does the claim say the figures show? | *Not asked on its route* | A figure for one group |
-| How did the people or things in the figure get into it? | Only the ones that lasted were counted | *Not asked on its route* |
+| What does the claim say the figures show? | *Not asked for this one* | A figure for one group |
+| How did the people or things in the figure get into it? | Only the ones that lasted were counted | *Not asked for this one* |
 | What you must be able to point to | A figure worked out after the fact from the ones still there at the end, the ones that closed, quit, failed or left missing from it, and the figure read as true of everyone who started, or what the survivors share read as the reason they lasted | A figure for one group, worked out from all of its members or from some picked at random, with most of those asked answering or followed up, and either every member counted or enough of them that one or two more or fewer would not move the figure, and a claim that says no more than the figure for that group |
 
 
 ### 8. A figure from the people who chose to answer
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 8 of 33*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 8 of 33*
 
 [reviewers only: card kind `meet`, id `meet-selfselect`]
 
@@ -284,9 +284,9 @@ It is not how many answered that matters, but who decided that they would be cou
 
 **What you must be able to point to.** A call anyone could answer, nobody picked by the people counting, the ones who answered deciding for themselves, and their answers read as true of a wider group. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“How did the people or things in the figure get into it?”**
+**The question:** **“How did the people or things in the figure get into it?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“They chose to answer, when anyone could”**
+**Its answer for a case like this one:** **“They chose to answer, when anyone could”**
 
 The name for this is **Self-selection bias**. "Self-selection" means choosing yourself: the people in the figure picked themselves into it, and "bias" is the lean that results, towards the people who feel most like answering.
 
@@ -294,7 +294,7 @@ You may also hear this called “a self-selected sample” or “a voluntary pol
 
 ### 9. Self-selection bias: the same thing in a different story
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 9 of 33*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 9 of 33*
 
 [reviewers only: card kind `again`, id `again-selfselect`]
 
@@ -329,7 +329,7 @@ In both, the claim speaks for a wider group than the one that answered: workers 
 
 ### 10. Self-selection bias: what it is like
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 10 of 33*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 10 of 33*
 
 [reviewers only: card kind `portrait`, id `portrait-selfselect`]
 
@@ -368,13 +368,13 @@ Treat the size of the count as no evidence: 3,200 who chose themselves is as one
 
 ### 11. A question about a new case
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 11 of 33*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 11 of 33*
 
 [reviewers only: card kind `check`, id `check-selfselect`]
 
 > At a town fair, a stall set out a ballot box labeled 'Should the fair move to June?' Anyone who walked past could drop in a slip. Of the 214 slips, 190 said yes. The stall's sign says: 'The town wants the fair in June.'
 
-**The key asks:** **“How did the people or things in the figure get into it?”** Which of the answers you have met so far fits this case?
+**The question:** **“How did the people or things in the figure get into it?”** Which of the answers you have met so far fits this case?
 
 - Only the ones that lasted were counted
 - They chose to answer, when anyone could
@@ -388,7 +388,7 @@ Treat the size of the count as no evidence: 3,200 who chose themselves is as one
 
 ### 12. Survivorship bias or Self-selection bias: telling them apart
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 12 of 33*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 12 of 33*
 
 [reviewers only: card kind `lookalike`, id `look-survivor-selfselect`]
 
@@ -410,9 +410,9 @@ These two both give a figure from only some of a group, and the ones who are not
 
 **Why this one and not the other**
 
-In Case A the club posted a link on its public page, and 25 people filled it in. Nobody was asked by name. The 25 chose to take part, and the other 35 members never did. The key’s answer to the question after the first, **“How did the people or things in the figure get into it?”**, is **“They chose to answer, when anyone could”**, and the case is **Self-selection bias**.
+In Case A the club posted a link on its public page, and 25 people filled it in. Nobody was asked by name. The 25 chose to take part, and the other 35 members never did. The answer to the question after the first, **“How did the people or things in the figure get into it?”**, is **“They chose to answer, when anyone could”**, and the case is **Self-selection bias**.
 
-In Case B the club had 60 members in 2018. 35 have since left, and the 120 miles is the average of the 25 who are still members. Everyone was there at the start, and the figure is worked out after the fact from the ones that lasted. The ones who left are missing because of what happened to them, and a member who stops riding is likelier to leave. The key’s answer is **“Only the ones that lasted were counted”**, and the case is **Survivorship bias**.
+In Case B the club had 60 members in 2018. 35 have since left, and the 120 miles is the average of the 25 who are still members. Everyone was there at the start, and the figure is worked out after the fact from the ones that lasted. The ones who left are missing because of what happened to them, and a member who stops riding is likelier to leave. The answer is **“Only the ones that lasted were counted”**, and the case is **Survivorship bias**.
 
 The figure is the same in both, and in both 25 of 60 are in it. What separates them is how the 25 got in: by choosing to answer, or by lasting to the end.
 
@@ -420,7 +420,7 @@ The figure is the same in both, and in both 25 of 60 are in it. What separates t
 
 Did the people or things in the figure get in by lasting to the end, or by choosing to answer when nobody asked them by name?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Survivorship bias | Self-selection bias |
 |---|---|---|
@@ -431,7 +431,7 @@ Did the people or things in the figure get in by lasting to the end, or by choos
 
 ### 13. Volunteers, split by lottery
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 13 of 33*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 13 of 33*
 
 [reviewers only: card kind `exception`, id `exc-volunteers`]
 
@@ -441,7 +441,7 @@ You now know that a figure from people who chose to answer leans towards them. P
 
 > A sleep lab asked for volunteers through a newspaper ad, and 600 people came forward. The lab drew names by lottery: 300 were given a new pillow, and 300 kept their own. After a month, the people with the new pillow slept 25 minutes longer a night on average. The lab says: 'The new pillow adds 25 minutes of sleep.'
 
-The sleep lab asked for volunteers through a newspaper ad, so the people in the study chose themselves, and people who chose to take part are what you point to for **“They chose to answer, when anyone could”**. Yet the key’s answer to the first question for this case is **“Nothing goes wrong”**, and to the question after it, **“What does the claim say the figures show?”**, the answer is **“One thing causing another”**.
+The sleep lab asked for volunteers through a newspaper ad, so the people in the study chose themselves, and people who chose to take part are what you point to for **“They chose to answer, when anyone could”**. Yet the answer to the first question for this case is **“Nothing goes wrong”**, and to the question after it, **“What does the claim say the figures show?”**, the answer is **“One thing causing another”**.
 
 **You are asked:** This looks like **Self-selection bias**. Before you read why it is **A fair test**, tap the words in the case that settle it.
 
@@ -468,16 +468,16 @@ Compare the magazine poll. There, the people who clicked were read as standing f
 
 Does the claim speak for a wider group than the people who came forward? Or is it about a difference between two groups that a lottery formed?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Self-selection bias | A fair test |
 |---|---|---|
 | Which part of the claim goes wrong first? | Who was counted | Nothing goes wrong |
-| What does the claim say the figures show? | *Not asked on its route* | One thing causing another |
-| How did the people or things in the figure get into it? | They chose to answer, when anyone could | *Not asked on its route* |
+| What does the claim say the figures show? | *Not asked for this one* | One thing causing another |
+| How did the people or things in the figure get into it? | They chose to answer, when anyone could | *Not asked for this one* |
 | What you must be able to point to | A call anyone could answer, nobody picked by the people counting, the ones who answered deciding for themselves, and their answers read as true of a wider group | People or things split into groups at random, one group given the thing and the other not, both counted the same way afterwards, and a difference between the groups that the claim says the thing caused |
 
-The line between these two names is the key’s decision, and it is worth knowing. A study of volunteers still shows the result only for people like the volunteers: the pillow may work differently for people who sleep well, and the lab’s own claim should stay with what it tested. In the key, a claim of cause is judged by how the groups were formed, and a figure about how many people think something is judged by who chose to answer. The two questions are put to different parts of a claim.
+The line between these two names is a choice made to keep the answers clear, and it is worth knowing. A study of volunteers still shows the result only for people like the volunteers: the pillow may work differently for people who sleep well, and the lab’s own claim should stay with what it tested. Here, a claim of cause is judged by how the groups were formed, and a figure about how many people think something is judged by who chose to answer. The two questions are put to different parts of a claim.
 
 So volunteers are not a sign of this name by themselves. Look for the thing that makes the name: a figure read as true of people who never took part. A lottery between two groups of volunteers does not read it that way.
 
@@ -490,7 +490,7 @@ So volunteers are not a sign of this name by themselves. Look for the thing that
 
 ### 14. A figure from the few who replied
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 14 of 33*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 14 of 33*
 
 [reviewers only: card kind `meet`, id `meet-nonresp`]
 
@@ -518,9 +518,9 @@ A low number of replies is not the whole of this. What decides it is that many d
 
 **What you must be able to point to.** A known list of people who were all asked, many of them not replying, nothing done to hear from the ones who did not, and the replies read as true of the whole list. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“How did the people or things in the figure get into it?”**
+**The question:** **“How did the people or things in the figure get into it?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“Everyone on a list was asked, and many did not reply”**
+**Its answer for a case like this one:** **“Everyone on a list was asked, and many did not reply”**
 
 The name for this is **Non-response bias**. "Non-response" means not responding, and the "bias" is the lean that comes from the ones who did not respond. It is different from the lean that comes from who was asked, because here everyone was asked.
 
@@ -528,7 +528,7 @@ You may also hear this called “a low response rate”. That means the same thi
 
 ### 15. Non-response bias: the same thing in a different story
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 15 of 33*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 15 of 33*
 
 [reviewers only: card kind `again`, id `again-nonresp`]
 
@@ -563,7 +563,7 @@ In the union case the silent ones are 510 of 600. If they would all have been ag
 
 ### 16. Non-response bias: what it is like
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 16 of 33*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 16 of 33*
 
 [reviewers only: card kind `portrait`, id `portrait-nonresp`]
 
@@ -603,13 +603,13 @@ Say the figure for the ones who answered, and say what you would need to see: a 
 
 ### 17. A question about a new case
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 17 of 33*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 17 of 33*
 
 [reviewers only: card kind `check`, id `check-nonresp`]
 
 > A landlord pushed a form under the door of each of the 150 flats in a building, about the new heating. 30 forms were sent back, and 27 said they were satisfied. The landlord's notice says: 'Nine in ten tenants are satisfied with the new heating.'
 
-**The key asks:** **“How did the people or things in the figure get into it?”** Which of the answers you have met so far fits this case?
+**The question:** **“How did the people or things in the figure get into it?”** Which of the answers you have met so far fits this case?
 
 - Only the ones that lasted were counted
 - They chose to answer, when anyone could
@@ -625,7 +625,7 @@ Say the figure for the ones who answered, and say what you would need to see: a 
 
 ### 18. Self-selection bias or Non-response bias: telling them apart
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 18 of 33*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 18 of 33*
 
 [reviewers only: card kind `lookalike`, id `look-selfselect-nonresp`]
 
@@ -647,9 +647,9 @@ These two give the same sort of figure: a lot of people with something to say, a
 
 **Why this one and not the other**
 
-In Case A the school emailed each of its 1,200 families by name. 240 replied, and the school did nothing to hear from the other 960. Everyone was asked, and most did not answer. The key’s answer to the question after the first, **“How did the people or things in the figure get into it?”**, is **“Everyone on a list was asked, and many did not reply”**, and the case is **Non-response bias**.
+In Case A the school emailed each of its 1,200 families by name. 240 replied, and the school did nothing to hear from the other 960. Everyone was asked, and most did not answer. The answer to the question after the first, **“How did the people or things in the figure get into it?”**, is **“Everyone on a list was asked, and many did not reply”**, and the case is **Non-response bias**.
 
-In Case B the school put a link in its newsletter and on its website. Nobody was asked by name, and anyone who saw the link could answer. 240 did. The key’s answer is **“They chose to answer, when anyone could”**, and the case is **Self-selection bias**.
+In Case B the school put a link in its newsletter and on its website. Nobody was asked by name, and anyone who saw the link could answer. 240 did. The answer is **“They chose to answer, when anyone could”**, and the case is **Self-selection bias**.
 
 The figure is the same, and the problem is the same sort of problem, one-sided answers. What differs is whether anyone was asked. In Case A the silent 960 were asked and did not answer, so you can name them, and you could ring them. In Case B nobody was asked, so there is no list of the silent ones.
 
@@ -657,7 +657,7 @@ The figure is the same, and the problem is the same sort of problem, one-sided a
 
 Was everyone on a known list asked by name, or could anyone who saw the call answer?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Self-selection bias | Non-response bias |
 |---|---|---|
@@ -668,7 +668,7 @@ Was everyone on a known list asked by name, or could anyone who saw the call ans
 
 ### 19. Non-response bias or A fair count: telling them apart
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 19 of 33*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 19 of 33*
 
 [reviewers only: card kind `lookalike`, id `look-nonresp-samp`]
 
@@ -690,9 +690,9 @@ A figure from replies to a list can also hold, when most of the list has answere
 
 **Why this one and not the other**
 
-In Case A the pool mailed the questionnaire and 150 of the 1,500 replied, which is 10 in every 100. It did nothing to reach the other 1,350. The 108 who said yes are 72 in every 100 of the 150, but they are 7 in every 100 of the list. The key’s answer to the first question is **“Who was counted”**, and the question after it, **“How did the people or things in the figure get into it?”**, gets the answer **“Everyone on a list was asked, and many did not reply”**.
+In Case A the pool mailed the questionnaire and 150 of the 1,500 replied, which is 10 in every 100. It did nothing to reach the other 1,350. The 108 who said yes are 72 in every 100 of the 150, but they are 7 in every 100 of the list. The answer to the first question is **“Who was counted”**, and the question after it, **“How did the people or things in the figure get into it?”**, gets the answer **“Everyone on a list was asked, and many did not reply”**.
 
-In Case B the pool asked the same list, then rang every household that had not replied, and in the end 1,350 of the 1,500 gave an answer, which is 90 in every 100. 972 said yes, which is 72 in every 100 of the 1,350. Nine in ten of the list are in the figure, and the claim speaks only for the list. The key’s answer to the first question is **“Nothing goes wrong”**, and the question after it, **“What does the claim say the figures show?”**, gets the answer **“A figure for one group”**.
+In Case B the pool asked the same list, then rang every household that had not replied, and in the end 1,350 of the 1,500 gave an answer, which is 90 in every 100. 972 said yes, which is 72 in every 100 of the 1,350. Nine in ten of the list are in the figure, and the claim speaks only for the list. The answer to the first question is **“Nothing goes wrong”**, and the question after it, **“What does the claim say the figures show?”**, gets the answer **“A figure for one group”**.
 
 The share is the same in both, 72 in every 100. What separates them is how much of the list is in it. A figure from 150 of 1,500 and a figure from 1,350 of 1,500 can look exactly alike in a notice on a wall.
 
@@ -700,19 +700,19 @@ The share is the same in both, 72 in every 100. What separates them is how much 
 
 How many of the list answered, and what was done about the ones who did not?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Non-response bias | A fair count |
 |---|---|---|
 | Which part of the claim goes wrong first? | Who was counted | Nothing goes wrong |
-| What does the claim say the figures show? | *Not asked on its route* | A figure for one group |
-| How did the people or things in the figure get into it? | Everyone on a list was asked, and many did not reply | *Not asked on its route* |
+| What does the claim say the figures show? | *Not asked for this one* | A figure for one group |
+| How did the people or things in the figure get into it? | Everyone on a list was asked, and many did not reply | *Not asked for this one* |
 | What you must be able to point to | A known list of people who were all asked, many of them not replying, nothing done to hear from the ones who did not, and the replies read as true of the whole list | A figure for one group, worked out from all of its members or from some picked at random, with most of those asked answering or followed up, and either every member counted or enough of them that one or two more or fewer would not move the figure, and a claim that says no more than the figure for that group |
 
 
 ### 20. A wrong idea: "A hundred thousand people voted, so it can’t be wrong"
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 20 of 33*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 20 of 33*
 
 [reviewers only: card kind `refute`, id `refute-bigger`]
 
@@ -733,7 +733,7 @@ Now take 400 households picked by lottery from the town’s full list, with 360 
 
 ### 21. A group so small that luck moves the figure
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 21 of 33*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 21 of 33*
 
 [reviewers only: card kind `meet`, id `meet-smalln`]
 
@@ -760,9 +760,9 @@ A handful does not have to mean 10. What counts is how far one or two more or fe
 
 **What you must be able to point to.** A group so small that one or two more or fewer would move the figure a long way, and a high or low figure from it read as meaning something. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“How did the people or things in the figure get into it?”**
+**The question:** **“How did the people or things in the figure get into it?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“All were counted, but there are only a handful”**
+**Its answer for a case like this one:** **“All were counted, but there are only a handful”**
 
 The name for this is **Too few to trust**. It says what is wrong in plain words: there are too few in the figure for a high or low figure from it to be trusted as meaning something.
 
@@ -770,7 +770,7 @@ You may also hear this called “a small sample” or “small numbers” or “
 
 ### 22. Too few to trust: the same thing in a different story
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 22 of 33*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 22 of 33*
 
 [reviewers only: card kind `again`, id `again-smalln`]
 
@@ -803,7 +803,7 @@ In both, the figure is read as meaning something: the best school, the highest f
 
 ### 23. Too few to trust: what it is like
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 23 of 33*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 23 of 33*
 
 [reviewers only: card kind `portrait`, id `portrait-smalln`]
 
@@ -843,13 +843,13 @@ Say what the figure shows for the group it came from, and no more: "9 of the 10 
 
 ### 24. A question about a new case
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 24 of 33*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 24 of 33*
 
 [reviewers only: card kind `check`, id `check-smalln`]
 
 > A word-game app shows a leaderboard of win rates. The top place is held by a player called Moth: 100%, with 5 wins from 5 games. The app's blog says: 'Moth is the best player in the game.'
 
-**The key asks:** **“How did the people or things in the figure get into it?”** Which of the answers you have met so far fits this case?
+**The question:** **“How did the people or things in the figure get into it?”** Which of the answers you have met so far fits this case?
 
 - Only the ones that lasted were counted
 - They chose to answer, when anyone could
@@ -867,7 +867,7 @@ Say what the figure shows for the group it came from, and no more: "9 of the 10 
 
 ### 25. Non-response bias or Too few to trust: telling them apart
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 25 of 33*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 25 of 33*
 
 [reviewers only: card kind `lookalike`, id `look-nonresp-smalln`]
 
@@ -889,9 +889,9 @@ These two give a figure from just a few people, and both sound exact. This card 
 
 **Why this one and not the other**
 
-In Case A the company emailed all 800 of its staff by name. 12 replied, and nothing was done to hear from the other 788. The 12 are 12 of 800, which is 1.5 in every 100 of the list, and most of the group is missing. The key’s answer to the question after the first, **“How did the people or things in the figure get into it?”**, is **“Everyone on a list was asked, and many did not reply”**, and the case is **Non-response bias**.
+In Case A the company emailed all 800 of its staff by name. 12 replied, and nothing was done to hear from the other 788. The 12 are 12 of 800, which is 1.5 in every 100 of the list, and most of the group is missing. The answer to the question after the first, **“How did the people or things in the figure get into it?”**, is **“Everyone on a list was asked, and many did not reply”**, and the case is **Non-response bias**.
 
-In Case B the café had been open one day, and only 12 people had eaten there. All 12 were asked and all 12 answered. Nobody is missing: everyone who had eaten there is in the figure. There are only a handful, and one or two more or fewer would move it a long way: 7 of 12 is 58 in every 100, and 11 of 12 is 92. The key’s answer is **“All were counted, but there are only a handful”**, and the case is **Too few to trust**.
+In Case B the café had been open one day, and only 12 people had eaten there. All 12 were asked and all 12 answered. Nobody is missing: everyone who had eaten there is in the figure. There are only a handful, and one or two more or fewer would move it a long way: 7 of 12 is 58 in every 100, and 11 of 12 is 92. The answer is **“All were counted, but there are only a handful”**, and the case is **Too few to trust**.
 
 Both figures rest on 12 people, and both claims speak for more than 12. In Case A the 12 are a few out of a long list. In Case B the 12 are everyone there is.
 
@@ -899,7 +899,7 @@ Both figures rest on 12 people, and both claims speak for more than 12. In Case 
 
 Out of how many were the few counted: a much bigger list of people who did not reply, or everyone there is?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Non-response bias | Too few to trust |
 |---|---|---|
@@ -910,7 +910,7 @@ Out of how many were the few counted: a much bigger list of people who did not r
 
 ### 26. Too few to trust or A fair count: telling them apart
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 26 of 33*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 26 of 33*
 
 [reviewers only: card kind `lookalike`, id `look-smalln-samp`]
 
@@ -932,9 +932,9 @@ A figure from a small group goes wrong when it is read as meaning something. A f
 
 **Why this one and not the other**
 
-In Case A Dana has taken 4 penalties and scored all 4, and the coach says she never misses. Nobody is left out: every penalty she has taken is counted. But one miss would turn 4 out of 4 into 3 out of 4, which is 75 in every 100, and the coach reads a perfect figure from 4 kicks as meaning something about her. The key’s answer to the first question is **“Who was counted”**, and the question after it, **“How did the people or things in the figure get into it?”**, gets the answer **“All were counted, but there are only a handful”**.
+In Case A Dana has taken 4 penalties and scored all 4, and the coach says she never misses. Nobody is left out: every penalty she has taken is counted. But one miss would turn 4 out of 4 into 3 out of 4, which is 75 in every 100, and the coach reads a perfect figure from 4 kicks as meaning something about her. The answer to the first question is **“Who was counted”**, and the question after it, **“How did the people or things in the figure get into it?”**, gets the answer **“All were counted, but there are only a handful”**.
 
-In Case B Dana has taken 80 penalties over six seasons and scored 68, which is 85 in every 100. One miss more or fewer moves it by about one point: 67 of 80 is 83.75 and 69 of 80 is 86.25. The coach says she scores 85 in every 100, and stops there. The key’s answer to the first question is **“Nothing goes wrong”**, and the question after it, **“What does the claim say the figures show?”**, gets the answer **“A figure for one group”**.
+In Case B Dana has taken 80 penalties over six seasons and scored 68, which is 85 in every 100. One miss more or fewer moves it by about one point: 67 of 80 is 83.75 and 69 of 80 is 86.25. The coach says she scores 85 in every 100, and stops there. The answer to the first question is **“Nothing goes wrong”**, and the question after it, **“What does the claim say the figures show?”**, gets the answer **“A figure for one group”**.
 
 Both are about the same player and both are accurate counts. What separates them is how many kicks are in the figure, and so how far luck could move it.
 
@@ -942,35 +942,35 @@ Both are about the same player and both are accurate counts. What separates them
 
 What would the figure be with one or two more or fewer, and does the claim say more than the group can show?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Too few to trust | A fair count |
 |---|---|---|
 | Which part of the claim goes wrong first? | Who was counted | Nothing goes wrong |
-| What does the claim say the figures show? | *Not asked on its route* | A figure for one group |
-| How did the people or things in the figure get into it? | All were counted, but there are only a handful | *Not asked on its route* |
+| What does the claim say the figures show? | *Not asked for this one* | A figure for one group |
+| How did the people or things in the figure get into it? | All were counted, but there are only a handful | *Not asked for this one* |
 | What you must be able to point to | A group so small that one or two more or fewer would move the figure a long way, and a high or low figure from it read as meaning something | A figure for one group, worked out from all of its members or from some picked at random, with most of those asked answering or followed up, and either every member counted or enough of them that one or two more or fewer would not move the figure, and a claim that says no more than the figure for that group |
 
 
-*End of part 2. You can stop here; your place is kept. Next: part 3, The key’s question, two whole claims, then the drill.*
+*End of part 2. You can stop here; your place is kept. Next: part 3, The question, two whole claims, then the drill.*
 
 ---
 
-## Part 3 of 3: The key’s question, two whole claims, then the drill
+## Part 3 of 3: The question, two whole claims, then the drill
 
 ### 27. The question you have been answering all along
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 27 of 33*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 27 of 33*
 
 [reviewers only: card kind `question`, id `q-how`]
 
-Since the Mill Street restaurants you have seen the key’s question at the foot of each new name, with one answer under it. This card puts the question and its four answers in one place, as the key shows them, and says why the key asks it.
+Since the Mill Street restaurants you have seen the question at the foot of each new name, with one answer under it. This card puts the question and its four answers in one place, as they are always asked, and says why it is asked.
 
-**The key asks:** **“How did the people or things in the figure get into it?”**
+**The question:** **“How did the people or things in the figure get into it?”**
 
 **What it is for.** Tells apart four ways the people or things counted can fail to be a fair picture of the group a claim is about.
 
-**Its answers, exactly as the key shows them**
+**Its answers**
 
 Each answer leads to one name, and so rules out the other three.
 
@@ -991,7 +991,7 @@ Each answer leads to one name, and so rules out the other three.
 
 The four names are defined by how the people or things got into the figure. Each leaves out a different group, or leaves too few, so knowing which one tells you which way the figure leans and what you would need to see to put it right.
 
-The key’s first question, **“Which part of the claim goes wrong first?”**, sends a claim to this part of the key when the people or things in the figure are not a fair picture of the group the claim is about, or there are too few of them. That answer is not yet a name. This question gives the name, and it does so by one thing: how the people or things got into the figure.
+The first question, **“Which part of the claim goes wrong first?”**, sends a claim to this question when the people or things in the figure are not a fair picture of the group the claim is about, or there are too few of them. That answer is not yet a name. This question gives the name, and it does so by one thing: how the people or things got into the figure.
 
 That is why it is the only question here. The four names are four different ways in, and each leaves out a different group: the ones that did not last, the ones who did not step forward, the ones who did not reply, or all that there would have been if there were more. Knowing which way tells you who the figure leaves out, which way it leans, and what you would need to see to put it right.
 
@@ -1028,13 +1028,13 @@ Sometimes two of the answers seem to fit. A figure from 12 replies could be a fe
 
 ### 28. A question about a new case
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 28 of 33*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 28 of 33*
 
 [reviewers only: card kind `check`, id `check-how`]
 
 > A new bakery has been open for one day, and three customers have come in. The owner asked each of them for a rating, and all three gave five stars. The sign in the window now says: 'Rated five stars by every customer.'
 
-**The key asks:** **“How did the people or things in the figure get into it?”**
+**The question:** **“How did the people or things in the figure get into it?”**
 
 - Only the ones that lasted were counted
 - They chose to answer, when anyone could
@@ -1052,11 +1052,11 @@ Sometimes two of the answers seem to fit. A figure from 12 replies could be a fe
 
 ### 29. A whole claim, from the first question to the name
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 29 of 33*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 29 of 33*
 
 [reviewers only: card kind `worked`, id `worked-poll`]
 
-You have the four names and the key’s question about them. Before you run a claim yourself, watch two being run from the top, in the order the key asks. You are not asked anything until the end of each.
+You have the four names and the question about them. Before you run a claim yourself, watch two being run from the top, in the order the questions are asked. You are not asked anything until the end of each.
 
 *The school-start poll*
 
@@ -1070,7 +1070,7 @@ What it is for: sorts a claim made with numbers by the first of its four parts t
 
 Answer: **“Who was counted”**
 
-The key puts its parts to a claim in order, so begin with the people in the figure. The chair speaks for "parents", and the figure comes from a poll that anyone in a group of 2,000 members could vote in: “Anyone in the group could vote, and 410 did” and “Parents want a 9:00 start, nearly 3 in 4”. 410 of the 2,000 voted, which is 20 in every 100, and the voters are only some of the parents. The people in the figure are not a fair picture of the parents the chair speaks for, so the claim fails at the very start, and nothing built on it needs checking. The key’s answer is **“Who was counted”**.
+The parts of a claim are checked in order, so begin with the people in the figure. The chair speaks for "parents", and the figure comes from a poll that anyone in a group of 2,000 members could vote in: “Anyone in the group could vote, and 410 did” and “Parents want a 9:00 start, nearly 3 in 4”. 410 of the 2,000 voted, which is 20 in every 100, and the voters are only some of the parents. The people in the figure are not a fair picture of the parents the chair speaks for, so the claim fails at the very start, and nothing built on it needs checking. The answer is **“Who was counted”**.
 
 Still possible: all four names this unit teaches.
 
@@ -1082,7 +1082,7 @@ What it is for: tells apart four ways the people or things counted can fail to b
 
 Answer: **“They chose to answer, when anyone could”**
 
-Now the question after it. Nobody was asked by name. The poll was posted for anyone in the group to see, and “Anyone in the group could vote”. The ones who voted chose to, and the parents who feel most strongly about early mornings are the likeliest to. The key’s answer is **“They chose to answer, when anyone could”**.
+Now the question after it. Nobody was asked by name. The poll was posted for anyone in the group to see, and “Anyone in the group could vote”. The ones who voted chose to, and the parents who feel most strongly about early mornings are the likeliest to. The answer is **“They chose to answer, when anyone could”**.
 
 Still possible: **Self-selection bias**. Ruled out: **Survivorship bias**, **Non-response bias** and **Too few to trust**.
 
@@ -1102,17 +1102,17 @@ Still possible: **Self-selection bias**. Ruled out: **Survivorship bias**, **Non
 
 For **Non-response bias** you must be able to point to this: a known list of people who were all asked, many of them not replying, nothing done to hear from the ones who did not, and the replies read as true of the whole list. The case has a known group of 2,000, but nobody in it was asked. A poll was posted, and the ones who voted chose to. There is no list of people who were asked and did not reply.
 
-It is the question from the homework survey. Was everyone on a known list asked by name, or could anyone who saw the call answer? Here nobody was asked by name, so the key’s answer is **“They chose to answer, when anyone could”**.
+It is the question from the homework survey. Was everyone on a known list asked by name, or could anyone who saw the call answer? Here nobody was asked by name, so the answer is **“They chose to answer, when anyone could”**.
 
 **Does it look like a case you know?**
 
-The key has given its answer. Now take a second look of a different kind: does this case look like one you know? It should bring back the magazine poll: a poll that any reader could click, and a figure from the ones who did, read as what everyone thinks.
+You have an answer. Now take a second look of a different kind: does this case look like one you know? It should bring back the magazine poll: a poll that any reader could click, and a figure from the ones who did, read as what everyone thinks.
 
-Here the key and the likeness agree, so the answer stands. The key’s question comes first, because it makes you point at words in the case. The likeness is only a second look. When the two disagree, do not pick the one you prefer. Go back to the key’s question and find the words in the case that answer it. The second whole case shows how.
+Here the likeness agrees with the answer, so the answer stands. The question comes first, because it makes you point at words in the case. The likeness is only a second look. When the two disagree, do not pick the one you prefer. Go back to the question and find the words in the case that answer it. The second whole case shows how.
 
 ### 30. A second whole claim, where the story points the wrong way
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 30 of 33*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 30 of 33*
 
 [reviewers only: card kind `worked`, id `worked-yoga`]
 
@@ -1130,7 +1130,7 @@ What it is for: sorts a claim made with numbers by the first of its four parts t
 
 Answer: **“Who was counted”**
 
-Begin with the people in the figure. The ad speaks for "people who try our studio", which is everyone who tries it, but the figure comes from the 90 who are members now: “Nine in ten people who try our studio” and “The other 210 left earlier, and were not asked”. 300 people have tried the studio, and 210 of them are not in the figure. They left, and people leave a studio that is not helping them. The first part goes wrong, so the key’s answer is **“Who was counted”**.
+Begin with the people in the figure. The ad speaks for "people who try our studio", which is everyone who tries it, but the figure comes from the 90 who are members now: “Nine in ten people who try our studio” and “The other 210 left earlier, and were not asked”. 300 people have tried the studio, and 210 of them are not in the figure. They left, and people leave a studio that is not helping them. The first part goes wrong, so the answer is **“Who was counted”**.
 
 Still possible: all four names this unit teaches.
 
@@ -1142,7 +1142,7 @@ What it is for: tells apart four ways the people or things counted can fail to b
 
 Answer: **“Only the ones that lasted were counted”**
 
-Now the question after it. Nearly everyone who was asked answered: 88 of 90, which is 98 in every 100. So the replies are not the trouble. The trouble is who was on the list: “its 90 current members” and “The other 210 left earlier, and were not asked”. The figure was worked out after the fact from the ones who were still there, and the ones who left are missing. The key’s answer is **“Only the ones that lasted were counted”**.
+Now the question after it. Nearly everyone who was asked answered: 88 of 90, which is 98 in every 100. So the replies are not the trouble. The trouble is who was on the list: “its 90 current members” and “The other 210 left earlier, and were not asked”. The figure was worked out after the fact from the ones who were still there, and the ones who left are missing. The answer is **“Only the ones that lasted were counted”**.
 
 Still possible: **Survivorship bias**. Ruled out: **Self-selection bias**, **Non-response bias** and **Too few to trust**.
 
@@ -1162,13 +1162,13 @@ Still possible: **Survivorship bias**. Ruled out: **Self-selection bias**, **Non
 
 For **Non-response bias** you must be able to point to this: a known list of people who were all asked, many of them not replying, nothing done to hear from the ones who did not, and the replies read as true of the whole list. Nothing here is a silence: 88 of 90 replied. For **Survivorship bias** you must be able to point to this: a figure worked out after the fact from the ones still there at the end, the ones that closed, quit, failed or left missing from it, and the figure read as true of everyone who started, or what the survivors share read as the reason they lasted. The case has that. The figure is worked out from the members who are still there, and the 210 who left are not in it.
 
-Is everyone the claim speaks for on the list that was asked? Or is the list only the ones who are still there? The list is only the ones who lasted, so the key’s answer is **“Only the ones that lasted were counted”**.
+Is everyone the claim speaks for on the list that was asked? Or is the list only the ones who are still there? The list is only the ones who lasted, so the answer is **“Only the ones that lasted were counted”**.
 
 **Does it look like a case you know?**
 
-Now the second look: does this case look like one you know? A survey mailed to a list, with nearly everyone answering, may bring back the library survey first, and that case was **Non-response bias**. So here the likeness and the key seem to disagree.
+Now the second look: does this case look like one you know? A survey mailed to a list, with nearly everyone answering, may bring back the library survey first, and that case was **Non-response bias**. So here the likeness and the answer seem to disagree.
 
-When that happens, go back to the key’s question and find the words in the case that answer it. They are “its 90 current members” and “The other 210 left earlier, and were not asked”. The library case has nothing like them: its list was everyone with a card, and nobody who had left was missing. This case leaves out 210 who left. So the case this one really looks like is the Mill Street restaurants, where the figure came from the ones that were still open, and the key’s answer stands.
+When that happens, go back to the question and find the words in the case that answer it. They are “its 90 current members” and “The other 210 left earlier, and were not asked”. The library case has nothing like them: its list was everyone with a card, and nobody who had left was missing. This case leaves out 210 who left. So the case this one really looks like is the Mill Street restaurants, where the figure came from the ones that were still open, and the answer stands.
 
 ### The drill
 
@@ -1176,7 +1176,7 @@ The cards are out of view from here, and every case is new. The drill has five s
 
 Some of these claims have nothing wrong with them: the figure comes from everyone, from people picked by lottery from a full list and nearly all heard from, or from a big enough group. A claim that sounds sure of itself is not for that reason a sound one, and a claim with few people in it is not for that reason a faulty one. Read how the people or things got into the figure, and go by that.
 
-#### Stage 1 of 5. The key’s answers are shown for each case. Give the name that goes with them. This stage practises one thing: which name goes with which answer.
+#### Stage 1 of 5. The answers are shown for each case. Give the name that goes with them. This stage practises one thing: which name goes with which answer.
 
 The names offered are the four this unit teaches: Survivorship bias / Self-selection bias / Non-response bias / Too few to trust.
 
@@ -1196,7 +1196,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Self-selection bias**: Nobody chose to answer: the magazine went to the managers who were still there. The ones who are missing left, and they did not choose to stay out of the figure.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Self-selection bias**, the look-alike card’s lines follow: Both come with a claim about a whole group and a figure from only some of it, and the ones left out are the ones who could change it. In **Survivorship bias** everyone was there at the start, and the figure is worked out after the fact from the ones that lasted; the ones that left are missing because of what happened to them. In **Self-selection bias** nobody was asked by name, and the figure is worked out from the ones who chose to answer; the ones who are missing never chose to take part. Did the people or things in the figure get in by lasting to the end, or by choosing to answer when nobody asked them by name?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “Counting only the ones that lasted” (one tap opens the card).
 
 **Drill item 2 of 40**
@@ -1215,7 +1215,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Non-response bias**: Nobody was sent the question by name. It sat in an app, and anyone could tap. There is no list of people who were asked and did not reply.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Non-response bias**, the look-alike card’s lines follow: In both, the figure comes from some of the people it speaks for, and they are the ones with something to say. In **Non-response bias** everyone on a known list was asked by name, and many did not reply. In **Self-selection bias** nobody was asked by name, and anyone who wanted to could answer. Was everyone on a known list asked by name, or could anyone who saw the call answer?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “A figure from the people who chose to answer” (one tap opens the card).
 
 **Drill item 3 of 40**
@@ -1234,7 +1234,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Too few to trust**: There are 85 bridges, and one more or fewer would move the share by about one point: 18 of 85 is 21 in every 100. That is enough bridges for the figure to hold.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Too few to trust**, the look-alike card’s lines follow: Both can report a share from the same kind of group, and both sound equally sure. In **Too few to trust** there are so few in the figure that a change of one or two in the count would swing it a long way, and a high or low figure is read as meaning something. In **A fair count** there are enough in the figure that the same change would hardly show, and the claim says no more than the figure for that group. What would the figure be with one or two more or fewer, and does the claim say more than the group can show?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 
 **Drill item 4 of 40**
 
@@ -1252,7 +1252,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Self-selection bias**: Everyone was asked by name: the survey went to every one of the 2,000 nurses. The trouble is that most did not reply, and nothing was done about it.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Self-selection bias**, the look-alike card’s lines follow: In both, the figure comes from some of the people it speaks for, and they are the ones with something to say. In **Non-response bias** everyone on a known list was asked by name, and many did not reply. In **Self-selection bias** nobody was asked by name, and anyone who wanted to could answer. Was everyone on a known list asked by name, or could anyone who saw the call answer?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “A figure from the few who replied” (one tap opens the card).
 
 **Drill item 5 of 40**
@@ -1271,7 +1271,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **A fair count**: A fair figure would be one that one or two more or fewer would barely move. With 8 residents, one fall is a whole eighth of the home, and the brochure reads one quiet month from 8 people as the best in the state.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **A fair count**, the look-alike card’s lines follow: Both can report a share from the same kind of group, and both sound equally sure. In **Too few to trust** there are so few in the figure that a change of one or two in the count would swing it a long way, and a high or low figure is read as meaning something. In **A fair count** there are enough in the figure that the same change would hardly show, and the claim says no more than the figure for that group. What would the figure be with one or two more or fewer, and does the claim say more than the group can show?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “A group so small that luck moves the figure” (one tap opens the card).
 
 **Drill item 6 of 40**
@@ -1290,7 +1290,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Non-response bias**: Nobody was asked and nobody failed to reply. The credit union looked at its own records of every loan, so nobody is missing from the figure.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Non-response bias**, the look-alike card’s lines follow: Both ask the same list and can report the same figure. In **Non-response bias** many on the list did not reply and nothing was done to hear from them, so the replies are read as the whole list. In **A fair count** most of the list answered, or the ones who did not were followed up until most had, so the figure is a fair picture of the list. How many of the list answered, and what was done about the ones who did not?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 
 #### Stage 2 of 5. One question at a time.
 
@@ -1310,7 +1310,7 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **Only the ones that lasted were counted.**” The list is made after the fact, from the ones still paying: “lists the 25 companies that have paid a dividend every year since 1970”. The companies that stopped, or went out of business, are missing, and they left because of what happened to them. This answer leads to **Survivorship bias**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **They chose to answer, when anyone could**: Nobody chose to answer. The list was made from the companies that were still paying, and the ones that are missing stopped, or closed.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 8 of 40**
@@ -1329,7 +1329,7 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **They chose to answer, when anyone could.**” Nobody was asked by name: “Anyone with the link could answer”. The students who answered chose to, and a student who used the center and liked it is likelier to say so. This answer leads to **Self-selection bias**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **Everyone on a list was asked, and many did not reply**: Nobody was asked by name, so there is no list of people who were asked and did not reply. The form sat on a website for anyone to find.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 9 of 40**
@@ -1348,7 +1348,7 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **Everyone on a list was asked, and many did not reply.**” Everyone on the list was asked, and most did not answer: “sent a ballot to each of its 600 households” and “did not follow up with the others”. 72 of 600 is 12 in every 100. This answer leads to **Non-response bias**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **They chose to answer, when anyone could**: Every household was asked by name, so nobody chose themselves into the survey. The trouble is that most did not reply.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 10 of 40**
@@ -1367,7 +1367,7 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **All were counted, but there are only a handful.**” Every table he served is counted, but there are only four: “served 4 tables on his first shift”. One table that tipped less would turn "every table" into 3 of 4. This answer leads to **Too few to trust**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **Everyone on a list was asked, and many did not reply**: Nobody was asked and nobody failed to reply: every table he served is in the figure. The trouble is that there are only four.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 11 of 40**
@@ -1386,7 +1386,7 @@ Shown to you, with the words that decide each answer marked:
 
 - If you are right: “Right: **Nothing goes wrong.**” Everyone the claim speaks for is counted: “measured the height of every one of the 150 pupils in the school on one day”. The claim stays with the pupils of this school. This answer leads to **A fair count**, **A real change**, **A fair comparison** and **A fair test**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught in Unit One (one tap opens the card).
 
 **Drill item 12 of 40**
@@ -1560,12 +1560,12 @@ Shown to you, with the words that decide each answer marked:
 **Shown as soon as you answer**
 
 - If you are right: “Right: **What the number counts.**” Every member was weighed at both ends, so the people in the figure are fine. What is counted changed: “swapped its old scales for new ones that read 3 pounds lighter”. Three of the five pounds could come from the scales alone.
-- If you miss: “The answer is …”, the same reason, and then the line built from the key for the answer you chose.
-- Then, right or wrong: “This case leaves the part of the key you have been taught. The questions that follow this answer come in a part of the course you have not reached, so the case stops here.”
+- If you miss: “The answer is …”, the same reason, and then the line built from the answers’ own wording for the answer you chose.
+- Then, right or wrong: “The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.”
 
-#### Stage 3 of 5. The first answer is shown. Answer the rest, then give the name. From here on your route is marked as well as the name: a right name reached by a wrong answer on the way counts as a miss.
+#### Stage 3 of 5. The first answer is shown. Answer the rest, then give the name. From here on your answers on the way are marked as well as the name: a right name reached by a wrong answer counts as a miss.
 
-Each question is shown with all of its answers from the key, in the key’s order, and the names offered are the four this unit teaches.
+Each question is shown with all of its answers, in order, and the names offered are the four this unit teaches.
 
 **Drill item 21 of 40**
 
@@ -1582,10 +1582,10 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Self-selection bias**: Nobody is in the figure by choosing to answer a poll. They are in because they finished the year. The ones who are missing left.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - If you chose **They chose to answer, when anyone could**: Nobody is in the figure by choosing to answer a poll. They are in because they finished the year. The ones who are missing left.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Self-selection bias**, the look-alike card’s lines follow: Both come with a claim about a whole group and a figure from only some of it, and the ones left out are the ones who could change it. In **Survivorship bias** everyone was there at the start, and the figure is worked out after the fact from the ones that lasted; the ones that left are missing because of what happened to them. In **Self-selection bias** nobody was asked by name, and the figure is worked out from the ones who chose to answer; the ones who are missing never chose to take part. Did the people or things in the figure get in by lasting to the end, or by choosing to answer when nobody asked them by name?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Counting only the ones that lasted” (one tap opens the card).
 
 **Drill item 22 of 40**
@@ -1603,10 +1603,10 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Non-response bias**: There is no known list of people who were asked. A pop-up appears for whoever visits, and nobody is asked by name.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - If you chose **Everyone on a list was asked, and many did not reply**: There is no known list of people who were asked. A pop-up appears for whoever visits, and nobody is asked by name.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Non-response bias**, the look-alike card’s lines follow: In both, the figure comes from some of the people it speaks for, and they are the ones with something to say. In **Non-response bias** everyone on a known list was asked by name, and many did not reply. In **Self-selection bias** nobody was asked by name, and anyone who wanted to could answer. Was everyone on a known list asked by name, or could anyone who saw the call answer?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A figure from the people who chose to answer” (one tap opens the card).
 
 **Drill item 23 of 40**
@@ -1624,10 +1624,10 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Self-selection bias**: Every customer was emailed by name, so nobody chose themselves into the survey. What went wrong is that 23,500 of 25,000 did not reply.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - If you chose **They chose to answer, when anyone could**: Every customer was emailed by name, so nobody chose themselves into the survey. What went wrong is that 23,500 of 25,000 did not reply.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Self-selection bias**, the look-alike card’s lines follow: In both, the figure comes from some of the people it speaks for, and they are the ones with something to say. In **Non-response bias** everyone on a known list was asked by name, and many did not reply. In **Self-selection bias** nobody was asked by name, and anyone who wanted to could answer. Was everyone on a known list asked by name, or could anyone who saw the call answer?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A figure from the few who replied” (one tap opens the card).
 
 **Drill item 24 of 40**
@@ -1644,14 +1644,14 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **A fair count**.” What does the claim say the figures show? **A figure for one group.** The claim gives one share for one group at one time and says nothing more: “About 31 in every 100 city residents feel unsafe walking at night”.
   - Why not **Non-response bias**: Most of those asked did answer: 770 of the 800 came to the door and replied, so what is missing is too little to lean the figure.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Non-response bias**, the look-alike card’s lines follow: Both ask the same list and can report the same figure. In **Non-response bias** many on the list did not reply and nothing was done to hear from them, so the replies are read as the whole list. In **A fair count** most of the list answered, or the ones who did not were followed up until most had, so the figure is a fair picture of the list. How many of the list answered, and what was done about the ones who did not?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 
-#### Stage 4 of 5. No help. Answer every question in the key’s order, then give the name.
+#### Stage 4 of 5. No help. Answer every question in order, then give the name.
 
-Each question is shown with all of its answers from the key, in the key’s order, and the names offered are the four this unit teaches.
+Each question is shown with all of its answers, in order, and the names offered are the four this unit teaches.
 
 **Drill item 25 of 40**
 
@@ -1666,10 +1666,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **Who was counted.** The website speaks for "our graduates", all 400 who finished, but the average comes from the ones who stayed in tech: “taken from the 150 graduates who are still working in tech jobs” and “Our graduates earn an average of $95,000”. 250 of the 400 are not in it.
   - If you chose **Everyone on a list was asked, and many did not reply**: Nobody was asked and failed to reply. The average was taken from a list of the graduates still in tech jobs, and the ones who left were never on it.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Non-response bias**, the look-alike card’s lines follow: In both, a list of people was asked by name, and the figure comes from the ones who answered. In **Non-response bias** the list is the whole group the claim speaks for, and many on it did not reply. In **Survivorship bias** the list holds just the ones who stayed to the end, so almost nobody on it fails to reply, and the ones who left were never on it. Is everyone the claim speaks for on the list that was asked? Or is the list only the ones who are still there?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the average were worked out from all 400 graduates, including the 250 who left tech, it would be a figure for everyone who finished, and the first part would hold.
 - Taught on: “Counting only the ones that lasted” (one tap opens the card).
 
@@ -1686,10 +1686,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **Who was counted.** The magazine speaks for the whole country, but the figure comes from 900 readers who wrote in: “America's favorite weeknight dinner” and “640 of the 900 who wrote in”.
   - If you chose **Only the ones that lasted were counted**: Nobody is in the figure by lasting to the end. They are in because they chose to write, and the readers who did not write were never counted.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Survivorship bias**, the look-alike card’s lines follow: Both come with a claim about a whole group and a figure from only some of it, and the ones left out are the ones who could change it. In **Survivorship bias** everyone was there at the start, and the figure is worked out after the fact from the ones that lasted; the ones that left are missing because of what happened to them. In **Self-selection bias** nobody was asked by name, and the figure is worked out from the ones who chose to answer; the ones who are missing never chose to take part. Did the people or things in the figure get in by lasting to the end, or by choosing to answer when nobody asked them by name?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the magazine had asked 900 people picked by lottery from a full list of households, and nearly all had answered, the first part would hold.
 - Taught on: “A figure from the people who chose to answer” (one tap opens the card).
 
@@ -1706,10 +1706,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **Who was counted.** The newsletter speaks for all 1,000 patients, but the figure comes from the 180 who sent the form back: “180 sent it back, and 144 said yes” and “Four in five of our patients floss every day”.
   - If you chose **They chose to answer, when anyone could**: Every patient was sent the questionnaire by name, so nobody chose themselves in. The trouble is that most did not send it back.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Self-selection bias**, the look-alike card’s lines follow: In both, the figure comes from some of the people it speaks for, and they are the ones with something to say. In **Non-response bias** everyone on a known list was asked by name, and many did not reply. In **Self-selection bias** nobody was asked by name, and anyone who wanted to could answer. Was everyone on a known list asked by name, or could anyone who saw the call answer?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the practice had phoned the patients who had not replied until 900 of the 1,000 had answered, the first part would hold.
 - Taught on: “A figure from the few who replied” (one tap opens the card).
 
@@ -1725,10 +1725,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
   - Why not **A fair count**: A fair figure would be one that one or two more or fewer would barely move. For Hartwell one accident is the difference between "none" and "some", and the website reads the gap as meaning something.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **Who was counted.** The website reads a year of zero accidents as showing that the town is safest: “there were no car accidents here last year” and “Hartwell is the safest town in the county for drivers”.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A fair count**, the look-alike card’s lines follow: Both can report a share from the same kind of group, and both sound equally sure. In **Too few to trust** there are so few in the figure that a change of one or two in the count would swing it a long way, and a high or low figure is read as meaning something. In **A fair count** there are enough in the figure that the same change would hardly show, and the claim says no more than the figure for that group. What would the figure be with one or two more or fewer, and does the claim say more than the group can show?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the website gave the figure for twenty years of accidents in Hartwell, and it was still near zero, there would be enough in the figure for it to mean something.
 - Taught on: “A group so small that luck moves the figure” (one tap opens the card).
 
@@ -1744,10 +1744,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
   - Why not **Too few to trust**: There are 320 trucks, and one more or fewer would move the share by about a third of a point: 41 of 320 is 12.8 in every 100. That is enough for the figure to hold.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **Nothing goes wrong.** Every truck the claim speaks for is counted: “checked every one of its 320 trucks”. 40 of 320 is 12.5 in every 100, which is one in eight.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Too few to trust**, the look-alike card’s lines follow: Both can report a share from the same kind of group, and both sound equally sure. In **Too few to trust** there are so few in the figure that a change of one or two in the count would swing it a long way, and a high or low figure is read as meaning something. In **A fair count** there are enough in the figure that the same change would hardly show, and the claim says no more than the figure for that group. What would the figure be with one or two more or fewer, and does the claim say more than the group can show?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the company had checked only the trucks parked at the depot on one Monday, and the manager spoke for all 320, the figure would leave the others out, and the answer would be **“Who was counted”**.
 
 **Drill item 30 of 40**
@@ -1763,10 +1763,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **Who was counted.** The flyer speaks for all 800 teachers, but the figure comes from the 64 who returned the form: “64 returned it, and 56 said yes” and “Seven in eight teachers would use the new database”.
   - If you chose **All were counted, but there are only a handful**: There are only 64 replies, which looks like a handful. But the 64 are 64 of a list of 800, and most of the group is missing. A handful is everyone there is.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Too few to trust**, the look-alike card’s lines follow: Both give a figure from only a few people, and both can sound exact. In **Non-response bias** the figure comes from the few who replied out of a much bigger list, so most of the group is missing. In **Too few to trust** nobody is missing: everyone there is has been counted, and the whole group is only a handful. Out of how many were the few counted: a much bigger list of people who did not reply, or everyone there is?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the district had phoned the teachers who had not replied until 700 of the 800 had answered, the first part would hold.
 - Taught on: “A figure from the few who replied” (one tap opens the card).
 
@@ -1782,10 +1782,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
   - Why not **Non-response bias**: Nobody was asked and nobody could fail to reply. The office counted from its own records of every pupil.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **Nothing goes wrong.** Every pupil is counted, from the school’s own records: “counted the absences of every one of its 1,200 pupils for the autumn term”. 96 of 1,200 is 8 in every 100.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Non-response bias**, the look-alike card’s lines follow: Both ask the same list and can report the same figure. In **Non-response bias** many on the list did not reply and nothing was done to hear from them, so the replies are read as the whole list. In **A fair count** most of the list answered, or the ones who did not were followed up until most had, so the figure is a fair picture of the list. How many of the list answered, and what was done about the ones who did not?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the office had counted only the pupils who were at school on the last day of term, the figure would leave out the ones who missed the most, and the answer would be **“Only the ones that lasted were counted”**.
 
 **Drill item 32 of 40**
@@ -1800,11 +1800,11 @@ Each question is shown with all of its answers from the key, in the key’s orde
   - Why not **A fair count**: A figure about the 8 houses alone would be a fair figure about those 8, and eight is a small count. But the claim speaks for all 400 houses that were built, and the other 392 are missing because they did not last. A figure that counted all 400 would hold.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **Who was counted.** The guide says that oak beams made the houses last, which is a claim of cause. But the first part goes wrong before that. The figure comes from the 8 houses that are still standing: “the 8 that are still standing all have oak beams” and “Oak beams make a house last four hundred years”. The other 392 are not in it.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A fair count**, the look-alike card’s lines follow: Both can report the same figure from the same garden, shop, club or program, and both sound equally sure. In **Survivorship bias** the figure is worked out after the fact from the ones that lasted, the ones that did not are missing from it, and it is read as true of everyone who started. In **A fair count** everyone who started is in the figure, or the ones in it were picked by lottery from a full list and nearly all of them answered, and the claim speaks only for that group. How many started, and are all of them in the figure? If some are missing, are they missing because of what happened to them?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *The street of nine homes*, which was **Too few to trust**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *The street of nine homes*, which was **Too few to trust**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If the guide had counted all 400 houses and said how many with oak beams, and how many without, had fallen down, the first part would hold, and the claim of cause could then be put to the test.
 - Taught on: “Counting only the ones that lasted” (one tap opens the card).
 
@@ -1820,11 +1820,11 @@ Each question is shown with all of its answers from the key, in the key’s orde
   - Why not **Survivorship bias**: A figure from the survivors leaves out the ones that closed. This one counts them: the 250 that closed are in the 400, and the claim says what share lasted, and nothing about why.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **Nothing goes wrong.** The story is about which cafés lasted, which can look like a figure from the survivors. But the agency counted everyone that started: “looked up all 400 cafés that opened in the city in 2019, including the ones that closed”. Nobody who started is missing.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Survivorship bias**, the look-alike card’s lines follow: Both can report the same figure from the same garden, shop, club or program, and both sound equally sure. In **Survivorship bias** the figure is worked out after the fact from the ones that lasted, the ones that did not are missing from it, and it is read as true of everyone who started. In **A fair count** everyone who started is in the figure, or the ones in it were picked by lottery from a full list and nearly all of them answered, and the claim speaks only for that group. How many started, and are all of them in the figure? If some are missing, are they missing because of what happened to them?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *The Mill Street restaurants*, which was **Survivorship bias**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *The Mill Street restaurants*, which was **Survivorship bias**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If the agency had looked up only the 150 cafés that were still open and reported how well they were doing, the 250 that closed would be missing, and the answer would be **“Who was counted”**, then **“Only the ones that lasted were counted”**.
 
 **Drill item 34 of 40**
@@ -1839,10 +1839,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
   - Why not **A fair count**: The park has a huge number of visitors, and that large number can look like a figure that holds. But the figure is the return rate of wallets, and it rests on four. One more or fewer would move it a long way.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **Who was counted.** The office reads a perfect record as a verdict on millions of visitors, but the figure comes from four wallets: “4 wallets were handed in to its lost-and-found office, and all 4 were returned to their owners” and “Park visitors are the most honest in the country”.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A fair count**, the look-alike card’s lines follow: Both can report a share from the same kind of group, and both sound equally sure. In **Too few to trust** there are so few in the figure that a change of one or two in the count would swing it a long way, and a high or low figure is read as meaning something. In **A fair count** there are enough in the figure that the same change would hardly show, and the claim says no more than the figure for that group. What would the figure be with one or two more or fewer, and does the claim say more than the group can show?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the office had handed back 400 wallets out of 400 over twenty years, there would be enough in the figure for it to mean something about the park.
 - Taught on: “A group so small that luck moves the figure” (one tap opens the card).
 
@@ -1858,11 +1858,11 @@ Each question is shown with all of its answers from the key, in the key’s orde
   - Why not **Self-selection bias**: The teachers did choose to volunteer, but nobody reads their answers as standing for teachers who did not. The claim is about the difference between two groups that a lottery formed from the same volunteers.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **Nothing goes wrong.** The teachers volunteered, which can look like people who chose themselves into the figure. But the claim compares two groups of volunteers, and a lottery formed them: “A lottery chose 40 to use the method for a year and 40 to carry on as before”. Whatever makes a teacher volunteer is as likely to be in one group as in the other.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Self-selection bias**, the look-alike card’s lines follow: In both, the people in the poll or the study came forward by their own choice. In **Self-selection bias** the answers of the people who chose to take part are read as true of a wider group. In **A fair test** the people who volunteered were split into two groups by lottery, one was given the thing and the other not, and the claim is about the difference between those two groups, which choosing to volunteer cannot explain. Does the claim speak for a wider group than the people who came forward? Or is it about a difference between two groups that a lottery formed?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *The four-day-week poll*, which was **Self-selection bias**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *The four-day-week poll*, which was **Self-selection bias**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If the volunteers had chosen for themselves whether to use the method, the keen ones would be in one group, and the answer would be different: the claim of cause would have another way to be explained.
 
 **Drill item 36 of 40**
@@ -1878,12 +1878,12 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **Who was counted.** The report speaks for all the charity’s supporters, but the figure comes from the 31,000 who voted: “31,000 people did” and “Our supporters back a ban”. 31,000 is 8 in every 100 of the 400,000 on the list.
   - If you chose **Everyone on a list was asked, and many did not reply**: The charity has a known list of 400,000, which sounds like a list that was asked and did not reply. But the poll was never emailed to the list. Nobody was asked by name.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Non-response bias**, the look-alike card’s lines follow: In both, the figure comes from some of the people it speaks for, and they are the ones with something to say. In **Non-response bias** everyone on a known list was asked by name, and many did not reply. In **Self-selection bias** nobody was asked by name, and anyone who wanted to could answer. Was everyone on a known list asked by name, or could anyone who saw the call answer?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *The Sunday library survey*, which was **Non-response bias**. When a likeness and the key disagree, go by the words that answer the key’s question.
-- What would make it a different name: If the charity had emailed the poll to all 400,000 on its list, and 31,000 had replied with no follow-up, the answer to the question for this branch would be **“Everyone on a list was asked, and many did not reply”**.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *The Sunday library survey*, which was **Non-response bias**. When a likeness and the answers disagree, go by the words that answer the question.
+- What would make it a different name: If the charity had emailed the poll to all 400,000 on its list, and 31,000 had replied with no follow-up, the answer to this question would be **“Everyone on a list was asked, and many did not reply”**.
 - Taught on: “A figure from the people who chose to answer” (one tap opens the card).
 
 **Drill item 37 of 40**
@@ -1903,8 +1903,8 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - If you are right: “Right: **What it is compared with.**” The figure is a percentage, and the claim leaves out what it is a percentage of: “Our new savings account pays 50% more interest”. Fifty percent more than 0.1% is still very little, and fifty percent more than 4% is a lot.
-- If you miss: “The answer is …”, the same reason, and then the line built from the key for the answer you chose.
-- Then, right or wrong: “This case leaves the part of the key you have been taught. The questions that follow this answer come in a part of the course you have not reached, so the case stops here.”
+- If you miss: “The answer is …”, the same reason, and then the line built from the answers’ own wording for the answer you chose.
+- Then, right or wrong: “The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.”
 
 #### Last stage. Each of these is something a person might say that uses one of this unit’s names, or reasons in one of its ways. Each has a fault. The first is worked for you. For the rest, answer before the fault is shown.
 
@@ -1939,7 +1939,7 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - The answer is: **They chose to answer, when anyone could.**
-- If you chose another answer, the line is built from the key, as for any other question.
+- If you chose another answer, the line is built from the answers’ own wording, as for any other question.
 - The fault: The claim treats the size of the count as proof. 60,000 votes tell you how exact the figure is for the people who voted. They chose to vote, and the claim speaks for everyone. If the town has 300,000 adults, 60,000 votes are 20 in every 100 of them, and the 240,000 who did not vote could have said anything.
 - The claim, put right (always the last thing shown): More than 60,000 people chose to vote in our online poll, and 9 in 10 of them want the old stadium rebuilt. That is **“They chose to answer, when anyone could”**: it says what the voters want. To say what the town wants, I would need a figure from people picked by lottery from a full list, with nearly all of them answering.
 
@@ -1975,21 +1975,21 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - The answer is: **All were counted, but there are only a handful.**
-- If you chose another answer, the line is built from the key, as for any other question.
+- If you chose another answer, the line is built from the answers’ own wording, as for any other question.
 - The fault: The claim reads a perfect result from 7 children as meaning that the school is the best in the nation. Every third grader is counted, so nobody is left out, but there are only seven, and one child who did not pass would make it 6 of 7, which is 86 in every 100. The smallest groups sit at the top of rankings, and at the bottom.
 - The claim, put right (always the last thing shown): All 7 third graders at this tiny school passed the test. That is **“All were counted, but there are only a handful”**: it says how seven children did this year, and not how good the school is. To say it is the best, I would need results from many more children, over several years.
 
-**When the drill ends.** The learner sees their own results: first-try accuracy for each stage, whole routes beside single questions, the pair of names they mixed up most often, and what will come back and when. Anything missed was asked again before the drill ended. Nothing here is graded. A miss only decides what comes back.
+**When the drill ends.** The learner sees their own results: first-try accuracy for each stage, whole cases beside single questions, the pair of names they mixed up most often, and what will come back and when. Anything missed was asked again before the drill ended. Nothing here is graded. A miss only decides what comes back.
 
 ### 31. What to carry away
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 31 of 33*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 31 of 33*
 
 [reviewers only: card kind `recap`, id `recap`]
 
-You have now run the key on your own. This card puts the unit in one place, in the key’s words.
+You have now run the questions on your own. This card puts the unit in one place, in the words used all the way through.
 
-**The key for this unit, in its own words**
+**This unit’s questions and answers**
 
 How did the people or things in the figure get into it?
 - Only the ones that lasted were counted → Survivorship bias
@@ -2024,7 +2024,7 @@ How did the people or things in the figure get into it?
 
 ### 32. Where would you meet this?
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 32 of 33*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 32 of 33*
 
 [reviewers only: card kind `transfer`, id `transfer`]
 
@@ -2047,7 +2047,7 @@ One line is enough. It is kept on this device only and is never marked.
 
 ### 33. A plan, if you want one
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 33 of 33*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 33 of 33*
 
 [reviewers only: card kind `plan`, id `plan`]
 
@@ -2069,7 +2069,7 @@ Or write your own: If …, then I will …
 
 ## After the unit: what comes back on later days
 
-A name that is due returns as a case the learner has not seen, next to a case of the name they most often confuse it with. Each is run as a whole route. These are the fresh cases held back for that purpose: three for each name, one for each scheduled return. The first return is about two days after the drill, the next about a week after that, the next about three and a half weeks later.
+A name that is due returns as a case the learner has not seen, next to a case of the name they most often confuse it with. Each is run as a whole case: every question, then the name. These are the fresh cases held back for that purpose: three for each name, one for each scheduled return. The first return is about two days after the drill, the next about a week after that, the next about three and a half weeks later.
 
 **Return case 1 of 16**
 
@@ -2084,10 +2084,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **Who was counted.** The ad speaks for people on the program, but the figure comes from the 75 who stayed: “the average for the 75 members who are still on the program after five years” and “People on our program take just 2 sick days a year”. 525 of the 600 who joined are not in it.
   - If you chose **They chose to answer, when anyone could**: Nobody is in the figure by choosing to answer. They are in because they lasted five years. The ones who are missing left.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Self-selection bias**, the look-alike card’s lines follow: Both come with a claim about a whole group and a figure from only some of it, and the ones left out are the ones who could change it. In **Survivorship bias** everyone was there at the start, and the figure is worked out after the fact from the ones that lasted; the ones that left are missing because of what happened to them. In **Self-selection bias** nobody was asked by name, and the figure is worked out from the ones who chose to answer; the ones who are missing never chose to take part. Did the people or things in the figure get in by lasting to the end, or by choosing to answer when nobody asked them by name?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the average were worked out from all 600 who joined, and it was still 2 days, the first part would hold.
 - Taught on: “Counting only the ones that lasted” (one tap opens the card).
 
@@ -2104,10 +2104,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **Who was counted.** The article says that leaving school early holds you back, which is a claim of cause, and the case shows no second group to compare. But the first part goes wrong before that: the figure comes from the people who stayed on the list, “The ten people who have stayed on the national rich list for twenty years”.
   - If you chose **They chose to answer, when anyone could**: Nobody chose to answer. The list was made after the fact from the ones who stayed on top, and the ones who did the same and failed are not on it.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Self-selection bias**, the look-alike card’s lines follow: Both come with a claim about a whole group and a figure from only some of it, and the ones left out are the ones who could change it. In **Survivorship bias** everyone was there at the start, and the figure is worked out after the fact from the ones that lasted; the ones that left are missing because of what happened to them. In **Self-selection bias** nobody was asked by name, and the figure is worked out from the ones who chose to answer; the ones who are missing never chose to take part. Did the people or things in the figure get in by lasting to the end, or by choosing to answer when nobody asked them by name?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the article had counted everyone who left school early and started a business in those years, the ones who failed included, the first part would hold, and the claim of cause could then be put to the test.
 - Taught on: “Counting only the ones that lasted” (one tap opens the card).
 
@@ -2123,10 +2123,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
   - Why not **A fair count**: **A fair count** would be a figure for every building that went up, the 170 that fell included. The museum shows 30 of the 200, and they are the 30 that lasted.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **Who was counted.** The sign speaks for everything the town built in the 1800s, but the figure comes from the buildings that are still there: “displays the 30 oldest buildings in the town” and “Our town built better in the 1800s”.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A fair count**, the look-alike card’s lines follow: Both can report the same figure from the same garden, shop, club or program, and both sound equally sure. In **Survivorship bias** the figure is worked out after the fact from the ones that lasted, the ones that did not are missing from it, and it is read as true of everyone who started. In **A fair count** everyone who started is in the figure, or the ones in it were picked by lottery from a full list and nearly all of them answered, and the claim speaks only for that group. How many started, and are all of them in the figure? If some are missing, are they missing because of what happened to them?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the museum had a record of all 200 buildings and how long each lasted, the first part would hold, and the sign could say what share of them were still standing.
 - Taught on: “Counting only the ones that lasted” (one tap opens the card).
 
@@ -2143,10 +2143,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **Who was counted.** The company speaks for its customers, but the figure comes from the ones who stayed: “The ratings come from the 10,000 who are still customers” and “Our customers are happy”. 30,000 of the 40,000 who signed up are not in it.
   - If you chose **Everyone on a list was asked, and many did not reply**: Nobody who was asked failed to reply. The list that was asked is only the customers still there, and the ones who left were never on it.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Non-response bias**, the look-alike card’s lines follow: In both, a list of people was asked by name, and the figure comes from the ones who answered. In **Non-response bias** the list is the whole group the claim speaks for, and many on it did not reply. In **Survivorship bias** the list holds just the ones who stayed to the end, so almost nobody on it fails to reply, and the ones who left were never on it. Is everyone the claim speaks for on the list that was asked? Or is the list only the ones who are still there?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the company had phoned the 30,000 who left and asked them too, the first part would hold, and the figure would be for everyone who signed up.
 - Taught on: “Counting only the ones that lasted” (one tap opens the card).
 
@@ -2163,10 +2163,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **Who was counted.** The anchor speaks for the whole city, but the figure comes from 5,100 viewers who texted: “5,100 did” and “The city wants fireworks banned”.
   - If you chose **Everyone on a list was asked, and many did not reply**: Nobody was sent the question by name. It was put to whoever was watching, so there is no list of people who were asked and did not reply.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Non-response bias**, the look-alike card’s lines follow: In both, the figure comes from some of the people it speaks for, and they are the ones with something to say. In **Non-response bias** everyone on a known list was asked by name, and many did not reply. In **Self-selection bias** nobody was asked by name, and anyone who wanted to could answer. Was everyone on a known list asked by name, or could anyone who saw the call answer?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the station had phoned 600 numbers drawn by lottery from the phone book and heard from nearly all of them, the first part would hold.
 - Taught on: “A figure from the people who chose to answer” (one tap opens the card).
 
@@ -2183,10 +2183,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **Who was counted.** The headline speaks for gamers in general, but the figure comes from 12,000 visitors to one site who voted: “12,000 people did” and “Gamers pick Planet Quest”.
   - If you chose **Only the ones that lasted were counted**: Nobody is in the figure by lasting to the end. They are in because they chose to vote, and nobody who did not vote was counted.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Survivorship bias**, the look-alike card’s lines follow: Both come with a claim about a whole group and a figure from only some of it, and the ones left out are the ones who could change it. In **Survivorship bias** everyone was there at the start, and the figure is worked out after the fact from the ones that lasted; the ones that left are missing because of what happened to them. In **Self-selection bias** nobody was asked by name, and the figure is worked out from the ones who chose to answer; the ones who are missing never chose to take part. Did the people or things in the figure get in by lasting to the end, or by choosing to answer when nobody asked them by name?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the site had asked 1,000 gamers picked by lottery from a full list of players, and nearly all had answered, the first part would hold.
 - Taught on: “A figure from the people who chose to answer” (one tap opens the card).
 
@@ -2203,10 +2203,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **Who was counted.** The blog speaks for most people, but the figure comes from 2,300 readers of one health blog who answered: “2,300 readers answered” and “Most people sleep badly”.
   - If you chose **Everyone on a list was asked, and many did not reply**: Nobody was asked by name. The poll sat on a blog for anyone to see, so there is no list of people who were asked and did not reply.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Non-response bias**, the look-alike card’s lines follow: In both, the figure comes from some of the people it speaks for, and they are the ones with something to say. In **Non-response bias** everyone on a known list was asked by name, and many did not reply. In **Self-selection bias** nobody was asked by name, and anyone who wanted to could answer. Was everyone on a known list asked by name, or could anyone who saw the call answer?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the blog had asked 1,000 people picked by lottery from a full list, with nearly all of them answering, the first part would hold.
 - Taught on: “A figure from the people who chose to answer” (one tap opens the card).
 
@@ -2223,10 +2223,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **Who was counted.** The manager speaks for all 1,400 staff, but the figure comes from 21 cards: “21 cards came in” and “Our staff want a gym”.
   - If you chose **Everyone on a list was asked, and many did not reply**: Nobody was asked by name. The box sat in the break room for anyone to use, so there is no list of staff who were asked and did not reply.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Non-response bias**, the look-alike card’s lines follow: In both, the figure comes from some of the people it speaks for, and they are the ones with something to say. In **Non-response bias** everyone on a known list was asked by name, and many did not reply. In **Self-selection bias** nobody was asked by name, and anyone who wanted to could answer. Was everyone on a known list asked by name, or could anyone who saw the call answer?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the manager had asked a hundred staff picked by lottery from the payroll, and nearly all had answered, the first part would hold.
 - Taught on: “A figure from the people who chose to answer” (one tap opens the card).
 
@@ -2243,10 +2243,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **Who was counted.** The clinic speaks for all its patients, but the figure comes from the 240 who replied: “240 replied, and 180 said the waits were fine” and “Three in four of our patients say the waits are fine”.
   - If you chose **They chose to answer, when anyone could**: Every patient was sent the questionnaire by name, so nobody chose themselves in. The trouble is that most did not send it back.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Self-selection bias**, the look-alike card’s lines follow: In both, the figure comes from some of the people it speaks for, and they are the ones with something to say. In **Non-response bias** everyone on a known list was asked by name, and many did not reply. In **Self-selection bias** nobody was asked by name, and anyone who wanted to could answer. Was everyone on a known list asked by name, or could anyone who saw the call answer?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the clinic had phoned the patients who had not replied until 1,300 of the 1,500 had answered, the first part would hold.
 - Taught on: “A figure from the few who replied” (one tap opens the card).
 
@@ -2263,10 +2263,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **Who was counted.** The district speaks for all 5,000 parents, but the figure comes from the 650 who replied: “650 replied, and 455 were in favor” and “Seven in ten parents want uniforms”. That is 13 in every 100 of them.
   - If you chose **They chose to answer, when anyone could**: Every parent was sent the survey by name, so nobody chose themselves in. What went wrong is that 4,350 of 5,000 did not reply and nobody followed up.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Self-selection bias**, the look-alike card’s lines follow: In both, the figure comes from some of the people it speaks for, and they are the ones with something to say. In **Non-response bias** everyone on a known list was asked by name, and many did not reply. In **Self-selection bias** nobody was asked by name, and anyone who wanted to could answer. Was everyone on a known list asked by name, or could anyone who saw the call answer?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the district had reminded and phoned the parents who had not replied until 4,000 of the 5,000 had answered, the first part would hold.
 - Taught on: “A figure from the few who replied” (one tap opens the card).
 
@@ -2283,10 +2283,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **Who was counted.** The company speaks for all its customers, but the figure comes from the 600 who replied: “600 replied, and 510 liked it” and “More than eight in ten customers like the new rewards plan”. That is 3 in every 100 of them.
   - If you chose **All were counted, but there are only a handful**: 600 replies is a lot of people, and the 600 are a small share of a list of 20,000. The trouble is not how few are in the figure but how many on the list are missing from it.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Too few to trust**, the look-alike card’s lines follow: Both give a figure from only a few people, and both can sound exact. In **Non-response bias** the figure comes from the few who replied out of a much bigger list, so most of the group is missing. In **Too few to trust** nobody is missing: everyone there is has been counted, and the whole group is only a handful. Out of how many were the few counted: a much bigger list of people who did not reply, or everyone there is?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the company had followed up until 15,000 of the 20,000 had answered, the first part would hold.
 - Taught on: “A figure from the few who replied” (one tap opens the card).
 
@@ -2303,10 +2303,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **Who was counted.** The department speaks for all 300 seasonal workers, but the figure comes from the 45 who replied: “45 replied, and 36 said they would return next year” and “Four in five seasonal workers will return next year”.
   - If you chose **All were counted, but there are only a handful**: 45 replies looks like a handful. But the 45 are 45 of a list of 300, and 255 are missing. A handful is everyone there is.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Too few to trust**, the look-alike card’s lines follow: Both give a figure from only a few people, and both can sound exact. In **Non-response bias** the figure comes from the few who replied out of a much bigger list, so most of the group is missing. In **Too few to trust** nobody is missing: everyone there is has been counted, and the whole group is only a handful. Out of how many were the few counted: a much bigger list of people who did not reply, or everyone there is?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the department had phoned the workers who had not replied until 270 of the 300 had answered, the first part would hold.
 - Taught on: “A figure from the few who replied” (one tap opens the card).
 
@@ -2322,10 +2322,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
   - Why not **A fair count**: A fair figure would be one that one or two more or fewer would barely move. Here one child is more than a whole point, and the site reads the gap between "lowest" and "ordinary" as meaning something about the air.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **Who was counted.** The site reads the lowest figure as showing the cleanest air, but the figure comes from 80 children: “only 1 child in 80 has asthma” and “Tiny County has the cleanest air in the state”.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A fair count**, the look-alike card’s lines follow: Both can report a share from the same kind of group, and both sound equally sure. In **Too few to trust** there are so few in the figure that a change of one or two in the count would swing it a long way, and a high or low figure is read as meaning something. In **A fair count** there are enough in the figure that the same change would hardly show, and the claim says no more than the figure for that group. What would the figure be with one or two more or fewer, and does the claim say more than the group can show?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the site gave the figure for twenty years of children in Tiny County, there would be enough in the figure for it to mean something.
 - Taught on: “A group so small that luck moves the figure” (one tap opens the card).
 
@@ -2342,10 +2342,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **Who was counted.** The newsletter reads a perfect record as showing the player is unbeatable, but the figure comes from five sets: “played 5 sets against left-handers and won all 5” and “unbeatable against left-handers”.
   - If you chose **Everyone on a list was asked, and many did not reply**: Nobody was asked and nobody failed to reply. Every set the player has played against a left-hander is in the figure, and the trouble is that there are only five.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Non-response bias**, the look-alike card’s lines follow: Both give a figure from only a few people, and both can sound exact. In **Non-response bias** the figure comes from the few who replied out of a much bigger list, so most of the group is missing. In **Too few to trust** nobody is missing: everyone there is has been counted, and the whole group is only a handful. Out of how many were the few counted: a much bigger list of people who did not reply, or everyone there is?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the newsletter gave a record of 90 wins in 100 sets against left-handers over six seasons, there would be enough in the figure for it to mean something.
 - Taught on: “A group so small that luck moves the figure” (one tap opens the card).
 
@@ -2361,10 +2361,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
   - Why not **A fair count**: A fair figure would be one that one or two more or fewer would barely move. With six students, one is more than 16 points, and the website reads a perfect record from six as a promise.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **Who was counted.** The website reads a perfect record as a promise about every student she will teach, but the figure comes from six students: “taught 6 students this year, and all 6 improved by a grade” and “Every student I teach improves”.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A fair count**, the look-alike card’s lines follow: Both can report a share from the same kind of group, and both sound equally sure. In **Too few to trust** there are so few in the figure that a change of one or two in the count would swing it a long way, and a high or low figure is read as meaning something. In **A fair count** there are enough in the figure that the same change would hardly show, and the claim says no more than the figure for that group. What would the figure be with one or two more or fewer, and does the claim say more than the group can show?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the website gave a figure for 600 students over ten years, there would be enough in the figure for it to mean something.
 - Taught on: “A group so small that luck moves the figure” (one tap opens the card).
 
@@ -2381,10 +2381,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **Who was counted.** The manager reads a clean first hour as a promise for good, but the figure comes from six drinks: “made 6 drinks in her first hour and none was sent back” and “Ana never makes a mistake”.
   - If you chose **Everyone on a list was asked, and many did not reply**: Nobody was asked and nobody failed to reply. Every drink she has made is in the figure, and the trouble is that there are only six.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Non-response bias**, the look-alike card’s lines follow: Both give a figure from only a few people, and both can sound exact. In **Non-response bias** the figure comes from the few who replied out of a much bigger list, so most of the group is missing. In **Too few to trust** nobody is missing: everyone there is has been counted, and the whole group is only a handful. Out of how many were the few counted: a much bigger list of people who did not reply, or everyone there is?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the manager said that in 2,000 drinks over three months, 40 had been sent back, there would be enough in the figure for it to mean something.
 - Taught on: “A group so small that luck moves the figure” (one tap opens the card).
 

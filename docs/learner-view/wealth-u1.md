@@ -1,16 +1,16 @@
 # Learner view: Wealth Preservation, Unit One: What could lose the money
 
-*The key’s first question, and the five kinds of case it sorts every account of someone’s money into.* Unit revision 1, built to lesson standard 1, status: draft.
+*The first question, and the five kinds of case it sorts every account of someone’s money into.* Unit revision 2, built to lesson standard 1, status: draft.
 
 This file is generated from the data files by `tools/render-learner-view.mjs`. It shows every screen in the order a learner meets it. In the app one card is on screen at a time and the learner moves on when ready.
 
-- **Bold text in quotation marks** is the key’s own wording, printed from `key.js`. Bold names are the outcome names from the same file. Neither is typed anywhere else. "What you must be able to point to" lines and "How to tell them apart" lines are also printed from one place each (the key and the look-alike ledger).
-- This is the subject’s gate unit. It teaches the key’s first question, and its names are that question’s answers: wherever a bold answer in quotation marks appears, it is also the name of a kind.
+- **Bold text in quotation marks** is the subject’s own wording for its questions and answers, written once and printed everywhere. Bold names are the names, written once in the same place. Neither is typed anywhere else. "What you must be able to point to" lines and "How to tell them apart" lines are also printed from one place each (the subject’s questions and the pairs it compares).
+- This is the subject’s first unit. It teaches the first question, and its names are that question’s answers: wherever a bold answer in quotation marks appears, it is also the name of a kind.
 - ⟦Double brackets⟧ show the words the app marks in a case (one highlight style everywhere).
 - The line in italics under each heading is the app’s top bar. The line in square brackets after it is for reviewers and is not shown to the learner.
 - Headings, prompt wording and stage instructions that are the same in every unit are the app’s wording, not this unit’s.
 - "Shown as soon as you …" is what appears the moment the learner answers. Nothing is hidden behind a second tap the first time a case is met, or after a miss.
-- After every answer the app shows, in this order: the right answer in the key’s words; the reason, quoting the marked words; for a name, why the nearest wrong name fails; after a miss, a line about the answer the learner chose; and last a link to the card that taught it. Where a line about the learner’s own choice is not written for the case, the app builds it from the key, and this file says so in place of repeating it.
+- After every answer the app shows, in this order: the right answer; the reason, quoting the marked words; for a name, why the nearest wrong name fails; after a miss, a line about the answer the learner chose; and last a link to the card that taught it. Where a line about the learner’s own choice is not written for the case, the app builds it from the answers’ own wording, and this file says so in place of repeating it.
 
 ---
 
@@ -18,7 +18,7 @@ This file is generated from the data files by `tools/render-learner-view.mjs`. I
 
 ### 1. Before any fix: where could the money be lost?
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 1 of 45*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 1 of 45*
 
 [reviewers only: card kind `orient`, id `orient-gate`]
 
@@ -36,11 +36,11 @@ A man dies and his pension goes to his first wife, because the form he signed tw
 
 All four lose money, and each loses it in a different way: a little every year, all at once through one thing, in a fall in prices, and at the handover. People often reach for a cure before they know which of these they are looking at. A fifth case is as common as any of them: money that is simply sitting there, with nothing in the account that could lose it. This unit teaches you to tell the five apart, before you think about any cure.
 
-Two words are used all the way through, so here they are once. A case is a short account of someone’s money: a few sentences, the sort of thing a friend tells you or you read in a letter. The key is a short list of questions that you put to a case, always in the same order. Each answer narrows down what the case can be, until one name is left.
+One word is used all the way through, so here it is once. A case is a short account of someone’s money: a few sentences, the sort of thing a friend tells you or you read in a letter. You put a short list of questions to a case, always in the same order. Each answer narrows down what the case can be, until one name is left.
 
-This unit teaches the first question of the key and nothing after it. In this unit the answer to that question is also the name: it says what kind of case you are looking at. Four of the five answers lead on to a further question, which gives a finer name and says what to do. The fifth, **“Nothing in the case”**, does not: the key has nothing more to ask, and that is a result in its own right. In this subject, leaving money alone is as much an answer as changing something.
+This unit teaches the first question and nothing after it. In this unit the answer to that question is also the name: it says what kind of case you are looking at. Four of the five answers lead on to a further question, which gives a finer name and says what to do. The fifth, **“Nothing in the case”**, does not: there is nothing more to ask, and that is a result in its own right. In this subject, leaving money alone is as much an answer as changing something.
 
-**The part of the key this unit teaches.** This is a preview. You are not expected to follow it yet: every line is explained on the cards that come next. The question and its answers are in the key’s own words. Beside each answer, in plain words, is what a case of that kind is made of. There are five answers, and in this unit each answer is itself the name of a kind.
+**The questions this unit teaches.** This is a preview. You are not expected to follow it yet: every line is explained on the cards that come next. The question and its answers are worded exactly as you will meet them. Beside each answer, in plain words, is what a case of that kind is made of. There are five answers, and in this unit each answer is itself the name of a kind.
 
 What could lose this money?
 - Something taken out of it every year → small sums going out of what a person has built up, every year
@@ -54,17 +54,17 @@ The unit has four parts, and you can stop after any of them.
 1. Money going out, and the day it is needed
 2. One thing, and the handover
 3. A case with nothing to name
-4. The key’s first question, two whole cases, then the drill
+4. The first question, two whole cases, then the drill
 
 Each name is taught through cases first. After every step you answer one question about a new case, and the answer and the reason are shown straight away. Nothing here is graded. A miss only decides what comes back.
 
 ### 2. All the money someone has built up
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 2 of 45*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 2 of 45*
 
 [reviewers only: card kind `term`, id `term-pot`]
 
-The key’s question is about money that someone has built up and wants to keep. Before the question, one word, so that every case means the same thing by it.
+The question is about money that someone has built up and wants to keep. Before the question, one word, so that every case means the same thing by it.
 
 *Nadia’s total*
 
@@ -81,7 +81,7 @@ From here on, a person’s total of this kind is *the pot*. When a case says "ev
 
 ### 3. A slice of a company
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 3 of 45*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 3 of 45*
 
 [reviewers only: card kind `term`, id `term-share`]
 
@@ -102,7 +102,7 @@ One of these slices is *a share*. The price of a slice is what someone will pay 
 
 ### 4. A basket of investments bought in one go
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 4 of 45*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 4 of 45*
 
 [reviewers only: card kind `term`, id `term-fund`]
 
@@ -123,11 +123,11 @@ This is *a fund*. Funds are how most pensions and most savings in shares are hel
 
 ### 5. Small sums going out of what a person has built up, every year
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 5 of 45*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 5 of 45*
 
 [reviewers only: card kind `meet`, id `meet-erosion`]
 
-The key’s first question has five answers. Start with the one that is easiest to miss, because nothing dramatic ever happens in it.
+The first question has five answers. Start with the one that is easiest to miss, because nothing dramatic ever happens in it.
 
 *Colin and the pension fund*
 
@@ -150,11 +150,11 @@ A charge, a tax bill or a sum spent is not wrong in itself. Some charges pay for
 
 **What you must be able to point to.** Something taken out of the pot every year: a charge for funds or advice, tax on the investments, or a sum taken out to spend. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What could lose this money?”**
+**The question:** **“What could lose this money?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“Something taken out of it every year”**
+**Its answer for a case like this one:** **“Something taken out of it every year”**
 
-The key’s answer, and the name of this kind of case, is **“Something taken out of it every year”**. "Taken out" means the money leaves, and is no longer there to grow.
+The answer, and the name of this kind of case, is **“Something taken out of it every year”**. "Taken out" means the money leaves, and is no longer there to grow.
 
 The name says nothing about how large the sum is, or whether it is fair. It says only that the case is about something that comes out every year.
 
@@ -162,7 +162,7 @@ You may also hear this called “a slow leak”. That means the same thing here,
 
 ### 6. Something taken out of it every year: the same thing in a different story
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 6 of 45*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 6 of 45*
 
 [reviewers only: card kind `again`, id `again-erosion`]
 
@@ -195,7 +195,7 @@ Neither case is about a sale, a bill that falls due on a date, or a death. What 
 
 ### 7. The story does not decide the answer
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 7 of 45*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 7 of 45*
 
 [reviewers only: card kind `lens`, id `lens-gate`]
 
@@ -209,13 +209,13 @@ From here on, the cases change their stories on purpose. Sometimes two cases wil
 
 Two more things change on purpose. One is size: a few hundred pounds and a few million can be the same kind of case. The other is whether anything is wrong at all. In some cases the thing that could lose the money is looked after, or does not matter, and in some the case raises nothing at all. Seeing that is part of the skill, and the fifth answer is for it.
 
-**Stays the same from case to case:** what the money could be lost through, which is what the key asks about: **“What could lose this money?”**
+**Stays the same from case to case:** what the money could be lost through, which is what the question is about: **“What could lose this money?”**
 
 **Changes on purpose:** the kind of money; the people; the size of the sums; how worried you would be; whether anything is wrong at all.
 
 ### 8. Something taken out of it every year: what it is like
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 8 of 45*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 8 of 45*
 
 [reviewers only: card kind `portrait`, id `portrait-erosion`]
 
@@ -248,7 +248,7 @@ In your own life you meet it in the lines of statements nobody reads: the yearly
 
 ### 9. A question about a new case
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 9 of 45*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 9 of 45*
 
 [reviewers only: card kind `check`, id `check-erosion`]
 
@@ -263,7 +263,7 @@ The pieces you can tap:
 
 **Shown as soon as you tap**
 
-- If you are right: “Right: ‘Every year he takes £25,000 out of it to spend on living’.” The case shows a sum that comes out of the money every year, and what it is for: “Every year he takes £25,000 out of it to spend on living”. It is a sum Hal spends. The case does not say prices have fallen or that a bill is due on a date, and no one thing is most of what he has. The key’s answer for this case is **“Something taken out of it every year”**.
+- If you are right: “Right: ‘Every year he takes £25,000 out of it to spend on living’.” The case shows a sum that comes out of the money every year, and what it is for: “Every year he takes £25,000 out of it to spend on living”. It is a sum Hal spends. The case does not say prices have fallen or that a bill is due on a date, and no one thing is most of what he has. The answer for this case is **“Something taken out of it every year”**.
 - If you miss: “The words are ‘Every year he takes £25,000 out of it to spend on living’.” The same reason follows, and then a line about the piece you tapped:
   - “Hal retired at 65 with £500,000.”: That is what he has. It tells you how big the money is, and the question asks for what comes out of it.
   - “, and he is now 69. His statement shows the balance is about the same as the day he retired.”: That tells you where the money stands now, and nothing in it comes out. The words that settle it are in the sentence before.
@@ -271,11 +271,11 @@ The pieces you can tap:
 
 ### 10. A loan with a fixed payout
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 10 of 45*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 10 of 45*
 
 [reviewers only: card kind `term`, id `term-bond`]
 
-The next family is about falling prices, and prices fall for some things and not for others. One more word, for something whose price can wobble but whose payout does not.
+The next kind of case is about falling prices, and prices fall for some things and not for others. One more word, for something whose price can wobble but whose payout does not.
 
 *Omar’s loan*
 
@@ -292,11 +292,11 @@ A loan like this is *a bond*. Companies borrow this way as well as governments.
 
 ### 11. The split between shares, loans and cash
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 11 of 45*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 11 of 45*
 
 [reviewers only: card kind `term`, id `term-mix`]
 
-One last word before the second family: the way a person has divided their money between the things it can be held in.
+One last word before the second kind of case: the way a person has divided their money between the things it can be held in.
 
 *Hana’s split*
 
@@ -315,7 +315,7 @@ The split is *the mix*. When it has moved well away from the one the person chos
 
 ### 12. Prices falling just when the money is needed
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 12 of 45*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 12 of 45*
 
 [reviewers only: card kind `meet`, id `meet-timing`]
 
@@ -342,11 +342,11 @@ This answer covers three forms, and this card shows the first. The second is a b
 
 **What you must be able to point to.** Shares or funds whose prices can fall, and something in the case that a fall would catch out: living costs paid from them, a bill on a date, or a mix that has moved from its plan. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What could lose this money?”**
+**The question:** **“What could lose this money?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“A fall in prices it is not ready for”**
+**Its answer for a case like this one:** **“A fall in prices it is not ready for”**
 
-The key’s answer, and the name of this kind of case, is **“A fall in prices it is not ready for”**. "Not ready" means that nothing has been arranged to ride a fall out: no cash to spend from, no money held as *a bond* that repays on the day, and *the mix* not kept within its plan.
+The answer, and the name of this kind of case, is **“A fall in prices it is not ready for”**. "Not ready" means that nothing has been arranged to ride a fall out: no cash to spend from, no money held as *a bond* that repays on the day, and *the mix* not kept within its plan.
 
 The name does not say that prices will fall. Nobody knows that. It says what would happen if they did, and the case is about that.
 
@@ -354,7 +354,7 @@ You may also hear this called “bad timing”. That means the same thing here, 
 
 ### 13. A fall in prices it is not ready for: the same thing in a different story
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 13 of 45*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 13 of 45*
 
 [reviewers only: card kind `again`, id `again-timing`]
 
@@ -389,7 +389,7 @@ What the two share is money needed on a particular day, held in something that c
 
 ### 14. A fall in prices it is not ready for: what it is like
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 14 of 45*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 14 of 45*
 
 [reviewers only: card kind `portrait`, id `portrait-timing`]
 
@@ -422,7 +422,7 @@ In your own life it is the sentence "I will need that money in..." followed by a
 
 ### 15. A question about a new case
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 15 of 45*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 15 of 45*
 
 [reviewers only: card kind `check`, id `check-timing`]
 
@@ -437,7 +437,7 @@ The pieces you can tap:
 
 **Shown as soon as you tap**
 
-- If you are right: “Right: ‘After years of rises it is 78% shares and 22% bonds’.” The case shows a mix that has moved: “After years of rises it is 78% shares and 22% bonds”. Greg chose 60% in shares and it is now 78%, so a fall would take a bigger share of his money than he chose, and he stops work in two years. The key’s answer for this case is **“A fall in prices it is not ready for”**.
+- If you are right: “Right: ‘After years of rises it is 78% shares and 22% bonds’.” The case shows a mix that has moved: “After years of rises it is 78% shares and 22% bonds”. Greg chose 60% in shares and it is now 78%, so a fall would take a bigger share of his money than he chose, and he stops work in two years. The answer for this case is **“A fall in prices it is not ready for”**.
 - If you miss: “The words are ‘After years of rises it is 78% shares and 22% bonds’.” The same reason follows, and then a line about the piece you tapped:
   - “Greg, 58, chose to keep his £360,000 in 60% shares and 40% bonds.”: That is the plan he chose. It is half of what the question asks for: the other half is what the split is now.
   - “. He plans to stop work in two years.”: That is when he will need the money, and it makes a fall matter. But the words that show what a fall would catch are the ones before it.
@@ -445,7 +445,7 @@ The pieces you can tap:
 
 ### 16. Something taken out of it every year or A fall in prices it is not ready for: telling them apart
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 16 of 45*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 16 of 45*
 
 [reviewers only: card kind `lookalike`, id `look-erosion-timing`]
 
@@ -467,9 +467,9 @@ You have now met two answers in which money leaves the owner’s hands. They are
 
 **Why this one and not the other**
 
-In Case A their adviser’s firm takes 1.1% of the £300,000 every December, £3,300, however the funds did that year. The same sum is taken in a good year and in a bad one, and the case does not say anything is sold on a bad day. The key’s answer is **“Something taken out of it every year”**.
+In Case A their adviser’s firm takes 1.1% of the £300,000 every December, £3,300, however the funds did that year. The same sum is taken in a good year and in a bad one, and the case does not say anything is sold on a bad day. The answer is **“Something taken out of it every year”**.
 
-In Case B nothing is taken by an adviser. Greta and Sam pay their bills by selling about £1,500 of their funds each month, with nothing set aside in cash, and this year prices are down 25%. Each sale takes place at a lower price than it would have, and what is sold is not there when prices come back. The key’s answer is **“A fall in prices it is not ready for”**.
+In Case B nothing is taken by an adviser. Greta and Sam pay their bills by selling about £1,500 of their funds each month, with nothing set aside in cash, and this year prices are down 25%. Each sale takes place at a lower price than it would have, and what is sold is not there when prices come back. The answer is **“A fall in prices it is not ready for”**.
 
 Money leaves the same couple in both cases. What separates the two is whether the case is about the amount that goes out every year, whatever the market does (Case A), or about when money has to be raised, in a market that has fallen (Case B).
 
@@ -477,7 +477,7 @@ Money leaves the same couple in both cases. What separates the two is whether th
 
 Is the case about how much leaves *the pot* each year, whatever prices do? Or is it about the days when things have to be sold, because prices have fallen just when the money is needed?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Something taken out of it every year | A fall in prices it is not ready for |
 |---|---|---|
@@ -487,7 +487,7 @@ Is the case about how much leaves *the pot* each year, whatever prices do? Or is
 
 ### 17. A fall in prices, and a sum that never changed
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 17 of 45*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 17 of 45*
 
 [reviewers only: card kind `exception`, id `exc-fixedsum`]
 
@@ -497,7 +497,7 @@ The last card kept the two answers tidy. Real cases are often less tidy, and a f
 
 > Carl and Una retired with £800,000 and set themselves £48,000 a year to live on, which was 6% of it. Then prices fell by 40% over two years, and their money is now £480,000. They still take out £48,000 a year, which is now 10% of what is left.
 
-Prices have fallen, and Carl and Una are paying their bills by selling investments, which is what a case about **“A fall in prices it is not ready for”** usually looks like. Yet the key’s answer for this case is **“Something taken out of it every year”**.
+Prices have fallen, and Carl and Una are paying their bills by selling investments, which is what a case about **“A fall in prices it is not ready for”** usually looks like. Yet the answer for this case is **“Something taken out of it every year”**.
 
 **You are asked:** This looks like **“A fall in prices it is not ready for”**. Before you read why it is **“Something taken out of it every year”**, tap the words in the case that settle it.
 
@@ -516,17 +516,17 @@ Look at what the case says about the sum. It was set at £48,000 when the money 
 
 The fall in prices explains why the money shrank. But the case is not asking what the fall did. It shows a sum that stays fixed while the money it comes from shrinks. Taking £48,000 a year out of £480,000 would be hard even if prices never fell again. If they came back, the same sum would look smaller, but it would still be the sum that was set for money that no longer exists.
 
-So the case shows two things at once: a fall that has caught the money that pays for their living, and a sum that stays the same every year while the money it comes from shrinks. When a case shows both, the key has to choose one answer, and it chooses the second.
+So the case shows two things at once: a fall that has caught the money that pays for their living, and a sum that stays the same every year while the money it comes from shrinks. When a case shows both, the answer is the second.
 
 **How to tell them apart**
 
 Is the case about how much leaves *the pot* each year, whatever prices do? Or is it about the days when things have to be sold, because prices have fallen just when the money is needed?
 
-When a case shows both **“A fall in prices it is not ready for”** and the same sum taken out every year from a pot that has shrunk, or a sale planned to put the mix back that would bring a tax bill new money could avoid, the key’s answer is **“Something taken out of it every year”**.
+When a case shows both **“A fall in prices it is not ready for”** and the same sum taken out every year from a pot that has shrunk, or a sale planned to put the mix back that would bring a tax bill new money could avoid, the answer is **“Something taken out of it every year”**.
 
-The key’s order is its decision, and in real life the two run into each other: a fall makes a fixed sum worse, and a fixed sum makes a fall worse. The key gives each case one answer, so that two people using it reach the same one and can each say why.
+Which answer wins is a decision, and in real life the two run into each other: a fall makes a fixed sum worse, and a fixed sum makes a fall worse. Each case gets one answer, so that two people using the same questions reach the same one and can each say why.
 
-The key’s sentence above has a second half, about a planned sale to put a split back where the tax on the sale is the problem. That is a second place where the key gives **“Something taken out of it every year”** instead of **“A fall in prices it is not ready for”**. It is not in the case here, and you can leave it until a case shows it.
+The sentence above has a second half, about a planned sale to put a split back where the tax on the sale is the problem. That is a second place where the answer is **“Something taken out of it every year”** instead of **“A fall in prices it is not ready for”**. It is not in the case here, and you can leave it until a case shows it.
 
 The test that settles it is the one from the last card: is the problem how much comes out, or that it had to come out on a bad day? Here it is how much. If the case showed only bills paid in a fall, with a sum that had always been a fair share of the money, the answer would be **“A fall in prices it is not ready for”**.
 
@@ -539,7 +539,7 @@ The test that settles it is the one from the last card: is the problem how much 
 
 ### 18. A demand that someone pay for harm
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 18 of 45*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 18 of 45*
 
 [reviewers only: card kind `term`, id `term-claim`]
 
@@ -560,7 +560,7 @@ This is *a claim*. The thing to notice is the gap: how much could be demanded, a
 
 ### 19. One thing that could take most of what a person has built up, at once
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 19 of 45*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 19 of 45*
 
 [reviewers only: card kind `meet`, id `meet-shock`]
 
@@ -587,11 +587,11 @@ This is different from the last answer. There the harm came from prices falling 
 
 **What you must be able to point to.** One thing that could take most of the pot at once: one company’s shares, one property or one business that is most of it, a claim that could reach everything the person owns, or a loan whose lender could force a sale. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What could lose this money?”**
+**The question:** **“What could lose this money?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“One thing most of it depends on”**
+**Its answer for a case like this one:** **“One thing most of it depends on”**
 
-The key’s answer, and the name of this kind of case, is **“One thing most of it depends on”**. "Depends on" means that if that one thing fails, the money fails with it.
+The answer, and the name of this kind of case, is **“One thing most of it depends on”**. "Depends on" means that if that one thing fails, the money fails with it.
 
 The name does not say that the thing will fail. It says that if it did, most of the money would go with it, and the case is about that.
 
@@ -599,7 +599,7 @@ You may also hear this called “concentration risk”. That means the same thin
 
 ### 20. One thing most of it depends on: the same thing in a different story
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 20 of 45*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 20 of 45*
 
 [reviewers only: card kind `again`, id `again-shock`]
 
@@ -632,7 +632,7 @@ In neither case is anything taken out every year, and no bill falls due on a dat
 
 ### 21. One thing most of it depends on: what it is like
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 21 of 45*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 21 of 45*
 
 [reviewers only: card kind `portrait`, id `portrait-shock`]
 
@@ -665,7 +665,7 @@ In your own life it is the sentence "most of what I have is in..." If you can fi
 
 ### 22. A question about a new case
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 22 of 45*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 22 of 45*
 
 [reviewers only: card kind `check`, id `check-shock`]
 
@@ -681,7 +681,7 @@ The pieces you can tap:
 
 **Shown as soon as you tap**
 
-- If you are right: “Right: ‘The broker’s contract says it can demand the loan back at any time’.” The case shows a lender who could force a sale: “The broker’s contract says it can demand the loan back at any time”. £300,000 borrowed against £500,000 of shares means that a demand for repayment would make Paul sell much of what he owns, whatever he thought of the price that day. The key’s answer for this case is **“One thing most of it depends on”**.
+- If you are right: “Right: ‘The broker’s contract says it can demand the loan back at any time’.” The case shows a lender who could force a sale: “The broker’s contract says it can demand the loan back at any time”. £300,000 borrowed against £500,000 of shares means that a demand for repayment would make Paul sell much of what he owns, whatever he thought of the price that day. The answer for this case is **“One thing most of it depends on”**.
 - If you miss: “The words are ‘The broker’s contract says it can demand the loan back at any time’.” The same reason follows, and then a line about the piece you tapped:
   - “Paul owns shares worth £500,000.”: That is what he has. It tells you how big the money is, not what could take it.
   - “He bought some of them with a £300,000 loan from his broker.”: That is where the loan comes from. A loan alone does not decide it: what matters is whether the lender can force a sale.
@@ -690,7 +690,7 @@ The pieces you can tap:
 
 ### 23. One thing most of it depends on or A fall in prices it is not ready for: telling them apart
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 23 of 45*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 23 of 45*
 
 [reviewers only: card kind `lookalike`, id `look-shock-timing`]
 
@@ -712,9 +712,9 @@ Both of the last two answers can mean losing a large part of everything, and bot
 
 **Why this one and not the other**
 
-In Case A most of Lars’s money, £350,000, is in one company, and one event hit that company: a rival won its biggest contract. Every other price stayed where it was, and Lars still lost 40% of £350,000, which is £140,000. The key’s answer is **“One thing most of it depends on”**.
+In Case A most of Lars’s money, £350,000, is in one company, and one event hit that company: a rival won its biggest contract. Every other price stayed where it was, and Lars still lost 40% of £350,000, which is £140,000. The answer is **“One thing most of it depends on”**.
 
-In Case B nothing is concentrated: his money is in funds that hold thousands of companies, and no single one could hurt him much. What hurts is that the whole market has fallen by 25% and he must pay £120,000 on 1 March. The £120,000 he would pay it from is now worth £90,000, a gap of £30,000. The key’s answer is **“A fall in prices it is not ready for”**.
+In Case B nothing is concentrated: his money is in funds that hold thousands of companies, and no single one could hurt him much. What hurts is that the whole market has fallen by 25% and he must pay £120,000 on 1 March. The £120,000 he would pay it from is now worth £90,000, a gap of £30,000. The answer is **“A fall in prices it is not ready for”**.
 
 The same man with the same £500,000 loses a large amount in both. In Case A it is through one company, whatever the market does. In Case B it is through the whole market, on a day the money is needed.
 
@@ -722,7 +722,7 @@ The same man with the same £500,000 loses a large amount in both. In Case A it 
 
 Would one thing do the damage even if every other price stayed where it is? Or is the damage done by prices falling across the board, on a day when the money is needed?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | One thing most of it depends on | A fall in prices it is not ready for |
 |---|---|---|
@@ -732,7 +732,7 @@ Would one thing do the damage even if every other price stayed where it is? Or i
 
 ### 24. Bills paid in a fall, from one company
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 24 of 45*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 24 of 45*
 
 [reviewers only: card kind `exception`, id `exc-retired`]
 
@@ -742,7 +742,7 @@ The last card showed the two answers apart. In real cases they sometimes arrive 
 
 > Marguerite, 71, retired from a company where she spent thirty years. Of her £600,000, £510,000 is still shares in that company. She sells £2,000 of them each month to live on, and she has no cash set aside. This year the company's price has fallen by 45%.
 
-Marguerite pays her living costs by selling investments, with no cash set aside, in a year when their price has fallen. That is what a case about **“A fall in prices it is not ready for”** looks like. Yet the key’s answer for this case is **“One thing most of it depends on”**.
+Marguerite pays her living costs by selling investments, with no cash set aside, in a year when their price has fallen. That is what a case about **“A fall in prices it is not ready for”** looks like. Yet the answer for this case is **“One thing most of it depends on”**.
 
 **You are asked:** This looks like **“A fall in prices it is not ready for”**. Before you read why it is **“One thing most of it depends on”**, tap the words in the case that settle it.
 
@@ -761,22 +761,22 @@ Count what the case shows. £510,000 out of £600,000 is 85%, all in one company
 
 Suppose she had cash set aside for three years of bills. It would stop the sales at a low price. It would do nothing about the £229,500, nothing about the next fall, and nothing if the company failed. A cure for the fall would leave nearly all of the harm where it was.
 
-So the case shows both: money needed every month, and nearly everything in one company. When a case shows both, the key chooses one answer, and it chooses the second.
+So the case shows both: money needed every month, and nearly everything in one company. When a case shows both, the answer is the second.
 
 **How to tell them apart**
 
 Would one thing do the damage even if every other price stayed where it is? Or is the damage done by prices falling across the board, on a day when the money is needed?
 
-When a case shows both **“A fall in prices it is not ready for”** and one thing that most of the pot depends on, the key’s answer is **“One thing most of it depends on”**.
+When a case shows both **“A fall in prices it is not ready for”** and one thing that most of the pot depends on, the answer is **“One thing most of it depends on”**.
 
-The key chooses this way round because of what each cure can reach. Cash set aside helps on the days money is needed. It does not help money that one company can wipe out. The question to put to a case that shows both is the one from the last card: would one thing do the damage even if every other price stayed where it is?
+The answer goes this way round because of what each cure can reach. Cash set aside helps on the days money is needed. It does not help money that one company can wipe out. The question to put to a case that shows both is the one from the last card: would one thing do the damage even if every other price stayed where it is?
 
 If Marguerite’s money were spread across hundreds of companies and she were selling the same £2,000 a month in the same fall, the answer would be **“A fall in prices it is not ready for”**.
 
 
 ### 25. What happens when the money passes on, or someone else has to act for its owner
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 25 of 45*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 25 of 45*
 
 [reviewers only: card kind `meet`, id `meet-handover`]
 
@@ -803,17 +803,17 @@ This is different from the first answer. In that one, money leaves every year fo
 
 **What you must be able to point to.** A time when the money passes to other people or someone else has to handle it: a death, an illness that stops the owner acting, or gifts to family. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What could lose this money?”**
+**The question:** **“What could lose this money?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“The handover to other people”**
+**Its answer for a case like this one:** **“The handover to other people”**
 
-The key’s answer, and the name of this kind of case, is **“The handover to other people”**. "Other people" means the people who receive the money or act for its owner, and it includes the tax office when it takes its share.
+The answer, and the name of this kind of case, is **“The handover to other people”**. "Other people" means the people who receive the money or act for its owner, and it includes the tax office when it takes its share.
 
 The name does not say that something will go wrong. It says that the case is about the moment when the money changes hands, or someone else has to act for its owner.
 
 ### 26. The handover to other people: the same thing in a different story
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 26 of 45*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 26 of 45*
 
 [reviewers only: card kind `again`, id `again-handover`]
 
@@ -846,7 +846,7 @@ Neither case is about something that comes out every year, a fall in prices, or 
 
 ### 27. The handover to other people: what it is like
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 27 of 45*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 27 of 45*
 
 [reviewers only: card kind `portrait`, id `portrait-handover`]
 
@@ -879,7 +879,7 @@ In your own life it is the question "who gets this if I die tomorrow, and who de
 
 ### 28. A question about a new case
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 28 of 45*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 28 of 45*
 
 [reviewers only: card kind `check`, id `check-handover`]
 
@@ -894,7 +894,7 @@ The pieces you can tap:
 
 **Shown as soon as you tap**
 
-- If you are right: “Right: ‘Two of them have not spoken to each other for six years’.” The case shows a risk in the people who will receive the money: “Two of them have not spoken to each other for six years”. The money is to be shared equally, so two of the three will have to deal with each other over it. The papers are in order, and nothing comes out every year or rests on one thing. The key’s answer for this case is **“The handover to other people”**.
+- If you are right: “Right: ‘Two of them have not spoken to each other for six years’.” The case shows a risk in the people who will receive the money: “Two of them have not spoken to each other for six years”. The money is to be shared equally, so two of the three will have to deal with each other over it. The papers are in order, and nothing comes out every year or rests on one thing. The answer for this case is **“The handover to other people”**.
 - If you miss: “The words are ‘Two of them have not spoken to each other for six years’.” The same reason follows, and then a line about the piece you tapped:
   - “Sunita, 74, has a will that leaves her £700,000 equally to her three children. ”: That is who gets what. It is half of the handover, and the question asks what could go wrong with it.
   - “. Everything in her will is up to date.”: That shows the papers are in order. It does not say what could go wrong, and the words that do are before it.
@@ -902,7 +902,7 @@ The pieces you can tap:
 
 ### 29. The handover to other people or Something taken out of it every year: telling them apart
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 29 of 45*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 29 of 45*
 
 [reviewers only: card kind `lookalike`, id `look-handover-erosion`]
 
@@ -924,9 +924,9 @@ You have now met the two answers in which money leaves the owner for someone els
 
 **Why this one and not the other**
 
-In Case A nothing comes out of Joan’s money while she is alive. The loss comes once, when she dies: the country takes 40% of the £500,000 above its limit, which is £200,000, before her children receive anything. The key’s answer is **“The handover to other people”**.
+In Case A nothing comes out of Joan’s money while she is alive. The loss comes once, when she dies: the country takes 40% of the £500,000 above its limit, which is £200,000, before her children receive anything. The answer is **“The handover to other people”**.
 
-In Case B nothing is said about her death. Every year the firm that runs her fund takes 1.4% of the £1,000,000, which is £14,000, and next year it takes it again. The key’s answer is **“Something taken out of it every year”**.
+In Case B nothing is said about her death. Every year the firm that runs her fund takes 1.4% of the £1,000,000, which is £14,000, and next year it takes it again. The answer is **“Something taken out of it every year”**.
 
 Both cases are about money leaving for someone other than Joan. What separates them is when. £14,000 leaves every year she is alive (Case B). £200,000 leaves once, from what her children would have received, at her death (Case A).
 
@@ -934,7 +934,7 @@ Both cases are about money leaving for someone other than Joan. What separates t
 
 Does it come out every year while the owner is alive? Or does it arise once, at a death, an illness or a gift?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | The handover to other people | Something taken out of it every year |
 |---|---|---|
@@ -950,7 +950,7 @@ Does it come out every year while the owner is alive? Or does it arise once, at 
 
 ### 30. Money put away, with nothing in the case that could lose it
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 30 of 45*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 30 of 45*
 
 [reviewers only: card kind `meet`, id `meet-none`]
 
@@ -972,23 +972,23 @@ Set this case against the four answers you have met. Nothing comes out of Aisha�
 
 What is left is money being kept, with nothing that could lose it. That is a fifth kind of case, and a very ordinary one: a person saving steadily, with nothing in the account that raises a problem.
 
-A key with no place for it would force every case into one of the four. A reader of that key would find a problem in every account of money, and would recommend a cure for it. Cures cost money and effort, and a cure for a problem the case does not have costs both for nothing. So the key has an answer for this case, so that "there is nothing here to name" is something you can say, and say with a reason.
+Questions with no place for it would force every case into one of the four. A reader of those questions would find a problem in every account of money, and would recommend a cure for it. Cures cost money and effort, and a cure for a problem the case does not have costs both for nothing. So there is an answer for this case, so that "there is nothing here to name" is something you can say, and say with a reason.
 
 The answer does not promise that nothing could ever go wrong. It says that this case raises none of the four. The test is the words in the case: can you point to words that raise one of the four? If you can, give that answer. If you cannot, do not invent one.
 
 **What you must be able to point to.** Money being kept, and nothing in the case that could lose it: no charge, tax or spending the case raises, nothing most of it depends on, nothing it has to pay for soon, and no handover in view. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What could lose this money?”**
+**The question:** **“What could lose this money?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“Nothing in the case”**
+**Its answer for a case like this one:** **“Nothing in the case”**
 
-The key’s answer, and the name of this kind of case, is **“Nothing in the case”**. It is not a statement that the money is safe for ever. It says that this case raises nothing that could lose it.
+The answer, and the name of this kind of case, is **“Nothing in the case”**. It is not a statement that the money is safe for ever. It says that this case raises nothing that could lose it.
 
-After this answer the key asks nothing more and gives no finer name. That is a result in its own right: you looked, and there was nothing to name. In this subject, that result means leaving the money alone.
+After this answer nothing more is asked and there is no finer name. That is a result in its own right: you looked, and there was nothing to name. In this subject, that result means leaving the money alone.
 
 ### 31. Nothing in the case: the same thing in a different story
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 31 of 45*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 31 of 45*
 
 [reviewers only: card kind `again`, id `again-none`]
 
@@ -1021,7 +1021,7 @@ The question is the thing to notice. Asking it does not put a problem into the c
 
 ### 32. Nothing in the case: what it is like
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 32 of 45*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 32 of 45*
 
 [reviewers only: card kind `portrait`, id `portrait-none`]
 
@@ -1054,7 +1054,7 @@ In your own life it is the money that no one has given you a reason to worry abo
 
 ### 33. A question about a new case
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 33 of 45*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 33 of 45*
 
 [reviewers only: card kind `check`, id `check-none`]
 
@@ -1069,7 +1069,7 @@ The pieces you can tap:
 
 **Shown as soon as you tap**
 
-- If you are right: “Right: ‘a workplace pension that she will start drawing at 67’.” The case shows money being kept, and when it will be needed: “a workplace pension that she will start drawing at 67”. Nothing comes out of it every year, no one thing is most of it, and nothing is said about a death or a will. The leaflet is a firm offering a service, and it raises nothing about her money. The key’s answer for this case is **“Nothing in the case”**.
+- If you are right: “Right: ‘a workplace pension that she will start drawing at 67’.” The case shows money being kept, and when it will be needed: “a workplace pension that she will start drawing at 67”. Nothing comes out of it every year, no one thing is most of it, and nothing is said about a death or a will. The leaflet is a firm offering a service, and it raises nothing about her money. The answer for this case is **“Nothing in the case”**.
 - If you miss: “The words are ‘a workplace pension that she will start drawing at 67’.” The same reason follows, and then a line about the piece you tapped:
   - “Nia, 52, is a nurse. She has a flat that she owns outright, £35,000 in savings and ”: That tells you what she has. It does not say anything about when she needs it, or what could lose it.
   - “. She has no debts. Last week a leaflet arrived from a firm offering to review her finances for a fee.”: The leaflet is somebody offering a service. Nothing in these words says that her money could be lost.
@@ -1077,7 +1077,7 @@ The pieces you can tap:
 
 ### 34. A wrong idea: you need a special structure to look after money
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 34 of 45*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 34 of 45*
 
 [reviewers only: card kind `refute`, id `refute-offshore`]
 
@@ -1089,16 +1089,16 @@ Tomás read an article about trusts and offshore accounts, and people often go f
 
 **What is right instead**
 
-The key puts its question first, and the question is not "which structure?". It is **“What could lose this money?”** There are five answers. Four of them lead on to a further question, and from there to a cure for that particular way of losing money. The fifth, **“Nothing in the case”**, leads to no cure at all.
+The question to ask first is not "which structure?". It is **“What could lose this money?”** There are five answers. Four of them lead on to a further question, and from there to a cure for that particular way of losing money. The fifth, **“Nothing in the case”**, leads to no cure at all.
 
 A structure of that kind is a cure, and a cure is chosen after you know what it is for. Without an answer to the first question, someone who says "you need this" is offering a cure before a diagnosis. A structure that costs money to set up and money every year to run is also a charge, which is exactly the kind of thing the first answer asks about.
 
-So the way to meet an idea like this is to ask what could be lost that the structure would answer, and to ask for it in numbers: how large, how likely, and what the structure costs each year. If no answer can be found in the words of your own case, then in the key’s words the case is **“Nothing in the case”**, and what you can point to is this: money being kept, and nothing in the case that could lose it: no charge, tax or spending the case raises, nothing most of it depends on, nothing it has to pay for soon, and no handover in view.
+So the way to meet an idea like this is to ask what could be lost that the structure would answer, and to ask for it in numbers: how large, how likely, and what the structure costs each year. If no answer can be found in the words of your own case, then the case is **“Nothing in the case”**, and what you can point to is this: money being kept, and nothing in the case that could lose it: no charge, tax or spending the case raises, nothing most of it depends on, nothing it has to pay for soon, and no handover in view.
 
 
 ### 35. Nothing in the case or A fall in prices it is not ready for: telling them apart
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 35 of 45*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 35 of 45*
 
 [reviewers only: card kind `lookalike`, id `look-none-timing`]
 
@@ -1120,9 +1120,9 @@ You have met the answer for a case in which nothing could lose the money, and th
 
 **Why this one and not the other**
 
-In Case A prices have fallen by 20%, and Ines has noticed. But she will not need the £30,000 for twenty-five years, and she is selling nothing. A fall only does harm if something has to be sold or paid on the day, and nothing does. There are twenty-five years for prices to come back. The key’s answer is **“Nothing in the case”**.
+In Case A prices have fallen by 20%, and Ines has noticed. But she will not need the £30,000 for twenty-five years, and she is selling nothing. A fall only does harm if something has to be sold or paid on the day, and nothing does. There are twenty-five years for prices to come back. The answer is **“Nothing in the case”**.
 
-In Case B prices have fallen by the same fifth, but Ines needs £30,000 on 1 June, four months from now, and the money is in funds that hold shares. After the fall her £30,000 is £24,000, which is £6,000 short of the deposit, and four months is not long for prices to recover. The key’s answer is **“A fall in prices it is not ready for”**.
+In Case B prices have fallen by the same fifth, but Ines needs £30,000 on 1 June, four months from now, and the money is in funds that hold shares. After the fall her £30,000 is £24,000, which is £6,000 short of the deposit, and four months is not long for prices to recover. The answer is **“A fall in prices it is not ready for”**.
 
 The fall is the same in both cases, and so is the person. What separates them is whether money is needed soon, and so whether the fall catches anything. A fall that catches nothing raises nothing.
 
@@ -1130,7 +1130,7 @@ The fall is the same in both cases, and so is the person. What separates them is
 
 When is the money needed? Does the case show living costs, a bill on a date, or a mix that has moved, that a fall would catch? Or is nothing needed from it for years?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Nothing in the case | A fall in prices it is not ready for |
 |---|---|---|
@@ -1140,7 +1140,7 @@ When is the money needed? Does the case show living costs, a bill on a date, or 
 
 ### 36. Nothing in the case or Something taken out of it every year: telling them apart
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 36 of 45*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 36 of 45*
 
 [reviewers only: card kind `lookalike`, id `look-none-erosion`]
 
@@ -1162,17 +1162,17 @@ The next pair is the fifth answer and the first. Both can be about money kept in
 
 **Why this one and not the other**
 
-In Case A the case says nothing about a charge, a tax bill or a sum taken out. It tells you only that Mei has a pension, that she will not touch it until she is 67, and that she files her statement unread. The statement may well contain a charge, but the case does not tell you so, and there are no words to point to. The key’s answer is **“Nothing in the case”**.
+In Case A the case says nothing about a charge, a tax bill or a sum taken out. It tells you only that Mei has a pension, that she will not touch it until she is 67, and that she files her statement unread. The statement may well contain a charge, but the case does not tell you so, and there are no words to point to. The answer is **“Nothing in the case”**.
 
-In Case B the same woman reads the same statement and finds that the fund takes 1.6% of her money every year. Now there are words to point to, and they are about something that comes out every year. The key’s answer is **“Something taken out of it every year”**.
+In Case B the same woman reads the same statement and finds that the fund takes 1.6% of her money every year. Now there are words to point to, and they are about something that comes out every year. The answer is **“Something taken out of it every year”**.
 
-Nothing about Mei or her pension is different. What is different is what the case says. The key answers for the case in front of it, and it does not invent what an unread statement might hold.
+Nothing about Mei or her pension is different. What is different is what the case says. The answer is for the case in front of you, and it does not invent what an unread statement might hold.
 
 **How to tell them apart**
 
 Does the case say anything about a charge, a tax bill or a sum taken out? If you cannot point to the words, it does not.
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Nothing in the case | Something taken out of it every year |
 |---|---|---|
@@ -1182,7 +1182,7 @@ Does the case say anything about a charge, a tax bill or a sum taken out? If you
 
 ### 37. Nothing in the case or The handover to other people: telling them apart
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 37 of 45*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 37 of 45*
 
 [reviewers only: card kind `lookalike`, id `look-none-handover`]
 
@@ -1204,9 +1204,9 @@ The next pair is the one where a sound case is most easily mistaken for nothing 
 
 **Why this one and not the other**
 
-In Case A everything is in order: the wills and the forms are up to date, and everything they own is far below the tax-free limit. There is nothing wrong with it. But the case is about who gets the money when Priya dies, and that is what the key’s question asks about, so the key’s answer is **“The handover to other people”**. A case in which a handover has been dealt with is still a case about the handover.
+In Case A everything is in order: the wills and the forms are up to date, and everything they own is far below the tax-free limit. There is nothing wrong with it. But the case is about who gets the money when Priya dies, and that is what the question asks about, so the answer is **“The handover to other people”**. A case in which a handover has been dealt with is still a case about the handover.
 
-In Case B nothing is said about a death, a will, a form or an illness. The case shows money being put away for decades and nothing else. The key’s answer is **“Nothing in the case”**.
+In Case B nothing is said about a death, a will, a form or an illness. The case shows money being put away for decades and nothing else. The answer is **“Nothing in the case”**.
 
 This is the place where a sound case is most easily mistaken for the fifth answer. Being in good order does not move a case to **“Nothing in the case”**. That answer is for a case that raises none of the four. A case that raises one, and shows it already looked after, keeps the answer for the one it raises.
 
@@ -1214,7 +1214,7 @@ This is the place where a sound case is most easily mistaken for the fifth answe
 
 Does the case say anything about a death, a will, a form, an illness or a gift? If you cannot point to the words, it does not.
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Nothing in the case | The handover to other people |
 |---|---|---|
@@ -1224,7 +1224,7 @@ Does the case say anything about a death, a will, a form, an illness or a gift? 
 
 ### 38. Nothing in the case or One thing most of it depends on: telling them apart
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 38 of 45*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 38 of 45*
 
 [reviewers only: card kind `lookalike`, id `look-none-shock`]
 
@@ -1246,9 +1246,9 @@ The last pair is the fifth answer and the third. In both the person may own shar
 
 **Why this one and not the other**
 
-In Case A the money is in three places, none of them more than 45%: savings, a pension held in funds spread over thousands of companies, and the flat he lives in. No loan or claim is in the case. If any one of them fell, the other two would still be there. The key’s answer is **“Nothing in the case”**.
+In Case A the money is in three places, none of them more than 45%: savings, a pension held in funds spread over thousands of companies, and the flat he lives in. No loan or claim is in the case. If any one of them fell, the other two would still be there. The answer is **“Nothing in the case”**.
 
-In Case B £400,000 of his £500,000 is one flat. If that flat lost a quarter of its value, he would lose £100,000 on the flat alone, a fifth of everything he has, and nothing else he owns could take its place. The key’s answer is **“One thing most of it depends on”**.
+In Case B £400,000 of his £500,000 is one flat. If that flat lost a quarter of its value, he would lose £100,000 on the flat alone, a fifth of everything he has, and nothing else he owns could take its place. The answer is **“One thing most of it depends on”**.
 
 Both cases are about a man with property and about £500,000. What separates them is whether one thing is most of it. Spread out, the money is a case with nothing to name. Concentrated in one place, it is not.
 
@@ -1256,7 +1256,7 @@ Both cases are about a man with property and about £500,000. What separates the
 
 Is there one company, property, business, claim or loan that is most of the case? Or is it spread, with nothing in it that could reach everything?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Nothing in the case | One thing most of it depends on |
 |---|---|---|
@@ -1264,25 +1264,25 @@ Is there one company, property, business, claim or loan that is most of the case
 | What you must be able to point to | Money being kept, and nothing in the case that could lose it: no charge, tax or spending the case raises, nothing most of it depends on, nothing it has to pay for soon, and no handover in view | One thing that could take most of the pot at once: one company’s shares, one property or one business that is most of it, a claim that could reach everything the person owns, or a loan whose lender could force a sale |
 
 
-*End of part 3. You can stop here; your place is kept. Next: part 4, The key’s first question, two whole cases, then the drill.*
+*End of part 3. You can stop here; your place is kept. Next: part 4, The first question, two whole cases, then the drill.*
 
 ---
 
-## Part 4 of 4: The key’s first question, two whole cases, then the drill
+## Part 4 of 4: The first question, two whole cases, then the drill
 
 ### 39. The question you have been answering all along
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 39 of 45*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 39 of 45*
 
 [reviewers only: card kind `question`, id `q-gate`]
 
-Since the pension fund you have seen the key’s question at the foot of each new answer, with one answer under it. This card puts the question and its five answers in one place, as the key shows them, and says why the key asks it before anything else.
+Since the pension fund you have seen the question at the foot of each new answer, with one answer under it. This card puts the question and its five answers in one place, and says why it is asked before anything else.
 
-**The key asks:** **“What could lose this money?”**
+**The question:** **“What could lose this money?”**
 
 **What it is for.** Sorts the four ways money that has been built up can be lost (a little every year, all at once through one thing, in a fall in prices it is not ready for, and when it is handed over) from the case in which nothing could lose it.
 
-**Its answers, exactly as the key shows them**
+**Its answers**
 
 In this unit each answer is itself the name of a kind, and so rules out the other four.
 
@@ -1305,11 +1305,11 @@ A case can only be answered on what it is made of. If you take a yearly charge f
 
 That is why this question comes first, before any finer name, and why every case in this subject starts with it. In this subject it also comes before any cure. A cure answers one particular way of losing money, and until you know which way you are looking at, you have nothing for the cure to answer.
 
-In this unit it is the only question, so its answer is the name. In the rest of the subject, each of the first four answers is followed by one more question, which leads to a finer name and says what to do. The fifth answer is followed by nothing. The answers you give on the way to a name are called your route: this first answer, and then the answer to the next question. Once a route has two answers, two things are marked separately: the name you give a case, and your route to it. A right name reached by a wrong answer to this first question counts as a miss, which is why the first question gets a whole unit of practice.
+In this unit it is the only question, so its answer is the name. In the rest of the subject, each of the first four answers is followed by one more question, which leads to a finer name and says what to do. The fifth answer is followed by nothing. The answers you give on the way to a name are kept: this first answer, and then the answer to the next question. Once there are two answers, two things are marked separately: the name you give a case, and your answers on the way to it. A right name reached by a wrong answer to this first question counts as a miss, which is why the first question gets a whole unit of practice.
 
 **How to answer it from a case**
 
-Read the whole case before you answer, the last sentence included. The last sentence is often where the day is, or where the one thing that matters is. Then look in the words for each of the four things the key asks about, one at a time, and ask whether you can point to the words that show it.
+Read the whole case before you answer, the last sentence included. The last sentence is often where the day is, or where the one thing that matters is. Then look in the words for each of the four things the question asks about, one at a time, and ask whether you can point to the words that show it.
 
 **“Something taken out of it every year”**: something taken out of the pot every year: a charge for funds or advice, tax on the investments, or a sum taken out to spend.
 
@@ -1319,16 +1319,16 @@ Read the whole case before you answer, the last sentence included. The last sent
 
 **“The handover to other people”**: a time when the money passes to other people or someone else has to handle it: a death, an illness that stops the owner acting, or gifts to family.
 
-If you can point to the words for exactly one, that is the answer. If you can point to words for two, the key chooses for you, and its two rules are below. If you can point to none, the answer is **“Nothing in the case”**: money being kept, and nothing in the case that could lose it: no charge, tax or spending the case raises, nothing most of it depends on, nothing it has to pay for soon, and no handover in view. Then you stop, and the case is finished.
+If you can point to the words for exactly one, that is the answer. If you can point to words for two, a rule says which answer wins, and the two rules are below. If you can point to none, the answer is **“Nothing in the case”**: money being kept, and nothing in the case that could lose it: no charge, tax or spending the case raises, nothing most of it depends on, nothing it has to pay for soon, and no handover in view. Then you stop, and the case is finished.
 
 Whichever answer you give, put your finger on the words that show it: the sum that comes out and how often, the day and what the money is held in, the one thing and how much of everything it is, the death or the paper, or the words that tie the case to money simply being kept. If you cannot point, you do not have an answer yet.
 
 **When two answers both seem to fit**
 
-Some cases show two of the five at once. You have met two. In Marguerite’s case, bills paid in a fall were made out of one company, and the key’s answer was **“One thing most of it depends on”**. In Carl and Una’s case, a fall had made a fixed yearly sum too big, and the key’s answer was **“Something taken out of it every year”**. In both, **“A fall in prices it is not ready for”** gave way. The key gives every case one answer, and that is how it chooses. The key has one more case of the second kind: a planned sale to put a split back, where the tax on the sale is the problem and new money paid in could do the same job. It is not in this unit’s cases, and it is enough for now to know that the key has it. Each pair below has been set side by side earlier in this unit, and each has one question that separates it.
+Some cases show two of the five at once. You have met two. In Marguerite’s case, bills paid in a fall were made out of one company, and the answer was **“One thing most of it depends on”**. In Carl and Una’s case, a fall had made a fixed yearly sum too big, and the answer was **“Something taken out of it every year”**. In both, **“A fall in prices it is not ready for”** gave way. Every case gets one answer, and that is how it is chosen. There is one more case of the second kind: a planned sale to put a split back, where the tax on the sale is the problem and new money paid in could do the same job. It is not in this unit’s cases, and it is enough for now to know that it exists. Each pair below has been set side by side earlier in this unit, and each has one question that separates it.
 
-- Something taken out of it every year or A fall in prices it is not ready for: Is the case about how much leaves *the pot* each year, whatever prices do? Or is it about the days when things have to be sold, because prices have fallen just when the money is needed? When a case shows both **“A fall in prices it is not ready for”** and the same sum taken out every year from a pot that has shrunk, or a sale planned to put the mix back that would bring a tax bill new money could avoid, the key’s answer is **“Something taken out of it every year”**.
-- One thing most of it depends on or A fall in prices it is not ready for: Would one thing do the damage even if every other price stayed where it is? Or is the damage done by prices falling across the board, on a day when the money is needed? When a case shows both **“A fall in prices it is not ready for”** and one thing that most of the pot depends on, the key’s answer is **“One thing most of it depends on”**.
+- Something taken out of it every year or A fall in prices it is not ready for: Is the case about how much leaves *the pot* each year, whatever prices do? Or is it about the days when things have to be sold, because prices have fallen just when the money is needed? When a case shows both **“A fall in prices it is not ready for”** and the same sum taken out every year from a pot that has shrunk, or a sale planned to put the mix back that would bring a tax bill new money could avoid, the answer is **“Something taken out of it every year”**.
+- One thing most of it depends on or A fall in prices it is not ready for: Would one thing do the damage even if every other price stayed where it is? Or is the damage done by prices falling across the board, on a day when the money is needed? When a case shows both **“A fall in prices it is not ready for”** and one thing that most of the pot depends on, the answer is **“One thing most of it depends on”**.
 - Nothing in the case or A fall in prices it is not ready for: When is the money needed? Does the case show living costs, a bill on a date, or a mix that has moved, that a fall would catch? Or is nothing needed from it for years?
 - Nothing in the case or Something taken out of it every year: Does the case say anything about a charge, a tax bill or a sum taken out? If you cannot point to the words, it does not.
 - The handover to other people or Something taken out of it every year: Does it come out every year while the owner is alive? Or does it arise once, at a death, an illness or a gift?
@@ -1338,13 +1338,13 @@ Some cases show two of the five at once. You have met two. In Marguerite’s cas
 
 ### 40. A question about a new case
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 40 of 45*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 40 of 45*
 
 [reviewers only: card kind `check`, id `check-gate`]
 
 > Fatima, 58, was sold an investment by an adviser. Each year the product takes 2.1% of her £150,000, £3,150, and the adviser is paid a share of it.
 
-**The key asks:** **“What could lose this money?”**
+**The question:** **“What could lose this money?”**
 
 - Something taken out of it every year
 - One thing most of it depends on
@@ -1365,11 +1365,11 @@ Some cases show two of the five at once. You have met two. In Marguerite’s cas
 
 ### 41. A whole case, from the question to the answer
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 41 of 45*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 41 of 45*
 
 [reviewers only: card kind `worked`, id `worked-employer`]
 
-You have the five answers and the key’s question about them. Before the drill, watch two cases being run from the top. You are not asked anything until the end of each.
+You have the five answers and the question about them. Before the drill, watch two cases being run from the top. You are not asked anything until the end of each.
 
 *Beth and the company price*
 
@@ -1405,17 +1405,17 @@ In this unit the answer is the name. Ruled out: **“Something taken out of it e
 
 For **“A fall in prices it is not ready for”** you must be able to point to this: shares or funds whose prices can fall, and something in the case that a fall would catch out: living costs paid from them, a bill on a date, or a mix that has moved from its plan. Beth’s case has a fall, and her money is in shares, but nothing in it catches her out: she does not need the money for twenty years, no bill is due, and no plan has drifted. Her case is about what one company can do to the money, whatever the rest of the market is doing.
 
-It is the question from Lars. Would one thing do the damage even if every other price stayed where it is? Or is the damage done by prices falling across the board, on a day when the money is needed? Here one thing could do the damage while every other price stayed where it is, so the key’s answer is **“One thing most of it depends on”**.
+It is the question from Lars. Would one thing do the damage even if every other price stayed where it is? Or is the damage done by prices falling across the board, on a day when the money is needed? Here one thing could do the damage while every other price stayed where it is, so the answer is **“One thing most of it depends on”**.
 
 **Does it look like a case you know?**
 
-The key has given its answer. Now take a second look of a different kind: does this case look like one you know? It should bring back Karim. There too most of the money, 70%, was shares in the company where he worked.
+You have the answer. Now take a second look of a different kind: does this case look like one you know? It should bring back Karim. There too most of the money, 70%, was shares in the company where he worked.
 
-Here the key and the likeness agree, so the answer stands. The key’s question comes first, because it makes you point at words in the case. The likeness is only a second look. When the two disagree, do not pick the one you prefer. Go back to the key’s question and find the words in the case that answer it. The second whole case shows how.
+Here the answer and the likeness agree, so it stands. The question comes first, because it makes you point at words in the case. The likeness is only a second look. When the two disagree, do not pick the one you prefer. Go back to the question and find the words in the case that answer it. The second whole case shows how.
 
 ### 42. A second whole case, where the loudest thing points the wrong way
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 42 of 45*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 42 of 45*
 
 [reviewers only: card kind `worked`, id `worked-reunion`]
 
@@ -1455,13 +1455,13 @@ In this unit the answer is the name. Ruled out: **“Something taken out of it e
 
 For **“A fall in prices it is not ready for”** you must be able to point to this: shares or funds whose prices can fall, and something in the case that a fall would catch out: living costs paid from them, a bill on a date, or a mix that has moved from its plan. The fall is there, and so are the shares, but nothing is waiting for the money: no bills are paid from it, no bill falls due, and no plan has drifted. A fall that catches nothing raises nothing.
 
-It is the question from Ines. When is the money needed? Does the case show living costs, a bill on a date, or a mix that has moved, that a fall would catch? Or is nothing needed from it for years? Here nothing is needed from the pension for seven years, so the key’s answer is **“Nothing in the case”**. Whether Ronan should sell is a different question, and the case gives him no reason to say yes.
+It is the question from Ines. When is the money needed? Does the case show living costs, a bill on a date, or a mix that has moved, that a fall would catch? Or is nothing needed from it for years? Here nothing is needed from the pension for seven years, so the answer is **“Nothing in the case”**. Whether Ronan should sell is a different question, and the case gives him no reason to say yes.
 
 **Does it look like a case you know?**
 
-Now the second look: does this case look like one you know? A fall of 30% and a man worried about his money may bring back Pete and Jean first, and Pete and Jean’s case was **“A fall in prices it is not ready for”**. So here the likeness and the key seem to disagree.
+Now the second look: does this case look like one you know? A fall of 30% and a man worried about his money may bring back Pete and Jean first, and Pete and Jean’s case was **“A fall in prices it is not ready for”**. So here the likeness and the answer seem to disagree.
 
-When that happens, go back to the key’s question and find the words in the case that answer it. They are “will keep working until he is 70” and “He draws nothing from the pension, and his pay covers all his bills”. Pete and Jean’s case had nothing like them: they sold shares every month to pay their bills, with nothing set aside. Ronan’s case has the opposite. The case this one really looks like is Aisha’s, who would not touch her pension for thirty years, and the key’s answer stands.
+When that happens, go back to the question and find the words in the case that answer it. They are “will keep working until he is 70” and “He draws nothing from the pension, and his pay covers all his bills”. Pete and Jean’s case had nothing like them: they sold shares every month to pay their bills, with nothing set aside. Ronan’s case has the opposite. The case this one really looks like is Aisha’s, who would not touch her pension for thirty years, and the answer stands.
 
 ### The drill
 
@@ -1471,7 +1471,7 @@ Some of these cases show nothing that could lose the money, and some show a thin
 
 #### Stage 1 of 3. One question at a time.
 
-The question is shown with all five of its answers from the key, in the key’s order.
+The question is shown with all five of its answers, in order.
 
 **Drill item 1 of 41**
 
@@ -1490,10 +1490,10 @@ The question is shown with all five of its answers from the key, in the key’s 
 - If you are right: “Right: **Something taken out of it every year.**” Two charges come out of her money every year: “Each year her adviser's firm takes 1.3% of it, £3,250” and “the funds she holds take another 0.9%”. Nothing is said about a fall in prices, a sale or a death.
   - Why not **“A fall in prices it is not ready for”**: The case does not say that prices fell or that anything has to be sold. It is about sums that come out every year, whatever prices do.
 - If you miss: “The answer is **Something taken out of it every year.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **One thing most of it depends on**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose **One thing most of it depends on**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A fall in prices it is not ready for**: the “why not” line above.
-  - If you chose **The handover to other people**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **Nothing in the case**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose **The handover to other people**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **Nothing in the case**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 2 of 41**
@@ -1514,9 +1514,9 @@ The question is shown with all five of its answers from the key, in the key’s 
   - Why not **“Something taken out of it every year”**: The statement may well show a charge, but the case does not say so, and there are no words to point to.
 - If you miss: “The answer is **Nothing in the case.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **Something taken out of it every year**: the “why not” line above.
-  - If you chose **One thing most of it depends on**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **A fall in prices it is not ready for**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **The handover to other people**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose **One thing most of it depends on**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **A fall in prices it is not ready for**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **The handover to other people**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 3 of 41**
@@ -1537,9 +1537,9 @@ The question is shown with all five of its answers from the key, in the key’s 
   - Why not **“Something taken out of it every year”**: The case does not say that the sum is too big for her money, or that it was fixed when her money was bigger. It says that prices fell while she must keep selling.
 - If you miss: “The answer is **A fall in prices it is not ready for.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **Something taken out of it every year**: the “why not” line above.
-  - If you chose **One thing most of it depends on**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **The handover to other people**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **Nothing in the case**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose **One thing most of it depends on**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **The handover to other people**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **Nothing in the case**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 4 of 41**
@@ -1559,10 +1559,10 @@ The question is shown with all five of its answers from the key, in the key’s 
 - If you are right: “Right: **One thing most of it depends on.**” One thing is most of what he has: “£560,000 of it is still shares in the buyer's company”. £560,000 out of £700,000 is 80%, and the price of *a share* in one company can move a long way in either direction.
   - Why not **“A fall in prices it is not ready for”**: No fall in prices and no bill on a date are in the case. What it raises is that most of what he has rests on one company.
 - If you miss: “The answer is **One thing most of it depends on.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **Something taken out of it every year**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose **Something taken out of it every year**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A fall in prices it is not ready for**: the “why not” line above.
-  - If you chose **The handover to other people**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **Nothing in the case**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose **The handover to other people**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **Nothing in the case**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 5 of 41**
@@ -1583,9 +1583,9 @@ The question is shown with all five of its answers from the key, in the key’s 
   - Why not **“Something taken out of it every year”**: Nothing comes out of his money every year in the case. What it raises is who gets the money, once, when he dies.
 - If you miss: “The answer is **The handover to other people.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **Something taken out of it every year**: the “why not” line above.
-  - If you chose **One thing most of it depends on**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **A fall in prices it is not ready for**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **Nothing in the case**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose **One thing most of it depends on**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **A fall in prices it is not ready for**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **Nothing in the case**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 6 of 41**
@@ -1605,9 +1605,9 @@ The question is shown with all five of its answers from the key, in the key’s 
 - If you are right: “Right: **Nothing in the case.**” The case shows money being kept, and when it will be needed: “She has a steady job and no plans to stop work for another eleven years”. Nothing comes out of it, rests on one thing, falls due on a date or changes hands. A neighbour’s advice is not a reason in the case.
   - Why not **“The handover to other people”**: The case is not about a will, a form, a gift or a death. Owning a house outright does not raise a handover by itself.
 - If you miss: “The answer is **Nothing in the case.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **Something taken out of it every year**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **One thing most of it depends on**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **A fall in prices it is not ready for**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose **Something taken out of it every year**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **One thing most of it depends on**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **A fall in prices it is not ready for**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **The handover to other people**: the “why not” line above.
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
@@ -1628,9 +1628,9 @@ The question is shown with all five of its answers from the key, in the key’s 
 - If you are right: “Right: **Something taken out of it every year.**” A tax bill comes out of the money every year: “every year she pays £1,080 tax on that interest”. £1,080 is 40% of the £2,700 the fund pays out.
   - Why not **“Nothing in the case”**: A case with nothing to name raises no charge, tax or sum spent. This one names a tax bill and says how much it is.
 - If you miss: “The answer is **Something taken out of it every year.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **One thing most of it depends on**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **A fall in prices it is not ready for**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **The handover to other people**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose **One thing most of it depends on**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **A fall in prices it is not ready for**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **The handover to other people**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Nothing in the case**: the “why not” line above.
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
@@ -1652,9 +1652,9 @@ The question is shown with all five of its answers from the key, in the key’s 
   - Why not **“Something taken out of it every year”**: The fees are money going out, but the case is about the day they fall due and what the money for them is held in, not about a sum that comes out whatever prices do.
 - If you miss: “The answer is **A fall in prices it is not ready for.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **Something taken out of it every year**: the “why not” line above.
-  - If you chose **One thing most of it depends on**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **The handover to other people**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **Nothing in the case**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose **One thing most of it depends on**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **The handover to other people**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **Nothing in the case**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 9 of 41**
@@ -1669,7 +1669,7 @@ The question is shown with all five of its answers from the key, in the key’s 
 
 **Shown as soon as you answer**
 
-- The answer is: “Is the case about how much leaves *the pot* each year, whatever prices do? Or is it about the days when things have to be sold, because prices have fallen just when the money is needed?” In both, money leaves *the pot* because of how the person pays for their life, and a fall in prices can be somewhere in the story. **“Something taken out of it every year”** is about what leaves every year whatever prices do: a charge, a tax bill, or a sum spent. **“A fall in prices it is not ready for”** is about the day things have to be sold: prices have fallen, or could fall, just when the money is needed. When a case shows both **“A fall in prices it is not ready for”** and the same sum taken out every year from a pot that has shrunk, or a sale planned to put the mix back that would bring a tax bill new money could avoid, the key’s answer is **“Something taken out of it every year”**.
+- The answer is: “Is the case about how much leaves *the pot* each year, whatever prices do? Or is it about the days when things have to be sold, because prices have fallen just when the money is needed?” In both, money leaves *the pot* because of how the person pays for their life, and a fall in prices can be somewhere in the story. **“Something taken out of it every year”** is about what leaves every year whatever prices do: a charge, a tax bill, or a sum spent. **“A fall in prices it is not ready for”** is about the day things have to be sold: prices have fallen, or could fall, just when the money is needed. When a case shows both **“A fall in prices it is not ready for”** and the same sum taken out every year from a pot that has shrunk, or a sale planned to put the mix back that would bring a tax bill new money could avoid, the answer is **“Something taken out of it every year”**.
 - If you chose “Would one thing do the damage even if every other price stayed where it is? Or is the damage done by prices falling across the board, on a day when the money is needed?”: that question separates **“One thing most of it depends on”** and **“A fall in prices it is not ready for”**.
 - If you chose “When is the money needed? Does the case show living costs, a bill on a date, or a mix that has moved, that a fall would catch? Or is nothing needed from it for years?”: that question separates **“Nothing in the case”** and **“A fall in prices it is not ready for”**.
 - If you chose “Does the case say anything about a charge, a tax bill or a sum taken out? If you cannot point to the words, it does not.”: that question separates **“Nothing in the case”** and **“Something taken out of it every year”**.
@@ -1687,7 +1687,7 @@ The question is shown with all five of its answers from the key, in the key’s 
 
 **Shown as soon as you answer**
 
-- The answer is: “Would one thing do the damage even if every other price stayed where it is? Or is the damage done by prices falling across the board, on a day when the money is needed?” In both, a fall in prices is part of the story, and the person could lose a large part of what they have. In **“One thing most of it depends on”** the harm comes through one company, one property, one business, one demand in a lawsuit or one loan, and could happen whatever the rest of the market does. In **“A fall in prices it is not ready for”** the harm comes from prices falling in general, on a day when the money is needed or the split has moved. When a case shows both **“A fall in prices it is not ready for”** and one thing that most of the pot depends on, the key’s answer is **“One thing most of it depends on”**.
+- The answer is: “Would one thing do the damage even if every other price stayed where it is? Or is the damage done by prices falling across the board, on a day when the money is needed?” In both, a fall in prices is part of the story, and the person could lose a large part of what they have. In **“One thing most of it depends on”** the harm comes through one company, one property, one business, one demand in a lawsuit or one loan, and could happen whatever the rest of the market does. In **“A fall in prices it is not ready for”** the harm comes from prices falling in general, on a day when the money is needed or the split has moved. When a case shows both **“A fall in prices it is not ready for”** and one thing that most of the pot depends on, the answer is **“One thing most of it depends on”**.
 - If you chose “Is the case about how much leaves *the pot* each year, whatever prices do? Or is it about the days when things have to be sold, because prices have fallen just when the money is needed?”: that question separates **“Something taken out of it every year”** and **“A fall in prices it is not ready for”**.
 - If you chose “When is the money needed? Does the case show living costs, a bill on a date, or a mix that has moved, that a fall would catch? Or is nothing needed from it for years?”: that question separates **“Nothing in the case”** and **“A fall in prices it is not ready for”**.
 - If you chose “Is there one company, property, business, claim or loan that is most of the case? Or is it spread, with nothing in it that could reach everything?”: that question separates **“Nothing in the case”** and **“One thing most of it depends on”**.
@@ -1885,9 +1885,9 @@ The question is shown with all five of its answers from the key, in the key’s 
 - If you chose "I have no idea who the pension form names.": that belongs to **“The handover to other people”**.
 - Taught on: “Nothing in the case: what it is like” (one tap opens the card).
 
-#### Stage 2 of 3. No help. Whole cases, mixed together, and the later ones have a story that points the wrong way. In this unit the key has one question, and its answer is the name.
+#### Stage 2 of 3. No help. Whole cases, mixed together, and the later ones have a story that points the wrong way. In this unit there is one question, and its answer is the name.
 
-The question is shown with all five of its answers from the key, in the key’s order.
+The question is shown with all five of its answers, in order.
 
 **Drill item 21 of 41**
 
@@ -1906,10 +1906,10 @@ The question is shown with all five of its answers from the key, in the key’s 
 - If you are right: “Right: **Something taken out of it every year.**” Two charges come out of the money every year and are added together: “The funds in it cost 1.1% a year and his adviser takes a further 0.8%, which together come to £6,080 every year”. The case does not say that prices fell or that anything is due on a date.
   - Why not **“A fall in prices it is not ready for”**: The case does not say that prices have fallen, or that money is needed on a date. The sums come out every year, whatever prices do.
 - If you miss: “The answer is **Something taken out of it every year.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **One thing most of it depends on**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose **One thing most of it depends on**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A fall in prices it is not ready for**: the “why not” line above. Then the lines from the card that compared the two: In both, money leaves *the pot* because of how the person pays for their life, and a fall in prices can be somewhere in the story. **“Something taken out of it every year”** is about what leaves every year whatever prices do: a charge, a tax bill, or a sum spent. **“A fall in prices it is not ready for”** is about the day things have to be sold: prices have fallen, or could fall, just when the money is needed. Is the case about how much leaves *the pot* each year, whatever prices do? Or is it about the days when things have to be sold, because prices have fallen just when the money is needed?
-  - If you chose **The handover to other people**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, money leaves the owner’s hands for someone else: a firm or the tax office in one, family in the other. In **“Something taken out of it every year”** something leaves every year, for as long as the money is kept. In **“The handover to other people”** what is at stake comes once, when the owner dies or can no longer act, and it depends on who gets the money and what is taken first. Does it come out every year while the owner is alive? Or does it arise once, at a death, an illness or a gift?
-  - If you chose **Nothing in the case**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, money is being kept in investments over many years, and the person may have no complaint. In **“Something taken out of it every year”** the case raises a charge, a tax bill or a sum being spent. In **“Nothing in the case”** it raises none of them: nothing is said about anything that comes out. Does the case say anything about a charge, a tax bill or a sum taken out? If you cannot point to the words, it does not.
+  - If you chose **The handover to other people**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, money leaves the owner’s hands for someone else: a firm or the tax office in one, family in the other. In **“Something taken out of it every year”** something leaves every year, for as long as the money is kept. In **“The handover to other people”** what is at stake comes once, when the owner dies or can no longer act, and it depends on who gets the money and what is taken first. Does it come out every year while the owner is alive? Or does it arise once, at a death, an illness or a gift?
+  - If you chose **Nothing in the case**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, money is being kept in investments over many years, and the person may have no complaint. In **“Something taken out of it every year”** the case raises a charge, a tax bill or a sum being spent. In **“Nothing in the case”** it raises none of them: nothing is said about anything that comes out. Does the case say anything about a charge, a tax bill or a sum taken out? If you cannot point to the words, it does not.
 - What would make it a different name: If the case showed instead that Imran must pay £60,000 for a house in three months, from money held in the funds, it would be **“A fall in prices it is not ready for”**.
 - Taught on: “Small sums going out of what a person has built up, every year” (one tap opens the card).
 
@@ -1930,9 +1930,9 @@ The question is shown with all five of its answers from the key, in the key’s 
 - If you are right: “Right: **Nothing in the case.**” The case shows money being put away for a long time: “does not expect to use for twenty years” and “owns her flat outright”. Nothing in it comes out of her money, rests on one thing, falls due or changes hands. Her brother’s question raises no reason of its own.
   - Why not **“The handover to other people”**: Owning a flat outright does not raise a handover. The case is not about a will, a form, a gift or a death.
 - If you miss: “The answer is **Nothing in the case.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **Something taken out of it every year**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, money is being kept in investments over many years, and the person may have no complaint. In **“Something taken out of it every year”** the case raises a charge, a tax bill or a sum being spent. In **“Nothing in the case”** it raises none of them: nothing is said about anything that comes out. Does the case say anything about a charge, a tax bill or a sum taken out? If you cannot point to the words, it does not.
-  - If you chose **One thing most of it depends on**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, the person may hold shares or property, and may feel well off. **“One thing most of it depends on”** shows one thing that is most of what the person has, or *a claim* or a loan that could reach all of it. **“Nothing in the case”** shows nothing of the kind: what the person has is spread out, and no claim or loan is in the case. Is there one company, property, business, claim or loan that is most of the case? Or is it spread, with nothing in it that could reach everything?
-  - If you chose **A fall in prices it is not ready for**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, the money is invested, and prices may fall. In **“Nothing in the case”** no money is needed from the investments for years and no plan has been drifted from, so a fall is only a fall and there is time for prices to come back. In **“A fall in prices it is not ready for”** the case shows something a fall would catch: living costs, a bill on a date, or a mix that has moved. When is the money needed? Does the case show living costs, a bill on a date, or a mix that has moved, that a fall would catch? Or is nothing needed from it for years?
+  - If you chose **Something taken out of it every year**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, money is being kept in investments over many years, and the person may have no complaint. In **“Something taken out of it every year”** the case raises a charge, a tax bill or a sum being spent. In **“Nothing in the case”** it raises none of them: nothing is said about anything that comes out. Does the case say anything about a charge, a tax bill or a sum taken out? If you cannot point to the words, it does not.
+  - If you chose **One thing most of it depends on**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, the person may hold shares or property, and may feel well off. **“One thing most of it depends on”** shows one thing that is most of what the person has, or *a claim* or a loan that could reach all of it. **“Nothing in the case”** shows nothing of the kind: what the person has is spread out, and no claim or loan is in the case. Is there one company, property, business, claim or loan that is most of the case? Or is it spread, with nothing in it that could reach everything?
+  - If you chose **A fall in prices it is not ready for**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, the money is invested, and prices may fall. In **“Nothing in the case”** no money is needed from the investments for years and no plan has been drifted from, so a fall is only a fall and there is time for prices to come back. In **“A fall in prices it is not ready for”** the case shows something a fall would catch: living costs, a bill on a date, or a mix that has moved. When is the money needed? Does the case show living costs, a bill on a date, or a mix that has moved, that a fall would catch? Or is nothing needed from it for years?
   - If you chose **The handover to other people**: the “why not” line above. Then the lines from the card that compared the two: In both, the owner may be well and the money may be in good order. **“The handover to other people”** is the answer whenever the case is about what happens when the owner dies or cannot act, even when every paper is in order. **“Nothing in the case”** is the answer only when the case says nothing about a death, an illness or a gift. Does the case say anything about a death, a will, a form, an illness or a gift? If you cannot point to the words, it does not.
 - What would make it a different name: If Carla had mentioned that her will still named her former husband, the case would be **“The handover to other people”**.
 - Taught on: “Money put away, with nothing in the case that could lose it” (one tap opens the card).
@@ -1954,10 +1954,10 @@ The question is shown with all five of its answers from the key, in the key’s 
 - If you are right: “Right: **One thing most of it depends on.**” One thing is most of what he has: “£480,000 of it is a single block of four flats that he rents out”. £480,000 out of £600,000 is 80%. If the block lost a quarter of its value he would lose £120,000, a fifth of everything.
   - Why not **“A fall in prices it is not ready for”**: No fall in prices in general, bill on a date or living costs appear. What the case raises is how much rests on one building.
 - If you miss: “The answer is **One thing most of it depends on.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **Something taken out of it every year**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose **Something taken out of it every year**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A fall in prices it is not ready for**: the “why not” line above. Then the lines from the card that compared the two: In both, a fall in prices is part of the story, and the person could lose a large part of what they have. In **“One thing most of it depends on”** the harm comes through one company, one property, one business, one demand in a lawsuit or one loan, and could happen whatever the rest of the market does. In **“A fall in prices it is not ready for”** the harm comes from prices falling in general, on a day when the money is needed or the split has moved. Would one thing do the damage even if every other price stayed where it is? Or is the damage done by prices falling across the board, on a day when the money is needed?
-  - If you chose **The handover to other people**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **Nothing in the case**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, the person may hold shares or property, and may feel well off. **“One thing most of it depends on”** shows one thing that is most of what the person has, or *a claim* or a loan that could reach all of it. **“Nothing in the case”** shows nothing of the kind: what the person has is spread out, and no claim or loan is in the case. Is there one company, property, business, claim or loan that is most of the case? Or is it spread, with nothing in it that could reach everything?
+  - If you chose **The handover to other people**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **Nothing in the case**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, the person may hold shares or property, and may feel well off. **“One thing most of it depends on”** shows one thing that is most of what the person has, or *a claim* or a loan that could reach all of it. **“Nothing in the case”** shows nothing of the kind: what the person has is spread out, and no claim or loan is in the case. Is there one company, property, business, claim or loan that is most of the case? Or is it spread, with nothing in it that could reach everything?
 - What would make it a different name: If his money were in ten holdings, none more than a fifth of the total, and nothing else were said, it would be **“Nothing in the case”**.
 - Taught on: “One thing that could take most of what a person has built up, at once” (one tap opens the card).
 
@@ -1979,9 +1979,9 @@ The question is shown with all five of its answers from the key, in the key’s 
   - Why not **“Something taken out of it every year”**: The fees are money going out, but the case is about the days they fall due and what the money for them is held in, not about a sum that comes out whatever prices do.
 - If you miss: “The answer is **A fall in prices it is not ready for.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **Something taken out of it every year**: the “why not” line above. Then the lines from the card that compared the two: In both, money leaves *the pot* because of how the person pays for their life, and a fall in prices can be somewhere in the story. **“Something taken out of it every year”** is about what leaves every year whatever prices do: a charge, a tax bill, or a sum spent. **“A fall in prices it is not ready for”** is about the day things have to be sold: prices have fallen, or could fall, just when the money is needed. Is the case about how much leaves *the pot* each year, whatever prices do? Or is it about the days when things have to be sold, because prices have fallen just when the money is needed?
-  - If you chose **One thing most of it depends on**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, a fall in prices is part of the story, and the person could lose a large part of what they have. In **“One thing most of it depends on”** the harm comes through one company, one property, one business, one demand in a lawsuit or one loan, and could happen whatever the rest of the market does. In **“A fall in prices it is not ready for”** the harm comes from prices falling in general, on a day when the money is needed or the split has moved. Would one thing do the damage even if every other price stayed where it is? Or is the damage done by prices falling across the board, on a day when the money is needed?
-  - If you chose **The handover to other people**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **Nothing in the case**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, the money is invested, and prices may fall. In **“Nothing in the case”** no money is needed from the investments for years and no plan has been drifted from, so a fall is only a fall and there is time for prices to come back. In **“A fall in prices it is not ready for”** the case shows something a fall would catch: living costs, a bill on a date, or a mix that has moved. When is the money needed? Does the case show living costs, a bill on a date, or a mix that has moved, that a fall would catch? Or is nothing needed from it for years?
+  - If you chose **One thing most of it depends on**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, a fall in prices is part of the story, and the person could lose a large part of what they have. In **“One thing most of it depends on”** the harm comes through one company, one property, one business, one demand in a lawsuit or one loan, and could happen whatever the rest of the market does. In **“A fall in prices it is not ready for”** the harm comes from prices falling in general, on a day when the money is needed or the split has moved. Would one thing do the damage even if every other price stayed where it is? Or is the damage done by prices falling across the board, on a day when the money is needed?
+  - If you chose **The handover to other people**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **Nothing in the case**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, the money is invested, and prices may fall. In **“Nothing in the case”** no money is needed from the investments for years and no plan has been drifted from, so a fall is only a fall and there is time for prices to come back. In **“A fall in prices it is not ready for”** the case shows something a fall would catch: living costs, a bill on a date, or a mix that has moved. When is the money needed? Does the case show living costs, a bill on a date, or a mix that has moved, that a fall would catch? Or is nothing needed from it for years?
 - What would make it a different name: If the case said nothing about the fees, only that Priscilla has £27,000 that she will not need for twenty years, it would be **“Nothing in the case”**.
 - Taught on: “Prices falling just when the money is needed” (one tap opens the card).
 
@@ -2003,9 +2003,9 @@ The question is shown with all five of its answers from the key, in the key’s 
   - Why not **“Something taken out of it every year”**: No sum is described as too large for his money, or as fixed when his money was bigger. The case is about having to sell at a bad price.
 - If you miss: “The answer is **A fall in prices it is not ready for.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **Something taken out of it every year**: the “why not” line above. Then the lines from the card that compared the two: In both, money leaves *the pot* because of how the person pays for their life, and a fall in prices can be somewhere in the story. **“Something taken out of it every year”** is about what leaves every year whatever prices do: a charge, a tax bill, or a sum spent. **“A fall in prices it is not ready for”** is about the day things have to be sold: prices have fallen, or could fall, just when the money is needed. Is the case about how much leaves *the pot* each year, whatever prices do? Or is it about the days when things have to be sold, because prices have fallen just when the money is needed?
-  - If you chose **One thing most of it depends on**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, a fall in prices is part of the story, and the person could lose a large part of what they have. In **“One thing most of it depends on”** the harm comes through one company, one property, one business, one demand in a lawsuit or one loan, and could happen whatever the rest of the market does. In **“A fall in prices it is not ready for”** the harm comes from prices falling in general, on a day when the money is needed or the split has moved. Would one thing do the damage even if every other price stayed where it is? Or is the damage done by prices falling across the board, on a day when the money is needed?
-  - If you chose **The handover to other people**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **Nothing in the case**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, the money is invested, and prices may fall. In **“Nothing in the case”** no money is needed from the investments for years and no plan has been drifted from, so a fall is only a fall and there is time for prices to come back. In **“A fall in prices it is not ready for”** the case shows something a fall would catch: living costs, a bill on a date, or a mix that has moved. When is the money needed? Does the case show living costs, a bill on a date, or a mix that has moved, that a fall would catch? Or is nothing needed from it for years?
+  - If you chose **One thing most of it depends on**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, a fall in prices is part of the story, and the person could lose a large part of what they have. In **“One thing most of it depends on”** the harm comes through one company, one property, one business, one demand in a lawsuit or one loan, and could happen whatever the rest of the market does. In **“A fall in prices it is not ready for”** the harm comes from prices falling in general, on a day when the money is needed or the split has moved. Would one thing do the damage even if every other price stayed where it is? Or is the damage done by prices falling across the board, on a day when the money is needed?
+  - If you chose **The handover to other people**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **Nothing in the case**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, the money is invested, and prices may fall. In **“Nothing in the case”** no money is needed from the investments for years and no plan has been drifted from, so a fall is only a fall and there is time for prices to come back. In **“A fall in prices it is not ready for”** the case shows something a fall would catch: living costs, a bill on a date, or a mix that has moved. When is the money needed? Does the case show living costs, a bill on a date, or a mix that has moved, that a fall would catch? Or is nothing needed from it for years?
 - What would make it a different name: If Rudy’s £250,000 were being kept for a retirement twenty years away, and his bills were paid from his redundancy pay, nothing would be waiting for the money, and it would be **“Nothing in the case”**.
 - Taught on: “Prices falling just when the money is needed” (one tap opens the card).
 
@@ -2027,9 +2027,9 @@ The question is shown with all five of its answers from the key, in the key’s 
   - Why not **“Something taken out of it every year”**: Nothing comes out of the pension every year in the case. What it raises is who gets the money, once, when she dies.
 - If you miss: “The answer is **The handover to other people.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **Something taken out of it every year**: the “why not” line above. Then the lines from the card that compared the two: In both, money leaves the owner’s hands for someone else: a firm or the tax office in one, family in the other. In **“Something taken out of it every year”** something leaves every year, for as long as the money is kept. In **“The handover to other people”** what is at stake comes once, when the owner dies or can no longer act, and it depends on who gets the money and what is taken first. Does it come out every year while the owner is alive? Or does it arise once, at a death, an illness or a gift?
-  - If you chose **One thing most of it depends on**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **A fall in prices it is not ready for**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **Nothing in the case**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, the owner may be well and the money may be in good order. **“The handover to other people”** is the answer whenever the case is about what happens when the owner dies or cannot act, even when every paper is in order. **“Nothing in the case”** is the answer only when the case says nothing about a death, an illness or a gift. Does the case say anything about a death, a will, a form, an illness or a gift? If you cannot point to the words, it does not.
+  - If you chose **One thing most of it depends on**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **A fall in prices it is not ready for**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **Nothing in the case**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, the owner may be well and the money may be in good order. **“The handover to other people”** is the answer whenever the case is about what happens when the owner dies or cannot act, even when every paper is in order. **“Nothing in the case”** is the answer only when the case says nothing about a death, an illness or a gift. Does the case say anything about a death, a will, a form, an illness or a gift? If you cannot point to the words, it does not.
 - What would make it a different name: If the form had been changed last month to name her daughter, the case would still be **“The handover to other people”**: a case about the papers keeps that answer even when the papers are in order.
 - Taught on: “What happens when the money passes on, or someone else has to act for its owner” (one tap opens the card).
 
@@ -2050,9 +2050,9 @@ The question is shown with all five of its answers from the key, in the key’s 
 - If you are right: “Right: **Something taken out of it every year.**” A tax bill comes out of what the flat brings in, every year: “Every year she pays £3,600 tax on that rent”. £3,600 is a fifth of £18,000.
   - Why not **“Nothing in the case”**: A case with nothing to name raises no charge, tax or sum spent. This one names a tax bill and says how much it is.
 - If you miss: “The answer is **Something taken out of it every year.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **One thing most of it depends on**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **A fall in prices it is not ready for**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, money leaves *the pot* because of how the person pays for their life, and a fall in prices can be somewhere in the story. **“Something taken out of it every year”** is about what leaves every year whatever prices do: a charge, a tax bill, or a sum spent. **“A fall in prices it is not ready for”** is about the day things have to be sold: prices have fallen, or could fall, just when the money is needed. Is the case about how much leaves *the pot* each year, whatever prices do? Or is it about the days when things have to be sold, because prices have fallen just when the money is needed?
-  - If you chose **The handover to other people**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, money leaves the owner’s hands for someone else: a firm or the tax office in one, family in the other. In **“Something taken out of it every year”** something leaves every year, for as long as the money is kept. In **“The handover to other people”** what is at stake comes once, when the owner dies or can no longer act, and it depends on who gets the money and what is taken first. Does it come out every year while the owner is alive? Or does it arise once, at a death, an illness or a gift?
+  - If you chose **One thing most of it depends on**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **A fall in prices it is not ready for**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, money leaves *the pot* because of how the person pays for their life, and a fall in prices can be somewhere in the story. **“Something taken out of it every year”** is about what leaves every year whatever prices do: a charge, a tax bill, or a sum spent. **“A fall in prices it is not ready for”** is about the day things have to be sold: prices have fallen, or could fall, just when the money is needed. Is the case about how much leaves *the pot* each year, whatever prices do? Or is it about the days when things have to be sold, because prices have fallen just when the money is needed?
+  - If you chose **The handover to other people**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, money leaves the owner’s hands for someone else: a firm or the tax office in one, family in the other. In **“Something taken out of it every year”** something leaves every year, for as long as the money is kept. In **“The handover to other people”** what is at stake comes once, when the owner dies or can no longer act, and it depends on who gets the money and what is taken first. Does it come out every year while the owner is alive? Or does it arise once, at a death, an illness or a gift?
   - If you chose **Nothing in the case**: the “why not” line above. Then the lines from the card that compared the two: In both, money is being kept in investments over many years, and the person may have no complaint. In **“Something taken out of it every year”** the case raises a charge, a tax bill or a sum being spent. In **“Nothing in the case”** it raises none of them: nothing is said about anything that comes out. Does the case say anything about a charge, a tax bill or a sum taken out? If you cannot point to the words, it does not.
 - What would make it a different name: If the case showed only that Pilar owns the flat she lives in, and said nothing about tax, it would be **“Nothing in the case”**.
 - Taught on: “Small sums going out of what a person has built up, every year” (one tap opens the card).
@@ -2075,9 +2075,9 @@ The question is shown with all five of its answers from the key, in the key’s 
   - Why not **“Something taken out of it every year”**: Nothing comes out of the money every year. What the case raises is what the two sons will do, after their father’s death.
 - If you miss: “The answer is **The handover to other people.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **Something taken out of it every year**: the “why not” line above. Then the lines from the card that compared the two: In both, money leaves the owner’s hands for someone else: a firm or the tax office in one, family in the other. In **“Something taken out of it every year”** something leaves every year, for as long as the money is kept. In **“The handover to other people”** what is at stake comes once, when the owner dies or can no longer act, and it depends on who gets the money and what is taken first. Does it come out every year while the owner is alive? Or does it arise once, at a death, an illness or a gift?
-  - If you chose **One thing most of it depends on**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **A fall in prices it is not ready for**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **Nothing in the case**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, the owner may be well and the money may be in good order. **“The handover to other people”** is the answer whenever the case is about what happens when the owner dies or cannot act, even when every paper is in order. **“Nothing in the case”** is the answer only when the case says nothing about a death, an illness or a gift. Does the case say anything about a death, a will, a form, an illness or a gift? If you cannot point to the words, it does not.
+  - If you chose **One thing most of it depends on**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **A fall in prices it is not ready for**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **Nothing in the case**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, the owner may be well and the money may be in good order. **“The handover to other people”** is the answer whenever the case is about what happens when the owner dies or cannot act, even when every paper is in order. **“Nothing in the case”** is the answer only when the case says nothing about a death, an illness or a gift. Does the case say anything about a death, a will, a form, an illness or a gift? If you cannot point to the words, it does not.
 - What would make it a different name: If the two sons had never argued, and the case said only that Jaswant would leave £400,000 to them equally, it would still be **“The handover to other people”**: who gets the money is what the case is about.
 - Taught on: “What happens when the money passes on, or someone else has to act for its owner” (one tap opens the card).
 
@@ -2098,9 +2098,9 @@ The question is shown with all five of its answers from the key, in the key’s 
 - If you are right: “Right: **A fall in prices it is not ready for.**” The case shows *the mix* that has moved well away from its plan: “planned to keep 40% of her money in shares and 60% in bonds” and “£350,000 of her £500,000 is in shares, which is 70%”. A fall of 30% in shares would now take £105,000, which is 21% of everything, where her plan allowed 12%. Money held as *a bond* pays a set amount if it is kept to its date, so it is the shares that a fall takes from.
   - Why not **“Nothing in the case”**: A case with nothing to name shows no plan that has drifted, and no money needed soon. Here she stops work in two years and her split is far from the one she chose.
 - If you miss: “The answer is **A fall in prices it is not ready for.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **Something taken out of it every year**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, money leaves *the pot* because of how the person pays for their life, and a fall in prices can be somewhere in the story. **“Something taken out of it every year”** is about what leaves every year whatever prices do: a charge, a tax bill, or a sum spent. **“A fall in prices it is not ready for”** is about the day things have to be sold: prices have fallen, or could fall, just when the money is needed. Is the case about how much leaves *the pot* each year, whatever prices do? Or is it about the days when things have to be sold, because prices have fallen just when the money is needed?
-  - If you chose **One thing most of it depends on**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, a fall in prices is part of the story, and the person could lose a large part of what they have. In **“One thing most of it depends on”** the harm comes through one company, one property, one business, one demand in a lawsuit or one loan, and could happen whatever the rest of the market does. In **“A fall in prices it is not ready for”** the harm comes from prices falling in general, on a day when the money is needed or the split has moved. Would one thing do the damage even if every other price stayed where it is? Or is the damage done by prices falling across the board, on a day when the money is needed?
-  - If you chose **The handover to other people**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose **Something taken out of it every year**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, money leaves *the pot* because of how the person pays for their life, and a fall in prices can be somewhere in the story. **“Something taken out of it every year”** is about what leaves every year whatever prices do: a charge, a tax bill, or a sum spent. **“A fall in prices it is not ready for”** is about the day things have to be sold: prices have fallen, or could fall, just when the money is needed. Is the case about how much leaves *the pot* each year, whatever prices do? Or is it about the days when things have to be sold, because prices have fallen just when the money is needed?
+  - If you chose **One thing most of it depends on**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, a fall in prices is part of the story, and the person could lose a large part of what they have. In **“One thing most of it depends on”** the harm comes through one company, one property, one business, one demand in a lawsuit or one loan, and could happen whatever the rest of the market does. In **“A fall in prices it is not ready for”** the harm comes from prices falling in general, on a day when the money is needed or the split has moved. Would one thing do the damage even if every other price stayed where it is? Or is the damage done by prices falling across the board, on a day when the money is needed?
+  - If you chose **The handover to other people**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Nothing in the case**: the “why not” line above. Then the lines from the card that compared the two: In both, the money is invested, and prices may fall. In **“Nothing in the case”** no money is needed from the investments for years and no plan has been drifted from, so a fall is only a fall and there is time for prices to come back. In **“A fall in prices it is not ready for”** the case shows something a fall would catch: living costs, a bill on a date, or a mix that has moved. When is the money needed? Does the case show living costs, a bill on a date, or a mix that has moved, that a fall would catch? Or is nothing needed from it for years?
 - What would make it a different name: If the case said nothing about her plan, only that Magda has £500,000 she will not need for twenty years, it would be **“Nothing in the case”**.
 - Taught on: “Prices falling just when the money is needed” (one tap opens the card).
@@ -2122,10 +2122,10 @@ The question is shown with all five of its answers from the key, in the key’s 
 - If you are right: “Right: **Nothing in the case.**” The case shows a large fall and nothing waiting for the money: “He is not selling anything” and “he will start taking money out in thirty years”. A fall only does harm when something has to be sold or paid on the day. For thirty years nothing does, and nothing else in the case comes out, rests on one thing or changes hands.
   - Why not **“A fall in prices it is not ready for”**: The fall is real, but a fall that catches nothing raises nothing. No bill, no living costs and no plan that has drifted appear in the case.
 - If you miss: “The answer is **Nothing in the case.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **Something taken out of it every year**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, money is being kept in investments over many years, and the person may have no complaint. In **“Something taken out of it every year”** the case raises a charge, a tax bill or a sum being spent. In **“Nothing in the case”** it raises none of them: nothing is said about anything that comes out. Does the case say anything about a charge, a tax bill or a sum taken out? If you cannot point to the words, it does not.
-  - If you chose **One thing most of it depends on**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, the person may hold shares or property, and may feel well off. **“One thing most of it depends on”** shows one thing that is most of what the person has, or *a claim* or a loan that could reach all of it. **“Nothing in the case”** shows nothing of the kind: what the person has is spread out, and no claim or loan is in the case. Is there one company, property, business, claim or loan that is most of the case? Or is it spread, with nothing in it that could reach everything?
+  - If you chose **Something taken out of it every year**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, money is being kept in investments over many years, and the person may have no complaint. In **“Something taken out of it every year”** the case raises a charge, a tax bill or a sum being spent. In **“Nothing in the case”** it raises none of them: nothing is said about anything that comes out. Does the case say anything about a charge, a tax bill or a sum taken out? If you cannot point to the words, it does not.
+  - If you chose **One thing most of it depends on**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, the person may hold shares or property, and may feel well off. **“One thing most of it depends on”** shows one thing that is most of what the person has, or *a claim* or a loan that could reach all of it. **“Nothing in the case”** shows nothing of the kind: what the person has is spread out, and no claim or loan is in the case. Is there one company, property, business, claim or loan that is most of the case? Or is it spread, with nothing in it that could reach everything?
   - If you chose **A fall in prices it is not ready for**: the “why not” line above. Then the lines from the card that compared the two: In both, the money is invested, and prices may fall. In **“Nothing in the case”** no money is needed from the investments for years and no plan has been drifted from, so a fall is only a fall and there is time for prices to come back. In **“A fall in prices it is not ready for”** the case shows something a fall would catch: living costs, a bill on a date, or a mix that has moved. When is the money needed? Does the case show living costs, a bill on a date, or a mix that has moved, that a fall would catch? Or is nothing needed from it for years?
-  - If you chose **The handover to other people**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, the owner may be well and the money may be in good order. **“The handover to other people”** is the answer whenever the case is about what happens when the owner dies or cannot act, even when every paper is in order. **“Nothing in the case”** is the answer only when the case says nothing about a death, an illness or a gift. Does the case say anything about a death, a will, a form, an illness or a gift? If you cannot point to the words, it does not.
+  - If you chose **The handover to other people**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, the owner may be well and the money may be in good order. **“The handover to other people”** is the answer whenever the case is about what happens when the owner dies or cannot act, even when every paper is in order. **“Nothing in the case”** is the answer only when the case says nothing about a death, an illness or a gift. Does the case say anything about a death, a will, a form, an illness or a gift? If you cannot point to the words, it does not.
 - What would make it a different name: If Gus had to pay a house deposit in five months from the same pension, a fall would catch the deposit, and the case would be **“A fall in prices it is not ready for”**.
 - Taught on: “Money put away, with nothing in the case that could lose it” (one tap opens the card).
 
@@ -2146,9 +2146,9 @@ The question is shown with all five of its answers from the key, in the key’s 
 - If you are right: “Right: **The handover to other people.**” The case is about what happens to the money when its owners die or cannot act: “renewed their wills and the forms for their pensions in January” and “The power of attorney was signed at the same time”. Everything is in order. A case about the papers keeps the answer even when the papers are fine.
   - Why not **“Nothing in the case”**: The fifth answer is for a case that says nothing about a death, a will or an illness. This case is about all three, even though nothing is wrong.
 - If you miss: “The answer is **The handover to other people.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **Something taken out of it every year**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, money leaves the owner’s hands for someone else: a firm or the tax office in one, family in the other. In **“Something taken out of it every year”** something leaves every year, for as long as the money is kept. In **“The handover to other people”** what is at stake comes once, when the owner dies or can no longer act, and it depends on who gets the money and what is taken first. Does it come out every year while the owner is alive? Or does it arise once, at a death, an illness or a gift?
-  - If you chose **One thing most of it depends on**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **A fall in prices it is not ready for**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose **Something taken out of it every year**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, money leaves the owner’s hands for someone else: a firm or the tax office in one, family in the other. In **“Something taken out of it every year”** something leaves every year, for as long as the money is kept. In **“The handover to other people”** what is at stake comes once, when the owner dies or can no longer act, and it depends on who gets the money and what is taken first. Does it come out every year while the owner is alive? Or does it arise once, at a death, an illness or a gift?
+  - If you chose **One thing most of it depends on**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **A fall in prices it is not ready for**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Nothing in the case**: the “why not” line above. Then the lines from the card that compared the two: In both, the owner may be well and the money may be in good order. **“The handover to other people”** is the answer whenever the case is about what happens when the owner dies or cannot act, even when every paper is in order. **“Nothing in the case”** is the answer only when the case says nothing about a death, an illness or a gift. Does the case say anything about a death, a will, a form, an illness or a gift? If you cannot point to the words, it does not.
 - What would make it a different name: If the case said only that Tess and her husband own their home and have £320,000, and did not mention wills or forms, it would be **“Nothing in the case”**.
 - Taught on: “What happens when the money passes on, or someone else has to act for its owner” (one tap opens the card).
@@ -2171,9 +2171,9 @@ The question is shown with all five of its answers from the key, in the key’s 
   - Why not **“Something taken out of it every year”**: A product offer is not a charge. Nothing comes out of his money.
 - If you miss: “The answer is **Nothing in the case.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **Something taken out of it every year**: the “why not” line above. Then the lines from the card that compared the two: In both, money is being kept in investments over many years, and the person may have no complaint. In **“Something taken out of it every year”** the case raises a charge, a tax bill or a sum being spent. In **“Nothing in the case”** it raises none of them: nothing is said about anything that comes out. Does the case say anything about a charge, a tax bill or a sum taken out? If you cannot point to the words, it does not.
-  - If you chose **One thing most of it depends on**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, the person may hold shares or property, and may feel well off. **“One thing most of it depends on”** shows one thing that is most of what the person has, or *a claim* or a loan that could reach all of it. **“Nothing in the case”** shows nothing of the kind: what the person has is spread out, and no claim or loan is in the case. Is there one company, property, business, claim or loan that is most of the case? Or is it spread, with nothing in it that could reach everything?
-  - If you chose **A fall in prices it is not ready for**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, the money is invested, and prices may fall. In **“Nothing in the case”** no money is needed from the investments for years and no plan has been drifted from, so a fall is only a fall and there is time for prices to come back. In **“A fall in prices it is not ready for”** the case shows something a fall would catch: living costs, a bill on a date, or a mix that has moved. When is the money needed? Does the case show living costs, a bill on a date, or a mix that has moved, that a fall would catch? Or is nothing needed from it for years?
-  - If you chose **The handover to other people**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, the owner may be well and the money may be in good order. **“The handover to other people”** is the answer whenever the case is about what happens when the owner dies or cannot act, even when every paper is in order. **“Nothing in the case”** is the answer only when the case says nothing about a death, an illness or a gift. Does the case say anything about a death, a will, a form, an illness or a gift? If you cannot point to the words, it does not.
+  - If you chose **One thing most of it depends on**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, the person may hold shares or property, and may feel well off. **“One thing most of it depends on”** shows one thing that is most of what the person has, or *a claim* or a loan that could reach all of it. **“Nothing in the case”** shows nothing of the kind: what the person has is spread out, and no claim or loan is in the case. Is there one company, property, business, claim or loan that is most of the case? Or is it spread, with nothing in it that could reach everything?
+  - If you chose **A fall in prices it is not ready for**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, the money is invested, and prices may fall. In **“Nothing in the case”** no money is needed from the investments for years and no plan has been drifted from, so a fall is only a fall and there is time for prices to come back. In **“A fall in prices it is not ready for”** the case shows something a fall would catch: living costs, a bill on a date, or a mix that has moved. When is the money needed? Does the case show living costs, a bill on a date, or a mix that has moved, that a fall would catch? Or is nothing needed from it for years?
+  - If you chose **The handover to other people**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, the owner may be well and the money may be in good order. **“The handover to other people”** is the answer whenever the case is about what happens when the owner dies or cannot act, even when every paper is in order. **“Nothing in the case”** is the answer only when the case says nothing about a death, an illness or a gift. Does the case say anything about a death, a will, a form, an illness or a gift? If you cannot point to the words, it does not.
 - What would make it a different name: If the bank had told him that the product takes 1.8% a year, there would be words to point to, and the case would be **“Something taken out of it every year”**.
 - Taught on: “Money put away, with nothing in the case that could lose it” (one tap opens the card).
 
@@ -2194,10 +2194,10 @@ The question is shown with all five of its answers from the key, in the key’s 
 - If you are right: “Right: **One thing most of it depends on.**” The case shows a lender who could force a sale, against nearly everything the person owns: “The loan agreement lets the bank demand all of it back whenever it likes” and “the bakery is almost all that she owns”. If the bank called in £250,000, Anita would have to sell much of the bakery.
   - Why not **“A fall in prices it is not ready for”**: No bill on a date and no living costs appear. What could take the money is one lender with the right to demand it back at any time.
 - If you miss: “The answer is **One thing most of it depends on.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **Something taken out of it every year**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose **Something taken out of it every year**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A fall in prices it is not ready for**: the “why not” line above. Then the lines from the card that compared the two: In both, a fall in prices is part of the story, and the person could lose a large part of what they have. In **“One thing most of it depends on”** the harm comes through one company, one property, one business, one demand in a lawsuit or one loan, and could happen whatever the rest of the market does. In **“A fall in prices it is not ready for”** the harm comes from prices falling in general, on a day when the money is needed or the split has moved. Would one thing do the damage even if every other price stayed where it is? Or is the damage done by prices falling across the board, on a day when the money is needed?
-  - If you chose **The handover to other people**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **Nothing in the case**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, the person may hold shares or property, and may feel well off. **“One thing most of it depends on”** shows one thing that is most of what the person has, or *a claim* or a loan that could reach all of it. **“Nothing in the case”** shows nothing of the kind: what the person has is spread out, and no claim or loan is in the case. Is there one company, property, business, claim or loan that is most of the case? Or is it spread, with nothing in it that could reach everything?
+  - If you chose **The handover to other people**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **Nothing in the case**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, the person may hold shares or property, and may feel well off. **“One thing most of it depends on”** shows one thing that is most of what the person has, or *a claim* or a loan that could reach all of it. **“Nothing in the case”** shows nothing of the kind: what the person has is spread out, and no claim or loan is in the case. Is there one company, property, business, claim or loan that is most of the case? Or is it spread, with nothing in it that could reach everything?
 - What would make it a different name: If most of what Anita owned were spread over many things, and no loan could be called in, the case would raise none of the four, and it would be **“Nothing in the case”**.
 - Taught on: “One thing that could take most of what a person has built up, at once” (one tap opens the card).
 
@@ -2218,10 +2218,10 @@ The question is shown with all five of its answers from the key, in the key’s 
 - If you are right: “Right: **Nothing in the case.**” The case shows money spread across four places, with nothing owed and nothing needed for seven years: “does not expect to need any of the money until he is 67” and “with nothing owed”. No one thing is most of it, and the case gives no reason to expect *a claim* against him.
   - Why not **“One thing most of it depends on”**: The pension is the biggest holding, but it is spread over thousands of companies and is 36% of the total, so no one thing is most of it.
 - If you miss: “The answer is **Nothing in the case.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **Something taken out of it every year**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, money is being kept in investments over many years, and the person may have no complaint. In **“Something taken out of it every year”** the case raises a charge, a tax bill or a sum being spent. In **“Nothing in the case”** it raises none of them: nothing is said about anything that comes out. Does the case say anything about a charge, a tax bill or a sum taken out? If you cannot point to the words, it does not.
+  - If you chose **Something taken out of it every year**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, money is being kept in investments over many years, and the person may have no complaint. In **“Something taken out of it every year”** the case raises a charge, a tax bill or a sum being spent. In **“Nothing in the case”** it raises none of them: nothing is said about anything that comes out. Does the case say anything about a charge, a tax bill or a sum taken out? If you cannot point to the words, it does not.
   - If you chose **One thing most of it depends on**: the “why not” line above. Then the lines from the card that compared the two: In both, the person may hold shares or property, and may feel well off. **“One thing most of it depends on”** shows one thing that is most of what the person has, or *a claim* or a loan that could reach all of it. **“Nothing in the case”** shows nothing of the kind: what the person has is spread out, and no claim or loan is in the case. Is there one company, property, business, claim or loan that is most of the case? Or is it spread, with nothing in it that could reach everything?
-  - If you chose **A fall in prices it is not ready for**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, the money is invested, and prices may fall. In **“Nothing in the case”** no money is needed from the investments for years and no plan has been drifted from, so a fall is only a fall and there is time for prices to come back. In **“A fall in prices it is not ready for”** the case shows something a fall would catch: living costs, a bill on a date, or a mix that has moved. When is the money needed? Does the case show living costs, a bill on a date, or a mix that has moved, that a fall would catch? Or is nothing needed from it for years?
-  - If you chose **The handover to other people**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, the owner may be well and the money may be in good order. **“The handover to other people”** is the answer whenever the case is about what happens when the owner dies or cannot act, even when every paper is in order. **“Nothing in the case”** is the answer only when the case says nothing about a death, an illness or a gift. Does the case say anything about a death, a will, a form, an illness or a gift? If you cannot point to the words, it does not.
+  - If you chose **A fall in prices it is not ready for**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, the money is invested, and prices may fall. In **“Nothing in the case”** no money is needed from the investments for years and no plan has been drifted from, so a fall is only a fall and there is time for prices to come back. In **“A fall in prices it is not ready for”** the case shows something a fall would catch: living costs, a bill on a date, or a mix that has moved. When is the money needed? Does the case show living costs, a bill on a date, or a mix that has moved, that a fall would catch? Or is nothing needed from it for years?
+  - If you chose **The handover to other people**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, the owner may be well and the money may be in good order. **“The handover to other people”** is the answer whenever the case is about what happens when the owner dies or cannot act, even when every paper is in order. **“Nothing in the case”** is the answer only when the case says nothing about a death, an illness or a gift. Does the case say anything about a death, a will, a form, an illness or a gift? If you cannot point to the words, it does not.
 - What would make it a different name: If £340,000 of the £420,000 were one block of shares in a single company, it would be **“One thing most of it depends on”**.
 - Taught on: “Money put away, with nothing in the case that could lose it” (one tap opens the card).
 
@@ -2239,14 +2239,14 @@ The question is shown with all five of its answers from the key, in the key’s 
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **One thing most of it depends on.**” One company is most of what she has: “£450,000 of her £520,000 is shares in the company where she works”. £450,000 out of £520,000 is about 87%. The fall and the coming retirement make it look like a fall in prices, and the case does show both. When a case shows both, the key chooses **“One thing most of it depends on”**, because the harm comes through one company.
+- If you are right: “Right: **One thing most of it depends on.**” One company is most of what she has: “£450,000 of her £520,000 is shares in the company where she works”. £450,000 out of £520,000 is about 87%. The fall and the coming retirement make it look like a fall in prices, and the case does show both. When a case shows both, the answer is **“One thing most of it depends on”**, because the harm comes through one company.
   - Why not **“A fall in prices it is not ready for”**: A fall and a retirement are in the case, so it looks like a fall in prices, but the fall is one company’s. Money spread over many companies would not have lost 40%.
 - If you miss: “The answer is **One thing most of it depends on.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **Something taken out of it every year**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **A fall in prices it is not ready for**: This case does show that. It also shows one thing that most of the pot depends on, and when a case shows both, the key’s answer is **One thing most of it depends on**. Then the lines from the card that compared the two: In both, a fall in prices is part of the story, and the person could lose a large part of what they have. In **“One thing most of it depends on”** the harm comes through one company, one property, one business, one demand in a lawsuit or one loan, and could happen whatever the rest of the market does. In **“A fall in prices it is not ready for”** the harm comes from prices falling in general, on a day when the money is needed or the split has moved. Would one thing do the damage even if every other price stayed where it is? Or is the damage done by prices falling across the board, on a day when the money is needed?
-  - If you chose **The handover to other people**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **Nothing in the case**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, the person may hold shares or property, and may feel well off. **“One thing most of it depends on”** shows one thing that is most of what the person has, or *a claim* or a loan that could reach all of it. **“Nothing in the case”** shows nothing of the kind: what the person has is spread out, and no claim or loan is in the case. Is there one company, property, business, claim or loan that is most of the case? Or is it spread, with nothing in it that could reach everything?
-- This case may have brought back *Pete and Jean*, which was **“A fall in prices it is not ready for”**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose **Something taken out of it every year**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **A fall in prices it is not ready for**: This case does show that. It also shows one thing that most of the pot depends on, and when a case shows both, the answer is **One thing most of it depends on**. Then the lines from the card that compared the two: In both, a fall in prices is part of the story, and the person could lose a large part of what they have. In **“One thing most of it depends on”** the harm comes through one company, one property, one business, one demand in a lawsuit or one loan, and could happen whatever the rest of the market does. In **“A fall in prices it is not ready for”** the harm comes from prices falling in general, on a day when the money is needed or the split has moved. Would one thing do the damage even if every other price stayed where it is? Or is the damage done by prices falling across the board, on a day when the money is needed?
+  - If you chose **The handover to other people**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **Nothing in the case**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, the person may hold shares or property, and may feel well off. **“One thing most of it depends on”** shows one thing that is most of what the person has, or *a claim* or a loan that could reach all of it. **“Nothing in the case”** shows nothing of the kind: what the person has is spread out, and no claim or loan is in the case. Is there one company, property, business, claim or loan that is most of the case? Or is it spread, with nothing in it that could reach everything?
+- This case may have brought back *Pete and Jean*, which was **“A fall in prices it is not ready for”**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If her £520,000 were spread over hundreds of companies in funds, and she still planned to retire next year, it would be **“A fall in prices it is not ready for”**.
 - Taught on: “One thing that could take most of what a person has built up, at once” (one tap opens the card).
 
@@ -2267,11 +2267,11 @@ The question is shown with all five of its answers from the key, in the key’s 
 - If you are right: “Right: **Nothing in the case.**” A retired man and a fall of 30% in his shares bring back a case about prices falling. Read on: “which together pay all his bills” and “he does not plan to touch the savings”. Nothing is waiting for the savings, so the fall catches nothing. The case has no charge, tax or sum spent, no single holding that is most of the savings, and no death or will in it.
   - Why not **“A fall in prices it is not ready for”**: A fall in prices and a retired man look like a case about timing. But his bills are paid from elsewhere and he is not selling, so nothing is waiting for the money.
 - If you miss: “The answer is **Nothing in the case.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **Something taken out of it every year**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, money is being kept in investments over many years, and the person may have no complaint. In **“Something taken out of it every year”** the case raises a charge, a tax bill or a sum being spent. In **“Nothing in the case”** it raises none of them: nothing is said about anything that comes out. Does the case say anything about a charge, a tax bill or a sum taken out? If you cannot point to the words, it does not.
-  - If you chose **One thing most of it depends on**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, the person may hold shares or property, and may feel well off. **“One thing most of it depends on”** shows one thing that is most of what the person has, or *a claim* or a loan that could reach all of it. **“Nothing in the case”** shows nothing of the kind: what the person has is spread out, and no claim or loan is in the case. Is there one company, property, business, claim or loan that is most of the case? Or is it spread, with nothing in it that could reach everything?
+  - If you chose **Something taken out of it every year**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, money is being kept in investments over many years, and the person may have no complaint. In **“Something taken out of it every year”** the case raises a charge, a tax bill or a sum being spent. In **“Nothing in the case”** it raises none of them: nothing is said about anything that comes out. Does the case say anything about a charge, a tax bill or a sum taken out? If you cannot point to the words, it does not.
+  - If you chose **One thing most of it depends on**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, the person may hold shares or property, and may feel well off. **“One thing most of it depends on”** shows one thing that is most of what the person has, or *a claim* or a loan that could reach all of it. **“Nothing in the case”** shows nothing of the kind: what the person has is spread out, and no claim or loan is in the case. Is there one company, property, business, claim or loan that is most of the case? Or is it spread, with nothing in it that could reach everything?
   - If you chose **A fall in prices it is not ready for**: the “why not” line above. Then the lines from the card that compared the two: In both, the money is invested, and prices may fall. In **“Nothing in the case”** no money is needed from the investments for years and no plan has been drifted from, so a fall is only a fall and there is time for prices to come back. In **“A fall in prices it is not ready for”** the case shows something a fall would catch: living costs, a bill on a date, or a mix that has moved. When is the money needed? Does the case show living costs, a bill on a date, or a mix that has moved, that a fall would catch? Or is nothing needed from it for years?
-  - If you chose **The handover to other people**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, the owner may be well and the money may be in good order. **“The handover to other people”** is the answer whenever the case is about what happens when the owner dies or cannot act, even when every paper is in order. **“Nothing in the case”** is the answer only when the case says nothing about a death, an illness or a gift. Does the case say anything about a death, a will, a form, an illness or a gift? If you cannot point to the words, it does not.
-- This case may have brought back *Pete and Jean*, which was **“A fall in prices it is not ready for”**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose **The handover to other people**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, the owner may be well and the money may be in good order. **“The handover to other people”** is the answer whenever the case is about what happens when the owner dies or cannot act, even when every paper is in order. **“Nothing in the case”** is the answer only when the case says nothing about a death, an illness or a gift. Does the case say anything about a death, a will, a form, an illness or a gift? If you cannot point to the words, it does not.
+- This case may have brought back *Pete and Jean*, which was **“A fall in prices it is not ready for”**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If his pensions covered only half his bills, and he sold shares each month to pay the rest, the case would be **“A fall in prices it is not ready for”**.
 - Taught on: “Money put away, with nothing in the case that could lose it” (one tap opens the card).
 
@@ -2289,14 +2289,14 @@ The question is shown with all five of its answers from the key, in the key’s 
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Something taken out of it every year.**” A fixed sum comes out of money that has shrunk: “they still take out £36,000 every year, which is now 8.6%”. The fall explains why the money shrank, but the case is about the sum. When a case shows both, the key chooses **“Something taken out of it every year”**.
+- If you are right: “Right: **Something taken out of it every year.**” A fixed sum comes out of money that has shrunk: “they still take out £36,000 every year, which is now 8.6%”. The fall explains why the money shrank, but the case is about the sum. When a case shows both, the answer is **“Something taken out of it every year”**.
   - Why not **“A fall in prices it is not ready for”**: The fall is in the case, and it explains the shrinking. But the case raises how much comes out each year, relative to what is left, and that decides it.
 - If you miss: “The answer is **Something taken out of it every year.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **One thing most of it depends on**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **A fall in prices it is not ready for**: This case does show that. It also shows the same sum taken out every year from a pot that has shrunk, or a sale planned to put the mix back that would bring a tax bill new money could avoid, and when a case shows both, the key’s answer is **Something taken out of it every year**. Then the lines from the card that compared the two: In both, money leaves *the pot* because of how the person pays for their life, and a fall in prices can be somewhere in the story. **“Something taken out of it every year”** is about what leaves every year whatever prices do: a charge, a tax bill, or a sum spent. **“A fall in prices it is not ready for”** is about the day things have to be sold: prices have fallen, or could fall, just when the money is needed. Is the case about how much leaves *the pot* each year, whatever prices do? Or is it about the days when things have to be sold, because prices have fallen just when the money is needed?
-  - If you chose **The handover to other people**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, money leaves the owner’s hands for someone else: a firm or the tax office in one, family in the other. In **“Something taken out of it every year”** something leaves every year, for as long as the money is kept. In **“The handover to other people”** what is at stake comes once, when the owner dies or can no longer act, and it depends on who gets the money and what is taken first. Does it come out every year while the owner is alive? Or does it arise once, at a death, an illness or a gift?
-  - If you chose **Nothing in the case**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, money is being kept in investments over many years, and the person may have no complaint. In **“Something taken out of it every year”** the case raises a charge, a tax bill or a sum being spent. In **“Nothing in the case”** it raises none of them: nothing is said about anything that comes out. Does the case say anything about a charge, a tax bill or a sum taken out? If you cannot point to the words, it does not.
-- This case may have brought back *Marguerite*, which was **“One thing most of it depends on”**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose **One thing most of it depends on**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **A fall in prices it is not ready for**: This case does show that. It also shows the same sum taken out every year from a pot that has shrunk, or a sale planned to put the mix back that would bring a tax bill new money could avoid, and when a case shows both, the answer is **Something taken out of it every year**. Then the lines from the card that compared the two: In both, money leaves *the pot* because of how the person pays for their life, and a fall in prices can be somewhere in the story. **“Something taken out of it every year”** is about what leaves every year whatever prices do: a charge, a tax bill, or a sum spent. **“A fall in prices it is not ready for”** is about the day things have to be sold: prices have fallen, or could fall, just when the money is needed. Is the case about how much leaves *the pot* each year, whatever prices do? Or is it about the days when things have to be sold, because prices have fallen just when the money is needed?
+  - If you chose **The handover to other people**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, money leaves the owner’s hands for someone else: a firm or the tax office in one, family in the other. In **“Something taken out of it every year”** something leaves every year, for as long as the money is kept. In **“The handover to other people”** what is at stake comes once, when the owner dies or can no longer act, and it depends on who gets the money and what is taken first. Does it come out every year while the owner is alive? Or does it arise once, at a death, an illness or a gift?
+  - If you chose **Nothing in the case**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, money is being kept in investments over many years, and the person may have no complaint. In **“Something taken out of it every year”** the case raises a charge, a tax bill or a sum being spent. In **“Nothing in the case”** it raises none of them: nothing is said about anything that comes out. Does the case say anything about a charge, a tax bill or a sum taken out? If you cannot point to the words, it does not.
+- This case may have brought back *Marguerite*, which was **“One thing most of it depends on”**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If the sum they took out had always been about 5% of whatever their money was worth, and the only fact were that prices had fallen, it would be **“A fall in prices it is not ready for”**.
 - Taught on: “Small sums going out of what a person has built up, every year” (one tap opens the card).
 
@@ -2318,10 +2318,10 @@ The question is shown with all five of its answers from the key, in the key’s 
   - Why not **“Something taken out of it every year”**: A sum leaves every year, but it is gifts to her grandchildren, and the tax the case raises falls once, at her death.
 - If you miss: “The answer is **The handover to other people.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **Something taken out of it every year**: the “why not” line above. Then the lines from the card that compared the two: In both, money leaves the owner’s hands for someone else: a firm or the tax office in one, family in the other. In **“Something taken out of it every year”** something leaves every year, for as long as the money is kept. In **“The handover to other people”** what is at stake comes once, when the owner dies or can no longer act, and it depends on who gets the money and what is taken first. Does it come out every year while the owner is alive? Or does it arise once, at a death, an illness or a gift?
-  - If you chose **One thing most of it depends on**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **A fall in prices it is not ready for**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **Nothing in the case**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, the owner may be well and the money may be in good order. **“The handover to other people”** is the answer whenever the case is about what happens when the owner dies or cannot act, even when every paper is in order. **“Nothing in the case”** is the answer only when the case says nothing about a death, an illness or a gift. Does the case say anything about a death, a will, a form, an illness or a gift? If you cannot point to the words, it does not.
-- This case may have brought back *Colin and the pension fund*, which was **“Something taken out of it every year”**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose **One thing most of it depends on**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **A fall in prices it is not ready for**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **Nothing in the case**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, the owner may be well and the money may be in good order. **“The handover to other people”** is the answer whenever the case is about what happens when the owner dies or cannot act, even when every paper is in order. **“Nothing in the case”** is the answer only when the case says nothing about a death, an illness or a gift. Does the case say anything about a death, a will, a form, an illness or a gift? If you cannot point to the words, it does not.
+- This case may have brought back *Colin and the pension fund*, which was **“Something taken out of it every year”**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If Maud’s money were £300,000, below the limit, and her papers were in order, the case would still be **“The handover to other people”**: gifts to family are part of it.
 - Taught on: “What happens when the money passes on, or someone else has to act for its owner” (one tap opens the card).
 
@@ -2360,9 +2360,9 @@ The question is shown with all five of its answers from the key, in the key’s 
 **Shown as soon as you answer**
 
 - The answer is: **Nothing in the case.**
-- If you chose another answer, the line is built from the key, as for any other question.
+- If you chose another answer, the line is built from the answers’ own wording, as for any other question.
 - The fault: The claim names a cure before it says what could lose the money. In what the speaker has described, nothing comes out of the pension that is mentioned, no one thing is most of it, nothing is due on a date, and no handover is raised. A structure that costs money to set up and to run is chosen after the first question has been answered, not instead of it.
-- The claim, put right (always the last thing shown): I have £60,000 in a pension that I add to every month and will not need for thirty years. Nothing in that raises one of the four, so in the key’s words it is **“Nothing in the case”**. If someone says I need a structure, I ask what could lose my money that it answers, and I ask for the answer in numbers.
+- The claim, put right (always the last thing shown): I have £60,000 in a pension that I add to every month and will not need for thirty years. Nothing in that raises one of the four, so it is **“Nothing in the case”**. If someone says I need a structure, I ask what could lose my money that it answers, and I ask for the answer in numbers.
 
 **Drill item 40 of 41**
 
@@ -2379,9 +2379,9 @@ The question is shown with all five of its answers from the key, in the key’s 
 **Shown as soon as you answer**
 
 - The answer is: **A fall in prices it is not ready for.**
-- If you chose another answer, the line is built from the key, as for any other question.
+- If you chose another answer, the line is built from the answers’ own wording, as for any other question.
 - The fault: The claim says nothing needs to be arranged, because prices come back. But the speaker lives off the shares, so something is sold every month, and a sale in a fall takes place at the low price. What is sold is not there when prices come back. "Always" is a promise that nobody can make, and the case is about what happens if they do not come back soon.
-- The claim, put right (always the last thing shown): I’m 62 and I live off the shares in my £400,000, with nothing set aside in cash. If prices fall, I will be selling at the low price to pay my bills. In the key’s words that is **“A fall in prices it is not ready for”**.
+- The claim, put right (always the last thing shown): I’m 62 and I live off the shares in my £400,000, with nothing set aside in cash. If prices fall, I will be selling at the low price to pay my bills. That is **“A fall in prices it is not ready for”**.
 
 **Drill item 41 of 41**
 
@@ -2398,21 +2398,21 @@ The question is shown with all five of its answers from the key, in the key’s 
 **Shown as soon as you answer**
 
 - The answer is: **One thing most of it depends on.**
-- If you chose another answer, the line is built from the key, as for any other question.
+- If you chose another answer, the line is built from the answers’ own wording, as for any other question.
 - The fault: The claim treats belief as protection. How much the speaker believes in the company says nothing about what would happen to the pension if the company did badly, and companies can do badly for reasons nobody inside them controls. What the claim describes is one company that is the whole of the pension, and if it failed, most of *the pot* would go with it.
-- The claim, put right (always the last thing shown): My whole pension is in my company’s shares. I believe in the company, and that is a reason I chose it. It is not a reason it could not fall, and if it did, most of what I have would go with it. In the key’s words that is **“One thing most of it depends on”**.
+- The claim, put right (always the last thing shown): My whole pension is in my company’s shares. I believe in the company, and that is a reason I chose it. It is not a reason it could not fall, and if it did, most of what I have would go with it. That is **“One thing most of it depends on”**.
 
 **When the drill ends.** The learner sees their own results: first-try accuracy for each stage, mixed cases beside single questions, the pair of kinds they mixed up most often, and what will come back and when. Anything missed was asked again before the drill ended. Nothing here is graded. A miss only decides what comes back.
 
 ### 43. What to carry away
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 43 of 45*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 43 of 45*
 
 [reviewers only: card kind `recap`, id `recap-gate`]
 
-You have now answered the key’s first question on your own. This card puts the unit in one place, in the key’s words.
+You have now answered the first question on your own. This card puts the unit in one place.
 
-**The key for this unit, in its own words**
+**This unit’s questions and answers**
 
 What could lose this money?
 - Something taken out of it every year
@@ -2443,11 +2443,11 @@ What could lose this money?
 - A case in which the papers are all in order is still a case about **“The handover to other people”**. **“Nothing in the case”** is for a case that raises none of the four.
 - **“Nothing in the case”** is a real answer, and a common one. If you cannot point to words that raise one of the four, do not invent them, and do not buy a cure for a problem the case does not have.
 - The question is about *the pot*, everything someone has built up and wants to keep, and never about the pay that arrives each month.
-- Every case in this subject starts with this question. Your answer to it is the first part of your route to a name.
+- Every case in this subject starts with this question. Your answer to it is the first of your answers on the way to a name.
 
 ### 44. Where would you meet this?
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 44 of 45*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 44 of 45*
 
 [reviewers only: card kind `transfer`, id `transfer-gate`]
 
@@ -2471,7 +2471,7 @@ One line is enough. It is kept on this device only and is never marked.
 
 ### 45. A plan, if you want one
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 45 of 45*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 45 of 45*
 
 [reviewers only: card kind `plan`, id `plan-gate`]
 
@@ -2492,7 +2492,7 @@ Or write your own: If …, then I will …
 
 ## After the unit: what comes back on later days
 
-A name that is due returns as a case the learner has not seen, next to a case of the name they most often confuse it with. Each is asked the key’s first question, with the full feedback of the last case stage. These are the fresh cases held back for that purpose: three for each name, one for each scheduled return. The first return is about two days after the drill, the next about a week after that, the next about three and a half weeks later.
+A name that is due returns as a case the learner has not seen, next to a case of the name they most often confuse it with. Each is asked the first question, with the full feedback of the last case stage. These are the fresh cases held back for that purpose: three for each name, one for each scheduled return. The first return is about two days after the drill, the next about a week after that, the next about three and a half weeks later.
 
 **Return case 1 of 20**
 
@@ -2511,9 +2511,9 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **Something taken out of it every year.**” Two charges come out of her money every year: “It takes 0.45% a year for holding it, on top of 0.6% for the funds”. Together they are 1.05% of £90,000, which is £945.
   - Why not **“Nothing in the case”**: A case with nothing to name raises no charge, tax or sum spent. This one names two charges and gives their size.
 - If you miss: “The answer is **Something taken out of it every year.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **One thing most of it depends on**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **A fall in prices it is not ready for**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, money leaves *the pot* because of how the person pays for their life, and a fall in prices can be somewhere in the story. **“Something taken out of it every year”** is about what leaves every year whatever prices do: a charge, a tax bill, or a sum spent. **“A fall in prices it is not ready for”** is about the day things have to be sold: prices have fallen, or could fall, just when the money is needed. Is the case about how much leaves *the pot* each year, whatever prices do? Or is it about the days when things have to be sold, because prices have fallen just when the money is needed?
-  - If you chose **The handover to other people**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, money leaves the owner’s hands for someone else: a firm or the tax office in one, family in the other. In **“Something taken out of it every year”** something leaves every year, for as long as the money is kept. In **“The handover to other people”** what is at stake comes once, when the owner dies or can no longer act, and it depends on who gets the money and what is taken first. Does it come out every year while the owner is alive? Or does it arise once, at a death, an illness or a gift?
+  - If you chose **One thing most of it depends on**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **A fall in prices it is not ready for**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, money leaves *the pot* because of how the person pays for their life, and a fall in prices can be somewhere in the story. **“Something taken out of it every year”** is about what leaves every year whatever prices do: a charge, a tax bill, or a sum spent. **“A fall in prices it is not ready for”** is about the day things have to be sold: prices have fallen, or could fall, just when the money is needed. Is the case about how much leaves *the pot* each year, whatever prices do? Or is it about the days when things have to be sold, because prices have fallen just when the money is needed?
+  - If you chose **The handover to other people**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, money leaves the owner’s hands for someone else: a firm or the tax office in one, family in the other. In **“Something taken out of it every year”** something leaves every year, for as long as the money is kept. In **“The handover to other people”** what is at stake comes once, when the owner dies or can no longer act, and it depends on who gets the money and what is taken first. Does it come out every year while the owner is alive? Or does it arise once, at a death, an illness or a gift?
   - If you chose **Nothing in the case**: the “why not” line above. Then the lines from the card that compared the two: In both, money is being kept in investments over many years, and the person may have no complaint. In **“Something taken out of it every year”** the case raises a charge, a tax bill or a sum being spent. In **“Nothing in the case”** it raises none of them: nothing is said about anything that comes out. Does the case say anything about a charge, a tax bill or a sum taken out? If you cannot point to the words, it does not.
 - What would make it a different name: If the platform took nothing, and the case said only that Joyce checks the balance once a year and will use the money at 67, it would be **“Nothing in the case”**.
 - Taught on: “Small sums going out of what a person has built up, every year” (one tap opens the card).
@@ -2535,10 +2535,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **Something taken out of it every year.**” A sum comes out of the money every year, to spend: “Each year he takes out £22,500 to spend”. £22,500 is 5% of £450,000. The balance is not falling, and the case is still about something that comes out every year.
   - Why not **“A fall in prices it is not ready for”**: The case does not say that prices have fallen or that a bill is due on a date. What it shows is a sum that comes out every year.
 - If you miss: “The answer is **Something taken out of it every year.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **One thing most of it depends on**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose **One thing most of it depends on**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A fall in prices it is not ready for**: the “why not” line above. Then the lines from the card that compared the two: In both, money leaves *the pot* because of how the person pays for their life, and a fall in prices can be somewhere in the story. **“Something taken out of it every year”** is about what leaves every year whatever prices do: a charge, a tax bill, or a sum spent. **“A fall in prices it is not ready for”** is about the day things have to be sold: prices have fallen, or could fall, just when the money is needed. Is the case about how much leaves *the pot* each year, whatever prices do? Or is it about the days when things have to be sold, because prices have fallen just when the money is needed?
-  - If you chose **The handover to other people**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, money leaves the owner’s hands for someone else: a firm or the tax office in one, family in the other. In **“Something taken out of it every year”** something leaves every year, for as long as the money is kept. In **“The handover to other people”** what is at stake comes once, when the owner dies or can no longer act, and it depends on who gets the money and what is taken first. Does it come out every year while the owner is alive? Or does it arise once, at a death, an illness or a gift?
-  - If you chose **Nothing in the case**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, money is being kept in investments over many years, and the person may have no complaint. In **“Something taken out of it every year”** the case raises a charge, a tax bill or a sum being spent. In **“Nothing in the case”** it raises none of them: nothing is said about anything that comes out. Does the case say anything about a charge, a tax bill or a sum taken out? If you cannot point to the words, it does not.
+  - If you chose **The handover to other people**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, money leaves the owner’s hands for someone else: a firm or the tax office in one, family in the other. In **“Something taken out of it every year”** something leaves every year, for as long as the money is kept. In **“The handover to other people”** what is at stake comes once, when the owner dies or can no longer act, and it depends on who gets the money and what is taken first. Does it come out every year while the owner is alive? Or does it arise once, at a death, an illness or a gift?
+  - If you chose **Nothing in the case**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, money is being kept in investments over many years, and the person may have no complaint. In **“Something taken out of it every year”** the case raises a charge, a tax bill or a sum being spent. In **“Nothing in the case”** it raises none of them: nothing is said about anything that comes out. Does the case say anything about a charge, a tax bill or a sum taken out? If you cannot point to the words, it does not.
 - What would make it a different name: If the case said only that Moses has £450,000 that he will not need for decades, it would be **“Nothing in the case”**.
 - Taught on: “Small sums going out of what a person has built up, every year” (one tap opens the card).
 
@@ -2559,9 +2559,9 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **Something taken out of it every year.**” A tax bill comes out of what the investments pay out, every year: “every year she pays £1,120 tax on those payouts”. £1,120 is 40% of £2,800.
   - Why not **“Nothing in the case”**: The case is not silent about what comes out of her money. It names a tax bill and gives the amount.
 - If you miss: “The answer is **Something taken out of it every year.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **One thing most of it depends on**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **A fall in prices it is not ready for**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, money leaves *the pot* because of how the person pays for their life, and a fall in prices can be somewhere in the story. **“Something taken out of it every year”** is about what leaves every year whatever prices do: a charge, a tax bill, or a sum spent. **“A fall in prices it is not ready for”** is about the day things have to be sold: prices have fallen, or could fall, just when the money is needed. Is the case about how much leaves *the pot* each year, whatever prices do? Or is it about the days when things have to be sold, because prices have fallen just when the money is needed?
-  - If you chose **The handover to other people**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, money leaves the owner’s hands for someone else: a firm or the tax office in one, family in the other. In **“Something taken out of it every year”** something leaves every year, for as long as the money is kept. In **“The handover to other people”** what is at stake comes once, when the owner dies or can no longer act, and it depends on who gets the money and what is taken first. Does it come out every year while the owner is alive? Or does it arise once, at a death, an illness or a gift?
+  - If you chose **One thing most of it depends on**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **A fall in prices it is not ready for**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, money leaves *the pot* because of how the person pays for their life, and a fall in prices can be somewhere in the story. **“Something taken out of it every year”** is about what leaves every year whatever prices do: a charge, a tax bill, or a sum spent. **“A fall in prices it is not ready for”** is about the day things have to be sold: prices have fallen, or could fall, just when the money is needed. Is the case about how much leaves *the pot* each year, whatever prices do? Or is it about the days when things have to be sold, because prices have fallen just when the money is needed?
+  - If you chose **The handover to other people**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, money leaves the owner’s hands for someone else: a firm or the tax office in one, family in the other. In **“Something taken out of it every year”** something leaves every year, for as long as the money is kept. In **“The handover to other people”** what is at stake comes once, when the owner dies or can no longer act, and it depends on who gets the money and what is taken first. Does it come out every year while the owner is alive? Or does it arise once, at a death, an illness or a gift?
   - If you chose **Nothing in the case**: the “why not” line above. Then the lines from the card that compared the two: In both, money is being kept in investments over many years, and the person may have no complaint. In **“Something taken out of it every year”** the case raises a charge, a tax bill or a sum being spent. In **“Nothing in the case”** it raises none of them: nothing is said about anything that comes out. Does the case say anything about a charge, a tax bill or a sum taken out? If you cannot point to the words, it does not.
 - What would make it a different name: If the shares paid nothing out and the case said only that Alana holds £80,000 she will not need for thirty years, it would be **“Nothing in the case”**.
 - Taught on: “Small sums going out of what a person has built up, every year” (one tap opens the card).
@@ -2580,14 +2580,14 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Something taken out of it every year.**” A fixed sum comes out of money that has shrunk: “He still takes £30,000 a year, which is now 8.8% of what is left”. The fall in prices is in the case and it explains the shrinking, but the case is about the sum. When a case shows both, the key chooses **“Something taken out of it every year”**.
+- If you are right: “Right: **Something taken out of it every year.**” A fixed sum comes out of money that has shrunk: “He still takes £30,000 a year, which is now 8.8% of what is left”. The fall in prices is in the case and it explains the shrinking, but the case is about the sum. When a case shows both, the answer is **“Something taken out of it every year”**.
   - Why not **“A fall in prices it is not ready for”**: The fall is in the case, so Pavel’s own explanation points to prices. But the sum was set for money that no longer exists, and that is what the case raises.
 - If you miss: “The answer is **Something taken out of it every year.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **One thing most of it depends on**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **A fall in prices it is not ready for**: This case does show that. It also shows the same sum taken out every year from a pot that has shrunk, or a sale planned to put the mix back that would bring a tax bill new money could avoid, and when a case shows both, the key’s answer is **Something taken out of it every year**. Then the lines from the card that compared the two: In both, money leaves *the pot* because of how the person pays for their life, and a fall in prices can be somewhere in the story. **“Something taken out of it every year”** is about what leaves every year whatever prices do: a charge, a tax bill, or a sum spent. **“A fall in prices it is not ready for”** is about the day things have to be sold: prices have fallen, or could fall, just when the money is needed. Is the case about how much leaves *the pot* each year, whatever prices do? Or is it about the days when things have to be sold, because prices have fallen just when the money is needed?
-  - If you chose **The handover to other people**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, money leaves the owner’s hands for someone else: a firm or the tax office in one, family in the other. In **“Something taken out of it every year”** something leaves every year, for as long as the money is kept. In **“The handover to other people”** what is at stake comes once, when the owner dies or can no longer act, and it depends on who gets the money and what is taken first. Does it come out every year while the owner is alive? Or does it arise once, at a death, an illness or a gift?
-  - If you chose **Nothing in the case**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, money is being kept in investments over many years, and the person may have no complaint. In **“Something taken out of it every year”** the case raises a charge, a tax bill or a sum being spent. In **“Nothing in the case”** it raises none of them: nothing is said about anything that comes out. Does the case say anything about a charge, a tax bill or a sum taken out? If you cannot point to the words, it does not.
-- This case may have brought back *Pete and Jean*, which was **“A fall in prices it is not ready for”**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose **One thing most of it depends on**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **A fall in prices it is not ready for**: This case does show that. It also shows the same sum taken out every year from a pot that has shrunk, or a sale planned to put the mix back that would bring a tax bill new money could avoid, and when a case shows both, the answer is **Something taken out of it every year**. Then the lines from the card that compared the two: In both, money leaves *the pot* because of how the person pays for their life, and a fall in prices can be somewhere in the story. **“Something taken out of it every year”** is about what leaves every year whatever prices do: a charge, a tax bill, or a sum spent. **“A fall in prices it is not ready for”** is about the day things have to be sold: prices have fallen, or could fall, just when the money is needed. Is the case about how much leaves *the pot* each year, whatever prices do? Or is it about the days when things have to be sold, because prices have fallen just when the money is needed?
+  - If you chose **The handover to other people**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, money leaves the owner’s hands for someone else: a firm or the tax office in one, family in the other. In **“Something taken out of it every year”** something leaves every year, for as long as the money is kept. In **“The handover to other people”** what is at stake comes once, when the owner dies or can no longer act, and it depends on who gets the money and what is taken first. Does it come out every year while the owner is alive? Or does it arise once, at a death, an illness or a gift?
+  - If you chose **Nothing in the case**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, money is being kept in investments over many years, and the person may have no complaint. In **“Something taken out of it every year”** the case raises a charge, a tax bill or a sum being spent. In **“Nothing in the case”** it raises none of them: nothing is said about anything that comes out. Does the case say anything about a charge, a tax bill or a sum taken out? If you cannot point to the words, it does not.
+- This case may have brought back *Pete and Jean*, which was **“A fall in prices it is not ready for”**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If the sum he took out had always been a fair share of whatever his money was worth, and the only fact were that prices fell, it would be **“A fall in prices it is not ready for”**.
 - Taught on: “Small sums going out of what a person has built up, every year” (one tap opens the card).
 
@@ -2609,9 +2609,9 @@ A name that is due returns as a case the learner has not seen, next to a case of
   - Why not **“Something taken out of it every year”**: The wedding is money going out, but the case is about the day it falls due and what the money for it is held in, not about a sum that comes out every year.
 - If you miss: “The answer is **A fall in prices it is not ready for.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **Something taken out of it every year**: the “why not” line above. Then the lines from the card that compared the two: In both, money leaves *the pot* because of how the person pays for their life, and a fall in prices can be somewhere in the story. **“Something taken out of it every year”** is about what leaves every year whatever prices do: a charge, a tax bill, or a sum spent. **“A fall in prices it is not ready for”** is about the day things have to be sold: prices have fallen, or could fall, just when the money is needed. Is the case about how much leaves *the pot* each year, whatever prices do? Or is it about the days when things have to be sold, because prices have fallen just when the money is needed?
-  - If you chose **One thing most of it depends on**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, a fall in prices is part of the story, and the person could lose a large part of what they have. In **“One thing most of it depends on”** the harm comes through one company, one property, one business, one demand in a lawsuit or one loan, and could happen whatever the rest of the market does. In **“A fall in prices it is not ready for”** the harm comes from prices falling in general, on a day when the money is needed or the split has moved. Would one thing do the damage even if every other price stayed where it is? Or is the damage done by prices falling across the board, on a day when the money is needed?
-  - If you chose **The handover to other people**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **Nothing in the case**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, the money is invested, and prices may fall. In **“Nothing in the case”** no money is needed from the investments for years and no plan has been drifted from, so a fall is only a fall and there is time for prices to come back. In **“A fall in prices it is not ready for”** the case shows something a fall would catch: living costs, a bill on a date, or a mix that has moved. When is the money needed? Does the case show living costs, a bill on a date, or a mix that has moved, that a fall would catch? Or is nothing needed from it for years?
+  - If you chose **One thing most of it depends on**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, a fall in prices is part of the story, and the person could lose a large part of what they have. In **“One thing most of it depends on”** the harm comes through one company, one property, one business, one demand in a lawsuit or one loan, and could happen whatever the rest of the market does. In **“A fall in prices it is not ready for”** the harm comes from prices falling in general, on a day when the money is needed or the split has moved. Would one thing do the damage even if every other price stayed where it is? Or is the damage done by prices falling across the board, on a day when the money is needed?
+  - If you chose **The handover to other people**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **Nothing in the case**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, the money is invested, and prices may fall. In **“Nothing in the case”** no money is needed from the investments for years and no plan has been drifted from, so a fall is only a fall and there is time for prices to come back. In **“A fall in prices it is not ready for”** the case shows something a fall would catch: living costs, a bill on a date, or a mix that has moved. When is the money needed? Does the case show living costs, a bill on a date, or a mix that has moved, that a fall would catch? Or is nothing needed from it for years?
 - What would make it a different name: If the case said only that Hannah has £18,000 that she will not need for fifteen years, it would be **“Nothing in the case”**.
 - Taught on: “Prices falling just when the money is needed” (one tap opens the card).
 
@@ -2632,9 +2632,9 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **A fall in prices it is not ready for.**” The case shows a split that has moved well away from the one he chose: “chose to keep half of his money in shares when he was 50” and “£300,000 of his £360,000 is in shares, which is 83%”. A fall of 30% in shares would now take £90,000, which is 25% of everything, where his plan allowed 15%.
   - Why not **“Nothing in the case”**: A case with nothing to name shows no plan that has drifted. Here the split is far from the plan, and he needs the money in eighteen months.
 - If you miss: “The answer is **A fall in prices it is not ready for.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **Something taken out of it every year**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, money leaves *the pot* because of how the person pays for their life, and a fall in prices can be somewhere in the story. **“Something taken out of it every year”** is about what leaves every year whatever prices do: a charge, a tax bill, or a sum spent. **“A fall in prices it is not ready for”** is about the day things have to be sold: prices have fallen, or could fall, just when the money is needed. Is the case about how much leaves *the pot* each year, whatever prices do? Or is it about the days when things have to be sold, because prices have fallen just when the money is needed?
-  - If you chose **One thing most of it depends on**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, a fall in prices is part of the story, and the person could lose a large part of what they have. In **“One thing most of it depends on”** the harm comes through one company, one property, one business, one demand in a lawsuit or one loan, and could happen whatever the rest of the market does. In **“A fall in prices it is not ready for”** the harm comes from prices falling in general, on a day when the money is needed or the split has moved. Would one thing do the damage even if every other price stayed where it is? Or is the damage done by prices falling across the board, on a day when the money is needed?
-  - If you chose **The handover to other people**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose **Something taken out of it every year**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, money leaves *the pot* because of how the person pays for their life, and a fall in prices can be somewhere in the story. **“Something taken out of it every year”** is about what leaves every year whatever prices do: a charge, a tax bill, or a sum spent. **“A fall in prices it is not ready for”** is about the day things have to be sold: prices have fallen, or could fall, just when the money is needed. Is the case about how much leaves *the pot* each year, whatever prices do? Or is it about the days when things have to be sold, because prices have fallen just when the money is needed?
+  - If you chose **One thing most of it depends on**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, a fall in prices is part of the story, and the person could lose a large part of what they have. In **“One thing most of it depends on”** the harm comes through one company, one property, one business, one demand in a lawsuit or one loan, and could happen whatever the rest of the market does. In **“A fall in prices it is not ready for”** the harm comes from prices falling in general, on a day when the money is needed or the split has moved. Would one thing do the damage even if every other price stayed where it is? Or is the damage done by prices falling across the board, on a day when the money is needed?
+  - If you chose **The handover to other people**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Nothing in the case**: the “why not” line above. Then the lines from the card that compared the two: In both, the money is invested, and prices may fall. In **“Nothing in the case”** no money is needed from the investments for years and no plan has been drifted from, so a fall is only a fall and there is time for prices to come back. In **“A fall in prices it is not ready for”** the case shows something a fall would catch: living costs, a bill on a date, or a mix that has moved. When is the money needed? Does the case show living costs, a bill on a date, or a mix that has moved, that a fall would catch? Or is nothing needed from it for years?
 - What would make it a different name: If the case said nothing about his plan, only that Barry has £360,000 that he will not need for twenty years, it would be **“Nothing in the case”**.
 - Taught on: “Prices falling just when the money is needed” (one tap opens the card).
@@ -2657,9 +2657,9 @@ A name that is due returns as a case the learner has not seen, next to a case of
   - Why not **“Something taken out of it every year”**: No sum is described as too large for her money, or as fixed when her money was bigger. The case is about having to sell in a fall.
 - If you miss: “The answer is **A fall in prices it is not ready for.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **Something taken out of it every year**: the “why not” line above. Then the lines from the card that compared the two: In both, money leaves *the pot* because of how the person pays for their life, and a fall in prices can be somewhere in the story. **“Something taken out of it every year”** is about what leaves every year whatever prices do: a charge, a tax bill, or a sum spent. **“A fall in prices it is not ready for”** is about the day things have to be sold: prices have fallen, or could fall, just when the money is needed. Is the case about how much leaves *the pot* each year, whatever prices do? Or is it about the days when things have to be sold, because prices have fallen just when the money is needed?
-  - If you chose **One thing most of it depends on**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, a fall in prices is part of the story, and the person could lose a large part of what they have. In **“One thing most of it depends on”** the harm comes through one company, one property, one business, one demand in a lawsuit or one loan, and could happen whatever the rest of the market does. In **“A fall in prices it is not ready for”** the harm comes from prices falling in general, on a day when the money is needed or the split has moved. Would one thing do the damage even if every other price stayed where it is? Or is the damage done by prices falling across the board, on a day when the money is needed?
-  - If you chose **The handover to other people**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **Nothing in the case**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, the money is invested, and prices may fall. In **“Nothing in the case”** no money is needed from the investments for years and no plan has been drifted from, so a fall is only a fall and there is time for prices to come back. In **“A fall in prices it is not ready for”** the case shows something a fall would catch: living costs, a bill on a date, or a mix that has moved. When is the money needed? Does the case show living costs, a bill on a date, or a mix that has moved, that a fall would catch? Or is nothing needed from it for years?
+  - If you chose **One thing most of it depends on**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, a fall in prices is part of the story, and the person could lose a large part of what they have. In **“One thing most of it depends on”** the harm comes through one company, one property, one business, one demand in a lawsuit or one loan, and could happen whatever the rest of the market does. In **“A fall in prices it is not ready for”** the harm comes from prices falling in general, on a day when the money is needed or the split has moved. Would one thing do the damage even if every other price stayed where it is? Or is the damage done by prices falling across the board, on a day when the money is needed?
+  - If you chose **The handover to other people**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **Nothing in the case**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, the money is invested, and prices may fall. In **“Nothing in the case”** no money is needed from the investments for years and no plan has been drifted from, so a fall is only a fall and there is time for prices to come back. In **“A fall in prices it is not ready for”** the case shows something a fall would catch: living costs, a bill on a date, or a mix that has moved. When is the money needed? Does the case show living costs, a bill on a date, or a mix that has moved, that a fall would catch? Or is nothing needed from it for years?
 - What would make it a different name: If her bills were paid from a salary and the £280,000 were being kept untouched for twenty years, it would be **“Nothing in the case”**.
 - Taught on: “Prices falling just when the money is needed” (one tap opens the card).
 
@@ -2680,11 +2680,11 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **A fall in prices it is not ready for.**” The panic about one company brings back a case about too much in one place. Read on: “he needs £40,000 for a house on 1 June, three months away” and “the fund has dropped by 20%”. Only £5,000 of Quentin’s money is in that company, and no one thing is most of it. What a fall would catch is the £40,000 he must pay on a date, and it is held in funds that can fall.
   - Why not **“One thing most of it depends on”**: One company has fallen by half, but only £5,000 of £400,000 is in it, so the harm is not coming through one thing.
 - If you miss: “The answer is **A fall in prices it is not ready for.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **Something taken out of it every year**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, money leaves *the pot* because of how the person pays for their life, and a fall in prices can be somewhere in the story. **“Something taken out of it every year”** is about what leaves every year whatever prices do: a charge, a tax bill, or a sum spent. **“A fall in prices it is not ready for”** is about the day things have to be sold: prices have fallen, or could fall, just when the money is needed. Is the case about how much leaves *the pot* each year, whatever prices do? Or is it about the days when things have to be sold, because prices have fallen just when the money is needed?
+  - If you chose **Something taken out of it every year**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, money leaves *the pot* because of how the person pays for their life, and a fall in prices can be somewhere in the story. **“Something taken out of it every year”** is about what leaves every year whatever prices do: a charge, a tax bill, or a sum spent. **“A fall in prices it is not ready for”** is about the day things have to be sold: prices have fallen, or could fall, just when the money is needed. Is the case about how much leaves *the pot* each year, whatever prices do? Or is it about the days when things have to be sold, because prices have fallen just when the money is needed?
   - If you chose **One thing most of it depends on**: the “why not” line above. Then the lines from the card that compared the two: In both, a fall in prices is part of the story, and the person could lose a large part of what they have. In **“One thing most of it depends on”** the harm comes through one company, one property, one business, one demand in a lawsuit or one loan, and could happen whatever the rest of the market does. In **“A fall in prices it is not ready for”** the harm comes from prices falling in general, on a day when the money is needed or the split has moved. Would one thing do the damage even if every other price stayed where it is? Or is the damage done by prices falling across the board, on a day when the money is needed?
-  - If you chose **The handover to other people**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **Nothing in the case**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, the money is invested, and prices may fall. In **“Nothing in the case”** no money is needed from the investments for years and no plan has been drifted from, so a fall is only a fall and there is time for prices to come back. In **“A fall in prices it is not ready for”** the case shows something a fall would catch: living costs, a bill on a date, or a mix that has moved. When is the money needed? Does the case show living costs, a bill on a date, or a mix that has moved, that a fall would catch? Or is nothing needed from it for years?
-- This case may have brought back *Karim and the company shares*, which was **“One thing most of it depends on”**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose **The handover to other people**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **Nothing in the case**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, the money is invested, and prices may fall. In **“Nothing in the case”** no money is needed from the investments for years and no plan has been drifted from, so a fall is only a fall and there is time for prices to come back. In **“A fall in prices it is not ready for”** the case shows something a fall would catch: living costs, a bill on a date, or a mix that has moved. When is the money needed? Does the case show living costs, a bill on a date, or a mix that has moved, that a fall would catch? Or is nothing needed from it for years?
+- This case may have brought back *Karim and the company shares*, which was **“One thing most of it depends on”**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If £340,000 of his £400,000 were shares in that company, and nothing were due on a date, it would be **“One thing most of it depends on”**.
 - Taught on: “Prices falling just when the money is needed” (one tap opens the card).
 
@@ -2705,10 +2705,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **One thing most of it depends on.**” One thing is most of what she has: “£550,000 of it is one hotel that she owns and runs”. £550,000 out of £700,000 is about 79%, and it is a business she runs.
   - Why not **“A fall in prices it is not ready for”**: No fall in prices in general, bill on a date or living costs appear. What the case raises is how much rests on one hotel.
 - If you miss: “The answer is **One thing most of it depends on.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **Something taken out of it every year**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose **Something taken out of it every year**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A fall in prices it is not ready for**: the “why not” line above. Then the lines from the card that compared the two: In both, a fall in prices is part of the story, and the person could lose a large part of what they have. In **“One thing most of it depends on”** the harm comes through one company, one property, one business, one demand in a lawsuit or one loan, and could happen whatever the rest of the market does. In **“A fall in prices it is not ready for”** the harm comes from prices falling in general, on a day when the money is needed or the split has moved. Would one thing do the damage even if every other price stayed where it is? Or is the damage done by prices falling across the board, on a day when the money is needed?
-  - If you chose **The handover to other people**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **Nothing in the case**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, the person may hold shares or property, and may feel well off. **“One thing most of it depends on”** shows one thing that is most of what the person has, or *a claim* or a loan that could reach all of it. **“Nothing in the case”** shows nothing of the kind: what the person has is spread out, and no claim or loan is in the case. Is there one company, property, business, claim or loan that is most of the case? Or is it spread, with nothing in it that could reach everything?
+  - If you chose **The handover to other people**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **Nothing in the case**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, the person may hold shares or property, and may feel well off. **“One thing most of it depends on”** shows one thing that is most of what the person has, or *a claim* or a loan that could reach all of it. **“Nothing in the case”** shows nothing of the kind: what the person has is spread out, and no claim or loan is in the case. Is there one company, property, business, claim or loan that is most of the case? Or is it spread, with nothing in it that could reach everything?
 - What would make it a different name: If her money were spread over many things, and she owned no hotel, it would be **“Nothing in the case”**.
 - Taught on: “One thing that could take most of what a person has built up, at once” (one tap opens the card).
 
@@ -2729,10 +2729,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **One thing most of it depends on.**” The case shows *a claim* that could be far bigger than the insurance: “his lawyer is demanding £1,500,000” and “Marek's insurance pays up to £300,000”. £1,200,000 of it would be left over, which is more than everything he owns.
   - Why not **“A fall in prices it is not ready for”**: No fall in prices and no bill on a date appear. What could take most of what he has is a single demand, all at once.
 - If you miss: “The answer is **One thing most of it depends on.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **Something taken out of it every year**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose **Something taken out of it every year**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A fall in prices it is not ready for**: the “why not” line above. Then the lines from the card that compared the two: In both, a fall in prices is part of the story, and the person could lose a large part of what they have. In **“One thing most of it depends on”** the harm comes through one company, one property, one business, one demand in a lawsuit or one loan, and could happen whatever the rest of the market does. In **“A fall in prices it is not ready for”** the harm comes from prices falling in general, on a day when the money is needed or the split has moved. Would one thing do the damage even if every other price stayed where it is? Or is the damage done by prices falling across the board, on a day when the money is needed?
-  - If you chose **The handover to other people**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **Nothing in the case**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, the person may hold shares or property, and may feel well off. **“One thing most of it depends on”** shows one thing that is most of what the person has, or *a claim* or a loan that could reach all of it. **“Nothing in the case”** shows nothing of the kind: what the person has is spread out, and no claim or loan is in the case. Is there one company, property, business, claim or loan that is most of the case? Or is it spread, with nothing in it that could reach everything?
+  - If you chose **The handover to other people**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **Nothing in the case**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, the person may hold shares or property, and may feel well off. **“One thing most of it depends on”** shows one thing that is most of what the person has, or *a claim* or a loan that could reach all of it. **“Nothing in the case”** shows nothing of the kind: what the person has is spread out, and no claim or loan is in the case. Is there one company, property, business, claim or loan that is most of the case? Or is it spread, with nothing in it that could reach everything?
 - What would make it a different name: If the demand were £200,000 and the insurance paid up to £300,000, there would be nothing left to find, and the case would raise none of the four.
 - Taught on: “One thing that could take most of what a person has built up, at once” (one tap opens the card).
 
@@ -2753,10 +2753,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **One thing most of it depends on.**” One company is most of what she has: “They are now £330,000 of the £400,000 she owns”. £330,000 out of £400,000 is about 83%. That she cannot yet sell them does not change what the case raises, which is how much rests on one company.
   - Why not **“A fall in prices it is not ready for”**: No fall in prices in general and no bill on a date appear. What the case raises is one company that is most of what she has.
 - If you miss: “The answer is **One thing most of it depends on.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **Something taken out of it every year**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose **Something taken out of it every year**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A fall in prices it is not ready for**: the “why not” line above. Then the lines from the card that compared the two: In both, a fall in prices is part of the story, and the person could lose a large part of what they have. In **“One thing most of it depends on”** the harm comes through one company, one property, one business, one demand in a lawsuit or one loan, and could happen whatever the rest of the market does. In **“A fall in prices it is not ready for”** the harm comes from prices falling in general, on a day when the money is needed or the split has moved. Would one thing do the damage even if every other price stayed where it is? Or is the damage done by prices falling across the board, on a day when the money is needed?
-  - If you chose **The handover to other people**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **Nothing in the case**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, the person may hold shares or property, and may feel well off. **“One thing most of it depends on”** shows one thing that is most of what the person has, or *a claim* or a loan that could reach all of it. **“Nothing in the case”** shows nothing of the kind: what the person has is spread out, and no claim or loan is in the case. Is there one company, property, business, claim or loan that is most of the case? Or is it spread, with nothing in it that could reach everything?
+  - If you chose **The handover to other people**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **Nothing in the case**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, the person may hold shares or property, and may feel well off. **“One thing most of it depends on”** shows one thing that is most of what the person has, or *a claim* or a loan that could reach all of it. **“Nothing in the case”** shows nothing of the kind: what the person has is spread out, and no claim or loan is in the case. Is there one company, property, business, claim or loan that is most of the case? Or is it spread, with nothing in it that could reach everything?
 - What would make it a different name: If the shares were only £20,000 of her £400,000, with the rest spread out, it would be **“Nothing in the case”**.
 - Taught on: “One thing that could take most of what a person has built up, at once” (one tap opens the card).
 
@@ -2777,11 +2777,11 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **One thing most of it depends on.**” A long wait before the money is needed brings back a case with nothing to name. Read on: “£280,000 of her £320,000 is shares in the start-up where she works”. £280,000 out of £320,000 is about 88%, in one company. Time to wait does not remove that risk: if the start-up failed, most of what she has would go with it.
   - Why not **“Nothing in the case”**: The long wait is true, and it is why a fall in prices would not catch her. But the fifth answer is for a case that raises none of the four, and this one raises one thing that is nearly all of her money.
 - If you miss: “The answer is **One thing most of it depends on.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **Something taken out of it every year**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **A fall in prices it is not ready for**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, a fall in prices is part of the story, and the person could lose a large part of what they have. In **“One thing most of it depends on”** the harm comes through one company, one property, one business, one demand in a lawsuit or one loan, and could happen whatever the rest of the market does. In **“A fall in prices it is not ready for”** the harm comes from prices falling in general, on a day when the money is needed or the split has moved. Would one thing do the damage even if every other price stayed where it is? Or is the damage done by prices falling across the board, on a day when the money is needed?
-  - If you chose **The handover to other people**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose **Something taken out of it every year**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **A fall in prices it is not ready for**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, a fall in prices is part of the story, and the person could lose a large part of what they have. In **“One thing most of it depends on”** the harm comes through one company, one property, one business, one demand in a lawsuit or one loan, and could happen whatever the rest of the market does. In **“A fall in prices it is not ready for”** the harm comes from prices falling in general, on a day when the money is needed or the split has moved. Would one thing do the damage even if every other price stayed where it is? Or is the damage done by prices falling across the board, on a day when the money is needed?
+  - If you chose **The handover to other people**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Nothing in the case**: the “why not” line above. Then the lines from the card that compared the two: In both, the person may hold shares or property, and may feel well off. **“One thing most of it depends on”** shows one thing that is most of what the person has, or *a claim* or a loan that could reach all of it. **“Nothing in the case”** shows nothing of the kind: what the person has is spread out, and no claim or loan is in the case. Is there one company, property, business, claim or loan that is most of the case? Or is it spread, with nothing in it that could reach everything?
-- This case may have brought back *Aisha and the pension*, which was **“Nothing in the case”**. When a likeness and the key disagree, go by the words that answer the key’s question.
+- This case may have brought back *Aisha and the pension*, which was **“Nothing in the case”**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If her £320,000 were spread over many things, and the start-up were only a small part of it, nothing would raise one of the four, and it would be **“Nothing in the case”**.
 - Taught on: “One thing that could take most of what a person has built up, at once” (one tap opens the card).
 
@@ -2803,9 +2803,9 @@ A name that is due returns as a case the learner has not seen, next to a case of
   - Why not **“Something taken out of it every year”**: Nothing comes out of his money every year in the case. What it raises is who could act for him, once, if he were ill.
 - If you miss: “The answer is **The handover to other people.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **Something taken out of it every year**: the “why not” line above. Then the lines from the card that compared the two: In both, money leaves the owner’s hands for someone else: a firm or the tax office in one, family in the other. In **“Something taken out of it every year”** something leaves every year, for as long as the money is kept. In **“The handover to other people”** what is at stake comes once, when the owner dies or can no longer act, and it depends on who gets the money and what is taken first. Does it come out every year while the owner is alive? Or does it arise once, at a death, an illness or a gift?
-  - If you chose **One thing most of it depends on**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **A fall in prices it is not ready for**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **Nothing in the case**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, the owner may be well and the money may be in good order. **“The handover to other people”** is the answer whenever the case is about what happens when the owner dies or cannot act, even when every paper is in order. **“Nothing in the case”** is the answer only when the case says nothing about a death, an illness or a gift. Does the case say anything about a death, a will, a form, an illness or a gift? If you cannot point to the words, it does not.
+  - If you chose **One thing most of it depends on**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **A fall in prices it is not ready for**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **Nothing in the case**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, the owner may be well and the money may be in good order. **“The handover to other people”** is the answer whenever the case is about what happens when the owner dies or cannot act, even when every paper is in order. **“Nothing in the case”** is the answer only when the case says nothing about a death, an illness or a gift. Does the case say anything about a death, a will, a form, an illness or a gift? If you cannot point to the words, it does not.
 - What would make it a different name: If the form had been signed last year, the case would still be **“The handover to other people”**: a case about who can act keeps that answer even when the paper is in order.
 - Taught on: “What happens when the money passes on, or someone else has to act for its owner” (one tap opens the card).
 
@@ -2827,9 +2827,9 @@ A name that is due returns as a case the learner has not seen, next to a case of
   - Why not **“Something taken out of it every year”**: Nothing comes out of her money every year in the case. The tax it raises falls once, after her death.
 - If you miss: “The answer is **The handover to other people.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **Something taken out of it every year**: the “why not” line above. Then the lines from the card that compared the two: In both, money leaves the owner’s hands for someone else: a firm or the tax office in one, family in the other. In **“Something taken out of it every year”** something leaves every year, for as long as the money is kept. In **“The handover to other people”** what is at stake comes once, when the owner dies or can no longer act, and it depends on who gets the money and what is taken first. Does it come out every year while the owner is alive? Or does it arise once, at a death, an illness or a gift?
-  - If you chose **One thing most of it depends on**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **A fall in prices it is not ready for**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **Nothing in the case**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, the owner may be well and the money may be in good order. **“The handover to other people”** is the answer whenever the case is about what happens when the owner dies or cannot act, even when every paper is in order. **“Nothing in the case”** is the answer only when the case says nothing about a death, an illness or a gift. Does the case say anything about a death, a will, a form, an illness or a gift? If you cannot point to the words, it does not.
+  - If you chose **One thing most of it depends on**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **A fall in prices it is not ready for**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **Nothing in the case**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, the owner may be well and the money may be in good order. **“The handover to other people”** is the answer whenever the case is about what happens when the owner dies or cannot act, even when every paper is in order. **“Nothing in the case”** is the answer only when the case says nothing about a death, an illness or a gift. Does the case say anything about a death, a will, a form, an illness or a gift? If you cannot point to the words, it does not.
 - What would make it a different name: If the estate were £300,000, below the limit, and the case said nothing about wills, it would be **“Nothing in the case”**, because nothing would raise a handover.
 - Taught on: “What happens when the money passes on, or someone else has to act for its owner” (one tap opens the card).
 
@@ -2850,9 +2850,9 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **The handover to other people.**” The case shows a risk in the person who will receive the money: “twice lent her savings to boyfriends who never paid them back”. What is at stake comes once, when the money reaches her.
   - Why not **“Nothing in the case”**: The fifth answer is for a case that says nothing about a death or who gets the money. This case is about who will receive £600,000 and what she may do with it.
 - If you miss: “The answer is **The handover to other people.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **Something taken out of it every year**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, money leaves the owner’s hands for someone else: a firm or the tax office in one, family in the other. In **“Something taken out of it every year”** something leaves every year, for as long as the money is kept. In **“The handover to other people”** what is at stake comes once, when the owner dies or can no longer act, and it depends on who gets the money and what is taken first. Does it come out every year while the owner is alive? Or does it arise once, at a death, an illness or a gift?
-  - If you chose **One thing most of it depends on**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **A fall in prices it is not ready for**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose **Something taken out of it every year**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, money leaves the owner’s hands for someone else: a firm or the tax office in one, family in the other. In **“Something taken out of it every year”** something leaves every year, for as long as the money is kept. In **“The handover to other people”** what is at stake comes once, when the owner dies or can no longer act, and it depends on who gets the money and what is taken first. Does it come out every year while the owner is alive? Or does it arise once, at a death, an illness or a gift?
+  - If you chose **One thing most of it depends on**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **A fall in prices it is not ready for**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Nothing in the case**: the “why not” line above. Then the lines from the card that compared the two: In both, the owner may be well and the money may be in good order. **“The handover to other people”** is the answer whenever the case is about what happens when the owner dies or cannot act, even when every paper is in order. **“Nothing in the case”** is the answer only when the case says nothing about a death, an illness or a gift. Does the case say anything about a death, a will, a form, an illness or a gift? If you cannot point to the words, it does not.
 - What would make it a different name: If the case said only that Niall has £600,000 and will not need it for twenty years, it would be **“Nothing in the case”**.
 - Taught on: “What happens when the money passes on, or someone else has to act for its owner” (one tap opens the card).
@@ -2874,11 +2874,11 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **The handover to other people.**” Someone reading an article about trusts brings back a case with nothing to name. Read on: “Her will, written in 1991, leaves everything to a sister who died in 2020”. The will names a person who has died, so the paper is out of date, and what is at stake comes once, when Greer dies.
   - Why not **“Nothing in the case”**: An article about a cure is not a reason in a case, but here the case also has a real paper that is out of date. There are words to point to.
 - If you miss: “The answer is **The handover to other people.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **Something taken out of it every year**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, money leaves the owner’s hands for someone else: a firm or the tax office in one, family in the other. In **“Something taken out of it every year”** something leaves every year, for as long as the money is kept. In **“The handover to other people”** what is at stake comes once, when the owner dies or can no longer act, and it depends on who gets the money and what is taken first. Does it come out every year while the owner is alive? Or does it arise once, at a death, an illness or a gift?
-  - If you chose **One thing most of it depends on**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **A fall in prices it is not ready for**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose **Something taken out of it every year**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, money leaves the owner’s hands for someone else: a firm or the tax office in one, family in the other. In **“Something taken out of it every year”** something leaves every year, for as long as the money is kept. In **“The handover to other people”** what is at stake comes once, when the owner dies or can no longer act, and it depends on who gets the money and what is taken first. Does it come out every year while the owner is alive? Or does it arise once, at a death, an illness or a gift?
+  - If you chose **One thing most of it depends on**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **A fall in prices it is not ready for**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Nothing in the case**: the “why not” line above. Then the lines from the card that compared the two: In both, the owner may be well and the money may be in good order. **“The handover to other people”** is the answer whenever the case is about what happens when the owner dies or cannot act, even when every paper is in order. **“Nothing in the case”** is the answer only when the case says nothing about a death, an illness or a gift. Does the case say anything about a death, a will, a form, an illness or a gift? If you cannot point to the words, it does not.
-- This case may have brought back *Tomás and the article*, which was **“Nothing in the case”**. When a likeness and the key disagree, go by the words that answer the key’s question.
+- This case may have brought back *Tomás and the article*, which was **“Nothing in the case”**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If her will had been written last year, and the case said only that she had read an article and asked a friend, it would still be **“The handover to other people”**: a case about a will keeps that answer.
 - Taught on: “What happens when the money passes on, or someone else has to act for its owner” (one tap opens the card).
 
@@ -2899,10 +2899,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **Nothing in the case.**” The case shows money being put away for years: “does not expect to touch it for twelve years”. Nothing in it comes out of the money, rests on one thing, falls due on a date or changes hands.
   - Why not **“A fall in prices it is not ready for”**: Prices could fall, but nothing is waiting for the money, so a fall catches nothing. There is no bill, no living costs and no plan that has drifted.
 - If you miss: “The answer is **Nothing in the case.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **Something taken out of it every year**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, money is being kept in investments over many years, and the person may have no complaint. In **“Something taken out of it every year”** the case raises a charge, a tax bill or a sum being spent. In **“Nothing in the case”** it raises none of them: nothing is said about anything that comes out. Does the case say anything about a charge, a tax bill or a sum taken out? If you cannot point to the words, it does not.
-  - If you chose **One thing most of it depends on**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, the person may hold shares or property, and may feel well off. **“One thing most of it depends on”** shows one thing that is most of what the person has, or *a claim* or a loan that could reach all of it. **“Nothing in the case”** shows nothing of the kind: what the person has is spread out, and no claim or loan is in the case. Is there one company, property, business, claim or loan that is most of the case? Or is it spread, with nothing in it that could reach everything?
+  - If you chose **Something taken out of it every year**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, money is being kept in investments over many years, and the person may have no complaint. In **“Something taken out of it every year”** the case raises a charge, a tax bill or a sum being spent. In **“Nothing in the case”** it raises none of them: nothing is said about anything that comes out. Does the case say anything about a charge, a tax bill or a sum taken out? If you cannot point to the words, it does not.
+  - If you chose **One thing most of it depends on**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, the person may hold shares or property, and may feel well off. **“One thing most of it depends on”** shows one thing that is most of what the person has, or *a claim* or a loan that could reach all of it. **“Nothing in the case”** shows nothing of the kind: what the person has is spread out, and no claim or loan is in the case. Is there one company, property, business, claim or loan that is most of the case? Or is it spread, with nothing in it that could reach everything?
   - If you chose **A fall in prices it is not ready for**: the “why not” line above. Then the lines from the card that compared the two: In both, the money is invested, and prices may fall. In **“Nothing in the case”** no money is needed from the investments for years and no plan has been drifted from, so a fall is only a fall and there is time for prices to come back. In **“A fall in prices it is not ready for”** the case shows something a fall would catch: living costs, a bill on a date, or a mix that has moved. When is the money needed? Does the case show living costs, a bill on a date, or a mix that has moved, that a fall would catch? Or is nothing needed from it for years?
-  - If you chose **The handover to other people**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, the owner may be well and the money may be in good order. **“The handover to other people”** is the answer whenever the case is about what happens when the owner dies or cannot act, even when every paper is in order. **“Nothing in the case”** is the answer only when the case says nothing about a death, an illness or a gift. Does the case say anything about a death, a will, a form, an illness or a gift? If you cannot point to the words, it does not.
+  - If you chose **The handover to other people**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, the owner may be well and the money may be in good order. **“The handover to other people”** is the answer whenever the case is about what happens when the owner dies or cannot act, even when every paper is in order. **“Nothing in the case”** is the answer only when the case says nothing about a death, an illness or a gift. Does the case say anything about a death, a will, a form, an illness or a gift? If you cannot point to the words, it does not.
 - What would make it a different name: If Sasha needed the savings for a flat deposit on a date three months away, it would be **“A fall in prices it is not ready for”**.
 - Taught on: “Money put away, with nothing in the case that could lose it” (one tap opens the card).
 
@@ -2924,9 +2924,9 @@ A name that is due returns as a case the learner has not seen, next to a case of
   - Why not **“Something taken out of it every year”**: The £500 is a price for a review he has not bought. It is not taken out of his money, and nothing comes out of it.
 - If you miss: “The answer is **Nothing in the case.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **Something taken out of it every year**: the “why not” line above. Then the lines from the card that compared the two: In both, money is being kept in investments over many years, and the person may have no complaint. In **“Something taken out of it every year”** the case raises a charge, a tax bill or a sum being spent. In **“Nothing in the case”** it raises none of them: nothing is said about anything that comes out. Does the case say anything about a charge, a tax bill or a sum taken out? If you cannot point to the words, it does not.
-  - If you chose **One thing most of it depends on**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, the person may hold shares or property, and may feel well off. **“One thing most of it depends on”** shows one thing that is most of what the person has, or *a claim* or a loan that could reach all of it. **“Nothing in the case”** shows nothing of the kind: what the person has is spread out, and no claim or loan is in the case. Is there one company, property, business, claim or loan that is most of the case? Or is it spread, with nothing in it that could reach everything?
-  - If you chose **A fall in prices it is not ready for**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, the money is invested, and prices may fall. In **“Nothing in the case”** no money is needed from the investments for years and no plan has been drifted from, so a fall is only a fall and there is time for prices to come back. In **“A fall in prices it is not ready for”** the case shows something a fall would catch: living costs, a bill on a date, or a mix that has moved. When is the money needed? Does the case show living costs, a bill on a date, or a mix that has moved, that a fall would catch? Or is nothing needed from it for years?
-  - If you chose **The handover to other people**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, the owner may be well and the money may be in good order. **“The handover to other people”** is the answer whenever the case is about what happens when the owner dies or cannot act, even when every paper is in order. **“Nothing in the case”** is the answer only when the case says nothing about a death, an illness or a gift. Does the case say anything about a death, a will, a form, an illness or a gift? If you cannot point to the words, it does not.
+  - If you chose **One thing most of it depends on**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, the person may hold shares or property, and may feel well off. **“One thing most of it depends on”** shows one thing that is most of what the person has, or *a claim* or a loan that could reach all of it. **“Nothing in the case”** shows nothing of the kind: what the person has is spread out, and no claim or loan is in the case. Is there one company, property, business, claim or loan that is most of the case? Or is it spread, with nothing in it that could reach everything?
+  - If you chose **A fall in prices it is not ready for**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, the money is invested, and prices may fall. In **“Nothing in the case”** no money is needed from the investments for years and no plan has been drifted from, so a fall is only a fall and there is time for prices to come back. In **“A fall in prices it is not ready for”** the case shows something a fall would catch: living costs, a bill on a date, or a mix that has moved. When is the money needed? Does the case show living costs, a bill on a date, or a mix that has moved, that a fall would catch? Or is nothing needed from it for years?
+  - If you chose **The handover to other people**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, the owner may be well and the money may be in good order. **“The handover to other people”** is the answer whenever the case is about what happens when the owner dies or cannot act, even when every paper is in order. **“Nothing in the case”** is the answer only when the case says nothing about a death, an illness or a gift. Does the case say anything about a death, a will, a form, an illness or a gift? If you cannot point to the words, it does not.
 - What would make it a different name: If Piet had been told that the pension takes 1.9% a year, there would be words to point to, and the case would be **“Something taken out of it every year”**.
 - Taught on: “Money put away, with nothing in the case that could lose it” (one tap opens the card).
 
@@ -2947,9 +2947,9 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **Nothing in the case.**” The case shows money being kept, with nothing waiting for it: “a pension that pays all her bills” and “she does not plan to spend”. A bank account cannot fall in price, and nothing comes out, rests on one thing or changes hands.
   - Why not **“The handover to other people”**: She is 75, but age alone raises nothing. The case is not about a will, a form, a gift or a death.
 - If you miss: “The answer is **Nothing in the case.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **Something taken out of it every year**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, money is being kept in investments over many years, and the person may have no complaint. In **“Something taken out of it every year”** the case raises a charge, a tax bill or a sum being spent. In **“Nothing in the case”** it raises none of them: nothing is said about anything that comes out. Does the case say anything about a charge, a tax bill or a sum taken out? If you cannot point to the words, it does not.
-  - If you chose **One thing most of it depends on**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, the person may hold shares or property, and may feel well off. **“One thing most of it depends on”** shows one thing that is most of what the person has, or *a claim* or a loan that could reach all of it. **“Nothing in the case”** shows nothing of the kind: what the person has is spread out, and no claim or loan is in the case. Is there one company, property, business, claim or loan that is most of the case? Or is it spread, with nothing in it that could reach everything?
-  - If you chose **A fall in prices it is not ready for**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, the money is invested, and prices may fall. In **“Nothing in the case”** no money is needed from the investments for years and no plan has been drifted from, so a fall is only a fall and there is time for prices to come back. In **“A fall in prices it is not ready for”** the case shows something a fall would catch: living costs, a bill on a date, or a mix that has moved. When is the money needed? Does the case show living costs, a bill on a date, or a mix that has moved, that a fall would catch? Or is nothing needed from it for years?
+  - If you chose **Something taken out of it every year**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, money is being kept in investments over many years, and the person may have no complaint. In **“Something taken out of it every year”** the case raises a charge, a tax bill or a sum being spent. In **“Nothing in the case”** it raises none of them: nothing is said about anything that comes out. Does the case say anything about a charge, a tax bill or a sum taken out? If you cannot point to the words, it does not.
+  - If you chose **One thing most of it depends on**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, the person may hold shares or property, and may feel well off. **“One thing most of it depends on”** shows one thing that is most of what the person has, or *a claim* or a loan that could reach all of it. **“Nothing in the case”** shows nothing of the kind: what the person has is spread out, and no claim or loan is in the case. Is there one company, property, business, claim or loan that is most of the case? Or is it spread, with nothing in it that could reach everything?
+  - If you chose **A fall in prices it is not ready for**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, the money is invested, and prices may fall. In **“Nothing in the case”** no money is needed from the investments for years and no plan has been drifted from, so a fall is only a fall and there is time for prices to come back. In **“A fall in prices it is not ready for”** the case shows something a fall would catch: living costs, a bill on a date, or a mix that has moved. When is the money needed? Does the case show living costs, a bill on a date, or a mix that has moved, that a fall would catch? Or is nothing needed from it for years?
   - If you chose **The handover to other people**: the “why not” line above. Then the lines from the card that compared the two: In both, the owner may be well and the money may be in good order. **“The handover to other people”** is the answer whenever the case is about what happens when the owner dies or cannot act, even when every paper is in order. **“Nothing in the case”** is the answer only when the case says nothing about a death, an illness or a gift. Does the case say anything about a death, a will, a form, an illness or a gift? If you cannot point to the words, it does not.
 - What would make it a different name: If the case said that she meant to give £50,000 a year to her grandchildren, it would be about gifts to family, and it would be **“The handover to other people”**.
 - Taught on: “Money put away, with nothing in the case that could lose it” (one tap opens the card).
@@ -2971,11 +2971,11 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **Nothing in the case.**” A business owner brings back a case about a demand that could reach everything. Read on: “The café is worth £40,000, and the rest of what she owns, £400,000”. The café is about 9% of what she owns, the rest is spread, and no demand or loan is in the case. No one thing is most of it.
   - Why not **“One thing most of it depends on”**: She owns a business, which is why the case looks like the third answer. But the café is £40,000 of £440,000, so it is not most of what she has, and no claim or loan is in the case.
 - If you miss: “The answer is **Nothing in the case.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **Something taken out of it every year**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, money is being kept in investments over many years, and the person may have no complaint. In **“Something taken out of it every year”** the case raises a charge, a tax bill or a sum being spent. In **“Nothing in the case”** it raises none of them: nothing is said about anything that comes out. Does the case say anything about a charge, a tax bill or a sum taken out? If you cannot point to the words, it does not.
+  - If you chose **Something taken out of it every year**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, money is being kept in investments over many years, and the person may have no complaint. In **“Something taken out of it every year”** the case raises a charge, a tax bill or a sum being spent. In **“Nothing in the case”** it raises none of them: nothing is said about anything that comes out. Does the case say anything about a charge, a tax bill or a sum taken out? If you cannot point to the words, it does not.
   - If you chose **One thing most of it depends on**: the “why not” line above. Then the lines from the card that compared the two: In both, the person may hold shares or property, and may feel well off. **“One thing most of it depends on”** shows one thing that is most of what the person has, or *a claim* or a loan that could reach all of it. **“Nothing in the case”** shows nothing of the kind: what the person has is spread out, and no claim or loan is in the case. Is there one company, property, business, claim or loan that is most of the case? Or is it spread, with nothing in it that could reach everything?
-  - If you chose **A fall in prices it is not ready for**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, the money is invested, and prices may fall. In **“Nothing in the case”** no money is needed from the investments for years and no plan has been drifted from, so a fall is only a fall and there is time for prices to come back. In **“A fall in prices it is not ready for”** the case shows something a fall would catch: living costs, a bill on a date, or a mix that has moved. When is the money needed? Does the case show living costs, a bill on a date, or a mix that has moved, that a fall would catch? Or is nothing needed from it for years?
-  - If you chose **The handover to other people**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, the owner may be well and the money may be in good order. **“The handover to other people”** is the answer whenever the case is about what happens when the owner dies or cannot act, even when every paper is in order. **“Nothing in the case”** is the answer only when the case says nothing about a death, an illness or a gift. Does the case say anything about a death, a will, a form, an illness or a gift? If you cannot point to the words, it does not.
-- This case may have brought back *Siobhan’s farm*, which was **“One thing most of it depends on”**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose **A fall in prices it is not ready for**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, the money is invested, and prices may fall. In **“Nothing in the case”** no money is needed from the investments for years and no plan has been drifted from, so a fall is only a fall and there is time for prices to come back. In **“A fall in prices it is not ready for”** the case shows something a fall would catch: living costs, a bill on a date, or a mix that has moved. When is the money needed? Does the case show living costs, a bill on a date, or a mix that has moved, that a fall would catch? Or is nothing needed from it for years?
+  - If you chose **The handover to other people**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, the owner may be well and the money may be in good order. **“The handover to other people”** is the answer whenever the case is about what happens when the owner dies or cannot act, even when every paper is in order. **“Nothing in the case”** is the answer only when the case says nothing about a death, an illness or a gift. Does the case say anything about a death, a will, a form, an illness or a gift? If you cannot point to the words, it does not.
+- This case may have brought back *Siobhan’s farm*, which was **“One thing most of it depends on”**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If the café were worth £340,000 and the rest £100,000, most of what she owns would be one business, and it would be **“One thing most of it depends on”**.
 - Taught on: “Money put away, with nothing in the case that could lose it” (one tap opens the card).
 

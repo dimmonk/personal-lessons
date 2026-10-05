@@ -1,15 +1,15 @@
 # Learner view: US Civics & History, Unit Six: A state, city or county government
 
-*Five things a rule from a state, a city or a county can come to, and the two questions that tell them apart.* Unit revision 1, built to lesson standard 1, status: draft.
+*Five things a rule from a state, a city or a county can come to, and the two questions that tell them apart.* Unit revision 2, built to lesson standard 1, status: draft.
 
 This file is generated from the data files by `tools/render-learner-view.mjs`. It shows every screen in the order a learner meets it. In the app one card is on screen at a time and the learner moves on when ready.
 
-- **Bold text in quotation marks** is the key’s own wording, printed from `key.js`. Bold names are the outcome names from the same file. Neither is typed anywhere else. "What you must be able to point to" lines and "How to tell them apart" lines are also printed from one place each (the key and the look-alike ledger).
+- **Bold text in quotation marks** is the subject’s own wording for its questions and answers, written once and printed everywhere. Bold names are the names, written once in the same place. Neither is typed anywhere else. "What you must be able to point to" lines and "How to tell them apart" lines are also printed from one place each (the subject’s questions and the pairs it compares).
 - ⟦Double brackets⟧ show the words the app marks in a case (one highlight style everywhere).
 - The line in italics under each heading is the app’s top bar. The line in square brackets after it is for reviewers and is not shown to the learner.
 - Headings, prompt wording and stage instructions that are the same in every unit are the app’s wording, not this unit’s.
 - "Shown as soon as you …" is what appears the moment the learner answers. Nothing is hidden behind a second tap the first time a case is met, or after a miss.
-- After every answer the app shows, in this order: the right answer in the key’s words; the reason, quoting the marked words; for a name, why the nearest wrong name fails; after a miss, a line about the answer the learner chose; and last a link to the card that taught it. Where a line about the learner’s own choice is not written for the case, the app builds it from the key, and this file says so in place of repeating it.
+- After every answer the app shows, in this order: the right answer; the reason, quoting the marked words; for a name, why the nearest wrong name fails; after a miss, a line about the answer the learner chose; and last a link to the card that taught it. Where a line about the learner’s own choice is not written for the case, the app builds it from the answers’ own wording, and this file says so in place of repeating it.
 
 ---
 
@@ -17,7 +17,7 @@ This file is generated from the data files by `tools/render-learner-view.mjs`. I
 
 ### 1. A rule from a state, a city or a county: whose is it, and what else covers it?
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 1 of 42*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 1 of 42*
 
 [reviewers only: card kind `orient`, id `orient`]
 
@@ -27,22 +27,22 @@ You already hear this kind of story every week. “You need a permit from the to
 
 It matters because you live under several governments at once: the government of the whole country, which this course calls federal, the government of your state, and the government of your city, town or county. All of them make rules, and sometimes they make rules about the same thing. Whether a rule stands, who can change it, and what you can do about it all depend on who made it and on what else covers the same matter. That is also why moving can change the rule that applies to you: much of what you meet in daily life is decided state by state, and town by town.
 
-The first unit taught the key’s first question, which asks whose decision a story ends on. Every case in this unit has already been given the answer **“A state, city or county government”**. So this unit begins where that one stopped, and teaches the two questions that come next: one about who made the rule, and one about what else covers the same matter. Together they sort a case into one of five names.
+The first unit taught the first question, which asks whose decision a story ends on. Every case in this unit has already been given the answer **“A state, city or county government”**. So this unit begins where that one stopped, and teaches the two questions that come next: one about who made the rule, and one about what else covers the same matter. Together they sort a case into one of five names.
 
 Two words are used all the way through. A rule is anything that a state, a city, a town or a county decides and that people must follow: a law its lawmakers pass, an order from its governor or mayor, a fee its council sets. And federal, as in the first unit, means belonging to the government of the whole country, as against the government of one state or city: a federal law applies in every state.
 
-**What Unit One taught, in one place.** The key’s first question is **“Who makes the last decision in the case, or is asked to make it?”** Its answers:
+**What Unit One taught, in one place.** The first question is **“Who makes the last decision in the case, or is asked to make it?”** Its answers:
 
 - **“Congress, in the House or the Senate”**: give this answer when the last decision in the case is a vote in the House, the Senate or both, or the case ends by asking Congress for one: on a law, on money, on a person the President chose or an agreement the President signed with another country, or on charging or trying an official. A law Congress passed is still Congress’s decision when the case adds that the President signed it.
 - **“The President or a federal agency”**: give this answer when the last decision in the case is made by the President or a federal agency, or the case ends by asking them for one: an agency writes rules, inspects or enforces, the President gives an order, commands the armed forces, deals with another country, refuses to sign a law or forgives a federal crime.
 - **“A judge, in any court”**: give this answer when the last decision in the case is a judge’s, in any court, federal or state, or the case ends with someone asking a judge to decide.
 - **“A state, city or county government”**: give this answer when the last decision in the case is made by a state’s lawmakers, its governor or its agencies, or by a city, town or county, or the case ends by asking one of them for it. A judge in a state’s court counts as a judge, not as the state. **This unit is about these cases.**
 
-Unit One also taught that two things are marked separately: the name you give a case, and your route to it, meaning the answers you gave to the key’s questions on the way.
+Two things are marked separately: the name you give a case, and your answers to the questions on the way to it.
 
 *(One tap on any of these lines opens the card in Unit One that taught it.)*
 
-**The part of the key this unit teaches.** This is a preview. You are not expected to follow it yet: every line is explained on the cards that come next. The question and its answers are in the key’s own words. Beside each answer, in plain words, is the thing it leads to. There are five of them, and each gets its name when it is taught.
+**The questions this unit teaches.** This is a preview. You are not expected to follow it yet: every line is explained on the cards that come next. The question and its answers are worded exactly as you will meet them. Beside each answer, in plain words, is the thing it leads to. There are five of them, and each gets its name when it is taught.
 
 Is the rule the state’s own, or a city’s or a county’s?
 - The state’s own rule → a state ruling on a matter the Constitution leaves to the states · a state or city rule giving way to a federal law · a state or city rule standing beside a federal law · a state or city rule that a right forbids
@@ -74,7 +74,7 @@ Each name is taught through cases first. After every step you answer one questio
 
 ### 2. A state ruling on a matter the Constitution leaves to the states
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 2 of 42*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 2 of 42*
 
 [reviewers only: card kind `meet`, id `meet-police`]
 
@@ -101,19 +101,19 @@ Two things made this case simple. The first is who made the rule: the state itse
 
 **What you must be able to point to.** A rule the state itself makes, on a matter the Constitution leaves to the states, with no federal law covering it and no right it takes away. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“Is the rule the state’s own, or a city’s or a county’s?”**
+**The question:** **“Is the rule the state’s own, or a city’s or a county’s?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“The state’s own rule”**
+**Its answer for a case like this one:** **“The state’s own rule”**
 
-**The key also asks, and this is its answer for a case like this one:** **“Does a federal law or a right in the Constitution cover the same matter?”** **“Neither: no federal law and no right covers it”**
+**There is also this question, and its answer for a case like this one:** **“Does a federal law or a right in the Constitution cover the same matter?”** **“Neither: no federal law and no right covers it”**
 
-The key’s answer to this question is the one printed above, and the name for the whole case is **Reserved powers**. The one question on this card does not give the name by itself: the same answer is also given when a federal law covers the matter or when a right forbids the rule. What gives this case its name is the second thing you were told, that nothing else covers the matter. The key asks that as a second question, and the unit gives it a card of its own once you have met the names it separates. “Reserved” means kept back: the matter was kept back for the states when the Constitution gave the federal government its list. The other name for this, printed below, has the word police in it. There the word does not mean officers. It means the state’s wide power over health, safety and welfare.
+The answer to this question is the one printed above, and the name for the whole case is **Reserved powers**. The one question on this card does not give the name by itself: the same answer is also given when a federal law covers the matter or when a right forbids the rule. What gives this case its name is the second thing you were told, that nothing else covers the matter. That is asked as a second question, and the unit gives it a card of its own once you have met the names it separates. “Reserved” means kept back: the matter was kept back for the states when the Constitution gave the federal government its list. The other name for this, printed below, has the word police in it. There the word does not mean officers. It means the state’s wide power over health, safety and welfare.
 
 You may also hear this called “the police power” or “left to the states”. Those words mean the same thing here, and from now on this unit uses one name: **Reserved powers**.
 
 ### 3. Reserved powers: the same thing in a different story
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 3 of 42*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 3 of 42*
 
 [reviewers only: card kind `again`, id `again-police`]
 
@@ -146,7 +146,7 @@ The two stories share nothing else. One is about a rented home and the other abo
 
 ### 4. The story never decides the answer
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 4 of 42*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 4 of 42*
 
 [reviewers only: card kind `lens`, id `lens`]
 
@@ -158,13 +158,13 @@ The five names belong to the layer underneath. The same story can carry any of t
 
 From here on, the cases change their stories on purpose. Sometimes two cases will share almost every word and differ in a single thing underneath. When that happens, the shared story is there to show you that it tells you nothing.
 
-**Stays the same from case to case:** who made the rule, and what else covers the same matter, which are what the key asks about: **“Is the rule the state’s own, or a city’s or a county’s?”** and **“Does a federal law or a right in the Constitution cover the same matter?”**
+**Stays the same from case to case:** who made the rule, and what else covers the same matter, which are what the questions ask about: **“Is the rule the state’s own, or a city’s or a county’s?”** and **“Does a federal law or a right in the Constitution cover the same matter?”**
 
 **Changes on purpose:** the topic; the people; the size of the place; how much the rule matters; whether you think the rule is a good one.
 
 ### 5. Reserved powers: what it is like
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 5 of 42*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 5 of 42*
 
 [reviewers only: card kind `portrait`, id `portrait-police`]
 
@@ -196,7 +196,7 @@ In your own life this is much of what you meet day to day: what you need to driv
 
 ### 6. A question about a new case
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 6 of 42*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 6 of 42*
 
 [reviewers only: card kind `check`, id `check-police`]
 
@@ -211,7 +211,7 @@ The pieces you can tap:
 
 **Shown as soon as you tap**
 
-- If you are right: “Right: ‘The Tarn legislature passed a law’.” The words that show who made the rule are “The Tarn legislature passed a law”: the lawmakers of one state, so the state itself made the rule. The case names no city, town or county. The key’s answer for this case is **“The state’s own rule”**, and the name is **Reserved powers**.
+- If you are right: “Right: ‘The Tarn legislature passed a law’.” The words that show who made the rule are “The Tarn legislature passed a law”: the lawmakers of one state, so the state itself made the rule. The case names no city, town or county. The answer for this case is **“The state’s own rule”**, and the name is **Reserved powers**.
 - If you miss: “The words are ‘The Tarn legislature passed a law’.” The same reason follows, and then a line about the piece you tapped:
   - “In the state of Tarn, young people were asking at what age they could drive”: That is why the rule exists. It is the story behind it, and it does not say who made it.
   - “a person must be at least sixteen to get a driver’s licence”: That is what the rule says: its matter. It does not say who made it.
@@ -225,7 +225,7 @@ The pieces you can tap:
 
 ### 7. A city or county ruling with power its state gave it
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 7 of 42*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 7 of 42*
 
 [reviewers only: card kind `meet`, id `meet-localgov`]
 
@@ -253,19 +253,19 @@ So the matter, and everything else in the case, looks just like the last name: n
 
 **What you must be able to point to.** A rule a city, town or county makes, power its state handed down to it, no federal law covering the matter and no right the rule takes away. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“Is the rule the state’s own, or a city’s or a county’s?”**
+**The question:** **“Is the rule the state’s own, or a city’s or a county’s?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“A city’s, a town’s or a county’s rule”**
+**Its answer for a case like this one:** **“A city’s, a town’s or a county’s rule”**
 
-**The key also asks, and this is its answer for a case like this one:** **“Does a federal law or a right in the Constitution cover the same matter?”** **“Neither: no federal law and no right covers it”**
+**There is also this question, and its answer for a case like this one:** **“Does a federal law or a right in the Constitution cover the same matter?”** **“Neither: no federal law and no right covers it”**
 
-The key’s answer to this question is the one printed above, and with nothing else covering the matter, the name for the whole case is **Power handed down to a city or county**. “Handed down” means passed from the state to a place below it. The two names are as alike as two names can be, and the only difference is who made the rule.
+The answer to this question is the one printed above, and with nothing else covering the matter, the name for the whole case is **Power handed down to a city or county**. “Handed down” means passed from the state to a place below it. The two names are as alike as two names can be, and the only difference is who made the rule.
 
 You may also hear this called “a city ordinance” or “local control”. Those words mean the same thing here, and from now on this unit uses one name: **Power handed down to a city or county**.
 
 ### 8. Power handed down to a city or county: the same thing in a different story
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 8 of 42*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 8 of 42*
 
 [reviewers only: card kind `again`, id `again-localgov`]
 
@@ -298,7 +298,7 @@ A town is smaller than a county, and a fence rule is not a fee. The two stories 
 
 ### 9. Power handed down to a city or county: what it is like
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 9 of 42*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 9 of 42*
 
 [reviewers only: card kind `portrait`, id `portrait-localgov`]
 
@@ -329,13 +329,13 @@ In your own life this is the rule behind where you may park, how tall a fence ma
 
 ### 10. A question about a new case
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 10 of 42*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 10 of 42*
 
 [reviewers only: card kind `check`, id `check-localgov`]
 
 > In the town of Orsley, market-day traffic jammed Mill Lane. Using the power the state gives to towns, the Orsley town council voted that cars may not park on Mill Lane on market days.
 
-**The key asks:** **“Is the rule the state’s own, or a city’s or a county’s?”** Which of the answers you have met so far fits this case?
+**The question:** **“Is the rule the state’s own, or a city’s or a county’s?”** Which of the answers you have met so far fits this case?
 
 - The state’s own rule
 - A city’s, a town’s or a county’s rule
@@ -349,7 +349,7 @@ In your own life this is the rule behind where you may park, how tall a fence ma
 
 ### 11. The same noise rule, from a state and from a town
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 11 of 42*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 11 of 42*
 
 [reviewers only: card kind `lookalike`, id `look-police-localgov`]
 
@@ -371,9 +371,9 @@ You have now met the two names that differ only in who made the rule. This card 
 
 **Why this one and not the other**
 
-In Case A the lawmakers of the state of Ostrow passed a law for the whole state. The key’s answer is **“The state’s own rule”**, and with nothing else covering the matter, the case is **Reserved powers**.
+In Case A the lawmakers of the state of Ostrow passed a law for the whole state. The answer is **“The state’s own rule”**, and with nothing else covering the matter, the case is **Reserved powers**.
 
-In Case B the council of the town of Orsley voted, using the power its state gives to towns, and the rule covers only Orsley. The key’s answer is **“A city’s, a town’s or a county’s rule”**, and the case is **Power handed down to a city or county**.
+In Case B the council of the town of Orsley voted, using the power its state gives to towns, and the rule covers only Orsley. The answer is **“A city’s, a town’s or a county’s rule”**, and the case is **Power handed down to a city or county**.
 
 The words of the rule are the same in both cases, so you cannot tell the cases apart by what the rule says, or by the subject. You can only tell by who made it.
 
@@ -381,7 +381,7 @@ The words of the rule are the same in both cases, so you cannot tell the cases a
 
 Who made the rule: the state itself, or a city, a town or a county?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Reserved powers | Power handed down to a city or county |
 |---|---|---|
@@ -393,7 +393,7 @@ Who made the rule: the state itself, or a city, a town or a county?
 
 ### 12. A wrong idea about what a city can do
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 12 of 42*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 12 of 42*
 
 [reviewers only: card kind `refute`, id `refute-citypower`]
 
@@ -412,17 +412,17 @@ So a city has no powers of its own that stand against its state. Before you use 
 
 ### 13. The first question, and what it does and does not decide
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 13 of 42*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 13 of 42*
 
 [reviewers only: card kind `question`, id `q-who`]
 
-Under the name at the end of each of the last cards you have seen a question and one of its answers. This card puts that question and both its answers in one place, as the key shows them, and says why the key asks it.
+Under the name at the end of each of the last cards you have seen a question and one of its answers. This card puts that question and both its answers in one place, and says why it is asked.
 
-**The key asks:** **“Is the rule the state’s own, or a city’s or a county’s?”**
+**The question:** **“Is the rule the state’s own, or a city’s or a county’s?”**
 
 **What it is for.** Tells apart a rule a state makes for itself from one a city, town or county makes with power the state handed down.
 
-**Its answers, exactly as the key shows them**
+**Its answers**
 
 - **“The state’s own rule”**
   - Give this answer when the rule is made by the state itself: its lawmakers, its governor or one of its agencies.
@@ -437,7 +437,7 @@ A city, town or county has no power of its own in the Constitution: it has only 
 
 The answer to this question does not always give the name. Whichever answer a case gets, the name can still depend on a second question, and every case in this unit is asked both. What this question does is say whether the rule is a state’s own, or a city’s, a town’s or a county’s. That is worth asking because a city, a town and a county have no power of their own: they use only what their state handed down, and the state can take it back.
 
-So two rules with the same words and the same subject can get different names. For one the key’s answer is **“The state’s own rule”**; for the other it is **“A city’s, a town’s or a county’s rule”**. Nothing about the subject, the words of the rule, or the people it affects tells them apart. Only who made the rule does.
+So two rules with the same words and the same subject can get different names. For one the answer is **“The state’s own rule”**; for the other it is **“A city’s, a town’s or a county’s rule”**. Nothing about the subject, the words of the rule, or the people it affects tells them apart. Only who made the rule does.
 
 **How to answer it from a case**
 
@@ -454,13 +454,13 @@ Sometimes a story names both a state and a town. Ask which of them made the rule
 
 ### 14. A question about a new case
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 14 of 42*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 14 of 42*
 
 [reviewers only: card kind `check`, id `check-who`]
 
 > Parents in Harrow County asked for the county pool to open on Mondays. Using the power the state gives to counties, the Harrow County board voted to keep the pool closed on Mondays.
 
-**The key asks:** **“Is the rule the state’s own, or a city’s or a county’s?”**
+**The question:** **“Is the rule the state’s own, or a city’s or a county’s?”**
 
 - The state’s own rule
 - A city’s, a town’s or a county’s rule
@@ -480,7 +480,7 @@ Sometimes a story names both a state and a town. Ask which of them made the rule
 
 ### 15. A state or city rule giving way to a federal law
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 15 of 42*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 15 of 42*
 
 [reviewers only: card kind `meet`, id `meet-preempted`]
 
@@ -503,23 +503,23 @@ Which one counts? The Constitution answers. It calls federal law the supreme law
 
 This does not mean that a federal law always beats a state rule. It does so only where the federal government has power over the matter and has already used it. On a matter that belongs to the states, a federal rule has no standing at all. And even where there is a federal law, the state’s rule gives way in only two ways: Congress meant its rule to be the only one on the subject, as here, or the two rules clash, so that nobody could obey both.
 
-Notice what makes the state’s scheme lose. It is not that a state made it: a state makes rules on many things. It loses because a federal law covers the same matter and is meant to be the only rule. In the key this is a second question, about what else covers the matter, and it is the one that matters here. Whoever made the rule, a state or a city, a town or a county, a federal law of this kind would push it aside.
+Notice what makes the state’s scheme lose. It is not that a state made it: a state makes rules on many things. It loses because a federal law covers the same matter and is meant to be the only rule. This is the second question, about what else covers the matter, and it is the one that matters here. Whoever made the rule, a state or a city, a town or a county, a federal law of this kind would push it aside.
 
 **What you must be able to point to.** A state or local rule, and a federal law on the same matter that is meant to be the only rule, or that the state or local rule contradicts. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“Does a federal law or a right in the Constitution cover the same matter?”**
+**The question:** **“Does a federal law or a right in the Constitution cover the same matter?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“A federal law that is meant to be the only rule”**
+**Its answer for a case like this one:** **“A federal law that is meant to be the only rule”**
 
-**The key also asks, and this is its answer for a case like this one:** **“Is the rule the state’s own, or a city’s or a county’s?”** **“The state’s own rule”** or **“A city’s, a town’s or a county’s rule”**
+**There is also this question, and its answer for a case like this one:** **“Is the rule the state’s own, or a city’s or a county’s?”** **“The state’s own rule”** or **“A city’s, a town’s or a county’s rule”**
 
-The key’s answer to this question is the one printed above, and the name for the case is **Preemption**. It means that a federal rule has pushed a state’s or a city’s rule aside, so that the state’s or city’s rule gives way. The first question gets the answer **“The state’s own rule”** here, and it would get **“A city’s, a town’s or a county’s rule”** if a city had made the rule. For this name, who made the rule changes nothing.
+The answer to this question is the one printed above, and the name for the case is **Preemption**. It means that a federal rule has pushed a state’s or a city’s rule aside, so that the state’s or city’s rule gives way. The first question gets the answer **“The state’s own rule”** here, and it would get **“A city’s, a town’s or a county’s rule”** if a city had made the rule. For this name, who made the rule changes nothing.
 
 You may also hear this called “federal law wins” or “the Supremacy Clause”. Those words mean the same thing here, and from now on this unit uses one name: **Preemption**.
 
 ### 16. Preemption: the same thing in a different story
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 16 of 42*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 16 of 42*
 
 [reviewers only: card kind `again`, id `again-preempted`]
 
@@ -552,7 +552,7 @@ The second case has a state park in it, which can make the rule sound like the s
 
 ### 17. Preemption: what it is like
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 17 of 42*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 17 of 42*
 
 [reviewers only: card kind `portrait`, id `portrait-preempted`]
 
@@ -584,7 +584,7 @@ In your own life this is why the rules about immigration and about becoming a ci
 
 ### 18. A question about a new case
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 18 of 42*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 18 of 42*
 
 [reviewers only: card kind `check`, id `check-preempted`]
 
@@ -599,7 +599,7 @@ The pieces you can tap:
 
 **Shown as soon as you tap**
 
-- If you are right: “Right: ‘A federal law sets one label that must go on every jar of honey sold in the country, and says that no state may require a different label’.” The federal law is meant to be the only rule: “A federal law sets one label that must go on every jar of honey sold in the country, and says that no state may require a different label”. The state’s second label is exactly what that law says no state may ask for. The key’s answer for this case is **“A federal law that is meant to be the only rule”**, and the name is **Preemption**.
+- If you are right: “Right: ‘A federal law sets one label that must go on every jar of honey sold in the country, and says that no state may require a different label’.” The federal law is meant to be the only rule: “A federal law sets one label that must go on every jar of honey sold in the country, and says that no state may require a different label”. The state’s second label is exactly what that law says no state may ask for. The answer for this case is **“A federal law that is meant to be the only rule”**, and the name is **Preemption**.
 - If you miss: “The words are ‘A federal law sets one label that must go on every jar of honey sold in the country, and says that no state may require a different label’.” The same reason follows, and then a line about the piece you tapped:
   - “The Ostrow legislature passed a law”: That shows who made the state’s rule. The words asked for are about the federal law that stands beside it.
   - “jars of honey sold in Ostrow must carry a second warning label”: That is what the state’s rule says. The words asked for are about the federal law that stands beside it.
@@ -607,7 +607,7 @@ The pieces you can tap:
 
 ### 19. A state or city rule standing beside a federal law
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 19 of 42*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 19 of 42*
 
 [reviewers only: card kind `meet`, id `meet-concurrent`]
 
@@ -634,19 +634,19 @@ How is this different from the last name? There the federal law was meant to be 
 
 **What you must be able to point to.** A state or local rule, a federal law on the same matter, and room for both: the federal law sets only a minimum, or lets the states act too. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“Does a federal law or a right in the Constitution cover the same matter?”**
+**The question:** **“Does a federal law or a right in the Constitution cover the same matter?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“A federal law that leaves room for the state’s rule”**
+**Its answer for a case like this one:** **“A federal law that leaves room for the state’s rule”**
 
-**The key also asks, and this is its answer for a case like this one:** **“Is the rule the state’s own, or a city’s or a county’s?”** **“The state’s own rule”** or **“A city’s, a town’s or a county’s rule”**
+**There is also this question, and its answer for a case like this one:** **“Is the rule the state’s own, or a city’s or a county’s?”** **“The state’s own rule”** or **“A city’s, a town’s or a county’s rule”**
 
-The key’s answer to this question is the one printed above, and the name for the case is **Concurrent powers**. “Concurrent” means happening alongside one another: both governments act on the same matter, together. As with the last name, who made the rule changes nothing: a city’s rule can stand beside a federal law that leaves room, just as a state’s can.
+The answer to this question is the one printed above, and the name for the case is **Concurrent powers**. “Concurrent” means happening alongside one another: both governments act on the same matter, together. As with the last name, who made the rule changes nothing: a city’s rule can stand beside a federal law that leaves room, just as a state’s can.
 
 You may also hear this called “both may act” or “a federal floor”. Those words mean the same thing here, and from now on this unit uses one name: **Concurrent powers**.
 
 ### 20. Concurrent powers: the same thing in a different story
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 20 of 42*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 20 of 42*
 
 [reviewers only: card kind `again`, id `again-concurrent`]
 
@@ -679,7 +679,7 @@ Wages and leave have nothing else in common. So this is not about work or about 
 
 ### 21. Concurrent powers: what it is like
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 21 of 42*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 21 of 42*
 
 [reviewers only: card kind `portrait`, id `portrait-concurrent`]
 
@@ -711,13 +711,13 @@ In your own life this is why the wage you must be paid, or the leave you can tak
 
 ### 22. A question about a new case
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 22 of 42*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 22 of 42*
 
 [reviewers only: card kind `check`, id `check-concurrent`]
 
 > The federal government taxes the income that people earn, and federal law says that states may tax income too. The Pelham legislature passed a law that people who live in Pelham must also pay a state tax on their income.
 
-**The key asks:** **“Does a federal law or a right in the Constitution cover the same matter?”** Which of the answers you have met so far fits this case?
+**The question:** **“Does a federal law or a right in the Constitution cover the same matter?”** Which of the answers you have met so far fits this case?
 
 - A federal law that is meant to be the only rule
 - A federal law that leaves room for the state’s rule
@@ -731,7 +731,7 @@ In your own life this is why the wage you must be paid, or the leave you can tak
 
 ### 23. The same life-jacket rule, beside two different federal laws
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 23 of 42*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 23 of 42*
 
 [reviewers only: card kind `lookalike`, id `look-preempted-concurrent`]
 
@@ -753,9 +753,9 @@ These two names both have a federal law and a state rule on the same matter. Thi
 
 **Why this one and not the other**
 
-In Case A the federal law says that no state may require anything different. It is meant to be the only rule, so the state’s two life jackets give way. The key’s answer is **“A federal law that is meant to be the only rule”**, and the case is **Preemption**.
+In Case A the federal law says that no state may require anything different. It is meant to be the only rule, so the state’s two life jackets give way. The answer is **“A federal law that is meant to be the only rule”**, and the case is **Preemption**.
 
-In Case B the federal law says that it is a minimum, and that a state may require more. The state’s two life jackets stand beside it, and a boat with two for each person also meets the federal rule. The key’s answer is **“A federal law that leaves room for the state’s rule”**, and the case is **Concurrent powers**.
+In Case B the federal law says that it is a minimum, and that a state may require more. The state’s two life jackets stand beside it, and a boat with two for each person also meets the federal rule. The answer is **“A federal law that leaves room for the state’s rule”**, and the case is **Concurrent powers**.
 
 The state’s rule is the same in both cases, word for word, so you cannot tell the cases apart from the state’s rule. You can only tell from what the federal law says about the states.
 
@@ -763,7 +763,7 @@ The state’s rule is the same in both cases, word for word, so you cannot tell 
 
 Does the federal law say that it is the only rule, or does it say that it is a minimum or leave room for the states?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Preemption | Concurrent powers |
 |---|---|---|
@@ -775,7 +775,7 @@ Does the federal law say that it is the only rule, or does it say that it is a m
 
 ### 24. A wrong idea about federal law
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 24 of 42*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 24 of 42*
 
 [reviewers only: card kind `refute`, id `refute-always`]
 
@@ -794,7 +794,7 @@ Where a federal law sets only a minimum, the state’s rule stands beside it, wh
 
 ### 25. A wait before a wedding, a wait before citizenship
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 25 of 42*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 25 of 42*
 
 [reviewers only: card kind `lookalike`, id `look-police-preempted`]
 
@@ -818,7 +818,7 @@ The name for a state deciding alone and the name for a state giving way to a fed
 
 In Case A the matter is marriage. It is not on the list of federal powers, and the case names no federal law about it. The state decides, and the case is **Reserved powers**.
 
-In Case B the matter is becoming a citizen, which is on the list of federal powers, and Congress has already written the rules, meant to be the only ones. The state’s extra three years gives way. The key’s answer is **“A federal law that is meant to be the only rule”**, and the case is **Preemption**.
+In Case B the matter is becoming a citizen, which is on the list of federal powers, and Congress has already written the rules, meant to be the only ones. The state’s extra three years gives way. The answer is **“A federal law that is meant to be the only rule”**, and the case is **Preemption**.
 
 The state’s rule has the same shape in both cases: a wait before a legal step. So the shape tells you nothing. What differs is whether a federal law covers the same matter and is meant to be the only rule.
 
@@ -826,7 +826,7 @@ The state’s rule has the same shape in both cases: a wait before a legal step.
 
 Has Congress already written a law on this same matter, and is it meant to be the only rule?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Reserved powers | Preemption |
 |---|---|---|
@@ -838,7 +838,7 @@ Has Congress already written a law on this same matter, and is it meant to be th
 
 ### 26. A state’s safety rule that gives way
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 26 of 42*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 26 of 42*
 
 [reviewers only: card kind `exception`, id `exc-crib`]
 
@@ -848,7 +848,7 @@ The last card put two state rules side by side: one on a matter nothing federal 
 
 > The state of Tolland takes baby safety seriously, and its lawmakers want the cribs sold in Tolland shops to be as safe as possible. A federal law sets one safety standard for every crib sold in the country, and says that no state may set a different one. The Tolland legislature passed a law with a stricter standard for cribs sold in Tolland shops.
 
-This looks like **Reserved powers**: a state, caring about the safety of babies, makes a rule about goods sold in its own shops. A state’s concern for the health and safety of its people is exactly what its wide power is for. Yet the key’s answer for this case is **“A federal law that is meant to be the only rule”**, and the case is **Preemption**.
+This looks like **Reserved powers**: a state, caring about the safety of babies, makes a rule about goods sold in its own shops. A state’s concern for the health and safety of its people is exactly what its wide power is for. Yet the answer for this case is **“A federal law that is meant to be the only rule”**, and the case is **Preemption**.
 
 **You are asked:** This looks like **Reserved powers**. Before you read why it is **Preemption**, tap the words in the case that settle it.
 
@@ -865,7 +865,7 @@ The pieces you can tap:
 
 Ask what else covers the matter. A federal law sets one safety standard for every crib sold in the country, and says that no state may set a different one. Selling cribs across the country is trade between the states, which is on the list of federal powers, and Congress has used the power and meant its standard to be the only one.
 
-The state’s reason for acting was a good one, and the matter sounds like something a state would settle for itself. But the state’s reason is not what the key asks about. It asks whether a federal law covers the same matter and is meant to be the only rule, and here it does.
+The state’s reason for acting was a good one, and the matter sounds like something a state would settle for itself. But the state’s reason is not what is asked. The question is whether a federal law covers the same matter and is meant to be the only rule, and here it does.
 
 **How to tell them apart**
 
@@ -876,7 +876,7 @@ A rule can sound as though it belongs to the state and still give way. Always as
 
 ### 27. A wrong idea about who sets the rules for citizenship
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 27 of 42*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 27 of 42*
 
 [reviewers only: card kind `refute`, id `refute-citizens`]
 
@@ -901,7 +901,7 @@ So before you use the name **Reserved powers**, point to a matter that is not on
 
 ### 28. A state or city rule that a right forbids
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 28 of 42*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 28 of 42*
 
 [reviewers only: card kind `meet`, id `meet-protected`]
 
@@ -930,19 +930,19 @@ So the question that matters here is not who made the rule. A state, a city and 
 
 **What you must be able to point to.** A state or local rule, and a right the Constitution protects that the rule takes away. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“Does a federal law or a right in the Constitution cover the same matter?”**
+**The question:** **“Does a federal law or a right in the Constitution cover the same matter?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“A right the rule takes away”**
+**Its answer for a case like this one:** **“A right the rule takes away”**
 
-**The key also asks, and this is its answer for a case like this one:** **“Is the rule the state’s own, or a city’s or a county’s?”** **“The state’s own rule”** or **“A city’s, a town’s or a county’s rule”**
+**There is also this question, and its answer for a case like this one:** **“Is the rule the state’s own, or a city’s or a county’s?”** **“The state’s own rule”** or **“A city’s, a town’s or a county’s rule”**
 
-The key’s answer to this question is the one printed above, and the name for the case is **A right that binds the states**. It means that a right the Constitution protects binds the states too, so the rule cannot stand. Here a city made the rule, and the first question gets the answer **“A city’s, a town’s or a county’s rule”**. Had a state made it, the answer would be **“The state’s own rule”**. For this name, as for the last two, it makes no difference.
+The answer to this question is the one printed above, and the name for the case is **A right that binds the states**. It means that a right the Constitution protects binds the states too, so the rule cannot stand. Here a city made the rule, and the first question gets the answer **“A city’s, a town’s or a county’s rule”**. Had a state made it, the answer would be **“The state’s own rule”**. For this name, as for the last two, it makes no difference.
 
 You may also hear this called “incorporation” or “civil liberties”. Those words mean the same thing here, and from now on this unit uses one name: **A right that binds the states**.
 
 ### 29. A right that binds the states: the same thing in a different story
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 29 of 42*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 29 of 42*
 
 [reviewers only: card kind `again`, id `again-protected`]
 
@@ -975,7 +975,7 @@ The two cases share nothing else, so this is not about leaflets, and not about r
 
 ### 30. A right that binds the states: what it is like
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 30 of 42*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 30 of 42*
 
 [reviewers only: card kind `portrait`, id `portrait-protected`]
 
@@ -1008,13 +1008,13 @@ In your own life it is what lets you say what you think about your mayor, join a
 
 ### 31. A question about a new case
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 31 of 42*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 31 of 42*
 
 [reviewers only: card kind `check`, id `check-protected`]
 
 > Residents of Pike County planned a peaceful protest in the county square. The Pike County board voted that no group may gather in the county square to protest unless the board has first approved what the speakers will say.
 
-**The key asks:** **“Does a federal law or a right in the Constitution cover the same matter?”** Which of the answers you have met so far fits this case?
+**The question:** **“Does a federal law or a right in the Constitution cover the same matter?”** Which of the answers you have met so far fits this case?
 
 - A federal law that is meant to be the only rule
 - A federal law that leaves room for the state’s rule
@@ -1030,7 +1030,7 @@ In your own life it is what lets you say what you think about your mayor, join a
 
 ### 32. A licence to sell food, an approval to hand out a newspaper
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 32 of 42*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 32 of 42*
 
 [reviewers only: card kind `lookalike`, id `look-police-protected`]
 
@@ -1054,7 +1054,7 @@ A state may make rules on a great many matters, and a right stops it on some. Th
 
 In Case A the rule is about who may run a food stall. Selling food is a business, and a state may license businesses. Nothing about speech, worship, publishing or gathering is touched, and the case names no federal law, so the case is **Reserved powers**.
 
-In Case B the rule lets the governor’s office approve what a newspaper says before it may be handed out. That takes away the right to publish. The key’s answer is **“A right the rule takes away”**, and the case is **A right that binds the states**.
+In Case B the rule lets the governor’s office approve what a newspaper says before it may be handed out. That takes away the right to publish. The answer is **“A right the rule takes away”**, and the case is **A right that binds the states**.
 
 Both rules are about who may use the same sidewalk, so you cannot tell them apart by the place. The difference is whether the rule takes away a right.
 
@@ -1062,7 +1062,7 @@ Both rules are about who may use the same sidewalk, so you cannot tell them apar
 
 Does the rule take away a right to speak, to worship, to publish or to gather peacefully?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Reserved powers | A right that binds the states |
 |---|---|---|
@@ -1074,7 +1074,7 @@ Does the rule take away a right to speak, to worship, to publish or to gather pe
 
 ### 33. A city’s own sidewalk, and a right that stops it
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 33 of 42*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 33 of 42*
 
 [reviewers only: card kind `exception`, id `exc-councilmag`]
 
@@ -1084,7 +1084,7 @@ A few cards ago you read that a city controls its own streets and what is done o
 
 > In the city of Kellmouth, newsstands stand on city sidewalks, and the city council decides who may set up there. A magazine that makes fun of the mayor sells well at the newsstands. On Monday the Kellmouth city council passed a rule that newsstands may not sell the magazine that makes fun of the mayor.
 
-This looks like **Power handed down to a city or county**: a city council decides who may set up on its own sidewalks, and newsstands stand on them. A city’s power over its sidewalks is real. Yet the key’s answer for this case is **“A right the rule takes away”**, and the case is **A right that binds the states**.
+This looks like **Power handed down to a city or county**: a city council decides who may set up on its own sidewalks, and newsstands stand on them. A city’s power over its sidewalks is real. Yet the answer for this case is **“A right the rule takes away”**, and the case is **A right that binds the states**.
 
 **You are asked:** This looks like **Power handed down to a city or county**. Before you read why it is **A right that binds the states**, tap the words in the case that settle it.
 
@@ -1107,7 +1107,7 @@ A city’s power over its sidewalks does not reach so far. The state handed the 
 
 Does the rule aim at what people say, believe or publish, or does it only say where, when or how?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Power handed down to a city or county | A right that binds the states |
 |---|---|---|
@@ -1121,7 +1121,7 @@ Your first look at a story gives you its matter, and the matter can sound local.
 
 ### 34. The same rally ban, made by Congress and by a city
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 34 of 42*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 34 of 42*
 
 [reviewers only: card kind `lookalike`, id `look-protected-beyondcong`]
 
@@ -1143,34 +1143,34 @@ A right can stop a rule whoever made it. The last cards showed rules of a state 
 
 **Why this one and not the other**
 
-In Case A both chambers of Congress passed a law. The key’s first answer is **“Congress, in the House or the Senate”**, so the questions of this unit are not the ones to ask. The case belongs to the branch for Congress, and its name is the one for a law the Constitution does not let Congress pass. The right to gather peacefully is what stops this law too.
+In Case A both chambers of Congress passed a law. The first answer is **“Congress, in the House or the Senate”**, so the questions of this unit are not the ones to ask. The case belongs to the questions for Congress, and its name is the one for a law the Constitution does not let Congress pass. The right to gather peacefully is what stops this law too.
 
-In Case B a city council made the rule. The key’s first answer is **“A state, city or county government”**, and the right stops the rule. The key’s answer to the second question is **“A right the rule takes away”**, and the case is **A right that binds the states**.
+In Case B a city council made the rule. The first answer is **“A state, city or county government”**, and the right stops the rule. The answer to the second question is **“A right the rule takes away”**, and the case is **A right that binds the states**.
 
-The ban and the right are the same in both cases, so you cannot tell the two names apart by what the rule says or by which right is involved. You can only tell by who made the rule, which is the key’s first question.
+The ban and the right are the same in both cases, so you cannot tell the two names apart by what the rule says or by which right is involved. You can only tell by who made the rule, which is the first question.
 
 **How to tell them apart**
 
 Who made the rule: Congress, or a state, a city or a county?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | A right that binds the states | Beyond Congress’s power |
 |---|---|---|
 | Who makes the last decision in the case, or is asked to make it? | A state, city or county government | Congress, in the House or the Senate |
-| What does Congress do in the case? | *Not asked on its route* | Passes a law the Constitution does not let it pass |
-| Is the rule the state’s own, or a city’s or a county’s? | The state’s own rule / A city’s, a town’s or a county’s rule | *Not asked on its route* |
-| Does a federal law or a right in the Constitution cover the same matter? | A right the rule takes away | *Not asked on its route* |
+| What does Congress do in the case? | *Not asked for this one* | Passes a law the Constitution does not let it pass |
+| Is the rule the state’s own, or a city’s or a county’s? | The state’s own rule / A city’s, a town’s or a county’s rule | *Not asked for this one* |
+| Does a federal law or a right in the Constitution cover the same matter? | A right the rule takes away | *Not asked for this one* |
 | What you must be able to point to | A state or local rule, and a right the Constitution protects that the rule takes away | A law Congress passes, and either a matter the Constitution does not list among Congress’s powers, or a right the Constitution protects that the law takes away |
 
 
 ### 35. A right against the police, and a right against a council
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 35 of 42*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 35 of 42*
 
 [reviewers only: card kind `lookalike`, id `look-protected-trialrights`]
 
-Both of these names say that a right in the Constitution protects a person against a government. They are told apart in the same way: by the key’s first question.
+Both of these names say that a right in the Constitution protects a person against a government. They are told apart in the same way: by the first question.
 
 **Case A**
 
@@ -1188,9 +1188,9 @@ Both of these names say that a right in the Constitution protects a person again
 
 **Why this one and not the other**
 
-In Case A the story ends with a lawyer asking a judge to keep out what a man said in questioning. A judge is being asked, so the key’s first answer is **“A judge, in any court”**. The right is one of the steps the Constitution promises an accused person, and the name is the one for a judge making sure an accused person is treated fairly.
+In Case A the story ends with a lawyer asking a judge to keep out what a man said in questioning. A judge is being asked, so the first answer is **“A judge, in any court”**. The right is one of the steps the Constitution promises an accused person, and the name is the one for a judge making sure an accused person is treated fairly.
 
-In Case B the story ends with a council’s rule. Nobody has asked a judge anything. The key’s first answer is **“A state, city or county government”**, the right at stake is the right to speak, and the case is **A right that binds the states**.
+In Case B the story ends with a council’s rule. Nobody has asked a judge anything. The first answer is **“A state, city or county government”**, the right at stake is the right to speak, and the case is **A right that binds the states**.
 
 A right is in both cases, and in both it is a right against government. What separates them is whose decision the story ends on.
 
@@ -1198,24 +1198,24 @@ A right is in both cases, and in both it is a right against government. What sep
 
 Does the story end with a judge being asked about how an accused person was treated, or with a rule made by a state, a city or a county?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | A right that binds the states | The rights of the accused |
 |---|---|---|
 | Who makes the last decision in the case, or is asked to make it? | A state, city or county government | A judge, in any court |
-| What is the judge asked to do? | *Not asked on its route* | Make sure an accused person gets the steps the Constitution promises |
-| Is the rule the state’s own, or a city’s or a county’s? | The state’s own rule / A city’s, a town’s or a county’s rule | *Not asked on its route* |
-| Does a federal law or a right in the Constitution cover the same matter? | A right the rule takes away | *Not asked on its route* |
+| What is the judge asked to do? | *Not asked for this one* | Make sure an accused person gets the steps the Constitution promises |
+| Is the rule the state’s own, or a city’s or a county’s? | The state’s own rule / A city’s, a town’s or a county’s rule | *Not asked for this one* |
+| Does a federal law or a right in the Constitution cover the same matter? | A right the rule takes away | *Not asked for this one* |
 | What you must be able to point to | A state or local rule, and a right the Constitution protects that the rule takes away | A person accused of a crime, one of the steps the Constitution promises them, and a judge asked whether it was followed |
 
 
 ### 36. The same barbers’ hours, set by a state and by Congress
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 36 of 42*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 36 of 42*
 
 [reviewers only: card kind `lookalike`, id `look-police-beyondcong`]
 
-One more pair crosses into another branch. It is about a matter that belongs to the states, set by a state in one case and by Congress in the other.
+One more pair crosses over to the questions for another kind of case. It is about a matter that belongs to the states, set by a state in one case and by Congress in the other.
 
 **Case A**
 
@@ -1233,9 +1233,9 @@ One more pair crosses into another branch. It is about a matter that belongs to 
 
 **Why this one and not the other**
 
-In Case A Congress passed a law. The key’s first answer is **“Congress, in the House or the Senate”**. The hours barbers work are not among the powers the Constitution lists for Congress, so the matter is kept by the states, and the case has the name for a law the Constitution does not let Congress pass.
+In Case A Congress passed a law. The first answer is **“Congress, in the House or the Senate”**. The hours barbers work are not among the powers the Constitution lists for Congress, so the matter is kept by the states, and the case has the name for a law the Constitution does not let Congress pass.
 
-In Case B the legislature of one state passed a law. The key’s first answer is **“A state, city or county government”**. The matter is the state’s to decide, nothing else covers it, and the case is **Reserved powers**.
+In Case B the legislature of one state passed a law. The first answer is **“A state, city or county government”**. The matter is the state’s to decide, nothing else covers it, and the case is **Reserved powers**.
 
 The matter is the same in both cases, and it is a matter for the states. A state may make the rule. Congress may not. So the same words get different names depending on who made the rule.
 
@@ -1243,30 +1243,30 @@ The matter is the same in both cases, and it is a matter for the states. A state
 
 Who made the rule: a state, or Congress?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Reserved powers | Beyond Congress’s power |
 |---|---|---|
 | Who makes the last decision in the case, or is asked to make it? | A state, city or county government | Congress, in the House or the Senate |
-| What does Congress do in the case? | *Not asked on its route* | Passes a law the Constitution does not let it pass |
-| Is the rule the state’s own, or a city’s or a county’s? | The state’s own rule | *Not asked on its route* |
-| Does a federal law or a right in the Constitution cover the same matter? | Neither: no federal law and no right covers it | *Not asked on its route* |
+| What does Congress do in the case? | *Not asked for this one* | Passes a law the Constitution does not let it pass |
+| Is the rule the state’s own, or a city’s or a county’s? | The state’s own rule | *Not asked for this one* |
+| Does a federal law or a right in the Constitution cover the same matter? | Neither: no federal law and no right covers it | *Not asked for this one* |
 | What you must be able to point to | A rule the state itself makes, on a matter the Constitution leaves to the states, with no federal law covering it and no right it takes away | A law Congress passes, and either a matter the Constitution does not list among Congress’s powers, or a right the Constitution protects that the law takes away |
 
 
 ### 37. The second question, and what else covers the matter
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 37 of 42*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 37 of 42*
 
 [reviewers only: card kind `question`, id `q-else`]
 
-At the end of each of the last cards you saw this question with one answer. This card puts the question and its four answers in one place, as the key shows them, and says why the key asks it.
+At the end of each of the last cards you saw this question with one answer. This card puts the question and its four answers in one place, and says why it is asked.
 
-**The key asks:** **“Does a federal law or a right in the Constitution cover the same matter?”**
+**The question:** **“Does a federal law or a right in the Constitution cover the same matter?”**
 
 **What it is for.** Tells apart a state or local rule that stands alone, one that gives way to a federal law, one that stands beside a federal law, and one that a right forbids.
 
-**Its answers, exactly as the key shows them**
+**Its answers**
 
 - **“Neither: no federal law and no right covers it”**
   - Give this answer when the matter is one the Constitution leaves to the states (licences, marriage, schools, most crime, renting a home, local streets and buildings), no federal law covers it, and the rule takes away no right the Constitution protects.
@@ -1357,13 +1357,13 @@ Sometimes the story names a federal law and it is not clear whether it covers th
 
 ### 38. A question about a new case
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 38 of 42*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 38 of 42*
 
 [reviewers only: card kind `check`, id `check-else`]
 
 > The Ostrow legislature passed a law that public schools in Ostrow may not start before the last week of August.
 
-**The key asks:** **“Does a federal law or a right in the Constitution cover the same matter?”**
+**The question:** **“Does a federal law or a right in the Constitution cover the same matter?”**
 
 - Neither: no federal law and no right covers it
 - A federal law that is meant to be the only rule
@@ -1387,11 +1387,11 @@ Sometimes the story names a federal law and it is not clear whether it covers th
 
 ### 39. A whole case, from the first question to the name
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 39 of 42*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 39 of 42*
 
 [reviewers only: card kind `worked`, id `worked-dogs`]
 
-You have the five names and the key’s two questions about them. Before you run a case yourself, watch two being run from the top, in the order the key asks. You are not asked anything until the end of each.
+You have the five names and the two questions about them. Before you run a case yourself, watch two being run from the top, in the order they are asked. You are not asked anything until the end of each.
 
 *The dog licence fee*
 
@@ -1405,7 +1405,7 @@ What it is for: sorts a case by who makes the decision it ends on: the lawmakers
 
 Answer: **“A state, city or county government”**
 
-The case ends with a decision by a county board: “the Marsh County board voted”. A county is the government of one place, so the key’s first answer is **“A state, city or county government”**. No judge, no Congress and no federal office makes any decision here.
+The case ends with a decision by a county board: “the Marsh County board voted”. A county is the government of one place, so the first answer is **“A state, city or county government”**. No judge, no Congress and no federal office makes any decision here.
 
 Still possible: all five names this unit teaches.
 
@@ -1417,7 +1417,7 @@ What it is for: tells apart a rule a state makes for itself from one a city, tow
 
 Answer: **“A city’s, a town’s or a county’s rule”**
 
-The rule was made by a county board, using power its state gave to counties: “Using the power the state gives to counties, the Marsh County board voted”. That is a county’s rule and not the state’s own, so the key’s answer is **“A city’s, a town’s or a county’s rule”**.
+The rule was made by a county board, using power its state gave to counties: “Using the power the state gives to counties, the Marsh County board voted”. That is a county’s rule and not the state’s own, so the answer is **“A city’s, a town’s or a county’s rule”**.
 
 Still possible: **Power handed down to a city or county**, **Preemption**, **Concurrent powers** and **A right that binds the states**. Ruled out: **Reserved powers**.
 
@@ -1447,19 +1447,19 @@ Still possible: **Power handed down to a city or county**. Ruled out: **Reserved
 
 **Why this is Power handed down to a city or county and not Reserved powers**
 
-For **Reserved powers** you must be able to point to this: a rule the state itself makes, on a matter the Constitution leaves to the states, with no federal law covering it and no right it takes away. The question that tells it from **Power handed down to a city or county** is this: Who made the rule: the state itself, or a city, a town or a county? Here a county board made it, so the key’s answer is **“A city’s, a town’s or a county’s rule”**.
+For **Reserved powers** you must be able to point to this: a rule the state itself makes, on a matter the Constitution leaves to the states, with no federal law covering it and no right it takes away. The question that tells it from **Power handed down to a city or county** is this: Who made the rule: the state itself, or a city, a town or a county? Here a county board made it, so the answer is **“A city’s, a town’s or a county’s rule”**.
 
 Everything else about the case is what it would be for a state’s own rule: the matter is local, no federal law covers it, and no right is taken away. Who made the rule is the one difference.
 
 **Does it look like a case you know?**
 
-The key has given its answer. Now take a second look of a different kind: does this case look like one you know? It should bring back the county’s boat ramp: a county board, using power its state gives to counties, voting on a fee for a local matter.
+The questions have given their answer. Now take a second look of a different kind: does this case look like one you know? It should bring back the county’s boat ramp: a county board, using power its state gives to counties, voting on a fee for a local matter.
 
-Here the key and the likeness agree, so the answer stands. The key’s questions come first, because they make you point at words in the case. The likeness is only a second look. When the two disagree, do not pick the one you prefer. Go back to the key’s questions and find the words in the case that answer them. The second whole case shows how.
+Here the questions and the likeness agree, so the answer stands. The questions come first, because they make you point at words in the case. The likeness is only a second look. When the two disagree, do not pick the one you prefer. Go back to the questions and find the words in the case that answer them. The second whole case shows how.
 
 ### 40. A second whole case, where the story points the wrong way
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 40 of 42*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 40 of 42*
 
 [reviewers only: card kind `worked`, id `worked-parkevent`]
 
@@ -1477,7 +1477,7 @@ What it is for: sorts a case by who makes the decision it ends on: the lawmakers
 
 Answer: **“A state, city or county government”**
 
-The case ends with a decision by a city council: “the council voted no”. The key’s first answer is **“A state, city or county government”**. The group that planned the march only asked. The council made the decision.
+The case ends with a decision by a city council: “the council voted no”. The first answer is **“A state, city or county government”**. The group that planned the march only asked. The council made the decision.
 
 Still possible: all five names this unit teaches.
 
@@ -1489,7 +1489,7 @@ What it is for: tells apart a rule a state makes for itself from one a city, tow
 
 Answer: **“A city’s, a town’s or a county’s rule”**
 
-The rule is the city council’s own: “The Kellmouth city council has a rule”. A city made it, using power its state handed down, so the key’s answer is **“A city’s, a town’s or a county’s rule”**.
+The rule is the city council’s own: “The Kellmouth city council has a rule”. A city made it, using power its state handed down, so the answer is **“A city’s, a town’s or a county’s rule”**.
 
 Still possible: **Power handed down to a city or county**, **Preemption**, **Concurrent powers** and **A right that binds the states**. Ruled out: **Reserved powers**.
 
@@ -1525,9 +1525,9 @@ This is the edge of a right that the picture of **A right that binds the states*
 
 **Does it look like a case you know?**
 
-Now the second look: does this case look like one you know? A march, a council and a public park may bring back the rally ban in Redwick first, and that case was **A right that binds the states**. So here the likeness and the key seem to disagree.
+Now the second look: does this case look like one you know? A march, a council and a public park may bring back the rally ban in Redwick first, and that case was **A right that binds the states**. So here the likeness and the questions seem to disagree.
 
-When that happens, go back to the key’s questions and find the words in the case that answer them. For the second question they are “any event in a city park, whatever it is about, must end by nine at night”. Redwick’s rule banned a political rally in a public park. This city’s limit is the same for every event in every park, and only the first is aimed at people gathering to speak. So the case this one really looks like is the fence rule in Ashby: a city’s rule about a local matter, with nothing else covering it. The key’s answer stands.
+When that happens, go back to the questions and find the words in the case that answer them. For the second question they are “any event in a city park, whatever it is about, must end by nine at night”. Redwick’s rule banned a political rally in a public park. This city’s limit is the same for every event in every park, and only the first is aimed at people gathering to speak. So the case this one really looks like is the fence rule in Ashby: a city’s rule about a local matter, with nothing else covering it. The answer stands.
 
 ### The drill
 
@@ -1535,7 +1535,7 @@ The cards are out of view from here, and every case is new. The drill has five s
 
 Many of these cases name a federal law, a state and a city all at once, and the one named first is often not the one that decides. That is on purpose. Read each story to its end, find who made the rule, and then ask what else covers the same matter.
 
-#### Stage 1 of 5. The key’s answers are shown for each case. Give the name that goes with them. This stage practises one thing: which name goes with which answer.
+#### Stage 1 of 5. The answers are shown for each case. Give the name that goes with them. This stage practises one thing: which name goes with which answer.
 
 The names offered are the five this unit teaches: Reserved powers / Power handed down to a city or county / Preemption / Concurrent powers / A right that binds the states.
 
@@ -1556,7 +1556,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Power handed down to a city or county**: Nobody below the state is named. The state’s own lawmakers made the rule, so it is not a city’s or a county’s.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Power handed down to a city or county**, the look-alike card’s lines follow: Both are rules on an everyday matter that nothing federal covers, and a state and a town can make a rule on the same matter, such as quiet hours. In **Reserved powers** the state itself made the rule: its legislature, its governor or one of its own offices. In **Power handed down to a city or county** a council, a board or a mayor made it, using what the state gave to the place. Everything else is the same: nothing federal covers the matter, and no right is taken away. Who made the rule: the state itself, or a city, a town or a county?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “A state ruling on a matter the Constitution leaves to the states” (one tap opens the card).
 
 **Drill item 2 of 45**
@@ -1576,7 +1576,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Reserved powers**: The state’s legislature did not make this rule. A city council did, and the rule covers one city.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Reserved powers**, the look-alike card’s lines follow: Both are rules on an everyday matter that nothing federal covers, and a state and a town can make a rule on the same matter, such as quiet hours. In **Reserved powers** the state itself made the rule: its legislature, its governor or one of its own offices. In **Power handed down to a city or county** a council, a board or a mayor made it, using what the state gave to the place. Everything else is the same: nothing federal covers the matter, and no right is taken away. Who made the rule: the state itself, or a city, a town or a county?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “A city or county ruling with power its state gave it” (one tap opens the card).
 
 **Drill item 3 of 45**
@@ -1596,7 +1596,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Concurrent powers**: The federal law does not leave room. It says that no state or city may add inspections, so nothing stands beside it.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Concurrent powers**, the look-alike card’s lines follow: In both a federal law and a state’s or a city’s rule cover the same matter. In **Preemption** the federal law is meant to be the only rule, or the two cannot both be obeyed, so the state’s or city’s rule gives way. In **Concurrent powers** the federal law sets only a minimum or leaves room, so the rule stands beside it, and obeying the rule also obeys the federal law. Does the federal law say that it is the only rule, or does it say that it is a minimum or leave room for the states?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “A state or city rule giving way to a federal law” (one tap opens the card).
 
 **Drill item 4 of 45**
@@ -1616,7 +1616,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Preemption**: The federal law says that a state may require more, so it is not meant to be the only rule. The state’s five days stand beside it.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Preemption**, the look-alike card’s lines follow: In both a federal law and a state’s or a city’s rule cover the same matter. In **Preemption** the federal law is meant to be the only rule, or the two cannot both be obeyed, so the state’s or city’s rule gives way. In **Concurrent powers** the federal law sets only a minimum or leaves room, so the rule stands beside it, and obeying the rule also obeys the federal law. Does the federal law say that it is the only rule, or does it say that it is a minimum or leave room for the states?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “A state or city rule standing beside a federal law” (one tap opens the card).
 
 **Drill item 5 of 45**
@@ -1636,7 +1636,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Power handed down to a city or county**: The matter, a county’s own bus station, sounds local, and a county does control its own property. But the rule is aimed at what the pamphlets say, and a county may not take a right away.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Power handed down to a city or county**, the look-alike card’s lines follow: Both are rules a city makes about its own streets and sidewalks. In **Power handed down to a city or county** the rule takes away no right, so the city may make it. In **A right that binds the states** a right stops the rule, because one of the freedoms the Constitution guards is taken from people, and a city has no power to take it, whatever its state handed down. Does the rule aim at what people say, believe or publish, or does it only say where, when or how?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “A state or city rule that a right forbids” (one tap opens the card).
 
 #### Stage 2 of 5. One question at a time.
@@ -1654,7 +1654,7 @@ Shown to you, with the words that decide each answer marked:
 
 - If you are right: “Right: **The state’s own rule.**” The rule was made by one state’s lawmakers: “The Pelham legislature voted”. The licence is the state’s own, and no city, town or county is named. This answer leads to **Reserved powers**, **Preemption**, **Concurrent powers** and **A right that binds the states**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The first question, and what it does and does not decide” (one tap opens the card).
 
 **Drill item 7 of 45**
@@ -1670,7 +1670,7 @@ Shown to you, with the words that decide each answer marked:
 
 - If you are right: “Right: **A city’s, a town’s or a county’s rule.**” The decision was made by a county board: “The Pike County board voted”. That is a county’s rule, made with power its state handed down. This answer leads to **Power handed down to a city or county**, **Preemption**, **Concurrent powers** and **A right that binds the states**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The first question, and what it does and does not decide” (one tap opens the card).
 
 **Drill item 8 of 45**
@@ -1689,7 +1689,7 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **A federal law that is meant to be the only rule.**” A federal law covers the same matter, medicine labels, and is meant to be the only rule: “A federal law sets one set of rules for the labels on medicines sold across the country, and says that no state may add its own”. The state’s warning sticker is the kind of addition it forbids. This answer leads to **Preemption**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **A federal law that leaves room for the state’s rule**: The federal law says that no state may add its own labels, so nothing stands beside it. The state’s sticker gives way.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The second question, and what else covers the matter” (one tap opens the card).
 
 **Drill item 9 of 45**
@@ -1708,7 +1708,7 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **A federal law that leaves room for the state’s rule.**” A federal law covers the same matter and leaves room: “A federal law says that every hotel must have a smoke alarm in each room, and that a state may require more”. A hotel with a sprinkler in each room also meets the federal rule. This answer leads to **Concurrent powers**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **A federal law that is meant to be the only rule**: The federal law says that a state may require more, so it is not meant to be the only rule.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The second question, and what else covers the matter” (one tap opens the card).
 
 **Drill item 10 of 45**
@@ -1726,7 +1726,7 @@ Shown to you, with the words that decide each answer marked:
 
 - If you are right: “Right: **A right the rule takes away.**” The rule takes away a right: “a church may hold a service in the city only if the council has first approved the sermon”. Worship and speech are protected, and a city is bound by that as the federal government is. This answer leads to **A right that binds the states**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The second question, and what else covers the matter” (one tap opens the card).
 
 **Drill item 11 of 45**
@@ -1745,7 +1745,7 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **Neither: no federal law and no right covers it.**” The matter is “a couple must be at least eighteen to marry without a parent’s permission”: marriage, which is not on the list of federal powers. The case names no federal law, and the rule takes away no right, so nothing else covers it. This answer leads to **Reserved powers** and **Power handed down to a city or county**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **A federal law that is meant to be the only rule**: No federal law is named, and marriage is not on the list of federal powers, so there is nothing for the state’s rule to give way to.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The second question, and what else covers the matter” (one tap opens the card).
 
 **Drill item 12 of 45**
@@ -1854,7 +1854,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Drill item 16 of 45**
 
-**You are asked:** You cannot tell whether a case is **Reserved powers** or **Power handed down to a city or county**. Which of the key’s questions tells these two apart?
+**You are asked:** You cannot tell whether a case is **Reserved powers** or **Power handed down to a city or county**. Which question tells these two apart?
 
 - Is the rule the state’s own, or a city’s or a county’s?
 - Does a federal law or a right in the Constitution cover the same matter?
@@ -1867,7 +1867,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Drill item 17 of 45**
 
-**You are asked:** You cannot tell whether a case is **Reserved powers** or **Preemption**. Which of the key’s questions tells these two apart?
+**You are asked:** You cannot tell whether a case is **Reserved powers** or **Preemption**. Which question tells these two apart?
 
 - Is the rule the state’s own, or a city’s or a county’s?
 - Does a federal law or a right in the Constitution cover the same matter?
@@ -1880,7 +1880,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Drill item 18 of 45**
 
-**You are asked:** You cannot tell whether a case is **Preemption** or **Concurrent powers**. Which of the key’s questions tells these two apart?
+**You are asked:** You cannot tell whether a case is **Preemption** or **Concurrent powers**. Which question tells these two apart?
 
 - Is the rule the state’s own, or a city’s or a county’s?
 - Does a federal law or a right in the Constitution cover the same matter?
@@ -1893,7 +1893,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Drill item 19 of 45**
 
-**You are asked:** You cannot tell whether a case is **Reserved powers** or **A right that binds the states**. Which of the key’s questions tells these two apart?
+**You are asked:** You cannot tell whether a case is **Reserved powers** or **A right that binds the states**. Which question tells these two apart?
 
 - Is the rule the state’s own, or a city’s or a county’s?
 - Does a federal law or a right in the Constitution cover the same matter?
@@ -2005,12 +2005,12 @@ Shown to you, with the words that decide each answer marked:
 **Shown as soon as you answer**
 
 - If you are right: “Right: **Congress, in the House or the Senate.**” The last decision is a vote by lawmakers of the whole country: “the House of Representatives voted for a bill that would cut the price of a stamp by two cents”. The Senate has not voted, and the case stops before it does. Nobody else decides anything.
-- If you miss: “The answer is …”, the same reason, and then the line built from the key for the answer you chose.
-- Then, right or wrong: “This case leaves the part of the key you have been taught. The questions that follow this answer come in a part of the course you have not reached, so the case stops here.”
+- If you miss: “The answer is …”, the same reason, and then the line built from the answers’ own wording for the answer you chose.
+- Then, right or wrong: “The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.”
 
-#### Stage 3 of 5. The first answer is shown. Answer the rest, then give the name. From here on your route is marked as well as the name: a right name reached by a wrong answer on the way counts as a miss.
+#### Stage 3 of 5. The first answer is shown. Answer the rest, then give the name. From here on your answers on the way are marked as well as the name: a right name reached by a wrong answer counts as a miss.
 
-Each question is shown with all of its answers from the key, in the key’s order, and the names offered are the five this unit teaches.
+Each question is shown with all of its answers, in order, and the names offered are the five this unit teaches.
 
 **Drill item 26 of 45**
 
@@ -2027,11 +2027,11 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **Power handed down to a city or county**.” Does a federal law or a right in the Constitution cover the same matter? **Neither: no federal law and no right covers it.** The matter is “to keep the fee” for a town car park, a local matter. No federal law is named and no right is touched.
   - Why not **Reserved powers**: The state’s legislature is not named. A town council decided, so the rule is a town’s, not the state’s own.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Reserved powers**, the look-alike card’s lines follow: Both are rules on an everyday matter that nothing federal covers, and a state and a town can make a rule on the same matter, such as quiet hours. In **Reserved powers** the state itself made the rule: its legislature, its governor or one of its own offices. In **Power handed down to a city or county** a council, a board or a mayor made it, using what the state gave to the place. Everything else is the same: nothing federal covers the matter, and no right is taken away. Who made the rule: the state itself, or a city, a town or a county?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- What would make it a different name: If the state’s legislature had set the fee for every town car park in the state, the key’s answer to the first question would be **“The state’s own rule”** and the name would be **Reserved powers**.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- What would make it a different name: If the state’s legislature had set the fee for every town car park in the state, the answer to the first question would be **“The state’s own rule”** and the name would be **Reserved powers**.
 - Taught on: “A city or county ruling with power its state gave it” (one tap opens the card).
 
 **Drill item 27 of 45**
@@ -2050,16 +2050,16 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Concurrent powers**: A federal law is named, which can sound as if it stands beside the state’s. But it is a tax on gasoline, and the state’s rule is about stopping for buses. They are not about the same matter.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - If you chose **A federal law that leaves room for the state’s rule**: A federal law is named, which can sound as if it stands beside the state’s. But it is a tax on gasoline, and the state’s rule is about stopping for buses. They are not about the same matter.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Concurrent powers**, the look-alike card’s lines follow: Both are state rules on a matter of daily life, and in both the state’s rule stands. In **Reserved powers** no federal law covers the matter. In **Concurrent powers** one does, but it sets only a minimum or leaves room, so the state’s rule stands beside it. Is there a federal law on this same matter at all?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If a federal law had set the rules for stopping for school buses and said that a state may require more, the name would be **Concurrent powers**.
 - Taught on: “A state ruling on a matter the Constitution leaves to the states” (one tap opens the card).
 
-#### Stage 4 of 5. No help. Answer every question in the key’s order, then give the name.
+#### Stage 4 of 5. No help. Answer every question in order, then give the name.
 
-Each question is shown with all of its answers from the key, in the key’s order, and the names offered are the five this unit teaches.
+Each question is shown with all of its answers, in order, and the names offered are the five this unit teaches.
 
 **Drill item 28 of 45**
 
@@ -2074,11 +2074,11 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **A state, city or county government.** The case ends with a decision by a state’s lawmakers: “the Calder legislature passed a law”.
   - Is the rule the state’s own, or a city’s or a county’s? **The state’s own rule.** The rule was made by one state’s lawmakers: “the Calder legislature passed a law”. No city, town or county is named.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Power handed down to a city or county**, the look-alike card’s lines follow: Both are rules on an everyday matter that nothing federal covers, and a state and a town can make a rule on the same matter, such as quiet hours. In **Reserved powers** the state itself made the rule: its legislature, its governor or one of its own offices. In **Power handed down to a city or county** a council, a board or a mayor made it, using what the state gave to the place. Everything else is the same: nothing federal covers the matter, and no right is taken away. Who made the rule: the state itself, or a city, a town or a county?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- What would make it a different name: If a city council had set up the licence for instructors in its own city, the key’s answer to the first question would be **“A city’s, a town’s or a county’s rule”** and the name would be **Power handed down to a city or county**.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- What would make it a different name: If a city council had set up the licence for instructors in its own city, the answer to the first question would be **“A city’s, a town’s or a county’s rule”** and the name would be **Power handed down to a city or county**.
 - Taught on: “A state ruling on a matter the Constitution leaves to the states” (one tap opens the card).
 
 **Drill item 29 of 45**
@@ -2094,10 +2094,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **A state, city or county government.** The case ends with a decision by a city council: “The Kellmouth city council voted”.
   - Is the rule the state’s own, or a city’s or a county’s? **A city’s, a town’s or a county’s rule.** The rule was made by a city council: “The Kellmouth city council voted”. A city uses power its state handed down.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Reserved powers**, the look-alike card’s lines follow: Both are rules on an everyday matter that nothing federal covers, and a state and a town can make a rule on the same matter, such as quiet hours. In **Reserved powers** the state itself made the rule: its legislature, its governor or one of its own offices. In **Power handed down to a city or county** a council, a board or a mayor made it, using what the state gave to the place. Everything else is the same: nothing federal covers the matter, and no right is taken away. Who made the rule: the state itself, or a city, a town or a county?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the state’s legislature had required leashes in every public park in the state, the name would be **Reserved powers**.
 - Taught on: “A city or county ruling with power its state gave it” (one tap opens the card).
 
@@ -2114,10 +2114,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **A state, city or county government.** The case ends with a decision by a county board: “The Harrow County board voted”.
   - Is the rule the state’s own, or a city’s or a county’s? **A city’s, a town’s or a county’s rule.** The rule was made by a county board: “The Harrow County board voted”.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Power handed down to a city or county**, the look-alike card’s lines follow: Both are rules a city makes about its own streets and sidewalks. In **Power handed down to a city or county** the rule takes away no right, so the city may make it. In **A right that binds the states** a right stops the rule, because one of the freedoms the Constitution guards is taken from people, and a city has no power to take it, whatever its state handed down. Does the rule aim at what people say, believe or publish, or does it only say where, when or how?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the board had only limited how long any newspaper may stay on the rack, whatever it says, the rule would take away no right and the name would be **Power handed down to a city or county**.
 - Taught on: “A state or city rule that a right forbids” (one tap opens the card).
 
@@ -2134,10 +2134,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **A state, city or county government.** The case ends with a decision by a state’s lawmakers: “The Tarn legislature voted”.
   - Is the rule the state’s own, or a city’s or a county’s? **The state’s own rule.** The rule was made by one state’s lawmakers: “The Tarn legislature voted”.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Reserved powers**, the look-alike card’s lines follow: In both a state’s lawmakers made the rule, and the matter can sound like one a state would settle for itself. In **Reserved powers** nothing federal covers the matter, so the state decides. In **Preemption** a federal law covers the same matter and is meant to be the only rule, so the state’s rule gives way. Has Congress already written a law on this same matter, and is it meant to be the only rule?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the federal law had only said that coins must be at least a certain weight, and that a state may require more, the name would be **Concurrent powers**.
 - Taught on: “A state or city rule giving way to a federal law” (one tap opens the card).
 
@@ -2155,10 +2155,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
   - Who makes the last decision in the case, or is asked to make it? **A state, city or county government.** The case ends with a decision by a state’s lawmakers: “The Halvard legislature passed a law”.
   - Is the rule the state’s own, or a city’s or a county’s? **The state’s own rule.** The rule was made by one state’s lawmakers: “The Halvard legislature passed a law”.
   - If you chose **A federal law that is meant to be the only rule**: The federal law itself says that a state may set an older age, so it is not meant to be the only rule.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Preemption**, the look-alike card’s lines follow: In both a federal law and a state’s or a city’s rule cover the same matter. In **Preemption** the federal law is meant to be the only rule, or the two cannot both be obeyed, so the state’s or city’s rule gives way. In **Concurrent powers** the federal law sets only a minimum or leaves room, so the rule stands beside it, and obeying the rule also obeys the federal law. Does the federal law say that it is the only rule, or does it say that it is a minimum or leave room for the states?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the federal law had said that no state may set a different age, the state’s rule would give way and the name would be **Preemption**.
 - Taught on: “A state or city rule standing beside a federal law” (one tap opens the card).
 
@@ -2175,10 +2175,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **A state, city or county government.** The case ends with a decision by a state’s lawmakers: “the Ostrow legislature passed a law”. The landlord’s refusal is only why the law was passed.
   - Is the rule the state’s own, or a city’s or a county’s? **The state’s own rule.** The rule was made by one state’s lawmakers: “the Ostrow legislature passed a law”.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Power handed down to a city or county**, the look-alike card’s lines follow: Both are rules on an everyday matter that nothing federal covers, and a state and a town can make a rule on the same matter, such as quiet hours. In **Reserved powers** the state itself made the rule: its legislature, its governor or one of its own offices. In **Power handed down to a city or county** a council, a board or a mayor made it, using what the state gave to the place. Everything else is the same: nothing federal covers the matter, and no right is taken away. Who made the rule: the state itself, or a city, a town or a county?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If Congress had already set the time within which every landlord in the country must repair a heater, and said that no state may set another, the name would be **Preemption**.
 - Taught on: “A state ruling on a matter the Constitution leaves to the states” (one tap opens the card).
 
@@ -2195,10 +2195,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **A state, city or county government.** The case ends with a decision by a city council: “The Hale city council voted”.
   - Is the rule the state’s own, or a city’s or a county’s? **A city’s, a town’s or a county’s rule.** The rule was made by a city council: “The Hale city council voted”.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Power handed down to a city or county**, the look-alike card’s lines follow: Both are rules a city, a town or a county makes, and the matter can sound like a purely local one. In **Power handed down to a city or county** nothing federal covers the matter, so the city or county decides with the power its state handed down. In **Preemption** a federal law is meant to be the only rule, so the local rule gives way, as a state’s would. Does a federal law already cover this matter and say that it is the only rule?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the council had voted to hold a free evening class on local history for anyone who wanted to come, no rule would be made for becoming a citizen, and nothing federal would be in its way.
 - Taught on: “A state or city rule giving way to a federal law” (one tap opens the card).
 
@@ -2215,10 +2215,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **A state, city or county government.** The case ends with a decision by a city council: “The Redwick city council voted”. The owners only asked.
   - Is the rule the state’s own, or a city’s or a county’s? **A city’s, a town’s or a county’s rule.** The rule was made by a city council: “The Redwick city council voted”.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Reserved powers**, the look-alike card’s lines follow: Both are rules on an everyday matter that nothing federal covers, and a state and a town can make a rule on the same matter, such as quiet hours. In **Reserved powers** the state itself made the rule: its legislature, its governor or one of its own offices. In **Power handed down to a city or county** a council, a board or a mayor made it, using what the state gave to the place. Everything else is the same: nothing federal covers the matter, and no right is taken away. Who made the rule: the state itself, or a city, a town or a county?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the council had banned only the food trucks that sell newspapers, because of what the newspapers say, the rule would take away a right and the name would be **A right that binds the states**.
 - Taught on: “A city or county ruling with power its state gave it” (one tap opens the card).
 
@@ -2236,10 +2236,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
   - Who makes the last decision in the case, or is asked to make it? **A state, city or county government.** The case ends with a decision by a town council: “The Orsley town council voted”.
   - Is the rule the state’s own, or a city’s or a county’s? **A city’s, a town’s or a county’s rule.** The rule was made by a town council: “The Orsley town council voted”.
   - If you chose **A federal law that is meant to be the only rule**: The federal law says that a city may require more, so it is not meant to be the only rule.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Preemption**, the look-alike card’s lines follow: In both a federal law and a state’s or a city’s rule cover the same matter. In **Preemption** the federal law is meant to be the only rule, or the two cannot both be obeyed, so the state’s or city’s rule gives way. In **Concurrent powers** the federal law sets only a minimum or leaves room, so the rule stands beside it, and obeying the rule also obeys the federal law. Does the federal law say that it is the only rule, or does it say that it is a minimum or leave room for the states?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the federal law had said that the door is the only place the score may be posted, the town’s website rule would give way and the name would be **Preemption**.
 - Taught on: “A state or city rule standing beside a federal law” (one tap opens the card).
 
@@ -2257,11 +2257,11 @@ Each question is shown with all of its answers from the key, in the key’s orde
   - Who makes the last decision in the case, or is asked to make it? **A state, city or county government.** The case ends with a decision by a state’s lawmakers: “the Brenmore legislature passed a law”. Congress is in the first sentence only as background.
   - Is the rule the state’s own, or a city’s or a county’s? **The state’s own rule.** The rule was made by one state’s lawmakers: “the Brenmore legislature passed a law”.
   - If you chose **A federal law that is meant to be the only rule**: A federal law is named, as it was for the stricter crib standard. But that law is about toys, and the state’s rule is about flats. A federal law on a different matter changes nothing.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Preemption**, the look-alike card’s lines follow: In both a state’s lawmakers made the rule, and the matter can sound like one a state would settle for itself. In **Reserved powers** nothing federal covers the matter, so the state decides. In **Preemption** a federal law covers the same matter and is meant to be the only rule, so the state’s rule gives way. Has Congress already written a law on this same matter, and is it meant to be the only rule?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *The stricter crib standard*, which was **Preemption**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *The stricter crib standard*, which was **Preemption**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If Congress had written one set of rules for smoke alarms in every home, and said that no state may set another, the state’s rule would give way and the name would be **Preemption**.
 - Taught on: “A state ruling on a matter the Constitution leaves to the states” (one tap opens the card).
 
@@ -2278,11 +2278,11 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **A state, city or county government.** The case ends with a decision by a state’s lawmakers: “The Halvard legislature passed a law”.
   - Is the rule the state’s own, or a city’s or a county’s? **The state’s own rule.** The rule was made by one state’s lawmakers: “The Halvard legislature passed a law”.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Reserved powers**, the look-alike card’s lines follow: Both are rules a state makes about what people may do in a public place. In **Reserved powers** the rule takes away no right, so the state may make it. In **A right that binds the states** a right stops the rule: one of the freedoms the Constitution guards is taken from people, so the state may not make it. Does the rule take away a right to speak, to worship, to publish or to gather peacefully?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *The food stall licence*, which was **Reserved powers**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *The food stall licence*, which was **Reserved powers**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If the state asked for the same licence from every seller on the sidewalk and refused none because of what they sell, the rule would take away no right and the name would be **Reserved powers**.
 - Taught on: “A state or city rule that a right forbids” (one tap opens the card).
 
@@ -2300,11 +2300,11 @@ Each question is shown with all of its answers from the key, in the key’s orde
   - Who makes the last decision in the case, or is asked to make it? **A state, city or county government.** The case ends with a decision by a state’s lawmakers: “The Tolland legislature passed a law”.
   - Is the rule the state’s own, or a city’s or a county’s? **The state’s own rule.** The rule was made by one state’s lawmakers: “The Tolland legislature passed a law”.
   - If you chose **A federal law that is meant to be the only rule**: The story is about flights and a federal *agency*, as the night flights were, and there the federal rules were the only rules. Here the federal law says its limits are a minimum and a state may set stricter ones.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Preemption**, the look-alike card’s lines follow: In both a federal law and a state’s or a city’s rule cover the same matter. In **Preemption** the federal law is meant to be the only rule, or the two cannot both be obeyed, so the state’s or city’s rule gives way. In **Concurrent powers** the federal law sets only a minimum or leaves room, so the rule stands beside it, and obeying the rule also obeys the federal law. Does the federal law say that it is the only rule, or does it say that it is a minimum or leave room for the states?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *The night flights*, which was **Preemption**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *The night flights*, which was **Preemption**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If the federal law had said that its noise limits are the only ones, the state’s stricter limits would give way and the name would be **Preemption**.
 - Taught on: “A state or city rule standing beside a federal law” (one tap opens the card).
 
@@ -2322,11 +2322,11 @@ Each question is shown with all of its answers from the key, in the key’s orde
   - Who makes the last decision in the case, or is asked to make it? **A state, city or county government.** The case ends with a decision by a city council: “the council voted no”. The group only asked.
   - Is the rule the state’s own, or a city’s or a county’s? **A city’s, a town’s or a county’s rule.** The rule is the city council’s own: “The Hale city council has a rule”.
   - If you chose **A right the rule takes away**: A march is people gathering to speak, so the case sounds like a right being taken away, as the rally ban did. But the rule is about where any march may go and does not aim at what is said.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A right that binds the states**, the look-alike card’s lines follow: Both are rules a city makes about its own streets and sidewalks. In **Power handed down to a city or county** the rule takes away no right, so the city may make it. In **A right that binds the states** a right stops the rule, because one of the freedoms the Constitution guards is taken from people, and a city has no power to take it, whatever its state handed down. Does the rule aim at what people say, believe or publish, or does it only say where, when or how?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *The rally ban in a city*, which was **A right that binds the states**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *The rally ban in a city*, which was **A right that binds the states**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If the rule had applied only to marches against the council, it would take away a right and the name would be **A right that binds the states**.
 - Taught on: “A city or county ruling with power its state gave it” (one tap opens the card).
 
@@ -2346,8 +2346,8 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - If you are right: “Right: **The President or a federal agency.**” The decision is made by an office of the government of the whole country: “the federal parks agency announced that dogs must be kept on a leash on every trail in the national parks”. No vote, no judge and no state or city appears.
-- If you miss: “The answer is …”, the same reason, and then the line built from the key for the answer you chose.
-- Then, right or wrong: “This case leaves the part of the key you have been taught. The questions that follow this answer come in a part of the course you have not reached, so the case stops here.”
+- If you miss: “The answer is …”, the same reason, and then the line built from the answers’ own wording for the answer you chose.
+- Then, right or wrong: “The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.”
 
 #### Last stage. Each of these is something a person might say that uses one of this unit’s names, or reasons in one of its ways. Each has a fault. The first is worked for you. For the rest, answer before the fault is shown.
 
@@ -2366,7 +2366,7 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - A state or local rule, and a right the Constitution protects that the rule takes away
 
 **The answer:** A state or local rule, and a federal law on the same matter that is meant to be the only rule, or that the state or local rule contradicts.
-- The fault: The claim points at a federal law and a state rule on the same matter, and stops there. Two rules on one matter are not yet **Preemption**. That name needs a federal law that shuts the states out, or one the state’s rule clashes with. Here the federal law sets a floor, and a worker who gets paid leave also gets the leave the federal law asks for. The key’s answer is **“A federal law that leaves room for the state’s rule”**.
+- The fault: The claim points at a federal law and a state rule on the same matter, and stops there. Two rules on one matter are not yet **Preemption**. That name needs a federal law that shuts the states out, or one the state’s rule clashes with. Here the federal law sets a floor, and a worker who gets paid leave also gets the leave the federal law asks for. The answer is **“A federal law that leaves room for the state’s rule”**.
 - The claim, put right (always the last thing shown): A federal law gives twelve weeks of unpaid leave, and a state adds paid leave on top. The two stand side by side, so the case is **Concurrent powers**. It would be **Preemption** only if the federal law said that no state may add to it.
 
 **Drill item 42 of 45**
@@ -2440,21 +2440,21 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - The answer is: **A right the rule takes away.**
-- If you chose another answer, the line is built from the key, as for any other question.
-- The fault: The claim reasons that no right reaches a county. The first ten amendments were first written to limit only the federal government. But after the Civil War the Fourteenth Amendment was read to bring those limits to the states, and so a right binds a state, a city and a county as well. The key’s answer to the second question is **“A right the rule takes away”**.
+- If you chose another answer, the line is built from the answers’ own wording, as for any other question.
+- The fault: The claim reasons that no right reaches a county. The first ten amendments were first written to limit only the federal government. But after the Civil War the Fourteenth Amendment was read to bring those limits to the states, and so a right binds a state, a city and a county as well. The answer to the second question is **“A right the rule takes away”**.
 - The claim, put right (always the last thing shown): The First Amendment was first written to limit Congress, but the Fourteenth Amendment brought it to the states, so it binds a county too. A county board that bans leaflets because of what they say is making a rule that a right forbids: **A right that binds the states**.
 
-**When the drill ends.** The learner sees their own results: first-try accuracy for each stage, whole routes beside single questions, the pair of names they mixed up most often, and what will come back and when. Anything missed was asked again before the drill ended. Nothing here is graded. A miss only decides what comes back.
+**When the drill ends.** The learner sees their own results: first-try accuracy for each stage, whole cases beside single questions, the pair of names they mixed up most often, and what will come back and when. Anything missed was asked again before the drill ended. Nothing here is graded. A miss only decides what comes back.
 
 ### 41. What to carry away
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 41 of 42*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 41 of 42*
 
 [reviewers only: card kind `recap`, id `recap`]
 
-You have now run the key on your own. This card puts the unit in one place, in the key’s words.
+You have now run the questions on your own. This card puts the unit in one place.
 
-**The key for this unit, in its own words**
+**This unit’s questions and answers**
 
 Is the rule the state’s own, or a city’s or a county’s?
 - The state’s own rule → Reserved powers · Preemption · Concurrent powers · A right that binds the states
@@ -2490,7 +2490,7 @@ Does a federal law or a right in the Constitution cover the same matter?
 
 ### 42. Where would you meet this?
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 42 of 42*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 42 of 42*
 
 [reviewers only: card kind `transfer`, id `transfer`]
 
@@ -2518,7 +2518,7 @@ One line is enough. It is kept on this device only and is never marked.
 
 ## After the unit: what comes back on later days
 
-A name that is due returns as a case the learner has not seen, next to a case of the name they most often confuse it with. Each is run as a whole route. These are the fresh cases held back for that purpose: three for each name, one for each scheduled return. The first return is about two days after the drill, the next about a week after that, the next about three and a half weeks later.
+A name that is due returns as a case the learner has not seen, next to a case of the name they most often confuse it with. Each is run as a whole case: every question, then the name. These are the fresh cases held back for that purpose: three for each name, one for each scheduled return. The first return is about two days after the drill, the next about a week after that, the next about three and a half weeks later.
 
 **Return case 1 of 15**
 
@@ -2533,10 +2533,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **A state, city or county government.** The case ends with a decision by a state’s lawmakers: “The Tarn legislature passed a law”.
   - Is the rule the state’s own, or a city’s or a county’s? **The state’s own rule.** The rule was made by one state’s lawmakers: “The Tarn legislature passed a law”.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Power handed down to a city or county**, the look-alike card’s lines follow: Both are rules on an everyday matter that nothing federal covers, and a state and a town can make a rule on the same matter, such as quiet hours. In **Reserved powers** the state itself made the rule: its legislature, its governor or one of its own offices. In **Power handed down to a city or county** a council, a board or a mayor made it, using what the state gave to the place. Everything else is the same: nothing federal covers the matter, and no right is taken away. Who made the rule: the state itself, or a city, a town or a county?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If a city council had made the same rule for the pawn shops of its own city, the name would be **Power handed down to a city or county**.
 - Taught on: “A state ruling on a matter the Constitution leaves to the states” (one tap opens the card).
 
@@ -2554,10 +2554,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
   - Who makes the last decision in the case, or is asked to make it? **A state, city or county government.** The case ends with a decision by a state’s lawmakers: “the Ostrow legislature passed a law”.
   - Is the rule the state’s own, or a city’s or a county’s? **The state’s own rule.** The rule was made by one state’s lawmakers: “the Ostrow legislature passed a law”.
   - If you chose **A federal law that leaves room for the state’s rule**: No federal law is named, so there is nothing for the state’s rule to stand beside.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Concurrent powers**, the look-alike card’s lines follow: Both are state rules on a matter of daily life, and in both the state’s rule stands. In **Reserved powers** no federal law covers the matter. In **Concurrent powers** one does, but it sets only a minimum or leaves room, so the state’s rule stands beside it. Is there a federal law on this same matter at all?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If a federal law had said that fireworks may be sold only to people over sixteen, and that a state may set an older age, the name would be **Concurrent powers**.
 - Taught on: “A state ruling on a matter the Constitution leaves to the states” (one tap opens the card).
 
@@ -2575,10 +2575,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
   - Who makes the last decision in the case, or is asked to make it? **A state, city or county government.** The case ends with a decision by a state’s lawmakers: “The Lorne legislature passed a law”.
   - Is the rule the state’s own, or a city’s or a county’s? **The state’s own rule.** The rule was made by one state’s lawmakers: “The Lorne legislature passed a law”.
   - If you chose **A federal law that is meant to be the only rule**: No federal law is named, and schooling is not on the list of federal powers. There is nothing for the state’s rule to give way to.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Preemption**, the look-alike card’s lines follow: In both a state’s lawmakers made the rule, and the matter can sound like one a state would settle for itself. In **Reserved powers** nothing federal covers the matter, so the state decides. In **Preemption** a federal law covers the same matter and is meant to be the only rule, so the state’s rule gives way. Has Congress already written a law on this same matter, and is it meant to be the only rule?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the same rule had been made by a county board for the schools of one county, the name would be **Power handed down to a city or county**.
 - Taught on: “A state ruling on a matter the Constitution leaves to the states” (one tap opens the card).
 
@@ -2595,10 +2595,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **A state, city or county government.** The case ends with a decision by a town council: “The Ashby town council voted”.
   - Is the rule the state’s own, or a city’s or a county’s? **A city’s, a town’s or a county’s rule.** The rule was made by a town council: “The Ashby town council voted”.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Reserved powers**, the look-alike card’s lines follow: Both are rules on an everyday matter that nothing federal covers, and a state and a town can make a rule on the same matter, such as quiet hours. In **Reserved powers** the state itself made the rule: its legislature, its governor or one of its own offices. In **Power handed down to a city or county** a council, a board or a mayor made it, using what the state gave to the place. Everything else is the same: nothing federal covers the matter, and no right is taken away. Who made the rule: the state itself, or a city, a town or a county?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the state’s legislature had set a height limit for every building in the state, the name would be **Reserved powers**.
 - Taught on: “A city or county ruling with power its state gave it” (one tap opens the card).
 
@@ -2615,10 +2615,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **A state, city or county government.** The case ends with a decision by a county board: “The Vance County board voted”. The students only asked.
   - Is the rule the state’s own, or a city’s or a county’s? **A city’s, a town’s or a county’s rule.** The decision was made by a county board: “The Vance County board voted”.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Reserved powers**, the look-alike card’s lines follow: Both are rules on an everyday matter that nothing federal covers, and a state and a town can make a rule on the same matter, such as quiet hours. In **Reserved powers** the state itself made the rule: its legislature, its governor or one of its own offices. In **Power handed down to a city or county** a council, a board or a mayor made it, using what the state gave to the place. Everything else is the same: nothing federal covers the matter, and no right is taken away. Who made the rule: the state itself, or a city, a town or a county?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the state’s legislature had set the Sunday opening of every public library in the state, the name would be **Reserved powers**.
 - Taught on: “A city or county ruling with power its state gave it” (one tap opens the card).
 
@@ -2635,10 +2635,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **A state, city or county government.** The case ends with a decision by a city council: “The Hale city council voted”.
   - Is the rule the state’s own, or a city’s or a county’s? **A city’s, a town’s or a county’s rule.** The rule was made by a city council: “The Hale city council voted”.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Reserved powers**, the look-alike card’s lines follow: Both are rules on an everyday matter that nothing federal covers, and a state and a town can make a rule on the same matter, such as quiet hours. In **Reserved powers** the state itself made the rule: its legislature, its governor or one of its own offices. In **Power handed down to a city or county** a council, a board or a mayor made it, using what the state gave to the place. Everything else is the same: nothing federal covers the matter, and no right is taken away. Who made the rule: the state itself, or a city, a town or a county?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the permit were refused to anyone whose house flew a flag the council disliked, the rule would take away a right and the name would be **A right that binds the states**.
 - Taught on: “A city or county ruling with power its state gave it” (one tap opens the card).
 
@@ -2655,10 +2655,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **A state, city or county government.** The case ends with a decision by a state’s lawmakers: “The Pelham legislature voted”.
   - Is the rule the state’s own, or a city’s or a county’s? **The state’s own rule.** The rule was made by one state’s lawmakers: “The Pelham legislature voted”.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Reserved powers**, the look-alike card’s lines follow: In both a state’s lawmakers made the rule, and the matter can sound like one a state would settle for itself. In **Reserved powers** nothing federal covers the matter, so the state decides. In **Preemption** a federal law covers the same matter and is meant to be the only rule, so the state’s rule gives way. Has Congress already written a law on this same matter, and is it meant to be the only rule?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the federal law had said that a state may check the goods too, the state’s check would stand beside it and the name would be **Concurrent powers**.
 - Taught on: “A state or city rule giving way to a federal law” (one tap opens the card).
 
@@ -2675,10 +2675,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **A state, city or county government.** The case ends with a decision by a city council: “The Redwick city council voted”.
   - Is the rule the state’s own, or a city’s or a county’s? **A city’s, a town’s or a county’s rule.** The rule was made by a city council: “The Redwick city council voted”.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Power handed down to a city or county**, the look-alike card’s lines follow: Both are rules a city, a town or a county makes, and the matter can sound like a purely local one. In **Power handed down to a city or county** nothing federal covers the matter, so the city or county decides with the power its state handed down. In **Preemption** a federal law is meant to be the only rule, so the local rule gives way, as a state’s would. Does a federal law already cover this matter and say that it is the only rule?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If no federal law covered airport searches, a city rule about its own airport would be **Power handed down to a city or county**.
 - Taught on: “A state or city rule giving way to a federal law” (one tap opens the card).
 
@@ -2695,10 +2695,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **A state, city or county government.** The case ends with a decision by a state’s lawmakers: “The Calder legislature voted”.
   - Is the rule the state’s own, or a city’s or a county’s? **The state’s own rule.** The rule was made by one state’s lawmakers: “The Calder legislature voted”.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Reserved powers**, the look-alike card’s lines follow: In both a state’s lawmakers made the rule, and the matter can sound like one a state would settle for itself. In **Reserved powers** nothing federal covers the matter, so the state decides. In **Preemption** a federal law covers the same matter and is meant to be the only rule, so the state’s rule gives way. Has Congress already written a law on this same matter, and is it meant to be the only rule?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If Congress had written no laws on how long visitors may stay, the matter would still be on the federal list, and the state would still have no room to act.
 - Taught on: “A state or city rule giving way to a federal law” (one tap opens the card).
 
@@ -2716,10 +2716,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
   - Who makes the last decision in the case, or is asked to make it? **A state, city or county government.** The case ends with a decision by a state’s lawmakers: “the Ostrow legislature passed a law”.
   - Is the rule the state’s own, or a city’s or a county’s? **The state’s own rule.** The rule was made by one state’s lawmakers: “the Ostrow legislature passed a law”.
   - If you chose **A federal law that is meant to be the only rule**: The federal law itself says that a state may set a lower limit, so it is not meant to be the only rule.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Preemption**, the look-alike card’s lines follow: In both a federal law and a state’s or a city’s rule cover the same matter. In **Preemption** the federal law is meant to be the only rule, or the two cannot both be obeyed, so the state’s or city’s rule gives way. In **Concurrent powers** the federal law sets only a minimum or leaves room, so the rule stands beside it, and obeying the rule also obeys the federal law. Does the federal law say that it is the only rule, or does it say that it is a minimum or leave room for the states?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the federal law had said that no state may set a different limit, the state’s lower limit would give way and the name would be **Preemption**.
 - Taught on: “A state or city rule standing beside a federal law” (one tap opens the card).
 
@@ -2736,10 +2736,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **A state, city or county government.** The case ends with a decision by a state’s lawmakers: “The Calder legislature passed a law”.
   - Is the rule the state’s own, or a city’s or a county’s? **The state’s own rule.** The rule was made by one state’s lawmakers: “The Calder legislature passed a law”.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Reserved powers**, the look-alike card’s lines follow: Both are state rules on a matter of daily life, and in both the state’s rule stands. In **Reserved powers** no federal law covers the matter. In **Concurrent powers** one does, but it sets only a minimum or leaves room, so the state’s rule stands beside it. Is there a federal law on this same matter at all?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If no federal law covered extra pay for long weeks, the state’s rule would stand alone and the name would be **Reserved powers**.
 - Taught on: “A state or city rule standing beside a federal law” (one tap opens the card).
 
@@ -2757,10 +2757,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
   - Who makes the last decision in the case, or is asked to make it? **A state, city or county government.** The case ends with a decision by a state’s lawmakers: “the Tarn legislature passed a law”.
   - Is the rule the state’s own, or a city’s or a county’s? **The state’s own rule.** The rule was made by one state’s lawmakers: “the Tarn legislature passed a law”.
   - If you chose **A federal law that is meant to be the only rule**: The federal law itself says that a state may require more tests, so it is not meant to be the only rule.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Preemption**, the look-alike card’s lines follow: In both a federal law and a state’s or a city’s rule cover the same matter. In **Preemption** the federal law is meant to be the only rule, or the two cannot both be obeyed, so the state’s or city’s rule gives way. In **Concurrent powers** the federal law sets only a minimum or leaves room, so the rule stands beside it, and obeying the rule also obeys the federal law. Does the federal law say that it is the only rule, or does it say that it is a minimum or leave room for the states?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the federal law had said that its test is the only one a seat may be made to pass, the state’s second test would give way and the name would be **Preemption**.
 - Taught on: “A state or city rule standing beside a federal law” (one tap opens the card).
 
@@ -2777,10 +2777,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **A state, city or county government.** The case ends with a decision by a county board: “The Pike County board voted”.
   - Is the rule the state’s own, or a city’s or a county’s? **A city’s, a town’s or a county’s rule.** The rule was made by a county board: “The Pike County board voted”.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Power handed down to a city or county**, the look-alike card’s lines follow: Both are rules a city makes about its own streets and sidewalks. In **Power handed down to a city or county** the rule takes away no right, so the city may make it. In **A right that binds the states** a right stops the rule, because one of the freedoms the Constitution guards is taken from people, and a city has no power to take it, whatever its state handed down. Does the rule aim at what people say, believe or publish, or does it only say where, when or how?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the board had said that every parade must end by six in the evening, whatever its banners say, the rule would take away no right and the name would be **Power handed down to a city or county**.
 - Taught on: “A state or city rule that a right forbids” (one tap opens the card).
 
@@ -2797,10 +2797,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **A state, city or county government.** The case ends with a decision by a state’s lawmakers: “The Lorne legislature then passed a law”.
   - Is the rule the state’s own, or a city’s or a county’s? **The state’s own rule.** The rule was made by one state’s lawmakers: “The Lorne legislature then passed a law”.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Reserved powers**, the look-alike card’s lines follow: Both are rules a state makes about what people may do in a public place. In **Reserved powers** the rule takes away no right, so the state may make it. In **A right that binds the states** a right stops the rule: one of the freedoms the Constitution guards is taken from people, so the state may not make it. Does the rule take away a right to speak, to worship, to publish or to gather peacefully?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the law had only said that student newspapers must be delivered to the library by nine each morning, it would take away no right and the name would be **Reserved powers**.
 - Taught on: “A state or city rule that a right forbids” (one tap opens the card).
 
@@ -2817,10 +2817,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **A state, city or county government.** The case ends with a decision by a city council: “The Hale city council voted”.
   - Is the rule the state’s own, or a city’s or a county’s? **A city’s, a town’s or a county’s rule.** The rule was made by a city council: “The Hale city council voted”.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Power handed down to a city or county**, the look-alike card’s lines follow: Both are rules a city makes about its own streets and sidewalks. In **Power handed down to a city or county** the rule takes away no right, so the city may make it. In **A right that binds the states** a right stops the rule, because one of the freedoms the Constitution guards is taken from people, and a city has no power to take it, whatever its state handed down. Does the rule aim at what people say, believe or publish, or does it only say where, when or how?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the council had said that every building used by the public must have two exits, whatever the building is used for, the rule would take away no right and the name would be **Power handed down to a city or county**.
 - Taught on: “A state or city rule that a right forbids” (one tap opens the card).
 

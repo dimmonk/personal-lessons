@@ -1,15 +1,15 @@
 # Learner view: Statistical Claims, Unit Six: What it says caused what
 
-*Four other ways to explain the same result, and the one claim of cause where none of them is open.* Unit revision 1, built to lesson standard 1, status: draft.
+*Four other ways to explain the same result, and the one claim of cause where none of them is open.* Unit revision 2, built to lesson standard 1, status: draft.
 
 This file is generated from the data files by `tools/render-learner-view.mjs`. It shows every screen in the order a learner meets it. In the app one card is on screen at a time and the learner moves on when ready.
 
-- **Bold text in quotation marks** is the key’s own wording, printed from `key.js`. Bold names are the outcome names from the same file. Neither is typed anywhere else. "What you must be able to point to" lines and "How to tell them apart" lines are also printed from one place each (the key and the look-alike ledger).
+- **Bold text in quotation marks** is the subject’s own wording for its questions and answers, written once and printed everywhere. Bold names are the names, written once in the same place. Neither is typed anywhere else. "What you must be able to point to" lines and "How to tell them apart" lines are also printed from one place each (the subject’s questions and the pairs it compares).
 - ⟦Double brackets⟧ show the words the app marks in a case (one highlight style everywhere).
 - The line in italics under each heading is the app’s top bar. The line in square brackets after it is for reviewers and is not shown to the learner.
 - Headings, prompt wording and stage instructions that are the same in every unit are the app’s wording, not this unit’s.
 - "Shown as soon as you …" is what appears the moment the learner answers. Nothing is hidden behind a second tap the first time a case is met, or after a miss.
-- After every answer the app shows, in this order: the right answer in the key’s words; the reason, quoting the marked words; for a name, why the nearest wrong name fails; after a miss, a line about the answer the learner chose; and last a link to the card that taught it. Where a line about the learner’s own choice is not written for the case, the app builds it from the key, and this file says so in place of repeating it.
+- After every answer the app shows, in this order: the right answer; the reason, quoting the marked words; for a name, why the nearest wrong name fails; after a miss, a line about the answer the learner chose; and last a link to the card that taught it. Where a line about the learner’s own choice is not written for the case, the app builds it from the answers’ own wording, and this file says so in place of repeating it.
 
 ---
 
@@ -17,7 +17,7 @@ This file is generated from the data files by `tools/render-learner-view.mjs`. I
 
 ### 1. When a claim gives one thing as the reason for another
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 1 of 34*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 1 of 34*
 
 [reviewers only: card kind `orient`, id `orient`]
 
@@ -27,7 +27,7 @@ You already know the raw material. "Since we started the program, results are up
 
 The trouble is that a result can arrive by more than one road. This unit teaches four other roads to the same result, what to point to in a claim to say which one is open, and what you would need to see to close it. It also shows what a claim looks like when none of them is open, because a claim that has been tested fairly deserves to be believed, and you need to be able to tell it from the rest.
 
-**What Unit One taught, in one place.** The key’s first question is **“Which part of the claim goes wrong first?”** Its answers:
+**What Unit One taught, in one place.** The first question is **“Which part of the claim goes wrong first?”** Its answers:
 
 - **“Who was counted”**: give this answer when the people or things the figure was worked out from are not a fair picture of the group the claim is about, or are too few to trust.
 - **“What the number counts”**: give this answer when the figure could rise, fall or differ without the real thing it is read as showing doing the same.
@@ -35,11 +35,11 @@ The trouble is that a result can arrive by more than one road. This unit teaches
 - **“What it says caused what”**: give this answer when the claim says one thing made another happen, and the case shows another way the same result could have come about. **This unit is about these cases.**
 - **“Nothing goes wrong”**: give this answer when every part the claim makes holds up when it is checked in order, and none of them goes wrong.
 
-Unit One also taught that two things are marked separately: the name you give a case, and your route to it, meaning the answers you gave to the key’s questions on the way.
+Two things are marked separately: the name you give a case, and your answers to the questions on the way to it.
 
 *(One tap on any of these lines opens the card in Unit One that taught it.)*
 
-**The part of the key this unit teaches.** This is a preview. You are not expected to follow it yet: every line is explained on the cards that come next. The question and its answers are in the key’s own words. Beside each answer, in plain words, is the thing it leads to. There are four of them, and each gets its name when it is taught.
+**The questions this unit teaches.** This is a preview. You are not expected to follow it yet: every line is explained on the cards that come next. The question and its answers are worded exactly as you will meet them. Beside each answer, in plain words, is the thing it leads to. There are four of them, and each gets its name when it is taught.
 
 What else could produce the same result?
 - It would have happened anyway → nothing to show what happens without it
@@ -58,17 +58,17 @@ The unit has three parts, and you can stop after any of them.
 
 1. One group, before and after, and a group picked at its worst
 2. Two groups that put themselves where they are, and a cause that runs the other way
-3. The key’s question, and two whole claims, then the drill
+3. The question, and two whole claims, then the drill
 
 Each name is taught through cases first. After every step you answer one question about a new case, and the answer and the reason are shown straight away. Nothing here is graded. A miss only decides what comes back.
 
 ### 2. Nothing to show what happens without it
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 2 of 34*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 2 of 34*
 
 [reviewers only: card kind `meet`, id `meet-nocontrol`]
 
-The first three parts of a claim can all hold, and the claim can still go wrong at the fourth, when it gives one thing as the reason for another. The key’s question for that part is **“What else could produce the same result?”**. Here is the first of its four answers, in a claim whose figures are all given and have nothing wrong with them.
+The first three parts of a claim can all hold, and the claim can still go wrong at the fourth, when it gives one thing as the reason for another. The question for that part is **“What else could produce the same result?”**. Here is the first of its four answers, in a claim whose figures are all given and have nothing wrong with them.
 
 *The sleep app*
 
@@ -93,9 +93,9 @@ Notice what this does not say. It does not say the app is useless. The app may h
 
 **What you must be able to point to.** A claim that something worked, a result only for the people or things that got it, or only from before and after it, and no group that went without it to show what happens anyway. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What else could produce the same result?”**
+**The question:** **“What else could produce the same result?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“It would have happened anyway”**
+**Its answer for a case like this one:** **“It would have happened anyway”**
 
 The name for this is **No comparison group**. A comparison group is a second group, as like the first as can be managed, that did not get the thing and was counted in the same way, so that its result can be set beside the first group’s.
 
@@ -105,7 +105,7 @@ You may also hear this called “no control group”. That means the same thing 
 
 ### 3. No comparison group: the same thing in a different story
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 3 of 34*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 3 of 34*
 
 [reviewers only: card kind `again`, id `again-nocontrol`]
 
@@ -138,25 +138,25 @@ The two stories share nothing else. So this is not about sleep or about cafés. 
 
 ### 4. The story never decides the answer
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 4 of 34*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 4 of 34*
 
 [reviewers only: card kind `lens`, id `lens`]
 
 The last card asked you to ignore the story. That holds for the whole unit, so here it is once in full.
 
-Every claim in this unit has two layers. The top layer is the story: a clinic, a café, a school, a road. The layer underneath is the key’s question for this part: **“What else could produce the same result?”** The four answers belong to the layer underneath, and any of them can turn up in any story.
+Every claim in this unit has two layers. The top layer is the story: a clinic, a café, a school, a road. The layer underneath is the question for this part: **“What else could produce the same result?”** The four answers belong to the layer underneath, and any of them can turn up in any story.
 
 From here on the cases change their stories on purpose. Sometimes two cases will share a story and differ only underneath. When that happens, the shared story is there to show you that it tells you nothing.
 
 One thing stays the same in every case here. The first three parts of the claim already hold: the people or things counted are a fair picture, what is counted is the same throughout, and the numbers are given. The only thing in doubt is the step from "these go together" to "this made that happen".
 
-**Stays the same from case to case:** what the key asks about: **“What else could produce the same result?”**
+**Stays the same from case to case:** what this question asks about: **“What else could produce the same result?”**
 
 **Changes on purpose:** the topic; the people; how much is at stake; how sensible it sounds that the thing would work; how big the difference is.
 
 ### 5. No comparison group: what it is like
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 5 of 34*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 5 of 34*
 
 [reviewers only: card kind `portrait`, id `portrait-nocontrol`]
 
@@ -194,7 +194,7 @@ If there is none, ask yourself what you would expect to see if nothing had been 
 
 ### 6. A question about a new case
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 6 of 34*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 6 of 34*
 
 [reviewers only: card kind `check`, id `check-nocontrol`]
 
@@ -209,7 +209,7 @@ The pieces you can tap:
 
 **Shown as soon as you tap**
 
-- If you are right: “Right: ‘The app gives no figures for users who left the feature off.’.” The only figures are for the 200 users who switched the feature on, set beside their own year before. “The app gives no figures for users who left the feature off”, so nothing shows what these users would have saved with no feature. Savings can change from one year to the next for many reasons that have nothing to do with it. The key’s answer for this case is **“It would have happened anyway”**, and the name is **No comparison group**.
+- If you are right: “Right: ‘The app gives no figures for users who left the feature off.’.” The only figures are for the 200 users who switched the feature on, set beside their own year before. “The app gives no figures for users who left the feature off”, so nothing shows what these users would have saved with no feature. Savings can change from one year to the next for many reasons that have nothing to do with it. The answer for this case is **“It would have happened anyway”**, and the name is **No comparison group**.
 - If you miss: “The words are ‘The app gives no figures for users who left the feature off.’.” The same reason follows, and then a line about the piece you tapped:
   - “A budgeting app says: 'Our round-up feature works.”: That is the claim that something worked. What the figures can show for it is the question, and the words that answer it are not in this sentence.
   - “The 200 users who switched it on saved $310 more over the year than they did the year before.'”: That is the result, for the users who switched the feature on. A result is there. What is missing is a result for anyone who went without.
@@ -217,7 +217,7 @@ The pieces you can tap:
 
 ### 7. Picked at an extreme, then back toward usual
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 7 of 34*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 7 of 34*
 
 [reviewers only: card kind `meet`, id `meet-regression`]
 
@@ -244,23 +244,23 @@ The three lowest first scores are 40, 46 and 52, which add up to 138 and average
 
 So the teacher’s gain of 9 points is exactly what a class with no tutoring shows. This does not show that tutoring did nothing. It shows that this figure cannot tell tutoring from no tutoring. What would tell them apart is a second group of equally low scorers who did not get the tutoring: pick the six lowest, give the tutoring to three of them chosen by a draw, as when names are drawn from a hat, and set how much each group gained side by side.
 
-Like the sleep app, this case has no group of equally low scorers who went without. Both things are true of it, and the key has to choose between the two answers.
+Like the sleep app, this case has no group of equally low scorers who went without. Both things are true of it, and only one of the two answers can be given.
 
 **What you must be able to point to.** People or things picked because they were at their worst or best, a change back toward their usual level afterwards, and that change read as caused by something done to them in between. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What else could produce the same result?”**
+**The question:** **“What else could produce the same result?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“It was picked at its worst or best, and goes back toward usual”**
+**Its answer for a case like this one:** **“It was picked at its worst or best, and goes back toward usual”**
 
 The name for this is **Regression to the mean**. "The mean" is the plain average, the usual level. "Regression" means going back. So the name says: back toward the usual level.
 
-When a case shows both this answer and **“It would have happened anyway”**, the key gives **“It was picked at its worst or best, and goes back toward usual”**. It says why the change would have come with no tutoring, where the other answer says only that nothing shows what would have happened.
+When a case shows both this answer and **“It would have happened anyway”**, the answer is **“It was picked at its worst or best, and goes back toward usual”**. It says why the change would have come with no tutoring, where the other answer says only that nothing shows what would have happened.
 
 You may also hear this called “drifting back to normal”. That means the same thing here, and from now on this unit uses one name: **Regression to the mean**.
 
 ### 8. Regression to the mean: the same thing in a different story
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 8 of 34*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 8 of 34*
 
 [reviewers only: card kind `again`, id `again-regression`]
 
@@ -284,7 +284,7 @@ The pieces you can tap:
 **Shown as soon as you tap.** The words are “A city’s road department picks the five intersections that had the most crashes last year”.
 - If you tapped “and puts up new warning signs at them.”: That is what was done. The question is why these five intersections were chosen.
 - If you tapped “Last year those five had 50 crashes in all. This year they have 30.”: Those are the figures, and the fall from 50 to 30 is real. What the figures cannot say is why it fell.
-- If you tapped “'The signs cut crashes by 40%,' the department says.”: That is the claim of cause. What settles the key’s answer is how the intersections were picked.
+- If you tapped “'The signs cut crashes by 40%,' the department says.”: That is the claim of cause. What settles the answer is how the intersections were picked.
 
 **What the two share**
 
@@ -297,7 +297,7 @@ The two stories share nothing else, so this is not about students or about roads
 
 ### 9. Regression to the mean: what it is like
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 9 of 34*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 9 of 34*
 
 [reviewers only: card kind `portrait`, id `portrait-regression`]
 
@@ -336,27 +336,27 @@ Do not widen the program, pay a bonus or blame someone on this result alone.
 
 ### 10. A question about a new case
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 10 of 34*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 10 of 34*
 
 [reviewers only: card kind `check`, id `check-regression`]
 
 > A fitness company picks the 20 members with the highest resting heart rates in January and gives them a breathing app. In February their resting heart rates average 6 beats a minute lower than in January. 'Our breathing app lowers heart rates,' the company says.
 
-**The key asks:** **“What else could produce the same result?”** Which of the answers you have met so far fits this case?
+**The question:** **“What else could produce the same result?”** Which of the answers you have met so far fits this case?
 
 - It would have happened anyway
 - It was picked at its worst or best, and goes back toward usual
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **It was picked at its worst or best, and goes back toward usual.**” The group was picked for having the highest rates in the company: “picks the 20 members with the highest resting heart rates in January”. A group picked for being at an extreme is likely to be nearer its usual level the next time it is measured, with no app at all. The case also shows no group that went without, so **“It would have happened anyway”** fits too, but when a case shows both, the key’s answer is **“It was picked at its worst or best, and goes back toward usual”**. The name that goes with this answer is **Regression to the mean**.
+- If you are right: “Right: **It was picked at its worst or best, and goes back toward usual.**” The group was picked for having the highest rates in the company: “picks the 20 members with the highest resting heart rates in January”. A group picked for being at an extreme is likely to be nearer its usual level the next time it is measured, with no app at all. The case also shows no group that went without, so **“It would have happened anyway”** fits too, but when a case shows both, the answer is **“It was picked at its worst or best, and goes back toward usual”**. The name that goes with this answer is **Regression to the mean**.
 - If you miss: “The answer is **It was picked at its worst or best, and goes back toward usual.**” The same reason follows, and then a line about the answer you chose:
-  - If you chose **It would have happened anyway**: This case does show that. It also shows a group picked because it was at its worst or best, and when a case shows both, the key’s answer is **It was picked at its worst or best, and goes back toward usual**.
+  - If you chose **It would have happened anyway**: This case does show that. It also shows a group picked because it was at its worst or best, and when a case shows both, the answer is **It was picked at its worst or best, and goes back toward usual**.
 - Taught on: “Picked at an extreme, then back toward usual” (one tap opens the card).
 
 ### 11. A wrong idea about what comes after
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 11 of 34*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 11 of 34*
 
 [reviewers only: card kind `refute`, id `refute-after`]
 
@@ -375,7 +375,7 @@ What would show that it worked is a second group in the same position that was l
 
 ### 12. No comparison group or Regression to the mean: telling them apart
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 12 of 34*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 12 of 34*
 
 [reviewers only: card kind `lookalike`, id `look-nocontrol-regression`]
 
@@ -397,9 +397,9 @@ These two answers look alike. In both a result comes after something was done, a
 
 **Why this one and not the other**
 
-In Case A the coaching went to all 40 agents, and complaints per agent fell from 5.0 to 4.2. Nobody was picked because they were at an extreme, so nothing about the way the group was formed explains the fall. Nothing shows what would have happened anyway. The key’s answer is **“It would have happened anyway”**, and the case is **No comparison group**.
+In Case A the coaching went to all 40 agents, and complaints per agent fell from 5.0 to 4.2. Nobody was picked because they were at an extreme, so nothing about the way the group was formed explains the fall. Nothing shows what would have happened anyway. The answer is **“It would have happened anyway”**, and the case is **No comparison group**.
 
-In Case B the coaching went only to the ten agents with the most complaints last month, and their complaints fell from 9.0 to 6.2. Those ten were picked because they were at their worst, so part of the fall would be expected with no coaching at all. The key’s answer is **“It was picked at its worst or best, and goes back toward usual”**, and the case is **Regression to the mean**.
+In Case B the coaching went only to the ten agents with the most complaints last month, and their complaints fell from 9.0 to 6.2. Those ten were picked because they were at their worst, so part of the fall would be expected with no coaching at all. The answer is **“It was picked at its worst or best, and goes back toward usual”**, and the case is **Regression to the mean**.
 
 The program and the claim are the same in both. In Case A the figure has nothing to set beside it. In Case B it has nothing to set beside it, and the group was also picked at its worst.
 
@@ -407,7 +407,7 @@ The program and the claim are the same in both. In Case A the figure has nothing
 
 How was the group picked? Was it everyone who got the thing, or was it picked because it was at its worst or best?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | No comparison group | Regression to the mean |
 |---|---|---|
@@ -418,7 +418,7 @@ How was the group picked? Was it everyone who got the thing, or was it picked be
 
 ### 13. A group picked at its worst, with nothing to set beside it
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 13 of 34*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 13 of 34*
 
 [reviewers only: card kind `exception`, id `exc-extreme`]
 
@@ -440,12 +440,12 @@ The pieces you can tap:
 
 **Shown as soon as you tap.** The words are “The three lowest scorers, who average 46, get a week of extra tutoring.”.
 - If you tapped “A teacher gives her ten students a quiz.”: That is how the scores came about. The question is which students ended up in the group that was given something.
-- If you tapped “On an equally hard quiz the next week, the three tutored students average 55.”: That is the later figure. It is the change the claim is about, and what settles the key’s answer is how the group was picked, not the change.
-- If you tapped “'The tutoring worked,' she says. 'They gained 9 points.'”: That is the claim of cause. What settles the key’s answer is how the group was picked.
+- If you tapped “On an equally hard quiz the next week, the three tutored students average 55.”: That is the later figure. It is the change the claim is about, and what settles the answer is how the group was picked, not the change.
+- If you tapped “'The tutoring worked,' she says. 'They gained 9 points.'”: That is the claim of cause. What settles the answer is how the group was picked.
 
 **Why this is Regression to the mean and not No comparison group**
 
-Both answers are true of the case. There is no group that went without, and the group was picked at its worst. The key gives it **“It was picked at its worst or best, and goes back toward usual”** because that answer says more. "Nothing shows what would have happened" says only that something is missing. "Picked at its worst" says why a change should be expected with nothing done: the lowest scorers are partly the ones who had a bad day, and a bad day does not come back.
+Both answers are true of the case. There is no group that went without, and the group was picked at its worst. It gets the answer **“It was picked at its worst or best, and goes back toward usual”** because that answer says more. "Nothing shows what would have happened" says only that something is missing. "Picked at its worst" says why a change should be expected with nothing done: the lowest scorers are partly the ones who had a bad day, and a bad day does not come back.
 
 A group that was picked at its worst and given something, with nothing to set beside it, is the usual form of **Regression to the mean**. So this card is not a rare corner. Most of the cases of this name show both answers.
 
@@ -453,18 +453,18 @@ A group that was picked at its worst and given something, with nothing to set be
 
 How was the group picked? Was it everyone who got the thing, or was it picked because it was at its worst or best?
 
-When a case shows both **“It would have happened anyway”** and a group picked because it was at its worst or best, the key’s answer is **“It was picked at its worst or best, and goes back toward usual”**.
+When a case shows both **“It would have happened anyway”** and a group picked because it was at its worst or best, the answer is **“It was picked at its worst or best, and goes back toward usual”**.
 
-The key decides it this way on purpose, and it is worth knowing that this is the key’s decision. In life the two overlap, and what you would ask for to settle either one is much the same: a second group, as extreme as the first, that was left alone and measured in the same way. The key gives each case one name, so that two people using it reach the same answer and can each say why.
+This is decided this way on purpose, and it is worth knowing that it is a choice. In life the two overlap, and what you would ask for to settle either one is much the same: a second group, as extreme as the first, that was left alone and measured in the same way. Each case gets one name, so that two people using these questions reach the same answer and can each say why.
 
 
 ### 14. No comparison group or A fair test: telling them apart
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 14 of 34*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 14 of 34*
 
 [reviewers only: card kind `lookalike`, id `look-nocontrol-fair`]
 
-A claim that something worked can have nothing to set beside it, or it can have been tested fairly, which the key’s first question answers with **“Nothing goes wrong”**. The two can sound the same. This card puts them side by side.
+A claim that something worked can have nothing to set beside it, or it can have been tested fairly, which the first question answers with **“Nothing goes wrong”**. The two can sound the same. This card puts them side by side.
 
 **Case A**
 
@@ -482,9 +482,9 @@ A claim that something worked can have nothing to set beside it, or it can have 
 
 **Why this one and not the other**
 
-In Case A the library counts the 90 children who joined, and none who did not. There is no second group, so nothing shows what the children would have read anyway. The key’s first answer is **“What it says caused what”**, and the second answer, to **“What else could produce the same result?”**, is **“It would have happened anyway”**.
+In Case A the library counts the 90 children who joined, and none who did not. There is no second group, so nothing shows what the children would have read anyway. The first answer is **“What it says caused what”**, and the second answer, to **“What else could produce the same result?”**, is **“It would have happened anyway”**.
 
-In Case B there are two groups of 60, and a draw from a hat decided who was in which. A draw means that nothing else is likelier to be in one group than the other: not keener readers, not keener parents. Both groups were counted from the library’s own records in the same way. The key’s answer is **“Nothing goes wrong”**, because the claim rests on groups formed by chance, one given the thing and one not.
+In Case B there are two groups of 60, and a draw from a hat decided who was in which. A draw means that nothing else is likelier to be in one group than the other: not keener readers, not keener parents. Both groups were counted from the library’s own records in the same way. The answer is **“Nothing goes wrong”**, because the claim rests on groups formed by chance, one given the thing and one not.
 
 The library and the challenge are the same in both. In Case A the figure has nothing to set beside it. In Case B a second group formed by chance went without, and the difference between the groups is what the claim rests on.
 
@@ -492,13 +492,13 @@ The library and the challenge are the same in both. In Case A the figure has not
 
 Is there a second group that went without, formed by chance and counted in the same way? Or is the result only for the people or the place that got the thing?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | No comparison group | A fair test |
 |---|---|---|
 | Which part of the claim goes wrong first? | What it says caused what | Nothing goes wrong |
-| What does the claim say the figures show? | *Not asked on its route* | One thing causing another |
-| What else could produce the same result? | It would have happened anyway | *Not asked on its route* |
+| What does the claim say the figures show? | *Not asked for this one* | One thing causing another |
+| What else could produce the same result? | It would have happened anyway | *Not asked for this one* |
 | What you must be able to point to | A claim that something worked, a result only for the people or things that got it, or only from before and after it, and no group that went without it to show what happens anyway | People or things split into groups at random, one group given the thing and the other not, both counted the same way afterwards, and a difference between the groups that the claim says the thing caused |
 
 
@@ -510,7 +510,7 @@ Is there a second group that went without, formed by chance and counted in the s
 
 ### 15. Something else behind both
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 15 of 34*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 15 of 34*
 
 [reviewers only: card kind `meet`, id `meet-confound`]
 
@@ -539,9 +539,9 @@ What would settle it is groups that are alike in the thing you suspect, as above
 
 **What you must be able to point to.** People or places that did one thing set beside ones that did not, groups they ended up in by their own choice or circumstance, a difference in result between them, and something else that differs between the groups and could bring about that result on its own. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What else could produce the same result?”**
+**The question:** **“What else could produce the same result?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“Something else causes both”**
+**Its answer for a case like this one:** **“Something else causes both”**
 
 The name for this is **Confounding**. To "confound" is to mix up. The shake and the training are mixed up together in the figures: the lifters who have one mostly have the other, so the figures cannot say which of them produced the gain.
 
@@ -551,7 +551,7 @@ You may also hear this called “a third factor” or “a confounding factor”
 
 ### 16. Confounding: the same thing in a different story
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 16 of 34*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 16 of 34*
 
 [reviewers only: card kind `again`, id `again-confound`]
 
@@ -572,8 +572,8 @@ The pieces you can tap:
 3. “The school’s survey shows that 150 of the 200 app users have a parent who checks their homework every night, against 80 of the 400 others.”
 
 **Shown as soon as you tap.** The words are “The school’s survey shows that 150 of the 200 app users have a parent who checks their homework every night, against 80 of the 400 others.”.
-- If you tapped “A tutoring company says: 'Students who use our homework app get higher grades, so the app raises grades.'”: That is the claim of cause. What settles the key’s answer is something else about the two groups.
-- If you tapped “Of 600 students at one school, the 200 who chose to use the app average 86, and the 400 who did not average 78.”: Those are the two groups and their grades. The difference between them is real. The key asks what else differs between the groups.
+- If you tapped “A tutoring company says: 'Students who use our homework app get higher grades, so the app raises grades.'”: That is the claim of cause. What settles the answer is something else about the two groups.
+- If you tapped “Of 600 students at one school, the 200 who chose to use the app average 86, and the 400 who did not average 78.”: Those are the two groups and their grades. The difference between them is real. The question is what else differs between the groups.
 
 **What the two share**
 
@@ -586,7 +586,7 @@ The two stories share nothing else, so this is not about lifting or about school
 
 ### 17. Confounding: what it is like
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 17 of 34*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 17 of 34*
 
 [reviewers only: card kind `portrait`, id `portrait-confound`]
 
@@ -624,13 +624,13 @@ When you see "people who do X are healthier", ask who does X and why, before you
 
 ### 18. A question about a new case
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 18 of 34*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 18 of 34*
 
 [reviewers only: card kind `check`, id `check-confound`]
 
 > A bank says: 'Customers who use our mobile app hold an average of $7,000 in savings, against $5,000 for customers who do not, so the app helps people save.' The app users chose to download it. The bank’s own records show that most of them have banked with it for over ten years and earn more than the customers who did not download it.
 
-**The key asks:** **“What else could produce the same result?”** Which of the answers you have met so far fits this case?
+**The question:** **“What else could produce the same result?”** Which of the answers you have met so far fits this case?
 
 - It would have happened anyway
 - It was picked at its worst or best, and goes back toward usual
@@ -646,7 +646,7 @@ When you see "people who do X are healthier", ask who does X and why, before you
 
 ### 19. No comparison group or Confounding: telling them apart
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 19 of 34*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 19 of 34*
 
 [reviewers only: card kind `lookalike`, id `look-nocontrol-confound`]
 
@@ -668,9 +668,9 @@ The first name of this unit and the one you have just met both begin with people
 
 **Why this one and not the other**
 
-In Case A the gym counts only the 90 members who signed up. Nobody who went without is counted, so there is nothing beside them for anything to differ from, and nothing shows what the members would have lost anyway. The key’s answer is **“It would have happened anyway”**, and the case is **No comparison group**.
+In Case A the gym counts only the 90 members who signed up. Nobody who went without is counted, so there is nothing beside them for anything to differ from, and nothing shows what the members would have lost anyway. The answer is **“It would have happened anyway”**, and the case is **No comparison group**.
 
-In Case B the gym counts the 410 members who did not sign up as well, and they lost 1 pound. Now two groups are set side by side, and the account shows something else that differs between them: 70 of the 90 are new members, against 60 of the 410, and new members lose weight fastest in their first year. The key’s answer is **“Something else causes both”**, and the case is **Confounding**.
+In Case B the gym counts the 410 members who did not sign up as well, and they lost 1 pound. Now two groups are set side by side, and the account shows something else that differs between them: 70 of the 90 are new members, against 60 of the 410, and new members lose weight fastest in their first year. The answer is **“Something else causes both”**, and the case is **Confounding**.
 
 The program and the claim are the same in both. Adding a group that went without is a step toward a fair picture. It is not yet one when people chose which group to be in.
 
@@ -678,7 +678,7 @@ The program and the claim are the same in both. Adding a group that went without
 
 Is anyone who went without counted beside the people who got the thing? If so, does the account show something else that differs between the two groups?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | No comparison group | Confounding |
 |---|---|---|
@@ -689,7 +689,7 @@ Is anyone who went without counted beside the people who got the thing? If so, d
 
 ### 20. A wrong idea about what the figures prove
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 20 of 34*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 20 of 34*
 
 [reviewers only: card kind `refute`, id `refute-nothing`]
 
@@ -710,7 +710,7 @@ So the right answer to a claim of cause is neither "proved" nor "proves nothing"
 
 ### 21. The result leading to the thing, not the thing to the result
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 21 of 34*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 21 of 34*
 
 [reviewers only: card kind `meet`, id `meet-reverse`]
 
@@ -737,9 +737,9 @@ What would settle it is the order: follow the streets over time and count break-
 
 **What you must be able to point to.** Two things that go together, a claim that the first caused the second, and a way the second could come first and lead to the first. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What else could produce the same result?”**
+**The question:** **“What else could produce the same result?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“The second thing causes the first”**
+**Its answer for a case like this one:** **“The second thing causes the first”**
 
 The name for this is **Reverse causation**. "Reverse" means the arrow runs the other way. "Causation" means one thing making another happen. So the name says: the cause runs the other way.
 
@@ -749,7 +749,7 @@ You may also hear this called “the cause running the other way”. That means 
 
 ### 22. Reverse causation: the same thing in a different story
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 22 of 34*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 22 of 34*
 
 [reviewers only: card kind `again`, id `again-reverse`]
 
@@ -770,7 +770,7 @@ The pieces you can tap:
 3. “The managers’ own notes show that most of their praise was given in the week after the team beat its sales target.”
 
 **Shown as soon as you tap.** The words are “The managers’ own notes show that most of their praise was given in the week after the team beat its sales target.”.
-- If you tapped “A company report says: 'Teams whose managers praise them often sell more. Praise raises sales.'”: That is the claim of cause. The key’s question for this part is about what else could explain the figures, and the words that answer it are not in the claim.
+- If you tapped “A company report says: 'Teams whose managers praise them often sell more. Praise raises sales.'”: That is the claim of cause. The question for this part is about what else could explain the figures, and the words that answer it are not in the claim.
 - If you tapped “The report covers one year for 30 teams. The 15 teams with the most praise averaged 112% of their sales target, and the other 15 averaged 94%.”: Those are the figures. The teams with more praise do sell more. The figures do not say which came first.
 
 **What the two share**
@@ -784,7 +784,7 @@ The two stories share nothing else, so this is not about homes or about work. It
 
 ### 23. Reverse causation: what it is like
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 23 of 34*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 23 of 34*
 
 [reviewers only: card kind `portrait`, id `portrait-reverse`]
 
@@ -797,7 +797,7 @@ What you point to is a way the second thing could come first. Here is the rest o
 - Nothing in the claim says which came first. Order is exactly what a snapshot leaves out.
 - The second thing is something that could be a reason for the first: a break-in is a reason to buy a camera, a good month is a reason to praise a team, being ill is a reason to see a doctor.
 - It turns up in health, money, work and crime, wherever people respond to a problem or a success by doing something. The doing then goes together with the problem or the success.
-- Sometimes both arrows are real, and each feeds the other. The key asks only whether the second could come first and lead to the first, because that is enough to make the claim unsafe.
+- Sometimes both arrows are real, and each feeds the other. The question is only whether the second could come first and lead to the first, because that is enough to make the claim unsafe.
 
 **What it is not**
 
@@ -823,13 +823,13 @@ If the order matters to you, as with a diet or a product, look for a result in w
 
 ### 24. A question about a new case
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 24 of 34*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 24 of 34*
 
 [reviewers only: card kind `check`, id `check-reverse`]
 
 > A city study of 300 house fires finds that the more firefighters were sent to a fire, the more damage it did: fires with 20 or more firefighters averaged $90,000 in damage, and fires with fewer than 10 averaged $12,000. A councilor says: 'Sending firefighters makes fires worse.' The fire chief’s dispatch rules say that the more serious the fire, the more firefighters are sent.
 
-**The key asks:** **“What else could produce the same result?”** Which of the answers you have met so far fits this case?
+**The question:** **“What else could produce the same result?”** Which of the answers you have met so far fits this case?
 
 - It would have happened anyway
 - Something else causes both
@@ -847,7 +847,7 @@ If the order matters to you, as with a diet or a product, look for a result in w
 
 ### 25. Confounding or Reverse causation: telling them apart
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 25 of 34*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 25 of 34*
 
 [reviewers only: card kind `lookalike`, id `look-confound-reverse`]
 
@@ -869,9 +869,9 @@ These two answers look alike. In both, a snapshot shows two things going togethe
 
 **Why this one and not the other**
 
-In Case A the account shows that most of the tree-lined streets are in older neighborhoods, where the lots are twice as large. Large lots sell for more and have room for trees. Lot size is something else that differs between the streets and could bring about the high prices on its own, and it explains the trees as well. The key’s answer is **“Something else causes both”**, and the case is **Confounding**.
+In Case A the account shows that most of the tree-lined streets are in older neighborhoods, where the lots are twice as large. Large lots sell for more and have room for trees. Lot size is something else that differs between the streets and could bring about the high prices on its own, and it explains the trees as well. The answer is **“Something else causes both”**, and the case is **Confounding**.
 
-In Case B the account shows an order: the city planted trees on a street only after its prices passed $400,000, because the city pays for trees out of property tax. Nothing else is needed. The high prices came first and led to the trees. The key’s answer is **“The second thing causes the first”**, and the case is **Reverse causation**.
+In Case B the account shows an order: the city planted trees on a street only after its prices passed $400,000, because the city pays for trees out of property tax. Nothing else is needed. The high prices came first and led to the trees. The answer is **“The second thing causes the first”**, and the case is **Reverse causation**.
 
 The figures and the claim are the same in both. A third thing behind both gives one answer, and the second thing coming first gives the other.
 
@@ -879,7 +879,7 @@ The figures and the claim are the same in both. A third thing behind both gives 
 
 Is there something else that differs between the groups and could bring about the result by itself? Or could the result have come first, and led people to the thing?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Confounding | Reverse causation |
 |---|---|---|
@@ -890,11 +890,11 @@ Is there something else that differs between the groups and could bring about th
 
 ### 26. Confounding or A fair test: telling them apart
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 26 of 34*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 26 of 34*
 
 [reviewers only: card kind `lookalike`, id `look-confound-fair`]
 
-A claim built on two groups can have groups that chose or were put where they are, or groups that a draw formed, and a draw is what the key’s first question answers with **“Nothing goes wrong”**. The figures of the two can look the same. This card puts them side by side.
+A claim built on two groups can have groups that chose or were put where they are, or groups that a draw formed, and a draw is what the first question answers with **“Nothing goes wrong”**. The figures of the two can look the same. This card puts them side by side.
 
 **Case A**
 
@@ -912,9 +912,9 @@ A claim built on two groups can have groups that chose or were put where they ar
 
 **Why this one and not the other**
 
-In Case A smokers signed up themselves, and 240 of the 300 who signed up had already picked a quit date, against 70 of the 700 who did not. Readiness to quit is something else that differs between the groups and could bring about the result alone. The key’s first answer is **“What it says caused what”**, and the second answer, to **“What else could produce the same result?”**, is **“Something else causes both”**.
+In Case A smokers signed up themselves, and 240 of the 300 who signed up had already picked a quit date, against 70 of the 700 who did not. Readiness to quit is something else that differs between the groups and could bring about the result alone. The first answer is **“What it says caused what”**, and the second answer, to **“What else could produce the same result?”**, is **“Something else causes both”**.
 
-In Case B the department had places for half of the 800 smokers who asked to join, and a draw from a hat decided who got them. Readiness to quit is no likelier to be in one group than the other. All 800 were reached a year later and counted in the same way, and 30 in 100 against 20 in 100 is a difference the claim can rest on. The key’s answer is **“Nothing goes wrong”**, because the claim rests on groups formed by chance, one given the thing and one not.
+In Case B the department had places for half of the 800 smokers who asked to join, and a draw from a hat decided who got them. Readiness to quit is no likelier to be in one group than the other. All 800 were reached a year later and counted in the same way, and 30 in 100 against 20 in 100 is a difference the claim can rest on. The answer is **“Nothing goes wrong”**, because the claim rests on groups formed by chance, one given the thing and one not.
 
 The program and the claim are the same in both. In Case A the smokers decided who got the program, and in Case B a draw did.
 
@@ -922,23 +922,23 @@ The program and the claim are the same in both. In Case A the smokers decided wh
 
 Who decided which group each person was in: they did, their circumstances did, or a lottery did?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Confounding | A fair test |
 |---|---|---|
 | Which part of the claim goes wrong first? | What it says caused what | Nothing goes wrong |
-| What does the claim say the figures show? | *Not asked on its route* | One thing causing another |
-| What else could produce the same result? | Something else causes both | *Not asked on its route* |
+| What does the claim say the figures show? | *Not asked for this one* | One thing causing another |
+| What else could produce the same result? | Something else causes both | *Not asked for this one* |
 | What you must be able to point to | People or places that did one thing set beside ones that did not, groups they ended up in by their own choice or circumstance, a difference in result between them, and something else that differs between the groups and could bring about that result on its own | People or things split into groups at random, one group given the thing and the other not, both counted the same way afterwards, and a difference between the groups that the claim says the thing caused |
 
 
 ### 27. A hidden mix of mild and severe, and still Confounding
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 27 of 34*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 27 of 34*
 
 [reviewers only: card kind `exception`, id `exc-simpson`]
 
-A different name, totals that hide a different mix of cases, is for totals set side by side as a ranking, and the key reaches it through the answer **“The totals split back into their groups”**. A claim of cause can look just like it. This card shows one.
+A different name, totals that hide a different mix of cases, is for totals set side by side as a ranking, and it is reached through the answer **“The totals split back into their groups”**. A claim of cause can look just like it. This card shows one.
 
 *The new antibiotic*
 
@@ -969,39 +969,39 @@ You can check what a hidden mix does with arithmetic. Among the severe patients,
 
 Are the two totals a ranking of two places or people that each deal with cases? Or is a group that did something set beside a group that did not, with a claim that the thing made the difference?
 
-When a case shows both **“What it says caused what”** and a figure read without something it has to be set beside, the key’s answer is **“What it is compared with”**.
+When a case shows both **“What it says caused what”** and a figure read without something it has to be set beside, the answer is **“What it is compared with”**.
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Confounding | Simpson’s paradox |
 |---|---|---|
 | Which part of the claim goes wrong first? | What it says caused what | What it is compared with |
-| What would you need to see to read the figure fairly? | *Not asked on its route* | The totals split back into their groups |
-| What else could produce the same result? | Something else causes both | *Not asked on its route* |
+| What would you need to see to read the figure fairly? | *Not asked for this one* | The totals split back into their groups |
+| What else could produce the same result? | Something else causes both | *Not asked for this one* |
 | What you must be able to point to | People or places that did one thing set beside ones that did not, groups they ended up in by their own choice or circumstance, a difference in result between them, and something else that differs between the groups and could bring about that result on its own | Two totals set side by side, each made of easier and harder cases (mild and severe illness, strong and weak students), the hard ones a much bigger share of one total than of the other, and the totals read as a fair ranking |
 
-This is the key’s decision, and it is worth knowing that it is the key’s decision. In the field, one of these is a form of the other, and people who study them do not all draw the line in one place. The key draws it at what is set side by side: two totals of two places or people, which gives **“The totals split back into their groups”**, or a group that did a thing beside a group that did not, with a claim of cause, which gives **“Something else causes both”**.
+This is a choice made to keep the answers clear, and it is worth knowing that it is a choice. In the field, one of these is a form of the other, and people who study them do not all draw the line in one place. The line is drawn at what is set side by side: two totals of two places or people, which gives **“The totals split back into their groups”**, or a group that did a thing beside a group that did not, with a claim of cause, which gives **“Something else causes both”**.
 
 
-*End of part 2. You can stop here; your place is kept. Next: part 3, The key’s question, and two whole claims, then the drill.*
+*End of part 2. You can stop here; your place is kept. Next: part 3, The question, and two whole claims, then the drill.*
 
 ---
 
-## Part 3 of 3: The key’s question, and two whole claims, then the drill
+## Part 3 of 3: The question, and two whole claims, then the drill
 
 ### 28. The question you have been answering all along
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 28 of 34*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 28 of 34*
 
 [reviewers only: card kind `question`, id `q-cause`]
 
-Since the sleep app you have seen the key’s question at the foot of each new name, with one answer under it. This card puts the question and its four answers in one place, as the key shows them, and says why the key asks it last.
+Since the sleep app you have seen the question at the foot of each new name, with one answer under it. This card puts the question and its four answers in one place, as they are always asked, and says why it is asked last.
 
-**The key asks:** **“What else could produce the same result?”**
+**The question:** **“What else could produce the same result?”**
 
 **What it is for.** Tells apart four ways the result in a claim about cause could come about other than through the cause the claim names.
 
-**Its answers, exactly as the key shows them**
+**Its answers**
 
 Each answer leads to one name, and so rules out the other three.
 
@@ -1026,11 +1026,11 @@ The question comes last because it rests on the earlier ones. A claim of cause i
 
 The four answers send you to four different checks, and each check is what would settle it. For **“It would have happened anyway”**, ask for a group that went without, counted in the same way. For **“It was picked at its worst or best, and goes back toward usual”**, ask for a group that was just as extreme and was left alone. For **“Something else causes both”**, ask for groups that are alike in the other thing, or groups formed by a draw. For **“The second thing causes the first”**, ask for the order: which came first, and how anyone knows.
 
-One test closes all four at once: groups formed by a draw, one given the thing and one not, both counted in the same way afterward. A draw leaves nothing else likelier to be in one group than the other, so the second group shows what happens anyway, and nothing can have picked either group at an extreme or put the people in it by their own choice. That is what a claim looks like when every part holds, and the key has a name for it. When you have put each of the four to a claim and none fits, go back to the key’s first question: the claim may be one that gets the answer **“Nothing goes wrong”**.
+One test closes all four at once: groups formed by a draw, one given the thing and one not, both counted in the same way afterward. A draw leaves nothing else likelier to be in one group than the other, so the second group shows what happens anyway, and nothing can have picked either group at an extreme or put the people in it by their own choice. That is what a claim looks like when every part holds, and there is an answer for that. When you have put each of the four to a claim and none fits, go back to the first question: the claim may be one that gets the answer **“Nothing goes wrong”**.
 
 **How to answer it from a case**
 
-Read the whole claim and its account before you answer. The words that answer this question are usually in the sentences after the claim, not in the claim. Then put the key’s question to the claim, **“What else could produce the same result?”** Point to the words that show your answer.
+Read the whole claim and its account before you answer. The words that answer this question are usually in the sentences after the claim, not in the claim. Then put the question to the claim, **“What else could produce the same result?”** Point to the words that show your answer.
 
 Ask first how the group was picked. If it was picked because it was at its worst or best, and it was measured again afterward, the answer is **“It was picked at its worst or best, and goes back toward usual”**, whatever else the case shows. If nothing in the case went without and the group was not picked at an extreme, the answer is **“It would have happened anyway”**.
 
@@ -1040,22 +1040,22 @@ Put your finger on the words. A group picked at its worst, the lack of any group
 
 **When two answers both seem to fit**
 
-Some cases show two answers at once. You have met one: a group picked at its worst and given something, with nothing to set beside it. The key gives it **“It was picked at its worst or best, and goes back toward usual”**. The pairs below have each been set side by side earlier in this unit, and each has one question that tells it apart.
+Some cases show two answers at once. You have met one: a group picked at its worst and given something, with nothing to set beside it. The answer is **“It was picked at its worst or best, and goes back toward usual”**. The pairs below have each been set side by side earlier in this unit, and each has one question that tells it apart.
 
-- No comparison group or Regression to the mean: How was the group picked? Was it everyone who got the thing, or was it picked because it was at its worst or best? When a case shows both **“It would have happened anyway”** and a group picked because it was at its worst or best, the key’s answer is **“It was picked at its worst or best, and goes back toward usual”**.
+- No comparison group or Regression to the mean: How was the group picked? Was it everyone who got the thing, or was it picked because it was at its worst or best? When a case shows both **“It would have happened anyway”** and a group picked because it was at its worst or best, the answer is **“It was picked at its worst or best, and goes back toward usual”**.
 - No comparison group or Confounding: Is anyone who went without counted beside the people who got the thing? If so, does the account show something else that differs between the two groups?
 - Confounding or Reverse causation: Is there something else that differs between the groups and could bring about the result by itself? Or could the result have come first, and led people to the thing?
 
 
 ### 29. A question about a new case
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 29 of 34*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 29 of 34*
 
 [reviewers only: card kind `check`, id `check-cause`]
 
 > A school district says: 'Students who ride the new late bus go to after-school clubs twice as often as students who do not, so the late bus boosts club attendance.' The 140 students who ride it average 2.4 club visits a month, and the 460 who do not average 1.2. Families chose whether their child rides, and the district’s survey shows that most late-bus riders live more than six miles from school, where no other bus runs after 4 p.m.
 
-**The key asks:** **“What else could produce the same result?”**
+**The question:** **“What else could produce the same result?”**
 
 - It would have happened anyway
 - Something else causes both
@@ -1073,11 +1073,11 @@ Some cases show two answers at once. You have met one: a group picked at its wor
 
 ### 30. A whole claim, from the first question to the name
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 30 of 34*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 30 of 34*
 
 [reviewers only: card kind `worked`, id `worked-bikers`]
 
-You have the four names and the key’s question about them. Before the drill, watch two claims being run from the top, in the order the key asks. You are not asked anything until the end of each.
+You have the four names and the question about them. Before the drill, watch two claims being run from the top, in the order the questions are asked. You are not asked anything until the end of each.
 
 *The bike commuters*
 
@@ -1093,7 +1093,7 @@ Answer: **“What it says caused what”**
 
 Take the parts in order, starting with the people in the figure. The survey covers 500 office workers and all of them answered, so nobody is left out and nobody chose to be counted. That part holds. What is counted is a rating of mood out of 10, asked the same way of every worker, and nobody is paid on it. That part holds. What it is set beside: the riders’ 7.4 beside the others’ 6.1, with both group sizes given. That part holds.
 
-Then the last part. The ad says this: “Biking to work lifts your mood”. That is a claim of cause, and the case shows another way to explain the same result, which is the next question. So the key’s answer is **“What it says caused what”**.
+Then the last part. The ad says this: “Biking to work lifts your mood”. That is a claim of cause, and the case shows another way to explain the same result, which is the next question. So the answer is **“What it says caused what”**.
 
 Still possible: all four names this unit teaches.
 
@@ -1105,7 +1105,7 @@ What it is for: tells apart four ways the result in a claim about cause could co
 
 Answer: **“The second thing causes the first”**
 
-The claim says that the first thing, biking, lifts the second, mood. Put the key’s question to it: **“What else could produce the same result?”** The riders chose to bike, so nobody formed the groups, and the case shows something about how the two things are ordered: “90 of the 150 riders say they stop biking whenever they hit a low patch”. If 90 of 150 riders stop biking whenever their mood drops, a low mood leads to not biking, and the people on bikes are partly the people whose mood has not dropped. The second thing could come first and lead to the first.
+The claim says that the first thing, biking, lifts the second, mood. Put the question to it: **“What else could produce the same result?”** The riders chose to bike, so nobody formed the groups, and the case shows something about how the two things are ordered: “90 of the 150 riders say they stop biking whenever they hit a low patch”. If 90 of 150 riders stop biking whenever their mood drops, a low mood leads to not biking, and the people on bikes are partly the people whose mood has not dropped. The second thing could come first and lead to the first.
 
 Is there a group that went without? Yes, the 350 who do not bike, so it is not **“It would have happened anyway”**. Was a group picked at its worst or best? No, so it is not **“It was picked at its worst or best, and goes back toward usual”**. Is there something else that differs between the riders and the others? The case shows nothing of the kind. What is left is **“The second thing causes the first”**.
 
@@ -1127,17 +1127,17 @@ Still possible: **Reverse causation**. Ruled out: **No comparison group**, **Reg
 
 For **Confounding** you must be able to point to this: people or places that did one thing set beside ones that did not, groups they ended up in by their own choice or circumstance, a difference in result between them, and something else that differs between the groups and could bring about that result on its own. The case has the choice of group and a real difference between the groups, but it shows nothing else that differs between riders and others and could produce the result alone. What it shows is an order: 90 of 150 riders stop biking whenever their mood drops. That is what **Reverse causation** needs: two things that go together, a claim that the first caused the second, and a way the second could come first and lead to the first.
 
-It is the question from the street trees. Is there something else that differs between the groups and could bring about the result by itself? Or could the result have come first, and led people to the thing? Here the account shows that the second thing could come first, so the key’s answer is **“The second thing causes the first”**.
+It is the question from the street trees. Is there something else that differs between the groups and could bring about the result by itself? Or could the result have come first, and led people to the thing? Here the account shows that the second thing could come first, so the answer is **“The second thing causes the first”**.
 
 **Does it look like a case you know?**
 
-The key has given its answer. Now take a second look of a different kind: does this case look like one you know? It should bring back the security cameras: two things going together in a snapshot, a claim with an arrow in it, and an account that shows the second thing coming first.
+You have an answer. Now take a second look of a different kind: does this case look like one you know? It should bring back the security cameras: two things going together in a snapshot, a claim with an arrow in it, and an account that shows the second thing coming first.
 
-Here the key and the likeness agree, so the answer stands. The key’s question comes first, because it makes you point at words in the case. The likeness is only a second look. When the two disagree, do not pick the one you prefer. Go back to the key’s question and find the words in the case that answer it. The second whole case shows how.
+Here the likeness agrees with the answer, so the answer stands. The question comes first, because it makes you point at words in the case. The likeness is only a second look. When the two disagree, do not pick the one you prefer. Go back to the question and find the words in the case that answer it. The second whole case shows how.
 
 ### 31. A second whole claim, where the most noticeable thing points the wrong way
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 31 of 34*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 31 of 34*
 
 [reviewers only: card kind `worked`, id `worked-swim`]
 
@@ -1157,7 +1157,7 @@ Answer: **“What it says caused what”**
 
 Take the parts in order, starting with the people in the figure. The club counts all ten of its slowest swimmers, so nobody is left out of the figure. What is counted is a 100-meter time, measured the same way at both meets, and nobody is paid on it. What it is set beside is each swimmer’s own earlier time, 74.0 against 71.5, with both given. Those parts hold.
 
-Then the last part. The coach says this: “The extra practice works”. That is a claim of cause, and the case shows another way to explain the same result. So the key’s answer is **“What it says caused what”**.
+Then the last part. The coach says this: “The extra practice works”. That is a claim of cause, and the case shows another way to explain the same result. So the answer is **“What it says caused what”**.
 
 Still possible: all four names this unit teaches.
 
@@ -1171,7 +1171,7 @@ Answer: **“It was picked at its worst or best, and goes back toward usual”**
 
 The most noticeable thing in the story is that all ten swimmers signed up for the program themselves. That looks like people who chose, and it can bring to mind groups that put themselves where they are. But look at who was offered the program: “its ten slowest swimmers”. The ten were picked because they were the slowest in the club, which means they were picked at their worst.
 
-A swimmer’s time is how fast they usually swim plus how the day went. The ten slowest times include some bad days, which do not come back at the next meet, so the average time drifts back toward usual with no extra practice at all. The case also has no swimmer who went without, so **“It would have happened anyway”** fits as well. When a case shows both, the key’s answer is **“It was picked at its worst or best, and goes back toward usual”**.
+A swimmer’s time is how fast they usually swim plus how the day went. The ten slowest times include some bad days, which do not come back at the next meet, so the average time drifts back toward usual with no extra practice at all. The case also has no swimmer who went without, so **“It would have happened anyway”** fits as well. When a case shows both, the answer is **“It was picked at its worst or best, and goes back toward usual”**.
 
 Still possible: **Regression to the mean**. Ruled out: **No comparison group**, **Confounding** and **Reverse causation**.
 
@@ -1185,19 +1185,19 @@ Still possible: **Regression to the mean**. Ruled out: **No comparison group**, 
 
 **Shown as soon as you choose.** The one that settles it is (b): The ten were offered the program because they were the club’s ten slowest swimmers.
 - If you chose (a): True, and it is why the case can look like **No comparison group**. But that is true of both names, so it cannot settle which of the two this is.
-- If you chose (c): True, and it is the most noticeable thing in the story. But it does not say why these ten were the ones offered the program, which is what the key asks about.
+- If you chose (c): True, and it is the most noticeable thing in the story. But it does not say why these ten were the ones offered the program, which is what the question asks about.
 
 **Why this is Regression to the mean and not No comparison group**
 
 For **No comparison group** you must be able to point to this: a claim that something worked, a result only for the people or things that got it, or only from before and after it, and no group that went without it to show what happens anyway. The case has all of that. It also has a group picked because it was at its worst, and that is what **Regression to the mean** needs: people or things picked because they were at their worst or best, a change back toward their usual level afterwards, and that change read as caused by something done to them in between.
 
-It is the question from the two coaching programs. How was the group picked? Was it everyone who got the thing, or was it picked because it was at its worst or best? Here the group was the club’s ten slowest, so, when a case shows both, the key’s answer is **“It was picked at its worst or best, and goes back toward usual”**.
+It is the question from the two coaching programs. How was the group picked? Was it everyone who got the thing, or was it picked because it was at its worst or best? Here the group was the club’s ten slowest, so, when a case shows both, the answer is **“It was picked at its worst or best, and goes back toward usual”**.
 
 **Does it look like a case you know?**
 
-Now the second look: does this case look like one you know? All ten swimmers signed up, which may bring back the recovery shake first, where the lifters chose whether to buy it. And the recovery shake was **Confounding**. So here the likeness and the key seem to disagree.
+Now the second look: does this case look like one you know? All ten swimmers signed up, which may bring back the recovery shake first, where the lifters chose whether to buy it. And the recovery shake was **Confounding**. So here the likeness and the answer seem to disagree.
 
-When that happens, go back to the key’s question and find the words in the case that answer it. They are “its ten slowest swimmers”. The recovery shake case has nothing like them: two groups were set side by side, and nobody was picked at an extreme. This case picks the ten slowest. So the case this one really looks like is the class quiz, where the lowest scorers were given something and measured again, and the key’s answer stands.
+When that happens, go back to the question and find the words in the case that answer it. They are “its ten slowest swimmers”. The recovery shake case has nothing like them: two groups were set side by side, and nobody was picked at an extreme. This case picks the ten slowest. So the case this one really looks like is the class quiz, where the lowest scorers were given something and measured again, and the answer stands.
 
 ### The drill
 
@@ -1205,7 +1205,7 @@ The cards are out of view from here, and every case is new. The drill has five s
 
 Some of these claims have nothing wrong with them, and that is on purpose. A claim of cause that was tested fairly deserves to be believed, and you need to tell it from the others as surely as you tell the others from each other. A claim that sounds sure is not, for that reason, one that holds.
 
-#### Stage 1 of 5. The key’s answers are shown for each case. Give the name that goes with them. This stage practises one thing: which name goes with which answer.
+#### Stage 1 of 5. The answers are shown for each case. Give the name that goes with them. This stage practises one thing: which name goes with which answer.
 
 The names offered are the four this unit teaches: No comparison group / Regression to the mean / Confounding / Reverse causation.
 
@@ -1225,7 +1225,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Regression to the mean**: Nobody picked the town because its litter was at its worst, and every lamp post got a flyer. The only thing missing is a town or a month that went without, which is why this is **No comparison group**.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Regression to the mean**, the look-alike card’s lines follow: Both give a result that comes after something was done, and in both nothing was left alone and counted in the same way to set beside it. In **Regression to the mean** the group was chosen for how badly, or how well, it had done, so a return toward its usual level is expected with nothing done. In **No comparison group** nothing about how the group was formed makes a change likely: everyone who got the thing, or the one place that got it, is counted. How was the group picked? Was it everyone who got the thing, or was it picked because it was at its worst or best?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “Nothing to show what happens without it” (one tap opens the card).
 
 **Drill item 2 of 44**
@@ -1241,10 +1241,10 @@ Shown to you, with the words that decide each answer marked:
 **Shown as soon as you answer**
 
 - If you are right: “Right: **Regression to the mean**.” What else could produce the same result? **It was picked at its worst or best, and goes back toward usual.** The wards were picked because they had the most falls, and the hospital “picks the three wards with the highest numbers of patient falls last quarter”. A count of falls mixes how risky a ward is with luck, and the worst quarter’s luck does not come back. Some of the fall from 40 to 30 would be expected with no course at all.
-  - Why not **No comparison group**: It is true that no ward went without the course, and the case shows that too. But the three wards were picked because they were at their worst, and when a case shows both, the key’s answer is **“It was picked at its worst or best, and goes back toward usual”**.
+  - Why not **No comparison group**: It is true that no ward went without the course, and the case shows that too. But the three wards were picked because they were at their worst, and when a case shows both, the answer is **“It was picked at its worst or best, and goes back toward usual”**.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **No comparison group**, the look-alike card’s lines follow: Both give a result that comes after something was done, and in both nothing was left alone and counted in the same way to set beside it. In **Regression to the mean** the group was chosen for how badly, or how well, it had done, so a return toward its usual level is expected with nothing done. In **No comparison group** nothing about how the group was formed makes a change likely: everyone who got the thing, or the one place that got it, is counted. How was the group picked? Was it everyone who got the thing, or was it picked because it was at its worst or best?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “Picked at an extreme, then back toward usual” (one tap opens the card).
 
 **Drill item 3 of 44**
@@ -1259,11 +1259,11 @@ Shown to you, with the words that decide each answer marked:
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **A fair test**.” What does the claim say the figures show? **One thing causing another.** The company says “Our fertilizer raises the harvest”, and the key’s answer to what the figures show is **“One thing causing another”**, from groups formed by a draw.
+- If you are right: “Right: **A fair test**.” What does the claim say the figures show? **One thing causing another.** The company says “Our fertilizer raises the harvest”, and the answer to what the figures show is **“One thing causing another”**, from groups formed by a draw.
   - Why not **No comparison group**: There is a second group here, 40 plots with nothing added, counted in the same way. **No comparison group** needs the lack of exactly that.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **No comparison group**, the look-alike card’s lines follow: Both say that something worked, and both may give the same figure for the people who got it. In **A fair test** a second group of the same kind went without, was formed by chance and was counted in the same way, so the difference between the groups is what the claim rests on. In **No comparison group** there is no second group, or only a result from before and after, so nothing shows what would have happened anyway. Is there a second group that went without, formed by chance and counted in the same way? Or is the result only for the people or the place that got the thing?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 
 **Drill item 4 of 44**
 
@@ -1281,7 +1281,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **A fair test**: The groups here were not formed by a draw. People chose whether to join, which leaves room for the difference in ratings. **Confounding** is the answer, and not a claim that holds.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **A fair test**, the look-alike card’s lines follow: Both set a group that got a thing beside a group that did not, and both can show the same difference in the result. In **A fair test** chance decided who went in which group, so nothing else is likelier to be found in one group than in the other. In **Confounding** the people chose, or their circumstances put them there, so something else could differ between the groups and bring about the result on its own. Who decided which group each person was in: they did, their circumstances did, or a lottery did?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “Something else behind both” (one tap opens the card).
 
 **Drill item 5 of 44**
@@ -1300,7 +1300,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Confounding**: Nothing else is needed to explain the figures. The second thing, poor health, came first and led to the first, going to the doctor. That is **Reverse causation**.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Confounding**, the look-alike card’s lines follow: Both set two things side by side that go together, and in both someone says that the first caused the second. In **Confounding** something else, which differs between the two groups, could bring about the result on its own. In **Reverse causation** nothing else is needed: the result itself could have come first and led people to the thing. Is there something else that differs between the groups and could bring about the result by itself? Or could the result have come first, and led people to the thing?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “The result leading to the thing, not the thing to the result” (one tap opens the card).
 
 **Drill item 6 of 44**
@@ -1315,11 +1315,11 @@ Shown to you, with the words that decide each answer marked:
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **A fair test**.” What does the claim say the figures show? **One thing causing another.** The bank says “The reminder raises savings”, and the key’s answer to what the figures show is **“One thing causing another”**, from groups formed by a draw.
+- If you are right: “Right: **A fair test**.” What does the claim say the figures show? **One thing causing another.** The bank says “The reminder raises savings”, and the answer to what the figures show is **“One thing causing another”**, from groups formed by a draw.
   - Why not **Confounding**: The customers did not choose whether to get the text. A lottery did, so nothing else is likelier to be in one group than the other, and **Confounding** has nothing to point to.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Confounding**, the look-alike card’s lines follow: Both set a group that got a thing beside a group that did not, and both can show the same difference in the result. In **A fair test** chance decided who went in which group, so nothing else is likelier to be found in one group than in the other. In **Confounding** the people chose, or their circumstances put them there, so something else could differ between the groups and bring about the result on its own. Who decided which group each person was in: they did, their circumstances did, or a lottery did?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 
 #### Stage 2 of 5. One question at a time.
 
@@ -1339,7 +1339,7 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **It would have happened anyway.**” The only figures are for the students who took the course, before and after: “The studio did not survey anyone who did not take the course”. People often feel less stressed after six weeks for reasons that have nothing to do with a course, so nothing shows what would have happened anyway. This answer leads to **No comparison group**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **It was picked at its worst or best, and goes back toward usual**: The studio did not pick the students because they were at their worst. Anyone who took the course is counted.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 8 of 44**
@@ -1357,8 +1357,8 @@ Shown to you, with the words that decide each answer marked:
 
 - If you are right: “Right: **It was picked at its worst or best, and goes back toward usual.**” The five stores were picked because they had the lowest ratings: the chain “picks its five stores with the lowest customer ratings in March”. A store’s rating mixes how well it is run with how a few months went, so the lowest five are partly the unlucky five, and their ratings drift back toward usual with no new manager. This answer leads to **Regression to the mean**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
-  - If you chose **It would have happened anyway**: You chose **It would have happened anyway**. This case does show that. It also shows a group picked because it was at its worst or best, and when a case shows both, the key’s answer is **It was picked at its worst or best, and goes back toward usual**.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose **It would have happened anyway**: You chose **It would have happened anyway**. This case does show that. It also shows a group picked because it was at its worst or best, and when a case shows both, the answer is **It was picked at its worst or best, and goes back toward usual**.
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 9 of 44**
@@ -1377,7 +1377,7 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **Something else causes both.**” Residents chose to start the gardens, and “nearly all of them are in neighborhoods where the median income is above $80,000”. Better-off neighborhoods can have fewer thefts with or without a garden, so something else differs between the two kinds of neighborhood and could bring about the result alone. This answer leads to **Confounding**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **The second thing causes the first**: Nothing in the case shows that low crime came first and led to the gardens. What it shows is something else that differs between the neighborhoods, which is **Confounding**.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 10 of 44**
@@ -1396,7 +1396,7 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **The second thing causes the first.**” The newspaper says the cafés caused the walking. But “most of the cafés opened after the walking traffic was already there”, so the walkers came first and led the cafés to open where they were. This answer leads to **Reverse causation**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **Something else causes both**: No third thing is needed to explain the figures. The walkers came first and led to the cafés, which is **Reverse causation**.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 11 of 44**
@@ -1415,7 +1415,7 @@ Shown to you, with the words that decide each answer marked:
 
 - If you are right: “Right: **Nothing goes wrong.**” All 300 patients are counted in the same way and the numbers are given. A second group went without, and “a spreadsheet’s lottery picked 150 to get the call”, so nothing else is likelier to be in one group than the other. Nothing is wrong in any part. This answer leads to **A fair count**, **A real change**, **A fair comparison** and **A fair test**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught in Unit One (one tap opens the card).
 
 **Drill item 12 of 44**
@@ -1428,7 +1428,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Shown as soon as you answer**
 
-- The answer is: “How was the group picked? Was it everyone who got the thing, or was it picked because it was at its worst or best?” Both give a result that comes after something was done, and in both nothing was left alone and counted in the same way to set beside it. In **Regression to the mean** the group was chosen for how badly, or how well, it had done, so a return toward its usual level is expected with nothing done. In **No comparison group** nothing about how the group was formed makes a change likely: everyone who got the thing, or the one place that got it, is counted. When a case shows both **“It would have happened anyway”** and a group picked because it was at its worst or best, the key’s answer is **“It was picked at its worst or best, and goes back toward usual”**.
+- The answer is: “How was the group picked? Was it everyone who got the thing, or was it picked because it was at its worst or best?” Both give a result that comes after something was done, and in both nothing was left alone and counted in the same way to set beside it. In **Regression to the mean** the group was chosen for how badly, or how well, it had done, so a return toward its usual level is expected with nothing done. In **No comparison group** nothing about how the group was formed makes a change likely: everyone who got the thing, or the one place that got it, is counted. When a case shows both **“It would have happened anyway”** and a group picked because it was at its worst or best, the answer is **“It was picked at its worst or best, and goes back toward usual”**.
 - If you chose “Is anyone who went without counted beside the people who got the thing? If so, does the account show something else that differs between the two groups?”: that question separates **No comparison group** and **Confounding**.
 - If you chose “Is there a second group that went without, formed by chance and counted in the same way? Or is the result only for the people or the place that got the thing?”: that question separates **No comparison group** and **A fair test**.
 - Taught on: “No comparison group or Regression to the mean: telling them apart” (one tap opens the card).
@@ -1579,12 +1579,12 @@ Shown to you, with the words that decide each answer marked:
 **Shown as soon as you answer**
 
 - If you are right: “Right: **Who was counted.**” The claim speaks for all 400 staff, but the figure comes only from the 20 who happened to be in at eight on a Monday: “asked the 20 people who were working in the office at eight o'clock on Monday morning”. Early arrivals are not a fair picture of everyone.
-- If you miss: “The answer is …”, the same reason, and then the line built from the key for the answer you chose.
-- Then, right or wrong: “This case leaves the part of the key you have been taught. The questions that follow this answer come in a part of the course you have not reached, so the case stops here.”
+- If you miss: “The answer is …”, the same reason, and then the line built from the answers’ own wording for the answer you chose.
+- Then, right or wrong: “The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.”
 
-#### Stage 3 of 5. The first answer is shown. Answer the rest, then give the name. From here on your route is marked as well as the name: a right name reached by a wrong answer on the way counts as a miss.
+#### Stage 3 of 5. The first answer is shown. Answer the rest, then give the name. From here on your answers on the way are marked as well as the name: a right name reached by a wrong answer counts as a miss.
 
-Each question is shown with all of its answers from the key, in the key’s order, and the names offered are the four this unit teaches.
+Each question is shown with all of its answers, in order, and the names offered are the four this unit teaches.
 
 **Drill item 21 of 44**
 
@@ -1601,10 +1601,10 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Regression to the mean**: The households were not picked because they used the most water. Everyone who fitted the shower head is counted.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - If you chose **It was picked at its worst or best, and goes back toward usual**: The households were not picked because they used the most water. Everyone who fitted the shower head is counted.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Regression to the mean**, the look-alike card’s lines follow: Both give a result that comes after something was done, and in both nothing was left alone and counted in the same way to set beside it. In **Regression to the mean** the group was chosen for how badly, or how well, it had done, so a return toward its usual level is expected with nothing done. In **No comparison group** nothing about how the group was formed makes a change likely: everyone who got the thing, or the one place that got it, is counted. How was the group picked? Was it everyone who got the thing, or was it picked because it was at its worst or best?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the company had also counted a group of similar households that did not fit one, over the same two quarters, the difference between the two groups would be what the shower head did.
 - Taught on: “Nothing to show what happens without it” (one tap opens the card).
 
@@ -1620,13 +1620,13 @@ Shown to you, with the words that decide each answer marked:
 **Shown as soon as you answer**
 
 - If you are right: “Right: **Regression to the mean**.” What else could produce the same result? **It was picked at its worst or best, and goes back toward usual.** The 12 were picked for having the lowest scores: the school “picks the 12 students with the lowest reading scores in the fall”. A score is how well a student reads plus how the day went, so the lowest 12 are partly the unlucky 12, and their scores drift back toward usual by spring with no coach at all.
-  - Why not **No comparison group**: No group went without the coach, and the case shows that too. But the 12 were picked at their worst, and when a case shows both, the key’s answer is **“It was picked at its worst or best, and goes back toward usual”**.
+  - Why not **No comparison group**: No group went without the coach, and the case shows that too. But the 12 were picked at their worst, and when a case shows both, the answer is **“It was picked at its worst or best, and goes back toward usual”**.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - If you chose **It would have happened anyway**: You chose **It would have happened anyway**. This case does show that. It also shows a group picked because it was at its worst or best, and when a case shows both, the key’s answer is **It was picked at its worst or best, and goes back toward usual**.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose **It would have happened anyway**: You chose **It would have happened anyway**. This case does show that. It also shows a group picked because it was at its worst or best, and when a case shows both, the answer is **It was picked at its worst or best, and goes back toward usual**.
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **No comparison group**, the look-alike card’s lines follow: Both give a result that comes after something was done, and in both nothing was left alone and counted in the same way to set beside it. In **Regression to the mean** the group was chosen for how badly, or how well, it had done, so a return toward its usual level is expected with nothing done. In **No comparison group** nothing about how the group was formed makes a change likely: everyone who got the thing, or the one place that got it, is counted. How was the group picked? Was it everyone who got the thing, or was it picked because it was at its worst or best?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the school had also picked the 24 lowest and given the coach to 12 of them by lottery, the 12 without the coach would show how much of the 14 points comes back anyway.
 - Taught on: “Picked at an extreme, then back toward usual” (one tap opens the card).
 
@@ -1641,13 +1641,13 @@ Shown to you, with the words that decide each answer marked:
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **A fair test**.” What does the claim say the figures show? **One thing causing another.** The center says “Stretch breaks cut errors”, and the key’s answer to what the figures show is **“One thing causing another”**, from groups formed by a draw.
+- If you are right: “Right: **A fair test**.” What does the claim say the figures show? **One thing causing another.** The center says “Stretch breaks cut errors”, and the answer to what the figures show is **“One thing causing another”**, from groups formed by a draw.
   - Why not **Confounding**: The agents did not choose whether to take the break. A lottery did, so nothing else is likelier to be in one group than the other.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Confounding**, the look-alike card’s lines follow: Both set a group that got a thing beside a group that did not, and both can show the same difference in the result. In **A fair test** chance decided who went in which group, so nothing else is likelier to be found in one group than in the other. In **Confounding** the people chose, or their circumstances put them there, so something else could differ between the groups and bring about the result on its own. Who decided which group each person was in: they did, their circumstances did, or a lottery did?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If agents had chosen for themselves whether to take the break, and the keener ones had chosen it, the answer would be **“What it says caused what”**, with something else that differs between the groups.
 
 **Drill item 24 of 44**
@@ -1664,10 +1664,10 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **Confounding**.” What else could produce the same result? **Something else causes both.** Skiers chose their skis, and “The rental desk’s notes show that 100 of the 120 premium renters are advanced skiers, against 60 of the 380 basic renters”. Advanced skiers fall less on any skis, so something else that differs between the groups could bring about the result alone.
   - Why not **A fair test**: The skiers chose their own skis. A draw did not form the groups, so something else could differ between them, and that is what **Confounding** points to.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A fair test**, the look-alike card’s lines follow: Both set a group that got a thing beside a group that did not, and both can show the same difference in the result. In **A fair test** chance decided who went in which group, so nothing else is likelier to be found in one group than in the other. In **Confounding** the people chose, or their circumstances put them there, so something else could differ between the groups and bring about the result on its own. Who decided which group each person was in: they did, their circumstances did, or a lottery did?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If skiers of the same level had been given premium or basic skis by lottery, and the premium group still fell less, the answer would be **“Nothing goes wrong”**.
 - Taught on: “Something else behind both” (one tap opens the card).
 
@@ -1686,16 +1686,16 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Confounding**: No third thing is needed. The second thing, earnings, came first and led to the first, the advertising, and that is **Reverse causation**.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - If you chose **Something else causes both**: No third thing is needed. The second thing, earnings, came first and led to the first, the advertising, and that is **Reverse causation**.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Confounding**, the look-alike card’s lines follow: Both set two things side by side that go together, and in both someone says that the first caused the second. In **Confounding** something else, which differs between the two groups, could bring about the result on its own. In **Reverse causation** nothing else is needed: the result itself could have come first and led people to the thing. Is there something else that differs between the groups and could bring about the result by itself? Or could the result have come first, and led people to the thing?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the budget documents said the budgets were set before any earnings were known, and nothing else differed between the companies, the order would not be in doubt, and the answer would change.
 - Taught on: “The result leading to the thing, not the thing to the result” (one tap opens the card).
 
-#### Stage 4 of 5. No help. Answer every question in the key’s order, then give the name.
+#### Stage 4 of 5. No help. Answer every question in order, then give the name.
 
-Each question is shown with all of its answers from the key, in the key’s order, and the names offered are the four this unit teaches.
+Each question is shown with all of its answers, in order, and the names offered are the four this unit teaches.
 
 **Drill item 26 of 44**
 
@@ -1710,10 +1710,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **What it says caused what.** The figures are given, and the store says “Our weekly poetry night boosts sales”. That is a claim of cause.
   - If you chose **It was picked at its worst or best, and goes back toward usual**: The store did not pick Thursdays because they were at their worst. It counted the nights of the poetry night, and nothing was set beside them.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Regression to the mean**, the look-alike card’s lines follow: Both give a result that comes after something was done, and in both nothing was left alone and counted in the same way to set beside it. In **Regression to the mean** the group was chosen for how badly, or how well, it had done, so a return toward its usual level is expected with nothing done. In **No comparison group** nothing about how the group was formed makes a change likely: everyone who got the thing, or the one place that got it, is counted. How was the group picked? Was it everyone who got the thing, or was it picked because it was at its worst or best?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the store also had Thursday sales for the same months at a similar store with no poetry night, the difference between the two stores would be what the poetry night did.
 - Taught on: “Nothing to show what happens without it” (one tap opens the card).
 
@@ -1726,14 +1726,14 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - If you are right: “Right: **Regression to the mean**.” What else could produce the same result? **It was picked at its worst or best, and goes back toward usual.** The 10 funds were picked for their worst returns: the company “picks its 10 stock funds with the worst returns last year”. A year’s return is how a fund is run plus how the year went, and the worst ten of the year are partly the unluckiest ten. Their returns drift back toward usual with no new analysts.
-  - Why not **No comparison group**: No fund kept its old analyst for comparison, and the case shows that too. But the ten were picked at their worst, and when a case shows both, the key’s answer is **“It was picked at its worst or best, and goes back toward usual”**.
+  - Why not **No comparison group**: No fund kept its old analyst for comparison, and the case shows that too. But the ten were picked at their worst, and when a case shows both, the answer is **“It was picked at its worst or best, and goes back toward usual”**.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **What it says caused what.** The returns are given, and the company says “The new analysts turned the funds around”. That is a claim of cause.
-  - If you chose **It would have happened anyway**: You chose **It would have happened anyway**. This case does show that. It also shows a group picked because it was at its worst or best, and when a case shows both, the key’s answer is **It was picked at its worst or best, and goes back toward usual**.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose **It would have happened anyway**: You chose **It would have happened anyway**. This case does show that. It also shows a group picked because it was at its worst or best, and when a case shows both, the answer is **It was picked at its worst or best, and goes back toward usual**.
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **No comparison group**, the look-alike card’s lines follow: Both give a result that comes after something was done, and in both nothing was left alone and counted in the same way to set beside it. In **Regression to the mean** the group was chosen for how badly, or how well, it had done, so a return toward its usual level is expected with nothing done. In **No comparison group** nothing about how the group was formed makes a change likely: everyone who got the thing, or the one place that got it, is counted. How was the group picked? Was it everyone who got the thing, or was it picked because it was at its worst or best?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the company had hired new analysts for 5 of the 10 worst funds, picked by lottery, and left the other 5 alone, the 5 left alone would show how much comes back anyway.
 - Taught on: “Picked at an extreme, then back toward usual” (one tap opens the card).
 
@@ -1745,14 +1745,14 @@ Each question is shown with all of its answers from the key, in the key’s orde
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **A fair test**.” What does the claim say the figures show? **One thing causing another.** The school says “The morning walk improves attention”, and the key’s answer to what the figures show is **“One thing causing another”**, from groups formed by a draw.
+- If you are right: “Right: **A fair test**.” What does the claim say the figures show? **One thing causing another.** The school says “The morning walk improves attention”, and the answer to what the figures show is **“One thing causing another”**, from groups formed by a draw.
   - Why not **No comparison group**: There is a second group of 30 students who did not walk, counted in the same way. **No comparison group** needs the lack of exactly that.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **Nothing goes wrong.** Take the parts in order. All 60 students are counted in the same way, and the numbers are given. A second group went without, and “It drew 30 of 60 students by lottery to walk before first class”. Nothing is wrong in any part.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **No comparison group**, the look-alike card’s lines follow: Both say that something worked, and both may give the same figure for the people who got it. In **A fair test** a second group of the same kind went without, was formed by chance and was counted in the same way, so the difference between the groups is what the claim rests on. In **No comparison group** there is no second group, or only a result from before and after, so nothing shows what would have happened anyway. Is there a second group that went without, formed by chance and counted in the same way? Or is the result only for the people or the place that got the thing?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the school had counted off-task minutes only for the 30 who walked, before and after, the answer would be **“What it says caused what”**, with nothing to set beside the walkers.
 
 **Drill item 29 of 44**
@@ -1768,10 +1768,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **What it says caused what.** The numbers are given for both groups, and the company says “so our paint raises resale value”. That is a claim of cause.
   - If you chose **The second thing causes the first**: Nothing shows that the high prices came first and led owners to choose the paint. What the case shows is something else that differs between the groups.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Reverse causation**, the look-alike card’s lines follow: Both set two things side by side that go together, and in both someone says that the first caused the second. In **Confounding** something else, which differs between the two groups, could bring about the result on its own. In **Reverse causation** nothing else is needed: the result itself could have come first and led people to the thing. Is there something else that differs between the groups and could bring about the result by itself? Or could the result have come first, and led people to the thing?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If homes of the same age and condition had been painted or left alone by lottery, and the painted ones still sold for more, the answer would be **“Nothing goes wrong”**.
 - Taught on: “Something else behind both” (one tap opens the card).
 
@@ -1788,10 +1788,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **What it says caused what.** The numbers are given for both groups of teams, and the report says “so a big crowd gives a team the edge”. That is a claim of cause.
   - If you chose **Something else causes both**: No third thing is needed to explain the figures. Winning came first and led to the crowds, which is **Reverse causation**.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Confounding**, the look-alike card’s lines follow: Both set two things side by side that go together, and in both someone says that the first caused the second. In **Confounding** something else, which differs between the two groups, could bring about the result on its own. In **Reverse causation** nothing else is needed: the result itself could have come first and led people to the thing. Is there something else that differs between the groups and could bring about the result by itself? Or could the result have come first, and led people to the thing?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If crowds had been the same size at every game and the wins still differed, the second thing could not have led to the first.
 - Taught on: “The result leading to the thing, not the thing to the result” (one tap opens the card).
 
@@ -1803,14 +1803,14 @@ Each question is shown with all of its answers from the key, in the key’s orde
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **A fair test**.” What does the claim say the figures show? **One thing causing another.** The city says “Free bus passes help people find work”, and the key’s answer to what the figures show is **“One thing causing another”**, from groups formed by a draw.
+- If you are right: “Right: **A fair test**.” What does the claim say the figures show? **One thing causing another.** The city says “Free bus passes help people find work”, and the answer to what the figures show is **“One thing causing another”**, from groups formed by a draw.
   - Why not **Confounding**: The job seekers did not choose whether to get a pass. A lottery did, so nothing else is likelier to be in one group than the other.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **Nothing goes wrong.** Take the parts in order. All 400 job seekers are checked in the same way, and the numbers are given. A second group went without, and the city “drew 200 names by lottery”. Nothing is wrong in any part.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Confounding**, the look-alike card’s lines follow: Both set a group that got a thing beside a group that did not, and both can show the same difference in the result. In **A fair test** chance decided who went in which group, so nothing else is likelier to be found in one group than in the other. In **Confounding** the people chose, or their circumstances put them there, so something else could differ between the groups and bring about the result on its own. Who decided which group each person was in: they did, their circumstances did, or a lottery did?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the passes had gone to the applicants who asked first, the answer would be **“What it says caused what”**, with something else that could differ between the groups.
 
 **Drill item 32 of 44**
@@ -1821,15 +1821,15 @@ Each question is shown with all of its answers from the key, in the key’s orde
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **No comparison group**.” What else could produce the same result? **It would have happened anyway.** The only figures are for trucks that got the monitors, before and after: “The firm has no trucks without monitors”. Fuel prices and routes changed in the same months, and any of those could move fuel use, so nothing shows what the same trucks would have used with no monitors.
+- If you are right: “Right: **No comparison group**.” What else could produce the same result? **It would have happened anyway.** The only figures are for trucks that got the monitors, before and after: “The firm has no trucks without monitors”. Fuel prices and the roads driven changed in the same months, and any of those could move fuel use, so nothing shows what the same trucks would have used with no monitors.
   - Why not **Regression to the mean**: The firm did not pick trucks because they used the most fuel. Every truck got a monitor.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **What it says caused what.** The figures are given for all 85 trucks, and the fleet manager says “The monitors save fuel”. That is a claim of cause.
   - If you chose **It was picked at its worst or best, and goes back toward usual**: The firm did not pick trucks because they used the most fuel. Every truck got a monitor.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Regression to the mean**, the look-alike card’s lines follow: Both give a result that comes after something was done, and in both nothing was left alone and counted in the same way to set beside it. In **Regression to the mean** the group was chosen for how badly, or how well, it had done, so a return toward its usual level is expected with nothing done. In **No comparison group** nothing about how the group was formed makes a change likely: everyone who got the thing, or the one place that got it, is counted. How was the group picked? Was it everyone who got the thing, or was it picked because it was at its worst or best?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the firm had fitted monitors in 40 trucks drawn by lottery and left 45 as they were, the 45 would show what fuel use does anyway.
 - Taught on: “Nothing to show what happens without it” (one tap opens the card).
 
@@ -1842,14 +1842,14 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - If you are right: “Right: **Regression to the mean**.” What else could produce the same result? **It was picked at its worst or best, and goes back toward usual.** The 30 were picked for having the highest readings on one day: the clinic “picks the 30 patients with the highest blood pressure readings at a Monday screening”. A reading is a person’s usual pressure plus how that day went, so the highest 30 on one Monday are partly the people who had a high day, and their readings drift back toward usual with no booklet.
-  - Why not **No comparison group**: No patient went without the booklet, and the case shows that too. But the 30 were picked at their highest on one day, and when a case shows both, the key’s answer is **“It was picked at its worst or best, and goes back toward usual”**.
+  - Why not **No comparison group**: No patient went without the booklet, and the case shows that too. But the 30 were picked at their highest on one day, and when a case shows both, the answer is **“It was picked at its worst or best, and goes back toward usual”**.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **What it says caused what.** The readings are given, and the clinic says “The booklet lowers blood pressure”. That is a claim of cause.
-  - If you chose **It would have happened anyway**: You chose **It would have happened anyway**. This case does show that. It also shows a group picked because it was at its worst or best, and when a case shows both, the key’s answer is **It was picked at its worst or best, and goes back toward usual**.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose **It would have happened anyway**: You chose **It would have happened anyway**. This case does show that. It also shows a group picked because it was at its worst or best, and when a case shows both, the answer is **It was picked at its worst or best, and goes back toward usual**.
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **No comparison group**, the look-alike card’s lines follow: Both give a result that comes after something was done, and in both nothing was left alone and counted in the same way to set beside it. In **Regression to the mean** the group was chosen for how badly, or how well, it had done, so a return toward its usual level is expected with nothing done. In **No comparison group** nothing about how the group was formed makes a change likely: everyone who got the thing, or the one place that got it, is counted. How was the group picked? Was it everyone who got the thing, or was it picked because it was at its worst or best?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the clinic had given the booklet to 15 of the 30 by lottery and not to the other 15, the 15 without it would show how much comes back anyway.
 - Taught on: “Picked at an extreme, then back toward usual” (one tap opens the card).
 
@@ -1865,10 +1865,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
   - Why not **A fair test**: The students chose whether to join, so a draw did not form the groups. Where students live is something else that differs between them, which is **Confounding**.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **What it says caused what.** The numbers are given for both groups, and the university says “so study groups raise grades”. That is a claim of cause.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A fair test**, the look-alike card’s lines follow: Both set a group that got a thing beside a group that did not, and both can show the same difference in the result. In **A fair test** chance decided who went in which group, so nothing else is likelier to be found in one group than in the other. In **Confounding** the people chose, or their circumstances put them there, so something else could differ between the groups and bring about the result on its own. Who decided which group each person was in: they did, their circumstances did, or a lottery did?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If 300 students had been drawn by lottery into study groups and the others left alone, and the grades still differed, the answer would be **“Nothing goes wrong”**.
 - Taught on: “Something else behind both” (one tap opens the card).
 
@@ -1885,10 +1885,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **What it says caused what.** The numbers are given for both groups of shops, and the magazine says “Hiring more staff brings in customers”. That is a claim of cause.
   - If you chose **Something else causes both**: No third thing is needed. The second thing, the customers, came first and led to the first, the hiring, which is **Reverse causation**.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Confounding**, the look-alike card’s lines follow: Both set two things side by side that go together, and in both someone says that the first caused the second. In **Confounding** something else, which differs between the two groups, could bring about the result on its own. In **Reverse causation** nothing else is needed: the result itself could have come first and led people to the thing. Is there something else that differs between the groups and could bring about the result by itself? Or could the result have come first, and led people to the thing?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the shops had hired extra staff in a quiet season and the customers rose only afterward, the order would point the other way.
 - Taught on: “The result leading to the thing, not the thing to the result” (one tap opens the card).
 
@@ -1905,11 +1905,11 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **What it says caused what.** The figures are given, and the company says “Our wellness program works”. That is a claim of cause.
   - If you chose **Something else causes both**: Volunteering does not make two groups. **Confounding** needs a second group, people who did not do the thing, set beside the first, with something else differing between them. Here the other 880 are not counted at all.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Confounding**, the look-alike card’s lines follow: Both are about people who chose to take part in something, and both end with a claim that it worked. In **Confounding** two groups are set side by side, the people who did the thing and the people who did not, and the account shows something else that differs between them. In **No comparison group** only the people who did the thing, or the one place that got it, are counted, so there is nothing beside them for anything to differ from. Is anyone who went without counted beside the people who got the thing? If so, does the account show something else that differs between the two groups?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *The homework app*, which was **Confounding**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *The homework app*, which was **Confounding**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If the company had also weighed the 880 who did not volunteer, the claim would set two groups side by side, and the question would be whether something else differs between volunteers and the rest.
 - Taught on: “Nothing to show what happens without it” (one tap opens the card).
 
@@ -1921,16 +1921,16 @@ Each question is shown with all of its answers from the key, in the key’s orde
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Regression to the mean**.” What else could produce the same result? **It was picked at its worst or best, and goes back toward usual.** The most noticeable thing is the last sentence: no block went without a patrol. That is true, and it is the answer **“It would have happened anyway”**. But look at how the blocks were picked: the department “picks the 8 city blocks with the most burglaries last year”. A count of burglaries is how risky a block is plus luck, so the worst 8 are partly the unluckiest 8, and their counts drift back with no patrols. When a case shows both, the key’s answer is **“It was picked at its worst or best, and goes back toward usual”**.
-  - Why not **No comparison group**: It is true that no block went without a patrol, and the case shows that clearly. But the eight blocks were picked because they were at their worst, and the key gives the more exact answer.
+- If you are right: “Right: **Regression to the mean**.” What else could produce the same result? **It was picked at its worst or best, and goes back toward usual.** The most noticeable thing is the last sentence: no block went without a patrol. That is true, and it is the answer **“It would have happened anyway”**. But look at how the blocks were picked: the department “picks the 8 city blocks with the most burglaries last year”. A count of burglaries is how risky a block is plus luck, so the worst 8 are partly the unluckiest 8, and their counts drift back with no patrols. When a case shows both, the answer is **“It was picked at its worst or best, and goes back toward usual”**.
+  - Why not **No comparison group**: It is true that no block went without a patrol, and the case shows that clearly. But the eight blocks were picked because they were at their worst, and the more exact answer is the one to give.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **What it says caused what.** The numbers are given, and the chief says “Patrols cut burglaries by more than a third”. That is a claim of cause.
-  - If you chose **It would have happened anyway**: You chose **It would have happened anyway**. This case does show that. It also shows a group picked because it was at its worst or best, and when a case shows both, the key’s answer is **It was picked at its worst or best, and goes back toward usual**.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose **It would have happened anyway**: You chose **It would have happened anyway**. This case does show that. It also shows a group picked because it was at its worst or best, and when a case shows both, the answer is **It was picked at its worst or best, and goes back toward usual**.
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **No comparison group**, the look-alike card’s lines follow: Both give a result that comes after something was done, and in both nothing was left alone and counted in the same way to set beside it. In **Regression to the mean** the group was chosen for how badly, or how well, it had done, so a return toward its usual level is expected with nothing done. In **No comparison group** nothing about how the group was formed makes a change likely: everyone who got the thing, or the one place that got it, is counted. How was the group picked? Was it everyone who got the thing, or was it picked because it was at its worst or best?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *The sleep app*, which was **No comparison group**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *The sleep app*, which was **No comparison group**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If the department had put patrols on 4 of the 8 worst blocks, picked by lottery, and none on the other 4, the 4 left alone would show how much of the fall comes back anyway.
 - Taught on: “Picked at an extreme, then back toward usual” (one tap opens the card).
 
@@ -1947,11 +1947,11 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **What it says caused what.** The numbers are given for both groups, and the gym says “so the sauna keeps colds away”. That is a claim of cause.
   - If you chose **The second thing causes the first**: Nothing shows that fewer colds came first and led members to use the sauna. The installation date only says when the sauna became available.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Reverse causation**, the look-alike card’s lines follow: Both set two things side by side that go together, and in both someone says that the first caused the second. In **Confounding** something else, which differs between the two groups, could bring about the result on its own. In **Reverse causation** nothing else is needed: the result itself could have come first and led people to the thing. Is there something else that differs between the groups and could bring about the result by itself? Or could the result have come first, and led people to the thing?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *The security cameras*, which was **Reverse causation**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *The security cameras*, which was **Reverse causation**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If the check-in records showed that members who used the sauna had mostly stopped working out, or the sauna users had mostly been cold-free before March, the order would be what mattered.
 - Taught on: “Something else behind both” (one tap opens the card).
 
@@ -1963,15 +1963,15 @@ Each question is shown with all of its answers from the key, in the key’s orde
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **A fair test**.” What does the claim say the figures show? **One thing causing another.** The company says “A four-day week raises output”, and the key’s answer to what the figures show is **“One thing causing another”**, from groups formed by a draw.
+- If you are right: “Right: **A fair test**.” What does the claim say the figures show? **One thing causing another.** The company says “A four-day week raises output”, and the answer to what the figures show is **“One thing causing another”**, from groups formed by a draw.
   - Why not **Confounding**: Volunteering would matter if volunteers were set beside people who did not volunteer. Here every team volunteered, and a draw decided who tried the four-day week, so nothing else differs between the groups.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **Nothing goes wrong.** The most noticeable thing is that the teams volunteered, which can bring to mind people who put themselves in a group. But all 80 volunteered, and then “the company drew 40 of them by lottery to work four days for six months”. A lottery formed the groups from the same volunteers, so nothing else is likelier to be in one group than the other. All 80 are counted in the same way, and the numbers are given. Nothing is wrong in any part.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Confounding**, the look-alike card’s lines follow: Both set a group that got a thing beside a group that did not, and both can show the same difference in the result. In **A fair test** chance decided who went in which group, so nothing else is likelier to be found in one group than in the other. In **Confounding** the people chose, or their circumstances put them there, so something else could differ between the groups and bring about the result on its own. Who decided which group each person was in: they did, their circumstances did, or a lottery did?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *The quit program*, which was **Confounding**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *The quit program*, which was **Confounding**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If the 40 teams that tried a four-day week had been the 40 that asked for it, and the rest stayed as they were, the answer would be **“What it says caused what”**.
 
 **Drill item 40 of 44**
@@ -1991,8 +1991,8 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - If you are right: “Right: **What the number counts.**” Every member was weighed at both ends, so the people in the figure are fine. What is counted changed: “swapped its old scales for new ones that read 3 pounds lighter”. Three of the five pounds could come from the scales alone.
-- If you miss: “The answer is …”, the same reason, and then the line built from the key for the answer you chose.
-- Then, right or wrong: “This case leaves the part of the key you have been taught. The questions that follow this answer come in a part of the course you have not reached, so the case stops here.”
+- If you miss: “The answer is …”, the same reason, and then the line built from the answers’ own wording for the answer you chose.
+- Then, right or wrong: “The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.”
 
 #### Last stage. Each of these is something a person might say that uses one of this unit’s names, or reasons in one of its ways. Each has a fault. The first is worked for you. For the rest, answer before the fault is shown.
 
@@ -2010,7 +2010,7 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - It was picked at its worst or best, and goes back toward usual
 
 **The answer:** It would have happened anyway.
-- The fault: The claim gives one result, for one person who took the vitamin, and stops there. Nothing shows what her cold would have done with no vitamin C, and many colds are gone in a few days with nothing. A result for the person who got the thing is not yet a result for the thing. The key’s answer is **“It would have happened anyway”**.
+- The fault: The claim gives one result, for one person who took the vitamin, and stops there. Nothing shows what her cold would have done with no vitamin C, and many colds are gone in a few days with nothing. A result for the person who got the thing is not yet a result for the thing. The answer is **“It would have happened anyway”**.
 - The claim, put right (always the last thing shown): I took vitamin C the moment my throat started to tickle, and the cold was gone in three days. I do not know how long it would have taken without it. To say it works, I would need people like me who did not take it, counted the same way.
 
 **Drill item 41 of 44**
@@ -2027,8 +2027,8 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - The answer is: **It was picked at its worst or best, and goes back toward usual.**
-- If you chose another answer, the line is built from the key, as for any other question.
-- The fault: The speaker reasons from the order of events: the seminar came, and then sales rose. But the three were picked because they were the worst sellers, and the worst sellers of one month are partly the ones who had a bad month. Their sales drift back toward usual the next month with no seminar. The key’s answer is **“It was picked at its worst or best, and goes back toward usual”**.
+- If you chose another answer, the line is built from the answers’ own wording, as for any other question.
+- The fault: The speaker reasons from the order of events: the seminar came, and then sales rose. But the three were picked because they were the worst sellers, and the worst sellers of one month are partly the ones who had a bad month. Their sales drift back toward usual the next month with no seminar. The answer is **“It was picked at its worst or best, and goes back toward usual”**.
 - The claim, put right (always the last thing shown): Our three worst-selling salespeople went to the sales seminar, and all three sold more the next month. They were the worst of the month, so some of the rise would come with no seminar. To say the seminar worked, I would need an equally weak group that did not go, to see how much of the rise they got anyway.
 
 **Drill item 42 of 44**
@@ -2063,8 +2063,8 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - The answer is: **The second thing causes the first.**
-- If you chose another answer, the line is built from the key, as for any other question.
-- The fault: The speaker says the first thing, skipping workouts, caused the second, injuries. But an injury is a reason to skip a workout, so the second thing could come first and lead to the first. The figures are a snapshot and do not show the order. The key’s answer is **“The second thing causes the first”**.
+- If you chose another answer, the line is built from the answers’ own wording, as for any other question.
+- The fault: The speaker says the first thing, skipping workouts, caused the second, injuries. But an injury is a reason to skip a workout, so the second thing could come first and lead to the first. The figures are a snapshot and do not show the order. The answer is **“The second thing causes the first”**.
 - The claim, put right (always the last thing shown): The members who skip the most workouts are the ones with the most injuries. That might be because they were injured and so could not train. To say skipping causes injuries, I would need to know which came first.
 
 **Drill item 44 of 44**
@@ -2081,21 +2081,21 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - The answer is: **Something else causes both.**
-- If you chose another answer, the line is built from the key, as for any other question.
-- The fault: The speaker sets kids who went to the camp beside kids who did not, and says the camp made the difference. But the families chose whether to send them, and families who pay for camp may differ in many other ways that could lift grades, such as time at home and help with homework. Something else could cause both the camp and the grades. The key’s answer is **“Something else causes both”**.
+- If you chose another answer, the line is built from the answers’ own wording, as for any other question.
+- The fault: The speaker sets kids who went to the camp beside kids who did not, and says the camp made the difference. But the families chose whether to send them, and families who pay for camp may differ in many other ways that could lift grades, such as time at home and help with homework. Something else could cause both the camp and the grades. The answer is **“Something else causes both”**.
 - The claim, put right (always the last thing shown): Kids who go to our summer camp get better grades in the fall. Their families chose the camp, so I would want to compare them with kids from similar families who did not go, or to see a camp that took names from a hat.
 
-**When the drill ends.** The learner sees their own results: first-try accuracy for each stage, whole routes beside single questions, the pair of names they mixed up most often, and what will come back and when. Anything missed was asked again before the drill ended. Nothing here is graded. A miss only decides what comes back.
+**When the drill ends.** The learner sees their own results: first-try accuracy for each stage, whole cases beside single questions, the pair of names they mixed up most often, and what will come back and when. Anything missed was asked again before the drill ended. Nothing here is graded. A miss only decides what comes back.
 
 ### 32. What to carry away
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 32 of 34*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 32 of 34*
 
 [reviewers only: card kind `recap`, id `recap`]
 
-You have now run the key’s last question on your own. This card puts the unit in one place, in the key’s words.
+You have now run the last question on your own. This card puts the unit in one place, in the words used all the way through.
 
-**The key for this unit, in its own words**
+**This unit’s questions and answers**
 
 What else could produce the same result?
 - It would have happened anyway → No comparison group
@@ -2120,18 +2120,18 @@ What else could produce the same result?
 
 **To carry away**
 
-- When a claim gives one thing as the reason for another, put the key’s question to it and point to the words that show your answer. If you cannot point, you do not have an answer yet.
+- When a claim gives one thing as the reason for another, put the question to it and point to the words that show your answer. If you cannot point, you do not have an answer yet.
 - A result for the people who got a thing, or for one place before and after, is not yet a result for the thing. It needs a group that went without, counted in the same way, to show what happens anyway.
 - A group chosen for how badly, or how well, it had done tends to move back toward its usual level with nothing done. In a class where nobody was tutored, the three lowest scorers still went from an average of 46 to 55.
 - Two groups that put themselves where they are differ in more than the thing. Compare people who are alike in the other thing and the difference can shrink a long way: 38 pounds became 2.
 - Two things going together can come in either order. Ask which came first, and how anyone knows.
-- When a case shows two answers, a group picked at its worst and nothing to set beside it, the key gives **“It was picked at its worst or best, and goes back toward usual”**, the more exact one.
+- When a case shows two answers, a group picked at its worst and nothing to set beside it, the answer is **“It was picked at its worst or best, and goes back toward usual”**, the more exact one.
 - Finding another explanation does not make a claim false, and it does not mean the figures prove nothing. It says what else could explain them, and what would settle it.
-- The test that closes all four is groups formed by a draw, one given the thing, both counted in the same way. When you see that, the key’s first question gets the answer **“Nothing goes wrong”**.
+- The test that closes all four is groups formed by a draw, one given the thing, both counted in the same way. When you see that, the first question gets the answer **“Nothing goes wrong”**.
 
 ### 33. Where would you meet this?
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 33 of 34*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 33 of 34*
 
 [reviewers only: card kind `transfer`, id `transfer`]
 
@@ -2154,7 +2154,7 @@ One line is enough. It is kept on this device only and is never marked.
 
 ### 34. A plan, if you want one
 
-*Unit Six · rev 1 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 34 of 34*
+*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 34 of 34*
 
 [reviewers only: card kind `plan`, id `plan`]
 
@@ -2176,7 +2176,7 @@ Or write your own: If …, then I will …
 
 ## After the unit: what comes back on later days
 
-A name that is due returns as a case the learner has not seen, next to a case of the name they most often confuse it with. Each is run as a whole route. These are the fresh cases held back for that purpose: three for each name, one for each scheduled return. The first return is about two days after the drill, the next about a week after that, the next about three and a half weeks later.
+A name that is due returns as a case the learner has not seen, next to a case of the name they most often confuse it with. Each is run as a whole case: every question, then the name. These are the fresh cases held back for that purpose: three for each name, one for each scheduled return. The first return is about two days after the drill, the next about a week after that, the next about three and a half weeks later.
 
 **Return case 1 of 16**
 
@@ -2191,10 +2191,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **What it says caused what.** The figures are given for all 50 lawns, and the company says “Our spring treatment works”. That is a claim of cause.
   - If you chose **It was picked at its worst or best, and goes back toward usual**: The lawns were not picked because they were at their worst. Every lawn the company treated is counted.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Regression to the mean**, the look-alike card’s lines follow: Both give a result that comes after something was done, and in both nothing was left alone and counted in the same way to set beside it. In **Regression to the mean** the group was chosen for how badly, or how well, it had done, so a return toward its usual level is expected with nothing done. In **No comparison group** nothing about how the group was formed makes a change likely: everyone who got the thing, or the one place that got it, is counted. How was the group picked? Was it everyone who got the thing, or was it picked because it was at its worst or best?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the company had left 50 similar lawns untreated, counted in the same way, the difference between the two groups would be what the treatment did.
 - Taught on: “Nothing to show what happens without it” (one tap opens the card).
 
@@ -2211,10 +2211,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **What it says caused what.** The figures are given for all 24 students, and the club says “Our beginner course works”. That is a claim of cause.
   - If you chose **It was picked at its worst or best, and goes back toward usual**: The students were not picked for having the lowest ratings. Everyone who took the course is counted.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Regression to the mean**, the look-alike card’s lines follow: Both give a result that comes after something was done, and in both nothing was left alone and counted in the same way to set beside it. In **Regression to the mean** the group was chosen for how badly, or how well, it had done, so a return toward its usual level is expected with nothing done. In **No comparison group** nothing about how the group was formed makes a change likely: everyone who got the thing, or the one place that got it, is counted. How was the group picked? Was it everyone who got the thing, or was it picked because it was at its worst or best?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the club also had January and May ratings for 24 similar beginners who did not take the course, the difference between the two groups would be what the course did.
 - Taught on: “Nothing to show what happens without it” (one tap opens the card).
 
@@ -2231,10 +2231,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **What it says caused what.** The figures are given, and the chain says “Our loyalty card boosts spending”. That is a claim of cause.
   - If you chose **Something else causes both**: Two groups are not set side by side, because the customers who did not sign up are not counted at all. **Confounding** needs the second group.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Confounding**, the look-alike card’s lines follow: Both are about people who chose to take part in something, and both end with a claim that it worked. In **Confounding** two groups are set side by side, the people who did the thing and the people who did not, and the account shows something else that differs between them. In **No comparison group** only the people who did the thing, or the one place that got it, are counted, so there is nothing beside them for anything to differ from. Is anyone who went without counted beside the people who got the thing? If so, does the account show something else that differs between the two groups?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the chain had also counted what non-members spent in the same six months, the question would be whether something else differs between members and non-members.
 - Taught on: “Nothing to show what happens without it” (one tap opens the card).
 
@@ -2251,10 +2251,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **What it says caused what.** The figures are given, and the office says “The posters raised flu-shot rates by 20%”. That is a claim of cause.
   - If you chose **It was picked at its worst or best, and goes back toward usual**: The clinics were not picked for having the fewest shots. Every clinic got posters.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Regression to the mean**, the look-alike card’s lines follow: Both give a result that comes after something was done, and in both nothing was left alone and counted in the same way to set beside it. In **Regression to the mean** the group was chosen for how badly, or how well, it had done, so a return toward its usual level is expected with nothing done. In **No comparison group** nothing about how the group was formed makes a change likely: everyone who got the thing, or the one place that got it, is counted. How was the group picked? Was it everyone who got the thing, or was it picked because it was at its worst or best?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the office had the same months for earlier years, or for a county without posters, the difference from that would be what the posters did.
 - Taught on: “Nothing to show what happens without it” (one tap opens the card).
 
@@ -2267,14 +2267,14 @@ A name that is due returns as a case the learner has not seen, next to a case of
 **Shown as soon as you answer**
 
 - If you are right: “Right: **Regression to the mean**.” What else could produce the same result? **It was picked at its worst or best, and goes back toward usual.** The six teams were picked for their weakest quarter: the company “picks the 6 sales teams with the weakest quarter”. A quarter’s sales mix how good a team is with how the quarter went, so the weakest six are partly the unluckiest six, and their sales drift back toward usual with no course.
-  - Why not **No comparison group**: No team went without the course, and the case shows that too. But the six were picked at their worst, and when a case shows both, the key’s answer is **“It was picked at its worst or best, and goes back toward usual”**.
+  - Why not **No comparison group**: No team went without the course, and the case shows that too. But the six were picked at their worst, and when a case shows both, the answer is **“It was picked at its worst or best, and goes back toward usual”**.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **What it says caused what.** The sales figures are given, and the company says “The course lifted our weakest teams”. That is a claim of cause.
-  - If you chose **It would have happened anyway**: You chose **It would have happened anyway**. This case does show that. It also shows a group picked because it was at its worst or best, and when a case shows both, the key’s answer is **It was picked at its worst or best, and goes back toward usual**.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose **It would have happened anyway**: You chose **It would have happened anyway**. This case does show that. It also shows a group picked because it was at its worst or best, and when a case shows both, the answer is **It was picked at its worst or best, and goes back toward usual**.
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **No comparison group**, the look-alike card’s lines follow: Both give a result that comes after something was done, and in both nothing was left alone and counted in the same way to set beside it. In **Regression to the mean** the group was chosen for how badly, or how well, it had done, so a return toward its usual level is expected with nothing done. In **No comparison group** nothing about how the group was formed makes a change likely: everyone who got the thing, or the one place that got it, is counted. How was the group picked? Was it everyone who got the thing, or was it picked because it was at its worst or best?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the company had sent only 3 of the 6 weakest teams, drawn by lottery, the 3 left at home would show how much comes back anyway.
 - Taught on: “Picked at an extreme, then back toward usual” (one tap opens the card).
 
@@ -2287,14 +2287,14 @@ A name that is due returns as a case the learner has not seen, next to a case of
 **Shown as soon as you answer**
 
 - If you are right: “Right: **Regression to the mean**.” What else could produce the same result? **It was picked at its worst or best, and goes back toward usual.** The 100 were picked for having the highest readings on one test: the plan “picks the 100 members with the highest cholesterol readings in January”. A reading is a person’s usual level plus how that day went, so the highest 100 include many with a high day, and their readings drift back toward usual with no coaching.
-  - Why not **No comparison group**: No member went without the coaching, and the case shows that too. But the 100 were picked at their highest, and when a case shows both, the key’s answer is **“It was picked at its worst or best, and goes back toward usual”**.
+  - Why not **No comparison group**: No member went without the coaching, and the case shows that too. But the 100 were picked at their highest, and when a case shows both, the answer is **“It was picked at its worst or best, and goes back toward usual”**.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **What it says caused what.** The readings are given, and the plan says “Our diet coaching lowers cholesterol”. That is a claim of cause.
-  - If you chose **It would have happened anyway**: You chose **It would have happened anyway**. This case does show that. It also shows a group picked because it was at its worst or best, and when a case shows both, the key’s answer is **It was picked at its worst or best, and goes back toward usual**.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose **It would have happened anyway**: You chose **It would have happened anyway**. This case does show that. It also shows a group picked because it was at its worst or best, and when a case shows both, the answer is **It was picked at its worst or best, and goes back toward usual**.
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **No comparison group**, the look-alike card’s lines follow: Both give a result that comes after something was done, and in both nothing was left alone and counted in the same way to set beside it. In **Regression to the mean** the group was chosen for how badly, or how well, it had done, so a return toward its usual level is expected with nothing done. In **No comparison group** nothing about how the group was formed makes a change likely: everyone who got the thing, or the one place that got it, is counted. How was the group picked? Was it everyone who got the thing, or was it picked because it was at its worst or best?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the plan had coached 50 of the 100 highest readers, drawn by lottery, and left 50 alone, the 50 left alone would show how much comes back anyway.
 - Taught on: “Picked at an extreme, then back toward usual” (one tap opens the card).
 
@@ -2307,14 +2307,14 @@ A name that is due returns as a case the learner has not seen, next to a case of
 **Shown as soon as you answer**
 
 - If you are right: “Right: **Regression to the mean**.” What else could produce the same result? **It was picked at its worst or best, and goes back toward usual.** The three were picked for the worst averages in one month: the manager “picks the three players with the worst batting averages in April”. A month’s average is a player’s usual skill plus luck, so the worst three of April are partly the unluckiest three, and their averages drift back toward usual with no coach.
-  - Why not **No comparison group**: No player went without the coach, and the case shows that too. But the three were picked at their worst, and when a case shows both, the key’s answer is **“It was picked at its worst or best, and goes back toward usual”**.
+  - Why not **No comparison group**: No player went without the coach, and the case shows that too. But the three were picked at their worst, and when a case shows both, the answer is **“It was picked at its worst or best, and goes back toward usual”**.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **What it says caused what.** The averages are given, and the manager says “The hitting coach fixed them”. That is a claim of cause.
-  - If you chose **It would have happened anyway**: You chose **It would have happened anyway**. This case does show that. It also shows a group picked because it was at its worst or best, and when a case shows both, the key’s answer is **It was picked at its worst or best, and goes back toward usual**.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose **It would have happened anyway**: You chose **It would have happened anyway**. This case does show that. It also shows a group picked because it was at its worst or best, and when a case shows both, the answer is **It was picked at its worst or best, and goes back toward usual**.
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **No comparison group**, the look-alike card’s lines follow: Both give a result that comes after something was done, and in both nothing was left alone and counted in the same way to set beside it. In **Regression to the mean** the group was chosen for how badly, or how well, it had done, so a return toward its usual level is expected with nothing done. In **No comparison group** nothing about how the group was formed makes a change likely: everyone who got the thing, or the one place that got it, is counted. How was the group picked? Was it everyone who got the thing, or was it picked because it was at its worst or best?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If three other players with equally poor Aprils had been left alone, and their averages rose less, the difference would be what the coach did.
 - Taught on: “Picked at an extreme, then back toward usual” (one tap opens the card).
 
@@ -2327,14 +2327,14 @@ A name that is due returns as a case the learner has not seen, next to a case of
 **Shown as soon as you answer**
 
 - If you are right: “Right: **Regression to the mean**.” What else could produce the same result? **It was picked at its worst or best, and goes back toward usual.** The three exhibits were picked for having the fewest visitors: the zoo “picks the three exhibits with the fewest visitors last month”. A month’s visitors are how popular an exhibit is plus the weather and the school trips that happened to come, so the lowest three are partly the unluckiest three, and their counts drift back toward usual with no guide.
-  - Why not **No comparison group**: No exhibit went without a guide, and the case shows that too. But the three were picked at their lowest, and when a case shows both, the key’s answer is **“It was picked at its worst or best, and goes back toward usual”**.
+  - Why not **No comparison group**: No exhibit went without a guide, and the case shows that too. But the three were picked at their lowest, and when a case shows both, the answer is **“It was picked at its worst or best, and goes back toward usual”**.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **What it says caused what.** The visitor counts are given, and the zoo says “The free guides draw visitors”. That is a claim of cause.
-  - If you chose **It would have happened anyway**: You chose **It would have happened anyway**. This case does show that. It also shows a group picked because it was at its worst or best, and when a case shows both, the key’s answer is **It was picked at its worst or best, and goes back toward usual**.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose **It would have happened anyway**: You chose **It would have happened anyway**. This case does show that. It also shows a group picked because it was at its worst or best, and when a case shows both, the answer is **It was picked at its worst or best, and goes back toward usual**.
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **No comparison group**, the look-alike card’s lines follow: Both give a result that comes after something was done, and in both nothing was left alone and counted in the same way to set beside it. In **Regression to the mean** the group was chosen for how badly, or how well, it had done, so a return toward its usual level is expected with nothing done. In **No comparison group** nothing about how the group was formed makes a change likely: everyone who got the thing, or the one place that got it, is counted. How was the group picked? Was it everyone who got the thing, or was it picked because it was at its worst or best?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the zoo had added guides at only two of the five least visited exhibits, drawn by lottery, the other three would show how much of the rise comes back anyway.
 - Taught on: “Picked at an extreme, then back toward usual” (one tap opens the card).
 
@@ -2351,10 +2351,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **What it says caused what.** The numbers are given for both kinds of neighborhood, and the city says “so bike-share cuts traffic”. That is a claim of cause.
   - If you chose **The second thing causes the first**: Nothing shows that low traffic came first and led the city to put in stations. What the case shows is something else that differs between the neighborhoods.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Reverse causation**, the look-alike card’s lines follow: Both set two things side by side that go together, and in both someone says that the first caused the second. In **Confounding** something else, which differs between the two groups, could bring about the result on its own. In **Reverse causation** nothing else is needed: the result itself could have come first and led people to the thing. Is there something else that differs between the groups and could bring about the result by itself? Or could the result have come first, and led people to the thing?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If neighborhoods alike in subway service had been given stations or not by lottery, and the stations still came with less traffic, the answer would be **“Nothing goes wrong”**.
 - Taught on: “Something else behind both” (one tap opens the card).
 
@@ -2370,10 +2370,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
   - Why not **A fair test**: Owners chose the food, so a draw did not form the groups. The breed is something else that differs between them, which is **Confounding**.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **What it says caused what.** The numbers are given for both groups, and the brand says “so premium food makes dogs live longer”. That is a claim of cause.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A fair test**, the look-alike card’s lines follow: Both set a group that got a thing beside a group that did not, and both can show the same difference in the result. In **A fair test** chance decided who went in which group, so nothing else is likelier to be found in one group than in the other. In **Confounding** the people chose, or their circumstances put them there, so something else could differ between the groups and bring about the result on its own. Who decided which group each person was in: they did, their circumstances did, or a lottery did?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If dogs of the same breed and size had been fed one food or the other by lottery, and the premium dogs still lived longer, the answer would be **“Nothing goes wrong”**.
 - Taught on: “Something else behind both” (one tap opens the card).
 
@@ -2389,10 +2389,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
   - Why not **A fair test**: Owners chose whether to keep a history, so a draw did not form the groups. Mileage is something else that differs between them, which is **Confounding**.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **What it says caused what.** The numbers are given for both groups, and the site says “so keeping a service history raises a car’s value”. That is a claim of cause.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A fair test**, the look-alike card’s lines follow: Both set a group that got a thing beside a group that did not, and both can show the same difference in the result. In **A fair test** chance decided who went in which group, so nothing else is likelier to be found in one group than in the other. In **Confounding** the people chose, or their circumstances put them there, so something else could differ between the groups and bring about the result on its own. Who decided which group each person was in: they did, their circumstances did, or a lottery did?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If cars of the same mileage and age had been compared, and the ones with histories still sold for more, the answer would change.
 - Taught on: “Something else behind both” (one tap opens the card).
 
@@ -2409,10 +2409,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **What it says caused what.** The numbers are given for both groups, and the school says “singing in the choir improves attendance”. That is a claim of cause.
   - If you chose **The second thing causes the first**: Nothing shows that good attendance came first and led students to join the choir. What the case shows is something else that differs between the groups.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Reverse causation**, the look-alike card’s lines follow: Both set two things side by side that go together, and in both someone says that the first caused the second. In **Confounding** something else, which differs between the two groups, could bring about the result on its own. In **Reverse causation** nothing else is needed: the result itself could have come first and led people to the thing. Is there something else that differs between the groups and could bring about the result by itself? Or could the result have come first, and led people to the thing?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the school’s records showed that the teacher only took students who already had good attendance, the order would be what mattered.
 - Taught on: “Something else behind both” (one tap opens the card).
 
@@ -2429,10 +2429,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **What it says caused what.** The numbers are given for both groups, and the magazine says “Giving to charity makes you happy”. That is a claim of cause.
   - If you chose **Something else causes both**: No third thing is needed. The second thing, a life that turned out well, came first and led to the first, which is **Reverse causation**.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Confounding**, the look-alike card’s lines follow: Both set two things side by side that go together, and in both someone says that the first caused the second. In **Confounding** something else, which differs between the two groups, could bring about the result on its own. In **Reverse causation** nothing else is needed: the result itself could have come first and led people to the thing. Is there something else that differs between the groups and could bring about the result by itself? Or could the result have come first, and led people to the thing?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the interviews showed that households began giving first, and their happiness rose only afterward, the order would point the other way.
 - Taught on: “The result leading to the thing, not the thing to the result” (one tap opens the card).
 
@@ -2449,10 +2449,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **What it says caused what.** The numbers are given for both groups, and the blog says “Brushing more causes cavities”. That is a claim of cause.
   - If you chose **Something else causes both**: No third thing is needed. The cavities came first and led to the extra brushing, which is **Reverse causation**.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Confounding**, the look-alike card’s lines follow: Both set two things side by side that go together, and in both someone says that the first caused the second. In **Confounding** something else, which differs between the two groups, could bring about the result on its own. In **Reverse causation** nothing else is needed: the result itself could have come first and led people to the thing. Is there something else that differs between the groups and could bring about the result by itself? Or could the result have come first, and led people to the thing?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the records showed that people began brushing three times a day long before any cavity, the order would point the other way.
 - Taught on: “The result leading to the thing, not the thing to the result” (one tap opens the card).
 
@@ -2469,10 +2469,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **What it says caused what.** The numbers are given for both groups, and the manager says “Overtime makes people careless”. That is a claim of cause.
   - If you chose **Something else causes both**: No third thing is needed. The mistakes came first and led to the overtime spent fixing them, which is **Reverse causation**.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Confounding**, the look-alike card’s lines follow: Both set two things side by side that go together, and in both someone says that the first caused the second. In **Confounding** something else, which differs between the two groups, could bring about the result on its own. In **Reverse causation** nothing else is needed: the result itself could have come first and led people to the thing. Is there something else that differs between the groups and could bring about the result by itself? Or could the result have come first, and led people to the thing?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the time sheets showed the overtime was on new work, and the mistakes were made afterward, the order would point the other way.
 - Taught on: “The result leading to the thing, not the thing to the result” (one tap opens the card).
 
@@ -2489,10 +2489,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Which part of the claim goes wrong first? **What it says caused what.** The numbers are given for both groups, and the teacher says “so extra help hurts”. That is a claim of cause.
   - If you chose **Something else causes both**: No third thing is needed. The low scores came first and led to the extra help, which is **Reverse causation**.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Confounding**, the look-alike card’s lines follow: Both set two things side by side that go together, and in both someone says that the first caused the second. In **Confounding** something else, which differs between the two groups, could bring about the result on its own. In **Reverse causation** nothing else is needed: the result itself could have come first and led people to the thing. Is there something else that differs between the groups and could bring about the result by itself? Or could the result have come first, and led people to the thing?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the help had gone to students chosen by lottery, and their scores were still lower, the order could not explain the figures.
 - Taught on: “The result leading to the thing, not the thing to the result” (one tap opens the card).
 

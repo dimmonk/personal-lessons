@@ -1,15 +1,15 @@
 # Learner view: Political Ideologies, Unit Three: The nation, or its ordinary people
 
-*Five names for a text that puts one people first, and the two questions that tell them apart.* Unit revision 1, built to lesson standard 1, status: draft.
+*Five names for a text that puts one people first, and the two questions that tell them apart.* Unit revision 2, built to lesson standard 1, status: draft.
 
 This file is generated from the data files by `tools/render-learner-view.mjs`. It shows every screen in the order a learner meets it. In the app one card is on screen at a time and the learner moves on when ready.
 
-- **Bold text in quotation marks** is the key’s own wording, printed from `key.js`. Bold names are the outcome names from the same file. Neither is typed anywhere else. "What you must be able to point to" lines and "How to tell them apart" lines are also printed from one place each (the key and the look-alike ledger).
+- **Bold text in quotation marks** is the subject’s own wording for its questions and answers, written once and printed everywhere. Bold names are the names, written once in the same place. Neither is typed anywhere else. "What you must be able to point to" lines and "How to tell them apart" lines are also printed from one place each (the subject’s questions and the pairs it compares).
 - ⟦Double brackets⟧ show the words the app marks in a case (one highlight style everywhere).
 - The line in italics under each heading is the app’s top bar. The line in square brackets after it is for reviewers and is not shown to the learner.
 - Headings, prompt wording and stage instructions that are the same in every unit are the app’s wording, not this unit’s.
 - "Shown as soon as you …" is what appears the moment the learner answers. Nothing is hidden behind a second tap the first time a case is met, or after a miss.
-- After every answer the app shows, in this order: the right answer in the key’s words; the reason, quoting the marked words; for a name, why the nearest wrong name fails; after a miss, a line about the answer the learner chose; and last a link to the card that taught it. Where a line about the learner’s own choice is not written for the case, the app builds it from the key, and this file says so in place of repeating it.
+- After every answer the app shows, in this order: the right answer; the reason, quoting the marked words; for a name, why the nearest wrong name fails; after a miss, a line about the answer the learner chose; and last a link to the card that taught it. Where a line about the learner’s own choice is not written for the case, the app builds it from the answers’ own wording, and this file says so in place of repeating it.
 
 ---
 
@@ -17,7 +17,7 @@ This file is generated from the data files by `tools/render-learner-view.mjs`. I
 
 ### 1. One people, put first: five different things a text can be doing
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 1 of 42*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 1 of 42*
 
 [reviewers only: card kind `orient`, id `orient`]
 
@@ -27,19 +27,19 @@ You already know the raw material. Think of the last time you heard one of these
 
 Each of these can be a part of one of five different things. They share a starting point, which is that one people comes first. They differ in whom that people is set against, and in what happens to elections and to anyone who disagrees. A single sentence never tells you which of the five you are reading. This unit teaches what else to look for in the text, and the two questions to put once you have found it.
 
-**What Unit One taught, in one place.** The key’s first question is **“Who or what does the text put first?”** Its answers:
+**What Unit One taught, in one place.** The first question is **“Who or what does the text put first?”** Its answers:
 
 - **“Working people, against those who own the businesses”**: give this answer when the text sorts people by whether they work for a wage or own the businesses (or are rich from owning them), and takes the side of the workers against the owners.
 - **“The nation, or its ordinary people”**: give this answer when the text speaks for one people, marked out by its country, its culture or its blood, and puts that people first: the whole nation as one, or its ordinary people against a few at the top. **This unit is about these cases.**
-- **“Old ways of faith, family and custom”**: give this answer when the text holds up ways handed down from the past (a faith, the family, old customs, or an old order of crown, church and rank) as what should guide the country.
+- **“Old ways of faith, family and custom”**: give this answer when the text holds up ways handed down from the past (a faith, home life, old customs, or an old order of crown, church and rank) as what should guide the country.
 - **“Rights and fair treatment for everyone”**: give this answer when the text puts first what it says every person is owed: the freedom to speak, believe, own and trade, a fair start in life, or fair treatment whatever group they belong to.
 - **“No side named”**: give this answer when the text says only who holds power and how they keep it, or how one practical matter should be handled, and speaks for no side: no working people against owners, no nation or people, no old ways, and nothing every person is owed.
 
-Unit One also taught that two things are marked separately: the name you give a case, and your route to it, meaning the answers you gave to the key’s questions on the way.
+Two things are marked separately: the name you give a case, and your answers to the questions on the way to it.
 
 *(One tap on any of these lines opens the card in Unit One that taught it.)*
 
-**The part of the key this unit teaches.** This is a preview. You are not expected to follow it yet: every line is explained on the cards that come next. The question and its answers are in the key’s own words. Beside each answer, in plain words, is the thing it leads to. There are five of them, and each gets its name when it is taught.
+**The questions this unit teaches.** This is a preview. You are not expected to follow it yet: every line is explained on the cards that come next. The question and its answers are worded exactly as you will meet them. Beside each answer, in plain words, is the thing it leads to. There are five of them, and each gets its name when it is taught.
 
 Who does the text speak for, and against whom?
 - The whole nation, as one people → the nation first, with elections left alone · the nation as one, with elections pushed aside for one leader
@@ -64,14 +64,14 @@ The unit has five parts, and you can stop after any of them.
 1. The whole nation, and what it does with the vote
 2. Ordinary people against a few at the top
 3. One people ranked by blood, and what every dictatorship does
-4. The key’s two questions
+4. The two questions
 5. Two whole cases, then the drill
 
 Each name is taught through cases first. After every step you answer one question about a new case, and the answer and the reason are shown straight away. Nothing here is graded. A miss only decides what comes back.
 
 ### 2. A few at the top, with far more say than everyone else
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 2 of 42*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 2 of 42*
 
 [reviewers only: card kind `term`, id `term-elite`]
 
@@ -92,7 +92,7 @@ When a text sets ordinary people against a group like this, this is the word the
 
 ### 3. The nation first, with elections left alone
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 3 of 42*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 3 of 42*
 
 [reviewers only: card kind `meet`, id `meet-nationalism`]
 
@@ -117,19 +117,19 @@ Why would a speaker do this? A country is made of people who disagree about almo
 
 **What you must be able to point to.** The whole nation spoken for as one people and put first, no elite inside it named as the enemy, no ranking of peoples by blood, and elections, other parties and the right to disagree left in place. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“Who does the text speak for, and against whom?”**
+**The question:** **“Who does the text speak for, and against whom?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“The whole nation, as one people”**
+**Its answer for a case like this one:** **“The whole nation, as one people”**
 
-**The key also asks, and this is its answer for a case like this one:** **“What does the text want done with elections and with those who disagree?”** **“Leave them in place”**
+**There is also this question, and its answer for a case like this one:** **“What does the text want done with elections and with those who disagree?”** **“Leave them in place”**
 
-The name for this is **Nationalism**. A "nation" is a people who share a country and a life, and the ending "-ism" turns that into a belief: the belief that this people comes first. Some people use the word only for something harsh. The key uses it for the plain case you have just read: the nation first, spoken for as one, with the vote left alone. The harsher cases have names of their own.
+The name for this is **Nationalism**. A "nation" is a people who share a country and a life, and the ending "-ism" turns that into a belief: the belief that this people comes first. Some people use the word only for something harsh. It is used here for the plain case you have just read: the nation first, spoken for as one, with the vote left alone. The harsher cases have names of their own.
 
 You may also hear this called “patriotism”. That means the same thing here, and from now on this unit uses one name: **Nationalism**.
 
 ### 4. Nationalism: the same thing in a different story
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 4 of 42*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 4 of 42*
 
 [reviewers only: card kind `again`, id `again-nationalism`]
 
@@ -164,7 +164,7 @@ The two stories share nothing else, so this holds wherever a text speaks for eve
 
 ### 5. The story never decides the answer
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 5 of 42*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 5 of 42*
 
 [reviewers only: card kind `lens`, id `lens`]
 
@@ -178,13 +178,13 @@ From here on, the texts change their stories on purpose. Sometimes two texts wil
 
 The tone does not decide either. A text can be loud, proud, angry or polite and carry any of the five names. What decides is what the text says it wants.
 
-**Stays the same from case to case:** what the key asks about: **“Who does the text speak for, and against whom?”** and **“What does the text want done with elections and with those who disagree?”**
+**Stays the same from case to case:** what the questions ask about: **“Who does the text speak for, and against whom?”** and **“What does the text want done with elections and with those who disagree?”**
 
 **Changes on purpose:** the topic; the people; how loud or calm the words are; whether you like the speaker; how much is at stake.
 
 ### 6. Nationalism: what it is like
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 6 of 42*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 6 of 42*
 
 [reviewers only: card kind `portrait`, id `portrait-nationalism`]
 
@@ -214,7 +214,7 @@ In your own life it is the national day speech, the anthem before a match, the s
 
 ### 7. A question about a new case
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 7 of 42*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 7 of 42*
 
 [reviewers only: card kind `check`, id `check-nationalism`]
 
@@ -229,7 +229,7 @@ The pieces you can tap:
 
 **Shown as soon as you tap**
 
-- If you are right: “Right: ‘When the whole country saves together, the whole country stands taller’.” The poster speaks for everyone in the country together: “When the whole country saves together, the whole country stands taller”. It names nobody in the country as the other side, and it says nothing about ranking anyone. The key’s answer for this case is **“The whole nation, as one people”**, and the name is **Nationalism**.
+- If you are right: “Right: ‘When the whole country saves together, the whole country stands taller’.” The poster speaks for everyone in the country together: “When the whole country saves together, the whole country stands taller”. It names nobody in the country as the other side, and it says nothing about ranking anyone. The answer for this case is **“The whole nation, as one people”**, and the name is **Nationalism**.
 - If you miss: “The words are ‘When the whole country saves together, the whole country stands taller’.” The same reason follows, and then a line about the piece you tapped:
   - “A poster for the Vessan Savings Bond”: That says what the poster is for. It does not say whom the poster speaks for.
   - “Ask each party what it thinks of this bond, and vote for the one that answers best”: That is about parties and voting, and it leaves the vote in place. It does not speak for everyone as one.
@@ -237,7 +237,7 @@ The pieces you can tap:
 
 ### 8. The nation as one, with elections pushed aside for one leader
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 8 of 42*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 8 of 42*
 
 [reviewers only: card kind `meet`, id `meet-fasc`]
 
@@ -254,31 +254,31 @@ Stripped of its story, the case is this:
 - The other parties are to be closed, and the papers that print their complaints are to be shut. Nobody is left who can say the opposite.
 - Nobody is ranked by blood. The text is about one nation and one leader.
 
-In the anniversary speech, the voters chose, and other parties could stand against the speaker. Here the speaker takes that away. He wants elections and rival parties done away with, and critics silenced, so that nobody speaks for the people but him. That is what the key's second question asks: **“What does the text want done with elections and with those who disagree?”**
+In the anniversary speech, the voters chose, and other parties could stand against the speaker. Here the speaker takes that away. He wants elections and rival parties done away with, and critics silenced, so that nobody speaks for the people but him. That is what the second question asks: **“What does the text want done with elections and with those who disagree?”**
 
-The key's line for this name has a bracket in it. The bracket is a second way of speaking for a people: there the country's ordinary people face a group at the top, which has the word *elite*, and the nation still comes first. This speaker uses the first way, the whole nation as one. What decides the name is the same in both: elections, other parties and critics pushed aside.
+The line for this name has a bracket in it. The bracket is a second way of speaking for a people: there the country's ordinary people face a group at the top, which has the word *elite*, and the nation still comes first. This speaker uses the first way, the whole nation as one. What decides the name is the same in both: elections, other parties and critics pushed aside.
 
-This is the heart of the name. A text that speaks for the whole nation, and says only that, is the plain case you have just met. A text that speaks for the whole nation and also removes everyone's way of saying no is another thing, and the key gives it another name.
+This is the heart of the name. A text that speaks for the whole nation, and says only that, is the plain case you have just met. A text that speaks for the whole nation and also removes everyone's way of saying no is another thing, and it is given another name.
 
 Why would a speaker do this? If the nation is one people with one will, then someone who disagrees can be said to be against the people itself. The vote, rival parties and a free press then look like obstacles, and doing away with them follows from the first step.
 
 **What you must be able to point to.** The nation spoken for as one people (or its ordinary people set against an elite, with the nation put first), and elections, other parties or those who disagree done away with, silenced or broken, so that one leader or one movement speaks for everyone. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What does the text want done with elections and with those who disagree?”**
+**The question:** **“What does the text want done with elections and with those who disagree?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“Push them aside, so one leader or movement speaks for everyone”**
+**Its answer for a case like this one:** **“Push them aside, so one leader or movement speaks for everyone”**
 
-**The key also asks, and this is its answer for a case like this one:** **“Who does the text speak for, and against whom?”** **“The whole nation, as one people”** or **“Ordinary people against an elite, with the nation’s borders, culture or industry put first”**
+**There is also this question, and its answer for a case like this one:** **“Who does the text speak for, and against whom?”** **“The whole nation, as one people”** or **“Ordinary people against an elite, with the nation’s borders, culture or industry put first”**
 
 The name for this is **Fascism**. It is borrowed from a real movement. Every text in this unit is invented, and none describes a real party or a real person.
 
-Where the line for this name falls is argued over by the people who study it. Some keep the word for one place and one period, and some use it more widely. The key draws one line, the one you have just read: the nation spoken for as one, and elections and critics pushed aside so that one voice is left. It draws it there because that is what a short text can show.
+Where the line for this name falls is argued over by the people who study it. Some keep the word for one place and one period, and some use it more widely. One line is drawn here, the one you have just read: the nation spoken for as one, and elections and critics pushed aside so that one voice is left. It is drawn there because that is what a short text can show.
 
 You may also hear this called “ultranationalism”. That means the same thing here, and from now on this unit uses one name: **Fascism**.
 
 ### 9. Fascism: the same thing in a different story
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 9 of 42*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 9 of 42*
 
 [reviewers only: card kind `again`, id `again-fasc`]
 
@@ -311,7 +311,7 @@ The two stories share nothing else, so this holds wherever a text speaks for the
 
 ### 10. Fascism: what it is like
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 10 of 42*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 10 of 42*
 
 [reviewers only: card kind `portrait`, id `portrait-fasc`]
 
@@ -343,7 +343,7 @@ In your own life it is less likely to be a rally than a way of arguing: "we are 
 
 ### 11. A question about a new case
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 11 of 42*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 11 of 42*
 
 [reviewers only: card kind `check`, id `check-fasc`]
 
@@ -358,7 +358,7 @@ The pieces you can tap:
 
 **Shown as soon as you tap**
 
-- If you are right: “Right: ‘The election due in March is cancelled, and speeches against the Committee are an offence’.” The text wants an election cancelled and speeches against the Committee made an offence: “The election due in March is cancelled, and speeches against the Committee are an offence”. That takes away the vote and the right to object, so that the Committee is the single voice. The key’s answer for this case is **“Push them aside, so one leader or movement speaks for everyone”**, and the name is **Fascism**.
+- If you are right: “Right: ‘The election due in March is cancelled, and speeches against the Committee are an offence’.” The text wants an election cancelled and speeches against the Committee made an offence: “The election due in March is cancelled, and speeches against the Committee are an offence”. That takes away the vote and the right to object, so that the Committee is the single voice. The answer for this case is **“Push them aside, so one leader or movement speaks for everyone”**, and the name is **Fascism**.
 - If you miss: “The words are ‘The election due in March is cancelled, and speeches against the Committee are an offence’.” The same reason follows, and then a line about the piece you tapped:
   - “The people of Brevia are one body, and the Committee is its single voice”: That says whom the text speaks for. The words that take away anyone's say are in the last sentence.
   - “Taxes will be paid to the Committee's office from the first of May”: That says where the taxes go. It does not take away anyone's say.
@@ -366,7 +366,7 @@ The pieces you can tap:
 
 ### 12. Nationalism or Fascism: telling them apart
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 12 of 42*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 12 of 42*
 
 [reviewers only: card kind `lookalike`, id `look-nationalism-fasc`]
 
@@ -390,7 +390,7 @@ You have now met two names whose first answer is the same. They are easy to mix 
 
 In Case A the prime minister says that parliament will debate the health budget and that the opposition will have its say on every line. The text leaves the vote and the right to disagree in place. With the whole nation spoken for as one, the case is **Nationalism**.
 
-In Case B the Leader says that the budget is his alone to decide, that doctors and papers that question his hospitals will be closed, and that the opposition has no more place. The text takes away the vote and the right to disagree. The key's answer is **“Push them aside, so one leader or movement speaks for everyone”**, and the case is **Fascism**.
+In Case B the Leader says that the budget is his alone to decide, that doctors and papers that question his hospitals will be closed, and that the opposition has no more place. The text takes away the vote and the right to disagree. The answer is **“Push them aside, so one leader or movement speaks for everyone”**, and the case is **Fascism**.
 
 The hospital is the same, and so are the first words. What differs is what each text does with everyone who might say no. Warmth and pride cannot tell you which of the two you are reading, and nor can the first half of the speech.
 
@@ -398,7 +398,7 @@ The hospital is the same, and so are the first words. What differs is what each 
 
 Look at what the text wants done with elections, other parties and people who disagree. Are they left in place, or are they to go?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Nationalism | Fascism |
 |---|---|---|
@@ -410,7 +410,7 @@ Look at what the text wants done with elections, other parties and people who di
 
 ### 13. A wrong idea: wanting strong borders makes a text fascist
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 13 of 42*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 13 of 42*
 
 [reviewers only: card kind `refute`, id `refute-borders`]
 
@@ -437,7 +437,7 @@ So the idea fails at the point where it jumps. Strong borders are about what a t
 
 ### 14. Ordinary people against an elite, with the nation put first
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 14 of 42*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 14 of 42*
 
 [reviewers only: card kind `meet`, id `meet-natpop`]
 
@@ -462,11 +462,11 @@ Why would a speaker do this? It gives anger somewhere to land. Hard times are ea
 
 **What you must be able to point to.** The country’s ordinary people set against an elite at the top, the nation’s borders, culture or industry to be put first, and elections, other parties and the right to disagree left in place. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“Who does the text speak for, and against whom?”**
+**The question:** **“Who does the text speak for, and against whom?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“Ordinary people against an elite, with the nation’s borders, culture or industry put first”**
+**Its answer for a case like this one:** **“Ordinary people against an elite, with the nation’s borders, culture or industry put first”**
 
-**The key also asks, and this is its answer for a case like this one:** **“What does the text want done with elections and with those who disagree?”** **“Leave them in place”**
+**There is also this question, and its answer for a case like this one:** **“What does the text want done with elections and with those who disagree?”** **“Leave them in place”**
 
 The name for this is **National populism**. The name has two halves. The "national" half says that the nation's borders, culture or industry come first. The "populism" half says that ordinary people are set against a few at the top. Both halves have to be in the text.
 
@@ -474,7 +474,7 @@ You may also hear this called “right-wing populism”. That means the same thi
 
 ### 15. National populism: the same thing in a different story
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 15 of 42*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 15 of 42*
 
 [reviewers only: card kind `again`, id `again-natpop`]
 
@@ -509,7 +509,7 @@ The two stories share nothing else, so this holds wherever a text sets a country
 
 ### 16. National populism: what it is like
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 16 of 42*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 16 of 42*
 
 [reviewers only: card kind `portrait`, id `portrait-natpop`]
 
@@ -539,13 +539,13 @@ In your own life it is the leaflet that blames the ministry for a closing and as
 
 ### 17. A question about a new case
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 17 of 42*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 17 of 42*
 
 [reviewers only: card kind `check`, id `check-natpop`]
 
 > From a leaflet of the Lantern list: 'The editors and executives of the national broadcaster, who answer to nobody, fill the evenings with shows made abroad. Our stories should be told in our own language on our own screens. Vote Lantern in May and we will give the broadcaster back to its viewers.'
 
-**The key asks:** **“Who does the text speak for, and against whom?”** Which of the answers you have met so far fits this case?
+**The question:** **“Who does the text speak for, and against whom?”** Which of the answers you have met so far fits this case?
 
 - The whole nation, as one people
 - Ordinary people against an elite, with the nation’s borders, culture or industry put first
@@ -559,7 +559,7 @@ In your own life it is the leaflet that blames the ministry for a closing and as
 
 ### 18. Ordinary people against an elite, and nothing more
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 18 of 42*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 18 of 42*
 
 [reviewers only: card kind `meet`, id `meet-pop`]
 
@@ -578,15 +578,15 @@ Stripped of its story, the case is this:
 
 Put this beside the steelworks leaflet. Both set ordinary people against a few at the top. The leaflet went on to say what the country should have, a steelworks that belongs to the country. This text does not. Its whole message is that ordinary people should throw the few at the top out.
 
-This is the thin case: a text that has the two groups and nothing else. It is very common. A slogan such as "they have had their turn, now throw them out" says whom it is angry at and no more. The key gives it a name of its own, so that it is not forced into a name that needs more.
+This is the thin case: a text that has the two groups and nothing else. It is very common. A slogan such as "they have had their turn, now throw them out" says whom it is angry at and no more. It is given a name of its own, so that it is not forced into a name that needs more.
 
 **What you must be able to point to.** Ordinary people set against an elite at the top, and nothing more: no borders, culture or industry to put first, no ranking of peoples, and elections left in place. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“Who does the text speak for, and against whom?”**
+**The question:** **“Who does the text speak for, and against whom?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“Ordinary people against an elite, and nothing more”**
+**Its answer for a case like this one:** **“Ordinary people against an elite, and nothing more”**
 
-**The key also asks, and this is its answer for a case like this one:** **“What does the text want done with elections and with those who disagree?”** **“Leave them in place”**
+**There is also this question, and its answer for a case like this one:** **“What does the text want done with elections and with those who disagree?”** **“Leave them in place”**
 
 The name for this is **Populism with nothing attached**. "Populism" means setting ordinary people against a few at the top. "With nothing attached" says that nothing else is joined to it: no borders, culture or industry to put first, and no ranking of peoples. When a text does attach one of those things, it has another name.
 
@@ -594,7 +594,7 @@ You may also hear this called “thin populism”. That means the same thing her
 
 ### 19. Populism with nothing attached: the same thing in a different story
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 19 of 42*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 19 of 42*
 
 [reviewers only: card kind `again`, id `again-pop`]
 
@@ -627,7 +627,7 @@ Neither says what the country should have. There is nothing about borders, cultu
 
 ### 20. Populism with nothing attached: what it is like
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 20 of 42*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 20 of 42*
 
 [reviewers only: card kind `portrait`, id `portrait-pop`]
 
@@ -659,13 +659,13 @@ In your own life it is a comment under a news story, a banner at a protest, or t
 
 ### 21. A question about a new case
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 21 of 42*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 21 of 42*
 
 [reviewers only: card kind `check`, id `check-pop`]
 
 > A post on a national forum: 'The ministers and their friends in the building trade have let the price of homes run away. Ordinary people of this country pay and they pocket. Vote every one of them out in May.'
 
-**The key asks:** **“Who does the text speak for, and against whom?”** Which of the answers you have met so far fits this case?
+**The question:** **“Who does the text speak for, and against whom?”** Which of the answers you have met so far fits this case?
 
 - The whole nation, as one people
 - Ordinary people against an elite, with the nation’s borders, culture or industry put first
@@ -681,7 +681,7 @@ In your own life it is a comment under a news story, a banner at a protest, or t
 
 ### 22. Nationalism or National populism: telling them apart
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 22 of 42*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 22 of 42*
 
 [reviewers only: card kind `lookalike`, id `look-nationalism-natpop`]
 
@@ -703,9 +703,9 @@ Both of these names put the nation first and leave the vote in place, and both c
 
 **Why this one and not the other**
 
-In Case A the transport minister says "we are one country", and that the south will help carry what the north loses. Nobody inside the country is named as the other side. The key's answer is **“The whole nation, as one people”**, and with the vote left alone, the case is **Nationalism**.
+In Case A the transport minister says "we are one country", and that the south will help carry what the north loses. Nobody inside the country is named as the other side. The answer is **“The whole nation, as one people”**, and with the vote left alone, the case is **Nationalism**.
 
-In Case B the leaflet names "the ministers in the capital, none of whom has ever ridden it" as the ones closing the line, and says that the railways should be run for the country's own people. A few at the top are the other side, and the country's industry comes first. The key's answer is **“Ordinary people against an elite, with the nation’s borders, culture or industry put first”**, and the case is **National populism**.
+In Case B the leaflet names "the ministers in the capital, none of whom has ever ridden it" as the ones closing the line, and says that the railways should be run for the country's own people. A few at the top are the other side, and the country's industry comes first. The answer is **“Ordinary people against an elite, with the nation’s borders, culture or industry put first”**, and the case is **National populism**.
 
 The closing is the same, and so is the anger. What differs is whether the text speaks for everyone, or for the country's ordinary people against a few of its own.
 
@@ -713,7 +713,7 @@ The closing is the same, and so is the anger. What differs is whether the text s
 
 Is anyone inside the country named as the other side, a few at the top set against everyone else? Or does the text speak for everyone alike?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Nationalism | National populism |
 |---|---|---|
@@ -725,7 +725,7 @@ Is anyone inside the country named as the other side, a few at the top set again
 
 ### 23. National populism or Populism with nothing attached: telling them apart
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 23 of 42*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 23 of 42*
 
 [reviewers only: card kind `lookalike`, id `look-natpop-pop`]
 
@@ -747,17 +747,17 @@ These two names both set ordinary people against a few at the top, and both leav
 
 **Why this one and not the other**
 
-In Case A the speaker is angry at the ministers and bankers, and then says that "our savings should stay in our own banks, run for our own people". That puts the country's own industry first. The key's answer is **“Ordinary people against an elite, with the nation’s borders, culture or industry put first”**, and the case is **National populism**.
+In Case A the speaker is angry at the ministers and bankers, and then says that "our savings should stay in our own banks, run for our own people". That puts the country's own industry first. The answer is **“Ordinary people against an elite, with the nation’s borders, culture or industry put first”**, and the case is **National populism**.
 
-In Case B the speaker is angry at the same people, says that they "rescue each other and bill the rest of us", and asks for a vote to throw them out. Nothing is said about what the country should have. The key's answer is **“Ordinary people against an elite, and nothing more”**, and the case is **Populism with nothing attached**.
+In Case B the speaker is angry at the same people, says that they "rescue each other and bill the rest of us", and asks for a vote to throw them out. Nothing is said about what the country should have. The answer is **“Ordinary people against an elite, and nothing more”**, and the case is **Populism with nothing attached**.
 
-Take the sentence about savings out of Case A, and what is left says almost what Case B says. That is how thin the difference can be, and why the key asks about it.
+Take the sentence about savings out of Case A, and what is left says almost what Case B says. That is how thin the difference can be, and why the question is asked.
 
 **How to tell them apart**
 
 After the text has set ordinary people against those at the top, does it say anything about the country’s borders, culture or industry? If it does not, nothing more is attached.
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | National populism | Populism with nothing attached |
 |---|---|---|
@@ -769,7 +769,7 @@ After the text has set ordinary people against those at the top, does it say any
 
 ### 24. A text that blames a few at the top and still ends the vote
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 24 of 42*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 24 of 42*
 
 [reviewers only: card kind `exception`, id `exc-elitefasc`]
 
@@ -779,7 +779,7 @@ The last cards showed ordinary people set against a few at the top, with the vot
 
 > From a broadcast by the leader of the Black Lantern movement in Calder: 'The bankers and ministers in the capital have sold this country's farms and mills to foreigners and left our people poor. Calder is one people with one will, and the movement is its voice. When we take power, there will be no more elections to be bought by the rich, the other parties will be closed, and any paper that defends the bankers will be shut.'
 
-The text blames a few at the top: "the bankers and ministers in the capital have sold this country's farms and mills". Setting a country's ordinary people against a few at the top, and wanting the country's farms and mills kept, is what you point to for **National populism**. Yet the key's answer for this case is **Fascism**.
+The text blames a few at the top: "the bankers and ministers in the capital have sold this country's farms and mills". Setting a country's ordinary people against a few at the top, and wanting the country's farms and mills kept, is what you point to for **National populism**. Yet the answer for this case is **Fascism**.
 
 **You are asked:** This looks like **National populism**. Before you read why it is **Fascism**, tap the words in the case that settle it.
 
@@ -798,13 +798,13 @@ The first half of the text is **National populism**. A few at the top are named,
 
 But it does not stop there. The movement says it will be "the voice" of one people, that there will be no more elections, that the other parties will be closed, and that papers that defend the bankers will be shut. That is not a vote to remove those at the top. It takes the vote away from everyone, so that the movement alone speaks.
 
-The second question decides it. For **National populism** the vote stays, and the way to remove those at the top is to use it. For **Fascism** the key's answer is **“Push them aside, so one leader or movement speaks for everyone”**. A text can blame a few at the top and still push the vote aside, and when it does, the second question gives it this name.
+The second question decides it. For **National populism** the vote stays, and the way to remove those at the top is to use it. For **Fascism** the answer is **“Push them aside, so one leader or movement speaks for everyone”**. A text can blame a few at the top and still push the vote aside, and when it does, the second question gives it this name.
 
 **How to tell them apart**
 
 Does the text ask the voters to remove those at the top? Or does it go further, and take away elections, other parties or the right to object?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | National populism | Fascism |
 |---|---|---|
@@ -813,12 +813,12 @@ Does the text ask the voters to remove those at the top? Or does it go further, 
 | What does the text want done with elections and with those who disagree? | Leave them in place | Push them aside, so one leader or movement speaks for everyone |
 | What you must be able to point to | The country’s ordinary people set against an elite at the top, the nation’s borders, culture or industry to be put first, and elections, other parties and the right to disagree left in place | The nation spoken for as one people (or its ordinary people set against an elite, with the nation put first), and elections, other parties or those who disagree done away with, silenced or broken, so that one leader or one movement speaks for everyone |
 
-The text also speaks of one people with one will, which is the answer **“The whole nation, as one people”**, and it names a few at the top, which is the answer **“Ordinary people against an elite, with the nation’s borders, culture or industry put first”**. When a case shows both, the key's answer to the first question is **“Ordinary people against an elite, with the nation’s borders, culture or industry put first”**. Either way, the first question leaves **Fascism** standing, and the second question is what gives the name.
+The text also speaks of one people with one will, which is the answer **“The whole nation, as one people”**, and it names a few at the top, which is the answer **“Ordinary people against an elite, with the nation’s borders, culture or industry put first”**. When a case shows both, the answer to the first question is **“Ordinary people against an elite, with the nation’s borders, culture or industry put first”**. Either way, the first question leaves **Fascism** standing, and the second question is what gives the name.
 
 
 ### 25. A wrong idea: anger at a few at the top makes a text socialist
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 25 of 42*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 25 of 42*
 
 [reviewers only: card kind `refute`, id `refute-socialist`]
 
@@ -830,11 +830,11 @@ The thin case is the one most often given a name it has not earned, because it i
 
 **What is right instead**
 
-A text that sets ordinary people against a few at the top has the key's answer **“Ordinary people against an elite, and nothing more”**, or **“Ordinary people against an elite, with the nation’s borders, culture or industry put first”** if it also puts the country first. Neither answer is about who should own the farms, factories, shops and banks.
+A text that sets ordinary people against a few at the top has the answer **“Ordinary people against an elite, and nothing more”**, or **“Ordinary people against an elite, with the nation’s borders, culture or industry put first”** if it also puts the country first. Neither answer is about who should own the farms, factories, shops and banks.
 
 That question is asked only of texts that have the first answer **“Working people, against those who own the businesses”**. A text that blames a few ministers and bankers does not do that by itself, because ordinary people here are the country's people and not the people who work for a wage.
 
-Anger at a few at the top can come from almost any side. The key reads what the text says it wants, and a text that is angry and asks for nothing more is **Populism with nothing attached**, whatever the speaker is called.
+Anger at a few at the top can come from almost any side. What counts is what the text says it wants, and a text that is angry and asks for nothing more is **Populism with nothing attached**, whatever the speaker is called.
 
 
 *End of part 2. You can stop here; your place is kept. Next: part 3, One people ranked by blood, and what every dictatorship does.*
@@ -845,7 +845,7 @@ Anger at a few at the top can come from almost any side. The key reads what the 
 
 ### 26. One people by blood, ranked above the others
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 26 of 42*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 26 of 42*
 
 [reviewers only: card kind `meet`, id `meet-nazi`]
 
@@ -864,7 +864,7 @@ Stripped of its story, the case is this:
 
 What is new here is the ranking. In every text so far a people was put first, and nobody was said to be worth less by birth. Here people are sorted at birth into peoples, and the sorting is said to matter more than anything a person does. That is what sorting people by blood means. Blood here means descent: who your parents and grandparents were.
 
-The key reads one thing in this text: peoples ranked higher and lower, with the text's own people placed above the rest. When a text does that, the key's answer to its first question is **“One people by blood, ranked above the others”**, and that question is settled.
+One thing is read in this text: peoples ranked higher and lower, with the text's own people placed above the rest. When a text does that, the answer to its first question is **“One people by blood, ranked above the others”**, and that question is settled.
 
 Set this beside the names you have met. Where the nation is spoken for as one, nobody is ranked. Where ordinary people are set against a few at the top, the other side is the few at the top, whoever they are, and not a people. Here the other side is whole peoples, chosen by birth.
 
@@ -872,21 +872,21 @@ The second question does not change the name. This pamphlet wants one party only
 
 **What you must be able to point to.** People sorted by blood or birth into peoples ranked higher and lower, and the text’s own people placed above the others, to rule them or to be kept apart from them. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“Who does the text speak for, and against whom?”**
+**The question:** **“Who does the text speak for, and against whom?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“One people by blood, ranked above the others”**
+**Its answer for a case like this one:** **“One people by blood, ranked above the others”**
 
-**The key also asks, and this is its answer for a case like this one:** **“What does the text want done with elections and with those who disagree?”** **“Push them aside, so one leader or movement speaks for everyone”** or **“Leave them in place”**
+**There is also this question, and its answer for a case like this one:** **“What does the text want done with elections and with those who disagree?”** **“Push them aside, so one leader or movement speaks for everyone”** or **“Leave them in place”**
 
 The name for this is **Nazism**. It is borrowed from a real movement. Every text in this unit is invented, and none describes a real party or a real person.
 
-Like **Fascism**, its edges are argued over by the people who study it. Some keep it for one movement in one country, and some use it for any text that ranks peoples by blood. The key draws its line at the ranking, because that is what a short text can show.
+Like **Fascism**, its edges are argued over by the people who study it. Some keep it for one movement in one country, and some use it for any text that ranks peoples by blood. The line is drawn at the ranking, because that is what a short text can show.
 
 You may also hear this called “National Socialism” or “neo-Nazism” or “racial supremacism”. Those words mean the same thing here, and from now on this unit uses one name: **Nazism**.
 
 ### 27. Nazism: the same thing in a different story
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 27 of 42*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 27 of 42*
 
 [reviewers only: card kind `again`, id `again-nazi`]
 
@@ -921,7 +921,7 @@ The two stories share nothing else, so this holds wherever a text ranks peoples 
 
 ### 28. Nazism: what it is like
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 28 of 42*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 28 of 42*
 
 [reviewers only: card kind `portrait`, id `portrait-nazi`]
 
@@ -937,11 +937,11 @@ You know what decides the name. This card fills in the rest of the picture, so t
 
 **What it is not**
 
-The ranking is what the name needs. A text that is proud of its people's history or language, and says no people is worth less, does not have it. A text that says that rules which treat everyone alike still leave some groups behind, and asks for fair results, ranks nobody, and has the key's answer **“Rights and fair treatment for everyone”** at the first question.
+The ranking is what the name needs. A text that is proud of its people's history or language, and says no people is worth less, does not have it. A text that says that rules which treat everyone alike still leave some groups behind, and asks for fair results, ranks nobody, and has the answer **“Rights and fair treatment for everyone”** at the first question.
 
 Three of the names you have met can be mixed up with this one, because all of them can leave the vote in place and all of them put one people first. **Nationalism** speaks for everyone in the country as equals. **National populism** and **Populism with nothing attached** set ordinary people against a few at the top, and their anger is at those at the top, not at a people chosen by blood.
 
-What a text says about who should own the businesses does not give this name either. The key asks that only of texts that have the first answer **“Working people, against those who own the businesses”**.
+What a text says about who should own the businesses does not give this name either. That is asked only of texts that have the first answer **“Working people, against those who own the businesses”**.
 
 **Where you will hear it**
 
@@ -955,7 +955,7 @@ You are unlikely to meet it as a whole programme. In your own life it is more of
 
 ### 29. A question about a new case
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 29 of 42*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 29 of 42*
 
 [reviewers only: card kind `check`, id `check-nazi`]
 
@@ -970,7 +970,7 @@ The pieces you can tap:
 
 **Shown as soon as you tap**
 
-- If you are right: “Right: ‘Children of the later peoples will be taught apart, and given the work that suits their lower place’.” The text puts the later peoples in a "lower place" and gives their children different schooling and different work for it: “Children of the later peoples will be taught apart, and given the work that suits their lower place”. That is people sorted by blood into higher and lower, with the text's own people above. The key’s answer for this case is **“One people by blood, ranked above the others”**, and the name is **Nazism**.
+- If you are right: “Right: ‘Children of the later peoples will be taught apart, and given the work that suits their lower place’.” The text puts the later peoples in a "lower place" and gives their children different schooling and different work for it: “Children of the later peoples will be taught apart, and given the work that suits their lower place”. That is people sorted by blood into higher and lower, with the text's own people above. The answer for this case is **“One people by blood, ranked above the others”**, and the name is **Nazism**.
 - If you miss: “The words are ‘Children of the later peoples will be taught apart, and given the work that suits their lower place’.” The same reason follows, and then a line about the piece you tapped:
   - “Children of the true blood will be taught in the Brotherhood schools”: That says who goes to which school. It does not yet say that one people is worth more than another.
   - “The Brotherhood asks every member to vote for it in the spring”: That is about voting. It is not the words that place one people below another.
@@ -978,7 +978,7 @@ The pieces you can tap:
 
 ### 30. Fascism or Nazism: telling them apart
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 30 of 42*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 30 of 42*
 
 [reviewers only: card kind `lookalike`, id `look-fasc-nazi`]
 
@@ -1000,9 +1000,9 @@ These two names can look almost the same on the page. Both can push the vote and
 
 **Why this one and not the other**
 
-In Case A "every child of Marren marches today as one people with one will". The old parties are dissolved, and the Leader has one voice. Nobody is ranked, so the key's answer to the first question is **“The whole nation, as one people”**. With the vote pushed aside, the case is **Fascism**.
+In Case A "every child of Marren marches today as one people with one will". The old parties are dissolved, and the Leader has one voice. Nobody is ranked, so the answer to the first question is **“The whole nation, as one people”**. With the vote pushed aside, the case is **Fascism**.
 
-In Case B the children of the first blood march, and the later peoples "may watch from the side, as is fitting for a lower people". The old parties are dissolved here too, and the Leader has the same one voice. People are ranked by blood, so the key's answer is **“One people by blood, ranked above the others”**, and the case is **Nazism**.
+In Case B the children of the first blood march, and the later peoples "may watch from the side, as is fitting for a lower people". The old parties are dissolved here too, and the Leader has the same one voice. People are ranked by blood, so the answer is **“One people by blood, ranked above the others”**, and the case is **Nazism**.
 
 The answer to the second question is the same in both. That is why it cannot tell them apart. The first question does: whether peoples are ranked by blood.
 
@@ -1010,7 +1010,7 @@ The answer to the second question is the same in both. That is why it cannot tel
 
 Does the text rank peoples by blood or birth, with its own above the others? Or does it speak of one nation, or of its ordinary people, with nobody ranked by blood?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Fascism | Nazism |
 |---|---|---|
@@ -1022,7 +1022,7 @@ Does the text rank peoples by blood or birth, with its own above the others? Or 
 
 ### 31. What every dictatorship does, and why it does not name a text
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 31 of 42*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 31 of 42*
 
 [reviewers only: card kind `exception`, id `exc-methods`]
 
@@ -1032,7 +1032,7 @@ The last card showed two names that both push the vote aside. Here is a text tha
 
 > From a decree of the Grey Council of Merrow: 'All parties but the Council's are banned. Newspapers will print only what the Council's office approves. The Council keeps a list of those who speak against it, and its officers will call on them at night. The people of the old Merrow blood are higher than the settlers and will rule them. No settler may hold office.'
 
-The decree bans every party but the Council's, controls what is printed, and sends officers to call on critics at night. That is how a text looks when it pushes the vote and critics aside, which is half of what **Fascism** needs. Yet the key's answer for this case is **Nazism**.
+The decree bans every party but the Council's, controls what is printed, and sends officers to call on critics at night. That is how a text looks when it pushes the vote and critics aside, which is half of what **Fascism** needs. Yet the answer for this case is **Nazism**.
 
 **You are asked:** This looks like **Fascism**. Before you read why it is **Nazism**, tap the words in the case that settle it.
 
@@ -1049,7 +1049,7 @@ The pieces you can tap:
 
 Banning parties, controlling what is printed and frightening critics are what nearly every dictatorship does, whatever it believes. A dictatorship that says it rules for working people does them. So does one that rules for a faith, one that rules for a nation, and a ruler who speaks for no side at all. Because they are shared, they cannot tell you which name a text has.
 
-What they do answer is the key's second question. Here the answer is **“Push them aside, so one leader or movement speaks for everyone”**. That narrows the names to the two that can push the vote aside, **Fascism** and **Nazism**, and it cannot choose between them.
+What they do answer is the second question. Here the answer is **“Push them aside, so one leader or movement speaks for everyone”**. That narrows the names to the two that can push the vote aside, **Fascism** and **Nazism**, and it cannot choose between them.
 
 The first question chooses. This decree ranks peoples: "the people of the old Merrow blood are higher than the settlers and will rule them". That is the answer **“One people by blood, ranked above the others”**, and it decides **Nazism**.
 
@@ -1059,14 +1059,14 @@ So banned parties, a controlled press and secret visits never name a text on the
 
 Does the text rank peoples by blood or birth, with its own above the others? Or does it speak of one nation, or of its ordinary people, with nobody ranked by blood?
 
-When a case shows both **“The whole nation, as one people”** and peoples ranked higher and lower by blood, the key’s answer is **“One people by blood, ranked above the others”**.
+When a case shows both **“The whole nation, as one people”** and peoples ranked higher and lower by blood, the answer is **“One people by blood, ranked above the others”**.
 
-A text that says only who holds power and how they keep it, and speaks for no people at all, never reaches these names. Its answer to the first question is **“No side named”**, and the key stops there.
+A text that says only who holds power and how they keep it, and speaks for no people at all, never reaches these names. Its answer to the first question is **“No side named”**, and the questions stop there.
 
 
 ### 32. A wrong idea: a socialist name or an order to businesses makes a text socialist
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 32 of 42*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 32 of 42*
 
 [reviewers only: card kind `refute`, id `refute-nazisocialist`]
 
@@ -1078,32 +1078,32 @@ The picture of **Nazism** said that what a text says about the businesses does n
 
 **What is right instead**
 
-A name is a word that someone chose, and what a text tells businesses to do is not what the key reads first. The key reads a text by whom it speaks for.
+A name is a word that someone chose, and what a text tells businesses to do is not what is read first. The first thing to read is whom the text speaks for.
 
-A text that ranks peoples by blood has the answer **“One people by blood, ranked above the others”**, and that leads to **Nazism**. The question about who should own the farms, factories, shops and banks is asked only of texts that have the first answer **“Working people, against those who own the businesses”**. A text that ranks peoples by blood does not give that answer, so the key never puts the ownership question to it.
+A text that ranks peoples by blood has the answer **“One people by blood, ranked above the others”**, and that leads to **Nazism**. The question about who should own the farms, factories, shops and banks is asked only of texts that have the first answer **“Working people, against those who own the businesses”**. A text that ranks peoples by blood does not give that answer, so the ownership question is never put to it.
 
-So the word "socialist" in a name, or an order to businesses, changes nothing the key reads. Whether any real party was socialist is a question about what that party did, and the key is only for reading what a short text says.
+So the word "socialist" in a name, or an order to businesses, changes nothing about the answer. Whether any real party was socialist is a question about what that party did, and this course is only for reading what a short text says.
 
 
-*End of part 3. You can stop here; your place is kept. Next: part 4, The key’s two questions.*
+*End of part 3. You can stop here; your place is kept. Next: part 4, The two questions.*
 
 ---
 
-## Part 4 of 5: The key’s two questions
+## Part 4 of 5: The two questions
 
 ### 33. The first of the two questions: whom the text speaks for, and against whom
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 33 of 42*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 33 of 42*
 
 [reviewers only: card kind `question`, id `q-who`]
 
-Since the anniversary speech you have seen this question at the foot of each new name, with one answer under it. This card puts the question and its four answers in one place, as the key shows them, and says why the key asks it first of the two.
+Since the anniversary speech you have seen this question at the foot of each new name, with one answer under it. This card puts the question and its four answers in one place, worded as they always are, and says why it is asked first of the two.
 
-**The key asks:** **“Who does the text speak for, and against whom?”**
+**The question:** **“Who does the text speak for, and against whom?”**
 
 **What it is for.** Tells apart texts that speak for the whole nation as one, texts that set its ordinary people against an elite (with the nation put first, or with nothing more), and texts that rank peoples by blood.
 
-**Its answers, exactly as the key shows them**
+**Its answers**
 
 - **“The whole nation, as one people”**
   - Give this answer when the text speaks for the whole nation as one people with one future, and treats what divides it (rich and poor, left and right, one party and another) as less than what holds it together.
@@ -1134,19 +1134,19 @@ Read the whole text, and then ask whether anyone inside the country is named as 
 
 Texts often name an enemy loosely. "The establishment", "those people in the capital", "the globalists": a name for a few at the top is a name for a few at the top, whoever uses it. A text names a people when it says who they are by birth and says that they are lower.
 
-When a text speaks of a few at the top and also of the whole nation, the key's answer is **“Ordinary people against an elite, with the nation’s borders, culture or industry put first”**, because setting ordinary people against a few at the top says more than speaking for everyone alike. And when a text ranks peoples by blood, the key's answer is **“One people by blood, ranked above the others”**, whatever else it says.
+When a text speaks of a few at the top and also of the whole nation, the answer is **“Ordinary people against an elite, with the nation’s borders, culture or industry put first”**, because setting ordinary people against a few at the top says more than speaking for everyone alike. And when a text ranks peoples by blood, the answer is **“One people by blood, ranked above the others”**, whatever else it says.
 
 **When two answers both seem to fit**
 
 Sometimes two answers both seem to fit. Each pair below has been set side by side earlier in this unit, and each has one question that separates it.
 
-- Nationalism or National populism: Is anyone inside the country named as the other side, a few at the top set against everyone else? Or does the text speak for everyone alike? When a case shows both **“The whole nation, as one people”** and the country’s ordinary people set against an elite at the top, the key’s answer is **“Ordinary people against an elite, with the nation’s borders, culture or industry put first”**.
+- Nationalism or National populism: Is anyone inside the country named as the other side, a few at the top set against everyone else? Or does the text speak for everyone alike? When a case shows both **“The whole nation, as one people”** and the country’s ordinary people set against an elite at the top, the answer is **“Ordinary people against an elite, with the nation’s borders, culture or industry put first”**.
 - Nationalism or Populism with nothing attached: Does the text speak for everyone, or set ordinary people against a few at the top? If it does the second, does it add anything about what the country itself should have?
-- Nationalism or Nazism: Does the text rank peoples by blood or birth, with its own above the others? Or does it speak for everyone in the country as equals? When a case shows both **“The whole nation, as one people”** and peoples ranked higher and lower by blood, the key’s answer is **“One people by blood, ranked above the others”**.
+- Nationalism or Nazism: Does the text rank peoples by blood or birth, with its own above the others? Or does it speak for everyone in the country as equals? When a case shows both **“The whole nation, as one people”** and peoples ranked higher and lower by blood, the answer is **“One people by blood, ranked above the others”**.
 - National populism or Populism with nothing attached: After the text has set ordinary people against those at the top, does it say anything about the country’s borders, culture or industry? If it does not, nothing more is attached.
-- National populism or Nazism: Who is the text against: a few at the top, or peoples that it ranks lower by blood or birth? When a case shows both **“Ordinary people against an elite, with the nation’s borders, culture or industry put first”** and peoples ranked higher and lower by blood, the key’s answer is **“One people by blood, ranked above the others”**.
+- National populism or Nazism: Who is the text against: a few at the top, or peoples that it ranks lower by blood or birth? When a case shows both **“Ordinary people against an elite, with the nation’s borders, culture or industry put first”** and peoples ranked higher and lower by blood, the answer is **“One people by blood, ranked above the others”**.
 - Populism with nothing attached or Nazism: Is the only line the one between ordinary people and a few at the top? Or are peoples ranked by blood or birth?
-- Fascism or Nazism: Does the text rank peoples by blood or birth, with its own above the others? Or does it speak of one nation, or of its ordinary people, with nobody ranked by blood? When a case shows both **“The whole nation, as one people”** and peoples ranked higher and lower by blood, the key’s answer is **“One people by blood, ranked above the others”**.
+- Fascism or Nazism: Does the text rank peoples by blood or birth, with its own above the others? Or does it speak of one nation, or of its ordinary people, with nobody ranked by blood? When a case shows both **“The whole nation, as one people”** and peoples ranked higher and lower by blood, the answer is **“One people by blood, ranked above the others”**.
 
 **Nationalism beside Populism with nothing attached**
 
@@ -1187,13 +1187,13 @@ Sometimes two answers both seem to fit. Each pair below has been set side by sid
 
 ### 34. A question about a new case
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 34 of 42*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 34 of 42*
 
 [reviewers only: card kind `check`, id `check-who`]
 
 > From a leaflet: 'The ministers and the importers have signed our shipyards over to a foreign firm. Our ships should be built in our own yards, by our own people. Cast your vote for the Anchor list.'
 
-**The key asks:** **“Who does the text speak for, and against whom?”**
+**The question:** **“Who does the text speak for, and against whom?”**
 
 - The whole nation, as one people
 - Ordinary people against an elite, with the nation’s borders, culture or industry put first
@@ -1211,17 +1211,17 @@ Sometimes two answers both seem to fit. Each pair below has been set side by sid
 
 ### 35. The second of the two questions: elections and those who disagree
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 35 of 42*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 35 of 42*
 
 [reviewers only: card kind `question`, id `q-elections`]
 
 The first question left some pairs unsorted. **Nationalism** and **Fascism** can both speak for the whole nation, and **National populism** and **Fascism** can both set the country's ordinary people against a few at the top. The second question is what sorts them, and it is the one you first saw on the rally speech.
 
-**The key asks:** **“What does the text want done with elections and with those who disagree?”**
+**The question:** **“What does the text want done with elections and with those who disagree?”**
 
 **What it is for.** Tells apart texts that do away with elections and silence those who disagree, so that one leader or movement speaks for all, from texts that leave them in place.
 
-**Its answers, exactly as the key shows them**
+**Its answers**
 
 - **“Push them aside, so one leader or movement speaks for everyone”**
   - Give this answer when the text wants elections, parliament, other parties or those who disagree done away with, silenced or broken, so that one leader or one movement speaks for the whole people.
@@ -1244,9 +1244,9 @@ Look for what the text wants done, and not for what it is like. A text that says
 
 Strong, angry or insulting words about opponents are not an answer. A text can call its opponents traitors and still ask the voters to remove them. What matters is whether it wants the vote, other parties and the right to object taken away.
 
-If a text says nothing at all about elections or about people who disagree, the key's answer is **“Leave them in place”**. The key asks what the text wants done, and a text that does not ask for them to go has not asked for them to go. Short texts often say nothing about the vote, and this is the key's decision for them.
+If a text says nothing at all about elections or about people who disagree, the answer is **“Leave them in place”**. The question is what the text wants done, and a text that does not ask for them to go has not asked for them to go. Short texts often say nothing about the vote, and this is a decision for them.
 
-Pushing the vote aside answers only this question. It is shared by many dictatorships, and it never tells you whether a text is for one nation, for working people or for no side at all. The first answer to the key's first question does that.
+Pushing the vote aside answers only this question. It is shared by many dictatorships, and it never tells you whether a text is for one nation, for working people or for no side at all. The first answer to the first question does that.
 
 **When two answers both seem to fit**
 
@@ -1258,27 +1258,27 @@ Sometimes two answers both seem to fit. Each pair below has been set side by sid
 
 ### 36. A question about a new case
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 36 of 42*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 36 of 42*
 
 [reviewers only: card kind `check`, id `check-elections`]
 
 > From a radio address by the head of the Harvest Board of Tolvar: 'Farmers of every region, we are one country, and this year's harvest is everyone's harvest. Bring in the grain and the whole nation eats.' The address did not mention elections, parties or critics at all.
 
-**The key asks:** **“What does the text want done with elections and with those who disagree?”**
+**The question:** **“What does the text want done with elections and with those who disagree?”**
 
 - Push them aside, so one leader or movement speaks for everyone
 - Leave them in place
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Leave them in place.**” The text asks for nothing to be taken away: “The address did not mention elections, parties or critics at all”. The key asks what the text would do about the vote and about its critics, and a text that does not ask for them to go has not asked for them to go. This answer leads to **Nationalism**, **National populism**, **Populism with nothing attached** and **Nazism**.
+- If you are right: “Right: **Leave them in place.**” The text asks for nothing to be taken away: “The address did not mention elections, parties or critics at all”. The question is what the text would do about the vote and about its critics, and a text that does not ask for them to go has not asked for them to go. This answer leads to **Nationalism**, **National populism**, **Populism with nothing attached** and **Nazism**.
 - If you miss: “The answer is **Leave them in place.**” The same reason follows, and then a line about the answer you chose:
   - If you chose **Push them aside, so one leader or movement speaks for everyone**: Give that answer when the text wants elections, parliament, other parties or those who disagree done away with, silenced or broken, so that one leader or one movement speaks for the whole people. This case shows something else: the text keeps elections, other parties and the right to disagree, asks voters for power, or says nothing against them.
 - Taught on: “The second of the two questions: elections and those who disagree” (one tap opens the card).
 
 ### 37. A wrong idea about what the second question asks
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 37 of 42*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 37 of 42*
 
 [reviewers only: card kind `refute`, id `refute-lots`]
 
@@ -1290,7 +1290,7 @@ Many people think the second question asks something else. This card tests one s
 
 **What is right instead**
 
-How much a government does is not an answer to any question in the key. A text can ask for a government that builds railways, runs hospitals and tells businesses what to make, and also say that elections will go on and that any party may stand against it. Its answer to the second question is **“Leave them in place”**.
+How much a government does is not an answer to any of these questions. A text can ask for a government that builds railways, runs hospitals and tells businesses what to make, and also say that elections will go on and that any party may stand against it. Its answer to the second question is **“Leave them in place”**.
 
 A text can also ask for very little from the government and still want critics silenced. The size of the government is a different thing from the right to vote and to object.
 
@@ -1299,7 +1299,7 @@ What decides **Fascism** is what the text would do about the vote and about its 
 
 ### 38. A wrong idea: two kinds of text that ban parties are the same
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 38 of 42*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 38 of 42*
 
 [reviewers only: card kind `refute`, id `refute-horseshoe`]
 
@@ -1311,7 +1311,7 @@ The picture of **Fascism** said that banning parties is a method many dictatorsh
 
 **What is right instead**
 
-Banning rival parties is something a text can say it will do, and it is shared by many dictatorships. But the key does not name a text by its methods. It asks first whom the text speaks for, and the questions after that depend on the answer.
+Banning rival parties is something a text can say it will do, and it is shared by many dictatorships. But a text is not named by its methods. It asks first whom the text speaks for, and the questions after that depend on the answer.
 
 A text that takes the side of the workers against the owners has the first answer **“Working people, against those who own the businesses”**. If it wants workers to take power and rule alone, its answer to the question about the government is **“Seize power and hold it for the workers, with no rivals allowed”**. A text that speaks for one nation as one people has the first answer **“The nation, or its ordinary people”**, and if it pushes the vote aside its answer to the second question is **“Push them aside, so one leader or movement speaks for everyone”**.
 
@@ -1326,11 +1326,11 @@ These are different answers to the first question. The two texts speak for diffe
 
 ### 39. A whole case, from the first question to the name
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 39 of 42*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 39 of 42*
 
 [reviewers only: card kind `worked`, id `worked-natpop`]
 
-You have the five names and the key's two questions. Before the drill, watch two cases being run from the top, in the order the key asks. You are not asked anything until the end of each.
+You have the five names and the two questions. Before the drill, watch two cases being run from the top, in the order the questions come. You are not asked anything until the end of each.
 
 *The old streets flyer*
 
@@ -1346,7 +1346,7 @@ Answer: **“The nation, or its ordinary people”**
 
 Go through the answers of the first question and ask which one the text shows. Is there a split between working people and those who own the businesses, with the text on the workers' side? The planners and the developers are named, but the text speaks for "the people who have lived here for generations", and not for people who work for a wage against those who own. Is something old held up as the guide? The "old streets" are mentioned, but only as something to keep for the town's people.
 
-What is left is one people, marked out by its own town and its own way of life, and put first: “Corvale's old streets and Corvale's way of life should be kept for Corvale's people”. The key's answer is the one for a text that puts one people first.
+What is left is one people, marked out by its own town and its own way of life, and put first: “Corvale's old streets and Corvale's way of life should be kept for Corvale's people”. The answer is the one for a text that puts one people first.
 
 Still possible: all five names this unit teaches.
 
@@ -1390,17 +1390,17 @@ Still possible: **National populism**. Ruled out: **Nationalism**, **Fascism**, 
 
 For **National populism** you must be able to point to this: the country’s ordinary people set against an elite at the top, the nation’s borders, culture or industry to be put first, and elections, other parties and the right to disagree left in place. The flyer has the first half, ordinary people set against a few at the top, and it has the second half too: the old streets and the way of life kept for the town's own people. That is what is attached.
 
-It is the question from the two bank rescues. After the text has set ordinary people against those at the top, does it say anything about the country’s borders, culture or industry? If it does not, nothing more is attached. Here the text says what the country should have, so the key's answer to the first question is **“Ordinary people against an elite, with the nation’s borders, culture or industry put first”**.
+It is the question from the two bank rescues. After the text has set ordinary people against those at the top, does it say anything about the country’s borders, culture or industry? If it does not, nothing more is attached. Here the text says what the country should have, so the answer to the first question is **“Ordinary people against an elite, with the nation’s borders, culture or industry put first”**.
 
 **Does it look like a case you know?**
 
-The key has given its answer. Now take a second look of a different kind: does this case look like one you know? It should bring back the steelworks leaflet. There too, a handful at the top had sold something away, and the text said that the country's own thing should stay in the country's hands.
+The questions have given their answer. Now take a second look of a different kind: does this case look like one you know? It should bring back the steelworks leaflet. There too, a handful at the top had sold something away, and the text said that the country's own thing should stay in the country's hands.
 
-Here the key and the likeness agree, so the answer stands. The key's question comes first, because it makes you point at words in the text. The likeness is only a second look. When the two disagree, do not pick the one you prefer. Go back to the key's question and find the words in the text that answer it. The second whole case shows how.
+Here the answer and the likeness agree, so it stands. The question comes first, because it makes you point at words in the text. The likeness is only a second look. When the two disagree, do not pick the one you prefer. Go back to the question and find the words in the text that answer it. The second whole case shows how.
 
 ### 40. A second whole case, where the story points the wrong way
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 40 of 42*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 40 of 42*
 
 [reviewers only: card kind `worked`, id `worked-torchlit`]
 
@@ -1418,7 +1418,7 @@ What it is for: sorts texts that speak for working people against owners, for a 
 
 Answer: **“The nation, or its ordinary people”**
 
-The speech has no split between working people and owners, and it holds up no old ways as the guide. What it puts first is the country: “Nothing is more sacred than this nation”. The key's answer is the one for a text that puts one people first.
+The speech has no split between working people and owners, and it holds up no old ways as the guide. What it puts first is the country: “Nothing is more sacred than this nation”. The answer is the one for a text that puts one people first.
 
 Still possible: all five names this unit teaches.
 
@@ -1462,23 +1462,23 @@ Still possible: **Nationalism**. Ruled out: **Fascism**, **National populism**, 
 
 For **Fascism** you must be able to point to this: the nation spoken for as one people (or its ordinary people set against an elite, with the nation put first), and elections, other parties or those who disagree done away with, silenced or broken, so that one leader or one movement speaks for everyone. The speech has the nation spoken for as one. It does not have the second half: nothing in it takes away elections, other parties or the right to disagree. It says the opposite, and invites the opposition to stand.
 
-It is the question from the two hospital speeches. Look at what the text wants done with elections, other parties and people who disagree. Are they left in place, or are they to go? Here the text leaves the vote in place, so the key's answer to the second question is **“Leave them in place”**, and the name is **Nationalism**.
+It is the question from the two hospital speeches. Look at what the text wants done with elections, other parties and people who disagree. Are they left in place, or are they to go? Here the text leaves the vote in place, so the answer to the second question is **“Leave them in place”**, and the name is **Nationalism**.
 
-This is the key's line, drawn at what a short text can show. People who study real movements weigh much more than one speech can show, and the key gives no verdict on any real party.
+This line is drawn at what a short text can show. People who study real movements weigh much more than one speech can show, and no verdict is given on any real party.
 
 **Does it look like a case you know?**
 
-Now the second look: does this case look like one you know? The torches, the uniforms and "we will be iron" may bring back the rally speech first, and the rally speech was **Fascism**. So here the likeness and the key seem to disagree.
+Now the second look: does this case look like one you know? The torches, the uniforms and "we will be iron" may bring back the rally speech first, and the rally speech was **Fascism**. So here the likeness and the answer seem to disagree.
 
-When that happens, go back to the key's question and find the words in the text that answer it. They are “Let them stand against us on the ninth of June, and let the voters judge between us”. The rally speech has nothing like them: it closes the other parties and the papers. The anniversary speech does: it says that every party is free to stand against the speaker. So the case this one really looks like is the anniversary speech, and the key's answer stands.
+When that happens, go back to the question and find the words in the text that answer it. They are “Let them stand against us on the ninth of June, and let the voters judge between us”. The rally speech has nothing like them: it closes the other parties and the papers. The anniversary speech does: it says that every party is free to stand against the speaker. So the case this one really looks like is the anniversary speech, and the answer stands.
 
 ### The drill
 
 The cards are out of view from here, and every case is new. The drill has five stages. Cases that are easy to mix up are placed next to each other on purpose. This is meant to feel harder than the questions between the cards: telling look-alikes apart side by side is what makes the difference stick. Two of the cases come from an earlier unit, without being labelled. Nothing here is graded. A miss only decides what comes back. What you miss is asked again before the drill ends, and every name comes back on later days with a new case.
 
-Some of these texts are loud and some are calm, and neither tells you the name. A few are built to look like a text you met on the cards and to be another. Go by the words that answer the key’s questions.
+Some of these texts are loud and some are calm, and neither tells you the name. A few are built to look like a text you met on the cards and to be another. Go by the words that answer the questions.
 
-#### Stage 1 of 5. The key’s answers are shown for each case. Give the name that goes with them. This stage practises one thing: which name goes with which answer.
+#### Stage 1 of 5. The answers are shown for each case. Give the name that goes with them. This stage practises one thing: which name goes with which answer.
 
 The names offered are the five this unit teaches: Nationalism / Fascism / National populism / Populism with nothing attached / Nazism.
 
@@ -1498,8 +1498,8 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **Nationalism**.” What does the text want done with elections and with those who disagree? **Leave them in place.** The plan is handed to parliament, and the opposition may change every line: “The plan goes to parliament for a vote, and the opposition may change every line of it”. The text leaves the vote and the opposition their say.
   - Why not **Fascism**: **Fascism** would also speak for everyone as one, but it would take parliament and the opposition their say away. Here the plan goes to them.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
-  - If you chose **Fascism**, the look-alike card’s lines follow: Both speak for everyone in the country as one people and put it first, and both can sound loud, proud and sure of themselves. In **Nationalism** the text lets the voters keep their say. In **Fascism** the key’s answer to the second question is **“Push them aside, so one leader or movement speaks for everyone”**: the text takes the voters’ say away, and with it the say of other parties and of anyone who objects. Look at what the text wants done with elections, other parties and people who disagree. Are they left in place, or are they to go?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose **Fascism**, the look-alike card’s lines follow: Both speak for everyone in the country as one people and put it first, and both can sound loud, proud and sure of themselves. In **Nationalism** the text lets the voters keep their say. In **Fascism** the answer to the second question is **“Push them aside, so one leader or movement speaks for everyone”**: the text takes the voters’ say away, and with it the say of other parties and of anyone who objects. Look at what the text wants done with elections, other parties and people who disagree. Are they left in place, or are they to go?
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “The nation first, with elections left alone” (one tap opens the card).
 
 **Drill item 2 of 49**
@@ -1518,8 +1518,8 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **Fascism**.” What does the text want done with elections and with those who disagree? **Push them aside, so one leader or movement speaks for everyone.** The councils are closed and critics are threatened: “The councils that argue about the plan are dissolved today, and anyone who speaks against it will answer to the Movement”. That takes away the say of everyone who disagrees, so that one voice is left.
   - Why not **Nationalism**: **Nationalism** would speak for everyone in the same way but leave the councils and the right to speak against the plan in place. Here they are dissolved.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
-  - If you chose **Nationalism**, the look-alike card’s lines follow: Both speak for everyone in the country as one people and put it first, and both can sound loud, proud and sure of themselves. In **Nationalism** the text lets the voters keep their say. In **Fascism** the key’s answer to the second question is **“Push them aside, so one leader or movement speaks for everyone”**: the text takes the voters’ say away, and with it the say of other parties and of anyone who objects. Look at what the text wants done with elections, other parties and people who disagree. Are they left in place, or are they to go?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose **Nationalism**, the look-alike card’s lines follow: Both speak for everyone in the country as one people and put it first, and both can sound loud, proud and sure of themselves. In **Nationalism** the text lets the voters keep their say. In **Fascism** the answer to the second question is **“Push them aside, so one leader or movement speaks for everyone”**: the text takes the voters’ say away, and with it the say of other parties and of anyone who objects. Look at what the text wants done with elections, other parties and people who disagree. Are they left in place, or are they to go?
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “The nation as one, with elections pushed aside for one leader” (one tap opens the card).
 
 **Drill item 3 of 49**
@@ -1539,7 +1539,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Populism with nothing attached**: **Populism with nothing attached** would stop at anger at the few at the top. This text goes on to say that the country's own industry should come first: a mill that makes Calder cloth for Calder.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Populism with nothing attached**, the look-alike card’s lines follow: Both set ordinary people against a few at the top, and both leave the vote in place. The difference is what else the text asks for. **National populism** also wants the country’s borders, culture or industry put first, so its answer is **“Ordinary people against an elite, with the nation’s borders, culture or industry put first”**. **Populism with nothing attached** asks for nothing more than getting those at the top out of the way, so its answer is **“Ordinary people against an elite, and nothing more”**. After the text has set ordinary people against those at the top, does it say anything about the country’s borders, culture or industry? If it does not, nothing more is attached.
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “Ordinary people against an elite, with the nation put first” (one tap opens the card).
 
 **Drill item 4 of 49**
@@ -1559,7 +1559,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **National populism**: **National populism** would go on to say what the country's industry, culture or borders should be. This text names no such thing, and adds nothing to its anger at those at the top.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **National populism**, the look-alike card’s lines follow: Both set ordinary people against a few at the top, and both leave the vote in place. The difference is what else the text asks for. **National populism** also wants the country’s borders, culture or industry put first, so its answer is **“Ordinary people against an elite, with the nation’s borders, culture or industry put first”**. **Populism with nothing attached** asks for nothing more than getting those at the top out of the way, so its answer is **“Ordinary people against an elite, and nothing more”**. After the text has set ordinary people against those at the top, does it say anything about the country’s borders, culture or industry? If it does not, nothing more is attached.
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “Ordinary people against an elite, and nothing more” (one tap opens the card).
 
 **Drill item 5 of 49**
@@ -1578,8 +1578,8 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **Fascism**.” What does the text want done with elections and with those who disagree? **Push them aside, so one leader or movement speaks for everyone.** The councils are closed and parents who complain will be reported: “the school councils are closed. Parents who complain to the papers will be reported to the Party”. That takes away the say of those who disagree.
   - Why not **Nazism**: **Nazism** would sort people by blood into higher and lower peoples. This order speaks of one people and ranks nobody, so the first question gives **“The whole nation, as one people”**.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
-  - If you chose **Nazism**, the look-alike card’s lines follow: Both can end the vote, shut out other parties and silence critics, and both can be full of marches, uniforms and talk of one nation. In **Fascism** the people is the whole nation, or the country’s ordinary people against an *elite*, and nobody is ranked by blood. In **Nazism** peoples are ranked by blood or birth and the text’s own is placed above the rest. The key goes by that ranking alone: a text that ranks peoples by blood gets **“One people by blood, ranked above the others”**, whatever it says about the vote. Does the text rank peoples by blood or birth, with its own above the others? Or does it speak of one nation, or of its ordinary people, with nobody ranked by blood?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose **Nazism**, the look-alike card’s lines follow: Both can end the vote, shut out other parties and silence critics, and both can be full of marches, uniforms and talk of one nation. In **Fascism** the people is the whole nation, or the country’s ordinary people against an *elite*, and nobody is ranked by blood. In **Nazism** peoples are ranked by blood or birth and the text’s own is placed above the rest. The answer goes by that ranking alone: a text that ranks peoples by blood gets **“One people by blood, ranked above the others”**, whatever it says about the vote. Does the text rank peoples by blood or birth, with its own above the others? Or does it speak of one nation, or of its ordinary people, with nobody ranked by blood?
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “The nation as one, with elections pushed aside for one leader” (one tap opens the card).
 
 **Drill item 6 of 49**
@@ -1598,8 +1598,8 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **Nazism**.” What does the text want done with elections and with those who disagree? **Leave them in place.** The League asks for votes: “Vote for the League in the spring”. It does not ask for the vote to be taken away. For this name the ranking has already decided, so either answer to this question leaves it.
   - Why not **Fascism**: **Fascism** speaks for the nation as one, or for its people against a few at the top, without ranking peoples by blood. This text ranks them, and the first question settles it.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
-  - If you chose **Fascism**, the look-alike card’s lines follow: Both can end the vote, shut out other parties and silence critics, and both can be full of marches, uniforms and talk of one nation. In **Fascism** the people is the whole nation, or the country’s ordinary people against an *elite*, and nobody is ranked by blood. In **Nazism** peoples are ranked by blood or birth and the text’s own is placed above the rest. The key goes by that ranking alone: a text that ranks peoples by blood gets **“One people by blood, ranked above the others”**, whatever it says about the vote. Does the text rank peoples by blood or birth, with its own above the others? Or does it speak of one nation, or of its ordinary people, with nobody ranked by blood?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose **Fascism**, the look-alike card’s lines follow: Both can end the vote, shut out other parties and silence critics, and both can be full of marches, uniforms and talk of one nation. In **Fascism** the people is the whole nation, or the country’s ordinary people against an *elite*, and nobody is ranked by blood. In **Nazism** peoples are ranked by blood or birth and the text’s own is placed above the rest. The answer goes by that ranking alone: a text that ranks peoples by blood gets **“One people by blood, ranked above the others”**, whatever it says about the vote. Does the text rank peoples by blood or birth, with its own above the others? Or does it speak of one nation, or of its ordinary people, with nobody ranked by blood?
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “One people by blood, ranked above the others” (one tap opens the card).
 
 #### Stage 2 of 5. One question at a time.
@@ -1619,7 +1619,7 @@ Shown to you, with the words that decide each answer marked:
 
 - If you are right: “Right: **The whole nation, as one people.**” The minister speaks for everyone, wherever they live and whatever they do, as one: “This passport belongs to every one of us, whatever we do, wherever we live”. Nobody is named as the other side. This answer leads to **Nationalism** and **Fascism**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The first of the two questions: whom the text speaks for, and against whom” (one tap opens the card).
 
 **Drill item 8 of 49**
@@ -1638,7 +1638,7 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **Ordinary people against an elite, with the nation’s borders, culture or industry put first.**” The text sets the country's fishing people against a few at the top, the ministers and the bankers, and wants the country's own industry put first: “The ministers in the capital and the bankers who lend to them have taxed our fishing boats off the sea” and “Our fish should be landed by our own boats”. This answer leads to **National populism** and **Fascism**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **Ordinary people against an elite, and nothing more**: **Populism with nothing attached** would stop at the anger at those at the top. This text goes on to say that our fish should be landed by our own boats, which puts the country's industry first.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The first of the two questions: whom the text speaks for, and against whom” (one tap opens the card).
 
 **Drill item 9 of 49**
@@ -1656,7 +1656,7 @@ Shown to you, with the words that decide each answer marked:
 
 - If you are right: “Right: **Ordinary people against an elite, and nothing more.**” The sign names the mayor and the councillors as the other side, and asks for no more than that: “The mayor and the councillors are laughing at us” and “They built themselves a stadium and cut the buses”. It names no borders, culture or industry to put first, and ranks nobody. This answer leads to **Populism with nothing attached**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The first of the two questions: whom the text speaks for, and against whom” (one tap opens the card).
 
 **Drill item 10 of 49**
@@ -1674,7 +1674,7 @@ Shown to you, with the words that decide each answer marked:
 
 - If you are right: “Right: **One people by blood, ranked above the others.**” The notice ranks people by birth, its own above the rest: “their blood is nobler than the blood of those who came after”. That is the answer to the first question, whatever it says about the vote. This answer leads to **Nazism**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The first of the two questions: whom the text speaks for, and against whom” (one tap opens the card).
 
 **Drill item 11 of 49**
@@ -1690,7 +1690,7 @@ Shown to you, with the words that decide each answer marked:
 
 - If you are right: “Right: **Push them aside, so one leader or movement speaks for everyone.**” The notice closes assemblies and rival parties and treats opponents as enemies: “Assemblies and rival parties are closed from this morning. Those who gather to oppose the Leader will be treated as enemies of the people”. That takes away the say of everyone who disagrees. This answer leads to **Fascism** and **Nazism**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The second of the two questions: elections and those who disagree” (one tap opens the card).
 
 **Drill item 12 of 49**
@@ -1706,7 +1706,7 @@ Shown to you, with the words that decide each answer marked:
 
 - If you are right: “Right: **Leave them in place.**” The letter calls on people to vote: “Come to the vote in May and send a message”. It does not ask for the vote, other parties or critics to go. This answer leads to **Nationalism**, **National populism**, **Populism with nothing attached** and **Nazism**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The second of the two questions: elections and those who disagree” (one tap opens the card).
 
 **Drill item 13 of 49**
@@ -1722,7 +1722,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Shown as soon as you answer**
 
-- The answer is: “Look at what the text wants done with elections, other parties and people who disagree. Are they left in place, or are they to go?” Both speak for everyone in the country as one people and put it first, and both can sound loud, proud and sure of themselves. In **Nationalism** the text lets the voters keep their say. In **Fascism** the key’s answer to the second question is **“Push them aside, so one leader or movement speaks for everyone”**: the text takes the voters’ say away, and with it the say of other parties and of anyone who objects.
+- The answer is: “Look at what the text wants done with elections, other parties and people who disagree. Are they left in place, or are they to go?” Both speak for everyone in the country as one people and put it first, and both can sound loud, proud and sure of themselves. In **Nationalism** the text lets the voters keep their say. In **Fascism** the answer to the second question is **“Push them aside, so one leader or movement speaks for everyone”**: the text takes the voters’ say away, and with it the say of other parties and of anyone who objects.
 - If you chose “Does the text ask the voters to remove those at the top? Or does it go further, and take away elections, other parties or the right to object?”: that question separates **National populism** and **Fascism**.
 - If you chose “Is anyone inside the country named as the other side, a few at the top set against everyone else? Or does the text speak for everyone alike?”: that question separates **Nationalism** and **National populism**.
 - If you chose “Does the text speak for everyone, or set ordinary people against a few at the top? If it does the second, does it add anything about what the country itself should have?”: that question separates **Nationalism** and **Populism with nothing attached**.
@@ -1744,7 +1744,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Shown as soon as you answer**
 
-- The answer is: “Is anyone inside the country named as the other side, a few at the top set against everyone else? Or does the text speak for everyone alike?” Both put the nation first, both leave the vote in place, and both can be angry about the way the country is run. In **Nationalism** the text speaks for everyone, and nobody inside the country is named as the other side. In **National populism** the text speaks for the country’s ordinary people against an *elite*, so that someone inside the country is the other side. When a case shows both **“The whole nation, as one people”** and the country’s ordinary people set against an elite at the top, the key’s answer is **“Ordinary people against an elite, with the nation’s borders, culture or industry put first”**.
+- The answer is: “Is anyone inside the country named as the other side, a few at the top set against everyone else? Or does the text speak for everyone alike?” Both put the nation first, both leave the vote in place, and both can be angry about the way the country is run. In **Nationalism** the text speaks for everyone, and nobody inside the country is named as the other side. In **National populism** the text speaks for the country’s ordinary people against an *elite*, so that someone inside the country is the other side. When a case shows both **“The whole nation, as one people”** and the country’s ordinary people set against an elite at the top, the answer is **“Ordinary people against an elite, with the nation’s borders, culture or industry put first”**.
 - If you chose “Look at what the text wants done with elections, other parties and people who disagree. Are they left in place, or are they to go?”: that question separates **Nationalism** and **Fascism**.
 - If you chose “Does the text ask the voters to remove those at the top? Or does it go further, and take away elections, other parties or the right to object?”: that question separates **National populism** and **Fascism**.
 - If you chose “Does the text speak for everyone, or set ordinary people against a few at the top? If it does the second, does it add anything about what the country itself should have?”: that question separates **Nationalism** and **Populism with nothing attached**.
@@ -1787,7 +1787,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Shown as soon as you answer**
 
-- The answer is: “Does the text rank peoples by blood or birth, with its own above the others? Or does it speak of one nation, or of its ordinary people, with nobody ranked by blood?” Both can end the vote, shut out other parties and silence critics, and both can be full of marches, uniforms and talk of one nation. In **Fascism** the people is the whole nation, or the country’s ordinary people against an *elite*, and nobody is ranked by blood. In **Nazism** peoples are ranked by blood or birth and the text’s own is placed above the rest. The key goes by that ranking alone: a text that ranks peoples by blood gets **“One people by blood, ranked above the others”**, whatever it says about the vote. When a case shows both **“The whole nation, as one people”** and peoples ranked higher and lower by blood, the key’s answer is **“One people by blood, ranked above the others”**.
+- The answer is: “Does the text rank peoples by blood or birth, with its own above the others? Or does it speak of one nation, or of its ordinary people, with nobody ranked by blood?” Both can end the vote, shut out other parties and silence critics, and both can be full of marches, uniforms and talk of one nation. In **Fascism** the people is the whole nation, or the country’s ordinary people against an *elite*, and nobody is ranked by blood. In **Nazism** peoples are ranked by blood or birth and the text’s own is placed above the rest. The answer goes by that ranking alone: a text that ranks peoples by blood gets **“One people by blood, ranked above the others”**, whatever it says about the vote. When a case shows both **“The whole nation, as one people”** and peoples ranked higher and lower by blood, the answer is **“One people by blood, ranked above the others”**.
 - If you chose “Look at what the text wants done with elections, other parties and people who disagree. Are they left in place, or are they to go?”: that question separates **Nationalism** and **Fascism**.
 - If you chose “Does the text ask the voters to remove those at the top? Or does it go further, and take away elections, other parties or the right to object?”: that question separates **National populism** and **Fascism**.
 - If you chose “Does the text rank peoples by blood or birth, with its own above the others? Or does it speak for everyone in the country as equals?”: that question separates **Nationalism** and **Nazism**.
@@ -1797,20 +1797,20 @@ Shown to you, with the words that decide each answer marked:
 
 **Drill item 17 of 49**
 
-**You are asked:** You cannot tell whether a case is **Nationalism** or **Fascism**. Which of the key’s questions tells these two apart?
+**You are asked:** You cannot tell whether a case is **Nationalism** or **Fascism**. Which question tells these two apart?
 
 - Who does the text speak for, and against whom?
 - What does the text want done with elections and with those who disagree?
 
 **Shown as soon as you answer**
 
-- The answer is: **What does the text want done with elections and with those who disagree?** Both speak for everyone in the country as one people and put it first, and both can sound loud, proud and sure of themselves. In **Nationalism** the text lets the voters keep their say. In **Fascism** the key’s answer to the second question is **“Push them aside, so one leader or movement speaks for everyone”**: the text takes the voters’ say away, and with it the say of other parties and of anyone who objects. **Nationalism**: Leave them in place. **Fascism**: Push them aside, so one leader or movement speaks for everyone.
+- The answer is: **What does the text want done with elections and with those who disagree?** Both speak for everyone in the country as one people and put it first, and both can sound loud, proud and sure of themselves. In **Nationalism** the text lets the voters keep their say. In **Fascism** the answer to the second question is **“Push them aside, so one leader or movement speaks for everyone”**: the text takes the voters’ say away, and with it the say of other parties and of anyone who objects. **Nationalism**: Leave them in place. **Fascism**: Push them aside, so one leader or movement speaks for everyone.
 - If you chose “Who does the text speak for, and against whom?”: “You chose that question. Both of these give the answer The whole nation, as one people, so that question does not separate them.”
 - Taught on: “The second of the two questions: elections and those who disagree” (one tap opens the card).
 
 **Drill item 18 of 49**
 
-**You are asked:** You cannot tell whether a case is **National populism** or **Fascism**. Which of the key’s questions tells these two apart?
+**You are asked:** You cannot tell whether a case is **National populism** or **Fascism**. Which question tells these two apart?
 
 - Who does the text speak for, and against whom?
 - What does the text want done with elections and with those who disagree?
@@ -1823,7 +1823,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Drill item 19 of 49**
 
-**You are asked:** You cannot tell whether a case is **Nationalism** or **National populism**. Which of the key’s questions tells these two apart?
+**You are asked:** You cannot tell whether a case is **Nationalism** or **National populism**. Which question tells these two apart?
 
 - Who does the text speak for, and against whom?
 - What does the text want done with elections and with those who disagree?
@@ -1836,14 +1836,14 @@ Shown to you, with the words that decide each answer marked:
 
 **Drill item 20 of 49**
 
-**You are asked:** You cannot tell whether a case is **Fascism** or **Nazism**. Which of the key’s questions tells these two apart?
+**You are asked:** You cannot tell whether a case is **Fascism** or **Nazism**. Which question tells these two apart?
 
 - Who does the text speak for, and against whom?
 - What does the text want done with elections and with those who disagree?
 
 **Shown as soon as you answer**
 
-- The answer is: **Who does the text speak for, and against whom?** Both can end the vote, shut out other parties and silence critics, and both can be full of marches, uniforms and talk of one nation. In **Fascism** the people is the whole nation, or the country’s ordinary people against an *elite*, and nobody is ranked by blood. In **Nazism** peoples are ranked by blood or birth and the text’s own is placed above the rest. The key goes by that ranking alone: a text that ranks peoples by blood gets **“One people by blood, ranked above the others”**, whatever it says about the vote. **Fascism**: The whole nation, as one people or Ordinary people against an elite, with the nation’s borders, culture or industry put first. **Nazism**: One people by blood, ranked above the others.
+- The answer is: **Who does the text speak for, and against whom?** Both can end the vote, shut out other parties and silence critics, and both can be full of marches, uniforms and talk of one nation. In **Fascism** the people is the whole nation, or the country’s ordinary people against an *elite*, and nobody is ranked by blood. In **Nazism** peoples are ranked by blood or birth and the text’s own is placed above the rest. The answer goes by that ranking alone: a text that ranks peoples by blood gets **“One people by blood, ranked above the others”**, whatever it says about the vote. **Fascism**: The whole nation, as one people or Ordinary people against an elite, with the nation’s borders, culture or industry put first. **Nazism**: One people by blood, ranked above the others.
 - If you chose “What does the text want done with elections and with those who disagree?”: “You chose that question. Both of these give the answer Push them aside, so one leader or movement speaks for everyone, so that question does not separate them.”
 - Taught on: “The first of the two questions: whom the text speaks for, and against whom” (one tap opens the card).
 
@@ -1959,12 +1959,12 @@ Shown to you, with the words that decide each answer marked:
 **Shown as soon as you answer**
 
 - If you are right: “Right: **Working people, against those who own the businesses.**” The text sorts people into those who build and those who own and sell, and takes the first side: “The developer who owns the site will sell them for twice what they cost to build” and “which of the two sides it is on: the people who build, not the people who sell”.
-- If you miss: “The answer is …”, the same reason, and then the line built from the key for the answer you chose.
-- Then, right or wrong: “This case leaves the part of the key you have been taught. The questions that follow this answer come in a part of the course you have not reached, so the case stops here.”
+- If you miss: “The answer is …”, the same reason, and then the line built from the answers’ own wording for the answer you chose.
+- Then, right or wrong: “The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.”
 
-#### Stage 3 of 5. The first answer is shown. Answer the rest, then give the name. From here on your route is marked as well as the name: a right name reached by a wrong answer on the way counts as a miss.
+#### Stage 3 of 5. The first answer is shown. Answer the rest, then give the name. From here on your answers on the way are marked as well as the name: a right name reached by a wrong answer counts as a miss.
 
-Each question is shown with all of its answers from the key, in the key’s order, and the names offered are the five this unit teaches.
+Each question is shown with all of its answers, in order, and the names offered are the five this unit teaches.
 
 **Drill item 27 of 49**
 
@@ -1981,10 +1981,10 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **Nationalism**.” What does the text want done with elections and with those who disagree? **Leave them in place.** The committee reports to parliament and any member may question it: “The committee will report to parliament in October, and any member may question it”. The text leaves parliament its say.
   - Why not **National populism**: **National populism** would set the country's ordinary people against a few at the top. Nobody in the text is named as the other side.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **National populism**, the look-alike card’s lines follow: Both put the nation first, both leave the vote in place, and both can be angry about the way the country is run. In **Nationalism** the text speaks for everyone, and nobody inside the country is named as the other side. In **National populism** the text speaks for the country’s ordinary people against an *elite*, so that someone inside the country is the other side. Is anyone inside the country named as the other side, a few at the top set against everyone else? Or does the text speak for everyone alike?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “The nation first, with elections left alone” (one tap opens the card).
 
 **Drill item 28 of 49**
@@ -2002,10 +2002,10 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **National populism**.” What does the text want done with elections and with those who disagree? **Leave them in place.** The remedy is an election: “Elect us in June and we will bring it back”.
   - Why not **Nationalism**: **Nationalism** would speak for everyone in the country with nobody named as the other side. This text names the editors.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Nationalism**, the look-alike card’s lines follow: Both put the nation first, both leave the vote in place, and both can be angry about the way the country is run. In **Nationalism** the text speaks for everyone, and nobody inside the country is named as the other side. In **National populism** the text speaks for the country’s ordinary people against an *elite*, so that someone inside the country is the other side. Is anyone inside the country named as the other side, a few at the top set against everyone else? Or does the text speak for everyone alike?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Ordinary people against an elite, with the nation put first” (one tap opens the card).
 
 **Drill item 29 of 49**
@@ -2023,10 +2023,10 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **Fascism**.” What does the text want done with elections and with those who disagree? **Push them aside, so one leader or movement speaks for everyone.** Critics are dismissed and journals closed: “Doctors who criticise the Leader's health plan are dismissed, and the medical journals that print them are closed”. That takes away the say of those who disagree.
   - Why not **Nationalism**: **Nationalism** would speak for the whole nation in the same way and leave critics and journals alone. Here they are removed.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **Nationalism**, the look-alike card’s lines follow: Both speak for everyone in the country as one people and put it first, and both can sound loud, proud and sure of themselves. In **Nationalism** the text lets the voters keep their say. In **Fascism** the key’s answer to the second question is **“Push them aside, so one leader or movement speaks for everyone”**: the text takes the voters’ say away, and with it the say of other parties and of anyone who objects. Look at what the text wants done with elections, other parties and people who disagree. Are they left in place, or are they to go?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **Nationalism**, the look-alike card’s lines follow: Both speak for everyone in the country as one people and put it first, and both can sound loud, proud and sure of themselves. In **Nationalism** the text lets the voters keep their say. In **Fascism** the answer to the second question is **“Push them aside, so one leader or movement speaks for everyone”**: the text takes the voters’ say away, and with it the say of other parties and of anyone who objects. Look at what the text wants done with elections, other parties and people who disagree. Are they left in place, or are they to go?
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “The nation as one, with elections pushed aside for one leader” (one tap opens the card).
 
 **Drill item 30 of 49**
@@ -2044,15 +2044,15 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **Nazism**.” What does the text want done with elections and with those who disagree? **Leave them in place.** The Crown goes to the voters: “The Crown will be put to the voters on the fourth”. The vote is left in place, and for this name that changes nothing: the ranking has already decided it.
   - Why not **Populism with nothing attached**: **Populism with nothing attached** draws one line only, between ordinary people and a few at the top. This notice draws a line by blood between peoples, higher and lower.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Populism with nothing attached**, the look-alike card’s lines follow: Both are angry, and both say that the wrong people are in charge. In **Populism with nothing attached** the only line drawn is between ordinary people and an *elite*. In **Nazism** the line is drawn by blood or birth, between peoples ranked higher and lower. Is the only line the one between ordinary people and a few at the top? Or are peoples ranked by blood or birth?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “One people by blood, ranked above the others” (one tap opens the card).
 
-#### Stage 4 of 5. No help. Answer every question in the key’s order, then give the name.
+#### Stage 4 of 5. No help. Answer every question in order, then give the name.
 
-Each question is shown with all of its answers from the key, in the key’s order, and the names offered are the five this unit teaches.
+Each question is shown with all of its answers, in order, and the names offered are the five this unit teaches.
 
 **Drill item 31 of 49**
 
@@ -2067,10 +2067,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who or what does the text put first? **The nation, or its ordinary people.** The text puts one country first: “We are one country, and it is our first loyalty”.
   - Who does the text speak for, and against whom? **The whole nation, as one people.** The treasurer speaks for farmers, clerks and sailors from every region as one: “Farmers, clerks and sailors, from every region: this coin will pass through all your hands”. Nobody is named as the other side.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **Fascism**, the look-alike card’s lines follow: Both speak for everyone in the country as one people and put it first, and both can sound loud, proud and sure of themselves. In **Nationalism** the text lets the voters keep their say. In **Fascism** the key’s answer to the second question is **“Push them aside, so one leader or movement speaks for everyone”**: the text takes the voters’ say away, and with it the say of other parties and of anyone who objects. Look at what the text wants done with elections, other parties and people who disagree. Are they left in place, or are they to go?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **Fascism**, the look-alike card’s lines follow: Both speak for everyone in the country as one people and put it first, and both can sound loud, proud and sure of themselves. In **Nationalism** the text lets the voters keep their say. In **Fascism** the answer to the second question is **“Push them aside, so one leader or movement speaks for everyone”**: the text takes the voters’ say away, and with it the say of other parties and of anyone who objects. Look at what the text wants done with elections, other parties and people who disagree. Are they left in place, or are they to go?
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the treasurer had said that the opposition would be silenced, the answer to the second question would change and the name would be **Fascism**. If the speech had set the country's ordinary people against a few at the top, it would be **National populism**.
 - Taught on: “The nation first, with elections left alone” (one tap opens the card).
 
@@ -2087,10 +2087,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who or what does the text put first? **The nation, or its ordinary people.** The text puts one people first: “Vessany is one people with one will, and I am the voice of that will”.
   - Who does the text speak for, and against whom? **The whole nation, as one people.** The Leader speaks for the whole of Vessany as one people: “Vessany is one people with one will, and I am the voice of that will”. Nobody is ranked by blood.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **Nationalism**, the look-alike card’s lines follow: Both speak for everyone in the country as one people and put it first, and both can sound loud, proud and sure of themselves. In **Nationalism** the text lets the voters keep their say. In **Fascism** the key’s answer to the second question is **“Push them aside, so one leader or movement speaks for everyone”**: the text takes the voters’ say away, and with it the say of other parties and of anyone who objects. Look at what the text wants done with elections, other parties and people who disagree. Are they left in place, or are they to go?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **Nationalism**, the look-alike card’s lines follow: Both speak for everyone in the country as one people and put it first, and both can sound loud, proud and sure of themselves. In **Nationalism** the text lets the voters keep their say. In **Fascism** the answer to the second question is **“Push them aside, so one leader or movement speaks for everyone”**: the text takes the voters’ say away, and with it the say of other parties and of anyone who objects. Look at what the text wants done with elections, other parties and people who disagree. Are they left in place, or are they to go?
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If parliament were to meet again and the papers were left alone, the name would be **Nationalism**. If the speech ranked peoples by blood, it would be **Nazism**.
 - Taught on: “The nation as one, with elections pushed aside for one leader” (one tap opens the card).
 
@@ -2107,10 +2107,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who or what does the text put first? **The nation, or its ordinary people.** The text puts one people first, marked out by its own stories and voice: “Marren's stage should tell Marren's stories, in Marren's own voice”.
   - Who does the text speak for, and against whom? **Ordinary people against an elite, with the nation’s borders, culture or industry put first.** It sets the town's people against a few at the top, the ministers and the officials, and wants the country's own culture put first: “The ministers and the arts officials have sold the old Marren theatre to a foreign chain” and “Marren's stage should tell Marren's stories, in Marren's own voice”.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Populism with nothing attached**, the look-alike card’s lines follow: Both set ordinary people against a few at the top, and both leave the vote in place. The difference is what else the text asks for. **National populism** also wants the country’s borders, culture or industry put first, so its answer is **“Ordinary people against an elite, with the nation’s borders, culture or industry put first”**. **Populism with nothing attached** asks for nothing more than getting those at the top out of the way, so its answer is **“Ordinary people against an elite, and nothing more”**. After the text has set ordinary people against those at the top, does it say anything about the country’s borders, culture or industry? If it does not, nothing more is attached.
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the poster stopped after the anger at the ministers and officials, it would be **Populism with nothing attached**. If it said the other parties should be closed, it would be **Fascism**.
 - Taught on: “Ordinary people against an elite, with the nation put first” (one tap opens the card).
 
@@ -2127,10 +2127,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who or what does the text put first? **The nation, or its ordinary people.** The pamphlet speaks for the ordinary people of one country: “The ordinary people of this country were left with the bill”.
   - Who does the text speak for, and against whom? **Ordinary people against an elite, and nothing more.** It sets ordinary people against a few at the top and stops there: “The fund managers and the ministers who sit with them lost the pension money and kept their bonuses” and “send every one of them home”. It names no borders, culture or industry to put first.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **National populism**, the look-alike card’s lines follow: Both set ordinary people against a few at the top, and both leave the vote in place. The difference is what else the text asks for. **National populism** also wants the country’s borders, culture or industry put first, so its answer is **“Ordinary people against an elite, with the nation’s borders, culture or industry put first”**. **Populism with nothing attached** asks for nothing more than getting those at the top out of the way, so its answer is **“Ordinary people against an elite, and nothing more”**. After the text has set ordinary people against those at the top, does it say anything about the country’s borders, culture or industry? If it does not, nothing more is attached.
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the pamphlet went on to say that the country's pensions should be invested only in its own industry, it would be **National populism**.
 - Taught on: “Ordinary people against an elite, and nothing more” (one tap opens the card).
 
@@ -2147,10 +2147,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who or what does the text put first? **The nation, or its ordinary people.** The programme puts one people first, marked out by its blood: “The land along the frontier belongs to the old blood of Dorn”.
   - Who does the text speak for, and against whom? **One people by blood, ranked above the others.** It sorts peoples into the old blood and "the lower peoples", and places its own above: “The land along the frontier belongs to the old blood of Dorn, who held it for a thousand years, and not to the lower peoples who farm it for them”.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **Fascism**, the look-alike card’s lines follow: Both can end the vote, shut out other parties and silence critics, and both can be full of marches, uniforms and talk of one nation. In **Fascism** the people is the whole nation, or the country’s ordinary people against an *elite*, and nobody is ranked by blood. In **Nazism** peoples are ranked by blood or birth and the text’s own is placed above the rest. The key goes by that ranking alone: a text that ranks peoples by blood gets **“One people by blood, ranked above the others”**, whatever it says about the vote. Does the text rank peoples by blood or birth, with its own above the others? Or does it speak of one nation, or of its ordinary people, with nobody ranked by blood?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **Fascism**, the look-alike card’s lines follow: Both can end the vote, shut out other parties and silence critics, and both can be full of marches, uniforms and talk of one nation. In **Fascism** the people is the whole nation, or the country’s ordinary people against an *elite*, and nobody is ranked by blood. In **Nazism** peoples are ranked by blood or birth and the text’s own is placed above the rest. The answer goes by that ranking alone: a text that ranks peoples by blood gets **“One people by blood, ranked above the others”**, whatever it says about the vote. Does the text rank peoples by blood or birth, with its own above the others? Or does it speak of one nation, or of its ordinary people, with nobody ranked by blood?
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the programme asked the voters for power and left other parties alone, it would still be **Nazism**: the ranking decides it. If it dropped the ranking and spoke for everyone as one, it would be **Fascism**.
 - Taught on: “One people by blood, ranked above the others” (one tap opens the card).
 
@@ -2167,10 +2167,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who or what does the text put first? **The nation, or its ordinary people.** The prime minister puts one people first: “we are one people and we do not leave our own to fall”.
   - Who does the text speak for, and against whom? **The whole nation, as one people.** The appeal speaks for every town and every trade, rich and poor, as one: “Every town, every trade, rich or poor, will pay into the relief fund, because we are one people and we do not leave our own to fall”. Nobody is named as the other side.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Nazism**, the look-alike card’s lines follow: Both put one people first, and both can leave the vote in place. In **Nationalism** everyone in the country is spoken for as one, and nobody is ranked below anybody else. In **Nazism** the text divides people by descent into peoples worth more and peoples worth less, and puts its own on top. Does the text rank peoples by blood or birth, with its own above the others? Or does it speak for everyone in the country as equals?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the appeal ranked the people of the east above the rest by birth, the name would be **Nazism**. If it said that the opposition must be silenced, it would be **Fascism**.
 - Taught on: “The nation first, with elections left alone” (one tap opens the card).
 
@@ -2187,10 +2187,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who or what does the text put first? **The nation, or its ordinary people.** The decree puts one people first: “Corvale is one people, and the Committee speaks for all of it”.
   - Who does the text speak for, and against whom? **The whole nation, as one people.** The Committee speaks for all of Corvale as one people: “Corvale is one people, and the Committee speaks for all of it”. Nobody is named as the enemy and nobody is ranked by blood.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **National populism**, the look-alike card’s lines follow: Both can blame a few at the top, and both can ask for the country’s industry, culture or borders to come first. On the first question both can have the answer **“Ordinary people against an elite, with the nation’s borders, culture or industry put first”**. They part on the second: **National populism** leaves the vote in place, and **Fascism** gets **“Push them aside, so one leader or movement speaks for everyone”**. The first replaces those at the top by voting them out. The second takes the vote away. Does the text ask the voters to remove those at the top? Or does it go further, and take away elections, other parties or the right to object?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the decree set elections for a fixed date and left the bank clerks free to talk, the name would be **Nationalism**.
 - Taught on: “The nation as one, with elections pushed aside for one leader” (one tap opens the card).
 
@@ -2207,10 +2207,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who or what does the text put first? **The nation, or its ordinary people.** The text puts one people first, marked out by its own language: “Our children should learn in our own language, from our own books”.
   - Who does the text speak for, and against whom? **Ordinary people against an elite, with the nation’s borders, culture or industry put first.** It sets the country's children and parents against a few at the top, the ministers and the professors, and wants the country's own language and books put first: “The ministers in the capital and the professors who advise them have let our schools teach in a foreign tongue” and “Our children should learn in our own language, from our own books”.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Populism with nothing attached**, the look-alike card’s lines follow: Both set ordinary people against a few at the top, and both leave the vote in place. The difference is what else the text asks for. **National populism** also wants the country’s borders, culture or industry put first, so its answer is **“Ordinary people against an elite, with the nation’s borders, culture or industry put first”**. **Populism with nothing attached** asks for nothing more than getting those at the top out of the way, so its answer is **“Ordinary people against an elite, and nothing more”**. After the text has set ordinary people against those at the top, does it say anything about the country’s borders, culture or industry? If it does not, nothing more is attached.
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the speech stopped at the anger at the ministers and professors, it would be **Populism with nothing attached**. If it said that parents who complained would be reported, it would be **Fascism**.
 - Taught on: “Ordinary people against an elite, with the nation put first” (one tap opens the card).
 
@@ -2227,10 +2227,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who or what does the text put first? **The nation, or its ordinary people.** The leaflet speaks for the ordinary people of one country: “Ordinary commuters in this country”.
   - Who does the text speak for, and against whom? **Ordinary people against an elite, and nothing more.** It sets ordinary commuters against a few at the top, the bus company's managers and the ministers: “The people in charge of the bus company and the ministers who protect them have put the fares up again”. It adds nothing about the country's borders, culture or industry.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **National populism**, the look-alike card’s lines follow: Both set ordinary people against a few at the top, and both leave the vote in place. The difference is what else the text asks for. **National populism** also wants the country’s borders, culture or industry put first, so its answer is **“Ordinary people against an elite, with the nation’s borders, culture or industry put first”**. **Populism with nothing attached** asks for nothing more than getting those at the top out of the way, so its answer is **“Ordinary people against an elite, and nothing more”**. After the text has set ordinary people against those at the top, does it say anything about the country’s borders, culture or industry? If it does not, nothing more is attached.
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the leaflet went on to say that the buses should be built only in the country's own factories, it would be **National populism**.
 - Taught on: “Ordinary people against an elite, and nothing more” (one tap opens the card).
 
@@ -2247,11 +2247,11 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who or what does the text put first? **The nation, or its ordinary people.** The president puts one country first: “one will to defend this country”.
   - Who does the text speak for, and against whom? **The whole nation, as one people.** He speaks for everyone, the whole country in rows, as one: “Our sons and daughters stand here in rows, as one. We have one flag, one anthem and one will to defend this country”. Nobody inside it is named as the other side.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **Fascism**, the look-alike card’s lines follow: Both speak for everyone in the country as one people and put it first, and both can sound loud, proud and sure of themselves. In **Nationalism** the text lets the voters keep their say. In **Fascism** the key’s answer to the second question is **“Push them aside, so one leader or movement speaks for everyone”**: the text takes the voters’ say away, and with it the say of other parties and of anyone who objects. Look at what the text wants done with elections, other parties and people who disagree. Are they left in place, or are they to go?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *The rally speech*, which was **Fascism**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **Fascism**, the look-alike card’s lines follow: Both speak for everyone in the country as one people and put it first, and both can sound loud, proud and sure of themselves. In **Nationalism** the text lets the voters keep their say. In **Fascism** the answer to the second question is **“Push them aside, so one leader or movement speaks for everyone”**: the text takes the voters’ say away, and with it the say of other parties and of anyone who objects. Look at what the text wants done with elections, other parties and people who disagree. Are they left in place, or are they to go?
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *The rally speech*, which was **Fascism**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If the president had added that the critics would be silenced, the answer to the second question would change and the name would be **Fascism**.
 - Taught on: “The nation first, with elections left alone” (one tap opens the card).
 
@@ -2268,11 +2268,11 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who or what does the text put first? **The nation, or its ordinary people.** The letter puts one people first: “We are one people, Corvale, and we love our country as one household”.
   - Who does the text speak for, and against whom? **The whole nation, as one people.** It speaks for all of Corvale as one household: “We are one people, Corvale, and we love our country as one household”. Nobody inside it is named as the other side.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **Nationalism**, the look-alike card’s lines follow: Both speak for everyone in the country as one people and put it first, and both can sound loud, proud and sure of themselves. In **Nationalism** the text lets the voters keep their say. In **Fascism** the key’s answer to the second question is **“Push them aside, so one leader or movement speaks for everyone”**: the text takes the voters’ say away, and with it the say of other parties and of anyone who objects. Look at what the text wants done with elections, other parties and people who disagree. Are they left in place, or are they to go?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *The anniversary speech*, which was **Nationalism**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **Nationalism**, the look-alike card’s lines follow: Both speak for everyone in the country as one people and put it first, and both can sound loud, proud and sure of themselves. In **Nationalism** the text lets the voters keep their say. In **Fascism** the answer to the second question is **“Push them aside, so one leader or movement speaks for everyone”**: the text takes the voters’ say away, and with it the say of other parties and of anyone who objects. Look at what the text wants done with elections, other parties and people who disagree. Are they left in place, or are they to go?
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *The anniversary speech*, which was **Nationalism**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If the letter asked only for people to join in, and left the other parties and newspapers alone, it would be **Nationalism**.
 - Taught on: “The nation as one, with elections pushed aside for one leader” (one tap opens the card).
 
@@ -2289,11 +2289,11 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who or what does the text put first? **The nation, or its ordinary people.** The speech puts one people first, marked out by its blood: “The Calderans of the old blood are the nation”.
   - Who does the text speak for, and against whom? **One people by blood, ranked above the others.** It ranks peoples: the old blood is "the nation" and the later peoples must "know their lower place": “The Calderans of the old blood are the nation, and the later peoples are guests who must know their lower place”. It also speaks of "the whole nation of Calder" standing as one, which is another answer, but a text that ranks peoples by blood gets **“One people by blood, ranked above the others”**.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Nationalism**, the look-alike card’s lines follow: Both put one people first, and both can leave the vote in place. In **Nationalism** everyone in the country is spoken for as one, and nobody is ranked below anybody else. In **Nazism** the text divides people by descent into peoples worth more and peoples worth less, and puts its own on top. Does the text rank peoples by blood or birth, with its own above the others? Or does it speak for everyone in the country as equals?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *The anniversary speech*, which was **Nationalism**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *The anniversary speech*, which was **Nationalism**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If the second sentence were dropped, so that nobody was ranked, the speech would speak for the whole nation as one and leave the election alone, and the name would be **Nationalism**.
 - Taught on: “One people by blood, ranked above the others” (one tap opens the card).
 
@@ -2309,12 +2309,12 @@ Each question is shown with all of its answers from the key, in the key’s orde
   - Why not **Nationalism**: **Nationalism** would speak for everyone with nobody named as the other side. This speech names the ministers and the agencies as the ones who have taken the people's budget.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who or what does the text put first? **The nation, or its ordinary people.** The speech puts one people first: “one people should be run for itself”.
-  - Who does the text speak for, and against whom? **Ordinary people against an elite, with the nation’s borders, culture or industry put first.** It also names a few at the top, the ministers and the agencies, and wants the country's own industry first: “The ministers and the rating agencies abroad have been choosing our budget for years” and “our own industry should come first”. The opening words, "one people", are the answer **“The whole nation, as one people”**, but when a text also sets the people against a few at the top, the key's answer is **“Ordinary people against an elite, with the nation’s borders, culture or industry put first”**.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - Who does the text speak for, and against whom? **Ordinary people against an elite, with the nation’s borders, culture or industry put first.** It also names a few at the top, the ministers and the agencies, and wants the country's own industry first: “The ministers and the rating agencies abroad have been choosing our budget for years” and “our own industry should come first”. The opening words, "one people", are the answer **“The whole nation, as one people”**, but when a text also sets the people against a few at the top, the answer is **“Ordinary people against an elite, with the nation’s borders, culture or industry put first”**.
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Nationalism**, the look-alike card’s lines follow: Both put the nation first, both leave the vote in place, and both can be angry about the way the country is run. In **Nationalism** the text speaks for everyone, and nobody inside the country is named as the other side. In **National populism** the text speaks for the country’s ordinary people against an *elite*, so that someone inside the country is the other side. Is anyone inside the country named as the other side, a few at the top set against everyone else? Or does the text speak for everyone alike?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *The history textbook*, which was **Nationalism**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *The history textbook*, which was **Nationalism**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If the speech dropped the ministers and the agencies and spoke only of the nation as one, the name would be **Nationalism**.
 - Taught on: “Ordinary people against an elite, with the nation put first” (one tap opens the card).
 
@@ -2335,8 +2335,8 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - If you are right: “Right: **Rights and fair treatment for everyone.**” The text puts first what every person is owed: “Every patient who comes through the door of this hospital is owed the same attention, whatever they earn, whoever they voted for and wherever their grandparents came from”. It takes the side of no group against another.
-- If you miss: “The answer is …”, the same reason, and then the line built from the key for the answer you chose.
-- Then, right or wrong: “This case leaves the part of the key you have been taught. The questions that follow this answer come in a part of the course you have not reached, so the case stops here.”
+- If you miss: “The answer is …”, the same reason, and then the line built from the answers’ own wording for the answer you chose.
+- Then, right or wrong: “The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.”
 
 #### Last stage. Each of these is something a person might say that uses one of this unit’s names, or reasons in one of its ways. Each has a fault. The first is worked for you. For the rest, answer before the fault is shown.
 
@@ -2370,7 +2370,7 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - The answer is: **Leave them in place.**
-- If you chose another answer, the line is built from the key, as for any other question.
+- If you chose another answer, the line is built from the answers’ own wording, as for any other question.
 - The fault: The claim takes a view about borders and treats it as the whole of a name. What a text wants for its borders is not what the second question asks. The speaker asks the voters for a mandate and leaves the other parties free to stand against her.
 - The claim, put right (always the last thing shown): The speaker wants the country to decide who crosses its borders, and she leaves elections and other parties in place. That is the answer **“Leave them in place”**. Nothing in the text pushes the vote aside, so nothing in it is **Fascism**.
 
@@ -2386,8 +2386,8 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - The answer is: **Leave them in place.**
-- If you chose another answer, the line is built from the key, as for any other question.
-- The fault: How much a government does is not an answer to any question in the key. The leader wants a great deal done, and he leaves parliament and the voters their say.
+- If you chose another answer, the line is built from the answers’ own wording, as for any other question.
+- The fault: How much a government does is not an answer to any of these questions. The leader wants a great deal done, and he leaves parliament and the voters their say.
 - The claim, put right (always the last thing shown): The leader wants the government to do a great deal, and he says the plan goes to parliament and that voters can remove him. That is the answer **“Leave them in place”**. What decides **Fascism** is what a text would do about the vote and about its critics, and not how big a government it asks for.
 
 **Drill item 47 of 49**
@@ -2404,7 +2404,7 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - The answer is: **Ordinary people against an elite, and nothing more.**
-- If you chose another answer, the line is built from the key, as for any other question.
+- If you chose another answer, the line is built from the answers’ own wording, as for any other question.
 - The fault: The claim treats anger at an *elite* as if it were a view about owning businesses. The speaker blames those at the top and stops there, and she says nothing about who should own anything.
 - The claim, put right (always the last thing shown): The speaker sets ordinary people against a few at the top, the ministers and bankers, and adds nothing: no borders, culture or industry to put first, and no plan for the businesses. That is the answer **“Ordinary people against an elite, and nothing more”**, which leads to **Populism with nothing attached**. A name that is about owning the businesses needs working people set against those who own them.
 
@@ -2422,9 +2422,9 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - The answer is: **One people by blood, ranked above the others.**
-- If you chose another answer, the line is built from the key, as for any other question.
-- The fault: The claim looks at what the pamphlet wants done with the railways and the mines and ignores whom it speaks for. The pamphlet ranks peoples by blood, and the key reads that first. The question about owning the businesses is not asked of a text that does not set working people against those who own them.
-- The claim, put right (always the last thing shown): The pamphlet ranks peoples by blood, with its own on top. That is the answer **“One people by blood, ranked above the others”**, which leads to **Nazism**. What it wants done with the railways and the mines is not a question the key puts to this text, and the word "socialist" in anyone's description changes nothing it reads.
+- If you chose another answer, the line is built from the answers’ own wording, as for any other question.
+- The fault: The claim looks at what the pamphlet wants done with the railways and the mines and ignores whom it speaks for. The pamphlet ranks peoples by blood, and that is read first. The question about owning the businesses is not asked of a text that does not set working people against those who own them.
+- The claim, put right (always the last thing shown): The pamphlet ranks peoples by blood, with its own on top. That is the answer **“One people by blood, ranked above the others”**, which leads to **Nazism**. What it wants done with the railways and the mines is not a question put to this text, and the word "socialist" in anyone's description changes nothing it reads.
 
 **Drill item 49 of 49**
 
@@ -2441,21 +2441,21 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - The answer is: **Working people, against those who own the businesses.**
-- If you chose another answer, the line is built from the key, as for any other question.
-- The fault: The claim compares what the two pamphlets would do and skips what each one is for. They give different answers to the key's first question, and the questions that follow it depend on that answer. A shared method does not make two texts the same.
-- The claim, put right (always the last thing shown): The first pamphlet takes the side of the workers against the owners, and the key's first answer for it is **“Working people, against those who own the businesses”**. The second speaks for one nation, and its answer is **“The nation, or its ordinary people”**. Both ban rival parties, which is a method shared by many dictatorships. The names come from whom each text speaks for, and the two speak for different people.
+- If you chose another answer, the line is built from the answers’ own wording, as for any other question.
+- The fault: The claim compares what the two pamphlets would do and skips what each one is for. They give different answers to the first question, and the questions that follow it depend on that answer. A shared method does not make two texts the same.
+- The claim, put right (always the last thing shown): The first pamphlet takes the side of the workers against the owners, and the first answer for it is **“Working people, against those who own the businesses”**. The second speaks for one nation, and its answer is **“The nation, or its ordinary people”**. Both ban rival parties, which is a method shared by many dictatorships. The names come from whom each text speaks for, and the two speak for different people.
 
-**When the drill ends.** The learner sees their own results: first-try accuracy for each stage, whole routes beside single questions, the pair of names they mixed up most often, and what will come back and when. Anything missed was asked again before the drill ended. Nothing here is graded. A miss only decides what comes back.
+**When the drill ends.** The learner sees their own results: first-try accuracy for each stage, whole cases beside single questions, the pair of names they mixed up most often, and what will come back and when. Anything missed was asked again before the drill ended. Nothing here is graded. A miss only decides what comes back.
 
 ### 41. What to carry away
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 41 of 42*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 41 of 42*
 
 [reviewers only: card kind `recap`, id `recap`]
 
-You have now run the key on your own. This card puts the unit in one place, in the key's words.
+You have now run the questions on your own. This card puts the unit in one place.
 
-**The key for this unit, in its own words**
+**This unit’s questions and answers**
 
 Who does the text speak for, and against whom?
 - The whole nation, as one people → Nationalism · Fascism
@@ -2488,11 +2488,11 @@ What does the text want done with elections and with those who disagree?
 - Banned parties, a controlled press and secret police belong to nearly every dictatorship. They answer only the second question, and they never name a text on their own.
 - Ranking peoples by blood settles **Nazism** whatever the text says about the vote. Pushing the vote aside, with the nation spoken for as one or its ordinary people set against a few at the top, gives **Fascism**.
 - Anger at a few at the top is not a name until you have asked what else the text says. With nothing more it is **Populism with nothing attached**. With the country's borders, culture or industry put first it is **National populism**.
-- A name thrown at a text is not a description of it. The key goes by what the text says it wants.
+- A name thrown at a text is not a description of it. The answer goes by what the text says it wants.
 
 ### 42. Where would you meet this?
 
-*Unit Three · rev 1 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 42 of 42*
+*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 42 of 42*
 
 [reviewers only: card kind `transfer`, id `transfer`]
 
@@ -2520,7 +2520,7 @@ One line is enough. It is kept on this device only and is never marked.
 
 ## After the unit: what comes back on later days
 
-A name that is due returns as a case the learner has not seen, next to a case of the name they most often confuse it with. Each is run as a whole route. These are the fresh cases held back for that purpose: three for each name, one for each scheduled return. The first return is about two days after the drill, the next about a week after that, the next about three and a half weeks later.
+A name that is due returns as a case the learner has not seen, next to a case of the name they most often confuse it with. Each is run as a whole case: every question, then the name. These are the fresh cases held back for that purpose: three for each name, one for each scheduled return. The first return is about two days after the drill, the next about a week after that, the next about three and a half weeks later.
 
 **Return case 1 of 15**
 
@@ -2535,10 +2535,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who or what does the text put first? **The nation, or its ordinary people.** The prime minister puts one people first: “we are one people and none of us is left to carry this alone”.
   - Who does the text speak for, and against whom? **The whole nation, as one people.** Every town on the river is spoken for together, as one: “Every town on the river lost something, and every town will be helped, because we are one people and none of us is left to carry this alone”. Nobody in the country is named as the other side.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **Fascism**, the look-alike card’s lines follow: Both speak for everyone in the country as one people and put it first, and both can sound loud, proud and sure of themselves. In **Nationalism** the text lets the voters keep their say. In **Fascism** the key’s answer to the second question is **“Push them aside, so one leader or movement speaks for everyone”**: the text takes the voters’ say away, and with it the say of other parties and of anyone who objects. Look at what the text wants done with elections, other parties and people who disagree. Are they left in place, or are they to go?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **Fascism**, the look-alike card’s lines follow: Both speak for everyone in the country as one people and put it first, and both can sound loud, proud and sure of themselves. In **Nationalism** the text lets the voters keep their say. In **Fascism** the answer to the second question is **“Push them aside, so one leader or movement speaks for everyone”**: the text takes the voters’ say away, and with it the say of other parties and of anyone who objects. Look at what the text wants done with elections, other parties and people who disagree. Are they left in place, or are they to go?
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “The nation first, with elections left alone” (one tap opens the card).
 
 **Return case 2 of 15**
@@ -2554,10 +2554,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who or what does the text put first? **The nation, or its ordinary people.** The minister puts one country first: “they are all children of one country”.
   - Who does the text speak for, and against whom? **The whole nation, as one people.** Every child, in the city or on the farm, is spoken for together: “Every child in the country, in the city or on the farm, will sit the same paper, because they are all children of one country”. Nobody is set against anybody.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **National populism**, the look-alike card’s lines follow: Both put the nation first, both leave the vote in place, and both can be angry about the way the country is run. In **Nationalism** the text speaks for everyone, and nobody inside the country is named as the other side. In **National populism** the text speaks for the country’s ordinary people against an *elite*, so that someone inside the country is the other side. Is anyone inside the country named as the other side, a few at the top set against everyone else? Or does the text speak for everyone alike?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “The nation first, with elections left alone” (one tap opens the card).
 
 **Return case 3 of 15**
@@ -2573,10 +2573,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who or what does the text put first? **The nation, or its ordinary people.** The minister puts the country first: “Our first duty is to everyone in this country”.
   - Who does the text speak for, and against whom? **The whole nation, as one people.** The minister speaks for everyone in the country, whoever they are: “Our first duty is to everyone in this country, whoever they are and whatever they carry”. Nobody is named as the other side.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Nazism**, the look-alike card’s lines follow: Both put one people first, and both can leave the vote in place. In **Nationalism** everyone in the country is spoken for as one, and nobody is ranked below anybody else. In **Nazism** the text divides people by descent into peoples worth more and peoples worth less, and puts its own on top. Does the text rank peoples by blood or birth, with its own above the others? Or does it speak for everyone in the country as equals?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “The nation first, with elections left alone” (one tap opens the card).
 
 **Return case 4 of 15**
@@ -2592,10 +2592,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who or what does the text put first? **The nation, or its ordinary people.** The order puts one nation first: “The nation is one people with one will”.
   - Who does the text speak for, and against whom? **The whole nation, as one people.** It speaks for the nation as a single people: “The nation is one people with one will, and the Leader is its doctor”. Nobody is ranked by blood.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **Nationalism**, the look-alike card’s lines follow: Both speak for everyone in the country as one people and put it first, and both can sound loud, proud and sure of themselves. In **Nationalism** the text lets the voters keep their say. In **Fascism** the key’s answer to the second question is **“Push them aside, so one leader or movement speaks for everyone”**: the text takes the voters’ say away, and with it the say of other parties and of anyone who objects. Look at what the text wants done with elections, other parties and people who disagree. Are they left in place, or are they to go?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **Nationalism**, the look-alike card’s lines follow: Both speak for everyone in the country as one people and put it first, and both can sound loud, proud and sure of themselves. In **Nationalism** the text lets the voters keep their say. In **Fascism** the answer to the second question is **“Push them aside, so one leader or movement speaks for everyone”**: the text takes the voters’ say away, and with it the say of other parties and of anyone who objects. Look at what the text wants done with elections, other parties and people who disagree. Are they left in place, or are they to go?
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “The nation as one, with elections pushed aside for one leader” (one tap opens the card).
 
 **Return case 5 of 15**
@@ -2611,10 +2611,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who or what does the text put first? **The nation, or its ordinary people.** The proclamation puts one people first: “Brevia is one people with one future”.
   - Who does the text speak for, and against whom? **The whole nation, as one people.** It speaks for all of Brevia as one: “Brevia is one people with one future, and the Front is its only voice”. Nobody is ranked by blood.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **National populism**, the look-alike card’s lines follow: Both can blame a few at the top, and both can ask for the country’s industry, culture or borders to come first. On the first question both can have the answer **“Ordinary people against an elite, with the nation’s borders, culture or industry put first”**. They part on the second: **National populism** leaves the vote in place, and **Fascism** gets **“Push them aside, so one leader or movement speaks for everyone”**. The first replaces those at the top by voting them out. The second takes the vote away. Does the text ask the voters to remove those at the top? Or does it go further, and take away elections, other parties or the right to object?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “The nation as one, with elections pushed aside for one leader” (one tap opens the card).
 
 **Return case 6 of 15**
@@ -2630,10 +2630,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who or what does the text put first? **The nation, or its ordinary people.** The order puts one nation first: “Every home in the country belongs to the one nation”.
   - Who does the text speak for, and against whom? **The whole nation, as one people.** It speaks for the nation as one, and sets nobody inside it against anybody: “Every home in the country belongs to the one nation”.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **National populism**, the look-alike card’s lines follow: Both can blame a few at the top, and both can ask for the country’s industry, culture or borders to come first. On the first question both can have the answer **“Ordinary people against an elite, with the nation’s borders, culture or industry put first”**. They part on the second: **National populism** leaves the vote in place, and **Fascism** gets **“Push them aside, so one leader or movement speaks for everyone”**. The first replaces those at the top by voting them out. The second takes the vote away. Does the text ask the voters to remove those at the top? Or does it go further, and take away elections, other parties or the right to object?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “The nation as one, with elections pushed aside for one leader” (one tap opens the card).
 
 **Return case 7 of 15**
@@ -2649,10 +2649,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who or what does the text put first? **The nation, or its ordinary people.** The leaflet puts one people first, marked out by its own islands: “Island ferries should be run by islanders, for islanders”.
   - Who does the text speak for, and against whom? **Ordinary people against an elite, with the nation’s borders, culture or industry put first.** It sets the islanders against a few at the top, the ministers and the shipping barons, and wants the country's own industry put first: “The ministers and the shipping barons have sold the island ferries to a foreign firm” and “Island ferries should be run by islanders, for islanders”.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Populism with nothing attached**, the look-alike card’s lines follow: Both set ordinary people against a few at the top, and both leave the vote in place. The difference is what else the text asks for. **National populism** also wants the country’s borders, culture or industry put first, so its answer is **“Ordinary people against an elite, with the nation’s borders, culture or industry put first”**. **Populism with nothing attached** asks for nothing more than getting those at the top out of the way, so its answer is **“Ordinary people against an elite, and nothing more”**. After the text has set ordinary people against those at the top, does it say anything about the country’s borders, culture or industry? If it does not, nothing more is attached.
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Ordinary people against an elite, with the nation put first” (one tap opens the card).
 
 **Return case 8 of 15**
@@ -2668,10 +2668,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who or what does the text put first? **The nation, or its ordinary people.** The column puts one people first, marked out by its own history: “Our history belongs in our own museum, in our own hands”.
   - Who does the text speak for, and against whom? **Ordinary people against an elite, with the nation’s borders, culture or industry put first.** It sets the people against a few at the top, the officials and the curators, and wants the country's own culture kept at home: “The officials and the curators have let our national museum send our oldest treasures abroad” and “Our history belongs in our own museum, in our own hands”.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Nationalism**, the look-alike card’s lines follow: Both put the nation first, both leave the vote in place, and both can be angry about the way the country is run. In **Nationalism** the text speaks for everyone, and nobody inside the country is named as the other side. In **National populism** the text speaks for the country’s ordinary people against an *elite*, so that someone inside the country is the other side. Is anyone inside the country named as the other side, a few at the top set against everyone else? Or does the text speak for everyone alike?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Ordinary people against an elite, with the nation put first” (one tap opens the card).
 
 **Return case 9 of 15**
@@ -2687,10 +2687,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who or what does the text put first? **The nation, or its ordinary people.** The poster puts one people's own dairies first: “Our dairies should supply our shops”.
   - Who does the text speak for, and against whom? **Ordinary people against an elite, with the nation’s borders, culture or industry put first.** It sets the country's dairy farmers against a few at the top, the ministers and the importers, and wants the country's own industry put first: “The ministers and their friends in the import trade have flooded our shops with foreign cheese” and “Our dairies should supply our shops”.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Populism with nothing attached**, the look-alike card’s lines follow: Both set ordinary people against a few at the top, and both leave the vote in place. The difference is what else the text asks for. **National populism** also wants the country’s borders, culture or industry put first, so its answer is **“Ordinary people against an elite, with the nation’s borders, culture or industry put first”**. **Populism with nothing attached** asks for nothing more than getting those at the top out of the way, so its answer is **“Ordinary people against an elite, and nothing more”**. After the text has set ordinary people against those at the top, does it say anything about the country’s borders, culture or industry? If it does not, nothing more is attached.
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Ordinary people against an elite, with the nation put first” (one tap opens the card).
 
 **Return case 10 of 15**
@@ -2706,10 +2706,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who or what does the text put first? **The nation, or its ordinary people.** The flyer speaks for the ordinary people of one country: “the ordinary people of this country”.
   - Who does the text speak for, and against whom? **Ordinary people against an elite, and nothing more.** It sets ordinary people against a few at the top, the councillors, and stops there: “The councillors voted themselves free parking and put the charge up for everyone else” and “They are laughing at the ordinary people of this country”. No borders, culture or industry are put first.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **National populism**, the look-alike card’s lines follow: Both set ordinary people against a few at the top, and both leave the vote in place. The difference is what else the text asks for. **National populism** also wants the country’s borders, culture or industry put first, so its answer is **“Ordinary people against an elite, with the nation’s borders, culture or industry put first”**. **Populism with nothing attached** asks for nothing more than getting those at the top out of the way, so its answer is **“Ordinary people against an elite, and nothing more”**. After the text has set ordinary people against those at the top, does it say anything about the country’s borders, culture or industry? If it does not, nothing more is attached.
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Ordinary people against an elite, and nothing more” (one tap opens the card).
 
 **Return case 11 of 15**
@@ -2725,10 +2725,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who or what does the text put first? **The nation, or its ordinary people.** The column speaks for ordinary people of one country: “ordinary people of this country”.
   - Who does the text speak for, and against whom? **Ordinary people against an elite, and nothing more.** It sets ordinary people against a few at the top, the ministers: “The ministers have just given themselves a pay rise while ordinary people of this country wait years for a repair on their homes” and “They do not live like us and they do not answer to us”. It adds nothing about the country's borders, culture or industry.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Nationalism**, the look-alike card’s lines follow: Both leave the vote in place and rank nobody, and both can say that they speak for the people. In **Nationalism** the whole nation is spoken for as one, and nobody inside it is named as the other side. In **Populism with nothing attached** the text is angry at an *elite* on behalf of ordinary people, and says no more. Does the text speak for everyone, or set ordinary people against a few at the top? If it does the second, does it add anything about what the country itself should have?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Ordinary people against an elite, and nothing more” (one tap opens the card).
 
 **Return case 12 of 15**
@@ -2744,10 +2744,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who or what does the text put first? **The nation, or its ordinary people.** The post speaks for the ordinary families of one country: “Ordinary families of this country are the ones who pay”.
   - Who does the text speak for, and against whom? **Ordinary people against an elite, and nothing more.** It sets ordinary people against a few at the top, the exam board's heads and the ministers: “The heads of the exam board and the ministers who appointed them have put the fees up again” and “Ordinary families of this country are the ones who pay”. Nothing more is attached.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **National populism**, the look-alike card’s lines follow: Both set ordinary people against a few at the top, and both leave the vote in place. The difference is what else the text asks for. **National populism** also wants the country’s borders, culture or industry put first, so its answer is **“Ordinary people against an elite, with the nation’s borders, culture or industry put first”**. **Populism with nothing attached** asks for nothing more than getting those at the top out of the way, so its answer is **“Ordinary people against an elite, and nothing more”**. After the text has set ordinary people against those at the top, does it say anything about the country’s borders, culture or industry? If it does not, nothing more is attached.
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Ordinary people against an elite, and nothing more” (one tap opens the card).
 
 **Return case 13 of 15**
@@ -2763,10 +2763,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who or what does the text put first? **The nation, or its ordinary people.** The poster puts one people first, marked out by its blood: “Only the people of the high blood may hold a market stall”.
   - Who does the text speak for, and against whom? **One people by blood, ranked above the others.** It sorts peoples into "the high blood" and "the lower peoples", who are made to serve: “Only the people of the high blood may hold a market stall. The lower peoples are made to serve, and not to sell”. That ranks peoples by blood.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Nationalism**, the look-alike card’s lines follow: Both put one people first, and both can leave the vote in place. In **Nationalism** everyone in the country is spoken for as one, and nobody is ranked below anybody else. In **Nazism** the text divides people by descent into peoples worth more and peoples worth less, and puts its own on top. Does the text rank peoples by blood or birth, with its own above the others? Or does it speak for everyone in the country as equals?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “One people by blood, ranked above the others” (one tap opens the card).
 
 **Return case 14 of 15**
@@ -2782,10 +2782,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who or what does the text put first? **The nation, or its ordinary people.** The programme puts one people first, marked out by its blood: “one clinic door for the high blood”.
   - Who does the text speak for, and against whom? **One people by blood, ranked above the others.** It says the lower peoples are not worth the same care as the high blood: “the lower peoples are not worth the same care”. That ranks peoples by blood.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **Fascism**, the look-alike card’s lines follow: Both can end the vote, shut out other parties and silence critics, and both can be full of marches, uniforms and talk of one nation. In **Fascism** the people is the whole nation, or the country’s ordinary people against an *elite*, and nobody is ranked by blood. In **Nazism** peoples are ranked by blood or birth and the text’s own is placed above the rest. The key goes by that ranking alone: a text that ranks peoples by blood gets **“One people by blood, ranked above the others”**, whatever it says about the vote. Does the text rank peoples by blood or birth, with its own above the others? Or does it speak of one nation, or of its ordinary people, with nobody ranked by blood?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **Fascism**, the look-alike card’s lines follow: Both can end the vote, shut out other parties and silence critics, and both can be full of marches, uniforms and talk of one nation. In **Fascism** the people is the whole nation, or the country’s ordinary people against an *elite*, and nobody is ranked by blood. In **Nazism** peoples are ranked by blood or birth and the text’s own is placed above the rest. The answer goes by that ranking alone: a text that ranks peoples by blood gets **“One people by blood, ranked above the others”**, whatever it says about the vote. Does the text rank peoples by blood or birth, with its own above the others? Or does it speak of one nation, or of its ordinary people, with nobody ranked by blood?
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “One people by blood, ranked above the others” (one tap opens the card).
 
 **Return case 15 of 15**
@@ -2801,9 +2801,9 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who or what does the text put first? **The nation, or its ordinary people.** The speech puts one people first, marked out by its blood: “The first blood built this country”.
   - Who does the text speak for, and against whom? **One people by blood, ranked above the others.** It says the first blood is "higher than all the peoples who came after it": “it is higher than all the peoples who came after it”. That ranks peoples by blood.
-  - If you chose another answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **Fascism**, the look-alike card’s lines follow: Both can end the vote, shut out other parties and silence critics, and both can be full of marches, uniforms and talk of one nation. In **Fascism** the people is the whole nation, or the country’s ordinary people against an *elite*, and nobody is ranked by blood. In **Nazism** peoples are ranked by blood or birth and the text’s own is placed above the rest. The key goes by that ranking alone: a text that ranks peoples by blood gets **“One people by blood, ranked above the others”**, whatever it says about the vote. Does the text rank peoples by blood or birth, with its own above the others? Or does it speak of one nation, or of its ordinary people, with nobody ranked by blood?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **Fascism**, the look-alike card’s lines follow: Both can end the vote, shut out other parties and silence critics, and both can be full of marches, uniforms and talk of one nation. In **Fascism** the people is the whole nation, or the country’s ordinary people against an *elite*, and nobody is ranked by blood. In **Nazism** peoples are ranked by blood or birth and the text’s own is placed above the rest. The answer goes by that ranking alone: a text that ranks peoples by blood gets **“One people by blood, ranked above the others”**, whatever it says about the vote. Does the text rank peoples by blood or birth, with its own above the others? Or does it speak of one nation, or of its ordinary people, with nobody ranked by blood?
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “One people by blood, ranked above the others” (one tap opens the card).
 

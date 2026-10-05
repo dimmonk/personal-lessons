@@ -1,15 +1,15 @@
 # Learner view: Scams & Social Engineering, Unit Two: Install something, open a file, or share your screen
 
-*Four things a request about your phone or your computer can be, and how to tell which one you are looking at.* Unit revision 1, built to lesson standard 1, status: draft.
+*Four things a request about your phone or your computer can be, and how to tell which one you are looking at.* Unit revision 2, built to lesson standard 1, status: draft.
 
 This file is generated from the data files by `tools/render-learner-view.mjs`. It shows every screen in the order a learner meets it. In the app one card is on screen at a time and the learner moves on when ready.
 
-- **Bold text in quotation marks** is the key’s own wording, printed from `key.js`. Bold names are the outcome names from the same file. Neither is typed anywhere else. "What you must be able to point to" lines and "How to tell them apart" lines are also printed from one place each (the key and the look-alike ledger).
+- **Bold text in quotation marks** is the subject’s own wording for its questions and answers, written once and printed everywhere. Bold names are the names, written once in the same place. Neither is typed anywhere else. "What you must be able to point to" lines and "How to tell them apart" lines are also printed from one place each (the subject’s questions and the pairs it compares).
 - ⟦Double brackets⟧ show the words the app marks in a case (one highlight style everywhere).
 - The line in italics under each heading is the app’s top bar. The line in square brackets after it is for reviewers and is not shown to the learner.
 - Headings, prompt wording and stage instructions that are the same in every unit are the app’s wording, not this unit’s.
 - "Shown as soon as you …" is what appears the moment the learner answers. Nothing is hidden behind a second tap the first time a case is met, or after a miss.
-- After every answer the app shows, in this order: the right answer in the key’s words; the reason, quoting the marked words; for a name, why the nearest wrong name fails; after a miss, a line about the answer the learner chose; and last a link to the card that taught it. Where a line about the learner’s own choice is not written for the case, the app builds it from the key, and this file says so in place of repeating it.
+- After every answer the app shows, in this order: the right answer; the reason, quoting the marked words; for a name, why the nearest wrong name fails; after a miss, a line about the answer the learner chose; and last a link to the card that taught it. Where a line about the learner’s own choice is not written for the case, the app builds it from the answers’ own wording, and this file says so in place of repeating it.
 
 ---
 
@@ -17,13 +17,13 @@ This file is generated from the data files by `tools/render-learner-view.mjs`. I
 
 ### 1. A request about your phone or your computer, and four things it can be
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 1 of 32*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 1 of 32*
 
 [reviewers only: card kind `orient`, id `orient`]
 
 After this unit you can take a request to install something, to open a file, or to let someone watch your phone or computer, and say which of four things it is: three scams, and one that is real: software that you chose and fetched yourself. You will be able to point to the words in it that show which one, and to say what to do on the spot.
 
-The request can come as a pop-up, a phone call, a text, an email or a download that you went and found yourself. Where it comes from does not change the answer to the key’s first question, which you already know: all of them are **“Install something, open a file, or share your screen”**. This unit starts there, and teaches the one question that gives each of them its name.
+The request can come as a pop-up, a phone call, a text, an email or a download that you went and found yourself. Where it comes from does not change the answer to the first question, which you already know: all of them are **“Install something, open a file, or share your screen”**. This unit starts there, and teaches the one question that gives each of them its name.
 
 You have probably met all four. A page fills your laptop with a siren and a phone number. An email from a firm you have never heard of, with a file attached. A caller who says that you are owed a refund and needs a minute to see your computer. And, on an ordinary day, a program that you decided to download from its maker’s website.
 
@@ -31,9 +31,9 @@ On the surface they are alike. A box asks you to allow something, and a message 
 
 It teaches you where to look. It is not at the box that appears, not at the name of the program, and not at what is installed. It is at how the request came to you, and that is something you know at the moment you are asked, before you press anything.
 
-This part of the key has one question, not two or three: how a request reached you is enough to give each of the four its name, and there is nothing else that you could still ask before it is too late. The cards say why. Where something comes up that you cannot know until afterwards, they say so, and they say what to do about it.
+This part has one question, not two or three: how a request reached you is enough to give each of the four its name, and there is nothing else that you could still ask before it is too late. The cards say why. Where something comes up that you cannot know until afterwards, they say so, and they say what to do about it.
 
-**What Unit One taught, in one place.** The key’s first question is **“What is it asking you to do right now?”** Its answers:
+**What Unit One taught, in one place.** The first question is **“What is it asking you to do right now?”** Its answers:
 
 - **“Install something, open a file, or share your screen”**: give this answer when it asks you to install a program or an app, to open or run a file, or to let someone see or control your screen, or it warns that your device has a problem and gives you someone to ring to fix it. **This unit is about these cases.**
 - **“Sign in, give a code, or allow an app”**: give this answer when it asks you to sign in, to give a one-time code by typing it, reading it out or sending it on, or to press Allow so that an app can use one of your accounts.
@@ -41,11 +41,11 @@ This part of the key has one question, not two or three: how a request reached y
 - **“Tell them about yourself”**: give this answer when it asks for facts about you: a document, an ID or card number, your date of birth or address, or your work, home and family.
 - **“Nothing: it only tells you something”**: give this answer when it tells you that something has happened or will happen and asks you to do nothing, and anything it suggests uses only what you already had, such as the app on your phone or the number on your card.
 
-Unit One also taught that two things are marked separately: the name you give a case, and your route to it, meaning the answers you gave to the key’s questions on the way.
+Two things are marked separately: the name you give a case, and your answers to the questions on the way to it.
 
 *(One tap on any of these lines opens the card in Unit One that taught it.)*
 
-**The part of the key this unit teaches.** This is a preview. You are not expected to follow it yet: every line is explained on the cards that come next. The question and its answers are in the key’s own words. Beside each answer, in plain words, is the thing it leads to. There are four of them, and each gets its name when it is taught.
+**The questions this unit teaches.** This is a preview. You are not expected to follow it yet: every line is explained on the cards that come next. The question and its answers are worded exactly as you will meet them. Beside each answer, in plain words, is the thing it leads to. There are four of them, and each gets its name when it is taught.
 
 How did it come to you?
 - Someone offering to fix a problem with your device → a made-up problem with your device, and someone offering to fix it
@@ -64,17 +64,17 @@ The unit has three parts, and you can stop after any of them.
 
 1. Software you fetched, and a file that was sent to you
 2. Someone on the line who offers to fix something, or to pay you back
-3. The key’s question, two whole cases, then the drill
+3. The question, two whole cases, then the drill
 
 Each name is taught through cases first. After every step you answer one question about a new case, and the answer and the reason are shown straight away. Nothing here is graded. A miss only decides what comes back.
 
 ### 2. Something you started yourself, through a way you already had
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 2 of 32*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 2 of 32*
 
 [reviewers only: card kind `meet`, id `meet-realinstall`]
 
-You have the first question of the key, and its answer for everything in this unit. The first of the four names to look at is the one that is not a scam, because you need to recognise it before you learn what the three scams copy.
+You have the first question, and its answer for everything in this unit. The first of the four names to look at is the one that is not a scam, because you need to recognise it before you learn what the three scams copy.
 
 *The video-calling program*
 
@@ -87,7 +87,7 @@ Stripped of its story, the case is this:
 - She downloads the file and runs it, and her computer shows a box asking whether to allow changes. That box appears for every installation.
 - Nobody phoned her, messaged her or emailed her about it. Nobody is on a call with her.
 
-What you are shown is software that a person chose and fetched. The key counts it as the real thing and gives it a name of its own, because the scams in this unit are copies of it. A scam that wants you to install something has to look like the ordinary business of getting software.
+What you are shown is software that a person chose and fetched. It counts as the real thing and has a name of its own, because the scams in this unit are copies of it. A scam that wants you to install something has to look like the ordinary business of getting software.
 
 Two parts of the case carry the whole idea. The first is where Priya went: to the maker’s own website, by an address that she typed. That is *a way you already had*: an address that was hers before any message could reach her. The same would be true of a program that she found in the app store that came with her phone, or at an address that she had saved. The second is who started it. Priya did. Nobody had contacted her, so nobody had a reason to hurry her or to tell her what to click.
 
@@ -95,15 +95,15 @@ Notice what is not part of the idea. The box that asks whether to allow changes 
 
 **What you must be able to point to.** An install, an update or a screen share that you started yourself, through a way you already had (the company’s own website, your device’s app store or its own update menu, or the company’s number that you looked up and rang), and nobody contacting you first to ask for it. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“How did it come to you?”**
+**The question:** **“How did it come to you?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“Something you started yourself, through a way you already had”**
+**Its answer for a case like this one:** **“Something you started yourself, through a way you already had”**
 
-The name for this is **Real installation**. The words mean what they say: the installation is real, because you chose the software and fetched it yourself. Nothing is wrong in a case of this name. It is in the key on purpose: without it, every installation would look like something to fear.
+The name for this is **Real installation**. The words mean what they say: the installation is real, because you chose the software and fetched it yourself. Nothing is wrong in a case of this name. It has a name on purpose: without one, every installation would look like something to fear.
 
 ### 3. Real installation: the same thing in a different story
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 3 of 32*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 3 of 32*
 
 [reviewers only: card kind `again`, id `again-realinstall`]
 
@@ -138,7 +138,7 @@ The two stories share nothing else. A website and an app store look different, a
 
 ### 4. The program, the box and the company never decide the answer
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 4 of 32*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 4 of 32*
 
 [reviewers only: card kind `lens`, id `lens`]
 
@@ -146,17 +146,17 @@ The last card asked you to ignore the story. That instruction holds for the whol
 
 Every case in this unit has two layers. The top layer is the story: a video-calling program, a running app, a parcel, a bank, a router. The layer underneath is how the request reached the person: through something they already had, or through a message, a call, a pop-up or a search.
 
-The key asks about the layer underneath: **“How did it come to you?”** The same program can be fetched by one person and sent to another, and the box on the computer is the same box either way. So the box, the name of the program and the name of the company tell you nothing.
+The question is about the layer underneath: **“How did it come to you?”** The same program can be fetched by one person and sent to another, and the box on the computer is the same box either way. So the box, the name of the program and the name of the company tell you nothing.
 
 Three more things change on purpose from here. Sometimes the story is alarming and the case is real. Sometimes the story is dull and the case is a scam. And sometimes two cases share the same person and the same program, and differ only in how the request arrived. When that happens, the shared story is there to show you that it tells you nothing.
 
-**Stays the same from case to case:** how the request reached the person, which is what the key asks: **“How did it come to you?”**
+**Stays the same from case to case:** how the request reached the person, which is the question: **“How did it come to you?”**
 
 **Changes on purpose:** the program or the problem; the company named; how alarming it sounds; the kind of device; whether the box on the computer looks official.
 
 ### 5. Real installation: what it is like
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 5 of 32*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 5 of 32*
 
 [reviewers only: card kind `portrait`, id `portrait-realinstall`]
 
@@ -194,7 +194,7 @@ Stop at once if something changes in the middle: a phone call that you did not s
 
 ### 6. A question about a new case
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 6 of 32*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 6 of 32*
 
 [reviewers only: card kind `check`, id `check-realinstall`]
 
@@ -210,7 +210,7 @@ The pieces you can tap:
 
 **Shown as soon as you tap**
 
-- If you are right: “Right: ‘He types the printer maker's web address into his browser, opens its Support page and picks his printer's model from a list’.” Ed went to the maker himself: “He types the printer maker's web address into his browser” and “nobody has contacted him”. He started it, he used an address he typed, and nobody contacted him. The box that asks whether to allow changes does not enter into it. The key’s answer for this case is **“Something you started yourself, through a way you already had”**, and the name is **Real installation**.
+- If you are right: “Right: ‘He types the printer maker's web address into his browser, opens its Support page and picks his printer's model from a list’.” Ed went to the maker himself: “He types the printer maker's web address into his browser” and “nobody has contacted him”. He started it, he used an address he typed, and nobody contacted him. The box that asks whether to allow changes does not enter into it. The answer for this case is **“Something you started yourself, through a way you already had”**, and the name is **Real installation**.
 - If you miss: “The words are ‘He types the printer maker's web address into his browser, opens its Support page and picks his printer's model from a list’.” The same reason follows, and then a line about the piece you tapped:
   - “Ed's new printer needs a program before it can scan”: That is why Ed wants the program. It does not say how he came to it.
   - “He downloads the program and runs it, and his computer asks whether to allow it to make changes”: That is the installation itself. The same box appears for a harmful program, so it cannot show how he came to the program.
@@ -219,7 +219,7 @@ The pieces you can tap:
 
 ### 7. A harmful file or link sent in a message
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 7 of 32*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 7 of 32*
 
 [reviewers only: card kind `meet`, id `meet-malware`]
 
@@ -240,15 +240,15 @@ What you are shown is a file that came in a message, and a reason to open it tha
 
 The story is chosen to suit whoever gets it. It can be an unpaid invoice, a wage slip, a parcel note, a job test, a photo, a voicemail, or a message that something on your device needs updating. The story makes no difference to the answer. What decides it is that the file or the link came to you, and that nobody is with you.
 
-The harm comes from what the file does once it runs. It can copy passwords as you type them, watch your computer, lock your files, or give someone else control of the device. And success looks like nothing happening: a blank window flickers and closes, or an ordinary-looking document opens. So you cannot count on noticing that something is wrong afterwards, and that is why the key asks about the one thing you can see at the start.
+The harm comes from what the file does once it runs. It can copy passwords as you type them, watch your computer, lock your files, or give someone else control of the device. And success looks like nothing happening: a blank window flickers and closes, or an ordinary-looking document opens. So you cannot count on noticing that something is wrong afterwards, and that is why the question is about the one thing you can see at the start.
 
 Set Sam beside Priya. When Sam opens the file, his computer will show the same box that Priya saw, asking whether to allow changes, and it will tell him no more than it told her. What differs is where each came from: Priya went to the maker, and the file came to Sam.
 
 **What you must be able to point to.** A file or a link that came in a message, a reason given to open, run or install it, and nobody on a call with you. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“How did it come to you?”**
+**The question:** **“How did it come to you?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“A file or a link in a message, for you to open”**
+**Its answer for a case like this one:** **“A file or a link in a message, for you to open”**
 
 The name for this is **Malware**, which is short for “malicious software”: software made to do harm. The word covers any such program, however it works.
 
@@ -256,7 +256,7 @@ You may also hear this called “virus” or “ransomware” or “harmful atta
 
 ### 8. Malware: the same thing in a different story
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 8 of 32*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 8 of 32*
 
 [reviewers only: card kind `again`, id `again-malware`]
 
@@ -289,7 +289,7 @@ A file and a link are two shapes of the same thing. A link that tells you to ins
 
 ### 9. Malware: what it is like
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 9 of 32*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 9 of 32*
 
 [reviewers only: card kind `portrait`, id `portrait-malware`]
 
@@ -329,13 +329,13 @@ Delete the message. If you have already opened it, take the device off the inter
 
 ### 10. A question about a new case
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 10 of 32*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 10 of 32*
 
 [reviewers only: card kind `check`, id `check-malware`]
 
 > A message reaches Kofi from a number he does not know: 'Hi! Here are the photos from Saturday. Download the zip file and open it.' Kofi was not at anything on Saturday, and nobody is talking to him on the phone.
 
-**The key asks:** **“How did it come to you?”** Which of the answers you have met so far fits this case?
+**The question:** **“How did it come to you?”** Which of the answers you have met so far fits this case?
 
 - Something you started yourself, through a way you already had
 - A file or a link in a message, for you to open
@@ -349,7 +349,7 @@ Delete the message. If you have already opened it, take the device off the inter
 
 ### 11. Malware or Real installation: telling them apart
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 11 of 32*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 11 of 32*
 
 [reviewers only: card kind `lookalike`, id `look-malware-realinstall`]
 
@@ -371,9 +371,9 @@ You have met both names on their own. They are easy to mix up, because in both a
 
 **Why this one and not the other**
 
-In Case A Lena decided that she wanted the newest version, and she typed the maker’s address herself. The installer was hers to fetch, nobody had contacted her, and the box is only what every installation shows. The key’s answer is **“Something you started yourself, through a way you already had”**, and the case is **Real installation**.
+In Case A Lena decided that she wanted the newest version, and she typed the maker’s address herself. The installer was hers to fetch, nobody had contacted her, and the box is only what every installation shows. The answer is **“Something you started yourself, through a way you already had”**, and the case is **Real installation**.
 
-In Case B nobody has asked her for anything until an email arrives from an address she does not know, saying that her licence needs updating, with an installer attached. The installer came to her. The key’s answer is **“A file or a link in a message, for you to open”**, and the case is **Malware**.
+In Case B nobody has asked her for anything until an email arrives from an address she does not know, saying that her licence needs updating, with an installer attached. The installer came to her. The answer is **“A file or a link in a message, for you to open”**, and the case is **Malware**.
 
 The two cases are about the same program, from the same company, and they end in the same box. The only difference is who started it and where the installer came from, and Lena can see that difference at the moment she is asked, before she presses anything.
 
@@ -381,7 +381,7 @@ The two cases are about the same program, from the same company, and they end in
 
 Before this file or link reached you, did you set out to get this software yourself, from the maker’s own website or your app store? Or did it arrive in a message?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Malware | Real installation |
 |---|---|---|
@@ -398,7 +398,7 @@ Before this file or link reached you, did you set out to get this software yours
 
 ### 12. The first result on a search page may be an advert
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 12 of 32*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 12 of 32*
 
 [reviewers only: card kind `term`, id `term-searchad`]
 
@@ -421,7 +421,7 @@ From here on, a result marked “Ad” or “Sponsored” is not one of the thin
 
 ### 13. A made-up problem with your device, and someone offering to fix it
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 13 of 32*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 13 of 32*
 
 [reviewers only: card kind `meet`, id `meet-techsupport`]
 
@@ -441,15 +441,15 @@ Stripped of its story, the case is this:
 
 Here is the scam as it really unfolds. First, a page fills the browser with an alarm and a phone number. It is only a web page: it knows nothing about Joan’s computer, and the alarm and the red colour are there to frighten her. The X does not close it because the page was built to look as if it controls the machine. Second, Joan rings the number. Third, the man asks her to open a web page and type in a code, which lets him see her computer and perhaps move things on it: that is *screen-sharing*. Fourth, he shows her ordinary lists that every computer has, such as lists of warnings and error messages, and describes them as proof that her computer has been broken into. Fifth, he offers a fix, a “protection plan” for a few hundred pounds, to be paid by gift card or bank transfer, or he asks to see her bank so that he can check that no money has left. And he can stay on her computer after the call ends.
 
-Now ask which of those steps Joan could still have refused. The first step happened to her: she did nothing. At the second step she chose to ring. At the third she was asked to let him in. Everything after the third, the lists, the plan to buy and the bank, can only be known once she has let him in, and by then someone else controls what she sees. So the moment when she can stop with nothing lost is before she rings, or at the latest when she is asked to let him in. The key’s question can be answered at that moment, from the page alone: a warning that gives her someone to ring to fix her device is already the answer.
+Now ask which of those steps Joan could still have refused. The first step happened to her: she did nothing. At the second step she chose to ring. At the third she was asked to let him in. Everything after the third, the lists, the plan to buy and the bank, can only be known once she has let him in, and by then someone else controls what she sees. So the moment when she can stop with nothing lost is before she rings, or at the latest when she is asked to let him in. The question can be answered at that moment, from the page alone: a warning that gives her someone to ring to fix her device is already the answer.
 
-The key counts a warning that gives you someone to ring as part of this answer, even before the technician asks for anything, because the person you reach will ask. It counts a call, a message or an advert in the same way: any of them can offer to fix a problem that you did not know you had.
+A warning that gives you someone to ring counts as part of this answer, even before the technician asks for anything, because the person you reach will ask. A call, a message or an advert counts in the same way: any of them can offer to fix a problem that you did not know you had.
 
 **What you must be able to point to.** A warning, a call, a message or a search advert saying that your device has a problem or offering support for it, and someone you then reach who wants to install something on it or see your screen. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“How did it come to you?”**
+**The question:** **“How did it come to you?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“Someone offering to fix a problem with your device”**
+**Its answer for a case like this one:** **“Someone offering to fix a problem with your device”**
 
 The name for this is **Tech-support scam**. Technical support is a real service, and the name is for a scam that uses the idea of it, so that you will let someone into your device. Nothing was wrong with Joan’s computer: the problem was made up.
 
@@ -457,7 +457,7 @@ You may also hear this called “fake virus alert” or “scareware”. Those w
 
 ### 14. Tech-support scam: the same thing in a different story
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 14 of 32*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 14 of 32*
 
 [reviewers only: card kind `again`, id `again-techsupport`]
 
@@ -490,7 +490,7 @@ The page and the message look different, and one device is a laptop and the othe
 
 ### 15. Tech-support scam: what it is like
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 15 of 32*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 15 of 32*
 
 [reviewers only: card kind `portrait`, id `portrait-techsupport`]
 
@@ -530,13 +530,13 @@ If you want to be sure, use *the check*: ring the company on the number on your 
 
 ### 16. A question about a new case
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 16 of 32*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 16 of 32*
 
 [reviewers only: card kind `check`, id `check-techsupport`]
 
 > A woman rings Walt: 'I am from the technical team at your computer's maker. We have detected errors coming from your computer. If you let me see your screen I can fix them now.' Walt has not contacted anyone, and his computer has been working well.
 
-**The key asks:** **“How did it come to you?”** Which of the answers you have met so far fits this case?
+**The question:** **“How did it come to you?”** Which of the answers you have met so far fits this case?
 
 - Something you started yourself, through a way you already had
 - A file or a link in a message, for you to open
@@ -552,7 +552,7 @@ If you want to be sure, use *the check*: ring the company on the number on your 
 
 ### 17. A wrong idea: "a warning that will not close must be real"
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 17 of 32*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 17 of 32*
 
 [reviewers only: card kind `refute`, id `refute-closing`]
 
@@ -573,7 +573,7 @@ So whether a warning will close tells you nothing either way. What tells you is 
 
 ### 18. When you went looking yourself
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 18 of 32*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 18 of 32*
 
 [reviewers only: card kind `exception`, id `exc-searched`]
 
@@ -610,7 +610,7 @@ Notice how small the difference is. If Ivy had phoned the number on her bill, th
 
 Who started it, and where did the number or the address come from: from something that you already had, or from a page, a message, a call or the results of a search?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Tech-support scam | Real installation |
 |---|---|---|
@@ -623,7 +623,7 @@ In this unit, a number or an address that comes from a search page does not coun
 
 ### 19. When a real helper asks to see your device
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 19 of 32*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 19 of 32*
 
 [reviewers only: card kind `exception`, id `exc-helpdesk`]
 
@@ -663,7 +663,7 @@ So the question is not what the helper asks for. It is who started the call, and
 
 ### 20. A refund sorted out while someone watches your screen
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 20 of 32*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 20 of 32*
 
 [reviewers only: card kind `meet`, id `meet-refundscam`]
 
@@ -683,15 +683,15 @@ Stripped of its story, the case is this:
 
 Here is the scam as it really unfolds. First, the call: a refund that Harold did not expect, from a company that he really deals with. Second, a reason to let the caller see his computer: he says that he needs to see Harold’s account to send the money. Third, once the caller is watching, he asks Harold to log in to his online bank “to see where to send it”. Fourth, while Harold is logged in and the caller is watching, the caller moves money between Harold’s own accounts, say from savings into the current account, so that the balance on the page jumps: £3,120 where a refund of £312 was promised. Fifth, the caller is upset. He has typed an extra zero, he will lose his job, and could Harold send the difference back? What Harold would send is his own money, and the extra on the page was only his own savings, moved across.
 
-Now ask which of those steps Harold could still have refused. The first is a call, and he did nothing. The second is the request: let him see your computer. Everything after that, the balance, the apology and the request to send money back, can only be known once Harold has let him in, and by then the page on his computer is controlled by someone else, so Harold cannot trust it. The key’s question is answered at the second step, and the answer is **“Someone sorting out a refund or your bank account”**: the caller’s reason is money, and the request is to install something or to let them see your computer while it is dealt with.
+Now ask which of those steps Harold could still have refused. The first is a call, and he did nothing. The second is the request: let him see your computer. Everything after that, the balance, the apology and the request to send money back, can only be known once Harold has let him in, and by then the page on his computer is controlled by someone else, so Harold cannot trust it. The question is answered at the second step, and the answer is **“Someone sorting out a refund or your bank account”**: the caller’s reason is money, and the request is to install something or to let them see your computer while it is dealt with.
 
 Notice that the reason given is money, and that nothing is said to be wrong with the device. In the third name the reason given for the same request was a fault in the device.
 
 **What you must be able to point to.** Someone who says you are owed a refund or that your bank account needs attention, and a request to install something or let them see your screen while they sort it out. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“How did it come to you?”**
+**The question:** **“How did it come to you?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“Someone sorting out a refund or your bank account”**
+**Its answer for a case like this one:** **“Someone sorting out a refund or your bank account”**
 
 The name for this is **Refund scam**. A refund is money paid back to you. The name is for a scam that is built round a refund that you did not ask for, or round a danger to your bank account, and used as the reason to get at your computer and your bank.
 
@@ -699,7 +699,7 @@ You may also hear this called “remote access scam” or “overpayment refund 
 
 ### 21. Refund scam: the same thing in a different story
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 21 of 32*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 21 of 32*
 
 [reviewers only: card kind `again`, id `again-refundscam`]
 
@@ -729,12 +729,12 @@ The pieces you can tap:
 
 Harold and Odette each had a call from someone who said they were from a company that holds their money, and each was given a reason about money: a refund to send, a payment to stop. In both, the caller asked to see the device so that the money could be dealt with while they watched.
 
-Nothing was wrong before either call. A refund and a danger to your account are different stories, and they share one thing: a reason about money, given by someone who has contacted you, for letting them see your device. That is what **Refund scam** names. In the second story it is the bank account itself that needs attention, and the key counts that as the same name.
+Nothing was wrong before either call. A refund and a danger to your account are different stories, and they share one thing: a reason about money, given by someone who has contacted you, for letting them see your device. That is what **Refund scam** names. In the second story it is the bank account itself that needs attention, and that counts as the same name.
 
 
 ### 22. Refund scam: what it is like
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 22 of 32*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 22 of 32*
 
 [reviewers only: card kind `portrait`, id `portrait-refundscam`]
 
@@ -751,7 +751,7 @@ You know what to point to. This card fills in the rest of the picture, so that y
 
 **What it is not**
 
-A refund is not always a scam. A real company can owe you money, and a real refund goes back to the card or the account that paid, with no call and no need for anyone to see your computer. A refund that simply arrives, with nobody on the phone, asks you for nothing, and the key’s first question gives it the answer **“Nothing: it only tells you something”**.
+A refund is not always a scam. A real company can owe you money, and a real refund goes back to the card or the account that paid, with no call and no need for anyone to see your computer. A refund that simply arrives, with nobody on the phone, asks you for nothing, and the first question gives it the answer **“Nothing: it only tells you something”**.
 
 And a call from your bank is not always this name. A real bank can ring about a payment. What gives the name is the request to install something or to let them see your device, and a real bank does not need that.
 
@@ -774,13 +774,13 @@ Never send money back because of what a balance seems to say. If you have alread
 
 ### 23. A question about a new case
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 23 of 32*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 23 of 32*
 
 [reviewers only: card kind `check`, id `check-refundscam`]
 
 > Dev's phone rings: 'This is the billing team at your gym. You were charged twice this month, so £40 is coming back to you. Open the meeting app and press Share so that I can put it through while you watch.' Dev has not asked for anything.
 
-**The key asks:** **“How did it come to you?”** Which of the answers you have met so far fits this case?
+**The question:** **“How did it come to you?”** Which of the answers you have met so far fits this case?
 
 - Something you started yourself, through a way you already had
 - A file or a link in a message, for you to open
@@ -798,7 +798,7 @@ Never send money back because of what a balance seems to say. If you have alread
 
 ### 24. Tech-support scam or Refund scam: telling them apart
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 24 of 32*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 24 of 32*
 
 [reviewers only: card kind `lookalike`, id `look-techsupport-refundscam`]
 
@@ -820,9 +820,9 @@ You have met all four names. These two are the closest pair, because in both a p
 
 **Why this one and not the other**
 
-In Case A the reason is a fault with the device. A page on his laptop says that it is locked, and the man he rings says that he can fix it, but needs to see the device. The key’s answer is **“Someone offering to fix a problem with your device”**, and the case is **Tech-support scam**.
+In Case A the reason is a fault with the device. A page on his laptop says that it is locked, and the man he rings says that he can fix it, but needs to see the device. The answer is **“Someone offering to fix a problem with your device”**, and the case is **Tech-support scam**.
 
-In Case B the reason is money. Nothing was wrong with his device, and nobody had warned him about anything. A woman rings to say that he was charged twice and that she owes him £60, and she needs to see the device to put it back. The key’s answer is **“Someone sorting out a refund or your bank account”**, and the case is **Refund scam**.
+In Case B the reason is money. Nothing was wrong with his device, and nobody had warned him about anything. A woman rings to say that he was charged twice and that she owes him £60, and she needs to see the device to put it back. The answer is **“Someone sorting out a refund or your bank account”**, and the case is **Refund scam**.
 
 The request is the same in both: let me see your device. What differs is the reason given for it, a fault or a refund, and Hal can hear that difference at the moment he is asked.
 
@@ -830,7 +830,7 @@ The request is the same in both: let me see your device. What differs is the rea
 
 What reason does the person give for wanting to see or control the device: a problem with the device itself, or money, whether a refund or a bank account?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Tech-support scam | Refund scam |
 |---|---|---|
@@ -841,7 +841,7 @@ What reason does the person give for wanting to see or control the device: a pro
 
 ### 25. When a case shows both reasons
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 25 of 32*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 25 of 32*
 
 [reviewers only: card kind `exception`, id `exc-both-ways`]
 
@@ -868,38 +868,38 @@ The pieces you can tap:
 
 **Why this is Refund scam and not Tech-support scam**
 
-The case shows two reasons for wanting to see her computer: a fault with the device, and a refund. The fault came first, and on its own it would be **Tech-support scam**. But the second reason is about money, and it is the one the key puts first, because a refund call is the one that goes on to reach your bank.
+The case shows two reasons for wanting to see her computer: a fault with the device, and a refund. The fault came first, and on its own it would be **Tech-support scam**. But the second reason is about money, and it is the one that comes first, because a refund call is the one that goes on to reach your bank.
 
-In real calls the two run together. A technician who has been given access finds that there is a “licence” to be refunded, or a “mistake” to be put right, and the call turns into the other scam. The key does not ask which came first. It asks what reasons the case shows.
+In real calls the two run together. A technician who has been given access finds that there is a “licence” to be refunded, or a “mistake” to be put right, and the call turns into the other scam. The questions do not ask which came first. They ask what reasons the case shows.
 
 **How to tell them apart**
 
 What reason does the person give for wanting to see or control the device: a problem with the device itself, or money, whether a refund or a bank account?
 
-When a case shows both **“Someone offering to fix a problem with your device”** and talk of a refund, an overpayment or a problem with your bank account, the key’s answer is **“Someone sorting out a refund or your bank account”**.
+When a case shows both **“Someone offering to fix a problem with your device”** and talk of a refund, an overpayment or a problem with your bank account, the answer is **“Someone sorting out a refund or your bank account”**.
 
-This is the key’s decision, made on purpose. Many calls start as one and turn into the other, and the key gives each case one name, so that two people using it reach the same answer. What you do does not change: stop, and use *the check*.
+This is the decision, made on purpose. Many calls start as one and turn into the other, and each case gets one name, so that two people using the questions reach the same answer. What you do does not change: stop, and use *the check*.
 
 
-*End of part 2. You can stop here; your place is kept. Next: part 3, The key’s question, two whole cases, then the drill.*
+*End of part 2. You can stop here; your place is kept. Next: part 3, The question, two whole cases, then the drill.*
 
 ---
 
-## Part 3 of 3: The key’s question, two whole cases, then the drill
+## Part 3 of 3: The question, two whole cases, then the drill
 
 ### 26. The question you have been answering all along
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 26 of 32*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 26 of 32*
 
 [reviewers only: card kind `question`, id `q-how`]
 
-Since the video-calling program you have seen the key’s question at the foot of each new name, with one answer under it. This card puts the question and its four answers in one place, as the key shows them, and says what the question can and cannot tell you.
+Since the video-calling program you have seen the question at the foot of each new name, with one answer under it. This card puts the question and its four answers in one place, and says what the question can and cannot tell you.
 
-**The key asks:** **“How did it come to you?”**
+**The question:** **“How did it come to you?”**
 
 **What it is for.** Tells apart the three ways scams get onto a device, and a real installation, by how the request reached you.
 
-**Its answers, exactly as the key shows them**
+**Its answers**
 
 Each answer leads to one name, and so rules out the other three.
 
@@ -918,11 +918,11 @@ Each answer leads to one name, and so rules out the other three.
 
 **Why it decides**
 
-Once a program is on your device, or someone can see your screen, they can watch everything you do there, so what decides it is how you came to be asked. Each of the four names is defined by that one thing, so this part of the key has one question. You can answer it at the moment you are asked, before you install, open or share anything.
+Once a program is on your device, or someone can see your screen, they can watch everything you do there, so what decides it is how you came to be asked. Each of the four names is defined by that one thing, so this part has one question. You can answer it at the moment you are asked, before you install, open or share anything.
 
 Four requests can be word for word the same: a box that asks whether to allow changes, a person who wants to see your device, a program to run. The same program can be fetched by you or sent to you. So nothing about the program, the box, the company named or the story decides the name. What decides it is how the request came to you, and that is something you know at the moment you are asked, before you install, open or share anything.
 
-It is also the only question that this part of the key asks, and the reason is worth saying. The things that would tell the four apart afterwards are all things you can see only when it is too late: a file that runs quietly and shows nothing, a technician’s ordinary-looking lists, a balance on a page that someone else is controlling. A question about those could be answered only after the harm. So the key asks about the one thing that you can know at the start, and it gives every request its name from that.
+It is also the only question that this part asks, and the reason is worth saying. The things that would tell the four apart afterwards are all things you can see only when it is too late: a file that runs quietly and shows nothing, a technician’s ordinary-looking lists, a balance on a page that someone else is controlling. A question about those could be answered only after the harm. So the question is about the one thing that you can know at the start, and every request gets its name from that.
 
 **How to answer it from a case**
 
@@ -930,14 +930,14 @@ Ask who started it. If you did, ask where you went: to the maker’s own website
 
 Put your finger on the words that show it: where you went, what arrived, what was offered. If you cannot point, you do not have an answer yet.
 
-You do not need to wait for what happens next. If the answer is not the one for software that you fetched yourself, the next step is the same whichever of the three it turns out to be: stop, and use *the check*. The questions that could only be answered afterwards are not in the key, because by then the harm is done.
+You do not need to wait for what happens next. If the answer is not the one for software that you fetched yourself, the next step is the same whichever of the three it turns out to be: stop, and use *the check*. The questions that could only be answered afterwards are not asked, because by then the harm is done.
 
 **When two answers both seem to fit**
 
-Sometimes two answers both seem to fit. Each pair below has one question that separates it. Where a case shows two answers at once, the key gives the one named in the line under the pair.
+Sometimes two answers both seem to fit. Each pair below has one question that separates it. Where a case shows two answers at once, the answer is the one named in the line under the pair.
 
 - Malware or Real installation: Before this file or link reached you, did you set out to get this software yourself, from the maker’s own website or your app store? Or did it arrive in a message?
-- Tech-support scam or Refund scam: What reason does the person give for wanting to see or control the device: a problem with the device itself, or money, whether a refund or a bank account? When a case shows both **“Someone offering to fix a problem with your device”** and talk of a refund, an overpayment or a problem with your bank account, the key’s answer is **“Someone sorting out a refund or your bank account”**.
+- Tech-support scam or Refund scam: What reason does the person give for wanting to see or control the device: a problem with the device itself, or money, whether a refund or a bank account? When a case shows both **“Someone offering to fix a problem with your device”** and talk of a refund, an overpayment or a problem with your bank account, the answer is **“Someone sorting out a refund or your bank account”**.
 - Tech-support scam or Real installation: Who started it, and where did the number or the address come from: from something that you already had, or from a page, a message, a call or the results of a search?
 - Tech-support scam or Malware: Is there a person on a call, or a number to ring, who will talk you through it? Or is there only a file or a link for you to open yourself?
 - Malware or Refund scam: Is someone on a call or in a chat with you right now, asking you to open it and talking about a refund or a bank account? Or did it simply arrive?
@@ -970,13 +970,13 @@ Sometimes two answers both seem to fit. Each pair below has one question that se
 
 ### 27. A question about a new case
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 27 of 32*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 27 of 32*
 
 [reviewers only: card kind `check`, id `check-how`]
 
 > Dina's phone shows a red dot beside Settings. She opens Settings herself, taps Software update and presses Install. Nobody has messaged or phoned her about it.
 
-**The key asks:** **“How did it come to you?”**
+**The question:** **“How did it come to you?”**
 
 - Someone offering to fix a problem with your device
 - Someone sorting out a refund or your bank account
@@ -994,11 +994,11 @@ Sometimes two answers both seem to fit. Each pair below has one question that se
 
 ### 28. A whole case, from the first question to the name
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 28 of 32*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 28 of 32*
 
 [reviewers only: card kind `worked`, id `worked-wage`]
 
-You have the four names and the key’s question about them. Before you run a case yourself, watch two being run from the top, in the order the key asks. You are not asked anything until the end of each.
+You have the four names and the question about them. Before you run a case yourself, watch two being run from the top, in the order the questions are asked. You are not asked anything until the end of each.
 
 *The wage slip*
 
@@ -1006,13 +1006,13 @@ You have the four names and the key’s question about them. Before you run a ca
 
 **Question 1 of 2: What is it asking you to do right now?**
 
-What it is for: sorts a message, a call or an offer by the next thing it asks of you: something on your device, a way into an account, money, facts about you, or nothing at all. Each kind of request puts something different at risk, is guarded by a different habit, and leads to a different set of names. The story that comes with it, who it says it is from, and what the sender is after in the end do not change the answer: what it asks you to do does. You can answer it from the message or the call itself, at the moment the request is made. Where a request asks for two of these things, the key takes the one higher in the list, because it reaches further: a program or a view of your screen reaches everything on the device, a way into an account reaches what the account holds, and money is gone once it is sent.
+What it is for: sorts a message, a call or an offer by the next thing it asks of you: something on your device, a way into an account, money, facts about you, or nothing at all. Each kind of request puts something different at risk, is guarded by a different habit, and leads to a different set of names. The story that comes with it, who it says it is from, and what the sender is after in the end do not change the answer: what it asks you to do does. You can answer it from the message or the call itself, at the moment the request is made. Where a request asks for two of these things, the answer is the one higher in the list, because it reaches further: a program or a view of your screen reaches everything on the device, a way into an account reaches what the account holds, and money is gone once it is sent.
 
 > Ahmed works in a warehouse. An email reaches him from an address he does not know: 'Your wage slip for this month is attached. ⟦Open the file to see your pay⟧.' The attachment is called Wage-Slip.pdf.exe. Nobody has phoned him about it.
 
 Answer: **“Install something, open a file, or share your screen”**
 
-The email asks Ahmed to open a file: “Open the file to see your pay”. That is a request to open a file on his computer, so the key’s answer is the one for something on a device. Nothing in it asks for a password, a code, money or facts about him, so the later answers do not apply.
+The email asks Ahmed to open a file: “Open the file to see your pay”. That is a request to open a file on his computer, so the answer is the one for something on a device. Nothing in it asks for a password, a code, money or facts about him, so the later answers do not apply.
 
 The story, a wage slip, is what makes it feel ordinary. The question looks at what is asked, and what is asked is to open a file.
 
@@ -1020,7 +1020,7 @@ Still possible: all four names this unit teaches.
 
 **Question 2 of 2: How did it come to you?**
 
-What it is for: tells apart the three ways scams get onto a device, and a real installation, by how the request reached you. Once a program is on your device, or someone can see your screen, they can watch everything you do there, so what decides it is how you came to be asked. Each of the four names is defined by that one thing, so this part of the key has one question. You can answer it at the moment you are asked, before you install, open or share anything.
+What it is for: tells apart the three ways scams get onto a device, and a real installation, by how the request reached you. Once a program is on your device, or someone can see your screen, they can watch everything you do there, so what decides it is how you came to be asked. Each of the four names is defined by that one thing, so this part has one question. You can answer it at the moment you are asked, before you install, open or share anything.
 
 > Ahmed works in a warehouse. ⟦An email reaches him from an address he does not know⟧: 'Your wage slip for this month is attached. Open the file to see your pay.' The attachment is called Wage-Slip.pdf.exe. ⟦Nobody has phoned him about it⟧.
 
@@ -1048,17 +1048,17 @@ Still possible: **Malware**. Ruled out: **Real installation**, **Tech-support sc
 
 For **Real installation** you must be able to point to this: an install, an update or a screen share that you started yourself, through a way you already had (the company’s own website, your device’s app store or its own update menu, or the company’s number that you looked up and rang), and nobody contacting you first to ask for it. Ahmed did not decide to get any program, and he went nowhere to fetch one. The file came to him, and a reason to run it came with it.
 
-It is the question from Lena and her photo editor. Before this file or link reached you, did you set out to get this software yourself, from the maker’s own website or your app store? Or did it arrive in a message? Here the file arrived in a message from an address he does not know, so the key’s answer is **“A file or a link in a message, for you to open”**.
+It is the question from Lena and her photo editor. Before this file or link reached you, did you set out to get this software yourself, from the maker’s own website or your app store? Or did it arrive in a message? Here the file arrived in a message from an address he does not know, so the answer is **“A file or a link in a message, for you to open”**.
 
 **Does it look like a case you know?**
 
-The key has given its answer. Now take a second look of a different kind: does this case look like one you know? It should bring back the invoice file: an email from an address nobody knows, a reason to open a file, and a name that ends like a program.
+You have your answer. Now take a second look of a different kind: does this case look like one you know? It should bring back the invoice file: an email from an address nobody knows, a reason to open a file, and a name that ends like a program.
 
-Here the key and the likeness agree, so the answer stands. The key’s question comes first, because it makes you point at words in the case. The likeness is only a second look. When the two disagree, do not pick the one that you prefer. Go back to the key’s question and find the words in the case that answer it. The second whole case shows how.
+Here the questions and the likeness agree, so the answer stands. The question comes first, because it makes you point at words in the case. The likeness is only a second look. When the two disagree, do not pick the one that you prefer. Go back to the question and find the words in the case that answer it. The second whole case shows how.
 
 ### 29. A second whole case, where the story points the wrong way
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 29 of 32*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 29 of 32*
 
 [reviewers only: card kind `worked`, id `worked-form`]
 
@@ -1076,9 +1076,9 @@ What it is for: sorts a message, a call or an offer by the next thing it asks of
 
 Answer: **“Install something, open a file, or share your screen”**
 
-The man asks Mara to open a file and run it: “Open it and run it”. That is a request to run a file on her device, so the key’s answer is the one for something on a device.
+The man asks Mara to open a file and run it: “Open it and run it”. That is a request to run a file on her device, so the answer is the one for something on a device.
 
-A refund is mentioned, and so is money, but nobody asks Mara to pay or send anything. And where a request asks for two things, the key takes the earlier one in its list, and something on a device comes before money.
+A refund is mentioned, and so is money, but nobody asks Mara to pay or send anything. And where a request asks for two things, the answer is the earlier one in the list, and something on a device comes before money.
 
 Still possible: all four names this unit teaches.
 
@@ -1092,7 +1092,7 @@ Answer: **“Someone sorting out a refund or your bank account”**
 
 Now ask how it came to her. A man is on the phone with her: “We have charged you twice this year, so I owe you £60” and “put the money back while you wait”. He says that she is owed money, and he asks her to run a file and let him watch while he puts the money back. So the reason given is a refund, and a person is on the line.
 
-The file does arrive in an email, and that is why the case can look like a file in a message. But that answer is for the case where nobody is on a call with you. Here someone is, so the key’s answer is the one for a refund.
+The file does arrive in an email, and that is why the case can look like a file in a message. But that answer is for the case where nobody is on a call with you. Here someone is, so the answer is the one for a refund.
 
 Still possible: **Refund scam**. Ruled out: **Real installation**, **Malware** and **Tech-support scam**.
 
@@ -1112,13 +1112,13 @@ Still possible: **Refund scam**. Ruled out: **Real installation**, **Malware** a
 
 For **Malware** you must be able to point to this: a file or a link that came in a message, a reason given to open, run or install it, and nobody on a call with you. The file did arrive in a message, but the case also has a person on a call with her, and that person is the one asking her to run it. As soon as someone is with you, a file is not the answer.
 
-It is the question from the refund call to Hal. Is someone on a call or in a chat with you right now, asking you to open it and talking about a refund or a bank account? Or did it simply arrive? Here someone is on the line, saying that a refund is owed, so the key’s answer is **“Someone sorting out a refund or your bank account”**.
+It is the question from the refund call to Hal. Is someone on a call or in a chat with you right now, asking you to open it and talking about a refund or a bank account? Or did it simply arrive? Here someone is on the line, saying that a refund is owed, so the answer is **“Someone sorting out a refund or your bank account”**.
 
 **Does it look like a case you know?**
 
-Now the second look: does this case look like one you know? A form to open and run, sent by email, may bring back the invoice file first, and that case was **Malware**. So here the likeness and the key seem to disagree.
+Now the second look: does this case look like one you know? A form to open and run, sent by email, may bring back the invoice file first, and that case was **Malware**. So here the likeness and the questions seem to disagree.
 
-When that happens, go back to the key’s question and find the words in the case that answer it. They are “We have charged you twice this year, so I owe you £60” and “put the money back while you wait”. The invoice file has nothing like them: nobody was on the phone, and nobody spoke of money owed. The energy refund has: a caller, a refund owed, and a request to watch the device. So the case this one really looks like is the energy refund, and the key’s answer stands.
+When that happens, go back to the question and find the words in the case that answer it. They are “We have charged you twice this year, so I owe you £60” and “put the money back while you wait”. The invoice file has nothing like them: nobody was on the phone, and nobody spoke of money owed. The energy refund has: a caller, a refund owed, and a request to watch the device. So the case this one really looks like is the energy refund, and the answer stands.
 
 ### The drill
 
@@ -1126,7 +1126,7 @@ The cards are out of view from here, and every case is new. The drill has five s
 
 Real installations are mixed in on purpose. One of the four names is for the real thing, and you will need it as often as the other three. A scam is much easier to spot when you know what the real thing looks like, and you will be asked to tell them apart without being told which is which.
 
-#### Stage 1 of 5. The key’s answers are shown for each case. Give the name that goes with them. This stage practises one thing: which name goes with which answer.
+#### Stage 1 of 5. The answers are shown for each case. Give the name that goes with them. This stage practises one thing: which name goes with which answer.
 
 The names offered are the four this unit teaches: Real installation / Malware / Tech-support scam / Refund scam.
 
@@ -1146,7 +1146,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Malware**: She did follow a button, but it was on a website she had saved, not a link in a message that came to her. Nothing was sent to her.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Malware**, the look-alike card’s lines follow: Both put a program on your device, and both end in the same box on the computer asking whether to allow changes. In **Real installation** you decided to get the software and fetched it yourself, from the maker’s own website or your device’s app store, through *a way you already had*. In **Malware** the file or the link came to you in a message that you did not ask for, and nobody was on a call with you. Before this file or link reached you, did you set out to get this software yourself, from the maker’s own website or your app store? Or did it arrive in a message?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “Something you started yourself, through a way you already had” (one tap opens the card).
 
 **Drill item 2 of 47**
@@ -1165,7 +1165,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Real installation**: Chloe did not set out to get anything. The file came to her, so she did not reach it through anything she already had.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Real installation**, the look-alike card’s lines follow: Both put a program on your device, and both end in the same box on the computer asking whether to allow changes. In **Real installation** you decided to get the software and fetched it yourself, from the maker’s own website or your device’s app store, through *a way you already had*. In **Malware** the file or the link came to you in a message that you did not ask for, and nobody was on a call with you. Before this file or link reached you, did you set out to get this software yourself, from the maker’s own website or your app store? Or did it arrive in a message?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “A harmful file or link sent in a message” (one tap opens the card).
 
 **Drill item 3 of 47**
@@ -1184,7 +1184,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Malware**: There is no file or link to open. The message gives him a number to ring, and a person on the line offers to fix a problem.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Malware**, the look-alike card’s lines follow: Both can start with a warning that says something is wrong with your device, and both can end with a program on it. In **Tech-support scam** a person is involved: you ring a number, or someone rings you, and they ask you to install something or to let them watch. In **Malware** a file or a link has come to you in a message, and nobody is on a call with you. Is there a person on a call, or a number to ring, who will talk you through it? Or is there only a file or a link for you to open yourself?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “A made-up problem with your device, and someone offering to fix it” (one tap opens the card).
 
 **Drill item 4 of 47**
@@ -1203,7 +1203,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Tech-support scam**: No fault with her device is mentioned. The reason the man gives for wanting to see it is a payment she is owed.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Tech-support scam**, the look-alike card’s lines follow: In both, a person you have reached by phone asks to see or control your device, and says that it is to put something right. In **Tech-support scam** the reason given for the request is a problem with your device. In **Refund scam** the reason given is money: a refund that you are owed, or a bank account that needs attention. What reason does the person give for wanting to see or control the device: a problem with the device itself, or money, whether a refund or a bank account?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “A refund sorted out while someone watches your screen” (one tap opens the card).
 
 **Drill item 5 of 47**
@@ -1222,7 +1222,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Real installation**: Rae did not go anywhere to get this. It was sent to her, with a story that fits a kitchen she may really be planning.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Real installation**, the look-alike card’s lines follow: Both put a program on your device, and both end in the same box on the computer asking whether to allow changes. In **Real installation** you decided to get the software and fetched it yourself, from the maker’s own website or your device’s app store, through *a way you already had*. In **Malware** the file or the link came to you in a message that you did not ask for, and nobody was on a call with you. Before this file or link reached you, did you set out to get this software yourself, from the maker’s own website or your app store? Or did it arrive in a message?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “A harmful file or link sent in a message” (one tap opens the card).
 
 **Drill item 6 of 47**
@@ -1241,7 +1241,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Malware**: The warning box is a reason to take care, but nothing was sent to him. He fetched the program, from an address he typed, and nobody contacted him.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Malware**, the look-alike card’s lines follow: Both put a program on your device, and both end in the same box on the computer asking whether to allow changes. In **Real installation** you decided to get the software and fetched it yourself, from the maker’s own website or your device’s app store, through *a way you already had*. In **Malware** the file or the link came to you in a message that you did not ask for, and nobody was on a call with you. Before this file or link reached you, did you set out to get this software yourself, from the maker’s own website or your app store? Or did it arrive in a message?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “Something you started yourself, through a way you already had” (one tap opens the card).
 
 **Drill item 7 of 47**
@@ -1260,7 +1260,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Tech-support scam**: The caller is not offering to fix anything on her device. The reason he gives for wanting to reach it is money owed to her.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Tech-support scam**, the look-alike card’s lines follow: In both, a person you have reached by phone asks to see or control your device, and says that it is to put something right. In **Tech-support scam** the reason given for the request is a problem with your device. In **Refund scam** the reason given is money: a refund that you are owed, or a bank account that needs attention. What reason does the person give for wanting to see or control the device: a problem with the device itself, or money, whether a refund or a bank account?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “A refund sorted out while someone watches your screen” (one tap opens the card).
 
 **Drill item 8 of 47**
@@ -1279,7 +1279,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Refund scam**: No money is mentioned: no refund and no bank. The reason given for wanting to see the computer is a fault in it.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Refund scam**, the look-alike card’s lines follow: In both, a person you have reached by phone asks to see or control your device, and says that it is to put something right. In **Tech-support scam** the reason given for the request is a problem with your device. In **Refund scam** the reason given is money: a refund that you are owed, or a bank account that needs attention. What reason does the person give for wanting to see or control the device: a problem with the device itself, or money, whether a refund or a bank account?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “A made-up problem with your device, and someone offering to fix it” (one tap opens the card).
 
 #### Stage 2 of 5. One question at a time.
@@ -1300,7 +1300,7 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **Something you started yourself, through a way you already had.**” Lucy went to the maker through an address she had saved: “the web address of a free reader's maker, which she saved in her bookmarks last year” and “Nobody has contacted her about it”. She started it, and nobody contacted her. This answer leads to **Real installation**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **A file or a link in a message, for you to open**: Nothing was sent to her. She chose the reader and went to the maker through an address she had saved.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 10 of 47**
@@ -1319,7 +1319,7 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **A file or a link in a message, for you to open.**” A file arrived in an email from a stranger, with a reason to open it: “Open it and press Enable Content to see the formatting” and “The sender is not an applicant he knows”. Nobody is on a call with Hiro. This answer leads to **Malware**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **Something you started yourself, through a way you already had**: Hiro did not set out to get anything, and went nowhere to fetch it. The file came to him.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 11 of 47**
@@ -1338,7 +1338,7 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **Someone offering to fix a problem with your device.**” The number came from a paid result, and the person who answers wants to see the phone to fix the problem: “rings the first number, which has 'Sponsored' beside it” and “if Tess lets her see her phone”. A *search advert* is not *a way you already had*, even when you chose what to search for. This answer leads to **Tech-support scam**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **Something you started yourself, through a way you already had**: Tess went looking herself, and that is how a search begins. But the number came from a paid result, which she did not already have, and a person offered to fix a problem.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 12 of 47**
@@ -1357,7 +1357,7 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **Someone sorting out a refund or your bank account.**” The caller says that a refund is due, and asks to see Lou’s device while it is paid: “a refund is due to you” and “press Share so that I can see your screen and pay it back”. The reason is money, and she did not start the call. This answer leads to **Refund scam**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **Someone offering to fix a problem with your device**: No fault with her device is mentioned. The reason for watching is money owed to her.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 13 of 47**
@@ -1376,7 +1376,7 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **Something you started yourself, through a way you already had.**” Aziz started the call himself, on a number he already had: “rings the IT help desk on the number printed on the back of his work badge” and “Nobody had contacted him”. A helper may ask to see the device, and nobody contacted him first. This answer leads to **Real installation**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **Someone offering to fix a problem with your device**: A helper asks to see his device, as a scam call would. But he rang, on a number from his own badge, and nobody contacted him first.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 14 of 47**
@@ -1395,7 +1395,7 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **A file or a link in a message, for you to open.**” A link arrived in a chat, with a reason to open it and download something: “A message arrives in Lisa's chat app from her friend Anna” and “Open the link and download the player to watch it”. It looks as if it comes from a friend, and nobody is on a call with Lisa. This answer leads to **Malware**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **Something you started yourself, through a way you already had**: Lisa did not set out to get a player. A link came to her in a chat, even though it seems to come from a friend.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 15 of 47**
@@ -1414,7 +1414,7 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **Someone offering to fix a problem with your device.**” A message says that the software has a problem and offers someone to fix it: “Our monitoring shows that your accounts software is running slowly” and “Call our support team on 0800 555 0124 and we will fix it remotely today”. Fran has no such service, so the sender cannot know anything about her computer. This answer leads to **Tech-support scam**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **A file or a link in a message, for you to open**: The email holds no file or link to open. It gives her a number to ring and offers to fix a problem.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 16 of 47**
@@ -1433,7 +1433,7 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **Someone sorting out a refund or your bank account.**” The caller says that Nadir is owed money, and asks him to install a tool while it is paid back: “We charged your card twice, so I owe you £89” and “install the help tool from the link I will text you”. The reason is a refund, and a person is on the call. This answer leads to **Refund scam**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **Someone offering to fix a problem with your device**: No fault with his device is mentioned. The reason for installing the tool is money owed to him.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 17 of 47**
@@ -1467,7 +1467,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Shown as soon as you answer**
 
-- The answer is: “What reason does the person give for wanting to see or control the device: a problem with the device itself, or money, whether a refund or a bank account?” In both, a person you have reached by phone asks to see or control your device, and says that it is to put something right. In **Tech-support scam** the reason given for the request is a problem with your device. In **Refund scam** the reason given is money: a refund that you are owed, or a bank account that needs attention. When a case shows both **“Someone offering to fix a problem with your device”** and talk of a refund, an overpayment or a problem with your bank account, the key’s answer is **“Someone sorting out a refund or your bank account”**.
+- The answer is: “What reason does the person give for wanting to see or control the device: a problem with the device itself, or money, whether a refund or a bank account?” In both, a person you have reached by phone asks to see or control your device, and says that it is to put something right. In **Tech-support scam** the reason given for the request is a problem with your device. In **Refund scam** the reason given is money: a refund that you are owed, or a bank account that needs attention. When a case shows both **“Someone offering to fix a problem with your device”** and talk of a refund, an overpayment or a problem with your bank account, the answer is **“Someone sorting out a refund or your bank account”**.
 - If you chose “Who started it, and where did the number or the address come from: from something that you already had, or from a page, a message, a call or the results of a search?”: that question separates **Tech-support scam** and **Real installation**.
 - If you chose “Is there a person on a call, or a number to ring, who will talk you through it? Or is there only a file or a link for you to open yourself?”: that question separates **Tech-support scam** and **Malware**.
 - If you chose “Is someone on a call or in a chat with you right now, asking you to open it and talking about a refund or a bank account? Or did it simply arrive?”: that question separates **Malware** and **Refund scam**.
@@ -1578,8 +1578,8 @@ Shown to you, with the words that decide each answer marked:
 **Shown as soon as you answer**
 
 - If you are right: “Right: **Sign in, give a code, or allow an app.**” The app asks Isla to type in a *one-time code* that has just been sent to her: “Enter the code we have just texted you”. That is a request for a way into an account. She started the move herself, and the first question does not ask about that.
-- If you miss: “The answer is …”, the same reason, and then the line built from the key for the answer you chose.
-- Then, right or wrong: “This case leaves the part of the key you have been taught. The questions that follow this answer come in a part of the course you have not reached, so the case stops here.”
+- If you miss: “The answer is …”, the same reason, and then the line built from the answers’ own wording for the answer you chose.
+- Then, right or wrong: “The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.”
 
 **Drill item 25 of 47**
 
@@ -1597,13 +1597,13 @@ Shown to you, with the words that decide each answer marked:
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Pay or send money.**” The email asks each member to pay: “Please pay the treasurer by bank transfer by the 12th”. A transfer is one of the ways the key counts as paying.
-- If you miss: “The answer is …”, the same reason, and then the line built from the key for the answer you chose.
-- Then, right or wrong: “This case leaves the part of the key you have been taught. The questions that follow this answer come in a part of the course you have not reached, so the case stops here.”
+- If you are right: “Right: **Pay or send money.**” The email asks each member to pay: “Please pay the treasurer by bank transfer by the 12th”. A transfer is one of the ways of paying.
+- If you miss: “The answer is …”, the same reason, and then the line built from the answers’ own wording for the answer you chose.
+- Then, right or wrong: “The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.”
 
-#### Stage 3 of 5. The first answer is shown. Answer the rest, then give the name. From here on your route is marked as well as the name: a right name reached by a wrong answer on the way counts as a miss.
+#### Stage 3 of 5. The first answer is shown. Answer the rest, then give the name. From here on your answers on the way are marked as well as the name: a right name reached by a wrong answer counts as a miss.
 
-Each question is shown with all of its answers from the key, in the key’s order, and the names offered are the four this unit teaches.
+Each question is shown with all of its answers, in order, and the names offered are the four this unit teaches.
 
 **Drill item 26 of 47**
 
@@ -1620,10 +1620,10 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Malware**: Nothing was sent to her. She chose the game and fetched it, and no message or call came first.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - If you chose **A file or a link in a message, for you to open**: Nothing was sent to her. She chose the game and fetched it, and no message or call came first.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Malware**, the look-alike card’s lines follow: Both put a program on your device, and both end in the same box on the computer asking whether to allow changes. In **Real installation** you decided to get the software and fetched it yourself, from the maker’s own website or your device’s app store, through *a way you already had*. In **Malware** the file or the link came to you in a message that you did not ask for, and nobody was on a call with you. Before this file or link reached you, did you set out to get this software yourself, from the maker’s own website or your app store? Or did it arrive in a message?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Something you started yourself, through a way you already had” (one tap opens the card).
 
 **Drill item 27 of 47**
@@ -1641,10 +1641,10 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Real installation**: Dan did not decide to get a viewer. A message told him to, so he did not come to it through anything he already had.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - If you chose **Something you started yourself, through a way you already had**: Dan did not decide to get a viewer. A message told him to, so he did not come to it through anything he already had.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Real installation**, the look-alike card’s lines follow: Both put a program on your device, and both end in the same box on the computer asking whether to allow changes. In **Real installation** you decided to get the software and fetched it yourself, from the maker’s own website or your device’s app store, through *a way you already had*. In **Malware** the file or the link came to you in a message that you did not ask for, and nobody was on a call with you. Before this file or link reached you, did you set out to get this software yourself, from the maker’s own website or your app store? Or did it arrive in a message?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A harmful file or link sent in a message” (one tap opens the card).
 
 **Drill item 28 of 47**
@@ -1662,10 +1662,10 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Malware**: The email is a message, but it holds no file or link to open. It gives him a number to ring, and a person on the line asks to see the computer.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - If you chose **A file or a link in a message, for you to open**: The email is a message, but it holds no file or link to open. It gives him a number to ring, and a person on the line asks to see the computer.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Malware**, the look-alike card’s lines follow: Both can start with a warning that says something is wrong with your device, and both can end with a program on it. In **Tech-support scam** a person is involved: you ring a number, or someone rings you, and they ask you to install something or to let them watch. In **Malware** a file or a link has come to you in a message, and nobody is on a call with you. Is there a person on a call, or a number to ring, who will talk you through it? Or is there only a file or a link for you to open yourself?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A made-up problem with your device, and someone offering to fix it” (one tap opens the card).
 
 **Drill item 29 of 47**
@@ -1683,15 +1683,15 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Malware**: A link and a program to install are in it, but a person is on a call with him, and the reason given is money owed to him. A file or a link with nobody on a call is the other answer.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - If you chose **A file or a link in a message, for you to open**: A link and a program to install are in it, but a person is on a call with him, and the reason given is money owed to him. A file or a link with nobody on a call is the other answer.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Malware**, the look-alike card’s lines follow: In both, you may be sent a file or a link to open, and in both the story can be about a payment or an account. In **Refund scam** a person is on a call with you, and gives money as the reason: a refund owed to you, or a danger to your bank account. In **Malware** nobody is on a call with you: the file or the link just arrived in a message. Is someone on a call or in a chat with you right now, asking you to open it and talking about a refund or a bank account? Or did it simply arrive?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A refund sorted out while someone watches your screen” (one tap opens the card).
 
-#### Stage 4 of 5. No help. Answer every question in the key’s order, then give the name.
+#### Stage 4 of 5. No help. Answer every question in order, then give the name.
 
-Each question is shown with all of its answers from the key, in the key’s order, and the names offered are the four this unit teaches.
+Each question is shown with all of its answers, in order, and the names offered are the four this unit teaches.
 
 **Drill item 30 of 47**
 
@@ -1706,10 +1706,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What is it asking you to do right now? **Install something, open a file, or share your screen.** The box asks Greta to allow a program to make changes to her computer: “Do you want to allow this app to make changes to your device?”. A request to install something is a request about the device, and the first question does not say whether it is real.
   - If you chose **A file or a link in a message, for you to open**: Nothing was sent to her. The box is the same box a harmful program shows, and it does not show how she came to the program.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Malware**, the look-alike card’s lines follow: Both put a program on your device, and both end in the same box on the computer asking whether to allow changes. In **Real installation** you decided to get the software and fetched it yourself, from the maker’s own website or your device’s app store, through *a way you already had*. In **Malware** the file or the link came to you in a message that you did not ask for, and nobody was on a call with you. Before this file or link reached you, did you set out to get this software yourself, from the maker’s own website or your app store? Or did it arrive in a message?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the program had been attached to an email from someone she did not know, it would be **“A file or a link in a message, for you to open”**.
 - Taught on: “Something you started yourself, through a way you already had” (one tap opens the card).
 
@@ -1726,10 +1726,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What is it asking you to do right now? **Install something, open a file, or share your screen.** The email asks Ben to run a file: “Please run the file Completion-Pack.exe to open them”. A request to run a file is a request about his device.
   - If you chose **Something you started yourself, through a way you already had**: Ben did not decide to get any program. It came to him, and he went nowhere to fetch it.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Real installation**, the look-alike card’s lines follow: Both put a program on your device, and both end in the same box on the computer asking whether to allow changes. In **Real installation** you decided to get the software and fetched it yourself, from the maker’s own website or your device’s app store, through *a way you already had*. In **Malware** the file or the link came to you in a message that you did not ask for, and nobody was on a call with you. Before this file or link reached you, did you set out to get this software yourself, from the maker’s own website or your app store? Or did it arrive in a message?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If Ben had been buying a house and had typed in the solicitor’s own web address to download his papers from a page he had used before, it would be **“Something you started yourself, through a way you already had”**.
 - Taught on: “A harmful file or link sent in a message” (one tap opens the card).
 
@@ -1744,12 +1744,12 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you are right: “Right: **Tech-support scam**.” How did it come to you? **Someone offering to fix a problem with your device.** A warning announces a problem that a web page cannot know about, and offers someone to ring: “Your data is being stolen” and “Call Support now on 0800 555 0155”. Nothing was sent to him, and nothing is offered about money.
   - Why not **Malware**: There is no file or link to open. The page gives him a number to ring.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What is it asking you to do right now? **Install something, open a file, or share your screen.** The warning says that his device has a problem and gives him someone to ring to deal with it: “Call Support now on 0800 555 0155”. The key counts that as a request about the device.
+  - What is it asking you to do right now? **Install something, open a file, or share your screen.** The warning says that his device has a problem and gives him someone to ring to deal with it: “Call Support now on 0800 555 0155”. That counts as a request about the device.
   - If you chose **A file or a link in a message, for you to open**: There is no file or link to open. The page gives him a number to ring.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Malware**, the look-alike card’s lines follow: Both can start with a warning that says something is wrong with your device, and both can end with a program on it. In **Tech-support scam** a person is involved: you ring a number, or someone rings you, and they ask you to install something or to let them watch. In **Malware** a file or a link has come to you in a message, and nobody is on a call with you. Is there a person on a call, or a number to ring, who will talk you through it? Or is there only a file or a link for you to open yourself?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the red box had come in an email, with a file to open and no number to ring, it would be **“A file or a link in a message, for you to open”**.
 - Taught on: “A made-up problem with your device, and someone offering to fix it” (one tap opens the card).
 
@@ -1766,10 +1766,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What is it asking you to do right now? **Install something, open a file, or share your screen.** The caller asks Cass to share her device: “Press Share in the meeting app”. A request to let someone watch your device is a request about the device, whatever the reason given.
   - If you chose **Someone offering to fix a problem with your device**: No fault with her device is mentioned. The reason for wanting to watch is money owed to her.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Tech-support scam**, the look-alike card’s lines follow: In both, a person you have reached by phone asks to see or control your device, and says that it is to put something right. In **Tech-support scam** the reason given for the request is a problem with your device. In **Refund scam** the reason given is money: a refund that you are owed, or a bank account that needs attention. What reason does the person give for wanting to see or control the device: a problem with the device itself, or money, whether a refund or a bank account?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the caller had said that her device had a fault, and offered to fix it, it would be **“Someone offering to fix a problem with your device”**.
 - Taught on: “A refund sorted out while someone watches your screen” (one tap opens the card).
 
@@ -1786,10 +1786,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What is it asking you to do right now? **Install something, open a file, or share your screen.** The adviser asks Sana to share her device: “Please open the meeting app and press Share”. That is a request about the device, whoever makes it.
   - If you chose **Someone offering to fix a problem with your device**: An adviser offers to look at a fault and asks to see the device, as in a scam call. But Sana rang, on a number she already had, and nobody contacted her first.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Tech-support scam**, the look-alike card’s lines follow: In both, you are on the phone with a helper who asks to see or control your device, and in both the company’s real name is used. In **Real installation** you started the call yourself, on a number that you already had, such as the one on your bill or contract, and nobody contacted you first. In **Tech-support scam** someone contacted you first, or what put you in touch was a *search advert*, a pop-up or a message, and none of those is *a way you already had*. Who started it, and where did the number or the address come from: from something that you already had, or from a page, a message, a call or the results of a search?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If a text had told her to ring a number about errors on her phone, and she had phoned that number, it would be **“Someone offering to fix a problem with your device”**.
 - Taught on: “Something you started yourself, through a way you already had” (one tap opens the card).
 
@@ -1806,10 +1806,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What is it asking you to do right now? **Install something, open a file, or share your screen.** The text asks Bo to install an app from a link: “Install it now from this link”. That is a request about his device.
   - If you chose **Something you started yourself, through a way you already had**: It is a bank’s app, and Bo may well want his bank’s app. But he did not go to the bank or to an app store: it came to him in a text.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Real installation**, the look-alike card’s lines follow: Both put a program on your device, and both end in the same box on the computer asking whether to allow changes. In **Real installation** you decided to get the software and fetched it yourself, from the maker’s own website or your device’s app store, through *a way you already had*. In **Malware** the file or the link came to you in a message that you did not ask for, and nobody was on a call with you. Before this file or link reached you, did you set out to get this software yourself, from the maker’s own website or your app store? Or did it arrive in a message?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If Bo had opened his phone’s app store himself and searched for the bank’s name, it would be **“Something you started yourself, through a way you already had”**.
 - Taught on: “A harmful file or link sent in a message” (one tap opens the card).
 
@@ -1826,10 +1826,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What is it asking you to do right now? **Install something, open a file, or share your screen.** The caller asks to see Colin’s laptop: “I can remove them if you let me see your laptop”. Letting someone watch your device is a request about the device.
   - If you chose **Someone sorting out a refund or your bank account**: The reason given for wanting to see the laptop is a problem with it, not money owed to him or an account that needs attention.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Refund scam**, the look-alike card’s lines follow: In both, a person you have reached by phone asks to see or control your device, and says that it is to put something right. In **Tech-support scam** the reason given for the request is a problem with your device. In **Refund scam** the reason given is money: a refund that you are owed, or a bank account that needs attention. What reason does the person give for wanting to see or control the device: a problem with the device itself, or money, whether a refund or a bank account?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If she had said that he had been charged twice and she owed him a refund, it would be **“Someone sorting out a refund or your bank account”**.
 - Taught on: “A made-up problem with your device, and someone offering to fix it” (one tap opens the card).
 
@@ -1846,10 +1846,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What is it asking you to do right now? **Install something, open a file, or share your screen.** The caller asks Ruth to share her device: “please press Share in the meeting app”. That is a request about the device.
   - If you chose **Someone offering to fix a problem with your device**: The caller is not offering to fix a fault with her device. The reason for watching is a refund and her bank.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Tech-support scam**, the look-alike card’s lines follow: In both, a person you have reached by phone asks to see or control your device, and says that it is to put something right. In **Tech-support scam** the reason given for the request is a problem with your device. In **Refund scam** the reason given is money: a refund that you are owed, or a bank account that needs attention. What reason does the person give for wanting to see or control the device: a problem with the device itself, or money, whether a refund or a bank account?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If he had said that the courier’s tracking page had found errors on her computer, it would be **“Someone offering to fix a problem with your device”**.
 - Taught on: “A refund sorted out while someone watches your screen” (one tap opens the card).
 
@@ -1866,11 +1866,11 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What is it asking you to do right now? **Install something, open a file, or share your screen.** The box asks Ewa to allow a program to make changes to her computer: “Do you want to allow this app to make changes to your device?”. That is a request about the device.
   - If you chose **Someone offering to fix a problem with your device**: A paid advert is how the helpline case went wrong, but there the person rang the number in the advert. Ewa ignored it and typed the address herself.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Tech-support scam**, the look-alike card’s lines follow: In both, you are on the phone with a helper who asks to see or control your device, and in both the company’s real name is used. In **Real installation** you started the call yourself, on a number that you already had, such as the one on your bill or contract, and nobody contacted you first. In **Tech-support scam** someone contacted you first, or what put you in touch was a *search advert*, a pop-up or a message, and none of those is *a way you already had*. Who started it, and where did the number or the address come from: from something that you already had, or from a page, a message, a call or the results of a search?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *The helpline search*, which was **Tech-support scam**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *The helpline search*, which was **Tech-support scam**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If she had clicked the advert and downloaded from the page it led to, the address would not be one she already had, and the answer would not be **“Something you started yourself, through a way you already had”**.
 - Taught on: “Something you started yourself, through a way you already had” (one tap opens the card).
 
@@ -1887,11 +1887,11 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What is it asking you to do right now? **Install something, open a file, or share your screen.** A man asks to see Mick’s computer: “a man asks to see his computer”. Letting someone watch your device is a request about the device.
   - If you chose **Something you started yourself, through a way you already had**: Mick did set out to get a program, and that is how **Real installation** begins. But he did not go to the maker or to an app store: he followed a paid result, and a person offered to fix his computer.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Real installation**, the look-alike card’s lines follow: In both, you are on the phone with a helper who asks to see or control your device, and in both the company’s real name is used. In **Real installation** you started the call yourself, on a number that you already had, such as the one on your bill or contract, and nobody contacted you first. In **Tech-support scam** someone contacted you first, or what put you in touch was a *search advert*, a pop-up or a message, and none of those is *a way you already had*. Who started it, and where did the number or the address come from: from something that you already had, or from a page, a message, a call or the results of a search?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *The video-calling program*, which was **Real installation**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *The video-calling program*, which was **Real installation**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If he had typed the maker’s address into his browser and downloaded the reader from its own page, it would be **“Something you started yourself, through a way you already had”**.
 - Taught on: “A made-up problem with your device, and someone offering to fix it” (one tap opens the card).
 
@@ -1908,11 +1908,11 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What is it asking you to do right now? **Install something, open a file, or share your screen.** The email asks Ola to open a file and run it: “Open the attached form and run it to claim it”. That is a request about his device.
   - If you chose **Someone sorting out a refund or your bank account**: A refund is the story, as in the energy refund. But nobody is on a call with Ola, and nobody asks to see his device: the email only gives him a file to run.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Refund scam**, the look-alike card’s lines follow: In both, you may be sent a file or a link to open, and in both the story can be about a payment or an account. In **Refund scam** a person is on a call with you, and gives money as the reason: a refund owed to you, or a danger to your bank account. In **Malware** nobody is on a call with you: the file or the link just arrived in a message. Is someone on a call or in a chat with you right now, asking you to open it and talking about a refund or a bank account? Or did it simply arrive?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *The energy refund*, which was **Refund scam**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *The energy refund*, which was **Refund scam**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If a man had been on the phone, saying that a refund was owed and asking to see the device while Ola opened the file, it would be **“Someone sorting out a refund or your bank account”**.
 - Taught on: “A harmful file or link sent in a message” (one tap opens the card).
 
@@ -1929,11 +1929,11 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What is it asking you to do right now? **Install something, open a file, or share your screen.** The caller asks Imogen to install a tool: “Please install the Halbrook Help tool from the address I am texting you”. That is a request about her device, and the first question does not look at who is asking.
   - If you chose **Someone offering to fix a problem with your device**: She is offered help with something, and there is a tool to install, as in a call that offers to fix a problem with a device. But the problem named is with her bank account, not with her device.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Tech-support scam**, the look-alike card’s lines follow: In both, a person you have reached by phone asks to see or control your device, and says that it is to put something right. In **Tech-support scam** the reason given for the request is a problem with your device. In **Refund scam** the reason given is money: a refund that you are owed, or a bank account that needs attention. What reason does the person give for wanting to see or control the device: a problem with the device itself, or money, whether a refund or a bank account?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *The siren page*, which was **Tech-support scam**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *The siren page*, which was **Tech-support scam**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If the woman had said that her laptop had a fault and offered to fix it, it would be **“Someone offering to fix a problem with your device”**.
 - Taught on: “A refund sorted out while someone watches your screen” (one tap opens the card).
 
@@ -1954,8 +1954,8 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - If you are right: “Right: **Tell them about yourself.**” The form asks Mrs Khan to tell the website facts about herself: “The form asks for her date of birth and her place of birth”. Nothing in this case asks her to pay, sign in or install anything.
-- If you miss: “The answer is …”, the same reason, and then the line built from the key for the answer you chose.
-- Then, right or wrong: “This case leaves the part of the key you have been taught. The questions that follow this answer come in a part of the course you have not reached, so the case stops here.”
+- If you miss: “The answer is …”, the same reason, and then the line built from the answers’ own wording for the answer you chose.
+- Then, right or wrong: “The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.”
 
 **Drill item 43 of 47**
 
@@ -1974,8 +1974,8 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - If you are right: “Right: **Sign in, give a code, or allow an app.**” The app asks Isla to type in a *one-time code* that has just been sent to her: “Enter the code we have just texted you”. That is a request for a way into an account. She started the move herself, and the first question does not ask about that.
-- If you miss: “The answer is …”, the same reason, and then the line built from the key for the answer you chose.
-- Then, right or wrong: “This case leaves the part of the key you have been taught. The questions that follow this answer come in a part of the course you have not reached, so the case stops here.”
+- If you miss: “The answer is …”, the same reason, and then the line built from the answers’ own wording for the answer you chose.
+- Then, right or wrong: “The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.”
 
 #### Last stage. Each of these is something a person might say that uses one of this unit’s names, or reasons in one of its ways. Each has a fault. The first is worked for you. For the rest, answer before the fault is shown.
 
@@ -2010,7 +2010,7 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - The answer is: **Someone offering to fix a problem with your device.**
-- If you chose another answer, the line is built from the key, as for any other question.
+- If you chose another answer, the line is built from the answers’ own wording, as for any other question.
 - The fault: The claim treats a warning that will not close as proof that it comes from the computer. A web page can fill the window, play a sound and ignore the X, because it was built to, and it knows nothing about the computer it is shown on. What it asked is also the point: it gave him a number to ring so that someone would fix the device.
 - The claim, put right (always the last thing shown): The warning would not close, and that tells me nothing. What it did was give me a number to ring so that someone would fix my device, and that is **“Someone offering to fix a problem with your device”**. I can say so before I ring. To get rid of the page I close the browser through the computer’s own menu, and if I want to be sure I use *the check*.
 
@@ -2028,7 +2028,7 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - The answer is: **A file or a link in a message, for you to open.**
-- If you chose another answer, the line is built from the key, as for any other question.
+- If you chose another answer, the line is built from the answers’ own wording, as for any other question.
 - The fault: The claim treats the box as a sign that the program is safe. The box appears for every installation, real or harmful: it is the computer asking whether she agrees, and it says nothing about the program. What counts is how the program reached her, and it arrived in an email.
 - The claim, put right (always the last thing shown): The box tells me nothing about the program. What tells me is that the installer came to me in an email, with a reason to run it and nobody on a call. That is **“A file or a link in a message, for you to open”**, and the thing to do was not to run it.
 
@@ -2046,7 +2046,7 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - The answer is: **Something you started yourself, through a way you already had.**
-- If you chose another answer, the line is built from the key, as for any other question.
+- If you chose another answer, the line is built from the answers’ own wording, as for any other question.
 - The fault: The claim treats every request to install as a scam. The update was in the app store of his own phone, reached through a way he already had, and nobody had contacted him. That is the one name in this unit where nothing is wrong, and refusing it leaves him with old software that has had its faults found.
 - The claim, put right (always the last thing shown): The update was in the app store on my phone, which I already had, and nobody had contacted me about it. That is **“Something you started yourself, through a way you already had”**, and there was nothing to stop. Not every request to install is a scam. What I look at is how it came to me.
 
@@ -2064,21 +2064,21 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - The answer is: **Someone sorting out a refund or your bank account.**
-- If you chose another answer, the line is built from the key, as for any other question.
+- If you chose another answer, the line is built from the answers’ own wording, as for any other question.
 - The fault: The claim trusts a balance that appeared on a device that someone else was watching and controlling. While she was sharing it, the page could show any number. The money he sent back was his own. And the answer that mattered was clear before any of this: a caller said that he was owed a refund, and asked to see his device.
 - The claim, put right (always the last thing shown): A caller said that I was owed a refund and asked me to let her see my device. That is **“Someone sorting out a refund or your bank account”**, and that was the moment to stop and use *the check*. The balance on a page that someone else is watching tells me nothing, and I should never send money back because of it.
 
-**When the drill ends.** The learner sees their own results: first-try accuracy for each stage, whole routes beside single questions, the pair of names they mixed up most often, and what will come back and when. Anything missed was asked again before the drill ended. Nothing here is graded. A miss only decides what comes back.
+**When the drill ends.** The learner sees their own results: first-try accuracy for each stage, whole cases beside single questions, the pair of names they mixed up most often, and what will come back and when. Anything missed was asked again before the drill ended. Nothing here is graded. A miss only decides what comes back.
 
 ### 30. What to carry away
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 30 of 32*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 30 of 32*
 
 [reviewers only: card kind `recap`, id `recap`]
 
-You have now run the key on your own. This card puts the unit in one place, in the key’s words.
+You have now run the questions on your own. This card puts the unit in one place.
 
-**The key for this unit, in its own words**
+**This unit’s questions and answers**
 
 How did it come to you?
 - Someone offering to fix a problem with your device → Tech-support scam
@@ -2103,16 +2103,16 @@ How did it come to you?
 
 **To carry away**
 
-- Before any name, answer the key’s first question: what is it asking me to do? For all four names in this unit the answer is the same, **“Install something, open a file, or share your screen”**.
+- Before any name, answer the first question: what is it asking me to do? For all four names in this unit the answer is the same, **“Install something, open a file, or share your screen”**.
 - Then ask how it came to you, and put your finger on the words that show it: where you went, what arrived, what was offered. If you cannot point, you do not have an answer yet.
 - You can answer it at the moment you are asked. Do not wait to see what a file does or what a technician shows you: those can be known only afterwards, and by then it is too late to refuse.
 - The box that asks whether to allow changes, the name of the company and the name of the program do not change the answer. A number or an address from the results of a search, or from a *search advert*, is not *a way you already had*.
-- When a call shows a fault and a refund together, the key takes the refund. Whichever of the three it is, the next step for anything that came to you is the same: stop, and use *the check*.
+- When a call shows a fault and a refund together, the answer is the refund. Whichever of the three it is, the next step for anything that came to you is the same: stop, and use *the check*.
 - **Real installation** is one of the four, and you need to be able to say it. Treating every installation as a scam is a mistake of its own.
 
 ### 31. Where would you meet this?
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 31 of 32*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 31 of 32*
 
 [reviewers only: card kind `transfer`, id `transfer`]
 
@@ -2135,7 +2135,7 @@ One line is enough. It is kept on this device only and is never marked.
 
 ### 32. A plan, if you want one
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 32 of 32*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 32 of 32*
 
 [reviewers only: card kind `plan`, id `plan`]
 
@@ -2159,7 +2159,7 @@ Or write your own: If …, then I will …
 
 ## After the unit: what comes back on later days
 
-A name that is due returns as a case the learner has not seen, next to a case of the name they most often confuse it with. Each is run as a whole route. These are the fresh cases held back for that purpose: three for each name, one for each scheduled return. The first return is about two days after the drill, the next about a week after that, the next about three and a half weeks later.
+A name that is due returns as a case the learner has not seen, next to a case of the name they most often confuse it with. Each is run as a whole case: every question, then the name. These are the fresh cases held back for that purpose: three for each name, one for each scheduled return. The first return is about two days after the drill, the next about a week after that, the next about three and a half weeks later.
 
 **Return case 1 of 16**
 
@@ -2174,10 +2174,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What is it asking you to do right now? **Install something, open a file, or share your screen.** The store asks Hana to install an app: “She presses Install”. A request to install something is a request about the device.
   - If you chose **A file or a link in a message, for you to open**: No link or file was sent to her. She chose the app and fetched it from the store.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Malware**, the look-alike card’s lines follow: Both put a program on your device, and both end in the same box on the computer asking whether to allow changes. In **Real installation** you decided to get the software and fetched it yourself, from the maker’s own website or your device’s app store, through *a way you already had*. In **Malware** the file or the link came to you in a message that you did not ask for, and nobody was on a call with you. Before this file or link reached you, did you set out to get this software yourself, from the maker’s own website or your app store? Or did it arrive in a message?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If a text had told her to install the Lingua app from a link, it would be **“A file or a link in a message, for you to open”**.
 - Taught on: “Something you started yourself, through a way you already had” (one tap opens the card).
 
@@ -2194,10 +2194,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What is it asking you to do right now? **Install something, open a file, or share your screen.** The store asks Dev to install an app: “presses Get”. That is a request about the device.
   - If you chose **Someone offering to fix a problem with your device**: Nobody offered to fix a problem. He wanted the app himself, and used an address from the box the doorbell came in.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Tech-support scam**, the look-alike card’s lines follow: In both, you are on the phone with a helper who asks to see or control your device, and in both the company’s real name is used. In **Real installation** you started the call yourself, on a number that you already had, such as the one on your bill or contract, and nobody contacted you first. In **Tech-support scam** someone contacted you first, or what put you in touch was a *search advert*, a pop-up or a message, and none of those is *a way you already had*. Who started it, and where did the number or the address come from: from something that you already had, or from a page, a message, a call or the results of a search?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If he had searched for the maker and phoned the first number with “Ad” beside it, it would be **“Someone offering to fix a problem with your device”**.
 - Taught on: “Something you started yourself, through a way you already had” (one tap opens the card).
 
@@ -2214,10 +2214,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What is it asking you to do right now? **Install something, open a file, or share your screen.** The menu asks Ola to install updates: “presses Install now”. That is a request about the device.
   - If you chose **A file or a link in a message, for you to open**: A message says that updates are ready, but it is the laptop’s own message, and he went to his own menu. Nothing was sent to him in a message with a link.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Malware**, the look-alike card’s lines follow: Both put a program on your device, and both end in the same box on the computer asking whether to allow changes. In **Real installation** you decided to get the software and fetched it yourself, from the maker’s own website or your device’s app store, through *a way you already had*. In **Malware** the file or the link came to you in a message that you did not ask for, and nobody was on a call with you. Before this file or link reached you, did you set out to get this software yourself, from the maker’s own website or your app store? Or did it arrive in a message?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If an email had told him to install an update from a link, it would be **“A file or a link in a message, for you to open”**.
 - Taught on: “Something you started yourself, through a way you already had” (one tap opens the card).
 
@@ -2234,10 +2234,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What is it asking you to do right now? **Install something, open a file, or share your screen.** The helper asks Wanda to share her phone: “Press Share when it opens”. That is a request about the device.
   - If you chose **Someone sorting out a refund or your bank account**: A helper asks to see a phone, as a caller would. But no refund and no bank account is mentioned, and Wanda rang, on a number she already had.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Refund scam**, the look-alike card’s lines follow: In both, you may end up installing a program or letting a person see your computer, and in both you may be dealing with a company that you really use. In **Real installation** you started it and chose where to get the software, and nobody had contacted you. In **Refund scam** somebody contacted you about a refund or your bank account, and the program or the view of your computer was theirs to ask for. Who started it: did you set out to get it, or did someone contact you and ask?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If a caller had phoned her first and said that she was owed a refund on the oven, it would be **“Someone sorting out a refund or your bank account”**.
 - Taught on: “Something you started yourself, through a way you already had” (one tap opens the card).
 
@@ -2254,10 +2254,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What is it asking you to do right now? **Install something, open a file, or share your screen.** The email asks her to open a file: “Open the attached newsletter”. That is a request about her device.
   - If you chose **Something you started yourself, through a way you already had**: She did not set out to get anything. The file came to her.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Real installation**, the look-alike card’s lines follow: Both put a program on your device, and both end in the same box on the computer asking whether to allow changes. In **Real installation** you decided to get the software and fetched it yourself, from the maker’s own website or your device’s app store, through *a way you already had*. In **Malware** the file or the link came to you in a message that you did not ask for, and nobody was on a call with you. Before this file or link reached you, did you set out to get this software yourself, from the maker’s own website or your app store? Or did it arrive in a message?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If she had been expecting a newsletter and had opened it from the school’s own website, which she had saved, it would not be a file in a message.
 - Taught on: “A harmful file or link sent in a message” (one tap opens the card).
 
@@ -2274,10 +2274,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What is it asking you to do right now? **Install something, open a file, or share your screen.** The message asks her to download a file and open it: “Download delivery-note.zip and open it”. That is a request about her device, though it also mentions her address.
   - If you chose **Someone offering to fix a problem with your device**: No fault with her device is mentioned, and there is no number to ring. It is a file with a reason to open it.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Tech-support scam**, the look-alike card’s lines follow: Both can start with a warning that says something is wrong with your device, and both can end with a program on it. In **Tech-support scam** a person is involved: you ring a number, or someone rings you, and they ask you to install something or to let them watch. In **Malware** a file or a link has come to you in a message, and nobody is on a call with you. Is there a person on a call, or a number to ring, who will talk you through it? Or is there only a file or a link for you to open yourself?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If a man had phoned her and asked her to open the file while he watched, to sort out a refund, it would be **“Someone sorting out a refund or your bank account”**.
 - Taught on: “A harmful file or link sent in a message” (one tap opens the card).
 
@@ -2294,10 +2294,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What is it asking you to do right now? **Install something, open a file, or share your screen.** The message asks him to install a program from a link: “Install this downloader from my link”. That is a request about his device.
   - If you chose **Something you started yourself, through a way you already had**: Omar was looking for the film, but he did not go to a maker or to an app store. A stranger’s link came to him.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Real installation**, the look-alike card’s lines follow: Both put a program on your device, and both end in the same box on the computer asking whether to allow changes. In **Real installation** you decided to get the software and fetched it yourself, from the maker’s own website or your device’s app store, through *a way you already had*. In **Malware** the file or the link came to you in a message that you did not ask for, and nobody was on a call with you. Before this file or link reached you, did you set out to get this software yourself, from the maker’s own website or your app store? Or did it arrive in a message?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If he had found the film’s own app in his phone’s app store, it would be **“Something you started yourself, through a way you already had”**.
 - Taught on: “A harmful file or link sent in a message” (one tap opens the card).
 
@@ -2314,10 +2314,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What is it asking you to do right now? **Install something, open a file, or share your screen.** The email asks him to open a file and press Enable Editing: “Open the attached file and press Enable Editing”. That is a request about his device.
   - If you chose **Something you started yourself, through a way you already had**: He did not ask for a scan or for any program. A message sent the file to him.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Real installation**, the look-alike card’s lines follow: Both put a program on your device, and both end in the same box on the computer asking whether to allow changes. In **Real installation** you decided to get the software and fetched it yourself, from the maker’s own website or your device’s app store, through *a way you already had*. In **Malware** the file or the link came to you in a message that you did not ask for, and nobody was on a call with you. Before this file or link reached you, did you set out to get this software yourself, from the maker’s own website or your app store? Or did it arrive in a message?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If he had walked to the printer and pressed Scan to email himself, the file would be one he asked for, and it would not be a file in a message from a stranger.
 - Taught on: “A harmful file or link sent in a message” (one tap opens the card).
 
@@ -2334,10 +2334,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What is it asking you to do right now? **Install something, open a file, or share your screen.** The man asks her to type in a code so that he can reach the computer: “a man asks her to open a web page and type in a code”. Letting someone watch a device is a request about the device.
   - If you chose **A file or a link in a message, for you to open**: There is no file or link to open. The warning gives her a number to ring, and a person on the line offers to fix the problem.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Malware**, the look-alike card’s lines follow: Both can start with a warning that says something is wrong with your device, and both can end with a program on it. In **Tech-support scam** a person is involved: you ring a number, or someone rings you, and they ask you to install something or to let them watch. In **Malware** a file or a link has come to you in a message, and nobody is on a call with you. Is there a person on a call, or a number to ring, who will talk you through it? Or is there only a file or a link for you to open yourself?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the message had said that she was owed a refund for the hotel’s computer time, it would be **“Someone sorting out a refund or your bank account”**.
 - Taught on: “A made-up problem with your device, and someone offering to fix it” (one tap opens the card).
 
@@ -2354,10 +2354,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What is it asking you to do right now? **Install something, open a file, or share your screen.** The man asks him to install a program so that he can reach the router: “a man asks him to install a small program”. That is a request about the device.
   - If you chose **A file or a link in a message, for you to open**: The text came in a message, but it holds nothing to open. It gives him a number, and a person on the line asks him to install something.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Malware**, the look-alike card’s lines follow: Both can start with a warning that says something is wrong with your device, and both can end with a program on it. In **Tech-support scam** a person is involved: you ring a number, or someone rings you, and they ask you to install something or to let them watch. In **Malware** a file or a link has come to you in a message, and nobody is on a call with you. Is there a person on a call, or a number to ring, who will talk you through it? Or is there only a file or a link for you to open yourself?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the text had held a link to install a “router security” app and no number, it would be **“A file or a link in a message, for you to open”**.
 - Taught on: “A made-up problem with your device, and someone offering to fix it” (one tap opens the card).
 
@@ -2374,10 +2374,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What is it asking you to do right now? **Install something, open a file, or share your screen.** The woman asks to see his laptop: “if he lets her see his laptop”. That is a request about the device.
   - If you chose **Something you started yourself, through a way you already had**: Vic went looking himself, and that is how **Real installation** begins. But the number came from a paid result, which he did not already have, and a person offered to fix his satnav.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Real installation**, the look-alike card’s lines follow: In both, you are on the phone with a helper who asks to see or control your device, and in both the company’s real name is used. In **Real installation** you started the call yourself, on a number that you already had, such as the one on your bill or contract, and nobody contacted you first. In **Tech-support scam** someone contacted you first, or what put you in touch was a *search advert*, a pop-up or a message, and none of those is *a way you already had*. Who started it, and where did the number or the address come from: from something that you already had, or from a page, a message, a call or the results of a search?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If he had used the update tool on the satnav maker’s own website, reached through an address he typed, it would be **“Something you started yourself, through a way you already had”**.
 - Taught on: “A made-up problem with your device, and someone offering to fix it” (one tap opens the card).
 
@@ -2394,10 +2394,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What is it asking you to do right now? **Install something, open a file, or share your screen.** The caller asks Alma to type in a code so that he can reach her device: “open a web page and type in the code I read out”. That is a request about the device.
   - If you chose **Someone sorting out a refund or your bank account**: The reason given for wanting to reach the device is errors in it, not money owed to her or a bank account.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Refund scam**, the look-alike card’s lines follow: In both, a person you have reached by phone asks to see or control your device, and says that it is to put something right. In **Tech-support scam** the reason given for the request is a problem with your device. In **Refund scam** the reason given is money: a refund that you are owed, or a bank account that needs attention. What reason does the person give for wanting to see or control the device: a problem with the device itself, or money, whether a refund or a bank account?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If he had said that the meter had overcharged her and he owed her a refund, it would be **“Someone sorting out a refund or your bank account”**.
 - Taught on: “A made-up problem with your device, and someone offering to fix it” (one tap opens the card).
 
@@ -2414,10 +2414,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What is it asking you to do right now? **Install something, open a file, or share your screen.** The caller asks Jo to share her device: “Press Share in the meeting app”. That is a request about the device, whatever the reason given.
   - If you chose **Someone offering to fix a problem with your device**: No fault with her device is mentioned. The reason for watching is money owed to her.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Tech-support scam**, the look-alike card’s lines follow: In both, a person you have reached by phone asks to see or control your device, and says that it is to put something right. In **Tech-support scam** the reason given for the request is a problem with your device. In **Refund scam** the reason given is money: a refund that you are owed, or a bank account that needs attention. What reason does the person give for wanting to see or control the device: a problem with the device itself, or money, whether a refund or a bank account?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If he had said that her phone had a fault and offered to fix it, it would be **“Someone offering to fix a problem with your device”**.
 - Taught on: “A refund sorted out while someone watches your screen” (one tap opens the card).
 
@@ -2434,10 +2434,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What is it asking you to do right now? **Install something, open a file, or share your screen.** The caller asks Cyrus to share his device: “open the meeting app and press Share”. That is a request about the device.
   - If you chose **Someone offering to fix a problem with your device**: No fault with his device is mentioned. The reason for watching is money owed to him.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Tech-support scam**, the look-alike card’s lines follow: In both, a person you have reached by phone asks to see or control your device, and says that it is to put something right. In **Tech-support scam** the reason given for the request is a problem with your device. In **Refund scam** the reason given is money: a refund that you are owed, or a bank account that needs attention. What reason does the person give for wanting to see or control the device: a problem with the device itself, or money, whether a refund or a bank account?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If she had said that his laptop had errors and offered to fix them, it would be **“Someone offering to fix a problem with your device”**.
 - Taught on: “A refund sorted out while someone watches your screen” (one tap opens the card).
 
@@ -2454,10 +2454,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What is it asking you to do right now? **Install something, open a file, or share your screen.** The caller asks Rhys to share his device: “Press Share, and I will watch your account”. That is a request about the device, though money is also mentioned.
   - If you chose **Someone offering to fix a problem with your device**: The problem named is with his bank account, not with his device.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Tech-support scam**, the look-alike card’s lines follow: In both, a person you have reached by phone asks to see or control your device, and says that it is to put something right. In **Tech-support scam** the reason given for the request is a problem with your device. In **Refund scam** the reason given is money: a refund that you are owed, or a bank account that needs attention. What reason does the person give for wanting to see or control the device: a problem with the device itself, or money, whether a refund or a bank account?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the call had begun with a page that warned of a fault with his laptop, and the man had offered to fix it, it would be **“Someone offering to fix a problem with your device”**.
 - Taught on: “A refund sorted out while someone watches your screen” (one tap opens the card).
 
@@ -2474,10 +2474,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What is it asking you to do right now? **Install something, open a file, or share your screen.** The caller asks Hugh to install a tool: “install the secure-transfer tool from the link I am sending you”. That is a request about the device.
   - If you chose **A file or a link in a message, for you to open**: A link and a program to install are in it, but the man is on the phone with Hugh, and the reason given is money owed to him. A file or a link with nobody on a call is the other answer.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Malware**, the look-alike card’s lines follow: In both, you may be sent a file or a link to open, and in both the story can be about a payment or an account. In **Refund scam** a person is on a call with you, and gives money as the reason: a refund owed to you, or a danger to your bank account. In **Malware** nobody is on a call with you: the file or the link just arrived in a message. Is someone on a call or in a chat with you right now, asking you to open it and talking about a refund or a bank account? Or did it simply arrive?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the same link had arrived by text, with no call and no talk of a fee, it would be **“A file or a link in a message, for you to open”**.
 - Taught on: “A refund sorted out while someone watches your screen” (one tap opens the card).
 

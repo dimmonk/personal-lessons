@@ -1,15 +1,15 @@
 # Learner view: Wealth Preservation, Unit Five: The handover to other people
 
-*Five things that can go wrong when money is handed over, and how to tell which one you are looking at.* Unit revision 1, built to lesson standard 1, status: draft.
+*Five things that can go wrong when money is handed over, and how to tell which one you are looking at.* Unit revision 2, built to lesson standard 1, status: draft.
 
 This file is generated from the data files by `tools/render-learner-view.mjs`. It shows every screen in the order a learner meets it. In the app one card is on screen at a time and the learner moves on when ready.
 
-- **Bold text in quotation marks** is the key’s own wording, printed from `key.js`. Bold names are the outcome names from the same file. Neither is typed anywhere else. "What you must be able to point to" lines and "How to tell them apart" lines are also printed from one place each (the key and the look-alike ledger).
+- **Bold text in quotation marks** is the subject’s own wording for its questions and answers, written once and printed everywhere. Bold names are the names, written once in the same place. Neither is typed anywhere else. "What you must be able to point to" lines and "How to tell them apart" lines are also printed from one place each (the subject’s questions and the pairs it compares).
 - ⟦Double brackets⟧ show the words the app marks in a case (one highlight style everywhere).
 - The line in italics under each heading is the app’s top bar. The line in square brackets after it is for reviewers and is not shown to the learner.
 - Headings, prompt wording and stage instructions that are the same in every unit are the app’s wording, not this unit’s.
 - "Shown as soon as you …" is what appears the moment the learner answers. Nothing is hidden behind a second tap the first time a case is met, or after a miss.
-- After every answer the app shows, in this order: the right answer in the key’s words; the reason, quoting the marked words; for a name, why the nearest wrong name fails; after a miss, a line about the answer the learner chose; and last a link to the card that taught it. Where a line about the learner’s own choice is not written for the case, the app builds it from the key, and this file says so in place of repeating it.
+- After every answer the app shows, in this order: the right answer; the reason, quoting the marked words; for a name, why the nearest wrong name fails; after a miss, a line about the answer the learner chose; and last a link to the card that taught it. Where a line about the learner’s own choice is not written for the case, the app builds it from the answers’ own wording, and this file says so in place of repeating it.
 
 ---
 
@@ -17,7 +17,7 @@ This file is generated from the data files by `tools/render-learner-view.mjs`. I
 
 ### 1. When money changes hands, or someone else has to act
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 1 of 41*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 1 of 41*
 
 [reviewers only: card kind `orient`, id `orient-handover`]
 
@@ -29,7 +29,7 @@ Each one is a sentence about the same moment: the day money passes to other peop
 
 Four things can go wrong, and a fifth case is one where none of them does. Each has its own name, its own question to put to a case, and its own thing to do about it. The fifth is as common as the other four: sometimes the honest answer is that nothing more needs doing, and you will be able to say that too.
 
-**What Unit One taught, in one place.** The key’s first question is **“What could lose this money?”** Its answers:
+**What Unit One taught, in one place.** The first question is **“What could lose this money?”** Its answers:
 
 - **“Something taken out of it every year”**: give this answer when the case is about something taken out of the pot every year: what funds, an adviser or the firm that holds the investments charge, tax on the investments, or a sum taken out to spend.
 - **“One thing most of it depends on”**: give this answer when the case is about one thing that most of the pot depends on: one company’s shares, one property or one business that makes up most of it, a claim that could reach everything the person owns, or a loan whose lender could demand the money back and force a sale.
@@ -37,11 +37,11 @@ Four things can go wrong, and a fifth case is one where none of them does. Each 
 - **“The handover to other people”**: give this answer when the case is about what happens to the pot when its owner dies or can no longer handle it, or when it is passed to family during the owner’s life: who receives it, the tax on it, the papers that say who gets what, and how the people who receive it will behave. **This unit is about these cases.**
 - **“Nothing in the case”**: give this answer when the case shows money being kept and none of the things the other four answers ask about: no charge, tax or spending that the case raises, nothing most of the pot depends on, no living costs or bill to pay from it soon and no mix away from its plan, and no handover in view.
 
-Unit One also taught that two things are marked separately: the name you give a case, and your route to it, meaning the answers you gave to the key’s questions on the way.
+Two things are marked separately: the name you give a case, and your answers to the questions on the way to it.
 
 *(One tap on any of these lines opens the card in Unit One that taught it.)*
 
-**The part of the key this unit teaches.** This is a preview. You are not expected to follow it yet: every line is explained on the cards that come next. The question and its answers are in the key’s own words. Beside each answer, in plain words, is the thing it leads to. There are five of them, and each gets its name when it is taught.
+**The questions this unit teaches.** This is a preview. You are not expected to follow it yet: every line is explained on the cards that come next. The question and its answers are worded exactly as you will meet them. Beside each answer, in plain words, is the thing it leads to. There are five of them, and each gets its name when it is taught.
 
 What could go wrong when it is handed over?
 - The papers that say who gets it, or who can act, are out of date or missing → a will, a form or a power of attorney out of date or missing
@@ -62,14 +62,14 @@ The unit has four parts, and you can stop after any of them.
 
 1. The papers
 2. Tax on what is left
-3. The people, and the key’s question
+3. The people, and the question
 4. Two whole cases, then the drill
 
 Each name is taught through cases first. After every step you answer one question about a new case, and the answer and the reason are shown straight away. Nothing here is graded. A miss only decides what comes back.
 
 ### 2. A form that pays out without the will
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 2 of 41*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 2 of 41*
 
 [reviewers only: card kind `term`, id `term-benform`]
 
@@ -92,7 +92,7 @@ A form like this is easy to forget. It is filled in once, years ago, when someon
 
 ### 3. The paper for the day you cannot sign
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 3 of 41*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 3 of 41*
 
 [reviewers only: card kind `term`, id `term-poa`]
 
@@ -115,7 +115,7 @@ Notice that nobody died in this case. A handover is not only a death. It is any 
 
 ### 4. A will, a form or a power of attorney out of date or missing
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 4 of 41*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 4 of 41*
 
 [reviewers only: card kind `meet`, id `meet-basicdocs`]
 
@@ -140,9 +140,9 @@ Papers go out of date when something happens in a life: a marriage, a divorce, a
 
 **What you must be able to point to.** A will, a beneficiary form or a power of attorney that is missing, or out of date: naming someone it should no longer name, or written before a marriage, a divorce, a birth or a death. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What could go wrong when it is handed over?”**
+**The question:** **“What could go wrong when it is handed over?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“The papers that say who gets it, or who can act, are out of date or missing”**
+**Its answer for a case like this one:** **“The papers that say who gets it, or who can act, are out of date or missing”**
 
 The name for this is **Update the basic paperwork**. “Basic” because a will, *a beneficiary form* and *a power of attorney* are the three papers every handover starts with. “Update” is what is done about them: bring them up to date, and where one does not exist, write it.
 
@@ -150,7 +150,7 @@ You may also hear this called “putting your affairs in order”. That means th
 
 ### 5. Update the basic paperwork: the same thing in a different story
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 5 of 41*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 5 of 41*
 
 [reviewers only: card kind `again`, id `again-basicdocs`]
 
@@ -181,7 +181,7 @@ Mirela’s case also shows why the words in the case matter more than the story.
 
 ### 6. The story never decides the answer
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 6 of 41*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 6 of 41*
 
 [reviewers only: card kind `lens`, id `lens-handover`]
 
@@ -193,13 +193,13 @@ The five names belong to the layer underneath. The same story can carry any of t
 
 From here on, the cases change their stories on purpose. Sometimes two cases will share a person and a house and differ only underneath. When that happens, the shared story is there to show you that it tells you nothing.
 
-**Stays the same from case to case:** what is at risk at the handover, which is what the key asks about: **“What could go wrong when it is handed over?”**
+**Stays the same from case to case:** what is at risk at the handover, which is what the question is about: **“What could go wrong when it is handed over?”**
 
 **Changes on purpose:** the kind of paper; the size of the estate; the age and health of the owner; the family; the country’s rules.
 
 ### 7. Update the basic paperwork: what it is like
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 7 of 41*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 7 of 41*
 
 [reviewers only: card kind `portrait`, id `portrait-basicdocs`]
 
@@ -237,7 +237,7 @@ Write down the date, and look again after the next marriage, divorce, birth or d
 
 ### 8. A question about a new case
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 8 of 41*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 8 of 41*
 
 [reviewers only: card kind `check`, id `check-basicdocs`]
 
@@ -251,14 +251,14 @@ The pieces you can tap:
 
 **Shown as soon as you tap**
 
-- If you are right: “Right: ‘Last year she married Dev, and they bought a flat together. She has not changed the will.’.” The will was written before a marriage and has not been touched since: “Last year she married Dev, and they bought a flat together. She has not changed the will.”. It names her sister and not the husband she now has, and the flat they bought together is a new thing the will never had to deal with. The key’s answer for this case is **“The papers that say who gets it, or who can act, are out of date or missing”**, and the name is **Update the basic paperwork**.
+- If you are right: “Right: ‘Last year she married Dev, and they bought a flat together. She has not changed the will.’.” The will was written before a marriage and has not been touched since: “Last year she married Dev, and they bought a flat together. She has not changed the will.”. It names her sister and not the husband she now has, and the flat they bought together is a new thing the will never had to deal with. The answer for this case is **“The papers that say who gets it, or who can act, are out of date or missing”**, and the name is **Update the basic paperwork**.
 - If you miss: “The words are ‘Last year she married Dev, and they bought a flat together. She has not changed the will.’.” The same reason follows, and then a line about the piece you tapped:
   - “Aoife, 34, wrote a will at 28 that leaves everything to her sister. ”: That is the paper and the person it names. It is half of what the question asks for: the other half is what has happened in her life since.
 - Taught on: “A will, a form or a power of attorney out of date or missing” (one tap opens the card).
 
 ### 9. A wrong idea: “I’ll sort out my will when I’m older”
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 9 of 41*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 9 of 41*
 
 [reviewers only: card kind `refute`, id `refute-willlater`]
 
@@ -279,11 +279,11 @@ The third is the cost of putting it right, which is usually a short job: a form 
 
 ### 10. Current papers, and nothing else about the handover in question
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 10 of 41*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 10 of 41*
 
 [reviewers only: card kind `meet`, id `meet-simple`]
 
-So far the name has been something to put right: a paper that is stale or missing. The papers can also be in good order, and the key has a name for that. You need it as much as the first: without it, every case about a will looks like a case with something wrong.
+So far the name has been something to put right: a paper that is stale or missing. The papers can also be in good order, and there is a name for that. You need it as much as the first: without it, every case about a will looks like a case with something wrong.
 
 *Anselm and Marit*
 
@@ -305,15 +305,15 @@ A family trust would cost money to set up and money every year to run. It would 
 
 **What you must be able to point to.** A will, beneficiary forms and a power of attorney that are all current, an estate below the tax-free limit or with nothing in it in question, and nothing in the case about the people. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What could go wrong when it is handed over?”**
+**The question:** **“What could go wrong when it is handed over?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“Nothing: the papers are current and nothing else is in question”**
+**Its answer for a case like this one:** **“Nothing: the papers are current and nothing else is in question”**
 
 The name for this is **Nothing more needed**. It says that the papers are current and that nothing else in the case is in question, so there is nothing more to arrange. “More” matters: the papers were already done.
 
 ### 11. Nothing more needed: the same thing in a different story
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 11 of 41*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 11 of 41*
 
 [reviewers only: card kind `again`, id `again-simple`]
 
@@ -346,7 +346,7 @@ Nasir has no children, no house to speak of and no partner, and Anselm and Marit
 
 ### 12. Nothing more needed: what it is like
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 12 of 41*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 12 of 41*
 
 [reviewers only: card kind `portrait`, id `portrait-simple`]
 
@@ -381,13 +381,13 @@ Write down the date you checked the papers, and set a reminder to look again aft
 
 ### 13. A question about a new case
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 13 of 41*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 13 of 41*
 
 [reviewers only: card kind `check`, id `check-simple`]
 
 > Fenella, 66, was widowed last year. She has a house and savings worth £280,000. After her husband died she rewrote her will, which leaves everything equally to her two children, changed the form on her pension to name them, and signed a power of attorney in her son's favour. Her children talk on the phone every Sunday. A letter arrived from a firm offering a 'full estate protection review' for £2,400.
 
-**The key asks:** **“What could go wrong when it is handed over?”** Which of the answers you have met so far fits this case?
+**The question:** **“What could go wrong when it is handed over?”** Which of the answers you have met so far fits this case?
 
 - The papers that say who gets it, or who can act, are out of date or missing
 - Nothing: the papers are current and nothing else is in question
@@ -401,7 +401,7 @@ Write down the date you checked the papers, and set a reminder to look again aft
 
 ### 14. Update the basic paperwork or Nothing more needed: telling them apart
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 14 of 41*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 14 of 41*
 
 [reviewers only: card kind `lookalike`, id `look-basicdocs-simple`]
 
@@ -423,9 +423,9 @@ You have met both names on their own. They are easy to mix up, because both are 
 
 **Why this one and not the other**
 
-In Case A Rosalind divorced six years ago and her pension form still names her former husband. If she died tomorrow, that form would pay the pension to him. The key’s answer is **“The papers that say who gets it, or who can act, are out of date or missing”**, and the case is **Update the basic paperwork**.
+In Case A Rosalind divorced six years ago and her pension form still names her former husband. If she died tomorrow, that form would pay the pension to him. The answer is **“The papers that say who gets it, or who can act, are out of date or missing”**, and the case is **Update the basic paperwork**.
 
-In Case B she changed the form the month after the divorce, and she rewrote her will and signed *a power of attorney* at the same time. All three papers match her life, and the estate is £380,000, below the limit. The key’s answer is **“Nothing: the papers are current and nothing else is in question”**, and the case is **Nothing more needed**.
+In Case B she changed the form the month after the divorce, and she rewrote her will and signed *a power of attorney* at the same time. All three papers match her life, and the estate is £380,000, below the limit. The answer is **“Nothing: the papers are current and nothing else is in question”**, and the case is **Nothing more needed**.
 
 The divorce, the flat and the savings are the same in both. What differs is one sentence about one paper. That is why you can never name a case from its story.
 
@@ -433,7 +433,7 @@ The divorce, the flat and the savings are the same in both. What differs is one 
 
 Look at each of the three papers in the case: the will, any form held by a pension company or a bank, and the power of attorney. Does the case show that one of them is missing, or no longer matches the person’s life? Or does it show all three current?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Update the basic paperwork | Nothing more needed |
 |---|---|---|
@@ -450,7 +450,7 @@ Look at each of the three papers in the case: the will, any form held by a pensi
 
 ### 15. Everything a person leaves
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 15 of 41*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 15 of 41*
 
 [reviewers only: card kind `term`, id `term-estate`]
 
@@ -473,7 +473,7 @@ The line and the rate are invented, and the same ones are used in every case in 
 
 ### 16. An estate above the tax-free limit, with money to spare
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 16 of 41*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 16 of 41*
 
 [reviewers only: card kind `meet`, id `meet-gifting`]
 
@@ -500,9 +500,9 @@ This is one of the places where real rules differ. The size of the yearly gift, 
 
 **What you must be able to point to.** An estate above the tax-free limit, more than the owner will need to live on, and nothing in it expected to rise sharply in value. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What could go wrong when it is handed over?”**
+**The question:** **“What could go wrong when it is handed over?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“Tax on an estate above the tax-free limit, with more than the owner needs”**
+**Its answer for a case like this one:** **“Tax on an estate above the tax-free limit, with more than the owner needs”**
 
 The name for this is **Give some away each year**. It means giving some of the spare money away, a little at a time, every year, while the owner is alive, so that less is left to be taxed.
 
@@ -510,7 +510,7 @@ You may also hear this called “lifetime gifting”. That means the same thing 
 
 ### 17. Give some away each year: the same thing in a different story
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 17 of 41*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 17 of 41*
 
 [reviewers only: card kind `again`, id `again-gifting`]
 
@@ -543,7 +543,7 @@ In neither case is anything expected to jump in value, and in both the papers ar
 
 ### 18. Give some away each year: what it is like
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 18 of 41*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 18 of 41*
 
 [reviewers only: card kind `portrait`, id `portrait-gifting`]
 
@@ -582,13 +582,13 @@ If something the owner holds is expected to rise sharply, small gifts will not b
 
 ### 19. A question about a new case
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 19 of 41*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 19 of 41*
 
 [reviewers only: card kind `check`, id `check-gifting`]
 
 > Quentin is 81 and a widower. His house is worth £900,000, and he has £600,000 in savings. His income is £48,000 a year and he spends about £30,000. His will, forms and power of attorney were all renewed in the spring. The country takes 40% of whatever a person leaves above £500,000. Nothing he owns is expected to change much in value.
 
-**The key asks:** **“What could go wrong when it is handed over?”** Which of the answers you have met so far fits this case?
+**The question:** **“What could go wrong when it is handed over?”** Which of the answers you have met so far fits this case?
 
 - The papers that say who gets it, or who can act, are out of date or missing
 - Nothing: the papers are current and nothing else is in question
@@ -604,7 +604,7 @@ If something the owner holds is expected to rise sharply, small gifts will not b
 
 ### 20. Give some away each year or Nothing more needed: telling them apart
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 20 of 41*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 20 of 41*
 
 [reviewers only: card kind `lookalike`, id `look-gifting-simple`]
 
@@ -626,9 +626,9 @@ In both of these names the papers are in order and the owner is comfortable. The
 
 **Why this one and not the other**
 
-In Case A Ellis’s estate is £1,200,000. That is £700,000 above the line, and the tax would be £280,000. His pension also pays him £20,000 a year more than he spends, so there is money to spare. The key’s answer is **“Tax on an estate above the tax-free limit, with more than the owner needs”**, and the case is **Give some away each year**.
+In Case A Ellis’s estate is £1,200,000. That is £700,000 above the line, and the tax would be £280,000. His pension also pays him £20,000 a year more than he spends, so there is money to spare. The answer is **“Tax on an estate above the tax-free limit, with more than the owner needs”**, and the case is **Give some away each year**.
 
-In Case B the estate is £430,000, which is £70,000 below the line, so the tax would be £0. His pension pays him just what he spends, so there is nothing to give. The key’s answer is **“Nothing: the papers are current and nothing else is in question”**, and the case is **Nothing more needed**.
+In Case B the estate is £430,000, which is £70,000 below the line, so the tax would be £0. His pension pays him just what he spends, so there is nothing to give. The answer is **“Nothing: the papers are current and nothing else is in question”**, and the case is **Nothing more needed**.
 
 Everything else is the same: the age, the widowhood, the papers. Only the size of the estate and what is left over differ.
 
@@ -636,7 +636,7 @@ Everything else is the same: the age, the widowhood, the papers. Only the size o
 
 Add up everything the owner will leave, and set it against the tax-free limit. Is it above, with more than the owner will need? Or is it below?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Give some away each year | Nothing more needed |
 |---|---|---|
@@ -647,7 +647,7 @@ Add up everything the owner will leave, and set it against the tax-free limit. I
 
 ### 21. Money held by someone else for someone else
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 21 of 41*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 21 of 41*
 
 [reviewers only: card kind `term`, id `term-trustword`]
 
@@ -668,7 +668,7 @@ The firm in the middle has a name. It is the trustee, and what it carries out is
 
 ### 22. Something about to rise sharply in value, which tax at death would catch
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 22 of 41*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 22 of 41*
 
 [reviewers only: card kind `meet`, id `meet-trust`]
 
@@ -691,13 +691,13 @@ Now what he can do. The tax is charged on what he owns on the day he dies. If th
 
 That is why the timing is the whole of the idea. After the permission comes, the field is worth £4,000,000, and moving it out then is moving £4,000,000, which is a very different matter. Before, it is a move of £300,000. The move is done while the thing is small, and the growth happens outside the estate. Small gifts of £3,000 a year, as with **Give some away each year**, cannot do this: they would take a hundred years to move a field.
 
-It is not free. In many countries the move itself counts as a gift and can bring tax or a waiting time. It usually cannot be undone, and control passes to the trustee. It costs money to set up and money every year to keep going. It is worth it only when what it saves is far more than it costs, and it is a job for a specialist lawyer. The key does not say to do it. It says to recognise the case: something the owner holds is expected to rise sharply, and the tax on the rise is the larger problem.
+It is not free. In many countries the move itself counts as a gift and can bring tax or a waiting time. It usually cannot be undone, and control passes to the trustee. It costs money to set up and money every year to keep going. It is worth it only when what it saves is far more than it costs, and it is a job for a specialist lawyer. The name does not say to do it. It says to recognise the case: something the owner holds is expected to rise sharply, and the tax on the rise is the larger problem.
 
 **What you must be able to point to.** Something the owner holds, such as a business or land, that is expected to rise sharply in value, and an estate that is or will then be above the tax-free limit. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What could go wrong when it is handed over?”**
+**The question:** **“What could go wrong when it is handed over?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“Tax on a sharp rise still to come in something the owner holds”**
+**Its answer for a case like this one:** **“Tax on a sharp rise still to come in something the owner holds”**
 
 The name for this is **Move it out of the estate before it grows**. It names what is done and when: the thing is moved out of the estate while it is still worth little, so that the rise happens outside it. The usual way is *a trust*, the arrangement you met with Beatrice. The other way is a company the family sets up to own the thing, in which the children hold the shares.
 
@@ -705,7 +705,7 @@ You may also hear this called “putting it in a trust” or “a family holding
 
 ### 23. Move it out of the estate before it grows: the same thing in a different story
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 23 of 41*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 23 of 41*
 
 [reviewers only: card kind `again`, id `again-trust`]
 
@@ -738,7 +738,7 @@ The story is as different as it can be. Selim has land and a plan on a map, Ceci
 
 ### 24. Move it out of the estate before it grows: what it is like
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 24 of 41*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 24 of 41*
 
 [reviewers only: card kind `portrait`, id `portrait-trust`]
 
@@ -775,13 +775,13 @@ Go ahead only if what it saves is far more than it costs, and do it before the r
 
 ### 25. A question about a new case
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 25 of 41*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 25 of 41*
 
 [reviewers only: card kind `check`, id `check-trust`]
 
 > Cormac, 63, owns shares worth £200,000 in a small firm that makes sensors. A bidder has offered to buy the firm for ten times its present value if a safety test passes next year. His house and savings come to £700,000, his income covers his spending, and his will, forms and power of attorney were renewed in May. The country takes 40% of whatever a person leaves above £500,000.
 
-**The key asks:** **“What could go wrong when it is handed over?”** Which of the answers you have met so far fits this case?
+**The question:** **“What could go wrong when it is handed over?”** Which of the answers you have met so far fits this case?
 
 - The papers that say who gets it, or who can act, are out of date or missing
 - Nothing: the papers are current and nothing else is in question
@@ -799,7 +799,7 @@ Go ahead only if what it saves is far more than it costs, and do it before the r
 
 ### 26. A big estate, money to spare, and something about to grow
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 26 of 41*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 26 of 41*
 
 [reviewers only: card kind `exception`, id `exc-vineyard`]
 
@@ -832,9 +832,9 @@ The spare money is real, and gifts are still sensible. But when the two are in o
 
 Is anything the owner holds expected to be worth many times more than it is now? If it is, the rise is the case. If nothing is, the estate as it stands is the case.
 
-When a case shows both **“Tax on an estate above the tax-free limit, with more than the owner needs”** and something expected to rise sharply in value, the key’s answer is **“Tax on a sharp rise still to come in something the owner holds”**.
+When a case shows both **“Tax on an estate above the tax-free limit, with more than the owner needs”** and something expected to rise sharply in value, the answer is **“Tax on a sharp rise still to come in something the owner holds”**.
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Give some away each year | Move it out of the estate before it grows |
 |---|---|---|
@@ -842,18 +842,18 @@ When a case shows both **“Tax on an estate above the tax-free limit, with more
 | What could go wrong when it is handed over? | Tax on an estate above the tax-free limit, with more than the owner needs | Tax on a sharp rise still to come in something the owner holds |
 | What you must be able to point to | An estate above the tax-free limit, more than the owner will need to live on, and nothing in it expected to rise sharply in value | Something the owner holds, such as a business or land, that is expected to rise sharply in value, and an estate that is or will then be above the tax-free limit |
 
-The key decides it this way on purpose, and it is worth knowing that this is the key’s decision. A real adviser might do both. The key gives each case one name, by the larger problem, so that two people using it reach the same answer and can each say why.
+This is settled one way on purpose, and it is worth knowing that it is a decision. A real adviser might do both. Each case gets one name, by the larger problem, so that two people using the same questions reach the same answer and can each say why.
 
 
-*End of part 2. You can stop here; your place is kept. Next: part 3, The people, and the key’s question.*
+*End of part 2. You can stop here; your place is kept. Next: part 3, The people, and the question.*
 
 ---
 
-## Part 3 of 4: The people, and the key’s question
+## Part 3 of 4: The people, and the question
 
 ### 27. The people who will receive it, or run it, could lose it
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 27 of 41*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 27 of 41*
 
 [reviewers only: card kind `meet`, id `meet-governance`]
 
@@ -880,9 +880,9 @@ Notice what these rules are for. They are not a punishment for Joel. A rule made
 
 **What you must be able to point to.** A risk in the people who will receive or run the money: someone who will inherit who is about to marry or is in a failing marriage, someone who has struggled with money or work, heirs who do not speak to each other, or control passing to people who cannot agree. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What could go wrong when it is handed over?”**
+**The question:** **“What could go wrong when it is handed over?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“The people who will receive it or run it”**
+**Its answer for a case like this one:** **“The people who will receive it or run it”**
 
 The name for this is **Family rules for the money**. It means written rules, agreed in advance, about who decides and when each person is paid, so that a risk in the people is met where it can be: in the terms on which the money is handed over.
 
@@ -890,7 +890,7 @@ You may also hear this called “family governance”. That means the same thing
 
 ### 28. Family rules for the money: the same thing in a different story
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 28 of 41*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 28 of 41*
 
 [reviewers only: card kind `again`, id `again-governance`]
 
@@ -923,7 +923,7 @@ The two cases look different: one person, one payment, against two people and a 
 
 ### 29. Family rules for the money: what it is like
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 29 of 41*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 29 of 41*
 
 [reviewers only: card kind `portrait`, id `portrait-governance`]
 
@@ -961,13 +961,13 @@ Look at the rules again when something changes.
 
 ### 30. A question about a new case
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 30 of 41*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 30 of 41*
 
 [reviewers only: card kind `check`, id `check-governance`]
 
 > Mabel, 74, will leave her £360,000 equally to her two daughters. One of them, Rhea, 41, is in the middle of a divorce and has asked Mabel to lend her money twice this year. Mabel's will, forms and power of attorney were all renewed in January. The country takes 40% of whatever a person leaves above £500,000.
 
-**The key asks:** **“What could go wrong when it is handed over?”** Which of the answers you have met so far fits this case?
+**The question:** **“What could go wrong when it is handed over?”** Which of the answers you have met so far fits this case?
 
 - The papers that say who gets it, or who can act, are out of date or missing
 - Nothing: the papers are current and nothing else is in question
@@ -987,7 +987,7 @@ Look at the rules again when something changes.
 
 ### 31. Move it out of the estate before it grows or Family rules for the money: telling them apart
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 31 of 41*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 31 of 41*
 
 [reviewers only: card kind `lookalike`, id `look-trust-governance`]
 
@@ -1009,9 +1009,9 @@ These two share a tool. A trustee with a veto can appear in either, and that mak
 
 **Why this one and not the other**
 
-In Case A a valuer says the woodland could be worth £2,500,000 if permission is given. Stefan’s estate is £650,000 now and would be £2,900,000 after the rise, so the tax would go from £60,000 to £960,000. That is £900,000 of new tax on the rise. The key’s answer is **“Tax on a sharp rise still to come in something the owner holds”**, and the case is **Move it out of the estate before it grows**.
+In Case A a valuer says the woodland could be worth £2,500,000 if permission is given. Stefan’s estate is £650,000 now and would be £2,900,000 after the rise, so the tax would go from £60,000 to £960,000. That is £900,000 of new tax on the rise. The answer is **“Tax on a sharp rise still to come in something the owner holds”**, and the case is **Move it out of the estate before it grows**.
 
-In Case B nobody expects the woodland to change in value, and the estate, £400,000, is below the line, so there is no tax. What the case shows is a son who will sell it the day his father dies and a daughter who says she will never let him. The key’s answer is **“The people who will receive it or run it”**, and the case is **Family rules for the money**.
+In Case B nobody expects the woodland to change in value, and the estate, £400,000, is below the line, so there is no tax. What the case shows is a son who will sell it the day his father dies and a daughter who says she will never let him. The answer is **“The people who will receive it or run it”**, and the case is **Family rules for the money**.
 
 A trustee with a veto could be used in either case, so the tool does not tell them apart. The question to ask is what the case is about.
 
@@ -1019,7 +1019,7 @@ A trustee with a veto could be used in either case, so the tool does not tell th
 
 Is the case about a tax bill that a rise in value would make larger? Or is it about what a person will do with the money, or about people who cannot agree?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Move it out of the estate before it grows | Family rules for the money |
 |---|---|---|
@@ -1030,11 +1030,11 @@ Is the case about a tax bill that a rise in value would make larger? Or is it ab
 
 ### 32. A quarrel in the family, and a stale will
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 32 of 41*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 32 of 41*
 
 [reviewers only: card kind `exception`, id `exc-papers-people`]
 
-The last cards separated the people from the tax. Now the papers. The key puts them first, even when a case is also about a person, and this case shows why.
+The last cards separated the people from the tax. Now the papers. They come first, even when a case is also about a person, and this case shows why.
 
 *Bruno and his sons*
 
@@ -1063,9 +1063,9 @@ So the order is not a matter of which problem is bigger. The paper comes first b
 
 Set aside what the people are like and look at the three papers: is one of them missing or no longer true? If it is, that comes first. If every paper is current, then look at the people.
 
-When a case shows both **“The people who will receive it or run it”** and papers that are out of date or missing, the key’s answer is **“The papers that say who gets it, or who can act, are out of date or missing”**.
+When a case shows both **“The people who will receive it or run it”** and papers that are out of date or missing, the answer is **“The papers that say who gets it, or who can act, are out of date or missing”**.
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Update the basic paperwork | Family rules for the money |
 |---|---|---|
@@ -1073,16 +1073,16 @@ When a case shows both **“The people who will receive it or run it”** and pa
 | What could go wrong when it is handed over? | The papers that say who gets it, or who can act, are out of date or missing | The people who will receive it or run it |
 | What you must be able to point to | A will, a beneficiary form or a power of attorney that is missing, or out of date: naming someone it should no longer name, or written before a marriage, a divorce, a birth or a death | A risk in the people who will receive or run the money: someone who will inherit who is about to marry or is in a failing marriage, someone who has struggled with money or work, heirs who do not speak to each other, or control passing to people who cannot agree |
 
-The key decides it this way on purpose, and it is worth knowing that this is the key’s decision. A family adviser would probably start with the sons. The key gives each case one name, by the cheapest thing that everything else rests on, so that two people using it reach the same answer and can each say why.
+This is settled one way on purpose, and it is worth knowing that it is a decision. A family adviser would probably start with the sons. Each case gets one name, by the cheapest thing that everything else rests on, so that two people using the same questions reach the same answer and can each say why.
 
 
 ### 33. A large estate, money to spare, and a stale form
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 33 of 41*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 33 of 41*
 
 [reviewers only: card kind `exception`, id `exc-papers-tax`]
 
-The same order holds for the first tax name. A large estate and money to spare would be **Give some away each year**, but the key looks at the papers first.
+The same order holds for the first tax name. A large estate and money to spare would be **Give some away each year**, but the papers come first.
 
 *Winifred’s pension form*
 
@@ -1111,9 +1111,9 @@ Her tax is real: £1,400,000 less £500,000 is £900,000, and 40% of that is £3
 
 Before you add up what the owner will leave: is one of the three papers missing or no longer true? If it is, that is the answer, however large the sum. If not, add it up.
 
-When a case shows both **“Tax on an estate above the tax-free limit, with more than the owner needs”** and papers that are out of date or missing, the key’s answer is **“The papers that say who gets it, or who can act, are out of date or missing”**.
+When a case shows both **“Tax on an estate above the tax-free limit, with more than the owner needs”** and papers that are out of date or missing, the answer is **“The papers that say who gets it, or who can act, are out of date or missing”**.
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Update the basic paperwork | Give some away each year |
 |---|---|---|
@@ -1121,16 +1121,16 @@ When a case shows both **“Tax on an estate above the tax-free limit, with more
 | What could go wrong when it is handed over? | The papers that say who gets it, or who can act, are out of date or missing | Tax on an estate above the tax-free limit, with more than the owner needs |
 | What you must be able to point to | A will, a beneficiary form or a power of attorney that is missing, or out of date: naming someone it should no longer name, or written before a marriage, a divorce, a birth or a death | An estate above the tax-free limit, more than the owner will need to live on, and nothing in it expected to rise sharply in value |
 
-This is the same decision as the last card, for the same reason: the papers are the cheapest thing and everything else rests on them. The key gives the case one name, and the name is the papers.
+This is the same decision as the last card, for the same reason: the papers are the cheapest thing and everything else rests on them. The case gets one name, and the name is the papers.
 
 
 ### 34. A firm about to be worth ten times more, and a will from before a divorce
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 34 of 41*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 34 of 41*
 
 [reviewers only: card kind `exception`, id `exc-papers-rise`]
 
-The last of the three. A rise that is expected would be **Move it out of the estate before it grows**, but the key looks at the papers first here too.
+The last of the three. A rise that is expected would be **Move it out of the estate before it grows**, but the papers come first here too.
 
 *Florin and the haulage firm*
 
@@ -1159,9 +1159,9 @@ Moving the firm out of the estate would itself need a lawyer, written terms and 
 
 Before you look at what is expected to rise: is one of the three papers missing or no longer true? If it is, that comes first, however large the rise.
 
-When a case shows both **“Tax on a sharp rise still to come in something the owner holds”** and papers that are out of date or missing, the key’s answer is **“The papers that say who gets it, or who can act, are out of date or missing”**.
+When a case shows both **“Tax on a sharp rise still to come in something the owner holds”** and papers that are out of date or missing, the answer is **“The papers that say who gets it, or who can act, are out of date or missing”**.
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Update the basic paperwork | Move it out of the estate before it grows |
 |---|---|---|
@@ -1169,22 +1169,22 @@ When a case shows both **“Tax on a sharp rise still to come in something the o
 | What could go wrong when it is handed over? | The papers that say who gets it, or who can act, are out of date or missing | Tax on a sharp rise still to come in something the owner holds |
 | What you must be able to point to | A will, a beneficiary form or a power of attorney that is missing, or out of date: naming someone it should no longer name, or written before a marriage, a divorce, a birth or a death | Something the owner holds, such as a business or land, that is expected to rise sharply in value, and an estate that is or will then be above the tax-free limit |
 
-This is the third time the key has decided the same way, and for the same reason: the papers are cheapest, and everything else rests on them. The rise still needs dealing with, and it comes next.
+This is the third time the same choice has been made, and for the same reason: the papers are cheapest, and everything else rests on them. The rise still needs dealing with, and it comes next.
 
 
 ### 35. The question you have been answering all along
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 35 of 41*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 35 of 41*
 
 [reviewers only: card kind `question`, id `q-handover`]
 
-Since Edith’s will you have seen the key’s question at the foot of each new name, with one answer under it. This card puts the question and its five answers in one place, as the key shows them, and says why the key asks it.
+Since Edith’s will you have seen the question at the foot of each new name, with one answer under it. This card puts the question and its five answers in one place, and says why it is asked.
 
-**The key asks:** **“What could go wrong when it is handed over?”**
+**The question:** **“What could go wrong when it is handed over?”**
 
 **What it is for.** Tells apart four things that can go wrong when the pot passes to other people or someone has to act for its owner, and the case where nothing more needs doing.
 
-**Its answers, exactly as the key shows them**
+**Its answers**
 
 Each answer leads to one name, and so rules out the other four.
 
@@ -1210,7 +1210,7 @@ Each of the four has its own fix, and a fix for one does nothing for another: ne
 
 The name comes from what the case shows could go wrong, and not from the size of the money, the age of the owner, or what somebody is selling. Rosalind’s two cases had the same flat, the same savings and the same divorce, and got different names, because of one sentence about one paper.
 
-Something bought for a problem the case does not show, such as a family trust for a family with nothing to answer, costs money every year and answers nothing. And notice what the key does not ask. It does not ask what has been done. A case about a handover is read for what it shows: a paper, a sum, a rise, a person. The cure is the name, and the name is chosen only once the question has been answered.
+Something bought for a problem the case does not show, such as a family trust for a family with nothing to answer, costs money every year and answers nothing. And notice what is not asked. It does not ask what has been done. A case about a handover is read for what it shows: a paper, a sum, a rise, a person. The cure is the name, and the name is chosen only once the question has been answered.
 
 **How to answer it from a case**
 
@@ -1232,26 +1232,26 @@ Do the sums where there are sums. The line is the same in every case here, so a 
 
 **When two answers both seem to fit**
 
-Some cases show two of the answers at once, and the key chooses for you. You have met the key’s two rules for this. Where a case shows a paper that is missing or out of date and anything else, the key’s answer is **“The papers that say who gets it, or who can act, are out of date or missing”**: it is the cheapest thing, and everything else rests on it. Where a case shows the estate above the line with money to spare and also something about to rise sharply, the key’s answer is **“Tax on a sharp rise still to come in something the owner holds”**, because the rise is the larger problem and has a deadline. Each pair below has been set side by side earlier in this unit, and each has one question that separates it.
+Some cases show two of the answers at once, and a rule says which answer wins. You have met the two rules for this. Where a case shows a paper that is missing or out of date and anything else, the answer is **“The papers that say who gets it, or who can act, are out of date or missing”**: it is the cheapest thing, and everything else rests on it. Where a case shows the estate above the line with money to spare and also something about to rise sharply, the answer is **“Tax on a sharp rise still to come in something the owner holds”**, because the rise is the larger problem and has a deadline. Each pair below has been set side by side earlier in this unit, and each has one question that separates it.
 
 - Update the basic paperwork or Nothing more needed: Look at each of the three papers in the case: the will, any form held by a pension company or a bank, and the power of attorney. Does the case show that one of them is missing, or no longer matches the person’s life? Or does it show all three current?
 - Give some away each year or Nothing more needed: Add up everything the owner will leave, and set it against the tax-free limit. Is it above, with more than the owner will need? Or is it below?
-- Give some away each year or Move it out of the estate before it grows: Is anything the owner holds expected to be worth many times more than it is now? If it is, the rise is the case. If nothing is, the estate as it stands is the case. When a case shows both **“Tax on an estate above the tax-free limit, with more than the owner needs”** and something expected to rise sharply in value, the key’s answer is **“Tax on a sharp rise still to come in something the owner holds”**.
+- Give some away each year or Move it out of the estate before it grows: Is anything the owner holds expected to be worth many times more than it is now? If it is, the rise is the case. If nothing is, the estate as it stands is the case. When a case shows both **“Tax on an estate above the tax-free limit, with more than the owner needs”** and something expected to rise sharply in value, the answer is **“Tax on a sharp rise still to come in something the owner holds”**.
 - Move it out of the estate before it grows or Family rules for the money: Is the case about a tax bill that a rise in value would make larger? Or is it about what a person will do with the money, or about people who cannot agree?
-- Update the basic paperwork or Family rules for the money: Set aside what the people are like and look at the three papers: is one of them missing or no longer true? If it is, that comes first. If every paper is current, then look at the people. When a case shows both **“The people who will receive it or run it”** and papers that are out of date or missing, the key’s answer is **“The papers that say who gets it, or who can act, are out of date or missing”**.
-- Update the basic paperwork or Give some away each year: Before you add up what the owner will leave: is one of the three papers missing or no longer true? If it is, that is the answer, however large the sum. If not, add it up. When a case shows both **“Tax on an estate above the tax-free limit, with more than the owner needs”** and papers that are out of date or missing, the key’s answer is **“The papers that say who gets it, or who can act, are out of date or missing”**.
-- Update the basic paperwork or Move it out of the estate before it grows: Before you look at what is expected to rise: is one of the three papers missing or no longer true? If it is, that comes first, however large the rise. When a case shows both **“Tax on a sharp rise still to come in something the owner holds”** and papers that are out of date or missing, the key’s answer is **“The papers that say who gets it, or who can act, are out of date or missing”**.
+- Update the basic paperwork or Family rules for the money: Set aside what the people are like and look at the three papers: is one of them missing or no longer true? If it is, that comes first. If every paper is current, then look at the people. When a case shows both **“The people who will receive it or run it”** and papers that are out of date or missing, the answer is **“The papers that say who gets it, or who can act, are out of date or missing”**.
+- Update the basic paperwork or Give some away each year: Before you add up what the owner will leave: is one of the three papers missing or no longer true? If it is, that is the answer, however large the sum. If not, add it up. When a case shows both **“Tax on an estate above the tax-free limit, with more than the owner needs”** and papers that are out of date or missing, the answer is **“The papers that say who gets it, or who can act, are out of date or missing”**.
+- Update the basic paperwork or Move it out of the estate before it grows: Before you look at what is expected to rise: is one of the three papers missing or no longer true? If it is, that comes first, however large the rise. When a case shows both **“Tax on a sharp rise still to come in something the owner holds”** and papers that are out of date or missing, the answer is **“The papers that say who gets it, or who can act, are out of date or missing”**.
 
 
 ### 36. A question about a new case
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 36 of 41*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 36 of 41*
 
 [reviewers only: card kind `check`, id `check-handover-question`]
 
 > Hamid, 58, is the only person who signs for his taxi firm, which is worth £300,000. His will was rewritten last year. He has never signed a power of attorney, and the firm's bank accounts are in his name alone. The country takes 40% of whatever a person leaves above £500,000.
 
-**The key asks:** **“What could go wrong when it is handed over?”**
+**The question:** **“What could go wrong when it is handed over?”**
 
 - The papers that say who gets it, or who can act, are out of date or missing
 - Tax on an estate above the tax-free limit, with more than the owner needs
@@ -1277,11 +1277,11 @@ Some cases show two of the answers at once, and the key chooses for you. You hav
 
 ### 37. A whole case, from the first question to the name
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 37 of 41*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 37 of 41*
 
 [reviewers only: card kind `worked`, id `worked-spare`]
 
-You have the five names and the key’s question about them. Before you run a case yourself, watch two being run from the top, in the order the key asks. You are not asked anything until the end of each.
+You have the five names and the question about them. Before you run a case yourself, watch two being run from the top, in the order the questions are asked. You are not asked anything until the end of each.
 
 *Fabian and the question*
 
@@ -1295,7 +1295,7 @@ What it is for: sorts the four ways money that has been built up can be lost (a 
 
 Answer: **“The handover to other people”**
 
-The key’s first question comes first, as it does for every case. What the case says is on Fabian’s mind: “Fabian has been wondering what his two children would receive when he dies”. That is the moment money passes to other people. Nothing here comes out of his money every year, no one thing is most of it, and no bill falls due on a date, so the answer is **“The handover to other people”**.
+The first question comes first, as it does for every case. What the case says is on Fabian’s mind: “Fabian has been wondering what his two children would receive when he dies”. That is the moment money passes to other people. Nothing here comes out of his money every year, no one thing is most of it, and no bill falls due on a date, so the answer is **“The handover to other people”**.
 
 Still possible: all five names this unit teaches.
 
@@ -1327,17 +1327,17 @@ Still possible: **Give some away each year**. Ruled out: **Update the basic pape
 
 For **Nothing more needed** you must be able to point to this: a will, beneficiary forms and a power of attorney that are all current, an estate below the tax-free limit or with nothing in it in question, and nothing in the case about the people. Fabian’s papers are current and the children get on well, but his estate is far above the limit, so something in the case could go wrong at the handover: £340,000 of tax.
 
-It is the question from Ellis. Add up everything the owner will leave, and set it against the tax-free limit. Is it above, with more than the owner will need? Or is it below? Here the estate is above the line and there is money to spare, so the key’s answer is **“Tax on an estate above the tax-free limit, with more than the owner needs”**.
+It is the question from Ellis. Add up everything the owner will leave, and set it against the tax-free limit. Is it above, with more than the owner will need? Or is it below? Here the estate is above the line and there is money to spare, so the answer is **“Tax on an estate above the tax-free limit, with more than the owner needs”**.
 
 **Does it look like a case you know?**
 
-The key has given its answer. Now take a second look of a different kind: does this case look like one you know? It should bring back Harold: a widower, the estate above the line, a pension that pays more than he spends, and nothing about to rise.
+You have the answer. Now take a second look of a different kind: does this case look like one you know? It should bring back Harold: a widower, the estate above the line, a pension that pays more than he spends, and nothing about to rise.
 
-Here the key and the likeness agree, so the answer stands. The key’s question comes first, because it makes you point at words in the case. The likeness is only a second look. When the two disagree, do not pick the one you prefer. Go back to the key’s question and find the words in the case that answer it. The second whole case shows how.
+Here the answer and the likeness agree, so it stands. The question comes first, because it makes you point at words in the case. The likeness is only a second look. When the two disagree, do not pick the one you prefer. Go back to the question and find the words in the case that answer it. The second whole case shows how.
 
 ### 38. A second whole case, where the loudest thing points the wrong way
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 38 of 41*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 38 of 41*
 
 [reviewers only: card kind `worked`, id `worked-golfclub`]
 
@@ -1387,13 +1387,13 @@ Still possible: **Update the basic paperwork**. Ruled out: **Nothing more needed
 
 For **Move it out of the estate before it grows** you must be able to point to this: something the owner holds, such as a business or land, that is expected to rise sharply in value, and an estate that is or will then be above the tax-free limit. Nothing Zainab holds is expected to rise sharply, and her estate is below the line, so a family trust would cost money every year to answer a tax problem she does not have.
 
-It is the question from Florin. Before you look at what is expected to rise: is one of the three papers missing or no longer true? If it is, that comes first, however large the rise. Here two papers name a man who has died, so the key’s answer is **“The papers that say who gets it, or who can act, are out of date or missing”**.
+It is the question from Florin. Before you look at what is expected to rise: is one of the three papers missing or no longer true? If it is, that comes first, however large the rise. Here two papers name a man who has died, so the answer is **“The papers that say who gets it, or who can act, are out of date or missing”**.
 
 **Does it look like a case you know?**
 
-Now the second look: does this case look like one you know? A friend’s advice about a family trust, and a couple of papers, may bring back Anselm and Marit first, and Anselm and Marit’s case was **Nothing more needed**. So here the likeness and the key seem to disagree.
+Now the second look: does this case look like one you know? A friend’s advice about a family trust, and a couple of papers, may bring back Anselm and Marit first, and Anselm and Marit’s case was **Nothing more needed**. So here the likeness and the answer seem to disagree.
 
-When that happens, go back to the key’s question and find the words in the case that answer it. They are “Her will was written with her husband in 2004 and leaves everything to him. He died last year” and “The form on her pension also names him”. Anselm and Marit’s case had the opposite: every paper renewed the spring before. Zainab’s case really looks like Edith’s: a will that names a husband who has died. So the key’s answer stands.
+When that happens, go back to the question and find the words in the case that answer it. They are “Her will was written with her husband in 2004 and leaves everything to him. He died last year” and “The form on her pension also names him”. Anselm and Marit’s case had the opposite: every paper renewed the spring before. Zainab’s case really looks like Edith’s: a will that names a husband who has died. So the answer stands.
 
 ### The drill
 
@@ -1401,7 +1401,7 @@ The cards are out of view from here, and every case is new. The drill has five s
 
 Some of these cases show all three papers in perfect order, and a stranger offering something to buy. That is on purpose. The name for papers in order, with nothing else in question, is one of the five, and in real life you will need it as often as any of the others. Look for the words that raise something. If you cannot point to them, do not invent them.
 
-#### Stage 1 of 5. The key’s answers are shown for each case. Give the name that goes with them. This stage practises one thing: which name goes with which answer.
+#### Stage 1 of 5. The answers are shown for each case. Give the name that goes with them. This stage practises one thing: which name goes with which answer.
 
 The names offered are the five this unit teaches: Update the basic paperwork / Nothing more needed / Give some away each year / Move it out of the estate before it grows / Family rules for the money.
 
@@ -1421,7 +1421,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Nothing more needed**: The will was rewritten, which is one paper. But the form names a man who has died, so not every paper is current.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Nothing more needed**, the look-alike card’s lines follow: Both are about the papers that say who gets the money and who may act, and in both the owner may be well and the family may be close. In **Update the basic paperwork** at least one of the papers is missing, or names someone it should no longer name, or was written before a marriage, a divorce, a birth or a death. In **Nothing more needed** every one of the papers is current. Look at each of the three papers in the case: the will, any form held by a pension company or a bank, and the power of attorney. Does the case show that one of them is missing, or no longer matches the person’s life? Or does it show all three current?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “A will, a form or a power of attorney out of date or missing” (one tap opens the card).
 
 **Drill item 2 of 41**
@@ -1440,7 +1440,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Update the basic paperwork**: A will, a form and *a power of attorney* are all in the case, and all were renewed four months ago. Nothing is missing and nothing names someone it should no longer name.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Update the basic paperwork**, the look-alike card’s lines follow: Both are about the papers that say who gets the money and who may act, and in both the owner may be well and the family may be close. In **Update the basic paperwork** at least one of the papers is missing, or names someone it should no longer name, or was written before a marriage, a divorce, a birth or a death. In **Nothing more needed** every one of the papers is current. Look at each of the three papers in the case: the will, any form held by a pension company or a bank, and the power of attorney. Does the case show that one of them is missing, or no longer matches the person’s life? Or does it show all three current?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “Current papers, and nothing else about the handover in question” (one tap opens the card).
 
 **Drill item 3 of 41**
@@ -1459,7 +1459,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Nothing more needed**: His papers are current, which is part of **Nothing more needed**. But the estate is £900,000 above the line, so the tax is a real sum, and he has money he does not need.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Nothing more needed**, the look-alike card’s lines follow: In both, the papers are in order and the owner is well off. In **Give some away each year** what the owner will leave is above the tax-free limit, and they have more than they will need. In **Nothing more needed** what they will leave is below the limit, or nothing in it is in question. Add up everything the owner will leave, and set it against the tax-free limit. Is it above, with more than the owner will need? Or is it below?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “An estate above the tax-free limit, with money to spare” (one tap opens the card).
 
 **Drill item 4 of 41**
@@ -1478,7 +1478,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Give some away each year**: The estate above the line is in the case once the rise comes, but the rise is the larger thing: £4,150,000 of new value that would all be taxed. Yearly gifts could not touch it.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Give some away each year**, the look-alike card’s lines follow: Both are about tax on what the owner will leave, and both can have the estate above the tax-free limit. In **Give some away each year** the tax is on the estate as it stands, and nothing in it is expected to rise sharply, so small gifts from what the owner has to spare reduce the tax. In **Move it out of the estate before it grows** something the owner holds is expected to rise sharply, and the tax on that rise is the larger problem. Is anything the owner holds expected to be worth many times more than it is now? If it is, the rise is the case. If nothing is, the estate as it stands is the case.
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “Something about to rise sharply in value, which tax at death would catch” (one tap opens the card).
 
 **Drill item 5 of 41**
@@ -1496,8 +1496,8 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **Update the basic paperwork**.” What could go wrong when it is handed over? **The papers that say who gets it, or who can act, are out of date or missing.** The will was written before a birth and never changed: “it leaves everything to her. Since then his twin sons have been born. He has not changed the will”. It would leave everything to one child and nothing to the other two.
   - Why not **Family rules for the money**: A family is involved, but nothing here shows a risk in a person. What it shows is a paper written before a birth.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
-  - If you chose **Family rules for the money**, the look-alike card’s lines follow: Both are about family, and in both the person who is about to receive the money may be the one at risk. In **Update the basic paperwork** a paper is missing or out of date. In **Family rules for the money** the papers are not what is in question: it is a person who will receive the money or a control that will pass to people who cannot agree. Where a case shows both, the key’s answer is **“The papers that say who gets it, or who can act, are out of date or missing”**. Set aside what the people are like and look at the three papers: is one of them missing or no longer true? If it is, that comes first. If every paper is current, then look at the people.
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose **Family rules for the money**, the look-alike card’s lines follow: Both are about family, and in both the person who is about to receive the money may be the one at risk. In **Update the basic paperwork** a paper is missing or out of date. In **Family rules for the money** the papers are not what is in question: it is a person who will receive the money or a control that will pass to people who cannot agree. Where a case shows both, the answer is **“The papers that say who gets it, or who can act, are out of date or missing”**. Set aside what the people are like and look at the three papers: is one of them missing or no longer true? If it is, that comes first. If every paper is current, then look at the people.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “A will, a form or a power of attorney out of date or missing” (one tap opens the card).
 
 **Drill item 6 of 41**
@@ -1515,8 +1515,8 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **Family rules for the money**.” What could go wrong when it is handed over? **The people who will receive it or run it.** The case shows a risk in the person who will receive the money: “Callum is to marry in June, and has told his grandmother that he will put whatever he receives into a house that will be in his fiancee's name alone”. An heir about to marry has said he will put all of it where it would not be his. The papers are current and £480,000 is below the line, so neither is the problem.
   - Why not **Update the basic paperwork**: All three papers were renewed in January, so no paper is missing or out of date. The case is about what a person will do.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
-  - If you chose **Update the basic paperwork**, the look-alike card’s lines follow: Both are about family, and in both the person who is about to receive the money may be the one at risk. In **Update the basic paperwork** a paper is missing or out of date. In **Family rules for the money** the papers are not what is in question: it is a person who will receive the money or a control that will pass to people who cannot agree. Where a case shows both, the key’s answer is **“The papers that say who gets it, or who can act, are out of date or missing”**. Set aside what the people are like and look at the three papers: is one of them missing or no longer true? If it is, that comes first. If every paper is current, then look at the people.
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose **Update the basic paperwork**, the look-alike card’s lines follow: Both are about family, and in both the person who is about to receive the money may be the one at risk. In **Update the basic paperwork** a paper is missing or out of date. In **Family rules for the money** the papers are not what is in question: it is a person who will receive the money or a control that will pass to people who cannot agree. Where a case shows both, the answer is **“The papers that say who gets it, or who can act, are out of date or missing”**. Set aside what the people are like and look at the three papers: is one of them missing or no longer true? If it is, that comes first. If every paper is current, then look at the people.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “The people who will receive it, or run it, could lose it” (one tap opens the card).
 
 #### Stage 2 of 5. One question at a time.
@@ -1538,7 +1538,7 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **Tax on an estate above the tax-free limit, with more than the owner needs.**” The case shows the estate above the line and money to spare: “the money is in the bank” and “His pension pays him £40,000 a year and he spends about £15,000”. £1,150,000 less £500,000 is £650,000, and 40% of that is £260,000. He has £25,000 a year more than he spends, and his papers are current. This answer leads to **Give some away each year**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **Nothing: the papers are current and nothing else is in question**: His papers are current, which is part of **Nothing more needed**. But the estate is above the line and he has money he does not need.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 8 of 41**
@@ -1558,7 +1558,7 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **Nothing: the papers are current and nothing else is in question.**” All three papers are current and the estate is below the line: “Her will, forms and power of attorney were renewed last summer” and “worth £290,000. Her pension pays her just what she spends”. £290,000 is £210,000 under £500,000, so the tax is £0, and she has nothing to spare to give away. This answer leads to **Nothing more needed**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **Tax on an estate above the tax-free limit, with more than the owner needs**: Gifts reduce a tax bill, and here there is no tax bill: the estate is below the line. Her pension pays her just what she spends, so there is nothing spare.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 9 of 41**
@@ -1578,7 +1578,7 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **Tax on a sharp rise still to come in something the owner holds.**” Something she holds is expected to rise sharply: “the founders say the shares could be worth £3,000,000 in four years”. £150,000 would become £3,000,000, and her estate, £550,000 now, would become £3,400,000. The tax would go from £20,000 to £1,160,000. This answer leads to **Move it out of the estate before it grows**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **The people who will receive it or run it**: Nothing here is about a person: no heir is at risk and nobody is quarrelling. It is about a sum that could grow and the tax on it.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 10 of 41**
@@ -1598,7 +1598,7 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **The people who will receive it or run it.**” Control will pass to people who cannot agree: “Two of them want to sell it. The third wants to farm it, and has said he will not move out of the farmhouse whatever the others say”. The three will own it equally, so a sale needs all of them, and one has said he will not go. The papers are current and the estate is below the line. This answer leads to **Family rules for the money**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **Tax on a sharp rise still to come in something the owner holds**: There is no tax in the case, and nothing is expected to rise sharply. A trustee could hold the farm, but what the case is about is the people who cannot agree.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 11 of 41**
@@ -1649,7 +1649,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Shown as soon as you answer**
 
-- The answer is: “Is anything the owner holds expected to be worth many times more than it is now? If it is, the rise is the case. If nothing is, the estate as it stands is the case.” Both are about tax on what the owner will leave, and both can have the estate above the tax-free limit. In **Give some away each year** the tax is on the estate as it stands, and nothing in it is expected to rise sharply, so small gifts from what the owner has to spare reduce the tax. In **Move it out of the estate before it grows** something the owner holds is expected to rise sharply, and the tax on that rise is the larger problem. When a case shows both **“Tax on an estate above the tax-free limit, with more than the owner needs”** and something expected to rise sharply in value, the key’s answer is **“Tax on a sharp rise still to come in something the owner holds”**.
+- The answer is: “Is anything the owner holds expected to be worth many times more than it is now? If it is, the rise is the case. If nothing is, the estate as it stands is the case.” Both are about tax on what the owner will leave, and both can have the estate above the tax-free limit. In **Give some away each year** the tax is on the estate as it stands, and nothing in it is expected to rise sharply, so small gifts from what the owner has to spare reduce the tax. In **Move it out of the estate before it grows** something the owner holds is expected to rise sharply, and the tax on that rise is the larger problem. When a case shows both **“Tax on an estate above the tax-free limit, with more than the owner needs”** and something expected to rise sharply in value, the answer is **“Tax on a sharp rise still to come in something the owner holds”**.
 - If you chose “Add up everything the owner will leave, and set it against the tax-free limit. Is it above, with more than the owner will need? Or is it below?”: that question separates **Give some away each year** and **Nothing more needed**.
 - If you chose “Is the case about a tax bill that a rise in value would make larger? Or is it about what a person will do with the money, or about people who cannot agree?”: that question separates **Move it out of the estate before it grows** and **Family rules for the money**.
 - If you chose “Before you add up what the owner will leave: is one of the three papers missing or no longer true? If it is, that is the answer, however large the sum. If not, add it up.”: that question separates **Update the basic paperwork** and **Give some away each year**.
@@ -1685,7 +1685,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Shown as soon as you answer**
 
-- The answer is: “Set aside what the people are like and look at the three papers: is one of them missing or no longer true? If it is, that comes first. If every paper is current, then look at the people.” Both are about family, and in both the person who is about to receive the money may be the one at risk. In **Update the basic paperwork** a paper is missing or out of date. In **Family rules for the money** the papers are not what is in question: it is a person who will receive the money or a control that will pass to people who cannot agree. Where a case shows both, the key’s answer is **“The papers that say who gets it, or who can act, are out of date or missing”**. When a case shows both **“The people who will receive it or run it”** and papers that are out of date or missing, the key’s answer is **“The papers that say who gets it, or who can act, are out of date or missing”**.
+- The answer is: “Set aside what the people are like and look at the three papers: is one of them missing or no longer true? If it is, that comes first. If every paper is current, then look at the people.” Both are about family, and in both the person who is about to receive the money may be the one at risk. In **Update the basic paperwork** a paper is missing or out of date. In **Family rules for the money** the papers are not what is in question: it is a person who will receive the money or a control that will pass to people who cannot agree. Where a case shows both, the answer is **“The papers that say who gets it, or who can act, are out of date or missing”**. When a case shows both **“The people who will receive it or run it”** and papers that are out of date or missing, the answer is **“The papers that say who gets it, or who can act, are out of date or missing”**.
 - If you chose “Look at each of the three papers in the case: the will, any form held by a pension company or a bank, and the power of attorney. Does the case show that one of them is missing, or no longer matches the person’s life? Or does it show all three current?”: that question separates **Update the basic paperwork** and **Nothing more needed**.
 - If you chose “Is the case about a tax bill that a rise in value would make larger? Or is it about what a person will do with the money, or about people who cannot agree?”: that question separates **Move it out of the estate before it grows** and **Family rules for the money**.
 - If you chose “Before you add up what the owner will leave: is one of the three papers missing or no longer true? If it is, that is the answer, however large the sum. If not, add it up.”: that question separates **Update the basic paperwork** and **Give some away each year**.
@@ -1705,7 +1705,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Shown as soon as you answer**
 
-- The answer is: “Before you add up what the owner will leave: is one of the three papers missing or no longer true? If it is, that is the answer, however large the sum. If not, add it up.” Both can be a case of a large estate, and both are put right before anything bigger is tried. In **Give some away each year** what the owner will leave is above the tax-free limit, they have more than they will need, and the papers are not in question. In **Update the basic paperwork** a paper is missing or out of date, however large the estate is. Where a case shows both, the key’s answer is **“The papers that say who gets it, or who can act, are out of date or missing”**. When a case shows both **“Tax on an estate above the tax-free limit, with more than the owner needs”** and papers that are out of date or missing, the key’s answer is **“The papers that say who gets it, or who can act, are out of date or missing”**.
+- The answer is: “Before you add up what the owner will leave: is one of the three papers missing or no longer true? If it is, that is the answer, however large the sum. If not, add it up.” Both can be a case of a large estate, and both are put right before anything bigger is tried. In **Give some away each year** what the owner will leave is above the tax-free limit, they have more than they will need, and the papers are not in question. In **Update the basic paperwork** a paper is missing or out of date, however large the estate is. Where a case shows both, the answer is **“The papers that say who gets it, or who can act, are out of date or missing”**. When a case shows both **“Tax on an estate above the tax-free limit, with more than the owner needs”** and papers that are out of date or missing, the answer is **“The papers that say who gets it, or who can act, are out of date or missing”**.
 - If you chose “Look at each of the three papers in the case: the will, any form held by a pension company or a bank, and the power of attorney. Does the case show that one of them is missing, or no longer matches the person’s life? Or does it show all three current?”: that question separates **Update the basic paperwork** and **Nothing more needed**.
 - If you chose “Add up everything the owner will leave, and set it against the tax-free limit. Is it above, with more than the owner will need? Or is it below?”: that question separates **Give some away each year** and **Nothing more needed**.
 - If you chose “Is anything the owner holds expected to be worth many times more than it is now? If it is, the rise is the case. If nothing is, the estate as it stands is the case.”: that question separates **Give some away each year** and **Move it out of the estate before it grows**.
@@ -1726,7 +1726,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Shown as soon as you answer**
 
-- The answer is: “Before you look at what is expected to rise: is one of the three papers missing or no longer true? If it is, that comes first, however large the rise.” Both involve something that could change who ends up with a great deal of money, and both can be about someone’s business or land. In **Move it out of the estate before it grows** something the owner holds is expected to rise sharply and the tax on the rise is the problem. In **Update the basic paperwork** a paper is missing or out of date. Where a case shows both, the key’s answer is **“The papers that say who gets it, or who can act, are out of date or missing”**. When a case shows both **“Tax on a sharp rise still to come in something the owner holds”** and papers that are out of date or missing, the key’s answer is **“The papers that say who gets it, or who can act, are out of date or missing”**.
+- The answer is: “Before you look at what is expected to rise: is one of the three papers missing or no longer true? If it is, that comes first, however large the rise.” Both involve something that could change who ends up with a great deal of money, and both can be about someone’s business or land. In **Move it out of the estate before it grows** something the owner holds is expected to rise sharply and the tax on the rise is the problem. In **Update the basic paperwork** a paper is missing or out of date. Where a case shows both, the answer is **“The papers that say who gets it, or who can act, are out of date or missing”**. When a case shows both **“Tax on a sharp rise still to come in something the owner holds”** and papers that are out of date or missing, the answer is **“The papers that say who gets it, or who can act, are out of date or missing”**.
 - If you chose “Look at each of the three papers in the case: the will, any form held by a pension company or a bank, and the power of attorney. Does the case show that one of them is missing, or no longer matches the person’s life? Or does it show all three current?”: that question separates **Update the basic paperwork** and **Nothing more needed**.
 - If you chose “Is anything the owner holds expected to be worth many times more than it is now? If it is, the rise is the case. If nothing is, the estate as it stands is the case.”: that question separates **Give some away each year** and **Move it out of the estate before it grows**.
 - If you chose “Is the case about a tax bill that a rise in value would make larger? Or is it about what a person will do with the money, or about people who cannot agree?”: that question separates **Move it out of the estate before it grows** and **Family rules for the money**.
@@ -1836,12 +1836,12 @@ Shown to you, with the words that decide each answer marked:
 **Shown as soon as you answer**
 
 - If you are right: “Right: **Something taken out of it every year.**” Two charges come out of her money every year: “Each year her adviser's firm takes 1.3% of it, £3,250” and “the funds she holds take another 0.9%”. Nothing is said about a fall in prices, a sale or a death.
-- If you miss: “The answer is …”, the same reason, and then the line built from the key for the answer you chose.
-- Then, right or wrong: “This case leaves the part of the key you have been taught. The questions that follow this answer come in a part of the course you have not reached, so the case stops here.”
+- If you miss: “The answer is …”, the same reason, and then the line built from the answers’ own wording for the answer you chose.
+- Then, right or wrong: “The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.”
 
-#### Stage 3 of 5. The first answer is shown. Answer the rest, then give the name. From here on your route is marked as well as the name: a right name reached by a wrong answer on the way counts as a miss.
+#### Stage 3 of 5. The first answer is shown. Answer the rest, then give the name. From here on your answers on the way are marked as well as the name: a right name reached by a wrong answer counts as a miss.
 
-Each question is shown with all of its answers from the key, in the key’s order, and the names offered are the five this unit teaches.
+Each question is shown with all of its answers, in order, and the names offered are the five this unit teaches.
 
 **Drill item 24 of 41**
 
@@ -1858,10 +1858,10 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Nothing more needed**: The form is in the case, but it is not current: it names someone who has died.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - If you chose **Nothing: the papers are current and nothing else is in question**: The form is in the case, but it is not current: it names someone who has died.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Nothing more needed**, the look-alike card’s lines follow: Both are about the papers that say who gets the money and who may act, and in both the owner may be well and the family may be close. In **Update the basic paperwork** at least one of the papers is missing, or names someone it should no longer name, or was written before a marriage, a divorce, a birth or a death. In **Nothing more needed** every one of the papers is current. Look at each of the three papers in the case: the will, any form held by a pension company or a bank, and the power of attorney. Does the case show that one of them is missing, or no longer matches the person’s life? Or does it show all three current?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A will, a form or a power of attorney out of date or missing” (one tap opens the card).
 
 **Drill item 25 of 41**
@@ -1879,15 +1879,15 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Give some away each year**: The estate is below the line, so there is no tax to reduce, and nothing is said about money they could spare.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - If you chose **Tax on an estate above the tax-free limit, with more than the owner needs**: The estate is below the line, so there is no tax to reduce, and nothing is said about money they could spare.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Give some away each year**, the look-alike card’s lines follow: In both, the papers are in order and the owner is well off. In **Give some away each year** what the owner will leave is above the tax-free limit, and they have more than they will need. In **Nothing more needed** what they will leave is below the limit, or nothing in it is in question. Add up everything the owner will leave, and set it against the tax-free limit. Is it above, with more than the owner will need? Or is it below?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Current papers, and nothing else about the handover in question” (one tap opens the card).
 
-#### Stage 4 of 5. No help. Answer every question in the key’s order, then give the name.
+#### Stage 4 of 5. No help. Answer every question in order, then give the name.
 
-Each question is shown with all of its answers from the key, in the key’s order, and the names offered are the five this unit teaches.
+Each question is shown with all of its answers, in order, and the names offered are the five this unit teaches.
 
 **Drill item 26 of 41**
 
@@ -1902,10 +1902,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **The handover to other people.** The case is about who will receive his house and who will act after his death: “wrote a will so that his two sons would receive his house after his death”. Nothing in it comes out every year, and no price, loan or bill is mentioned.
   - If you chose **Nothing: the papers are current and nothing else is in question**: A will is in the case, but one thing in it no longer fits: the person named to carry it out has died. So not every paper is current.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Nothing more needed**, the look-alike card’s lines follow: Both are about the papers that say who gets the money and who may act, and in both the owner may be well and the family may be close. In **Update the basic paperwork** at least one of the papers is missing, or names someone it should no longer name, or was written before a marriage, a divorce, a birth or a death. In **Nothing more needed** every one of the papers is current. Look at each of the three papers in the case: the will, any form held by a pension company or a bank, and the power of attorney. Does the case show that one of them is missing, or no longer matches the person’s life? Or does it show all three current?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A will, a form or a power of attorney out of date or missing” (one tap opens the card).
 
 **Drill item 27 of 41**
@@ -1921,10 +1921,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **The handover to other people.** The case is about what would happen to his money when he dies, and the salesman’s call is the only thing raising it: “A salesman has phoned to say he 'must' protect his estate from the taxman”. Nothing here comes out every year, and nothing is held in one thing.
   - If you chose **Tax on an estate above the tax-free limit, with more than the owner needs**: Gifts reduce a tax bill, and the estate is below the line, so there is no tax bill. Nothing is said about money he could spare.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Give some away each year**, the look-alike card’s lines follow: In both, the papers are in order and the owner is well off. In **Give some away each year** what the owner will leave is above the tax-free limit, and they have more than they will need. In **Nothing more needed** what they will leave is below the limit, or nothing in it is in question. Add up everything the owner will leave, and set it against the tax-free limit. Is it above, with more than the owner will need? Or is it below?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If his will still named his former wife, the case would be **“The papers that say who gets it, or who can act, are out of date or missing”**.
 - Taught on: “Current papers, and nothing else about the handover in question” (one tap opens the card).
 
@@ -1941,10 +1941,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **The handover to other people.** The case is about what Chidi’s family would receive after he dies: “Chidi would like to know what his family would receive”. No charge, loan, fall in prices or bill is in it.
   - If you chose **Nothing: the papers are current and nothing else is in question**: His papers are current, but the estate is £1,000,000 above the line and he has money he does not need.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Nothing more needed**, the look-alike card’s lines follow: In both, the papers are in order and the owner is well off. In **Give some away each year** what the owner will leave is above the tax-free limit, and they have more than they will need. In **Nothing more needed** what they will leave is below the limit, or nothing in it is in question. Add up everything the owner will leave, and set it against the tax-free limit. Is it above, with more than the owner will need? Or is it below?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “An estate above the tax-free limit, with money to spare” (one tap opens the card).
 
 **Drill item 29 of 41**
@@ -1960,10 +1960,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **The handover to other people.** The case is about what his daughters would receive and what the tax would take: “Alberto has asked what that would mean for his daughters”. No charge, loan, fall in prices or bill is in it.
   - If you chose **Tax on an estate above the tax-free limit, with more than the owner needs**: The estate above the line is in the case once the rise comes, but nothing says he has money to spare, and the rise is the larger thing.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Give some away each year**, the look-alike card’s lines follow: Both are about tax on what the owner will leave, and both can have the estate above the tax-free limit. In **Give some away each year** the tax is on the estate as it stands, and nothing in it is expected to rise sharply, so small gifts from what the owner has to spare reduce the tax. In **Move it out of the estate before it grows** something the owner holds is expected to rise sharply, and the tax on that rise is the larger problem. Is anything the owner holds expected to be worth many times more than it is now? If it is, the rise is the case. If nothing is, the estate as it stands is the case.
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Something about to rise sharply in value, which tax at death would catch” (one tap opens the card).
 
 **Drill item 30 of 41**
@@ -1979,10 +1979,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **The handover to other people.** The case is about who will receive the pub: “Her will leaves it equally to her twin daughters”. Nothing comes out every year, and nothing is held in one thing that a lawsuit or loan could reach.
   - If you chose **The papers that say who gets it, or who can act, are out of date or missing**: All three papers were renewed last year. What the case raises is two people who want different things.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **Update the basic paperwork**, the look-alike card’s lines follow: Both are about family, and in both the person who is about to receive the money may be the one at risk. In **Update the basic paperwork** a paper is missing or out of date. In **Family rules for the money** the papers are not what is in question: it is a person who will receive the money or a control that will pass to people who cannot agree. Where a case shows both, the key’s answer is **“The papers that say who gets it, or who can act, are out of date or missing”**. Set aside what the people are like and look at the three papers: is one of them missing or no longer true? If it is, that comes first. If every paper is current, then look at the people.
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **Update the basic paperwork**, the look-alike card’s lines follow: Both are about family, and in both the person who is about to receive the money may be the one at risk. In **Update the basic paperwork** a paper is missing or out of date. In **Family rules for the money** the papers are not what is in question: it is a person who will receive the money or a control that will pass to people who cannot agree. Where a case shows both, the answer is **“The papers that say who gets it, or who can act, are out of date or missing”**. Set aside what the people are like and look at the three papers: is one of them missing or no longer true? If it is, that comes first. If every paper is current, then look at the people.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “The people who will receive it, or run it, could lose it” (one tap opens the card).
 
 **Drill item 31 of 41**
@@ -1998,10 +1998,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **The handover to other people.** The case is about what would be left for his children after the tax: “he has been asking what would be left for his children”. No charge, loan, fall in prices or bill is in it.
   - If you chose **The people who will receive it or run it**: Nothing here is about a person. It is about the tax on a sum that could grow very large.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Family rules for the money**, the look-alike card’s lines follow: Both can end with a trustee holding the money under written terms, and a trustee with a veto can appear in either. In **Move it out of the estate before it grows** the problem is tax on something expected to rise sharply. In **Family rules for the money** the problem is in the people who will receive the money or run it, and nothing here is about tax. Is the case about a tax bill that a rise in value would make larger? Or is it about what a person will do with the money, or about people who cannot agree?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Something about to rise sharply in value, which tax at death would catch” (one tap opens the card).
 
 **Drill item 32 of 41**
@@ -2017,10 +2017,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **The handover to other people.** The case is about what would happen to his money when he dies, and the speaker’s suggestion is what raises it: “a 'gifting scheme' to cut their tax at death”. Nothing here comes out every year or is held in one thing.
   - If you chose **Tax on an estate above the tax-free limit, with more than the owner needs**: Gifts reduce a tax bill, and here there is none: the estate is far below the line. His pension pays him just what he spends, so nothing is spare.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Give some away each year**, the look-alike card’s lines follow: In both, the papers are in order and the owner is well off. In **Give some away each year** what the owner will leave is above the tax-free limit, and they have more than they will need. In **Nothing more needed** what they will leave is below the limit, or nothing in it is in question. Add up everything the owner will leave, and set it against the tax-free limit. Is it above, with more than the owner will need? Or is it below?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Current papers, and nothing else about the handover in question” (one tap opens the card).
 
 **Drill item 33 of 41**
@@ -2036,10 +2036,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **The handover to other people.** The case is about what the tax would take when they die: “Sheena has asked what the tax would take when they die”. The flats are rented out, but nothing here is a charge, a loan or a fall in prices.
   - If you chose **Nothing: the papers are current and nothing else is in question**: Their papers are current, and the daughters get on well, but the estate is £1,100,000 above the line and they have money they do not need.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Nothing more needed**, the look-alike card’s lines follow: In both, the papers are in order and the owner is well off. In **Give some away each year** what the owner will leave is above the tax-free limit, and they have more than they will need. In **Nothing more needed** what they will leave is below the limit, or nothing in it is in question. Add up everything the owner will leave, and set it against the tax-free limit. Is it above, with more than the owner will need? Or is it below?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “An estate above the tax-free limit, with money to spare” (one tap opens the card).
 
 **Drill item 34 of 41**
@@ -2055,11 +2055,11 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **The handover to other people.** The case is about who will receive the firm: “His will leaves it equally to his sons Fritz and Gunnar”. Nothing comes out every year, and nothing is held in one thing that a lawsuit or loan could reach.
   - If you chose **Tax on a sharp rise still to come in something the owner holds**: A family trust has been mentioned, and a trustee might be part of the answer. But the case has no tax to answer and nothing expected to rise. What it shows is two people who cannot agree.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Move it out of the estate before it grows**, the look-alike card’s lines follow: Both can end with a trustee holding the money under written terms, and a trustee with a veto can appear in either. In **Move it out of the estate before it grows** the problem is tax on something expected to rise sharply. In **Family rules for the money** the problem is in the people who will receive the money or run it, and nothing here is about tax. Is the case about a tax bill that a rise in value would make larger? Or is it about what a person will do with the money, or about people who cannot agree?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *Anselm and Marit*, which was **Nothing more needed**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *Anselm and Marit*, which was **Nothing more needed**. When a likeness and the answers disagree, go by the words that answer the question.
 - Taught on: “The people who will receive it, or run it, could lose it” (one tap opens the card).
 
 **Drill item 35 of 41**
@@ -2074,12 +2074,12 @@ Each question is shown with all of its answers from the key, in the key’s orde
   - Why not **Family rules for the money**: Gareth’s two business losses and his request make the case look like a risk in a person, and they are in the case. When a case shows both, the papers come first, and here the power of attorney names a man who has died.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **The handover to other people.** The case is about who will receive the farm and who could act for her: “will leave her farm, worth £420,000, to her son Gareth”. Nothing comes out every year, and nothing is held in one thing that a lawsuit or loan could reach.
-  - If you chose **The people who will receive it or run it**: You chose **The people who will receive it or run it**. This case does show that. It also shows papers that are out of date or missing, and when a case shows both, the key’s answer is **The papers that say who gets it, or who can act, are out of date or missing**.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **Family rules for the money**, the look-alike card’s lines follow: Both are about family, and in both the person who is about to receive the money may be the one at risk. In **Update the basic paperwork** a paper is missing or out of date. In **Family rules for the money** the papers are not what is in question: it is a person who will receive the money or a control that will pass to people who cannot agree. Where a case shows both, the key’s answer is **“The papers that say who gets it, or who can act, are out of date or missing”**. Set aside what the people are like and look at the three papers: is one of them missing or no longer true? If it is, that comes first. If every paper is current, then look at the people.
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *Wilf and Joel*, which was **Family rules for the money**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose **The people who will receive it or run it**: You chose **The people who will receive it or run it**. This case does show that. It also shows papers that are out of date or missing, and when a case shows both, the answer is **The papers that say who gets it, or who can act, are out of date or missing**.
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **Family rules for the money**, the look-alike card’s lines follow: Both are about family, and in both the person who is about to receive the money may be the one at risk. In **Update the basic paperwork** a paper is missing or out of date. In **Family rules for the money** the papers are not what is in question: it is a person who will receive the money or a control that will pass to people who cannot agree. Where a case shows both, the answer is **“The papers that say who gets it, or who can act, are out of date or missing”**. Set aside what the people are like and look at the three papers: is one of them missing or no longer true? If it is, that comes first. If every paper is current, then look at the people.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *Wilf and Joel*, which was **Family rules for the money**. When a likeness and the answers disagree, go by the words that answer the question.
 - Taught on: “A will, a form or a power of attorney out of date or missing” (one tap opens the card).
 
 **Drill item 36 of 41**
@@ -2094,12 +2094,12 @@ Each question is shown with all of its answers from the key, in the key’s orde
   - Why not **Give some away each year**: The estate above the line and spare income are in the case, so it looks like **Give some away each year**. When a case shows both, the papers come first, and here one of the three papers is missing.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **The handover to other people.** The case is about a time when someone else may have to act for him: “since last spring his doctor has been treating him for memory loss”. Nothing comes out every year, and nothing is held in one thing.
-  - If you chose **Tax on an estate above the tax-free limit, with more than the owner needs**: You chose **Tax on an estate above the tax-free limit, with more than the owner needs**. This case does show that. It also shows papers that are out of date or missing, and when a case shows both, the key’s answer is **The papers that say who gets it, or who can act, are out of date or missing**.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **Give some away each year**, the look-alike card’s lines follow: Both can be a case of a large estate, and both are put right before anything bigger is tried. In **Give some away each year** what the owner will leave is above the tax-free limit, they have more than they will need, and the papers are not in question. In **Update the basic paperwork** a paper is missing or out of date, however large the estate is. Where a case shows both, the key’s answer is **“The papers that say who gets it, or who can act, are out of date or missing”**. Before you add up what the owner will leave: is one of the three papers missing or no longer true? If it is, that is the answer, however large the sum. If not, add it up.
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *Harold’s savings*, which was **Give some away each year**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose **Tax on an estate above the tax-free limit, with more than the owner needs**: You chose **Tax on an estate above the tax-free limit, with more than the owner needs**. This case does show that. It also shows papers that are out of date or missing, and when a case shows both, the answer is **The papers that say who gets it, or who can act, are out of date or missing**.
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **Give some away each year**, the look-alike card’s lines follow: Both can be a case of a large estate, and both are put right before anything bigger is tried. In **Give some away each year** what the owner will leave is above the tax-free limit, they have more than they will need, and the papers are not in question. In **Update the basic paperwork** a paper is missing or out of date, however large the estate is. Where a case shows both, the answer is **“The papers that say who gets it, or who can act, are out of date or missing”**. Before you add up what the owner will leave: is one of the three papers missing or no longer true? If it is, that is the answer, however large the sum. If not, add it up.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *Harold’s savings*, which was **Give some away each year**. When a likeness and the answers disagree, go by the words that answer the question.
 - Taught on: “A will, a form or a power of attorney out of date or missing” (one tap opens the card).
 
 **Drill item 37 of 41**
@@ -2114,12 +2114,12 @@ Each question is shown with all of its answers from the key, in the key’s orde
   - Why not **Give some away each year**: The estate is above the line and he has money to spare, which fits **Give some away each year**. When a case shows both, the rise comes first, because it is the larger problem and has a deadline.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **The handover to other people.** The case is about what his sons would receive after the tax: “Ingvar has asked his lawyer what his two sons would receive when he dies”. No charge, loan, fall in prices or bill is in it.
-  - If you chose **Tax on an estate above the tax-free limit, with more than the owner needs**: You chose **Tax on an estate above the tax-free limit, with more than the owner needs**. This case does show that. It also shows something expected to rise sharply in value, and when a case shows both, the key’s answer is **Tax on a sharp rise still to come in something the owner holds**.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose **Tax on an estate above the tax-free limit, with more than the owner needs**: You chose **Tax on an estate above the tax-free limit, with more than the owner needs**. This case does show that. It also shows something expected to rise sharply in value, and when a case shows both, the answer is **Tax on a sharp rise still to come in something the owner holds**.
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Give some away each year**, the look-alike card’s lines follow: Both are about tax on what the owner will leave, and both can have the estate above the tax-free limit. In **Give some away each year** the tax is on the estate as it stands, and nothing in it is expected to rise sharply, so small gifts from what the owner has to spare reduce the tax. In **Move it out of the estate before it grows** something the owner holds is expected to rise sharply, and the tax on that rise is the larger problem. Is anything the owner holds expected to be worth many times more than it is now? If it is, the rise is the case. If nothing is, the estate as it stands is the case.
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *Harold’s savings*, which was **Give some away each year**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *Harold’s savings*, which was **Give some away each year**. When a likeness and the answers disagree, go by the words that answer the question.
 - Taught on: “Something about to rise sharply in value, which tax at death would catch” (one tap opens the card).
 
 **Drill item 38 of 41**
@@ -2139,8 +2139,8 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - If you are right: “Right: **A fall in prices it is not ready for.**” The case shows bills met by selling holdings whose prices swing, with nothing set aside, in a falling market: “she sells £1,500 of them each month, with nothing in cash” and “prices fell by 28%”. Each sale takes place at a lower price than before.
-- If you miss: “The answer is …”, the same reason, and then the line built from the key for the answer you chose.
-- Then, right or wrong: “This case leaves the part of the key you have been taught. The questions that follow this answer come in a part of the course you have not reached, so the case stops here.”
+- If you miss: “The answer is …”, the same reason, and then the line built from the answers’ own wording for the answer you chose.
+- Then, right or wrong: “The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.”
 
 #### Last stage. Each of these is something a person might say that uses one of this unit’s names, or reasons in one of its ways. Each has a fault. The first is worked for you. For the rest, answer before the fault is shown.
 
@@ -2215,21 +2215,21 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - The answer is: **Nothing: the papers are current and nothing else is in question.**
-- If you chose another answer, the line is built from the key, as for any other question.
+- If you chose another answer, the line is built from the answers’ own wording, as for any other question.
 - The fault: The claim treats a family trust as protection against everything. It answers one thing, tax on a rise in something the owner holds, and nothing in what is described raises that. The estate is below the line, every paper is current, and nothing is said about the people. So there is nothing for a family trust to answer, and it would cost money to set up and every year to run.
-- The claim, put right (always the last thing shown): My house and savings are £300,000 and all three papers were renewed in March. Nothing in that raises a problem for a family trust to answer. I would ask what could go wrong in my case that it answers, in numbers. If the answer is nothing, the key’s answer is **“Nothing: the papers are current and nothing else is in question”**.
+- The claim, put right (always the last thing shown): My house and savings are £300,000 and all three papers were renewed in March. Nothing in that raises a problem for a family trust to answer. I would ask what could go wrong in my case that it answers, in numbers. If the answer is nothing, the case is **“Nothing: the papers are current and nothing else is in question”**.
 
-**When the drill ends.** The learner sees their own results: first-try accuracy for each stage, whole routes beside single questions, the pair of names they mixed up most often, and what will come back and when. Anything missed was asked again before the drill ended. Nothing here is graded. A miss only decides what comes back.
+**When the drill ends.** The learner sees their own results: first-try accuracy for each stage, whole cases beside single questions, the pair of names they mixed up most often, and what will come back and when. Anything missed was asked again before the drill ended. Nothing here is graded. A miss only decides what comes back.
 
 ### 39. What to carry away
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 39 of 41*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 39 of 41*
 
 [reviewers only: card kind `recap`, id `recap-handover`]
 
-You have now run the key on your own. This card puts the unit in one place, in the key’s words.
+You have now run the questions on your own. This card puts the unit in one place.
 
-**The key for this unit, in its own words**
+**This unit’s questions and answers**
 
 What could go wrong when it is handed over?
 - The papers that say who gets it, or who can act, are out of date or missing → Update the basic paperwork
@@ -2268,7 +2268,7 @@ What could go wrong when it is handed over?
 
 ### 40. Where would you meet this?
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 40 of 41*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 40 of 41*
 
 [reviewers only: card kind `transfer`, id `transfer-handover`]
 
@@ -2292,7 +2292,7 @@ One line is enough. It is kept on this device only and is never marked.
 
 ### 41. A plan, if you want one
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 41 of 41*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 41 of 41*
 
 [reviewers only: card kind `plan`, id `plan-handover`]
 
@@ -2313,7 +2313,7 @@ Or write your own: If …, then I will …
 
 ## After the unit: what comes back on later days
 
-A name that is due returns as a case the learner has not seen, next to a case of the name they most often confuse it with. Each is run as a whole route. These are the fresh cases held back for that purpose: three for each name, one for each scheduled return. The first return is about two days after the drill, the next about a week after that, the next about three and a half weeks later.
+A name that is due returns as a case the learner has not seen, next to a case of the name they most often confuse it with. Each is run as a whole case: every question, then the name. These are the fresh cases held back for that purpose: three for each name, one for each scheduled return. The first return is about two days after the drill, the next about a week after that, the next about three and a half weeks later.
 
 **Return case 1 of 20**
 
@@ -2328,10 +2328,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **The handover to other people.** The case is about what would happen to the children and the money if she died: “Nobody is named to look after the children if she dies”. Nothing comes out every year, and nothing is held in one thing.
   - If you chose **Nothing: the papers are current and nothing else is in question**: No paper is shown current. The case shows that the will does not exist.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Nothing more needed**, the look-alike card’s lines follow: Both are about the papers that say who gets the money and who may act, and in both the owner may be well and the family may be close. In **Update the basic paperwork** at least one of the papers is missing, or names someone it should no longer name, or was written before a marriage, a divorce, a birth or a death. In **Nothing more needed** every one of the papers is current. Look at each of the three papers in the case: the will, any form held by a pension company or a bank, and the power of attorney. Does the case show that one of them is missing, or no longer matches the person’s life? Or does it show all three current?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A will, a form or a power of attorney out of date or missing” (one tap opens the card).
 
 **Return case 2 of 20**
@@ -2347,10 +2347,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **The handover to other people.** The case is about who would receive the money in the account if he died: “which says who is to receive the money in it if he dies”. No charge, loan, fall in prices or bill is in it.
   - If you chose **Nothing: the papers are current and nothing else is in question**: The will is current, which is one paper. The form is another, and it names a man who left the firm four years ago.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Nothing more needed**, the look-alike card’s lines follow: Both are about the papers that say who gets the money and who may act, and in both the owner may be well and the family may be close. In **Update the basic paperwork** at least one of the papers is missing, or names someone it should no longer name, or was written before a marriage, a divorce, a birth or a death. In **Nothing more needed** every one of the papers is current. Look at each of the three papers in the case: the will, any form held by a pension company or a bank, and the power of attorney. Does the case show that one of them is missing, or no longer matches the person’s life? Or does it show all three current?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A will, a form or a power of attorney out of date or missing” (one tap opens the card).
 
 **Return case 3 of 20**
@@ -2366,10 +2366,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **The handover to other people.** The case is about who would act for Eamon: “would never want him handling his money”. Nothing comes out every year, and nothing is held in one thing.
   - If you chose **The people who will receive it or run it**: The quarrel is a risk in a person and is in the case. But the case shows a paper that names someone it should not, and the papers come first.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **Family rules for the money**, the look-alike card’s lines follow: Both are about family, and in both the person who is about to receive the money may be the one at risk. In **Update the basic paperwork** a paper is missing or out of date. In **Family rules for the money** the papers are not what is in question: it is a person who will receive the money or a control that will pass to people who cannot agree. Where a case shows both, the key’s answer is **“The papers that say who gets it, or who can act, are out of date or missing”**. Set aside what the people are like and look at the three papers: is one of them missing or no longer true? If it is, that comes first. If every paper is current, then look at the people.
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **Family rules for the money**, the look-alike card’s lines follow: Both are about family, and in both the person who is about to receive the money may be the one at risk. In **Update the basic paperwork** a paper is missing or out of date. In **Family rules for the money** the papers are not what is in question: it is a person who will receive the money or a control that will pass to people who cannot agree. Where a case shows both, the answer is **“The papers that say who gets it, or who can act, are out of date or missing”**. Set aside what the people are like and look at the three papers: is one of them missing or no longer true? If it is, that comes first. If every paper is current, then look at the people.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A will, a form or a power of attorney out of date or missing” (one tap opens the card).
 
 **Return case 4 of 20**
@@ -2385,10 +2385,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **The handover to other people.** The case is about a time when she could not act for herself: “she needs an operation under general anaesthetic next month”. Nothing comes out every year, and no price, loan or bill is mentioned.
   - If you chose **Nothing: the papers are current and nothing else is in question**: Her will is current, which is one paper, but *a power of attorney* does not exist.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Nothing more needed**, the look-alike card’s lines follow: Both are about the papers that say who gets the money and who may act, and in both the owner may be well and the family may be close. In **Update the basic paperwork** at least one of the papers is missing, or names someone it should no longer name, or was written before a marriage, a divorce, a birth or a death. In **Nothing more needed** every one of the papers is current. Look at each of the three papers in the case: the will, any form held by a pension company or a bank, and the power of attorney. Does the case show that one of them is missing, or no longer matches the person’s life? Or does it show all three current?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A will, a form or a power of attorney out of date or missing” (one tap opens the card).
 
 **Return case 5 of 20**
@@ -2404,10 +2404,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **The handover to other people.** The case is about what would happen to their money if one of them died, and the agent’s remark is what raises it: “An insurance agent has said that they need an 'estate plan'”. Nothing comes out every year, and nothing is held in one thing.
   - If you chose **The papers that say who gets it, or who can act, are out of date or missing**: The papers are all in the case, and they were written after the marriage and with the baby in mind. Nothing is missing.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Update the basic paperwork**, the look-alike card’s lines follow: Both are about the papers that say who gets the money and who may act, and in both the owner may be well and the family may be close. In **Update the basic paperwork** at least one of the papers is missing, or names someone it should no longer name, or was written before a marriage, a divorce, a birth or a death. In **Nothing more needed** every one of the papers is current. Look at each of the three papers in the case: the will, any form held by a pension company or a bank, and the power of attorney. Does the case show that one of them is missing, or no longer matches the person’s life? Or does it show all three current?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the wills had been written before the wedding and not changed, the case would be **“The papers that say who gets it, or who can act, are out of date or missing”**.
 - Taught on: “Current papers, and nothing else about the handover in question” (one tap opens the card).
 
@@ -2424,10 +2424,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **The handover to other people.** The case is about what would happen to the firm when he dies, and the stranger’s remark is what raises it: “A stranger on a business forum has told him that every owner needs a family holding company”. Nothing comes out every year, and nothing is held in one thing a lawsuit could reach.
   - If you chose **The papers that say who gets it, or who can act, are out of date or missing**: A will, forms and *a power of attorney* are all in the case, and all were renewed after the boys finished their training. Nothing is missing, and the sons get on well.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Update the basic paperwork**, the look-alike card’s lines follow: Both are about the papers that say who gets the money and who may act, and in both the owner may be well and the family may be close. In **Update the basic paperwork** at least one of the papers is missing, or names someone it should no longer name, or was written before a marriage, a divorce, a birth or a death. In **Nothing more needed** every one of the papers is current. Look at each of the three papers in the case: the will, any form held by a pension company or a bank, and the power of attorney. Does the case show that one of them is missing, or no longer matches the person’s life? Or does it show all three current?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Current papers, and nothing else about the handover in question” (one tap opens the card).
 
 **Return case 7 of 20**
@@ -2443,10 +2443,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **The handover to other people.** The case is about the tax at her death, and the granddaughter’s advice raises it: “she should give money away now to beat the tax at death”. Nothing comes out every year, and nothing is held in one thing.
   - If you chose **Tax on an estate above the tax-free limit, with more than the owner needs**: Gifts reduce a tax bill, and here there is none. The estate is below the line and nothing is spare. Her granddaughter’s advice answers a problem the case does not have.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Give some away each year**, the look-alike card’s lines follow: In both, the papers are in order and the owner is well off. In **Give some away each year** what the owner will leave is above the tax-free limit, and they have more than they will need. In **Nothing more needed** what they will leave is below the limit, or nothing in it is in question. Add up everything the owner will leave, and set it against the tax-free limit. Is it above, with more than the owner will need? Or is it below?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If her estate were £900,000 and her pension paid her £15,000 more than she spent, the case would be **“Tax on an estate above the tax-free limit, with more than the owner needs”**.
 - Taught on: “Current papers, and nothing else about the handover in question” (one tap opens the card).
 
@@ -2463,10 +2463,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **The handover to other people.** The case is about what would happen to his money if he died, and the advert raises it: “A lawyer's advert says that everyone who has been ill needs 'legacy planning'”. Nothing comes out every year, and nothing is held in one thing.
   - If you chose **The papers that say who gets it, or who can act, are out of date or missing**: All three papers are in the case, and he renewed each of them while he was ill. Nothing is missing and nothing names someone it should not.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Update the basic paperwork**, the look-alike card’s lines follow: Both are about the papers that say who gets the money and who may act, and in both the owner may be well and the family may be close. In **Update the basic paperwork** at least one of the papers is missing, or names someone it should no longer name, or was written before a marriage, a divorce, a birth or a death. In **Nothing more needed** every one of the papers is current. Look at each of the three papers in the case: the will, any form held by a pension company or a bank, and the power of attorney. Does the case show that one of them is missing, or no longer matches the person’s life? Or does it show all three current?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Current papers, and nothing else about the handover in question” (one tap opens the card).
 
 **Return case 9 of 20**
@@ -2482,10 +2482,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **The handover to other people.** The case is about the tax at their deaths: “Their accountant has worked out that the tax when they die would be £440,000”. Nothing comes out every year, and nothing is held in one thing.
   - If you chose **Nothing: the papers are current and nothing else is in question**: Their papers are current, which is part of **Nothing more needed**. But the estate is £1,100,000 above the line and they have money they do not need.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Nothing more needed**, the look-alike card’s lines follow: In both, the papers are in order and the owner is well off. In **Give some away each year** what the owner will leave is above the tax-free limit, and they have more than they will need. In **Nothing more needed** what they will leave is below the limit, or nothing in it is in question. Add up everything the owner will leave, and set it against the tax-free limit. Is it above, with more than the owner will need? Or is it below?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “An estate above the tax-free limit, with money to spare” (one tap opens the card).
 
 **Return case 10 of 20**
@@ -2501,10 +2501,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **The handover to other people.** The case is about what her sons would receive after the tax: “Delphine would like to know what her two sons would receive”. No charge, loan, fall in prices or bill is in it.
   - If you chose **Tax on a sharp rise still to come in something the owner holds**: A business is in the case, but it has been sold for cash. Nothing she holds is expected to rise sharply.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Move it out of the estate before it grows**, the look-alike card’s lines follow: Both are about tax on what the owner will leave, and both can have the estate above the tax-free limit. In **Give some away each year** the tax is on the estate as it stands, and nothing in it is expected to rise sharply, so small gifts from what the owner has to spare reduce the tax. In **Move it out of the estate before it grows** something the owner holds is expected to rise sharply, and the tax on that rise is the larger problem. Is anything the owner holds expected to be worth many times more than it is now? If it is, the rise is the case. If nothing is, the estate as it stands is the case.
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “An estate above the tax-free limit, with money to spare” (one tap opens the card).
 
 **Return case 11 of 20**
@@ -2520,10 +2520,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **The handover to other people.** The case is about who will receive what he leaves: “He wants his four nieces and nephews to receive what he leaves”. Nothing comes out every year, and nothing is held in one thing.
   - If you chose **Nothing: the papers are current and nothing else is in question**: His papers are current, but the estate is £1,300,000 above the line and he has money he does not need.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Nothing more needed**, the look-alike card’s lines follow: In both, the papers are in order and the owner is well off. In **Give some away each year** what the owner will leave is above the tax-free limit, and they have more than they will need. In **Nothing more needed** what they will leave is below the limit, or nothing in it is in question. Add up everything the owner will leave, and set it against the tax-free limit. Is it above, with more than the owner will need? Or is it below?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “An estate above the tax-free limit, with money to spare” (one tap opens the card).
 
 **Return case 12 of 20**
@@ -2539,10 +2539,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **The handover to other people.** The case is about the tax at his death: “his lawyer has asked whether he has thought about the tax”. Nothing comes out every year, and nothing is held in one thing.
   - If you chose **Nothing: the papers are current and nothing else is in question**: His papers are current and his children get on well, so nothing is wrong with the papers or the people. But the estate is £900,000 above the line and he has money he does not need.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Nothing more needed**, the look-alike card’s lines follow: In both, the papers are in order and the owner is well off. In **Give some away each year** what the owner will leave is above the tax-free limit, and they have more than they will need. In **Nothing more needed** what they will leave is below the limit, or nothing in it is in question. Add up everything the owner will leave, and set it against the tax-free limit. Is it above, with more than the owner will need? Or is it below?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “An estate above the tax-free limit, with money to spare” (one tap opens the card).
 
 **Return case 13 of 20**
@@ -2558,10 +2558,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **The handover to other people.** The case is about what her niece would receive after the tax: “Hanne wants to know what her niece would receive”. No charge, loan, fall in prices or bill is in it.
   - If you chose **Tax on an estate above the tax-free limit, with more than the owner needs**: Her estate is exactly on the line today, so gifts would have no tax to reduce, and nothing says she has money to spare. What the case shows is a rise that is expected.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Give some away each year**, the look-alike card’s lines follow: Both are about tax on what the owner will leave, and both can have the estate above the tax-free limit. In **Give some away each year** the tax is on the estate as it stands, and nothing in it is expected to rise sharply, so small gifts from what the owner has to spare reduce the tax. In **Move it out of the estate before it grows** something the owner holds is expected to rise sharply, and the tax on that rise is the larger problem. Is anything the owner holds expected to be worth many times more than it is now? If it is, the rise is the case. If nothing is, the estate as it stands is the case.
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Something about to rise sharply in value, which tax at death would catch” (one tap opens the card).
 
 **Return case 14 of 20**
@@ -2577,10 +2577,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **The handover to other people.** The case is about what her son would receive after the tax: “Rebecca has asked her lawyer what her son would receive when she dies”. No charge, loan, fall in prices or bill is in it.
   - If you chose **Tax on an estate above the tax-free limit, with more than the owner needs**: The estate above the line is in the case once the rise comes, but nothing says she has money to spare, and the rise is the larger problem.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Give some away each year**, the look-alike card’s lines follow: Both are about tax on what the owner will leave, and both can have the estate above the tax-free limit. In **Give some away each year** the tax is on the estate as it stands, and nothing in it is expected to rise sharply, so small gifts from what the owner has to spare reduce the tax. In **Move it out of the estate before it grows** something the owner holds is expected to rise sharply, and the tax on that rise is the larger problem. Is anything the owner holds expected to be worth many times more than it is now? If it is, the rise is the case. If nothing is, the estate as it stands is the case.
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Something about to rise sharply in value, which tax at death would catch” (one tap opens the card).
 
 **Return case 15 of 20**
@@ -2596,10 +2596,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **The handover to other people.** The case is about what would happen to the shares if she died: “Leila has wondered what would happen to the shares if she died”. No charge, loan or bill is in it, and the trial is a fact about one firm.
   - If you chose **Tax on an estate above the tax-free limit, with more than the owner needs**: Her estate is exactly on the line today, so gifts would have no tax to reduce, and nothing says she has money to spare. What the case shows is a rise that is expected.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Give some away each year**, the look-alike card’s lines follow: Both are about tax on what the owner will leave, and both can have the estate above the tax-free limit. In **Give some away each year** the tax is on the estate as it stands, and nothing in it is expected to rise sharply, so small gifts from what the owner has to spare reduce the tax. In **Move it out of the estate before it grows** something the owner holds is expected to rise sharply, and the tax on that rise is the larger problem. Is anything the owner holds expected to be worth many times more than it is now? If it is, the rise is the case. If nothing is, the estate as it stands is the case.
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - What would make it a different name: If the results came out negative, the shares would fall, and the case would be **“Nothing: the papers are current and nothing else is in question”**.
 - Taught on: “Something about to rise sharply in value, which tax at death would catch” (one tap opens the card).
 
@@ -2616,10 +2616,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **The handover to other people.** The case is about what the tax would be when he dies: “he has asked an accountant what the tax would be”. Nothing comes out every year, and the bars are a business he owns outright, with no claim or loan in the case.
   - If you chose **Tax on an estate above the tax-free limit, with more than the owner needs**: The estate is above the line, and so is the case for gifts on paper. But nothing says he has money to spare, and the offer is the larger thing.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Give some away each year**, the look-alike card’s lines follow: Both are about tax on what the owner will leave, and both can have the estate above the tax-free limit. In **Give some away each year** the tax is on the estate as it stands, and nothing in it is expected to rise sharply, so small gifts from what the owner has to spare reduce the tax. In **Move it out of the estate before it grows** something the owner holds is expected to rise sharply, and the tax on that rise is the larger problem. Is anything the owner holds expected to be worth many times more than it is now? If it is, the rise is the case. If nothing is, the estate as it stands is the case.
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Something about to rise sharply in value, which tax at death would catch” (one tap opens the card).
 
 **Return case 17 of 20**
@@ -2635,10 +2635,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **The handover to other people.** The case is about who will receive the money and how: “will leave £400,000 to his son Piers, 31, in one payment”. Nothing comes out every year, and nothing is held in one thing.
   - If you chose **The papers that say who gets it, or who can act, are out of date or missing**: All three papers were renewed in the spring, so no paper is missing or out of date. The case is about what a person has done with money.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **Update the basic paperwork**, the look-alike card’s lines follow: Both are about family, and in both the person who is about to receive the money may be the one at risk. In **Update the basic paperwork** a paper is missing or out of date. In **Family rules for the money** the papers are not what is in question: it is a person who will receive the money or a control that will pass to people who cannot agree. Where a case shows both, the key’s answer is **“The papers that say who gets it, or who can act, are out of date or missing”**. Set aside what the people are like and look at the three papers: is one of them missing or no longer true? If it is, that comes first. If every paper is current, then look at the people.
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **Update the basic paperwork**, the look-alike card’s lines follow: Both are about family, and in both the person who is about to receive the money may be the one at risk. In **Update the basic paperwork** a paper is missing or out of date. In **Family rules for the money** the papers are not what is in question: it is a person who will receive the money or a control that will pass to people who cannot agree. Where a case shows both, the answer is **“The papers that say who gets it, or who can act, are out of date or missing”**. Set aside what the people are like and look at the three papers: is one of them missing or no longer true? If it is, that comes first. If every paper is current, then look at the people.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “The people who will receive it, or run it, could lose it” (one tap opens the card).
 
 **Return case 18 of 20**
@@ -2654,10 +2654,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **The handover to other people.** The case is about who will receive the house: “His will leaves the house, worth £350,000, to his wife and his two children together”. Nothing comes out every year, and nothing is held in one thing.
   - If you chose **The papers that say who gets it, or who can act, are out of date or missing**: Every paper was renewed last year, so none is out of date. A remarriage is in the case, but the papers already take account of it. What is in question is people who will not meet.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **Update the basic paperwork**, the look-alike card’s lines follow: Both are about family, and in both the person who is about to receive the money may be the one at risk. In **Update the basic paperwork** a paper is missing or out of date. In **Family rules for the money** the papers are not what is in question: it is a person who will receive the money or a control that will pass to people who cannot agree. Where a case shows both, the key’s answer is **“The papers that say who gets it, or who can act, are out of date or missing”**. Set aside what the people are like and look at the three papers: is one of them missing or no longer true? If it is, that comes first. If every paper is current, then look at the people.
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **Update the basic paperwork**, the look-alike card’s lines follow: Both are about family, and in both the person who is about to receive the money may be the one at risk. In **Update the basic paperwork** a paper is missing or out of date. In **Family rules for the money** the papers are not what is in question: it is a person who will receive the money or a control that will pass to people who cannot agree. Where a case shows both, the answer is **“The papers that say who gets it, or who can act, are out of date or missing”**. Set aside what the people are like and look at the three papers: is one of them missing or no longer true? If it is, that comes first. If every paper is current, then look at the people.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “The people who will receive it, or run it, could lose it” (one tap opens the card).
 
 **Return case 19 of 20**
@@ -2673,10 +2673,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **The handover to other people.** The case is about who will receive the garden centre: “Her will leaves it equally to the daughter and to the daughter's brother”. Nothing comes out every year, and nothing is held in one thing.
   - If you chose **Tax on a sharp rise still to come in something the owner holds**: A family trust has been suggested, and a trustee could be one of the rules. But the case has no tax to answer and nothing expected to rise. What it shows is two people who want different things.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Move it out of the estate before it grows**, the look-alike card’s lines follow: Both can end with a trustee holding the money under written terms, and a trustee with a veto can appear in either. In **Move it out of the estate before it grows** the problem is tax on something expected to rise sharply. In **Family rules for the money** the problem is in the people who will receive the money or run it, and nothing here is about tax. Is the case about a tax bill that a rise in value would make larger? Or is it about what a person will do with the money, or about people who cannot agree?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “The people who will receive it, or run it, could lose it” (one tap opens the card).
 
 **Return case 20 of 20**
@@ -2692,9 +2692,9 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What could lose this money? **The handover to other people.** The case is about who will receive the money: “Reuben, 66, will leave £380,000 to his daughter Tamsin, 38”. Nothing comes out every year, and nothing is held in one thing.
   - If you chose **The papers that say who gets it, or who can act, are out of date or missing**: All three papers were renewed last year, so no paper is missing or out of date. The case is about what an heir has said she will do.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **Update the basic paperwork**, the look-alike card’s lines follow: Both are about family, and in both the person who is about to receive the money may be the one at risk. In **Update the basic paperwork** a paper is missing or out of date. In **Family rules for the money** the papers are not what is in question: it is a person who will receive the money or a control that will pass to people who cannot agree. Where a case shows both, the key’s answer is **“The papers that say who gets it, or who can act, are out of date or missing”**. Set aside what the people are like and look at the three papers: is one of them missing or no longer true? If it is, that comes first. If every paper is current, then look at the people.
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **Update the basic paperwork**, the look-alike card’s lines follow: Both are about family, and in both the person who is about to receive the money may be the one at risk. In **Update the basic paperwork** a paper is missing or out of date. In **Family rules for the money** the papers are not what is in question: it is a person who will receive the money or a control that will pass to people who cannot agree. Where a case shows both, the answer is **“The papers that say who gets it, or who can act, are out of date or missing”**. Set aside what the people are like and look at the three papers: is one of them missing or no longer true? If it is, that comes first. If every paper is current, then look at the people.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “The people who will receive it, or run it, could lose it” (one tap opens the card).
 

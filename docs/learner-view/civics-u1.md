@@ -1,16 +1,16 @@
 # Learner view: US Civics & History, Unit One: Who makes the last decision
 
-*The key’s first question, and the four kinds of decision-maker it sorts every case into.* Unit revision 1, built to lesson standard 1, status: draft.
+*The first question, and the four kinds of decision-maker it sorts every case into.* Unit revision 2, built to lesson standard 1, status: draft.
 
 This file is generated from the data files by `tools/render-learner-view.mjs`. It shows every screen in the order a learner meets it. In the app one card is on screen at a time and the learner moves on when ready.
 
-- **Bold text in quotation marks** is the key’s own wording, printed from `key.js`. Bold names are the outcome names from the same file. Neither is typed anywhere else. "What you must be able to point to" lines and "How to tell them apart" lines are also printed from one place each (the key and the look-alike ledger).
-- This is the subject’s gate unit. It teaches the key’s first question, and its names are that question’s answers: wherever a bold answer in quotation marks appears, it is also the name of a kind.
+- **Bold text in quotation marks** is the subject’s own wording for its questions and answers, written once and printed everywhere. Bold names are the names, written once in the same place. Neither is typed anywhere else. "What you must be able to point to" lines and "How to tell them apart" lines are also printed from one place each (the subject’s questions and the pairs it compares).
+- This is the subject’s first unit. It teaches the first question, and its names are that question’s answers: wherever a bold answer in quotation marks appears, it is also the name of a kind.
 - ⟦Double brackets⟧ show the words the app marks in a case (one highlight style everywhere).
 - The line in italics under each heading is the app’s top bar. The line in square brackets after it is for reviewers and is not shown to the learner.
 - Headings, prompt wording and stage instructions that are the same in every unit are the app’s wording, not this unit’s.
 - "Shown as soon as you …" is what appears the moment the learner answers. Nothing is hidden behind a second tap the first time a case is met, or after a miss.
-- After every answer the app shows, in this order: the right answer in the key’s words; the reason, quoting the marked words; for a name, why the nearest wrong name fails; after a miss, a line about the answer the learner chose; and last a link to the card that taught it. Where a line about the learner’s own choice is not written for the case, the app builds it from the key, and this file says so in place of repeating it.
+- After every answer the app shows, in this order: the right answer; the reason, quoting the marked words; for a name, why the nearest wrong name fails; after a miss, a line about the answer the learner chose; and last a link to the card that taught it. Where a line about the learner’s own choice is not written for the case, the app builds it from the answers’ own wording, and this file says so in place of repeating it.
 
 ---
 
@@ -18,7 +18,7 @@ This file is generated from the data files by `tools/render-learner-view.mjs`. I
 
 ### 1. Before any rule or ruling: whose decision is it?
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 1 of 38*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 1 of 38*
 
 [reviewers only: card kind `orient`, id `orient-kind`]
 
@@ -30,11 +30,11 @@ That matters, because there are many. There is the government of the whole count
 
 Real stories also tend to name more than one of them: a law, the office that applies it, a judge asked to rule on it. If you take the one named first, you can be wrong before you have chosen anything. So before you ask what a rule is, or whether it is allowed, there is an earlier question: whose decision is the story about? This unit teaches that question.
 
-Three words are used all the way through, so here they are once. A case is a short account of a decision, or of a request for one: a few sentences, in the form of a news item or of something a friend tells you. The key is a short list of questions that you put to a case, always in the same order. Each answer narrows down what the case can be, until one name is left. And federal means belonging to the government of the whole country, as against the government of one state or city: a federal law applies in every state.
+Two words are used all the way through, so here they are once. A case is a short account of a decision, or of a request for one: a few sentences, in the form of a news item or of something a friend tells you. And federal means belonging to the government of the whole country, as against the government of one state or city: a federal law applies in every state.
 
-This unit teaches the first question of the key and nothing after it. That question sorts a case into one of four kinds, and in this unit the kind is the name. All four lead on to further questions, taught in later units, and those give finer names. Nothing in this unit asks for them. The question is worded with care, because most stories name several parts of government. It asks about the last decision in the story, or the one the story asks someone to make. What came before is how the matter got there.
+Every case is put the same short list of questions, always in the same order, and each answer narrows down what the case can be, until one name is left. This unit teaches the first question and nothing after it. That question sorts a case into one of four kinds, and in this unit the kind is the name. All four lead on to further questions, taught in later units, and those give finer names. Nothing in this unit asks for them. The question is worded with care, because most stories name several parts of government. It asks about the last decision in the story, or the one the story asks someone to make. What came before is how the matter got there.
 
-**The part of the key this unit teaches.** This is a preview. You are not expected to follow it yet: every line is explained on the cards that come next. The question and its answers are in the key’s own words. Beside each answer, in plain words, is what a case of that kind is made of. There are four answers, and in this unit each answer is itself the name of a kind.
+**The questions this unit teaches.** This is a preview. You are not expected to follow it yet: every line is explained on the cards that come next. The question and its answers are worded exactly as you will meet them. Beside each answer, in plain words, is what a case of that kind is made of. There are four answers, and in this unit each answer is itself the name of a kind.
 
 Who makes the last decision in the case, or is asked to make it?
 - Congress, in the House or the Senate → the lawmakers of the whole country
@@ -48,14 +48,14 @@ The unit has six parts, and you can stop after any of them.
 2. The second kind: the President or an office
 3. The third kind: a judge
 4. The fourth kind: a state, a city or a county
-5. The key’s first question
+5. The first question
 6. Two whole cases, then the drill
 
 Each name is taught through cases first. After every step you answer one question about a new case, and the answer and the reason are shown straight away. Nothing here is graded. A miss only decides what comes back.
 
 ### 2. The lawmakers of the whole country
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 2 of 38*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 2 of 38*
 
 [reviewers only: card kind `meet`, id `meet-congress`]
 
@@ -81,15 +81,15 @@ Notice two things the answer does not depend on. It does not depend on whether t
 
 **What you must be able to point to.** A vote in the House, the Senate or both, as the last decision in the case or the one it asks for. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“Who makes the last decision in the case, or is asked to make it?”**
+**The question:** **“Who makes the last decision in the case, or is asked to make it?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“Congress, in the House or the Senate”**
+**Its answer for a case like this one:** **“Congress, in the House or the Senate”**
 
-The key’s answer, and so the name of the kind, is **“Congress, in the House or the Senate”**. “Lawmakers” are the people who vote on laws, and “Congress” is the name for the lawmakers of the whole country. The last words of the answer tell you where to look: a vote in one of those two places.
+The answer, and so the name of the kind, is **“Congress, in the House or the Senate”**. “Lawmakers” are the people who vote on laws, and “Congress” is the name for the lawmakers of the whole country. The last words of the answer tell you where to look: a vote in one of those two places.
 
 ### 3. Congress, in the House or the Senate: the same thing in a different story
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 3 of 38*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 3 of 38*
 
 [reviewers only: card kind `again`, id `again-congress`]
 
@@ -122,7 +122,7 @@ The two stories share nothing else. One is about a tax and the other about loans
 
 ### 4. The story does not decide the answer
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 4 of 38*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 4 of 38*
 
 [reviewers only: card kind `lens`, id `lens-kind`]
 
@@ -136,13 +136,13 @@ From here on, the cases change their stories on purpose. Sometimes two cases wil
 
 One more thing changes on purpose: how many parts of government a case names. Many cases name two or three: a law, the office that applies it, a judge asked to rule on it. The question asks about the last decision, or the one the case asks for. What comes before it is how the matter reached it, and it can sound more important than it is. Whether you agree with the decision, or like the people who made it, is not part of the question either.
 
-**Stays the same from case to case:** who makes the last decision, which is what the key asks about: **“Who makes the last decision in the case, or is asked to make it?”**
+**Stays the same from case to case:** who makes the last decision, which is what the question asks about: **“Who makes the last decision in the case, or is asked to make it?”**
 
 **Changes on purpose:** the topic; the people; how important it sounds; whether you agree with the decision; how many parts of government the case names.
 
 ### 5. Congress, in the House or the Senate: what it is like
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 5 of 38*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 5 of 38*
 
 [reviewers only: card kind `portrait`, id `portrait-congress`]
 
@@ -170,11 +170,11 @@ In your own life you meet this kind in the news, whenever a vote has just happen
 
 **The question to ask when you spot it**
 
-"Is the last thing in the story a vote by lawmakers, or a request that they vote?" If it is, and the lawmakers sit in the House or the Senate, the key’s answer is **“Congress, in the House or the Senate”**.
+"Is the last thing in the story a vote by lawmakers, or a request that they vote?" If it is, and the lawmakers sit in the House or the Senate, the answer is **“Congress, in the House or the Senate”**.
 
 ### 6. A question about a new case
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 6 of 38*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 6 of 38*
 
 [reviewers only: card kind `check`, id `check-congress`]
 
@@ -189,7 +189,7 @@ The pieces you can tap:
 
 **Shown as soon as you tap**
 
-- If you are right: “Right: ‘the Senate voted to give them $2 billion in help, and the bill now goes to the House’.” The last decision is a vote in the Senate, and the case ends by sending the bill to the House for its own vote. Both are lawmakers of the whole country. Nobody in the case is a judge, an office or the President. The key’s answer for this case is **“Congress, in the House or the Senate”**.
+- If you are right: “Right: ‘the Senate voted to give them $2 billion in help, and the bill now goes to the House’.” The last decision is a vote in the Senate, and the case ends by sending the bill to the House for its own vote. Both are lawmakers of the whole country. Nobody in the case is a judge, an office or the President. The answer for this case is **“Congress, in the House or the Senate”**.
 - If you miss: “The words are ‘the Senate voted to give them $2 billion in help, and the bill now goes to the House’.” The same reason follows, and then a line about the piece you tapped:
   - “Wheat farmers lost much of their crop to the drought”: That is why the money is being voted. It is not who decides.
   - “Farm groups said they were relieved”: That is a reaction to the vote. Farm groups do not decide anything in this case.
@@ -203,7 +203,7 @@ The pieces you can tap:
 
 ### 7. The offices that carry out the laws
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 7 of 38*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 7 of 38*
 
 [reviewers only: card kind `term`, id `term-agency`]
 
@@ -224,7 +224,7 @@ Some of these offices belong to the government of the whole country, which this 
 
 ### 8. The President, and the offices that carry out the laws of the whole country
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 8 of 38*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 8 of 38*
 
 [reviewers only: card kind `meet`, id `meet-president`]
 
@@ -250,15 +250,15 @@ The word federal does a job here. It says which government the *agency* belongs 
 
 **What you must be able to point to.** The President, or a federal agency, making the last decision in the case or being asked to make it. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“Who makes the last decision in the case, or is asked to make it?”**
+**The question:** **“Who makes the last decision in the case, or is asked to make it?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“The President or a federal agency”**
+**Its answer for a case like this one:** **“The President or a federal agency”**
 
-The key’s answer, and so the name of the kind, is **“The President or a federal agency”**. The word “or” matters: the kind holds two sorts of decision-maker, the President and an office of the government of the whole country, and either one gives the answer. “Federal” belongs to the office: a state’s own office is not in this kind.
+The answer, and so the name of the kind, is **“The President or a federal agency”**. The word “or” matters: the kind holds two sorts of decision-maker, the President and an office of the government of the whole country, and either one gives the answer. “Federal” belongs to the office: a state’s own office is not in this kind.
 
 ### 9. The President or a federal agency: the same thing in a different story
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 9 of 38*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 9 of 38*
 
 [reviewers only: card kind `again`, id `again-president`]
 
@@ -291,7 +291,7 @@ One is an office doing a daily job and the other is the President giving an orde
 
 ### 10. The President or a federal agency: what it is like
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 10 of 38*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 10 of 38*
 
 [reviewers only: card kind `portrait`, id `portrait-president`]
 
@@ -319,17 +319,17 @@ In your own life you meet this kind whenever a form, a notice or an inspection c
 
 **The question to ask when you spot it**
 
-"Who made this decision: the President, or an office? And is the office one of the whole country, or of a state, a city or a county?" If it is the President, or a federal office, the key’s answer is **“The President or a federal agency”**.
+"Who made this decision: the President, or an office? And is the office one of the whole country, or of a state, a city or a county?" If it is the President, or a federal office, the answer is **“The President or a federal agency”**.
 
 ### 11. A question about a new case
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 11 of 38*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 11 of 38*
 
 [reviewers only: card kind `check`, id `check-president`]
 
 > A ferry sank last year. On Monday the federal maritime-safety agency told every ferry company that each ferry must carry a lifejacket for every passenger, and that its inspectors will check.
 
-**The key asks:** **“Who makes the last decision in the case, or is asked to make it?”** Which of the answers you have met so far fits this case?
+**The question:** **“Who makes the last decision in the case, or is asked to make it?”** Which of the answers you have met so far fits this case?
 
 - Congress, in the House or the Senate
 - The President or a federal agency
@@ -344,7 +344,7 @@ In your own life you meet this kind whenever a form, a notice or an inspection c
 
 ### 12. One law: the vote, then the office that applies it
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 12 of 38*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 12 of 38*
 
 [reviewers only: card kind `lookalike`, id `look-congress-president`]
 
@@ -366,9 +366,9 @@ You have now met two kinds on their own. They are easy to mix up, because one la
 
 **Why this one and not the other**
 
-In Case A the story is about the bill itself: the Senate votes to pass it, as the House had done. Nobody else is deciding anything. The key’s answer is **“Congress, in the House or the Senate”**.
+In Case A the story is about the bill itself: the Senate votes to pass it, as the House had done. Nobody else is deciding anything. The answer is **“Congress, in the House or the Senate”**.
 
-In Case B the law has been passed, and the story is about what comes after: an office publishes the rules that tell food makers how to follow it. The law is still in the story, but as how the matter got there. The last decision is the office’s. The key’s answer is **“The President or a federal agency”**.
+In Case B the law has been passed, and the story is about what comes after: an office publishes the rules that tell food makers how to follow it. The law is still in the story, but as how the matter got there. The last decision is the office’s. The answer is **“The President or a federal agency”**.
 
 The same law gives you both. That is a common shape in news: lawmakers vote, and then an office puts the vote into practice. The two stories can sound alike, because both are about the law. What separates them is whose decision the story ends on.
 
@@ -376,7 +376,7 @@ The same law gives you both. That is a common shape in news: lawmakers vote, and
 
 Does the story end on a vote by lawmakers, or on something the President or an office decides or does? If a law is in the story, was it already passed, with the story now about what is done with it?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Congress, in the House or the Senate | The President or a federal agency |
 |---|---|---|
@@ -386,7 +386,7 @@ Does the story end on a vote by lawmakers, or on something the President or an o
 
 ### 13. A law that the President signs
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 13 of 38*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 13 of 38*
 
 [reviewers only: card kind `exception`, id `exc-signed`]
 
@@ -396,7 +396,7 @@ The last card showed a law moving from lawmakers to an office. A law can also mo
 
 > In March the House and the Senate both passed a bill that makes the Calder River valley a protected park. On Tuesday the President signed the bill at a ceremony, with the mayors of the valley towns standing behind her.
 
-The last thing in this case is the President’s own act: signing the bill. A decision by the President is what you point to for **“The President or a federal agency”**. Yet the key’s answer for this case is **“Congress, in the House or the Senate”**.
+The last thing in this case is the President’s own act: signing the bill. A decision by the President is what you point to for **“The President or a federal agency”**. Yet the answer for this case is **“Congress, in the House or the Senate”**.
 
 **You are asked:** This looks like **“The President or a federal agency”**. Before you read why it is **“Congress, in the House or the Senate”**, tap the words in the case that settle it.
 
@@ -421,14 +421,14 @@ Compare a refusal. If the President refused to sign, that would be a decision of
 
 Does the story end on a vote by lawmakers, or on something the President or an office decides or does? If a law is in the story, was it already passed, with the story now about what is done with it?
 
-This is the key’s decision. In real life you will hear it said both ways: “Congress passed the park law” and “the President made the valley a park”. The key gives each case one answer, so that two people using it reach the same one and can each say why.
+This is the answer the questions give. In real life you will hear it said both ways: “Congress passed the park law” and “the President made the valley a park”. Each case gets one answer, so that two people using the questions reach the same one and can each say why.
 
-It chooses the lawmakers because the signature never changes the bill. If the answer were the President in every case that ends with a signature, the vote, which is where the choice was made, would drop out of what the key looks at.
+It chooses the lawmakers because the signature never changes the bill. If the answer were the President in every case that ends with a signature, the vote, which is where the choice was made, would drop out of what the question looks at.
 
 
 ### 14. A wrong idea: “the President signed it, so it is the President’s”
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 14 of 38*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 14 of 38*
 
 [reviewers only: card kind `refute`, id `refute-signed`]
 
@@ -447,7 +447,7 @@ So when you catch yourself crediting the President because of a signature, go ba
 
 ### 15. An agreement with another country, then the Senate
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 15 of 38*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 15 of 38*
 
 [reviewers only: card kind `exception`, id `exc-treaty`]
 
@@ -457,7 +457,7 @@ The President can also sign an agreement with another country. That is one of th
 
 > After a week of talks with the officials of Brennia, the President signed a trade agreement with that country on Monday. The agreement is called a treaty, and it does not take effect until the Senate votes to approve it. The Senate will vote on it next month.
 
-The case opens with the President signing an agreement with another country, and dealing with another country is one of the things the President decides. Yet the key’s answer for this case is **“Congress, in the House or the Senate”**.
+The case opens with the President signing an agreement with another country, and dealing with another country is one of the things the President decides. Yet the answer for this case is **“Congress, in the House or the Senate”**.
 
 **You are asked:** This looks like **“The President or a federal agency”**. Before you read why it is **“Congress, in the House or the Senate”**, tap the words in the case that settle it.
 
@@ -493,7 +493,7 @@ A signed law and a signed agreement give the same result for two different reaso
 
 ### 16. A judge, deciding a case someone brings
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 16 of 38*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 16 of 38*
 
 [reviewers only: card kind `meet`, id `meet-courts`]
 
@@ -519,15 +519,15 @@ Notice what else it does not depend on. It does not depend on how important the 
 
 **What you must be able to point to.** A judge deciding, or someone asking a judge to decide, as the last thing in the case. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“Who makes the last decision in the case, or is asked to make it?”**
+**The question:** **“Who makes the last decision in the case, or is asked to make it?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“A judge, in any court”**
+**Its answer for a case like this one:** **“A judge, in any court”**
 
-The key’s answer, and so the name of the kind, is **“A judge, in any court”**. “Any court” means any judge: the highest court in the country, a court of a state, a court of a county. They are one kind here. “A judge” means someone whose job is to decide a case that is brought to them.
+The answer, and so the name of the kind, is **“A judge, in any court”**. “Any court” means any judge: the highest court in the country, a court of a state, a court of a county. They are one kind here. “A judge” means someone whose job is to decide a case that is brought to them.
 
 ### 17. A judge, in any court: the same thing in a different story
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 17 of 38*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 17 of 38*
 
 [reviewers only: card kind `again`, id `again-courts`]
 
@@ -560,7 +560,7 @@ The two quarrels share nothing else. One is about repairs and the other about la
 
 ### 18. A judge, in any court: what it is like
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 18 of 38*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 18 of 38*
 
 [reviewers only: card kind `portrait`, id `portrait-courts`]
 
@@ -588,17 +588,17 @@ In your own life you meet this kind in a dispute with a landlord, a neighbour or
 
 **The question to ask when you spot it**
 
-"Has a judge decided this, or has someone asked a judge to?" If so, in any court, the key’s answer is **“A judge, in any court”**.
+"Has a judge decided this, or has someone asked a judge to?" If so, in any court, the answer is **“A judge, in any court”**.
 
 ### 19. A question about a new case
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 19 of 38*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 19 of 38*
 
 [reviewers only: card kind `check`, id `check-courts`]
 
 > Jamal’s landlord says his lease ended in June. Jamal says it ran to December. Jamal’s lawyer has asked a judge to look at the lease and decide.
 
-**The key asks:** **“Who makes the last decision in the case, or is asked to make it?”** Which of the answers you have met so far fits this case?
+**The question:** **“Who makes the last decision in the case, or is asked to make it?”** Which of the answers you have met so far fits this case?
 
 - Congress, in the House or the Senate
 - The President or a federal agency
@@ -615,7 +615,7 @@ In your own life you meet this kind in a dispute with a landlord, a neighbour or
 
 ### 20. One law: the vote, then a judge asked about it
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 20 of 38*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 20 of 38*
 
 [reviewers only: card kind `lookalike`, id `look-congress-courts`]
 
@@ -637,9 +637,9 @@ Lawmakers and a judge can both appear in a story about one law: first the lawmak
 
 **Why this one and not the other**
 
-In Case A the law does not exist yet. The House has voted for the bill, and the story ends by sending it to the Senate. Lawmakers are voting, and no judge is anywhere. The key’s answer is **“Congress, in the House or the Senate”**.
+In Case A the law does not exist yet. The House has voted for the bill, and the story ends by sending it to the Senate. Lawmakers are voting, and no judge is anywhere. The answer is **“Congress, in the House or the Senate”**.
 
-In Case B the law is a year old and a man has been fined under it. The story ends with Ellis asking a judge whether the law covers a drone as small as his. The votes that made the law are far behind, and the case is about what a judge will decide. The key’s answer is **“A judge, in any court”**.
+In Case B the law is a year old and a man has been fined under it. The story ends with Ellis asking a judge whether the law covers a drone as small as his. The votes that made the law are far behind, and the case is about what a judge will decide. The answer is **“A judge, in any court”**.
 
 The law is the same, and the two cases come at different times in its life. Before it is passed, lawmakers decide. After someone has been fined, a judge is asked. What separates the cases is whose decision each one ends on.
 
@@ -647,7 +647,7 @@ The law is the same, and the two cases come at different times in its life. Befo
 
 Who casts the deciding votes, or gives the ruling: lawmakers in the House or the Senate, or a judge?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Congress, in the House or the Senate | A judge, in any court |
 |---|---|---|
@@ -657,17 +657,17 @@ Who casts the deciding votes, or gives the ruling: lawmakers in the House or the
 
 ### 21. A trial that is held in the Senate
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 21 of 38*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 21 of 38*
 
 [reviewers only: card kind `exception`, id `exc-trial`]
 
-The last card kept the two kinds tidy. A real story can use the words of a courtroom and still be a vote by lawmakers. Here is one, and the key answers it the same way every time.
+The last card kept the two kinds tidy. A real story can use the words of a courtroom and still be a vote by lawmakers. Here is one, and the questions answer it the same way every time.
 
 *The department head on trial*
 
 > The head of a federal department is accused of taking money from a company in return for contracts. On Tuesday the House voted to charge him. This week the Senate is holding a trial, and on Friday the senators will vote on whether he is guilty.
 
-This case has a trial, a charge and a man who may be found guilty. Those are words from a courtroom, and a judge’s decision is what you point to for **“A judge, in any court”**. Yet the key’s answer for this case is **“Congress, in the House or the Senate”**.
+This case has a trial, a charge and a man who may be found guilty. Those are words from a courtroom, and a judge’s decision is what you point to for **“A judge, in any court”**. Yet the answer for this case is **“Congress, in the House or the Senate”**.
 
 **You are asked:** This looks like **“A judge, in any court”**. Before you read why it is **“Congress, in the House or the Senate”**, tap the words in the case that settle it.
 
@@ -686,7 +686,7 @@ Look at who decides. The House votes to charge him, and the Senate holds the tri
 
 A trial of this kind is how Congress can remove an official who has committed serious misconduct. It uses the words of a courtroom, because it is a trial, but it is held by the Senate and settled by the senators’ vote.
 
-So the case shows a courtroom’s words and lawmakers’ votes, and the key looks at who decides.
+So the case shows a courtroom’s words and lawmakers’ votes, and the question is who decides.
 
 **How to tell them apart**
 
@@ -697,7 +697,7 @@ This is easy to get wrong, because we are used to “trial” meaning a judge. W
 
 ### 22. An office’s decision, and a judge asked about it
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 22 of 38*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 22 of 38*
 
 [reviewers only: card kind `lookalike`, id `look-president-courts`]
 
@@ -719,9 +719,9 @@ An office can make a decision that someone then takes to a judge. This card puts
 
 **Why this one and not the other**
 
-In Case A the story ends with a letter from the immigration service: it refuses Mr Okoro’s application and says why. An office has decided. Nobody has gone to a judge yet. The key’s answer is **“The President or a federal agency”**.
+In Case A the story ends with a letter from the immigration service: it refuses Mr Okoro’s application and says why. An office has decided. Nobody has gone to a judge yet. The answer is **“The President or a federal agency”**.
 
-In Case B the office’s refusal is in the story too, but as how the matter reached the judge. The story ends with Mr Okoro asking a judge whether the form was really missing. The key’s answer is **“A judge, in any court”**.
+In Case B the office’s refusal is in the story too, but as how the matter reached the judge. The story ends with Mr Okoro asking a judge whether the form was really missing. The answer is **“A judge, in any court”**.
 
 The refusal is in both cases. In Case A it is the last decision, and in Case B it is how the case got there. What separates the two is what the story ends on.
 
@@ -729,7 +729,7 @@ The refusal is in both cases. In Case A it is the last decision, and in Case B i
 
 Where does the story stop: on a decision by the President or an office, or on a judge deciding, or on someone asking a judge to decide?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | The President or a federal agency | A judge, in any court |
 |---|---|---|
@@ -739,7 +739,7 @@ Where does the story stop: on a decision by the President or an office, or on a 
 
 ### 23. An office’s rule, taken to a judge
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 23 of 38*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 23 of 38*
 
 [reviewers only: card kind `exception`, id `exc-rule`]
 
@@ -749,7 +749,7 @@ The last card showed an office’s decision and then a judge. Sometimes the firs
 
 > In June the federal lending agency published a rule that every loan contract must show the full cost of the loan on its first page. A trade group for lenders says the agency has gone too far. On Monday the group asked a judge to block the rule.
 
-The case opens with an office publishing a rule, and publishing a rule is what you point to for **“The President or a federal agency”**. It then says the office “has gone too far”. Yet the key’s answer for this case is **“A judge, in any court”**.
+The case opens with an office publishing a rule, and publishing a rule is what you point to for **“The President or a federal agency”**. It then says the office “has gone too far”. Yet the answer for this case is **“A judge, in any court”**.
 
 **You are asked:** This looks like **“The President or a federal agency”**. Before you read why it is **“A judge, in any court”**, tap the words in the case that settle it.
 
@@ -785,7 +785,7 @@ This shape is common: someone takes a rule to a judge. The rule comes first in t
 
 ### 24. The government of one state, or of a city, town or county in it
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 24 of 38*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 24 of 38*
 
 [reviewers only: card kind `meet`, id `meet-states`]
 
@@ -813,15 +813,15 @@ One more thing, because it is easy to get wrong: a judge in a state’s court is
 
 **What you must be able to point to.** A state’s lawmakers, governor or agencies, or a city, town or county, making the last decision in the case or being asked to make it. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“Who makes the last decision in the case, or is asked to make it?”**
+**The question:** **“Who makes the last decision in the case, or is asked to make it?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“A state, city or county government”**
+**Its answer for a case like this one:** **“A state, city or county government”**
 
-The key’s answer, and so the name of the kind, is **“A state, city or county government”**. “Government” here means the people and offices who make the decisions for a place. A state’s government is its lawmakers, its governor and its offices. A city, a town or a county has a council or a board, and often a mayor.
+The answer, and so the name of the kind, is **“A state, city or county government”**. “Government” here means the people and offices who make the decisions for a place. A state’s government is its lawmakers, its governor and its offices. A city, a town or a county has a council or a board, and often a mayor.
 
 ### 25. A state, city or county government: the same thing in a different story
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 25 of 38*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 25 of 38*
 
 [reviewers only: card kind `again`, id `again-states`]
 
@@ -854,7 +854,7 @@ One place is a city and the other is a state, and one rule is about a square and
 
 ### 26. A state, city or county government: what it is like
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 26 of 38*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 26 of 38*
 
 [reviewers only: card kind `portrait`, id `portrait-states`]
 
@@ -882,11 +882,11 @@ In your own life this is the kind that makes most of the rules you meet day to d
 
 **The question to ask when you spot it**
 
-"Whose government made this decision: one state’s, or one city’s, town’s or county’s?" If it is, the key’s answer is **“A state, city or county government”**.
+"Whose government made this decision: one state’s, or one city’s, town’s or county’s?" If it is, the answer is **“A state, city or county government”**.
 
 ### 27. A question about a new case
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 27 of 38*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 27 of 38*
 
 [reviewers only: card kind `check`, id `check-states`]
 
@@ -901,7 +901,7 @@ The pieces you can tap:
 
 **Shown as soon as you tap**
 
-- If you are right: “Right: ‘the Oakby town council voted to open it on Sundays from July’.” The last decision is a vote by the council of a town: it is a town’s own government deciding something about the town’s own pool. No part of the government of the whole country appears. The key’s answer for this case is **“A state, city or county government”**.
+- If you are right: “Right: ‘the Oakby town council voted to open it on Sundays from July’.” The last decision is a vote by the council of a town: it is a town’s own government deciding something about the town’s own pool. No part of the government of the whole country appears. The answer for this case is **“A state, city or county government”**.
 - If you miss: “The words are ‘the Oakby town council voted to open it on Sundays from July’.” The same reason follows, and then a line about the piece you tapped:
   - “Swimmers in Oakby complained that the town pool is closed on Sundays”: That is the complaint that led to the vote. It is not the decision.
   - “Swimmers cheered”: That is a reaction to the decision. The swimmers do not decide anything.
@@ -909,7 +909,7 @@ The pieces you can tap:
 
 ### 28. A judge and a city council, on one street
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 28 of 38*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 28 of 38*
 
 [reviewers only: card kind `lookalike`, id `look-courts-states`]
 
@@ -931,9 +931,9 @@ A judge and a city can be in one story about one street. This card puts the two 
 
 **Why this one and not the other**
 
-In Case A a driver has a ticket and asks a judge to cancel it, and the judge does. The ticket is in the story as how the matter reached the judge. The story ends on the judge’s decision. The key’s answer is **“A judge, in any court”**.
+In Case A a driver has a ticket and asks a judge to cancel it, and the judge does. The ticket is in the story as how the matter reached the judge. The story ends on the judge’s decision. The answer is **“A judge, in any court”**.
 
-In Case B nobody is in court. The city council votes to double the fine for stopping on Elm Street. The council is a city’s own government, deciding what the rule will be. The key’s answer is **“A state, city or county government”**.
+In Case B nobody is in court. The city council votes to double the fine for stopping on Elm Street. The council is a city’s own government, deciding what the rule will be. The answer is **“A state, city or county government”**.
 
 A parking fine belongs to the city in both stories, so you cannot tell the cases apart by their subject. What separates them is whether the story ends with a council making a rule or with a judge deciding about a ticket.
 
@@ -941,7 +941,7 @@ A parking fine belongs to the city in both stories, so you cannot tell the cases
 
 Is the last decision made by a judge, whatever the court? Or is it made by a state, a city, a town or a county, acting as a government?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | A judge, in any court | A state, city or county government |
 |---|---|---|
@@ -951,7 +951,7 @@ Is the last decision made by a judge, whatever the court? Or is it made by a sta
 
 ### 29. A judge in a state’s own court
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 29 of 38*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 29 of 38*
 
 [reviewers only: card kind `exception`, id `exc-statejudge`]
 
@@ -961,7 +961,7 @@ The last card kept the two kinds tidy: a council on one side and a judge on the 
 
 > The county of Hale has a rule that no household may keep more than three dogs. Mrs Lund keeps four, and the county told her to give one away. On Monday a judge in the state’s court heard both sides and ruled that she must give one dog away.
 
-The case is full of a county and a state: a county’s rule, a county’s order, and a judge in the state’s own court. A decision by the government of a state or a county is what you point to for **“A state, city or county government”**. Yet the key’s answer for this case is **“A judge, in any court”**.
+The case is full of a county and a state: a county’s rule, a county’s order, and a judge in the state’s own court. A decision by the government of a state or a county is what you point to for **“A state, city or county government”**. Yet the answer for this case is **“A judge, in any court”**.
 
 **You are asked:** This looks like **“A state, city or county government”**. Before you read why it is **“A judge, in any court”**, tap the words in the case that settle it.
 
@@ -980,18 +980,18 @@ Read who makes the last decision. The county made a rule and told Mrs Lund to gi
 
 A judge in a state’s court is still a judge. The state’s own government is its lawmakers, its governor and its offices, and the judge is not one of them. The state did not decide this case. A judge did.
 
-So the key looks at what the decision-maker is, not at which court the judge sits in. Any judge, whether the court belongs to the whole country or to a state, is in the third kind.
+So the question is about what the decision-maker is, not which court the judge sits in. Any judge, whether the court belongs to the whole country or to a state, is in the third kind.
 
 **How to tell them apart**
 
 Is the last decision made by a judge, whatever the court? Or is it made by a state, a city, a town or a county, acting as a government?
 
-This holds the other way round too: a judge of the whole country’s courts and a judge of a state’s courts are both in the kind for a judge. The key does not ask which court. It asks who decides.
+This holds the other way round too: a judge of the whole country’s courts and a judge of a state’s courts are both in the kind for a judge. The question is not which court. It is who decides.
 
 
 ### 30. The same inspector, for the whole country or for one state
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 30 of 38*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 30 of 38*
 
 [reviewers only: card kind `lookalike`, id `look-president-states`]
 
@@ -1013,9 +1013,9 @@ An office of the whole country and an office of one state can do the same work. 
 
 **Why this one and not the other**
 
-In Case A the inspector works for a federal office, one that belongs to the government of the whole country. The decision is that office’s. The key’s answer is **“The President or a federal agency”**.
+In Case A the inspector works for a federal office, one that belongs to the government of the whole country. The decision is that office’s. The answer is **“The President or a federal agency”**.
 
-In Case B the inspector works for a state’s own health department. The decision is that state’s. The key’s answer is **“A state, city or county government”**.
+In Case B the inspector works for a state’s own health department. The decision is that state’s. The answer is **“A state, city or county government”**.
 
 What the inspector does is the same in both cases, word for word. So you cannot tell these two kinds apart by what is done. You can only tell by whose office does it.
 
@@ -1023,7 +1023,7 @@ What the inspector does is the same in both cases, word for word. So you cannot 
 
 Whose government does the office or the official belong to: the whole country’s, or one state’s, or a city’s, a town’s or a county’s?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | The President or a federal agency | A state, city or county government |
 |---|---|---|
@@ -1033,7 +1033,7 @@ Whose government does the office or the official belong to: the whole country’
 
 ### 31. The same tax, voted by Congress or by a state
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 31 of 38*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 31 of 38*
 
 [reviewers only: card kind `lookalike`, id `look-congress-states`]
 
@@ -1055,9 +1055,9 @@ The last pair is the lawmakers of the whole country and the lawmakers of one sta
 
 **Why this one and not the other**
 
-In Case A the House of Representatives votes, and the bill goes to the Senate. These lawmakers make laws for the whole country, so the tax is the national tax on income. The key’s answer is **“Congress, in the House or the Senate”**.
+In Case A the House of Representatives votes, and the bill goes to the Senate. These lawmakers make laws for the whole country, so the tax is the national tax on income. The answer is **“Congress, in the House or the Senate”**.
 
-In Case B the legislature of the state of Orland votes, and the cut is to the state’s own tax. These lawmakers belong to one state. The key’s answer is **“A state, city or county government”**.
+In Case B the legislature of the state of Orland votes, and the cut is to the state’s own tax. These lawmakers belong to one state. The answer is **“A state, city or county government”**.
 
 Both the whole country and a state can tax income, so the subject is the same in both. What separates the cases is which lawmakers voted, and whose tax it is.
 
@@ -1065,7 +1065,7 @@ Both the whole country and a state can tax income, so the subject is the same in
 
 Do the lawmakers in the case make rules for the whole country, or for one state, city, town or county?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Congress, in the House or the Senate | A state, city or county government |
 |---|---|---|
@@ -1075,7 +1075,7 @@ Do the lawmakers in the case make rules for the whole country, or for one state,
 
 ### 32. A wrong idea: “the first part named is the one that decided”
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 32 of 38*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 32 of 38*
 
 [reviewers only: card kind `refute`, id `refute-first`]
 
@@ -1092,25 +1092,25 @@ The first part named is usually how the matter got where it is. A story about a 
 The question asks for the last decision in the case, or the one it asks for. So read to the end, find the last thing decided or asked, and then ask whose it is. If the story begins with lawmakers and ends with an office, the answer is **“The President or a federal agency”**. If it begins with an office and ends with a request to a judge, the answer is **“A judge, in any court”**.
 
 
-*End of part 4. You can stop here; your place is kept. Next: part 5, The key’s first question.*
+*End of part 4. You can stop here; your place is kept. Next: part 5, The first question.*
 
 ---
 
-## Part 5 of 6: The key’s first question
+## Part 5 of 6: The first question
 
 ### 33. The question you have been answering all along
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 33 of 38*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 33 of 38*
 
 [reviewers only: card kind `question`, id `q-kind`]
 
-Since the bicycle-parts tax you have seen the key’s question at the foot of each new kind, with one answer under it. This card puts the question and its four answers in one place, as the key shows them, and says why the key asks it before anything else.
+Since the bicycle-parts tax you have seen the question at the foot of each new kind, with one answer under it. This card puts the question and its four answers in one place, and says why it is asked before anything else.
 
-**The key asks:** **“Who makes the last decision in the case, or is asked to make it?”**
+**The question:** **“Who makes the last decision in the case, or is asked to make it?”**
 
 **What it is for.** Sorts a case by who makes the decision it ends on: the lawmakers of the whole country, the President and the federal agencies, a judge, or the government of a state, city or county.
 
-**Its answers, exactly as the key shows them**
+**Its answers**
 
 In this unit each answer is itself the name of a kind, and so rules out the other three.
 
@@ -1129,7 +1129,7 @@ Each of the four may do different things and is held back by different limits, s
 
 A rule or a ruling can only be judged once you know whose it is. A law Congress passed is held back by one set of limits, a rule from an office by another, a judge’s ruling by a third, and a city’s rule by a fourth. If you take an office’s rule for a vote by lawmakers, you go looking for limits that do not apply to it. Getting the kind wrong means asking the wrong questions next, however carefully you ask them.
 
-That is why this question comes first, before any finer name, and why every case in this subject starts with it. In this unit it is the only question, so its answer is the name. In the rest of the subject, each of the four answers is followed by one or two more questions, and those lead to a finer name. The answers you give on the way to a name are called your route: this first answer, and then the answers to the questions after it. Once a route has more than one answer, two things are marked separately: the name you give a case, and your route to it. A right name reached by a wrong answer to this first question counts as a miss, which is why this question gets a whole unit of practice.
+That is why this question comes first, before any finer name, and why every case in this subject starts with it. In this unit it is the only question, so its answer is the name. In the rest of the subject, each of the four answers is followed by one or two more questions, and those lead to a finer name. Once a case takes more than one answer, two things are marked separately: the name you give it, and your answers on the way to that name. A right name reached by a wrong answer to this first question counts as a miss, which is why this question gets a whole unit of practice.
 
 **How to answer it from a case**
 
@@ -1145,7 +1145,7 @@ Four things are worth keeping in mind. A signature on a law the lawmakers passed
 
 **When two answers both seem to fit**
 
-Some cases name two or three of the four. You have met the common shapes: a law and then the office that applies it, a rule and then a judge asked to block it, an agreement with another country and then the Senate, a trial held by the Senate, a judge in a state’s court. In each, the key does not weigh the parts against one another. It asks for the last decision, or the one the case asks for, and a case has one. Each pair below has been set side by side earlier in this unit, and each has one question that separates it.
+Some cases name two or three of the four. You have met the common shapes: a law and then the office that applies it, a rule and then a judge asked to block it, an agreement with another country and then the Senate, a trial held by the Senate, a judge in a state’s court. In each, you do not weigh the parts against one another. The question asks for the last decision, or the one the case asks for, and a case has one. Each pair below has been set side by side earlier in this unit, and each has one question that separates it.
 
 - Congress, in the House or the Senate or The President or a federal agency: Does the story end on a vote by lawmakers, or on something the President or an office decides or does? If a law is in the story, was it already passed, with the story now about what is done with it?
 - Congress, in the House or the Senate or A judge, in any court: Who casts the deciding votes, or gives the ruling: lawmakers in the House or the Senate, or a judge?
@@ -1157,13 +1157,13 @@ Some cases name two or three of the four. You have met the common shapes: a law 
 
 ### 34. A question about a new case
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 34 of 38*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 34 of 38*
 
 [reviewers only: card kind `check`, id `check-kind`]
 
 > Every autumn the county board of Pell County closes the lake road for the leaf festival. Shop owners on the road have asked the board to leave it open this year.
 
-**The key asks:** **“Who makes the last decision in the case, or is asked to make it?”**
+**The question:** **“Who makes the last decision in the case, or is asked to make it?”**
 
 - Congress, in the House or the Senate
 - The President or a federal agency
@@ -1188,11 +1188,11 @@ Some cases name two or three of the four. You have met the common shapes: a law 
 
 ### 35. A whole case, from the question to the answer
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 35 of 38*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 35 of 38*
 
 [reviewers only: card kind `worked`, id `worked-doll`]
 
-You have the four kinds and the key’s question about them. Before the drill, watch two cases being run from the top. You are not asked anything until the end of each.
+You have the four kinds and the question about them. Before the drill, watch two cases being run from the top. You are not asked anything until the end of each.
 
 *The failed doll test*
 
@@ -1228,17 +1228,17 @@ In this unit the answer is the name. Ruled out: **“Congress, in the House or t
 
 For **“Congress, in the House or the Senate”** you must be able to point to this: a vote in the House, the Senate or both, as the last decision in the case or the one it asks for. The law was passed by lawmakers, and that is in the story. But the votes are behind the case, not in it: they were last year, and nobody is voting or being asked to vote on Tuesday.
 
-It is the question from the food-label law. Does the story end on a vote by lawmakers, or on something the President or an office decides or does? If a law is in the story, was it already passed, with the story now about what is done with it? Here an office decided something, so the key’s answer is **“The President or a federal agency”**.
+It is the question from the food-label law. Does the story end on a vote by lawmakers, or on something the President or an office decides or does? If a law is in the story, was it already passed, with the story now about what is done with it? Here an office decided something, so the answer is **“The President or a federal agency”**.
 
 **Does it look like a case you know?**
 
-The key has given its answer. Now take a second look of a different kind: does this case look like one you know? It should bring back the seat belts. There too, an office decided something about what every new car, or here every toy, must pass, and its inspectors were to check.
+The questions have given their answer. Now take a second look of a different kind: does this case look like one you know? It should bring back the seat belts. There too, an office decided something about what every new car, or here every toy, must pass, and its inspectors were to check.
 
-Here the key and the likeness agree, so the answer stands. The key’s question comes first, because it makes you point at words in the case. The likeness is only a second look. When the two disagree, do not pick the one you prefer. Go back to the key’s question and find the words in the case that answer it. The second whole case shows how.
+Here the questions and the likeness agree, so the answer stands. The question comes first, because it makes you point at words in the case. The likeness is only a second look. When the two disagree, do not pick the one you prefer. Go back to the question and find the words in the case that answer it. The second whole case shows how.
 
 ### 36. A second whole case, where the opening points the wrong way
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 36 of 38*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 36 of 38*
 
 [reviewers only: card kind `worked`, id `worked-bags`]
 
@@ -1274,15 +1274,15 @@ In this unit the answer is the name. Ruled out: **“Congress, in the House or t
 
 **Why this is A judge, in any court and not Congress, in the House or the Senate**
 
-A vote by lawmakers is what you point to for **“Congress, in the House or the Senate”**, and the first half of this case shows one. The second half shows the case being put to a judge. The key does not weigh the two. It asks for the last decision, or the one the case asks for, and that is the judge’s.
+A vote by lawmakers is what you point to for **“Congress, in the House or the Senate”**, and the first half of this case shows one. The second half shows the case being put to a judge. The question does not weigh the two. It asks for the last decision, or the one the case asks for, and that is the judge’s.
 
-It is the question from the drone law. Who casts the deciding votes, or gives the ruling: lawmakers in the House or the Senate, or a judge? Here the law is a month old and an airline is asking a judge about it, so the key’s answer is **“A judge, in any court”**.
+It is the question from the drone law. Who casts the deciding votes, or gives the ruling: lawmakers in the House or the Senate, or a judge? Here the law is a month old and an airline is asking a judge about it, so the answer is **“A judge, in any court”**.
 
 **Does it look like a case you know?**
 
-Now the second look: does this case look like one you know? A new law, passed by the House and the Senate, may bring back the bicycle-parts tax first, and that case was **“Congress, in the House or the Senate”**. So here the likeness and the key seem to disagree.
+Now the second look: does this case look like one you know? A new law, passed by the House and the Senate, may bring back the bicycle-parts tax first, and that case was **“Congress, in the House or the Senate”**. So here the likeness and the questions seem to disagree.
 
-When that happens, go back to the key’s question and find the words in the case that answer it. They are “asked a judge to decide whether the fine applies to bags lost by a partner airline”. The bicycle-parts case has nothing like them: it ended with the Senate’s vote. The boundary fence does: someone asked a judge to settle it. So the case this one really looks like is the fence, and the key’s answer stands.
+When that happens, go back to the question and find the words in the case that answer it. They are “asked a judge to decide whether the fine applies to bags lost by a partner airline”. The bicycle-parts case has nothing like them: it ended with the Senate’s vote. The boundary fence does: someone asked a judge to settle it. So the case this one really looks like is the fence, and the answer stands.
 
 ### The drill
 
@@ -1292,7 +1292,7 @@ Many of these cases name two or three parts of government, and the part named fi
 
 #### Stage 1 of 3. One question at a time.
 
-The question is shown with all four of its answers from the key, in the key’s order.
+The question is shown with all four of its answers, in order.
 
 **Drill item 1 of 39**
 
@@ -1311,8 +1311,8 @@ The question is shown with all four of its answers from the key, in the key’s 
   - Why not **“The President or a federal agency”**: Stamps are sold by an office of the government, and that can sound like the answer. But the case shows nobody at that office deciding anything. It shows a vote in the House.
 - If you miss: “The answer is **Congress, in the House or the Senate.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **The President or a federal agency**: the “why not” line above.
-  - If you chose **A judge, in any court**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **A state, city or county government**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose **A judge, in any court**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **A state, city or county government**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 2 of 39**
@@ -1332,8 +1332,8 @@ The question is shown with all four of its answers from the key, in the key’s 
   - Why not **“Congress, in the House or the Senate”**: A state legislature votes on a bill just as the House and the Senate do. But these lawmakers belong to one state and decide for its schools alone.
 - If you miss: “The answer is **A state, city or county government.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **Congress, in the House or the Senate**: the “why not” line above.
-  - If you chose **The President or a federal agency**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **A judge, in any court**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose **The President or a federal agency**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **A judge, in any court**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 3 of 39**
@@ -1353,8 +1353,8 @@ The question is shown with all four of its answers from the key, in the key’s 
   - Why not **“The President or a federal agency”**: Choosing Ms Aldous was the President’s act, and it can sound like the last decision. But the case reports the Senate’s vote, and that vote comes after the choice.
 - If you miss: “The answer is **Congress, in the House or the Senate.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **The President or a federal agency**: the “why not” line above.
-  - If you chose **A judge, in any court**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **A state, city or county government**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose **A judge, in any court**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **A state, city or county government**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 4 of 39**
@@ -1373,8 +1373,8 @@ The question is shown with all four of its answers from the key, in the key’s 
 - If you are right: “Right: **The President or a federal agency.**” The decision is made by an office of the government of the whole country: “the federal parks agency announced that dogs must be kept on a leash on every trail in the national parks”. No vote, no judge and no state or city appears.
   - Why not **“A state, city or county government”**: A leash rule is the kind of rule a town makes for its parks. But this office belongs to the government of the whole country, and the parks it names are national.
 - If you miss: “The answer is **The President or a federal agency.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **Congress, in the House or the Senate**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **A judge, in any court**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose **Congress, in the House or the Senate**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **A judge, in any court**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A state, city or county government**: the “why not” line above.
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
@@ -1394,8 +1394,8 @@ The question is shown with all four of its answers from the key, in the key’s 
 - If you are right: “Right: **A judge, in any court.**” The last decision is a judge’s: “a judge heard them both and ruled that she had paid”. The landlord and Mrs Fell are the two sides of a quarrel, and neither of them decides it.
   - Why not **“A state, city or county government”**: Renting a home is a matter of state and local rules, and that can pull toward the state. But nobody in the case is making a rule. A judge is deciding a quarrel between two people.
 - If you miss: “The answer is **A judge, in any court.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **Congress, in the House or the Senate**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **The President or a federal agency**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose **Congress, in the House or the Senate**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **The President or a federal agency**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A state, city or county government**: the “why not” line above.
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
@@ -1415,9 +1415,9 @@ The question is shown with all four of its answers from the key, in the key’s 
 - If you are right: “Right: **A state, city or county government.**” The last decision is a vote by the council of a town: “the Easton town council voted that every dog in a town park must be on a leash”. It is a town making a rule about its own parks.
   - Why not **“The President or a federal agency”**: The same leash rule could be made by an office for national parks. Here the council is a town’s own, and the parks are the town’s.
 - If you miss: “The answer is **A state, city or county government.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **Congress, in the House or the Senate**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose **Congress, in the House or the Senate**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **The President or a federal agency**: the “why not” line above.
-  - If you chose **A judge, in any court**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose **A judge, in any court**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 7 of 39**
@@ -1437,8 +1437,8 @@ The question is shown with all four of its answers from the key, in the key’s 
   - Why not **“Congress, in the House or the Senate”**: Sending food and medicine costs money, and money can sound like a matter for lawmakers. But the case shows the President giving an order, and no vote.
 - If you miss: “The answer is **The President or a federal agency.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **Congress, in the House or the Senate**: the “why not” line above.
-  - If you chose **A judge, in any court**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
-  - If you chose **A state, city or county government**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose **A judge, in any court**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
+  - If you chose **A state, city or county government**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 8 of 39**
@@ -1457,9 +1457,9 @@ The question is shown with all four of its answers from the key, in the key’s 
 - If you are right: “Right: **A judge, in any court.**” The case ends with a request: “his lawyer asked the judge to keep his confession out of evidence”. The decision has been put to a judge, so it is the judge’s.
   - Why not **“The President or a federal agency”**: A man is charged with a crime, and charging people can sound like the work of an office. But nobody in the case is charging or enforcing anything now. A lawyer is asking a judge to decide.
 - If you miss: “The answer is **A judge, in any court.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **Congress, in the House or the Senate**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose **Congress, in the House or the Senate**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **The President or a federal agency**: the “why not” line above.
-  - If you chose **A state, city or county government**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose **A state, city or county government**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 9 of 39**
@@ -1644,9 +1644,9 @@ The question is shown with all four of its answers from the key, in the key’s 
 - If you chose “A judge ruled that the fine must be paid.”: that belongs to **“A judge, in any court”**.
 - Taught on: “A state, city or county government: what it is like” (one tap opens the card).
 
-#### Stage 2 of 3. No help. Whole cases, mixed together, and the later ones have a story that points the wrong way. In this unit the key has one question, and its answer is the name.
+#### Stage 2 of 3. No help. Whole cases, mixed together, and the later ones have a story that points the wrong way. In this unit there is one question, and its answer is the name.
 
-The question is shown with all four of its answers from the key, in the key’s order.
+The question is shown with all four of its answers, in order.
 
 **Drill item 19 of 39**
 
@@ -1665,8 +1665,8 @@ The question is shown with all four of its answers from the key, in the key’s 
   - Why not **“The President or a federal agency”**: The lab is a federal one, and a federal lab can sound like the President’s. But the case ends with two votes, and nobody at the lab or in the President’s office decides anything.
 - If you miss: “The answer is **Congress, in the House or the Senate.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **The President or a federal agency**: the “why not” line above. Then the lines from the card that compared the two: Both belong to the government of the whole country, and one law can appear in both: the lawmakers vote on it, and then the President or an office puts it into practice. In **“Congress, in the House or the Senate”** the last decision is a vote by lawmakers. In **“The President or a federal agency”** it is made by the President or by an office that carries out laws: a rule, an inspection, an order, a refusal to sign. A signature on a law the lawmakers passed does not count as a decision of its own, so a signed law stays with **“Congress, in the House or the Senate”**. Does the story end on a vote by lawmakers, or on something the President or an office decides or does? If a law is in the story, was it already passed, with the story now about what is done with it?
-  - If you chose **A judge, in any court**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about one law, and both can be described with the same words: a trial, a charge, a decision, a vote on whether someone is guilty. In **“Congress, in the House or the Senate”** the deciders are lawmakers, who vote. In **“A judge, in any court”** the decider is a judge, who rules, or who has been asked to. A trial held in the Senate is a vote by senators, so it stays with **“Congress, in the House or the Senate”**. Who casts the deciding votes, or gives the ruling: lawmakers in the House or the Senate, or a judge?
-  - If you chose **A state, city or county government**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, lawmakers vote on a bill, and they can vote on the same sort of matter, such as a tax. In **“Congress, in the House or the Senate”** the lawmakers are the House and the Senate, and what they decide is for the whole country. In **“A state, city or county government”** the lawmakers belong to one state, or the deciders are the council of a city, a town or a county, and what they decide is for that place alone. Do the lawmakers in the case make rules for the whole country, or for one state, city, town or county?
+  - If you chose **A judge, in any court**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about one law, and both can be described with the same words: a trial, a charge, a decision, a vote on whether someone is guilty. In **“Congress, in the House or the Senate”** the deciders are lawmakers, who vote. In **“A judge, in any court”** the decider is a judge, who rules, or who has been asked to. A trial held in the Senate is a vote by senators, so it stays with **“Congress, in the House or the Senate”**. Who casts the deciding votes, or gives the ruling: lawmakers in the House or the Senate, or a judge?
+  - If you chose **A state, city or county government**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, lawmakers vote on a bill, and they can vote on the same sort of matter, such as a tax. In **“Congress, in the House or the Senate”** the lawmakers are the House and the Senate, and what they decide is for the whole country. In **“A state, city or county government”** the lawmakers belong to one state, or the deciders are the council of a city, a town or a county, and what they decide is for that place alone. Do the lawmakers in the case make rules for the whole country, or for one state, city, town or county?
 - What would make it a different name: If the case ended with the head of the lab, or an office, deciding how to spend what is left, the answer would be **“The President or a federal agency”**.
 - Taught on: “The lawmakers of the whole country” (one tap opens the card).
 
@@ -1686,9 +1686,9 @@ The question is shown with all four of its answers from the key, in the key’s 
 - If you are right: “Right: **A state, city or county government.**” The last decision is made by the mayor of a town: “the mayor of Fairfield announced that the library will stay open until 9 p.m. on weekdays”. A town is deciding about its own library.
   - Why not **“The President or a federal agency”**: A mayor is one person deciding, as the President does. But a mayor leads a town, and the President leads the government of the whole country.
 - If you miss: “The answer is **A state, city or county government.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **Congress, in the House or the Senate**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, lawmakers vote on a bill, and they can vote on the same sort of matter, such as a tax. In **“Congress, in the House or the Senate”** the lawmakers are the House and the Senate, and what they decide is for the whole country. In **“A state, city or county government”** the lawmakers belong to one state, or the deciders are the council of a city, a town or a county, and what they decide is for that place alone. Do the lawmakers in the case make rules for the whole country, or for one state, city, town or county?
+  - If you chose **Congress, in the House or the Senate**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, lawmakers vote on a bill, and they can vote on the same sort of matter, such as a tax. In **“Congress, in the House or the Senate”** the lawmakers are the House and the Senate, and what they decide is for the whole country. In **“A state, city or county government”** the lawmakers belong to one state, or the deciders are the council of a city, a town or a county, and what they decide is for that place alone. Do the lawmakers in the case make rules for the whole country, or for one state, city, town or county?
   - If you chose **The President or a federal agency**: the “why not” line above. Then the lines from the card that compared the two: Both can be offices that inspect, license or enforce, and the work an inspector does can be exactly the same in each. In **“The President or a federal agency”** the office belongs to the government of the whole country, or the decision is the President’s. In **“A state, city or county government”** the office belongs to one state, or to a city, a town or a county. What the office does can be the same in both. Whose office it is separates them. Whose government does the office or the official belong to: the whole country’s, or one state’s, or a city’s, a town’s or a county’s?
-  - If you chose **A judge, in any court**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a local matter: a ticket, a fence, a rule about a street. A judge of a state’s court and a city council can both be in one story. In **“A judge, in any court”** the last decision is a judge’s, in whatever court, and a judge in a state’s own court is still a judge. In **“A state, city or county government”** it is made by the lawmakers, the governor or the offices of a state, or by a city, a town or a county. A state’s court does not turn a case into the state’s decision. Is the last decision made by a judge, whatever the court? Or is it made by a state, a city, a town or a county, acting as a government?
+  - If you chose **A judge, in any court**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a local matter: a ticket, a fence, a rule about a street. A judge of a state’s court and a city council can both be in one story. In **“A judge, in any court”** the last decision is a judge’s, in whatever court, and a judge in a state’s own court is still a judge. In **“A state, city or county government”** it is made by the lawmakers, the governor or the offices of a state, or by a city, a town or a county. A state’s court does not turn a case into the state’s decision. Is the last decision made by a judge, whatever the court? Or is it made by a state, a city, a town or a county, acting as a government?
 - What would make it a different name: If the case ended with a federal office ordering the library to change its hours, the answer would be **“The President or a federal agency”**.
 - Taught on: “The government of one state, or of a city, town or county in it” (one tap opens the card).
 
@@ -1708,9 +1708,9 @@ The question is shown with all four of its answers from the key, in the key’s 
 - If you are right: “Right: **A judge, in any court.**” The last decision is a judge’s: “a judge heard both of them and decided for the bakery”. The bakery and the supplier are the two sides of a quarrel.
   - Why not **“The President or a federal agency”**: A contract between two firms can seem like a matter for an office that deals with business. But no office appears, and the quarrel is settled by a judge.
 - If you miss: “The answer is **A judge, in any court.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **Congress, in the House or the Senate**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about one law, and both can be described with the same words: a trial, a charge, a decision, a vote on whether someone is guilty. In **“Congress, in the House or the Senate”** the deciders are lawmakers, who vote. In **“A judge, in any court”** the decider is a judge, who rules, or who has been asked to. A trial held in the Senate is a vote by senators, so it stays with **“Congress, in the House or the Senate”**. Who casts the deciding votes, or gives the ruling: lawmakers in the House or the Senate, or a judge?
+  - If you chose **Congress, in the House or the Senate**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about one law, and both can be described with the same words: a trial, a charge, a decision, a vote on whether someone is guilty. In **“Congress, in the House or the Senate”** the deciders are lawmakers, who vote. In **“A judge, in any court”** the decider is a judge, who rules, or who has been asked to. A trial held in the Senate is a vote by senators, so it stays with **“Congress, in the House or the Senate”**. Who casts the deciding votes, or gives the ruling: lawmakers in the House or the Senate, or a judge?
   - If you chose **The President or a federal agency**: the “why not” line above. Then the lines from the card that compared the two: Both can be about one rule: an office or the President makes it, and someone then takes it to a judge. In **“The President or a federal agency”** the story ends with the President or an office deciding. In **“A judge, in any court”** it ends with a judge deciding, or with someone asking a judge to, even when the rule the judge is asked about came from an office. What the office did earlier is how the matter reached the judge. Where does the story stop: on a decision by the President or an office, or on a judge deciding, or on someone asking a judge to decide?
-  - If you chose **A state, city or county government**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a local matter: a ticket, a fence, a rule about a street. A judge of a state’s court and a city council can both be in one story. In **“A judge, in any court”** the last decision is a judge’s, in whatever court, and a judge in a state’s own court is still a judge. In **“A state, city or county government”** it is made by the lawmakers, the governor or the offices of a state, or by a city, a town or a county. A state’s court does not turn a case into the state’s decision. Is the last decision made by a judge, whatever the court? Or is it made by a state, a city, a town or a county, acting as a government?
+  - If you chose **A state, city or county government**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a local matter: a ticket, a fence, a rule about a street. A judge of a state’s court and a city council can both be in one story. In **“A judge, in any court”** the last decision is a judge’s, in whatever court, and a judge in a state’s own court is still a judge. In **“A state, city or county government”** it is made by the lawmakers, the governor or the offices of a state, or by a city, a town or a county. A state’s court does not turn a case into the state’s decision. Is the last decision made by a judge, whatever the court? Or is it made by a state, a city, a town or a county, acting as a government?
 - What would make it a different name: If the case ended with a state’s lawmakers voting on a rule for contracts between firms, the answer would be **“A state, city or county government”**.
 - Taught on: “A judge, deciding a case someone brings” (one tap opens the card).
 
@@ -1731,8 +1731,8 @@ The question is shown with all four of its answers from the key, in the key’s 
   - Why not **“Congress, in the House or the Senate”**: Taxes are decided by lawmakers, and that can pull toward them. But the case is about an office sending notices, and no vote appears.
 - If you miss: “The answer is **The President or a federal agency.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **Congress, in the House or the Senate**: the “why not” line above. Then the lines from the card that compared the two: Both belong to the government of the whole country, and one law can appear in both: the lawmakers vote on it, and then the President or an office puts it into practice. In **“Congress, in the House or the Senate”** the last decision is a vote by lawmakers. In **“The President or a federal agency”** it is made by the President or by an office that carries out laws: a rule, an inspection, an order, a refusal to sign. A signature on a law the lawmakers passed does not count as a decision of its own, so a signed law stays with **“Congress, in the House or the Senate”**. Does the story end on a vote by lawmakers, or on something the President or an office decides or does? If a law is in the story, was it already passed, with the story now about what is done with it?
-  - If you chose **A judge, in any court**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about one rule: an office or the President makes it, and someone then takes it to a judge. In **“The President or a federal agency”** the story ends with the President or an office deciding. In **“A judge, in any court”** it ends with a judge deciding, or with someone asking a judge to, even when the rule the judge is asked about came from an office. What the office did earlier is how the matter reached the judge. Where does the story stop: on a decision by the President or an office, or on a judge deciding, or on someone asking a judge to decide?
-  - If you chose **A state, city or county government**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can be offices that inspect, license or enforce, and the work an inspector does can be exactly the same in each. In **“The President or a federal agency”** the office belongs to the government of the whole country, or the decision is the President’s. In **“A state, city or county government”** the office belongs to one state, or to a city, a town or a county. What the office does can be the same in both. Whose office it is separates them. Whose government does the office or the official belong to: the whole country’s, or one state’s, or a city’s, a town’s or a county’s?
+  - If you chose **A judge, in any court**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about one rule: an office or the President makes it, and someone then takes it to a judge. In **“The President or a federal agency”** the story ends with the President or an office deciding. In **“A judge, in any court”** it ends with a judge deciding, or with someone asking a judge to, even when the rule the judge is asked about came from an office. What the office did earlier is how the matter reached the judge. Where does the story stop: on a decision by the President or an office, or on a judge deciding, or on someone asking a judge to decide?
+  - If you chose **A state, city or county government**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be offices that inspect, license or enforce, and the work an inspector does can be exactly the same in each. In **“The President or a federal agency”** the office belongs to the government of the whole country, or the decision is the President’s. In **“A state, city or county government”** the office belongs to one state, or to a city, a town or a county. What the office does can be the same in both. Whose office it is separates them. Whose government does the office or the official belong to: the whole country’s, or one state’s, or a city’s, a town’s or a county’s?
 - What would make it a different name: If the case said the House had voted to change the tax forms, the last decision would be a vote, and the answer would be **“Congress, in the House or the Senate”**.
 - Taught on: “The President, and the offices that carry out the laws of the whole country” (one tap opens the card).
 
@@ -1752,8 +1752,8 @@ The question is shown with all four of its answers from the key, in the key’s 
 - If you are right: “Right: **A judge, in any court.**” The case ends with a request: “She has asked a judge to order the upstairs tenant to stop playing music after ten at night”. The decision has been put to a judge, so it is the judge’s.
   - Why not **“A state, city or county government”**: A noise quarrel in a block of flats can sound like a matter for the town. But nobody in the case is making a rule. A tenant is asking a judge to decide.
 - If you miss: “The answer is **A judge, in any court.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **Congress, in the House or the Senate**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about one law, and both can be described with the same words: a trial, a charge, a decision, a vote on whether someone is guilty. In **“Congress, in the House or the Senate”** the deciders are lawmakers, who vote. In **“A judge, in any court”** the decider is a judge, who rules, or who has been asked to. A trial held in the Senate is a vote by senators, so it stays with **“Congress, in the House or the Senate”**. Who casts the deciding votes, or gives the ruling: lawmakers in the House or the Senate, or a judge?
-  - If you chose **The President or a federal agency**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about one rule: an office or the President makes it, and someone then takes it to a judge. In **“The President or a federal agency”** the story ends with the President or an office deciding. In **“A judge, in any court”** it ends with a judge deciding, or with someone asking a judge to, even when the rule the judge is asked about came from an office. What the office did earlier is how the matter reached the judge. Where does the story stop: on a decision by the President or an office, or on a judge deciding, or on someone asking a judge to decide?
+  - If you chose **Congress, in the House or the Senate**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about one law, and both can be described with the same words: a trial, a charge, a decision, a vote on whether someone is guilty. In **“Congress, in the House or the Senate”** the deciders are lawmakers, who vote. In **“A judge, in any court”** the decider is a judge, who rules, or who has been asked to. A trial held in the Senate is a vote by senators, so it stays with **“Congress, in the House or the Senate”**. Who casts the deciding votes, or gives the ruling: lawmakers in the House or the Senate, or a judge?
+  - If you chose **The President or a federal agency**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about one rule: an office or the President makes it, and someone then takes it to a judge. In **“The President or a federal agency”** the story ends with the President or an office deciding. In **“A judge, in any court”** it ends with a judge deciding, or with someone asking a judge to, even when the rule the judge is asked about came from an office. What the office did earlier is how the matter reached the judge. Where does the story stop: on a decision by the President or an office, or on a judge deciding, or on someone asking a judge to decide?
   - If you chose **A state, city or county government**: the “why not” line above. Then the lines from the card that compared the two: Both can be about a local matter: a ticket, a fence, a rule about a street. A judge of a state’s court and a city council can both be in one story. In **“A judge, in any court”** the last decision is a judge’s, in whatever court, and a judge in a state’s own court is still a judge. In **“A state, city or county government”** it is made by the lawmakers, the governor or the offices of a state, or by a city, a town or a county. A state’s court does not turn a case into the state’s decision. Is the last decision made by a judge, whatever the court? Or is it made by a state, a city, a town or a county, acting as a government?
 - What would make it a different name: If the case ended with the town council voting to ban loud music after ten, the answer would be **“A state, city or county government”**.
 - Taught on: “A judge, deciding a case someone brings” (one tap opens the card).
@@ -1775,8 +1775,8 @@ The question is shown with all four of its answers from the key, in the key’s 
   - Why not **“Congress, in the House or the Senate”**: Lowering a fee by a vote is just what the House and the Senate do. But these lawmakers belong to one state and set a fee that only that state’s hairdressers pay.
 - If you miss: “The answer is **A state, city or county government.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **Congress, in the House or the Senate**: the “why not” line above. Then the lines from the card that compared the two: In both, lawmakers vote on a bill, and they can vote on the same sort of matter, such as a tax. In **“Congress, in the House or the Senate”** the lawmakers are the House and the Senate, and what they decide is for the whole country. In **“A state, city or county government”** the lawmakers belong to one state, or the deciders are the council of a city, a town or a county, and what they decide is for that place alone. Do the lawmakers in the case make rules for the whole country, or for one state, city, town or county?
-  - If you chose **The President or a federal agency**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can be offices that inspect, license or enforce, and the work an inspector does can be exactly the same in each. In **“The President or a federal agency”** the office belongs to the government of the whole country, or the decision is the President’s. In **“A state, city or county government”** the office belongs to one state, or to a city, a town or a county. What the office does can be the same in both. Whose office it is separates them. Whose government does the office or the official belong to: the whole country’s, or one state’s, or a city’s, a town’s or a county’s?
-  - If you chose **A judge, in any court**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a local matter: a ticket, a fence, a rule about a street. A judge of a state’s court and a city council can both be in one story. In **“A judge, in any court”** the last decision is a judge’s, in whatever court, and a judge in a state’s own court is still a judge. In **“A state, city or county government”** it is made by the lawmakers, the governor or the offices of a state, or by a city, a town or a county. A state’s court does not turn a case into the state’s decision. Is the last decision made by a judge, whatever the court? Or is it made by a state, a city, a town or a county, acting as a government?
+  - If you chose **The President or a federal agency**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be offices that inspect, license or enforce, and the work an inspector does can be exactly the same in each. In **“The President or a federal agency”** the office belongs to the government of the whole country, or the decision is the President’s. In **“A state, city or county government”** the office belongs to one state, or to a city, a town or a county. What the office does can be the same in both. Whose office it is separates them. Whose government does the office or the official belong to: the whole country’s, or one state’s, or a city’s, a town’s or a county’s?
+  - If you chose **A judge, in any court**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a local matter: a ticket, a fence, a rule about a street. A judge of a state’s court and a city council can both be in one story. In **“A judge, in any court”** the last decision is a judge’s, in whatever court, and a judge in a state’s own court is still a judge. In **“A state, city or county government”** it is made by the lawmakers, the governor or the offices of a state, or by a city, a town or a county. A state’s court does not turn a case into the state’s decision. Is the last decision made by a judge, whatever the court? Or is it made by a state, a city, a town or a county, acting as a government?
 - What would make it a different name: If the case ended with a federal office announcing a national fee, the answer would be **“The President or a federal agency”**.
 - Taught on: “The government of one state, or of a city, town or county in it” (one tap opens the card).
 
@@ -1796,8 +1796,8 @@ The question is shown with all four of its answers from the key, in the key’s 
 - If you are right: “Right: **Congress, in the House or the Senate.**” The case ends with a request, and it is made to the Senate: “has written to the Senate asking it to vote on ending that tax”. The vote has not happened, but it is the decision the case asks for.
   - Why not **“A state, city or county government”**: The bakers live in a town, and a town can sound like the answer. But the town is not who is asked. The group wrote to the Senate.
 - If you miss: “The answer is **Congress, in the House or the Senate.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **The President or a federal agency**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both belong to the government of the whole country, and one law can appear in both: the lawmakers vote on it, and then the President or an office puts it into practice. In **“Congress, in the House or the Senate”** the last decision is a vote by lawmakers. In **“The President or a federal agency”** it is made by the President or by an office that carries out laws: a rule, an inspection, an order, a refusal to sign. A signature on a law the lawmakers passed does not count as a decision of its own, so a signed law stays with **“Congress, in the House or the Senate”**. Does the story end on a vote by lawmakers, or on something the President or an office decides or does? If a law is in the story, was it already passed, with the story now about what is done with it?
-  - If you chose **A judge, in any court**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about one law, and both can be described with the same words: a trial, a charge, a decision, a vote on whether someone is guilty. In **“Congress, in the House or the Senate”** the deciders are lawmakers, who vote. In **“A judge, in any court”** the decider is a judge, who rules, or who has been asked to. A trial held in the Senate is a vote by senators, so it stays with **“Congress, in the House or the Senate”**. Who casts the deciding votes, or gives the ruling: lawmakers in the House or the Senate, or a judge?
+  - If you chose **The President or a federal agency**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both belong to the government of the whole country, and one law can appear in both: the lawmakers vote on it, and then the President or an office puts it into practice. In **“Congress, in the House or the Senate”** the last decision is a vote by lawmakers. In **“The President or a federal agency”** it is made by the President or by an office that carries out laws: a rule, an inspection, an order, a refusal to sign. A signature on a law the lawmakers passed does not count as a decision of its own, so a signed law stays with **“Congress, in the House or the Senate”**. Does the story end on a vote by lawmakers, or on something the President or an office decides or does? If a law is in the story, was it already passed, with the story now about what is done with it?
+  - If you chose **A judge, in any court**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about one law, and both can be described with the same words: a trial, a charge, a decision, a vote on whether someone is guilty. In **“Congress, in the House or the Senate”** the deciders are lawmakers, who vote. In **“A judge, in any court”** the decider is a judge, who rules, or who has been asked to. A trial held in the Senate is a vote by senators, so it stays with **“Congress, in the House or the Senate”**. Who casts the deciding votes, or gives the ruling: lawmakers in the House or the Senate, or a judge?
   - If you chose **A state, city or county government**: the “why not” line above. Then the lines from the card that compared the two: In both, lawmakers vote on a bill, and they can vote on the same sort of matter, such as a tax. In **“Congress, in the House or the Senate”** the lawmakers are the House and the Senate, and what they decide is for the whole country. In **“A state, city or county government”** the lawmakers belong to one state, or the deciders are the council of a city, a town or a county, and what they decide is for that place alone. Do the lawmakers in the case make rules for the whole country, or for one state, city, town or county?
 - What would make it a different name: If the group had written to the Fenmere town council, asking it to vote on a rule for the town’s own market, the answer would be **“A state, city or county government”**.
 - Taught on: “The lawmakers of the whole country” (one tap opens the card).
@@ -1818,9 +1818,9 @@ The question is shown with all four of its answers from the key, in the key’s 
 - If you are right: “Right: **The President or a federal agency.**” The last decision is the President’s: “the President pardoned her, forgiving the crime, and she left prison”. The conviction came before it, and is how the matter reached the President.
   - Why not **“A judge, in any court”**: Words like convicted and sentence belong to a courtroom, and they pull toward a judge. But the last thing in the case is the President forgiving the crime, and no judge is deciding anything.
 - If you miss: “The answer is **The President or a federal agency.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **Congress, in the House or the Senate**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both belong to the government of the whole country, and one law can appear in both: the lawmakers vote on it, and then the President or an office puts it into practice. In **“Congress, in the House or the Senate”** the last decision is a vote by lawmakers. In **“The President or a federal agency”** it is made by the President or by an office that carries out laws: a rule, an inspection, an order, a refusal to sign. A signature on a law the lawmakers passed does not count as a decision of its own, so a signed law stays with **“Congress, in the House or the Senate”**. Does the story end on a vote by lawmakers, or on something the President or an office decides or does? If a law is in the story, was it already passed, with the story now about what is done with it?
+  - If you chose **Congress, in the House or the Senate**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both belong to the government of the whole country, and one law can appear in both: the lawmakers vote on it, and then the President or an office puts it into practice. In **“Congress, in the House or the Senate”** the last decision is a vote by lawmakers. In **“The President or a federal agency”** it is made by the President or by an office that carries out laws: a rule, an inspection, an order, a refusal to sign. A signature on a law the lawmakers passed does not count as a decision of its own, so a signed law stays with **“Congress, in the House or the Senate”**. Does the story end on a vote by lawmakers, or on something the President or an office decides or does? If a law is in the story, was it already passed, with the story now about what is done with it?
   - If you chose **A judge, in any court**: the “why not” line above. Then the lines from the card that compared the two: Both can be about one rule: an office or the President makes it, and someone then takes it to a judge. In **“The President or a federal agency”** the story ends with the President or an office deciding. In **“A judge, in any court”** it ends with a judge deciding, or with someone asking a judge to, even when the rule the judge is asked about came from an office. What the office did earlier is how the matter reached the judge. Where does the story stop: on a decision by the President or an office, or on a judge deciding, or on someone asking a judge to decide?
-  - If you chose **A state, city or county government**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can be offices that inspect, license or enforce, and the work an inspector does can be exactly the same in each. In **“The President or a federal agency”** the office belongs to the government of the whole country, or the decision is the President’s. In **“A state, city or county government”** the office belongs to one state, or to a city, a town or a county. What the office does can be the same in both. Whose office it is separates them. Whose government does the office or the official belong to: the whole country’s, or one state’s, or a city’s, a town’s or a county’s?
+  - If you chose **A state, city or county government**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be offices that inspect, license or enforce, and the work an inspector does can be exactly the same in each. In **“The President or a federal agency”** the office belongs to the government of the whole country, or the decision is the President’s. In **“A state, city or county government”** the office belongs to one state, or to a city, a town or a county. What the office does can be the same in both. Whose office it is separates them. Whose government does the office or the official belong to: the whole country’s, or one state’s, or a city’s, a town’s or a county’s?
 - What would make it a different name: If the case ended with her lawyer asking a judge to shorten her sentence, the answer would be **“A judge, in any court”**.
 - Taught on: “The President, and the offices that carry out the laws of the whole country” (one tap opens the card).
 
@@ -1840,8 +1840,8 @@ The question is shown with all four of its answers from the key, in the key’s 
 - If you are right: “Right: **A judge, in any court.**” The case ends with a request to a judge: “They have asked a judge to order the factory to stop”. A town and a state are named only to say they were not asked.
   - Why not **“A state, city or county government”**: The town and the state are in the story, and a case about water can seem a matter for them. But the case says plainly that neither was asked. The request is to a judge.
 - If you miss: “The answer is **A judge, in any court.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **Congress, in the House or the Senate**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about one law, and both can be described with the same words: a trial, a charge, a decision, a vote on whether someone is guilty. In **“Congress, in the House or the Senate”** the deciders are lawmakers, who vote. In **“A judge, in any court”** the decider is a judge, who rules, or who has been asked to. A trial held in the Senate is a vote by senators, so it stays with **“Congress, in the House or the Senate”**. Who casts the deciding votes, or gives the ruling: lawmakers in the House or the Senate, or a judge?
-  - If you chose **The President or a federal agency**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about one rule: an office or the President makes it, and someone then takes it to a judge. In **“The President or a federal agency”** the story ends with the President or an office deciding. In **“A judge, in any court”** it ends with a judge deciding, or with someone asking a judge to, even when the rule the judge is asked about came from an office. What the office did earlier is how the matter reached the judge. Where does the story stop: on a decision by the President or an office, or on a judge deciding, or on someone asking a judge to decide?
+  - If you chose **Congress, in the House or the Senate**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about one law, and both can be described with the same words: a trial, a charge, a decision, a vote on whether someone is guilty. In **“Congress, in the House or the Senate”** the deciders are lawmakers, who vote. In **“A judge, in any court”** the decider is a judge, who rules, or who has been asked to. A trial held in the Senate is a vote by senators, so it stays with **“Congress, in the House or the Senate”**. Who casts the deciding votes, or gives the ruling: lawmakers in the House or the Senate, or a judge?
+  - If you chose **The President or a federal agency**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about one rule: an office or the President makes it, and someone then takes it to a judge. In **“The President or a federal agency”** the story ends with the President or an office deciding. In **“A judge, in any court”** it ends with a judge deciding, or with someone asking a judge to, even when the rule the judge is asked about came from an office. What the office did earlier is how the matter reached the judge. Where does the story stop: on a decision by the President or an office, or on a judge deciding, or on someone asking a judge to decide?
   - If you chose **A state, city or county government**: the “why not” line above. Then the lines from the card that compared the two: Both can be about a local matter: a ticket, a fence, a rule about a street. A judge of a state’s court and a city council can both be in one story. In **“A judge, in any court”** the last decision is a judge’s, in whatever court, and a judge in a state’s own court is still a judge. In **“A state, city or county government”** it is made by the lawmakers, the governor or the offices of a state, or by a city, a town or a county. A state’s court does not turn a case into the state’s decision. Is the last decision made by a judge, whatever the court? Or is it made by a state, a city, a town or a county, acting as a government?
 - What would make it a different name: If the residents had asked the town council to pass a rule against polluting the river, the answer would be **“A state, city or county government”**.
 - Taught on: “A judge, deciding a case someone brings” (one tap opens the card).
@@ -1862,8 +1862,8 @@ The question is shown with all four of its answers from the key, in the key’s 
 - If you are right: “Right: **A state, city or county government.**” The case ends with a request, and it is made to a town’s council: “asked the Dalby town council to set a curfew for anyone under sixteen”. The council has not voted, but a decision by it is what the case asks for.
   - Why not **“A judge, in any court”**: People are asking someone to decide, and that can sound like going to court. But the people asked are the town’s own council, who make rules for the town. No judge appears.
 - If you miss: “The answer is **A state, city or county government.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **Congress, in the House or the Senate**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, lawmakers vote on a bill, and they can vote on the same sort of matter, such as a tax. In **“Congress, in the House or the Senate”** the lawmakers are the House and the Senate, and what they decide is for the whole country. In **“A state, city or county government”** the lawmakers belong to one state, or the deciders are the council of a city, a town or a county, and what they decide is for that place alone. Do the lawmakers in the case make rules for the whole country, or for one state, city, town or county?
-  - If you chose **The President or a federal agency**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can be offices that inspect, license or enforce, and the work an inspector does can be exactly the same in each. In **“The President or a federal agency”** the office belongs to the government of the whole country, or the decision is the President’s. In **“A state, city or county government”** the office belongs to one state, or to a city, a town or a county. What the office does can be the same in both. Whose office it is separates them. Whose government does the office or the official belong to: the whole country’s, or one state’s, or a city’s, a town’s or a county’s?
+  - If you chose **Congress, in the House or the Senate**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, lawmakers vote on a bill, and they can vote on the same sort of matter, such as a tax. In **“Congress, in the House or the Senate”** the lawmakers are the House and the Senate, and what they decide is for the whole country. In **“A state, city or county government”** the lawmakers belong to one state, or the deciders are the council of a city, a town or a county, and what they decide is for that place alone. Do the lawmakers in the case make rules for the whole country, or for one state, city, town or county?
+  - If you chose **The President or a federal agency**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be offices that inspect, license or enforce, and the work an inspector does can be exactly the same in each. In **“The President or a federal agency”** the office belongs to the government of the whole country, or the decision is the President’s. In **“A state, city or county government”** the office belongs to one state, or to a city, a town or a county. What the office does can be the same in both. Whose office it is separates them. Whose government does the office or the official belong to: the whole country’s, or one state’s, or a city’s, a town’s or a county’s?
   - If you chose **A judge, in any court**: the “why not” line above. Then the lines from the card that compared the two: Both can be about a local matter: a ticket, a fence, a rule about a street. A judge of a state’s court and a city council can both be in one story. In **“A judge, in any court”** the last decision is a judge’s, in whatever court, and a judge in a state’s own court is still a judge. In **“A state, city or county government”** it is made by the lawmakers, the governor or the offices of a state, or by a city, a town or a county. A state’s court does not turn a case into the state’s decision. Is the last decision made by a judge, whatever the court? Or is it made by a state, a city, a town or a county, acting as a government?
 - What would make it a different name: If the parents had asked a judge to order the teenagers home, the answer would be **“A judge, in any court”**.
 - Taught on: “The government of one state, or of a city, town or county in it” (one tap opens the card).
@@ -1884,10 +1884,10 @@ The question is shown with all four of its answers from the key, in the key’s 
 - If you are right: “Right: **Congress, in the House or the Senate.**” The decisions in the case are votes by lawmakers: “the House voted to charge him” and “the Senate has set a trial for next week”. The man accused is a judge, and a trial is coming. But it is held in the Senate, and it is the senators who will decide.
   - Why not **“A judge, in any court”**: A judge and a trial are both in the story, and both pull toward a court. But the judge is the one accused, not the one deciding, and the trial is the Senate’s.
 - If you miss: “The answer is **Congress, in the House or the Senate.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **The President or a federal agency**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both belong to the government of the whole country, and one law can appear in both: the lawmakers vote on it, and then the President or an office puts it into practice. In **“Congress, in the House or the Senate”** the last decision is a vote by lawmakers. In **“The President or a federal agency”** it is made by the President or by an office that carries out laws: a rule, an inspection, an order, a refusal to sign. A signature on a law the lawmakers passed does not count as a decision of its own, so a signed law stays with **“Congress, in the House or the Senate”**. Does the story end on a vote by lawmakers, or on something the President or an office decides or does? If a law is in the story, was it already passed, with the story now about what is done with it?
+  - If you chose **The President or a federal agency**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both belong to the government of the whole country, and one law can appear in both: the lawmakers vote on it, and then the President or an office puts it into practice. In **“Congress, in the House or the Senate”** the last decision is a vote by lawmakers. In **“The President or a federal agency”** it is made by the President or by an office that carries out laws: a rule, an inspection, an order, a refusal to sign. A signature on a law the lawmakers passed does not count as a decision of its own, so a signed law stays with **“Congress, in the House or the Senate”**. Does the story end on a vote by lawmakers, or on something the President or an office decides or does? If a law is in the story, was it already passed, with the story now about what is done with it?
   - If you chose **A judge, in any court**: the “why not” line above. Then the lines from the card that compared the two: Both can be about one law, and both can be described with the same words: a trial, a charge, a decision, a vote on whether someone is guilty. In **“Congress, in the House or the Senate”** the deciders are lawmakers, who vote. In **“A judge, in any court”** the decider is a judge, who rules, or who has been asked to. A trial held in the Senate is a vote by senators, so it stays with **“Congress, in the House or the Senate”**. Who casts the deciding votes, or gives the ruling: lawmakers in the House or the Senate, or a judge?
-  - If you chose **A state, city or county government**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, lawmakers vote on a bill, and they can vote on the same sort of matter, such as a tax. In **“Congress, in the House or the Senate”** the lawmakers are the House and the Senate, and what they decide is for the whole country. In **“A state, city or county government”** the lawmakers belong to one state, or the deciders are the council of a city, a town or a county, and what they decide is for that place alone. Do the lawmakers in the case make rules for the whole country, or for one state, city, town or county?
-- This case may have brought back *The broken heater*, which was **“A judge, in any court”**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose **A state, city or county government**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, lawmakers vote on a bill, and they can vote on the same sort of matter, such as a tax. In **“Congress, in the House or the Senate”** the lawmakers are the House and the Senate, and what they decide is for the whole country. In **“A state, city or county government”** the lawmakers belong to one state, or the deciders are the council of a city, a town or a county, and what they decide is for that place alone. Do the lawmakers in the case make rules for the whole country, or for one state, city, town or county?
+- This case may have brought back *The broken heater*, which was **“A judge, in any court”**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If the man had been charged with a crime in an ordinary court, and the case ended with a judge ruling on it, the answer would be **“A judge, in any court”**.
 - Taught on: “The lawmakers of the whole country” (one tap opens the card).
 
@@ -1907,10 +1907,10 @@ The question is shown with all four of its answers from the key, in the key’s 
 - If you are right: “Right: **A judge, in any court.**” The case ends with a request to a judge: “has asked a judge to decide whether the town may do that”. The town’s rule is how the matter reached the judge, and the town is named first, but the town is not the one being asked.
   - Why not **“A state, city or county government”**: A town made the rule, and the story opens on the town. But the last decision the case asks for is a judge’s.
 - If you miss: “The answer is **A judge, in any court.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **Congress, in the House or the Senate**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about one law, and both can be described with the same words: a trial, a charge, a decision, a vote on whether someone is guilty. In **“Congress, in the House or the Senate”** the deciders are lawmakers, who vote. In **“A judge, in any court”** the decider is a judge, who rules, or who has been asked to. A trial held in the Senate is a vote by senators, so it stays with **“Congress, in the House or the Senate”**. Who casts the deciding votes, or gives the ruling: lawmakers in the House or the Senate, or a judge?
-  - If you chose **The President or a federal agency**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about one rule: an office or the President makes it, and someone then takes it to a judge. In **“The President or a federal agency”** the story ends with the President or an office deciding. In **“A judge, in any court”** it ends with a judge deciding, or with someone asking a judge to, even when the rule the judge is asked about came from an office. What the office did earlier is how the matter reached the judge. Where does the story stop: on a decision by the President or an office, or on a judge deciding, or on someone asking a judge to decide?
+  - If you chose **Congress, in the House or the Senate**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about one law, and both can be described with the same words: a trial, a charge, a decision, a vote on whether someone is guilty. In **“Congress, in the House or the Senate”** the deciders are lawmakers, who vote. In **“A judge, in any court”** the decider is a judge, who rules, or who has been asked to. A trial held in the Senate is a vote by senators, so it stays with **“Congress, in the House or the Senate”**. Who casts the deciding votes, or gives the ruling: lawmakers in the House or the Senate, or a judge?
+  - If you chose **The President or a federal agency**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about one rule: an office or the President makes it, and someone then takes it to a judge. In **“The President or a federal agency”** the story ends with the President or an office deciding. In **“A judge, in any court”** it ends with a judge deciding, or with someone asking a judge to, even when the rule the judge is asked about came from an office. What the office did earlier is how the matter reached the judge. Where does the story stop: on a decision by the President or an office, or on a judge deciding, or on someone asking a judge to decide?
   - If you chose **A state, city or county government**: the “why not” line above. Then the lines from the card that compared the two: Both can be about a local matter: a ticket, a fence, a rule about a street. A judge of a state’s court and a city council can both be in one story. In **“A judge, in any court”** the last decision is a judge’s, in whatever court, and a judge in a state’s own court is still a judge. In **“A state, city or county government”** it is made by the lawmakers, the governor or the offices of a state, or by a city, a town or a county. A state’s court does not turn a case into the state’s decision. Is the last decision made by a judge, whatever the court? Or is it made by a state, a city, a town or a county, acting as a government?
-- This case may have brought back *The market square*, which was **“A state, city or county government”**. When a likeness and the key disagree, go by the words that answer the key’s question.
+- This case may have brought back *The market square*, which was **“A state, city or county government”**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If the case ended with the town council voting to change the rule, the answer would be **“A state, city or county government”**.
 - Taught on: “A judge, deciding a case someone brings” (one tap opens the card).
 
@@ -1931,9 +1931,9 @@ The question is shown with all four of its answers from the key, in the key’s 
   - Why not **“The President or a federal agency”**: The President chose her, and she spent the week dealing with another country. Both pull toward the President. But the case ends with the Senate being asked to decide.
 - If you miss: “The answer is **Congress, in the House or the Senate.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **The President or a federal agency**: the “why not” line above. Then the lines from the card that compared the two: Both belong to the government of the whole country, and one law can appear in both: the lawmakers vote on it, and then the President or an office puts it into practice. In **“Congress, in the House or the Senate”** the last decision is a vote by lawmakers. In **“The President or a federal agency”** it is made by the President or by an office that carries out laws: a rule, an inspection, an order, a refusal to sign. A signature on a law the lawmakers passed does not count as a decision of its own, so a signed law stays with **“Congress, in the House or the Senate”**. Does the story end on a vote by lawmakers, or on something the President or an office decides or does? If a law is in the story, was it already passed, with the story now about what is done with it?
-  - If you chose **A judge, in any court**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about one law, and both can be described with the same words: a trial, a charge, a decision, a vote on whether someone is guilty. In **“Congress, in the House or the Senate”** the deciders are lawmakers, who vote. In **“A judge, in any court”** the decider is a judge, who rules, or who has been asked to. A trial held in the Senate is a vote by senators, so it stays with **“Congress, in the House or the Senate”**. Who casts the deciding votes, or gives the ruling: lawmakers in the House or the Senate, or a judge?
-  - If you chose **A state, city or county government**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, lawmakers vote on a bill, and they can vote on the same sort of matter, such as a tax. In **“Congress, in the House or the Senate”** the lawmakers are the House and the Senate, and what they decide is for the whole country. In **“A state, city or county government”** the lawmakers belong to one state, or the deciders are the council of a city, a town or a county, and what they decide is for that place alone. Do the lawmakers in the case make rules for the whole country, or for one state, city, town or county?
-- This case may have brought back *The escort*, which was **“The President or a federal agency”**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose **A judge, in any court**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about one law, and both can be described with the same words: a trial, a charge, a decision, a vote on whether someone is guilty. In **“Congress, in the House or the Senate”** the deciders are lawmakers, who vote. In **“A judge, in any court”** the decider is a judge, who rules, or who has been asked to. A trial held in the Senate is a vote by senators, so it stays with **“Congress, in the House or the Senate”**. Who casts the deciding votes, or gives the ruling: lawmakers in the House or the Senate, or a judge?
+  - If you chose **A state, city or county government**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, lawmakers vote on a bill, and they can vote on the same sort of matter, such as a tax. In **“Congress, in the House or the Senate”** the lawmakers are the House and the Senate, and what they decide is for the whole country. In **“A state, city or county government”** the lawmakers belong to one state, or the deciders are the council of a city, a town or a county, and what they decide is for that place alone. Do the lawmakers in the case make rules for the whole country, or for one state, city, town or county?
+- This case may have brought back *The escort*, which was **“The President or a federal agency”**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If the case ended with the President meeting Brennia’s leaders in person, and said nothing about a vote, the last decision would be the President’s, and the answer would be **“The President or a federal agency”**.
 - Taught on: “The lawmakers of the whole country” (one tap opens the card).
 
@@ -1954,9 +1954,9 @@ The question is shown with all four of its answers from the key, in the key’s 
   - Why not **“Congress, in the House or the Senate”**: Both chambers voted, and votes are the lawmakers’ work. But the votes are over, and the case ends with the President’s refusal, which is a decision of her own.
 - If you miss: “The answer is **The President or a federal agency.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **Congress, in the House or the Senate**: the “why not” line above. Then the lines from the card that compared the two: Both belong to the government of the whole country, and one law can appear in both: the lawmakers vote on it, and then the President or an office puts it into practice. In **“Congress, in the House or the Senate”** the last decision is a vote by lawmakers. In **“The President or a federal agency”** it is made by the President or by an office that carries out laws: a rule, an inspection, an order, a refusal to sign. A signature on a law the lawmakers passed does not count as a decision of its own, so a signed law stays with **“Congress, in the House or the Senate”**. Does the story end on a vote by lawmakers, or on something the President or an office decides or does? If a law is in the story, was it already passed, with the story now about what is done with it?
-  - If you chose **A judge, in any court**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about one rule: an office or the President makes it, and someone then takes it to a judge. In **“The President or a federal agency”** the story ends with the President or an office deciding. In **“A judge, in any court”** it ends with a judge deciding, or with someone asking a judge to, even when the rule the judge is asked about came from an office. What the office did earlier is how the matter reached the judge. Where does the story stop: on a decision by the President or an office, or on a judge deciding, or on someone asking a judge to decide?
-  - If you chose **A state, city or county government**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can be offices that inspect, license or enforce, and the work an inspector does can be exactly the same in each. In **“The President or a federal agency”** the office belongs to the government of the whole country, or the decision is the President’s. In **“A state, city or county government”** the office belongs to one state, or to a city, a town or a county. What the office does can be the same in both. Whose office it is separates them. Whose government does the office or the official belong to: the whole country’s, or one state’s, or a city’s, a town’s or a county’s?
-- This case may have brought back *The bicycle-parts tax*, which was **“Congress, in the House or the Senate”**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose **A judge, in any court**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about one rule: an office or the President makes it, and someone then takes it to a judge. In **“The President or a federal agency”** the story ends with the President or an office deciding. In **“A judge, in any court”** it ends with a judge deciding, or with someone asking a judge to, even when the rule the judge is asked about came from an office. What the office did earlier is how the matter reached the judge. Where does the story stop: on a decision by the President or an office, or on a judge deciding, or on someone asking a judge to decide?
+  - If you chose **A state, city or county government**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be offices that inspect, license or enforce, and the work an inspector does can be exactly the same in each. In **“The President or a federal agency”** the office belongs to the government of the whole country, or the decision is the President’s. In **“A state, city or county government”** the office belongs to one state, or to a city, a town or a county. What the office does can be the same in both. Whose office it is separates them. Whose government does the office or the official belong to: the whole country’s, or one state’s, or a city’s, a town’s or a county’s?
+- This case may have brought back *The bicycle-parts tax*, which was **“Congress, in the House or the Senate”**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If the case went on to say that both chambers had voted again to put the bill into law over her objections, the last decision would be the lawmakers’, and the answer would be **“Congress, in the House or the Senate”**.
 - Taught on: “The President, and the offices that carry out the laws of the whole country” (one tap opens the card).
 
@@ -1977,9 +1977,9 @@ The question is shown with all four of its answers from the key, in the key’s 
   - Why not **“Congress, in the House or the Senate”**: The President signed something, and a signature can bring back a law. But no bill was passed by the House and the Senate here. The signed paper is the President’s own order.
 - If you miss: “The answer is **The President or a federal agency.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **Congress, in the House or the Senate**: the “why not” line above. Then the lines from the card that compared the two: Both belong to the government of the whole country, and one law can appear in both: the lawmakers vote on it, and then the President or an office puts it into practice. In **“Congress, in the House or the Senate”** the last decision is a vote by lawmakers. In **“The President or a federal agency”** it is made by the President or by an office that carries out laws: a rule, an inspection, an order, a refusal to sign. A signature on a law the lawmakers passed does not count as a decision of its own, so a signed law stays with **“Congress, in the House or the Senate”**. Does the story end on a vote by lawmakers, or on something the President or an office decides or does? If a law is in the story, was it already passed, with the story now about what is done with it?
-  - If you chose **A judge, in any court**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about one rule: an office or the President makes it, and someone then takes it to a judge. In **“The President or a federal agency”** the story ends with the President or an office deciding. In **“A judge, in any court”** it ends with a judge deciding, or with someone asking a judge to, even when the rule the judge is asked about came from an office. What the office did earlier is how the matter reached the judge. Where does the story stop: on a decision by the President or an office, or on a judge deciding, or on someone asking a judge to decide?
-  - If you chose **A state, city or county government**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can be offices that inspect, license or enforce, and the work an inspector does can be exactly the same in each. In **“The President or a federal agency”** the office belongs to the government of the whole country, or the decision is the President’s. In **“A state, city or county government”** the office belongs to one state, or to a city, a town or a county. What the office does can be the same in both. Whose office it is separates them. Whose government does the office or the official belong to: the whole country’s, or one state’s, or a city’s, a town’s or a county’s?
-- This case may have brought back *The signed park law*, which was **“Congress, in the House or the Senate”**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose **A judge, in any court**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about one rule: an office or the President makes it, and someone then takes it to a judge. In **“The President or a federal agency”** the story ends with the President or an office deciding. In **“A judge, in any court”** it ends with a judge deciding, or with someone asking a judge to, even when the rule the judge is asked about came from an office. What the office did earlier is how the matter reached the judge. Where does the story stop: on a decision by the President or an office, or on a judge deciding, or on someone asking a judge to decide?
+  - If you chose **A state, city or county government**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be offices that inspect, license or enforce, and the work an inspector does can be exactly the same in each. In **“The President or a federal agency”** the office belongs to the government of the whole country, or the decision is the President’s. In **“A state, city or county government”** the office belongs to one state, or to a city, a town or a county. What the office does can be the same in both. Whose office it is separates them. Whose government does the office or the official belong to: the whole country’s, or one state’s, or a city’s, a town’s or a county’s?
+- This case may have brought back *The signed park law*, which was **“Congress, in the House or the Senate”**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If the case said the House and the Senate had passed a bill on answering letters, and the President signed it, the last decision would be the lawmakers’, and the answer would be **“Congress, in the House or the Senate”**.
 - Taught on: “The President, and the offices that carry out the laws of the whole country” (one tap opens the card).
 
@@ -1999,10 +1999,10 @@ The question is shown with all four of its answers from the key, in the key’s 
 - If you are right: “Right: **A state, city or county government.**” The last decision is a vote by a town’s council: “the Orrin town council voted to rewrite the rule with exact hours”. The judge’s ruling came earlier, and is how the matter reached the council.
   - Why not **“A judge, in any court”**: A judge ruled, and the ruling is the first thing in the story. But it is over. The case ends with the council deciding what the rule will say.
 - If you miss: “The answer is **A state, city or county government.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **Congress, in the House or the Senate**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, lawmakers vote on a bill, and they can vote on the same sort of matter, such as a tax. In **“Congress, in the House or the Senate”** the lawmakers are the House and the Senate, and what they decide is for the whole country. In **“A state, city or county government”** the lawmakers belong to one state, or the deciders are the council of a city, a town or a county, and what they decide is for that place alone. Do the lawmakers in the case make rules for the whole country, or for one state, city, town or county?
-  - If you chose **The President or a federal agency**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can be offices that inspect, license or enforce, and the work an inspector does can be exactly the same in each. In **“The President or a federal agency”** the office belongs to the government of the whole country, or the decision is the President’s. In **“A state, city or county government”** the office belongs to one state, or to a city, a town or a county. What the office does can be the same in both. Whose office it is separates them. Whose government does the office or the official belong to: the whole country’s, or one state’s, or a city’s, a town’s or a county’s?
+  - If you chose **Congress, in the House or the Senate**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, lawmakers vote on a bill, and they can vote on the same sort of matter, such as a tax. In **“Congress, in the House or the Senate”** the lawmakers are the House and the Senate, and what they decide is for the whole country. In **“A state, city or county government”** the lawmakers belong to one state, or the deciders are the council of a city, a town or a county, and what they decide is for that place alone. Do the lawmakers in the case make rules for the whole country, or for one state, city, town or county?
+  - If you chose **The President or a federal agency**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be offices that inspect, license or enforce, and the work an inspector does can be exactly the same in each. In **“The President or a federal agency”** the office belongs to the government of the whole country, or the decision is the President’s. In **“A state, city or county government”** the office belongs to one state, or to a city, a town or a county. What the office does can be the same in both. Whose office it is separates them. Whose government does the office or the official belong to: the whole country’s, or one state’s, or a city’s, a town’s or a county’s?
   - If you chose **A judge, in any court**: the “why not” line above. Then the lines from the card that compared the two: Both can be about a local matter: a ticket, a fence, a rule about a street. A judge of a state’s court and a city council can both be in one story. In **“A judge, in any court”** the last decision is a judge’s, in whatever court, and a judge in a state’s own court is still a judge. In **“A state, city or county government”** it is made by the lawmakers, the governor or the offices of a state, or by a city, a town or a county. A state’s court does not turn a case into the state’s decision. Is the last decision made by a judge, whatever the court? Or is it made by a state, a city, a town or a county, acting as a government?
-- This case may have brought back *The dog rule*, which was **“A judge, in any court”**. When a likeness and the key disagree, go by the words that answer the key’s question.
+- This case may have brought back *The dog rule*, which was **“A judge, in any court”**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If the case ended with the council asking a judge whether the new hours were allowed, the answer would be **“A judge, in any court”**.
 - Taught on: “The government of one state, or of a city, town or county in it” (one tap opens the card).
 
@@ -2039,8 +2039,8 @@ The question is shown with all four of its answers from the key, in the key’s 
 **Shown as soon as you answer**
 
 - The answer is: **Congress, in the House or the Senate.**
-- If you chose another answer, the line is built from the key, as for any other question.
-- The fault: The claim counts the signature as the decision. A signature on a law that the House and the Senate have already passed does not change what the law says: the votes had settled that. The key does not count a signature as a decision of its own.
+- If you chose another answer, the line is built from the answers’ own wording, as for any other question.
+- The fault: The claim counts the signature as the decision. A signature on a law that the House and the Senate have already passed does not change what the law says: the votes had settled that. So a signature is not a decision of its own.
 - The claim, put right (always the last thing shown): The House and the Senate passed the school-meals law, and the President signed it. The last decision is the lawmakers’ vote, so the answer is **“Congress, in the House or the Senate”**. The President would be the answer only if the case ended with a refusal to sign.
 
 **Drill item 36 of 39**
@@ -2057,7 +2057,7 @@ The question is shown with all four of its answers from the key, in the key’s 
 **Shown as soon as you answer**
 
 - The answer is: **A judge, in any court.**
-- If you chose another answer, the line is built from the key, as for any other question.
+- If you chose another answer, the line is built from the answers’ own wording, as for any other question.
 - The fault: The claim takes the first part of government the story names. The question asks about the last decision, or the one the case asks for. The office’s rule came first, and it is how the matter reached the judge.
 - The claim, put right (always the last thing shown): A federal office made a rule, and then a group asked a judge to block it. The case ends by asking a judge, so the answer is **“A judge, in any court”**.
 
@@ -2075,7 +2075,7 @@ The question is shown with all four of its answers from the key, in the key’s 
 **Shown as soon as you answer**
 
 - The answer is: **Congress, in the House or the Senate.**
-- If you chose another answer, the line is built from the key, as for any other question.
+- If you chose another answer, the line is built from the answers’ own wording, as for any other question.
 - The fault: The claim sees the word trial and sends the case to a court. But a trial of an official in the Senate is decided by the senators, who vote at the end. It is the lawmakers’ decision.
 - The claim, put right (always the last thing shown): The Senate is holding a trial, and the senators will vote at the end. The last decision is a vote in the Senate, so the answer is **“Congress, in the House or the Senate”**.
 
@@ -2111,7 +2111,7 @@ The question is shown with all four of its answers from the key, in the key’s 
 **Shown as soon as you answer**
 
 - The answer is: **A judge, in any court.**
-- If you chose another answer, the line is built from the key, as for any other question.
+- If you chose another answer, the line is built from the answers’ own wording, as for any other question.
 - The fault: The claim treats a state’s court as the state’s government. A judge in a state’s court is still a judge. The judge made the decision, and the state’s lawmakers, governor and offices did not.
 - The claim, put right (always the last thing shown): A judge in the state’s court heard the case and ruled. The last decision is made by a judge, and it does not matter which court, so the answer is **“A judge, in any court”**.
 
@@ -2119,13 +2119,13 @@ The question is shown with all four of its answers from the key, in the key’s 
 
 ### 37. What to carry away
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 37 of 38*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 37 of 38*
 
 [reviewers only: card kind `recap`, id `recap-kind`]
 
-You have now answered the key’s first question on your own. This card puts the unit in one place, in the key’s words.
+You have now answered the first question on your own. This card puts the unit in one place.
 
-**The key for this unit, in its own words**
+**This unit’s questions and answers**
 
 Who makes the last decision in the case, or is asked to make it?
 - Congress, in the House or the Senate
@@ -2136,13 +2136,13 @@ Who makes the last decision in the case, or is asked to make it?
 **For each name: what you must be able to point to, and the question to ask when you spot it**
 
 - **“Congress, in the House or the Senate”**: a vote in the House, the Senate or both, as the last decision in the case or the one it asks for.
-  - Ask: "Is the last thing in the story a vote by lawmakers, or a request that they vote?" If it is, and the lawmakers sit in the House or the Senate, the key’s answer is **“Congress, in the House or the Senate”**.
+  - Ask: "Is the last thing in the story a vote by lawmakers, or a request that they vote?" If it is, and the lawmakers sit in the House or the Senate, the answer is **“Congress, in the House or the Senate”**.
 - **“The President or a federal agency”**: the President, or a federal agency, making the last decision in the case or being asked to make it.
-  - Ask: "Who made this decision: the President, or an office? And is the office one of the whole country, or of a state, a city or a county?" If it is the President, or a federal office, the key’s answer is **“The President or a federal agency”**.
+  - Ask: "Who made this decision: the President, or an office? And is the office one of the whole country, or of a state, a city or a county?" If it is the President, or a federal office, the answer is **“The President or a federal agency”**.
 - **“A judge, in any court”**: a judge deciding, or someone asking a judge to decide, as the last thing in the case.
-  - Ask: "Has a judge decided this, or has someone asked a judge to?" If so, in any court, the key’s answer is **“A judge, in any court”**.
+  - Ask: "Has a judge decided this, or has someone asked a judge to?" If so, in any court, the answer is **“A judge, in any court”**.
 - **“A state, city or county government”**: a state’s lawmakers, governor or agencies, or a city, town or county, making the last decision in the case or being asked to make it.
-  - Ask: "Whose government made this decision: one state’s, or one city’s, town’s or county’s?" If it is, the key’s answer is **“A state, city or county government”**.
+  - Ask: "Whose government made this decision: one state’s, or one city’s, town’s or county’s?" If it is, the answer is **“A state, city or county government”**.
 
 **To carry away**
 
@@ -2152,11 +2152,11 @@ Who makes the last decision in the case, or is asked to make it?
 - A signature on a law that lawmakers passed leaves the case with **“Congress, in the House or the Senate”**. A refusal to sign is **“The President or a federal agency”**.
 - A trial held by the Senate is **“Congress, in the House or the Senate”**. A judge in a state’s court is **“A judge, in any court”**, not **“A state, city or county government”**.
 - The same work can be done by an office of the whole country or by a state’s own: whose office it is decides.
-- Every case in this subject starts with this question. Your answer to it is the first part of your route to a name.
+- Every case in this subject starts with this question. Your answer to it is the first of your answers on the way to a name.
 
 ### 38. Where would you meet this?
 
-*Unit One · rev 1 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 38 of 38*
+*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 38 of 38*
 
 [reviewers only: card kind `transfer`, id `transfer-kind`]
 
@@ -2183,7 +2183,7 @@ One line is enough. It is kept on this device only and is never marked.
 
 ## After the unit: what comes back on later days
 
-A name that is due returns as a case the learner has not seen, next to a case of the name they most often confuse it with. Each is asked the key’s first question, with the full feedback of the last case stage. These are the fresh cases held back for that purpose: three for each name, one for each scheduled return. The first return is about two days after the drill, the next about a week after that, the next about three and a half weeks later.
+A name that is due returns as a case the learner has not seen, next to a case of the name they most often confuse it with. Each is asked the first question, with the full feedback of the last case stage. These are the fresh cases held back for that purpose: three for each name, one for each scheduled return. The first return is about two days after the drill, the next about a week after that, the next about three and a half weeks later.
 
 **Return case 1 of 12**
 
@@ -2202,9 +2202,9 @@ A name that is due returns as a case the learner has not seen, next to a case of
   - Why not **“The President or a federal agency”**: The money goes to the postal service, an office of the government of the whole country, and offices can sound like the answer. But the case ends with the vote, and the office decides nothing in it.
 - If you miss: “The answer is **Congress, in the House or the Senate.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **The President or a federal agency**: the “why not” line above. Then the lines from the card that compared the two: Both belong to the government of the whole country, and one law can appear in both: the lawmakers vote on it, and then the President or an office puts it into practice. In **“Congress, in the House or the Senate”** the last decision is a vote by lawmakers. In **“The President or a federal agency”** it is made by the President or by an office that carries out laws: a rule, an inspection, an order, a refusal to sign. A signature on a law the lawmakers passed does not count as a decision of its own, so a signed law stays with **“Congress, in the House or the Senate”**. Does the story end on a vote by lawmakers, or on something the President or an office decides or does? If a law is in the story, was it already passed, with the story now about what is done with it?
-  - If you chose **A judge, in any court**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about one law, and both can be described with the same words: a trial, a charge, a decision, a vote on whether someone is guilty. In **“Congress, in the House or the Senate”** the deciders are lawmakers, who vote. In **“A judge, in any court”** the decider is a judge, who rules, or who has been asked to. A trial held in the Senate is a vote by senators, so it stays with **“Congress, in the House or the Senate”**. Who casts the deciding votes, or gives the ruling: lawmakers in the House or the Senate, or a judge?
-  - If you chose **A state, city or county government**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, lawmakers vote on a bill, and they can vote on the same sort of matter, such as a tax. In **“Congress, in the House or the Senate”** the lawmakers are the House and the Senate, and what they decide is for the whole country. In **“A state, city or county government”** the lawmakers belong to one state, or the deciders are the council of a city, a town or a county, and what they decide is for that place alone. Do the lawmakers in the case make rules for the whole country, or for one state, city, town or county?
-- What would make it a different name: If the case ended with the postal service deciding which routes to close, the answer would be **“The President or a federal agency”**.
+  - If you chose **A judge, in any court**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about one law, and both can be described with the same words: a trial, a charge, a decision, a vote on whether someone is guilty. In **“Congress, in the House or the Senate”** the deciders are lawmakers, who vote. In **“A judge, in any court”** the decider is a judge, who rules, or who has been asked to. A trial held in the Senate is a vote by senators, so it stays with **“Congress, in the House or the Senate”**. Who casts the deciding votes, or gives the ruling: lawmakers in the House or the Senate, or a judge?
+  - If you chose **A state, city or county government**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, lawmakers vote on a bill, and they can vote on the same sort of matter, such as a tax. In **“Congress, in the House or the Senate”** the lawmakers are the House and the Senate, and what they decide is for the whole country. In **“A state, city or county government”** the lawmakers belong to one state, or the deciders are the council of a city, a town or a county, and what they decide is for that place alone. Do the lawmakers in the case make rules for the whole country, or for one state, city, town or county?
+- What would make it a different name: If the case ended with the postal service deciding which rural deliveries to close, the answer would be **“The President or a federal agency”**.
 - Taught on: “The lawmakers of the whole country” (one tap opens the card).
 
 **Return case 2 of 12**
@@ -2223,8 +2223,8 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **Congress, in the House or the Senate.**” The last decision is a vote in the House, with a second vote in the Senate still to come: “the House voted to stop making it, and the Senate will vote next week”. Both are lawmakers of the whole country.
   - Why not **“A state, city or county government”**: A coin is used in shops in every town, and that can pull toward a town or a state. But the vote is in the House and the Senate, and the coin is the whole country’s.
 - If you miss: “The answer is **Congress, in the House or the Senate.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **The President or a federal agency**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both belong to the government of the whole country, and one law can appear in both: the lawmakers vote on it, and then the President or an office puts it into practice. In **“Congress, in the House or the Senate”** the last decision is a vote by lawmakers. In **“The President or a federal agency”** it is made by the President or by an office that carries out laws: a rule, an inspection, an order, a refusal to sign. A signature on a law the lawmakers passed does not count as a decision of its own, so a signed law stays with **“Congress, in the House or the Senate”**. Does the story end on a vote by lawmakers, or on something the President or an office decides or does? If a law is in the story, was it already passed, with the story now about what is done with it?
-  - If you chose **A judge, in any court**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about one law, and both can be described with the same words: a trial, a charge, a decision, a vote on whether someone is guilty. In **“Congress, in the House or the Senate”** the deciders are lawmakers, who vote. In **“A judge, in any court”** the decider is a judge, who rules, or who has been asked to. A trial held in the Senate is a vote by senators, so it stays with **“Congress, in the House or the Senate”**. Who casts the deciding votes, or gives the ruling: lawmakers in the House or the Senate, or a judge?
+  - If you chose **The President or a federal agency**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both belong to the government of the whole country, and one law can appear in both: the lawmakers vote on it, and then the President or an office puts it into practice. In **“Congress, in the House or the Senate”** the last decision is a vote by lawmakers. In **“The President or a federal agency”** it is made by the President or by an office that carries out laws: a rule, an inspection, an order, a refusal to sign. A signature on a law the lawmakers passed does not count as a decision of its own, so a signed law stays with **“Congress, in the House or the Senate”**. Does the story end on a vote by lawmakers, or on something the President or an office decides or does? If a law is in the story, was it already passed, with the story now about what is done with it?
+  - If you chose **A judge, in any court**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about one law, and both can be described with the same words: a trial, a charge, a decision, a vote on whether someone is guilty. In **“Congress, in the House or the Senate”** the deciders are lawmakers, who vote. In **“A judge, in any court”** the decider is a judge, who rules, or who has been asked to. A trial held in the Senate is a vote by senators, so it stays with **“Congress, in the House or the Senate”**. Who casts the deciding votes, or gives the ruling: lawmakers in the House or the Senate, or a judge?
   - If you chose **A state, city or county government**: the “why not” line above. Then the lines from the card that compared the two: In both, lawmakers vote on a bill, and they can vote on the same sort of matter, such as a tax. In **“Congress, in the House or the Senate”** the lawmakers are the House and the Senate, and what they decide is for the whole country. In **“A state, city or county government”** the lawmakers belong to one state, or the deciders are the council of a city, a town or a county, and what they decide is for that place alone. Do the lawmakers in the case make rules for the whole country, or for one state, city, town or county?
 - What would make it a different name: If the case ended with a state’s legislature voting on a coin for that state alone, the answer would be **“A state, city or county government”**.
 - Taught on: “The lawmakers of the whole country” (one tap opens the card).
@@ -2246,9 +2246,9 @@ A name that is due returns as a case the learner has not seen, next to a case of
   - Why not **“The President or a federal agency”**: An office that handles citizenship is named, and offices belong to the second kind. But the office is waiting, and the case ends with the Senate’s vote.
 - If you miss: “The answer is **Congress, in the House or the Senate.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **The President or a federal agency**: the “why not” line above. Then the lines from the card that compared the two: Both belong to the government of the whole country, and one law can appear in both: the lawmakers vote on it, and then the President or an office puts it into practice. In **“Congress, in the House or the Senate”** the last decision is a vote by lawmakers. In **“The President or a federal agency”** it is made by the President or by an office that carries out laws: a rule, an inspection, an order, a refusal to sign. A signature on a law the lawmakers passed does not count as a decision of its own, so a signed law stays with **“Congress, in the House or the Senate”**. Does the story end on a vote by lawmakers, or on something the President or an office decides or does? If a law is in the story, was it already passed, with the story now about what is done with it?
-  - If you chose **A judge, in any court**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about one law, and both can be described with the same words: a trial, a charge, a decision, a vote on whether someone is guilty. In **“Congress, in the House or the Senate”** the deciders are lawmakers, who vote. In **“A judge, in any court”** the decider is a judge, who rules, or who has been asked to. A trial held in the Senate is a vote by senators, so it stays with **“Congress, in the House or the Senate”**. Who casts the deciding votes, or gives the ruling: lawmakers in the House or the Senate, or a judge?
-  - If you chose **A state, city or county government**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, lawmakers vote on a bill, and they can vote on the same sort of matter, such as a tax. In **“Congress, in the House or the Senate”** the lawmakers are the House and the Senate, and what they decide is for the whole country. In **“A state, city or county government”** the lawmakers belong to one state, or the deciders are the council of a city, a town or a county, and what they decide is for that place alone. Do the lawmakers in the case make rules for the whole country, or for one state, city, town or county?
-- This case may have brought back *The seat belts*, which was **“The President or a federal agency”**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose **A judge, in any court**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about one law, and both can be described with the same words: a trial, a charge, a decision, a vote on whether someone is guilty. In **“Congress, in the House or the Senate”** the deciders are lawmakers, who vote. In **“A judge, in any court”** the decider is a judge, who rules, or who has been asked to. A trial held in the Senate is a vote by senators, so it stays with **“Congress, in the House or the Senate”**. Who casts the deciding votes, or gives the ruling: lawmakers in the House or the Senate, or a judge?
+  - If you chose **A state, city or county government**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, lawmakers vote on a bill, and they can vote on the same sort of matter, such as a tax. In **“Congress, in the House or the Senate”** the lawmakers are the House and the Senate, and what they decide is for the whole country. In **“A state, city or county government”** the lawmakers belong to one state, or the deciders are the council of a city, a town or a county, and what they decide is for that place alone. Do the lawmakers in the case make rules for the whole country, or for one state, city, town or county?
+- This case may have brought back *The seat belts*, which was **“The President or a federal agency”**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If the case ended with the immigration service publishing its new form, the answer would be **“The President or a federal agency”**.
 - Taught on: “The lawmakers of the whole country” (one tap opens the card).
 
@@ -2268,8 +2268,8 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **The President or a federal agency.**” The last decision is an office’s: “the agency ordered two of the bridges closed to trucks until repairs are made”. The inspectors’ tests came first, and the case ends with the order they led to.
   - Why not **“A state, city or county government”**: A bridge stands in a town or a state, and that can pull toward the state. But the office here belongs to the government of the whole country.
 - If you miss: “The answer is **The President or a federal agency.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **Congress, in the House or the Senate**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both belong to the government of the whole country, and one law can appear in both: the lawmakers vote on it, and then the President or an office puts it into practice. In **“Congress, in the House or the Senate”** the last decision is a vote by lawmakers. In **“The President or a federal agency”** it is made by the President or by an office that carries out laws: a rule, an inspection, an order, a refusal to sign. A signature on a law the lawmakers passed does not count as a decision of its own, so a signed law stays with **“Congress, in the House or the Senate”**. Does the story end on a vote by lawmakers, or on something the President or an office decides or does? If a law is in the story, was it already passed, with the story now about what is done with it?
-  - If you chose **A judge, in any court**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about one rule: an office or the President makes it, and someone then takes it to a judge. In **“The President or a federal agency”** the story ends with the President or an office deciding. In **“A judge, in any court”** it ends with a judge deciding, or with someone asking a judge to, even when the rule the judge is asked about came from an office. What the office did earlier is how the matter reached the judge. Where does the story stop: on a decision by the President or an office, or on a judge deciding, or on someone asking a judge to decide?
+  - If you chose **Congress, in the House or the Senate**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both belong to the government of the whole country, and one law can appear in both: the lawmakers vote on it, and then the President or an office puts it into practice. In **“Congress, in the House or the Senate”** the last decision is a vote by lawmakers. In **“The President or a federal agency”** it is made by the President or by an office that carries out laws: a rule, an inspection, an order, a refusal to sign. A signature on a law the lawmakers passed does not count as a decision of its own, so a signed law stays with **“Congress, in the House or the Senate”**. Does the story end on a vote by lawmakers, or on something the President or an office decides or does? If a law is in the story, was it already passed, with the story now about what is done with it?
+  - If you chose **A judge, in any court**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about one rule: an office or the President makes it, and someone then takes it to a judge. In **“The President or a federal agency”** the story ends with the President or an office deciding. In **“A judge, in any court”** it ends with a judge deciding, or with someone asking a judge to, even when the rule the judge is asked about came from an office. What the office did earlier is how the matter reached the judge. Where does the story stop: on a decision by the President or an office, or on a judge deciding, or on someone asking a judge to decide?
   - If you chose **A state, city or county government**: the “why not” line above. Then the lines from the card that compared the two: Both can be offices that inspect, license or enforce, and the work an inspector does can be exactly the same in each. In **“The President or a federal agency”** the office belongs to the government of the whole country, or the decision is the President’s. In **“A state, city or county government”** the office belongs to one state, or to a city, a town or a county. What the office does can be the same in both. Whose office it is separates them. Whose government does the office or the official belong to: the whole country’s, or one state’s, or a city’s, a town’s or a county’s?
 - What would make it a different name: If the case ended with the state’s own transport department closing the bridges, the answer would be **“A state, city or county government”**.
 - Taught on: “The President, and the offices that carry out the laws of the whole country” (one tap opens the card).
@@ -2291,8 +2291,8 @@ A name that is due returns as a case the learner has not seen, next to a case of
   - Why not **“Congress, in the House or the Senate”**: Agreements with other countries can be sent to the Senate, and that can pull toward Congress. But this case shows only a meeting and an agreement to keep talking. Nobody is asked to vote.
 - If you miss: “The answer is **The President or a federal agency.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **Congress, in the House or the Senate**: the “why not” line above. Then the lines from the card that compared the two: Both belong to the government of the whole country, and one law can appear in both: the lawmakers vote on it, and then the President or an office puts it into practice. In **“Congress, in the House or the Senate”** the last decision is a vote by lawmakers. In **“The President or a federal agency”** it is made by the President or by an office that carries out laws: a rule, an inspection, an order, a refusal to sign. A signature on a law the lawmakers passed does not count as a decision of its own, so a signed law stays with **“Congress, in the House or the Senate”**. Does the story end on a vote by lawmakers, or on something the President or an office decides or does? If a law is in the story, was it already passed, with the story now about what is done with it?
-  - If you chose **A judge, in any court**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about one rule: an office or the President makes it, and someone then takes it to a judge. In **“The President or a federal agency”** the story ends with the President or an office deciding. In **“A judge, in any court”** it ends with a judge deciding, or with someone asking a judge to, even when the rule the judge is asked about came from an office. What the office did earlier is how the matter reached the judge. Where does the story stop: on a decision by the President or an office, or on a judge deciding, or on someone asking a judge to decide?
-  - If you chose **A state, city or county government**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can be offices that inspect, license or enforce, and the work an inspector does can be exactly the same in each. In **“The President or a federal agency”** the office belongs to the government of the whole country, or the decision is the President’s. In **“A state, city or county government”** the office belongs to one state, or to a city, a town or a county. What the office does can be the same in both. Whose office it is separates them. Whose government does the office or the official belong to: the whole country’s, or one state’s, or a city’s, a town’s or a county’s?
+  - If you chose **A judge, in any court**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about one rule: an office or the President makes it, and someone then takes it to a judge. In **“The President or a federal agency”** the story ends with the President or an office deciding. In **“A judge, in any court”** it ends with a judge deciding, or with someone asking a judge to, even when the rule the judge is asked about came from an office. What the office did earlier is how the matter reached the judge. Where does the story stop: on a decision by the President or an office, or on a judge deciding, or on someone asking a judge to decide?
+  - If you chose **A state, city or county government**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be offices that inspect, license or enforce, and the work an inspector does can be exactly the same in each. In **“The President or a federal agency”** the office belongs to the government of the whole country, or the decision is the President’s. In **“A state, city or county government”** the office belongs to one state, or to a city, a town or a county. What the office does can be the same in both. Whose office it is separates them. Whose government does the office or the official belong to: the whole country’s, or one state’s, or a city’s, a town’s or a county’s?
 - What would make it a different name: If the case ended with the President sending a signed agreement to the Senate and asking it to vote, the answer would be **“Congress, in the House or the Senate”**.
 - Taught on: “The President, and the offices that carry out the laws of the whole country” (one tap opens the card).
 
@@ -2313,9 +2313,9 @@ A name that is due returns as a case the learner has not seen, next to a case of
   - Why not **“Congress, in the House or the Senate”**: A law is in the story, and laws come from the House and the Senate. But the votes are a year old, and the case ends with the office’s form.
 - If you miss: “The answer is **The President or a federal agency.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **Congress, in the House or the Senate**: the “why not” line above. Then the lines from the card that compared the two: Both belong to the government of the whole country, and one law can appear in both: the lawmakers vote on it, and then the President or an office puts it into practice. In **“Congress, in the House or the Senate”** the last decision is a vote by lawmakers. In **“The President or a federal agency”** it is made by the President or by an office that carries out laws: a rule, an inspection, an order, a refusal to sign. A signature on a law the lawmakers passed does not count as a decision of its own, so a signed law stays with **“Congress, in the House or the Senate”**. Does the story end on a vote by lawmakers, or on something the President or an office decides or does? If a law is in the story, was it already passed, with the story now about what is done with it?
-  - If you chose **A judge, in any court**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about one rule: an office or the President makes it, and someone then takes it to a judge. In **“The President or a federal agency”** the story ends with the President or an office deciding. In **“A judge, in any court”** it ends with a judge deciding, or with someone asking a judge to, even when the rule the judge is asked about came from an office. What the office did earlier is how the matter reached the judge. Where does the story stop: on a decision by the President or an office, or on a judge deciding, or on someone asking a judge to decide?
-  - If you chose **A state, city or county government**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can be offices that inspect, license or enforce, and the work an inspector does can be exactly the same in each. In **“The President or a federal agency”** the office belongs to the government of the whole country, or the decision is the President’s. In **“A state, city or county government”** the office belongs to one state, or to a city, a town or a county. What the office does can be the same in both. Whose office it is separates them. Whose government does the office or the official belong to: the whole country’s, or one state’s, or a city’s, a town’s or a county’s?
-- This case may have brought back *The bicycle-parts tax*, which was **“Congress, in the House or the Senate”**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose **A judge, in any court**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about one rule: an office or the President makes it, and someone then takes it to a judge. In **“The President or a federal agency”** the story ends with the President or an office deciding. In **“A judge, in any court”** it ends with a judge deciding, or with someone asking a judge to, even when the rule the judge is asked about came from an office. What the office did earlier is how the matter reached the judge. Where does the story stop: on a decision by the President or an office, or on a judge deciding, or on someone asking a judge to decide?
+  - If you chose **A state, city or county government**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be offices that inspect, license or enforce, and the work an inspector does can be exactly the same in each. In **“The President or a federal agency”** the office belongs to the government of the whole country, or the decision is the President’s. In **“A state, city or county government”** the office belongs to one state, or to a city, a town or a county. What the office does can be the same in both. Whose office it is separates them. Whose government does the office or the official belong to: the whole country’s, or one state’s, or a city’s, a town’s or a county’s?
+- This case may have brought back *The bicycle-parts tax*, which was **“Congress, in the House or the Senate”**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If the case ended with the House voting to change what the law requires, the answer would be **“Congress, in the House or the Senate”**.
 - Taught on: “The President, and the offices that carry out the laws of the whole country” (one tap opens the card).
 
@@ -2335,8 +2335,8 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **A judge, in any court.**” The last decision is a judge’s: “a judge heard them both and ruled that the driver must pay half”. The shopkeeper and the driver are the two sides of a quarrel.
   - Why not **“A state, city or county government”**: A broken window in a shop can sound like a matter for the town. But nobody is making a rule: a judge is settling a quarrel.
 - If you miss: “The answer is **A judge, in any court.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **Congress, in the House or the Senate**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about one law, and both can be described with the same words: a trial, a charge, a decision, a vote on whether someone is guilty. In **“Congress, in the House or the Senate”** the deciders are lawmakers, who vote. In **“A judge, in any court”** the decider is a judge, who rules, or who has been asked to. A trial held in the Senate is a vote by senators, so it stays with **“Congress, in the House or the Senate”**. Who casts the deciding votes, or gives the ruling: lawmakers in the House or the Senate, or a judge?
-  - If you chose **The President or a federal agency**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about one rule: an office or the President makes it, and someone then takes it to a judge. In **“The President or a federal agency”** the story ends with the President or an office deciding. In **“A judge, in any court”** it ends with a judge deciding, or with someone asking a judge to, even when the rule the judge is asked about came from an office. What the office did earlier is how the matter reached the judge. Where does the story stop: on a decision by the President or an office, or on a judge deciding, or on someone asking a judge to decide?
+  - If you chose **Congress, in the House or the Senate**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about one law, and both can be described with the same words: a trial, a charge, a decision, a vote on whether someone is guilty. In **“Congress, in the House or the Senate”** the deciders are lawmakers, who vote. In **“A judge, in any court”** the decider is a judge, who rules, or who has been asked to. A trial held in the Senate is a vote by senators, so it stays with **“Congress, in the House or the Senate”**. Who casts the deciding votes, or gives the ruling: lawmakers in the House or the Senate, or a judge?
+  - If you chose **The President or a federal agency**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about one rule: an office or the President makes it, and someone then takes it to a judge. In **“The President or a federal agency”** the story ends with the President or an office deciding. In **“A judge, in any court”** it ends with a judge deciding, or with someone asking a judge to, even when the rule the judge is asked about came from an office. What the office did earlier is how the matter reached the judge. Where does the story stop: on a decision by the President or an office, or on a judge deciding, or on someone asking a judge to decide?
   - If you chose **A state, city or county government**: the “why not” line above. Then the lines from the card that compared the two: Both can be about a local matter: a ticket, a fence, a rule about a street. A judge of a state’s court and a city council can both be in one story. In **“A judge, in any court”** the last decision is a judge’s, in whatever court, and a judge in a state’s own court is still a judge. In **“A state, city or county government”** it is made by the lawmakers, the governor or the offices of a state, or by a city, a town or a county. A state’s court does not turn a case into the state’s decision. Is the last decision made by a judge, whatever the court? Or is it made by a state, a city, a town or a county, acting as a government?
 - What would make it a different name: If the case ended with the town council voting on a rule about deliveries, the answer would be **“A state, city or county government”**.
 - Taught on: “A judge, deciding a case someone brings” (one tap opens the card).
@@ -2357,9 +2357,9 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **A judge, in any court.**” The case ends with a request: “has asked a judge to decide whether the firing broke the law”. The decision has been put to a judge, so it is the judge’s.
   - Why not **“The President or a federal agency”**: A firing at work can sound like a matter for an office that looks into complaints. But no office appears in the case. A lawyer has asked a judge.
 - If you miss: “The answer is **A judge, in any court.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **Congress, in the House or the Senate**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about one law, and both can be described with the same words: a trial, a charge, a decision, a vote on whether someone is guilty. In **“Congress, in the House or the Senate”** the deciders are lawmakers, who vote. In **“A judge, in any court”** the decider is a judge, who rules, or who has been asked to. A trial held in the Senate is a vote by senators, so it stays with **“Congress, in the House or the Senate”**. Who casts the deciding votes, or gives the ruling: lawmakers in the House or the Senate, or a judge?
+  - If you chose **Congress, in the House or the Senate**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about one law, and both can be described with the same words: a trial, a charge, a decision, a vote on whether someone is guilty. In **“Congress, in the House or the Senate”** the deciders are lawmakers, who vote. In **“A judge, in any court”** the decider is a judge, who rules, or who has been asked to. A trial held in the Senate is a vote by senators, so it stays with **“Congress, in the House or the Senate”**. Who casts the deciding votes, or gives the ruling: lawmakers in the House or the Senate, or a judge?
   - If you chose **The President or a federal agency**: the “why not” line above. Then the lines from the card that compared the two: Both can be about one rule: an office or the President makes it, and someone then takes it to a judge. In **“The President or a federal agency”** the story ends with the President or an office deciding. In **“A judge, in any court”** it ends with a judge deciding, or with someone asking a judge to, even when the rule the judge is asked about came from an office. What the office did earlier is how the matter reached the judge. Where does the story stop: on a decision by the President or an office, or on a judge deciding, or on someone asking a judge to decide?
-  - If you chose **A state, city or county government**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a local matter: a ticket, a fence, a rule about a street. A judge of a state’s court and a city council can both be in one story. In **“A judge, in any court”** the last decision is a judge’s, in whatever court, and a judge in a state’s own court is still a judge. In **“A state, city or county government”** it is made by the lawmakers, the governor or the offices of a state, or by a city, a town or a county. A state’s court does not turn a case into the state’s decision. Is the last decision made by a judge, whatever the court? Or is it made by a state, a city, a town or a county, acting as a government?
+  - If you chose **A state, city or county government**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a local matter: a ticket, a fence, a rule about a street. A judge of a state’s court and a city council can both be in one story. In **“A judge, in any court”** the last decision is a judge’s, in whatever court, and a judge in a state’s own court is still a judge. In **“A state, city or county government”** it is made by the lawmakers, the governor or the offices of a state, or by a city, a town or a county. A state’s court does not turn a case into the state’s decision. Is the last decision made by a judge, whatever the court? Or is it made by a state, a city, a town or a county, acting as a government?
 - What would make it a different name: If the case ended with a federal office announcing that it would look into the firing, the answer would be **“The President or a federal agency”**.
 - Taught on: “A judge, deciding a case someone brings” (one tap opens the card).
 
@@ -2379,10 +2379,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **A judge, in any court.**” The case ends with a request to a judge: “asked a judge on Tuesday to strike the rule down”. The city’s rule is how the matter reached the judge, and the city is named first, but the city is not the one being asked.
   - Why not **“A state, city or county government”**: A city made the rule, and the story opens with it. But the last decision the case asks for is a judge’s.
 - If you miss: “The answer is **A judge, in any court.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **Congress, in the House or the Senate**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about one law, and both can be described with the same words: a trial, a charge, a decision, a vote on whether someone is guilty. In **“Congress, in the House or the Senate”** the deciders are lawmakers, who vote. In **“A judge, in any court”** the decider is a judge, who rules, or who has been asked to. A trial held in the Senate is a vote by senators, so it stays with **“Congress, in the House or the Senate”**. Who casts the deciding votes, or gives the ruling: lawmakers in the House or the Senate, or a judge?
-  - If you chose **The President or a federal agency**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about one rule: an office or the President makes it, and someone then takes it to a judge. In **“The President or a federal agency”** the story ends with the President or an office deciding. In **“A judge, in any court”** it ends with a judge deciding, or with someone asking a judge to, even when the rule the judge is asked about came from an office. What the office did earlier is how the matter reached the judge. Where does the story stop: on a decision by the President or an office, or on a judge deciding, or on someone asking a judge to decide?
+  - If you chose **Congress, in the House or the Senate**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about one law, and both can be described with the same words: a trial, a charge, a decision, a vote on whether someone is guilty. In **“Congress, in the House or the Senate”** the deciders are lawmakers, who vote. In **“A judge, in any court”** the decider is a judge, who rules, or who has been asked to. A trial held in the Senate is a vote by senators, so it stays with **“Congress, in the House or the Senate”**. Who casts the deciding votes, or gives the ruling: lawmakers in the House or the Senate, or a judge?
+  - If you chose **The President or a federal agency**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about one rule: an office or the President makes it, and someone then takes it to a judge. In **“The President or a federal agency”** the story ends with the President or an office deciding. In **“A judge, in any court”** it ends with a judge deciding, or with someone asking a judge to, even when the rule the judge is asked about came from an office. What the office did earlier is how the matter reached the judge. Where does the story stop: on a decision by the President or an office, or on a judge deciding, or on someone asking a judge to decide?
   - If you chose **A state, city or county government**: the “why not” line above. Then the lines from the card that compared the two: Both can be about a local matter: a ticket, a fence, a rule about a street. A judge of a state’s court and a city council can both be in one story. In **“A judge, in any court”** the last decision is a judge’s, in whatever court, and a judge in a state’s own court is still a judge. In **“A state, city or county government”** it is made by the lawmakers, the governor or the offices of a state, or by a city, a town or a county. A state’s court does not turn a case into the state’s decision. Is the last decision made by a judge, whatever the court? Or is it made by a state, a city, a town or a county, acting as a government?
-- This case may have brought back *The market square*, which was **“A state, city or county government”**. When a likeness and the key disagree, go by the words that answer the key’s question.
+- This case may have brought back *The market square*, which was **“A state, city or county government”**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If the case ended with the city council voting to lift the ban, the answer would be **“A state, city or county government”**.
 - Taught on: “A judge, deciding a case someone brings” (one tap opens the card).
 
@@ -2403,8 +2403,8 @@ A name that is due returns as a case the learner has not seen, next to a case of
   - Why not **“Congress, in the House or the Senate”**: A vote on a speed limit is the kind of vote lawmakers take. But these lawmakers belong to one state and decide for its roads alone.
 - If you miss: “The answer is **A state, city or county government.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **Congress, in the House or the Senate**: the “why not” line above. Then the lines from the card that compared the two: In both, lawmakers vote on a bill, and they can vote on the same sort of matter, such as a tax. In **“Congress, in the House or the Senate”** the lawmakers are the House and the Senate, and what they decide is for the whole country. In **“A state, city or county government”** the lawmakers belong to one state, or the deciders are the council of a city, a town or a county, and what they decide is for that place alone. Do the lawmakers in the case make rules for the whole country, or for one state, city, town or county?
-  - If you chose **The President or a federal agency**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can be offices that inspect, license or enforce, and the work an inspector does can be exactly the same in each. In **“The President or a federal agency”** the office belongs to the government of the whole country, or the decision is the President’s. In **“A state, city or county government”** the office belongs to one state, or to a city, a town or a county. What the office does can be the same in both. Whose office it is separates them. Whose government does the office or the official belong to: the whole country’s, or one state’s, or a city’s, a town’s or a county’s?
-  - If you chose **A judge, in any court**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a local matter: a ticket, a fence, a rule about a street. A judge of a state’s court and a city council can both be in one story. In **“A judge, in any court”** the last decision is a judge’s, in whatever court, and a judge in a state’s own court is still a judge. In **“A state, city or county government”** it is made by the lawmakers, the governor or the offices of a state, or by a city, a town or a county. A state’s court does not turn a case into the state’s decision. Is the last decision made by a judge, whatever the court? Or is it made by a state, a city, a town or a county, acting as a government?
+  - If you chose **The President or a federal agency**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be offices that inspect, license or enforce, and the work an inspector does can be exactly the same in each. In **“The President or a federal agency”** the office belongs to the government of the whole country, or the decision is the President’s. In **“A state, city or county government”** the office belongs to one state, or to a city, a town or a county. What the office does can be the same in both. Whose office it is separates them. Whose government does the office or the official belong to: the whole country’s, or one state’s, or a city’s, a town’s or a county’s?
+  - If you chose **A judge, in any court**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a local matter: a ticket, a fence, a rule about a street. A judge of a state’s court and a city council can both be in one story. In **“A judge, in any court”** the last decision is a judge’s, in whatever court, and a judge in a state’s own court is still a judge. In **“A state, city or county government”** it is made by the lawmakers, the governor or the offices of a state, or by a city, a town or a county. A state’s court does not turn a case into the state’s decision. Is the last decision made by a judge, whatever the court? Or is it made by a state, a city, a town or a county, acting as a government?
 - What would make it a different name: If the case ended with the House voting on one speed limit for every state, the answer would be **“Congress, in the House or the Senate”**.
 - Taught on: “The government of one state, or of a city, town or county in it” (one tap opens the card).
 
@@ -2424,9 +2424,9 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **A state, city or county government.**” The last decision is a vote by the council of a town: “the Wexley town council voted to send a warning letter to any household whose bin is found with the wrong things”. It is about the town’s own bins.
   - Why not **“The President or a federal agency”**: Sending warning letters is the kind of thing an office does. But the case shows a town’s council voting that it should be done, and the council belongs to the town.
 - If you miss: “The answer is **A state, city or county government.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **Congress, in the House or the Senate**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, lawmakers vote on a bill, and they can vote on the same sort of matter, such as a tax. In **“Congress, in the House or the Senate”** the lawmakers are the House and the Senate, and what they decide is for the whole country. In **“A state, city or county government”** the lawmakers belong to one state, or the deciders are the council of a city, a town or a county, and what they decide is for that place alone. Do the lawmakers in the case make rules for the whole country, or for one state, city, town or county?
+  - If you chose **Congress, in the House or the Senate**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, lawmakers vote on a bill, and they can vote on the same sort of matter, such as a tax. In **“Congress, in the House or the Senate”** the lawmakers are the House and the Senate, and what they decide is for the whole country. In **“A state, city or county government”** the lawmakers belong to one state, or the deciders are the council of a city, a town or a county, and what they decide is for that place alone. Do the lawmakers in the case make rules for the whole country, or for one state, city, town or county?
   - If you chose **The President or a federal agency**: the “why not” line above. Then the lines from the card that compared the two: Both can be offices that inspect, license or enforce, and the work an inspector does can be exactly the same in each. In **“The President or a federal agency”** the office belongs to the government of the whole country, or the decision is the President’s. In **“A state, city or county government”** the office belongs to one state, or to a city, a town or a county. What the office does can be the same in both. Whose office it is separates them. Whose government does the office or the official belong to: the whole country’s, or one state’s, or a city’s, a town’s or a county’s?
-  - If you chose **A judge, in any court**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a local matter: a ticket, a fence, a rule about a street. A judge of a state’s court and a city council can both be in one story. In **“A judge, in any court”** the last decision is a judge’s, in whatever court, and a judge in a state’s own court is still a judge. In **“A state, city or county government”** it is made by the lawmakers, the governor or the offices of a state, or by a city, a town or a county. A state’s court does not turn a case into the state’s decision. Is the last decision made by a judge, whatever the court? Or is it made by a state, a city, a town or a county, acting as a government?
+  - If you chose **A judge, in any court**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a local matter: a ticket, a fence, a rule about a street. A judge of a state’s court and a city council can both be in one story. In **“A judge, in any court”** the last decision is a judge’s, in whatever court, and a judge in a state’s own court is still a judge. In **“A state, city or county government”** it is made by the lawmakers, the governor or the offices of a state, or by a city, a town or a county. A state’s court does not turn a case into the state’s decision. Is the last decision made by a judge, whatever the court? Or is it made by a state, a city, a town or a county, acting as a government?
 - What would make it a different name: If the case ended with a federal office sending warning letters about recycling to every household in the country, the answer would be **“The President or a federal agency”**.
 - Taught on: “The government of one state, or of a city, town or county in it” (one tap opens the card).
 
@@ -2446,10 +2446,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **A state, city or county government.**” The last decision is an inspector’s, and the inspector works for a state: “An inspector from the Calder state health department” and “The inspector ordered the centre closed until the doors are fixed”. It is a state’s own office deciding about a centre in that state.
   - Why not **“The President or a federal agency”**: An inspector visits a building and orders it closed, and that is just what an inspector from an office of the whole country does. But this inspector works for a state, and it is the state’s own office.
 - If you miss: “The answer is **A state, city or county government.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **Congress, in the House or the Senate**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: In both, lawmakers vote on a bill, and they can vote on the same sort of matter, such as a tax. In **“Congress, in the House or the Senate”** the lawmakers are the House and the Senate, and what they decide is for the whole country. In **“A state, city or county government”** the lawmakers belong to one state, or the deciders are the council of a city, a town or a county, and what they decide is for that place alone. Do the lawmakers in the case make rules for the whole country, or for one state, city, town or county?
+  - If you chose **Congress, in the House or the Senate**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, lawmakers vote on a bill, and they can vote on the same sort of matter, such as a tax. In **“Congress, in the House or the Senate”** the lawmakers are the House and the Senate, and what they decide is for the whole country. In **“A state, city or county government”** the lawmakers belong to one state, or the deciders are the council of a city, a town or a county, and what they decide is for that place alone. Do the lawmakers in the case make rules for the whole country, or for one state, city, town or county?
   - If you chose **The President or a federal agency**: the “why not” line above. Then the lines from the card that compared the two: Both can be offices that inspect, license or enforce, and the work an inspector does can be exactly the same in each. In **“The President or a federal agency”** the office belongs to the government of the whole country, or the decision is the President’s. In **“A state, city or county government”** the office belongs to one state, or to a city, a town or a county. What the office does can be the same in both. Whose office it is separates them. Whose government does the office or the official belong to: the whole country’s, or one state’s, or a city’s, a town’s or a county’s?
-  - If you chose **A judge, in any court**: built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a local matter: a ticket, a fence, a rule about a street. A judge of a state’s court and a city council can both be in one story. In **“A judge, in any court”** the last decision is a judge’s, in whatever court, and a judge in a state’s own court is still a judge. In **“A state, city or county government”** it is made by the lawmakers, the governor or the offices of a state, or by a city, a town or a county. A state’s court does not turn a case into the state’s decision. Is the last decision made by a judge, whatever the court? Or is it made by a state, a city, a town or a county, acting as a government?
-- This case may have brought back *The seat belts*, which was **“The President or a federal agency”**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose **A judge, in any court**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a local matter: a ticket, a fence, a rule about a street. A judge of a state’s court and a city council can both be in one story. In **“A judge, in any court”** the last decision is a judge’s, in whatever court, and a judge in a state’s own court is still a judge. In **“A state, city or county government”** it is made by the lawmakers, the governor or the offices of a state, or by a city, a town or a county. A state’s court does not turn a case into the state’s decision. Is the last decision made by a judge, whatever the court? Or is it made by a state, a city, a town or a county, acting as a government?
+- This case may have brought back *The seat belts*, which was **“The President or a federal agency”**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If the inspector had come from a federal office, the answer would be **“The President or a federal agency”**.
 - Taught on: “The government of one state, or of a city, town or county in it” (one tap opens the card).
 

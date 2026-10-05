@@ -1,15 +1,15 @@
 # Learner view: Basic Math, Unit Five: How many ways something can turn out, or how likely it is
 
-*Five kinds of problem about counting and chance, and a procedure worked out step by step for each.* Unit revision 1, built to lesson standard 1, status: draft.
+*Five kinds of problem about counting and chance, and a procedure worked out step by step for each.* Unit revision 2, built to lesson standard 1, status: draft.
 
 This file is generated from the data files by `tools/render-learner-view.mjs`. It shows every screen in the order a learner meets it. In the app one card is on screen at a time and the learner moves on when ready.
 
-- **Bold text in quotation marks** is the key’s own wording, printed from `key.js`. Bold names are the outcome names from the same file. Neither is typed anywhere else. "What you must be able to point to" lines and "How to tell them apart" lines are also printed from one place each (the key and the look-alike ledger).
+- **Bold text in quotation marks** is the subject’s own wording for its questions and answers, written once and printed everywhere. Bold names are the names, written once in the same place. Neither is typed anywhere else. "What you must be able to point to" lines and "How to tell them apart" lines are also printed from one place each (the subject’s questions and the pairs it compares).
 - ⟦Double brackets⟧ show the words the app marks in a case (one highlight style everywhere).
 - The line in italics under each heading is the app’s top bar. The line in square brackets after it is for reviewers and is not shown to the learner.
 - Headings, prompt wording and stage instructions that are the same in every unit are the app’s wording, not this unit’s.
 - "Shown as soon as you …" is what appears the moment the learner answers. Nothing is hidden behind a second tap the first time a case is met, or after a miss.
-- After every answer the app shows, in this order: the right answer in the key’s words; the reason, quoting the marked words; for a name, why the nearest wrong name fails; after a miss, a line about the answer the learner chose; and last a link to the card that taught it. Where a line about the learner’s own choice is not written for the case, the app builds it from the key, and this file says so in place of repeating it.
+- After every answer the app shows, in this order: the right answer; the reason, quoting the marked words; for a name, why the nearest wrong name fails; after a miss, a line about the answer the learner chose; and last a link to the card that taught it. Where a line about the learner’s own choice is not written for the case, the app builds it from the answers’ own wording, and this file says so in place of repeating it.
 
 ---
 
@@ -17,7 +17,7 @@ This file is generated from the data files by `tools/render-learner-view.mjs`. I
 
 ### 1. Five kinds of problem about counting and chance, and a procedure for each
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 1 of 54*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 1 of 54*
 
 [reviewers only: card kind `orient`, id `orient-chance`]
 
@@ -25,15 +25,15 @@ After this unit you can take a problem that asks how many different ways somethi
 
 Picture the committee of a village fete, with five questions to settle in one afternoon, all of them about counting or about chance. “The phone stall sells cases in 4 colours and 3 styles: how many different cases is that?” “Eight children run the final race, and medals go to the first three: in how many different ways can the medals be given out?” “The quiz team has 4 places and 9 people have asked to be on it: how many different teams could we pick?” “Each of the three outdoor stalls has a 20% chance of being rained off: how likely is it that at least one of them is?” And the first-aid tent asks: “A quick health test has come back positive: how likely is it that the person really has the illness?”
 
-The key’s first question, which Unit One taught, gives the same answer to all five: **“How many ways something can turn out, or how likely it is”**. But they are five different questions, each with its own procedure, and a procedure for the wrong one still gives a number, with nothing in the number to say that it is wrong. Take 9 things and 4 picks. Depending on how the picks are made, the count of different results can be 6,561, or 3,024, or 126. So in this unit the order is always the same: first work out what is being counted, or what chance is wanted, and only then solve it.
+The first question, which Unit One taught, gives the same answer to all five: **“How many ways something can turn out, or how likely it is”**. But they are five different questions, each with its own procedure, and a procedure for the wrong one still gives a number, with nothing in the number to say that it is wrong. Take 9 things and 4 picks. Depending on how the picks are made, the count of different results can be 6,561, or 3,024, or 126. So in this unit the order is always the same: first work out what is being counted, or what chance is wanted, and only then solve it.
 
 Three words from the units before are used here in the same way. A procedure is the fixed set of steps that solves one kind of problem, and it gives the right answer whatever the numbers are. The working is the procedure carried out on one problem, with every number written down. A step is one stage of the working, and each step is named by what it is for.
 
 Four more words are new, and each means one thing in this unit. A result is one complete way something can turn out: one particular phone case, one particular team. A list is everything that one choice can be, such as the 3 styles of case. A pick is one thing taken from a list or a group. And a chance is a number that says how likely something is: 0 means it cannot happen, 1 means it is certain, and 0.2, which is the same as 20%, means 1 time in every 5. Many books say probability for what this unit calls a chance.
 
-Each kind is taught the same way. First a problem of the kind, and the idea behind its procedure. Then two worked problems, in different parts of life, with every step computed and the reason for every step given; on one step in each, the reason is held back until you have chosen it. Then problems that you finish yourself. When all five kinds have been taught, the key’s question that tells them apart gets its own card, and then the drill mixes all five.
+Each kind is taught the same way. First a problem of the kind, and the idea behind its procedure. Then two worked problems, in different parts of life, with every step computed and the reason for every step given; on one step in each, the reason is held back until you have chosen it. Then problems that you finish yourself. When all five kinds have been taught, the question that tells them apart gets its own card, and then the drill mixes all five.
 
-**What Unit One taught, in one place.** The key’s first question is **“What does the problem ask you to work out?”** Its answers:
+**What Unit One taught, in one place.** The first question is **“What does the problem ask you to work out?”** Its answers:
 
 - **“How whole numbers split, repeat or are made up”**: give this answer when the problem is about whole numbers and asks whether they split into equal groups with nothing left over, what is left over, what a number is made of, when two things that repeat happen together, where a count ends on a loop such as the days of a week, or whether a number can be written exactly.
 - **“A missing number, from a formula, a rate or totals”**: give this answer when the problem leaves out one number, or two, and gives a formula, a rate such as so much for each thing, or totals that the missing number must fit.
@@ -41,11 +41,11 @@ Each kind is taught the same way. First a problem of the kind, and the idea behi
 - **“How many ways something can turn out, or how likely it is”**: give this answer when the problem asks how many different ways something can be chosen or ordered, or how likely it is that at least one of several things happens, or that a test result is right. **This unit is about these cases.**
 - **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”**: give this answer when the problem has a right-angled triangle, or two things of exactly the same shape at different sizes, and asks for a length, an area or a volume, or for how many times more area or volume one has than the other.
 
-Unit One also taught that two things are marked separately: the name you give a case, and your route to it, meaning the answers you gave to the key’s questions on the way.
+Two things are marked separately: the name you give a case, and your answers to the questions on the way to it.
 
 *(One tap on any of these lines opens the card in Unit One that taught it.)*
 
-**The part of the key this unit teaches.** This is a preview. You are not expected to follow it yet: every line is explained on the cards that come next. The question and its answers are in the key’s own words. Beside each answer, in plain words, is the thing it leads to. There are five of them, and each gets its name when it is taught.
+**The questions this unit teaches.** This is a preview. You are not expected to follow it yet: every line is explained on the cards that come next. The question and its answers are worded exactly as you will meet them. Beside each answer, in plain words, is the thing it leads to. There are five of them, and each gets its name when it is taught.
 
 What does the problem ask you to count, or find the chance of?
 - The ways to make several choices, each from its own list → separate choices, each from its own list
@@ -75,7 +75,7 @@ Each name is taught through cases first. After every step you answer one questio
 
 ### 2. Separate choices, each from its own list
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 2 of 54*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 2 of 54*
 
 [reviewers only: card kind `meet`, id `meet-multprin`]
 
@@ -102,9 +102,9 @@ And notice what decides the kind. It is not that the problem has two numbers, 4 
 
 **What you must be able to point to.** Several separate choices, each made from its own full list, and the question how many different results there are. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What does the problem ask you to count, or find the chance of?”**
+**The question:** **“What does the problem ask you to count, or find the chance of?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“The ways to make several choices, each from its own list”**
+**Its answer for a case like this one:** **“The ways to make several choices, each from its own list”**
 
 A problem like this is **Multiplying the choices**. In the name, “choices” means the separate picks, one from each list, and “multiplying” is what the count needs: the number of results is the size of each list multiplied together.
 
@@ -112,7 +112,7 @@ You may also hear this called “the multiplication principle” or “the count
 
 ### 3. Multiplying the choices: the same thing in a different story
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 3 of 54*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 3 of 54*
 
 [reviewers only: card kind `again`, id `again-multprin`]
 
@@ -145,7 +145,7 @@ That is all you point to, and it is why one name covers a phone shop and a railw
 
 ### 4. Story and structure, in problems about counting and chance
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 4 of 54*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 4 of 54*
 
 [reviewers only: card kind `lens`, id `lens-chance`]
 
@@ -157,13 +157,13 @@ Once the kind is chosen, you carry out its procedure on the numbers, and the num
 
 Three things change on purpose from card to card: the words of the question (“how many”, “in how many ways”, “how likely”), the setting, and the size of the numbers. None of them tells you the kind. What the question asks, and how the picks are made, does.
 
-**Stays the same from case to case:** the question the key asks of every problem in this unit: **“What does the problem ask you to count, or find the chance of?”**
+**Stays the same from case to case:** the question asked of every problem in this unit: **“What does the problem ask you to count, or find the chance of?”**
 
 **Changes on purpose:** the story; the people; the size of the numbers; the words of the question (“how many”, “in how many ways”, “how likely”).
 
 ### 5. Multiplying the choices: what it is like
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 5 of 54*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 5 of 54*
 
 [reviewers only: card kind `portrait`, id `portrait-multprin`]
 
@@ -194,7 +194,7 @@ In your own life you meet this when you choose a meal with a starter and a main 
 
 ### 6. A question about a new case
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 6 of 54*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 6 of 54*
 
 [reviewers only: card kind `check`, id `check-multprin`]
 
@@ -209,7 +209,7 @@ The pieces you can tap:
 
 **Shown as soon as you tap**
 
-- If you are right: “Right: ‘A customer picks one of 5 ball weights and one of 8 shoe sizes.’.” The words “picks one of 5 ball weights and one of 8 shoe sizes” give two separate choices, a ball weight and a shoe size, each from a list of its own, and ask how many different hires there can be. Picking a weight uses up no shoe size, and picking a size uses up no weight. That is **“The ways to make several choices, each from its own list”**. The key’s answer for this case is **“The ways to make several choices, each from its own list”**, and the name is **Multiplying the choices**.
+- If you are right: “Right: ‘A customer picks one of 5 ball weights and one of 8 shoe sizes.’.” The words “picks one of 5 ball weights and one of 8 shoe sizes” give two separate choices, a ball weight and a shoe size, each from a list of its own, and ask how many different hires there can be. Picking a weight uses up no shoe size, and picking a size uses up no weight. That is **“The ways to make several choices, each from its own list”**. The answer for this case is **“The ways to make several choices, each from its own list”**, and the name is **Multiplying the choices**.
 - If you miss: “The words are ‘A customer picks one of 5 ball weights and one of 8 shoe sizes.’.” The same reason follows, and then a line about the piece you tapped:
   - “A bowling alley hires out a ball and a pair of shoes.”: That names the two things that are hired. It does not say how the customer chooses them.
   - “How many different hires can there be?”: That is the question, a count of results. The words that show how the choices are made come in the sentence before it.
@@ -217,7 +217,7 @@ The pieces you can tap:
 
 ### 7. Worked: how many different sandwiches?
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 7 of 54*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 7 of 54*
 
 [reviewers only: card kind `solved`, id `solved-multprin-1`]
 
@@ -262,7 +262,7 @@ The shop can make 30 different sandwiches, each made of one bread, one filling a
 
 ### 8. Worked again: how many different card codes?
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 8 of 54*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 8 of 54*
 
 [reviewers only: card kind `solved`, id `solved-multprin-2`]
 
@@ -307,7 +307,7 @@ There are 10,000 different codes, from 0000 to 9999.
 
 ### 9. A question about a new case
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 9 of 54*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 9 of 54*
 
 [reviewers only: card kind `check`, id `check-multprin-last`]
 
@@ -338,7 +338,7 @@ There are 10,000 different codes, from 0000 to 9999.
 
 ### 10. A question about a new case
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 10 of 54*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 10 of 54*
 
 [reviewers only: card kind `check`, id `check-multprin-whole`]
 
@@ -370,7 +370,7 @@ There are 10,000 different codes, from 0000 to 9999.
 
 ### 11. Picking in order from one group
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 11 of 54*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 11 of 54*
 
 [reviewers only: card kind `meet`, id `meet-perm`]
 
@@ -397,9 +397,9 @@ Compare the first kind. There, picking a colour used up none of the styles, so t
 
 **What you must be able to point to.** One group to pick from, picks that each leave one fewer to choose from, a different order counting as a different result, and the question how many different results there are. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What does the problem ask you to count, or find the chance of?”**
+**The question:** **“What does the problem ask you to count, or find the chance of?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“The ways to pick from one group, when the order counts”**
+**Its answer for a case like this one:** **“The ways to pick from one group, when the order counts”**
 
 A problem like this is **Permutations**. The name is for the list of picks itself: things taken one after another from one group, so that the same things in a different order make a different list.
 
@@ -407,7 +407,7 @@ You may also hear this called “arrangements”. That means the same thing here
 
 ### 12. Permutations: the same thing in a different story
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 12 of 54*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 12 of 54*
 
 [reviewers only: card kind `again`, id `again-perm`]
 
@@ -440,7 +440,7 @@ That is all you point to: one group, picks that each use someone up, and an orde
 
 ### 13. Permutations: what it is like
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 13 of 54*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 13 of 54*
 
 [reviewers only: card kind `portrait`, id `portrait-perm`]
 
@@ -472,7 +472,7 @@ In your own life you meet this when you give out places or prizes, when you fix 
 
 ### 14. A question about a new case
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 14 of 54*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 14 of 54*
 
 [reviewers only: card kind `check`, id `check-perm`]
 
@@ -487,7 +487,7 @@ The pieces you can tap:
 
 **Shown as soon as you tap**
 
-- If you are right: “Right: ‘The first to board takes the window seat and the second takes the aisle seat.’.” The words “The first to board takes the window seat and the second takes the aisle seat” pick two people one after another from one group of 5, and the seats are different, so who boards first matters. Whoever boards first is no longer waiting, so the second pick has one fewer to choose from. That is **“The ways to pick from one group, when the order counts”**. The key’s answer for this case is **“The ways to pick from one group, when the order counts”**, and the name is **Permutations**.
+- If you are right: “Right: ‘The first to board takes the window seat and the second takes the aisle seat.’.” The words “The first to board takes the window seat and the second takes the aisle seat” pick two people one after another from one group of 5, and the seats are different, so who boards first matters. Whoever boards first is no longer waiting, so the second pick has one fewer to choose from. That is **“The ways to pick from one group, when the order counts”**. The answer for this case is **“The ways to pick from one group, when the order counts”**, and the name is **Permutations**.
 - If you miss: “The words are ‘The first to board takes the window seat and the second takes the aisle seat.’.” The same reason follows, and then a line about the piece you tapped:
   - “A small ferry has room for only 2 of the 5 people waiting on the quay.”: That gives the one group and how many are picked. The words that show how the picks are made come next.
   - “In how many different ways can the two seats be filled?”: That is the question, a count of results. The words that show how the picks are made come in the sentence before it.
@@ -495,7 +495,7 @@ The pieces you can tap:
 
 ### 15. Worked: who can fill three jobs in a club?
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 15 of 54*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 15 of 54*
 
 [reviewers only: card kind `solved`, id `solved-perm-1`]
 
@@ -540,7 +540,7 @@ The club can fill the three jobs in 1,320 different ways.
 
 ### 16. Worked again: six books in a row
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 16 of 54*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 16 of 54*
 
 [reviewers only: card kind `solved`, id `solved-perm-2`]
 
@@ -585,7 +585,7 @@ The six books can stand in a row in 720 different orders.
 
 ### 17. A question about a new case
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 17 of 54*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 17 of 54*
 
 [reviewers only: card kind `check`, id `check-perm-last`]
 
@@ -616,7 +616,7 @@ The six books can stand in a row in 720 different orders.
 
 ### 18. A question about a new case
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 18 of 54*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 18 of 54*
 
 [reviewers only: card kind `check`, id `check-perm-whole`]
 
@@ -642,7 +642,7 @@ The six books can stand in a row in 720 different orders.
 
 ### 19. Multiplying the choices or Permutations: telling them apart
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 19 of 54*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 19 of 54*
 
 [reviewers only: card kind `lookalike`, id `look-multprin-perm`]
 
@@ -664,9 +664,9 @@ The first and second kinds both multiply one count for each choice, and both can
 
 **Why this one and not the other**
 
-In Case A the same member may hold more than one job. So the list for each job is all 6 members, whatever was decided for the other jobs. There are three separate choices, each from a full list of its own: the key’s answer is **“The ways to make several choices, each from its own list”**, and the count is 6 × 6 × 6 = 216.
+In Case A the same member may hold more than one job. So the list for each job is all 6 members, whatever was decided for the other jobs. There are three separate choices, each from a full list of its own: the answer is **“The ways to make several choices, each from its own list”**, and the count is 6 × 6 × 6 = 216.
 
-In Case B no member may hold more than one job. A member given the first job is out for the other two, so the second job is picked from 5 members and the third from 4. That is one group, with each pick using someone up: the key’s answer is **“The ways to pick from one group, when the order counts”**, and the count is 6 × 5 × 4 = 120.
+In Case B no member may hold more than one job. A member given the first job is out for the other two, so the second job is picked from 5 members and the third from 4. That is one group, with each pick using someone up: the answer is **“The ways to pick from one group, when the order counts”**, and the count is 6 × 5 × 4 = 120.
 
 Both multiply one count for each job, and both count the order of the jobs. What differs is whether a pick uses someone up. If the lists stay full, the counts stay the same. If each pick takes someone out, the counts fall by one each time. The numbers show it too: 216 is more than 120, because with repeats allowed there are more ways to fill the jobs.
 
@@ -674,7 +674,7 @@ Both multiply one count for each job, and both count the order of the jobs. What
 
 After one choice has been made, is the next one made from a list of the same length, or from what is left of the same group?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Multiplying the choices | Permutations |
 |---|---|---|
@@ -691,7 +691,7 @@ After one choice has been made, is the next one made from a list of the same len
 
 ### 20. Picking a group, in any order
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 20 of 54*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 20 of 54*
 
 [reviewers only: card kind `meet`, id `meet-comb`]
 
@@ -718,9 +718,9 @@ So two things decide this kind, and one of them is the opposite of the second ki
 
 **What you must be able to point to.** One group to pick from, picks that each leave one fewer to choose from, the same things in any order counting as one result, and the question how many different results there are. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What does the problem ask you to count, or find the chance of?”**
+**The question:** **“What does the problem ask you to count, or find the chance of?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“The ways to pick a group, when the order does not count”**
+**Its answer for a case like this one:** **“The ways to pick a group, when the order does not count”**
 
 A problem like this is **Combinations**. The name is for the group that is picked, whatever order its members were picked in: the same people in a different order are the same group.
 
@@ -728,7 +728,7 @@ You may also hear this called “selections” or “n choose r”. Those words 
 
 ### 21. Combinations: the same thing in a different story
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 21 of 54*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 21 of 54*
 
 [reviewers only: card kind `again`, id `again-comb`]
 
@@ -761,7 +761,7 @@ That is all you point to: one group, picks that each use someone up, and an orde
 
 ### 22. Combinations: what it is like
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 22 of 54*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 22 of 54*
 
 [reviewers only: card kind `portrait`, id `portrait-comb`]
 
@@ -793,7 +793,7 @@ In your own life you meet this when you pick a team, a committee or a jury from 
 
 ### 23. A question about a new case
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 23 of 54*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 23 of 54*
 
 [reviewers only: card kind `check`, id `check-comb`]
 
@@ -808,7 +808,7 @@ The pieces you can tap:
 
 **Shown as soon as you tap**
 
-- If you are right: “Right: ‘The box is the same whichever cheese goes in first.’.” The words “The box is the same whichever cheese goes in first” pick 3 cheeses from one group of 6, with each pick leaving one fewer, and the same three cheeses in any order are the same box. That is **“The ways to pick a group, when the order does not count”**. The key’s answer for this case is **“The ways to pick a group, when the order does not count”**, and the name is **Combinations**.
+- If you are right: “Right: ‘The box is the same whichever cheese goes in first.’.” The words “The box is the same whichever cheese goes in first” pick 3 cheeses from one group of 6, with each pick leaving one fewer, and the same three cheeses in any order are the same box. That is **“The ways to pick a group, when the order does not count”**. The answer for this case is **“The ways to pick a group, when the order does not count”**, and the name is **Combinations**.
 - If you miss: “The words are ‘The box is the same whichever cheese goes in first.’.” The same reason follows, and then a line about the piece you tapped:
   - “A cheese shop makes a sampler box of 3 cheeses picked from the 6 on its counter.”: That gives the one group and how many are picked. The words that show whether the order counts come next.
   - “How many different boxes can it make?”: That is the question, a count of results. The words that show whether the order counts come in the sentence before it.
@@ -816,7 +816,7 @@ The pieces you can tap:
 
 ### 24. Worked: how many different quiz teams?
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 24 of 54*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 24 of 54*
 
 [reviewers only: card kind `solved`, id `solved-comb-1`]
 
@@ -865,7 +865,7 @@ The quiz night can pick 126 different teams of 4 from the 9 people.
 
 ### 25. Worked again: three flavours to taste
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 25 of 54*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 25 of 54*
 
 [reviewers only: card kind `solved`, id `solved-comb-2`]
 
@@ -914,7 +914,7 @@ A customer can taste 35 different sets of 3 flavours.
 
 ### 26. A question about a new case
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 26 of 54*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 26 of 54*
 
 [reviewers only: card kind `check`, id `check-comb-last`]
 
@@ -947,7 +947,7 @@ A customer can taste 35 different sets of 3 flavours.
 
 ### 27. A question about a new case
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 27 of 54*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 27 of 54*
 
 [reviewers only: card kind `check`, id `check-comb-whole`]
 
@@ -974,7 +974,7 @@ A customer can taste 35 different sets of 3 flavours.
 
 ### 28. Permutations or Combinations: telling them apart
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 28 of 54*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 28 of 54*
 
 [reviewers only: card kind `lookalike`, id `look-perm-comb`]
 
@@ -996,9 +996,9 @@ The second and third kinds both start from one group with each pick using someon
 
 **Why this one and not the other**
 
-In Case A the pastries go in a row, from left to right, so a row with the same pastries in a different order is a different row. The order counts, and the key’s answer is **“The ways to pick from one group, when the order counts”**. The count is 6 × 5 × 4 = 120.
+In Case A the pastries go in a row, from left to right, so a row with the same pastries in a different order is a different row. The order counts, and the answer is **“The ways to pick from one group, when the order counts”**. The count is 6 × 5 × 4 = 120.
 
-In Case B the pastries go in a box, and the box is the same whichever pastry goes in first. The same three pastries in any order are one box, and the key’s answer is **“The ways to pick a group, when the order does not count”**. The count in order is the same 120, and each box is in it once for every order its three pastries can be put in, 3 × 2 × 1 = 6, so the answer is 120 ÷ 6 = 20.
+In Case B the pastries go in a box, and the box is the same whichever pastry goes in first. The same three pastries in any order are one box, and the answer is **“The ways to pick a group, when the order does not count”**. The count in order is the same 120, and each box is in it once for every order its three pastries can be put in, 3 × 2 × 1 = 6, so the answer is 120 ÷ 6 = 20.
 
 Both start from the same 6 × 5 × 4 = 120. The second kind stops there, and the third goes on and divides. The numbers show how the two fit: each of the 20 boxes can be put in a row in 6 different orders, and 20 × 6 = 120 rows.
 
@@ -1006,7 +1006,7 @@ Both start from the same 6 × 5 × 4 = 120. The second kind stops there, and the
 
 Does the same group of things, picked in a different order, count as a different result or as the same one?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Permutations | Combinations |
 |---|---|---|
@@ -1017,7 +1017,7 @@ Does the same group of things, picked in a different order, count as a different
 
 ### 29. Multiplying the choices or Combinations: telling them apart
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 29 of 54*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 29 of 54*
 
 [reviewers only: card kind `lookalike`, id `look-multprin-comb`]
 
@@ -1039,9 +1039,9 @@ The first and third kinds can both be about a stall with 6 flavours. This card p
 
 **Why this one and not the other**
 
-In Case A the customer picks one flavour and one cone. There are two separate lists, 6 flavours and 3 cones, and picking a flavour uses up no cone. Each choice has a list of its own: the key’s answer is **“The ways to make several choices, each from its own list”**, and the count is 6 × 3 = 18.
+In Case A the customer picks one flavour and one cone. There are two separate lists, 6 flavours and 3 cones, and picking a flavour uses up no cone. Each choice has a list of its own: the answer is **“The ways to make several choices, each from its own list”**, and the count is 6 × 3 = 18.
 
-In Case B the customer picks 2 different flavours, both from the one list of 6, in either order. The second flavour comes from the 5 that are left, and the same two flavours in the other order are the same tub. That is one group with each pick using something up, and with an order that does not count: the key’s answer is **“The ways to pick a group, when the order does not count”**. The count in order is 6 × 5 = 30, and each tub is counted twice, 2 × 1 = 2, so the answer is 30 ÷ 2 = 15.
+In Case B the customer picks 2 different flavours, both from the one list of 6, in either order. The second flavour comes from the 5 that are left, and the same two flavours in the other order are the same tub. That is one group with each pick using something up, and with an order that does not count: the answer is **“The ways to pick a group, when the order does not count”**. The count in order is 6 × 5 = 30, and each tub is counted twice, 2 × 1 = 2, so the answer is 30 ÷ 2 = 15.
 
 Both are about 6 flavours, and both multiply. What differs is whether the picks come from separate lists or from one group. Separate lists keep their full length however many picks are made, and one group gets shorter with each pick.
 
@@ -1049,7 +1049,7 @@ Both are about 6 flavours, and both multiply. What differs is whether the picks 
 
 Are there several separate lists with one pick from each, or one list with several picks from it?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Multiplying the choices | Combinations |
 |---|---|---|
@@ -1060,7 +1060,7 @@ Are there several separate lists with one pick from each, or one list with sever
 
 ### 30. A wrong idea: the name on the lock tells you the kind
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 30 of 54*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 30 of 54*
 
 [reviewers only: card kind `refute`, id `refute-lock`]
 
@@ -1076,7 +1076,7 @@ A bike lock with 3 rings, each marked 0 to 9, is called a combination lock, but 
 
 Those are the marks of **Multiplying the choices**, not of **Combinations**: three separate choices, each from its own full list, which gives 10 × 10 × 10 = 1,000 codes. If you counted the lock as picking a group of 3 different digits from the 10, in any order, you would get 120, which is far fewer than the 1,000 codes it really has.
 
-So the name tells you what people call the lock. It does not tell you what the problem asks. Put the key’s question to the words of the problem: **“What does the problem ask you to count, or find the chance of?”**
+So the name tells you what people call the lock. It does not tell you what the problem asks. Put the question to the words of the problem: **“What does the problem ask you to count, or find the chance of?”**
 
 
 *End of part 3. You can stop here; your place is kept. Next: part 4, The chance of one or more of a set of separate things.*
@@ -1087,7 +1087,7 @@ So the name tells you what people call the lock. It does not tell you what the p
 
 ### 31. At least one of several things happening
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 31 of 54*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 31 of 54*
 
 [reviewers only: card kind `meet`, id `meet-complement`]
 
@@ -1114,9 +1114,9 @@ Two things decide this kind. The problem lists some separate things that might h
 
 **What you must be able to point to.** Several separate things, the chance of each, and the question how likely it is that at least one of them happens. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What does the problem ask you to count, or find the chance of?”**
+**The question:** **“What does the problem ask you to count, or find the chance of?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“The chance that at least one of several things happens”**
+**Its answer for a case like this one:** **“The chance that at least one of several things happens”**
 
 A problem like this is **Counting the opposite**. In the name, “the opposite” of at least one thing happening is that none of them happens, and the procedure counts that instead and takes it away from 1.
 
@@ -1124,7 +1124,7 @@ You may also hear this called “the complement rule”. That means the same thi
 
 ### 32. Counting the opposite: the same thing in a different story
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 32 of 54*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 32 of 54*
 
 [reviewers only: card kind `again`, id `again-complement`]
 
@@ -1155,7 +1155,7 @@ That is all you point to, and it is why one name covers a coin and a bicycle. Th
 
 ### 33. Counting the opposite: what it is like
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 33 of 54*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 33 of 54*
 
 [reviewers only: card kind `portrait`, id `portrait-complement`]
 
@@ -1187,7 +1187,7 @@ In your own life you meet this when you ask whether something will go wrong at l
 
 ### 34. A question about a new case
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 34 of 54*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 34 of 54*
 
 [reviewers only: card kind `check`, id `check-complement`]
 
@@ -1202,7 +1202,7 @@ The pieces you can tap:
 
 **Shown as soon as you tap**
 
-- If you are right: “Right: ‘How likely is it that at least one ambulance is out of action on a given day?’.” The words “at least one ambulance is out of action on a given day” give the chance for each of 2 separate ambulances and ask how likely it is that at least one of them is out of action. That is **“The chance that at least one of several things happens”**. The key’s answer for this case is **“The chance that at least one of several things happens”**, and the name is **Counting the opposite**.
+- If you are right: “Right: ‘How likely is it that at least one ambulance is out of action on a given day?’.” The words “at least one ambulance is out of action on a given day” give the chance for each of 2 separate ambulances and ask how likely it is that at least one of them is out of action. That is **“The chance that at least one of several things happens”**. The answer for this case is **“The chance that at least one of several things happens”**, and the name is **Counting the opposite**.
 - If you miss: “The words are ‘How likely is it that at least one ambulance is out of action on a given day?’.” The same reason follows, and then a line about the piece you tapped:
   - “A town has 2 ambulances.”: That says how many separate things there are. It does not say what has to be found about them.
   - “Each one is out of action on 5% of days, and the two are separate: one being out of action does not change the chance for the other.”: That gives the chance for each, and says that they are separate. It does not say what has to be found about them.
@@ -1210,7 +1210,7 @@ The pieces you can tap:
 
 ### 35. Worked: a bus that is late at least once in a week
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 35 of 54*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 35 of 54*
 
 [reviewers only: card kind `solved`, id `solved-complement-1`]
 
@@ -1255,7 +1255,7 @@ The bus is late at least once in a working week about 67 times in 100, a chance 
 
 ### 36. Worked again: frost on at least one field
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 36 of 54*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 36 of 54*
 
 [reviewers only: card kind `solved`, id `solved-complement-2`]
 
@@ -1300,7 +1300,7 @@ There is a 46% chance that at least one of the three fields is damaged.
 
 ### 37. A question about a new case
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 37 of 54*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 37 of 54*
 
 [reviewers only: card kind `check`, id `check-complement-last`]
 
@@ -1331,7 +1331,7 @@ There is a 46% chance that at least one of the three fields is damaged.
 
 ### 38. A question about a new case
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 38 of 54*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 38 of 54*
 
 [reviewers only: card kind `check`, id `check-complement-whole`]
 
@@ -1357,7 +1357,7 @@ There is a 46% chance that at least one of the three fields is damaged.
 
 ### 39. Counting the opposite or Multiplying the choices: telling them apart
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 39 of 54*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 39 of 54*
 
 [reviewers only: card kind `lookalike`, id `look-complement-multprin`]
 
@@ -1379,9 +1379,9 @@ The first and fourth kinds both multiply separate things, and they can be about 
 
 **Why this one and not the other**
 
-In Case A the question is how likely it is that at least one spinner lands on a 6. That is a chance. The key’s answer is **“The chance that at least one of several things happens”**. The chance that none lands on a 6 is found by counting: there are 6 × 6 × 6 = 216 equally likely sets of three numbers, and 5 × 5 × 5 = 125 of them have no 6. So the chance of no 6 is 125 ÷ 216 = 0.579, and the chance of at least one 6 is 1 − 0.579 = 0.421, which is about 42%.
+In Case A the question is how likely it is that at least one spinner lands on a 6. That is a chance. The answer is **“The chance that at least one of several things happens”**. The chance that none lands on a 6 is found by counting: there are 6 × 6 × 6 = 216 equally likely sets of three numbers, and 5 × 5 × 5 = 125 of them have no 6. So the chance of no 6 is 125 ÷ 216 = 0.579, and the chance of at least one 6 is 1 − 0.579 = 0.421, which is about 42%.
 
-In Case B the question is how many different sets of three numbers the spinners can show. That is a count, and each spinner is a separate choice from a full list of 6: 6 × 6 × 6 = 216. The key’s answer is **“The ways to make several choices, each from its own list”**.
+In Case B the question is how many different sets of three numbers the spinners can show. That is a count, and each spinner is a separate choice from a full list of 6: 6 × 6 × 6 = 216. The answer is **“The ways to make several choices, each from its own list”**.
 
 Both multiply one number for each spinner, and both are about separate spinners. What differs is what is asked: a count of results, or how likely something is. And they connect: the 216 of Case B is the total that the 125 of Case A is part of.
 
@@ -1389,7 +1389,7 @@ Both multiply one number for each spinner, and both are about separate spinners.
 
 Is the answer wanted a count of results, or the chance that something happens?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Counting the opposite | Multiplying the choices |
 |---|---|---|
@@ -1400,7 +1400,7 @@ Is the answer wanted a count of results, or the chance that something happens?
 
 ### 40. A wrong idea: after a run, the other result is due
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 40 of 54*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 40 of 54*
 
 [reviewers only: card kind `refute`, id `refute-due`]
 
@@ -1427,7 +1427,7 @@ It can feel as if a long run without red must end soon. It does end sometimes, b
 
 ### 41. How far to trust a test result
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 41 of 54*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 41 of 54*
 
 [reviewers only: card kind `meet`, id `meet-baserate`]
 
@@ -1454,9 +1454,9 @@ Two things decide this kind. The problem gives a result that a test has already 
 
 **What you must be able to point to.** A test or a check that has given a result, how rare the thing it looks for is, how often the test is wrong, and the question how likely the result is to be right. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What does the problem ask you to count, or find the chance of?”**
+**The question:** **“What does the problem ask you to count, or find the chance of?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“The chance that a test result is right”**
+**Its answer for a case like this one:** **“The chance that a test result is right”**
 
 A problem like this is **Base rate**. The name is for how common the thing is in the group before anyone is tested: here 1 in 50. It is the number people forget, and the whole answer depends on it.
 
@@ -1464,7 +1464,7 @@ You may also hear this called “the base rate fallacy”. That means the same t
 
 ### 42. Base rate: the same thing in a different story
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 42 of 54*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 42 of 54*
 
 [reviewers only: card kind `again`, id `again-baserate`]
 
@@ -1499,7 +1499,7 @@ That is all you point to, and it is why one name covers a clinic and a stadium. 
 
 ### 43. Base rate: what it is like
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 43 of 54*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 43 of 54*
 
 [reviewers only: card kind `portrait`, id `portrait-baserate`]
 
@@ -1531,7 +1531,7 @@ In your own life you meet this with medical tests and screening, with a bank or 
 
 ### 44. A question about a new case
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 44 of 54*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 44 of 54*
 
 [reviewers only: card kind `check`, id `check-baserate`]
 
@@ -1547,7 +1547,7 @@ The pieces you can tap:
 
 **Shown as soon as you tap**
 
-- If you are right: “Right: ‘The sensor rings on 99 of every 100 mornings with a hazard, and also on 2 of every 100 mornings without one.’.” The words “rings on 99 of every 100 mornings with a hazard, and also on 2 of every 100 mornings without one” say how often the sensor is right and wrong, after it has sounded and when a real hazard is rare. That is a result to be read, and the question is how far to trust it, which is **“The chance that a test result is right”**. The key’s answer for this case is **“The chance that a test result is right”**, and the name is **Base rate**.
+- If you are right: “Right: ‘The sensor rings on 99 of every 100 mornings with a hazard, and also on 2 of every 100 mornings without one.’.” The words “rings on 99 of every 100 mornings with a hazard, and also on 2 of every 100 mornings without one” say how often the sensor is right and wrong, after it has sounded and when a real hazard is rare. That is a result to be read, and the question is how far to trust it, which is **“The chance that a test result is right”**. The answer for this case is **“The chance that a test result is right”**, and the name is **Base rate**.
 - If you miss: “The words are ‘The sensor rings on 99 of every 100 mornings with a hazard, and also on 2 of every 100 mornings without one.’.” The same reason follows, and then a line about the piece you tapped:
   - “A building’s alarm sensor has sounded.”: That says a result has come in. It does not say how often the sensor is right or wrong.
   - “A real fire hazard is present on 1 morning in 2,000.”: That says how rare the thing is, and it matters. But the words that say how often the sensor is right and wrong come next.
@@ -1556,7 +1556,7 @@ The pieces you can tap:
 
 ### 45. Worked: how far to trust a positive test
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 45 of 54*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 45 of 54*
 
 [reviewers only: card kind `solved`, id `solved-baserate-1`]
 
@@ -1609,7 +1609,7 @@ A positive test means that the person has the infection about 15 times in 100, a
 
 ### 46. Worked again: how far to trust a bank alert
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 46 of 54*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 46 of 54*
 
 [reviewers only: card kind `solved`, id `solved-baserate-2`]
 
@@ -1662,7 +1662,7 @@ About 6 alerts in 100 are for a real fraud, so a flagged payment is a fraud with
 
 ### 47. A question about a new case
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 47 of 54*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 47 of 54*
 
 [reviewers only: card kind `check`, id `check-baserate-last`]
 
@@ -1697,7 +1697,7 @@ About 6 alerts in 100 are for a real fraud, so a flagged payment is a fraud with
 
 ### 48. A question about a new case
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 48 of 54*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 48 of 54*
 
 [reviewers only: card kind `check`, id `check-baserate-whole`]
 
@@ -1725,7 +1725,7 @@ About 6 alerts in 100 are for a real fraud, so a flagged payment is a fraud with
 
 ### 49. Counting the opposite or Base rate: telling them apart
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 49 of 54*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 49 of 54*
 
 [reviewers only: card kind `lookalike`, id `look-complement-baserate`]
 
@@ -1747,9 +1747,9 @@ The fourth and fifth kinds both ask for a chance, and both can be about a machin
 
 **Why this one and not the other**
 
-In Case A there are 3 separate sensors, each of which catches a fault with a chance of 90%, and the question is how likely it is that at least one catches it. The chance that none of them catches it is 0.1 × 0.1 × 0.1 = 0.001, so the chance that at least one does is 1 − 0.001 = 0.999. The key’s answer is **“The chance that at least one of several things happens”**.
+In Case A there are 3 separate sensors, each of which catches a fault with a chance of 90%, and the question is how likely it is that at least one catches it. The chance that none of them catches it is 0.1 × 0.1 × 0.1 = 0.001, so the chance that at least one does is 1 − 0.001 = 0.999. The answer is **“The chance that at least one of several things happens”**.
 
-In Case B there is one sensor that has flagged a part, and the question is how likely it is that the part is really faulty. Faulty parts are rare, 1 in 100, and the sensor sometimes flags a sound part. In a group of 10,000 parts, 100 are faulty and the sensor flags 90 of them. It also flags 5% of the 9,900 sound ones, which is 495. So 90 of the 585 flagged parts are faulty, a chance of about 15%. The key’s answer is **“The chance that a test result is right”**.
+In Case B there is one sensor that has flagged a part, and the question is how likely it is that the part is really faulty. Faulty parts are rare, 1 in 100, and the sensor sometimes flags a sound part. In a group of 10,000 parts, 100 are faulty and the sensor flags 90 of them. It also flags 5% of the 9,900 sound ones, which is 495. So 90 of the 585 flagged parts are faulty, a chance of about 15%. The answer is **“The chance that a test result is right”**.
 
 Both are about chances, and both have a sensor that does the right thing 90% of the time. What differs is what is asked. In Case A the 90% is the chance for each of several sensors, and the question asks about all of them together. In Case B there is one sensor, the 90% is how often it flags a faulty part, and the question asks how far to trust a single flag.
 
@@ -1757,7 +1757,7 @@ Both are about chances, and both have a sensor that does the right thing 90% of 
 
 Are there several separate things, with a chance for each, that have yet to happen, or is there one result that has already come in and a question about how far to trust it?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Counting the opposite | Base rate |
 |---|---|---|
@@ -1768,7 +1768,7 @@ Are there several separate things, with a chance for each, that have yet to happ
 
 ### 50. A wrong idea: a 95% accurate test means a 95% chance that I have it
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 50 of 54*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 50 of 54*
 
 [reviewers only: card kind `refute`, id `refute-test`]
 
@@ -1795,17 +1795,17 @@ So when a result comes in, three things decide how far to trust it: how often th
 
 ### 51. The one question that tells the five kinds apart
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 51 of 54*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 51 of 54*
 
 [reviewers only: card kind `question`, id `q-c1`]
 
-At the foot of each kind’s first card you saw the key’s question with one answer under it. This card puts the question and its five answers in one place, as the key shows them, and says why the key asks it before any working.
+At the foot of each kind’s first card you saw the question with one answer under it. This card puts the question and its five answers in one place and says why it is asked before any working.
 
-**The key asks:** **“What does the problem ask you to count, or find the chance of?”**
+**The question:** **“What does the problem ask you to count, or find the chance of?”**
 
 **What it is for.** Tells apart three ways of counting how many results there are, and two ways of finding a chance.
 
-**Its answers, exactly as the key shows them**
+**Its answers**
 
 Each answer leads to one name, and so rules out the other four.
 
@@ -1831,7 +1831,7 @@ The same numbers give very different answers depending on how the choices are ma
 
 The same numbers give very different answers depending on how the choices are made and on what is asked, and a wrong procedure gives a number as neat as the right one. You saw it on the first card of this unit: 9 things and 4 picks give 6,561 when each pick has a full list, 3,024 when each pick uses one up and the order counts, and 126 when each pick uses one up and the order does not count. Nothing in the number says which was meant. Only the question can, and only the words of the problem can answer it.
 
-That is why this question comes before any working, and why every problem in this unit starts with it. In this unit it is the only question after the key’s first one, so its answer leads straight to a name, and the name leads to the procedure. Your route is the answer to the first question and then this one.
+That is why this question comes before any working, and why every problem in this unit starts with it. In this unit it is the only question after the first one, so its answer leads straight to a name, and the name leads to the procedure. Your answers on the way are your answer to the first question and then your answer to this one.
 
 **How to answer it from a case**
 
@@ -1854,13 +1854,13 @@ No problem in this unit shows two of the answers at once, because each answer as
 
 ### 52. A question about a new case
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 52 of 54*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 52 of 54*
 
 [reviewers only: card kind `check`, id `check-c1`]
 
 > A radio presenter picks 4 of her 10 new songs and plays them one after another, in an order she fixes in advance. How many different running orders are possible?
 
-**The key asks:** **“What does the problem ask you to count, or find the chance of?”**
+**The question:** **“What does the problem ask you to count, or find the chance of?”**
 
 - The ways to make several choices, each from its own list
 - The ways to pick from one group, when the order counts
@@ -2396,9 +2396,9 @@ After each answer, look at the slip named behind a wrong choice. Every wrong cho
 - If you chose 53.1%: You chose **53.1%**. That is the answer you get when you stop at the chance that none of them happens and never take it away from 1.
 - Taught on: “Worked: a bus that is late at least once in a week” (one tap opens the card).
 
-#### Last stage. No help. First answer the key’s questions in order and give the kind of problem it is. Then work the problem with that procedure and choose the answer.
+#### Last stage. No help. First answer the questions in order and say what kind of problem it is. Then work the problem with that procedure and choose the answer.
 
-Each question is shown with all of its answers from the key, in the key’s order, and the names offered are the five this unit teaches.
+Each question is shown with all of its answers, in order, and the names offered are the five this unit teaches.
 
 **Drill item 21 of 46**
 
@@ -2417,8 +2417,8 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - If you are right: “Right: **How whole numbers split, repeat or are made up.**” The problem asks whether 57 stamps can be shared evenly between albums: “every album holds the same number of stamps” and “Is it possible?”. There is nothing else to work out: no price, no time passing, no shape.
-- If you miss: “The answer is …”, the same reason, and then the line built from the key for the answer you chose.
-- Then, right or wrong: “This case leaves the part of the key you have been taught. The questions that follow this answer come in a part of the course you have not reached, so the case stops here.”
+- If you miss: “The answer is …”, the same reason, and then the line built from the answers’ own wording for the answer you chose.
+- Then, right or wrong: “The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.”
 
 **Drill item 22 of 46**
 
@@ -2437,8 +2437,8 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - If you are right: “Right: **A missing number, from a formula, a rate or totals.**” The problem gives a rate, so much for so many metres, and a new amount to scale it to: “sells 6 metres of chain for €15” and “How much will it cost her?”. The price is the number it leaves out.
-- If you miss: “The answer is …”, the same reason, and then the line built from the key for the answer you chose.
-- Then, right or wrong: “This case leaves the part of the key you have been taught. The questions that follow this answer come in a part of the course you have not reached, so the case stops here.”
+- If you miss: “The answer is …”, the same reason, and then the line built from the answers’ own wording for the answer you chose.
+- Then, right or wrong: “The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.”
 
 **Drill item 23 of 46**
 
@@ -2457,8 +2457,8 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - If you are right: “Right: **What an amount becomes over time, or how long it takes.**” One amount, the money in the jar, is followed through time: “Tomas adds €15 to it every month” and “How many months until the jar holds €300?”. It goes up by the same number every month, and the question asks how long it takes to reach a target.
-- If you miss: “The answer is …”, the same reason, and then the line built from the key for the answer you chose.
-- Then, right or wrong: “This case leaves the part of the key you have been taught. The questions that follow this answer come in a part of the course you have not reached, so the case stops here.”
+- If you miss: “The answer is …”, the same reason, and then the line built from the answers’ own wording for the answer you chose.
+- Then, right or wrong: “The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.”
 
 **Drill item 24 of 46**
 
@@ -2476,9 +2476,9 @@ Each question is shown with all of its answers from the key, in the key’s orde
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes.**” The width, the height and the brace make a *right-angled triangle*, because a gate has square corners. The problem gives two of its sides and asks for the third: “The gate is 1.5 m wide and 2 m high” and “How long is the brace?”.
-- If you miss: “The answer is …”, the same reason, and then the line built from the key for the answer you chose.
-- Then, right or wrong: “This case leaves the part of the key you have been taught. The questions that follow this answer come in a part of the course you have not reached, so the case stops here.”
+- If you are right: “Right: **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes.**” The width, the height and the brace make a *right-angled triangle*, because the rectangle has square corners. The problem gives two of its sides and asks for the third: “The gate is 1.5 m wide and 2 m high” and “How long is the brace?”.
+- If you miss: “The answer is …”, the same reason, and then the line built from the answers’ own wording for the answer you chose.
+- Then, right or wrong: “The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.”
 
 **Drill item 25 of 46**
 
@@ -2497,8 +2497,8 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - If you are right: “Right: **How whole numbers split, repeat or are made up.**” The problem asks whether 57 stamps can be shared evenly between albums: “every album holds the same number of stamps” and “Is it possible?”. There is nothing else to work out: no price, no time passing, no shape.
-- If you miss: “The answer is …”, the same reason, and then the line built from the key for the answer you chose.
-- Then, right or wrong: “This case leaves the part of the key you have been taught. The questions that follow this answer come in a part of the course you have not reached, so the case stops here.”
+- If you miss: “The answer is …”, the same reason, and then the line built from the answers’ own wording for the answer you chose.
+- Then, right or wrong: “The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.”
 
 **Drill item 26 of 46**
 
@@ -2517,33 +2517,33 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - If you are right: “Right: **A missing number, from a formula, a rate or totals.**” The problem gives a rate, so much for so many metres, and a new amount to scale it to: “sells 6 metres of chain for €15” and “How much will it cost her?”. The price is the number it leaves out.
-- If you miss: “The answer is …”, the same reason, and then the line built from the key for the answer you chose.
-- Then, right or wrong: “This case leaves the part of the key you have been taught. The questions that follow this answer come in a part of the course you have not reached, so the case stops here.”
+- If you miss: “The answer is …”, the same reason, and then the line built from the answers’ own wording for the answer you chose.
+- Then, right or wrong: “The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.”
 
 **Drill item 27 of 46**
 
-> A driver can go from town A to town B by 4 different roads, and from town B to town C by 3 different roads. How many different routes are there from A to C, going through B?
+> A driver can go from town A to town B by 4 different roads, and from town B to town C by 3 different roads. How many different ways are there to drive from A to C, going through B?
 
 **You are asked first, in order:** What does the problem ask you to work out? → What does the problem ask you to count, or find the chance of? → What kind of problem is it?
 
 **You are asked:** Now work the problem with that procedure and choose the answer.
 
-- 12 routes
-- 7 routes
-- 4 routes
+- 12 ways
+- 7 ways
+- 4 ways
 
 **Shown as soon as you answer**
 
-- The answer: **12 routes**, and the kind of problem is **Multiplying the choices**.
+- The answer: **12 ways**, and the kind of problem is **Multiplying the choices**.
 - The working, step by step:
   - Name each choice that has to be made: first leg; second leg
   - Count the full list for each choice: first leg: 4; second leg: 3
-  - Multiply the counts: 4 × 3 = 12. That is 12 routes
+  - Multiply the counts: 4 × 3 = 12. That is 12 ways to go
   Every item on the first list can go with every item on the second, and every pair made that way can go with every item on the next list, and so on through all the lists. So the results fill a block, with as many rows as the first count, each as long as the second, and so on, and the size of the block is the counts multiplied together. Adding the counts would count each single item once and never a whole result made of one from each list.
-- If you chose 7 routes: You chose **7 routes**. That is the answer you get when you add the sizes of the lists, which counts each single item once and never a whole result made of one from each list.
-- If you chose 4 routes: You chose **4 routes**. That is the answer you get when you leave the last choice out of the product, so every result is missing one part.
-- What does the problem ask you to work out? **How many ways something can turn out, or how likely it is.** The words “How many different routes are there from A to C, going through B?” ask how many different routes there are, a count of ways something can turn out. The problem does not change as time passes, has no hidden number for a calculation to fit, does not share whole numbers out in groups and has no shape. It is about the number of ways that something can come out, or its chance, so the key’s first answer is **“How many ways something can turn out, or how likely it is”**.
-- What does the problem ask you to count, or find the chance of? **The ways to make several choices, each from its own list.** The words “from town A to town B by 4 different roads, and from town B to town C by 3 different roads” give two separate choices, a road for the first leg and a road for the second, each from a list of its own, and ask how many different routes there are, so the key’s answer is **“The ways to make several choices, each from its own list”**.
+- If you chose 7 ways: You chose **7 ways**. That is the answer you get when you add the sizes of the lists, which counts each single item once and never a whole result made of one from each list.
+- If you chose 4 ways: You chose **4 ways**. That is the answer you get when you leave the last choice out of the product, so every result is missing one part.
+- What does the problem ask you to work out? **How many ways something can turn out, or how likely it is.** The words “How many different ways are there to drive from A to C, going through B?” ask how many different ways there are to go, a count of ways something can turn out. The problem does not change as time passes, has no hidden number for a calculation to fit, does not share whole numbers out in groups and has no shape. It is about the number of ways that something can come out, or its chance, so the answer to the first question is **“How many ways something can turn out, or how likely it is”**.
+- What does the problem ask you to count, or find the chance of? **The ways to make several choices, each from its own list.** The words “from town A to town B by 4 different roads, and from town B to town C by 3 different roads” give two separate choices, a road for the first leg and a road for the second, each from a list of its own, and ask how many different ways there are to go, so the answer is **“The ways to make several choices, each from its own list”**.
 - Why not **Permutations**: Picking from one group, so that each pick takes something off the list for the next, would be **Permutations**. Here every choice has a full list of its own, and nothing picked on one list changes another.
 - Taught on: “Worked: how many different sandwiches?” (one tap opens the card).
 
@@ -2569,8 +2569,8 @@ Each question is shown with all of its answers from the key, in the key’s orde
   The first pick can be any one of the group. Whoever it is, that one is taken out, so the next pick is made from a group one smaller, and the pick after that from one smaller again. Each pick is a choice from a list of its own, so the counts multiply, and a different order is counted as a different result, which is what the problem asks for.
 - If you chose 60 ways to give out the prizes: You chose **60 ways to give out the prizes**. That is the answer you get when you multiply the size of the group by the number of picks, 20 × 3, so no pick ever uses anyone up.
 - If you chose 8,000 ways to give out the prizes: You chose **8,000 ways to give out the prizes**. That is the answer you get when you let the same one be picked every time, so each pick still has all 20 to choose from.
-- What does the problem ask you to work out? **How many ways something can turn out, or how likely it is.** The words “In how many different ways can the three prizes go to tickets?” ask in how many different ways the prizes can go to tickets, a count of ways something can turn out. Nothing in it follows an amount as time passes, hides a number that a calculation must fit, or splits whole numbers into groups, and there is no shape to measure. What it asks for is a count of the results, or the chance of something, so the key’s first answer is **“How many ways something can turn out, or how likely it is”**.
-- What does the problem ask you to count, or find the chance of? **The ways to pick from one group, when the order counts.** The words “a first, a second and a third prize. Each ticket can win at most one prize” show three different prizes drawn one after another from one drum of 20 tickets, with no ticket winning twice, and ask how many different ways there are, so the key’s answer is **“The ways to pick from one group, when the order counts”**.
+- What does the problem ask you to work out? **How many ways something can turn out, or how likely it is.** The words “In how many different ways can the three prizes go to tickets?” ask in how many different ways the prizes can go to tickets, a count of ways something can turn out. Nothing in it follows an amount as time passes, hides a number that a calculation must fit, or splits whole numbers into groups, and there is no shape to measure. What it asks for is a count of the results, or the chance of something, so the answer to the first question is **“How many ways something can turn out, or how likely it is”**.
+- What does the problem ask you to count, or find the chance of? **The ways to pick from one group, when the order counts.** The words “a first, a second and a third prize. Each ticket can win at most one prize” show three different prizes drawn one after another from one drum of 20 tickets, with no ticket winning twice, and ask how many different ways there are, so the answer is **“The ways to pick from one group, when the order counts”**.
 - Why not **Combinations**: If the same things in a different order were the same result, it would be **Combinations**. Here a different order is a different result, so every order is counted.
 - Taught on: “Worked: who can fill three jobs in a club?” (one tap opens the card).
 
@@ -2597,8 +2597,8 @@ Each question is shown with all of its answers from the key, in the key’s orde
   Counting the picks in order counts every group once for every order its 4 cards can be put in, and that is 4 × 3 × 2 × 1 = 24 orders. So the count in order is 24 times the number of different groups, and dividing by 24 leaves each group counted once.
 - If you chose 11,880 hands: You chose **11,880 hands**. That is the answer you get when you stop after counting the picks in order, so each group is counted once for every order it can be put in.
 - If you chose 2,970 hands: You chose **2,970 hands**. That is the answer you get when you divide by the number of picks, 4, instead of by the number of orders one group can be put in, 24.
-- What does the problem ask you to work out? **How many ways something can turn out, or how likely it is.** The words “How many different hands are there?” ask how many different hands there are, a count of ways something can turn out. Nothing here is followed through time, no number is hidden for a calculation to fit, no whole number is split into groups, and no shape is measured. The problem asks for the number of different results, or for a chance, which is the key’s first answer **“How many ways something can turn out, or how likely it is”**.
-- What does the problem ask you to count, or find the chance of? **The ways to pick a group, when the order does not count.** The words “A hand is the same hand whatever order the cards are held in” show 4 cards taken from a pack of 12, where a hand is the same in any order, so that the same cards held in a different order are one hand, so the key’s answer is **“The ways to pick a group, when the order does not count”**.
+- What does the problem ask you to work out? **How many ways something can turn out, or how likely it is.** The words “How many different hands are there?” ask how many different hands there are, a count of ways something can turn out. Nothing here is followed through time, no number is hidden for a calculation to fit, no whole number is split into groups, and no shape is measured. The problem asks for the number of different results, or for a chance, which is the answer to the first question **“How many ways something can turn out, or how likely it is”**.
+- What does the problem ask you to count, or find the chance of? **The ways to pick a group, when the order does not count.** The words “A hand is the same hand whatever order the cards are held in” show 4 cards taken from a pack of 12, where a hand is the same in any order, so that the same cards held in a different order are one hand, so the answer is **“The ways to pick a group, when the order does not count”**.
 - Why not **Permutations**: If a different order counted as a different result, it would be **Permutations**. Here the same things in any order are one result, so the count in order has to be divided down.
 - Taught on: “Worked: how many different quiz teams?” (one tap opens the card).
 
@@ -2624,8 +2624,8 @@ Each question is shown with all of its answers from the key, in the key’s orde
   Either at least one of the things happens, or none of them does. These two cannot both be true and nothing else can happen, so their chances add up to 1. The chance of none is easy to find: the things are separate, so it is one product. What is left of 1 is the chance that one or more happens.
 - If you chose 10%: You chose **10%**. That is the answer you get when you add the chances of the separate things, which counts a run where two or more happen more than once, so the sum overstates the chance and, with enough things, passes 100%.
 - If you chose 90.4%: You chose **90.4%**. That is the answer you get when you stop at the chance that none of them happens and never take it away from 1.
-- What does the problem ask you to work out? **How many ways something can turn out, or how likely it is.** The words “How likely is it that at least one joint leaks?” ask how likely it is that something happens, a chance and not a count. The problem does not change as time passes, has no hidden number for a calculation to fit, does not share whole numbers out in groups and has no shape. It is about the number of ways that something can come out, or its chance, so the key’s first answer is **“How many ways something can turn out, or how likely it is”**.
-- What does the problem ask you to count, or find the chance of? **The chance that at least one of several things happens.** The words “Each joint has a 2% chance of leaking, and the joints are separate. How likely is it that at least one joint leaks?” give the chance of each of 5 separate joints leaking and ask how likely it is that at least one leaks, so the key’s answer is **“The chance that at least one of several things happens”**.
+- What does the problem ask you to work out? **How many ways something can turn out, or how likely it is.** The words “How likely is it that at least one joint leaks?” ask how likely it is that something happens, a chance and not a count. The problem does not change as time passes, has no hidden number for a calculation to fit, does not share whole numbers out in groups and has no shape. It is about the number of ways that something can come out, or its chance, so the answer to the first question is **“How many ways something can turn out, or how likely it is”**.
+- What does the problem ask you to count, or find the chance of? **The chance that at least one of several things happens.** The words “Each joint has a 2% chance of leaking, and the joints are separate. How likely is it that at least one joint leaks?” give the chance of each of 5 separate joints leaking and ask how likely it is that at least one leaks, so the answer is **“The chance that at least one of several things happens”**.
 - Why not **Multiplying the choices**: The problem asks for a chance, not a count of results. **Multiplying the choices** would be the name if it asked how many different results there are, and it also multiplies separate things, which is why the two look alike.
 - Taught on: “Worked: a bus that is late at least once in a week” (one tap opens the card).
 
@@ -2653,8 +2653,8 @@ Each question is shown with all of its answers from the key, in the key’s orde
   A positive result comes from two kinds of people: those who have the thing and are rightly flagged, and those who do not have it and are wrongly flagged. The chance that a positive result is right is the share of all the positive results that are of the first kind. When the thing is rare, the second group starts from nearly everyone, so a small rate of wrong flags still gives many wrong positive results. Counting both kinds in an imagined group shows the share directly.
 - If you chose 90%: You chose **90%**. That is the answer you get when you take the share of people who have it that the test catches, 90%, as the chance that a positive result is right.
 - If you chose 3.6%: You chose **3.6%**. That is the answer you get when you divide the right positive results by the whole group, 360 ÷ 10,000, instead of by the positive results.
-- What does the problem ask you to work out? **How many ways something can turn out, or how likely it is.** The words “How likely is it that the house has damp?” ask how likely it is that a result is right, a chance and not a count. Nothing in it follows an amount as time passes, hides a number that a calculation must fit, or splits whole numbers into groups, and there is no shape to measure. What it asks for is a count of the results, or the chance of something, so the key’s first answer is **“How many ways something can turn out, or how likely it is”**.
-- What does the problem ask you to count, or find the chance of? **The chance that a test result is right.** The words “A damp detector shows damp in 90% of the houses that have it, and wrongly shows damp in 6% of the houses that do not” give a detector that has shown a result, how common damp is, and how often the detector is right and wrong, and ask how likely it is that the result is right, so the key’s answer is **“The chance that a test result is right”**.
+- What does the problem ask you to work out? **How many ways something can turn out, or how likely it is.** The words “How likely is it that the house has damp?” ask how likely it is that a result is right, a chance and not a count. Nothing in it follows an amount as time passes, hides a number that a calculation must fit, or splits whole numbers into groups, and there is no shape to measure. What it asks for is a count of the results, or the chance of something, so the answer to the first question is **“How many ways something can turn out, or how likely it is”**.
+- What does the problem ask you to count, or find the chance of? **The chance that a test result is right.** The words “A damp detector shows damp in 90% of the houses that have it, and wrongly shows damp in 6% of the houses that do not” give a detector that has shown a result, how common damp is, and how often the detector is right and wrong, and ask how likely it is that the result is right, so the answer is **“The chance that a test result is right”**.
 - Why not **Counting the opposite**: The problem is not about at least one of several separate things happening, which is **Counting the opposite**. A test has given one result, and the question is how far to trust it.
 - Taught on: “Worked: how far to trust a positive test” (one tap opens the card).
 
@@ -2680,8 +2680,8 @@ Each question is shown with all of its answers from the key, in the key’s orde
   Every item on the first list can go with every item on the second, and every pair made that way can go with every item on the next list, and so on through all the lists. So the results fill a block, with as many rows as the first count, each as long as the second, and so on, and the size of the block is the counts multiplied together. Adding the counts would count each single item once and never a whole result made of one from each list.
 - If you chose 82 names: You chose **82 names**. That is the answer you get when you add the sizes of the lists, which counts each single item once and never a whole result made of one from each list.
 - If you chose 67,600 names: You chose **67,600 names**. That is the answer you get when you leave the last choice out of the product, so every result is missing one part.
-- What does the problem ask you to work out? **How many ways something can turn out, or how likely it is.** The words “How many different account names can it make?” ask how many different account names can be made, a count of ways something can turn out. Nothing here is followed through time, no number is hidden for a calculation to fit, no whole number is split into groups, and no shape is measured. The problem asks for the number of different results, or for a chance, which is the key’s first answer **“How many ways something can turn out, or how likely it is”**.
-- What does the problem ask you to count, or find the chance of? **The ways to make several choices, each from its own list.** The words “2 letters from A to Z followed by 3 digits from 0 to 9, and letters and digits may repeat” give five separate choices, two letters and three digits, each from a full list that can be used again, and ask how many different names there are, so the key’s answer is **“The ways to make several choices, each from its own list”**.
+- What does the problem ask you to work out? **How many ways something can turn out, or how likely it is.** The words “How many different account names can it make?” ask how many different account names can be made, a count of ways something can turn out. Nothing here is followed through time, no number is hidden for a calculation to fit, no whole number is split into groups, and no shape is measured. The problem asks for the number of different results, or for a chance, which is the answer to the first question **“How many ways something can turn out, or how likely it is”**.
+- What does the problem ask you to count, or find the chance of? **The ways to make several choices, each from its own list.** The words “2 letters from A to Z followed by 3 digits from 0 to 9, and letters and digits may repeat” give five separate choices, two letters and three digits, each from a full list that can be used again, and ask how many different names there are, so the answer is **“The ways to make several choices, each from its own list”**.
 - Why not **Permutations**: Picking from one group, so that each pick takes something off the list for the next, would be **Permutations**. Here every choice has a full list of its own, and nothing picked on one list changes another.
 - Taught on: “Worked: how many different sandwiches?” (one tap opens the card).
 
@@ -2707,8 +2707,8 @@ Each question is shown with all of its answers from the key, in the key’s orde
   The first pick can be any one of the group. Whoever it is, that one is taken out, so the next pick is made from a group one smaller, and the pick after that from one smaller again. Each pick is a choice from a list of its own, so the counts multiply, and a different order is counted as a different result, which is what the problem asks for.
 - If you chose 28 lists: You chose **28 lists**. That is the answer you get when you multiply the size of the group by the number of picks, 7 × 4, so no pick ever uses anyone up.
 - If you chose 2,401 lists: You chose **2,401 lists**. That is the answer you get when you let the same one be picked every time, so each pick still has all 7 to choose from.
-- What does the problem ask you to work out? **How many ways something can turn out, or how likely it is.** The words “How many different morning lists are possible?” ask how many different morning lists are possible, a count of ways something can turn out. The problem does not change as time passes, has no hidden number for a calculation to fit, does not share whole numbers out in groups and has no shape. It is about the number of ways that something can come out, or its chance, so the key’s first answer is **“How many ways something can turn out, or how likely it is”**.
-- What does the problem ask you to count, or find the chance of? **The ways to pick from one group, when the order counts.** The words “only 4 can be seen in the morning, one after another, and the panel fixes the order of the four” show 4 of 7 applicants taken one after another, with the order of the four fixed, so that the order is part of the result, so the key’s answer is **“The ways to pick from one group, when the order counts”**.
+- What does the problem ask you to work out? **How many ways something can turn out, or how likely it is.** The words “How many different morning lists are possible?” ask how many different morning lists are possible, a count of ways something can turn out. The problem does not change as time passes, has no hidden number for a calculation to fit, does not share whole numbers out in groups and has no shape. It is about the number of ways that something can come out, or its chance, so the answer to the first question is **“How many ways something can turn out, or how likely it is”**.
+- What does the problem ask you to count, or find the chance of? **The ways to pick from one group, when the order counts.** The words “only 4 can be seen in the morning, one after another, and the panel fixes the order of the four” show 4 of 7 applicants taken one after another, with the order of the four fixed, so that the order is part of the result, so the answer is **“The ways to pick from one group, when the order counts”**.
 - Why not **Combinations**: If the same things in a different order were the same result, it would be **Combinations**. Here a different order is a different result, so every order is counted.
 - Taught on: “Worked: who can fill three jobs in a club?” (one tap opens the card).
 
@@ -2735,8 +2735,8 @@ Each question is shown with all of its answers from the key, in the key’s orde
   Counting the picks in order counts every group once for every order its 3 managers can be put in, and that is 3 × 2 × 1 = 6 orders. So the count in order is 6 times the number of different groups, and dividing by 6 leaves each group counted once.
 - If you chose 990 panels: You chose **990 panels**. That is the answer you get when you stop after counting the picks in order, so each group is counted once for every order it can be put in.
 - If you chose 330 panels: You chose **330 panels**. That is the answer you get when you divide by the number of picks, 3, instead of by the number of orders one group can be put in, 6.
-- What does the problem ask you to work out? **How many ways something can turn out, or how likely it is.** The words “How many different panels can the company pick?” ask how many different panels can be picked, a count of ways something can turn out. Nothing in it follows an amount as time passes, hides a number that a calculation must fit, or splits whole numbers into groups, and there is no shape to measure. What it asks for is a count of the results, or the chance of something, so the key’s first answer is **“How many ways something can turn out, or how likely it is”**.
-- What does the problem ask you to count, or find the chance of? **The ways to pick a group, when the order does not count.** The words “All three have an equal say and sit around one table” show 3 managers taken from 11 who have an equal say, so that no order or role separates one panel from another with the same three, so the key’s answer is **“The ways to pick a group, when the order does not count”**.
+- What does the problem ask you to work out? **How many ways something can turn out, or how likely it is.** The words “How many different panels can the company pick?” ask how many different panels can be picked, a count of ways something can turn out. Nothing in it follows an amount as time passes, hides a number that a calculation must fit, or splits whole numbers into groups, and there is no shape to measure. What it asks for is a count of the results, or the chance of something, so the answer to the first question is **“How many ways something can turn out, or how likely it is”**.
+- What does the problem ask you to count, or find the chance of? **The ways to pick a group, when the order does not count.** The words “All three have an equal say and sit around one table” show 3 managers taken from 11 who have an equal say, so that no order or role separates one panel from another with the same three, so the answer is **“The ways to pick a group, when the order does not count”**.
 - Why not **Permutations**: If a different order counted as a different result, it would be **Permutations**. Here the same things in any order are one result, so the count in order has to be divided down.
 - Taught on: “Worked: how many different quiz teams?” (one tap opens the card).
 
@@ -2762,8 +2762,8 @@ Each question is shown with all of its answers from the key, in the key’s orde
   Either at least one of the things happens, or none of them does. These two cannot both be true and nothing else can happen, so their chances add up to 1. The chance of none is easy to find: the things are separate, so it is one product. What is left of 1 is the chance that one or more happens.
 - If you chose 35%: You chose **35%**. That is the answer you get when you add the chances of the separate things, which counts a run where two or more happen more than once, so the sum overstates the chance and, with enough things, passes 100%.
 - If you chose 68.4%: You chose **68.4%**. That is the answer you get when you stop at the chance that none of them happens and never take it away from 1.
-- What does the problem ask you to work out? **How many ways something can turn out, or how likely it is.** The words “How likely is it that at least one loan is not repaid?” ask how likely it is that something happens, a chance and not a count. Nothing here is followed through time, no number is hidden for a calculation to fit, no whole number is split into groups, and no shape is measured. The problem asks for the number of different results, or for a chance, which is the key’s first answer **“How many ways something can turn out, or how likely it is”**.
-- What does the problem ask you to count, or find the chance of? **The chance that at least one of several things happens.** The words “The chance that each loan is not repaid is 10% for the first, 5% for the second and 20% for the third” give a different chance for each of 3 separate loans and ask how likely it is that at least one is not repaid, so the key’s answer is **“The chance that at least one of several things happens”**.
+- What does the problem ask you to work out? **How many ways something can turn out, or how likely it is.** The words “How likely is it that at least one loan is not repaid?” ask how likely it is that something happens, a chance and not a count. Nothing here is followed through time, no number is hidden for a calculation to fit, no whole number is split into groups, and no shape is measured. The problem asks for the number of different results, or for a chance, which is the answer to the first question **“How many ways something can turn out, or how likely it is”**.
+- What does the problem ask you to count, or find the chance of? **The chance that at least one of several things happens.** The words “The chance that each loan is not repaid is 10% for the first, 5% for the second and 20% for the third” give a different chance for each of 3 separate loans and ask how likely it is that at least one is not repaid, so the answer is **“The chance that at least one of several things happens”**.
 - Why not **Multiplying the choices**: The problem asks for a chance, not a count of results. **Multiplying the choices** would be the name if it asked how many different results there are, and it also multiplies separate things, which is why the two look alike.
 - Taught on: “Worked: a bus that is late at least once in a week” (one tap opens the card).
 
@@ -2791,8 +2791,8 @@ Each question is shown with all of its answers from the key, in the key’s orde
   A positive result comes from two kinds of people: those who have the thing and are rightly flagged, and those who do not have it and are wrongly flagged. The chance that a positive result is right is the share of all the positive results that are of the first kind. When the thing is rare, the second group starts from nearly everyone, so a small rate of wrong flags still gives many wrong positive results. Counting both kinds in an imagined group shows the share directly.
 - If you chose 80%: You chose **80%**. That is the answer you get when you take the share of people who have it that the test catches, 80%, as the chance that a positive result is right.
 - If you chose 2%: You chose **2%**. That is the answer you get when you divide the right positive results by the whole group, 800 ÷ 40,000, instead of by the positive results.
-- What does the problem ask you to work out? **How many ways something can turn out, or how likely it is.** The words “How likely is it that the applicant will miss repayments?” ask how likely it is that a result is right, a chance and not a count. The problem does not change as time passes, has no hidden number for a calculation to fit, does not share whole numbers out in groups and has no shape. It is about the number of ways that something can come out, or its chance, so the key’s first answer is **“How many ways something can turn out, or how likely it is”**.
-- What does the problem ask you to count, or find the chance of? **The chance that a test result is right.** The words “The model flags 80% of those applicants, and also flags 10% of the applicants who repay on time” and “An applicant has been flagged” give a model that has flagged someone, how common missed repayments are, and how often the model is right and wrong, and ask how likely it is that the flag is right, so the key’s answer is **“The chance that a test result is right”**.
+- What does the problem ask you to work out? **How many ways something can turn out, or how likely it is.** The words “How likely is it that the applicant will miss repayments?” ask how likely it is that a result is right, a chance and not a count. The problem does not change as time passes, has no hidden number for a calculation to fit, does not share whole numbers out in groups and has no shape. It is about the number of ways that something can come out, or its chance, so the answer to the first question is **“How many ways something can turn out, or how likely it is”**.
+- What does the problem ask you to count, or find the chance of? **The chance that a test result is right.** The words “The model flags 80% of those applicants, and also flags 10% of the applicants who repay on time” and “An applicant has been flagged” give a model that has flagged someone, how common missed repayments are, and how often the model is right and wrong, and ask how likely it is that the flag is right, so the answer is **“The chance that a test result is right”**.
 - Why not **Counting the opposite**: The problem is not about at least one of several separate things happening, which is **Counting the opposite**. A test has given one result, and the question is how far to trust it.
 - Taught on: “Worked: how far to trust a positive test” (one tap opens the card).
 
@@ -2818,8 +2818,8 @@ Each question is shown with all of its answers from the key, in the key’s orde
   Every item on the first list can go with every item on the second, and every pair made that way can go with every item on the next list, and so on through all the lists. So the results fill a block, with as many rows as the first count, each as long as the second, and so on, and the size of the block is the counts multiplied together. Adding the counts would count each single item once and never a whole result made of one from each list.
 - If you chose 30 settings: You chose **30 settings**. That is the answer you get when you multiply the size of the list by the number of choices, 10 × 3, instead of using the full list once for each choice.
 - If you chose 100 settings: You chose **100 settings**. That is the answer you get when you leave the last choice out of the product, so every result is missing one part.
-- What does the problem ask you to work out? **How many ways something can turn out, or how likely it is.** The words “How many different combinations does it have?” ask how many different codes the lock has, a count of ways something can turn out. Nothing in it follows an amount as time passes, hides a number that a calculation must fit, or splits whole numbers into groups, and there is no shape to measure. What it asks for is a count of the results, or the chance of something, so the key’s first answer is **“How many ways something can turn out, or how likely it is”**.
-- What does the problem ask you to count, or find the chance of? **The ways to make several choices, each from its own list.** The words “3 rings, and each ring is marked 0 to 9” give three separate choices, one for each ring, each from the same full list of ten digits, and ask how many different settings there are, whatever the lock is called, so the key’s answer is **“The ways to make several choices, each from its own list”**.
+- What does the problem ask you to work out? **How many ways something can turn out, or how likely it is.** The words “How many different combinations does it have?” ask how many different codes the lock has, a count of ways something can turn out. Nothing in it follows an amount as time passes, hides a number that a calculation must fit, or splits whole numbers into groups, and there is no shape to measure. What it asks for is a count of the results, or the chance of something, so the answer to the first question is **“How many ways something can turn out, or how likely it is”**.
+- What does the problem ask you to count, or find the chance of? **The ways to make several choices, each from its own list.** The words “3 rings, and each ring is marked 0 to 9” give three separate choices, one for each ring, each from the same full list of ten digits, and ask how many different settings there are, whatever the lock is called, so the answer is **“The ways to make several choices, each from its own list”**.
 - Why not **Combinations**: The lock has the word “combination” in its name, but nothing is picked from a group and the order of the digits matters: 3, 5, 1 is a different setting from 1, 5, 3. Each ring is a separate choice from a full list. **Combinations** is the name for the kind in which the same picks in any order are one result.
 - Taught on: “Worked: how many different sandwiches?” (one tap opens the card).
 
@@ -2845,8 +2845,8 @@ Each question is shown with all of its answers from the key, in the key’s orde
   The first pick can be any one of the group. Whoever it is, that one is taken out, so the next pick is made from a group one smaller, and the pick after that from one smaller again. Each pick is a choice from a list of its own, so the counts multiply, and a different order is counted as a different result, which is what the problem asks for.
 - If you chose 30 codes: You chose **30 codes**. That is the answer you get when you multiply the size of the group by the number of picks, 10 × 3, so no pick ever uses anyone up.
 - If you chose 1,000 codes: You chose **1,000 codes**. That is the answer you get when you let the same one be picked every time, so each pick still has all 10 to choose from.
-- What does the problem ask you to work out? **How many ways something can turn out, or how likely it is.** The words “How many different codes are possible?” ask how many different codes are possible, a count of ways something can turn out. Nothing in it follows an amount as time passes, hides a number that a calculation must fit, or splits whole numbers into groups, and there is no shape to measure. What it asks for is a count of the results, or the chance of something, so the key’s first answer is **“How many ways something can turn out, or how likely it is”**.
-- What does the problem ask you to count, or find the chance of? **The ways to pick from one group, when the order counts.** The words “no digit can be used twice” and “is a different code from” show 3 digits taken from the 10, with no digit used twice, so each dial has one fewer to choose from, and a different order giving a different code, so the key’s answer is **“The ways to pick from one group, when the order counts”**.
+- What does the problem ask you to work out? **How many ways something can turn out, or how likely it is.** The words “How many different codes are possible?” ask how many different codes are possible, a count of ways something can turn out. Nothing in it follows an amount as time passes, hides a number that a calculation must fit, or splits whole numbers into groups, and there is no shape to measure. What it asks for is a count of the results, or the chance of something, so the answer to the first question is **“How many ways something can turn out, or how likely it is”**.
+- What does the problem ask you to count, or find the chance of? **The ways to pick from one group, when the order counts.** The words “no digit can be used twice” and “is a different code from” show 3 digits taken from the 10, with no digit used twice, so each dial has one fewer to choose from, and a different order giving a different code, so the answer is **“The ways to pick from one group, when the order counts”**.
 - Why not **Multiplying the choices**: Three dials marked 0 to 9 look like three separate choices, each from its own full list, which is **Multiplying the choices**. But here no digit may be used twice, so the second dial has only 9 digits left and the third only 8.
 - Taught on: “Worked: who can fill three jobs in a club?” (one tap opens the card).
 
@@ -2872,8 +2872,8 @@ Each question is shown with all of its answers from the key, in the key’s orde
   The first pick can be any one of the group. Whoever it is, that one is taken out, so the next pick is made from a group one smaller, and the pick after that from one smaller again. Each pick is a choice from a list of its own, so the counts multiply, and a different order is counted as a different result, which is what the problem asks for.
 - If you chose 126 menus: You chose **126 menus**. That is the answer you get when you treat the order as if it did not matter and divide by the 24 orders of 4 dishes, which counts each set of dishes once.
 - If you chose 6,561 menus: You chose **6,561 menus**. That is the answer you get when you let the same dish be picked for every course, so each course still has all 9 to choose from.
-- What does the problem ask you to work out? **How many ways something can turn out, or how likely it is.** The words “How many different tasting menus can the chef make?” ask how many different tasting menus can be made, a count of ways something can turn out. Nothing here is followed through time, no number is hidden for a calculation to fit, no whole number is split into groups, and no shape is measured. The problem asks for the number of different results, or for a chance, which is the key’s first answer **“How many ways something can turn out, or how likely it is”**.
-- What does the problem ask you to count, or find the chance of? **The ways to pick from one group, when the order counts.** The words “4 dishes picked from the 9 on its list” and “the order matters” show 4 dishes picked from one list of 9, one after another, and say that the order matters, so that two menus with the same dishes in a different order are different menus, so the key’s answer is **“The ways to pick from one group, when the order counts”**.
+- What does the problem ask you to work out? **How many ways something can turn out, or how likely it is.** The words “How many different tasting menus can the chef make?” ask how many different tasting menus can be made, a count of ways something can turn out. Nothing here is followed through time, no number is hidden for a calculation to fit, no whole number is split into groups, and no shape is measured. The problem asks for the number of different results, or for a chance, which is the answer to the first question **“How many ways something can turn out, or how likely it is”**.
+- What does the problem ask you to count, or find the chance of? **The ways to pick from one group, when the order counts.** The words “4 dishes picked from the 9 on its list” and “the order matters” show 4 dishes picked from one list of 9, one after another, and say that the order matters, so that two menus with the same dishes in a different order are different menus, so the answer is **“The ways to pick from one group, when the order counts”**.
 - Why not **Combinations**: The words “picked from” can sound like choosing a group, which is **Combinations**. But the chef says the order matters, so the same four dishes in a different order are a different menu, and each is counted.
 - Taught on: “Worked: who can fill three jobs in a club?” (one tap opens the card).
 
@@ -2900,8 +2900,8 @@ Each question is shown with all of its answers from the key, in the key’s orde
   Counting the picks in order counts every group once for every order its 3 tickets can be put in, and that is 3 × 2 × 1 = 6 orders. So the count in order is 6 times the number of different groups, and dividing by 6 leaves each group counted once.
 - If you chose 1,320 sets of tickets: You chose **1,320 sets of tickets**. That is the answer you get when you stop after counting the picks in order, so each group is counted once for every order it can be put in.
 - If you chose 440 sets of tickets: You chose **440 sets of tickets**. That is the answer you get when you divide by the number of picks, 3, instead of by the number of orders one group can be put in, 6.
-- What does the problem ask you to work out? **How many ways something can turn out, or how likely it is.** The words “How many different sets of 3 winning tickets can there be?” ask how many different sets of winning tickets there can be, a count of ways something can turn out. The problem does not change as time passes, has no hidden number for a calculation to fit, does not share whole numbers out in groups and has no shape. It is about the number of ways that something can come out, or its chance, so the key’s first answer is **“How many ways something can turn out, or how likely it is”**.
-- What does the problem ask you to count, or find the chance of? **The ways to pick a group, when the order does not count.** The words “Every winning ticket gets the same prize, a book token” show 3 tickets drawn from 12 that all win the same prize, so that the same 3 tickets drawn in a different order are one set, so the key’s answer is **“The ways to pick a group, when the order does not count”**.
+- What does the problem ask you to work out? **How many ways something can turn out, or how likely it is.** The words “How many different sets of 3 winning tickets can there be?” ask how many different sets of winning tickets there can be, a count of ways something can turn out. The problem does not change as time passes, has no hidden number for a calculation to fit, does not share whole numbers out in groups and has no shape. It is about the number of ways that something can come out, or its chance, so the answer to the first question is **“How many ways something can turn out, or how likely it is”**.
+- What does the problem ask you to count, or find the chance of? **The ways to pick a group, when the order does not count.** The words “Every winning ticket gets the same prize, a book token” show 3 tickets drawn from 12 that all win the same prize, so that the same 3 tickets drawn in a different order are one set, so the answer is **“The ways to pick a group, when the order does not count”**.
 - Why not **Permutations**: The tickets are drawn one after another, which sounds like picking in order, **Permutations**. But all three win the same prize, so which ticket came out first makes no difference. The same three tickets in any order are one result.
 - Taught on: “Worked: how many different quiz teams?” (one tap opens the card).
 
@@ -2927,8 +2927,8 @@ Each question is shown with all of its answers from the key, in the key’s orde
   Every item on the first list can go with every item on the second, and every pair made that way can go with every item on the next list, and so on through all the lists. So the results fill a block, with as many rows as the first count, each as long as the second, and so on, and the size of the block is the counts multiplied together. Adding the counts would count each single item once and never a whole result made of one from each list.
 - If you chose 24 sets: You chose **24 sets**. That is the answer you get when you multiply the size of the list by the number of choices, 8 × 3, instead of using the full list once for each choice.
 - If you chose 64 sets: You chose **64 sets**. That is the answer you get when you leave the last choice out of the product, so every result is missing one part.
-- What does the problem ask you to work out? **How many ways something can turn out, or how likely it is.** The words “How many different sets of three spins can there be, counting the order they came in?” ask how many different sets of three spins there are, a count of ways something can turn out. The problem does not change as time passes, has no hidden number for a calculation to fit, does not share whole numbers out in groups and has no shape. It is about the number of ways that something can come out, or its chance, so the key’s first answer is **“How many ways something can turn out, or how likely it is”**.
-- What does the problem ask you to count, or find the chance of? **The ways to make several choices, each from its own list.** The words “Each spin lands on one of 8 prizes, and a prize can come up more than once” show three separate spins, each landing on one of the same 8 prizes with repeats allowed, and ask how many different sets there are, so the key’s answer is **“The ways to make several choices, each from its own list”**.
+- What does the problem ask you to work out? **How many ways something can turn out, or how likely it is.** The words “How many different sets of three spins can there be, counting the order they came in?” ask how many different sets of three spins there are, a count of ways something can turn out. The problem does not change as time passes, has no hidden number for a calculation to fit, does not share whole numbers out in groups and has no shape. It is about the number of ways that something can come out, or its chance, so the answer to the first question is **“How many ways something can turn out, or how likely it is”**.
+- What does the problem ask you to count, or find the chance of? **The ways to make several choices, each from its own list.** The words “Each spin lands on one of 8 prizes, and a prize can come up more than once” show three separate spins, each landing on one of the same 8 prizes with repeats allowed, and ask how many different sets there are, so the answer is **“The ways to make several choices, each from its own list”**.
 - Why not **Permutations**: The spins come in order, and the order counts, as in **Permutations**. But a prize that has come up stays on the wheel, so the second spin has all 8 prizes again, and the third has all 8 once more. Nothing is used up, so each spin is a choice from a full list of its own.
 - Taught on: “Worked: how many different sandwiches?” (one tap opens the card).
 
@@ -2955,8 +2955,8 @@ Each question is shown with all of its answers from the key, in the key’s orde
   Counting the picks in order counts every group once for every order its 3 toppings can be put in, and that is 3 × 2 × 1 = 6 orders. So the count in order is 6 times the number of different groups, and dividing by 6 leaves each group counted once.
 - If you chose 336 pizzas: You chose **336 pizzas**. That is the answer you get when you stop after counting the picks in order, so each group is counted once for every order it can be put in.
 - If you chose 112 pizzas: You chose **112 pizzas**. That is the answer you get when you divide by the number of picks, 3, instead of by the number of orders one group can be put in, 6.
-- What does the problem ask you to work out? **How many ways something can turn out, or how likely it is.** The words “How many different pizzas can the customer order?” ask how many different pizzas can be ordered, a count of ways something can turn out. Nothing here is followed through time, no number is hidden for a calculation to fit, no whole number is split into groups, and no shape is measured. The problem asks for the number of different results, or for a chance, which is the key’s first answer **“How many ways something can turn out, or how likely it is”**.
-- What does the problem ask you to count, or find the chance of? **The ways to pick a group, when the order does not count.** The words “picks 3 different toppings for one pizza. The pizza is the same whichever topping went on first” show 3 different toppings taken from one menu of 8, where the pizza is the same whichever went on first, so that the same 3 toppings in any order are one pizza, so the key’s answer is **“The ways to pick a group, when the order does not count”**.
+- What does the problem ask you to work out? **How many ways something can turn out, or how likely it is.** The words “How many different pizzas can the customer order?” ask how many different pizzas can be ordered, a count of ways something can turn out. Nothing here is followed through time, no number is hidden for a calculation to fit, no whole number is split into groups, and no shape is measured. The problem asks for the number of different results, or for a chance, which is the answer to the first question **“How many ways something can turn out, or how likely it is”**.
+- What does the problem ask you to count, or find the chance of? **The ways to pick a group, when the order does not count.** The words “picks 3 different toppings for one pizza. The pizza is the same whichever topping went on first” show 3 different toppings taken from one menu of 8, where the pizza is the same whichever went on first, so that the same 3 toppings in any order are one pizza, so the answer is **“The ways to pick a group, when the order does not count”**.
 - Why not **Multiplying the choices**: A pizza menu can look like separate choices, a size, a crust and a topping, which is **Multiplying the choices**. But here there is one list of 8 toppings, three different ones are taken from it, and each topping taken leaves one fewer. The order they go on makes no difference.
 - Taught on: “Worked: how many different quiz teams?” (one tap opens the card).
 
@@ -2982,8 +2982,8 @@ Each question is shown with all of its answers from the key, in the key’s orde
   Either at least one of the things happens, or none of them does. These two cannot both be true and nothing else can happen, so their chances add up to 1. The chance of none is easy to find: the things are separate, so it is one product. What is left of 1 is the chance that one or more happens.
 - If you chose 95.8%: You chose **95.8%**. That is the answer you get when you count the 8 spins that are over as well as the 3 still to come, as if red had to make up for them.
 - If you chose 42.2%: You chose **42.2%**. That is the answer you get when you stop at the chance that none of the 3 spins is red and never take it away from 1.
-- What does the problem ask you to work out? **How many ways something can turn out, or how likely it is.** The words “How likely is it that it lands on red at least once in the next 3 spins?” ask how likely it is that something happens, a chance and not a count. Nothing in it follows an amount as time passes, hides a number that a calculation must fit, or splits whole numbers into groups, and there is no shape to measure. What it asks for is a count of the results, or the chance of something, so the key’s first answer is **“How many ways something can turn out, or how likely it is”**.
-- What does the problem ask you to count, or find the chance of? **The chance that at least one of several things happens.** The words “Each spin is separate from the others. How likely is it that it lands on red at least once in the next 3 spins?” give the chance of red on each of 3 separate spins still to come and ask how likely it is that red comes up at least once; the 8 spins that are over do not change it, so the key’s answer is **“The chance that at least one of several things happens”**.
+- What does the problem ask you to work out? **How many ways something can turn out, or how likely it is.** The words “How likely is it that it lands on red at least once in the next 3 spins?” ask how likely it is that something happens, a chance and not a count. Nothing in it follows an amount as time passes, hides a number that a calculation must fit, or splits whole numbers into groups, and there is no shape to measure. What it asks for is a count of the results, or the chance of something, so the answer to the first question is **“How many ways something can turn out, or how likely it is”**.
+- What does the problem ask you to count, or find the chance of? **The chance that at least one of several things happens.** The words “Each spin is separate from the others. How likely is it that it lands on red at least once in the next 3 spins?” give the chance of red on each of 3 separate spins still to come and ask how likely it is that red comes up at least once; the 8 spins that are over do not change it, so the answer is **“The chance that at least one of several things happens”**.
 - Why not **Multiplying the choices**: Spins that are multiplied together can look like **Multiplying the choices**, which also multiplies separate things. But the problem asks how likely something is, not how many different results there are, and it asks for at least one.
 - Taught on: “Worked: a bus that is late at least once in a week” (one tap opens the card).
 
@@ -3011,8 +3011,8 @@ Each question is shown with all of its answers from the key, in the key’s orde
   A positive result comes from two kinds of people: those who have the thing and are rightly flagged, and those who do not have it and are wrongly flagged. The chance that a positive result is right is the share of all the positive results that are of the first kind. When the thing is rare, the second group starts from nearly everyone, so a small rate of wrong flags still gives many wrong positive results. Counting both kinds in an imagined group shows the share directly.
 - If you chose 99%: You chose **99%**. That is the answer you get when you take the share of people who have it that the test catches, 99%, as the chance that a positive result is right.
 - If you chose 0.1%: You chose **0.1%**. That is the answer you get when you divide the right positive results by the whole group, 99 ÷ 100,000, instead of by the positive results.
-- What does the problem ask you to work out? **How many ways something can turn out, or how likely it is.** The words “How likely is it that the person has the illness?” ask how likely it is that a result is right, a chance and not a count. Nothing here is followed through time, no number is hidden for a calculation to fit, no whole number is split into groups, and no shape is measured. The problem asks for the number of different results, or for a chance, which is the key’s first answer **“How many ways something can turn out, or how likely it is”**.
-- What does the problem ask you to count, or find the chance of? **The chance that a test result is right.** The words “described as 99% accurate” and “The illness affects 1 person in 1,000” give a test that has come back positive, call it 99% accurate, and say the illness affects 1 person in 1,000, and ask how likely it is that the result is right, so the key’s answer is **“The chance that a test result is right”**.
+- What does the problem ask you to work out? **How many ways something can turn out, or how likely it is.** The words “How likely is it that the person has the illness?” ask how likely it is that a result is right, a chance and not a count. Nothing here is followed through time, no number is hidden for a calculation to fit, no whole number is split into groups, and no shape is measured. The problem asks for the number of different results, or for a chance, which is the answer to the first question **“How many ways something can turn out, or how likely it is”**.
+- What does the problem ask you to count, or find the chance of? **The chance that a test result is right.** The words “described as 99% accurate” and “The illness affects 1 person in 1,000” give a test that has come back positive, call it 99% accurate, and say the illness affects 1 person in 1,000, and ask how likely it is that the result is right, so the answer is **“The chance that a test result is right”**.
 - Why not **Counting the opposite**: Two chances of 99% and 1% can look like separate things to be combined, as in **Counting the opposite**. But no list of separate things is asked about, and nothing is at least one of them: a test has given one result, the illness is rare, and the question is how far to trust the result.
 - Taught on: “Worked: how far to trust a positive test” (one tap opens the card).
 
@@ -3038,8 +3038,8 @@ Each question is shown with all of its answers from the key, in the key’s orde
   Either at least one of the things happens, or none of them does. These two cannot both be true and nothing else can happen, so their chances add up to 1. The chance of none is easy to find: the things are separate, so it is one product. What is left of 1 is the chance that one or more happens.
 - If you chose 270%: You chose **270%**. That is the answer you get when you add the chances of the separate things, which counts a run where two or more happen more than once, so the sum overstates the chance and, with enough things, passes 100%.
 - If you chose 0.1%: You chose **0.1%**. That is the answer you get when you stop at the chance that none of them happens and never take it away from 1.
-- What does the problem ask you to work out? **How many ways something can turn out, or how likely it is.** The words “How likely is it that at least one sensor picks it up?” ask how likely it is that something happens, a chance and not a count. The problem does not change as time passes, has no hidden number for a calculation to fit, does not share whole numbers out in groups and has no shape. It is about the number of ways that something can come out, or its chance, so the key’s first answer is **“How many ways something can turn out, or how likely it is”**.
-- What does the problem ask you to count, or find the chance of? **The chance that at least one of several things happens.** The words “Each one picks up a real fire with a chance of 90%, and one picking it up does not change the chance for another. A fire starts in the corridor. How likely is it that at least one sensor picks it up?” give the chance that each of 3 separate sensors picks up a fire and ask how likely it is that at least one does, so the key’s answer is **“The chance that at least one of several things happens”**.
+- What does the problem ask you to work out? **How many ways something can turn out, or how likely it is.** The words “How likely is it that at least one sensor picks it up?” ask how likely it is that something happens, a chance and not a count. The problem does not change as time passes, has no hidden number for a calculation to fit, does not share whole numbers out in groups and has no shape. It is about the number of ways that something can come out, or its chance, so the answer to the first question is **“How many ways something can turn out, or how likely it is”**.
+- What does the problem ask you to count, or find the chance of? **The chance that at least one of several things happens.** The words “Each one picks up a real fire with a chance of 90%, and one picking it up does not change the chance for another. A fire starts in the corridor. How likely is it that at least one sensor picks it up?” give the chance that each of 3 separate sensors picks up a fire and ask how likely it is that at least one does, so the answer is **“The chance that at least one of several things happens”**.
 - Why not **Base rate**: Sensors that pick up something can look like a test, **Base rate**. But no test has given a result that needs reading, and nothing here is rare: a fire has started, and the problem asks how likely it is that at least one of 3 separate sensors picks it up.
 - Taught on: “Worked: a bus that is late at least once in a week” (one tap opens the card).
 
@@ -3067,22 +3067,22 @@ Each question is shown with all of its answers from the key, in the key’s orde
   A positive result comes from two kinds of people: those who have the thing and are rightly flagged, and those who do not have it and are wrongly flagged. The chance that a positive result is right is the share of all the positive results that are of the first kind. When the thing is rare, the second group starts from nearly everyone, so a small rate of wrong flags still gives many wrong positive results. Counting both kinds in an imagined group shows the share directly.
 - If you chose 96%: You chose **96%**. That is the answer you get when you take the share of people who have it that the test catches, 96%, as the chance that a positive result is right.
 - If you chose 1.9%: You chose **1.9%**. That is the answer you get when you divide the right positive results by the whole group, 192 ÷ 10,000, instead of by the positive results.
-- What does the problem ask you to work out? **How many ways something can turn out, or how likely it is.** The words “How likely is it that the email is junk?” ask how likely it is that a result is right, a chance and not a count. Nothing in it follows an amount as time passes, hides a number that a calculation must fit, or splits whole numbers into groups, and there is no shape to measure. What it asks for is a count of the results, or the chance of something, so the key’s first answer is **“How many ways something can turn out, or how likely it is”**.
-- What does the problem ask you to count, or find the chance of? **The chance that a test result is right.** The words “A mail filter marks 96% of the junk emails, and also marks 2% of the emails that are not junk” and “An email has been marked” give a filter that has marked an email, how common junk is, and how often the filter is right and wrong, and ask how likely it is that the mark is right, so the key’s answer is **“The chance that a test result is right”**.
+- What does the problem ask you to work out? **How many ways something can turn out, or how likely it is.** The words “How likely is it that the email is junk?” ask how likely it is that a result is right, a chance and not a count. Nothing in it follows an amount as time passes, hides a number that a calculation must fit, or splits whole numbers into groups, and there is no shape to measure. What it asks for is a count of the results, or the chance of something, so the answer to the first question is **“How many ways something can turn out, or how likely it is”**.
+- What does the problem ask you to count, or find the chance of? **The chance that a test result is right.** The words “A mail filter marks 96% of the junk emails, and also marks 2% of the emails that are not junk” and “An email has been marked” give a filter that has marked an email, how common junk is, and how often the filter is right and wrong, and ask how likely it is that the mark is right, so the answer is **“The chance that a test result is right”**.
 - Why not **Counting the opposite**: The problem is not about at least one of several separate things happening, which is **Counting the opposite**. A test has given one result, and the question is how far to trust it.
 - Taught on: “Worked: how far to trust a positive test” (one tap opens the card).
 
-**When the drill ends.** The learner sees their own results: first-try accuracy for each stage, whole routes beside single questions, the pair of names they mixed up most often, and what will come back and when. Anything missed was asked again before the drill ended. Nothing here is graded. A miss only decides what comes back.
+**When the drill ends.** The learner sees their own results: first-try accuracy for each stage, whole cases beside single questions, the pair of names they mixed up most often, and what will come back and when. Anything missed was asked again before the drill ended. Nothing here is graded. A miss only decides what comes back.
 
 ### 53. What to carry away
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 53 of 54*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 53 of 54*
 
 [reviewers only: card kind `recap`, id `recap-chance`]
 
-You have now worked problems of all five kinds on your own. This card puts the unit in one place, in the key’s words.
+You have now worked problems of all five kinds on your own. This card puts the unit in one place.
 
-**The key for this unit, in its own words**
+**This unit’s questions and answers**
 
 What does the problem ask you to count, or find the chance of?
 - The ways to make several choices, each from its own list → Multiplying the choices
@@ -3106,7 +3106,7 @@ What does the problem ask you to count, or find the chance of?
 
 **To carry away**
 
-- Before any working, ask what is being counted, or what chance is wanted, and point to the words that say it. If you cannot point to them, you do not have an answer yet. The key asks: **“What does the problem ask you to count, or find the chance of?”**
+- Before any working, ask what is being counted, or what chance is wanted, and point to the words that say it. If you cannot point to them, you do not have an answer yet. The question is: **“What does the problem ask you to count, or find the chance of?”**
 - A choice with a full list of its own for each pick leads to **Multiplying the choices**. One group with each pick using someone up leads to **Permutations** when the order counts, and to **Combinations** when it does not. The chance that one or more of a set of separate things happens leads to **Counting the opposite**. A test result and how far to trust it lead to **Base rate**.
 - The numbers do not tell you the kind. The same 9 things and 4 picks give 6,561, 3,024 or 126, depending on whether each pick has a full list, or uses one up with the order counting, or uses one up with the order not counting.
 - For **Multiplying the choices**: name each choice, count its full list, and multiply the counts. Adding the counts would count single items and never a whole result.
@@ -3117,7 +3117,7 @@ What does the problem ask you to count, or find the chance of?
 
 ### 54. Where would you meet this?
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 54 of 54*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 54 of 54*
 
 [reviewers only: card kind `transfer`, id `transfer-chance`]
 
@@ -3145,7 +3145,7 @@ One line is enough. It is kept on this device only and is never marked.
 
 ## After the unit: what comes back on later days
 
-A name that is due returns as a case the learner has not seen, next to a case of the name they most often confuse it with. Each is run as a whole route. These are the fresh cases held back for that purpose: three for each name, one for each scheduled return. The first return is about two days after the drill, the next about a week after that, the next about three and a half weeks later.
+A name that is due returns as a case the learner has not seen, next to a case of the name they most often confuse it with. Each is run as a whole case: every question, then the name. These are the fresh cases held back for that purpose: three for each name, one for each scheduled return. The first return is about two days after the drill, the next about a week after that, the next about three and a half weeks later.
 
 **Return case 1 of 15**
 
@@ -3169,8 +3169,8 @@ A name that is due returns as a case the learner has not seen, next to a case of
   Every item on the first list can go with every item on the second, and every pair made that way can go with every item on the next list, and so on through all the lists. So the results fill a block, with as many rows as the first count, each as long as the second, and so on, and the size of the block is the counts multiplied together. Adding the counts would count each single item once and never a whole result made of one from each list.
 - If you chose 14 bikes: You chose **14 bikes**. That is the answer you get when you add the sizes of the lists, which counts each single item once and never a whole result made of one from each list.
 - If you chose 15 bikes: You chose **15 bikes**. That is the answer you get when you leave the last choice out of the product, so every result is missing one part.
-- What does the problem ask you to work out? **How many ways something can turn out, or how likely it is.** The words “How many different bikes can a customer order?” ask how many different bikes can be ordered, a count of ways something can turn out. Nothing here is followed through time, no number is hidden for a calculation to fit, no whole number is split into groups, and no shape is measured. The problem asks for the number of different results, or for a chance, which is the key’s first answer **“How many ways something can turn out, or how likely it is”**.
-- What does the problem ask you to count, or find the chance of? **The ways to make several choices, each from its own list.** The words “one of 5 frames, one of 3 saddles and one of 6 colours” give three separate choices, a frame, a saddle and a colour, each from a list of its own, and ask how many different bikes there are, so the key’s answer is **“The ways to make several choices, each from its own list”**.
+- What does the problem ask you to work out? **How many ways something can turn out, or how likely it is.** The words “How many different bikes can a customer order?” ask how many different bikes can be ordered, a count of ways something can turn out. Nothing here is followed through time, no number is hidden for a calculation to fit, no whole number is split into groups, and no shape is measured. The problem asks for the number of different results, or for a chance, which is the answer to the first question **“How many ways something can turn out, or how likely it is”**.
+- What does the problem ask you to count, or find the chance of? **The ways to make several choices, each from its own list.** The words “one of 5 frames, one of 3 saddles and one of 6 colours” give three separate choices, a frame, a saddle and a colour, each from a list of its own, and ask how many different bikes there are, so the answer is **“The ways to make several choices, each from its own list”**.
 - Why not **Permutations**: Picking from one group, so that each pick takes something off the list for the next, would be **Permutations**. Here every choice has a full list of its own, and nothing picked on one list changes another.
 - Taught on: “Worked: how many different sandwiches?” (one tap opens the card).
 
@@ -3196,8 +3196,8 @@ A name that is due returns as a case the learner has not seen, next to a case of
   Every item on the first list can go with every item on the second, and every pair made that way can go with every item on the next list, and so on through all the lists. So the results fill a block, with as many rows as the first count, each as long as the second, and so on, and the size of the block is the counts multiplied together. Adding the counts would count each single item once and never a whole result made of one from each list.
 - If you chose 110 usernames: You chose **110 usernames**. That is the answer you get when you add the sizes of the lists, which counts each single item once and never a whole result made of one from each list.
 - If you chose 24 usernames: You chose **24 usernames**. That is the answer you get when you leave the last choice out of the product, so every result is missing one part.
-- What does the problem ask you to work out? **How many ways something can turn out, or how likely it is.** The words “How many different usernames can it make?” ask how many different usernames can be made, a count of ways something can turn out. Nothing in it follows an amount as time passes, hides a number that a calculation must fit, or splits whole numbers into groups, and there is no shape to measure. What it asks for is a count of the results, or the chance of something, so the key’s first answer is **“How many ways something can turn out, or how likely it is”**.
-- What does the problem ask you to count, or find the chance of? **The ways to make several choices, each from its own list.** The words “one of 4 colours, one of 6 animals and a number from 00 to 99” give three separate choices, a colour, an animal and a number from a list of 100, and ask how many different usernames there are, so the key’s answer is **“The ways to make several choices, each from its own list”**.
+- What does the problem ask you to work out? **How many ways something can turn out, or how likely it is.** The words “How many different usernames can it make?” ask how many different usernames can be made, a count of ways something can turn out. Nothing in it follows an amount as time passes, hides a number that a calculation must fit, or splits whole numbers into groups, and there is no shape to measure. What it asks for is a count of the results, or the chance of something, so the answer to the first question is **“How many ways something can turn out, or how likely it is”**.
+- What does the problem ask you to count, or find the chance of? **The ways to make several choices, each from its own list.** The words “one of 4 colours, one of 6 animals and a number from 00 to 99” give three separate choices, a colour, an animal and a number from a list of 100, and ask how many different usernames there are, so the answer is **“The ways to make several choices, each from its own list”**.
 - Why not **Permutations**: Picking from one group, so that each pick takes something off the list for the next, would be **Permutations**. Here every choice has a full list of its own, and nothing picked on one list changes another.
 - Taught on: “Worked: how many different sandwiches?” (one tap opens the card).
 
@@ -3223,8 +3223,8 @@ A name that is due returns as a case the learner has not seen, next to a case of
   Every item on the first list can go with every item on the second, and every pair made that way can go with every item on the next list, and so on through all the lists. So the results fill a block, with as many rows as the first count, each as long as the second, and so on, and the size of the block is the counts multiplied together. Adding the counts would count each single item once and never a whole result made of one from each list.
 - If you chose 16 lunches: You chose **16 lunches**. That is the answer you get when you add the sizes of the lists, which counts each single item once and never a whole result made of one from each list.
 - If you chose 35 lunches: You chose **35 lunches**. That is the answer you get when you leave the last choice out of the product, so every result is missing one part.
-- What does the problem ask you to work out? **How many ways something can turn out, or how likely it is.** The words “How many different lunches can a patient order?” ask how many different lunches can be ordered, a count of ways something can turn out. The problem does not change as time passes, has no hidden number for a calculation to fit, does not share whole numbers out in groups and has no shape. It is about the number of ways that something can come out, or its chance, so the key’s first answer is **“How many ways something can turn out, or how likely it is”**.
-- What does the problem ask you to count, or find the chance of? **The ways to make several choices, each from its own list.** The words “a main from 7, a side from 5 and a drink from 4, one of each” give three separate choices, a main, a side and a drink, each from a list of its own, and ask how many different lunches there are, so the key’s answer is **“The ways to make several choices, each from its own list”**.
+- What does the problem ask you to work out? **How many ways something can turn out, or how likely it is.** The words “How many different lunches can a patient order?” ask how many different lunches can be ordered, a count of ways something can turn out. The problem does not change as time passes, has no hidden number for a calculation to fit, does not share whole numbers out in groups and has no shape. It is about the number of ways that something can come out, or its chance, so the answer to the first question is **“How many ways something can turn out, or how likely it is”**.
+- What does the problem ask you to count, or find the chance of? **The ways to make several choices, each from its own list.** The words “a main from 7, a side from 5 and a drink from 4, one of each” give three separate choices, a main, a side and a drink, each from a list of its own, and ask how many different lunches there are, so the answer is **“The ways to make several choices, each from its own list”**.
 - Why not **Permutations**: Picking from one group, so that each pick takes something off the list for the next, would be **Permutations**. Here every choice has a full list of its own, and nothing picked on one list changes another.
 - Taught on: “Worked: how many different sandwiches?” (one tap opens the card).
 
@@ -3250,8 +3250,8 @@ A name that is due returns as a case the learner has not seen, next to a case of
   The first pick can be any one of the group. Whoever it is, that one is taken out, so the next pick is made from a group one smaller, and the pick after that from one smaller again. Each pick is a choice from a list of its own, so the counts multiply, and a different order is counted as a different result, which is what the problem asks for.
 - If you chose 15 ways to give out the medals: You chose **15 ways to give out the medals**. That is the answer you get when you multiply the size of the group by the number of picks, 5 × 3, so no pick ever uses anyone up.
 - If you chose 125 ways to give out the medals: You chose **125 ways to give out the medals**. That is the answer you get when you let the same one be picked every time, so each pick still has all 5 to choose from.
-- What does the problem ask you to work out? **How many ways something can turn out, or how likely it is.** The words “In how many different ways can the three medals go to the divers?” ask in how many different ways the medals can go to the divers, a count of ways something can turn out. The problem does not change as time passes, has no hidden number for a calculation to fit, does not share whole numbers out in groups and has no shape. It is about the number of ways that something can come out, or its chance, so the key’s first answer is **“How many ways something can turn out, or how likely it is”**.
-- What does the problem ask you to count, or find the chance of? **The ways to pick from one group, when the order counts.** The words “a gold, a silver and a bronze medal, each to a different diver” show three different medals given out one after another from a group of 5 divers, each to a different diver, and ask how many different ways there are, so the key’s answer is **“The ways to pick from one group, when the order counts”**.
+- What does the problem ask you to work out? **How many ways something can turn out, or how likely it is.** The words “In how many different ways can the three medals go to the divers?” ask in how many different ways the medals can go to the divers, a count of ways something can turn out. The problem does not change as time passes, has no hidden number for a calculation to fit, does not share whole numbers out in groups and has no shape. It is about the number of ways that something can come out, or its chance, so the answer to the first question is **“How many ways something can turn out, or how likely it is”**.
+- What does the problem ask you to count, or find the chance of? **The ways to pick from one group, when the order counts.** The words “a gold, a silver and a bronze medal, each to a different diver” show three different medals given out one after another from a group of 5 divers, each to a different diver, and ask how many different ways there are, so the answer is **“The ways to pick from one group, when the order counts”**.
 - Why not **Combinations**: If the same things in a different order were the same result, it would be **Combinations**. Here a different order is a different result, so every order is counted.
 - Taught on: “Worked: who can fill three jobs in a club?” (one tap opens the card).
 
@@ -3277,8 +3277,8 @@ A name that is due returns as a case the learner has not seen, next to a case of
   The first pick can be any one of the group. Whoever it is, that one is taken out, so the next pick is made from a group one smaller, and the pick after that from one smaller again. Each pick is a choice from a list of its own, so the counts multiply, and a different order is counted as a different result, which is what the problem asks for.
 - If you chose 24 rows: You chose **24 rows**. That is the answer you get when you multiply the size of the group by the number of picks, 6 × 4, so no pick ever uses anyone up.
 - If you chose 1,296 rows: You chose **1,296 rows**. That is the answer you get when you let the same one be picked every time, so each pick still has all 6 to choose from.
-- What does the problem ask you to work out? **How many ways something can turn out, or how likely it is.** The words “How many different rows can she make?” ask how many different rows can be made, a count of ways something can turn out. Nothing here is followed through time, no number is hidden for a calculation to fit, no whole number is split into groups, and no shape is measured. The problem asks for the number of different results, or for a chance, which is the key’s first answer **“How many ways something can turn out, or how likely it is”**.
-- What does the problem ask you to count, or find the chance of? **The ways to pick from one group, when the order counts.** The words “puts 4 of them in a row in the shop window, from left to right” show 4 cakes taken from one group of 6 and placed from left to right, so that the order is part of the result, and ask how many different rows there are, so the key’s answer is **“The ways to pick from one group, when the order counts”**.
+- What does the problem ask you to work out? **How many ways something can turn out, or how likely it is.** The words “How many different rows can she make?” ask how many different rows can be made, a count of ways something can turn out. Nothing here is followed through time, no number is hidden for a calculation to fit, no whole number is split into groups, and no shape is measured. The problem asks for the number of different results, or for a chance, which is the answer to the first question **“How many ways something can turn out, or how likely it is”**.
+- What does the problem ask you to count, or find the chance of? **The ways to pick from one group, when the order counts.** The words “puts 4 of them in a row in the shop window, from left to right” show 4 cakes taken from one group of 6 and placed from left to right, so that the order is part of the result, and ask how many different rows there are, so the answer is **“The ways to pick from one group, when the order counts”**.
 - Why not **Combinations**: If the same things in a different order were the same result, it would be **Combinations**. Here a different order is a different result, so every order is counted.
 - Taught on: “Worked: who can fill three jobs in a club?” (one tap opens the card).
 
@@ -3304,8 +3304,8 @@ A name that is due returns as a case the learner has not seen, next to a case of
   The first pick can be any one of the group. Whoever it is, that one is taken out, so the next pick is made from a group one smaller, and the pick after that from one smaller again. Each pick is a choice from a list of its own, so the counts multiply, and a different order is counted as a different result, which is what the problem asks for.
 - If you chose 16 orders: You chose **16 orders**. That is the answer you get when you multiply the size of the group by the number of picks, 4 × 4, so no pick ever uses anyone up.
 - If you chose 256 orders: You chose **256 orders**. That is the answer you get when you let the same one be picked every time, so each pick still has all 4 to choose from.
-- What does the problem ask you to work out? **How many ways something can turn out, or how likely it is.** The words “In how many different orders can they stand in the queue?” ask in how many different orders the friends can stand, a count of ways something can turn out. Nothing in it follows an amount as time passes, hides a number that a calculation must fit, or splits whole numbers into groups, and there is no shape to measure. What it asks for is a count of the results, or the chance of something, so the key’s first answer is **“How many ways something can turn out, or how likely it is”**.
-- What does the problem ask you to count, or find the chance of? **The ways to pick from one group, when the order counts.** The words “Four friends join a queue at a ticket window, one behind another” show one group of 4 friends placed one behind another, so that each place uses a friend up, and ask how many different orders there are, so the key’s answer is **“The ways to pick from one group, when the order counts”**.
+- What does the problem ask you to work out? **How many ways something can turn out, or how likely it is.** The words “In how many different orders can they stand in the queue?” ask in how many different orders the friends can stand, a count of ways something can turn out. Nothing in it follows an amount as time passes, hides a number that a calculation must fit, or splits whole numbers into groups, and there is no shape to measure. What it asks for is a count of the results, or the chance of something, so the answer to the first question is **“How many ways something can turn out, or how likely it is”**.
+- What does the problem ask you to count, or find the chance of? **The ways to pick from one group, when the order counts.** The words “Four friends join a queue at a ticket window, one behind another” show one group of 4 friends placed one behind another, so that each place uses a friend up, and ask how many different orders there are, so the answer is **“The ways to pick from one group, when the order counts”**.
 - Why not **Combinations**: If the same things in a different order were the same result, it would be **Combinations**. Here a different order is a different result, so every order is counted.
 - Taught on: “Worked: who can fill three jobs in a club?” (one tap opens the card).
 
@@ -3332,8 +3332,8 @@ A name that is due returns as a case the learner has not seen, next to a case of
   Counting the picks in order counts every group once for every order its 3 nurses can be put in, and that is 3 × 2 × 1 = 6 orders. So the count in order is 6 times the number of different groups, and dividing by 6 leaves each group counted once.
 - If you chose 120 groups: You chose **120 groups**. That is the answer you get when you stop after counting the picks in order, so each group is counted once for every order it can be put in.
 - If you chose 40 groups: You chose **40 groups**. That is the answer you get when you divide by the number of picks, 3, instead of by the number of orders one group can be put in, 6.
-- What does the problem ask you to work out? **How many ways something can turn out, or how likely it is.** The words “How many different groups of 3 can be picked?” ask how many different groups can be picked, a count of ways something can turn out. Nothing in it follows an amount as time passes, hides a number that a calculation must fit, or splits whole numbers into groups, and there is no shape to measure. What it asks for is a count of the results, or the chance of something, so the key’s first answer is **“How many ways something can turn out, or how likely it is”**.
-- What does the problem ask you to count, or find the chance of? **The ways to pick a group, when the order does not count.** The words “Nobody on the training day has a different role from the others” show 3 nurses taken from 6 with no different roles, so that the same 3 nurses in any order are one group, so the key’s answer is **“The ways to pick a group, when the order does not count”**.
+- What does the problem ask you to work out? **How many ways something can turn out, or how likely it is.** The words “How many different groups of 3 can be picked?” ask how many different groups can be picked, a count of ways something can turn out. Nothing in it follows an amount as time passes, hides a number that a calculation must fit, or splits whole numbers into groups, and there is no shape to measure. What it asks for is a count of the results, or the chance of something, so the answer to the first question is **“How many ways something can turn out, or how likely it is”**.
+- What does the problem ask you to count, or find the chance of? **The ways to pick a group, when the order does not count.** The words “Nobody on the training day has a different role from the others” show 3 nurses taken from 6 with no different roles, so that the same 3 nurses in any order are one group, so the answer is **“The ways to pick a group, when the order does not count”**.
 - Why not **Permutations**: If a different order counted as a different result, it would be **Permutations**. Here the same things in any order are one result, so the count in order has to be divided down.
 - Taught on: “Worked: how many different quiz teams?” (one tap opens the card).
 
@@ -3360,8 +3360,8 @@ A name that is due returns as a case the learner has not seen, next to a case of
   Counting the picks in order counts every group once for every order its 4 pupils can be put in, and that is 4 × 3 × 2 × 1 = 24 orders. So the count in order is 24 times the number of different groups, and dividing by 24 leaves each group counted once.
 - If you chose 5,040 groups: You chose **5,040 groups**. That is the answer you get when you stop after counting the picks in order, so each group is counted once for every order it can be put in.
 - If you chose 1,260 groups: You chose **1,260 groups**. That is the answer you get when you divide by the number of picks, 4, instead of by the number of orders one group can be put in, 24.
-- What does the problem ask you to work out? **How many ways something can turn out, or how likely it is.** The words “How many different groups of 4 can she take?” ask how many different groups can be taken, a count of ways something can turn out. The problem does not change as time passes, has no hidden number for a calculation to fit, does not share whole numbers out in groups and has no shape. It is about the number of ways that something can come out, or its chance, so the key’s first answer is **“How many ways something can turn out, or how likely it is”**.
-- What does the problem ask you to count, or find the chance of? **The ways to pick a group, when the order does not count.** The words “It makes no difference in which order the four are picked” show 4 pupils taken from 10 with no difference made by the order, so that the same 4 pupils in any order are one group, so the key’s answer is **“The ways to pick a group, when the order does not count”**.
+- What does the problem ask you to work out? **How many ways something can turn out, or how likely it is.** The words “How many different groups of 4 can she take?” ask how many different groups can be taken, a count of ways something can turn out. The problem does not change as time passes, has no hidden number for a calculation to fit, does not share whole numbers out in groups and has no shape. It is about the number of ways that something can come out, or its chance, so the answer to the first question is **“How many ways something can turn out, or how likely it is”**.
+- What does the problem ask you to count, or find the chance of? **The ways to pick a group, when the order does not count.** The words “It makes no difference in which order the four are picked” show 4 pupils taken from 10 with no difference made by the order, so that the same 4 pupils in any order are one group, so the answer is **“The ways to pick a group, when the order does not count”**.
 - Why not **Permutations**: If a different order counted as a different result, it would be **Permutations**. Here the same things in any order are one result, so the count in order has to be divided down.
 - Taught on: “Worked: how many different quiz teams?” (one tap opens the card).
 
@@ -3388,8 +3388,8 @@ A name that is due returns as a case the learner has not seen, next to a case of
   Counting the picks in order counts every group once for every order its 3 jars can be put in, and that is 3 × 2 × 1 = 6 orders. So the count in order is 6 times the number of different groups, and dividing by 6 leaves each group counted once.
 - If you chose 720 gifts: You chose **720 gifts**. That is the answer you get when you stop after counting the picks in order, so each group is counted once for every order it can be put in.
 - If you chose 240 gifts: You chose **240 gifts**. That is the answer you get when you divide by the number of picks, 3, instead of by the number of orders one group can be put in, 6.
-- What does the problem ask you to work out? **How many ways something can turn out, or how likely it is.** The words “How many different gifts can the shop pack?” ask how many different gifts can be packed, a count of ways something can turn out. Nothing here is followed through time, no number is hidden for a calculation to fit, no whole number is split into groups, and no shape is measured. The problem asks for the number of different results, or for a chance, which is the key’s first answer **“How many ways something can turn out, or how likely it is”**.
-- What does the problem ask you to count, or find the chance of? **The ways to pick a group, when the order does not count.** The words “The gift is the same whichever jar goes in first” show 3 different jars taken from 10, where the gift is the same whichever goes in first, so that the same 3 jars in any order are one gift, so the key’s answer is **“The ways to pick a group, when the order does not count”**.
+- What does the problem ask you to work out? **How many ways something can turn out, or how likely it is.** The words “How many different gifts can the shop pack?” ask how many different gifts can be packed, a count of ways something can turn out. Nothing here is followed through time, no number is hidden for a calculation to fit, no whole number is split into groups, and no shape is measured. The problem asks for the number of different results, or for a chance, which is the answer to the first question **“How many ways something can turn out, or how likely it is”**.
+- What does the problem ask you to count, or find the chance of? **The ways to pick a group, when the order does not count.** The words “The gift is the same whichever jar goes in first” show 3 different jars taken from 10, where the gift is the same whichever goes in first, so that the same 3 jars in any order are one gift, so the answer is **“The ways to pick a group, when the order does not count”**.
 - Why not **Permutations**: If a different order counted as a different result, it would be **Permutations**. Here the same things in any order are one result, so the count in order has to be divided down.
 - Taught on: “Worked: how many different quiz teams?” (one tap opens the card).
 
@@ -3415,8 +3415,8 @@ A name that is due returns as a case the learner has not seen, next to a case of
   Either at least one of the things happens, or none of them does. These two cannot both be true and nothing else can happen, so their chances add up to 1. The chance of none is easy to find: the things are separate, so it is one product. What is left of 1 is the chance that one or more happens.
 - If you chose 40%: You chose **40%**. That is the answer you get when you add the chances of the separate things, which counts a run where two or more happen more than once, so the sum overstates the chance and, with enough things, passes 100%.
 - If you chose 65.6%: You chose **65.6%**. That is the answer you get when you stop at the chance that none of them happens and never take it away from 1.
-- What does the problem ask you to work out? **How many ways something can turn out, or how likely it is.** The words “How likely is it that the ferry is cancelled at least once in 4 days?” ask how likely it is that something happens, a chance and not a count. Nothing here is followed through time, no number is hidden for a calculation to fit, no whole number is split into groups, and no shape is measured. The problem asks for the number of different results, or for a chance, which is the key’s first answer **“How many ways something can turn out, or how likely it is”**.
-- What does the problem ask you to count, or find the chance of? **The chance that at least one of several things happens.** The words “cancelled on 10% of days, and one day’s cancellation does not change the chance on another. How likely is it that the ferry is cancelled at least once in 4 days?” give the chance for each of 4 separate days and ask how likely it is that the ferry is cancelled at least once, so the key’s answer is **“The chance that at least one of several things happens”**.
+- What does the problem ask you to work out? **How many ways something can turn out, or how likely it is.** The words “How likely is it that the ferry is cancelled at least once in 4 days?” ask how likely it is that something happens, a chance and not a count. Nothing here is followed through time, no number is hidden for a calculation to fit, no whole number is split into groups, and no shape is measured. The problem asks for the number of different results, or for a chance, which is the answer to the first question **“How many ways something can turn out, or how likely it is”**.
+- What does the problem ask you to count, or find the chance of? **The chance that at least one of several things happens.** The words “cancelled on 10% of days, and one day’s cancellation does not change the chance on another. How likely is it that the ferry is cancelled at least once in 4 days?” give the chance for each of 4 separate days and ask how likely it is that the ferry is cancelled at least once, so the answer is **“The chance that at least one of several things happens”**.
 - Why not **Multiplying the choices**: The problem asks for a chance, not a count of results. **Multiplying the choices** would be the name if it asked how many different results there are, and it also multiplies separate things, which is why the two look alike.
 - Taught on: “Worked: a bus that is late at least once in a week” (one tap opens the card).
 
@@ -3442,8 +3442,8 @@ A name that is due returns as a case the learner has not seen, next to a case of
   Either at least one of the things happens, or none of them does. These two cannot both be true and nothing else can happen, so their chances add up to 1. The chance of none is easy to find: the things are separate, so it is one product. What is left of 1 is the chance that one or more happens.
 - If you chose 6%: You chose **6%**. That is the answer you get when you add the chances of the separate things, which counts a run where two or more happen more than once, so the sum overstates the chance and, with enough things, passes 100%.
 - If you chose 94.1%: You chose **94.1%**. That is the answer you get when you stop at the chance that none of them happens and never take it away from 1.
-- What does the problem ask you to work out? **How many ways something can turn out, or how likely it is.** The words “How likely is it that at least one injection causes a rash?” ask how likely it is that something happens, a chance and not a count. Nothing in it follows an amount as time passes, hides a number that a calculation must fit, or splits whole numbers into groups, and there is no shape to measure. What it asks for is a count of the results, or the chance of something, so the key’s first answer is **“How many ways something can turn out, or how likely it is”**.
-- What does the problem ask you to count, or find the chance of? **The chance that at least one of several things happens.** The words “Each one has a 2% chance of causing a rash, and the injections do not change one another’s chance. How likely is it that at least one injection causes a rash?” give the chance of each of 3 separate injections causing a rash and ask how likely it is that at least one does, so the key’s answer is **“The chance that at least one of several things happens”**.
+- What does the problem ask you to work out? **How many ways something can turn out, or how likely it is.** The words “How likely is it that at least one injection causes a rash?” ask how likely it is that something happens, a chance and not a count. Nothing in it follows an amount as time passes, hides a number that a calculation must fit, or splits whole numbers into groups, and there is no shape to measure. What it asks for is a count of the results, or the chance of something, so the answer to the first question is **“How many ways something can turn out, or how likely it is”**.
+- What does the problem ask you to count, or find the chance of? **The chance that at least one of several things happens.** The words “Each one has a 2% chance of causing a rash, and the injections do not change one another’s chance. How likely is it that at least one injection causes a rash?” give the chance of each of 3 separate injections causing a rash and ask how likely it is that at least one does, so the answer is **“The chance that at least one of several things happens”**.
 - Why not **Multiplying the choices**: The problem asks for a chance, not a count of results. **Multiplying the choices** would be the name if it asked how many different results there are, and it also multiplies separate things, which is why the two look alike.
 - Taught on: “Worked: a bus that is late at least once in a week” (one tap opens the card).
 
@@ -3469,8 +3469,8 @@ A name that is due returns as a case the learner has not seen, next to a case of
   Either at least one of the things happens, or none of them does. These two cannot both be true and nothing else can happen, so their chances add up to 1. The chance of none is easy to find: the things are separate, so it is one product. What is left of 1 is the chance that one or more happens.
 - If you chose 60%: You chose **60%**. That is the answer you get when you add the chances of the separate things, which counts a run where two or more happen more than once, so the sum overstates the chance and, with enough things, passes 100%.
 - If you chose 50.4%: You chose **50.4%**. That is the answer you get when you stop at the chance that none of them happens and never take it away from 1.
-- What does the problem ask you to work out? **How many ways something can turn out, or how likely it is.** The words “How likely is it that at least one delivery is late?” ask how likely it is that something happens, a chance and not a count. The problem does not change as time passes, has no hidden number for a calculation to fit, does not share whole numbers out in groups and has no shape. It is about the number of ways that something can come out, or its chance, so the key’s first answer is **“How many ways something can turn out, or how likely it is”**.
-- What does the problem ask you to count, or find the chance of? **The chance that at least one of several things happens.** The words “The chance that each is late is 30% for the first, 20% for the second and 10% for the third” give a different chance for each of 3 separate deliveries being late and ask how likely it is that at least one is, so the key’s answer is **“The chance that at least one of several things happens”**.
+- What does the problem ask you to work out? **How many ways something can turn out, or how likely it is.** The words “How likely is it that at least one delivery is late?” ask how likely it is that something happens, a chance and not a count. The problem does not change as time passes, has no hidden number for a calculation to fit, does not share whole numbers out in groups and has no shape. It is about the number of ways that something can come out, or its chance, so the answer to the first question is **“How many ways something can turn out, or how likely it is”**.
+- What does the problem ask you to count, or find the chance of? **The chance that at least one of several things happens.** The words “The chance that each is late is 30% for the first, 20% for the second and 10% for the third” give a different chance for each of 3 separate deliveries being late and ask how likely it is that at least one is, so the answer is **“The chance that at least one of several things happens”**.
 - Why not **Multiplying the choices**: The problem asks for a chance, not a count of results. **Multiplying the choices** would be the name if it asked how many different results there are, and it also multiplies separate things, which is why the two look alike.
 - Taught on: “Worked: a bus that is late at least once in a week” (one tap opens the card).
 
@@ -3498,8 +3498,8 @@ A name that is due returns as a case the learner has not seen, next to a case of
   A positive result comes from two kinds of people: those who have the thing and are rightly flagged, and those who do not have it and are wrongly flagged. The chance that a positive result is right is the share of all the positive results that are of the first kind. When the thing is rare, the second group starts from nearly everyone, so a small rate of wrong flags still gives many wrong positive results. Counting both kinds in an imagined group shows the share directly.
 - If you chose 96%: You chose **96%**. That is the answer you get when you take the share of people who have it that the test catches, 96%, as the chance that a positive result is right.
 - If you chose 0.5%: You chose **0.5%**. That is the answer you get when you divide the right positive results by the whole group, 96 ÷ 20,000, instead of by the positive results.
-- What does the problem ask you to work out? **How many ways something can turn out, or how likely it is.** The words “How likely is it that the adult has the condition?” ask how likely it is that a result is right, a chance and not a count. The problem does not change as time passes, has no hidden number for a calculation to fit, does not share whole numbers out in groups and has no shape. It is about the number of ways that something can come out, or its chance, so the key’s first answer is **“How many ways something can turn out, or how likely it is”**.
-- What does the problem ask you to count, or find the chance of? **The chance that a test result is right.** The words “A blood test is positive for 96% of the adults who have it, and also for 3% of the adults who do not” give a test that has come back positive, how rare the condition is, and how often the test is right and wrong, and ask how likely it is that the result is right, so the key’s answer is **“The chance that a test result is right”**.
+- What does the problem ask you to work out? **How many ways something can turn out, or how likely it is.** The words “How likely is it that the adult has the condition?” ask how likely it is that a result is right, a chance and not a count. The problem does not change as time passes, has no hidden number for a calculation to fit, does not share whole numbers out in groups and has no shape. It is about the number of ways that something can come out, or its chance, so the answer to the first question is **“How many ways something can turn out, or how likely it is”**.
+- What does the problem ask you to count, or find the chance of? **The chance that a test result is right.** The words “A blood test is positive for 96% of the adults who have it, and also for 3% of the adults who do not” give a test that has come back positive, how rare the condition is, and how often the test is right and wrong, and ask how likely it is that the result is right, so the answer is **“The chance that a test result is right”**.
 - Why not **Counting the opposite**: The problem is not about at least one of several separate things happening, which is **Counting the opposite**. A test has given one result, and the question is how far to trust it.
 - Taught on: “Worked: how far to trust a positive test” (one tap opens the card).
 
@@ -3527,8 +3527,8 @@ A name that is due returns as a case the learner has not seen, next to a case of
   A positive result comes from two kinds of people: those who have the thing and are rightly flagged, and those who do not have it and are wrongly flagged. The chance that a positive result is right is the share of all the positive results that are of the first kind. When the thing is rare, the second group starts from nearly everyone, so a small rate of wrong flags still gives many wrong positive results. Counting both kinds in an imagined group shows the share directly.
 - If you chose 90%: You chose **90%**. That is the answer you get when you take the share of people who have it that the test catches, 90%, as the chance that a positive result is right.
 - If you chose 4.5%: You chose **4.5%**. That is the answer you get when you divide the right positive results by the whole group, 450 ÷ 10,000, instead of by the positive results.
-- What does the problem ask you to work out? **How many ways something can turn out, or how likely it is.** The words “How likely is it that the weld has a crack?” ask how likely it is that a result is right, a chance and not a count. Nothing here is followed through time, no number is hidden for a calculation to fit, no whole number is split into groups, and no shape is measured. The problem asks for the number of different results, or for a chance, which is the key’s first answer **“How many ways something can turn out, or how likely it is”**.
-- What does the problem ask you to count, or find the chance of? **The chance that a test result is right.** The words “An ultrasound check flags 90% of the cracked welds, and also flags 5% of the welds that have no crack” give a check that has flagged a weld, how common cracks are, and how often the check is right and wrong, and ask how likely it is that the flag is right, so the key’s answer is **“The chance that a test result is right”**.
+- What does the problem ask you to work out? **How many ways something can turn out, or how likely it is.** The words “How likely is it that the weld has a crack?” ask how likely it is that a result is right, a chance and not a count. Nothing here is followed through time, no number is hidden for a calculation to fit, no whole number is split into groups, and no shape is measured. The problem asks for the number of different results, or for a chance, which is the answer to the first question **“How many ways something can turn out, or how likely it is”**.
+- What does the problem ask you to count, or find the chance of? **The chance that a test result is right.** The words “An ultrasound check flags 90% of the cracked welds, and also flags 5% of the welds that have no crack” give a check that has flagged a weld, how common cracks are, and how often the check is right and wrong, and ask how likely it is that the flag is right, so the answer is **“The chance that a test result is right”**.
 - Why not **Counting the opposite**: The problem is not about at least one of several separate things happening, which is **Counting the opposite**. A test has given one result, and the question is how far to trust it.
 - Taught on: “Worked: how far to trust a positive test” (one tap opens the card).
 
@@ -3556,8 +3556,8 @@ A name that is due returns as a case the learner has not seen, next to a case of
   A positive result comes from two kinds of people: those who have the thing and are rightly flagged, and those who do not have it and are wrongly flagged. The chance that a positive result is right is the share of all the positive results that are of the first kind. When the thing is rare, the second group starts from nearly everyone, so a small rate of wrong flags still gives many wrong positive results. Counting both kinds in an imagined group shows the share directly.
 - If you chose 99%: You chose **99%**. That is the answer you get when you take the share of people who have it that the test catches, 99%, as the chance that a positive result is right.
 - If you chose 0.1%: You chose **0.1%**. That is the answer you get when you divide the right positive results by the whole group, 99 ÷ 100,000, instead of by the positive results.
-- What does the problem ask you to work out? **How many ways something can turn out, or how likely it is.** The words “How likely is it that the passenger carries a banned item?” ask how likely it is that a result is right, a chance and not a count. Nothing in it follows an amount as time passes, hides a number that a calculation must fit, or splits whole numbers into groups, and there is no shape to measure. What it asks for is a count of the results, or the chance of something, so the key’s first answer is **“How many ways something can turn out, or how likely it is”**.
-- What does the problem ask you to count, or find the chance of? **The chance that a test result is right.** The words “A body scanner alarms for 99% of the passengers who carry one, and also for 2% of the passengers who do not” give a scanner that has alarmed, how rare banned items are, and how often the scanner is right and wrong, and ask how likely it is that the alarm is right, so the key’s answer is **“The chance that a test result is right”**.
+- What does the problem ask you to work out? **How many ways something can turn out, or how likely it is.** The words “How likely is it that the passenger carries a banned item?” ask how likely it is that a result is right, a chance and not a count. Nothing in it follows an amount as time passes, hides a number that a calculation must fit, or splits whole numbers into groups, and there is no shape to measure. What it asks for is a count of the results, or the chance of something, so the answer to the first question is **“How many ways something can turn out, or how likely it is”**.
+- What does the problem ask you to count, or find the chance of? **The chance that a test result is right.** The words “A body scanner alarms for 99% of the passengers who carry one, and also for 2% of the passengers who do not” give a scanner that has alarmed, how rare banned items are, and how often the scanner is right and wrong, and ask how likely it is that the alarm is right, so the answer is **“The chance that a test result is right”**.
 - Why not **Counting the opposite**: The problem is not about at least one of several separate things happening, which is **Counting the opposite**. A test has given one result, and the question is how far to trust it.
 - Taught on: “Worked: how far to trust a positive test” (one tap opens the card).
 

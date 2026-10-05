@@ -1,15 +1,15 @@
 # Learner view: US Civics & History, Unit Five: A judge, in any court
 
-*Four things a judge can be asked to do, and how to tell which one a case is about.* Unit revision 1, built to lesson standard 1, status: draft.
+*Four things a judge can be asked to do, and how to tell which one a case is about.* Unit revision 2, built to lesson standard 1, status: draft.
 
 This file is generated from the data files by `tools/render-learner-view.mjs`. It shows every screen in the order a learner meets it. In the app one card is on screen at a time and the learner moves on when ready.
 
-- **Bold text in quotation marks** is the key’s own wording, printed from `key.js`. Bold names are the outcome names from the same file. Neither is typed anywhere else. "What you must be able to point to" lines and "How to tell them apart" lines are also printed from one place each (the key and the look-alike ledger).
+- **Bold text in quotation marks** is the subject’s own wording for its questions and answers, written once and printed everywhere. Bold names are the names, written once in the same place. Neither is typed anywhere else. "What you must be able to point to" lines and "How to tell them apart" lines are also printed from one place each (the subject’s questions and the pairs it compares).
 - ⟦Double brackets⟧ show the words the app marks in a case (one highlight style everywhere).
 - The line in italics under each heading is the app’s top bar. The line in square brackets after it is for reviewers and is not shown to the learner.
 - Headings, prompt wording and stage instructions that are the same in every unit are the app’s wording, not this unit’s.
 - "Shown as soon as you …" is what appears the moment the learner answers. Nothing is hidden behind a second tap the first time a case is met, or after a miss.
-- After every answer the app shows, in this order: the right answer in the key’s words; the reason, quoting the marked words; for a name, why the nearest wrong name fails; after a miss, a line about the answer the learner chose; and last a link to the card that taught it. Where a line about the learner’s own choice is not written for the case, the app builds it from the key, and this file says so in place of repeating it.
+- After every answer the app shows, in this order: the right answer; the reason, quoting the marked words; for a name, why the nearest wrong name fails; after a miss, a line about the answer the learner chose; and last a link to the card that taught it. Where a line about the learner’s own choice is not written for the case, the app builds it from the answers’ own wording, and this file says so in place of repeating it.
 
 ---
 
@@ -17,7 +17,7 @@ This file is generated from the data files by `tools/render-learner-view.mjs`. I
 
 ### 1. A judge has been asked something. What?
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 1 of 35*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 1 of 35*
 
 [reviewers only: card kind `orient`, id `orient`]
 
@@ -25,20 +25,20 @@ After this unit you can read a short news item or an everyday story that ends wi
 
 You have heard stories like these. 'A judge has said the town cannot enforce its new rule.' 'The judge said the law does not cover scooters.' 'A judge turned down the request to lower the bus fare.' 'The judge ruled that the police should have asked permission before they searched the car.' In every one of them a judge is deciding something. It is not the same something each time.
 
-Unit One taught the key’s first question, and its answer for every story like these: **“A judge, in any court”**. That answer is only a start. A judge may be asked about a law, about a price, about a person on trial or about a single word, and each of those needs its own name. This unit teaches the next question, which asks what the judge is asked to do. It has four answers, and each leads to one name. The question is the same for a judge in a court of the whole country and for a judge in a court of one state.
+Unit One taught the first question, and its answer for every story like these: **“A judge, in any court”**. That answer is only a start. A judge may be asked about a law, about a price, about a person on trial or about a single word, and each of those needs its own name. This unit teaches the next question, which asks what the judge is asked to do. It has four answers, and each leads to one name. The question is the same for a judge in a court of the whole country and for a judge in a court of one state.
 
-**What Unit One taught, in one place.** The key’s first question is **“Who makes the last decision in the case, or is asked to make it?”** Its answers:
+**What Unit One taught, in one place.** The first question is **“Who makes the last decision in the case, or is asked to make it?”** Its answers:
 
 - **“Congress, in the House or the Senate”**: give this answer when the last decision in the case is a vote in the House, the Senate or both, or the case ends by asking Congress for one: on a law, on money, on a person the President chose or an agreement the President signed with another country, or on charging or trying an official. A law Congress passed is still Congress’s decision when the case adds that the President signed it.
 - **“The President or a federal agency”**: give this answer when the last decision in the case is made by the President or a federal agency, or the case ends by asking them for one: an agency writes rules, inspects or enforces, the President gives an order, commands the armed forces, deals with another country, refuses to sign a law or forgives a federal crime.
 - **“A judge, in any court”**: give this answer when the last decision in the case is a judge’s, in any court, federal or state, or the case ends with someone asking a judge to decide. **This unit is about these cases.**
 - **“A state, city or county government”**: give this answer when the last decision in the case is made by a state’s lawmakers, its governor or its agencies, or by a city, town or county, or the case ends by asking one of them for it. A judge in a state’s court counts as a judge, not as the state.
 
-Unit One also taught that two things are marked separately: the name you give a case, and your route to it, meaning the answers you gave to the key’s questions on the way.
+Two things are marked separately: the name you give a case, and your answers to the questions on the way to it.
 
 *(One tap on any of these lines opens the card in Unit One that taught it.)*
 
-**The part of the key this unit teaches.** This is a preview. You are not expected to follow it yet: every line is explained on the cards that come next. The question and its answers are in the key’s own words. Beside each answer, in plain words, is the thing it leads to. There are four of them, and each gets its name when it is taught.
+**The questions this unit teaches.** This is a preview. You are not expected to follow it yet: every line is explained on the cards that come next. The question and its answers are worded exactly as you will meet them. Beside each answer, in plain words, is the thing it leads to. There are four of them, and each gets its name when it is taught.
 
 What is the judge asked to do?
 - Check a law against the Constitution → a judge checking a law against the Constitution
@@ -58,14 +58,14 @@ The unit has five parts, and you can stop after any of them.
 1. A judge asked about a law
 2. A judge asked to choose a policy
 3. A judge and a person accused of a crime
-4. The key’s question
+4. The question
 5. Two whole cases, then the drill
 
 Each name is taught through cases first. After every step you answer one question about a new case, and the answer and the reason are shown straight away. Nothing here is graded. A miss only decides what comes back.
 
 ### 2. A judge checking a law against the Constitution
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 2 of 35*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 2 of 35*
 
 [reviewers only: card kind `meet`, id `meet-review`]
 
@@ -91,9 +91,9 @@ Two things have to be there before a judge will do this. There has to be a law, 
 
 **What you must be able to point to.** A law, or something the government did under it, someone it has actually harmed bringing a case, and a judge asked whether it breaks the Constitution. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What is the judge asked to do?”**
+**The question:** **“What is the judge asked to do?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“Check a law against the Constitution”**
+**Its answer for a case like this one:** **“Check a law against the Constitution”**
 
 The name for this is **Judicial review**. "Judicial" means having to do with judges, and a "review" is a second look: the judge looks again at a law the lawmakers made, to see whether it fits the Constitution.
 
@@ -101,7 +101,7 @@ You may also hear this called “striking down a law” or “ruling a law uncon
 
 ### 3. Judicial review: the same thing in a different story
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 3 of 35*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 3 of 35*
 
 [reviewers only: card kind `again`, id `again-review`]
 
@@ -134,7 +134,7 @@ The two stories share nothing else. One is about leaflets and the other about a 
 
 ### 4. The story never decides the answer
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 4 of 35*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 4 of 35*
 
 [reviewers only: card kind `lens`, id `lens`]
 
@@ -148,13 +148,13 @@ Two more things change on purpose. Some cases sound as if they are about the Con
 
 Whether you agree with what the judge is asked to do, or with what the judge decides, is not part of the question either.
 
-**Stays the same from case to case:** what the judge is asked to do, which is what the key asks about: **“What is the judge asked to do?”**
+**Stays the same from case to case:** what the judge is asked to do, which is what the question asks about: **“What is the judge asked to do?”**
 
 **Changes on purpose:** the topic; the people; how serious it sounds; whether the Constitution is mentioned; whether anyone is accused of a crime.
 
 ### 5. Judicial review: what it is like
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 5 of 35*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 5 of 35*
 
 [reviewers only: card kind `portrait`, id `portrait-review`]
 
@@ -184,7 +184,7 @@ In your own life you meet it as a news item about a rule that a court has set as
 
 ### 6. A question about a new case
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 6 of 35*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 6 of 35*
 
 [reviewers only: card kind `check`, id `check-review`]
 
@@ -200,7 +200,7 @@ The pieces you can tap:
 
 **Shown as soon as you tap**
 
-- If you are right: “Right: ‘saying the law takes away the right to gather peacefully’.” Anil was fined, so the law has actually harmed him. What he tells the court is that the law clashes with a right the Constitution protects, and the words are the ones you tapped. The law is being attacked, not read. The key’s answer for this case is **“Check a law against the Constitution”**, and the name is **Judicial review**.
+- If you are right: “Right: ‘saying the law takes away the right to gather peacefully’.” Anil was fined, so the law has actually harmed him. What he tells the court is that the law clashes with a right the Constitution protects, and the words are the ones you tapped. The law is being attacked, not read. The answer for this case is **“Check a law against the Constitution”**, and the name is **Judicial review**.
 - If you miss: “The words are ‘saying the law takes away the right to gather peacefully’.” The same reason follows, and then a line about the piece you tapped:
   - “A state law bans any group of workers from meeting outside a factory gate before a shift”: That is the law. It is how the matter began, and it is not what Anil asks the judge.
   - “Anil was fined $120 for meeting his colleagues at the gate to talk about their pay”: That is the harm. It is why Anil can bring a case, and it is not what he says about the law.
@@ -209,7 +209,7 @@ The pieces you can tap:
 
 ### 7. A wrong idea about what a judge can do to a law
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 7 of 35*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 7 of 35*
 
 [reviewers only: card kind `refute`, id `refute-strike`]
 
@@ -230,11 +230,11 @@ So before you use the name **Judicial review**, point to the person who was harm
 
 ### 8. What a judge does with an earlier ruling
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 8 of 35*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 8 of 35*
 
 [reviewers only: card kind `term`, id `term-precedent`]
 
-The next of the four names is about a judge reading a law, and the judge in it uses one more word. It is not part of the key’s questions, so here it comes first, with a case.
+The next of the four names is about a judge reading a law, and the judge in it uses one more word. It is not part of the questions, so here it comes first, with a case.
 
 *The food trucks*
 
@@ -251,7 +251,7 @@ Whenever a judge works out what the words of a law cover, earlier rulings on the
 
 ### 9. A judge saying what the words of a law cover
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 9 of 35*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 9 of 35*
 
 [reviewers only: card kind `meet`, id `meet-interpret`]
 
@@ -277,9 +277,9 @@ This is most of what courts do. Nobody in the case says the law is not allowed. 
 
 **What you must be able to point to.** A law nobody says breaks the Constitution, a situation its words may or may not reach, and a judge asked to decide. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What is the judge asked to do?”**
+**The question:** **“What is the judge asked to do?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“Say what the words of a law cover”**
+**Its answer for a case like this one:** **“Say what the words of a law cover”**
 
 The name for this is **Interpreting a law**. To interpret something is to work out what it means. The judge reads the law to work out whether its words reach a situation that nobody had pictured.
 
@@ -287,7 +287,7 @@ You may also hear this called “statutory interpretation”. That means the sam
 
 ### 10. Interpreting a law: the same thing in a different story
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 10 of 35*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 10 of 35*
 
 [reviewers only: card kind `again`, id `again-interpret`]
 
@@ -320,7 +320,7 @@ The two stories share nothing else. So this is not about taxes or about water. I
 
 ### 11. Interpreting a law: what it is like
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 11 of 35*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 11 of 35*
 
 [reviewers only: card kind `portrait`, id `portrait-interpret`]
 
@@ -350,13 +350,13 @@ In your own life you meet it whenever the words of a rule and your situation do 
 
 ### 12. A question about a new case
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 12 of 35*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 12 of 35*
 
 [reviewers only: card kind `check`, id `check-interpret`]
 
 > A city law says that every food business must display its health inspection grade in the window. Imran sells coffee from a bicycle with a box on the back. The city says the bicycle is a food business and fined him for not displaying a grade. Imran asked a judge to decide whether a coffee bicycle is a food business under the law. He does not say the city’s law is wrong.
 
-**The key asks:** **“What is the judge asked to do?”** Which of the answers you have met so far fits this case?
+**The question:** **“What is the judge asked to do?”** Which of the answers you have met so far fits this case?
 
 - Check a law against the Constitution
 - Say what the words of a law cover
@@ -370,7 +370,7 @@ In your own life you meet it whenever the words of a rule and your situation do 
 
 ### 13. Judicial review or Interpreting a law: telling them apart
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 13 of 35*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 13 of 35*
 
 [reviewers only: card kind `lookalike`, id `look-review-interpret`]
 
@@ -392,9 +392,9 @@ You have met both names on their own. They are easy to mix up, because in both a
 
 **Why this one and not the other**
 
-In Case A, Dee used a loudspeaker at a rally and was fined. She tells the judge that the rule takes away her right to speak. She is saying that the rule clashes with the Constitution. The key’s answer is **“Check a law against the Constitution”**, and the case is **Judicial review**.
+In Case A, Dee used a loudspeaker at a rally and was fined. She tells the judge that the rule takes away her right to speak. She is saying that the rule clashes with the Constitution. The answer is **“Check a law against the Constitution”**, and the case is **Judicial review**.
 
-In Case B, Eli played a violin through a small amplifier and was fined. He does not say the rule is wrong. He asks the judge whether a violin through a small amplifier is the kind of sound the rule is about. He is asking what its words cover. The key’s answer is **“Say what the words of a law cover”**, and the case is **Interpreting a law**.
+In Case B, Eli played a violin through a small amplifier and was fined. He does not say the rule is wrong. He asks the judge whether a violin through a small amplifier is the kind of sound the rule is about. He is asking what its words cover. The answer is **“Say what the words of a law cover”**, and the case is **Interpreting a law**.
 
 The rule is the same and so is the fine. What differs is what the person asks the judge about it: whether it is allowed at all, or how far its words reach.
 
@@ -402,7 +402,7 @@ The rule is the same and so is the fine. What differs is what the person asks th
 
 Does anyone say the law should not exist at all, or only ask whether it covers what happened?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Judicial review | Interpreting a law |
 |---|---|---|
@@ -419,7 +419,7 @@ Does anyone say the law should not exist at all, or only ask whether it covers w
 
 ### 14. A choice a judge leaves to the voters
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 14 of 35*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 14 of 35*
 
 [reviewers only: card kind `meet`, id `meet-notlegal`]
 
@@ -444,9 +444,9 @@ That does not leave the riders stuck. They can vote, sign petitions, write to th
 
 **What you must be able to point to.** A request for a judge to choose which policy is better, with no law and no right in the Constitution that settles it. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What is the judge asked to do?”**
+**The question:** **“What is the judge asked to do?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“Choose which policy is better”**
+**Its answer for a case like this one:** **“Choose which policy is better”**
 
 The name for this is **A political question**. "Political" in this name does not mean "about parties". It means a choice that is made by voting and not by a legal test, so the judge leaves it to the voters.
 
@@ -454,7 +454,7 @@ You may also hear this called “a matter for the voters”. That means the same
 
 ### 15. A political question: the same thing in a different story
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 15 of 35*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 15 of 35*
 
 [reviewers only: card kind `again`, id `again-notlegal`]
 
@@ -487,7 +487,7 @@ One is about fares and the other about the school day. So this is not about mone
 
 ### 16. A political question: what it is like
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 16 of 35*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 16 of 35*
 
 [reviewers only: card kind `portrait`, id `portrait-notlegal`]
 
@@ -517,13 +517,13 @@ In your own life you meet it whenever you wish a price, a school rule or a local
 
 ### 17. A question about a new case
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 17 of 35*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 17 of 35*
 
 [reviewers only: card kind `check`, id `check-notlegal`]
 
 > Residents of Pell Heights ask a judge to order the city to open a second walk-in clinic, saying that it would be better for the neighbourhood. No law requires a second clinic, and nobody says the city takes away a right by not opening one.
 
-**The key asks:** **“What is the judge asked to do?”** Which of the answers you have met so far fits this case?
+**The question:** **“What is the judge asked to do?”** Which of the answers you have met so far fits this case?
 
 - Check a law against the Constitution
 - Say what the words of a law cover
@@ -539,7 +539,7 @@ In your own life you meet it whenever you wish a price, a school rule or a local
 
 ### 18. Judicial review or A political question: telling them apart
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 18 of 35*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 18 of 35*
 
 [reviewers only: card kind `lookalike`, id `look-review-notlegal`]
 
@@ -561,9 +561,9 @@ In both of these names someone is unhappy with a rule and asks a judge to deal w
 
 **Why this one and not the other**
 
-In Case A, Rosa was fined under the town’s permit rule, and she tells the judge that it takes away the right to gather peacefully. Someone has been harmed, and there is a place in the Constitution to check the rule against. The key’s answer is **“Check a law against the Constitution”**, and the case is **Judicial review**.
+In Case A, Rosa was fined under the town’s permit rule, and she tells the judge that it takes away the right to gather peacefully. Someone has been harmed, and there is a place in the Constitution to check the rule against. The answer is **“Check a law against the Constitution”**, and the case is **Judicial review**.
 
-In Case B, nobody has been fined and nobody says a right is taken away. The group thinks a stage would be better for the town, and asks the judge to order one built. No law requires one. The key’s answer is **“Choose which policy is better”**, and the case is **A political question**.
+In Case B, nobody has been fined and nobody says a right is taken away. The group thinks a stage would be better for the town, and asks the judge to order one built. No law requires one. The answer is **“Choose which policy is better”**, and the case is **A political question**.
 
 The place is the same, and so is the wish for something to be different. In the first case there is something in the Constitution for the judge to check against. In the second there is nothing for the judge to apply.
 
@@ -571,7 +571,7 @@ The place is the same, and so is the wish for something to be different. In the 
 
 Can the person asking point to a place in the Constitution that the rule is said to break, or do they say only that a different rule would be better?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Judicial review | A political question |
 |---|---|---|
@@ -582,7 +582,7 @@ Can the person asking point to a place in the Constitution that the rule is said
 
 ### 19. Interpreting a law or A political question: telling them apart
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 19 of 35*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 19 of 35*
 
 [reviewers only: card kind `lookalike`, id `look-interpret-notlegal`]
 
@@ -604,9 +604,9 @@ In neither of these names does anyone say a law breaks the Constitution, and in 
 
 **Why this one and not the other**
 
-In Case A there is a law, "on a leash", and Tamsin says her thirty-foot cord is a leash. The judge can answer from the words of the law, the rest of it, what it was for and earlier rulings (*precedent*). The key’s answer is **“Say what the words of a law cover”**, and the case is **Interpreting a law**.
+In Case A there is a law, "on a leash", and Tamsin says her thirty-foot cord is a leash. The judge can answer from the words of the law, the rest of it, what it was for and earlier rulings (*precedent*). The answer is **“Say what the words of a law cover”**, and the case is **Interpreting a law**.
 
-In Case B there is no law to read. The owners want a fenced area for dogs, and their reason is that the dogs would be happier. Nothing tells the judge to order one. The key’s answer is **“Choose which policy is better”**, and the case is **A political question**.
+In Case B there is no law to read. The owners want a fenced area for dogs, and their reason is that the dogs would be happier. Nothing tells the judge to order one. The answer is **“Choose which policy is better”**, and the case is **A political question**.
 
 Both are about dogs, and in both the person wants something from the judge. The difference is whether there is a law the judge can read to answer, or only a view about what would be better.
 
@@ -614,7 +614,7 @@ Both are about dogs, and in both the person wants something from the judge. The 
 
 Is there a law whose words, or the rulings on them, can answer the question, or is the person asking the judge to choose?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Interpreting a law | A political question |
 |---|---|---|
@@ -625,7 +625,7 @@ Is there a law whose words, or the rulings on them, can answer the question, or 
 
 ### 20. A request that sounds like a plea for a better policy, and is not
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 20 of 35*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 20 of 35*
 
 [reviewers only: card kind `exception`, id `exc-hall`]
 
@@ -635,7 +635,7 @@ The last cards kept the pair tidy. A real request can sound like a plea for a be
 
 > A town owns a community hall that residents rent for parties and meetings. The town’s rule says that only members of the town’s main church may rent it. The Mehta family belong to a different faith and were turned away. They have asked a judge to order the town to let every resident rent the hall, saying the rule is unfair and that the Constitution does not allow a town to favour one religion.
 
-The Mehta family ask the judge to change a town rule, and they say the rule is unfair. That is how people ask for a better policy, and it is what you point to for **“Choose which policy is better”**. Yet the key’s answer for this case is **“Check a law against the Constitution”**.
+The Mehta family ask the judge to change a town rule, and they say the rule is unfair. That is how people ask for a better policy, and it is what you point to for **“Choose which policy is better”**. Yet the answer for this case is **“Check a law against the Constitution”**.
 
 **You are asked:** This looks like **A political question**. Before you read why it is **Judicial review**, tap the words in the case that settle it.
 
@@ -671,7 +671,7 @@ So read the reason as well as the request. "Unfair" alone is a view about which 
 
 ### 21. A judge making sure an accused person is treated fairly
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 21 of 35*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 21 of 35*
 
 [reviewers only: card kind `meet`, id `meet-trialrights`]
 
@@ -696,9 +696,9 @@ Who makes sure the steps are followed? A judge. When someone says that a step wa
 
 **What you must be able to point to.** A person accused of a crime, one of the steps the Constitution promises them, and a judge asked whether it was followed. This comes from one case so far. The next card tests it on a second case.
 
-**The key asks:** **“What is the judge asked to do?”**
+**The question:** **“What is the judge asked to do?”**
 
-**Its answer for a case like this one, in the key’s fixed words:** **“Make sure an accused person gets the steps the Constitution promises”**
+**Its answer for a case like this one:** **“Make sure an accused person gets the steps the Constitution promises”**
 
 The name for this is **The rights of the accused**. It is about the rights of someone accused, which means someone the government says has committed a crime, and it is the judge who is asked whether those rights were respected.
 
@@ -706,7 +706,7 @@ You may also hear this called “trial rights” or “a fair trial”. Those wo
 
 ### 22. The rights of the accused: the same thing in a different story
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 22 of 35*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 22 of 35*
 
 [reviewers only: card kind `again`, id `again-trialrights`]
 
@@ -741,7 +741,7 @@ Luis is not a citizen and Joy is, and it makes no difference: the steps protect 
 
 ### 23. The rights of the accused: what it is like
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 23 of 35*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 23 of 35*
 
 [reviewers only: card kind `portrait`, id `portrait-trialrights`]
 
@@ -773,13 +773,13 @@ You will meet it in any news about an arrest or a trial, and in what you may say
 
 ### 24. A question about a new case
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 24 of 35*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 24 of 35*
 
 [reviewers only: card kind `check`, id `check-trialrights`]
 
 > Ravi is charged with fraud. He has waited in jail for three years and his trial has still not started, because the court keeps setting new dates. His lawyer has asked the judge to rule that three years is not the speedy trial the Constitution promises.
 
-**The key asks:** **“What is the judge asked to do?”** Which of the answers you have met so far fits this case?
+**The question:** **“What is the judge asked to do?”** Which of the answers you have met so far fits this case?
 
 - Check a law against the Constitution
 - Make sure an accused person gets the steps the Constitution promises
@@ -797,7 +797,7 @@ You will meet it in any news about an arrest or a trial, and in what you may say
 
 ### 25. A wrong idea about who the steps protect
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 25 of 35*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 25 of 35*
 
 [reviewers only: card kind `refute`, id `refute-citizen`]
 
@@ -818,7 +818,7 @@ So before you decide that the steps do not apply, ask whether the person is accu
 
 ### 26. Judicial review or The rights of the accused: telling them apart
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 26 of 35*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 26 of 35*
 
 [reviewers only: card kind `lookalike`, id `look-review-trialrights`]
 
@@ -840,9 +840,9 @@ In both of these names a person is in trouble with the law and a judge is asked 
 
 **Why this one and not the other**
 
-In Case A the law is what Vince attacks. He was charged under it, and he tells the judge that it takes away his right to speak. That is a claim that the law clashes with the Constitution. The key’s answer is **“Check a law against the Constitution”**, and the case is **Judicial review**.
+In Case A the law is what Vince attacks. He was charged under it, and he tells the judge that it takes away his right to speak. That is a claim that the law clashes with the Constitution. The answer is **“Check a law against the Constitution”**, and the case is **Judicial review**.
 
-In Case B Vince does not attack the law against blocking a road. His lawyer says that how he was treated after the arrest skipped a step the Constitution promises: a lawyer. The question is about the steps, not about the law. The key’s answer is **“Make sure an accused person gets the steps the Constitution promises”**, and the case is **The rights of the accused**.
+In Case B Vince does not attack the law against blocking a road. His lawyer says that how he was treated after the arrest skipped a step the Constitution promises: a lawyer. The question is about the steps, not about the law. The answer is **“Make sure an accused person gets the steps the Constitution promises”**, and the case is **The rights of the accused**.
 
 Both are about Vince, both end in front of a judge, and in both the Constitution is part of the argument. The difference is what the judge is asked to check: the law itself, or the way an accused person was treated.
 
@@ -850,7 +850,7 @@ Both are about Vince, both end in front of a judge, and in both the Constitution
 
 Is the person saying the law itself is not allowed, or saying that a step promised to someone accused was skipped in how they were dealt with?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Judicial review | The rights of the accused |
 |---|---|---|
@@ -861,7 +861,7 @@ Is the person saying the law itself is not allowed, or saying that a step promis
 
 ### 27. On trial, and still about the law
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 27 of 35*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 27 of 35*
 
 [reviewers only: card kind `exception`, id `exc-defendant`]
 
@@ -871,7 +871,7 @@ The last card kept the two names tidy. In a real case a person on trial can be a
 
 > Nell is on trial for breaking a town rule that bans camping in any public park. She has been in court since Monday: a jury has been chosen, she has a lawyer, and the trial is open to the public. On Thursday her lawyer asks the judge to throw out the charge, saying the rule takes away the right to gather peacefully, because Nell was holding a night vigil with fifty other people.
 
-The case is full of a trial: a courtroom, a jury, a lawyer, a public hearing. Those are the steps the Constitution promises an accused person, and a person accused of a crime in front of a judge is what you point to for **“Make sure an accused person gets the steps the Constitution promises”**. Yet the key’s answer for this case is **“Check a law against the Constitution”**.
+The case is full of a trial: a courtroom, a jury, a lawyer, a public hearing. Those are the steps the Constitution promises an accused person, and a person accused of a crime in front of a judge is what you point to for **“Make sure an accused person gets the steps the Constitution promises”**. Yet the answer for this case is **“Check a law against the Constitution”**.
 
 **You are asked:** This looks like **The rights of the accused**. Before you read why it is **Judicial review**, tap the words in the case that settle it.
 
@@ -899,7 +899,7 @@ Read what the judge is asked, not where the case is held. In a criminal case the
 
 ### 28. Judicial review or Beyond Congress’s power: telling them apart
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 28 of 35*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 28 of 35*
 
 [reviewers only: card kind `lookalike`, id `look-review-beyondcong`]
 
@@ -921,29 +921,29 @@ A law that clashes with the Constitution can have been through two moments: the 
 
 **Why this one and not the other**
 
-In Case A the House and the Senate vote for the law, and the story ends there. The last decision is a vote, so the key’s first answer is **“Congress, in the House or the Senate”**. Its second answer, for a law of this kind, is **“Passes a law the Constitution does not let it pass”**.
+In Case A the House and the Senate vote for the law, and the story ends there. The last decision is a vote, so the first answer is **“Congress, in the House or the Senate”**. Its second answer, for a law of this kind, is **“Passes a law the Constitution does not let it pass”**.
 
-In Case B the law is a year old, Hana has been fined under it, and the story ends with her asking a judge to cancel the fine because the law takes away the right to worship and to gather peacefully. The last decision is a judge’s, so the key’s first answer is **“A judge, in any court”**, and the second is **“Check a law against the Constitution”**. The case is **Judicial review**.
+In Case B the law is a year old, Hana has been fined under it, and the story ends with her asking a judge to cancel the fine because the law takes away the right to worship and to gather peacefully. The last decision is a judge’s, so the first answer is **“A judge, in any court”**, and the second is **“Check a law against the Constitution”**. The case is **Judicial review**.
 
-The law and the right are the same. In one case you are watching lawmakers make it, and in the other you are watching a judge asked whether it was allowed. What separates them is whose decision the story ends on, which is the key’s first question.
+The law and the right are the same. In one case you are watching lawmakers make it, and in the other you are watching a judge asked whether it was allowed. What separates them is whose decision the story ends on, which is the first question.
 
 **How to tell them apart**
 
 Does the story end with lawmakers voting on a law, or with someone harmed by a law asking a judge about it?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | Judicial review | Beyond Congress’s power |
 |---|---|---|
 | Who makes the last decision in the case, or is asked to make it? | A judge, in any court | Congress, in the House or the Senate |
-| What does Congress do in the case? | *Not asked on its route* | Passes a law the Constitution does not let it pass |
-| What is the judge asked to do? | Check a law against the Constitution | *Not asked on its route* |
+| What does Congress do in the case? | *Not asked for this one* | Passes a law the Constitution does not let it pass |
+| What is the judge asked to do? | Check a law against the Constitution | *Not asked for this one* |
 | What you must be able to point to | A law, or something the government did under it, someone it has actually harmed bringing a case, and a judge asked whether it breaks the Constitution | A law Congress passes, and either a matter the Constitution does not list among Congress’s powers, or a right the Constitution protects that the law takes away |
 
 
 ### 29. The rights of the accused or Beyond Congress’s power: telling them apart
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 29 of 35*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 29 of 35*
 
 [reviewers only: card kind `lookalike`, id `look-trialrights-beyondcong`]
 
@@ -965,9 +965,9 @@ In both of these a right in the Constitution is what stops the government, and i
 
 **Why this one and not the other**
 
-In Case A the House and the Senate vote for a law that bans printing certain pamphlets, and the story ends there. The last decision is a vote, so the key’s first answer is **“Congress, in the House or the Senate”**, and its second, for a law of this kind, is **“Passes a law the Constitution does not let it pass”**.
+In Case A the House and the Senate vote for a law that bans printing certain pamphlets, and the story ends there. The last decision is a vote, so the first answer is **“Congress, in the House or the Senate”**, and its second, for a law of this kind, is **“Passes a law the Constitution does not let it pass”**.
 
-In Case B a printer has been arrested on suspicion of theft, and the police searched his shop with no warrant. His lawyer asks a judge to decide whether the search was unreasonable. The last decision is a judge’s, so the key’s first answer is **“A judge, in any court”**. The judge is asked about a step promised to an accused person, so the second is **“Make sure an accused person gets the steps the Constitution promises”**, and the case is **The rights of the accused**.
+In Case B a printer has been arrested on suspicion of theft, and the police searched his shop with no warrant. His lawyer asks a judge to decide whether the search was unreasonable. The last decision is a judge’s, so the first answer is **“A judge, in any court”**. The judge is asked about a step promised to an accused person, so the second is **“Make sure an accused person gets the steps the Constitution promises”**, and the case is **The rights of the accused**.
 
 Both cases have a printer and a right that stops the government. In one the right stops lawmakers from passing a law, and in the other it is a step promised to a person who is accused. The right alone does not tell you which. Start with whose decision the story ends on.
 
@@ -975,35 +975,35 @@ Both cases have a printer and a right that stops the government. In one the righ
 
 Is the last decision a vote by lawmakers on a law, or a judge dealing with a person accused of a crime?
 
-**Side by side, in the key’s words**
+**Side by side**
 
 | | The rights of the accused | Beyond Congress’s power |
 |---|---|---|
 | Who makes the last decision in the case, or is asked to make it? | A judge, in any court | Congress, in the House or the Senate |
-| What does Congress do in the case? | *Not asked on its route* | Passes a law the Constitution does not let it pass |
-| What is the judge asked to do? | Make sure an accused person gets the steps the Constitution promises | *Not asked on its route* |
+| What does Congress do in the case? | *Not asked for this one* | Passes a law the Constitution does not let it pass |
+| What is the judge asked to do? | Make sure an accused person gets the steps the Constitution promises | *Not asked for this one* |
 | What you must be able to point to | A person accused of a crime, one of the steps the Constitution promises them, and a judge asked whether it was followed | A law Congress passes, and either a matter the Constitution does not list among Congress’s powers, or a right the Constitution protects that the law takes away |
 
 
-*End of part 3. You can stop here; your place is kept. Next: part 4, The key’s question.*
+*End of part 3. You can stop here; your place is kept. Next: part 4, The question.*
 
 ---
 
-## Part 4 of 5: The key’s question
+## Part 4 of 5: The question
 
 ### 30. The question you have been answering all along
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 30 of 35*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 30 of 35*
 
 [reviewers only: card kind `question`, id `q-judge`]
 
-Since the leaflet fine you have seen the key’s question at the foot of each new name, with one answer under it. This card puts the question and its four answers in one place, as the key shows them, and says why the key asks it.
+Since the leaflet fine you have seen the question at the foot of each new name, with one answer under it. This card puts the question and its four answers in one place, and says why it is asked.
 
-**The key asks:** **“What is the judge asked to do?”**
+**The question:** **“What is the judge asked to do?”**
 
 **What it is for.** Tells apart four things a judge can be asked to do: check a law against the Constitution, protect a person accused of a crime, say what the words of a law cover, and choose a policy, which a judge will not do.
 
-**Its answers, exactly as the key shows them**
+**Its answers**
 
 Each answer leads to one name, and so rules out the other three.
 
@@ -1024,9 +1024,9 @@ Each answer leads to one name, and so rules out the other three.
 
 The four names are defined by what the judge is asked to decide. They are not defined by which court it is, how important the case is, or whether the judge agrees.
 
-Two stories can end with a judge and need different names, and two stories about the very same rule can need different names too. For one of them the key’s answer is **“Check a law against the Constitution”**; for another, about the same rule, it is **“Say what the words of a law cover”**. Nothing about the topic, the people or how serious it sounds tells them apart. Only what the judge is asked to do tells them apart.
+Two stories can end with a judge and need different names, and two stories about the very same rule can need different names too. For one of them the answer is **“Check a law against the Constitution”**; for another, about the same rule, it is **“Say what the words of a law cover”**. Nothing about the topic, the people or how serious it sounds tells them apart. Only what the judge is asked to do tells them apart.
 
-That is why the key does not ask which court the judge sits in, how important the case is, or whether the case is about a crime. A judge in a court of one state, or in a court of the whole country, can be asked any of the four.
+That is why the question is not which court the judge sits in, how important the case is, or whether the case is about a crime. A judge in a court of one state, or in a court of the whole country, can be asked any of the four.
 
 **How to answer it from a case**
 
@@ -1057,13 +1057,13 @@ Sometimes two answers both seem to fit. Each pair below has been set side by sid
 
 ### 31. A question about a new case
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 31 of 35*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 31 of 35*
 
 [reviewers only: card kind `check`, id `check-judge`]
 
 > A state law says that every bakery must label its bread with a list of ingredients. Hamza bakes at home and sells his loaves from a market stall without labels, saying that a stall is not a bakery. The state fined him, and he has asked a judge to decide whether a market stall that sells bread it bakes is a bakery under the law. He does not say the law is wrong.
 
-**The key asks:** **“What is the judge asked to do?”**
+**The question:** **“What is the judge asked to do?”**
 
 - Check a law against the Constitution
 - Make sure an accused person gets the steps the Constitution promises
@@ -1087,11 +1087,11 @@ Sometimes two answers both seem to fit. Each pair below has been set side by sid
 
 ### 32. A whole case, from the first question to the name
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 32 of 35*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 32 of 35*
 
 [reviewers only: card kind `worked`, id `worked-yardsign`]
 
-You have the four names and the key’s question about them. Before you run a case yourself, watch two being run from the top, in the order the key asks. You are not asked anything until the end of each.
+You have the four names and the question about them. Before you run a case yourself, watch two being run from the top, in the order they are asked. You are not asked anything until the end of each.
 
 *The yard sign*
 
@@ -1137,17 +1137,17 @@ Still possible: **Judicial review**. Ruled out: **Interpreting a law**, **A poli
 
 For **Interpreting a law** you must be able to point to this: a law nobody says breaks the Constitution, a situation its words may or may not reach, and a judge asked to decide. Nobody in Wanda’s case is asking whether the words of the law reach her sign. She says the law should not stand, because it takes away a right the Constitution protects.
 
-It is the question from the park rule, where one person used a loudspeaker and another a violin. Does anyone say the law should not exist at all, or only ask whether it covers what happened? Here the person says the law is not allowed, so the key’s answer is **“Check a law against the Constitution”**.
+It is the question from the park rule, where one person used a loudspeaker and another a violin. Does anyone say the law should not exist at all, or only ask whether it covers what happened? Here the person says the law is not allowed, so the answer is **“Check a law against the Constitution”**.
 
 **Does it look like a case you know?**
 
-The key has given its answer. Now take a second look of a different kind: does this case look like one you know? It should bring back the leaflet fine: a rule about speaking, a person fined under it, and a judge asked whether the rule fits the Constitution.
+The questions have given their answer. Now take a second look of a different kind: does this case look like one you know? It should bring back the leaflet fine: a rule about speaking, a person fined under it, and a judge asked whether the rule fits the Constitution.
 
-Here the key and the likeness agree, so the answer stands. The key’s question comes first, because it makes you point at words in the case. The likeness is only a second look. When the two disagree, do not pick the one you prefer. Go back to the key’s question and find the words in the case that answer it. The second whole case shows how.
+Here the questions and the likeness agree, so the answer stands. The question comes first, because it makes you point at words in the case. The likeness is only a second look. When the two disagree, do not pick the one you prefer. Go back to the question and find the words in the case that answer it. The second whole case shows how.
 
 ### 33. A second whole case, where the story points the wrong way
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 33 of 35*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 33 of 35*
 
 [reviewers only: card kind `worked`, id `worked-megaphone`]
 
@@ -1197,13 +1197,13 @@ Still possible: **Interpreting a law**. Ruled out: **Judicial review**, **A poli
 
 For **Judicial review** you must be able to point to this: a law, or something the government did under it, someone it has actually harmed bringing a case, and a judge asked whether it breaks the Constitution. The part that is missing is the claim that the rule breaks the Constitution. Greta never makes it. The right to speak is in the story, and it is not what the judge is asked about.
 
-It is the question from the park rule again. Does anyone say the law should not exist at all, or only ask whether it covers what happened? Here the only question put to the judge is how far a word reaches, so the key’s answer is **“Say what the words of a law cover”**.
+It is the question from the park rule again. Does anyone say the law should not exist at all, or only ask whether it covers what happened? Here the only question put to the judge is how far a word reaches, so the answer is **“Say what the words of a law cover”**.
 
 **Does it look like a case you know?**
 
-Now the second look: does this case look like one you know? A protester, a fine and the right to speak may bring back the leaflet fine first, and the leaflet fine was **Judicial review**. So here the likeness and the key seem to disagree.
+Now the second look: does this case look like one you know? A protester, a fine and the right to speak may bring back the leaflet fine first, and the leaflet fine was **Judicial review**. So here the likeness and the questions seem to disagree.
 
-When that happens, go back to the key’s question and find the words in the case that answer it. They are “She does not say the rule is wrong” and “whether a hand-held megaphone is a loudspeaker under the rule”. The leaflet case has nothing like them: Marisol told the judge that the rule breaks her right to speak. The case this one really looks like is the rooftop hives: a law nobody attacks, a word, and a judge asked whether it covers a situation. So the key’s answer stands.
+When that happens, go back to the question and find the words in the case that answer it. They are “She does not say the rule is wrong” and “whether a hand-held megaphone is a loudspeaker under the rule”. The leaflet case has nothing like them: Marisol told the judge that the rule breaks her right to speak. The case this one really looks like is the rooftop hives: a law nobody attacks, a word, and a judge asked whether it covers a situation. So the answer stands.
 
 ### The drill
 
@@ -1211,7 +1211,7 @@ The cards are out of view from here, and every case is new. The drill has five s
 
 Many of these cases mention the Constitution, a trial, a vote or a fine, and what the story mentions first is often not what the judge is asked. That is on purpose. Read each story to its end and look for what the judge is asked to do.
 
-#### Stage 1 of 5. The key’s answers are shown for each case. Give the name that goes with them. This stage practises one thing: which name goes with which answer.
+#### Stage 1 of 5. The answers are shown for each case. Give the name that goes with them. This stage practises one thing: which name goes with which answer.
 
 The names offered are the four this unit teaches: Judicial review / Interpreting a law / A political question / The rights of the accused.
 
@@ -1231,7 +1231,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Interpreting a law**: He does not ask whether the words of the law reach his service. He says the law should not stand.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Interpreting a law**, the look-alike card’s lines follow: In both, a law already exists, a person has been touched by it, and a judge is asked about it. In **Judicial review** the person says the law itself is not allowed, because it clashes with the Constitution. In **Interpreting a law** nobody says that. The law is accepted, and the only question is whether its words reach what happened. Does anyone say the law should not exist at all, or only ask whether it covers what happened?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “A judge checking a law against the Constitution” (one tap opens the card).
 
 **Drill item 2 of 43**
@@ -1250,7 +1250,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Judicial review**: Bo does not say the law takes away a right. He asks whether the word "taxi" covers his van.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Judicial review**, the look-alike card’s lines follow: In both, a law already exists, a person has been touched by it, and a judge is asked about it. In **Judicial review** the person says the law itself is not allowed, because it clashes with the Constitution. In **Interpreting a law** nobody says that. The law is accepted, and the only question is whether its words reach what happened. Does anyone say the law should not exist at all, or only ask whether it covers what happened?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “A judge saying what the words of a law cover” (one tap opens the card).
 
 **Drill item 3 of 43**
@@ -1269,7 +1269,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Judicial review**: Nobody has been harmed by a rule and nobody says a right is taken away, so there is nothing in the Constitution to check a rule against.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Judicial review**, the look-alike card’s lines follow: In both, someone dislikes a rule or a situation, thinks it is unfair, and asks a judge to deal with it. In **Judicial review** the person can point to something in the Constitution that the rule is said to break, and has been harmed by the rule. In **A political question** nobody can point to a law or a right that settles it: the judge is asked to choose what would be better. Can the person asking point to a place in the Constitution that the rule is said to break, or do they say only that a different rule would be better?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “A choice a judge leaves to the voters” (one tap opens the card).
 
 **Drill item 4 of 43**
@@ -1288,7 +1288,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **A political question**: There is a law, and the judge can answer from its words. The parents are not asking the judge to choose what would be better.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **A political question**, the look-alike card’s lines follow: In both, nobody says a law breaks the Constitution, and a judge is asked for something about a rule of government. In **Interpreting a law** there is a law, and the judge can answer from its words, the rest of the law, what it was for and earlier rulings (*precedent*). In **A political question** there is no law that settles it and the judge is asked to choose, so there is nothing to read. Is there a law whose words, or the rulings on them, can answer the question, or is the person asking the judge to choose?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “A judge saying what the words of a law cover” (one tap opens the card).
 
 **Drill item 5 of 43**
@@ -1307,7 +1307,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Judicial review**: Nobody says a law takes away a right. The question is about how Dina was treated after her arrest.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Judicial review**, the look-alike card’s lines follow: In both, a person is in trouble with the law, and a judge is asked whether the Constitution was kept. In **Judicial review** the law itself is what the person attacks. In **The rights of the accused** nobody attacks the law: the question is whether the steps the Constitution promises to an accused person were followed when this person was dealt with. Is the person saying the law itself is not allowed, or saying that a step promised to someone accused was skipped in how they were dealt with?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “A judge making sure an accused person is treated fairly” (one tap opens the card).
 
 **Drill item 6 of 43**
@@ -1326,7 +1326,7 @@ Shown to you, with the words that decide each answer marked:
   - Why not **A political question**: He does not only say a different rule would be better. He points to a right that the law is said to break.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **A political question**, the look-alike card’s lines follow: In both, someone dislikes a rule or a situation, thinks it is unfair, and asks a judge to deal with it. In **Judicial review** the person can point to something in the Constitution that the rule is said to break, and has been harmed by the rule. In **A political question** nobody can point to a law or a right that settles it: the judge is asked to choose what would be better. Can the person asking point to a place in the Constitution that the rule is said to break, or do they say only that a different rule would be better?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “A judge checking a law against the Constitution” (one tap opens the card).
 
 #### Stage 2 of 5. One question at a time.
@@ -1347,7 +1347,7 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **Check a law against the Constitution.**” Mina was fined, so she was harmed, and she says the law clashes with a right the Constitution protects: “saying the law takes away the right to speak”. This answer leads to **Judicial review**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **Say what the words of a law cover**: She does not ask whether a flyer is the kind of paper the law covers. She says the law should not exist.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 8 of 43**
@@ -1366,7 +1366,7 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **Choose which policy is better.**” The travellers want the judge to choose what is better, and nothing settles it: “No law requires a late train, and nobody says that having none takes away a right”. This answer leads to **A political question**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **Say what the words of a law cover**: There is no law whose words the judge could read to answer. The travellers want the judge to choose.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 9 of 43**
@@ -1385,7 +1385,7 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **Say what the words of a law cover.**” Owen accepts the law and asks how far a word reaches: “whether a tank of fish counts as one pet or twelve under the law”. The judge answers from the law, not from a view about pets. This answer leads to **Interpreting a law**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **Check a law against the Constitution**: Owen is not saying the law takes away a right or breaks the Constitution.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 10 of 43**
@@ -1404,7 +1404,7 @@ Shown to you, with the words that decide each answer marked:
 - If you are right: “Right: **Make sure an accused person gets the steps the Constitution promises.**” Arman is accused of a crime, and his lawyer asks whether a step the Constitution promises was followed: “whether bail that high is excessive, as the Eighth Amendment forbids”. This answer leads to **The rights of the accused**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **Say what the words of a law cover**: The judge is not asked what the words of a law cover. The question is whether a promised step was kept.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 11 of 43**
@@ -1545,14 +1545,14 @@ Shown to you, with the words that decide each answer marked:
 - She was held for two days and could not call a lawyer.
 - He says the town’s rule takes away his right to worship.
 - They argue that the word "shop" cannot cover a food truck.
-- They want the judge to choose a shorter bus route.
+- They want the judge to choose a shorter way for the bus to go.
 
 **Shown as soon as you answer**
 
 - The answer is: She was held for two days and could not call a lawyer. That detail is a step the Constitution promises an accused person (a lawyer) said to have been skipped.
 - If you chose “He says the town’s rule takes away his right to worship.”: that belongs to **Judicial review**.
 - If you chose “They argue that the word "shop" cannot cover a food truck.”: that belongs to **Interpreting a law**.
-- If you chose “They want the judge to choose a shorter bus route.”: that belongs to **A political question**.
+- If you chose “They want the judge to choose a shorter way for the bus to go.”: that belongs to **A political question**.
 - Taught on: “The rights of the accused: what it is like” (one tap opens the card).
 
 **Drill item 19 of 43**
@@ -1605,12 +1605,12 @@ Shown to you, with the words that decide each answer marked:
 **Shown as soon as you answer**
 
 - If you are right: “Right: **Congress, in the House or the Senate.**” The last decision is a vote by lawmakers of the whole country: “the House of Representatives voted for a bill that would cut the price of a stamp by two cents”. The Senate has not voted, and the case stops before it does. Nobody else decides anything.
-- If you miss: “The answer is …”, the same reason, and then the line built from the key for the answer you chose.
-- Then, right or wrong: “This case leaves the part of the key you have been taught. The questions that follow this answer come in a part of the course you have not reached, so the case stops here.”
+- If you miss: “The answer is …”, the same reason, and then the line built from the answers’ own wording for the answer you chose.
+- Then, right or wrong: “The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.”
 
-#### Stage 3 of 5. The first answer is shown. Answer the rest, then give the name. From here on your route is marked as well as the name: a right name reached by a wrong answer on the way counts as a miss.
+#### Stage 3 of 5. The first answer is shown. Answer the rest, then give the name. From here on your answers on the way are marked as well as the name: a right name reached by a wrong answer counts as a miss.
 
-Each question is shown with all of its answers from the key, in the key’s order, and the names offered are the four this unit teaches.
+Each question is shown with all of its answers, in order, and the names offered are the four this unit teaches.
 
 **Drill item 22 of 43**
 
@@ -1627,10 +1627,10 @@ Shown to you, with the words that decide each answer marked:
   - Why not **A political question**: He does not only say a different rule would be better. He says the law takes away a right.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - If you chose **Choose which policy is better**: He does not only say a different rule would be better. He says the law takes away a right.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A political question**, the look-alike card’s lines follow: In both, someone dislikes a rule or a situation, thinks it is unfair, and asks a judge to deal with it. In **Judicial review** the person can point to something in the Constitution that the rule is said to break, and has been harmed by the rule. In **A political question** nobody can point to a law or a right that settles it: the judge is asked to choose what would be better. Can the person asking point to a place in the Constitution that the rule is said to break, or do they say only that a different rule would be better?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A judge checking a law against the Constitution” (one tap opens the card).
 
 **Drill item 23 of 43**
@@ -1648,10 +1648,10 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Judicial review**: Nobody says the law against fraud is wrong. The question is about how Rae is being treated.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - If you chose **Check a law against the Constitution**: Nobody says the law against fraud is wrong. The question is about how Rae is being treated.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Judicial review**, the look-alike card’s lines follow: In both, a person is in trouble with the law, and a judge is asked whether the Constitution was kept. In **Judicial review** the law itself is what the person attacks. In **The rights of the accused** nobody attacks the law: the question is whether the steps the Constitution promises to an accused person were followed when this person was dealt with. Is the person saying the law itself is not allowed, or saying that a step promised to someone accused was skipped in how they were dealt with?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A judge making sure an accused person is treated fairly” (one tap opens the card).
 
 **Drill item 24 of 43**
@@ -1669,10 +1669,10 @@ Shown to you, with the words that decide each answer marked:
   - Why not **Judicial review**: Nobody has been harmed by a rule, and nobody points to a right that is taken away.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - If you chose **Check a law against the Constitution**: Nobody has been harmed by a rule, and nobody points to a right that is taken away.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Judicial review**, the look-alike card’s lines follow: In both, someone dislikes a rule or a situation, thinks it is unfair, and asks a judge to deal with it. In **Judicial review** the person can point to something in the Constitution that the rule is said to break, and has been harmed by the rule. In **A political question** nobody can point to a law or a right that settles it: the judge is asked to choose what would be better. Can the person asking point to a place in the Constitution that the rule is said to break, or do they say only that a different rule would be better?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A choice a judge leaves to the voters” (one tap opens the card).
 
 **Drill item 25 of 43**
@@ -1690,15 +1690,15 @@ Shown to you, with the words that decide each answer marked:
   - Why not **A political question**: The fee is mentioned, but the judge is not asked to choose a better fee. There is a law, and the question is what its word covers.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - If you chose **Choose which policy is better**: The fee is mentioned, but the judge is not asked to choose a better fee. There is a law, and the question is what its word covers.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A political question**, the look-alike card’s lines follow: In both, nobody says a law breaks the Constitution, and a judge is asked for something about a rule of government. In **Interpreting a law** there is a law, and the judge can answer from its words, the rest of the law, what it was for and earlier rulings (*precedent*). In **A political question** there is no law that settles it and the judge is asked to choose, so there is nothing to read. Is there a law whose words, or the rulings on them, can answer the question, or is the person asking the judge to choose?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A judge saying what the words of a law cover” (one tap opens the card).
 
-#### Stage 4 of 5. No help. Answer every question in the key’s order, then give the name.
+#### Stage 4 of 5. No help. Answer every question in order, then give the name.
 
-Each question is shown with all of its answers from the key, in the key’s order, and the names offered are the four this unit teaches.
+Each question is shown with all of its answers, in order, and the names offered are the four this unit teaches.
 
 **Drill item 26 of 43**
 
@@ -1713,10 +1713,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **A judge, in any court.** The state made its law and fined Ola, and those came first. The story ends with her case: “She took the state to court”.
   - If you chose **Say what the words of a law cover**: She does not ask whether a Polish sign is the kind of sign the law covers. She says the law is not allowed.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Interpreting a law**, the look-alike card’s lines follow: In both, a law already exists, a person has been touched by it, and a judge is asked about it. In **Judicial review** the person says the law itself is not allowed, because it clashes with the Constitution. In **Interpreting a law** nobody says that. The law is accepted, and the only question is whether its words reach what happened. Does anyone say the law should not exist at all, or only ask whether it covers what happened?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A judge checking a law against the Constitution” (one tap opens the card).
 
 **Drill item 27 of 43**
@@ -1732,10 +1732,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **A judge, in any court.** The town has made its law and fined Fiona. The story ends with a request: “She asked a judge to decide”.
   - If you chose **Check a law against the Constitution**: Fiona does not say the law takes away a right. She asks whether the word "building" covers her tent.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Judicial review**, the look-alike card’s lines follow: In both, a law already exists, a person has been touched by it, and a judge is asked about it. In **Judicial review** the person says the law itself is not allowed, because it clashes with the Constitution. In **Interpreting a law** nobody says that. The law is accepted, and the only question is whether its words reach what happened. Does anyone say the law should not exist at all, or only ask whether it covers what happened?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A judge saying what the words of a law cover” (one tap opens the card).
 
 **Drill item 28 of 43**
@@ -1751,10 +1751,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **A judge, in any court.** The students have gone to a judge: “ask a judge to order the college”. The college has not been asked for anything else.
   - If you chose **Check a law against the Constitution**: Nobody says a rule takes away a right. There is nothing in the Constitution for the judge to check the fees against.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Judicial review**, the look-alike card’s lines follow: In both, someone dislikes a rule or a situation, thinks it is unfair, and asks a judge to deal with it. In **Judicial review** the person can point to something in the Constitution that the rule is said to break, and has been harmed by the rule. In **A political question** nobody can point to a law or a right that settles it: the judge is asked to choose what would be better. Can the person asking point to a place in the Constitution that the rule is said to break, or do they say only that a different rule would be better?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A choice a judge leaves to the voters” (one tap opens the card).
 
 **Drill item 29 of 43**
@@ -1770,10 +1770,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **A judge, in any court.** The story ends with a request to a judge: “Pavel’s lawyer asks the judge to decide”.
   - If you chose **Check a law against the Constitution**: Nobody says the law against robbery is wrong. The question is about how Pavel’s trial is held.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Judicial review**, the look-alike card’s lines follow: In both, a person is in trouble with the law, and a judge is asked whether the Constitution was kept. In **Judicial review** the law itself is what the person attacks. In **The rights of the accused** nobody attacks the law: the question is whether the steps the Constitution promises to an accused person were followed when this person was dealt with. Is the person saying the law itself is not allowed, or saying that a step promised to someone accused was skipped in how they were dealt with?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A judge making sure an accused person is treated fairly” (one tap opens the card).
 
 **Drill item 30 of 43**
@@ -1789,10 +1789,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **A judge, in any court.** The city made its law and fined her, and those came first. The story ends with a request to a judge: “She asked a judge to cancel the fine”.
   - If you chose **Choose which policy is better**: She does not only say that a different rule would be better. She says the law takes away a right.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A political question**, the look-alike card’s lines follow: In both, someone dislikes a rule or a situation, thinks it is unfair, and asks a judge to deal with it. In **Judicial review** the person can point to something in the Constitution that the rule is said to break, and has been harmed by the rule. In **A political question** nobody can point to a law or a right that settles it: the judge is asked to choose what would be better. Can the person asking point to a place in the Constitution that the rule is said to break, or do they say only that a different rule would be better?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A judge checking a law against the Constitution” (one tap opens the card).
 
 **Drill item 31 of 43**
@@ -1808,10 +1808,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **A judge, in any court.** The state has made its law, and the firm has refused the leave. The story ends with a request to a judge: “The firm has asked a judge to decide”.
   - If you chose **Choose which policy is better**: There is a law, and the judge can answer from its words and from earlier rulings. Nobody asks the judge to choose a better rule.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A political question**, the look-alike card’s lines follow: In both, nobody says a law breaks the Constitution, and a judge is asked for something about a rule of government. In **Interpreting a law** there is a law, and the judge can answer from its words, the rest of the law, what it was for and earlier rulings (*precedent*). In **A political question** there is no law that settles it and the judge is asked to choose, so there is nothing to read. Is there a law whose words, or the rulings on them, can answer the question, or is the person asking the judge to choose?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A judge saying what the words of a law cover” (one tap opens the card).
 
 **Drill item 32 of 43**
@@ -1827,10 +1827,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **A judge, in any court.** The tenants have gone to a judge: “ask a judge to order the landlord”.
   - If you chose **Say what the words of a law cover**: There is no law whose words the judge could read to answer the tenants. They want the judge to choose.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Interpreting a law**, the look-alike card’s lines follow: In both, nobody says a law breaks the Constitution, and a judge is asked for something about a rule of government. In **Interpreting a law** there is a law, and the judge can answer from its words, the rest of the law, what it was for and earlier rulings (*precedent*). In **A political question** there is no law that settles it and the judge is asked to choose, so there is nothing to read. Is there a law whose words, or the rulings on them, can answer the question, or is the person asking the judge to choose?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A choice a judge leaves to the voters” (one tap opens the card).
 
 **Drill item 33 of 43**
@@ -1846,10 +1846,10 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **A judge, in any court.** The story ends with a request to a judge: “Greg’s lawyer asks the judge to decide”.
   - If you chose **Say what the words of a law cover**: The judge is not asked what the words of a law cover. The question is whether a promised step was followed.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Interpreting a law**, the look-alike card’s lines follow: In both, a person is charged under a law, and the judge is asked something about the person’s own case. In **Interpreting a law** the judge reads the words of the law to see whether it reaches what the person did. In **The rights of the accused** the judge checks whether the steps the Constitution promises to an accused person were followed, whatever the law says. Is the judge asked whether the law covers what the person did, or whether the person was treated as the Constitution promises?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A judge making sure an accused person is treated fairly” (one tap opens the card).
 
 **Drill item 34 of 43**
@@ -1865,11 +1865,11 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **A judge, in any court.** The city made its law and fined Hiro, and those came first. The story ends with what his lawyer tells a judge: “She tells the judge”.
   - If you chose **Say what the words of a law cover**: A word of the law is in the story, so it can look like a question about what the word covers. His lawyer says plainly that she does not ask it.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Interpreting a law**, the look-alike card’s lines follow: In both, a law already exists, a person has been touched by it, and a judge is asked about it. In **Judicial review** the person says the law itself is not allowed, because it clashes with the Constitution. In **Interpreting a law** nobody says that. The law is accepted, and the only question is whether its words reach what happened. Does anyone say the law should not exist at all, or only ask whether it covers what happened?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *Greta’s megaphone*, which was **Interpreting a law**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *Greta’s megaphone*, which was **Interpreting a law**. When a likeness and the answers disagree, go by the words that answer the question.
 - Taught on: “A judge checking a law against the Constitution” (one tap opens the card).
 
 **Drill item 35 of 43**
@@ -1885,11 +1885,11 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **A judge, in any court.** The story ends with a request to a judge: “They ask a judge to order the town”.
   - If you chose **Check a law against the Constitution**: Being turned away sounds like a harm, and "unfair" sounds like a claim. But nobody says the rule breaks the Constitution, so there is nothing to check it against.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Judicial review**, the look-alike card’s lines follow: In both, someone dislikes a rule or a situation, thinks it is unfair, and asks a judge to deal with it. In **Judicial review** the person can point to something in the Constitution that the rule is said to break, and has been harmed by the rule. In **A political question** nobody can point to a law or a right that settles it: the judge is asked to choose what would be better. Can the person asking point to a place in the Constitution that the rule is said to break, or do they say only that a different rule would be better?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *The community hall*, which was **Judicial review**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *The community hall*, which was **Judicial review**. When a likeness and the answers disagree, go by the words that answer the question.
 - Taught on: “A choice a judge leaves to the voters” (one tap opens the card).
 
 **Drill item 36 of 43**
@@ -1905,11 +1905,11 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **A judge, in any court.** The story ends with a request to a judge: “her lawyer has asked the judge to decide it”.
   - If you chose **Make sure an accused person gets the steps the Constitution promises**: A person is on trial for a crime, which is why it can look like a case about the steps promised to an accused person. But nobody says a step was skipped.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **The rights of the accused**, the look-alike card’s lines follow: In both, a person is charged under a law, and the judge is asked something about the person’s own case. In **Interpreting a law** the judge reads the words of the law to see whether it reaches what the person did. In **The rights of the accused** the judge checks whether the steps the Constitution promises to an accused person were followed, whatever the law says. Is the judge asked whether the law covers what the person did, or whether the person was treated as the Constitution promises?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *The roadside search*, which was **The rights of the accused**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *The roadside search*, which was **The rights of the accused**. When a likeness and the answers disagree, go by the words that answer the question.
 - Taught on: “A judge saying what the words of a law cover” (one tap opens the card).
 
 **Drill item 37 of 43**
@@ -1925,11 +1925,11 @@ Each question is shown with all of its answers from the key, in the key’s orde
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **A judge, in any court.** The story ends with a request to a judge: “his lawyer asks the judge to decide”.
   - If you chose **Check a law against the Constitution**: A state law and a trial are in the story, so it can look like a challenge to the law. Walt says the law is not wrong, and what his lawyer questions is how the police acted.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Judicial review**, the look-alike card’s lines follow: In both, a person is in trouble with the law, and a judge is asked whether the Constitution was kept. In **Judicial review** the law itself is what the person attacks. In **The rights of the accused** nobody attacks the law: the question is whether the steps the Constitution promises to an accused person were followed when this person was dealt with. Is the person saying the law itself is not allowed, or saying that a step promised to someone accused was skipped in how they were dealt with?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
-- This case may have brought back *Nell’s trial*, which was **Judicial review**. When a likeness and the key disagree, go by the words that answer the key’s question.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
+- This case may have brought back *Nell’s trial*, which was **Judicial review**. When a likeness and the answers disagree, go by the words that answer the question.
 - Taught on: “A judge making sure an accused person is treated fairly” (one tap opens the card).
 
 **Drill item 38 of 43**
@@ -1948,8 +1948,8 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - If you are right: “Right: **A state, city or county government.**” The last decision is a vote by the lawmakers of one state: “the Corvin state legislature voted to start the school year a week later in every public school in the state”. It is about public schools in that state only.
-- If you miss: “The answer is …”, the same reason, and then the line built from the key for the answer you chose.
-- Then, right or wrong: “This case leaves the part of the key you have been taught. The questions that follow this answer come in a part of the course you have not reached, so the case stops here.”
+- If you miss: “The answer is …”, the same reason, and then the line built from the answers’ own wording for the answer you chose.
+- Then, right or wrong: “The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.”
 
 #### Last stage. Each of these is something a person might say that uses one of this unit’s names, or reasons in one of its ways. Each has a fault. The first is worked for you. For the rest, answer before the fault is shown.
 
@@ -2056,21 +2056,21 @@ Each question is shown with all of its answers from the key, in the key’s orde
 **Shown as soon as you answer**
 
 - The answer is: **Choose which policy is better.**
-- If you chose another answer, the line is built from the key, as for any other question.
+- If you chose another answer, the line is built from the answers’ own wording, as for any other question.
 - The fault: The claim asks the judge to choose, and gives "the best use of the money" as the reason. No law and no right is named that requires the library. A judge applies rules, and choosing the best use of money is left to voters and the leaders they elect.
 - The claim, put right (always the last thing shown): If you want the library built, the way is to vote, petition and organise, because choosing how to spend money is for voters and the leaders they elect. A judge could be asked about the library only if a law or a right in the Constitution required it.
 
-**When the drill ends.** The learner sees their own results: first-try accuracy for each stage, whole routes beside single questions, the pair of names they mixed up most often, and what will come back and when. Anything missed was asked again before the drill ended. Nothing here is graded. A miss only decides what comes back.
+**When the drill ends.** The learner sees their own results: first-try accuracy for each stage, whole cases beside single questions, the pair of names they mixed up most often, and what will come back and when. Anything missed was asked again before the drill ended. Nothing here is graded. A miss only decides what comes back.
 
 ### 34. What to carry away
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 34 of 35*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 34 of 35*
 
 [reviewers only: card kind `recap`, id `recap`]
 
-You have now run the key on your own. This card puts the unit in one place, in the key’s words.
+You have now run the questions on your own. This card puts the unit in one place.
 
-**The key for this unit, in its own words**
+**This unit’s questions and answers**
 
 What is the judge asked to do?
 - Check a law against the Constitution → Judicial review
@@ -2098,7 +2098,7 @@ What is the judge asked to do?
 
 ### 35. Where would you meet this?
 
-*Unit Five · rev 1 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 35 of 35*
+*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 35 of 35*
 
 [reviewers only: card kind `transfer`, id `transfer`]
 
@@ -2125,7 +2125,7 @@ One line is enough. It is kept on this device only and is never marked.
 
 ## After the unit: what comes back on later days
 
-A name that is due returns as a case the learner has not seen, next to a case of the name they most often confuse it with. Each is run as a whole route. These are the fresh cases held back for that purpose: three for each name, one for each scheduled return. The first return is about two days after the drill, the next about a week after that, the next about three and a half weeks later.
+A name that is due returns as a case the learner has not seen, next to a case of the name they most often confuse it with. Each is run as a whole case: every question, then the name. These are the fresh cases held back for that purpose: three for each name, one for each scheduled return. The first return is about two days after the drill, the next about a week after that, the next about three and a half weeks later.
 
 **Return case 1 of 12**
 
@@ -2140,10 +2140,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **A judge, in any court.** The state made its law and fined Bram, and those came first. The story ends with a request to a judge: “He asked a judge to cancel the fine”.
   - If you chose **Choose which policy is better**: He does not only say a different rule would be better. He says the law takes away a right.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A political question**, the look-alike card’s lines follow: In both, someone dislikes a rule or a situation, thinks it is unfair, and asks a judge to deal with it. In **Judicial review** the person can point to something in the Constitution that the rule is said to break, and has been harmed by the rule. In **A political question** nobody can point to a law or a right that settles it: the judge is asked to choose what would be better. Can the person asking point to a place in the Constitution that the rule is said to break, or do they say only that a different rule would be better?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A judge checking a law against the Constitution” (one tap opens the card).
 
 **Return case 2 of 12**
@@ -2159,10 +2159,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **A judge, in any court.** The county made its law and fined the group. The story ends with a request to a judge: “asked a judge to cancel the fine”.
   - If you chose **Say what the words of a law cover**: Zeynep does not ask whether a welcome evening is the kind of meeting the law covers. She says the law is not allowed.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Interpreting a law**, the look-alike card’s lines follow: In both, a law already exists, a person has been touched by it, and a judge is asked about it. In **Judicial review** the person says the law itself is not allowed, because it clashes with the Constitution. In **Interpreting a law** nobody says that. The law is accepted, and the only question is whether its words reach what happened. Does anyone say the law should not exist at all, or only ask whether it covers what happened?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A judge checking a law against the Constitution” (one tap opens the card).
 
 **Return case 3 of 12**
@@ -2178,10 +2178,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **A judge, in any court.** The state made its law and fined Mr Alt. The story ends with a request to a judge: “He asked a judge to cancel the fine”.
   - If you chose **Say what the words of a law cover**: He does not ask whether an opinion piece is the kind of article the law covers. He says the law is not allowed.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Interpreting a law**, the look-alike card’s lines follow: In both, a law already exists, a person has been touched by it, and a judge is asked about it. In **Judicial review** the person says the law itself is not allowed, because it clashes with the Constitution. In **Interpreting a law** nobody says that. The law is accepted, and the only question is whether its words reach what happened. Does anyone say the law should not exist at all, or only ask whether it covers what happened?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A judge checking a law against the Constitution” (one tap opens the card).
 
 **Return case 4 of 12**
@@ -2197,10 +2197,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **A judge, in any court.** The city made its law and fined the neighbours. The story ends with a request to a judge: “They asked a judge to decide”.
   - If you chose **Check a law against the Constitution**: They do not say the law takes away a right. They ask whether the word "market" covers their table.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Judicial review**, the look-alike card’s lines follow: In both, a law already exists, a person has been touched by it, and a judge is asked about it. In **Judicial review** the person says the law itself is not allowed, because it clashes with the Constitution. In **Interpreting a law** nobody says that. The law is accepted, and the only question is whether its words reach what happened. Does anyone say the law should not exist at all, or only ask whether it covers what happened?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A judge saying what the words of a law cover” (one tap opens the card).
 
 **Return case 5 of 12**
@@ -2216,10 +2216,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **A judge, in any court.** The state made its law and fined Rowan. The story ends with a request to a judge: “She has asked a judge to decide”.
   - If you chose **Choose which policy is better**: There is a law, and the judge can answer from its words. Rowan is not asking the judge to choose a better rule.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A political question**, the look-alike card’s lines follow: In both, nobody says a law breaks the Constitution, and a judge is asked for something about a rule of government. In **Interpreting a law** there is a law, and the judge can answer from its words, the rest of the law, what it was for and earlier rulings (*precedent*). In **A political question** there is no law that settles it and the judge is asked to choose, so there is nothing to read. Is there a law whose words, or the rulings on them, can answer the question, or is the person asking the judge to choose?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A judge saying what the words of a law cover” (one tap opens the card).
 
 **Return case 6 of 12**
@@ -2235,10 +2235,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **A judge, in any court.** The city made its law and fined Dev. The story ends with a request to a judge: “he has asked a judge only to decide”.
   - If you chose **Choose which policy is better**: The grumble is about a better rule, but the judge is not asked to choose one. There is a law, and the question is what its word covers.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A political question**, the look-alike card’s lines follow: In both, nobody says a law breaks the Constitution, and a judge is asked for something about a rule of government. In **Interpreting a law** there is a law, and the judge can answer from its words, the rest of the law, what it was for and earlier rulings (*precedent*). In **A political question** there is no law that settles it and the judge is asked to choose, so there is nothing to read. Is there a law whose words, or the rulings on them, can answer the question, or is the person asking the judge to choose?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A judge saying what the words of a law cover” (one tap opens the card).
 
 **Return case 7 of 12**
@@ -2254,10 +2254,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **A judge, in any court.** The workers have gone to a judge: “ask a judge to order the depot”.
   - If you chose **Check a law against the Constitution**: Nobody says a rule takes away a right, so there is nothing in the Constitution to check the start time against.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Judicial review**, the look-alike card’s lines follow: In both, someone dislikes a rule or a situation, thinks it is unfair, and asks a judge to deal with it. In **Judicial review** the person can point to something in the Constitution that the rule is said to break, and has been harmed by the rule. In **A political question** nobody can point to a law or a right that settles it: the judge is asked to choose what would be better. Can the person asking point to a place in the Constitution that the rule is said to break, or do they say only that a different rule would be better?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A choice a judge leaves to the voters” (one tap opens the card).
 
 **Return case 8 of 12**
@@ -2273,10 +2273,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **A judge, in any court.** The residents have gone to a judge: “ask a judge to order the council”.
   - If you chose **Say what the words of a law cover**: There is no law whose words the judge could read to answer. The residents want the judge to choose.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Interpreting a law**, the look-alike card’s lines follow: In both, nobody says a law breaks the Constitution, and a judge is asked for something about a rule of government. In **Interpreting a law** there is a law, and the judge can answer from its words, the rest of the law, what it was for and earlier rulings (*precedent*). In **A political question** there is no law that settles it and the judge is asked to choose, so there is nothing to read. Is there a law whose words, or the rulings on them, can answer the question, or is the person asking the judge to choose?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A choice a judge leaves to the voters” (one tap opens the card).
 
 **Return case 9 of 12**
@@ -2292,10 +2292,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **A judge, in any court.** The neighbours have gone to a judge: “ask a judge to order the city”.
   - If you chose **Check a law against the Constitution**: Nobody has been harmed by a rule and nobody points to a right that is taken away.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Judicial review**, the look-alike card’s lines follow: In both, someone dislikes a rule or a situation, thinks it is unfair, and asks a judge to deal with it. In **Judicial review** the person can point to something in the Constitution that the rule is said to break, and has been harmed by the rule. In **A political question** nobody can point to a law or a right that settles it: the judge is asked to choose what would be better. Can the person asking point to a place in the Constitution that the rule is said to break, or do they say only that a different rule would be better?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A choice a judge leaves to the voters” (one tap opens the card).
 
 **Return case 10 of 12**
@@ -2311,10 +2311,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **A judge, in any court.** The story ends with a request to a judge: “Her lawyer asks the judge to decide”.
   - If you chose **Check a law against the Constitution**: Nobody says the law against the crime is wrong. The question is about how Mei is to be tried.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Judicial review**, the look-alike card’s lines follow: In both, a person is in trouble with the law, and a judge is asked whether the Constitution was kept. In **Judicial review** the law itself is what the person attacks. In **The rights of the accused** nobody attacks the law: the question is whether the steps the Constitution promises to an accused person were followed when this person was dealt with. Is the person saying the law itself is not allowed, or saying that a step promised to someone accused was skipped in how they were dealt with?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A judge making sure an accused person is treated fairly” (one tap opens the card).
 
 **Return case 11 of 12**
@@ -2330,10 +2330,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **A judge, in any court.** The story ends with a request to a judge: “His lawyer asks the judge to decide”.
   - If you chose **Say what the words of a law cover**: The judge is not asked what the words of a law cover. The question is whether the promised steps were followed.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Interpreting a law**, the look-alike card’s lines follow: In both, a person is charged under a law, and the judge is asked something about the person’s own case. In **Interpreting a law** the judge reads the words of the law to see whether it reaches what the person did. In **The rights of the accused** the judge checks whether the steps the Constitution promises to an accused person were followed, whatever the law says. Is the judge asked whether the law covers what the person did, or whether the person was treated as the Constitution promises?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A judge making sure an accused person is treated fairly” (one tap opens the card).
 
 **Return case 12 of 12**
@@ -2349,9 +2349,9 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **A judge, in any court.** The story ends with a request to a judge: “Her lawyer asks the judge to decide”.
   - If you chose **Check a law against the Constitution**: Nobody says a law is wrong. The question is about the size of the fine in this person’s case.
-  - If you chose any other answer, the line is built from the key: “You chose «that answer». Give that answer when «what the key says a case must show for it». This case shows something else: «what the key says a case must show for the right answer».”
+  - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Judicial review**, the look-alike card’s lines follow: In both, a person is in trouble with the law, and a judge is asked whether the Constitution was kept. In **Judicial review** the law itself is what the person attacks. In **The rights of the accused** nobody attacks the law: the question is whether the steps the Constitution promises to an accused person were followed when this person was dealt with. Is the person saying the law itself is not allowed, or saying that a step promised to someone accused was skipped in how they were dealt with?
-  - If you chose another name, the line is built from the key: “«The name you chose» needs «what the key says you must be able to point to for it». This case shows something else: «the same line for the right name».”
-  - A right name with a wrong answer on the way is shown as “Right name, wrong route” and counts as a miss.
+  - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
+  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A judge making sure an accused person is treated fairly” (one tap opens the card).
 
