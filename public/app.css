@@ -171,8 +171,8 @@ mark{background:var(--accent);color:var(--bg)}
 .tell{display:block;font-family:var(--mono);font-size:11.5px;line-height:1.5;color:var(--accent);
   margin-top:10px;text-transform:none;letter-spacing:.01em}
 .note,.warn{padding:15px 16px;margin:18px 0;font-size:15.5px;line-height:1.55}
-.note{background:var(--raised);border-top:2px solid var(--accent);color:var(--bodydim)}
-.warn{background:#1F1512;border-top:2px solid var(--coral);color:#D6C9C0}
+.note{background:var(--raised);color:var(--bodydim)}
+.warn{background:#1F1512;color:#D6C9C0}
 .warn strong{color:var(--coral)}
 table.k{width:100%;border-collapse:collapse;margin:16px 0;font-family:var(--sans);font-size:14.5px;line-height:1.45}
 table.k th,table.k td{border:1px solid var(--rule);padding:9px 10px;text-align:left;vertical-align:top;color:var(--bodydim)}
@@ -281,3 +281,71 @@ table.k td b{color:var(--text)}
 .done-screen{display:flex;flex-direction:column;align-items:center;gap:18px;padding:60px 0 40px;text-align:center}
 .done-screen h2{margin:0;font-size:28px;font-weight:800;letter-spacing:-.03em;line-height:1.05}
 .done-screen p{margin:0;color:var(--dim);font-size:15px;line-height:1.5;max-width:36ch}
+
+/* ---------- rebuilt units (lesson standard E16) ---------- */
+/* one highlight for marked words, in every subject: a low-alpha tint of the accent, text colour, weight 600, no border */
+mark.cue{background:color-mix(in srgb,var(--accent) 26%,transparent);color:var(--text);font-weight:600;padding:0;border:none}
+/* the key's own wording: sans face, normal weight */
+.kw{font-family:var(--sans);font-weight:400;font-style:normal;color:var(--text)}
+.lesson b.here{font-family:var(--sans);font-weight:400;padding:1px 6px;background:var(--divider)}
+.lsec{margin:24px 0 0}
+.lsec>*:last-child{margin-bottom:0}
+.m.lab{display:block;margin-bottom:8px}
+.lesson .m{font-family:var(--mono)}
+.lesson .opt,.lesson .btn,.lesson .chip,.lesson .noteinput{font-family:var(--sans)}
+.lesson .answers{padding-left:20px}
+.lesson ul ul{margin:6px 0 0}
+
+.unitbar{margin:6px 0 0;line-height:1.7}
+.draftline{color:var(--accent)}
+.confusedrow{padding:26px 0 8px}
+.linkish{display:inline;color:var(--dim);font-family:var(--sans);font-size:13px;text-decoration:underline;text-underline-offset:3px}
+.linkish:hover{color:var(--text)}
+.hintline{margin:8px 0 0;font-family:var(--sans);font-size:13px;line-height:1.5;color:var(--label)}
+
+.casename{margin:0 0 8px;font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
+.passage.tappable{line-height:2.1}
+span.tap{cursor:pointer;color:var(--text);text-decoration:underline dotted;
+  text-decoration-color:var(--label);text-underline-offset:4px;text-decoration-thickness:2px;padding:2px 0}
+span.tap:hover{background:color-mix(in srgb,var(--accent) 14%,transparent)}
+.tap.missed{text-decoration:none;background:color-mix(in srgb,var(--coral) 20%,transparent);color:var(--text)}
+
+.stepopen.prompt{gap:14px}
+.stem{margin:0;font-family:var(--sans);font-size:16px;line-height:1.45;color:var(--text)}
+.amongnote{display:block;margin-top:6px;font-size:13px;color:var(--dim)}
+.forline{margin:0;font-family:var(--sans);font-size:14px;line-height:1.5;color:var(--dim)}
+.opts.two{flex-direction:row}
+.opts.two .opt{align-items:center;text-align:center}
+.chips.wrap{flex-wrap:wrap;overflow:visible}
+.stepdone.static{cursor:default}
+.noteinput{width:100%;height:48px;padding:0 14px;background:var(--field);border:1px solid var(--border);
+  color:var(--text);font-size:15px}
+.noteinput:focus{border-color:var(--accent);outline:none}
+
+.answerline{margin:16px 0;padding:14px 16px;background:var(--raised)}
+.answerline p{margin:0 0 8px}
+.answerline p:last-child{margin-bottom:0}
+.feedback{display:flex;flex-direction:column;gap:18px;padding-top:22px}
+.taughton{margin:0;font-family:var(--sans);font-size:13.5px;color:var(--dim)}
+.shownroute{margin:0 0 16px;padding:14px 16px;background:var(--raised)}
+.shownroute ul{margin:8px 0 0}
+.stopline{margin:0;font-family:var(--sans);font-size:14.5px;line-height:1.55;color:var(--dim)}
+.wrongidea{margin:0 0 16px;padding:14px 16px;background:#1F1512}
+.wrongidea p{margin:6px 0 0;color:#D6C9C0}
+.verdictline{font-family:var(--sans);font-size:16px;line-height:1.45;color:var(--coral)}
+.mapq{margin:14px 0 6px;font-family:var(--sans);color:var(--text)}
+.drillintro{padding:16px 0 24px}
+
+table.k.pair{table-layout:fixed;font-size:13.5px}
+table.k.pair th,table.k.pair td{overflow-wrap:break-word}
+table.k.pair th{width:auto;white-space:normal;font-family:var(--sans);font-size:13px;letter-spacing:0;text-transform:none;color:var(--text)}
+table.k.pair th:first-child,table.k.pair td:first-child{width:30%}
+table.k.results{max-width:380px;margin:0}
+table.k.results td:last-child{text-align:right;font-family:var(--mono);color:var(--text);white-space:nowrap}
+.done-screen.results{align-items:stretch;text-align:left;padding-top:32px}
+.done-screen.results p{max-width:none}
+.done-screen .stopline{max-width:36ch}
+
+.sheet{position:fixed;inset:0;z-index:20;overflow-y:auto;background:var(--bg);display:flex;flex-direction:column}
+.sheet .pane{flex-grow:1}
+.sheetstep{margin-bottom:32px;padding-bottom:24px;border-bottom:1px solid var(--divider)}

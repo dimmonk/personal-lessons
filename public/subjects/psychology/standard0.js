@@ -87,22 +87,6 @@ const U1_DRILL = [
    a:'None of these — a proportionate reaction', w:'A proportionate reaction to a real external stressor. Not everything needs this course’s vocabulary — that’s the point of D2.'}
 ];
 
-const U2_OPTS = ['Dissonance reduction','Confirmation bias','Motivated reasoning','Sunk cost / escalation','Genuine belief revision'];
-const U2_DRILL = [
-  {q:'"I already told everyone I was vegan, so I’m not going to make a big deal out of the fact that the sauce probably has fish stock in it."',
-   a:'Dissonance reduction', w:'Behavior conflicts with stated identity; resolved by minimizing rather than changing behavior or belief.'},
-  {q:'He reads three studies supporting his diet closely and enthusiastically, and dismisses the one contradicting study as "funded by industry" — without checking who funded the other three.',
-   a:'Confirmation bias', w:'Textbook asymmetric scrutiny: confirming evidence sails through, disconfirming evidence gets a standard never applied evenly.'},
-  {q:'She decided to promote her friend before the interviews even happened, and spent the interviews taking notes that supported that outcome.',
-   a:'Motivated reasoning', w:'The conclusion preceded the evidence-gathering.'},
-  {q:'"We’ve spent two years and forty thousand dollars on this renovation, we can’t stop now" — said after they can no longer afford to finish it properly.',
-   a:'Sunk cost / escalation', w:'The stated reason points backward at money already spent, not forward at what remains worth doing.'},
-  {q:'"I used to think the policy would work. Turnout data from the three cities that tried it changed my mind, even though I really wanted it to work."',
-   a:'Genuine belief revision', w:'Updated by external data, stated as such, no defensive move present.'},
-  {q:'A manager who prides himself on being data-driven quietly stops checking the metric that turned negative last quarter, while still citing the ones that are positive.',
-   a:'Confirmation bias', w:'Selectively stops tracking the metric that contradicts the "data-driven" self-image while continuing to cite the ones that flatter it.'}
-];
-
 const U3_OPTS = ['Healthy confidence/self-esteem','Narcissistic traits (non-clinical)','Grandiose narcissistic pattern','Vulnerable narcissistic pattern','Insufficient evidence','Not narcissism at all'];
 const U3_DRILL = [
   {q:'She’s proud of the promotion, thanks the people who helped her get it, and is visibly happy for a colleague who got promoted the same week.',
@@ -226,7 +210,7 @@ const PSYCH_SPECIMENS = [
 ];
 
 const PSYCH_COURSE = [
-{ tag:'One', title:'The diagnostic mindset',
+{ id:'u1', tag:'One', title:'The diagnostic mindset',
   cards:[
   {h:'Classify by pattern, never by a single moment',
    b:`<p class="lead">Most misreads in this territory happen because someone skips straight to a label. A tense exchange becomes "he's gaslighting me." One boastful moment becomes "total narcissist."</p>
@@ -256,33 +240,7 @@ const PSYCH_COURSE = [
   ],
   drill:{kind:'pick', key:'u1'} },
 
-{ tag:'Two', title:'Cognitive dissonance & self-justification',
-  cards:[
-  {h:'The mechanism, not just "hypocrisy"',
-   b:`<p class="lead">Cognitive dissonance (Festinger): the discomfort of holding two contradictory cognitions, and the drive to resolve it. The resolution does not require honestly changing your mind — there are four moves, and only one of them is that.</p>
-      <ol>
-        <li><b>Change the belief</b> to match the behaviour — genuine, if it happens.</li>
-        <li><b>Change the behaviour</b> to match the belief — also genuine, if it happens.</li>
-        <li><b>Add a justifying cognition</b> without changing either — a permission slip written after the fact.</li>
-        <li><b>Discredit the source</b> of the contradicting information — the easiest move, and the most damaging.</li>
-      </ol>
-      <span class="tell">Tell: dissonance reduction shows up after the behaviour, as a repair job. The decision came first; the story came second.</span>`},
-  {h:'Confirmation bias',
-   b:`<p>Not "believing what you want" in general — specifically <b>asymmetric scrutiny</b>: confirming evidence gets accepted lightly; disconfirming evidence gets picked apart or waved off as an exception.</p>
-      <span class="tell">Tell: ask how much scrutiny each type of evidence received. If confirming evidence sailed through and disconfirming evidence got cross-examined, that's the signature.</span>`},
-  {h:'Motivated reasoning',
-   b:`<p>The conclusion is fixed <b>before</b> the reasoning starts; the reasoning is reverse-engineered to arrive somewhere it was already going. This is the easiest thing in the family to confuse with dissonance reduction.</p>
-      <span class="tell">Tell: dissonance reduction responds to discomfort that arrives after a behaviour. Motivated reasoning starts with the destination already chosen — sometimes before any specific behaviour has even happened.</span>`},
-  {h:'Sunk cost / escalation of commitment',
-   b:`<p>Justifying further investment — money, time, a relationship — by appeal to what's already been spent, rather than by what the future investment is actually worth. Often <i>powered by</i> dissonance: admitting the first four years were wasted is exactly the discomfort avoided by spending a fifth.</p>
-      <span class="tell">Tell: the stated reason points backward ("I've already put in so much"), not forward ("this is still worth it").</span>`},
-  {h:'Changing your mind is not a bias',
-   b:`<p>If someone updates a belief because the evidence genuinely warranted it — and can say what would have moved them the other way too — that's reasoning working correctly, not a distortion.</p>
-      <div class="note">The tell is direction: did the evidence lead to the conclusion, or did the conclusion lead the search for evidence? Treating all belief change as suspect is itself a mistake — the mirror image of never updating at all.</div>`}
-  ],
-  drill:{kind:'pick', key:'u2'} },
-
-{ tag:'Three', title:'The narcissism spectrum',
+{ id:'u3', tag:'Three', title:'The narcissism spectrum',
   cards:[
   {h:'Not one dial',
    b:`<p class="lead">Confidence, self-esteem, and narcissism get used interchangeably. They are three different things.</p>
@@ -304,7 +262,7 @@ const PSYCH_COURSE = [
   ],
   drill:{kind:'pick', key:'u3'} },
 
-{ tag:'Four', title:'Look-alikes and false friends',
+{ id:'u4', tag:'Four', title:'Look-alikes and false friends',
   cards:[
   {h:'Narcissistic vs. borderline pattern',
    b:`<table class="k">
@@ -330,7 +288,7 @@ const PSYCH_COURSE = [
   ],
   drill:{kind:'pick', key:'u4'} },
 
-{ tag:'Five', title:'Manipulation tactics & defense mechanisms',
+{ id:'u5', tag:'Five', title:'Manipulation tactics & defense mechanisms',
   cards:[
   {h:'Defense mechanisms, briefly',
    b:`<p>Everyone uses defense mechanisms; the question is which ones, how rigidly, and how much reality-distortion they require.</p>
@@ -357,7 +315,7 @@ const PSYCH_COURSE = [
   ],
   drill:{kind:'pick', key:'u5'} },
 
-{ tag:'Six', title:'Mixed identification drill',
+{ id:'u6', tag:'Six', title:'Mixed identification drill',
   cards:[
   {h:'Running the whole key',
    b:`<p class="lead">Everything so far has drilled one family at a time. Now you run the full sequence on unlabelled scenarios.</p>
@@ -388,7 +346,6 @@ const PSYCHOLOGY = {
   specimens: PSYCH_SPECIMENS,
   quickDrills: [
     {key:'u1', title:'Pattern or moment', prompt:'What kind of thing is this (D1)?', items:U1_DRILL, opts:U1_OPTS},
-    {key:'u2', title:'Which distortion', prompt:'Which distortion — if any?', items:U2_DRILL, opts:U2_OPTS},
     {key:'u3', title:'Where on the spectrum', prompt:'Where does this fall?', items:U3_DRILL, opts:U3_OPTS},
     {key:'u4', title:'Which pattern', prompt:'Which pattern, if any, fits best?', items:U4_DRILL, opts:U4_OPTS},
     {key:'u5', title:'Name the tactic', prompt:'Name the tactic, or say it’s not one', items:U5_DRILL, opts:U5_OPTS}
@@ -397,7 +354,7 @@ const PSYCHOLOGY = {
   course: PSYCH_COURSE,
   tabs: [
     {key:'course', label:'Course'}, {key:'det', label:'Determination'},
-    {key:'u1', label:'Pattern or moment'}, {key:'u2', label:'Which distortion'}, {key:'u3', label:'Spectrum'},
+    {key:'u1', label:'Pattern or moment'}, {key:'u3', label:'Spectrum'},
     {key:'u4', label:'Which pattern'}, {key:'u5', label:'Name the tactic'},
     {key:'err', label:'Faulty claims'}, {key:'reference', label:'Reference'}
   ],
@@ -412,3 +369,5 @@ const PSYCHOLOGY = {
     <li><b>None of this replaces professional help</b> — for yourself, or for a relationship that matches the manipulation-tactics section.</li>
   </ul>`
 };
+
+FC.legacy('psychology', PSYCHOLOGY);

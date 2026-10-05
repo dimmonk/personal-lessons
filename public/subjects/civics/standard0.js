@@ -506,3 +506,5 @@ const CIVICS = {
     <li><b>Not covered:</b> the immigration process itself — eligibility, forms, fees, timelines, interviews — which is a much larger subject than the civics, and the one where getting current information actually matters.</li>
   </ul>`
 };
+
+FC.legacy('civics', CIVICS);

@@ -305,7 +305,7 @@ function renderUnitDone(subj){
       <h2>Unit ${esc(u.tag)} complete</h2>
       <p>${line}</p>
       <div class="segs" style="width:100%;max-width:300px">${subj.course.map((_,i) =>
-        `<i class="${c.done[i]?'on':''}"></i>`).join('')}</div>
+        `<i class="${unitDone(subj,i)?'on':''}"></i>`).join('')}</div>
       <div style="display:flex;flex-direction:column;gap:10px;width:100%;max-width:300px;padding-top:6px">
         ${last ? '' : `<button class="btn" id="on">Continue to Unit ${esc(subj.course[c.u+1].tag)}${icon('arrow')}</button>`}
         <button class="btn ghost" id="redo">Redo the drill</button>
@@ -316,7 +316,7 @@ function renderUnitDone(subj){
   </div>`;
 
   on('[data-v]', el => go(el.dataset.v));
-  on('#on', () => { c.u++; c.card = 0; c.phase = 'read'; saveCourse(subj); go('lesson'); });
+  on('#on', () => openUnit(subj, c.u + 1));
   on('#redo', () => startUnitDrill(subj));
   on('#reread', () => { c.card = 0; c.phase = 'read'; saveCourse(subj); go('lesson'); });
 }

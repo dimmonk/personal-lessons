@@ -456,3 +456,5 @@ const MATH = {
     <li><b>Numeracy is not a personality.</b> The point of a key like this is to make the sorting explicit so it can be learned deliberately, not to sort people into those who see it and those who don’t.</li>
   </ul>`
 };
+
+FC.legacy('math', MATH);

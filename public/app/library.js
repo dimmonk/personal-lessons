@@ -73,6 +73,10 @@ function resumePoint(subj){
 function resumeLabel(subj){
   const r = resumePoint(subj), u = subj.course[r.ui], c = st(subj).course;
   if(r.fresh) return 'Start Unit ' + u.tag;
+  if(isRebuilt(u)){
+    const status = rebuiltStatus(subj.id, u.id);
+    return status === 'progress' ? 'Resume the lesson' : (unitDone(subj, r.ui) ? 'Review Unit ' + u.tag : 'Start Unit ' + u.tag);
+  }
   if(r.phase === 'drill') return 'Resume the drill';
   if(r.phase === 'unitdone') return 'Review Unit ' + u.tag;
   if(c.card === 0 && unitsDone(subj) === 0) return 'Start Unit ' + u.tag;
@@ -82,6 +86,7 @@ function resumeSubject(id){
   const s = SUBJECTS.find(x => x.id === id);
   APP.subjectId = id; touch(id);
   const r = resumePoint(s), c = st(s).course;
+  if(isRebuilt(s.course[r.ui])){ openUnit(s, r.ui); return; }
   if(r.fresh){ c.u = r.ui; c.card = 0; c.phase = 'read'; saveCourse(s); }
   go(r.phase === 'drill' ? 'unitdrill' : (r.phase === 'unitdone' ? 'unitdone' : 'lesson'));
 }
@@ -98,7 +103,7 @@ function continueCard(s){
       <span class="cn">${esc(s.name)}</span>
       <span class="cs">Unit ${esc(u.tag)} &middot; ${esc(u.title)}</span>
     </div>
-    <div class="segs">${s.course.map((_,i) => `<i class="${st(s).course.done[i]?'on':''}"></i>`).join('')}</div>
+    <div class="segs">${s.course.map((_,i) => `<i class="${unitDone(s,i)?'on':''}"></i>`).join('')}</div>
     <button class="btn sm" data-resume="${s.id}">${label}${icon('arrow')}</button>
   </div></div>`;
 }

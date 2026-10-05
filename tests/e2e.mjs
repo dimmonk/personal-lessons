@@ -1,6 +1,7 @@
 // Drives the real app in Chromium. Run: npm run test:e2e
 import { chromium } from 'playwright';
 import { startServer } from './static-server.mjs';
+import { testRebuiltUnit, testUnitAt360, testDraftAndOldUnits, testMigration } from './e2e-unit.mjs';
 
 const WIDTHS = [360, 390, 768, 1200, 1600];
 const FONT_FAMILIES = ['Bricolage Grotesque', 'Literata', 'JetBrains Mono'];
@@ -15,6 +16,7 @@ async function freshPage(width = 390) {
   const context = await browser.newContext({ viewport: { width, height: 800 } });
   const page = await context.newPage();
   page.on('pageerror', err => failures.push(`page error: ${err.message}`));
+  page.on('console', msg => { if (msg.type() === 'error') failures.push(`console error: ${msg.text()}`); });
   await page.goto(server.url);
   await page.evaluate(() => localStorage.clear());
   await page.reload();
@@ -23,6 +25,7 @@ async function freshPage(width = 390) {
 
 const subjectMeta = page => page.evaluate(() => SUBJECTS.map(s => ({
   id: s.id, gated: !!s.determination.gateCode, units: s.course.length,
+  rebuilt: s.course.map(u => u.standard === 1),
   drills: s.quickDrills.map(q => q.key)
 })));
 
@@ -155,6 +158,7 @@ async function testCourseWalk() {
   for (const s of await subjectMeta(page)) {
     await openSubject(page, s.id);
     for (let u = 0; u < s.units; u++) {
+      if (s.rebuilt[u]) continue;   // a rebuilt unit is walked by e2e-unit.mjs
       await clickVisible(page, `#screen [data-u="${u}"]`);
       for (let guard = 0; guard < 40; guard++) {
         const label = (await page.locator('#fwd').textContent()).trim();
@@ -213,10 +217,16 @@ async function testPwa() {
   await context.close();
 }
 
+const unitEnv = { freshPage, check, inspect, clickVisible, openSubject, screenText };
+
 try {
   await testScreens();
   await testDeterminations();
   await testCourseWalk();
+  await testRebuiltUnit(unitEnv);
+  await testUnitAt360(unitEnv);
+  await testDraftAndOldUnits(unitEnv);
+  await testMigration(unitEnv);
   await testPwa();
 } catch (err) {
   failures.push(`crashed: ${err.stack || err}`);

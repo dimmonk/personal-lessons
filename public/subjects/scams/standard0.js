@@ -460,3 +460,5 @@ const SCAMS = {
     <li><b>If it has already happened:</b> contact your bank immediately — payment recall is sometimes possible within hours — then report it to your national fraud body, preserve the messages, and change credentials from a device you trust. Do not engage with anyone who approaches you offering to recover the funds, which is Unit Two, pattern D, and is often the same operation returning.</li>
   </ul>`
 };
+
+FC.legacy('scams', SCAMS);

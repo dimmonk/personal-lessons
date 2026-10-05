@@ -482,3 +482,5 @@ const WEALTH = {
     <li><b>Not covered:</b> business valuation and sale, pensions and retirement-income products in detail, insurance underwriting, philanthropic structures, cross-border residence and domicile planning, and anything involving illiquid private investments. Each is a specialism and none reduces to a two-question key.</li>
   </ul>`
 };
+
+FC.legacy('wealth', WEALTH);

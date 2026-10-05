@@ -458,3 +458,5 @@ const STATISTICS = {
     <li><b>These terms are also weapons.</b> "Cherry-picked," "biased sample," "correlation isn’t causation" are used to dismiss unwelcome findings at least as often as to examine them. Applying the key selectively to claims you dislike is the failure mode this course is most likely to produce.</li>
   </ul>`
 };
+
+FC.legacy('stats', STATISTICS);

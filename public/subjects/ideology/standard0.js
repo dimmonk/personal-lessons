@@ -332,3 +332,5 @@ const IDEOLOGY = {
     <li><b>Non-Western, theocratic and technocratic systems</b> are lightly covered. The five questions still apply, but additional primary units — faith, civilisation, expertise — become relevant.</li>
   </ul>`
 };
+
+FC.legacy('ideology', IDEOLOGY);
