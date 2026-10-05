@@ -18,14 +18,23 @@ function lifetimeFigure(){
   return n ? `${ok}/${n}` : '&mdash;';
 }
 
+// The figures under every Mixed item: this round, correct, "Lifetime" from the practice record, and the old counter apart (E8, E14).
+const mixedScoreHtml = M => `<div class="score">
+      <span class="stat"><b>${M.n}</b><span>This round</span></span>
+      <span class="stat"><b>${M.ok}</b><span>Correct</span></span>
+      <span class="stat"><b>${lifetimeFigure()}</b><span>Lifetime</span></span>
+      ${MIXED.n ? `<span class="stat"><b>${MIXED.ok}/${MIXED.n}</b><span>${esc(MIXED_SAY.oldStat)}</span></span>` : ''}
+    </div>`;
+
 const finishedUnits = () => SUBJECTS.flatMap(subj => subj.course.filter((u, i) => isRebuilt(u) && unitDone(subj, i)).map(u => ({ subj, unitId: u.id })));
-const isCaseItem = c => !c.kind && (c.use === 'drill' || c.use === 'return');
+const isCaseItem = c => (!c.kind || c.kind === 'problem') && (c.use === 'drill' || c.use === 'return');   // problems too: a procedure unit's types return
 // the last question on the case's route that the unit itself teaches
 const lastOwnStep = (v, c) => v.routeSteps(c).filter(code => v.unit.teaches.steps.includes(code)).pop();
 
 function mixedEntry(subj, v, c, kind, due){
-  const raw = kind === 'name' ? c.id : { case: c.id, step: lastOwnStep(v, c) };
-  const built = drillItem(v, raw, kind === 'name' ? 'name' : 'piece', []);
+  // a problem is always asked whole, as a route item: choose the procedure, then solve it (A12)
+  const raw = c.kind === 'problem' || kind === 'name' ? c.id : { case: c.id, step: lastOwnStep(v, c) };
+  const built = drillItem(v, raw, c.kind === 'problem' ? 'route' : kind === 'name' ? 'name' : 'piece', []);
   return { s: subj, due, built: { ...built, item: { ...built.item, seenBefore: seenBefore(v.subjectId, v.unitId, c.id) } }, state: freshAsk() };
 }
 // what is due, as name items on cases the learner has not seen
@@ -63,8 +72,7 @@ function renderMixedAsk(M, entry){
       <div style="display:flex;align-items:center;gap:10px;padding:18px 0 14px">
         <span class="sigil" style="width:26px;height:26px;flex:0 0 26px;font-size:10px">${subj.keyNo}</span><span class="m a">${esc(subj.name)}</span></div>
       <div id="mixedask">${askHtml(ask)}</div>
-      <div class="score"><span class="stat"><b>${M.n}</b><span>This round</span></span><span class="stat"><b>${M.ok}</b><span>Correct</span></span>
-        <span class="stat"><b>${lifetimeFigure()}</b><span>Lifetime</span></span></div>
+      ${mixedScoreHtml(M)}
       <div class="actbar">${state.done ? `<button class="btn" id="next">${last ? 'Finish' : 'Next item'}${icon('arrow')}</button>`
         : `<button class="btn ghost" id="skip">Skip for now</button>`}</div></div>`;
     wireAsk(screenEl(), ask, paint, outcome => {

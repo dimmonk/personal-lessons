@@ -8,15 +8,25 @@ const walks = new WeakMap();
 // What has been taught when each card is read. The orient preview does not count as teaching (V5).
 function initialState(u) {
   const shown = new Set(u.assumedSteps.flatMap(s => [`q:${s.code}`, ...s.options.map(o => `a:${s.code}.${o.id}`)]));
-  return { shown, printed: new Set(u.assumedSteps.map(s => `q:${s.code}`)), introduced: new Set() };
+  // terms an assumed unit taught on its own term card may be used from the first card (S2 assumes)
+  const assumedTerms = (u.key.terms || []).filter(t => u.unit.assumes.includes(t.unit)).map(t => t.id);
+  // so may the names an assumed unit taught: its outcomes, and the gate's families if the gate unit is assumed
+  const gateAssumed = u.key.gate && u.unit.assumes.includes(u.key.gate.unit);
+  [...u.key.outcomes.filter(o => u.unit.assumes.includes(o.unit)).map(o => o.id), ...(gateAssumed ? u.key.gate.options.map(o => o.id) : [])]
+    .forEach(id => shown.add(`o:${id}`));
+  return { shown, printed: new Set(u.assumedSteps.map(s => `q:${s.code}`)), introduced: new Set(assumedTerms) };
 }
 
 function teach(u, c, state) {
   if (c.kind === 'term') state.introduced.add(c.term);
-  if (c.kind === 'meet') {
+  if (c.kind === 'meet' && !c.continues) {   // a continuing card carries prose only; its chain's first card introduced the name
     state.printed.add(`q:${c.feature.step}`);
-    state.shown.add(`o:${c.outcome}`);
+    state.shown.add(`o:${c.outcome || c.family}`);   // a gate unit's meet card introduces a family (A15)
     state.shown.add(`a:${c.feature.step}.${c.feature.option}`);
+    // the meet card also prints this name's answers to the unit's other questions (the app's meetOtherSteps)
+    if (c.outcome) u.unitSteps().filter(s => s.code !== c.feature.step).forEach(s => s.options.filter(o => o.keeps.includes(c.outcome)).forEach(o => {
+      state.shown.add(`a:${s.code}.${o.id}`); state.printed.add(`q:${s.code}`);
+    }));
   }
   if (c.kind === 'question') {
     state.shown.add(`q:${c.step}`);
@@ -84,7 +94,7 @@ function practisedCases(u) {
 export const V6 = unitRule('V6', (u, check) => {
   const practised = practisedCases(u);
   u.taught.forEach(o => check(practised.some(c => c.outcome === o), `${o} is never the answer of a check or drill item`));
-  u.unitSteps().forEach(s => s.options.forEach(opt => check(practised.some(c => c.route[s.code] && c.route[s.code].includes(opt.id)), `${s.code}.${opt.id} is never the right answer of a check or drill item`)));
+  u.unitSteps().forEach(s => s.options.forEach(opt => check(practised.some(c => c.route && c.route[s.code] && c.route[s.code].includes(opt.id)), `${s.code}.${opt.id} is never the right answer of a check or drill item`)));   // a problem to finish has no route
   const drillText = u.unit.drill.rungs.flatMap(r => [...u.flat(r).map(u.caseOf), u.cases[r.demo]]).filter(Boolean).flatMap(c => prose(c).map(([, s]) => s)).join(' ');
   for (const t of u.unit.teaches.terms) {
     const termCards = u.cards.filter(c => c.kind === 'term' && c.term === t).length;

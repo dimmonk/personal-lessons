@@ -138,9 +138,12 @@ export function askedSteps(u) {
   const unitSteps = u.unit.teaches.steps;
   // a fact check and a problem to finish ask no key question
   u.cards.filter(c => c.kind === 'check' && c.ask.step).forEach(c => add(u.cases[c.case], [c.ask.step]));
-  u.flat(u.rung('name')).map(u.caseOf).filter(u.isStory).forEach(c => add(c, unitSteps));
+  // name and finish items ask the unit's own questions that are on the case's route; a sound case from another branch
+  // (an action subject's legit cases) is never asked a question its route does not pass through
+  const ownOnRoute = c => unitSteps.filter(code => u.routeSteps(c).includes(code));
+  u.flat(u.rung('name')).map(u.caseOf).filter(u.isStory).forEach(c => add(c, ownOnRoute(c)));
   u.flat(u.rung('piece')).filter(i => i.step).forEach(i => add(u.cases[i.case], [i.step]));
-  u.flat(u.rung('finish')).map(u.caseOf).filter(u.isStory).forEach(c => add(c, unitSteps));
+  u.flat(u.rung('finish')).map(u.caseOf).filter(u.isStory).forEach(c => add(c, ownOnRoute(c)));
   [...u.routeCases, ...u.returns, ...u.specimens].filter(Boolean).forEach(c => add(c, u.routeSteps(c)));
   return asked;
 }

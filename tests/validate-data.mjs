@@ -116,7 +116,10 @@ function checkCourse(s) {
 
 check(SUBJECTS.length > 0, 'no subjects registered');
 check(new Set(SUBJECTS.map(s => s.id)).size === SUBJECTS.length, 'duplicate subject ids');
-for (const s of SUBJECTS) {
+// These checks read the old (standard 0) record. A subject whose every unit is rebuilt has none: its key, routes,
+// specimens and drills are checked by the lesson validator (tests/validate-lessons.mjs), so it is skipped here.
+const hasOldRecord = s => s.course.some(u => u.standard !== 1);
+for (const s of SUBJECTS.filter(hasOldRecord)) {
   checkKeys(s); checkGate(s); checkIsolation(s); checkSpecimens(s); checkQuickDrills(s); checkCourse(s);
 }
 

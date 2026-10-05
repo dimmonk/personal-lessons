@@ -10,7 +10,7 @@ const TYPES = {
   '.json': 'application/manifest+json', '.png': 'image/png', '.svg': 'image/svg+xml', '.woff2': 'font/woff2'
 };
 
-export function startServer() {
+export function startServer(port = 0) {
   const server = createServer(async (req, res) => {
     const path = decodeURIComponent(new URL(req.url, 'http://x').pathname);
     const rel = normalize(path === '/' ? '/index.html' : path);
@@ -23,7 +23,7 @@ export function startServer() {
       res.writeHead(404).end('not found');
     }
   });
-  return new Promise(resolve => server.listen(0, '127.0.0.1', () => resolve({
+  return new Promise(resolve => server.listen(port, '127.0.0.1', () => resolve({
     url: `http://localhost:${server.address().port}/`,
     close: () => new Promise(r => server.close(r))
   })));

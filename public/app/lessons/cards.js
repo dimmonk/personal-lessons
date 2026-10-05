@@ -45,15 +45,17 @@ function factPairTable(ctx, entry){
 function pairAnswers(v, code, id){
   return v.isOutcome(id) ? v.answersFor(code, id) : (v.key.gate && code === v.key.gate.code ? [v.option(code, id)] : []);
 }
-// the questions on a look-alike pair's route, in the key's order
+// the questions on a look-alike pair's routes, in the key's order: for two names of one branch, that branch's questions;
+// for a pair from two branches (lesson standard S3), each one's own questions too. Only questions the learner has been taught.
 function pairSteps(v, entry){
   const [x, y] = entry.pair;
-  return [...v.assumedSteps, ...v.unitSteps].filter(s => pairAnswers(v, s.code, x).length || pairAnswers(v, s.code, y).length);
+  const taught = s => s.unit === v.unitId || v.unit.assumes.includes(s.unit);
+  return v.steps.filter(s => taught(s) && (pairAnswers(v, s.code, x).length || pairAnswers(v, s.code, y).length));
 }
 function pairTable(ctx, entry){
   if(entry.pair.every(ctx.v.isFact)) return factPairTable(ctx, entry);
   const { v } = ctx, [x, y] = entry.pair;
-  const cell = (code, id) => esc(pairAnswers(v, code, id).map(o => o.n).join(' / '));
+  const cell = (code, id) => pairAnswers(v, code, id).length ? esc(pairAnswers(v, code, id).map(o => o.n).join(' / ')) : `<i>${SAY.notOnRoute}</i>`;
   return `<table class="k pair"><tr><th></th><th>${esc(v.nameOf(x))}</th><th>${esc(v.nameOf(y))}</th></tr>`
     + pairSteps(v, entry).map(s => `<tr><td>${esc(s.q)}</td><td>${cell(s.code, x)}</td><td>${cell(s.code, y)}</td></tr>`).join('')
     + `<tr><td>${SAY.pointTo}</td><td>${esc(cap(v.thing(x).needs))}</td><td>${esc(cap(v.thing(y).needs))}</td></tr></table>`;
@@ -94,7 +96,7 @@ CARD.orient = (ctx, card) => {
   const { v, T } = ctx;
   const branch = v.key.branches[card.map.branch] || [v.key.gate];
   const out = [T.PP(card.canDo), T.PP(card.everyday)];
-  v.assumedSteps.forEach(s => {
+  v.priorSteps.forEach(s => {
     out.push(lessonSection(`What ${unitLabel(v.data, s.unit)} taught, in one place`,
       `<p>The key’s first question is ${T.q(s.code)} Its answers:</p>`
       + lessonList(s.options.map(opt => `${T.a(s.code, opt.id)}: give this answer when ${esc(opt.when)}.`
@@ -121,6 +123,13 @@ CARD.term = (ctx, card) => {
     + T.PP(card.after, c);
 };
 
+// In a branch of two or more questions, the meet card also prints this name's answer to the unit's other questions, from the key,
+// so the whole route through the branch is on the card that introduces the name (A3; a question's words may be printed before its card, A2)
+function meetOtherSteps(v, T, card, id){
+  if(!v.isOutcome(id)) return '';
+  const others = v.unitSteps.filter(s => s.code !== card.feature.step && v.answersFor(s.code, id).length);
+  return others.map(s => lessonSection(SAY.keyAlsoAsks, `<p>${T.q(s.code)}</p><p>${v.answersFor(s.code, id).map(o => T.a(s.code, o.id)).join(' or ')}</p>`)).join('');
+}
 CARD.meet = (ctx, card) => {
   const { v, T } = ctx, c = v.caseById(card.case), id = card.outcome || card.family, thing = v.thing(id);
   return `<p>${T.t(card.link)}</p>${T.caseName(c)}${T.show(c, [card.mark])}`
@@ -128,6 +137,7 @@ CARD.meet = (ctx, card) => {
     + lessonSection(SAY.pointTo, `<p>${esc(cap(thing.needs))}. ${SAY.oneCase}</p>`)
     + lessonSection(SAY.keyAsks, `<p>${T.q(card.feature.step)}</p>`)
     + lessonSection(SAY.keyAnswer, `<p>${T.a(card.feature.step, card.feature.option)}</p>`)
+    + meetOtherSteps(v, T, card, id)
     + T.PP(card.name, c)
     + (thing.aka && thing.aka.length ? `<p>${SAY.aka(thing.aka, T.o(id))}</p>` : '');
 };
@@ -157,7 +167,8 @@ CARD.portrait = (ctx, card) => {
     + lessonSection('What it is usually like', lessonList(T.P(card.typical)))
     + lessonSection('What it is not', T.PP(card.not))
     + lessonSection('Where you will hear it', `<p>${esc(card.wild.join(' '))}</p>${T.PP(card.self)}`)
-    + lessonSection(SAY.ask, T.PP(card.ask));
+    + lessonSection(SAY.ask, T.PP(card.ask))
+    + (card.act ? lessonSection(SAY.act, T.PP(card.act)) : '');
 };
 
 CARD.refute = (ctx, card) => {
@@ -198,8 +209,8 @@ CARD.question = (ctx, card) => {
   const single = s.options.every(opt => keepsOf(opt).length === 1);
   const answers = s.options.map(opt => {
     const keeps = keepsOf(opt), gone = taught.filter(id => !keeps.includes(id));
-    const leads = v.isGate ? '' : single ? `<li>It leads to ${T.names(keeps)}.</li>`
-      : `<li>Keeps ${T.names(keeps)}.${gone.length ? ` Rules out ${T.names(gone)}.` : ''}</li>`;
+    const leads = v.isGate ? '' : single ? `<li>It leads to ${T.namesAt(keeps, ctx.cardId)}.</li>`
+      : `<li>Keeps ${T.namesAt(keeps, ctx.cardId)}.${gone.length ? ` Rules out ${T.namesAt(gone, ctx.cardId)}.` : ''}</li>`;
     return `<li>${T.a(s.code, opt.id)}<ul><li>Give this answer when ${esc(opt.when)}.</li>${leads}</ul></li>`;
   }).join('');
   const entries = v.unit.ledger.filter(l => l.step === s.code && ctx.ledgerRead.has(l.id));
@@ -270,7 +281,7 @@ CARD.recap = (ctx, card) => {
         + lessonList(s.options.map(opt => `<span class="kw">${esc(opt.n)}</span>${v.isGate ? '' : ' → ' + esc(opt.keeps.filter(id => v.taught.includes(id)).map(v.nameOf).join(' · '))}`))).join(''))
     + lessonSection(`For each name: ${lowerFirst(SAY.pointTo)}, and ${lowerFirst(SAY.ask)}`,
         lessonList(v.taught.map(id => `${T.o(id)}: ${esc(v.thing(id).needs)}.`
-          + (portraitOf(id) ? `<ul><li>Ask: ${T.P(portraitOf(id).ask).join(' ')}</li></ul>` : ''))))
+          + (portraitOf(id) ? `<ul><li>Ask: ${T.P(portraitOf(id).ask).join(' ')}</li>${portraitOf(id).act ? `<li>Do: ${T.P(portraitOf(id).act).join(' ')}</li>` : ''}</ul>` : ''))))
     + lessonSection('To carry away', lessonList(T.P(card.carry)));
 };
 
@@ -279,7 +290,7 @@ CARD.transfer = (ctx, card) => {
   const note = ui.note || {};
   return `<p>${T.t(card.link)}</p>${T.PP(card.ask)}`
     + `<div class="opts" id="transferNames">${card.prompts.map(p => { const id = p.outcome || p.family; return `<button class="opt ${note.outcome === id ? 'sel' : ''}" data-outcome="${esc(id)}">`
-        + `${esc(v.nameOf(id))}<small>${esc(p.occasion)}</small></button>`; }).join('')}</div>`
+        + `${esc(v.nameOf(id))}<small>${T.t(p.occasion)}</small></button>`; }).join('')}</div>`
     + lessonSection('Where was it?', `<div class="chips wrap" id="transferPlaces">${card.places.map(pl =>
         `<button class="chip ${note.place === pl ? 'on' : ''}" data-place="${esc(pl)}">${esc(pl)}</button>`).join('')}</div>`)
     + lessonSection('In a line, what was said? (optional)',
@@ -321,7 +332,7 @@ CARD.facts = (ctx, card) => {
 CARD.solved = (ctx, card) => {
   const { v, T, ui } = ctx, c = v.caseById(card.problem), hold = card.hold, p = hold.prompt;
   const picked = ui.picked === null ? null : p.choices.find(x => x.id === ui.picked);
-  const row = st => `<div class="stepdone static"><span class="tick">${icon('check', 12)}</span><span class="grow"><span class="m s">${esc(st.does)}</span><span class="v">${esc(st.working)}</span></span></div>`;
+  const row = st => `<div class="stepdone static"><span class="tick">${icon('check', 12)}</span><span class="grow"><span class="m s">${T.t(st.does)}</span><span class="v">${T.t(st.working)}</span></span></div>`;
   const shown = card.steps.slice(0, picked ? card.steps.length : hold.step + 1);
   const body = shown.map((st, i) => `<div class="steps">${row(st)}</div>`
     + (i === hold.step ? '' : T.PP(st.why, c))
@@ -372,7 +383,17 @@ function commitRight(v, card, picked){
   const c = v.caseById(card.kind === 'again' ? card.second : card.case);
   return c.segments[picked].text.includes(card.prompt.answer);
 }
+// A continuing card (S4 chains) carries on the explanation of the card before it: its link line restating what that card
+// established, then its prose, in the order written, with the case it names shown where it names one. Its heading is the
+// first card's (cardHeading). It asks nothing: V24 holds it to prose and a case.
+const CHAIN_META = ['id', 'kind', 'continues', 'link', 'h', 'outcome', 'family', 'step'];
+function continuedCard(ctx, card){
+  const { v, T } = ctx, c = card.case ? v.caseById(card.case) : null;
+  return `<p>${T.t(card.link)}</p>` + (c ? T.caseName(c) + T.show(c) : '')
+    + Object.keys(card).filter(k => !CHAIN_META.includes(k) && k !== 'case').map(k => T.PP(card[k], c)).join('');
+}
 function cardHtml(ctx, card){
+  if(card.continues) return continuedCard(ctx, card);
   const render = CARD[card.kind] || lessonFail(`card ${card.id} is of kind "${card.kind}", which is not a card kind of the lesson standard`);
   return render(ctx, card);
 }

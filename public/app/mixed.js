@@ -16,6 +16,21 @@ function renderMixed(){
   if(!APP.mixed) APP.mixed = buildMixed(12);
   const M = APP.mixed;
 
+  // nothing to mix until a unit is finished: say so, rather than report an empty round as complete
+  if(M.items.length === 0){
+    screenEl().innerHTML = `<div class="pane">
+      <div class="topbar"><span class="m">Mixed drill</span></div>
+      <div class="done-screen">
+        <h2>Nothing to mix yet</h2>
+        <p>The mixed drill draws on the units you have finished, and on names that are due to come back. Finish a unit, drill and all, and its cases start coming here.</p>
+        <div style="display:flex;flex-direction:column;gap:10px;width:100%;max-width:300px;padding-top:6px">
+          <button class="btn" data-v="library">Back to the library</button>
+        </div>
+      </div></div>`;
+    on('[data-v]', el => go(el.dataset.v));
+    return;
+  }
+
   if(M.i >= M.items.length){
     screenEl().innerHTML = `<div class="pane">
       <div class="topbar"><span class="m">Mixed drill</span></div>
@@ -57,12 +72,7 @@ function renderMixed(){
       <div class="marks"><span class="mark ${ok?'':'no'}">${icon(ok?'check':'cross',13)}${ok?'Correct':'Missed &mdash; ' + esc(ans)}</span></div>
       <div class="vblock"><span class="m">Why</span><p>${esc(it.w)}</p></div>
     </div>` : ''}
-    <div class="score">
-      <span class="stat"><b>${M.n}</b><span>This round</span></span>
-      <span class="stat"><b>${M.ok}</b><span>Correct</span></span>
-      <span class="stat"><b>${lifetimeFigure()}</b><span>Lifetime</span></span>
-      ${MIXED.n ? `<span class="stat"><b>${MIXED.ok}/${MIXED.n}</b><span>${esc(MIXED_SAY.oldStat)}</span></span>` : ''}
-    </div>
+    ${mixedScoreHtml(M)}
     ${answered ? `<div class="actbar"><button class="btn" id="next">${M.i===M.items.length-1?'Finish':'Next item'}${icon('arrow')}</button></div>` : ''}
   </div>`;
 

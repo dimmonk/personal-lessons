@@ -19,7 +19,10 @@ function namesOffered(v, c){
   const target = caseTarget(v, c);
   if(!v.isOutcome(target)) return v.key.gate.options.map(o => o.id);
   const group = v.outcome(target).group;
-  return v.key.outcomes.filter(o => o.group === group && (o.unit === v.unitId || rebuiltUnitDone(v.subjectId, o.unit))).map(o => o.id);
+  // every name of the branch taught so far: by this unit, by a unit it assumes (lesson standard S2), or by a unit already done;
+  // the case's own name is always among them, so a naming step always has its right answer
+  const taughtSoFar = o => o.unit === v.unitId || (v.unit.assumes || []).includes(o.unit) || rebuiltUnitDone(v.subjectId, o.unit);
+  return v.key.outcomes.filter(o => o.group === group && (taughtSoFar(o) || o.id === target)).map(o => o.id);
 }
 // A case from an earlier unit's bank: a due name first, else the least recently seen; never labelled.
 // The view of an earlier unit. One that is not rebuilt yet is registered only by stand-in cases (its bank for
@@ -33,7 +36,8 @@ function earlierView(subjectId, unitId){
 }
 function earlierCase(subjectId, unitId, exclude){
   const v = earlierView(subjectId, unitId);
-  const pool = v.casesOf(unitId).filter(c => !c.kind && (c.use === 'drill' || c.use === 'return') && !exclude.includes(c.id));
+  // the bank: an earlier unit's drill and return stories, and a procedure unit's problems (lesson standard A12: earlier types return unlabelled)
+  const pool = v.casesOf(unitId).filter(c => (!c.kind || c.kind === 'problem') && (c.use === 'drill' || c.use === 'return') && !exclude.includes(c.id));
   if(!pool.length) return null;
   const now = today();
   const due = v.taught.filter(t => { const s = returnState(v, unitId, t); return s.due && s.due <= now; });
@@ -53,6 +57,8 @@ function drillItem(v, raw, stageAsk, exclude){
     const got = earlierCase(v.subjectId, raw.earlier, exclude);
     if(!got) return null;
     const ev = got.v, c = got.c;
+    // an earlier problem comes back as a route item: choose the procedure, then solve it (A12)
+    if(c.kind === 'problem') return { v: ev, id: c.id, item: problemItem(ev, c, 'route', 'route') };
     const taughtSteps = ev.routeSteps(c).filter(code => ev.step(code).unit === ev.unitId || ev.unit.assumes.includes(ev.step(code).unit));
     const named = !!c.outcome;
     return { v: ev, id: c.id, item: { type: 'case', c, shown: [], asked: taughtSteps, askName: named, names: named ? namesOffered(ev, c) : [],
@@ -85,7 +91,7 @@ function stageInstruction(v, rung){
     const last = v.unitSteps[v.unitSteps.length - 1];
     return say(last.options.every(o => o.keeps.filter(id => v.taught.includes(id)).length === 1));
   }
-  if(rung.ask === 'finish') return say(v.assumedSteps.length);
+  if(rung.ask === 'finish') return say(v.priorSteps.length);
   return say();
 }
 

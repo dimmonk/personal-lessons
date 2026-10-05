@@ -5,6 +5,7 @@ import { testRebuiltUnit, testUnitAt360, testDraftAndOldUnits, testMigration } f
 import { testLessonEngineReview } from './e2e-review.mjs';
 import { testNewScreens } from './e2e-screens.mjs';
 import { testKinds } from './e2e-kinds.mjs';
+import { subjectMeta } from './fixtures/app-data.mjs';
 
 const WIDTHS = [360, 390, 768, 1200, 1600];
 const FONT_FAMILIES = ['Bricolage Grotesque', 'Literata', 'JetBrains Mono'];
@@ -25,12 +26,6 @@ async function freshPage(width = 390) {
   await page.reload();
   return { context, page };
 }
-
-const subjectMeta = page => page.evaluate(() => SUBJECTS.map(s => ({
-  id: s.id, gated: !!s.determination.gateCode, units: s.course.length,
-  rebuilt: s.course.map(u => u.standard === 1),
-  drills: s.quickDrills.map(q => q.key)
-})));
 
 // Navigation goes through the visible controls: the tab bar on phones, the rail on desktop.
 const clickVisible = (page, selector) => page.locator(`${selector}:visible`).first().click();
@@ -63,7 +58,9 @@ async function inspect(page, label) {
   check(clipped.length === 0, `${label}: clipped text in ${clipped.join(', ')}`);
 }
 
-// 1 + 4. Every screen of every subject renders, with no overflow or clipping at each width.
+// 1 + 4. Every screen of every subject renders, with no overflow or clipping at each width. The old screens (quick drills, the faulty
+// claims tile) are visited only for a subject that still has old units: a subject whose every unit is rebuilt has none of them, and
+// the check is that they are not there.
 async function testScreens() {
   for (const width of WIDTHS) {
     const { context, page } = await freshPage(width);
@@ -89,7 +86,9 @@ async function testScreens() {
         await inspect(page, `${tag}/drill ${key}`);
         await toSubject(page);
       }
-      for (const v of ['det', 'err']) {
+      check(await page.locator('#screen [data-d]').count() === s.drills.length, `${tag}: ${await page.locator('#screen [data-d]').count()} quick-drill tiles for ${s.drills.length} old drills`);
+      check(await page.locator('#screen [data-v="err"]').count() === (s.fullyRebuilt ? 0 : 1), `${tag}: the old faulty-claims tile is ${s.fullyRebuilt ? 'shown on a subject with no old units' : 'missing on a subject with old units'}`);
+      for (const v of s.fullyRebuilt ? ['det'] : ['det', 'err']) {
         await clickVisible(page, `#screen [data-v="${v}"]`);
         await inspect(page, `${tag}/${v}`);
         await toSubject(page);
@@ -122,10 +121,11 @@ async function answerSteps(page, answers) {
   for (const [code, id] of answers) await page.click(`[data-step="${code}"] .opt[data-o="${id}"]`);
 }
 
-// 2 + 3. A correct determination narrows and scores right; a wrong route with the right name is a miss.
+// 2 + 3. The OLD determination, for a subject that still has old units: a correct one narrows and scores right; a wrong route with the
+// right name is a miss. A fully rebuilt subject runs the new determination over its specimens, which e2e-screens.mjs plays.
 async function testDeterminations() {
   const { context, page } = await freshPage();
-  for (const s of await subjectMeta(page)) {
+  for (const s of (await subjectMeta(page)).filter(x => !x.fullyRebuilt)) {
     await openSubject(page, s.id);
     await clickVisible(page, '#screen [data-v="det"]');
 
@@ -155,13 +155,14 @@ async function testDeterminations() {
   await context.close();
 }
 
-// 5. Every course unit walks from its first card to its drill.
+// 5. Every OLD course unit walks from its first card to its drill. A rebuilt unit is walked, card by card and answer by answer, by
+// e2e-unit.mjs, so a fully rebuilt subject has none here.
 async function testCourseWalk() {
   const { context, page } = await freshPage();
   for (const s of await subjectMeta(page)) {
     await openSubject(page, s.id);
     for (let u = 0; u < s.units; u++) {
-      if (s.rebuilt[u]) continue;   // a rebuilt unit is walked by e2e-unit.mjs
+      if (s.rebuilt[u]) continue;
       await clickVisible(page, `#screen [data-u="${u}"]`);
       for (let guard = 0; guard < 40; guard++) {
         const label = (await page.locator('#fwd').textContent()).trim();

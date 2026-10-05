@@ -36,7 +36,8 @@ const QUOTED = /\.(text|idea|wild\.\d+|options\.\d+\.text)$/;
 export const prose = obj => [...strings(obj)].filter(([p]) => !STRUCTURAL.test(p) && !STRUCTURAL_IN.test(p) && !QUOTED.test(p));
 
 // Comparison form: no capitals, no punctuation, single spaces.
-export const norm = s => s.toLowerCase().replace(/[’']/g, '').replace(/[^a-z0-9£ ]+/g, ' ').replace(/\s+/g, ' ').trim();
+// a possessive "’s" is dropped first, so "House’s" is not read as "houses"
+export const norm = s => s.toLowerCase().replace(/[’']s\b/g, '').replace(/[’']/g, '').replace(/[^a-z0-9£ ]+/g, ' ').replace(/\s+/g, ' ').trim();
 // The distinct words of four letters or more (V2 near-copy).
 export const WORD_MIN_LETTERS = 4;
 export const wordSet = s => new Set(norm(s).split(' ').filter(w => w.length >= WORD_MIN_LETTERS));

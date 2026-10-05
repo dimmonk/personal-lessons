@@ -60,6 +60,9 @@ export const CONTROLS = [
     data: (d, h) => h.updateIn(d, part('p1', 'cards'), c => swap(c, 'portrait-dissonance', 'check-dissonance')) },
   { rule: 'V12', name: 'a meet card shows a case that is not clean',
     data: (d, h) => h.setIn(d, [...kase('sauce'), 'tier'], 'varied') },
+  { rule: 'V13', name: 'an again card quotes a first case that has no name', also: ['V18'],
+    // the same case is the named teaching case a worked card's second look points back to (V18 needs its name too)
+    data: (d, h) => h.updateIn(d, kase('sauce'), c => { const { name, ...rest } = c; return rest; }) },
   { rule: 'V13', name: 'an again card shows two cases in one setting',
     data: (d, h) => h.setIn(d, [...kase('driver'), 'setting'], 'work') },
   { rule: 'V14', name: 'a look-alike prompt names a case the card does not show',
@@ -106,8 +109,11 @@ export const CONTROLS = [
     data: (d, h) => h.removeIn(d, [...kase('payroll'), 'reason', 'R1']) },
   { rule: 'V36', name: 'a reason opens with a bare verdict',
     data: (d, h) => h.updateIn(d, [...kase('payroll'), 'reason', 'R1'], prepended('Correct.')) },
-  { rule: 'V37', name: 'an action subject has no way to mark a legitimate outcome', also: ['V25', 'V44'],
-    // action: true also turns on the plan card (V25) and a fourth return per outcome (V44); the fault cannot avoid them
+  { rule: 'V59', name: 'a portrait in an action subject says nothing about what to do', also: ['V25', 'V37', 'V44'],
+    // action: true also turns on the plan card (V25), legitimate cases (V37) and a fourth return per outcome (V44)
+    data: (d, h) => h.setIn(d, meta('action'), true) },
+  { rule: 'V37', name: 'an action subject has no way to mark a legitimate outcome', also: ['V25', 'V44', 'V59'],
+    // action: true also turns on the plan card (V25), a fourth return per outcome (V44) and what to do on each portrait (V59); the fault cannot avoid them
     data: (d, h) => h.setIn(d, meta('action'), true) },
   { rule: 'V38', name: 'the drill stages are out of order',
     data: (d, h) => h.updateIn(d, unit('drill', 'rungs'), r => [r[1], r[0], ...r.slice(2)]) },
@@ -165,8 +171,8 @@ export const CONTROLS = [
     data: (d, h) => h.setIn(d, key('outcomes', { id: 'fair' }, 'legit'), 'yes') },
   { rule: 'V0', name: 'a ledger entry of a classification unit names no step',
     data: (d, h) => h.removeIn(d, unit('ledger', { id: 'dissonance~fair' }, 'step')) },
-  { rule: 'V37', name: 'a stage of an action subject asks about cases and none is a case where nothing is wrong', also: ['V25', 'V44'],
-    // action: true also turns on the plan card (V25) and a fourth return per outcome (V44); the fault cannot avoid them
+  { rule: 'V37', name: 'a stage of an action subject asks about cases and none is a case where nothing is wrong', also: ['V25', 'V44', 'V59'],
+    // action: true also turns on the plan card (V25), a fourth return per outcome (V44) and what to do on each portrait (V59); the fault cannot avoid them
     data: (d, h) => {
       const action = h.setIn(h.setIn(d, meta('action'), true), key('outcomes', { id: 'fair' }, 'legit'), true);
       return h.updateIn(action, rung('route'), r => ({ ...r, items: r.items.map(g => g.filter(i => i !== 'fair')).filter(g => g.length) }));

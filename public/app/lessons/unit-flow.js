@@ -79,7 +79,7 @@ function checkJoined(v, T, card, c){
   const answer = v.option(a.step, c.route[a.step][0]), target = caseTarget(v, c);
   if(v.steps.some(s => s.code === card.after)){
     const names = answer.keeps.filter(id => v.taught.includes(id));
-    return v.isGate || !names.length ? '' : `This answer leads to ${T.names(names)}.`;
+    return v.isGate || !names.length ? '' : `This answer leads to ${T.namesAt(names, card.id)}.`;
   }
   // in a gate unit the answer is the name, so there is no second thing to join
   if(v.isGate) return a.type === 'phrase' ? `The key’s answer for this case is ${T.a(a.step, answer.id)}.` : '';

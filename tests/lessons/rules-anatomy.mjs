@@ -52,8 +52,10 @@ export const V12 = branchRule('V12', (u, check) => {
 });
 
 export const V13 = branchRule('V13', (u, check) => {
-  for (const c of u.cards.filter(k => k.kind === 'again')) {
+  for (const c of u.cards.filter(k => k.kind === 'again' && !k.continues)) {
     const [first, second] = [u.cases[c.first], u.cases[c.second]];
+    // the card and its prompt quote the first case by name ("The first case again, in one line. «name»: ...")
+    check(Boolean(first.name), `card ${c.id}: its first case ${c.first} needs a name, which the card quotes`);
     check(first.outcome === c.outcome && second.outcome === c.outcome, `card ${c.id}: both cases must have the outcome ${c.outcome}`);
     check(first.setting !== second.setting, `card ${c.id}: its two cases must differ in setting`);
   }
@@ -82,11 +84,28 @@ function ledgerCoverage(u) {
   return unique(missing);
 }
 
+// The questions on a thing's route, in the key's order: the gate, then the questions of its branch (a family has the gate only).
+function routeStepsOf(u, id) {
+  const outcome = u.key.outcomes.find(o => o.id === id);
+  const gate = u.key.gate ? [u.key.gate] : [];
+  return outcome ? [...gate, ...(u.key.branches[outcome.group] || [])] : gate;
+}
+// S3: a pair's step is the first question on their routes on which they share no answer. For two names of one branch that is
+// a question of the branch; for a pair from two branches (a name met in an earlier unit beside one taught here) it is the gate.
+// Either way it must be a question this unit or one it assumes has taught.
+function separatingStep(u, l) {
+  const codes = new Set(l.pair.flatMap(id => routeStepsOf(u, id).map(s => s.code)));
+  const onRoutes = [u.key.gate, ...Object.values(u.key.branches).flat()].filter(s => s && codes.has(s.code));
+  return onRoutes.find(s => !s.options.some(o => l.pair.every(id => o.keeps.includes(id) || o.id === id)));
+}
+
 function ledgerEntryProblems(u, l) {
-  const first = u.unitSteps().find(s => !s.options.some(o => l.pair.every(id => o.keeps.includes(id))));
+  const first = separatingStep(u, l);
+  const taught = first && (u.unit.teaches.steps.includes(first.code) || u.unit.assumes.includes(first.unit));
   const rule = joined(l.rule);
   const problems = [];
-  if (!first || first.code !== l.step) problems.push(`step should be ${first ? first.code : 'a taught question that separates the pair, and there is none'}`);
+  if (!first || first.code !== l.step) problems.push(`step should be ${first ? first.code : 'a question that separates the pair, and there is none'}`);
+  else if (!taught) problems.push(`step ${first.code} is taught neither by this unit nor by a unit it assumes`);
   if (!l.pair.every(id => hasToken(rule, 'o', id))) problems.push('rule must name both outcomes by token');
   if (!isFilled(l.shared) || !isFilled(l.test)) problems.push('shared and test are required');
   if (/\{o:/.test(joined(l.test))) problems.push('test must not contain an outcome token');
@@ -238,6 +257,10 @@ export const V24 = branchRule('V24', (u, check) => {
     const prev = u.cards[i - 1];
     check(Boolean(prev) && prev.id === c.continues && prev.kind === c.kind && prev.outcome === c.outcome && prev.step === c.step,
       `card ${c.id}: continues "${c.continues}", which must be the card directly before it, of the same kind and the same outcome or step`);
+    // a continuing card carries on an explanation: besides its link and heading it holds prose, and at most a case to show
+    const extra = Object.keys(c).filter(k => !['id', 'kind', 'continues', 'link', 'h', 'outcome', 'family', 'step', 'case'].includes(k));
+    const prosey = val => typeof val === 'string' || (Array.isArray(val) && val.every(x => typeof x === 'string'));
+    check(extra.length > 0 && extra.every(k => prosey(c[k])), `card ${c.id}: a continuing card holds prose fields (and at most a case), and nothing it would have to ask`);
   });
 });
 
@@ -297,4 +320,12 @@ export const V57 = unitRule('V57', (u, check) => {
   }
 }, { kinds: ['fact'] });
 
-export const RULES_ANATOMY = [V10, V11, V12, V13, V14, V15, V16, V17, V18, V20, V21, V22, V23, V24, V25, V26, V27, V51, V55, V57];
+/* ---------- V59: what to do, in an action subject ---------- */
+// P26 requires a counter-move for every name the learner acts on: each portrait of a branch or procedure unit of an action
+// subject says what to do when you meet it (`act`), so the unit ends in an action and not only in a diagnosis.
+export const V59 = unitRule('V59', (u, check) => {
+  if (!u.meta.action) return;
+  for (const c of u.cards.filter(k => k.kind === 'portrait')) check(isFilled(c.act), `card ${c.id}: an action subject's portrait needs "act", what to do when you meet it`);
+}, { kinds: BRANCH_LIKE });
+
+export const RULES_ANATOMY = [V59, V10, V11, V12, V13, V14, V15, V16, V17, V18, V20, V21, V22, V23, V24, V25, V26, V27, V51, V55, V57];

@@ -68,7 +68,8 @@ export const CARDS = {
   meet: byThing('meet', { link: text, case: str, mark: str, strip: arr(text), explain: text, feature: obj({ step: str, option: str }), name: text }),
   again: byThing('again', { link: text, first: str, second: str, step: str, instruction: text, prompt: commit.phrase, shared: text }, { h: str }),
   lens: card('lens', { h: str, link: text, body: text, fixed: text, varies: strings }),
-  portrait: byThing('portrait', { link: text, typical: arr(text), not: text, wild: strings, self: text, ask: text }, { h: str }),
+  // act: what to do when you meet it; required in an action subject's branch units (P26, V59)
+  portrait: byThing('portrait', { link: text, typical: arr(text), not: text, wild: strings, self: text, ask: text }, { h: str, act: text }),
   // a check holds one case and one question; in a fact unit one row of the facts card before it, with no case (S4)
   check: card('check', { after: str, ask: either(
     obj({ type: en('phrase'), step: str, say: text, answer: str }),

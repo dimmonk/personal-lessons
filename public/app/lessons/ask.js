@@ -317,7 +317,7 @@ function problemFeedback(ask){
   const marks = (routed ? verdictMark(res.nameOk, res.nameOk ? 'Right:' : 'The answer is:', esc(v.nameOf(target)))
       + `<span class="mark ${res.routeOk ? '' : 'no'}">${icon(res.routeOk ? 'check' : 'cross', 13)}Route ${res.routeOk ? 'right' : 'missed'}</span>` : '')
     + verdictMark(numOk, numOk ? 'Right:' : 'The answer is:', esc(right.text));
-  const working = c.steps.map(st => `<div class="stepdone static"><span class="tick">${icon('check', 12)}</span><span class="grow"><span class="m s">${esc(st.does)}</span><span class="v">${esc(st.working)}</span></span></div>`).join('');
+  const working = c.steps.map(st => `<div class="stepdone static"><span class="tick">${icon('check', 12)}</span><span class="grow"><span class="m s">${T.t(st.does)}</span><span class="v">${T.t(st.working)}</span></span></div>`).join('');
   const routeLines = routed && !res.routeOk ? `<div class="vblock"><span class="m">The route</span>${[...res.wrongSteps, ...item.asked.filter(code => !res.wrongSteps.includes(code))].map(code => stepLine(ask, c, code)).join('')}</div>` : '';
   const own = [
     ...(numOk ? [] : [SAY.slipLine(T.kw(pick.text), T.t(paras(pick.slip).join(' '), c))]),
@@ -337,9 +337,9 @@ function problemFeedback(ask){
 function problemHtml(ask){
   const { v, T, item, state } = ask, c = item.c, routed = item.solve === 'route';
   const routeDone = !routed || (item.asked.every(code => state.answers[code]) && state.name !== null);
-  const stem = item.solve === 'last' ? SAY.solveLast(c.steps[c.steps.length - 1].does) : item.solve === 'whole' ? SAY.solveWhole : SAY.solveRoute;
+  const stem = item.solve === 'last' ? SAY.solveLast(T.t(c.steps[c.steps.length - 1].does)) : item.solve === 'whole' ? SAY.solveWhole : SAY.solveRoute;
   const prior = item.solve === 'last' && !state.done ? c.steps.slice(0, -1).map(st =>
-    `<div class="stepdone static"><span class="tick">${icon('check', 12)}</span><span class="grow"><span class="m s">${esc(st.does)}</span><span class="v">${esc(st.working)}</span></span></div>`).join('') : '';
+    `<div class="stepdone static"><span class="tick">${icon('check', 12)}</span><span class="grow"><span class="m s">${T.t(st.does)}</span><span class="v">${T.t(st.working)}</span></span></div>`).join('') : '';
   const head = (routed ? caseBody(ask) : T.caseName(c) + T.show(c, state.done ? v.routeSteps(c) : []))
     + (prior ? `<div class="shownroute">${lessonLabel(SAY.workingLabel)}<div class="steps">${prior}</div></div>` : '');
   if(!routeDone) return head;

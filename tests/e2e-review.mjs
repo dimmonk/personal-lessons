@@ -3,13 +3,16 @@
 // before its fix. Each function takes `env` from e2e.mjs: { freshPage, check, inspect, clickVisible, openSubject }.
 import { registerGateUnit } from './fixtures/gate-unit.mjs';
 
-const SUBJECT = 'psychology';
+const SUBJECT = 'psychology', UNIT = 'u2';   // a branch unit of the classification kind: the sample these engine checks are made on
 const norm = s => s.replace(/\s+/g, ' ').trim();
 
+// The unit these checks run on is found by its id in the subject's own course, never by its place in it.
 async function openUnitTwo(env, width = 390) {
   const { context, page } = await env.freshPage(width);
+  const index = await page.evaluate(([S, U]) => SUBJECTS.find(s => s.id === S).course.findIndex(u => u.id === U && u.standard === 1), [SUBJECT, UNIT]);
+  env.check(index >= 0, `${SUBJECT}/${UNIT} is not a rebuilt unit of the course`);
   await env.openSubject(page, SUBJECT);
-  await env.clickVisible(page, '#screen [data-u="1"]');
+  await env.clickVisible(page, `#screen [data-u="${index}"]`);
   return { context, page };
 }
 const gotoCard = (page, id) => page.evaluate(id => { const r = UNIT_RUN; r.i = r.flow.findIndex(s => s.id === id); paintUnit(); }, id);
@@ -169,10 +172,14 @@ async function wordingAndData(env) {
   const { page, context } = await env.freshPage(390);
   const aka = await page.evaluate(() => SAY.aka(['rock and roll', 'folk music', 'jazz'], 'N'));
   env.check(aka.startsWith('You may also hear this called “rock and roll”, “folk music” or “jazz”.'), `the "also called" sentence reads: ${aka.slice(0, 100)}`);
-  const legacy = await page.evaluate(() => Object.keys(FC.get('psychology').legacy));
-  env.check(['name', 'rev', 'blurb'].every(k => !legacy.includes(k)), 'the subject name, revision and blurb are typed in both the subject record and the old record');
-  const subj = await page.evaluate(() => { const s = SUBJECTS.find(x => x.id === 'psychology'), m = FC.get('psychology').meta; return s.rev === m.rev && s.name === m.name && s.blurb === m.blurb; });
-  env.check(subj, 'the subject screen does not read the subject record');
+  // every subject with a subject record: its name, revision and blurb are typed there only (a fully rebuilt subject has no old record at all)
+  const records = await page.evaluate(() => SUBJECTS.filter(s => FC.get(s.id).meta).map(s => {
+    const data = FC.get(s.id), m = data.meta;
+    return { id: s.id, typedTwice: data.legacy ? ['name', 'rev', 'blurb'].filter(k => k in data.legacy) : [], reads: s.rev === m.rev && s.name === m.name && s.blurb === m.blurb };
+  }));
+  env.check(records.length > 0, 'no subject has a subject record');
+  records.forEach(r => env.check(r.typedTwice.length === 0, `${r.id}: the subject ${r.typedTwice.join(', ')} is typed in both the subject record and the old record`));
+  records.forEach(r => env.check(r.reads, `${r.id}: the subject screen does not read the subject record`));
   // the recap's key section and the orient map name only what the unit teaches
   const keyed = await page.evaluate(() => {
     const v = unitView('psychology', 'u2'), narrowed = { ...v, taught: v.taught.slice(0, 2) }, T = lessonText(narrowed);
@@ -298,9 +305,9 @@ async function returnSchedule(env) {
       itemsCache.psychology = {};
       tries.forEach(([i, d, ok, context]) => {
         const key = `u2/${cases[i]}`, old = itemsCache.psychology[key] ? itemsCache.psychology[key].tries : [];
-        itemsCache.psychology = { ...itemsCache.psychology, [key]: { tries: [...old, { d: day(d), rev: 1, engine: 1, mode: 'route', context, steps: {}, name: null, ok }] } };
+        itemsCache.psychology = { ...itemsCache.psychology, [key]: { tries: [...old, { d: day(d), rev: v.unit.rev, engine: FC.ENGINE, mode: 'route', context, steps: {}, name: null, ok }] } };
       });
-      saveSeenUnit('psychology', 'u2', { rev: 1, done: true, at: 'close' });
+      saveSeenUnit('psychology', 'u2', { rev: v.unit.rev, done: true, at: 'close' });
       const s = returnState(v, 'u2', 'dissonance');
       return { level: s.level, due: s.due === null ? null : s.due === day(0) ? 'today' : s.due < day(0) ? 'past' : 'later', listed: dueReturns('psychology').length };
     };

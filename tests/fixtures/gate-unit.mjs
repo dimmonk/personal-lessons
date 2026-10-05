@@ -52,6 +52,8 @@ export function registerGateUnit() {
     { id: 'term-mark', kind: 'term', term: 'mark', h: 'A word you will need', link: 'The next cards use a word, so it comes first.', case: 'c-term', plain: 'The late part is the part that settles it.' },
     { id: 'meet-a', kind: 'meet', family: 'a', link: 'Link {a:D1.a}.', case: 'c-a1', mark: 'D1', strip: ['one', 'two'], explain: 'Because {cue:D1}.',
       feature: { step: 'D1', option: 'a' }, name: 'The name is {o:a}.' },
+    // a chain (S4): a meet card continued on a second card that carries only its prose
+    { id: 'meet-a-more', kind: 'meet', family: 'a', continues: 'meet-a', link: 'The card before showed one alpha case.', explain: ['More about alpha, in plain words.', 'A second paragraph of it.'] },
     { id: 'again-a', kind: 'again', family: 'a', link: 'Link.', first: 'c-a1', second: 'c-a2', step: 'D1', instruction: 'Compare.',
       prompt: { kind: 'phrase', answer: 'very alpha' }, shared: 'In both cases the same alpha mark is what decides it.' },
     { id: 'lens', kind: 'lens', h: 'Story and structure', link: 'Link.', body: 'What stays and what changes.', fixed: ['the question {q:D1}'], varies: ['the people', 'the setting'] },
@@ -87,7 +89,7 @@ export function registerGateUnit() {
     teaches: { steps: ['D1'], outcomes: [], terms: ['mark'], families: ['a', 'b', 'c'] }, assumes: [],
     ledger: [{ id: 'a~b', pair: ['a', 'b'], step: 'D1', shared: 'Shared alpha beta.', rule: '{o:a} is not {o:b}.', test: 'Which one is it?' }],
     parts: [
-      { id: 'p1', title: 'Alpha', cards: ['orient', 'term-mark', 'meet-a', 'again-a', 'lens', 'portrait-a', 'check-a'] },
+      { id: 'p1', title: 'Alpha', cards: ['orient', 'term-mark', 'meet-a', 'meet-a-more', 'again-a', 'lens', 'portrait-a', 'check-a'] },
       { id: 'p2', title: 'Beta', cards: ['meet-b', 'again-b', 'portrait-b', 'check-b', 'look-ab', 'meet-c', 'check-c', 'exc-ab', 'refute-1'] },
       { id: 'p3', title: 'The question, two whole cases, then the drill', cards: ['q-d1', 'check-d1', 'worked-a', 'worked-b'], drill: true, close: ['recap', 'transfer'] }],
     drill: { key: 'u1', rungs: [

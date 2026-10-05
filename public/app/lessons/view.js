@@ -49,6 +49,9 @@ const SAY = {
   tieBreak: (loser, say, winner) => `When a case shows both ${loser} and ${esc(say)}, the key’s answer is ${winner}.`,
   secondLook: 'Does it look like a case you know?',
   ask: 'The question to ask when you spot it',
+  act: 'What to do when you meet it',
+  notOnRoute: 'Not asked on its route',
+  keyAlsoAsks: 'The key also asks, and this is its answer for a case like this one:',
   transferNote: 'One line is enough. It is kept on this device only and is never marked.',
   draft: 'Draft: not yet read by a newcomer',
   endOfPart: (n, next) => `End of part ${n}. You can stop here; your place is kept. Next: part ${n + 1}, ${next}.`,
@@ -89,7 +92,7 @@ const SAY = {
   solvedResult: 'The result',
   solvedStem: 'This step carries the idea. Every statement below is true of the problem. Before you read the reason, choose the one that explains why this step is done.',
   workingLabel: 'The working, step by step',
-  solveLast: does => `The working is shown up to the last step. The last step is yours: ${esc(does)}. Choose what the problem comes to.`,
+  solveLast: does => `The working is shown up to the last step. The last step is yours: ${does}. Choose what the problem comes to.`,   // does: already filled and escaped (T.t)
   solveWhole: 'The whole problem is yours. Work it out, then choose the answer.',
   solveRoute: 'Now work the problem with that procedure and choose the answer.',
   slipLine: (text, slip) => `You chose ${text}. That is the answer you get when ${slip}`,
@@ -173,6 +176,13 @@ function subjectView(subjectId){
   };
 }
 
+// the assumed questions on the routes of a unit's taught outcomes, in the key's order
+function priorStepsOf(sv, unit, outcomeIds){
+  const groups = [...new Set(outcomeIds.map(id => sv.outcome(id).group))];
+  const onRoute = new Set([...(sv.key.gate ? [sv.key.gate.code] : []), ...groups.flatMap(g => (sv.key.branches[g] || []).map(s => s.code))]);
+  return sv.steps.filter(s => unit.assumes.includes(s.unit) && onRoute.has(s.code));
+}
+
 function unitView(subjectId, unitId){
   const sv = subjectView(subjectId);
   const unit = sv.unit(unitId);
@@ -192,8 +202,16 @@ function unitView(subjectId, unitId){
     fact: id => rows[id] || lessonFail(`unknown fact ${id}`),
     ledger,
     ledgerFor: (a, b) => unit.ledger.find(l => l.pair.includes(a) && l.pair.includes(b) && a !== b) || null,
+    // has the learner met this name by the time they read this card? A name with no meet card in this unit was taught earlier
+    metBefore: (id, cardId) => {
+      const meet = cardOrder.find(k => cards[k] && cards[k].kind === 'meet' && (cards[k].outcome || cards[k].family) === id);
+      return !meet || cardOrder.indexOf(meet) < cardOrder.indexOf(cardId);
+    },
     // questions taught by the units this one assumes, and by this one
     assumedSteps: sv.steps.filter(s => unit.assumes.includes(s.unit)),
+    // of those, the ones this unit's own routes pass through: the gate, and earlier questions of the branches its outcomes
+    // sit in (lesson standard S2 assumes). The orient card, the side-by-side tables and the finish stage print only these.
+    priorSteps: priorStepsOf(sv, unit, isGate || isFacts ? [] : taught),
     unitSteps: unit.teaches.steps.map(sv.step),
     title: unit.title.fromKey ? sv.option(...unit.title.fromKey.split('.')).n : unit.title.text,
     // the name of a taught thing: an outcome's name, in a gate unit the answer text of the family, in a fact unit the fact's question
@@ -248,7 +266,9 @@ function lessonText(v){
   const show = (c, markSteps) => `<blockquote class="passage">${marked(c, markSteps)}</blockquote>`;
   const caseName = c => c.name ? `<p class="casename">${esc(c.name)}</p>` : '';
   const names = ids => joinWords(ids.map(o));
-  return { kw, o, q, a, t, P, PP, show, marked, caseName, names, quoteCues };
+  // on a card read before some of these names are taught, a name not met yet is shown by its plain words (P3: nothing points forward)
+  const namesAt = (ids, cardId) => joinWords(ids.map(id => !v.metBefore || v.metBefore(id, cardId) ? o(id) : esc(v.thing(id).plain)));
+  return { kw, o, q, a, t, P, PP, show, marked, caseName, names, namesAt, quoteCues };
 }
 
 // Small HTML helpers shared by cards, checks, drill and feedback.

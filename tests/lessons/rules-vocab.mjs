@@ -29,7 +29,8 @@ function V2(ctx, check) {
   const nearable = lines.filter(l => l.words.size >= NEAR_COPY_MIN_WORDS);
   for (const { where, text } of proseOf(ctx)) {
     const bare = norm(stripTokens(text));
-    const typed = lines.filter(l => bare.includes(l.n)).map(l => `key wording typed by hand: "${l.line.slice(0, 50)}"`);
+    // whole words: the term "rate" is not typed inside "separate"
+    const typed = lines.filter(l => containsPhrase(bare, l.n)).map(l => `key wording typed by hand: "${l.line.slice(0, 50)}"`);
     const near = sentencesOf(text).flatMap(sentence => {
       const got = wordSet(sentence);
       return nearable.filter(l => overlap(l, got) >= NEAR_COPY_RATIO).map(l => `near-copy of a key line: "${sentence.slice(0, 60)}" ~ "${l.line.slice(0, 40)}"`);
@@ -91,11 +92,13 @@ function V4(ctx, check) {
 }
 
 /* ---------- V8 ---------- */
+// K5: outside the meet card an other name may appear only quoted, as words someone says, where the feedback maps it back.
+const QUOTED = /“[^”]*”|"[^"]*"/g;
 function V8(ctx, check) {
   const akas = ctx.key.outcomes.flatMap(o => o.aka);
   for (const { where, text } of proseOf(ctx)) {
-    const bare = norm(stripTokens(text));
-    akas.forEach(aka => check(!bare.includes(norm(aka)), `${where}: another name ("${aka}") is used; only the meet card prints it`));
+    const bare = norm(stripTokens(text).replace(QUOTED, ' '));
+    akas.forEach(aka => check(!containsPhrase(bare, aka), `${where}: another name ("${aka}") is used; only the meet card prints it`));
   }
 }
 

@@ -122,7 +122,7 @@ function cardReferences(u, c) {
   if (c.problem) refs.push(kase(c.problem));
   for (const id of [c.first, c.second, ...(c.cases || []), ...(c.testedBy || [])]) if (id) refs.push(kase(id));
   if (c.kind === 'term') refs.push([`term "${c.term}"`, Boolean(u.terms[c.term])]);
-  if (c.kind === 'meet') { refs.push(step(c.mark), step(c.feature.step), [`option "${c.feature.step}.${c.feature.option}"`, u.steps.some(st => st.code === c.feature.step && st.options.some(o => o.id === c.feature.option))]); }
+  if (c.kind === 'meet' && !c.continues) { refs.push(step(c.mark), step(c.feature.step), [`option "${c.feature.step}.${c.feature.option}"`, u.steps.some(st => st.code === c.feature.step && st.options.some(o => o.id === c.feature.option))]); }
   if (c.kind === 'again' || c.kind === 'question') refs.push(step(c.step));
   if (c.kind === 'orient' && c.map && !u.isGate) refs.push([`map.branch "${c.map.branch}"`, Boolean(u.key.branches[c.map.branch])]);
   if (['lookalike', 'exception'].includes(c.kind)) refs.push([`ledger "${c.ledger}"`, u.unit.ledger.some(l => l.id === c.ledger)]);

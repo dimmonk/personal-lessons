@@ -8,8 +8,10 @@ const WORDS = ['no','one','two','three','four','five','six','seven','eight','nin
 const numWord = n => n < WORDS.length ? WORDS[n] : String(n);
 const cap = s => s.charAt(0).toUpperCase() + s.slice(1);
 
+// an old course entry's unit id: its own id where it has one, otherwise its position (u1, u2, ...)
+const legacyUnitId = (entry, i) => entry.id || 'u' + (i + 1);
 function subjectUnitIds(data){
-  return data.meta && data.meta.units ? data.meta.units : data.legacy.course.map((_, i) => 'u' + (i + 1));
+  return data.meta && data.meta.units ? data.meta.units : data.legacy.course.map(legacyUnitId);
 }
 function rebuiltEntry(subjectId, unitId){
   const v = unitView(subjectId, unitId);
@@ -17,7 +19,7 @@ function rebuiltEntry(subjectId, unitId){
 }
 function legacyEntry(data, unitIds, unitId, position){
   const hasRebuilt = unitIds.some(id => data.units[id]);
-  const entry = hasRebuilt ? data.legacy.course.find(c => c.id === unitId) : data.legacy.course[position];
+  const entry = hasRebuilt ? data.legacy.course.find((c, i) => legacyUnitId(c, i) === unitId) : data.legacy.course[position];
   if(!entry) throw new Error(`${data.legacy.id}: no old course entry for unit ${unitId}`);
   return { ...entry, id: unitId, standard: 0 };
 }

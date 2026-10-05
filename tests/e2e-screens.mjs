@@ -1,15 +1,21 @@
 // Browser checks for the screens around the unit player: Due today, Practise again, the subject's opening map, the generated
 // reference, the full determination of a fully rebuilt subject, Mixed, Progress, Search, "Review these first", a Back control
 // in the drill, the log export and the card list beside a unit (lesson standard E9 to E14, E18, E19).
+// Every check reads what it expects from the app's own data (tests/fixtures/app-data.mjs): no subject, unit, revision, count or
+// "which units are rebuilt" is typed here. Old-screen checks run only for subjects or units that are old-format; a subject whose every
+// unit is rebuilt (no old record) gets the new screens end to end. Two fixtures stand in for what the real subjects may not hold:
+// mini (every unit rebuilt, an action subject) and half (one rebuilt unit, two old ones).
 // Each function takes `env` from e2e.mjs: { freshPage, check, inspect, clickVisible, openSubject, screenText }.
 // Run alone with: node tests/e2e-screens.mjs   (screenshots go to $FC_SHOTS, else the scratch folder named below)
 import { mkdir, readFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import { registerMiniSubject, showMiniSubject } from './fixtures/mini-subject.mjs';
+import { addHalfSubject } from './fixtures/half-subject.mjs';
+import { subjectMeta, rebuiltUnits, pickNamingUnit, keyShape, numberWord } from './fixtures/app-data.mjs';
+import { moveOn } from './fixtures/walk.mjs';
 
 const DEFAULT_SHOTS = '/private/tmp/claude-501/-Users-dim-Documents-PersonalLessons/1288c7ec-dc23-42b8-85ad-117757285e29/scratchpad/engine-shots-2';
 const SHOT_DIR = () => process.env.FC_SHOTS || null;
-const SUBJECT = 'psychology';
 const WIDTHS = [390, 360];
 const norm = s => s.replace(/\s+/g, ' ').trim();
 const screenOf = async page => norm(await page.locator('#screen').textContent());
@@ -27,6 +33,8 @@ const stray = page => page.evaluate(() => {
   const vw = document.documentElement.clientWidth, bad = [];
   for (const el of document.querySelectorAll('#screen *')) {
     if (el.closest('.chips')) continue;   // the filter chips are a row that scrolls on purpose
+    const folded = el.closest('details:not([open])');
+    if (folded && !el.closest('summary')) continue;   // the inside of a folded section is not on the screen, whatever rectangle it reports
     const r = el.getBoundingClientRect();
     if (r.width === 0 && r.height === 0) continue;
     if (r.right > vw + 0.5 || r.left < -0.5) bad.push(`<${el.tagName.toLowerCase()}> "${el.textContent.trim().slice(0, 24)}" spans ${Math.round(r.left)}..${Math.round(r.right)} of ${vw}`);
@@ -38,6 +46,21 @@ async function layout(env, page, label) {
   const bad = await stray(page);
   env.check(bad.length === 0, `${label}: content outside the screen: ${bad.join('; ')}`);
 }
+
+/* ---------- which unit a screen is run on ---------- */
+// The screens that need a finished unit with names to come back run on whichever rebuilt branch unit the data holds first
+// (state: UNITS, read once); nothing here names a subject, a unit, a revision or a count.
+let UNITS = null;
+async function unitFacts(env) {
+  if (!UNITS) { const probe = await env.freshPage(390); UNITS = await rebuiltUnits(probe.page); await probe.context.close(); }
+  return UNITS;
+}
+async function target(env, need) {
+  const t = pickNamingUnit(await unitFacts(env), need);
+  if (!t) throw new Error('no subject has a rebuilt branch unit that teaches names and has a route stage' + (need ? ' (and the extra need)' : ''));
+  return t;
+}
+const nameCount = (page, n) => numberWord(page, n).then(w => w.charAt(0).toUpperCase() + w.slice(1));
 
 /* ---------- setting a page up ---------- */
 // A unit finished some days ago, with one right first try on a route item for each of its names, so every name is due.
@@ -54,9 +77,10 @@ const seedDone = (page, subject, unit, daysAgo) => page.evaluate(([subject, unit
 }, [subject, unit, daysAgo]);
 const setStore = (page, key, value) => page.evaluate(([k, v]) => localStorage.setItem(k, JSON.stringify(v)), [key, value]);
 const getStore = (page, key) => page.evaluate(k => JSON.parse(localStorage.getItem(k)), key);
-async function psychologyDue(env, width, daysAgo = 3) {
+// a page where the target unit was finished some days ago, so every name it teaches is due
+async function dueWith(env, t, width, daysAgo = 3) {
   const { context, page } = await env.freshPage(width);
-  await seedDone(page, SUBJECT, 'u2', daysAgo);
+  await seedDone(page, t.subject, t.unit, daysAgo);
   await page.reload();
   return { context, page };
 }
@@ -105,22 +129,24 @@ async function playRun(page, which, stopAfter = Infinity) {
 
 /* ---------- Due today (E9, E10) ---------- */
 export async function testDueToday(env, width = 390) {
-  const { check } = env, { context, page } = await psychologyDue(env, width);
+  const { check } = env, t = await target(env), { context, page } = await dueWith(env, t, width);
+  const taught = t.taught;
   await toLibrary(env, page);
   const tile = norm(await page.locator('[data-due-tile]').textContent());
-  check(/Due today/.test(tile) && /Five names are due/.test(tile) && /Psychology · 5 due/.test(tile), `the library tile reads "${tile}"`);
+  const first = await nameCount(page, taught);
+  check(/Due today/.test(tile) && tile.includes(`${first} name${taught === 1 ? ' is' : 's are'} due`) && tile.includes(`${t.subjectName} · ${taught} due`), `the library tile reads "${tile}", not ${first} names due in ${t.subjectName}`);
   await layout(env, page, `${width}px library with a due tile`);
   await shot(page, 'due-library-tile');
-  await env.clickVisible(page, '#screen [data-s="psychology"]');
+  await env.clickVisible(page, `#screen [data-s="${t.subject}"]`);
   check(await page.locator('[data-due-tile]').count() === 1, 'the subject screen has no Due today tile');
   await layout(env, page, `${width}px subject with a due tile`);
-  await page.click('[data-due="psychology"]');
-  const set = await page.evaluate(() => {
-    const items = PRACTICE.items, v = unitView('psychology', 'u2');
-    return { n: items.length, unseen: items.every(i => !seenBefore('psychology', i.unitId, i.caseId)),
+  await page.click(`[data-due="${t.subject}"]`);
+  const set = await page.evaluate(([S, U]) => {
+    const items = PRACTICE.items, v = unitView(S, U);
+    return { n: items.length, unseen: items.every(i => !seenBefore(S, i.unitId, i.caseId)),
       names: items.map(i => caseTarget(v, v.caseById(i.caseId))), queue: PRACTICE.run.stages[0].queue.length, ask: PRACTICE.run.stages[0].ask,
       pairs: items.map((i, k) => k % 2 === 0 && items[k + 1] ? !!v.ledgerFor(caseTarget(v, v.caseById(i.caseId)), caseTarget(v, v.caseById(items[k + 1].caseId))) : true) };
-  });
+  }, [t.subject, t.unit]);
   check(set.n >= 2 && set.n <= 6, `a returned set has ${set.n} cases, not 2 to 6`);
   check(set.unseen, 'a returned set shows a case the learner has already seen');
   check(set.pairs.every(Boolean), 'a due name is not placed next to a case of a name it is paired with');
@@ -128,8 +154,8 @@ export async function testDueToday(env, width = 390) {
   await layout(env, page, `${width}px returned set intro`);
   await shot(page, 'due-set-intro');
   await page.click('#start');
-  const whole = await page.evaluate(() => { const i = PRACTICE.run.current.item; return { asked: i.asked.length, name: i.askName, shown: i.shown.length }; });
-  check(whole.asked === 2 && whole.name && whole.shown === 0, `a returned item is not a whole route (${JSON.stringify(whole)})`);
+  const whole = await page.evaluate(() => { const i = PRACTICE.run.current.item; return { asked: i.asked.length, route: Object.keys(i.c.route).length, name: i.askName, shown: i.shown.length }; });
+  check(whole.asked === whole.route && whole.name && whole.shown === 0, `a returned item is not a whole route (${JSON.stringify(whole)})`);
   await layout(env, page, `${width}px returned set item`);
   await shot(page, 'due-set-item');
   const answered = await playRun(page, 'practice');
@@ -139,35 +165,35 @@ export async function testDueToday(env, width = 390) {
   check(/That set is done/.test(results) && /Cases that came back today/.test(results) && /What comes back, and when/.test(results), `the results screen reads "${results.slice(0, 160)}"`);
   await layout(env, page, `${width}px returned set results`);
   await shot(page, 'due-set-results');
-  const items = await getStore(page, 'pl:psychology:items'), log = await getStore(page, 'pl:log');
-  const returned = Object.values(items).flatMap(e => e.tries).filter(t => t.context === 'return');
-  check(returned.length >= set.n && returned.every(t => t.mode === 'route'), 'the returned items were not recorded as route tries in the context "return"');
-  check(log.some(e => e.type === 'return' && e.subject === SUBJECT), 'a finished returned set was not logged');
+  const items = await getStore(page, `pl:${t.subject}:items`), log = await getStore(page, 'pl:log');
+  const returned = Object.values(items).flatMap(e => e.tries).filter(x => x.context === 'return');
+  check(returned.length >= set.n && returned.every(x => x.mode === 'route'), 'the returned items were not recorded as route tries in the context "return"');
+  check(log.some(e => e.type === 'return' && e.subject === t.subject), 'a finished returned set was not logged');
   await page.click('#screen [data-v="library"]');
-  const left = await page.evaluate(() => dueReturns('psychology').length);
-  check(left < 5, `${left} names are still due after the set; answered names should leave the schedule for later days`);
+  const left = await page.evaluate(S => dueReturns(S).length, t.subject);
+  check(left < taught, `${left} of ${taught} names are still due after the set; answered names should leave the schedule for later days`);
   await context.close();
 }
 
 // The negative control for the most important check: a returned set must not show a case the learner has already seen when
 // an unseen one exists. The same measurement is run against a picker that is made to repeat a seen case, and must go red.
 export async function testReturnedSetIsNew(env) {
-  const { check } = env, { context, page } = await psychologyDue(env, 390);
-  await page.evaluate(() => {   // the learner has seen the first return case of every name
-    const v = unitView('psychology', 'u2'), items = JSON.parse(localStorage.getItem('pl:psychology:items'));
-    v.taught.forEach(t => {
-      const c = v.unit.drill.returns.map(v.caseById).find(x => caseTarget(v, x) === t);
+  const { check } = env, t = await target(env), { context, page } = await dueWith(env, t, 390);
+  await page.evaluate(([S, U]) => {   // the learner has seen the first return case of every name
+    const v = unitView(S, U), items = JSON.parse(localStorage.getItem(`pl:${S}:items`));
+    v.taught.forEach(name => {
+      const c = v.unit.drill.returns.map(v.caseById).find(x => caseTarget(v, x) === name);
       // met in a mixed round, which leaves the schedule alone: seen, and still due
-      items[`u2/${c.id}`] = { tries: [{ d: addDays(today(), -1), rev: 1, engine: 1, mode: 'piece', context: 'mixed', steps: {}, name: null, ok: false }] };
+      items[`${U}/${c.id}`] = { tries: [{ d: addDays(today(), -1), rev: v.unit.rev, engine: FC.ENGINE, mode: 'piece', context: 'mixed', steps: {}, name: null, ok: false }] };
     });
-    localStorage.setItem('pl:psychology:items', JSON.stringify(items));
-  });
+    localStorage.setItem(`pl:${S}:items`, JSON.stringify(items));
+  }, [t.subject, t.unit]);
   await page.reload();
-  const measure = () => page.evaluate(() => {
-    const sets = Array.from({ length: 8 }, () => buildReturnSet('psychology'));
-    return sets.flat().filter(i => seenBefore('psychology', i.unitId, i.caseId)).length;
-  });
-  check(await page.evaluate(() => buildReturnSet('psychology').length) >= 2, 'the measurement is empty: no set was built for the names that are due');
+  const measure = () => page.evaluate(S => {
+    const sets = Array.from({ length: 8 }, () => buildReturnSet(S));
+    return sets.flat().filter(i => seenBefore(S, i.unitId, i.caseId)).length;
+  }, t.subject);
+  check(await page.evaluate(S => buildReturnSet(S).length, t.subject) >= 2, 'the measurement is empty: no set was built for the names that are due');
   const repeats = await measure();
   check(repeats === 0, `${repeats} returned cases were ones the learner had already seen, while unseen ones were left`);
   await page.evaluate(() => {
@@ -216,61 +242,94 @@ export async function testPlanReminder(env) {
 
 /* ---------- Practise again (E14) ---------- */
 export async function testPractiseAgain(env, width = 390) {
-  const { check } = env, { context, page } = await psychologyDue(env, width, 10);
-  // the learner has met two piece items on different days: the older one must come first
-  await page.evaluate(() => {
-    const items = JSON.parse(localStorage.getItem('pl:psychology:items')), mk = n => ({ tries: [{ d: addDays(today(), -n), rev: 1, engine: 1, mode: 'piece', context: 'unit', steps: { R1: 'addstory' }, name: null, ok: true }] });
-    items['u2/queue'] = mk(9); items['u2/rev-dissonance'] = mk(1);
-    localStorage.setItem('pl:psychology:items', JSON.stringify(items));
-  });
+  const { check } = env, t = await target(env), { context, page } = await dueWith(env, t, width, 10);
+  // the learner has met two piece items on different days: the older one must come first. Two items of the unit's own piece stage
+  // that sit in the same group and tier, so only their recency can put one ahead of the other.
+  const pair = await page.evaluate(([S, U]) => {
+    const v = unitView(S, U), rung = v.unit.drill.rungs.find(r => r.ask === 'piece');
+    const id = raw => typeof raw === 'string' ? raw : raw.case;
+    const group = rung.items.find(g => g.filter(raw => id(raw)).length >= 2) || null;
+    const raws = group ? group.slice(0, 2) : rung.items.slice(0, 2).map(g => g[0]);
+    return raws.map(raw => ({ id: id(raw), step: raw.step || v.routeSteps(v.caseById(id(raw)))[0] }));
+  }, [t.subject, t.unit]);
+  await page.evaluate(([S, U, pair]) => {
+    const items = JSON.parse(localStorage.getItem(`pl:${S}:items`)), v = unitView(S, U);
+    const mk = (n, p) => ({ tries: [{ d: addDays(today(), -n), rev: v.unit.rev, engine: FC.ENGINE, mode: 'piece', context: 'unit', steps: { [p.step]: v.caseById(p.id).route[p.step][0] }, name: null, ok: true }] });
+    items[`${U}/${pair[0].id}`] = mk(9, pair[0]); items[`${U}/${pair[1].id}`] = mk(1, pair[1]);
+    localStorage.setItem(`pl:${S}:items`, JSON.stringify(items));
+  }, [t.subject, t.unit, pair]);
   await page.reload();
-  await env.openSubject(page, SUBJECT);
-  check(await page.locator('[data-again]').count() === 1, 'a finished unit has no "Practise again" tile');
-  check(/Practise again/.test(await page.locator('[data-again="u2"]').textContent()), 'the tile does not say "Practise again"');
+  await env.openSubject(page, t.subject);
+  check(await page.locator(`[data-again="${t.unit}"]`).count() === 1, 'a finished unit has no "Practise again" tile');
+  check(/Practise again/.test(await page.locator(`[data-again="${t.unit}"]`).textContent()), 'the tile does not say "Practise again"');
   await layout(env, page, `${width}px subject with Practise again`);
   await shot(page, 'practise-again-tile');
-  await page.click('[data-again="u2"]');
-  const info = await page.evaluate(() => {
+  await page.click(`[data-again="${t.unit}"]`);
+  const info = await page.evaluate(([a, b]) => {
     const run = PRACTICE.run, q = run.stages[0].queue, at = id => q.findIndex(x => x === id || (x && x.case === id));
-    return { stages: run.stages.map(s => s.ask), context: run.context, title: run.title, queue: at('queue'), recent: at('rev-dissonance') };
-  });
+    return { stages: run.stages.map(s => s.ask), context: run.context, title: run.title, older: at(a), newer: at(b) };
+  }, [pair[0].id, pair[1].id]);
   check(info.stages[0] === 'piece' && !info.stages.includes('name'), `Practise again starts at ${info.stages[0]} (stages ${info.stages.join(', ')}), not at the piece stage`);
   check(info.context === 'again' && info.title === 'Practise again', `the run is "${info.title}" in context "${info.context}"`);
-  check(info.queue >= 0 && info.recent >= 0 && info.queue < info.recent, `the case seen 9 days ago (at ${info.queue}) does not come before the one seen yesterday (at ${info.recent})`);
+  check(info.older >= 0 && info.newer >= 0 && info.older < info.newer, `the case seen 9 days ago (at ${info.older}) does not come before the one seen yesterday (at ${info.newer})`);
   await layout(env, page, `${width}px Practise again, stage intro`);
   await shot(page, 'practise-again-stage');
   check(await page.locator('[data-drill-back]').count() === 1, 'Practise again has no Back control');
+  // every item of the stages it runs, from the piece stage on, is asked at least once
+  const authored = await page.evaluate(([S, U]) => { const rungs = unitView(S, U).unit.drill.rungs, from = rungs.findIndex(r => r.ask === 'piece'); return rungs.slice(from).flatMap(r => r.items.flat()).length; }, [t.subject, t.unit]);
   const answered = await playRun(page, 'practice');
-  check(answered >= 20, `Practise again asked only ${answered} items`);
+  check(answered >= authored, `Practise again asked ${answered} items of the ${authored} the unit's drill has from its piece stage on`);
   check(/The drill is done/.test(await screenOf(page)), 'Practise again did not end on the results screen');
   await shot(page, 'practise-again-results');
-  const items = await getStore(page, 'pl:psychology:items');
-  check(Object.values(items).some(e => e.tries.some(t => t.context === 'again')), 'no try was recorded with the context "again"');
-  check((await getStore(page, 'pl:log')).some(e => e.type === 'set' && e.unit === 'u2'), 'a finished Practise again was not logged');
+  const items = await getStore(page, `pl:${t.subject}:items`);
+  check(Object.values(items).some(e => e.tries.some(x => x.context === 'again')), 'no try was recorded with the context "again"');
+  check((await getStore(page, 'pl:log')).some(e => e.type === 'set' && e.unit === t.unit), 'a finished Practise again was not logged');
   await context.close();
 }
 
 /* ---------- the subject's opening map (E14) ---------- */
+// Every subject that has a rebuilt unit draws its key as a map; what the map must hold is worked out from the key and from which
+// units are rebuilt (tests/fixtures/app-data.mjs: keyShape), not typed here.
+const withKey = async page => (await subjectMeta(page)).filter(s => s.unitList.some(u => u.rebuilt));
+async function openingMapChecks(env, page, s, width, label) {
+  const { check } = env, shape = await keyShape(page, s.id);
+  await env.openSubject(page, s.id);
+  const map = await page.evaluate(() => { const el = document.querySelector('.keymap'); return el ? { text: el.textContent.replace(/\s+/g, ' '), questions: el.querySelectorAll('.mapq').length } : null; });
+  if (!shape.drawn.length) { check(map === null, `${label}: a subject with no branch fully rebuilt draws a map`); return shape; }
+  check(map !== null, `${label}: the subject opens with no key map`);
+  if (map === null) return shape;
+  const want = [shape.gate.q, ...shape.drawn.map(o => o.n), ...shape.branchSteps.flatMap(st => [st.q, ...st.options]),
+    ...shape.names.flatMap(o => [o.n, o.plain.charAt(0).toUpperCase() + o.plain.slice(1)])];
+  const missing = want.filter(w => !map.text.includes(w));
+  check(missing.length === 0, `${label}: the opening map leaves out: ${missing.join(' | ')}`);
+  check(map.questions === 1 + shape.branchSteps.length, `${label}: the map draws ${map.questions} questions, not the gate and the ${shape.branchSteps.length} of its drawn branches`);
+  shape.names.filter(o => o.unit).forEach(o => check(map.text.includes(`${o.n}, taught in Unit ${o.unit}`), `${label}: the map does not say Unit ${o.unit} teaches ${o.n}`));
+  // while any branch is still being rewritten the map says so and names it; a subject with none says nothing of the kind
+  if (shape.pending.length) check(/The rest of the key is being rewritten and is not drawn yet/.test(map.text) && shape.pending.every(o => map.text.includes(o.n)), `${label}: the map does not say the rest is being rewritten (${shape.pending.map(o => o.n).join(', ')})`);
+  else check(!/being rewritten/.test(map.text), `${label}: a subject with every branch rebuilt says part of its key is being rewritten`);
+  const undrawn = shape.undrawnNames.filter(n => map.text.includes(n));
+  check(undrawn.length === 0, `${label}: the map draws a branch whose units are not rebuilt (${undrawn.join(', ')})`);
+  const codes = new RegExp(`\\b(${shape.codes.join('|')})\\b`);
+  check(!codes.test(map.text), `${label}: the map shows a question code`);
+  await layout(env, page, `${label} subject opening map`);
+  await shot(page, `subject-opening-map-${s.id}`);
+  return shape;
+}
 export async function testOpeningMap(env, width = 390) {
-  const { check } = env, { context, page } = await env.freshPage(width);
-  await env.openSubject(page, SUBJECT);
-  const map = await page.evaluate(() => {
-    const key = FC.get('psychology').key, el = document.querySelector('.keymap');
-    return { text: el.textContent.replace(/\s+/g, ' '), questions: [...el.querySelectorAll('.mapq')].length,
-      want: [key.gate.q, key.gate.options[0].n, ...key.branches.reasoning.flatMap(s => [s.q, ...s.options.map(o => o.n)]),
-             ...key.outcomes.flatMap(o => [o.n, o.plain.charAt(0).toUpperCase() + o.plain.slice(1)])],
-      rest: [key.gate.options[1].n, key.gate.options[2].n], aboutOthers: key.gate.options.slice(1).map(o => o.id) };
-  });
-  const missing = map.want.filter(w => !map.text.includes(w));
-  check(missing.length === 0, `the opening map leaves out: ${missing.join(' | ')}`);
-  check(map.questions === 2, `the map draws ${map.questions} questions, not the gate and the one rebuilt branch's question`);
-  check(/taught in Unit Two/.test(map.text), 'the map does not say which unit teaches each name');
-  check(/The rest of the key is being rewritten and is not drawn yet/.test(map.text) && map.rest.every(n => map.text.includes(n)), 'the map does not say the rest is being rewritten');
-  check(!/narcissism|gaslight|Love-bombing/i.test(map.text), 'the map draws a branch whose units are not rebuilt');
-  check(!/\b(D1|R1)\b/.test(map.text), 'the map shows a question code');
-  await layout(env, page, `${width}px subject opening map`);
-  await shot(page, 'subject-opening-map');
-  await context.close();
+  const { check } = env, probe = await env.freshPage(width), subjects = await withKey(probe.page);
+  await probe.context.close();
+  check(subjects.length > 0, 'no subject has a rebuilt unit, so no opening map was checked');
+  for (const s of subjects) {
+    const { context, page } = await env.freshPage(width);
+    await openingMapChecks(env, page, s, width, `${width}px ${s.id}`);
+    await context.close();
+  }
+  // a subject that mixes standards: it draws the branch whose units are rebuilt and says the other is being rewritten
+  const half = await env.freshPage(width);
+  await addHalfSubject(half.page);
+  const shape = await openingMapChecks(env, half.page, { id: 'half' }, width, `${width}px half`);
+  check(shape.drawn.length === 1 && shape.pending.length === 1, `the mixed-standards fixture should draw one branch and hold one back (drawn ${shape.drawn.length}, held back ${shape.pending.length})`);
+  await half.context.close();
   // a subject with every unit rebuilt says nothing about the rest being rewritten, and draws its branch-less answer
   const mini = await withMini(env, width);
   await env.openSubject(mini.page, 'mini');
@@ -281,36 +340,62 @@ export async function testOpeningMap(env, width = 390) {
 }
 
 /* ---------- the reference, generated (E14) ---------- */
-export async function testReference(env, width = 390) {
-  const { check } = env, { context, page } = await env.freshPage(width);
-  await env.openSubject(page, SUBJECT);
-  const before = await page.evaluate(() => JSON.stringify([localStorage.getItem('pl:psychology:items'), localStorage.getItem('pl:log'), dueReturns('psychology')]));
+// What the reference must hold for each name is read from the key, the registered cases and each rebuilt unit's ledger.
+const referenceFacts = (page, subjectId, nameIds) => page.evaluate(([id, nameIds]) => {
+  const data = FC.get(id), plain = html => { const d = document.createElement('div'); d.innerHTML = html; return d.textContent.replace(/\s+/g, ' ').trim(); };
+  const units = data.meta.units.filter(u => data.units[u]);
+  const named = units.flatMap(unitId => { const v = unitView(id, unitId); return (data.cases[unitId] || []).filter(c => c.name && !c.kind && c.use !== 'claim' && nameIds.includes(caseTarget(v, c))).map(c => c.name); });
+  const lines = units.flatMap(unitId => { const v = unitView(id, unitId), T = lessonText(v); return v.unit.ledger.filter(l => l.pair.some(p => nameIds.includes(p))).map(l => plain(T.t(paras(l.test).join(' ')))); });
+  return { named, lines };
+}, [subjectId, nameIds]);
+async function referenceChecks(env, page, s, label) {
+  const { check } = env, shape = await keyShape(page, s.id);
+  await env.openSubject(page, s.id);
+  const before = await page.evaluate(id => JSON.stringify([localStorage.getItem(`pl:${id}:items`), localStorage.getItem('pl:log'), dueReturns(id)]), s.id);
   await page.click('[data-ref="units"]');
-  await page.evaluate(() => document.querySelectorAll('#screen details').forEach(d => { d.open = true; }));
-  const text = await screenOf(page), meta = await page.evaluate(() => {
-    const key = FC.get('psychology').key, meta = FC.get('psychology').meta, cases = Object.values(FC.get('psychology').cases).flat();
-    return { names: key.outcomes.map(o => ({ n: o.n, plain: o.plain, needs: o.needs, aka: o.aka })), limits: meta.limits.map(l => l.h),
-      named: cases.filter(c => c.name && c.use === 'teach' && c.outcome).slice(0, 3).map(c => c.name),
-      tests: FC.get('psychology').units.u2.ledger.slice(0, 2).map(l => l.test), q: key.branches.reasoning[0].q, oldUnits: document.querySelectorAll('#screen details.fg:not([data-name])').length };
-  });
-  for (const o of meta.names) {
-    check(text.includes(o.n) && text.toLowerCase().includes(o.plain.toLowerCase()) && text.toLowerCase().includes(o.needs.toLowerCase()), `the reference leaves out ${o.n}, its plain words or what you must be able to point to`);
-    o.aka.forEach(a => check(text.includes(a), `the reference leaves out "${a}" as another name for ${o.n}`));
+  // every generated name is opened; the old units' own reference is old-format content and stays folded (its layout is the old renderer's, and goes with it)
+  await page.evaluate(() => document.querySelectorAll('#screen details.fg[data-name]').forEach(d => { d.open = true; }));
+  const text = await screenOf(page), oldDetails = await page.locator('#screen details.fg:not([data-name])').count();
+  const facts = await referenceFacts(page, s.id, shape.names.map(o => o.id));
+  for (const o of shape.names) {
+    check(text.includes(o.n) && text.toLowerCase().includes(o.plain.toLowerCase()) && text.toLowerCase().includes(o.needs.toLowerCase()), `${label}: the reference leaves out ${o.n}, its plain words or what you must be able to point to`);
+    o.aka.forEach(a => check(text.includes(a), `${label}: the reference leaves out "${a}" as another name for ${o.n}`));
   }
-  meta.named.forEach(n => check(text.includes(n), `the reference leaves out the named case "${n}"`));
-  meta.tests.forEach(t => check(text.includes(t), 'the reference leaves out a look-alike line (how to tell them apart)'));
-  check(text.includes(meta.q) && /Where this key stops/.test(text) && meta.limits.every(h => text.includes(h)), 'the reference leaves out the key map or where the key stops');
-  check(/Units not yet rewritten/.test(text) && meta.oldUnits === 5, `the five old units do not keep their old reference (${meta.oldUnits} found)`);
-  check(!/\b(D1|R1)\b/.test(text), 'the reference shows a question code');
-  await layout(env, page, `${width}px reference, every name open`);
-  await shot(page, 'reference');
+  facts.named.forEach(n => check(text.includes(n), `${label}: the reference leaves out the named case "${n}"`));
+  facts.lines.forEach(t => check(text.includes(t), `${label}: the reference leaves out a look-alike line (${t.slice(0, 50)})`));
+  const questions = [shape.gate.q, ...shape.branchSteps.map(st => st.q)];
+  check(shape.drawn.length === 0 || questions.every(q => text.includes(q)), `${label}: the reference leaves out a question of the key map`);
+  check(/Where this key stops/.test(text) && shape.limits.every(h => text.includes(h)), `${label}: the reference leaves out where the key stops`);
+  // the generated names are exactly the drawn ones: a name whose branch is not rebuilt is not listed (its old unit's own reference may still mention it)
+  const listed = await page.evaluate(() => [...document.querySelectorAll('#screen details.fg[data-name]')].map(d => d.dataset.name));
+  check(JSON.stringify([...listed].sort()) === JSON.stringify(shape.names.map(o => o.id).sort()), `${label}: the reference lists the names ${listed.join(', ')}, not the ${shape.names.length} of the rebuilt branches (${shape.names.map(o => o.id).join(', ')})`);
+  // the units still in their old shape keep their old reference; a subject with none has no such section
+  check(/Units not yet rewritten/.test(text) === (shape.oldUnits > 0) && oldDetails === shape.oldUnits, `${label}: ${oldDetails} old-unit references for ${shape.oldUnits} old units${/Units not yet rewritten/.test(text) ? '' : ' (no "Units not yet rewritten" section)'}`);
+  check(!new RegExp(`\\b(${shape.codes.join('|')})\\b`).test(text), `${label}: the reference shows a question code`);
+  await layout(env, page, `${label} reference, every name open`);
+  await shot(page, `reference-${s.id}`);
   await page.click('#screen [data-v="subject"]');
   await page.click('[data-ref="caveats"]');
-  check(/Where this key stops/.test(await screenOf(page)), 'the "Where this key stops" page is empty');
-  await layout(env, page, `${width}px where this key stops`);
-  const after = await page.evaluate(() => JSON.stringify([localStorage.getItem('pl:psychology:items'), localStorage.getItem('pl:log'), dueReturns('psychology')]));
-  check(before === after, 'visiting the reference changed the practice record, the log or what is due: a lookup must not count as review');
-  await context.close();
+  check(/Where this key stops/.test(await screenOf(page)), `${label}: the "Where this key stops" page is empty`);
+  await layout(env, page, `${label} where this key stops`);
+  const after = await page.evaluate(id => JSON.stringify([localStorage.getItem(`pl:${id}:items`), localStorage.getItem('pl:log'), dueReturns(id)]), s.id);
+  check(before === after, `${label}: visiting the reference changed the practice record, the log or what is due: a lookup must not count as review`);
+  return shape;
+}
+export async function testReference(env, width = 390) {
+  const { check } = env, probe = await env.freshPage(width), subjects = await withKey(probe.page);
+  await probe.context.close();
+  for (const s of subjects) {
+    const { context, page } = await env.freshPage(width);
+    await referenceChecks(env, page, s, `${width}px ${s.id}`);
+    await context.close();
+  }
+  // a subject that mixes standards: only the rebuilt branch is listed, and the two old units keep their old reference
+  const half = await env.freshPage(width);
+  await addHalfSubject(half.page);
+  const shape = await referenceChecks(env, half.page, { id: 'half' }, `${width}px half`);
+  check(shape.oldUnits === 2 && shape.names.length === 2, `the mixed-standards fixture should list 2 names and 2 old units (${shape.names.length} names, ${shape.oldUnits} old units)`);
+  await half.context.close();
   const mini = await withMini(env, width);
   await env.openSubject(mini.page, 'mini');
   await mini.page.click('[data-ref="units"]');
@@ -384,12 +469,79 @@ export async function testDetermination(env, width = 390) {
   await page.click('#screen [data-v="det"]');
   await page.click('#startDet');
   check((await queueOf(page)).join() === 'sp-a,sp-b,sp-c,sp-d', `with both units done the cases run ${(await queueOf(page)).join()}, not clean, varied, misleading`);
-  // an old-format subject keeps the old determination screen
-  await page.click('[data-v="subject"]');
-  await env.openSubject(page, SUBJECT);
-  await page.click('#screen [data-v="det"]');
-  check(/Readout/.test(await screenOf(page)) && await page.locator('[data-step="D1"]').count() === 1, 'the subject with old units no longer uses the old determination screen');
+  // a subject that still has old units keeps the old determination screen (there may be none left: every subject rebuilt)
+  const old = (await subjectMeta(page)).find(x => !x.fullyRebuilt);
+  if (old) {
+    await page.click('[data-v="subject"]');
+    await env.openSubject(page, old.id);
+    await page.click('#screen [data-v="det"]');
+    const code = await page.evaluate(id => SUBJECTS.find(s => s.id === id).determination.steps[0].code, old.id);
+    check(/Readout/.test(await screenOf(page)) && await page.locator(`[data-step="${code}"]`).count() === 1, `${old.id}: a subject with old units no longer uses the old determination screen`);
+  }
   await context.close();
+}
+
+/* ---------- the full determination of every subject whose units are all rebuilt, over its own specimens (E13) ---------- */
+// Nothing is typed about a subject: the specimens, their routes and names, their order and their count come from the registry.
+const specimensOf = (page, id) => page.evaluate(id => {
+  const sv = subjectView(id), order = ['clean', 'varied', 'misleading'];
+  const all = sv.data.specimens.map((sp, k) => ({ sp, k })).sort((a, b) => order.indexOf(a.sp.tier) - order.indexOf(b.sp.tier) || a.k - b.k).map(x => x.sp);
+  return { ids: all.map(sp => sp.id), units: sv.unitIds().map(u => ({ id: u, rev: unitView(id, u).unit.rev })), outcomes: sv.key.outcomes.length,
+    plans: all.map(sp => ({ id: sp.id, outcome: sp.outcome, steps: sv.routeSteps(sp).map(code => ({ code, right: sp.route[code][0], wrong: sv.step(code).options.map(o => o.id).find(o => !sp.route[code].includes(o)) || null })) })) };
+}, id);
+export async function testRealDetermination(env, width = 390) {
+  const { check } = env, probe = await env.freshPage(width), subjects = (await subjectMeta(probe.page)).filter(x => x.fullyRebuilt);
+  await probe.context.close();
+  for (const s of subjects) {
+    const { context, page } = await env.freshPage(width), label = `${width}px ${s.id}`, data = await specimensOf(page, s.id);
+    check(data.ids.length > 0, `${label}: a fully rebuilt subject has no specimens to run`);
+    if (!data.ids.length) { await context.close(); continue; }
+    // nothing finished: no case is open, the overview counts every case as opening later, and "try anyway" offers every name in the key
+    const later = await page.evaluate(n => DET_SAY.later(n), data.ids.length);
+    await env.openSubject(page, s.id);
+    await page.click('#screen [data-v="det"]');
+    let text = await screenOf(page);
+    check(/No case is open to you yet/.test(text) && text.includes(later) && await page.locator('#startDet').count() === 0, `${label}: with no unit done, the overview reads "${text.slice(0, 220)}"`);
+    await page.click('#anyway');
+    await page.click('#goOn');
+    const anyway = await page.evaluate(() => ({ mode: DET.mode, names: DET.cur.item.names.length, queue: DET.queue.map(sp => sp.id) }));
+    check(anyway.mode === 'anyway' && anyway.names === data.outcomes && anyway.queue.join() === data.ids.join(), `${label}: "try anyway" offers ${anyway.names} names of ${data.outcomes} over ${anyway.queue.length} of ${data.ids.length} cases, in clean, varied, misleading order`);
+    await context.close();
+
+    // every unit done: every case is open, clean then varied then misleading, each run along its own route
+    const run = await env.freshPage(width);
+    await run.page.evaluate(units => localStorage.setItem(`pl:${units.id}:seen`, JSON.stringify(Object.fromEntries(units.list.map(u => [u.id, { rev: u.rev, done: true, at: 'close' }])))), { id: s.id, list: data.units });
+    await run.page.reload();
+    await env.openSubject(run.page, s.id);
+    await run.page.click('#screen [data-v="det"]');
+    const open = await run.page.evaluate(n => DET_SAY.open(n), data.ids.length);
+    text = await screenOf(run.page);
+    check(text.includes(open) && !/more open/.test(text), `${label}: with every unit done the overview reads "${text.slice(0, 220)}", not "${open}"`);
+    await layout(env, run.page, `${label} determination overview`);
+    await run.page.click('#startDet');
+    check((await queueOf(run.page)).join() === data.ids.join(), `${label}: the cases run ${(await queueOf(run.page)).join()}, not clean, varied, misleading`);
+    check(/A worked determination first/.test(await screenOf(run.page)), `${label}: no worked determination before the first case`);
+    await run.page.click('#goOn');
+    for (const [k, sp] of data.plans.entries()) {
+      const wrong = k === 1 && sp.steps.some(st => st.wrong);
+      if (k === 0) await layout(env, run.page, `${label} determination, first case`);
+      if (k === 0) check(/Question 1 of /.test(await screenOf(run.page)) && await run.page.locator('.feedback').count() === 0, `${label}: the first case does not open on its first question, or shows feedback before an answer`);
+      for (const [n, st] of sp.steps.entries()) await run.page.click(`[data-step="${st.code}"] .opt[data-o="${wrong && n === sp.steps.length - 1 ? st.wrong : st.right}"]`);
+      await run.page.click(`#nameOpts .opt[data-n="${sp.outcome}"]`);
+      const verdict = await screenOf(run.page);
+      if (wrong) check(/Right:/.test(verdict) && /Route missed/.test(verdict) && /Right name, wrong route/.test(verdict), `${label}/${sp.id}: a right name by a wrong route is not marked "Right name, wrong route"`);
+      else check(/Right:/.test(verdict) && /Route right/.test(verdict) && !/Right name, wrong route/.test(verdict), `${label}/${sp.id}: a right determination is not marked right on both`);
+      if (k === 0) await layout(env, run.page, `${label} determination verdict`);
+      await run.page.click('#next');
+    }
+    const done = await screenOf(run.page), misses = data.plans.length > 1 && data.plans[1].steps.some(st => st.wrong) ? 1 : 0;
+    check(/That set is done/.test(done) && new RegExp(`Names right ?${data.ids.length} of ${data.ids.length}`).test(done) && new RegExp(`Routes right ?${data.ids.length - misses} of ${data.ids.length}`).test(done),
+      `${label}: the results read "${done.slice(0, 200)}", not every name right and ${misses} route missed`);
+    const tries = await getStore(run.page, `pl:${s.id}:items`);
+    check(data.ids.every(id => tries[`spec/${id}`] && tries[`spec/${id}`].tries.length === 1 && tries[`spec/${id}`].tries[0].mode === 'spec'), `${label}: a specimen was not recorded once, as a "spec" try`);
+    check(data.ids.length === 1 || tries[`spec/${data.ids[1]}`].tries[0].ok === (misses === 0), `${label}: the wrong route was recorded as a right one`);
+    await run.context.close();
+  }
 }
 export async function testTryAnyway(env) {
   const { check } = env, { context, page } = await withMini(env, 390);
@@ -406,16 +558,16 @@ export async function testTryAnyway(env) {
 
 /* ---------- Mixed (E14) ---------- */
 export async function testMixed(env, width = 390) {
-  const { check } = env, { context, page } = await psychologyDue(env, width);
-  const round = await page.evaluate(() => {
-    const M = buildMixed(12), news = M.items.filter(e => e.built);
-    return { n: M.items.length, dueFirst: M.items.slice(0, 5).every(e => e.due && e.built.item.mode === 'name'),
-      unitsOk: news.every(e => e.built.v.unitId === 'u2'), flags: M.items.slice(0, 5).map(e => !!e.due),
-      names: M.items[0].built.item.names, taught: unitView('psychology', 'u2').taught };
-  });
-  check(round.dueFirst, `Mixed does not start with the five due names (${round.flags})`);
+  const { check } = env, t = await target(env), { context, page } = await dueWith(env, t, width);
+  const round = await page.evaluate(([S, U]) => {
+    const taught = unitView(S, U).taught, M = buildMixed(12), news = M.items.filter(e => e.built);
+    return { n: M.items.length, dueFirst: M.items.slice(0, taught.length).every(e => e.due && e.built.item.mode === 'name'),
+      unitsOk: news.every(e => e.built.v.unitId === U), flags: M.items.slice(0, taught.length).map(e => !!e.due),
+      names: M.items[0].built.item.names, taught };
+  }, [t.subject, t.unit]);
+  check(round.dueFirst, `Mixed does not start with the ${round.taught.length} due names (${round.flags})`);
   check(round.unitsOk, 'Mixed draws from a unit other than a finished one');
-  check(round.names.length === 5 && round.names.every(n => round.taught.includes(n)), 'a Mixed name item does not offer its own subject\'s generated names');
+  check(round.names.length === round.taught.length && round.names.every(n => round.taught.includes(n)), 'a Mixed name item does not offer its own subject\'s generated names');
   await env.clickVisible(page, '[data-v="mixed"]');
   const text = await screenOf(page);
   check(/spaces what you have learned/.test(text) && /not training in telling look-alikes apart/.test(text), 'Mixed is not described as spacing and retrieval practice');
@@ -424,12 +576,12 @@ export async function testMixed(env, width = 390) {
   await shot(page, 'mixed-item');
   const plan = await page.evaluate(() => {
     const e = APP.mixed.items[APP.mixed.i], i = e.built.item, c = i.c;
-    return { clicks: [`#nameOpts .opt[data-n="${caseTarget(e.built.v, c)}"]`], mode: i.mode, id: c.id };
+    return { clicks: [`#nameOpts .opt[data-n="${caseTarget(e.built.v, c)}"]`], mode: i.mode, id: c.id, unit: e.built.v.unitId };
   });
   await page.click(plan.clicks[0]);
   check(await page.locator('#next').count() === 1 && await page.locator('.feedback').count() === 1, 'a Mixed name item shows no feedback after its answer');
   await shot(page, 'mixed-feedback');
-  const tries = (await getStore(page, 'pl:psychology:items'))[`u2/${plan.id}`].tries;
+  const tries = (await getStore(page, `pl:${t.subject}:items`))[`${plan.unit}/${plan.id}`].tries;
   check(tries[tries.length - 1].context === 'mixed' && tries[tries.length - 1].mode === 'name', `the Mixed try was recorded as ${JSON.stringify(tries[tries.length - 1])}`);
   check(await page.evaluate(() => localStorage.getItem('pl:mixed')) === null, 'a Mixed item from a rebuilt unit wrote the frozen pl:mixed counter');
   await context.close();
@@ -442,16 +594,16 @@ export async function testMixed(env, width = 390) {
 
 /* ---------- Progress and the log export (E19) ---------- */
 export async function testProgress(env, width = 390) {
-  const { check } = env, { context, page } = await env.freshPage(width);
+  const { check } = env, t = await target(env), S = t.subject, U = t.unit, { context, page } = await env.freshPage(width);
   await env.clickVisible(page, '[data-v="progress"]');
   check(await page.locator('#exportLog').isDisabled(), 'the export control is live with nothing logged');
-  const log = [{ d: '2026-10-01', type: 'start', subject: 'psychology', unit: 'u2', rev: 1 }, { d: '2026-10-01', type: 'part', subject: 'psychology', unit: 'u2', rev: 1, card: '1' },
-    { d: '2026-10-01', type: 'set', subject: 'psychology', unit: 'u2', rev: 1 }, { d: '2026-10-03', type: 'return', subject: 'psychology' }, { d: '2026-10-03', type: 'return', subject: 'psychology' },
-    { d: '2026-10-04', type: 'return', subject: 'psychology' }];
-  const t = (mode, ok, context = 'unit') => ({ d: '2026-10-01', rev: 1, engine: 1, mode, context, steps: {}, name: null, ok });
-  const items = { 'u2/a': { tries: [t('route', true), t('route', true)] }, 'u2/b': { tries: [t('route', false)] }, 'u2/c': { tries: [t('piece', true)] },
-    'u2/d': { tries: [t('check', false)] }, 'u2/commit:x': { tries: [t('commit', false)] }, 'u2/e': { tries: [t('route', false, 'baseline')] } };
-  await setStore(page, 'pl:log', log); await setStore(page, 'pl:psychology:items', items);
+  const log = [{ d: '2026-10-01', type: 'start', subject: S, unit: U, rev: t.rev }, { d: '2026-10-01', type: 'part', subject: S, unit: U, rev: t.rev, card: '1' },
+    { d: '2026-10-01', type: 'set', subject: S, unit: U, rev: t.rev }, { d: '2026-10-03', type: 'return', subject: S }, { d: '2026-10-03', type: 'return', subject: S },
+    { d: '2026-10-04', type: 'return', subject: S }];
+  const tr = (mode, ok, context = 'unit') => ({ d: '2026-10-01', rev: t.rev, engine: 1, mode, context, steps: {}, name: null, ok });
+  const items = { [`${U}/a`]: { tries: [tr('route', true), tr('route', true)] }, [`${U}/b`]: { tries: [tr('route', false)] }, [`${U}/c`]: { tries: [tr('piece', true)] },
+    [`${U}/d`]: { tries: [tr('check', false)] }, [`${U}/commit:x`]: { tries: [tr('commit', false)] }, [`${U}/e`]: { tries: [tr('route', false, 'baseline')] } };
+  await setStore(page, 'pl:log', log); await setStore(page, `pl:${S}:items`, items);
   await page.reload();
   await env.clickVisible(page, '[data-v="progress"]');
   const block = norm(await page.locator('[data-practice-record]').textContent());
@@ -462,27 +614,45 @@ export async function testProgress(env, width = 390) {
   const [download] = await Promise.all([page.waitForEvent('download'), page.click('#exportLog')]);
   const file = JSON.parse(await readFile(await download.path(), 'utf8'));
   check(/^fieldcraft-log-\d{4}-\d\d-\d\d\.json$/.test(download.suggestedFilename()), `the file is called ${download.suggestedFilename()}`);
-  check(JSON.stringify(file.log) === JSON.stringify(log) && file.standard === 1, 'the exported file does not hold the log as it is on the device');
-  check(JSON.stringify(file.subjects.psychology.items) === JSON.stringify(items) && Object.keys(file.subjects).length === await page.evaluate(() => SUBJECTS.length)
-    && file.subjects.psychology.seen !== undefined && file.subjects.psychology.notes !== undefined, 'the exported file does not hold every subject\'s items, seen and notes');
+  check(JSON.stringify(file.log) === JSON.stringify(log) && file.standard === await page.evaluate(() => FC.STANDARD), 'the exported file does not hold the log as it is on the device');
+  check(JSON.stringify(file.subjects[S].items) === JSON.stringify(items) && Object.keys(file.subjects).length === await page.evaluate(() => SUBJECTS.length)
+    && file.subjects[S].seen !== undefined && file.subjects[S].notes !== undefined, 'the exported file does not hold every subject\'s items, seen and notes');
   await context.close();
 }
 
 /* ---------- Progress: the old lessons' counters apart, new-format progress from the record (E8, E19) ---------- */
+// Which subjects count under "Old lessons" and what each subject's own progress line says are worked out from which units are
+// rebuilt: a subject with an old unit shows its old counters (labelled "old lessons" beside new practice if it has both); a subject
+// whose every unit is rebuilt shows none, and no old counter of it is added to anything.
 export async function testProgressOldLessons(env, width = 390) {
   const { check } = env, { context, page } = await env.freshPage(width);
-  await setStore(page, 'pl:psychology:stats:det', { n: 2, label: 1, frame: 1 });
+  await addHalfSubject(page);   // a subject that has both old and rebuilt units, so every kind of progress line is met whatever the real subjects hold
+  const metas = await subjectMeta(page), old = metas.filter(s => !s.fullyRebuilt), rebuilt = metas.filter(s => s.fullyRebuilt);
+  const t = await target(env), practised = t.subject;
+  // an old counter of a subject that has old units (counted), and of a subject that has none (frozen, never counted)
+  if (old.length) await setStore(page, `pl:${old[0].id}:stats:det`, { n: 2, label: 1, frame: 1 });
+  for (const s of rebuilt) await setStore(page, `pl:${s.id}:stats:det`, { n: 5, label: 5, frame: 5 });
   await setStore(page, 'pl:mini:stats:det', { n: 7, label: 7, frame: 7 });
   await setStore(page, 'pl:mini:items', { 'u1/x': { tries: [{ d: '2026-10-01', rev: 1, engine: 2, mode: 'route', context: 'unit', steps: {}, name: null, ok: true }] } });
+  await setStore(page, `pl:${practised}:items`, { [`${t.unit}/x`]: { tries: [{ d: '2026-10-01', rev: t.rev, engine: 2, mode: 'route', context: 'unit', steps: {}, name: null, ok: true }] } });
   await page.reload();
+  await addHalfSubject(page);
   await page.evaluate(registerMiniSubject);
   await page.evaluate(showMiniSubject);
   await env.clickVisible(page, '[data-v="progress"]');
-  const old = norm(await page.locator('[data-old-lessons]').textContent());
-  check(/ 2Recorded/.test(old) && /1Name right/.test(old), `the old lessons' card reads "${old.slice(0, 200)}": it must count the subjects that still have old units, and none that are rebuilt`);
-  check(!/9Recorded/.test(old), 'the old card counted a fully rebuilt subject\'s frozen determination counter');
+  check(metas.some(s => s.unitList.some(u => !u.rebuilt) && s.unitList.some(u => u.rebuilt)), 'the checks met no subject that mixes old and rebuilt units');
+  if (old.length) {
+    const card = norm(await page.locator('[data-old-lessons]').textContent());
+    check(/ 2Recorded/.test(card) && /1Name right/.test(card), `the old lessons' card reads "${card.slice(0, 200)}": it must count the subjects that still have old units (2 recorded, 1 name right), and none that are rebuilt`);
+    check(!/\b[579]Recorded/.test(card), 'the old card counted a fully rebuilt subject\'s frozen determination counter');
+  } else check(await page.locator('[data-old-lessons]').count() === 0, 'an old lessons card is shown while no subject has an old unit');
   const rows = await page.evaluate(() => Object.fromEntries([...document.querySelectorAll('.rows [data-s]')].map(r => [r.dataset.s, r.textContent.replace(/\s+/g, ' ')])));
-  check(/old lessons: drills/.test(rows.psychology) && !/practice/.test(rows.psychology) && /units · drills/.test(rows.math), `Psychology's progress line reads "${rows.psychology}", Math's "${rows.math}"`);
+  for (const s of metas) {
+    const hasOld = s.unitList.some(u => !u.rebuilt), hasNew = s.unitList.some(u => u.rebuilt), row = rows[s.id], practice = s.id === practised;
+    check(/old lessons: drills/.test(row) === (hasOld && hasNew), `${s.id}: the progress line reads "${row}", which ${hasOld && hasNew ? 'must' : 'must not'} label its old counters "old lessons"`);
+    check(/ drills /.test(row) === hasOld && !/\bdet \d/.test(row) === !hasOld, `${s.id}: the progress line reads "${row}", which ${hasOld ? 'must' : 'must not'} show old drill and determination counters`);
+    check(/practice 1 of 1/.test(row) === (hasNew && practice), `${s.id}: the progress line reads "${row}", which ${hasNew && practice ? 'must' : 'must not'} show the practice record`);
+  }
   check(/practice 1 of 1/.test(rows.mini) && !/old lessons/.test(rows.mini) && !/det /.test(rows.mini), `a fully rebuilt subject's progress line reads "${rows.mini}"`);
   const heads = await page.evaluate(() => [...document.querySelectorAll('#screen .m')].map(e => e.textContent));
   check(!heads.includes('Determinations') || (await page.locator('[data-old-lessons] .m.a').first().textContent()) === 'Determinations', 'a Determinations card is shown outside the old lessons card');
@@ -493,9 +663,12 @@ export async function testProgressOldLessons(env, width = 390) {
 
 /* ---------- Mixed: "Lifetime" from the practice record, the old counter apart (E8) ---------- */
 export async function testMixedLifetime(env, width = 390) {
-  const { check } = env, { context, page } = await env.freshPage(width);
-  const t = (ok, context) => ({ d: '2026-10-01', rev: 1, engine: 2, mode: 'piece', context, steps: {}, name: null, ok });
-  await setStore(page, 'pl:psychology:items', { 'u2/a': { tries: [t(true, 'mixed'), t(false, 'mixed')] }, 'u2/b': { tries: [t(true, 'mixed'), t(true, 'unit')] } });
+  // Mixed asks only from finished units and from old drills, and a subject whose every unit is rebuilt has no old drills: so the unit is
+  // finished first, or Mixed has no item and shows no figures under one (lesson standard E14).
+  const { check } = env, t = await target(env), { context, page } = await dueWith(env, t, width);
+  const tr = (ok, context) => ({ d: '2026-10-01', rev: t.rev, engine: 2, mode: 'piece', context, steps: {}, name: null, ok });
+  const extra = { [`${t.unit}/a`]: { tries: [tr(true, 'mixed'), tr(false, 'mixed')] }, [`${t.unit}/b`]: { tries: [tr(true, 'mixed'), tr(true, 'unit')] } };
+  await setStore(page, `pl:${t.subject}:items`, { ...await getStore(page, `pl:${t.subject}:items`), ...extra });
   await setStore(page, 'pl:mixed', { n: 4, ok: 3 });
   await page.reload();
   await env.clickVisible(page, '[data-v="mixed"]');
@@ -508,31 +681,34 @@ export async function testMixedLifetime(env, width = 390) {
 
 /* ---------- Search (E14) ---------- */
 export async function testSearch(env, width = 390) {
-  const { check } = env, { context, page } = await env.freshPage(width);
-  const data = await page.evaluate(() => {
-    const v = unitView('psychology', 'u2'), T = lessonText(v), key = FC.get('psychology').key;
-    const teach = v.casesOf('u2').find(c => c.use === 'teach' && c.text.length > 60), ret = FC.get('psychology').cases.u2.find(c => c.use === 'return');
-    const card = v.card('look-dissonance-sunkcost'), el = document.createElement('div'); el.innerHTML = cardHeading(v, T, card);
-    return { question: key.branches.reasoning[0].q, name: key.outcomes[0].n, heading: el.textContent, teachText: teach.text.slice(10, 50), returnText: ret.text.slice(10, 50) };
-  });
+  const { check } = env, t = await target(env), { context, page } = await env.freshPage(width);
+  const data = await page.evaluate(([S, U]) => {
+    const v = unitView(S, U), T = lessonText(v), key = FC.get(S).key, plainOf = html => { const d = document.createElement('div'); d.innerHTML = html; return d.textContent.replace(/\s+/g, ' ').trim(); };
+    const teach = v.casesOf(U).find(c => c.use === 'teach' && !c.kind && c.text.length > 60), ret = FC.get(S).cases[U].find(c => c.use === 'return' && !c.kind);
+    // a card whose heading is its own: no other card of the subject has the same one, and it fits a result line
+    const headings = FC.get(S).meta.units.filter(u => FC.get(S).units[u]).flatMap(u => { const w = unitView(S, u), W = lessonText(w); return w.cardOrder.map(w.card).filter(c => !c.continues).map(c => ({ unit: u, id: c.id, text: plainOf(cardHeading(w, W, c)) })); });
+    const card = headings.find(h => h.unit === U && h.text.length < 80 && headings.filter(x => x.text === h.text).length === 1);
+    return { question: key.gate.q, name: v.nameOf(v.taught[0]), teachText: teach.text.slice(10, 50), returnText: ret.text.slice(10, 50), card };
+  }, [t.subject, t.unit]);
   const search = async q => { if (!await page.locator('#q').count()) await env.clickVisible(page, '[data-v="search"]'); await page.fill('#q', q); return norm(await page.locator('#results').textContent()); };
   let r = await search(data.question.slice(0, 20));
   check(/Questions/.test(r) && r.includes(data.question), 'a key question is not found');
-  r = await search(data.name.slice(0, 12));
+  r = await search(data.name);
   check(/Names/.test(r) && r.includes(data.name), 'a name is not found');
   const groups = await page.evaluate(() => Object.fromEntries([...document.querySelectorAll('.resgroup')].map(g => [g.querySelector('.m').textContent, [...g.querySelectorAll('.res .t')].map(t => t.textContent)])));
-  check((groups.Names || []).filter(t => t === data.name).length === 1 && !(groups.Tools || []).includes(data.name), `the name "${data.name}" is listed ${JSON.stringify(groups.Names)} under Names and ${JSON.stringify(groups.Tools)} under Tools`);
+  check((groups.Names || []).filter(x => x === data.name).length === 1 && !(groups.Tools || []).includes(data.name), `the name "${data.name}" is listed ${JSON.stringify(groups.Names)} under Names and ${JSON.stringify(groups.Tools)} under Tools`);
   r = await search(data.teachText);
   check(/Cases/.test(r), 'the text of a case on a card is not found');
   r = await search(data.returnText);
   check(/Nothing matches/.test(r), 'the text of a return case, which the learner has not met, can be found');
-  r = await search(data.heading);
-  check(/Cards/.test(r) && r.includes(data.heading), `a card heading ("${data.heading}") is not found`);
+  check(!!data.card, 'no card of the unit has a heading of its own to search for');
+  r = await search(data.card.text);
+  check(/Cards/.test(r) && r.includes(data.card.text), `a card heading ("${data.card.text}") is not found`);
   await layout(env, page, `${width}px search results`);
   await shot(page, 'search');
   await page.click('.res >> nth=0');
   const at = await page.evaluate(() => (APP.view === 'unit' && UNIT_RUN) ? UNIT_RUN.flow[UNIT_RUN.i].id : APP.view);
-  check(at === 'look-dissonance-sunkcost', `a card result opened "${at}", not that card`);
+  check(at === data.card.id, `a card result opened "${at}", not the card ${data.card.id}`);
   await context.close();
   const mini = await withMini(env, width);
   await mini.page.evaluate(() => { INDEX = null; });
@@ -580,9 +756,9 @@ export async function testReviewFirst(env, width = 390) {
 /* ---------- Faulty claims of the finished units, with the commit before the fault (E14) ---------- */
 const faultShown = page => page.evaluate(() => !!document.querySelector('#host .feedback') || /The claim, put right/.test(document.getElementById('host').textContent));
 export async function testClaimsTile(env, width = 390) {
-  const { check } = env, { context, page } = await psychologyDue(env, width);
-  await env.openSubject(page, SUBJECT);
-  const claims = await page.evaluate(() => ({ items: claimItems(SUBJECTS.find(s => s.id === 'psychology')).map(i => i.caseId), demo: unitView('psychology', 'u2').unit.drill.rungs.find(r => r.ask === 'claim').demo }));
+  const { check } = env, t = await target(env, u => u.hasClaims), { context, page } = await dueWith(env, t, width);
+  await env.openSubject(page, t.subject);
+  const claims = await page.evaluate(([S, U]) => ({ items: claimItems(SUBJECTS.find(s => s.id === S)).map(i => i.caseId), demo: unitView(S, U).unit.drill.rungs.find(r => r.ask === 'claim').demo }), [t.subject, t.unit]);
   check(await page.locator('[data-claims]').count() === 1 && claims.items.length > 0 && !claims.items.includes(claims.demo), `the claims tile is missing, or lists the claim worked for the learner (${claims.items})`);
   await layout(env, page, `${width}px subject with the claims tile`);
   await shot(page, 'claims-tile');
@@ -600,7 +776,7 @@ export async function testClaimsTile(env, width = 390) {
   check(!(await faultShown(page)), 'the claim still shows its fault after the control was removed');
   const answered = await playRun(page, 'again');
   check(answered === claims.items.length && /Faulty claims/.test(await screenOf(page)), `${answered} of ${claims.items.length} claims were answered, and the results read "${(await screenOf(page)).slice(0, 120)}"`);
-  const tries = Object.entries(await getStore(page, 'pl:psychology:items')).filter(([k]) => k.startsWith('u2/claim')).flatMap(([, e]) => e.tries);
+  const tries = Object.entries(await getStore(page, `pl:${t.subject}:items`)).filter(([k]) => k.startsWith(`${t.unit}/`) && claims.items.some(id => k === `${t.unit}/${id}`)).flatMap(([, e]) => e.tries);
   check(tries.length >= claims.items.length && tries.every(x => x.mode === 'claim' && x.context === 'again'), `the claim tries were recorded as ${JSON.stringify(tries.slice(0, 2))}`);
   await layout(env, page, `${width}px faulty claims results`);
   await page.click('[data-v="subject"]:visible');
@@ -608,16 +784,18 @@ export async function testClaimsTile(env, width = 390) {
   await context.close();
   // a unit that is not finished has no claims to run
   const fresh = await env.freshPage(width);
-  await env.openSubject(fresh.page, SUBJECT);
+  await env.openSubject(fresh.page, t.subject);
   check(await fresh.page.locator('[data-claims]').count() === 0, 'the claims tile is shown with no finished unit');
   await fresh.context.close();
 }
 
 /* ---------- Back inside a drill, and the card list beside a unit (E11) ---------- */
 export async function testDrillBack(env, width = 390) {
-  const { check } = env, { context, page } = await env.freshPage(width);
-  await env.openSubject(page, SUBJECT);
-  await env.clickVisible(page, '#screen [data-u="1"]');
+  const { check } = env, t = await target(env), { context, page } = await env.freshPage(width);
+  await env.openSubject(page, t.subject);
+  await env.clickVisible(page, `#screen [data-u="${t.index}"]`);
+  // the unit's last card before its drill, from the unit's own parts
+  const lastCard = await page.evaluate(([S, U]) => FC.get(S).units[U].parts.find(p => p.drill).cards.slice(-1)[0], [t.subject, t.unit]);
   await page.evaluate(() => { UNIT_RUN.i = UNIT_RUN.flow.findIndex(s => s.type === 'drill'); paintUnit(); });
   check(await page.locator('[data-drill-back]').count() === 1, 'the drill has no Back control');
   await layout(env, page, `${width}px drill with Back`);
@@ -628,23 +806,23 @@ export async function testDrillBack(env, width = 390) {
   const place = await page.evaluate(() => ({ si: UNIT_RUN.drillRun.si, qi: UNIT_RUN.drillRun.qi }));
   await page.click('[data-drill-back]');
   const card = await page.evaluate(() => UNIT_RUN.flow[UNIT_RUN.i]);
-  check(card.type === 'card' && card.id === 'worked-tasting', `Back from the drill went to ${JSON.stringify(card)}, not the last card`);
+  check(card.type === 'card' && card.id === lastCard, `Back from the drill went to ${JSON.stringify(card)}, not the last card (${lastCard})`);
   await page.evaluate(() => { UNIT_RUN.i = UNIT_RUN.flow.findIndex(s => s.type === 'drill'); paintUnit(); });
   const back = await page.evaluate(() => ({ si: UNIT_RUN.drillRun.si, qi: UNIT_RUN.drillRun.qi, started: UNIT_RUN.drillRun.started }));
   check(back.si === place.si && back.qi === place.qi && back.started, `the drill did not keep its place (${JSON.stringify(place)} then ${JSON.stringify(back)})`);
   await context.close();
   // a returned set goes back to the subject
-  const due = await psychologyDue(env, width);
-  await env.openSubject(due.page, SUBJECT);
-  await due.page.click('[data-due="psychology"]');
+  const due = await dueWith(env, t, width);
+  await env.openSubject(due.page, t.subject);
+  await due.page.click(`[data-due="${t.subject}"]`);
   await due.page.click('[data-drill-back]');
   check(await due.page.evaluate(() => APP.view === 'subject'), 'Back from a returned set did not return to the subject');
   await due.context.close();
 }
 export async function testWideCardList(env) {
-  const { check } = env, { context, page } = await env.freshPage(1400);
-  await env.openSubject(page, SUBJECT);
-  await env.clickVisible(page, '#screen [data-u="1"]');
+  const { check } = env, t = await target(env), { context, page } = await env.freshPage(1400);
+  await env.openSubject(page, t.subject);
+  await env.clickVisible(page, `#screen [data-u="${t.index}"]`);
   const info = () => page.evaluate(() => {
     const aside = document.querySelector('.aside'), rows = [...document.querySelectorAll('.aside .acard')], r = aside.getBoundingClientRect(), pane = document.querySelector('.withaside > .pane').getBoundingClientRect();
     return { shown: getComputedStyle(aside).display !== 'none', width: Math.round(r.width), pane: Math.round(pane.width), rows: rows.length, open: rows.filter(x => !x.disabled).length,
@@ -655,22 +833,30 @@ export async function testWideCardList(env) {
   check(i.shown && i.width === 280, `at 1400px the card list is ${i.shown ? i.width + 'px wide' : 'hidden'}`);
   check(i.rows === i.expected && i.on === 1, `the card list has ${i.rows} rows (expected ${i.expected}) with ${i.on} marked`);
   check(i.open === 2 && i.locked.every(x => /Not reached yet/.test(x)), `only the cards reached are open (${i.open} open) and the rest say so`);
-  const names = await page.evaluate(() => document.querySelector('.aside').textContent);
-  check(!/Cognitive dissonance reduction|Sunk cost/.test(names), 'the card list shows a name before it is taught');
+  const names = await page.evaluate(([S, U]) => { const v = unitView(S, U); return { aside: document.querySelector('.aside').textContent, taught: v.taught.map(v.nameOf) }; }, [t.subject, t.unit]);
+  const early = names.taught.filter(n => names.aside.includes(n));
+  check(early.length === 0, `the card list shows a name before it is taught (${early.join(', ')})`);
   await layout(env, page, '1400px unit with the card list');
   await shot(page, 'wide-card-list');
-  for (let k = 0; k < 3; k++) await page.click('#fwd');
+  // three screens on: each card that is not a continuation opens one more row
+  const moved = [];
+  for (let k = 0; k < 3; k++) {
+    moved.push(await page.evaluate(() => { const r = UNIT_RUN, s = r.flow[r.i + 1]; return s.type === 'card' && !r.v.card(s.id).continues ? 1 : 0; }));
+    await moveOn(page);   // a card that asks stops Next until it is answered (E3), so what stops the way is answered
+  }
   i = await info();
-  check(i.open === 5, `after three cards, ${i.open} rows are open, not 5`);
+  const opened = moved.reduce((a, b) => a + b, 0);
+  check(i.open === 2 + opened, `after three screens, ${i.open} rows are open, not ${2 + opened}`);
+  const second = await page.evaluate(() => { const r = UNIT_RUN; return r.flow.filter(s => s.type === 'card' && !r.v.card(s.id).continues)[1].id; });
   await page.click('.aside .acard:not([disabled]) >> nth=1');
-  check(await page.evaluate(() => UNIT_RUN.v.cardOrder.indexOf(UNIT_RUN.flow[UNIT_RUN.i].id)) === 1, 'a card in the list did not open that card');
+  check(await page.evaluate(() => UNIT_RUN.flow[UNIT_RUN.i].id) === second, 'a card in the list did not open that card');
   await page.click('[data-jump]:has-text("The drill")');
   check(await page.evaluate(() => UNIT_RUN.flow[UNIT_RUN.i].type) === 'drill', 'the drill row did not open the drill');
   await layout(env, page, '1400px drill with the card list');
   await context.close();
   const narrow = await env.freshPage(1200);
-  await env.openSubject(narrow.page, SUBJECT);
-  await narrow.page.locator('#screen [data-u="1"]:visible').first().click();
+  await env.openSubject(narrow.page, t.subject);
+  await narrow.page.locator(`#screen [data-u="${t.index}"]:visible`).first().click();
   check(await narrow.page.evaluate(() => getComputedStyle(document.querySelector('.aside')).display === 'none'), 'the card list shows below 1280px');
   await narrow.context.close();
 }
@@ -678,6 +864,7 @@ export async function testWideCardList(env) {
 /* ---------- everything, at both phone widths ---------- */
 export async function testNewScreens(env) {
   for (const width of WIDTHS) {
+    await testRealDetermination(env, width);
     await testDueToday(env, width);
     await testPractiseAgain(env, width);
     await testOpeningMap(env, width);

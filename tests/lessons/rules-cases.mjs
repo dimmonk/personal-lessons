@@ -8,6 +8,9 @@ const isUnit = ctx => ctx.unitId !== undefined;
 // the cases a rule looks at in this scope: a unit's story cases, or the subject's specimens
 const stories = ctx => ctx.storyCases();
 const caseName = c => `case ${c.id}`;
+// What a case is a case of: its outcome, or in a gate unit the family its gate answer names (A15: gate cases carry a route and no outcome).
+const nameOfCase = (ctx, c) => c.outcome || (ctx.key.gate && c.route && c.route[ctx.key.gate.code] ? c.route[ctx.key.gate.code][0] : null);
+const isFamily = (ctx, id) => !ctx.key.outcomes.some(o => o.id === id);
 
 /* ---------- V30: marked words and tappable pieces ---------- */
 function V30(ctx, check) {
@@ -38,6 +41,7 @@ function tapPromptProblems(u) {
 
 /* ---------- V31: routes ---------- */
 function expectedSteps(ctx, c) {
+  if (isFamily(ctx, nameOfCase(ctx, c))) return [ctx.key.gate.code];   // a gate case is asked the gate question only
   const outcome = ctx.outcome(c.outcome);
   return [...(ctx.key.gate ? [ctx.key.gate.code] : []), ...(ctx.key.branches[outcome.group] || []).map(s => s.code)];
 }
@@ -51,6 +55,11 @@ function V31(ctx, check) {
     const want = expectedSteps(ctx, c);
     const have = ctx.routeSteps(c);
     check(want.length === have.length && want.every(code => have.includes(code)), `${caseName(c)}: its route must cover the gate and every question of its branch (${want.join(', ')})`);
+    if (isFamily(ctx, nameOfCase(ctx, c))) {
+      const gate = ctx.key.gate;
+      check(c.route[gate.code].length === 1 && gate.options.some(o => o.id === c.route[gate.code][0]), `${caseName(c)}: its route must give exactly one answer to the gate question`);
+      continue;
+    }
     const live = survivors(ctx, c);
     check(live.length === 1 && live[0] === c.outcome, `${caseName(c)}: its route must leave exactly ${c.outcome}, it leaves ${live.join(', ') || 'nothing'}`);
   }
@@ -110,7 +119,8 @@ function reasonProblems(ctx, c, tapped) {
 function notProblems(ctx, c) {
   if (c.use === 'check' || ctx.stepsAsked(c).length === 0) return [];
   if (!c.not) return ['needs a "not" naming a look-alike of its outcome'];
-  return c.not.outcome !== c.outcome && ctx.ledgerFor(c.outcome, c.not.outcome) ? [] : [`"not" names ${c.not.outcome}, which is not a ledger neighbour of ${c.outcome}`];
+  const name = nameOfCase(ctx, c);
+  return c.not.outcome !== name && ctx.ledgerFor(name, c.not.outcome) ? [] : [`"not" names ${c.not.outcome}, which is not a ledger neighbour of ${name}`];
 }
 
 function reasonPrompts(u) {
@@ -131,7 +141,6 @@ function V35(ctx, check) {
 // The key marks the names of cases where nothing is wrong with legit: true, on an outcome or a gate answer (S1). In an action subject the
 // key marks at least one, and every drill stage that asks about cases holds a case with one of those names, so a learner is never
 // taught that every case has a fault (A10, E6). The app refuses to start such a drill, and this rule catches it first.
-const nameOfCase = (ctx, c) => c.outcome || (ctx.key.gate && c.route && c.route[ctx.key.gate.code] ? c.route[ctx.key.gate.code][0] : null);
 const isLegitCase = (ctx, c) => Boolean(ctx.things[nameOfCase(ctx, c)] && ctx.things[nameOfCase(ctx, c)].legit);
 
 export const V37_subject = subjectRule('V37', (s, check) => {
@@ -185,9 +194,9 @@ export const V54 = unitRule('V54', (u, check) => {
   check(u.routeCases.some(c => c.echo), 'no route-stage case echoes a named teaching case, so the second look is never practised');
   for (const c of u.caseList.filter(k => k.echo)) {
     const target = u.cases[c.echo];
-    check(Boolean(target.name) && target.use === 'teach' && target.outcome !== c.outcome, `${caseName(c)}: echo must be a named teaching case of a different outcome`);
+    check(Boolean(target.name) && target.use === 'teach' && nameOfCase(u, target) !== nameOfCase(u, c), `${caseName(c)}: echo must be a named teaching case of a different outcome`);
   }
-});
+}, { kinds: ['branch', 'gate'] });   // a fact unit has no routes, and a procedure unit's second look is the solved example (section 8 table)
 
 export const RULES_CASES = [
   ...unitAndSubject('V30', V30), ...unitAndSubject('V31', V31), V32, ...unitAndSubject('V33', V33), V34,

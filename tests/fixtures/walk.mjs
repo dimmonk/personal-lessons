@@ -78,9 +78,12 @@ export const cardPlan = (page, wrong) => page.evaluate(wrong => {
     }
   } else return { awaiting: false, kind: card.kind };
   const caseText = cases.map(c => plain(`<p>${c.text}</p>`)).join(' ');
+  // A sentence of the explanation often opens by quoting the case ("The words are «a sentence of the case»: ..."), so its first words are on
+  // the screen before the answer. The probe is the first 60 characters of the sentence that are not a stretch of the case.
   const sentences = plain(explanation).split(/(?<=[.?!”])\s+/).filter(x => x.length >= 25 && !caseText.includes(x));
-  const probe = sentences.sort((x, y) => y.length - x.length)[0];
-  return { awaiting: true, kind: card.kind, clicks, probe: probe ? probe.slice(0, 60) : null };
+  const fresh = x => { for (let i = 0; i + 60 <= x.length; i++) if (!caseText.includes(x.slice(i, i + 60))) return x.slice(i, i + 60); return x.length < 60 ? x : null; };
+  const probe = sentences.sort((x, y) => y.length - x.length).map(fresh).find(x => x);
+  return { awaiting: true, kind: card.kind, clicks, probe: probe || null };
 }, wrong);
 
 // What to click to answer the drill item on screen.
@@ -108,6 +111,19 @@ export const drillPlan = (page, wrong) => page.evaluate(wrong => {
   const parts = claimParts({ v, T: lessonText(v) }, c);
   return { ...base, clicks: [`[data-pick="${parts.answer}"]`] };
 }, wrong);
+
+// Whether the open worked card still has steps to show before its question.
+export const workedStepsLeft = page => page.evaluate(() => { const r = UNIT_RUN, c = r.v.card(r.flow[r.i].id); return r.cards[c.id] ? r.cards[c.id].ui.step < c.steps.length : c.steps.length > 0; });
+// Goes on from the screen the learner is on, answering what stops the way (a check, a commit prompt, the last step of a worked case).
+export async function moveOn(page) {
+  const s = await screenInfo(page);
+  if (s.type === 'card') {
+    if (s.kind === 'worked') while (await workedStepsLeft(page)) await page.click('#fwd');
+    const plan = await cardPlan(page, false);
+    if (plan.awaiting) for (const sel of plan.clicks) await page.click(sel);
+  }
+  await page.click('#fwd');
+}
 
 // Plays the whole drill, every item answered right. `wrongOnce`: the first item is answered wrong. `wrongEvery`: every nth item is.
 // `onItem(page, answered)` is called on each item screen, before it is answered and again once its feedback is showing.
