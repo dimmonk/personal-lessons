@@ -1,17 +1,21 @@
 // Section 8, anatomy and order: V10 to V18, V20 to V27, V51, V55. Each rule reads the cards of one unit in learner order.
-// Branch units only, except V10, V25, V26 and V27, which every unit of standard 1 obeys (the section 8 table).
+// Branch units, and procedure units with `solved` in place of `worked`, except V10, V25, V26 and V27, which every unit of
+// standard 1 obeys, and V57, which is a fact unit's own rule (the section 8 table).
 // V19 is retired. A meet card has no typed heading because the meet shape has no `h` (V0).
-import { unitRule, checkEach } from './rule.mjs';
-import { cuesOf, joined, prose, hasToken, isFilled, unique, norm } from './text.mjs';
+import { unitRule, checkEach, BRANCH_LIKE } from './rule.mjs';
+import { cuesOf, joined, prose, hasToken, isFilled, unique, norm, duplicatesOf } from './text.mjs';
 
-const branchRule = (id, run) => unitRule(id, run, { branch: true });
+const branchRule = (id, run) => unitRule(id, run, { kinds: BRANCH_LIKE });
 const tokenIn = (field, kind, ref) => hasToken(joined(field), kind, ref);
 
 /* ---------- V10: the opening card ---------- */
 export const V10 = unitRule('V10', (u, check) => {
   const first = u.cards[0];
   check(first && first.kind === 'orient', 'the first card must be orient');
-  if (first && first.kind === 'orient') check(u.isGate || Boolean(u.key.branches[first.map.branch]), `the orient map names "${first.map.branch}", which is not a branch of the key`);
+  if (!first || first.kind !== 'orient') return;
+  // a fact unit is facts to hold, not a skill to apply, so its orient card draws no preview map (A12)
+  if (u.kindName === 'fact') check(!first.map, 'the orient card of a fact unit has no map');
+  else check(Boolean(first.map) && (u.isGate || Boolean(u.key.branches[first.map.branch])), `the orient map must name a branch of the key${first.map ? `; it names "${first.map.branch}"` : ''}`);
 });
 
 /* ---------- V51: one lens ---------- */
@@ -147,7 +151,35 @@ function workedProblems(u, w, isLast) {
   return problems;
 }
 
+// A procedure unit has two `solved` cards for every procedure, in different areas of life, and one commit prompt on the step that
+// carries the idea: that step has no `why` of its own, because its reason is hold.reason (A12, S4).
+function solvedProblems(u, card) {
+  const c = u.cases[card.problem], hold = card.hold, p = hold.prompt;
+  const problems = [];
+  if (!c || c.outcome !== card.outcome) problems.push(`its problem must be a case of ${card.outcome}`);
+  card.steps.forEach((st, i) => {
+    if (i === hold.step) { if (isFilled(st.why)) problems.push(`step ${i + 1} carries the idea, so its reason is hold.reason and it has no why of its own`); }
+    else if (!isFilled(st.why)) problems.push(`step ${i + 1} has no why`);
+  });
+  if (p.choices.filter(x => x.id === p.answer).length !== 1) problems.push('hold.prompt needs exactly one right choice');
+  if (!p.choices.every(x => x.id === p.answer || isFilled(x.note))) problems.push('hold.prompt needs a note on every other choice');
+  return problems;
+}
+
+function procedureWorked(u, check) {
+  const solved = u.cards.filter(c => c.kind === 'solved'), closing = u.unit.parts.flatMap(p => p.close || []);
+  check(solved.every(c => !closing.includes(c.id)), 'every solved card must come before the drill, not in the close');
+  for (const o of u.taught) {
+    const own = solved.filter(c => c.outcome === o);
+    check(own.length >= 2, `${o}: at least two solved cards are required, found ${own.length}`);
+    const settings = own.map(c => u.cases[c.problem] && u.cases[c.problem].setting);
+    check(new Set(settings).size === settings.length, `${o}: its solved problems must be in different areas of life`);
+  }
+  solved.forEach(card => checkEach(check, `card ${card.id}`, solvedProblems(u, card)));
+}
+
 export const V18 = branchRule('V18', (u, check) => {
+  if (u.kindName === 'procedure') return procedureWorked(u, check);
   const worked = u.cards.filter(c => c.kind === 'worked');
   const lastQuestion = Math.max(...u.cards.filter(c => c.kind === 'question').map(c => u.pos(c.id)));
   check(worked.length >= 2, `at least two worked cards are required, found ${worked.length}`);
@@ -172,7 +204,7 @@ export const V20 = branchRule('V20', (u, check) => {
 export const V21 = branchRule('V21', (u, check) => {
   u.cards.forEach((c, i) => {
     const prev = u.cards[i - 1];
-    if (!prev || prev.kind !== 'check' || !c.link) return;
+    if (!prev || prev.kind !== 'check' || !c.link || !prev.ask.step) return;   // a problem to finish asks no key question, so it has no answer to give away
     const asked = u.cases[prev.case], step = prev.ask.step, link = joined(c.link);
     const givesAnswer = (asked.route[step] || []).some(id => hasToken(link, 'a', `${step}.${id}`));
     const givesCue = cuesOf(asked, step).some(cue => link.includes(cue));
@@ -215,10 +247,12 @@ export const V25 = unitRule('V25', (u, check) => {
   const last = parts[parts.length - 1];
   check(Boolean(last.drill) && parts.filter(p => p.drill).length === 1, 'the last part, and only the last, holds the drill');
   const closing = (last.close || []).map(id => u.card(id).kind);
-  const expected = u.meta.action ? ['recap', 'transfer', 'plan'] : ['recap', 'transfer'];
+  // a fact unit closes with a recap that prints every fact, and has no transfer (A12)
+  const expected = ['recap', ...(u.kindName === 'fact' ? [] : ['transfer']), ...(u.meta.action ? ['plan'] : [])];
   check(closing.join() === expected.join(), `the unit must close with ${expected.join(', ')}; it closes with ${closing.join(', ') || 'nothing'}`);
   const transfer = u.cards.find(c => c.kind === 'transfer');
-  if (transfer) check(u.taught.every(o => transfer.prompts.some(p => p.outcome === o)), 'transfer.prompts must cover every taught outcome');
+  const names = u.isGate ? u.unit.teaches.families : u.taught;
+  if (transfer) check(names.every(o => transfer.prompts.some(p => (p.outcome || p.family) === o)), 'transfer.prompts must cover every taught outcome');
   u.cards.filter(c => c.kind === 'plan').forEach(c => check(c.optional === true, `card ${c.id}: a plan card must have optional: true`));
 });
 
@@ -247,4 +281,20 @@ export const V55 = branchRule('V55', (u, check) => {
   }
 });
 
-export const RULES_ANATOMY = [V10, V11, V12, V13, V14, V15, V16, V17, V18, V20, V21, V22, V23, V24, V25, V26, V27, V51, V55];
+/* ---------- V57: a fact unit is a concept, its facts, and one check for every fact ---------- */
+export const V57 = unitRule('V57', (u, check) => {
+  u.cards.filter(c => c.kind === 'concept').forEach(c => {
+    const next = u.cards[u.pos(c.id) + 1];
+    check(Boolean(next) && next.kind === 'facts' && next.concept === c.id, `card ${c.id}: a concept card must be followed by the facts card that names it`);
+  });
+  for (const f of u.cards.filter(c => c.kind === 'facts')) {
+    check(Boolean(u.cardsById[f.concept]) && u.cardsById[f.concept].kind === 'concept', `card ${f.id}: concept must name a concept card`);
+    for (const r of f.rows) {
+      check(u.cards.some(c => c.kind === 'check' && c.after === f.id && c.ask.row === r.id && u.pos(c.id) > u.pos(f.id)), `row ${r.id}: no check asks it from memory after its facts card`);
+    }
+    // the choices of a fact are the other rows' answers, so two rows with one answer would make a fact unanswerable (the app refuses the item)
+    checkEach(check, `card ${f.id}`, duplicatesOf(f.rows.map(r => r.a)).map(a => `two rows have the answer "${a}"`));
+  }
+}, { kinds: ['fact'] });
+
+export const RULES_ANATOMY = [V10, V11, V12, V13, V14, V15, V16, V17, V18, V20, V21, V22, V23, V24, V25, V26, V27, V51, V55, V57];

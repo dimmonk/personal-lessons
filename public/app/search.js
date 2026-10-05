@@ -9,7 +9,7 @@ function searchIndex(){
       go:() => openSubject(s.id)});
     s.course.forEach((u,i) => INDEX.push({g:'Units', s, t:u.title,
       sub:`${s.name} · Unit ${u.tag}${isRebuilt(u) ? ' · rev ' + u.rev : ''} · ${u.cards.length} cards`, go:() => openUnit(s, i)}));
-    s.outcomes.forEach(o => INDEX.push({g:'Tools', s, t:o.n,
+    s.outcomes.filter(o => oldToolKept(s, o)).forEach(o => INDEX.push({g:'Tools', s, t:o.n,
       sub:`${s.name} · one of ${s.outcomes.length} outcomes`, go:() => openSubject(s.id)}));
     s.quickDrills.forEach(q => INDEX.push({g:'Drills', s, t:q.title,
       sub:`${s.name} · ${q.items.length} items`,
@@ -20,6 +20,7 @@ function searchIndex(){
     s.errDrill.forEach((e,i) => INDEX.push({g:'Faulty claims', s, t:e.q, quote:true,
       sub:`${s.name} · claim ${pad2(i+1)}`,
       go:() => { APP.subjectId = s.id; touch(s.id); st(s).errState = {i, picked:null}; go('err'); }}));
+    INDEX.push(...newSearchEntries(s));
   });
   return INDEX;
 }
@@ -56,13 +57,13 @@ function paintResults(){
   const q = APP.query.trim();
   if(!q){
     box.innerHTML = `<p class="empty">Everything is searchable &mdash; subject names, unit titles,
-      the tools in each key, drill items and the specimens themselves.</p>`;
+      the names and questions in each key, the cases on the cards, drill items and the specimens themselves.</p>`;
     return;
   }
   const hits = searchIndex().filter(e => e.t.toLowerCase().includes(q.toLowerCase()));
   if(!hits.length){ box.innerHTML = `<p class="empty">Nothing matches &ldquo;${esc(q)}&rdquo;.</p>`; return; }
 
-  const order = ['Subjects','Units','Tools','Drills','Specimens','Faulty claims'];
+  const order = ['Subjects','Units','Cards','Names','Questions','Cases','Tools','Drills','Specimens','Faulty claims'];
   const groups = order.map(g => [g, hits.filter(h => h.g === g)]).filter(([,list]) => list.length);
   let n = 0;
 

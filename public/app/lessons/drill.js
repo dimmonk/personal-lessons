@@ -29,7 +29,7 @@ function earlierView(subjectId, unitId){
   if(sv.data.units[unitId]) return unitView(subjectId, unitId);
   return { ...sv, unitId, unit: { rev: 0, assumes: [], ledger: [], drill: { returns: [] } }, isGate: true, taught: [], cardOrder: [],
            card: id => lessonFail(`unit ${unitId} has no cards: ${id}`), ledger: id => lessonFail(`unit ${unitId} has no look-alike entry ${id}`),
-           ledgerFor: () => null, nameOf: id => sv.thing(id).n };
+           ledgerFor: () => null, nameOf: id => sv.thing(id).n, isFact: () => false, isFacts: false };
 }
 function earlierCase(subjectId, unitId, exclude){
   const v = earlierView(subjectId, unitId);
@@ -47,7 +47,8 @@ function earlierCase(subjectId, unitId, exclude){
 // Turn one authored drill entry into an item to ask. `stageAsk` is how the stage asks a plain case.
 function drillItem(v, raw, stageAsk, exclude){
   if(typeof raw === 'object' && raw.tell) return { v, id: 'tell:' + raw.tell, item: { type: 'tell', entry: v.ledger(raw.tell), mode: 'tell' } };
-  if(typeof raw === 'object' && raw.separator) lessonFail('"separator" drill items are not built yet');
+  if(typeof raw === 'object' && raw.separator) return { v, id: 'separator:' + raw.separator, item: separatorItem(v, raw.separator) };
+  if(typeof raw === 'object' && raw.fact) return { v, id: raw.fact, item: factItem(v, raw.fact, 'fact') };
   if(typeof raw === 'object' && raw.earlier){
     const got = earlierCase(v.subjectId, raw.earlier, exclude);
     if(!got) return null;
@@ -60,6 +61,7 @@ function drillItem(v, raw, stageAsk, exclude){
   const c = specCase(v, raw);
   if(c.kind === 'reverse') return { v, id: c.id, item: { type: 'reverse', c, mode: 'reverse' } };
   if(c.use === 'claim') return { v, id: c.id, item: { type: 'claim', c, mode: 'claim' } };
+  if(c.kind === 'problem' && typeof raw === 'string') return { v, id: c.id, item: problemItem(v, c, stageAsk, stageAsk) };
   const steps = v.routeSteps(c);
   if(typeof raw === 'object') return { v, id: c.id, item: { type: 'case', c, shown: [], asked: [raw.step], askName: false, names: [], mode: 'piece' } };
   const named = v.isOutcome(caseTarget(v, c));
@@ -77,6 +79,7 @@ function stageQueue(v, rung){
   return banded.flat().flatMap(group => shuffled(group));
 }
 function stageInstruction(v, rung){
+  if(rung.ask === 'route' && v.unit.kind === 'P') return SAY.stage.routeSolve();
   const say = SAY.stage[rung.ask] || lessonFail(`drill stage "${rung.ask}" has no instruction`);
   if(rung.ask === 'name'){
     const last = v.unitSteps[v.unitSteps.length - 1];
@@ -88,23 +91,49 @@ function stageInstruction(v, rung){
 
 /* ---------- a run: a unit's drill, a returned set, or "Practise again" ---------- */
 // run = { subj, v, context, title, stages:[{ ask, instruction, demo, queue:[raw], intro }], si, qi, current, tries:[], onEnd }
+// Action subjects (lesson standard A10, V37): every stage that asks about cases holds one where nothing was wrong,
+// so the learner is never taught that every case has a fault.
+function requireLegitCases(v, rungs){
+  if(!(v.meta && v.meta.action)) return;
+  const caseOf = raw => { const id = typeof raw === 'string' ? raw : raw.case; return id ? v.caseById(id) : null; };
+  rungs.forEach(rung => {
+    const cases = rung.items.flat().map(caseOf).filter(c => c && c.kind !== 'reverse' && c.use !== 'claim');
+    if(cases.length && !cases.some(c => caseTarget(v, c) && v.isLegit(caseTarget(v, c))))
+      lessonFail(`unit ${v.unitId}: the ${rung.ask} stage of an action subject's drill has no case where nothing was wrong`);
+  });
+}
 function unitDrillRun(subj, v, context, fromAsk){
   const rungs = v.unit.drill.rungs;
+  requireLegitCases(v, rungs);
   const start = fromAsk ? Math.max(0, rungs.findIndex(r => r.ask === fromAsk)) : 0;
   const stages = rungs.slice(start).map(rung => ({ ask: rung.ask, instruction: stageInstruction(v, rung), demo: rung.demo || null, queue: stageQueue(v, rung), shownIntro: false }));
   const earlier = rungs.flatMap(r => r.items.flat()).filter(raw => typeof raw === 'object' && raw.earlier).length;
   return { subj, v, context, title: context === 'again' ? 'Practise again' : 'The drill', intro: context === 'unit' ? SAY.drillIntro(rungs.length, earlier) : null,
            add: context === 'unit' ? v.unit.drill.add : null, stages, si: 0, qi: 0, current: null, tries: [], started: false, asked: [], met: [] };
 }
+// A run over items from several units (a returned set, the faulty-claims tile): one stage, whose items name their own unit.
+// queue entries: { unitId, caseId } | { unitId, fact }, and returned: true where the item is a return (the results count those apart).
+function crossUnitRun(subj, { context, title, intro, ask, instruction, queue }){
+  return { subj, v: null, context, title, intro, add: null, stages: [{ ask, instruction, demo: null, queue, shownIntro: true }],
+           si: 0, qi: 0, current: null, tries: [], started: false, asked: [], met: [] };
+}
 function returnSetRun(subj, items){
-  const queue = items.map(i => ({ returned: true, unitId: i.unitId, caseId: i.caseId }));
-  return { subj, v: null, context: 'return', title: 'Due today', intro: 'These are names that are due to come back, each on a case you have not seen, next to a case of the name it is most often taken for. Answer every question in the key’s order, then give the name. ' + SAY.stakes,
-           add: null, stages: [{ ask: 'route', instruction: SAY.stage.route(), demo: null, queue, shownIntro: true }], si: 0, qi: 0, current: null, tries: [], started: false, asked: [], met: [] };
+  const allFacts = items.length > 0 && items.every(i => i.fact);
+  const intro = allFacts
+    ? 'These are facts that are due to come back, each next to the fact it is most often swapped with. Each is asked from memory. ' + SAY.stakes
+    : 'These are names that are due to come back, each on a case you have not seen, next to a case of the name it is most often taken for. Answer every question in the key’s order, then give the name. ' + SAY.stakes;
+  return crossUnitRun(subj, { context: 'return', title: 'Due today', intro, ask: allFacts ? 'fact' : 'route',
+    instruction: allFacts ? SAY.stage.fact() : SAY.stage.route(), queue: items.map(i => ({ returned: true, unitId: i.unitId, caseId: i.caseId, fact: i.fact })) });
+}
+// The faulty claims of units the learner has finished, asked the way a drill asks them: the learner answers before the fault is shown.
+function claimsRun(subj, items){
+  return crossUnitRun(subj, { context: 'again', title: SAY.claimsTitle, intro: SAY.claimsIntro + ' ' + SAY.stakes, ask: 'claim',
+    instruction: SAY.stage.claimsAlone(), queue: shuffled(items) });
 }
 function runItem(run, raw){
-  if(raw.returned){
+  if(raw.unitId){
     const v = unitView(run.subj.id, raw.unitId);
-    return drillItem(v, raw.caseId, 'route', []);
+    return raw.fact ? drillItem(v, { fact: raw.fact }, 'fact', []) : drillItem(v, raw.caseId, run.stages[run.si].ask, []);
   }
   return drillItem(run.v, raw, run.stages[run.si].ask, run.asked);
 }
@@ -112,6 +141,22 @@ const runCounts = run => ({
   total: run.stages.reduce((n, s) => n + s.queue.length, 0),
   done: run.stages.slice(0, run.si).reduce((n, s) => n + s.queue.length, 0) + run.qi
 });
+
+/* ---------- Back, inside a drill (lesson standard E11) ---------- */
+// A drill inside a unit goes back to the cards: the run keeps its place, so Next comes back to it. A returned set or
+// "Practise again" has run.leave and goes back to where it was started. The control belongs to the drill's frame, above the
+// part that every answer repaints, so it is never lost.
+const drillBackHtml = run => `<div class="drillnav"><button class="linkish" data-drill-back>${icon('back', 14)}${esc(run.leave ? SAY.backFrom(run.subj.name) : SAY.backToCards)}</button></div>`;
+const wireDrillBack = run => on('[data-drill-back]', () => run.leave ? run.leave() : goBack(UNIT_RUN));
+// A drill that is not part of a unit (a returned set, "Practise again"): its own screen, with its Back control.
+function paintDrillScreen(subj, run, label, onEnd){
+  screenEl().innerHTML = `<div class="pane" style="--accent:${subj.accent}">
+    <div class="topbar"><button class="iconbtn" data-v="subject" aria-label="Back to ${esc(subj.name)}">${icon('back', 20)}</button><span class="m">${label}</span><span class="spacer"></span></div>
+    ${drillBackHtml(run)}<div id="host"></div></div>`;
+  on('[data-v]', el => go(el.dataset.v));
+  wireDrillBack(run);
+  mountDrillRun(document.getElementById('host'), run, onEnd);
+}
 
 // Moves the drill on: shows what is next, scrolls to the top and puts focus where the learner reads from.
 function showNext(host, run, onEnd, focus){
@@ -148,8 +193,11 @@ function beginItem(run, stage){
 function recordAnswer(run, stage, cur, outcome){
   const v = cur.v;
   recordTry(v.subjectId, v.unitId, cur.id, v.unit.rev, { mode: cur.item.mode, context: run.context, steps: outcome.steps, name: outcome.name, ok: outcome.ok });
+  const target = cur.item.target || (cur.item.c ? caseTarget(v, cur.item.c) : null);
+  // in a gate unit the name chosen is the answer given to the gate question
+  const chosen = outcome.name || (cur.item.c && v.isGate && v.data.units[v.unitId] && v.key.gate ? outcome.steps[v.key.gate.code] || null : null);
   run.tries = [...run.tries, { stage: stage.ask, mode: cur.item.mode, ok: outcome.ok, first: cur.first, returned: !!stage.queue[run.qi].returned,
-                               target: cur.item.c ? caseTarget(v, cur.item.c) : null, chosen: outcome.name, unitId: v.unitId }];
+                               target, chosen, unitId: v.unitId, legit: !!(cur.item.c && cur.item.c.kind !== 'reverse' && target && v.isLegit(target)) }];
   // a missed item is asked again, at least three items later, until it has been answered right once
   if(!outcome.ok){
     const at = Math.min(stage.queue.length, run.qi + 1 + REQUEUE_GAP);
@@ -199,9 +247,10 @@ function mountDrillRun(host, run, onEnd){
 function runResultsHtml(run){
   const firsts = run.tries.filter(t => t.first);
   const acc = list => { const a = firstTryAccuracy(list); return a.n ? `${a.ok} of ${a.n}` : '—'; };
-  const stageNames = { name: 'Naming', piece: 'One question at a time', finish: 'Finishing a route', route: 'Whole routes', claim: 'Faulty claims' };
+  const stageNames = { name: 'Naming', piece: 'One question at a time', finish: 'Finishing a route', route: 'Whole routes', claim: 'Faulty claims',
+                       last: 'The last step', whole: 'Whole problems', fact: 'Facts from memory' };
   const stages = [...new Set(run.tries.map(t => t.stage))];
-  const whole = firsts.filter(t => ['finish', 'route'].includes(t.mode)), single = firsts.filter(t => ['piece', 'name', 'tell', 'reverse'].includes(t.mode));
+  const whole = firsts.filter(t => ['finish', 'route', 'whole'].includes(t.mode)), single = firsts.filter(t => ['piece', 'name', 'tell', 'reverse', 'separator', 'fact', 'last'].includes(t.mode));
   const confusions = {};
   run.tries.filter(t => t.target && t.chosen && t.chosen !== t.target).forEach(t => {
     const k = `${t.unitId}|${t.target}|${t.chosen}`; confusions[k] = (confusions[k] || 0) + 1;
@@ -213,6 +262,12 @@ function runResultsHtml(run){
   } else {
     stages.forEach(s => rows.push([stageNames[s] || s, acc(firsts.filter(t => t.stage === s))]));
     if(whole.length && single.length){ rows.push(['All whole routes, every stage', acc(whole)]); rows.push(['All single questions, every stage', acc(single)]); }
+  }
+  // action subjects: accuracy on sound cases beside cases with a fault (lesson standard E8)
+  const named = firsts.filter(t => t.target && t.mode !== 'reverse');
+  if(run.subj && FC.get(run.subj.id).meta && FC.get(run.subj.id).meta.action && named.some(t => t.legit) && named.some(t => !t.legit)){
+    rows.push([SAY.soundHead, acc(named.filter(t => t.legit))]);
+    rows.push([SAY.unsoundHead, acc(named.filter(t => !t.legit))]);
   }
   let confusion = '';
   if(worst){

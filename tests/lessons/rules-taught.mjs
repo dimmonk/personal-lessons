@@ -45,11 +45,12 @@ function tokenProblems(u, c, state, found) {
 
 function askProblems(u, c, state, found) {
   const need = (token, where) => { if (!state.shown.has(token)) found.v5.push(`${where} uses ${token} before a card has taught it`); };
-  if (c.kind === 'check' && c.ask.type !== 'phrase') {
+  // a fact check and a problem to finish ask no key question, so there is no answer to have been taught first (A12)
+  if (c.kind === 'check' && c.ask.step && c.ask.type !== 'phrase') {
     if (c.ask.type === 'step') need(`q:${c.ask.step}`, c.id);
     (c.ask.among || u.step(c.ask.step).options.map(o => o.id)).forEach(id => need(`a:${c.ask.step}.${id}`, c.id));
   }
-  if (c.kind === 'lookalike') need(`a:${c.prompt.option}`, c.id);
+  if (c.kind === 'lookalike' && c.prompt.option) need(`a:${c.prompt.option}`, c.id);
 }
 
 function drillTaughtProblems(u, state, found) {

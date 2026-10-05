@@ -3,7 +3,7 @@
 
 // A token of section 4, S5. The pattern carries the g flag, so it is only ever used through the helpers below
 // (matchAll and replace both work on a copy and have no state to carry between calls).
-const TOKEN_PATTERN = /\{(o|plain|needs|q|a|when|t|means|test|cue):([^}]+)\}/g;
+const TOKEN_PATTERN = /\{(o|plain|needs|q|a|when|t|means|test|cue|f):([^}]+)\}/g;
 const ANY_BRACE = /\{[a-z]+:[^}]*\}/;
 
 // [{ kind, ref }] for every token in a string.
@@ -30,8 +30,8 @@ export function* strings(value, path = '') {
 }
 
 // Fields that hold ids, codes and enums are never prose; fields that quote what people say are free text (S5, V2).
-const STRUCTURAL = /\.(id|kind|use|tier|setting|topic|case|first|second|outcome|ledger|step|mark|after|looksLike|is|about|answer|voice|neighbour|resembles|option|taughtIn|branch|term|expect|echo|continues|type|name|demo)$/;
-const STRUCTURAL_IN = /\.(route|cues|segments\.\d+\.text|pair|among|testedBy|cases|also|feature|map)(\.|$)/;
+const STRUCTURAL = /\.(id|kind|use|tier|setting|topic|case|first|second|outcome|family|ledger|step|mark|after|looksLike|is|about|answer|voice|neighbour|resembles|option|taughtIn|branch|term|expect|echo|continues|type|name|demo|concept|problem|row|solve)$/;
+const STRUCTURAL_IN = /\.(route|cues|segments\.\d+\.text|pair|among|testedBy|cases|facts|also|feature|map)(\.|$)/;
 const QUOTED = /\.(text|idea|wild\.\d+|options\.\d+\.text)$/;
 export const prose = obj => [...strings(obj)].filter(([p]) => !STRUCTURAL.test(p) && !STRUCTURAL_IN.test(p) && !QUOTED.test(p));
 

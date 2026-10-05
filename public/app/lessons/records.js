@@ -9,8 +9,9 @@
 const MAX_TRIES = 12;
 const MAX_LOG = 500;
 const RETURN_GAPS = [2, 7, 24];        // days: after the drill or a miss, after the first good day, after the second
+const ACTION_LATE_GAP = 84;            // action subjects add one return about twelve weeks after the third (E9)
 const RETURN_SET_SIZE = 6;
-const NAME_MODES = ['name', 'finish', 'route', 'spec'];
+const NAME_MODES = ['name', 'finish', 'route', 'spec', 'fact'];
 
 const dayOf = date => `${date.getFullYear()}-${pad2(date.getMonth() + 1)}-${pad2(date.getDate())}`;
 const today = () => dayOf(new Date());
@@ -76,6 +77,38 @@ function saveNote(subjectId, unitId, patch){
   const all = notesOf(subjectId);
   storageSave(`pl:${subjectId}:notes`, { ...all, [unitId]: { ...(all[unitId] || {}), ...patch } });
 }
+function removeNote(subjectId, unitId, field){
+  const all = notesOf(subjectId), { [field]: gone, ...rest } = all[unitId] || {};
+  storageSave(`pl:${subjectId}:notes`, { ...all, [unitId]: rest });
+}
+
+/* ---------- the plan card's saved plan, shown back once (lesson standard E18) ---------- */
+// notes[unitId].plan = { cue, then, saved: 'YYYY-MM-DD', shown?: 'YYYY-MM-DD' }
+const planText = plan => `If I see ${plan.cue}, then I will ${plan.then}.`;
+// The text of a saved plan, or null when the unit has none.
+function savedPlanText(subjectId, unitId){
+  const plan = (notesOf(subjectId)[unitId] || {}).plan;
+  return plan ? planText(plan) : null;
+}
+function savePlan(subjectId, unitId, cue, then){
+  saveNote(subjectId, unitId, { plan: { cue, then, saved: today() } });
+}
+// Plans not yet shown back: [{ unitId, text }]. Whoever draws a returned set shows these once, then calls
+// keepPlan, changePlan or dropPlan for each, so a plan is never shown a second time.
+function plansToShowBack(subjectId){
+  const notes = notesOf(subjectId);
+  return Object.keys(notes).filter(unitId => notes[unitId].plan && !notes[unitId].plan.shown)
+    .map(unitId => ({ unitId, text: planText(notes[unitId].plan) }));
+}
+function keepPlan(subjectId, unitId){
+  const plan = (notesOf(subjectId)[unitId] || {}).plan;
+  if(!plan) lessonFail(`unit ${unitId} has no saved plan to keep`);
+  saveNote(subjectId, unitId, { plan: { ...plan, shown: today() } });
+}
+function changePlan(subjectId, unitId, cue, then){
+  saveNote(subjectId, unitId, { plan: { cue, then, saved: today(), shown: today() } });
+}
+function dropPlan(subjectId, unitId){ removeNote(subjectId, unitId, 'plan'); }
 const logOf = () => storageRead('pl:log') || [];
 function logEvent(type, detail){
   storageSave('pl:log', [...logOf(), { d: today(), type, ...(detail || {}) }].slice(-MAX_LOG));
@@ -115,19 +148,24 @@ function migrateProgress(subjectId, unitIds, rebuilt){
 // What is scheduled is the discrimination (a name), not the case. target = the name a case teaches:
 // its outcome, or in a gate unit the gate answer of its route.
 function caseTarget(v, c){
-  return c.outcome || (c.route && c.route[v.key.gate.code] ? c.route[v.key.gate.code][0] : null);
+  return c.outcome || (v.key.gate && c.route && c.route[v.key.gate.code] ? c.route[v.key.gate.code][0] : null);
 }
-// Every try on a case of this name, with the case attached.
+// Every try on a case of this name, with the case attached. In a fact unit the name is a row id and the try is on the row.
+// In a gate unit the name chosen is the gate answer, which is stored with the route.
 function triesForTarget(v, unitId, target){
+  if(v.isFacts) return triesOf(v.subjectId, unitId, target).map((t, i) => ({ ...t, caseId: target, first: i === 0 }));
+  const gate = v.key.gate && v.isGate ? v.key.gate.code : null;
   const out = [];
   v.casesOf(unitId).forEach(c => {
     if(caseTarget(v, c) !== target) return;
-    triesOf(v.subjectId, unitId, c.id).forEach((t, i) => out.push({ ...t, caseId: c.id, first: i === 0 }));
+    triesOf(v.subjectId, unitId, c.id).forEach((t, i) => out.push({ ...t, name: t.name || (gate ? t.steps[gate] || null : null), caseId: c.id, first: i === 0 }));
   });
   return out;
 }
+function returnGaps(v){ return v.meta && v.meta.action ? [...RETURN_GAPS, ACTION_LATE_GAP] : RETURN_GAPS; }
 // { level, due: 'YYYY-MM-DD' or null } for one name of a finished unit.
 function returnState(v, unitId, target){
+  const gaps = returnGaps(v);
   const tries = triesForTarget(v, unitId, target).filter(t => NAME_MODES.includes(t.mode));
   const unitDays = tries.filter(t => t.context === 'unit').map(t => t.d).sort();
   if(!unitDays.length) return { level: 0, due: null };
@@ -135,9 +173,9 @@ function returnState(v, unitId, target){
   const anchor = [unitDays[unitDays.length - 1], lastMiss].filter(Boolean).sort().pop();
   const goodDays = [...new Set(tries.filter(t => t.first && t.ok && t.d > anchor).map(t => t.d))].sort();
   const level = goodDays.length;
-  if(level >= RETURN_GAPS.length) return { level, due: null };
+  if(level >= gaps.length) return { level, due: null };
   const from = level === 0 ? anchor : goodDays[level - 1];
-  return { level, due: addDays(from, RETURN_GAPS[level]) };
+  return { level, due: addDays(from, gaps[level]) };
 }
 // The names due today across a subject's finished rebuilt units: [{ unitId, target, due }]
 function dueReturns(subjectId){
@@ -165,11 +203,29 @@ function usualConfusion(v, unitId, target){
 // case of the name, and the repeat is logged so a short bank shows up in the log.
 function pickReturnCase(v, unitId, target, exclude){
   const lastSeen = c => { const t = triesOf(v.subjectId, unitId, c.id); return t.length ? t[t.length - 1].d : ''; };
-  const ofTarget = v.casesOf(unitId).filter(c => caseTarget(v, c) === target && !c.kind && c.use !== 'claim' && !exclude.includes(c.id));
+  const ofTarget = v.casesOf(unitId).filter(c => caseTarget(v, c) === target && c.kind !== 'reverse' && c.use !== 'claim' && !exclude.includes(c.id));
   const fresh = v.unit.drill.returns.map(v.caseById).filter(c => ofTarget.some(x => x.id === c.id) && !seenBefore(v.subjectId, unitId, c.id));
   if(fresh.length) return { c: fresh[0], repeat: false };
   const routed = ofTarget.filter(c => c.use === 'drill' || c.use === 'return').sort((a, b) => lastSeen(a) < lastSeen(b) ? -1 : 1);
   return routed.length ? { c: routed[0], repeat: true } : null;
+}
+// What comes back for one due name: a case of it next to a case of the name it is most often taken for, or in a fact
+// unit the row itself next to the row it is most often swapped with. [{ unitId, caseId } | { unitId, fact }]
+function returnItemsFor(v, due, items){
+  const unitId = due.unitId;
+  if(v.isFacts){
+    const taken = items.filter(i => i.unitId === unitId && i.fact).map(i => i.fact);
+    if(taken.includes(due.target)) return [];
+    const neighbour = usualConfusion(v, unitId, due.target);
+    return [due.target, ...(neighbour && !taken.includes(neighbour) ? [neighbour] : [])].map(fact => ({ unitId, fact, repeat: false }));
+  }
+  const used = items.filter(i => i.unitId === unitId && i.caseId).map(i => i.caseId);
+  if(used.some(id => caseTarget(v, v.caseById(id)) === due.target)) return [];
+  const own = pickReturnCase(v, unitId, due.target, used);
+  if(!own) return [];
+  const neighbour = usualConfusion(v, unitId, due.target);
+  const beside = neighbour && pickReturnCase(v, unitId, neighbour, [...used, own.c.id]);
+  return [own, ...(beside ? [beside] : [])].map(p => ({ unitId, caseId: p.c.id, repeat: p.repeat }));
 }
 // The returned set: each due name on a case, next to a case of the name it is most often taken for.
 function buildReturnSet(subjectId){
@@ -177,17 +233,9 @@ function buildReturnSet(subjectId){
   for(const due of dueReturns(subjectId)){
     if(items.length >= RETURN_SET_SIZE) break;
     const v = unitView(subjectId, due.unitId);
-    const used = items.filter(i => i.unitId === due.unitId).map(i => i.caseId);
-    if(used.some(id => caseTarget(v, v.caseById(id)) === due.target)) continue;
-    const own = pickReturnCase(v, due.unitId, due.target, used);
-    if(!own) continue;
-    const pair = [own];
-    const neighbour = usualConfusion(v, due.unitId, due.target);
-    const beside = neighbour && pickReturnCase(v, due.unitId, neighbour, [...used, own.c.id]);
-    if(beside) pair.push(beside);
-    pair.forEach(p => {
-      if(p.repeat) logEvent('repeat', { subject: subjectId, unit: due.unitId, card: p.c.id });
-      items.push({ unitId: due.unitId, caseId: p.c.id });
+    returnItemsFor(v, due, items).forEach(p => {
+      if(p.repeat) logEvent('repeat', { subject: subjectId, unit: due.unitId, card: p.caseId });
+      items.push(p.fact ? { unitId: p.unitId, fact: p.fact } : { unitId: p.unitId, caseId: p.caseId });
     });
   }
   return items.slice(0, RETURN_SET_SIZE);

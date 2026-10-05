@@ -276,7 +276,8 @@ export async function testRebuiltUnit(env) {
   check(keys.some(k => k.startsWith('u2/commit:')), 'no commit prompt was recorded');
   check(keys.filter(k => !k.startsWith('u2/commit:') && items[k].tries.some(t => t.mode === 'check')).length >= 5, 'the checks were not recorded');
   check(keys.some(k => items[k].tries.some(t => t.mode === 'route' && t.context === 'unit')), 'no route item was recorded');
-  check(keys.filter(k => k.startsWith('u2/')).every(k => items[k].tries.every(t => t.rev === 1 && t.engine === 1 && /^\d{4}-\d\d-\d\d$/.test(t.d))), 'a try is missing its revision, engine or day');
+  const engine = await page.evaluate(() => FC.ENGINE);
+  check(keys.filter(k => k.startsWith('u2/')).every(k => items[k].tries.every(t => t.rev === 1 && t.engine === engine && /^\d{4}-\d\d-\d\d$/.test(t.d))), 'a try is missing its revision, engine or day');
   check(await page.evaluate(() => rebuiltUnitDone('psychology', 'u2')), 'Unit Two is not done at standard 1');
   await page.click('[data-v="subject"]');
   await shot(page, 'subject-after');

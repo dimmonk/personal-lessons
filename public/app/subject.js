@@ -6,6 +6,52 @@ function drillOf(u, subj){
   return 'drill: ' + subj.quickDrills.find(q => q.key === u.drill.key).title.toLowerCase();
 }
 
+function oldDetCard(subj, d){
+  return `<div class="block"><div class="card">
+      <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px">
+        <div style="display:flex;flex-direction:column;gap:5px">
+          <span class="m a">The key</span>
+          <span style="font-size:19px;font-weight:700;letter-spacing:-.02em">Full determination</span>
+        </div>
+        <span style="color:var(--accent);display:flex">${icon('target',26)}</span>
+      </div>
+      <p style="margin:0;font-size:14px;line-height:1.5;color:var(--dim)">${esc(detBlurb(subj))}</p>
+      <div class="statrow">
+        <span class="stat"><b>${d.n}/${subj.specimens.length}</b><span>Determined</span></span>
+        <span class="stat"><b>${d.n ? d.label : '&mdash;'}</b><span>Name</span></span>
+        <span class="stat"><b>${d.n ? d.frame : '&mdash;'}</b><span>Route</span></span>
+      </div>
+      <button class="btn ghost sm" data-v="det">${d.n ? 'Continue the determination' : 'Run the determination'}</button>
+    </div></div>`;
+}
+// the old drills (scored quick drills, faulty claims) and, for each finished rebuilt unit, "Practise again"
+function drillsSection(subj, S){
+  const old = !isFullyRebuilt(subj), again = againTilesHtml(subj) + claimsTileHtml(subj);
+  if(!old && !again) return '';
+  const tiles = old ? subj.quickDrills.map(q => {
+    const sc = S.stats[q.key];
+    const cls = !sc.n ? '' : (sc.ok === q.items.length ? 'ok' : 'part');
+    return `<button class="tile" data-d="${q.key}">
+          <span class="tt">${esc(q.title)}</span>
+          <span class="tf"><span class="m s">${q.items.length} items</span>
+            <b class="${cls}">${sc.n ? sc.ok + '/' + sc.n : '&mdash;'}</b></span>
+        </button>`;
+  }).join('') : '';
+  const claims = old ? `<button class="tile un" data-v="err">
+        <span class="tt">Faulty claims</span>
+        <span class="tf"><span class="m s">${subj.errDrill.length} claims</span>
+          <b>${S.stats.err.seen ? S.stats.err.seen + ' seen' : 'unscored'}</b></span>
+      </button>` : '';
+  const count = old ? `${subj.quickDrills.length} scored &middot; 1 not` : `${againUnits(subj).length} to practise again`;
+  return `<div class="sect top"><span class="m">Drills</span><span class="m s">${count}</span></div>
+    <div class="grid">${tiles}${claims}${again}</div>`;
+}
+function keyGlance(subj){
+  if(!FC.get(subj.id).key) return '';
+  const map = keyMapSection(subjectView(subj.id), 'plain');
+  return map ? `<div class="sect"><span class="m">The key at a glance</span></div>${map}<div style="padding-bottom:22px"></div>` : '';
+}
+
 function renderSubject(subj){
   const S = st(subj), c = S.course, d = S.stats.det;
   const done = unitsDone(subj), total = subj.course.length;
@@ -34,45 +80,15 @@ function renderSubject(subj){
 
     <div class="block"><button class="btn" id="resume">${resumeText}${icon('arrow',17)}</button></div>
 
-    <div class="block"><div class="card">
-      <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px">
-        <div style="display:flex;flex-direction:column;gap:5px">
-          <span class="m a">The key</span>
-          <span style="font-size:19px;font-weight:700;letter-spacing:-.02em">Full determination</span>
-        </div>
-        <span style="color:var(--accent);display:flex">${icon('target',26)}</span>
-      </div>
-      <p style="margin:0;font-size:14px;line-height:1.5;color:var(--dim)">${esc(detBlurb(subj))}</p>
-      <div class="statrow">
-        <span class="stat"><b>${d.n}/${subj.specimens.length}</b><span>Determined</span></span>
-        <span class="stat"><b>${d.n ? d.label : '&mdash;'}</b><span>Name</span></span>
-        <span class="stat"><b>${d.n ? d.frame : '&mdash;'}</b><span>Route</span></span>
-      </div>
-      <button class="btn ghost sm" data-v="det">${d.n ? 'Continue the determination' : 'Run the determination'}</button>
-    </div></div>
+    ${dueTileForSubject(subj)}
+    ${keyGlance(subj)}
+    ${isFullyRebuilt(subj) ? detCardNew(subj) : oldDetCard(subj, d)}
 
     <div class="sect"><span class="m">Course</span>
       <span class="m s">${total} units &middot; ${subj.cardCount} cards</span></div>
     <div class="rows">${subj.course.map((u,i) => unitRow(subj, u, i)).join('')}</div>
 
-    <div class="sect top"><span class="m">Drills</span>
-      <span class="m s">${subj.quickDrills.length} scored &middot; 1 not</span></div>
-    <div class="grid">
-      ${subj.quickDrills.map(q => {
-        const sc = S.stats[q.key];
-        const cls = !sc.n ? '' : (sc.ok === q.items.length ? 'ok' : 'part');
-        return `<button class="tile" data-d="${q.key}">
-          <span class="tt">${esc(q.title)}</span>
-          <span class="tf"><span class="m s">${q.items.length} items</span>
-            <b class="${cls}">${sc.n ? sc.ok + '/' + sc.n : '&mdash;'}</b></span>
-        </button>`;
-      }).join('')}
-      <button class="tile un" data-v="err">
-        <span class="tt">Faulty claims</span>
-        <span class="tf"><span class="m s">${subj.errDrill.length} claims</span>
-          <b>${S.stats.err.seen ? S.stats.err.seen + ' seen' : 'unscored'}</b></span>
-      </button>
-    </div>
+    ${drillsSection(subj, S)}
 
     <div style="padding-top:26px">
       <button class="row sm" data-ref="units">
@@ -92,6 +108,9 @@ function renderSubject(subj){
   on('[data-u]', el => openUnit(subj, +el.dataset.u));
   on('[data-d]', el => go('drill', {drillKey: el.dataset.d}));
   on('[data-ref]', el => go('reference', {refMode: el.dataset.ref}));
+  on('[data-due]', el => startDue(el.dataset.due));
+  on('[data-again]', el => startAgain(subj.id, el.dataset.again));
+  on('[data-claims]', () => startClaims(subj.id));
   on('#resume', () => resumeSubject(subj.id));
 }
 

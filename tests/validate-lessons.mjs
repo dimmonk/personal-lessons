@@ -8,7 +8,7 @@ import { parseTargetArgs } from './lessons/paths.mjs';
 import { readJsonIfPresent, readCommittedJson } from './lessons/lockfile.mjs';
 import { collectSite, collectValidatorSources } from './lessons/site.mjs';
 
-export async function gatherInput({ publicDir, lockFile, standard0File }) {
+export async function gatherInput({ publicDir, lockFile, standard0File, heldFile }) {
   const data = await loadFromPublic(publicDir);
   return {
     data,
@@ -16,6 +16,8 @@ export async function gatherInput({ publicDir, lockFile, standard0File }) {
     committedLock: readCommittedJson(lockFile),
     standard0: standard0File ? await readJsonIfPresent(standard0File) : null,
     committedStandard0: standard0File ? readCommittedJson(standard0File) : null,
+    held: heldFile ? await readJsonIfPresent(heldFile) : null,
+    committedHeld: heldFile ? readCommittedJson(heldFile) : null,
     site: await collectSite(publicDir),
     validatorSources: await collectValidatorSources()
   };
@@ -37,6 +39,7 @@ async function main() {
     return;
   }
   console.log(`✓ ${result.checks} lesson checks passed across ${result.units} units`);
+  if (result.held && result.held.length > 0) console.log(`  ${result.held.length} findings are held, not fixed (tests/lessons/held-findings.json, V58):\n${result.held.map(f => `    - ${f.message}`).join('\n')}`);
 }
 
 main().catch(error => { console.error(error.message); process.exit(1); });

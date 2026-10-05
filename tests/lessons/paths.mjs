@@ -1,4 +1,4 @@
-// Command-line paths for the lesson tools: --public <dir>, --lock <file>, --standard0 <file>.
+// Command-line paths for the lesson tools: --public <dir>, --lock <file>, --standard0 <file>, --held <file>.
 import { pathToFileURL } from 'node:url';
 import { resolve, dirname, basename } from 'node:path';
 
@@ -6,7 +6,8 @@ export const REPO = new URL('../../', import.meta.url);
 export const DEFAULTS = {
   publicDir: new URL('public/', REPO),
   lockFile: new URL('tests/lessons.lock.json', REPO),
-  standard0File: new URL('tests/lessons/standard0-units.json', REPO)
+  standard0File: new URL('tests/lessons/standard0-units.json', REPO),
+  heldFile: new URL('tests/lessons/held-findings.json', REPO)
 };
 
 const toUrl = (p, trailingSlash) => {
@@ -20,7 +21,7 @@ export function parseTargetArgs(argv) {
   const rest = [];
   for (let i = 0; i < argv.length; i += 1) {
     const arg = argv[i];
-    if (['--public', '--lock', '--standard0'].includes(arg)) {
+    if (['--public', '--lock', '--standard0', '--held'].includes(arg)) {
       if (i + 1 >= argv.length) throw new Error(`${arg} needs a value`);
       options[arg.slice(2)] = argv[i + 1];
       i += 1;
@@ -30,7 +31,8 @@ export function parseTargetArgs(argv) {
   const lockFile = options.lock ? toUrl(options.lock, false) : DEFAULTS.lockFile;
   const own = !options.public;
   const standard0File = options.standard0 ? toUrl(options.standard0, false) : own ? DEFAULTS.standard0File : null;
-  return { publicDir, lockFile, standard0File, rest };
+  const heldFile = options.held ? toUrl(options.held, false) : own ? DEFAULTS.heldFile : null;
+  return { publicDir, lockFile, standard0File, heldFile, rest };
 }
 
 export const dirOf = fileUrl => dirname(fileUrl.pathname);

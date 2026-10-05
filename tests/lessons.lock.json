@@ -1,0 +1,16 @@
+{
+  "standard": 1,
+  "subjects": {
+    "psychology": {
+      "rev": 1,
+      "fp": "sha256:09ea799c2f69914e08f15763ff70a2530ff94622ebf2399733909dd641e1d3c6"
+    }
+  },
+  "units": {
+    "psychology/u2": {
+      "rev": 1,
+      "standard": 1,
+      "fp": "sha256:bc1c0e9633f5cd11cb707d5f3a526819f39f9333051af80deeba9143a16657c3"
+    }
+  }
+}

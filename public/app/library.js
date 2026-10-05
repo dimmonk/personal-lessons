@@ -36,6 +36,7 @@ function renderLibrary(){
       <p>Learn the questions that decide a call, then drill them on cases that arrive unlabelled.</p>
     </div>
     <button class="searchfield" data-v="search">${icon('search',16)}<span>Search subjects, units, drills</span></button>
+    ${dueTileForLibrary()}
     ${cont ? continueCard(cont) : ''}
     <div class="chips">${chips.map(([k,label]) =>
       `<button class="chip ${APP.filter===k?'on':''}" data-f="${k}">${esc(label)}</button>`).join('')}</div>
@@ -48,7 +49,7 @@ function renderLibrary(){
         <span class="sigil">${s.keyNo}</span>
         <span class="grow">
           <span class="t">${esc(s.name)}</span>
-          <span class="s">${s.course.length} units &middot; ${s.quickDrills.length} drills &middot; ${s.outcomes.length} names</span>
+          <span class="s">${s.course.length} units &middot; ${s.quickDrills.length ? s.quickDrills.length + ' drills &middot; ' : ''}${s.outcomes.length} names</span>
         </span>
         <span class="end">${progressMark(s)}</span>
         ${icon('chevron')}
@@ -61,6 +62,7 @@ function renderLibrary(){
   on('[data-v]', el => go(el.dataset.v));
   on('#sortBtn', () => { APP.sort = APP.sort === 'az' ? 'recent' : 'az'; saveApp(); renderLibrary(); });
   on('[data-resume]', el => resumeSubject(el.dataset.resume));
+  on('[data-due]', el => startDue(el.dataset.due));
 }
 
 /* Where "resume" actually lands: after a finished unit, the next one. */

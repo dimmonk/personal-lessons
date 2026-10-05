@@ -5,13 +5,15 @@
 // every screen one under another.
 
 // What the learner is shown for one thing the item tested: { cardId, heading } | { text } | null.
-// what = { name } | { step } | { ledger } | { portrait }
+// what = { name } | { step } | { ledger } | { portrait } | { fact } | { solved }
 function taughtOnCard(v, T, what){
   const cards = v.cardOrder.map(v.card);
   const link = card => card ? { cardId: card.id, heading: cardHeading(v, T, card) } : null;
   const ofName = (kind, id) => cards.find(k => k.kind === kind && (k.outcome || k.family) === id);
   if(what.name) return link(ofName('meet', what.name));
   if(what.portrait) return link(ofName('portrait', what.portrait));
+  if(what.fact) return link(v.card(v.fact(what.fact).card));
+  if(what.solved) return link(ofName('solved', what.solved) || ofName('meet', what.solved));
   if(what.ledger){
     const entry = v.ledger(what.ledger);
     return link(cards.find(k => k.ledger === entry.id) || (entry.taughtIn ? v.card(entry.taughtIn) : null));
@@ -28,8 +30,8 @@ function taughtOnCard(v, T, what){
 function answeredUi(T, v, card, step){
   if(card.kind === 'again') return { picked: tappableCase(T, v.caseById(card.second), card.prompt.answer, null).right, step, note: {} };
   if(card.kind === 'exception') return { picked: tappableCase(T, v.caseById(card.case), card.prompt.answer, null).right, step, note: {} };
-  if(card.kind === 'lookalike') return { picked: card.prompt.answer === card.cases[0] ? 'A' : 'B', step, note: {} };
-  if(card.kind === 'worked') return { picked: card.hold.prompt.answer, step, note: {} };
+  if(card.kind === 'lookalike') return { picked: card.prompt.answer === (card.facts || card.cases)[0] ? 'A' : 'B', step, note: {} };
+  if(card.kind === 'worked' || card.kind === 'solved') return { picked: card.hold.prompt.answer, step, note: {} };
   return { picked: null, step, note: {} };
 }
 function sheetBody(v, T, card){

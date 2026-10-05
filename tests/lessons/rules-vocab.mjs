@@ -43,7 +43,8 @@ function V2(ctx, check) {
 /* ---------- V3 ---------- */
 const lookupToken = (ctx, { kind, ref }) => {
   try {
-    if (['o', 'plain', 'needs'].includes(kind)) ctx.outcome(ref);
+    if (['o', 'plain', 'needs'].includes(kind)) return Boolean(ctx.things[ref]);
+    else if (kind === 'f') return Boolean(ctx.rows && ctx.rows[ref]);
     else if (kind === 'q') ctx.step(ref);
     else if (['a', 'when'].includes(kind)) ctx.option(...ref.split('.'));
     else if (['t', 'means'].includes(kind)) ctx.term(ref);

@@ -4,7 +4,7 @@
 
 const paras = text => text == null ? [] : Array.isArray(text) ? text : [text];
 const cuesOf = (c, step) => c.cues && c.cues[step] ? paras(c.cues[step]) : [];
-const TOKEN = /\{(o|plain|needs|q|a|when|t|means|test|cue):([^}]+)\}/g;
+const TOKEN = /\{(o|plain|needs|q|a|when|t|means|test|cue|f):([^}]+)\}/g;
 const lowerFirst = s => s.charAt(0).toLowerCase() + s.slice(1);
 const joinWords = (list, last = 'and') => list.length < 2 ? list.join('') : list.slice(0, -1).join(', ') + ` ${last} ` + list[list.length - 1];
 const byId = list => Object.fromEntries(list.map(x => [x.id, x]));
@@ -57,6 +57,13 @@ const SAY = {
   confused: 'This card confused me',
   confusedNoted: 'Noted, with this unit’s revision. It stays on this device.',
   answerToGoOn: 'Answer above to go on',
+  // Back inside a drill (E11): a unit's drill goes back to the cards; a returned set or Practise again goes back to the subject
+  backToCards: 'Back to the cards',
+  backFrom: name => `Back to ${name}`,
+  // the card list beside a unit, 1280px and up (E2): a heading can carry a name that is not taught yet, so cards not reached are numbered only
+  cardsNotReached: 'Not reached yet',
+  theDrill: 'The drill',
+  cardCount: n => `${n} cards`,
   stopsHere: 'This case leaves the part of the key you have been taught. The questions that follow this answer come in a part of the course you have not reached, so the case stops here.',
   rightNameWrongRoute: 'Right name, wrong route',
   wouldChange: 'What would make it a different name',
@@ -64,11 +71,65 @@ const SAY = {
   drillIntro: (stages, earlier) => `The cards are out of view from here, and every case is new. The drill has ${numWord(stages)} stage${stages === 1 ? '' : 's'}. Cases that are easy to mix up are placed next to each other on purpose. This is meant to feel harder than the questions between the cards: telling look-alikes apart side by side is what makes the difference stick. `
     + (earlier ? `${cap(numWord(earlier))} of the cases come${earlier === 1 ? 's' : ''} from an earlier unit, without being labelled. ` : '')
     + 'Nothing here is graded. A miss only decides what comes back. What you miss is asked again before the drill ends, and every name comes back on later days with a new case.',
+  // fact units (A12)
+  factsToHold: 'This unit is facts to hold, not a skill to apply. There is no route to follow. Each fact is something you will be asked from memory, and it comes back on later days.',
+  factsCount: (facts, groups) => `The unit holds ${numWord(facts)} fact${facts === 1 ? '' : 's'}, in ${numWord(groups)} group${groups === 1 ? '' : 's'}:`,
+  howTaughtFacts: 'Each group starts with a case, then the idea in plain words, then the facts. After each fact you are asked it from memory, and the answer and how it fits are shown straight away.',
+  factCheckHeading: 'A question from memory',
+  factStem: q => esc(q),
+  whichFactStem: answer => `Which of these two facts has the answer ${answer}?`,
+  factColumns: ['The fact', 'The answer'],
+  factRelates: 'How each fact fits the idea',
+  factFits: 'How it fits',
+  factAsked: 'Asked',
+  factAnswer: 'The answer',
+  factSwapped: (chosenAnswer, otherQ) => `You chose ${chosenAnswer}. That is the answer to a different fact: ${otherQ}`,
+  // procedure units (A12)
+  solvedProblem: 'The problem',
+  solvedResult: 'The result',
+  solvedStem: 'This step carries the idea. Every statement below is true of the problem. Before you read the reason, choose the one that explains why this step is done.',
+  workingLabel: 'The working, step by step',
+  solveLast: does => `The working is shown up to the last step. The last step is yours: ${esc(does)}. Choose what the problem comes to.`,
+  solveWhole: 'The whole problem is yours. Work it out, then choose the answer.',
+  solveRoute: 'Now work the problem with that procedure and choose the answer.',
+  slipLine: (text, slip) => `You chose ${text}. That is the answer you get when ${slip}`,
+  // separator items (E6)
+  separatorStem: (x, y) => `You cannot tell whether a case is ${x} or ${y}. Which of the key’s questions tells these two apart?`,
+  separatorSame: (q, answers) => `You chose ${q}. Both of these give the answer ${answers}, so that question does not separate them.`,
+  separatorSplit: (answers) => `That question gives ${answers}.`,
+  // action subjects (E18, E21)
+  planOptional: 'This card is optional. You can go on without a plan.',
+  planIfSee: 'If I see',
+  planThenIWill: 'then I will',
+  planSave: 'Save my plan',
+  planSaved: 'Saved on this device. With the next set of names that come back, it is shown to you once, and you can keep it, change it or drop it.',
+  planPick: 'Pick an example to start from, or write your own.',
+  baselineHeading: 'A few questions before you start',
+  baselineAsk: 'Is this real, or is something wrong with it?',
+  baselineReal: 'Real',
+  baselineWrong: 'Something is wrong',
+  baselineWhy: 'And why? In a line, if you like.',
+  baselineIntro: unit => `Before ${unit}, a few cases. For each one, say whether it is real or something is wrong with it, and why if you can. Nothing is shown about your answers until you finish ${unit}, and they are never scored. They only show where you started.`,
+  baselineKept: unit => `Kept. Nothing is shown about this one until you finish ${unit}.`,
+  baselineAfter: unit => `Before ${unit}, you were asked about these cases. Here is what each one was.`,
+  baselineSaid: said => `You said: ${said}.`,
+  baselineWas: real => real ? 'It was real.' : 'Something was wrong with it.',
+  // the faulty-claims tile (E14)
+  claimsTitle: 'Faulty claims',
+  claimsIntro: 'These are claims from the units you have finished. Each one has a fault, and each is asked from memory.',
+  claimsTile: n => `${n} claim${n === 1 ? '' : 's'} from finished units`,
+  soundHead: 'Cases where nothing was wrong',
+  unsoundHead: 'Cases where something was wrong',
   stage: {
+    last: () => 'Each problem is worked up to its last step. The last step is yours: choose what it gives. Every wrong choice is the answer one particular slip produces, and after you answer the slip is named.',
+    whole: () => 'The whole problem is yours. Work it out, then choose the answer. Every wrong choice is the answer one particular slip produces, and after you answer the slip is named.',
+    routeSolve: () => 'No help. First answer the key’s questions in order and give the kind of problem it is. Then work the problem with that procedure and choose the answer.',
+    fact: () => 'Each fact is asked from memory. The other facts from its card are the choices. Facts that are easy to swap are placed next to each other on purpose.',
     name: single => 'The key’s answers are shown for each case. Give the name that goes with them.' + (single ? ' This stage practises one thing: which name goes with which answer.' : ''),
     piece: () => 'One question at a time.',
     finish: shownCount => `${shownCount === 1 ? 'The first answer is shown.' : 'The first answers are shown.'} Answer the rest, then give the name. From here on your route is marked as well as the name: a right name reached by a wrong answer on the way counts as a miss.`,
     route: () => 'No help. Answer every question in the key’s order, then give the name.',
+    claimsAlone: () => 'Each of these is something a person might say that uses one of the names you have been taught, or reasons in one of the ways you have been taught. Each has a fault. Answer before the fault is shown.',
     claim: () => 'Each of these is something a person might say that uses one of this unit’s names, or reasons in one of its ways. Each has a fault. The first is worked for you. For the rest, answer before the fault is shown.'
   }
 };
@@ -77,8 +138,9 @@ const SAY = {
 function subjectView(subjectId){
   const data = FC.get(subjectId);
   const key = data.key || lessonFail(`${subjectId} has no key`);
-  const steps = [key.gate, ...Object.values(key.branches).flat()];
-  const families = key.gate.options;
+  // a subject made only of fact units has no questions: its key has no gate and no branches
+  const steps = [...(key.gate ? [key.gate] : []), ...Object.values(key.branches || {}).flat()];
+  const families = key.gate ? key.gate.options : [];
   const caseIndex = {};
   Object.entries(data.cases).forEach(([unitId, list]) => list.forEach(c => { caseIndex[c.id] = { ...c, unitId }; }));
   const outcome = id => key.outcomes.find(o => o.id === id) || lessonFail(`unknown outcome ${id}`);
@@ -90,6 +152,8 @@ function subjectView(subjectId){
     : (families.find(f => f.id === id) || lessonFail(`unknown outcome or family ${id}`));
   return {
     subjectId, data, key, steps, meta: data.meta, outcome, step, option, thing, isOutcome,
+    // a case where nothing is wrong (action subjects, lesson standard E21): its name is marked legit in the key
+    isLegit: id => !!thing(id).legit,
     term: id => (key.terms || []).find(t => t.id === id) || lessonFail(`unknown term ${id}`),
     caseById: id => caseIndex[id] || lessonFail(`unknown case ${id}`),
     casesOf: unitId => data.cases[unitId] || [],
@@ -115,19 +179,25 @@ function unitView(subjectId, unitId){
   const cards = byId(sv.data.cards[unitId] || []);
   const cardOrder = unit.parts.flatMap(p => [...p.cards, ...(p.close || [])]);
   const isGate = !!(unit.teaches.families && unit.teaches.families.length);
-  const taught = isGate ? unit.teaches.families : unit.teaches.outcomes;
+  // a fact unit has no outcomes: what it holds is every row of its facts cards, found once from the cards themselves
+  const isFacts = unit.kind === 'F';
+  const rows = {};
+  (sv.data.cards[unitId] || []).filter(k => k.kind === 'facts').forEach(k => k.rows.forEach(r => { rows[r.id] = { ...r, card: k.id }; }));
+  const taught = isFacts ? Object.keys(rows) : isGate ? unit.teaches.families : unit.teaches.outcomes;
   const ledger = id => unit.ledger.find(l => l.id === id) || lessonFail(`unknown look-alike entry ${id}`);
   return {
-    ...sv, unit, unitId, cards, cardOrder, isGate, taught,
+    ...sv, unit, unitId, cards, cardOrder, isGate, isFacts, taught,
     card: id => cards[id] || lessonFail(`unknown card ${id}`),
+    isFact: id => !!rows[id],
+    fact: id => rows[id] || lessonFail(`unknown fact ${id}`),
     ledger,
     ledgerFor: (a, b) => unit.ledger.find(l => l.pair.includes(a) && l.pair.includes(b) && a !== b) || null,
     // questions taught by the units this one assumes, and by this one
     assumedSteps: sv.steps.filter(s => unit.assumes.includes(s.unit)),
     unitSteps: unit.teaches.steps.map(sv.step),
     title: unit.title.fromKey ? sv.option(...unit.title.fromKey.split('.')).n : unit.title.text,
-    // the name of a taught thing: an outcome's name, or in a gate unit the answer text of the family
-    nameOf: id => sv.thing(id).n
+    // the name of a taught thing: an outcome's name, in a gate unit the answer text of the family, in a fact unit the fact's question
+    nameOf: id => rows[id] ? rows[id].q : sv.thing(id).n
   };
 }
 
@@ -150,6 +220,7 @@ function lessonText(v){
       case 'when': return esc(v.option(...splitRef(ref)).when);
       case 't': return `<i>${esc(v.term(ref).n)}</i>`;
       case 'means': return esc(v.term(ref).means);
+      case 'f': return esc(v.fact ? v.fact(ref).a : lessonFail(`{f:${ref}} outside a unit`));
       case 'test': return esc(v.ledger ? v.ledger(ref).test : lessonFail(`{test:${ref}} outside a unit`));
       default:
         if(!c || !cuesOf(c, ref).length) lessonFail(`{cue:${ref}} has no case or no marked words`);

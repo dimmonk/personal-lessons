@@ -1,12 +1,14 @@
 {
   "name": "fieldcraft",
   "private": true,
-  "description": "Fieldcraft — pragmatic knowledge. Static site in public/, no build step.",
+  "description": "Fieldcraft \u2014 pragmatic knowledge. Static site in public/, no build step.",
   "scripts": {
     "icons": "node scripts/render-icons.mjs",
     "test:data": "node tests/validate-data.mjs",
+    "test:lessons": "node tests/validate-lessons.mjs && node tests/lessons/negative-controls.mjs",
     "test:e2e": "node tests/e2e.mjs",
-    "test": "npm run test:data && npm run test:e2e",
+    "lock": "node tests/lessons/lock.mjs",
+    "test": "npm run test:data && npm run test:lessons && npm run test:e2e",
     "deploy": "npm test && firebase deploy --only hosting"
   },
   "devDependencies": {

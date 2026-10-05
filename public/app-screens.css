@@ -1,0 +1,31 @@
+/* The screens around the unit player: due today, practise again, the key map, the reference, the determination,
+   review-first, the practice record, and the card list beside a unit. Only what app.css does not already have;
+   cards, rows, tiles, buttons, tables, steps and feedback reuse its classes. */
+
+/* ---------- the key as a map ---------- */
+.keymap{padding-bottom:6px}
+.keymap ul{margin:0 0 16px}
+.keymap .mapq{margin:18px 0 8px;overflow-wrap:break-word}
+.keymap li{overflow-wrap:break-word}
+
+/* ---------- a drill's Back control, above the drill ---------- */
+.drillnav{display:flex;align-items:center;padding:10px 0 0}
+.drillnav .linkish{display:inline-flex;align-items:center;gap:6px;min-height:44px}
+
+/* ---------- the plan reminder, review-first and the reference ---------- */
+.reviewfirst .lsec:first-child{margin-top:0}
+.reviewfirst .btn{margin-top:16px}
+.fg .lsec:first-child{margin-top:0}
+.fg-body .passage{margin-bottom:14px}
+
+/* ---------- the card list beside a unit (1280px and up; app.css hides .aside below that) ---------- */
+@media(min-width:1280px){
+  .acard{text-align:left}
+  .acard.locked{color:var(--disabled);cursor:default}
+  .acard.locked:hover{color:var(--disabled)}
+  .acard span{min-width:0;overflow-wrap:break-word}
+}
+
+/* ---------- the practice record ---------- */
+[data-practice-record] table.k.results{max-width:none}
+[data-practice-record] .btn{margin-top:4px}

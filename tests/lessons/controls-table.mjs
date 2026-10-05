@@ -23,6 +23,16 @@ const find = (list, id) => list.find(x => x.id === id);
 const withOldUnit = (id, extra) => (data, h) => h.setIn(data, ['subjects', P, 'units', id], { id, standard: 0, rev: 0, ...extra });
 const listedOld = id => input => ({ ...input, standard0: { units: [`${P}/${id}`] }, committedStandard0: { units: [`${P}/${id}`] } });
 
+// The units of the fixtures that stand for the other kinds (kind-fixtures.mjs)
+const FACT = ['subjects', 'facttest'], PROC = ['subjects', 'proctest'], GATE = ['subjects', 'gatetest'];
+const fcard = id => [...FACT, 'cards', 'u1', { id }];
+const funit = (...rest) => [...FACT, 'units', 'u1', ...rest];
+const pcard = id => [...PROC, 'cards', 'u1', { id }];
+const pcase = id => [...PROC, 'cases', 'u1', { id }];
+const punit = (...rest) => [...PROC, 'units', 'u1', ...rest];
+const fpart = (id, field) => funit('parts', { id }, field);
+const ppart = (id, field) => punit('parts', { id }, field);
+
 export const CONTROLS = [
   { rule: 'V0', name: 'a card holds a field the shape does not have',
     data: (d, h) => h.setIn(d, [...card('orient'), 'bogus'], 'x') },
@@ -148,7 +158,67 @@ export const CONTROLS = [
     // the ledger step is also what V15 checks against the key's answers, so the same fault turns both red
     data: (d, h) => h.updateIn(d, unit('ledger'), l => l.map(e => ({ ...e, step: 'D1' }))) },
   { rule: 'V56', name: 'two units share a title',
-    data: withOldUnit('u3', { title: { text: 'One person’s reasoning' } }), input: listedOld('u3') }
+    data: withOldUnit('u3', { title: { text: 'One person’s reasoning' } }), input: listedOld('u3') },
+
+  /* ----- section 15: the legit marker, the legacy files, and the rules of the other kinds of unit ----- */
+  { rule: 'V0', name: 'an outcome is marked legit with something that is not true',
+    data: (d, h) => h.setIn(d, key('outcomes', { id: 'fair' }, 'legit'), 'yes') },
+  { rule: 'V0', name: 'a ledger entry of a classification unit names no step',
+    data: (d, h) => h.removeIn(d, unit('ledger', { id: 'dissonance~fair' }, 'step')) },
+  { rule: 'V37', name: 'a stage of an action subject asks about cases and none is a case where nothing is wrong', also: ['V25', 'V44'],
+    // action: true also turns on the plan card (V25) and a fourth return per outcome (V44); the fault cannot avoid them
+    data: (d, h) => {
+      const action = h.setIn(h.setIn(d, meta('action'), true), key('outcomes', { id: 'fair' }, 'legit'), true);
+      return h.updateIn(action, rung('route'), r => ({ ...r, items: r.items.map(g => g.filter(i => i !== 'fair')).filter(g => g.length) }));
+    } },
+  { rule: 'V32', name: 'a baseline case is in no subject.baseline list',
+    data: (d, h) => h.updateIn(d, ['subjects', P, 'cases', U], cs => [...cs, { id: 'base-x', use: 'baseline', tier: 'clean', setting: 'work', topic: 'x', text: 'A made-up case.' }]) },
+  { rule: 'V58', name: 'a held finding no longer fires', input: input => ({ ...input, held: { held: ['V2 psychology: a line that is no longer typed'] }, committedHeld: { held: ['V2 psychology: a line that is no longer typed'] } }) },
+  { rule: 'V58', name: 'a finding was added to the held list', input: input => ({ ...input, held: { held: ['V2 psychology: a new finding'] }, committedHeld: { held: [] } }) },
+  { rule: 'V47', name: 'the old data of a subject is over the line limit and stays exempt', green: true, keepLock: true,
+    input: input => ({ ...input, site: { ...input.site, files: [...input.site.files, { path: 'subjects/civics/standard0.js', lines: 1308 }] } }) },
+
+  { base: 'fact', rule: 'V0', name: 'a fact check names a row that is on another facts card',
+    data: (d, h) => h.setIn(d, [...fcard('chk-t-house'), 'ask', 'row'], 'n-house') },
+  { base: 'fact', rule: 'V0', name: 'a solved card of a fact unit has a field the shape does not have',
+    data: (d, h) => h.setIn(d, [...fcard('facts-terms'), 'bogus'], 'x') },
+  { base: 'fact', rule: 'V3', name: 'a {f:} token names a fact that is not in the unit', only: true,
+    data: (d, h) => h.updateIn(d, [...fcard('look-terms'), 'difference'], appended('See {f:nosuch}.')) },
+  { base: 'fact', rule: 'V10', name: 'the orient card of a fact unit draws a preview map', only: true,
+    data: (d, h) => h.setIn(d, [...fcard('orient'), 'map'], { branch: 'x' }) },
+  { base: 'fact', rule: 'V25', name: 'a fact unit does not close with its recap',
+    data: (d, h) => h.setIn(d, fpart('p2', 'close'), []) },
+  { base: 'fact', rule: 'V38', name: 'a fact unit has a stage that is not the fact stage',
+    data: (d, h) => h.updateIn(d, funit('drill', 'rungs'), r => [...r, { ask: 'name', items: [[{ fact: 't-house' }]] }]) },
+  { base: 'fact', rule: 'V39', name: 'a fact is asked by no item of the fact stage',
+    data: (d, h) => h.updateIn(d, funit('drill', 'rungs', { ask: 'fact' }, 'items'), items => items.filter(g => !g.some(i => i.fact === 'n-states'))) },
+  { base: 'fact', rule: 'V44', name: 'two facts the ledger pairs are asked in different groups',
+    data: (d, h) => h.updateIn(d, funit('drill', 'rungs', { ask: 'fact' }, 'items'), items => items.flatMap(g => g.some(i => i.fact === 't-house') ? g.map(i => [i]) : [g])) },
+  { base: 'fact', rule: 'V57', name: 'a fact has no check that asks it from memory',
+    data: (d, h) => h.updateIn(h.updateIn(d, fpart('p1', 'cards'), c => without(c, 'chk-t-house')), [...FACT, 'cards', 'u1'], c => c.filter(x => x.id !== 'chk-t-house')) },
+  { base: 'fact', rule: 'V57', name: 'two facts of one card have the same answer',
+    data: (d, h) => h.setIn(d, [...fcard('facts-terms'), 'rows', { id: 't-senate' }, 'a'], 'Two years') },
+
+  { base: 'procedure', rule: 'V0', name: 'a wrong choice of a problem names no slip',
+    data: (d, h) => h.updateIn(d, [...pcase('dl-of1'), 'answer', 'choices'], cs => cs.map(x => x.id === d.subjects.proctest.cases.u1.find(c => c.id === 'dl-of1').answer.right ? x : { id: x.id, text: x.text })) },
+  { base: 'procedure', rule: 'V0', name: 'a solved card has no hold',
+    data: (d, h) => h.removeIn(d, [...pcard('solved-of-1'), 'hold']) },
+  { base: 'procedure', rule: 'V18', name: 'a procedure has one solved card',
+    data: (d, h) => h.setIn(d, [...pcard('solved-of-2'), 'outcome'], 'change') },
+  { base: 'procedure', rule: 'V18', name: 'the step that carries the idea has a why of its own',
+    data: (d, h) => h.setIn(d, [...pcard('solved-of-1'), 'steps', d.subjects.proctest.cards.u1.find(c => c.id === 'solved-of-1').hold.step, 'why'], 'A second copy of the reason.') },
+  { base: 'procedure', rule: 'V38', name: 'the stages of a procedure unit are out of order',
+    data: (d, h) => h.updateIn(d, punit('drill', 'rungs'), r => [r[1], r[0], r[2]]) },
+  { base: 'procedure', rule: 'V39', name: 'a procedure is never the problem of a last item', also: ['V32', 'V40'],
+    // the problems taken out are then used by nothing (V32), and what is left of each group is a single problem (V40)
+    data: (d, h) => h.updateIn(d, punit('drill', 'rungs', { ask: 'last' }, 'items'), items => items.map(g => g.filter(id => !id.startsWith('dl-ch')))) },
+  { base: 'procedure', rule: 'V40', name: 'a group of problems is held together by no look-alike pair',
+    data: (d, h) => h.updateIn(d, punit('drill', 'rungs', { ask: 'whole' }, 'items'), items => items.flatMap(g => g.map(id => [id]))) },
+  { base: 'procedure', rule: 'V44', name: 'a procedure has too few problems for later days', also: ['V32'],   // the problem left out is then used by nothing
+    data: (d, h) => h.updateIn(d, punit('drill', 'returns'), r => without(r, 'rt-of3')) },
+
+  { base: 'gate', rule: 'V38', name: 'a gate unit has a name stage',
+    data: (d, h) => h.updateIn(d, [...GATE, 'units', 'u1', 'drill', 'rungs'], r => [{ ask: 'name', items: [['d-1']] }, ...r]) }
 ];
 
 // Rules with no control, and why. A rule must be in CONTROLS or here.

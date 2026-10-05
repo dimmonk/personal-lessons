@@ -20,7 +20,11 @@ function render(){
     case 'unitdrill': return renderUnitDrill(subj);
     case 'unitdone':  return renderUnitDone(subj);
     case 'drill':     return renderDrill(subj);
-    case 'det':       return renderDet(subj);
+    case 'det':       return isFullyRebuilt(subj) ? renderDetNew(subj) : renderDet(subj);
+    case 'due':       return renderDue(subj);
+    case 'again':     return renderAgain(subj);
+    case 'claims':    return renderClaims(subj);
+    case 'reviewfirst': return renderReviewFirst(subj);
     case 'err':       return renderErr(subj);
     case 'reference': return renderReference(subj);
     default:          return renderLibrary();

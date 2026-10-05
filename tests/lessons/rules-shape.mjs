@@ -28,18 +28,20 @@ function keyIds(s) {
   ];
 }
 
+const gateOptions = key => key.gate ? key.gate.options : [];
+
 function keyReferences(s) {
   const unitIds = s.meta.units || [];
   const outcomes = s.key.outcomes.flatMap(o => [
     ...missing(unitIds.includes(o.unit), `outcome ${o.id}: unit "${o.unit}" in subject.units`),
-    ...missing(s.key.gate.options.some(g => g.id === o.group), `outcome ${o.id}: group "${o.group}" among the gate's answers`)]);
+    ...missing(gateOptions(s.key).some(g => g.id === o.group), `outcome ${o.id}: group "${o.group}" among the gate's answers`)]);
   const terms = (s.key.terms || []).flatMap(t => missing(unitIds.includes(t.unit), `term ${t.id}: unit "${t.unit}" in subject.units`));
   const steps = s.steps.flatMap(st => [
     ...missing(unitIds.includes(st.unit), `step ${st.code}: unit "${st.unit}" in subject.units`),
     ...st.options.flatMap(o => [
       ...o.keeps.flatMap(id => missing(s.outcomes[id], `${st.code}.${o.id} keeps outcome "${id}", which`)),
       ...(o.yieldsTo || []).flatMap(y => missing(st.options.some(x => x.id === y.option), `${st.code}.${o.id} yieldsTo "${y.option}", which is not an answer of the same question and`))])]);
-  const branches = Object.keys(s.key.branches).flatMap(id => missing(s.key.gate.options.some(g => g.id === id), `branch "${id}" is not an answer of the gate and`));
+  const branches = Object.keys(s.key.branches).flatMap(id => missing(gateOptions(s.key).some(g => g.id === id), `branch "${id}" is not an answer of the gate and`));
   return [...outcomes, ...terms, ...steps, ...branches];
 }
 
@@ -78,11 +80,12 @@ function teachesReferences(u) {
     ...teaches.steps.flatMap(c => missing(u.steps.some(st => st.code === c), `teaches.steps "${c}"`)),
     ...teaches.outcomes.flatMap(id => missing(u.outcomes[id], `teaches.outcomes "${id}"`)),
     ...teaches.terms.flatMap(id => missing(u.terms[id], `teaches.terms "${id}"`)),
-    ...(teaches.families || []).flatMap(id => missing(u.key.gate.options.some(o => o.id === id), `teaches.families "${id}"`)),
+    ...(teaches.families || []).flatMap(id => missing(gateOptions(u.key).some(o => o.id === id), `teaches.families "${id}"`)),
     ...assumes.flatMap(id => missing(earlier.includes(id), `assumes "${id}", which must be an earlier unit of this subject; it`)),
     ...ledger.flatMap(l => [
-      ...l.pair.flatMap(id => missing(u.outcomes[id], `ledger ${l.id}: outcome "${id}"`)),
-      ...missing(u.steps.some(st => st.code === l.step), `ledger ${l.id}: step "${l.step}"`),
+      ...l.pair.flatMap(id => u.kindName === 'fact' ? missing(u.rows[id], `ledger ${l.id}: fact row "${id}"`) : missing(u.things[id], `ledger ${l.id}: outcome "${id}"`)),
+      // a ledger entry names the question that first separates its pair; a fact unit asks no question (S3)
+      ...(u.kindName === 'fact' ? [] : missing(u.steps.some(st => st.code === l.step), `ledger ${l.id}: step "${l.step}"`)),
       ...missing(!l.taughtIn || u.cardsById[l.taughtIn], `ledger ${l.id}: taughtIn "${l.taughtIn}"`)]),
     ...parts.flatMap(p => [...p.cards, ...(p.close || [])].flatMap(id => missing(u.cardsById[id], `part ${p.id} lists card "${id}", which`))),
     ...duplicatesOf(ledger.map(l => l.id)).map(id => `ledger id "${id}" is used twice`),
@@ -99,50 +102,70 @@ function cardShape(u, card) {
 }
 
 const caseExists = (u, id) => Boolean(u.cases[id] || u.specimens.some(s => s.id === id));
+// The references of a check: its case, the card it follows, and what it asks. A fact check has no case and sits after its facts card (S4).
+function checkReferences(u, c, outcome, step) {
+  const a = c.ask, after = u.cardsById[c.after];
+  if (a.type === 'fact') return [[`fact row "${a.row}"`, Boolean(u.rows[a.row])], [`after "${c.after}", the facts card of row "${a.row}"`, Boolean(after && u.rows[a.row] && u.rows[a.row].card === c.after)]];
+  const own = [['a case', Boolean(c.case)]];
+  const afterRef = a.type === 'phrase' || a.type === 'solve' || u.steps.some(st => st.code === c.after) ? ['after', true] : outcome(c.after);
+  if (a.type === 'solve') return [...own, afterRef];
+  return [...own, afterRef, step(a.step), ...(a.among || []).map(id => [`among option "${id}"`, u.steps.some(st => st.code === a.step && st.options.some(o => o.id === id))])];
+}
 // The id references of one card, as [what, ok] pairs.
 function cardReferences(u, c) {
-  const outcome = id => [`outcome "${id}"`, Boolean(u.outcomes[id])];
+  const outcome = id => [`outcome "${id}"`, Boolean(u.things[id])];
   const kase = id => [`case "${id}"`, Boolean(u.cases[id])];
   const step = code => [`step "${code}"`, u.steps.some(st => st.code === code)];
   const refs = [];
-  if (c.outcome) refs.push(outcome(c.outcome));
+  if (c.outcome || c.family) refs.push(outcome(c.outcome || c.family));
   if (c.case) refs.push(kase(c.case));
   if (c.problem) refs.push(kase(c.problem));
   for (const id of [c.first, c.second, ...(c.cases || []), ...(c.testedBy || [])]) if (id) refs.push(kase(id));
   if (c.kind === 'term') refs.push([`term "${c.term}"`, Boolean(u.terms[c.term])]);
   if (c.kind === 'meet') { refs.push(step(c.mark), step(c.feature.step), [`option "${c.feature.step}.${c.feature.option}"`, u.steps.some(st => st.code === c.feature.step && st.options.some(o => o.id === c.feature.option))]); }
   if (c.kind === 'again' || c.kind === 'question') refs.push(step(c.step));
-  if (c.kind === 'orient') refs.push([`map.branch "${c.map.branch}"`, Boolean(u.key.branches[c.map.branch])]);
+  if (c.kind === 'orient' && c.map && !u.isGate) refs.push([`map.branch "${c.map.branch}"`, Boolean(u.key.branches[c.map.branch])]);
   if (['lookalike', 'exception'].includes(c.kind)) refs.push([`ledger "${c.ledger}"`, u.unit.ledger.some(l => l.id === c.ledger)]);
   if (c.kind === 'exception') refs.push(outcome(c.looksLike), outcome(c.is));
-  if (c.kind === 'check') refs.push(c.ask.type === 'phrase' || u.steps.some(st => st.code === c.after) ? ['after', true] : outcome(c.after), step(c.ask.step));
-  if (c.kind === 'check') for (const id of c.ask.among || []) refs.push([`among option "${id}"`, u.steps.some(st => st.code === c.ask.step && st.options.some(o => o.id === id))]);
-  if (c.kind === 'refute') refs.push(u.outcomes[c.about] || u.steps.some(st => st.code === c.about) ? ['about', true] : [`about "${c.about}"`, false]);
+  if (c.kind === 'check') refs.push(...checkReferences(u, c, outcome, step));
+  if (c.kind === 'refute') refs.push(u.things[c.about] || u.steps.some(st => st.code === c.about) ? ['about', true] : [`about "${c.about}"`, false]);
   if (c.kind === 'worked') refs.push(...c.steps.map(s => step(s.step)), outcome(c.hold.neighbour), kase(c.impression.resembles), ...(c.impression.first ? [kase(c.impression.first)] : []));
-  if (c.kind === 'transfer') refs.push(...c.prompts.map(p => outcome(p.outcome)));
-  if (c.prompt && c.prompt.kind === 'which') {
+  if (c.kind === 'transfer') refs.push(...c.prompts.map(p => outcome(p.outcome || p.family)));
+  if (c.prompt && c.prompt.kind === 'which' && c.prompt.option) {
     const [code, id] = c.prompt.option.split('.');
     refs.push([`prompt.option "${c.prompt.option}"`, u.steps.some(st => st.code === code && st.options.some(o => o.id === id))]);
   }
+  if (c.kind === 'lookalike' && c.facts) refs.push(...c.facts.map(id => [`fact "${id}"`, Boolean(u.rows[id])]), [`prompt.answer "${c.prompt.answer}" is one of the two facts`, c.facts.includes(c.prompt.answer)]);
+  if (c.kind === 'solved') refs.push([`hold.step ${c.hold.step} is a step of the card`, Number.isInteger(c.hold.step) && c.hold.step >= 0 && c.hold.step < c.steps.length]);
   if (c.kind === 'facts') refs.push([`concept "${c.concept}"`, Boolean(u.cardsById[c.concept])]);
   if (c.continues) refs.push([`continues "${c.continues}"`, Boolean(u.cardsById[c.continues])]);
   return refs.filter(([, ok]) => !ok).map(([what]) => `${what} does not exist`);
 }
 
+// A problem that is asked holds its working, its choices and why; a wrong choice names the slip that produces it (S6, section 15 item 3).
+function problemParts(c) {
+  if (c.kind !== 'problem' || !['check', 'drill', 'return'].includes(c.use)) return [];
+  const missingParts = ['steps', 'answer', 'why'].filter(f => !c[f]).map(f => `a problem that is asked needs ${f}`);
+  const choices = c.answer ? c.answer.choices : [];
+  return [...missingParts,
+    ...(c.answer && !choices.some(x => x.id === c.answer.right) ? [`answer.right "${c.answer.right}" is not one of the choices`] : []),
+    ...choices.filter(x => c.answer && x.id !== c.answer.right && !x.slip).map(x => `wrong choice "${x.id}" names no slip`)];
+}
+
 function caseReferences(u, c) {
   const refs = [];
   const option = (code, id) => u.steps.some(st => st.code === code && st.options.some(o => o.id === id));
-  if (c.outcome) refs.push([`outcome "${c.outcome}"`, Boolean(u.outcomes[c.outcome])]);
+  if (c.outcome) refs.push([`outcome "${c.outcome}"`, Boolean(u.things[c.outcome])]);
   for (const [code, ids] of Object.entries(c.route || {})) ids.forEach(id => refs.push([`route ${code}.${id}`, option(code, id)]));
   for (const code of [...Object.keys(c.cues || {}), ...Object.keys(c.reason || {})]) refs.push([`step "${code}"`, u.steps.some(st => st.code === code)]);
-  if (c.not) refs.push([`not.outcome "${c.not.outcome}"`, Boolean(u.outcomes[c.not.outcome])]);
+  if (c.not) refs.push([`not.outcome "${c.not.outcome}"`, Boolean(u.things[c.not.outcome])]);
   for (const id of c.also || []) refs.push([`also "${id}"`, u.steps.some(st => st.options.some(o => o.id === id))]);
   if (c.echo) refs.push([`echo "${c.echo}"`, caseExists(u, c.echo)]);
   for (const k of Object.keys(c.miss || {})) refs.push([`miss "${k}"`, Boolean(u.outcomes[k]) || u.steps.some(st => st.options.some(o => o.id === k))]);
-  for (const o of c.options || []) refs.push([`option voice "${o.voice}"`, Boolean(u.outcomes[o.voice])]);
-  if (c.ask && c.ask.type === 'missing') refs.push([`ask.name "${c.ask.name}"`, Boolean(u.outcomes[c.ask.name])]);
+  for (const o of c.options || []) refs.push([`option voice "${o.voice}"`, Boolean(u.things[o.voice])]);
+  if (c.ask && c.ask.type === 'missing') refs.push([`ask.name "${c.ask.name}"`, Boolean(u.things[c.ask.name])]);
   if (c.ask && c.ask.type === 'option') refs.push([`ask.answer "${c.ask.step}.${c.ask.answer}"`, option(c.ask.step, c.ask.answer)]);
-  return refs.filter(([, ok]) => !ok).map(([what]) => `${what} does not exist`);
+  return [...problemParts(c), ...refs.filter(([, ok]) => !ok).map(([what]) => `${what} does not exist`)];
 }
 
 function drillReferences(u) {

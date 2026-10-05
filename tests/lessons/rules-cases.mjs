@@ -39,7 +39,7 @@ function tapPromptProblems(u) {
 /* ---------- V31: routes ---------- */
 function expectedSteps(ctx, c) {
   const outcome = ctx.outcome(c.outcome);
-  return [ctx.key.gate.code, ...(ctx.key.branches[outcome.group] || []).map(s => s.code)];
+  return [...(ctx.key.gate ? [ctx.key.gate.code] : []), ...(ctx.key.branches[outcome.group] || []).map(s => s.code)];
 }
 
 function survivors(ctx, c) {
@@ -70,7 +70,8 @@ export const V32 = unitRule('V32', (u, check) => {
     check(!inCards.has(id), `${id}: a card's case is also used in practice`);
     check(['drill', 'return', 'claim'].includes(u.cases[id].use), `${id}: used in practice but its use is "${u.cases[id].use}"`);
   });
-  u.caseList.forEach(c => check(inCards.has(c.id) || inDrill.has(c.id), `${c.id}: used by nothing`));
+  const baseline = new Set(u.meta.baseline || []);   // the short check asked before an action subject's first unit (E21)
+  u.caseList.forEach(c => check(inCards.has(c.id) || inDrill.has(c.id) || baseline.has(c.id), `${c.id}: used by nothing`));
   duplicatesOf(u.caseList.map(c => c.text).filter(Boolean)).forEach(t => check(false, `two cases share the same text: "${t.slice(0, 40)}"`));
 });
 
@@ -127,11 +128,24 @@ function V35(ctx, check) {
 }
 
 /* ---------- V37: legitimate cases in an action subject ---------- */
-// Section 4 gives the key no field that marks an outcome as legitimate, so the rule cannot be evaluated. It fails closed:
-// a subject that sets action: true fails here until the standard says how a legitimate outcome is marked.
-export const V37 = subjectRule('V37', (s, check) => {
-  check(!s.meta.action, 'the subject sets action: true, and the key has no field that marks an outcome as legitimate, so this rule cannot be checked; the standard has to define the marker first');
+// The key marks the names of cases where nothing is wrong with legit: true, on an outcome or a gate answer (S1). In an action subject the
+// key marks at least one, and every drill stage that asks about cases holds a case with one of those names, so a learner is never
+// taught that every case has a fault (A10, E6). The app refuses to start such a drill, and this rule catches it first.
+const nameOfCase = (ctx, c) => c.outcome || (ctx.key.gate && c.route && c.route[ctx.key.gate.code] ? c.route[ctx.key.gate.code][0] : null);
+const isLegitCase = (ctx, c) => Boolean(ctx.things[nameOfCase(ctx, c)] && ctx.things[nameOfCase(ctx, c)].legit);
+
+export const V37_subject = subjectRule('V37', (s, check) => {
+  if (!s.meta.action) return;
+  check(Object.values(s.things).some(t => t.legit), 'the subject is an action subject, and no outcome or gate answer of its key is marked legit: true');
 });
+
+export const V37_unit = unitRule('V37', (u, check) => {
+  if (!u.meta.action) return;
+  for (const r of u.unit.drill.rungs) {
+    const cases = u.flat(r).map(u.caseOf).filter(c => c && c.kind !== 'reverse' && c.use !== 'claim');
+    if (cases.length > 0) check(cases.some(c => isLegitCase(u, c)), `the ${r.ask} stage asks about cases and none is a case where nothing is wrong (legit)`);
+  }
+}, { kinds: ['branch', 'gate'] });
 
 /* ---------- V52: no two stories of one outcome share a topic ---------- */
 function V52(ctx, check) {
@@ -177,5 +191,5 @@ export const V54 = unitRule('V54', (u, check) => {
 
 export const RULES_CASES = [
   ...unitAndSubject('V30', V30), ...unitAndSubject('V31', V31), V32, ...unitAndSubject('V33', V33), V34,
-  ...unitAndSubject('V35', V35), V37, ...unitAndSubject('V52', V52), ...unitAndSubject('V53', V53), V54
+  ...unitAndSubject('V35', V35), V37_subject, V37_unit, ...unitAndSubject('V52', V52), ...unitAndSubject('V53', V53), V54
 ];

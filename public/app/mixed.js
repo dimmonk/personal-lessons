@@ -2,14 +2,14 @@
 
 const MIXED = storageLoad('pl:mixed', {n:0, ok:0});
 
+// A round: what is due first (names from finished rebuilt units, on cases not seen before), then a random draw from the
+// old drills' items and from single-question and name items of finished rebuilt units (mixed-new.js).
 function buildMixed(n){
-  const pool = [];
-  SUBJECTS.forEach(s => s.quickDrills.forEach(q => q.items.forEach(it => pool.push({s, q, it}))));
-  for(let i = pool.length - 1; i > 0; i--){
-    const j = Math.floor(Math.random() * (i + 1));
-    [pool[i], pool[j]] = [pool[j], pool[i]];
-  }
-  return {items: pool.slice(0, Math.min(n, pool.length)), i:0, picked:null, n:0, ok:0};
+  const old = [];
+  SUBJECTS.forEach(s => s.quickDrills.forEach(q => q.items.forEach(it => old.push({s, q, it}))));
+  const fresh = buildMixedNew(), due = fresh.due.slice(0, n);
+  const rest = shuffled([...old, ...fresh.pool]).slice(0, Math.max(0, n - due.length));
+  return {items: [...due, ...rest], i:0, picked:null, n:0, ok:0};
 }
 
 function renderMixed(){
@@ -22,7 +22,7 @@ function renderMixed(){
       <div class="done-screen">
         <span style="color:var(--accent);display:flex">${icon('check',34)}</span>
         <h2>Round complete</h2>
-        <p><b>${M.ok}</b> correct of <b>${M.n}</b>, drawn from ${SUBJECTS.length} subjects. Lifetime: ${MIXED.ok}/${MIXED.n}.</p>
+        <p><b>${M.ok}</b> correct of <b>${M.n}</b>, drawn from ${SUBJECTS.length} subjects. Lifetime: ${lifetimeFigure()}.${MIXED.n ? ` ${esc(MIXED_SAY.oldLifetime(MIXED.ok, MIXED.n))}` : ''}</p>
         <div style="display:flex;flex-direction:column;gap:10px;width:100%;max-width:300px;padding-top:6px">
           <button class="btn" id="again">New round</button>
           <button class="btn ghost" data-v="library">Back to the library</button>
@@ -33,6 +33,7 @@ function renderMixed(){
     return;
   }
 
+  if(M.items[M.i].built) return renderMixedAsk(M, M.items[M.i]);
   const {s: subj, q, it} = M.items[M.i];
   const ans = answerOf(q, it), answered = M.picked !== null, ok = answered && M.picked === ans;
 
@@ -41,6 +42,7 @@ function renderMixed(){
       <span class="m">Mixed drill</span>
       <span class="m s">${pad2(M.i+1)} / ${M.items.length}</span>
     </div>
+    <p class="hintline">${esc(MIXED_SAY.frame)}</p>
     <div style="display:flex;align-items:center;gap:10px;padding:18px 0 14px">
       <span class="sigil" style="width:26px;height:26px;flex:0 0 26px;font-size:10px">${subj.keyNo}</span>
       <span class="m a">${esc(subj.name)} &middot; ${esc(q.title)}</span>
@@ -58,7 +60,8 @@ function renderMixed(){
     <div class="score">
       <span class="stat"><b>${M.n}</b><span>This round</span></span>
       <span class="stat"><b>${M.ok}</b><span>Correct</span></span>
-      <span class="stat"><b>${MIXED.n ? MIXED.ok + '/' + MIXED.n : '&mdash;'}</b><span>Lifetime</span></span>
+      <span class="stat"><b>${lifetimeFigure()}</b><span>Lifetime</span></span>
+      ${MIXED.n ? `<span class="stat"><b>${MIXED.ok}/${MIXED.n}</b><span>${esc(MIXED_SAY.oldStat)}</span></span>` : ''}
     </div>
     ${answered ? `<div class="actbar"><button class="btn" id="next">${M.i===M.items.length-1?'Finish':'Next item'}${icon('arrow')}</button></div>` : ''}
   </div>`;

@@ -12,7 +12,7 @@ export const fingerprint = value => 'sha256:' + createHash('sha256').update(JSON
 function keySlice(subject, unitId) {
   const { key, meta } = subject;
   const unit = subject.units[unitId];
-  const steps = [key.gate, ...Object.values(key.branches).flat()];
+  const steps = [...(key.gate ? [key.gate] : []), ...Object.values(key.branches).flat()];
   const upTo = meta.units.slice(0, meta.units.indexOf(unitId) + 1);
   const known = id => upTo.includes(key.outcomes.find(o => o.id === id).unit);
   return {
@@ -42,7 +42,8 @@ export function subjectFingerprint(data, subjectId) {
 export function lockEntries(data) {
   const subjects = {};
   const units = {};
-  for (const id of Object.keys(data.subjects).sort()) {
+  // a subject with only an old-format record has no subject record, and so nothing to lock (F5)
+  for (const id of Object.keys(data.subjects).sort().filter(name => data.subjects[name].meta)) {
     const subject = data.subjects[id];
     subjects[id] = { rev: subject.meta.rev, fp: subjectFingerprint(data, id) };
     for (const unitId of Object.keys(subject.units).sort()) {

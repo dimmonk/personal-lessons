@@ -355,3 +355,13 @@ table.k.results td:last-child{text-align:right;font-family:var(--mono);color:var
 .sheet{position:fixed;inset:0;z-index:20;overflow-y:auto;background:var(--bg);display:flex;flex-direction:column}
 .sheet .pane{flex-grow:1}
 .sheetstep{margin-bottom:32px;padding-bottom:24px;border-bottom:1px solid var(--divider)}
+
+/* ===== unit kinds: the plan card, the baseline check, fact and procedure items (lesson standard A12, E18, E21) ===== */
+.fieldlabel{display:block;margin:0 0 8px}
+.fieldlabel.second{margin-top:14px}
+.baselineafter{width:100%;text-align:left}
+/* a facts card's table: the question is the longest cell, so it gets the widest column (the pair table's 30% label column would break its words) */
+table.k.facts{font-size:13.5px}
+table.k.facts th{font-family:var(--sans);font-size:13px;letter-spacing:0;text-transform:none;color:var(--text)}
+table.k.facts td{overflow-wrap:break-word}
+table.k.facts td:first-child{width:46%}

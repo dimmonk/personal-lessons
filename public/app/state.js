@@ -21,22 +21,33 @@ function legacyEntry(data, unitIds, unitId, position){
   if(!entry) throw new Error(`${data.legacy.id}: no old course entry for unit ${unitId}`);
   return { ...entry, id: unitId, standard: 0 };
 }
+// What the old screens read from a subject, for one that has no old record because every unit is rebuilt
+// (lesson standard F5: the old data file is deleted with the last unit that needs it). Only the key's names are real.
+function emptyLegacy(data){
+  const units = subjectUnitIds(data);
+  if(!units.length || units.some(unitId => !data.units[unitId]))
+    throw new Error(`${data.meta ? data.meta.id : 'subject'}: no legacy record, and not every unit is rebuilt`);
+  return { id: data.meta.id, course: [], quickDrills: [], errDrill: [], specimens: [], outcomes: data.key.outcomes, caveats: '',
+           determination: { gateCode: null, steps: [], stepsByGate: null } };
+}
 function buildSubject(id, index){
   const data = FC.get(id);
-  if(!data.legacy) throw new Error(`${id}: no legacy record; a subject with no old content is not wired into the old screens`);
+  const legacy = data.legacy || emptyLegacy(data);
   const unitIds = subjectUnitIds(data);
   const course = unitIds.map((unitId, i) => data.units[unitId] ? rebuiltEntry(id, unitId) : legacyEntry(data, unitIds, unitId, i));
   // the subject record, where there is one, is the only place the name, revision and blurb are typed
   const record = data.meta ? { name: data.meta.name, rev: data.meta.rev, blurb: data.meta.blurb } : {};
   return {
-    ...data.legacy, ...record, course,
-    accent: data.legacy.accent || ACCENTS[index % ACCENTS.length],
+    ...legacy, ...record, course,
+    accent: legacy.accent || ACCENTS[index % ACCENTS.length],
     keyNo: pad2(index + 1),
     cardCount: course.reduce((a, u) => a + u.cards.length, 0)
   };
 }
 const SUBJECTS = FC.ids().map(buildSubject);
 const isRebuilt = unit => unit.standard === 1;
+// a subject whose every unit is rebuilt runs on the new screens end to end (the determination, E13)
+const isFullyRebuilt = subj => subj.course.length > 0 && subj.course.every(isRebuilt);
 
 /* ===================== STATE ===================== */
 
@@ -130,7 +141,12 @@ function openUnit(subj, ui){
   const c = st(subj).course, unit = subj.course[ui];
   c.u = ui; c.card = 0; c.phase = 'read';
   APP.subjectId = subj.id; touch(subj.id);
-  if(isRebuilt(unit)){ beginRebuiltUnit(subj, unit); return; }
+  if(isRebuilt(unit)){
+    // a unit that leans on one the learner found hard opens on "Review these first" (E12): a prompt, never a gate
+    const weak = reviewFirstFor(subj, unit);
+    if(weak){ go('reviewfirst', { reviewUnit: ui }); return; }
+    beginRebuiltUnit(subj, unit); return;
+  }
   saveCourse(subj); go('lesson');
 }
 function on(sel, fn, root){ (root || screenEl()).querySelectorAll(sel).forEach(el => el.onclick = () => fn(el)); }

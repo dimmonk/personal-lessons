@@ -8,6 +8,9 @@
 //   { type:'case', c, shown:[code], asked:[code], askName, names:[id], among?, mode, joined?, stops? }
 //   { type:'tap',  c, step, say, answer, mode, joined? }
 //   { type:'tell', entry, mode }      { type:'reverse', c, mode }      { type:'claim', c, mode }
+//   { type:'separator', entry, codes:[code], right:code, mode }                  which of the unit's questions tells a pair apart
+//   { type:'fact', row, target, mode, joined? }                                  a fact asked from memory (fact units)
+//   { type:'problem', c, solve:'last'|'whole'|'route', shown, asked, askName, names, mode }   a problem solved (procedure units)
 // ask = { v, T, item, state, ledgerRead:Set, taughtOn(what) -> { cardId, heading } | { text } | null }
 // state = { answers:{}, name:null, picked:null, order:[], done:false, open:false }
 
@@ -116,7 +119,8 @@ function foldRest(ask, ok, restHtml){
   if(!(ask.item.seenBefore && ok) || ask.state.open) return restHtml;
   return `<button class="btn ghost sm" data-show-rest>Show the reasoning</button>`;
 }
-function caseHtml(ask){
+// Everything of a case item above its feedback: the case, what is shown, the questions and the name asked.
+function caseBody(ask){
   const { v, T, item, state } = ask, c = item.c;
   const markSteps = state.done ? [...item.shown, ...item.asked] : item.shown;
   const out = [T.show(c, markSteps)];
@@ -144,9 +148,9 @@ function caseHtml(ask){
       <span style="color:var(--disabled);display:flex">${icon('lock', 15)}</span></div>`;
   });
   if(item.askName){
-    const ready = openIdx === -1 && !state.done;
+    const ready = openIdx === -1 && !state.done && state.name === null;
     const nameWrong = state.done && state.name !== caseTarget(v, c);
-    rows.push(state.done
+    rows.push(state.done || state.name !== null
       ? `<div class="stepdone static ${nameWrong ? 'wrong' : ''}"><span class="tick">${icon(nameWrong ? 'cross' : 'check', 12)}</span><span class="grow"><span class="m s">Name it</span><span class="v">${esc(v.nameOf(state.name))}</span></span></div>`
       : ready ? `<div class="stepopen"><div class="stephead"><span class="num on">${total}</span><span class="m a">${item.asked.length ? 'Name it' : 'Which name goes with these answers?'}</span></div>
           <div class="opts" id="nameOpts">${item.names.map(id => `<button class="opt" data-n="${esc(id)}">${esc(v.nameOf(id))}</button>`).join('')}</div></div>`
@@ -154,8 +158,10 @@ function caseHtml(ask){
           <span style="color:var(--disabled);display:flex">${icon('lock', 15)}</span></div>`);
   }
   out.push(`<div class="steps">${rows.join('')}</div>`);
-  if(state.done) out.push(`<div class="feedback">${caseFeedback(ask)}</div>`);
   return out.join('');
+}
+function caseHtml(ask){
+  return caseBody(ask) + (ask.state.done ? `<div class="feedback">${caseFeedback(ask)}</div>` : '');
 }
 
 /* ---------- tap the words ---------- */
@@ -241,12 +247,116 @@ function claimHtml(ask){
     <div class="feedback">${answerHead(ok, right.html)}${own ? `<div class="vblock"><span class="m">Your answer</span><p>${own}</p></div>` : ''}${claimClosing(T, c)}</div>`;
 }
 
+/* ---------- which of the key's questions tells a pair apart? ---------- */
+// The question that separates two names is the one on which they share no answer. Only one of the unit's questions may do it,
+// and the unit must teach two or more, or "which question" has nothing to choose between (lesson standard S6).
+function separatorItem(v, entryId){
+  const entry = v.ledger(entryId), codes = v.unitSteps.map(s => s.code);
+  if(codes.length < 2) lessonFail(`separator item ${entryId}: the unit teaches ${codes.length} question, and there is nothing to choose between`);
+  const apart = codes.filter(code => !pairAnswers(v, code, entry.pair[0]).some(a => pairAnswers(v, code, entry.pair[1]).some(b => b.id === a.id)));
+  if(apart.length !== 1) lessonFail(`separator item ${entryId}: ${apart.length} of the unit's questions separate the pair, not exactly one`);
+  return { type: 'separator', entry, codes, right: apart[0], mode: 'separator' };
+}
+const answersText = (v, code, id) => joinWords(pairAnswers(v, code, id).map(o => o.n), 'or');
+function separatorHtml(ask){
+  const { v, T, item, state } = ask, [x, y] = item.entry.pair;
+  const stem = SAY.separatorStem(T.o(x), T.o(y));
+  if(state.order === null) state.order = shuffled(item.codes);
+  if(state.picked === null) return promptStem(stem)
+    + `<div class="opts">${state.order.map(code => `<button class="opt" data-pick="${esc(code)}">${esc(v.step(code).q)}</button>`).join('')}</div></div>`;
+  const ok = state.picked === item.right, q = v.step(item.right).q;
+  const shared = pairAnswers(v, state.picked, x).filter(a => pairAnswers(v, state.picked, y).some(b => b.id === a.id));
+  const own = ok ? '' : SAY.separatorSame(T.kw('“' + esc(v.step(state.picked).q) + '”'), joinWords(shared.map(o => T.kw(o.n))));
+  return `<div class="stepopen prompt"><p class="stem">${stem}</p></div><div class="feedback">${answerHead(ok, esc(q))}
+    <div class="vblock"><span class="m">Why</span><p>${T.t(paras(item.entry.shared).join(' '))} ${T.t(paras(item.entry.rule).join(' '))}</p>
+      <p>${T.o(x)}: ${esc(answersText(v, item.right, x))}. ${T.o(y)}: ${esc(answersText(v, item.right, y))}.</p></div>
+    ${own ? `<div class="vblock"><span class="m">Your answer</span><p>${own}</p></div>` : ''}
+    ${taughtOnLine(ask, { step: item.right })}</div>`;
+}
+
+/* ---------- a fact asked from memory ---------- */
+// The other rows of the fact's own card are the choices. Two rows with one answer would make a choice that cannot be told apart.
+function factItem(v, rowId, mode, joined){
+  const row = v.fact(rowId), rows = v.card(row.card).rows;
+  const twin = rows.find((r, i) => rows.findIndex(x => x.a === r.a) !== i);
+  if(twin) lessonFail(`facts card ${row.card}: two rows have the answer "${twin.a}", so the choices cannot be told apart`);
+  if(rows.length < 2) lessonFail(`facts card ${row.card} has one row, and there is nothing to choose from`);
+  return { type: 'fact', row, target: rowId, mode, joined };
+}
+function factHtml(ask){
+  const { v, T, item, state } = ask, row = item.row, rows = v.card(row.card).rows;
+  if(state.order === null) state.order = shuffled(rows.map((_, i) => i));
+  const stem = SAY.factStem(row.q);
+  if(state.picked === null) return promptStem(stem)
+    + `<div class="opts">${state.order.map(i => `<button class="opt" data-pick="${esc(rows[i].id)}">${esc(rows[i].a)}</button>`).join('')}</div></div>`;
+  const chosen = rows.find(r => r.id === state.picked), ok = chosen.id === row.id;
+  const entry = !ok && v.ledgerFor ? v.ledgerFor(row.id, chosen.id) : null;
+  const own = ok ? '' : `<p>${SAY.factSwapped(T.kw(chosen.a), esc(chosen.q))}</p>`
+    + (entry && ask.ledgerRead.has(entry.id) ? `<p>${T.t(paras(entry.shared).join(' '))} ${T.t(paras(entry.rule).join(' '))} ${T.t(paras(entry.test).join(' '))}</p>` : '');
+  return `<div class="stepopen prompt"><p class="stem">${stem}</p></div><div class="feedback">${answerHead(ok, esc(row.a))}
+    <div class="vblock"><span class="m">Why</span>${T.P(row.relates, null).map(p => `<p>${p}</p>`).join('')}${item.joined ? `<p>${item.joined}</p>` : ''}</div>
+    ${own ? `<div class="vblock"><span class="m">Your answer</span>${own}</div>` : ''}
+    ${taughtOnLine(ask, { fact: row.id })}</div>`;
+}
+
+/* ---------- a problem, solved ---------- */
+// A procedure unit's item (lesson standard A12). `last`: the working is shown up to the last step. `whole`: the problem alone.
+// `route`: the key's questions and the kind of problem first, then the solving. A wrong choice is the answer a named slip gives.
+function problemItem(v, c, solve, mode, joined){
+  if(c.kind !== 'problem' || !c.answer || !c.steps) lessonFail(`case ${c.id}: a problem item needs steps and an answer`);
+  const routed = solve === 'route', steps = routed ? v.routeSteps(c) : [];
+  const unslipped = c.answer.choices.find(x => x.id !== c.answer.right && !x.slip);
+  if(unslipped) lessonFail(`case ${c.id}: the wrong answer "${unslipped.text}" does not say which slip makes it`);
+  if(solve === 'last' && c.steps.length < 2) lessonFail(`case ${c.id}: a "last step" item needs at least two steps`);
+  return { type: 'problem', c, solve, shown: [], asked: steps, askName: routed, names: routed ? namesOffered(v, c) : [], mode, joined };
+}
+function problemFeedback(ask){
+  const { v, T, item, state } = ask, c = item.c, routed = item.solve === 'route';
+  const pick = c.answer.choices[state.picked], right = c.answer.choices.find(x => x.id === c.answer.right);
+  const numOk = pick.id === right.id, res = routed ? caseResult(ask) : { ok: true, nameOk: true, routeOk: true }, target = caseTarget(v, c);
+  const marks = (routed ? verdictMark(res.nameOk, res.nameOk ? 'Right:' : 'The answer is:', esc(v.nameOf(target)))
+      + `<span class="mark ${res.routeOk ? '' : 'no'}">${icon(res.routeOk ? 'check' : 'cross', 13)}Route ${res.routeOk ? 'right' : 'missed'}</span>` : '')
+    + verdictMark(numOk, numOk ? 'Right:' : 'The answer is:', esc(right.text));
+  const working = c.steps.map(st => `<div class="stepdone static"><span class="tick">${icon('check', 12)}</span><span class="grow"><span class="m s">${esc(st.does)}</span><span class="v">${esc(st.working)}</span></span></div>`).join('');
+  const routeLines = routed && !res.routeOk ? `<div class="vblock"><span class="m">The route</span>${[...res.wrongSteps, ...item.asked.filter(code => !res.wrongSteps.includes(code))].map(code => stepLine(ask, c, code)).join('')}</div>` : '';
+  const own = [
+    ...(numOk ? [] : [SAY.slipLine(T.kw(pick.text), T.t(paras(pick.slip).join(' '), c))]),
+    ...(routed ? res.wrongSteps.map(code => answerMiss(ask, c, code, state.answers[code])) : []),
+    ...(routed && !res.nameOk ? [nameMiss(ask, c, state.name)] : [])
+  ];
+  return `<div class="marks">${marks}</div>`
+    + (routed && res.nameOk && !res.routeOk ? `<div class="warn"><span class="verdictline">${SAY.rightNameWrongRoute}.</span> A right name reached by a wrong answer on the way counts as a miss.</div>` : '')
+    + `<div class="vblock"><span class="m">${esc(SAY.workingLabel)}</span><div class="steps">${working}</div>${T.PP(c.why, c)}${item.joined ? `<p>${item.joined}</p>` : ''}</div>`
+    + routeLines
+    + (routed && c.not ? `<div class="vblock soft"><span class="m">Why not ${esc(v.nameOf(c.not.outcome))}</span><p>${T.t(paras(c.not.why).join(' '), c)}</p></div>` : '')
+    + (own.length ? `<div class="vblock"><span class="m">Your answer</span>${own.map(l => `<p>${l}</p>`).join('')}</div>` : '')
+    + (!(numOk && res.ok) && c.echo ? `<div class="vblock soft"><span class="m">A likeness</span><p>This case may have brought back <i>${esc(v.caseById(c.echo).name)}</i>, which was ${T.o(caseTarget(v, v.caseById(c.echo)))}. ${SAY.likeness}</p></div>` : '')
+    + (routed && c.wouldChange ? `<div class="vblock soft"><span class="m">${SAY.wouldChange}</span><p>${T.t(paras(c.wouldChange).join(' '), c)}</p></div>` : '')
+    + taughtOnLine(ask, routed ? { name: target } : { solved: target });
+}
+function problemHtml(ask){
+  const { v, T, item, state } = ask, c = item.c, routed = item.solve === 'route';
+  const routeDone = !routed || (item.asked.every(code => state.answers[code]) && state.name !== null);
+  const stem = item.solve === 'last' ? SAY.solveLast(c.steps[c.steps.length - 1].does) : item.solve === 'whole' ? SAY.solveWhole : SAY.solveRoute;
+  const prior = item.solve === 'last' && !state.done ? c.steps.slice(0, -1).map(st =>
+    `<div class="stepdone static"><span class="tick">${icon('check', 12)}</span><span class="grow"><span class="m s">${esc(st.does)}</span><span class="v">${esc(st.working)}</span></span></div>`).join('') : '';
+  const head = (routed ? caseBody(ask) : T.caseName(c) + T.show(c, state.done ? v.routeSteps(c) : []))
+    + (prior ? `<div class="shownroute">${lessonLabel(SAY.workingLabel)}<div class="steps">${prior}</div></div>` : '');
+  if(!routeDone) return head;
+  const choices = state.order.map(i => c.answer.choices[i]);
+  if(state.picked === null) return head + promptStem(stem)
+    + `<div class="opts">${state.order.map(i => `<button class="opt" data-pick="${i}">${esc(c.answer.choices[i].text)}</button>`).join('')}</div></div>`;
+  return head + `<div class="stepopen prompt"><p class="stem">${stem}</p></div><div class="feedback">${problemFeedback(ask)}</div>`;
+}
+
 /* ---------- one entry point ---------- */
 function askHtml(ask){
   const { item, state } = ask;
   if(item.type === 'tell' && !state.order) state.order = shuffled(tellOptions(ask).map(l => l.id));
   if(item.type === 'reverse' && !state.order) state.order = shuffled(item.c.options.map((_, i) => i));
-  return { case: caseHtml, tap: tapHtml, tell: tellHtml, reverse: reverseHtml, claim: claimHtml }[item.type](ask);
+  if(item.type === 'problem' && !state.order) state.order = shuffled(item.c.answer.choices.map((_, i) => i));
+  const html = { case: caseHtml, tap: tapHtml, tell: tellHtml, reverse: reverseHtml, claim: claimHtml, separator: separatorHtml, fact: factHtml, problem: problemHtml }[item.type];
+  return (html || lessonFail(`"${item.type}" is not an item kind of the lesson standard`))(ask);
 }
 // what the learner chose and whether it was right, for the practice record
 function askOutcome(ask){
@@ -258,6 +368,12 @@ function askOutcome(ask){
   if(item.type === 'tap') return { ok: tapRight(ask), steps: {}, name: null };
   if(item.type === 'tell') return { ok: state.picked === item.entry.id, steps: {}, name: null };
   if(item.type === 'reverse') return { ok: item.c.options[state.picked].voice === item.c.outcome, steps: {}, name: item.c.options[state.picked].voice };
+  if(item.type === 'separator') return { ok: state.picked === item.right, steps: {}, name: null };
+  if(item.type === 'fact') return { ok: state.picked === item.row.id, steps: {}, name: state.picked };
+  if(item.type === 'problem'){
+    const numOk = item.c.answer.choices[state.picked].id === item.c.answer.right, res = item.solve === 'route' ? caseResult(ask) : { ok: true };
+    return { ok: numOk && res.ok, steps: { ...state.answers }, name: state.name };
+  }
   return { ok: state.picked === claimParts(ask, item.c).answer, steps: {}, name: null };
 }
 // Wires the item's controls. onChange re-renders; onDone is called once, the moment the item is answered.
@@ -278,11 +394,12 @@ function wireAsk(root, ask, onChange, onDone){
     state.answers = Object.fromEntries(item.asked.slice(0, idx).map(k => [k, state.answers[k]]));
     state.name = null; next();
   }, root);
-  on('#nameOpts .opt', el => { state.name = el.dataset.n; finish(); }, root);
+  // a problem is not finished when the kind of problem is named: the solving still follows
+  on('#nameOpts .opt', el => { state.name = el.dataset.n; if(item.type === 'problem') next(); else finish(); }, root);
   on('[data-pick]', el => {
     if(state.picked !== null) return;
     const raw = el.dataset.pick;
-    state.picked = (item.type === 'tap' || item.type === 'reverse') ? Number(raw) : raw;
+    state.picked = ['tap', 'reverse', 'problem'].includes(item.type) ? Number(raw) : raw;
     finish();
   }, root);
   on('[data-show-rest]', () => { state.open = true; onChange(); }, root);

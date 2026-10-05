@@ -9,13 +9,16 @@ const target = (label, obj, owner = null) => ({ label, obj, owner });
 function fail(message) { throw new Error(message); }
 
 export function keyLookups(key) {
-  const steps = [key.gate, ...Object.values(key.branches).flat()];
+  // a subject made only of fact units has a key with no gate and no branches (S1)
+  const steps = [...(key.gate ? [key.gate] : []), ...Object.values(key.branches).flat()];
   const outcomes = byId(key.outcomes);
   const terms = byId(key.terms || []);
   const stepOf = byId(steps, 'code');
   return {
     steps, outcomes, terms,
     outcome: id => outcomes[id] || fail(`unknown outcome ${id}`),
+    // an outcome, or in a gate unit a family: one of the gate's answers (A15)
+    things: { ...outcomes, ...byId(key.gate ? key.gate.options : []) },
     step: code => stepOf[code] || fail(`unknown step ${code}`),
     option: (code, id) => (stepOf[code] || fail(`unknown step ${code}`)).options.find(o => o.id === id) || fail(`unknown option ${code}.${id}`),
     term: id => terms[id] || fail(`unknown term ${id}`),
@@ -88,6 +91,10 @@ export function unitView(data, subjectId, unitId) {
     taught: unit.teaches.outcomes,
     isGate: Boolean(unit.teaches.families),
     isBranch: unit.kind === 'C' && !unit.teaches.families,
+    // which row of section 8's table of kinds this unit is in: branch, gate, fact or procedure
+    kindName: unit.kind === 'F' ? 'fact' : unit.kind === 'P' ? 'procedure' : unit.teaches.families ? 'gate' : 'branch',
+    // a fact unit holds the rows of its facts cards (A12): every row, by id, with the card it sits on
+    rows: Object.fromEntries(cardRecords.filter(c => c.kind === 'facts').flatMap(c => c.rows.map(r => [r.id, { ...r, card: c.id }]))),
     pos: id => cardOrder.indexOf(id),
     at: (kind, f) => cards.findIndex(c => c.kind === kind && f(c)),
     rung, flat, caseOf, isStory,
@@ -129,7 +136,8 @@ export function askedSteps(u) {
   const asked = new Map();
   const add = (c, steps) => { if (c) asked.set(c.id, [...new Set([...(asked.get(c.id) || []), ...steps])]); };
   const unitSteps = u.unit.teaches.steps;
-  u.cards.filter(c => c.kind === 'check').forEach(c => add(u.cases[c.case], [c.ask.step]));
+  // a fact check and a problem to finish ask no key question
+  u.cards.filter(c => c.kind === 'check' && c.ask.step).forEach(c => add(u.cases[c.case], [c.ask.step]));
   u.flat(u.rung('name')).map(u.caseOf).filter(u.isStory).forEach(c => add(c, unitSteps));
   u.flat(u.rung('piece')).filter(i => i.step).forEach(i => add(u.cases[i.case], [i.step]));
   u.flat(u.rung('finish')).map(u.caseOf).filter(u.isStory).forEach(c => add(c, unitSteps));

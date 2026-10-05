@@ -1,28 +1,32 @@
 // Section 8, the drill: V38 to V44. A drill is a ramp of stages; the app shuffles groups inside a tier band and never
-// moves an item out of its group, so the authored groups are what the rules read.
-import { unitRule, checkEach } from './rule.mjs';
+// moves an item out of its group, so the authored groups are what the rules read. Each kind of unit has its own stages (the
+// section 8 table, A12, A15): a branch unit name, piece, finish, route, claim; a gate unit piece, route, claim; a fact unit
+// fact; a procedure unit last, whole, route.
+import { unitRule, checkEach, BRANCH_LIKE } from './rule.mjs';
+import { duplicatesOf } from './text.mjs';
 
-const branchRule = (id, run) => unitRule(id, run, { branch: true });
-const STAGE_ORDER = ['name', 'piece', 'finish', 'route', 'claim'];
-const BRANCH_STAGES = ['name', 'piece', 'finish', 'route'];
+const kindRule = (kinds, id, run) => unitRule(id, run, { kinds });
+const branchRule = (id, run) => kindRule(BRANCH_LIKE, id, run);
+const REQUIRED_STAGES = { branch: ['name', 'piece', 'finish', 'route'], gate: ['piece', 'route'], fact: ['fact'], procedure: ['last', 'whole', 'route'] };
+const STAGE_ORDER = { branch: [...REQUIRED_STAGES.branch, 'claim'], gate: [...REQUIRED_STAGES.gate, 'claim'], fact: REQUIRED_STAGES.fact, procedure: REQUIRED_STAGES.procedure };
 const TIER_ORDER = ['clean', 'varied', 'misleading'];
-const GROUPED_STAGES = ['name', 'finish', 'route'];
+const GROUPED_STAGES = { branch: ['name', 'finish', 'route'], procedure: ['last', 'whole', 'route'] };
 const MIN_ROUTE_ITEMS = 2;
 const MIN_GROUP_CASES = 2;
 const RETURNS_PER_OUTCOME = 3;
 const RETURNS_PER_OUTCOME_ACTION = 4;
 
 /* ---------- V38: stage order ---------- */
-export const V38 = branchRule('V38', (u, check) => {
-  const asks = u.unit.drill.rungs.map(r => r.ask);
-  const positions = asks.map(a => STAGE_ORDER.indexOf(a));
-  check(positions.every(p => p >= 0) && positions.every((p, i) => i === 0 || p > positions[i - 1]), `stages must come in the order name, piece, finish, route, then claim last; found ${asks.join(', ')}`);
-  BRANCH_STAGES.forEach(a => check(asks.includes(a), `a branch unit needs a ${a} stage`));
+export const V38 = unitRule('V38', (u, check) => {
+  const order = STAGE_ORDER[u.kindName], asks = u.unit.drill.rungs.map(r => r.ask);
+  const positions = asks.map(a => order.indexOf(a));
+  check(positions.every(p => p >= 0) && positions.every((p, i) => i === 0 || p > positions[i - 1]), `stages must come in the order ${order.join(', ')} (claim last, where there is one); found ${asks.join(', ')}`);
+  REQUIRED_STAGES[u.kindName].forEach(a => check(asks.includes(a), `a ${u.kindName} unit needs a ${a} stage`));
   u.unit.drill.rungs.forEach(r => check(u.flat(r).length > 0, `the ${r.ask} stage has no item`));
 });
 
 /* ---------- V39: every taught outcome and question is practised ---------- */
-export const V39 = branchRule('V39', (u, check) => {
+function branchPractice(u, check) {
   const name = u.flat(u.rung('name')).map(u.caseOf);
   const piece = u.flat(u.rung('piece'));
   for (const o of u.taught) {
@@ -31,7 +35,22 @@ export const V39 = branchRule('V39', (u, check) => {
     check(piece.some(i => { const c = u.caseOf(i); return c && c.kind === 'reverse' && c.outcome === o; }), `${o}: no reverse item in the piece stage`);
   }
   u.unit.teaches.steps.forEach(code => check(piece.some(i => i.step === code), `${code}: never asked alone in the piece stage`));
-});
+}
+// a procedure type is practised on a problem with the working shown to the last step, on a whole problem, and on mixed routes (A12)
+function procedurePractice(u, check) {
+  for (const o of u.taught) {
+    ['last', 'whole'].forEach(stage => check(u.flat(u.rung(stage)).map(u.caseOf).some(c => c && c.outcome === o), `${o}: never the problem of a ${stage} item`));
+    check(u.routeCases.filter(c => c.outcome === o).length >= MIN_ROUTE_ITEMS, `${o}: fewer than ${MIN_ROUTE_ITEMS} route items`);
+  }
+  u.unit.drill.rungs.forEach(r => u.flat(r).map(u.caseOf).filter(Boolean).forEach(c => check(c.kind === 'problem', `${c.id}: a ${r.ask} item must be a problem`)));
+}
+// every fact is asked from memory in the fact stage (A12): its row is the item
+function factPractice(u, check) {
+  const asked = u.flat(u.rung('fact')).filter(i => i.fact).map(i => i.fact);
+  Object.keys(u.rows).forEach(id => check(asked.includes(id), `${id}: a fact that no item of the fact stage asks`));
+  checkEach(check, 'the fact stage', duplicatesOf(asked).map(id => `${id} is asked twice`));
+}
+export const V39 = kindRule(['branch', 'fact', 'procedure'], 'V39', (u, check) => ({ branch: branchPractice, fact: factPractice, procedure: procedurePractice })[u.kindName](u, check));
 
 /* ---------- V40: groups ---------- */
 function reachable(u, cases) {
@@ -58,7 +77,7 @@ function groupProblems(u, group, floor) {
 }
 
 export const V40 = branchRule('V40', (u, check) => {
-  for (const r of u.unit.drill.rungs.filter(x => GROUPED_STAGES.includes(x.ask))) {
+  for (const r of u.unit.drill.rungs.filter(x => GROUPED_STAGES[u.kindName].includes(x.ask))) {
     r.items.reduce((floor, group) => {
       const { problems, band } = groupProblems(u, group, floor);
       checkEach(check, `stage ${r.ask}`, problems);
@@ -78,7 +97,7 @@ export const V41 = branchRule('V41', (u, check) => {
 /* ---------- V42: telling pairs apart ---------- */
 const separates = (u, a, b) => u.unitSteps().filter(s => !s.options.some(o => o.keeps.includes(a) && o.keeps.includes(b)));
 
-export const V42 = branchRule('V42', (u, check) => {
+export const V42 = kindRule(['branch'], 'V42', (u, check) => {
   const piece = u.flat(u.rung('piece'));
   const tells = piece.filter(i => i.tell);
   check(tells.length > 0, 'the piece stage needs a "tell" item');
@@ -90,7 +109,7 @@ export const V42 = branchRule('V42', (u, check) => {
 });
 
 /* ---------- V43: claims ---------- */
-export const V43 = branchRule('V43', (u, check) => {
+export const V43 = kindRule(['branch'], 'V43', (u, check) => {
   const stage = u.rung('claim');
   if (stage.ask) {
     const asked = u.flat(stage);
@@ -104,7 +123,15 @@ export const V43 = branchRule('V43', (u, check) => {
 });
 
 /* ---------- V44: returns ---------- */
-export const V44 = branchRule('V44', (u, check) => {
+// A fact returns as its row, beside the fact it is most often swapped with, read from the ledger (E9): no case is held back for it, and a
+// pair of rows that the ledger names are asked next to each other, so the pair can come back together.
+function factReturns(u, check) {
+  check(u.unit.drill.returns.length === 0, 'a fact unit holds no cases for later days: a fact returns as its row');
+  const groups = u.rung('fact').items.map(g => g.filter(i => i.fact).map(i => i.fact));
+  u.unit.ledger.forEach(l => check(groups.some(g => l.pair.every(id => g.includes(id))), `ledger entry ${l.id}: its two facts must be asked in one group, so they come back together`));
+}
+export const V44 = kindRule(['branch', 'fact', 'procedure'], 'V44', (u, check) => {
+  if (u.kindName === 'fact') return factReturns(u, check);
   const need = u.meta.action ? RETURNS_PER_OUTCOME_ACTION : RETURNS_PER_OUTCOME;
   u.taught.forEach(o => check(u.returns.filter(c => c.outcome === o).length >= need, `${o}: fewer than ${need} fresh cases for later days`));
 });

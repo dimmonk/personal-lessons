@@ -9,20 +9,23 @@ import { lockEntries } from './fingerprint.mjs';
 import { collectSite, collectValidatorSources } from './site.mjs';
 import { setIn, updateIn, removeIn, plain } from './immutable.mjs';
 import { CONTROLS, NO_CONTROL } from './controls-table.mjs';
+import { KIND_FIXTURES, loadKindFixture } from './kind-fixtures.mjs';
 
 const EXEMPLAR = new URL('../../docs/lesson-standard/exemplar/public/', import.meta.url);
 
-async function baseline() {
+const emptyInput = data => ({ data, lock: lockEntries(data), committedLock: null, standard0: { units: [] }, committedStandard0: { units: [] },
+  site: { files: [], indexScripts: null, swShell: null }, validatorSources: {} });
+
+// The exemplar, and a unit of each other kind (fact, procedure, gate). The exemplar runs every rule; a unit of another kind runs only the
+// rules that apply to its kind and that its fixture meets (kind-fixtures.mjs).
+async function baselines() {
   const data = plain(await loadFromPublic(EXEMPLAR));
-  return {
-    data,
-    lock: lockEntries(data),
-    committedLock: null,
-    standard0: { units: [] },
-    committedStandard0: { units: [] },
-    site: await collectSite(EXEMPLAR),
-    validatorSources: await collectValidatorSources()
+  const exemplar = {
+    data, lock: lockEntries(data), committedLock: null, standard0: { units: [] }, committedStandard0: { units: [] },
+    site: await collectSite(EXEMPLAR), validatorSources: await collectValidatorSources()
   };
+  const kinds = Object.fromEntries(await Promise.all(Object.keys(KIND_FIXTURES).map(async kind => [kind, emptyInput(plain(await loadKindFixture(kind)))])));
+  return { exemplar, ...kinds };
 }
 
 const redRules = result => [...new Set(result.failures.map(f => f.rule))].sort();
@@ -37,23 +40,29 @@ function faultyInput(base, control) {
   return control.input ? control.input(input) : input;
 }
 
-function runControl(base, control) {
-  const input = faultyInput(base, control);
-  const rules = control.only ? RULES.filter(r => r.id === control.rule) : RULES;
-  const result = runRules(input, rules);
+const rulesFor = control => control.only ? RULES.filter(r => r.id === control.rule)
+  : control.base ? RULES.filter(r => KIND_FIXTURES[control.base].rules.includes(r.id) && r.scope !== 'site') : RULES;
+
+function runControl(bases, control) {
+  const input = faultyInput(bases[control.base || 'exemplar'], control);
+  const result = runRules(input, rulesFor(control));
   const red = redRules(result);
-  const expected = [control.rule, ...(control.also || [])].sort();
+  // green: the fault is one the rule must let through (an exemption), so nothing may go red
+  const expected = control.green ? [] : [control.rule, ...(control.also || [])].sort();
   const unprefixed = result.failures.filter(f => !f.message.startsWith(`${f.rule} `));
   return { red, expected, ok: sameList(red, expected) && unprefixed.length === 0, detail: unprefixed.map(f => `a failure does not start with its rule id: ${f.message}`) };
 }
 
 export async function runAll() {
-  const base = await baseline();
-  const clean = runRules(base);
-  const results = [{ name: 'baseline', rule: '(none)', red: redRules(clean), expected: [], ok: clean.failures.length === 0, detail: clean.failures.slice(0, 3).map(f => f.message) }];
+  const bases = await baselines();
+  const results = ['exemplar', ...Object.keys(KIND_FIXTURES)].map(name => {
+    const rules = name === 'exemplar' ? RULES : RULES.filter(r => KIND_FIXTURES[name].rules.includes(r.id) && r.scope !== 'site');
+    const clean = runRules(bases[name], rules);
+    return { name: `baseline, ${name === 'exemplar' ? 'the exemplar' : `a ${name} unit`}`, rule: '(none)', red: redRules(clean), expected: [], ok: clean.failures.length === 0, detail: clean.failures.slice(0, 3).map(f => f.message) };
+  });
   for (const control of CONTROLS) {
     let outcome;
-    try { outcome = runControl(base, control); }
+    try { outcome = runControl(bases, control); }
     catch (error) { outcome = { red: [], expected: [control.rule], ok: false, detail: [`the control itself failed to build: ${error.message}`] }; }
     results.push({ name: control.name, rule: control.rule, ...outcome });
   }
@@ -88,7 +97,7 @@ async function main() {
     console.error(`\n${failed.length} of ${results.length} controls failed`);
     process.exit(1);
   }
-  console.log(`\n✓ ${results.length - 1} negative controls went red on exactly their own rule (baseline green)`);
+  console.log(`\n✓ ${results.filter(r => r.rule !== '(none)').length} negative controls went red on exactly their own rule (${results.filter(r => r.rule === '(none)').length} baselines green)`);
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {

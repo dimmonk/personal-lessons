@@ -1,16 +1,19 @@
-// Section 8, revisions and files: V29, V45, V46, V47, V48.
+// Section 8, revisions and files: V29, V45, V46, V47, V48, V58.
 //
 // V48 reads a committed list of the units still at standard 0, tests/lessons/standard0-units.json:
 //     { "units": ["psychology/u1", "psychology/u3"] }
 // "units" holds "<subject>/<unit>" ids in any order. The list may only shrink: every entry must be in the list at the last
 // commit, every unit registered at standard 0 must be listed, and a unit rebuilt to standard 1 must be removed from it.
 // A project with nothing at standard 0 keeps { "units": [] }.
-import { unitRule, subjectRule, siteRule, checkEach } from './rule.mjs';
+import { unitRule, subjectRule, siteRule, heldRule, checkEach } from './rule.mjs';
 import { lockEntries } from './fingerprint.mjs';
 import { anchorProblems } from './lockfile.mjs';
 import { unique } from './text.mjs';
 
 const FILE_LINE_LIMIT = 800;
+// The old data of a subject whose units are not all rebuilt is registered whole by FC.legacy, in the file the split of F6 step 2 made
+// from it. It is deleted with the last unit that needs it (F5), is not split, and so is not held to the limit.
+const isLegacyData = path => /^subjects\/[^/]+\/standard0\.js$/.test(path);
 
 /* ---------- V45: revisions are real fields with a history ---------- */
 function historyProblems(history, rev, what) {
@@ -77,7 +80,7 @@ const missingFrom = (names, list) => names.filter(n => !list.includes(n));
 export const V47 = siteRule('V47', (input, check) => {
   const { files, indexScripts, swShell } = input.site;
   const names = files.map(f => f.path);
-  files.forEach(f => check(f.lines <= FILE_LINE_LIMIT, `${f.path} has ${f.lines} lines, over the limit of ${FILE_LINE_LIMIT}; add another file`));
+  files.filter(f => !isLegacyData(f.path)).forEach(f => check(f.lines <= FILE_LINE_LIMIT, `${f.path} has ${f.lines} lines, over the limit of ${FILE_LINE_LIMIT}; add another file`));
   for (const [what, list] of [['index.html script tags', indexScripts], ['sw.js SHELL', swShell]]) {
     if (list === null) continue;
     checkEach(check, what, [
@@ -126,4 +129,6 @@ export const V29 = siteRule('V29', (input, check) => {
   }
 });
 
-export const RULES_REVISIONS = [V29, V45_unit, V45_subject, V46, V47, V48_unit, V48_site];
+export const V58 = heldRule('V58');
+
+export const RULES_REVISIONS = [V29, V45_unit, V45_subject, V46, V47, V48_unit, V48_site, V58];

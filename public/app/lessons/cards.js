@@ -32,14 +32,30 @@ function tapResult(T, c, right, picked){
 }
 const promptStem = html => `<div class="stepopen prompt"><p class="stem">${html}</p>`;
 
+// two facts side by side: what each is asked, its answer, and how it fits the idea
+function factPairTable(ctx, entry){
+  const { v, T } = ctx, [x, y] = entry.pair.map(v.fact);
+  const fits = r => T.P(r.relates).join(' ');
+  return `<table class="k pair"><tr><th></th><th>Fact A</th><th>Fact B</th></tr>`
+    + `<tr><td>${SAY.factAsked}</td><td>${esc(x.q)}</td><td>${esc(y.q)}</td></tr>`
+    + `<tr><td>${SAY.factAnswer}</td><td>${esc(x.a)}</td><td>${esc(y.a)}</td></tr>`
+    + `<tr><td>${SAY.factFits}</td><td>${fits(x)}</td><td>${fits(y)}</td></tr></table>`;
+}
+// the answers an outcome (or, in a gate unit, a family) gets to one question
+function pairAnswers(v, code, id){
+  return v.isOutcome(id) ? v.answersFor(code, id) : (v.key.gate && code === v.key.gate.code ? [v.option(code, id)] : []);
+}
+// the questions on a look-alike pair's route, in the key's order
+function pairSteps(v, entry){
+  const [x, y] = entry.pair;
+  return [...v.assumedSteps, ...v.unitSteps].filter(s => pairAnswers(v, s.code, x).length || pairAnswers(v, s.code, y).length);
+}
 function pairTable(ctx, entry){
+  if(entry.pair.every(ctx.v.isFact)) return factPairTable(ctx, entry);
   const { v } = ctx, [x, y] = entry.pair;
-  const gateCode = v.key.gate.code;
-  const answers = (code, id) => v.isOutcome(id) ? v.answersFor(code, id) : (code === gateCode ? [v.option(code, id)] : []);
-  const steps = [...v.assumedSteps, ...v.unitSteps].filter(s => answers(s.code, x).length || answers(s.code, y).length);
-  const cell = (code, id) => esc(answers(code, id).map(o => o.n).join(' / '));
+  const cell = (code, id) => esc(pairAnswers(v, code, id).map(o => o.n).join(' / '));
   return `<table class="k pair"><tr><th></th><th>${esc(v.nameOf(x))}</th><th>${esc(v.nameOf(y))}</th></tr>`
-    + steps.map(s => `<tr><td>${esc(s.q)}</td><td>${cell(s.code, x)}</td><td>${cell(s.code, y)}</td></tr>`).join('')
+    + pairSteps(v, entry).map(s => `<tr><td>${esc(s.q)}</td><td>${cell(s.code, x)}</td><td>${cell(s.code, y)}</td></tr>`).join('')
     + `<tr><td>${SAY.pointTo}</td><td>${esc(cap(v.thing(x).needs))}</td><td>${esc(cap(v.thing(y).needs))}</td></tr></table>`;
 }
 // the key's own tie-break for a look-alike pair, if it has one
@@ -62,7 +78,19 @@ function tellApart(ctx, entry, withTie){
 /* ---------- one function per card kind ---------- */
 const CARD = {};
 
+// A fact unit's first card: what the unit is, and the groups of facts it holds (lesson standard A12)
+function factOrient(ctx, card){
+  const { v, T } = ctx;
+  const groups = v.cardOrder.map(v.card).filter(k => k.kind === 'concept');
+  return T.PP(card.canDo) + T.PP(card.everyday)
+    + lessonSection('What this unit is', `<p>${SAY.factsToHold}</p>`)
+    + lessonSection(SAY.factsCount(v.taught.length, groups.length), lessonList(groups.map(k => T.t(k.h))))
+    + `<p>The unit has ${numWord(v.unit.parts.length)} part${v.unit.parts.length === 1 ? '' : 's'}, and you can stop after any of them.</p>`
+    + `<ol>${v.unit.parts.map(p => `<li>${esc(p.title)}</li>`).join('')}</ol>`
+    + (card.add ? T.PP(card.add) : '') + `<p>${SAY.howTaughtFacts} ${SAY.stakes}</p>`;
+}
 CARD.orient = (ctx, card) => {
+  if(ctx.v.isFacts) return factOrient(ctx, card);
   const { v, T } = ctx;
   const branch = v.key.branches[card.map.branch] || [v.key.gate];
   const out = [T.PP(card.canDo), T.PP(card.everyday)];
@@ -141,6 +169,7 @@ CARD.refute = (ctx, card) => {
 };
 
 CARD.lookalike = (ctx, card) => {
+  if(card.facts) return factLookalike(ctx, card);
   const { v, T, ui } = ctx, entry = v.ledger(card.ledger), [x, y] = card.cases.map(v.caseById);
   const stem = SAY.whichStem(T.a(...card.prompt.option.split('.')));
   const rightLetter = card.prompt.answer === x.id ? 'A' : 'B';
@@ -231,6 +260,10 @@ CARD.worked = (ctx, card) => {
 
 CARD.recap = (ctx, card) => {
   const { v, T } = ctx;
+  if(v.isFacts) return `<p>${T.t(card.link)}</p>`
+    + v.cardOrder.map(v.card).filter(k => k.kind === 'facts').map(k => `<div class="lsec"><p class="mapq">${cardHeading(v, T, k)}</p>`
+        + lessonList(k.rows.map(r => `<span class="kw">${esc(r.q)}</span> ${esc(r.a)}`)) + '</div>').join('')
+    + lessonSection('To carry away', lessonList(T.P(card.carry)));
   const portraitOf = id => v.cardOrder.map(v.card).find(k => k.kind === 'portrait' && (k.outcome || k.family) === id);
   return `<p>${T.t(card.link)}</p>`
     + lessonSection('The key for this unit, in its own words', v.unitSteps.map(s => `<p class="mapq">${esc(s.q)}</p>`
@@ -245,8 +278,8 @@ CARD.transfer = (ctx, card) => {
   const { v, T, ui } = ctx;
   const note = ui.note || {};
   return `<p>${T.t(card.link)}</p>${T.PP(card.ask)}`
-    + `<div class="opts" id="transferNames">${card.prompts.map(p => `<button class="opt ${note.outcome === p.outcome ? 'sel' : ''}" data-outcome="${esc(p.outcome)}">`
-        + `${esc(v.nameOf(p.outcome))}<small>${esc(p.occasion)}</small></button>`).join('')}</div>`
+    + `<div class="opts" id="transferNames">${card.prompts.map(p => { const id = p.outcome || p.family; return `<button class="opt ${note.outcome === id ? 'sel' : ''}" data-outcome="${esc(id)}">`
+        + `${esc(v.nameOf(id))}<small>${esc(p.occasion)}</small></button>`; }).join('')}</div>`
     + lessonSection('Where was it?', `<div class="chips wrap" id="transferPlaces">${card.places.map(pl =>
         `<button class="chip ${note.place === pl ? 'on' : ''}" data-place="${esc(pl)}">${esc(pl)}</button>`).join('')}</div>`)
     + lessonSection('In a line, what was said? (optional)',
@@ -254,17 +287,70 @@ CARD.transfer = (ctx, card) => {
         + `<p class="hintline">${SAY.transferNote}</p>`);
 };
 
+// The plan card (action subjects, lesson standard E18): "if I see X, then I will do Y". Examples are starting points
+// the learner can edit. Nothing is saved until they press the button, and the card is optional.
 CARD.plan = (ctx, card) => {
-  const { T } = ctx;
-  return `<p>${T.t(card.link)}</p>${T.PP(card.intro)}${lessonList(card.cues.map(x => `${esc(x.cue)}, ${esc(x.then)}`))}`;
+  const { T, ui } = ctx, note = ui.note || {};
+  return `<p>${T.t(card.link)}</p>${T.PP(card.intro)}<p class="hintline">${SAY.planOptional}</p>`
+    + lessonSection(SAY.planPick, `<div class="opts" id="planCues">${card.cues.map((x, i) =>
+        `<button class="opt ${note.cue === x.cue && note.then === x.then ? 'sel' : ''}" data-cue="${i}">${esc(SAY.planIfSee)} ${esc(x.cue)}, ${esc(SAY.planThenIWill)} ${esc(x.then)}</button>`).join('')}</div>`)
+    + `<div class="lsec"><label class="m fieldlabel" for="planCue">${esc(SAY.planIfSee)}</label>`
+    + `<input class="noteinput" id="planCue" type="text" maxlength="200" autocomplete="off" value="${esc(note.cue || '')}">`
+    + `<label class="m fieldlabel second" for="planThen">${esc(SAY.planThenIWill)}</label>`
+    + `<input class="noteinput" id="planThen" type="text" maxlength="200" autocomplete="off" value="${esc(note.then || '')}"></div>`
+    + `<div class="lsec"><button class="btn" id="planSave" ${note.cue && note.then ? '' : 'disabled'}>${esc(SAY.planSave)}</button>`
+    + (note.saved ? `<p class="hintline" role="status">${esc(SAY.planSaved)}</p>` : '') + '</div>';
 };
+
+// A fact unit's fact, a concept's case and its plain words (lesson standard A12)
+CARD.concept = (ctx, card) => {
+  const { v, T } = ctx, c = v.caseById(card.case);
+  return `<p>${T.t(card.link)}</p>${T.caseName(c)}${T.show(c)}${T.PP(card.plain, c)}`;
+};
+CARD.facts = (ctx, card) => {
+  const { T } = ctx, cols = card.columns || [];
+  return `<p>${T.t(card.link)}</p>`
+    + `<table class="k facts"><tr>${[...SAY.factColumns, ...cols].map(h => `<th>${esc(h)}</th>`).join('')}</tr>`
+    + card.rows.map(r => `<tr><td>${esc(r.q)}</td><td>${esc(r.a)}</td>${(r.cells || []).map(x => `<td>${esc(x)}</td>`).join('')}</tr>`).join('') + '</table>'
+    + lessonSection(SAY.factRelates, lessonList(card.rows.map(r => `<span class="kw">${esc(r.a)}</span>: ${T.P(r.relates).join(' ')}`)));
+};
+
+// A worked example with real numbers (procedure units, lesson standard A12): every step named by its purpose, with its
+// working. The step that carries the idea stops for a commit prompt: its reason, every later step and the result are not
+// in the page until the learner has chosen.
+CARD.solved = (ctx, card) => {
+  const { v, T, ui } = ctx, c = v.caseById(card.problem), hold = card.hold, p = hold.prompt;
+  const picked = ui.picked === null ? null : p.choices.find(x => x.id === ui.picked);
+  const row = st => `<div class="stepdone static"><span class="tick">${icon('check', 12)}</span><span class="grow"><span class="m s">${esc(st.does)}</span><span class="v">${esc(st.working)}</span></span></div>`;
+  const shown = card.steps.slice(0, picked ? card.steps.length : hold.step + 1);
+  const body = shown.map((st, i) => `<div class="steps">${row(st)}</div>`
+    + (i === hold.step ? '' : T.PP(st.why, c))
+    + (i === hold.step && picked ? `<div class="answerline"><p>The one that explains it: ${T.t(p.choices.find(x => x.id === p.answer).text, c)}</p>${picked.id !== p.answer && picked.note ? `<p>${T.t(paras(picked.note).join(' '), c)}</p>` : ''}</div>${T.PP(hold.reason, c)}` : '')).join('');
+  return `<p>${T.t(card.link)}</p>${T.caseName(c)}${lessonSection(SAY.solvedProblem, T.show(c))}`
+    + lessonSection(SAY.workingLabel, body)
+    + (picked ? lessonSection(SAY.solvedResult, T.PP(card.result, c))
+        : promptStem(SAY.solvedStem) + `<div class="opts">${p.choices.map(x => `<button class="opt" data-pick="${esc(x.id)}">${T.t(x.text, c)}</button>`).join('')}</div></div>`);
+};
+
+// two facts that are easy to swap: the questions side by side, the answer given, which fact has it? (lesson standard A12, A5)
+function factLookalike(ctx, card){
+  const { v, T, ui } = ctx, entry = v.ledger(card.ledger), [x, y] = card.facts.map(v.fact);
+  const rightLetter = card.prompt.answer === x.id ? 'A' : 'B';
+  return `<p>${T.t(card.link)}</p>`
+    + lessonSection('Fact A', `<blockquote class="passage">${esc(x.q)}</blockquote>`) + lessonSection('Fact B', `<blockquote class="passage">${esc(y.q)}</blockquote>`)
+    + lessonSection('What to compare', `<p>${T.t(paras(card.instruction).join(' '))}</p>`)
+    + (ui.picked === null
+        ? promptStem(SAY.whichFactStem('“' + esc(v.fact(card.prompt.answer).a) + '”')) + `<div class="opts two"><button class="opt" data-pick="A">Fact A</button><button class="opt" data-pick="B">Fact B</button></div></div>`
+        : `<div class="answerline"><p>Fact ${rightLetter}.</p></div>`
+          + lessonSection(SAY.whyThisOne, T.PP(card.difference)) + tellApart(ctx, entry, false));
+}
 
 /* ---------- headings, and which cards stop for an answer ---------- */
 function cardHeading(v, T, card){
   const id = card.outcome || card.family;
   if(card.continues) return cardHeading(v, T, v.card(card.continues));
   if(card.kind === 'meet') return esc(cap(v.thing(id).plain));
-  if(card.kind === 'check') return SAY.checkHeading;
+  if(card.kind === 'check') return card.ask.type === 'fact' ? SAY.factCheckHeading : SAY.checkHeading;
   if(card.kind === 'again' && !card.h) return esc(SAY.againHeading(v.nameOf(id)));
   if(card.kind === 'portrait' && !card.h) return esc(SAY.portraitHeading(v.nameOf(id)));
   if(card.kind === 'lookalike' && !card.h) return esc(SAY.lookalikeHeading(...v.ledger(card.ledger).pair.map(v.nameOf)));
@@ -275,16 +361,18 @@ const COMMIT_KINDS = ['again', 'lookalike', 'exception'];
 // true while the card is waiting for the learner's answer
 function cardAwaits(card, ui){
   if(card.kind === 'worked') return ui.step === card.steps.length && ui.picked === null;
+  if(card.kind === 'solved') return ui.picked === null;
   return COMMIT_KINDS.includes(card.kind) && ui.picked === null;
 }
 // whether a commit answer was right (commit prompts are recorded, never scored)
 function commitRight(v, card, picked){
-  if(card.kind === 'lookalike') return (picked === 'A' ? card.cases[0] : card.cases[1]) === card.prompt.answer;
+  if(card.kind === 'lookalike') return (picked === 'A' ? (card.facts || card.cases)[0] : (card.facts || card.cases)[1]) === card.prompt.answer;
   if(card.kind === 'worked') return picked === card.hold.prompt.answer;
+  if(card.kind === 'solved') return picked === card.hold.prompt.answer;
   const c = v.caseById(card.kind === 'again' ? card.second : card.case);
   return c.segments[picked].text.includes(card.prompt.answer);
 }
 function cardHtml(ctx, card){
-  const render = CARD[card.kind] || lessonFail(`card kind "${card.kind}" has no renderer yet`);
+  const render = CARD[card.kind] || lessonFail(`card ${card.id} is of kind "${card.kind}", which is not a card kind of the lesson standard`);
   return render(ctx, card);
 }
