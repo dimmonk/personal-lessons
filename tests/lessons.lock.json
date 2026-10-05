@@ -2,8 +2,8 @@
   "standard": 1,
   "subjects": {
     "psychology": {
-      "rev": 1,
-      "fp": "sha256:09ea799c2f69914e08f15763ff70a2530ff94622ebf2399733909dd641e1d3c6"
+      "rev": 2,
+      "fp": "sha256:ce9df40582d397e9f3b0cd088bfc7ab4de0cbaaedf77b8823f601293e259a1cf"
     }
   },
   "units": {

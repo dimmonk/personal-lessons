@@ -1,8 +1,4 @@
 {
-  "why": "Findings the validator reports on data this project has not yet been allowed to change. The list may only shrink (V58): an entry that no longer fires has to be removed, and an entry that was not in the last commit's list is refused. Psychology's subject.blurb types two of the gate's answers and uses a word on the key's avoid list. The gate and its wording are rewritten with Unit One (F6 step 4), and the blurb with them.",
-  "held": [
-    "V2 psychology: subject.blurb: key wording typed by hand: \"A move between people\"",
-    "V2 psychology: subject.blurb: key wording typed by hand: \"A lasting way someone is\"",
-    "V50 psychology: subject.blurb: a word to avoid, \"move\", in \"Tell a hard moment from a lasting way someone is, \""
-  ]
+  "why": "Findings the validator reports on data this project has not yet been allowed to change. The list may only shrink (V58), and an entry that stops firing has to be removed. It is empty.",
+  "held": []
 }

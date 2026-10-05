@@ -1,10 +1,10 @@
 // Psychology: subject record. Revision is a real field (it used to be parsed out of an "eyebrow" label).
 FC.subject('psychology', {
   name: 'Psychology',
-  rev: 1,                 // subject revision; goes up whenever this record, the key or the specimens change (lesson standard R2)
+  rev: 2,                 // subject revision; goes up whenever this record, the key or the specimens change (lesson standard R2)
   standard: 1,            // lesson-standard version the subject's key was written to
   action: false,          // true for subjects the learner acts on (Scams, Wealth Preservation, Statistical Claims)
-  blurb: 'Tell a hard moment from a lasting way someone is, and reasoning from a move between people, before you reach for a label.',
+  blurb: 'Before you reach for a label like “gaslighting” or “narcissist”, work out what kind of case you are looking at, and name it from the words in the case that decide it.',
   units: ['u1', 'u2', 'u3', 'u4', 'u5', 'u6'],   // order of the course; only u2 is rebuilt in this exemplar
   // The areas of life a case can be set in. case.setting must be one of these; case.topic carries the detail.
   // A fixed list is what makes "three settings" and "a different setting" checkable (lesson standard W5.3, V33).
@@ -20,6 +20,7 @@ FC.subject('psychology', {
   ],
   // What changed at each revision (lesson standard R1). One entry for every revision from 1 to rev.
   history: [
-    { rev: 1, date: '2026-10-04', change: 'First version under lesson standard 1: the reasoning branch of the key rewritten in plain words, five specimens re-keyed.' }
+    { rev: 1, date: '2026-10-04', change: 'First version under lesson standard 1: the reasoning branch of the key rewritten in plain words, five specimens re-keyed.' },
+    { rev: 2, date: '2026-10-05', change: 'Blurb reworded so it no longer types key answers by hand.' }
   ]
 });
