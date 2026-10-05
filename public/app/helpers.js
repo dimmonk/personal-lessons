@@ -4,18 +4,12 @@ const esc = s => String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&g
 const screenEl = () => document.getElementById('screen');
 const pad2 = n => String(n).padStart(2,'0');
 
-// A failed save or read is reported on the console, never swallowed: the learner's record lives here.
-function storageSave(key, obj){
-  try{ localStorage.setItem(key, JSON.stringify(obj)); }
-  catch(e){ console.error('Could not save ' + key, e); }
-}
+function storageSave(key, obj){ try{ localStorage.setItem(key, JSON.stringify(obj)); }catch(e){} }
 function storageLoad(key, fallback){
   try{
     const raw = localStorage.getItem(key);
     if(raw) return Object.assign(fallback, JSON.parse(raw));
-  }catch(e){
-    console.error('Could not read ' + key, e);
-  }
+  }catch(e){}
   return fallback;
 }
 

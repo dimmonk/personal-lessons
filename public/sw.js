@@ -2,25 +2,17 @@
 // The page, its scripts and its stylesheet are network-first, so a new deploy shows up
 // whole on the next load; the cached copy is only the offline fallback. Fonts and icons
 // are served from cache and refreshed in the background.
-const CACHE = 'fieldcraft-v4';
+const CACHE = 'fieldcraft-v6';
 const SHELL = [
   './',
   'manifest.json',
   'app.css',
-  'app/helpers.js', 'app/registry.js', 'subjects/ideology/standard0.js', 'subjects/psychology/standard0.js',
-  'subjects/psychology/subject.js', 'subjects/psychology/key.js', 'subjects/psychology/u1.cases-1.js',
-  'subjects/psychology/u2.unit.js', 'subjects/psychology/u2.cards-1.js', 'subjects/psychology/u2.cards-2.js',
-  'subjects/psychology/u2.cards-3.js', 'subjects/psychology/u2.cards-4.js',
-  'subjects/psychology/u2.cards-5.js', 'subjects/psychology/u2.cases-teach-1.js',
-  'subjects/psychology/u2.cases-teach-2.js', 'subjects/psychology/u2.cases-teach-3.js',
-  'subjects/psychology/u2.cases-drill-1.js', 'subjects/psychology/u2.cases-drill-2.js',
-  'subjects/psychology/u2.cases-drill-3.js', 'subjects/psychology/u2.cases-return-1.js',
-  'subjects/psychology/u2.cases-return-2.js', 'subjects/psychology/specimens.js',
-  'subjects/math/standard0.js', 'subjects/stats/standard0.js', 'subjects/scams/standard0.js',
-  'subjects/wealth/standard0.js', 'subjects/civics/standard0.js', 'app/lessons/view.js',
-  'app/lessons/records.js', 'app/state.js', 'app/shell.js', 'app/library.js', 'app/subject.js',
-  'app/lesson.js', 'app/drills.js', 'app/reference.js', 'app/mixed.js', 'app/progress.js', 'app/search.js',
-  'app/lessons/cards.js', 'app/lessons/ask.js', 'app/lessons/drill.js', 'app/lessons/taught.js', 'app/lessons/unit-flow.js', 'app/lessons/unit.js', 'app/init.js',
+  'app/helpers.js',
+  'subjects/ideology/standard0.js', 'subjects/psychology/standard0.js', 'subjects/math/standard0.js',
+  'subjects/stats/standard0.js', 'subjects/scams/standard0.js', 'subjects/wealth/standard0.js',
+  'subjects/civics/standard0.js',
+  'app/state.js', 'app/shell.js', 'app/library.js', 'app/subject.js', 'app/lesson.js', 'app/drills.js',
+  'app/reference.js', 'app/mixed.js', 'app/progress.js', 'app/search.js', 'app/init.js',
   'fonts/fonts.css',
   'fonts/bricolage-grotesque-latin.woff2', 'fonts/literata-latin.woff2', 'fonts/jetbrains-mono-latin.woff2',
   'icons/favicon.svg', 'icons/favicon-32.png', 'icons/apple-touch-icon.png',

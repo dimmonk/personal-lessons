@@ -953,4 +953,3 @@ const STATISTICS = {
   </ul>`
 };
 
-FC.legacy('stats', STATISTICS);

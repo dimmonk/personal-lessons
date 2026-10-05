@@ -23,10 +23,7 @@ export async function loadApp() {
   const parts = await Promise.all(files.map(async src =>
     `/* ${src} */\n` + await readFile(new URL(src, PUBLIC), 'utf8')));
   const source = parts.join('\n') + `\nglobalThis.__app = { ${EXPORTS.join(', ')} };`;
-  // the app reads and writes localStorage; headless it gets an empty in-memory one, so nothing is read or kept
-  const memory = new Map();
-  const localStorage = { getItem: key => memory.has(key) ? memory.get(key) : null, setItem: (key, value) => memory.set(key, String(value)), removeItem: key => memory.delete(key) };
-  const context = vm.createContext({ console, localStorage });
+  const context = vm.createContext({ console });
   vm.runInContext(source, context, { filename: 'public (scripts in load order)' });
   return context.__app;
 }

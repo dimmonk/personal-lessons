@@ -1303,5 +1303,4 @@ const CIVICS = {
   </ul>`
 };
 
-FC.legacy('civics', CIVICS);
 

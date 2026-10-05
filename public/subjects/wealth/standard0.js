@@ -1056,5 +1056,4 @@ const WEALTH = {
   </ul>`
 };
 
-FC.legacy('wealth', WEALTH);
 

@@ -30,7 +30,7 @@ function renderProgress(){
           <span class="t">${esc(s.name)}</span>
           <span class="s">${unitsDone(s)}/${s.course.length} units &middot; drills ${n ? ok + '/' + n : '&mdash;'} &middot; det ${S.stats.det.n}/${s.specimens.length}</span>
           <span class="segs" style="margin-top:6px">${s.course.map((_,i) =>
-            `<i class="${unitDone(s,i)?'on':''}"></i>`).join('')}</span>
+            `<i class="${S.course.done[i]?'on':''}"></i>`).join('')}</span>
         </span>
         ${icon('chevron')}
       </button>`;

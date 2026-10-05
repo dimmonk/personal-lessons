@@ -1,42 +1,17 @@
-/* ===================== SUBJECTS ===================== */
-// One list of units per subject (lesson standard F5). Each unit is either rebuilt (standard 1: its data is
-// in the FC registry and unit.js runs it) or still in its old shape (standard 0: the old screens run it).
-// SUBJECTS holds new objects built from the registry's frozen data; nothing registered is ever changed.
+const SUBJECTS = [IDEOLOGY, PSYCHOLOGY, MATH, STATISTICS, SCAMS, WEALTH, CIVICS];
+
+/* ===================== SUBJECT METADATA ===================== */
 
 const ACCENTS = ['#DFA83E','#57C48E','#62AFEE','#C39BF0','#F0907E'];
 const WORDS = ['no','one','two','three','four','five','six','seven','eight','nine','ten','eleven','twelve'];
 const numWord = n => n < WORDS.length ? WORDS[n] : String(n);
 const cap = s => s.charAt(0).toUpperCase() + s.slice(1);
 
-function subjectUnitIds(data){
-  return data.meta && data.meta.units ? data.meta.units : data.legacy.course.map((_, i) => 'u' + (i + 1));
-}
-function rebuiltEntry(subjectId, unitId){
-  const v = unitView(subjectId, unitId);
-  return { id: unitId, standard: 1, tag: v.unit.tag, title: v.title, rev: v.unit.rev, status: v.unit.status, cards: v.cardOrder };
-}
-function legacyEntry(data, unitIds, unitId, position){
-  const hasRebuilt = unitIds.some(id => data.units[id]);
-  const entry = hasRebuilt ? data.legacy.course.find(c => c.id === unitId) : data.legacy.course[position];
-  if(!entry) throw new Error(`${data.legacy.id}: no old course entry for unit ${unitId}`);
-  return { ...entry, id: unitId, standard: 0 };
-}
-function buildSubject(id, index){
-  const data = FC.get(id);
-  if(!data.legacy) throw new Error(`${id}: no legacy record; a subject with no old content is not wired into the old screens`);
-  const unitIds = subjectUnitIds(data);
-  const course = unitIds.map((unitId, i) => data.units[unitId] ? rebuiltEntry(id, unitId) : legacyEntry(data, unitIds, unitId, i));
-  // the subject record, where there is one, is the only place the name, revision and blurb are typed
-  const record = data.meta ? { name: data.meta.name, rev: data.meta.rev, blurb: data.meta.blurb } : {};
-  return {
-    ...data.legacy, ...record, course,
-    accent: data.legacy.accent || ACCENTS[index % ACCENTS.length],
-    keyNo: pad2(index + 1),
-    cardCount: course.reduce((a, u) => a + u.cards.length, 0)
-  };
-}
-const SUBJECTS = FC.ids().map(buildSubject);
-const isRebuilt = unit => unit.standard === 1;
+SUBJECTS.forEach((s,i)=>{
+  s.accent    = s.accent || ACCENTS[i % ACCENTS.length];
+  s.keyNo     = pad2(i+1);
+  s.cardCount = s.course.reduce((a,u)=>a+u.cards.length,0);
+});
 
 /* ===================== STATE ===================== */
 
@@ -64,55 +39,29 @@ const subjectStates = {};
 const currentSubject = () => SUBJECTS.find(s => s.id === APP.subjectId);
 const freshDet = () => ({i:0, answers:{}, outcome:null, revealed:false, editing:null});
 
-// The old screens' working copy of progress, derived from `seen` (the one home of progress, lesson standard E8).
-// Old units: done flag and place by unit id. A rebuilt unit's done mark is read from `seen` on demand, never copied.
-function courseFromSeen(subj){
-  const seen = seenOf(subj.id);
-  const done = subj.course.map(u => !isRebuilt(u) && !!(seen[u.id] && seen[u.id].done));
-  const placed = i => { const e = seen[subj.course[i].id]; return !!(e && !e.done && e.at && (!isRebuilt(subj.course[i]) || e.rev >= 1)); };
-  const isDone = i => isRebuilt(subj.course[i]) ? rebuiltUnitDone(subj.id, subj.course[i].id) : done[i];
-  const indexes = subj.course.map((_, i) => i);
-  const started = indexes.find(placed);
-  const open = started !== undefined ? started : indexes.find(i => !isDone(i));
-  if(open === undefined) return {u: subj.course.length - 1, card: 0, phase: 'unitdone', done};
-  const at = started !== undefined ? seen[subj.course[open].id].at : null;
-  const phase = at === 'drill' ? 'drill' : 'read';
-  const card = at && at.startsWith('card:') ? Number(at.slice(5)) : 0;
-  return {u: open, card, phase, done};
-}
-
 function st(subj){
   if(subjectStates[subj.id]) return subjectStates[subj.id];
-  migrateProgress(subj.id, subj.course.map(u => u.id), unitId => !!FC.get(subj.id).units[unitId]);
   const s = {
-    course: courseFromSeen(subj),
+    course: {u:0, card:0, phase:'read', done: subj.course.map(()=>false)},
     stats: {}, drill: {}, errState: {i:0, picked:null}, detState: freshDet()
   };
   subj.quickDrills.forEach(q => { s.stats[q.key] = {n:0, ok:0}; s.drill[q.key] = {i:0, picked:null}; });
   s.stats.det = {n:0, label:0, frame:0};
   s.stats.err = {seen:0};
+  storageLoad(`pl:${subj.id}:course`, s.course);
   subj.quickDrills.forEach(q => storageLoad(`pl:${subj.id}:stats:${q.key}`, s.stats[q.key]));
   storageLoad(`pl:${subj.id}:stats:det`, s.stats.det);
   storageLoad(`pl:${subj.id}:stats:err`, s.stats.err);
+  if(s.course.done.length !== subj.course.length) s.course.done = subj.course.map((_,i)=>!!s.course.done[i]);
   subjectStates[subj.id] = s;
   return s;
 }
-// Writes the old units' done marks and the open old unit's place into `seen`. Rebuilt units are written by unit.js.
 function saveCourse(subj){
-  const c = st(subj).course, before = seenOf(subj.id);
-  const next = {...before};
-  subj.course.forEach((u, i) => {
-    if(isRebuilt(u)) return;
-    const done = !!c.done[i], here = i === c.u;
-    if(!done && !here && !before[u.id]) return;
-    const at = done ? null : (here ? legacyPlace(c) : before[u.id].at);
-    next[u.id] = {rev: 0, done, at};
-  });
-  saveSeen(subj.id, next);
+  const c = st(subj).course;
+  storageSave(`pl:${subj.id}:course`, {u:c.u, card:c.card, phase:c.phase, done:c.done});
 }
 
-const unitDone = (subj, i) => isRebuilt(subj.course[i]) ? rebuiltUnitDone(subj.id, subj.course[i].id) : !!st(subj).course.done[i];
-const unitsDone = subj => subj.course.filter((_, i) => unitDone(subj, i)).length;
+const unitsDone = subj => st(subj).course.done.filter(Boolean).length;
 const pctOf     = subj => Math.round(100 * unitsDone(subj) / subj.course.length);
 function statusOf(subj){
   const d = unitsDone(subj);
@@ -127,11 +76,9 @@ function go(view, extra){
 }
 function openSubject(id){ APP.subjectId = id; touch(id); go('subject'); }
 function openUnit(subj, ui){
-  const c = st(subj).course, unit = subj.course[ui];
-  c.u = ui; c.card = 0; c.phase = 'read';
-  APP.subjectId = subj.id; touch(subj.id);
-  if(isRebuilt(unit)){ beginRebuiltUnit(subj, unit); return; }
-  saveCourse(subj); go('lesson');
+  const c = st(subj).course;
+  c.u = ui; c.card = 0; c.phase = 'read'; saveCourse(subj);
+  APP.subjectId = subj.id; touch(subj.id); go('lesson');
 }
 function on(sel, fn, root){ (root || screenEl()).querySelectorAll(sel).forEach(el => el.onclick = () => fn(el)); }
 

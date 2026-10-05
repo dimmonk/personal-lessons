@@ -1106,4 +1106,3 @@ const MATH = {
   </ul>`
 };
 
-FC.legacy('math', MATH);
