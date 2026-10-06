@@ -1,82 +1,52 @@
-// Statistical Claims, Unit Two, part two (first half): the third name, two things set side by side, with its look-alike pair and its exception.
+// Statistical Claims, Unit Two, part two (first half): the word the fourth name leans on, the fourth name with its check, and its look-alike pair.
 
 FC.cards('stats', 'u2', [
 
-  { id: 'meet-compok', kind: 'meet', outcome: 'comp_ok',
-    link: 'The first two names each had one thing in the claim. The third has two, set side by side, and the claim says which is bigger.',
-    case: 'h-buses', mark: 'H1',
+  { id: 'term-placebo', kind: 'term', term: 'placebo',
+    h: 'A dummy that makes both groups go through the same thing',
+    link: 'The first three names stopped short of saying why. The fourth is the one kind of claim that may say why, and the tests behind it often use a word you have not met.',
+    case: 'h-t-dummy',
+    plain: [
+      'The case is a test of a cold remedy, and the second group got a dummy tablet instead of nothing. Why not simply give nothing to the second group? Because people who know they have been given a remedy often feel better, or say they do. A dummy tablet puts both groups through the same thing, so that the only difference left between them is the medicine.',
+      'Not every test has a dummy. A bank that texts a reminder to some customers has no dummy text to send, so the second group simply gets the usual. What matters in every such test is that the two groups differ in one thing only: one has the thing, and the other does not.'
+    ] },
+
+  { id: 'meet-causeok', kind: 'meet', outcome: 'cause_ok',
+    link: 'The first three names all stop at what the figures show. The fourth goes one step further: it says why. That step is only safe in one situation, and this case is built to show it.',
+    case: 'h-migraine', mark: 'H1',
     strip: [
-      'There are two things, Line 5 and Line 9, and a figure for each: 12 late trips out of 200, and 31 out of 205.',
-      'They are of the same kind: two bus lines of the same length, run in the same hours, through neighborhoods of similar size.',
-      'They were counted the same way over the same stretch of time: every trip in March, with the same tracker.',
-      'The numbers behind the comparison are given: how many trips each had, and how many were late.',
-      'The claim says which is later more often, and stops there.'
+      'There are two groups of 200, and one was given something, a new tablet, while the other was given a {t:placebo}.',
+      'A lottery decided who went into which group. Nobody chose.',
+      'Both groups were counted the same way, over the same eight weeks.',
+      'The groups differ in the result: 4 migraine days a month against 7.',
+      'The claim says the tablet is the reason for the difference.'
     ],
     explain: [
-      'A comparison tells you how two things stand beside each other. For it to be fair, three things have to hold, and this case shows each. The two things have to be of the same kind: two lines of the same length, run in the same hours. A line through a quiet suburb at midday and a line through the center at rush hour are not of the same kind, and a difference between them says very little. Next, they have to be counted the same way over the same stretch of time. Here, every trip in March, one tracker. And the numbers have to be given, so that sizes can be put on the same scale.',
-      'The full description of this name adds one more thing: no different mix of easy and hard cases hidden inside the two. Here is what that means. Suppose two garages repair cars. Garage A mostly does quick jobs, 90 in every 100, and Garage B mostly does long, hard ones, 90 in every 100. Say that both garages finish 5 in 100 quick jobs late and 40 in 100 hard jobs late, so they are exactly as good as each other at each kind of job. Garage A has 90 × 0.05 = 4.5 quick jobs late, plus 10 × 0.40 = 4 hard jobs late, which is 8.5 late in every 100. Garage B has 10 × 0.05 = 0.5 quick jobs late, plus 90 × 0.40 = 36 hard jobs late, which is 36.5 in every 100. A total counted over everything makes B look more than four times as bad, and it is not worse at anything. So a comparison is fair only when the two things deal with the same mix of easy and hard jobs, which is why this case tells you that both lines run in the same hours through similar neighborhoods.',
-      'Putting sizes on the same scale is only division. Line 5 had 200 trips and Line 9 had 205, so the raw counts of late trips, 12 and 31, do not compare cleanly. Divide each by its own number of trips: 12 ÷ 200 = 0.06, which is 6 in 100 trips, and 31 ÷ 205 = 0.15, which is 15 in 100. Now the two figures stand on the same scale and can be set side by side.',
-      'The claim then says only which is bigger: 15 in 100 against 6 in 100. It does not say why Line 9 is late more often, whether traffic, a bridge or old buses. {o:comp_ok} tells you that two things differ and by how much. It has not earned the reason.'
+      'Every other claim in this unit stops at what the figures show. This one goes further: it says that the tablet is why the groups differ. That step is only safe when nothing but the tablet differs between the groups, and the way to be sure of that is for nobody to have chosen who was in which.',
+      'Suppose people had chosen for themselves whether to take the tablet. They might be the ones who take their health most seriously, or the ones with the worst migraines. Then the gap of 3 days a month might come from who they are, and the tablet might have done nothing.',
+      'Here a lottery formed the groups. Each of the 400 people had a one in two chance of landing in either group, whatever their age, however bad their migraines and however much they care about their health, so before the tablet the two groups were alike. After eight weeks they differ by 7 − 4 = 3 migraine days a month, so the tablet is the one thing left that was different. The {t:placebo} does a second job: neither group knew which it had, so the hopes of both were the same.',
+      'The claim stays inside what the test shows: on average, for people like the ones enrolled, the group given the tablet had fewer migraine days.'
     ],
-    feature: { step: 'H1', option: 'difference' },
-    name: 'The name for this is {o:comp_ok}. It is a comparison because the claim sets one thing beside another. It is fair because the two are alike and counted alike, and nothing about their size is hidden.' },
-
-  { id: 'again-compok', kind: 'again', outcome: 'comp_ok',
-    link: 'The bus lines gave you what to point to: {needs:comp_ok}. Here is a second case with a completely different story.',
-    first: 'h-buses', second: 'h-shifts', step: 'H1',
-    instruction: 'Find what the two cases share. Ignore the story (buses, a factory). Look at one thing only: {q:H1}',
-    prompt: { kind: 'phrase', answer: 'The night shift’s parts fail inspection more often: 22 in 1,000 against 14 in 1,000' },
-    shared: [
-      'In both cases there are two things of one kind, counted one way over one period, with their numbers given. In the factory, 42 of 3,000 parts failed on days and 68 of 3,100 on nights: 42 ÷ 3,000 = 0.014, which is 14 in 1,000, and 68 ÷ 3,100 = 0.022, which is 22 in 1,000. Each claim says which is bigger and stops.',
-      'The two stories share nothing else. So this is not about buses or about brake parts. It holds wherever the claim sets two alike things side by side and says which is bigger. That is what {o:comp_ok} names.'
-    ] },
-
-  { id: 'portrait-compok', kind: 'portrait', outcome: 'comp_ok',
-    link: 'You know what to point to. This card fills in the rest of the picture of {o:comp_ok}, so that you can spot it where nobody marks the words for you.',
-    typical: [
-      'The two things are described in a way that lets you see they are alike: the same length, the same line, the same hours, the same kind of patient.',
-      'Both were counted the same way over the same stretch of time. The words that say so are part of the claim or sit next to it.',
-      'The numbers are given, and so is how many each figure is out of. Or the figures are already put on the same scale, "for every 100", with both totals shown.',
-      'The claim says that one is bigger, likelier or riskier, or that one has more or less, and then stops.',
-      'It can also set one thing beside its own usual figure: this year’s reservoir level beside the average for that date over twenty years, as long as every reading was taken the same way.'
-    ],
-    not: [
-      'Two figures side by side are not yet {o:comp_ok}. The two things have to be alike and counted alike, and the numbers have to be there. A percentage with nothing behind it, or two totals that hide a different mix, would be a different case.',
-      'And {o:comp_ok} is not a cause. A line that is later more often has not been shown to be later because of anything in particular.'
-    ],
-    wild: ['"Line 9 is late more often than Line 5: 15 trips in 100 against 6."', '"Both lines are inspected the same way, and the night shift fails more often."', '"This year’s level is 13 points below the usual for the date."', '"Both clinics start the clock at check-in, and Clinic B’s waits are longer."'],
-    self: 'In your own life you do this when you compare two phone plans, two schools or two quotes. The comparison is fair when you can say that the two are alike in the ways that matter, were measured the same way, and you have the numbers.',
-    ask: '"Are the two things alike, counted the same way over the same period, and are the numbers behind the comparison given?"',
+    feature: { step: 'H1', option: 'causes' },
     act: [
-      '1. Check that the two are of the same kind: the same length, line, hours or sort of customer. If they are not, say that the comparison is not between alike things.',
-      '2. Check that both were counted the same way over the same time. Where the totals differ, divide each count by its own total to put them on the same scale.',
-      '3. If both hold, repeat which is bigger and by how much. Leave out any reason: the comparison has not earned one.'
-    ] },
-
-  { id: 'check-compok', kind: 'check', after: 'comp_ok',
-    case: 'h-pools',
-    ask: { type: 'option', step: 'H1', among: ['group', 'change', 'difference'] } },
-
-  { id: 'look-meas-comp', kind: 'lookalike', ledger: 'meas_ok~comp_ok',
-    link: 'The second pair of this unit: both claims put two figures in front of you, and both can sound like "this is lower than that".',
-    cases: ['h-gauge', 'h-reservoir-usual'],
-    instruction: 'Both cases are about the same reservoir, the same gauge and the same level. Compare one thing: is the claim following one thing as time passes, or setting one thing beside something else?',
-    prompt: { kind: 'which', option: 'H1.difference', answer: 'h-reservoir-usual' },
-    difference: [
-      'In Case A the district read the gauge on 1 June and again on 1 September, and the claim follows the one reservoir through the summer: 82% full, then 61% full. It fell by 82 − 61 = 21 points. The answer is {a:H1.change}, and the case is {o:meas_ok}.',
-      'In Case B the district looks at the reservoir on one date, 1 September, and sets this year’s 61% beside the average of twenty readings for that date, 74%. The gap is 74 − 61 = 13 points, and the claim says the level is below the usual. Nothing is followed through time. One thing is set beside its own usual figure. The answer is {a:H1.difference}, and the case is {o:comp_ok}.',
-      'The gauge, the reservoir and the 61% are the same. In one claim the reservoir moves while the gauge is watched. In the other it stands still while it is set beside the usual.'
-    ] },
-
-  { id: 'exc-years', kind: 'exception', looksLike: 'comp_ok', is: 'meas_ok', ledger: 'meas_ok~comp_ok',
-    h: 'Two numbers side by side that are not a comparison',
-    link: 'The last card separated the pair with two tidy cases. A claim can also set two numbers side by side and still be about one thing, and that needs a card of its own.',
-    case: 'h-fire-calls',
-    setup: 'There are two numbers in this claim, 410 and 380, one beside the other, and a claim that sets two numbers side by side is what {o:comp_ok} often looks like. Yet this case is {o:meas_ok}.',
-    prompt: { kind: 'phrase', answer: 'Calls from Ridley fell from 410 in 2022 to 380 in 2023' },
-    because: [
-      'Ask what is set beside what. Both numbers are about the same thing, calls from Ridley, in two different years. There is no second place, second group or usual level for the figure to be set beside. The only thing that differs between the two numbers is when they were counted, and the claim says that the figure fell.',
-      'For {o:comp_ok} you must be able to point to this: {needs:comp_ok}. The two things in it are two things of one kind. Here there is one thing, and what the claim sets beside the 2022 figure is the same thing a year later. That is time passing, and it is the answer {a:H1.change}.'
+      '1. Find the words that say who decided which group each person or thing went into. A lottery, a coin toss or a computer draw is what you need. "The ones who signed up" or "the ones who chose it" is not.',
+      '2. Find how many were in each group and whether both were counted the same way for the same time.',
+      '3. If both hold, repeat the cause as the claim states it, for people like those in the test, and no further.'
     ],
-    take: 'This is a choice made to keep the answers clear, and it is worth knowing that it is. In life the line is not drawn in one place: a comparison of one year with the next can be read either way. The answer goes by what the claim sets side by side. One thing as time passes is the answer {a:H1.change}. One thing against a different thing, or against its own usual figure, is the answer {a:H1.difference}.' }
+    name: 'The name for this is {o:cause_ok}. It is a test because the researchers gave the thing to one group and not to the other. It is fair because a lottery, and not anyone’s choice, formed the groups.' },
+
+  { id: 'check-causeok', kind: 'check', after: 'cause_ok',
+    case: 'h-allotment',
+    ask: { type: 'option', step: 'H1', among: ['change', 'difference', 'causes'] } },
+
+  { id: 'look-comp-cause', kind: 'lookalike', ledger: 'comp_ok~cause_ok',
+    link: 'The last pair of this unit: both show two groups with a gap, and the numbers can be exactly the same. The only difference is what the claim says.',
+    cases: ['h-readgroups', 'h-reading-cause'],
+    instruction: 'Both cases are about the same school, the same lottery and the same test results. Compare one thing: does the claim stop at which group is ahead, or does it say what made the gap?',
+    prompt: { kind: 'which', option: 'H1.causes', answer: 'h-reading-cause' },
+    difference: [
+      'In Case A the school’s claim gives the two averages, 74 and 62, and says which group is ahead: 74 − 62 = 12 points. It stops there. It says nothing about why. The answer is {a:H1.difference}, and the case is {o:comp_ok}.',
+      'In Case B the school ran the same lottery, set the same test and found the same 12 points, and its claim says the reading program raised the scores. It may say that, and the case shows why: names were drawn from a hat, so the students in the program and the students out of it were alike before the program began. The answer is {a:H1.causes}, and the case is {o:cause_ok}.',
+      'Everything is the same in both cases except the last sentence. A claim of the first kind never says what made the gap. Two things that look alike can differ in ways nobody can see, and any of those could be why one is ahead. Only a lottery spreads such differences evenly between two groups, so only a claim of the second kind may say what made the gap.'
+    ] }
 ]);

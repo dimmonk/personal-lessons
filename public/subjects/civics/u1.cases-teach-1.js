@@ -12,75 +12,29 @@
 
 FC.cases('civics', 'u1', [
 
-  /* ---------- The word on the second family's card: a case with text only ---------- */
   { id: 'c-application', use: 'teach', tier: 'clean', setting: 'immigration', topic: 'a citizenship application', name: 'Rosa’s application',
     text: "Rosa has applied to become a citizen. Her papers went to the immigration service, an office that checks each application, books the interview and sends a letter with the date. No new law was written for Rosa. The office is applying a law that already exists." },
 
-  /* ---------- Congress ---------- */
   { id: 'c-bicycle', use: 'teach', tier: 'clean', setting: 'money', topic: 'a tax on imported bicycle parts', name: 'The bicycle-parts tax',
     text: "Bike shops say the federal tax on imported bicycle parts is too high. A bill to lower it passed the House of Representatives last month. On Thursday the Senate voted on the bill too, and it passed.",
     route: { D1: ['congress'] },
     cues: { D1: ['A bill to lower it passed the House of Representatives last month', 'On Thursday the Senate voted on the bill too, and it passed'] } },
 
-  { id: 'c-loans', use: 'teach', tier: 'clean', setting: 'learning', topic: 'more time to repay student loans', name: 'The student loans',
-    text: "Students have asked for years for more time to repay their federal loans. On Monday the House voted for a bill that gives them five more years, and on Wednesday the Senate voted for the same bill. A student group called it good news.",
-    route: { D1: ['congress'] },
-    cues: { D1: 'On Monday the House voted for a bill that gives them five more years, and on Wednesday the Senate voted for the same bill' },
-    segments: [
-      { text: 'Students have asked for years for more time to repay their federal loans', note: 'That is why the bill exists. It tells you how the matter got here, and says nothing about who made the decision.' },
-      { text: 'On Monday the House voted for a bill that gives them five more years, and on Wednesday the Senate voted for the same bill' },
-      { text: 'A student group called it good news', note: 'That is a reaction, and it comes after the decision. The decision is what the question asks about.' }
-    ] },
-
-  /* ---------- The President or a federal agency ---------- */
   { id: 'c-seatbelt', use: 'teach', tier: 'clean', setting: 'travel', topic: 'how strong a seat belt must be', name: 'The seat belts',
     text: "On Monday the federal road-safety agency published how strong a seat belt must be in every new car, and the crash test each new car must pass. Its inspectors will start testing new cars next month.",
     route: { D1: ['president'] },
     cues: { D1: 'the federal road-safety agency published how strong a seat belt must be in every new car' } },
 
-  { id: 'c-army', use: 'teach', tier: 'clean', setting: 'world', topic: 'ships escorted past pirates', name: 'The escort',
-    text: "Pirates have attacked cargo ships in a stretch of sea where many American ships pass. On Tuesday the President ordered two navy ships to sail there and escort the cargo ships through. Shipping companies said they would wait and see.",
-    route: { D1: ['president'] },
-    cues: { D1: 'the President ordered two navy ships to sail there and escort the cargo ships through' },
-    segments: [
-      { text: 'Pirates have attacked cargo ships in a stretch of sea where many American ships pass', note: 'That is the trouble that led to the decision. It is not the decision.' },
-      { text: 'On Tuesday the President ordered two navy ships to sail there and escort the cargo ships through' },
-      { text: 'Shipping companies said they would wait and see', note: 'That is how some companies reacted. They decide nothing in this case.' }
-    ] },
-
-  /* ---------- A judge, in any court ---------- */
   { id: 'c-heater', use: 'teach', tier: 'clean', setting: 'home', topic: 'a broken heater', name: 'The broken heater',
     text: "Hana says her landlord must pay to fix the broken heater. The landlord says that Hana must pay. On Friday they each told their story to a judge, and the judge decided that the landlord must pay.",
     route: { D1: ['courts'] },
     cues: { D1: 'they each told their story to a judge, and the judge decided that the landlord must pay' } },
 
-  { id: 'c-fence', use: 'teach', tier: 'clean', setting: 'community', topic: 'a fence on the boundary', name: 'The boundary fence',
-    text: "Mr. Idowu says his fence is on his own land. His neighbor says it is two feet over the boundary. They could not agree, so on Monday the neighbor asked a judge to settle it.",
-    route: { D1: ['courts'] },
-    cues: { D1: 'on Monday the neighbor asked a judge to settle it' },
-    segments: [
-      { text: 'Mr. Idowu says his fence is on his own land', note: 'That is one side of the quarrel. It does not tell you who will decide it.' },
-      { text: 'His neighbor says it is two feet over the boundary', note: 'That is the other side of the quarrel. It does not tell you who will decide it.' },
-      { text: 'on Monday the neighbor asked a judge to settle it' }
-    ] },
-
-  /* ---------- A state, city or county government ---------- */
   { id: 'c-market', use: 'teach', tier: 'clean', setting: 'community', topic: 'cars banned from a market square', name: 'The market square',
     text: "Saturday traffic has made the market square in Marlow hard to cross on foot. On Tuesday the city council of Marlow voted to ban cars from the square on Saturdays, starting in June.",
     route: { D1: ['states'] },
     cues: { D1: 'the city council of Marlow voted to ban cars from the square on Saturdays' } },
 
-  { id: 'c-license', use: 'teach', tier: 'clean', setting: 'travel', topic: 'practice hours before a driving test', name: 'The practice hours',
-    text: "In the state of Dunmore, many young drivers fail their first driving test. On Wednesday the Dunmore state legislature voted that every learner must log fifty hours of practice before taking it. Driving instructors welcomed the change.",
-    route: { D1: ['states'] },
-    cues: { D1: 'the Dunmore state legislature voted that every learner must log fifty hours of practice before taking it' },
-    segments: [
-      { text: 'In the state of Dunmore, many young drivers fail their first driving test', note: 'That is the problem the vote was about. It is not the decision.' },
-      { text: 'the Dunmore state legislature voted that every learner must log fifty hours of practice before taking it' },
-      { text: 'Driving instructors welcomed the change', note: 'That is a reaction to the decision. The instructors decide nothing here.' }
-    ] },
-
-  /* ---------- Asked between cards ---------- */
   { id: 'k-farmers', use: 'check', tier: 'clean', setting: 'money', topic: 'help for farmers after a drought',
     text: "Wheat farmers lost much of their crop to the drought. On Wednesday the Senate voted to give them $2 billion in help, and the bill now goes to the House. Farm groups said they were relieved.",
     route: { D1: ['congress'] },
@@ -117,12 +71,5 @@ FC.cases('civics', 'u1', [
       { text: 'Swimmers cheered', note: 'That is a reaction to the decision. The swimmers do not decide anything.' }
     ],
     reason: { D1: 'The last decision is a vote by the council of a town: it is a town’s own government deciding something about the town’s own pool. No part of the government of the whole country appears.' },
-    not: { outcome: 'congress', why: 'A council votes on a rule much as the House and the Senate vote on a bill. But a town council makes decisions for one town only, and this one is about a town pool.' } },
-
-  { id: 'k-lakeroad', use: 'check', tier: 'varied', setting: 'leisure', topic: 'closing a lake road for a festival',
-    text: "Every autumn the county board of Pell County closes the lake road for the leaf festival. Shop owners on the road have asked the board to leave it open this year.",
-    route: { D1: ['states'] },
-    cues: { D1: 'have asked the board to leave it open this year' },
-    reason: { D1: 'The case ends with a request, and it is made to a county’s own government: {cue:D1}. The county board decides about its own road.' },
-    not: { outcome: 'courts', why: 'Someone is being asked to decide, and that can sound like a judge. But the people asked here are a county board, who make rules for the county, and nobody has gone to court.' } }
+    not: { outcome: 'congress', why: 'A council votes on a rule much as the House and the Senate vote on a bill. But a town council makes decisions for one town only, and this one is about a town pool.' } }
 ]);

@@ -1,23 +1,11 @@
-// Psychology, Unit Two: cases shown inside cards, parts three and four.
+// Psychology, Unit Two: teach, parts two and three: fair reasoning, its look-alikes, the near-miss, the check on the question and the worked case.
 
 FC.cases('psychology', 'u2', [
-
-  /* ---------- Fair reasoning: once with a view that changes, once with a view that stays ---------- */
+  /* ---------- Fair reasoning ---------- */
   { id: 'floodlights', use: 'teach', tier: 'clean', setting: 'community', topic: 'night games', name: 'The night games',
     text: "For years Ben told his soccer club's committee that night games under the lights would bring bigger crowds. The club tried it for a season. Then the attendance figures came in: crowds were smaller at every night game. 'I wanted this to work,' Ben told the committee. 'It didn't. I was wrong.'",
     outcome: 'fair', route: { D1: ['reasoning'], R1: ['follows'] },
     cues: { R1: "It didn't. I was wrong." } },
-
-  { id: 'prices', use: 'teach', tier: 'clean', setting: 'money', topic: 'two stores and twelve prices', name: 'The twelve prices',
-    text: "Pat has always said the corner store is cheaper than the supermarket. Her son says that cannot be true. So Pat writes down what the same twelve things cost in both stores on the same day. The corner store comes out $3 cheaper. 'Then I'll keep going there,' she says. 'If it had come out the other way, I'd have switched.'",
-    outcome: 'fair', route: { D1: ['reasoning'], R1: ['follows'] },
-    cues: { R1: "If it had come out the other way, I'd have switched" },
-    segments: [
-      { text: 'Pat has always said the corner store is cheaper than the supermarket', note: 'That is the view she starts with. Having a view first is not a fault.' },
-      { text: 'writes down what the same twelve things cost in both stores on the same day', note: 'That is the test, and it is a fair one: the same things, the same day, both stores. The words asked for are the ones that show her view going wherever the result points.' },
-      { text: "Then I'll keep going there", note: 'That is where she ends up, and where a person ends up never decides the name. The next sentence shows why she ends up there.' },
-      { text: "If it had come out the other way, I'd have switched" }
-    ] },
 
   { id: 'novel', use: 'check', tier: 'clean', setting: 'leisure', topic: 'a new novel',
     text: "Farah told her book club for a month that her favorite author's new novel would be a masterpiece. She read it over the weekend. 'It's a mess,' she told them on Monday. 'I was wrong about this one.'",
@@ -37,17 +25,6 @@ FC.cases('psychology', 'u2', [
     outcome: 'confbias', route: { D1: ['reasoning'], R1: ['scrutiny'] },
     cues: { R1: 'One good quarter proves nothing' } },
 
-  /* ---------- Look-alike pair: the same person carries on, for two different reasons ---------- */
-  { id: 'stall-spent', use: 'teach', tier: 'varied', setting: 'work', topic: 'a market stall, the year spent',
-    text: "Mei opened a market stall selling her own ceramics a year ago. It has lost money every month, and the booth fee for next year is due. 'I've put a year and most of my savings into this,' she says. 'I'm not walking away from that.' She pays the fee.",
-    outcome: 'sunkcost', route: { D1: ['reasoning'], R1: ['backward'] },
-    cues: { R1: "I've put a year and most of my savings into this" } },
-
-  { id: 'stall-ahead', use: 'teach', tier: 'varied', setting: 'work', topic: 'a market stall, the year ahead',
-    text: "Mei opened a market stall selling her own ceramics a year ago. It lost money for months, and the booth fee for next year is due. She goes through her sales: for the last ten weeks the stall has covered its costs with a little to spare, and two stores have started ordering from her. 'Next year should pay for itself,' she says. She pays the fee.",
-    outcome: 'fair', route: { D1: ['reasoning'], R1: ['follows'] },
-    cues: { R1: 'Next year should pay for itself' } },
-
   /* ---------- The near-miss: a view changes, and it is not fair reasoning ---------- */
   { id: 'convert', use: 'teach', tier: 'misleading', setting: 'money', topic: 'an electric car', name: 'The convert',
     text: "Until last month Jo said electric cars were overpriced toys. Then, on impulse at a car show, she bought one. Now she tells friends that electric cars are 'obviously the future'. She has read nothing about them that she had not read before.",
@@ -60,7 +37,7 @@ FC.cases('psychology', 'u2', [
       { text: 'She has read nothing about them that she had not read before' }
     ] },
 
-  /* ---------- The check on the key's question ---------- */
+  /* ---------- The check on the question ---------- */
   { id: 'tram', use: 'check', tier: 'varied', setting: 'community', topic: 'a light-rail line',
     text: "A city council has spent $2 million on plans for a light-rail line. A new estimate shows the line would cost four times the original figure and carry half the passengers. 'We cannot walk away from two million dollars of work,' the council president says, and she approves the next stage.",
     outcome: 'sunkcost', route: { D1: ['reasoning'], R1: ['backward'] },
@@ -68,13 +45,7 @@ FC.cases('psychology', 'u2', [
     reason: { R1: 'The reason given for the next stage is {cue:R1}: the money already spent. The new estimate, which is about what the next stage would cost and bring, plays no part in it.' },
     not: { outcome: 'confbias', why: 'The new estimate is evidence against going on, but the leader does not give it a harder test than other evidence. She does not test it at all. Her reason is not about evidence; it is the two million.' } },
 
-  /* ---------- The two worked cases: a clean one, then one whose story points the wrong way ---------- */
-  { id: 'longrun', use: 'teach', tier: 'clean', setting: 'leisure', topic: 'a running club', name: 'The missed long run',
-    text: "Noor has told her running club all year that she never misses a training session. On Sunday she stayed in bed instead of doing the long run. 'Rest days are part of training,' she wrote in the club chat that evening. 'Skipping one long run after eight months of them is basically recovery.'",
-    outcome: 'dissonance', route: { D1: ['reasoning'], R1: ['addstory'] },
-    cues: { D1: 'Rest days are part of training',
-            R1: 'Skipping one long run after eight months of them is basically recovery' } },
-
+  /* ---------- The worked case ---------- */
   { id: 'tasting', use: 'teach', tier: 'misleading', setting: 'work', topic: 'a coffee supplier', name: "Grace's tasting", also: ['scrutiny'],
     text: "Grace owns a café. In March she decided to switch to a new coffee supplier whose sales rep she had liked. In April she held a tasting with her six staff. She wrote down every compliment the new coffee got and none of the complaints. 'The tasting settled it,' she told her accountant.",
     outcome: 'motivated', route: { D1: ['reasoning'], R1: ['fixed'] },

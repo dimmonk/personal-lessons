@@ -1,4 +1,4 @@
-// Civics, Unit Three: cases shown inside cards, part one (the word on the treaty card, the first two names and their pair).
+// Civics, Unit Three: cases shown inside cards (the word on the treaty card, the first two names and their pair).
 // use: 'teach' = shown in a card with its reasoning; 'check' = asked between cards. Neither may appear in the drill.
 // setting is one of subject.settings (an area of life); topic is the story, and no two cases of one name share a topic.
 // cues[STEP] is the exact phrase in the text that decides that step (or a list of phrases); the app marks it,
@@ -8,26 +8,13 @@
 // All bills, people and places are invented.
 
 FC.cases('civics', 'u3', [
-
-  /* ---------- The case that carries the word on the treaty card (no name is asked of it) ---------- */
   { id: 'x-pact', use: 'teach', tier: 'clean', setting: 'world', topic: 'sharing the water of a river', name: 'The river agreement',
     text: "The United States and the country to its north both draw water from the same river. After two years of talks, the two governments wrote down in one formal document how much water each country may take in a dry summer, and what each will do if the river runs low. The President signed it for the United States, and the other country’s leader signed it for theirs." },
 
-  /* ---------- Enumerated power ---------- */
   { id: 'e-airfare', use: 'teach', tier: 'clean', setting: 'travel', topic: 'a tax on airline tickets', name: 'The airline-ticket tax',
     text: "Airports across the country need repairs, and the people who fly are a fair group to pay for them. The House passed a bill that puts a new tax of ten dollars on every airline ticket, and on Wednesday the Senate passed it too.",
     outcome: 'enumerated', route: { D1: ['congress'], C1: ['listed'] },
     cues: { C1: 'a bill that puts a new tax of ten dollars on every airline ticket' } },
-
-  { id: 'e-coins', use: 'teach', tier: 'clean', setting: 'money', topic: 'a one-dollar coin', name: 'The one-dollar coin',
-    text: "Paper notes wear out much faster than coins, and a worn note has to be replaced. On Monday the Senate voted for a bill that stops the printing of the one-dollar note and makes a one-dollar coin in its place. The House had voted for the same bill the week before.",
-    outcome: 'enumerated', route: { D1: ['congress'], C1: ['listed'] },
-    cues: { C1: 'a bill that stops the printing of the one-dollar note and makes a one-dollar coin in its place' },
-    segments: [
-      { text: 'Paper notes wear out much faster than coins, and a worn note has to be replaced', note: 'That is why the bill exists. It says nothing about what Congress did, or what the law is about.' },
-      { text: 'On Monday the Senate voted for a bill that stops the printing of the one-dollar note and makes a one-dollar coin in its place', },
-      { text: 'The House had voted for the same bill the week before', note: 'That is the first vote on the same law. It shows that both chambers voted, but not what the law is about.' }
-    ] },
 
   { id: 'k-courts', use: 'check', tier: 'clean', setting: 'community', topic: 'more judges for a busy federal court', name: 'The busy court',
     text: "The federal court in one of the busiest regions has far more cases than its judges can hear. The House and the Senate passed a bill that adds four judges to that court. The bill now waits for the President’s signature.",
@@ -40,21 +27,10 @@ FC.cases('civics', 'u3', [
     ],
     reason: { C1: 'Congress passed a law, and what it is about is the federal courts. Nothing in the law takes away anyone’s right to speak, to worship, to publish or to gather.' } },
 
-  /* ---------- Beyond Congress's power ---------- */
   { id: 'b-reading', use: 'teach', tier: 'clean', setting: 'learning', topic: 'a list of books for every school', name: 'The book list',
     text: "Many parents say that students across the country read too little. The House and the Senate passed a bill that tells every school in every state which ten books its students must read in ninth grade.",
     outcome: 'beyondcong', route: { D1: ['congress'], C1: ['barred'] },
     cues: { C1: 'a bill that tells every school in every state which ten books its students must read in ninth grade' } },
-
-  { id: 'b-worship', use: 'teach', tier: 'clean', setting: 'community', topic: 'where people may worship', name: 'The approved buildings',
-    text: "Some lawmakers say that too many small religious groups meet in homes and halls. On Tuesday the House passed a bill that lets people hold a religious service only in a building a federal office has approved. On Thursday the Senate passed it too.",
-    outcome: 'beyondcong', route: { D1: ['congress'], C1: ['barred'] },
-    cues: { C1: 'a bill that lets people hold a religious service only in a building a federal office has approved' },
-    segments: [
-      { text: 'Some lawmakers say that too many small religious groups meet in homes and halls', note: 'That is why the bill exists. It is the reason for the law, not what the law does.' },
-      { text: 'On Tuesday the House passed a bill that lets people hold a religious service only in a building a federal office has approved' },
-      { text: 'On Thursday the Senate passed it too', note: 'That is the second vote. It shows that both chambers voted, but not what the law does.' }
-    ] },
 
   { id: 'k-march', use: 'check', tier: 'clean', setting: 'community', topic: 'a peaceful march', name: 'The banned march',
     text: "Seven hundred people had planned a peaceful march past the federal courthouse in their city. The House and the Senate have now passed a bill that bans every march on a street next to a federal building, even a peaceful one.",
@@ -63,7 +39,6 @@ FC.cases('civics', 'u3', [
     reason: { C1: 'Congress passed a law, and the law is {cue:C1}. A march that is peaceful is a way of gathering, and the Constitution protects the right to gather peacefully. Whatever else the law is about, it takes that right away.' },
     not: { outcome: 'enumerated', why: 'Congress passed a law with both chambers voting, which is true of every law. But a law that takes away a right is not on the Constitution’s list, whatever its subject.' } },
 
-  /* ---------- The look-alike pair: the same matter, the mail, with and without a right taken away ---------- */
   { id: 'l-mail-rates', use: 'teach', tier: 'clean', setting: 'community', topic: 'the price of posting a parcel',
     name: 'The parcel price',
     text: "Rural towns say it costs too much to send a parcel by post. The House and the Senate passed a bill that sets one low price for any parcel under five pounds sent through the post office.",

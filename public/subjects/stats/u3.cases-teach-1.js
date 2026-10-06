@@ -14,17 +14,6 @@ FC.cases('stats', 'u3', [
     outcome: 'survivor', route: { S1: ['counted'], A1: ['lasted'] },
     cues: { S1: ['lists the 12 that are still open', 'Open on Sundays and your restaurant will last'], A1: 'lists the 12 that are still open' } },
 
-  { id: 'cn-tools', use: 'teach', tier: 'clean', setting: 'home', topic: 'old hand tools that still work', name: 'The grandfather’s tools',
-    text: "Joel owns the 15 hand tools his grandfather kept from the 1960s. Every one still works. 'They built tools to last back then,' Joel says. 'Nothing made today will still work in sixty years.' His grandfather threw out any tool that broke.",
-    outcome: 'survivor', route: { S1: ['counted'], A1: ['lasted'] },
-    cues: { S1: ['the 15 hand tools his grandfather kept from the 1960s', 'His grandfather threw out any tool that broke'], A1: 'the 15 hand tools his grandfather kept from the 1960s' },
-    segments: [
-      { text: 'Joel owns the 15 hand tools his grandfather kept from the 1960s' },
-      { text: 'Every one still works', note: 'That is the result: the tools that work. It does not say which tools are in the figure.' },
-      { text: 'Nothing made today will still work in sixty years', note: 'That is what Joel reads the figure as showing. The words to tap are the ones that say which tools are in the figure.' },
-      { text: 'His grandfather threw out any tool that broke', note: 'That says what happened to the tools that are missing, and it matters. But the words to tap are the ones that say which tools are in the figure: the ones his grandfather kept.' }
-    ] },
-
   { id: 'cn-app', use: 'check', tier: 'clean', setting: 'learning', topic: 'a language app and its exam', name: 'The language app',
     text: "A language app advertises: 'Nine in ten learners pass the fluency exam.' The exam is only offered to learners who reach level 20. Of the 8,000 people who downloaded the app in January, 400 reached level 20.",
     outcome: 'survivor', route: { S1: ['counted'], A1: ['lasted'] },
@@ -47,18 +36,7 @@ FC.cases('stats', 'u3', [
     outcome: 'samp_ok', route: { S1: ['holds'], H1: ['group'] },
     cues: { S1: 'every one is counted', H1: 'which is 8.4 kilograms for every seed planted' } },
 
-  /* ---------- The look-alike with the second name: two ways of being missing ---------- */
-  { id: 'cn-cycling-stayed', use: 'teach', tier: 'clean', setting: 'leisure', topic: 'a cycling club and the members who stayed', name: 'The cycling club, the members who stayed',
-    text: "A cycling club says: 'Our members ride 120 miles a month.' The club had 60 members when it started in 2018. 35 have since left, and the 120 miles is the average of the 25 who are still members.",
-    outcome: 'survivor', route: { S1: ['counted'], A1: ['lasted'] },
-    cues: { S1: ['the 120 miles is the average of the 25 who are still members', 'Our members ride 120 miles a month'], A1: 'the 120 miles is the average of the 25 who are still members' } },
-
-  { id: 'cn-cycling-link', use: 'teach', tier: 'clean', setting: 'leisure', topic: 'a cycling club and a link on its page', name: 'The cycling club, the link',
-    text: "A cycling club says: 'Our members ride 120 miles a month.' The club has 60 members. It posted a link to a form on its public page, where anyone who saw it could fill it in, and 25 members did. The 120 miles is their average.",
-    outcome: 'selfselect', route: { S1: ['counted'], A1: ['chose'] },
-    cues: { S1: ['25 members did', 'Our members ride 120 miles a month'], A1: 'posted a link to a form on its public page, where anyone who saw it could fill it in' } },
-
-  /* ---------- The second whole claim: the list that was asked is only the ones who stayed ---------- */
+  /* ---------- The whole claim: the list that was asked is only the ones who stayed ---------- */
   { id: 'cn-yoga', use: 'teach', tier: 'misleading', setting: 'health', topic: 'a yoga studio and the members who left', name: 'The yoga studio',
     text: "A yoga studio has been open for five years, and 300 people have joined it in that time. The studio mailed a survey to its 90 current members: 'How much has the studio helped you?' 88 replied, and 80 said 'a lot'. Its ad says: 'Nine in ten people who try our studio say it helps them a lot.' The other 210 left earlier, and were not asked.",
     outcome: 'survivor', route: { S1: ['counted'], A1: ['lasted'] },

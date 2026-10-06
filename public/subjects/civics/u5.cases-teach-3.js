@@ -11,17 +11,6 @@ FC.cases('civics', 'u5', [
     cues: { D1: 'her lawyer asks the judge to decide',
             J1: ['searches it with no warrant and without asking Joy', 'whether the search was unreasonable, as the Fourth Amendment forbids'] } },
 
-  { id: 't-lawyer', use: 'teach', tier: 'clean', setting: 'immigration', topic: 'a lawyer for someone who cannot pay', name: 'Luis and the lawyer',
-    text: 'Luis arrived in the country last year and is not yet a citizen. He is charged with assault, and he cannot afford a lawyer. At his first hearing he tells the judge that he cannot pay for one and asks the judge to appoint one.',
-    outcome: 'trialrights', route: { D1: ['courts'], J1: ['accused'] },
-    cues: { D1: 'he tells the judge', J1: ['he cannot afford a lawyer', 'asks the judge to appoint one'] },
-    segments: [
-      { text: 'Luis arrived in the country last year and is not yet a citizen', note: 'That is who he is. It does not show which step the judge is asked about.' },
-      { text: 'He is charged with assault', note: 'That shows he is accused of a crime. It does not show which step the judge is asked about.' },
-      { text: 'he cannot afford a lawyer', note: 'That is the need. The step is in what he asks the judge to do.' },
-      { text: 'asks the judge to appoint one' }
-    ] },
-
   { id: 't-check', use: 'check', tier: 'clean', setting: 'money', topic: 'a trial delayed three years', name: 'The long wait',
     text: 'Ravi is charged with fraud. He has waited in jail for three years and his trial has still not started, because the court keeps setting new dates. His lawyer has asked the judge to rule that three years is not the speedy trial the Constitution promises.',
     outcome: 'trialrights', route: { D1: ['courts'], J1: ['accused'] },

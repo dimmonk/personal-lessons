@@ -9,17 +9,6 @@ FC.cases('stats', 'u3', [
     outcome: 'nonresp', route: { S1: ['counted'], A1: ['replied'] },
     cues: { S1: ['336 mailed it back', 'Nine in ten of our members want Sunday opening'], A1: ['mailed a questionnaire to all 2,400 people with a library card', 'did nothing to hear from the other 2,064'] } },
 
-  { id: 'cn-union', use: 'teach', tier: 'clean', setting: 'work', topic: 'a union ballot mailed to every member', name: 'The union ballot',
-    text: "A union mailed a ballot to all 600 of its members about a strike. 90 ballots came back, and 81 were for striking. The union leader said: 'Nine in ten members back the strike.' Nobody phoned or visited the 510 who did not answer.",
-    outcome: 'nonresp', route: { S1: ['counted'], A1: ['replied'] },
-    cues: { S1: ['90 ballots came back', 'Nine in ten members back the strike'], A1: ['mailed a ballot to all 600 of its members', 'Nobody phoned or visited the 510 who did not answer'] },
-    segments: [
-      { text: 'A union mailed a ballot to all 600 of its members about a strike', note: 'That says everyone on the list was asked. The words to tap are the ones that say what was done about the members who did not answer.' },
-      { text: '90 ballots came back, and 81 were for striking', note: 'That is the figure, and it is correct for the ballots that came back.' },
-      { text: 'Nine in ten members back the strike', note: 'That is the claim. It speaks for all the members.' },
-      { text: 'Nobody phoned or visited the 510 who did not answer' }
-    ] },
-
   { id: 'cn-tenants', use: 'check', tier: 'clean', setting: 'home', topic: 'a form for every flat on new heating', name: 'The heating survey',
     text: "A landlord pushed a form under the door of each of the 150 flats in a building, about the new heating. 30 forms were sent back, and 27 said they were satisfied. The landlord's notice says: 'Nine in ten tenants are satisfied with the new heating.'",
     outcome: 'nonresp', route: { S1: ['counted'], A1: ['replied'] },
@@ -42,11 +31,5 @@ FC.cases('stats', 'u3', [
   { id: 'cn-pool-followed', use: 'teach', tier: 'clean', setting: 'leisure', topic: 'a swimming pool questionnaire with a follow-up', name: 'The swimming pool, with a follow-up',
     text: "A town swimming pool mailed a questionnaire to the 1,500 households on its members' list: 'Should the pool open at 6 a.m. on weekdays?' It then rang every household that had not replied, and in the end 1,350 of the 1,500 gave an answer. 972 said yes. Its notice says: 'Most households on our members' list want a 6 a.m. opening: 72 in every 100.'",
     outcome: 'samp_ok', route: { S1: ['holds'], H1: ['group'] },
-    cues: { S1: 'rang every household that had not replied', H1: "Most households on our members' list want a 6 a.m. opening" } },
-
-  /* ---------- The look-alike with the fourth name: a few replies from a long list ---------- */
-  { id: 'cn-staff-twelve-replies', use: 'teach', tier: 'clean', setting: 'work', topic: 'a cafeteria survey with twelve replies', name: 'The cafeteria survey, twelve replies',
-    text: "A catering company emailed all 800 of its office staff a survey about the cafeteria. 12 replied, and 9 said they like the food. The cafeteria manager says: 'Three in four of our staff like the food.' Nobody followed up with the other 788.",
-    outcome: 'nonresp', route: { S1: ['counted'], A1: ['replied'] },
-    cues: { S1: ['12 replied, and 9 said they like the food', 'Three in four of our staff like the food'], A1: ['emailed all 800 of its office staff', 'Nobody followed up with the other 788'] } }
+    cues: { S1: 'rang every household that had not replied', H1: "Most households on our members' list want a 6 a.m. opening" } }
 ]);

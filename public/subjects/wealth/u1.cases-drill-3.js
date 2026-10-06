@@ -1,7 +1,8 @@
 // Wealth Preservation, Unit One: drill cases, second stage (the cases whose story misleads) and the faulty claims of the last stage.
 // echo names a teaching case of a DIFFERENT family whose story this one is built to bring back, so that the second look ("does it
 // look like a case you know?") is practiced where the likeness points the wrong way. also lists an answer the case shows as well as
-// its own, which loses to its own by a tie-break in the key. Field guide: see u1.cases-drill-1.js.
+// its own, which loses to its own by a tie-break in the key. wouldChange says what would make the case a different answer; it is
+// written only where it teaches something the cards did not. Field guide: see u1.cases-drill-1.js.
 // A claim is something a person might say. ask is either
 //   { type: 'missing', name: family }   "the claim treats this as <that family>: what would you need to see?" (choices: the key's needs lines)
 //   { type: 'option', step, answer }    the key's question, asked of what the claim describes
@@ -9,7 +10,6 @@
 
 FC.cases('wealth', 'u1', [
 
-  /* ---------- misleading ---------- */
   { id: 'd-r-company-fall', use: 'drill', tier: 'misleading', setting: 'work', topic: 'retiring next year with most of it in one company', echo: 'w-couple-fall',
     also: ['timing'],
     text: "Odile, 60, plans to retire next year. $450,000 of her $520,000 is shares in the company where she works. This spring the company's price fell by 40%, and she wonders whether to sell before it gets worse.",
@@ -24,10 +24,9 @@ FC.cases('wealth', 'u1', [
     route: { D1: ['none'] },
     cues: { D1: ['which together pay all his bills', 'he does not plan to touch the savings'] },
     reason: { D1: 'A retired man and a fall of 30% in his shares bring back a case about prices falling. Read on: {cue:D1}. Nothing is waiting for the savings, so the fall catches nothing. The case has no charge, tax or sum spent, no single holding that is most of the savings, and no death or will in it.' },
-    not: { outcome: 'timing', why: 'A fall in prices and a retired man look like a case about timing. But his bills are paid from elsewhere and he is not selling, so nothing is waiting for the money.' },
-    wouldChange: 'If his Social Security and pension covered only half his bills, and he sold shares each month to pay the rest, the case would be {a:D1.timing}.' },
+    not: { outcome: 'timing', why: 'A fall in prices and a retired man look like a case about timing. But his bills are paid from elsewhere and he is not selling, so nothing is waiting for the money.' } },
 
-  { id: 'd-r-fixed-drop', use: 'drill', tier: 'misleading', setting: 'family', topic: 'a fixed yearly sum after two bad years', echo: 'w-exc-retired',
+  { id: 'd-r-fixed-drop', use: 'drill', tier: 'misleading', setting: 'family', topic: 'a fixed yearly sum after two bad years', echo: 'w-couple-fall',
     also: ['timing'],
     text: "Lucy and Hal set $36,000 a year as their spending when they retired with $600,000, which is 6%. Two bad years have taken their money to $420,000, and they still take out $36,000 every year, which is now 8.6%.",
     route: { D1: ['erosion'] },
@@ -36,15 +35,6 @@ FC.cases('wealth', 'u1', [
     not: { outcome: 'timing', why: 'The fall is in the case, and it explains the shrinking. But the case raises how much comes out each year, relative to what is left, and that decides it.' },
     wouldChange: 'If the sum they took out had always been about 5% of whatever their money was worth, and the only fact were that prices had fallen, it would be {a:D1.timing}.' },
 
-  { id: 'd-r-gifts', use: 'drill', tier: 'misleading', setting: 'family', topic: 'yearly gifts and a tax at death', echo: 'w-fee',
-    text: "Maud, 80, gives each of her three grandchildren $10,000 every year, $30,000 in all, out of her $25,000,000. The federal estate tax takes 40% of whatever a person leaves above a tax-free limit, and Maud has never talked to her lawyer about it.",
-    route: { D1: ['handover'] },
-    cues: { D1: ['The federal estate tax takes 40% of whatever a person leaves above a tax-free limit', 'gives each of her three grandchildren $10,000 every year'] },
-    reason: { D1: 'The case is about what happens to the money when Maud dies, and what tax would take: {cue:D1}. $30,000 a year leaving her money looks like something taken out every year, but it is a gift to family, and what the case raises is the tax at her death. $25,000,000 is far above the limit, and every $1,000,000 she leaves above it would bring $400,000 of tax.' },
-    not: { outcome: 'erosion', why: 'A sum leaves every year, but it is gifts to her grandchildren, and the tax the case raises falls once, at her death.' },
-    wouldChange: 'If Maud’s money were $300,000, far below the limit, and her papers were in order, the case would still be {a:D1.handover}: gifts to family are part of it.' },
-
-  /* ---------- faulty claims: the first is worked for the learner; then commit first, the fault, the claim put right ---------- */
   { id: 'c-demo', use: 'claim',
     text: '"Prices fell 15% this year, so my 401(k) has lost $9,000. I’m 38 and I won’t need it for decades, but I should sell before it falls any more."',
     ask: { type: 'option', step: 'D1', answer: 'none' },
@@ -61,11 +51,5 @@ FC.cases('wealth', 'u1', [
     text: '"I’m 62 and I live off the shares in my $400,000. I don’t need any cash set aside. When I want money I’ll just sell some, and prices always come back."',
     ask: { type: 'option', step: 'D1', answer: 'timing' },
     fault: 'The claim says nothing needs to be arranged, because prices come back. But the speaker lives off the shares, so something is sold every month, and a sale in a fall takes place at the low price. What is sold is not there when prices come back. "Always" is a promise that nobody can make, and the case is about what happens if they do not come back soon.',
-    corrected: 'I’m 62 and I live off the shares in my $400,000, with nothing set aside in cash. If prices fall, I will be selling at the low price to pay my bills. That is {a:D1.timing}.' },
-
-  { id: 'c-employer', use: 'claim',
-    text: '"My whole 401(k) is in my company’s shares because I believe in the company. It isn’t a gamble if you believe in it."',
-    ask: { type: 'option', step: 'D1', answer: 'shock' },
-    fault: 'The claim treats belief as protection. How much the speaker believes in the company says nothing about what would happen to the 401(k) if the company did badly, and companies can do badly for reasons nobody inside them controls. What the claim describes is one company that is the whole of the 401(k), and if it failed, most of {t:pot} would go with it.',
-    corrected: 'My whole 401(k) is in my company’s shares. I believe in the company, and that is a reason I chose it. It is not a reason it could not fall, and if it did, most of what I have would go with it. That is {a:D1.shock}.' }
+    corrected: 'I’m 62 and I live off the shares in my $400,000, with nothing set aside in cash. If prices fall, I will be selling at the low price to pay my bills. That is {a:D1.timing}.' }
 ]);

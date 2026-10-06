@@ -1,69 +1,49 @@
-// Wealth Preservation, Unit Two, part two (first half): income taxed every year in the wrong account, and its look-alike with the sound name.
+// Wealth Preservation, Unit Two, part two (second half, first part): the word for a profit on paper, tax on a sale nobody needs, and its
+// look-alike with income taxed every year.
 
 FC.cards('wealth', 'u2', [
 
-  { id: 'meet-location', kind: 'meet', outcome: 'location',
-    link: 'You have now met a charge that is a problem and a charge that is fine. The next three names are about tax. Start with the one where the tax comes every year and nothing has been sold.',
-    case: 'e-m-loc', mark: 'E1',
+  { id: 'term-gain', kind: 'term', term: 'gain',
+    h: 'A profit on paper',
+    link: 'The next two names are about tax on a sale. Before them, one word for what makes tax come with a sale.',
+    case: 'e-t-gain',
+    plain: [
+      'Tomás paid $10,000 for his shares, and they are now worth $16,000. On paper he is $6,000 better off. But he has not sold anything. Nobody has paid him $6,000, and no money has changed hands.',
+      'Nothing is due while Tomás holds the shares. If he sells them all, he has made $6,000 more than he paid, and tax is due on that $6,000. At 15%, that is $900. If he sells none, the tax is nothing. If the shares had fallen to $7,000 instead, he would be $3,000 below what he paid. That is a loss, not {t:gain}.'
+    ],
+    after: 'The cases that follow assume everything sold was held for more than a year, and use 15% on a gain and 25% on interest and rent. Rates change, so these are examples; the idea holds: what has not been sold has not been taxed.' },
+
+  { id: 'meet-defer', kind: 'meet', outcome: 'defer',
+    link: 'The tax in the last cards came every year without a sale. This tax comes only if something is sold.',
+    case: 'e-m-def', mark: 'E1',
     strip: [
-      'There is one person, Ana, and two accounts with $50,000 in each: an IRA, which is sheltered, and an ordinary brokerage account, which is taxed every year.',
-      'The investment that pays out the most is in the ordinary account: {t:bond} fund that pays out $2,400 of interest every year.',
-      'Ana pays 25% tax on that interest, $600, every year, and she has sold nothing.',
-      'The IRA, where income is not taxed, holds {t:fund} of shares that pays out very little.'
+      'There is one person, Imogen, and one fund: she paid $24,000, and it is now worth $30,000. The gain is $6,000, on paper.',
+      'A sale is planned: her adviser suggests selling it all to move into another fund, which is much like the one she holds.',
+      'The sale would bring tax of 15% on the gain, $900.',
+      'The case shows nothing that needs the sale: Imogen has no bill to pay and no need for the cash.'
     ],
     explain: [
-      'The tax here is on income: money an investment pays out to its owner each year, such as the interest on {t:bond} fund. It comes whether or not anything is sold, and it comes every year for as long as the fund stays where it is.',
-      'Both accounts are the same size, and either fund could sit in either account. In the brokerage account, the $2,400 of interest is taxed: $600 a year. In the IRA it would not be. The fund of shares pays out about $500 a year in dividends, which would cost $75 in tax in the brokerage account. So the swap, the bond fund into the IRA and the fund of shares into the brokerage account, takes the yearly tax from $600 to $75, a saving of $525 a year. Money that stays in {t:pot} grows by {t:compounding}: $525 a year kept and growing at 4% is about $15,600 after twenty years.',
-      'Why does it work? An investment that pays out a lot gives the IRS something to tax every year. An investment that pays out little mostly grows in price, and the tax on that growth comes only when it is sold. So the sheltered account does the most good for the investment that pays out the most.',
-      'The line printed below says the sheltered account holds investments that pay out little, “or with room to spare”. Room to spare means this year’s payments into it have not all been made: retirement accounts such as an IRA or a 401(k) have a yearly limit on what can be paid in, and one with some of that limit left can take more.',
-      'The cost of the swap is small here. Inside the IRA, switching funds is not taxed. In the brokerage account, selling the bond fund would bring tax only if it were worth much more than Ana paid for it, because tax then comes on the difference. Bond funds usually do not move much in price, so here it does not.'
+      'Ask what the sale is for. Her adviser says to lock in the profit. But a profit on paper is already hers, and selling does not make it more hers; it only makes it taxable. The money would go into {t:fund} much like the one she sells, so nothing about her position changes except that $900 goes to the IRS.',
+      'Sell: the $30,000 becomes $29,100 to invest after $900 of tax. Do not sell: $30,000 stays invested, and the $900 she did not pay keeps working with the rest.',
+      'Not selling does not make the $6,000 free of tax for ever. If Imogen sells one day, the gain, which may be larger by then, will be taxed. What she gains is time: the tax is paid later, and the money she did not pay out has been working in the meantime.',
+      'A sale can also be unneeded because new money could do the same job. Say a person chose a mix of 60% shares and 40% bonds, and after a good year shares have risen to 62%. An adviser says to sell some shares and buy bonds, to put it back. If the person is about to pay in new money, putting all of it into bonds does the same thing with no sale, and so no tax.'
     ],
-    feature: { step: 'E1', option: 'incometax' },
-    name: 'The name for this is {o:location}. It says what to do: put each investment in the account where it costs the least tax, which for an investment that pays out a lot is the sheltered account.' },
+    feature: { step: 'E1', option: 'needlesssale' },
+    name: 'The name for this is {o:defer}.',
+    act: 'Ask what the sale is for, and work out the tax in dollars: what it is worth now, minus what you paid, times the tax rate. If the reason is only a remark, a hunch or a wish to tidy up, do not sell. See whether new money could do the same job. If a sale is truly needed, sell the part with the smallest gain first.' },
 
-  { id: 'again-location', kind: 'again', outcome: 'location',
-    link: 'Ana’s case gave you what to point to: {needs:location}. Here is a second case, with shares in place of bonds.',
-    first: 'e-m-loc', second: 'e-a-loc', step: 'E1',
-    instruction: 'Find what the two cases share. Ignore the kind of fund, bonds in one and shares in the other. Look at one thing only: the words that show tax coming every year on income the fund pays out.',
-    prompt: { kind: 'phrase', answer: 'They come to $3,600 a year, and she pays 15% tax on them, $540, every year' },
-    shared: [
-      'Both people hold {t:fund} that pays out income in the ordinary account, and both pay tax on it every year: Ana’s $600 on interest, Hana’s $540 on dividends. In both, the IRA holds {t:fund} that pays out very little, so it has room for the one that pays out more. Neither has sold anything.',
-      'The funds are different kinds and the people are different ages. What they share is where the larger payout sits: in the taxed account. That is what {o:location} names.'
-    ] },
+  { id: 'check-defer', kind: 'check', after: 'defer',
+    case: 'e-c-def',
+    ask: { type: 'option', step: 'E1', among: ['picking', 'nomore', 'incometax', 'needlesssale'] } },
 
-  { id: 'portrait-location', kind: 'portrait', outcome: 'location',
-    link: 'You now know what to point to. This card fills in the rest of the picture, so that you can spot {o:location} in real life, where nobody marks the words for you.',
-    typical: [
-      'It is income, not growth. The tax is on what the investment pays out: interest from bonds, dividends from shares (the part of a company’s profits that it pays out to its owners), and rent from {t:fund} that owns buildings. Interest and rent are taxed as income; most dividends are taxed at the lower rate used for a long-term gain, which is one more reason the bond fund is the one to shelter.',
-      'Some investments pay out a lot (bond funds, funds of shares chosen for high payouts, funds that pass on rent) and some pay out little (shares in firms that keep their profits to grow). The ones that pay out a lot are the ones that give the IRS something to tax every year.',
-      'The tax comes without anyone doing anything. No sale is needed, so there is no moment to decide, and the person often does not know.',
-      'It needs two kinds of account. A person with only one kind has nothing to move between, and the name does not apply.',
-      'Nothing is spent or lost except tax. The same investments in swapped places do the same job at a lower yearly tax.'
-    ],
-    not: 'It is not tax on a sale. If the tax would come only if something were sold, this is not the name. And it is not a case where the investment that pays out the most is already in the sheltered account: then the tax is already about as low as it can be.',
-    wild: ['"I never touch it, so why am I paying tax?"', '"The statement says interest taxed."', '"It\'s only the dividends that get taxed."', '"Put the bonds in the IRA."', '"Which account should that go in?"'],
-    self: 'In your own life you find it in the tax form (a 1099) a brokerage account sends each year, and in the list of what each fund pays out. Look for the funds that pay out the most, and then for which account holds them.',
-    ask: '"Which of my investments pays out the most each year, and which account is it in?"',
-    act: [
-      'First, list every investment you hold, the account it is in, and what it paid out last year.',
-      'Second, mark the one or two that paid out the most. If they are in the ordinary account and {t:sheltered} holds investments that pay out little, you are probably looking at this name.',
-      'Third, remember the limit: a retirement account such as an IRA or a 401(k) has a yearly limit on what can be paid in, so investments cannot simply be moved into it from the ordinary account. What you can change is what each account holds.',
-      'Fourth, to swap, change what each account holds: inside the sheltered account, sell what pays out little and buy what pays out a lot, which is not taxed there; in the ordinary account, do the reverse, after asking what selling would cost in tax.',
-      'Fifth, if the swap would cost a lot of tax, use new money instead: put each year’s payment into the sheltered account, up to its yearly limit, and buy the investment that pays out the most there.'
-    ] },
-
-  { id: 'check-location', kind: 'check', after: 'location',
-    case: 'e-c-loc',
-    ask: { type: 'option', step: 'E1', among: ['picking', 'nomore', 'incometax'] } },
-
-  { id: 'look-location-nocut', kind: 'lookalike', ledger: 'location~nocut',
-    link: 'The last name turned on where the income investments sit. The sound name had a form that turns on the same thing, and the two are easy to mix up, so here they are side by side.',
-    cases: ['e-l-nocut-a', 'e-l-nocut-b'],
-    instruction: 'Ravi and his brother Sunil hold the same two funds, the other way round. Compare one thing: which account holds the fund that pays out the most.',
-    prompt: { kind: 'which', option: 'E1.nomore', answer: 'e-l-nocut-b' },
+  { id: 'look-location-defer', kind: 'lookalike', ledger: 'location~defer',
+    link: 'Both of the last two names are about tax on money held in an ordinary account, and they are easy to mix up. Here is the same person with each.',
+    cases: ['e-l-loc-a', 'e-l-loc-b'],
+    instruction: 'Both cases are about Imani and her ordinary account. Compare one thing: whether the tax arrives without a sale, or only if one is made.',
+    prompt: { kind: 'which', option: 'E1.needlesssale', answer: 'e-l-loc-b' },
     difference: [
-      'In Case A Ravi’s bond fund pays out $3,000 a year and sits in the ordinary account, where he pays $750 on it every year. His IRA holds the fund that pays out almost nothing. The answer is {a:E1.incometax}, and the case is {o:location}.',
-      'In Case B Sunil has the same two funds, and the bond fund is in his IRA. Its $3,000 is not taxed, and the fund of shares in his brokerage account costs him $90. That is already about as low as it can be, so nothing needs changing. The answer is {a:E1.nomore}, and the case is {o:nocut}.',
-      'The brothers have the same funds, the same sums and the same accounts. Only which fund is in which account differs, and that turns $750 a year of tax into $90. The first case needs a swap and the second needs nothing.'
+      'In Case A the tax is $500 a year on the interest of {t:bond} fund, and Imani sells nothing. It comes every year for as long as the fund stays where it is. The answer is {a:E1.incometax}, and the case is {o:location}.',
+      'In Case B nothing is taxed yet. The tax of $900 would come only if she sold the fund of shares, and nothing needs her to. If she does not sell, there is nothing to pay. The answer is {a:E1.needlesssale}, and the case is {o:defer}.',
+      'One tax comes every year whatever Imani does, and the other comes only if she acts. The fix for the first is to move {t:fund} to another account. The fix for the second is to leave the fund where it is.'
     ] }
 ]);

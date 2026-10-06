@@ -1,22 +1,22 @@
-// Basic Math, Unit Two: the drill's problems (part 1 of 9): the last-step stage, the whole-problem stage, then the route stage.
-// Every problem is a case with a route, marked words and a reason for the key's first question and for the unit's own question,
-// and carries its whole working and the slip behind every wrong choice.
+// Basic Math, Unit Two: the drill's problems. Every problem is a case with a route, marked words and a reason for the key's first
+// question and for the unit's own question, and carries its whole working and the slip behind every wrong choice.
 // The working, the wrong choices and the slip behind each were computed from the problem's own numbers when the file was written: check a number you change against its working.
 
 FC.cases('math', 'u2', [
+
   {
-    id: 'dl-prime-1',
+    id: 'dr-prime-2',
     use: 'drill',
     tier: 'clean',
-    setting: 'cooking',
-    topic: 'cupcakes on trays',
+    setting: 'work',
+    topic: 'books in piles',
     kind: 'problem',
     outcome: 'prime',
-    text: 'A baker has 161 cupcakes and wants to set them out on trays in equal rows, with more than one row and more than one cupcake in each row. Is that possible?',
+    text: 'A teacher has 51 exercise books and wants to share them out in equal piles, with more than one pile and more than one book in each pile. Is that possible?',
     route: { M1: ['whole'], W1: ['split'] },
     cues: {
-      M1: ['wants to set them out on trays in equal rows, with more than one row and more than one cupcake in each row'],
-      W1: ['wants to set them out on trays in equal rows, with more than one row and more than one cupcake in each row']
+      M1: ['share them out in equal piles, with more than one pile and more than one book in each pile'],
+      W1: ['share them out in equal piles, with more than one pile and more than one book in each pile']
     },
     reason: {
       M1: 'The problem asks {cue:M1}, a question about whether one whole number can be shared out in equal groups. Nothing in it changes as time passes, no hidden number has to be found from a calculation, and there is no shape or choice, so the answer to the first question is {a:M1.whole}.',
@@ -29,28 +29,28 @@ FC.cases('math', 'u2', [
     steps: [
       {
         does: 'Find where testing can stop',
-        working: '12 × 12 = 144 and 13 × 13 = 169, so √161 is between 12 and 13. Test no further than 12'
+        working: '7 × 7 = 49 and 8 × 8 = 64, so √51 is between 7 and 8. Test no further than 7'
       },
-      { does: 'List the primes up to there', working: 'Primes up to 12: 2, 3, 5, 7, 11' },
+      { does: 'List the primes up to there', working: 'Primes up to 7: 2, 3, 5, 7' },
       {
         does: 'Divide by each prime in turn, looking for an exact fit',
-        working: '161 = 2 × 80 + 1, with 1 left over; 161 = 3 × 53 + 2, with 2 left over; 161 = 5 × 32 + 1, with 1 left over; 161 = 7 × 23, with nothing left over. 7 fits, so stop'
+        working: '51 = 2 × 25 + 1, with 1 left over; 51 = 3 × 17, with nothing left over. 3 fits, so stop'
       },
-      { does: 'Say what it shows', working: '7 fits 161 exactly, so 161 is not prime: 7 × 23 = 161' }
+      { does: 'Say what it shows', working: '3 fits 51 exactly, so 51 is not prime: 3 × 17 = 51' }
     ],
     answer: {
       right: 'r',
       choices: [
-        { id: 'r', text: 'Not prime: 7 × 23 = 161' },
+        { id: 'r', text: 'Not prime: 3 × 17 = 51' },
         {
           id: 's1',
-          text: 'Prime: none of 2, 3 and 5 fits it',
-          slip: 'you stop testing at 5 and never try 7, though 7 × 7 = 49 is not more than 161.'
+          text: 'Prime: it is odd and does not end in 5',
+          slip: 'you judge by how the number looks, odd and not ending in 5, and never divide by 3.'
         },
         {
           id: 's2',
-          text: 'Not prime: 5 × 32',
-          slip: 'you read 161 = 5 × 32 + 1 as a fit and ignore the 1 left over, though a fit leaves nothing over.'
+          text: 'Not prime: 5 × 10',
+          slip: 'you read 51 = 5 × 10 + 1 as a fit and ignore the 1 left over, though a fit leaves nothing over.'
         }
       ]
     },
@@ -58,19 +58,16 @@ FC.cases('math', 'u2', [
   },
 
   {
-    id: 'dl-factor-1',
+    id: 'dr-factor-1',
     use: 'drill',
     tier: 'clean',
-    setting: 'work',
-    topic: 'a code made of primes',
+    setting: 'cooking',
+    topic: 'cupcakes in rows',
     kind: 'problem',
     outcome: 'factor',
-    text: 'A security code is the number 126. The technician wants to know which prime numbers multiply together to give 126.',
+    text: 'A caterer has 90 cupcakes and wants to know every way to set them out in equal rows, with more than one row and more than one cupcake in each row. How many different row lengths are there?',
     route: { M1: ['whole'], W1: ['parts'] },
-    cues: {
-      M1: ['which prime numbers multiply together to give 126'],
-      W1: ['which prime numbers multiply together to give 126']
-    },
+    cues: { M1: ['every way to set them out in equal rows'], W1: ['every way to set them out in equal rows'] },
     reason: {
       M1: 'The problem asks {cue:M1}, a question about what one whole number is made of or how it can be shared out. It follows no amount through time, hides no number to be found from a calculation, and has no shape or choice, so the answer to the first question is {a:M1.whole}.',
       W1: 'The words {cue:W1} give one number and ask what it is made of, or every way it can be shared out. That is more than a yes or a no about one number, which is {a:W1.parts}.'
@@ -81,43 +78,43 @@ FC.cases('math', 'u2', [
     },
     steps: [
       {
-        does: 'Find the smallest prime that divides the number exactly',
-        working: '2 divides 126 exactly: 126 ÷ 2 = 63'
+        does: 'Break the number into primes',
+        working: '90 = 2 × 3 × 3 × 5 (90 ÷ 2 = 45, 45 ÷ 3 = 15, 15 ÷ 3 = 5, and 5 is prime)'
       },
       {
-        does: 'Do the same to what is left, again and again, until what is left is prime',
-        working: '63 ÷ 3 = 21; 21 ÷ 3 = 7; 7 is prime, so stop'
+        does: 'Build every number you can make by multiplying some of those primes',
+        working: '1, 2, 3, 5, 6 (2 × 3), 9 (3 × 3), 10 (2 × 5), 15 (3 × 5), 18 (2 × 3 × 3), 30 (2 × 3 × 5), 45 (3 × 3 × 5), 90 (2 × 3 × 3 × 5). Here 1 uses none of the primes and 90 uses all of them'
       },
-      { does: 'Write the number as the product of every prime split off', working: '126 = 2 × 3 × 3 × 7' }
+      {
+        does: 'Leave out 1 and 90, which give one group, or groups of one',
+        working: '2, 3, 5, 6, 9, 10, 15, 18, 30, 45'
+      },
+      { does: 'Count what is left', working: '10 different sizes' }
     ],
     answer: {
       right: 'r',
       choices: [
-        { id: 'r', text: '2 × 3 × 3 × 7' },
-        { id: 's1', text: '2 × 7 × 9', slip: 'you stop while a piece can still be split: 9 is 3 × 3.' },
-        {
-          id: 's2',
-          text: '2 × 3 × 7',
-          slip: 'you write the repeated 3 only once, which leaves a 3 out: the product is 42, not 126.'
-        }
+        { id: 'r', text: '10' },
+        { id: 's1', text: '12', slip: 'you count 1 and 90 as well, though they give one group, or groups of one.' },
+        { id: 's2', text: '3', slip: 'you count only the prime numbers and never multiply any of them together.' }
       ]
     },
-    why: 'Splitting off the smallest prime that fits, and then doing the same to what is left, never leaves a piece that can still be split, and the pieces multiply back to the number. A number has only one set of primes that multiply to give it, so any order of splitting reaches the same list.'
+    why: 'Every group size that fits exactly is a product of some of the primes of the number, and every product of some of them fits exactly, so building all the products lists every size. Using none of them gives 1 and using all of them gives the number itself, which are the cases the problem rules out.'
   },
 
   {
-    id: 'dl-hcf-1',
+    id: 'dr-hcf-1',
     use: 'drill',
     tier: 'clean',
-    setting: 'cooking',
-    topic: 'rolls and buns in boxes',
+    setting: 'building',
+    topic: 'two planks to cut',
     kind: 'problem',
     outcome: 'hcf',
-    text: 'A baker has 36 rolls and 60 buns. She wants to fill boxes that all hold the same number of items, with rolls in some boxes and buns in the others and none left over. What is the largest number of items a box can hold?',
+    text: 'A joiner has two planks, one 120 cm long and one 200 cm long. He wants to cut both into pieces of equal length with no wood wasted. What is the greatest length each piece can have?',
     route: { M1: ['whole'], W1: ['piece'] },
     cues: {
-      M1: ['fill boxes that all hold the same number of items'],
-      W1: ['fill boxes that all hold the same number of items']
+      M1: ['cut both into pieces of equal length with no wood wasted'],
+      W1: ['cut both into pieces of equal length with no wood wasted']
     },
     reason: {
       M1: 'The problem asks {cue:M1}, a question about pieces of one size that two whole numbers can both be split into. Nothing grows, no hidden number has to be found from a calculation, and there is no shape or chance, so the answer to the first question is {a:M1.whole}.',
@@ -128,25 +125,25 @@ FC.cases('math', 'u2', [
       why: 'The problem asks for the biggest piece that fits into both numbers, and nothing repeats. {o:lcm} would ask when two repeats meet, and its answer is never less than the bigger number, where this answer is never more than the smaller.'
     },
     steps: [
-      { does: 'Break each number into primes', working: '36 = 2 × 2 × 3 × 3; 60 = 2 × 2 × 3 × 5' },
+      { does: 'Break each number into primes', working: '120 = 2 × 2 × 2 × 3 × 5; 200 = 2 × 2 × 2 × 5 × 5' },
       {
         does: 'Pick out the primes both numbers have, each as many times as the number that has it fewer times',
-        working: 'Both have 2 × 2 × 3'
+        working: 'Both have 2 × 2 × 2 × 5'
       },
-      { does: 'Multiply the shared primes', working: '2 × 2 × 3 = 12' }
+      { does: 'Multiply the shared primes', working: '2 × 2 × 2 × 5 = 40' }
     ],
     answer: {
       right: 'r',
       choices: [
-        { id: 'r', text: '12 items' },
+        { id: 'r', text: '40 cm' },
         {
           id: 's1',
-          text: '180 items',
+          text: '600 cm',
           slip: 'you keep every prime that either number has, the most times either has it, which gives the first time two repeats meet and not the biggest piece that fits both.'
         },
         {
           id: 's2',
-          text: '6 items',
+          text: '10 cm',
           slip: 'you count a shared prime once, though both numbers have it more than once.'
         }
       ]
@@ -155,18 +152,18 @@ FC.cases('math', 'u2', [
   },
 
   {
-    id: 'dl-lcm-1',
+    id: 'dr-lcm-1',
     use: 'drill',
     tier: 'clean',
-    setting: 'leisure',
-    topic: 'two bell ringers',
+    setting: 'travel',
+    topic: 'two street lights',
     kind: 'problem',
     outcome: 'lcm',
-    text: 'Two bell ringers start together. One rings every 12 seconds and the other every 16 seconds. After how many seconds do they next ring together?',
+    text: 'Two street lights blink, one every 8 seconds and the other every 12 seconds. They blink together now. When do they next blink together?',
     route: { M1: ['whole'], W1: ['together'] },
     cues: {
-      M1: ['One rings every 12 seconds and the other every 16 seconds'],
-      W1: ['One rings every 12 seconds and the other every 16 seconds']
+      M1: ['one every 8 seconds and the other every 12 seconds'],
+      W1: ['one every 8 seconds and the other every 12 seconds']
     },
     reason: {
       M1: 'The problem asks {cue:M1}, a question about two repeats and when they coincide. The numbers are whole counts that repeat, and no amount is followed as it grows, so the answer to the first question is {a:M1.whole}.',
@@ -177,17 +174,17 @@ FC.cases('math', 'u2', [
       why: 'Here two schedules repeat and the question is when they first coincide, so the answer is not less than the bigger number. {o:hcf} asks for a piece that fits into both numbers, and is never more than the smaller.'
     },
     steps: [
-      { does: 'Break each number into primes', working: '12 = 2 × 2 × 3; 16 = 2 × 2 × 2 × 2' },
+      { does: 'Break each number into primes', working: '8 = 2 × 2 × 2; 12 = 2 × 2 × 3' },
       {
         does: 'Collect every prime that either number has, each as many times as the number that has it more times',
-        working: 'Collected: 2 × 2 × 2 × 2 × 3'
+        working: 'Collected: 2 × 2 × 2 × 3'
       },
-      { does: 'Multiply them together', working: '2 × 2 × 2 × 2 × 3 = 48' }
+      { does: 'Multiply them together', working: '2 × 2 × 2 × 3 = 24' }
     ],
     answer: {
       right: 'r',
       choices: [
-        { id: 'r', text: '48 seconds' },
+        { id: 'r', text: '24 seconds' },
         {
           id: 's1',
           text: '4 seconds',
@@ -195,7 +192,7 @@ FC.cases('math', 'u2', [
         },
         {
           id: 's2',
-          text: '192 seconds',
+          text: '96 seconds',
           slip: 'you multiply the two numbers together, which is a time when both happen but not the first, because the numbers share a prime.'
         }
       ]
@@ -204,47 +201,47 @@ FC.cases('math', 'u2', [
   },
 
   {
-    id: 'dl-lcm-2',
+    id: 'dr-lcm-2',
     use: 'drill',
     tier: 'clean',
-    setting: 'work',
-    topic: 'two machines that restart',
+    setting: 'shopping',
+    topic: 'two delivery vans',
     kind: 'problem',
     outcome: 'lcm',
-    text: 'A machine in a factory restarts every 8 minutes and a second machine restarts every 10 minutes. They have just restarted together. After how many minutes will they next restart together?',
+    text: 'A van delivers to a shop every 6 days and a second van every 9 days. Both delivered today. In how many days will both next deliver on the same day?',
     route: { M1: ['whole'], W1: ['together'] },
     cues: {
-      M1: ['restarts every 8 minutes and a second machine restarts every 10 minutes'],
-      W1: ['restarts every 8 minutes and a second machine restarts every 10 minutes']
+      M1: ['delivers to a shop every 6 days and a second van every 9 days'],
+      W1: ['delivers to a shop every 6 days and a second van every 9 days']
     },
     reason: {
       M1: 'The problem asks {cue:M1}, a question about two repeats and when they coincide. The numbers are whole counts that repeat, and no amount is followed as it grows, so the answer to the first question is {a:M1.whole}.',
       W1: 'The words {cue:W1} give two repeating schedules and ask for the first time they coincide, which is {a:W1.together}.'
     },
     not: {
-      outcome: 'hcf',
-      why: 'Here two schedules repeat and the question is when they first coincide, so the answer is not less than the bigger number. {o:hcf} asks for a piece that fits into both numbers, and is never more than the smaller.'
+      outcome: 'modrem',
+      why: 'Two things repeat, so there are two repeats to bring together. {o:modrem} needs one loop, or one group size, and a count that goes round it.'
     },
     steps: [
-      { does: 'Break each number into primes', working: '8 = 2 × 2 × 2; 10 = 2 × 5' },
+      { does: 'Break each number into primes', working: '6 = 2 × 3; 9 = 3 × 3' },
       {
         does: 'Collect every prime that either number has, each as many times as the number that has it more times',
-        working: 'Collected: 2 × 2 × 2 × 5'
+        working: 'Collected: 2 × 3 × 3'
       },
-      { does: 'Multiply them together', working: '2 × 2 × 2 × 5 = 40' }
+      { does: 'Multiply them together', working: '2 × 3 × 3 = 18' }
     ],
     answer: {
       right: 'r',
       choices: [
-        { id: 'r', text: '40 minutes' },
+        { id: 'r', text: '18 days' },
         {
           id: 's1',
-          text: '2 minutes',
+          text: '3 days',
           slip: 'you keep only the primes both numbers have, which gives the biggest piece that fits both and not the first time two repeats meet.'
         },
         {
           id: 's2',
-          text: '80 minutes',
+          text: '54 days',
           slip: 'you multiply the two numbers together, which is a time when both happen but not the first, because the numbers share a prime.'
         }
       ]
@@ -253,16 +250,19 @@ FC.cases('math', 'u2', [
   },
 
   {
-    id: 'dl-mod-1',
+    id: 'dr-mod-1',
     use: 'drill',
     tier: 'clean',
     setting: 'home',
-    topic: 'candies shared out',
+    topic: 'a callback in fifty days',
     kind: 'problem',
     outcome: 'modrem',
-    text: 'Fifty candies are shared out equally among 7 children, and what cannot be shared goes to the teacher. How many candies does the teacher get?',
+    text: 'Today is Monday. A tradesman says he will call back in 50 days. On which day of the week will he call?',
     route: { M1: ['whole'], W1: ['cycle'] },
-    cues: { M1: ['what cannot be shared goes to the teacher'], W1: ['what cannot be shared goes to the teacher'] },
+    cues: {
+      M1: ['Today is Monday. A tradesman says he will call back in 50 days'],
+      W1: ['On which day of the week will he call?']
+    },
     reason: {
       M1: 'The problem asks {cue:M1}, a question about the part that is not in a whole group, or the place a count reaches on a loop. The numbers are whole counts, and no amount is followed through time, so the answer to the first question is {a:M1.whole}.',
       W1: 'The words {cue:W1} give a count and one group size, or one loop, and ask for the part not in a whole group or for the place the count reaches, which is {a:W1.cycle}.'
@@ -273,24 +273,220 @@ FC.cases('math', 'u2', [
     },
     steps: [
       {
-        does: 'Find how many whole rounds fit in the count',
-        working: '7 × 7 = 49, the most whole rounds that do not pass 50'
+        does: 'Find how many whole loops fit in the count',
+        working: '7 × 7 = 49, the most whole loops that do not pass 50'
       },
       { does: 'Take them away to find what is left over', working: '50 − 49 = 1' },
-      { does: 'Say what the left over means', working: '1 candy is left over for the teacher' }
+      { does: 'Move on from the start by what is left over', working: 'Monday, then Tuesday: 1 day on is Tuesday' }
     ],
     answer: {
       right: 'r',
       choices: [
-        { id: 'r', text: '1' },
-        { id: 's1', text: '7', slip: 'you give the number of whole rounds and not what is left over.' },
+        { id: 'r', text: 'Tuesday' },
+        { id: 's1', text: 'Monday', slip: 'you throw away the 1 left over and stay where you started.' },
         {
           id: 's2',
-          text: '6',
-          slip: 'you give how many more it would take to fill one more round, and not what is left over.'
+          text: 'Wednesday',
+          slip: 'you count the place you start on as the first move, so you go one place too far.'
         }
       ]
     },
-    why: 'Whole groups of one size use up the count in steps of that size, so the most they can use is the biggest multiple of the size that does not pass the count. What is not used up is what is left over, and it is always less than the size of one group.'
+    why: 'Every whole loop brings the count back to the place it started, so whole loops change nothing. Only what is left over after them moves you on, and it is moved from the start.'
+  },
+
+  {
+    id: 'dr-irrat-1',
+    use: 'drill',
+    tier: 'clean',
+    setting: 'home',
+    topic: 'a square garden',
+    kind: 'problem',
+    outcome: 'irrat',
+    text: 'A square garden has an area of 7 m². Its side is the number that multiplies by itself to give 7. Can the side be written exactly, as a fraction or a decimal that ends?',
+    route: { M1: ['whole'], W1: ['exact'] },
+    cues: {
+      M1: ['Can the side be written exactly, as a fraction or a decimal that ends?'],
+      W1: ['Can the side be written exactly, as a fraction or a decimal that ends?']
+    },
+    reason: {
+      M1: 'The problem asks {cue:M1}, a question about whether one number can be written exactly. It is about the value of a number, with no amount followed through time and no hidden number for a calculation to fit, so the answer to the first question is {a:M1.whole}.',
+      W1: 'The words {cue:W1} ask whether one number can be written exactly, which is {a:W1.exact}.'
+    },
+    not: {
+      outcome: 'prime',
+      why: 'The problem asks for the exact value of a number, and nothing is shared out in equal groups. {o:prime} would be the name if it asked whether a count of things could be split in rows or teams.'
+    },
+    steps: [
+      { does: 'Name the whole number under the root sign', working: '√7: the whole number is 7' },
+      {
+        does: 'Find the whole numbers whose products with themselves sit either side of it',
+        working: '2 × 2 = 4 and 3 × 3 = 9'
+      },
+      {
+        does: 'See whether it lands exactly on one of them',
+        working: '7 is not 4 and not 9, so it is not any whole number multiplied by itself'
+      },
+      {
+        does: 'Say whether it can be written exactly',
+        working: '√7 cannot be written as a fraction or as a decimal that ends. Rounded, it is about 2.65'
+      }
+    ],
+    answer: {
+      right: 'r',
+      choices: [
+        { id: 'r', text: 'Not exact: about 2.65' },
+        { id: 's1', text: 'Exact: 2.65', slip: 'you read the rounded decimal on the calculator as the exact value.' },
+        { id: 's2', text: 'Exact: 3', slip: 'you take the nearest whole number as the exact value.' }
+      ]
+    },
+    why: 'The {t:sqroot} of a whole number is either a whole number or a number that can never be written exactly as a fraction. There is nothing in between, so landing exactly on a whole number multiplied by itself is the only way for it to be exact, and when it does not land there, a calculator can only round it.'
+  },
+
+  {
+    id: 'dr-prime-1',
+    use: 'drill',
+    tier: 'clean',
+    setting: 'home',
+    topic: 'pots on a windowsill',
+    kind: 'problem',
+    outcome: 'prime',
+    text: 'Mia has 89 plant pots and wants to line them up in equal rows, with more than one row and more than one pot in each row. Is that possible?',
+    route: { M1: ['whole'], W1: ['split'] },
+    cues: {
+      M1: ['line them up in equal rows, with more than one row and more than one pot in each row'],
+      W1: ['line them up in equal rows, with more than one row and more than one pot in each row']
+    },
+    reason: {
+      M1: 'The problem asks {cue:M1}, a question about whether one whole number can be shared out in equal groups. Nothing in it changes as time passes, no hidden number has to be found from a calculation, and there is no shape or choice, so the answer to the first question is {a:M1.whole}.',
+      W1: 'The words {cue:W1} give one number and ask only whether anything other than 1 and itself shares it out exactly. That is a yes or a no about one number, which is {a:W1.split}.'
+    },
+    not: {
+      outcome: 'irrat',
+      why: 'The problem shares a count out in equal groups. {o:irrat} is about whether a root or pi can be written exactly, and nothing here is a root or pi.'
+    },
+    steps: [
+      {
+        does: 'Find where testing can stop',
+        working: '9 × 9 = 81 and 10 × 10 = 100, so √89 is between 9 and 10. Test no further than 9'
+      },
+      { does: 'List the primes up to there', working: 'Primes up to 9: 2, 3, 5, 7' },
+      {
+        does: 'Divide by each prime in turn, looking for an exact fit',
+        working: '89 = 2 × 44 + 1, with 1 left over; 89 = 3 × 29 + 2, with 2 left over; 89 = 5 × 17 + 4, with 4 left over; 89 = 7 × 12 + 5, with 5 left over. None fits'
+      },
+      { does: 'Say what it shows', working: 'No prime up to 9 fits 89 exactly, so 89 is prime' }
+    ],
+    answer: {
+      right: 'r',
+      choices: [
+        { id: 'r', text: 'Prime: no prime up to 9 fits' },
+        {
+          id: 's1',
+          text: 'Not prime: 3 × 30',
+          slip: 'you round 89 ÷ 3 up to 30 and call 3 × 30 a fit, though that is not 89.'
+        },
+        {
+          id: 's2',
+          text: 'Not prime: 1 × 89',
+          slip: 'you count 1 and 89 itself as a fit, though every number splits by 1 and by itself.'
+        }
+      ]
+    },
+    why: 'A number can be split into equal groups only if two whole numbers multiply to give it, and the smaller of the two is never more than the {t:sqroot} of the number. So testing no further than the {t:sqroot} is enough. Testing the primes is enough too: a number that splits by 6 also splits by 2 and by 3, so leaving out the numbers that are not {t:prime}s misses nothing.'
+  },
+
+  {
+    id: 'dr-factor-3',
+    use: 'drill',
+    tier: 'misleading',
+    setting: 'building',
+    topic: 'two slabs and one number',
+    kind: 'problem',
+    outcome: 'factor',
+    text: 'A mason has a slab 105 cm long and another slab 75 cm long. The labels need the prime numbers that multiply together to give 105, the length of the first slab.',
+    route: { M1: ['whole'], W1: ['parts'] },
+    cues: {
+      M1: ['the prime numbers that multiply together to give 105'],
+      W1: ['the prime numbers that multiply together to give 105']
+    },
+    reason: {
+      M1: 'The problem asks {cue:M1}, a question about what one whole number is made of or how it can be shared out. It follows no amount through time, hides no number to be found from a calculation, and has no shape or choice, so the answer to the first question is {a:M1.whole}.',
+      W1: 'The words {cue:W1} give one number and ask what it is made of, or every way it can be shared out. That is more than a yes or a no about one number, which is {a:W1.parts}.'
+    },
+    not: {
+      outcome: 'hcf',
+      why: 'There is one number here that is to be taken apart. {o:hcf} would need two numbers and a piece that fits into both.'
+    },
+    wouldChange: 'If the question asked for the longest equal pieces that both slabs can be cut into, it would be {o:hcf}.',
+    steps: [
+      {
+        does: 'Find the smallest prime that divides the number exactly',
+        working: '105 ÷ 2 leaves 1 over; 3 divides 105 exactly: 105 ÷ 3 = 35'
+      },
+      {
+        does: 'Do the same to what is left, again and again, until what is left is prime',
+        working: '35 ÷ 5 = 7; 7 is prime, so stop'
+      },
+      { does: 'Write the number as the product of every prime split off', working: '105 = 3 × 5 × 7' }
+    ],
+    answer: {
+      right: 'r',
+      choices: [
+        { id: 'r', text: '3 × 5 × 7' },
+        { id: 's1', text: '7 × 15', slip: 'you stop while a piece can still be split: 15 is 3 × 5.' },
+        { id: 's2', text: '1 × 3 × 5 × 7', slip: 'you write 1 as one of the primes, though 1 is not prime.' }
+      ]
+    },
+    why: 'Splitting off the smallest prime that fits, and then doing the same to what is left, never leaves a piece that can still be split, and the pieces multiply back to the number. A number has only one set of primes that multiply to give it, so any order of splitting reaches the same list.'
+  },
+
+  {
+    id: 'dr-hcf-3',
+    use: 'drill',
+    tier: 'misleading',
+    setting: 'leisure',
+    topic: 'two clubs that meet every week',
+    kind: 'problem',
+    outcome: 'hcf',
+    text: 'Two sports clubs, with 72 and 108 members, hold a match every Saturday. They want to split their members into teams of the same size, with nobody left out and every team drawn from one club. What is the largest team size?',
+    route: { M1: ['whole'], W1: ['piece'] },
+    cues: {
+      M1: ['split their members into teams of the same size, with nobody left out and every team drawn from one club'],
+      W1: ['split their members into teams of the same size, with nobody left out and every team drawn from one club']
+    },
+    reason: {
+      M1: 'The problem asks {cue:M1}, a question about pieces of one size that two whole numbers can both be split into. Nothing grows, no hidden number has to be found from a calculation, and there is no shape or chance, so the answer to the first question is {a:M1.whole}.',
+      W1: 'The words {cue:W1} give two numbers and ask for the biggest piece that both can be cut into with nothing left over, which is {a:W1.piece}.'
+    },
+    not: {
+      outcome: 'lcm',
+      why: 'The problem asks for the biggest piece that fits into both numbers, and nothing repeats. {o:lcm} would ask when two repeats meet, and its answer is never less than the bigger number, where this answer is never more than the smaller.'
+    },
+    wouldChange: 'If the question asked after how many weeks the two clubs would next hold something on the same Saturday, each repeating on its own, it would be {o:lcm}.',
+    steps: [
+      { does: 'Break each number into primes', working: '72 = 2 × 2 × 2 × 3 × 3; 108 = 2 × 2 × 3 × 3 × 3' },
+      {
+        does: 'Pick out the primes both numbers have, each as many times as the number that has it fewer times',
+        working: 'Both have 2 × 2 × 3 × 3'
+      },
+      { does: 'Multiply the shared primes', working: '2 × 2 × 3 × 3 = 36' }
+    ],
+    answer: {
+      right: 'r',
+      choices: [
+        { id: 'r', text: '36 members' },
+        {
+          id: 's1',
+          text: '216 members',
+          slip: 'you keep every prime that either number has, the most times either has it, which gives the first time two repeats meet and not the biggest piece that fits both.'
+        },
+        {
+          id: 's2',
+          text: '6 members',
+          slip: 'you count a shared prime once, though both numbers have it more than once.'
+        }
+      ]
+    },
+    why: 'A piece that fits into both numbers with nothing left over can only be built from primes that both numbers contain, and the biggest such piece uses every shared prime as many times as the number that has it fewer times. That is the largest {t:factor} the two numbers have in common.'
   }
 ]);

@@ -1,47 +1,12 @@
-// Psychology, Unit Three, part five: the two worked cases, and the two cards that close the unit after the drill.
+// Psychology, Unit Three, part two (close): the worked case, and the card that closes the unit after the drill.
 // Psychology is not an action subject (subject.action is false), so the unit has no plan card (lesson standard A11, P26).
 // The app prints the stem of each hold-back prompt ("Why is this X and not Y? ...") and the heading of the second look.
 
 FC.cards('psychology', 'u3', [
 
-  { id: 'worked-hike', kind: 'worked',
-    h: 'A whole case, from the first question to the name',
-    link: 'You have the five names and the question about them. Before you run a case yourself, watch two being run from the top, in the order the questions are asked. You are not asked anything until the end of each.',
-    case: 'w-hike',
-    steps: [
-      { step: 'D1',
-        reason: 'What the case gives you is what one person does to another, and it is about the other person: {cue:D1}. Raf is not reasoning about a choice of his own, and the case does not stretch across years or places.' },
-      { step: 'T1',
-        reason: 'Look first at how early it starts, and then at what happens to it. Both halves are in the case: {cue:T1} The first is the flood, in her first week: far more praise, rides and fares than a week of knowing someone would explain. The second is the pulling back, once Hollie says she cannot lend him the $200: ten days of silence, and then a remark in front of the group.' }
-    ],
-    hold: {
-      neighbor: 'ordexchange',
-      prompt: { kind: 'reason',
-        lead: 'Raf was friendly and generous, and he asked a friend for a loan. A generous friend asking for a loan can look like {o:ordexchange}.',
-        choices: [
-          { id: 'a', text: 'Raf was friendly and generous, as people often are with a new friend.',
-            note: 'True, and it is why the case can look like {o:ordexchange}. But friendliness on its own is not enough: the name needs the pulling back too.' },
-          { id: 'b', text: 'Raf asked to borrow $200 and Hollie said no.',
-            note: 'True, and it comes just before the pulling back. But a refused loan on its own is something people take well or badly. It does not show attention being poured on and then withdrawn.' },
-          { id: 'c', text: 'The attention was far more than a week would explain, and it was pulled back and turned critical once Hollie said no.' }
-        ],
-        answer: 'c' },
-      reason: [
-        'For {o:ordexchange} the case must show none of the four. Here it shows one: {needs:lovebomb}. Raf’s friendliness does not settle it, because it is only the first half.',
-        'It is the question from the two neighbors, Dan and Eli. {test:lovebomb~ordexchange} Here the attention is pulled back, so the answer is {a:T1.floodpull}.'
-      ]
-    },
-    impression: {
-      resembles: 'l-wedding',
-      text: [
-        'You have the answer. Now take a second look of a different kind: does this case look like one you know? It should bring back Priya and Callum, the first month: a flood of attention at the start, and then one "no" and the attention is gone.',
-        'Here the answer and the likeness agree, so the answer stands. The question comes first, because it makes you point at words in the case. The likeness is only a second look. When the two disagree, do not pick the one you prefer. Go back to the question and find the words in the case that answer it. The second whole case shows how.'
-      ]
-    } },
-
   { id: 'worked-booking', kind: 'worked',
-    h: 'A second whole case, where the story points the wrong way',
-    link: 'The hiking group was a clean case: one thing was going on, and nothing in the story pulled the other way. In this second case the most noticeable thing in the story is not the thing that decides it. Watch which words each question picks out.',
+    h: 'A whole case, from the first question to the name',
+    link: 'Before you run a case yourself, watch one being run from the top, in the order the questions are asked. In this case the most noticeable thing in the story is not the thing that decides it. You are not asked anything until the end.',
     case: 'w-booking',
     steps: [
       { step: 'D1',
@@ -63,7 +28,7 @@ FC.cards('psychology', 'u3', [
         answer: 'c' },
       reason: [
         'For {o:gaslight} you must be able to point to this: {needs:gaslight}. The case says the opposite about time: it is the first time the booking has come up, and nothing shows Pia doubting her memory.',
-        'It is the question from Ravi and Lena and the dent. {test:gaslight~darvo} Here it is one exchange with three parts, so the answer is {a:T1.reverse}.'
+        'It is the question that tells the first two names apart. {test:gaslight~darvo} Here it is one exchange with three parts, so the answer is {a:T1.reverse}.'
       ]
     },
     impression: {
@@ -83,21 +48,5 @@ FC.cards('psychology', 'u3', [
       'Some names need time or two halves. {o:gaslight} needs something that really happened, a denial that comes back over weeks or months, and the other person doubting their memory. {o:lovebomb} needs the flood and the pulling back. {o:darvo} needs one exchange with all three parts, and the case showing that the person did it. {o:projection} needs the case to show the accuser doing it, and nothing to show the other person doing it.',
       'The names are for what is done, never for what kind of person did it or what they meant. The same person can do one of these on Monday and have {o:ordexchange} on Tuesday.',
       'The questions sort a short account of what was said or done. They cannot tell you whether you are safe. If you think someone is controlling you, or you are afraid of them, talk to someone you trust or to a professional. That is not something a set of questions can settle.'
-    ] },
-
-  { id: 'transfer', kind: 'transfer',
-    h: 'Where would you meet this?',
-    link: 'The last step is yours, and nothing on this card is marked.',
-    ask: [
-      'Knowing the five names is one step. Noticing the moment to use one is a separate step, and only you know where those moments are in your life.',
-      'Pick one of the five and name an occasion of your own: somewhere you heard it, or somewhere you said it. The lines under each name are there to jog your memory.'
-    ],
-    prompts: [
-      { outcome: 'gaslight', occasion: 'A time someone told you, more than once, that something you clearly remember did not happen.' },
-      { outcome: 'darvo', occasion: 'A time you raised something with someone and ended up apologizing for raising it.' },
-      { outcome: 'lovebomb', occasion: 'A new friend, job or group where everything was wonderful at first and then changed.' },
-      { outcome: 'projection', occasion: 'Something you were accused of that fitted the person accusing you better than it fitted you.' },
-      { outcome: 'ordexchange', occasion: 'The last row you had that was only a row.' }
-    ],
-    places: ['At home', 'At work', 'With friends', 'In my own head'] }
+    ] }
 ]);

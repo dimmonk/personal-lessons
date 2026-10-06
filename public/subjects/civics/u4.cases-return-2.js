@@ -1,8 +1,9 @@
-// Civics, Unit Four: fresh cases kept back for later days (second file: three names, three cases each).
+// Civics, Unit Four: fresh cases kept back for later days (second file: three names, two cases each).
 
 FC.cases('civics', 'u4', [
 
   /* ---------- Dealing with another country ---------- */
+
   { id: 'e-ret-teams', use: 'return', tier: 'varied', setting: 'leisure', topic: 'how visiting sports teams are treated',
     text: "The Secretary of State, speaking for the President, flew to Pellora to agree with its government on how the two countries’ teams will be treated when they travel to each other’s games. The ministers signed the agreement at the end of the week.",
     outcome: 'diplomacy', route: { D1: ['president'], E1: ['abroad'] },
@@ -19,15 +20,8 @@ FC.cases('civics', 'u4', [
               E1: 'Two countries’ leaders settle something between them: {cue:E1}. They agree and sign, and nobody at home is ordered to do anything.' },
     not: { outcome: 'commander', why: 'No order goes to the armed forces. The President and another country’s leader settle how a cost will be shared.' } },
 
-  { id: 'e-ret-trucks', use: 'return', tier: 'varied', setting: 'community', topic: 'which days trucks may cross a bridge',
-    text: "An official acting for the President met the officials of Orsen on the bridge between the two countries on Tuesday, and the two sides agreed which days each country’s trucks may cross. They signed the agreement that afternoon.",
-    outcome: 'diplomacy', route: { D1: ['president'], E1: ['abroad'] },
-    cues: { D1: 'An official acting for the President met the officials of Orsen on the bridge between the two countries on Tuesday', E1: 'the two sides agreed which days each country’s trucks may cross' },
-    reason: { D1: 'The last decision is made by an official acting for the President: {cue:D1}.',
-              E1: 'Two countries’ officials settle something between them: {cue:E1}. Nobody is putting a law into practice for one person.' },
-    not: { outcome: 'execute', why: 'No law Congress passed is being put into practice. The official is meeting another country’s officials, and they agree something between the two countries.' } },
-
   /* ---------- Refusing to sign a law ---------- */
+
   { id: 'e-ret-bicycles', use: 'return', tier: 'varied', setting: 'money', topic: 'a bill lowering a tax on bicycles',
     text: "Congress passed a bill that lowers the tax on bicycles. The President thinks the country needs the money, and on Tuesday returned the bill to Congress, unsigned, with a letter saying so.",
     outcome: 'veto', route: { D1: ['president'], E1: ['sendback'] },
@@ -44,15 +38,8 @@ FC.cases('civics', 'u4', [
               E1: 'The bill is passed, and the President sends it back unsigned: {cue:E1}.' },
     not: { outcome: 'execute', why: 'The bill has not become a law that anyone is putting into practice. The President is refusing it.' } },
 
-  { id: 'e-ret-nursing', use: 'return', tier: 'varied', setting: 'learning', topic: 'a grant for nursing courses',
-    text: "Congress passed a bill that gives a grant to every college that opens a new nursing course. The President thinks the grant is too large. After reading the bill, the President wrote to the House and the Senate that it would not be signed, and returned it.",
-    outcome: 'veto', route: { D1: ['president'], E1: ['sendback'] },
-    cues: { D1: 'the President wrote to the House and the Senate that it would not be signed, and returned it', E1: 'that it would not be signed, and returned it' },
-    reason: { D1: 'The last decision in the case is the President’s: {cue:D1}.',
-              E1: 'The bill has passed, and the President will not sign it: {cue:E1}. The grant is why the President objects, and it is not what the President does.' },
-    not: { outcome: 'pardon', why: 'No one has been charged with a crime, and nobody is being forgiven. The President is acting on a bill.' } },
-
   /* ---------- Forgiving a federal crime ---------- */
+
   { id: 'e-ret-sailor', use: 'return', tier: 'varied', setting: 'travel', topic: 'protected birds brought in by a sailor',
     text: "A sailor was convicted in a federal court of bringing protected birds into the country, and was fined $2,000. On Friday the President signed a pardon for him, and the fine was canceled.",
     outcome: 'pardon', route: { D1: ['president'], E1: ['forgive'] },
@@ -67,13 +54,5 @@ FC.cases('civics', 'u4', [
     cues: { D1: 'Before the case came to trial, the President forgave the crime', E1: 'the President forgave the crime' },
     reason: { D1: 'The last decision in the case is the President’s: {cue:D1}. No judge is asked anything after it.',
               E1: 'A federal crime was charged, and the President means the punishment never comes: {cue:E1}.' },
-    not: { outcome: 'veto', why: 'No bill is in the case. The President is acting on a person who was charged with a crime.' } },
-
-  { id: 'e-ret-clerk', use: 'return', tier: 'varied', setting: 'community', topic: 'a town clerk and a national grant',
-    text: "A town clerk was found guilty in a federal court of hiding money from a federal grant, and sentenced to a year in prison. When she had served three months, the President pardoned her, and she went home.",
-    outcome: 'pardon', route: { D1: ['president'], E1: ['forgive'] },
-    cues: { D1: 'the President pardoned her, and she went home', E1: 'When she had served three months, the President pardoned her' },
-    reason: { D1: 'The last decision in the case is the President’s: {cue:D1}. The federal court decided earlier.',
-              E1: 'A federal crime was judged, and the President lifts what is left of the sentence: {cue:E1}.' },
-    not: { outcome: 'veto', why: 'No bill is in the case. The President is acting on a person who was found guilty of a crime.' } }
+    not: { outcome: 'veto', why: 'No bill is in the case. The President is acting on a person who was charged with a crime.' } }
 ]);

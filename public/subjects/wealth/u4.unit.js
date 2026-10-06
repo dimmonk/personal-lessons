@@ -8,7 +8,7 @@
 
 FC.unit('wealth', 'u4', {
   kind: 'C',              // C classification, F facts, P procedure
-  rev: 3,
+  rev: 4,
   standard: 1,
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author)
   tag: 'Four',
@@ -38,7 +38,7 @@ FC.unit('wealth', 'u4', {
       shared: 'In both, the person chose how to split their money, and what they hold is not exactly what they chose.',
       rule: 'In {o:rebalance} {t:mix} has moved well outside the limits the person set, so a fall would take more, or less, than they chose. In {o:covered} {t:mix} is still inside its limits, even if it has moved a little, so a fall would take about what they chose.',
       test: 'Does the case give the plan and how far {t:mix} may move from it, and is today’s mix outside that distance?' },
-    { id: 'cashbuffer~ladder', pair: ['cashbuffer', 'ladder'], step: 'T1',
+    { id: 'cashbuffer~ladder', pair: ['cashbuffer', 'ladder'], step: 'T1', taughtIn: 'q-why',
       shared: 'In both, money that is needed on particular days is held in shares or funds whose prices can fall.',
       rule: 'In {o:cashbuffer} the need is living costs, month after month, with no end date. In {o:ladder} the need is a bill of a known size, due on a known date, and nothing is needed from the money after it.',
       test: 'Is the money needed for living costs that keep coming, or for one bill of a known size on a known day?' },
@@ -54,7 +54,7 @@ FC.unit('wealth', 'u4', {
       shared: 'In both, the person holds a good deal in shares, and a fall would cost more than they planned.',
       rule: 'In {o:cashbuffer} something is being paid for by selling shares or funds every month, whatever {t:mix} is. In {o:rebalance} the only thing in the case is a mix that has moved: nothing is being sold to pay for anything.',
       test: 'Does the case show shares or funds being sold to pay for something? Or is the only thing in it a mix that has moved?' },
-    { id: 'ladder~rebalance', pair: ['ladder', 'rebalance'], step: 'T1',
+    { id: 'ladder~rebalance', pair: ['ladder', 'rebalance'], step: 'T1', taughtIn: 'q-why',
       shared: 'In both, a fall would take more than the person planned, and in both most of the money is in shares or funds.',
       rule: 'In {o:ladder} a bill of a known size is due on a known date, with its money in shares or funds. In {o:rebalance} no bill is waiting for the money: the only thing in the case is a mix that has moved.',
       test: 'Is a bill of a known size due on a known date, with the money for it in shares or funds? Or is the only thing in the case a mix that has moved?' }
@@ -63,54 +63,36 @@ FC.unit('wealth', 'u4', {
   // Parts are stopping points: each ends on a screen that says where the next one starts (A13). The first two follow the key's
   // answers in the order the unit teaches them; the part with drill: true is the last, and its close cards come after the drill.
   parts: [
-    { id: 'p1', title: 'Living costs, paid from money that can fall',
-      cards: ['orient', 'term-sequence', 'meet-cashbuffer', 'again-cashbuffer', 'lens', 'portrait-cashbuffer', 'check-cashbuffer',
-              'refute-cash', 'meet-covered', 'again-covered', 'portrait-covered', 'check-covered',
-              'look-cashbuffer-covered', 'exc-fixedsum'] },
-    { id: 'p2', title: 'A bill on a date, and a mix that has moved',
-      cards: ['meet-ladder', 'again-ladder', 'portrait-ladder', 'check-ladder', 'look-ladder-covered', 'look-cashbuffer-ladder',
-              'meet-rebalance', 'again-rebalance', 'portrait-rebalance', 'check-rebalance', 'look-rebalance-covered',
-              'exc-living-mix', 'exc-bill-mix', 'exc-bonus', 'q-why', 'check-why'] },
-    { id: 'p3', title: 'Two whole cases, then the drill',
-      cards: ['worked-tax', 'worked-hilda'], drill: true, close: ['recap', 'transfer', 'plan'] }
+    { id: 'p1', title: 'Living costs, a bill on a date, and money already safe',
+      cards: ['orient', 'term-sequence', 'meet-cashbuffer', 'check-cashbuffer', 'meet-covered', 'check-covered',
+              'look-cashbuffer-covered', 'exc-fixedsum', 'meet-ladder', 'check-ladder', 'look-ladder-covered'] },
+    { id: 'p2', title: 'A mix that has moved, and telling them apart, then the drill',
+      cards: ['meet-rebalance', 'check-rebalance', 'look-rebalance-covered', 'exc-living-mix', 'exc-bonus', 'q-why', 'check-why',
+              'worked-hilda'], drill: true, close: ['recap', 'plan'] }
   ],
 
-  // The drill is a ramp of five stages (lesson standard A10). The app owns the wording of every stage instruction.
+  // The drill: the stages that carry the skill. The app owns the wording of every stage instruction.
   // Items are authored in groups: a group is cases that share ledger entries and one tier. Every case is new. Every stage that asks
   // about cases holds a case where nothing needs doing (V37). Items drawn from an earlier unit come only from Unit One's bank.
   drill: {
     key: 'x4',            // the old quick-drill totals for this unit were stored under pl:wealth:stats:x4 (frozen; see E8)
-    add: 'Some of these cases show a fall that would catch nothing, because what is needed soon is already out of its reach. That is on purpose: saying so is one of the four answers, and a person who can say it does not pay for a cure they do not need. Look for the words that show where the money for the bills sits, and what its price could do before it is spent.',
     rungs: [
-      { ask: 'name',
-        items: [['n-cb1', 'n-cv1'], ['n-ld1', 'n-cv2'], ['n-rb1', 'n-cb2'], ['n-ld2', 'n-cv3']] },
       { ask: 'piece',
-        items: [[{ case: 'p-cb1', step: 'T1' }, { case: 'p-cv1', step: 'T1' }, { case: 'p-ld1', step: 'T1' }],
-                [{ case: 'p-rb1', step: 'T1' }, { case: 'p-cv2', step: 'T1' }],
-                [{ tell: 'cashbuffer~covered' }, { tell: 'ladder~covered' }, { tell: 'rebalance~covered' }, { tell: 'cashbuffer~ladder' },
-                 { tell: 'burnrate~cashbuffer' }, { tell: 'defer~rebalance' }, { tell: 'cashbuffer~rebalance' }, { tell: 'ladder~rebalance' }],
-                ['rev-cashbuffer', 'rev-covered', 'rev-ladder', 'rev-rebalance'],
+        items: [[{ case: 'p-cb1', step: 'T1' }, { case: 'p-cv1', step: 'T1' }, { case: 'p-ld1', step: 'T1' }, { case: 'p-rb1', step: 'T1' }],
+                [{ tell: 'cashbuffer~covered' }, { tell: 'ladder~covered' }, { tell: 'rebalance~covered' }],
                 [{ earlier: 'u1' }]] },
-      { ask: 'finish',
-        items: [['f-cb', 'f-cv'], ['f-ld', 'f-rb']] },
       { ask: 'route',
-        items: [['r-cb1', 'r-cv1'],
-                ['r-ld1', 'r-cv2'],
+        items: [['r-cb1', 'r-cv1', 'r-ld1'],
                 ['r-rb1', 'r-cv3'],
-                ['r-cb2', 'r-ld2'],
                 ['r-burn', 'r-cb3'],
                 ['r-defer', 'r-rb2'],
                 ['r-ld3', 'r-cv4'],
-                [{ earlier: 'u1' }]] },
-      { ask: 'claim', demo: 'w4-c-demo',
-        items: [['c-cash'], ['c-bill'], ['c-covered']] }
+                [{ earlier: 'u1' }]] }
     ],
-    // Fresh cases for later days: four for each name, one for each of its scheduled returns (E9; an action subject adds the fourth,
-    // at about twelve weeks). A due name returns as a case the learner has not seen, beside a case of the name they most often take it for.
-    returns: ['ret-cash-1', 'ret-cash-2', 'ret-cash-3', 'ret-cash-4',
-              'ret-safe-1', 'ret-safe-2', 'ret-safe-3', 'ret-safe-4',
-              'ret-bill-1', 'ret-bill-2', 'ret-bill-3', 'ret-bill-4',
-              'ret-mix-1', 'ret-mix-2', 'ret-mix-3', 'ret-mix-4']
+    // Fresh cases for later days: two for each name, since this is an action subject (E9). A due name returns as a case the learner
+    // has not seen, beside a case of the name they most often take it for.
+    returns: ['ret-cash-1', 'ret-cash-2', 'ret-safe-1', 'ret-safe-2',
+              'ret-bill-1', 'ret-bill-2', 'ret-mix-1', 'ret-mix-2']
   },
 
   // Build notes: not shown to the learner, and left out of the fingerprint. The validator reads them.
@@ -118,7 +100,8 @@ FC.unit('wealth', 'u4', {
     history: [
       { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the branch unit for a fall in prices it is not ready for, in Wealth Preservation. Not yet deployed, so later edits before the first deploy stay revision 1.' },
       { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' },
-      { rev: 3, date: '2026-10-05', change: 'American English: dollars, US accounts, rules and institutions, US spelling.' }
+      { rev: 3, date: '2026-10-05', change: 'American English: dollars, US accounts, rules and institutions, US spelling.' },
+      { rev: 4, date: '2026-10-05', change: 'Trimmed to a quick lesson: one case per name, the essentials, a short drill.' }
     ],
     // What the K2 rewrite changed in this branch, and why (docs/rebuild/wealth-plan.md, section (a)).
     keyChanges: [
@@ -132,11 +115,7 @@ FC.unit('wealth', 'u4', {
         now: 'a new term, sequence risk, with its own term card and its worked numbers before the first name',
         why: 'Audit 4.1: a learner met the word in a verdict before any card had taught it.' }
     ],
-    wrongIdeas: [
-      { card: 'refute-cash', about: 'cashbuffer',
-        source: { kind: 'published', verified: false,
-          ref: 'The idea is the old app’s own claim in a new form ("cash earns nothing, so keeping years of spending in it is a waste"). The order-of-returns arithmetic is in Bengen (1994), Determining Withdrawal Rates Using Historical Data, Journal of Financial Planning (October 1994); that paper is to be read and confirmed online before release. A published comparison of the cost of holding cash against the loss from selling in a fall has still to be found, read and cited. Until then the card is verified false only by its own arithmetic, which uses invented figures.' } }
-    ],
+    wrongIdeas: [],
     signoff: {
       coverage: null,
       coldRead: null

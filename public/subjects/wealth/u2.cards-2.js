@@ -1,68 +1,50 @@
-// Wealth Preservation, Unit Two, part one (second half): what is story and what is structure, what the first name is like, a wrong
-// idea about it, and the word the second name leans on.
+// Wealth Preservation, Unit Two, part one (second half): the word the second name leans on, the name that says leave it alone, and the pair
+// it makes with the first name.
 
 FC.cards('wealth', 'u2', [
-
-  { id: 'lens', kind: 'lens',
-    h: 'The story never decides the answer',
-    link: 'The last card asked you to ignore the story. That instruction holds for the whole unit, so here it is once in full.',
-    body: [
-      'Every case in this unit has two layers. The top layer is the story: an IRA, a rental condo, a retirement, a shop. The layer underneath is what is taking money out of {t:pot} every year, and that is the only layer the question asks about.',
-      'The six names belong to the layer underneath. An IRA can carry any of them, and so can a rental condo. Size is part of the story too: a charge of $250 and a charge of $25,000 can be the same name, and a charge of $3,000 can be a problem in one case and fine in the next.',
-      'Two more things change on purpose. One is who is paid: {t:fund}, an adviser, the IRS, or the person themselves. The other is whether anything is wrong at all. In some cases what comes out is worth it, or already as low as it can be, and one of the six names is for those. Seeing that is part of the skill, and not looking for a problem the case does not show is part of seeing it.'
-    ],
-    fixed: ['what is taking money out of {t:pot} every year, which is what the question is about: {q:E1}'],
-    varies: ['the kind of account', 'the people', 'the size of the sums', 'who is paid', 'whether anything is wrong at all'] },
-
-  { id: 'portrait-feecore', kind: 'portrait', outcome: 'feecore',
-    link: 'You now know what to point to. This card fills in the rest of the picture, so that you can spot {o:feecore} in real life, where nobody marks the words for you.',
-    typical: [
-      'The charge is a percentage of {t:pot}, so it grows when {t:pot} does. A pot that doubles pays twice as much for the same choosing.',
-      'It is usually split into layers: the fund’s own charge, the account fee of the firm or website that holds the account, and the adviser’s. Each is a small percentage, and the total is what counts.',
-      'It comes out of the fund’s price or out of the account without a bill. Nobody is asked to pay; the balance is simply a little lower than it would have been.',
-      'The letter that describes it uses words like “selection”, “research”, “our team” or “our house view”. Those words all name choosing. A charge for choosing is the same thing whatever it is called.',
-      'The person is often content. They do not know what {t:fund} that copies a published list charges, so they have nothing to compare it with.'
-    ],
-    not: 'A charge is not this name just because it is large, or because it is a percentage. What decides it is what the charge pays for. If the case shows named work that would not otherwise get done, at a set price, then the charge is not for choosing alone, and this name does not apply, however large the price looks. Nor does a good record change the name: two good years do not change what the charge pays for.',
-    wild: ['"It\'s only 1% a year."', '"The fund takes its charge out of the price, so you never see it."', '"Our research team selects the best funds for you."', '"My adviser looks after all that."', '"The fund has beaten the market, so it has earned its charge."'],
-    self: 'In your own life you find it in the line of a statement headed “expense ratio” or “total annual operating expenses”, in the letter that says what the adviser is paid, and in the fund’s own fact sheet. Add up every layer before you decide whether the total is small.',
-    ask: '"What does this charge pay for, and how much is it every year in dollars?" If the answer is "choosing the investments" and nothing else, you are probably looking at this name.',
-    act: [
-      'First, find every charge and add them up: the fund’s yearly charge, the account fee, and the adviser’s. Write the total as a percentage and as dollars a year on your pot.',
-      'Second, ask what each charge pays for. Ask the adviser in writing what they have done for you since they recommended the funds.',
-      'Third, find what {t:fund} that copies a published list charges, and work out the difference in dollars a year.',
-      'Fourth, find out what switching would cost. In an IRA or a 401(k), selling the old fund and buying the new one brings no tax. In an ordinary brokerage account, selling can bring tax on any profit you have made, so ask for that figure before you sell.',
-      'Fifth, if nothing else is paid for, move the money into funds that copy a published list. Write down the date and the old and new charges, so that you can check later that the change did what you expected.'
-    ] },
-
-  { id: 'check-feecore', kind: 'check', after: 'feecore',
-    case: 'e-c-fee',
-    ask: { type: 'phrase', step: 'E1', say: 'Which words show what the charge pays for? Tap them.',
-           answer: "The bank's yearly letter says the charge is 'for selecting the investments' and lists nothing else" } },
-
-  { id: 'refute-adviser', kind: 'refute', about: 'feecore',
-    h: 'A wrong idea: “a good adviser picks winners, so a high fee is worth it”',
-    link: 'The picture of {o:feecore} said that the charge is certain and that what it buys is a hope. That hope is what keeps many people paying, and it rests on an idea nearly everyone holds.',
-    idea: '"A good adviser picks funds that beat the market, so a high fee is worth it."',
-    verdict: 'This is wrong, in two ways.',
-    right: [
-      'First, the fee and the winning are not the same kind of thing. The fee is certain: it is taken every year whatever happens. Beating the list is a hope, and it has to cover the fee before it is worth anything. If {t:fund} charges 1.9% and {t:fund} that copies its list charges 0.1%, the managers must beat the list by about 1.8 points every year just to leave you where you would have been.',
-      'Second, a few years of winning do not show that winning will go on. A manager who has beaten the list for two years has not shown that the next two will go the same way. What the charge pays for is the attempt to choose, and the attempt is paid for whether it works or not.',
-      'So when someone says a high fee is worth it because of what the adviser can pick, ask what the charge pays for besides picking, and what the price would be if you simply took the list. If there is no other work, the charge is for choosing, and the case is {o:feecore}.'
-    ],
-    testedBy: ['e-p-fee', 'e-r-fee-2'] },
 
   /* ---------- A word the second name leans on ---------- */
   { id: 'term-sheltered', kind: 'term', term: 'sheltered',
     h: 'Two kinds of account',
-    link: 'The next name is about a cost that is already worth paying or already as low as it can be. One of the ways a cost can be as low as it can be depends on the kind of account the investments sit in, so first a word for it.',
+    link: 'The next name is about a cost that is already worth paying or already as low as it can be. One way that can happen depends on the kind of account the investments sit in, so first a word for it.',
     case: 'e-t-shelter',
     plain: [
       'Leila holds the same fund in two places, and she pays different tax on it. In the IRA, the law does not tax the $1,600 the fund pays out each year; it taxes what she takes out in retirement. In the brokerage account, the $1,600 is taxed every year, and she pays 25% of it, $400. The fund, the amount and the income are the same. Only the place differs.',
-      'In the US the sheltered accounts are the ones the law sets up for retirement and a few other purposes: a 401(k) at work, an IRA, a Roth IRA (where what is taken out in retirement is not taxed at all), a health savings account (HSA) and a 529 plan for college. Each has its own rules, most have a yearly limit on what can be paid in, and Congress changes them often, so the cases in this unit use a general version: an IRA or a 401(k) is the sheltered account, and an ordinary brokerage account is not. Another name for an ordinary brokerage account is a taxable account, and the cases may use either.', 'The tax rate of 25% on income such as interest and rent is an example, standing for federal and state income tax together. Most dividends from shares are taxed at a lower rate, and the cases use 15% for them. Both rates are there to show how the idea works.'
+      'In the US the sheltered accounts are the ones the law sets up for retirement and a few other purposes: a 401(k) at work, an IRA, a Roth IRA, a health savings account (HSA) and a 529 plan for college. Most have a yearly limit on what can be paid in, and Congress changes the rules often, so the cases here use a general version: an IRA or a 401(k) is the sheltered account, and an ordinary brokerage account (also called a taxable account) is not. The 25% tax on interest and rent, and the 15% on most dividends, are examples that stand for federal and state income tax together.'
     ],
-    after: [
-      'So a person who has both kinds of account has a choice about which investment goes where. Over the years that choice decides how much tax is paid on the income. An investment that pays out little costs almost nothing to hold in an ordinary account, and one that pays out a lot costs the most there.',
-      'Where things are held is the one thing about tax that a person controls without selling anything.'
+    after: 'So a person with both kinds of account can choose which investment goes where. An investment that pays out little costs almost nothing to hold in an ordinary account, and one that pays out a lot costs the most there. Where things are held is the one thing about tax that a person controls without selling anything.' },
+
+  /* ---------- Nothing to cut back ---------- */
+  { id: 'meet-nocut', kind: 'meet', outcome: 'nocut',
+    link: 'The first name was a charge that pays for nothing but choosing. This one is the opposite kind of case, and as common: something does come out every year, and the case shows it is worth it or already as low as it can be.',
+    case: 'e-m-nocut', mark: 'E1',
+    strip: [
+      'There is one person, Kamal, and one cost: $3,000 a year to a planner.',
+      'The price is flat, agreed in writing, and it has not changed in five years, though his pot has doubled.',
+      'It pays for named work: his tax return, a check that his will and forms are current, and an update of his spending plan.',
+      'Kamal says he would not do any of it himself, and the planner takes no commission. His money is in index funds, so nobody is paid for choosing.'
+    ],
+    explain: [
+      'Put to this charge the question you put to the last one: what does it pay for? Here the answer is three jobs that would not otherwise get done. Take the planner away and the tax return is late, the will goes out of date and the plan goes stale. That is the question to ask of any charge: if you stopped paying, what important thing would stop happening?',
+      'Then look at how the price behaves. 1% of $300,000 is $3,000, and so is a flat $3,000. But when {t:pot} doubles to $600,000, 1% becomes $6,000 and the flat price stays at $3,000. The work is the same size, so a price that stays flat is a price for the work, and a price that grows with {t:pot} is a price for something else.',
+      'Cutting this charge would save $3,000 a year and cost him a tax return, a will check and a plan. That is why the answer here is to leave it alone.'
+    ],
+    feature: { step: 'E1', option: 'nomore' },
+    name: 'The name for this is {o:nocut}. It is the one name in the unit that says to leave it alone, and it is a full answer.',
+    act: 'Do not cut a cost because someone says it is high. Ask what it is for, and write down what you found. If someone offers something cheaper, ask what work the cheaper one would not do. Then leave it alone, and set a date to look again.' },
+
+  { id: 'check-nocut', kind: 'check', after: 'nocut',
+    case: 'e-c-nocut',
+    ask: { type: 'option', step: 'E1', among: ['picking', 'nomore'] } },
+
+  { id: 'look-feecore-nocut', kind: 'lookalike', ledger: 'feecore~nocut',
+    link: 'The two names you have just met are easy to mix up, because in both a firm or an adviser is paid out of {t:pot} every year.',
+    cases: ['e-l-fee-a', 'e-l-fee-b'],
+    instruction: 'Both cases are about the same firm and the same $3,000 a year, for two sisters with the same pot. Compare one thing: what each $3,000 pays for.',
+    prompt: { kind: 'which', option: 'E1.nomore', answer: 'e-l-fee-b' },
+    difference: [
+      'In Case A the firm takes 1% of Gwen’s $300,000 and has done nothing else since it chose her funds. The $3,000 is for choosing, and it would grow if her pot did. The answer is {a:E1.picking}, and the case is {o:feecore}.',
+      'In Case B the firm takes $3,000 from Ann too, but it is a flat price and it pays for a return, a check of her will and a plan. If the firm stopped, those would stop. The answer is {a:E1.nomore}, and the case is {o:nocut}.',
+      'The size is the same and so is the firm, so neither tells you anything. Only what the money pays for, and whether the price moves with {t:pot}, tells the two apart.'
     ] }
 ]);

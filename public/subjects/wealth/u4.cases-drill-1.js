@@ -1,68 +1,33 @@
-// Wealth Preservation, Unit Four: drill cases, stage one. None of these appears in a card.
-// Stage one: the key's answers are shown, and the learner gives the name. These cases are asked about the unit's own question, so each
-// carries marked words and a reason for that question. reason[STEP] is the reason tied to the marked words; it is shown after the answer,
-// decisive sentence first. not names the most tempting wrong name for this case and says why it fails.
-// Every group holds two cases connected by a look-alike pair of the ledger, and every group is of one tier.
+// Wealth Preservation, Unit Four: cases for drill: the question on its own, one new case at a time.
+// Field guide: see u4.cards-1.js. use: 'teach' = shown in a card; 'check' = asked between cards; 'drill' and 'return' are never in a card.
 
 FC.cases('wealth', 'u4', [
 
-  /* ---------- Group one: living costs paid by selling, and living costs paid from cash ---------- */
-  { id: 'n-cb1', use: 'drill', tier: 'clean', setting: 'retirement', topic: 'a pot of funds sold a little each month',
-    text: "Greta, 63, retired last year. Her $450,000 is in funds of shares, and she has no savings account. She needs $1,500 a month, and she gets it by selling about $1,500 of the funds each month. Prices are down 22% this year.",
+  { id: 'p-cb1', use: 'drill', tier: 'clean', setting: 'home', topic: 'a job loss and monthly sales',
+    text: "Rashid, 58, lost his job six months ago and is living on his $200,000 in funds of shares. He pays his $1,600 monthly costs by selling $1,600 of the funds each month, and has no cash set aside.",
     outcome: 'cashbuffer', route: { D1: ['timing'], T1: ['livingcosts'] },
-    cues: { T1: 'she has no savings account. She needs $1,500 a month, and she gets it by selling about $1,500 of the funds each month' },
-    reason: { T1: 'Greta’s bills are paid by selling funds whose price can fall, and nothing is set aside: {cue:T1}. With prices down 22%, each $1,500 takes a bigger slice of the funds than it would have, and that slice is not there when prices come back.' },
-    not: { outcome: 'covered', why: 'Greta lives on her money in a year of falling prices, as the people in {o:covered} do. But {o:covered} needs the money for her bills already in cash, and the case says she has no savings account.' } },
+    cues: { T1: 'He pays his $1,600 monthly costs by selling $1,600 of the funds each month, and has no cash set aside' },
+    reason: { T1: 'Rashid’s monthly costs are paid by selling funds, and nothing is set aside to spend from instead: {cue:T1}. If prices fall, every one of those monthly sales is made at the low price.' },
+    not: { outcome: 'covered', why: 'He has no cash set aside. The money for his bills is in funds whose price can fall, and none of it is out of a fall’s reach.' } },
 
-  { id: 'n-cv1', use: 'drill', tier: 'clean', setting: 'family', topic: 'a savings account of 3 years of bills',
-    text: "Pedro and Lia, 67, need $1,800 a month. They hold $65,000 in a savings account, which is a little over three years of their spending, and they pay the bills from it. Their other $420,000 is in funds of shares, which have fallen by 25%. They have not sold any of the funds.",
+  { id: 'p-cv1', use: 'drill', tier: 'clean', setting: 'retirement', topic: 'a woman who has not sold since the drop',
+    text: "Gwen, 70, takes $2,100 a month from her $510,000. $75,600 of it, three years of her spending, is in a savings account, and she pays the bills from it. Her funds of shares have fallen by 30%, and she has sold none.",
     outcome: 'covered', route: { D1: ['timing'], T1: ['ready'] },
-    cues: { T1: 'They hold $65,000 in a savings account, which is a little over three years of their spending, and they pay the bills from it' },
-    reason: { T1: 'The bills are paid from money a fall cannot reach: {cue:T1}. The funds fell by a quarter, and because nothing is sold from them, the fall changes what the funds are worth and nothing about what the couple spends.' },
-    not: { outcome: 'cashbuffer', why: 'Pedro and Lia live on their money in a year of falling prices, which is the setting of {o:cashbuffer}. But that name needs the bills paid by selling funds with nothing set aside, and here none of the funds has been sold.' } },
+    cues: { T1: '$75,600 of it, three years of her spending, is in a savings account, and she pays the bills from it' },
+    reason: { T1: 'Gwen’s bills are paid from money that a fall cannot reach: {cue:T1}. The 30% fall changes what her funds are worth, and she needs nothing from them for now.' },
+    not: { outcome: 'cashbuffer', why: 'Gwen is living on her money in a year of falling prices, as {o:cashbuffer} describes. But her bills are paid from cash and none of her funds has been sold.' } },
 
-  /* ---------- Group two: a bill on a date, in shares, and a bill on a date, in a bond ---------- */
-  { id: 'n-ld1', use: 'drill', tier: 'clean', setting: 'business', topic: 'payment for a new van',
-    text: "Wanjiru's construction company must pay $52,000 to the dealer for a new van on March 15, four months from now, as agreed in the order. The money for it is in a fund of shares, which has fallen by 12% since she set it aside.",
+  { id: 'p-ld1', use: 'drill', tier: 'clean', setting: 'health', topic: 'a hip operation paid on the day',
+    text: "Kwame, 62, needs a hip operation. After his insurance pays its part, the hospital has quoted him $14,000, payable on the day of the operation, October 20, five months from now. The money for it is in a fund of shares, down 16% since the summer.",
     outcome: 'ladder', route: { D1: ['timing'], T1: ['datedbill'] },
-    cues: { T1: ['must pay $52,000 to the dealer for a new van on March 15', 'The money for it is in a fund of shares'] },
-    reason: { T1: 'The bill has a set size and a set day, and its money sits in something whose price can fall: {cue:T1}. After a 12% fall the fund holds about $45,760 of the $52,000, and the dealer’s date does not move.' },
-    not: { outcome: 'covered', why: 'There is a bill and a fall, as there is in {o:covered}. But that name needs the money for the bill already in cash or in bonds that repay by the day, and here it is in {t:fund} of shares.' } },
+    cues: { T1: ['quoted him $14,000, payable on the day of the operation, October 20', 'The money for it is in a fund of shares'] },
+    reason: { T1: 'The bill is a known size on a known date, and its money sits in shares: {cue:T1}. After a 16% fall the fund holds about $11,760 of the $14,000, and the hospital’s date does not move.' },
+    not: { outcome: 'covered', why: 'There is a bill, but the money for it is in {t:fund} of shares and not in cash or in {t:bond} that repays before the day.' } },
 
-  { id: 'n-cv2', use: 'drill', tier: 'clean', setting: 'property', topic: 'a furnace and wiring paid for by a bond',
-    text: "Dario must pay $30,000 for a new furnace and rewiring on June 1. He has put the $30,000 in a US Treasury bond that repays $30,000 on May 15. Prices have fallen by 18% since January, and he has no other bill coming.",
-    outcome: 'covered', route: { D1: ['timing'], T1: ['ready'] },
-    cues: { T1: 'He has put the $30,000 in a US Treasury bond that repays $30,000 on May 15' },
-    reason: { T1: 'The money for the bill is out of a fall’s reach: {cue:T1}. The bond repays the full $30,000 two weeks before the bill is due, whatever shares have done since January.' },
-    not: { outcome: 'ladder', why: 'The bill is of a known size on a known date, as in {o:ladder}. But that name needs its money in shares or funds, and here it is in {t:bond} that repays before the day.' } },
-
-  /* ---------- Group three: a mix that has moved, and living costs paid by selling ---------- */
-  { id: 'n-rb1', use: 'drill', tier: 'varied', setting: 'retirement', topic: 'a mix after a long drop in shares',
-    text: "Sunil is 55. His plan is 50% in shares and 50% in bonds. After a long fall in shares, shares are $84,000 of his $240,000, 35%. He will not need to take any money out for ten years.",
+  { id: 'p-rb1', use: 'drill', tier: 'varied', setting: 'work', topic: 'a retirement-savings mix after eleven years of rises',
+    text: "Ngozi, 38, chose 70% shares and 30% bonds for the money she is putting away for retirement. After eleven years of rises, shares are $442,000 of her $520,000, 85%. She will not need any of it for twenty-five years.",
     outcome: 'rebalance', route: { D1: ['timing'], T1: ['drifted'] },
-    cues: { T1: 'shares are $84,000 of his $240,000, 35%' },
-    reason: { T1: 'Sunil chose 50% in shares, and now {cue:T1}. That is 15 points below his plan, and nothing is being sold to pay for anything. A fall would take less than he chose, and so would a recovery.' },
-    not: { outcome: 'cashbuffer', why: 'Sunil is not living on the money: he need take nothing out for ten years, and no bill is in the case. The case shows only that {t:mix} has moved.' } },
-
-  { id: 'n-cb2', use: 'drill', tier: 'varied', setting: 'business', topic: 'the proceeds of a sold share in a firm',
-    text: "Imelda, 48, sold her share of a firm and lives on the $310,000 she was paid, all of it in a fund of shares. She sells $2,500 of the fund each month to pay her bills, and has no savings account. Prices have fallen by 17% since she sold.",
-    outcome: 'cashbuffer', route: { D1: ['timing'], T1: ['livingcosts'] },
-    cues: { T1: 'She sells $2,500 of the fund each month to pay her bills, and has no savings account' },
-    reason: { T1: 'Imelda gets her living money by selling investments, with nothing set aside to spend from instead: {cue:T1}. Every month a fall means selling more units for the same $2,500.' },
-    not: { outcome: 'ladder', why: 'Imelda needs money every month, with no end date, and the case shows no single bill of a known size on a known day.' } },
-
-  /* ---------- Group four: a bill on a date, and a mix that is still inside its limits ---------- */
-  { id: 'n-ld2', use: 'drill', tier: 'varied', setting: 'family', topic: 'a semester of tuition at a music school',
-    text: "Nikos and Anna's son starts at a music school in September. The first semester's tuition is $9,500, due on September 1, ten months from now. They have kept the money for it in one fund of shares, and prices have fallen by 20%.",
-    outcome: 'ladder', route: { D1: ['timing'], T1: ['datedbill'] },
-    cues: { T1: ["The first semester's tuition is $9,500, due on September 1, ten months from now", 'kept the money for it in one fund of shares'] },
-    reason: { T1: 'The tuition is a known size on a known date, and its money is held where its price can fall: {cue:T1}. After a fall of 20% the fund holds $7,600 of the $9,500, and the school will still want $9,500 on September 1.' },
-    not: { outcome: 'cashbuffer', why: 'The money is needed once, on a date, and not every month. The case shows no living costs paid by selling.' } },
-
-  { id: 'n-cv3', use: 'drill', tier: 'varied', setting: 'work', topic: 'a 401(k) mix inside its limits',
-    text: "Tanya's plan is 70% in shares and 30% in bonds, and she allows shares to move 5 points either side. Her 401(k) is $310,000, and shares are now $226,300 of it, 73%. She is 44 and will not need to take any money out for twenty years.",
-    outcome: 'covered', route: { D1: ['timing'], T1: ['ready'] },
-    cues: { T1: 'shares are now $226,300 of it, 73%' },
-    reason: { T1: 'Tanya’s limit is 65% to 75%, and the case says {cue:T1}. That is 3 points above her plan and inside the limit, so a fall would take about what she chose.' },
-    not: { outcome: 'ladder', why: 'No bill is due on a date in the case, so there is no bill whose money a fall could catch. The only thing in it is a mix that is still inside its limits.' } }
+    cues: { T1: 'shares are $442,000 of her $520,000, 85%' },
+    reason: { T1: 'Ngozi chose 70% in shares, and now {cue:T1}. That is 15 points above her plan, with no living costs and no bill in the case, so {t:mix} is the only thing that a fall would find.' },
+    not: { outcome: 'covered', why: 'A mix is only covered when it is still inside the limits the plan allows. 15 points above the plan is well outside any limit of a few points.' } },
 ]);

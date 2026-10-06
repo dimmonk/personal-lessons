@@ -6,7 +6,7 @@
 
 FC.unit('ideology', 'u1', {
   kind: 'C',              // C classification, F facts, P procedure
-  rev: 3,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
+  rev: 4,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
   standard: 1,            // lesson-standard version this unit was built to
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author). The app labels a draft as a draft.
   tag: 'One',
@@ -22,11 +22,11 @@ FC.unit('ideology', 'u1', {
       shared: 'Both can be angry about the same closing or the same cut, and both can say "us" against someone else.',
       rule: 'In {a:D1.class} "us" is the people who work for pay, and "them" is the people who own where they work. In {a:D1.nation} "us" is one people, marked out by its country, culture or birth, and the text puts it first. A text can mention wages, bosses and the rich and still get the second answer, if what it speaks for is the people as a whole.',
       test: 'Who is "us", and who is "them"? Are they the people who work for pay and the people who own where they work? Or is "us" one people, marked out by its country, culture or birth?' },
-    { id: 'class~tradition', pair: ['class', 'tradition'], step: 'D1',
+    { id: 'class~tradition', pair: ['class', 'tradition'], step: 'D1', taughtIn: 'q-sides',
       shared: 'Both can speak up for ordinary people against powerful ones, and both can be bitter about what a closing does to a town.',
       rule: '{a:D1.class} is about who works for pay and who owns, and which of them the text stands with. {a:D1.tradition} is about what was handed down from the past, and the text holds it up as the guide. The first looks at jobs and money. The second looks at what came before and should carry on.',
       test: 'Is the text about the jobs and money of working people against owners? Or is it about something handed down from the past, which it says should guide?' },
-    { id: 'class~rights', pair: ['class', 'rights'], step: 'D1',
+    { id: 'class~rights', pair: ['class', 'rights'], step: 'D1', taughtIn: 'q-sides',
       shared: 'Both can ask for fair pay and fair rules, and both can stand with people who have less.',
       rule: 'In {a:D1.class} the people the text speaks for are the workers, and the owners are named as the other side. In {a:D1.rights} the text speaks for every person alike, and names no side to be on the far end of it.',
       test: 'Is there a side the text is against, the people who own where others work? Or does it speak for every person, whoever they are?' },
@@ -42,43 +42,32 @@ FC.unit('ideology', 'u1', {
       shared: 'Both can speak of race and origin, and both can say that people are treated differently according to the group they were born into.',
       rule: 'In {a:D1.nation} the people the text belongs to is put first, and may be placed above others. In {a:D1.rights} no people is placed above another: something is said to be owed to every person, and the complaint is that rules leave some groups behind.',
       test: 'Is one people being put first, perhaps above the others? Or is something said to be owed to every person, whatever group they belong to?' },
-    { id: 'nation~none', pair: ['nation', 'none'], step: 'D1',
+    { id: 'nation~none', pair: ['nation', 'none'], step: 'D1', taughtIn: 'q-sides',
       shared: 'Both can come from a ruler’s mouth, and both can speak of power and of who is in charge.',
       rule: '{a:D1.nation} speaks for a people and puts it first. {a:D1.none} says who holds power and how they keep it, or how one practical matter will be handled, and speaks for no people at all. A ruler’s methods are not a side.',
       test: 'Does the text speak for one people and put it first? Or does it only say who is in charge and how they keep power, or what will happen?' },
-    { id: 'tradition~rights', pair: ['tradition', 'rights'], step: 'D1',
+    { id: 'tradition~rights', pair: ['tradition', 'rights'], step: 'D1', taughtIn: 'q-sides',
       shared: 'Both can say that some things are owed to people and must not be taken away: a faith, a freedom, a way of life.',
       rule: '{a:D1.tradition} holds up what was handed down from the past as what should guide. {a:D1.rights} holds up what is owed to every person, whether it is old or new. The first looks back at what came before. The second asks what each person is owed.',
       test: 'Is the text’s reason that the thing was handed down from the past? Or is its reason that every person is owed it?' },
-    { id: 'tradition~none', pair: ['tradition', 'none'], step: 'D1',
+    { id: 'tradition~none', pair: ['tradition', 'none'], step: 'D1', taughtIn: 'q-sides',
       shared: 'Both can be about a church, a parish, a village custom or a home matter.',
       rule: '{a:D1.tradition} holds up a faith, a custom or an old order as what should guide. {a:D1.none} deals with one practical matter, such as who will repair the church roof or when the bells ring, and says nothing about what should guide anyone.',
       test: 'Does the text hold up old ways as what should guide? Or does it only handle one practical matter?' },
-    { id: 'rights~none', pair: ['rights', 'none'], step: 'D1',
+    { id: 'rights~none', pair: ['rights', 'none'], step: 'D1', taughtIn: 'q-sides',
       shared: 'Both can be about forms, appeals, services and fair process.',
       rule: '{a:D1.rights} says that something is owed to every person, and puts that first. {a:D1.none} says only how one practical matter will be handled: who to write to, by when, at what cost.',
       test: 'Does the text say that every person is owed something? Or does it only say how one thing is to be done?' }
   ],
 
-  // Parts are stopping points. The first five follow the five answers in the key's order (A13); the sixth keeps the four pairs
-  // that involve the fifth answer together. The part with drill: true is the last; its close cards come after the drill.
+  // Parts are stopping points. The part with drill: true is the last; its close cards come after the drill.
   parts: [
-    { id: 'p1', title: 'The first answer: working people and owners',
-      cards: ['orient-sides', 'term-ideology', 'meet-class', 'again-class', 'lens-sides', 'portrait-class', 'check-class'] },
-    { id: 'p2', title: 'The second answer: a people put first',
-      cards: ['meet-nation', 'again-nation', 'portrait-nation', 'check-nation', 'look-class-nation', 'exc-ourcountry', 'exc-deny'] },
-    { id: 'p3', title: 'The third answer: old ways',
-      cards: ['meet-tradition', 'again-tradition', 'portrait-tradition', 'check-tradition',
-              'look-class-tradition', 'look-nation-tradition', 'exc-faith', 'exc-loomhands'] },
-    { id: 'p4', title: 'The fourth answer: what every person is owed',
-      cards: ['meet-rights', 'again-rights', 'portrait-rights', 'check-rights',
-              'look-class-rights', 'look-nation-rights', 'look-tradition-rights', 'exc-fairstart', 'exc-lowtax', 'exc-twoduties', 'refute-race'] },
-    { id: 'p5', title: 'The fifth answer: a text with no side',
-      cards: ['meet-none', 'again-none', 'portrait-none', 'check-none', 'refute-insult'] },
-    { id: 'p6', title: 'The fifth answer beside the other four',
-      cards: ['look-class-none', 'look-nation-none', 'look-tradition-none', 'look-rights-none', 'exc-ruler'] },
-    { id: 'p7', title: 'The question, two whole cases, then the drill',
-      cards: ['q-sides', 'check-sides', 'worked-homes', 'worked-wage'], drill: true, close: ['recap-sides', 'transfer-sides'] }
+    { id: 'p1', title: 'The first three answers: working people and owners, a people put first, old ways',
+      cards: ['orient-sides', 'term-ideology', 'meet-class', 'check-class', 'meet-nation', 'check-nation', 'look-class-nation',
+              'meet-tradition', 'check-tradition', 'look-nation-tradition'] },
+    { id: 'p2', title: 'The other two answers, the question, one whole case, then the drill',
+      cards: ['meet-rights', 'check-rights', 'look-nation-rights', 'meet-none', 'check-none', 'look-class-none',
+              'q-sides', 'check-sides', 'worked-wage'], drill: true, close: ['recap-sides'] }
   ],
 
   // The drill of a gate unit has three stages (A15): piece, route, claim; the route is one question long, so its answer is the name.
@@ -89,30 +78,19 @@ FC.unit('ideology', 'u1', {
     add: 'Some of these texts are only a notice or a schedule, and some name workers and owners without taking a side. That is on purpose. Saying that no side is named is one of the five answers, and you will need it as often as the other four.',
     rungs: [
       { ask: 'piece',
-        items: [[{ case: 'i-p-class', step: 'D1' }, { case: 'i-p-none', step: 'D1' }],
-                [{ case: 'i-p-rights', step: 'D1' }, { case: 'i-p-nation', step: 'D1' }],
-                [{ case: 'i-p-tradition', step: 'D1' }, { case: 'i-p-nation2', step: 'D1' }],
-                [{ tell: 'class~nation' }, { tell: 'class~rights' }],
-                [{ tell: 'nation~tradition' }, { tell: 'tradition~none' }],
-                [{ tell: 'nation~none' }, { tell: 'rights~none' }],
-                ['i-rev-class', 'i-rev-nation', 'i-rev-tradition', 'i-rev-rights', 'i-rev-none']] },
+        items: [[{ case: 'i-p-class', step: 'D1' }, { case: 'i-p-none', step: 'D1' }, { tell: 'class~none' }],
+                [{ case: 'i-p-rights', step: 'D1' }, { case: 'i-p-nation', step: 'D1' }, { tell: 'nation~rights' }],
+                [{ case: 'i-p-tradition', step: 'D1' }, { tell: 'nation~tradition' }, { tell: 'class~nation' }]] },
       { ask: 'route',
         items: [['i-r-class1', 'i-r-nation1'],
                 ['i-r-trad1', 'i-r-rights1', 'i-r-none1'],
-                ['i-r-class2', 'i-r-nation2', 'i-r-none2'],
-                ['i-r-trad2', 'i-r-rights2'],
-                ['i-m-class', 'i-m-nation', 'i-m-none1', 'i-m-class2', 'i-m-nation2'],
-                ['i-m-trad', 'i-m-rights', 'i-m-none2']] },
+                ['i-m-class', 'i-m-nation', 'i-m-none2']] },
       { ask: 'claim', demo: 'i-claim-demo',
-        items: [['i-claim-insult'], ['i-claim-race'], ['i-claim-faith'], ['i-claim-owner']] }
+        items: [['i-claim-insult']] }
     ],
-    // Fresh cases for later days: three for each answer, one for each of its scheduled returns (E9).
+    // One fresh case for each answer, for later days (E9).
     // A due answer returns as a case the learner has not seen, beside a case of the answer they most often take it for.
-    returns: ['i-ret-class-agency', 'i-ret-class-app', 'i-ret-class-pickers',
-              'i-ret-nation-city', 'i-ret-nation-few', 'i-ret-nation-deny',
-              'i-ret-trad-walk', 'i-ret-trad-carols', 'i-ret-trad-free',
-              'i-ret-rights-evict', 'i-ret-rights-queue', 'i-ret-rights-trial',
-              'i-ret-none-office', 'i-ret-none-savings', 'i-ret-none-commissioner']
+    returns: ['i-ret-class-app', 'i-ret-nation-few', 'i-ret-trad-carols', 'i-ret-rights-queue', 'i-ret-none-savings']
   },
 
   // Build notes: not shown to the learner, and left out of the fingerprint. The validator reads them.
@@ -121,7 +99,8 @@ FC.unit('ideology', 'u1', {
     history: [
       { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the gate unit of Political Ideologies. Five answers taught as five families, the fifth ("no side named") with its own cases and an exception for a ruler’s orders. Not yet deployed, so later edits before the first deploy stay revision 1.' },
       { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' },
-      { rev: 3, date: '2026-10-05', change: 'American English: dollars, US words and spelling.' }
+      { rev: 3, date: '2026-10-05', change: 'American English: dollars, US words and spelling.' },
+      { rev: 4, date: '2026-10-05', change: 'Trimmed to a quick lesson: one case per name, the essentials, a short drill.' }
     ],
     // What the K2 rewrite changed in the key's first question and the structure around it, and why. This unit carries the lines
     // of the whole key and of the gate; the units that teach the other questions carry theirs. (docs/rebuild/ideology-plan.md, part a)
@@ -154,14 +133,7 @@ FC.unit('ideology', 'u1', {
         now: 'each also has plain, needs and when',
         why: 'A15, S1: the gate’s answers are this unit’s families, taught as an outcome is.' }
     ],
-    wrongIdeas: [
-      { card: 'refute-race', about: 'rights',
-        source: { kind: 'app-data', verified: true,
-          ref: 'public/subjects/ideology/standard0.js, IDEOLOGY_ERR item 9 ("A speech about how racial groups are held back is no different from Nazism, because both are about race."). It shows that the old course already treated this as a faulty idea its learners bring. Cold readers still have to say whether it is one they hold.' } },
-      { card: 'refute-insult', about: 'none',
-        source: { kind: 'app-data', verified: true,
-          ref: 'public/subjects/ideology/standard0.js, the old Unit Four card "When a name is used as an insult", and docs/comprehension-audit/ideology.md (card U4C5). It shows that the old course already taught this; cold readers still have to say whether learners hold the idea.' } }
-    ],
+    wrongIdeas: [],       // the two wrong-idea cards were cut in the quick lesson; the ideas live on in the nation~rights look-alike and the claim stage
     signoff: {
       coverage: null,     // { date, by } once tests/validate-data.mjs passes on this unit in the app
       coldRead: null      // { rev, date, reader: 'novice' | 'near-novice', restated: true, drillAttempted: true, notes }

@@ -14,16 +14,6 @@ FC.cases('civics', 'u5', [
     cues: { D1: 'The judge must now decide whether it does',
             J1: ['was fined $50 for handing out leaflets about a school vote', 'told the judge that the rule goes against the right to speak that the Constitution protects'] } },
 
-  { id: 'r-paper', use: 'teach', tier: 'clean', setting: 'money', topic: 'a newspaper fined for a name', name: 'The newspaper fine',
-    text: 'A state law says that no newspaper may print the name of a person who has been charged with a crime but not yet tried. The owner of a small paper, Shira, was fined $10,000 for printing one name. She asked a judge to cancel the fine, saying the law takes away the freedom to publish that the Constitution protects.',
-    outcome: 'review', route: { D1: ['courts'], J1: ['check'] },
-    cues: { D1: 'She asked a judge to cancel the fine', J1: 'saying the law takes away the freedom to publish that the Constitution protects' },
-    segments: [
-      { text: 'A state law says that no newspaper may print the name of a person who has been charged with a crime but not yet tried', note: 'That is the law. It is how the matter began, and it is not what the person asks the judge.' },
-      { text: 'was fined $10,000 for printing one name', note: 'That is the harm. It is why Shira can bring a case, and it is not what she says about the law.' },
-      { text: 'saying the law takes away the freedom to publish that the Constitution protects' }
-    ] },
-
   { id: 'r-gate', use: 'check', tier: 'clean', setting: 'work', topic: 'workers meeting at a factory gate', name: 'The factory gate',
     text: 'A state law bans any group of workers from meeting outside a factory gate before a shift. Anil was fined $120 for meeting his colleagues at the gate to talk about their pay. He took the state to court, saying the law takes away the right to gather peacefully. A judge will hear the case next month.',
     outcome: 'review', route: { D1: ['courts'], J1: ['check'] },
@@ -35,34 +25,6 @@ FC.cases('civics', 'u5', [
       { text: 'A judge will hear the case next month', note: 'That shows who decides. It does not show what the judge is asked.' }
     ],
     reason: { J1: 'Anil was fined, so the law has actually harmed him. What he tells the court is that the law clashes with a right the Constitution protects, and the words are the ones you tapped. The law is being attacked, not read.' } },
-
-  /* ---------- The exceptions that carry the words of another name ---------- */
-  { id: 'x-hall', use: 'teach', tier: 'misleading', setting: 'community', topic: 'a community hall and one religion', name: 'The community hall',
-    text: 'A town owns a community hall that residents rent for parties and meetings. The town’s rule says that only members of the town’s main church may rent it. The Mehta family belong to a different faith and were turned away. They have asked a judge to order the town to let every resident rent the hall, saying the rule is unfair and that the Constitution does not allow a town to favor one religion.',
-    outcome: 'review', route: { D1: ['courts'], J1: ['check'] },
-    cues: { D1: 'They have asked a judge to order the town', J1: ['were turned away', 'the Constitution does not allow a town to favor one religion'] },
-    segments: [
-      { text: 'The town’s rule says that only members of the town’s main church may rent it', note: 'That is the rule. It does not show what the family asks the judge.' },
-      { text: 'were turned away', note: 'That is the harm. It is why the family can bring a case. It does not show what they say about the rule.' },
-      { text: 'saying the rule is unfair', note: 'On its own that is a view about which rule would be better. The words that come after it are what change the case.' },
-      { text: 'the Constitution does not allow a town to favor one religion' }
-    ] },
-
-  { id: 'x-defendant', use: 'teach', tier: 'misleading', setting: 'leisure', topic: 'a night vigil and a camping ban', name: 'Nell’s trial',
-    text: 'Nell is on trial for breaking a town rule that bans camping in any public park. She has been in court since Monday: a jury has been chosen, she has a lawyer, and the trial is open to the public. On Thursday her lawyer asks the judge to throw out the charge, saying the rule takes away the right to gather peacefully, because Nell was holding a night vigil with fifty other people.',
-    outcome: 'review', route: { D1: ['courts'], J1: ['check'] },
-    cues: { D1: 'her lawyer asks the judge to throw out the charge', J1: 'saying the rule takes away the right to gather peacefully' },
-    segments: [
-      { text: 'Nell is on trial for breaking a town rule that bans camping in any public park', note: 'That is why she is in court. It does not show what her lawyer asks the judge.' },
-      { text: 'a jury has been chosen, she has a lawyer, and the trial is open to the public', note: 'Those are steps the Constitution promises an accused person, and nobody says one was skipped. They do not show what the judge is asked.' },
-      { text: 'the rule takes away the right to gather peacefully' }
-    ] },
-
-  /* ---------- The whole case worked on a clean story ---------- */
-  { id: 'w-yardsign', use: 'teach', tier: 'clean', setting: 'community', topic: 'a yard sign about an election', name: 'The yard sign',
-    text: 'A state law says that no yard may display a sign about an election. Wanda put up a sign supporting a candidate for mayor and was fined $75. She asked a judge to cancel the fine, saying that the law takes away her right to speak.',
-    outcome: 'review', route: { D1: ['courts'], J1: ['check'] },
-    cues: { D1: 'She asked a judge to cancel the fine', J1: 'saying that the law takes away her right to speak' } },
 
   /* ---------- The look-alike pairs: the review case of each ---------- */
   { id: 'ls-amp-speech', use: 'teach', tier: 'clean', setting: 'leisure', topic: 'a loudspeaker at a park rally', name: 'The loudspeaker',

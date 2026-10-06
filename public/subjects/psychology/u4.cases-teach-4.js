@@ -1,10 +1,9 @@
-// Psychology, Unit Four: the pairs of cases on the look-alike cards, second half, and the two cases worked from top to bottom.
-// Field guide: see u4.cases-teach-1.js. The worked cases carry marked words for the gate and for the key's question, and no reason of their own:
+// Psychology, Unit Four: the pairs of cases on the look-alike cards, second half, the check on the question, and the worked case.
+// Field guide: see u4.cases-teach-1.js. The worked case carries marked words for the gate and for the key's question, and no reason of their own:
 // the worked card holds the reasons, so there is one copy.
 
 FC.cases('psychology', 'u4', [
 
-  /* ---------- A borderline personality and a histrionic personality: a roommate's leaving party ---------- */
   { id: 'pa-mira', use: 'teach', tier: 'varied', setting: 'leisure', topic: 'a roommate leaving, answered with clinging',
     text: "Mira is twenty-nine. At her roommate's leaving party she cried and clung to her, saying she would be nothing without her and that she must not go. When the roommate said she would visit on weekends, Mira said she knew she would forget her, and the next week told the other roommates that she had always been selfish. Mira has been through the same thing with every close friend who has gone away since she was sixteen, and has lost three of them for good.",
     outcome: 'borderline', route: { D1: ['pattern'], P1: ['clings'] },
@@ -14,17 +13,6 @@ FC.cases('psychology', 'u4', [
     text: "Orla is twenty-nine. At her roommate's leaving party she stood on a chair and gave a speech about how much she would miss her, and cried so that the whole room turned to watch. When another guest was given a round of applause for a song, Orla sang louder over the end of it. Orla has made herself the center of every leaving party, wedding and birthday since she was sixteen, and two friends have stopped inviting her to parties.",
     outcome: 'histrionic', route: { D1: ['pattern'], P1: ['center'] },
     cues: { P1: ['stood on a chair and gave a speech about how much she would miss her', 'sang louder over the end of it', 'two friends have stopped inviting her to parties'] } },
-
-  /* ---------- A grandiose narcissism and a histrionic personality: a colleague is applauded ---------- */
-  { id: 'pa-felix', use: 'teach', tier: 'varied', setting: 'work', topic: 'a colleague applauded, answered with scorn',
-    text: "Felix is fifty-one, and in every firm he has worked at he has told the juniors that he is the only one who knows how to present. When a colleague was applauded at the end of a talk, Felix told the manager afterward that she was 'all slides and no substance', and that she would never have been asked if he had not trained her. He has done this to every colleague who has been praised, in three firms, and four of them have changed teams to get away from him.",
-    outcome: 'narcgrand', route: { D1: ['pattern'], P1: ['above'] },
-    cues: { P1: ['he is the only one who knows how to present', 'all slides and no substance', 'four of them have changed teams to get away from him'] } },
-
-  { id: 'pa-bea', use: 'teach', tier: 'varied', setting: 'work', topic: 'a colleague applauded, answered with a story',
-    text: "Bea is fifty-one, and in every firm she has worked at she has been the one with the biggest stories and the brightest clothes. When a colleague was applauded at the end of a talk, Bea told the whole table about a dreadful week in which she had lost her keys, been stood up and cried in an elevator, until they were all listening to her. She has done this in three firms, and four of her colleagues have stopped sitting near her.",
-    outcome: 'histrionic', route: { D1: ['pattern'], P1: ['center'] },
-    cues: { P1: ['the biggest stories and the brightest clothes', 'told the whole table about a dreadful week', 'four of her colleagues have stopped sitting near her'] } },
 
   /* ---------- A histrionic personality and an ordinary personality: two people who are dramatic in everything ---------- */
   { id: 'pa-sofia', use: 'teach', tier: 'varied', setting: 'community', topic: 'a village fair, heart racing',
@@ -37,17 +25,6 @@ FC.cases('psychology', 'u4', [
     outcome: 'ordpersonality', route: { D1: ['pattern'], P1: ['steady'] },
     cues: { P1: ['dramatic in everything he does', 'led the cheering and bought her a drink', 'still come to his parties'] } },
 
-  /* ---------- A grandiose narcissism and an antisocial personality: two landlords ---------- */
-  { id: 'pa-kurt', use: 'teach', tier: 'varied', setting: 'home', topic: 'a landlord who scorns a tenant',
-    text: "Kurt is fifty-eight and has rented out apartments for thirty years. He tells his tenants that he is the best landlord in the county and that they are lucky to live under his roof. When a tenant asked him to mend a boiler, he called her 'an ungrateful nobody' and let it wait two weeks, though he did repair it in the end. He has spoken to tenants this way in three towns, and he has been shouted at by two of his own sons for the way he treats his staff. Tenants leave as soon as their lease ends.",
-    outcome: 'narcgrand', route: { D1: ['pattern'], P1: ['above'] },
-    cues: { P1: ['he is the best landlord in the county and that they are lucky to live under his roof', 'an ungrateful nobody', 'Tenants leave as soon as their lease ends'] } },
-
-  { id: 'pa-vince', use: 'teach', tier: 'varied', setting: 'home', topic: 'a landlord who keeps the deposits',
-    text: "Vince is fifty-eight and has rented out apartments for thirty years. He tells tenants that their deposits are 'safe in the bank', and has spent four tenants' deposits in three towns. When a tenant asked him to mend a boiler he promised it for Friday, never sent anyone, and kept her rent. When she wrote that the apartment was damp and her baby was ill, he said, 'Go somewhere else, then. Nobody forced you.' Three tenants have lost their deposits and one has lost her home.",
-    outcome: 'antisocial', route: { D1: ['pattern'], P1: ['uses'] },
-    cues: { P1: ["spent four tenants' deposits in three towns", 'Nobody forced you', 'Three tenants have lost their deposits and one has lost her home'] } },
-
   /* ---------- An antisocial personality and an ordinary personality: a bent rule and a broken one ---------- */
   { id: 'pa-joss', use: 'teach', tier: 'varied', setting: 'money', topic: 'loans for an imaginary business',
     text: "Joss is thirty-seven. He has talked three friends into lending him money for a business that does not exist, telling each that it is a secret and that they must not tell the others. When one of them asked for her money back, he said she was lucky to have been asked, and blocked her. He has done this since he was twenty-two, in three cities, and has never repaid anyone.",
@@ -59,20 +36,12 @@ FC.cases('psychology', 'u4', [
     outcome: 'ordpersonality', route: { D1: ['pattern'], P1: ['steady'] },
     cues: { P1: ['has always bent small rules', 'she paid it back with a card the next week', 'her friends still lend her things and she lends them back'] } },
 
-  /* ---------- The check on the key's question ---------- */
   { id: 'pa-ward', use: 'check', tier: 'varied', setting: 'community', topic: 'a touchy neighbor',
     text: "Ward is sixty-three and has always been touchy about being corrected. In his twenties he sulked for an evening whenever a foreman put him right, and he still does, and then comes around and says sorry. He has done it at three workplaces, and at home, where his wife says she just waits for the evening to pass. He has kept the same friends for forty years, the whole street asks him to fetch the ladders, and his last employer gave him a long-service watch.",
     outcome: 'ordpersonality', route: { D1: ['pattern'], P1: ['steady'] },
     cues: { P1: ['has always been touchy about being corrected', 'then comes around and says sorry', 'the whole street asks him to fetch the ladders'] },
     reason: { P1: 'Ward has been touchy for forty years and in every place, and the words that decide it are {cue:P1}. The sulk passes by the evening, he says sorry, and nothing has been lost: the same friends, the same street, a long-service watch.' },
     not: { outcome: 'narcvuln', why: 'The sulk can look like hurt withdrawal. But Ward keeps no count of what he is owed, it passes within the evening, and he has lost nobody.' } },
-
-  /* ---------- The two cases worked from the top: a clean one, then one whose story points the wrong way ---------- */
-  { id: 'pa-rafe', use: 'teach', tier: 'clean', setting: 'work', topic: 'a recruiting agency and its fees', name: 'The recruiting agent',
-    text: "Rafe is forty-one and runs a recruiting agency. He tells clients that he is the best in the business, and he is warm and quick to make friends. For fifteen years, at three agencies and in two cities, he has invoiced clients for placements that never happened, and told candidates that a job existed so that they would pay a 'registration fee'. When a candidate called in tears because she had borrowed the fee from her mother, Rafe said, 'Everyone knows how recruiting works.' The regulator has fined him twice, and two former partners will not speak to him.",
-    outcome: 'antisocial', route: { D1: ['pattern'], P1: ['uses'] },
-    cues: { D1: ['For fifteen years, at three agencies and in two cities'],
-            P1: ['invoiced clients for placements that never happened', 'Everyone knows how recruiting works', 'two former partners will not speak to him'] } },
 
   { id: 'pa-bruno', use: 'teach', tier: 'misleading', setting: 'leisure', topic: 'a theatrical man and the village Christmas show', name: 'The theatrical uncle',
     text: "Bruno is fifty-seven and has been theatrical all his life. At school he played every lead, at his first job he ran the staff Christmas show, and at his sister's wedding he gave a speech that went on for twenty minutes. He tells every story with his whole body, cries easily at films and hugs everyone at a party. When another guest is applauded, Bruno applauds loudest. His friends from school still meet him every month, he has run the village Christmas show for twenty years and been thanked at the end of every one, and his daughters ask him to tell the same stories to their children.",

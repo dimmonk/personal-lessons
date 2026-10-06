@@ -1,69 +1,41 @@
-// Statistical Claims, Unit Two, part one (end): the second name, a figure that rose or fell, and the first look-alike pair.
+// Statistical Claims, Unit Two, part one (end): the third name, two things set side by side, with its check and its look-alike pair.
 
 FC.cards('stats', 'u2', [
 
-  { id: 'meet-measok', kind: 'meet', outcome: 'meas_ok',
-    link: 'The first name gave one figure about one group at one time. The second follows a figure through time. Take a town’s own records.',
-    case: 'h-births', mark: 'H1',
+  { id: 'meet-compok', kind: 'meet', outcome: 'comp_ok',
+    link: 'The first two names each had one thing in the claim. The third has two, set side by side, and the claim says which is bigger.',
+    case: 'h-buses', mark: 'H1',
     strip: [
-      'There is one figure, births in the town in a year, and it is given for two years: 1,210 in 2019 and 1,090 in 2023.',
-      'It was counted the same way both times: every birth to a mother who lives in the town, written down by the same office on the same form.',
-      'Nothing could push it without births changing: nobody’s pay or budget depends on the number, and the same effort went into recording births in both years.',
-      'The claim says it fell, and says no more: not why, and not what it means.'
+      'There are two things, Line 5 and Line 9, and a figure for each: 12 late trips out of 200, and 31 out of 205.',
+      'They are of the same kind: two bus lines of the same length, run in the same hours, through neighborhoods of similar size.',
+      'They were counted the same way over the same stretch of time: every trip in March, with the same tracker.',
+      'The numbers behind the comparison are given: how many trips each had, and how many were late.',
+      'The claim says which is later more often, and stops there.'
     ],
     explain: [
-      'When a figure changes, there are two ways to explain it. Either the thing the figure counts changed, or something about the counting did. If the clerk’s office had changed its form in 2021 so that births at a hospital across the river were now included, the figure could fall or rise without any more or fewer babies being born. If the office were paid for each birth it recorded, the figure could rise because the office tried harder. A change in a figure is a change in the thing itself only when none of that happened.',
-      'Here none of it did. Every birth was recorded, by the same office and on the same form, so the same things were counted in both years. Nobody was paid or judged on the number, so nobody had a reason to push it. So the fall of 1,210 − 1,090 = 120 births is a fall in births. Set against the first year, 120 ÷ 1,210 is about 0.10, so there were about one in ten fewer.',
-      'Notice what the claim does not say. It does not say why births fell, or that families are choosing smaller households, or that anything in the town is to blame. It says that the figure fell, and the records back that. A claim that holds goes exactly as far as that.'
+      'For a comparison to be fair, three things have to hold, and this case shows each. The two things have to be of the same kind: two lines of the same length, run in the same hours. A line through a quiet suburb at midday and a line through the center at rush hour are not, and a difference between them says very little. They have to be counted the same way over the same stretch of time. And the numbers have to be given, so that sizes can be put on the same scale: Line 5 had 200 trips and Line 9 had 205, so each count of late trips is divided by its own trips. 12 ÷ 200 is 6 in 100, and 31 ÷ 205 is 15 in 100.',
+      'One more thing is easy to miss: no different mix of easy and hard cases hidden inside the two. Suppose Garage A does mostly quick jobs, 90 in every 100, and Garage B mostly long, hard ones, 90 in every 100. Both are late on 5 in 100 quick jobs and 40 in 100 hard jobs, so they are exactly as good as each other at each kind of job. Counted over everything, A is late on 8.5 jobs in every 100 and B on 36.5, and B looks more than four times as bad without being worse at anything. That is why this case tells you that both lines run in the same hours through similar neighborhoods.'
     ],
-    feature: { step: 'H1', option: 'change' },
-    name: 'The name for this is {o:meas_ok}. "Change" means a rise or a fall. "Real" says that the thing itself changed, and not only the figure.' },
-
-  { id: 'again-measok', kind: 'again', outcome: 'meas_ok',
-    link: 'The town’s births gave you what to point to: {needs:meas_ok}. Here is a second case with a completely different story.',
-    first: 'h-births', second: 'h-meter', step: 'H1',
-    instruction: 'Find what the two cases share. Ignore the story (births, electricity). Look at one thing only: {q:H1}',
-    prompt: { kind: 'phrase', answer: 'Our electricity use in January fell from 620 units in 2022 to 540 in 2023' },
-    shared: [
-      'In both cases one figure is given at two times, and in both it was read the same way each time: the same office and form, the same meter. Nobody had a reason to push either figure. Each claim says that the figure fell, and stops. The births fell by 120, which is about 10 in 100. The electricity fell by 620 − 540 = 80 units, which is 80 ÷ 620 = 0.13, about 13 in 100.',
-      'The two stories share nothing else. So this is not about babies or about power. It holds wherever the claim follows one figure through time, it was counted the same way, nothing could push it, and the claim says only that it rose or fell. That is what {o:meas_ok} names.'
-    ] },
-
-  { id: 'portrait-measok', kind: 'portrait', outcome: 'meas_ok',
-    link: 'You know what to point to. This card fills in the rest of the picture of {o:meas_ok}, so that you can spot it where nobody marks the words for you.',
-    typical: [
-      'It follows one thing through time with the same measure each time: the same office, meter, form or gauge. The words that say so are part of the claim or sit next to it.',
-      'The way the figure is made is easy to find, and it did not change. When the description of the counting is missing, you do not yet have an answer.',
-      'Nobody is paid, ranked or judged on the figure, and no more effort went into finding things at the end than at the start. If somebody was, or did, the same two numbers would be a different case.',
-      'It can be dramatic or dull. A fall of 120 births and a rise of 4 points can both be this name. How big the change is does not decide it.',
-      'It says only that the figure rose or fell. Why is another matter, and the claim leaves it alone.'
-    ],
-    not: [
-      'Two numbers in a row are not yet {o:meas_ok}. A figure that rose or fell is the thing moving only if the counting stayed the same and nobody could push it. A form changed in 2021, or a bonus paid on the figure, would make the same two numbers a different case.',
-      'And {o:meas_ok} is not a cause. "Births fell because of the new tax" goes past the figures.'
-    ],
-    wild: ['"Births in town fell from 1,210 in 2019 to 1,090 in 2023."', '"Our electricity use in January fell from 620 units to 540."', '"The reservoir fell from 82% to 61% full over the summer."', '"Average attendance went from 94 in 100 to 91 in 100, counted on the same register."'],
-    self: 'In your own life it is anything you keep your own record of with the same tool: your weight on one scale, your electricity on one meter, your spending in one account. When you watch the same figure the same way, a change in it is a change in the thing.',
-    ask: '"Was the figure counted the same way every time, and could anyone have pushed it, or looked harder later than earlier?"',
+    feature: { step: 'H1', option: 'difference' },
     act: [
-      '1. Find how the figure was counted each time: the same form, tool or definition. If it is not said, you do not yet have an answer.',
-      '2. Find whether anyone is paid, ranked or judged on it, and whether more effort went into finding things later. If either, stop: the first question would not have given this answer.',
-      '3. If neither, repeat only that it rose or fell, and by how much, from this figure to that one. Leave out "because".'
-    ] },
+      '1. Check that the two are of the same kind: the same length, line, hours or sort of customer. If they are not, say that the comparison is not between alike things.',
+      '2. Check that both were counted the same way over the same time. Where the totals differ, divide each count by its own total to put them on the same scale.',
+      '3. If both hold, repeat which is bigger and by how much. Leave out any reason: the comparison has not earned one.'
+    ],
+    name: 'The name for this is {o:comp_ok}. It is a comparison because the claim sets one thing beside another. It is fair because the two are alike and counted alike, and nothing about their size is hidden.' },
 
-  { id: 'check-measok', kind: 'check', after: 'meas_ok',
-    case: 'h-pupils',
-    ask: { type: 'option', step: 'H1', among: ['group', 'change'] } },
+  { id: 'check-compok', kind: 'check', after: 'comp_ok',
+    case: 'h-pools',
+    ask: { type: 'option', step: 'H1', among: ['group', 'change', 'difference'] } },
 
-  /* ---------- The first look-alike pair ---------- */
-  { id: 'look-samp-meas', kind: 'lookalike', ledger: 'samp_ok~meas_ok',
-    link: 'Two names can look alike when they give the same figure about the same thing. This card shows the first pair of this unit: a claim about one time, and a claim about two.',
-    cases: ['h-wait-avg', 'h-wait-change'],
-    instruction: 'Both cases are about the same clinic and the same kind of figure, an average wait. Compare one thing: does the claim give the figure once, or does it follow the figure through time?',
-    prompt: { kind: 'which', option: 'H1.change', answer: 'h-wait-change' },
+  { id: 'look-meas-comp', kind: 'lookalike', ledger: 'meas_ok~comp_ok',
+    link: 'The second pair of this unit: both claims put two figures in front of you, and both can sound like "this is lower than that".',
+    cases: ['h-gauge', 'h-reservoir-usual'],
+    instruction: 'Both cases are about the same reservoir, the same gauge and the same level. Compare one thing: is the claim following one thing as time passes, or setting one thing beside something else?',
+    prompt: { kind: 'which', option: 'H1.difference', answer: 'h-reservoir-usual' },
     difference: [
-      'In Case A the clinic drew 400 of last year’s 12,000 visits by lottery and timed each one. The claim gives one figure, 24 minutes, for one year. It says nothing about earlier years or later ones. The answer is {a:H1.group}, and the case is {o:samp_ok}.',
-      'In Case B the clinic timed every visit in two years, the same way, and nobody’s pay depends on the number. The claim gives the figure twice, 31 minutes and 24 minutes, and says it fell. The fall is 31 − 24 = 7 minutes, which is 7 ÷ 31 = 0.23, about 23 in 100. The answer is {a:H1.change}, and the case is {o:meas_ok}.',
-      'The figure of 24 minutes is the same in both. What separates them is whether the claim gives it once or follows it through time. Notice also what a claim of the first kind cannot say: from Case A alone, you cannot say that waits fell, because Case A gives no earlier figure to fall from.'
+      'In Case A the district read the gauge on 1 June and again on 1 September, and the claim follows the one reservoir through the summer: 82% full, then 61% full. It fell by 82 − 61 = 21 points. The answer is {a:H1.change}, and the case is {o:meas_ok}.',
+      'In Case B the district looks at the reservoir on one date, 1 September, and sets this year’s 61% beside the average of twenty readings for that date, 74%. The gap is 74 − 61 = 13 points, and the claim says the level is below the usual. Nothing is followed through time. One thing is set beside its own usual figure. The answer is {a:H1.difference}, and the case is {o:comp_ok}.',
+      'The gauge, the reservoir and the 61% are the same. In one claim the reservoir moves while the gauge is watched. In the other it stands still while it is set beside the usual.'
     ] }
 ]);

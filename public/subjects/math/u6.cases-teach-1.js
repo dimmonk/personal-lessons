@@ -13,16 +13,6 @@ FC.cases('math', 'u6', [
     route: { M1: ['shape'], S1: ['twosides'], S2: ['length'] },
     cues: { M1: ['walks 3 km due east and then 4 km due north', 'How long is the walk straight back?'], S1: 'walks 3 km due east and then 4 km due north', S2: 'How long is the walk straight back?' } },
 
-  { id: 'm6-wd-brace', use: 'teach', tier: 'clean', setting: 'building', topic: 'a door frame brace', name: 'The door frame', outcome: 'pyth',
-    text: 'A carpenter fixes a straight strip across a rectangular door frame, from one corner to the opposite corner. The frame is 80 cm wide and 150 cm high. How long must the strip be?',
-    route: { M1: ['shape'], S1: ['twosides'], S2: ['length'] },
-    cues: { M1: ['from one corner to the opposite corner', 'How long must the strip be?'], S1: 'The frame is 80 cm wide and 150 cm high', S2: 'How long must the strip be?' },
-    segments: [
-      { text: 'A carpenter fixes a straight strip across a rectangular door frame, from one corner to the opposite corner.', note: 'That says what is being fixed, and it shows the triangle, but the lengths that are given come in the next sentence.' },
-      { text: 'The frame is 80 cm wide and 150 cm high.' },
-      { text: 'How long must the strip be?', note: 'That is the question. The lengths that are given come in the sentence before it.' }
-    ] },
-
   { id: 'm6-wd-tv', use: 'check', tier: 'clean', setting: 'shopping', topic: 'a television display', outcome: 'pyth',
     text: 'A shop sells a television whose rectangular display is 48 cm high and 64 cm wide. The label gives the distance across the display from one corner to the opposite corner. How long is that distance?',
     route: { M1: ['shape'], S1: ['twosides'], S2: ['length'] },
@@ -39,16 +29,6 @@ FC.cases('math', 'u6', [
     text: 'A ski lift cable is 200 m long and rises at an angle of 30° above level ground. How high above its bottom station is the top station?',
     route: { M1: ['shape'], S1: ['sideangle'], S2: ['length'] },
     cues: { M1: ['rises at an angle of 30° above level ground', 'How high above its bottom station is the top station?'], S1: 'is 200 m long and rises at an angle of 30° above level ground', S2: 'How high above its bottom station is the top station?' } },
-
-  { id: 'm6-wd-roof', use: 'teach', tier: 'clean', setting: 'building', topic: 'a roof over a house', name: 'The roof', outcome: 'trig',
-    text: 'A roofer is building a roof over a house. The ridge is 4 m from the wall along level ground, and the roof slopes up at an angle of 30° above level ground. How high is the ridge above the top of the wall?',
-    route: { M1: ['shape'], S1: ['sideangle'], S2: ['length'] },
-    cues: { M1: ['the roof slopes up at an angle of 30° above level ground', 'How high is the ridge above the top of the wall?'], S1: 'The ridge is 4 m from the wall along level ground, and the roof slopes up at an angle of 30° above level ground', S2: 'How high is the ridge above the top of the wall?' },
-    segments: [
-      { text: 'A roofer is building a roof over a house.', note: 'That says what is being built. The length and the angle that are given come in the next sentence.' },
-      { text: 'The ridge is 4 m from the wall along level ground, and the roof slopes up at an angle of 30° above level ground.' },
-      { text: 'How high is the ridge above the top of the wall?', note: 'That is the question. The length and the angle that are given come in the sentence before it.' }
-    ] },
 
   { id: 'm6-wd-hill', use: 'check', tier: 'clean', setting: 'travel', topic: 'a hill road', outcome: 'trig',
     text: 'A cyclist rides up a straight hill road. The road is 500 m long and slopes up at an angle of 4° above level. How high does she climb?',

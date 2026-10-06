@@ -15,16 +15,6 @@ FC.cases('psychology', 'u4', [
     outcome: 'narcgrand', route: { D1: ['pattern'], P1: ['above'] },
     cues: { P1: ['he still opens every meeting by describing how the firm managed before he arrived', 'a nobody who got lucky', 'Two juniors have resigned this year with the same complaint'] } },
 
-  { id: 'pa-oriel', use: 'teach', tier: 'clean', setting: 'community', topic: 'a community hall committee', name: 'The committee chair',
-    text: "Oriel is sixty-one and has chaired the community hall committee for twenty-two years. She tells every new member that she is the only one who understands how things are done, and she has never let the treasurer see the accounts: 'I don't answer to you.' When a young member's idea for the summer fair was chosen over hers, she called him 'a jumped-up nobody' at the next meeting and had him taken off the schedule. At her daughter's wedding she corrected the best man's speech into the microphone. Eight volunteers have left in five years, and her daughter now sees her only at Christmas.",
-    outcome: 'narcgrand', route: { D1: ['pattern'], P1: ['above'] },
-    cues: { P1: ['she is the only one who understands how things are done', 'a jumped-up nobody', 'Eight volunteers have left in five years'] },
-    segments: [
-      { text: 'She tells every new member that she is the only one who understands how things are done', note: 'That is Oriel acting as if she is above the others. It is there before anything goes against her. The words asked for are what she does when something does.' },
-      { text: "When a young member's idea for the summer fair was chosen over hers, she called him 'a jumped-up nobody' at the next meeting and had him taken off the schedule" },
-      { text: 'Eight volunteers have left in five years, and her daughter now sees her only at Christmas', note: 'That is what it has cost. It follows from what Oriel does, but it is not what she does.' }
-    ] },
-
   { id: 'pa-wes', use: 'check', tier: 'clean', setting: 'leisure', topic: 'a soccer club captaincy',
     text: "Wes has played for the same amateur soccer club for twenty-five years. He tells each new signing that he is the best player they have had, and expects to wear the number ten shirt whatever his form. When the club chose a younger player as captain, Wes told the whole squad that the new captain was 'a clown who couldn't kick a ball'. He has fallen out with three managers and two clubs over where he is picked, and the secretary says half the squad now stay away from the bar when Wes is in it.",
     outcome: 'narcgrand', route: { D1: ['pattern'], P1: ['above'] },
@@ -43,16 +33,6 @@ FC.cases('psychology', 'u4', [
     outcome: 'ordpersonality', route: { D1: ['pattern'], P1: ['steady'] },
     cues: { P1: ['has been the loudest and surest person in every room since she was a girl', 'Her staff have stayed an average of fifteen years, and she has the same three friends she made at school'] } },
 
-  { id: 'pa-imran', use: 'teach', tier: 'clean', setting: 'home', topic: 'a shy father', name: 'The shy father',
-    text: "Imran is forty-four and has been shy for as long as anyone can remember. At school he ate his lunch in the library, in college he left parties after twenty minutes, and at each of his three offices he has been known as the quiet one who sends everyone a card on their birthday. His wife says he is not one for crowds and never has been. He has kept the same job for eleven years, his three closest friends are the three he made in college, and his daughters say he is the one they call when they need to talk.",
-    outcome: 'ordpersonality', route: { D1: ['pattern'], P1: ['steady'] },
-    cues: { P1: ['has been shy for as long as anyone can remember', 'He has kept the same job for eleven years'] },
-    segments: [
-      { text: 'Imran is forty-four and has been shy for as long as anyone can remember', note: 'That is his way of being. Rosa had a very different one, so it cannot be what the two cases share.' },
-      { text: 'He has kept the same job for eleven years, his three closest friends are the three he made in college, and his daughters say he is the one they call when they need to talk' },
-      { text: 'His wife says he is not one for crowds and never has been', note: 'That repeats his way of being. It says nothing about what it has cost him, or anyone else.' }
-    ] },
-
   { id: 'pa-marcus', use: 'check', tier: 'clean', setting: 'learning', topic: 'a blunt math teacher',
     text: "Marcus has taught math for thirty years in two schools and has always said exactly what he thinks. He tells students their working is 'a mess' when it is, and he tells the principal she is wrong when he thinks so. He was the same as a student teacher. Pupils tease him about it, he laughs, and former students still write to him. He has been asked to stay on three times, and the principal says she trusts him because he never says one thing and means another.",
     outcome: 'ordpersonality', route: { D1: ['pattern'], P1: ['steady'] },
@@ -65,16 +45,6 @@ FC.cases('psychology', 'u4', [
     text: "Ellis is forty-seven and works in a city government office. Since school he has said that the teachers liked the other boys better. In three offices he has stopped speaking to anyone who was promoted over him, and he says, quietly, 'Some people just get handed things.' When his younger sister got engaged he said 'lovely' and left before the cake, and he has not called her in two years. His wife says he keeps a count of who has been thanked and who has not, and that she is always on the list of those who never thank him. He has turned down two promotions because 'they would only have given it to me when it no longer mattered'.",
     outcome: 'narcvuln', route: { D1: ['pattern'], P1: ['overlooked'] },
     cues: { P1: ['Some people just get handed things', 'he has stopped speaking to anyone who was promoted over him', 'he has not called her in two years'] } },
-
-  { id: 'pa-gwen', use: 'teach', tier: 'clean', setting: 'learning', topic: 'a research student who is never credited', name: 'The research student',
-    text: "Gwen is twenty-nine and finishing a doctorate. Since her teens she has said that her ideas are taken without credit. In each of her three research groups she has gone silent whenever someone else was thanked, and she writes, 'No need to mention me, I'm used to it.' Her roommate won a fellowship last spring and Gwen has not spoken to her since. Two collaborators have stopped working with her, and her advisor says that nobody can tell when she has been hurt until she has already cut them off.",
-    outcome: 'narcvuln', route: { D1: ['pattern'], P1: ['overlooked'] },
-    cues: { P1: ["No need to mention me, I'm used to it", 'Gwen has not spoken to her since', 'Two collaborators have stopped working with her'] },
-    segments: [
-      { text: 'Since her teens she has said that her ideas are taken without credit', note: 'That is what Gwen says about herself: overlooked, and owed more. It is there before anything goes against her. The words asked for are what she does when something does.' },
-      { text: "In each of her three research groups she has gone silent whenever someone else was thanked, and she writes, 'No need to mention me, I'm used to it.'" },
-      { text: 'Two collaborators have stopped working with her', note: 'That is what it has cost. It is not what she does when someone else is thanked.' }
-    ] },
 
   { id: 'pa-lars', use: 'check', tier: 'clean', setting: 'community', topic: 'a food bank volunteer',
     text: "Lars has volunteered at the food bank for twelve years. He says that nobody ever thanks him for what he does, and that others get praised for much less. When a new volunteer was given a long-service award, Lars said nothing, went home and stayed away for a month. He did the same when the manager he had trained was promoted over him, and again when his own brother was thanked in the church newsletter. The manager says she has stopped asking him to events, because he goes quiet and cold for weeks afterward.",

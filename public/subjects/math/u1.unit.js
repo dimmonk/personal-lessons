@@ -4,12 +4,14 @@
 // text, cards carry `family` where a branch unit's cards carry `outcome`, and cases carry route: { M1: [option] } and no
 // outcome. Nothing is solved in this unit: later units teach each kind's own procedures. The unit's drill and return
 // cases are the bank that those units draw their { earlier: 'u1' } items from.
+// A quick lesson (lesson standard section 19): one meet card and one check for each kind, three exceptions, one look-alike
+// card, one worked problem and a short drill.
 // Cards live in u1.cards-*.js, cases in u1.cases-*.js. Text fields never retype key wording; they use tokens:
 // {q:M1} {a:M1.option} {when:M1.option} {plain:option} {needs:option} {t:term} {test:ledgerId} {cue:M1}.
 
 FC.unit('math', 'u1', {
   kind: 'C',
-  rev: 3,
+  rev: 4,
   standard: 1,
   status: 'draft',        // 'live' only after the cold read in build.signoff
   tag: 'One',
@@ -19,10 +21,10 @@ FC.unit('math', 'u1', {
   assumes: [],            // the first unit of the subject
 
   // THE LOOK-ALIKE LEDGER. In a gate unit it pairs families. The five pairs below are the ones a beginner confuses.
-  // Each is written once and used six ways: the look-alike card, its side-by-side table, the list on the question card,
-  // the feedback when one is picked for the other, the grouping of drill items, and what returns together later.
-  // Four pairs are taught by a look-alike card; unknown~growth, unknown~shape and growth~whole also have an exception
-  // card each, and the key's three tie-breaks are taught there (unknown~growth, unknown~shape, growth~whole).
+  // Each is written once and used several ways: the look-alike or exception card, its side-by-side table, the list on the
+  // question card, the feedback when one is picked for the other, and what returns together later.
+  // whole~chance is taught by a look-alike card; unknown~growth, growth~whole and unknown~shape by an exception card each
+  // (the key's three tie-breaks); unknown~chance on the question card (taughtIn).
   // test is a question to put to a problem, with no name in it.
   ledger: [
     { id: 'whole~chance', pair: ['whole', 'chance'], step: 'M1',
@@ -41,63 +43,47 @@ FC.unit('math', 'u1', {
       shared: 'Both can run over days or hours, and both can repeat the same step again and again.',
       rule: 'In {a:M1.growth} one amount is followed over time, and the question is about the amount at a given time or the time it takes to reach a target. In {a:M1.whole} the numbers are counts that divide or repeat, and the question is how they fit together: the part that remains, when two repeats coincide, or the point a count reaches on a loop of days or hours.',
       test: 'Is the question about how an amount changes as time passes? Or is it about how counts fit together, such as a day of the week, what is left over, or when two repeats meet?' },
-    { id: 'unknown~chance', pair: ['unknown', 'chance'], step: 'M1',
+    { id: 'unknown~chance', pair: ['unknown', 'chance'], step: 'M1', taughtIn: 'q-kind',
       shared: 'Both can ask “how many”, and both can give numbers about two sorts of the same thing.',
       rule: 'In {a:M1.unknown} the problem hides numbers that its facts fix: there is exactly one answer, and it has to fit. In {a:M1.chance} the problem asks about the results of a choice, how many different results there are or how likely one is, and nothing has to fit a result.',
       test: 'Does the problem hide numbers that its facts fix, so that exactly one answer fits? Or does it ask how many different results a choice has, or how likely one is?' }
   ],
 
   // Parts are stopping points: each ends on a screen that says where the next one starts.
-  // The first five parts follow the five answers of the key's first question, in the key's order (A13).
   // The part with drill: true is the last; its close cards come after the drill.
   parts: [
-    { id: 'p1', title: 'The first kind: how whole numbers split',
-      cards: ['orient-kind', 'meet-whole', 'again-whole', 'lens-kind', 'portrait-whole', 'check-whole'] },
-    { id: 'p2', title: 'The second kind: a number you are not told',
-      cards: ['term-formula', 'meet-unknown', 'again-unknown', 'portrait-unknown', 'check-unknown'] },
-    { id: 'p3', title: 'The third kind: an amount followed over time',
-      cards: ['meet-growth', 'again-growth', 'portrait-growth', 'check-growth', 'look-unknown-growth', 'exc-hourly', 'exc-cyclist',
-              'look-growth-whole', 'exc-tablets'] },
-    { id: 'p4', title: 'The fourth kind: counting ways, and chance',
-      cards: ['meet-chance', 'again-chance', 'portrait-chance', 'check-chance', 'look-whole-chance', 'look-unknown-chance'] },
-    { id: 'p5', title: 'The fifth kind: shapes',
-      cards: ['term-righttriangle', 'meet-shape', 'again-shape', 'portrait-shape', 'check-shape', 'look-unknown-shape', 'exc-model'] },
-    { id: 'p6', title: 'The first question, then the drill',
-      cards: ['q-kind', 'check-kind', 'refute-howmany', 'refute-numbers', 'worked-trio', 'worked-bed'], drill: true, close: ['recap-kind', 'transfer-kind'] }
+    { id: 'p1', title: 'The first three kinds: whole numbers, a number you are not told, an amount over time',
+      cards: ['orient-kind', 'meet-whole', 'check-whole', 'term-formula', 'meet-unknown', 'check-unknown',
+              'meet-growth', 'check-growth', 'exc-hourly', 'exc-tablets'] },
+    { id: 'p2', title: 'The other two kinds: counting ways and chance, and shapes',
+      cards: ['meet-chance', 'check-chance', 'look-whole-chance', 'term-righttriangle', 'meet-shape', 'check-shape', 'exc-model', 'q-kind'] },
+    { id: 'p3', title: 'One whole problem, then the drill',
+      cards: ['worked-bed'], drill: true, close: ['recap-kind'] }
   ],
 
-  // The drill of a gate unit has three stages (A15): piece, route, claim. There is no name stage and no finish stage,
+  // The drill of a gate unit has up to three stages (A15): piece, route, claim. There is no name stage and no finish stage,
   // because the route is one question long and its answer is the name. Items are authored in groups of look-alikes.
   drill: {
     key: 'u1',
-    add: 'Some of these problems tell a story that points the wrong way, on purpose: a ferry, a bank or a hospital in the story says nothing about the kind. Every one of them is decided by what it asks you to work out, and by nothing else.',
+    add: 'Some of these problems tell a story that points the wrong way, on purpose: a ferry or a bank in the story says nothing about the kind. Every one of them is decided by what it asks you to work out, and by nothing else.',
     rungs: [
       { ask: 'piece',
         items: [[{ case: 'gt-stamps', step: 'M1' }, { case: 'gt-breakfast', step: 'M1' }],
                 [{ case: 'gt-chain', step: 'M1' }, { case: 'gt-jar', step: 'M1' }],
                 [{ case: 'gt-gatebrace', step: 'M1' }, { case: 'gt-coins', step: 'M1' }],
-                [{ case: 'gt-drip', step: 'M1' }, { case: 'gt-busstram', step: 'M1' }],
-                [{ case: 'gt-allergy', step: 'M1' }, { case: 'gt-cloths', step: 'M1' }],
-                [{ tell: 'whole~chance' }, { tell: 'unknown~growth' }, { tell: 'unknown~shape' }, { tell: 'growth~whole' }, { tell: 'unknown~chance' }],
-                ['gt-rev-whole', 'gt-rev-unknown', 'gt-rev-growth', 'gt-rev-chance', 'gt-rev-shape']] },
+                [{ tell: 'whole~chance' }, { tell: 'unknown~growth' }, { tell: 'unknown~shape' }, { tell: 'growth~whole' }]] },
       { ask: 'route',
         items: [['gt-beadbags', 'gt-band'],
-                ['gt-smoothie', 'gt-laptop', 'gt-sail'],
+                ['gt-smoothie', 'gt-sail'],
                 ['gt-passport', 'gt-runner', 'gt-noshow'],
-                ['gt-ham', 'gt-duck'],
-                ['gt-groomer', 'gt-ripple'],
-                ['gt-planhouse', 'gt-ferry'],
-                ['gt-tapclock', 'gt-lamps']] },
+                ['gt-groomer', 'gt-tapclock'],
+                ['gt-planhouse', 'gt-ferry']] },
       { ask: 'claim', demo: 'gt-claim-demo',
-        items: [['gt-claim-howmany'], ['gt-claim-numbers'], ['gt-claim-hourly'], ['gt-claim-model']] }
+        items: [['gt-claim-howmany'], ['gt-claim-numbers']] }
     ],
-    // Fresh problems for later days: three for each kind, one for each of its scheduled returns (E9). A kind that is due
-    // comes back as a problem the learner has not seen, beside a problem of the kind they most often take it for.
-    returns: ['gt-ret-albums', 'gt-ret-pencils', 'gt-ret-nurses',
-              'gt-ret-data', 'gt-ret-printer', 'gt-ret-wheels',
-              'gt-ret-well', 'gt-ret-algae', 'gt-ret-buspass',
-              'gt-ret-cafeteria', 'gt-ret-medals', 'gt-ret-alarms',
-              'gt-ret-ship', 'gt-ret-zipwire', 'gt-ret-statue']
+    // Fresh problems for later days: one for each kind (E9). A kind that is due comes back as a problem the learner has
+    // not seen, beside a problem of the kind they most often take it for.
+    returns: ['gt-ret-nurses', 'gt-ret-data', 'gt-ret-well', 'gt-ret-alarms', 'gt-ret-statue']
   },
 
   // Build notes: not shown to the learner, and left out of the fingerprint. The validator reads them.
@@ -105,7 +91,8 @@ FC.unit('math', 'u1', {
     history: [
       { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the gate unit of Basic Math, replacing the old Unit One (nine cards and the sorting drill). Not yet deployed, so later edits before the first deploy stay revision 1. The five kinds are taught one at a time; the three tie-breaks of the first question are taught as exceptions; nothing is solved.' },
       { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' },
-      { rev: 3, date: '2026-10-05', change: 'American English: US words and spelling.' }
+      { rev: 3, date: '2026-10-05', change: 'American English: US words and spelling.' },
+      { rev: 4, date: '2026-10-05', change: 'Trimmed to a quick lesson: one case per name, the essentials, a short drill.' }
     ],
     // What the K2 rewrite changed in the gate, and why (from docs/rebuild/math-plan.md, section (a)).
     keyChanges: [
@@ -143,14 +130,7 @@ FC.unit('math', 'u1', {
         now: 'a kind of problem, its procedure, a missing number; "step" only for a step of the working; an avoid list in the key',
         why: 'K9 and the audit’s vocabulary map (C-5, U1-6): one word for one thing.' }
     ],
-    wrongIdeas: [
-      { card: 'refute-numbers', about: 'M1',
-        source: { kind: 'app-data', verified: false,
-          ref: 'docs/comprehension-audit/math.md (U1-3, U1-8): the old unit sorted problems by the cue words and numbers of school chapter headings, and the old drill rewarded it. Taken from the audit’s learner simulation; to be confirmed against what cold readers do with the drill.' } },
-      { card: 'refute-howmany', about: 'M1',
-        source: { kind: 'app-data', verified: false,
-          ref: 'docs/comprehension-audit/math.md (U1-4): "how many" read as a signal for counting, from the old bake-sale item. Taken from the audit’s learner simulation; to be confirmed against what cold readers do with the drill.' } }
-    ],
+    wrongIdeas: [],       // the two wrong-idea cards were cut in the quick lesson; the ideas live on in the drill's claims and the recap
     signoff: {
       coverage: null,
       coldRead: null

@@ -1,46 +1,24 @@
-// Scams, Unit One: fresh cases held back for later days, part three: a message that asks nothing (four, one for each
-// scheduled return), and the baseline check (lesson standard E21).
+// Scams, Unit One: fresh cases held back for later days, part three: a message that asks nothing (two), and the
+// baseline check (lesson standard E21).
 // The baseline is six cases asked once, before this unit, as "real or not, and why?": three where nothing is wrong and
 // three scams. They are in no card, check or drill (use 'baseline'), they are listed in subject.baseline, and they carry
 // the marked words and the reason for the first question, which is the only thing shown back when the unit is finished.
-// Field guide: see u1.cases-drill-1.js.
 
 FC.cases('scams', 'u1', [
-
-  /* ---------- a message that asks nothing ---------- */
   { id: 'g-ret-water', use: 'return', tier: 'clean', setting: 'home', topic: 'planned work on the water supply',
     text: "Hartley Water texts Beth: 'Planned work on your street on Tuesday between 8am and noon means your water may be off.'",
     route: { D1: ['nothing'] },
     cues: { D1: 'Planned work on your street on Tuesday between 8am and noon means your water may be off' },
     reason: { D1: 'The text only tells Beth what will happen: {cue:D1}. It asks her for nothing and gives her no link, number or app.' },
-    not: { outcome: 'access', why: 'It does not ask her to sign in, to give a code or to press anything. It gives her news about the water.' },
-    wouldChange: 'If the text had said "sign in at this link to register for a free water bottle", she would be asked to sign in, and it would be {a:D1.access}.' },
-
-  { id: 'g-ret-pool', use: 'return', tier: 'clean', setting: 'leisure', topic: 'a pool closed for cleaning',
-    text: "The recreation center emails its members: 'The pool is closed on Monday for cleaning. It reopens at 7am on Tuesday.'",
-    route: { D1: ['nothing'] },
-    cues: { D1: 'The pool is closed on Monday for cleaning. It reopens at 7am on Tuesday' },
-    reason: { D1: 'The email only tells the members when the pool is shut and when it opens again: {cue:D1}. It asks for nothing and gives them no link, number or app.' },
-    not: { outcome: 'details', why: 'It does not ask any member to confirm a booking or to tell the center anything about themselves. It only gives news.' },
-    wouldChange: 'If the email had asked each member to reply with their date of birth to keep their place, it would be {a:D1.details}.' },
+    not: { outcome: 'access', why: 'It does not ask her to sign in, to give a code or to press anything. It gives her news about the water.' } },
 
   { id: 'g-ret-pension', use: 'return', tier: 'varied', setting: 'money', topic: 'a retirement plan statement in the online account',
     text: "A retirement plan provider texts Rachel: 'Your annual statement is available in your online account.'",
     route: { D1: ['nothing'] },
     cues: { D1: 'Your annual statement is available in your online account' },
     reason: { D1: 'The text tells Rachel that her statement is ready and where it is: {cue:D1}. The online account is one she already has, so nothing new is offered, and nothing is asked.' },
-    not: { outcome: 'access', why: 'Reading the statement would mean signing in to the account, but the text does not ask her to. It only says where the statement is.' },
-    wouldChange: 'If the text had said "sign in at this link to see your statement", it would ask for a sign-in, and it would be {a:D1.access}.' },
+    not: { outcome: 'access', why: 'Reading the statement would mean signing in to the account, but the text does not ask her to. It only says where the statement is.' } },
 
-  { id: 'g-ret-results', use: 'return', tier: 'varied', setting: 'health', topic: 'test results ready for an appointment',
-    text: "Dr. Okoye's office texts Ife: 'Your test results are back. Dr. Okoye will go through them with you at your appointment on Thursday at 9.'",
-    route: { D1: ['nothing'] },
-    cues: { D1: 'Your test results are back. Dr. Okoye will go through them with you at your appointment on Thursday at 9' },
-    reason: { D1: 'The text tells Ife that her results are back and when they will be discussed: {cue:D1}. It asks her for nothing and gives her no link, number or app.' },
-    not: { outcome: 'details', why: 'It does not ask her to confirm her date of birth or anything else about herself before the appointment. It only gives news.' },
-    wouldChange: 'If the text had asked her to reply with her date of birth to receive the results, it would be {a:D1.details}.' },
-
-  /* ---------- the baseline check: six cases, three where nothing is wrong ---------- */
   { id: 'g-base-signin', use: 'baseline', tier: 'clean', setting: 'money', topic: 'a new sign-in notice in the banking app',
     text: "Aisha opens her banking app and finds a notice in its own message center: 'A new device, an Orbit phone, signed in to your account at 2:02 p.m. today. If this was you, you do not need to do anything.'",
     route: { D1: ['nothing'] },

@@ -1,126 +1,111 @@
-// Civics, Unit Ten, part three: the Great Depression and the New Deal, the Cold War, and the civil rights movement.
-// In each group the answers on the facts card are all names, so an answer cannot be guessed from its shape.
+// Civics, Unit Ten, part three: who won the vote, the flag, the names a newcomer is expected to know, and the recap.
 
 FC.cards('civics', 'u10', [
 
-  /* ---------- group five: hard times and the answer to them ---------- */
-  { id: 'con-hard', kind: 'concept',
-    h: 'Hard times, and what was done about them',
-    link: 'The line gave the year the Depression began. This group says what it was, what the President did about it, and what it left behind.',
-    case: 'c10-hard',
+  /* ---------- who won the vote, and how long it took ---------- */
+  { id: 'con-who', kind: 'concept',
+    h: 'Who won the vote, and how long it took',
+    link: 'A widening of the vote did not happen by itself.',
+    case: 'c10-who',
     plain: [
-      'Ines’s card is one small piece of a very large change, and the change began with a crash. In 1929 the Great Depression began: banks failed, and about a quarter of workers lost their jobs. That is one worker in four.',
-      'The President’s answer was a set of new programs called the New Deal, and the President was Franklin D. Roosevelt. Social Security, the program named on Ines’s card, is the example that this course holds. New programs such as Social Security were run by new federal offices, and an office of that kind is called an {t:agency}.',
-      'The result was that the federal government took a far larger role in daily life. The name for what these new offices did is {o:execute}: putting laws into practice, at a scale that the founders never saw. The four facts below are the trouble, the answer, the President and the example.'
+      'At the founding, the people who could mostly vote were white men who owned property. The campaign for women’s right to vote began in 1848 and was led by Susan B. Anthony, Elizabeth Cady Stanton and others, most of whom did not live to see it succeed in 1920.',
+      'A right written down is not always a right made real. The Fifteenth Amendment of 1870 stayed in the Constitution, but for most Black Southerners it was not made real until the Voting Rights Act of 1965: ninety-five years. It took Congress and federal officials to close the gap.'
     ] },
 
-  { id: 'facts-hard', kind: 'facts',
-    h: 'The Depression and the New Deal',
-    link: 'These are the four names of the group, each with how it fits the idea of hard times and what was done about them.',
-    concept: 'con-hard',
+  { id: 'facts-who', kind: 'facts',
+    h: 'Three facts about the long struggle for the vote',
+    link: 'The starting point, the campaigners and the length of the wait.',
+    concept: 'con-who',
     rows: [
-      { id: 'hd-depression', q: 'What is the long stretch that began in 1929, when banks failed and about a quarter of workers lost their jobs, called?', a: 'The Great Depression',
-        relates: 'It is the trouble. Everything else in this group is what was done about it, who did it, and an example of what it left behind.' },
-      { id: 'hd-newdeal', q: 'What is the President’s set of new programs, begun in answer to the hard times of the 1930s, called?', a: 'The New Deal',
-        relates: 'It is the answer to the trouble, and not the trouble itself. Its programs were run by new federal offices, and the federal government took a far larger role in daily life.' },
-      { id: 'hd-roosevelt', q: 'Which President began the programs that answered the hard times of the 1930s?', a: 'Franklin D. Roosevelt',
-        relates: 'The New Deal is his: it was President Franklin D. Roosevelt’s answer to the Depression.' },
-      { id: 'hd-security', q: 'Which program, one of the new ones begun in answer to the hard times of the 1930s, is the example to remember?', a: 'Social Security',
-        relates: 'It is the program named on the card that Ines found. It was run by a new federal office, one of the new offices that the New Deal added to the federal government.' }
+      { id: 'vw-founding', q: 'At the founding, who could mostly vote?', a: 'White men who owned property',
+        relates: 'It left out many people. Each widening came later and was won against opposition.' },
+      { id: 'vw-campaign', q: 'Who led the campaign for women’s right to vote, which began in 1848?', a: 'Susan B. Anthony and Elizabeth Cady Stanton, among others',
+        relates: 'Most of its leaders did not live to see it succeed with the Nineteenth Amendment, in 1920.' },
+      { id: 'vg-gap', q: 'How many years passed between the Fifteenth Amendment of 1870 and the Voting Rights Act of 1965?', a: 'Ninety-five years',
+        relates: 'It is 1965 minus 1870. For most Black Southerners, a right written into the Constitution was not made real in all that time.' }
     ] },
 
-  { id: 'chk-hd-depression', kind: 'check', after: 'facts-hard', ask: { type: 'fact', row: 'hd-depression' } },
-  { id: 'chk-hd-newdeal', kind: 'check', after: 'facts-hard', ask: { type: 'fact', row: 'hd-newdeal' } },
-  { id: 'chk-hd-roosevelt', kind: 'check', after: 'facts-hard', ask: { type: 'fact', row: 'hd-roosevelt' } },
-  { id: 'chk-hd-security', kind: 'check', after: 'facts-hard', ask: { type: 'fact', row: 'hd-security' } },
+  { id: 'chk-vw-founding', kind: 'check', after: 'facts-who', ask: { type: 'fact', row: 'vw-founding' } },
+  { id: 'chk-vw-campaign', kind: 'check', after: 'facts-who', ask: { type: 'fact', row: 'vw-campaign' } },
+  { id: 'chk-vg-gap', kind: 'check', after: 'facts-who', ask: { type: 'fact', row: 'vg-gap' } },
 
-  { id: 'look-hard', kind: 'lookalike', ledger: 'hd-depression~hd-newdeal',
-    h: 'The trouble and the answer to it',
-    link: 'Two of the four names are for the same years: one for the trouble, and one for the answer. They get swapped, so they go side by side.',
-    facts: ['hd-depression', 'hd-newdeal'],
-    instruction: 'Compare what each name is for: the trouble itself, or what was done about it.',
-    prompt: { kind: 'which', answer: 'hd-newdeal' },
+  /* ---------- the flag ---------- */
+  { id: 'con-flag', kind: 'concept',
+    h: 'What the flag and July 4 stand for',
+    link: 'Plain answers to the questions a child asks at a parade.',
+    case: 'c10-flag',
+    plain: [
+      'The flag has 13 stripes and 50 stars. The stripes stand for the original colonies, and the stars stand for the states, one star for each, so there are 50 states. People swap the numbers: 13 is how the country began, and 50 is what it is made of now.',
+      'Independence Day is July 4. It marks the day that the Declaration of Independence was adopted.'
+    ] },
+
+  { id: 'facts-flag', kind: 'facts',
+    h: 'The flag, July 4 and the states',
+    link: 'What each part of the flag stands for, and what July 4 marks.',
+    concept: 'con-flag',
+    rows: [
+      { id: 'sy-stripes', q: 'What do the 13 stripes on the flag stand for?', a: 'The original colonies',
+        relates: 'One stripe for each of the original colonies. They count how the country began.' },
+      { id: 'sy-stars', q: 'What do the 50 stars on the flag stand for?', a: 'The states',
+        relates: 'One star for each state. They count what the country is made of now.' },
+      { id: 'sy-july', q: 'What does Independence Day, July 4, mark?', a: 'The day the Declaration of Independence was adopted',
+        relates: 'The Declaration explained why the colonies broke from Britain.' },
+      { id: 'st-count', q: 'How many states are there?', a: 'Fifty states',
+        relates: 'One star on the flag for each.' }
+    ] },
+
+  { id: 'chk-sy-stripes', kind: 'check', after: 'facts-flag', ask: { type: 'fact', row: 'sy-stripes' } },
+  { id: 'chk-sy-stars', kind: 'check', after: 'facts-flag', ask: { type: 'fact', row: 'sy-stars' } },
+  { id: 'chk-sy-july', kind: 'check', after: 'facts-flag', ask: { type: 'fact', row: 'sy-july' } },
+  { id: 'chk-st-count', kind: 'check', after: 'facts-flag', ask: { type: 'fact', row: 'st-count' } },
+
+  { id: 'look-flag', kind: 'lookalike', ledger: 'sy-stripes~sy-stars',
+    h: 'Thirteen stripes and fifty stars',
+    link: 'The two counts on the flag get swapped.',
+    facts: ['sy-stripes', 'sy-stars'],
+    instruction: 'Compare what each count is of: the country’s beginning, or what it is now.',
+    prompt: { kind: 'which', answer: 'sy-stripes' },
     difference: [
-      'Fact A is {f:hd-depression}. It is the trouble: banks failing, and about a quarter of workers losing their jobs.',
-      'Fact B is {f:hd-newdeal}. It is the answer: new programs, begun by the President, run by new federal offices.',
-      'If the story is about banks that failed and people who lost work, it is the trouble. If it is about programs such as Social Security that were started in answer to it, it is the answer.'
+      'Fact A is the stripes: {f:sy-stripes}. There are 13, one for each of the first colonies.',
+      'Fact B is the stars: {f:sy-stars}. There are 50, one for each state there is now.'
     ] },
 
-  /* ---------- group six: the Cold War ---------- */
-  { id: 'con-cold', kind: 'concept',
-    h: 'A long standoff, and the wars in it',
-    link: 'The line gave the two years that the Cold War ran between. This group says what it was, who was on the other side, and what it shaped.',
-    case: 'c10-cold',
+  /* ---------- four names ---------- */
+  { id: 'con-names', kind: 'concept',
+    h: 'Four names a newcomer is expected to know',
+    link: 'The capital, the anthem, the two major parties and the statue.',
+    case: 'c10-names',
     plain: [
-      'The man on the bench gave Lena the right idea: the two names on the stone belong to one long standoff, which is a contest in which neither side gives way. It was between the United States and the Soviet Union, and it ran from about 1947 to 1991, after the Second World War. It is called the Cold War.',
-      'It included wars in Korea and Vietnam, and it shaped American foreign policy for decades. Foreign policy means what a government does and says in its dealings with other countries.',
-      'Notice what the facts below do not hold: how the standoff began, why each war was fought, or how the standoff ended. This course holds only what is written above, and so does this unit. The four facts below are its name, the other side, the wars and what it shaped.'
+      'There is nothing to work out in these: each one is a name, and it helps to attach each to where you meet it. The capital of the United States is Washington, D.C., in the news wherever the government is meant. The national anthem is The Star-Spangled Banner, sung before a game or on a holiday. The two major political parties are the Democratic Party and the Republican Party, at every election; “major” means the two big ones, not that there are no others. The Statue of Liberty was a gift from France.'
     ] },
 
-  { id: 'facts-cold', kind: 'facts',
-    h: 'The Cold War in four names',
-    link: 'These are the four names of the group, each with how it fits the idea of a long standoff.',
-    concept: 'con-cold',
+  { id: 'facts-names', kind: 'facts',
+    h: 'Four names',
+    link: 'The four names from Sofia’s questions.',
+    concept: 'con-names',
     rows: [
-      { id: 'cw-name', q: 'What is the long standoff of about 1947 to 1991 called?', a: 'The Cold War',
-        relates: 'It came after the Second World War, and it lasted about forty-four years. It is a standoff, which means that neither side gave way.' },
-      { id: 'cw-rival', q: 'The standoff was between the United States and which other country?', a: 'The Soviet Union',
-        relates: 'It is the other side of the standoff. The course holds this name and nothing more about it, so this is all the unit holds.' },
-      { id: 'cw-wars', q: 'Which two places had wars that were part of the standoff?', a: 'Korea and Vietnam',
-        relates: 'These are the two wars that this course names as part of the Cold War.' },
-      { id: 'cw-policy', q: 'What did the standoff shape for decades?', a: 'American foreign policy',
-        relates: 'Foreign policy is what a government does and says in its dealings with other countries. The standoff with the Soviet Union shaped it for decades.' }
+      { id: 'nm-capital', q: 'What is the capital of the United States?', a: 'Washington, D.C.',
+        relates: 'You meet it in the news, wherever the government of the whole country is meant.' },
+      { id: 'nm-anthem', q: 'What is the national anthem called?', a: 'The Star-Spangled Banner',
+        relates: 'You meet it when a choir or a crowd sings before a game or on a holiday.' },
+      { id: 'nm-parties', q: 'Which are the two major political parties?', a: 'The Democratic Party and the Republican Party',
+        relates: 'You meet them at every election.' },
+      { id: 'nm-france', q: 'Which country gave the Statue of Liberty to the United States?', a: 'France',
+        relates: 'A large copper statue in New York Harbor, dedicated in 1886.' }
     ] },
 
-  { id: 'chk-cw-name', kind: 'check', after: 'facts-cold', ask: { type: 'fact', row: 'cw-name' } },
-  { id: 'chk-cw-rival', kind: 'check', after: 'facts-cold', ask: { type: 'fact', row: 'cw-rival' } },
-  { id: 'chk-cw-wars', kind: 'check', after: 'facts-cold', ask: { type: 'fact', row: 'cw-wars' } },
-  { id: 'chk-cw-policy', kind: 'check', after: 'facts-cold', ask: { type: 'fact', row: 'cw-policy' } },
+  { id: 'chk-nm-capital', kind: 'check', after: 'facts-names', ask: { type: 'fact', row: 'nm-capital' } },
+  { id: 'chk-nm-anthem', kind: 'check', after: 'facts-names', ask: { type: 'fact', row: 'nm-anthem' } },
+  { id: 'chk-nm-parties', kind: 'check', after: 'facts-names', ask: { type: 'fact', row: 'nm-parties' } },
+  { id: 'chk-nm-france', kind: 'check', after: 'facts-names', ask: { type: 'fact', row: 'nm-france' } },
 
-  /* ---------- group seven: the civil rights movement ---------- */
-  { id: 'con-civil', kind: 'concept',
-    h: 'The civil rights movement: a court, a law and many people',
-    link: 'The Cold War was about other countries. This group is about the country at home: the movement, from 1954 to 1965, to end segregation.',
-    case: 'c10-civil',
-    plain: [
-      'Amir’s daughter has the three parts of the answer in her question already: a court, a law and people. They are the three landmarks of the civil rights movement, which ran from 1954 to 1965 and pushed to end segregation.',
-      'Segregation means keeping people of different races apart, as when Black and white children were kept in separate public schools. The movement pushed to end that, and to end discrimination, which means treating people worse because of their race.',
-      'The court was the Supreme Court. In 1954 it ruled, in a case called Brown v. Board of Education, that separate public schools for Black and white children are unequal. That is called {o:review}: a court checking a law against the Constitution. The people included Martin Luther King Jr. and thousands of others, who led marches and boycotts. A boycott is a refusal, by a group, to use or buy something, in order to press for a change. The law was the Civil Rights Act of 1964, passed by Congress, which outlaws segregation and discrimination. And in March 1965 marchers set out from Selma, Alabama, toward the state capital to demand the right to vote. The Voting Rights Act, which Congress passed months later, belongs to the groups on the vote, a little further on.',
-      'The five facts below are the ruling, the leader, the law, the town and what the movement pushed to end.'
-    ] },
-
-  { id: 'facts-civil', kind: 'facts',
-    h: 'Five names of the civil rights movement',
-    link: 'These are the five names of the group, each with how it fits the movement to end segregation.',
-    concept: 'con-civil',
-    rows: [
-      { id: 'cr-brown', q: 'Which 1954 ruling of the Supreme Court said that separate public schools for Black and white children are unequal?', a: 'Brown v. Board of Education',
-        relates: 'A court was asked about a law and checked it against the Constitution, which is called {o:review}. It is the court landmark of the movement, ten years before the law of 1964.' },
-      { id: 'cr-king', q: 'Which leader, together with thousands of others, led the marches and boycotts of the movement?', a: 'Martin Luther King Jr.',
-        relates: 'The movement was the work of many people, and he is the leader that this course names. Marches and boycotts are two of the ways in which the movement pushed.' },
-      { id: 'cr-act', q: 'Which 1964 law, passed by Congress, outlawed discrimination?', a: 'The Civil Rights Act of 1964',
-        relates: 'It outlaws segregation and discrimination. It is Congress writing the rules, which is a different job from the court’s ruling in 1954.' },
-      { id: 'cr-selma', q: 'From which Alabama town did marchers set out in March 1965 to demand the right to vote?', a: 'Selma, Alabama',
-        relates: 'The marchers set out toward the state capital. Months later Congress passed the Voting Rights Act, and federal examiners began registering Black voters across the South.' },
-      { id: 'cr-end', q: 'What did the civil rights movement push to end?', a: 'Segregation',
-        relates: 'It is what the court ruled against in the schools, what the 1964 law outlawed, and what the marches pressed to end.' }
-    ] },
-
-  { id: 'chk-cr-brown', kind: 'check', after: 'facts-civil', ask: { type: 'fact', row: 'cr-brown' } },
-  { id: 'chk-cr-king', kind: 'check', after: 'facts-civil', ask: { type: 'fact', row: 'cr-king' } },
-  { id: 'chk-cr-act', kind: 'check', after: 'facts-civil', ask: { type: 'fact', row: 'cr-act' } },
-  { id: 'chk-cr-selma', kind: 'check', after: 'facts-civil', ask: { type: 'fact', row: 'cr-selma' } },
-  { id: 'chk-cr-end', kind: 'check', after: 'facts-civil', ask: { type: 'fact', row: 'cr-end' } },
-
-  { id: 'look-civil', kind: 'lookalike', ledger: 'cr-brown~cr-act',
-    h: 'A court’s ruling and a law of Congress',
-    link: 'Two of the five names are landmarks aimed at the same thing: one is a ruling of 1954, the other a law of 1964. They get swapped, so they go side by side.',
-    facts: ['cr-brown', 'cr-act'],
-    instruction: 'Compare who acted: a court that ruled, or lawmakers who passed a law.',
-    prompt: { kind: 'which', answer: 'cr-act' },
-    difference: [
-      'Fact A is {f:cr-brown}. It is a ruling by the Supreme Court in 1954, in answer to a case about separate public schools.',
-      'Fact B is {f:cr-act}. It is a law passed by Congress in 1964. It outlaws segregation and discrimination.',
-      'Both are landmarks of the same movement, and both are against segregation. What separates them is who acted, and when: a court, in 1954, or Congress, in 1964.'
+  /* ---------- the close ---------- */
+  { id: 'recap-since', kind: 'recap',
+    h: 'What to carry away',
+    link: 'The facts of the unit, and what to carry.',
+    carry: [
+      'Hang each fact on a year and a name together. A date with no event is as hard to hold as an event with no date.',
+      'A right written down is not always a right made real. The Fifteenth Amendment of 1870 and the Voting Rights Act of 1965 are ninety-five years apart.',
+      'A court’s ruling and a law of Congress are different jobs. Brown v. Board of Education in 1954 was a ruling, and the Civil Rights Act of 1964 was a law.'
     ] }
 ]);

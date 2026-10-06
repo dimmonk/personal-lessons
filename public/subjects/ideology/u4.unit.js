@@ -5,7 +5,7 @@
 
 FC.unit('ideology', 'u4', {
   kind: 'C',              // C classification, F facts, P procedure
-  rev: 3,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
+  rev: 4,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
   standard: 1,            // lesson-standard version this unit was built to
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author). The app labels a draft as a draft.
   tag: 'Four',
@@ -40,50 +40,35 @@ FC.unit('ideology', 'u4', {
   ],
 
   // Parts are stopping points: each ends on a screen that says where the next one starts. The part with drill: true is the last;
-  // its close cards come after the drill. One question, two names: the parts follow what the text asks for (what is there to be kept,
-  // what has gone to be brought back), then the names these two are mistaken for.
+  // its close cards come after the drill.
   parts: [
-    { id: 'p1', title: 'Keeping what has been handed down',
-      cards: ['orient-ways', 'meet-conserv', 'again-conserv', 'lens-ways', 'portrait-conserv', 'check-conserv'] },
-    { id: 'p2', title: 'Bringing back what has gone, and the question',
-      cards: ['meet-react', 'again-react', 'portrait-react', 'check-react', 'look-conserv-react', 'refute-values', 'q-ways', 'check-ways'] },
-    { id: 'p3', title: 'The names these two are mistaken for',
-      cards: ['look-conserv-nationalism', 'look-react-fasc', 'exc-fasc-react', 'exc-class-conserv'] },
-    { id: 'p4', title: 'Two whole cases, then the drill',
-      cards: ['worked-burial', 'worked-hospice'], drill: true, close: ['recap-ways', 'transfer-ways'] }
+    { id: 'p1', title: 'Keeping what has been handed down, and bringing back what has gone',
+      cards: ['orient-ways', 'meet-conserv', 'check-conserv', 'meet-react', 'check-react',
+              'look-conserv-react', 'q-ways', 'check-ways'] },
+    { id: 'p2', title: 'The names these two are mistaken for, then the drill',
+      cards: ['look-conserv-nationalism', 'exc-fasc-react', 'exc-class-conserv', 'worked-hospice'],
+      drill: true, close: ['recap-ways'] }
   ],
 
-  // The drill is a ramp of five stages (lesson standard A10). The app owns the wording of every stage instruction.
+  // The drill: the stages that carry the skill. The app owns the wording of every stage instruction.
   // Items are authored in groups: a group is cases that share ledger entries and one tier. The app shuffles the groups inside a tier
   // band (clean, then varied, then misleading) and shuffles inside each group. Every case is new.
   drill: {
     key: 'u4',            // the old quick-drill totals for this unit were stored under pl:ideology:stats:u4 (frozen; see E8)
-    add: 'Some of these texts are sad about something that has gone, and some are calm and patient while asking for an order to be put back. That is on purpose. What a text asks for decides the name, and how it sounds does not.',
     rungs: [
-      { ask: 'name',
-        items: [['i4-n-bells', 'i4-n-bench'], ['i4-n-lunch', 'i4-n-charity']] },
       { ask: 'piece',
         items: [[{ case: 'i4-p-choir', step: 'T1' }, { case: 'i4-p-seats', step: 'T1' }],
-                [{ case: 'i4-p-allot', step: 'T1' }, { case: 'i4-p-farms', step: 'T1' }],
                 [{ tell: 'conserv~react' }, { tell: 'conserv~nationalism' }],
-                [{ tell: 'react~fasc' }, { tell: 'conserv~socdem' }],
-                ['i4-rev-conserv', 'i4-rev-react'],
-                [{ earlier: 'u1' }, { earlier: 'u1' }]] },
-      { ask: 'finish',
-        items: [['i4-f-nets', 'i4-f-academy'], ['i4-f-pilgrim', 'i4-f-fast']] },
+                [{ tell: 'react~fasc' }, { tell: 'conserv~socdem' }]] },
       { ask: 'route',
         items: [['i4-r-bake', 'i4-r-yard'],
-                ['i4-r-border', 'i4-r-rents'],
-                ['i4-r-flag', 'i4-r-banner'],
                 ['i4-r-orchard', 'i4-r-calm'],
-                [{ earlier: 'u1' }, { earlier: 'u1' }]] },
-      { ask: 'claim', demo: 'i4-claim-demo',
-        items: [['i4-claim-values'], ['i4-claim-sad'], ['i4-claim-afraid'], ['i4-claim-quarry']] }
+                ['i4-r-flag', 'i4-r-banner'],
+                [{ earlier: 'u1' }, { earlier: 'u1' }]] }
     ],
-    // Fresh cases for later days: three for each name, one for each of its scheduled returns (E9).
-    // A due name returns as a case the learner has not seen, beside a case of the name they most often take it for.
-    returns: ['i4-ret-founders', 'i4-ret-stalls', 'i4-ret-funeral',
-              'i4-ret-wardens', 'i4-ret-barns', 'i4-ret-bells']
+    // Fresh cases for later days: one for each name (E9). A due name returns as a case the learner has not seen,
+    // beside a case of the name they most often take it for.
+    returns: ['i4-ret-founders', 'i4-ret-wardens']
   },
 
   // Build notes: not shown to the learner, and left out of the fingerprint. The validator reads them.
@@ -92,7 +77,8 @@ FC.unit('ideology', 'u4', {
     history: [
       { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the old-ways branch of the key, taught as two names and one question, with the names learners mistake them for (from the nation and working-people branches) as look-alike pairs. Not yet deployed, so later edits before the first deploy stay revision 1.' },
       { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' },
-      { rev: 3, date: '2026-10-05', change: 'American English: dollars, US words and spelling.' }
+      { rev: 3, date: '2026-10-05', change: 'American English: dollars, US words and spelling.' },
+      { rev: 4, date: '2026-10-05', change: 'Trimmed to a quick lesson: one case per name, the essentials, a short drill.' }
     ],
     // What the K2 rewrite changed in the key for this branch, and why (docs/rebuild/ideology-plan.md, part a). The gate and its tie-breaks
     // are carried by Unit One.
@@ -107,11 +93,7 @@ FC.unit('ideology', 'u4', {
         now: 'same name; needs: an old order said to be wrongly torn down, and the text asking for it back',
         why: 'K2.7: one line that holds for every case the unit calls by this name. The old card’s remark that the word is an insult in everyday talk is now said on the meet card, where the name is given.' }
     ],
-    wrongIdeas: [
-      { card: 'refute-values', about: 'conserv',
-        source: { kind: 'app-data', verified: true,
-          ref: 'public/subjects/ideology/standard0.js, the old Reactionary conservatism card ("It is not ordinary conservatism, which prefers slow change and accepts elections and a free press") and docs/comprehension-audit/ideology.md item 9 (the old course gave this name only as a contrast and did not say the word is an insult in everyday talk). It shows that the old course already had to guard against running the two names together. Cold readers still have to say whether learners hold the idea.' } }
-    ],
+    wrongIdeas: [],
     signoff: {
       coverage: null,     // { date, by } once tests/validate-data.mjs passes on this unit in the app
       coldRead: null      // { rev, date, reader: 'novice' | 'near-novice', restated: true, drillAttempted: true, notes }

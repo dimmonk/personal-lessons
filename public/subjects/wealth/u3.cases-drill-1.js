@@ -1,69 +1,10 @@
-// Wealth Preservation, Unit Three: drill cases for the first two stages. None of these appears in a card.
-// Stage one: the key's answers are shown and the learner gives the name. Stage two: this unit's question alone, on a new case.
-// reason[STEP] is the reason tied to the marked words; it is shown after the answer, decisive sentence first. not names the most
-// tempting wrong name for this case and says why it fails. Every case carries its full route; a case asked only this unit's question
-// needs marked words and a reason for that question alone.
+// Wealth Preservation, Unit Three: drill cases. None of these appears in a card. A case asked only this unit's question needs marked words and a reason for that question alone. not names the most tempting wrong name for the case and says why it fails; wouldChange is kept only where it teaches something the cards did not.
+// Every case carries its full route (the first question, then this unit's one question). cues[STEP] is the exact phrase in the text
+// that decides that step; segments are the tappable pieces for "tap the words" prompts, and note is shown if that piece is tapped in error.
 
 FC.cases('wealth', 'u3', [
 
-  /* ---------- Stage one: the answers are shown, the learner gives the name ---------- */
-  { id: 'w3-n-div', use: 'drill', tier: 'clean', setting: 'home', topic: 'energy shares held for a brother',
-    text: "Marisol, 60, owns 3,000 shares in the energy company where her brother works, worth $350,000, which is most of the $430,000 she has. She has never worked there, and her broker says she may sell any or all of them whenever she likes.",
-    outcome: 'diversify', route: { D1: ['shock'], S1: ['freeheld'] },
-    cues: { S1: ['She has never worked there', 'her broker says she may sell any or all of them whenever she likes'] },
-    reason: { S1: 'Marisol is free to sell and takes no part in running the company: {cue:S1}. $350,000 out of $430,000 is 81%. That is how large {t:holding} can be.' },
-    not: { outcome: 'hedge', why: 'A rule that stopped her selling would make it the answer for shares that cannot be sold yet. Her broker says she may sell whenever she likes, so nothing stands in the way.' } },
-
-  { id: 'w3-n-hdg', use: 'drill', tier: 'clean', setting: 'work', topic: 'game studio signing shares',
-    text: "Aaron, 33, was given shares in the game studio where he works as part of a signing deal. They are worth $280,000 of the $310,000 he has. The studio’s rules say he may not sell any of them for the next four years.",
-    outcome: 'hedge', route: { D1: ['shock'], S1: ['blocked'] },
-    cues: { S1: 'The studio’s rules say he may not sell any of them for the next four years' },
-    reason: { S1: 'A rule stops him selling for a set time: {cue:S1}. $280,000 out of $310,000 is 90%, all in one company.' },
-    not: { outcome: 'diversify', why: 'Shares that are most of what a person has are often ones they are free to sell. Here the studio’s rule stops him, so a schedule of sales cannot begin.' } },
-
-  { id: 'w3-n-sup', use: 'drill', tier: 'clean', setting: 'business', topic: 'a courier firm and a van loan',
-    text: "Olu, 50, runs the courier firm he started, worth $700,000, which is most of the $760,000 he owns. His other $60,000 is savings, which would cover the household’s $40,000 a year for about eighteen months. The firm’s vans were bought with a loan, and the bank holds his shares in the firm as security.",
-    outcome: 'supports', route: { D1: ['shock'], S1: ['ownrun'] },
-    cues: { S1: ['His other $60,000 is savings, which would cover the household’s $40,000 a year for about eighteen months', 'the bank holds his shares in the firm as security'] },
-    reason: { S1: 'Olu runs a business that is most of what he owns, and the case shows gaps round it: {cue:S1}. $60,000 ÷ $40,000 is a year and a half, which is not several years, and the loan gives a bank the right to take his shares.' },
-    not: { outcome: 'safe', why: 'The same business could be safe if everything round it were in place. Here the savings are short and the bank holds the shares, so something is missing.' } },
-
-  { id: 'w3-n-saf-biz', use: 'drill', tier: 'clean', setting: 'work', topic: 'an engineering firm with reserves',
-    text: "Pilar, 55, runs the engineering firm she built, worth $950,000, which is most of the $1,400,000 she owns. $300,000 is in funds that hold thousands of companies and $150,000 is in savings, which covers her household’s $45,000 a year for more than three years. Nothing is borrowed against her shares in the firm.",
-    outcome: 'safe', route: { D1: ['shock'], S1: ['madesafe'] },
-    cues: { S1: ['$300,000 is in funds that hold thousands of companies and $150,000 is in savings', 'Nothing is borrowed against her shares in the firm'] },
-    reason: { S1: 'Pilar runs a business that is most of what she owns, and the case shows all three things in place: {cue:S1}. $150,000 ÷ $45,000 is more than three years, the rest is spread, and nothing is borrowed against her shares.' },
-    not: { outcome: 'supports', why: 'She runs a business that is most of what she owns, which is why the case looks like a business with a gap. But nothing is missing, so there is no gap to name.' } },
-
-  { id: 'w3-n-ins', use: 'drill', tier: 'clean', setting: 'business', topic: 'a riding school and a rider’s injury',
-    text: "Colm, 44, owns a small riding school on land worth $600,000, with $150,000 in savings. His insurance pays up to $300,000 if a rider is hurt, and a lawyer says a rider who can never walk again could be awarded $4,000,000.",
-    outcome: 'insure', route: { D1: ['shock'], S1: ['bigclaim'] },
-    cues: { S1: ['His insurance pays up to $300,000 if a rider is hurt', 'a rider who can never walk again could be awarded $4,000,000'] },
-    reason: { S1: 'The riding school could bring {t:claim}, and the insurance has a limit: {cue:S1}. $4,000,000 less $300,000 leaves $3,700,000, far more than the $750,000 Colm owns.' },
-    not: { outcome: 'entity', why: 'The case does not say that several properties are held in one name. It shows one business and a gap between {t:claim} and its coverage.' } },
-
-  { id: 'w3-n-ent', use: 'drill', tier: 'clean', setting: 'property', topic: 'three stores and a home in one name',
-    text: "Nadia, 52, owns three stores that she rents to different businesses, and the house she lives in, worth $1,150,000 in all, with every one of them in her own name. A customer who is badly hurt in any of the stores could bring a claim against her.",
-    outcome: 'entity', route: { D1: ['shock'], S1: ['onename'] },
-    cues: { S1: ['with every one of them in her own name', 'A customer who is badly hurt in any of the stores could bring a claim against her'] },
-    reason: { S1: 'Several properties could each bring {t:claim}, and they are all in one name: {cue:S1}. A demand on one store could reach the other two and her home.' },
-    not: { outcome: 'insure', why: 'The case does not say what any insurance pays, or how big {t:claim} could be. It shows only how the properties are held.' } },
-
-  { id: 'w3-n-del', use: 'drill', tier: 'clean', setting: 'work', topic: 'shares bought on a brokerage’s top-up rule',
-    text: "Gwen, 49, owns shares worth $400,000, bought partly with a $260,000 margin loan from her brokerage. The brokerage can ask her to pay in more money, within two days, whenever the loan is more than 70% of the shares’ value; at the moment it is 65%.",
-    outcome: 'deleverage', route: { D1: ['shock'], S1: ['riskyloan'] },
-    cues: { S1: 'The brokerage can ask her to pay in more money, within two days, whenever the loan is more than 70% of the shares’ value' },
-    reason: { S1: 'The brokerage’s power is in the contract: {cue:S1}. At 65% the loan is five points from the limit, and a fall of about 7% in the shares would take it over ($260,000 ÷ 0.7 is about $371,000).' },
-    not: { outcome: 'safe', why: 'A safe loan could not be topped up at the lender’s request. This one can, and the margin before the brokerage acts is small.' } },
-
-  { id: 'w3-n-saf-loan', use: 'drill', tier: 'clean', setting: 'home', topic: 'a house with a small ten-year fixed loan',
-    text: "Idris, 38, owns a house worth $350,000, which is most of what he owns, and owes $120,000 on it. The rate is fixed for ten years, and the bank cannot demand the money back as long as he pays the $700 due each month. His pay after tax is $3,800 a month.",
-    outcome: 'safe', route: { D1: ['shock'], S1: ['madesafe'] },
-    cues: { S1: ['The rate is fixed for ten years', 'the bank cannot demand the money back as long as he pays the $700 due each month'] },
-    reason: { S1: 'The loan is small against the house ($120,000 ÷ $350,000 is 34%), and its terms leave the bank no power: {cue:S1}.' },
-    not: { outcome: 'deleverage', why: 'There is a loan against the thing that is most of what he owns, which is why it can look like a loan the lender could use. But the rate cannot jump and the bank cannot demand the money back.' } },
-
-  /* ---------- Stage two: the key's question alone, on a new case ---------- */
+  /* ---------- One question at a time, on a new case ---------- */
   { id: 'w3-p-ent', use: 'drill', tier: 'clean', setting: 'family', topic: 'three rented farms in one name',
     text: "Sandra, 57, owns three farms that she rents to tenant farmers, each worth about $300,000, and the house she lives in, worth $500,000. All four are in her own name. A farm worker who is badly hurt on any of the farms could bring a claim against her.",
     outcome: 'entity', route: { D1: ['shock'], S1: ['onename'] },
@@ -90,5 +31,109 @@ FC.cases('wealth', 'u3', [
     outcome: 'supports', route: { D1: ['shock'], S1: ['ownrun'] },
     cues: { S1: ['Her savings are $30,000, and her household spends $60,000 a year', 'Everything else she owns is a $90,000 share in a condo in the same town as the practice'] },
     reason: { S1: 'She runs a business that is most of what she owns, and at least one thing is missing round it: {cue:S1}. $30,000 covers six months of $60,000 a year, and nothing is spread across many investments.' },
-    not: { outcome: 'safe', why: 'The business is the same shape as a safe one, but the savings are six months and not years, and the rest is one condo nearby.' } }
+    not: { outcome: 'safe', why: 'The business is the same shape as a safe one, but the savings are six months and not years, and the rest is one condo nearby.' } },
+
+  /* ---------- Whole cases ---------- */
+  { id: 'w3-r-div-1', use: 'drill', tier: 'clean', setting: 'property', topic: 'a woodland estate managed by a firm',
+    text: "Tilda, 72, owns a woodland estate worth $650,000, which is most of the $720,000 she has. A forestry firm manages it for a fee, and Tilda has never visited. Nothing stops her selling it.",
+    outcome: 'diversify', route: { D1: ['shock'], S1: ['freeheld'] },
+    cues: { D1: 'owns a woodland estate worth $650,000, which is most of the $720,000 she has',
+            S1: ['A forestry firm manages it for a fee', 'Nothing stops her selling it'] },
+    reason: { D1: 'One property is most of what she has: {cue:D1}. $650,000 out of $720,000 is 90%.',
+              S1: 'Someone else runs it, and nothing stops a sale: {cue:S1}. Both facts together are what to point to.' },
+    not: { outcome: 'hedge', why: 'A rule that stopped her selling would make it the answer for what cannot be sold yet. The case says nothing stops her.' } },
+
+  { id: 'w3-r-hdg-1', use: 'drill', tier: 'clean', setting: 'work', topic: 'a bonus paid in bank shares',
+    text: "Jamal, 31, works at a bank that pays part of his bonus in its shares each year, and the rules say each year’s shares cannot be sold for three years. He holds $240,000 of them, which is most of the $280,000 he has.",
+    outcome: 'hedge', route: { D1: ['shock'], S1: ['blocked'] },
+    cues: { D1: 'He holds $240,000 of them, which is most of the $280,000 he has',
+            S1: 'each year’s shares cannot be sold for three years' },
+    reason: { D1: 'One company’s shares are most of what he has: {cue:D1}. $240,000 out of $280,000 is 86%.',
+              S1: 'A rule stops him selling for a set time: {cue:S1}. The shares are worth a lot on paper and he cannot use any of them yet.' },
+    not: { outcome: 'diversify', why: 'The shares are one company’s and most of what he has, but he is not free to sell them, and a schedule of sales needs that freedom.' } },
+
+  { id: 'w3-r-sup-1', use: 'drill', tier: 'clean', setting: 'business', topic: 'a garden-center company with little set aside',
+    text: "Wendy, 53, runs the garden-center company she founded, worth $580,000, which is most of the $860,000 she owns. $270,000 is in funds that hold thousands of companies, and $10,000 is in savings, against the $42,000 a year her household spends. No bank holds her shares in the company as security.",
+    outcome: 'supports', route: { D1: ['shock'], S1: ['ownrun'] },
+    cues: { D1: 'worth $580,000, which is most of the $860,000 she owns',
+            S1: '$10,000 is in savings, against the $42,000 a year her household spends' },
+    reason: { D1: 'A business she runs is most of what she owns: {cue:D1}. $580,000 out of $860,000 is 67%.',
+              S1: 'One thing round the business is missing: {cue:S1}. $10,000 ÷ $42,000 is about three months, and {t:threesupports} needs several years.' },
+    not: { outcome: 'safe', why: 'The rest is spread and nothing is borrowed against the shares, which is two of the three. The third is missing, and one is enough.' } },
+
+  { id: 'w3-r-saf-1', use: 'drill', tier: 'clean', setting: 'work', topic: 'physical therapy clinics with reserves',
+    text: "Marcus, 58, runs the physical therapy clinics he built, worth $720,000, which is most of the $1,000,000 he owns. $180,000 is in funds that hold thousands of companies and $100,000 is in savings, which covers his household’s $30,000 a year for more than three years. The clinics have no loan against their shares.",
+    outcome: 'safe', route: { D1: ['shock'], S1: ['madesafe'] },
+    cues: { D1: 'worth $720,000, which is most of the $1,000,000 he owns',
+            S1: ['$180,000 is in funds that hold thousands of companies and $100,000 is in savings', 'The clinics have no loan against their shares'] },
+    reason: { D1: 'A business he runs is most of what he owns: {cue:D1}. $720,000 out of $1,000,000 is 72%.',
+              S1: 'All three things are in place: {cue:S1}. $100,000 ÷ $30,000 is more than three years, the rest is spread, and nothing is borrowed against the shares.' },
+    not: { outcome: 'supports', why: 'A business he runs that is most of what he owns is the same shape as a case with a gap. But nothing is missing, so there is no gap to name.' } },
+
+  { id: 'w3-r-ins-1', use: 'drill', tier: 'clean', setting: 'property', topic: 'a building of workshops and a serious accident',
+    text: "Fenella, 62, owns a building of six workshops that she rents to small businesses, worth $900,000, and has $150,000 in savings. Her insurance for harm to people on the site pays up to $500,000, and a lawyer says a serious accident in the metal workshop could lead to a demand for $3,000,000.",
+    outcome: 'insure', route: { D1: ['shock'], S1: ['bigclaim'] },
+    cues: { D1: 'a serious accident in the metal workshop could lead to a demand for $3,000,000',
+            S1: ['Her insurance for harm to people on the site pays up to $500,000', 'a serious accident in the metal workshop could lead to a demand for $3,000,000'] },
+    reason: { D1: 'A demand could reach everything she owns: {cue:D1}. $3,000,000 is nearly three times the $1,050,000 she has in all.',
+              S1: 'The site could bring {t:claim}, and the insurance has a limit: {cue:S1}. $3,000,000 less $500,000 leaves $2,500,000 uncovered.' },
+    not: { outcome: 'entity', why: 'A building of workshops can look like several properties, but it is one building, and the case is about {t:claim} bigger than the insurance, not about how things are held.' } },
+
+  { id: 'w3-r-ent-1', use: 'drill', tier: 'clean', setting: 'business', topic: 'three hotels and a house in one name',
+    text: "Aldo, 54, owns three small hotels that managers run for him, bought one by one, each in his own name, and he owns the house he lives in. The hotels are worth $400,000 each and the house $500,000. Guests could be hurt at any of them and bring a claim.",
+    outcome: 'entity', route: { D1: ['shock'], S1: ['onename'] },
+    cues: { D1: 'each in his own name, and he owns the house he lives in',
+            S1: ['each in his own name', 'Guests could be hurt at any of them and bring a claim'] },
+    reason: { D1: 'A demand could reach everything he owns: {cue:D1}. Together that is $1,700,000.',
+              S1: 'Several businesses could each bring {t:claim}, and they are all in his own name: {cue:S1}. A demand on one hotel, worth $400,000, could reach the other two and his house.' },
+    not: { outcome: 'insure', why: 'The case says nothing about what any insurance pays or how big {t:claim} could be. It shows only how the hotels are held.' } },
+
+  { id: 'w3-r-del-1', use: 'drill', tier: 'clean', setting: 'family', topic: 'a house loan following the prime rate',
+    text: "Pavel, 40, owns a house worth $450,000 and owes $420,000 on it, borrowed at a rate that moves with the prime rate, and his rate has risen from 2% to 6%. His pay covers the payments only just.",
+    outcome: 'deleverage', route: { D1: ['shock'], S1: ['riskyloan'] },
+    cues: { D1: 'owes $420,000 on it',
+            S1: ['owes $420,000 on it', 'borrowed at a rate that moves with the prime rate, and his rate has risen from 2% to 6%'] },
+    reason: { D1: 'A loan could force a sale of the house, most of what he owns: {cue:D1}. $420,000 out of $450,000 is 93%.',
+              S1: 'The loan is large against the house, and the rate can jump: {cue:S1}. Interest on $420,000 went from $8,400 a year at 2% to $25,200 at 6%.' },
+    not: { outcome: 'safe', why: 'It is a loan on a house, as a safe loan would be. But a safe loan is small and fixed, and this one is 93% of the value, at a rate that has just tripled.' } },
+
+  { id: 'w3-r-saf-3', use: 'drill', tier: 'clean', setting: 'retirement', topic: 'a condo with a small fixed loan in retirement',
+    text: "Hester, 70, owns a condo worth $380,000, which is most of what she has, and owes $90,000 on it at a fixed rate for the next twelve years. The bank has no right to demand the money back while she pays the $520 due each month, and her Social Security and pension bring in $2,600 a month.",
+    outcome: 'safe', route: { D1: ['shock'], S1: ['madesafe'] },
+    cues: { D1: 'owns a condo worth $380,000, which is most of what she has, and owes $90,000 on it',
+            S1: ['fixed rate for the next twelve years', 'The bank has no right to demand the money back while she pays the $520 due each month'] },
+    reason: { D1: 'The condo, with a loan on it, is most of what she has: {cue:D1}.',
+              S1: 'The loan is small, fixed and cannot be demanded back while it is paid: {cue:S1}. $90,000 is 24% of the condo, and the $520 a month is a fifth of her income.' },
+    not: { outcome: 'deleverage', why: 'A loan on the thing that is most of what she has can look like a loan the lender could use. But the rate cannot move and the bank has no right to ask for the money back.' } },
+
+  { id: 'w3-r-mis-sup', use: 'drill', tier: 'misleading', setting: 'business', topic: 'a pharmacy bought with a demand loan', echo: 'w3-h-del-1',
+    also: ['riskyloan'],
+    text: "Orla, 48, runs the pharmacy company she bought, worth $450,000, which is most of the $520,000 she owns. To buy it she borrowed $300,000 from a bank, which can demand the money back if the pharmacy’s sales fall below an agreed level, and which holds her shares in the company as security. $50,000 is in funds that hold thousands of companies. Her savings are $20,000, and her household spends $40,000 a year.",
+    outcome: 'supports', route: { D1: ['shock'], S1: ['ownrun'] },
+    cues: { D1: 'worth $450,000, which is most of the $520,000 she owns',
+            S1: ['runs the pharmacy company she bought', 'which holds her shares in the company as security', 'Her savings are $20,000, and her household spends $40,000 a year'] },
+    reason: { D1: 'A business she runs is most of what she owns: {cue:D1}. $450,000 out of $520,000 is 87%.',
+              S1: 'She runs the business, and the loan is against its shares: {cue:S1}. That is one of {t:threesupports} missing, and her savings, about six months, are a second. The bank’s power to demand the money back is part of the same answer.' },
+    not: { outcome: 'deleverage', why: 'A loan the lender could use is in the case, and it looks like the answer for a loan. But the loan is against the shares of a business she runs, and the answer is the one for the business.' },
+    wouldChange: 'If she did not run the pharmacy, and the loan were against shares in it that she held as an investment, it would be {a:S1.riskyloan}.' },
+
+  { id: 'w3-r-mis-ins', use: 'drill', tier: 'misleading', setting: 'property', topic: 'four rental houses in one name and a fall on the stairs', echo: 'w3-h-ent-1',
+    also: ['onename'],
+    text: "Peggy, 57, owns four rental houses and the house she lives in, all in her own name, worth $1,500,000 together. A lawyer says a tenant badly hurt in a fall on the stairs of the oldest rental could win $2,500,000. Her insurance pays up to $400,000 on any one claim.",
+    outcome: 'insure', route: { D1: ['shock'], S1: ['bigclaim'] },
+    cues: { D1: 'a tenant badly hurt in a fall on the stairs of the oldest rental could win $2,500,000',
+            S1: ['a tenant badly hurt in a fall on the stairs of the oldest rental could win $2,500,000', 'Her insurance pays up to $400,000 on any one claim'] },
+    reason: { D1: 'A demand could reach everything she owns: {cue:D1}. $2,500,000 is more than the $1,500,000 she has in all.',
+              S1: 'One claim could be far bigger than the insurance: {cue:S1}. $2,500,000 less $400,000 leaves $2,100,000 uncovered. The rentals in one name are in the case too, and when a case shows both, the answer is the claim.' },
+    not: { outcome: 'entity', why: 'Four rental houses and a home all in one name is what the answer for properties in one name looks like, and it is true here. But the case also shows {t:claim} far bigger than the insurance, and that comes first.' },
+    wouldChange: 'If the insurance paid up to $4,000,000 and each rental were in a company of its own, it would be {a:S1.madesafe}.' },
+
+  { id: 'w3-r-mis-saf', use: 'drill', tier: 'misleading', setting: 'home', topic: 'a pool and coverage many times the claim', echo: 'w3-h-ins-1',
+    text: "Alvin, 59, owns a house worth $800,000 with a swimming pool, and has $300,000 in savings. His insurance pays up to $5,000,000 if someone is hurt in the pool, and the broker who arranged it says the largest demand that a pool accident could lead to is $1,500,000.",
+    outcome: 'safe', route: { D1: ['shock'], S1: ['madesafe'] },
+    cues: { D1: 'the largest demand that a pool accident could lead to is $1,500,000',
+            S1: ['His insurance pays up to $5,000,000 if someone is hurt in the pool', 'the largest demand that a pool accident could lead to is $1,500,000'] },
+    reason: { D1: 'A demand could reach what he owns: {cue:D1}. $1,500,000 is more than the $1,100,000 he has in all.',
+              S1: 'The pool could bring {t:claim}, and the coverage is far above it: {cue:S1}. $5,000,000 is more than three times $1,500,000, so no claim could reach the house.' },
+    not: { outcome: 'insure', why: 'A pool and a house bring back the case of a gap between {t:claim} and the coverage. But here the coverage is more than three times the largest demand, so there is no gap.' } }
 ]);

@@ -1,68 +1,11 @@
-// Civics, Unit Four: drill cases for stages one and two. None of these appears in a card.
+// Civics, Unit Four: drill cases for the single question (one for each name). None of these appears in a card.
 // reason[STEP] is the reason tied to the marked words; it is shown after the answer, decisive sentence first.
 // not names the most tempting wrong name for this case and says why it fails.
-// The first stage asks only this unit's question, so these cases carry marked words and a reason for it.
 
 FC.cases('civics', 'u4', [
 
-  /* ---------- Stage one: the answers are shown, the learner gives the name (clean cases, then varied) ---------- */
-  { id: 'e-n-trees', use: 'drill', tier: 'clean', setting: 'community', topic: 'a grant for planting trees',
-    text: "Congress passed a law that gives a grant to anyone who plants trees on bare land. On Friday the federal forestry office published the form an applicant fills in, and the photographs of the planted land that must come with it.",
-    outcome: 'execute', route: { D1: ['president'], E1: ['carryout'] },
-    cues: { E1: 'the federal forestry office published the form an applicant fills in, and the photographs of the planted land that must come with it' },
-    reason: { E1: 'The office is turning a law into a form: {cue:E1}. The law that stands behind it is in the first sentence, and the office asks only for proof of the planting.' },
-    not: { outcome: 'beyondpres', why: 'Nothing is demanded that the law does not allow. The law gives the grant, and the office only says how to apply for it.' } },
+  /* ---------- The question alone, on a new case ---------- */
 
-  { id: 'e-n-cups', use: 'drill', tier: 'clean', setting: 'health', topic: 'the size of drink cups',
-    text: "The federal health office announced a rule that every restaurant in the country must stop serving drinks in cups larger than sixteen ounces. Congress has passed no law about the size of cups, and the office says it needs none.",
-    outcome: 'beyondpres', route: { D1: ['president'], E1: ['newduty'] },
-    cues: { E1: 'Congress has passed no law about the size of cups' },
-    reason: { E1: 'The rule bans something for every restaurant, and the case says what stands behind it: {cue:E1}. The office’s own word is all there is.' },
-    not: { outcome: 'execute', why: 'An office that carries out a law stays inside a law Congress passed. The case says there is none about cups.' } },
-
-  { id: 'e-n-troops', use: 'drill', tier: 'clean', setting: 'community', topic: 'tents and water for a storm-hit town',
-    text: "A town in the south asked for help after a storm. The President ordered a company of soldiers and four trucks of tents and water to drive there on Thursday morning.",
-    outcome: 'commander', route: { D1: ['president'], E1: ['military'] },
-    cues: { E1: 'The President ordered a company of soldiers and four trucks of tents and water to drive there on Thursday morning' },
-    reason: { E1: 'The President sends the armed forces somewhere: {cue:E1}. The soldiers obey, and no law is named.' },
-    not: { outcome: 'diplomacy', why: 'The President is not meeting or negotiating with anyone from another country. The order goes to soldiers, and the town that asked is in the same country.' } },
-
-  { id: 'e-n-summit', use: 'drill', tier: 'clean', setting: 'travel', topic: 'a bridge between two nations',
-    text: "Early on Saturday the President met the leader of Vendria at a hotel in a third country. By evening they had agreed a plan to share the cost of a new bridge between their countries, and signed a statement saying so.",
-    outcome: 'diplomacy', route: { D1: ['president'], E1: ['abroad'] },
-    cues: { E1: 'the President met the leader of Vendria at a hotel in a third country' },
-    reason: { E1: 'The President is dealing with another country: {cue:E1}. They agree a plan and sign it, and nobody at home is ordered to do anything.' },
-    not: { outcome: 'commander', why: 'Nobody in the armed forces is given an order. The two leaders settle something between their countries.' } },
-
-  { id: 'e-n-stations', use: 'drill', tier: 'clean', setting: 'money', topic: 'a bill for new bus stations',
-    text: "Congress passed a bill that sets aside a hundred million dollars for new bus stations in small towns. On Thursday the President returned the bill to Congress without a signature, with a letter that says the money is not needed.",
-    outcome: 'veto', route: { D1: ['president'], E1: ['sendback'] },
-    cues: { E1: 'the President returned the bill to Congress without a signature' },
-    reason: { E1: 'Congress has finished with the bill, and the President decides what happens next: {cue:E1}. The letter gives the objections.' },
-    not: { outcome: 'pardon', why: 'No one has been charged with a crime, and nobody is being forgiven. The President is acting on a bill.' } },
-
-  { id: 'e-n-stamps', use: 'drill', tier: 'clean', setting: 'work', topic: 'copied stamps',
-    text: "A woman was convicted in a federal court of selling stamps that she had copied. The judge gave her a fine of $8,000. On Wednesday the President signed a pardon for her, and the fine no longer has to be paid.",
-    outcome: 'pardon', route: { D1: ['president'], E1: ['forgive'] },
-    cues: { E1: 'the President signed a pardon for her, and the fine no longer has to be paid' },
-    reason: { E1: 'A person was found guilty of a federal crime, and the President lifts the punishment: {cue:E1}. The judge’s decision came earlier. Nobody asks a judge anything now.' },
-    not: { outcome: 'veto', why: 'No bill is in the case. The President is acting on a person who was found guilty, and not on a law Congress passed.' } },
-
-  { id: 'e-n-lights', use: 'drill', tier: 'varied', setting: 'community', topic: 'a bill for street lights',
-    text: "Congress passed a bill that pays for new street lights in every town with more than ten thousand people. The President thinks towns should pay for their own lights. On Monday the President wrote to Congress to say so, and sent the bill back without signing it.",
-    outcome: 'veto', route: { D1: ['president'], E1: ['sendback'] },
-    cues: { E1: 'sent the bill back without signing it' },
-    reason: { E1: 'A bill is finished, and the President answers it: {cue:E1}. The President’s reason is in the letter, and the answer is a refusal.' },
-    not: { outcome: 'execute', why: 'The bill is not yet a law in force, so there is nothing for an office to put into practice. The President is deciding whether it goes any further.' } },
-
-  { id: 'e-n-dentists', use: 'drill', tier: 'varied', setting: 'health', topic: 'dentists’ records',
-    text: "A law Congress passed says that every dentist who is paid by the federal health plan must keep a record of each visit for seven years. On Tuesday the office that runs the plan published the list of what each record must hold and the form for sending them in.",
-    outcome: 'execute', route: { D1: ['president'], E1: ['carryout'] },
-    cues: { E1: 'the office that runs the plan published the list of what each record must hold and the form for sending them in' },
-    reason: { E1: 'The law came first, and the office now says how it is followed: {cue:E1}. The seven years are the law’s own number, and the office adds no demand of its own.' },
-    not: { outcome: 'veto', why: 'The law has already been passed and is in force, so nobody is deciding whether to sign it. An office is putting it into practice.' } },
-
-  /* ---------- Stage two: the question alone, on a new case ---------- */
   { id: 'e-p-lab', use: 'drill', tier: 'clean', setting: 'work', topic: 'licenses for laboratories',
     text: "A law Congress passed says every laboratory that handles dangerous germs must be licensed. The federal health office published its license form on Monday and said its inspectors would visit each laboratory within a year.",
     outcome: 'execute', route: { D1: ['president'], E1: ['carryout'] },

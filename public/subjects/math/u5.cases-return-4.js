@@ -1,9 +1,10 @@
-// Basic Math, Unit Five: fresh problems for later days (part 4 of 4): three for each kind of problem, one for each of its scheduled returns.
+// Basic Math, Unit Five: fresh problems for later days (part 4 of 4): one for each kind of problem.
 // A kind that is due comes back as a problem the learner has not seen, as a whole route, beside a problem of the kind it is most often
 // taken for.
 // The working, the wrong choices and the slip behind each were computed from the problem’s own numbers when the file was written: check a number you change against its working.
 
 FC.cases('math', 'u5', [
+
   {
     id: 'm5-rt-br-3',
     use: 'return',

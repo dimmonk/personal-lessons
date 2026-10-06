@@ -1,138 +1,97 @@
-// Scams, Unit Four: cases shown inside cards, part two (the two exceptions in part two, the real payment request, invoice fraud and
-// the fake payment link, with the twin pairs they are set beside). Field guide: see u4.cases-teach-1.js.
+// Scams, Unit Four: the cases of the look-alike cards (one from each name of a pair, same story) and the whole case.
 
 FC.cases('scams', 'u4', [
 
-  /* ---------- Exceptions of part two ---------- */
-  { id: 'm-exc-refundheld', use: 'teach', tier: 'varied', setting: 'shopping', topic: 'a refund said to be held after a fake store', name: 'The refund that is held',
-    text: "Frances paid $2,000 to an online store that turned out not to exist, and her bank could not get the money back. Now a text arrives: 'A refund of $2,000 is being held for you. To release it, pay a $90 release charge to the account below.'",
-    outcome: 'recovery', route: { D1: ['money'], M1: ['lost'], M2: ['fee'] }, also: ['prize'],
-    cues: { D1: 'pay a $90 release charge to the account below', M1: ['paid $2,000 to an online store that turned out not to exist', 'A refund of $2,000 is being held for you'], M2: 'To release it, pay a $90 release charge' },
-    segments: [
-      { text: 'paid $2,000 to an online store that turned out not to exist' },
-      { text: 'A refund of $2,000 is being held for you', note: 'This is what makes the text sound like money that is waiting for her, but it does not tell you which kind of waiting money it is.' },
-      { text: 'To release it, pay a $90 release charge to the account below', note: 'This is the fee. Both names have a fee, so it does not settle which of the two this is.' }
-    ] },
+  /* ---------- Look-alike pairs ---------- */
+  { id: 'm-theo-app', use: 'teach', tier: 'clean', setting: 'money', topic: 'savings into a trading app he showed her',
+    text: "Mara has chatted with a man called Theo for four months on a photo-sharing app, and they have never met. He writes: 'I have been using a trading app that has doubled my money. Put $3,000 of your savings into it today, and you will see the same.'",
+    outcome: 'pigbutcher', route: { D1: ['money'], M1: ['online'], M2: ['site'] },
+    cues: { D1: 'Put $3,000 of your savings into it today',
+            M1: 'I have been using a trading app that has doubled my money',
+            M2: 'Put $3,000 of your savings into it today' } },
 
-  { id: 'm-exc-withdrawtax', use: 'teach', tier: 'varied', setting: 'money', topic: 'a tax to take profit out of a trading app', name: 'The tax on the profit',
-    text: "Gareth has put $8,000 into a trading app. A woman called Nina, whom he has chatted to for three months and never met, showed him the app. It now shows $14,500. When he tries to take out his profit, a message appears: 'To withdraw, you must first pay a 20% tax of $2,900 into your trading account.'",
-    outcome: 'pigbutcher', route: { D1: ['money'], M1: ['online'], M2: ['site'] }, also: ['fee'],
-    cues: { D1: 'you must first pay a 20% tax of $2,900 into your trading account', M1: 'A woman called Nina, whom he has chatted to for three months and never met, showed him the app', M2: 'To withdraw, you must first pay a 20% tax of $2,900 into your trading account' },
-    segments: [
-      { text: 'Gareth has put $8,000 into a trading app', note: 'This is the money already in. It is not what settles the name.' },
-      { text: 'A woman called Nina, whom he has chatted to for three months and never met, showed him the app' },
-      { text: 'To withdraw, you must first pay a 20% tax of $2,900 into your trading account', note: 'This is a fee before he can take money out. A fee before money reaches you is what sounds like the other name, so it cannot be what settles it.' }
-    ] },
+  { id: 'm-theo-surgery', use: 'teach', tier: 'clean', setting: 'health', topic: 'surgery for his sister',
+    text: "Mara has chatted with a man called Theo for four months on a photo-sharing app, and they have never met. He writes: 'My sister needs an operation today, and the hospital wants $3,000 before it will start. Please pay it into this account. I will repay you as soon as I am back.'",
+    outcome: 'romance', route: { D1: ['money'], M1: ['online'], M2: ['crisis'] },
+    cues: { D1: 'Please pay it into this account',
+            M1: 'My sister needs an operation today, and the hospital wants $3,000 before it will start',
+            M2: 'the hospital wants $3,000 before it will start' } },
 
-  /* ---------- Real payment request ---------- */
-  { id: 'm-real-rent', use: 'teach', tier: 'clean', setting: 'home', topic: 'rent reminded in the agency\'s own app', name: 'The agency rent reminder',
-    text: "Hana signed a one-year lease at a rental agency's office that she walked into herself. The agreement says rent of $950 is due on the 1st, paid into the agency's client account, and prints the account name, routing number and account number on page two. On the 25th the agency's own app, which she installed when she signed, shows: 'Please pay $950 by the 1st, to the account on page two of your agreement. Questions? Call the office at the number on your agreement.' It is the same amount, to the same account, as every month, and nobody mentions any deadline but the 1st.",
-    outcome: 'realpayment', route: { D1: ['money'], M1: ['bill'], M2: ['agreed'] },
-    cues: { D1: 'Please pay $950 by the 1st, to the account on page two of your agreement', M1: 'rent of $950 is due on the 1st',
-            M2: ['the same amount, to the same account, as every month', 'Call the office at the number on your agreement'] } },
+  { id: 'm-imran-owed', use: 'teach', tier: 'clean', setting: 'money', topic: 'compensation he never claimed',
+    text: "Imran gets an email: 'You are owed $6,000 in compensation, held for you by our claims office. It will be released once you pay a $150 release fee.' He has never made a claim of any kind.",
+    outcome: 'advancefee', route: { D1: ['money'], M1: ['prize'], M2: ['fee'] },
+    cues: { D1: 'once you pay a $150 release fee',
+            M1: 'You are owed $6,000 in compensation, held for you by our claims office',
+            M2: 'It will be released once you pay a $150 release fee' } },
 
-  { id: 'm-real-parking', use: 'teach', tier: 'varied', setting: 'government', topic: 'a parking charge paid on the county\'s own site', name: 'The county parking letter',
-    text: "Tomás finds a letter in his mailbox from the county: a parking charge of $70, reduced to $35 if paid within 14 days, for a day in March when he did park on that street. He does not use the web address printed on the letter. He types in the county's address, which he knows from his property tax bill, finds 'Pay a parking charge', and enters the number from the letter. The same $70 and the same date are there. He pays by card on that site.",
-    outcome: 'realpayment', route: { D1: ['money'], M1: ['official'], M2: ['agreed'] },
-    cues: { D1: 'a parking charge of $70, reduced to $35 if paid within 14 days', M1: 'a letter in his mailbox from the county: a parking charge of $70',
-            M2: ['He does not use the web address printed on the letter', 'The same $70 and the same date are there'] },
-    segments: [
-      { text: 'a parking charge of $70, reduced to $35 if paid within 14 days', note: 'This is the request. It is not what shows that it is real.' },
-      { text: 'He does not use the web address printed on the letter', note: 'This is a step he takes, and it matters. The words to tap are what he finds when he does it.' },
-      { text: 'The same $70 and the same date are there' },
-      { text: 'He pays by card on that site', note: 'This is the payment itself. It comes after he has found that the request holds up.' }
-    ] },
-
-  { id: 'm-real-check', use: 'check', tier: 'clean', setting: 'work', topic: 'a roofer\'s invoice matching his quote',
-    text: "Wen owns a flower shop, and a roofer repaired its roof for the $2,200 he quoted by email. When the work is done, an invoice arrives from the same email address, with the same total and the same bank account details as the quote. It ends: 'Pay within 30 days. If anything looks wrong, call me at the number on my quote.'",
-    reason: { M2: 'The invoice matches what Wen agreed: {cue:M2}. Nothing has changed, and she can call the roofer at the number on his quote.' },
-    outcome: 'realpayment', route: { D1: ['money'], M1: ['bill'], M2: ['agreed'] },
-    cues: { D1: 'Pay within 30 days', M1: 'an invoice arrives from the same email address', M2: 'the same total and the same bank account details as the quote' },
-    segments: [
-      { text: 'a roofer repaired its roof for the $2,200 he quoted by email', note: 'This is what Wen agreed. The words to tap are the ones that show that the invoice matches it.' },
-      { text: 'the same total and the same bank account details as the quote' },
-      { text: 'Pay within 30 days', note: 'This is the request, and it gives her a month. It does not show what the invoice matches.' }
-    ] },
-
-  /* ---------- Invoice fraud ---------- */
-  { id: 'm-inv-builder', use: 'teach', tier: 'clean', setting: 'home', topic: 'a landscaper\'s monthly invoice', name: 'The landscaper\'s new bank',
-    text: "Every month for a year Joe has paid the invoice that his landscaper, Maeve, emails him on the last Friday, always into the same account. This month's invoice, for $1,850, arrives in the same email thread as before, with the same logo and signature. At the bottom it says: 'Please note that we have changed bank. From now on please pay all invoices, starting with this one, into the new account below.'",
-    outcome: 'invoicefraud', route: { D1: ['money'], M1: ['bill'], M2: ['newdetails'] },
-    cues: { D1: 'please pay all invoices, starting with this one, into the new account below', M1: 'Every month for a year Joe has paid the invoice that his landscaper, Maeve, emails him', M2: 'Please note that we have changed bank' } },
-
-  { id: 'm-inv-attorney', use: 'teach', tier: 'clean', setting: 'money', topic: 'a house deposit and an attorney\'s new account', name: 'The attorney\'s new account',
-    text: "Farah is buying an apartment. For six weeks her attorney, Mr. Bell, has emailed her about the purchase, and she has paid his fees twice. Now an email arrives in the same thread: 'Our client account has changed. Please send your $18,500 deposit to the new account below, not the one in my earlier email.'",
-    outcome: 'invoicefraud', route: { D1: ['money'], M1: ['bill'], M2: ['newdetails'] },
-    cues: { D1: 'Please send your $18,500 deposit to the new account below', M1: 'her attorney, Mr. Bell, has emailed her about the purchase, and she has paid his fees twice', M2: 'Our client account has changed' },
-    segments: [
-      { text: 'Farah is buying an apartment', note: 'This is the background. It is not what the request is about.' },
-      { text: 'her attorney, Mr. Bell, has emailed her about the purchase, and she has paid his fees twice' },
-      { text: 'Please send your $18,500 deposit to the new account below, not the one in my earlier email', note: 'This is the request and the new details. The words to tap show whom Farah is being asked to pay.' }
-    ] },
-
-  { id: 'm-inv-check', use: 'check', tier: 'clean', setting: 'work', topic: 'an accountant\'s quarterly bill',
-    text: "Owen's accountant has emailed him a bill every quarter for three years. This quarter's bill, in the usual thread, says: 'We have moved to a new bank. Please pay the $620 into the account below.'",
-    reason: { M2: 'A message says that the bank has changed: {cue:M2}. The new details are what Owen is asked to pay into.' },
-    outcome: 'invoicefraud', route: { D1: ['money'], M1: ['bill'], M2: ['newdetails'] },
-    cues: { D1: 'Please pay the $620 into the account below', M1: "Owen's accountant has emailed him a bill every quarter for three years", M2: 'We have moved to a new bank' },
-    segments: [
-      { text: "Owen's accountant has emailed him a bill every quarter for three years", note: 'This is the arrangement. It is not the part that is different this time.' },
-      { text: 'We have moved to a new bank' },
-      { text: 'Please pay the $620 into the account below', note: 'This is the request. The words to tap are the ones that say what has changed.' }
-    ] },
+  { id: 'm-imran-lost', use: 'teach', tier: 'clean', setting: 'shopping', topic: 'a fake insurance broker',
+    text: "Imran lost $6,000 last year to a fake car-insurance broker. Now an email arrives: 'We have recovered the $6,000 you lost. It will be released once you pay a $150 release fee.'",
+    outcome: 'recovery', route: { D1: ['money'], M1: ['lost'], M2: ['fee'] },
+    cues: { D1: 'once you pay a $150 release fee',
+            M1: 'We have recovered the $6,000 you lost',
+            M2: 'It will be released once you pay a $150 release fee' } },
 
   { id: 'm-tessa-same', use: 'teach', tier: 'clean', setting: 'home', topic: 'the usual invoice from her builder',
     text: "Tessa's builder, Ahmed, emails this month's invoice for $2,400 in the usual thread. It asks her to pay into the same account as the last four invoices, which she can see in her own banking app, and ends: 'Same details as always. Call me if anything looks wrong.'",
     outcome: 'realpayment', route: { D1: ['money'], M1: ['bill'], M2: ['agreed'] },
-    cues: { D1: 'It asks her to pay into the same account as the last four invoices', M1: "emails this month's invoice for $2,400 in the usual thread",
+    cues: { D1: 'It asks her to pay into the same account as the last four invoices',
+            M1: "emails this month's invoice for $2,400 in the usual thread",
             M2: ['the same account as the last four invoices, which she can see in her own banking app', 'Same details as always'] } },
 
   { id: 'm-tessa-new', use: 'teach', tier: 'clean', setting: 'home', topic: 'the same invoice and a new account',
     text: "Tessa's builder, Ahmed, emails this month's invoice for $2,400 in the usual thread. It ends: 'Please note that we have changed bank. Pay this invoice into the new account below.'",
     outcome: 'invoicefraud', route: { D1: ['money'], M1: ['bill'], M2: ['newdetails'] },
-    cues: { D1: 'Pay this invoice into the new account below', M1: "emails this month's invoice for $2,400 in the usual thread", M2: 'we have changed bank' } },
-
-  /* ---------- Fake payment link ---------- */
-  { id: 'm-link-parcel', use: 'teach', tier: 'clean', setting: 'shopping', topic: 'a redelivery fee in a text', name: 'The redelivery fee',
-    text: "A text arrives on Jonas's phone from a number he does not know: 'ParcelPoint: your package could not be delivered. Pay a $2.99 redelivery fee at parcelpoint-redeliver.example to arrange a new time, or it will be sent back.' Jonas is expecting a package.",
-    outcome: 'fakelink', route: { D1: ['money'], M1: ['deal'], M2: ['link'] },
-    cues: { D1: 'Pay a $2.99 redelivery fee at parcelpoint-redeliver.example', M1: 'your package could not be delivered', M2: 'Pay a $2.99 redelivery fee at parcelpoint-redeliver.example' } },
-
-  { id: 'm-link-toll', use: 'teach', tier: 'clean', setting: 'government', topic: 'an unpaid toll in a text', name: 'The unpaid toll',
-    text: "Ayesha has driven on a toll road twice this month. A text arrives: 'RoadPay: you have an unpaid toll of $6.80. Pay at roadpay-toll.example to avoid a $50 fine.'",
-    outcome: 'fakelink', route: { D1: ['money'], M1: ['official'], M2: ['link'] },
-    cues: { D1: 'Pay at roadpay-toll.example to avoid a $50 fine', M1: 'you have an unpaid toll of $6.80', M2: 'Pay at roadpay-toll.example to avoid a $50 fine' },
-    segments: [
-      { text: 'Ayesha has driven on a toll road twice this month', note: 'This is why the text is believable. It is not what the text asks her to do.' },
-      { text: 'you have an unpaid toll of $6.80', note: 'This is the reason given for the payment. The words to tap are the ones that say how she is to pay.' },
-      { text: 'Pay at roadpay-toll.example to avoid a $50 fine' }
-    ] },
-
-  { id: 'm-link-check', use: 'check', tier: 'clean', setting: 'money', topic: 'a streaming subscription lapsed',
-    text: "Kofi pays for a streaming service every month. A text arrives: 'Your account has been suspended because your last payment failed. Update your card at streamplus-billing.example.'",
-    reason: { M2: 'Kofi is told to pay on a page that he reaches through a link in the text: {cue:M2}.' },
-    outcome: 'fakelink', route: { D1: ['money'], M1: ['bill'], M2: ['link'] },
-    cues: { D1: 'Update your card at streamplus-billing.example', M1: 'Your account has been suspended because your last payment failed', M2: 'Update your card at streamplus-billing.example' } },
+    cues: { D1: 'Pay this invoice into the new account below',
+            M1: "emails this month's invoice for $2,400 in the usual thread",
+            M2: 'we have changed bank' } },
 
   { id: 'm-dina-text', use: 'teach', tier: 'clean', setting: 'shopping', topic: 'a customs charge in a text',
     text: "Dina ordered a pair of boots from a store in Germany. A text arrives from a number she does not know: 'Your package has a customs charge of $6.20. Pay at parcelpoint-customs.example to release it.'",
     outcome: 'fakelink', route: { D1: ['money'], M1: ['deal'], M2: ['link'] },
-    cues: { D1: 'Pay at parcelpoint-customs.example to release it', M1: 'Your package has a customs charge of $6.20', M2: 'Pay at parcelpoint-customs.example to release it' } },
+    cues: { D1: 'Pay at parcelpoint-customs.example to release it',
+            M1: 'Your package has a customs charge of $6.20',
+            M2: 'Pay at parcelpoint-customs.example to release it' } },
 
-  { id: 'm-dina-app', use: 'teach', tier: 'clean', setting: 'shopping', topic: 'a customs charge in the courier\'s own app',
+  { id: 'm-dina-app', use: 'teach', tier: 'clean', setting: 'shopping', topic: "a customs charge in the courier's own app",
     text: "Dina ordered a pair of boots from a store in Germany. Her courier's own app, which she installed last year, shows the package with a customs charge of $6.20 and a button 'Pay in the app'. The same $6.20 is on the store's order page, which she opened by typing in the store's address.",
     outcome: 'realpayment', route: { D1: ['money'], M1: ['deal'], M2: ['agreed'] },
-    cues: { D1: "a customs charge of $6.20 and a button 'Pay in the app'", M1: 'a customs charge of $6.20',
+    cues: { D1: "a customs charge of $6.20 and a button 'Pay in the app'",
+            M1: 'a customs charge of $6.20',
             M2: ["Her courier's own app, which she installed last year", "The same $6.20 is on the store's order page"] } },
 
-  /* ---------- Exception: a fee on a link, which is the advance fee ---------- */
-  { id: 'm-exc-voucher', use: 'teach', tier: 'varied', setting: 'shopping', topic: 'a gift card costing a delivery fee to claim', name: 'The gift card with a fee',
-    text: "A text arrives: 'You have won a $500 supermarket gift card! To claim it, pay $1.99 delivery at voucher-claim.example.'",
-    outcome: 'advancefee', route: { D1: ['money'], M1: ['prize'], M2: ['fee'] }, also: ['link'],
-    cues: { D1: 'pay $1.99 delivery at voucher-claim.example', M1: 'You have won a $500 supermarket gift card', M2: 'To claim it, pay $1.99 delivery' },
-    segments: [
-      { text: 'You have won a $500 supermarket gift card!', note: 'This is the prize that is said to be waiting. Both names can come with one, so it does not settle which of the two this is.' },
-      { text: 'To claim it, pay $1.99 delivery' },
-      { text: 'at voucher-claim.example', note: 'This is the link to a payment page. It is what makes the text look like the other name, so it cannot be what settles it.' }
-    ] }
+  { id: 'm-sam-call', use: 'teach', tier: 'clean', setting: 'government', topic: 'unpaid tax demanded by phone',
+    text: "Sam answers a call from a man who says he is from the IRS: 'You owe $1,900 in unpaid tax. Pay it today by wire transfer to the account I will give you, or your wages will be garnished. Do not discuss this with your employer.'",
+    outcome: 'fakeofficial', route: { D1: ['money'], M1: ['official'], M2: ['rush'] },
+    cues: { D1: 'Pay it today by wire transfer to the account I will give you',
+            M1: 'You owe $1,900 in unpaid tax',
+            M2: ['Pay it today by wire transfer to the account I will give you', 'Do not discuss this with your employer'] } },
+
+  { id: 'm-sam-letter', use: 'teach', tier: 'clean', setting: 'government', topic: 'unpaid tax in a letter',
+    text: "Sam gets a letter from the IRS: he owes $1,900, and he has 30 days to pay or to appeal. It gives a reference number and adds: 'Do not use a link or a number in any message that says it is from us.' Sam types in the website address he knows from his own tax account, finds the amount he owes, and sees the same $1,900 and the same reference number.",
+    outcome: 'realpayment', route: { D1: ['money'], M1: ['official'], M2: ['agreed'] },
+    cues: { D1: 'he owes $1,900, and he has 30 days to pay or to appeal',
+            M1: 'Sam gets a letter from the IRS: he owes $1,900',
+            M2: ['he has 30 days to pay or to appeal', 'sees the same $1,900 and the same reference number'] } },
+
+  { id: 'm-camera-sold', use: 'teach', tier: 'clean', setting: 'shopping', topic: 'a camera sold for more than the price',
+    text: "Isla sells her camera for $600. The buyer sends a $1,000 check and writes: 'Wrong amount, sorry. Please send the extra $400 to a friend's account, and the camera can be collected.'",
+    outcome: 'overpayment', route: { D1: ['money'], M1: ['deal'], M2: ['sendback'] },
+    cues: { D1: "Please send the extra $400 to a friend's account",
+            M1: 'Isla sells her camera for $600',
+            M2: "Wrong amount, sorry. Please send the extra $400 to a friend's account" } },
+
+  { id: 'm-camera-bought', use: 'teach', tier: 'clean', setting: 'shopping', topic: "a camera bought through a marketplace's own button",
+    text: "Isla finds a used camera for $600 on a marketplace app she has used for years. The listing says: 'Pay with the Buy button. Your money is held by the marketplace until you confirm that the camera has arrived.' The price is the one she agreed with the seller in the app's chat.",
+    outcome: 'realpayment', route: { D1: ['money'], M1: ['deal'], M2: ['agreed'] },
+    cues: { D1: 'Pay with the Buy button',
+            M1: 'finds a used camera for $600 on a marketplace app she has used for years',
+            M2: ['Your money is held by the marketplace until you confirm that the camera has arrived', "The price is the one she agreed with the seller in the app's chat"] } },
+
+  /* ---------- The whole case ---------- */
+  { id: 'm-w-cottage', use: 'teach', tier: 'varied', setting: 'leisure', topic: 'a cottage deposit paid into the account on the confirmation', name: 'The cottage deposit',
+    text: "Ruth booked a weekend cottage through the owner's own website, which she found by asking a friend and typing in the address. The booking email in her inbox says: 'Please pay the $200 deposit by May 20, into the account named on your booking confirmation. The balance is due on arrival. Call the owner at the number on the website if you would like to talk about it.' The deposit and the balance are the figures on the website.",
+    outcome: 'realpayment', route: { D1: ['money'], M1: ['deal'], M2: ['agreed'] },
+    cues: { D1: 'Please pay the $200 deposit by May 20',
+            M1: "Ruth booked a weekend cottage through the owner's own website",
+            M2: ['into the account named on your booking confirmation', 'The deposit and the balance are the figures on the website'] } }
 ]);

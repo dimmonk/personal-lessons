@@ -4,7 +4,7 @@
 
 FC.unit('psychology', 'u3', {
   kind: 'C',              // C classification, F facts, P procedure
-  rev: 3,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
+  rev: 4,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
   standard: 1,            // lesson-standard version this unit was built to
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author). The app labels a draft as a draft.
   tag: 'Three',
@@ -49,57 +49,34 @@ FC.unit('psychology', 'u3', {
   // Parts are stopping points: each ends on a screen that says where the next one starts.
   // The part with drill: true is the last; its close cards come after the drill.
   parts: [
-    { id: 'p1', title: 'Denials: over months, and in answer to being asked',
-      cards: ['orient', 'meet-gaslight', 'again-gaslight', 'lens', 'portrait-gaslight', 'check-gaslight', 'refute-doubt',
-              'meet-darvo', 'again-darvo', 'portrait-darvo', 'check-darvo', 'look-gaslight-darvo', 'exc-memory'] },
-    { id: 'p2', title: 'Accusing someone of what you do, and a flood of attention',
-      cards: ['meet-projection', 'again-projection', 'portrait-projection', 'check-projection',
-              'look-darvo-projection', 'exc-own', 'refute-meant',
-              'meet-lovebomb', 'again-lovebomb', 'portrait-lovebomb', 'check-lovebomb'] },
-    { id: 'p3', title: 'The ordinary exchange, and the four names it is mistaken for',
-      cards: ['meet-ordexchange', 'again-ordexchange', 'portrait-ordexchange', 'check-ordexchange', 'refute-everywhere',
-              'look-gaslight-ord', 'look-darvo-ord', 'exc-wrongly', 'look-lovebomb-ord', 'look-projection-ord', 'exc-both-late'] },
-    { id: 'p4', title: 'The question',
-      cards: ['refute-person', 'q-does', 'check-does'] },
-    { id: 'p5', title: 'Two whole cases, then the drill',
-      cards: ['worked-hike', 'worked-booking'], drill: true, close: ['recap', 'transfer'] }
+    { id: 'p1', title: 'The four things, and the ordinary exchange',
+      cards: ['orient', 'meet-gaslight', 'check-gaslight', 'meet-darvo', 'check-darvo', 'exc-memory',
+              'meet-projection', 'check-projection', 'exc-own',
+              'meet-lovebomb', 'check-lovebomb', 'meet-ordexchange', 'check-ordexchange'] },
+    { id: 'p2', title: 'Telling them apart, then the drill',
+      cards: ['look-gaslight-ord', 'look-darvo-ord', 'look-lovebomb-ord', 'look-projection-ord',
+              'q-does', 'check-does', 'worked-booking'], drill: true, close: ['recap'] }
   ],
 
-  // The drill is a ramp of five stages (lesson standard A10). The app owns the wording of every stage instruction.
+  // The drill: the stages that carry the skill. The app owns the wording of every stage instruction.
   // Items are authored in groups: a group is cases that share ledger entries and one tier. The app shuffles the groups
   // inside a tier band (clean, then varied, then misleading) and shuffles inside each group. Every case is new.
   drill: {
     key: 'u3',            // the old quick-drill totals for this unit were stored under pl:psychology:stats:u3 (frozen; see E8)
     rungs: [
-      { ask: 'name',
-        items: [['n-gas', 'n-dar', 'n-ord1'], ['n-love', 'n-proj', 'n-ord2']] },
       { ask: 'piece',
-        items: [[{ case: 'p-gas', step: 'T1' }, { case: 'p-dar', step: 'T1' }],
-                [{ case: 'p-love', step: 'T1' }, { case: 'p-proj', step: 'T1' }, { case: 'p-ord', step: 'T1' }],
-                [{ tell: 'gaslight~darvo' }, { tell: 'darvo~projection' }, { tell: 'darvo~ordexchange' }, { tell: 'gaslight~ordexchange' }],
-                ['rev-gaslight', 'rev-darvo', 'rev-lovebomb', 'rev-projection', 'rev-ordexchange'],
-                [{ earlier: 'u1' }]] },
-      { ask: 'finish',
-        items: [['f-gas', 'f-ord'], ['f-dar', 'f-proj']] },
+        items: [[{ case: 'p-gas', step: 'T1' }, { case: 'p-love', step: 'T1' }],
+                [{ tell: 'gaslight~darvo' }, { tell: 'darvo~projection' }, { tell: 'gaslight~ordexchange' }, { tell: 'lovebomb~ordexchange' }]] },
       { ask: 'route',
         items: [['r-gas1', 'r-ord1', 'r-love1'],
                 ['r-dar1', 'r-proj1'],
-                ['r-gas2', 'r-dar2'],
-                ['r-love2', 'r-proj2', 'r-ord2'],
-                ['r-gas-m', 'r-dar-m', 'r-proj-m'],
-                ['r-love-m', 'r-ord-m1'],
+                ['r-dar-m', 'r-ord-m1'],
                 [{ earlier: 'u1' }],
-                [{ earlier: 'u2' }]] },
-      { ask: 'claim', demo: 'claim-demo-keys',
-        items: [['claim-doubt'], ['claim-meant'], ['claim-everywhere'], ['claim-person']] }
+                [{ earlier: 'u2' }]] }
     ],
-    // Fresh cases for later days: three for each name, one for each of its scheduled returns (E9).
-    // A due name returns as a case the learner has not seen, beside a case of the name they most often take it for.
-    returns: ['ret-tenancy', 'ret-promotion', 'ret-deadline',
-              'ret-drive', 'ret-withdrawal', 'ret-quote',
-              'ret-climb', 'ret-intern', 'ret-buddy',
-              'ret-calls', 'ret-parcels', 'ret-fair',
-              'ret-refund', 'ret-marks', 'ret-tea']
+    // Fresh cases for later days: one for each name (E9). A due name returns as a case the learner has not seen,
+    // beside a case of the name they most often take it for.
+    returns: ['ret-tenancy', 'ret-drive', 'ret-climb', 'ret-calls', 'ret-refund']
   },
 
   // Build notes: not shown to the learner, and left out of the fingerprint. The validator reads them.
@@ -108,22 +85,10 @@ FC.unit('psychology', 'u3', {
     history: [
       { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1. Not yet deployed, so later edits before the first deploy stay revision 1.' },
       { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' },
-      { rev: 3, date: '2026-10-05', change: 'American English: dollars, US words and spelling.' }
+      { rev: 3, date: '2026-10-05', change: 'American English: dollars, US words and spelling.' },
+      { rev: 4, date: '2026-10-05', change: 'Trimmed to a quick lesson: one case per name, the essentials, a short drill.' }
     ],
-    wrongIdeas: [
-      { card: 'refute-doubt', about: 'gaslight',
-        source: { kind: 'published', verified: false,
-          ref: 'Sweet (2019), The sociology of gaslighting, American Sociological Review 84(5): the term is used for a pattern of denial inside an unequal relationship, not for any disagreement about what happened. That is the definition; a published account of the everyday stretching of the word still has to be found and cited, or the card replaced by what cold readers actually get wrong.' } },
-      { card: 'refute-meant', about: 'projection',
-        source: { kind: 'published', verified: false,
-          ref: 'Freud (1894) and later accounts describe projection as unconscious, which is the reason a reader may think it cannot be something done to someone. To be read and confirmed online before release, or replaced by what cold readers actually get wrong.' } },
-      { card: 'refute-everywhere', about: 'ordexchange',
-        source: { kind: 'published', verified: false,
-          ref: 'Haslam (2016), Concept creep: psychology’s expanding concepts of harm and pathology, Psychological Inquiry 27(1): clinical and abuse-related words stretched to cover ordinary unpleasantness. It describes the stretching of the concepts; evidence that learners of this subject do it still has to come from cold readers.' } },
-      { card: 'refute-person', about: 'T1',
-        source: { kind: 'published', verified: false,
-          ref: 'Gilbert & Malone (1995), The correspondence bias, Psychological Bulletin 117(1): people read a lasting trait into one act. To be read and confirmed online before release, or replaced by what cold readers actually get wrong.' } }
-    ],
+    wrongIdeas: [],
     signoff: {
       coverage: null,     // { date, by } once tests/validate-data.mjs passes on this unit in the app
       coldRead: null      // { rev, date, reader: 'novice' | 'near-novice', restated: true, drillAttempted: true, notes }

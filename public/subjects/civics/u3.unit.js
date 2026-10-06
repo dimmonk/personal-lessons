@@ -7,7 +7,7 @@
 
 FC.unit('civics', 'u3', {
   kind: 'C',              // C classification, F facts, P procedure
-  rev: 3,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
+  rev: 4,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
   standard: 1,            // lesson-standard version this unit was built to
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author). The app labels a draft as a draft.
   tag: 'Three',
@@ -40,57 +40,38 @@ FC.unit('civics', 'u3', {
   // Parts are stopping points: each ends on a screen that says where the next one starts.
   // The part with drill: true is the last; its close cards come after the drill.
   parts: [
-    { id: 'p1', title: 'Laws Congress passes, and the limits on them',
-      cards: ['orient', 'meet-enumerated', 'again-enumerated', 'lens', 'portrait-enumerated', 'check-enumerated',
-              'meet-beyondcong', 'again-beyondcong', 'portrait-beyondcong', 'check-beyondcong',
-              'refute-valid', 'look-enumerated-beyondcong'] },
-    { id: 'p2', title: 'Money',
-      cards: ['meet-purse', 'again-purse', 'portrait-purse', 'check-purse',
-              'look-enumerated-purse', 'exc-spendbill'] },
-    { id: 'p3', title: 'A vote on a person or an agreement',
-      cards: ['term-treaty', 'meet-confirm', 'again-confirm', 'portrait-confirm', 'check-confirm'] },
-    { id: 'p4', title: 'A charge against an official, and the question',
-      cards: ['meet-impeach', 'again-impeach', 'portrait-impeach', 'check-impeach',
-              'look-confirm-impeach', 'refute-charged', 'q-congress', 'check-congress'] },
-    { id: 'p5', title: 'Two whole cases, then the drill',
-      cards: ['worked-barbers', 'worked-mint'], drill: true, close: ['recap-congress', 'transfer-congress'] }
+    { id: 'p1', title: 'Laws, and money',
+      cards: ['orient', 'meet-enumerated', 'check-enumerated',
+              'meet-beyondcong', 'check-beyondcong', 'look-enumerated-beyondcong',
+              'meet-purse', 'check-purse', 'look-enumerated-purse'] },
+    { id: 'p2', title: 'Votes on people, and the question, then the drill',
+      cards: ['term-treaty', 'meet-confirm', 'check-confirm',
+              'meet-impeach', 'check-impeach', 'look-confirm-impeach',
+              'q-congress', 'check-congress', 'worked-mint'], drill: true, close: ['recap-congress'] }
   ],
 
-  // The drill is a ramp of five stages (lesson standard A10). The app owns the wording of every stage instruction.
+  // The drill: the stages that carry the skill. The app owns the wording of every stage instruction.
   // Items are authored in groups: a group is cases that share ledger entries and one tier. The app shuffles the groups
   // inside a tier band (clean, then varied, then misleading) and shuffles inside each group. Every case is new.
   // Items from Unit One's bank come only as { earlier: 'u1' }: the other units are written at the same time as this one.
   drill: {
     key: 'u3',            // a new counter: the old Unit Three drill (n3, the chambers) moves to the fact unit u7, so this unit does not take its key
     rungs: [
-      { ask: 'name',
-        items: [['n-trucks', 'n-streets', 'n-inspectors'], ['n-weather', 'n-charge']] },
       { ask: 'piece',
         items: [[{ case: 'pc-borrow', step: 'C1' }, { case: 'pc-speech', step: 'C1' }],
-                [{ case: 'pc-fire', step: 'C1' }, { case: 'pc-health', step: 'C1' }, { case: 'pc-trial', step: 'C1' }],
-                [{ tell: 'enumerated~beyondcong' }, { tell: 'enumerated~purse' }, { tell: 'confirm~impeach' }],
-                ['rev-enumerated', 'rev-beyondcong', 'rev-purse', 'rev-confirm', 'rev-impeach'],
-                [{ earlier: 'u1' }]] },
-      { ask: 'finish',
-        items: [['f-rice', 'f-lunch'], ['f-nominee', 'f-trialday']] },
+                [{ case: 'pc-fire', step: 'C1' }, { case: 'pc-trial', step: 'C1' }],
+                [{ tell: 'enumerated~beyondcong' }, { tell: 'enumerated~purse' }, { tell: 'confirm~impeach' }]] },
       { ask: 'route',
         items: [['r-citizen', 'r-paint', 'r-ferries'],
                 ['r-nominee', 'r-prosecutor'],
-                ['r-navy', 'r-leads'],
                 ['r-envoy', 'r-lies'],
-                ['r-signed', 'r-library', 'r-ships'],
-                ['r-reyes', 'r-acquit'],
-                [{ earlier: 'u1' }]] },
-      { ask: 'claim', demo: 'claim-demo',
-        items: [['claim-president'], ['claim-valid'], ['claim-unfunded'], ['claim-impeached'], ['claim-pact']] }
+                ['r-signed', 'r-ships'],
+                [{ earlier: 'u1' }]] }
     ],
-    // Fresh cases for later days: three for each name, one for each of its scheduled returns (E9).
-    // A due name returns as a case the learner has not seen, beside a case of the name they most often take it for.
-    returns: ['ret-tea', 'ret-recruits', 'ret-nickel',
-              'ret-textbooks', 'ret-license', 'ret-rally',
-              'ret-trails', 'ret-satellite', 'ret-bridges',
-              'ret-nurse', 'ret-pact', 'ret-railhead',
-              'ret-inspector', 'ret-contracts', 'ret-courtservice']
+    // Fresh cases for later days: two for each name, as civics is an action subject (E9). A due name returns as a case
+    // the learner has not seen, beside a case of the name they most often take it for.
+    returns: ['ret-tea', 'ret-recruits', 'ret-textbooks', 'ret-rally', 'ret-trails',
+              'ret-bridges', 'ret-nurse', 'ret-pact', 'ret-inspector', 'ret-contracts']
   },
 
   // Build notes: not shown to the learner, and left out of the fingerprint. The validator reads them.
@@ -99,7 +80,8 @@ FC.unit('civics', 'u3', {
     history: [
       { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the Congress branch of Civics. It replaces the Congress part of old Unit Three (two questions, five names, the side-by-side table and the budget-fight worked case) and old specimens 1, 5, 9, 13 and 17. Not yet deployed, so later edits before the first deploy stay revision 1.' },
       { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' },
-      { rev: 3, date: '2026-10-05', change: 'American English: US spelling.' }
+      { rev: 3, date: '2026-10-05', change: 'American English: US spelling.' },
+      { rev: 4, date: '2026-10-05', change: 'Trimmed to a quick lesson: one case per name, the essentials, a short drill.' }
     ],
     // What the K2 rewrite changed in the key for this branch, and why (docs/rebuild/civics-plan.md, section a).
     // "was" is the wording of the old course.
@@ -128,14 +110,7 @@ FC.unit('civics', 'u3', {
         why: 'V1; K2.7: `needs` must hold for every case, and "removing" did not.' }
     ],
     // Cards that name a wrong idea, with where the idea comes from. verified: false is shown to the owner at deploy (E15).
-    wrongIdeas: [
-      { card: 'refute-valid', about: 'beyondcong',
-        source: { kind: 'app-data', verified: false,
-          ref: 'The old course\'s faulty claim "A law is valid as long as Congress passed it and the President signed it" (public/subjects/civics/standard0.js, CIVICS_ERR), whose correction says that Congress also needs a power the Constitution lists and that no right may forbid the law. That cold readers bring this idea has still to be seen.' } },
-      { card: 'refute-charged', about: 'impeach',
-        source: { kind: 'app-data', verified: false,
-          ref: 'The old course\'s card on impeachment ("keep the two steps apart: impeached means charged, and removed means convicted by the Senate") and its example of a cabinet officer who was charged and stayed in the job. That readers take a charge for a removal has still to be seen.' } }
-    ],
+    wrongIdeas: [],
     signoff: {
       coverage: null,     // { date, by } once tests/validate-data.mjs passes on this unit in the app
       coldRead: null      // { rev, date, reader: 'novice' | 'near-novice', restated: true, drillAttempted: true, notes }

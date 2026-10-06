@@ -1,40 +1,7 @@
-// Psychology, Unit Four: drill cases for the third stage (the first answer is shown), and the clean cases of stage four (the whole route, no help).
-// Field guide: see u4.cases-drill-1.js. Every question is asked in these, starting with the first question of the key, so every case carries marked words and a reason for that question too (D1).
+// Psychology, Unit Four: drill cases for the route stage, clean cases (the whole route, no help).
+// Every question is asked in these, starting with the first question of the key, so every case carries marked words and a reason for that question too (D1).
 
 FC.cases('psychology', 'u4', [
-
-  /* ---------- Stage three: the first answer is shown; the learner answers the key's question and gives the name ---------- */
-  { id: 'pa-f-nv', use: 'drill', tier: 'varied', setting: 'work', topic: 'a man who counts promotions',
-    text: "Clive is fifty. Since school he has said that people in authority always favored someone else. In his four jobs he has stopped speaking to every colleague who was promoted over him, and when his own manager praised a newcomer he took three weeks of sick leave. His wife says that he keeps a ledger in his head of what each person owes him, and his brothers say that he has not come to a family birthday in nine years.",
-    outcome: 'narcvuln', route: { D1: ['pattern'], P1: ['overlooked'] },
-    cues: { D1: ['Since school', 'In his four jobs'], P1: ['people in authority always favored someone else', 'stopped speaking to every colleague who was promoted over him', 'has not come to a family birthday in nine years'] },
-    reason: { D1: 'The case covers a long stretch and several places and relationships: {cue:D1}. It shows how a person is, not one occasion.',
-              P1: 'Clive says he is overlooked and owed more, and when others are promoted or praised he goes silent and keeps count: {cue:P1}. It has cost him contact with his own brothers.' },
-    not: { outcome: 'narcgrand', why: 'Clive does not run anyone down or turn scornful. He stops speaking, and he keeps count.' } },
-
-  { id: 'pa-f-ord', use: 'drill', tier: 'varied', setting: 'home', topic: 'a lifelong worrier',
-    text: "Pilar is forty-eight and has been exactly as anxious as she is now since she was a child: she checks the oven three times, calls to make sure everyone arrived, and cannot go to bed until the door is locked. Her family, her colleagues at the library and her friends of twenty years all know it, laugh about it and say it is just Pilar. She is trusted with the keys at work, and she has never lost a job or a friend over it.",
-    outcome: 'ordpersonality', route: { D1: ['pattern'], P1: ['steady'] },
-    cues: { D1: ['since she was a child', 'her colleagues at the library and her friends of twenty years'], P1: ['she checks the oven three times, calls to make sure everyone arrived', 'say it is just Pilar', 'she has never lost a job or a friend over it'] },
-    reason: { D1: 'The case covers a whole life and several places and relationships: {cue:D1}.',
-              P1: 'Pilar has been a worrier for her whole life, and what the case shows is what that has not cost: {cue:P1}. People smile and stay, and nothing is lost.' },
-    not: { outcome: 'narcvuln', why: 'Pilar’s worry can look like a person who is hurt and withdraws. But she keeps no count of what she is owed, nobody is cut off, and nothing has been lost.' } },
-
-  { id: 'pa-f-bl', use: 'drill', tier: 'varied', setting: 'leisure', topic: 'a girlfriend’s trip with her sister',
-    text: "Kevin is thirty-one. In every friendship and relationship since his teens he has become frantic when someone close was about to go away. When his girlfriend booked a trip with her sister he turned up at her work four times in one day and begged her to stay, then told her she had 'always been a liar' and deleted her number. By evening he was at her door with flowers. He has lost two apartments, a girlfriend and three friends this way.",
-    outcome: 'borderline', route: { D1: ['pattern'], P1: ['clings'] },
-    cues: { D1: ['In every friendship and relationship since his teens'], P1: ['turned up at her work four times in one day and begged her to stay', 'always been a liar', 'He has lost two apartments, a girlfriend and three friends this way'] },
-    reason: { D1: 'The case covers years and many relationships: {cue:D1}. It shows how a person is, not one occasion.',
-              P1: 'When someone close seemed about to go, Kevin held on hard, then turned on her, then held on again: {cue:P1}. It has cost him friends, a girlfriend and two apartments.' },
-    not: { outcome: 'histrionic', why: 'Kevin’s display is aimed at one person who is going, and it turns into an attack on her. It is not put on for an audience.' } },
-
-  { id: 'pa-f-hi', use: 'drill', tier: 'varied', setting: 'community', topic: 'a church flower guild',
-    text: "Doreen is sixty-one and has led the church flower guild for twenty-five years. At every service she arrives last in a new hat and waits in the doorway. When the pastor thanked the choir, Doreen swayed, said she felt faint and had to be helped to a pew, where she stayed until the whole congregation had been to ask after her. The pastor's wife says she has done it with every pastor, and two flower arrangers have left the guild.",
-    outcome: 'histrionic', route: { D1: ['pattern'], P1: ['center'] },
-    cues: { D1: ['for twenty-five years', 'with every pastor'], P1: ['arrives last in a new hat and waits in the doorway', 'said she felt faint and had to be helped to a pew', 'two flower arrangers have left the guild'] },
-    reason: { D1: 'The case covers a quarter of a century and several relationships: {cue:D1}.',
-              P1: 'Doreen puts herself at the center, and when the pastor thanked the choir her display got bigger: {cue:P1}. It has cost the guild two arrangers.' },
-    not: { outcome: 'borderline', why: 'Doreen’s display is for the whole congregation. There is no one person she holds on to, and she attacks nobody.' } },
 
   /* ---------- Clean ---------- */
   { id: 'pa-r-ga1', use: 'drill', tier: 'clean', setting: 'work', topic: 'a city department head',

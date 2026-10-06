@@ -1,11 +1,10 @@
-// Civics, Unit Six: the unit record. A branch unit with two questions (lesson standard A13: the parts follow the answers of the
-// first question, then the second question's names). Cards live in u6.cards-*.js, cases in u6.cases-*.js.
+// Civics, Unit Six: the unit record. A branch unit with two questions (lesson standard A13). Cards live in u6.cards-*.js, cases in u6.cases-*.js.
 // Text fields never retype key wording. They use tokens, filled in from key.js:
 // {o:id} {plain:id} {needs:id} {q:STEP} {a:STEP.option} {when:STEP.option} {t:id} {means:id} {test:ledgerId} {cue:STEP}.
 
 FC.unit('civics', 'u6', {
   kind: 'C',              // C classification, F facts, P procedure
-  rev: 3,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
+  rev: 4,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
   standard: 1,            // lesson-standard version this unit was built to
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author). The app labels a draft as a draft.
   tag: 'Six',
@@ -14,8 +13,8 @@ FC.unit('civics', 'u6', {
   teaches: { steps: ['S1', 'S2'], outcomes: ['police', 'localgov', 'preempted', 'concurrent', 'protected'], terms: [] },
   assumes: ['u1', 'u2', 'u3', 'u4', 'u5'],   // everything the earlier units teach may be used; the first card restates the part this unit leans on
 
-  // THE LOOK-ALIKE LEDGER. All ten pairs of the five names (the first pair is separated by S1, the other nine by S2), and three pairs that
-  // cross into another branch, first separated by the key's first question (S3). Each entry is written once and used six ways (see the
+  // THE LOOK-ALIKE LEDGER. All ten pairs of the five names (the first pair is separated by S1, the other nine by S2), and one pair that
+  // crosses into another branch, first separated by the key's first question (S3). Each entry is written once and used six ways (see the
   // Psychology units). test is a question to put to a case, with no names in it. taughtIn names the card for an entry with no card of its own.
   ledger: [
     { id: 'police~localgov', pair: ['police', 'localgov'], step: 'S1',
@@ -30,7 +29,7 @@ FC.unit('civics', 'u6', {
       shared: 'Both are state rules on a matter of daily life, and in both the state’s rule stands.',
       rule: 'In {o:police} no federal law covers the matter. In {o:concurrent} one does, but it sets only a minimum or leaves room, so the state’s rule stands beside it.',
       test: 'Is there a federal law on this same matter at all?' },
-    { id: 'police~protected', pair: ['police', 'protected'], step: 'S2',
+    { id: 'police~protected', pair: ['police', 'protected'], step: 'S2', taughtIn: 'q-else',
       shared: 'Both are rules a state makes about what people may do in a public place.',
       rule: 'In {o:police} the rule takes away no right, so the state may make it. In {o:protected} a right stops the rule: one of the freedoms the Constitution guards is taken from people, so the state may not make it.',
       test: 'Does the rule take away a right to speak, to worship, to publish or to gather peacefully?' },
@@ -61,34 +60,18 @@ FC.unit('civics', 'u6', {
     { id: 'protected~beyondcong', pair: ['protected', 'beyondcong'], step: 'D1',
       shared: 'In both a right the Constitution protects stops a rule, and the same right can be involved in both.',
       rule: 'In {o:beyondcong} the rule is a law of Congress, and the first answer is {a:D1.congress}. In {o:protected} the rule is a state’s, a city’s or a county’s, and the first answer is {a:D1.states}.',
-      test: 'Who made the rule: Congress, or a state, a city or a county?' },
-    { id: 'protected~trialrights', pair: ['protected', 'trialrights'], step: 'D1',
-      shared: 'Both are about a right in the Constitution that protects a person against a government.',
-      rule: 'In {o:trialrights} the story ends with a judge asked whether the steps promised to an accused person were followed, and the first answer is {a:D1.courts}. In {o:protected} it ends with a council or a legislature making a rule that cuts into a right, and the first answer is {a:D1.states}.',
-      test: 'Does the story end with a judge being asked about how an accused person was treated, or with a rule made by a state, a city or a county?' },
-    { id: 'police~beyondcong', pair: ['police', 'beyondcong'], step: 'D1',
-      shared: 'Both are about a matter that the Constitution does not give to Congress, and that is kept by the states.',
-      rule: 'In {o:police} a state made the rule, which a state may do, and the first answer is {a:D1.states}. In {o:beyondcong} Congress made it, which Congress may not do, and the first answer is {a:D1.congress}.',
-      test: 'Who made the rule: a state, or Congress?' }
+      test: 'Who made the rule: Congress, or a state, a city or a county?' }
   ],
 
-  // Parts are stopping points: each ends on a screen that says where the next one starts. The first two follow the two answers of the key's
-  // first question of this branch, in the key's order (A13); the next two follow the second question. The part with drill: true is the last.
+  // Parts are stopping points: each ends on a screen that says where the next one starts. The first follows the key's first
+  // question of this branch; the second follows the second question. The part with drill: true is the last.
   parts: [
-    { id: 'p1', title: 'A rule the state itself makes',
-      cards: ['orient', 'meet-police', 'again-police', 'lens', 'portrait-police', 'check-police'] },
-    { id: 'p2', title: 'A rule a city, a town or a county makes, and the first question',
-      cards: ['meet-localgov', 'again-localgov', 'portrait-localgov', 'check-localgov', 'look-police-localgov', 'refute-citypower',
-              'q-who', 'check-who'] },
-    { id: 'p3', title: 'A federal law on the same matter',
-      cards: ['meet-preempted', 'again-preempted', 'portrait-preempted', 'check-preempted',
-              'meet-concurrent', 'again-concurrent', 'portrait-concurrent', 'check-concurrent',
-              'look-preempted-concurrent', 'refute-always', 'look-police-preempted', 'exc-crib', 'refute-citizens'] },
-    { id: 'p4', title: 'A right that stops the rule, and the second question',
-      cards: ['meet-protected', 'again-protected', 'portrait-protected', 'check-protected', 'look-police-protected', 'exc-councilmag',
-              'look-protected-beyondcong', 'look-protected-trialrights', 'look-police-beyondcong', 'q-else', 'check-else'] },
-    { id: 'p5', title: 'Two whole cases, then the drill',
-      cards: ['worked-dogs', 'worked-parkevent'], drill: true, close: ['recap', 'transfer'] }
+    { id: 'p1', title: 'Who made the rule',
+      cards: ['orient', 'meet-police', 'check-police', 'meet-localgov', 'check-localgov', 'look-police-localgov', 'q-who', 'check-who'] },
+    { id: 'p2', title: 'What else covers the matter, then the drill',
+      cards: ['meet-preempted', 'check-preempted', 'meet-concurrent', 'check-concurrent', 'look-preempted-concurrent', 'exc-crib',
+              'meet-protected', 'check-protected', 'exc-councilmag', 'look-protected-beyondcong', 'q-else', 'check-else',
+              'worked-parkevent'], drill: true, close: ['recap'] }
   ],
 
   // The drill is a ramp of five stages (lesson standard A10). The app owns the wording of every stage instruction.
@@ -96,37 +79,26 @@ FC.unit('civics', 'u6', {
   // inside a tier band (clean, then varied, then misleading) and shuffles inside each group. Every case is new.
   drill: {
     key: 'u6',            // no old quick-drill counter belonged to this unit: the old state-branch cards were drilled under the first unit's counter
-    add: 'Many of these cases name a federal law, a state and a city all at once, and the one named first is often not the one that decides. That is on purpose. Read each story to its end, find who made the rule, and then ask what else covers the same matter.',
+    add: 'Many of these cases name a federal law, a state and a city all at once, and the one named first is often not the one that decides. Read each story to its end, find who made the rule, and then ask what else covers the same matter.',
     rungs: [
-      { ask: 'name',
-        items: [['u6-n-teachers', 'u6-n-bins'], ['u6-n-trucks', 'u6-n-sickdays', 'u6-n-pamphlets']] },
       { ask: 'piece',
         items: [[{ case: 'u6-p-fishing', step: 'S1' }, { case: 'u6-p-market', step: 'S1' }],
                 [{ case: 'u6-p-medicine', step: 'S2' }, { case: 'u6-p-sprinklers', step: 'S2' }, { case: 'u6-p-sermon', step: 'S2' }, { case: 'u6-p-marriage', step: 'S2' }],
-                [{ tell: 'police~localgov' }, { tell: 'preempted~concurrent' }, { tell: 'police~protected' }, { tell: 'localgov~protected' }],
-                [{ separator: 'police~localgov' }, { separator: 'police~preempted' }, { separator: 'preempted~concurrent' }, { separator: 'police~protected' }],
-                ['u6-rev-police', 'u6-rev-localgov', 'u6-rev-preempted', 'u6-rev-concurrent', 'u6-rev-protected'],
-                [{ earlier: 'u1' }]] },
-      { ask: 'finish',
-        items: [['u6-f-parkfee', 'u6-f-schoolbus']] },
+                [{ tell: 'police~localgov' }, { tell: 'preempted~concurrent' }, { tell: 'localgov~protected' }]] },
       { ask: 'route',
         items: [['u6-r-lessons', 'u6-r-leash', 'u6-r-library'],
                 ['u6-r-coins', 'u6-r-factory'],
-                ['u6-r-heater', 'u6-r-citytest'],
-                ['u6-r-foodtrucks', 'u6-r-score'],
-                ['u6-r-alarms', 'u6-r-bookstall'],
-                ['u6-r-noise', 'u6-r-march'],
-                [{ earlier: 'u1' }]] },
-      { ask: 'claim', demo: 'u6-claim-demo',
-        items: [['u6-claim-always', 'u6-claim-citizens'], ['u6-claim-cities'], ['u6-claim-right']] }
+                ['u6-r-alarms', 'u6-r-march'],
+                ['u6-r-bookstall', 'u6-r-noise'],
+                [{ earlier: 'u1' }]] }
     ],
-    // Fresh cases for later days: three for each name, one for each of its scheduled returns (E9).
+    // Fresh cases for later days: two for each name, one for each of its scheduled returns (E9).
     // A due name returns as a case the learner has not seen, beside a case of the name they most often take it for.
-    returns: ['u6-ret-pawn', 'u6-ret-fireworks', 'u6-ret-schoolleaving',
-              'u6-ret-height', 'u6-ret-libraryhours', 'u6-ret-deck',
-              'u6-ret-imports', 'u6-ret-airport', 'u6-ret-visitors',
-              'u6-ret-lead', 'u6-ret-extrapay', 'u6-ret-carseat',
-              'u6-ret-banner', 'u6-ret-studentpaper', 'u6-ret-worshiphall']
+    returns: ['u6-ret-pawn', 'u6-ret-fireworks',
+              'u6-ret-height', 'u6-ret-libraryhours',
+              'u6-ret-imports', 'u6-ret-airport',
+              'u6-ret-lead', 'u6-ret-carseat',
+              'u6-ret-banner', 'u6-ret-studentpaper']
   },
 
   // Build notes: not shown to the learner, and left out of the fingerprint. The validator reads them.
@@ -135,7 +107,8 @@ FC.unit('civics', 'u6', {
     history: [
       { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the state, city or county branch of Civics, with two questions. It replaces old Unit One cards nine to sixteen, the "three names that look alike" card of old Unit Four, the crib-law worked case and the news item of old Unit Seven, and old specimens 2, 6, 10, 15 and 19. Not yet deployed, so later edits before the first deploy stay revision 1.' },
       { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' },
-      { rev: 3, date: '2026-10-05', change: 'American English: US spelling.' }
+      { rev: 3, date: '2026-10-05', change: 'American English: US spelling.' },
+      { rev: 4, date: '2026-10-05', change: 'Trimmed to a quick lesson: one case per name, the essentials, a short drill.' }
     ],
     // What the K2 rewrite changed in the key for this branch, and why (docs/rebuild/civics-plan.md, section a). "was" is the wording of the old course.
     keyChanges: [
@@ -155,17 +128,7 @@ FC.unit('civics', 'u6', {
         why: 'V1 and K4: no brackets in a name. The real-life name is the name, and the plain words and the older names are printed once on the card that teaches it.' }
     ],
     // Cards that name a wrong idea, with where the idea comes from. verified: false is shown to the owner at deploy (E15).
-    wrongIdeas: [
-      { card: 'refute-citypower', about: 'localgov',
-        source: { kind: 'app-data', verified: false,
-          ref: 'Old faulty claim "Cities and counties have powers of their own that the state cannot touch" (standard0.js, CIVICS_ERR). That cold readers hold it has still to be seen.' } },
-      { card: 'refute-always', about: 'preempted',
-        source: { kind: 'app-data', verified: false,
-          ref: 'Old faulty claim "Federal law always beats state law" (standard0.js, CIVICS_ERR); docs/comprehension-audit/civics.md U1-7 and S17. That cold readers hold it has still to be seen.' } },
-      { card: 'refute-citizens', about: 'police',
-        source: { kind: 'app-data', verified: false,
-          ref: 'Old faulty claim "Each state sets its own rules for who can become a citizen" (standard0.js, CIVICS_ERR). That cold readers hold it has still to be seen.' } }
-    ],
+    wrongIdeas: [],
     signoff: {
       coverage: null,     // { date, by } once tests/validate-data.mjs passes on this unit in the app
       coldRead: null      // { rev, date, reader: 'novice' | 'near-novice', restated: true, drillAttempted: true, notes }

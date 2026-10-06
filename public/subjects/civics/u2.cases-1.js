@@ -7,14 +7,8 @@
 
 FC.cases('civics', 'u2', [
 
-  { id: 'cn-flour', use: 'teach', tier: 'clean', setting: 'money', topic: 'a flour merchant stopped at a state line', name: 'The flour merchant',
-    text: "Imagine a flour merchant in 1786. She loads a wagon in one state and drives it to market in the next. At the state line, the next state charges her a tax on her flour, as it charges every merchant who brings goods in from another state. She asks who can stop this, and is told that nobody in the government of the whole country has the job of running trade between the states. She asks who will see that the country’s laws are carried out, and is told that nobody has that job either. She asks where a judge of the whole country sits who could hear her complaint, and is told that there is none." },
-
-  { id: 'cn-timeline', use: 'teach', tier: 'clean', setting: 'learning', topic: 'a class putting five events in order', name: 'The timeline',
-    text: "A class is given five events on cards and has to put them in order. The Declaration of Independence is adopted. The Articles of Confederation take effect. Delegates meet in Philadelphia to write a new plan of government. The government under the new plan begins. The Bill of Rights is added. One student says: ‘The first and the last are easy. But the three in the middle all sound like the same thing, a plan of government being written or started, and I cannot tell which year goes with which.’" },
-
-  { id: 'cn-writers', use: 'teach', tier: 'clean', setting: 'immigration', topic: 'a cousin explains who wrote what', name: 'Ana’s cousin',
-    text: "Ana is preparing for her citizenship interview. Her cousin, who passed it last year, tells her: ‘Be ready to say who wrote what. One of the founding documents was mainly written by one man. One was written by a room full of delegates. And one was written by three men who signed it with a made-up name.’ Ana asks which was which, and her cousin sits down to explain." },
+  { id: 'cn-timeline', use: 'teach', tier: 'clean', setting: 'learning', topic: 'a class putting four events in order', name: 'The timeline',
+    text: "A class is given four events on cards and has to put them in order. The Declaration of Independence is adopted. Delegates meet in Philadelphia to write a plan of government. The government under the plan begins. The Bill of Rights is added. One student says: ‘The first and the last are easy. But the two in the middle both sound like a plan of government being started, and I cannot tell which year goes with which.’" },
 
   { id: 'cn-claims', use: 'teach', tier: 'clean', setting: 'community', topic: 'a neighborhood meeting about three documents', name: 'The neighborhood meeting',
     text: "At a neighborhood meeting a man says: ‘The Declaration of Independence promises us the pursuit of happiness, so a court has to order the city to give me a better apartment.’ A woman answers: ‘A court cannot order that on the strength of the Declaration. It is not law.’ A third person asks: ‘Then what is law? Is the Constitution? And the Federalist Papers, the essays everybody quotes, are they law too?’ Nobody at the meeting is sure." },

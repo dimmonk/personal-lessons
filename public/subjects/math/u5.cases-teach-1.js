@@ -6,21 +6,10 @@
 
 FC.cases('math', 'u5', [
 
-  /* ---------- The first kind: several choices, each from its own list ---------- */
   { id: 'm5-wd-cases', use: 'teach', tier: 'clean', setting: 'shopping', topic: 'phone cases in colors and styles', name: 'The phone cases', outcome: 'multprin',
     text: 'A phone shop sells cases in 4 colors (black, red, blue, green) and 3 styles (plain, ridged, clear). A customer picks one color and one style. How many different cases can the shop sell?',
     route: { M1: ['chance'], C1: ['lists'] },
     cues: { M1: ['How many different cases can the shop sell?'], C1: ['A customer picks one color and one style'] } },
-
-  { id: 'm5-wd-train', use: 'teach', tier: 'clean', setting: 'travel', topic: 'train tickets by time and class', name: 'The train tickets', outcome: 'multprin',
-    text: 'A traveler books a train ticket. She picks one of 6 departure times and one of 3 classes of seat. How many different tickets can she book?',
-    route: { M1: ['chance'], C1: ['lists'] },
-    cues: { M1: ['How many different tickets can she book?'], C1: ['picks one of 6 departure times and one of 3 classes of seat'] },
-    segments: [
-      { text: 'A traveler books a train ticket.', note: 'That is the story, and it says what is being booked. It does not say what the choices are.' },
-      { text: 'She picks one of 6 departure times and one of 3 classes of seat.' },
-      { text: 'How many different tickets can she book?', note: 'That is the question, a count of results. The words that show how the choices are made come in the sentence before it.' }
-    ] },
 
   { id: 'm5-wd-bowl', use: 'check', tier: 'clean', setting: 'leisure', topic: 'a ball and shoes at a bowling alley', outcome: 'multprin',
     text: 'A bowling alley hires out a ball and a pair of shoes. A customer picks one of 5 ball weights and one of 8 shoe sizes. How many different hires can there be?',
@@ -33,21 +22,10 @@ FC.cases('math', 'u5', [
     ],
     reason: { C1: 'The words {cue:C1} give two separate choices, a ball weight and a shoe size, each from a list of its own, and ask how many different hires there can be. Picking a weight uses up no shoe size, and picking a size uses up no weight. That is {a:C1.lists}.' } },
 
-  /* ---------- The second kind: picking in order from one group ---------- */
   { id: 'm5-wd-medals', use: 'teach', tier: 'clean', setting: 'leisure', topic: 'two medals for four runners', name: 'The four runners', outcome: 'perm',
     text: 'Four friends, Ana, Ben, Cal and Dev, run a race on the school field. The first across the line gets a gold medal and the second gets a silver medal. In how many different ways can the two medals be given out?',
     route: { M1: ['chance'], C1: ['order'] },
     cues: { M1: ['In how many different ways can the two medals be given out?'], C1: ['The first across the line gets a gold medal and the second gets a silver medal'] } },
-
-  { id: 'm5-wd-opening', use: 'teach', tier: 'clean', setting: 'work', topic: 'staff picked to open and close a shop', name: 'The shop manager', outcome: 'perm',
-    text: 'A shop manager has 6 staff. She picks one to open the shop in the morning and a different one to close it in the evening. In how many different ways can she pick the two?',
-    route: { M1: ['chance'], C1: ['order'] },
-    cues: { M1: ['In how many different ways can she pick the two?'], C1: ['picks one to open the shop in the morning and a different one to close it in the evening'] },
-    segments: [
-      { text: 'A shop manager has 6 staff.', note: 'That gives the one group, and it matters. But the words that show how the picks are made come in the next sentence.' },
-      { text: 'She picks one to open the shop in the morning and a different one to close it in the evening.' },
-      { text: 'In how many different ways can she pick the two?', note: 'That is the question, a count of results. The words that show how the picks are made come in the sentence before it.' }
-    ] },
 
   { id: 'm5-wd-ferry', use: 'check', tier: 'clean', setting: 'travel', topic: 'two seats on a small ferry', outcome: 'perm',
     text: 'A small ferry has room for only 2 of the 5 people waiting on the quay. The first to board takes the window seat and the second takes the aisle seat. In how many different ways can the two seats be filled?',
@@ -60,21 +38,10 @@ FC.cases('math', 'u5', [
     ],
     reason: { C1: 'The words {cue:C1} pick two people one after another from one group of 5, and the seats are different, so who boards first matters. Whoever boards first is no longer waiting, so the second pick has one fewer to choose from. That is {a:C1.order}.' } },
 
-  /* ---------- The third kind: picking a group, in any order ---------- */
   { id: 'm5-wd-ice', use: 'teach', tier: 'clean', setting: 'home', topic: 'two friends sent for ice', name: 'The ice at the picnic', outcome: 'comb',
     text: 'Four friends, Ana, Ben, Cal and Dev, are at a picnic. Two of them are sent to fetch ice, and both do the same job. In how many different ways can the pair be picked?',
     route: { M1: ['chance'], C1: ['group'] },
     cues: { M1: ['In how many different ways can the pair be picked?'], C1: ['Two of them are sent to fetch ice, and both do the same job'] } },
-
-  { id: 'm5-wd-chaperones', use: 'teach', tier: 'clean', setting: 'work', topic: 'teachers picked to go on a trip', name: 'The school trip', outcome: 'comb',
-    text: 'A school has 5 teachers, and 2 of them are picked to go with a class on a trip. Both do the same job on the trip. In how many different ways can the two be picked?',
-    route: { M1: ['chance'], C1: ['group'] },
-    cues: { M1: ['In how many different ways can the two be picked?'], C1: ['Both do the same job on the trip'] },
-    segments: [
-      { text: 'A school has 5 teachers, and 2 of them are picked to go with a class on a trip.', note: 'That gives the one group and how many are picked, and it matters. But the words that show whether the order counts come next.' },
-      { text: 'Both do the same job on the trip.' },
-      { text: 'In how many different ways can the two be picked?', note: 'That is the question, a count of results. The words that show whether the order counts come in the sentence before it.' }
-    ] },
 
   { id: 'm5-wd-cheese', use: 'check', tier: 'clean', setting: 'shopping', topic: 'a sampler box of cheeses', outcome: 'comb',
     text: 'A cheese shop makes a sampler box of 3 cheeses picked from the 6 on its counter. The box is the same whichever cheese goes in first. How many different boxes can it make?',

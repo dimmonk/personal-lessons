@@ -1,9 +1,8 @@
 // Basic Math, Unit Three: the unit record. A PROCEDURE unit (kind 'P', lesson standard A12), the "missing numbers" branch.
 // It teaches the key's one question about a missing number, "What does the problem give that the missing number must fit?", and the
-// four kinds of problem its answers lead to. Each kind has a procedure, taught with a problem of the kind, two worked examples in
-// different areas of life (kind solved: every step named by what it is for, with its working and its reason, and one step whose
-// reason is held back until the learner has chosen it), and problems the learner finishes. The drill has three stages: the last
-// step of a worked problem, a whole problem, and a route (the key's questions, the kind, then the solving).
+// four kinds of problem its answers lead to. Each kind has a procedure, taught with a problem of the kind, one worked example (kind
+// solved: every step named by what it is for, with its working and its reason, and one step whose reason is held back until the
+// learner has chosen it), and a check. The drill is one stage: a route (the key's questions, the kind, then the solving).
 // Cards live in u3.cards-*.js, cases in u3.cases-*.js. Text fields never retype key wording; they use tokens:
 // {q:A1} {a:A1.option} {o:outcome} {plain:outcome} {needs:outcome} {t:term} {test:ledgerId} {cue:A1}.
 // Every problem's working, wrong choices and slips were computed by a script from the problem's own numbers, with the answer put
@@ -11,7 +10,7 @@
 
 FC.unit('math', 'u3', {
   kind: 'P',
-  rev: 3,
+  rev: 4,
   standard: 1,
   status: 'draft',        // 'live' only after the cold read in build.signoff
   tag: 'Three',
@@ -43,45 +42,31 @@ FC.unit('math', 'u3', {
   // key's order: a formula, a rate, two facts, a number multiplied by itself, then the question that tells them apart.
   // The part with drill: true is the last; its close cards come after the drill.
   parts: [
-    { id: 'p1', title: 'A calculation and its result: working backwards',
-      cards: ['orient-unknown', 'meet-rearr', 'again-rearr', 'lens-procedure', 'portrait-rearr', 'check-rearr',
-              'solved-rearr-1', 'solved-rearr-2', 'check-rearr-last', 'check-rearr-whole'] },
-    { id: 'p2', title: 'Scaling a rate to a new amount',
-      cards: ['meet-prop', 'again-prop', 'portrait-prop', 'check-prop', 'solved-prop-1', 'solved-prop-2', 'check-prop-last', 'check-prop-whole',
-              'look-rearr-prop', 'exc-bill'] },
-    { id: 'p3', title: 'Two numbers to find, and two facts to find them from',
-      cards: ['meet-simul', 'again-simul', 'portrait-simul', 'check-simul', 'solved-simul-1', 'solved-simul-2', 'check-simul-last', 'check-simul-whole',
-              'look-rearr-simul'] },
-    { id: 'p4', title: 'A missing number multiplied by itself',
-      cards: ['term-squared', 'meet-quad', 'again-quad', 'portrait-quad', 'check-quad', 'solved-quad-1', 'solved-quad-2', 'check-quad-last', 'check-quad-whole',
-              'look-rearr-quad', 'exc-breakeven'] },
-    { id: 'p5', title: 'The question that tells them apart, then the drill',
-      cards: ['q-a1', 'check-a1'], drill: true, close: ['recap-unknown', 'transfer-unknown'] }
+    { id: 'p1', title: 'A calculation and its result, and a rate',
+      cards: ['orient-unknown', 'meet-rearr', 'check-rearr', 'solved-rearr-1',
+              'meet-prop', 'check-prop', 'solved-prop-1', 'exc-bill'] },
+    { id: 'p2', title: 'Two numbers to find, a missing number multiplied by itself, then the drill',
+      cards: ['meet-simul', 'check-simul', 'solved-simul-1', 'look-rearr-simul',
+              'term-squared', 'meet-quad', 'check-quad', 'solved-quad-1', 'exc-breakeven',
+              'q-a1', 'check-a1'], drill: true, close: ['recap-unknown'] }
   ],
 
-  // The drill of a procedure unit has three stages (A12): last (the working is shown up to its last step, which is left to the
-  // learner), whole (the problem alone, worked by the learner) and route (the key's questions in order, the kind, then the
-  // solving). Items are authored in groups of look-alikes: each group holds problems of kinds that share a ledger pair, of one
-  // tier, listed clean, then varied, then misleading. Rearranging a formula is in every ledger pair, so it is in every group.
-  // The route stage also carries problems from Units One and Two, unlabelled.
+  // The drill of a procedure unit: the route stage (the key's questions in order, the kind, then the solving). Items are authored
+  // in groups of look-alikes: each group holds problems of kinds that share a ledger pair, of one tier. Rearranging a formula is in
+  // every ledger pair, so it is in every group. The route stage also carries problems from Units One and Two, unlabelled.
   drill: {
     key: 'u3',
-    add: 'After each answer, look at the slip named behind a wrong choice. Every wrong choice is the answer one particular slip produces, and a slip you can name is a slip you can catch next time. Some of the problems tell a story that points the wrong way, on purpose: what the problem gives for the missing number to fit decides the kind, and nothing else in the story does.',
     rungs: [
-      { ask: 'last',
-        items: [['m3-dl-prop-1', 'm3-dl-rearr-1', 'm3-dl-simul-1'], ['m3-dl-quad-1', 'm3-dl-rearr-2'], ['m3-dl-prop-2', 'm3-dl-rearr-3', 'm3-dl-simul-2']] },
-      { ask: 'whole',
-        items: [['m3-dw-rearr-1', 'm3-dw-prop-1', 'm3-dw-quad-1'], ['m3-dw-simul-1', 'm3-dw-rearr-2'], ['m3-dw-quad-2', 'm3-dw-rearr-3', 'm3-dw-simul-2']] },
       { ask: 'route',
-        items: [[{ earlier: 'u1' }, { earlier: 'u1' }], [{ earlier: 'u2' }, { earlier: 'u2' }], [{ earlier: 'u1' }, { earlier: 'u2' }],
-                ['m3-dr-rearr-1', 'm3-dr-prop-1'], ['m3-dr-simul-1', 'm3-dr-rearr-2'],
-                ['m3-dr-quad-1', 'm3-dr-rearr-3', 'm3-dr-prop-2'], ['m3-dr-simul-2', 'm3-dr-rearr-4'],
-                ['m3-dr-rearr-5', 'm3-dr-prop-3'], ['m3-dr-quad-2', 'm3-dr-rearr-6', 'm3-dr-quad-3']] }
+        items: [[{ earlier: 'u1' }], [{ earlier: 'u2' }],
+                ['m3-dr-rearr-1', 'm3-dr-prop-1', 'm3-dr-simul-1'],
+                ['m3-dr-quad-1', 'm3-dr-rearr-3', 'm3-dr-simul-2'],
+                ['m3-dr-rearr-5', 'm3-dr-prop-3'],
+                ['m3-dr-quad-2', 'm3-dr-rearr-6']] }
     ],
-    // Fresh problems for later days: three for each kind, one for each of its scheduled returns (E9). A kind that is due comes
-    // back as a problem the learner has not seen, as a whole route, beside a problem of the kind they most often take it for.
-    returns: ['m3-rt-rearr-1', 'm3-rt-rearr-2', 'm3-rt-rearr-3', 'm3-rt-prop-1', 'm3-rt-prop-2', 'm3-rt-prop-3',
-              'm3-rt-simul-1', 'm3-rt-simul-2', 'm3-rt-simul-3', 'm3-rt-quad-1', 'm3-rt-quad-2', 'm3-rt-quad-3']
+    // Fresh problems for later days: one for each kind (E9). A kind that is due comes back as a problem the learner has not seen,
+    // as a whole route, beside a problem of the kind they most often take it for.
+    returns: ['m3-rt-rearr-2', 'm3-rt-prop-2', 'm3-rt-simul-2', 'm3-rt-quad-2']
   },
 
   // Build notes: not shown to the learner, and left out of the fingerprint. The validator reads them.
@@ -89,7 +74,8 @@ FC.unit('math', 'u3', {
     history: [
       { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the missing-number branch of Basic Math, replacing the old Unit Three (first half) and its drill. Four kinds of problem, each taught with a problem of the kind, two worked examples with every step computed, and problems the learner finishes; two exceptions (an electricity bill that looks like a rate and is a formula, a break-even profit that looks like a formula and is a squared missing number); the drill has a last-step stage, a whole-problem stage and a route stage. Not yet deployed, so later edits before the first deploy stay revision 1.' },
       { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' },
-      { rev: 3, date: '2026-10-05', change: 'American English: US words and spelling.' }
+      { rev: 3, date: '2026-10-05', change: 'American English: US words and spelling.' },
+      { rev: 4, date: '2026-10-05', change: 'Trimmed to a quick lesson: one case per name, the essentials, a short drill.' }
     ],
     // What the K2 rewrite changed in this unit's part of the key, and why (from docs/rebuild/math-plan.md, section (a)).
     keyChanges: [

@@ -25,5 +25,7 @@ Started and finished 2026-10-05, in one session. Keys on Opus, units on Sonnet (
 
 - [x] American English everywhere: dollars, US rules and institutions, US spelling (V60)
 
+- [x] Every unit trimmed to a quick lesson; engine feedback and wording cut to what the learner needs (standard section 19, FC.ENGINE 3)
+
 ## Needs your decision
 - Cold read: read any unit as a beginner and say what is unclear (start with Psychology Unit One).

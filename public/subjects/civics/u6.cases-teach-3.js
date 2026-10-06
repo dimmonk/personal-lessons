@@ -1,5 +1,5 @@
-// Civics, Unit Six: cases shown inside cards, part three. The seven cases the checks ask about (use: 'check'), and the two cases
-// the worked cards run from the top (use: 'teach'). A check asks one question about one new case; its reason is shown after the answer.
+// Civics, Unit Six: cases shown inside cards, part three. The seven cases the checks ask about (use: 'check'), and the case
+// the worked card runs from the top (use: 'teach'). A check asks one question about one new case; its reason is shown after the answer.
 // A case a "tap the words" check asks about carries segments; every piece but the answer has a note.
 
 FC.cases('civics', 'u6', [
@@ -54,13 +54,6 @@ FC.cases('civics', 'u6', [
     outcome: 'police', route: { D1: ['states'], S1: ['own'], S2: ['nothing'] },
     cues: { S1: 'The Ostrow legislature passed a law', S2: 'public schools in Ostrow may not start before the last week of August' },
     reason: { S2: 'The matter is {cue:S2}: public schools, which are kept by the states. The case mentions no federal law and the rule takes away no right, so nothing else covers it.' } },
-
-  /* ---------- The two worked cases: a clean one, then one whose story points the wrong way ---------- */
-  { id: 'u6-dogs', use: 'teach', tier: 'clean', setting: 'community', topic: 'dog licenses', name: 'The dog license fee',
-    text: "Too many stray dogs were being found in Marsh County. Using the power the state gives to counties, the Marsh County board voted that anyone who keeps more than four dogs must pay a yearly license fee to the county.",
-    outcome: 'localgov', route: { D1: ['states'], S1: ['local'], S2: ['nothing'] },
-    cues: { D1: 'the Marsh County board voted', S1: 'Using the power the state gives to counties, the Marsh County board voted',
-            S2: 'anyone who keeps more than four dogs must pay a yearly license fee to the county' } },
 
   { id: 'u6-parkevent', use: 'teach', tier: 'misleading', setting: 'community', topic: 'event hours in a park', name: 'The park evening limit',
     text: "A group in the city of Kellmouth planned an evening march for better bus services in Mill Park. The Kellmouth city council has a rule that any event in a city park, whatever it is about, must end by nine at night. The group asked the council to let the march run until midnight, and the council voted no.",

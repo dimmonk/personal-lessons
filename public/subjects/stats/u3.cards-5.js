@@ -1,71 +1,37 @@
-// Statistical Claims, Unit Three, part three (first half): the key's question as a question, and two whole claims watched from the
-// first question to the name. The app prints, on the question card: the question, what it is for, each answer with when it is
-// given, what each answer keeps, why the question decides, and for every pair already compared the question that separates it.
-// The app prints the stem of each hold-back prompt ("Why is this X and not Y? ...") and the heading of the second look.
+// Statistical Claims, Unit Three, part two: the question as a question, and one whole claim watched from the first question to the
+// name. The app prints, on the question card: the question, what it is for, each answer with when it is given, what each answer keeps,
+// why the question decides, and for every pair compared the question that separates it. The question card also teaches the
+// ledger pairs survivor~selfselect and nonresp~smalln (taughtIn), and the worked case teaches survivor~nonresp.
+// The app prints the stem of the hold-back prompt ("Why is this X and not Y? ...") and the heading of the second look.
 
 FC.cards('stats', 'u3', [
 
-  /* ---------- The key's question, as a question ---------- */
+  /* ---------- The question, as a question ---------- */
   { id: 'q-how', kind: 'question', step: 'A1',
     h: 'The question you have been answering all along',
-    link: 'Since the Mill Street restaurants you have seen the question at the foot of each new name, with one answer under it. This card puts the question and its four answers in one place, as they are always asked, and says why it is asked.',
+    link: 'You have seen the question at the foot of each new name, with one answer under it. This card puts the question and its four answers in one place.',
     decides: [
-      'The first question, {q:S1}, sends a claim to this question when the people or things in the figure are not a fair picture of the group the claim is about, or there are too few of them. That answer is not yet a name. This question gives the name, and it does so by one thing: how the people or things got into the figure.',
-      'That is why it is the only question here. The four names are four different ways in, and each leaves out a different group: the ones that did not last, the ones who did not step forward, the ones who did not reply, or all that there would have been if there were more. Knowing which way tells you who the figure leaves out, which way it leans, and what you would need to see to put it right.'
+      'The first question, {q:S1}, sends a claim to this question when the people or things in the figure are not a fair picture of the group the claim is about, or there are too few of them.',
+      'Two pairs are easy to mix up. In {o:survivor} everyone was there at the start and the ones who left are missing; in {o:selfselect} nobody was asked by name and the ones in the figure chose to answer. In {o:nonresp} the few who replied are a small part of a long list; in {o:smalln} the few are everyone there is.'
     ],
     how: [
-      'Read the whole claim, the last sentence included, and find the words about how the people or things got in. Then ask which of the four ways it was.',
-      'Was the figure worked out after the fact from what was left at the end, with the ones that closed, quit or left missing? The answer is {a:A1.lasted}. Look for "still", "left" and "remaining", for a list of the ones that made it, and for a number that started which is larger than the number left.',
+      'Read the whole claim and find the words about how the people or things got in. Then ask which of the four ways it was.',
+      'Was the figure worked out after the fact from what was left at the end, with the ones that closed, quit or left missing? The answer is {a:A1.lasted}. Look for "still", "left" and "remaining", and a number that started which is larger than the number left.',
       'Was nobody asked by name, so that anyone who wanted to could answer? The answer is {a:A1.chose}. Look for a link, a box, a vote, a call-in line.',
       'Was a known list asked by name, with many not replying? The answer is {a:A1.replied}. Look for a number sent and a smaller number returned.',
       'Was everyone counted, and are there only a handful? The answer is {a:A1.handful}. Look for a count of ten or so behind a high or low figure, and ask what one more or fewer would do.',
-      'Whichever answer you give, put your finger on the words. If none of the four fits, go back to the first question. When the people or things in the figure are a fair picture of the group and there are enough of them, the claim may hold, and the answer to that first question is {a:S1.holds}. That is as much a result as any of the four.'
+      'Whichever answer you give, put your finger on the words. If none of the four fits, go back to the first question: when the people or things in the figure are a fair picture of the group and there are enough of them, the answer to it is {a:S1.holds}. That is as much a result as any of the four.'
     ],
-    whenBoth: 'Sometimes two of the answers seem to fit. A figure from 12 replies could be a few replies from a long list, or everyone in a group of 12. A figure from people who stayed could also be a figure from people who chose to answer. Each pair below has been set side by side in this unit, and each has one question that tells it apart.' },
+    whenBoth: 'Sometimes two of the answers seem to fit. Each pair below has one question that tells it apart.' },
 
   { id: 'check-how', kind: 'check', after: 'A1',
     case: 'cn-bakery',
     ask: { type: 'step', step: 'A1' } },
 
-  /* ---------- Two whole claims, watched ---------- */
-  { id: 'worked-poll', kind: 'worked',
-    h: 'A whole claim, from the first question to the name',
-    link: 'You have the four names and the question about them. Before you run a claim yourself, watch two being run from the top, in the order the questions are asked. You are not asked anything until the end of each.',
-    case: 'cn-school-start',
-    steps: [
-      { step: 'S1',
-        reason: 'The parts of a claim are checked in order, so begin with the people in the figure. The chair speaks for "parents", and the figure comes from a poll that anyone in a group of 2,000 members could vote in: {cue:S1}. 410 of the 2,000 voted, which is 20 in every 100, and the voters are only some of the parents. The people in the figure are not a fair picture of the parents the chair speaks for, so the claim fails at the very start, and nothing built on it needs checking. The answer is {a:S1.counted}.' },
-      { step: 'A1',
-        reason: 'Now the question after it. Nobody was asked by name. The poll was posted for anyone in the group to see, and {cue:A1}. The ones who voted chose to, and the parents who feel most strongly about early mornings are the likeliest to. The answer is {a:A1.chose}.' }
-    ],
-    hold: {
-      neighbor: 'nonresp',
-      prompt: { kind: 'reason',
-        lead: 'The group has 2,000 members and only 410 voted, so the case can look like a list of people who were asked and mostly did not answer.',
-        choices: [
-          { id: 'a', text: 'The group has 2,000 members, and 410 of them voted.',
-            note: 'True, and it is why the case can look like {o:nonresp}. But it does not separate the two names: in both, a lot of people are in the group and few answered.' },
-          { id: 'b', text: 'The poll was posted for anyone in the group to see and vote on, and nobody was asked by name.' },
-          { id: 'c', text: 'The chair told the school board about the result.',
-            note: 'True, but that is what the figure is used to say. It does not show how the people got into the figure.' }
-        ],
-        answer: 'b' },
-      reason: [
-        'For {o:nonresp} you must be able to point to this: {needs:nonresp}. The case has a known group of 2,000, but nobody in it was asked. A poll was posted, and the ones who voted chose to. There is no list of people who were asked and did not reply.',
-        'It is the question from the homework survey. {test:selfselect~nonresp} Here nobody was asked by name, so the answer is {a:A1.chose}.'
-      ]
-    },
-    impression: {
-      resembles: 'cn-fourday',
-      text: [
-        'You have an answer. Now take a second look of a different kind: does this case look like one you know? It should bring back the magazine poll: a poll that any reader could click, and a figure from the ones who did, read as what everyone thinks.',
-        'Here the likeness agrees with the answer, so the answer stands. The question comes first, because it makes you point at words in the case. The likeness is only a second look. When the two disagree, do not pick the one you prefer. Go back to the question and find the words in the case that answer it. The second whole case shows how.'
-      ]
-    } },
-
+  /* ---------- One whole claim, watched ---------- */
   { id: 'worked-yoga', kind: 'worked',
-    h: 'A second whole claim, where the story points the wrong way',
-    link: 'The school poll was a clean case: one thing was going on in it. In this second case the first thing you notice is not the thing that decides it. Watch which words each question picks out.',
+    h: 'A whole claim, from the first question to the name',
+    link: 'Watch one claim being run from the top, in the order the questions are asked. The first thing you notice in it is not the thing that decides it. You are not asked anything until the end.',
     case: 'cn-yoga',
     steps: [
       { step: 'S1',

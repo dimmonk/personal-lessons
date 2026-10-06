@@ -1,4 +1,4 @@
-// Statistical Claims, Unit One: cases shown inside cards, parts one and two (the first two answers and their look-alike pair).
+// Statistical Claims, Unit One: cases shown inside cards, part one (the first two answers and their look-alike pair).
 // use: 'teach' = shown in a card with its reasoning; 'check' = asked between cards. Neither may appear in the drill.
 // A gate unit's cases carry route: { S1: [option] } and no outcome: the answer to the first question is the name.
 // setting is one of subject.settings (an area of life); topic is the story, and no two cases of one family share a topic.
@@ -16,16 +16,6 @@ FC.cases('stats', 'u1', [
     route: { S1: ['counted'] },
     cues: { S1: 'stood outside the town golf club one Saturday morning and asked 50 people' } },
 
-  { id: 'gate-windows', use: 'teach', tier: 'clean', setting: 'work', topic: 'a new sales opening on four calls', name: 'The window calls',
-    text: "Jonas sells windows. On his first four calls with a new opening line, three people agreed to a visit. 'Three in four people say yes when I open with the new line,' he tells his team.",
-    route: { S1: ['counted'] },
-    cues: { S1: 'On his first four calls with a new opening line, three people agreed to a visit' },
-    segments: [
-      { text: 'Jonas sells windows.', note: 'That only says who he is. It tells you nothing about what the figure was worked out from.' },
-      { text: 'On his first four calls with a new opening line, three people agreed to a visit.' },
-      { text: "'Three in four people say yes when I open with the new line,' he tells his team.", note: 'That is the claim, and it is what the figure is used to say. What you are asked for is the words that show what the figure came from, and those are in the sentence before.' }
-    ] },
-
   { id: 'gate-funds', use: 'check', tier: 'clean', setting: 'money', topic: 'a fund firm and the funds it closed',
     text: "A fund firm advertises: 'Every one of our funds has beaten the market for ten years.' The firm lists the 8 funds it still runs, and it closed 12 others in those years.",
     route: { S1: ['counted'] },
@@ -42,16 +32,6 @@ FC.cases('stats', 'u1', [
     text: "A hospital group announces: 'Waiting time in our emergency rooms has fallen from six hours to four.' This year the group changed when the clock starts. It used to start when a patient walked in. It now starts when a nurse first sees them.",
     route: { S1: ['measure'] },
     cues: { S1: 'It used to start when a patient walked in. It now starts when a nurse first sees them' } },
-
-  { id: 'gate-running', use: 'teach', tier: 'clean', setting: 'leisure', topic: 'a running app that widened what counts as a run', name: 'The running app',
-    text: "A running app sent every user a summary: 'Last year you ran 4 km a week. This year you ran 6 km a week.' In March the app changed what counts as a run: before, only jogging counted, and now any walk of more than ten minutes does. The summary covers the same 40,000 users in both years.",
-    route: { S1: ['measure'] },
-    cues: { S1: 'In March the app changed what counts as a run: before, only jogging counted, and now any walk of more than ten minutes does' },
-    segments: [
-      { text: "A running app sent every user a summary: 'Last year you ran 4 km a week. This year you ran 6 km a week.'", note: 'That is the claim and its figures. The question is what changed in how they are counted, and the words that show it come after.' },
-      { text: 'In March the app changed what counts as a run: before, only jogging counted, and now any walk of more than ten minutes does.' },
-      { text: 'The summary covers the same 40,000 users in both years.', note: 'That tells you who is in the figure, and it is fine: the same users in both years. What changed is in the sentence before.' }
-    ] },
 
   { id: 'gate-jobs', use: 'check', tier: 'clean', setting: 'learning', topic: 'a university and its employment rate',
     text: "A university says: 'Of our graduates, 95% were in work six months after leaving, up from 80% five years ago.' Every graduate of both years was contacted, and nearly all of them replied. Five years ago only full-time jobs counted as work. Now any paid work counts, including a few hours a week in a café.",

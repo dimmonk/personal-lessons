@@ -1,9 +1,10 @@
-// Basic Math, Unit Five: the worked examples (part 1 of 3). Two for each kind of problem, in different areas of life.
+// Basic Math, Unit Five: the worked examples (part 1 of 3). One for each kind of problem.
 // Every step is named by what it is for, with its working and its reason. One step in each carries the idea, and its reason is held
 // back until the learner has chosen it.
 // The working, the wrong choices and the slip behind each were computed from the problem’s own numbers when the file was written: check a number you change against its working.
 
 FC.cards('math', 'u5', [
+
   {
     id: 'solved-multprin-1',
     kind: 'solved',
@@ -58,59 +59,6 @@ FC.cards('math', 'u5', [
   },
 
   {
-    id: 'solved-multprin-2',
-    kind: 'solved',
-    outcome: 'multprin',
-    h: 'Worked again: how many different card codes?',
-    link: 'The same procedure in a different story, with a code whose choices all have the same list.',
-    problem: 'm5-s-mp-2',
-    steps: [
-      {
-        does: 'Name each choice that has to be made',
-        working: 'first digit; second digit; third digit; fourth digit',
-        why: 'Every place in the code is a separate choice: which digit goes in it. A code with 4 places has 4 choices, even though they all look alike.'
-      },
-      {
-        does: 'Count the full list for each choice',
-        working: 'first digit: 10; second digit: 10; third digit: 10; fourth digit: 10'
-      },
-      {
-        does: 'Multiply the counts',
-        working: '10 × 10 × 10 × 10 = 10,000. That is 10,000 codes',
-        why: 'Each place multiplies the count by 10. One place gives 10 codes, two places give 100 (from 00 to 99), three give 1,000 (from 000 to 999) and four give 10,000. A check: counting the codes off from 0000 to 9999 gives the same 10,000.'
-      }
-    ],
-    result: 'There are 10,000 different codes, from 0000 to 9999.',
-    hold: {
-      step: 1,
-      prompt: {
-        kind: 'reason',
-        choices: [
-          {
-            id: 'x',
-            text: 'A digit may be used more than once, so after a digit has been put in one place, all ten digits are still available for the next place.'
-          },
-          {
-            id: 'y',
-            text: 'There are four places in the code.',
-            note: 'That is true, and it is the number of choices, but it does not say how long each list is.'
-          },
-          {
-            id: 'z',
-            text: 'The digits are 0 to 9.',
-            note: 'That is true, and it is what is on each list, but it does not say why the second list is as long as the first.'
-          }
-        ],
-        answer: 'x'
-      },
-      reason: [
-        'If the first digit is 7, the second digit can be 7 again, or any of the other nine. So the list for the second place is the full list of 10, the same as for the first place, and so it is for all four places.',
-        'That is why the problem says that a digit may be used more than once. If a digit could not be used twice, each place would have one digit fewer to choose from, and the lists would not be full. A list that stays full whatever was picked before it is what this kind needs.'
-      ]
-    }
-  },
-
-  {
     id: 'solved-perm-1',
     kind: 'solved',
     outcome: 'perm',
@@ -159,56 +107,6 @@ FC.cards('math', 'u5', [
       reason: [
         'Start with the chair. Any of the 12 members can be chair, so there are 12 choices. Say Ana is chair. Now the secretary: Ana already has a job and may not have another, so the secretary comes from the other 11 members. Say Ben is secretary. For the treasurer, Ana and Ben are both taken, which leaves 10.',
         'The counts do not fall because the problem is awkward. They fall because each pick uses up a member. That is the difference from the first kind, where each choice had a full list of its own. Here every pick comes out of the same group, so the list for the next pick is one shorter.'
-      ]
-    }
-  },
-
-  {
-    id: 'solved-perm-2',
-    kind: 'solved',
-    outcome: 'perm',
-    h: 'Worked again: six books in a row',
-    link: 'The same procedure in a different story, in which every member of the group is placed, so the last pick has nothing left to choose.',
-    problem: 'm5-s-pe-2',
-    steps: [
-      {
-        does: 'Count the group and the picks',
-        working: 'Group: 6 books. Picks: 6 (first place, second place, third place, fourth place, fifth place, sixth place)',
-        why: 'Here the picks are the six places on the shelf, and every book is placed, so there are as many picks as books. A different order of the same books is a different row, so the order counts.'
-      },
-      {
-        does: 'Write how many can be picked each time',
-        working: 'first place: 6; second place: 5; third place: 4; fourth place: 3; fifth place: 2; sixth place: 1',
-        why: 'Each place uses up a book, so the counts fall by one each time, down to 1. The last book has no choice at all: when five places are filled, only one book is left, and it goes in the sixth place.'
-      },
-      { does: 'Multiply them', working: '6 × 5 × 4 × 3 × 2 × 1 = 720. That is 720 orders' }
-    ],
-    result: 'The six books can stand in a row in 720 different orders.',
-    hold: {
-      step: 2,
-      prompt: {
-        kind: 'reason',
-        choices: [
-          {
-            id: 'x',
-            text: 'Each place is a choice from a list one shorter than the last, so the counts multiply, and the answer counts every order of the books as its own result.'
-          },
-          {
-            id: 'y',
-            text: '6 × 5 × 4 × 3 × 2 × 1 = 720.',
-            note: 'That is true, and it is the working of the step, but it does not say why the counts are multiplied.'
-          },
-          {
-            id: 'z',
-            text: 'The last place has only 1 book left to choose.',
-            note: 'That is true, and it was shown in the step before, but it does not say why this step multiplies.'
-          }
-        ],
-        answer: 'x'
-      },
-      reason: [
-        'Fill the places one at a time. The first place has 6 books to choose from. For each of those 6, the second place has 5 left, which gives 6 × 5 = 30 ways to fill the first two places. For each of those 30, the third place has 4 left, which gives 30 × 4 = 120. Going on, 120 × 3 = 360, 360 × 2 = 720, and 720 × 1 = 720.',
-        'Multiplying is what counting all the ways to fill places one after another always comes to. Adding the counts, 6 + 5 + 4 + 3 + 2 + 1 = 21, would count the books on the shelf and never a whole row.'
       ]
     }
   },

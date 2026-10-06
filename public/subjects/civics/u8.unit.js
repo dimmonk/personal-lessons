@@ -8,7 +8,7 @@
 
 FC.unit('civics', 'u8', {
   kind: 'F',              // C classification, F facts, P procedure
-  rev: 3,
+  rev: 4,
   standard: 1,
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author)
   tag: 'Eight',
@@ -36,36 +36,25 @@ FC.unit('civics', 'u8', {
       shared: 'Both name a kind of case, and each is the answer to one question: is the person on trial for a crime?',
       rule: 'One is the kind of case in which a person is on trial for a crime: {f:ic-crim}. The other is the kind in which nobody is, and an immigration hearing is of this kind: {f:ic-civil}.',
       test: 'Is the person on trial for a crime, or is nobody?' },
-    { id: 'ic-accused~ic-immig', pair: ['ic-accused', 'ic-immig'],
-      shared: 'Both are about the same promise of an appointed lawyer for a person who cannot pay.',
-      rule: 'One says whom the promise is written for: {f:ic-accused}. The other says what becomes of it in an immigration hearing: {f:ic-immig}.',
-      test: 'Am I being asked whom the promise is written for, or what becomes of it in an immigration hearing?' },
     { id: 'oa-what~oa-pledge', pair: ['oa-what', 'oa-pledge'],
       shared: 'Both are promises of loyalty to the United States, and both have ‘Allegiance’ in their names.',
       rule: 'One is made once, by a person who is becoming a citizen: {f:oa-what}. The other is said by schoolchildren to the flag, and is no part of becoming a citizen: {f:oa-pledge}.',
-      test: 'Is it made once, at the ceremony that makes someone a citizen, or said to the flag at school?' },
-    { id: 'te-law~te-who', pair: ['te-law', 'te-who'],
-      shared: 'Both are part of the answer to who decides how the citizenship test works, and both are tied to the law that requires it.',
-      rule: 'One is where the requirement comes from: {f:te-law}. The other is who runs the interview and sets its details: {f:te-who}.',
-      test: 'Is it asking where the requirement comes from, or who runs the interview and sets the details?' }
+      test: 'Is it made once, at the ceremony that makes someone a citizen, or said to the flag at school?' }
   ],
 
-  // Parts are stopping points (A13). The last holds the test, the drill and the close.
+  // Parts are stopping points (A13). The last holds the drill and the close.
   parts: [
-    { id: 'p1', title: 'What the government is held back from',
+    { id: 'p1', title: 'Rights, duties, and what is kept for citizens',
       cards: ['orient-rights',
               'con-speak', 'facts-speak', 'chk-sp-speech', 'chk-sp-religion', 'chk-sp-press', 'chk-sp-assembly', 'chk-sp-petition', 'look-speak',
-              'con-accused', 'facts-accused', 'chk-ac-search', 'chk-ac-silence', 'chk-ac-lawyer', 'chk-ac-jury', 'look-accused'] },
-    { id: 'p2', title: 'What the law asks, what is kept for citizens, and what is not promised',
-      cards: ['con-duty', 'facts-duty', 'chk-du-obey', 'chk-du-tax', 'chk-du-draft',
-              'con-citizen', 'facts-citizen', 'chk-cz-vote', 'chk-cz-run', 'chk-cz-jury', 'look-jury',
-              'con-promise', 'facts-promise', 'chk-np-kind', 'chk-np-none', 'chk-np-source', 'chk-np-change'] },
-    { id: 'p3', title: 'Two kinds of case, and the oath',
-      cards: ['con-hearing', 'facts-hearing', 'chk-ic-crim', 'chk-ic-civil', 'chk-ic-accused', 'chk-ic-immig', 'look-kind', 'look-lawyer',
-              'con-oath', 'facts-oath', 'chk-oa-what', 'chk-oa-pledge', 'chk-oa-giveup', 'chk-oa-support', 'chk-oa-serve', 'look-oath'] },
-    { id: 'p4', title: 'The test, then the drill',
-      cards: ['con-test', 'facts-test', 'chk-te-form', 'chk-te-list', 'chk-te-english', 'chk-te-exempt', 'chk-te-law', 'chk-te-who',
-              'chk-te-source', 'chk-te-version', 'look-test'],
+              'con-accused', 'facts-accused', 'chk-ac-search', 'chk-ac-silence', 'chk-ac-lawyer', 'chk-ac-jury', 'look-accused',
+              'con-duty', 'facts-duty', 'chk-du-obey', 'chk-du-tax', 'chk-du-draft',
+              'con-citizen', 'facts-citizen', 'chk-cz-vote', 'chk-cz-run', 'chk-cz-jury', 'look-jury'] },
+    { id: 'p2', title: 'What is not promised, two kinds of case, the oath and the test, then the drill',
+      cards: ['con-promise', 'facts-promise', 'chk-np-kind', 'chk-np-none', 'chk-np-source',
+              'con-hearing', 'facts-hearing', 'chk-ic-crim', 'chk-ic-civil', 'chk-ic-immig', 'look-kind',
+              'con-oath', 'facts-oath', 'chk-oa-what', 'chk-oa-pledge', 'chk-oa-giveup', 'chk-oa-support', 'chk-oa-serve', 'look-oath',
+              'con-test', 'facts-test', 'chk-te-list', 'chk-te-english', 'chk-te-who', 'chk-te-source', 'chk-te-version'],
       drill: true, close: ['recap-rights'] }
   ],
 
@@ -78,11 +67,10 @@ FC.unit('civics', 'u8', {
       [{ fact: 'ac-search' }], [{ fact: 'ac-silence' }, { fact: 'ac-lawyer' }], [{ fact: 'ac-jury' }, { fact: 'cz-jury' }],
       [{ fact: 'du-obey' }], [{ fact: 'du-tax' }], [{ fact: 'du-draft' }],
       [{ fact: 'cz-vote' }], [{ fact: 'cz-run' }],
-      [{ fact: 'np-kind' }], [{ fact: 'np-none' }], [{ fact: 'np-source' }], [{ fact: 'np-change' }],
-      [{ fact: 'ic-crim' }, { fact: 'ic-civil' }], [{ fact: 'ic-accused' }, { fact: 'ic-immig' }],
+      [{ fact: 'np-kind' }], [{ fact: 'np-none' }], [{ fact: 'np-source' }],
+      [{ fact: 'ic-crim' }, { fact: 'ic-civil' }], [{ fact: 'ic-immig' }],
       [{ fact: 'oa-what' }, { fact: 'oa-pledge' }], [{ fact: 'oa-giveup' }], [{ fact: 'oa-support' }], [{ fact: 'oa-serve' }],
-      [{ fact: 'te-form' }], [{ fact: 'te-list' }], [{ fact: 'te-english' }], [{ fact: 'te-exempt' }],
-      [{ fact: 'te-law' }, { fact: 'te-who' }], [{ fact: 'te-source' }], [{ fact: 'te-version' }]
+      [{ fact: 'te-list' }], [{ fact: 'te-english' }], [{ fact: 'te-who' }], [{ fact: 'te-source' }], [{ fact: 'te-version' }]
     ] }],
     returns: []           // a fact has no case to vary: it returns as its row, next to the fact it is swapped with (E9)
   },
@@ -92,7 +80,8 @@ FC.unit('civics', 'u8', {
     history: [
       { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the second fact unit of Civics, replacing old Unit Four (rights, duties and the oath, except its look-alike card, which is a key matter taught in the branch units) and its drill n4. Eight groups of facts under the idea each serves, thirty-six facts, seven look-alike pairs. Rebuilt on one axis per card, so that no row has two right answers (audit U4-3: the old options mixed who with what kind of thing). Old claims 2 (the Bill of Rights protects only citizens), 8 (the Constitution guarantees a job and a home) and 14 (a non-citizen pays no income tax) are held as the right fact in rows and never named (a fact unit has no refute card, A12). Everything asserted comes from the old material of standard0.js. Two holes are skipped and said so on the cards: which of the accused’s rights apply in an immigration hearing, and the details of the test. One pair spans two facts cards (the jury trial and jury service). Not yet deployed.' },
       { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' },
-      { rev: 3, date: '2026-10-05', change: 'American English: US spelling.' }
+      { rev: 3, date: '2026-10-05', change: 'American English: US spelling.' },
+      { rev: 4, date: '2026-10-05', change: 'Trimmed to a quick lesson: one case per name, the essentials, a short drill.' }
     ],
     keyChanges: [],
     wrongIdeas: [],       // a fact unit holds none: claims 2, 8 and 14 become rows, claim 17 (the test is in the Constitution) is corrected on the test card in the right fact, and the key units carry the rest

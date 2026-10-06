@@ -1,8 +1,9 @@
-// Basic Math, Unit Two: the worked examples (part 1 of 3). Two for each kind of problem, in different areas of life.
+// Basic Math, Unit Two: the worked examples, one for each kind of problem.
 // Every step is named by what it is for, with its working and its reason. One step in each carries the idea, and its reason is held
 // back until the learner has chosen it. // The working, the wrong choices and the slip behind each were computed from the problem's own numbers when the file was written: check a number you change against its working.
 
 FC.cards('math', 'u2', [
+
   {
     id: 'solved-prime-1',
     kind: 'solved',
@@ -62,64 +63,6 @@ FC.cards('math', 'u2', [
   },
 
   {
-    id: 'solved-prime-2',
-    kind: 'solved',
-    outcome: 'prime',
-    h: 'Worked again: is 119 a {t:prime}?',
-    link: 'The same procedure in a different story, with a number that does split, to show how the working ends early.',
-    problem: 's-prime-2',
-    steps: [
-      {
-        does: 'Find where testing can stop',
-        working: '10 × 10 = 100 and 11 × 11 = 121, so √119 is between 10 and 11. Test no further than 10',
-        why: 'The same first step, for the same reason: if 119 splits into two whole numbers multiplied together, the smaller one is no more than the {t:sqroot} of 119, so testing can stop at 10. Here 10 × 10 = 100 is below 119 and 11 × 11 = 121 is above it.'
-      },
-      {
-        does: 'List the primes up to there',
-        working: 'Primes up to 10: 2, 3, 5, 7',
-        why: 'The primes up to 10. The numbers 4, 6, 8, 9 and 10 are left out: any of them that fitted would have been caught by a smaller prime.'
-      },
-      {
-        does: 'Divide by each prime in turn, looking for an exact fit',
-        working: '119 = 2 × 59 + 1, with 1 left over; 119 = 3 × 39 + 2, with 2 left over; 119 = 5 × 23 + 4, with 4 left over; 119 = 7 × 17, with nothing left over. 7 fits, so stop'
-      },
-      {
-        does: 'Say what it shows',
-        working: '7 fits 119 exactly, so 119 is not prime: 7 × 17 = 119',
-        why: 'The working ended the moment a prime fitted, because one exact fit is all that is needed to show that 119 splits. The fit also gives the layout: 119 = 7 × 17, so 7 rows of 17 tiles, or 17 rows of 7.'
-      }
-    ],
-    result: '119 is not a {t:prime}. The builder can lay the 119 tiles in 7 rows of 17 tiles, or in 17 rows of 7 tiles.',
-    hold: {
-      step: 2,
-      prompt: {
-        kind: 'reason',
-        choices: [
-          {
-            id: 'x',
-            text: 'A prime fits only when nothing is left over, and one exact fit is enough to show that the number splits, so the dividing stops there.'
-          },
-          {
-            id: 'y',
-            text: '119 = 2 × 59 + 1, so dividing by 2 leaves 1 over.',
-            note: 'That is true, and it is one line of the working, but it does not say why the working stops at 7.'
-          },
-          {
-            id: 'z',
-            text: 'There are four primes up to 10.',
-            note: 'That is true, but it does not say what makes a division count as a fit, or why the dividing stops.'
-          }
-        ],
-        answer: 'x'
-      },
-      reason: [
-        'Each division is read as whole groups and what is left over. 119 = 2 × 59 + 1 means 59 whole groups of 2 and 1 left over, so 2 does not fit. 119 = 3 × 39 + 2 and 119 = 5 × 23 + 4 leave something over too. Only a left over of nothing is a fit, because only then do equal groups use every tile.',
-        'At 7 the division is exact: 119 = 7 × 17. That one fit shows that 119 can be laid in equal rows, so there is no reason to test more primes. A number needs only one fit to be split, and it needs no fit up to the stopping point to be a {t:prime}.'
-      ]
-    }
-  },
-
-  {
     id: 'solved-factor-1',
     kind: 'solved',
     outcome: 'factor',
@@ -173,64 +116,6 @@ FC.cards('math', 'u2', [
   },
 
   {
-    id: 'solved-factor-2',
-    kind: 'solved',
-    outcome: 'factor',
-    h: 'Worked again: every size of bunch for 30 roses',
-    link: 'The same procedure in a different story, this time asked in the other wording of the kind: every way a number splits.',
-    problem: 's-factor-2',
-    steps: [
-      {
-        does: 'Break the number into primes',
-        working: '30 = 2 × 3 × 5 (30 ÷ 2 = 15, 15 ÷ 3 = 5, and 5 is prime)',
-        why: 'The same first step as for a list of primes, for the same reason: every way of sharing 30 out evenly uses some of its primes multiplied together, so the primes come first. Here 30 = 2 × 3 × 5.'
-      },
-      {
-        does: 'Build every number you can make by multiplying some of those primes',
-        working: '1, 2, 3, 5, 6 (2 × 3), 10 (2 × 5), 15 (3 × 5), 30 (2 × 3 × 5). Here 1 uses none of the primes and 30 uses all of them'
-      },
-      {
-        does: 'Leave out 1 and 30, which give one group, or groups of one',
-        working: '2, 3, 5, 6, 10, 15',
-        why: 'A bunch of 1 rose would make 30 bunches, and a bunch of 30 roses would make one bunch. The problem asks for more than one bunch and more than one rose in each, so both are left out.'
-      },
-      {
-        does: 'Count what is left',
-        working: '6 different sizes',
-        why: 'Each size left is a bunch size that fits exactly. For example 6 roses make 5 bunches, because 6 × 5 = 30, and 10 roses make 3 bunches.'
-      }
-    ],
-    result: 'The florist can make bunches of 2, 3, 5, 6, 10 or 15 roses: six different sizes.',
-    hold: {
-      step: 1,
-      prompt: {
-        kind: 'reason',
-        choices: [
-          {
-            id: 'x',
-            text: 'Every size of bunch that shares 30 out exactly is made by multiplying some of the primes of 30, and every product of some of them shares 30 out exactly.'
-          },
-          {
-            id: 'y',
-            text: '30 = 2 × 3 × 5 has three primes.',
-            note: 'That is true, but it does not say why multiplying some of them together gives the bunch sizes.'
-          },
-          {
-            id: 'z',
-            text: 'A bunch of 1 rose and a bunch of 30 roses are in the list.',
-            note: 'That is true, and the next step deals with them, but it does not say why the list is built from products of primes.'
-          }
-        ],
-        answer: 'x'
-      },
-      reason: [
-        'Take a bunch size that shares 30 out exactly, say 6: 30 = 6 × 5. Break the 6 into primes, 2 × 3, and the 5 is already a prime, so 30 = 2 × 3 × 5 again, and the 6 was made from some of the primes of 30. The same holds for any size that fits, because the primes of a number are the same however the number is split.',
-        'The other way round, any product of some of the primes of 30 leaves the rest of the primes to make the number of bunches. 2 × 5 = 10 leaves the 3, so 10 roses make 3 bunches. So building every product lists every size, with none missed and none that does not fit.'
-      ]
-    }
-  },
-
-  {
     id: 'solved-hcf-1',
     kind: 'solved',
     outcome: 'hcf',
@@ -279,6 +164,167 @@ FC.cards('math', 'u2', [
       reason: [
         'For a piece to fit into 60, it must be built from primes that 60 has. For a piece to fit into 84, it must be built from primes that 84 has. So a piece that fits into both is built from primes that are in both lists. The 5 is only in 60 and the 7 only in 84, so neither can be in the piece.',
         'For the 2, each number has it twice, so the piece can use it twice. For the 3, each has one, so the piece uses one. Using every shared prime, as many times as the number that has it fewer times, builds the biggest piece that fits both. Any more of a prime and one of the numbers would have too few of it.'
+      ]
+    }
+  },
+
+  {
+    id: 'solved-lcm-1',
+    kind: 'solved',
+    outcome: 'lcm',
+    h: 'Worked: when two buses next arrive together',
+    link: 'Here is the procedure for the fourth kind with real numbers, every step written out. It starts with the same step as the last kind, and then it keeps different primes.',
+    problem: 's-lcm-1',
+    steps: [
+      {
+        does: 'Break each number into primes',
+        working: '20 = 2 × 2 × 5; 30 = 2 × 3 × 5',
+        why: 'The same first step as for the biggest equal piece, for a different reason. A time when a bus that comes every 20 minutes arrives is a number that 20 divides, so it must contain every prime of 20, and the same goes for 30. Here 20 = 2 × 2 × 5 and 30 = 2 × 3 × 5.'
+      },
+      {
+        does: 'Collect every prime that either number has, each as many times as the number that has it more times',
+        working: 'Collected: 2 × 2 × 3 × 5'
+      },
+      {
+        does: 'Multiply them together',
+        working: '2 × 2 × 3 × 5 = 60',
+        why: 'Multiplying gives 2 × 2 × 3 × 5 = 60. Check by counting: by minute 60 the 20-minute bus has come 3 times (3 × 20 = 60) and the 30-minute bus 2 times (2 × 30 = 60). Nothing earlier works: the 30-minute bus first arrives at 30, and 20 does not divide 30.'
+      }
+    ],
+    result: 'The buses next arrive together after 60 minutes.',
+    hold: {
+      step: 1,
+      prompt: {
+        kind: 'reason',
+        choices: [
+          {
+            id: 'x',
+            text: 'A time when both buses arrive must contain every prime of 20 and every prime of 30, so it needs each prime as many times as the number that has it more times.'
+          },
+          {
+            id: 'y',
+            text: 'Both numbers have a 2 and a 5.',
+            note: 'That is true, but it does not say how many of each prime the answer needs.'
+          },
+          {
+            id: 'z',
+            text: '20 has two 2s and 30 has one 3.',
+            note: 'That is true, and it shows where the different primes come from, but it does not say why they are all kept.'
+          }
+        ],
+        answer: 'x'
+      },
+      reason: [
+        'For the 20-minute bus to arrive at a time, 20 must divide that time, so the time must contain 20’s primes: 2, 2 and 5. For the 30-minute bus, the time must contain 2, 3 and 5. A time that holds both lists at once needs two 2s, because 20 needs two. It needs one 3, because 30 needs one. And it needs one 5, because the 5 is shared, and one is enough for both.',
+        'Using fewer would leave one bus out. Using more would not be the first time, because a smaller time already holds everything both numbers need. That is the opposite of the last kind. There the shared primes were kept, and a prime in only one number was left out. Here every prime of either number is kept.'
+      ]
+    }
+  },
+
+  {
+    id: 'solved-modrem-1',
+    kind: 'solved',
+    outcome: 'modrem',
+    h: 'Worked: the time 50 hours after 9 o’clock',
+    link: 'Here is the procedure for the fifth kind with real numbers, every step written out.',
+    problem: 's-modrem-1',
+    steps: [
+      {
+        does: 'Find how many whole loops fit in the count',
+        working: '12 × 4 = 48, the most whole loops that do not pass 50',
+        why: 'A clock goes round in loops of 12 hours. Every whole loop brings it back to the time it started, so whole loops do not change what the clock shows. What matters is how many fit: 12 × 4 = 48 is the most that do not pass 50, because 12 × 5 = 60 is too many.'
+      },
+      { does: 'Take them away to find what is left over', working: '50 − 48 = 2' },
+      {
+        does: 'Move on from the start by what is left over',
+        working: '9 o’clock, then 10 o’clock and 11 o’clock: 2 hours on is 11 o’clock',
+        why: 'The 2 hours that are left over are moved on from 9 o’clock, the time the count started, and not from 12: 9 o’clock, then 10 o’clock, then 11 o’clock.'
+      }
+    ],
+    result: 'Fifty hours after 9 o’clock, the clock shows 11 o’clock.',
+    hold: {
+      step: 1,
+      prompt: {
+        kind: 'reason',
+        choices: [
+          {
+            id: 'x',
+            text: 'Each whole loop brings the clock back to where it started, so only what is left over after the whole loops can change the time.'
+          },
+          {
+            id: 'y',
+            text: '50 hours is more than two whole days.',
+            note: 'That is true, but it does not say why the whole loops can be taken away.'
+          },
+          {
+            id: 'z',
+            text: '12 × 4 = 48.',
+            note: 'That is true, and it is the step before this one, but it does not say why the 48 hours can be taken away.'
+          }
+        ],
+        answer: 'x'
+      },
+      reason: [
+        'After 12 hours the clock shows 9 o’clock again. After 24 hours it shows 9 o’clock again, and after 36, and after 48. Taking the 48 away changes nothing about what the clock shows, which is why the step is allowed.',
+        'What is left, 50 − 48 = 2, is the only part of the count that changes the time: the clock has gone round and back to 9 o’clock, and 2 more hours remain.'
+      ]
+    }
+  },
+
+  {
+    id: 'solved-irrat-1',
+    kind: 'solved',
+    outcome: 'irrat',
+    h: 'Worked: the diagonal of a square tile',
+    link: 'Here is the procedure for the sixth kind with real numbers, every step written out.',
+    problem: 's-irrat-1',
+    steps: [
+      {
+        does: 'Name the whole number under the root sign',
+        working: '√2: the whole number is 2',
+        why: 'The diagonal is the number that multiplies by itself to give 2, so the whole number under the root sign is 2. Naming it says which number the question is about.'
+      },
+      {
+        does: 'Find the whole numbers whose products with themselves sit either side of it',
+        working: '1 × 1 = 1 and 2 × 2 = 4',
+        why: 'If a whole number multiplied by itself gave 2, it would sit between a whole number whose product with itself is below 2 and one whose product is above 2. 1 × 1 = 1 is below 2, and 2 × 2 = 4 is above it. So the number is between 1 and 2, and neither end is the answer.'
+      },
+      {
+        does: 'See whether it lands exactly on one of them',
+        working: '2 is not 1 and not 4, so it is not any whole number multiplied by itself'
+      },
+      {
+        does: 'Say whether it can be written exactly',
+        working: '√2 cannot be written as a fraction or as a decimal that ends. Rounded, it is about 1.41',
+        why: 'A calculator shows 1.41421356… and would show more digits if it had room, with no end. Any decimal it shows has been cut off, so it is a rounded value: 1.41 × 1.41 = 1.9881 is close to 2 and still not 2.'
+      }
+    ],
+    result: 'The diagonal cannot be written exactly. Rounded, it is about 1.41 m, and no decimal can do better than rounding.',
+    hold: {
+      step: 2,
+      prompt: {
+        kind: 'reason',
+        choices: [
+          {
+            id: 'x',
+            text: 'A whole number that does not land exactly on a whole number multiplied by itself has a root that can never be written exactly: the root is either a whole number or not exact, with nothing in between.'
+          },
+          {
+            id: 'y',
+            text: '2 is between 1 and 4.',
+            note: 'That is true, and it is what the step before found, but it does not say what follows from 2 not landing on either.'
+          },
+          {
+            id: 'z',
+            text: '1 × 1 = 1 and 2 × 2 = 4.',
+            note: 'That is true, but it is the working of the step before. It does not say why not landing on one of them matters.'
+          }
+        ],
+        answer: 'x'
+      },
+      reason: [
+        'The root of a whole number is one of two sorts. Either the whole number is a whole number multiplied by itself, like 4, 9 or 36, and then the root is that whole number, written exactly. Or it is not, and then the root can never be written exactly, as a fraction or as a decimal that ends. There is no third sort. It has been proved that no fraction multiplied by itself gives 2.',
+        'So landing exactly on a whole number multiplied by itself is the only way for the root to be exact. 2 is not 1 and not 4, so it does not land, and the {t:sqroot} of 2 is not exact.'
       ]
     }
   }

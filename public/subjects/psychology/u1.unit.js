@@ -8,7 +8,7 @@
 
 FC.unit('psychology', 'u1', {
   kind: 'C',              // C classification, F facts, P procedure
-  rev: 3,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
+  rev: 4,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
   standard: 1,            // lesson-standard version this unit was built to
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author). The app labels a draft as a draft.
   tag: 'One',
@@ -35,37 +35,30 @@ FC.unit('psychology', 'u1', {
       shared: 'The behavior itself can be exactly the same in both. What differs is how much of the person’s life the case shows.',
       rule: '{a:D1.none} shows one occasion or one short stretch. {a:D1.pattern} shows the same thing across years, places and relationships.',
       test: 'How much of the person’s life does the case show? One occasion or one short stretch? Or this: {needs:pattern}?' },
-    { id: 'tactic~none', pair: ['tactic', 'none'], step: 'D1',
+    { id: 'tactic~none', pair: ['tactic', 'none'], step: 'D1', taughtIn: 'q-kind',
       shared: 'In both, someone can be hard to be around, and other people can be hurt by it.',
       rule: 'In {a:D1.none} nothing is said or done to anyone about them: other people are near it, and are not what it is about. In {a:D1.tactic} something is said or done to one particular person, about that person or about what has happened between the two.',
       test: 'Is anything said or done to one particular person, about that person or about what has happened between the two? Or is this only how someone was for a short while, with everyone or with no one?' },
-    { id: 'reasoning~none', pair: ['reasoning', 'none'], step: 'D1',
+    { id: 'reasoning~none', pair: ['reasoning', 'none'], step: 'D1', taughtIn: 'q-kind',
       shared: 'Both are about one person on one occasion, and both can follow something that happened to them.',
       rule: 'In {a:D1.reasoning} the person gives reasons for a view, a choice or something they did. In {a:D1.none} no reasons are given: the case shows only how the person felt and acted.',
       test: 'Does the person give reasons for a view, a choice or something they did? Or does the case show only how they felt and acted?' },
-    { id: 'reasoning~pattern', pair: ['reasoning', 'pattern'], step: 'D1',
+    { id: 'reasoning~pattern', pair: ['reasoning', 'pattern'], step: 'D1', taughtIn: 'q-kind',
       shared: 'Both can show a person defending themselves, and the reasons can sound the same.',
       rule: '{a:D1.reasoning} shows one piece of thinking: this view, this choice, this occasion. {a:D1.pattern} shows the same behavior across years, places and relationships.',
       test: 'Is the case one piece of thinking, about one view or one choice? Or does it show this: {needs:pattern}?' }
   ],
 
   // Parts are stopping points: each ends on a screen that says where the next one starts.
-  // The first four parts follow the four answers of the key's first question, in the key's order (A13).
-  // The part with drill: true is the last; its close cards come after the drill.
+  // The first two follow the key's four answers, two at a time (A13). The part with drill: true is the last;
+  // its close cards come after the drill.
   parts: [
-    { id: 'p1', title: 'The first kind: a person and their reasons',
-      cards: ['orient-kind', 'meet-reasoning', 'again-reasoning', 'lens-kind', 'portrait-reasoning', 'check-reasoning'] },
-    { id: 'p2', title: 'The second kind: two people',
-      cards: ['meet-tactic', 'again-tactic', 'portrait-tactic', 'check-tactic', 'look-reasoning-tactic', 'exc-blame'] },
-    { id: 'p3', title: 'The third kind: a person across years',
-      cards: ['meet-pattern', 'again-pattern', 'portrait-pattern', 'check-pattern', 'look-tactic-pattern', 'exc-years'] },
-    { id: 'p4', title: 'The fourth kind: a moment, and nothing to name',
-      cards: ['meet-none', 'again-none', 'portrait-none', 'check-none', 'refute-clinical',
-              'look-pattern-none', 'exc-evening', 'refute-once'] },
-    { id: 'p5', title: 'The pairs still to compare, and the first question',
-      cards: ['look-tactic-none', 'look-reasoning-none', 'look-reasoning-pattern', 'q-kind', 'check-kind'] },
-    { id: 'p6', title: 'Two whole cases, then the drill',
-      cards: ['worked-dent', 'worked-rehearsal'], drill: true, close: ['recap-kind', 'transfer-kind'] }
+    { id: 'p1', title: 'The first two kinds: a person and their reasons, and what one person does to another',
+      cards: ['orient-kind', 'meet-reasoning', 'check-reasoning', 'meet-tactic', 'check-tactic', 'look-reasoning-tactic'] },
+    { id: 'p2', title: 'The other two kinds: a person across years, and a moment with nothing to name',
+      cards: ['meet-pattern', 'check-pattern', 'look-tactic-pattern', 'meet-none', 'check-none', 'look-pattern-none', 'q-kind'] },
+    { id: 'p3', title: 'One whole case, then the drill',
+      cards: ['worked-rehearsal'], drill: true, close: ['recap-kind'] }
   ],
 
   // The drill of a gate unit has three stages (A15): piece, route, claim. There is no name stage and no finish
@@ -80,24 +73,17 @@ FC.unit('psychology', 'u1', {
       { ask: 'piece',
         items: [[{ case: 'g-degree', step: 'D1' }, { case: 'g-memory', step: 'D1' }],
                 [{ case: 'g-genius', step: 'D1' }, { case: 'g-exam', step: 'D1' }],
-                [{ case: 'g-feedback', step: 'D1' }, { case: 'g-newborn', step: 'D1' }],
-                [{ case: 'g-broadband', step: 'D1' }, { case: 'g-neighbor', step: 'D1' }],
-                [{ tell: 'reasoning~tactic' }, { tell: 'pattern~none' }, { tell: 'tactic~pattern' }, { tell: 'tactic~none' }],
-                ['g-rev-reasoning', 'g-rev-tactic', 'g-rev-pattern', 'g-rev-none']] },
+                [{ tell: 'reasoning~tactic' }, { tell: 'pattern~none' }, { tell: 'tactic~pattern' }]] },
       { ask: 'route',
-        items: [['g-allotment', 'g-inheritance', 'g-scan'],
-                ['g-landlord', 'g-flight'],
-                ['g-crossing', 'g-silence', 'g-divorce', 'g-bains'],
-                ['g-wedding', 'g-shifts', 'g-waitress', 'g-handover', 'g-savings']] },
+        items: [['g-allotment', 'g-inheritance', 'g-scan', 'g-landlord'],
+                ['g-wedding', 'g-waitress'],
+                ['g-handover', 'g-savings']] },
       { ask: 'claim', demo: 'g-claim-demo',
-        items: [['g-claim-once'], ['g-claim-clinical'], ['g-claim-row'], ['g-claim-van']] }
+        items: [['g-claim-once']] }
     ],
-    // Fresh cases for later days: three for each kind, one for each of its scheduled returns (E9).
+    // One fresh case for each kind, for later days (E9).
     // A due kind returns as a case the learner has not seen, beside a case of the kind they most often take it for.
-    returns: ['g-ret-roof', 'g-ret-chess', 'g-ret-transfer',
-              'g-ret-holiday', 'g-ret-praise', 'g-ret-inbox',
-              'g-ret-coach', 'g-ret-aunt', 'g-ret-tenant',
-              'g-ret-puppy', 'g-ret-results', 'g-ret-party']
+    returns: ['g-ret-roof', 'g-ret-holiday', 'g-ret-coach', 'g-ret-puppy']
   },
 
   // Build notes: not shown to the learner, and left out of the fingerprint. The validator reads them.
@@ -106,7 +92,8 @@ FC.unit('psychology', 'u1', {
     history: [
       { rev: 1, date: '2026-10-04', change: 'First version under lesson standard 1: the gate unit. Not yet deployed, so later edits before the first deploy stay revision 1. Reviewed on 2026-10-05 as a beginner would read it and against the finished key: plainer wording, the diagnosis line added, no everyday label that is also a branch name, and the first worked case now follows the order the question card teaches.' },
       { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' },
-      { rev: 3, date: '2026-10-05', change: 'American English: dollars, US words and spelling.' }
+      { rev: 3, date: '2026-10-05', change: 'American English: dollars, US words and spelling.' },
+      { rev: 4, date: '2026-10-05', change: 'Trimmed to a quick lesson: one case per kind, the essentials, a short drill.' }
     ],
     // What the K2 rewrite changed in the gate, and why. "was" is the wording Unit Two's exemplar carried
     // (itself a partial rewrite of the old app's wording, which is quoted where it matters).
@@ -122,19 +109,12 @@ FC.unit('psychology', 'u1', {
         why: 'K2.7: purpose says what the question sorts, in terms of its answers. Unit Two prints both lines in its worked cases, so its learner sees the new wording there.' },
       { step: 'D1', was: 'no tie-break between gate answers',
         now: 'yieldsTo as data: the first answer gives way to the second when the case also shows something said or done to another person about them; the first and the second give way to the third when the case also shows the same behavior across years, places and relationships',
-        why: 'K2.8: real cases show two of these at once (a reason for your own act that blames the listener; one evening of something the case then shows across years). Each tie-break is taught on a named case (exc-blame, exc-years, worked-rehearsal) and each such case is marked "also". The fourth answer needs none: its "when" requires that the case show none of the other three.' },
+        why: 'K2.8: real cases show two of these at once (a reason for your own act that blames the listener; one evening of something the case then shows across years). Each tie-break is printed on the question card, and the one that decides most often (years over one person’s reasons) is watched on worked-rehearsal, a case marked "also". The fourth answer needs none: its "when" requires that the case show none of the other three.' },
       { step: 'D1', was: 'gate options had n, when and keeps',
         now: 'each also has plain and needs',
         why: 'A15, S1: the gate’s answers are this unit’s families, taught as an outcome is. The first answer’s n and when are unchanged, and so is the third’s.' }
     ],
-    wrongIdeas: [
-      { card: 'refute-once', about: 'pattern',
-        source: { kind: 'published', verified: false,
-          ref: 'Gilbert & Malone (1995), The correspondence bias, Psychological Bulletin 117(1): people read lasting character into a single act even when the situation explains it. To be read and confirmed online before release, or replaced by what cold readers actually get wrong.' } },
-      { card: 'refute-clinical', about: 'none',
-        source: { kind: 'published', verified: false,
-          ref: 'Haslam (2016), Concept creep: psychology’s expanding concepts of harm and pathology, Psychological Inquiry 27(1): clinical words stretched to cover ordinary experience. It describes the stretching of the concepts; evidence that learners of this subject do it to a hard week still has to come from cold readers.' } }
-    ],
+    wrongIdeas: [],       // the two wrong-idea cards were cut in the quick lesson; the ideas live on in the pattern~none look-alike and the recap
     signoff: {
       coverage: null,     // { date, by } once tests/validate-data.mjs passes on this unit in the app
       coldRead: null      // { rev, date, reader: 'novice' | 'near-novice', restated: true, drillAttempted: true, notes }

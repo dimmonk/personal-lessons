@@ -14,16 +14,6 @@ FC.cases('civics', 'u5', [
     cues: { D1: 'Dora has asked a judge to decide',
             J1: ['asked a judge to decide whether her hives make her roof a farm under the law', 'She does not say that the law is wrong'] } },
 
-  { id: 'i-pool', use: 'teach', tier: 'clean', setting: 'leisure', topic: 'a lifeguard law and a splash pad', name: 'The splash pad',
-    text: 'A state law says that every public swimming pool must have a lifeguard on duty whenever it is open. A town opens a splash pad, a paved area where jets of water spray up from the ground, with no standing water and no lifeguard. A parent who thinks it is unsafe has asked a judge to decide whether a splash pad counts as a public swimming pool under the law. Nobody says the law is wrong.',
-    outcome: 'interpret', route: { D1: ['courts'], J1: ['words'] },
-    cues: { D1: 'has asked a judge to decide', J1: 'whether a splash pad counts as a public swimming pool under the law' },
-    segments: [
-      { text: 'A state law says that every public swimming pool must have a lifeguard on duty whenever it is open', note: 'That is the law. Nobody attacks it, and it is not what the parent asks the judge.' },
-      { text: 'A town opens a splash pad, a paved area where jets of water spray up from the ground, with no standing water and no lifeguard', note: 'That is the situation the words of the law may or may not reach. It is not what the parent asks the judge.' },
-      { text: 'whether a splash pad counts as a public swimming pool' }
-    ] },
-
   { id: 'i-check', use: 'check', tier: 'clean', setting: 'work', topic: 'a health grade and a coffee bicycle', name: 'The coffee bicycle',
     text: 'A city law says that every food business must display its health inspection grade in the window. Imran sells coffee from a bicycle with a box on the back. The city says the bicycle is a food business and fined him for not displaying a grade. Imran asked a judge to decide whether a coffee bicycle is a food business under the law. He does not say the city’s law is wrong.',
     outcome: 'interpret', route: { D1: ['courts'], J1: ['words'] },
@@ -34,11 +24,6 @@ FC.cases('civics', 'u5', [
     text: 'A city rule says that nobody may use amplified sound in the city’s parks. Eli played a violin with a small clip-on amplifier in Mill Park and was fined $100. He does not say the rule is wrong. He asked a judge to decide whether a violin with a small amplifier counts as amplified sound under the rule.',
     outcome: 'interpret', route: { D1: ['courts'], J1: ['words'] },
     cues: { D1: 'He asked a judge to decide', J1: 'asked a judge to decide whether a violin with a small amplifier counts as amplified sound under the rule' } },
-
-  { id: 'ls-dog-leash', use: 'teach', tier: 'clean', setting: 'leisure', topic: 'a thirty-foot dog cord', name: 'The long cord',
-    text: 'A city law says that dogs in public parks must be on a leash. Tamsin walked her dog on a retractable cord that reaches thirty feet and was fined $50. She does not say the law is wrong. She has asked a judge to decide whether a thirty-foot cord is a leash under the law.',
-    outcome: 'interpret', route: { D1: ['courts'], J1: ['words'] },
-    cues: { D1: 'She has asked a judge to decide', J1: 'asked a judge to decide whether a thirty-foot cord is a leash under the law' } },
 
   { id: 'k-bakery', use: 'check', tier: 'varied', setting: 'money', topic: 'a bread label and a market stall', name: 'The market stall',
     text: 'A state law says that every bakery must label its bread with a list of ingredients. Hamza bakes at home and sells his loaves from a market stall without labels, saying that a stall is not a bakery. The state fined him, and he has asked a judge to decide whether a market stall that sells bread it bakes is a bakery under the law. He does not say the law is wrong.',
@@ -52,16 +37,6 @@ FC.cases('civics', 'u5', [
     outcome: 'notlegal', route: { D1: ['courts'], J1: ['policy'] },
     cues: { D1: 'asks a judge to order the town council', J1: ['asks a judge to order the town council to cut the fare to $1', 'No law sets what a bus fare must be, and nobody says the fare takes away a right'] } },
 
-  { id: 'n-school', use: 'teach', tier: 'clean', setting: 'learning', topic: 'a school start time', name: 'The school bell',
-    text: 'Parents at Hillcrest School ask a judge to order the school board to start the school day at 9 a.m. instead of 8, saying that older students would be better rested. No law says when a school day must start, and nobody says the 8 a.m. start takes away any right.',
-    outcome: 'notlegal', route: { D1: ['courts'], J1: ['policy'] },
-    cues: { D1: 'ask a judge to order the school board', J1: 'No law says when a school day must start, and nobody says the 8 a.m. start takes away any right' },
-    segments: [
-      { text: 'Parents at Hillcrest School ask a judge to order the school board to start the school day at 9 a.m. instead of 8', note: 'That is what they want from the judge. Look for the words that show whether any law or right settles it.' },
-      { text: 'saying that older students would be better rested', note: 'That is their reason. It is a view about what would be better, and it does not show whether a law or a right settles it.' },
-      { text: 'No law says when a school day must start, and nobody says the 8 a.m. start takes away any right' }
-    ] },
-
   { id: 'n-check', use: 'check', tier: 'clean', setting: 'health', topic: 'a second walk-in clinic', name: 'The second clinic',
     text: 'Residents of Pell Heights ask a judge to order the city to open a second walk-in clinic, saying that it would be better for the neighborhood. No law requires a second clinic, and nobody says the city takes away a right by not opening one.',
     outcome: 'notlegal', route: { D1: ['courts'], J1: ['policy'] },
@@ -72,9 +47,4 @@ FC.cases('civics', 'u5', [
     text: 'A town rule says that any gathering on Riverside Green needs a permit from the town. A group of residents asks a judge to order the town to build a stage on the green for community events, saying that a stage would be better for the town. No law requires a town to build one, and nobody says the permit rule takes away a right.',
     outcome: 'notlegal', route: { D1: ['courts'], J1: ['policy'] },
     cues: { D1: 'asks a judge to order the town to build a stage', J1: 'No law requires a town to build one, and nobody says the permit rule takes away a right' } },
-
-  { id: 'ls-dog-park', use: 'teach', tier: 'clean', setting: 'leisure', topic: 'a fenced area for dogs', name: 'The dog run',
-    text: 'A group of dog owners asks a judge to order the city to set aside a fenced area in Mill Park where dogs can run free, saying the dogs would be happier. No law requires a city to provide one, and nobody says any right is taken away by not having one.',
-    outcome: 'notlegal', route: { D1: ['courts'], J1: ['policy'] },
-    cues: { D1: 'asks a judge to order the city', J1: 'No law requires a city to provide one, and nobody says any right is taken away by not having one' } }
 ]);

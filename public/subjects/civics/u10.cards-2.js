@@ -1,100 +1,119 @@
-// Civics, Unit Ten, part two: the changes of the factory years (what each did), and the line of landmarks from 1917 to 2001
-// (when each was). Concept card, facts card, one check per fact, and a look-alike card where two facts are swapped.
+// Civics, Unit Ten, part two: civil rights, September 11, and the right to vote.
 
 FC.cards('civics', 'u10', [
 
-  /* ---------- group three: what four changes of the factory years did ---------- */
-  { id: 'con-laws', kind: 'concept',
-    h: 'Four changes of the factory years, and what each did',
-    link: 'The first two groups were about the arrivals. The third is about four changes made in the same years, and the facts are what each one did.',
-    case: 'c10-laws',
+  /* ---------- the civil rights movement ---------- */
+  { id: 'con-civil', kind: 'concept',
+    h: 'The civil rights movement: a court, a law and many people',
+    link: 'The movement, from 1954 to 1965, to end segregation.',
+    case: 'c10-civil',
     plain: [
-      'Priya’s cousin has asked about two things that people take for granted, and the answers are two amendments. Both were made in 1913, in the same year, so for these two it is what each did, and not the year, that tells them apart.',
-      'The Sixteenth Amendment allowed a federal income tax: a tax on what people earn. Congress already had the power to tax, and the amendment added to it. The Seventeenth Amendment made senators elected by voters. Before it, state legislatures chose them. Both came in the years of big industry and big cities.',
-      'Two more changes belong to the same years. In 1882 Congress passed the Chinese Exclusion Act, which was a bar on a group of people coming in because of where they came from. And reformers and labor unions pushed for shorter hours and an end to child labor. The four facts below are what each of these four did or asked for.'
+      'Amir’s daughter already has the three parts of the answer in her question: a court, a law and people. They are the three landmarks of the civil rights movement, which pushed to end segregation (keeping people of different races apart, as in separate public schools for Black and white children) and discrimination (treating people worse because of their race).',
+      'The court was the Supreme Court. In 1954 it ruled, in Brown v. Board of Education, that separate public schools for Black and white children are unequal. A court checking a law against the Constitution is {o:review}. The people included Martin Luther King Jr. and thousands of others, who led marches and boycotts. A boycott is a group’s refusal to use or buy something, to press for a change. The law was the Civil Rights Act of 1964, passed by Congress, which outlaws segregation and discrimination.'
     ] },
 
-  { id: 'facts-laws', kind: 'facts',
-    h: 'What four changes did',
-    link: 'These are the four facts, each with how it fits the idea of a country changing its rules as it changed.',
-    concept: 'con-laws',
+  { id: 'facts-civil', kind: 'facts',
+    h: 'Four names of the civil rights movement',
+    link: 'The ruling, the leader, the law and what the movement pushed to end.',
+    concept: 'con-civil',
     rows: [
-      { id: 'lw-sixteenth', q: 'What did the Sixteenth Amendment, from 1913, allow?', a: 'A federal income tax',
-        relates: 'It lets the federal government tax what people earn. Congress already had the power to tax, and the amendment added to it. An amendment changes the Constitution itself, which is why this was a change to the rules of the whole country.' },
-      { id: 'lw-seventeenth', q: 'What did the Seventeenth Amendment, from 1913, change about senators?', a: 'Senators elected by voters',
-        relates: 'Before it, state legislatures chose the senators, and after it the voters did. So when Priya votes for a senator, she is using the change that this amendment made.' },
-      { id: 'lw-exclusion', q: 'What was the Chinese Exclusion Act of 1882?', a: 'A bar on a group of people coming in, because of where they came from',
-        relates: 'It was the first major law of its kind, and Congress passed it. It is the one of the four that is about arrival and not about the Constitution.' },
-      { id: 'lw-reform', q: 'What did reformers and labor unions of these years push for?', a: 'Shorter hours and an end to child labor',
-        relates: 'This fact is about people pushing for a change, and not about a law. The unit holds what they asked for, and says nothing about what came of it, because this course holds nothing about it.' }
+      { id: 'cr-brown', q: 'Which 1954 ruling of the Supreme Court said that separate public schools for Black and white children are unequal?', a: 'Brown v. Board of Education',
+        relates: 'A court checked a law against the Constitution, which is called {o:review}. It came ten years before the law of 1964.' },
+      { id: 'cr-king', q: 'Which leader, together with thousands of others, led the marches and boycotts of the movement?', a: 'Martin Luther King Jr.',
+        relates: 'The movement was the work of many people, and he is the leader that this course names.' },
+      { id: 'cr-act', q: 'Which 1964 law, passed by Congress, outlawed discrimination?', a: 'The Civil Rights Act of 1964',
+        relates: 'It is Congress writing the rules, which is a different job from the court’s ruling in 1954.' },
+      { id: 'cr-end', q: 'What did the civil rights movement push to end?', a: 'Segregation',
+        relates: 'It is what the court ruled against in the schools, and what the 1964 law outlawed.' }
     ] },
 
-  { id: 'chk-lw-sixteenth', kind: 'check', after: 'facts-laws', ask: { type: 'fact', row: 'lw-sixteenth' } },
-  { id: 'chk-lw-seventeenth', kind: 'check', after: 'facts-laws', ask: { type: 'fact', row: 'lw-seventeenth' } },
-  { id: 'chk-lw-exclusion', kind: 'check', after: 'facts-laws', ask: { type: 'fact', row: 'lw-exclusion' } },
-  { id: 'chk-lw-reform', kind: 'check', after: 'facts-laws', ask: { type: 'fact', row: 'lw-reform' } },
+  { id: 'chk-cr-brown', kind: 'check', after: 'facts-civil', ask: { type: 'fact', row: 'cr-brown' } },
+  { id: 'chk-cr-king', kind: 'check', after: 'facts-civil', ask: { type: 'fact', row: 'cr-king' } },
+  { id: 'chk-cr-act', kind: 'check', after: 'facts-civil', ask: { type: 'fact', row: 'cr-act' } },
+  { id: 'chk-cr-end', kind: 'check', after: 'facts-civil', ask: { type: 'fact', row: 'cr-end' } },
 
-  { id: 'look-laws', kind: 'lookalike', ledger: 'lw-sixteenth~lw-seventeenth',
-    h: 'Two amendments of the same year',
-    link: 'Two of the four facts are amendments from the same year, 1913. They get swapped, so they go side by side.',
-    facts: ['lw-sixteenth', 'lw-seventeenth'],
-    instruction: 'Compare what each amendment is about: money, or the Senate.',
-    prompt: { kind: 'which', answer: 'lw-seventeenth' },
+  { id: 'look-civil', kind: 'lookalike', ledger: 'cr-brown~cr-act',
+    h: 'A court’s ruling and a law of Congress',
+    link: 'Two landmarks aimed at the same thing, one from a court and one from lawmakers, get swapped.',
+    facts: ['cr-brown', 'cr-act'],
+    instruction: 'Compare who acted: a court that ruled, or lawmakers who passed a law.',
+    prompt: { kind: 'which', answer: 'cr-act' },
     difference: [
-      'Fact A is the Sixteenth Amendment: {f:lw-sixteenth}. It is about money, the tax on what people earn.',
-      'Fact B is the Seventeenth Amendment: {f:lw-seventeenth}. It is about the Senate, and about who picks the senators.',
-      'The year, 1913, is the same, so it cannot help. What helps is the subject: if the story is about taxing what people earn, it is the Sixteenth, and if it is about voters choosing senators instead of the legislatures, it is the Seventeenth.'
+      'Fact A is {f:cr-brown}: a ruling by the Supreme Court in 1954, in a case about separate public schools.',
+      'Fact B is {f:cr-act}: a law passed by Congress in 1964, outlawing segregation and discrimination.'
     ] },
 
-  /* ---------- group four: a line of seven landmarks ---------- */
-  { id: 'con-line', kind: 'concept',
-    h: 'A line of seven landmarks, from 1917 to 2001',
-    link: 'The first three groups were about the years to 1914. This one puts the landmarks of the years after that on a line, one year each.',
-    case: 'c10-line',
+  /* ---------- September 11, 2001 ---------- */
+  { id: 'con-attack', kind: 'concept',
+    h: 'September 11, 2001: what happened that day',
+    link: 'The most recent event this course holds, and what the country changed after it.',
+    case: 'c10-attack',
     plain: [
-      'Kofi’s problem is the problem of any long history: the events are in his head with no order. The cure is a line. If each landmark has a year, and the years are in order, the order comes with them.',
-      'Seven landmarks go on Kofi’s strip, in three stretches. The first stretch is war, hard times and war again. The United States entered the First World War in 1917. The Great Depression began in 1929. Japan attacked Pearl Harbor on December 7, 1941, and the United States entered the Second World War after it; its part in that war is dated 1941 to 1945. The second stretch is the Cold War, a long standoff dated about 1947 to 1991. The third is one day: September 11, 2001.',
-      'Three of the landmarks get a group of their own after this one, with what and who as well as when: the Depression, the Cold War and September 11. The two world wars are held here only as years, because this course holds only the years. So here the aim is only to fix the years on the line, so that when a later group says “the Depression” or “the Cold War”, you already know where on the line to look.'
+      'On September 11, 2001, terrorists hijacked four airplanes and attacked the World Trade Center in New York and the Pentagon near Washington. Terrorists are people who use violence to frighten a country; to hijack an airplane is to take it over by force. Nearly 3,000 people were killed.',
+      'Afterward the country made new security rules and created a new federal department for homeland security. Adaeze was right that the rules changed afterward.'
     ] },
 
-  { id: 'facts-line', kind: 'facts',
-    h: 'Seven years on one line',
-    link: 'These are the seven years on Kofi’s strip, in order, each with where it sits among the others.',
-    concept: 'con-line',
+  { id: 'facts-attack', kind: 'facts',
+    h: 'Four facts about September 11',
+    link: 'What the terrorists did, what they attacked, how many were killed, and what the country created.',
+    concept: 'con-attack',
     rows: [
-      { id: 'tl-ww1', q: 'In what year did the United States enter the First World War?', a: '1917',
-        relates: 'It is the first landmark on the strip after 1877, and the earliest of the seven.' },
-      { id: 'tl-depression', q: 'In what year did the Great Depression begin?', a: '1929',
-        relates: 'It is twelve years after the country entered the First World War. In the Depression banks failed, and about a quarter of workers lost their jobs.' },
-      { id: 'tl-pearl', q: 'In what year did Japan attack Pearl Harbor, bringing the United States into the Second World War?', a: '1941',
-        relates: 'The attack was on December 7, 1941, and the United States entered the war after it. The year is the start of the American part in the Second World War.' },
-      { id: 'tl-ww2end', q: 'The American part in the Second World War is dated 1941 to which year?', a: '1945',
-        relates: 'The dates 1941 to 1945 cover the four years of the American part in the war. The Cold War is dated from about two years after 1945.' },
-      { id: 'tl-coldstart', q: 'In about what year did the Cold War begin?', a: '1947',
-        relates: 'The Cold War is dated about 1947 to 1991. It came after the Second World War, two years after the American part in it ended.' },
-      { id: 'tl-coldend', q: 'In about what year did the Cold War end?', a: '1991',
-        relates: 'The Cold War ran about 1947 to 1991, which is more than four decades. It is the last year of the long standoff.' },
-      { id: 'tl-attack', q: 'In what year did the terrorist attacks on New York and Washington take place, on September 11?', a: '2001',
-        relates: 'It is the latest landmark on the strip, and the most recent event that this course holds.' }
+      { id: 'nn-planes', q: 'How many airplanes did the terrorists hijack on September 11, 2001?', a: 'Four airplanes',
+        relates: 'Four airplanes were taken over by force and used in the attacks.' },
+      { id: 'nn-targets', q: 'Which two places did the attacks hit?', a: 'The World Trade Center and the Pentagon',
+        relates: 'The World Trade Center is in New York, and the Pentagon is near Washington.' },
+      { id: 'nn-dead', q: 'About how many people were killed that day?', a: 'Nearly 3,000 people',
+        relates: 'The number shows how large the attacks were.' },
+      { id: 'nn-dept', q: 'What new federal body was created afterward?', a: 'A department for homeland security',
+        relates: 'A new part of the government of the whole country, made in answer to the attacks.' }
     ] },
 
-  { id: 'chk-tl-ww1', kind: 'check', after: 'facts-line', ask: { type: 'fact', row: 'tl-ww1' } },
-  { id: 'chk-tl-depression', kind: 'check', after: 'facts-line', ask: { type: 'fact', row: 'tl-depression' } },
-  { id: 'chk-tl-pearl', kind: 'check', after: 'facts-line', ask: { type: 'fact', row: 'tl-pearl' } },
-  { id: 'chk-tl-ww2end', kind: 'check', after: 'facts-line', ask: { type: 'fact', row: 'tl-ww2end' } },
-  { id: 'chk-tl-coldstart', kind: 'check', after: 'facts-line', ask: { type: 'fact', row: 'tl-coldstart' } },
-  { id: 'chk-tl-coldend', kind: 'check', after: 'facts-line', ask: { type: 'fact', row: 'tl-coldend' } },
-  { id: 'chk-tl-attack', kind: 'check', after: 'facts-line', ask: { type: 'fact', row: 'tl-attack' } },
+  { id: 'chk-nn-planes', kind: 'check', after: 'facts-attack', ask: { type: 'fact', row: 'nn-planes' } },
+  { id: 'chk-nn-targets', kind: 'check', after: 'facts-attack', ask: { type: 'fact', row: 'nn-targets' } },
+  { id: 'chk-nn-dead', kind: 'check', after: 'facts-attack', ask: { type: 'fact', row: 'nn-dead' } },
+  { id: 'chk-nn-dept', kind: 'check', after: 'facts-attack', ask: { type: 'fact', row: 'nn-dept' } },
 
-  { id: 'look-line', kind: 'lookalike', ledger: 'tl-ww1~tl-pearl',
-    h: 'Two years in which the country entered a war',
-    link: 'Two of the seven years are years in which the United States entered a world war. They get swapped, so they go side by side.',
-    facts: ['tl-ww1', 'tl-pearl'],
-    instruction: 'Compare which war each year belongs to: the first of the two, or the second.',
-    prompt: { kind: 'which', answer: 'tl-pearl' },
+  /* ---------- the vote, in five years ---------- */
+  { id: 'con-vote', kind: 'concept',
+    h: 'The right to vote was widened five times: in what years',
+    link: 'The vote was widened by inches. These are the five years.',
+    case: 'c10-vote',
+    plain: [
+      'Hadiya’s grandmother is right. At the founding, the vote was mostly limited to white men who owned property, and each widening after that was won against opposition. An earlier unit held what each amendment says. This group holds when.',
+      'In 1870 the Fifteenth Amendment said that the right to vote cannot be denied because of race. In 1920 the Nineteenth said that it cannot be denied because of sex. In 1964 the Twenty-fourth ended the poll tax, a fee to vote, in federal elections. In 1965 the Voting Rights Act put federal officials behind the Fifteenth Amendment’s promise. In 1971 the Twenty-sixth Amendment lowered the voting age to eighteen.'
+    ] },
+
+  { id: 'facts-vote', kind: 'facts',
+    h: 'Five years in which the vote was widened',
+    link: 'Five years, from 1870 to 1971.',
+    concept: 'con-vote',
+    rows: [
+      { id: 'vy-race', q: 'In what year did the Fifteenth Amendment say that the right to vote cannot be denied because of race?', a: '1870',
+        relates: 'The first of the five, in the years just after the Civil War. It is an amendment, so it is part of the Constitution.' },
+      { id: 'vy-sex', q: 'In what year did the Nineteenth Amendment say that the right to vote cannot be denied because of sex?', a: '1920',
+        relates: 'It came after a campaign for women’s right to vote that began in 1848.' },
+      { id: 'vy-poll', q: 'In what year did the Twenty-fourth Amendment end the poll tax, a fee to vote, in federal elections?', a: '1964',
+        relates: 'A poll tax is a fee that a person had to pay in order to vote. It came in the same year as the Civil Rights Act.' },
+      { id: 'vy-vra', q: 'In what year did the Voting Rights Act put federal officials behind the Fifteenth Amendment’s promise?', a: '1965',
+        relates: 'An Act of Congress, not an amendment. It made the promise of 1870 real, ninety-five years after it was written.' },
+      { id: 'vy-age', q: 'In what year did the Twenty-sixth Amendment lower the voting age to eighteen?', a: '1971',
+        relates: 'The most recent widening of the vote that this course holds.' }
+    ] },
+
+  { id: 'chk-vy-race', kind: 'check', after: 'facts-vote', ask: { type: 'fact', row: 'vy-race' } },
+  { id: 'chk-vy-sex', kind: 'check', after: 'facts-vote', ask: { type: 'fact', row: 'vy-sex' } },
+  { id: 'chk-vy-poll', kind: 'check', after: 'facts-vote', ask: { type: 'fact', row: 'vy-poll' } },
+  { id: 'chk-vy-vra', kind: 'check', after: 'facts-vote', ask: { type: 'fact', row: 'vy-vra' } },
+  { id: 'chk-vy-age', kind: 'check', after: 'facts-vote', ask: { type: 'fact', row: 'vy-age' } },
+
+  { id: 'look-vote', kind: 'lookalike', ledger: 'vy-race~vy-vra',
+    h: 'The promise written down, and the promise made real',
+    link: 'Two years about race and the vote, ninety-five years apart, get swapped.',
+    facts: ['vy-race', 'vy-vra'],
+    instruction: 'Compare what happened in each year: a promise written into the Constitution, or federal officials put behind it.',
+    prompt: { kind: 'which', answer: 'vy-vra' },
     difference: [
-      'Fact A is the First World War: {f:tl-ww1}. It is the earliest landmark on the strip.',
-      'Fact B is the attack on Pearl Harbor, after which the country entered the Second World War: {f:tl-pearl}. It comes twenty-four years later, after the Depression.',
-      'If the clue is about Pearl Harbor, or comes after the Depression, the year is {f:tl-pearl}. If it comes before the Depression, it is the First World War, {f:tl-ww1}.'
+      'Fact A is the Fifteenth Amendment: {f:vy-race}. It wrote the promise into the Constitution.',
+      'Fact B is the Voting Rights Act: {f:vy-vra}. It put federal officials behind that promise, so that it became real for the people who had been shut out.'
     ] }
 ]);

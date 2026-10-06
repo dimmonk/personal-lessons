@@ -1,4 +1,5 @@
-// Statistical Claims, Unit Five: cases shown inside cards, part one: the word "false alarm" and the first name (a percentage with no counts).
+// Statistical Claims, Unit Five: cases shown inside cards, part one: the word "false alarm", the first name (a percentage with no counts),
+// its look-alikes, and the check on the question.
 // use: 'teach' = shown in a card with its reasoning; 'check' = asked between cards. Neither may appear in the drill.
 // A case that sits in a card has a name. cues[STEP] is the exact phrase in the text that decides that step; segments are the tappable
 // pieces for "tap the words" prompts, and note is shown if a piece is tapped in error.
@@ -15,17 +16,6 @@ FC.cases('stats', 'u5', [
     text: "A health website runs the headline 'Joggers are 40% more likely to hurt an ankle.' The article does not say how many joggers were hurt, how many people it looked at, or what the 40% is more than.",
     outcome: 'relrisk', route: { S1: ['compare'], C1: ['numbers'] },
     cues: { C1: 'Joggers are 40% more likely to hurt an ankle' } },
-
-  { id: 'rel-lift', use: 'teach', tier: 'clean', setting: 'work', topic: 'a lifting program leaflet', name: 'The lifting leaflet',
-    text: "A company leaflet says: 'Our new lifting program cut back injuries by 75%.' The leaflet was printed at the end of the program's first year, and it gives no other figure.",
-    outcome: 'relrisk', route: { S1: ['compare'], C1: ['numbers'] },
-    cues: { C1: 'Our new lifting program cut back injuries by 75%' },
-    segments: [
-      { text: 'A company leaflet says', note: 'That tells you who is speaking. It is not the figure.' },
-      { text: 'Our new lifting program cut back injuries by 75%' },
-      { text: "The leaflet was printed at the end of the program's first year", note: 'That tells you when it was printed. It does not give the figure.' },
-      { text: 'it gives no other figure', note: 'That tells you what is missing, and it matters. The words asked for are the ones that give the percentage.' }
-    ] },
 
   { id: 'rel-school', use: 'check', tier: 'clean', setting: 'learning', topic: 'a school newsletter on late arrivals', name: 'The late buses',
     text: "A school newsletter says: 'Since the new bus route began, late arrivals have fallen by 60%.' It does not say how many students were late before or after.",
@@ -49,17 +39,6 @@ FC.cases('stats', 'u5', [
     outcome: 'comp_ok', route: { S1: ['holds'], H1: ['difference'] },
     cues: { H1: '15 of 300 trips arrived late on Line 12 and 10 of 300 trips on Line 9' } },
 
-  /* ---------- A percentage without the numbers, beside Base rate fallacy: the same scanner ---------- */
-  { id: 'la2-scan-pct', use: 'teach', tier: 'varied', setting: 'health', topic: 'a scanner and missed diagnoses', name: 'The scanner percentage',
-    text: "A hospital newsletter says: 'Our new scanner cuts missed diagnoses by 60%.' It does not say how many diagnoses were missed before or after.",
-    outcome: 'relrisk', route: { S1: ['compare'], C1: ['numbers'] },
-    cues: { C1: 'Our new scanner cuts missed diagnoses by 60%' } },
-
-  { id: 'la2-scan-acc', use: 'teach', tier: 'varied', setting: 'health', topic: "a scanner's accuracy", name: 'The scanner accuracy',
-    text: "A hospital newsletter says: 'Our new scanner is 97% accurate, so if it says yes, you almost certainly have the disease.' The disease affects about 1 person in 500.",
-    outcome: 'baserate', route: { S1: ['compare'], C1: ['common'] },
-    cues: { C1: ['if it says yes, you almost certainly have the disease', 'about 1 person in 500'] } },
-
   /* ---------- The near-miss: a percentage that is built on a handful ---------- */
   { id: 'exc-shop', use: 'teach', tier: 'misleading', setting: 'work', topic: 'a shop owner and a theft log', name: "The shop owner's 300%", also: ['compare'],
     text: "A shop owner posts: 'Shoplifting at my store is up 300% this month!' The store's own log shows one theft last month and four this month.",
@@ -71,7 +50,7 @@ FC.cases('stats', 'u5', [
       { text: 'one theft last month and four this month' }
     ] },
 
-  /* ---------- The check on the key's question ---------- */
+  /* ---------- The check on the question ---------- */
   { id: 'rel-streetlights', use: 'check', tier: 'clean', setting: 'community', topic: 'streetlights and break-ins', name: 'The Elm Street break-ins',
     text: "A town newsletter says: 'Since the new streetlights went up, night-time car break-ins on Elm Street have dropped by 80%.' It does not say how many break-ins there were before or after.",
     outcome: 'relrisk', route: { S1: ['compare'], C1: ['numbers'] },

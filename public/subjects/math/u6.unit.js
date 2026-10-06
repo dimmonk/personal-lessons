@@ -11,7 +11,7 @@
 
 FC.unit('math', 'u6', {
   kind: 'P',
-  rev: 3,
+  rev: 4,
   standard: 1,
   status: 'draft',        // 'live' only after the cold read in build.signoff
   tag: 'Six',
@@ -32,7 +32,7 @@ FC.unit('math', 'u6', {
       shared: 'Both can be about a triangle with a square corner and two given lengths, and a shadow is both at once. Both find a length that nobody measures directly.',
       rule: '{o:pyth} wants the third side of the very triangle whose other two sides are given, so there is one thing and its own triangle. {o:similar} wants a length on a second thing of exactly the same shape, found from how many times longer that thing is than the first.',
       test: 'Is the length wanted a side of the very triangle whose other sides are given, or a length on a second thing of the same shape?' },
-    { id: 'trig~similar', pair: ['trig', 'similar'], step: 'S1',
+    { id: 'trig~similar', pair: ['trig', 'similar'], step: 'S1', taughtIn: 'q-s1',
       shared: 'Both can find a height that nobody can measure directly, such as a tower, a tree or a lighthouse, and both use a comparison between lengths that stays the same however big the thing is.',
       rule: '{o:trig} is given one side and an angle in degrees, and the angle does the work of a second length. {o:similar} is given no angle: it is given a copy at another size, with a length measured on both things.',
       test: 'Is an angle in degrees given, or a length measured on both of two things of the same shape?' },
@@ -42,50 +42,34 @@ FC.unit('math', 'u6', {
       test: 'Does the problem ask how long a part is, or how much surface or how much room inside?' }
   ],
 
-  // Parts are stopping points: each ends on a screen that says where the next one starts. They follow the key's first question, one part for
-  // each answer's kinds, in the key's order: two sides (Pythagoras' theorem), one side and one angle (Trigonometry), and two things of the same
-  // shape, in two parts, one for a length (Similar shapes) and one for an area or a volume (the Square-cube law) (A13). The part with
-  // drill: true is the last; its close cards come after the drill.
+  // Parts are stopping points: each ends on a screen that says where the next one starts. The first covers the kinds that start from a
+  // triangle with a square corner (Pythagoras' theorem, Trigonometry); the second the two that start from two things of the same shape
+  // (Similar shapes, the Square-cube law) and the two questions. The part with drill: true is the last; its close cards come after the drill.
   parts: [
-    { id: 'p1', title: 'Two sides of a triangle with a square corner: the third side',
-      cards: ['orient-shape', 'meet-pyth', 'again-pyth', 'lens-procedure', 'portrait-pyth', 'check-pyth',
-              'solved-pyth-1', 'solved-pyth-2', 'check-pyth-last', 'check-pyth-whole'] },
-    { id: 'p2', title: 'One side and one angle: another side',
-      cards: ['meet-trig', 'again-trig', 'portrait-trig', 'check-trig', 'solved-trig-1', 'solved-trig-2', 'check-trig-last', 'check-trig-whole', 'look-pyth-trig'] },
-    { id: 'p3', title: 'Two things of the same shape: a length',
-      cards: ['meet-similar', 'again-similar', 'portrait-similar', 'check-similar', 'solved-similar-1', 'solved-similar-2',
-              'check-similar-last', 'check-similar-whole', 'exc-shadow', 'look-trig-similar', 'q-s1', 'check-s1'] },
-    { id: 'p4', title: 'Two things of the same shape: an area or a volume',
-      cards: ['meet-sqcube', 'again-sqcube', 'portrait-sqcube', 'check-sqcube', 'solved-sqcube-1', 'solved-sqcube-2',
-              'check-sqcube-last', 'check-sqcube-whole', 'look-similar-sqcube'] },
-    { id: 'p5', title: 'The question that tells the last two apart, then the drill',
-      cards: ['q-s2', 'check-s2'], drill: true, close: ['recap-shape', 'transfer-shape'] }
+    { id: 'p1', title: 'Two kinds of problem about a triangle with a square corner',
+      cards: ['orient-shape', 'meet-pyth', 'check-pyth', 'solved-pyth-1', 'meet-trig', 'check-trig', 'solved-trig-1', 'look-pyth-trig'] },
+    { id: 'p2', title: 'Two things of the same shape: a length, or an area or a volume, then the drill',
+      cards: ['meet-similar', 'check-similar', 'solved-similar-1', 'exc-shadow', 'q-s1', 'check-s1',
+              'meet-sqcube', 'check-sqcube', 'solved-sqcube-1', 'look-similar-sqcube', 'q-s2', 'check-s2'],
+      drill: true, close: ['recap-shape'] }
   ],
 
-  // The drill of a procedure unit has three stages (A12): last (the working is shown up to its last step, which is left to the learner),
-  // whole (the problem alone, worked by the learner) and route (the key's questions in order, the kind, then the solving). Items are authored
-  // in groups of look-alikes: each group holds problems of kinds that share a ledger pair, of one tier, listed clean, then varied, then
-  // misleading. The route stage also carries problems from Unit One, unlabelled.
+  // The drill of a procedure unit is one stage here: route (the key's questions in order, the kind, then the solving). Items are authored
+  // in groups of look-alikes of one tier, listed clean, then varied, then misleading. The route stage also carries problems from
+  // Unit One, unlabelled.
   drill: {
     key: 'u6',
     add: 'After each answer, look at the slip named behind a wrong choice. Every wrong choice is the answer one particular slip produces, and a slip you can name is a slip you can catch next time. Some of the problems tell a story that points the wrong way, on purpose: what the problem gives you and what it asks about decides the kind, and nothing else in the story does.',
     rungs: [
-      { ask: 'last',
-        items: [['m6-dl-pyth-1', 'm6-dl-trig-1'], ['m6-dl-pyth-3', 'm6-dl-trig-3'], ['m6-dl-similar-1', 'm6-dl-sqcube-1', 'm6-dl-similar-2'],
-                ['m6-dl-pyth-2', 'm6-dl-similar-3'], ['m6-dl-trig-2', 'm6-dl-similar-4', 'm6-dl-sqcube-2']] },
-      { ask: 'whole',
-        items: [['m6-dw-pyth-1', 'm6-dw-trig-1'], ['m6-dw-pyth-3', 'm6-dw-trig-3'], ['m6-dw-similar-1', 'm6-dw-sqcube-2', 'm6-dw-similar-2'],
-                ['m6-dw-pyth-2', 'm6-dw-similar-3'], ['m6-dw-trig-2', 'm6-dw-similar-4', 'm6-dw-sqcube-1']] },
       { ask: 'route',
-        items: [[{ earlier: 'u1' }, { earlier: 'u1' }], [{ earlier: 'u1' }, { earlier: 'u1' }], [{ earlier: 'u1' }, { earlier: 'u1' }],
-                ['m6-dr-pyth-1', 'm6-dr-trig-1'], ['m6-dr-trig-2', 'm6-dr-similar-1'], ['m6-dr-similar-2', 'm6-dr-sqcube-1'],
-                ['m6-dr-pyth-2', 'm6-dr-similar-3'], ['m6-dr-pyth-3', 'm6-dr-trig-3'], ['m6-dr-sqcube-2', 'm6-dr-similar-4'],
-                ['m6-dr-pyth-4', 'm6-dr-trig-4'], ['m6-dr-similar-5', 'm6-dr-sqcube-3'], ['m6-dr-similar-6', 'm6-dr-sqcube-4']] }
+        items: [[{ earlier: 'u1' }, { earlier: 'u1' }],
+                ['m6-dr-pyth-1', 'm6-dr-trig-1'], ['m6-dr-similar-1', 'm6-dr-sqcube-1'],
+                ['m6-dr-pyth-2', 'm6-dr-trig-3'], ['m6-dr-similar-4', 'm6-dr-sqcube-2'],
+                ['m6-dr-similar-6', 'm6-dr-sqcube-3']] }
     ],
-    // Fresh problems for later days: three for each kind, one for each of its scheduled returns (E9). A kind that is due comes back as a
-    // problem the learner has not seen, as a whole route, beside a problem of the kind they most often take it for.
-    returns: ['m6-rt-pyth-1', 'm6-rt-pyth-2', 'm6-rt-pyth-3', 'm6-rt-trig-1', 'm6-rt-trig-2', 'm6-rt-trig-3',
-              'm6-rt-similar-1', 'm6-rt-similar-2', 'm6-rt-similar-3', 'm6-rt-sqcube-1', 'm6-rt-sqcube-2', 'm6-rt-sqcube-3']
+    // Fresh problems for later days: one for each kind (E9). A kind that is due comes back as a problem the learner has not seen,
+    // as a whole route, beside a problem of the kind they most often take it for.
+    returns: ['m6-rt-pyth-2', 'm6-rt-trig-3', 'm6-rt-similar-3', 'm6-rt-sqcube-3']
   },
 
   // Build notes: not shown to the learner, and left out of the fingerprint. The validator reads them.
@@ -93,7 +77,8 @@ FC.unit('math', 'u6', {
     history: [
       { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the fifth procedure unit of Basic Math, replacing the old Unit Three’s second half (the four shape cards), specimens 13 and 14 and two faulty claims. Not yet deployed, so later edits before the first deploy stay revision 1. Four kinds of problem about shapes, each taught with a problem of the kind, two worked examples with every step computed, and problems the learner finishes; the key’s two crossing questions each get a card; the shadow is taught as an exception; the drill has a last-step stage, a whole-problem stage and a route stage.' },
       { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' },
-      { rev: 3, date: '2026-10-05', change: 'American English: US words and spelling.' }
+      { rev: 3, date: '2026-10-05', change: 'American English: US words and spelling.' },
+      { rev: 4, date: '2026-10-05', change: 'Trimmed to a quick lesson: one case per name, the essentials, a short drill.' }
     ],
     // What the K2 rewrite changed in this unit's part of the key, and why (from docs/rebuild/math-plan.md, section (a)).
     keyChanges: [

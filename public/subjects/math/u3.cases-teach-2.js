@@ -1,4 +1,4 @@
-// Basic Math, Unit Three: problems shown inside cards: the opening problem of each kind, a second one in another setting, the problem whose marked words are tapped, the problem after the question card, the look-alike pairs and the two exceptions.
+// Basic Math, Unit Three: problems shown inside cards: the opening problem of each kind, the problem whose marked words are tapped, the problem after the question card, the look-alike pair and the two exceptions.
 // use: 'teach' = shown in a card with its reasoning; 'check' = asked between cards. Neither may appear in the drill.
 
 FC.cases('math', 'u3', [
@@ -51,21 +51,6 @@ FC.cases('math', 'u3', [
         note: 'That is the question. The words you are asked to tap are in another sentence.'
       }
     ]
-  },
-
-  {
-    id: 'm3-la-rug-quad',
-    use: 'teach',
-    tier: 'clean',
-    setting: 'home',
-    topic: 'a rug longer than it is wide',
-    outcome: 'quad',
-    text: 'A rug is 3 m longer than it is wide and has an area of 28 m². How wide is it?',
-    route: { M1: ['unknown'], A1: ['itself'] },
-    cues: {
-      M1: ['3 m longer than it is wide', 'How wide is it?'],
-      A1: ['3 m longer than it is wide', 'an area of 28 m²']
-    }
   },
 
   {

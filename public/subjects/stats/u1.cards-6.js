@@ -1,60 +1,40 @@
-// Statistical Claims, Unit One, part six (first half): the key's tie-break, taught as three named exceptions, and a second wrong idea.
-// When a claim goes wrong in more than one part, the key gives the earlier part: each later answer yields to every earlier one
-// (key.js, yieldsTo). Each exception below is a claim of cause, the last part, that has a problem in an earlier part, so that
-// its surface points to "What it says caused what" and the key's answer is the earlier part. The app prints the tie-break.
+// Statistical Claims, Unit One, part three: one whole claim, run from the question to the answer. The case is one where the
+// opening points to a later part and an earlier one decides, so it also shows the key's tie-break (the earlier part wins).
 
 FC.cards('stats', 'u1', [
 
-  /* ---------- The tie-break, as three exceptions ---------- */
-  { id: 'exc-finishers', kind: 'exception', ledger: 'counted~cause', looksLike: 'cause', is: 'counted',
-    h: 'A claim of cause, built on the ones who stayed',
-    link: 'You now know five answers and how to tell the neighbors apart. Real claims are less tidy than the pairs you have seen. A claim can say that one thing caused another, and be built on a figure that has gone wrong in the very first part.',
-    case: 'gate-finishers',
-    setup: 'The gym says its program makes people lose weight, and the case shows another way to explain the result: the members who dropped out are the ones who were not losing weight. A claim of cause, with another way for the same result, is what you point to for {a:S1.cause}. Yet the answer for this case is {a:S1.counted}.',
-    prompt: { kind: 'phrase', answer: 'the 140 members who finished all 12 weeks' },
-    because: [
-      'Look at who the 15 pounds is the average of: the 140 members who finished. The 360 who left are not in it. People leave a weight-loss program mostly because it is not working for them, so the figure leaves out the very ones the claim most needs to hear from. That is a trouble with who is in the figure, and it comes first.',
-      'The case shows both. It has a claim that the program made people lose weight, and it has a figure built from the ones who stayed. When a case shows both, the answer is the earlier part: {a:S1.counted}. A claim of cause built on those figures inherits their trouble. You cannot ask what else could explain a result until you know that the result comes from a fair picture of everyone who started.'
+  { id: 'worked-spanish', kind: 'worked',
+    h: 'A whole claim, where the opening points the wrong way',
+    link: 'Watch one claim run from the question to the answer. The first thing you notice in it is not the thing that decides it. Read to the end before you answer.',
+    case: 'gate-spanish',
+    steps: [
+      { step: 'S1',
+        reason: [
+          'The claim opens with a school saying its course gets nine in ten students talking, and goes straight on to a reason the result might have another explanation: forty of the students had studied Spanish before they came. If the case ended there, it would show a claim of cause.',
+          'It does not end there. Take the parts in order, starting with the people in the figure. The last sentence says this: {cue:S1}. The 54 out of 60 is the reply to a questionnaire sent to 600. Nine in ten of the 60 students who took the trouble to answer is not the same as nine in ten of the 600, and students who had studied before are likelier to feel that they can talk and likelier to reply. Nine tenths of the students never appear in the figure. The first part fails, so the first part is the answer.'
+        ] }
     ],
-    take: [
-      'It is worth knowing that this is a choice made to keep the answers clear. In real life the two troubles run together, and nobody could draw a line between them that every expert would accept. Each case gets one answer, so that two people using these questions reach the same one and can each say why.',
-      'The answer is the earlier part for a reason. Everything after the first part rests on it. Once the people are put right, with all 500 members counted, the claim of cause may still go wrong, and that will then be the answer. The answer names the first part that fails; it does not say that the later parts are fine.'
-    ] },
-
-  { id: 'exc-bonus', kind: 'exception', ledger: 'measure~cause', looksLike: 'cause', is: 'measure',
-    h: 'A claim of cause, on a figure the agents could push',
-    link: 'The gym’s claim of cause was built on the wrong people. A claim of cause can also be built on a figure that has stopped counting what it is read as showing.',
-    case: 'gate-bonus',
-    setup: 'The manager says the bonus improved service. A claim of cause is what you point to for {a:S1.cause}, and the case shows another way to explain the result. Yet the answer for this case is {a:S1.measure}.',
-    prompt: { kind: 'phrase', answer: 'a bonus for every call closed in under four minutes' },
-    because: [
-      'The figure is calls handled per hour, and the agents are paid for closing calls quickly. A call closed in three minutes counts the same whether or not the caller got help. So the agents can raise the figure by ending calls sooner, whether or not service got any better. The figure no longer measures what the manager reads it as showing, and the callers who are cut off are what that looks like.',
-      'The case also has a claim of cause: the bonus improved service. So it shows two answers. When it does, the answer is the earlier part, and what the figure counts comes before what the claim says caused what: {a:S1.measure}. A claim of cause cannot be sound if the figure it rests on could have risen without the real thing moving.'
-    ],
-    take: 'Here the two are tied closely. The bonus is the cause the manager names, and it is also what moved the figure. The answer is the earlier part because the questions ask what the figure counts before they ask what made the figure move. Until the figure counts what it is read as showing, there is no result to explain.' },
-
-  { id: 'exc-advert', kind: 'exception', ledger: 'compare~cause', looksLike: 'cause', is: 'compare',
-    h: 'A claim of cause, on a percentage with no numbers',
-    link: 'One more case of the same kind. A claim of cause can be built on a percentage whose numbers are missing, and the claim is so confident that it is easy to miss that the percentage has not been read yet.',
-    case: 'gate-advert',
-    setup: 'The shop owner says the ad worked, and the case shows another way for the sales to have risen. A claim of cause, with another way for the same result, is what you point to for {a:S1.cause}. Yet the answer for this case is {a:S1.compare}.',
-    prompt: { kind: 'phrase', answer: 'She does not say what the sales were before.' },
-    because: [
-      '"Up 300%" is a percentage of what sales were before, and the case does not say what that was. If the shop sold $100 a week, it now sells $400. If it sold $10,000 a week, it now sells $40,000. Without the real numbers under the percentage you cannot tell whether the change is large or tiny. That is the third part of the claim: what the figure is set beside.',
-      'The case also says that the ad worked, and it gives another way for the sales to have risen: the street fair. So it shows two answers, and the answer is the earlier part: {a:S1.compare}. The reason is the same as before. A claim about what caused a rise cannot be judged until you know how big the rise was.'
-    ],
-    take: 'If the shop had said what it sold before and after (say $2,000 a week, and now $8,000), the third part would be put right and the claim would go on to the fourth. The street fair would then be the trouble, and the answer would be {a:S1.cause}. The answer names the first part that goes wrong. It never says that the parts after it are fine.' },
-
-  /* ---------- A second wrong idea: a problem means the claim is false ---------- */
-  { id: 'refute-false', kind: 'refute', about: 'S1',
-    h: 'A wrong idea: "If something is wrong with the claim, the claim is false"',
-    link: 'Each of the last three cards ended with a claim that had something wrong in it. People often take one step further, and the step is wrong.',
-    idea: '"Their poll only asked people outside the golf club. So the claim is wrong: the town does not want a new golf course."',
-    verdict: 'This is wrong.',
-    right: [
-      'Finding a problem with how a figure was put together tells you what the figure cannot show. It does not tell you the opposite. The town may well want a new golf course. The reporter asked the wrong people, so her figure cannot show it either way.',
-      'That is what the answer says: where the claim first goes wrong, and so what you would need to see before you could rely on it. It never says "this is false". A claim can be true and badly supported, or false and well supported by a figure that was carefully made, and each of those is a different thing to check.',
-      'So when you find a problem, say what the figure cannot show, and say what you would need to see. For the golf club, that is a figure from people picked from the whole town. Then you have said something true, whether or not the town wants the course.'
-    ],
-    testedBy: ['gate-claim-lie'] }
+    hold: {
+      neighbor: 'cause',
+      prompt: { kind: 'reason',
+        lead: 'The claim says the course gets students talking and gives a reason for another explanation, so the case can look like {a:S1.cause}.',
+        choices: [
+          { id: 'a', text: 'The school says its course gets nine in ten students talking, and forty of the students had studied Spanish before they came.',
+            note: 'True, and it is why the case can look like {a:S1.cause}. If the figure were a fair picture of the 600, that would be the answer. It is not, and the figure comes first.' },
+          { id: 'b', text: 'The 54 out of 60 comes from the 60 students who replied to a questionnaire sent to all 600, and the other 540 are not in it.' },
+          { id: 'c', text: 'The school sent the questionnaire to every student.',
+            note: 'True, and it tells you that nobody was left off the list. It does not separate the two answers: a figure from everyone asked and a figure from a tenth of them can both start from a list of everyone.' }
+        ],
+        answer: 'b' },
+      reason: [
+        'When a case shows both a claim of cause and a figure from the wrong people, the answer is the earlier part: {a:S1.counted}. The claim of cause has nothing solid to stand on until the figure is a fair picture of the 600. The forty who had studied before only make the problem larger.'
+      ]
+    },
+    impression: {
+      resembles: 'gate-golf', first: 'gate-music',
+      text: [
+        'Now a second look, of a different kind: does this case look like one you know? A claim that a course made people better, with a reason why the result might have another explanation, may bring back the music class. And the music class was {a:S1.cause}. So here the likeness and the answer seem to disagree.',
+        'When that happens, go back to the question and find the words in the case that answer it. They are {cue:S1}. The music class has nothing like them: every student who took the exam is in its figures. This case leaves out nine tenths of its students. So the case this one really looks like is the golf club, where the figure came from the few who happened to be asked, and the answer stands.'
+      ]
+    } }
 ]);

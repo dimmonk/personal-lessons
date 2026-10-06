@@ -1,4 +1,4 @@
-// Political Ideologies, Unit Four: cases shown inside cards, part three (the two exceptions, and the two worked cases).
+// Political Ideologies, Unit Four: cases shown inside cards, part three (the two exceptions, and the worked case).
 // An exception case shows the marks of one name and is another. `also` lists the answer it shows as well as its own, which loses
 // to its own by the key's tie-break. Every text is invented.
 
@@ -32,14 +32,7 @@ FC.cases('ideology', 'u4', [
       { text: "The quarry stays with its owners. Let the council set a floor under our pay, and let a tax on the quarry's profits pay for the old quarrymen's pensions.", note: 'That is what the text asks for about the quarry. It comes after the side is taken and does not say which side that is.' }
     ] },
 
-  /* ---------- Worked case one: clean ---------- */
-  { id: 'i4-w-conserv', use: 'teach', tier: 'clean', setting: 'money', topic: 'a burial club', name: 'The burial club',
-    text: "From a burial club's yearly notice: 'Since our grandparents' time, the households of Keld Row have paid a few cents each week into the burial club, so that no one on the row is buried by charity. The club once paid for a headstone too, and now it pays only for the burial. This old way of looking after one another should guide how Keld Row manages its money. Keep the club as it is. The rules can be reviewed, one at a time, once every few years, and only with the members asked.'",
-    outcome: 'conserv', route: { D1: ['tradition'], T1: ['keep'] },
-    cues: { D1: 'This old way of looking after one another should guide how Keld Row manages its money',
-            T1: ['Keep the club as it is', 'The rules can be reviewed, one at a time, once every few years, and only with the members asked'] } },
-
-  /* ---------- Worked case two: misleading. Gentle and patient, and it asks for an order to be brought back ---------- */
+  /* ---------- The worked case: gentle and patient, and it asks for an order to be brought back ---------- */
   { id: 'i4-w-react', use: 'teach', tier: 'misleading', setting: 'faith', topic: 'a hospice closed by a charities act', name: 'The House of Saint Orrin',
     text: "From a petition signed by two hundred people in Brenwick Cross: 'We say this gently, and we are ready to wait. For three hundred years the House of Saint Orrin, run by its sisters, nursed the poor of this town. The new Charities Act closed it and sent the sisters away, and that was a wrong we will not call anything else. We do not shout. We ask only that the House be reopened, the sisters be brought back to it, and the old order of the House be restored, however many years it takes.'",
     outcome: 'react', route: { D1: ['tradition'], T1: ['restore'] },

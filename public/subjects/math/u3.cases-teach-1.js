@@ -1,4 +1,4 @@
-// Basic Math, Unit Three: problems shown inside cards: the opening problem of each kind, a second one in another setting, the problem whose marked words are tapped, the problem after the question card, the look-alike pairs and the two exceptions.
+// Basic Math, Unit Three: problems shown inside cards: the opening problem of each kind, the problem whose marked words are tapped, the problem after the question card, the look-alike pair and the two exceptions.
 // use: 'teach' = shown in a card with its reasoning; 'check' = asked between cards. Neither may appear in the drill.
 
 FC.cases('math', 'u3', [
@@ -16,38 +16,6 @@ FC.cases('math', 'u3', [
       M1: ['add the field’s length and width, then double the total', 'How long is the field?'],
       A1: ['add the field’s length and width, then double the total', 'needs 38 m of fence']
     }
-  },
-
-  {
-    id: 'm3-again-rearr',
-    use: 'teach',
-    tier: 'clean',
-    setting: 'home',
-    topic: 'wool for a scarf',
-    name: 'The scarf',
-    outcome: 'rearr',
-    text: 'A knitter works out the wool for a scarf this way: multiply its length in meters by 3, then add 1 ball for the fringe. A scarf took 7 balls of wool. How long is it?',
-    route: { M1: ['unknown'], A1: ['formula'] },
-    cues: {
-      M1: ['multiply its length in meters by 3, then add 1 ball for the fringe', 'How long is it?'],
-      A1: [
-        'multiply its length in meters by 3, then add 1 ball for the fringe',
-        'A scarf took 7 balls of wool'
-      ]
-    },
-    segments: [
-      {
-        text: 'A knitter works out the wool for a scarf this way: multiply its length in meters by 3, then add 1 ball for the fringe.'
-      },
-      {
-        text: 'A scarf took 7 balls of wool.',
-        note: 'That gives a number to work with, and it matters, but it is not the part you are asked to tap.'
-      },
-      {
-        text: 'How long is it?',
-        note: 'That is the question. The words you are asked to tap are in another sentence.'
-      }
-    ]
   },
 
   {
@@ -82,21 +50,6 @@ FC.cases('math', 'u3', [
   },
 
   {
-    id: 'm3-la-loaf-rearr',
-    use: 'teach',
-    tier: 'clean',
-    setting: 'shopping',
-    topic: 'three loaves and a pastry',
-    outcome: 'rearr',
-    text: 'At the bakery, Jon buys three of the same loaf and a $2 pastry, and pays $11 in all. How much does one loaf cost?',
-    route: { M1: ['unknown'], A1: ['formula'] },
-    cues: {
-      M1: ['buys three of the same loaf and a $2 pastry', 'How much does one loaf cost?'],
-      A1: ['buys three of the same loaf and a $2 pastry', 'pays $11 in all']
-    }
-  },
-
-  {
     id: 'm3-la-plants-rearr',
     use: 'teach',
     tier: 'clean',
@@ -108,21 +61,6 @@ FC.cases('math', 'u3', [
     cues: {
       M1: ['buys 5 plants at $9 each and some pots at $4 each', 'How many pots?'],
       A1: ['buys 5 plants at $9 each and some pots at $4 each', 'pays $73']
-    }
-  },
-
-  {
-    id: 'm3-la-rug-rearr',
-    use: 'teach',
-    tier: 'clean',
-    setting: 'home',
-    topic: 'a rug of known width',
-    outcome: 'rearr',
-    text: 'A rug is 4 m wide and has an area of 28 m². How long is it?',
-    route: { M1: ['unknown'], A1: ['formula'] },
-    cues: {
-      M1: ['A rug is 4 m wide', 'How long is it?'],
-      A1: ['A rug is 4 m wide', 'an area of 28 m²']
     }
   },
 
@@ -176,29 +114,6 @@ FC.cases('math', 'u3', [
   },
 
   {
-    id: 'm3-again-prop',
-    use: 'teach',
-    tier: 'clean',
-    setting: 'travel',
-    topic: 'adults on a school trip',
-    name: 'The school trip',
-    outcome: 'prop',
-    text: 'A school trip needs 4 adults for every 24 children. How many adults are needed for 60 children?',
-    route: { M1: ['unknown'], A1: ['rate'] },
-    cues: {
-      M1: ['needs 4 adults for every 24 children', 'How many adults are needed for 60 children?'],
-      A1: ['needs 4 adults for every 24 children', 'for 60 children']
-    },
-    segments: [
-      { text: 'A school trip needs 4 adults for every 24 children.' },
-      {
-        text: 'How many adults are needed for 60 children?',
-        note: 'That is the question. The words you are asked to tap are in another sentence.'
-      }
-    ]
-  },
-
-  {
     id: 'm3-tap-prop',
     use: 'check',
     tier: 'clean',
@@ -248,21 +163,6 @@ FC.cases('math', 'u3', [
   },
 
   {
-    id: 'm3-la-loaf-prop',
-    use: 'teach',
-    tier: 'clean',
-    setting: 'shopping',
-    topic: 'loaves at a set price',
-    outcome: 'prop',
-    text: 'At the bakery, four of the same loaf cost $12. How much do ten of them cost?',
-    route: { M1: ['unknown'], A1: ['rate'] },
-    cues: {
-      M1: ['four of the same loaf cost $12', 'How much do ten of them cost?'],
-      A1: ['four of the same loaf cost $12', 'ten of them']
-    }
-  },
-
-  {
     id: 'm3-meet-simul',
     use: 'teach',
     tier: 'clean',
@@ -280,35 +180,6 @@ FC.cases('math', 'u3', [
       ],
       A1: ['bought 14 balls, some footballs at $6 each and some volleyballs at $9 each', 'spent $96 in all']
     }
-  },
-
-  {
-    id: 'm3-again-simul',
-    use: 'teach',
-    tier: 'clean',
-    setting: 'health',
-    topic: 'boxes of bandages',
-    name: 'The bandage order',
-    outcome: 'simul',
-    text: 'A clinic ordered 18 boxes of bandages, some small at $4 each and some large at $7 each, and paid $84 in all. How many boxes of each size did it order?',
-    route: { M1: ['unknown'], A1: ['totals'] },
-    cues: {
-      M1: [
-        'ordered 18 boxes of bandages, some small at $4 each and some large at $7 each',
-        'paid $84 in all',
-        'How many boxes of each size did it order?'
-      ],
-      A1: ['ordered 18 boxes of bandages, some small at $4 each and some large at $7 each', 'paid $84 in all']
-    },
-    segments: [
-      {
-        text: 'A clinic ordered 18 boxes of bandages, some small at $4 each and some large at $7 each, and paid $84 in all.'
-      },
-      {
-        text: 'How many boxes of each size did it order?',
-        note: 'That is the question. The words you are asked to tap are in another sentence.'
-      }
-    ]
   },
 
   {
@@ -376,27 +247,4 @@ FC.cases('math', 'u3', [
       A1: ['adds a 2 m strip along one side', 'an area of 48 m²']
     }
   },
-
-  {
-    id: 'm3-again-quad',
-    use: 'teach',
-    tier: 'clean',
-    setting: 'building',
-    topic: 'a rectangular patio',
-    name: 'The patio',
-    outcome: 'quad',
-    text: 'A rectangular patio is 5 m longer than it is wide, and its area is 84 m². How wide is it?',
-    route: { M1: ['unknown'], A1: ['itself'] },
-    cues: {
-      M1: ['5 m longer than it is wide', 'How wide is it?'],
-      A1: ['5 m longer than it is wide', 'its area is 84 m²']
-    },
-    segments: [
-      { text: 'A rectangular patio is 5 m longer than it is wide, and its area is 84 m².' },
-      {
-        text: 'How wide is it?',
-        note: 'That is the question. The words you are asked to tap are in another sentence.'
-      }
-    ]
-  }
 ]);

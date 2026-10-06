@@ -21,31 +21,11 @@ FC.cases('ideology', 'u1', [
     route: { D1: ['tradition'] },
     cues: { D1: ['The faith, the family and the old customs of this town are what held it together, and they should guide how we rebuild'] } },
 
-  { id: 'i-can-rights', use: 'teach', tier: 'clean', setting: 'town', topic: 'the Harrow cannery closes, told for what every person is owed',
-    text: "The Harrow cannery closes on Friday. Every person who loses a job there is owed a fair hearing, fair notice and a fair start somewhere else, whoever they are and whatever they earned. A society that cannot promise that much to every person has no business closing anything.",
-    route: { D1: ['rights'] },
-    cues: { D1: ['Every person who loses a job there is owed a fair hearing, fair notice and a fair start somewhere else, whoever they are and whatever they earned'] } },
-
   /* ---------- One event, five voices: the Calder ferry is cut to one sailing a day ---------- */
   { id: 'i-fer-class', use: 'teach', tier: 'clean', setting: 'work', topic: 'the Calder ferry is cut, told for working people',
     text: "From April the Calder ferry company will run one sailing a day and pay its crews for one. The crews have kept this island joined to the mainland through every winter for wages that have not moved in six years. The people who work the boats and the people who own the line want different things, and we are with the crews.",
     route: { D1: ['class'] },
     cues: { D1: ['The people who work the boats and the people who own the line want different things, and we are with the crews'] } },
-
-  { id: 'i-fer-nation', use: 'teach', tier: 'clean', setting: 'borders', topic: 'the Calder ferry is cut, told for the nation',
-    text: "One sailing a day will cut this island off from the rest of its own country. The islanders are as much a part of our nation as anyone, and a nation that leaves its own people behind has stopped being one people. Keep the island joined to the nation.",
-    route: { D1: ['nation'] },
-    cues: { D1: ['a nation that leaves its own people behind has stopped being one people', 'Keep the island joined to the nation'] } },
-
-  { id: 'i-fer-tradition', use: 'teach', tier: 'clean', setting: 'faith', topic: 'the Calder ferry is cut, told for old ways',
-    text: "One sailing a day means no Sunday boat, and the island has crossed to the mainland church on the Sunday boat for two hundred years. The Sunday crossing, the church and the old island customs are what should guide how this ferry is run, not a schedule drawn up by strangers.",
-    route: { D1: ['tradition'] },
-    cues: { D1: ['The Sunday crossing, the church and the old island customs are what should guide how this ferry is run'] } },
-
-  { id: 'i-fer-rights', use: 'teach', tier: 'clean', setting: 'health', topic: 'the Calder ferry is cut, told for what every person is owed',
-    text: "Every islander is owed a way to a hospital and a school on the mainland, whatever their age, income or health. One sailing a day takes that away from the people who can least do without it. Fair treatment for every person on this island means a crossing they can rely on.",
-    route: { D1: ['rights'] },
-    cues: { D1: ['Every islander is owed a way to a hospital and a school on the mainland, whatever their age, income or health'] } },
 
   { id: 'i-fer-none', use: 'teach', tier: 'clean', setting: 'town', topic: 'the Calder ferry is cut, as a schedule',
     text: "Calder ferry schedule from April 1: one sailing a day, leaving the island at 8:15 and returning from the mainland at 5:40. Foot passengers do not need to book. Vehicles must book 48 hours ahead on the number below.",

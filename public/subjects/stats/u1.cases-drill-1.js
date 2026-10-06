@@ -1,7 +1,7 @@
 // Statistical Claims, Unit One: drill cases, first stage (the key's first question on its own, on clean cases).
 // Every drill case is new: none of them appears in a card. Each carries the words that decide the first question (cues.S1), the reason
 // for its answer (reason.S1), and not: the nearest wrong answer and why it fails here. These cases, with the route-stage cases and the
-// return cases, are the bank that later units draw their earlier-unit items from. Two of every group of piece cases hold, so that the
+// return cases, are the bank that later units draw their earlier-unit items from. One of the piece cases holds, so that the
 // stage always has a claim with nothing wrong in it (P26, V37).
 
 FC.cases('stats', 'u1', [
@@ -42,29 +42,5 @@ FC.cases('stats', 'u1', [
     route: { S1: ['holds'] },
     cues: { S1: 'using the same definition of an account throughout' },
     reason: { S1: 'Each part holds. Every account is counted, and the count is made the same way in all five years: {cue:S1}. The two numbers are given, and the claim says only that more are opened now. It does not say why.' },
-    not: { outcome: 'measure', why: 'A new definition of an account could raise the count with no more customers, but the case says the same definition was used in all five years.' },
-    wouldChange: 'If the bank had started counting a checking account and a debit card as two accounts in the fourth year, it would be {a:S1.measure}.' },
-
-  { id: 'gate-p-three', use: 'drill', tier: 'clean', setting: 'learning', topic: 'a spelling test taken by three students',
-    text: "A teacher gave the three students who stayed after class on Friday a spelling test. They scored 90%, 100% and 95%. She writes in her report: 'Our students are excellent spellers: they average 95%.'",
-    route: { S1: ['counted'] },
-    cues: { S1: 'gave the three students who stayed after class on Friday a spelling test' },
-    reason: { S1: 'The claim speaks for "our students", but the figure comes from three students who happened to stay after class: {cue:S1}. Three is too few for luck not to move the figure, and students who stay after class are not a fair picture of the school.' },
-    not: { outcome: 'holds', why: 'The scores are real, but three students who stayed behind are not a fair picture of a school. One part fails, so the claim does not hold.' } },
-
-  /* ---------- a claim that holds beside a claim that is built on figures the agents could push ---------- */
-  { id: 'gate-p-census', use: 'drill', tier: 'clean', setting: 'community', topic: 'library visits counted by door counters',
-    text: "The county library counted every visitor at its 12 branches with door counters of the same type, every month for two years. There were 495,000 visits in the first year and 540,000 in the second. The library says: 'Visits to our libraries rose by 9% in a year.'",
-    route: { S1: ['holds'] },
-    cues: { S1: 'counted every visitor at its 12 branches with door counters of the same type, every month for two years' },
-    reason: { S1: 'Each part holds. Every visit at every library is counted, by the same kind of counter, for the whole two years: {cue:S1}. The percentage comes with the two numbers behind it, and the claim says only that visits rose.' },
-    not: { outcome: 'compare', why: 'A percentage can hide the numbers behind it, but here the two numbers are given, 495,000 and 540,000, so nothing needed to read the figure is left out.' },
-    wouldChange: 'If the library had said only that visits were "up 9%" and given no numbers, it would be {a:S1.compare}.' },
-
-  { id: 'gate-p-targets', use: 'drill', tier: 'clean', setting: 'health', topic: 'a hospital judged on readmissions',
-    text: "A hospital is ranked on how few patients come back within a week. Its readmission figure fell from 9% to 4% in two years, and it says: 'Our patients are doing much better after they leave.' In those two years the hospital began to log a patient who comes back within a week as a 'new admission' instead of a readmission.",
-    route: { S1: ['measure'] },
-    cues: { S1: "began to log a patient who comes back within a week as a 'new admission' instead of a readmission" },
-    reason: { S1: 'The people in the figure are all of the hospital’s patients, so nothing is left out. What is counted changed, and it is the figure the hospital is ranked on: {cue:S1}. The figure can fall with exactly as many patients coming back.' },
-    not: { outcome: 'cause', why: 'The hospital says its patients are doing better, but it does not say what made them do better. The trouble is earlier: the figure no longer counts what it is read as showing.' } }
+    not: { outcome: 'measure', why: 'A new definition of an account could raise the count with no more customers, but the case says the same definition was used in all five years.' } }
 ]);

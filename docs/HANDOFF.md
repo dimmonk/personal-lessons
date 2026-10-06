@@ -22,7 +22,9 @@ All 42 units are `status: 'draft'`: none has had the cold read the standard requ
 
 **Plain words.** The standard's names for the lesson machinery ("key", "route", "gate", "branch", "specimen", "determination", "ledger") are never shown to the learner: one list, `tests/plain-words.mjs`, is checked by the validator (V50) on every unit, key line and subject note, and by the browser tests on every screen as shown. What to say instead is in the standard, K9. This came from the owner's first cold read.
 
-`npm test` runs the data checks, about 1.6 million lesson checks, 85 negative controls and about 55,000 browser checks.
+**Quick lessons (2026-10-05, standard section 19).** The first rebuild read like a course for a specialist. Every unit was then trimmed, cut not rewritten, to what a beginner needs to explain and use each idea after one read: a real example first, an answer before the reason, quick questions with an explanation each, and questions coming back on later days. There are no word counts or targets; `node tools/measure.mjs` sizes units for information only. The engine's own wording was cut the same way (`FC.ENGINE` 3): feedback is right or wrong, the reason, and after a miss one line; no machinery sentences. The brief the trim agents followed is the method for any future trim: section 19 plus "salvage, not rewrite".
+
+`npm test` runs the data checks, about 1.1 million lesson checks, 86 negative controls and about 69,000 browser checks.
 
 ## 3. How the rebuild was done (and how to change a subject now)
 - **The key first.** Each subject's `key.js` is the one vocabulary; every card prints its wording by token. Keys were rewritten on Opus to section 6 (K2) of the standard; the plan for each subject, with every key change and why, is `docs/rebuild/<subject>-plan.md`.

@@ -7,7 +7,7 @@
 
 FC.unit('scams', 'u1', {
   kind: 'C',              // C classification, F facts, P procedure
-  rev: 3,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
+  rev: 4,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
   standard: 1,            // lesson-standard version this unit was built to
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author)
   tag: 'One',
@@ -29,7 +29,7 @@ FC.unit('scams', 'u1', {
       shared: 'In both, a box with an app’s name on it asks you to allow something, and the buttons look alike.',
       rule: 'In {a:D1.device} the request is to put something on the phone or computer itself: to install it, to open it, or to let someone watch it. In {a:D1.access} the request is to open one of your accounts: with a password, a code, or an Allow so that an app can use the account.',
       test: 'Would pressing it put something onto my phone or computer, open something on it, or let someone watch it? Or would it open one of my accounts to a page, an app or a caller?' },
-    { id: 'money~nothing', pair: ['money', 'nothing'], step: 'D1',
+    { id: 'money~nothing', pair: ['money', 'nothing'], step: 'D1', taughtIn: 'worked-statement',
       shared: 'Both can be about the same bill, from the same company, with the same amount in them.',
       rule: 'In {a:D1.nothing} the message tells you about money and asks you to do nothing about it: it will be taken as usual, or it has been paid to you. In {a:D1.money} the message asks you to hand over money, and the way to do it comes with the message.',
       test: 'Is anyone asking me to hand over money? Or is the money only mentioned as something that will happen or has happened?' },
@@ -41,7 +41,7 @@ FC.unit('scams', 'u1', {
       shared: 'In both, money is part of the story: a refund, a payment, an amount to send.',
       rule: 'In {a:D1.device} the request is to put something on the phone or computer, to open it there, or to let someone watch it. In {a:D1.money} the request is to hand over money.',
       test: 'Am I asked to install, open or share something on my phone or computer, whatever else is asked? Or is paying the only thing asked?' },
-    { id: 'access~money', pair: ['access', 'money'], step: 'D1',
+    { id: 'access~money', pair: ['access', 'money'], step: 'D1', taughtIn: 'q-gate',
       shared: 'In both, the story is about a payment: a fine, a bill, an amount that has to be paid.',
       rule: 'In {a:D1.access} the request is to sign in, give a code or press Allow. In {a:D1.money} the request is to hand over money.',
       test: 'Am I asked to sign in, give a code or press Allow first, whatever the payment is for? Or is paying the only thing asked?' },
@@ -55,53 +55,44 @@ FC.unit('scams', 'u1', {
       test: 'Does it ask me to install, open or share something, perhaps with a file, an update or a number of its own? Or does it only tell me that something will happen?' }
   ],
 
-  // Parts are stopping points. The real thing comes first (the message that asks nothing), then the two kinds that reach
-  // into your devices and accounts, then money and facts about you (A13). The last part holds the drill and the close.
+  // Parts are stopping points. Two parts come before the drill: the two words and the first two kinds, then the last
+  // three kinds. The last part holds the question, the worked case, the drill and the close.
   parts: [
-    { id: 'p1', title: 'A message that asks nothing, and two ideas to start from',
-      cards: ['orient-gate', 'term-already', 'term-check', 'meet-nothing', 'again-nothing', 'lens-gate', 'portrait-nothing', 'check-nothing'] },
-    { id: 'p2', title: 'A way into your accounts, and something on your device',
-      cards: ['term-code', 'term-permission', 'meet-access', 'again-access', 'portrait-access', 'check-access', 'look-access-nothing', 'refute-polish',
-              'term-screenshare', 'meet-device', 'again-device', 'portrait-device', 'check-device', 'look-device-access'] },
-    { id: 'p3', title: 'Money, and facts about you',
-      cards: ['meet-money', 'again-money', 'portrait-money', 'check-money', 'look-money-nothing', 'exc-refund', 'exc-fine',
-              'meet-details', 'again-details', 'portrait-details', 'check-details', 'look-money-details', 'refute-careful'] },
-    { id: 'p4', title: 'The first question, two whole cases, then the drill',
-      cards: ['q-gate', 'check-gate', 'worked-leaving', 'worked-statement'], drill: true, close: ['recap-gate', 'transfer-gate', 'plan-gate'] }
+    { id: 'p1', title: 'Two ideas, then a message that asks nothing, and a way into your accounts',
+      cards: ['orient-gate', 'term-already', 'term-check', 'meet-nothing', 'check-nothing',
+              'term-code', 'term-permission', 'meet-access', 'check-access', 'look-access-nothing'] },
+    { id: 'p2', title: 'Something on your device, money, and facts about you',
+      cards: ['term-screenshare', 'meet-device', 'check-device', 'look-device-access',
+              'meet-money', 'check-money', 'exc-refund', 'meet-details', 'check-details', 'look-money-details'] },
+    { id: 'p3', title: 'The first question, one whole case, then the drill',
+      cards: ['q-gate', 'check-gate', 'worked-statement'], drill: true, close: ['recap-gate', 'plan-gate'] }
   ],
 
   // A gate unit's drill has three stages (A15): piece, route, claim. Items are authored in groups of look-alikes. The
   // drill and return cases of this unit are the bank that later units draw their { earlier: 'u1' } items from.
   drill: {
     key: 'u1',
-    add: 'Some of these messages are real, and some are copies made to take something. That is on purpose, and the question you are practicing does not say which is which: it gives the same answer for a real message and for a copy that asks for the same thing. Saying that a message asks nothing is one of the five answers, and you will need it as often as the other four.',
+    add: 'Some of these messages are real, and some are copies made to take something. That is on purpose: the question gives the same answer for a real message and for a copy that asks for the same thing. Saying that a message asks nothing is one of the five answers, and you will need it as often as the other four.',
     rungs: [
       { ask: 'piece',
         items: [[{ case: 'g-p-driver', step: 'D1' }, { case: 'g-p-bank-code', step: 'D1' }],
                 [{ case: 'g-p-photos', step: 'D1' }, { case: 'g-p-flight', step: 'D1' }],
                 [{ case: 'g-p-tickets', step: 'D1' }, { case: 'g-p-passport', step: 'D1' }],
-                [{ case: 'g-p-refund', step: 'D1' }, { case: 'g-p-tunebox', step: 'D1' }],
-                [{ tell: 'access~nothing' }, { tell: 'device~access' }, { tell: 'money~nothing' }, { tell: 'money~details' }, { tell: 'device~money' }, { tell: 'access~money' }],
-                ['g-rev-device', 'g-rev-access', 'g-rev-money', 'g-rev-details', 'g-rev-nothing']] },
+                [{ tell: 'access~nothing' }, { tell: 'device~access' }, { tell: 'money~details' }]] },
       { ask: 'route',
-        items: [['g-d-cleanphone', 'g-a-marketplace', 'g-n-library'],
-                ['g-m-school', 'g-dt-job', 'g-n-statement'],
-                ['g-d-security', 'g-a-reset'],
-                ['g-m-giftcard', 'g-dt-survey'],
-                ['g-d-bike', 'g-m-cardsale'],
-                ['g-a-mail-locked', 'g-n-payslip', 'g-dt-bank-call'],
+        items: [['g-d-security', 'g-a-reset', 'g-m-giftcard', 'g-dt-job'],
                 ['g-d-notice-file', 'g-a-doc-share'],
-                ['g-n-blocked', 'g-m-invest', 'g-dt-chat']] },
+                ['g-n-blocked', 'g-dt-chat']] },
       { ask: 'claim', demo: 'g-claim-demo',
-        items: [['g-claim-polish'], ['g-claim-polite'], ['g-claim-careful'], ['g-claim-notice']] }
+        items: [['g-claim-polish'], ['g-claim-careful']] }
     ],
-    // Fresh cases for later days: four for each kind, one for each of its scheduled returns, the last about twelve weeks on (E9).
+    // Fresh cases for later days: two for each kind, one for each of its scheduled returns (E9).
     // A due kind returns as a case the learner has not seen, beside a case of the kind they most often take it for.
-    returns: ['g-ret-popup', 'g-ret-test', 'g-ret-pharmacy', 'g-ret-guard',
-              'g-ret-overlay', 'g-ret-rebate', 'g-ret-cousin', 'g-ret-bankpage',
-              'g-ret-subs', 'g-ret-newbank', 'g-ret-vet', 'g-ret-hospital',
-              'g-ret-clinic', 'g-ret-hr', 'g-ret-lonely', 'g-ret-buspass',
-              'g-ret-water', 'g-ret-pool', 'g-ret-pension', 'g-ret-results']
+    returns: ['g-ret-popup', 'g-ret-guard',
+              'g-ret-overlay', 'g-ret-cousin',
+              'g-ret-vet', 'g-ret-newbank',
+              'g-ret-clinic', 'g-ret-hr',
+              'g-ret-water', 'g-ret-pension']
   },
 
   // Build notes: not shown to the learner, and left out of the fingerprint. The validator reads them.
@@ -109,7 +100,8 @@ FC.unit('scams', 'u1', {
     history: [
       { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the gate unit, written to the rewritten key (docs/rebuild/scams-plan.md). Not yet deployed, so later edits before the first deploy stay revision 1. Five families, with the real notice that asks nothing taught first; five term cards; eight look-alike pairs; a baseline check of six cases.' },
       { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' },
-      { rev: 3, date: '2026-10-05', change: 'American English: dollars, US institutions and payments, US spelling.' }
+      { rev: 3, date: '2026-10-05', change: 'American English: dollars, US institutions and payments, US spelling.' },
+      { rev: 4, date: '2026-10-05', change: 'Trimmed to a quick lesson: one case per name, the essentials, a short drill.' }
     ],
     // What the K2 rewrite changed in the gate, and why (from docs/rebuild/scams-plan.md, section a).
     keyChanges: [
@@ -129,16 +121,7 @@ FC.unit('scams', 'u1', {
         now: 'five term cards: a way you already had, the check, one-time code, permission screen, screen-sharing',
         why: 'One taught phrase for the defense (a number, a link or an app that came with the message never counts, even if you are the one who dials or taps it), and each of the other four words taught before the first card that needs it (K6).' }
     ],
-    // The wrong ideas the refute cards name, and where each comes from (V22). Neither source has been read and confirmed
-    // online yet, so both are marked unverified and are listed on the deploy report until they are (E15).
-    wrongIdeas: [
-      { card: 'refute-polish', about: 'D1',
-        source: { kind: 'published', verified: false,
-          ref: 'Herley (2012), Why do Nigerian scammers say they are from Nigeria?, Workshop on the Economics of Information Security: scammers can afford to look obvious, and the copies that a person trusts are the ones that look right. To be read and confirmed online before release, or replaced by what cold readers actually say about spelling and logos.' } },
-      { card: 'refute-careful', about: 'D1',
-        source: { kind: 'published', verified: false,
-          ref: 'Button, Nicholls, Kerr & Owen (2014), Online frauds: learning from victims why they fall for these scams, Australian & New Zealand Journal of Criminology 47(3): victims describe themselves as careful, and describe the scam as fitting their circumstances at the time. To be read and confirmed online before release.' } }
-    ],
+    wrongIdeas: [],       // the two wrong-idea cards were cut in the quick lesson; the ideas live on in the claim items, the look-alike card and the recap
     signoff: {
       coverage: null,     // { date, by } once tests/validate-data.mjs passes on this unit in the app
       coldRead: null      // { rev, date, reader: 'novice' | 'near-novice', restated: true, drillAttempted: true, notes }

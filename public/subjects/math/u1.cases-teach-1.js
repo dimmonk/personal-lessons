@@ -16,16 +16,6 @@ FC.cases('math', 'u1', [
     route: { M1: ['whole'] },
     cues: { M1: ['every row to hold the same number of chairs', 'In how many different ways can he set them out?'] } },
 
-  { id: 'gt-lights', use: 'teach', tier: 'clean', setting: 'travel', topic: 'two harbor lights that flash', name: 'The two lights',
-    text: 'A lighthouse flashes every 15 seconds and the beacon on the pier flashes every 20 seconds. They have just flashed together. How many seconds will pass until they next flash together?',
-    route: { M1: ['whole'] },
-    cues: { M1: ['flashes every 15 seconds', 'flashes every 20 seconds', 'until they next flash together'] },
-    segments: [
-      { text: 'A lighthouse flashes every 15 seconds and the beacon on the pier flashes every 20 seconds', note: 'That gives the two repeats, and they matter. But the question about them is in the last sentence: what do you have to work out from them?' },
-      { text: 'They have just flashed together', note: 'That tells you where the count starts. It is not what the problem asks you to work out.' },
-      { text: 'How many seconds will pass until they next flash together?' }
-    ] },
-
   { id: 'gt-rolls', use: 'check', tier: 'clean', setting: 'shopping', topic: 'rolls left over after packing',
     text: 'A baker packs 200 rolls into boxes of 12 and sends the full boxes to a shop. How many rolls are left over for the staff?',
     route: { M1: ['whole'] },
@@ -47,16 +37,6 @@ FC.cases('math', 'u1', [
     route: { M1: ['unknown'] },
     cues: { M1: ['a fixed $30 plus $0.40 for every kilometer driven', 'Her bill is $54', 'How many kilometers did she drive?'] } },
 
-  { id: 'gt-ward', use: 'teach', tier: 'clean', setting: 'health', topic: 'rice for a hospital ward', name: 'The hospital kitchen',
-    text: 'A hospital kitchen uses 3 kg of rice to feed 20 patients. Tomorrow 50 patients are expected. How much rice will the kitchen need?',
-    route: { M1: ['unknown'] },
-    cues: { M1: ['uses 3 kg of rice to feed 20 patients', 'How much rice will the kitchen need?'] },
-    segments: [
-      { text: 'A hospital kitchen uses 3 kg of rice to feed 20 patients', note: 'That gives the facts the missing number is scaled from. It does not name what is missing.' },
-      { text: 'Tomorrow 50 patients are expected', note: 'That gives the new number of patients. It is a fact the answer depends on, and it is not the number the problem leaves out.' },
-      { text: 'How much rice will the kitchen need?' }
-    ] },
-
   { id: 'gt-pens', use: 'check', tier: 'clean', setting: 'shopping', topic: 'pens and notebooks from a total',
     text: 'Sam bought pens at $2 each and notebooks at $5 each. He bought 9 items in all and paid $30 in all. How many pens and how many notebooks did he buy?',
     route: { M1: ['unknown'] },
@@ -68,16 +48,6 @@ FC.cases('math', 'u1', [
     text: 'Oskar plants a shrub that is 40 cm tall. It grows 15 cm every year. How tall will it be after 8 years?',
     route: { M1: ['growth'] },
     cues: { M1: ['It grows 15 cm every year', 'How tall will it be after 8 years?'] } },
-
-  { id: 'gt-savings', use: 'teach', tier: 'clean', setting: 'money', topic: 'savings that earn interest', name: 'The savings account',
-    text: 'Priya puts $3,000 into an account that pays 4% interest each year. The interest is added to the account, so next year’s interest is worked out on the new, bigger total. How much will she have after 6 years?',
-    route: { M1: ['growth'] },
-    cues: { M1: ['pays 4% interest each year', 'How much will she have after 6 years?'] },
-    segments: [
-      { text: 'Priya puts $3,000 into an account that pays 4% interest each year' },
-      { text: 'The interest is added to the account, so next year’s interest is worked out on the new, bigger total', note: 'That explains how the amount changes, and it matters. But it is not the words that say the amount changes as time passes: those are in the first sentence.' },
-      { text: 'How much will she have after 6 years?', note: 'That is the question, and it names the time, 6 years. But it does not say how the amount changes each year.' }
-    ] },
 
   { id: 'gt-poolpass', use: 'check', tier: 'clean', setting: 'leisure', topic: 'a pool pass that went up once',
     text: 'Until March a swimming pass at the town pool cost $30 a month. In March the price went up to $36, and it has stayed at $36 ever since. What will the pass cost a month in December?',

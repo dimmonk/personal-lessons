@@ -1,36 +1,19 @@
 // Statistical Claims, Unit Six, the cards that close the unit after the drill. This is an action subject (subject.action is true), so the unit ends
-// with a plan card. The recap prints, from the key and the portraits, the unit's part of the key and each name's `needs` and `ask` and `act`.
+// with a plan card. The recap prints, from the key and the meet cards, the unit's questions and each name's `needs` and `act`.
 
 FC.cards('stats', 'u6', [
 
   { id: 'recap', kind: 'recap',
     h: 'What to carry away',
-    link: 'You have now run the last question on your own. This card puts the unit in one place, in the words used all the way through.',
+    link: 'You have now run the last question on your own. This card puts the unit in one place.',
     carry: [
       'When a claim gives one thing as the reason for another, put the question to it and point to the words that show your answer. If you cannot point, you do not have an answer yet.',
-      'A result for the people who got a thing, or for one place before and after, is not yet a result for the thing. It needs a group that went without, counted in the same way, to show what happens anyway.',
-      'A group chosen for how badly, or how well, it had done tends to move back toward its usual level with nothing done. In a class where nobody was tutored, the three lowest scorers still went from an average of 46 to 55.',
-      'Two groups that put themselves where they are differ in more than the thing. Compare people who are alike in the other thing and the difference can shrink a long way: 38 pounds became 2.',
+      'A result for the people who got a thing, or for one place before and after, is not yet a result for the thing. It needs a group that went without, counted in the same way.',
+      'A group chosen for how badly, or how well, it had done tends to move back toward its usual level with nothing done. When a case also has nothing to set beside it, the answer is {a:K1.extreme}.',
+      'Two groups that put themselves where they are differ in more than the thing: 38 pounds became 2.',
       'Two things going together can come in either order. Ask which came first, and how anyone knows.',
-      'When a case shows two answers, a group picked at its worst and nothing to set beside it, the answer is {a:K1.extreme}, the more exact one.',
-      'Finding another explanation does not make a claim false, and it does not mean the figures prove nothing. It says what else could explain them, and what would settle it.',
-      'The test that closes all four is groups formed by a draw, one given the thing, both counted in the same way. When you see that, the first question gets the answer {a:S1.holds}.'
+      'Finding another explanation does not make a claim false, and it does not mean the figures prove nothing. It says what else could explain them, and what would settle it. When you see groups formed by a draw, the first question gets the answer {a:S1.holds}.'
     ] },
-
-  { id: 'transfer', kind: 'transfer',
-    h: 'Where would you meet this?',
-    link: 'The last step is yours, and nothing on this card is marked.',
-    ask: [
-      'Knowing the four names is one step. Noticing the moment to use one is a separate step, and only you know where those moments are in your life.',
-      'Pick one of the four and name an occasion of your own: something you read, something you were told, or something you said. The lines under each name are there to jog your memory.'
-    ],
-    prompts: [
-      { outcome: 'nocontrol', occasion: 'A product or program you tried, and gave the credit when things got better. What would have happened with nothing?' },
-      { outcome: 'regression', occasion: 'A bad week or a bad result that you acted on, and then felt better. Was it the thing you did, or the next week?' },
-      { outcome: 'confound', occasion: 'A claim that people who do something are healthier, richer or more successful. What else is true of those people?' },
-      { outcome: 'reverse', occasion: 'Two things in your life that go together, where you always assumed which one came first.' }
-    ],
-    places: ['At home', 'At work', 'In the news', 'On my phone'] },
 
   { id: 'plan', kind: 'plan', optional: true,
     h: 'A plan, if you want one',

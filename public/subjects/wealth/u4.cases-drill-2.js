@@ -1,108 +1,45 @@
-// Wealth Preservation, Unit Four: drill cases, stage two (one key question at a time, on a new case), the reverse items (one for each
-// name), and the faulty claims of the last stage.
-// A reverse item gives the name and asks what you would expect: every choice is what one of the taught names sounds like (voice), so no
-// choice is a false statement. A claim is something a person might say that uses a name wrongly, or reasons in one of the unit's ways.
-// ask.type 'missing': "what would you need to see before this name could be used?" (the choices are the key's "what you must be able
-// to point to" lines). ask.type 'option': the key's question is asked of the claim itself. The fault is shown after the learner commits,
-// and the claim put right is always the last thing shown.
+// Wealth Preservation, Unit Four: cases for drill: the whole question order, no help (clean, then varied).
+// Field guide: see u4.cards-1.js. use: 'teach' = shown in a card; 'check' = asked between cards; 'drill' and 'return' are never in a card.
 
 FC.cases('wealth', 'u4', [
 
-  /* ---------- Stage two: the key's question alone, on a new case ---------- */
-  { id: 'p-cb1', use: 'drill', tier: 'clean', setting: 'home', topic: 'a job loss and monthly sales',
-    text: "Rashid, 58, lost his job six months ago and is living on his $200,000 in funds of shares. He pays his $1,600 monthly costs by selling $1,600 of the funds each month, and has no cash set aside.",
+  { id: 'r-cb1', use: 'drill', tier: 'clean', setting: 'work', topic: 'early retirement from a bank',
+    text: "Mehmet, 60, took early retirement from his job at the bank. His $540,000 is in funds of shares, and he draws $2,400 a month from it by selling units. He has no cash set aside, and prices have fallen 24% this year.",
     outcome: 'cashbuffer', route: { D1: ['timing'], T1: ['livingcosts'] },
-    cues: { T1: 'He pays his $1,600 monthly costs by selling $1,600 of the funds each month, and has no cash set aside' },
-    reason: { T1: 'Rashid’s monthly costs are paid by selling funds, and nothing is set aside to spend from instead: {cue:T1}. If prices fall, every one of those monthly sales is made at the low price.' },
-    not: { outcome: 'covered', why: 'He has no cash set aside. The money for his bills is in funds whose price can fall, and none of it is out of a fall’s reach.' } },
+    cues: { D1: 'he draws $2,400 a month from it by selling units', T1: ['he draws $2,400 a month from it by selling units', 'He has no cash set aside'] },
+    reason: { D1: 'The case is about what a fall would do to money that is drawn on every month: {cue:D1}. Nothing in it is a charge, rests on one thing, or is about a death or a gift.',
+              T1: 'Mehmet’s bills are paid by selling funds, and nothing is set aside: {cue:T1}. With prices down 24%, each $2,400 takes a bigger slice of the funds, and that slice is not there when prices recover. This is {t:sequence}.' },
+    not: { outcome: 'covered', why: 'Mehmet lives on his money in a year of falling prices, as the people in {o:covered} do. But he has no cash set aside, so the money for his bills is not out of a fall’s reach.' } },
 
-  { id: 'p-cv1', use: 'drill', tier: 'clean', setting: 'retirement', topic: 'a woman who has not sold since the drop',
-    text: "Gwen, 70, takes $2,100 a month from her $510,000. $75,600 of it, three years of her spending, is in a savings account, and she pays the bills from it. Her funds of shares have fallen by 30%, and she has sold none.",
+  { id: 'r-cv1', use: 'drill', tier: 'clean', setting: 'retirement', topic: 'a woman of seventy-two spending from savings',
+    text: "Ottilie, 72, spends $1,500 a month. She keeps $54,000 in a savings account, which is three years of spending, and pays her bills from it. Her $300,000 in funds of shares has fallen by 27%, and she has sold none of it since.",
     outcome: 'covered', route: { D1: ['timing'], T1: ['ready'] },
-    cues: { T1: '$75,600 of it, three years of her spending, is in a savings account, and she pays the bills from it' },
-    reason: { T1: 'Gwen’s bills are paid from money that a fall cannot reach: {cue:T1}. The 30% fall changes what her funds are worth, and she needs nothing from them for now.' },
-    not: { outcome: 'cashbuffer', why: 'Gwen is living on her money in a year of falling prices, as {o:cashbuffer} describes. But her bills are paid from cash and none of her funds has been sold.' } },
+    cues: { D1: 'Ottilie, 72, spends $1,500 a month', T1: 'She keeps $54,000 in a savings account, which is three years of spending, and pays her bills from it' },
+    reason: { D1: 'The case is about what a fall would do to money that pays living costs: {cue:D1}. Nothing in it comes out as a charge, rests on one thing, or is about a death or a gift.',
+              T1: 'Her bills are paid from money a fall cannot reach: {cue:T1}. The funds fell by 27% and she has sold none of them, so the fall changed what they are worth and nothing about what she spends.' },
+    not: { outcome: 'cashbuffer', why: 'Ottilie lives on her money in a year of falling prices, which is the setting of {o:cashbuffer}. But {o:cashbuffer} needs the bills paid by selling with nothing set aside, and she has sold none of her funds.' } },
 
-  { id: 'p-ld1', use: 'drill', tier: 'clean', setting: 'health', topic: 'a hip operation paid on the day',
-    text: "Kwame, 62, needs a hip operation. After his insurance pays its part, the hospital has quoted him $14,000, payable on the day of the operation, October 20, five months from now. The money for it is in a fund of shares, down 16% since the summer.",
+  { id: 'r-ld1', use: 'drill', tier: 'clean', setting: 'business', topic: 'a new lease paid to a landlord',
+    text: "Bashir's café has to pay $18,000 to the landlord on April 1 for a new lease, six months from now. The money is in a fund of shares that has fallen by 14% this year.",
     outcome: 'ladder', route: { D1: ['timing'], T1: ['datedbill'] },
-    cues: { T1: ['quoted him $14,000, payable on the day of the operation, October 20', 'The money for it is in a fund of shares'] },
-    reason: { T1: 'The bill is a known size on a known date, and its money sits in shares: {cue:T1}. After a 16% fall the fund holds about $11,760 of the $14,000, and the hospital’s date does not move.' },
-    not: { outcome: 'covered', why: 'There is a bill, but the money for it is in {t:fund} of shares and not in cash or in {t:bond} that repays before the day.' } },
+    cues: { D1: 'has to pay $18,000 to the landlord on April 1 for a new lease', T1: ['has to pay $18,000 to the landlord on April 1 for a new lease', 'The money is in a fund of shares'] },
+    reason: { D1: 'The case is about what a fall would do to money that has a job on a date: {cue:D1}. Nothing in it comes out every year, rests on one thing, or is about a death or a gift.',
+              T1: 'The lease payment is a known size on a known date, and its money sits where its price can fall: {cue:T1}. After a fall of 14% the fund holds about $15,480 of the $18,000, and the landlord’s date does not move.' },
+    not: { outcome: 'covered', why: 'There is a bill and a fall, as in {o:covered}. But that name needs the money for the bill already in cash or in bonds that repay by the day, and here it is in shares.' } },
 
-  { id: 'p-rb1', use: 'drill', tier: 'varied', setting: 'work', topic: 'a retirement-savings mix after eleven years of rises',
-    text: "Ngozi, 38, chose 70% shares and 30% bonds for the money she is putting away for retirement. After eleven years of rises, shares are $442,000 of her $520,000, 85%. She will not need any of it for twenty-five years.",
+  { id: 'r-rb1', use: 'drill', tier: 'varied', setting: 'work', topic: 'a 401(k) mix after a long rise',
+    text: "Chidi, 46, set out 60% of his 401(k) in shares and 40% in bonds, and allows himself 5 points either way. After a long rise, shares are $560,000 of his $700,000, 80%. He is not selling anything, and no bill is due for years.",
     outcome: 'rebalance', route: { D1: ['timing'], T1: ['drifted'] },
-    cues: { T1: 'shares are $442,000 of her $520,000, 85%' },
-    reason: { T1: 'Ngozi chose 70% in shares, and now {cue:T1}. That is 15 points above her plan, with no living costs and no bill in the case, so {t:mix} is the only thing that a fall would find.' },
-    not: { outcome: 'covered', why: 'A mix is only covered when it is still inside the limits the plan allows. 15 points above the plan is well outside any limit of a few points.' } },
+    cues: { D1: 'set out 60% of his 401(k) in shares and 40% in bonds', T1: 'shares are $560,000 of his $700,000, 80%' },
+    reason: { D1: 'The case is about how the money is split against a plan: {cue:D1}. Nothing in it comes out every year, rests on one thing, or is about a death or a gift.',
+              T1: 'Chidi’s limit is 55% to 65%, and the case says {cue:T1}. That is 20 points above the plan and 15 above the limit, with no bill and no living costs in the case.' },
+    not: { outcome: 'covered', why: 'A mix is only covered when it is still inside the limits the plan allows. Chidi’s limit is 5 points, and {t:mix} is 20 points from the plan.' } },
 
-  { id: 'p-cv2', use: 'drill', tier: 'varied', setting: 'business', topic: 'a supplier bill met by two bonds',
-    text: "Hakim's company owes a supplier $75,000 on December 1, seven months from now. The money for it is in two US Treasury bonds that repay $40,000 on September 30 and $35,000 on November 15, both before the bill is due. Share prices have fallen by 20% since the spring.",
+  { id: 'r-cv3', use: 'drill', tier: 'varied', setting: 'family', topic: 'a mix near its plan in a saver’s pot',
+    text: "Luciana, 51, chose 40% in shares and 60% in bonds, and allows shares to move 5 points either side. Her $480,000 now has $204,000 in shares, 42.5%. She is not living on it yet, and no bill is due.",
     outcome: 'covered', route: { D1: ['timing'], T1: ['ready'] },
-    cues: { T1: 'The money for it is in two US Treasury bonds that repay $40,000 on September 30 and $35,000 on November 15, both before the bill is due' },
-    reason: { T1: 'The money for the bill is out of a fall’s reach: {cue:T1}. The bonds repay the full $75,000 before the date, whatever shares do.' },
-    not: { outcome: 'ladder', why: 'There is a bill on a known date, as in {o:ladder}. But that name needs the money for it in shares or funds, and here it is in bonds that repay before the bill is due.' } },
-
-  /* ---------- Reverse items: the name is given, the learner says what to expect ---------- */
-  { id: 'rev-cashbuffer', use: 'drill', kind: 'reverse', outcome: 'cashbuffer', expect: 'hear',
-    options: [
-      { text: '"I sell about $2,000 of the funds on the first of every month, and I don’t have any cash set aside."', voice: 'cashbuffer' },
-      { text: '"The bond pays out in May, and the bill isn’t due until June."', voice: 'covered' },
-      { text: '"Tuition is due in September, and the money is in my brokerage account."', voice: 'ladder' },
-      { text: '"It was meant to be 60 and 40, and now it’s 75 and 25."', voice: 'rebalance' }
-    ],
-    why: 'It says that the bills are paid by selling investments, month after month, with nothing set aside to spend from instead.' },
-
-  { id: 'rev-covered', use: 'drill', kind: 'reverse', outcome: 'covered', expect: 'find',
-    options: [
-      { text: 'She has not sold a fund since prices fell, and the bills have come out of a savings account.', voice: 'covered' },
-      { text: 'He pays the rent by selling units of a fund, and has no cash set aside.', voice: 'cashbuffer' },
-      { text: 'The daycare fees are due in March, and the money for them is in a fund of shares.', voice: 'ladder' },
-      { text: 'Shares have grown to 82% of the money, against a plan of 60%.', voice: 'rebalance' }
-    ],
-    why: 'That detail shows the money that will be needed already out of a fall’s reach, so nothing has to be sold because of it.' },
-
-  { id: 'rev-ladder', use: 'drill', kind: 'reverse', outcome: 'ladder', expect: 'hear',
-    options: [
-      { text: '"The down payment is due on June 1, and it’s all still in my fund."', voice: 'ladder' },
-      { text: '"I’ve got three years of bills in the savings account."', voice: 'covered' },
-      { text: '"I sell a bit every month to live on."', voice: 'cashbuffer' },
-      { text: '"I never changed the mix, and I haven’t looked at it for years."', voice: 'rebalance' }
-    ],
-    why: 'It names a payment with a date, and says that the money for it is still in an investment whose price can fall.' },
-
-  { id: 'rev-rebalance', use: 'drill', kind: 'reverse', outcome: 'rebalance', expect: 'find',
-    options: [
-      { text: 'The case gives the plan, 60% in shares, and the mix now, 76%, with no bill and no living costs.', voice: 'rebalance' },
-      { text: 'The money for the tax bill is held in a bond that repays before it is due.', voice: 'covered' },
-      { text: 'The bills are paid by selling units of a fund every month.', voice: 'cashbuffer' },
-      { text: 'A bill of $20,000 is due on May 1, and its money is in a share fund.', voice: 'ladder' }
-    ],
-    why: 'That detail is {t:mix} far from the plan, with nothing being sold to pay for anything.' },
-
-  /* ---------- Faulty claims: the first is worked for the learner; then commit first, the fault, the claim put right ---------- */
-  { id: 'w4-c-demo', use: 'claim',
-    text: '"Prices fell 30% this year, so I need to rebalance. My plan is 60% in shares and I allow 5 points either way, and shares are at 58% of the money."',
-    ask: { type: 'missing', name: 'rebalance' },
-    fault: 'The claim treats a fall in prices as the reason to rebalance. The name needs a mix that has moved well outside the limits the plan allows, and the speaker’s own numbers show shares at 58%, two points from the plan and inside the limit of 5. A fall moves {t:mix} a little as a matter of course, which is why a plan has limits. Selling or buying now would be a trade that the plan does not call for.',
-    corrected: 'Prices fell 30% this year. My plan is 60% in shares and I allow 5 points either way, and shares are at 58%. That is inside my limit, so nothing needs doing, and the answer is {a:T1.ready}. It would be {o:rebalance} only if shares were outside 55% to 65%.' },
-
-  { id: 'c-cash', use: 'claim',
-    text: '"I’m 64 and I live off my funds, selling a little each month. A friend says I should keep three years of spending in cash, $75,000. Cash earns nothing, so that is just $75,000 wasted."',
-    ask: { type: 'option', step: 'T1', answer: 'livingcosts' },
-    fault: 'The claim counts the cost of the cash and never counts what it is for. Cash earns less than shares are expected to, which is a real cost: if shares grew 5% and the account paid 1%, $75,000 would give up $3,000 a year. But the speaker lives on funds by selling a little each month, so a fall means selling at the low price, and what is sold is not there when prices come back. That is {t:sequence}, and the cash is the price of not selling then. "Earns nothing" is not true, and "wasted" is not the right word for a price paid in order to wait.',
-    corrected: 'I live off my funds by selling a little each month, which is {a:T1.livingcosts}. Holding three years of spending as cash would cost me about $3,000 a year in growth I would not get, if shares grew 5% and the account paid 1%. It buys me time not to sell on a bad day. I should count that cost against what a fall could cost me, and then decide.' },
-
-  { id: 'c-bill', use: 'claim',
-    text: '"My daughter’s college tuition of $30,000 is due in September, two years from now, and the money is in a share fund. Bonds are boring and pay less. Shares beat bonds over the long run, so I’ll leave it where it is."',
-    ask: { type: 'option', step: 'T1', answer: 'datedbill' },
-    fault: 'The claim answers a question about the long run, and the bill has a date. "Over the long run" says something about many years taken together, and nothing in it says what the fund will be worth on the day in September when $30,000 is due. After a fall of 25% the fund would hold $22,500, which is $7,500 short, and the date would not move. The claim counts what bonds give up, and never what the date takes.',
-    corrected: 'My daughter’s tuition of $30,000 is due on a date two years from now, and the money for it is in shares, which is {a:T1.datedbill}. One bond that repays $30,000 by the day takes the fall out of the question, at the price of some growth. What shares may do over the long run is not about this bill, because this bill has a day.' },
-
-  { id: 'c-covered', use: 'claim',
-    text: '"I have $5,000 in my savings account, so the $30,000 private school tuition in September is covered."',
-    ask: { type: 'missing', name: 'covered' },
-    fault: 'The claim says covered, and shows $5,000 against a bill of $30,000. For the name you must be able to point to the money for the bill already in cash, or in bonds that repay in time, and here that is $5,000 of $30,000. The other $25,000 is somewhere the claim does not say, and if it is in shares, a fall could leave it short. Having some cash is not the same as having the bill covered.',
-    corrected: 'I have $5,000 in my savings account, and the tuition is $30,000 in September, with the other $25,000 in shares. $25,000 of the bill is in shares, which is {a:T1.datedbill}. It would be {o:covered} only if all $30,000 were already in cash, or in bonds that repay it by September.' }
+    cues: { D1: 'chose 40% in shares and 60% in bonds', T1: 'now has $204,000 in shares, 42.5%' },
+    reason: { D1: 'The case is about how the money is split against a plan: {cue:D1}. Nothing in it comes out every year, rests on one thing, or is about a death or a gift.',
+              T1: 'Luciana’s limit is 35% to 45%, and the case says {cue:T1}. That is 2.5 points above the plan, inside the limit, so a fall would take about what she chose.' },
+    not: { outcome: 'rebalance', why: 'Every mix moves a little, and this one has moved only a little. It is still well inside the limit the plan allows, so it has not moved well away from the plan.' } },
 ]);

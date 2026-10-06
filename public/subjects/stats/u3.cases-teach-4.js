@@ -9,28 +9,12 @@ FC.cases('stats', 'u3', [
     outcome: 'smalln', route: { S1: ['counted'], A1: ['handful'] },
     cues: { S1: ['9 of its 10 sixth graders reached the top level', 'Fenwick is the best school in the county for reading'], A1: '9 of its 10 sixth graders reached the top level' } },
 
-  { id: 'cn-street', use: 'teach', tier: 'clean', setting: 'health', topic: 'a rare illness on a street of nine homes', name: 'The street of nine homes',
-    text: "Two of the nine households on Alder Lane have someone with a rare illness. A local reporter writes: 'Alder Lane has the highest rate of the illness in the city: 22 households in every 100, eleven times the city's 2 in every 100.'",
-    outcome: 'smalln', route: { S1: ['counted'], A1: ['handful'] },
-    cues: { S1: ['Two of the nine households on Alder Lane', 'Alder Lane has the highest rate of the illness in the city'], A1: 'Two of the nine households on Alder Lane' },
-    segments: [
-      { text: 'Two of the nine households on Alder Lane have someone with a rare illness' },
-      { text: 'Alder Lane has the highest rate of the illness in the city', note: 'That is the claim, and it is what the figure is read as meaning. The words to tap are the ones that say how many are in the figure.' },
-      { text: "22 households in every 100, eleven times the city's 2 in every 100", note: 'That is the figure, worked out from the nine. It does not say how many are in it.' }
-    ] },
-
   { id: 'cn-leaderboard', use: 'check', tier: 'clean', setting: 'leisure', topic: 'a game leaderboard and a perfect win rate', name: 'The game leaderboard',
     text: "A word-game app shows a leaderboard of win rates. The top place is held by a player called Moth: 100%, with 5 wins from 5 games. The app's blog says: 'Moth is the best player in the game.'",
     outcome: 'smalln', route: { S1: ['counted'], A1: ['handful'] },
     cues: { S1: ['5 wins from 5 games', 'Moth is the best player in the game'], A1: '5 wins from 5 games' },
     reason: { S1: 'The blog speaks for how good Moth is, but the figure comes from five games: {cue:S1}.',
               A1: 'Every game Moth has played is counted, so nobody is left out. But there are only five: {cue:A1}. One lost game would make it 4 of 5, which is 80 in every 100, and the leaderboard puts a player with five games above players with five hundred.' } },
-
-  /* ---------- The look-alike with the third name: twelve people, two ways ---------- */
-  { id: 'cn-cafe-twelve', use: 'teach', tier: 'clean', setting: 'money', topic: 'a café on its first day and twelve customers', name: 'The café, twelve customers',
-    text: "A café has been open for one day. Twelve people have eaten there, and the owner asked all twelve. All twelve answered, and nine said they liked the food. The owner says: 'Three in four people like our food.'",
-    outcome: 'smalln', route: { S1: ['counted'], A1: ['handful'] },
-    cues: { S1: ['nine said they liked the food', 'Three in four people like our food'], A1: 'Twelve people have eaten there, and the owner asked all twelve' } },
 
   /* ---------- The look-alike with the claim that holds: one player, four kicks and eighty ---------- */
   { id: 'cn-penalties-four', use: 'teach', tier: 'clean', setting: 'leisure', topic: 'a school soccer player and 4 penalties', name: 'The penalty taker, four kicks',

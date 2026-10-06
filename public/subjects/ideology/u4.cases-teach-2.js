@@ -39,17 +39,4 @@ FC.cases('ideology', 'u4', [
             N1: 'we are one people, and a day like this shows that what divides us counts for less than what holds us together',
             N2: 'Let us go on voting, arguing and disagreeing as we always have' } },
 
-  /* ---------- The same parliament, an old crown and one people with one leader ---------- */
-  { id: 'i4-lk-react-crown', use: 'teach', tier: 'clean', setting: 'town', topic: 'a crown swept away by a parliament', name: 'The crown of the Ruddock lands',
-    text: "From a pamphlet in the Ruddock Republic: 'The men who made our parliament swept away the crown and the old council of the Ruddock lands, which kept the peace for five hundred years. That was a wrong, and the parliament is built on it. The crown and the council are the old order of our land and should guide it still. Put the crown back on the throne and the old council back in its hall, and let the parliament serve them as it should.'",
-    outcome: 'react', route: { D1: ['tradition'], T1: ['restore'] },
-    cues: { D1: 'The crown and the council are the old order of our land and should guide it still',
-            T1: ['That was a wrong, and the parliament is built on it', 'Put the crown back on the throne and the old council back in its hall'] } },
-
-  { id: 'i4-lk-fasc-crown', use: 'teach', tier: 'clean', setting: 'borders', topic: 'a parliament and a rally against it', name: 'The rally in the Ruddock Republic',
-    text: "From a rally speech in the Ruddock Republic: 'The parliament talks while the nation bleeds. We are one people with one will, and we will not wait on rows between parties. When our movement holds the country there will be no more parties and no more votes, and no one will be allowed to stand in the way. One leader will speak for all of us, and we will rise as one people.'",
-    outcome: 'fasc', route: { D1: ['nation'], N1: ['whole'], N2: ['aside'] },
-    cues: { D1: 'We are one people with one will',
-            N1: 'We are one people with one will',
-            N2: 'there will be no more parties and no more votes, and no one will be allowed to stand in the way' } }
 ]);

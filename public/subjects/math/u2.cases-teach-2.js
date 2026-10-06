@@ -1,65 +1,94 @@
-// Basic Math, Unit Two: problems shown inside cards, part two (the biggest equal piece for two numbers, and two repeating
-// things happening together again). Both give two numbers, and they are the pair most easily taken for each other.
+// Basic Math, Unit Two: the two pairs of look-alike problems, and the problem of each worked example (a worked example's problem
+// carries only the problem; its working is on the card).
 
 FC.cases('math', 'u2', [
 
-  /* ---------- The third kind: the biggest equal piece two numbers both split into ---------- */
-  { id: 'wd-peppers', use: 'teach', tier: 'clean', setting: 'cooking', topic: 'peppers in trays', name: 'The pepper trays', outcome: 'hcf',
-    text: 'A cook has 12 red peppers and 18 green peppers. She wants to fill trays that each hold the same number of peppers, with red peppers in some trays and green in the others and none left over. What is the largest number of peppers a tray can hold?',
+  { id: 'la-patrols-prime', use: 'teach', tier: 'clean', setting: 'leisure', topic: 'scouts in patrols', outcome: 'prime',
+    text: 'A scout leader has 57 scouts and wants to split them into equal patrols, with more than one patrol and more than one scout in each patrol. Is that possible?',
+    route: { M1: ['whole'], W1: ['split'] },
+    cues: { M1: ['split them into equal patrols, with more than one patrol and more than one scout in each patrol'],
+            W1: ['split them into equal patrols, with more than one patrol and more than one scout in each patrol', 'Is that possible?'] } },
+
+  { id: 'la-patrols-factor', use: 'teach', tier: 'clean', setting: 'leisure', topic: 'scouts and primes', outcome: 'factor',
+    text: 'A scout leader has 57 scouts and wants to know which prime numbers multiply together to give 57.',
+    route: { M1: ['whole'], W1: ['parts'] },
+    cues: { M1: ['which prime numbers multiply together to give 57'], W1: ['which prime numbers multiply together to give 57'] } },
+
+  { id: 'la-ribbon-hcf', use: 'teach', tier: 'clean', setting: 'home', topic: 'two lengths of ribbon', outcome: 'hcf',
+    text: 'Ruth has two lengths of ribbon, one 16 m long and one 24 m long. She cuts both into pieces of one length with none left over. What is the greatest length each piece can have?',
     route: { M1: ['whole'], W1: ['piece'] },
-    cues: { M1: ['fill trays that each hold the same number of peppers, with red peppers in some trays and green in the others and none left over'],
-            W1: ['fill trays that each hold the same number of peppers, with red peppers in some trays and green in the others and none left over', 'What is the largest number of peppers a tray can hold?'] } },
+    cues: { M1: ['cuts both into pieces of one length with none left over'],
+            W1: ['cuts both into pieces of one length with none left over', 'What is the greatest length each piece can have?'] } },
 
-  { id: 'wd-youth', use: 'teach', tier: 'clean', setting: 'leisure', topic: 'boys and girls in teams', name: 'The youth teams', outcome: 'hcf',
-    text: 'A youth leader has 21 boys and 28 girls. She wants to make teams of the same size, with only boys in some teams and only girls in the others and nobody left out. What is the largest team size?',
-    route: { M1: ['whole'], W1: ['piece'] },
-    cues: { M1: ['make teams of the same size, with only boys in some teams and only girls in the others and nobody left out'],
-            W1: ['make teams of the same size, with only boys in some teams and only girls in the others and nobody left out', 'What is the largest team size?'] },
-    segments: [
-      { text: 'A youth leader has 21 boys and 28 girls.', note: 'That gives the two numbers. You are asked for the words that say what the pieces must be like.' },
-      { text: 'She wants to make teams of the same size, with only boys in some teams and only girls in the others and nobody left out.' },
-      { text: 'What is the largest team size?', note: 'That is the question, and it matters: it asks for the largest. But the words that say what the pieces must be like are in the sentence before it.' }
-    ] },
-
-  { id: 'wd-tulips', use: 'check', tier: 'clean', setting: 'work', topic: 'tulips and daffodils in bunches', outcome: 'hcf',
-    text: 'A florist has 30 tulips and 45 daffodils. She wants to make bunches that all hold the same number of flowers, with only tulips in some bunches and only daffodils in the others and none left over. What is the largest bunch size?',
-    route: { M1: ['whole'], W1: ['piece'] },
-    cues: { M1: ['make bunches that all hold the same number of flowers, with only tulips in some bunches and only daffodils in the others and none left over'],
-            W1: ['make bunches that all hold the same number of flowers, with only tulips in some bunches and only daffodils in the others and none left over', 'What is the largest bunch size?'] },
-    segments: [
-      { text: 'A florist has 30 tulips and 45 daffodils.', note: 'That gives the two numbers. You are asked for the words that say what the pieces must be like.' },
-      { text: 'She wants to make bunches that all hold the same number of flowers, with only tulips in some bunches and only daffodils in the others and none left over.' },
-      { text: 'What is the largest bunch size?', note: 'That is the question. The words that say what the pieces must be like are in the sentence before it.' }
-    ],
-    reason: { W1: 'The words {cue:W1} give two numbers, 30 and 45, and ask for pieces of one size that both split into with none left over. The question asks for the largest such size, which is {a:W1.piece}.' } },
-
-  /* ---------- The fourth kind: two repeating things happening together again ---------- */
-  { id: 'wd-drummers', use: 'teach', tier: 'clean', setting: 'leisure', topic: 'two drummers', name: 'The two drummers', outcome: 'lcm',
-    text: 'Two drummers start together. One hits a drum every 3 seconds and the other every 4 seconds. After how many seconds do they next hit their drums together?',
+  { id: 'la-ribbon-lcm', use: 'teach', tier: 'clean', setting: 'home', topic: 'two kitchen alarms', outcome: 'lcm',
+    text: 'Ruth has two alarms, one that sounds every 16 minutes and one that sounds every 24 minutes. They have just sounded together. After how many minutes will they next sound together?',
     route: { M1: ['whole'], W1: ['together'] },
-    cues: { M1: ['One hits a drum every 3 seconds and the other every 4 seconds', 'next hit their drums together'],
-            W1: ['One hits a drum every 3 seconds and the other every 4 seconds', 'next hit their drums together'] } },
+    cues: { M1: ['one that sounds every 16 minutes and one that sounds every 24 minutes', 'next sound together'],
+            W1: ['one that sounds every 16 minutes and one that sounds every 24 minutes', 'next sound together'] } },
 
-  { id: 'wd-shelves', use: 'teach', tier: 'clean', setting: 'shopping', topic: 'two shelves restocked', name: 'The two shelves', outcome: 'lcm',
-    text: 'A shop restocks one shelf every 5 days and another shelf every 8 days. Both were restocked today. After how many days will both next be restocked on the same day?',
-    route: { M1: ['whole'], W1: ['together'] },
-    cues: { M1: ['restocks one shelf every 5 days and another shelf every 8 days', 'both next be restocked on the same day'],
-            W1: ['restocks one shelf every 5 days and another shelf every 8 days', 'both next be restocked on the same day'] },
-    segments: [
-      { text: 'A shop restocks one shelf every 5 days and another shelf every 8 days.', note: 'That gives the two repeats, and they matter. But the words that say what has to be found about them come in the last sentence.' },
-      { text: 'Both were restocked today.', note: 'That says where the count starts. It does not say what has to be found.' },
-      { text: 'After how many days will both next be restocked on the same day?' }
-    ] },
+  {
+    id: 's-prime-1',
+    use: 'teach',
+    tier: 'clean',
+    setting: 'leisure',
+    topic: 'singers in rows',
+    kind: 'problem',
+    outcome: 'prime',
+    text: 'A choir has 67 singers. The director wants to stand them in equal rows, with more than one row and more than one singer in each row. Is that possible?'
+  },
 
-  { id: 'wd-cleaners', use: 'check', tier: 'clean', setting: 'work', topic: 'two cleaning jobs', outcome: 'lcm',
-    text: 'One cleaner empties the trash cans every 6 days and another cleans the windows every 15 days. Both jobs were done today. After how many days will both next be done on the same day?',
-    route: { M1: ['whole'], W1: ['together'] },
-    cues: { M1: ['empties the trash cans every 6 days and another cleans the windows every 15 days', 'both next be done on the same day'],
-            W1: ['empties the trash cans every 6 days and another cleans the windows every 15 days', 'both next be done on the same day'] },
-    segments: [
-      { text: 'One cleaner empties the trash cans every 6 days and another cleans the windows every 15 days.', note: 'That gives the two repeats, and they matter. But the words that say what has to be found about them come in the last sentence.' },
-      { text: 'Both jobs were done today.', note: 'That says where the count starts. It does not say what has to be found.' },
-      { text: 'After how many days will both next be done on the same day?' }
-    ],
-    reason: { W1: 'The words {cue:W1} give two jobs on separate schedules, every 6 days and every 15 days, and ask for the first day on which both fall. That is {a:W1.together}.' } }
+  {
+    id: 's-factor-1',
+    use: 'teach',
+    tier: 'clean',
+    setting: 'work',
+    topic: 'a puzzle in a newsletter',
+    kind: 'problem',
+    outcome: 'factor',
+    text: 'A puzzle in the staff newsletter says: write 84 as a product of prime numbers. Which prime numbers are they?'
+  },
+
+  {
+    id: 's-hcf-1',
+    use: 'teach',
+    tier: 'clean',
+    setting: 'building',
+    topic: 'a panel cut into squares',
+    kind: 'problem',
+    outcome: 'hcf',
+    text: 'A craftsman has a rectangular panel 60 cm by 84 cm. He wants to cut it into square tiles, all the same size, with no waste. What is the largest side the squares can have?'
+  },
+
+  {
+    id: 's-lcm-1',
+    use: 'teach',
+    tier: 'clean',
+    setting: 'travel',
+    topic: 'two bus routes at one stop',
+    kind: 'problem',
+    outcome: 'lcm',
+    text: 'Two bus routes stop at the same stop. One bus comes every 20 minutes and the other every 30 minutes. They have just arrived together. After how many minutes do they next arrive together?'
+  },
+
+  {
+    id: 's-modrem-1',
+    use: 'teach',
+    tier: 'clean',
+    setting: 'home',
+    topic: 'a clock and fifty hours',
+    kind: 'problem',
+    outcome: 'modrem',
+    text: 'It is 9 o’clock on a clock that shows 12 hours. What time will the clock show 50 hours from now?'
+  },
+
+  {
+    id: 's-irrat-1',
+    use: 'teach',
+    tier: 'clean',
+    setting: 'building',
+    topic: 'the diagonal of a square tile',
+    kind: 'problem',
+    outcome: 'irrat',
+    text: 'A square tile is 1 m along each side. A line is drawn from one corner to the opposite corner, and its length is the number that multiplies by itself to give 2. Can that length be written exactly, as a fraction or a decimal that ends?'
+  }
 ]);

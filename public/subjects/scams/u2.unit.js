@@ -1,13 +1,13 @@
 // Scams, Unit Two: the unit record. A BRANCH unit (lesson standard A1 to A11) of an ACTION subject (P26): it teaches the
 // part of the key that follows the first question's answer "Install something, open a file, or share your screen", which
 // has one question and four names. Each fraud is paired with its real twin, every case stage holds a real case, every
-// portrait says what to do on the spot, and the close has the plan card. Cards live in u2.cards-*.js, cases in u2.cases-*.js.
+// name says what to do on the spot, and the close has the plan card. Cards live in u2.cards-*.js, cases in u2.cases-*.js.
 // Text fields never retype key wording. They use tokens, filled in from key.js:
 // {o:id} {plain:id} {needs:id} {q:STEP} {a:STEP.option} {when:STEP.option} {t:id} {means:id} {test:ledgerId} {cue:STEP}.
 
 FC.unit('scams', 'u2', {
   kind: 'C',              // C classification, F facts, P procedure
-  rev: 3,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
+  rev: 4,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
   standard: 1,            // lesson-standard version this unit was built to
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author). The app labels a draft as a draft.
   tag: 'Two',
@@ -54,58 +54,39 @@ FC.unit('scams', 'u2', {
   // (software you fetched, a file you were sent), then someone on the line.
   parts: [
     { id: 'p1', title: 'Software you fetched, and a file that was sent to you',
-      cards: ['orient', 'meet-realinstall', 'again-realinstall', 'lens', 'portrait-realinstall', 'check-realinstall',
-              'meet-malware', 'again-malware', 'portrait-malware', 'check-malware', 'look-malware-realinstall'] },
+      cards: ['orient', 'meet-realinstall', 'check-realinstall', 'meet-malware', 'check-malware', 'look-malware-realinstall'] },
     { id: 'p2', title: 'Someone on the line who offers to fix something, or to pay you back',
-      cards: ['term-searchad', 'meet-techsupport', 'again-techsupport', 'portrait-techsupport', 'check-techsupport',
-              'refute-closing', 'exc-searched', 'exc-helpdesk',
-              'meet-refundscam', 'again-refundscam', 'portrait-refundscam', 'check-refundscam',
-              'look-techsupport-refundscam', 'exc-both-ways'] },
-    { id: 'p3', title: 'The question, two whole cases, then the drill',
-      cards: ['q-how', 'check-how', 'worked-wage', 'worked-form'], drill: true, close: ['recap', 'transfer', 'plan'] }
+      cards: ['term-searchad', 'meet-techsupport', 'check-techsupport', 'exc-searched', 'exc-helpdesk',
+              'meet-refundscam', 'check-refundscam', 'look-techsupport-refundscam', 'exc-both-ways'] },
+    { id: 'p3', title: 'The question, one whole case, then the drill',
+      cards: ['q-how', 'check-how', 'worked-form'], drill: true, close: ['recap', 'plan'] }
   ],
 
-  // The drill is a ramp of five stages (lesson standard A10). The app owns the wording of every stage instruction.
+  // The drill: the stages that carry the skill. The app owns the wording of every stage instruction.
   // Items are authored in groups: a group is cases that share ledger entries and one tier. The app shuffles the groups
   // inside a tier band (clean, then varied, then misleading) and shuffles inside each group. Every case is new.
   // This is an action subject, so every stage that asks about cases holds a case of the real installation (V37).
   drill: {
     key: 'u2',            // the old quick-drill totals for the device unit were stored under pl:scams:stats:w4 (frozen; see E8)
-    add: 'Real installations are mixed in on purpose. One of the four names is for the real thing, and you will need it as often as the other three. A scam is much easier to spot when you know what the real thing looks like, and you will be asked to tell them apart without being told which is which.',
+    add: 'One of the four names is the real thing, so not every case here is a scam.',
     rungs: [
-      { ask: 'name',
-        items: [['dv-n-recycling-app', 'dv-n-voicemail'],
-                ['dv-n-phone-hacked', 'dv-n-outage-refund'],
-                ['dv-n-quote-file', 'dv-n-password-manager'],
-                ['dv-n-flight-refund', 'dv-n-clinic-popup']] },
       { ask: 'piece',
         items: [[{ case: 'dv-p-pdf-reader', step: 'I1' }, { case: 'dv-p-cv', step: 'I1' }],
                 [{ case: 'dv-p-airline-ad', step: 'I1' }, { case: 'dv-p-council-share', step: 'I1' }],
-                [{ case: 'dv-p-helpdesk', step: 'I1' }, { case: 'dv-p-friend-video', step: 'I1' }],
-                [{ case: 'dv-p-accounts-email', step: 'I1' }, { case: 'dv-p-fridge-refund', step: 'I1' }],
                 [{ tell: 'malware~realinstall' }, { tell: 'techsupport~refundscam' }, { tell: 'techsupport~realinstall' }],
-                ['dv-rev-realinstall', 'dv-rev-malware', 'dv-rev-techsupport', 'dv-rev-refundscam'],
-                [{ earlier: 'u1' }, { earlier: 'u1' }]] },
-      { ask: 'finish',
-        items: [['dv-f-launcher', 'dv-f-shared-folder'],
-                ['dv-f-warranty-email', 'dv-f-crypto-refund']] },
+                [{ earlier: 'u1' }]] },
       { ask: 'route',
         items: [['dv-r-notes-app', 'dv-r-attorney'],
                 ['dv-r-lockpage', 'dv-r-streaming-refund'],
-                ['dv-r-helpdesk-contract', 'dv-r-bank-text'],
-                ['dv-r-wifi-call', 'dv-r-parcel-refund'],
                 ['dv-r-advert-seen', 'dv-r-pdf-ad'],
-                ['dv-r-rebate-file', 'dv-r-account-help'],
-                [{ earlier: 'u1' }, { earlier: 'u1' }]] },
-      { ask: 'claim', demo: 'dv-claim-demo',
-        items: [['dv-claim-wontclose'], ['dv-claim-box'], ['dv-claim-everything'], ['dv-claim-refund']] }
+                [{ earlier: 'u1' }]] }
     ],
-    // Fresh cases for later days: four for each name, one for each of its scheduled returns, the last about twelve weeks
-    // on (E9). A due name returns as a case the learner has not seen, beside a case of the name they most often take it for.
-    returns: ['dv-ret-language-app', 'dv-ret-doorbell', 'dv-ret-update-menu', 'dv-ret-helpdesk-oven',
-              'dv-ret-newsletter', 'dv-ret-delivery-note', 'dv-ret-free-film', 'dv-ret-scanned',
-              'dv-ret-hotel', 'dv-ret-router-text', 'dv-ret-satnav', 'dv-ret-meter-call',
-              'dv-ret-phone-contract', 'dv-ret-insurer', 'dv-ret-safe-account', 'dv-ret-pension']
+    // Fresh cases for later days: two for each name (an action subject, E9). A due name returns as a case the learner has
+    // not seen, beside a case of the name they most often take it for.
+    returns: ['dv-ret-language-app', 'dv-ret-helpdesk-oven',
+              'dv-ret-newsletter', 'dv-ret-delivery-note',
+              'dv-ret-hotel', 'dv-ret-satnav',
+              'dv-ret-phone-contract', 'dv-ret-safe-account']
   },
 
   // Build notes: not shown to the learner, and left out of the fingerprint. The validator reads them.
@@ -114,7 +95,8 @@ FC.unit('scams', 'u2', {
     history: [
       { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the device branch of the rewritten key (docs/rebuild/scams-plan.md). Not yet deployed, so later edits before the first deploy stay revision 1. Four names (the real installation taught first, then the three scams told as they unfold, each with what to do on the spot), one term (search ad), six look-alike pairs, two named exceptions, and a drill that mixes a real installation into every stage.' },
       { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' },
-      { rev: 3, date: '2026-10-05', change: 'American English: dollars, US institutions and payments, US spelling.' }
+      { rev: 3, date: '2026-10-05', change: 'American English: dollars, US institutions and payments, US spelling.' },
+      { rev: 4, date: '2026-10-05', change: 'Trimmed to a quick lesson: one case per name, the essentials, a short drill.' }
     ],
     // What the K2 rewrite changed in this branch, and why (from docs/rebuild/scams-plan.md, section a).
     keyChanges: [
@@ -129,13 +111,7 @@ FC.unit('scams', 'u2', {
       { outcome: 'realinstall', was: 'Real software installation', now: 'Real installation', why: 'Shorter plain words; an id without an underscore (V4).' },
       { outcome: 'refundscam', was: 'Refund scam', now: 'Refund scam (unchanged name)', why: 'Its needs now say that the reason given is a refund or a bank account, which is what separates it from the tech-support scam.' }
     ],
-    // The wrong idea the refute card names, and where it comes from (V22). The source has not been read and confirmed
-    // online yet, so it is marked unverified and is listed on the deploy report until it is (E15).
-    wrongIdeas: [
-      { card: 'refute-closing', about: 'techsupport',
-        source: { kind: 'published', verified: false,
-          ref: 'Microsoft Support, "Protect yourself from tech support scams": pop-up warnings that cannot be closed and give a phone number are web pages made by the scammer, and a real warning from software does not tell you to call a number. To be read and confirmed online before release, or replaced by what cold readers actually say about a warning that will not close.' } }
-    ],
+    wrongIdeas: [],
     signoff: {
       coverage: null,     // { date, by } once tests/validate-lessons.mjs passes on this unit in the app
       coldRead: null      // { rev, date, reader: 'novice' | 'near-novice', restated: true, drillAttempted: true, notes }

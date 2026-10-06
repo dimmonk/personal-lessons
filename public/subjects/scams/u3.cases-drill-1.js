@@ -1,80 +1,9 @@
-// Scams, Unit Three: drill cases for stage one (the key's answers are shown, the learner gives the name) and stage two (one key
-// question at a time, on a new case). None of these appears in a card.
-// Every case is about a way into an account: route D1 is always "access". A1 is "what does it want you to type in or press?"
-// (password, code, allow) and A2 is "does it fit something you started?" (fits, notfit).
-// reason[STEP] is the reason tied to the marked words, shown after the answer, decisive sentence first. not names the most
-// tempting wrong name for the case and says why it fails. A case asked for its name carries marked words and a reason for both
-// of the unit's questions; a case asked one question alone carries them for that question. Field guide: see u3.cases-teach-1.js.
-// The reverse items and the faulty claims are in u3.cases-drill-3.js.
+// Scams, Unit Three: drill cases.
+// use: 'teach' = shown in a card with its reasoning; 'check' = asked between cards; 'drill' = the drill; 'return' = a later day. A case is used in one place only.
+// cues[STEP] is the exact phrase in the text that decides that step; the app marks it. Field guide: see u1.cases-drill-1.js.
 
 FC.cases('scams', 'u3', [
 
-  /* ---------- Stage one: the key's answers are shown, the learner gives the name ---------- */
-  { id: 'dn-ph-bank', use: 'drill', tier: 'clean', setting: 'money', topic: 'a text saying the card is blocked',
-    text: "Leila gets a text that says it is from her bank: 'Your card has been blocked. Log in now to unblock it.' The link opens a page with the bank's name at the top. It asks for her online banking username and password.",
-    outcome: 'phishing', route: { D1: ['access'], A1: ['password'], A2: ['notfit'] },
-    cues: { D1: 'Log in now to unblock it', A1: 'It asks for her online banking username and password', A2: 'Leila gets a text that says it is from her bank' },
-    reason: { A1: 'The page asks for a username and a password: {cue:A1}. That is a password typed into a page, and the bank\'s name at the top does not change what is asked.',
-              A2: 'The text came to Leila, and she did not start it: {cue:A2}. Nothing she was doing led to it, so it does not fit something she started.' },
-    not: { outcome: 'realsignin', why: '{o:realsignin} is one that she started herself. This one began with a text she did not ask for, and the page it leads to asks for the same password that a real one would, which is what makes it a copy.' } },
-
-  { id: 'dn-real-lib', use: 'drill', tier: 'clean', setting: 'leisure', topic: 'a library book renewed',
-    text: "Tess wants to renew a library book. She types the library's web address, which is printed on her library card, into her laptop. The page asks for her card number and password, and she types them in.",
-    outcome: 'realsignin', route: { D1: ['access'], A1: ['password'], A2: ['fits'] },
-    cues: { D1: 'The page asks for her card number and password', A1: 'her card number and password', A2: "She types the library's web address, which is printed on her library card, into her laptop" },
-    reason: { A1: 'A page asks for a card number and a password: {cue:A1}. That is a password.',
-              A2: 'Tess set out to renew a book and used an address she already had: {cue:A2}. Nothing came to her, and the page asks only for what a sign-in needs.' },
-    not: { outcome: 'phishing', why: 'A copy of a sign-in page would ask for the same things. What makes this one real is that Tess typed an address she already had, and nothing sent her to the page.' } },
-
-  { id: 'dn-cd-recruiter', use: 'drill', tier: 'clean', setting: 'work', topic: 'a recruiter who wants a number sent on',
-    text: "Mehdi posts his résumé on a jobs site. A 'recruiter' messages him: 'To show that you are a real person I have sent a code to your phone. Please send me the number.' A text with a six-digit code arrives.",
-    outcome: 'codescam', route: { D1: ['access'], A1: ['code'], A2: ['notfit'] },
-    cues: { D1: 'Please send me the number', A1: ['A text with a six-digit code arrives', 'Please send me the number'], A2: "A 'recruiter' messages him" },
-    reason: { A1: 'A code has just come to Mehdi\'s phone, and he is asked to send it on: {cue:A1}. No page wants a password and no {t:permission} wants an Allow.',
-              A2: 'Mehdi did not start this: a message came to him from someone he does not know: {cue:A2}. A code is for typing into something that you started, and he started nothing.' },
-    not: { outcome: 'realsignin', why: 'The code is real, and it did come from a real service. But a real code is typed in by the person it was sent to. Here a stranger who contacted him asks for it to be sent on.' } },
-
-  { id: 'dn-real-code', use: 'drill', tier: 'clean', setting: 'home', topic: 'a texted number typed in the laptop',
-    text: "Joss signs in to his email on his laptop, on a page he reaches from a bookmark. The page says it has texted a code to his phone. The code arrives, and he types it into the same page.",
-    outcome: 'realsignin', route: { D1: ['access'], A1: ['code'], A2: ['fits'] },
-    cues: { D1: 'he types it into the same page', A1: 'The page says it has texted a code to his phone', A2: 'on a page he reaches from a bookmark' },
-    reason: { A1: 'A code is texted to his phone and then typed in: {cue:A1}. No password is asked for in this case, and no {t:permission} asks for an Allow.',
-              A2: 'Joss started the sign-in himself, from a bookmark that he saved: {cue:A2}. The code goes into the same page. It does not go to anyone else, and nothing is asked beyond a sign-in.' },
-    not: { outcome: 'codescam', why: 'The code is real in both, and it arrives on the phone in both. What differs is who asks for it: here it is typed into the page he opened, and nobody has contacted him.' } },
-
-  { id: 'dn-ap-quiz', use: 'drill', tier: 'clean', setting: 'relationships', topic: 'a quiz shared by a friend',
-    text: "A friend shares a quiz on a social media site: 'Which movie star are you?' It tells Lena to log in with her email account. Her email provider's permission screen asks whether the quiz may read, send and delete all her email, and see her contacts. It has two buttons, Allow and Cancel.",
-    outcome: 'appscam', route: { D1: ['access'], A1: ['allow'], A2: ['notfit'] },
-    cues: { D1: 'It has two buttons, Allow and Cancel', A1: 'asks whether the quiz may read, send and delete all her email, and see her contacts', A2: 'A friend shares a quiz on a social media site' },
-    reason: { A1: 'A {t:permission} from her provider asks Lena to press Allow for an app: {cue:A1}. It asks for no password and no code.',
-              A2: 'The quiz came to her through a post: {cue:A2}. She did not go looking for it, and a quiz has no need of her mailbox, so it does not fit something she started.' },
-    not: { outcome: 'realsignin', why: 'The {t:permission} is real and comes from her own provider, as it does in a real Allow. But she did not start it, and a quiz has no use for her email, so it is not the real thing.' } },
-
-  { id: 'dn-real-photos', use: 'drill', tier: 'varied', setting: 'home', topic: 'a photo-book app connected to stored photos',
-    text: "Nia wants a photo book of her vacation photos, which are stored with her cloud photo service. She finds the photo-book company's app herself, in her cloud service's own app list. The service's permission screen says that the app would like to see her photos, and nothing else. She presses Allow.",
-    outcome: 'realsignin', route: { D1: ['access'], A1: ['allow'], A2: ['fits'] },
-    cues: { D1: 'She presses Allow', A1: 'the app would like to see her photos, and nothing else', A2: "She finds the photo-book company's app herself, in her cloud service's own app list" },
-    reason: { A1: 'The {t:permission} asks her to press Allow for an app: {cue:A1}. No password or code is asked for.',
-              A2: 'Nia went looking for the app herself, in her own service: {cue:A2}. And the {t:permission} asks only for her photos, which a photo book needs, so it fits.' },
-    not: { outcome: 'appscam', why: 'The {t:permission} is the same kind that a scam uses, and it asks for something of hers. What a scam adds is an app that came to her, or one that asks for far more than its job. Here she found it herself, and it asks for her photos and nothing more.' } },
-
-  { id: 'dn-ph-leaflet', use: 'drill', tier: 'varied', setting: 'government', topic: 'a flyer left at the door with a square to scan',
-    text: "A flyer is left at Dan's door: 'Your property tax account needs updating. Scan the code to log in.' He scans it with his phone, and it opens a page with the county's seal that asks for his account number and password.",
-    outcome: 'phishing', route: { D1: ['access'], A1: ['password'], A2: ['notfit'] },
-    cues: { D1: 'Scan the code to log in', A1: 'asks for his account number and password', A2: "A flyer is left at Dan's door" },
-    reason: { A1: 'The page asks for an account number and a password: {cue:A1}. That is a password, whatever seal is at the top.',
-              A2: 'The leaflet came to Dan through his door: {cue:A2}. He did not start anything, and a code printed on a leaflet is not an address he already had.' },
-    not: { outcome: 'realsignin', why: 'A real county sign-in would be one that Dan started, from the county\'s own address or a bill. This began with a leaflet, and the page asks for the same password a real one would.' } },
-
-  { id: 'dn-ap-sched', use: 'drill', tier: 'varied', setting: 'work', topic: 'a scheduling tool in a stranger\'s message',
-    text: "A message from a number Pat does not know says: 'Your team has been invited to Shiftly, a free scheduling tool. Sign in with your email to join.' Pat taps the link. His email provider's permission screen says that Shiftly would like to read, send and delete all his email. It has two buttons, Allow and Cancel.",
-    outcome: 'appscam', route: { D1: ['access'], A1: ['allow'], A2: ['notfit'] },
-    cues: { D1: 'It has two buttons, Allow and Cancel', A1: 'Shiftly would like to read, send and delete all his email', A2: 'A message from a number Pat does not know says' },
-    reason: { A1: 'The {t:permission} asks Pat to press Allow for an app: {cue:A1}. He types no password and no code.',
-              A2: 'It came to Pat in a message from a number he does not know: {cue:A2}. He did not go looking for it, and a scheduling tool has no need to delete his email.' },
-    not: { outcome: 'realsignin', why: 'The {t:permission} comes from his own email provider, as it would in a real Allow. But he did not start it, and the app asks for far more than a schedule needs.' } },
-
-  /* ---------- Stage two: one key question at a time, on a new case ---------- */
   { id: 'dp-a1-pw', use: 'drill', tier: 'clean', setting: 'shopping', topic: 'a package text which wants a log-in',
     text: "Rin gets an email: 'Your package could not be delivered. Log in to arrange a new date.' The link opens a page that asks for her store account email and password.",
     outcome: 'phishing', route: { D1: ['access'], A1: ['password'], A2: ['notfit'] },
@@ -115,5 +44,77 @@ FC.cases('scams', 'u3', [
     outcome: 'appscam', route: { D1: ['access'], A1: ['allow'], A2: ['notfit'] },
     cues: { A2: 'whether it may read, send and delete all his email' },
     reason: { A2: 'Hugo did start this, but the {t:permission} asks for far more than a video needs: {cue:A2}. What he set out to do needs his photos, not his whole mailbox, so it does not fit.' },
-    not: { outcome: 'realsignin', why: 'He started it, as with a real Allow, and it is his provider\'s own {t:permission}. What makes it a scam is what the app asks for: a video needs photos, not every email he has.' } }
+    not: { outcome: 'realsignin', why: 'He started it, as with a real Allow, and it is his provider\'s own {t:permission}. What makes it a scam is what the app asks for: a video needs photos, not every email he has.' } },
+
+  { id: 'dr-ph-portal', use: 'drill', tier: 'clean', setting: 'health', topic: 'a text saying test results are ready',
+    text: "Joan gets a text that says it is from her doctor's office: 'Your test results are ready. Log in to see them.' The link opens a page with the clinic's name that asks for her patient number and password.",
+    outcome: 'phishing', route: { D1: ['access'], A1: ['password'], A2: ['notfit'] },
+    cues: { D1: 'Log in to see them', A1: 'asks for her patient number and password', A2: "Joan gets a text that says it is from her doctor's office" },
+    reason: { D1: 'The text asks Joan to log in: {cue:D1}. Nothing is to be installed, no money is asked for and no facts about her, so it is a request about a way into an account.',
+              A1: 'The page asks for a patient number and a password: {cue:A1}.',
+              A2: 'The text came to Joan and she did not start it: {cue:A2}. Test results are a good bait because she is waiting for them, but waiting for something does not mean she asked for this message.' },
+    not: { outcome: 'realsignin', why: '{o:realsignin} is one that she began herself, in an app or at an address she had before. This one began with a text, and it leads to a page that asks for a password.' }, },
+
+  { id: 'dr-real-roster', use: 'drill', tier: 'clean', setting: 'work', topic: 'a staff app with a log-in and then a number',
+    text: "Aziz starts his shift. He opens the staff app that his employer gave him, and types his work email and password. The app then says it has sent a code to his phone, and he types the code into the app.",
+    outcome: 'realsignin', route: { D1: ['access'], A1: ['password'], A2: ['fits'] }, also: ['code'],
+    cues: { D1: 'types his work email and password', A1: 'types his work email and password', A2: 'He opens the staff app that his employer gave him' },
+    reason: { D1: 'The app asks Aziz to sign in: {cue:D1}. Nothing is to be installed, no money is asked for and no facts about him, so it is a request about a way into an account.',
+              A1: 'He is asked for a password first, and then for a code: {cue:A1}. A case that shows both gets the answer for the password, because the sign-in began with it.',
+              A2: 'Aziz started this himself, in an app that his employer gave him, and both the password and the code go into that same app: {cue:A2}. Nothing came to him, and nothing is asked beyond a sign-in.' },
+    not: { outcome: 'phishing', why: 'A copied page can ask for the same password and then the same code. What makes this one real is that Aziz opened an app he already had, and no message sent him there.' }, },
+
+  { id: 'dr-cd-courier', use: 'drill', tier: 'clean', setting: 'shopping', topic: 'a courier call about an address',
+    text: "A man calls Bea and says he is from the courier with her package. 'There is a problem with your address. A code is on its way to you. Please read it out so that I can fix it.' A text with a code arrives.",
+    outcome: 'codescam', route: { D1: ['access'], A1: ['code'], A2: ['notfit'] },
+    cues: { D1: 'Please read it out so that I can fix it', A1: ['A text with a code arrives', 'Please read it out so that I can fix it'], A2: 'A man calls Bea and says he is from the courier' },
+    reason: { D1: 'The caller asks Bea to read out a code: {cue:D1}. Nothing is to be installed, no money is asked for and no facts about her, so it is a request about a way into an account.',
+              A1: 'A code has just come to Bea\'s phone, and she is asked to read it out: {cue:A1}.',
+              A2: 'Bea did not start this: a call came to her: {cue:A2}. A code is for typing into a sign-in that you started, and nobody else needs to hear it.' },
+    not: { outcome: 'phishing', why: 'There is no copied page and no password. What is asked for is a code that has just come to her phone, by a caller who contacted her.' }, },
+
+  { id: 'dr-ap-prize', use: 'drill', tier: 'clean', setting: 'money', topic: 'a prize drawing which wants the whole mailbox',
+    text: "A text says: 'You have been picked for a prize drawing. Connect your email account to claim your prize.' Wen taps the link. Her email provider's permission screen asks whether PrizeDraw may read, send and delete all her email. It has two buttons, Allow and Cancel.",
+    outcome: 'appscam', route: { D1: ['access'], A1: ['allow'], A2: ['notfit'] },
+    cues: { D1: 'It has two buttons, Allow and Cancel', A1: 'asks whether PrizeDraw may read, send and delete all her email', A2: 'You have been picked for a prize drawing' },
+    reason: { D1: 'The {t:permission} asks Wen to press Allow: {cue:D1}. Nothing is to be installed, no money is asked for and no facts about her, so it is a request about a way into an account.',
+              A1: 'The {t:permission} asks her to press Allow for an app and lists what it may do: {cue:A1}. No password is typed and no code is read out.',
+              A2: 'The text came to Wen: {cue:A2}. She did not go looking for a prize drawing, and a prize drawing has no need to read or delete her email.' },
+    not: { outcome: 'realsignin', why: 'The {t:permission} is real and comes from her own provider, as it would for a real Allow. But she did not start it, and what it asks for is far more than a prize drawing needs.' }, },
+
+  { id: 'dr-real-mis', use: 'drill', tier: 'misleading', setting: 'leisure', topic: 'a log-in number emailed by an unfamiliar sender',
+    text: "Ada opens the pizza app that she installed last month and types her email address. A minute later an email from a sender she has never seen arrives: 'Your sign-in code is 482913.' She types the code into the app.",
+    outcome: 'realsignin', route: { D1: ['access'], A1: ['code'], A2: ['fits'] },
+    cues: { D1: 'She types the code into the app', A1: 'Your sign-in code is 482913', A2: 'Ada opens the pizza app that she installed last month and types her email address' },
+    reason: { D1: 'Ada is asked for a code: {cue:D1}. Nothing is to be installed, no money is asked for and no facts about her, so it is a request about a way into an account.',
+              A1: 'A code has come to her by email and she types it in: {cue:A1}. No password is asked for in this case.',
+              A2: 'Ada started this herself, in an app that she already had: {cue:A2}. The email is the app\'s answer to her typing her address, and it came a minute later. It does not matter that she has never seen the sender: she asked for it, and the code goes into the same app.' },
+    not: { outcome: 'codescam', why: 'A code that arrives from a sender she does not know can look like the start of the code scam. But nobody contacted her and nobody asks her to read it out: she asked for it, and it goes into the app she opened.' }, },
+
+  { id: 'dr-ph-mis', use: 'drill', tier: 'misleading', setting: 'work', topic: 'a manager\'s chat message with a log-in link', echo: 'ac-mail-own',
+    text: "Joy's manager, Amit, messages her in the work chat: 'Can you sign in here and fill in the schedule? Quick.' The link opens a page with the company's logo that asks for her work email and password. Amit's messages are usually real.",
+    outcome: 'phishing', route: { D1: ['access'], A1: ['password'], A2: ['notfit'] },
+    cues: { D1: 'Can you sign in here and fill in the schedule', A1: 'asks for her work email and password', A2: "Joy's manager, Amit, messages her in the work chat" },
+    reason: { D1: 'The message asks Joy to sign in: {cue:D1}. Nothing is to be installed, no money is asked for and no facts about her, so it is a request about a way into an account.',
+              A1: 'The page asks for a work email and a password: {cue:A1}.',
+              A2: 'The link came to Joy in a message: {cue:A2}. She did not set out to sign in, and a message from a name she knows does not change that, because an account can be taken over and used to send exactly this.' },
+    not: { outcome: 'realsignin', why: 'The message is from a person she knows, and the page has her company\'s logo, so it feels like an ordinary sign-in. But she did not start it, and nothing she was doing led to it.' }, },
+
+  { id: 'dr-cd-mis', use: 'drill', tier: 'misleading', setting: 'money', topic: 'a caller who joins a reset', echo: 'ac-bank-own',
+    text: "Mo has forgotten his banking password, so he taps 'Reset' in his bank's app. The bank texts a code to his phone. Then his phone rings: a man says he is from the bank, can see that Mo is locked out, and says: 'Read me the code and I will finish the reset for you.'",
+    outcome: 'codescam', route: { D1: ['access'], A1: ['code'], A2: ['notfit'] },
+    cues: { D1: 'Read me the code and I will finish the reset for you', A1: ['The bank texts a code to his phone', 'Read me the code'], A2: 'his phone rings: a man says he is from the bank' },
+    reason: { D1: 'The caller asks Mo to read out a code: {cue:D1}. Nothing is to be installed, no money is asked for and no facts about him, so it is a request about a way into an account.',
+              A1: 'A code has come to Mo\'s phone, and the caller asks him to read it out: {cue:A1}.',
+              A2: 'Mo did start the reset, but the call did not come from him: {cue:A2}. A code from a reset is for typing into the app that he opened. Asked for by a caller, it is not something he started.' },
+    not: { outcome: 'realsignin', why: 'The reset really is something Mo started, and the code really did come from his bank\'s app. But what the case asks for is that he read the code to someone who called him, and a real code goes only into the app that he opened.' }, },
+
+  { id: 'dr-ap-mis', use: 'drill', tier: 'misleading', setting: 'work', topic: 'a calendar app which also wants the mail', echo: 'ac-planner-own',
+    text: "Pia finds a calendar-sharing app herself, in her email provider's own app list. The provider's permission screen says that Shared Cal would like to see her calendar, and to read, send and delete all her email. It has two buttons, Allow and Cancel.",
+    outcome: 'appscam', route: { D1: ['access'], A1: ['allow'], A2: ['notfit'] },
+    cues: { D1: 'It has two buttons, Allow and Cancel', A1: 'Shared Cal would like to see her calendar, and to read, send and delete all her email', A2: 'to read, send and delete all her email' },
+    reason: { D1: 'The {t:permission} asks Pia to press Allow: {cue:D1}. Nothing is to be installed, no money is asked for and no facts about her, so it is a request about a way into an account.',
+              A1: 'The {t:permission} asks her to press Allow for an app and lists what it may do: {cue:A1}. No password is typed and no code is read out.',
+              A2: 'Pia did go looking for the app herself, and part of what it asks for, her calendar, fits a calendar app. But the {t:permission} also asks {cue:A2}. That is far more than sharing a calendar needs, so the answer is no.' },
+    not: { outcome: 'realsignin', why: 'She found the app herself and the {t:permission} is her provider\'s own, as in a real Allow, and the calendar part is what a calendar app needs. What makes it a scam is the rest of the list, which a calendar app has no use for.' }, }
 ]);

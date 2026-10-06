@@ -4,7 +4,7 @@
 
 FC.unit('psychology', 'u2', {
   kind: 'C',              // C classification, F facts, P procedure
-  rev: 4,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
+  rev: 5,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
   standard: 1,            // lesson-standard version this unit was built to
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author). The app labels a draft as a draft.
   tag: 'Two',
@@ -28,7 +28,7 @@ FC.unit('psychology', 'u2', {
       shared: 'In both, the person is harder on evidence they do not like, and ends where they began.',
       rule: 'In {o:motivated} the person set out on a search to settle a choice or a question, and the answer was chosen before the search began. In {o:confbias} nobody set out to search: evidence turns up, and the evidence against the view gets a harder test than the evidence for it.',
       test: 'Did the person set out on a search to settle something? If they did, can you point to the answer being chosen before the search began?' },
-    { id: 'dissonance~confbias', pair: ['dissonance', 'confbias'], step: 'R1',
+    { id: 'dissonance~confbias', pair: ['dissonance', 'confbias'], step: 'R1', taughtIn: 'q-does',
       shared: 'Both defend something the person is attached to, and the same person can do both.',
       rule: 'In {o:dissonance} the person gives a reason why something they did is fine, and no evidence is being tested. In {o:confbias} evidence for a view and evidence against it are in the case, and the evidence against it gets the harder test.',
       test: 'Is the person explaining something they did, or testing evidence about what is true?' },
@@ -36,7 +36,7 @@ FC.unit('psychology', 'u2', {
       shared: 'Both start with a view and evidence against it.',
       rule: 'In {o:fair} the evidence against the view gets the same test that evidence for it would get, and the view goes where the evidence points. In {o:confbias} the evidence against the view gets a harder test than the evidence for it ever got, and the view stays.',
       test: 'Were the questions put to the evidence against the view also put to the evidence for it?' },
-    { id: 'sunkcost~fair', pair: ['sunkcost', 'fair'], step: 'R1',
+    { id: 'sunkcost~fair', pair: ['sunkcost', 'fair'], step: 'R1', taughtIn: 'q-does',
       shared: 'Both face a choice about something that has already cost a lot, and both can end with the person carrying on.',
       rule: 'In {o:sunkcost} the reason given for the next step is what is already spent. In {o:fair} the reason given is what the next step would cost and what it would bring.',
       test: 'Is the reason for the next step about what is already spent, or about what the next step would cost and bring?' },
@@ -44,7 +44,7 @@ FC.unit('psychology', 'u2', {
       shared: 'In both, the person’s view can change.',
       rule: 'In {o:fair} a fact about the matter came between the old view and the new one. In {o:dissonance} the only thing that came between them is something the person did, and the new view is the reason why it is fine.',
       test: 'What came between the old view and the new one: a new fact about the matter, or only something the person did?' },
-    { id: 'motivated~fair', pair: ['motivated', 'fair'], step: 'R1', taughtIn: 'portrait-fair',
+    { id: 'motivated~fair', pair: ['motivated', 'fair'], step: 'R1', taughtIn: 'q-does',
       shared: 'Both can end on the answer the person hoped for.',
       rule: 'In {o:motivated} the answer was chosen before the search began, so the search could not have changed it. In {o:fair} the search came first and could have gone either way.',
       test: 'Could the search have come out the other way, and would the person have gone with it?' }
@@ -54,51 +54,36 @@ FC.unit('psychology', 'u2', {
   // The part with drill: true is the last; its close cards come after the drill.
   parts: [
     { id: 'p1', title: 'Reasoning about something the person did or spent',
-      cards: ['orient', 'term-cd', 'meet-dissonance', 'again-dissonance', 'lens', 'portrait-dissonance', 'check-dissonance',
-              'refute-mismatch', 'meet-sunkcost', 'again-sunkcost', 'portrait-sunkcost', 'check-sunkcost',
-              'refute-waste', 'look-dissonance-sunkcost'] },
-    { id: 'p2', title: 'Reasoning about evidence',
-      cards: ['meet-confbias', 'again-confbias', 'portrait-confbias', 'check-confbias',
-              'meet-motivated', 'again-motivated', 'portrait-motivated', 'check-motivated',
-              'look-confbias-motivated', 'exc-both', 'look-dissonance-confbias'] },
-    { id: 'p3', title: 'Reasoning that goes where the facts point, and the question',
-      cards: ['meet-fair', 'again-fair', 'portrait-fair', 'check-fair',
-              'look-confbias-fair', 'look-sunkcost-fair', 'exc-convert', 'q-does', 'check-does'] },
-    { id: 'p4', title: 'Two whole cases, then the drill',
-      cards: ['worked-longrun', 'worked-tasting'], drill: true, close: ['recap', 'transfer'] }
+      cards: ['orient', 'term-cd', 'meet-dissonance', 'check-dissonance', 'meet-sunkcost', 'check-sunkcost', 'look-dissonance-sunkcost'] },
+    { id: 'p2', title: 'Reasoning about evidence, and reasoning that goes where the facts point',
+      cards: ['meet-confbias', 'check-confbias', 'meet-motivated', 'check-motivated', 'look-confbias-motivated',
+              'meet-fair', 'check-fair', 'look-confbias-fair', 'exc-convert', 'q-does', 'check-does'] },
+    { id: 'p3', title: 'One whole case, then the drill',
+      cards: ['worked-tasting'], drill: true, close: ['recap'] }
   ],
 
-  // The drill is a ramp of five stages (lesson standard A10). The app owns the wording of every stage instruction.
+  // The drill: the stages that carry the skill. The app owns the wording of every stage instruction.
   // Items are authored in groups: a group is cases that share ledger entries and one tier. The app shuffles the groups
   // inside a tier band (clean, then varied, then misleading) and shuffles inside each group. Every case is new.
   drill: {
     key: 'u2',            // the old quick-drill totals for this unit were stored under pl:psychology:stats:u2 (frozen; see E8)
     rungs: [
-      { ask: 'name',
-        items: [['insure', 'jumper'], ['phone', 'layout', 'trial']] },
       { ask: 'piece',
         items: [[{ case: 'queue', step: 'R1' }, { case: 'shower', step: 'R1' }],
                 [{ case: 'bus', step: 'R1' }, { case: 'charity', step: 'R1' }],
-                [{ tell: 'confbias~motivated' }, { tell: 'dissonance~fair' }],
-                ['rev-dissonance', 'rev-sunkcost', 'rev-confbias', 'rev-motivated', 'rev-fair'],
+                [{ tell: 'dissonance~sunkcost' }, { tell: 'confbias~motivated' }, { tell: 'confbias~fair' }, { tell: 'dissonance~fair' }],
                 [{ earlier: 'u1' }]] },
-      { ask: 'finish',
-        items: [['horoscope', 'warehouse']] },
       { ask: 'route',
         items: [['payroll', 'motorbike', 'parking'],
                 ['league', 'viewing', 'boiler'],
-                ['cleaner', 'diet', 'dog', 'supplier', 'marathon'],
+                ['cleaner', 'diet', 'dog', 'supplier'],
                 [{ earlier: 'u1' }]] },
       { ask: 'claim', demo: 'claim-demo',
-        items: [['claim-mismatch'], ['claim-waste'], ['claim-suits']] }
+        items: [['claim-mismatch'], ['claim-waste']] }
     ],
-    // Fresh cases for later days: three for each name, one for each of its scheduled returns (E9).
-    // A due name returns as a case the learner has not seen, beside a case of the name they most often take it for.
-    returns: ['ret-chair', 'ret-checkup', 'ret-recycling',
-              'ret-mountain', 'ret-app', 'ret-brewery',
-              'ret-bakery', 'ret-clinic', 'ret-trainers',
-              'ret-grant', 'ret-school', 'ret-panel',
-              'ret-bypass', 'ret-rota', 'ret-gearbox']
+    // Fresh cases for later days: one for each name (E9). A due name returns as a case the learner has not seen,
+    // beside a case of the name they most often take it for.
+    returns: ['ret-chair', 'ret-mountain', 'ret-bakery', 'ret-grant', 'ret-gearbox']
   },
 
   // Build notes: not shown to the learner, and left out of the fingerprint. The validator reads them.
@@ -108,7 +93,8 @@ FC.unit('psychology', 'u2', {
       { rev: 1, date: '2026-10-04', change: 'First version under lesson standard 1. Not yet deployed, so later edits before the first deploy stay revision 1.' },
       { rev: 2, date: '2026-10-05', change: 'The first question now has four answers (Unit One rebuilt), and its second answer is worded “Something one person does to another”. Unit Two prints the gate from the key, so its orient map changed with it.' },
       { rev: 3, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' },
-      { rev: 4, date: '2026-10-05', change: 'American English: dollars, US words and spelling.' }
+      { rev: 4, date: '2026-10-05', change: 'American English: dollars, US words and spelling.' },
+      { rev: 5, date: '2026-10-05', change: 'Trimmed to a quick lesson: one case per name, the essentials, a short drill.' }
     ],
     // What changed in the key for this branch, and why (K2). Old wording is the app's wording before the rebuild.
     keyChanges: [
@@ -122,14 +108,7 @@ FC.unit('psychology', 'u2', {
       { outcome: 'fair', was: 'Genuine belief revision (not a bias)', now: 'Fair reasoning, covering a view that changes and a view that is kept, when the facts got the same test either way',
         why: '"Genuine" was used in two senses (audit 2.3); "belief revision" is not something a learner will hear (P4); and the old outcome had no place for a view fairly tested and kept, which the cards said four times is not a fault. "Honest" was not used because the unit teaches that people doing the other four are usually sincere.' }
     ],
-    wrongIdeas: [
-      { card: 'refute-mismatch', about: 'dissonance',
-        source: { kind: 'published', verified: false,
-          ref: 'Festinger (1957), A Theory of Cognitive Dissonance, separates the discomfort from its reduction. That is the theory, not evidence that people misuse the phrase: a published account of the everyday misuse (the phrase used for any gap between words and actions) still has to be found and cited, or the card replaced by what cold readers actually get wrong.' } },
-      { card: 'refute-waste', about: 'sunkcost',
-        source: { kind: 'published', verified: false,
-          ref: 'Arkes & Blumer (1985), The psychology of sunk cost, Organizational Behavior and Human Decision Processes 35: the wish not to appear wasteful. To be read and confirmed online before release.' } }
-    ],
+    wrongIdeas: [],
     signoff: {
       coverage: null,     // { date, by } once tests/validate-data.mjs passes on this unit in the app
       coldRead: null      // { rev, date, reader: 'novice' | 'near-novice', restated: true, drillAttempted: true, notes }

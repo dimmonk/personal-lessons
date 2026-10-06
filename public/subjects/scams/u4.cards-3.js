@@ -1,155 +1,73 @@
-// Scams, Unit Four, part two: the two names about money that is waiting for you or was lost, the look-alike pair they make, and
-// the two exceptions that belong to part two. Field guide: see u4.cards-1.js.
+// Scams, Unit Four, second half of the names (2): the fake official scam and the overpayment scam, each beside the real
+// request that it copies. Field guide: see u4.cards-1.js.
 
 FC.cards('scams', 'u4', [
 
-  /* ---------- Advance-fee scam ---------- */
-  { id: 'meet-advancefee', kind: 'meet', outcome: 'advancefee',
-    link: 'Part one was about people you know only online. Part two is about a different reason to pay: money that is said to be waiting for you.',
-    case: 'm-adv-lottery', mark: 'M1',
+  /* ---------- Fake official scam ---------- */
+  { id: 'meet-fakeofficial', kind: 'meet', outcome: 'fakeofficial',
+    link: 'So far nothing has frightened you. The next name does: a threat from someone who says that they have power over you.',
+    case: 'm-off-tax', mark: 'M1',
     strip: [
-      'Marta has never entered a competition. The email says that her address was drawn, and that she has won $250,000.',
-      'The money is said to be waiting for her.',
-      'Before any of it reaches her, she must pay $340 by wire transfer, to an account that the email gives.',
-      'The fee is called insurance and handling, and the prize is promised within 24 hours of the fee arriving.'
+      'A call comes out of the blue from a man who says that he is an officer. He says that Dee owes $2,300 in unpaid tax and that there is a warrant for her arrest.',
+      'Officers will be at her door within two hours unless she pays today, by buying gift cards and reading the numbers to him. She is told not to tell the store staff why.'
     ],
     explain: [
-      'Two things are in this email, and they need each other. The first is money that is said to be waiting for Marta. The second is a payment that she must make before any of it reaches her. Without the first she would not pay, and without the second there would be nothing for the scam to take.',
-      'The prize is made up. Marta never entered a drawing, so there is nothing to collect, and the $340 is the only real money in the story. It goes to the scammer. They call it insurance, handling, a tax, a courier charge or a release code, and the name changes from one email to the next. What never changes is that you are asked to pay before you receive.',
-      'Why would anyone pay? Because the fee is small beside the prize, and because the email makes the payment feel like one step in a process and not a risk. A person who pays once is usually told that something else has come up, and asked for a second fee, and then a third.'
+      'This one works by fear. A frightened person does not stop to check, and the caller knows it. Gift cards, crypto, cash and a transfer to an account that the caller gives all cannot be undone: a gift card number read down a phone is spent within minutes. No real IRS agent or police officer takes payment in gift cards.',
+      'Look at the secrecy too. Dee is told not to tell the store staff, because they “may be involved”. A store clerk or a bank clerk is exactly the person who would say stop, and the caller has told her in advance not to listen to them.'
     ],
-    feature: { step: 'M1', option: 'prize' },
-    name: 'The name for this is {o:advancefee}. “Advance” means ahead of time: the fee is paid in advance, before the money arrives, and the money never does.' },
-
-  { id: 'again-advancefee', kind: 'again', outcome: 'advancefee',
-    link: 'The first case gave you what to point to: {needs:advancefee}. Here it is again with no prize drawing: a loan that was approved after a single form.',
-    first: 'm-adv-lottery', second: 'm-adv-loan', step: 'M1',
-    instruction: 'Find what the two cases share. Ignore the story (a prize drawing, a loan). Look at one thing only: what is said to be waiting for the person.',
-    prompt: { kind: 'phrase', answer: 'Congratulations, your loan of $5,000 is approved' },
-    shared: [
-      'In both cases money is said to be waiting for the person: a prize of $250,000, a loan of $5,000. In both it does not reach them until they have paid a fee, called a handling fee or an insurance deposit. And in both the fee is small beside what is promised, and is to go by wire transfer to an account that the sender gives.',
-      'One of the two people had applied for something and the other had entered nothing, and that makes no difference. A loan, a grant, a refund, a payout, an inheritance: whatever is said to be waiting, the same thing is asked, and that is what {o:advancefee} names.'
-    ] },
-
-  { id: 'portrait-advancefee', kind: 'portrait', outcome: 'advancefee',
-    link: 'What you point to is money that is said to be waiting, and a fee that comes first. This card fills in the rest of the picture.',
-    typical: [
-      'It starts with good news from someone you have not dealt with: you have won a drawing that you never entered, a relative you never knew has left you money, you have been selected for a grant, your loan is approved, a refund is waiting.',
-      'It reaches you by email, text, letter, social media or phone. The paperwork can look official: logos, reference numbers, a signature, a certificate.',
-      'There is always a payment to make first: insurance, a handling fee, a tax, a courier or customs charge, a legal fee, a release code. It is asked for by wire transfer, gift cards or crypto, to an account that the sender gives.',
-      'After you pay, there is another fee under another name: a problem at customs, a tax that has just been found. It goes on for as long as you pay.',
-      'It works because the fee is small beside the prize, and because after the first payment stopping feels like throwing it away.',
-      'Which of this can you see when the request arrives? The money that is said to be waiting and the fee that comes first are both in the message. The second fee, and the third, only come after you have paid.'
-    ],
-    not: [
-      'A fee for a real service that you arranged is not this name: an attorney’s fee for a sale that you started, or a lender’s charge on an agreement that you signed. A real lender takes its charges from the loan, or sets them in an agreement that you have in your hands.',
-      'This name needs money that you are told is waiting for you, and a payment that you must make first, to someone who contacted you.'
-    ],
-    wild: ['"You have won $250,000 in a drawing of email addresses."', '"A relative you never knew has left you a large inheritance."', '"Your loan is approved. Pay the insurance deposit to release it."', '"You have been selected for a grant."'],
-    self: 'It reaches you in your inbox and your junk folder, by text, in a letter and on social media. It can find people at a hard moment: behind with bills, looking for a loan, or looking for work.',
-    ask: '"Am I being asked to pay before money that is said to be mine reaches me, and did I enter, apply for or arrange it?"',
+    feature: { step: 'M1', option: 'official' },
+    name: 'The name for this is {o:fakeofficial}. The “official” is the role that the caller claims: the IRS, the police, a court, or your own bank. The claim is the lie.',
     act: [
-      'Pay nothing. A real prize, grant or inheritance does not need you to pay a stranger first, and you cannot win a drawing that you did not enter.',
-      'If you did apply for a loan, look at the lender’s own agreement and the number on it. A real lender takes its charges from the loan or from your repayments, and does not ask for gift cards or a transfer to a personal account before it pays.',
-      'If you want to know whether you are really owed something, contact the organization yourself, at a number or in an app that you already had, and not through the message.',
-      'Do not reply. A reply tells the sender that a person reads this address.',
-      'Ask yourself who you would be paying, and how you would find them again afterwards.'
+      'Hang up. You do not owe the caller politeness, and a real official will not mind.',
+      'Then do {t:check}: call the IRS or your bank at a number that you already had, such as the one on your card or a bill. Use a different phone if you can, because some callers keep the line open.',
+      'Never pay by gift card, crypto or cash to settle a debt, and never move your money to a “safe account”. Tell someone, even if you were told not to.'
     ] },
 
-  { id: 'check-advancefee', kind: 'check', after: 'advancefee',
-    case: 'm-adv-check',
-    ask: { type: 'option', step: 'M1', among: ['online', 'prize'] } },
+  { id: 'check-fakeofficial', kind: 'check', after: 'fakeofficial',
+    case: 'm-off-check',
+    ask: { type: 'option', step: 'M1', among: ['online', 'prize', 'lost', 'bill', 'official'] } },
 
-  /* ---------- Recovery scam ---------- */
-  { id: 'meet-recovery', kind: 'meet', outcome: 'recovery',
-    link: 'The last name was about money that you were never owed. The next is about money that you did have, and lost.',
-    case: 'm-rec-trading', mark: 'M1',
-    strip: [
-      'Malik lost $3,000 to a fake trading website in March.',
-      'An email now offers to get that money back: “We have traced the money you lost”.',
-      'Malik told nobody about the loss, so only the people who took the money should know about it.',
-      'There is a fee of $450, to be paid in advance by wire transfer.'
-    ],
-    explain: [
-      'What is different from the last name is where the money comes from. This is not money that Malik was never owed. It is money he really had and really lost. A person who has been robbed wants it back more than almost anything, and that is the opening.',
-      'How does the sender know? Often because the people who took the first payment keep a list of those who paid, or sell it to others. Sometimes they are the same people, coming back to the same person a second time. Someone who has paid once has shown that they will pay, so they are the best target there is.',
-      'The email promises a result: the money traced, a lawyer or a regulator on the case, “no recovery, no fee”. And it asks for a fee in advance, called a retainer, a release fee or an administration charge. If Malik pays it, nothing is recovered.',
-      'Real help with a loss exists: your bank, the police, and a regulated attorney. They do not contact you first with a guarantee, and they do not ask for a fee by transfer to a personal account before they start.'
-    ],
-    feature: { step: 'M1', option: 'lost' },
-    name: 'The name for this is {o:recovery}. “Recovery” means getting something back, and the scam is a fee for a recovery that does not happen.' },
-
-  { id: 'again-recovery', kind: 'again', outcome: 'recovery',
-    link: 'Malik’s email gave you what to point to: {needs:recovery}. Here it is again after a different loss, and with a different way in: this time the person found the firm herself.',
-    first: 'm-rec-trading', second: 'm-rec-tickets', step: 'M1',
-    instruction: 'Find what the two cases share. Ignore the story (a trading website, concert tickets) and how the firm was found. Look at one thing only: what the firm says it can do about the money that was lost.',
-    prompt: { kind: 'phrase', answer: 'could get her money back' },
-    shared: [
-      'In both cases the person has already lost money, and then someone says that they can get it back. Malik was contacted by email, and Grace went looking and called the top ad. In both, the firm talks about tracing, courts and a result, and asks for a fee in advance: $450, $600.',
-      'It makes no difference whether the firm found the person or the person found the firm. What matters is the offer to get back money that was lost, and the fee that comes first. That is what {o:recovery} names.'
-    ] },
-
-  { id: 'portrait-recovery', kind: 'portrait', outcome: 'recovery',
-    link: 'What you point to is a loss, an offer to get the money back, and a fee that comes first. This card fills in the rest of the picture.',
-    typical: [
-      'It comes after a loss. A first scam took the money, and this one arrives weeks or months later, by email, text or social media message, or as a firm that you found yourself.',
-      'Where do they find you? Often from a list. People who have lost money to a scam are on lists that are sold between criminals, and the people who took the first payment sometimes come back themselves.',
-      'The pitch is a result: your money has been traced, a court order is on its way, they work with the regulator, they are lawyers, they have special tools for tracing crypto. It is often “no recovery, no fee”.',
-      'A fee comes first: a retainer, a release fee, an administration charge, a tax. It is asked for by wire transfer or in crypto.',
-      'After you pay there is another reason for another fee, and then silence. Some people are contacted again by a third firm.',
-      'Which of this can you see on the day? The loss, the offer to get the money back and the fee that comes first are all in the message. What follows only shows afterwards.'
-    ],
-    not: [
-      'Help with a loss that you looked for in the right place is not this name: your bank, the police, or a regulated attorney who agrees fees with you in writing.',
-      'This name needs a fee in advance for a recovery that someone offers you, or that you found through an ad.'
-    ],
-    wild: ['"We have traced the money you lost."', '"No recovery, no fee."', '"We work with the regulator and the courts."', '"A small release fee will unlock your funds."'],
-    self: 'It is the scam that follows another scam, so it can reach people at a low point: a month after the loss, or a year. It can also reach people who have told nobody, which is part of why it works.',
-    ask: '"Did someone offer to get back money that I lost, and do they want a fee before they begin?"',
-    act: [
-      'Pay nothing, and do not reply. Anyone who contacts you first about your loss is a warning in itself.',
-      'Report the loss to your bank at the number on your card, and to the police or to the FTC at ReportFraud.ftc.gov. They are the real places to get help, and they do not charge you or contact you first with an offer.',
-      'If you went looking for help and found a firm through a search, remember that the top result may be an ad. Anyone can buy that place.',
-      'Tell someone you trust. Being embarrassed is what this scam relies on.',
-      'If you have already paid, tell your bank at once, and expect to be contacted again.'
-    ] },
-
-  { id: 'check-recovery', kind: 'check', after: 'recovery',
-    case: 'm-rec-check',
-    ask: { type: 'option', step: 'M1', among: ['online', 'prize', 'lost'] } },
-
-  { id: 'look-advancefee-recovery', kind: 'lookalike', ledger: 'advancefee~recovery',
-    link: 'You have met both names, and both end with a fee in advance. This card puts them side by side, with the same man and the same sum.',
-    cases: ['m-imran-owed', 'm-imran-lost'],
-    instruction: 'Both cases are about Imran, $6,000 and a $150 release fee. Compare one thing: where the money comes from that is said to be waiting.',
-    prompt: { kind: 'which', option: 'M1.lost', answer: 'm-imran-lost' },
+  { id: 'look-fakeofficial-realpayment', kind: 'lookalike', ledger: 'fakeofficial~realpayment',
+    link: 'The same tax, from the same office.',
+    cases: ['m-sam-call', 'm-sam-letter'],
+    instruction: 'Both cases are about Sam and $1,900 of unpaid tax. Compare one thing: how the request holds up when Sam looks into it for himself.',
+    prompt: { kind: 'which', option: 'M2.agreed', answer: 'm-sam-letter' },
     difference: [
-      'In Case A the $6,000 is compensation that Imran never claimed. It was never his, and nothing was ever taken from him. The answer is {a:M1.prize}, and the case is {o:advancefee}.',
-      'In Case B the $6,000 is money that Imran really had and really lost, to a fake insurance broker. The email says that it has been recovered. The answer is {a:M1.lost}, and the case is {o:recovery}.',
-      'The fee, the sum and the man are the same. What differs is where the waiting money comes from: money that was never his, or money that was taken from him.'
+      'In Case A a man calls out of the blue and demands payment today, by transfer to an account that he gives, and tells Sam not to tell his employer. Sam has nothing that he could look up. The case is {o:fakeofficial}.',
+      'In Case B a letter gives Sam 30 days and a way to appeal. Sam types in the address that he knows from his own tax account, and finds the same amount and the same reference. The answer is {a:M2.agreed}, and the case is {o:realpayment}.'
     ] },
 
-  { id: 'exc-recovery-prize', kind: 'exception', ledger: 'advancefee~recovery', looksLike: 'advancefee', is: 'recovery',
-    h: 'A refund that is held for you, and was lost',
-    link: 'The pair you have just seen was tidy: one email about money that was never owed, one about money that was lost. Real messages are not always so tidy. Here is one that sounds like both.',
-    case: 'm-exc-refundheld',
-    setup: 'The text says that a refund is being held for Frances, and money that is held for you is what {a:M1.prize} sounds like. Yet the answer for this case is {a:M1.lost}.',
-    prompt: { kind: 'phrase', answer: 'paid $2,000 to an online store that turned out not to exist' },
-    because: [
-      'Look at where the $2,000 comes from. Frances paid it to a store that did not exist, and her bank could not get it back. The text offers her that same money. So the case shows both things: money that is waiting for her, and money that she lost.',
-      'Such a case gets the answer about the loss. The reason is what the sender is doing. Someone who knows about your loss and offers to return it is going after you a second time, and what protects you is what protects you against {o:recovery}: no fee, and contact only through {t:already}.'
+  /* ---------- Overpayment scam ---------- */
+  { id: 'meet-overpayment', kind: 'meet', outcome: 'overpayment',
+    link: 'The last copy is the only one in which the money comes to you first.',
+    case: 'm-over-bike', mark: 'M1',
+    strip: [
+      'Rafa is selling a bike. A buyer takes it at once, without haggling, and $800 arrives in Rafa’s account: twice the price.',
+      'The buyer says that it was a typo, and asks Rafa to send the $400 difference to a courier’s account.'
     ],
-    take: 'It is decided this way on purpose. In life the two overlap, and the line could be drawn in another place. The questions pick one answer so that two people using them reach the same name, and each can say why.' },
+    explain: [
+      'The money has arrived. Rafa can see $800 in his account, and all that he is asked to do is to give back what he was never owed. It feels like honesty. But the $800 may be a card payment made with a stolen card, a transfer that the bank recalls, or a check that bounces. Rafa’s $400 goes out for real, and at once. When the buyer’s payment disappears, Rafa has lost the $400, and the bike too if he has handed it over.',
+      'A buyer who really overpaid has a fair way to put it right: they ask their own bank to reverse the payment, or ask for all of it back to the account it came from, and then pay again. They do not ask for a second payment to somebody else.'
+    ],
+    feature: { step: 'M1', option: 'deal' },
+    name: 'The name for this is {o:overpayment}. The buyer pays over the price, and the scam is in what you are asked to do with the extra.',
+    act: [
+      'Send nothing, and hand over nothing: do not send the difference, and do not release the item.',
+      'If the payment really was a mistake, tell the buyer to ask their own bank to reverse it, or to ask for all of it back to the account it came from.',
+      'A payment showing in your account is not yet yours. Ask your bank when it has cleared for good, which can be days later, and wait for that.'
+    ] },
 
-  { id: 'exc-site-fee', kind: 'exception', ledger: 'pigbutcher~advancefee', looksLike: 'advancefee', is: 'pigbutcher',
-    h: 'A tax to take your profit out',
-    link: 'The names in this part have one thing in common: a fee that comes first. Here is a case with a fee that comes first and that is not the name you would expect.',
-    case: 'm-exc-withdrawtax',
-    setup: 'The app makes Gareth pay a tax before he can take his money out, and a fee that must be paid before money reaches you is what {o:advancefee} usually sounds like. Yet the answer for this case is {a:M2.site}, and the name is {o:pigbutcher}.',
-    prompt: { kind: 'phrase', answer: 'A woman called Nina, whom he has chatted to for three months and never met, showed him the app' },
-    because: [
-      'Ask where Gareth’s money is. He has put $8,000 into a trading app that Nina, a woman he has never met, showed him. The tax is asked for by the app, to let him take his money out of it. So the case shows both things: a site that someone he knows only online showed him, and a fee that must be paid before money reaches him.',
-      'Such a case gets the answer about the site. The fee is how the scam is run once the money is in, and it only exists because the site came first.'
-    ],
-    take: 'The fee does not go away, and it is not forgotten. It does not decide the answer, because the site is the thing that all of it depends on.' }
+  { id: 'check-overpayment', kind: 'check', after: 'overpayment',
+    case: 'm-over-check',
+    ask: { type: 'option', step: 'M1', among: ['online', 'prize', 'lost', 'bill', 'official', 'deal'] } },
+
+  { id: 'look-overpayment-realpayment', kind: 'lookalike', ledger: 'overpayment~realpayment',
+    link: 'The same camera changing hands at the same price.',
+    cases: ['m-camera-sold', 'm-camera-bought'],
+    instruction: 'Both cases are about Isla and a camera that costs $600. Compare one thing: what she is asked to do with the money.',
+    prompt: { kind: 'which', option: 'M2.agreed', answer: 'm-camera-bought' },
+    difference: [
+      'In Case A Isla is selling the camera. The buyer sends a $1,000 check and asks her to send the extra $400 on to a friend’s account. The case is {o:overpayment}.',
+      'In Case B Isla is buying a camera, at the price that she agreed in the app’s chat, and pays through the marketplace’s own button, in an app that she has used for years. She found the way to pay through a way she already had, and nothing is hurried or hidden. The answer is {a:M2.agreed}, and the case is {o:realpayment}.'
+    ] }
 ]);

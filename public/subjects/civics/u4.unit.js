@@ -6,7 +6,7 @@
 
 FC.unit('civics', 'u4', {
   kind: 'C',              // C classification, F facts, P procedure
-  rev: 3,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
+  rev: 4,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
   standard: 1,            // lesson-standard version this unit was built to
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author). The app labels a draft as a draft.
   tag: 'Four',
@@ -28,23 +28,23 @@ FC.unit('civics', 'u4', {
       shared: 'Both are things the President does for the whole country, and both can involve ships, soldiers or another country’s leader.',
       rule: 'In {o:commander} the President gives the forces their orders, and they obey. In {o:diplomacy} the President, or someone speaking for the President, meets, negotiates or signs with another country’s government.',
       test: 'Who is on the other side of what the President does: the armed forces, who are told where to go or what to do, or the leaders and officials of another country, who are met and negotiated with?' },
-    { id: 'veto~pardon', pair: ['veto', 'pardon'], step: 'E1',
+    { id: 'veto~pardon', pair: ['veto', 'pardon'], step: 'E1', taughtIn: 'q-pres',
       shared: 'Both are things only the President can do, done by signing or not signing a paper, and both stop something that others set going: a bill Congress passed, or a punishment.',
       rule: 'In {o:veto} the President acts on a bill that Congress has passed, and refuses to sign it. In {o:pardon} the President acts on a person who broke a federal law, and forgives the crime.',
       test: 'What is the President acting on: a bill that Congress passed, or a person who broke a federal law?' },
-    { id: 'veto~execute', pair: ['veto', 'execute'], step: 'E1',
+    { id: 'veto~execute', pair: ['veto', 'execute'], step: 'E1', taughtIn: 'q-pres',
       shared: 'In both a law, or a bill that would become one, is in the story, and the President or an office is acting on it.',
       rule: 'In {o:veto} the President is deciding whether a bill Congress passed will go any further, and refuses it. In {o:execute} the law is already in force, and an office is putting it into daily practice.',
       test: 'Is the President deciding whether the bill will take effect, or is an office already putting a law into practice?' },
-    { id: 'diplomacy~execute', pair: ['diplomacy', 'execute'], step: 'E1',
+    { id: 'diplomacy~execute', pair: ['diplomacy', 'execute'], step: 'E1', taughtIn: 'q-pres',
       shared: 'Both are done by federal officials, and both can involve people who come from another country.',
       rule: 'In {o:diplomacy} the official sits across the table from another country’s government, as one country with another. In {o:execute} the official makes a law Congress passed work for people, even when the people come from another country.',
       test: 'Is the official dealing with another country’s government, or dealing with people under a law Congress passed?' },
-    { id: 'enumerated~execute', pair: ['enumerated', 'execute'], step: 'D1',
+    { id: 'enumerated~execute', pair: ['enumerated', 'execute'], step: 'D1', taughtIn: 'q-pres',
       shared: 'Both are about one law: Congress passes it, and then an office puts it into practice.',
       rule: 'In {o:enumerated} the case ends on the lawmakers’ vote that passes a law. In {o:execute} the law is already passed, and the case ends on what an office does with it.',
       test: 'Does the case end on the vote that passed the law, or on what an office does with a law that is already passed?' },
-    { id: 'confirm~diplomacy', pair: ['confirm', 'diplomacy'], step: 'D1',
+    { id: 'confirm~diplomacy', pair: ['confirm', 'diplomacy'], step: 'D1', taughtIn: 'q-pres',
       shared: 'Both are about an agreement with another country, or about a person who will deal with other countries: the President acts, and the Senate votes.',
       rule: 'In {o:diplomacy} the case ends on the President’s side: someone meets, negotiates or signs. In {o:confirm} the case ends on the senators voting, or being asked to vote, on what the President put forward.',
       test: 'Does the case end on the President’s side, meeting, negotiating and signing, or on senators voting, or being asked to vote, on what the President put forward?' },
@@ -55,24 +55,15 @@ FC.unit('civics', 'u4', {
   ],
 
   // Parts are stopping points: each ends on a screen that says where the next one starts.
-  // The first two parts follow the cards of the two names that turn on a law, then the President's own powers (A13).
   // The part with drill: true is the last; its close cards come after the drill.
   parts: [
     { id: 'p1', title: 'The President in charge of the laws, and what it looks like when no law is behind a demand',
-      cards: ['orient-pres', 'meet-execute', 'again-execute', 'lens-pres', 'portrait-execute', 'check-execute',
-              'term-order', 'meet-beyondpres', 'again-beyondpres', 'portrait-beyondpres', 'check-beyondpres',
-              'refute-order', 'look-execute-beyondpres', 'exc-order', 'exc-fee',
-              'look-enumerated-execute', 'look-beyondcong-beyondpres'] },
-    { id: 'p2', title: 'The President’s own powers: orders to the armed forces, and dealing with other countries',
-      cards: ['meet-commander', 'again-commander', 'portrait-commander', 'check-commander', 'refute-war',
-              'meet-diplomacy', 'again-diplomacy', 'portrait-diplomacy', 'check-diplomacy',
-              'look-commander-diplomacy', 'exc-exercise', 'look-diplomacy-execute', 'look-confirm-diplomacy'] },
-    { id: 'p3', title: 'The President and a bill, the President and a crime, and the question',
-      cards: ['meet-veto', 'again-veto', 'portrait-veto', 'check-veto',
-              'meet-pardon', 'again-pardon', 'portrait-pardon', 'check-pardon', 'refute-pardon',
-              'look-veto-pardon', 'look-veto-execute', 'q-pres', 'check-pres'] },
-    { id: 'p4', title: 'Two whole cases, then the drill',
-      cards: ['worked-hospital', 'worked-harbor'], drill: true, close: ['recap-pres', 'transfer-pres'] }
+      cards: ['orient-pres', 'meet-execute', 'check-execute', 'term-order', 'meet-beyondpres', 'check-beyondpres',
+              'exc-order', 'look-execute-beyondpres', 'look-beyondcong-beyondpres'] },
+    { id: 'p2', title: 'The President’s own powers, and the question',
+      cards: ['meet-commander', 'check-commander', 'meet-diplomacy', 'check-diplomacy', 'look-commander-diplomacy',
+              'meet-veto', 'check-veto', 'meet-pardon', 'check-pardon', 'q-pres', 'check-pres', 'worked-harbor'],
+      drill: true, close: ['recap-pres'] }
   ],
 
   // The drill is a ramp of five stages (lesson standard A10). The app owns the wording of every stage instruction.
@@ -82,40 +73,29 @@ FC.unit('civics', 'u4', {
     key: 'e1',            // new in this rebuild: a unit of standard 1 has no old quick-drill counter to keep (E8)
     add: 'Many of these cases name a law, an office and the President together, and the one named first is often not the one that decides. Read each case to its end, and look for what the President or the office does last.',
     rungs: [
-      { ask: 'name',
-        items: [['e-n-trees', 'e-n-cups'], ['e-n-troops', 'e-n-summit'], ['e-n-stations', 'e-n-stamps'], ['e-n-lights', 'e-n-dentists']] },
       { ask: 'piece',
         items: [[{ case: 'e-p-lab', step: 'E1' }, { case: 'e-p-parking', step: 'E1' }],
                 [{ case: 'e-p-patrol', step: 'E1' }, { case: 'e-p-diplomas', step: 'E1' }],
                 [{ case: 'e-p-holiday', step: 'E1' }, { case: 'e-p-nurse', step: 'E1' }],
-                [{ tell: 'execute~beyondpres' }, { tell: 'commander~diplomacy' }, { tell: 'veto~pardon' },
-                 { tell: 'veto~execute' }, { tell: 'diplomacy~execute' }],
-                [{ tell: 'enumerated~execute' }, { tell: 'confirm~diplomacy' }, { tell: 'beyondcong~beyondpres' }],
-                ['e-rev-execute', 'e-rev-beyondpres', 'e-rev-commander', 'e-rev-diplomacy', 'e-rev-veto', 'e-rev-pardon'],
+                [{ tell: 'execute~beyondpres' }, { tell: 'commander~diplomacy' }, { tell: 'beyondcong~beyondpres' }],
                 [{ earlier: 'u1' }]] },
-      { ask: 'finish',
-        items: [['e-f-pools', 'e-f-leaves'], ['e-f-snow', 'e-f-school']] },
       { ask: 'route',
         items: [['e-r-lenses', 'e-r-water'],
                 ['e-r-flight', 'e-r-minister'],
                 ['e-r-holiday', 'e-r-embezzle'],
                 ['e-r-absence', 'e-r-bridge'],
-                ['e-r-citizenship', 'e-r-envoy'],
-                ['e-r-probation', 'e-r-dental'],
                 ['e-r-fine', 'e-r-memo2'],
                 ['e-r-homecoming', 'e-r-brisk'],
-                [{ earlier: 'u1' }]] },
-      { ask: 'claim', demo: 'e-claim-demo',
-        items: [['e-claim-war'], ['e-claim-order'], ['e-claim-test'], ['e-claim-pardon'], ['e-claim-veto']] }
+                [{ earlier: 'u1' }]] }
     ],
-    // Fresh cases for later days: three for each name, one for each of its scheduled returns (E9).
+    // Fresh cases for later days: two for each name (E9).
     // A due name returns as a case the learner has not seen, beside a case of the name they most often take it for.
-    returns: ['e-ret-bees', 'e-ret-alarms', 'e-ret-jets',
-              'e-ret-lunch', 'e-ret-buspass', 'e-ret-pets',
-              'e-ret-bridgeworks', 'e-ret-general', 'e-ret-supplyship',
-              'e-ret-teams', 'e-ret-pipeline', 'e-ret-trucks',
-              'e-ret-bicycles', 'e-ret-museums', 'e-ret-nursing',
-              'e-ret-sailor', 'e-ret-pharmacist', 'e-ret-clerk']
+    returns: ['e-ret-bees', 'e-ret-alarms',
+              'e-ret-lunch', 'e-ret-buspass',
+              'e-ret-bridgeworks', 'e-ret-supplyship',
+              'e-ret-teams', 'e-ret-pipeline',
+              'e-ret-bicycles', 'e-ret-museums',
+              'e-ret-sailor', 'e-ret-pharmacist']
   },
 
   // Build notes: not shown to the learner, and left out of the fingerprint. The validator reads them.
@@ -124,7 +104,8 @@ FC.unit('civics', 'u4', {
     history: [
       { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the branch unit for the President or a federal agency. It replaces old Unit Three’s President part, the airline-rule worked case, old Unit Four’s card on the citizenship test, and old Unit Seven’s passport-fee worked case. Not yet deployed, so later edits stay revision 1.' },
       { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' },
-      { rev: 3, date: '2026-10-05', change: 'American English: US spelling.' }
+      { rev: 3, date: '2026-10-05', change: 'American English: US spelling.' },
+      { rev: 4, date: '2026-10-05', change: 'Trimmed to a quick lesson: one case per name, the essentials, a short drill.' }
     ],
     // What the K2 rewrite changed in the key for this branch, and why (docs/rebuild/civics-plan.md, section a). "was" is the wording of the old course.
     keyChanges: [
@@ -152,17 +133,7 @@ FC.unit('civics', 'u4', {
       { outcome: 'beyondpres', was: 'Beyond the President’s reach', now: 'Beyond the President’s power', why: 'K2.6: "reach" is a figure of speech.' }
     ],
     // Cards that name a wrong idea, with where the idea comes from. verified: false is shown to the owner at deploy (E15).
-    wrongIdeas: [
-      { card: 'refute-order', about: 'beyondpres',
-        source: { kind: 'app-data', verified: false,
-          ref: 'The old course’s faulty claim "An executive order is just as strong as a law, and lasts as long" (standard0.js, CIVICS_ERR). How often cold readers hold it has still to be seen.' } },
-      { card: 'refute-war', about: 'commander',
-        source: { kind: 'app-data', verified: false,
-          ref: 'The old course’s faulty claim "The President can declare war" (standard0.js, CIVICS_ERR). How often cold readers hold it has still to be seen.' } },
-      { card: 'refute-pardon', about: 'pardon',
-        source: { kind: 'app-data', verified: false,
-          ref: 'The old course’s card on veto and pardon (standard0.js): a pardon covers federal crimes only. That readers believe the President can pardon any crime is not in the old data and has still to be seen.' } }
-    ],
+    wrongIdeas: [],
     signoff: {
       coverage: null,     // { date, by } once tests/validate-data.mjs passes on this unit in the app
       coldRead: null      // { rev, date, reader: 'novice' | 'near-novice', restated: true, drillAttempted: true, notes }

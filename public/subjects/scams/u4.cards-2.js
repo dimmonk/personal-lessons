@@ -1,75 +1,98 @@
-// Scams, Unit Four, part one (second half): the pig-butchering scam and the pair that it makes with the romance scam.
-// Field guide: see u4.cards-1.js.
+// Scams, Unit Four, second half of the names (1): the real request to pay, which comes first, then invoice fraud and the
+// fake payment link, each beside the real request that it copies. Field guide: see u4.cards-1.js.
 
 FC.cards('scams', 'u4', [
 
-  /* ---------- Pig-butchering scam ---------- */
-  { id: 'meet-pigbutcher', kind: 'meet', outcome: 'pigbutcher',
-    link: 'Daniel and Elena wanted money for trouble of their own. The next name starts in the same way, with someone you have only ever known through messages, but it ends in a different request: to invest, in a platform that your new friend has chosen for you.',
-    case: 'm-pig-wrongnumber', mark: 'M2',
+  /* ---------- Real payment request ---------- */
+  { id: 'meet-realpayment', kind: 'meet', outcome: 'realpayment',
+    link: 'Now ordinary reasons to pay: a bill, a fine, a deal. Real requests come with the same reasons as the copies, so the real request comes first.',
+    case: 'm-real-rent', mark: 'M2',
     strip: [
-      'Lena has never met Kai. He began as a wrong-number text, and they have chatted every day for weeks.',
-      'He showed her a trading app and told her to download it.',
-      'She put in $200, saw it grow, and took out $100: the app paid out, once.',
-      'Now he asks her to put $6,000 into the same app, with a promise that her profits will triple.',
-      'The money is to go into the app. Kai does not say that it is for any trouble of his own.'
+      'Hana started this herself: she walked into the agency’s office and signed a lease.',
+      'The request is to pay $950 by the 1st, the rent she agreed to pay, into the account printed on page two of her agreement, the same as every month.',
+      'Nobody hurries her or asks her to keep it quiet. The message says how she could be sure: call the number on her agreement.'
     ],
     explain: [
-      'Follow the money. In Ana’s case it was to go to Daniel’s side, to pay for his daughter’s hospital. Here it is to go into an app, and Kai says nothing about any trouble of his own. He says that the app will make Lena richer.',
-      'There are two questions about money, and this case shows why. Its first question, what the request says the money is for, gives the same answer here as it gave for Ana, because in both the money comes from, or goes through, a person you know only online. What separates the two cases is the second question, the one at the foot of this card: what the request asks you to do with the money.',
-      'The app is not a real market. The profits it shows her are numbers that the scam puts on the page, and the $100 that she took out was paid to her on purpose, to prove that it works. A small amount that comes out is the cheapest part of the scam. It makes the large deposit feel safe.',
-      'Everything in that sequence can be seen at the moment of the request: the wrong number, the weeks of chat, the app, the small win, and above all the request itself, to put $6,000 into an app that someone she knows only online showed her. What follows, when Lena tries to take her profit out, only shows afterwards, and by then the money has gone. The questions do not use it.'
+      'This is what the real thing looks like, and the first thing to notice is that it is a request for money. A request is not suspicious for being a request. What makes this one real is five things together: Hana started the arrangement herself; the amount is the one she agreed; the account is the one she was given at the start; nobody is hurrying her or telling her to keep it quiet; and she could contact the agency herself, at the number on her agreement, and they would confirm it.',
+      'The last one matters most, and it has a name: {t:check}. It means stopping before you pay and contacting them yourself, through {t:already}. It does not depend on your telling a real message from a copy. A copy can look exactly like this one, but it cannot answer a call that you make to the number in your own agreement.'
     ],
-    feature: { step: 'M2', option: 'site' },
-    name: 'The name for this is {o:pigbutcher}. It comes from the way the scam is run: a person is fed with attention and small wins for weeks, like an animal fattened before the end, and then everything is taken. The word is crude, and it is the one you will see in news reports.' },
-
-  { id: 'again-pigbutcher', kind: 'again', outcome: 'pigbutcher',
-    link: 'The wrong-number text gave you what to point to: {needs:pigbutcher}. Here it is again with no wrong number and no surveyor: a friend request, and a cryptocurrency platform that a relative runs.',
-    first: 'm-pig-wrongnumber', second: 'm-pig-crypto', step: 'M2',
-    instruction: 'Find what the two cases share. Ignore the story (a wrong number, a friend request, a surveyor, a jeweler). Look at one thing only: where the money is to go.',
-    prompt: { kind: 'phrase', answer: "Open the platform's premium account with $3,000" },
-    shared: [
-      'In both cases the money is to go into a site or an app that someone else showed the person: Kai’s trading app, Priya’s cryptocurrency platform. In both, a small first deposit seemed to work, and the request is for a much larger one. In both, the person asking has been a voice in messages for weeks and has never been met.',
-      'The stories share nothing else, so neither the currency nor the name of the platform matters. Where the money is to go decides it, and that is what {o:pigbutcher} names.'
-    ] },
-
-  { id: 'portrait-pigbutcher', kind: 'portrait', outcome: 'pigbutcher',
-    link: 'What you point to is the site or the app that someone you have never met showed you. This card fills in the rest of the picture.',
-    typical: [
-      'It starts like {o:romance}: a text from a stranger who says it was a wrong number, a friend request, a message on a site for professionals, a match on a dating app. The first weeks are friendly conversation, and nothing is asked for.',
-      'Then the new friend mentions a trading platform, a cryptocurrency site or a foreign-exchange app. They show screenshots of profits and offer to guide you, often saying that a relative runs it or that it is not open to everyone.',
-      'A small deposit goes in and the app shows growth. A small withdrawal works. That is bait: it costs the scammer very little, and it is the best proof they could give you that the app is real.',
-      'Larger deposits follow, with pressure to keep up: an offer that ends on Friday, a friend who says your family would only try to stop you.',
-      'When you try to take out the large sum, the app asks for a fee, a tax or a deposit first. Paying it unlocks nothing. Another charge follows, and then silence.',
-      'Which of this can you see when the request arrives? The friend you have never met, the app they showed you and the request to put money into it are all in front of you on the day. The refused withdrawal only comes afterwards, so the questions do not use it.'
-    ],
-    not: [
-      'Not every site that handles investments is this name. A real one is a site you reached yourself, whose firm you can look up on the regulator’s own register, and whose owner did not first make friends with you.',
-      'A friend whom you know in person telling you about the fund they use is outside these questions. The name needs both parts: someone you know only through messages, and a site or an app that they showed you.'
-    ],
-    wild: ['"Sorry, wrong number. But you sound nice."', '"My uncle runs the platform. I can get you in."', '"You can withdraw any time. I did it last week."', '"Do not tell your family. They would only try to stop you."', '"The offer closes on Friday."'],
-    self: 'It arrives by text from a number you do not know, as a friend request, as a message on a site for professionals or after a match on a dating app. It is often reported in the news as a “crypto” scam.',
-    ask: '"Did someone I have never met show me where to put this money?"',
+    feature: { step: 'M2', option: 'agreed' },
+    name: 'The name for this is {o:realpayment}. Nothing is wrong with it. You pay it in the normal way, and the name is there so that you can say so as exactly as you can say what is wrong in the others.',
     act: [
-      'Put nothing into any site or app that someone you know only online showed you, however well it seems to be working.',
-      'Look the firm up yourself. Type in the address of a regulator yourself, such as FINRA BrokerCheck (brokercheck.finra.org), or use a bookmark you made before, and search its register for the firm’s name. If it is not there, or you are only told that it is registered, do not go on.',
-      'A small withdrawal that worked proves nothing. It is how this scam is run.',
-      'Talk to someone who knows you in person before you move any money. If you have been asked to keep it secret, that is the answer.',
-      'If you have already deposited money, do not pay a fee or a tax to take it out. Call your bank at the number on your card.'
+      'Pay it in the normal way, and keep the confirmation.',
+      'For a large payment, or the first payment to someone new, do {t:check} once. A real request passes it, so it costs you a few minutes.',
+      'If the details change, if someone starts to hurry you, or if you are told not to check, stop: it has become something else.'
     ] },
 
-  { id: 'check-pigbutcher', kind: 'check', after: 'pigbutcher',
-    case: 'm-pig-check',
-    ask: { type: 'phrase', step: 'M2', say: 'Which words tell Dev where the money is to go? Tap them.', answer: 'Move your savings into it this week' } },
+  { id: 'check-realpayment', kind: 'check', after: 'realpayment',
+    case: 'm-real-check',
+    ask: { type: 'phrase', step: 'M2', say: 'Which words show that the invoice matches what Wen agreed? Tap them.', answer: 'the same total and the same bank account details as the quote' } },
 
-  { id: 'look-pigbutcher-romance', kind: 'lookalike', ledger: 'pigbutcher~romance',
-    link: 'You have met both names. They are easy to mix up: in both, someone you have never met asks for a large sum, and the same person often does one after the other. This card puts them side by side.',
-    cases: ['m-theo-app', 'm-theo-surgery'],
-    instruction: 'Both cases are about Mara and Theo, and in both he asks for $3,000. Compare one thing: where the money is to go.',
-    prompt: { kind: 'which', option: 'M2.site', answer: 'm-theo-app' },
+  /* ---------- Invoice fraud ---------- */
+  { id: 'meet-invoicefraud', kind: 'meet', outcome: 'invoicefraud',
+    link: 'The real request has a copy that you cannot tell apart by looking: the same bill, from the same person, with one thing changed.',
+    case: 'm-inv-builder', mark: 'M1',
+    strip: [
+      'Every month for a year Joe has paid the invoice that his landscaper emails him, always into the same account.',
+      'This month’s invoice, for $1,850, arrives in the same thread, with the same logo and signature. It says that the landscaper has changed bank, and asks Joe to pay into the new account below.',
+      'Nothing is hurried and no one is threatened. It reads like routine.'
+    ],
+    explain: [
+      'The invoice is real, because the work is real and the amount is right. What has changed is where the money is to go. A scammer who has gotten into a mailbox, or registered an address one letter off, waits until a large invoice is about to be paid, and then sends the one line that changes the account.',
+      'It works because it is calm. The reason it gives, a bill that Joe already pays, is the reason that a real invoice would give, so the first question cannot tell the two apart. What does is what the request asks him to do with the money: pay into new details that a message has just announced. Whether the change is real, he can only find out by contacting them himself.'
+    ],
+    feature: { step: 'M1', option: 'bill' },
+    name: 'The name for this is {o:invoicefraud}. An invoice is a bill that a business sends. The fraud is not in the bill, which is real, but in the bank account details on it.',
+    act: [
+      'Before you pay into any new details, call the person who sent the bill at a number that you already had: the one on the contract or on an earlier paper invoice. Never use a number in the message that announced the change.',
+      'If you cannot reach them, wait. A real bill can wait a day, and a thief cannot.'
+    ] },
+
+  { id: 'check-invoicefraud', kind: 'check', after: 'invoicefraud',
+    case: 'm-inv-check',
+    ask: { type: 'phrase', step: 'M2', say: 'Which words say what is different this quarter? Tap them.', answer: 'We have moved to a new bank' } },
+
+  { id: 'look-invoicefraud-realpayment', kind: 'lookalike', ledger: 'invoicefraud~realpayment',
+    link: 'The hardest pair here, because the bill is the same.',
+    cases: ['m-tessa-same', 'm-tessa-new'],
+    instruction: 'Both cases are about the same invoice from Tessa’s builder. Compare one thing: the account that she is asked to pay into.',
+    prompt: { kind: 'which', option: 'M2.agreed', answer: 'm-tessa-same' },
     difference: [
-      'In Case A the $3,000 is to go into a trading app that Theo showed her. It is not for any trouble of his. The answer is {a:M2.site}, and the case is {o:pigbutcher}.',
-      'In Case B the $3,000 is to pay for something of Theo’s own: his sister’s operation. It goes into an account to pay for his trouble, and nothing is invested. The money is for trouble that he says is his, and the case is {o:romance}.',
-      'The amount, the man and the months of messages are the same in both. What differs is what the money is for.'
+      'In Case A the invoice asks Tessa to pay into the account that she has paid into four times, and she can see it in her own banking app. The answer is {a:M2.agreed}, and the case is {o:realpayment}.',
+      'In Case B the same invoice, in the same thread, says that the builder has changed bank and gives a new account. A message that announces new details to pay into is what {o:invoicefraud} is made of.'
+    ] },
+
+  /* ---------- Fake payment link ---------- */
+  { id: 'meet-fakelink', kind: 'meet', outcome: 'fakelink',
+    link: 'The next copy is a small charge that you do not owe, and it is one of the most common scams of all.',
+    case: 'm-link-parcel', mark: 'M2',
+    strip: [
+      'The text comes from a number that Jonas does not know. It says that a package could not be delivered, which is believable because he is expecting one.',
+      'It asks him to pay $2.99, on a page that he reaches through a link in the text.'
+    ],
+    explain: [
+      '$2.99 is less than a coffee, which is how the scam gets past your attention. The link leads to a page made to look like the courier’s. It asks for his card number, its expiry date and the three digits on the back, and often for a code that his bank sends. The $2.99 is not the point. The card number is, and it is used right away for much larger payments.',
+      'The reason, a package he is waiting for, is one that a real courier could give too, so the first question cannot settle it. What settles it is what the text asks him to do with the money: pay on a page that he reaches through a link in the message. To find out whether there is a package, he looks in the courier’s own app or on the store’s own page.'
+    ],
+    feature: { step: 'M2', option: 'link' },
+    name: 'The name for this is {o:fakelink}. The charge is the bait and the link is the trap: the page at the end of the link is not the company’s.',
+    act: [
+      'Do not tap the link, and do not reply. Delete the message.',
+      'If the charge might be real, open the company’s own app, or type in its address yourself, and look for it there.',
+      'If you have already entered your card details, call your bank now, at the number on the back of your card, and ask them to block the card. If a caller then says that he is from your bank and tells you to move your money to a safe account, hang up: that is the next scam.'
+    ] },
+
+  { id: 'check-fakelink', kind: 'check', after: 'fakelink',
+    case: 'm-link-check',
+    ask: { type: 'option', step: 'M2', among: ['site', 'agreed', 'link'] } },
+
+  { id: 'look-fakelink-realpayment', kind: 'lookalike', ledger: 'fakelink~realpayment',
+    link: 'The same small charge and the same courier.',
+    cases: ['m-dina-text', 'm-dina-app'],
+    instruction: 'Both cases are about Dina, a pair of boots and a $6.20 customs charge. Compare one thing: where she is asked to pay.',
+    prompt: { kind: 'which', option: 'M2.agreed', answer: 'm-dina-app' },
+    difference: [
+      'In Case A the charge arrives in a text from a number she does not know, with a link to pay on. Nothing that she already had shows that it is real. The answer is {a:M2.link}, and the case is {o:fakelink}.',
+      'In Case B the same charge appears in her courier’s own app, which she installed last year, and on the store’s own order page. She found it through a way she already had. The answer is {a:M2.agreed}, and the case is {o:realpayment}.'
     ] }
 ]);

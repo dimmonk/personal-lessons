@@ -8,7 +8,7 @@
 
 FC.unit('civics', 'u1', {
   kind: 'C',              // C classification, F facts, P procedure
-  rev: 3,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
+  rev: 4,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
   standard: 1,            // lesson-standard version this unit was built to
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author). The app labels a draft as a draft.
   tag: 'One',
@@ -31,7 +31,7 @@ FC.unit('civics', 'u1', {
       shared: 'Both can be about one law, and both can be described with the same words: a trial, a charge, a decision, a vote on whether someone is guilty.',
       rule: 'In {a:D1.congress} the deciders are lawmakers, who vote. In {a:D1.courts} the decider is a judge, who rules, or who has been asked to. A trial held in the Senate is a vote by senators, so it stays with {a:D1.congress}.',
       test: 'Who casts the deciding votes, or gives the ruling: lawmakers in the House or the Senate, or a judge?' },
-    { id: 'president~courts', pair: ['president', 'courts'], step: 'D1',
+    { id: 'president~courts', pair: ['president', 'courts'], step: 'D1', taughtIn: 'q-kind',
       shared: 'Both can be about one rule: an office or the President makes it, and someone then takes it to a judge.',
       rule: 'In {a:D1.president} the story ends with the President or an office deciding. In {a:D1.courts} it ends with a judge deciding, or with someone asking a judge to, even when the rule the judge is asked about came from an office. What the office did earlier is how the matter reached the judge.',
       test: 'Where does the story stop: on a decision by the President or an office, or on a judge deciding, or on someone asking a judge to decide?' },
@@ -43,7 +43,7 @@ FC.unit('civics', 'u1', {
       shared: 'Both can be offices that inspect, license or enforce, and the work an inspector does can be exactly the same in each.',
       rule: 'In {a:D1.president} the office belongs to the government of the whole country, or the decision is the President’s. In {a:D1.states} the office belongs to one state, or to a city, a town or a county. What the office does can be the same in both. Whose office it is separates them.',
       test: 'Whose government does the office or the official belong to: the whole country’s, or one state’s, or a city’s, a town’s or a county’s?' },
-    { id: 'congress~states', pair: ['congress', 'states'], step: 'D1',
+    { id: 'congress~states', pair: ['congress', 'states'], step: 'D1', taughtIn: 'q-kind',
       shared: 'In both, lawmakers vote on a bill, and they can vote on the same sort of matter, such as a tax.',
       rule: 'In {a:D1.congress} the lawmakers are the House and the Senate, and what they decide is for the whole country. In {a:D1.states} the lawmakers belong to one state, or the deciders are the council of a city, a town or a county, and what they decide is for that place alone.',
       test: 'Do the lawmakers in the case make rules for the whole country, or for one state, city, town or county?' }
@@ -53,21 +53,14 @@ FC.unit('civics', 'u1', {
   // The first four parts follow the four answers of the key's first question, in the key's order (A13).
   // The part with drill: true is the last; its close cards come after the drill.
   parts: [
-    { id: 'p1', title: 'The first kind: lawmakers voting',
-      cards: ['orient-kind', 'meet-congress', 'again-congress', 'lens-kind', 'portrait-congress', 'check-congress'] },
-    { id: 'p2', title: 'The second kind: the President or an office',
-      cards: ['term-agency', 'meet-president', 'again-president', 'portrait-president', 'check-president', 'look-congress-president',
-              'exc-signed', 'refute-signed', 'exc-treaty'] },
-    { id: 'p3', title: 'The third kind: a judge',
-      cards: ['meet-courts', 'again-courts', 'portrait-courts', 'check-courts', 'look-congress-courts', 'exc-trial',
-              'look-president-courts', 'exc-rule'] },
-    { id: 'p4', title: 'The fourth kind: a state, a city or a county',
-      cards: ['meet-states', 'again-states', 'portrait-states', 'check-states', 'look-courts-states', 'exc-statejudge',
-              'look-president-states', 'look-congress-states', 'refute-first'] },
-    { id: 'p5', title: 'The first question',
-      cards: ['q-kind', 'check-kind'] },
-    { id: 'p6', title: 'Two whole cases, then the drill',
-      cards: ['worked-doll', 'worked-bags'], drill: true, close: ['recap-kind', 'transfer-kind'] }
+    { id: 'p1', title: 'The first two kinds: lawmakers voting, and the President or an office',
+      cards: ['orient-kind', 'meet-congress', 'check-congress', 'term-agency', 'meet-president', 'check-president',
+              'look-congress-president', 'exc-signed'] },
+    { id: 'p2', title: 'The other two kinds: a judge, and a state, a city or a county',
+      cards: ['meet-courts', 'check-courts', 'exc-trial', 'meet-states', 'check-states', 'exc-statejudge',
+              'look-president-states', 'q-kind'] },
+    { id: 'p3', title: 'One whole case, then the drill',
+      cards: ['worked-bags'], drill: true, close: ['recap-kind'] }
   ],
 
   // The drill of a gate unit has three stages (A15): piece, route, claim. There is no name stage and no finish
@@ -80,30 +73,23 @@ FC.unit('civics', 'u1', {
     add: 'Many of these cases name two or three parts of government, and the part named first is often not the one the question wants. That is on purpose. Read each story to its end before you answer, and look for the last decision, or the one the story asks for.',
     rungs: [
       { ask: 'piece',
-        items: [[{ case: 'g-postage', step: 'D1' }, { case: 'g-schoolyear', step: 'D1' }],
-                [{ case: 'g-judgevote', step: 'D1' }, { case: 'g-parkdogs', step: 'D1' }],
-                [{ case: 'g-eviction', step: 'D1' }, { case: 'g-leash', step: 'D1' }],
-                [{ case: 'g-army', step: 'D1' }, { case: 'g-confession', step: 'D1' }],
-                [{ tell: 'congress~president' }, { tell: 'congress~courts' }, { tell: 'president~courts' },
-                 { tell: 'courts~states' }, { tell: 'president~states' }, { tell: 'congress~states' }],
-                ['g-rev-congress', 'g-rev-president', 'g-rev-courts', 'g-rev-states']] },
+        items: [[{ case: 'g-postage', step: 'D1' }, { case: 'g-leash', step: 'D1' }],
+                [{ case: 'g-parkdogs', step: 'D1' }, { case: 'g-eviction', step: 'D1' }],
+                [{ tell: 'congress~president' }, { tell: 'congress~courts' }, { tell: 'president~states' }]] },
       { ask: 'route',
-        items: [['g-lab', 'g-library', 'g-contract'],
-                ['g-taxoffice', 'g-noise', 'g-hairlicence'],
-                ['g-bakers', 'g-pardon'],
+        items: [['g-bakers', 'g-pardon'],
                 ['g-residents', 'g-curfew'],
                 ['g-judgecharge', 'g-foodtruck'],
-                ['g-ambassador', 'g-veto'],
-                ['g-order', 'g-noiserewrite']] },
+                ['g-veto', 'g-noiserewrite']] },
       { ask: 'claim', demo: 'g-claim-demo',
-        items: [['g-claim-signed'], ['g-claim-first'], ['g-claim-trial'], ['g-claim-city'], ['g-claim-statejudge']] }
+        items: [['g-claim-first']] }
     ],
-    // Fresh cases for later days: three for each family, one for each of its scheduled returns (E9).
+    // Fresh cases for later days: two for each family (E9).
     // A due family returns as a case the learner has not seen, beside a case of the family they most often take it for.
-    returns: ['g-ret-mail', 'g-ret-coins', 'g-ret-citizenship',
-              'g-ret-bridges', 'g-ret-talks', 'g-ret-forms',
-              'g-ret-window', 'g-ret-firing', 'g-ret-musicians',
-              'g-ret-speed', 'g-ret-bins', 'g-ret-daycare']
+    returns: ['g-ret-mail', 'g-ret-citizenship',
+              'g-ret-bridges', 'g-ret-forms',
+              'g-ret-window', 'g-ret-musicians',
+              'g-ret-speed', 'g-ret-daycare']
   },
 
   // Build notes: not shown to the learner, and left out of the fingerprint. The validator reads them.
@@ -112,7 +98,8 @@ FC.unit('civics', 'u1', {
     history: [
       { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the gate unit of Civics. It replaces old Unit One cards one to eight and the Who decides drill. Not yet deployed, so later edits before the first deploy stay revision 1.' },
       { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' },
-      { rev: 3, date: '2026-10-05', change: 'American English: US spelling.' }
+      { rev: 3, date: '2026-10-05', change: 'American English: US spelling.' },
+      { rev: 4, date: '2026-10-05', change: 'Trimmed to a quick lesson: one case per name, the essentials, a short drill.' }
     ],
     // What the K2 rewrite changed in the gate, and why (docs/rebuild/civics-plan.md, section a). "was" is the wording of the old course.
     keyChanges: [
@@ -139,14 +126,7 @@ FC.unit('civics', 'u1', {
         why: 'A15: the gate’s answers are Unit One’s kinds and carry `plain` and `needs`. `sub` becomes `when` (S1). P9: the purpose and the reason for the question are written (K2.7).' }
     ],
     // Cards that name a wrong idea, with where the idea comes from. verified: false is shown to the owner at deploy (E15).
-    wrongIdeas: [
-      { card: 'refute-signed', about: 'congress',
-        source: { kind: 'app-data', verified: false,
-          ref: 'The old course’s faulty claims "The President makes the laws" and "A law is valid as long as Congress passed it and the President signed it" (public/subjects/civics/standard0.js, CIVICS_ERR), and its card "Giving one part of government another part’s job". That people credit the President because of a signature has still to be seen in cold readers.' } },
-      { card: 'refute-first', about: 'D1',
-        source: { kind: 'app-data', verified: false,
-          ref: 'docs/comprehension-audit/civics.md, K3: the old gate was read three different ways by the specimens, and the old worked example had to say that the part named first is not always the one acting. Whether cold readers stop at the first part named has still to be seen.' } }
-    ],
+    wrongIdeas: [],       // the two wrong-idea cards were cut in the quick lesson; the ideas live on in the signed-law exception, the first-named claim and the recap
     signoff: {
       coverage: null,     // { date, by } once tests/validate-data.mjs passes on this unit in the app
       coldRead: null      // { rev, date, reader: 'novice' | 'near-novice', restated: true, drillAttempted: true, notes }

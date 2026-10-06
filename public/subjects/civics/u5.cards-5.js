@@ -1,5 +1,5 @@
-// Civics, Unit Five, part three (second half) to part five: two look-alike pairs with names from Congress's branch,
-// the key's question, the two whole cases, and the two cards that close the unit after the drill.
+// Civics, Unit Five, part two (close) and the drill: two look-alike pairs with names from Congress's branch,
+// the key's question, one whole case, and the card that closes the unit after the drill.
 // Names that belong to the Congress branch are met in an earlier unit and are put by their key answers here,
 // because the validator lets a card name by token only what this unit has met.
 
@@ -7,14 +7,13 @@ FC.cards('civics', 'u5', [
 
   /* ---------- Look-alikes with names from Congress's branch: only the first question separates them ---------- */
   { id: 'look-review-beyondcong', kind: 'lookalike', ledger: 'review~beyondcong',
-    link: 'A law that clashes with the Constitution can have been through two moments: the vote that made it, and the day someone it harmed takes it to a judge. An earlier unit taught the name for the first moment, the one beside this unit’s name in the title, and this unit has taught the name for the second. This card puts the two moments side by side.',
+    link: 'A law that clashes with the Constitution can have been through two moments: the vote that made it, and the day someone it harmed takes it to a judge. This card puts the two side by side.',
     cases: ['ls-worship-vote', 'ls-worship-fine'],
     instruction: 'Both cases are about the same kind of law, and in both the Constitution is in the argument. Compare one thing: who makes the last decision. In one case it is lawmakers voting. In the other it is a judge, who has been asked about a law that is already in use.',
     prompt: { kind: 'which', option: 'D1.courts', answer: 'ls-worship-fine' },
     difference: [
       'In Case A the House and the Senate vote for the law, and the story ends there. The last decision is a vote, so the first answer is {a:D1.congress}. Its second answer, for a law of this kind, is {a:C1.barred}.',
-      'In Case B the law is a year old, Hana has been fined under it, and the story ends with her asking a judge to cancel the fine because the law takes away the right to worship and to gather peacefully. The last decision is a judge’s, so the first answer is {a:D1.courts}, and the second is {a:J1.check}. The case is {o:review}.',
-      'The law and the right are the same. In one case you are watching lawmakers make it, and in the other you are watching a judge asked whether it was allowed. What separates them is whose decision the story ends on, which is the first question.'
+      'In Case B the law is a year old, Hana has been fined under it, and the story ends with her asking a judge to cancel the fine because the law takes away the right to worship and to gather peacefully. The last decision is a judge’s, so the first answer is {a:D1.courts}, and the second is {a:J1.check}. The case is {o:review}.'
     ] },
 
   { id: 'look-trialrights-beyondcong', kind: 'lookalike', ledger: 'trialrights~beyondcong',
@@ -24,8 +23,7 @@ FC.cards('civics', 'u5', [
     prompt: { kind: 'which', option: 'D1.courts', answer: 'ls-print-search' },
     difference: [
       'In Case A the House and the Senate vote for a law that bans printing certain pamphlets, and the story ends there. The last decision is a vote, so the first answer is {a:D1.congress}, and its second, for a law of this kind, is {a:C1.barred}.',
-      'In Case B a printer has been arrested on suspicion of theft, and the police searched his shop with no warrant. His lawyer asks a judge to decide whether the search was unreasonable. The last decision is a judge’s, so the first answer is {a:D1.courts}. The judge is asked about a step promised to an accused person, so the second is {a:J1.accused}, and the case is {o:trialrights}.',
-      'Both cases have a printer and a right that stops the government. In one the right stops lawmakers from passing a law, and in the other it is a step promised to a person who is accused. The right alone does not tell you which. Start with whose decision the story ends on.'
+      'In Case B a printer has been arrested on suspicion of theft, and the police searched his shop with no warrant. His lawyer asks a judge to decide whether the search was unreasonable. The last decision is a judge’s, so the first answer is {a:D1.courts}. The judge is asked about a step promised to an accused person, so the second is {a:J1.accused}, and the case is {o:trialrights}.'
     ] },
 
   /* ---------- The question ---------- */
@@ -33,13 +31,12 @@ FC.cards('civics', 'u5', [
     h: 'The question you have been answering all along',
     link: 'Since the leaflet fine you have seen the question at the foot of each new name, with one answer under it. This card puts the question and its four answers in one place, and says why it is asked.',
     decides: [
-      'Two stories can end with a judge and need different names, and two stories about the very same rule can need different names too. For one of them the answer is {a:J1.check}; for another, about the same rule, it is {a:J1.words}. Nothing about the topic, the people or how serious it sounds tells them apart. Only what the judge is asked to do tells them apart.',
-      'That is why the question is not which court the judge sits in, how important the case is, or whether the case is about a crime. A judge in a court of one state, or in a court of the whole country, can be asked any of the four.'
+      'Two stories about the very same rule can need different names. For one of them the answer is {a:J1.check}; for another, about the same rule, it is {a:J1.words}. Nothing about the topic, the people or how serious it sounds tells them apart. Only what the judge is asked to do tells them apart.'
     ],
     how: [
       'Find the sentence that says what is asked of the judge, or the one that says what the person wants the judge to do. Then ask which of the four answers describes it. You should be able to put your finger on the words: that the law breaks the Constitution, that a step promised to an accused person was skipped, that the words of a law do or do not reach what happened, or that the judge should choose a better policy.',
-      'What comes around that sentence is how the matter got to the judge: a fine, a charge, a vote, a decision by the town. Each of them comes first. Do not read the answer from them. Read it from what the judge is asked.',
-      'Sometimes two answers both seem to fit. A person on trial for a crime may be asking about the steps promised, about the law itself, or about whether the law covers what they did. A person charged under a law may ask whether the law covers what they did ({o:interpret}), or whether the steps promised to them were followed ({o:trialrights}). A request to change a rule may be a plea for a better policy, or a claim that the rule breaks the Constitution. In each, go to the words in the case: does anyone point to something in the Constitution that was broken, and if so, is it the law, or a step promised to the accused?'
+      'What comes around that sentence is how the matter got to the judge: a fine, a charge, a vote, a decision by the town. Do not read the answer from them. Read it from what the judge is asked.',
+      'A person charged under a law may ask whether the law covers what they did ({o:interpret}), or whether the steps promised to them were followed ({o:trialrights}). A request to change a rule may be a plea for a better policy ({o:notlegal}), a question about what its words cover ({o:interpret}), or a claim that it breaks the Constitution ({o:review}). In each, go to the words in the case.'
     ],
     whenBoth: 'Sometimes two answers both seem to fit. Each pair below has been set side by side earlier in this unit, and each has one question that separates it.' },
 
@@ -47,45 +44,10 @@ FC.cards('civics', 'u5', [
     case: 'k-bakery',
     ask: { type: 'step', step: 'J1' } },
 
-  /* ---------- Two whole cases ---------- */
-  { id: 'worked-yardsign', kind: 'worked',
-    h: 'A whole case, from the first question to the name',
-    link: 'You have the four names and the question about them. Before you run a case yourself, watch two being run from the top, in the order they are asked. You are not asked anything until the end of each.',
-    case: 'w-yardsign',
-    steps: [
-      { step: 'D1',
-        reason: 'The case begins with a state law and a fine, and those are how the matter got here. It ends with a request: {cue:D1}. The last decision is one that somebody has asked a judge to make, and the state has made its decision already. Nobody is asking the state’s lawmakers for another one.' },
-      { step: 'J1',
-        reason: 'Wanda was fined, so the law has actually harmed her. And what she asks of the judge is whether the law is allowed at all: {cue:J1}. She does not ask what its words cover, and she does not ask for a better rule.' }
-    ],
-    hold: {
-      neighbor: 'interpret',
-      prompt: { kind: 'reason',
-        lead: 'The case is about a law and a person fined under it, and a judge is asked about it. That is also true of {o:interpret}, so the case can look like that name.',
-        choices: [
-          { id: 'a', text: 'A judge is asked about a law, and Wanda was fined under it.',
-            note: 'True, and it is why the case can look like {o:interpret}. But it is true of every case of both names, so it cannot separate them.' },
-          { id: 'b', text: 'Wanda says the law takes away her right to speak. She is not asking what its words cover.' },
-          { id: 'c', text: 'The fine was only $75.',
-            note: 'True, but the size of a fine is story. A larger fine would not change the name.' }
-        ],
-        answer: 'b' },
-      reason: [
-        'For {o:interpret} you must be able to point to this: {needs:interpret}. Nobody in Wanda’s case is asking whether the words of the law reach her sign. She says the law should not stand, because it takes away a right the Constitution protects.',
-        'It is the question from the park rule, where one person used a loudspeaker and another a violin. {test:review~interpret} Here the person says the law is not allowed, so the answer is {a:J1.check}.'
-      ]
-    },
-    impression: {
-      resembles: 'r-leaflets',
-      text: [
-        'The questions have given their answer. Now take a second look of a different kind: does this case look like one you know? It should bring back the leaflet fine: a rule about speaking, a person fined under it, and a judge asked whether the rule fits the Constitution.',
-        'Here the questions and the likeness agree, so the answer stands. The question comes first, because it makes you point at words in the case. The likeness is only a second look. When the two disagree, do not pick the one you prefer. Go back to the question and find the words in the case that answer it. The second whole case shows how.'
-      ]
-    } },
-
+  /* ---------- One whole case ---------- */
   { id: 'worked-megaphone', kind: 'worked',
-    h: 'A second whole case, where the story points the wrong way',
-    link: 'The yard sign was a clean case: one thing was going on, and nothing in the story pulled the other way. In this second case the most noticeable thing in the story is not the thing that decides it. Watch which words each question picks out.',
+    h: 'A whole case, from the first question to the name',
+    link: 'Before you run a case yourself, watch one being run from the top, in the order the questions are asked. In this case the most noticeable thing in the story is not the thing that decides it. You are not asked anything until the end.',
     case: 'w-megaphone',
     steps: [
       { step: 'D1',
@@ -107,7 +69,7 @@ FC.cards('civics', 'u5', [
         answer: 'c' },
       reason: [
         'For {o:review} you must be able to point to this: {needs:review}. The part that is missing is the claim that the rule breaks the Constitution. Greta never makes it. The right to speak is in the story, and it is not what the judge is asked about.',
-        'It is the question from the park rule again. {test:review~interpret} Here the only question put to the judge is how far a word reaches, so the answer is {a:J1.words}.'
+        'It is the question from the park rule, where one person used a loudspeaker and another a violin. {test:review~interpret} Here the only question put to the judge is how far a word reaches, so the answer is {a:J1.words}.'
       ]
     },
     impression: {
@@ -127,20 +89,5 @@ FC.cards('civics', 'u5', [
       'The story never decides. Nor do the size of the fine, the importance of the right or the word "trial": a case about a protester can be {o:interpret}, and a case with a courtroom in it can be {o:review}.',
       'A case is {o:review} only if someone harmed by a law says that it breaks the Constitution. "Unfair" alone is not enough, and neither is a right mentioned in passing.',
       'When nobody can point to a law or a right that settles the matter, and the judge is asked to choose, the judge declines and the choice is left to voters and the leaders they elect.'
-    ] },
-
-  { id: 'transfer', kind: 'transfer',
-    h: 'Where would you meet this?',
-    link: 'The last step is yours, and nothing on this card is marked.',
-    ask: [
-      'Knowing the four names is one step. Noticing the moment to use one is a separate step, and only you know where those moments are in your life.',
-      'Pick one of the four and name an occasion of your own: somewhere you read it, heard it or said it. The lines under each name are there to jog your memory.'
-    ],
-    prompts: [
-      { outcome: 'review', occasion: 'A rule in your town or at your work that someone has said is not allowed, or has taken to court.' },
-      { outcome: 'interpret', occasion: 'A rule you have read whose words did not quite fit what you were doing.' },
-      { outcome: 'notlegal', occasion: 'Something you wish were different, a price, a schedule or a service, and that you have wondered whether to take to court.' },
-      { outcome: 'trialrights', occasion: 'The last news item about an arrest or a trial that you read or watched.' }
-    ],
-    places: ['At home', 'At work', 'In the news', 'In my own head'] }
+    ] }
 ]);

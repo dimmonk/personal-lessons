@@ -9,16 +9,6 @@ FC.cases('psychology', 'u4', [
     outcome: 'borderline', route: { D1: ['pattern'], P1: ['clings'] },
     cues: { P1: ['sent forty messages in two days, offered to pay for her flights home early and begged her to stay', 'You are a fake and I never want to see you again', 'She has lost three friends and a job'] } },
 
-  { id: 'pa-tomas', use: 'teach', tier: 'clean', setting: 'work', topic: 'a youth club and its deputies', name: 'The youth club leader',
-    text: "Tomas is thirty-six and runs a youth club. When his deputy said she was thinking of moving to another club, he gave her the keys to his car, offered a pay rise the club could not afford and told her he could not cope without her. When she said she needed time to think, he told the committee she was 'poisonous' and that she had used him. A week later he wrote to her that she was the best person he knew. It has happened with each of his last six assistant principals, and with every girlfriend since he was twenty. The club has lost four of those deputies, and two girlfriends have changed their phone numbers.",
-    outcome: 'borderline', route: { D1: ['pattern'], P1: ['clings'] },
-    cues: { P1: ['told her he could not cope without her', "he told the committee she was 'poisonous' and that she had used him", 'It has happened with each of his last six assistant principals'] },
-    segments: [
-      { text: 'he gave her the keys to his car, offered a pay rise the club could not afford and told her he could not cope without her', note: 'That is Tomas trying to keep her close. The words asked for are what he does to her when she seems about to leave.' },
-      { text: "When she said she needed time to think, he told the committee she was 'poisonous' and that she had used him" },
-      { text: 'The club has lost four of those deputies, and two girlfriends have changed their phone numbers', note: 'That is what it has cost. It is not what he does when someone seems to be leaving.' }
-    ] },
-
   { id: 'pa-pru', use: 'check', tier: 'clean', setting: 'community', topic: 'a book group and a close friend',
     text: "Pru is forty and belongs to a book group. When her closest friend there mentioned that she might not come every month, Pru called her eleven times, brought gifts to the next meeting and said she would be lost without her. When the friend then missed a meeting, Pru told the others that she had never really cared, and the next day sent her a long apology. Pru's sister says it has been the same with every close friend and boyfriend since school. Six people have stopped answering her calls.",
     outcome: 'borderline', route: { D1: ['pattern'], P1: ['clings'] },
@@ -32,16 +22,6 @@ FC.cases('psychology', 'u4', [
     outcome: 'histrionic', route: { D1: ['pattern'], P1: ['center'] },
     cues: { P1: ['She tells every story as if on a stage', 'began a long story about her own terrible week, her voice shaking and her eyes filling, until the room turned back to her', 'she has stopped inviting her to small gatherings'] } },
 
-  { id: 'pa-jasper', use: 'teach', tier: 'clean', setting: 'work', topic: 'an elementary school faculty room', name: 'The teacher with the headache',
-    text: "Jasper is forty-nine and teaches at an elementary school. In every faculty room he has worked in, he has been the one with the biggest stories and the loudest ties. When a new teacher was praised by the principal at a staff meeting, Jasper announced that he had a headache so bad he might have to go home, and then spent ten minutes describing it until the meeting was about him. He was the same in college and in his two earlier schools. Three principals have told him that he takes over meetings, and the new teacher has asked to be moved to another grade.",
-    outcome: 'histrionic', route: { D1: ['pattern'], P1: ['center'] },
-    cues: { P1: ['the biggest stories and the loudest ties', 'spent ten minutes describing it until the meeting was about him', 'the new teacher has asked to be moved to another grade'] },
-    segments: [
-      { text: 'In every faculty room he has worked in, he has been the one with the biggest stories and the loudest ties', note: 'That is Jasper putting himself at the center. It happens whether or not anyone else is getting attention. The words asked for are what he does when attention goes to someone else.' },
-      { text: 'When a new teacher was praised by the principal at a staff meeting, Jasper announced that he had a headache so bad he might have to go home, and then spent ten minutes describing it until the meeting was about him' },
-      { text: 'the new teacher has asked to be moved to another grade', note: 'That is what it has cost. It is not what Jasper does when attention goes to someone else.' }
-    ] },
-
   { id: 'pa-tilly', use: 'check', tier: 'clean', setting: 'community', topic: 'a community choir',
     text: "Tilly is thirty-eight and sings in a community choir. She arrives in a different costume each week and tells everyone about her week at a volume that stops the rehearsal. When the choir applauded a soloist, Tilly clutched her chest and said she felt faint with emotion, and kept it up until the conductor stopped to ask if she was all right. She has been like this in every group she has joined since she was a teenager. The choir has lost two altos who said they could not rehearse around her, and the conductor has asked her three times to keep the drama for the stage.",
     outcome: 'histrionic', route: { D1: ['pattern'], P1: ['center'] },
@@ -54,16 +34,6 @@ FC.cases('psychology', 'u4', [
     text: "Callum is thirty-nine and owns a car dealership. He has sold three customers cars with the odometer rolled back, and told each of them it was 'the best car on the lot'. He borrowed four thousand dollars from his brother-in-law and has never repaid it, saying 'he can afford it'. At his last dealership he forged his boss's signature on a lease, and at school he was expelled for forging notes from his mother. When a friend lost his savings in a scheme Callum had pushed him into, Callum shrugged: 'He should have read the paperwork.' He has been fired twice, and his brother-in-law no longer speaks to him.",
     outcome: 'antisocial', route: { D1: ['pattern'], P1: ['uses'] },
     cues: { P1: ['sold three customers cars with the odometer rolled back', 'He should have read the paperwork', 'his brother-in-law no longer speaks to him'] } },
-
-  { id: 'pa-bridget', use: 'teach', tier: 'clean', setting: 'community', topic: 'an arts society treasurer', name: 'The society treasurer',
-    text: "Bridget is forty-five and treasurer of the local arts society. She kept the proceeds of two raffles, told the committee that the cash boxes had been stolen, and when the police asked, told them the committee had never given her a receipt book. In her last job at a real estate agency she took deposits for apartments that were not hers to rent out. When an elderly member said she had lost her savings in one of them, Bridget said, 'Nobody made her pay, did they?' and went to lunch. She has done much the same since her twenties, in four towns, and the arts society has closed.",
-    outcome: 'antisocial', route: { D1: ['pattern'], P1: ['uses'] },
-    cues: { P1: ['kept the proceeds of two raffles', "Nobody made her pay, did they?", 'the arts society has closed'] },
-    segments: [
-      { text: 'She kept the proceeds of two raffles, told the committee that the cash boxes had been stolen, and when the police asked, told them the committee had never given her a receipt book', note: 'That is rules broken and people lied to. It is part of what you point to, but the words asked for are what she shows about the harm.' },
-      { text: "When an elderly member said she had lost her savings in one of them, Bridget said, 'Nobody made her pay, did they?' and went to lunch" },
-      { text: 'She has done much the same since her twenties, in four towns, and the arts society has closed', note: 'That is the years, the places and what it has cost. It is not what she shows about the harm.' }
-    ] },
 
   { id: 'pa-sven', use: 'check', tier: 'clean', setting: 'learning', topic: 'a stolen exam and an unbuilt kitchen',
     text: "Sven is thirty-four. At nineteen he sold his classmates the answers to an exam he had stolen, and told the school it was another student. At twenty-five he took a deposit from a couple for a kitchen he never built, and at thirty he did the same to a family two towns away. When one of them called him in tears, he said, 'That's business. You should have asked for references.' He has been to court twice, and says each time that the judge 'had it in for him'.",

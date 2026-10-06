@@ -9,18 +9,6 @@ FC.cases('math', 'u1', [
     route: { M1: ['chance'] },
     cues: { M1: ['one top, one pair of pants and one pair of shoes', 'How many different outfits can she make?'] } },
 
-  { id: 'gt-flagged', use: 'teach', tier: 'clean', setting: 'work', topic: 'a machine that flags faulty parts', name: 'The flagged part',
-    text: 'A factory machine flags faulty parts. One part in 500 is faulty. The machine flags 95 of every 100 faulty parts, and also flags 3 of every 100 good parts. A part has just been flagged. How likely is it that the part is really faulty?',
-    route: { M1: ['chance'] },
-    cues: { M1: ['One part in 500 is faulty', 'How likely is it that the part is really faulty?'] },
-    segments: [
-      { text: 'A factory machine flags faulty parts', note: 'That is the setting. It does not say what the problem asks you to work out.' },
-      { text: 'One part in 500 is faulty', note: 'That is one of the chances the problem gives. You are asked for the words that show what is to be worked out, and that is in the last sentence.' },
-      { text: 'The machine flags 95 of every 100 faulty parts, and also flags 3 of every 100 good parts', note: 'Those are two more chances the problem gives. They are facts to work with, and they are not the question.' },
-      { text: 'A part has just been flagged', note: 'That tells you what has happened. The question is what to make of it, and that comes next.' },
-      { text: 'How likely is it that the part is really faulty?' }
-    ] },
-
   { id: 'gt-trains', use: 'check', tier: 'clean', setting: 'travel', topic: 'trains that may be canceled',
     text: 'Three trains connect Eli’s village to the city. Each one is canceled one day in ten, whatever the others do. On any day, how likely is it that at least one of the three is canceled?',
     route: { M1: ['chance'] },
@@ -36,16 +24,6 @@ FC.cases('math', 'u1', [
     text: 'A hiker walks 9 km due north and then 12 km due east. How far in a straight line is she from where she started?',
     route: { M1: ['shape'] },
     cues: { M1: ['9 km due north and then 12 km due east', 'How far in a straight line is she from where she started?'] } },
-
-  { id: 'gt-floor', use: 'teach', tier: 'clean', setting: 'building', topic: 'two floors of the same shape', name: 'The two floors',
-    text: 'Ana’s bathroom floor measures 2 m across and has an area of 5 square meters. The hall floor is exactly the same shape, but 6 m across. What is the area of the hall floor?',
-    route: { M1: ['shape'] },
-    cues: { M1: ['exactly the same shape, but 6 m across', 'What is the area of the hall floor?'] },
-    segments: [
-      { text: 'Ana’s bathroom floor measures 2 m across and has an area of 5 square meters', note: 'That gives the first floor. It is one of the two things the problem compares, and the words that say the two are copies of each other come next.' },
-      { text: 'The hall floor is exactly the same shape, but 6 m across' },
-      { text: 'What is the area of the hall floor?', note: 'That is the question. It says what is to be worked out, an area. But the words that show which shape the problem is about are in the sentence before.' }
-    ] },
 
   { id: 'gt-tanks', use: 'check', tier: 'clean', setting: 'building', topic: 'two water tanks of the same shape',
     text: 'A cube-shaped water tank measures 1 m along each edge. A second tank is exactly the same shape but 3 m along each edge. How many times more water does the larger tank hold?',

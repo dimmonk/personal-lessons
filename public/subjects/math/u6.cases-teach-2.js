@@ -1,5 +1,5 @@
 // Basic Math, Unit Six: stories shown inside cards, part two (the third and fourth kinds: Similar shapes and the Square-cube law,
-// the case on the exception card, and the two cases that check the key's questions).
+// the case on the exception card, and the two cases that check the questions).
 // use: 'teach' = shown in a card with its reasoning; 'check' = asked between cards. Neither may appear in the drill.
 
 FC.cases('math', 'u6', [
@@ -10,17 +10,6 @@ FC.cases('math', 'u6', [
     route: { M1: ['shape'], S1: ['matching'], S2: ['length'] },
     cues: { M1: ['a model of a new footbridge, an exact copy of it at a smaller size', 'How tall is the real tower?'],
             S1: 'a model of a new footbridge, an exact copy of it at a smaller size', S2: 'How tall is the real tower?' } },
-
-  { id: 'm6-wd-trays', use: 'teach', tier: 'clean', setting: 'cooking', topic: 'two baking trays', name: 'The baking trays', outcome: 'similar',
-    text: 'A baker has a small rectangular tray 20 cm wide and 30 cm long, and a large tray of exactly the same shape that is 50 cm wide. How long is the large tray?',
-    route: { M1: ['shape'], S1: ['matching'], S2: ['length'] },
-    cues: { M1: ['a large tray of exactly the same shape that is 50 cm wide', 'How long is the large tray?'],
-            S1: ['a small rectangular tray 20 cm wide and 30 cm long', 'a large tray of exactly the same shape that is 50 cm wide'], S2: 'How long is the large tray?' },
-    segments: [
-      { text: 'A baker has a small rectangular tray 20 cm wide and 30 cm long,', note: 'That gives the small tray, and its numbers matter. But the words that say there is a second thing of the same shape come next.' },
-      { text: 'and a large tray of exactly the same shape that is 50 cm wide.' },
-      { text: 'How long is the large tray?', note: 'That is the question. The second thing of the same shape comes in the words before it.' }
-    ] },
 
   { id: 'm6-wd-flagcopy', use: 'check', tier: 'clean', setting: 'leisure', topic: 'a flag and its badge', outcome: 'similar',
     text: 'A school makes a flag as an exact copy of a badge. The badge is 4 cm wide and 6 cm high, and the flag is 60 cm wide. How high is the flag?',
@@ -51,16 +40,6 @@ FC.cases('math', 'u6', [
     route: { M1: ['shape'], S1: ['matching'], S2: ['room'] },
     cues: { M1: ['A large mat of exactly the same shape measures 3 m along each side', 'How many times more floor does the large mat cover?'],
             S1: 'A large mat of exactly the same shape measures 3 m along each side', S2: 'How many times more floor does the large mat cover?' } },
-
-  { id: 'm6-wd-pots', use: 'teach', tier: 'clean', setting: 'cooking', topic: 'two stock pots', name: 'The stock pots', outcome: 'sqcube',
-    text: 'A cook has a small stock pot and a large stock pot of exactly the same shape. The large pot is 3 times as tall and 3 times as wide as the small one. How many times more soup does the large pot hold?',
-    route: { M1: ['shape'], S1: ['matching'], S2: ['room'] },
-    cues: { M1: ['a large stock pot of exactly the same shape', 'How many times more soup does the large pot hold?'], S1: 'a large stock pot of exactly the same shape', S2: 'How many times more soup does the large pot hold?' },
-    segments: [
-      { text: 'A cook has a small stock pot and a large stock pot of exactly the same shape.', note: 'That gives two things of the same shape. It is a part of what you point to, but the words that say what is asked about them come later.' },
-      { text: 'The large pot is 3 times as tall and 3 times as wide as the small one.', note: 'That says how many times longer the large pot is. It matters in the working, but it does not say what is asked.' },
-      { text: 'How many times more soup does the large pot hold?' }
-    ] },
 
   { id: 'm6-wd-notice', use: 'check', tier: 'clean', setting: 'shopping', topic: 'notice boards', outcome: 'sqcube',
     text: 'A shop sells a notice board 40 cm wide and another notice board of exactly the same shape that is 80 cm wide. A customer asks how many times more cork covers the front of the big board.',

@@ -11,16 +11,6 @@ FC.cases('scams', 'u2', [
     outcome: 'techsupport', route: { D1: ['device'], I1: ['support'] },
     cues: { I1: ['Do not switch it off. Call Support now at (800) 555-0188', 'so that he can see her computer and remove the problem'] } },
 
-  { id: 'dv-shop-till', use: 'teach', tier: 'clean', setting: 'work', topic: 'a message on a store tablet', name: 'The register errors',
-    text: "Gareth runs a small store. A message appears on the store's tablet: 'Your register software has 3 serious errors. Call our repair team at (800) 555-0191 and we will fix them for you today.' He calls. A man says he will fix it from his end, and asks Gareth to install a small program so that he can reach the tablet.",
-    outcome: 'techsupport', route: { D1: ['device'], I1: ['support'] },
-    cues: { I1: ['Call our repair team at (800) 555-0191 and we will fix them for you today', 'asks Gareth to install a small program'] },
-    segments: [
-      { text: 'Gareth runs a small store', note: 'That is background about Gareth. It does not say what was offered to him.' },
-      { text: "A message appears on the store's tablet: 'Your register software has 3 serious errors. Call our repair team at (800) 555-0191 and we will fix them for you today.'" },
-      { text: 'He calls. A man says he will fix it from his end, and asks Gareth to install a small program so that he can reach the tablet', note: 'That is what happens after he calls. It is the request, but the words that show how it came to him are in the message, before the call.' }
-    ] },
-
   { id: 'dv-c-walt-call', use: 'check', tier: 'clean', setting: 'home', topic: 'a call about errors on the computer',
     text: "A woman calls Walt: 'I am from the technical team at your computer's maker. We have detected errors coming from your computer. If you let me see your screen I can fix them now.' Walt has not contacted anyone, and his computer has been working well.",
     outcome: 'techsupport', route: { D1: ['device'], I1: ['support'] },
@@ -55,17 +45,6 @@ FC.cases('scams', 'u2', [
     outcome: 'refundscam', route: { D1: ['device'], I1: ['refund'] },
     cues: { I1: ['we have overcharged you $312', 'so that I can see your screen and send the refund'] } },
 
-  { id: 'dv-bank-protect', use: 'teach', tier: 'clean', setting: 'money', topic: 'a bank caller who wants to watch while a payment is stopped', name: 'The fraud team call',
-    text: "A woman calls Odette: 'This is the fraud team at your bank. Someone is trying to take money from your account tonight. Press Share in the meeting app, and I will watch your account while you cancel the payment.' Odette has not reported anything to her bank.",
-    outcome: 'refundscam', route: { D1: ['device'], I1: ['refund'] },
-    cues: { I1: ['Someone is trying to take money from your account tonight', 'Press Share in the meeting app, and I will watch your account while you cancel the payment'] },
-    segments: [
-      { text: "A woman calls Odette: 'This is the fraud team at your bank.", note: 'That says who the caller claims to be. It does not say why she wants to watch.' },
-      { text: 'Someone is trying to take money from your account tonight.' },
-      { text: 'Press Share in the meeting app, and I will watch your account while you cancel the payment.', note: 'That is what she asks Odette to do. The reason she gives for it is in the sentence before.' },
-      { text: 'Odette has not reported anything to her bank', note: 'That is true, and it shows that Odette did not start the call. It is not the reason the caller gives.' }
-    ] },
-
   { id: 'dv-c-gym-refund', use: 'check', tier: 'clean', setting: 'leisure', topic: 'a double charge at the gym',
     text: "Dev's phone rings: 'This is the billing team at your gym. You were charged twice this month, so $40 is coming back to you. Open the meeting app and press Share so that I can put it through while you watch.' Dev has not asked for anything.",
     outcome: 'refundscam', route: { D1: ['device'], I1: ['refund'] },
@@ -92,12 +71,6 @@ FC.cases('scams', 'u2', [
       { text: 'you were charged twice for it, so I owe you $199 back' },
       { text: 'Let me see your screen and I will send the refund', note: 'That is the request, and it is the same request whichever answer the case gets, so it cannot settle which one it is.' }
     ] },
-
-  /* ---------- the two worked cases: a clean one, then one whose story points the wrong way ---------- */
-  { id: 'dv-w-wage', use: 'teach', tier: 'clean', setting: 'work', topic: 'a pay stub sent as a file', name: 'The pay stub',
-    text: "Ahmed works in a warehouse. An email reaches him from an address he does not know: 'Your pay stub for this month is attached. Open the file to see your pay.' The attachment is called Pay-Stub.pdf.exe. Nobody has called him about it.",
-    outcome: 'malware', route: { D1: ['device'], I1: ['file'] },
-    cues: { D1: 'Open the file to see your pay', I1: ['An email reaches him from an address he does not know', 'Nobody has called him about it'] } },
 
   { id: 'dv-w-form', use: 'teach', tier: 'misleading', setting: 'money', topic: 'a refund form to open while on the phone', name: 'The refund form',
     text: "Mara's phone rings. 'I am from your phone company,' a man says. 'We have charged you twice this year, so I owe you $60. I am emailing you a form now. Open it and run it, and I will be able to see your screen and put the money back while you wait.' An email with a file arrives as he speaks.",

@@ -1,9 +1,9 @@
-// Wealth Preservation, Unit Two: cases shown inside cards, part two (income taxed every year in the wrong account, and
-// a tax bill on a sale nobody needs to make).
+// Wealth Preservation, Unit Two: cases shown inside cards, part two (the sheltered account, income taxed every year in the wrong account,
+// a tax bill on a sale nobody needs to make, and a loss used against a gain).
 
 FC.cases('wealth', 'u2', [
 
-  /* ---------- Two cases that carry a word and no name ---------- */
+  /* ---------- A word: the sheltered account, and a gain ---------- */
   { id: 'e-t-shelter', use: 'teach', tier: 'clean', setting: 'retirement', topic: 'two accounts holding the same fund', name: 'Leila’s two accounts',
     text: "Leila, 45, has $40,000 in an IRA and $40,000 in an ordinary brokerage account. Both hold the same fund, which pays out $1,600 of income a year. In the IRA the law does not tax that income while the money stays in; it taxes what she takes out in retirement. In the brokerage account she pays 25% of it, $400, every year." },
 
@@ -15,17 +15,6 @@ FC.cases('wealth', 'u2', [
     text: "Ana, 44, has $50,000 in an IRA and $50,000 in an ordinary brokerage account. The IRA holds a fund of shares that pays out very little. The brokerage account holds a bond fund that pays out $2,400 of interest a year, and Ana pays 25% tax on it, $600, every year.",
     outcome: 'location', route: { D1: ['erosion'], E1: ['incometax'] },
     cues: { E1: 'The brokerage account holds a bond fund that pays out $2,400 of interest a year, and Ana pays 25% tax on it, $600, every year' } },
-
-  { id: 'e-a-loc', use: 'teach', tier: 'clean', setting: 'retirement', topic: 'a dividend fund in the ordinary account', name: 'Hana and the dividend fund',
-    text: "Hana, 62, has $80,000 in an IRA and $80,000 in an ordinary brokerage account. Her brokerage account holds a fund of shares in companies chosen because they pay generous dividends, which are the part of a company's profits that it pays out to its owners. They come to $3,600 a year, and she pays 15% tax on them, $540, every year. Her IRA holds a fund of shares in young, fast-growing firms that pay out almost nothing.",
-    outcome: 'location', route: { D1: ['erosion'], E1: ['incometax'] },
-    cues: { E1: 'They come to $3,600 a year, and she pays 15% tax on them, $540, every year' },
-    segments: [
-      { text: 'Hana, 62, has $80,000 in an IRA and $80,000 in an ordinary brokerage account.', note: 'That is what she has. It does not show which account holds which fund, and that is what settles this case.' },
-      { text: "Her brokerage account holds a fund of shares in companies chosen because they pay generous dividends, which are the part of a company's profits that it pays out to its owners.", note: 'That says what the fund holds and where. It does not yet say what comes out of the money. The tax is in the words after it.' },
-      { text: 'They come to $3,600 a year, and she pays 15% tax on them, $540, every year' },
-      { text: 'Her IRA holds a fund of shares in young, fast-growing firms that pay out almost nothing.', note: 'That is the other half of the picture: the account where tax would be small. The words that show tax being taken are in the sentences before.' }
-    ] },
 
   { id: 'e-c-loc', use: 'check', tier: 'clean', setting: 'property', topic: 'a rent-income fund taxed annually', name: 'Femi and the office-rent fund',
     text: "Femi, 39, has $60,000 in an ordinary brokerage account, in a fund that owns office buildings and passes the rent on to its owners. It pays out $3,600 a year, and Femi pays 25% tax on it, $900, every year. His 401(k), $40,000, is in a fund of shares that pays out almost nothing.",
@@ -39,16 +28,6 @@ FC.cases('wealth', 'u2', [
     text: "Imogen, 57, bought a fund for $24,000 several years ago, and it is now worth $30,000. Her adviser says it has had a good run and suggests she 'lock in the profit' by selling it all and moving the money into another fund, which is much like the one she holds. Imogen has no bill to pay and no need for the cash. Selling would bring tax of 15% on the $6,000 gain, $900.",
     outcome: 'defer', route: { D1: ['erosion'], E1: ['needlesssale'] },
     cues: { E1: 'by selling it all and moving the money into another fund, which is much like the one she holds. Imogen has no bill to pay and no need for the cash. Selling would bring tax of 15% on the $6,000 gain, $900' } },
-
-  { id: 'e-a-def', use: 'teach', tier: 'clean', setting: 'property', topic: 'selling a plot of land on a colleague’s remark', name: 'Marek and the land',
-    text: "Marek, 54, bought a plot of farmland for $120,000, and it is now worth $170,000. A colleague has told him land is 'overpriced these days', so he is thinking of selling it and putting the money in a fund. The land is a small part of what he owns. He owes nothing and needs no cash, and a farmer’s rent covers the costs. Selling would bring tax of 15% on the $50,000 gain, $7,500.",
-    outcome: 'defer', route: { D1: ['erosion'], E1: ['needlesssale'] },
-    cues: { E1: 'so he is thinking of selling it and putting the money in a fund. The land is a small part of what he owns. He owes nothing and needs no cash, and a farmer’s rent covers the costs. Selling would bring tax of 15% on the $50,000 gain, $7,500' },
-    segments: [
-      { text: 'Marek, 54, bought a plot of farmland for $120,000, and it is now worth $170,000.', note: 'That shows there is {t:gain}. A rise in price is not a problem on its own: it is what the tax would be charged on if he sold.' },
-      { text: "A colleague has told him land is 'overpriced these days'", note: 'That is a remark. It is why he is thinking of selling, but it is not something the money needs.' },
-      { text: 'so he is thinking of selling it and putting the money in a fund. The land is a small part of what he owns. He owes nothing and needs no cash, and a farmer’s rent covers the costs. Selling would bring tax of 15% on the $50,000 gain, $7,500' }
-    ] },
 
   { id: 'e-c-def', use: 'check', tier: 'clean', setting: 'work', topic: 'a newsletter’s advice to bank profits', name: 'Priya and the newsletter',
     text: "Priya, 48, holds $45,000 of shares she bought for $30,000. A newsletter says 'take your profits before the summer', and she is about to sell them all. She needs no cash. The sale would bring tax of 15% on the $15,000 gain, $2,250.",
@@ -73,15 +52,6 @@ FC.cases('wealth', 'u2', [
     text: "Sam, 49, sold some shares in March, which he had held for years, for $5,000 more than he paid for them, so he will owe 15% tax on that gain, $750. In the same brokerage account he still holds a fund he has not sold. He paid $12,000 for it, and it is now worth $9,000.",
     outcome: 'harvest', route: { D1: ['erosion'], E1: ['gainloss'] },
     cues: { E1: 'so he will owe 15% tax on that gain, $750. In the same brokerage account he still holds a fund he has not sold. He paid $12,000 for it, and it is now worth $9,000' } },
-
-  { id: 'e-a-har', use: 'teach', tier: 'clean', setting: 'retirement', topic: 'a retired woman’s October sale and a fallen fund', name: 'Wendy’s October sale',
-    text: "Wendy, 70, sold a fund in October for $8,000 more than she paid, which will bring tax of $1,200 on that gain. Her brokerage account still holds a fund of shares she has not sold. She paid $15,000 for it and it is now worth $11,000.",
-    outcome: 'harvest', route: { D1: ['erosion'], E1: ['gainloss'] },
-    cues: { E1: 'which will bring tax of $1,200 on that gain. Her brokerage account still holds a fund of shares she has not sold. She paid $15,000 for it and it is now worth $11,000' },
-    segments: [
-      { text: 'Wendy, 70, sold a fund in October for $8,000 more than she paid,', note: 'That is the sale, and it is half of what settles the case. The other half is something she still holds, and it comes after the comma.' },
-      { text: 'which will bring tax of $1,200 on that gain. Her brokerage account still holds a fund of shares she has not sold. She paid $15,000 for it and it is now worth $11,000' }
-    ] },
 
   { id: 'e-c-har', use: 'check', tier: 'clean', setting: 'family', topic: 'two funds, one up and one down', name: 'Hugo’s two funds',
     text: "Hugo, 36, has two funds in an ordinary brokerage account. This year he sold one of them for $2,000 more than he paid, so he will owe tax of $300 on that gain. The other, which he has not sold, cost him $5,000 and is now worth $4,000.",

@@ -1,5 +1,5 @@
-// Wealth Preservation, Unit One: cases shown inside cards, part one (the six word cards, the first family, the second family and
-// their look-alike pair and exception).
+// Wealth Preservation, Unit One: cases shown inside cards, part one (the five word cards, the first family, the second family and
+// their look-alike pair).
 // use: 'teach' = shown in a card with its reasoning; 'check' = asked between cards. Neither may appear in the drill.
 // A gate unit's cases carry route: { D1: [option] } and no outcome: the answer to the first question is the name.
 // setting is one of subject.settings (an area of life); topic is the story, and no two cases of one family share a topic.
@@ -11,12 +11,8 @@
 
 FC.cases('wealth', 'u1', [
 
-  /* ---------- The cases that carry the six words (nothing is asked of them) ---------- */
   { id: 'w-t-pot', use: 'teach', tier: 'clean', setting: 'family', topic: 'adding up what Nadia owns', name: 'Nadia’s total',
     text: "Nadia is 52. She has $40,000 in a savings account, $150,000 in her 401(k), a condo worth $220,000 with nothing owed on it, and a one-fifth share of her brother's bakery, which the family values at $60,000. She also earns $5,000 a month." },
-
-  { id: 'w-t-share', use: 'teach', tier: 'clean', setting: 'work', topic: 'a supermarket company and its price', name: 'Ravi and the supermarket',
-    text: "Ravi buys 100 shares in a supermarket company at $4 each, $400 in all. A year later each share sells for $5.20. A year after that, for $3." },
 
   { id: 'w-t-fund', use: 'teach', tier: 'clean', setting: 'retirement', topic: 'one purchase of five hundred companies', name: 'Lena and the fund',
     text: "Lena puts $10,000 into one fund that holds shares in 500 companies. Each year the company that runs the fund takes 0.2% for doing so, $20. In a bad year the price of the fund falls by 20%, because most of what is in it has fallen." },
@@ -30,21 +26,10 @@ FC.cases('wealth', 'u1', [
   { id: 'w-t-claim', use: 'teach', tier: 'clean', setting: 'business', topic: 'a lawyer’s letter after a fall on ice', name: 'Mick’s letter',
     text: "Mick runs a small moving company. A delivery driver slips on ice in his yard and breaks her leg. Her lawyer writes to Mick, saying that the yard was not safe and that he must pay $400,000 for her injury, her lost pay and her pain. Mick's insurance pays up to $250,000 for an accident like this." },
 
-  /* ---------- The first family: something taken out of it every year ---------- */
   { id: 'w-fee', use: 'teach', tier: 'clean', setting: 'retirement', topic: 'a 401(k) fund’s yearly charge', name: 'Colin and the 401(k)',
     text: "Colin is 54. He has $200,000 in a fund in his 401(k), and for twenty years he has never read the yearly statement. This year he reads it and finds that the fund takes 1.7% of the money in it every year for running it, whether prices rose or fell.",
     route: { D1: ['erosion'] },
     cues: { D1: 'the fund takes 1.7% of the money in it every year for running it, whether prices rose or fell' } },
-
-  { id: 'w-bondtax', use: 'teach', tier: 'clean', setting: 'home', topic: 'tax on interest, every year', name: 'Marta and the tax bill',
-    text: "Marta, 41, has $60,000 in an ordinary brokerage account, in a fund that pays out $2,400 of interest a year. Every year she pays $528 tax on that interest, and every year the same bill arrives again.",
-    route: { D1: ['erosion'] },
-    cues: { D1: 'Every year she pays $528 tax on that interest' },
-    segments: [
-      { text: 'Marta, 41, has $60,000 in an ordinary brokerage account, in a fund that pays out $2,400 of interest a year.', note: 'That is what she has and what it pays. It tells you how big the money is, and the question asks for what comes out of it.' },
-      { text: 'Every year she pays $528 tax on that interest' },
-      { text: ', and every year the same bill arrives again', note: 'That repeats the point, and it is true. But the words that show what comes out are in the part before the comma.' }
-    ] },
 
   { id: 'w-spendout', use: 'check', tier: 'clean', setting: 'home', topic: 'a yearly sum to live on',
     text: "Hal retired at 65 with $500,000. Every year he takes $25,000 out of it to spend on living, and he is now 69. His statement shows the balance is about the same as the day he retired.",
@@ -58,21 +43,10 @@ FC.cases('wealth', 'u1', [
     reason: { D1: 'The case shows a sum that comes out of the money every year, and what it is for: {cue:D1}. It is a sum Hal spends. The case does not say prices have fallen or that a bill is due on a date, and no one thing is most of what he has.' },
     not: { outcome: 'timing', why: 'The case does not say that prices have fallen, or that a bill falls due on a date. What it shows is a sum that comes out every year.' } },
 
-  /* ---------- The second family: a fall in prices it is not ready for ---------- */
   { id: 'w-couple-fall', use: 'teach', tier: 'clean', setting: 'retirement', topic: 'monthly bills paid by selling shares in a fall', name: 'Pete and Jean',
     text: "Pete and Jean are both 67. Everything they own is $400,000 in shares and funds, and every month they sell about $1,700 of them to pay their bills. They have no cash set aside. This spring prices fell by 30%.",
     route: { D1: ['timing'] },
     cues: { D1: ['every month they sell about $1,700 of them to pay their bills', 'They have no cash set aside', 'This spring prices fell by 30%'] } },
-
-  { id: 'w-fees-due', use: 'teach', tier: 'clean', setting: 'family', topic: 'a tuition bill due in September', name: 'Dana and the college tuition',
-    text: "Dana's daughter starts college in September. The first year's tuition is $28,000, due on September 1, and the money for it is in a fund of shares. In March the fund's price falls by 25%.",
-    route: { D1: ['timing'] },
-    cues: { D1: 'due on September 1, and the money for it is in a fund of shares' },
-    segments: [
-      { text: "Dana's daughter starts college in September. The first year's tuition is $28,000, ", note: 'That tells you what the bill is and how large. The question asks for the words that show when it must be paid, and what the money for it is in.' },
-      { text: 'due on September 1, and the money for it is in a fund of shares' },
-      { text: ". In March the fund's price falls by 25%.", note: 'That is the fall. It is what makes the case hurt, but the words that show what the fall would catch come before it.' }
-    ] },
 
   { id: 'w-drifted', use: 'check', tier: 'clean', setting: 'work', topic: 'a mix that drifted before retirement',
     text: "Greg, 58, chose to keep his $360,000 in 60% shares and 40% bonds. After years of rises it is 78% shares and 22% bonds. He plans to stop work in two years.",
@@ -86,7 +60,6 @@ FC.cases('wealth', 'u1', [
     reason: { D1: 'The case shows a mix that has moved: {cue:D1}. Greg chose 60% in shares and it is now 78%, so a fall would take a bigger share of his money than he chose, and he stops work in two years.' },
     not: { outcome: 'erosion', why: 'Nothing comes out every year, and no charge or tax is mentioned. What it shows is a split that has moved from its plan.' } },
 
-  /* ---------- The look-alike pair: something taken out every year, or a fall in prices ---------- */
   { id: 'w-la-fee', use: 'teach', tier: 'clean', setting: 'retirement', topic: 'an adviser’s yearly charge on a retired couple',
     text: "Greta and Sam are retired and have $300,000. Every December their adviser's firm takes 1.1% of it, $3,300, however the funds did that year.",
     route: { D1: ['erosion'] },
@@ -95,17 +68,5 @@ FC.cases('wealth', 'u1', [
   { id: 'w-la-fall', use: 'teach', tier: 'clean', setting: 'retirement', topic: 'a retired couple selling funds in a fall',
     text: "Greta and Sam are retired and have $300,000. They pay their bills by selling about $1,500 of their funds each month, with nothing set aside in cash, and this year prices are down 25%.",
     route: { D1: ['timing'] },
-    cues: { D1: ['selling about $1,500 of their funds each month, with nothing set aside in cash', 'prices are down 25%'] } },
-
-  /* ---------- The exception: a fall in prices, and a sum that never changed ---------- */
-  { id: 'w-exc-fixedsum', use: 'teach', tier: 'misleading', setting: 'retirement', topic: 'a fixed yearly sum after a long fall', name: 'Carl and Una',
-    also: ['timing'],
-    text: "Carl and Una retired with $800,000 and set themselves $48,000 a year to live on, which was 6% of it. Then prices fell by 40% over two years, and their money is now $480,000. They still take out $48,000 a year, which is now 10% of what is left.",
-    route: { D1: ['erosion'] },
-    cues: { D1: 'They still take out $48,000 a year, which is now 10% of what is left' },
-    segments: [
-      { text: 'Carl and Una retired with $800,000 and set themselves $48,000 a year to live on, which was 6% of it. ', note: 'That is how the sum was set. It is half of what settles the case, and the other half is what has happened to it since.' },
-      { text: 'Then prices fell by 40% over two years, and their money is now $480,000. ', note: 'That is the fall, and it is what makes the case look like a fall in prices. It is not what settles it: the fall explains why the money shrank, and the question is about what comes out.' },
-      { text: 'They still take out $48,000 a year, which is now 10% of what is left' }
-    ] }
+    cues: { D1: ['selling about $1,500 of their funds each month, with nothing set aside in cash', 'prices are down 25%'] } }
 ]);

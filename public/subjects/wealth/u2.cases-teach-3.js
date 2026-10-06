@@ -1,5 +1,5 @@
-// Wealth Preservation, Unit Two: cases shown inside cards, part three (the same sum taken out every year, the last
-// check before the key's question, the two look-alike pairs with nothing to cut back, and the two whole cases).
+// Wealth Preservation, Unit Two: cases shown inside cards, part three (the same sum taken out every year, the two look-alike pairs with
+// nothing to cut back, and the whole case).
 
 FC.cases('wealth', 'u2', [
 
@@ -8,15 +8,6 @@ FC.cases('wealth', 'u2', [
     text: "Hugh retired at 62 with $1,000,000. The pot has grown about 3% a year since. He decided to spend $50,000 a year, which was 5% of it, and he still spends $50,000 a year. Nine years on the pot is worth about $800,000, so the $50,000 is now 6.25% of what is left.",
     outcome: 'burnrate', route: { D1: ['erosion'], E1: ['fixedsum'] },
     cues: { E1: 'He decided to spend $50,000 a year, which was 5% of it, and he still spends $50,000 a year. Nine years on the pot is worth about $800,000, so the $50,000 is now 6.25% of what is left' } },
-
-  { id: 'e-a-burn', use: 'teach', tier: 'clean', setting: 'family', topic: 'a widow’s sum after a roof and a wedding', name: 'Ayesha’s $30,000',
-    text: "Ayesha, 69, a widow, has lived on $30,000 a year from her $600,000 since her husband died six years ago. She has also paid for her son’s wedding and a new roof out of the pot, which is now $450,000. She still takes $30,000 a year, which is now 6.7% of it.",
-    outcome: 'burnrate', route: { D1: ['erosion'], E1: ['fixedsum'] },
-    cues: { E1: 'has lived on $30,000 a year from her $600,000 since her husband died six years ago. She has also paid for her son’s wedding and a new roof out of the pot, which is now $450,000. She still takes $30,000 a year, which is now 6.7% of it' },
-    segments: [
-      { text: 'Ayesha, 69, a widow,', note: 'That says who she is. It does not show what comes out of the money or how it has changed.' },
-      { text: 'has lived on $30,000 a year from her $600,000 since her husband died six years ago. She has also paid for her son’s wedding and a new roof out of the pot, which is now $450,000. She still takes $30,000 a year, which is now 6.7% of it' }
-    ] },
 
   { id: 'e-c-burn', use: 'check', tier: 'clean', setting: 'business', topic: 'a shopkeeper’s sum set when he sold up', name: 'Felix and the sale of his shop',
     text: "Felix, 65, sold his shop at 63 and set himself $28,000 a year to live on, which was 4% of the $700,000 he got. He has never changed the figure. His pot is now $500,000, so the $28,000 is 5.6% of it.",
@@ -28,14 +19,6 @@ FC.cases('wealth', 'u2', [
     ],
     reason: { E1: 'The sum was set when {t:pot} was bigger, and it has not moved: {cue:E1}. The same $28,000 is now 5.6% of a pot that is $200,000 smaller than it was.' },
     not: { outcome: 'nocut', why: 'A sum spent every year is only sound when it is reset as a percentage of what {t:pot} is worth now. Felix set a number of dollars and never reset it.' } },
-
-  /* ---------- The last check before the key's question: any of the six answers ---------- */
-  { id: 'e-c-step', use: 'check', tier: 'clean', setting: 'home', topic: 'a bank’s two layers of charges', name: 'Yuki and her bank',
-    text: "Yuki, 41, has $140,000 in funds her bank's adviser picked. The funds take 1.4% a year, and the bank adds 0.6% a year for choosing them. The bank has done nothing else for her. Index funds that follow published lists charge about 0.1% a year.",
-    outcome: 'feecore', route: { D1: ['erosion'], E1: ['picking'] },
-    cues: { E1: 'The funds take 1.4% a year, and the bank adds 0.6% a year for choosing them. The bank has done nothing else for her' },
-    reason: { E1: 'Two charges, 2% together, are taken from {t:pot} every year, and the case says what they pay for: {cue:E1}. Choosing is the one job named, and {t:indexfund} would do without it for about 0.1%.' },
-    not: { outcome: 'nocut', why: 'No work that would not otherwise get done is shown, and the charge is a percentage of the money, not a set price. Both of the things that {o:nocut} needs are missing.' } },
 
   /* ---------- The look-alike pair: income investments in the taxed account, and in the sheltered one ---------- */
   { id: 'e-l-nocut-a', use: 'teach', tier: 'clean', setting: 'family', topic: 'a brother’s bond fund in the ordinary account', name: 'Ravi and his bond fund',
@@ -59,13 +42,7 @@ FC.cases('wealth', 'u2', [
     outcome: 'nocut', route: { D1: ['erosion'], E1: ['nomore'] },
     cues: { E1: 'Each January she works out 4% of what her pot is worth that day. This January it is $840,000, so she takes $33,600 and cuts her vacation budget' } },
 
-  /* ---------- Two whole cases, run from the first question ---------- */
-  { id: 'e-w-marit', use: 'teach', tier: 'clean', setting: 'home', topic: 'a rented-homes fund in the ordinary account', name: 'Marit and the two accounts',
-    text: "Marit, 38, has $30,000 in an IRA and $30,000 in an ordinary brokerage account. In the brokerage account she keeps a fund that owns rented homes and passes the rent on to its owners. It pays out $1,800 a year, and she pays 25% tax on it, $450, every year. The IRA holds a fund of shares that pays out almost nothing. Both funds charge very little, and she has sold nothing.",
-    outcome: 'location', route: { D1: ['erosion'], E1: ['incometax'] },
-    cues: { D1: 'she pays 25% tax on it, $450, every year',
-            E1: 'a fund that owns rented homes and passes the rent on to its owners. It pays out $1,800 a year, and she pays 25% tax on it, $450, every year. The IRA holds a fund of shares that pays out almost nothing' } },
-
+  /* ---------- A whole case, run from the first question ---------- */
   { id: 'e-w-rui', use: 'teach', tier: 'misleading', setting: 'business', topic: 'a large flat price for a long list of work', name: 'Rui and the loud remark',
     text: "Rui, 60, has $700,000. He pays his planner $8,400 a year, a flat sum agreed for three years at a time, and a friend told him last week, 'That is 1.2% a year. You are being robbed.' For the $8,400 the planner prepares Rui's and his wife's tax returns, runs their spending plan, and has spent this year sorting out the papers of Rui's late mother, which Rui says he could not have done alone. The planner takes no commission, and the money is in index funds.",
     outcome: 'nocut', route: { D1: ['erosion'], E1: ['nomore'] },

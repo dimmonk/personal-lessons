@@ -1,11 +1,6 @@
-// Psychology, Unit Two: drill cases for stage four (the whole route, no help). Two or more for each name.
-// Every question is asked here, starting with the first question of the key, so every case carries marked words
-// and a reason for that question too (D1). echo names a teaching case whose story this one resembles while its
-// name differs: the feedback says so, which is how the "does it look like a case you know?" second look is practiced.
-// also lists answers the case shows as well as its own, which lose to its own by the key's tie-break (yieldsTo).
+// Psychology, Unit Two: drill cases for the route stage (the whole route, no help).
 
 FC.cases('psychology', 'u2', [
-
   /* ---------- Clean ---------- */
   { id: 'payroll', use: 'drill', tier: 'clean', setting: 'work', topic: 'a payroll system',
     text: "A software firm has spent eighteen months building its own payroll system. A tested system from another company would now cost less each year than fixing the faults in theirs. 'After eighteen months of work we are not throwing this away,' the owner says, and he hires another developer.",
@@ -65,7 +60,7 @@ FC.cases('psychology', 'u2', [
               R1: 'Nora did something that does not fit what she used to say: she hired a cleaner. Her new view is a reason given afterward for why that is fine: {cue:R1}.' },
     not: { outcome: 'fair', why: 'Her view did change, which is what {o:fair} can look like. But nothing came between the old view and the new one except that she hired a cleaner. No new fact about cleaners arrived.' } },
 
-  { id: 'diet', use: 'drill', tier: 'misleading', setting: 'health', topic: 'studies about a diet', echo: 'vic-stress',
+  { id: 'diet', use: 'drill', tier: 'misleading', setting: 'health', topic: 'studies about a diet',
     text: "Arun has been on a low-carbohydrate diet for a year. He reads three studies that favor it closely and with pleasure. He dismisses a fourth, which goes against it, as 'paid for by the food industry', without checking who paid for the other three.",
     outcome: 'confbias', route: { D1: ['reasoning'], R1: ['scrutiny'] },
     cues: { D1: 'He dismisses a fourth, which goes against it', R1: 'without checking who paid for the other three' },
@@ -88,13 +83,5 @@ FC.cases('psychology', 'u2', [
             R1: ['Before the tests he wrote down what result would make him stay with the more expensive one', 'The cheaper samples passed every test, and he switched'] },
     reason: { D1: 'One person is reaching a choice of his own, and the case shows how he went about it. It starts from what he hoped: {cue:D1}.',
               R1: 'The search came before the answer, and it could have gone against him: {cue:R1}. The facts got the same test whichever way they pointed, and his plan went where they pointed.' },
-    not: { outcome: 'motivated', why: 'He ended up where he hoped to, which is what {o:motivated} can look like. But no answer was chosen before the search began. He set the test up so that it could have come out the other way.' } },
-
-  { id: 'marathon', use: 'drill', tier: 'misleading', setting: 'health', topic: 'a marathon and an injured knee', echo: 'longrun',
-    text: "Kit has told his running club all year that he listens to his body. Six months into training for a marathon, a physical therapist tells him that running on his injured knee next week could put him out for a year. 'Six months of 5 a.m. starts,' he writes in the club chat. 'I'm not letting that go for nothing. I'm running.'",
-    outcome: 'sunkcost', route: { D1: ['reasoning'], R1: ['backward'] },
-    cues: { D1: 'he writes in the club chat', R1: 'Six months of 5 a.m. starts' },
-    reason: { D1: 'One person is giving his reason for a choice of his own: {cue:D1}.',
-              R1: 'A next step is still to be decided, run or rest, and the reason Kit gives for running is {cue:R1}: the training already done. What the physical therapist says about the next step plays no part.' },
-    not: { outcome: 'dissonance', why: 'Kit says one thing to his club and is about to do another, so it can look like an excuse. But his reason does not say that something he did is fine. It gives what is already spent as the reason for what he does next.' } }
+    not: { outcome: 'motivated', why: 'He ended up where he hoped to, which is what {o:motivated} can look like. But no answer was chosen before the search began. He set the test up so that it could have come out the other way.' } }
 ]);

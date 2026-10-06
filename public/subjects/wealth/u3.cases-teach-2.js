@@ -1,83 +1,8 @@
-// Wealth Preservation, Unit Three: cases shown inside cards, part two (a business the person runs, the one that is already made
-// safe, and a claim bigger than the insurance). Field guide: see u3.cases-teach-1.js.
+// Wealth Preservation, Unit Three: cases shown inside cards, part two (claims, properties in one name, a loan, the two exceptions, the check on the question, and the whole case). Field guide: u3.cases-teach-1.js.
+// Every case carries its full route (the first question, then this unit's one question). cues[STEP] is the exact phrase in the text
+// that decides that step; segments are the tappable pieces for "tap the words" prompts, and note is shown if that piece is tapped in error.
 
 FC.cases('wealth', 'u3', [
-
-  /* ---------- The word "the three supports" (no name is asked of this case) ---------- */
-  { id: 'w3-h-t-supports', use: 'teach', tier: 'clean', setting: 'business', topic: 'a printing firm with every support', name: 'Lucía’s printing firm',
-    text: "Lucía, 50, runs the printing firm her father started. It is worth $900,000. Her other money is $360,000: $270,000 in funds that hold thousands of companies, and $90,000 in savings. She and her family spend $30,000 a year. The loan on her house is secured on the house, and no bank holds her shares in the firm as security." },
-
-  /* ---------- Put the three supports in place ---------- */
-  { id: 'w3-h-sup-1', use: 'teach', tier: 'clean', setting: 'business', topic: 'a roofing firm and a truck loan', name: 'Femi and the roofing firm',
-    text: "Femi, 46, runs the roofing firm he started twenty years ago. It is worth $480,000, which is most of the $560,000 he owns. The other $80,000 is a van worth $66,000 and $14,000 in a savings account. His family spends $36,000 a year. Two years ago he borrowed $90,000 to buy a truck, and the bank holds his shares in the firm as security.",
-    outcome: 'supports', route: { D1: ['shock'], S1: ['ownrun'] },
-    cues: { D1: 'It is worth $480,000, which is most of the $560,000 he owns',
-            S1: ['The other $80,000 is a van worth $66,000 and $14,000 in a savings account', 'His family spends $36,000 a year', 'the bank holds his shares in the firm as security'] } },
-
-  { id: 'w3-h-sup-2', use: 'teach', tier: 'clean', setting: 'health', topic: 'a vet practice with one other holding', name: 'Naomi and the vet practice',
-    text: "Naomi, 52, owns and runs a veterinary practice worth $620,000, which is most of the $910,000 she owns. Her household spends $30,000 a year, and $90,000 of her savings is set aside to cover it, which is three years. She has no loan against the practice. The rest, $200,000, is a part-share in a pet-food factory that sells mostly to vets.",
-    outcome: 'supports', route: { D1: ['shock'], S1: ['ownrun'] },
-    cues: { D1: 'worth $620,000, which is most of the $910,000 she owns',
-            S1: 'The rest, $200,000, is a part-share in a pet-food factory that sells mostly to vets' },
-    segments: [
-      { text: 'Naomi, 52, owns and runs a veterinary practice worth $620,000, which is most of the $910,000 she owns.',
-        note: 'That shows she runs a business and that it is most of what she owns. The words asked for show what is missing around it.' },
-      { text: ' Her household spends $30,000 a year, and $90,000 of her savings is set aside to cover it, which is three years. She has no loan against the practice.',
-        note: 'Those are two of {t:threesupports}, and both are in place. The words asked for show the third, which is not.' },
-      { text: ' The rest, $200,000, is a part-share in a pet-food factory that sells mostly to vets.' }
-    ] },
-
-  { id: 'w3-h-sup-chk', use: 'check', tier: 'clean', setting: 'work', topic: 'a garage with little set aside', name: 'Dmitri and the garage',
-    text: "Dmitri, 63, owns and runs the garage he opened, worth $550,000, which is most of the $600,000 he owns. He has $5,000 in the bank, and the rest, $45,000, is tools and a van. His household spends $28,000 a year. He has never borrowed against the garage.",
-    outcome: 'supports', route: { D1: ['shock'], S1: ['ownrun'] },
-    cues: { S1: ['He has $5,000 in the bank, and the rest, $45,000, is tools and a van', 'His household spends $28,000 a year'] },
-    reason: { S1: 'Dmitri runs the garage, and it is most of what he owns. The other money is not spread across investments, and the bank balance covers about two months of his spending: {cue:S1}. At least one of {t:threesupports} is missing, which is all this answer needs, even though the loan support is in place.' } },
-
-  { id: 'w3-h-la-ds-a', use: 'teach', tier: 'clean', setting: 'business', topic: 'a moving company handed to a manager', name: 'Tariq, no longer running it',
-    text: "Tariq, 56, founded a moving company. Last year he handed the day-to-day running to a new manager, and he now takes no part in running it. His shares in it are worth $500,000, which is most of what he has, and his other money is $40,000 in savings. Nothing stops him selling them.",
-    outcome: 'diversify', route: { D1: ['shock'], S1: ['freeheld'] },
-    cues: { S1: ['he now takes no part in running it', 'Nothing stops him selling them'] } },
-
-  { id: 'w3-h-la-ds-b', use: 'teach', tier: 'clean', setting: 'business', topic: 'a moving company still run by its founder', name: 'Tariq, still running it',
-    text: "Tariq, 56, founded a moving company and still runs it every day. It is worth $500,000, which is most of what he has. His other money is $40,000 in savings, and his household spends $35,000 a year.",
-    outcome: 'supports', route: { D1: ['shock'], S1: ['ownrun'] },
-    cues: { S1: ['still runs it every day', 'His other money is $40,000 in savings, and his household spends $35,000 a year'] } },
-
-  /* ---------- Safe as it stands ---------- */
-  { id: 'w3-h-saf-1', use: 'teach', tier: 'clean', setting: 'family', topic: 'a family lumberyard with every support', name: 'Hugo and the lumberyard',
-    text: "Hugo, 57, runs the family lumberyard, worth $800,000, which is most of the $1,150,000 he owns. He has $250,000 in funds that hold thousands of companies and $100,000 in savings. His household spends $33,000 a year, so the savings cover three years. No bank holds his shares in the yard as security.",
-    outcome: 'safe', route: { D1: ['shock'], S1: ['madesafe'] },
-    cues: { D1: 'worth $800,000, which is most of the $1,150,000 he owns',
-            S1: ['$250,000 in funds that hold thousands of companies', 'the savings cover three years', 'No bank holds his shares in the yard as security'] } },
-
-  { id: 'w3-h-saf-2', use: 'teach', tier: 'clean', setting: 'home', topic: 'a condo with a small fixed loan', name: 'Beatriz and the condo',
-    text: "Beatriz, 44, owns a condo worth $400,000, which is most of what she owns apart from a $60,000 401(k). She owes $150,000 on it. The rate is fixed for fifteen years, and the bank cannot demand the money back as long as she pays the $900 due each month. Her pay after tax is $3,100 a month.",
-    outcome: 'safe', route: { D1: ['shock'], S1: ['madesafe'] },
-    cues: { D1: 'owns a condo worth $400,000, which is most of what she owns apart from a $60,000 401(k)',
-            S1: ['The rate is fixed for fifteen years', 'the bank cannot demand the money back as long as she pays the $900 due each month'] },
-    segments: [
-      { text: 'Beatriz, 44, owns a condo worth $400,000, which is most of what she owns apart from a $60,000 401(k). She owes $150,000 on it.',
-        note: 'That shows how much rests on one condo and how much is owed on it. It does not yet show whether the loan could be used against her.' },
-      { text: ' The rate is fixed for fifteen years, and the bank cannot demand the money back as long as she pays the $900 due each month.' },
-      { text: ' Her pay after tax is $3,100 a month.',
-        note: 'That shows she can afford the payments. The words asked for are about the terms of the loan itself.' }
-    ] },
-
-  { id: 'w3-h-saf-chk', use: 'check', tier: 'clean', setting: 'health', topic: 'a pharmacy with reserves', name: 'Wanjiru and the pharmacy',
-    text: "Wanjiru, 49, owns and runs a pharmacy worth $400,000, which is most of the $700,000 she owns. $210,000 is in funds that hold thousands of companies and $90,000 is in savings, and her household spends $30,000 a year. The pharmacy has no loans.",
-    outcome: 'safe', route: { D1: ['shock'], S1: ['madesafe'] },
-    cues: { S1: ['$210,000 is in funds that hold thousands of companies and $90,000 is in savings', 'her household spends $30,000 a year', 'The pharmacy has no loans'] },
-    reason: { S1: 'Wanjiru runs a business that is most of what she owns, which is the situation of the answer before this one. The difference is in the words: {cue:S1}. The savings are three years of spending, the rest is spread, and nothing is borrowed against the pharmacy. All three supports are in place, so nothing is missing.' } },
-
-  { id: 'w3-h-la-ss-a', use: 'teach', tier: 'clean', setting: 'work', topic: 'a bakery with no loan', name: 'Alma, no loan',
-    text: "Alma, 48, runs the bakery she opened, worth $500,000, which is most of the $800,000 she owns. $150,000 is in funds that hold thousands of companies and $150,000 in savings, and her household spends $40,000 a year, which is more than three years. No bank holds her shares in the bakery as security.",
-    outcome: 'safe', route: { D1: ['shock'], S1: ['madesafe'] },
-    cues: { S1: ['No bank holds her shares in the bakery as security'] } },
-
-  { id: 'w3-h-la-ss-b', use: 'teach', tier: 'clean', setting: 'work', topic: 'a bakery with a loan on its shares', name: 'Alma, a loan on the shares',
-    text: "Alma, 48, runs the bakery she opened, worth $500,000, which is most of the $800,000 she owns. $150,000 is in funds that hold thousands of companies and $150,000 in savings, and her household spends $40,000 a year, which is more than three years. Last year she borrowed $120,000 for new ovens, and the bank holds her shares in the bakery as security.",
-    outcome: 'supports', route: { D1: ['shock'], S1: ['ownrun'] },
-    cues: { S1: ['the bank holds her shares in the bakery as security'] } },
 
   /* ---------- Insure the big loss ---------- */
   { id: 'w3-h-ins-1', use: 'teach', tier: 'clean', setting: 'home', topic: 'a swimming pool and a cap on coverage', name: 'Hari and the pool',
@@ -86,34 +11,84 @@ FC.cases('wealth', 'u3', [
     cues: { D1: 'a serious injury to a child can lead to a demand for $2,000,000 or more',
             S1: ['His home insurance pays up to $500,000 if someone is hurt on his property', 'a serious injury to a child can lead to a demand for $2,000,000 or more'] } },
 
-  { id: 'w3-h-ins-2', use: 'teach', tier: 'clean', setting: 'family', topic: 'a teenage driver', name: 'Alicia and her son’s car',
-    text: "Alicia, 47, has just added her seventeen-year-old son to her car insurance. The policy pays up to $1,000,000 if the car harms other people. A lawyer she knows says that a crash that leaves a young person unable to work for life can lead to a demand for $5,000,000. Alicia owns a house worth $500,000 and has $150,000 in savings.",
-    outcome: 'insure', route: { D1: ['shock'], S1: ['bigclaim'] },
-    cues: { D1: 'can lead to a demand for $5,000,000',
-            S1: ['The policy pays up to $1,000,000 if the car harms other people', 'a crash that leaves a young person unable to work for life can lead to a demand for $5,000,000'] },
-    segments: [
-      { text: 'Alicia, 47, has just added her seventeen-year-old son to her car insurance.',
-        note: 'That is what could bring {t:claim}. It does not show how big {t:claim} could be next to the insurance.' },
-      { text: ' The policy pays up to $1,000,000 if the car harms other people.',
-        note: 'That is the insurance she holds. It is only half of the comparison the question asks for.' },
-      { text: ' A lawyer she knows says that a crash that leaves a young person unable to work for life can lead to a demand for $5,000,000.' },
-      { text: ' Alicia owns a house worth $500,000 and has $150,000 in savings.',
-        note: 'That is what {t:claim} could reach. It is not the words that show how big the claim could be.' }
-    ] },
-
   { id: 'w3-h-ins-chk', use: 'check', tier: 'clean', setting: 'property', topic: 'a vacation cabin and steep stairs', name: 'Rob and the vacation cabin',
     text: "Rob, 60, owns a vacation cabin that he rents to guests, worth $450,000, and has $200,000 in savings. His landlord’s insurance pays up to $400,000 if a guest is hurt. A guest who falls on the steep stairs and cannot work again could ask for $1,800,000.",
     outcome: 'insure', route: { D1: ['shock'], S1: ['bigclaim'] },
     cues: { S1: ['His landlord’s insurance pays up to $400,000 if a guest is hurt', 'A guest who falls on the steep stairs and cannot work again could ask for $1,800,000'] },
     reason: { S1: 'The cabin could bring {t:claim}, and the insurance has a limit: {cue:S1}. $1,800,000 less $400,000 leaves $1,400,000, more than the $650,000 Rob owns in all.' } },
 
-  { id: 'w3-h-la-is-a', use: 'teach', tier: 'clean', setting: 'home', topic: 'a dog and a low coverage limit', name: 'Dana, coverage of $250,000',
-    text: "Dana, 51, owns a house worth $650,000 and a large dog that visitors often meet. Her home insurance pays up to $250,000 if the dog hurts someone, and a lawyer says a serious bite to a child’s face can lead to a demand for $1,500,000.",
-    outcome: 'insure', route: { D1: ['shock'], S1: ['bigclaim'] },
-    cues: { S1: ['pays up to $250,000 if the dog hurts someone', 'can lead to a demand for $1,500,000'] } },
+  /* ---------- Separate companies for each property or business ---------- */
+  { id: 'w3-h-t-company', use: 'teach', tier: 'clean', setting: 'property', topic: 'two rental houses, one owned through a company', name: 'Ana and Bo',
+    text: "Ana and Bo each own a small house worth $250,000 that they rent out, and each also lives in a home worth $500,000. Ana owns her rental in her own name. Bo’s rental belongs to an LLC he set up, which has $20,000 in its bank account; Bo owns the LLC, and his home is in his own name. In each rental a tenant is badly hurt in a fall on the stairs. Each tenant wins $400,000 from the owner, and each owner’s insurance pays $100,000 of it, which leaves $300,000 to find." },
 
-  { id: 'w3-h-la-is-b', use: 'teach', tier: 'clean', setting: 'home', topic: 'a dog and a high coverage limit', name: 'Dana, coverage of $2,500,000',
-    text: "Dana, 51, owns a house worth $650,000 and a large dog that visitors often meet. Her home insurance pays up to $2,500,000 if the dog hurts someone, and a lawyer says a serious bite to a child’s face can lead to a demand for $1,500,000.",
+  { id: 'w3-h-ent-1', use: 'teach', tier: 'clean', setting: 'property', topic: 'six rental houses, a store and a home in one name', name: 'Chioma’s properties',
+    text: "Chioma, 56, owns six houses that she rents out, a store and her own home. Every one of them is in her own name, and so is $60,000 in savings. The rental houses are worth $200,000 each, the store $250,000 and the home $390,000, which is $1,900,000 in all. Each rental house has a tenant, and so does the store, and any of them could be hurt on the premises and bring a claim.",
+    outcome: 'entity', route: { D1: ['shock'], S1: ['onename'] },
+    cues: { D1: 'Every one of them is in her own name, and so is $60,000 in savings',
+            S1: ['Every one of them is in her own name', 'any of them could be hurt on the premises and bring a claim'] } },
+
+  { id: 'w3-h-ent-chk', use: 'check', tier: 'clean', setting: 'retirement', topic: 'rented houses, all in one name', name: 'Gil and the student houses',
+    text: "Gil, 68, retired from construction. He owns four houses that he rents out to students, and the house he lives in, all in his own name. Together they are worth $1,300,000, and any tenant who is badly hurt could bring a claim against him.",
+    outcome: 'entity', route: { D1: ['shock'], S1: ['onename'] },
+    cues: { S1: ['all in his own name', 'any tenant who is badly hurt could bring a claim against him'] },
+    reason: { S1: 'Gil owns several properties, and every one is in his own name, with {t:claim} possible on each: {cue:S1}. A demand on one house could reach the other three and his own home, $1,300,000 in all. The case does not say what any insurance pays, so the comparison of {t:claim} with the insurance is not what the case shows.' } },
+
+  { id: 'w3-h-exc-ins', use: 'teach', tier: 'misleading', setting: 'property', topic: 'five rental houses and a dangerous stair', name: 'Kwame and the old stairs', also: ['onename'],
+    text: "Kwame, 59, owns five rental houses and the house he lives in, all in his own name, worth $1,400,000 together. A lawyer who looked at the stairs in the oldest rental says that a tenant badly hurt in a fall there could win $2,000,000. Kwame’s landlord insurance pays up to $300,000 on any one claim.",
+    outcome: 'insure', route: { D1: ['shock'], S1: ['bigclaim'] },
+    cues: { D1: 'could win $2,000,000',
+            S1: ['a tenant badly hurt in a fall there could win $2,000,000', 'Kwame’s landlord insurance pays up to $300,000 on any one claim'] },
+    segments: [
+      { text: 'Kwame, 59, owns five rental houses and the house he lives in, all in his own name, worth $1,400,000 together.',
+        note: 'That is what makes the case look like several properties in one name, and it is true. The question is what could take most of it, and {t:claim} that the insurance cannot meet comes first.' },
+      { text: ' A lawyer who looked at the stairs in the oldest rental says that a tenant badly hurt in a fall there could win $2,000,000.' },
+      { text: ' Kwame’s landlord insurance pays up to $300,000 on any one claim.',
+        note: 'That is the other half of the comparison, and it matters only because of the sentence before it. The words that settle the case are the ones that show the size of the claim.' }
+    ] },
+
+  /* ---------- Borrow modestly, on safe terms ---------- */
+  { id: 'w3-h-del-1', use: 'teach', tier: 'clean', setting: 'work', topic: 'shares bought with a margin loan', name: 'Ian and the margin loan',
+    text: "Ian, 54, owns shares worth $600,000. He owes his brokerage $350,000 on a margin loan he used to buy them, and the shares are the brokerage’s security for it. The contract says that if the loan ever becomes more than 60% of what the shares are worth, Ian must pay in more money within two days, or the brokerage will sell some of his shares.",
+    outcome: 'deleverage', route: { D1: ['shock'], S1: ['riskyloan'] },
+    cues: { D1: 'or the brokerage will sell some of his shares',
+            S1: 'if the loan ever becomes more than 60% of what the shares are worth, Ian must pay in more money within two days, or the brokerage will sell some of his shares' } },
+
+  { id: 'w3-h-del-chk', use: 'check', tier: 'clean', setting: 'retirement', topic: 'a loan due in full after five years', name: 'Maribel and the five-year loan',
+    text: "Maribel, 66, owns a condo worth $500,000 and a $60,000 IRA. She owes $420,000 on the condo. The bank can change the rate every six months, and the loan must be repaid in full at the end of five years.",
+    outcome: 'deleverage', route: { D1: ['shock'], S1: ['riskyloan'] },
+    cues: { S1: ['The bank can change the rate every six months'] },
+    segments: [
+      { text: 'Maribel, 66, owns a condo worth $500,000 and a $60,000 IRA. She owes $420,000 on the condo.',
+        note: 'That shows the size of the loan, 84% of the condo. The words asked for show the bank’s power to change the terms.' },
+      { text: ' The bank can change the rate every six months' },
+      { text: ', and the loan must be repaid in full at the end of five years.',
+        note: 'That is a second way the lender could cause trouble. The words asked for are the ones about the rate.' }
+    ],
+    reason: { S1: 'The bank can change the rate every six months, so the cost of the loan can jump, and the loan is large against the condo: $420,000 out of $500,000 is 84%. Either is enough to point to.' } },
+
+  { id: 'w3-h-exc-sup', use: 'teach', tier: 'misleading', setting: 'business', topic: 'tire shops and a demand clause', name: 'Reza and the tire shops', also: ['riskyloan'],
+    text: "Reza, 52, runs a small chain of tire shops worth $900,000, which is most of the $1,100,000 he owns. Two years ago he borrowed $200,000 from a bank to open a new shop. The loan agreement says the bank can demand the money back if sales in any three months fall below $60,000, and that the bank may take his shares in the company if he cannot repay it. His savings are $15,000 and his household spends $36,000 a year; the rest of what he owns is $185,000 in funds that hold thousands of companies.",
+    outcome: 'supports', route: { D1: ['shock'], S1: ['ownrun'] },
+    cues: { D1: 'worth $900,000, which is most of the $1,100,000 he owns',
+            S1: ['runs a small chain of tire shops', 'the bank may take his shares in the company if he cannot repay it', 'His savings are $15,000 and his household spends $36,000 a year'] },
+    segments: [
+      { text: 'Reza, 52, runs a small chain of tire shops worth $900,000, which is most of the $1,100,000 he owns.' },
+      { text: ' Two years ago he borrowed $200,000 from a bank to open a new shop. The loan agreement says the bank can demand the money back if sales in any three months fall below $60,000, and that the bank may take his shares in the company if he cannot repay it.',
+        note: 'That is what makes the case look like a loan that the lender could use to force a sale, and it is true. But the loan is against his shares in a business he runs, and that is one of {t:threesupports}, so it belongs to this answer.' },
+      { text: ' His savings are $15,000 and his household spends $36,000 a year; the rest of what he owns is $185,000 in funds that hold thousands of companies.',
+        note: 'That shows a second support that is missing: $15,000 covers about five months. It is not what settles which answer this is.' }
+    ] },
+
+  /* ---------- The check on the question, and the whole case ---------- */
+  { id: 'w3-h-q-chk', use: 'check', tier: 'clean', setting: 'property', topic: 'four rental condos, each in a company of its own', name: 'Rosario and the four companies',
+    text: "Rosario, 54, owns four condos that she rents out, each in an LLC of its own that she owns, and the house she lives in is in her own name. Each condo is worth $220,000, her house is worth $450,000, and she has $110,000 in savings. A tenant who is hurt in one condo can claim only against the LLC that owns that condo.",
     outcome: 'safe', route: { D1: ['shock'], S1: ['madesafe'] },
-    cues: { S1: ['pays up to $2,500,000 if the dog hurts someone', 'can lead to a demand for $1,500,000'] } }
+    cues: { S1: ['each in an LLC of its own that she owns', 'A tenant who is hurt in one condo can claim only against the LLC that owns that condo'] },
+    reason: { S1: 'Several properties could each bring {t:claim}, which is why the first question gave its answer, but the case shows them already held apart: {cue:S1}. A demand on one condo could reach $220,000 and no more, not her house or her savings. Nothing is left to put right.' } },
+
+  { id: 'w3-h-wk-2', use: 'teach', tier: 'misleading', setting: 'business', topic: 'a brewery and a friend’s warning', name: 'Greta and the brewery',
+    text: "Greta, 62, runs the family brewery, worth $1,400,000, which is most of the $2,000,000 she owns. This morning a friend told her: “Your whole life is in one place. A fire or a bad year, and you are finished. Sell half and buy funds.” Greta has $420,000 in funds that hold thousands of companies, and $180,000 in savings, which is six years of the $30,000 her household spends. No bank holds her shares in the brewery as security.",
+    outcome: 'safe', route: { D1: ['shock'], S1: ['madesafe'] },
+    cues: { D1: 'worth $1,400,000, which is most of the $2,000,000 she owns',
+            S1: ['$420,000 in funds that hold thousands of companies', 'which is six years of the $30,000 her household spends', 'No bank holds her shares in the brewery as security'] } }
 ]);

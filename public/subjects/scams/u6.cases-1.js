@@ -8,9 +8,6 @@ FC.cases('scams', 'u6', [
   { id: 'late-money', use: 'teach', tier: 'clean', setting: 'money', topic: 'a payment sent to new bank account details', name: 'Priya’s payment',
     text: "Priya pays her builder’s invoice of $2,000 into the new account named in an email that says the builder has changed banks. An hour later the builder calls about something else and mentions that nothing has changed on his side. Priya’s stomach drops. She thinks: ‘I’m so stupid. I’ll sort it out myself. Perhaps I should wait and see.’ Then she takes her bank card out of her wallet and calls the number printed on the back of it. She says the payment was a scam payment and asks the bank to try to recall it. The bank takes the details, and says it will try but cannot promise that the money will come back." },
 
-  { id: 'late-report', use: 'teach', tier: 'clean', setting: 'relationships', topic: 'a chat deleted out of embarrassment', name: 'Dan’s deleted chat',
-    text: "Dan sends $600 to a ‘safe account’ because a caller who says he is from the bank tells him to. When he understands what has happened, he calls his bank. Then he deletes the whole chat with the caller, because he is ashamed, and tells nobody for three days. When he finally decides to report it, the messages are gone, and all he has is what he remembers of what was said." },
-
   { id: 'late-password', use: 'teach', tier: 'clean', setting: 'home', topic: 'a password typed into a copied page', name: 'Hana’s email password',
     text: "Hana gets a text: ‘Your package is held. Sign in to your email to confirm your address.’ The link opens a page that looks like her email provider’s sign-in page. She types her email address and her password, and the page says ‘Thank you’. That evening she sees that the address of the page was not her provider’s. She uses the same password for her online store and for her gym account." },
 

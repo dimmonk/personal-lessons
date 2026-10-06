@@ -1,75 +1,76 @@
-// Wealth Preservation, Unit Three, part one (second half): the second answer, one holding that the person is not allowed to sell yet,
-// and its look-alike pair with the first. Field guide: see u3.cards-1.js.
+// Wealth Preservation, Unit Three, part one (second half): the three supports, a business the person runs with a support missing,
+// the answer that says it is already safe, and their look-alike pair. Field guide: see u3.cards-1.js.
 
 FC.cards('wealth', 'u3', [
 
-  { id: 'w3-meet-hedge', kind: 'meet', outcome: 'hedge',
-    link: 'The first answer was for shares a person is free to sell. The second is for shares they are not, and it is the first answer’s nearest neighbor: the same shape, with one fact changed.',
-    case: 'w3-h-hdg-1', mark: 'S1',
+  /* ---------- The three supports ---------- */
+  { id: 'w3-term-threesupports', kind: 'term', term: 'threesupports',
+    h: 'What makes it safe to keep most of your money in a business you run',
+    link: 'The next answers are about a business the person runs, and they lean on three things that make it safe to keep so much in one place. Here they are, in a case where all three are there.',
+    case: 'w3-h-t-supports',
+    plain: [
+      'The firm is $900,000 out of $1,260,000, which is 71% of everything Lucía has. If it had a very bad year, a lot of what she owns would go with it. Three things in her case are why she can sleep.',
+      'First, everything else she has is spread over many investments: $270,000 in funds that hold thousands of companies, so a bad year for printing does not become a bad year for the rest of her money.',
+      'Second, several years of spending are held outside the firm. $90,000 in savings against $30,000 a year is three years, the figure used in this unit. If the firm earned nothing for a year or two, she would not have to drain it or sell it at a bad moment.',
+      'Third, no loan is secured on her shares in the firm. A lender that holds shares as security can take them, or force a sale, if payments slip. Her house loan is secured on the house, so nothing the bank does about it touches the firm.',
+      'With all three she can keep most of what she has in a business she knows and runs. One missing is a gap.'
+    ],
+    after: 'From here on, {t:threesupports} means these three things. A business is made safe by all three together.' },
+
+  /* ---------- A business the person runs, with a support missing ---------- */
+  { id: 'w3-meet-supports', kind: 'meet', outcome: 'supports',
+    link: 'The next answer is the other side of Lucía’s case: when one of the three is missing, a business that is most of what someone has stops being a sound choice and becomes a risk.',
+    case: 'w3-h-sup-1', mark: 'S1',
     strip: [
-      'There is one person, Tomasz, with about $450,000: $400,000 in one company’s shares, and $50,000 in savings.',
-      'The shares are most of it: $400,000 out of $450,000 is 89%.',
-      'A rule stops him selling them: staff may not sell their own shares for two years from the day the company sold its shares to the public.',
-      'The case does not say the price is falling. The case is about what he can and cannot do.'
+      'There is one person, Femi, with $560,000: $480,000 in a roofing firm he runs, and $80,000 that is a van worth $66,000 and $14,000 in savings.',
+      'The firm is most of what he owns: $480,000 out of $560,000 is 86%.',
+      'He runs it himself, and he started it.',
+      'Each of the three things from Lucía’s case is missing: nothing else is spread across investments, his savings cover under five months of spending, and a bank holds his shares in the firm as security for a loan.'
     ],
     explain: [
-      'The shape is the one you have just met: 89% of what Tomasz has rests on one company. But the remedy of the last answer is closed to him. He cannot sell a quarter every three months, because for two years he cannot sell at all. Rules of this kind are common. A company that has just sold its shares to the public often tells its staff not to sell for a period, so that a rush of selling does not push the price down. A company that pays part of wages in shares often says the shares are not the employee’s to sell until a set date.',
-      'He cannot spread the risk by selling, so the question becomes how to limit what he could lose while he waits. The tool is a contract bought from a bank or a broker, for a fee. In plain words: the contract lets him sell his shares to the bank at a set price, whatever the market price is, at any time in the next two years. Suppose the price today is $20, and he buys the right to sell at $16 for a fee of $1.60 for each share. On 20,000 shares the fee is $32,000.',
-      'Now see what it does. If the price falls to $8, he can still sell at $16, so his loss is the $4 for each share between $20 and $16, plus the $1.60 fee: $5.60 for each share, or $112,000 on 20,000 shares. Without the contract, a fall to $8 would have cost him $12 for each share, which is $240,000. If the price rises to $30 instead, he does not use the contract and has gained $10 for each share, $200,000, less the $32,000 fee. The loss is capped, most of the gain is kept, and the fee is the price.',
-      'There is a cheaper version. He also agrees to give up gains above a high price, say $28, and is paid for that promise, which pays for most of the fee. Then his loss is capped and so is his gain. Whether to do this is a choice about what he is willing to give up.',
-      'None of this makes the shares safe, and none of it spreads anything. It limits the loss while the rule lasts. When the rule ends, the remedy of {o:diversify} opens up: he can sell on a schedule. So this answer is for the waiting time. One caution: in the US the agreements that stop staff selling after a company first sells its shares to the public usually forbid these contracts too, many employers forbid them at any time, and the tax rules for them are complicated, so the first step is to find out what is allowed and what it costs.'
+      'The rest of his money is a van and a savings account, so nothing is spread: a bad year for roofing hurts the van too. His family spends $36,000 a year, and $14,000 is under five months of that, so a year of no earnings would force him to drain the firm or sell it. And a bank holds his shares as security for the $90,000 truck loan, so if payments slip, a lender could take the shares and decide the future of the firm when he is least able to argue.',
+      'One missing is enough for this answer; Femi has all three missing, which makes the shape easy to see. The fix is to put the three in place, in an order that follows urgency: the loan first, because it is the one a lender can use against him; then the spending reserve, because it buys time; then spreading the rest, because it is the slowest.'
     ],
-    feature: { step: 'S1', option: 'blocked' },
-    name: [
-      'The answer is {a:S1.blocked}, and the name of what to do about it is {o:hedge}. To “cap” a loss is to put a ceiling on it, and “without selling” is the point: the shares stay where they are.',
-      'The name is about the waiting time. It does not say that the company is a bad one.'
-    ] },
+    feature: { step: 'S1', option: 'ownrun' },
+    name: 'The answer is {a:S1.ownrun}, and the name of what to do about it is {o:supports}: build what is missing, and what is to be built is {t:threesupports}. The name says nothing against running a business, or against having most of what you own in it.',
+    act: 'Check each of the three with numbers: savings divided by yearly spending gives the years covered; how much of everything else is spread across funds; any loan that has the business’s shares as security. Deal with that loan first, then build the reserve toward about three years of spending, then put money that comes out of the business into funds that hold many companies. Check again once a year.' },
 
-  { id: 'w3-again-hedge', kind: 'again', outcome: 'hedge',
-    link: 'The last card gave you what to point to: {needs:hedge}. Here is a second case in which the rule comes from a pay plan, not from the company’s first sale of its shares to the public.',
-    first: 'w3-h-hdg-1', second: 'w3-h-hdg-2', step: 'S1',
-    instruction: 'Find what the two cases share. Ignore the difference between software and a hospital group, and ignore how the shares came to the person. Look at one thing only: which words show a rule that stops the person selling?',
-    prompt: { kind: 'phrase', answer: 'she may not sell them until three years later' },
-    shared: [
-      'Tomasz and Priya came to their shares in different ways: Tomasz joined a company early, and Priya is paid part of her wages in shares. Both have one company’s shares that are most of what they have: $400,000 out of $450,000 for Tomasz (89%), and $210,000 out of $260,000 for Priya (81%). And both are held back by a rule: two years for him, and three years from each year’s shares for her.',
-      'The rule does not say that the shares are worth little or that the company is in trouble. It says only that for a set time the owner has no way to sell. That is what {a:S1.blocked} names, and it is why the remedy of the last answer is not open to them. Priya’s rule also takes the shares away if she leaves early, which is one more reason they are hard to deal with.'
-    ] },
+  { id: 'w3-check-supports', kind: 'check', after: 'supports',
+    case: 'w3-h-sup-chk',
+    ask: { type: 'option', step: 'S1', among: ['freeheld', 'blocked', 'ownrun'] } },
 
-  { id: 'w3-portrait-hedge', kind: 'portrait', outcome: 'hedge',
-    link: 'You now know what to point to for {a:S1.blocked}. Here is the rest of the picture.',
-    typical: [
-      'The shares came with the job: an early stake in a company, a plan that pays staff in shares, part of wages paid in shares, a payout in the buyer’s shares after a sale.',
-      'A rule or a contract says when they may be sold, and the case gives the date or the length of the wait: “two years”, “until March”, “three years later”.',
-      'The shares are often worth a lot on paper and hard to feel as real money. The person may feel rich and be unable to spend or move any of it.',
-      'There may be a price for leaving. Shares that are not yet the person’s own are often lost if they leave, which makes quitting expensive.',
-      'The protection is a contract with a fee. The case may or may not say whether the employer allows one.'
+  /* ---------- Safe as it stands ---------- */
+  { id: 'w3-meet-safe', kind: 'meet', outcome: 'safe',
+    link: 'In every case so far something was missing, or in the way. The next answer is for the opposite: the same business, most of what the person has, and nothing missing round it.',
+    case: 'w3-h-saf-1', mark: 'S1',
+    strip: [
+      'There is one person, Hugo, with $1,150,000: $800,000 in a lumberyard he runs, $250,000 in funds, and $100,000 in savings.',
+      'The yard is most of what he owns: $800,000 out of $1,150,000 is 70%.',
+      'Everything else he has is spread: $250,000 is in funds that hold thousands of companies.',
+      'His savings cover three years: $100,000 against $33,000 a year is just over three.',
+      'No bank holds his shares in the yard as security.'
     ],
-    not: [
-      'A rule that stops the sale is not the same as a decision not to sell. Someone who could sell and chooses not to is the case of {o:diversify}, and the remedy there is a schedule. The case has to show a rule.',
-      'And a rule that ends soon changes little. If the shares can be sold next month, the sensible step is to plan the sales, because a contract bought for a few weeks costs its fee and protects only for those weeks.'
+    explain: [
+      'Hugo’s case has Femi’s shape, and what differs is what stands round it: he has all three of {t:threesupports}, in numbers. So nothing needs doing, and that is a real answer: “Yes, most of what I have is in one business, and it is looked after.”',
+      'Say it firmly, because every fix has a price. If an adviser told Hugo to sell half the yard, he would pay tax and fees and give up part of a business he runs and likes, to guard against a bad year that his savings, his spread and his clean ownership already guard against.',
+      'The answer is true of the case as written. If a loan is taken against the shares or the savings are spent, one support goes and the answer changes. It also fits other cases in which the one thing is already looked after: insurance well above any claim, each property in its own company, or a small loan at a fixed rate that the bank cannot demand back while it is paid. Each of those comes up beside the problem it answers.'
     ],
-    wild: ['"I can’t sell until the lockup ends."', '"They’re mine on paper, but I can’t touch them until year three."', '"It’s all in the company stock, and I can’t sell any of it."', '"I’d lose them if I left."'],
-    self: 'In your own life, look at the pay stub or the stock-plan letter from an employer: a date before which the shares may not be sold, and words such as “restricted”, “unvested”, “not before” or “lockup”.',
-    ask: '“Until what date am I not allowed to sell, and what could this company’s price do before then?” If there is a date, and one company is most of what you have, you are probably looking at this answer.',
-    act: [
-      'First, find the exact rule: which shares, until what date, and what happens to them if you leave. Write the date down.',
-      'Second, find out whether your employer’s rules, and any agreement you signed, allow you to buy a contract that sets a floor under the price. Many do not.',
-      'Third, if it is allowed, get the cost in writing, as a figure per share and as a percentage of what the shares are worth, and set it against the loss it would stop.',
-      'Fourth, write down the day the rule ends and the first sale you will make on that day, so that the plan for selling is ready before the wait is over.'
-    ] },
+    feature: { step: 'S1', option: 'madesafe' },
+    name: 'The answer is {a:S1.madesafe}, and the name is {o:safe}. It is the one name in this unit that says nothing needs doing. It does not say nothing could go wrong; it says that a bad year would not force anything.',
+    act: 'Write down the numbers that make it safe: the years of spending set aside, the insurance next to the biggest claim, whose name holds each property, the loan’s rate and terms. Do nothing else to the one thing, and check the numbers once a year and whenever you borrow, spend the reserve or change a policy. If someone offers a fix, ask what problem it answers that your numbers do not.' },
 
-  { id: 'w3-check-hedge', kind: 'check', after: 'hedge',
-    case: 'w3-h-hdg-chk',
-    ask: { type: 'option', step: 'S1', among: ['freeheld', 'blocked'] } },
+  { id: 'w3-check-safe', kind: 'check', after: 'safe',
+    case: 'w3-h-saf-chk',
+    ask: { type: 'option', step: 'S1', among: ['freeheld', 'blocked', 'ownrun', 'madesafe'] } },
 
-  { id: 'w3-look-diversify-hedge', kind: 'lookalike', ledger: 'diversify~hedge',
-    link: 'The two answers you have met are neighbors: in both, one company’s shares are most of what the person has. This card puts them side by side, with the same person in both.',
-    cases: ['w3-h-la-dh-a', 'w3-h-la-dh-b'],
-    instruction: 'Both cases are about Ruth, who has $500,000 of shares in the same sports-shoe company and $60,000 of other savings. Compare one thing: what, if anything, stops her selling the shares.',
-    prompt: { kind: 'which', option: 'S1.blocked', answer: 'w3-h-la-dh-b' },
+  { id: 'w3-look-supports-safe', kind: 'lookalike', ledger: 'supports~safe',
+    link: 'These two are the nearest neighbors in the unit. In both, the person runs a business that is most of what they have. Here they are side by side, with the same person in both.',
+    cases: ['w3-h-la-ss-a', 'w3-h-la-ss-b'],
+    instruction: 'Both cases are about Alma and her bakery, $500,000 of the $800,000 she owns, with $150,000 in funds and $150,000 in savings. Compare one thing: whether a bank holds her shares in the bakery as security.',
+    prompt: { kind: 'which', option: 'S1.ownrun', answer: 'w3-h-la-ss-b' },
     difference: [
-      'In Case A Ruth left the company two years ago, takes no part in running it, and could sell on any day. $500,000 out of $560,000 is 89% in one company, and nothing stands in her way. The answer is {a:S1.freeheld}, and the name is {o:diversify}: a schedule of sales.',
-      'In Case B the shares are the same and so is the sum, but the rules of the staff share plan stop her selling for another eighteen months. The answer is {a:S1.blocked}, and the name is {o:hedge}: she cannot sell, so she can only limit what she could lose while she waits.',
-      'The money, the company and the person are the same in both. Only the rule is different, and the rule is what decides the answer. That is why nobody can name a case from how much is in one company.'
+      'In Case A she has all three of {t:threesupports}: the rest is spread over funds, $150,000 covers more than three years of the $40,000 she spends, and no bank holds her shares. The answer is {a:S1.madesafe}, and the name is {o:safe}. Nothing needs doing.',
+      'In Case B one sentence is different: last year she borrowed $120,000 for new ovens, and the bank holds her shares as security. A lender could now decide the future of the bakery. The answer is {a:S1.ownrun}, and the name is {o:supports}: one of the three has gone, and the first thing to do is deal with the loan.',
+      'One sentence changed the answer. The story is the same bakery, and the answer follows the three things, not the story.'
     ] }
 ]);

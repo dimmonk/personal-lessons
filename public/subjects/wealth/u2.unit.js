@@ -8,14 +8,14 @@
 
 FC.unit('wealth', 'u2', {
   kind: 'C',              // C classification, F facts, P procedure
-  rev: 3,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
+  rev: 4,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
   standard: 1,            // lesson-standard version this unit was built to
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author). The app labels a draft as a draft.
   tag: 'Two',
   title: { fromKey: 'D1.erosion' },     // a branch unit is titled with the gate answer it teaches
   subtitle: 'Six things that can take money out of a person’s savings every year, how to tell which one you are looking at, and when nothing needs cutting back',
   teaches: { steps: ['E1'], outcomes: ['feecore', 'nocut', 'location', 'defer', 'harvest', 'burnrate'],
-             terms: ['compounding', 'indexfund', 'sheltered', 'gain'] },
+             terms: ['indexfund', 'sheltered', 'gain'] },
   assumes: ['u1'],        // everything Unit One teaches may be used; the first card restates the part this unit leans on
 
   // THE LOOK-ALIKE LEDGER. One entry per pair of names a learner will confuse (the five the plan lists). Each entry is written once and
@@ -46,60 +46,38 @@ FC.unit('wealth', 'u2', {
       test: 'Is the sum the same number of dollars as in earlier years, or worked out again each year from what {t:pot} is worth now?' }
   ],
 
-  // Parts are stopping points: each ends on a screen that says where the next one starts (A13). The key asks one question here, so the
-  // parts group the six names by what a learner notices first: a charge, a tax bill, or a sum spent. The part with drill: true is the
-  // last; its close cards come after the drill.
+  // Parts are stopping points: each ends on a screen that says where the next one starts (A13). The part with drill: true is the last; its
+  // close cards come after the drill.
   parts: [
     { id: 'p1', title: 'A charge, and when paying it is right',
-      cards: ['orient', 'term-compounding', 'term-indexfund', 'meet-feecore', 'again-feecore', 'lens', 'portrait-feecore', 'check-feecore',
-              'refute-adviser', 'term-sheltered', 'meet-nocut', 'again-nocut', 'portrait-nocut', 'check-nocut', 'look-feecore-nocut'] },
+      cards: ['orient', 'term-indexfund', 'meet-feecore', 'check-feecore', 'term-sheltered', 'meet-nocut', 'check-nocut', 'look-feecore-nocut'] },
     { id: 'p2', title: 'Tax',
-      cards: ['meet-location', 'again-location', 'portrait-location', 'check-location', 'look-location-nocut', 'term-gain',
-              'meet-defer', 'again-defer', 'portrait-defer', 'check-defer', 'look-location-defer',
-              'meet-harvest', 'again-harvest', 'portrait-harvest', 'check-harvest', 'look-defer-harvest'] },
-    { id: 'p3', title: 'A sum spent, and the question',
-      cards: ['meet-burnrate', 'again-burnrate', 'portrait-burnrate', 'check-burnrate', 'look-burnrate-nocut', 'q-erosion', 'check-erosion'] },
-    { id: 'p4', title: 'Two whole cases, then the drill',
-      cards: ['worked-accounts', 'worked-planner'], drill: true, close: ['recap', 'transfer', 'plan'] }
+      cards: ['meet-location', 'check-location', 'look-location-nocut', 'term-gain',
+              'meet-defer', 'check-defer', 'look-location-defer',
+              'meet-harvest', 'check-harvest', 'look-defer-harvest'] },
+    { id: 'p3', title: 'A sum spent, the question, then the drill',
+      cards: ['meet-burnrate', 'check-burnrate', 'look-burnrate-nocut', 'q-erosion', 'check-erosion', 'worked-planner'], drill: true, close: ['recap', 'plan'] }
   ],
 
-  // The drill is a ramp of five stages (lesson standard A10). The app owns the wording of every stage instruction. Items are authored in
-  // groups: a group is cases that share ledger entries and one tier. The app shuffles the groups inside a tier band (clean, then varied,
-  // then misleading) and shuffles inside each group. Every case is new. Every stage that asks about cases holds a case where nothing
-  // needs cutting back (P26, V37).
+  // The drill: the stages that carry the skill. The app owns the wording of every stage instruction. Items are authored in groups: a group is
+  // cases that share ledger entries and one tier. The app shuffles the groups inside a tier band (clean, then varied, then misleading) and
+  // shuffles inside each group. Every case is new. Every stage that asks about cases holds a case where nothing needs cutting back (P26, V37).
   drill: {
     key: 'x2',            // the old quick-drill totals for this unit were stored under pl:wealth:stats:x2 (frozen; see E8)
-    add: 'Some of these cases show a charge, a tax bill or a sum spent that is fine as it is. That is on purpose: one of the six answers is that nothing needs cutting back, and in real life you will need it as often as the others. Look for the words that show the problem. If you cannot point to them, do not invent them.',
+    add: 'Some of these cases show a charge, a tax bill or a sum spent that is fine as it is. In real life that answer comes up as often as the others. Look for the words that show the problem. If you cannot point to them, do not invent them.',
     rungs: [
-      { ask: 'name',
-        items: [['e-d-fee', 'e-d-flat'],
-                ['e-d-inc', 'e-d-sale', 'e-d-offset', 'e-d-shelter'],
-                ['e-d-sum', 'e-d-pct']] },
       { ask: 'piece',
         items: [[{ case: 'e-p-fee', step: 'E1' }, { case: 'e-p-flat', step: 'E1' }],
-                [{ case: 'e-p-inc', step: 'E1' }, { case: 'e-p-shelter', step: 'E1' }],
-                [{ case: 'e-p-gain', step: 'E1' }, { case: 'e-p-loss', step: 'E1' }],
-                [{ tell: 'feecore~nocut' }, { tell: 'location~defer' }, { tell: 'defer~harvest' }, { tell: 'location~nocut' }, { tell: 'burnrate~nocut' }],
-                ['e-rev-feecore', 'e-rev-nocut', 'e-rev-location', 'e-rev-defer', 'e-rev-harvest', 'e-rev-burnrate'],
-                [{ earlier: 'u1' }]] },
-      { ask: 'finish',
-        items: [['e-f-burn', 'e-f-pct'], ['e-f-def', 'e-f-har']] },
+                [{ tell: 'feecore~nocut' }, { tell: 'location~defer' }, { tell: 'defer~harvest' }, { tell: 'location~nocut' }, { tell: 'burnrate~nocut' }]] },
       { ask: 'route',
         items: [['e-r-fee-1', 'e-r-nocut-1'], ['e-r-loc-1', 'e-r-nocut-2'], ['e-r-def-1', 'e-r-har-1'],
-                ['e-r-burn-1', 'e-r-nocut-3'], ['e-r-loc-2', 'e-r-def-2'],
-                ['e-r-fee-2', 'e-r-nocut-4'], ['e-r-def-3', 'e-r-har-2'], ['e-r-burn-2', 'e-r-nocut-5'],
-                [{ earlier: 'u1' }]] },
-      { ask: 'claim', demo: 'e-claim-demo',
-        items: [['e-claim-tax'], ['e-claim-whole'], ['e-claim-loss']] }
+                ['e-r-burn-1', 'e-r-nocut-3'], ['e-r-fee-2', 'e-r-nocut-4'],
+                [{ earlier: 'u1' }]] }
     ],
-    // Fresh cases for later days: four for each name, one for each of its scheduled returns (E9; an action subject adds the fourth, at about
-    // twelve weeks). A due name returns as a case the learner has not seen, beside a case of the name they most often take it for.
-    returns: ['e-ret-fee-1', 'e-ret-fee-2', 'e-ret-fee-3', 'e-ret-fee-4',
-              'e-ret-nocut-1', 'e-ret-nocut-2', 'e-ret-nocut-3', 'e-ret-nocut-4',
-              'e-ret-loc-1', 'e-ret-loc-2', 'e-ret-loc-3', 'e-ret-loc-4',
-              'e-ret-def-1', 'e-ret-def-2', 'e-ret-def-3', 'e-ret-def-4',
-              'e-ret-har-1', 'e-ret-har-2', 'e-ret-har-3', 'e-ret-har-4',
-              'e-ret-burn-1', 'e-ret-burn-2', 'e-ret-burn-3', 'e-ret-burn-4']
+    // Fresh cases for later days: two for each name, as in an action subject (E9). A due name returns as a case the learner has not seen,
+    // beside a case of the name they most often take it for.
+    returns: ['e-ret-fee-1', 'e-ret-fee-4', 'e-ret-nocut-3', 'e-ret-nocut-4', 'e-ret-loc-1', 'e-ret-loc-2',
+              'e-ret-def-1', 'e-ret-def-4', 'e-ret-har-1', 'e-ret-har-4', 'e-ret-burn-1', 'e-ret-burn-4']
   },
 
   // Build notes: not shown to the learner, and left out of the fingerprint. The validator reads them.
@@ -107,7 +85,8 @@ FC.unit('wealth', 'u2', {
     history: [
       { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the first branch unit of Wealth Preservation, for the gate answer "Something taken out of it every year". Not yet deployed, so later edits before the first deploy stay revision 1.' },
       { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' },
-      { rev: 3, date: '2026-10-05', change: 'American English: dollars, US accounts, rules and institutions, US spelling.' }
+      { rev: 3, date: '2026-10-05', change: 'American English: dollars, US accounts, rules and institutions, US spelling.' },
+      { rev: 4, date: '2026-10-05', change: 'Trimmed to a quick lesson: one case per name, the essentials, a short drill.' }
     ],
     // What the K2 rewrite changed in this branch of the key, and why (docs/rebuild/wealth-plan.md, section (a)).
     keyChanges: [
@@ -130,11 +109,7 @@ FC.unit('wealth', 'u2', {
         now: 'replaced by "sold" and "not sold", "what was paid for it", "sheltered account", "index fund"',
         why: 'Section 11 and audit 2.3, 2.5. New terms taught on their own cards: an index fund, a sheltered account, a gain, compounding.' }
     ],
-    wrongIdeas: [
-      { card: 'refute-adviser', about: 'feecore',
-        source: { kind: 'app-data', verified: false,
-          ref: 'The old app\'s own list of claims (WEALTH_ERR item 10): "a good adviser picks funds that beat the market, so a high fee is worth it". Verified false by the card\'s own arithmetic (the fee is certain; beating the list is a hope that must first cover the fee), not by a published count. A published source on how many actively managed funds trail their index after charges still has to be found and confirmed before release.' } }
-    ],
+    wrongIdeas: [],
     signoff: {
       coverage: null,
       coldRead: null

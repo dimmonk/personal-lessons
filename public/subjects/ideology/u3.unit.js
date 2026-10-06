@@ -5,7 +5,7 @@
 
 FC.unit('ideology', 'u3', {
   kind: 'C',              // C classification, F facts, P procedure
-  rev: 3,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
+  rev: 4,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
   standard: 1,            // lesson-standard version this unit was built to
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author). The app labels a draft as a draft.
   tag: 'Three',
@@ -32,11 +32,11 @@ FC.unit('ideology', 'u3', {
       shared: 'Both put the nation first, both leave the vote in place, and both can be angry about the way the country is run.',
       rule: 'In {o:nationalism} the text speaks for everyone, and nobody inside the country is named as the other side. In {o:natpop} the text speaks for the country’s ordinary people against an {t:elite}, so that someone inside the country is the other side.',
       test: 'Is anyone inside the country named as the other side, a few at the top set against everyone else? Or does the text speak for everyone alike?' },
-    { id: 'nationalism~pop', pair: ['nationalism', 'pop'], step: 'N1', taughtIn: 'portrait-pop',
+    { id: 'nationalism~pop', pair: ['nationalism', 'pop'], step: 'N1', taughtIn: 'q-who',
       shared: 'Both leave the vote in place and rank nobody, and both can say that they speak for the people.',
       rule: 'In {o:nationalism} the whole nation is spoken for as one, and nobody inside it is named as the other side. In {o:pop} the text is angry at an {t:elite} on behalf of ordinary people, and says no more.',
       test: 'Does the text speak for everyone, or set ordinary people against a few at the top? If it does the second, does it add anything about what the country itself should have?' },
-    { id: 'nationalism~nazi', pair: ['nationalism', 'nazi'], step: 'N1', taughtIn: 'portrait-nazi',
+    { id: 'nationalism~nazi', pair: ['nationalism', 'nazi'], step: 'N1', taughtIn: 'q-who',
       shared: 'Both put one people first, and both can leave the vote in place.',
       rule: 'In {o:nationalism} everyone in the country is spoken for as one, and nobody is ranked below anybody else. In {o:nazi} the text divides people by descent into peoples worth more and peoples worth less, and puts its own on top.',
       test: 'Does the text rank peoples by blood or birth, with its own above the others? Or does it speak for everyone in the country as equals?' },
@@ -44,11 +44,11 @@ FC.unit('ideology', 'u3', {
       shared: 'Both set ordinary people against a few at the top, and both leave the vote in place.',
       rule: 'The difference is what else the text asks for. {o:natpop} also wants the country’s borders, culture or industry put first, so its answer is {a:N1.elitenation}. {o:pop} asks for nothing more than getting those at the top out of the way, so its answer is {a:N1.eliteonly}.',
       test: 'After the text has set ordinary people against those at the top, does it say anything about the country’s borders, culture or industry? If it does not, nothing more is attached.' },
-    { id: 'natpop~nazi', pair: ['natpop', 'nazi'], step: 'N1', taughtIn: 'portrait-nazi',
+    { id: 'natpop~nazi', pair: ['natpop', 'nazi'], step: 'N1', taughtIn: 'q-who',
       shared: 'Both put one people first, and both can leave the vote in place.',
       rule: 'In {o:natpop} the people is the country’s ordinary people, set against a few at the top. In {o:nazi} the people is marked out by blood and ranked above other peoples, and who counts as the other side is decided by blood or birth, not by being at the top.',
       test: 'Who is the text against: a few at the top, or peoples that it ranks lower by blood or birth?' },
-    { id: 'pop~nazi', pair: ['pop', 'nazi'], step: 'N1', taughtIn: 'portrait-nazi',
+    { id: 'pop~nazi', pair: ['pop', 'nazi'], step: 'N1', taughtIn: 'q-who',
       shared: 'Both are angry, and both say that the wrong people are in charge.',
       rule: 'In {o:pop} the only line drawn is between ordinary people and an {t:elite}. In {o:nazi} the line is drawn by blood or birth, between peoples ranked higher and lower.',
       test: 'Is the only line the one between ordinary people and a few at the top? Or are peoples ranked by blood or birth?' },
@@ -58,61 +58,40 @@ FC.unit('ideology', 'u3', {
       test: 'Does the text rank peoples by blood or birth, with its own above the others? Or does it speak of one nation, or of its ordinary people, with nobody ranked by blood?' }
   ],
 
-  // Parts are stopping points: each ends on a screen that says where the next one starts. They follow the answers of the unit's
-  // first question (lesson standard A13). The part with drill: true is the last; its close cards come after the drill.
+  // Parts are stopping points: each ends on a screen that says where the next one starts.
+  // The part with drill: true is the last; its close cards come after the drill.
   parts: [
-    { id: 'p1', title: 'The whole nation, and what it does with the vote',
-      cards: ['orient', 'term-elite', 'meet-nationalism', 'again-nationalism', 'lens', 'portrait-nationalism', 'check-nationalism',
-              'meet-fasc', 'again-fasc', 'portrait-fasc', 'check-fasc', 'look-nationalism-fasc', 'refute-borders'] },
-    { id: 'p2', title: 'Ordinary people against a few at the top',
-      cards: ['meet-natpop', 'again-natpop', 'portrait-natpop', 'check-natpop',
-              'meet-pop', 'again-pop', 'portrait-pop', 'check-pop',
-              'look-nationalism-natpop', 'look-natpop-pop', 'exc-elitefasc', 'refute-socialist'] },
-    { id: 'p3', title: 'One people ranked by blood, and what every dictatorship does',
-      cards: ['meet-nazi', 'again-nazi', 'portrait-nazi', 'check-nazi', 'look-fasc-nazi', 'exc-methods', 'refute-nazisocialist'] },
-    { id: 'p4', title: 'The two questions',
-      cards: ['q-who', 'check-who', 'q-elections', 'check-elections', 'refute-lots', 'refute-horseshoe'] },
-    { id: 'p5', title: 'Two whole cases, then the drill',
-      cards: ['worked-natpop', 'worked-torchlit'], drill: true, close: ['recap', 'transfer'] }
+    { id: 'p1', title: 'The whole nation, and ordinary people against a few at the top',
+      cards: ['orient', 'term-elite', 'meet-nationalism', 'check-nationalism',
+              'meet-fasc', 'check-fasc', 'look-nationalism-fasc',
+              'meet-natpop', 'check-natpop', 'meet-pop', 'check-pop',
+              'look-nationalism-natpop', 'look-natpop-pop', 'exc-elitefasc'] },
+    { id: 'p2', title: 'One people ranked by blood, the two questions, then the drill',
+      cards: ['meet-nazi', 'check-nazi', 'look-fasc-nazi',
+              'q-who', 'check-who', 'q-elections', 'check-elections', 'worked-torchlit'], drill: true, close: ['recap'] }
   ],
 
-  // The drill is a ramp of five stages (lesson standard A10). The app owns the wording of every stage instruction.
+  // The drill: the stages that carry the skill. The app owns the wording of every stage instruction.
   // Items are authored in groups: a group is cases that share ledger entries and one tier. The app shuffles the groups
   // inside a tier band (clean, then varied, then misleading) and shuffles inside each group. Every case is new.
   drill: {
     key: 'u3',            // the old quick-drill totals for this subject were stored under other keys (frozen; see E8)
-    add: 'Some of these texts are loud and some are calm, and neither tells you the name. A few are built to look like a text you met on the cards and to be another. Go by the words that answer the questions.',
     rungs: [
-      { ask: 'name',
-        items: [['n-nm-nat', 'n-nm-fasc'], ['n-nm-natpop', 'n-nm-pop'], ['n-nm-fasc2', 'n-nm-nazi']] },
       { ask: 'piece',
         items: [[{ case: 'n-pc-whole', step: 'N1' }, { case: 'n-pc-elitenation', step: 'N1' }],
                 [{ case: 'n-pc-eliteonly', step: 'N1' }, { case: 'n-pc-blood', step: 'N1' }],
                 [{ case: 'n-pc-aside', step: 'N2' }, { case: 'n-pc-keep', step: 'N2' }],
-                [{ tell: 'nationalism~fasc' }, { tell: 'nationalism~natpop' }, { tell: 'natpop~pop' }, { tell: 'fasc~nazi' }],
-                [{ separator: 'nationalism~fasc' }, { separator: 'natpop~fasc' }, { separator: 'nationalism~natpop' }, { separator: 'fasc~nazi' }],
-                ['n-rev-nationalism', 'n-rev-fasc', 'n-rev-natpop', 'n-rev-pop', 'n-rev-nazi'],
-                [{ earlier: 'u1' }]] },
-      { ask: 'finish',
-        items: [['n-fn-nat', 'n-fn-natpop'], ['n-fn-fasc', 'n-fn-nazi']] },
+                [{ tell: 'nationalism~fasc' }, { tell: 'natpop~pop' }]] },
       { ask: 'route',
         items: [['n-rt-coin', 'n-rt-shipyard'],
                 ['n-rt-theater', 'n-rt-pension'],
                 ['n-rt-frontier', 'n-rt-drought'],
-                ['n-rt-decree', 'n-rt-language', 'n-rt-fares'],
                 ['n-rt-parade', 'n-rt-letter'],
-                ['n-rt-unity', 'n-rt-budget'],
-                [{ earlier: 'u1' }]] },
-      { ask: 'claim', demo: 'n-claim-demo',
-        items: [['n-claim-borders'], ['n-claim-lots'], ['n-claim-socialist'], ['n-claim-nazieco'], ['n-claim-horseshoe']] }
+                [{ earlier: 'u1' }]] }
     ],
-    // Fresh cases for later days: three for each name, one for each of its scheduled returns (E9).
+    // Fresh cases for later days: one for each name, one for each of its scheduled returns (E9).
     // A due name returns as a case the learner has not seen, beside a case of the name they most often take it for.
-    returns: ['n-ret-flood', 'n-ret-exam', 'n-ret-crossing',
-              'n-ret-order', 'n-ret-station', 'n-ret-front',
-              'n-ret-ferry', 'n-ret-museum', 'n-ret-cheese',
-              'n-ret-parking', 'n-ret-payrise', 'n-ret-exam-fees',
-              'n-ret-stalls', 'n-ret-clinic', 'n-ret-statue']
+    returns: ['n-ret-flood', 'n-ret-order', 'n-ret-ferry', 'n-ret-parking', 'n-ret-stalls']
   },
 
   // Build notes: not shown to the learner, and left out of the fingerprint. The validator reads them.
@@ -121,7 +100,8 @@ FC.unit('ideology', 'u3', {
     history: [
       { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the branch unit for the key’s second answer. Two questions, five names, one term. Not yet deployed, so later edits before the first deploy stay revision 1.' },
       { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' },
-      { rev: 3, date: '2026-10-05', change: 'American English: dollars, US words and spelling.' }
+      { rev: 3, date: '2026-10-05', change: 'American English: dollars, US words and spelling.' },
+      { rev: 4, date: '2026-10-05', change: 'Trimmed to a quick lesson: one case per name, the essentials, a short drill.' }
     ],
     // What changed in the key for this branch, and why (K2). From docs/rebuild/ideology-plan.md, part a.
     keyChanges: [
@@ -143,21 +123,7 @@ FC.unit('ideology', 'u3', {
       { outcome: 'pop', was: '"Populism with nothing attached", needs not written', now: 'same name; needs written', why: 'Kept: it is the old app\'s own plain name, and the model for the matching name in the working-people branch.' },
       { outcome: 'nazi', was: 'kept by "The nation" and "One race ranked above the others"', now: 'needs: peoples ranked by blood, its own above the others', why: 'K2.7.' }
     ],
-    // Wrong ideas the unit names (V22). Each is something the old course already treated as a faulty idea its learners bring (app-data);
-    // cold readers still have to say whether they hold it. No correction asserts a fact about a real party or regime: each rests on the key.
-    wrongIdeas: [
-      { card: 'refute-borders', about: 'nationalism',
-        source: { kind: 'app-data', verified: true, ref: 'public/subjects/ideology/standard0.js, IDEOLOGY_ERR item 5, and docs/comprehension-audit/ideology.md.' } },
-      { card: 'refute-socialist', about: 'pop',
-        source: { kind: 'app-data', verified: true, ref: 'public/subjects/ideology/standard0.js, IDEOLOGY_ERR item 7.' } },
-      { card: 'refute-nazisocialist', about: 'nazi',
-        source: { kind: 'app-data', verified: true,
-          ref: 'public/subjects/ideology/standard0.js, IDEOLOGY_ERR item 12 and the old Unit Three card "But the Nazis were socialists". The plan says historical facts about that regime need a published source; this correction asserts none and rests on the key alone. A later revision that adds a historical claim needs a published source with verified: true first.' } },
-      { card: 'refute-lots', about: 'N2',
-        source: { kind: 'app-data', verified: true, ref: 'public/subjects/ideology/standard0.js, IDEOLOGY_ERR item 3, and the old Unit Four card on statism.' } },
-      { card: 'refute-horseshoe', about: 'fasc',
-        source: { kind: 'app-data', verified: true, ref: 'public/subjects/ideology/standard0.js, IDEOLOGY_ERR item 4, and the old Unit Four horseshoe card.' } }
-    ],
+    wrongIdeas: [],
     signoff: {
       coverage: null,     // { date, by } once tests/validate-data.mjs passes on this unit in the app
       coldRead: null      // { rev, date, reader: 'novice' | 'near-novice', restated: true, drillAttempted: true, notes }
